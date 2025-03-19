@@ -688,8 +688,7 @@
         }
       },
       "GroupId": {
-        "description": "The ID of the Group.",
-        "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+        "description": "The ID of the group",
         "in": "path",
         "name": "group_id",
         "required": true,
@@ -907,8 +906,7 @@
         "style": "form"
       },
       "OrgId": {
-        "description": "The ID of the organization.",
-        "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+        "description": "The ID of the org",
         "in": "path",
         "name": "org_id",
         "required": true,
@@ -932,12 +930,13 @@
         "style": "form"
       },
       "OrgId__0": {
-        "description": "Org ID",
+        "description": "The id of the org",
         "in": "path",
         "name": "org_id",
         "required": true,
         "schema": {
-          "$ref": "#/components/schemas/Uuid"
+          "format": "uuid",
+          "type": "string"
         }
       },
       "OrgMembershipId": {
@@ -1204,7 +1203,7 @@
         "in": "query",
         "name": "sort_order",
         "schema": {
-          "default": "DESC",
+          "default": "ASC",
           "enum": [
             "ASC",
             "DESC"
@@ -1330,10 +1329,10 @@
         }
       },
       "UserId": {
-        "description": "Filter logs by user ID.",
-        "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+        "description": "The ID of the User",
         "in": "query",
         "name": "user_id",
+        "required": true,
         "schema": {
           "format": "uuid",
           "type": "string"
@@ -10933,7 +10932,7 @@
         ],
         "type": "object"
       },
-      "UpdateOrgMembershipRequestBody": {
+      "UpdateOrgMembershipRequestBody20240825": {
         "additionalProperties": false,
         "properties": {
           "attributes": {
@@ -11118,17 +11117,63 @@
         "type": "string"
       },
       "User": {
+        "additionalProperties": false,
         "properties": {
           "attributes": {
-            "$ref": "#/components/schemas/UserAttributes"
+            "additionalProperties": false,
+            "properties": {
+              "active": {
+                "description": "Whether the user status is enabled or not",
+                "example": true,
+                "type": "boolean"
+              },
+              "email": {
+                "description": "The email of the user.",
+                "example": "user@someorg.com",
+                "type": "string"
+              },
+              "membership": {
+                "properties": {
+                  "created_at": {
+                    "description": "The date the membership was established.",
+                    "example": "2022-09-14T09:19:29.206Z",
+                    "format": "date-time",
+                    "type": "string"
+                  },
+                  "strategy": {
+                    "description": "Whether the membership is a direct, or indirect membership.",
+                    "enum": [
+                      "direct",
+                      "indirect"
+                    ],
+                    "example": "direct",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "name": {
+                "description": "The name of the user.",
+                "example": "user",
+                "type": "string"
+              },
+              "username": {
+                "description": "The username of the user.",
+                "example": "username",
+                "type": "string"
+              }
+            },
+            "type": "object"
           },
           "id": {
+            "description": "The Snyk ID corresponding to this user",
+            "example": "55a348e2-c3ad-4bbc-b40e-9b232d1f4121",
+            "format": "uuid",
             "type": "string"
           },
           "type": {
-            "enum": [
-              "user"
-            ],
+            "description": "Content type.",
+            "example": "user",
             "type": "string"
           }
         },
@@ -11266,7 +11311,38 @@
       "UserRelationship": {
         "properties": {
           "data": {
-            "$ref": "#/components/schemas/User"
+            "properties": {
+              "attributes": {
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  },
+                  "username": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "email",
+                  "username"
+                ],
+                "type": "object"
+              },
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "user"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type",
+              "id",
+              "attributes"
+            ],
+            "type": "object"
           },
           "links": {
             "$ref": "#/components/schemas/PaginatedLinks"
@@ -12052,14 +12128,7 @@
         "operationId": "getGroup",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -12698,7 +12767,15 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "The ID of the Group.",
+            "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Cursor"
@@ -12713,10 +12790,28 @@
             "$ref": "#/components/parameters/Size"
           },
           {
-            "$ref": "#/components/parameters/SortOrder"
+            "description": "Order in which results are returned.",
+            "example": "ASC",
+            "in": "query",
+            "name": "sort_order",
+            "schema": {
+              "default": "DESC",
+              "enum": [
+                "ASC",
+                "DESC"
+              ],
+              "type": "string"
+            }
           },
           {
-            "$ref": "#/components/parameters/UserId"
+            "description": "Filter logs by user ID.",
+            "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+            "in": "query",
+            "name": "user_id",
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ProjectId"
@@ -14789,14 +14884,7 @@
         "operationId": "listGroupMemberships",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -14914,14 +15002,7 @@
         "operationId": "createGroupMembership",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -15021,14 +15102,7 @@
         "operationId": "deleteGroupMembership",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/MembershipId"
@@ -15102,14 +15176,7 @@
         "operationId": "updateGroupUserMembership",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/MembershipId"
@@ -15134,66 +15201,7 @@
         },
         "responses": {
           "204": {
-            "description": "The operation completed successfully with no content",
-            "headers": {
-              "deprecation": {
-                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
-                "example": "2021-07-01T00:00:00Z",
-                "schema": {
-                  "format": "date-time",
-                  "type": "string"
-                }
-              },
-              "snyk-request-id": {
-                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
-                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
-                "schema": {
-                  "format": "uuid",
-                  "type": "string"
-                }
-              },
-              "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
-                "schema": {
-                  "enum": [
-                    "wip",
-                    "experimental",
-                    "beta",
-                    "ga",
-                    "deprecated",
-                    "sunset"
-                  ],
-                  "example": "ga",
-                  "type": "string"
-                }
-              },
-              "snyk-version-requested": {
-                "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
-                "schema": {
-                  "description": "Requested API version",
-                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
-                  "type": "string"
-                }
-              },
-              "snyk-version-served": {
-                "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
-                "schema": {
-                  "description": "Resolved API version",
-                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
-                  "type": "string"
-                }
-              },
-              "sunset": {
-                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
-                "example": "2021-08-02",
-                "schema": {
-                  "format": "date",
-                  "type": "string"
-                }
-              }
-            }
+            "$ref": "#/components/responses/204"
           },
           "400": {
             "$ref": "#/components/responses/400"
@@ -15232,24 +15240,10 @@
         "operationId": "listGroupUserOrgMemberships",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
-            "description": "The ID of the User",
-            "in": "query",
-            "name": "user_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/UserId"
           },
           {
             "$ref": "#/components/parameters/OrgName"
@@ -16565,66 +16559,7 @@
         ],
         "responses": {
           "204": {
-            "description": "The operation completed successfully with no content",
-            "headers": {
-              "deprecation": {
-                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
-                "example": "2021-07-01T00:00:00Z",
-                "schema": {
-                  "format": "date-time",
-                  "type": "string"
-                }
-              },
-              "snyk-request-id": {
-                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
-                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
-                "schema": {
-                  "format": "uuid",
-                  "type": "string"
-                }
-              },
-              "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
-                "schema": {
-                  "enum": [
-                    "wip",
-                    "experimental",
-                    "beta",
-                    "ga",
-                    "deprecated",
-                    "sunset"
-                  ],
-                  "example": "ga",
-                  "type": "string"
-                }
-              },
-              "snyk-version-requested": {
-                "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
-                "schema": {
-                  "description": "Requested API version",
-                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
-                  "type": "string"
-                }
-              },
-              "snyk-version-served": {
-                "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
-                "schema": {
-                  "description": "Resolved API version",
-                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
-                  "type": "string"
-                }
-              },
-              "sunset": {
-                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
-                "example": "2021-08-02",
-                "schema": {
-                  "format": "date",
-                  "type": "string"
-                }
-              }
-            }
+            "$ref": "#/components/responses/204"
           },
           "400": {
             "$ref": "#/components/responses/400"
@@ -16927,14 +16862,7 @@
         "operationId": "listGroupSsoConnections",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -17036,14 +16964,7 @@
         "operationId": "listGroupSsoConnectionUsers",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/SsoId"
@@ -17069,72 +16990,7 @@
                   "properties": {
                     "data": {
                       "items": {
-                        "additionalProperties": false,
-                        "properties": {
-                          "attributes": {
-                            "additionalProperties": false,
-                            "properties": {
-                              "active": {
-                                "description": "Whether the user status is enabled or not",
-                                "example": true,
-                                "type": "boolean"
-                              },
-                              "email": {
-                                "description": "The email of the user.",
-                                "example": "user@someorg.com",
-                                "type": "string"
-                              },
-                              "membership": {
-                                "properties": {
-                                  "created_at": {
-                                    "description": "The date the membership was established.",
-                                    "example": "2022-09-14T09:19:29.206Z",
-                                    "format": "date-time",
-                                    "type": "string"
-                                  },
-                                  "strategy": {
-                                    "description": "Whether the membership is a direct, or indirect membership.",
-                                    "enum": [
-                                      "direct",
-                                      "indirect"
-                                    ],
-                                    "example": "direct",
-                                    "type": "string"
-                                  }
-                                },
-                                "type": "object"
-                              },
-                              "name": {
-                                "description": "The name of the user.",
-                                "example": "user",
-                                "type": "string"
-                              },
-                              "username": {
-                                "description": "The username of the user.",
-                                "example": "username",
-                                "type": "string"
-                              }
-                            },
-                            "type": "object"
-                          },
-                          "id": {
-                            "description": "The Snyk ID corresponding to this user",
-                            "example": "55a348e2-c3ad-4bbc-b40e-9b232d1f4121",
-                            "format": "uuid",
-                            "type": "string"
-                          },
-                          "type": {
-                            "description": "Content type.",
-                            "example": "user",
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "id",
-                          "attributes"
-                        ],
-                        "type": "object"
+                        "$ref": "#/components/schemas/User"
                       },
                       "type": "array"
                     },
@@ -17213,14 +17069,7 @@
         "operationId": "deleteUser",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/SsoId"
@@ -17341,66 +17190,7 @@
         },
         "responses": {
           "204": {
-            "description": "The operation completed successfully with no content",
-            "headers": {
-              "deprecation": {
-                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
-                "example": "2021-07-01T00:00:00Z",
-                "schema": {
-                  "format": "date-time",
-                  "type": "string"
-                }
-              },
-              "snyk-request-id": {
-                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
-                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
-                "schema": {
-                  "format": "uuid",
-                  "type": "string"
-                }
-              },
-              "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
-                "schema": {
-                  "enum": [
-                    "wip",
-                    "experimental",
-                    "beta",
-                    "ga",
-                    "deprecated",
-                    "sunset"
-                  ],
-                  "example": "ga",
-                  "type": "string"
-                }
-              },
-              "snyk-version-requested": {
-                "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
-                "schema": {
-                  "description": "Requested API version",
-                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
-                  "type": "string"
-                }
-              },
-              "snyk-version-served": {
-                "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
-                "schema": {
-                  "description": "Resolved API version",
-                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
-                  "type": "string"
-                }
-              },
-              "sunset": {
-                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
-                "example": "2021-08-02",
-                "schema": {
-                  "format": "date",
-                  "type": "string"
-                }
-              }
-            }
+            "$ref": "#/components/responses/204"
           },
           "400": {
             "$ref": "#/components/responses/400"
@@ -17562,6 +17352,7 @@
             "$ref": "#/components/responses/500"
           }
         },
+        "security": [],
         "tags": [
           "OpenAPI"
         ]
@@ -17617,6 +17408,7 @@
             "$ref": "#/components/responses/500"
           }
         },
+        "security": [],
         "tags": [
           "OpenAPI"
         ]
@@ -17992,66 +17784,7 @@
             }
           },
           "204": {
-            "description": "The operation completed successfully with no content",
-            "headers": {
-              "deprecation": {
-                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
-                "example": "2021-07-01T00:00:00Z",
-                "schema": {
-                  "format": "date-time",
-                  "type": "string"
-                }
-              },
-              "snyk-request-id": {
-                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
-                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
-                "schema": {
-                  "format": "uuid",
-                  "type": "string"
-                }
-              },
-              "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
-                "schema": {
-                  "enum": [
-                    "wip",
-                    "experimental",
-                    "beta",
-                    "ga",
-                    "deprecated",
-                    "sunset"
-                  ],
-                  "example": "ga",
-                  "type": "string"
-                }
-              },
-              "snyk-version-requested": {
-                "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
-                "schema": {
-                  "description": "Requested API version",
-                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
-                  "type": "string"
-                }
-              },
-              "snyk-version-served": {
-                "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
-                "schema": {
-                  "description": "Resolved API version",
-                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
-                  "type": "string"
-                }
-              },
-              "sunset": {
-                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
-                "example": "2021-08-02",
-                "schema": {
-                  "format": "date",
-                  "type": "string"
-                }
-              }
-            }
+            "$ref": "#/components/responses/204"
           },
           "400": {
             "$ref": "#/components/responses/400"
@@ -18319,7 +18052,14 @@
         "operationId": "getApps",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -18427,7 +18167,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -18516,7 +18263,14 @@
         "operationId": "getOrgApps",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -18623,7 +18377,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -18712,7 +18473,14 @@
         "operationId": "deleteAppByID",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/AppId"
@@ -18788,7 +18556,14 @@
         "operationId": "getAppByID",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/AppId"
@@ -18881,7 +18656,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/AppId"
@@ -18982,7 +18764,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/AppId"
@@ -19255,7 +19044,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -19422,7 +19218,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -19501,7 +19304,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -19653,7 +19463,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ClientId"
@@ -19727,7 +19544,14 @@
         "operationId": "getApp",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ClientId"
@@ -19821,7 +19645,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ClientId"
@@ -19923,7 +19754,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId__0"
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ClientId"
@@ -20043,7 +19881,15 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The ID of the organization.",
+            "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Cursor"
@@ -20058,10 +19904,28 @@
             "$ref": "#/components/parameters/Size"
           },
           {
-            "$ref": "#/components/parameters/SortOrder"
+            "description": "Order in which results are returned.",
+            "example": "ASC",
+            "in": "query",
+            "name": "sort_order",
+            "schema": {
+              "default": "DESC",
+              "enum": [
+                "ASC",
+                "DESC"
+              ],
+              "type": "string"
+            }
           },
           {
-            "$ref": "#/components/parameters/UserId"
+            "description": "Filter logs by user ID.",
+            "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+            "in": "query",
+            "name": "user_id",
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ProjectId"
@@ -23018,66 +22882,7 @@
         ],
         "responses": {
           "204": {
-            "description": "The operation completed successfully with no content",
-            "headers": {
-              "deprecation": {
-                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
-                "example": "2021-07-01T00:00:00Z",
-                "schema": {
-                  "format": "date-time",
-                  "type": "string"
-                }
-              },
-              "snyk-request-id": {
-                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
-                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
-                "schema": {
-                  "format": "uuid",
-                  "type": "string"
-                }
-              },
-              "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
-                "schema": {
-                  "enum": [
-                    "wip",
-                    "experimental",
-                    "beta",
-                    "ga",
-                    "deprecated",
-                    "sunset"
-                  ],
-                  "example": "ga",
-                  "type": "string"
-                }
-              },
-              "snyk-version-requested": {
-                "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
-                "schema": {
-                  "description": "Requested API version",
-                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
-                  "type": "string"
-                }
-              },
-              "snyk-version-served": {
-                "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
-                "schema": {
-                  "description": "Resolved API version",
-                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
-                  "type": "string"
-                }
-              },
-              "sunset": {
-                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
-                "example": "2021-08-02",
-                "schema": {
-                  "format": "date",
-                  "type": "string"
-                }
-              }
-            }
+            "$ref": "#/components/responses/204"
           },
           "400": {
             "$ref": "#/components/responses/400"
@@ -25655,14 +25460,7 @@
         "operationId": "listOrgMemberships",
         "parameters": [
           {
-            "description": "The ID of the org",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -25680,18 +25478,7 @@
             "$ref": "#/components/parameters/SortBy"
           },
           {
-            "description": "Order in which results are returned.",
-            "example": "ASC",
-            "in": "query",
-            "name": "sort_order",
-            "schema": {
-              "default": "ASC",
-              "enum": [
-                "ASC",
-                "DESC"
-              ],
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/SortOrder"
           },
           {
             "$ref": "#/components/parameters/EmailFilter"
@@ -25788,14 +25575,7 @@
         "operationId": "createOrgMembership",
         "parameters": [
           {
-            "description": "The ID of the org",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -25895,14 +25675,7 @@
         "operationId": "deleteOrgMembership",
         "parameters": [
           {
-            "description": "The id of the org",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId__0"
           },
           {
             "$ref": "#/components/parameters/OrgMembershipId"
@@ -25970,14 +25743,7 @@
         "operationId": "updateOrgMembership",
         "parameters": [
           {
-            "description": "The id of the org",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId__0"
           },
           {
             "$ref": "#/components/parameters/OrgMembershipId"
@@ -25992,9 +25758,12 @@
               "schema": {
                 "properties": {
                   "data": {
-                    "$ref": "#/components/schemas/UpdateOrgMembershipRequestBody"
+                    "$ref": "#/components/schemas/UpdateOrgMembershipRequestBody20240825"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               }
             }
@@ -29116,7 +28885,66 @@
         ],
         "responses": {
           "204": {
-            "$ref": "#/components/responses/204"
+            "description": "The operation completed successfully with no content",
+            "headers": {
+              "deprecation": {
+                "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
+                "example": "2021-07-01T00:00:00Z",
+                "schema": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "description": "A header containing a unique id used for tracking this request. If you are reporting an issue to Snyk it's very helpful to provide this ID.\n",
+                "example": "4b58e274-ec62-4fab-917b-1d2c48d6bdef",
+                "schema": {
+                  "format": "uuid",
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2021-06-04",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2021-06-04",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
           },
           "400": {
             "content": {
@@ -38638,72 +38466,7 @@
                 "schema": {
                   "properties": {
                     "data": {
-                      "additionalProperties": false,
-                      "properties": {
-                        "attributes": {
-                          "additionalProperties": false,
-                          "properties": {
-                            "active": {
-                              "description": "Whether the user status is enabled or not",
-                              "example": true,
-                              "type": "boolean"
-                            },
-                            "email": {
-                              "description": "The email of the user.",
-                              "example": "user@someorg.com",
-                              "type": "string"
-                            },
-                            "membership": {
-                              "properties": {
-                                "created_at": {
-                                  "description": "The date the membership was established.",
-                                  "example": "2022-09-14T09:19:29.206Z",
-                                  "format": "date-time",
-                                  "type": "string"
-                                },
-                                "strategy": {
-                                  "description": "Whether the membership is a direct, or indirect membership.",
-                                  "enum": [
-                                    "direct",
-                                    "indirect"
-                                  ],
-                                  "example": "direct",
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            },
-                            "name": {
-                              "description": "The name of the user.",
-                              "example": "user",
-                              "type": "string"
-                            },
-                            "username": {
-                              "description": "The username of the user.",
-                              "example": "username",
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "id": {
-                          "description": "The Snyk ID corresponding to this user",
-                          "example": "55a348e2-c3ad-4bbc-b40e-9b232d1f4121",
-                          "format": "uuid",
-                          "type": "string"
-                        },
-                        "type": {
-                          "description": "Content type.",
-                          "example": "user",
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "id",
-                        "attributes"
-                      ],
-                      "type": "object"
+                      "$ref": "#/components/schemas/User"
                     },
                     "jsonapi": {
                       "$ref": "#/components/schemas/JsonApi"
@@ -39558,18 +39321,7 @@
             }
           },
           {
-            "description": "Order in which results are returned.",
-            "example": "ASC",
-            "in": "query",
-            "name": "sort_order",
-            "schema": {
-              "default": "ASC",
-              "enum": [
-                "ASC",
-                "DESC"
-              ],
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/SortOrder"
           },
           {
             "$ref": "#/components/parameters/EmailFilter"

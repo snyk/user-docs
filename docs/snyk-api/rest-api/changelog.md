@@ -1,3 +1,9 @@
+## 2024-10-15 - Updated 2025-03-19
+
+### PATCH - `/orgs/{org_id}/memberships/{membership_id}` - Updated
+- the request property `data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 # Changelog
 
 ### 2024-10-15 - Updated 2025-03-04
