@@ -10,22 +10,26 @@ Each inner list is sorted alphabetically
 
 Describes the main attributes of the issue.
 
-* **COMPUTED FIXABILITY** - Indicates whether the issue can be fixed based on the vulnerability remediation paths. For details, see [Computed Fixability filters](https://docs.snyk.io/scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types#computed-fixability-filters).
+* **ASSET FINDING ID** - A unique issue ID at the repository level that is only applicable for Snyk Code issues.
+* **COMMIT ID** - The unique ID that the SCM integration assigns to commits so that they can be uniquely identified. Snyk provides Commit ID only for Snyk Code issues.
+* **CODE REGION** - The line numbers and columns range where the issues were found within a file.&#x20;
+* **COMPUTED FIXABILITY** - Indicates whether the issue can be fixed based on the vulnerability remediation paths. Relevant for SCA vulnerabilities. For details, see [Computed Fixability filters](https://docs.snyk.io/scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types#computed-fixability-filters).
   * **Fixable:** There is a fix for all the identified issues, meaning that all detailed paths have remediation.
   * **Partially fixable:** The issue has upgradable paths, but not all detailed paths have remediation.
   * **No supported fix**: The issue has no upgradable paths.
-* **HAS JIRA ISSUE(S) ASSIGNED** - Displays `true`when at least one Jira issue is assigned, otherwise displays `false`.
+* **FILE PATH** - The path to the file where Snyk Code identified the specific issue.
+* **HAS JIRA ISSUE(S) ASSIGNED** - Displays `true` when at least one Jira issue is assigned, otherwise displays `false`.
 * **INTRODUCTION CATEGORY** - Categorizes how an issue was introduced:
-  * **Baseline Issue** - issues identified right after the Project began to be monitored.
-  * **Preventable Issue** - issues for which Snyk published the related problem at least seven days before detection.
-  * **Non Preventable Issue** - issues that were created due to external factors such as a new vulnerability being published.
-  * **Other New Issue** - issues for which Snyk cannot classify their preventability. For details, see [Delineation of how risk is introduced](https://docs.snyk.io/manage-risk/enterprise-analytics/issues-analytics#delineation-of-how-risk-is-introduced).
+  * **Baseline Issue** - Issues identified right after the Project began to be monitored.
+  * **Preventable Issue** - Issues for which Snyk published the related problem at least seven days before detection.
+  * **Non Preventable Issue** - Issues that were created due to external factors such as a new vulnerability being published.
+  * **Other New Issue** - Issues for which Snyk cannot classify their preventability. For details, see [Delineation of how risk is introduced](https://docs.snyk.io/manage-risk/enterprise-analytics/issues-analytics#delineation-of-how-risk-is-introduced).
 * **ISSUE** - A combination of:
   * **Problem Title**: Snyk vulnerability name.
   * **Issue Type:** indicates whether the issue is related to a vulnerability, license, or configuration.
 * **ISSUE STATUS** - Indicates whether the issue is open, resolved, or ignored.
 * **JIRA ISSUES LIST** - A list of all the attached Jira issue keys.
-* **LATEST JIRA ISSUE** - The latest attached Jira issue key with a link to the issue card in the project page.
+* **LATEST JIRA ISSUE** - The latest attached Jira issue key with a link to the issue card on the Project page.
 * **PRODUCT NAME** - Snyk product name.
 * **SEVERITY** - Indicates the issue severity according to the analysis by a specific Snyk product.
 * **SCORE** - A score based on an analysis model. Priority score is released in General Availability, while Risk Score is in Early Access. For details, see [Priority Score vs Risk Score](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/priority-score-vs-risk-score).
