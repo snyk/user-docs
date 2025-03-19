@@ -129,3 +129,8 @@ redirects:
   scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-google/snyk-cloud-for-google-web-ui/step-1-download-service-account-iac-template-web-ui: scan-with-snyk/snyk-iac/cloud-platform-integrations/google-cloud-integration/README.md
   implement-snyk/enterprise-implementation-guide/prerequisites-project-plan-templates: /implement-snyk/enterprise-implementation-guide/prerequisites/README.md
   snyk-api/rest-api/authentication-for-api/authenticating: snyk-api/rest-api/authentication-for-api/README.md
+  getting-started/snyk-learn/snyk-learn-assignments: snyk-learn/snyk-learn-assignments.md
+  getting-started/snyk-learn/your-learning/claiming-cpe-credits-with-snyk-learn: snyk-learn/your-learning/claiming-cpe-credits-with-snyk-learn.md
+  getting-started/snyk-learn/snyk-learn-reports: snyk-learn/snyk-learn-reports.md
+  getting-started/snyk-learn/snyk-learn-access-controls: snyk-learn/snyk-learn-access-controls.md
+  getting-started/snyk-learn/snyk-learn-api: snyk-learn/snyk-learn-api.md
