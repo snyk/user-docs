@@ -273,6 +273,7 @@ The server timed out during the request. Check Snyk status, then try again.
 
 **Help Links:**
 - [https://status.snyk.io/](https://status.snyk.io/)
+- [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-0005](#snyk-0005)
 
@@ -323,6 +324,7 @@ Due to a server gateway error, the server cannot process the request. Check Snyk
 
 **Help Links:**
 - [https://status.snyk.io/](https://status.snyk.io/)
+- [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-0009](#snyk-0009)
 
@@ -334,6 +336,7 @@ Due to service availability issues, Snyk cannot process the request. This issue 
 
 **Help Links:**
 - [https://status.snyk.io/](https://status.snyk.io/)
+- [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-9999](#snyk-9999)
 
@@ -345,6 +348,7 @@ The server cannot process the request due to an unexpected error. Check Snyk sta
 
 **Help Links:**
 - [https://status.snyk.io/](https://status.snyk.io/)
+- [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ---
 # Custom Base Images
@@ -493,6 +497,7 @@ The requested custom base image does not exist.
 
 **Help Links:**
 - [https://status.snyk.io/](https://status.snyk.io/)
+- [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-CBI-0016](#snyk-cbi-0016)
 
@@ -504,6 +509,7 @@ An internal error occurred while trying to update a custom base image. Try again
 
 **Help Links:**
 - [https://status.snyk.io/](https://status.snyk.io/)
+- [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-CBI-0017](#snyk-cbi-0017)
 
@@ -515,6 +521,7 @@ An internal error occurred while trying to retrieve project properties. Try agai
 
 **Help Links:**
 - [https://status.snyk.io/](https://status.snyk.io/)
+- [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-CBI-0018](#snyk-cbi-0018)
 
@@ -526,6 +533,7 @@ An internal error occurred while trying to retrieve the image collection. Try ag
 
 **Help Links:**
 - [https://status.snyk.io/](https://status.snyk.io/)
+- [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-CBI-0019](#snyk-cbi-0019)
 
@@ -705,6 +713,7 @@ A request to the Snyk API has unexpectedly timeout. Check Snyk status, then try 
 
 **Help Links:**
 - [https://status.snyk.io/](https://status.snyk.io/)
+- [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ---
 # Code
@@ -2759,4 +2768,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-03-17T09:07:42.510Z
+--- Generated at 2025-03-19T13:12:05.750Z
