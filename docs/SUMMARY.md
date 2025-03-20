@@ -169,7 +169,6 @@
         * [Set up the Broker client](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/README.md)
           * [Download or update the Snyk Broker client Docker image](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/download-or-update-the-snyk-broker-client-docker-image.md)
           * [Run the Broker client without the code snippet display](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/run-the-broker-client-without-the-code-snippet-display.md)
-          * [Run the Broker client with the code snippets display](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/run-the-broker-client-with-the-code-snippets-display.md)
     * [Snyk Broker - Container Registry Agent](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/README.md)
       * [Setting up the Container Registry Agent for a brokered ECR integration](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md)
       * [Install Broker for Container Registry Agent using Helm](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm.md)
