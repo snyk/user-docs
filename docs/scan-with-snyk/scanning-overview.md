@@ -29,21 +29,21 @@ The following resources are available for all users:
 
 Before integrating your code into production, use the [`snyk monitor`](../snyk-cli/commands/monitor.md) or [`snyk container monitor`](../snyk-cli/commands/container-monitor.md) CLI command to identify issues introduced into open-source and container Projects, monitoring these Projects for vulnerabilities before pushing them into production.
 
-See [Monitor your projects at regular intervals](../snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals.md) for more details.
+For more information, see [Monitor your projects at regular intervals](../snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals.md).
 
 ## Manage and fix issues using Snyk
 
-If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important. For more details, see [Prioritize your issues](../manage-risk/prioritize-issues-for-fixing/).
+If you see hundreds or thousands of issues when first scanning your application, prioritization of issues becomes important. For more information, see [Prioritize your issues](../manage-risk/prioritize-issues-for-fixing/).
 
 Snyk offers capabilities to address issues both reactively and proactively:
 
-* **Being proactive**
+* Being proactive
   * Use [Snyk Advisor](https://snyk.io/advisor) to identify better packages to begin designing.
   * Use the CLI and IDE plugins to test while developing.
   * Add a package, ensure it is installed, and scan for security before writing your code.
-* **Fix advice**\
+* Fix advice\
   Snyk provides this advice across integrations, calculating the top-level package requiring an update in the package manifest or how to update the line of code to make it secure and displaying the advice on results screens.
-* **Automation**
+* Automation
   * Snyk can create automatic fix pull requests when a new vulnerability is detected with a fix available.
   * You can enable dependency upgrade-related pull requests created when new versions of a package are available. This helps with technical debt by providing PR nudges to update dependencies.
 
@@ -51,7 +51,7 @@ Snyk offers capabilities to address issues both reactively and proactively:
 
 #### Smaller businesses
 
-Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams benefit from being agile and determining what works best for their workflow. &#x20;
+Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams benefit from being agile and determining what works best for their workflow.
 
 For more details, see the [Team implementation guide](../implement-snyk/team-implementation-guide/).
 
