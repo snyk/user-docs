@@ -114,7 +114,7 @@ Now you want to exclude the `app.js` and `db.js` files from the Snyk Code analys
 
 <figure><img src="../../.gitbook/assets/Snyk Code - Exlude from Import - Example - Command.png" alt=".snyk file commands"><figcaption><p><code>.snyk</code> file commands</p></figcaption></figure>
 
-3\. You retest the **snyk-goof** repository by clicking the **Retest now** option on the **Code Analysis** page for the repository.
+3\. You retest the "snyk-goof" repository by clicking **Retest now** on the **Code Analysis** page for the repository.
 
 The `app.js` and `db.js` files are excluded from the retest and, therefore, are not tested by Snyk Code and do not appear in the Code Analysis results. Now, only five vulnerability issues are detected:
 

@@ -20,20 +20,20 @@ Use the following Snyk [CLI commands](../snyk-cli/cli-commands-and-options-summa
 
 ## Scan using the Web UI
 
-A scan runs when you import a Snyk Project (see [Import a Project to scan and identify issues ](../getting-started/#import-a-project-to-scan-and-identify-issues)or click the **Retest now** button on a Project. Snyk then automatically runs periodic scans on that imported Project, to see if your code is affected by newly disclosed vulnerabilities.
+A scan runs when you import a Snyk Project (see [Import a Project to scan and identify issues ](../getting-started/#import-a-project-to-scan-and-identify-issues)or click **Retest now** on a Project. Snyk then automatically runs periodic scans on that imported Project, to see if your code is affected by newly disclosed vulnerabilities. For more information, see [Explore Snyk through the Web UI](../getting-started/snyk-web-ui.md).
 
-See [Explore Snyk through the Web UI](../getting-started/snyk-web-ui.md).
+The default scanning frequency and available frequencies vary depending on the type of Project. For more information, see [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md).
 
-The default scanning frequency and available frequencies vary depending on the type of Project: for more information, see [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md). You can also set the frequency in the Project **Settings** (see [View and edit Project settings](../snyk-admin/snyk-projects/view-and-edit-project-settings.md)) or use the API Endpont [Updates project by project ID](../snyk-api/reference/projects.md#orgs-org_id-projects-project_id).
+You can also set the frequency in the Project **Settings** (see [View and edit Project settings](../snyk-admin/snyk-projects/view-and-edit-project-settings.md)) or use the API Endpont [Updates project by project ID](../snyk-api/reference/projects.md#orgs-org_id-projects-project_id).
 
 ## Scan using the API
 
 The Snyk API offers a set of endpoints to test your code. Scans are counted when calls are made to the test endpoint.
 
-For details, see the API [Test](../snyk-api/reference/test-v1.md) endpoint documentation.
+For more information, see the API [Test](../snyk-api/reference/test-v1.md) endpoint documentation.
 
 ## Using PR Checks
 
 Snyk can scan every new Pull Request (PR) submitted on your monitored repositories to help prevent new vulnerabilities from being added to your codebase.
 
-See [Pull Request Checks](pull-requests/pull-request-checks/) for details.
+For more information, see [Pull Request Checks](pull-requests/pull-request-checks/).
