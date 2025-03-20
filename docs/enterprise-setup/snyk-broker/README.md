@@ -25,7 +25,7 @@ Types of integrations supported with Broker are:
   * Publicly-accessible SCM, allowing you to view and control Snyk activity for increased data security
 * Your on-premise [Jira](install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/), [JFrog Artifactory](install-and-configure-snyk-broker/artifactory-repository-install-and-configure-broker/), or [Nexus](install-and-configure-snyk-broker/nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/) installation
 * Network-restricted [container registries](snyk-broker-container-registry-agent/)
-* [Infrastructure as code (IaC) configuration files](snyk-broker-infrastructure-as-code-detection/) on private Git-based repositories
+* [Infrastructure as code (IaC) configuration files](snyk-broker-infrastructure-as-code-detection.md) on private Git-based repositories
 
 You can also use [derived Docker images](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-docker/snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent) for each integration and the Container Registry Agent.
 
@@ -39,7 +39,7 @@ To scan other types of code with Snyk Broker, you must add a component or config
 
 * **Snyk Code** – Grant Broker access to perform a [Git clone of your repository](git-clone-through-broker.md) by adding an environment variable: `ACCEPT_CODE=true.`
 * **Snyk Container** – add the [Container Registry Agent](snyk-broker-container-registry-agent/) to enable the connection to network-restricted container registries and the analysis of container images. There are instructions for [installing with Docker](snyk-broker-container-registry-agent/) and [installing with Helm](snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm.md).
-* **Snyk Infrastructure as Code** – configure the [`accept.json` file with additional parameters](snyk-broker-infrastructure-as-code-detection/) to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through Snyk Broker.
+* **Snyk Infrastructure as Code** – configure the [`accept.json` file with additional parameters](snyk-broker-infrastructure-as-code-detection.md) to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through Snyk Broker.
 
 ## How Snyk Broker works
 

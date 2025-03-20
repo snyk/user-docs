@@ -43,7 +43,7 @@ Consider the following to understand what the required components are for your d
   * See [Install and configure Snyk Broker](../install-and-configure-snyk-broker/).
 * Are you planning to detect Infrastructure as Code files?
   * You must add an environment variable `-e ACCEPT_IAC` or a custom allowlist `accept.json` file to your deployment.
-  * See [Snyk Broker - Infrastructure as Code detection](../snyk-broker-infrastructure-as-code-detection/).
+  * See [Snyk Broker - Infrastructure as Code detection](../snyk-broker-infrastructure-as-code-detection.md).
 * Are you planning to detect Snyk Code vulnerabilities?
   * Grant Broker access to perform a [Git clone of your repository](../git-clone-through-broker.md).
   * To do this, add an environment variable: `ACCEPT_CODE=true.`

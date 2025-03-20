@@ -48,7 +48,7 @@ Webhook notifications are delivered to Snyk through the Broker Client only for e
 
 ### Default approved data list and `accept.json` file
 
-On occasion, you may need to [add and configure an `accept.json`](snyk-broker-infrastructure-as-code-detection/) file in your Broker deployment. Doing this will remove the ability to apply ACCEPT rules when starting the Broker.
+On occasion, you may need to [add and configure an `accept.json`](snyk-broker-infrastructure-as-code-detection.md) file in your Broker deployment. Doing this will remove the ability to apply ACCEPT rules when starting the Broker.
 
 \
 .
