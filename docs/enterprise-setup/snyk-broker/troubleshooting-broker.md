@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Multi-tenant settings**\
-When you are setting up Broker and/or Code Agent for use in Multi-tenant environments, additional variables are required. See [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md) for details.
+When you are setting up Broker for use in multi-tenant environments, you must add a command in your script to set the Broker server for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
 {% endhint %}
 
 This page has information and instructions for the following:
@@ -11,7 +11,6 @@ This page has information and instructions for the following:
 * Basic troubleshooting with the monitoring features, [Healthcheck](troubleshooting-broker.md#monitoring-healthcheck) and [Systemcheck](troubleshooting-broker.md#monitoring-systemcheck)
 * [Troubleshooting Standalone Broker](troubleshooting-broker.md#troubleshooting-standalone-broker)
 * [Support of big manifest files (> 1Mb) for GitHub and GitHub Enterprise](troubleshooting-broker.md#support-of-big-manifest-files-greater-than-1mb-for-github-and-github-enterprise)
-* [Troubleshooting Broker with Code Agent](troubleshooting-broker.md#troubleshooting-broker-with-code-agent)
 * [Ensuring your containers stay online when you log out of the host](troubleshooting-broker.md#containers-go-down-when-you-log-out-of-the-host)
 
 For more comprehensive troubleshooting information, see [Broker Troubleshooting FAQs](https://support.snyk.io/s/article/Broker-Troubleshooting).
@@ -110,42 +109,7 @@ https.get('<URL_HERE>', res => {console.log(`statusCode: ${res.statusCode}`)})
 
 ## **Support of big manifest files (> 1Mb) for GitHub and GitHub Enterprise**
 
-Open Fix/Upgrade PRs or PR/recurring tests may fail because of fetching big manifest files (> 1Mb) failure. To address this issue, follow either the [Docker](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup) or [Helm](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/snyk-open-source-scans-sca-of-large-manifest-files-helm-setup) instructions to allow large manifest files.
-
-## Troubleshooting Broker with Code Agent
-
-{% hint style="warning" %}
-**Deprecated**
-
-The Code Agent is deprecated and is no longer maintained.
-
-The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](git-clone-through-broker.md). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io).
-
-The automatic [PR Checks](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks) feature is not supported for Snyk Broker - Code Agent.
-{% endhint %}
-
-<figure><img src="https://lh3.googleusercontent.com/r_qtONpOOEW35gdyoBcWDAiC6j04M76q8mh922SHor4bdNZdt83sj2kP7d5hbzYcWVXp4Q2hZEiCeAVOmcj4Bu1yFPdnyp3rK7kKeBK8DZEd9S133Xn3YdjddclVf5maEbP23Jor" alt="&#x22;&#x22;"><figcaption><p>Snyk Code Analysis workflow with Broker</p></figcaption></figure>
-
-The best way to troubleshoot the Broker with the Code Agent is to understand the communication flow. Traffic travels from Snyk > Broker Client > Code Agent > On-premise Git > Code Agent > Snyk.
-
-The vast majority of problems with the Code Agent are due to traffic being interrupted at one of these points.
-
-### Troubleshooting the Code Agent
-
-As for Standalone Broker, in order to troubleshoot the code agent, you must generate logs. Do this by attempting to import a repository.
-
-1. Ensure that the Broker is functioning correctly and you can list the repositories. If this does not work, review the Standalone Broker troubleshooting steps.
-2. If, after attempting to import a repository, you see an error message `Bundle Creation Failed`, review the logs of the containers.
-3. Start with the Broker container. Run `docker logs <container id>`
-4. Look for the string `snykgit` . This is the API call from the Broker container to the Code Agent container. If you get anything other than a 200 code, there is some problem with the communication between the Broker and the Code Agent. Ensure you have the proper flags set in the docker run command. Also, ensure you have set up the Docker network
-5. Review the logs of the Code Agent by running `docker logs <container id>`
-
-### Common problems with the Code Agent
-
-* Communication with the on-premise Git is not functioning. There will be a 404 error on the attempt to clone the code If there is any reference to SSL This can be caused by a self-signed certificate. Ensure you have mounted the correct certificate or use the flag `-e NODE_TLS_REJECT_UNAUTHORIZED=0`
-* If you see the message: `“Uploaded Repo”`, the Code Agent and Broker are configured correctly. If there are still errors on the import log, contact [Snyk Support](https://support.snyk.io).
-
-## Containers go down when you log out of the host
+Open Fix/Upgrade PRs or PR/recurring tests may fail because of fetching big manifest files (> 1Mb) failure. To address this issue, follow either the [Docker](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup) or [Helm](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/snyk-open-source-scans-sca-of-large-manifest-files-helm-setup) instructions to allow large manifest files.Containers go down when you log out of the host
 
 If your containers go down, along with the Broker ecosystem, when you detach from their host, run the following to ensure the containers stay online when you log out:
 
