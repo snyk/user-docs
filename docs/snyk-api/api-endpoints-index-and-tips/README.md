@@ -366,7 +366,7 @@ The poll results return a message per manifest processed, either `success: true`
 [Scenario: Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)\
 [Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images)\
 [Manage code vulnerabilities ](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/)(Use: Automate importing multiple repositories)\
-[Snyk Broker Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/)
+[Snyk Broker Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent.md)
 
 **More information Get import job details:** [Scenario: Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images);\
 [Tool: snyk-api-import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/)\

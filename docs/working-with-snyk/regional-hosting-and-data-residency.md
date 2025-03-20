@@ -202,7 +202,7 @@ The preferred method of running Snyk Code analysis using Snyk Broker is through 
 The automatic [PR Checks ](../scan-with-snyk/pull-requests/pull-request-checks/)feature is not supported for Snyk Broker - Code Agent.
 {% endhint %}
 
-Follow the [Snyk Broker - Code Agent](../enterprise-setup/snyk-broker/snyk-broker-code-agent/) instructions BUT add an extra environment variable in the Code Agent container:
+Follow the [Snyk Broker - Code Agent](../enterprise-setup/snyk-broker/snyk-broker-code-agent.md) instructions BUT add an extra environment variable in the Code Agent container:
 
 **SNYK-US-02** :`-e UPSTREAM_URL=https://deeproxy.us.snyk.io`
 
