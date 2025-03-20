@@ -5,9 +5,9 @@
 
 The Code Agent is deprecated and is no longer maintained.
 
-The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io).
+The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact Snyk Support.
 
-The automatic [PR Checks](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks) feature is not supported for Snyk Broker - Code Agent.
+The automatic PR Checks feature is not supported for Snyk Broker - Code Agent.
 {% endhint %}
 
 To test the Code Agent with Snyk Broker setup, import a repository to Snyk and verify that you receive the Code Analysis Project and results. When the selected repositories are imported to Snyk, and the Snyk Code results are displayed, the Code Agent with Snyk Broker setup is operating successfully.
@@ -46,4 +46,4 @@ This example shows Snyk Code results without code snippets:
 
 <figure><img src="../../../../.gitbook/assets/Broker - Results - without code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4) (1).png" alt="Broker Client run with no display of code snippets"><figcaption><p>Broker Client run with no display of code snippets</p></figcaption></figure>
 
-For more information on how to troubleshoot the Snyk Broker Code Agent setup, see [Troubleshooting Broker](../../troubleshooting-broker.md).
+For more information on how to troubleshoot the Snyk Broker Code Agent setup, see Troubleshooting Broker.

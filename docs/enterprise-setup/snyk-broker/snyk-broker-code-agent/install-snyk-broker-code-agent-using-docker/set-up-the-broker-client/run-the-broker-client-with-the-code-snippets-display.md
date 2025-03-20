@@ -4,7 +4,7 @@ After the Broker client image is stored on your machine, use the `docker run` co
 
 ## Docker run command to set up the Broker client to display code snippets
 
-The setup commands for running the Broker client described in this section include the common commands used for all SCMs. Some SCMs require additional parameters for the Broker client setup, and those parameters are indicated in this section, but when you are setting up a Broker client for a specific SCM, see also the instructions for that SCM in the section [Install and configure Snyk Broker](../../../install-and-configure-snyk-broker/).
+The setup commands for running the Broker client described in this section include the common commands used for all SCMs. Some SCMs require additional parameters for the Broker client setup, and those parameters are indicated in this section, but when you are setting up a Broker client for a specific SCM, see also the instructions for that SCM in the section Install and configure Snyk Broker.
 
 The following explains how to set up the Broker client in a way that displays code snippets of the Snyk Code results in the Web UI:
 
@@ -62,14 +62,14 @@ where:
 * `-e <SCM_domain>=` is your SCM domain name without `http/https`, for example, `snyk.git.com`. For each SCM,. Use the following parameter:
   * **GitHub** - the `-e <SCM_domain>` parameter is NOT required.
   * **GitHub Enterprise**: `-e GITHUB`\
-    For [GitHub Enterprise](../../../install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md) add the following parameters also:\
+    For GitHub Enterprise add the following parameters also:\
     `-e GITHUB_API=<your.ghe.domain.com/api/v3_(without_http/s)> \`\
     `-e GITHUB_GRAPHQL=<your.ghe.domain.com/api_(without_http/s)> \`
   * **Azure Repos**: `-e AZURE_REPOS_HOST`\
-    For [Azure Repos](../../../install-and-configure-snyk-broker/azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md) add the following parameter also:\
+    For Azure Repos add the following parameter also:\
     `-e AZURE_REPOS_ORG=<azure_repo_org_name> \`
   * **Bitbucket Server/Data Center**: `-e BITBUCKET`\
-    For [Bitbucket Server/Data Center](../../../install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/data-center.md) add the following parameter also:\
+    For Bitbucket Server/Data Center add the following parameter also:\
     `-e BITBUCKET_API=<your.bitbucket-server.domain.com/rest/api/1.0_(without http/s)> \`
   * **GitLab**: `-e GITLAB`
 * \[Optional] `-e BROKER_CLIENT_URL=` is the URL to the host machine of the Broker client. The URL can include an IP address or a DNS with the port number of the host machine, for example, `http://localhost:8001`.\

@@ -1,13 +1,13 @@
 # Remove an existing Broker Client
 
 {% hint style="info" %}
-This section applies only if you already have a running Broker Client. If you do not have a Broker Client yet, proceed to [Create a network for the Broker Client and Code Agent communication](create-network-for-broker-client-and-code-agent-communication.md).
+This section applies only if you already have a running Broker Client. If you do not have a Broker Client yet, proceed to Create a network for the Broker Client and Code Agent communication.
 {% endhint %}
 
 If you have a running Broker Client for the same Organization and the same Integration, stop and remove it before you set up a new Broker Client for the Code Agent. Since the Broker Client needs to communicate with the Code Agent, and this communication is configured in the setup commands of the Broker Client container, you cannot use an existing Broker Client container for the Code Agent operation.
 
 {% hint style="info" %}
-The new Broker Client that you set up for the Code Agent can also serve the Broker deployment for Snyk Open Source and Snyk IaC for the same Snyk Organization and the same SCM. For [Snyk Container](../../snyk-broker-container-registry-agent/), you must set up an additional Broker Client.
+The new Broker Client that you set up for the Code Agent can also serve the Broker deployment for Snyk Open Source and Snyk IaC for the same Snyk Organization and the same SCM. For Snyk Container, you must set up an additional Broker Client.
 {% endhint %}
 
 **To find out if you have a running Broker Client**, use the Docker Process Status command, which provides a list of all the containers that are up and running on a machine.
