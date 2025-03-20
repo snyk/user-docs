@@ -365,8 +365,7 @@ The poll results return a message per manifest processed, either `success: true`
 [Scenario: Detect and import new Projects in a repository into a target](scenarios-for-using-the-snyk-api.md#detect-and-import-new-projects-in-a-repository-into-a-target)\
 [Scenario: Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)\
 [Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images)\
-[Manage code vulnerabilities ](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/)(Use: Automate importing multiple repositories)\
-[Snyk Broker Code Agent](../../enterprise-setup/snyk-broker/snyk-broker-code-agent.md)
+[Manage code vulnerabilities ](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/)(Use: Automate importing multiple repositories)
 
 **More information Get import job details:** [Scenario: Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images);\
 [Tool: snyk-api-import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/)\
@@ -390,7 +389,7 @@ The poll results return a message per manifest processed, either `success: true`
 
 ### [Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-integrationid)
 
-**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md) (Snyk Broker Code Agent);\
+**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md); \
 [Scenario: For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management](scenarios-for-using-the-snyk-api.md#for-a-specific-event-or-time-disable-all-interactions-pull-requests-tests-from-snyk-to-the-code-base); [Examples for the Update existing integration endpoint](examples-for-the-update-existing-integration-endpoint.md)
 
 ### [Update](../reference/integrations-v1.md#org-orgid-integrations-integrationid-settings)
@@ -400,7 +399,7 @@ The poll results return a message per manifest processed, either `success: true`
 ### [Clone an integration (with settings and credentials)](../reference/integrations-v1.md#org-orgid-integrations-integrationid-clone)
 
 **More information:** [Prepare Snyk Broker for deployment](../../enterprise-setup/snyk-broker/prepare-snyk-broker-for-deployment/);\
-[Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md) (Snyk Broker Code Agent);\
+[Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md);\
 Scenario: [Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
 ### [Delete credentials](../reference/integrations-v1.md#org-orgid-integrations-integrationid-authentication)
@@ -409,7 +408,7 @@ Scenario: [Create multiple new Organizations that all have the same settings in 
 
 ### [Provision new broker token](../reference/integrations-v1.md#org-orgid-integrations-integrationid-authentication-provision-token)
 
-**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md) (Snyk Broker Code Agent)
+**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md)
 
 ## Invites
 

@@ -190,34 +190,6 @@ Follow the [High availability mode](../enterprise-setup/snyk-broker/high-availab
 
 For Broker deployed by Helm chart, edit the `values.yaml` file to include the relevant details in brokerDispatcherUrl.
 
-### Broker with Code Agent URLs
-
-{% hint style="warning" %}
-**Deprecated**
-
-The Code Agent is deprecated and is no longer maintained.
-
-The preferred method of running Snyk Code analysis using Snyk Broker is through [Brokered Code](../enterprise-setup/snyk-broker/git-clone-through-broker.md). The Code Agent is an alternative method without advantages. For details, contact your Snyk Integration Consultant or Technical Success Manager or contact [Snyk Support](https://support.snyk.io).
-
-The automatic [PR Checks ](../scan-with-snyk/pull-requests/pull-request-checks/)feature is not supported for Snyk Broker - Code Agent.
-{% endhint %}
-
-Follow the [Snyk Broker - Code Agent](../enterprise-setup/snyk-broker/snyk-broker-code-agent.md) instructions BUT add an extra environment variable in the Code Agent container:
-
-**SNYK-US-02** :`-e UPSTREAM_URL=https://deeproxy.us.snyk.io`
-
-**SNYK-EU-01 :**`-e UPSTREAM_URL=https://deeproxy.eu.snyk.io`
-
-**SNYK-AU-01 :**`-e UPSTREAM_URL=https://deeproxy.au.snyk.io`
-
-For Broker with Code Agent deployed by Helm chart, use [https://github.com/snyk/snyk-broker-helm](https://github.com/snyk/snyk-broker-helm) and add the following variable in the Code Agent chart:
-
-**SNYK-US-02**: `--set upstreamUrlCodeAgent=https://deeproxy.us.snyk.io`
-
-**SNYK-EU-01:** `--set upstreamUrlCodeAgent=https://deeproxy.eu.snyk.io`
-
-**SNYK-AU-01:**`--set upstreamUrlCodeAgent=https://deeproxy.au.snyk.io`
-
 ### Broker with Snyk Code Local Engine (SCLE)
 
 Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region based on the values found in the [Broker URLs](regional-hosting-and-data-residency.md#broker-urls) section.
