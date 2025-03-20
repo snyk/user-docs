@@ -39,7 +39,7 @@ Snyk supports the testing of open-source packages from the Pub package manager u
 GET /orgs/{org_id}/packages/{purl}/issues endpoint
 ```
 
-The endpoint returns known vulnerabilities for the package. For more information, see the the page[List issues for a package](../snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md).
+The endpoint returns known vulnerabilities for the package. For more information, see the the page[List issues for a package](../snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package.md).
 
 ## Testing pub packages using the SBOM CLI
 

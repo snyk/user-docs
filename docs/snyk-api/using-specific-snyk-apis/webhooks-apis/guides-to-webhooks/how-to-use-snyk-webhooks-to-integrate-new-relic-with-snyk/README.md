@@ -4,7 +4,7 @@ New Relic Security API is the most recent approach to having New Relic send any 
 
 Using New Relic Security API is beneficial because New Relic “understands” the type of data being ingested and is able to provide a curated user interface for the information. New Relic also offers a standardized way of correlating this information with other types of data that New Relic is able to consume. You can see the correlations on the tabs in New Relic, including the vulnerability management section of an entity.
 
-<figure><img src="../../../../.gitbook/assets/new-relic-entity.png" alt="Entity-level vulnerability management"><figcaption><p>Entity-level vulnerability management</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/new-relic-entity.png" alt="Entity-level vulnerability management"><figcaption><p>Entity-level vulnerability management</p></figcaption></figure>
 
 Examples of such correlations are:
 
@@ -13,7 +13,7 @@ Examples of such correlations are:
 
 New Relic also provides a dedicated Vulnerability Management section for all of your security-related issues. The information shared using the Snyk webhook will automatically be populated automatically in this section.
 
-<figure><img src="../../../../.gitbook/assets/new-relic-vuln-mgmt.png" alt="Vulnerability Management"><figcaption><p>Vulnerability Management</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/new-relic-vuln-mgmt.png" alt="Vulnerability Management"><figcaption><p>Vulnerability Management</p></figcaption></figure>
 
 To set up the integration between Snyk and New Relic, follow the steps on these pages. There are two ways to achieve this:
 

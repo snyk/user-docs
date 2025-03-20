@@ -5,7 +5,7 @@
 Snyk Tools help with specific "pain points" that may not be addressed by Snyk product functionality, regardless of whether you use Snyk through the Web UI, CLI, API, or an integration. Snyk Tools extend the functions of the Snyk API and the Snyk CLI.
 
 {% hint style="info" %}
-You must have a [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page) with populated Projects to use Snyk Tools.
+You must have a [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support_docs_page) with populated Projects to use Snyk Tools.
 {% endhint %}
 
 ## Key Snyk Tools
@@ -44,4 +44,4 @@ Refer to the repositories for instructions on how to use the following additiona
 
 ## Tool ideas
 
-Do you have an idea for a tool? If so, check out [Snyk Apps](../../snyk-api/how-to-use-snyk-apps-apis/), which provides an opportunity to mold your Snyk experience to suit your specific needs. You can also contact [Snyk Support](https://support.snyk.io) with questions.
+Do you have an idea for a tool? If so, check out [Snyk Apps](../../snyk-api/using-specific-snyk-apis/snyk-apps-apis/), which provides an opportunity to mold your Snyk experience to suit your specific needs. You can also contact [Snyk Support](https://support.snyk.io) with questions.

@@ -58,7 +58,7 @@ Content-Type: application/json
 
 ### **project**
 
-See [Projects (v1)](../reference/projects-v1.md) APIs.
+See [Projects (v1)](../../reference/projects-v1.md) APIs.
 
 ```json
 "project": {
@@ -121,7 +121,7 @@ See [Projects (v1)](../reference/projects-v1.md) APIs.
 
 ### **org**
 
-See [Organizations (v1)](../reference/organizations-v1.md) APIs.
+See [Organizations (v1)](../../reference/organizations-v1.md) APIs.
 
 ```json
 "org": {
@@ -135,7 +135,7 @@ See [Organizations (v1)](../reference/organizations-v1.md) APIs.
 
 ### **group**
 
-See [Groups (v1)](../reference/groups-v1.md) APIs.
+See [Groups (v1)](../../reference/groups-v1.md) APIs.
 
 ```json
 "group": {

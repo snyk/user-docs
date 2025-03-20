@@ -31,7 +31,7 @@ curl --request GET \
 --header "Authorization: token API_TOKEN"
 ```
 
-If you are using the API through [Snyk Apps](../../how-to-use-snyk-apps-apis/), provide the `access_token` in an `Authorization` header preceded by `bearer` as follows:
+If you are using the API through [Snyk Apps](../../using-specific-snyk-apis/snyk-apps-apis/), provide the `access_token` in an `Authorization` header preceded by `bearer` as follows:
 
 ```
 Authorization: bearer ACCESS_TOKEN

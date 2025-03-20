@@ -8,9 +8,9 @@ This index and notes section of the documentation provides, in addition to this 
 
 See also the following sections on specific APIs:
 
-* [How to use Snyk Apps APIs](../how-to-use-snyk-apps-apis/)
-* [How to use Snyk SBOM and List issues APIs](../how-to-use-snyk-sbom-and-list-issues-apis/)
-* [How to use Snyk webhooks APIs](../how-to-use-snyk-webhooks-apis/)
+* [How to use Snyk Apps APIs](../using-specific-snyk-apis/snyk-apps-apis/)
+* [How to use Snyk SBOM and List issues APIs](../using-specific-snyk-apis/sbom-apis/)
+* [How to use Snyk webhooks APIs](../using-specific-snyk-apis/webhooks-apis/)
 
 For additional information, see the [API support articles](https://support.snyk.io/s/topic/0TOPU00000BgWMv4AN/snyk-api).
 
@@ -22,7 +22,7 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 ## Apps
 
-**More information:** [Snyk Apps](../how-to-use-snyk-apps-apis/)
+**More information:** [Snyk Apps](../using-specific-snyk-apis/snyk-apps-apis/)
 
 ### [Get a list of apps that act on your behalf](../reference/apps.md#self-apps)
 
@@ -42,13 +42,13 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 **Replaced by:** Create a new Snyk App for an organization
 
-**More information:** [Create a Snyk App using the Snyk API](../how-to-use-snyk-apps-apis/create-a-snyk-app-using-the-snyk-api.md)
+**More information:** [Create a Snyk App using the Snyk API](../using-specific-snyk-apis/snyk-apps-apis/create-a-snyk-app-using-the-snyk-api.md)
 
 ### [Get a list of apps created by an organization](../reference/apps.md#orgs-org_id-apps-1)
 
 **Replaces:** DEPRECATED Get a list of apps created by an organization
 
-**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
+**More information:** [Manage App details](../using-specific-snyk-apis/snyk-apps-apis/manage-app-details.md)
 
 ### DEPRECATED [Update app attributes that are name, redirect URIs, and access token time to live](../reference/apps.md#orgs-org_id-apps-client_id)
 
@@ -80,13 +80,13 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 ### [Manage client secret for non-interactive Snyk App installations](../reference/apps.md#orgs-org_id-apps-installs-install_id-secrets)
 
-**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
+**More information:** [Manage App details](../using-specific-snyk-apis/snyk-apps-apis/manage-app-details.md)
 
 ### [Create a new Snyk App for an organization](../reference/apps.md#orgs-org_id-apps-creations)
 
 **Replaces:** DEPRECATED Create a new app for an organization
 
-**More information:** [Create a Snyk App using the Snyk API](../how-to-use-snyk-apps-apis/create-a-snyk-app-using-the-snyk-api.md)
+**More information:** [Create a Snyk App using the Snyk API](../using-specific-snyk-apis/snyk-apps-apis/create-a-snyk-app-using-the-snyk-api.md)
 
 ### DEPRECATED [Get a list of apps created by an organization](../reference/apps.md#orgs-org_id-apps-creations-1)
 
@@ -96,7 +96,7 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 **Replaces:** DEPRECATED Update App attributes that are name, redirect URIs, and access token time to live
 
-**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
+**More information:** [Manage App details](../using-specific-snyk-apis/snyk-apps-apis/manage-app-details.md)
 
 ### [Get a Snyk APP by its App ID](../reference/apps.md#orgs-org_id-apps-creations-app_id)
 
@@ -106,11 +106,11 @@ This index includes the categories and names of REST GA and beta and V1 API endp
 
 **Replaces:** DEPRECATED Delete an app
 
-**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
+**More information:** [Manage App details](../using-specific-snyk-apis/snyk-apps-apis/manage-app-details.md)
 
 ### [Manage client secret for the Snyk App](../reference/apps.md#orgs-org_id-apps-creations-app_id-secrets)
 
-**More information:** [Manage App details](../how-to-use-snyk-apps-apis/manage-app-details.md)
+**More information:** [Manage App details](../using-specific-snyk-apis/snyk-apps-apis/manage-app-details.md)
 
 ### DEPRECATED [Get a list of app bots authorized to an organization](../reference/apps.md#orgs-org_id-app_bots)
 
@@ -429,7 +429,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 [Guidance for Snyk for C++ page, Alternate testing options section](../../supported-languages-package-managers-and-frameworks/c-c++/guidance-for-snyk-for-c-c++.md#alternate-testing-options);\
 [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md);\
 [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript);\
-[List issues for a package page](../how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
+[List issues for a package page](../using-specific-snyk-apis/issues-list-issues-for-a-package.md)
 
 ### [List issues for a given set of packages](../reference/issues.md#orgs-org_id-packages-issues) (not available to all customers)
 
@@ -471,7 +471,7 @@ Additional information: [Reachability](../../manage-risk/prioritize-issues-for-f
 
 ## Organizations (v1)
 
-**More information:** [Webhook events and payloads](../how-to-use-snyk-webhooks-apis/webhooks.md)
+**More information:** [Webhook events and payloads](../using-specific-snyk-apis/webhooks-apis/webhooks.md)
 
 ### [List all the organizations a user belongs to](../reference/organizations-v1.md#orgs)
 
@@ -542,7 +542,7 @@ The only editable attribute of Update organization settings is `requestAccess`.
 
 ### [List accessible organizations](../reference/orgs.md#orgs)
 
-**More information:** [Prerequisites for Snyk Apps](../how-to-use-snyk-apps-apis/prerequisites-for-snyk-apps.md);\
+**More information:** [Prerequisites for Snyk Apps](../using-specific-snyk-apis/snyk-apps-apis/prerequisites-for-snyk-apps.md);\
 [Organization and Group identification for Projects using the API](organization-and-group-identification-for-projects-using-the-api.md)
 
 ### [Update organization](../reference/orgs.md#orgs-org_id)
@@ -562,7 +562,7 @@ The only editable attribute of Update organization settings is `requestAccess`.
 ## Projects (v1)
 
 **More information:** [Project type responses from API](project-type-responses-from-the-api.md);\
-[Webhook events and payloads](../how-to-use-snyk-webhooks-apis/webhooks.md)
+[Webhook events and payloads](../using-specific-snyk-apis/webhooks-apis/webhooks.md)
 
 ### [Update a project](../reference/projects-v1.md#org-orgid-project-projectid)
 
@@ -695,21 +695,21 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ## SBOM (GA and beta)
 
-**More information:** [Rust](../../supported-languages-package-managers-and-frameworks/rust.md); [SBOM test endpoints](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
+**More information:** [Rust](../../supported-languages-package-managers-and-frameworks/rust.md); [SBOM test endpoints](../using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
 
 ### [Get a project’s SBOM document](../reference/sbom.md)
 
-**More information:** [Get a project’s SBOM document](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-get-a-projects-sbom-document.md)
+**More information:** [Get a project’s SBOM document](../using-specific-snyk-apis/sbom-apis/rest-api-get-a-projects-sbom-document.md)
 
 ### [Create an SBOM test run](ttps://apidocs.snyk.io/?version=2024-10-15#post-/orgs/-org_id-/sbom_tests) (beta)
 
-**More information:** [Test an SBOM document for vulnerabilities](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
+**More information:** [Test an SBOM document for vulnerabilities](../using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
 
 ### [Gets an SBOM test run status](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org_id-/sbom_tests/-job_id-) (beta)
 
 ### [Gets an SBOM test run result](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org_id-/sbom_tests/-job_id-/results) (beta)
 
-**More information:** [Test an SBOM document for vulnerabilities](../how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
+**More information:** [Test an SBOM document for vulnerabilities](../using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
 
 ## SastSettings
 

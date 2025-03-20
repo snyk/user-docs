@@ -386,7 +386,7 @@ A Snyk tool that enables developers to integrate programmatically with Snyk. See
 
 ### Snyk Apps
 
-Snyk Apps are the modern and preferred way to build integrations with Snyk, exposing fine-grained scopes for accessing resources over the Snyk APIs, powered by OAuth 2.0 for a developer-friendly experience. See [Snyk Apps](../snyk-api/how-to-use-snyk-apps-apis/).
+Snyk Apps are the modern and preferred way to build integrations with Snyk, exposing fine-grained scopes for accessing resources over the Snyk APIs, powered by OAuth 2.0 for a developer-friendly experience. See [Snyk Apps](../snyk-api/using-specific-snyk-apis/snyk-apps-apis/).
 
 ### Snyk Broker
 
@@ -473,7 +473,7 @@ A security vulnerability that was identified by Snyk. See [Manage vulnerabilitie
 
 ### Webhook
 
-A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code. See [Snyk Webhooks](../snyk-api/how-to-use-snyk-webhooks-apis/).
+A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code. See [Snyk Webhooks](../snyk-api/using-specific-snyk-apis/webhooks-apis/).
 
 ### Web UI
 

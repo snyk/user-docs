@@ -9,7 +9,7 @@ To set up the Snyk Webhook, follow these steps:
     <figure><img src="https://lh3.googleusercontent.com/n5_nk9_s2lIb982FQV8LwIQzgYWxC6xeDKEiZMnN_TvrAuDV5oWvCR2RO15XMzyhvVpQwpg1IcL97ljvhis1Q3hfynm91EEqRQvaA7mdkeholt_JvmKPeq1eVmgmnQu5Iaahmdl4UC_8oPP4A6kSGUBO7iz0YPrBca4hbhXOLndO_DLK0NkPPK4dmQ" alt=""><figcaption><p>Snyk Web UI copy Organization ID</p></figcaption></figure>
 2.  Get your Organization admin **API Token** from the Snyk Web UI, either from a Service Account or your own account.
 
-    <figure><img src="../../../../.gitbook/assets/account-settings-general-auth-token.png" alt=""><figcaption><p>Snyk Web UI get API Token</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/account-settings-general-auth-token.png" alt=""><figcaption><p>Snyk Web UI get API Token</p></figcaption></figure>
 3.  Switch to **Console** in the Snyk API v1 and add your organization ID as a parameter.
 
     <figure><img src="https://lh3.googleusercontent.com/-sXMkOgM3GdCYP-15KqxtZ5DhxZlV3coqUZLYNdNnpVSdCFMH7wZApPhJAr9_8JxzAqyZOFGdIpqjT1t5Jpj570jQ67ykj_L3db4Gph3s74QOXdXjTwEJdRHRfWW0jpY14_lBAOinKC4x1An7yIIfHI-lk-cMULUosb8uDxC_z9mleGNkbdwUC3zVA" alt=""><figcaption><p>Snyk API v1 add orgId to POST to Create a webhook</p></figcaption></figure>

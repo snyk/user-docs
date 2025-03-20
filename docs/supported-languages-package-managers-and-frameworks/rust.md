@@ -4,9 +4,9 @@
 
 Snyk supports [Rust for code analysis](rust/rust-for-code-analysis.md) and Rust for open source.
 
-Snyk supports the testing of Rust applications through the API. For details, see [Test an SBOM document for vulnerabilities](../snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
+Snyk supports the testing of Rust applications through the API. For details, see [Test an SBOM document for vulnerabilities](../snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
 
-Snyk also supports the testing of individual Rust packages from the Cargo package manager. For details, see [List issues for a package](../snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md).
+Snyk also supports the testing of individual Rust packages from the Cargo package manager. For details, see [List issues for a package](../snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package.md).
 
 Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
 

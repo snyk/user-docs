@@ -39,4 +39,4 @@ Event forwarding integrations are available with the following products:
 * [AWS CloudTrail Lake](aws-cloudtrail-lake.md) - **Audit events**
 * [AWS SecurityHub](aws-security-hub.md) - **Issue events**
 
-Each integration is built on the [Snyk Apps](../../snyk-api/how-to-use-snyk-apps-apis/) platform.
+Each integration is built on the [Snyk Apps](../../snyk-api/using-specific-snyk-apis/snyk-apps-apis/) platform.

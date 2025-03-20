@@ -102,7 +102,7 @@ Check an SBOM for vulnerabilities in open-source packages.
 
 ### [`snyk apps`](https://docs.snyk.io/snyk-cli/create-a-snyk-app-using-the-snyk-cli)
 
-Create a Snyk App using the Snyk CLI. For more information, see [Snyk Apps](../snyk-api/how-to-use-snyk-apps-apis/).
+Create a Snyk App using the Snyk CLI. For more information, see [Snyk Apps](../snyk-api/using-specific-snyk-apis/snyk-apps-apis/).
 
 ## Subcommands of CLI commands
 

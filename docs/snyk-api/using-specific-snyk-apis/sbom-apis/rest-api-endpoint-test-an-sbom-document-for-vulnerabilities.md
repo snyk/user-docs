@@ -5,7 +5,7 @@
 
 The Snyk REST API is available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 
-These endpoints are beta API versions. Some of the functionality may change. For more information, see the [Versioning](../rest-api/about-the-rest-api.md#versioning) information for the REST API.
+These endpoints are beta API versions. Some of the functionality may change. For more information, see the [Versioning](../../rest-api/about-the-rest-api.md#versioning) information for the REST API.
 {% endhint %}
 
 Snyk offers a [collection of API endpoints](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests) to asynchronously test a software bill of materials (SBOM) document. You can use these endpoints to learn more about the vulnerabilities impacting your SBOM and its packages.
@@ -31,7 +31,7 @@ Testing your SBOM can be a long-running operation. Instead of waiting to respond
 Follow these steps to test an SBOM:
 
 1. Log in to the Snyk Web UI and retrieve your Organization ID (UUID format), Project ID (UUID), and API key.\
-   If you need help in finding these values, see [Organization general settings](../../snyk-admin/groups-and-organizations/organizations/organization-general-settings.md), [View and edit Project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md), and [Authentication for API](../rest-api/authentication-for-api/).
+   If you need help in finding these values, see [Organization general settings](../../../snyk-admin/groups-and-organizations/organizations/organization-general-settings.md), [View and edit Project settings](../../../snyk-admin/snyk-projects/view-and-edit-project-settings.md), and [Authentication for API](../../rest-api/authentication-for-api/).
 2. Use any HTTP client, for example, `curl` or Postman, to make a request to the endpoint [Create an SBOM test run](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests).
 
 {% hint style="info" %}
