@@ -165,7 +165,6 @@
         * [Obtain the tokens required to set up the Code Agent](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-tokens-required-to-set-up-the-code-agent.md)
         * [Remove an existing Broker Client](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/remove-an-existing-broker-client.md)
         * [Create network for Broker client and Code Agent communication](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/create-network-for-broker-client-and-code-agent-communication.md)
-        * [Set up the Code Agent](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-code-agent.md)
     * [Snyk Broker - Container Registry Agent](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/README.md)
       * [Setting up the Container Registry Agent for a brokered ECR integration](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md)
       * [Install Broker for Container Registry Agent using Helm](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm.md)
