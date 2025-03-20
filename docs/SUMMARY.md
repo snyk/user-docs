@@ -159,7 +159,6 @@
         * [Insecure Downstream Mode](enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/insecure-downstream-mode.md)
     * [Git Clone through Broker](enterprise-setup/snyk-broker/git-clone-through-broker.md)
     * [Clone an integration across your Snyk Organizations](enterprise-setup/snyk-broker/clone-an-integration-across-your-snyk-organizations.md)
-    * [Snyk Broker - Code Agent](enterprise-setup/snyk-broker/snyk-broker-code-agent.md)
     * [Snyk Broker - Container Registry Agent](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/README.md)
       * [Setting up the Container Registry Agent for a brokered ECR integration](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md)
       * [Install Broker for Container Registry Agent using Helm](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm.md)
