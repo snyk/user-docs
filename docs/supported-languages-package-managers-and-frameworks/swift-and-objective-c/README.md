@@ -10,6 +10,7 @@ Check the language availability to be imported as an application, tested, or mon
 **Supported Swift version**&#x20;
 
 * For Snyk Open Source, you can use Swift 3.0 or higher.
+* For Snyk Code, Snyk supports Swift versions up to 5.7.x. You can use higher versions but Snyk does not provide support for them.
 {% endhint %}
 
 Available functions:
