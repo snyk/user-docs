@@ -9,8 +9,8 @@ Integration with Nexus Repository Manager is available only with Enterprise plan
 For information about non-brokered integration with Nexus Repository Manager including supported environments and versions and user permissions, see [Nexus Repository Manager setup](../../../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/). For information about brokered integration with Artifactory or Nexus Container Registry see [Snyk Broker -Container Registry Agent](../../snyk-broker-container-registry-agent/).
 
 {% hint style="info" %}
-**Multi-tenant settings for regions other than the default**\
-When you set up Snyk Broker for use in regions other than the default, additional environment variables with specific URLs are required. For the URLs and examples, see [Regional hosting and data residency, Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
+**Multi-tenant settings for regions**\
+When installing, you must add a command in your script to set the `brokerServerUrl`. This is the URL of the Broker server for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](https://snyksec.atlassian.net/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/~/changes/8951/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
 {% endhint %}
 
 ## Nexus 3 Helm installation
