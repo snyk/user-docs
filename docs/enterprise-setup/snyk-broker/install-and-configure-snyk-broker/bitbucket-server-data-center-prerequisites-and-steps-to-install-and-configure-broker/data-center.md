@@ -19,8 +19,8 @@ To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:b
 **Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk Essentials information. Enable [Snyk Essentials](../../../../scan-with-snyk/snyk-apprisk.md) to identify your application assets, monitor them, and prioritize the risks.
 
 {% hint style="info" %}
-**Multi-tenant settings for regions other than the default**\
-When you set up Snyk Broker for use in regions other than the default, additional environment variables with specific URLs are required. For the URLs and examples, see [Regional hosting and data residency, Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
+**Multi-tenant settings for regions**\
+When installing, you must add a command in your script to set the `BROKER_SERVER_URL`.This is the URL of the Broker server for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](https://snyksec.atlassian.net/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/~/changes/8951/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
 {% endhint %}
 
 ```bash
