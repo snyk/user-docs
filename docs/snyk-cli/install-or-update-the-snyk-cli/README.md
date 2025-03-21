@@ -44,7 +44,7 @@ You can also use these direct links to download the executables:
 You can rename the files for example snyk-win.exe to snyk.exe so you can run snyk commands as documented, for example, `snyk test`.
 
 {% hint style="info" %}
-To use CLI releases before version 1.1230.0 on an Apple M1 or M2 machine, (darwin/arm64), see [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine.md).
+To use CLI releases before version 1.1230.0 on an Apple M1 or M2 machine (darwin/arm64), see [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine.md).
 
 To use the CLI with Alpine Linux, see [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md).
 
@@ -87,13 +87,13 @@ Then follow these **steps to install with npm or Yarn**:
 
 If you are using Yarn, **install** by running `yarn global add snyk`.
 
-For additional information see [Installing Snyk CLI as a binary via npm](installing-snyk-cli-as-a-binary-via-npm.md).
+For additional information see [Installing Snyk CLI as a binary using npm](installing-snyk-cli-as-a-binary-using-npm.md).
 
 ## Snyk CLI in a Docker image
 
 Snyk CLI can also be run from a Docker image. Snyk offers multiple Docker images under [snyk/snyk on Docker Hub](https://hub.docker.com/r/snyk/snyk). See [snyk/snyk-images on GitHub](https://github.com/snyk/snyk-images) for details.
 
-These images wrap the Snyk CLI and depending on the Tag come with relevant tooling for different projects. An example follows for scanning a Gradle project with `snyk/snyk`:
+These images wrap the Snyk CLI and, depending on the Tag, come with relevant tooling for different projects. An example follows for scanning a Gradle project with `snyk/snyk`:
 
 ```bash
 docker run -it \
@@ -115,4 +115,8 @@ snyk/snyk:maven snyk monitor \
 --maven-aggregate-project
 ```
 
-\
+## Windows Subsystem for Linux (WSL)
+
+Snyk CLI does not natively support WSL. It may be possible to install and use the CLI in a WSL environment, but compatibility is not guaranteed.
+
+By extension, some Snyk integrations, such as IDE extensions and CI/CD plugins that rely on the CLI, also do not natively support WSL.
