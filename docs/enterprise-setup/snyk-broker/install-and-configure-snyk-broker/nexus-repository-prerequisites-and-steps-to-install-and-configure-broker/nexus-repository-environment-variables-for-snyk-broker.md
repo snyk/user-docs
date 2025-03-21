@@ -7,6 +7,8 @@ The following environment variables are needed to customize the Broker client fo
 `BROKER_TOKEN`\
 The Snyk Broker token, obtained from your Nexus integration settings (**Integrations > Nexus**).
 
+`BROKER_SERVER_URL` - the URL of the Broker server for the region in which your data is hosted. For the commands and URLs to use, see [Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
+
 `BASE_NEXUS_URL`\
 The URL of your Nexus 3 deployment.\
 Example:\
@@ -29,7 +31,7 @@ Example:\
 `https://<your.nexus.hostname>/service/rest/v1/status`).
 
 Optional. `RES_BODY_URL_SUB`\
-This URL substitution is **required for npm/Yarn integration** and is the same as the URL of the Nexus without credentials appended with `/repository`\
+This URL substitution is required for npm and Yarn integration and is the same as the URL of the Nexus without credentials appended with `/repository`\
 Example:\
 `https://<your.nexus.hostname>/repository`. Must not end with a forward slash.
 
@@ -38,6 +40,8 @@ Example:\
 The following environment variables are needed to customize the Broker client for Nexus 2:
 
 `BROKER_TOKEN` - the Snyk Broker token, obtained from your Nexus integration settings (**Integrations > Nexus**).
+
+`BROKER_SERVER_URL` - the URL of the Broker server for the region in which your data is hosted. For the commands and URLs to use, see [Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
 
 `BASE_NEXUS_URL`- the URL of your Nexus 2 deployment.\
 Example:\
@@ -50,11 +54,11 @@ URL encode username, password, and tokens to avoid errors that may prevent authe
 Minimal example: `https://acme.com`\
 Complex example: `https://alice:mypassword@acme.com: 8000`
 
-`NEXUS_URL`: Used as an override if your repositories do not live under /nexus/content\
+`NEXUS_URL`: Used as an override if your repositories do not live under /nexus/content.\
 The URL that points to the base of your repositories within Nexus. By default, the broker assumes `BASE_NEXUS_URL`/nexus/content/ as the value.
 
 `RES_BODY_URL_SUB`\
-The URL of the Nexus instance, including `https://` and `/nexus/content` without basic auth credentials. **Required for npm/Yarn integrations only.** Must not end with a forward slash.
+The URL of the Nexus instance, including `https://` and `/nexus/content` without basic auth credentials. Required for npm and Yarn integrations onl&#x79;**.** Must not end with a forward slash.
 
 Examples:\
 `https://acme.com/nexus/content/groups`\
