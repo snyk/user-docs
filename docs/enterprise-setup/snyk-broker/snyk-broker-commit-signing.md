@@ -20,7 +20,7 @@ As of version v4.151.0, the Snyk Broker Client supports commit signing for GitHu
    * **`GPG_PASSPHRASE`**: Passphrase of the GPG private key.
    * **`GIT_COMMITTER_NAME`**: will be used to set a committer name.
    * **`GIT_COMMITTER_EMAIL`**: will be used to set a committer email.
-2. Enable **Broker Client Commit Signing** in the Snyk Preview settings.
+2. Enable **Broker Client Commit Signing** in the Broker settings.
 
 ## Troubleshooting commit signing
 
