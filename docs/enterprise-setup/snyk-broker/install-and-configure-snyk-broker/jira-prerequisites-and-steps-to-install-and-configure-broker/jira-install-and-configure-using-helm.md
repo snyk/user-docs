@@ -21,6 +21,7 @@ Note: for `jiraHostname` value do not include `https://`
 helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=jira \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
+             --set brokerServerUrl=<broker-region-url>
              --set jiraUsername=<ENTER_JIRA_USERNAME> \
              --set jiraPassword=<ENTER_JIRA_PASSWORD>  \
              --set jiraHostname=<ENTER_JIRA_HOSTNAME>  \

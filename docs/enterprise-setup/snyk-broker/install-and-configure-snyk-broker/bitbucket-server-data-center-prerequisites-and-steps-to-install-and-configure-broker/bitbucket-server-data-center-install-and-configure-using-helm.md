@@ -23,6 +23,7 @@ Use the following command to **configure Broker to be used with Bitbucket Server
 helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=bitbucket-server \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
+             --set brokerServerUrl=<broker-region-url>
              --set bitbucketUsername=<ENTER_USERNAME> \
              --set bitbucketPassword=<ENTER_PASSWORD> \
              --set bitbucket=<ENTER_BITBUCKET_URL> \

@@ -27,6 +27,7 @@ When installing, you must add a command in your script to set the `brokerServerU
 helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=gitlab \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
+             --set brokerServerUrl=<broker-region-url>
              --set gitlab=<ENTER_GITLAB_URL> \
              --set scmToken=<ENTER_GITLAB_TOKEN> \
              --set brokerClientUrl=<ENTER_BROKER_CLIENT_URL>:<ENTER_BROKER_CLIENT_PORT> \

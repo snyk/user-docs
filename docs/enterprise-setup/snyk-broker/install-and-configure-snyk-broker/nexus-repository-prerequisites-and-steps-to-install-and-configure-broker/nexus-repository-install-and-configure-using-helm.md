@@ -29,6 +29,7 @@ Note: for `baseNexusUrl` and `nexusUrl` values include `https://`
 helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=nexus \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
+             --set brokerServerUrl=<broker-region-url>
              --set baseNexusUrl=<ENTER_BASE_NEXUS_URL> \
              --set nexusUrl=<ENTER_NEXUS_URL>
              --set brokerClientValidationUrl=<ENTER_BROKER_CLIENT_VALIDATION_URL> \
@@ -55,6 +56,7 @@ Note: for `baseNexusUrl` and `nexusUrl` values include `https://`
 helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=nexus2 \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
+             --set brokerServerUrl=<broker-region-url>
              --set baseNexusUrl=<ENTER_BASE_NEXUS_URL> \
              --set nexusUrl=<ENTER_NEXUS_URL>
              --set brokerClientValidationUrl=<ENTER_BROKER_CLIENT_VALIDATION_URL> \

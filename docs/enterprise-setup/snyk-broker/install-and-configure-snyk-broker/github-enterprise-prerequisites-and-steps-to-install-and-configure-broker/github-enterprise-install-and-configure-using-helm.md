@@ -23,6 +23,7 @@ When installing, you must add a command in your script to set the `brokerServerU
 helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=github-enterprise \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
+             --set brokerServerUrl=<broker-region-url>
              --set scmToken=<ENTER_REPO_TOKEN> \
              --set github=<ENTER_GHE_ADDRESS> \
              --set githubApi=<ENTER_GHE_API_ADDRESS> \

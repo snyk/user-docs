@@ -27,6 +27,7 @@ When installing, you must add a command in your script to set the `brokerServerU
 helm install snyk-broker-chart snyk-broker/snyk-broker \
              --set scmType=azure-repos \
              --set brokerToken=<ENTER_BROKER_TOKEN> \
+             --set brokerServerUrl=<broker-region-url>
              --set azureReposToken=<ENTER_REPO_TOKEN> \
              --set azureReposOrg=<ENTER_REPO_ORG> \
              --set azureReposHost=<ENTER_REPO_HOST> \
