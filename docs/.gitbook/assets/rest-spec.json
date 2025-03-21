@@ -264,21 +264,6 @@
           "type": "string"
         }
       },
-      "InternalGlooNormalizedPathHeader": {
-        "description": "An internal header used by Snyk's API-Gateway for analytics.\n",
-        "schema": {
-          "type": "string"
-        },
-        "x-snyk-internal": true
-      },
-      "InternalGlooOrgIdHeader": {
-        "description": "An internal header used by Snyk's API-Gateway for analytics.\n",
-        "schema": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "x-snyk-internal": true
-      },
       "Location": {
         "schema": {
           "type": "string"
@@ -3081,124 +3066,6 @@
         "minLength": 1,
         "type": "string"
       },
-      "CloudResource": {
-        "properties": {
-          "environment": {
-            "properties": {
-              "id": {
-                "description": "Internal ID for an environment.",
-                "format": "uuid",
-                "type": "string"
-              },
-              "name": {
-                "maxLength": 256,
-                "minLength": 1,
-                "type": "string"
-              },
-              "native_id": {
-                "description": "An optional native identifier for this environment. For example, a cloud account id.",
-                "maxLength": 2048,
-                "minLength": 1,
-                "type": "string"
-              },
-              "type": {
-                "enum": [
-                  "aws",
-                  "azure",
-                  "azure_ad",
-                  "google",
-                  "scm",
-                  "cli",
-                  "tfc"
-                ],
-                "type": "string"
-              }
-            },
-            "required": [
-              "id",
-              "type",
-              "name"
-            ],
-            "type": "object"
-          },
-          "resource": {
-            "properties": {
-              "iac_mappings_count": {
-                "description": "Amount of IaC resources this resource maps to.",
-                "format": "int64",
-                "minimum": 0,
-                "type": "integer"
-              },
-              "id": {
-                "description": "Internal ID for a resource.",
-                "format": "uuid",
-                "type": "string"
-              },
-              "input_type": {
-                "enum": [
-                  "cloud_scan",
-                  "arm",
-                  "k8s",
-                  "tf",
-                  "tf_hcl",
-                  "tf_plan",
-                  "tf_state",
-                  "cfn"
-                ],
-                "type": "string"
-              },
-              "location": {
-                "maxLength": 256,
-                "minLength": 1,
-                "type": "string"
-              },
-              "name": {
-                "maxLength": 256,
-                "minLength": 1,
-                "type": "string"
-              },
-              "native_id": {
-                "description": "An optional native identifier for this resource. For example, a cloud resource id.",
-                "maxLength": 2048,
-                "minLength": 1,
-                "type": "string"
-              },
-              "platform": {
-                "maxLength": 256,
-                "minLength": 1,
-                "type": "string"
-              },
-              "resource_type": {
-                "maxLength": 256,
-                "minLength": 1,
-                "type": "string"
-              },
-              "tags": {
-                "additionalProperties": {
-                  "maxLength": 256,
-                  "type": "string"
-                },
-                "type": "object"
-              },
-              "type": {
-                "enum": [
-                  "cloud",
-                  "iac"
-                ],
-                "type": "string"
-              }
-            },
-            "required": [
-              "input_type"
-            ],
-            "type": "object"
-          }
-        },
-        "required": [
-          "environment"
-        ],
-        "type": "object"
-      },
       "CollectionAttributes": {
         "additionalProperties": false,
         "properties": {
@@ -4100,27 +3967,6 @@
         ],
         "type": "object"
       },
-      "Dependency": {
-        "properties": {
-          "package_name": {
-            "description": "The package name the issue was found in",
-            "maxLength": 2048,
-            "minLength": 1,
-            "type": "string"
-          },
-          "package_version": {
-            "description": "The package version the issue was found in",
-            "maxLength": 2048,
-            "minLength": 1,
-            "type": "string"
-          }
-        },
-        "required": [
-          "package_name",
-          "package_version"
-        ],
-        "type": "object"
-      },
       "DeployedRiskFactor": {
         "properties": {
           "included_in_score": {
@@ -4239,44 +4085,6 @@
         "maxItems": 50,
         "minItems": 1,
         "type": "array"
-      },
-      "Environment": {
-        "properties": {
-          "id": {
-            "description": "Internal ID for an environment.",
-            "format": "uuid",
-            "type": "string"
-          },
-          "name": {
-            "maxLength": 256,
-            "minLength": 1,
-            "type": "string"
-          },
-          "native_id": {
-            "description": "An optional native identifier for this environment. For example, a cloud account id.",
-            "maxLength": 2048,
-            "minLength": 1,
-            "type": "string"
-          },
-          "type": {
-            "enum": [
-              "aws",
-              "azure",
-              "azure_ad",
-              "google",
-              "scm",
-              "cli",
-              "tfc"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "id",
-          "type",
-          "name"
-        ],
-        "type": "object"
       },
       "EnvironmentAttributes": {
         "description": "Environment attributes",
@@ -4417,18 +4225,6 @@
       },
       "EnvironmentType": {
         "example": "environment",
-        "type": "string"
-      },
-      "EnvironmentTypeDef": {
-        "enum": [
-          "aws",
-          "azure",
-          "azure_ad",
-          "google",
-          "scm",
-          "cli",
-          "tfc"
-        ],
         "type": "string"
       },
       "EnvironmentUpdateAttributes": {
@@ -4696,23 +4492,6 @@
             "type": "array"
           }
         },
-        "type": "object"
-      },
-      "FilePosition": {
-        "properties": {
-          "column": {
-            "minimum": 0,
-            "type": "integer"
-          },
-          "line": {
-            "minimum": 0,
-            "type": "integer"
-          }
-        },
-        "required": [
-          "line",
-          "column"
-        ],
         "type": "object"
       },
       "GetProjectSettingsCollection": {
@@ -5358,57 +5137,6 @@
             "type": "object"
           }
         },
-        "type": "object"
-      },
-      "GroupResponse": {
-        "additionalProperties": false,
-        "properties": {
-          "data": {
-            "additionalProperties": false,
-            "properties": {
-              "attributes": {
-                "example": {
-                  "name": "My Group"
-                },
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "name"
-                ],
-                "type": "object"
-              },
-              "id": {
-                "$ref": "#/components/schemas/GroupId"
-              },
-              "relationships": {
-                "$ref": "#/components/schemas/GroupRelationships"
-              },
-              "type": {
-                "$ref": "#/components/schemas/GroupType"
-              }
-            },
-            "required": [
-              "id",
-              "type",
-              "attributes"
-            ],
-            "type": "object"
-          },
-          "jsonapi": {
-            "$ref": "#/components/schemas/JsonApi"
-          },
-          "links": {
-            "$ref": "#/components/schemas/SelfLink"
-          }
-        },
-        "required": [
-          "data",
-          "jsonapi",
-          "links"
-        ],
         "type": "object"
       },
       "GroupType": {
@@ -6784,29 +6512,6 @@
         "required": [
           "type",
           "id"
-        ],
-        "type": "object"
-      },
-      "Org20230529": {
-        "additionalProperties": false,
-        "properties": {
-          "attributes": {
-            "$ref": "#/components/schemas/OrgAttributes20230529"
-          },
-          "id": {
-            "description": "The Snyk ID of the organization.",
-            "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
-            "format": "uuid",
-            "type": "string"
-          },
-          "type": {
-            "$ref": "#/components/schemas/Types"
-          }
-        },
-        "required": [
-          "type",
-          "id",
-          "attributes"
         ],
         "type": "object"
       },
@@ -9110,15 +8815,6 @@
         "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
         "type": "string"
       },
-      "ReachabilityDef": {
-        "enum": [
-          "function",
-          "package",
-          "no-info",
-          "not-applicable"
-        ],
-        "type": "string"
-      },
       "ReadTenantMembershipResponseRelationships": {
         "additionalProperties": false,
         "properties": {
@@ -9179,49 +8875,6 @@
         },
         "type": "array"
       },
-      "Region": {
-        "properties": {
-          "end": {
-            "properties": {
-              "column": {
-                "minimum": 0,
-                "type": "integer"
-              },
-              "line": {
-                "minimum": 0,
-                "type": "integer"
-              }
-            },
-            "required": [
-              "line",
-              "column"
-            ],
-            "type": "object"
-          },
-          "start": {
-            "properties": {
-              "column": {
-                "minimum": 0,
-                "type": "integer"
-              },
-              "line": {
-                "minimum": 0,
-                "type": "integer"
-              }
-            },
-            "required": [
-              "line",
-              "column"
-            ],
-            "type": "object"
-          }
-        },
-        "required": [
-          "start",
-          "end"
-        ],
-        "type": "object"
-      },
       "RelatedLink": {
         "additionalProperties": false,
         "example": {
@@ -9281,62 +8934,6 @@
         ],
         "type": "object"
       },
-      "Remedy": {
-        "additionalProperties": false,
-        "properties": {
-          "correlation_id": {
-            "description": "An optional identifier for correlating remedies between coordinates or across issues. They are scoped\nto a single Project and test run. Remedies with the same correlation_id must have the same contents.\n",
-            "maxLength": 256,
-            "minLength": 1,
-            "type": "string"
-          },
-          "description": {
-            "description": "A markdown-formatted optional description of this remedy. Links are not permitted.",
-            "maxLength": 4096,
-            "minLength": 1,
-            "type": "string"
-          },
-          "meta": {
-            "additionalProperties": false,
-            "properties": {
-              "data": {
-                "additionalProperties": true,
-                "description": "Metadata information related to apply a remedy. Limited in size to 100Kb when JSON serialized.",
-                "type": "object"
-              },
-              "schema_version": {
-                "description": "A schema version identifier the metadata object validates against. Note: this information is\nonly relevant in the domain of the API consumer: the issues system always considers metadata\njust as an arbitrary object.\n",
-                "maxLength": 256,
-                "minLength": 1,
-                "type": "string"
-              }
-            },
-            "required": [
-              "data",
-              "schema_version"
-            ],
-            "type": "object"
-          },
-          "type": {
-            "enum": [
-              "indeterminate",
-              "manual",
-              "automated",
-              "rule_result_message",
-              "terraform",
-              "cloudformation",
-              "cli",
-              "kubernetes",
-              "arm"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type"
-        ],
-        "type": "object"
-      },
       "Remedy3": {
         "properties": {
           "description": {
@@ -9360,27 +8957,6 @@
             "type": "string"
           }
         },
-        "type": "object"
-      },
-      "RemedyMetadata": {
-        "additionalProperties": false,
-        "properties": {
-          "data": {
-            "additionalProperties": true,
-            "description": "Metadata information related to apply a remedy. Limited in size to 100Kb when JSON serialized.",
-            "type": "object"
-          },
-          "schema_version": {
-            "description": "A schema version identifier the metadata object validates against. Note: this information is\nonly relevant in the domain of the API consumer: the issues system always considers metadata\njust as an arbitrary object.\n",
-            "maxLength": 256,
-            "minLength": 1,
-            "type": "string"
-          }
-        },
-        "required": [
-          "data",
-          "schema_version"
-        ],
         "type": "object"
       },
       "Resolution": {
@@ -9412,78 +8988,6 @@
           "fixed"
         ],
         "type": "string"
-      },
-      "Resource": {
-        "properties": {
-          "iac_mappings_count": {
-            "description": "Amount of IaC resources this resource maps to.",
-            "format": "int64",
-            "minimum": 0,
-            "type": "integer"
-          },
-          "id": {
-            "description": "Internal ID for a resource.",
-            "format": "uuid",
-            "type": "string"
-          },
-          "input_type": {
-            "enum": [
-              "cloud_scan",
-              "arm",
-              "k8s",
-              "tf",
-              "tf_hcl",
-              "tf_plan",
-              "tf_state",
-              "cfn"
-            ],
-            "type": "string"
-          },
-          "location": {
-            "maxLength": 256,
-            "minLength": 1,
-            "type": "string"
-          },
-          "name": {
-            "maxLength": 256,
-            "minLength": 1,
-            "type": "string"
-          },
-          "native_id": {
-            "description": "An optional native identifier for this resource. For example, a cloud resource id.",
-            "maxLength": 2048,
-            "minLength": 1,
-            "type": "string"
-          },
-          "platform": {
-            "maxLength": 256,
-            "minLength": 1,
-            "type": "string"
-          },
-          "resource_type": {
-            "maxLength": 256,
-            "minLength": 1,
-            "type": "string"
-          },
-          "tags": {
-            "additionalProperties": {
-              "maxLength": 256,
-              "type": "string"
-            },
-            "type": "object"
-          },
-          "type": {
-            "enum": [
-              "cloud",
-              "iac"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "input_type"
-        ],
-        "type": "object"
       },
       "ResourceAttributes": {
         "example": {
@@ -10458,63 +9962,6 @@
         },
         "type": "object"
       },
-      "SourceLocation": {
-        "properties": {
-          "file": {
-            "description": "A path to the file containing this issue, relative to the root of the project target,\nformatted using POSIX separators.\n",
-            "maximum": 2048,
-            "minimum": 1,
-            "type": "string"
-          },
-          "region": {
-            "properties": {
-              "end": {
-                "properties": {
-                  "column": {
-                    "minimum": 0,
-                    "type": "integer"
-                  },
-                  "line": {
-                    "minimum": 0,
-                    "type": "integer"
-                  }
-                },
-                "required": [
-                  "line",
-                  "column"
-                ],
-                "type": "object"
-              },
-              "start": {
-                "properties": {
-                  "column": {
-                    "minimum": 0,
-                    "type": "integer"
-                  },
-                  "line": {
-                    "minimum": 0,
-                    "type": "integer"
-                  }
-                },
-                "required": [
-                  "line",
-                  "column"
-                ],
-                "type": "object"
-              }
-            },
-            "required": [
-              "start",
-              "end"
-            ],
-            "type": "object"
-          }
-        },
-        "required": [
-          "file"
-        ],
-        "type": "object"
-      },
       "Tag": {
         "properties": {
           "tag_type": {
@@ -11225,21 +10672,6 @@
         "description": "The type of the user account.",
         "example": "user",
         "type": "string"
-      },
-      "UserAttributes": {
-        "properties": {
-          "email": {
-            "type": "string"
-          },
-          "username": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "email",
-          "username"
-        ],
-        "type": "object"
       },
       "UserEmail": {
         "description": "The e-mail address of the user.",
