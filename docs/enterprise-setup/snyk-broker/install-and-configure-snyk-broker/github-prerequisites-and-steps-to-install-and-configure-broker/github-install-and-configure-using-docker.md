@@ -24,6 +24,7 @@ docker run --restart=always \
            -p 8000:8000 \
            -e BROKER_TOKEN=<secret-broker-token> \
            -e GITHUB_TOKEN=<secret-github-token> \
+           -e BROKER_SERVER_URL=<broker-region-url> \
            -e PORT=8000 \
            -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
            -e ACCEPT_IAC=tf,yaml,yml,json,tpl \

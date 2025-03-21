@@ -21,6 +21,7 @@ When installing, you must add a command in your script to set the `BROKER_SERVER
 docker run --restart=always \
            -p 8000:8000 \
            -e BROKER_TOKEN=secret-broker-token \
+           -e BROKER_SERVER_URL=<broker-region-url> \
            -e JIRA_USERNAME=username \
            -e JIRA_PASSWORD=password \
            -e JIRA_HOSTNAME=your.jira.domain.com \

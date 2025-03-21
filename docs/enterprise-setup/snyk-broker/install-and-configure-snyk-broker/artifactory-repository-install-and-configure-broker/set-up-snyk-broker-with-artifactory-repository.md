@@ -29,6 +29,7 @@ When installing, you must add a command in your script to set the `BROKER_SERVER
 docker run --restart=always \
            -p 8000:8000 \
            -e BROKER_TOKEN=secret-broker-token \
+           -e BROKER_SERVER_URL=<broker-region-url> \
            -e ARTIFACTORY_URL=<yourdomain>.artifactory.com/artifactory \
        snyk/broker:artifactory
 ```

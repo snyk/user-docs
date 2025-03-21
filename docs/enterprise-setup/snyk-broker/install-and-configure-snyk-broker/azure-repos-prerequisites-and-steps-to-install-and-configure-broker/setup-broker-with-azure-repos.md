@@ -31,6 +31,7 @@ Note that if you have more than one Azure organization, you must deploy a Broker
 docker run --restart=always \
            -p 8000:8000 \
            -e BROKER_TOKEN=<secret-broker-token> \
+           -e BROKER_SERVER_URL=<broker-region-url> \
            -e AZURE_REPOS_TOKEN=<secret-azure-token> \
            -e AZURE_REPOS_ORG=<org-name> \
            -e AZURE_REPOS_HOST=<your.azure-server.domain.com (no http/s)> \

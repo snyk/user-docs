@@ -35,6 +35,7 @@ When installing, you must add a command in your script to set the `BROKER_SERVER
 docker run --restart=always \
            -p 7341:7341 \
            -e BROKER_TOKEN=secret-broker-token \
+           -e BROKER_SERVER_URL=<broker-region-url> \
            -e BASE_NEXUS_URL=https://[<user>:<pass>@]<your.nexus.hostname> \
            -e BROKER_CLIENT_VALIDATION_URL=https://<your.nexus.hostname>/service/rest/v1/status[/check] \
            -e RES_BODY_URL_SUB=https://<your.nexus.hostname>/repository \
@@ -47,6 +48,7 @@ docker run --restart=always \
 docker run --restart=always \
   -p 7341:7341 \
   -e BROKER_TOKEN=<secret-broker-token> \
+  -e BROKER_SERVER_URL=<broker-region-url> \
   -e BASE_NEXUS_URL=https://[username:password]@acme.com \
   -e RES_BODY_URL_SUB=https://acme.com/nexus/content/(groups|repositories) \
   snyk/broker:nexus2
