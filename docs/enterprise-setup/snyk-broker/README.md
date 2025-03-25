@@ -6,38 +6,18 @@
 Snyk Broker is available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, allowing for access by [snyk.io](http://snyk.io/) to your code to scan it and return results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), Snyk IaC, and Snyk Essentials. For more information, see [How Snyk Broker works](./#how-snyk-broker-works).
+Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations. The Broker allows Snyk to connect to remote resources in private repositories, leaving credentials inside the customer's network.
 
-## How to download and install Snyk Broker
+The diagram that follows illustrates the basic components.
 
-Snyk Broker is hosted on [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations. If you are using Kubernetes, Snyk provides a [Helm Chart](https://github.com/snyk/snyk-broker-helm) to deploy Snyk Broker. To deploy Broker, you must install and configure an integration.
+<figure><img src="../../.gitbook/assets/Snyk Broker diagram.png" alt="Snyk Broker WebSocket initiated by Client over HTTPS"><figcaption><p>Snyk Broker WebSocket initiated by Client over HTTPS</p></figcaption></figure>
 
-You can install and configure using [Helm](install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md) or [Docker](install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md). You can install using Docker to run the Snyk Broker Client or run `npm install snyk-broker`. Snyk recommends using Helm as the simplest way to deploy Snyk Broker.&#x20;
+Snyk Broker includes a Server and a Client, basic components that are the same across all integrations. The Broker Server runs on the Snyk SaaS backend and is provided by Snyk; no installation is required. You will install the Broker client and deploy it in your infrastructure.
 
-## **Integrations with Snyk Broker**
+The Broker client and server act together, sending requests by proxy from [snyk.io](http://snyk.io/) to a repository or Jira, fetching the files needed for scanning from repositories, and fetching results using webhooks posted by the SCM service.
 
-Install each type of integration and configure using environment variables, as explained for [Docker](install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md) and [Helm](install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md).
+The Broker client runs within your internal network, keeping sensitive data such as SCM tokens within the network perimeter. The Broker connection allows for scanning using only requests on an approved data list. This narrows the access permissions to the absolute minimum required for Snyk to monitor a repository. For more information, see [Approved data list for Snyk Broker](connections-with-snyk-broker.md#approved-data-list-for-snyk-broker).
 
-Types of integrations supported with Broker are:
+Using Snyk Broker allows you to manage a fixed private IP for your integration that targets the Broker.
 
-* Your Source Code Management (SCM) system ([GitHub](install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/), [GitHub Enterprise](install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/), [BitBucket Server/Data Center](install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/), [GitLab](install-and-configure-snyk-broker/gitlab-prerequisites-and-steps-to-install-and-configure-broker/), [Azure Repos](install-and-configure-snyk-broker/azure-repos-prerequisites-and-steps-to-install-and-configure-broker/))
-  * SCM that is not internet-reachable
-  * Publicly-accessible SCM, allowing you to view and control Snyk activity for increased data security
-* Your on-premise [Jira](install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/), [JFrog Artifactory](install-and-configure-snyk-broker/artifactory-repository-install-and-configure-broker/), or [Nexus](install-and-configure-snyk-broker/nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/) installation
-* Network-restricted [container registries](snyk-broker-container-registry-agent/)
-* [Infrastructure as code (IaC) configuration files](snyk-broker-infrastructure-as-code-detection.md) on private Git-based repositories
-
-You can also use [derived Docker images](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-docker/snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent) for each integration and the Container Registry Agent.
-
-For information about advanced configuration as needed for your installation, see[ Advanced configuration for Snyk Broker Docker installation ](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation)and [Advanced setup for Helm Chart installation](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation).
-
-## How Snyk Broker works
-
-Snyk Broker is designed to connect Snyk products to self-hosted integrations that are not publicly accessible from the internet. Snyk Broker also allows you to do the following:
-
-* Control Snyk access to your network by limiting the files to which Snyk has access and the actions that Snyk can perform.
-* Manage a fixed private IP for your integration, targeting the Broker.
-
-Snyk Broker includes a Server and a Client, basic components that are the same across all integrations. The Broker Server runs on the Snyk SaaS backend and is provided by Snyk; no installation is required. The Broker Client is a [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure. For more information, see [Components of Snyk Broker](components-of-snyk-broker.md) and [Connections with Snyk Broker](connections-with-snyk-broker.md).
-
-See [Prepare Snyk Broker for deployment](prepare-snyk-broker-for-deployment/) for information about prerequisites, choosing components, network configuration, and credentials.
+All data, both in transit and at rest, is encrypted. There is no need to open incoming ports since the communication is initiated outbound. After the connection is initiated, the secure WebSocket connection is bi-directional between the Client and the Server.

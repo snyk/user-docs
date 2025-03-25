@@ -93,7 +93,7 @@
       * [Initial configuration of the Universal Broker](enterprise-setup/snyk-broker/universal-broker/initial-configuration-of-the-universal-broker.md)
       * [Set up a GitHub connection using the API](enterprise-setup/snyk-broker/universal-broker/set-up-a-github-connection-using-the-api.md)
       * [Restart your Broker with the required environment variable and connect](enterprise-setup/snyk-broker/universal-broker/restart-your-broker-with-the-required-environment-variable-and-connect.md)
-    * [Components of Snyk Broker](enterprise-setup/snyk-broker/components-of-snyk-broker.md)
+    * [Download and install Broker](enterprise-setup/snyk-broker/download-and-install-broker.md)
     * [Connections with Snyk Broker](enterprise-setup/snyk-broker/connections-with-snyk-broker.md)
     * [Prepare Snyk Broker for deployment](enterprise-setup/snyk-broker/prepare-snyk-broker-for-deployment/README.md)
       * [Obtain the tokens required to set up Snyk Broker](enterprise-setup/snyk-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md)
