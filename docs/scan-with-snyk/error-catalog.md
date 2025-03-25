@@ -875,6 +875,17 @@ If the issue persists, please open a customer support ticket.
 **HTTP Status:** [408](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/408)
 
 
+### [SNYK-CODE-0014](#snyk-code-0014)
+
+#### Rules relationships must be unique
+
+Each Rule relationship to a Snyk Sast Rule extension must be unique.
+
+Make sure each Rule in relationships has a different name.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+
 ---
 # Integration
 ### [SNYK-INTEGRATION-0001](#snyk-integration-0001)
@@ -2768,4 +2779,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-03-19T13:12:05.750Z
+--- Generated at 2025-03-25T13:22:04.139Z
