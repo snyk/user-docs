@@ -1029,7 +1029,7 @@
     * [Webhooks APIs](snyk-api/using-specific-snyk-apis/webhooks-apis/README.md)
       * [About webhooks](snyk-api/using-specific-snyk-apis/webhooks-apis/about-webhooks.md)
       * [Webhook events and payloads](snyk-api/using-specific-snyk-apis/webhooks-apis/webhooks.md)
-      * [Validation and versioning of payloads](snyk-api/using-specific-snyk-apis/webhooks-apis/validation-and-versioning-of-payloads.md)
+      * [Validation and versioning of payloads](snyk-api/how-to-use-snyk-webhooks-apis/validation-and-versioning-of-payloads.md)
       * [Guides to webhooks](snyk-api/using-specific-snyk-apis/webhooks-apis/guides-to-webhooks/README.md)
         * [How to use Snyk webhooks with Zapier](snyk-api/using-specific-snyk-apis/webhooks-apis/guides-to-webhooks/tutorial.md)
         * [How to use Snyk Webhooks to integrate New Relic with Snyk](snyk-api/using-specific-snyk-apis/webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-integrate-new-relic-with-snyk/README.md)

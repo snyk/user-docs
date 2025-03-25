@@ -26,4 +26,7 @@ Payloads may evolve over time, and so are versioned. Payload versions are suppli
 
 Version numbers only increment when a breaking change is made, for example, removing a field that used to exist, or changing the name of a field. Version numbers do not increment when making an additive change, such as adding a new field that never existed before.
 
+{% hint style="warning" %}
 During the BETA phase, the structure of webhook payloads may change at any time, so Snyk  recommends that you check the payload version.
+{% endhint %}
+
