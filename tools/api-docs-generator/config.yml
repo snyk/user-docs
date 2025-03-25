@@ -8,9 +8,25 @@ specs:
 - path: docs/.gitbook/assets/rest-spec.json
   docsHint: This document uses the REST API. For more details, see the [Authentication for API](../rest-api/authentication-for-api/) page.
 categoryContext:
+- name: dependencies-v1
+  hint: |
+    Dependencies are packages or modules that your Projects depend on.
+    
+    The rate limit is up to **150 requests per minute, per user**.
+- name: import-projects-v1
+  hint: |
+    You can use this API to import projects into Snyk. Projects imported can be Git repositories, Docker images, containers, configuration files, and much more. See the [Projects and Targets documentation](https://docs.snyk.io/getting-started/introduction-to-snyk-projects#targets) for more information. A typical import would start with requesting a target to be processed and then polling the Import Job API for more details on completion of an import and the resulting Snyk Projects.
 - name: licenses-v1
   hint: |
     **Note:** When you import or update Projects, changes will be reflected in the endpoint results after a one-hour delay.
+- name: reporting-api-v1
+  hint: |
+    {% hint style="warning" %}
+    The endpoints in this category support only Snyk legacy reporting, not the latest release. They are not available in regions such as single-tenant or multi-tenant US02, EU, and AU; instead use the [Issues REST API](https://docs.snyk.io/snyk-api/reference/issues).
+    {% endhint %}
+    Using the Reporting API, you can find answers to questions like how many issues your Organization has, or how many tests have been conducted in a given time period.
+    
+    The rate limit is up to **70 requests per minute, per user**. All requests above the limit will get a response with the status code `429 - Too many requests` until requests stop for the duration of the rate-limiting interval (one minute).
 - name: projects-v1
   hint: |
     **Note:** For a list of Project types, see [Project type responses from the API](../snyk-api/api-endpoints-index-and-tips/project-type-responses-from-the-api).
