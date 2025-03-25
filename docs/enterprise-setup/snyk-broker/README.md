@@ -12,6 +12,8 @@ The diagram that follows illustrates the basic components.
 
 <figure><img src="../../.gitbook/assets/Snyk Broker diagram.png" alt="Snyk Broker WebSocket initiated by Client over HTTPS"><figcaption><p>Snyk Broker WebSocket initiated by Client over HTTPS</p></figcaption></figure>
 
+## How Snyk Broker works
+
 Snyk Broker includes a Server and a Client, basic components that are the same across all integrations. The Broker Server runs on the Snyk SaaS backend and is provided by Snyk; no installation is required. You will install the Broker client and deploy it in your infrastructure.
 
 The Broker client and server act together, sending requests by proxy from [snyk.io](http://snyk.io/) to a repository or Jira, fetching the files needed for scanning from repositories, and fetching results using webhooks posted by the SCM service.
@@ -21,3 +23,30 @@ The Broker client runs within your internal network, keeping sensitive data such
 Using Snyk Broker allows you to manage a fixed private IP for your integration that targets the Broker.
 
 All data, both in transit and at rest, is encrypted. There is no need to open incoming ports since the communication is initiated outbound. After the connection is initiated, the secure WebSocket connection is bi-directional between the Client and the Server.
+
+## Integrations supported by Snyk Broker
+
+| AppRisk                            | Yes                                  | Yes                                  |
+| ---------------------------------- | ------------------------------------ | ------------------------------------ |
+| Artifactory Private Registry       | Yes                                  | Yes                                  |
+| Azure Repository                   | Yes                                  | Yes                                  |
+| Bitbucket Server                   | Yes                                  | Yes                                  |
+| GitHub                             | Yes                                  | Yes                                  |
+| GitHub Enterprise                  | Yes                                  | Yes                                  |
+| GithHub Cloud app                  | No                                   | Yes                                  |
+| GitHub Server app                  | No                                   | Yes                                  |
+| GitLab                             | Yes                                  | Yes                                  |
+| Jira                               | Yes                                  | Yes                                  |
+| Nexus Private Registry             | Yes                                  | Yes                                  |
+| Docker Hub                         | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+| Elastic Container Registry         | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+| Azure Container Registry           | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+| Google Container Registry          | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+| Artifactory Container Registry     | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+| Harbor                             | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+| Quay                               | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+| GitHub Container Registry          | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+| Nexus Container Registry           | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+| DigitalOcean Container Registry    | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+| GitLab Container Registry          | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+| Google Artifact Container Registry | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
