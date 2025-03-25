@@ -2108,7 +2108,7 @@ paths:
       tags:
         - Import Projects
       summary: Import targets
-      description: Request a [target](https://docs.snyk.io/getting-started/introduction-to-snyk-projects#targets) to be analyzed for supported Snyk projects via a configured [integration](https://docs.snyk.io/integrations). See the [Integrations API](https://snyk.docs.apiary.io/#reference/integrations) to configure a new integration.
+      description: Request a [target](https://docs.snyk.io/getting-started/introduction-to-snyk-projects#targets) to be analyzed for supported Snyk projects via a configured [integration](https://docs.snyk.io/integrations). See the [Integrations API](https://docs.snyk.io/snyk-api/reference/integrations-v1) to configure a new integration.
       operationId: Importtargets
       parameters:
         - name: orgId
@@ -2993,7 +2993,7 @@ paths:
         category: Ignores
       summary: Retrieve ignore
       description: >-
-        It is possible to modify/retrieve ignored [vulnerability](https://snyk.docs.apiary.io/#introduction/overview-and-entities/vulnerability) or [license](https://snyk.docs.apiary.io/#introduction/overview-and-entities/license-issue) issues for a given organization and project.
+        It is possible to modify/retrieve ignored vulnerability or license issues for a given organization and project.
 
         Ignores from `.snyk` files are not included here
 
@@ -3044,7 +3044,7 @@ paths:
         category: Ignores
       summary: Add ignore
       description: >-
-        It is possible to modify/retrieve ignored [vulnerability](https://snyk.docs.apiary.io/#introduction/overview-and-entities/vulnerability) or [license](https://snyk.docs.apiary.io/#introduction/overview-and-entities/license-issue) issues for a given organization and project.
+        It is possible to modify/retrieve ignored vulnerability or license issues for a given organization and project.
 
         Ignores from `.snyk` files are not included here
 
@@ -3110,7 +3110,7 @@ paths:
         category: Ignores
       summary: Replace ignores
       description: >-
-        It is possible to modify/retrieve ignored [vulnerability](https://snyk.docs.apiary.io/#introduction/overview-and-entities/vulnerability) or [license](https://snyk.docs.apiary.io/#introduction/overview-and-entities/license-issue) issues for a given organization and project.
+        It is possible to modify/retrieve ignored vulnerability or license issues for a given organization and project.
 
         Ignores from `.snyk` files are not included here
 
@@ -3180,7 +3180,7 @@ paths:
         category: Ignores
       summary: Delete ignores
       description: >-
-        It is possible to modify/retrieve ignored [vulnerability](https://snyk.docs.apiary.io/#introduction/overview-and-entities/vulnerability) or [license](https://snyk.docs.apiary.io/#introduction/overview-and-entities/license-issue) issues for a given organization and project.
+        It is possible to modify/retrieve ignored vulnerability or license issues for a given organization and project.
 
         Ignores from `.snyk` files are not included here
 
@@ -23853,7 +23853,7 @@ tags:
 
       Current rate limit is up to 150 requests per minute, per user.
 
-      For more information about rate-limiting see: [https://snyk.docs.apiary.io/#introduction/rate-limiting](https://snyk.docs.apiary.io/#introduction/rate-limiting)
+      For more information about rate-limiting see: [https://docs.snyk.io/snyk-api/v1-api#rate-limiting](https://docs.snyk.io/snyk-api/v1-api#rate-limiting)
   - name: Licenses
     description: >-
       The licenses which the packages/modules in your projects use.
@@ -23884,7 +23884,7 @@ tags:
 
       All requests above the limit will get a response with status code `429` - `Too many requests` until requests stop for the duration of the rate-limiting interval (currently a minute).
 
-      For more information about rate-limiting see: [https://snyk.docs.apiary.io/#introduction/rate-limiting](https://snyk.docs.apiary.io/#introduction/rate-limiting)
+      For more information about rate-limiting see: [https://docs.snyk.io/snyk-api/v1-api#rate-limiting](https://docs.snyk.io/snyk-api/v1-api#rate-limiting)
   - name: Webhooks
     description: >-
       ## Intro
