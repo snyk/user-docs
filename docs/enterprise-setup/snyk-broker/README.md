@@ -31,16 +31,6 @@ You can also use [derived Docker images](https://docs.snyk.io/snyk-admin/snyk-br
 
 For information about advanced configuration as needed for your installation, see[ Advanced configuration for Snyk Broker Docker installation ](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation)and [Advanced setup for Helm Chart installation](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation).
 
-## **Using Snyk Broker to scan your code**
-
-To use Snyk Open Source with Snyk Broker, you need only the Broker Server and Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables following the links in the section [Integrations with Snyk Broker](./#integrations-with-snyk-broker).
-
-To scan other types of code with Snyk Broker, you must add a component or configurations and add parameters to the Broker Client setup:
-
-* **Snyk Code** – Grant Broker access to perform a [Git clone of your repository](git-clone-through-broker.md) by adding an environment variable: `ACCEPT_CODE=true.`
-* **Snyk Container** – add the [Container Registry Agent](snyk-broker-container-registry-agent/) to enable the connection to network-restricted container registries and the analysis of container images. There are instructions for [installing with Docker](snyk-broker-container-registry-agent/) and [installing with Helm](snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm.md).
-* **Snyk Infrastructure as Code** – configure the [`accept.json` file with additional parameters](snyk-broker-infrastructure-as-code-detection.md) to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through Snyk Broker.
-
 ## How Snyk Broker works
 
 Snyk Broker is designed to connect Snyk products to self-hosted integrations that are not publicly accessible from the internet. Snyk Broker also allows you to do the following:
