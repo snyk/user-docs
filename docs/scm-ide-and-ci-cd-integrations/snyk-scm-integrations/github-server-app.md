@@ -81,6 +81,8 @@ If you are an Enterprise plan customer, you can migrate Snyk Targets to the GitH
 
 ## Set up the GitHub Server App for Universal Broker
 
+If your GithHub server is not publicly available, you can provide access to it through the Universal Broker, a proxy deployed in your internal network to facilitate outbound connections and communication with Snyk.
+
 The setup process for Universal Broker involves:
 
 1. [Creating a GitHub App on your GitHub Server instance](github-server-app.md#create-a-github-app-for-universal-broker)
@@ -88,7 +90,7 @@ The setup process for Universal Broker involves:
 
 ### Create a GitHub App for Universal Broker
 
-To use the GitHub Server App with Universal Broker you must create your own GitHub App on your GitHub Server instance. You can do this by using the `GITHUB-SERVER-URL` that pre-defines all the required permissions for Snyk services:
+To use the GitHub Server App with Universal Broker you must create your own GitHub App on your GitHub Server instance. You can do this by using the predefined `GITHUB-SERVER-URL` that follows and includes all the required permissions for Snyk services:
 
 ```
 {{GITHUB-SERVER-URL}}/settings/apps/new?name=Snyk&description=Snyk%20helps%20you%20develop%20fast%20while%20staying%20secure%20by%20finding%20and%20automatically%20fixing%20security%20issues%20in%20your%20code%2C%20open%20source%20dependencies%2C%20containers%2C%20and%20infrastructure%20as%20code%20-%20all%20powered%20by%20Snyk%E2%80%99s%20security%20intelligence.&url=https%3A%2F%2Fgithub.com%2Fapps%2Fsnyk-io&public=false&webhook_active=true&webhook_url={{SNYK-ENV}}%2Fapi%2Fhidden%2Fscm-apps%2Fapi%2Fgithub-app%2Fwebhook&checks=write&statuses=write&contents=write&metadata=read&pull_requests=write&repository_hooks=write&members=read&events[]=repository 
@@ -111,7 +113,7 @@ After the values are replaced, navigate to that URL. This will take you to the a
 On creation of your GitHub Server App you will see a`ClientId` and `AppId` - store these safely as these are your app's credentials and should be treated as secrets.
 {% endhint %}
 
-After creating your GitHub Server App you will see a banner prompting you to create a private key. Click on it and create a private key for your app.
+After creating your GitHub Server App you will see a banner at the top of the page prompting you to create a private key. Click on it and create a private key for your app.
 
 <figure><img src="../../.gitbook/assets/image (618).png" alt=""><figcaption><p>Registration success message with a link for private key generation</p></figcaption></figure>
 
@@ -129,7 +131,7 @@ Choose where you want to install the app in your GitHub organization. It can be 
 If you select to install the app on a subset of repositories in your GitHub organization, the app will work only in those repositories. You can edit where the app is installed by returning to this screen at a later date if you want to add it to additional repositories
 {% endhint %}
 
-On installation of the app you will receive an `InstallationID`. These are the final numbers in the URL of the page. Make a note of that number, as you will need it to set up a Broker connection.
+On installation of the app you will be assigned an `InstallationID`. These are the final numbers in the URL of the page. Make a note of that number, as you will need it to set up a Universal Broker connection.
 
 ### Create the Universal Broker connection for your GitHub Server App
 
