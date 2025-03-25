@@ -51,14 +51,3 @@ Snyk Broker is designed to connect Snyk products to self-hosted integrations tha
 Snyk Broker includes a Server and a Client, basic components that are the same across all integrations. The Broker Server runs on the Snyk SaaS backend and is provided by Snyk; no installation is required. The Broker Client is a [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure. For more information, see [Components of Snyk Broker](components-of-snyk-broker.md) and [Connections with Snyk Broker](connections-with-snyk-broker.md).
 
 See [Prepare Snyk Broker for deployment](prepare-snyk-broker-for-deployment/) for information about prerequisites, choosing components, network configuration, and credentials.
-
-## Common questions about Snyk Broker
-
-**How often is Snyk Broker updated?**\
-Snyk Broker is updated each time new features become available and when there are fixes.
-
-**How often is Snyk Broker checked for vulnerabilities?**\
-The Snyk Broker application and images are tested daily for vulnerabilities.
-
-**What is the SLA to fix vulnerabilities?**\
-There is a 14-day SLA for fixing high vulnerabilities and a five-day SLA for fixing critical vulnerabilities in public images.

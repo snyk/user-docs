@@ -173,6 +173,7 @@
     * [Upgrade the Snyk Broker Client](enterprise-setup/snyk-broker/upgrade-the-snyk-broker-client.md)
     * [Preflight checks for Snyk Broker](enterprise-setup/snyk-broker/preflight-checks-for-snyk-broker.md)
     * [Troubleshooting Broker](enterprise-setup/snyk-broker/troubleshooting-broker.md)
+    * [Common questions about Broker](enterprise-setup/snyk-broker/common-questions-about-broker.md)
 * [Implement Snyk](implement-snyk/README.md)
   * [Team implementation guide](implement-snyk/team-implementation-guide/README.md)
     * [Prerequisites: project plan templates](implement-snyk/team-implementation-guide/prerequisites-project-plan-templates.md)
