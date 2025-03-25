@@ -38,20 +38,20 @@ To establish trust with Snyk, add an Entity ID, an Assertion Consumer Service (A
 
 Use these details to set up the connection with your Identity provider (IdP):
 
-| **Details**                                    | **Description**                                                                                                                                                             |
-| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                                      | **urn:auth0:snyk:saml-{group-name-normalized}**                                                                                                                             |
-| Entity ID (Snyk EU Tenant Customers)           | **urn:auth0:snyk-mt-eu-prod-1:saml-{group-name-normalized}**                                                                                                                |
-| Entity ID (Snyk AU Tenant Customers)           | **urn:auth0:snyk-mt-au-prod-1:saml-{group-name-normalized}**                                                                                                                |
-| ACS URL                                        | [https://snyk.auth0.com/login/callback?connection=saml-](https://snyk.auth0.com/login/callback?connection=saml-)**{group-name-normalized}**                                 |
-| ACS URL (Snyk EU Tenant Customers)             | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-)**{group-name-normalized}** |
-| ACS URL (Snyk AU Tenant Customers)             | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml](https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml)-**{group-name-normalized}**  |
-| Signing certificate                            | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem)                                                                                                                    |
-| Signing certificate (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection)                                                    |
-| Signing certificate (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/pem?cert=connection)](https://snyk-mt-au-prod-1.au.auth0.com/pem?cert=connection\))                                                 |
+| **Details**                                     | **Description**                                                                                                                                                  |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID (SNYK-US-01 and SNYK-US-02)           | **urn:auth0:snyk:saml-{group-slug}**                                                                                                                             |
+| Entity ID (SNYK-EU-01)                          | **urn:auth0:snyk-mt-eu-prod-1:saml-{group-slug}**                                                                                                                |
+| Entity ID (SNYK-AU-01)                          | **urn:auth0:snyk-mt-au-prod-1:saml-{group-slug}**                                                                                                                |
+| ACS URL (SNYK-US-01 and SNYK-US-02)             | [https://snyk.auth0.com/login/callback?connection=saml-](https://snyk.auth0.com/login/callback?connection=saml-)**{group-slug}**                                 |
+| ACS URL (SNYK-EU-01)                            | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-)**{group-slug}** |
+| ACS URL (SNYK-AU-01)                            | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml](https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml)-**{group-slug}**  |
+| Signing certificate (SNYK-US-01 and SNYK-US-02) | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem)                                                                                                         |
+| Signing certificate (SNYK-EU-01)                | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection)                                         |
+| Signing certificate (SNYK-AU-01)                | [https://snyk-mt-au-prod-1.au.auth0.com/pem?cert=connection)](https://snyk-mt-au-prod-1.au.auth0.com/pem?cert=connection\))                                      |
 
 {% hint style="info" %}
-Replace **{group-name-normalized}** with the name of your Snyk Group. If your Group name includes spaces, replace them with dashes. For example, if your Group name is `Your Company Group`, then the **{group-name-normalized}** value is **your-company-group**.
+Replace **{group-slug}** with the name of your Snyk Group. If your Group name includes spaces, replace them with dashes. For example, if your Group name is `Your Company Group`, then the **{group-slug}** value is **your-company-group**.
 {% endhint %}
 
 To map information from your Identity provider to Snyk, name your user attributes as follows, using the same capitalization and spelling:
@@ -86,12 +86,12 @@ The IdP (or issuer URL) must be publicly reachable. If these cannot be made publ
 
 When using OIDC for the connection between your Identity provider and Snyk, add the Callback/Redirect URIs and OAuth Grant Type in your identity provider to establish trust with Snyk.
 
-| Information                                       | Description                                                                                                    |
-| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Callback/Redirect URIs                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                 |
-| Callback/Redirect URIs (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
-| Callback/Redirect URIs (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback) |
-| OAuth Grant Type                                  | Implicit (or Authorization Code)                                                                               |
+| Information                                        | Description                                                                                                    |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Callback/Redirect URIs (SNYK-US-01 and SNYK-US-02) | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                 |
+| Callback/Redirect URIs (SNYK-EU-01)                | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
+| Callback/Redirect URIs (SNYK-AU-01)                | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback) |
+| OAuth Grant Type                                   | Implicit (or Authorization Code)                                                                               |
 
 ## OIDC information to provide to Snyk
 
@@ -112,11 +112,13 @@ When using Entra ID (formerly Azure AD) for the connection between your Identity
 Use your Entra ID name when authenticating rather than the SCM user account name, or a connection error can occur.
 {% endhint %}
 
-| Information                              | Description                                                                                                    |
-| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Redirect URIs                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                 |
-| Redirect URIs (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
-| Redirect URIs (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback) |
+
+
+| Information                               | Description                                                                                                    |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Redirect URIs (SNYK-US-01 and SNYK-US-02) | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                 |
+| Redirect URIs (SNYK-EU-01)                | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
+| Redirect URIs (SNYK-AU-01)                | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback) |
 
 ## Entra ID information to provide to Snyk
 
@@ -132,17 +134,17 @@ Obtain the following information from your identity provider. Provide this infor
 
 When using Active Directory Federation Service (ADFS) for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk. For more information, see [Connecting Auth0 to an ADFS server (video)](https://www.youtube.com/watch?v=ICW6sGP9ht8).
 
-| **Information**                         | **Description**                                                                                                                                                  |
-| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Realm Identifier                        | urn:auth0:snyk                                                                                                                                                   |
-| EU Realm Identifier                     | urn:auth0:snyk-mt-eu-prod-1                                                                                                                                      |
-| AU Realm Identifier                     | urn:auth0:snyk-mt-au-prod-1                                                                                                                                      |
-| Callback URL                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                                                                   |
-| Callback URL (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback)                                                   |
-| Callback URL (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback)                                                   |
-| Signing cert                            | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) (add as a signature and not encryption)                                                                 |
-| Signing cert (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection) (add as a signature and not encryption) |
-| Signing cert (Snyk AU Tenant Customers) | [https://snyk-mt-eu-prod-1.au.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.au.auth0.com/pem?cert=connection) (add as a signature and not encryption) |
+| **Information**                              | **Description**                                                                                                                                                  |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Realm Identifier (SNYK-US-01 and SNYK-US-02) | urn:auth0:snyk                                                                                                                                                   |
+| Realm Identifier (SNYK-EU-01)                | urn:auth0:snyk-mt-eu-prod-1                                                                                                                                      |
+| Realm Identifier (SNYK-AU-01)                | urn:auth0:snyk-mt-au-prod-1                                                                                                                                      |
+| Callback URL (SNYK-US-01 and SNYK-US-02)     | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                                                                   |
+| Callback URL (SNYK-EU-01)                    | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback)                                                   |
+| Callback URL (SNYK-AU-01)                    | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback)                                                   |
+| Signing cert (SNYK-US-01 and SNYK-US-02)     | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) (add as a signature and not encryption)                                                                 |
+| Signing cert (SNYK-EU-01)                    | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection) (add as a signature and not encryption) |
+| Signing cert (SNYK-AU-01)                    | [https://snyk-mt-eu-prod-1.au.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.au.auth0.com/pem?cert=connection) (add as a signature and not encryption) |
 
 ## ADFS information to provide to Snyk
 
@@ -168,7 +170,7 @@ Ignore any error message you see after clicking this link the first time, as Sny
 
 When Snyk finishes the configuration, the support agent asks you to navigate to the login page in incognito mode to prevent cookies from interfering with the login process.
 
-Use [https://app.snyk.io/login/sso](https://app.snyk.io/login/sso) for logging into your production environment.
+Use [https://app.snyk.io/login/sso](https://app.snyk.io/login/sso) (or the regional equivalent) for logging into your production environment.
 
 To complete your login:
 
@@ -179,7 +181,7 @@ To complete your login:
 
 ## Resources for SSO setup
 
-These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
+These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on. Please make sure you replace any Snyk URL with the correct regional environment per the tables above.
 
 {% file src="../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (3) (5).pdf" %}
 
