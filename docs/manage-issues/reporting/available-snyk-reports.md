@@ -373,6 +373,12 @@ The Adoption by Organization table facilitates tracking and comparing the adopti
 
 In addition, you can examine the success rate column to surface organizations that have lower success rates.
 
+**Columns descriptions:**
+
+* **Tested Repositories:** the number of repositories that were tested in the selected time range, with an indication of the percentage of change compared to the previous sequential period.
+* **Committed Repositories:** the number of repositories that had any commits in the last 30 days at any given time within the selected time range, with an indication of the percentage of change compared to the previous sequential period.
+* **Success Rate:**  the portion of successful tests in CI/CD against all other tests that were executed.
+
 #### Repository Test Summary <a href="#repository-test-summary" id="repository-test-summary"></a>
 
 The repository test summary table shows the performed tests during the selected date range.
