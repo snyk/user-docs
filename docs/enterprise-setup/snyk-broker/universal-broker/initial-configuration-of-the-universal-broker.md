@@ -41,7 +41,7 @@ To use this command, you must install Node 18 or higher.
      * Select the type of connection you want to create from the list presented.\
        Options include SCM connection types like `github` and variants, `bitbucket` and variants, `gitlab`, and `azure`, as well as container registry connections (see the next step), package manager connections, Jira, and more.
      * For container registry-type Broker connections, specify a CR\_AGENT\_URL to point to a Container Registry Agent.\
-       You must configure and run both the Universal Broker and a separate Container Registry Agent. Follow the instructions for [configuring and running a Container Registry Agent](../snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent).
+       You must configure and run both the Universal Broker and a separate Container Registry Agent. Follow the instructions for [configuring and running a Container Registry Agent](../classic-broker/snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent).
    * Provide the configuration for each required field in response to the prompts:
      * Enter a human-friendly name for your connection. Note that no spaces are allowed.
      * Enter the **broker\_client-url** (the hostname and port of your Broker client, for example, https://my.broker.company.com:8000).

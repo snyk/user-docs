@@ -37,7 +37,7 @@ Repositories are cloned using HTTPS. SSH-based clones are currently unavailable.
 Brokered connections are supported when Git operations are allowed through Broker.
 
 {% hint style="warning" %}
-This will override restrictions from `accept.json`. For more information, see [Clone capability with Broker for Docker](../../../enterprise-setup/snyk-broker/git-clone-through-broker.md).
+This will override restrictions from `accept.json`. For more information, see [Clone capability with Broker for Docker](broken-reference).
 {% endhint %}
 
 ## Manage Workspaces

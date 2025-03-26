@@ -53,7 +53,7 @@ Reachability analysis is supported in the following integrations:
 | [Bitbucket Server](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)                                                           | General Availability |
 | [GitLab](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md)                                                                                           | General Availability |
 | [Azure Repos](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md)                                                                      | General Availability |
-| [Brokered connections](../../enterprise-setup/snyk-broker/connections-with-snyk-broker.md)                                                                               | General Availability |
+| [Brokered connections](../../enterprise-setup/snyk-broker/classic-broker/connections-with-snyk-broker.md)                                                                | General Availability |
 
 {% hint style="info" %}
 Reachability analysis using the Snyk CLI, IDE, or other integrations is not supported.
@@ -61,7 +61,7 @@ Reachability analysis using the Snyk CLI, IDE, or other integrations is not supp
 
 ## **Enabling Reachability** analysis **for brokered connections**
 
-If you use a brokered connection to your SCM, configure the Broker to provide access to your source files. See [Git Clone through Broker ](../../enterprise-setup/snyk-broker/git-clone-through-broker.md)for configuration details for using Broker  with Snyk Code.&#x20;
+If you use a brokered connection to your SCM, configure the Broker to provide access to your source files. See [Git Clone through Broker ](broken-reference)for configuration details for using Broker  with Snyk Code.&#x20;
 
 ## Using Reachability analysis
 

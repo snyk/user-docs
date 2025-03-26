@@ -56,7 +56,7 @@ The Broker Client exposes an endpoint at `/systemcheck`, which can be used to va
 * `BROKER_CLIENT_VALIDATION_METHOD` - \[optional] the HTTP method of the request (default is `GET`).
 * `BROKER_CLIENT_VALIDATION_TIMEOUT_MS` - \[optional] the request timeout in milliseconds (default is 5000 ms).
 
-This endpoint responds with status code `200 OK` when the internal request is successful, and returns `{ ok: true }` in the response body, one object in the array per credential; see [Credential pooling](install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/credential-pooling-with-docker-and-helm.md). If the internal request fails, this endpoint responds with status code `500 Internal Server Error` and `{ ok: false }` in the response body.
+This endpoint responds with status code `200 OK` when the internal request is successful, and returns `{ ok: true }` in the response body, one object in the array per credential; see [Credential pooling](classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/credential-pooling-with-docker-and-helm.md). If the internal request fails, this endpoint responds with status code `500 Internal Server Error` and `{ ok: false }` in the response body.
 
 This status can be tested by connecting to the Broker and running [http://localhost:8000/systemcheck](http://localhost:8000/systemcheck) with the default settings.
 

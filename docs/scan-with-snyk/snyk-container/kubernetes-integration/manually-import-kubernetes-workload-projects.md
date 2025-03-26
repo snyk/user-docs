@@ -2,7 +2,7 @@
 
 Using the same integration ID, you can import multiple clusters to one Snyk Organization by giving clusters a unique cluster name during installation.
 
-You can also import one cluster to multiple Snyk Organizations in manual import by [cloning an integration across your Snyk organizations](../../../enterprise-setup/snyk-broker/clone-an-integration-across-your-snyk-organizations.md), so the integrations have the same integration ID.&#x20;
+You can also import one cluster to multiple Snyk Organizations in manual import by [cloning an integration across your Snyk organizations](../../../enterprise-setup/snyk-broker/classic-broker/clone-an-integration-across-your-snyk-organizations.md), so the integrations have the same integration ID.&#x20;
 
 One Snyk Organization has a limit of 25,000 Projects. For more information, contact your Snyk admin.
 
@@ -45,4 +45,4 @@ Each item is named according to its Kubernetes metadata:
 
 In the **Projects** list, you can filter Kubernetes Projects.
 
-![Examples of Kubernetes Projects](../../../.gitbook/assets/filter\_kubernetes\_projects.png)
+![Examples of Kubernetes Projects](../../../.gitbook/assets/filter_kubernetes_projects.png)
