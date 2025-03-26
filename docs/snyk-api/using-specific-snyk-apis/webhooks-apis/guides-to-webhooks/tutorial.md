@@ -1,7 +1,7 @@
 # How to use Snyk webhooks with Zapier
 
 {% hint style="info" %}
-Snyk API v1 docs are at [https://snyk.docs.apiary.io/#](https://snyk.docs.apiary.io)
+Snyk API v1 docs are in the [Reference](../../../reference/).
 {% endhint %}
 
 ## ​Integration example

@@ -1,28 +1,21 @@
 # Set up the Snyk webhook
 
-You will set up the Snyk Webhook using the [Snyk API v1](https://snyk.docs.apiary.io/#reference/webhooks/webhook-collection/create-a-webhook) including the built-in console.
+Create the Snyk Webhook using the [Create a webhook API](../../../../reference/webhooks-v1.md#org-orgid-webhooks).
 
-To set up the Snyk Webhook, follow these steps:
+The API requires that you provide the Snyk Organization ID, the Snyk authentication token, the public URL for your Lambda function, and the value of your Lambda secret environment variable.
 
-1.  Copy your **Organization ID** from the **Organization** settings in the Snyk Web UI.
+An example request follows. You can use your favorite tool to send the request.
 
-    <figure><img src="https://lh3.googleusercontent.com/n5_nk9_s2lIb982FQV8LwIQzgYWxC6xeDKEiZMnN_TvrAuDV5oWvCR2RO15XMzyhvVpQwpg1IcL97ljvhis1Q3hfynm91EEqRQvaA7mdkeholt_JvmKPeq1eVmgmnQu5Iaahmdl4UC_8oPP4A6kSGUBO7iz0YPrBca4hbhXOLndO_DLK0NkPPK4dmQ" alt=""><figcaption><p>Snyk Web UI copy Organization ID</p></figcaption></figure>
-2.  Get your Organization admin **API Token** from the Snyk Web UI, either from a Service Account or your own account.
+```
+POST https://api.snyk.io/v1/org/{SNYK-ORG-ID}/webhooks HTTP/2
+Host: snyk.io
+Authorization: token {SNYK-TOKEN}
+Content-Type: application/json
 
-    <figure><img src="../../../../../.gitbook/assets/account-settings-general-auth-token.png" alt=""><figcaption><p>Snyk Web UI get API Token</p></figcaption></figure>
-3.  Switch to **Console** in the Snyk API v1 and add your organization ID as a parameter.
-
-    <figure><img src="https://lh3.googleusercontent.com/-sXMkOgM3GdCYP-15KqxtZ5DhxZlV3coqUZLYNdNnpVSdCFMH7wZApPhJAr9_8JxzAqyZOFGdIpqjT1t5Jpj570jQ67ykj_L3db4Gph3s74QOXdXjTwEJdRHRfWW0jpY14_lBAOinKC4x1An7yIIfHI-lk-cMULUosb8uDxC_z9mleGNkbdwUC3zVA" alt=""><figcaption><p>Snyk API v1 add orgId to POST to Create a webhook</p></figcaption></figure>
-4.  In the Headers section add your Snyk API key to the **Authorization**.
-
-    <figure><img src="https://lh6.googleusercontent.com/nhlX0u7hJZSTue4rK01FLvComCMVmEQc1uE_z0nsnQ2_uK0ew5TFryBrTBkL24AKj03NjwKZvK5DsoN6j3fdKu0K9lX2a6SN2JP30m5-ST_Fj-IlMYO4Nu6PwDaDMeQH0ZPzyCF7__zc77iIaHRxxV2_57JDmgv7NbCeJi3Ti3LwP5K9UyYpkrma1A" alt=""><figcaption><p>Snyk API v1 add API key to Authorization</p></figcaption></figure>
-5.  In the Body section add your values\
-    `{`\
-    `“url”: “value-of-your-public-url”,`\
-    `“secret”: “value-of-your-lambda-secret-environment-variable”`\
-    `}`
-
-    <figure><img src="https://lh5.googleusercontent.com/VXsSM6NFIWtWa_D4t_pJsWMUm3jHLMxSTEH8N7uLmb7IX98oxfm80_nPg0F6SGd-ffqth-iH3a2afcRQvE58hl5YoAP0NfvfaSPeUP6osRYdnPiPd1-ZOGUajvFk3vvOfXye_khV6lOylFC-T-47nLjclQD7ls8soL-EbWa8KAznWZJeLtj05eshSQ" alt=""><figcaption><p>Snyk API v1 POST body</p></figcaption></figure>
-6. Click **Call Resource**.
+{
+    "url": "https://{TARGET-WEBHOOK-URL}",
+    "secret": "{THE-VALUE-OF-YOUR-LAMBDA-SECRET-ENVIRONMENT-VARIABLE}"
+}
+```
 
 With this request done, your connection from Snyk to Slack will be completed. Every time there is a new vulnerability, you will get a new notification.

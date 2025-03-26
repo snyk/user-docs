@@ -73,7 +73,7 @@ Copy the value in the **Group ID** field to the **External ID** field in the AWS
 
 ### CloudTrail Lake Channel ARN
 
-When you are finsihed creating the Snyk integration in AWS CloudTrail Lake, copy the **Channel ARN** that is displayed on the integration page. You will need this for the next step.
+When you are finished creating the Snyk integration in AWS CloudTrail Lake, copy the **Channel ARN** that is displayed on the integration page. You will need this for the next step.
 
 ## Configure the integration in Snyk (single Organization)
 
@@ -150,7 +150,7 @@ This action removes Snyk’s configuration for this integration, which will **pr
 
 ## Remove an AWS CloudTrail Lake integration (Snyk Group and child Organizations)
 
-Configuring and managing this integration for a Group is supported only by the Snyk API. You can remove an integration using the endpoint [Delete a group registration.](https://apidocs.snyk.io/experimental?version=2023-05-29%7Eexperimental#delete-/groups/-group_id-/cloud_events/group_registrations/-group_registration_id-) For tips on how to use the API, see the section [about configuring a group-level integration](aws-cloudtrail-lake.md#configure-the-integration-in-snyk-snyk-group-and-child-organizations).
+Configuring and managing this integration for a Group is supported only by the Snyk API. You can remove an integration using the endpoint [Delete a group registration](https://apidocs.snyk.io/experimental?version=2023-05-29%7Eexperimental#delete-/groups/-group_id-/cloud_events/group_registrations/-group_registration_id-). For tips on how to use the API, see the section [about configuring a group-level integration](aws-cloudtrail-lake.md#configure-the-integration-in-snyk-snyk-group-and-child-organizations).
 
 {% hint style="info" %}
 To delete a Group-level integration, retrieve the integration ID. This is the same ID that is returned by the API when you create a Group-level integration. You can also get all currently configured Group integrations with the endpoint [List all group registrations](https://apidocs.snyk.io/experimental?version=2023-05-29%7Eexperimental#get-/groups/-group_id-/cloud_events/group_registrations).
@@ -179,11 +179,11 @@ There are three (3) key fields to note when using the Snyk audit log data in AWS
 
 `eventdata.useridentity`
 
-The event `useridentity` contains a field called `principalid`, which represents the Snyk user ID for the user associated with the audit event. You can use Snyk API v1 endpoint [Get organization level audit logs](https://snyk.docs.apiary.io/#reference/audit-logs/organization-level-audit-logs/get-organization-level-audit-logs) to match the Snyk user ID with a user in your Organization.
+The event `useridentity` contains a field called `principalid`, which represents the Snyk user ID for the user associated with the audit event. You can use Snyk API v1 endpoint [Get organization level audit logs](../../snyk-api/reference/audit-logs.md#orgs-org_id-audit_logs-search) to match the Snyk user ID with a user in your Organization.
 
 `eventdata.eventname`
 
-This represents the type of audit event, for example, `api.access` or `org.cloud_config.settings.edit,` and can be used to group or filter events.
+This represents the type of audit event, for example, `api.access` or `org.cloud_config.settings.edit`, and can be used to group or filter events.
 
 `eventdata.additionaleventdata`
 

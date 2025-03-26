@@ -20,15 +20,15 @@ There are two methods for retrieving an `orgid`. The first is to log in to your 
 https://app.snyk.io/org/{your-org-name}/manage/settings
 ```
 
-Alternatively, you may retrieve an Organization's `orgid` using the `https://api.snyk.io/v1/orgs` API endpoint, using your API token in the authorization header. For details about this endpoint, view its [documentation](https://snyk.docs.apiary.io/#reference/organizations/the-snyk-organization-for-a-request/list-all-the-organizations-a-user-belongs-to).
+Alternatively, you may retrieve an Organization's `orgid` using the `https://api.snyk.io/v1/orgs` API endpoint, using your API token in the authorization header. For details about this endpoint, view its [documentation](../../../reference/organizations-v1.md#orgs).
 
 ### About Snyk Apps and the Snyk API
 
-Snyk Apps have first-class access to the API, regardless of whether users installing the App have paid for access or not. To take advantage of this feature, Apps must use API endpoints with the domain `https://api.snyk.io/`rather than the deprecated `https://snyk.io/api/`, when accessing the API within the App.
+Snyk Apps have first-class access to the API, regardless of whether users installing the App have paid for access or not. To take advantage of this feature, Apps must use API endpoints with the domain `https://api.snyk.io/` rather than the deprecated `https://snyk.io/api/`, when accessing the API within the App.
 
 ### Registering our app with Snyk
 
-Registration of a new Snyk App is a performed via a simple POST request to Snyk's API. While we could configure the App we've been building throughout this tutorial to perform the request, we'll instead make the request directly using `curl` to avoid creating a function that can only be run a single time.
+Registration of a new Snyk App is performed through a simple POST request to Snyk's API. While we could configure the App we've been building throughout this tutorial to perform the request, we'll instead make the request directly using `curl` to avoid creating a function that can only be run a single time.
 
 The body of the request requires the following details:
 
@@ -36,7 +36,7 @@ The body of the request requires the following details:
 * `redirectUris`: The accepted callback location(s) during end-user authentication
 * `scopes`: The account permissions the Snyk App will ask a user to grant
 
-A note on scopes: Once registered, Snyk Apps scopes cannot currently be changed. The only recourse is deleting the Snyk App using the [Delete App](https://snykv3.docs.apiary.io/#reference/apps/single-app-management/delete-app) API endpoint and registering the app again as a new Snyk App.
+A note on scopes: Once registered, Snyk Apps scopes cannot currently be changed. The only recourse is deleting the Snyk App using the [Delete App](../../../reference/apps.md#orgs-org_id-apps-creations-app_id-2) API endpoint and registering the app again as a new Snyk App.
 
 At the time of this writing, **Snyk Apps is still in beta**. At the moment, t**here is only one available scope: `apps:beta`**. This scope **allows** the App to test and monitor existing projects, as well as read information about Snyk organizations, existing projects, issues, and reports.
 

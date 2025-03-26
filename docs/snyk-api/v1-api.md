@@ -17,7 +17,7 @@ The V1 API enables you to test a package for issues as they are defined by Snyk,
 * Receiving remediation advice
 * Viewing user data to build custom security solutions
 
-The V1 API endpoints are available in the [Reference](reference/) in the Snyk user docs. Updates are made in the user docs. Endpoints migrated to the user docs remain [online](https://snyk.docs.apiary.io) also.
+The V1 API endpoints are available in the [Reference](reference/).&#x20;
 
 ## API URLs
 

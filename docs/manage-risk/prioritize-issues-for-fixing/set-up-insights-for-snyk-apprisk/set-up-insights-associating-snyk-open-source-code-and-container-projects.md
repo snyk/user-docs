@@ -105,7 +105,7 @@ Snyk recommends applying the tags through the API in order to automate the proce
 
 ### API Example
 
-See the [Project Update documentation](https://snyk.docs.apiary.io/#reference/integrations/integration-settings/update-a-project).
+See the [Project Update documentation](../../../snyk-api/reference/projects-v1.md#org-orgid-project-projectid).
 
 Example:
 
