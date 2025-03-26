@@ -2,9 +2,6 @@
 
 This section provides information about the classic Snyk Broker:
 
-
-
-* [Download and install Broker](download-and-install-broker.md)
 * [Connections with Snyk Broker](connections-with-snyk-broker.md)
 * [Prepare Snyk Broker for deployment](prepare-snyk-broker-for-deployment/)
 * [Install and configure Snyk Broker](install-and-configure-snyk-broker/)
