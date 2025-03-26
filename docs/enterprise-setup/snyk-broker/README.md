@@ -22,12 +22,13 @@ The Broker client runs within your internal network, keeping sensitive data such
 
 Using Snyk Broker allows you to manage a fixed private IP for your integration that targets the Broker.
 
-All data, both in transit and at rest, is encrypted. There is no need to open incoming ports since the communication is initiated outbound. After the connection is initiated, the secure WebSocket connection is bi-directional between the Client and the Server.
+All data, both in transit and at rest, is encrypted. There is no need to open incoming ports; the communication is initiated outbound. After the connection is initiated, the secure WebSocket connection is bidirectional between the Client and the Server.
 
 ## Integrations supported by Snyk Broker
 
-| AppRisk                            | Yes                                  | Yes                                  |
+| Integration                        | Classic Broker support               | Universal Broker support             |
 | ---------------------------------- | ------------------------------------ | ------------------------------------ |
+| AppRisk                            | Yes                                  | Yes                                  |
 | Artifactory Private Registry       | Yes                                  | Yes                                  |
 | Azure Repository                   | Yes                                  | Yes                                  |
 | Bitbucket Server                   | Yes                                  | Yes                                  |
@@ -50,3 +51,20 @@ All data, both in transit and at rest, is encrypted. There is no need to open in
 | DigitalOcean Container Registry    | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
 | GitLab Container Registry          | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
 | Google Artifact Container Registry | Yes (using Container Registry Agent) | Yes (using Container Registry Agent) |
+
+## Using Universal Broker versus Classic Broker
+
+The Universal Broker builds on the technology of the classic Snyk Broker to bring easier and more scalable configuration, enhanced security, and new capabilities. The aim is for the Universal Broker to replace the Classic Broker entirely.
+
+The following compares the capabilities and features of the Classic Broker to those of the Universal Broker.
+
+| Capabilites and features            | Classic Broker           | Universal Broker                      |
+| ----------------------------------- | ------------------------ | ------------------------------------- |
+| Deployment                          | Container and Helm chart | Container and Helm chart              |
+| Connection parameters configuration | local                    | cloud                                 |
+| Credentials                         | local                    | local                                 |
+| Connection support                  | single (dedicated type)  | multiple (any type)                   |
+| Configuration management            | none                     | tooling (`snyk-broker-config`) or API |
+| Organization and connection mapping | no                       | yes                                   |
+| API                                 | none                     | yes                                   |
+| Broker contexts                     | no                       | to be provided                        |
