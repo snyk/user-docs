@@ -17,7 +17,7 @@ The following pages guide you through a Broker deployment setup using the Univer
 
 The Universal Broker separates deployment and container concerns from connection concerns. It allows for a smaller or a single deployment to support numerous connections of varied types.
 
-<figure><img src="../../../.gitbook/assets/image 5 (3).png" alt=""><figcaption><p>Universal Broker deployment diagram</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image 5 (6).png" alt=""><figcaption><p>Universal Broker deployment diagram</p></figcaption></figure>
 
 In contrast to the existing Broker model, where each deployment and container supports only one connection type, Snyk is providing Broker deployments configured to support many connections in a set-and-forget approach.
 
@@ -49,7 +49,7 @@ The high-level steps in implementing the Unversal Broker follow.
 4. **One time:** Define your desired connection or connections.
 5. **One time for each Organization integration:** Configure the Organizations and integrations that should use the connection.
 
-<figure><img src="../../../.gitbook/assets/image 6.png" alt="Deployment, connections, and organizations"><figcaption><p>Deployment, connections, and organizations</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image 6 (4).png" alt=""><figcaption><p>Deployment, connections, and organizations</p></figcaption></figure>
 
 After defining the desired connections, run the Broker Client. The integration between connections and Organizations and integrations is then done independently from the Universal Broker deployment, reducing the required activities on the running containers or Kubernetes deployment.&#x20;
 
