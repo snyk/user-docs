@@ -65,6 +65,5 @@ The following compares the capabilities and features of the Classic Broker to th
 | Credentials                         | local                    | local                                 |
 | Connection support                  | single (dedicated type)  | multiple (any type)                   |
 | Configuration management            | none                     | tooling (`snyk-broker-config`) or API |
-| Organization and connection mapping | no                       | yes                                   |
+| Organization to connection mapping  | no                       | yes                                   |
 | API                                 | none                     | yes                                   |
-| Broker contexts                     | no                       | to be provided                        |
