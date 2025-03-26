@@ -9,8 +9,3 @@ When the import is finished, a confirmation message appears on the Projects page
 <figure><img src="../../.gitbook/assets/projects_page_targets.png" alt=""><figcaption><p>Target folders on Projects page</p></figcaption></figure>
 
 If some of the files in the selected repositories were not imported, you receive a notification about the Projects that were not imported.&#x20;
-
-## Next steps?
-
-* [Exclude directories and files from Project import](exclude-directories-and-files-from-project-import.md)
-* [Remove imported repository from a Project](remove-imported-repository-from-a-project.md)

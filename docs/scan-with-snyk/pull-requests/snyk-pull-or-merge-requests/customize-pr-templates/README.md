@@ -13,7 +13,7 @@ You can set custom PR templates using the following methods:&#x20;
 
 After the template is set, the custom PR template feature is enabled.
 
-PR templates are opened with a custom template in the following **order of precedence**:
+PR templates are opened with a custom template in the following order of precedence:
 
 * First, Snyk applies anything that is set for the specific repository, that is, the YAML upload.
 * If there is anything missing from that template or the Project does not have a YAML file, Snyk checks for your Group template uploaded and set using the API request.

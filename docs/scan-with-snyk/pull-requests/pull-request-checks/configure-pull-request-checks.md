@@ -38,7 +38,7 @@ Configure PR Checks for a specific Git repository you have already integrated wi
 
 The configuration settings apply to all Projects in that Organization. You can also extend the configuration to Projects with custom settings.
 
-1. In the Snyk Web UI, navigate to **Settings >** **Integrations** and select your connected source code manager to open the settings configuration.
+1. In the Snyk Web UI, navigate to **Settings** > **Integrations** and select your connected source code manager to open the settings configuration.
 2. To check for code issues, configure and save the following changes:
 
 * [ ] **Code Analysis**: Enable this option to fail the PR on new vulnerabilities detected in your Git repository. If the severity is higher than your threshold, the PR is not merged into the main branch.

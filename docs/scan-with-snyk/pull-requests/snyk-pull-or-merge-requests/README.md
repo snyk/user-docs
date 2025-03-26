@@ -27,7 +27,7 @@ For Projects imported through an SCM integration, Snyk offers the following type
 
 Follow these steps to generate a PR or MR directly from your Project in the Snyk Web UI:
 
-1. Navigate to your Project from the Project list
+1. Navigate to your Project from the Project list.
 2. Select the Project.
 3. Select **Open a Fix PR/MR** or **Fix this vulnerability.** A preview screen appears, showing you what fixes will be applied.
 4. Click **Open a Fix PR** on this screen to generate the pull request.
