@@ -2,8 +2,8 @@
 
 When you want to add new integrations to your Snyk account, you must first decide the level at which you want to install the integration.
 
-* [Group level ](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app#group-level-snyk-apprisk-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials. If you want to set up integrations for Snyk Essentials, use the Integrations menu at the Group level.
-* [Organization level](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
+* [Group level ](github-cloud-app.md#group-level-snyk-essentials-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials. If you want to set up integrations for Snyk Essentials, use the Integrations menu at the Group level.
+* [Organization level](github-server-app.md#organization-level-snyk-integration) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 ## Organization level - Snyk integration
 
