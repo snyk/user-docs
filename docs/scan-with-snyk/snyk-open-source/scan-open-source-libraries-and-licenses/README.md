@@ -8,10 +8,6 @@ You can scan your open-source libraries using Snyk Open Source:&#x20;
 * Through the [Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/)
 * Through the [Snyk API](../../../snyk-api/reference/test-v1.md)
 
-## Prerequisites for using Snyk Open Source in the Web UI
-
-Before scanning your open-source libraries with Snyk Open Source, ensure you have completed the steps in [Getting started](../../../getting-started/).
-
 ## View vulnerabilities in your open-source libraries
 
 You can view vulnerability results for imported Projects. The **Projects** page appears by default after import, showing vulnerability information for the Snyk Projects you have imported, grouped into **Targets**, that is, the repositories you have scanned.

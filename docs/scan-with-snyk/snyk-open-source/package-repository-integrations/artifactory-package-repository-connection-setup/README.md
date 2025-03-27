@@ -19,7 +19,7 @@ These instructions apply to configuring publicly accessible instances. For instr
 
 The steps to set up Artifactory Repository Manager follow.
 
-1. Navigate to **Settings** > **Integrations > Package Repositories > Artifactory**.
+1. Navigate to **Settings** > **Integrations** > **Package Repositories** > **Artifactory**.
 2. Enter the URL of your Artifactory instance; this must end with `/artifactory`.
 3. Enter your username and password.
 4. Select **Save**.

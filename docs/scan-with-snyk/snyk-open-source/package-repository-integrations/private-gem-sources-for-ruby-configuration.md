@@ -13,7 +13,7 @@ After you have added this configuration, Snyk uses the information to access pri
 
 ## Configuration of private gem sources for Ruby
 
-1. Navigate to **Settings > General**.
+1. Navigate to **Settings** > **General**.
 2. Find the `RubyGems Bundler environment variables` section; see the screen illustration.
 3. Add environment variable names and values to define credentials for gem sources.\
    These are generally the same as the values you set on your developer machine, in your CI environments, or both.\
@@ -28,7 +28,7 @@ A list of requirements follows:
 
 * Variable values must be CGI escaped.
 * Gem sources must use `https` URLs.\
-  Example: **Supported:** `gem "privvy", git: "https://github.com/testexample/ruby-gem-for-private-source"`\
-  **Not supported:** `gem "privvy", git: "git@github.com:testexample/ruby-gem-for-private-source"`
+  Example: Supported: `gem "privvy", git: "https://github.com/testexample/ruby-gem-for-private-source"`\
+  Not supporte&#x64;**:** `gem "privvy", git: "git@github.com:testexample/ruby-gem-for-private-source"`
 * Gem sources must be publicly resolvable, that is, not behind a firewall.
 * Variables must be configured according to the [Bundler Credentials for Gem Sources documentation](https://bundler.io/v1.16/bundle_config.html#CREDENTIALS-FOR-GEM-SOURCES).

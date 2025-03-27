@@ -50,7 +50,7 @@ Snyk calls [`https://api.snyk.io/v1/test`](https://api.snyk.io/v1/test) for the 
 2. Select **Settings** > **General** to locate, copy, and save the following:
    1. Service account token or Organization API token
    2. The Organization ID for any one of your organizations
-3. Navigate to [the Snyk Artifactory plugin repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin) and then to the **Releases**.
+3. Navigate to [the Snyk Artifactory plugin repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin) and then to **Releases**.
 4. From the most current release, expand the **Assets** section to download the artifactory-snyk-security-plugin-\<version>.zip archive.
 5. Extract the archive. It should have the following structure: `plugins (directory)` followed by
    * `snykSecurityPlugin.groovy — plugin`
@@ -63,24 +63,24 @@ Snyk calls [`https://api.snyk.io/v1/test`](https://api.snyk.io/v1/test) for the 
    2. Configure the rest of the properties as needed or leave them as defaults. See the section [Plugin configuration](artifactory-gatekeeper-plugin.md#plugin-configuration).
    3. For a full list of properties, [view the properties file on GitHub](https://github.com/snyk/artifactory-snyk-security-plugin/blob/master/core/src/main/groovy/io/snyk/plugins/artifactory/snykSecurityPlugin.properties).
 7. Place all the files under `$JFROG_HOME/artifactory/etc/artifactory/plugins`.
-8. Restart your Artifactory server. **Note: Refresh now** or **Reload** is not sufficient. Artifactory must be restarted.
+8. Restart your Artifactory server. Note that **Refresh now** or **Reload** is not sufficient. Artifactory must be restarted.
 9. Log in to your Artifactory instance and navigate to the **System Logs** to check that Snyk has been installed successfully.
 
 <figure><img src="../../../../.gitbook/assets/artifactory-system-logs.png" alt="Successful installation of Snyk"><figcaption><p>Successful installation of Snyk</p></figcaption></figure>
 
 ## How the Artifactory plugin works
 
-Whenever a download is requested from an Artifactory **remote repository**, whether from a package manager or a URL, Snyk automatically scans the artifact for vulnerabilities and license issues. The issues found by Snyk are persisted as artifact properties. Access to the package is later controlled according to these properties, and in line with severity thresholds set in the plugin config.
+Whenever a download is requested from an Artifactory remote repository, whether from a package manager or a URL, Snyk automatically scans the artifact for vulnerabilities and license issues. The issues found by Snyk are persisted as artifact properties. Access to the package is later controlled according to these properties, and in line with severity thresholds set in the plugin config.
 
 Depending on the configuration, the plugin can periodically re-scan packages to keep the issue metadata up to date.
 
-The plugin only works with remote repositories. **It does not scan locally stored artifacts**, but instead queries the Snyk API with the meta-information about the artifacts. Therefore, only published artifacts of the proxied remote repository can be examined by the Snyk Artifactory plugin.
+The plugin only works with remote repositories. It does not scan locally stored artifacts, but instead queries the Snyk API with the meta-information about the artifacts. Therefore, only published artifacts of the proxied remote repository can be examined by the Snyk Artifactory plugin.
 
 To view details about the download status, open the **System Logs**.
 
 If a scan finds issues, based on your configuration, the download request can be blocked with an HTTP status code "403 Forbidden".
 
-You can find the **results** of a scan **under the artifact propertie**s, where you can decide to ignore the issues and allow downloads. To find the artifact, use the **Artifactory Search Bar** or navigate the **tree view**.
+You can find the results of a scan under the artifact properties, where you can decide to ignore the issues and allow downloads. To find the artifact, use the Artifactory search bar or navigate the **t**ree view.
 
 <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-02-02 at 9.47.46 AM.png" alt="Results of a scan"><figcaption><p>Results of a scan</p></figcaption></figure>
 

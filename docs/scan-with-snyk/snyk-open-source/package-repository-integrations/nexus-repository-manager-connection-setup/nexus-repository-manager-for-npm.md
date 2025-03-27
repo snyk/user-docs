@@ -17,7 +17,7 @@ This is the same information you would normally add in your `.yarnrc` or `.npmrc
 
 ## JavaScript language settings
 
-Go to **Settings > Languages > JavaScript** and either the npm or Yarn settings, depending on your Project type.
+Go to **Settings** > **Languages** > **JavaScript** and either the npm or Yarn settings, depending on your Project type.
 
 If you have not previously connected to Nexus Repository Manager you will be asked to configure an integration first; see [Nexus Repository Manager connection setup](./).
 
@@ -29,9 +29,9 @@ Follow the steps on the tabs below, according to your version of Nexus.
 {% tab title="Nexus 3" %}
 1. Select **Add registry configuration.**
 2. Select **Nexus** as the Package source.
-3. If you want to configure this registry as the **default registry url**, leave the **scope** blank.
-4. If you want to configure **only scoped packages** to use this registry, add a **scope**.
-5. If you want to add a mix of the **default registry url** and **scoped packages**, add multiple configurations, one for the default and one per scope.
+3. If you want to configure this registry as the default registry url, leave the scope blank.
+4. If you want to configure only scoped packages to use this registry, add a scope.
+5. If you want to add a mix of the default registry url and scoped packages, add multiple configurations, one for the default and one per scope.
 6. The **Repository** section should be set as whatever comes after `repository/` in the internal repository URL.\
    For example, if the URL is `http://nexus.company.io/repository/npm-group`, **Repository** should be set as `npm-group.`
 7. When you have added all the registries and scopes you want, click **Update settings**.
@@ -52,6 +52,6 @@ Follow the steps on the tabs below, according to your version of Nexus.
 
 ## Test it out
 
-Open a Pull/Merge Request on a Project that contains private dependencies that are hosted in Nexus to see **a lockfile updated and included in the Snyk Fix Pull Request with the correct URL to your repository.**
+Open a Pull/Merge Request on a Project that contains private dependencies that are hosted in Nexus to see a lockfile updated and included in the Snyk Fix Pull Request with the correct URL to your repository.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2022-07-15 at 14.22.59.png" alt="Pull request to test Nexus integration"><figcaption><p>Pull request to test Nexus integration</p></figcaption></figure>
