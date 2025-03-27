@@ -1,8 +1,8 @@
 # Troubleshooting Broker
 
 {% hint style="info" %}
-**Multi-tenant settings**\
-When you are setting up Broker for use in multi-tenant environments, you must add a command in your script to set the Broker server for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
+**Multi-tenant settings for regions**\
+When installing, you must add a command in your script to set the Broker server URL for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
 {% endhint %}
 
 This page has information and instructions for the following:
