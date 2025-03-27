@@ -11,7 +11,7 @@ When Snyk creates automatic PRs for vulnerabilities, the following rules are app
 
 * If you select **Retest now** for the Project, a scan is run manually, and the 24-hour window is marked as having had a scan run. No automatic PR is created until the next automated scan runs.
 * One pull request is created per Project with a [priority score](../../../manage-risk/prioritize-issues-for-fixing/priority-score.md) of 700 and above.
-* Fixing a vulnerability can require the introduction of another new vulnerability. Snyk will only automatically create such a pull request if the fixed vulnerabilities are a higher severity than those introduced.
+* Fixing a vulnerability by upgrading a package may sometimes introduce a new vulnerability. Snyk will only automatically create such a pull request if the fixed vulnerabilities are a higher severity than any new ones introduced.
 * Pull requests are created based on the **Test & Automated Pull Request Frequency** settings.
   * To update the **Test & Automated Pull Request Frequency**, navigate to **Projects** and select your Open Source Project.
   * Navigate to **Settings** and select an option from the pulldown list.
