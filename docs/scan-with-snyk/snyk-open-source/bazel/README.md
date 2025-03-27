@@ -2,18 +2,14 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Snyk for Bazel is a build and test tool supported by Snyk Open Source. The instructions in this documentation apply to Bazel v 7 only.&#x20;
+Snyk for Bazel is a build and test tool supported by Snyk Open Source. The instructions in this documentation apply to Bazel v 7 only.
 {% endhint %}
-
-Bazel is defined on [bazel.build](https://docs.bazel.build/versions/master/bazel-overview.html) as follows:
-
-> _Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. It uses a human-readable, high-level build language. Bazel supports projects in multiple languages and builds outputs for multiple platforms. Bazel supports large codebases across multiple repositories, and large numbers of users._
 
 ## Applicability
 
-Snyk for Bazel is supported **only for Snyk Open Source**.
+Snyk for Bazel is supported only for Snyk Open Source.
 
-Snyk supports testing Projects that have their dependencies managed by Bazel. The recommended approach is to test and monitor using the [Dep Graph API](dep-graph-api.md). While you can use Bazel for many languages including C++, **the Dep Graph endpoints do not support C++**.
+Snyk supports testing Projects that have their dependencies managed by Bazel. The recommended approach is to test and monitor using the [Dep Graph API](dep-graph-api.md). While you can use Bazel for many languages including C++, the Dep Graph endpoints do not support C++.
 
 ## Package managers
 
@@ -42,7 +38,7 @@ The Snyk API is available only with Enterprise plans. For more information, see 
 
 The Dep Graph API requires additional permissions. [Contact Snyk Support](https://support.snyk.io) to request access.
 
-To test and monitor dependencies managed by [Bazel](./), it is recommended that you use the Snyk Dep Graph API endpoints [Test Dep Graph](../../../snyk-api/reference/test-v1.md#test-dep-graph) and [Monitor Dep Graph](../../../snyk-api/reference/monitor-v1.md). The monitor capability allows customers to submit a tree for Snyk to monitor for vulnerabilities. While you can use Bazel for many languages including C++, **the Dep Graph endpoints do not support C++**.
+To test and monitor dependencies managed by [Bazel](./), it is recommended that you use the Snyk Dep Graph API endpoints [Test Dep Graph](../../../snyk-api/reference/test-v1.md#test-dep-graph) and [Monitor Dep Graph](../../../snyk-api/reference/monitor-v1.md). The monitor capability allows customers to submit a tree for Snyk to monitor for vulnerabilities. While you can use Bazel for many languages including C++, the Dep Graph endpoints do not support C++.
 
 Follow these basic steps:
 
