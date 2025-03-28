@@ -6,6 +6,10 @@ The supported versions of Python are `2.7`, `3.7`, `3.8`, `3.9`, `3.10`,`3.11`,`
 
 When scanning Pip Projects imported from Git, Snyk uses the version of Python specified in Organization settings or `.snyk` files.
 
+{% hint style="info" %}
+It is important to specify the correct Python version for your Organization, as it can affect the version of dependencies used in scanning your Projects.
+{% endhint %}
+
 Snyk uses a recent `patch` version for each of the supported `minor` version.
 
 By default, Snyk tests Pip Projects using Python 3.7.
@@ -46,7 +50,7 @@ Snyk will select which Python version to use according to the `major`, `minor` a
 
 ## Git repository integration and Snyk for Python
 
-To scan your Projects, you must ensure your repository contains the supported manifest files
+To scan your Projects, you must ensure your repository contains the supported manifest files.
 
 ### Pip and Git repositories
 
