@@ -8,7 +8,9 @@ Snyk recommends using the [Snyk CLI ](https://github.com/snyk/cli)for CI/CD inte
 * With the CLI, you have options to [extend use cases](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/) as you deploy Snyk at scale
 {% endhint %}
 
-When you [decide to use a CI/CD Integration,](../git-repository-and-ci-cd-integrations-comparisons.md) you typically adopt the integration in stages. You will select a deployment method and implement strategies for the code you are scanning. See [Snyk CI/CD Integration deployment and strategies](snyk-ci-cd-integration-deployment-and-strategies/).
+## Adopting a CI/CD integration
+
+When you [decide to use a CI/CD integration,](../git-repository-and-ci-cd-integrations-comparisons.md) you typically adopt the integration in stages. You will select a deployment method and implement strategies for the code you are scanning. See [Snyk CI/CD Integration deployment and strategies](snyk-ci-cd-integration-deployment-and-strategies/).
 
 For detailed information, you can refer to the pages for the integration you are using:
 
@@ -26,3 +28,17 @@ For detailed information, you can refer to the pages for the integration you are
 For integration with GitLab pipelines integration, see this [pipeline configuration](https://github.com/snyk-labs/snyk-cicd-integration-examples/blob/master/GitLabCICD/gitlab-npm.yml).
 
 For additional examples of binary and npm integrations for CI/CD, see [GitHub CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples).
+
+## Support policy <a href="#support-policy" id="support-policy"></a>
+
+{% hint style="info" %}
+This policy will be effective beginning on June 24, 2025.
+{% endhint %}
+
+Snyk supports the latest 12 months of CI/CD plugin versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or troubleshooting.
+
+Snyk provides fixes only in new versions and cannot fix older versions. Customers must upgrade to benefit from improvements.
+
+This policy fosters innovation while optimizing resources.
+
+If you need help, submit a [request](https://support.snyk.io/) to Snyk Support.
