@@ -10,14 +10,7 @@ If you want to use your own GitHub App, reach out to your Snyk account team.
 The GitHub Cloud App does not have pre-configured IP addresses that can be automatically added to your allowlist. Contact your Snyk account team to obtain the Snyk IPs for manual addition.
 {% endhint %}
 
-When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
-
-* [Group level ](github-cloud-app.md#group-level-snyk-essentials-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials. If you want to set up integrations for Snyk Essentials or Snyk AppRisk, use the Integrations menu at the Group level.
-* [Organization level](github-cloud-app.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
-
-## Organization level - Snyk integrations
-
-### Prerequisites for GitHub Cloud App
+## Prerequisites for GitHub Cloud App
 
 * Snyk Organization Admin user role.
 * GitHub Organization Admin user role.
@@ -26,9 +19,11 @@ When you want to add new integrations to your Snyk account you need to first dec
 
 {% hint style="info" %}
 Users can install the app on GitHub Organizations they are Repository Admins on through the GitHub UI.
+
+The GitHub Cloud App integration is available at the Organization level within the Snyk Web UI.
 {% endhint %}
 
-### GitHub Cloud App benefits
+## GitHub Cloud App benefits
 
 The GitHub Cloud App improves on many features as compared to the current GitHub integration, including role-based, granular access control, increased API rate limits, and creation of an entry point for expanded and enhanced developer experiences.
 
@@ -39,7 +34,7 @@ The GitHub Cloud App improves on many features as compared to the current GitHub
   * Pull request checks: The Checks tab experience in GitHub is exclusively accessible through the GitHub Cloud App, enabling an SCM native experience as part of potential future PR check workflow improvements.
   * Fix and upgrade pull requests: Pull requests initiated by Snyk are performed directly by the GitHub App rather than a service account.
 
-### How to set up the GitHub Cloud App
+## How to set up the GitHub Cloud App
 
 {% hint style="warning" %}
 When setting up the GitHub Cloud App, you can only implement one of the following scenarios:
@@ -78,14 +73,10 @@ Specify whether you wish to install the app in all of the repositories belonging
 The GitHub Cloud App will lose access to Snyk if it is uninstalled from the GitHub organization or if the repositories to which the app instance has access are edited.
 {% endhint %}
 
-### How to migrate to the GitHub Cloud App
+## How to migrate to the GitHub Cloud App
 
 If you are an Enterprise plan customer, you can migrate Snyk Targets to the GitHub Cloud App using the [snyk-migrate-to-github-app](https://github.com/snyk-labs/snyk-migrate-to-github-app) tool in the [tool repository](https://github.com/snyk-labs/snyk-migrate-to-github-app).
 
-### Feedback on the GitHub Cloud App
+## Feedback on the GitHub Cloud App
 
 If you would like to provide any feedback, contact your Account Manager or [Snyk support](https://support.snyk.io).
-
-## Group level - Snyk Essentials integrations
-
-Navigate to the [GitHub setup guide for Snyk Essentials ](github-enterprise.md#group-level-snyk-essentials-integrations)for all details on how to set up the GitHub integration for Snyk Essentials.
