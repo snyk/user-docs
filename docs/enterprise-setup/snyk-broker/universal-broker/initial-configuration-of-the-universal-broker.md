@@ -12,7 +12,9 @@ Prerequisite: You must be a Tenant admin to be able to create deployments, crede
 * **One time:** Create your desired connection or connections.
 * **One time for each Organization integration:** Configure the Organizations and integrations that should use the connection.
 
-<figure><img src="../../../.gitbook/assets/image 7 (5).png" alt=""><figcaption><p>Seps in implementing the Universal Broker for GtHub and Jira</p></figcaption></figure>
+
+
+<figure><img src="../../../.gitbook/assets/image 7 (1) (1).png" alt=""><figcaption><p>Steps in implementing the Universal Broker for GtHub and Jira</p></figcaption></figure>
 
 ## Configuration using the `snyk-broker-config` command (recommended) <a href="#using-snyk-broker-config-cli" id="using-snyk-broker-config-cli"></a>
 
