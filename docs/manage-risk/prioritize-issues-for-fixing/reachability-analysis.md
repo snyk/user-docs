@@ -53,7 +53,7 @@ Reachability analysis is supported in the following integrations:
 | [Bitbucket Server](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)                                                           | General Availability |
 | [GitLab](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md)                                                                                           | General Availability |
 | [Azure Repos](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md)                                                                      | General Availability |
-| [Brokered connections](../../enterprise-setup/snyk-broker/classic-broker/connections-with-snyk-broker.md)                                                                | General Availability |
+| [Brokered connections](../../enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md)                                               | General Availability |
 
 {% hint style="info" %}
 Reachability analysis using the Snyk CLI, IDE, or other integrations is not supported.

@@ -1,4 +1,4 @@
-# Connections with Snyk Broker
+# Broker inbound and outbound connections and allowed requests
 
 This page provides details about the connections between Snyk and the Broker Client and allowed requests.
 
@@ -38,7 +38,7 @@ For Snyk Open Source, the following requests are allowed:
 
 Snyk Code and Snyk IaC need access to the entire repository.
 
-See [How Snyk handles your data](../../../working-with-snyk/how-snyk-handles-your-data.md) for more details.
+See [How Snyk handles your data](../../working-with-snyk/how-snyk-handles-your-data.md) for more details.
 
 ### Outbound requests allowed
 
@@ -48,7 +48,7 @@ Webhook notifications are delivered to Snyk through the Broker Client only for e
 
 ### Default approved data list and `accept.json` file
 
-On occasion, you may need to [add and configure an `accept.json`](snyk-broker-infrastructure-as-code-detection.md) file in your Broker deployment. Doing this will remove the ability to apply ACCEPT rules when starting the Broker.
+On occasion, you may need to [add and configure an `accept.json`](classic-broker/snyk-broker-infrastructure-as-code-detection.md) file in your Broker deployment. Doing this will remove the ability to apply ACCEPT rules when starting the Broker.
 
 \
 .

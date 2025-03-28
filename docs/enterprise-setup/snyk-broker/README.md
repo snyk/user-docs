@@ -18,7 +18,7 @@ Snyk Broker includes a Server and a Client, basic components that are the same a
 
 The Broker client and server act together, sending requests by proxy from [snyk.io](http://snyk.io/) to a repository or Jira, fetching the files needed for scanning from repositories, and fetching results using webhooks posted by the SCM service.
 
-The Broker client runs within your internal network, keeping sensitive data such as SCM tokens within the network perimeter. The Broker connection allows for scanning using only requests on an approved data list. This narrows the access permissions to the absolute minimum required for Snyk to monitor a repository. For more information, see [Approved data list for Snyk Broker](classic-broker/connections-with-snyk-broker.md#approved-data-list-for-snyk-broker).
+The Broker client runs within your internal network, keeping sensitive data such as SCM tokens within the network perimeter. The Broker connection allows for scanning using only requests on an approved data list. This narrows the access permissions to the absolute minimum required for Snyk to monitor a repository. For more information, see [Approved data list for Snyk Broker](broker-inbound-and-outbound-connections-and-allowed-requests.md#approved-data-list-for-snyk-broker).
 
 Using Snyk Broker allows you to manage a fixed private IP for your integration that targets the Broker.
 
