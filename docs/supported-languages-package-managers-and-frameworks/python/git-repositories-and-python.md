@@ -1,4 +1,4 @@
-# Git repositories and Python
+# SCM Integrations and Python
 
 ## Set the Python version in Git Projects
 
@@ -48,11 +48,11 @@ Snyk will select which Python version to use according to the `major`, `minor` a
 * `Major`, `minor` and `patch` version (or example, 3.8.x, 3.9.x, 3.10.x, 3.11.x, 3.12.x): the specific `patch` version is ignored, the Project is scanned with default versions of 3.8, 3.9, 3.10, 3.11 or 3.12
 * Any versions specified with an unsupported `minor` version: defaults to 2.7 or 3.7
 
-## Git repository integration and Snyk for Python
+## SCM integration and Snyk for Python
 
 To scan your Projects, you must ensure your repository contains the supported manifest files.
 
-### Pip and Git repositories
+### Pip and SCM repositories
 
 {% hint style="warning" %}
 Private PyPI repos and `file://`  URLs are not supported.
@@ -70,7 +70,7 @@ Projects with downloaded dependencies totalling more than 10GB are not supported
 
 To scan Pip Projects, Snyk analyzes your `requirements.txt` files using native `pip` tooling in an isolated Linux environment.
 
-Pip Projects scanned using the Git integration will be given the same name as the directory where they are located.&#x20;
+Pip Projects scanned using the SCM integration will be given the same name as the directory where they are located.&#x20;
 
 Snyk imports any file that follows the `**/*req*.txt` pattern. This can help if you have renamed the `requirements.txt` files, for example, to `requirements-dev.txt`.
 
@@ -84,9 +84,9 @@ An example follows of how `dephell` is used to convert from Conda `environments.
 dephell deps convert --from=conda --to=requirements.txt
 ```
 
-### Poetry and Git repositories
+### Poetry and SCM repositories
 
-Poetry v1 is supported.
+Poetry v1 and v2 are supported.
 
 To scan Poetry Projects, Snyk inspects your `pyproject.toml` and `poetry.lock` files.
 
@@ -103,7 +103,7 @@ Poetry dev dependencies are not included in scans by default. To change this, mo
 
 <figure><img src="../../.gitbook/assets/image (145) (1).png" alt="Poetry dev dependency settings"><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
 
-### Pipenv and Git repositories
+### Pipenv and SCM repositories
 
 {% hint style="warning" %}
 Private PyPI mirrors are not supported. `Pipfiles` specifying a private mirror as their only source will not be imported.

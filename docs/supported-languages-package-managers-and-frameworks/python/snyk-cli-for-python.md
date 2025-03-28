@@ -24,16 +24,16 @@ Pip `requirements.txt` files specify only top-level dependencies, not nested or 
 
 ## Poetry and CLI
 
-Poetry v1 is supported.
+Poetry v1 and v2 are supported.
 
 To build the dependency tree for a Poetry application, Snyk uses `pyproject.toml` and `poetry.lock` files. Both files must be present for Snyk to scan Poetry dependencies and identify issues.
 
 If no `poetry.lock` file is present; you should run `poetry lock` to generate one before scanning.
 
 {% hint style="info" %}
-[PEP 621](https://peps.python.org/pep-0621/) is a standard for defining direct dependencies in `pyproject.toml` files, which is different from how Poetry does this.&#x20;
+[PEP 621](https://peps.python.org/pep-0621/) is a standard for defining direct dependencies in `pyproject.toml` files. Poetry v1 uses an alternative approach, but Poetry v2 added PEP 621 support.
 
-Snyk does not support PEP 621.
+Snyk does not PEP 621 for any package manager other than Poetry.
 {% endhint %}
 
 ## Pipenv and CLI

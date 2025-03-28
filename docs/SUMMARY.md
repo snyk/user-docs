@@ -48,7 +48,7 @@
     * [Python for code analysis](supported-languages-package-managers-and-frameworks/python/python-for-code-analysis.md)
     * [Python for open source](supported-languages-package-managers-and-frameworks/python/python-for-open-source.md)
     * [Snyk CLI for Python](supported-languages-package-managers-and-frameworks/python/snyk-cli-for-python.md)
-    * [Git repositories and Python](supported-languages-package-managers-and-frameworks/python/git-repositories-and-python.md)
+    * [SCM Integrations and Python](supported-languages-package-managers-and-frameworks/python/git-repositories-and-python.md)
   * [Ruby](supported-languages-package-managers-and-frameworks/ruby/README.md)
     * [Ruby for code analysis](supported-languages-package-managers-and-frameworks/ruby/ruby-for-code-analysis.md)
     * [Ruby for open source](supported-languages-package-managers-and-frameworks/ruby/ruby-for-open-source.md)
