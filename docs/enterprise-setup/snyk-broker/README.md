@@ -58,7 +58,7 @@ The Universal Broker builds on the technology of the classic Snyk Broker to brin
 
 The following compares the capabilities and features of the Classic Broker to those of the Universal Broker.
 
-| Capabilites and features            | Classic Broker           | Universal Broker                      |
+| Capabilities and features           | Classic Broker           | Universal Broker                      |
 | ----------------------------------- | ------------------------ | ------------------------------------- |
 | Deployment                          | Container and Helm chart | Container and Helm chart              |
 | Connection parameters configuration | local                    | cloud                                 |
