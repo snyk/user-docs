@@ -5,52 +5,20 @@
 Universal Broker is in Early Access and is available only with Enterprise plans.
 {% endhint %}
 
-The Universal Broker provides improvements to facilitate the management of Snyk Broker deployments and connections. This page explains the configuration flow for the client.&#x20;
+The Universal Broker improves the management of Broker deployments and connections, supporting many connections of any type through a single running client, preferably with multiple replicas, that is, entirely distinct clients. Credentials remain entirely local to your network and are never stored on the Snyk platform, which uses credentials references.
 
-The following pages guide you through a Broker deployment setup using the Universal Broker:
+Each client or client with replicas is called a Broker Deployment. The diagram shows two deployments, Universal Broker A and Universal Broker B.
 
-* [Initial configuration of the Universal Broker](initial-configuration-of-the-universal-broker.md)
-* [Set up a GitHub connection using the API](set-up-a-github-connection-using-the-api.md)
-* [Restart your Broker with the required environment variable and connect](restart-your-broker-with-the-required-environment-variable-and-connect.md)
+A deployment can support multiple connections of any type, as shown in the diagram examples: GitHub, GitLab, Artifactory, Jira, and Container Registry Agent. Connections are configured to communicate with specific private resources: SCMs, JIRA, and others.
 
-## Universal Broker Deployment and Connection model <a href="#universal-broker-deployment-and-connection-model" id="universal-broker-deployment-and-connection-model"></a>
+<figure><img src="../../../.gitbook/assets/image 5 (6).png" alt=""><figcaption><p>Universal Broker deployment example</p></figcaption></figure>
 
-The Universal Broker separates deployment and container concerns from connection concerns. It allows for a smaller or a single deployment to support numerous connections of varied types.
+Connections are integrated with Organizations to provide access to your private resources for the appropriate Snyk Organization(s). These Organizations can be in the same or different Snyk Groups.
 
-<figure><img src="../../../.gitbook/assets/image 5 (6).png" alt=""><figcaption><p>Universal Broker deployment diagram</p></figcaption></figure>
+In the diagram, Group 1 includes Organizations A through D, and Group 2 includes Organizations E and F.
 
-In contrast to the existing Broker model, where each deployment and container supports only one connection type, Snyk is providing Broker deployments configured to support many connections in a set-and-forget approach.
+Organizations A, B, C, D, and E are integrated with the Universal Broker A deployment, and thus have access to all of the resources except the container registry agent.&#x20;
 
-Many connections into a single deployment require more configuration parameters to load for each connection. To make this manageable at scale, Snyk has decoupled deployments from connections.
+Organization F is integrated with Universal Broker B, and thus has access to Jira and the container registry agent.
 
-Broker operators now declare their desired deployment model before running any Broker client. By specifying what Broker connections to support, the existing approach `org->integrations->broker connections` is evolving to be instead `Broker Connections -> integration/org`.
-
-Deployments are roughly equivalent to running containers or a replicaset (on Kubernetes deployment models). Deployments aim to represent the entity running the Broker code on a server.
-
-Connections represent a set of individual connections provided by the Universal Broker deployment to a specific downstream system (SCM, Jira, and so on) with a given set of credentials for each.
-
-A single deployment can support any number of connections of various types. Although the Universal Broker may provide new capability, Snyk recommends keeping the number below 25 connections, because container resources are not infinitely vertically scalable.
-
-This model does not store credentials; it uses a credentials reference or references. These indicate to the Broker client that the credentials supporting a given connection are expected to be found in a specifically named environment variable.
-
-For example, deployments run a connection (type `github`) using the environment variable name defined in the associated credentials reference (`$MY_CRED_REF`).
-
-## Steps in implementing the Universal Broker
-
-{% hint style="warning" %}
-Prerequisite: You must be a tenant admin to be able to create deployments, credentials reference(s), and connection(s).
-{% endhint %}
-
-The high-level steps in implementing the Unversal Broker follow.
-
-1. **One time:** Install the Snyk Broker App in your Organization. This returns an install ID, a client ID, and a client secret, all needed to interact with the Snyk platform. The Organization ID is required to create the deployment.
-2. **One time:** Define a deployment for your tenant ID and install ID.
-3. **One time:** Define credentials references needed for your connections.
-4. **One time:** Define your desired connection or connections.
-5. **One time for each Organization integration:** Configure the Organizations and integrations that should use the connection.
-
-<figure><img src="../../../.gitbook/assets/image 6 (4).png" alt=""><figcaption><p>Deployment, connections, and organizations</p></figcaption></figure>
-
-After defining the desired connections, run the Broker Client. The integration between connections and Organizations and integrations is then done independently from the Universal Broker deployment, reducing the required activities on the running containers or Kubernetes deployment.&#x20;
-
-By using the `snyk-broker-config` command or by making an HTTP request against the relevant API endpoint, you can integrate connections or disconnect from a given Organization. The Broker client will manage the connections based on what the Broker administrators have declared as the desired state according to this model. It may take up to two minutes to pick up the changes in a deployment.&#x20;
+\
