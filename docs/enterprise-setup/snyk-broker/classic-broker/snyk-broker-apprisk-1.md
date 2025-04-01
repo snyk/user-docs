@@ -21,7 +21,7 @@ Follow these steps to install and run Snyk Broker for the Snyk AppRisk third-par
 docker pull snyk/broker:universal
 ```
 
-3. Configure your Snyk AppRisk connection type using the `snyk-broker-config` command, as explained on the page [Initial configuration of the Universal Broker](../universal-broker/initial-configuration-of-the-universal-broker.md).
+3. Configure your Snyk AppRisk connection type using the `snyk-broker-config` command, as explained on the page [Initial configuration of the Universal Broker](../universal-broker/getting-started-with-universal-broker/).
 
 ## Checkmarx SAST integration
 

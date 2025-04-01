@@ -1,0 +1,187 @@
+# Basic steps to install and configure Universal Broker
+
+Follow these steps to install and configure your Universal Broker using the `snyk-broker-config` CLI tool command. The tool guides you through the steps and indicates important points in the workflows.
+
+## Install the snyk-broker-config CLI tool
+
+To install the tool, use `npm i -g snyk-broker-config` or download the binary from the [GitHub repository](https://github.com/snyk/broker/releases).
+
+## Create your first connection
+
+When you install the tool, a workflow starts.
+
+```
+> snyk-broker-config workflows connection create
+Using https;//api.snyk.io (or https://api.REGION.snyk.io)
+Universal Broker Create Connection workflow
+   Enter your Snyk Token
+```
+
+* Type your Snyk token and press Enter.
+
+```
+✓ Valid Snyk Token.
+✓ Tenant Admin role confirmed.
+    Have you installed the Broker App against an Org? (Y/N)
+```
+
+* Type N and press Enter.
+
+```
+Enter Org ID to install Broker App. Must be in Tenant <uuid returned>.
+(Must be a valid uuid).
+```
+
+* Paste the Snyk Broker Admin Organization ID created in the prerequisites and press Enter.
+
+```
+App installed. Please store the following credentials securely:
+- client id: <client ID>
+- ClientSecret: <snyk_client-secret>
+You will need them to run your Broker Client.
+    Have you saved these credentials? (Y/N)
+```
+
+The tool displays the credentials for the Broker App just installed. Be sure to store these safely like any other credentials. This is the only time the client secret will be displayed.
+
+* When you have saved your credentials, type Y and press Enter.
+
+```
+Helpful tip ! Set TENANT_ID, INSTALL_ID as environment values to avoid pasting 
+the values in for every command.
+Now using Tenant ID <current Tenant ID> and Install ID <current Install ID>.
+Do you want to create a new Deployment? (Y/N)
+```
+
+After you have created your first deployment in the next step, set the install ID as an environment variable to make the tool easier to use.:\
+`- export INSTALL_ID=xxxx (Linux/Mac)`\
+`- set INSTALL_ID=xxxx (Windows)`
+
+## Create your first deployment
+
+* In response to the prompt, type Y and press Enter.
+
+```
+Which Connection type do you want to create?
+acr
+apprisk
+artifactory
+…
+> github
+…
+```
+
+* Select the connection type you want to create.
+
+This example shows creating a GitHub connection. Creating all the other types of connection follows the same process.
+
+```
+Enter a human-friendly name for your Connection.
+```
+
+* Enter a connection name to help you identify the connection, for example, github-connection-for-team-x.
+
+```
+Enter a human-friendly name for your Connection. <name you entered>
+broker_client_url: Broker client url. Must be url.
+```
+
+* Enter your Broker\_client\_url. Snyk recommends using the default value. You can enter a different value, which is required for container integrations.
+
+```
+broker_client_url: Broker client url. Must be url. <region-specific URL you entered>
+github_token (Sensitive): No existing Credential Reference for this Connection type. 
+CreateNew
+Env Var Name (e.g., MY_GITHUB_TOKEN). (Must be a valid envvar).
+```
+
+* Create the credential reference (not the actual credential value). Enter the name of the environment variable which will contain the actual credential value when the Broker client is running, for example, MY\_GITHUB\_TOKEN.
+* Optionally, you can enter a comment to help you keep track of this connection.
+
+```
+Env Var Name (e.g. MY_GITHUB_TOKEN). (Must be a valid envvar). <MY_GITHUB_TOKEN>
+Comment this is a demo broker connection.
+```
+
+When you run the Broker client container in a subsequent step, you must add the `-e MY_GITHUB_TOKEN=<SECRET_TOKEN_VALUE>`. In a production setup, these values are mounted from the secrets vault.
+
+```
+Connection created with ID <ID number>. Ready to configure integrations 
+to use this connection.
+Connection Create workflow completed.
+```
+
+The connection is now created.
+
+* &#x20;Snyk recommends that you add SNYK\_TOKEN and INSTALL\_ID in your terminal session environment variables now, using the following commands:\
+  \- export INSTALL\_ID=xxxx (Linux/Mac)\
+  \- export SNYK\_TOKEN=yyyy (Linux/Mac)\
+  \- set INSTALL\_ID=xxxx (Windows)\
+  \- set SNYK\_TOKEN=yyyy (Windows)
+
+```
+> snyk-broker-config workflows connections get
+```
+
+* If you are prompted about the Broker app being installed, enter Y and then paste the install ID you saved previously.\
+  Exporting the INSTALL\_ID avoids this step in your terminal session in the future.
+
+```
+Now using Deployment <name>.
+Selected Connection ID <number>. 
+Ready to configure integrations to use this connection.
+```
+
+Details of the connection follow: `connection ID`; `connection type (broker_connection)`; `attributes:  deployment_id, identifier, name, and secrets-primary and secondary`, each with the `status`, `encrypted`, `expires_at`, and `nonce`; `configuration required: broker-client-url` and `github_token values`; `type: github.`
+
+```
+Connection Detail Workflow completed.
+```
+
+## Integrate your connection with an Organization
+
+```
+> snyk-broker-config workflows connections integrate
+Enter the OrgID you want to integrate.. (Must be a valid  uuid).
+```
+
+* Enter the ID of the Organization where you want to use the newly created Broker connection.
+
+```
+Enter the OrgID you want to integrate.. (Must be a valid  uuid). <uuid-entered>
+Connection <number returned> (type:github) integrated with <integration <number>.
+
+Connection Integration Workflow completed
+```
+
+Your Organization is now integrated with your new Broker connection.
+
+## Run the Broker client
+
+```
+docker run -d --restart=always \
+-p 8000:8000 \
+-e DEPLOYMENT_ID=<DEPLOYMENT_ID_JUST_CREATED> \
+-e CLIENT_ID=<CLIENT_ID_SAVED_EARLIER> \
+
+-e CLIENT_SECRET=<CLIENT_SECRET_SAVED_EARLIER> \
+-e MY_GITHUB_TOKEN=<THE_ACTUAL_GITHUB_TOKEN_VALUE> \
+-e PORT=8000 \
+snyk/broker:universal
+```
+
+When the Broker client has started, the connection is ready to use, in this case, to import repositories.
+
+* To verify that your connection is configured, check that the integration tile on your **Organization Settings** > **Integrations** page is marked **Configured**.
+
+## Integrate your connection with more Organizations
+
+To integrate your connection with another Organization so it will use the same connection, run the command again and enter the ID of the new Organization to integrate. You can repeat this step as often as needed to integrate with Organizations.
+
+```
+> snyk-broker-config workflows connections integrate
+```
+
+* Repeat the step for any Organization in your Tenant as needed, for as many integrations as you need.
+
+\
