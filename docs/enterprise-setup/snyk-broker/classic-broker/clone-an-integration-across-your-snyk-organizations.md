@@ -1,9 +1,5 @@
 # Clone an integration across your Snyk Organizations
 
-{% hint style="info" %}
-If you are using Broker with Snyk Code, see [Git Clone through Broker](broken-reference). Contact your Snyk team if you need help implementing Broker with Snyk Code.
-{% endhint %}
-
 You can choose to use the same brokered Git integration across multiple Organizations in Snyk by copying and duplicating the Organization you have already configured.
 
 For example, you can integrate Snyk Organizations X, Y, and Z with your single Git repo X.
