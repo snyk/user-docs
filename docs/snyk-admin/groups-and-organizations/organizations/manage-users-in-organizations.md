@@ -17,7 +17,7 @@ You can do the following on the **Add members** screen:
 * Select **Invite new members** to send an email invitation to a new user. Enter the email addresses of users to invite, separated by commas, and click **Send invite**.
 * Select **Add existing members** to add existing members of your Group to the Organization. Select the users when prompted and click **Invite members.**
 * For Free plan users only:\
-  Select **Invite by link** to send a link; click **Copy link** and send the link yourself.
+  Select **Invite by link** to send a link; click **Copy link** and send the link yourself. Note that an invite link expires after 48 hours.
 * Use the **New members join as** dropdown to define the default role of a user when joining, such as **Org admin**. For details, see [Manage permissions](../../user-roles/pre-defined-roles.md).
 
 For a demonstration of adding users, view this video:
@@ -28,7 +28,7 @@ Inviting members to an Organization
 
 ## Revoke pending invites
 
-Note that an invite expires after 48 hours. Follow these steps to cancel pending invites:
+Follow these steps to cancel pending invites:
 
 1.  On the **Members** page, click the **Revoke pending invites link**, which appears when there is at least one pending invite.\
 
