@@ -7,6 +7,47 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## March 2025
+
+### **Snyk Broker**
+
+* The Snyk Broker section has been divided into [Universal Broker](enterprise-setup/snyk-broker/universal-broker/) and [Classic Broker](enterprise-setup/snyk-broker/classic-broker/) documentation and the [main page](enterprise-setup/snyk-broker/) has been updated.
+* The Classic Broker installation instructions now include the command to set the `BROKER_SERVER_URL` for [Docker](enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md) and the `brokerServerUrl` for [Helm](enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md).
+
+### **Snyk API**
+
+* The V1 API Apiary site has been sunset. The [V1 API overview](snyk-api/v1-api.md) and [reference](snyk-api/reference/) are now on the user docs site. Additional details from Apiary have been added to the V1 reference.
+* A section has been added for [pages that explain how to use specific APIs in depth](snyk-api/using-specific-snyk-apis/).
+
+### **Snyk CLI, CI/CD, IDE**
+
+* [Advanced use of Snyk Container CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/advanced-use-of-snyk-container-cli.md) now includes support for scanning Kaniko image archives.
+* The [support policy for the CI/CD plugins](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations#support-policy) was updated to align with the CLI support policy.
+* The Net new issues feature was added to the IDE documentation for [Eclipse](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects.md#net-new-issues-versus-all-issues), [JetBrains](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugins/run-an-analysis-with-the-jetbrains-plugins.md#net-new-issues-versus-all-issues), [Visual Studio](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/view-analysis-results-from-visual-studio-extension.md#net-new-issues-versus-all-issues), and [Visual Studio Code](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension/#net-new-issues-versus-all-issues), and [troubleshooting information](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/net-new-issues-delta-scan-troubleshooting.md) was added.
+
+### **Snyk Code**
+
+* The Generated Pull Requests report is now available in Early Access. This report provides an overview of how Fix, Backlog, and Upgrade PRs are used and highlights the efficiency of PR merges.
+* The Pull Request Experience now supports GitLab and Azure Repos SCM integrations, with a few [limitations](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md#gitlab-and-azure-repos).
+* New Snyk Code filters and columns were added to [Snyk Reports](manage-risk/reporting/issue-columns-dictionary.md#issue-characteristics) and [Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary.md): File Path,  Code Region, and Asset Finding ID.
+* Snyk Code now supports [Rust](supported-languages-package-managers-and-frameworks/rust/rust-for-code-analysis.md) and [Groovy](supported-languages-package-managers-and-frameworks/groovy.md) available in Early Access and accessible from Snyk Preview.
+
+### Snyk Essentials
+
+* A new feature is now available in Snyk Essentials, introducing a new type of [asset tag](manage-risk/policies/assets-policies/#asset-tagging) known as GitHub custom properties.
+* [Asset tags](manage-assets/assets-inventory-components.md#tags) have been redefined and are now clearly separated into system tags and user-defined tags.
+
+### **Snyk  Integrations**
+
+* The [GitHub Server App](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-server-app.md) has moved into General Availability.
+* The [Jira integration documentation](integrate-with-snyk/jira-and-slack-integrations/jira-integration.md#prerequisites-for-jira-integration-with-snyk) has been updated to state that Snyk supports version 5 to version 9.
+
+### **Other updates**
+
+* The [PCI-DSS v4.0.1 report](manage-issues/reporting/available-snyk-reports.md#pci-dss-v4.0.1-report) is now available in Early Access. This report leverages Snyk scan results to assess, prove, and improve readiness for PCI-DSS AppSec compliance regarding SCA and SAST vulnerabilities.
+* The [Repositories Tested in CI/CD report](manage-issues/reporting/available-snyk-reports.md#repositories-tested-in-ci-cd-report) is available in Early Access. This report tracks Snyk CI/CD testing to prevent vulnerable production deployments.
+* [Severity levels](manage-risk/prioritize-issues-for-fixing/severity-levels.md#why-are-there-multiple-cvss-scores-for-the-same-vulnerability) now provide more details about the CVSS v4.0.
+
 ## February 2025
 
 ### Snyk AppRisk
