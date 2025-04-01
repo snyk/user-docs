@@ -11,7 +11,7 @@ To install the tool, use `npm i -g snyk-broker-config` or download the binary fr
 When you install the tool, a workflow starts.
 
 ```
-> snyk-broker-config workflows connection create
+> snyk-broker-config workflows connections create
 Using https;//api.snyk.io (or https://api.REGION.snyk.io)
 Universal Broker Create Connection workflow
    Enter your Snyk Token
