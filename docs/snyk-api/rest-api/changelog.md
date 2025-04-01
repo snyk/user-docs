@@ -1,3 +1,31 @@
+## 2024-10-15 - Updated 2025-04-01
+
+### POST - `/orgs/{org_id}/memberships` - Updated
+- the request property `data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/org/data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/org/data/id` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/org/data/type` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/role/data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/role/data/id` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/role/data/type` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/user/data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/user/data/id` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/user/data/type` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/type` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2024-10-15 - Updated 2025-03-19
 
 ### PATCH - `/orgs/{org_id}/memberships/{membership_id}` - Updated
