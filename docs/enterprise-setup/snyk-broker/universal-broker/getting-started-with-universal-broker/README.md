@@ -1,8 +1,6 @@
 # Getting started with Universal Broker
 
-The basic steps in implementing the Universal Broker are the same regardless of the configuration method you use. The Getting started pages explain how to use the `snyk-broker-config` CLI tool command, which walks you through the basic steps. While you can install and configure Universal Broker by using direct API calls, that method requires an in-depth understanding of the overall Universal Broker models.
-
-The basic steps follow:
+The basic steps in implementing the Universal Broker are the same regardless of the configuration method you use. The Getting started pages explain how to use the `snyk-broker-config` CLI tool command, which walks you through the following basic steps.
 
 1. Install the snyk-broker-config CLI tool.
 2. Create your first connection. This returns an install ID, a client ID, and a client secret, which are all needed to interact with the Snyk platform. The Snyk Broker Admin Organization ID is required to create the connection.
