@@ -73,7 +73,7 @@ artifactory
 
 * Select the connection type you want to create.
 
-This example shows creating a GitHub connection. Creating all the other types of connection follows the same process.
+This example shows creating a GitHub connection. Creating all the other types of connection follows the same process. Each deployment is limited to 25 connections.
 
 ```
 Enter a human-friendly name for your Connection.
