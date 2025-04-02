@@ -1,6 +1,6 @@
 # Basic steps to install and configure Universal Broker
 
-Follow these steps to install and configure your Universal Broker using the `snyk-broker-config` CLI tool command. The tool guides you through the steps and indicates important points in the workflows.
+Follow these steps to install and configure your Universal Broker using the `snyk-broker-config` CLI tool. The tool guides you through the steps and indicates important points in the workflows.
 
 ## Install the snyk-broker-config CLI tool
 
