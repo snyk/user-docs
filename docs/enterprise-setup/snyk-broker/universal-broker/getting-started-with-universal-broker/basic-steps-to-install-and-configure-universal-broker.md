@@ -8,7 +8,7 @@ To install the tool, use `npm i -g snyk-broker-config` or download the binary fr
 
 ## Create your first connection
 
-When you install the tool, a workflow starts.
+* After you install, start the Universal Broker Create Connection worklow.
 
 ```
 > snyk-broker-config workflows connections create
