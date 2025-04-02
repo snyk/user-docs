@@ -138,7 +138,7 @@ Details of the connection follow: `connection ID`; `connection type (broker_conn
 Connection Detail Workflow completed.
 ```
 
-## Integrate your connection with an Organization
+## Integrate your connection with an Organization that will use the Universal Broker
 
 ```
 > snyk-broker-config workflows connections integrate
