@@ -42,7 +42,7 @@ You will need them to run your Broker Client.
     Have you saved these credentials? (Y/N)
 ```
 
-The tool displays the credentials for the Broker App just installed. Be sure to store these safely like any other credentials. This is the only time the client secret will be displayed.
+The tool displays the credentials for the Broker App just installed. Be sure to store these safely like any other credentials. This is the only time the client secret will be displayed. If you lose these credentials, you must either delete and recreate the Snyk Broker Admin Organization and start over, or use the API to reinstall Universal Broker manually.
 
 * When you have saved your credentials, type Y and press Enter.
 
