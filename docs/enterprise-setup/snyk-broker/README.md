@@ -6,7 +6,7 @@
 Snyk Broker is available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations. The Broker allows Snyk to connect to remote resources in private repositories, leaving credentials inside the customer's network.
+Snyk Broker is an open-source tool that acts as a proxy between Snyk and source integrations, allowing for access by snyk.io to scan your code and return results to you. The Broker allows Snyk to connect to remote resources in private repositories, leaving credentials inside the customer's network.
 
 The diagram that follows illustrates the basic components.
 
@@ -16,13 +16,15 @@ The diagram that follows illustrates the basic components.
 
 Snyk Broker includes a Server and a Client, basic components that are the same across all integrations. The Broker Server runs on the Snyk SaaS backend and is provided by Snyk; no installation is required. You will install the Broker client and deploy it in your infrastructure.
 
-The Broker client and server act together, sending requests by proxy from [snyk.io](http://snyk.io/) to a repository or Jira, fetching the files needed for scanning from repositories, and fetching results using webhooks posted by the SCM service.
+The Broker client and server act together, sending requests by proxy from [snyk.io](http://snyk.io/) to a repository or Jira, fetching the files needed for scanning from repositories. and fetching results using webhooks posted by the SCM service.
 
 The Broker client runs within your internal network, keeping sensitive data such as SCM tokens within the network perimeter. The Broker connection allows for scanning using only requests on an approved data list. This narrows the access permissions to the absolute minimum required for Snyk to monitor a repository. For more information, see [Approved data list for Snyk Broker](broker-inbound-and-outbound-connections-and-allowed-requests.md#approved-data-list-for-snyk-broker).
 
 Using Snyk Broker allows you to manage a fixed private IP for your integration that targets the Broker.
 
 All data, both in transit and at rest, is encrypted. There is no need to open incoming ports; the communication is initiated outbound. After the connection is initiated, the secure WebSocket connection is bidirectional between the Client and the Server.
+
+SCM integrations with Broker Support Snyk Code, Open Source, Container, IaC, and Essentials.
 
 ## Integrations supported by Snyk Broker
 
