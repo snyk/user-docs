@@ -1,3 +1,9 @@
+## 2024-10-15 - Updated 2025-04-02
+
+### POST - `/orgs/{org_id}/policies` - Updated
+- added the new optional request property `data/meta`
+
+
 ## 2024-10-15 - Updated 2025-04-01
 
 ### POST - `/orgs/{org_id}/memberships` - Updated
