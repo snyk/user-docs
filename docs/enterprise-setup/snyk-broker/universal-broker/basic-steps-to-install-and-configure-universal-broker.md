@@ -55,9 +55,9 @@ Now using Tenant ID <current Tenant ID> and Install ID <current Install ID>.
 Do you want to create a new Deployment? (Y/N)
 ```
 
-After you have created your first deployment in the next step, set the install ID as an environment variable to make the tool easier to use.:\
-`- export INSTALL_ID=xxxx (Linux/Mac)`\
-`- set INSTALL_ID=xxxx (Windows)`
+Snyk recommends that you set the INSTALL\_ID as an environment variable now, to make the tool easier to use.:\
+`- export INSTALL_ID=zzzz (Linux/Mac)`\
+`- set INSTALL_ID=zzzz(Windows)`
 
 ## Create your first deployment
 
@@ -115,13 +115,7 @@ to use this connection.
 Connection Create workflow completed.
 ```
 
-The connection is now created.
-
-* &#x20;Snyk recommends that you add SNYK\_TOKEN and INSTALL\_ID in your terminal session environment variables now, using the following commands:\
-  \- export INSTALL\_ID=xxxx (Linux/Mac)\
-  \- export SNYK\_TOKEN=yyyy (Linux/Mac)\
-  \- set INSTALL\_ID=xxxx (Windows)\
-  \- set SNYK\_TOKEN=yyyy (Windows)
+The connection is now created. You can use the following workflow to display details about the connection.
 
 ```
 > snyk-broker-config workflows connections get
