@@ -10,19 +10,19 @@ Before installing the Universal Broker `snyk-broker-config` CLI tool, be sure yo
 
 * Client machine system requirements: one CPU and 256 MB of RAM.
 * Network access that is allowed by any firewalls installed on your network: an outbound TLS (443) to <kbd>https://broker.snyk.io</kbd> AND `https://api.snyk.io`or your [regional Broker URL](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
-* A Snyk account and your personal Snyk token or your PAT; you cannot use a service account.
-* An SCM token or password. See [Obtain the tokens required to set up Snyk Broker](../classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md). Snyk Broker does not support authentication with the mTLS method.
+* A Snyk account and your personal Snyk API token; you cannot use a service account.
 * Tenant admin permissions.
+* A new Snyk Broker Admin Organization created in the Group of your choice in your Tenant, not a personal Organization. See [Create an Organization](../../../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#create-an-organization) for details.
+* An SCM token or password. See [Obtain the tokens required to set up Snyk Broker](../classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md). Snyk Broker does not support authentication with the mTLS method.
 * Node 18 or higher installed.
 * Docker configured to pull images from Docker Hub in order to install with Docker.
-* A new Snyk Broker Admin Organization created in the Group of your choice in your Tenant, not a personal Organization. See [Create an Organization](../../../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#create-an-organization) for details.
 
 Snyk recommends that you add SNYK\_TOKEN and TENANT\_ID in your terminal session environment variables now, using the following commands:
 
-* export SNYK\_TOKEN=xxxx (Linux/Mac)
-* export TENANT\_ID=yyyy (Linux/Mac)
-* set SNYK\_TOKEN=xxxx (Windows)
-* set TENANT\_ID=yyyy (Windows)
+* `export SNYK_TOKEN=xxxx (Linux/Mac)`
+* `export TENANT_ID=yyyy (Linux/Mac)`
+* `set SNYK_TOKEN=xxxx (Windows)`
+* `set TENANT_ID=yyyy (Windows)`
 
 See [Obtain and use your Snyk API token](../../../getting-started/#obtain-and-use-your-snyk-api-token) for instructions on finding your SNYK\_TOKEN.  To find your TENANT\_ID:
 
@@ -34,7 +34,7 @@ When installing, you must add a command in your script to set the Broker server 
 Example:  `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`.
 
 If you are using a region other than SNYK US-01, run the following as applicable after you install the CLI tool and before you create your first connection:\
-`- export SNYK_API_HOSTNAME=https://api.REGION.snyk.io` (Linux and Mac).\
-`- set SNYK_API_HOSTNAME=https://api.REGION.snyk.io` (Windows)
+`export SNYK_API_HOSTNAME=https://api.REGION.snyk.io` (Linux and Mac).\
+`set SNYK_API_HOSTNAME=https://api.REGION.snyk.io` (Windows)
 
 \
