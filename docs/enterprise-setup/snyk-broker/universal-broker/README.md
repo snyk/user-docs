@@ -21,6 +21,6 @@ Organizations A, B, C, D, and E are integrated with the Universal Broker A deplo
 
 Organization F is integrated with Universal Broker B, and thus has access to Jira and the container registry agent.
 
-For the prerequisites and the steps to install and set up your first Universal Broker connection and deployment, See [Getting started with Universal Broker](getting-started-with-universal-broker/).
+To get started with using Universal Broker, be sure you have met the [prerequisites](prerequisites-for-universal-broker.md) and follow the [basic steps to install and configure Universal Broker](basic-steps-to-install-and-configure-universal-broker.md).
 
 \

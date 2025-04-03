@@ -8,6 +8,8 @@ To install the tool, use `npm i -g snyk-broker-config` or download the binary fr
 
 ## Create your first connection
 
+This returns an install ID, a client ID, and a client secret, which are all needed to interact with the Snyk platform.
+
 * After you install, start the Universal Broker Create Connection worklow.
 
 ```
@@ -58,6 +60,8 @@ After you have created your first deployment in the next step, set the install I
 `- set INSTALL_ID=xxxx (Windows)`
 
 ## Create your first deployment
+
+This includes creating credentials references needed for your connections. Each deployment is limited to a maximum of 25 connections.
 
 * In response to the prompt, type Y and press Enter.
 
