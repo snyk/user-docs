@@ -6,16 +6,28 @@ When you connect to the ECR integration, ensure that the us-east-2 region is act
 
 This page explains how to enable integration between one Amazon ECR registry and a Snyk Organization and start managing your image security. To integrate with multiple registries, create a unique Organization for each one.
 
-## **Automated integration process for ECR**
-
-You can establish cross-account access to enable Snyk's Amazon ECR integration as a one-click deployment using an [AWS Quick Start](https://github.com/aws-quickstart/quickstart-snyk-security), This eliminates the need for manual configuration.
-
-<figure><img src="../../../../.gitbook/assets/configure_integration_Amazon_ecr.png" alt=""><figcaption><p>AWS ECR and Snyk integration cross-account IAM role</p></figcaption></figure>
-
-You must have your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference\_identifiers.html#identifiers-arns) to complete the integration. The role ARN is provided in the AWS CloudFormation Console's Output tab.
-
-## **Manual integration process for ECR**
-
 To enable integration, you must first create a read-only AWS Identity and Access Management (IAM) role. The role delegates read-only access to all repositories in your registry for Snyk per Organization by indicating the list of permitted Snyk-assigned Organization IDs.
 
 After you create the IAM role, when integrating additional organizations, you can add the additional Organization IDs as needed.
+
+Additionally, after you create the IAM role, allow a few minutes for AWS to update the role on their servers before continuing:
+
+1. From AWS, copy the **Role ARN** key that appears at the top of the **Summary** section of the **Role** area.
+2. Log in to your Snyk account.
+3. Navigate to **Integrations** and click the Amazon ECR option.\
+   The Amazon ECR configuration page in the Settings area loads.
+4. Enter credentials as follows:
+   1. **AWS Region**—use the format `region-part-#`, for example, `eu-west-3`.\
+      You must enter the default region as configured for your AWS account for your repositories and images to be available for import.
+   2. **Role ARN**—copy from your AWS account in the format `arn:aws:iam:::role/`.
+5. Click **Save**
+
+An example follows:
+
+```
+   arn:aws:iam::881001789406:role/TestSnykIntegration_role
+```
+
+Snyk tests the connection values, and the page reloads, now displaying Amazon ECR integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen.
+
+If the connection to AWS fails, a notification appears under the **Connected to Amazon ECR** section.
