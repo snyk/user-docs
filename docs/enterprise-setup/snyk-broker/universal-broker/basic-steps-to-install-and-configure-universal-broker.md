@@ -36,6 +36,8 @@ Enter Org ID to install Broker App. Must be in Tenant <uuid returned>.
 
 * Paste the Snyk Broker Admin Organization ID created in the prerequisites and press Enter.
 
+The Broker App facilitates the secure connection and communication with the Broker server through OAuth.
+
 ```
 App installed. Please store the following credentials securely:
 - client id: <client ID>
