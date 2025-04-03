@@ -15,7 +15,7 @@ Before installing the Universal Broker `snyk-broker-config` CLI tool, be sure yo
 * Tenant admin permissions.
 * Node 18 or higher installed.
 * Docker configured to pull images from Docker Hub in order to install with Docker.
-* A new Snyk Broker Admin Organization created in the Group of your choice in your Tenant, not a personal Organization.
+* A new Snyk Broker Admin Organization created in the Group of your choice in your Tenant, not a personal Organization. See [Create an Organization](../../../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#create-an-organization) for details.
 
 Snyk recommends that you add SNYK\_TOKEN and TENANT\_ID in your terminal session environment variables now, using the following commands:
 
