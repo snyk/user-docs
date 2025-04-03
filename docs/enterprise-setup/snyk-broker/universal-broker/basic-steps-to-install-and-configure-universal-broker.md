@@ -19,7 +19,7 @@ Universal Broker Create Connection workflow
    Enter your Snyk Token
 ```
 
-* Type your Snyk token and press Enter.
+* Type your Snyk API token and press Enter.
 
 ```
 ✓ Valid Snyk Token.
