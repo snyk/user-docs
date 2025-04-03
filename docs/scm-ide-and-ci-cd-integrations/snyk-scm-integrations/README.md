@@ -34,7 +34,7 @@ At the Group level, you can set up and customize your Snyk Essentials integratio
 Snyk Essentials Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and, or metadata, for example, information on developers, commits, and so on.
 
 {% hint style="info" %}
-If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - Snyk Essentials](../../enterprise-setup/snyk-broker/classic-broker/snyk-broker-apprisk.md).
+If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - Snyk Essentials](../../enterprise-setup/snyk-broker/classic-broker/snyk-broker-essentials.md).
 {% endhint %}
 
 The Integrations page at the Group level shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub.
@@ -66,7 +66,7 @@ See the [Integration syncing time](../../integrate-with-snyk/#integrations-synci
 The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.&#x20;
 
 {% hint style="info" %}
-The wildcard integration applies to the GitHub and Azure DevOps integrations and offers support when you set them up using [Snyk Broker](../../enterprise-setup/snyk-broker/classic-broker/snyk-broker-apprisk.md).&#x20;
+The wildcard integration applies to the GitHub and Azure DevOps integrations and offers support when you set them up using [Snyk Broker](../../enterprise-setup/snyk-broker/classic-broker/snyk-broker-essentials.md).&#x20;
 {% endhint %}
 
 You can use the wildcards while setting up your integration using the Integration Hub:
@@ -101,7 +101,7 @@ If you modify the permissions and scopes after the initial configuration, it is 
 
 ### Using Snyk Broker
 
-If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker](../../enterprise-setup/snyk-broker/classic-broker/snyk-broker-apprisk.md).
+If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker](../../enterprise-setup/snyk-broker/classic-broker/snyk-broker-essentials.md).
 
 {% hint style="warning" %}
 Enable the Snyk Essentials flag in your Snyk Broker deployment environment before running the commands.

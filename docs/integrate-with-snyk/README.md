@@ -83,7 +83,7 @@ After the integration is validated, a card is displayed on the Integrations page
 
 ### Using Snyk Broker
 
-If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker](../enterprise-setup/snyk-broker/classic-broker/snyk-broker-apprisk.md).
+If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the Snyk Broker documentation, including [Snyk Broker](../enterprise-setup/snyk-broker/classic-broker/snyk-broker-essentials.md).
 
 {% hint style="info" %}
 Enable the Snyk Essentials flag in your Snyk Broker deployment environment before running the commands.

@@ -165,7 +165,7 @@
         * [Container Registry Agent advanced configuration using Docker](enterprise-setup/snyk-broker/classic-broker/snyk-broker-container-registry-agent/container-registry-agent-advanced-configuration-using-docker.md)
         * [Integrate with self-hosted container registries](enterprise-setup/snyk-broker/classic-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md)
       * [Snyk Broker - Infrastructure as Code detection](enterprise-setup/snyk-broker/classic-broker/snyk-broker-infrastructure-as-code-detection.md)
-      * [Snyk Broker - Essentials](enterprise-setup/snyk-broker/classic-broker/snyk-broker-apprisk.md)
+      * [Snyk Broker - Essentials](enterprise-setup/snyk-broker/classic-broker/snyk-broker-essentials.md)
     * [Broker inbound and outbound connections and allowed requests](enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md)
     * [High availability mode](enterprise-setup/snyk-broker/high-availability-mode.md)
     * [Snyk Broker - commit signing](enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
