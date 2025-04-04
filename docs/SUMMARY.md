@@ -94,6 +94,7 @@
       * [Basic steps to install and configure Universal Broker](enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker.md)
       * [List and review the Universal Broker configuration resources](enterprise-setup/snyk-broker/universal-broker/list-and-review-the-universal-broker-configuration-resources.md)
       * [Preparing for creating Universal Broker deployments](enterprise-setup/snyk-broker/universal-broker/preparing-for-creating-universal-broker-deployments.md)
+      * [Deployment tips and reference architectures](enterprise-setup/snyk-broker/universal-broker/deployment-tips-and-reference-architectures.md)
       * [Setting up and integrating your Universal Broker connections](enterprise-setup/snyk-broker/universal-broker/setting-up-and-integrating-your-universal-broker-connections.md)
       * [Running your Universal Broker client](enterprise-setup/snyk-broker/universal-broker/running-your-universal-broker-client.md)
       * [Add a new connection to your Universal Broker](enterprise-setup/snyk-broker/universal-broker/add-a-new-connection-to-your-universal-broker.md)

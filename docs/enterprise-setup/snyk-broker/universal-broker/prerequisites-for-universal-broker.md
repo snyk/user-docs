@@ -6,7 +6,7 @@ Using Snyk Broker on Windows is not supported. Snyk recommends that Windows user
 Using the snyk-broker-config CLI tool is supported on Windows.
 {% endhint %}
 
-Before installing the Universal Broker `snyk-broker-config` CLI tool, be sure you have met the following prerequisites. If you need help, contact your Snyk team.
+Before installing the Universal Broker `snyk-broker-config` CLI tool, be sure you have met the following prerequisites. If you need help, contact your Snyk account team.
 
 * Client machine system requirements: one CPU and 256 MB of RAM.
 * Network access that is allowed by any firewalls installed on your network: an outbound TLS (443) to <kbd>https://broker.snyk.io</kbd> AND `https://api.snyk.io`or your [regional Broker URL](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
