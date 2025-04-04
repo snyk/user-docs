@@ -47,7 +47,7 @@ Consider the following to understand what the required components are for your d
 * Are you planning to detect Snyk Code vulnerabilities? See [Clone an integration across your Snyk Organizatons](../clone-an-integration-across-your-snyk-organizations.md).
 * Are you planning to connect to a Container Registry?
   * You will need to deploy an additional agent with the Broker, the Snyk Broker Container Registry Agent.
-  * See [Snyk Broker Container Registry agent](../snyk-broker-container-registry-agent/).
+  * See [Snyk Broker Container Registry agent](../../snyk-broker-container-registry-agent/).
 
 Every integration has a specific Broker token assigned to it. An integration to analyze Snyk Code vulnerabilities and connect to a Container Registry has the following:
 

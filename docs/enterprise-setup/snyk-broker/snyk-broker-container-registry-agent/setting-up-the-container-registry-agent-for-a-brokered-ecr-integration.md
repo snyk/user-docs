@@ -12,7 +12,7 @@ If there are multiple ECRs in multiple accounts that need to communicate with th
 
 The following illustrates the architecture for a brokered ECR integration. Refer to the steps that follow for information about setting up the components on the diagram.
 
-<figure><img src="../../../../.gitbook/assets/Broker-CRA-architecture-diagram.png" alt="Architecture of the brokered ECR integration"><figcaption><p>Architecture of the brokered ECR integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Broker-CRA-architecture-diagram.png" alt="Architecture of the brokered ECR integration"><figcaption><p>Architecture of the brokered ECR integration</p></figcaption></figure>
 
 ## **Summary of steps for brokered ECR integration**
 

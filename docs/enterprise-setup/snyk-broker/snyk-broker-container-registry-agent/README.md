@@ -15,7 +15,7 @@ When you use the Container Registry Agent, Snyk can integrate with private conta
 
 This page explains how to use the Container Registry Agent to integrate through Broker with supported open-source container registries as [listed](./#supported-container-registries) on this page. This method of integration is designed for users who require images to be scanned in their own environment instead of inside the Snyk service.
 
-If you do not require that images be scanned in your own environment, you do not need to use the Container Registry Agent. You can integrate with the supported container registries from the integrations page in your account. For details, see [Snyk Container security integrations](../../../../scan-with-snyk/snyk-container/container-registry-integrations/).
+If you do not require that images be scanned in your own environment, you do not need to use the Container Registry Agent. You can integrate with the supported container registries from the integrations page in your account. For details, see [Snyk Container security integrations](../../../scan-with-snyk/snyk-container/container-registry-integrations/).
 
 ## **Components of the network-restricted container registries solution**
 
@@ -24,9 +24,9 @@ The following components are needed with network-restricted container registries
 * Broker Server: running on the Snyk SaaS backend.
 * Broker Client and Container Registry Agent: two Docker images deployed in your infrastructure, creating two separate services, responsible for sampling your container registries in a secured manner and sending the allowed information to Snyk
 
-The Broker Client provides the Container Registry Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects, using your Broker ID, to a Broker Server which runs in the Snyk environment. See the [Snyk Broker](../../) introductory information for more details.
+The Broker Client provides the Container Registry Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects, using your Broker ID, to a Broker Server which runs in the Snyk environment. See the [Snyk Broker](../) introductory information for more details.
 
-<figure><img src="../../../../.gitbook/assets/mceclip0-8-.png" alt="Highlevel architecture of the Snyk Broker Container Registry Agent"><figcaption><p>High-level architecture of the Snyk Broker Container Registry Agent</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mceclip0-8-.png" alt="Highlevel architecture of the Snyk Broker Container Registry Agent"><figcaption><p>High-level architecture of the Snyk Broker Container Registry Agent</p></figcaption></figure>
 
 ## **Supported container registries**
 
@@ -92,7 +92,7 @@ For DigitalOcean Container Registry, Google Cloud Container Registry, Google Art
 * `BROKER_CLIENT_URL` - The URL of your Broker Client, including scheme and port, which is used by the container registry agent to call back to Snyk through the brokered connection, for example:\
   "[http://my.broker.client:8000](http://my.broker.client:8000)".
   * This must have `http://` and the port number.
-  * [Additional settings](../install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker.md) are required to configure the client with HTTPS.
+  * [Additional settings](../classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker.md) are required to configure the client with HTTPS.
 * `CR_AGENT_URL` - The URL of your Container Registry Agent, including scheme and port, to which the Broker Client will route the requests, for example: "[http://my.container-registry-agent](http://my.container-registry-agent):8081".
 * `CR_TYPE` - The container registry type as listed in [Supported container registries](./#supported-container-registries) on this page, for example: "docker-hub", "gcr," "artifactory-cr".
 * `CR_BASE` - The hostname of the container registry api to connect to, for example: "cr.host.com".
@@ -118,7 +118,7 @@ docker run --restart=always \
        snyk/broker:container-registry-agent
 ```
 
-As an alternative to this command, you can use a derived Docker image to set up the Container Registry Agent. See [Derived Docker images](../install-and-configure-snyk-broker/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Container Registry Agent.
+As an alternative to this command, you can use a derived Docker image to set up the Container Registry Agent. See [Derived Docker images](../classic-broker/install-and-configure-snyk-broker/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Container Registry Agent.
 
 ### Configuring and running **the Container Registry Agent**
 
@@ -156,13 +156,13 @@ If you are using `Repository path` as your Docker access method, set the contain
 
 Note that the catalog endpoint `/artifactory/api/docker/<artifactory-repository>/v2/_catalog` is not required for importing a project in Artifactory; this is used for listing the image repositories.
 
-See [Configuring your JFrog Artifactory container registry integration](../../../../scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-jfrog-artifactory/configuring-your-jfrog-artifactory-container-registry-integration.md) for more details.
+See [Configuring your JFrog Artifactory container registry integration](../../../scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-jfrog-artifactory/configuring-your-jfrog-artifactory-container-registry-integration.md) for more details.
 
 ### **Elastic Container Registry (ECR)**
 
 In Elastic Container Registries and other container registries, the communication is the same. The Agent makes synchronous calls to the container registries to list and pull the image. Then the Agent scans the images and sends the results to the Broker Client using callbacks. ECR has a special authentication mechanism that requires setting up an IAM Role or User in the Agent.
 
-<figure><img src="../../../../.gitbook/assets/image (20) (3).png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (3).png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
 
 #### **Required AWS Resource with ECR**
 
@@ -213,7 +213,7 @@ To use the endpoint, provide the following environment variable to the Broker Cl
 When you call the `/systemcheck` endpoint of the Broker Client, it uses the `BROKER_CLIENT_VALIDATION_URL` to make a request to the `/systemcheck` endpoint Container Registry Agent, with the credentials provided to the Broker Client. The Container Registry Agent then makes a request to the container registry to validate connectivity.
 
 {% hint style="info" %}
-The `/systemcheck` endpoint is not mandatory for the brokered integration to function. For more information, see [Systemcheck documentation](../../troubleshooting-broker.md#monitoring-systemcheck).
+The `/systemcheck` endpoint is not mandatory for the brokered integration to function. For more information, see [Systemcheck documentation](../troubleshooting-broker.md#monitoring-systemcheck).
 {% endhint %}
 
 ## **Debugging methods for Container Registry Agent**

@@ -139,7 +139,7 @@ By default for Nexus 2, the X-Forwarded-For headers are stripped off by the Brok
 
 ## Derived Docker image for Container Registry Agent setup
 
-As an alternative to using the Docker run command shown on the [setup page](../snyk-broker-container-registry-agent/), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](../../snyk-broker-container-registry-agent/), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:container-registry-agent
