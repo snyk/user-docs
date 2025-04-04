@@ -134,3 +134,4 @@ redirects:
   getting-started/snyk-learn/snyk-learn-reports: snyk-learn/snyk-learn-reports.md
   getting-started/snyk-learn/snyk-learn-access-controls: snyk-learn/snyk-learn-access-controls.md
   getting-started/snyk-learn/snyk-learn-api: snyk-learn/snyk-learn-api.md
+  enterprise-setup/snyk-broker/universal-broker/initial-configuration-of-the-universal-broker: enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker.md
