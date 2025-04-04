@@ -41,11 +41,9 @@ The counts indicate the number of contributing developers to the default branch 
 
 Snyk does not count contributions to public (open-source) repos because the pricing model is based on the number of contributing developers to private repositories.
 
-An example of the count of contributing developers follows:
-
-<figure><img src="../../.gitbook/assets/image__10_.png" alt="Contributing developers count"><figcaption><p>Contributing developers count</p></figcaption></figure>
+The contributing developers count shows:
 
 * **Total unique contributors across all integrations:** the number of contributors across all the integrations in your Snyk account. Contributing developers are only counted once, even if they have contributed to multiple integrations or multiple repositories.
 * **Breakdown by integration**: the number of contributors, Organizations, and repos in that integration.
 
-Each contributor is **counted by** the **author** email field, which is set within the local Git configuration in the developer’s machine.
+Each contributor is counted by the author email field, which is set within the local Git configuration in the developer’s machine.
