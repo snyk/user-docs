@@ -93,6 +93,7 @@
       * [Prerequisites for Universal Broker](enterprise-setup/snyk-broker/universal-broker/prerequisites-for-universal-broker.md)
       * [Basic steps to install and configure Universal Broker](enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker.md)
       * [Preparing for creating Universal Broker deployments](enterprise-setup/snyk-broker/universal-broker/preparing-for-creating-universal-broker-deployments.md)
+      * [Setting up and integrating your Universal Broker connections](enterprise-setup/snyk-broker/universal-broker/setting-up-and-integrating-your-universal-broker-connections.md)
       * [Set up a GitHub connection using the API](enterprise-setup/snyk-broker/universal-broker/set-up-a-github-connection-using-the-api.md)
       * [Restart your Broker with the required environment variable and connect](enterprise-setup/snyk-broker/universal-broker/restart-your-broker-with-the-required-environment-variable-and-connect.md)
       * [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/universal-broker/snyk-broker-apprisk.md)
