@@ -46,8 +46,8 @@ Be sure to set your environment variables to make usage easier, including when y
 
 If the Universal Broker has already been installed, set the Install ID as an environment variable for easier usage. Use the following commands:
 
-`- export INSTALL_ID=zzzz (Linux/Mac)`
+`- export SNYK INSTALL_ID=zzzz (Linux/Mac)`
 
-`- set INSTALL_ID=zzzz (Windows)`
+`- set SNYK INSTALL_ID=zzzz (Windows)`
 
 \

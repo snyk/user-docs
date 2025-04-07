@@ -1,8 +1,10 @@
-# Restart your Broker with the required environment variable and connect
+# Restart your Broker with the required environment variable and connect using the API
 
 ## Restart your Broker with the required environment variable <a href="#restart-your-broker-with-required-environment-variable" id="restart-your-broker-with-required-environment-variable"></a>
 
-Use `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` for regional Snyk instances.
+If you change an environment variable, you must restart your Broker.
+
+You must use `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` for regional Snyk instances. For details, see [Broker URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
 
 | <pre><code>docker run --restart=always \
     -p 8000:8000 \
