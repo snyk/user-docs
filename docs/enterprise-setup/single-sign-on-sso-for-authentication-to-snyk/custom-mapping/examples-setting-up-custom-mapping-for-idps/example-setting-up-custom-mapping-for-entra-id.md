@@ -53,6 +53,10 @@ The **steps** in **configuring App role**s follow.
     **Source**: Attribute\
     **Source attribute**: user.assignedroles
 
+{% hint style="warning" %}
+Ensure you add the claim correctly. If you do not add it or you do it incorrectly, for example, by adding a typo, it can lead to a full mapping failure, which can lock users out of their accounts.&#x20;
+{% endhint %}
+
 <figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-10 at 2.55.05 PM.png" alt="Custom claim"><figcaption><p>Custom claim</p></figcaption></figure>
 
 When you have completed these steps, reach out to your Snyk point of contact to have the configuration completed.
