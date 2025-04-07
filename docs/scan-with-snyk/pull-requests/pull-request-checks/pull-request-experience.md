@@ -10,7 +10,7 @@ The following features are part of the Pull Request Experience:
 ## Prerequisites for the Snyk Pull Request Experience
 
 * Snyk PR Checks must be enabled. For more information, see [Configure Pull Request Checks](configure-pull-request-checks.md).
-* For the GitHub integration, a specific GitHub account needs to be set to open fix and upgrade PRs. The Personal Access Token (PAT) configured in this way is required by the Pull Request Experience to provide a consistent comment experience. See [Opening fix and upgrade pull requests from a fixed GitHub account](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md) for more information.
+* For the GitHub integration, a fixed GitHub account needs to be set to provide a consistent consistent comment experience. See [Opening fix and upgrade pull requests from a fixed GitHub account](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md) for more information.
 * For inline comments, the **Code analysis PR checks** setting needs to be enabled at the [integration level](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience#configure-pull-request-experience-at-the-integration-level). In the Snyk Web UI, under **Settings** > **Integrations** > **Edit settings**,  verify that the option is enabled under **Pull request status checks** > **Code analysis**. If "Code analysis" is not visible, please reach out to your Snyk account team to enable Snyk Code for your account. If it is already enabled, check under **Settings** > **Snyk Code** to ensure it is turned on.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-11-27 at 14.14.35.png" alt=""><figcaption><p>Code analysis feature for Pull Request status checks</p></figcaption></figure>
@@ -93,54 +93,33 @@ If a finding is a false positive, the comment can be manually resolved in the SC
 
 #### Issue Summary Comment
 
-When a new commit is pushed to the PR, the existing summary comment is updated with the Snyk results for that commit i.e. the summary with the new count of findings. No additional comment is posted. This provides a clear overview of potential vulnerabilities without overwhelming developers with excessive notifications.
+When a new commit is pushed to the pull request, the existing summary comment is updated with the latest Snyk scan results for that commit. This means the issues count is refreshed to reflect the most recent analysis. No new comments are added, ensuring developers get a concise view of potential vulnerabilities without being flooded with notifications.
 
 #### Inline Comments
 
-For each commit, a review is created if there are any new findings. Each finding is added as an inline comment. If a finding from a previous commit is no longer present in the new commit, its corresponding inline comment is marked as resolved. Findings that continue to exist remain unchanged as inline comments.
+For every pushed commit, a review is created if Snyk Code PR Check detects new issues. Each issue is added as an inline comment. If an issue from a previous commit is fixed in the new commit, its comment is marked as resolved. Unresolved issues remain as inline comments.
 
-### Why can’t I see some findings as comments?
+### Why are PR comments not appearing in my repository?
 
-Inline comment support varies depending on the SCM platform you are using. The availability of comments depends on where the finding is located in relation to the code changes in your pull request:
+To ensure your repository receives PR comments, please review the [prerequisites section](#prerequisites-for-the-snyk-pull-request-experience) for the Snyk Pull Request Experience. Make sure all required conditions are met and properly fulfilled.
 
-- **GitHub & Bitbucket**
-   - ✅ Supported **inside the diff**
-   - ✅ Supported **outside the diff but within modified files**
-   - ❌ _Not supported outside the diff and modified files_
+### Why are inline comments not appearing in my repository?
 
-- **GitLab & Azure Repos**
-   - ❌ _Inline comments are not supported_
+Inline comments are available only for issues detected by Snyk Code PR Checks. To ensure that issues appear as inline comments, verify the following requirements:
 
-If you don't see certain findings as comments, it may be due to SCM limitations on where inline comments can appear.
-
-### Why is my repository not receiving any PR comments?
-
-- If your repository is not receiving PR comments, ensure that everything is configured correctly as per the documentation.
-
-- For the **GitHub integration**, please ensure that the GitHub account and **Personal Access Token (PAT)** for opening fix and upgrade PRs is configured. Check [this](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md) guide for more details.
-
-<figure><img src="../../../.gitbook/assets/set_pat_fix_upgrade_prs.png" alt=""><figcaption><p>Configuration details to set the PAT for fix and upgrade PRs</p></figcaption></figure>
-
-- Ensure PR checks are working, if not, check [how to troubleshoot PR checks](../pull-request-checks/troubleshoot-pr-checks.md).
-
-### Why is my repository not receiving any SAST inline comments?
-
-If your repository is not receiving SAST inline comments, ensure the following settings are correctly configured:
-
-1. Make sure **Snyk Code** is enabled for your organization.
-
+1. **Snyk Code** is enabled for your organization.
 <figure><img src="../../../.gitbook/assets/enable_snyk_code.png" alt=""><figcaption><p>Configuration details to enable Snyk Code</p></figcaption></figure>
-
-2. Navigate to the integration settings and enable **Code Analysis** in the **Pull Request Checks** section.
-
+2. **Code Analysis** under the **Pull request status checks** section is enabled for your integration.
 <figure><img src="../../../.gitbook/assets/enable_code_analysis.png" alt=""><figcaption><p>Configuration details to enable Code Analysis</p></figcaption></figure>
-
-3. In the **Pull Request Experience** section, turn on **Inline Comments** to ensure SAST findings appear directly in the code review.
-
+3. **Inline Comments** under In the **Pull Request Experience** section is enabled for you integration.
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-11-27 at 11.44.50.png" alt=""><figcaption><p>Configuration details to enable Inline Comments</p></figcaption></figure>
 
-⚠️ If you are using **Snyk Local Code Engine**, inline comments are **not** available for Code Analysis using this engine.
+⚠️ **Note**: Inline comments are not available if you are using the **Snyk Local Code Engine**.
+
+### Why are some findings not appearing as inline comments?
+
+Inline comments are only available for issues detected by Snyk Code PR Checks. Their behavior may vary depending on the SCM platform. On most platforms, an inline comment is added for each issue found. However, on GitLab, inline comments are only added for issues found within the files that were modified in the pull request.
 
 ### Is Broker supported?
 
-Yes, brokered integrations are supported for both **Issue Summary Comment** and **Inline Comments**. Both Legacy and Universal Broker are supported. Note: The broker's version 4.194 and above are supported. 
+Yes. Brokered integrations are supported for both **Issue Summary Comment** and **Inline Comments**, with compatibility for both Legacy and Universal Broker. Note that broker version 4.194 or higher is required.
