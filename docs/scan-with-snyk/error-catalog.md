@@ -1967,6 +1967,15 @@ This often happens due to the large size of some of the Python dependencies and 
 **Help Links:**
 - [https://docs.snyk.io/supported-languages-package-managers-and-frameworks/python/git-repositories-and-python#pip-and-git-repositories](https://docs.snyk.io/supported-languages-package-managers-and-frameworks/python/git-repositories-and-python#pip-and-git-repositories)
 
+### [SNYK-OS-RUBY-0001](#snyk-os-ruby-0001)
+
+#### Cyclic dependency detected in lockfile
+
+Cyclic dependency detected in lockfile.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
 ---
 # Builds
 ### [SNYK-OS-8001](#snyk-os-8001)
@@ -2779,4 +2788,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-04-03T12:34:29.010Z
+--- Generated at 2025-04-07T10:13:45.390Z
