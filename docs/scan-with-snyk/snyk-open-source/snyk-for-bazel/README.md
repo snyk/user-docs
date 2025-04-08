@@ -1,8 +1,8 @@
-# Bazel - a build and test tool
+# Snyk for Bazel
 
 {% hint style="info" %}
 **Feature availability**\
-Snyk for Bazel is a build and test tool supported by Snyk Open Source. The instructions in this documentation apply to Bazel v 7 only.
+Snyk for Bazel provides support for using the [Bazel build and test tool](https://docs.bazel.build/versions/master/bazel-overview.html) with Snyk Open Source. The instructions in this documentation apply to Bazel v 7 only.
 {% endhint %}
 
 ## Applicability
@@ -20,14 +20,6 @@ You must often manually specify all dependencies (package name, location, and ve
 Bazel has limited native integration with package registries such as npmjs.org or Maven Central. Some Bazel rules can be added to help with installing dependencies from external registries, for example, [from Maven](https://docs.bazel.build/versions/master/external.html#maven-artifacts-and-repositories).
 
 Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover the dependencies from a Project. For information about testing and monitoring Bazel Projects using Snyk, see the page [Dep Graph API](dep-graph-api.md).
-
-## Frameworks and libraries
-
-The are no available frameworks and libraries listed for Snyk for Bazel.
-
-## Features
-
-There are no available features listed for Snyk for Bazel.
 
 ## Dep Graph API
 

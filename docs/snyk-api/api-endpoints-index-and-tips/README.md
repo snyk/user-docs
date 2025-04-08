@@ -465,7 +465,7 @@ Additional information: [Reachability](../../manage-risk/prioritize-issues-for-f
 
 ### [Monitor Dep Graph](../reference/monitor-v1.md)
 
-**More information:** [Dep Graph API (Bazel)](../../scan-with-snyk/snyk-open-source/bazel/#dep-graph-api)
+**More information:** [Dep Graph API (Bazel)](../../scan-with-snyk/snyk-open-source/snyk-for-bazel/#dep-graph-api)
 
 ## Organizations (v1)
 
@@ -868,7 +868,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ### [Test Dep Graph](../reference/test-v1.md#test-dep-graph)
 
-**More information:** [Dep Graph API](../../scan-with-snyk/snyk-open-source/bazel/dep-graph-api.md) (Bazel);\
+**More information:** [Dep Graph API](../../scan-with-snyk/snyk-open-source/snyk-for-bazel/dep-graph-api.md) (Bazel);\
 [Unmanaged JavaScript](../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript) (Guidance for JavaScript and Node.js);\
 [Start scanning](../../scan-with-snyk/start-scanning.md)
 
