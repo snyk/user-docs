@@ -58,8 +58,8 @@ Do you want to create a new Deployment? (Y/N)
 ```
 
 Snyk recommends that you set the INSTALL\_ID as an environment variable now, to make the tool easier to use.:\
-`- export SNYK_INSTALL_ID=zzzz (Linux/Mac)`\
-`- set SNYK_INSTALL_ID=zzzz(Windows)`
+`- export INSTALL_ID=zzzz (Linux/Mac)`\
+`- set INSTALL_ID=zzzz(Windows)`
 
 ## Create your first deployment
 
@@ -129,7 +129,7 @@ You can use the following workflow to display details about the connection.
 
 * If you are prompted about whether the Broker app iis installed, enter Y and then paste the install ID you saved previously.
 
-Exporting the SNYK\_INSTALL\_ID avoids this optional step in your terminal session in the future. The deployment details follow.
+Exporting the INSTALL\_ID avoids this optional step in your terminal session in the future. The deployment details follow.
 
 ```
 Now using Deployment <name>.
