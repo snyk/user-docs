@@ -29,5 +29,4 @@ The required filesystem access may vary by product.
 * learn.snyk.io:443 (to be able to display Snyk Learn links in issue details)
 * static.snyk.io:443 (depending on features used, such as downloading the CLI)
 * snyk.io:443 (depending on features used)
-* \*_.sentry.io:443 (error reporting)_
-* \*_.amplitude.com:443 (analytics)_
+* \*.sentry.io:443 (error reporting)
