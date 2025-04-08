@@ -1,6 +1,10 @@
 # Authentication for API
 
+{% hint style="info" %}
+**Feature Availability**
+
 To use the Snyk API, you must be an Enterprise plan customer and have a token from Snyk.
+{% endhint %}
 
 Enterprise users have [access to a personal token under their profile](./#how-to-obtain-your-personal-token) and to service account tokens. The personal API token is associated with your Snyk Account and not with a specific Organization. Service accounts are associated with an Organization or a Group. For more information, see [Service accounts](../../../enterprise-setup/service-accounts/).
 
@@ -16,13 +20,13 @@ For additional information, see [Snyk API token permissions users can control](s
 
 ## How to obtain your personal token
 
-You can find your personal API token in your personal [General Account Settings](https://app.snyk.io/account) after you register with Snyk and log in. In the **key** field, **Click to show**. Then, highlight and copy the API key.
+You can find your personal API token in your personal [personal account settings](https://app.snyk.io/account) after you register with Snyk and log in. In the **key** field, **Click to show**. Then highlight and copy the API key.
 
 If you want a new API token, select **Revoke & Regenerate.** This will make the previous API token invalid. For details, see [Revoke and regenerate a Snyk API token](revoke-and-regenerate-a-snyk-api-token.md).
 
-## How to use a Snyk API token
+## Authenticating with a personal API token
 
-When using the API directly, provide the API token in an `Authorization` header, as in the following example request, replacing `API_TOKEN` with your token
+When using the API directly, provide the API token in an `Authorization: token` header, as in the following example request, replacing `API_TOKEN` with your token
 
 ```bash
 curl --request GET \
@@ -31,20 +35,16 @@ curl --request GET \
 --header "Authorization: token API_TOKEN"
 ```
 
-If you are using the API through [Snyk Apps](../../using-specific-snyk-apis/snyk-apps-apis/), provide the `access_token` in an `Authorization` header preceded by `bearer` as follows:
+## Authenticating with a Snyk App
 
+If you are using the API through [Snyk Apps](../../using-specific-snyk-apis/snyk-apps-apis/), provide the `access_token` in an `Authorization: bearer` header as follows:
+
+```bash
+curl --request GET \
+--url "https://api.snyk.io/rest/self?version=2024-06-10" \
+--header "Content-Type: application/vnd.api+json" \
+--header "Authorization: bearer API_TOKEN"
 ```
-Authorization: bearer ACCESS_TOKEN
-```
 
-Otherwise, a `401 Unauthorized` response will be returned:
-
-```http
-HTTP/1.1 401 Unauthorized
-
-{
-    "status": "401",
-    "code": "Unauthorized"
-}
-```
+Otherwise, a `401 Unauthorized` error will be returned.
 
