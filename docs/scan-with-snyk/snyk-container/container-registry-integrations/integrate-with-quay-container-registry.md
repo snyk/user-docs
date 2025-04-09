@@ -56,8 +56,6 @@ Snyk tests and monitors your Quay container images by evaluating the tags in you
 
 Quay imports are designated with a unique icon. You can filter to view only Quay Projects.
 
-<figure><img src="../../../.gitbook/assets/mceclip1-11-.png" alt="Quay Project in Projects listing"><figcaption><p>Quay Project in Projects listing</p></figcaption></figure>
-
 {% hint style="info" %}
 For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}
