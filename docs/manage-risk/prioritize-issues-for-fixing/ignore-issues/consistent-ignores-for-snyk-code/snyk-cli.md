@@ -1,0 +1,61 @@
+# Snyk CLI
+
+{% hint style="info" %}
+**Release status**
+
+Snyk Code Consistent Ignores is in Early Access and available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
+
+To make sure Snyk Code Consistent Ignores Early Access meets your needs and requirements, review [Known limitations](known-limitations.md) and [FAQ](consistent-ignores-for-snyk-code-faqs.md) sections.
+{% endhint %}
+
+Ignores are taken into account in the Snyk CLI when `snyk code test` is run.
+
+{% hint style="danger" %}
+The Snyk Code CLI Upload beta feature (`snyk code test --report`) will not show findings ignores at the start of the Early Access program.
+{% endhint %}
+
+## **Minimum version required**
+
+You must have at least Snyk CLI v1.1295.3 installed for Snyk Code Consistent Ignores. See [Install or update the Snyk CLI](../../../../snyk-cli/install-or-update-the-snyk-cli/).
+
+## **Set up the Organization**
+
+To take ignores into account, specify the Organization where the ignores reside.&#x20;
+
+[Group-level policies also cascade down to all Organizations](broken-reference). See [How to select the Organization to use in the CLI](../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
+
+## Snyk CLI default ignore behavior
+
+The CLI display output hides ignored results by default when you run `snyk code test`. It displays only unignored results and a summary table with the total number of issues (open and ignored).
+
+<figure><img src="../../../../.gitbook/assets/snyk-cli-default-behaviour.png" alt=""><figcaption><p>Snyk CLI default ignore behavior</p></figcaption></figure>
+
+## View ignores in Snyk CLI
+
+After running `snyk code test`, the CLI will display a hint about using the `--include-ignores` parameter to show ignored results.
+
+Running `snyk code test --include-ignores` will display ignored results with their metadata below the open results.
+
+<figure><img src="../../../../.gitbook/assets/display-ignores-snyk-cli.png" alt=""><figcaption><p>Ignores in Snyk CLI</p></figcaption></figure>
+
+## View JSON output
+
+You can find the ignore metadata in the suppressions module of the SARIF output. Run `snyk code test --json` or `snyk code test --sarif` to view this output.
+
+## Access the finding identifier in JSON and SARIF output
+
+The finding identifier is included in the JSON and SARIF output of Snyk CLI. To view it, run `snyk code test --json` and navigate to `runs.results[n].fingerprints.snyk/assets/finding/v1` in the JSON output. See How Snyk Code identifies and tracks issues.
+
+You can use this identifier to [create new ignores using API calls](broken-reference).&#x20;
+
+## Ignores in CI/CD pipelines
+
+As ignores are taken into account in Snyk CLI, the same applies when Snyk CLI is integrated into CI/CD pipelines. For example, if a pipeline uses the command `snyk code test –severity-threshold=high` and there are no unignored high-severity results, Snyk CLI will exit with a `0` (success) status code and the build will succeed.
+
+The following example shows how Snyk Code detected high-severity hardcoded secrets, causing a GitHub Action workflow to fail with the exit code `1`.
+
+<figure><img src="../../../../.gitbook/assets/snyk-code-github-actions-exit-code-1.png" alt=""><figcaption><p>High severity hardcoded secreted detected causing GitHub Action workflow to fail with exit code 1</p></figcaption></figure>
+
+In a scenario with ignores applied through Group Policies, Snyk Code has successfully completed the scan, resulting in zero open issues, with the exit code `0`.
+
+<figure><img src="../../../../.gitbook/assets/snyk-code-github-action-exit-code-0.png" alt=""><figcaption><p>High severity issues ignored causing GitHub Action workflow to succeed with exit code 0</p></figcaption></figure>
