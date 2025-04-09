@@ -28,8 +28,6 @@ The view **Which images do you want to test?** opens, displaying all of the avai
 
 ACR files are indicated with a unique icon. You can filter to view only ACR Projects.
 
-![List of ACR projects](<../../../../.gitbook/assets/image (4) (3) (3) (3) (3) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (4).png>)
-
 ACR integration works like other Snyk integrations. To continue to monitor, fix and manage your Projects, see the relevant pages in the Snyk user documentation.
 
 {% hint style="info" %}
