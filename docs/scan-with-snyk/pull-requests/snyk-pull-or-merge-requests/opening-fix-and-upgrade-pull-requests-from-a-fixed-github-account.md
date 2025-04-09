@@ -9,9 +9,8 @@ Other operations not performed by the UI, such as daily and weekly tests, are st
 To use this feature:
 
 1. In Snyk Web UI, navigate to **Settings** > **Integrations** > **Source control** > **GitHub**, and click **Edit Settings**.
-2. Enable the toggle button under the **Open fix and upgrade pull requests from a fixed GitHub account** setting.
-3. Follow the in-page instructions for creating a personal access token in GitHub.
-4. Provide the newly generated token to Snyk so it can be used to perform operations in GitHub, such as opening Fix PRs.
+2. Under **Open Snyk automatic PRs from a fixed GitHub account**, enter your GitHub personal access token. You can generate this from your GitHub account. See [Managing your personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+3. Click **Save**.
 
 {% hint style="info" %}
 Ensure that the GitHub account for which the token is provided has write permissions or above to the repos you want to monitor with Snyk.
