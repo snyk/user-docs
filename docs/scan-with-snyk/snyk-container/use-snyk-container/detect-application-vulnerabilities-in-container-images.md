@@ -23,7 +23,7 @@ To enable the application vulnerability scan from container registries:
 1. Navigate to **Integrations**, and then to your container registry integration settings.
 2. Enable **Detect application vulnerabilities** and save the changes.
 
-<figure><img src="../../../.gitbook/assets/integration_settings_enable_detect_app_vulns.png" alt="Toggle Enable "><figcaption><p>Enable Detect application vulnerabilties</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/integration_settings_enable_detect_app_vulns.png" alt="Toggle Enable"><figcaption><p>Enable Detect application vulnerabilties</p></figcaption></figure>
 
 When you are scanning an image using a container registry or Kubernetes integration, the scan also uses the `--app-vulns` flag by default. You can opt out of the flag in the container registry only. To do this, disable the **Detect application vulnerabilities** feature.
 
@@ -43,7 +43,7 @@ If you want to opt out of application vulnerability scanning, you can specify th
 
 ### Java applications
 
-Snyk Container CLI supports scanning Java applications embedded in container images as JARs or uber -jars. In the case of uber-jars or shaded jars, Snyk uses the `pom.properties` manifest file to resolve package versions and dependencies. The presence of the `pom.properties` file in a JAR file depends on how the JAR was built and what tools and configurations were used during the build process.  Maven and Maven Shade Plugin built JARs include `pom.properties` manifest file by default.&#x20;
+Snyk Container CLI supports scanning Java applications embedded in container images as JARs or uber -jars. In the case of uber-jars or shaded jars, Snyk uses the `pom.properties` manifest file to resolve package versions and dependencies. The presence of the `pom.properties` file in a JAR file depends on how the JAR was built and what tools and configurations were used during the build process. Maven and Maven Shade Plugin built JARs include `pom.properties` manifest file by default.
 
 ### Nested jars depth option
 
@@ -53,7 +53,7 @@ To opt out of any scans you feel are unnecessary, use `--nested-jar-depth=0` .
 
 ### Maven packages suffixed with a version of @unknown
 
-Snyk Container CLI could report Maven packages suffixed with a version of @unknown when `pom.properties` manifest file is not included in the scanned JARs. For details of other reasons why the package version is reported as @unknown, see  [Why-does-my-Maven-package-show-Unknown-through-the-SCM](https://support.snyk.io/s/article/Why-does-my-Maven-package-show-unknown).
+Snyk Container CLI could report Maven packages suffixed with a version of @unknown when `pom.properties` manifest file is not included in the scanned JARs. For details of other reasons why the package version is reported as @unknown, see [Why-does-my-Maven-package-show-Unknown-through-the-SCM](https://support.snyk.io/s/article/Why-does-my-Maven-package-show-unknown).
 
 ## View application vulnerabilities and licensing issues
 
@@ -66,8 +66,6 @@ When an image is imported to Snyk, it appears under its registry record in the *
 
 With this feature enabled, you can also see nested manifest files detected in the image and their vulnerabilities and licensing issues.
 
-<figure><img src="../../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (31).png" alt="Images listed in Projects view"><figcaption><p>Images listed in Projects view</p></figcaption></figure>
-
 ## Set up automated scanning
 
 Depending on your Project settings, Snyk scans the image regularly. Based on your configuration, Snyk updates you by email or Slack whenever new vulnerabilities are identified in both the operating system and application dependencies.
@@ -78,7 +76,7 @@ You can set the scan frequency for each Project. The default is daily testing. T
 
 ## Supported container registries
 
-The following container registries are supported:&#x20;
+The following container registries are supported:
 
 * Docker Hub
 * GCR
