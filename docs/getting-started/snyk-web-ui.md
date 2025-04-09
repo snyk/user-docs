@@ -28,7 +28,7 @@ Navigate to the [Asset Dashboard](../manage-issues/reporting/available-snyk-repo
 
 You can use the [Inventory](../manage-assets/) page to organize your repository assets, enabling you to visualize all repository assets from your SCM tools, track Snyk product control coverage, and prioritize coverage mitigation based on business impact.
 
-Each line in the inventory represents either a repository asset or a scanned artifact from Snyk that is likely a repository but lacks some identifying information. Scanned artifacts are not supported through Policies.
+The Overview tab will provide quick insights into the discovered repositories. Scanned artifacts are not supported through Policies.
 
 ### Manage and customize your policies
 

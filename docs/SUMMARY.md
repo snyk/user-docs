@@ -448,7 +448,7 @@
     * [Vulcan Integration](integrate-with-snyk/vulnerability-management-tools/vulcan-integration.md)
     * [Wabbi Integration](integrate-with-snyk/vulnerability-management-tools/wabbi-integration.md)
 * [Manage assets](manage-assets/README.md)
-  * [Assets inventory layouts](manage-assets/assets-inventory-layouts.md)
+  * [Assets inventory tabs](manage-assets/assets-inventory-layouts.md)
   * [Assets inventory components](manage-assets/assets-inventory-components.md)
   * [Assets inventory features](manage-assets/assets-inventory-features.md)
 * [Scan with Snyk](scan-with-snyk/README.md)

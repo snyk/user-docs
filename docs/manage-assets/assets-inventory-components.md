@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Release status** \
-The **Related Projects** tab from the assets view, as well as the **Organizations** column and filter are in Early Access and available for Snyk AppRisk users with the Snyk Enterprise plan.
+The **Related Assets** tab available when you click an asset, as well as the **Organizations** column and filter are in Early Access and available for Snyk AppRisk users with the Snyk Enterprise plan.
 {% endhint %}
 
 Each inventory layout is presented in a table format, detailing the available key attributes:
@@ -81,7 +81,7 @@ The asset information is divided into the following tabs:
 After you apply the filters, the assets list will only display the assets that directly match the filter conditions, and, if available, a list of children assets related to the selected one is displayed, with the information shown in a table format, with a focus on the following topics: Asset (name), Issues, Controls, Class.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (666).png" alt=""><figcaption><p>Asset card - Assets Summary view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (723).png" alt=""><figcaption><p>Asset card - Assets Summary view</p></figcaption></figure>
 
 You can see the details of a related asset by clicking on one of them. Usually, these are Package assets. When looking at Related Assets, you can notice a link to the parent repository at the top. If you click on the parent asset link, you will revert to the initial view of the parent asset.
 

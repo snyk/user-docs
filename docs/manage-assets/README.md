@@ -2,22 +2,23 @@
 
 Snyk defines an asset as an identifiable entity that is part of an application and relevant to security and developers. Snyk is generally focused on the development stages of application software, secures repository assets containing software package assets, and builds artifacts like container image assets.
 
-## Inventory overview
+## Inventory menu
 
 Use the **Inventory** to organize your repository assets, visualize SCM tool assets, track Snyk coverage, and prioritize mitigation based on business impact.
 
-The **Inventory** page in the Snyk Web UI is structured into multiple tabs, called Inventory layouts, and provides information about your assets.
+The **Inventory** page in the Snyk Web UI is structured into multiple tabs and provides information about your assets.
 
-Here is a list of all the available inventory layouts:
+Here is a list of all the available inventory tabs:
 
+* **Overview:** Provides quick insights into discovered repositories, enabling AppSec teams to effectively operationalize their program using Snyk.&#x20;
 * **All Assets**: All the discovered assets, grouped by their type.&#x20;
 * **Asset Hierarchy**: All the assets in a hierarchical structure. The list of assets is sorted by issue counts, and where applicable, the package assets are listed underneath the repositories where they are located. The Asset hierarchy is visible only when there are no filters applied.
 * **Teams**: SCM repository assets grouped by teams. Only SCM organizations with teams and repositories assigned to a team appear on this layout.
 * **Technology**: SCM repository assets grouped by technology, as detected and tagged by Snyk Essentials.
 
-Each inventory layout may include different counts of assets and scanned artifacts, depending on the grouping context. Otherwise, all columns and data manipulation features are the same on each inventory layout.
+Each inventory tab may include different counts of assets and scanned artifacts, depending on the grouping context. Otherwise, all columns and data manipulation features are the same on each inventory layout.
 
-The following video presents an overview of the Inventory view from the Snyk Web UI.
+The following video summarizes the main features of the Inventory view from the Snyk Web UI.
 
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1737657015/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-4a_-_v1_-_Inventory.mp4" %}
 Reviewing asset inventory
