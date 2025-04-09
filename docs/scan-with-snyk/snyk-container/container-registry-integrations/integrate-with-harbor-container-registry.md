@@ -31,8 +31,6 @@ If you are using a self-hosted Harbor registry, contact Snyk to provide you with
 To set up the integration, the Harbor user should be an admin user. The integration uses /v2/\_catalog endpoint for listing repositories.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/mceclip1-8-.png" alt="Harbor Account credentials with Broker token"><figcaption><p>Harbor Account credentials with Broker token</p></figcaption></figure>
-
 Snyk tests the connection values, and the page reloads, now displaying Harbor integration information. The **Add your Harbor images to Snyk** button becomes available. If the connection to Harbor fails, a notification appears under the **Connected to Harbor** section.
 
 Once the connection is successful, you can use Snyk to scan your images from Harbor.
