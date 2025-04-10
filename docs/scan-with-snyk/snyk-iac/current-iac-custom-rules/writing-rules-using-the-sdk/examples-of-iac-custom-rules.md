@@ -176,7 +176,7 @@ test_CUSTOM_RULE_2 {
 
 You can also rewrite the rule above by combining the `NOT` operator with the OR functionality.
 
-Update the example in a new rule `CUSTOM-RULE-3`, to deny all cases that fail **either** of the two conditions, to deny all `aws_redshift_cluster` resources that are missing either:
+Update the example in a new rule `CUSTOM-RULE-3`, to deny all cases that fail either of the two conditions, to deny all `aws_redshift_cluster` resources that are missing either:
 
 1. an “owner” tag , OR
 2. A “description” tag

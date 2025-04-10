@@ -1,6 +1,6 @@
 # Step 1: Download IAM role IaC template (API)
 
-Before you can create a Cloud Environment, you must download an Infrastructure as Code (IaC) template declaring a read-only **Identity and Access Management** (IAM) role that Snyk can assume to scan the configuration of resources in your Amazon Web Services (AWS) account.
+Before you can create a Cloud Environment, you must download an Infrastructure as Code (IaC) template declaring a read-only Identity and Access Management (IAM) role that Snyk can assume to scan the configuration of resources in your Amazon Web Services (AWS) account.
 
 You will use this IaC template to provision the role in [Step 2: Create the Snyk IAM role](step-2-create-the-snyk-iam-role-api.md).
 
@@ -10,7 +10,7 @@ You can choose the template format, either [Terraform HCL](https://www.terraform
 
 To retrieve the IaC template using  the [Snyk API endpoint Generate Clout Provider PermissionsI](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/permissions), you need the API token for an Organization-level [service account](../../../../../enterprise-setup/service-accounts/) with an Org Admin role.
 
-1. In the [Snyk Web UI](https://app.snyk.io), navigate to **Settings (cog icon) > General > Organization ID** and copy your Organization ID.
+1. In the [Snyk Web UI](https://app.snyk.io), navigate to **Settings** > **General** > **Organization ID** and copy your Organization ID.
 2. Send a request to the Snyk API in the follwoing format, replacing `INPUT-TYPE` with `tf` for Terraform or `cf` for CloudFormation:
 
 ```
@@ -76,7 +76,7 @@ Example response with CloudFormation template:
 
 The `data.attributes.data` field in the preceding output is an escaped JSON string containing the Terraform or CloudFormation template with the IAM role and policy.
 
-Before you can use the template to provision the resources, you need to **unescape** the JSON. This can be accomplished in the following ways:
+Before you can use the template to provision the resources, you need to unescape the JSON. This can be accomplished in the following ways:
 
 * [Use jq](step-1-download-iam-role-iac-template-api.md#use-jq)
 * [Transform the content manually](step-1-download-iam-role-iac-template-api.md#transform-the-content-manually)

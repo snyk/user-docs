@@ -8,7 +8,7 @@ You can choose the template format, either [Terraform HCL](https://www.terraform
 
 The steps follow to **download the IaC template**.
 
-1. In the [Snyk Web UI](https://app.snyk.io), navigate to **Integrations > Cloud platforms**.
+1. In the [Snyk Web UI](https://app.snyk.io), navigate to **Integrations** > **Cloud platforms**.
 2. Select **AWS**.
 3. In the **Add AWS Environment** modal, select the **Terraform** button to download a `snyk-permissions-aws.tf` file or **CloudFormation** to download a `snyk-permissions-aws.yml` file:
 

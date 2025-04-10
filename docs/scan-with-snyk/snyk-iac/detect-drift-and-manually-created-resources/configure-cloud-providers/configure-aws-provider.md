@@ -184,7 +184,7 @@ Deploy this CloudFormation template to create the limited permission role that y
 
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home?#/stacks/quickcreate?stackName=driftctl-stack\&templateURL=https://driftctl-cfn-templates.s3.eu-west-3.amazonaws.com/driftctl-role.yml)
 
-When the stack is deployed, attach the following policy to your IAM user. This allows the user to assume only the role specified. For more information about granting a user access to assume a role, see the [AWS Identity and Access Management User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_use\_permissions-to-switch.html).
+When the stack is deployed, attach the following policy to your IAM user. This allows the user to assume only the role specified. For more information about granting a user access to assume a role, see the [AWS Identity and Access Management User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_permissions-to-switch.html).
 
 ```
 {
@@ -199,7 +199,7 @@ When the stack is deployed, attach the following policy to your IAM user. This a
 }
 ```
 
-There is **no automatic way to update the CloudFormation template** from the Snyk side because you launched this template from your AWS account. Therefore you must update the template yourself to use the most recent Snyk role.
+There is no automatic way to update the CloudFormation template from the Snyk side because you launched this template from your AWS account. Therefore you must update the template yourself to use the most recent Snyk role.
 
 ### Update the CloudFormation template using the AWS console
 

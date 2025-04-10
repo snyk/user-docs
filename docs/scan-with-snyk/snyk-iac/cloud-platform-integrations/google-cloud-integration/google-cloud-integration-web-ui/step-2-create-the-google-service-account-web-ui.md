@@ -22,19 +22,19 @@ Additionally, Snyk has a mechanism in place to lock a service account to the Org
 
 Snyk scans the Google Cloud Project specified by the `project_id` [variable](https://www.terraform.io/language/values/variables) in the Terraform template. You must set the variable's value using one of the following methods:
 
-* **Set the `project_id` variable directly in the Terraform template.** On line 4 of the template, change the default value of the `project_id` variable to your Project ID:
+* Set the `project_id` variable directly in the Terraform template. On line 4 of the template, change the default value of the `project_id` variable to your Project ID:
 
 ```
 default = "your-project-id"
 ```
 
-* **Set the `project_id` variable when you apply the Terraform.** In the following section, [Apply  Terraform](step-2-create-the-google-service-account-web-ui.md#apply-terraform), you will apply Terraform to create the Google service account. At that time, you can use Terraform's [-var](https://www.terraform.io/language/values/variables#variables-on-the-command-line) option to set the `project_id` variable to your Project ID:
+* Set the `project_id` variable when you apply the Terraform. In the following section, [Apply  Terraform](step-2-create-the-google-service-account-web-ui.md#apply-terraform), you will apply Terraform to create the Google service account. At that time, you can use Terraform's [-var](https://www.terraform.io/language/values/variables#variables-on-the-command-line) option to set the `project_id` variable to your Project ID:
 
 ```
 terraform apply -var="project_id=your-project-id"
 ```
 
-* **Use the `GOOGLE_PROJECT` environment variable.** See Terraform's [documentation.](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference#full-reference)
+* Use the `GOOGLE_PROJECT` environment variable. See Terraform's [documentation.](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference#full-reference)
 
 ## Apply Terraform
 

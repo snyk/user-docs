@@ -5,7 +5,7 @@
 You have created the Google service account for Snyk. Now you can create and scan a Cloud Environment.
 {% endhint %}
 
-To send a request to the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/environments) to create and scan a Cloud Environment, you must provide the **Google service account's email address** and your **project ID** in the API request body.
+To send a request to the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/environments) to create and scan a Cloud Environment, you must provide the Google service account's email address and your project ID in the API request body.
 
 ## Send the Snyk API request
 
@@ -90,7 +90,7 @@ To check to see if your scan is finished, see [Check to see if the scan is finis
 To re-scan an environment, see [Scan a Cloud environment](../../../getting-started-with-cloud-scans/manage-cloud-environments/scan-a-cloud-environment.md).
 
 {% hint style="info" %}
-It can take Google 60 seconds or more to create your service account. If you try to create an environment immediately after you create a service account and you receive a **could not validate credentials error**, wait at least 60 seconds and try again.
+It can take Google 60 seconds or more to create your service account. If you try to create an environment immediately after you create a service account and you receive a "could not validate credentials error", wait at least 60 seconds and try again.
 {% endhint %}
 
 ## What's next?

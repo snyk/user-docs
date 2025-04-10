@@ -64,7 +64,7 @@ You can configure remote custom rules bundles on the Group level by navigating t
 
 Your remote bundle of custom rules is now configured and will be used when testing IaC files.
 
-You can **override remote bundle configurations for a Group using Snyk Settings**.
+You can override remote bundle configurations for a Group using Snyk Settings.
 
 By default, configuring a remote bundle for a Group applies the remote bundle to all the Organizations in the Group. Thus if the Group configurations are updated, these changes apply to all of its Organizations.
 
@@ -151,7 +151,7 @@ The API replies with the Group settings so you can confirm the changes:
   }
 ```
 
-You can **override remote bundle configurations using the Snyk API**.
+You can override remote bundle configurations using the Snyk API.
 
 Similarly to the Settings page, the endpoint [Update the Infrastructure as Code settings for a group](../../../../snyk-api/reference/iacsettings.md#groups-group_id-settings-iac) allows you to apply the remote bundle to all the Organizations in the Group. An Organization can override the configurations for a Group and define its own bundle and tag by using an API call.
 

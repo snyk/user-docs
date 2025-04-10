@@ -37,7 +37,7 @@ exclude:
 ```
 {% endcode %}
 
-The `.snyk` policy file also supports the negation of rules. This allows you to ignore everything except certain types. In this example, only S3 buckets will **not** be ignored:
+The `.snyk` policy file also supports the negation of rules. This allows you to ignore everything except certain types. In this example, only S3 buckets will not be ignored:
 
 {% code title=".snyk" %}
 ```yaml

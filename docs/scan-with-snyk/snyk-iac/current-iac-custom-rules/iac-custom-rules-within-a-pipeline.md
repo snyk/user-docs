@@ -12,7 +12,7 @@ This example shows how a security team can:
 
 Snyk uses the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository for the example; this repo contains all the custom rules written while [getting started with the SDK](writing-rules-using-the-sdk/).
 
-**Aims:** Configure our pipeline to:
+Aims: Configure our pipeline to:
 
 * Verify that new rules or changes to the existing rules do nor break existing functionality.
 * Publish the rules in `main` to an OCI registry.

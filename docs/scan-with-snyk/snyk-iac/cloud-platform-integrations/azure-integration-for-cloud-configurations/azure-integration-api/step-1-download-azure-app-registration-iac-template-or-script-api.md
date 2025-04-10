@@ -18,7 +18,7 @@ To retrieve the IaC template from the Snyk API, you need the API token for a Sny
 
 You also need the subscription and tenant IDs of the Azure subscription you are onboarding. You can find them using the method [described in the Azure documentation](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id).
 
-1. In the [Snyk Web UI](https://app.snyk.io/), navigate to **Settings (cog icon) > General > Organization ID** and copy your Organization ID.
+1. In the [Snyk Web UI](https://app.snyk.io/), navigate to **Settings** > **General** > **Organization ID** and copy your Organization ID.
 2. Send a request to the Snyk API in the following format, replacing `INPUT-TYPE` with `tf` for Terraform or `bash` for Bash:
 
 ```
@@ -90,7 +90,7 @@ Example response with Bash script:
 
 The `data.attributes.data` field in the preceding output is an escaped JSON string containing the Terraform template or Bash script with the Entra ID app registration, federated identity credential, and service principal.
 
-Before you can use the template to provision the resources, you need to **unescape** the JSON. This can be accomplished in the following ways:
+Before you can use the template to provision the resources, you need to unescape the JSON. This can be accomplished in the following ways:
 
 * [Use jq](step-1-download-azure-app-registration-iac-template-or-script-api.md#use-jq)
 * [Transform the content manually](step-1-download-azure-app-registration-iac-template-or-script-api.md#transform-the-content-manually)

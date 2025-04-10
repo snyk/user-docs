@@ -17,8 +17,8 @@ You can update a Snyk Cloud Environment using the following methods:
 
 To update an environment using the [Snyk Web UI](https://app.snyk.io):
 
-1. Navigate to your Organization **Settings (cog icon) > Cloud environments.**
-2. In the **Actions** column, select the `...` icon for the environment you want to update.
+1. Navigate to your Organization **Settings** > **Cloud environments.**
+2. In the **Actions** column, select the three dots for the environment you want to update.
 3.  Select **Update**.
 
     <figure><img src="../../../../.gitbook/assets/snyk-cloud-update-env-ui.png" alt="Select the ... icon to update an environment."><figcaption><p>Select the ... icon to update an environment.</p></figcaption></figure>

@@ -183,6 +183,6 @@ $ snyk-iac-rules build --output bundle-v1.0.0.tar.gz
 
 Possible exit codes and their meaning:
 
-**0**: success
+0: success
 
-**1**: failure, the custom rule might be invalid
+1: failure, the custom rule might be invalid

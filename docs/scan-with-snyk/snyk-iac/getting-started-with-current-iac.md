@@ -50,7 +50,7 @@ In your **Projects** listing, select the Project to open to display detailed inf
 
 <figure><img src="../../.gitbook/assets/snyk-iac-getting-started-list-of-projects.png" alt="A list of Snyk IaC Projects"><figcaption><p>List of Snyk Projects</p></figcaption></figure>
 
-Each Project detail page has a **snapshot** showing when the Project was last tested, the name of the user who imported the Project, and, on the **Issues** tab, the number of critical, high, medium, and low-severity issues found and issue cards for each scanned configuration file. You can also select the **Overview**, **History,** and **Settings** options. Choose **History** to see previous snapshots of the Project.
+Each Project detail page has a snapshot showing when the Project was last tested, the name of the user who imported the Project, and, on the **Issues** tab, the number of critical, high, medium, and low-severity issues found and issue cards for each scanned configuration file. You can also select the **Overview**, **History,** and **Settings** options. Choose **History** to see previous snapshots of the Project.
 
 <figure><img src="../../.gitbook/assets/image (2) (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
 
@@ -65,12 +65,12 @@ The information on the issue cards includes the following:
 * The severity level, for example, **H** for high, and the name of the issue, for example, **Non-encrypted S3 Bucket**
 * The **ID** of the security rule, for example, [SNYK-CC-TF-99](https://security.snyk.io/rules/cloud/SNYK-CC-TF-99).\
   Click the link to view more information on the [Snyk Security Rules](https://security.snyk.io/rules/cloud/).
-* A **snippet** of your code showing the exact area that is vulnerable
-* The exact **path** of the issue
+* A snippet of your code showing the exact area that is vulnerable
+* The exact path of the issue
 * More details, such as:
-  * brief **description** of the issue
-  * **impact** of the issue
-  * **remediation** advice to resolve the issue
+  * brief description of the issue
+  * impact of the issue
+  * remediation advice to resolve the issue
 
 Click **Full details** to see a preview of the full code:
 

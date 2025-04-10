@@ -1,6 +1,6 @@
 # View, add, and remove environments
 
-To view all Snyk environments in an Organization, navigate to your Organization **Settings (cog icon) > Cloud environments**.
+To view all Snyk environments in an Organization, navigate to your Organization **Settings** > **Cloud environments**.
 
 The cloud environments table displays the following information for each environment:
 
@@ -27,7 +27,7 @@ You can also add an environment using the Snyk API:
 
 To remove a cloud environment:
 
-1. In the **Actions** column, select the `...` icon for the environment you want to remove.
+1. In the **Actions** column, select the three dots for the environment you want to remove.
 2. Select **Remove**.
 3. In the confirmation modal, select **Yes, remove**.
 

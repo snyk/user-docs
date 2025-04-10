@@ -29,7 +29,7 @@ curl -X POST \
 }"
 </code></pre>
 
-Because `jq -r '.data[0].id` returns the ID of the **first** environment shown in the Snyk API [List environments](https://apidocs.snyk.io/#get-/orgs/-org_id-/cloud/environments) output, this technique is especially useful if your Organization has a single environment. You can also change the `0` to another number to scan a different environment; for example, `jq -r '.data[1].id` will return the ID of the **second** environment in the output.
+Because `jq -r '.data[0].id` returns the ID of the first environment shown in the Snyk API [List environments](https://apidocs.snyk.io/#get-/orgs/-org_id-/cloud/environments) output, this technique is especially useful if your Organization has a single environment. You can also change the `0` to another number to scan a different environment; for example, `jq -r '.data[1].id` will return the ID of the second environment in the output.
 
 ## Without `jq`
 

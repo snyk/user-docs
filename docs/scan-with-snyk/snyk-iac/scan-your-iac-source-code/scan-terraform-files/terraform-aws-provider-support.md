@@ -5,11 +5,11 @@ description: Support and limitations for the Terraform AWS provider.
 # Terraform AWS Provider support
 
 {% hint style="success" %}
-Version **4.0.0** of the **AWS Terraform Provider** introduced changes in how S3 services are defined. With v4.0, the definition of S3 services is now spread across several resource blocks within Terraform. If you defined an instance of an S3 bucket across multiple files, this update is a breaking change and may have negatively impacted your security results from Snyk IaC.
+Version 4.0.0 of the AWS Terraform Provider introduced changes in how S3 services are defined. With v4.0, the definition of S3 services is now spread across several resource blocks within Terraform. If you defined an instance of an S3 bucket across multiple files, this update is a breaking change and may have negatively impacted your security results from Snyk IaC.
 {% endhint %}
 
 {% hint style="info" %}
-From the Terraform documentation: _To help distribute the management of S3 bucket settings via independent resources, various arguments and attributes in the_ `aws_s3_bucket` _resource have become read-only. Configurations dependent on these arguments should be updated to use the corresponding_ `aws_s3_bucket_*` _resource._
+From the Terraform documentation: "To help distribute the management of S3 bucket settings via independent resources, various arguments and attributes in the `aws_s3_bucket` resource have become read-only. Configurations dependent on these arguments should be updated to use the corresponding `aws_s3_bucket_*` resource."
 {% endhint %}
 
 To migrate to Terraform v4.0.0, you must refactor and re-import your S3 service definitions. Depending on how you choose to do this, it may limit your coverage of security findings.
@@ -18,7 +18,7 @@ See the [Terraform V4 upgrade guide from Hashicorp](https://registry.terraform.i
 
 ## Example of Terraform AWS Provider support
 
-Consider the following example of defining an S3 bucket with an ACL using Terraform **v3.x.x** in a file named `s3.tf`
+Consider the following example of defining an S3 bucket with an ACL using Terraform v3.x.x in a file named `s3.tf`
 
 {% code title="s3.tf" %}
 ```hcl
@@ -31,7 +31,7 @@ resource "aws_s3_bucket" "example" {
 
 The definition of the S3 bucket is in one resource block. If you scanned this file using `snyk iac test s3.tf` you would get a security finding for the permissive ACL settings.
 
-With **v4.0.0** of the Provider, certain S3 bucket properties are now defined in their own resources. Continuing the previous example, the ACL property has moved to its own resource, so the refactored Terraform looks like this.
+With v4.0.0 of the Provider, certain S3 bucket properties are now defined in their own resources. Continuing the previous example, the ACL property has moved to its own resource, so the refactored Terraform looks like this.
 
 {% code title="s3.tf" %}
 ```hcl

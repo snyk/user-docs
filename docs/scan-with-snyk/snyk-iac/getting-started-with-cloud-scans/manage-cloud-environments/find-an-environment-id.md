@@ -11,8 +11,8 @@ To find the ID of an environment, you can use the following methods:
 
 To find an environment ID using the [Web UI](https://app.snyk.io/):
 
-1. Navigate to your Organization **Settings > Cloud environments**.
-2. In the **Actions** column, select the `...` icon for the desired environment.
+1. Navigate to your Organization **Settings** > **Cloud environments**.
+2. In the **Actions** column, select the three dots for the desired environment.
 3.  Select **Update**.
 
     <figure><img src="../../../../.gitbook/assets/snyk-cloud-update-env-ui.png" alt="Update an environment from the Cloud environments page in Settings"><figcaption><p>Update an environment from the Cloud environments page in Settings</p></figcaption></figure>

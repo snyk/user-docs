@@ -43,7 +43,7 @@ You can see the following details for the ignore by selecting **See details** in
 
 <img src="../../../../.gitbook/assets/snyk-cloud-ignore-details.png" alt="Ignore details display" data-size="original">
 
-After an issue is ignored, you can **unignore** it or **edit** the ignore.
+After an issue is ignored, you can unignore it or edit the ignore.
 
 ## Unignoring an issue
 

@@ -8,7 +8,7 @@ You will use this IaC template to provision the role in [Step 2: Create the Goog
 
 ## Download the IaC template
 
-1. In the [Snyk Web UI](https://app.snyk.io/), navigate to **Integrations > Cloud platforms**.
+1. In the [Snyk Web UI](https://app.snyk.io/), navigate to **Integrations** > **Cloud platforms**.
 2. Select **Google Cloud**.
 3. In the **Add Google Cloud Environment** modal, select the **Terraform** button to download a `snyk-permissions-google.tf` file:
 
@@ -17,5 +17,5 @@ You will use this IaC template to provision the role in [Step 2: Create the Goog
 You can now proceed to [Step 2: Create the Google service account.](step-2-create-the-google-service-account-web-ui.md)
 
 {% hint style="info" %}
-You can also add a cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Environments, Add a Cloud environment](../../../getting-started-with-cloud-scans/manage-cloud-environments/view-add-and-remove-environments.md).
+You can also add a cloud environment from **Settings** > **Cloud environments**. See [View Environments, Add a Cloud environment](../../../getting-started-with-cloud-scans/manage-cloud-environments/view-add-and-remove-environments.md).
 {% endhint %}

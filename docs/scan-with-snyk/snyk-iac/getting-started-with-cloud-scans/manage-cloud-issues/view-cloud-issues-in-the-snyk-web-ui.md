@@ -33,7 +33,7 @@ Each rule shows the following information:
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-grouped-by-rule-3.png" alt=""><figcaption><p>Issues grouped by rule</p></figcaption></figure>
 
-By default, when you expand a rule by selecting its **Expand row** (`>`) symbol, you see all the resources with an open issue associated with that rule. Each resource shows the following information:
+By default, when you expand a rule you see all the resources with an open issue associated with that rule. Each resource shows the following information:
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-grouped-by-rule-resource-4.png" alt=""><figcaption><p>A rule expanded to show resources</p></figcaption></figure>
 
@@ -67,7 +67,7 @@ Each resource shows the following information:
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-grouped-by-resource-3.png" alt=""><figcaption><p>Issues grouped by resource</p></figcaption></figure>
 
-By default, when you expand a resource by selecting its **Expand row** (`>`) symbol, you see all the rules with an open issue associated with that resource.
+By default, when you expand a resource you see all the rules with an open issue associated with that resource.
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-grouped-by-resource-rule-4.png" alt=""><figcaption><p>A resource expanded to show rules</p></figcaption></figure>
 
@@ -81,7 +81,7 @@ Each rule shows the following information:
 
 ## View issue details on issue summary panel
 
-To view an issue, select the **Expand row** (`>`) symbol on the left side of a row, then select a corresponding resource or rule. Snyk displays a panel with the cloud issue details.
+To view an issue, expand an issue then select a corresponding resource or rule. Snyk displays a panel with the cloud issue details.
 
 The cloud issue summary panel displays the **Overview** by default, which contains the following information:
 
@@ -117,11 +117,11 @@ Select the **Resource** tab to view the scanned resource's attributes:
 
 To filter which cloud issues are shown:
 
-1. Select the **Filter** drop-down menu. The name of the menu shows how many filters are selected, for example, **1 Filter**.
-2. Select the parameter you want to filter by, for example, **Severity**.
-3. Check the box for the values you want to show, for example, **High**.
+1. Select the **Filter** drop-down menu. The name of the menu shows how many filters are selected, for example, "1 Filter".
+2. Select the parameter you want to filter by, for example "Severity".
+3. Check the box for the values you want to show, for example "High".
 
-By default, the **Status** filter is set to include only **open** issues.
+By default, the **Status** filter is set to include only open issues.
 
 You can also filter issues by compliance control, resource type, environment name, and more.
 

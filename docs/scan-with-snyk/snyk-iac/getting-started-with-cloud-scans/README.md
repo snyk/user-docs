@@ -14,7 +14,7 @@ To start using cloud scans you must have the following:
 
 ## Import cloud environments
 
-Navigate to your **Organization** **Settings (cog icon) > Cloud environments**.
+Navigate to your **Organization** **Settings** > **Cloud environments**.
 
 To add a cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../cloud-platform-integrations/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../cloud-platform-integrations/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../cloud-platform-integrations/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment.&#x20;
 
@@ -27,10 +27,3 @@ You can also add an environment using the Snyk API:
 ## View cloud issues
 
 To view your cloud issues in the Snyk Web UI, navigate to the Organization, and on the menu, select **Cloud**. For more information, see [View cloud issues in the Snyk Web UI](manage-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md).
-
-
-
-
-
-
-
