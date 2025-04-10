@@ -824,7 +824,11 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ### [Get target by target ID](../reference/targets.md#orgs-org_id-targets-target_id)
 
+This endpoint retrieves a list of Snyk Targets, which is used if you want to delete Targets by target ID.
+
 ### [Delete target by target ID](../reference/targets.md#orgs-org_id-targets-target_id-1)
+
+This endpoint deletes the specified Targets and also deletes all the Projects in those Targets automatically.&#x20;
 
 ## Test (v1)
 
