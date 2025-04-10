@@ -40,7 +40,13 @@ HTTP/1.1 400 Bad Request
 
 ## Versioning
 
-The Snyk REST API has per-endpoint version contracts. For information about the differences in GA versions, see the [API Changelog](changelog.md). Each endpoint can have its own release and support lifecycle, independent of any other endpoint in the Snyk REST API. In its most explicit form, the endpoint version number includes a date and stability tree, for example:
+### Using versions dated on or after 2024-10-15
+
+The API Reference examples include `?version=text` as a placeholder, where `text` represents the required date-formatted version string. Snyk recommends using `2024-10-15` for the version number unless you are using an earlier version for a specific reason. You can use the current day's date; this will call the most recent version of the API. The format for the date is `YYYY-MM-DD`.
+
+### Using versions dated prior to 2024-10-15
+
+The following information applies to calling versions earlier than 2024-10-15. The Snyk REST API has per-endpoint version contracts. For information about the differences in GA versions, see the [API Changelog](changelog.md). Each endpoint can have its own release and support lifecycle, independent of any other endpoint in the Snyk REST API. In its most explicit form, the endpoint version number includes a date and stability tree, for example:
 
 ```
 2023-11-27~beta
