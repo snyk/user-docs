@@ -22,17 +22,17 @@ A robust security process secures each component where they are built and mainta
 
 ## Use Snyk in your workflow
 
-* **Secure your code**: use [Snyk Open Source](https://docs.snyk.io/scan-using-snyk/snyk-open-source) to fix vulnerabilities in your open source dependencies and [Snyk Code](https://docs.snyk.io/scan-using-snyk/snyk-code) to fix vulnerabilities in your source code.
-* **Secure your containers**: use [Snyk Container](https://docs.snyk.io/scan-using-snyk/snyk-container) to fix vulnerabilities in container images and Kubernetes applications.
-* **Secure your infrastructure**: use [Snyk Infrastructure as Code (IaC)](https://docs.snyk.io/scan-using-snyk/snyk-iac/scan-your-iac-source-code) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
+* **Secure your code**: use [Snyk Open Source](scan-with-snyk/snyk-open-source/) to fix vulnerabilities in your open source dependencies and [Snyk Code](scan-with-snyk/snyk-code/) to fix vulnerabilities in your source code.
+* **Secure your containers**: use [Snyk Container](scan-with-snyk/snyk-container/) to fix vulnerabilities in container images and Kubernetes applications.
+* **Secure your infrastructure**: use [Snyk Infrastructure as Code](scan-with-snyk/snyk-iac/) (IaC) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
 
 ## Choose how to run Snyk
 
 You can run Snyk in the following ways:
 
-* [**Web**](getting-started/snyk-web-ui.md): the Snyk Web UI ([app.snyk.io](https://app.snyk.io)) provides a browser-based experience with functions such as configuration settings, filtering and fixing discovered issues, and reports.
+* [Web](getting-started/snyk-web-ui.md): the Snyk Web UI ([app.snyk.io](https://app.snyk.io)) provides a browser-based experience with functions such as configuration settings, filtering and fixing discovered issues, and reports.
 * [**CLI**](snyk-cli/): the Snyk Command Line Interface enables you to run vulnerability scans on your local machine and integrate Snyk into your pipeline.
-* [**IDEs**](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/): the Snyk IDE integrations enable you to embed Snyk in your development environment.
+* [IDEs](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/): the Snyk IDE integrations enable you to embed Snyk in your development environment.
 * [**API**](snyk-api/): the Snyk API enables you to integrate with Snyk programmatically, tuning Snyk security automation to your specific workflows.
 
 ## What can Snyk integrate with?
@@ -45,7 +45,7 @@ For details, see [Integrate with Snyk](integrate-with-snyk/).
 
 Snyk has several pricing plans available, from free to Enterprise. See [Snyk Pricing Plans](https://snyk.io/plans/).
 
-Snyk offers a trial of the platform, but this has imposed feature limitations. See [Trial limitations](https://docs.snyk.io/implement-snyk/enterprise-implementation-guide/trial-limitations).
+Snyk offers a trial of the platform, but this has imposed feature limitations. See [Trial limitations](implement-snyk/enterprise-implementation-guide/trial-limitations.md).
 
 ## What happens to my data?
 
