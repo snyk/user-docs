@@ -6,17 +6,28 @@
 The Google Cloud Security Command Center integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access), and is available to all customers on a Snyk Enterprise plan.&#x20;
 {% endhint %}
 
-The Google Cloud Security Command Center (SCC) integration sends Snyk issues to SCC, enabling you to view and manage Snyk issues alongside cloud security findings from Google Cloud in a single pane of glass. Snyk issues are represented in SCC as code security findings. When Snyk issues are updated, corresponding SCC findings are automatically updated as well.
+The Google Cloud Security Command Center (SCC) integration sends Snyk issues to SCC, enabling you to view and manage Snyk issues alongside cloud security findings from Google Cloud in a single pane of glass. Snyk issues are represented in SCC as code security findings. When Snyk issues are updated, corresponding SCC findings are automatically updated as well. All details are available at the Organization level in the Google Cloud Security Command Center (SCC) integration.
 
 Use the following instructions to set up the Google Security Command Center integration:
 
 * Access the Google Cloud SCC Console using the Snyk for SCC marketplace listing to create a Finding Source
 * Set up the integration using either the Snyk Web UI (recommended) or the REST API.
 
+{% hint style="info" %}
+You must use MP to create project-level service accounts that enable organization-wide management of permissions and security findings. This process involves the following steps:
+
+* Third-party security providers must be activated at the organizational level.
+* After using MP, the Google SCC API must be enabled separately.
+* Copy IAM permissions from the project to the organization level in the Google Cloud Settings.
+
+Service accounts created with MP hide SCC-related IAM roles to prevent unauthorized modifications.
+{% endhint %}
+
 ## Prerequisites
 
 * **Snyk:** A Snyk user account with [permissions](https://docs.snyk.io/admin/user-roles/user-role-management) to edit and view Group integrations
 * **Google** **Cloud:** A Google Cloud organization with Security Command Center enabled. See the Google Cloud [Activate Security Command Center](https://cloud.google.com/security-command-center/docs/activate-scc-for-an-organization) page for more details on how to enable it.
+* **Google SCC API**: you must enable the SCC API.&#x20;
 
 ## Create the Finding Source using the Google Cloud SCC Console&#x20;
 
