@@ -13,7 +13,7 @@ Supported Git-based repository managers for Dockerfile fix PRs include:
 * GitHub Enterprise Server
 * Azure Repos
 
-For any Dockerfile Project created in Snyk, if the base image is a [Docker Official image](https://docs.docker.com/docker-hub/official\_images/), the results include a list of suitable base images that can be used instead of the existing, more vulnerable one. For more information, see [Analyze and fix container images](../use-snyk-container/analyze-and-fix-container-images.md).
+For any Dockerfile Project created in Snyk, if the base image is a [Docker Official image](https://docs.docker.com/docker-hub/official_images/), the results include a list of suitable base images that can be used instead of the existing, more vulnerable one. For more information, see [Analyze and fix container images](../use-snyk-container/analyze-and-fix-container-images.md).
 
 Snyk then automatically issues a fix pull request against your Dockerfile to upgrade to the latest minor version available.
 
@@ -23,13 +23,9 @@ Snyk opens an automatic fix PR when there is a change in the Dockerfile or when 
 
 The feature is available for all Snyk users. It is on by default for all users with free accounts and off by default for existing integrations of Snyk customers.
 
-To enable automatic update PRs, navigate to **Settings > Integrations** and select your connected source code manager. On the settings configuration page, under **Dockerfiles**, toggle **Enable automatic update PRs**.
+To enable automatic update PRs, navigate to **Settings** > **Integrations** and select your connected source code manager. On the settings configuration page, under **Dockerfiles**, toggle **Enable automatic update PRs**.
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/enable_automatic_PRs.png" alt="Enable auto-update PRs for base images"><figcaption><p>Enable automatic update PRs</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/enable_automatic_PRs.png" alt="Enable auto-update PRs for base images"><figcaption><p>Enable automatic update PRs</p></figcaption></figure></div>
 
 ## Open a fix PR manually
 

@@ -32,7 +32,7 @@ As a good practice for Kubernetes applications, use a unique namespace to isolat
 Ensure you remember the namespace `snyk-monitor`. You will use it when configuring other resources.
 {% endhint %}
 
-3\. Create a file named **dockercfg.json** and ensure it matches the following example:
+3\. Create a file named "dockercfg.json" and ensure it matches the following example:
 
 ```
 {
@@ -55,7 +55,7 @@ kubectl create secret generic snyk-monitor \
 
 #### Attach policies for worker nodes
 
-1. Attach the `NodeInstanceRole` policy. See [Using Amazon ECR Images with Amazon EKS](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR\_on\_EKS.html).
+1. Attach the `NodeInstanceRole` policy. See [Using Amazon ECR Images with Amazon EKS](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.html).
 2. Attach the `AmazonEC2ContainerRegistryReadOnly` policy to your EKS worker nodes.\
    The Snyk Controller is now able to pull private images when running on those worker nodes.
 

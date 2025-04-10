@@ -8,7 +8,7 @@ Set up a new service account key from your GCR account; see [Enable permissions 
 
 ## **Steps in configuring the GCR integration**
 
-1. Navigate to your Snyk Organization, and go to **Integrations>GCR**.
+1. Navigate to your Snyk Organization, and go to **Integrations** > **GCR**.
 2. From the GCR hostname, enter the [registry storage region](https://cloud.google.com/container-registry/docs/pushing-and-pulling) for the images you want to scan in the format region.gcr.io, for example, gcr.io or asia.gcr.io.
 3. Paste the entire contents of the JSON key file you created from Google into the JSON key file field in your Snyk account, as shown in the following screenshot.
 4. Click **Save**.

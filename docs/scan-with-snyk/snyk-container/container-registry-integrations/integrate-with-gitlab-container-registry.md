@@ -48,14 +48,14 @@ The steps follow for adding images from GitLab Container Registry to Snyk.
    The list of integrations already configured on your account opens.
 3. Select the **GitLab container registry** option or **Other** if **GitLab container registry** does not appear.
 4. The view titled **Which images do you want to test?** opens, displaying all available images for your connected registry grouped by each of your repositories.\
-   **Note**: GitLab Container Registry does not follow Docker v2 API. Therefore, it is not possible to list images in a repository, and you must manually specify the images you wish to scan.
+   Note that GitLab Container Registry does not follow Docker v2 API. Therefore, it is not possible to list images in a repository, and you must manually specify the images you wish to scan.
 5. Select single or multiple images to be imported to Snyk.\
    You can select by choosing a specific image or selecting an entire repository. You can also search by image name to find specific images to import.
 6. To finish, click **Add selected repositories** on the top right.\
    A status bar appears at the top of the page as the images are imported; you can continue working in the meantime.
 7. When the import ends:
    * You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
-   * An **import log** becomes available; you can reach it at the top of the Projects list.
+   * An import log becomes available; you can reach it at the top of the Projects list.
    * To enrich the data and get recommendations regarding your base image, under **Settings**, you can connect your Dockerfile to the image Project. For more information, see[ Adding your Dockerfile and testing your base image.](../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md)
 
 GitLab Container Registry imports are designated with a unique icon. You can filter the integration in the **Projects** view to see GitLab Container Registry Projects only.
