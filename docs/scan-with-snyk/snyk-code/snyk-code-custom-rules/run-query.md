@@ -22,7 +22,7 @@ Run queries against a repository from your Snyk Project list. The list contains 
 6.  Write your query in the **Code query** panel with [suggestive AI support](./#suggestive-ai-support).&#x20;
 
     <figure><img src="../../../.gitbook/assets/writing_query (2).gif" alt="Writing a query"><figcaption><p>Writing a query</p></figcaption></figure>
-7. **Run query**.
+7. Click **Run query**.
 8. [Analyze the query results](run-query.md#analyze-query-results).
 9. (Optional) [Save the custom rule you created](run-query.md#save-custom-rule).
 
@@ -49,5 +49,3 @@ You can run queries only on certain languages in the code snippet area. See the 
 ## Analyze query results
 
 When you run a query, the results show the matching parts of the tested code, highlighting which parts of the code are related to the query. Each match is shown when Snyk Code is testing a repository and can be triaged based on the finding.
-
-\

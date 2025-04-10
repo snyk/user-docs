@@ -126,7 +126,7 @@ The number value 123 can be matched by using the query `"123"`. Quotes are used 
 
 To make sure that the correct, fully-qualified names of elements are used, the search interface provides autocompletion of the values for program elements that exist in the given code snippet or the provided repository.
 
-#### **Predicate (**_**PRED**_**)**&#x20;
+#### **Predicate (PRED)**&#x20;
 
 A predicate matches program elements based on some predefined condition. The main advantage of predicates is that you can use them to leverage the existing Snyk Code knowledge base. For example, if you need to find all program locations where an HTTP server handles cookies, you can use the predefined predicate `PRED:SourceCookie`.&#x20;
 
@@ -193,4 +193,3 @@ As a result, the Snyk Code Query Language becomes a subset of Datalog, effective
 
 * Learn from an end-to-end example with the [Snyk Code Custom Rules course](https://learn.snyk.io/lesson/custom-rules-for-snyk-code/)
 * [Create custom rules](create-custom-rule.md)
-

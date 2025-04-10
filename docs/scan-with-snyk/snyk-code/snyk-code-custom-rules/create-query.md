@@ -6,7 +6,7 @@ Consider the following query examples and rules to use with Snyk Code custom rul
 
 ## Simple syntactical query
 
-Copy the following source code snippet in the snippet window and select **C#** as the language
+Copy the following source code snippet in the snippet window and select C# as the language
 
 {% hint style="info" %}
 It is only a snippet and not a full program. It will not compile.
@@ -27,7 +27,7 @@ using var cmd = new NpgsqlCommand(sql, conn);
 
 ### Running the query
 
-Enter the following queries in the query window and press **Run Query** to see the results.
+Enter the following queries in the query window and click **Run Query** to see the results.
 
 1. Select `body` by using the query: `“body”`&#x20;
 
@@ -51,7 +51,7 @@ If you are interested in a certain type of object, you can use [templates](templ
 
 ## A data flow or taint analysis
 
-For this example, a JavaScript code snippet is used. You can copy it in the snippet window and select **JavaScript**.
+For this example, a JavaScript code snippet is used. You can copy it in the snippet window and select JavaScript.
 
 ```javascript
 const express = require('express');
@@ -195,7 +195,7 @@ Identifying gaps in data flow paths is crucial for understanding the destination
 
 <details>
 
-<summary><strong>Java example: Interaction between custom WebServer and WebServlet</strong></summary>
+<summary>Java example: Interaction between custom WebServer and WebServlet</summary>
 
 This Java example demonstrates two components: `WebServer` and `WebServlet`.
 
@@ -268,8 +268,8 @@ PRED:AnySink and not DataFlowsFrom<PRED:AnySource>
 
 In the context of Static Application Security Testing (SAST), identifying vulnerabilities associated with CWE-312 poses complex challenges in terms of analysis and accuracy. Specifically, the following concerns must be addressed:
 
-1. Data Sensitivity Classification: Accurately categorizing **which data** elements are sensitive and which are not is a non-trivial task. An incorrect classification can result in false positives.
-2. Sink Protection Validation: Another challenge is the identification of **data sinks** (endpoints where data is stored or transmitted) that are adequately secure.
+1. Data Sensitivity Classification: Accurately categorizing which data elements are sensitive and which are not is a non-trivial task. An incorrect classification can result in false positives.
+2. Sink Protection Validation: Another challenge is the identification of data sinks (endpoints where data is stored or transmitted) that are adequately secure.
 3. Geographical Data Protection Requirements: Moreover, the data protection regulations can vary significantly depending on the jurisdiction.
 
 Given these complexities, custom rules offer a more flexible and tailored approach for detecting CWE-312 vulnerabilities. In this example, we will employ the C# programming language and leverage the `Taint` template within the Custom Rules framework to address these challenges.
@@ -336,7 +336,7 @@ Taint<
 ```
 
 {% hint style="info" %}
-**`CallExpression`** and **`HasArg1`** may also be used on their own. Connecting them using the **`and`** operator establishes the relationship, and Snyk Code will attempt to match them in combination only.
+`CallExpression` and `HasArg1` may also be used on their own. Connecting them using the `and` operator establishes the relationship, and Snyk Code will attempt to match them in combination only.
 {% endhint %}
 
 ### Catching all File writers
@@ -370,7 +370,7 @@ Taint<
 ```
 
 {% hint style="info" %}
-Notice how `CallExpression now` contains a **regular expression,** whereas **`HasArg1`** uses the **`or`** operator. It could be written either way.
+Notice how `CallExpression now` contains a regular expression, whereas `HasArg1` uses the `or` operator. It could be written either way.
 {% endhint %}
 
 Finally, let's add support for the .NET`Async` variants and also the `Append` methods:

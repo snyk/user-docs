@@ -41,7 +41,7 @@ In the following Path Traversal issue, the developer has not sanitized the input
 
 ### **Open Data flow external link**
 
-To open the displayed source code on the Git repository, select the file name above the right panel. In this example, the file name is **routes/profileImageUrlUpload.ts**.
+To open the displayed source code on the Git repository, select the file name above the right panel. In this example, the file name is "routes/profileImageUrlUpload.ts".
 
 The source code appears in the integrated Git repository, showing you exactly where to fix the vulnerability. You can make the required fix to address the vulnerability in your code.
 
@@ -75,7 +75,7 @@ The **Fix analysis** page enables you to do the following:
 
 ### **Open Fix analysis external link**
 
-To open the code fix for the vulnerability on the Git repository, select the Git repository above the right panel. This will show you the differences in the Git repository code that address the issue. In this example, the Git repository name is **eclipse-vertx/vert.x**.
+To open the code fix for the vulnerability on the Git repository, select the Git repository above the right panel. This will show you the differences in the Git repository code that address the issue. In this example, the Git repository name is "eclipse-vertx/vert.x".
 
 <figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis-example.png" alt="Data flow of a Path Traversal vulnerability issue."><figcaption><p>Fix analysis of a Path Traversal vulnerability issue</p></figcaption></figure>
 

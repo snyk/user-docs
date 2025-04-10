@@ -74,7 +74,7 @@ Enable DeepCode AI Fix for your Group or Organization in the Snyk Web UI by navi
 {% endhint %}
 
 1. Open your codebase.
-2. Find and fix issues **through the panel** or by clicking **Fix this issue** in Code Lens.
+2. Find and fix issues through the panel or by clicking **Fix this issue** in Code Lens.
 3. After a fix has been applied,  save and rescan.
 
 ## Example: Fix a code issue automatically

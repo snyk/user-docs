@@ -645,7 +645,7 @@ public class RegexSanitize {
 }
 ```
 
-To verify **replaceAll** with specific parameters is part of this **call chain**, the following rule can be used:
+To verify **replaceAll** with specific parameters is part of this call chain, the following rule can be used:
 
 ```starlang
 And<CallExpression<"replaceAll">, HasArg1<"[^a-zA-Z0-9 ]">>
@@ -877,7 +877,7 @@ public class X {
 }
 ```
 
-For this example, the target may be to **capture only the login call on the FtpClient class**. To select it, the following query will match:
+For this example, the target may be to capture only the login call on the FtpClient class. To select it, the following query will match:
 
 ```
 And<HasArg0<"sun.net.ftp.impl.FtpClient">, CallExpression<"login">>
@@ -918,7 +918,7 @@ if __name__ == '__main__':
     smtp_example()
 ```
 
-For this example, the target may be to **capture only the login call on the FTP class**. To select it, the following query will match:
+For this example, the target may be to capture only the login call on the FTP class. To select it, the following query will match:
 
 ```starlang
 And<HasArg0<"ftplib.FTP">, CallExpression<"login">>

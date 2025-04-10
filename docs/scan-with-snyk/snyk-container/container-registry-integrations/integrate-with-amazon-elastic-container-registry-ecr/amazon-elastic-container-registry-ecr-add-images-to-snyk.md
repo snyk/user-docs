@@ -11,7 +11,7 @@ Snyk scans and monitors your Amazon ECR container images by evaluating the tags 
 
 Log in to your account and navigate to the relevant Group and Organization you want to manage.
 
-1. Navigate to **Projects**, and click **Add projects**.\
+1. Navigate to **Projects** > **Add projects**.\
    The list of integrations already configured on your account opens.&#x20;
 2. From the list of integrations, select **ECR**. The view **Which ECR images do you want to test?** opens and displays all available images for the registry you connected, grouped by each of your repositories.
 3. Select one or multiple images with any or all of the following methods:
