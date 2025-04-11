@@ -30,6 +30,7 @@ Snyk for PHP supports Composer as a package manager and [packagist.org](https://
 
 The following frameworks and libraries are supported in Snyk for PHP:
 
+* grpc-php - Comprehensive
 * Laravel - Partial
 * llphant - Comprehensive
 * openai-php/client - Comprehensive

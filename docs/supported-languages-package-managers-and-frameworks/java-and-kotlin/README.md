@@ -61,6 +61,7 @@ The following frameworks and libraries are supported in Snyk for Java and Kotlin
 * elasticsearch - Partial
 * FasterXML Jackson - Comprehensive
 * Google Guava - Comprehensive
+* grpc-java - Comprehensive
 * hibernate - Comprehensive
 * http4k - Comprehensive
 * io.jsonwebtoken - Comprehensive

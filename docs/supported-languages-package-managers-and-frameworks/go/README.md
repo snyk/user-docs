@@ -34,6 +34,7 @@ The following frameworks and libraries are supported in Snyk for Go:&#x20;
 * Go Standard Library - Comprehensive&#x20;
 * google/generative-ai-go/genai - Comprehensive&#x20;
 * GORM library - Partial&#x20;
+* grpc-go - Comprehensive
 * labstack/echo - Partial&#x20;
 * sashabaranov/go-openai - Comprehensive&#x20;
 * spf13/pflag - Comprehensive

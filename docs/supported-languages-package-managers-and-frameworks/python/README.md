@@ -47,6 +47,7 @@ The following frameworks and libraries are supported in Snyk for Python:
 * flask\_pymongo - Comprehensive
 * google.cloud.bigquery - Comprehensive
 * google\_generativeai - Comprehensive
+* grpcio - Comprehensive
 * huggingface\_hub - Comprehensive
 * httpx - Comprehensive
 * ldap3 - Comprehensive

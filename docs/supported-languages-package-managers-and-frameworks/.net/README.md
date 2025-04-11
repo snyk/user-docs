@@ -36,6 +36,7 @@ The following frameworks and libraries are supported in Snyk for .NET: (only cod
 * Dapper - Comprehensive&#x20;
 * fastJSON - Comprehensive&#x20;
 * Google\_GenerativeAI - Comprehensive&#x20;
+* grpc-dotnet (C# only) - Comprehensive
 * Microsoft.CodeAnalysis.VisualBasic - Comprehensive&#x20;
 * Mistral.SDK - Comprehensive&#x20;
 * System.CodeDom.Compiler - Comprehensive&#x20;

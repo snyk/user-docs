@@ -66,6 +66,7 @@ The following frameworks and libraries are supported in Snyk for TypeScript:&#x2
 * fs-plus - Comprehensive&#x20;
 * graceful-fs - Comprehensive&#x20;
 * graphql-js - Partial&#x20;
+* grpc-js - Comprehensive
 * jQuery - Comprehensive&#x20;
 * js-yaml - Comprehensive&#x20;
 * jzip - Comprehensive&#x20;

@@ -6,7 +6,7 @@ Snyk supports [JavaScript for code analysis](javascript-for-code-analysis.md) an
 
 ## Applicability
 
-Snyk supports [JavaScript for code analysis](javascript-for-code-analysis.md) and [JavaScript for open source](javascript-for-open-source.md).&#x20;
+Snyk supports [JavaScript for code analysis](javascript-for-code-analysis.md) and [JavaScript for open source](javascript-for-open-source.md).
 
 For more information about importing Projects using SCM integrations, see [Git repositories and JavaScript](git-repositories-and-javascript.md).
 
@@ -25,7 +25,7 @@ For information on using the Snyk CLI for code analysis, see [Snyk CLI for Snyk 
 
 ## Package managers and supported file extensions
 
-Snyk for JavaScript supports npm, pnpm, and Yarn as package managers with the following versions for them:&#x20;
+Snyk for JavaScript supports npm, pnpm, and Yarn as package managers with the following versions for them:
 
 * npm: `Lockfile 1`, `Lockfile 2`, `Lockfile 3, 7.*`
 * pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`
@@ -69,6 +69,7 @@ The following frameworks and libraries are supported in Snyk for JavaScript:
 * fs-plus - Comprehensive
 * graceful-fs - Comprehensive
 * graphql-js - Partial
+* grpc-js - Comprehensive
 * jQuery - Comprehensive
 * js-yaml - Comprehensive
 * jzip - Comprehensive
@@ -119,8 +120,8 @@ The following frameworks and libraries are supported in Snyk for JavaScript:
 
 The following features are supported in Snyk for JavaScript:
 
-| Snyk Open Source                                                     | Snyk Code                                                                  |
-| -------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| <ul><li>Fix PRs </li><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules </li><li>Interfile analysis</li></ul> |
+| Snyk Open Source                                                   | Snyk Code                                                                 |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| <ul><li>Fix PRs</li><li>License scanning</li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
 
 If you need help, [contact Snyk Support](https://support.snyk.io).

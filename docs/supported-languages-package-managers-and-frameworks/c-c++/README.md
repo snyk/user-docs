@@ -36,6 +36,7 @@ The following frameworks and libraries are supported in Snyk for C/C++:
 * C++ Standard Library - Comprehensive
 * Curl library - Comprehensive
 * fstream framework - Comprehensive
+* grpc-cpp library - Comprehensive
 * HTTPlib framework - Comprehensive
 * JsonCpp library - Comprehensive
 * liboai framework - Comprehensive
