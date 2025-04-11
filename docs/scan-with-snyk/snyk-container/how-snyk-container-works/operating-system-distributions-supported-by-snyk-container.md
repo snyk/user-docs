@@ -36,6 +36,7 @@ This is the list of supported operating systems and distributions:
 * Alpine Linux 3.4
 * Alpine Linux 3.3
 * Alpine Linux 3.2
+* Alpine Linux 3.21
 
 ## [Amazon Linux](https://aws.amazon.com/linux/)
 
@@ -125,4 +126,3 @@ This is the list of supported operating systems and distributions:
 ## [Wolfi](https://github.com/wolfi-dev)
 
 * Any&#x20;
-
