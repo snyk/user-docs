@@ -1,4 +1,4 @@
-# Snyk CLI
+# Consistent Ignores for Snyk Code CLI
 
 {% hint style="info" %}
 **Release status**
@@ -11,7 +11,7 @@ To make sure Snyk Code Consistent Ignores Early Access meets your needs and requ
 Ignores are taken into account in the Snyk CLI when `snyk code test` is run.
 
 {% hint style="danger" %}
-The Snyk Code CLI Upload beta feature (`snyk code test --report`) will not show findings ignores at the start of the Early Access program.
+The Snyk Code CLI Upload beta feature (`snyk code test --report`) will not show ignored findings at the start of the Early Access program.
 {% endhint %}
 
 ## **Minimum version required**
