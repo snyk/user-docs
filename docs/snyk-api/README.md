@@ -8,11 +8,15 @@ For more information, see [Plans and pricing](https://snyk.io/plans).
 
 The Snyk API allows customers to integrate programmatically with Snyk.
 
-Use the API when you want to customize, integrate, and automate Snyk processes as part of your specific workflows.
+The [Snyk REST API ](rest-api/about-the-rest-api.md) and the [V1 API](v1-api.md) are available in the Snyk API [Reference](reference/). Additional endpoints are available in the [OAuth2 API reference](oauth2-api.md).
+
+## Automating Snyk processes
 
 The Snyk API enables developers to automate Snyk processes to accomplish their specific workflows, ensuring consistency in both developer experience and platform governance.
 
-The [Snyk REST API ](rest-api/about-the-rest-api.md) and the [V1 API](v1-api.md) are available in the Snyk API [Reference](reference/). Additional endpoints are available in the [OAuth2 API reference](oauth2-api.md).
+Use the API when you want to customize, integrate, and automate Snyk processes as part of your specific workflows.
+
+## Deciding to use the API, the CLI, or an SCM integration
 
 You may decide to use an API rather than the CLI or an integration. When you decide, consider possible differences in the output for the API, the CLI, and integrations.
 
