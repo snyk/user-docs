@@ -6,11 +6,11 @@ Follow these steps to make a simple call to the REST API using `curl` in the com
 2. In your account, use the left navigation to find an **Organization** where you have Projects you can list.
 3. Navigate to your **Organization Settings**, and on the **General** settings page, find your **Organization ID** and copy the value.
 4. Navigate to your personal [General Account Settings](https://app.snyk.io/account/) and copy your **API Token**. For instructions, see [Authentication for API](authentication-for-api/).
-5. Use a `curl` command to make your request. Replace the `{orgId}` and API\_TOKEN with your **Organization ID** and **API Token**, respectively. For the `version` parameter, Snyk advises using the current day's date. An example follows.
+5. Use a `curl` command to make your request. Replace the `{orgId}` and API\_TOKEN with your **Organization ID** and **API Token**, respectively. Snyk recommends using 2024-10-15 for the version number unless you are using an earlier version for a specific reason. Using the current day's date will call the most recent version of the API.  An example follows:
 
 ```sh
 curl --request GET \
---url "https://api.snyk.io/rest/orgs/{orgId}/projects?version=2024-06-10" \
+--url "https://api.snyk.io/rest/orgs/{orgId}/projects?version=2024-10-15" \
 --header "Content-Type: application/vnd.api+json" \
 --header "Authorization: token API_TOKEN"
 ```
