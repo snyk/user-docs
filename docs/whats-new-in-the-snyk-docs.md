@@ -16,7 +16,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk API**
 
-* The V1 API Apiary site has been sunset. The [V1 API overview](snyk-api/v1-api.md) and [reference](snyk-api/reference/) are now on the user docs site. Additional details from Apiary have been added to the V1 reference.
+* The [V1 API overview](snyk-api/v1-api.md) and [reference](snyk-api/reference/) are now on the user docs site only. Additional details from Apiary have been added to the V1 reference on the user docs site. The API reference has been removed from the V1 API Apiary site.
 * A section has been added for [pages that explain how to use specific APIs in depth](snyk-api/using-specific-snyk-apis/).
 
 ### **Snyk CLI, CI/CD, IDE**
