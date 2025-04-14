@@ -22,7 +22,7 @@ You must have at least Snyk CLI v1.1295.3 installed for Snyk Code Consistent Ign
 
 To take ignores into account, specify the Organization where the ignores reside.&#x20;
 
-[Group-level policies also cascade down to all Organizations](broken-reference). See [How to select the Organization to use in the CLI](../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
+[Group-level policies also cascade down to all Organizations](./#manage-ignores-at-the-group-level-through-security-policies). See [How to select the Organization to use in the CLI](../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
 
 ## Snyk CLI default ignore behavior
 

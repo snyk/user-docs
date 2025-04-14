@@ -1,4 +1,4 @@
-# Snyk IDE
+# Consistent Ignores for Snyk Code IDE
 
 {% hint style="info" %}
 **Release status**
@@ -23,7 +23,7 @@ Snyk Code Consistent Ignores works best with the latest IDE plugin versions.
 
 ## **Set up the Organization**
 
-To take ignores into account, specify the Organization where the ignores reside. [Group-level policies also cascade down to all Organizations](broken-reference). See [How to select the Organization to use in IDE plugins (Visual Studio Code example)](../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
+To take ignores into account, specify the Organization where the ignores reside. [Group-level policies also cascade down to all Organizations](./#manage-ignores-at-the-group-level-through-security-policies). See [How to select the Organization to use in IDE plugins (Visual Studio Code example)](../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
 
 ## Snyk IDE default ignore behavior
 
