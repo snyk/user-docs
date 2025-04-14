@@ -25,7 +25,7 @@ To create this role, enable the following permissions in the relevant categories
 The remaining categories of permissions listed below should have all permissions within them set to disabled:
 
 * Organization management
-* AppRisk management
+* Snyk Essentials management
 * Audit Log management
 * IaC settings management
 * Insights management

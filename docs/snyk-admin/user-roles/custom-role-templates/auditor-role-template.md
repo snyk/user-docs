@@ -16,9 +16,9 @@ To create this role, enable the following permissions in the relevant categories
 
 <table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Organizations</td><td>true</td></tr><tr><td>Edit Organizations</td><td>false</td></tr><tr><td>Remove Organizations</td><td>false</td></tr></tbody></table>
 
-### AppRisk management
+### Snyk Essentials management
 
-<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View AppRisk</td><td>true</td></tr><tr><td>Edit AppRisk</td><td>false</td></tr></tbody></table>
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Snyk Essentials</td><td>true</td></tr><tr><td>Edit Snyk Essentials</td><td>false</td></tr></tbody></table>
 
 ### Audit Log management
 

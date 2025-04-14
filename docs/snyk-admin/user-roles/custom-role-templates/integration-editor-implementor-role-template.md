@@ -16,7 +16,7 @@ The remaining categories of permissions listed below should have all permissions
 
 * Group management
 * Organization management
-* AppRisk management
+* Snyk Essentials management
 * Audit Log management
 * IaC settings management
 * Insights management
