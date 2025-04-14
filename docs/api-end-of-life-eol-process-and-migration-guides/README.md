@@ -21,7 +21,7 @@ Migrating from V1 API to GA REST can be a time-consuming process, and Snyk wants
    * Functionality parity between V1 and GA REST (unless explicitly stated otherwise in the migration guide)
    * A migration guide by our field specialists for ease of migration
 3. Snyk will [publicly announce](http://updates.snyk.io/) which endpoints will be part of an EOL cycle one month before the cycle begins.&#x20;
-4. On the date the EOL begins, the endpoints are deemed **deprecated**. At that point, the documentation of each endpoint will either be **removed** or have a statement added that the endpoint is deprecated. In addition, no new customers will be able to integrate with the endpoint. The endpoint will remain functional for existing customers until the end-of-life date. You can find all of the endpoints being sunsetted and the associated timelines on the [API EOL endpoints and key dates](api-eol-endpoints-and-key-dates.md) page.
+4. On the date the EOL begins, the endpoints are deemed **deprecated**. At that point, the documentation of each endpoint will either be **removed** or have a statement added that the endpoint is deprecated. In addition, no new customers will be able to integrate with the endpoint. The endpoint will remain functional for existing customers until the end-of-life date. You can find all of the endpoints reaching end of life and the associated timelines on the [API EOL endpoints and key dates](api-eol-endpoints-and-key-dates.md) page.
 5. On a monthly basis during the EOL cadence, Snyk will temporarily halt functionality for the nominated endpoints for a period of time, increasing in duration over the course of the EOL.
 6. When we reach the EOL date, the endpoint will stop working, and you will receive an error.&#x20;
 
