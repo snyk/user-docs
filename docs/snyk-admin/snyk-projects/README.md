@@ -106,6 +106,13 @@ To perform an action at bulk on your Projects, first select the Projects and the
 
 <figure><img src="../../.gitbook/assets/delete-selected-projects.png" alt="" width="352"><figcaption><p>Deleting Projects in bulk</p></figcaption></figure>
 
+Click **Delete** to remove Projects from the **Projects** listing page and the Target-level aggregates.
+
+Click **Deactivate** to remove webhooks and prevent tests from occurring. Deactivating a Project will:
+
+* Stop showing the Project results in reporting.
+* Keep showing the findings of the last scan in the **Projects** listing page, including the Target-level aggregates on the **Group by Target** view.
+
 ### Test frequency settings
 
 You can set the frequency of testing for each Project.
@@ -122,5 +129,3 @@ The default test frequency and limitations are as follows:
 * Container: The default is daily.
 * IaC: The default is weekly.
 {% endhint %}
-
-Click **Deactivate** to never test, and also remove webhooks and stop showing the Project’s results in reporting.

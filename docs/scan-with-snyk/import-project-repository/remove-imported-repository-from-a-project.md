@@ -55,6 +55,10 @@ Follow these steps to deactivate or delete the Code analysis Project:
 
 <figure><img src="../../.gitbook/assets/project_settings_deactivate_project.png" alt=""><figcaption><p>Deactivate project on Code analysis Project Settings page</p></figcaption></figure>
 
+{% hint style="info" %}
+Deactivating a Project keeps it on the **Projects** page along with the issues count from the last scan, which contributes to the Target-level aggregate when Projects are grouped by Target. Deleting the Project removes all values from the page.
+{% endhint %}
+
 The **Code analysis** Project you selected is either deactivated or deleted, and its repository will no longer be tested by Snyk Code.
 
 If you want Snyk Code to resume its testing after you delete or deactivate the **Code analysis** Project of a repository, do the following:
