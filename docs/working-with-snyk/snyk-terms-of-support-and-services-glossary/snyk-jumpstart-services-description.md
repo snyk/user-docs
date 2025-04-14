@@ -47,7 +47,7 @@ The Snyk Consultant will work with the Customer to configure SSO through SAML, E
 
 The Snyk Consultant will work with the Customer to configure notification settings, language settings, and Snyk account structure. Time will be spent reviewing configuration details with the Customer to ensure the Customer understands and maintains them.
 
-#### Admin Training
+#### Admin training
 
 The Snyk Consultant will run a 60-minute training session to ensure Customer administrator users know how to configure essential settings in Snyk based on the maturity of their security program.
 
@@ -67,13 +67,13 @@ Training topics include:
 * Accessing additional training materials (learn.snyk.io)
 * Project Collections and views
 
-#### Developer Training
+#### Developer training
 
 The Snyk Consultant will run a 60-minute training session for Customer’s Developers to ensure all collaborator users know how to access Snyk results and initiate tests. This training will cover a range of tools, including the UI (app.snyk.io), IDE plugin, and CLI. Developer Training will be completed after the product-specific modules of Jumpstart have been completed.
 
 ### Target Initiatives - Snyk Platform configuration
 
-<table><thead><tr><th width="176">Platform - initial setup</th><th width="555">Outcome</th></tr></thead><tbody><tr><td>Base SSO connection configuration</td><td>Users can access Snyk based on role.</td></tr><tr><td>SSO Custom Mapping</td><td>Users can access Snyk based on role.</td></tr><tr><td>(Template Org) Custom Roles and service account configuration</td><td>Provide a templated organization to replicate and scale your setup of Snyk quickly.</td></tr><tr><td>(Template Org) Notification configuration</td><td>Provide a templated organization to replicate and scale your setup of Snyk quickly.</td></tr><tr><td>(Template Org) Language settings configuration</td><td></td></tr><tr><td>(Template Org) Jira or Slack App configuration</td><td></td></tr><tr><td>(Template Org) Account Organization and Group configuration</td><td></td></tr><tr><td>Admin Training (1 session)</td><td>Group and Organisation administrators are comfortable using Snyk to import their targets and complete the initial configuration for each team.</td></tr><tr><td>Developer Training (1 session)</td><td>Delivered after product-specific modules are completed, ensuring a successful launch and initial adoption with Developers.</td></tr></tbody></table>
+<table><thead><tr><th width="176">Platform - initial setup</th><th width="555">Outcome</th></tr></thead><tbody><tr><td>Base SSO connection configuration</td><td>Users can access Snyk based on role.</td></tr><tr><td>SSO Custom Mapping</td><td>Users can access Snyk based on role.</td></tr><tr><td>(Template Org) Custom Roles and service account configuration</td><td>Provide a templated organization to replicate and scale your setup of Snyk quickly.</td></tr><tr><td>(Template Org) Notification configuration</td><td>Provide a templated organization to replicate and scale your setup of Snyk quickly.</td></tr><tr><td>(Template Org) Language settings configuration</td><td></td></tr><tr><td>(Template Org) Jira or Slack App configuration</td><td></td></tr><tr><td>(Template Org) Account Organization and Group configuration</td><td></td></tr><tr><td>Admin training (1 session)</td><td>Group and Organisation administrators are comfortable using Snyk to import their targets and complete the initial configuration for each team.</td></tr><tr><td>Developer training (1 session)</td><td>Delivered after product-specific modules are completed, ensuring a successful launch and initial adoption with Developers.</td></tr></tbody></table>
 
 ## Snyk Open Source configuration
 
@@ -345,9 +345,9 @@ This engagement will include initial Platform Configuration and each product mod
 
 The fees for this project will be a fixed price. Services will be invoiced in full at the time of purchase and are non-refundable.&#x20;
 
-The customer will engage Snyk for a kickoff call within 30 days of the contract start date, at a time that is mutually agreed upon by the parties. Snyk Jumpstart will not be delivered more than 120 days after the execution of the applicable Order Form regardless of when or if the Customer engages with Snyk for the kickoff call. All Snyk Jumpstart Services will be considered complete upon the earlier of these two dates:  completion and eight (8) weeks following the kickoff call.
+Upon purchase, the Snyk implementation team will coordinate a pre-engagement call at a time that works for both parties. Note that Jumpstart services expire 120 days after our consultant's first outreach, regardless of customer engagement. All Jumpstart Services automatically conclude either upon completion or eight weeks following the kick-off call, whichever occurs first.
 
-Unless otherwise agreed to by the parties in writing, Services must be scheduled a) as agreed during the pre-engagement call; b) product modules will be delivered consecutively; and c) during normal business hours.&#x20;
+Unless otherwise agreed to by the parties in writing, a) services must be scheduled as agreed during the pre-engagement call; b) product modules will be delivered consecutively; and c) all services will occur during normal business hours.&#x20;
 
 All services will be performed remotely. Any onsite time requires Snyk’s prior consent and will be subject to additional fees and expenses to be agreed in advance.&#x20;
 

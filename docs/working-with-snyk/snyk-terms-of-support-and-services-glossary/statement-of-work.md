@@ -17,8 +17,16 @@ Snyk’s Declining Balance of Hours offers flexible, expert-led consulting to he
 
 Two tiers are available to align with the Customer's specific needs:
 
-* Tier 1: 200 hours
-* Tier 2: 500 hours
+* Tier 1: 50 hours\*
+* Tier 2: 200 hours
+* Tier 3: 500 hours.
+
+{% hint style="info" %}
+\* Tier 1 Terms:
+
+* Available for Probely implementation use only
+* All hours need to be consumed within 90 days of contract start date
+{% endhint %}
 
 A customized number of hours is also available for specific situations. Contact your Snyk Account Executive for more details.
 
