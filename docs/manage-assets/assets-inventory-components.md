@@ -191,27 +191,14 @@ System tags are automatically generated from the SCM repositories. System tags c
 
 You can use pre-defined system tags and asset tags to mark the repositories that meet your filter criteria. Check the following [Tagging policy use case](../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy-use-case.md).
 
-### Tag rules related to user
-
-| Rule                                     | Tag             |
-| ---------------------------------------- | --------------- |
-| The user commit is older than 6 months.  | `Dormant user`  |
-| The user commit is older than 3 months.  | `Inactive user` |
-| The user commit is newer than 3 months.  | `Active user`   |
-| A new user is detected.                  | `New user`      |
-
 ### Tag rules related to metadata
 
-| Rule                                                                  | Tag                 |
-| --------------------------------------------------------------------- | ------------------- |
-| Snyk Essentials found pip metadata.                                   | `python module`     |
-| Snyk Essentials found a browser extension.                            | `browser extension` |
-| Snyk Essentials found technologies in use.                            | `< technologies>`   |
-| Snyk Essentials found ruby metadata.                                  | `ruby module`       |
-| Snyk Essentials found languages from the SCM.                         | `<languages>`       |
-| Snyk Essentials detected a new repository created in the last 7 days. | `new repository`    |
-| Snyk Essentials found nodejs metadata.                                | `nodejs module`     |
-| Snyk Essentials found the code project with the code owner.           | `codeowners`        |
+| Rule                                                                  | Tag               |
+| --------------------------------------------------------------------- | ----------------- |
+| Snyk Essentials found technologies in use.                            | `< technologies>` |
+| Snyk Essentials found languages from the SCM.                         | `<languages>`     |
+| Snyk Essentials detected a new repository created in the last 7 days. | `new repository`  |
+| Snyk Essentials found the code Project with the code owner.           | `codeowners`      |
 
 ## **Developers**
 
