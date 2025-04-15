@@ -12,7 +12,7 @@ Snyk Apps are based on the [Snyk API](../../) so that your integrations are inhe
 
 ## Integrating Apps with Snyk
 
-The Snyk Apps platform uses an OAuth 2.0 authorization flow. This allows your Snyk App to get an access token to act on behalf of the user, depending on the scopes you request. There are many OAuth 2.0 libraries available that will greatly simplify the integration. The [Snyk Apps Demo](https://github.com/snyk/snyk-apps-demo) uses the popular JavaScript library [passport.js](http://www.passportjs.org/packages/passport-oauth2/).
+The Snyk Apps platform uses an [OAuth 2.0](http://oauth.net/2/) authorization flow. This allows your Snyk App to get an access token to act on behalf of the user or Tenant, depending on the scopes you request. There are many OAuth 2.0 libraries available that will greatly simplify the integration. The [Snyk Apps Demo](https://github.com/snyk/snyk-apps-demo) uses the popular JavaScript library [passport.js](http://www.passportjs.org/packages/passport-oauth2/).
 
 See the Snyk [OAuth2 API documentation](../../oauth2-api.md) for details.
 
