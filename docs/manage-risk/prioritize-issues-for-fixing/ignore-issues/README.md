@@ -31,7 +31,7 @@ You can view and ignore issues in several ways:
 
 Each issue card has an **Ignore** button that opens a dialog where you can select how or why you want to ignore the issue and how long to ignore it.
 
-<figure><img src="../../../.gitbook/assets/image (511).png" alt="Ignore dialog from issue card"><figcaption><p>Ignore dialog from issue card</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Ignore dialog from issue card (1).png" alt="Ignore dialog from issue card"><figcaption><p>Ignore dialog from issue card</p></figcaption></figure>
 
 You can select **Not vulnerable** for any issue that is not exploitable at the time you create the ignore.
 
