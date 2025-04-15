@@ -17,9 +17,7 @@ The Snyk Visual Studio extension allows you to analyze your code and open-source
 ## How to install and set up the extension
 
 {% hint style="info" %}
-The latest version of the Snyk Visual Studio extension supports use with Visual Studio 2022 (version 17.5 and above).
-
-Older plugin versions support use with Visual Studio 2015, 2017, and 2019.
+For information about the versions of Visual Studio supported by the Visual Studio extension, see [Snyk IDE plugins and extensions](../).
 
 Snyk recommends always using the latest version of the Visual Studio extension.
 {% endhint %}

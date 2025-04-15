@@ -18,9 +18,7 @@ The Snyk Eclipse extension allows you to analyze your code, open-source dependen
 ## How to install and set up the extension
 
 {% hint style="info" %}
-The latest Snyk Eclipse plugin supports use with Eclipse 2024-03 or newer.
-
-Older plugin versions may support use with Eclipse 2023-03 or newer.
+For information about the versions of Eclipse supported by the Eclipse plugin, see [Snyk IDE plugins and extensions](../).
 
 Snyk recommends always using the latest version of the Eclipse plugin.
 {% endhint %}

@@ -96,7 +96,7 @@ To make use of FIPS-validated cryptography in the [Snyk Eclipse integration](../
 
 ### JetBrains
 
-To make use of FIPS-validated cryptography in the [Snyk JetBrains integration](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugins/), do the following:
+To make use of FIPS-validated cryptography in the [Snyk JetBrains integration](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/), do the following:
 
 * Ensure the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met.
 * [Download the appropriate FIPS-enabled binaries](using-fips-validated-cryptography.md#download-fips-enabled-binaries).

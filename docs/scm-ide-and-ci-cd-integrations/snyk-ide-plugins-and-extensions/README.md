@@ -3,10 +3,18 @@
 The following Snyk plugins and extensions are available.
 
 * [Eclipse plugin](eclipse-plugin/)
-* [JetBrains plugins](jetbrains-plugins/)
+* [JetBrains plugin](jetbrains-plugin/)
 * [Visual Studio extension](visual-studio-extension/)
 * [Visual Studio Code extension](visual-studio-code-extension/)
-* [Language Server](snyk-language-server/)
+
+The following summarizes the versions of each IDE supported by the Snyk plugin or extension. Snyk recommends always using the latest version of the IDE plugin or extension.
+
+| Snyk plugin or extension      | IDE version supported                                                                                                                                                                                                |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Eclipse plugin                | <p>The latest Snyk Eclipse plugin supports use with Eclipse 2024-03 or newer.</p><p>Older plugin versions may support use with Eclipse 2023-03 or newer.</p>                                                         |
+| JetBrains plugin              | <p>The latest Snyk JetBrains plugin supports use with all JetBrains IDEs 2023.3 or newer.</p><p>Older plugin versions may support use with JetBrains IDEs 2020.3 or newer.</p>                                       |
+| Visual Studio extension       | <p>The latest version of the Snyk Visual Studio extension supports use with Visual Studio 2022 (version 17.5 and above).</p><p>Older extension versions may support use with Visual Studio 2015, 2017, and 2019.</p> |
+| Visual Sltudio Code extension | The latest version of the Snyk Visual Studio Code extension supports use with Visual Studio Code version 1.76.0 and later.                                                                                           |
 
 Snyk Security plugins and extensions find and fix security vulnerabilities and issues in Snyk Projects. This allows individual developers, open source contributors, and code maintainers to pass security reviews, avoid costly fixes later in development, and reduce time to develop and deliver secure code.
 
@@ -18,4 +26,4 @@ The Snyk IDE plugins and extensions also rely on the [Snyk Vulnerability Databas
 
 If Snyk is hosting your data in a region other than the default, you must set the `Custom endpoint` in the IDE. For more information, see [IDEs URLS](../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls) on the [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md) page.
 
-Training is available: [Introduction to using Snyk in an IDE](https://learn.snyk.io/lesson/snyk-in-an-ide/)\
+Snyk also offers a [Language Server](snyk-language-server/). Training for the IDEs is available: [Introduction to using Snyk in an IDE](https://learn.snyk.io/lesson/snyk-in-an-ide/)\

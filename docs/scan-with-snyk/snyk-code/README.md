@@ -40,7 +40,7 @@ Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the
 ## Supported integrations
 
 * IDE
-  * [JetBrains plugins](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugins/)
+  * [JetBrains plugins](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/)
   * [Visual Studio Code extension](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/)
   * [Visual Studio extension](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/)
 * Git repository: With repository monitoring integration, you can actively manage your Code Projects using the existing native import flow and tools. You can view and prioritize security issues discovered in your source code. Additionally, you can initiate a retest of any Project and examine the historical snapshots to track changes over time. See [Supported Git repositories](../../scm-ide-and-ci-cd-integrations/git-repository-and-ci-cd-integrations-comparisons.md).
