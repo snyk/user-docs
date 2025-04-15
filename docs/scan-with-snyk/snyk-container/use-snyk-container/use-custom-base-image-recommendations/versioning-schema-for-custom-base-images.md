@@ -1,6 +1,6 @@
 # Versioning schemas for custom base images
 
-You must set a versioning schema for the first Project you mark as a custom base image in the image's repository. You can edit the custom base image settings for Projects that you have already marked as custom base images. For details, see [Mark the created Project as a custom base image](./#mark-the-created-project-as-a-custom-base-image).
+You must set a versioning schema for the first Project you mark as a custom base image in the image's repository. You can edit the **Custom base Image settings** for Projects that you have already marked as custom base images. For more information, see [Mark the created Project as a custom base image](./#mark-the-created-project-as-a-custom-base-image).
 
 You can manage the versioning schema for images imported to Projects for a repository in the Web UI  or by using the API endpoint [Create a Custom Base Image from an existing container project](../../../../snyk-api/reference/custom-base-images.md#custom_base_images).
 
