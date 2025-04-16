@@ -182,6 +182,7 @@ Ensure that the following permissions are set as READ:
 
 * Incident (`mandatory`)
 * Teams (`recommended` for GitGuardian paid accounts)
+* Sources (`mandatory`)
 
 ### Integration Hub setup <a href="#gitguardian-integration-hub-setup" id="gitguardian-integration-hub-setup"></a>
 
