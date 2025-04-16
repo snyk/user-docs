@@ -1,9 +1,9 @@
 # Snyk Learn Assignments
 
 {% hint style="info" %}
-**Release status**
+**Feature availability**
 
-Snyk Learn Assignments is in Early Access, as part of the Snyk Learning Management add-on offering. For more information, contact your Snyk account team.
+Assignments are available in the Snyk Learning Management add-on offering. For more information, contact your Snyk account team.
 {% endhint %}
 
 Assignments streamline training management by empowering admins to assign, track, and manage learning efficiently. The Assignments feature enhances accountability by allowing customers to set due dates for completion and seamlessly integrate with organizational goals, for example, compliance timelines, ensuring alignment across training initiatives.
@@ -26,23 +26,27 @@ Snyk Learn Assignments support Organizations with up to 5000 members.
 
 Ensure new employees complete their onboarding training within a designated timeframe. Assignments can include mandatory onboarding training content. The progress reset feature allows re-onboarding by clearing previous progress.
 
-### Annual security awareness training
+### Annual secure coding training
 
-Mandate annual security awareness training for all employees. Assignments can span a specific year period and include relevant security education content. The admin can use the progress reset feature to reset last year’s progress for the new cycle.
+Mandate annual secure coding training for all employees. Assignments can span a specific year period and include relevant security education content. The admin can use the progress reset feature to reset last year’s progress for the new cycle.
 
 ### Product update training for the development team
 
 Ensure developers are trained on new product features. Admins can create assignments that include product training content on new features. If significant updates require retraining, the admin can use the progress reset feature.
 
-### Compliance training for new regulations
+### Compliance training
 
-Ensure employees complete training on new regulatory requirements. Admins can create assignments that cover the effective period of new regulations, including content required by compliance. The admin can use the progress reset feature to reset previous progress and mandate updated training.
+Ensure employees complete training for compliance requirements, such as PCI DSS, SOX, SOC-2, HIPAA, and ISO 27001 certification. Admins can create assignments that cover the effective period of new regulations, including content required by compliance. The admin can use the progress reset feature to reset previous progress and mandate updated training.
 
 ## Who can be assigned Snyk Learn lessons?
 
 Snyk Learn requires users to have a Snyk Account. After a user has joined Snyk, they are available in the Snyk Learn UI for assignments.
 
-Assignments are linked to the individual user.
+Assignments are linked to the individual user and can be tracked from any Organization they are a member of.
+
+{% hint style="warning" %}
+Snyk requires users to log in to the platform before they become active users and are available for assignments.
+{% endhint %}
 
 ## Who can create assignments?&#x20;
 

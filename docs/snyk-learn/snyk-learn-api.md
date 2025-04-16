@@ -4,8 +4,6 @@
 **Release status**&#x20;
 
 The Snyk Learn API endpoints are [Beta](../snyk-api/rest-api/about-the-rest-api.md#versioning) endpoints.
-
-The Snyk Learning Management add-on offering is in Early Access. For more information, contact your Snyk account team.
 {% endhint %}
 
 The Snyk Learn API endpoints are part of the [Snyk REST API](../snyk-api/rest-api/about-the-rest-api.md) and allow for programmatic interaction with Snyk Learn.

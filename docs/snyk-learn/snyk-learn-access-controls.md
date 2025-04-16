@@ -7,9 +7,9 @@ description: >-
 # Snyk Learn Access Controls
 
 {% hint style="info" %}
-**Release status**
+**Feature availability**
 
-[Snyk Learn Assignments](snyk-learn-assignments.md) is in Early Access, as part of the Learning Management add-on offering. For more information, contact your Snyk account team.
+Assignment permissions are available in the Snyk Learning Management add-on offering. Report permissions are available to Snyk Enterprise plan customers. For more information, contact your Snyk account team.
 {% endhint %}
 
 **Snyk Learn Access Controls** functionality enables you to manage user permissions for Snyk Learn using the same [access control model](../snyk-admin/user-roles/user-role-management.md) as the Snyk Platform. A Group Admin can create custom roles with a set of permissions related to Snyk Learn Assignments. These roles can reflect users and functions in the Organization. For example, you can limit permissions for education and training management functionality for Snyk Learn to the user who is the education and training manager at your organization.
@@ -24,7 +24,7 @@ To grant permissions for access to Assignments beyond the default Organization a
 
 * View Organization assignments&#x20;
 * Edit Organization assignments
-* Create Organization assigners
+* Create Organization assignments
 * Delete Organization assignments
 
 After the role is created, a Group or Organization administrator can give this role to users of Snyk.&#x20;

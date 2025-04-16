@@ -25,9 +25,9 @@ The [Learning Progress](https://learn.snyk.io/user/learning-progress/) area lets
 ## Assigned learning
 
 {% hint style="info" %}
-**Release status**
+**Feature availability**
 
-Snyk Learn Assignments is in Early Access, as part of the Snyk Learning Management add-on offering. For more information, contact your Snyk account team.
+Assignments are available in the Snyk Learning Management add-on offering. For more information, contact your Snyk account team.
 {% endhint %}
 
 Any learning that is assigned to you appears on the [Learning Progress](https://learn.snyk.io/user/learning-progress/) page and, if set, includes the due date.
