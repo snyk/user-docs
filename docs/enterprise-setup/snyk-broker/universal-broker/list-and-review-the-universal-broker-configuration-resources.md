@@ -1,13 +1,11 @@
 # List and review the Universal Broker configuration resources
 
-The `snyk-broker-config` CLI tool provides resources to guide you in configuring your Universal Broker. The following types of resrouces are available:
+The `snyk-broker-config` CLI tool provides resources to guide you in configuring your Universal Broker. The following types of resources are available:
 
 * Connections
 * Credentials
 * Deployments
 * Integrations
-
-For a complete list of the available workflows and commands, see the list of [`snyk-broker-config` commands](https://github.com/snyk/snyk-broker-config?tab=readme-ov-file#commands) in the repository.
 
 To list the resources, run `snyk-broker-config-workflows`.
 
@@ -26,9 +24,9 @@ TOPICS
       workflows integration.   Universal Broker - Get Connection Integration Workflow
 ```
 
-Run the comand `snyk-broker-config workflows <RESOURCE>` to see the available commands to get, create, delete, disconnect, integrate, and migrate.
+Run `snyk-broker-config workflows <RESOURCE>` to list the available resources to get, create, delete, disconnect, integrate, and migrate.
 
-Run the available commands and follow the prompts to use the specific resources.
+Run the available workflows and follow the prompts to use the specific resources.
 
 ```
 > snyk-broker-config-workflows connections
@@ -48,3 +46,5 @@ Workflow
  workflows connections migrate    Universal Broker - Existing Connection Migration 
 Workflow
 ```
+
+For a complete list of the available workflows and commands, see the list of [`snyk-broker-config` commands](https://github.com/snyk/snyk-broker-config?tab=readme-ov-file#commands) in the repository.
