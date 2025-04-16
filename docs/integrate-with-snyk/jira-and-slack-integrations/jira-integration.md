@@ -33,9 +33,13 @@ After the details have been entered into the integration, press **Save and conti
 If the connection is not successful, check that the Base URL starts with exactly `https://` It must not have capitals or be http.
 {% endhint %}
 
-If the connection is successful, you will see the connection details in orange at the top of the page, with options for configuring the default Project and issue type, as well as any fields to ignore.&#x20;
+If the connection is successful, you will see the connection details in orange at the top of the page. &#x20;
 
-The default Project and issue type must be configured.&#x20;
+Fill in the following fields:
+
+* Default Project (required) - Select a Jira Project from the list.
+* Default Issue Type (required) - Select an issue type from the list. The list is populated from available issue types within your project.
+* Ignored Fields (optional) - Specified fields will be excluded from the prompt users see when creating Jira issues within Snyk. For custom fields, use the [custom field id](https://confluence.atlassian.com/jirakb/find-my-custom-field-id-number-in-jira-744522503.html) in the format `customfield_XXXXXX`.
 
 <figure><img src="../../.gitbook/assets/JiraSettings.png" alt=""><figcaption><p>A successful connection</p></figcaption></figure>
 
