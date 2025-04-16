@@ -850,6 +850,7 @@
     * [Securing data at rest](snyk-cli/security-concept-of-operations-for-snyk/securing-data-at-rest.md)
     * [Using FIPS-validated cryptography](snyk-cli/security-concept-of-operations-for-snyk/using-fips-validated-cryptography.md)
   * [Code execution warning for Snyk CLI](snyk-cli/code-execution-warning-for-snyk-cli.md)
+  * [Snyk MCP experimental](snyk-cli/snyk-mcp-experimental.md)
   * [Scan and maintain Projects using the CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/README.md)
     * [CLI tools](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/README.md)
       * [snyk-delta](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md)
