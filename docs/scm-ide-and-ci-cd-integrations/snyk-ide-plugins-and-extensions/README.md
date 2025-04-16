@@ -9,12 +9,12 @@ The following Snyk plugins and extensions are available.
 
 The following summarizes the versions of each IDE supported by the Snyk plugin or extension. Snyk recommends always using the latest version of the IDE plugin or extension.
 
-| Snyk plugin or extension      | IDE version supported                                                                                                                                                                                                |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Eclipse plugin                | <p>The latest Snyk Eclipse plugin supports use with Eclipse 2024-03 or newer.</p><p>Older plugin versions may support use with Eclipse 2023-03 or newer.</p>                                                         |
-| JetBrains plugin              | <p>The latest Snyk JetBrains plugin supports use with all JetBrains IDEs 2023.3 or newer.</p><p>Older plugin versions may support use with JetBrains IDEs 2020.3 or newer.</p>                                       |
-| Visual Studio extension       | <p>The latest version of the Snyk Visual Studio extension supports use with Visual Studio 2022 (version 17.5 and above).</p><p>Older extension versions may support use with Visual Studio 2015, 2017, and 2019.</p> |
-| Visual Sltudio Code extension | The latest version of the Snyk Visual Studio Code extension supports use with Visual Studio Code version 1.76.0 and later.                                                                                           |
+| Snyk plugin or extension     | IDE version supported                                                                                                                                                                                                |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Eclipse plugin               | <p>The latest Snyk Eclipse plugin supports use with Eclipse 2024-03 or newer.</p><p>Older plugin versions may support use with Eclipse 2023-03 or newer.</p>                                                         |
+| JetBrains plugin             | <p>The latest Snyk JetBrains plugin supports use with all JetBrains IDEs 2023.3 or newer.</p><p>Older plugin versions may support use with JetBrains IDEs 2020.3 or newer.</p>                                       |
+| Visual Studio extension      | <p>The latest version of the Snyk Visual Studio extension supports use with Visual Studio 2022 (version 17.5 and above).</p><p>Older extension versions may support use with Visual Studio 2015, 2017, and 2019.</p> |
+| Visual Studio Code extension | The latest version of the Snyk Visual Studio Code extension supports use with Visual Studio Code version 1.76.0 and later.                                                                                           |
 
 Snyk Security plugins and extensions find and fix security vulnerabilities and issues in Snyk Projects. This allows individual developers, open source contributors, and code maintainers to pass security reviews, avoid costly fixes later in development, and reduce time to develop and deliver secure code.
 
