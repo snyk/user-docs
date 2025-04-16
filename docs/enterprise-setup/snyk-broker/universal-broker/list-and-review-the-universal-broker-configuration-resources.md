@@ -7,6 +7,8 @@ The `snyk-broker-config` CLI tool provides resources to guide you in configuring
 * Deployments
 * Integrations
 
+For a complete list of the available workflows and commands, see the list of [`snyk-broker-config` commands](https://github.com/snyk/snyk-broker-config?tab=readme-ov-file#commands) in the repository.
+
 To list the resources, run `snyk-broker-config-workflows`.
 
 ```
