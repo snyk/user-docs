@@ -1,18 +1,20 @@
 # Disconnect and clean up
 
-The `snyk-broker-config workflows <RESOURCE> delete` commands help you remove resources.&#x20;
+The `snyk-broker-config workflows <RESOURCE> delete` commands allow you to remove resources.&#x20;
 
 Protections are in place to prevent invalid connection states, so you cannot delete connections that are integrated, and therefore relied upon, by Organizations. A disconnection step is required.
 
 `snyk-broker-config workflows connection delete` walks you through the disconnection steps.
 
-For other resources, you must delete the child items before you can delete a parent. A deployment contains connections and credentials references. Connections use credentials references. Each connection may be integrated by means of an integration with one or more Organizations.
+For other resources, you must delete the child items before you can delete a parent as illustrated in the diagram that follows. A deployment contains connections and credentials references. Connections use credentials references. Each connection may be integrated by means of an integration with one or more Organizations.
 
-`snyk-broker-config` commands walk you through this flow and indicate what needs to be done to achieve successful deletion, implementing and enforcing the following rules:
+`snyk-broker-config` commands walk you through this flow and indicate what needs to be done to achieve successful deletion. These commands implement and enforce the following rules:
 
 * Before you delete a connection, you must disconnect all integrations.
 * Before you delete a credentials reference, you must delete the connection(s) using it.
 * Before you deleting a deployment, you must delete all connections and credentials references.
+
+<figure><img src="../../../.gitbook/assets/Universal-Broker-data-model.png" alt=""><figcaption><p>Universal Broker resource data model illustrating child items to delete before parent items</p></figcaption></figure>
 
 ## Disconnect a connection
 
