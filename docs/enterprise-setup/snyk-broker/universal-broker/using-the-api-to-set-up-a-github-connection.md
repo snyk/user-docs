@@ -10,9 +10,9 @@ In any of the calls that follow, replace `api.snyk.io` with your regional equiva
 
 ## Install the Broker App for your Organization <a href="#id-1-install-the-broker-app-on-your-org" id="id-1-install-the-broker-app-on-your-org"></a>
 
-The Broker App facilitates the secure connection and communication with the Broker server through OAuth.
+The Universal Broker App facilitates the secure connection and communication with the Broker server through OAuth.
 
-Install the Universal Broker App at the Organization level. Group-level installation is not supported. Use the endpoint [Install a Snyk App to this Organization](../../../snyk-api/reference/apps.md#post-orgs-org_id-apps-installs).  The following is the App ID to use when you call the API:
+Install the Broker App at the Organization level. Group-level installation is not supported. Use the endpoint [Install a Snyk App to this Organization](../../../snyk-api/reference/apps.md#post-orgs-org_id-apps-installs).  The following is the App ID to use when you call the API:
 
 `Snyk Broker App ID: cb43d761-bd17-4b44-9b6c-e5b8ad077d33`
 
