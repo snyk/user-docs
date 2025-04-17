@@ -38,6 +38,7 @@ The following lists some of the main supported Gradle features:
 * [Built-in](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:declaring_public_repository) and [custom](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:declaring_custom_repository) package repositories, or example, Artifactory, Nexus
 * Built-in objects [`ext`](https://docs.gradle.org/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html), [`project`](https://docs.gradle.org/current/dsl/org.gradle.api.Project.html), `rootProject`, and [`settings`](https://docs.gradle.org/current/dsl/org.gradle.api.initialization.Settings.html)
 * Local and global variables, maps, and string interpolation
+* `allprojects` and `subprojects` blocks
 * Custom files referenced using `apply from`
 * [Type-safe project accessors](https://docs.gradle.org/current/userguide/declaring_dependencies_basics.html#sec:type-safe-project-accessors)
 * Gradle [lockfiles](https://docs.gradle.org/current/userguide/dependency_locking.html)
@@ -45,7 +46,8 @@ The following lists some of the main supported Gradle features:
 * [Dependency exclusions](https://docs.gradle.org/current/userguide/dependency_downgrade_and_exclude.html#sec:excluding-transitive-deps)
 * Version catalogs declared in [Gradle](https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog-declaration) and [TOML](https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format) files - `gradle/libs.versions.toml`
 * [Multi-project builds](https://docs.gradle.org/current/userguide/declaring_dependencies_between_subprojects.html), project names, project references
-* [Spring's `mavenBom`](https://docs.spring.io/dependency-management-plugin/docs/current/reference/html/#dependency-management-configuration-bom-import)
+* [Spring's `mavenBom`](https://docs.spring.io/dependency-management-plugin/docs/current/reference/html/#dependency-management-configuration-bom-import)&#x20;
+* [Spring Boot plugin BOMs](https://docs.spring.io/spring-boot/gradle-plugin/managing-dependencies.html)
 * Maven BOMs as [`platform`](https://docs.gradle.org/current/userguide/platforms.html#sub:using-platform-to-control-transitive-deps) dependencies
 
 Some Gradle features are not supported, and this may influence the scan results. These Gradle features include:
