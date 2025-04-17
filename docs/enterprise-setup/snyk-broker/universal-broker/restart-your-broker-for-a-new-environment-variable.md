@@ -1,8 +1,8 @@
 # Restart your Broker for a new environment variable
 
-If you change an environment variable, you must restart your Broker.
+If you change an environment variable, you must restart your Broker, except in Kubernetes deployments.
 
-You must use `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` for regional Snyk instances. For details, see [Broker URLs](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
+You must use `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` for regional Snyk instances. For details, see [Broker URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
 
 | <pre><code>docker run --restart=always \
     -p 8000:8000 \
@@ -22,3 +22,4 @@ At this point, the Broker will display a message like the following:
 </code></pre> |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
+In Kubernetes deployment with hot-loaded secrets, when you edit a secret, typically using a vault system or something similar, the values in the secrets are automatically updated into the mounted secret file. This allows the Broker to trigger a reloading while running, hot-loading the new valuew without needing to restart the container.
