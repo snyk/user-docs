@@ -17,9 +17,9 @@ You can address various issues detected by the Snyk Code engine in terms of qual
 | Supported  | Limited support |
 | ---------- | --------------- |
 | Java       | APEX            |
-| JavaScript | C/C++           |
-| Python     | C#              |
-| TypeScript | Go              |
+| JavaScript | C#              |
+| Python     | Go              |
+| TypeScript |                 |
 
 What is the difference between supported and limited support?&#x20;
 
