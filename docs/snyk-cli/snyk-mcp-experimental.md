@@ -29,7 +29,7 @@ Because the `snyk mcp` command is an experimental feature, the specific usage, p
 
 To start the Snyk MCP server, use the `snyk mcp` command for a supported transport type, `stdio` or `sse` as follows:
 
-`snyk mcp -t sse --experimental` - Start the Snyk MCP server using SSE (HTTP Server Side Events). Transport. The available endpoint is `/sse`&#x20;
+`snyk mcp -t sse --experimental` - Start the Snyk MCP server using SSE (HTTP Server-Sent Events). Transport. The available endpoint is `/sse`&#x20;
 
 `snyk mcp -t stdio --experimental` - Start the Snyk MCP server using Stdio (Standard IO) Transport.
 
@@ -48,7 +48,7 @@ To start the Snyk MCP server, use the `snyk mcp` command for a supported transpo
 
 To add an MCP server, check the documentation for the AI system where you plan to integrate Snyk and review the specific MCP instructions. Examples of systems where you can integrate Snyk include [Windsurf's MCP](https://docs.windsurf.com/windsurf/mcp), [Qodo's MCP support](https://docs.qodo.ai/qodo-documentation/qodo-gen/qodo-gen-chat/agentic-mode/agentic-tools-mcps), and [VS Code MCP support](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
-You may need to create or modify an `mcpconfig.json`\` file. This assumes that the Snyk CLI is in your system path and can be invoked with the command `snyk`. If the CLI is not in your system path, you can provide the full path to the CLI.
+You may need to create or modify an `mcpconfig.json` file. This assumes that the Snyk CLI is in your system path and can be invoked with the command `snyk`. If the CLI is not in your system path, you can provide the full path to the CLI.
 
 The following examples show how to add the Snyk MCP server in the `mcpconfig.json` file for each transport type.
 
