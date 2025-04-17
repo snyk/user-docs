@@ -1,16 +1,18 @@
-# Set up a GitHub connection using the API
+# Using the API to set up a GitHub connection&#x20;
 
-This page provides an example of using the Snyk API to set up a GitHub connection with the Universal Broker. Repeat connecting your Organization for as many integrations as needed.
+This page provides an example of using the API to set up a GitHub connection with the Universal Broker. Repeat connecting your Organization for as many integrations as needed.
 
-Using the `snyk-broker-config` command is recommended for an easier experience. The API allows for automation and more control, and also requires a clear understanding of Broker deployments, credentials, and connections.
+Using the `snyk-broker-config` CLI tool is recommended for an easier experience. The API allows for automation and more control, and also requires a clear understanding of Broker deployments, credentials, connections, and integrations.
 
 {% hint style="info" %}
-In any of the calls that follow, replace `api.snyk.io` with your regional equivalent if necessary, for example, `api.eu.snyk.io`.
+In any of the calls that follow, replace `api.snyk.io` with your regional equivalent if necessary, for example, `api.eu.snyk.io`. For a list of URLs, see [API URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#api-urls).
 {% endhint %}
 
 ## Install the Broker App for your Organization <a href="#id-1-install-the-broker-app-on-your-org" id="id-1-install-the-broker-app-on-your-org"></a>
 
-Install the Universal Broker App at the Organization level. Group-level installation is not supported. Use the endpoint [Install a Snyk App to this Organization](../../../snyk-api/reference/apps.md#orgs-org_id-apps-installs).  The following is the App ID to use when you call the API:
+The Broker App facilitates the secure connection and communication with the Broker server through OAuth.
+
+Install the Universal Broker App at the Organization level. Group-level installation is not supported. Use the endpoint [Install a Snyk App to this Organization](../../../snyk-api/reference/apps.md#post-orgs-org_id-apps-installs).  The following is the App ID to use when you call the API:
 
 `Snyk Broker App ID: cb43d761-bd17-4b44-9b6c-e5b8ad077d33`
 
@@ -60,7 +62,7 @@ At this point, you can start running the Broker client.
 
 ## Run your Broker deployment <a href="#run-your-broker-deployment_1" id="run-your-broker-deployment_1"></a>
 
-Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` if needed.
+Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` if needed. For a list of URLs, see [Broker URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
 
 | <pre><code>docker run --restart=always \
     -p 8000:8000 \
