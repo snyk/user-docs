@@ -1,19 +1,5 @@
 # Amazon EventBridge
 
-{% hint style="info" %}
-**Transition to Snyk Apps**
-
-Snyk is transitioning event forwarding integrations to use the Snyk Apps platform. This change will enable new features and enhanced security across current and future Cloud Events integrations.&#x20;
-
-During the transition, existing integrations will continue to function normally and customers will have the opportunity to authorize the integrations to ensure they continue working once they become Snyk Apps. You can complete authorization for existing integrations by following these steps:
-
-1. Navigate to the **Settings** page for your Organization
-2. Navigate to the settings section for the integration you want to authorize (e.g. Amazon EventBridge, AWS CloudTrail Lake, AWS Security Hub)
-3. Click the **Authorize app** button and complete the App authorization flow
-
-At the end of the transition window, **integrations that have not been authorized will no longer be able to forward events and will cease functioning.**
-{% endhint %}
-
 The [Amazon EventBridge](https://aws.amazon.com/eventbridge/) integration sends Snyk platform events to EventBridge, allowing you to integrate Snyk events into your existing AWS environments. The integration can be configured to send two different types of events:
 
 * **Snyk issue events:** These events are sent when new issues are discovered in a Snyk Project, or when an issue is updated. Each event contains information about the vulnerability or other problem found, including whether a remediation is available.
@@ -86,7 +72,7 @@ This event type includes core data about Snyk issues, including:
 * Issue severity
 * Whether a remediation is available
 
-Events are JSON formatted using the [Open Cybersecurity Schema Framework _finding_](https://schema.ocsf.io/1.0.0-rc.2/classes/security\_finding?extensions=) schema.&#x20;
+Events are JSON formatted using the [Open Cybersecurity Schema Framework _finding_](https://schema.ocsf.io/1.0.0-rc.2/classes/security_finding?extensions=) schema.&#x20;
 
 {% hint style="info" %}
 Not all Snyk issue data is included in these events, though Snyk is continually working to provide more complete event data.
