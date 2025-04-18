@@ -62,7 +62,7 @@ Reachability analysis using the Snyk CLI, IDE, or other integrations is not supp
 
 ## **Enabling Reachability** analysis **for brokered connections**
 
-If you use a brokered connection to your SCM, configure the Broker to provide access to your source files. See [Git Clone through Broker ](broken-reference)for configuration details for using Broker  with Snyk Code.&#x20;
+If you use a brokered connection to your SCM, configure the Broker to provide access to your source files. See [Clone an integration across your Snyk Organizations](../../enterprise-setup/snyk-broker/classic-broker/clone-an-integration-across-your-snyk-organizations.md) for configuration details for using Broker with Snyk Code.&#x20;
 
 ## Using Reachability analysis
 
