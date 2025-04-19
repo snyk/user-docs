@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **End of life**
 
-On June 22, 2023, Snyk [announced](https://updates.snyk.io/deprecation-and-end-of-life-for-the-list-all-projects-v1-api-267781) the plan to sunset the List all projects V1 API with end-of-life on December 22, 2023, in favor of the [REST List all projects API](https://apidocs.snyk.io/?version=2023-05-29#get-/orgs/-org_id-/projects).
+On June 22, 2023, Snyk [announced](https://updates.snyk.io/deprecation-and-end-of-life-for-the-list-all-projects-v1-api-267781) the plan to sunset the List all projects V1 API with end-of-life on December 22, 2023, in favor of the [REST List all projects API](https://apidocs.snyk.io/?version=2023-05-29#get-/orgs/-org_id-/projects). See [List all Projects for an Org with the given Org ID](../../snyk-api/reference/projects.md#get-orgs-org_id-projects).
 {% endhint %}
 
 ## What’s new in the REST Projects API?
