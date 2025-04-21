@@ -176,7 +176,7 @@ Ensure that the OCI\_REGISTRY\_NAME configured in the GitHub Secrets does not al
 
 After publishing the custom rules to an OCI registry, you can configure a separate pipeline to use these rules.
 
-One way to do this is by using the API endpoint [Update the Infrastructure as Code settings for a group](https://apidocs.snyk.io/patch-/groups/-group_id-/settings/#patch-/groups/-group_id-/settings/iac).
+One way to do this is by using the API endpoint [Update the Infrastructure as Code settings for a group](../../../snyk-api/reference/iacsettings.md#patch-groups-group_id-settings-iac).
 
 This means configuring the GitHub Action above with another job for updating Snyk to use the configured custom rules bundle:
 
