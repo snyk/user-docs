@@ -76,7 +76,7 @@ If you answered Yes to any of the above questions, then you need to deploy a new
 Snyk recommends creating a new Organization in Snyk specifically for the Snyk Essentials Broker.
 {% endhint %}
 
-Navigate to the [Snyk Broker](../../../enterprise-setup/snyk-broker/classic-broker/snyk-broker-essentials.md) page for more details about installing and configuring Snyk Essentials using Snyk Broker.
+Navigate to the [Snyk Broker](../../../enterprise-setup/snyk-broker/snyk-broker-essentials.md) page for more details about installing and configuring Snyk Essentials using Snyk Broker.
 
 ### Application context for SCM Integrations
 

@@ -36,7 +36,7 @@ Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-integrations/
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
-Navigate to the [Snyk Broker - SCM integrations](../../../enterprise-setup/snyk-broker/classic-broker/snyk-broker-essentials.md#scm-integrations) page for more details about installing and configuring Snyk AppRisk using Snyk Broker.
+Navigate to the [Snyk Broker - SCM integrations](../../../enterprise-setup/snyk-broker/snyk-broker-essentials.md#scm-integrations) page for more details about installing and configuring Snyk AppRisk using Snyk Broker.
 
 ### Third-party integrations
 
