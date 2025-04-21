@@ -113,7 +113,7 @@ For more information on Paket support, see [Snyk for .NET](./).
 
 ## Other
 
-Snyk provides custom test APIs for your unique dependency management strategies. navigate to the [List issues for a package](https://apidocs.snyk.io/?version=2022-11-14#get-/orgs/-org_id-/packages/-purl-/issues) page for more details.
+Snyk provides custom test APIs for your unique dependency management strategies. See the endpoint [List issues for a package](../../snyk-api/reference/issues.md#get-orgs-org_id-packages-purl-issues).
 
 ## Build-time versus runtime dependencies
 
