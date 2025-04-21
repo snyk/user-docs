@@ -19,7 +19,7 @@ After you have installed the `snyk-broker-config tool` :
 If you want to create a new deployment:
 
 * Run `snyk-broker-config workflows deployments create`.
-* Then run `synk-broker-config workflows connections create` again, and select the new deployment.
+* Then run `snyk-broker-config workflows connections create` again, and select the new deployment.
 * In `snyk-broker-config workflows connections create`, select the type of connection you want to create from the list presented.
 
 Options include SCM connection types like GitHub and variants, Bitbucket server and variants, GitLab, and Azure, as well as package registry connections, Jira, container registry integrations, and more.
