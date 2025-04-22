@@ -161,9 +161,7 @@ The report is based on the version released in 2023 by Mitre. The supported prod
 {% hint style="info" %}
 **Release status**&#x20;
 
-The PCI-DSS v4.0.1 report is in Early Access and available only with Enterprise plans. You can view it at Group level by replacing `{group-id}`  from the following syntax, with your Snyk Group ID:
-
-[https://app.snyk.io/group/{group-id}/reporting?v=1\&context\[page\]=pci-dss-v4.0.1](https://app.snyk.io/group/%7Bgroup-id%7D/reporting?v=1\&context\[page]=pci-dss-v4.0.1)
+The PCI-DSS v4.0.1 report is in Early Access and available only with Enterprise plans.
 {% endhint %}
 
 PCI Security Standards are technical and operational requirements created by the PCI Security Standards Council (PCI SSC) to safeguard cardholder data. These standards apply to all entities that store, process, or transmit this information and include requirements for software developers and manufacturers.\
@@ -310,9 +308,7 @@ Teams can filter by date and Organization.
 {% hint style="info" %}
 **Release status**
 
-The Repositories Tested in CI/CD report is in Early Access and available only with Enterprise plans. You can view it at the Group level by replacing `{group-id}` from the following syntax, with your Snyk Group ID:
-
-[https://app.snyk.io/group/{group-id}/reporting?v=1\&context\[page\]=test-usage-in-cicd-pipelines](https://app.snyk.io/group/%7Bgroup-id%7D/reporting?v=1\&context\[page]=test-usage-in-cicd-pipelines)
+The Repositories Tested in CI/CD report is in Early Access and available only with Enterprise plans.&#x20;
 {% endhint %}
 
 To use this report, you must ensure you have installed Snyk CLI version 1.1292.1 or newer.
