@@ -1,5 +1,10 @@
 # API endpoints index and tips
 
+{% hint style="info" %}
+**How to find your `org_id`**\
+Log in to Snyk, navigate to your **Organization**, and then to your **Settings** > **General**. The **Organization ID** is on the General settings page, and you can copy it.
+{% endhint %}
+
 This index and notes section of the documentation provides, in addition to this index, \[solutions for specific use cases]\(solutions-for-specific-use-cases.md), \[scenarios for using Snyk APIs]\(scenarios-for-using-the-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
 
 * [Organization and Group identification for Projects using the API](organization-and-group-identification-for-projects-using-the-api.md)
