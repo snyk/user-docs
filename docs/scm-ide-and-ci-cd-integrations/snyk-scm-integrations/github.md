@@ -142,22 +142,22 @@ A Snyk Organization administrator can [designate a specific GitHub account to us
 Note that Snyk will continue to use a random Snyk Organization member's GitHub account to perform all the other operations. Therefore using this feature does not eliminate the need to connect users' GitHub accounts to Snyk.
 {% endhint %}
 
-### **How to set up a GitHub account to open Snyk PRs**
+### **How to set up a GitHub account to open Snyk PRs** and enable the Pull Request Experience
 
-Snyk lets you designate a specific GitHub account to open fix and upgrade pull requests.
+You can designate a specific GitHub account to open fix and upgrade pull requests, and enable the [Pull Request Experience](../../scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md).
 
 {% hint style="info" %}
-The configured account is only used for opening PRs. All other operations are still performed on behalf of a randomly selected Snyk Organization member who has connected their GitHub accounts to Snyk.
+The configured account is only used for opening PRs and posting issue summary and inline comments. All other operations are still performed on behalf of a randomly selected Snyk Organization member who has connected their GitHub accounts to Snyk.
 {% endhint %}
 
 To use this feature, follow these steps:
 
-1. Go to the GitHub Integrations settings page in the Snyk Web UI using Organization **Settings** **>** **Integrations > Source control > GitHub.**
+1. Navigate to the GitHub Integrations settings page in the Snyk Web UI using Organization **Settings** **>** **Integrations > Source control > GitHub.**
 2. In the **Open Snyk automatic PRs from a fixed GitHub account** section, enter your GitHub personal access token.\
    You can [generate this from your GitHub account](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 3. Click **Save** to enable this feature.
 
-<div align="center"><figure><img src="../../.gitbook/assets/image (5) (1) (3).png" alt="Set an account to open Snyk PRs" width="563"><figcaption><p>Set an account to open Snyk PRs</p></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/PAT_config.png" alt=""><figcaption><p>Set an account to open Snyk PRs and to enable the Pull Request Experience</p></figcaption></figure>
 
 {% hint style="info" %}
 Ensure that the GitHub account that you designate to open Snyk PRs has **write-level** permissions or higher for the repos you want to monitor with Snyk.
