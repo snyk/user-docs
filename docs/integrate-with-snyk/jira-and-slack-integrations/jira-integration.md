@@ -14,7 +14,7 @@ If your Jira instance is private, use [the Snyk Broker deployment method](../../
 
 ## **Prerequisites for Jira integration with Snyk**
 
-* Snyk supports Jira from version 5 to version 9.
+* Snyk supports Jira from version 5 to version 10.
 * The following [Jira permissions](https://confluence.atlassian.com/adminjiraserver073/managing-project-permissions-861253293.html) are required: **Browse Projects** and **Create Issues.**
 
 ## **How to set up your Jira integration**
