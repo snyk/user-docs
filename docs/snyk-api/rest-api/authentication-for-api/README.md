@@ -6,6 +6,10 @@
 To use the Snyk API, you must be an Enterprise plan customer and have a token from Snyk.
 {% endhint %}
 
+{% hint style="warning" %}
+Use the URL for your region when calling an API. See [API URLs](../about-the-rest-api.md#api-urls).
+{% endhint %}
+
 Enterprise users have [access to a personal token under their profile](./#how-to-obtain-your-personal-token) and to service account tokens. The personal API token is associated with your Snyk Account and not with a specific Organization. Service accounts are associated with an Organization or a Group. For more information, see [Service accounts](../../../enterprise-setup/service-accounts/).
 
 * **Enterprise users should use a service account** to authenticate for any kind of automation. This includes, but is not limited to, CI/CD scanning with the CLI or build system plugins and any automation, including automation with the API.
