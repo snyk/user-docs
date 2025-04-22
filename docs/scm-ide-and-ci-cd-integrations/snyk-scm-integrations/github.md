@@ -157,7 +157,7 @@ To use this feature, follow these steps:
    You can [generate this from your GitHub account](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 3. Click **Save** to enable this feature.
 
-<figure><img src="../../.gitbook/assets/PAT_config.png" alt=""><figcaption><p>Set an account to open Snyk PRs and to enable the Pull Request Experience</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pat_config.png" alt=""><figcaption><p>Set an account to open Snyk PRs and to enable the Pull Request Experience</p></figcaption></figure>
 
 {% hint style="info" %}
 Ensure that the GitHub account that you designate to open Snyk PRs has **write-level** permissions or higher for the repos you want to monitor with Snyk.
