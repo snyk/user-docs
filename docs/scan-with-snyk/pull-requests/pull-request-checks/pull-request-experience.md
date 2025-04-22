@@ -20,7 +20,9 @@ The following features are part of the Pull Request Experience:
 {% hint style="info" %}
 **Release status**
 
-Issue Summary Comment for Snyk PR Checks is in [Early Access](../../../getting-started/snyk-release-process.md#early-access).
+Issue Summary Comment for Snyk PR Checks is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR Checks.
+
+Issue Summary Comment for Snyk PR Checks fully supports GitHub integrations and Bitbucket Cloud integrations.
 {% endhint %}
 
 The Issue Summary Comment feature adds a comment to each pull request, summarizing the latest PR Check results. The summary includes the type of checks performed and a breakdown of the findings by severity. Select **View Details** to access the PR Check details in the Snyk Web UI.
@@ -32,7 +34,9 @@ The Issue Summary Comment feature adds a comment to each pull request, summarizi
 {% hint style="info" %}
 **Release status**
 
-Inline Comments for Snyk PR Checks is in [Early Access](../../../getting-started/snyk-release-process.md#early-access) and available only for Snyk Code PR Checks.
+Inline Comments for Snyk PR Checks is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR Checks.
+
+Inline Comments for Snyk PR Checks fully supports GitHub integrations and Bitbucket Cloud integrations.
 {% endhint %}
 
 The Inline Comments feature adds a detailed comment for each issue identified by the Snyk Code Pull Request Check. Each comment includes the severity level, the name and a short description of the issue, helpful links for further information, and, if applicable, the data flow.&#x20;
@@ -63,7 +67,7 @@ Configure the Pull Request Experience for one or more integrations in your Snyk 
 
 For the GitHub integration, configure opening fix and upgrade pull requests from a fixed GitHub account, by providing a Personal Access Token (PAT), which has `write` permissions or above to the repos monitored by Snyk. See[ ](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)[Opening fix and upgrade pull requests from a fixed GitHub account](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md) for more information.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Configuration details for the GitHub integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pat_config.png" alt=""><figcaption><p>Configuration details for the GitHub integration</p></figcaption></figure>
 
 ## Known limitations
 
