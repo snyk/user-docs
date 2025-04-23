@@ -862,19 +862,6 @@ Please reach out to the account team to get access.
 **HTTP Status:** [421](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/421)
 
 
-### [SNYK-CODE-0013](#snyk-code-0013)
-
-#### Decryption time out for the requested Sast Rule extensions
-
-Decrypting the Sast Rule extensions for the requested Organization ID process timed out.
-You have created too many published rules for the Sast Rule extensions beta. 
-
-Please remove one or more to try again.
-If the issue persists, please open a customer support ticket.
-
-**HTTP Status:** [408](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/408)
-
-
 ### [SNYK-CODE-0014](#snyk-code-0014)
 
 #### Rules relationships must be unique
@@ -2788,4 +2775,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-04-20T16:50:36.565Z
+--- Generated at 2025-04-23T13:34:22.640Z
