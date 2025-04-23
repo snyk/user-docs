@@ -12,7 +12,7 @@ To test and monitor dependencies managed by [Bazel](./), it is recommended that 
 Follow these basic steps:
 
 1. For each type of dependency, for example, Maven, Cocoapods, create a [Dep Graph JSON object](https://github.com/snyk/dep-graph) listing all the dependency packages and versions. See [Example of Snyk for Baszel](dep-graph-api.md#example-of-snyk-for-bazel).
-2.  As part of a Bazel test rule, send the Dep Graph JSON object as a POST request to the endpoint [Test Dep Graph](../../../snyk-api/reference/test-v1.md#test-dep-graph), along with your [auth token](../../../snyk-api/rest-api/authentication-for-api/). An example curl request follows:
+2.  As part of a Bazel test rule, send the Dep Graph JSON object as a POST request to the endpoint [Test Dep Graph](../../../snyk-api/reference/test-v1.md#test-dep-graph), along with your [auth token](../../../snyk-api/authentication-for-api/). An example curl request follows:
 
     ```
     curl -X POST 'https://api.snyk.io/v1/test/dep-graph' \

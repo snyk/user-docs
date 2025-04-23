@@ -77,7 +77,7 @@ To obtain your personal Snyk API token:
 
 If you want a new API token, select **Revoke & Regenerate**, but be aware that this will make the previous API token invalid.
 
-For information on when to use an API token and when to use a service account token, available to Enterprise plan users only, see [Authentication for API](../snyk-api/rest-api/authentication-for-api/).
+For information on when to use an API token and when to use a service account token, available to Enterprise plan users only, see [Authentication for API](../snyk-api/authentication-for-api/).
 
 ## Import a Project to scan and identify issues
 

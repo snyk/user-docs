@@ -1,17 +1,17 @@
 # Pull Request Templates
 
 {% hint style="info" %}
-This document uses the REST API. For more details, see the [Authentication for API](../rest-api/authentication-for-api/) page.
+This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
 {% endhint %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/pull_request_template" method="post" %}
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/pull_request_template" method="post" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/pull_request_template" method="get" %}
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/pull_request_template" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/pull_request_template" method="delete" %}
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/pull_request_template" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endswagger %}
+{% endopenapi %}

@@ -49,7 +49,7 @@ To continuously avoid known vulnerabilities in your dependencies, integrate Snyk
 
 ### Set up automatic monitoring
 
-If you monitor a Project with Snyk, you will be notified if the dependencies in your Project are affected by newly disclosed vulnerabilities. To ensure the list of dependencies Snyk has for your Open Source Project is up to date, refresh it continuously by running `snyk monitor` in your deployment process. Configure your environment to include the `SNYK_TOKEN` environment variable. You can [find your API token ](../../../snyk-api/rest-api/authentication-for-api/)in your Snyk account settings.
+If you monitor a Project with Snyk, you will be notified if the dependencies in your Project are affected by newly disclosed vulnerabilities. To ensure the list of dependencies Snyk has for your Open Source Project is up to date, refresh it continuously by running `snyk monitor` in your deployment process. Configure your environment to include the `SNYK_TOKEN` environment variable. You can [find your API token ](../../../snyk-api/authentication-for-api/)in your Snyk account settings.
 
 ### API token configuration
 

@@ -31,7 +31,7 @@ This API is available only over HTTPS. Calling the API over HTTP will yield a 40
 
 ## Authorization
 
-To use this API, you must get your token from Snyk. You can find the token in your [personal account settings](https://snyk.io/account/) after you register with Snyk and log in. For details, see [Authentication for API](rest-api/authentication-for-api/).&#x20;
+To use this API, you must get your token from Snyk. You can find the token in your [personal account settings](https://snyk.io/account/) after you register with Snyk and log in. For details, see [Authentication for API](authentication-for-api/).&#x20;
 
 Provide the token in an `Authorization` header with the token, preceded by `token`:
 

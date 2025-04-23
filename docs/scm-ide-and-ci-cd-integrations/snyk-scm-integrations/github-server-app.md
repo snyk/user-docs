@@ -141,7 +141,7 @@ To set up the integration you will need the following:
 
 * The base API address for your Snyk region; refer to the list of [API URLs](../../working-with-snyk/regional-hosting-and-data-residency.md#api-urls) for Snyk regional hosting.
 * The Snyk Organization ID you want to set up the integration in.
-* A valid [Snyk API token](../../snyk-api/rest-api/authentication-for-api/#how-to-obtain-your-personal-token).
+* A valid [Snyk API token](../../snyk-api/authentication-for-api/#how-to-obtain-your-personal-token).
 * `snyk-broker-config` tool installed
 * Tenant Admin role
 

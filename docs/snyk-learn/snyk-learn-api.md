@@ -8,7 +8,7 @@ The Snyk Learn API endpoints are [Beta](../snyk-api/rest-api/about-the-rest-api.
 
 The Snyk Learn API endpoints are part of the [Snyk REST API](../snyk-api/rest-api/about-the-rest-api.md) and allow for programmatic interaction with Snyk Learn.
 
-The Snyk REST API requires authentication. For information about authentication, see [Authentication for API](../snyk-api/rest-api/authentication-for-api/).
+The Snyk REST API requires authentication. For information about authentication, see [Authentication for API](../snyk-api/authentication-for-api/).
 
 The following table shows the Snyk Learn API endpoints available for each plan. For more information about plans, see [Plans and pricing](https://snyk.io/plans/).
 
