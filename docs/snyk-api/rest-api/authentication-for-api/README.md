@@ -41,7 +41,7 @@ curl --request GET \
 
 ## Authenticating for Snyk Apps
 
-If you are using the [Snyk Apps APOs](../../using-specific-snyk-apis/snyk-apps-apis/), provide the `access_token` in an `Authorization: bearer` header as follows:
+If you are using the [Snyk Apps APIs](../../using-specific-snyk-apis/snyk-apps-apis/), provide the `access_token` in an `Authorization: bearer` header as follows:
 
 ```bash
 curl --request GET \
