@@ -6,14 +6,15 @@ For more information, see [Scanning overview](scanning-overview.md) and [Start s
 
 ## Select scanning methods
 
-Snyk supports scanning methods that correspond to Snyk products. Choose the right scanning method for the job you want to do, to find and fix issues early in the Software Development Life Cycle.
+Snyk supports scanning methods that correspond to Snyk products. Choose the right scanning method for the job you want to do, to find and fix issues not only early in the Software Development Life Cycle, but also after your web application is live.
 
 * [Snyk Open Source](snyk-open-source/): scan your open-source libraries for vulnerabilities and license issues.\
-  More information: [Open Source Security Explained](https://snyk.io/series/open-source-security/).
+  For more information, see [Open Source Security Explained](https://snyk.io/series/open-source-security/).
 * [Snyk Code](snyk-code/): scan your code for security vulnerabilities using source code analysis.\
-  More information: [Exploring the advanced technologies behind Snyk Code](https://snyk.io/blog/advanced-technologies-behind-snyk-code/).
+  For more information, see [Exploring the advanced technologies behind Snyk Code](https://snyk.io/blog/advanced-technologies-behind-snyk-code/).
 * [Snyk Container](snyk-container/): scan for container image and workload vulnerabilities.
 * [Snyk Infrastructure as Code: ](snyk-iac/)scan for issues in your cloud infrastructure configurations, before and after deployment.
+* [Snyk API & Web](https://snyk.io/product/dast-api-web/): discover and test the security of all your APIs and web apps, including those AI-generated. See [Snyk API & Web Help Center](https://help.probely.com/en/) and [Snyk API & Web Developers documentation](https://developers.probely.com/).
 
 ## Run pull request checks
 
