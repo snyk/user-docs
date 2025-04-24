@@ -74,13 +74,13 @@ Enable it using [Snyk Preview](../../snyk-admin/snyk-preview.md) and install CLI
 
 The following table shows a matrix of pnpm versions and Snyk features availability.
 
-<table><thead><tr><th>pnpm version</th><th>CLI support</th><th width="151">SCM support</th><th>License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td>pnpm 7</td><td>✔︎ (Early Access)</td><td></td><td>✔︎ (Early Access)</td><td></td></tr><tr><td>pnpm 8</td><td>✔︎ (Early Access)</td><td></td><td>✔︎ (Early Access)︎</td><td></td></tr><tr><td>pnpm 9</td><td>✔︎ (Early Access)︎</td><td></td><td>✔︎ (Early Access)︎</td><td></td></tr></tbody></table>
+<table><thead><tr><th>pnpm version</th><th>CLI support</th><th width="151">SCM support</th><th>License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td>pnpm 7</td><td>✔︎ (Early Access)</td><td></td><td>✔︎ (Early Access)</td><td></td></tr><tr><td>pnpm 8</td><td>✔︎ (Early Access)</td><td></td><td>✔︎ (Early Access)︎</td><td></td></tr><tr><td>pnpm 9</td><td>✔︎ (Early Access)︎</td><td></td><td>✔︎ (Early Access)︎</td><td></td></tr><tr><td>pnpm 10</td><td>✔︎ (Early Access)︎</td><td></td><td>✔︎ (Early Access)︎</td><td></td></tr></tbody></table>
 
 **Lockfile versions**
 
 Snyk uses the `pnpm-lock.yaml` lockfile to generate a dependency tree for your project.&#x20;
 
-The supported lockfile versions are 5.4, 6.x and 9.x, corresponding to pnpm 7, 8 and 9.
+The supported lockfile versions are 5.4, 6.x and 9.x, as used by pnpm 7, 8, 9 and 10.
 
 pnpm lockfiles do not include [bundledDependencies](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#bundledependencies), so Snyk does not include them in scans.
 
