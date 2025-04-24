@@ -44,4 +44,4 @@ output:
 changelog:
     historicalVersionCutoff: "2024-05-24"
     syncStateFile:  tools/api-docs-generator/sync-state.yml
-    changelogFile:  docs/snyk-api/rest-api/changelog.md
+    changelogFile:  docs/snyk-api/changelog.md
