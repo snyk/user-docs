@@ -77,10 +77,10 @@ This enables Snyk to see the `import` statements in your `.go` source files, and
 
 To enable full source code analysis, adjust your settings as follows:
 
-1. Log in to your account and select your Group and Organization.
-2. Navigate to **Settings,** then **Languages**.
+1. Log in to your account and select your Organization.
+2. Navigate to **Settings** > **Snyk Open Source**.
 3. Select **Edit settings** for **Go**.
-4. Toggle full source code analysis on or off.
+4. Toggle **Enable full source code analysis** on or off.
 
 <figure><img src="../../.gitbook/assets/image (149) (1).png" alt=""><figcaption><p>Enable full source code analysis</p></figcaption></figure>
 
@@ -111,5 +111,3 @@ Go Modules Projects imported using new [Snyk Broker](../../enterprise-setup/snyk
 To add support to clients created before December 30, 2020, add `go.mod` and `go.sum` to your `accept.json` file, as per the changes in this [pull request](https://github.com/snyk/broker/pull/299/files).
 
 If you're using private Go Modules integrated through the Broker, each private module must have a `go.mod` file defined.
-
-####
