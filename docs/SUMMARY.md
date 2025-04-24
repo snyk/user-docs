@@ -5,7 +5,7 @@
 * [What is Snyk?](what-is-snyk.md)
 * [Getting started](getting-started/README.md)
   * [Explore the Snyk Web UI](getting-started/snyk-web-ui.md)
-  * [Snyk Release Process](getting-started/snyk-release-process.md)
+  * [Snyk release process](getting-started/snyk-release-process.md)
   * [Glossary](getting-started/glossary.md)
 * [Supported languages, package managers, and frameworks](supported-languages-package-managers-and-frameworks/README.md)
   * [Technical specifications and guidance](supported-languages-package-managers-and-frameworks/technical-specifications-and-guidance.md)
