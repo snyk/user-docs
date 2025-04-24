@@ -694,6 +694,7 @@
       * [IAC sources usage](scan-with-snyk/snyk-iac/detect-drift-and-manually-created-resources/iac-sources-usage.md)
   * [Snyk Essentials](scan-with-snyk/snyk-essentials.md)
   * [Snyk AppRisk](scan-with-snyk/snyk-apprisk.md)
+  * [Snyk API & Web](https://help.probely.com/en/)
   * [Snyk Tools](scan-with-snyk/snyk-tools/README.md)
     * [Tool: snyk-api-import](scan-with-snyk/snyk-tools/tool-snyk-api-import/README.md)
       * [Creating Organizations in Snyk](scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md)
