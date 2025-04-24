@@ -44,7 +44,7 @@ docker run --restart=always \
 Snyk Essentials is set by default to **`false`**. Enable it by setting the flag to **`true`**.
 {% endhint %}
 
-As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the BitBucket Server/Data Center integration.
+As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../custom-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the BitBucket Server/Data Center integration.
 
 ## Configure Broker to be used with Bitbucket using a Personal Access Token (PAT)
 
@@ -77,7 +77,7 @@ docker run --restart=always \
 Snyk Essentials is set by default to **`false`**. Enable it by setting the flag to **`true`**.
 {% endhint %}
 
-As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the BitBucket Server/Data Center integration.
+As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../custom-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the BitBucket Server/Data Center integration.
 
 ## Start the Broker Client container and verify the connection with Bitbucket
 

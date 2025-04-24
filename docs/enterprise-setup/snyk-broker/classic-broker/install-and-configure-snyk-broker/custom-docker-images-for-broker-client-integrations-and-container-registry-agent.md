@@ -1,10 +1,10 @@
-# Derived Docker images for Broker Client integrations and Container Registry Agent
+# Custom Docker images for Broker Client integrations and Container Registry Agent
 
 {% hint style="info" %}
-Using the information on this page is not required to set up Broker Client integrations. You may use a derived Docker image to set up a Broker Client integration. This is an alternative to running the command explained in the instructions for setting up each integration.
+Using the information on this page is not required to set up Broker Client integrations. You may use a custom Docker image to set up a Broker Client integration. This is an alternative to running the command explained in the instructions for setting up each integration.
 {% endhint %}
 
-## Derived Docker image for Azure Repos Broker integration setup
+## Custom Docker image for Azure Repos Broker integration setup
 
 As an alternative to using the Docker run command shown on the [setup page](azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md), you can build your own Docker image and override relevant environment variables:
 
@@ -19,7 +19,7 @@ ENV BROKER_CLIENT_URL   http://my.broker.client:8000
 ENV PORT                8000
 ```
 
-## Derived Docker image for Bitbucket Server/Data Center Broker integration setup
+## Custom Docker image for Bitbucket Server/Data Center Broker integration setup
 
 As an alternative to using the Docker run command shown on the [setup page](bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/data-center.md), you can build your own Docker image and override relevant environment variables:
 
@@ -34,7 +34,7 @@ ENV BITBUCKET_API       your.bitbucket-server.domain.com/rest/api/1.0
 ENV PORT                8000
 ```
 
-## Derived Docker image for GitHub Broker integration setup
+## Custom Docker image for GitHub Broker integration setup
 
 As an alternative to using the Docker run command shown on the [setup page](github-prerequisites-and-steps-to-install-and-configure-broker/github-install-and-configure-using-docker.md), you can build your own Docker image and override relevant environment variables:
 
@@ -47,7 +47,7 @@ ENV PORT              8000
 ENV BROKER_CLIENT_URL http://my.broker.client:8000
 ```
 
-## Derived Docker image for GitHub Enterprise Broker integration setup
+## Custom Docker image for GitHub Enterprise Broker integration setup
 
 As an alternative to using the Docker run command shown on the [setup page](github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md), you can build you own Docker image and override relevant environment variables:
 
@@ -63,7 +63,7 @@ ENV PORT              8000
 ENV BROKER_CLIENT_URL http://my.broker.client:8000
 ```
 
-## Derived Docker image for GitLab Broker integration setup
+## Custom Docker image for GitLab Broker integration setup
 
 As an alternative to using the Docker run command shown on the [setup page](gitlab-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-gitlab.md), you can build your own Docker image and override relevant environment variables:
 
@@ -77,7 +77,7 @@ ENV BROKER_CLIENT_URL   http://my.broker.client:8000
 ENV PORT                8000
 ```
 
-## Derived Docker image for Jira Broker integration setup
+## Custom Docker image for Jira Broker integration setup
 
 As an alternative to using the Docker run command shown on the [setup page](jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md), you can build your own Docker image and override relevant environment variables:
 
@@ -91,7 +91,7 @@ ENV JIRA_HOSTNAME       your.jira.domain.com
 ENV PORT                8000
 ```
 
-## Derived Docker image for Artifactory Broker integration setup
+## Custom Docker image for Artifactory Broker integration setup
 
 As an alternative to using the Docker run command shown on the [setup page](artifactory-repository-install-and-configure-broker/set-up-snyk-broker-with-artifactory-repository.md), you can build your own Docker image and override relevant environment variables:
 
@@ -102,7 +102,7 @@ ENV BROKER_TOKEN      secret-broker-token
 ENV ARTIFACTORY_URL   <yourdomain>.artifactory.com
 ```
 
-## Derived Docker image for Nexus 3 Broker integration setup
+## Custom Docker image for Nexus 3 Broker integration setup
 
 As an alternative to using the Docker run command shown on the [setup page](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md), you can build your own Docker image and override relevant environment variables:
 
@@ -120,7 +120,7 @@ ENV RES_BODY_URL_SUB                 https://<your.nexus.hostname>/repository
 By default for Nexus 3, the X-Forwarded-For headers are stripped off by the Broker Client so Nexus returns the npm tarball uri to the Nexus Registry instead of the Broker Server. Include the environment variable `REMOVE_X_FORWARDED_HEADERS=false` to disable this behavior.
 {% endhint %}
 
-## Derived Docker image for Nexus 2 Broker integration setup
+## Custom Docker image for Nexus 2 Broker integration setup
 
 As an alternative to using the Docker run command shown on the [setup page](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md), you can build your own Docker image and override relevant environment variables:
 
@@ -137,7 +137,7 @@ ENV RES_BODY_URL_SUB                 https://<your.nexus.hostname>/nexus/content
 By default for Nexus 2, the X-Forwarded-For headers are stripped off by the Broker Client so Nexus returns the npm tarball uri to the Nexus Registry instead of the Broker Server. Include the environment variable REMOVE\_X\_FORWARDED\_HEADERS=false to disable this behavior.
 {% endhint %}
 
-## Derived Docker image for Container Registry Agent setup
+## Custom Docker image for Container Registry Agent setup
 
 As an alternative to using the Docker run command shown on the [setup page](../../snyk-broker-container-registry-agent/), you can build your own Docker image and override relevant environment variables:
 

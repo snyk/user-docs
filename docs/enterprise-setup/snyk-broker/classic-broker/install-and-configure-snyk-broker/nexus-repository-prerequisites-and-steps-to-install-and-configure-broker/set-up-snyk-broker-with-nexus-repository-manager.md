@@ -56,7 +56,7 @@ docker run --restart=always \
 
 You can find your `BASE_NEXUS_URL` by visiting the Nexus UI and navigating to the server tab under **Administration**, then selecting the **Base URL** entry without a trailing slash. This will typically end with `/nexus`, but may vary with non-default deployments. If you have a custom base URL then you must also set the `NEXUS_URL` environment variable to point to the URL where your repositories live. By default this is configured as `/nexus/content` but should follow a similar format to your base URL.
 
-As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Nexus3 integration.
+As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../custom-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Nexus3 integration.
 
 ## Start the Broker Client container and verify the connection with Nexus Repository Manager
 
