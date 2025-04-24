@@ -3027,7 +3027,7 @@ paths:
           style: simple
           schema:
             type: string
-            example: npm:qs:20140806-1
+            example: SNYK-JS-QS-10019
       responses:
         '200':
           description: ''
@@ -3080,7 +3080,7 @@ paths:
           style: simple
           schema:
             type: string
-            example: npm:qs:20140806-1
+            example: SNYK-JS-QS-10019
       requestBody:
         description: ''
         content:
@@ -3146,7 +3146,7 @@ paths:
           style: simple
           schema:
             type: string
-            example: npm:qs:20140806-1
+            example: SNYK-JS-QS-10019
       requestBody:
         description: ''
         content:
@@ -3216,7 +3216,7 @@ paths:
           style: simple
           schema:
             type: string
-            example: npm:qs:20140806-1
+            example: SNYK-JS-QS-10019
       responses:
         '200':
           description: ''
