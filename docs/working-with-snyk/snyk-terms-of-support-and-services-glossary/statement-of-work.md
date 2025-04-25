@@ -24,7 +24,7 @@ Two tiers are available to align with the Customer's specific needs:
 {% hint style="info" %}
 \* Tier 1 Terms:
 
-* Available for Probely implementation use only
+* Available for Snyk API & Web implementation use only
 * All hours need to be consumed within 90 days of contract start date
 {% endhint %}
 

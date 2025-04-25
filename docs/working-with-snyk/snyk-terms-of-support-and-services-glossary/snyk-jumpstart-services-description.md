@@ -27,7 +27,7 @@ The Snyk Consultant will deliver the following services related to the setup of 
 6. [Snyk IaC configuration](snyk-jumpstart-services-description.md#snyk-iac-configuration)
 7. [Snyk Essentials configuration](snyk-jumpstart-services-description.md#snyk-apprisk-essentials-prioritization-configuration)
 8. [Snyk AppRisk configuration](snyk-jumpstart-services-description.md#snyk-apprisk-pro-configuration)
-9. [Probely configuration](snyk-jumpstart-services-description.md#probely-configuration)
+9. [Snyk API & Web configuration](snyk-jumpstart-services-description.md#snyk-api-and-web-configuration-details)
 
 ## Pre-engagement planning and preparation
 
@@ -294,17 +294,17 @@ The Customer will be provided with a document that provides a comprehensive over
 | Walkthrough of prioritized issues in AppRisk                                 | Gain an understanding of how to filter and prioritize issues in the Asset Dashboard using deployed and loaded package risk factors |
 | Documentation close-out                                                      | Gain an understanding of work completed                                                                                            |
 
-## Probely (a Snyk business) configuration details
+## Snyk API & Web configuration details
 
-### Delivery approach - Probely (a Snyk business) configuration
+### Delivery approach - Snyk API & Web configuration
 
 #### **Web Target configuration, including authenticated scans**
 
-The Snyk Consultant will work with the Customer to configure [Web Targets](https://help.probely.com/en/articles/3292779-how-to-set-up-target-authentication-with-a-login-form?q=Web+Target+configuration) (up to three web applications) to be scanned by Probely (a Snyk business). This includes configuring the authentication for each Target where necessary, such as using a login form or recorded login sequence. Snyk will also help to set up a single navigation sequence for each web application.
+The Snyk Consultant will work with the Customer to configure [Web Targets](https://help.probely.com/en/articles/3292779-how-to-set-up-target-authentication-with-a-login-form?q=Web+Target+configuration) (up to three web applications) to be scanned by Snyk API & Web. This includes configuring the authentication for each Target where necessary, such as using a login form or recorded login sequence. Snyk will also help to set up a single navigation sequence for each web application.
 
 #### **API Target configuration**
 
-The Snyk Consultant will work with the Customer to [configure API collections](https://help.probely.com/en/articles/8178059-how-to-configure-an-api-target-postman-collection) (maximum of one collection) to be scanned by Probely (a Snyk business), using a Postman Collection or OpenAPI definition.
+The Snyk Consultant will work with the Customer to [configure API collections](https://help.probely.com/en/articles/8178059-how-to-configure-an-api-target-postman-collection) (maximum of one collection) to be scanned by Snyk API & Web, using a Postman Collection or OpenAPI definition.
 
 #### **Domain Ownership Verification**
 
@@ -316,22 +316,22 @@ The Snyk Consultant will work with the Customer to configure the [Scanning Agent
 
 #### **Review of Target Scan Results**
 
-The Snyk Consultant will educate the Customer on understanding a [DAST scan](https://help.probely.com/en/articles/6843262-how-to-interpret-target-scan-results) for Web and API Targets in the Probely UI, including the different reporting functionality that is available in the tool.
+The Snyk Consultant will educate the Customer on understanding a [DAST scan](https://help.probely.com/en/articles/6843262-how-to-interpret-target-scan-results) for Web and API Targets in the Snyk API & Web UI, including the different reporting functionality that is available in the tool.
 
 #### Documentation close-out
 
 The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, the document offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document puts forth practical recommendations and actionable next steps that will aid the Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document provides an essential guide for customers to realize the full potential of their investment in Snyk.
 
-### Target Initiatives - Probely (a Snyk business) configuration
+### Target Initiatives - Snyk API & Web configuration
 
-| Probely configuration                                                                  | Outcome                                                                                                                                                                                           |
-| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Web Target configuration, including Authenticated Scans (up to three web applications) | A maximum of three web applications are configured in Probely for scanning, including Authentication. For each application there is a maximum of one login sequence and one navigation sequence). |
-| API Target configuration (up to one API collection)                                    | One API collection is configured in Probely for scanning.                                                                                                                                         |
-| Domain Ownership Verification                                                          | Domain Ownership Verification is completed for one domain.                                                                                                                                        |
-| Scanning Agent Configuration (one agent)                                               | A maximum of one Scanning Agent is configured to enable Probely to scan internal applications without internet access.                                                                            |
-| Review of Target Scan Results                                                          | Target Scan Results are reviewed to ensure the Customer understands how to process the DAST findings and prioritize fixing the issues.                                                            |
-| Documentation close-out                                                                | Gain an understanding of work completed.                                                                                                                                                          |
+| Snyk API & Web configuration                                                           | Outcome                                                                                                                                                                                                  |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Web Target configuration, including Authenticated Scans (up to three web applications) | A maximum of three web applications are configured in Snyk API & Web for scanning, including Authentication. For each application there is a maximum of one login sequence and one navigation sequence). |
+| API Target configuration (up to one API collection)                                    | One API collection is configured in Snyk API & Web for scanning.                                                                                                                                         |
+| Domain Ownership Verification                                                          | Domain Ownership Verification is completed for one domain.                                                                                                                                               |
+| Scanning Agent Configuration (one agent)                                               | A maximum of one Scanning Agent is configured to enable Snyk API & Web to scan internal applications without internet access.                                                                            |
+| Review of Target Scan Results                                                          | Target Scan Results are reviewed to ensure the Customer understands how to process the DAST findings and prioritize fixing the issues.                                                                   |
+| Documentation close-out                                                                | Gain an understanding of work completed.                                                                                                                                                                 |
 
 ## Timeline for Snyk Jumpstart delivery
 
