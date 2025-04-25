@@ -311,7 +311,7 @@
     * [Snyk Language Server](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/README.md)
       * [IDE and CLI usage telemetry](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/ide-and-cli-usage-telemetry.md)
       * [Example configurations for Snyk Language Server](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/example-configurations-for-snyk-language-server.md)
-    * [Release and Support policy for Snyk IDE plugins](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/release-policy.md)
+    * [Release and support policy for Snyk IDE plugins](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/release-and-support-policy-for-snyk-ide-plugins.md)
     * [Troubleshooting IDEs](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/README.md)
       * [How to set environment variables by operating system for IDEs and CLI](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/how-to-set-environment-variables-by-operating-system-for-ides-and-cli.md)
       * [OAuth 2.0 authentication does not work](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli-1.md)
