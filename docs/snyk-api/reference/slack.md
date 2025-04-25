@@ -4,10 +4,10 @@
 This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
 {% endhint %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{tenant_id}/channels" method="get" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{tenant_id}/channels" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{tenant_id}/channels/{channel_id}" method="get" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{tenant_id}/channels/{channel_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}

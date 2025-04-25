@@ -4,30 +4,30 @@
 This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
 {% endhint %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}" method="post" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}" method="post" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}" method="get" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}" method="delete" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}/projects" method="get" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}/projects" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}" method="post" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}" method="post" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}" method="patch" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}" method="patch" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}" method="delete" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}

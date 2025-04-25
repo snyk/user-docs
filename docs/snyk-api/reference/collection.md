@@ -4,34 +4,34 @@
 This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
 {% endhint %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections" method="post" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections" method="post" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections" method="get" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}" method="patch" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}" method="patch" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}" method="get" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}" method="delete" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}/relationships/projects" method="post" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}/relationships/projects" method="post" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}/relationships/projects" method="get" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}/relationships/projects" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}/relationships/projects" method="delete" %}
+{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/collections/{collection_id}/relationships/projects" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
+{% endswagger %}
