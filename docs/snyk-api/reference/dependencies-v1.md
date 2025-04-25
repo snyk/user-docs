@@ -8,6 +8,6 @@ Dependencies are packages or modules that your Projects depend on.
 
 The rate limit is up to **150 requests per minute, per user**.
 
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/dependencies" method="post" %}
+{% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/dependencies" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
+{% endopenapi %}
