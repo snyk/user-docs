@@ -1011,6 +1011,7 @@
     * [Snapshots (v1)](snyk-api/reference/snapshots-v1.md)
     * [Targets](snyk-api/reference/targets.md)
     * [Test (v1)](snyk-api/reference/test-v1.md)
+    * [Universal Broker](snyk-api/reference/universal-broker.md)
     * [Users (v1)](snyk-api/reference/users-v1.md)
     * [Users](snyk-api/reference/users.md)
     * [Webhooks (v1)](snyk-api/reference/webhooks-v1.md)
