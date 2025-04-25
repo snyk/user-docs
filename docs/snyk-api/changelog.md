@@ -1,3 +1,130 @@
+## 2024-10-15 - Updated 2025-04-25
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Added
+- Creates a new Broker Deployment for an installation
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Added
+- List Broker deployments for a given install ID
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}` - Added
+- Updates a Broker deployment for a given install ID
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}` - Added
+- Delete a Broker deployment for a given install ID
+
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials` - Added
+- Creates a new Deployment credential
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials` - Added
+- List Deployment credentials for a given deployment ID
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added
+- Updates a Deployment credential for an deployment
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added
+- Get all Deployment credential data for an deployment
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added
+- Deletes an existing Deployment credential for an deployment
+
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts` - Added
+- Creates a new Broker Context
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts` - Added
+- List Deployment contexts for a given deployment ID
+
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added
+- Creates a new Broker connection for an deployment
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added
+- List all Broker connections for a given deployment
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added
+- Deletes all existing Broker connections for an deployment
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added
+- Updates a Broker connection for an deployment
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added
+- Get all Broker connection data for an deployment
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added
+- Deletes an existing Broker connection for an deployment
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+- Updates a Broker Context for an deployment
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+- List Broker context for a given broker context ID
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+- Deletes an existing broker context
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integrations/{integration_id}` - Added
+- Deletes an existing Broker context association for an integration
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integration` - Added
+- Updates an integration to be associated with a Broker context
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/connections/{connection_id}/contexts` - Added
+- List Broker contexts for a given broker connection ID
+
+
+### GET - `/tenants/{tenant_id}/brokers/deployments` - Added
+- List Broker deployments for the tenant
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integrations/{integration_id}` - Added
+- Deletes an existing Broker connection for an deployment
+
+
+### POST - `/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integration` - Added
+- Configures integrations to use the Broker connection for an deployment
+
+
+### GET - `/tenants/{tenant_id}/brokers/connections/{connection_id}/integrations` - Added
+- Get all integrations using the Broker connection
+
+
+### POST - `/orgs/{org_id}/policies` - Updated
+- the `data/attributes/action/data/reason` request property`s maxLength was set to `10000`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the `data/attributes/name` request property`s maxLength was set to `255`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
+- the `data/attributes/action/data/reason` request property`s maxLength was set to `10000`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the `data/attributes/name` request property`s maxLength was set to `255`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/orgs/{org_id}/brokers/connections` - Added
+- List all Broker connections integrated with a given org
+
 ## 2024-10-15 - Updated 2025-04-22
 
 ### GET - `/orgs/{org_id}/policies` - Updated
