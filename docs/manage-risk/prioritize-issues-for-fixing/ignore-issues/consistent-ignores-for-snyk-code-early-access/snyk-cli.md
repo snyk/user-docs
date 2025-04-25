@@ -5,7 +5,7 @@
 
 Snyk Code Consistent Ignores is in Early Access and available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
-To make sure Snyk Code Consistent Ignores Early Access meets your needs and requirements, review [Known limitations](known-limitations.md) and [FAQ](consistent-ignores-for-snyk-code-faqs.md) sections.
+To ensure Consistent Ignores meets your needs and requirements, review the [FAQ](consistent-ignores-for-snyk-code-faqs.md) section.
 {% endhint %}
 
 Ignores are taken into account in the Snyk CLI when `snyk code test` is run.
@@ -32,9 +32,9 @@ The CLI display output hides ignored results by default when you run `snyk code 
 
 ## View ignores in Snyk CLI
 
-After running `snyk code test`, the CLI will display a hint about using the `--include-ignores` parameter to show ignored results.
+After running `snyk code test`, the CLI displays a hint about using the `--include-ignores` parameter to show ignored results.
 
-Running `snyk code test --include-ignores` will display ignored results with their metadata below the open results.
+Running `snyk code test --include-ignores` shows ignored results with their metadata below the open results.
 
 <figure><img src="../../../../.gitbook/assets/display-ignores-snyk-cli.png" alt=""><figcaption><p>Ignores in Snyk CLI</p></figcaption></figure>
 
