@@ -6,18 +6,18 @@ This document uses the REST API. For more details, see the [Authentication for A
 
 **Note:** For a list of Project types, see [Project type responses from the API](../snyk-api/api-endpoints-index-and-tips/project-type-responses-from-the-api).
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/projects" method="get" %}
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/projects" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/projects/{project_id}" method="patch" %}
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/projects/{project_id}" method="patch" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/projects/{project_id}" method="get" %}
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/projects/{project_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/projects/{project_id}" method="delete" %}
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/projects/{project_id}" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endswagger %}
+{% endopenapi %}

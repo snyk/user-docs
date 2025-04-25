@@ -11,30 +11,30 @@ Using the Reporting API, you can find answers to questions like how many issues 
 
 The rate limit is up to **70 requests per minute, per user**. All requests above the limit will get a response with the status code `429 - Too many requests` until requests stop for the duration of the rate-limiting interval (one minute).
 
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/issues" method="post" %}
+{% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/issues" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/issues/latest" method="post" %}
+{% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/issues/latest" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/tests" method="post" %}
+{% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/tests" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/projects" method="post" %}
+{% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/projects" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/projects/latest" method="post" %}
+{% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/projects/latest" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/issues" method="post" %}
+{% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/issues" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/issues/latest" method="post" %}
+{% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/issues/latest" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
-{% endswagger %}
+{% endopenapi %}
