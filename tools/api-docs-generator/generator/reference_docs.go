@@ -230,9 +230,9 @@ func renderReferenceDocsPage(filePath, label, docsPath string, operation []opera
 		}
 		_, err = fmt.Fprintf(docsFile,
 			`
-{%% swagger src="%s" path="%s" method="%s" %%}
+{%% openapi src="%s" path="%s" method="%s" %%}
 [%s](%s)
-{%% endswagger %%}
+{%% endopenapi %%}
 `,
 			relativePathToSpec,
 			op.pathURL,
