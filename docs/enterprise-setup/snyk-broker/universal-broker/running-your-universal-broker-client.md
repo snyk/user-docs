@@ -2,7 +2,7 @@
 
 Run your Broker deployment on your container engine or Kubernetes cluster.
 
-If you are not using broker.snyk.io, target the Broker server for your region by using the command  `-e BROKER_SERVER_URL=https://broker, REGION.snyk.io \` . For details, see [Broker URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
+If you are not using broker.snyk.io, target the Broker server for your region by using the command  `-e BROKER_SERVER_URL=https://broker.region.snyk.io \` . For details, see [Broker URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
 
 Add the environment variable or variables as defined in your credentials references with the associated values. If references are missing, the connection will not be established, and an error entry will be logged in the Broker client logs.
 
