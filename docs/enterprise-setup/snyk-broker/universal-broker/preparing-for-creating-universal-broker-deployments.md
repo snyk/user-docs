@@ -20,7 +20,7 @@ https://broker.eu.snyk.io\
 OR https://broker.au.snyk.io\
 AND\
 https://api.snyk.io\
-https://app.us.snyk.io/\
+https://api.us.snyk.io/\
 https://api.eu.snyk.io\
 OR https://api.au.snyk.io
 
@@ -42,7 +42,7 @@ Be sure to set your environment variables to make usage easier, including when y
 
 `- set SNYK_TOKEN=xxxx (Wiindows)`
 
-`- setTENANT_ID=yyyy (Windows)`
+`- set TENANT_ID=yyyy (Windows)`
 
 If the Universal Broker has already been installed, set the Install ID as an environment variable for easier usage. Use the following commands:
 
