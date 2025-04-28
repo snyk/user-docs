@@ -4,7 +4,7 @@ Follow these steps to install and configure your Universal Broker using the `sny
 
 ## Install the snyk-broker-config CLI tool
 
-To install the tool, use `npm i -g snyk-broker-config` or download the binary from the [GitHub repository](https://github.com/snyk/snyk-broker-config/releases).
+To install the tool, use `npm i -g snyk-broker-config.`
 
 ## Create your first connection
 
