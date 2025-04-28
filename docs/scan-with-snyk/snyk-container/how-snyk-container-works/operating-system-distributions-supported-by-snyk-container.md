@@ -17,6 +17,7 @@ This is the list of supported operating systems and distributions:
 
 ## [Alpine Linux](https://www.alpinelinux.org/)
 
+* Alpine Linux 3.21
 * Alpine Linux 3.20
 * Alpine Linux 3.19
 * Alpine Linux 3.18
@@ -36,7 +37,6 @@ This is the list of supported operating systems and distributions:
 * Alpine Linux 3.4
 * Alpine Linux 3.3
 * Alpine Linux 3.2
-* Alpine Linux 3.21
 
 ## [Amazon Linux](https://aws.amazon.com/linux/)
 
@@ -98,6 +98,7 @@ This is the list of supported operating systems and distributions:
 
 ## [Ubuntu](https://ubuntu.com/)
 
+* Ubuntu 25.04 - Plucky Puffin
 * Ubuntu 24.10 - Oracular Oriole
 * Ubuntu 24.04 - Noble Numbat
 * Ubuntu 23.10 - Mantic Minotaur
