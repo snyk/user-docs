@@ -1,3 +1,42 @@
+## 2024-10-15 - Updated 2025-04-28
+
+### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+- removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
+
+
+
+### POST - `/orgs/{org_id}/packages/issues` - Updated
+- removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
+
+
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- added the optional property `data/items/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
+
+- added the optional property `data/items/attributes/key_asset` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added the optional property `data/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
+
+- added the optional property `data/attributes/key_asset` to the response with the `200` status
+
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added the optional property `data/items/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
+
+- added the optional property `data/items/attributes/key_asset` to the response with the `200` status
+
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added the optional property `data/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
+
+- added the optional property `data/attributes/key_asset` to the response with the `200` status
+
+
 ## 2024-10-15 - Updated 2025-04-25
 
 ### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Added
