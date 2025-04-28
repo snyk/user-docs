@@ -61,7 +61,7 @@ Snyk recommends that you set the INSTALL\_ID as an environment variable now, to 
 `- export INSTALL_ID=zzzz (Linux/Mac)`\
 `- set INSTALL_ID=zzzz(Windows)`
 
-## Create your first deployment
+## Input connection parameters
 
 This includes creating credentials references needed for your connections. Each deployment is limited to a maximum of 25 connections.
 
@@ -119,7 +119,7 @@ Connection Create workflow completed.
 
 The connection is now created.
 
-## Validate your deployment (optional)
+## Validate your connection (optional)
 
 You can use the following workflow to display details about the connection.
 
