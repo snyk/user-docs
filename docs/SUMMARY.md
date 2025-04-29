@@ -951,6 +951,7 @@
     * [Monitor](snyk-cli/commands/monitor.md)
     * [Policy](snyk-cli/commands/policy.md)
     * [SBOM](snyk-cli/commands/sbom.md)
+    * [SBOM monitor](snyk-cli/commands/sbom-monitor.md)
     * [SBOM test](snyk-cli/commands/sbom-test.md)
     * [Test](snyk-cli/commands/test.md)
   * [Releases and channels for the Snyk CLI](snyk-cli/releases-and-channels-for-the-snyk-cli.md)
