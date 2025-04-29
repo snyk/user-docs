@@ -9,6 +9,7 @@ To manage and govern the security program, Snyk gives security teams immediate v
 * **Snyk Infrastructure as Code**: see [Supported IaC and cloud providers](scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/).
 * **Snyk Essentials**: see [Snyk Essentials](scan-with-snyk/snyk-essentials.md)&#x20;
 * **Snyk AppRisk**: see [Snyk AppRisk](scan-with-snyk/snyk-apprisk.md).
+* **Snyk API & Web**: see [Snyk API & Web](https://snyk.io/product/dast-api-web/).
 
 ## The Snyk developer-first approach
 
