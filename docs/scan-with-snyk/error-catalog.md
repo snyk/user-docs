@@ -703,6 +703,15 @@ CLI was unable to execute your SAST command, please take a look at the given det
 **Help Links:**
 - [https://docs.snyk.io/snyk-cli/commands/code](https://docs.snyk.io/snyk-cli/commands/code)
 
+### [SNYK-CLI-0014](#snyk-cli-0014)
+
+#### Feature under development
+
+This feature is under development and is not yet available for public use.
+
+**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+
+
 ### [SNYK-OS-7001](#snyk-os-7001)
 
 #### Request to Snyk API timeout
@@ -2775,4 +2784,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-04-27T19:35:49.355Z
+--- Generated at 2025-04-29T13:05:20.153Z
