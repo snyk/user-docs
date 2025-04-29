@@ -21,7 +21,7 @@ Each inventory layout is presented in a table format, detailing the available ke
 
 ## **Asset**
 
-An asset in Snyk Essentials represents a component in the software development lifecycle that may pose a risk. The following asset types are available:
+Assets in Snyk Essentials are meaningful, real-world components in an application’s SDLC. The following asset types are available:
 
 * Repository assets [**`Billable`**](../working-with-snyk/how-does-snyk-count-assets.md#billable-assets)
 * Container images [**`Billable`**](../working-with-snyk/how-does-snyk-count-assets.md#billable-assets)
