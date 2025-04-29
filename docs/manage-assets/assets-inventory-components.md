@@ -17,7 +17,8 @@ Each inventory layout is presented in a table format, detailing the available ke
 * [Source](assets-inventory-components.md#source)
 * [SCM Repository freshness](assets-inventory-components.md#repository-freshness)
 * [Clusters](assets-inventory-components.md#clusters)
-* Organizations
+* [Organizations](assets-inventory-components.md#organizations)
+* Visibility
 
 ## **Asset**
 
@@ -68,6 +69,7 @@ The asset information is divided into the following tabs:
   * Info
     * Class - specifies the business criticality of the asset.
     * Source - specifies the origin of the asset.
+    * Visibility - lists the visibility status of the repositories.
     * Risk factors - provides the list of active risk factors.
     * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
   * Tags - provides the list of all tags available for that asset.
@@ -259,3 +261,16 @@ The Cluster column is populated only when the Snyk Runtime Sensor is utilized.
 ## Organizations
 
 The Organizations column lists all Snyk Organizations associated with each asset. This includes the names of Organizations that contain Projects linked to the asset, enabling users to filter and organize their asset inventory based on their organizational structures. Organizations are also available under Filters and allow you to filter assets in the Inventory view or to create policies in the Policies view.&#x20;
+
+## Visibility
+
+The Visibility column lists the visibility status of the repositories as follows:
+
+* **Public**: Repositories that are publicly accessible.
+* **Private**: Restricted repositories.
+* **Internal**: Internal repositories specific to GitHub and GitLab.
+* **N/A**
+
+Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../manage-issues/reporting/getting-started-with-snyk-reports.md#snyk-reporting-filters).
+
+\

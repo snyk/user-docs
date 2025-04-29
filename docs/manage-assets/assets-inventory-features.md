@@ -76,6 +76,10 @@ You can filter the information for all the inventory layouts and can use the fol
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
   * **N/A**: There are no commits detected by Snyk Essentials.
+* **Visibility** - the visibility status of the repositories.
+  * **Public**: Repositories that are publicly accessible.
+  * **Private**: Restricted repositories.
+  * **Internal**: Internal repositories specific to GitHub and GitLab.
 
 {% hint style="info" %}
 N/A indicates that the repository was detected through a Snyk scan but not directly from the SCM. To detect SCM repositories, you must set up SCM integration at the Group level.
