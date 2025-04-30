@@ -79,7 +79,7 @@ Issues can be prevented by developers taking advantage of Snyk Learn, leveraging
 
 Issues are categorized as Preventable if the problem was known to Snyk at least seven days before the detection of the issue. While it is possible that introducing an issue could have been prevented within the seven-day interval, this definition provides some buffer for scenarios where code takes longer to get through the deployment process or for weekly recurring tests.
 
-{% hint style="info" %}
+{% hint style="success" %}
 The following example is also a preventable issue.
 
 A developer adds a vulnerable version of a package as part of development. Despite a strong shift-left culture where running the `snyk test` command found this known issue, there was no fix available. The developer opted to use the vulnerable library instead of selecting an alternative because the issue had been known for a long time, or the developer felt the exploit was not relevant to how the package was being used, or both.
@@ -100,3 +100,11 @@ Issues are categorized as Non-preventable if the issue is detected within seven 
 Not all issues can be easily categorized as Preventable or Non-preventable within Snyk today. The key inputs to this determination are the dates the issue and problem were identified. If either is in question, the issue will be categorized as **Other new**.
 
 All Snyk Code and Snyk IaC issues will be labeled as **Other new**. Open Source license issues will also be categorized as **Other new**.
+
+### Preventability analysis considerations
+
+Snyk can confidently differentiate whether issues are preventable by measuring their preventability. However, this mechanism includes some assumptions in its calculation.&#x20;
+
+First assumption is that any non-baseline issues detected within seven days of the underlying vulnerability being known to Snyk are non-preventable. In this scenario, a developer ran a test locally or in a pipeline, which detected the issue, and they deployed it right away. The seven day threshold provides reasonable flexibility to account for this scenario.&#x20;
+
+The second assumption is that vulnerabilities may be captured within the Snyk Vulnerability Database before the SCA engine can detect them in scans. Snyk attempts to synchronize these changes closely, but in some cases, engine updates are made after the vulnerability is published in the Snyk Vulnerability Database.
