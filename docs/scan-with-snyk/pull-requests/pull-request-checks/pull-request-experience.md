@@ -43,6 +43,14 @@ The Inline Comments feature adds a detailed comment for each issue identified by
 
 This feature is limited to 10 inline comments at Pull Request level. The Summary Comment will display a message if the cap is surpassed.
 
+For GitLab and Azure Repos, consider the following conditions:
+
+* The Data Flow section in the inline comments is not available.
+* Inline comments for vulnerabilities introduced outside modified lines are unavailable for GitLab.
+* Inline comments for Code Analysis done using Snyk Local Code Engine are unavailable.
+
+For Brokered integrations, the Data Flow section in the inline comments is available only for GitHub, GitHub Cloud App, Bitbucket Cloud, and Bitbucket Connect App.
+
 <figure><img src="../../../.gitbook/assets/inline_comment_feature.png" alt=""><figcaption><p>Inline Comment feature for Pull Request Experience</p></figcaption></figure>
 
 ## Configure Pull Request Experience
@@ -68,24 +76,6 @@ Configure the Pull Request Experience for one or more integrations in your Snyk 
 For the GitHub integration, configure opening fix and upgrade pull requests from a fixed GitHub account, by providing a Personal Access Token (PAT), which has `write` permissions or above to the repos monitored by Snyk. See[ ](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)[Opening fix and upgrade pull requests from a fixed GitHub account](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md) for more information.
 
 <figure><img src="../../../.gitbook/assets/pat_config.png" alt=""><figcaption><p>Configuration details for the GitHub integration</p></figcaption></figure>
-
-## Known limitations
-
-Snyk Pull Request Experience is in Early Access and therefore subject to changes and improvements based on your feedback.
-
-Snyk will continuously update this section during the Early Access period as limitations are resolved and new ones are identified.
-
-### GitLab and Azure Repos
-
-Support for Snyk Pull Request Experience is available for GitLab and Azure Repos with the following limitations:
-
-* The Data Flow section in the inline comments is not available.
-* Inline comments for vulnerabilities introduced outside of modified lines are unavailable for GitLab.
-* Inline comments for Code Analysis done using Snyk Local Code Engine are unavailable.
-
-### Broker
-
-Support for Snyk Pull Request Experience is available for Brokered integrations with the following limitation: the Data Flow section in the inline comments is available only for GitHub, GitHub Cloud App, Bitbucket Cloud, and Bitbucket Connect App.
 
 ## Frequently Asked Questions (FAQs)
 
