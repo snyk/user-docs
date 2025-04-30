@@ -13,7 +13,7 @@ Before installing the Universal Broker `snyk-broker-config` CLI tool, be sure yo
 * A Snyk account and your personal Snyk API token; you cannot use a service account.
 * Snyk Tenant admin permissions. If you are not a Tenant admin, you can reach out to your team's Tenant admin [to add you](../../../snyk-admin/tenant-groups-and-organizations/tenant/manage-users-in-a-tenant.md). Otherwise, reach out to your support team member or [raise a support case](https://support.snyk.io/s/).
 * A new Snyk Broker Admin Organization created in the Group of your choice in your Tenant, not a personal Organization. See [Create an Organization](../../../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#create-an-organization) for details.
-* An SCM token or password. See [Obtain the tokens required to set up Snyk Broker](../classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md). Snyk Broker does not support authentication with the mTLS method.
+* An SCM token or password. Snyk Broker does not support authentication with the mTLS method.
 * Node 18 or higher installed.
 * Docker configured to pull images from Docker Hub in order to install with Docker.
 
