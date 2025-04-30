@@ -7,6 +7,49 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## April 2025
+
+### **Snyk API**&#x20;
+
+* Several APIs have been updated; see the [Changelog](snyk-api/changelog.md).
+* The navigation of the API section now reflects the use of Authentication and the Changelog for both the V1 and REST APIs.
+* The [Authentication for API](snyk-api/authentication-for-api/) page has been updated with region information and clarity on using the bearer token.
+* The [API endpoints index and tips](snyk-api/api-endpoints-index-and-tips/) page now has a note about how to find your `org_id`.
+
+### **Snyk AppRisk**&#x20;
+
+* [The Inventory Overview tab](manage-assets/assets-inventory-layouts.md) is now available to provide insights and prescriptive guidance to improve your application security.
+* [The Visibility column](manage-assets/assets-inventory-components.md#visibility) has been added to show the visibility status of your repositories.
+
+### **Snyk Broker**
+
+Additional updates have been made to the [Universal Broker](snyk-api/reference/universal-broker.md) documentation to clarify the instructions and add details about the use of the APIs.
+
+### **Snyk CLI**
+
+Information has been added about Snyk support for the Model Context Protocol (MCP) through the [`snyk mcp` experimental CLI command](snyk-cli/snyk-mcp-experimental.md).
+
+### **Snyk Code**
+
+* [Consistent Ignores ](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access/)is now available in Early Access. Your development teams can create ignores that are consistently respected regardless of how and where the test is run and what branch is being tested.&#x20;
+* Snyk Code supports gRPC libraries.
+
+### **Snyk Container**
+
+* [Using Custom Base Image Recommendation ](scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/)has been updated with clarifications on how Snyk recommends images.
+* The list of [Operating system distributions supported by Snyk Container](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) has been updated to include Alpine Linux 3.21, Ubuntu 25.04 - Plucky Puffin, and Ubuntu 24.10 - Oracular Oriole.
+* The section describing the automated integration process for Amazon Elastic Container Registry (ECR) has been removed, as Snyk no longer supports this method.
+
+### **Snyk  Integrations**
+
+* For the [Jira integration](integrate-with-snyk/jira-and-slack-integrations/jira-integration.md#prerequisites-for-jira-integration-with-snyk), Snyk now supports Jira versions 5 to 10.&#x20;
+* For [SCM integrations with Gradle](supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md), Snyk now supports `allprojects` and `subprojects` blocks, as well as Spring Boot plugins BOMs.
+
+### **Other updates**
+
+* DAST scanning is now available with [Snyk API & Web](https://docs.snyk.io/scan-with-snyk#select-scanning-methods), enabling users to discover and test the security of their APIs and web apps, including AI-generated ones..
+* PR Checks is now available with a General Availability release status.
+
 ## March 2025
 
 ### **Snyk Broker**
