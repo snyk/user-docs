@@ -23,4 +23,4 @@ If you re-imported the repository in order to import the Terraform files, then S
 
 * Click the link for the Project of interest to you to view the scan results and to help correct your Terraform code:
 
-<figure><img src="../../../../.gitbook/assets/image (340) (1) (1).png" alt="Terraform Project detail"><figcaption><p>Terraform Project detail</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (340) (1) (1) (1).png" alt="Terraform Project detail"><figcaption><p>Terraform Project detail</p></figcaption></figure>

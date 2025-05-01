@@ -18,10 +18,10 @@ The **steps** in **configuring App role**s follow.
 
 1.  In your App registration menu, select the name of your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image (113) (1).png" alt="App registration, select name of Enterprise Application"><figcaption><p>App registration, select name of Enterprise Application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (113) (1) (1).png" alt="App registration, select name of Enterprise Application"><figcaption><p>App registration, select name of Enterprise Application</p></figcaption></figure>
 2.  Select **App roles**, then **Create app role**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (2) (1) (1).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (2) (1) (1) (1).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
 3.  Create an app role with details as needed.\
     Select the **Allowed member types**: **Users/Groups**, **Applications**, or **Both**.\
     Enter the **Value** and **Description** for the selected type.\
@@ -31,7 +31,7 @@ The **steps** in **configuring App role**s follow.
     <figure><img src="../../../../.gitbook/assets/image (380).png" alt="Create app role" width="285"><figcaption><p>Create app role</p></figcaption></figure>
 4.  In Entra ID, select your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select Enterprise Application in Entra ID"><figcaption><p>Select Enterprise Application in Entra ID</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select Enterprise Application in Entra ID"><figcaption><p>Select Enterprise Application in Entra ID</p></figcaption></figure>
 5.  Select **Users and groups**; then **Add user/group**.\
     Search and select the users and groups to add.
 

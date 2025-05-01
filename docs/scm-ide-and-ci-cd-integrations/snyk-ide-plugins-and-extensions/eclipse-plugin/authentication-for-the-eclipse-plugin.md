@@ -15,11 +15,11 @@ After the extension is installed, to authenticate follow these steps:
    \
    Multi-tenant users who do not belong to the default region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 
-<figure><img src="../../../.gitbook/assets/SCR-20240822-mgxw (1).png" alt="Snyk tenant configuration" width="563"><figcaption><p>Snyk endpoint configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SCR-20240822-mgxw (1) (1).png" alt="Snyk tenant configuration" width="563"><figcaption><p>Snyk endpoint configuration</p></figcaption></figure>
 
 2. On the next page with additional information, click **Finish**:
 
-<figure><img src="../../../.gitbook/assets/SCR-20240822-mibb (1).png" alt="Additional information and finish" width="563"><figcaption><p>Additional information and finish</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SCR-20240822-mibb (1) (1).png" alt="Additional information and finish" width="563"><figcaption><p>Additional information and finish</p></figcaption></figure>
 
 3. The extension opens a new page in a default browser and asks you to log into your Snyk account:
 

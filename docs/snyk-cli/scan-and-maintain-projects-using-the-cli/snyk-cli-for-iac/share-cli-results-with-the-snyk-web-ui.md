@@ -47,7 +47,7 @@ Log in to the Snyk Web UI and navigate to your Organization Project page to see 
 
 You can also open the Project itself and see the Project details:
 
-<figure><img src="../../../.gitbook/assets/image (106) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png" alt="Project details for a Project"><figcaption><p>Project details for a Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (106) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2) (2).png" alt="Project details for a Project"><figcaption><p>Project details for a Project</p></figcaption></figure>
 
 ## **Ignores**
 

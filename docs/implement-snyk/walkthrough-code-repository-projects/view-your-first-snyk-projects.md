@@ -18,7 +18,7 @@ For each entry, the icon shows the number of Snyk Projects in each entry, plus t
 
 When [setting up your GitHub integration](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md), you can choose whether Snyk has access to public and private repositories or public repositories only:
 
-<figure><img src="../../.gitbook/assets/image (405) (1).png" alt="Set whether Snyk will have access to a private repository"><figcaption><p>Set whether Snyk will have access to a private repository</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (405) (1) (1).png" alt="Set whether Snyk will have access to a private repository"><figcaption><p>Set whether Snyk will have access to a private repository</p></figcaption></figure>
 
 When you import a Project, private repositories are identified with a lock symbol in the imported scan details:
 
@@ -41,7 +41,7 @@ A Snyk Project is an item scanned by Snyk; for example, a manifest file listing 
 
 An example follows:
 
-<figure><img src="../../.gitbook/assets/image (180) (1) (1) (1) (1) (1) (1).png" alt="List of scanned Projects"><figcaption><p>List of scanned Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (180) (1) (1) (1) (1) (1) (1) (1).png" alt="List of scanned Projects"><figcaption><p>List of scanned Projects</p></figcaption></figure>
 
 ## Understand Project information
 
@@ -57,8 +57,8 @@ Snyk scans different parts of this lifecycle, with different icons and entries s
 | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="../../.gitbook/assets/image (297) (1).png" alt="" data-size="line">                   | Your own code analysis results, scanned by[ Snyk Code](../../scan-with-snyk/snyk-code/).                                                                                                                                               |
 | <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line"> | Your open-source libraries, scanned by [Snyk Open Source](../../scan-with-snyk/snyk-open-source/), with a resulting display of each detected manifest, such as **pom.xml**, **package.json**, and other manifests for these libraries. |
-| <img src="../../.gitbook/assets/image (307) (1).png" alt="" data-size="line">                   | Container results, scanned by [Snyk Container](../../scan-with-snyk/snyk-container/), for items built into a container, such as a Docker file.                                                                                         |
-| <img src="../../.gitbook/assets/image (206) (1) (1).png" alt="" data-size="original">           | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/).                                                                  |
+| <img src="../../.gitbook/assets/image (307) (1) (1).png" alt="" data-size="line">               | Container results, scanned by [Snyk Container](../../scan-with-snyk/snyk-container/), for items built into a container, such as a Docker file.                                                                                         |
+| <img src="../../.gitbook/assets/image (206) (1) (1) (1).png" alt="" data-size="original">       | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/).                                                                  |
 
 {% hint style="info" %}
 Other files and types can be displayed; see [View Project information](../../snyk-admin/snyk-projects/project-information.md) for more details.
@@ -70,7 +70,7 @@ Snyk treats each item in this list as a separate **Project**.
 
 This allows you to control settings for that Project by clicking on the cog icon to define how that Project is scanned:
 
-<figure><img src="../../.gitbook/assets/image (208) (1) (1) (1) (1) (1) (1) (1).png" alt="Click cog icon to edit settings"><figcaption><p>Click cog icon to edit Project settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (208) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Click cog icon to edit settings"><figcaption><p>Click cog icon to edit Project settings</p></figcaption></figure>
 
 For example, you can change scan frequency, setting how often scans are run by default. See [View Project Settings](https://docs.snyk.io/introducing-snyk/introduction-to-snyk-projects/view-project-settings) for more information.
 
@@ -78,7 +78,7 @@ For example, you can change scan frequency, setting how often scans are run by d
 
 Look back at the results of your scan:
 
-<figure><img src="../../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Project scan results"><figcaption><p>Project scan results</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Project scan results"><figcaption><p>Project scan results</p></figcaption></figure>
 
 The scan shows all the vulnerabilities in all aspects of your application. Of course, it is unlikely that you are responsible for every entry in this list, but it is important to be aware of the full picture.
 

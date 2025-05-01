@@ -58,6 +58,10 @@ snyk container test <repository>:<tag> --username= --password=
 When both are passed, the options take precedence over the environment variables.
 {% endhint %}
 
+## Use an alternate Docker context
+
+The Snyk CLI `container` commands always use the default [Docker context](https://docs.docker.com/engine/manage-resources/contexts/). To force the Snyk CLI to use an alternate context's connection, set the `DOCKER_HOST` environment variable to the desired context URI.&#x20;
+
 ## Other commonly used CLI options
 
 Frequently used CLI options include:

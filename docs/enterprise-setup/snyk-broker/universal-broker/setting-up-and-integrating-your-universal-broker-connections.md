@@ -6,7 +6,7 @@ In the diagram, GitHub connection 123 is integrated with Organization Y using in
 
 
 
-<figure><img src="../../../.gitbook/assets/Universal-Broker-deployment-connections.png" alt=""><figcaption><p>Universal Broker connections</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Universal-Broker-deployment-connections (1).png" alt=""><figcaption><p>Universal Broker connections</p></figcaption></figure>
 
 ## Create deployments and connections
 

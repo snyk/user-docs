@@ -64,7 +64,7 @@ To add a new profile:
 
 You can edit an existing integration by clicking **Settings** on the integrations card and then clicking **Settings** again on the added Organization for that integration.
 
-<figure><img src="../.gitbook/assets/image (472).png" alt=""><figcaption><p>Edit an existing integration from the Integration Hub</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (472) (2).png" alt=""><figcaption><p>Edit an existing integration from the Integration Hub</p></figcaption></figure>
 
 {% hint style="info" %}
 For security reasons, all credentials are anonymized when you open the Settings of an already existing integration.

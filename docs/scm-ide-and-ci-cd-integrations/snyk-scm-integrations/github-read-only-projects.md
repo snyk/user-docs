@@ -32,7 +32,7 @@ Import a read-only Project using the **Add project** **> Monitor public GitHub r
    The repository is quickly tested for a supported manifest file.
 3. Enter the public repositories you want to monitor and select **Import N repository/ies**.
 
-<figure><img src="../../.gitbook/assets/github_readonly_steps 2 &#x26; 3_18july2022.png" alt="Add repo and Import repository or repositories"><figcaption><p>Add repo and Import repository or repositories</p></figcaption></figure>
+<figure><img src="broken-reference" alt="Add repo and Import repository or repositories"><figcaption><p>Add repo and Import repository or repositories</p></figcaption></figure>
 
 ## Group level - Snyk Essentials integrations
 

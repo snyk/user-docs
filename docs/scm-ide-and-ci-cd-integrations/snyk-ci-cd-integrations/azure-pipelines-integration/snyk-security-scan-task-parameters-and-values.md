@@ -13,7 +13,7 @@ The following describes the Snyk task configuration fields on the configuration 
 
 The configuration panel displays all available Snyk service connections from a dropdown list like the following:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (3) (1) (4) (5).png" alt="Snyk service connections"><figcaption><p>Snyk service connections</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (3) (1) (4) (5) (5).png" alt="Snyk service connections"><figcaption><p>Snyk service connections</p></figcaption></figure>
 
 If multiple Snyk service connections are available from the dropdown list, ask your administrator which to use for the pipeline you are working with.
 
@@ -24,7 +24,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default:** application\
 **Type:** string: "app" or "container" or "code"
 
-**Description:** Determines the type of testing to perform, which also selects the dynamic fields to display as described on the rest of this page.&#x20;
+**Description:** Determines the type of testing to perform, which also selects the dynamic fields to display as described on the rest of this page.
 
 * Specifying "app" will perform analysis of your application's open-source dependencies (SCA)
 * Specifying "container" will analyze container packages and detected application open-source packages (SCA)
