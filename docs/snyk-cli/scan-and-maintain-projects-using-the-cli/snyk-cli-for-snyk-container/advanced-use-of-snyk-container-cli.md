@@ -26,7 +26,7 @@ For`Crane`, Snyk supports only the formats `--format=oci` and`--format=legacy`.
 
 ## Test multi-platform images
 
-Some repositories represent multi-manifests, pointing to several different images depending on the operating system and the architecture required. To explicitly scan an image for a specific platform, you can use the Snyk CLI `container test` command., for example:
+Some repositories represent multi-manifests, pointing to several different images depending on the operating system and the architecture required. To explicitly scan an image for a specific platform, you can use the Snyk CLI `container test` command, for example:
 
 ```
 snyk container test --platform=linux/arm64 debian
