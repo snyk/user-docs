@@ -73,8 +73,8 @@ Scenario: [Tag projects in Snyk](https://github.com/snyk-playground/cx-tools/blo
 Scenario: [Move projects between organizations](https://github.com/snyk-playground/cx-tools/blob/main/scripts/move-projects.md) (complete procedure)
 
 {% hint style="info" %}
-The API token used must have Group Admin access. \
-If you are moving between Organizations in different Groups, you must use a personal API token with Group Admin permissions in both Groups. Service Accounts cannot move projects between Organizations in different Groups.&#x20;
+The API token used must have Group Admin access.\
+If you are moving between Organizations in different Groups, you must use a personal API token with Group Admin permissions in both Groups. Service Accounts cannot move projects between Organizations in different Groups.
 
 Historical data for reporting will be lost.
 {% endhint %}
@@ -133,7 +133,7 @@ Scenario: [bulk-ignore-issues](https://github.com/snyk-playground/cx-tools/blob/
 **Endpoints used:**\
 [List all projects for an Org with the given Org ID](../reference/projects.md#orgs-org_id-projects)\
 [Get list of latest issues](../reference/reporting-api-v1.md#reporting-issues-latest) (To get all issues but Code)\
-[Get issues  by org ID](../reference/issues.md#orgs-org_id-issues) (To get all Code issues)
+[Get issues by org ID](../reference/issues.md#orgs-org_id-issues) (To get all Code issues)
 
 ### List all issues including Snyk Code issues in all the Projects in an Organization
 
@@ -142,6 +142,6 @@ Scenario: [list-all-issues-for-a-snyk-org](https://github.com/snyk-playground/cx
 **Endpoints used:**\
 [List all projects for an Org with the given Org ID](../reference/projects.md#orgs-org_id-projects)\
 [List all aggregated issues](../reference/projects-v1.md#org-orgid-project-projectid-aggregated-issues) (no Code)\
-[Get issues by org iID](../reference/issues.md#orgs-org_id-issues)\
+[Get issues by org ID](../reference/issues.md#orgs-org_id-issues) Note that as of April, 2025, you can retrieve Snyk Code issues using this endpoint. It has the primary file path and primary region in the `source_location` data in `representations` in `coordinates` for an issue.\
 REST experimental [Get a Snyk Code issue by its ID](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#get-/orgs/-org_id-/issues/detail/code/-issue_id-)\
 [Retrieve ignore](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid-2)
