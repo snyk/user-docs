@@ -9,7 +9,7 @@ To safeguard the security of Snyk services and customers, Snyk has begun the dep
 
 **Migration timeline**
 
-Effective **October 30, 2024**, you will no longer be able to add or modify the Snyk plug-in for new or existing pipelines. Existing pipelines will continue to work as-is for six (6) months, though Snyk recommends migrating to the new process as soon as possible. To avoid disrupting your CI/CD workflows, you must transition to the Snyk CLI before **April 30, 2025**. Refer to the steps in this [migration guide ](migrating-to-aws-codebuild.md)to use Snyk CLI with AWS CodeBuild.\
+Effective **October 30, 2024**, you will no longer be able to add or modify the Snyk plug-in for new or existing pipelines. Existing pipelines will continue to work as-is for 7 months, though Snyk recommends migrating to the new process as soon as possible. To avoid disrupting your CI/CD workflows, you must transition to the Snyk CLI before **May 30, 2025**. Refer to the steps in this [migration guide ](migrating-to-aws-codebuild.md)to use Snyk CLI with AWS CodeBuild.\
 
 
 Snyk is confident that AWS CodeBuild and the Snyk CLI will meet your requirements.
