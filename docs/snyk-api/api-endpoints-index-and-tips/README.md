@@ -438,6 +438,8 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 ### [Get issues by org ID](../reference/issues.md#orgs-org_id-issues)
 
+As of April, 2025, you can retrieve Snyk Code issues using this endpoint. It has the primary file path and primary region in the `source_location` data in `representations` in `coordinates` for an issue.
+
 **More information:** [Scenario: Bulk ignore issues](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues);\
 [List all issues including Snyk Code issues in all the Projects in an Organization](scenarios-for-using-the-snyk-api.md#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization)
 
@@ -446,6 +448,8 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 ### [Get issues by group ID](../reference/issues.md#orgs-org_id-issues-issue_id)
 
 **Note:** Remedies are not included in the response.
+
+As of April, 2025, you can retrieve Snyk Code issues using this endpoint. It has the primary file path and primary region in the `source_location` data in `representations` in `coordinates` for an issue.
 
 Additional information: [Reachability](../../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
 
