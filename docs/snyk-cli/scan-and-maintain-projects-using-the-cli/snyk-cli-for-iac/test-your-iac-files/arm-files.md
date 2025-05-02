@@ -2,7 +2,7 @@
 
 With Snyk Infrastructure as Code, you can test your configuration files using the CLI.
 
-Snyk Infrastructure as Code for Azure Resource Manager (ARM) supports scanning JSON format files. You can also scan Bicep format files by converting the configuration files to JSON using the Bicep CLI.
+Snyk Infrastructure as Code for Azure Resource Manager (ARM) supports scanning JSON format files. You can also scan Bicep format files by converting the configuration files to JSON using the Bicep CLI. Snyk supports the ARM `languageversion` 1.0.
 
 ## Test for an issue on specified JSON files
 
