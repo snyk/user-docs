@@ -2033,6 +2033,15 @@ For node projects, please try again after removing requirement to generate a loc
 **Help Links:**
 - [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#howtonotrequestalockfiletobegenerated](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#howtonotrequestalockfiletobegenerated)
 
+### [SNYK-OS-8006](#snyk-os-8006)
+
+#### No default image found in repository
+
+Unable to find the default image. Please try again, and contact Snyk support if the error persists.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
 ---
 # SBOM Export
 ### [SNYK-OS-9000](#snyk-os-9000)
@@ -2784,4 +2793,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-04-29T13:05:20.153Z
+--- Generated at 2025-05-02T14:02:41.307Z
