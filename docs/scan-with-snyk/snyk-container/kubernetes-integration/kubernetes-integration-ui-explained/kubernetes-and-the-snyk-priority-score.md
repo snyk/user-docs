@@ -12,11 +12,11 @@ Similar to the factors contributing to the Priority Score, images imported from 
 
 The Kubernetes integration collects information about how workloads are configured, focusing on options that can lead to security issues. Snyk displays this summary on the Project page:
 
-![Project configuration details](broken-reference)
+![Project configuration details](../../../../.gitbook/assets/secure_configuration_info.png)
 
 To see the factors taken into consideration for the Priority Score of each vulnerability, hover over the score.
 
-![](broken-reference)
+![](../../../../.gitbook/assets/hover_priority_score.png)
 
 The rationale is based on the fact that a vulnerability that is present in a poorly configured workload scores higher than the same vulnerability found in a well-configured workload.
 
