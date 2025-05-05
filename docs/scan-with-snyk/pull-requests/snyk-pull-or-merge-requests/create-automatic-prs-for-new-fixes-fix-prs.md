@@ -14,7 +14,7 @@ The following rules are applied to the creation of automatic PRs for vulnerabili
 * One pull request is created per Project.
 * If either the vulnerability is new and has a fix available **or** the fix is new and is not ignored, a Fix PR can be created.
 * Fixing a vulnerability by upgrading a package may sometimes introduce a new vulnerability. Snyk will only automatically create such a pull request if the fixed vulnerabilities are a higher severity than any new ones introduced.
-* For known vulnerabilities, see [Configure Automatic Backlog PRs.](create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md)&#x20;
+* For known vulnerabilities, see [Configure Automatic Backlog PRs.](create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md)
 
 <figure><img src="../../../.gitbook/assets/project-settings-test-pull-request-frequency.png" alt="Test &#x26; Automated Pull Request Frequency setting"><figcaption><p>Test &#x26; Automated Pull Request Frequency setting</p></figcaption></figure>
 
@@ -34,7 +34,7 @@ Follow these steps to enable pull requests at the global integration level:
 2. Select an SCM integration, for example, GitHub.
 3. Enable **New vulnerabilities** and click **Save.**
 
-**Apply changes to all overridden Projects** will update all of the individual Project settings for **Automatic fix PRs**. If a Project previously had its own settings for automatic fix full requests, clicking the button will override the Project setting with the global setting.
+**Apply changes to all overridden Projects** will update all of the individual Project settings for **Automatic fix PRs**. If a Project previously had its own settings for automatic fix pull requests, clicking the button will override the Project setting with the global setting.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-05-03 at 14.49.59.png" alt=""><figcaption><p>Configure Automatic Fix PRs</p></figcaption></figure>
 
