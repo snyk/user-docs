@@ -18,7 +18,7 @@ Each inventory layout is presented in a table format, detailing the available ke
 * [SCM Repository freshness](assets-inventory-components.md#repository-freshness)
 * [Clusters](assets-inventory-components.md#clusters)
 * [Organizations](assets-inventory-components.md#organizations)
-* Visibility
+* [Visibility](assets-inventory-components.md#visibility)
 
 ## **Asset**
 
@@ -239,6 +239,15 @@ Here is a list of the available risk factors:
 
 The Source column in Snyk Essentials helps users identify the origin of their assets, which can be directly from Snyk, through SCM systems, or using third-party integrations. This feature simplifies asset management and risk prioritization by providing clear visibility into the origin of each asset and it enables more effective security strategies and remediation efforts.
 
+## SCM Integrations
+
+The SCM Integrations column indicates how each SCM was integrated into Snyk at the Group or Organization level. Full context enrichment is available at the Group level, while testing is available at the Organization level.
+
+The column is hidden by default, and you can enable it in the **Columns** section. It shows the following value:
+
+* **Snyk Org**: The Snyk Organization-level integration is used for import and testing.
+* **Snyk Essentials**: The Snyk Group-level integration is used for discovery and asset enrichment.
+
 ## SCM Repository freshness
 
 The SCM Repository freshness column provides you with an immediate understanding of the current status of your repositories, including the date of the last commit. This assists you in quickly identifying active and dormant Projects and helps you make decisions regarding maintenance, security patching, and resource allocation.
@@ -274,3 +283,14 @@ The Visibility column lists the visibility status of the repositories as follows
 Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../manage-issues/reporting/getting-started-with-snyk-reports.md#snyk-reporting-filters).
 
 \
+
+
+## Actions
+
+The Actions column provides a workflow to set up the SCM integration at the Group level to access full context enrichment. To identify the type of integration, check the [SCM Integrations column](assets-inventory-components.md#scm-integrations). This use case applies where a Group-level integration is not configured.&#x20;
+
+If a Group level integration has not been set up, repositories discovered at the Organization level display a **Set up integration** button under the **Actions** column. If you set up the integration at the Group level, this option becomes unavailable.&#x20;
+
+To add context enrichment, find an asset and select **Set up integration**. For configuration details, see [Snyk SCM Integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
+
+<figure><img src="../.gitbook/assets/group-inventory-all-assets-actions-set-up-integration.png" alt="Set up SCM integration at the Organization level from the Actions column"><figcaption><p>Set up SCM integration at the Organization level from the Actions column</p></figcaption></figure>

@@ -1,12 +1,13 @@
 # Assets inventory tabs
 
-Snyk defines an asset as a meaningful, real-world component in an application’s SDLC, where meaningful means either carries a risk or aggregates risk of other components (for example, repositories that contain packages), and real-world means that the concept exists outside of Snyk, for example, repository (which is a generally applicable term). In most cases, assets carry a risk or aggregate risk of other components, for example, repositories that contain packages.
+Snyk defines an asset as a meaningful, real-world component in an application’s SDLC, where meaningful means either carries a risk or aggregates risk of other components (for example, repositories that contain packages), and real-world means that the concept exists outside of Snyk, for example, repository (which is a generally applicable term). In most cases, assets carry a risk or aggregate risk of other components, such as repositories that contain packages.
 
 Snyk Essentials inventory tabs are organizing your repository assets in meaningful ways, enabling you to:
 
 * Gain full repository asset visibility from your SCM tools, including details about configured teams and repository code committers.
 * Track controls coverage for Snyk products.
 * Prioritize coverage mitigation efforts according to business impact.
+* Use automatic repository discovery to surface repositories that have not yet been imported into Snyk to identify coverage gaps.
 
 {% hint style="info" %}
 Each line in the inventory represents an asset.
@@ -107,9 +108,11 @@ Assets in the inventory are presented with key attributes in the following colum
 * **Class** - Reflects the business criticality of the asset from A (most critical) to D (least critical), as defined by the user in the Policies view. You can manually change the class or automatically change it by applying a policy. You can lock the value you have manually set for a Class to prevent policies from overriding it.
 * **Risk factors** - Lists the potential vulnerabilities and security threats associated with each asset and helps users identify specific risks, enabling them to prioritize and address issues more effectively.&#x20;
 * **Source** - Reflects the source of the asset, which can come from Snyk, an SCM, or a third-party integration.
+* **SCM Integrations** - Shows how each SCM was integrated at the Group or Organization level. By understanding the source of the SCM integration, you can determine if you require an Organization-level integration to unlock full asset context.
 * **SCM Repository freshness** - Reflects the status of the repository and the date of the last commit.
 * **Clusters** - Provides a list of all the cluster names where the image asset is deployed.&#x20;
 * **Organizations** - Provides a list of the Snyk Organizations that are mapped to the asset.
+* **Actions** - Provides a workflow to set up an SCM integration, enriching the asset context with information such as tags, developers, and repository freshness. This use case is available when a Group-level integration is not configured.
 
 {% hint style="info" %}
 The Clusters column is hidden by default. To enable it, click Columns, select Clusters from the dropdown list, then click Apply to save the changes.&#x20;
