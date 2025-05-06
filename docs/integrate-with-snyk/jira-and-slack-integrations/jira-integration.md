@@ -49,6 +49,10 @@ After you set up the Jira integration connection, open one of your Snyk Projects
 
 <figure><img src="../../.gitbook/assets/Jira - new button.png" alt="Create an issue button"><figcaption><p>Create an issue button</p></figcaption></figure>
 
+If the `Create an issue` button is not visible in the UI, ensure that `Group by none` is selected at the top of the Project's vulnerabilities table. This will then show the `Create an issue` button against the Project vulnerabilities.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Setting Group by none will show the Create Jira ticket button</p></figcaption></figure>
+
 When you select **Create an issue**, a Jira issue creation form appears. This form includes the Snyk issue details, which are copied into the associated fields. You can review and edit this form before creating the issue.
 
 Select the Jira project to which you want to send the issue. The fields in the example that follows are based on the fields that the specific Project has, so switching between Projects may show different options.
