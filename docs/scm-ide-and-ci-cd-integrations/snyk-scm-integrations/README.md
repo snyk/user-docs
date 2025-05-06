@@ -66,7 +66,7 @@ See the [Integration syncing time](../../integrate-with-snyk/#integrations-synci
 The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.&#x20;
 
 {% hint style="info" %}
-The wildcard integration applies to the GitHub and Azure DevOps integrations and offers support when you set them up using [Snyk Broker](../../enterprise-setup/snyk-broker/snyk-broker-essentials.md).&#x20;
+The wildcard integration applies to the GitHub integration and offers support when you set it up using [Snyk Broker](../../enterprise-setup/snyk-broker/snyk-broker-essentials.md).&#x20;
 {% endhint %}
 
 You can use the wildcards while setting up your integration using the Integration Hub:
