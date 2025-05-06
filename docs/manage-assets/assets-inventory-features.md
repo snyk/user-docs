@@ -70,16 +70,16 @@ You can filter the information for all the inventory layouts and can use the fol
 * **Owner\*** - represents the team owning the repository for which the application context catalog was configured.
 * **Risk factors** - The list of available risk factors. Risk factors refer to assets that can be vulnerable to security threats based on their exposure, sensitivity, compliance with security standards, and vulnerability history.
 * **Runtime discovered** - specify the period when the runtime image asset was discovered.
-* **Runtime last seen** - specifies the most recent time this image asset was detected in runtime
+* **Runtime last seen** - specifies the most recent time this image asset was detected in runtime.
+* **Visibility** - the visibility status of the repositories.
+  * **Public**: Repositories that are publicly accessible.
+  * **Private**: Restricted repositories.
+  * **Internal**: Internal repositories specific to GitHub and GitLab.
 * **SCM Repository freshness** - the status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
   * **N/A**: There are no commits detected by Snyk Essentials.
-* **Visibility** - the visibility status of the repositories.
-  * **Public**: Repositories that are publicly accessible.
-  * **Private**: Restricted repositories.
-  * **Internal**: Internal repositories specific to GitHub and GitLab.
 
 {% hint style="info" %}
 N/A indicates that the repository was detected through a Snyk scan but not directly from the SCM. To detect SCM repositories, you must set up SCM integration at the Group level.
