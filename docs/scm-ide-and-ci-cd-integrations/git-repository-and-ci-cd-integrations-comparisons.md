@@ -2,7 +2,7 @@
 
 [Git repository](snyk-scm-integrations/) and [CI/CD pipeline](snyk-ci-cd-integrations/) integrations are commonly used.&#x20;
 
-As the following diagram illustrates, you can use a Git repository (SCM) integration to check for issues, including vulnerabilities and license issues, and to prevent pull requests based on policies. You can start by testing and fixing in your development environment and then test, fix, and monitor using a Git repository integration. Use a Git repository integration to improve application security in your Git repository, preventing vulnerable code from entering your codebase and getting quick visibility for your vulnerabilities.
+As the following diagram illustrates, you can use a Git repository (SCM) integration to check for issues, including vulnerabilities and license issues, and to prevent pull requests based on policies. You can start by testing and fixing in your development environment, and then test, fix, and monitor using a Git repository integration. Use a Git repository integration to improve application security in your Git repository, preventing vulnerable code from entering your codebase and getting quick visibility for your vulnerabilities.
 
 <figure><img src="../.gitbook/assets/scm-ci-cid.png" alt="Snyk integrations"><figcaption><p>Snyk Integrations</p></figcaption></figure>
 
@@ -12,11 +12,11 @@ You can implement either Git repository or CI/CD integration, or both. Your impl
 
 ## Git repository considerations
 
-Use Git repository integrations to Improve the security of your code and deployed applications.
+Use Git repository integrations to improve the security of your code and deployed applications.
 
 Git repository integration allows scanning and visibility early in the software development lifecycle through:
 
-* Automatic daily rescanning of all imported Projects
+* Automatic daily rescanning of all imported Open Source Projects
 * Checking all submitted PRs for security issues
 * Generating dependency upgrade PRs to deal with technical debt
 * Generating fix PRs for existing vulnerabilities that have not been addressed
