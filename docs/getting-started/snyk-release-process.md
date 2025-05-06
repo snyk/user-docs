@@ -53,32 +53,32 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
 
 Deprecated features are outdated and will be removed in the future. The documentation page will announce the transition of a feature to Deprecated six months before its start date.
 
-Apps API has the following deprecated endpoints:
-
-* **Revoke app bot authorization** endpoint
-  * The [Revoke app bot authorization](../snyk-api/api-endpoints-index-and-tips/#deprecated-revoke-app-bot-authorization) endpoint is deprecated.&#x20;
-  * Use the [Revoke app authorization for a Snyk Group with install ID](../snyk-api/api-endpoints-index-and-tips/#revoke-app-authorization-for-a-snyk-group-with-install-id) endpoint.
-* **Create a new app for an organization** endpoint
-  * The [Create a new app for an organization](../snyk-api/api-endpoints-index-and-tips/#deprecated-create-a-new-app-for-an-organization) endpoint is deprecated.&#x20;
-  * Use the [Create a new Snyk App for an organization](../snyk-api/api-endpoints-index-and-tips/#create-a-new-snyk-app-for-an-organization) endpoint.
-* **Get a list of apps created by an organization** endpoint
-  * The [Get a list of apps created by an organization](../snyk-api/api-endpoints-index-and-tips/#deprecated-get-a-list-of-apps-created-by-an-organization) endpoint is deprecated.&#x20;
-  * Use the new [Get a list of apps created by an organization](../snyk-api/api-endpoints-index-and-tips/#get-a-list-of-apps-created-by-an-organization) endpoint.
-* **Update app attributes that are name, redirect URIs, and access token time to live** endpoint
-  * The [Update app attributes that are name, redirect URIs, and access token time to live](../snyk-api/api-endpoints-index-and-tips/#deprecated-update-app-attributes-that-are-name-redirect-uris-and-access-token-time-to-live) endpoint is deprecated.&#x20;
-  * Use the [Update app creation attributes such as name, redirect URIs, and access token time to live using the App ID](../snyk-api/api-endpoints-index-and-tips/#update-app-creation-attributes-such-as-name-redirect-uris-and-access-token-time-to-live-using-the-ap) endpoint.
-* **Get an app by client id** endpoint
-  * The [Get an app by client id](../snyk-api/api-endpoints-index-and-tips/#deprecated-get-an-app-by-client-id) endpoint is deprecated.&#x20;
-  * Use the [Get a Snyk App by its App ID](../snyk-api/api-endpoints-index-and-tips/#get-a-snyk-app-by-its-app-id) endpoint.
-* **Delete an app** endpoint
-  * The [Delete an app](../snyk-api/api-endpoints-index-and-tips/#deprecated-delete-an-app) endpoint is deprecated.&#x20;
-  * Use the [Delete a Snyk App by its App ID](../snyk-api/api-endpoints-index-and-tips/#delete-an-app-by-its-app-id) endpoint.
-* **Manage client secrets for an app** endpoint
-  * The [Manage client secrets for an app](../snyk-api/api-endpoints-index-and-tips/#deprecated-manage-client-secrets-for-an-app) endpoint is deprecated.&#x20;
-  * Use the [Manage client secret for non-interactive Snyk App installations](../snyk-api/api-endpoints-index-and-tips/#manage-client-secret-for-non-interactive-snyk-app-installations) endpoint.
-* **Get a list of app bots authorized to an organization** endpoint
-  * The [Get a list of app bots authorized to an organization](../snyk-api/api-endpoints-index-and-tips/#deprecated-get-a-list-of-app-bots-authorized-to-an-organization) endpoint is deprecated.&#x20;
-  * Use the [Get a list of apps installed for an organization](../snyk-api/api-endpoints-index-and-tips/#get-a-list-of-apps-installed-for-an-organization) endpoint.
+* [Snyk Code Local Engine ](../scan-with-snyk/snyk-code/snyk-code-local-engine.md)is deprecated.
+* Apps API has the following deprecated endpoints:
+  * **Revoke app bot authorization** endpoint
+    * The [Revoke app bot authorization](../snyk-api/api-endpoints-index-and-tips/#deprecated-revoke-app-bot-authorization) endpoint is deprecated.&#x20;
+    * Use the [Revoke app authorization for a Snyk Group with install ID](../snyk-api/api-endpoints-index-and-tips/#revoke-app-authorization-for-a-snyk-group-with-install-id) endpoint.
+  * **Create a new app for an organization** endpoint
+    * The [Create a new app for an organization](../snyk-api/api-endpoints-index-and-tips/#deprecated-create-a-new-app-for-an-organization) endpoint is deprecated.&#x20;
+    * Use the [Create a new Snyk App for an organization](../snyk-api/api-endpoints-index-and-tips/#create-a-new-snyk-app-for-an-organization) endpoint.
+  * **Get a list of apps created by an organization** endpoint
+    * The [Get a list of apps created by an organization](../snyk-api/api-endpoints-index-and-tips/#deprecated-get-a-list-of-apps-created-by-an-organization) endpoint is deprecated.&#x20;
+    * Use the new [Get a list of apps created by an organization](../snyk-api/api-endpoints-index-and-tips/#get-a-list-of-apps-created-by-an-organization) endpoint.
+  * **Update app attributes that are name, redirect URIs, and access token time to live** endpoint
+    * The [Update app attributes that are name, redirect URIs, and access token time to live](../snyk-api/api-endpoints-index-and-tips/#deprecated-update-app-attributes-that-are-name-redirect-uris-and-access-token-time-to-live) endpoint is deprecated.&#x20;
+    * Use the [Update app creation attributes such as name, redirect URIs, and access token time to live using the App ID](../snyk-api/api-endpoints-index-and-tips/#update-app-creation-attributes-such-as-name-redirect-uris-and-access-token-time-to-live-using-the-ap) endpoint.
+  * **Get an app by client id** endpoint
+    * The [Get an app by client id](../snyk-api/api-endpoints-index-and-tips/#deprecated-get-an-app-by-client-id) endpoint is deprecated.&#x20;
+    * Use the [Get a Snyk App by its App ID](../snyk-api/api-endpoints-index-and-tips/#get-a-snyk-app-by-its-app-id) endpoint.
+  * **Delete an app** endpoint
+    * The [Delete an app](../snyk-api/api-endpoints-index-and-tips/#deprecated-delete-an-app) endpoint is deprecated.&#x20;
+    * Use the [Delete a Snyk App by its App ID](../snyk-api/api-endpoints-index-and-tips/#delete-an-app-by-its-app-id) endpoint.
+  * **Manage client secrets for an app** endpoint
+    * The [Manage client secrets for an app](../snyk-api/api-endpoints-index-and-tips/#deprecated-manage-client-secrets-for-an-app) endpoint is deprecated.&#x20;
+    * Use the [Manage client secret for non-interactive Snyk App installations](../snyk-api/api-endpoints-index-and-tips/#manage-client-secret-for-non-interactive-snyk-app-installations) endpoint.
+  * **Get a list of app bots authorized to an organization** endpoint
+    * The [Get a list of app bots authorized to an organization](../snyk-api/api-endpoints-index-and-tips/#deprecated-get-a-list-of-app-bots-authorized-to-an-organization) endpoint is deprecated.&#x20;
+    * Use the [Get a list of apps installed for an organization](../snyk-api/api-endpoints-index-and-tips/#get-a-list-of-apps-installed-for-an-organization) endpoint.
 
 ### End of support features
 
