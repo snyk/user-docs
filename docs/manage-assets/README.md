@@ -20,7 +20,7 @@ Each inventory tab may include different counts of assets and scanned artifacts,
 
 The following video summarizes the main features of the Inventory view from the Snyk Web UI.
 
-{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737657015/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-4a_-_v1_-_Inventory.mp4" %}
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1746127384/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-4c_-_v2_-_Inventory_Overview.mp4" %}
 Reviewing asset inventory
 {% endembed %}
 
