@@ -108,6 +108,10 @@ The default provider setting is used when two or more providers report data for 
 
 Individual providers can also be disabled here if they should not be used when calculating Insights.
 
+{% hint style="info" %}
+Consider setting up a default provider. When a default provider is not configured, Snyk prioritizes data from the first provider added.
+{% endhint %}
+
 ### Kubernetes Cluster Mapping
 
 Runtime providers may report different names that refer to the same Kubernetes cluster. You can add a cluster name mapping to let Insights correlate resources from the two data sets.&#x20;
