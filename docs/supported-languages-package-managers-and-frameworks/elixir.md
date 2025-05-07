@@ -1,33 +1,35 @@
 # Elixir
 
+{% hint style="info" %}
+Elixir is supported only for Snyk Open Source.
+{% endhint %}
+
 ## Applicability
 
-Snyk for Elixir is supported **only for Snyk Open Source**.
+The following functions are available for Elixir:
 
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
-
-Available functions:
-
-* Import your app through SCM: N/A
 * Test or monitor your app through CLI and IDE, available for Snyk Open Source.
 * Test your app's SBOM using `pkg:hex`
 * Test your app's packages using `pkg:hex`
 
-For information on using the Snyk CLI for code analysis, see [Snyk CLI for Snyk Code](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
-
 ## Package managers and supported file extensions
 
-Snyk for Elixir supports [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) as a package manager and [hex.pm](https://hex.pm/) as a package registry and does not support any file formats.
+For Elixir, Snyk supports [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) as a package manager and [hex.pm](https://hex.pm/) as a package registry. It does not support any file formats.
 
 ## Frameworks and libraries
 
-Snyk for Elixir does not have any available frameworks and libraries.
+Snyk does not support frameworks and libraries for Elixir.&#x20;
 
 ## Features
 
-The Reports feature is supported by Snyk for Elixir.
+For Elixir, Snyk supports the **Reports** feature.&#x20;
 
-PR Checks configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and will not alert for Elixir or other languages that do not support FixPRs.
+{% hint style="info" %}
+The **Snyk FixPR** feature is not available for Elixir. This means that you will not be notified if the PR checks fail when the following conditions are met:&#x20;
+
+* The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
+* "**Fixed in" available** is set to **Yes.**
+{% endhint %}
 
 ## Snyk CLI for Elixir
 
@@ -62,14 +64,6 @@ Snyk also has limited support for `:path`, `:git` and `:github` dependencies, bu
 * `:path` dependencies appear in the dependency tree by name
 * `:git` and `:github` dependencies appear in the dependency tree by repository URL and version (either `:branch`, `:tag` or `:ref`, as defined in the `mix.exs` file)
 
-## IDE and CI/CD
-
-For integrated development environments, see [Snyk IDEs](../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/).
-
-If you use continuous integration/continuous delivery workflows, you can scan with Snyk based on the integration with your automation software.
-
-## Troubleshooting Snyk for Elixir
-
-When using `asdf`, be sure to set a version by running the `asdf global elixir <version of your choice>`.
-
-If you need help, [contact Snyk Support](https://support.snyk.io).
+{% hint style="info" %}
+When using `asdf`, ensure you set a version by running the `asdf global elixir <version of your choice>`.
+{% endhint %}
