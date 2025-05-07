@@ -412,7 +412,7 @@ Use the information in the Cloud Compliance Issues report to investigate, triage
 {% hint style="info" %}
 **Release status**
 
-Snyk Generated Pull Requests report is now in Early Access and available only for Enterprise plan customers on the following SCM integrations: GitHub, GitHub Enterprise, and GitHub Cloud App. For more information, see [Plans and pricing](https://snyk.io/plans/).
+Snyk Generated Pull Requests report is now in Early Access and available only for Enterprise plan customers on the all SCM integrations. For more information, see [Plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 ### Access the report
