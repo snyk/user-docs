@@ -133,7 +133,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### &#x20;**Snyk AppRisk**&#x20;
 
 * The [Asset Dashboard](manage-issues/reporting/available-snyk-reports.md#asset-dashboard) has been redesigned and is included in the Reports section. It now features several enhancements, including a Global filter bar, new data widgets, and the option to export the dashboard as a PDF.
-* The [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/snyk-broker-essentials.md#scm-integrations) documentation has been updated to outline the specific steps necessary to configure each SCM integration with a Snyk Broker token.
+* The [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md#scm-integrations) documentation has been updated to outline the specific steps necessary to configure each SCM integration with a Snyk Broker token.
 
 ### **Snyk Container**
 
@@ -165,7 +165,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 * [Risk factors on assets](manage-assets/#inventory-overview) is now in [EA](getting-started/snyk-release-process.md#early-access) for Snyk AppRisk customers.
 * [Asset inventory components](manage-assets/assets-inventory-components.md#clusters) has been updated to include details on clusters.
-* Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](enterprise-setup/snyk-broker/snyk-broker-essentials.md#sonarqube-sast-integration).
+* Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md#sonarqube-sast-integration).
 
 ### **Snyk CLI and IDEs**
 
