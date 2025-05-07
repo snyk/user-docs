@@ -61,8 +61,11 @@ You can then set up the integration in Snyk using the Snyk Web UI or REST API.
 
 ## Set up the integration using the Snyk REST API
 
-{% hint style="info" %}
-The integration profiles set up with the REST API will not be visible at the Group-level on the Snyk Web UI Integrations page.
+{% hint style="warning" %}
+Setting up the integration using the API has two limitations:
+
+1. Findings in Google SCC will not include a URL back to the Snyk issue. External URI support is available only when the SCC source is created from the Snyk marketplace listing in the SCC console.
+2. The integration will not be visible in the Snyk group-level integrations UI.
 {% endhint %}
 
 Use the following API request template:
