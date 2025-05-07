@@ -29,7 +29,7 @@ Snyk supports the following features for Apex:
 * Interfile analysis
 
 {% hint style="info" %}
-The **Snyk FixPR** feature is not available for Apex. This means that you will not be notified if the PR checks fail when:&#x20;
+The **Snyk FixPR** feature is not available for Apex. This means that you will not be notified if the PR checks fail when the following conditions are met:&#x20;
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**
