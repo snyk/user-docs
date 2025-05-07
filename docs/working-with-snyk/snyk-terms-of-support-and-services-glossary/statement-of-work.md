@@ -6,7 +6,7 @@ Snyk’s Declining Balance of Hours offers flexible, expert-led consulting to he
 
 * **Snyk Integration and Custom Development:** Seamlessly integrate Snyk into your development pipelines and tailor it to your unique requirements, including custom integrations, workflows, and Residency Services.&#x20;
 * **Snyk Best Practices Consulting:** Optimize your Snyk deployment and usage to achieve maximum effectiveness, including configuration recommendations, policy enforcement, and reporting optimization.&#x20;
-* **Application Security Consulting\*:** Gain valuable insights into your security posture and develop effective remediation strategies, including False Positive/False Negative backlog support, secure code review, and root cause analysis. Consulting can be one-toone with individual developers or with development teams.&#x20;
+* **Application Security Consulting\*:** Gain valuable insights into your security posture and develop effective remediation strategies, including False Positive/False Negative backlog support, secure code review, and root cause analysis. Consulting can be with individual developers or with development teams.&#x20;
 * **Customized Training\*:** Empower your team with targeted training on Snyk’s features, best practices, and secure code techniques, tailored to your Organization’s specific needs and skill levels.
 
 {% hint style="info" %}
