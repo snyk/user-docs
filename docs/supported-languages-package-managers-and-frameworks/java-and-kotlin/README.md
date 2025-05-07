@@ -7,7 +7,7 @@ Snyk supports [Java and Kotlin for code analysis](java-and-kotlin-for-code-analy
 {% hint style="info" %}
 **Supported Java versions**
 
-You can use any Java version up to Java SE 17.
+Snyk supports Java analysis for Java versions up to SE 21 and is designed to process code from newer Java versions where feasible.
 {% endhint %}
 
 There are special considerations for [Snyk CLI for Java and Kotlin](snyk-cli-for-java-and-kotlin.md) and [SCM integrations with Maven and Gradle](git-repositories-with-maven-and-gradle.md).
