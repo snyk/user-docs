@@ -4,7 +4,7 @@
 
 ## Usage
 
-`snyk monitor [<OPTIONS>]`
+`snyk sbom monitor [<OPTIONS>]`
 
 ## Description
 
