@@ -1,6 +1,6 @@
 # Groovy
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **Release status**
 
 Groovy for Snyk Code is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
@@ -8,7 +8,7 @@ Groovy for Snyk Code is in Early Access and is available only with Enterprise pl
 
 ## Frameworks and libraries
 
-The following frameworks and libraries are supported in Snyk for Groovy:
+For Groovy, Snyk supports the following frameworks and libraries:
 
 * groovy-cli-picollo - Comprehensive
 * Groovy standard library - Comprehensive
@@ -19,18 +19,18 @@ The following frameworks and libraries are supported in Snyk for Groovy:
 * Play - Partial
 * Spring - Partial
 
-## Features
+## Supported file extensions
 
-The following features are supported in Snyk for Groovy:
-
-* Support for Interfile analysis
-* Reports
-
-The following extensions are supported in Snyk for Groovy:
+For Groovy, Snyk supports the following extensions:
 
 * .groovy
 * .grt
 * .gtpl
 * .gvy
 
-If you need help, [contact Snyk Support](https://support.snyk.io).
+## Features
+
+For Groovy, Snyk supports the following features:
+
+* Support for Interfile analysis
+* Reports
