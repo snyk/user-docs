@@ -2,7 +2,7 @@
 
 ## Set the Python version in Git Projects
 
-The supported versions of Python are `2.7`, `3.7`, `3.8`, `3.9`, `3.10`,`3.11`,`3.12`.
+The supported versions of Python are `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`.
 
 When scanning Pip Projects imported from Git, Snyk uses the version of Python specified in Organization settings or `.snyk` files.
 
