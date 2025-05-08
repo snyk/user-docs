@@ -53,7 +53,6 @@
     * [Ruby for code analysis](supported-languages-package-managers-and-frameworks/ruby/ruby-for-code-analysis.md)
     * [Ruby for open source](supported-languages-package-managers-and-frameworks/ruby/ruby-for-open-source.md)
   * [Rust](supported-languages-package-managers-and-frameworks/rust.md)
-    * [Rust for code analysis](supported-languages-package-managers-and-frameworks/rust/rust-for-code-analysis.md)
   * [Scala](supported-languages-package-managers-and-frameworks/scala/README.md)
     * [Scala for code analysis](supported-languages-package-managers-and-frameworks/scala/scala-for-code-analysis.md)
     * [Scala for open source](supported-languages-package-managers-and-frameworks/scala/scala-for-open-source.md)

@@ -1,27 +1,24 @@
 # Rust
 
+{% hint style="info" %}
+Rust is supported for Snyk Code and for Snyk Open Source.
+{% endhint %}
+
 ## Applicability
 
-Snyk supports [Rust for code analysis](rust/rust-for-code-analysis.md) and Rust for open source.
+The following functions are available for Rust:
 
-Snyk supports the testing of Rust applications through the API. For details, see [Test an SBOM document for vulnerabilities](../snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
-
-Snyk also supports the testing of individual Rust packages from the Cargo package manager. For details, see [List issues for a package](../snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package.md).
-
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
-
-Available functions:
-
-* Test your app's SBOM using`pkg:cargo`
-* Test your app's packages using`pkg:cargo`
+* Test your app's SBOM using `pkg:cargo` For more information, see [Test an SBOM document for vulnerabilities](../snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
+* Test your app's packages using `pkg:cargo`
+* Test your individual Rust packages from the Cargo package manager. For more information, see [List issues for a package](../snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package.md).
 
 ## Package managers and supported file extensions
 
-Snyk for Rust supports Cargo as a package manager and [crates.io](https://crates.io/) as a package registry and does not support any file formats.
+For Rust, Snyk supports Cargo as a package manager and [crates.io](https://crates.io/) as a package registry. It does not support any file formats.
 
 ## Frameworks and libraries
 
-The following frameworks and libraries are supported in Snyk for Rust:
+For Rust with Snyk Open Source, the following frameworks and libraries are supported:
 
 * Warp - Comprehensive
 * Rust standard library - Comprehensive
@@ -40,14 +37,19 @@ The following frameworks and libraries are supported in Snyk for Rust:
 * sqlx - Comprehensive
 * Reqwest - Comprehensive
 
-If you want to use **Open Source** PR checks in Rust projects, for which the Fix PRs feature is not supported, then vulnerable dependencies may be introduced without being flagged.
-
 ## Features
 
-The following features are supported in Snyk for Rust:
+For Rust with Snyk Code, the following features are supported:
 
-| Snyk Open Source | Snyk Code                                                        |
-| ---------------- | ---------------------------------------------------------------- |
-| None             | <ul><li>Support for Interfile analysis</li><li>Reports</li></ul> |
+* Support for Interfile analysis
+* Reports
 
-If you need help, [contact Snyk Support](https://support.snyk.io).
+{% hint style="info" %}
+Code analysis support for Rust is available with **Snyk Preview**.&#x20;
+{% endhint %}
+
+For Rust with Snyk Open Source, there are no features supported.
+
+{% hint style="info" %}
+If you want to use Open Source PR checks in Rust Projects for which the **Fix PRs** feature is not supported, it is possible that vulnerable dependencies are introduced without being flagged.
+{% endhint %}
