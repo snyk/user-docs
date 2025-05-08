@@ -28,7 +28,6 @@ The following pages explain how to install these special integrations.
 * [Nexus Repository Manager](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md)
 * [Jira](jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md)
 * [Snyk Broker - Container Registry Agent](../../snyk-broker-container-registry-agent/) (needed to connect to Container Registries)
-* [Derived Docker images for Broker Client integrations and Container Registry Agent](custom-docker-images-for-broker-client-integrations-and-container-registry-agent.md)
 
 You can customize the configuration using the environment variables in the Docker images. For this reason, install separate, multiple instances of the Broker Client for different integration types to ensure proper configuration as well as redundancy.
 
@@ -36,7 +35,7 @@ You can verify that the Broker is running by looking at the settings for your br
 
 ## Advanced configuration using Docker
 
-When you install using Docker, follow the instructions in the pages on [Advanced configuration for Snyk Broker Docker installation](advanced-configuration-for-snyk-broker-docker-installation/) as needed.
+When you install using Docker, follow the instructions on the pages about [Advanced configuration for Snyk Broker Docker installation](advanced-configuration-for-snyk-broker-docker-installation/) as needed.
 
 
 

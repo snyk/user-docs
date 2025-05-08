@@ -40,13 +40,11 @@ docker run --restart=always \
 Snyk Essentials is set by default to **`false`**. Enable it by setting the flag to **`true`**.
 {% endhint %}
 
-As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../custom-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the GitHub Enterprise integration.
-
 ## Start the Broker Client container and verify the connection with GitHub Enterprise
 
 Paste the Broker Client configuration to start the Broker Client container.
 
-Once the container is up, the GitHub Enterprise Integrations page shows the connection to GitHub Enterprise and you can `Add Projects.`
+After the container is up, the GitHub Enterprise Integrations page shows the connection to GitHub Enterprise, and you can `Add Projects.`
 
 ## Basic troubleshooting for Broker with GitHub Enterprise
 
@@ -55,10 +53,10 @@ Once the container is up, the GitHub Enterprise Integrations page shows the conn
 One reason that open Fix/Upgrade PRs or PR/recurring tests fail may be fetching big manifest files (> 1Mb). To address this issue, enable an additional variable in your broker by following the Additional instructions for [Snyk Open Source Scans (SCA) of large manifest files (Docker setup) ](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup)&#x20;
 
 {% hint style="info" %}
-To ensure the maximum possible security, Snyk does not enable this rule by default, as use of this endpoint means that the Snyk platform can theoretically access all files in this repository, because the path does not include specific allowed file names.
+To ensure the maximum possible security, Snyk does not enable this rule by default, because use of this endpoint means that the Snyk platform can theoretically access all files in this repository, because the path does not include specific allowed file names.
 {% endhint %}
 
 ### **Additional troubleshooting for Broker with GitHub Enterprise**
 
-* Run `docker logs <container id>` to look for any errors, where container id is the GitHub Enterprise Broker container ID.
+* Run `docker logs <container id>` to look for any errors, where the container id is the GitHub Enterprise Broker container ID.
 * Ensure relevant ports are exposed to GitHub Enterprise.

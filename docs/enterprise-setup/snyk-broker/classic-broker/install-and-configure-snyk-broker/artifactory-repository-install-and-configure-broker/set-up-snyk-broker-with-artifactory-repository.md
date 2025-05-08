@@ -45,8 +45,6 @@ docker run --restart=always \
   snyk/broker:artifactory
 ```
 
-As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../custom-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Artifactory integration.
-
 ## Start the Broker Client container and verify the connection with Artifactory Repository
 
 Paste the Broker Client configuration to start the Broker Client container.

@@ -37,8 +37,6 @@ docker run --restart=always \
 Snyk Essentials is set by default to **`false`**. Enable it by setting the flag to **`true`**.
 {% endhint %}
 
-As an **alternative using to the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../custom-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the GitHub integration.
-
 ## Start the Broker Client container and verify the connection with GitHub
 
 Paste the Broker Client configuration to start the Broker Client container.
