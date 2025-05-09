@@ -1484,6 +1484,122 @@ Currently this is a product limitation for SCM. As a workaround, use the 'snyk m
 **Help Links:**
 - [https://docs.snyk.io/snyk-cli/commands/monitor](https://docs.snyk.io/snyk-cli/commands/monitor)
 
+### [SNYK-OS-GO-0011](#snyk-os-go-0011)
+
+#### No secure protocol found for repository
+
+The Go toolchain could not find a secure protocol (HTTPS) to access the repository.
+
+This error typically occurs when the repository URL is not configured to use a secure protocol, or the necessary credentials for accessing the repository securely are not provided.
+
+Ensure that the repository URL uses a secure protocol (https://) and verify that the necessary authentication credentials (such as HTTPS credentials) are correctly configured and accessible by the Go toolchain.
+ 
+Note: SSH is not supported.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-GO-0012](#snyk-os-go-0012)
+
+#### Connection reset by peer
+
+The Go toolchain encountered a connection reset error while trying to access the repository.
+
+This error typically occurs when the connection to the repository is unexpectedly closed by the remote server. This can be due to network issues, server configuration, or other transient problems.
+
+Try to reimport the project, if that does not work, please reach out to Snyk support.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-OS-GO-0013](#snyk-os-go-0013)
+
+#### Invalid zip file
+
+The Go toolchain encountered an error while trying to download and extract a Go package version. The downloaded file is not a valid zip file.
+
+This error typically occurs when there is an issue with the downloaded file, such as corruption or an incomplete download.
+
+If the package that fails is a private package that's hosted in a private network, make sure the network is up and running and retry the import. If the issue persists, verify the integrity of the downloaded file and check for any issues with the source of the download.
+
+If the issue persists, please reach out to Snyk support.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-GO-0014](#snyk-os-go-0014)
+
+#### Go version mismatch
+
+The Go toolchain encountered a version mismatch error while trying to process the module.
+
+This usually happens when the version of Go that was used in the go.mod file is not yet supported by Snyk.
+
+We usually try and add support shortly after a new ecosystem version has been released.
+
+If the Go version used in the go.mod file is supported based on our Golang documentation, please reach out to Snyk support.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.snyk.io/supported-languages-package-managers-and-frameworks/go/go-for-open-source#go-for-snyk-open-source-support](https://docs.snyk.io/supported-languages-package-managers-and-frameworks/go/go-for-open-source#go-for-snyk-open-source-support)
+
+### [SNYK-OS-GO-0015](#snyk-os-go-0015)
+
+#### Invalid Go version in go.mod
+
+The Go toolchain encountered an error while parsing the go.mod file. The specified Go version '__GOLANG_VERSION__' is invalid and must match the format 1.23.4.
+
+This error typically occurs when the Go version in the go.mod file is not correctly formatted.
+
+Ensure that the Go version specified in the go.mod file matches the required format (e.g., 1.23.4). Update the go.mod file with the correct Go version and try again.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-GO-0016](#snyk-os-go-0016)
+
+#### Dial TCP timeout
+
+The Go toolchain encountered a timeout error while trying to fetch a module/package.
+
+This error typically occurs when the connection to the server hosting the module/package times out. This can be due to network issues, server configuration, or the server being unreachable.
+
+Ensure that the server hosting the module is reachable and that there are no network issues. If the issue persists, check if there are any restrictions or firewalls blocking access to the server.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+### [SNYK-OS-GO-0017](#snyk-os-go-0017)
+
+#### Host key verification failed
+
+The Go toolchain encountered an error while trying to fetch a module/package. The host key verification failed, which means the key used to connect to the remote repository could not be verified.
+
+This error typically occurs when the key is not recognized or is incorrect. It can also happen if the remote repository's host key has changed.
+
+Ensure that the key used to connect to the remote repository is correct and properly configured. You may need to update the known_hosts file to include the correct host key for the remote repository. Verify your repository access configuration and try again. 
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+- [https://docs.github.com/en/authentication/troubleshooting-ssh/error-host-key-verification-failed](https://docs.github.com/en/authentication/troubleshooting-ssh/error-host-key-verification-failed)
+
+### [SNYK-OS-GO-0018](#snyk-os-go-0018)
+
+#### Missing module declaration in go.mod
+
+The Go toolchain encountered an error while reading the go.mod file. The error indicates that the module declaration is missing.
+
+This error typically occurs when the go.mod file does not specify the module path. To resolve this issue, you need to add a module declaration to the go.mod file.
+
+To specify the module path, run the following command: go mod edit -module=example.com/mod
+
+Update the go.mod file with the correct module path and try again.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
 ### [SNYK-OS-MAVEN-0001](#snyk-os-maven-0001)
 
 #### Missing property
@@ -2793,4 +2909,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-05-07T11:48:11.959Z
+--- Generated at 2025-05-09T08:47:07.648Z
