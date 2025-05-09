@@ -13,3 +13,4 @@ To upgrade existing Classic Broker integrations to Universal Broker, follow thes
    3. Confirm your choice.\
       When the command completes, the connection to the Organization has been upgraded.
 5. Repeat the procedure for all the relevant connections integrated with each Organization.
+6. When you have migrated all of the integrations to the Universal Broker client, delete or remove the Classic Broker container.
