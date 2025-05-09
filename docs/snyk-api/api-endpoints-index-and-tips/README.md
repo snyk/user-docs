@@ -708,7 +708,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 **More information:** [Get a project’s SBOM document](../using-specific-snyk-apis/sbom-apis/rest-api-get-a-projects-sbom-document.md)
 
-### [Create an SBOM test run](ttps://apidocs.snyk.io/?version=2024-10-15#post-/orgs/-org_id-/sbom_tests) (beta)
+### [Create an SBOM test run](https://apidocs.snyk.io/?version=2024-10-15#post-/orgs/-org_id-/sbom_tests) (beta)
 
 **More information:** [Test an SBOM document for vulnerabilities](../using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
 
