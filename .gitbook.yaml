@@ -137,3 +137,4 @@ redirects:
   enterprise-setup/snyk-broker/universal-broker/initial-configuration-of-the-universal-broker: enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker.md
   enterprise-setup/snyk-broker/classic-broker/snyk-broker-apprisk: enterprise-setup/snyk-broker/classic-broker/snyk-broker-essentials.md
   enterprise-setup/snyk-broker/classic-broker/snyk-broker-apprisk-1: enterprise-setup/snyk-broker/universal-broker/snyk-broker-apprisk.md
+  enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/custom-docker-images-for-broker-client-integrations-and-container-registry-agent: enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md
