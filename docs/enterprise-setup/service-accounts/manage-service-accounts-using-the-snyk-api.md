@@ -86,7 +86,7 @@ This call allows you to manage the client secret for `oauth_client_secret` servi
 
 **API endpoint:** [Get a list of organization service accounts](../../snyk-api/reference/serviceaccounts.md#orgs-org_id-service_accounts-1)
 
-This [paginate](../../snyk-api/rest-api/about-the-rest-api.md#pagination)[d](../../snyk-api/rest-api/about-the-rest-api.md#pagination) call returns an array of objects, each describing a service account.
+This [paginated](../../snyk-api/rest-api/about-the-rest-api.md#pagination) call returns an array of objects, each describing a service account.
 
 ### Create a service account for your Organization
 
