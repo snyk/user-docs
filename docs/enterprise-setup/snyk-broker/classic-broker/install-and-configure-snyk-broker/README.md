@@ -18,7 +18,7 @@ Alternatively, you can use the binaries available for [each Github release](http
 
 ## Additional information for developers
 
-If you need to upgrade, see [Upgrade the Snyk Broker Client](../../upgrade-the-snyk-broker-client.md).
+If you need to upgrade, see [Upgrade the Snyk Broker Client](../update-the-snyk-broker-client.md).
 
 Troubleshooting information is provided on the [Troubleshooting Broker](../../troubleshooting-broker.md) page.
 
