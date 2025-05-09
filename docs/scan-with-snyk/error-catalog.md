@@ -1535,7 +1535,7 @@ The Go toolchain encountered a version mismatch error while trying to process th
 
 This usually happens when the version of Go that was used in the go.mod file is not yet supported by Snyk.
 
-We usually try and add support shortly after a new ecosystem version has been released.
+We usually try and add support for new Golang versions shortly after a new one was released.
 
 If the Go version used in the go.mod file is supported based on our Golang documentation, please reach out to Snyk support.
 
@@ -2909,4 +2909,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-05-09T08:47:07.648Z
+--- Generated at 2025-05-09T11:58:24.977Z
