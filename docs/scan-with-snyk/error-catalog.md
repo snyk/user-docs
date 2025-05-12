@@ -1600,6 +1600,19 @@ Update the go.mod file with the correct module path and try again.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
+### [SNYK-OS-GO-0019](#snyk-os-go-0019)
+
+#### Go module version constraint not met
+
+The Go toolchain encountered a version constraint violation while resolving dependencies.
+
+This error typically occurs when a module or dependency specifies a version requirement that is not satisfied by the current Go version in use. For example, a module may require "go >= 1.22.0", but your environment is running "go 1.21.0".
+
+To resolve this, ensure your Go toolchain version meets the module's specified constraint. This might involve upgrading or downgrading your Go version from Settings -> Snyk Open Source -> Edit settings for Go, or finding an alternative version of the module that is compatible with your current Go environment.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
 ### [SNYK-OS-MAVEN-0001](#snyk-os-maven-0001)
 
 #### Missing property
@@ -2909,4 +2922,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-05-09T12:00:37.642Z
+--- Generated at 2025-05-12T07:07:47.976Z
