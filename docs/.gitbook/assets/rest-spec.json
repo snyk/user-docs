@@ -941,13 +941,12 @@
         "style": "form"
       },
       "OrgId": {
-        "description": "Unique identifier for an organization",
+        "description": "Org ID",
         "in": "path",
         "name": "org_id",
         "required": true,
         "schema": {
-          "format": "uuid",
-          "type": "string"
+          "$ref": "#/components/schemas/Uuid"
         }
       },
       "OrgIdFilter": {
@@ -10471,7 +10470,7 @@
         "additionalProperties": false,
         "properties": {
           "field": {
-            "description": "field refers to the type of identifier used in the condition of the policy.  The available value is versioned and hierarchical:\n- `snyk/asset/finding/v1` : identity of the finding scoped to a Snyk assets (e.g. a repository).\nThe identities can be extracted from the fingerprints section of the SARIF, which is accessible via the Snyk CLI. More details can be found in the [CLI documentation](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results#export-test-results).\n",
+            "description": "field refers to the type of identifier used in the condition of the policy.  The available value is versioned and hierarchical:\n- `snyk/asset/finding/v1` : identity of the finding scoped to a Snyk assets (e.g. a repository).\nFor a given issue, `snyk/asset/finding/v1` can be extracted from the `key_asset` field in the [issues API](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org_id-/issues). \nIn addition, finding identities can be extracted from the fingerprints section of the SARIF, which is accessible via the Snyk CLI. More details can be found in the [CLI documentation](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results#export-test-results).\n",
             "enum": [
               "snyk/asset/finding/v1"
             ],
@@ -41632,14 +41631,7 @@
         "operationId": "listBrokerConnectionsForOrg",
         "parameters": [
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/EndingBefore"
@@ -44009,14 +44001,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -44156,14 +44141,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           }
         ],
         "requestBody": {
@@ -44285,14 +44263,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -44366,14 +44337,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -44487,14 +44451,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -44619,14 +44576,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -44709,14 +44659,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -44896,14 +44839,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -47283,7 +47219,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "Unique identifier for an organization",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -47379,7 +47322,14 @@
             "$ref": "#/components/parameters/PackageUrl"
           },
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "Unique identifier for an organization",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "description": "Specify the number of results to skip before returning results. Must be greater than or equal to 0. Default is 0.",
@@ -47485,14 +47435,7 @@
             "$ref": "#/components/parameters/Search"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/Review"
@@ -47611,14 +47554,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           }
         ],
         "requestBody": {
@@ -47721,14 +47657,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/PolicyId"
@@ -47775,14 +47704,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/PolicyId"
@@ -47869,14 +47791,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/PolicyId"
@@ -47991,14 +47906,7 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/PolicyId"
@@ -48962,7 +48870,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "Unique identifier for an organization",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "description": "Unique identifier for a project",
@@ -49074,14 +48989,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           }
         ],
         "requestBody": {
@@ -49219,14 +49127,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/JobId"
@@ -49359,14 +49260,7 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/JobId"
@@ -50725,14 +50619,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/BotId"
@@ -50803,14 +50690,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/BotId"
@@ -50900,14 +50780,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/BotId"
@@ -51021,14 +50894,7 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/BotId"
@@ -51108,14 +50974,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "description": "Project ID",
@@ -51196,14 +51055,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/BotId"
@@ -51313,14 +51165,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "description": "Project ID",
@@ -51444,14 +51289,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/TenantId"
@@ -51550,14 +51388,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/ChannelId"
@@ -59312,14 +59143,7 @@
             "$ref": "#/components/parameters/ConnectionId"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "description": "The requested version of the endpoint to process the request",
@@ -60154,14 +59978,7 @@
             "$ref": "#/components/parameters/ConnectionId"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/IntegrationId"
