@@ -16,7 +16,7 @@ If it is not specified,  the `API_BASE_URL` is [https://api.snyk.io](https://api
 
 ## `broker-client-url-validation`
 
-The Broker Client Configuration Check validates the `BROKER_CLIENT_URL` value to be as validated as possible. It verifies it contains a scheme (`http or https`) and if `https`, an SSL certificate+key is loaded or is possibly TLS terminated upstream.
+The Broker Client Configuration Check validates the `BROKER_CLIENT_URL` value to the extent possible. The check verifies that the configuration contains a scheme (`http or https`) and if the scheme is `https`, that an SSL certificate+key is loaded or TLS-termination upstream is used.
 
 If you are using TLS termination and you do not require a certificate+key in the Broker Client, add the environment variable `BROKER_CLIENT_URL_TLS_TERMINATED` to signal TLS termination in the preflight check.
 
