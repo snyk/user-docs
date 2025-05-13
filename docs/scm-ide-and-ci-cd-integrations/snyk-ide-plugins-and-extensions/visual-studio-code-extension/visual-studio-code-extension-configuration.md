@@ -6,7 +6,7 @@ After the plugin is installed, you can set the following configurations for the 
 
 ### Snyk account
 
-* **Authentication method:** Specify whether to authenticate with OAuth2 or with an API token. `OAuth2`is the default
+* **Authentication method**: Specify whether to authenticate with OAuth2 or with an API token. `OAuth2`is the default
 * **Custom Endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).\
   Multi-tenant users who do not belong to the default region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 *   **Organization**: Sets the Organization to run `snyk test` against, similar to the `--org=` option in the CLI. Snyk recommends using the `ORG_ID`. If you specify an Organization slug name, the value must match the URL slug as displayed in the URL of your Organization in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
@@ -29,28 +29,28 @@ Effective beginning with June 24, 2025, Snyk Code Quality issues will no longer 
 * **All Issues vs Net New Issues**: Specify whether to see all issues or only net new issues. The latter requires a Git repository, where the extension compares findings with those in the base branch.
 *   **Additional parameters**: Set additional `snyk test` [CLI options](https://docs.snyk.io/snyk-cli/cli-reference#options-for-multiple-commands) for Open Source scanning.
 
-    For **unmanaged** [**C/C++**](../../../supported-languages-package-managers-and-frameworks/c-c++/) **scanning**, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. Additional parameters do not apply to Snyk Code or IaC.
+    For **unmanaged [C/C++](../../../supported-languages-package-managers-and-frameworks/c-c++/) scanning**, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. Additional parameters do not apply to Snyk Code or IaC.
 
-## **User experience**
+## User experience
 
-* **Scanning mode:**  The **auto** option activates automatic scans when saving files and when opening a Project; works with Code and IaC.
-* **Auto Scan Open Source Security:** Set to run Open Source Security analysis in automatic mode.
+* **Scanning mode**: The **auto** option activates automatic scans when saving files and when opening a Project; works with Code and IaC.
+* **Auto Scan Open Source Security**: Set to run Open Source Security analysis in automatic mode.
 
 ## Experimental
 
-This section contains experimental features that may change suddenly.&#x20;
+This section contains experimental features that may change suddenly.
 
-These settings are not part of the stable functionality and are not officially supported. &#x20;
+These settings are not part of the stable functionality and are not officially supported.
 
 ## Initialization
 
 **Trusted Folders**: Link to the `settings.json` file, which has a list of folders that are marked as trusted. Use this setting only in advanced cases or when certain folders should be marked as not trusted.
 
-## CLI and Language Server&#x20;
+## CLI and Language Server
 
 * When **Automatic Dependency Management** is checked, the plugin will download [the Language Server](../snyk-language-server/) and [the CLI](../../../snyk-cli/) and update them regularly to the defined CLI path and Language Server path if defined. Uncheck this option if downloading the CLI is not possible due to your network configuration, for example, due to firewall rules, and you need to obtain these dependencies through other means.
-* **CLI Path:** Allow changing a file path of the CLI (optional field).
-* **Language Server Path:** Allow changing a file path of the Language Server (optional field).
+* **CLI Path**: Allow changing a file path of the CLI (optional field).
+* **Language Server Path**: Allow changing a file path of the Language Server (optional field).
 
 ## Environment variables
 
@@ -68,6 +68,6 @@ Setting these variables only in a shell environment, for example, using `~/.bash
 
 ## Proxy
 
-If you are behind a proxy, configure the proxy settings using VS Code proxy settings `Application > Proxy` or set the proxy settings using the `http_proxy` and `https_proxy` environment variables.
+If you are behind a proxy, configure the proxy settings using VS Code proxy settings **Application** > **Proxy** or set the proxy settings using the `http_proxy` and `https_proxy` environment variables.
 
 For example, the commonly used setting **Proxy Strict SSL** specifies that the proxy server certificate should be verified against the list of supplied CAs specific to Snyk Code.

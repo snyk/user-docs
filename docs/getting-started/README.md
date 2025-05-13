@@ -12,7 +12,7 @@ Ensure you use languages, package managers, and frameworks supported by Snyk. Se
 Snyk does not support Microsoft Internet Explorer.
 {% endhint %}
 
-Snyk supports the latest versions of the following web browsers:&#x20;
+Snyk supports the latest versions of the following web browsers:
 
 * [Chrome](https://www.google.com/chrome/)
 * [Edge](https://www.microsoft.com/en-us/edge?form=MA13FJ)
@@ -25,9 +25,9 @@ Snyk requires Javascript to be enabled on your browser.
 
 To start performing basic tasks in the Snyk application:
 
-## **Create or log in to a Snyk account**
+## Create or log in to a Snyk account
 
-To create a free account or sign up for a pricing plan, navigate to [snyk.io](https://snyk.io/). For details, see [Snyk Pricing Plans](https://docs.snyk.io/implement-snyk/enterprise-implementation-guide/trial-limitations).&#x20;
+To create a free account or sign up for a pricing plan, navigate to [snyk.io](https://snyk.io/). For details, see [Snyk Pricing Plans](https://docs.snyk.io/implement-snyk/enterprise-implementation-guide/trial-limitations).
 
 If your company has an existing Snyk account and uses single sign-on (SSO), use the SSO link provided by your administrators.
 
@@ -39,7 +39,7 @@ If you log in with a different authentication provider from the one your company
 
 When you log in to the Snyk Web UI, Snyk shows your preferred (default) Organization. Snyk also uses the settings for your preferred Organization when you test a Project locally using the CLI. To change your default Organization, see [Manage account preferences and settings](snyk-web-ui.md#manage-account-preferences-and-settings).
 
-## **Set up a Snyk integration**
+## Set up a Snyk integration
 
 For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations - [Organization](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk) or [Group](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk-apprisk). For information about available integrators, see [Snyk SCM integrations](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations) and [Integrate with Snyk](https://docs.snyk.io/integrate-with-snyk) .
 
@@ -53,7 +53,7 @@ Alternatively, if you want to scan your code without authenticating to your sour
 
 ### Manual process
 
-You can add an integration to Snyk manually at any point, from the Snyk Web UI. To do this, navigate to **Integrations > Source Control**. For more information, see [Integrate with Snyk](../integrate-with-snyk/).
+You can add an integration to Snyk manually at any point, from the Snyk Web UI. To do this, navigate to **Integrations** > **Source Control**. For more information, see [Integrate with Snyk](../integrate-with-snyk/).
 
 {% hint style="info" %}
 If an integration is already configured for your Organization, it is marked as **Configured**.
@@ -71,7 +71,7 @@ Free and Team plan and trial users have access only to this personal token under
 
 To obtain your personal Snyk API token:
 
-1. Log in to Snyk and navigate to your personal **account settings**.&#x20;
+1. Log in to Snyk and navigate to your personal **account settings**.
 2. In your **General** settings, under API Token, select **click to show**.
 3. Highlight and copy your API key.
 
@@ -90,13 +90,13 @@ Importing a Project also does the following:
 * Sets Snyk to run a regular scan on that Project for issues. See [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md).
 * Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
-## Set up Snyk Essentials&#x20;
+## Set up Snyk Essentials
 
 {% hint style="info" %}
 Snyk Essentials is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk Essentials enables Application Security teams to implement, manage, and scale a modern, high-performing, developer security program. It covers use cases under Application Security Posture Management (ASPM).&#x20;
+Snyk Essentials enables Application Security teams to implement, manage, and scale a modern, high-performing, developer security program. It covers use cases under Application Security Posture Management (ASPM).
 
 For more information, see [Snyk Essentials](../scan-with-snyk/snyk-essentials.md).
 

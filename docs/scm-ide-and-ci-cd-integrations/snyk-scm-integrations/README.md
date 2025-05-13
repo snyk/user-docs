@@ -50,7 +50,7 @@ The following supported Snyk data are automatically synced:
 * Snyk Open Source
 * Snyk Code
 * Snyk IaC
-* Snyk Container&#x20;
+* Snyk Container
 
 Each connected integration enables you to:
 
@@ -63,22 +63,22 @@ See the [Integration syncing time](../../integrate-with-snyk/#integrations-synci
 
 ### Wildcard SCM integration
 
-The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.&#x20;
+The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.
 
 {% hint style="info" %}
-The wildcard integration applies to the GitHub integration and offers support when you set it up using [Snyk Broker](../../enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md).&#x20;
+The wildcard integration applies to the GitHub integration and offers support when you set it up using [Snyk Broker](../../enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md).
 {% endhint %}
 
 You can use the wildcards while setting up your integration using the Integration Hub:
 
-* Open the **Integration Hub** menu.&#x20;
-* Select the **SCM** tag and search for GitHub or Azure DevOps.&#x20;
+* Open the **Integration Hub** menu.
+* Select the **SCM** tag and search for GitHub or Azure DevOps.
 * Click the **Add** button.
-* In the **Organizations** field, add the Organization details by using the `*` symbol. For example, using  `*snyk` integrates all SCM Organizations that have Snyk in their name.
-* All the Organizations that match with the wildcard, `*` symbol will be added.&#x20;
+* In the **Organizations** field, add the Organization details by using the `*` symbol. For example, using `*snyk` integrates all SCM Organizations that have Snyk in their name.
+* All the Organizations that match with the wildcard, `*` symbol will be added.
 
 {% hint style="info" %}
-The wildcard, `*` symbol is considered a living command and will be applied every time you are rescanning your repositories.&#x20;
+The wildcard, `*` symbol is considered a living command and will be applied every time you are rescanning your repositories.
 {% endhint %}
 
 ### Snyk Essentials and Snyk AppRisk integrations ecosystem
@@ -163,7 +163,7 @@ See the following for detailed permission requirements:
 * [Bitbucket](./#bitbucket-permission-requirements)
 * [Azure Repositories (TFS)](./#azure-repositories-tfs-permission-requirements)
 
-### GitHub and GitHub Enterprise permissions requirements&#x20;
+### GitHub and GitHub Enterprise permissions requirements
 
 {% hint style="info" %}
 For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](https://docs.snyk.io/enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker) and [Integrated SCM tokens for Snyk Broker](./#integrated-scm-tokens-for-snyk-broker).

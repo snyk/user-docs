@@ -6,16 +6,16 @@ The Custom Base Image Recommendation feature is available only with Enterprise p
 For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-## **Overview of Custom Base Image Recommendations (CBIR)**
+## Overview of Custom Base Image Recommendations (CBIR)
 
 When scanning a container image, Snyk provides recommendations based on the base image it detects. Because Snyk precomputes recommendations only for Docker Official Images, these recommendations apply only to a subset of images.
 
 Customers often maintain their own internal base images, built on top of Docker Official Images or other upstream images. These are provided as a service to a wider set of development teams. For example: `somecompany/base-python:3.12.1`.
 
-The Custom Base Image Recommendation feature (CBIR) allows Snyk to recommend an image upgrade from a pool of your internal images. This allows teams to be notified of newer versions of their internal base images, along with a vulnerability count, in order to help with image selection.\
-\
-Snyk does not use the vulnerability data in order to detemine which version to display. All versions in the pool of images to recommend that are considered upgrades to the current image are offered. This provides users with the most control over what images to recommend and which not.\
-\
+The Custom Base Image Recommendation feature (CBIR) allows Snyk to recommend an image upgrade from a pool of your internal images. This allows teams to be notified of newer versions of their internal base images, along with a vulnerability count, in order to help with image selection.
+
+Snyk does not use the vulnerability data in order to detemine which version to display. All versions in the pool of images to recommend that are considered upgrades to the current image are offered. This provides users with the most control over what images to recommend and which not.
+
 You can remove images that must not be recommended by disabling the **Include in recommendations** option. For more information, see [Mark the created Project as a custom base image](https://docs.snyk.io/scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations#mark-the-created-project-as-a-custom-base-image).
 
 ## How CBIR works
@@ -30,13 +30,13 @@ As opposed to public Docker Official Images, Snyk can detect a custom base image
 
 All custom base image recommendations are considered minor upgrades, regardless of the image tag.
 
-To determine the latest version of a base image across Projects imported into the same repository, Snyk allows configuring a versioning schema. For more information, see [Versioning schemas for custom base images.](versioning-schema-for-custom-base-images.md)
+To determine the latest version of a base image across Projects imported into the same repository, Snyk allows configuring a versioning schema. For more information, see [Versioning schemas for custom base images](versioning-schema-for-custom-base-images.md).
 
 The Custom Base Image Recommendation feature supports Automatic fix PRs. If you are not using the latest version of the base image, then immediately after image import Snyk automatically issues a fix pull request against your Dockerfile to upgrade to the latest available custom base image version.
 
 ## Special considerations
 
-The recommendations provided by the CBIR feature rely on versioned tags that comply with the versioning schema configured.&#x20;
+The recommendations provided by the CBIR feature rely on versioned tags that comply with the versioning schema configured.
 
 {% hint style="info" %}
 It is possible to add the "latest" tag to this pool as a single selection, or as part of a custom versioning scheme. However, Snyk does not recommend doing this, as it negates the benefits of the CBIR feature. The following information considers that the recommendations are not configured with the "latest" tag included in recommendations.
@@ -48,11 +48,11 @@ Snyk recommends that you do not add the "latest" tag to the versioning schema po
 
 For any image that uses the "latest" tag, Snyk recommends moving to the current latest image (by versioned tag) in that repository. This is because when the container that Snyk scans was built using the "latest" tag, this tag may or may not have referenced the same image that is considered the latest image.
 
-### **Recommendations for upgrading the base image**
+### Recommendations for upgrading the base image
 
-The **Recommendations for upgrading the base image** view does not show vulnerabilities for base images if they are not in the pool of CBIR tags. This is generally the case for images that have a "latest" image tag or other rolling tags, or other images that are not in the recommendation pool. This does not mean that the base image itself is free from vulnerabilities. To determine what vulnerabilities an image contains, view the scan results for that image.&#x20;
+The **Recommendations for upgrading the base image** view does not show vulnerabilities for base images if they are not in the pool of CBIR tags. This is generally the case for images that have a "latest" image tag or other rolling tags, or other images that are not in the recommendation pool. This does not mean that the base image itself is free from vulnerabilities. To determine what vulnerabilities an image contains, view the scan results for that image.
 
-## **Enable CBIR:** configure an image as a custom base image
+## Enable CBIR: configure an image as a custom base image
 
 The following steps explain how to configure custom base images. The team that is responsible for creating and maintaining custom base images for the Organization performs these steps.
 
@@ -61,7 +61,7 @@ The following steps explain how to configure custom base images. The team that i
 1. Build a custom base image.
 2. Import the image to a Snyk Project using one of the following options:
    * The Snyk Web UI: Import an image into Snyk using a container registry.
-   * The CLI: Use the `snyk container monitor`  command.
+   * The CLI: Use the `snyk container monitor` command.
      * Set the `--project-name` flag (mandatory) to give the Project a unique name. Snyk recommends using the image name and tag without the repository. For example `base-python:3.9.2_2021110408`.
      * Example of a Snyk CLI command: \
        `snyk container monitor somecompany/base-python:3.9.2_2021110408 --project-name=base-python:3.9.2_2021110408 --org=ORGANIZATION_ID/ORGANIZATION_NAME`
@@ -77,7 +77,7 @@ The following steps explain how to configure custom base images. The team that i
 You can also do this using the API endpoint [Create a Custom Base Image from an existing container Project](../../../../snyk-api/reference/custom-base-images.md#custom_base_images).
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/enable_CBIR.png" alt="Custom Base Image toggle enabled"><figcaption><p>Enable Custom Base Image</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/enable_CBIR.png" alt=""><figcaption><p>Enable Custom Base Image</p></figcaption></figure>
 
 5. Click **Save changes**.
 
@@ -127,7 +127,7 @@ Next, navigate to the **Project** page to see the recommendations for the image.
 You may need to retest a Project when you set the Dockerfile for an existing project.
 {% endhint %}
 
-<figure><img src="https://lh5.googleusercontent.com/G--7GkeQ6i0bwTWE1tdC_Gg5d727JdQQfclEQ1n2opt5vtRDjT2FBChFpSZBD9V1TleoLigSzhtEERg4tfVI6yIua5Q5nGeNycmR93BYCG1DsiREvhNWKtFdZ4imJZvC1ypmDKOI" alt="Snyk custom base image recommendations displayed on a container Project page"><figcaption><p>Example of Custom Base Image Recommendations</p></figcaption></figure>
+<figure><img src="https://lh5.googleusercontent.com/G--7GkeQ6i0bwTWE1tdC_Gg5d727JdQQfclEQ1n2opt5vtRDjT2FBChFpSZBD9V1TleoLigSzhtEERg4tfVI6yIua5Q5nGeNycmR93BYCG1DsiREvhNWKtFdZ4imJZvC1ypmDKOI" alt=""><figcaption><p>Example of Custom Base Image Recommendations</p></figcaption></figure>
 
 ## Known limitations of CBIR
 

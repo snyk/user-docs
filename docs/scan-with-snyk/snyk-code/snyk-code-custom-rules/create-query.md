@@ -1,6 +1,6 @@
 # Create query
 
-To use Snyk Code custom rules to create queries with [suggestive AI support](./#suggestive-ai-support), you can choose from the provided [templates](./#template) and [predicates.](./#predicate-pred) Alternatively, you can create your own predicates and [save them as a custom rule](create-custom-rule.md).&#x20;
+To use Snyk Code custom rules to create queries with [suggestive AI support](./#suggestive-ai-support), you can choose from the provided [templates](./#template) and [predicates](./#predicate-pred). Alternatively, you can create your own predicates and [save them as a custom rule](create-custom-rule.md).
 
 Consider the following query examples and rules to use with Snyk Code custom rules. A [CWE 312 query example](create-query.md#cwe-312-query-example) is provided on this page.
 
@@ -29,13 +29,13 @@ using var cmd = new NpgsqlCommand(sql, conn);
 
 Enter the following queries in the query window and click **Run Query** to see the results.
 
-1. Select `body` by using the query: `“body”`&#x20;
+1. Select `body` by using the query: `"body"`
 
 {% hint style="info" %}
 This query does not select the Body with a capital B. The query language is case-sensitive.
 {% endhint %}
 
-2. Add `Body` to the findings so the query becomes `Or<”body”,”Body”>`.
+2. Add `Body` to the findings so the query becomes `Or<"body","Body">`.
 3. You can achieve the same outcome using a regex `~"body|Body"` or `~"[Bb]ody"`
 4. Do something more complex regex and query: \
    ``~"[a-z0-9!#$%&'*+/=?^_{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"``\
@@ -107,23 +107,23 @@ connectDb(client).then(() => {
 
 ```
 
-Snyk Code knows a list of possible sources of external data in the predicate `PRED:AnySource`. The following query shows you that `app.post()` is identified.&#x20;
+Snyk Code knows a list of possible sources of external data in the predicate `PRED:AnySource`. The following query shows you that `app.post()` is identified.
 
 Query `PRED:SqliSinks` shows you that `query()` is part of that list of SQL injection sinks. The query engine comes with many different predicates for various source, sink, and sanitizer types. Check the list of predicates to see them all.
 
 To check whether the data flows into a SQL injection sink, use the following: `DataFlowsInto<PRED:SqliSink>`. It shows you that in the program, data from the `req` parameter flow into `query()` taking several turns.
 
-If the data flow is also going through a sanitizer, you can use a specialized template. Change the query to ​​`Taint<PRED:AnySource, PRED:SqliSanitizer, PRED:SqliSink>`
+If the data flow is also going through a sanitizer, you can use a specialized template. Change the query to `Taint<PRED:AnySource, PRED:SqliSanitizer, PRED:SqliSink>`
 
 {% hint style="info" %}
 There is nothing language-specific in the query. It would work on similar code in other languages.
 {% endhint %}
 
-## **Net new data flow rule**
+## Net new data flow rule
 
 Create a new rule because Snyk is not aware of the proprietary source built in-house, resulting in missed findings.
 
-Use a data flow [template](templates-and-predicates.md) known as `Taint` when [creating a data flow query](run-query.md#run-query-on-a-repository).&#x20;
+Use a data flow [template](templates-and-predicates.md) known as `Taint` when [creating a data flow query](run-query.md#run-query-on-a-repository).
 
 ```javascript
 Taint<PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>
@@ -139,37 +139,37 @@ Custom [predicates](templates-and-predicates.md) are indicated by writing their 
 
 With this query, you can look for the data flow that originates in `SourceFoo`. A source unknown to Snyk ends up in a known vulnerable cross-site scripting (XSS) Sink and does not pass through a known cross-site scripting (XSS) Sanitizer. Therefore, the assumption is that the data is tainted.
 
-## **Extend a data flow rule**
+## Extend a data flow rule
 
-Recreate a Snyk rule and add a source to the current Snyk known vulnerable source list because they are not being taken into account in the scans, resulting in missed vulnerabilities.&#x20;
+Recreate a Snyk rule and add a source to the current Snyk known vulnerable source list because they are not being taken into account in the scans, resulting in missed vulnerabilities.
 
 Like the [Net new data flow rule](create-query.md#net-new-data-flow-rule), the `Taint` data flow template is used with an `Or` operator. Operators are available to create logical statements for your queries, such as `Or` or `And`.
 
-Run the data flow rule using both the Snyk known sources but also a custom source called [`SourceFoo`](#user-content-fn-1)[^1]_._
+Run the data flow rule using both the Snyk known sources but also a custom source called `SourceFoo`.
 
 ```javascript
 Taint<Or<PRED:AnySource,"SourceFoo">,PRED:XssSanitizer,PRED:XssSink>
 ```
 
-With this query, you look for the data flow that originates in a Snyk known source OR “`SourceFoo`” . A source unknown to Snyk ends up in a known vulnerable cross-site scripting (XSS) Sink and does not pass through a known cross-site scripting (XSS) Sanitizer. Therefore, the assumption is that the data is tainted.
+With this query, you look for the data flow that originates in a Snyk known source OR "`SourceFoo`". A source unknown to Snyk ends up in a known vulnerable cross-site scripting (XSS) Sink and does not pass through a known cross-site scripting (XSS) Sanitizer. Therefore, the assumption is that the data is tainted.
 
-Any statement that uses an operator will be written within angle brackets  _`< statement >`_.&#x20;
+Any statement that uses an operator will be written within angle brackets  _`< statement >`_.
 
-## **Context added to data flow rule**
+## Context added to data flow rule
 
-Recreate a Snyk rule and remove a source from the current Snyk known vulnerable sources because this source is not vulnerable within the context of an application.&#x20;
+Recreate a Snyk rule and remove a source from the current Snyk known vulnerable sources because this source is not vulnerable within the context of an application.
 
 Like the [Net new data flow](create-query.md#net-new-data-flow-rule) and [Extend a data flow](create-query.md#extend-a-data-flow-rule) rules, the `Taint` data flow template is used with an `And` operator. A declarative negative statement (`Not`) is used to indicate the false case of the statement and not the true case.
 
 Run the data flow rule using the Snyk known sources, removing `SnykSource` from the results. In this example, `SnykSource` is a Snyk-known source that is used within the regular general `AnySource` [predicate](templates-and-predicates.md).
 
 ```javascript
-Taint<And<PRED:AnySource,Not<PRED:”SnykSource”>>,PRED:XssSanitizer,PRED:XssSink>
+Taint<And<PRED:AnySource,Not<PRED:"SnykSource">>,PRED:XssSanitizer,PRED:XssSink>
 ```
 
 With this query, you look for the data flow that originates in a known Snyk source but remove results that come from `SnykSource` that end up in a known vulnerable cross-site scripting (XSS) Sink and do not pass through a known cross-site scripting (XSS) Sanitizer. Therefore, the assumption is that the data is tainted.
 
-## **High recall mode**
+## High recall mode
 
 See all the sources and sinks in the source code to understand every location where data can flow from or to. This analysis is conducted regardless of the presence of data flows, allowing users to assess coverage comprehensively.
 
@@ -250,7 +250,7 @@ Taint<PRED:AnySource,  PRED:None, PRED:AnySink>
 
 ### Find unmatched sources
 
-The following query enhances security coverage by revealing unmatched sources, pinpointing situations where the `HttpServletRequest` parameter in the`WebServlet`'s `doPost` method is not linked to known sinks, thus identifying gaps in data handling.
+The following query enhances security coverage by revealing unmatched sources, pinpointing situations where the `HttpServletRequest` parameter in the `WebServlet`'s `doPost` method is not linked to known sinks, thus identifying gaps in data handling.
 
 ```starlang
 PRED:AnySource and not DataFlowsInto<Taint<PRED:AnySource, PRED:None, PRED:AnySink>>
@@ -313,7 +313,7 @@ This matches a sensitive data flow from `ReadLine` to `WriteAllText`. Given the 
 
 ### Restricting to specific log files only
 
-The first caveat is that perhaps only `testFile.txt` is considered unsafe. Files like `cache.txt` should be considered safe.&#x20;
+The first caveat is that perhaps only `testFile.txt` is considered unsafe. Files like `cache.txt` should be considered safe.
 
 ```csharp
 // Create a warning on this one
@@ -323,7 +323,7 @@ File.WriteAllText("testFile.txt", userData);
 File.WriteAllText("cache.txt", userData);
 ```
 
-To achieve this, we use the `CallExpression` and `HasArg1` templates.&#x20;
+To achieve this, we use the `CallExpression` and `HasArg1` templates.
 
 ```ada
 Taint<
@@ -373,7 +373,7 @@ Taint<
 Notice how `CallExpression now` contains a regular expression, whereas `HasArg1` uses the `or` operator. It could be written either way.
 {% endhint %}
 
-Finally, let's add support for the .NET`Async` variants and also the `Append` methods:
+Finally, let's add support for the .NET `Async` variants and also the `Append` methods:
 
 ```ada
 Taint<
@@ -429,5 +429,3 @@ Taint<
       HasArg1<"testFile.txt" or "testFile.bin">
 >
 ```
-
-[^1]: 

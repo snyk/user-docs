@@ -33,31 +33,31 @@ Every issue discovered by Snyk Code has a data flow. If an issue has only one st
 * [Open Data flow external link in the integrated Git repository](breakdown-of-code-analysis.md#open-data-flow-external-link).
 * Ignore the open vulnerability issue using the **Ignore** button. See [Ignore issues](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/).
 
-### **Data flow analysis example**
+### Data flow analysis example
 
 In the following Path Traversal issue, the developer has not sanitized the input. This allows an attacker to perform a pass traversal attack to access any file in the file system, including sensitive data such as password files.
 
-<figure><img src="../../../.gitbook/assets/projects-code-analysis-vulnerability-full-details-data-flow.png" alt="Overview of a Path Traversal vulnerability issue."><figcaption><p>Data flow of a Path Traversal vulnerability issue</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-code-analysis-vulnerability-full-details-data-flow.png" alt=""><figcaption><p>Data flow of a Path Traversal vulnerability issue</p></figcaption></figure>
 
-### **Open Data flow external link**
+### Open Data flow external link
 
 To open the displayed source code on the Git repository, select the file name above the right panel. In this example, the file name is "routes/profileImageUrlUpload.ts".
 
 The source code appears in the integrated Git repository, showing you exactly where to fix the vulnerability. You can make the required fix to address the vulnerability in your code.
 
-<figure><img src="../../../.gitbook/assets/projects-vulnerability-data-flow-external-link.png" alt="Vulnerability shown in the external source code."><figcaption><p>Vulnerability shown in the external source code</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/projects-vulnerability-data-flow-external-link.png" alt=""><figcaption><p>Vulnerability shown in the external source code</p></figcaption></figure>
 
 ## Fix analysis
 
 Fix analysis helps you fix the vulnerability issue discovered in your code. It provides details about the vulnerability type discovered, any available best practices for preventing this issue, and code examples of fixes from the global open-source community.
 
-To explore in-depth details about the specific vulnerability identified, you can open the CWE link to understand more about the vulnerability type. See [CWE-22 ](breakdown-of-code-analysis.md#example-cwe-22-path-traversal)and [CWE-601 examples](breakdown-of-code-analysis.md#example-cwe-601-open-redirect).
+To explore in-depth details about the specific vulnerability identified, you can open the CWE link to understand more about the vulnerability type. See [CWE-22](breakdown-of-code-analysis.md#example-cwe-22-path-traversal) and [CWE-601 examples](breakdown-of-code-analysis.md#example-cwe-601-open-redirect).
 
 Some vulnerabilities contain links to interactive lessons on understanding, fixing, and preventing vulnerability. See [Snyk Learn](https://learn.snyk.io/).
 
-<figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis.png" alt="Fis analysis page for Path Traversal vulnerability"><figcaption><p>Fix analysis page for Path Traversal vulnerability</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis.png" alt=""><figcaption><p>Fix analysis page for Path Traversal vulnerability</p></figcaption></figure>
 
-### View Fix analysis&#x20;
+### View Fix analysis
 
 1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-admin/groups-and-organizations/).
 2. Navigate to the **Projects** and select the Target folder containing your repository's Projects.
@@ -73,15 +73,15 @@ Some vulnerabilities contain links to interactive lessons on understanding, fixi
 
 The **Fix analysis** page enables you to do the following:
 
-### **Open Fix analysis external link**
+### Open Fix analysis external link
 
 To open the code fix for the vulnerability on the Git repository, select the Git repository above the right panel. This will show you the differences in the Git repository code that address the issue. In this example, the Git repository name is "eclipse-vertx/vert.x".
 
-<figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis-example.png" alt="Data flow of a Path Traversal vulnerability issue."><figcaption><p>Fix analysis of a Path Traversal vulnerability issue</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis-example.png" alt=""><figcaption><p>Fix analysis of a Path Traversal vulnerability issue</p></figcaption></figure>
 
 The fix appears in the Git repository, showing you exactly where to fix the vulnerability. You can make the required fix to address the vulnerability.
 
-<figure><img src="../../../.gitbook/assets/vulnerability-example-fix-github (1) (1).png" alt="Source code external link in Fix analysis"><figcaption><p>Source code external link in Fix analysis</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-example-fix-github (1) (1).png" alt=""><figcaption><p>Source code external link in Fix analysis</p></figcaption></figure>
 
 ## Severity score factors
 
@@ -90,7 +90,7 @@ Snyk Code reports issues by severity levels: High, Medium, and Low. Snyk Code cu
 * Qualities intrinsic to a vulnerability
 * Evolution of vulnerability over a lifetime
 
-### **Exceptions**
+### Exceptions
 
 If a vulnerability is detected in code, filename, or folder with the word `test`, it is deemed a low-severity vulnerability. This applies to all languages. The severity of CWEs may change depending on the environment.
 
@@ -109,7 +109,7 @@ You can filter issues in the Code analysis Project by Priority Score using the *
 * Severity scores from other SAST products where information is publicly available
 * Severity scores from identifying similar vulnerabilities in the Snyk Vulnerability database
 
-### Qualitative factors&#x20;
+### Qualitative factors
 
 * The severity of source, direct versus indirect
 * Prevalence and impact of the sink
@@ -120,10 +120,10 @@ You can filter issues in the Code analysis Project by Priority Score using the *
 
 For CWE-22 Path Traversal, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is High severity. Otherwise, it is Low severity.
 
-<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt="Decision flow chart for Priority Score CWE-22 Path Traversal"><figcaption><p>Decision flow chart for Priority Score CWE-22 Path Traversal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Decision flow chart for Priority Score CWE-22 Path Traversal</p></figcaption></figure>
 
 ## Example: CWE-601: Open Redirect
 
 For CWE-2601 Open Redirect, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is Medium severity.
 
-<figure><img src="../../../.gitbook/assets/image (5) (8).png" alt="Decision flow chart for Priority Score CWE-601 Open Redirect"><figcaption><p>Decision flow chart for Priority Score CWE-601 Open Redirect</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (8).png" alt=""><figcaption><p>Decision flow chart for Priority Score CWE-601 Open Redirect</p></figcaption></figure>

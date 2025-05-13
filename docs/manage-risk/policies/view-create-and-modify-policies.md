@@ -10,13 +10,13 @@ Select the **Policies** menu option to see the policies in your Group, arranged 
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Policies-menu.png" alt="View policies"><figcaption><p>View policies</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Policies-menu.png" alt=""><figcaption><p>View policies</p></figcaption></figure>
 
 </div>
 
 Expand a category to see a list of the policies in that category:
 
-<figure><img src="../../.gitbook/assets/snyk-policy-manager.png" alt="License policies list expanded"><figcaption><p>License policies list expanded</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-policy-manager.png" alt=""><figcaption><p>License policies list expanded</p></figcaption></figure>
 
 {% hint style="info" %}
 This list includes the [default policy](view-create-and-modify-policies.md#default-policies), which is automatically created for new Groups for each policy category and cannot be removed.
@@ -26,7 +26,7 @@ This list includes the [default policy](view-create-and-modify-policies.md#defau
 
 When you expand a category, the screen shows the policies applied to **Project attributes** and applied to **Organizations**. You can click to **Learn which policies take precedence** in each category. You can also **search** for a particular policy.
 
-<figure><img src="../../.gitbook/assets/screenshot_2021-03-26_at_11.04.50_am.png" alt="Policy manager screen including attributes and Organizations to which each policy is applied"><figcaption><p>Policy manager screen including attributes and Organizations to which each policy is applied</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot_2021-03-26_at_11.04.50_am.png" alt=""><figcaption><p>Policy manager screen including attributes and Organizations to which each policy is applied</p></figcaption></figure>
 
 ### Default policies
 
@@ -40,7 +40,7 @@ See [Assign a policy to an Organization](assign-a-policy-to-an-organization.md) 
 
 The Policy Manager allows you to [create](view-create-and-modify-policies.md#create-a-policy), [edit](view-create-and-modify-policies.md#edit-a-policy), and [duplicate or delete a policy](view-create-and-modify-policies.md#duplicate-or-delete-a-policy).
 
-## **Create a policy**
+## Create a policy
 
 1. On the Policy Manager screen, select **Add new policy** and in response to the prompts, enter the details.
 2. Enter a policy name and a description to help you quickly identify a policy.\
@@ -52,7 +52,7 @@ The Policy Manager allows you to [create](view-create-and-modify-policies.md#cre
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/screenshot_2020-05-26_at_9.47.26_am.png" alt="Create a policy" width="563"><figcaption><p>Create a policy</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot_2020-05-26_at_9.47.26_am.png" alt="" width="563"><figcaption><p>Create a policy</p></figcaption></figure>
 
 </div>
 
@@ -62,13 +62,13 @@ The Policy Manager allows you to [create](view-create-and-modify-policies.md#cre
 2. Change the [Organizations](assign-a-policy-to-an-organization.md), [attributes](assign-policies-to-projects.md), and rules as you wish.
 3. Click **Submit** to save your changes.
 
-## **Duplicate or delete a policy**&#x20;
+## Duplicate or delete a policy
 
 To duplicate or delete a policy, click the three dots on the right-hand side:
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-28 at 16.42.45.png" alt="Other policy actions"><figcaption><p>Duplicate or delete a policy</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-28 at 16.42.45.png" alt=""><figcaption><p>Duplicate or delete a policy</p></figcaption></figure>
 
 </div>
 

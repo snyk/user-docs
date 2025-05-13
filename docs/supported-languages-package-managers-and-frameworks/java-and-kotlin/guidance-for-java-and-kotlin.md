@@ -26,14 +26,14 @@ For more information on package registry integrations, including Maven, see the 
 
 For open source, developers may have decided to use Maven or Gradle, which may impact how you best utilize Snyk to perform the analysis
 
-*   **Using** **Maven, or Gradle with a gradle.lockfile**:
+*   **Using Maven, or Gradle with a gradle.lockfile**:
 
     The Git code repository integration is a great way to use Snyk and get visibility or you may decide to use CLI/IDE or CI/CD integrations to test/gate/monitor, or do both!
 *   **Using Gradle** **without a Gradle.lockfile**:
 
     The full dependency tree may not be apparent or artifacts may be pulled in from external resources, so the CLI/IDE workflow (for local scans), and CI/CD is the recommended approach for analysis, otherwise you may not have a complete view of issues and dependencies.
 
-### **Maven**
+### Maven
 
 Snyk can generate a dependency tree from POM via the Git integration or CLI:
 
@@ -44,7 +44,7 @@ Snyk can generate a dependency tree from POM via the Git integration or CLI:
 Developer dependencies (`scope=test`) are ignored as they are not pushed to production and are generally considered noise. You can enable them in CLI by adding `--dev`
 {% endhint %}
 
-### **Gradle**
+### Gradle
 
 * Snyk will interact with the package manager to produce a list of dependencies.
 * Typically Gradle will execute code and other actions during the build process that will impact the installed dependencies, so the CLI workflow is recommended if a gradle.lockfile is not present.
@@ -58,7 +58,7 @@ The following manifest files are supported:
 
 See the [Java and Kotlin](./#open-source-and-licensing) page for more details about the supported features.
 
-### **APIs**
+### APIs
 
 Sometimes customers develop advanced dependency management strategies and may not necessarily use the standard and frequently used package managers. For that reason, Snyk has provided test APIs.
 
@@ -68,7 +68,7 @@ For on-time testing using the Snyk API, you can use the [Test](../../snyk-api/re
 
 Java provides powerful flexibility and configuration options for developers. There can be considerations for testing it, especially with Open Source.
 
-### **Maven and Gradle Projects using gradle.lockfile**
+### Maven and Gradle Projects using gradle.lockfile
 
 Typically you can instrument testing as part of a build system or adopt a lockfile as part of their process.
 

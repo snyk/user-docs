@@ -8,7 +8,7 @@ Beginning with v.1.1291.0, the Snyk CLI follows the industry standard [Semantic 
 
 Given a version number MAJOR.MINOR.PATCH, increment the:
 
-1. MAJOR version when you make \[breaking] changes
+1. MAJOR version when you make breaking changes
 2. MINOR version when you add functionality in a backward-compatible manner
 3. PATCH version when you make backward-compatible bug fixes
 
@@ -26,7 +26,7 @@ Some examples of breaking changes are the following:
 
 Beginning with v.1.1291.0, Snyk is providing different channels to enable customers to opt-in to a channel based on their needs and preferences.
 
-When you select a channel, you are selecting the stability level you want to use: **preview**, **rc,** or **stable**.
+When you select a channel, you are selecting the stability level you want to use: **preview**, **rc**, or **stable**.
 
 ### preview
 
@@ -34,7 +34,7 @@ When you select a channel, you are selecting the stability level you want to use
 Snyk offers a preview channel for those who want to test _in-progress_ features. However, keep in mind that this channel may contain bugs and is not officially supported.
 {% endhint %}
 
-A preview version is not recommended for production environments. It may contain bugs and is best tested in a local environment. For instructions on installing a preview version, see [Install standalone executables from a channel.](releases-and-channels-for-the-snyk-cli.md#install-standalone-executables-from-a-channel)
+A preview version is not recommended for production environments. It may contain bugs and is best tested in a local environment. For instructions on installing a preview version, see [Install standalone executables from a channel](releases-and-channels-for-the-snyk-cli.md#install-standalone-executables-from-a-channel).
 
 * Preview: pre-release builds are deployed regularly up to multiple times a day and contain the latest changes.
 * Version Pattern: v{MAJOR}.{MINOR}.{PATCH}-preview
@@ -47,7 +47,7 @@ A preview version is not recommended for production environments. It may contain
   * MacOS arm64: [https://downloads.snyk.io/cli/preview/snyk-macos-arm64](https://downloads.snyk.io/cli/preview/snyk-macos-arm64)
   * Linux arm64: [https://downloads.snyk.io/cli/preview/snyk-linux-arm64](https://downloads.snyk.io/cli/preview/snyk-linux-arm64)
   * Alpine arm64: [https://downloads.snyk.io/cli/preview/snyk-alpine-arm64](https://downloads.snyk.io/cli/preview/snyk-alpine-arm64)
-  * For fips, add `fips` to the base URL, for example, `https://downloads.snyk.io/fips/cli/preview/snyk-linux`&#x20;
+  * For fips, add `fips` to the base URL, for example, `https://downloads.snyk.io/fips/cli/preview/snyk-linux`
 
 ### rc
 
@@ -62,9 +62,9 @@ A preview version is not recommended for production environments. It may contain
   * MacOS arm64: [https://downloads.snyk.io/cli/rc/snyk-macos-arm64](https://downloads.snyk.io/cli/rc/snyk-macos-arm64)
   * Linux arm64: [https://downloads.snyk.io/cli/rc/snyk-linux-arm64](https://downloads.snyk.io/cli/rc/snyk-linux-arm64)
   * Alpine arm64: [https://downloads.snyk.io/cli/rc/snyk-alpine-arm64](https://downloads.snyk.io/cli/rc/snyk-alpine-arm64)
-  * For fips, add `fips` to the base URL, for example, `https://downloads.snyk.io/fips/cli/rc/snyk-linux`&#x20;
+  * For fips, add `fips` to the base URL, for example, `https://downloads.snyk.io/fips/cli/rc/snyk-linux`
 
-### **stable**
+### stable
 
 * Stable: builds are deployed at distinct points in time after additional testing and are considered stable.
 * Version Pattern: v{MAJOR}.{MINOR}.{PATCH}
@@ -78,7 +78,7 @@ A preview version is not recommended for production environments. It may contain
   * MacOS arm64: [https://downloads.snyk.io/cli/stable/snyk-macos-arm64](https://downloads.snyk.io/cli/stable/snyk-macos-arm64)
   * Linux arm64: [https://downloads.snyk.io/cli/stable/snyk-linux-arm64](https://downloads.snyk.io/cli/stable/snyk-linux-arm64)
   * Alpine arm64: [https://downloads.snyk.io/cli/stable/snyk-alpine-arm64](https://downloads.snyk.io/cli/stable/snyk-alpine-arm64)
-  * For fips, add `fips` to the base URL, for example, `https://downloads.snyk.io/fips/cli/stable/snyk-linux`&#x20;
+  * For fips, add `fips` to the base URL, for example, `https://downloads.snyk.io/fips/cli/stable/snyk-linux`
 * Installation methods:
   * [npm](install-or-update-the-snyk-cli/#install-the-snyk-cli-with-npm-or-yarn)
   * [Homebrew](install-or-update-the-snyk-cli/#install-with-homebrew-macos-linux)
@@ -112,7 +112,7 @@ If you need help, submit a [request](https://support.snyk.io) to Snyk Support.
 
 ## Install standalone executables from a channel
 
-Use the`release.json` in each channel. The download links are provided here, followed by an example for the preview version on the MacOS platform:
+Use the `release.json` in each channel. The download links are provided here, followed by an example for the preview version on the MacOS platform:
 
 * [https://downloads.snyk.io/cli/preview/release.json](https://downloads.snyk.io/cli/preview/release.json)
 * [https://downloads.snyk.io/cli/preview/snyk-macos](https://downloads.snyk.io/cli/preview/snyk-macos)
@@ -138,4 +138,4 @@ To select a channel from the IDE, choose a CLI release channel using the dropdow
 
 However, Snyk also recommends the **stable** channel as the default for IDE users.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-09-02 at 10.32.41.png" alt="Choose a CLI release channel"><figcaption><p>Choose a CLI release channel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-09-02 at 10.32.41.png" alt=""><figcaption><p>Choose a CLI release channel</p></figcaption></figure>

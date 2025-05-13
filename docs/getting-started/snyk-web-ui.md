@@ -72,7 +72,7 @@ For security reasons, all credentials are anonymized when you open the Settings 
 
 #### Remove an integration
 
-To remove an existing integration from your environment, select the integration and click **Delete.**
+To remove an existing integration from your environment, select the integration and click **Delete**.
 
 {% hint style="info" %}
 You cannot restore an integration that was already deleted. You must enable it again.
@@ -132,7 +132,7 @@ Similarly, the **top vulnerable projects** section shows the Snyk Projects asses
 
 To add a Snyk Project, use the **Add project** link on the Dashboard. Select how to add the Project from the dropdown. See [Import a Project](./#import-a-project-to-scan-and-identify-issues) for more details.
 
-### **Manage your** **Projects**
+### Manage your Projects
 
 To open the **Projects** listing page, select the **Projects** link in the side menu. On this page, you can perform several actions:
 
@@ -144,7 +144,7 @@ To open the **Projects** listing page, select the **Projects** link in the side 
 * Use the settings icon on the ungrouped **Projects** listing or the **Settings** tab on the Project detail page to configure General and GitHub integration settings for notifications, Project testing, and pull request (PR) frequency. On the Settings tab, you can also look up the unique Project ID and deactivate or delete a Project.
 * View the Project history on the **History** tab.
 
-### **Manage your** **Integrations**
+### Manage your Integrations
 
 You can set up a range of integrations with Snyk from the [Integrations](../integrate-with-snyk/) page available on the Dashboard.
 
@@ -160,7 +160,7 @@ The following Snyk functions are available with the Web UI, for all level types:
 * [View helpful resources](snyk-web-ui.md#view-helpful-resources)
 * [Manage account preferences and settings](snyk-web-ui.md#manage-account-preferences-and-settings)
 
-### **View reports**
+### View reports
 
 {% hint style="info" %}
 **Feature availability**\
@@ -195,7 +195,7 @@ You must be assigned the [required Admin roles and permissions](../snyk-admin/us
 
 ### Snyk Organization or Group Settings
 
-Use the **Settings** option to view and manage your Organization or Group settings. For details, see[Group and Organization settings](../snyk-admin/groups-and-organizations/group-and-organization-settings.md).
+Use the **Settings** option to view and manage your Organization or Group settings. For details, see [Group and Organization settings](../snyk-admin/groups-and-organizations/group-and-organization-settings.md).
 
 <figure><img src="../.gitbook/assets/org_settings.png" alt=""><figcaption><p>Group and Organization settings</p></figcaption></figure>
 

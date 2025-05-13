@@ -14,7 +14,7 @@ This enables Snyk to resolve all direct and transitive dependencies of packages 
 
 Maven Projects can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.
 
-## **Set up custom Maven package registries**
+## Set up custom Maven package registries
 
 If authentication is required for access to your custom registry, you must configure the Artifactory package repository integration; see [Artifactory Package Repository connection setup](./).
 
@@ -22,13 +22,13 @@ After the integration is set up, you can configure Maven settings by navigating 
 
 You can choose whether to use Artifactory as a mirror or as an additional repository where your artifacts will reside. These settings will be very similar to what you have in `~/.m2/settings.xml`.
 
-## **Mirrors**
+## Mirrors
 
 <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Maven settings, choose Type</p></figcaption></figure>
 
-Choose a value for the Type, either **Direct** or, if you are using authentication, **Integration.**
+Choose a value for the Type, either **Direct** or, if you are using authentication, **Integration**.
 
-If you are using **Direct,** you must complete the **URL**, **Repository Name,** and what it is a **Mirror Of**.
+If you are using **Direct**, you must complete the **URL**, **Repository Name**, and what it is a **Mirror Of**.
 
 The **Mirror Of** value can either be a `*` to mirror everything, or you can type in a value, for example, `central`.
 
@@ -38,7 +38,7 @@ Set the **Repository Name** as whatever comes after `artifactory/` in the intern
 
 For example, if the URL is `http://artifactory.company.io/artifactory/libs-release` **Repository Name** should be set as `libs-release`.
 
-## **Additional repositories**
+## Additional repositories
 
 Alternatively, you can configure repositories that will be used as additional locations to check for artifacts.
 

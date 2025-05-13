@@ -228,5 +228,3 @@ Snyk returns a JSON document containing details about all scans, for example:
   ]
 }
 ```
-
-[^1]: 

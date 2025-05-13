@@ -38,16 +38,16 @@ All data is handled by Snyk in accordance with the SOC 2 standard. For more deta
 
 Snyk uses cloud products from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to process and store the vulnerability source data in a cache. Such data is cached according to the shortest possible duration afforded by the cloud service provider's storage lifecycle policy, which is subject to change by these cloud service providers and set out approximately in the periods below:
 
-* For AWS tenants - EU/AU/Private Tenant: 24 to 48 hours under the[ S3 policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/intro-lifecycle-rules.html)
-* For GCP tenants - US (Default): 24 hours under the[ Google Cloud Storage Policy](https://cloud.google.com/storage/docs/lifecycle)
+* For AWS tenants - EU/AU/Private Tenant: 24 to 48 hours under the [S3 policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/intro-lifecycle-rules.html)
+* For GCP tenants - US (Default): 24 hours under the [Google Cloud Storage Policy](https://cloud.google.com/storage/docs/lifecycle)
 
 ## Product-specific data types
 
 Snyk knows how important it is to protect your data. Therefore Snyk will only access and store the information needed to provide you with Snyk services and to ensure accurate analysis as described for each Snyk product: Snyk Open Source, Snyk Code, Snyk Container, and Snyk IaC.
 
-### **Snyk Open Source**
+### Snyk Open Source
 
-<figure><img src="../.gitbook/assets/SnykOSS.svg" alt="Snyk Open Source logo"><figcaption><p>Snyk Open Source</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SnykOSS.svg" alt=""><figcaption><p>Snyk Open Source</p></figcaption></figure>
 
 * Snyk accesses manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
 * Snyk accesses your source code under these scenarios:
@@ -68,7 +68,7 @@ Your account is subject to contract terms which might restrict your ability to e
 
 ### **Snyk Code**
 
-<figure><img src="../.gitbook/assets/SnykCode.svg" alt="Snyk Code logo"><figcaption><p>Snyk Code</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SnykCode.svg" alt=""><figcaption><p>Snyk Code</p></figcaption></figure>
 
 * &#x20;Snyk stores repository-specific information, for example, the name of the Git repository and file names. Snyk accesses your repository code for a one-time analysis and [caches the source code](how-snyk-handles-your-data.md#how-snyk-processes-this-data) according to the Cloud provider's storage minimum policy. After this period, only the location (file path, line, and column) of the issues found, the issue id, and explanations are maintained. Your code is removed and is not stored in the Snyk network or logs.
 * Results are stored in a database and used for analytic and monitoring purposes by Snyk.
@@ -80,7 +80,7 @@ Your account is subject to contract terms which might restrict your ability to e
 
 ### **Snyk Container**
 
-<figure><img src="../.gitbook/assets/image (201) (1) (1).png" alt="Snyk Container logo"><figcaption><p>Snyk Container</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (201) (1) (1).png" alt=""><figcaption><p>Snyk Container</p></figcaption></figure>
 
 * Snyk accesses and stores package versions, executable hashes and versions, operating system, container image metadata (for example, rootfs hashes, history), and image ID.
 * Snyk accesses and stores information pertaining to the parent image: name, version, and tag.
@@ -90,7 +90,7 @@ Your account is subject to contract terms which might restrict your ability to e
 
 ### **Snyk IaC**
 
-<figure><img src="../.gitbook/assets/SnykIaC.svg" alt="Snyk IaC logo"><figcaption><p>Snyk Infrastructure as Code</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SnykIaC.svg" alt=""><figcaption><p>Snyk Infrastructure as Code</p></figcaption></figure>
 
 #### Current IaC
 
@@ -111,7 +111,7 @@ Your account is subject to contract terms which might restrict your ability to e
 
 ### Snyk Essentials and Snyk AppRisk
 
-<figure><img src="../.gitbook/assets/AppRisk_Color_64px.png" alt="Snyk App Risk logo"><figcaption><p>Snyk AppRisk</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/AppRisk_Color_64px.png" alt=""><figcaption><p>Snyk AppRisk</p></figcaption></figure>
 
 * Snyk Essentials and Snyk AppRisk provide visibility into data at the Snyk Group level and, therefore, cover the scope of all Snyk Organizations within a Snyk Group.
 * From Snyk Targets and Projects within associated Snyk Organizations, Snyk Essentials and Snyk AppRisk accesses and stores asset metadata to generate code repository assets, package (first-party) assets, and container image assets. Asset metadata includes the Git remote URL, languages represented in repositories, and commit history metadata (not the underlying source code).
@@ -142,17 +142,17 @@ Snyk puts the following safeguards in place to ensure data is secure
 
 ## Snyk certifications
 
-<figure><img src="../.gitbook/assets/Soc2.png" alt="Soc 2 Type 2 AICPA Soc"><figcaption><p>Soc 2 Type 2 AICPA Soc</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Soc2.png" alt=""><figcaption><p>Soc 2 Type 2 AICPA Soc</p></figcaption></figure>
 
 Snyk is certified to ISO 27001:2022 with the additional objective controls of ISO 27017:2015.
 
-<figure><img src="../.gitbook/assets/schellman_iso27001_seal_blue_CMYK_300dpi_jpg.png" alt="ISO 27001 Schellman certification" width="375"><figcaption><p>ISO 27001 Schellman certification</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/schellman_iso27001_seal_blue_CMYK_300dpi_jpg.png" alt="" width="375"><figcaption><p>ISO 27001 Schellman certification</p></figcaption></figure>
 
-## **How Snyk maintains GDPR compliance**
+## How Snyk maintains GDPR compliance
 
 Snyk takes privacy seriously and operates a global privacy program to meet the requirements of the GDPR, CCPA, and other applicable privacy laws. Snyk treats all user data the same way and uses industry-standard technical and organizational measures to secure the information Snyk stores. The Snyk Privacy Program is tailored to meet both legal requirements and your needs.
 
-Learn more at the[ ](https://www.atlassian.com/trust/privacy)[Snyk Privacy Policy](https://snyk.io/policies/privacy/).
+Learn more at the [Snyk Privacy Policy](https://snyk.io/policies/privacy/).
 
 ## Snyk policies
 

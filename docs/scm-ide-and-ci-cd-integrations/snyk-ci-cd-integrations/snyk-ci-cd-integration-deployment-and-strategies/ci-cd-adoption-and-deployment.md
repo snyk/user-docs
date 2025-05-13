@@ -10,7 +10,7 @@ Developer teams typically adopt Snyk in the following stages:
 2. [Use Snyk as a gatekeeper](ci-cd-adoption-and-deployment.md#stage-2-use-snyk-as-a-gatekeeper-snyk-test) (`snyk test`)
 3. [Continuous monitoring](ci-cd-adoption-and-deployment.md#stage-3-continuous-monitoring-snyk-test-and-snyk-monitor) (`snyk test` and `snyk monitor`)
 
-### **Stage 1: Expose vulnerabilities (`snyk monitor`)**
+### Stage 1: Expose vulnerabilities (`snyk monitor`)
 
 A typical approach is using Snyk results to expose vulnerabilities during the development process. This increases visibility of vulnerabilities among members of your team.
 
@@ -22,7 +22,7 @@ Using `snyk monitor` to expose results provides information without disrupting p
 
 For information about `snyk monitor`, see the [`monitor` command help](../../../snyk-cli/commands/monitor.md).
 
-### **Stage 2: Use Snyk as a gatekeeper (`snyk test`)**
+### Stage 2: Use Snyk as a gatekeeper (`snyk test`)
 
 Using Snyk as a gatekeeper prevents the introduction of new vulnerabilities (sometimes known as "stopping the bleeding").
 
@@ -32,7 +32,7 @@ Add `snyk test` to your build or enable the fail functionality to make Snyk fail
 
 For information about `snyk test`, see the [`test` command help](../../../snyk-cli/commands/test.md).
 
-### **Stage 3: Continuous monitoring (`snyk test`** and **`snyk monitor`)**
+### Stage 3: Continuous monitoring (`snyk test` and `snyk monitor`)
 
 After you configure Snyk to fail the build when vulnerabilities are detected, you can configure Snyk to send a snapshot of your project's successful builds to Snyk for ongoing monitoring.
 
@@ -46,15 +46,15 @@ All of these methods provide the same results, as they all rely on the same Snyk
 
 There are various ways to configure Snyk within your pipeline. Choose a method depending on your environment and preference. You can expect all methods to lead to a successful run.
 
-### **Use Snyk native plugins**
+### Use Snyk native plugins
 
 Snyk native plugins are available for most common CI/CD tools. Using these plugins is the easiest way to set up and get started. The plugins include the most common parameters and options in the user interface (UI).
 
-### **Deploy Snyk CLI using the npm method**
+### Deploy Snyk CLI using the npm method
 
 Follow steps similar to those for [installing the CLI](../../../snyk-cli/install-or-update-the-snyk-cli/) locally. You must be able to run an npm command in the pipeline script. This method has the advantage of completely aligning with the CLI experience so you can easily troubleshoot and configure.
 
-### **Deploy Snyk CLI binary version**
+### Deploy Snyk CLI binary version
 
 The advantage of the binary setup is that it has no dependency with the local environment. For example, it is useful if you cannot run an npm command in your pipeline.
 
@@ -62,12 +62,10 @@ CLI binaries are available on the [CLI GitHub repository](https://github.com/sny
 
 Snyk has Linux, Windows, and other versions.
 
-### **Deploy a Snyk container**
+### Deploy a Snyk container
 
 You may also deploy Snyk in your pipeline using one of the Snyk images in [Dockerhub](https://hub.docker.com/r/snyk/snyk).
 
 ## Examples of Snyk CI/CD Integrations
 
 This repo shows some examples of binary and npm integrations for various CI/CD tools: [CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples).
-
-##

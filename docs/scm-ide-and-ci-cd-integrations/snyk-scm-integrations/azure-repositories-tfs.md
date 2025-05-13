@@ -2,7 +2,7 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](azure-repositories-tfs.md#group-level-snyk-essentials-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials.&#x20;
+* [Group level](azure-repositories-tfs.md#group-level-snyk-essentials-integrations) - Add integrations to your Snyk application that will be available for your Snyk Essentials.&#x20;
 * [Organization level](azure-repositories-tfs.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 {% hint style="info" %}
@@ -49,7 +49,7 @@ The process to connect Snyk with your Azure repositories includes the following 
 3. [Select the Projects and repositories](azure-repositories-tfs.md#add-projects-to-snyk-for-azure-repos) you want to associate with Snyk for testing and monitoring.\
    You can also enter custom file locations for any manifest files that are not located in the root folders of your repositories.
 
-### **Configure a Personal Access Token (PAT)**
+### Configure a Personal Access Token (PAT)
 
 Generate and copy a unique PAT to use for Snyk. For more information on the PAT access scope requirements to enable in Azure, see [Azure Repositories (TFS) permission requirements](./#azure-repositories-tfs-permission-requirements).
 
@@ -91,7 +91,7 @@ To add a default Project:
 
 Use this procedure to add an Azure Repository dependency from a non-default path.
 
-1. In Snyk, navigate to **Projects** > **Add projects > Azure repos > Settings**.
+1. In Snyk, navigate to **Projects** > **Add projects** > **Azure repos** > **Settings**.
 2. Open the **Add custom file location (optional)** list and **select a repository...** to configure a custom path.
 3. In the text field, enter the `relative path for the manifest file location`.
 
@@ -103,7 +103,7 @@ The relative path field is case-sensitive.
 
 The optional **Exclude folders** field is case-sensitive. The pattern you enter is applied to all the Azure repositories.
 
-### **Confirming the repository import**
+### Confirming the repository import
 
 After repositories are imported, a confirmation appears in green at the top of the screen. The selected files are marked with a unique icon and named by Organization and repository. You can filter to view only those Projects by selecting the Azure Repos filter option.
 
@@ -123,13 +123,13 @@ The Integrations page shows all active integrations, including data from your ex
 
 #### Integrate using Snyk Essentials <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
 
-1. Profile name (`mandatory`): Input your integration profile name.&#x20;
+1. Profile name (`mandatory`): Input your integration profile name.
 2. Organizations (`mandatory`): Input the names of all the relevant Azure DevOps organizations.
-3. Access Token (`mandatory`): Create your Azure DevOps PAT from your Azure DevOps settings.&#x20;
-   * Access Token (`mandatory`): Create and add your Access token by following the instructions from the  [Generate a Personal access token from your Azure DevOps settings](azure-repositories-tfs.md#generate-a-personal-access-token-from-your-azure-devops-settings) section.
+3. Access Token (`mandatory`): Create your Azure DevOps PAT from your Azure DevOps settings.
+   * Access Token (`mandatory`): Create and add your Access token by following the instructions from the [Generate a Personal access token from your Azure DevOps settings](azure-repositories-tfs.md#generate-a-personal-access-token-from-your-azure-devops-settings) section.
    * API URL (`mandatory`): The API URL, for example, [`https://dev.azure.com/`](https://dev.azure.com/). You can use a custom URL that is publicly accessible.
 4. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk Broker.
-   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.&#x20;
+   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-for-snyk-broker-code-agent) page.
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
 
@@ -157,4 +157,4 @@ The user account that owns the PAT needs `Basic` access level on the Azure organ
 
 #### API version <a href="#azure-devops-api-version" id="azure-devops-api-version"></a>
 
-You can use the[ Azure DevOps REST API v6](https://learn.microsoft.com/en-us/rest/api/azure/devops/core/?view=azure-devops-rest-6.0) repository to access information about the API.
+You can use the [Azure DevOps REST API v6](https://learn.microsoft.com/en-us/rest/api/azure/devops/core/?view=azure-devops-rest-6.0) repository to access information about the API.

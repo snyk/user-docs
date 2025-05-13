@@ -1,10 +1,8 @@
 # Phase 1: Discovery and planning
 
+## Discovery phase steps
 
-
-## Discovery phase steps&#x20;
-
-* [Validate your Snyk plan](validate-your-snyk-plan.md): c[onfirm your license has been applied correctly.](#user-content-fn-1)[^1]
+* [Validate your Snyk plan](validate-your-snyk-plan.md): confirm your license has been applied correctly.
 * [Conduct discovery](discovery.md): identify stakeholders, integrations, and applications to monitor.
 * [Name your  Organization](name-your-organization.md): decide what to name your Organization.
 * [Determine user roles](determine-member-roles.md): who will be administrators?
@@ -24,24 +22,22 @@ Before starting rollout, here are some initial questions you can ask to assist i
 
 ### What are your goals?
 
-* Why did you choose Snyk?&#x20;
+* Why did you choose Snyk?
 * Why are you implementing it now?
 
-### How will your users use Snyk?&#x20;
+### How will your users use Snyk
 
 How will you provision users, and integrate Snyk with your platforms?
 
-* Who will need access to Snyk?&#x20;
+* Who will need access to Snyk
 * Who can grant Snyk access to platforms like Git Repositories?
 
 ### What will you name your Organization?
 
 * What will you name the Organization in Snyk? The Organization name will be public to all users.
 
-### How will you measure success?&#x20;
+### How will you measure success?
 
 * What KPIs will be tracked?
-* How will you know you’re making progress?
+* How will you know you're making progress?
 * Are there key development projects that progress tracking should be aligned with, or at least included to measure progress against?
-
-[^1]: 

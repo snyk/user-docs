@@ -66,9 +66,9 @@ You also need a token for a [service account](https://docs.snyk.io/snyk-admin/se
   * `CPU: 100m` (can be increased using Helm)
   * `Memory: 512Mi` (can be increased using Helm)
 * Choose one of the following methods to deploy the Snyk Runtime Sensor:&#x20;
-  * [Install the Snyk Runtime Sensor using a Helm chart ](snyk-runtime-sensor.md#using-a-helm-chart)
-  * [Install the Snyk Runtime Sensor using a Helm chart and the AWS Secrets Manager ](snyk-runtime-sensor.md#using-a-helm-chart-and-the-aws-secrets-manager)
-  * [Install the Snyk Runtime Sensor on OpenShift ](snyk-runtime-sensor.md#on-openshift)
+  * [Install the Snyk Runtime Sensor using a Helm chart](snyk-runtime-sensor.md#using-a-helm-chart)
+  * [Install the Snyk Runtime Sensor using a Helm chart and the AWS Secrets Manager](snyk-runtime-sensor.md#using-a-helm-chart-and-the-aws-secrets-manager)
+  * [Install the Snyk Runtime Sensor on OpenShift](snyk-runtime-sensor.md#on-openshift)
   * [Install the Snyk Runtime Sensor through the AWS Marketplace as an EKS add-on](snyk-runtime-sensor.md#through-the-aws-marketplace-as-an-eks-add-on)
 
 ### As a Kubernetes DaemonSet, using a Helm chart
@@ -384,13 +384,13 @@ To deploy the Snyk Runtime Sensor on Amazon EKS with EKS Add-on, you need to mee
 3. Ensure you have access to the Amazon EKS clusters where you want to install the sensor.
 4. Ensure you have a Snyk service account token ready with the right permissions, as described in the [prerequisites](snyk-runtime-sensor.md#prerequisites).
 
-#### **Enable the Snyk Runtime Sensor add-on from AWS console**
+#### Enable the Snyk Runtime Sensor add-on from AWS console
 
 After you have successfully set up a subscription to Snyk Runtime Sensor on AWS Marketplace and followed the on-screen instructions, you will be redirected to Amazon EKS console.
 
 To enable the Snyk Runtime Sensor for your Amazon EKS cluster, select your cluster on the Amazon EKS console. Then, navigate to the Add-ons tab and choose "Get more add-ons". Use the search bar to find "runtime" and follow the on-screen instructions to enable the add-on for your cluster. This process should be done for each cluster you want to integrate the sensor with (i.e. for each cluster you want to collect data from).
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.53.23.png" alt="Select the Snyk Runtime Sensor add-on"><figcaption><p>Select the Snyk Runtime Sensor add-on</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.53.23.png" alt=""><figcaption><p>Select the Snyk Runtime Sensor add-on</p></figcaption></figure>
 
 On the next screen, select the latest version (even if already selected) and open the "Optional configuration settings".
 
@@ -398,10 +398,10 @@ On the next screen, select the latest version (even if already selected) and ope
 
 Under the "configuration values", set the following attributes in a YAML or JSON format:
 
-* `secretName` - the secret name that will be created later in the process. The default value is  `snyk-secret` .
+* `secretName` - the secret name that will be created later in the process. The default value is `snyk-secret`.
 * `clusterName` - the name of the cluster where the add-on is installed.
 * `snykGroupId` - the Group ID associated with the used service account.
-* `snykAPIBaseURL` - should be configured to be `api.snyk.io:443` , unless your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md#what-regions-are-available) than the default (US).
+* `snykAPIBaseURL` - should be configured to be `api.snyk.io:443`, unless your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md#what-regions-are-available) than the default (US).
 
 Here is a base configuration to copy:
 
@@ -412,13 +412,13 @@ snykGroupId: <<MY_SNYK_GROUP_ID>>
 snykAPIBaseURL: api.snyk.io:443
 ```
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.58.12.png" alt="Set the appropriate configuration values under &#x22;Optional configuraiton settings&#x22;"><figcaption><p>Set the appropriate configuration values under "Optional configuraiton settings"</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.58.12.png" alt=""><figcaption><p>Set the appropriate configuration values under "Optional configuraiton settings"</p></figcaption></figure>
 
 After you select the **Next** and **Create** options you will see the `Add-on snyk-runtimesensor successfully added to cluster <<YOUR_CLUSTER>>` notification on top of the page.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 16.26.13.png" alt="The success message."><figcaption><p>The success message.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 16.26.13.png" alt=""><figcaption><p>The success message.</p></figcaption></figure>
 
-#### **Enable Snyk Runtime Sensor add-on using AWS CLI**
+#### Enable Snyk Runtime Sensor add-on using AWS CLI
 
 Run the following command on your workspace to enable the Snyk Runtime Sensor add-on for your Amazon EKS cluster. You have to set the following environment variables to match your Snyk account and your targeted EKS cluster:
 
@@ -463,15 +463,15 @@ Ensure the response you get is similar to this one and that the status is ACTIVE
 }
 ```
 
-#### **Add your Snyk Service Account Token to the EKS cluster**
+#### Add your Snyk Service Account Token to the EKS cluster
 
-* Set your `kubectl` context to control your cluster using `aws eks`:&#x20;
+* Set your `kubectl` context to control your cluster using `aws eks`:
 
 ```
 aws eks update-kubeconfig --name $CLUSTER_NAME --region $AWS_REGION
 ```
 
-* Create a secret name `snyk-secret` under the `snyk-runtime-sensor` namespace that contains the `snykToken`. The `snykToken` will be your service account token:&#x20;
+* Create a secret name `snyk-secret` under the `snyk-runtime-sensor` namespace that contains the `snykToken`. The `snykToken` will be your service account token:
 
 ```
 kubectl create secret generic snyk-secret \
@@ -481,7 +481,7 @@ kubectl create secret generic snyk-secret \
 
 * Data from your AWS EKS Cluster will be reported to Snyk using the Snyk Runtime Sensor.
 
-#### **Disable the Snyk Runtime Sensor add-on**
+#### Disable the Snyk Runtime Sensor add-on
 
 You can disable the Snyk Runtime Sensor add-on by running the following command:
 
@@ -498,4 +498,4 @@ In such cases, install the helm chart with either `--set securityContext.privile
 The Loaded package risk factor is not supported by Snyk for operating system packages (such as Debian packages), only for packages which are hosted under package managers such as npm, Maven, or PyPI.
 {% endhint %}
 
-Release versions can be found on[ GitHub](https://github.com/snyk/runtime-sensor/releases).
+Release versions can be found on [GitHub](https://github.com/snyk/runtime-sensor/releases).

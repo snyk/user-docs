@@ -4,7 +4,7 @@
 For Snyk Infrastructure as Code, see [Jira Integration for IaC](../../scan-with-snyk/snyk-iac/snyk-iac-integrations/jira-integration-for-iac.md).
 {% endhint %}
 
-## **Set up your Jira integration**
+## Set up your Jira integration
 
 Snyk Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues. The Jira integration also includes the API endpoints [Create jira issue](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue) and [List all jira issues](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-jira-issues).
 
@@ -12,12 +12,12 @@ Snyk Jira integration allows you to manually raise Jira issues in the Snyk UI fo
 If your Jira instance is private, use [the Snyk Broker deployment method](../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md).
 {% endhint %}
 
-## **Prerequisites for Jira integration with Snyk**
+## Prerequisites for Jira integration with Snyk
 
 * Snyk supports Jira from version 5 to version 10.
 * The following [Jira permissions](https://confluence.atlassian.com/adminjiraserver073/managing-project-permissions-861253293.html) are required: **Browse Projects** and **Create Issues.**
 
-## **How to set up your Jira integration**
+## How to set up your Jira integration
 
 It is best practice to set up a new user in Jira for this integration, instead of using the credentials of an existing account.
 
@@ -43,7 +43,7 @@ Fill in the following fields:
 
 <figure><img src="../../.gitbook/assets/JiraSettings.png" alt=""><figcaption><p>A successful connection</p></figcaption></figure>
 
-## **Create a Jira issue**
+## Create a Jira issue
 
 After you set up the Jira integration connection, open one of your Snyk Projects in the Snyk Web UI. A new button, **Create an issue**, appears at the bottom of each vulnerability and license issue card. This button allows you to create a Jira issue.
 

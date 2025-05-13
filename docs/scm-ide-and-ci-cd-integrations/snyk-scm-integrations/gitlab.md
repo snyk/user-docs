@@ -2,7 +2,7 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](gitlab.md#group-level-snyk-essentials-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials. If you want to set up integrations for Snyk Essentials, use the Integrations menu at the Group level.
+* [Group level](gitlab.md#group-level-snyk-essentials-integrations) - Add integrations to your Snyk application that will be available for your Snyk Essentials. If you want to set up integrations for Snyk Essentials, use the Integrations menu at the Group level.
 * [Organization level](gitlab.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 ## Organization level - Snyk integrations
@@ -33,7 +33,7 @@ The GitLab integration allows you to:
 
 To set up the GitLab integration with Snyk, create a GitLab access token and enter this into the Snyk application.
 
-Typically, the first user in a Snyk Organization, a [Snyk admin](../../snyk-admin/#user-types) and GitLab Owner or Maintainer, sets up an integration with a **GitLab Personal Access Token** or **Group Access Token.** This token is then authenticated with GitLab, enabling access by Snyk to the repositories in that GitLab account.
+Typically, the first user in a Snyk Organization, a [Snyk admin](../../snyk-admin/#user-types) and GitLab Owner or Maintainer, sets up an integration with a **GitLab Personal Access Token** or **Group Access Token**. This token is then authenticated with GitLab, enabling access by Snyk to the repositories in that GitLab account.
 
 * A **GitLab Personal Access Token** is used to perform actions on and manage personal GitLab projects individually. These differ from Group Access Tokens as they are attached to a user rather than a GitLab group. For Snyk Essentials to show all repositories from GitLab, the user generating the PAT should be part of the GitLab group where their GitLab permissions can be a minimum of Guest.
 * A **GitLab Group Access Token** is used to perform actions for and manage more than one GitLab project within a GitLab group. The Group Access Token also grants access to all GitLab projects in a GitLab group or subgroup without contributing to GitLab's licensed user count.
@@ -49,7 +49,7 @@ Group Access Tokens can only be created by a GitLab Owner using a GitLab Premium
 #### Add a GitLab Personal Access Token in GitLab
 
 1. Generate a GitLab Personal Access Token in a GitLab instance.\
-   Select the profile icon, then **Edit Profile > Access Tokens**.\
+   Select the profile icon, then **Edit Profile** > **Access Tokens**.\
    Set the token name, for example, Snyk, and select the **api** scope. The **api** scope grants complete read/write access to the API, including all groups and projects, the container registry, and the package registry.
 2. Navigate to the Snyk [**Integrations**](https://app.snyk.io/integrations) page, select the GitLab integration tile, and enter the URL of the GitLab instance and the token you generated.
 3. Click **Save**.
@@ -68,7 +68,7 @@ Selecting the **api** scope with a **Maintainer** role allows Snyk to authentica
 #### Create a GitLab Group Access Token
 
 1. Locate the GitLab Group and select **Settings** > **Access Tokens**.
-2. Enter a descriptive token name such as `SnykToken`, select the **Maintainer** role, and check the **api** scop&#x65;**.**
+2. Enter a descriptive token name such as `SnykToken`, select the **Maintainer** role, and check the **api** scope.
 
 #### Add a GitLab Group Access Token to Snyk
 
@@ -76,14 +76,14 @@ Selecting the **api** scope with a **Maintainer** role allows Snyk to authentica
 2. Navigate to the Snyk GitLab integration page by selecting the tile.
 3. Paste the GitLab Group Access Token into the Snyk application field the same way you would add a GitLab Personal Access Token.
 
-### **Uses of the GitLab integration**
+### Uses of the GitLab integration
 
-#### **Fix vulnerabilities with Snyk merge requests**
+#### Fix vulnerabilities with Snyk merge requests
 
 When viewing a Snyk test report for a Snyk Project that you own or when looking at a GitLab Project that you are watching with Snyk, you see two options for fixing a vulnerability:
 
-* **Fix these vulnerabilities:** generate a Snyk merge request with the minimal changes needed to fix all the Snyk Project's detected vulnerabilities.
-* **Fix this vulnerability:** generate a Snyk merge request on an individual issue that fixes the vulnerability.
+* **Fix these vulnerabilities**: generate a Snyk merge request with the minimal changes needed to fix all the Snyk Project's detected vulnerabilities.
+* **Fix this vulnerability**: generate a Snyk merge request on an individual issue that fixes the vulnerability.
 
 You can review the vulnerabilities that will be fixed, change your selection with the checkboxes, and choose to ignore any vulnerabilities that cannot be fixed now before opening the merge request on the **Open a Fix Merge Request** page.
 
@@ -113,9 +113,9 @@ The Projects will be set to inactive, and you will no longer get alerts, pull re
 
 1. Navigate to the Snyk GitLab integration **Settings**.
 2. At the bottom of the page, select **Remove GitLab**.
-3.  A confirmation screen opens. To proceed, select **Disconnect GitLab**.\\
+3. A confirmation screen opens. To proceed, select **Disconnect GitLab**.\
 
-    <figure><img src="../../.gitbook/assets/2023-08-15_16-36-28.png" alt="Confirm diconnecting from GitLab" width="375"><figcaption><p>Confirm disconnecting from GitLab</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/2023-08-15_16-36-28.png" alt="" width="375"><figcaption><p>Confirm disconnecting from GitLab</p></figcaption></figure>
 
 After GitLab is disconnected, Snyk Projects imported from GitLab will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on pull requests. The webhook that enables the integration for this repository will be removed.
 
@@ -127,7 +127,7 @@ You can re-connect anytime; however, re-initiating GitLab projects for monitorin
 
 When you are adding the environment URL and access token to set up the integration, the following message may appear:
 
-<figure><img src="../../.gitbook/assets/2023-09-05_15-25-06.png" alt="Could not connect to GitLab integration error message" width="563"><figcaption><p>Could not connect to GitLab integration error message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-09-05_15-25-06.png" alt="" width="563"><figcaption><p>Could not connect to GitLab integration error message</p></figcaption></figure>
 
 This is a permissions issue unless [Snyk Broker](https://support.snyk.io/s/article/Gitlab-Broker-is-not-working) is involved. In the PAT settings in GitLab, ensure you have selected the api scope and the **Maintainer** role.
 
@@ -149,7 +149,7 @@ The Integrations page shows all active integrations, including data from your ex
    * API Token (`mandatory`): Create your GitLab PAT from your GitLab organization. Follow the instructions in [Generate a Personal access token from your GitLab settings section](gitlab.md#generate-a-personal-access-token-from-your-gitlab-settings). Authorize your personal access token if you have configured SAML SSO.
    * Host URL (`mandatory`): The IP/URL of the GitLab server. The default URL is [`https://gitlab.com`](https://gitlab.com)
 3. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk Broker.
-   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.
+   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-for-snyk-broker-code-agent) page.
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 4. Pull personal repositories (`optional`): Enable the option If you only want to pull the repositories you own.
 5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
@@ -169,4 +169,4 @@ The Integrations page shows all active integrations, including data from your ex
 
 #### API version <a href="#gitlab-api-version" id="gitlab-api-version"></a>
 
-You can use the[ GitLab REST API v4](https://docs.gitlab.com/ee/api/index.html) repository to access information about the API.
+You can use the [GitLab REST API v4](https://docs.gitlab.com/ee/api/index.html) repository to access information about the API.

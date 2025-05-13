@@ -4,11 +4,11 @@ Project attributes are static and non-configurable fields that allow you to appl
 
 Use attributes to group, prioritize, and filter Projects. Use attributes such as lifecycle stage, business criticality, and environment to prioritize issues at a granular level. After you apply attributes to Snyk [policies](../../manage-risk/policies/), you can assign policies to Projects that have those attributes applied.
 
-## **Available attributes and their values**
+## Available attributes and their values
 
 On the **Projects** listing, use **Group by none** (ungrouped) for optimal Project visibility and to apply [tags](../introduction-to-snyk-projects/project-tags.md) and filtering attributes at the Project level.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46 (1) (1) (1) (1) (1) (1) (3).png" alt="Project level filtering attributes"><figcaption><p>Project level filtering attributes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46 (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption><p>Project level filtering attributes</p></figcaption></figure>
 
 The available Project attributes are summarized in the following table.
 
@@ -28,21 +28,21 @@ You can also apply and remove attributes using Snyk CLI options, `--project-busi
 Roles with the **edit project attributes** permission can add an attribute to a Project.
 {% endhint %}
 
-## **Apply an attribute value to Project**
+## Apply an attribute value to Project
 
 1. On the Project detail page, click **+ Add a value** below the attribute for which you want to apply a value to the Project.
 2. Select a value from the list.
 
 After you have selected a value for the attribute, it appears on the Project detail page. You can apply multiple values for an attribute and multiple attributes to a Project.
 
-<figure><img src="../../.gitbook/assets/gs2.png" alt="Project detail page showing attribute values applied"><figcaption><p>Project detail page showing attribute values applied</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gs2.png" alt=""><figcaption><p>Project detail page showing attribute values applied</p></figcaption></figure>
 
-## **Remove attribute value**
+## Remove attribute value
 
 1. Select the attribute with an applied value that you want to remove from the Project.
 2. Click the **x** icon for the value you want to remove.
 
-## **Filter by attribute values on the Projects listing page**
+## Filter by attribute values on the Projects listing page
 
 On the left of the **Projects** listing page, when Projects are grouped by none (ungrouped), select the values for the attributes that you want to filter Projects by.
 

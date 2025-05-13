@@ -10,7 +10,7 @@ To determine which is the latest version, Snyk uses a versioning schema that all
 
 Snyk supports the following versioning schemas.
 
-## **Semantic Versioning (SemVer)**
+## Semantic Versioning (SemVer)
 
 This schema adheres to the [Semantic Versioning Specification](https://semver.org/) (SemVer).
 

@@ -26,7 +26,7 @@ The supported archive formats are:
 * tar archives
 * tar with gzip compression algorithm
 
-## **Source code dependencies must be in the scanned folder**
+## Source code dependencies must be in the scanned folder
 
 For the CLI to be able to find dependencies in your source code, enough of the full dependencies source code must be present in the scanned folder.
 
@@ -59,7 +59,7 @@ c-example
 ...
 ```
 
-## **Support for releases**
+## Support for releases
 
 Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.
 
@@ -71,14 +71,14 @@ In the case of Go and Unmanaged scans (C/C++) this requires an official release 
 
 When you scan C++ Projects, the following data is collected and may be stored for troubleshooting purposes:
 
-**Hashes of the scanned files:** All files are converted to a list of irreversible hashes.
+**Hashes of the scanned files**: All files are converted to a list of irreversible hashes.
 
-**Relative paths to scanned files:** The paths to files relative to the directory being scanned are included for better identification and matching.\
+**Relative paths to scanned files**: The paths to files relative to the directory being scanned are included for better identification and matching.\
 \
 Example:\
 `./project-name/vendor/bzip2-1.0.6/blocksort.c`
 
-## **Displaying dependencies**
+## Displaying dependencies
 
 To display dependencies, use the `--print-deps` option:
 
@@ -143,7 +143,7 @@ Dependencies:
 
 This output also shows how confident Snyk is about the identified dependency and its version. To sww how confident Snyk is about the identified dependency and its version, you can, use the `--print-deps` or `--print-dep-paths` option.
 
-## **Understanding the confidence level**
+## Understanding the confidence level
 
 The confidence level shows how confident Snyk is about the actual identification of the dependency. The number can be between `0` and `1` and the higher the number is, the more accurate the identification. A confidence level of `1` means that all the files in the source tree fully matched all the expected files in the Snyk database.
 
@@ -151,7 +151,7 @@ The confidence level shows how confident Snyk is about the actual identification
 
 You may need to change the source code of the dependencies that you use in your software. As Snyk uses file signatures to find the closest possible match to an open-source library, your changes may decrease the accuracy of the identification of the actual library.
 
-## **JSON output**
+## JSON output
 
 To get machine-readable output in JSON, use the `--json` option:
 
@@ -254,7 +254,7 @@ $ snyk test --unmanaged --json
 ]
 ```
 
-## **Command line options**
+## Command line options
 
 The following `snyk` command line options are supported with the `snyk test --unmanaged` and `snyk monitor --unmanaged` commands:
 
@@ -285,4 +285,4 @@ This creates a snapshot of dependencies and vulnerabilities and imports them int
 
 Importing a Project with unmanaged dependencies creates a new Project that is listed on the Project page:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-08-04 at 11.18.10.png" alt="Project with unmanaged dependencies"><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-08-04 at 11.18.10.png" alt=""><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>

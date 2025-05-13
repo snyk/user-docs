@@ -2,9 +2,9 @@
 
 Navigate to **Preferences**, **Tools**, and then **Snyk** to set the following configurations for the plugin:
 
-## **Snyk account**
+## Snyk account
 
-* **Authentication method:** Specify whether to authenticate with OAuth2 or with an API token. `OAuth2` is the default
+* **Authentication method**: Specify whether to authenticate with OAuth2 or with an API token. `OAuth2` is the default
 * **Token**: Set the token to use for authentication with Snyk. For details, see [Authentication for the JetBrains plugins](authentication-for-the-jetbrains-plugins.md).
 * **Custom endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).\
   Multi-tenant users who do not belong to the default region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
@@ -24,20 +24,20 @@ Navigate to **Preferences**, **Tools**, and then **Snyk** to set the following c
 * **All Issues vs Net New Issues**: Specify whether to see all issues or only net new issues. The latter requires a Git repository, where it compares findings with those in the base branch.
 *   **Additional parameters**: Set additional `snyk test` [CLI options](../../../snyk-cli/cli-commands-and-options-summary.md) for Open Source scanning.
 
-    For **unmanaged** [**C/C++**](../../../supported-languages-package-managers-and-frameworks/c-c++/) **scanning**, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. Additional parameters do not apply to Snyk Code or IaC.
+    For **unmanaged [C/C++](../../../supported-languages-package-managers-and-frameworks/c-c++/) scanning**, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. Additional parameters do not apply to Snyk Code or IaC.
 
-## **Executable settings**
+## Executable settings
 
 These options allow to customize the handling of the plugin dependency on Snyk CLI.&#x20;
 
-* **Base URL to download the CLI:** Allow specifying an alternative download location of the CLI. This location must conform to the same file and folder layout as https://downloads.snyk.io. For example, FIPS-supported CLIs would use the base URL https://static.snyk.io/fips.
-* **Path to Snyk CLI:** Allow changing a file path of the Snyk CLI.
+* **Base URL to download the CLI**: Allow specifying an alternative download location of the CLI. This location must conform to the same file and folder layout as https://downloads.snyk.io. For example, FIPS-supported CLIs would use the base URL https://static.snyk.io/fips.
+* **Path to Snyk CLI**: Allow changing a file path of the Snyk CLI.
 * When **Automatically manage needed binaries** is checked, the plugin will download the CLI and update it regularly to the defined CLI Path. Uncheck this option if downloading the CLI is not possible due to your network configuration, for example, due to firewall rules, and you need to obtain the CLI through other means.
-* **CLI release channel:** Allow specifying a release channel (**preview**, **rc**, **stable**) for the CLI. You can also pin the CLI to a version here, specifying the version, for example,`v1.1293.1`.
+* **CLI release channel**: Allow specifying a release channel (**preview**, **rc**, **stable**) for the CLI. You can also pin the CLI to a version here, specifying the version, for example,`v1.1293.1`.
 
-## **User experience**
+## User experience
 
-**Scan automatically on start-up and save:** Enable to activate automatic scans when saving files and when opening a Project.
+**Scan automatically on start-up and save**: Enable to activate automatic scans when saving files and when opening a Project.
 
 ## Proxy for the JetBrains plugins
 
