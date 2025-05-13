@@ -117,7 +117,7 @@ To view and submit tickets, use the link for your region.
 
 ### API URLs
 
-Use the reference documentation with the following base URLs:
+Use the base URLs for your region:
 
 **SNYK-US-01:** **API v1** : https://api.snyk.io/v1/ and **REST** API: https://api.snyk.io/rest/
 

@@ -7,7 +7,7 @@ Universal Broker is in Early Access and is available only with Enterprise plans.
 
 The Universal Broker improves the management of Broker deployments and connections, supporting many connections of any type through a single running client, preferably with multiple replicas, that is, entirely distinct clients. Credentials remain entirely local to your network and are never stored on the Snyk platform, which uses credentials references.
 
-Each client or client with replicas is called a Broker Deployment. The diagram shows two deployments, Universal Broker A and Universal Broker B.
+Each client or client with replicas is called a Broker deployment. The diagram shows two deployments, Universal Broker A and Universal Broker B.
 
 A deployment can support multiple connections of any type, as shown in the diagram examples: GitHub, GitLab, Artifactory, Jira, and Container Registry Agent. Connections are configured to communicate with specific private resources: SCMs, JIRA, and others.
 
