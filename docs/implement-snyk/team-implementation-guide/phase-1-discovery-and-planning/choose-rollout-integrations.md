@@ -33,12 +33,12 @@ Advantages:
 For more details, see [Git repositories (SCMs)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
 {% hint style="info" %}
-If you have a non-cloud-facing or your own instance of a git SCM:
+If you have a non-cloud-facing or your own instance of a Git SCM:
 
 * Consider deploying a [Snyk Broker](../../../enterprise-setup/snyk-broker/) for Snyk to communicate with your repositories, which would also require a Snyk Enterprise Plan.&#x20;
 * Enterprise customers can enable and manage Snyk Broker using the API.&#x20;
 
-[Paid services](../../../working-with-snyk/snyk-terms-of-support-and-services-glossary/) can be engaged to assist in broker deployments.
+[Paid services](../../../working-with-snyk/snyk-terms-of-support-and-services-glossary/) can be engaged to assist in Broker deployments.
 {% endhint %}
 
 ### Continuous Integration/Continuous Deployment (CI/CD) pipeline integrations
