@@ -2,7 +2,7 @@
 
 ## **SDLC integration points**
 
-Snyk offers many integrations that seamlessly integrate into every stage of SDLC.&#x20;
+Snyk offers many integrations that seamlessly integrate into every stage of the SDLC.&#x20;
 
 Many businesses typically roll out automated solutions first, then slowly introduce tools to enable the developers. In addition, gating features are gradually turned on over a period of time to minimize disruption.
 
@@ -32,15 +32,13 @@ Advantages:
 
 For more details, see [Git repositories (SCMs)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
-
-
 {% hint style="info" %}
-If you have a non-cloud facing/or your own instance of a git SCM:
+If you have a non-cloud-facing or your own instance of a git SCM:
 
-* Consider deploying a [Snyk Broker](https://docs.snyk.io/snyk-admin/snyk-broker) for Snyk to communicate with your repositories, which would also require a Snyk Enterprise Plan.&#x20;
-* Enterprise customers can enable and manage [Snyk Broker](https://docs.snyk.io/enterprise-setup/snyk-broker) via API.&#x20;
+* Consider deploying a [Snyk Broker](../../../enterprise-setup/snyk-broker/) for Snyk to communicate with your repositories, which would also require a Snyk Enterprise Plan.&#x20;
+* Enterprise customers can enable and manage Snyk Broker using the API.&#x20;
 
-[Paid services](https://docs.snyk.io/more-info/snyk-terms-of-support-and-services-glossary) can be engaged to assist in broker deployments.
+[Paid services](../../../working-with-snyk/snyk-terms-of-support-and-services-glossary/) can be engaged to assist in broker deployments.
 {% endhint %}
 
 ### Continuous Integration/Continuous Deployment (CI/CD) pipeline integrations
@@ -55,7 +53,7 @@ Advantages:
 
 * Assess local code vulnerabilities
 * Full control over testing (which tests to run, where in the build script)
-* Can automate via CI/CD
+* Can automate using CI/CD
 
 For more details, see [Snyk CI/CD integrations](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/).
 
@@ -73,12 +71,10 @@ For more details, see [Use Snyk in your IDE](../../../scm-ide-and-ci-cd-integrat
 
 ### Infrastructure as Code
 
-For Snyk Infrastructure as Code, it is common that your Terraform or yaml configuration files are held in your SCM, but they may be in a separate area or repository. As a result, consider if there are other areas you need to import. You may also want to integrate with Terraform Cloud (if applicable) to enable Snyk tests as part of your "Terraform run" processes.
+For Snyk Infrastructure as Code, it is common that your Terraform or YAML configuration files are held in your SCM, but they may be in a separate area or repository. As a result, consider if there are other areas you need to import. You may also want to integrate with Terraform Cloud (if applicable) to enable Snyk tests as part of your "Terraform run" processes.
 
 For complex environments, modules, and highly templated implementations, utilizing the CLI on your Terraform Plan file may provide the best results.
 
 ### CR (Container Registries)
 
 Snyk also integrates with various [Container Registries](../../../scan-with-snyk/snyk-container/container-registry-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.
-
-###
