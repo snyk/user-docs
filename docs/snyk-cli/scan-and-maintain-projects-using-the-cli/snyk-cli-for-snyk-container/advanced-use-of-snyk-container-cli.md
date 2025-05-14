@@ -12,12 +12,20 @@ Beginning with CLI version 1.1296.0, you can scan and monitor Kaniko image archi
 * `snyk container test kaniko-archive:<filename>.tar`
 * `snyk container monitor kaniko-archive:<filename>.tar`.
 
+Beginning with CLI version 1.1297.0, you can scan and monitor image archives without specifying the archive type:
+
+* `snyk container test <filename>.tar`
+* `snyk container monitor <filename>.tar`.
+
+This update maintains full support for the current CLI scanning features and ensures backward compatibility.
+
 Examples:
 
 ```
 snyk container test docker-archive:archive.tar
 snyk container test oci-archive:archive.tar
 snyk container test kaniko-archive:archive.tar
+snyk container test archive.tar
 ```
 
 {% hint style="info" %}
