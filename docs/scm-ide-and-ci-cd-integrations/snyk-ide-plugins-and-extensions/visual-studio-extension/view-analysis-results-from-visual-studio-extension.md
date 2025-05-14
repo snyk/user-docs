@@ -12,11 +12,9 @@ Filter by severity by selecting one or more of the severities when you open the 
 
 ![Filter by severity](../../../.gitbook/assets/readme_image_3_2_2.png)
 
-Users can configure the Snyk extension using the **Project settings**.
+Users can configure the Snyk extension using the **Solution settings** in the **Options**.
 
-Note that the **Scan all projects** option is enabled by default. It adds the `--all-projects` option for Snyk CLI to scan all Projects by default.
-
-![Scan all projects enabled](../../../.gitbook/assets/readme_image_3_3.png)
+<figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption><p>Add the -d parameter in the Solution settings</p></figcaption></figure>
 
 ## Net new Issues versus all issues
 
@@ -40,7 +38,7 @@ For newly created feature branches, there will be no reported issues. That is an
 
 The base branch is usually automatically determined for each Git repository.&#x20;
 
-You may change the base branch or base folder by following these steps, as illustrated in the screen imaget that follows:
+You may change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
 
 1. Toggle the total/new filter in the summary panel
 2. Click on the top-level node in the Issues tree to change the branch or directory.
