@@ -28,21 +28,11 @@ There are no changes to the [Group](https://apidocs.snyk.io/?version=2024-10-15#
 
 An additional attribute containing the finding identifier will be added to these API endpoints and issue reports in the coming months. You can use this to assist you in converting from Project-scoped to asset-scoped ignores, especially at scale or if you have competing ignores across different Projects.
 
-## Bulk ignore conversion
-
-You need to migrate pre-existing Project-scoped ignores to asset-scoped ignores manually on the Projects page.
-
-You may be able to script some of the migration using the CLI, as the CLI output returns both the `issueId` value used in the v1 ignores API, and the `snyk/assets/finding/v1` ID used to manage asset-scoped ignores. The bulk ignore conversion needs to be done at the repository level.&#x20;
-
-### Recommendation
-
-If you need support with the migration, reach out to your Snyk account teams or request time with Snyk product management to share feedback on what will make this process easier for you.
-
-### Support for Bitbucket Data Center/Server <a href="#support-for-bitbucket-data-center-server" id="support-for-bitbucket-data-center-server"></a>
+## Support for Bitbucket Data Center/Server <a href="#support-for-bitbucket-data-center-server" id="support-for-bitbucket-data-center-server"></a>
 
 When testing a Bitbucket Server repository, the ignores created are not respected across Projects imported through an SCM integration, Snyk CLI, and IDE.
 
-#### Recommendation <a href="#recommendation-2" id="recommendation-2"></a>
+### Recommendation <a href="#recommendation-2" id="recommendation-2"></a>
 
 Postpone activating Snyk Code Consistent Ignores until Bitbucket Data Center/Server is fully supported.
 

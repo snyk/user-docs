@@ -716,6 +716,7 @@
       * [How ignores work for Projects imported using an SCM and the CLI](manage-risk/prioritize-issues-for-fixing/ignore-issues/how-ignores-work-for-projects-imported-using-an-scm-and-the-cli.md)
       * [Exclude files and ignore issues FAQs](manage-risk/prioritize-issues-for-fixing/ignore-issues/exclude-files-and-ignore-issues-faqs.md)
       * [Consistent Ignores for Snyk Code](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access/README.md)
+        * [Convert Project-scoped ignores to asset-scoped ignores](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access/convert-project-scoped-ignores-to-asset-scoped-ignores.md)
         * [Consistent Ignores for Snyk Code API](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access/api.md)
         * [Consistent Ignores for Snyk Code CLI](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access/snyk-cli.md)
         * [Consistent Ignores for Snyk Code IDE](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access/snyk-ide.md)

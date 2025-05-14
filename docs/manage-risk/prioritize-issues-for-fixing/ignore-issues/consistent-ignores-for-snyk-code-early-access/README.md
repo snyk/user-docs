@@ -35,28 +35,6 @@ To create, edit and remove ignores, you need to have a user role assigned with I
 
 <table><thead><tr><th width="203">Ignore management </th><th>Description</th></tr></thead><tbody><tr><td>View Ignores</td><td>View Ignore information.</td></tr><tr><td>Create Ignores</td><td>Create new Ignores.</td></tr><tr><td>Edit Ignores</td><td>Configure Ignores.</td></tr><tr><td>Remove Ignores</td><td>Permanently remove Ignores.</td></tr></tbody></table>
 
-## Convert Project-scoped ignores to asset-scoped ignores
-
-### Conversion setup
-
-{% hint style="info" %}
-If you're new to Snyk or with Snyk Code Projects, you can skip this step as there are no existing ignores to be converted.
-{% endhint %}
-
-Conversion is necessary to give you control over which ignores are converted. For example, if you monitor multiple branches for a given repository, you can decide what ignore metadata should be converted and used as the single source of truth going forward.
-
-The following scenario assumes that you have ignored issues within your Snyk Code Project prior to enabling Snyk Code Consistent Ignores.
-
-If a rescan has not occurred since enabling Snyk Code Consistent Ignores, you may need to [retest the Project](../../../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/#retesting-code-repository) for the `Ignore across repository` button to be active. In most cases, the `Ignore across repository` button will be activated, and this step will not be necessary.
-
-[Navigate to a Snyk Project](../../../../snyk-admin/snyk-projects/) and open an issue card with an issue that was ignored before enabling this feature.
-
-<figure><img src="../../../../.gitbook/assets/Ignored-issue-using-legacy-system.png" alt=""><figcaption><p>Ignored issue using the legacy system</p></figcaption></figure>
-
-The warning states that the ignore was created through the legacy system and is not consistent across the repository. Issues ignored before enabling the feature will appear with this warning so you can determine what ignore metadata should be converted and used as the source of truth going forward.&#x20;
-
-To convert the issue from a Project-scoped to an asset-scoped ignore, select **Ignore across repository**.
-
 ## Manage ignores at the Group level through security policies
 
 You can manage ignores proactively using group-level Snyk Code security policies. As a general rule, you can apply ignore policies when you identify a recurring need to apply similar individual ignores.&#x20;
