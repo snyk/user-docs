@@ -4,13 +4,13 @@ Follow these steps to install and configure your Universal Broker using the `sny
 
 ## Install the snyk-broker-config CLI tool
 
-To install the tool, use `npm i -g snyk-broker-config.`
+To install the tool, use `npm i -g snyk-broker-config`.
 
 ## Create your first connection
 
 This returns an install ID, a client ID, and a client secret, which are all needed to interact with the Snyk platform.
 
-* After you install, start the Universal Broker Create Connection worklow.
+* After you install, start the Universal Broker Create Connection workflow.
 
 ```
 > snyk-broker-config workflows connections create
@@ -127,7 +127,7 @@ You can use the following workflow to display details about the connection.
 > snyk-broker-config workflows connections get
 ```
 
-* If you are prompted about whether the Broker app iis installed, enter Y and then paste the install ID you saved previously.
+* If you are prompted about whether the Broker app is installed, enter Y and then paste the install ID you saved previously.
 
 Exporting the INSTALL\_ID avoids this optional step in your terminal session in the future. The deployment details follow.
 
