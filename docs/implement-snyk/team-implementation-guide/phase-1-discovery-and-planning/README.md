@@ -4,7 +4,7 @@
 
 ## Discovery phase steps&#x20;
 
-* [Validate your Snyk plan](validate-your-snyk-plan.md): c[onfirm your license has been applied correctly.](#user-content-fn-1)[^1]
+* [Validate your Snyk plan](validate-your-snyk-plan.md): confirm your license has been applied correctly.
 * [Conduct discovery](discovery.md): identify stakeholders, integrations, and applications to monitor.
 * [Name your  Organization](name-your-organization.md): decide what to name your Organization.
 * [Determine user roles](determine-member-roles.md): who will be administrators?
@@ -44,4 +44,4 @@ How will you provision users, and integrate Snyk with your platforms?
 * How will you know you’re making progress?
 * Are there key development projects that progress tracking should be aligned with, or at least included to measure progress against?
 
-[^1]: 
+
