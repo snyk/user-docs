@@ -30,4 +30,4 @@ If you want your Broker to run as an HTTPS server, you can pass the files to the
 --set httpsCert=<CERT_NAME> --set httpsKey=<CERT_KEY>
 ```
 
-For more information about using your own certificate, see [Backend requests with an internal certificate for Docker](../advanced-configuration-for-snyk-broker-docker-installation/backend-requests-with-an-internal-certificate-for-docker.md) and [HTTPS for Broker Client with Docker](../advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker.md).
+For more information about using your own certificate, see [Backend requests with an internal certificate for Docker](../advanced-configuration-for-snyk-broker-docker-installation/backend-requests-with-an-internal-certificate-for-docker.md) and [HTTPS for Broker Client with Docker](../../../https-for-broker-client-with-docker.md).

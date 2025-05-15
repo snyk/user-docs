@@ -92,7 +92,7 @@ For DigitalOcean Container Registry, Google Cloud Container Registry, Google Art
 * `BROKER_CLIENT_URL` - The URL of your Broker Client, including scheme and port, which is used by the container registry agent to call back to Snyk through the brokered connection, for example:\
   "[http://my.broker.client:8000](http://my.broker.client:8000)".
   * This must have `http://` and the port number.
-  * [Additional settings](../classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker.md) are required to configure the client with HTTPS.
+  * [Additional settings](../https-for-broker-client-with-docker.md) are required to configure the client with HTTPS.
 * `CR_AGENT_URL` - The URL of your Container Registry Agent, including scheme and port, to which the Broker Client will route the requests, for example: "[http://my.container-registry-agent](http://my.container-registry-agent):8081".
 * `CR_TYPE` - The container registry type as listed in [Supported container registries](./#supported-container-registries) on this page, for example: "docker-hub", "gcr," "artifactory-cr".
 * `CR_BASE` - The hostname of the container registry api to connect to, for example: "cr.host.com".
