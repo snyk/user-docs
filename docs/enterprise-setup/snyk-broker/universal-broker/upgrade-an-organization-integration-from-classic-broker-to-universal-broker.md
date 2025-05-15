@@ -14,3 +14,9 @@ To upgrade existing Classic Broker integrations to Universal Broker, follow thes
       When the command completes, the connection to the Organization has been upgraded.
 5. Repeat the procedure for all the relevant connections integrated with each Organization.
 6. When you have migrated all of the integrations to the Universal Broker client, delete or remove the Classic Broker container.
+
+If you run into issues, you can roll back to the Classic Broker client as long as you have not terminated the Classic Broker client. To roll back:
+
+1. Disconnect the Universal Broker connection that you migrated to previously.
+2. IF any other Classic Broker Organization is left with the same Broker token, after you disconnect the Universal Broker token, use the API endpoint [Clone an integration (with settings and credentials)](https://docs.snyk.io/snyk-api/reference/integrations-v1#post-org-orgid-integrations-integrationid-clone) to copy the integration settings from another Organization and reuse the previously used Classic Broker token through the API.
+3. IF there is no Classic Broker Organization left with the old Broker token, then after you disconnect the Universal Broker connection, set up a new Classic Brokered connection. Copy the Broker token from the new Brokered connection as a parameter and restart the Broker container.
