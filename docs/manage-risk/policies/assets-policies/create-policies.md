@@ -35,7 +35,7 @@ You can customize the filters and actions or use the template as is. After finis
 
 <figure><img src="../../../.gitbook/assets/Policy template - new UI.png" alt="Policy templates accesible from Policy view, New policy button, the Use a template option "><figcaption><p>Policy templates accesible from Policy view, New policy button, the Use a template option </p></figcaption></figure>
 
-## **Define Filters**
+## Define Filters
 
 {% hint style="info" %}
 **Release status**
@@ -63,7 +63,7 @@ The following video explains the use of filters and the use of the **And**, **Or
 Using and/or operators in the asset policy editor
 {% endembed %}
 
-## **Set actions**
+## Set actions
 
 After defining filter components, you need to define the actions that the policy has to perform on the filtered assets. Asset policies support the following actions:
 

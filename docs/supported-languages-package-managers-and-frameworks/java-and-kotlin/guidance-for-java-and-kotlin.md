@@ -33,7 +33,7 @@ For open source, developers may have decided to use Maven or Gradle, which may i
 
     The full dependency tree may not be apparent or artifacts may be pulled in from external resources, so the CLI/IDE workflow (for local scans), and CI/CD is the recommended approach for analysis, otherwise you may not have a complete view of issues and dependencies.
 
-### **Maven**
+### Maven
 
 Snyk can generate a dependency tree from POM via the Git integration or CLI:
 

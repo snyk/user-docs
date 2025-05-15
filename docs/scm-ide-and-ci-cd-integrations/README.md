@@ -12,8 +12,8 @@ The API and Snyk Essentials are available only with Enterprise plans. For more i
 
 There are two ways of implementing SCM integrations in a Snyk environment:
 
-* **Group level** - At the Group level, you can set up the SCM integrations for Snyk Essentials.&#x20;
-* **Organization level** - At the Organization level, you can set up the SCM integrations for all other Snyk products and all Snyk plans. See the [Manage your Integrations](../getting-started/snyk-web-ui.md) at the Organizational level page for more details.&#x20;
+* Group level - At the Group level, you can set up the SCM integrations for Snyk Essentials.&#x20;
+* Organization level - At the Organization level, you can set up the SCM integrations for all other Snyk products and all Snyk plans. See the [Manage your Integrations](../getting-started/snyk-web-ui.md) at the Organizational level page for more details.&#x20;
 
 {% hint style="info" %}
 If you want to use the same SCM integration at both Group and Organization levels, then you must set up that integration for both levels.
@@ -25,13 +25,13 @@ If you are an Enterprise customer, see [Choose rollout integrations](../implemen
 
 ### GitHub vs GitHub Enterprise
 
-As an **Enterprise plan user**, Snyk recommends using the GitHub Enterprise integration as it enables you to use a single GitHub service account personal access token (PAT) across your Snyk Organization rather than depending on a PAT for an individual user account. You can use this integration whether or not you have a GitHub Enterprise (GHE) license or subscription.
+As an Enterprise plan user, Snyk recommends using the GitHub Enterprise integration as it enables you to use a single GitHub service account personal access token (PAT) across your Snyk Organization rather than depending on a PAT for an individual user account. You can use this integration whether or not you have a GitHub Enterprise (GHE) license or subscription.
 
 Another benefit to using the GitHub Enterprise integration is that you can choose to clone integration settings when you are creating new Snyk Organizations. This means you can use one GitHub Enterprise integration for all Organizations in your Snyk Group.
 
-As a **Free or Team plan user**, Snyk recommends using the GitHub integration as it only requires a PAT for an individual user account, which should meet your needs at this level.
+As a Free or Team plan user, Snyk recommends using the GitHub integration as it only requires a PAT for an individual user account, which should meet your needs at this level.
 
-If you use the **self-hosted** GitHub Enterprise product, you must use the GitHub Enterprise integration.
+If you use the self-hosted GitHub Enterprise product, you must use the GitHub Enterprise integration.
 
 {% hint style="info" %}
 For detailed steps on migrating from GitHub to GitHub Enterprise, see [Migrate to GitHub Enterprise](snyk-scm-integrations/github.md#migrate-to-the-github-enterprise-integration).

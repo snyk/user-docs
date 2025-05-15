@@ -132,7 +132,7 @@ Similarly, the **top vulnerable projects** section shows the Snyk Projects asses
 
 To add a Snyk Project, use the **Add project** link on the Dashboard. Select how to add the Project from the dropdown. See [Import a Project](./#import-a-project-to-scan-and-identify-issues) for more details.
 
-### **Manage your** **Projects**
+### Manage your Projects
 
 To open the **Projects** listing page, select the **Projects** link in the side menu. On this page, you can perform several actions:
 
@@ -160,7 +160,7 @@ The following Snyk functions are available with the Web UI, for all level types:
 * [View helpful resources](snyk-web-ui.md#view-helpful-resources)
 * [Manage account preferences and settings](snyk-web-ui.md#manage-account-preferences-and-settings)
 
-### **View reports**
+### View reports
 
 {% hint style="info" %}
 **Feature availability**\

@@ -4,7 +4,7 @@ Project attributes are static and non-configurable fields that allow you to appl
 
 Use attributes to group, prioritize, and filter Projects. Use attributes such as lifecycle stage, business criticality, and environment to prioritize issues at a granular level. After you apply attributes to Snyk [policies](../../manage-risk/policies/), you can assign policies to Projects that have those attributes applied.
 
-## **Available attributes and their values**
+## Available attributes and their values
 
 On the **Projects** listing, use **Group by none** (ungrouped) for optimal Project visibility and to apply [tags](../introduction-to-snyk-projects/project-tags.md) and filtering attributes at the Project level.
 
@@ -21,7 +21,7 @@ The available Project attributes are summarized in the following table.
 {% hint style="info" %}
 You can apply attributes to Projects and remove attributes using endpoint [Applying attributes](../../snyk-api/reference/projects-v1.md#org-orgid-project-projectid-attributes).
 
-You can also apply and remove attributes using Snyk CLI options, `--project-business-criticality`, `--project-environment`, and -`-project-lifecycle`. Refer to the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md) for the commands that support these options.
+You can also apply and remove attributes using Snyk CLI options, `--project-business-criticality`, `--project-environment`, and `--project-lifecycle`. Refer to the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md) for the commands that support these options.
 {% endhint %}
 
 {% hint style="info" %}

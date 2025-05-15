@@ -31,7 +31,7 @@ Effective beginning with June 24, 2025, Snyk Code Quality issues will no longer 
 
     For **unmanaged** [**C/C++**](../../../supported-languages-package-managers-and-frameworks/c-c++/) **scanning**, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. Additional parameters do not apply to Snyk Code or IaC.
 
-## **User experience**
+## User experience
 
 * **Scanning mode:**  The **auto** option activates automatic scans when saving files and when opening a Project; works with Code and IaC.
 * **Auto Scan Open Source Security:** Set to run Open Source Security analysis in automatic mode.

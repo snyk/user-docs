@@ -25,7 +25,7 @@ Snyk requires Javascript to be enabled on your browser.
 
 To start performing basic tasks in the Snyk application:
 
-## **Create or log in to a Snyk account**
+## Create or log in to a Snyk account
 
 To create a free account or sign up for a pricing plan, navigate to [snyk.io](https://snyk.io/). For details, see [Snyk Pricing Plans](https://docs.snyk.io/implement-snyk/enterprise-implementation-guide/trial-limitations).&#x20;
 
@@ -39,7 +39,7 @@ If you log in with a different authentication provider from the one your company
 
 When you log in to the Snyk Web UI, Snyk shows your preferred (default) Organization. Snyk also uses the settings for your preferred Organization when you test a Project locally using the CLI. To change your default Organization, see [Manage account preferences and settings](snyk-web-ui.md#manage-account-preferences-and-settings).
 
-## **Set up a Snyk integration**
+## Set up a Snyk integration
 
 For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations - [Organization](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk) or [Group](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk-apprisk). For information about available integrators, see [Snyk SCM integrations](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations) and [Integrate with Snyk](https://docs.snyk.io/integrate-with-snyk) .
 

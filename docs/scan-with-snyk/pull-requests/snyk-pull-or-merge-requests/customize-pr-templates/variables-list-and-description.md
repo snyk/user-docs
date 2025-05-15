@@ -8,7 +8,7 @@ You can use the following variables in your template.
 
 ## <mark style="color:purple;">`jira_ids: string[]`</mark>
 
-A list of Jira tickets associated with the issues contained within the pull request. Ensure[ ](#user-content-fn-1)[^1]that the Snyk Jira integration is enabled on the Project or repository that contains the Project and that you have linked Snyk issues to JIRA tickets.
+A list of Jira tickets associated with the issues contained within the pull request. Ensure that the Snyk Jira integration is enabled on the Project or repository that contains the Project and that you have linked Snyk issues to JIRA tickets.
 
 To automatically link Jira to the relevant pull requests, include a list of associated Jira tickets in the commit message.&#x20;
 
@@ -464,7 +464,7 @@ You can use the following variables in your template. These variables can be use
 
 ## <mark style="color:purple;">`jira_ids: string[]`</mark>
 
-A list of Jira tickets associated with the issues contained within the pull request. Ensure[ ](#user-content-fn-2)[^2]that the Snyk Jira integration is enabled on the Project or repository that contains the Project and that you have linked Snyk issues to JIRA tickets.
+A list of Jira tickets associated with the issues contained within the pull request. Ensure that the Snyk Jira integration is enabled on the Project or repository that contains the Project and that you have linked Snyk issues to JIRA tickets.
 
 To automatically link Jira to the relevant pull requests, include a list of associated Jira tickets in the commit message.&#x20;
 
@@ -835,10 +835,3 @@ This is a fix pull request
 ```
 {% endtab %}
 {% endtabs %}
-
-[^1]: Ensure
-
-
-
-[^2]: Ensure
-

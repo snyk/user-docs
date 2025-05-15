@@ -33,13 +33,13 @@ Every issue discovered by Snyk Code has a data flow. If an issue has only one st
 * [Open Data flow external link in the integrated Git repository](breakdown-of-code-analysis.md#open-data-flow-external-link).
 * Ignore the open vulnerability issue using the **Ignore** button. See [Ignore issues](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/).
 
-### **Data flow analysis example**
+### Data flow analysis example
 
 In the following Path Traversal issue, the developer has not sanitized the input. This allows an attacker to perform a pass traversal attack to access any file in the file system, including sensitive data such as password files.
 
 <figure><img src="../../../.gitbook/assets/projects-code-analysis-vulnerability-full-details-data-flow.png" alt="Overview of a Path Traversal vulnerability issue."><figcaption><p>Data flow of a Path Traversal vulnerability issue</p></figcaption></figure>
 
-### **Open Data flow external link**
+### Open Data flow external link
 
 To open the displayed source code on the Git repository, select the file name above the right panel. In this example, the file name is "routes/profileImageUrlUpload.ts".
 

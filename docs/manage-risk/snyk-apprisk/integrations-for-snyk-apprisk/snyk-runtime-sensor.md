@@ -463,7 +463,7 @@ Ensure the response you get is similar to this one and that the status is ACTIVE
 }
 ```
 
-#### **Add your Snyk Service Account Token to the EKS cluster**
+#### Add your Snyk Service Account Token to the EKS cluster
 
 * Set your `kubectl` context to control your cluster using `aws eks`:&#x20;
 

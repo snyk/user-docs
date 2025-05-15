@@ -51,7 +51,7 @@ A personal access token (PAT) or fine-grained PAT must be generated in GitHub En
 
 See [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements) for detailed information on the access scope requirements you must adhere to.
 
-#### **How to authorize** your Personal Access Token and enable SSO
+#### How to authorize your Personal Access Token and enable SSO
 
 1. In Snyk, navigate to the **Integrations** page and click the **GitHub Enterprise** card.
 2. Enter your GitHub Enterprise URL and the personal access token (PAT) for the service account you created, and **Save** your changes. After Snyk has successfully connected to the GitHub instance, the list of available repositories displays for your selection.
@@ -81,7 +81,7 @@ The imported Projects appear on your **Projects** page and are continuously chec
 
 ### Uses of the GitHub Enterprise integration
 
-#### **Obtain Project-level security reports**
+#### Obtain Project-level security reports
 
 Snyk produces advanced security reports, allowing you to explore the vulnerabilities found in your repositories and fix them by opening a fix pull request directly to your repository with the required upgrades or patches.
 
@@ -89,7 +89,7 @@ The example that follows shows a Project-level security report.
 
 <figure><img src="../../.gitbook/assets/project_lvl_security_rpt-18july2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
-#### **Monitor Projects and generate automatic fix pull requests**
+#### Monitor Projects and generate automatic fix pull requests
 
 Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and opens an automated pull request with fixes for your repositories.
 
@@ -104,7 +104,7 @@ To review and update the automatic fix pull request settings:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 15.41.56.png" alt="Automatic pull requests settings"><figcaption><p>Automatic pull request settings</p></figcaption></figure>
 
-#### **Test new pull requests**
+#### Test new pull requests
 
 The [PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) feature enables Snyk to test any newly-created pull requests in your repositories for security vulnerabilities and sends a status check to GitHub. This allows you to see, directly from GitHub, whether the pull request introduces new security issues.
 
@@ -174,7 +174,7 @@ After GitHub Enterprise is disconnected, imported Snyk Projects will be set to i
 
 You can re-connect anytime; however, re-initiating GitHub Enterprise projects for monitoring requires setting up the integration again.
 
-## Group level  - Snyk Essentials integrations
+## Group level - Snyk Essentials integrations
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the [Integration Hub](../../getting-started/snyk-web-ui.md#manage-integrations-for-asset-discovery-asset-coverage-and-issues-from-third-party-vendors).
 

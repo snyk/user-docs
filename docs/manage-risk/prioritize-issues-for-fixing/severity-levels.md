@@ -64,7 +64,7 @@ See [Scoring security vulnerabilities 101: Introducing CVSS for CVEs](https://sn
 Severity levels may not always align with CVSS scores. For example, Snyk Container severity scores for Linux vulnerabilities may vary depending on NVD severity rankings; see [Understanding Linux vulnerability severity](../../scan-with-snyk/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md) for details.
 {% endhint %}
 
-### **Why are there multiple CVSS Scores for the same vulnerability?**
+### Why are there multiple CVSS Scores for the same vulnerability?
 
 There are multiple CVSS Scores for the same vulnerability for several reasons:
 

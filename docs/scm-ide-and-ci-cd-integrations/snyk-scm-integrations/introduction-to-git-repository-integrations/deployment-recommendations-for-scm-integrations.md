@@ -71,7 +71,7 @@ Click the **Details** link to display the status of the Snyk check. The status o
   * Snyk could not read the manifest file
   * Snyk could not find the manifest file
 
-### **Manage PR Check settings**
+### Manage PR Check settings
 
 An administrator can manage Snyk [PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) settings for each SCM integration at the Organization level and then apply these settings, either to all the Projects for that integration or to selected specific Projects. You can configure whether this feature is on (enabled by default) and set fail conditions to define when Snyk should fail your PR checks.
 

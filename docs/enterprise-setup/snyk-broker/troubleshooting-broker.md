@@ -46,7 +46,7 @@ To change the location of the healthcheck endpoint, you can specify an alternati
 ENV BROKER_HEALTHCHECK_PATH /path/to/healthcheck
 ```
 
-## **Monitoring: Systemcheck**
+## Monitoring: Systemcheck
 
 The Broker Client exposes an endpoint at `/systemcheck`, which can be used to validate the connectivity and credentials of the brokered service, Git or another SCM, or the brokered container registry . This endpoint causes the Broker Client to make a request to a preconfigured URL and report on the success of the request. The supported configuration is:
 

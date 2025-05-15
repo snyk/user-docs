@@ -90,7 +90,7 @@ This example shows a Project-level security report.
 
 <figure><img src="../../.gitbook/assets/project_lvl_security_rpt-18july2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
-#### **Project monitoring and automatic fix pull requests**
+#### Project monitoring and automatic fix pull requests
 
 Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you via email and opens automated pull requests with fixes for your repositories.
 

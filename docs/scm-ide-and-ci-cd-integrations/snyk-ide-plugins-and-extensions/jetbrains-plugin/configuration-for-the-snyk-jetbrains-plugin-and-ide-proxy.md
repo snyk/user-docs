@@ -1,6 +1,6 @@
 # Configuration for the Snyk JetBrains plugin and IDE proxy
 
-Navigate to **Preferences**, **Tools**, and then **Snyk** to set the following configurations for the plugin:
+Navigate to **Preferences** > **Tools** > **Snyk** to set the following configurations for the plugin:
 
 ## **Snyk account**
 
@@ -35,7 +35,7 @@ These options allow to customize the handling of the plugin dependency on Snyk C
 * When **Automatically manage needed binaries** is checked, the plugin will download the CLI and update it regularly to the defined CLI Path. Uncheck this option if downloading the CLI is not possible due to your network configuration, for example, due to firewall rules, and you need to obtain the CLI through other means.
 * **CLI release channel:** Allow specifying a release channel (**preview**, **rc**, **stable**) for the CLI. You can also pin the CLI to a version here, specifying the version, for example,`v1.1293.1`.
 
-## **User experience**
+## User experience
 
 **Scan automatically on start-up and save:** Enable to activate automatic scans when saving files and when opening a Project.
 

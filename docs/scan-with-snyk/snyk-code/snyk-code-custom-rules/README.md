@@ -56,7 +56,7 @@ The templates are abstract, pre-built constructs created to provide a quicker an
 
 The predicate is a symbolic representation of a relationship between objects or properties that evaluates true or false. Snyk provides an exhaustive list of predefined predicates.&#x20;
 
-For example, all cross-site scripting (XSS) sinks as `PRED:XssSink`. You can extend these or define your own.  See [Query language](./#the-query-language).
+For example, all cross-site scripting (XSS) sinks as `PRED:XssSink`. You can extend these or define your own. See [Query language](./#the-query-language).
 
 <figure><img src="../../../.gitbook/assets/custom-templates-query-predicates.png" alt="Overview of Query Predicates."><figcaption><p>Query Predicates</p></figcaption></figure>
 
@@ -90,7 +90,7 @@ A vulnerability is removed and added to the resolved issues section within the r
 
 Snyk Code offers a user-friendly development environment that uses AI technology to simplify defining and testing rules. The AI acts as an intuitive assistant, providing helpful suggestions for queries based on the code you are testing.
 
-For example, you can use the  `DataFlowsInto` [query template](./#query-templates) if you need to locate a method that data flows into. The AI will then suggest methods that data flows into within your code based on the Event Graph. This streamlines the process of creating rules and may also spark new query ideas.
+For example, you can use the `DataFlowsInto` [query template](./#query-templates) if you need to locate a method that data flows into. The AI will then suggest methods that data flows into within your code based on the Event Graph. This streamlines the process of creating rules and may also spark new query ideas.
 
 <figure><img src="../../../.gitbook/assets/suggestive_ai_support (1).gif" alt="Suggestive AI support"><figcaption><p>Suggestive AI support</p></figcaption></figure>
 
@@ -138,9 +138,9 @@ When multiple matches are provided in a sequence, the result is a combination of
 For example, using a query like: `PRED:SourceCookie ~"get.*"` will only match on methods that are both returning cookies and have a name that starts with `get` (logical AND of the two conditions that match elements).
 {% endhint %}
 
-#### **Template**
+#### Template
 
-Templates are used for combining one or more conditions provided as their parameters. Templates themselves, just like predicates and value matches, also describe rules for matching elements in the given code. The parameters of templates are provided in chevrons or angle brackets, `<` and `>,` and are comma-separated. The predefined templates are designed for multiple use cases that are defined here.
+Templates are used for combining one or more conditions provided as their parameters. Templates themselves, just like predicates and value matches, also describe rules for matching elements in the given code. The parameters of templates are provided in chevrons or angle brackets, `<` and `>`, and are comma-separated. The predefined templates are designed for multiple use cases that are defined here.
 
 Templates can be used to restrict the matches of their parameters. For example `StringLiteral<"test">` takes all the program elements with value test and only returns the elements that are string literals.
 
@@ -161,7 +161,7 @@ class Test {
 }
 ```
 
-Some templates encode logical relations, like the conjunction `And` and disjunctions `Or`. The following query finds all calls to `println` that receives the string literal test as the first argument:  `And<"java.lang.System.out.println", HasArg1<StringLiteral<"test">>>`
+Some templates encode logical relations, like the conjunction `And` and disjunctions `Or`. The following query finds all calls to `println` that receives the string literal test as the first argument: `And<"java.lang.System.out.println", HasArg1<StringLiteral<"test">>>`
 
 #### Formal syntax
 

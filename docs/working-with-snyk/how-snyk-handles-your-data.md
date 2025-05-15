@@ -148,7 +148,7 @@ Snyk is certified to ISO 27001:2022 with the additional objective controls of IS
 
 <figure><img src="../.gitbook/assets/schellman_iso27001_seal_blue_CMYK_300dpi_jpg.png" alt="ISO 27001 Schellman certification" width="375"><figcaption><p>ISO 27001 Schellman certification</p></figcaption></figure>
 
-## **How Snyk maintains GDPR compliance**
+## How Snyk maintains GDPR compliance
 
 Snyk takes privacy seriously and operates a global privacy program to meet the requirements of the GDPR, CCPA, and other applicable privacy laws. Snyk treats all user data the same way and uses industry-standard technical and organizational measures to secure the information Snyk stores. The Snyk Privacy Program is tailored to meet both legal requirements and your needs.
 

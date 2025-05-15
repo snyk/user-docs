@@ -78,7 +78,7 @@ Selecting the **api** scope with a **Maintainer** role allows Snyk to authentica
 
 ### **Uses of the GitLab integration**
 
-#### **Fix vulnerabilities with Snyk merge requests**
+#### Fix vulnerabilities with Snyk merge requests
 
 When viewing a Snyk test report for a Snyk Project that you own or when looking at a GitLab Project that you are watching with Snyk, you see two options for fixing a vulnerability:
 

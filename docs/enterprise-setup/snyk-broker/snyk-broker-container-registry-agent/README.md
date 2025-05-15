@@ -28,7 +28,7 @@ The Broker Client provides the Container Registry Agent with the connection deta
 
 <figure><img src="../../../.gitbook/assets/mceclip0-8-.png" alt="Highlevel architecture of the Snyk Broker Container Registry Agent"><figcaption><p>High-level architecture of the Snyk Broker Container Registry Agent</p></figcaption></figure>
 
-## **Supported container registries**
+## Supported container registries
 
 Using the Snyk Broker Container Registry Agent you can integrate Snyk with the following open-source container registries:
 
@@ -49,7 +49,7 @@ Artifactory and Nexus are also available as private package repositories with Br
 
 GitHub Container registry and GitLab Container Registry do not follow Docker v2 API; they do not have the /v2/\_catalog endpoint. Thus, it is not possible to list images in repos, and you must manually specify the images you wish to scan.
 
-## **Prerequisites for Container Registry Agent**
+## Prerequisites for Container Registry Agent
 
 To set up the Snyk Broker and the Container Registry Agent, you must have a Broker token. Contact [Snyk Support](https://support.snyk.io) to obtain your Broker token.
 
@@ -136,7 +136,7 @@ docker run --restart=always \
        snyk/container-registry-agent:latest
 ```
 
-## **Container registry-specific configurations**
+## Container registry-specific configurations
 
 The following container registries require specific environment variables, setup, or both.
 
@@ -201,7 +201,7 @@ The resources described can be used as follows so that a single Container Regist
    * CR\_REGION=\<AWS Region of ECR>
    * CR\_EXTERNAL\_ID=\<Optional. An external ID found in the trust relationship condition>
 
-## **Configuring and using systemcheck**
+## Configuring and using systemcheck
 
 You can use the `/systemcheck` endpoint of the Broker Client to verify connectivity between the Broker Client, the Container Registry Agent, and your container registry.
 

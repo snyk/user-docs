@@ -64,7 +64,7 @@ A preview version is not recommended for production environments. It may contain
   * Alpine arm64: [https://downloads.snyk.io/cli/rc/snyk-alpine-arm64](https://downloads.snyk.io/cli/rc/snyk-alpine-arm64)
   * For fips, add `fips` to the base URL, for example, `https://downloads.snyk.io/fips/cli/rc/snyk-linux`&#x20;
 
-### **stable**
+### stable
 
 * Stable: builds are deployed at distinct points in time after additional testing and are considered stable.
 * Version Pattern: v{MAJOR}.{MINOR}.{PATCH}

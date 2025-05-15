@@ -143,7 +143,7 @@ The **Issues** column from the Asset view is designed to present an aggregated c
 
 This classification streamlines prioritization, helping you focus on critical areas and optimize remediation.
 
-## **Coverage Controls**
+## Coverage Controls
 
 The Controls column displays all of the Snyk products that were executed on a specific repository asset. This column displays, in circles, a logo for each Snyk product. The logo icon itself has an indication of the highest severity of issues from this source. For example, if the highest severity issue is **C** (critical), you can see a red dot on the control icon.
 
@@ -162,7 +162,7 @@ Click a Controls logo to see **Last test** details and the **Issues** count, spl
 
 <figure><img src="../.gitbook/assets/image (499).png" alt="Snyk AppRisk - Controls"><figcaption><p>Inventory menu - Controls column</p></figcaption></figure>
 
-## **Tags**
+## Tags
 
 Asset tags are metadata labels applied to repository assets and build artifacts. You can use asset tags to tag based on predefined values, manage and apply security policies, and group assets based on common characteristics. The following asset types are available:
 
@@ -222,11 +222,11 @@ You can use pre-defined system tags and asset tags to mark the repositories that
 | Snyk Essentials detected a new repository created in the last 7 days. | `new repository`  |
 | Snyk Essentials found the code Project with the code owner.           | `codeowners`      |
 
-## **Developers**
+## Developers
 
 You can see the list of all developers that worked on that specific asset. The details list includes the SCM profile details for code committers to the repository asset.
 
-## **Class**
+## Class
 
 Reflects the business criticality of the asset from A (most critical) to D (least critical), as you defined it in the Policies view.&#x20;
 
@@ -301,9 +301,6 @@ The Visibility column lists the visibility status of the repositories as follows
 * **N/A**
 
 Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../manage-issues/reporting/getting-started-with-snyk-reports.md#snyk-reporting-filters).
-
-\
-
 
 ## Actions
 

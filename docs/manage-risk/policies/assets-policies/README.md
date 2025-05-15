@@ -22,7 +22,7 @@ Overview of asset policies
 [Manage assets](../../../manage-assets/) and [assets policies](./) are interconnected. Before setting up any new policy, ensure you have reviewed and filtered your assets from the Inventory menu.
 {% endhint %}
 
-## **Use Cases**
+## Use Cases
 
 You can create policies for organizing the assets, classifying them, and always being up to date with the latest information about an asset.\
 Common use cases for policies include:

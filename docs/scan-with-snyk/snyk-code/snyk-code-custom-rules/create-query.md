@@ -29,7 +29,7 @@ using var cmd = new NpgsqlCommand(sql, conn);
 
 Enter the following queries in the query window and click **Run Query** to see the results.
 
-1. Select `body` by using the query: `“body”`&#x20;
+1. Select `body` by using the query: `“body”`
 
 {% hint style="info" %}
 This query does not select the Body with a capital B. The query language is case-sensitive.
@@ -119,7 +119,7 @@ If the data flow is also going through a sanitizer, you can use a specialized te
 There is nothing language-specific in the query. It would work on similar code in other languages.
 {% endhint %}
 
-## **Net new data flow rule**
+## Net new data flow rule
 
 Create a new rule because Snyk is not aware of the proprietary source built in-house, resulting in missed findings.
 
@@ -139,13 +139,13 @@ Custom [predicates](templates-and-predicates.md) are indicated by writing their 
 
 With this query, you can look for the data flow that originates in `SourceFoo`. A source unknown to Snyk ends up in a known vulnerable cross-site scripting (XSS) Sink and does not pass through a known cross-site scripting (XSS) Sanitizer. Therefore, the assumption is that the data is tainted.
 
-## **Extend a data flow rule**
+## Extend a data flow rule
 
 Recreate a Snyk rule and add a source to the current Snyk known vulnerable source list because they are not being taken into account in the scans, resulting in missed vulnerabilities.&#x20;
 
 Like the [Net new data flow rule](create-query.md#net-new-data-flow-rule), the `Taint` data flow template is used with an `Or` operator. Operators are available to create logical statements for your queries, such as `Or` or `And`.
 
-Run the data flow rule using both the Snyk known sources but also a custom source called [`SourceFoo`](#user-content-fn-1)[^1]_._
+Run the data flow rule using both the Snyk known sources but also a custom source called `SourceFoo`_._
 
 ```javascript
 Taint<Or<PRED:AnySource,"SourceFoo">,PRED:XssSanitizer,PRED:XssSink>
@@ -429,5 +429,3 @@ Taint<
       HasArg1<"testFile.txt" or "testFile.bin">
 >
 ```
-
-[^1]: 

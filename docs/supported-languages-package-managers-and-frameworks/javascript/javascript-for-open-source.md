@@ -62,7 +62,7 @@ If you want to force npm to create a specific lockfile version, use the npm `--l
 npm install --lockfile-version=2
 ```
 
-### **pnpm**
+### pnpm
 
 {% hint style="info" %}
 **Release status**

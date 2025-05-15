@@ -16,7 +16,7 @@ To exclude certain directories or files from the Snyk Code CLI test, you can use
 * The  `snyk ignore --file-path` command. See [Excluding directories and files from the Snyk Code test](exclude-directories-and-files-from-snyk-code-cli-tests.md).
 * Manually creating a `.snyk` file in the tested folder. See [Excluding directories and files from the import process](../../../scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md).
 
-## **Testing a repository from its root folder**
+## Testing a repository from its root folder
 
 To test the current repository folder, in the terminal, enter the following:
 
@@ -38,7 +38,7 @@ Snyk Code tests the `snyk-goof` repository, and displays the vulnerability issue
 
 <figure><img src="../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - 1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (5) (5).png" alt="Example of Snyk Code CLI test results"><figcaption><p>Example of Snyk Code CLI test results</p></figcaption></figure>
 
-## **Testing a repository from a different location**
+## Testing a repository from a different location
 
 To test a repository from another folder, in the terminal, enter the following:
 
@@ -46,7 +46,7 @@ To test a repository from another folder, in the terminal, enter the following:
 snyk code test <path/to/folder>
 ```
 
-The  `path/to/folder` is the full path of the repository you want to test using Snyk Code via the CLI.
+The `path/to/folder` is the full path of the repository you want to test using Snyk Code via the CLI.
 
 For example, to test the **snyk-goof** repository from another directory, enter:
 
@@ -58,4 +58,3 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof
 
 * To explore the test results, see [View Snyk Code CLI results](view-snyk-code-cli-results.md).
 * To work with the test results, see [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html.md).
-

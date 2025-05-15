@@ -26,7 +26,7 @@ The supported archive formats are:
 * tar archives
 * tar with gzip compression algorithm
 
-## **Source code dependencies must be in the scanned folder**
+## Source code dependencies must be in the scanned folder
 
 For the CLI to be able to find dependencies in your source code, enough of the full dependencies source code must be present in the scanned folder.
 

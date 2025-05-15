@@ -60,23 +60,21 @@ You cannot customize the branch name for your PRs. The branch name of your PRs w
 
 ### Use the YAML custom PR template
 
-You can manually upload the YAML file with the name  `snyk_pull_request_template.yaml` to your [Project (repository)](#user-content-fn-1)[^1]. The method varies based on the type of integration.
+You can manually upload the YAML file with the name `snyk_pull_request_template.yaml` to your Project (repository). The method varies based on the type of integration.
 
 * GitHub/ GitHub Enterprise - `/.github/snyk_pull_request_template.yaml`
-* GitLab  - `/.gitlab/snyk_pull_request_template.yaml`
-* Azure DevOps  - `/.azuredevops/snyk_pull_request_template.yaml`
-* Other (such as BitBucket)  - `/.config/snyk_pull_request_template.yaml`
+* GitLab - `/.gitlab/snyk_pull_request_template.yaml`
+* Azure DevOps - `/.azuredevops/snyk_pull_request_template.yaml`
+* Other (such as BitBucket) - `/.config/snyk_pull_request_template.yaml`
 
 If you want to use a custom template for multiple repositories, add the YAML custom template file to each of these repositories.
 
 ## Broker configuration for fetching custom PR templates
 
-If you use  [Snyk Broker](../../../../enterprise-setup/snyk-broker/), you must use a Broker at version 4.188.0 or higher and enable the Broker to fetch the custom PR templates using the`ACCEPT_CUSTOM_PR_TEMPLATES` environment variable.
+If you use [Snyk Broker](../../../../enterprise-setup/snyk-broker/), you must use a Broker at version 4.188.0 or higher and enable the Broker to fetch the custom PR templates using the `ACCEPT_CUSTOM_PR_TEMPLATES` environment variable.
 
 To do this, you must remove `ACCEPT=/path/to/custom.json` and add the following environment variable to your Broker container or deployment:
 
 ```
 ACCEPT_CUSTOM_PR_TEMPLATES=true
 ```
-
-[^1]: 
