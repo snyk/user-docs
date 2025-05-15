@@ -95,13 +95,13 @@ See [Git repositories and Python](git-repositories-and-python.md) for informatio
 
 ### Pipenv and Python versions supported
 
-Supported Python versions are `3.8`, `3.9`, `3.10`, `3.11`, `3.12`.
+Supported Python versions are `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`.
 
 Snyk uses Python version information specified in each `Pipfile` to choose the major and minor versions to use in scanning, for example:
 
 ```python
 [requires]
-python_version = "3.6"
+python_version = "3.8"
 ```
 
 Specific patch versions are ignored; Snyk uses a recent patch version from each series.

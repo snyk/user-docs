@@ -44,25 +44,30 @@ The `.snyk` file must be in the same directory as the Project manifest file.
 Snyk will select which Python version to use according to the `major`, `minor` and `patch` versions specified in the `.snyk` file.
 
 * `Major` version only (for example, 2 or 3): scanned with default `minor` versions - 2.7 or 3.7
-* `Major` and `minor` version (for example, 3.7, 3.8, 3.9, 3.10, 3.11, 3.12): scanned with 3.7, 3.8, 3.9, 3.10, 3.11, 3.12, or 3.13
-* `Major`, `minor` and `patch` version (or example, 3.8.x, 3.9.x, 3.10.x, 3.11.x, 3.12.x): the specific `patch` version is ignored, the Project is scanned with default versions of 3.8, 3.9, 3.10, 3.11, 3.12, or 3.13
+* `Major` and `minor` version (for example, 3.7, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13): scanned with 3.7, 3.8, 3.9, 3.10, 3.11, 3.12, or 3.13
+* `Major`, `minor` and `patch` version (or example, 3.8.x, 3.9.x, 3.10.x, 3.11.x, 3.12.x, 3.13.x): the specific `patch` version is ignored, the Project is scanned with default versions of 3.8, 3.9, 3.10, 3.11, 3.12, or 3.13
 * Any versions specified with an unsupported `minor` version: defaults to 2.7 or 3.7
 
 ## SCM integration and Snyk for Python
+
+{% hint style="warning" %}
+Python packages that are operating system-specific and not supported by Linux may not be compatible with Snyk SCM scans, leading to errors.
+{% endhint %}
 
 To scan your Projects, you must ensure your repository contains the supported manifest files.
 
 ### Pip and SCM repositories
 
-{% hint style="warning" %}
-Private PyPI repos and `file://`  URLs are not supported.
+The following dependencies are not supported and are removed before the file is scanned. The remaining dependencies are included in the scan.
 
-`--index-url,` `-i, file://` and regular URLs in `requirements.txt` files are removed before the file is scanned. Any remaining dependencies should be included in the scan as normal.
-{% endhint %}
-
-{% hint style="warning" %}
-Python packages that are operating system specific and not supported by Linux may not be compatible with Snyk SCM scans, leading to errors.
-{% endhint %}
+* Private PyPI repos
+* `file://`, regular URLs, relative paths, and more generally URIs in `requirements.txt` files
+* Setting a different package index with `--index-url`, `-i`, `--extra-index-url`&#x20;
+* Specifying dependency archive locations with `--find-links`, `-f`
+* Installing a dependency in editable mode with `--editable`, `-e`&#x20;
+* Relying on a version constraints file with `--constraint`, `-c`
+* Including another requirement file with `--requirement`, `-r`&#x20;
+* Specific packages: `virtualenv` for Python 2.7 and 3.7, `pip` for all versions
 
 {% hint style="warning" %}
 Projects with downloaded dependencies totalling more than 10GB are not supported.
@@ -127,4 +132,3 @@ Pipenv dev dependencies are not included in scans by default. To change this, mo
 4. Enable or disable the **Scan Pipenv dev dependencies** option under the **Pipenv** settings.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (146).png" alt="Pipenv dev dependency settings"><figcaption><p>Pipenv dev dependency settings</p></figcaption></figure>
-
