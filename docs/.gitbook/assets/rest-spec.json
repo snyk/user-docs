@@ -947,6 +947,30 @@
         },
         "style": "form"
       },
+      "OrderBy": {
+        "description": "The column name to sort on",
+        "in": "query",
+        "name": "order_by",
+        "schema": {
+          "enum": [
+            "created",
+            "expires"
+          ],
+          "type": "string"
+        }
+      },
+      "OrderDirection": {
+        "description": "Sorting direction ASC/DESC",
+        "in": "query",
+        "name": "order_direction",
+        "schema": {
+          "enum": [
+            "asc",
+            "desc"
+          ],
+          "type": "string"
+        }
+      },
       "OrgId": {
         "description": "Org ID",
         "in": "path",
@@ -29048,6 +29072,12 @@
           },
           {
             "$ref": "#/components/parameters/Search"
+          },
+          {
+            "$ref": "#/components/parameters/OrderBy"
+          },
+          {
+            "$ref": "#/components/parameters/OrderDirection"
           },
           {
             "$ref": "#/components/parameters/OrgId"

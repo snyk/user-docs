@@ -1,3 +1,11 @@
+## 2024-10-15 - Updated 2025-05-15
+
+### GET - `/orgs/{org_id}/policies` - Updated
+- added the new optional `query` request parameter `order_by`
+
+- added the new optional `query` request parameter `order_direction`
+
+
 ## 2024-10-15 - Updated 2025-05-08
 
 ### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
