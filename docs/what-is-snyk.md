@@ -4,12 +4,12 @@ Snyk is a platform that allows you to scan, prioritize, and fix security vulnera
 
 To manage and govern the security program, Snyk gives security teams immediate visibility into coverage and business context across all application assets, smart policies to automate and scale in large environments, and analytics and reporting to measure the performance of your security program.
 
-* **Snyk Open Source** and **Snyk Code**: see [Supported languages and frameworks](supported-languages-package-managers-and-frameworks/).
-* **Snyk Container**: see [Supported operating system distributions](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md).
-* **Snyk Infrastructure as Code**: see [Supported IaC and cloud providers](scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/).
-* **Snyk Essentials**: see [Snyk Essentials](scan-with-snyk/snyk-essentials.md)&#x20;
-* **Snyk AppRisk**: see [Snyk AppRisk](scan-with-snyk/snyk-apprisk.md).
-* **Snyk API & Web**: see [Snyk API & Web](https://snyk.io/product/dast-api-web/).
+* Snyk Open Source and Snyk Code: see [Supported languages and frameworks](supported-languages-package-managers-and-frameworks/).
+* Snyk Container: see [Supported operating system distributions](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md).
+* Snyk Infrastructure as Code: see [Supported IaC and cloud providers](scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/).
+* Snyk Essentials: see [Snyk Essentials](scan-with-snyk/snyk-essentials.md)&#x20;
+* Snyk AppRisk: see [Snyk AppRisk](scan-with-snyk/snyk-apprisk.md).
+* Snyk API & Web: see [Snyk API & Web](https://snyk.io/product/dast-api-web/).
 
 ## The Snyk developer-first approach
 
@@ -23,18 +23,18 @@ A robust security process secures each component where they are built and mainta
 
 ## Use Snyk in your workflow
 
-* **Secure your code**: use [Snyk Open Source](scan-with-snyk/snyk-open-source/) to fix vulnerabilities in your open source dependencies and [Snyk Code](scan-with-snyk/snyk-code/) to fix vulnerabilities in your source code.
-* **Secure your containers**: use [Snyk Container](scan-with-snyk/snyk-container/) to fix vulnerabilities in container images and Kubernetes applications.
-* **Secure your infrastructure**: use [Snyk Infrastructure as Code](scan-with-snyk/snyk-iac/) (IaC) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
+* Secure your code: use [Snyk Open Source](scan-with-snyk/snyk-open-source/) to fix vulnerabilities in your open source dependencies and [Snyk Code](scan-with-snyk/snyk-code/) to fix vulnerabilities in your source code.
+* Secure your containers: use [Snyk Container](scan-with-snyk/snyk-container/) to fix vulnerabilities in container images and Kubernetes applications.
+* Secure your infrastructure: use [Snyk Infrastructure as Code](scan-with-snyk/snyk-iac/) (IaC) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
 
 ## Choose how to run Snyk
 
 You can run Snyk in the following ways:
 
 * [Web](getting-started/snyk-web-ui.md): the Snyk Web UI ([app.snyk.io](https://app.snyk.io)) provides a browser-based experience with functions such as configuration settings, filtering and fixing discovered issues, and reports.
-* [**CLI**](snyk-cli/): the Snyk Command Line Interface enables you to run vulnerability scans on your local machine and integrate Snyk into your pipeline.
+* [**C**LI](snyk-cli/): the Snyk Command Line Interface enables you to run vulnerability scans on your local machine and integrate Snyk into your pipeline.
 * [IDEs](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/): the Snyk IDE integrations enable you to embed Snyk in your development environment.
-* [**API**](snyk-api/): the Snyk API enables you to integrate with Snyk programmatically, tuning Snyk security automation to your specific workflows.
+* [API](snyk-api/): the Snyk API enables you to integrate with Snyk programmatically, tuning Snyk security automation to your specific workflows.
 
 ## What can Snyk integrate with?
 
