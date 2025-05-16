@@ -43,24 +43,26 @@ This utility helps generate data needed to mirror the GitHub.com, GitHub Enterpr
 1. Set the [GitHub.com personal access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) as an environment variable: `export GITHUB_TOKEN=your_personal_access_token`
 2. Run the command to generate organization data:
 
-* **GitHub.com:** `snyk-api-import orgs:data --source=github --groupId=<snyk_group_id>`
-* **GitHub Enterprise:** `snyk-api-import orgs:data --source=github-enterprise --groupId=<snyk_group_id> -- sourceUrl=https://ghe.custom.github.com/`
+* GitHub.com: `snyk-api-import orgs:data --source=github --groupId=<snyk_group_id>`
+* GitHub Enterprise: `snyk-api-import orgs:data --source=github-enterprise --groupId=<snyk_group_id> -- sourceUrl=https://ghe.custom.github.com/`
 
 This creates the organization data in a file `group-<snyk_group_id>-github-<com|enterprise>-orgs.json`
 
 ### GitLab.com and Hosted GitLab
 
-1. Set the [GitLab personal access token](https://docs.gitlab.com/ee/user/profile/personal\_access\_tokens.html) as an environment variable: `export GITLAB_TOKEN=your_personal_access_token`
+1. Set the [GitLab personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) as an environment variable: `export GITLAB_TOKEN=your_personal_access_token`
 2. Run the command to generate organization data:
 
 * **GitLab:** `snyk-api-import orgs:data --source=gitlab --groupId=<snyk_group_id>`
-* **Hosted GitLab:** `snyk-api-import orgs:data --source=gitlab --groupId=<snyk_group_id> -- sourceUrl=https://gitlab.custom.com`
+* Hosted GitLab: `snyk-api-import orgs:data --source=gitlab --groupId=<snyk_group_id> -- sourceUrl=https://gitlab.custom.com`
 
 This creates the organization data in a file `group-<snyk_group_id>-gitlab-orgs.json`
 
 ### Bitbucket Server
 
-**Note that Bitbucket Server is a hosted environment, and you must provide the custom URL for your Bitbucket Server instance in the command.**
+{% hint style="info" %}
+Bitbucket Server is a hosted environment, and you must provide the custom URL for your Bitbucket Server instance in the command.
+{% endhint %}
 
 1. Set the [Bitbucket Server access token](https://www.jetbrains.com/help/youtrack/standalone/integration-with-bitbucket-server.html#enable-youtrack-integration-bbserver) as an environment variable: `export BITBUCKET_SERVER_TOKEN=your_personal_access_token`
 2. Run the command to generate organization data:\
@@ -70,7 +72,9 @@ This creates the organization data in a file `group-<snyk_group_id>-bitbucket-se
 
 ### Bitbucket Cloud
 
-**Note that the URL for Bitbucket Cloud is https://bitbucket.org/.**
+{% hint style="info" %}
+The URL for Bitbucket Cloud is https://bitbucket.org/
+{% endhint %}
 
 1. Set the Bitbucket Cloud Username and Password as environment variables: `export BITBUCKET_CLOUD_USERNAME=your_bitbucket_cloud_username` and `export BITBUCKET_CLOUD_PASSWORD=your_bitbucket_cloud_password`
 2. Run the command to generate organization data:\
@@ -80,7 +84,7 @@ This creates the organization data in a file `group-<snyk_group_id>-bitbucket-cl
 
 ### Azure
 
-**Note that for Azure, this step must be done manually.** Since Azure has no API call for getting the Azure Organizations, the Orgs file must be created manually for the next commands to run. The file should be formatted this way:
+For Azure, this step must be done manually. Since Azure has no API call for getting the Azure Organizations, the Orgs file must be created manually for the next commands to run. The file should be formatted this way:
 
 ```
 {
@@ -103,11 +107,11 @@ After the file is created, you can feed it to the [`orgs:create` command](https:
 
 ## Methods of creating Organizations
 
-Use the generated data file to help create the organizations using the API endpoint [Create a new organization](../../../snyk-api/reference/organizations-v1.md#org) or use the provided utility.
+Use the generated data file to help create the Organizations using the API endpoint [Create a new Organization](../../../snyk-api/reference/organizations-v1.md#org) or use the provided utility.
 
 ### Using the API
 
-Use the generated data to feed into the endpoint [Create a new organization](../../../snyk-api/reference/organizations-v1.md#org) to generate the Organizations within a Group.
+Use the generated data to feed into the endpoint [Create a new Organization](../../../snyk-api/reference/organizations-v1.md#org) to generate the Organizations within a Group.
 
 ### Using the `orgs:create` utility
 

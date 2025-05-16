@@ -70,7 +70,7 @@ git clone the repo, build:
 
 > `go run main.go jira.go jira_utils.go vulns.go snyk.go snyk_utils.go`
 
-**Please report issues.**
+Please report issues.
 
 ## Dependencies
 
@@ -139,8 +139,6 @@ jira:
         key: 
             value: 5
 ```
-
-**Notes:**
 
 * The token is not expected to be present in the config file.
 * Command line arguments override the config file. Example: Using the config file above, running `./snyk-jira-sync-macOs --Org=1234 --configFile=./path/to/folder --token=123` the org ID used by the tool will be 1234 and not a1b2c3de-99b1-4f3f-bfdb-6ee4b4990513.
