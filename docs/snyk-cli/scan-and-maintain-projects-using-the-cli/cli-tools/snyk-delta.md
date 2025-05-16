@@ -1,6 +1,6 @@
 # snyk-delta
 
-This tool provides the means to get the delta between two Snyk Open Source snapshots. This is especially useful when you are running CLI-based scans, such as in your local environment, githooks, and so on.
+This tool provides the means to get the delta between two Snyk Open Source snapshots. This is especially useful when you are running CLI-based scans, such as in your local environment, Git hooks, and so on.
 
 `snyk-delta` compares snapshots to provide details about:
 
@@ -13,8 +13,9 @@ This tool provides the means to get the delta between two Snyk Open Source snaps
 
 ## Prerequisites
 
-* Snyk Enterprise plan (requires  the Snyk API)
+* Snyk Enterprise plan (requires the Snyk API)
 * Your Project to be monitored
+* A `SNYK_TOKEN`, either exported to the environment or provided inline to `snyk-delta`, or the API token set with the `snyk config` command. Run `snyk config get api` to see if the API token is set. OAuth authentication is not supported by `snyk-delta`.
 
 ## Installation
 
@@ -73,11 +74,11 @@ Use `-h` to display help.
 
 When `snyk-delta` compares test results, it tries to find the same Project monitored on the Snyk platform. If no monitored Project is found, `snyk-delta` returns all the issues found by the CLI scan, essentially acting as a pass-through.
 
-The return code is 0 if no issue, 1 if issues are found.
+The return code is 0 if no issue is found, and 1 if issues are found.
 
 ### Caution
 
-Usage as a module requires a list of issues coming from the Snyk CLI. `snyk-delta` is not compatible with data coming straight from Snyk APIs.
+Use as a module requires a list of issues coming from the Snyk CLI. `snyk-delta` is not compatible with data coming straight from Snyk APIs.
 
 ### all-projects
 
@@ -88,7 +89,9 @@ Usage as a module requires a list of issues coming from the Snyk CLI. `snyk-delt
 If you have trouble, you can try the following:
 
 * Run the Snyk `test -d` step first and ensure it works.
-* If you are using the `delta allprojects` script, try removing that and test the Projects individually
+* If you get a 401 error, check to see that you have a valid `SNYK_TOKEN` or run `snyk config get api` .\
+  If you do not want to set the token in the environment, you can provide the `SNYK_TOKEN` as an inline command before the `snyk-delta` but after the | symbol: `snyk test --json | SNYK_TOKEN={token} snyk-delta ….{other arguments}`.
+* If you are using the `delta allprojects` script, try removing that and testing the Projects individually.
 * If no baseline is found, ensure there is an existing monitored Project first, and check the `.git` metadata if you are trying to match against an SCM-monitored Project.
 
 If you need help, contact [Snyk Support](https://support.snyk.io).
