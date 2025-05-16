@@ -6,9 +6,9 @@ Snyk AppRisk is a product that enables Application Security teams to implement, 
 
 Snyk AppRisk builds upon the [capabilities ](snyk-essentials.md#overview)of Snyk Essentials by offering:
 
-* **More sophisticated risk-based prioritization** with runtime Insights - such as whether an app is deployed and public facing, and whether vulnerable packages found by Snyk Open Source are actually used in runtime.
-* **Manage security coverage for secrets detection tools**: Assess coverage for secrets detection alongside Snyk's AST products.
-* **Scalability for diverse environments**: Robust security management across various development environments.
+* More sophisticated risk-based prioritization with runtime Insights - such as whether an app is deployed and public facing, and whether vulnerable packages found by Snyk Open Source are actually used in runtime.
+* Manage security coverage for secrets detection tools: Assess coverage for secrets detection alongside Snyk's AST products.
+* Scalability for diverse environments: Robust security management across various development environments.
 
 The following videos show the capabilities of Snyk AppRisk.
 
@@ -20,9 +20,9 @@ Snyk AppRisk additional capabilities overview
 
 Snyk AppRisk provides additional features beyond [those available in Snyk Essentials](snyk-essentials.md#features):
 
-* [**Integrations**](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) with non-Snyk products to support security coverage and Insights use cases
-* [**Insights**](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md) for runtime context - providing risk factors to help with risk-based prioritization.
-* [**Analytics**](../manage-risk/enterprise-analytics/application-analytics.md) for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
+* [Integrations](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) with non-Snyk products to support security coverage and Insights use cases
+* [Insights](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md) for runtime context - providing risk factors to help with risk-based prioritization.
+* [Analytics](../manage-risk/enterprise-analytics/application-analytics.md) for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
 
 ## Prerequisites
 
@@ -41,10 +41,10 @@ The first import, synchronization, can take up to 24 hours to complete.
 
 ## Permissions
 
-You can access Snyk AppRisk with one of the Group level roles permissions described below. To access the permissions, navigate to **View groups**, then select the **Snyk AppRisk permissions** option.
+You can access Snyk AppRisk with one of the Group level roles permissions described below. To access the permissions, navigate to **View groups** > **Snyk AppRisk permissions**.
 
-* View AppRisk - Grants you a read-only access to AppRisk.
-* Edit AppRisk - Grants you edit access to AppRisk, for example, edit policies, edit asset classification, and add the integration.
+* **View AppRisk** - Grants you a read-only access to AppRisk.
+* **Edit AppRisk** - Grants you edit access to AppRisk, for example, edit policies, edit asset classification, and add the integration.
 
 A Group Administrator has the **Edit AppRisk** permission assigned by default, and a Group Viewer has the **View AppRisk** permission assigned by default.
 
@@ -72,7 +72,4 @@ You can initiate a scan from the Web UI, the CLI, the API, or with PR Checks. Se
 
 ## Capabilities and features
 
-<table><thead><tr><th width="288"></th><th>Snyk Essentials</th><th>Snyk AppRisk</th></tr></thead><tbody><tr><td><strong>Availability</strong></td><td>Included with all Enterprise plans.</td><td>Available for sale; reach out to your account manager for more information.</td></tr><tr><td><strong>Applicability</strong></td><td>Helps Snyk customers better manage their developer-first application security program with Snyk.</td><td>Helps Snyk customers prioritize with Insights risk factors from runtime data sources, and manage and scale their developer-first application security program more holistically.</td></tr><tr><td><strong>Integrations and Data Sources</strong></td><td><ul><li>SCM</li><li>Application Context - Developer Portals, Service Catalogs, CMDBs</li><li>Jira integration</li></ul></td><td><p>In addition to Essentials:</p><ul><li>3rd party secrets</li><li>3rd party Runtime, observability, cloud, CNAPP</li><li>Snyk Runtime Sensor</li></ul></td></tr><tr><td><strong>Discovery and visibility</strong></td><td><ul><li>Discover and classify code-based assets and runtime-based assets (repositories, packages, images).</li><li>Issue counts identified by Snyk</li></ul></td><td><ul><li>Discover and classify code and runtime-based assets (repositories, packages, images).</li><li>Issue counts identified by Snyk and view issue counts identified by third-party tools.</li></ul></td></tr><tr><td><strong>Security coverage management</strong></td><td>Ensure these assets are covered by Snyk.</td><td>Ensure these assets are covered by Snyk or other third-party tools.</td></tr><tr><td><strong>Issue prioritization</strong></td><td>Prioritize with asset and application context, and automate risk management workflows for assets using policies.</td><td><p>Manage risk holistically by:</p><ul><li>Prioritizing issues posing greatest risk with runtime Insights.</li><li>Tracking and reporting upon program health with risk and coverage metrics via Application Analytics.</li></ul></td></tr></tbody></table>
-
-
-
+<table><thead><tr><th width="288"></th><th>Snyk Essentials</th><th>Snyk AppRisk</th></tr></thead><tbody><tr><td>Availability</td><td>Included with all Enterprise plans.</td><td>Available for sale; reach out to your account manager for more information.</td></tr><tr><td>Applicability</td><td>Helps Snyk customers better manage their developer-first application security program with Snyk.</td><td>Helps Snyk customers prioritize with Insights risk factors from runtime data sources, and manage and scale their developer-first application security program more holistically.</td></tr><tr><td>Integrations and Data Sources</td><td><ul><li>SCM</li><li>Application Context - Developer Portals, Service Catalogs, CMDBs</li><li>Jira integration</li></ul></td><td><p>In addition to Essentials:</p><ul><li>3rd party secrets</li><li>3rd party Runtime, observability, cloud, CNAPP</li><li>Snyk Runtime Sensor</li></ul></td></tr><tr><td>Discovery and visibility</td><td><ul><li>Discover and classify code-based assets and runtime-based assets (repositories, packages, images).</li><li>Issue counts identified by Snyk</li></ul></td><td><ul><li>Discover and classify code and runtime-based assets (repositories, packages, images).</li><li>Issue counts identified by Snyk and view issue counts identified by third-party tools.</li></ul></td></tr><tr><td>Security coverage management</td><td>Ensure these assets are covered by Snyk.</td><td>Ensure these assets are covered by Snyk or other third-party tools.</td></tr><tr><td>Issue prioritization</td><td>Prioritize with asset and application context, and automate risk management workflows for assets using policies.</td><td><p>Manage risk holistically by:</p><ul><li>Prioritizing issues posing greatest risk with runtime Insights.</li><li>Tracking and reporting upon program health with risk and coverage metrics via Application Analytics.</li></ul></td></tr></tbody></table>
