@@ -52,7 +52,7 @@ For any image that uses the "latest" tag, Snyk recommends moving to the current 
 
 The **Recommendations for upgrading the base image** view does not show vulnerabilities for base images if they are not in the pool of CBIR tags. This is generally the case for images that have a "latest" image tag or other rolling tags, or other images that are not in the recommendation pool. This does not mean that the base image itself is free from vulnerabilities. To determine what vulnerabilities an image contains, view the scan results for that image.&#x20;
 
-## **Enable CBIR:** configure an image as a custom base image
+## Enable CBIR: configure an image as a custom base image
 
 The following steps explain how to configure custom base images. The team that is responsible for creating and maintaining custom base images for the Organization performs these steps.
 

@@ -76,7 +76,7 @@ After you have connected GitHub to Snyk, you can use:
 * [Commit signing](github.md#commit-signing)
 * [Pull request testing](github.md#pull-request-status-checks)
 
-#### **Project-level security reports**
+#### Project-level security reports
 
 {% hint style="info" %}
 **Feature availability**

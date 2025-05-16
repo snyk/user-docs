@@ -43,7 +43,7 @@ After the integration is in place, you can use capabilities such as:
 * [Project monitoring and automatic fix pull requests](bitbucket-data-center-server.md#project-monitoring-and-automatic-fix-pull-requests)
 * [Pull request testing](bitbucket-data-center-server.md#pull-request-tests)
 
-#### **Project-level security reports**
+#### Project-level security reports
 
 Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository with the required upgrades or patches.
 
