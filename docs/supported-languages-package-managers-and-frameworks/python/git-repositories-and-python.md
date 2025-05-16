@@ -67,7 +67,7 @@ The following dependencies are not supported and are removed before the file is 
 * Installing a dependency in editable mode with `--editable`, `-e`&#x20;
 * Relying on a version constraints file with `--constraint`, `-c`
 * Including another requirement file with `--requirement`, `-r`&#x20;
-* Specific packages: `virtualenv` for Python 2.7 and 3.7, `pip` for all versions
+* Specific packages: `virtualenv` and `pip` for Python 2.7 and 3.7
 
 {% hint style="warning" %}
 Projects with downloaded dependencies totalling more than 10GB are not supported.
