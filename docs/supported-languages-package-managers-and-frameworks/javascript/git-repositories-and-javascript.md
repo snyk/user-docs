@@ -6,9 +6,9 @@ You can import JavaScript repositories from any Git services [supported by Snyk]
 
 Configure language settings for open source and licensing at the Organization level. The configuration settings apply to all Projects in that Organization.
 
-1. In your Snyk account, navigate to **Settings >** **Languages**..
+1. In your Snyk account, navigate to **Settings** > **Languages**..
 2. Under **Languages**, navigate to **JavaScript** and select **Edit settings.**
-3. Configure the settings based on your package manager, **npm** or **Yarn**.
+3. Configure the settings based on your package manager, npm or Yarn.
    * **Scan and fix dev dependencies**: If this is selected, Snyk reads the `devDependencies` property on the `package.json` and reports and fixes any vulnerabilities accordingly.
    * **Require package.json and package-lock.json/yarn.lock files to be in sync**: When this is selected, if the `package.json` and `package-lock.json`/`yarn.lock`files are out-of-sync, Snyk fails the import.
    * **Exclude package-lock.json from being generated when fixing vulnerabilities**: If you are using private mirrors or registries, a Snyk-generated lockfile might not be appropriate for you because Snyk uses the npm registry to update the lockfile. Enterprise customers can use [package repository integrations](../../scan-with-snyk/snyk-open-source/package-repository-integrations/) to ensure lockfiles are updated correctly. Alternatively, this setting allows you to opt out of getting lockfiles generated for you in Snyk fix pull requests and merge requests.
@@ -41,6 +41,5 @@ In Yarn v2, the [zero-installs](https://yarnpkg.com/features/zero-installs) feat
 Zero-installs achieved this by installing all the dependencies of a Project inside of the `.yarn/cache` directory and asking users to commit this to their version control system , allowing the next developer to pull any new dependencies directly from the repo.
 
 {% hint style="info" %}
-If you use the **zero-installs** feature, Snyk Fix PRs do not update the **.yarn/cache** directory. You must run `yarn` to update this directory.
+If you use the zero-installs feature, Snyk Fix PRs do not update the .yarn/cache directory. You must run `yarn` to update this directory.
 {% endhint %}
-

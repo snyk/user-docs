@@ -101,7 +101,7 @@ Snyk offers fix advice, including recommendations for upgrading vulnerable packa
 
 Fix PRs can only be created for dependencies whose versions are managed in the POM file where the issue is reported.
 
-If the version or dependency is managed in a parent BOM, then even though Snyk sees that it could fix the vulnerable path by changing the version,  it cannot apply the fix.
+If the version or dependency is managed in a parent BOM, then even though Snyk sees that it could fix the vulnerable path by changing the version, it cannot apply the fix.
 
 ## Package Registry Integrations (Artifactory/Nexus) - Maven
 
@@ -114,7 +114,3 @@ Artifactory and Nexus Package Registry integrations are available to Snyk Enterp
 {% hint style="info" %}
 If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis is best performed using CLI as the build system will retrieve the dependencies and be present locally.
 {% endhint %}
-
-## Troubleshooting
-
-If you need help, [contact Snyk Support](https://support.snyk.io).

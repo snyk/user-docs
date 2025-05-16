@@ -26,7 +26,7 @@ To define which Python minor version Snyk uses to test your Git-imported Pip Pro
 To define the Python version for all Projects in an Organization:
 
 1. Log in to your Snyk account and navigate to the relevant Group and Organization.
-2. Select **Settings**, then **Snyk Open Source**.
+2. Select **Settings** > **Snyk Open Source**.
 3. Select **Edit settings** for **Python**.
 4. From the **Python version** dropdown, select the Python version to use when testing Projects for this Organization.
 
@@ -102,7 +102,7 @@ Snyk regards non-dev dependencies to be those declared in `tool.poetry.dependenc
 Poetry dev dependencies are not included in scans by default. To change this, modify your settings as follows:
 
 1. Log in to your Snyk account and navigate to the relevant Group and Organization.
-2. Select **Settings**, then **Languages**.
+2. Select **Settings** > **Languages**.
 3. Select **Edit settings** for **Python**.
 4. Enable or disable the **Scan Poetry dev dependencies** option under the **Poetry dev dependencies** settings.&#x20;
 
@@ -127,7 +127,7 @@ You can choose whether Snyk should include dependencies specified in `[dev-packa
 Pipenv dev dependencies are not included in scans by default. To change this, modify your settings as follows:
 
 1. Log in to your Snyk account and navigate to the relevant Group and Organization.
-2. Select **Settings**, then **Languages**.
+2. Select **Settings** > **Languages**.
 3. Select **Edit settings** for **Python**.
 4. Enable or disable the **Scan Pipenv dev dependencies** option under the **Pipenv** settings.&#x20;
 

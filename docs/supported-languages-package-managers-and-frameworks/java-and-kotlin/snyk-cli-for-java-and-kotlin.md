@@ -2,14 +2,12 @@
 
 Use the `snyk test` command to test Maven and Gradle Projects as follows:
 
-* **Snyk CLI with Gradle**: To build the dependency graph, Snyk integrates with Gradle and inspects the dependencies reported by the tool. The following manifest files are supported: `build.gradle` (Groovy DSL) and `build.gradle.kts` (Kotlin DSL).
-* **Snyk CLI with Maven**: To build the dependency tree, Snyk integrates with Maven and inspects the dependencies reported by the tool. The following manifest files are supported: `pom.xml`.
+* Snyk CLI with Gradle: To build the dependency graph, Snyk integrates with Gradle and inspects the dependencies reported by the tool. The following manifest files are supported: `build.gradle` (Groovy DSL) and `build.gradle.kts` (Kotlin DSL).
+* Snyk CLI with Maven: To build the dependency tree, Snyk integrates with Maven and inspects the dependencies reported by the tool. The following manifest files are supported: `pom.xml`.
 
 This page provides details about how to use the Snyk CLI help for Maven and Gradle Projects and also provides a [workaround for `ant` and `ivy`](snyk-cli-for-java-and-kotlin.md#workaround-for-ant-and-ivy).
 
 The following table lists options to start scanning your dependencies. It covers the `snyk test` and `snyk monitor` commands. For a list of all the options for these commands, see the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md).&#x20;
-
-
 
 | Package manager-environment | Test help                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Monitor help                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -20,16 +18,16 @@ The following table lists options to start scanning your dependencies. It covers
 
 ## CLI help for Maven Projects
 
-A **Maven aggregate Project** is one that uses modules and inheritance.
+A Maven aggregate Project is one that uses modules and inheritance.
 
 When scanning these types of Projects, Snyk performs a compile to ensure all modules are fixable by the Maven reactor.
 
-*   To **scan aggregate Projects**, use the `--maven-aggregate-project` option:
+*   To scan aggregate Projects, use the `--maven-aggregate-project` option:
 
     ```
     snyk test --maven-aggregate-project
     ```
-*   To **scan non-aggregate Projects**, use the `--all-projects` option:
+*   To scan non-aggregate Projects, use the `--all-projects` option:
 
     ```
     snyk test --all-projects
@@ -119,20 +117,20 @@ In these situations, the Snyk scan fails with an error from Gradle which may con
 
 To avoid such conflicts:
 
-*   **Use a specific configuration(s):** if you know of a build configuration that has all the required attributes and the configuration is identical across all sub-projects included in the test, specify that configuration.\
+*   Use a specific configuration(s): if you know of a build configuration that has all the required attributes and the configuration is identical across all sub-projects included in the test, specify that configuration.\
     For example:
 
     ```
     --configuration-matching=prodReleaseRuntimeClasspath
     ```
-*   **Explicitly specify the dependency configuration:** modify intra-project dependencies in your build.gradle file(s) to use a specific configuration
+*   Explicitly specify the dependency configuration: modify intra-project dependencies in your build.gradle file(s) to use a specific configuration
 
     ```
       dependencies {
           implementation project(path: ':mymodulewithvariants', configuration: 'default')
       }
     ```
-*   **Suggest configuration attributes:** if you receive an error when running the command, the error may indicate which attribute values are available, while the error details from Gradle also indicate which dependency variants match which attributes. Using these details, add the attribute filter option.\
+*   Suggest configuration attributes: if you receive an error when running the command, the error may indicate which attribute values are available, while the error details from Gradle also indicate which dependency variants match which attributes. Using these details, add the attribute filter option.\
     For example:
 
     ```
@@ -159,7 +157,7 @@ Gradle Error (short): > Could not resolve all dependencies for configuration ':c
 ```
 {% endcode %}
 
-The **compileOnly configuration** **has been deprecated,** and even if your Project successfully generates a lockfile, the `compileOnly` state is not included because this configuration cannot be resolved.&#x20;
+The **compileOnly** configuration has been deprecate&#x64;**,** and even if your Project successfully generates a lockfile, the `compileOnly` state is not included because this configuration cannot be resolved.&#x20;
 
 Only resolvable configurations compute a dependency graph. To solve this issue, Snyk suggests you update your `build.gradle` containing `dependencyLocking` logic with the following instructio&#x6E;**:**
 

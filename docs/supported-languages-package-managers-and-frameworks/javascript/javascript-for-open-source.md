@@ -22,7 +22,7 @@ The following table provides a matrix for npm lockfile versions and Snyk feature
 
 #### **Peer dependencies**
 
-In npm v7 and above, the behavior of **peer dependencies** changes if they are being installed by default. To match this in npm v7+ projects, Snyk assumes peer dependencies are installed and scans them by default.
+In npm v7 and above, the behavior of peer dependencies changes if they are being installed by default. To match this in npm v7+ projects, Snyk assumes peer dependencies are installed and scans them by default.
 
 An npm v7+ project ignores peer dependencies only if they are explicitly marked as optional in the `peerDependenciesMeta` object in the `package.json` as shown here for `cache-manager`:
 
@@ -104,7 +104,7 @@ Because different versions of Yarn have different feature sets, there are differ
 
 ### Lerna
 
-Snyk does not fully support **Lerna**. If your project is set up using Yarn Workspaces, you can scan the project in the same way you scan any Yarn Workspaces project.
+Snyk does not fully support Lerna. If your project is set up using Yarn Workspaces, you can scan the project in the same way you scan any Yarn Workspaces project.
 
 If your Lerna project is set up using Yarn Workspaces, you can run `snyk test` and `snyk monitor` as follows.
 

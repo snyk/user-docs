@@ -4,8 +4,6 @@
 
 Refer to the [Python detail](./) for supported package managers and features.
 
-If you need help, [contact Snyk Support](https://support.snyk.io).
-
 {% hint style="info" %}
 Depending on your plan, some features may not be available. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}

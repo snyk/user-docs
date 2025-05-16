@@ -2,7 +2,7 @@
 
 ## Applicability
 
-Snyk for VB.NET is supported **only for Snyk Code**.
+Snyk for VB.NET is supported only for Snyk Code.
 
 Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
 

@@ -127,7 +127,3 @@ If you are using a virtual environment, you must add the `PYTHON_PATH` to the **
 However, if you have manifest files in other directories within the root of the Project, Snyk cannot identify them. For Snyk to find them, you must use the `--all-projects` option. Snyk then recursively searches each Project directory to find all the manifest files.
 
 If those directories each require a different virtual environment to run, the Snyk scan will not be successful because it will use one virtual environment to search for installed dependencies. In this case, it is best to use the CLI or the Git integration rather than an IDE to get vulnerability information on all the dependencies listed in each Project directory.
-
-## Troubleshooting Snyk for Python
-
-If you need help, [contact Snyk Support](https://support.snyk.io).

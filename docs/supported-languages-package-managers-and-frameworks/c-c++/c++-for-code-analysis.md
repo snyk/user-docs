@@ -13,5 +13,3 @@ Refer to the [C/C++ details ](./)for supported frameworks, libraries, and featur
 {% hint style="warning" %}
 If you use macros, your results may include false positives and false negatives.
 {% endhint %}
-
-If you need help, raise a case with[ Snyk Support](https://support.snyk.io). Free plan users can create a discussion post.

@@ -2,7 +2,7 @@
 
 ## Applicability
 
-C/C++ is supported for **Snyk Open Source** and **Snyk Code**.
+C/C++ is supported for Snyk Open Source and Snyk Code.
 
 Specific considerations apply for the [Snyk CLI for open-source C++ scans](snyk-cli-for-open-source-c++-scans.md). [Guidance for Snyk for C/C++](guidance-for-snyk-for-c-c++.md) is provided.
 
@@ -62,5 +62,3 @@ The following features are supported in Snyk for C/C++:
 | <ul><li>License scanning</li><li>Reports</li></ul> | Interfile analysis |
 
 PR Checks configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and will not alert for C/C++ or other languages that do not support FixPRs.
-
-If you need help, [contact Snyk Support](https://support.snyk.io).

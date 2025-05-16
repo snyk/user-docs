@@ -26,10 +26,10 @@ For more information on package registry integrations, including Maven, see the 
 
 For open source, developers may have decided to use Maven or Gradle, which may impact how you best utilize Snyk to perform the analysis
 
-*   **Using** **Maven, or Gradle with a gradle.lockfile**:
+*   Using Maven, or Gradle with a gradle.lockfile:
 
     The Git code repository integration is a great way to use Snyk and get visibility or you may decide to use CLI/IDE or CI/CD integrations to test/gate/monitor, or do both!
-*   **Using Gradle** **without a Gradle.lockfile**:
+*   Using Gradle without a Gradle.lockfile:
 
     The full dependency tree may not be apparent or artifacts may be pulled in from external resources, so the CLI/IDE workflow (for local scans), and CI/CD is the recommended approach for analysis, otherwise you may not have a complete view of issues and dependencies.
 
@@ -94,34 +94,34 @@ Use the `--help` option in the CLI for details of Snyk CLI commands.
 #### Testing your own code:
 
 * Framework support - see [Snyk Code - Supported languages and frameworks](../).
-* Use the **snyk code test** command from the root of the project to perform source code analysis.
-* Use **--scan-all-unmanaged --all-projects** to recursively find all jars under the present working directory.
+* Use the `snyk code test` command from the root of the project to perform source code analysis.
+* Use `--scan-all-unmanaged --all-projects` to recursively find all jars under the present working directory.
 
 #### Open Source libraries
 
 **Maven**
 
-The **snyk test** command tests the first manifest it can find, and scans that singular entry point. To scan all manifests, follow these instructions:
+The `snyk test` command tests the first manifest it can find, and scans that singular entry point. To scan all manifests, follow these instructions:
 
-* To scan aggregate projects, use the **--maven-aggregate-project** option\
-  (for example, **snyk test --maven-aggregate-project**)
-* To scan for all projects use **--all-projects** option:\
-  (that is, **snyk test --all-projects**)
+* To scan aggregate projects, use the `--maven-aggregate-project` option\
+  (for example, `snyk test --maven-aggregate-project`)
+* To scan for all projects use `--all-projects` option:\
+  (that is, `snyk test --all-projects`)
 
 Snyk scans active profiles activated by default.
 
-* Any additional Maven arguments can be passed, a common one is a non-standard settings.xml location. For example, **snyk test -- -s path/to/settings.xml**
-* To scan a specific configuration, test a specific Maven profile using **-P \[name]**. For example, use **snyk test -- -P prod** to scan the **prod** configuration.
+* Any additional Maven arguments can be passed, a common one is a non-standard settings.xml location. For example, `snyk test -- -s path/to/settings.xml`
+* To scan a specific configuration, test a specific Maven profile using `-P [name]`. For example, use **`snyk test -- -P prod`** to scan the `prod` configuration.
 
 **Gradle**
 
-By default, Snyk CLI scans only the current project (the project in the root of the current folder), or the project that is specified by **--file=path/to/build.gradle**.
+By default, Snyk CLI scans only the current project (the project in the root of the current folder), or the project that is specified by `--file=path/to/build.gradle`.
 
-Note that **--all-projects** can be used across all package managers, which also includes the behaviors of **--all-sub-projects**, mentioned below.
+`--all-projects` can be used across all package managers, which also includes the behaviors of **--**`all-sub-projects`, mentioned below.
 
-* To scan all projects at once (recommended), use the **--all-sub-projects** option:\
-  (that is, **snyk test --all-sub-projects**). Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
-* To scan a specific project (for example, myapp), use **--sub-project=** (that is, **snyk test --sub-project=myapp**).
+* To scan all projects at once (recommended), use the `--all-sub-projects` option:\
+  (that is, `snyk test --all-sub-projects`). Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
+* To scan a specific project (for example, myapp), use `--sub-project=` (that is, `snyk test --sub-project=myapp`).
 
 To test specific configurations, see detailed examples here [Snyk for Java and Kotlin](./).
 
@@ -153,8 +153,8 @@ For more details, navigate to the [Fixing vulnerabilities on Maven projects](htt
 
 Additionally, the Snyk team has built plugins to make it easy to integrate Snyk into your workflows:
 
-* [**Gradle Plugin**](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) **(Community project)**
-* [**Maven Plugin**](https://snyk.io/blog/snyk-maven-plugin-integrated-security-vulnerability-scanning-for-developers/)
+* [Gradle Plugin](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) (Community project)
+* [Maven Plugin](https://snyk.io/blog/snyk-maven-plugin-integrated-security-vulnerability-scanning-for-developers/)
 
 ## Additional security topics for Java developers
 

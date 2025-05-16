@@ -6,5 +6,3 @@ For further details, see the [`setuptools` automatic package discovery documenta
 
 Refer to the [Python detail](./) for supported frameworks, libraries, and features.
 
-If you need help, [contact Snyk Support](https://support.snyk.io).
-

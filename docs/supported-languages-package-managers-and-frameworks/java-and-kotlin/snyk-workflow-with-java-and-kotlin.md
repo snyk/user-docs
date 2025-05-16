@@ -2,8 +2,8 @@
 
 The Snyk team has built plugins to integrate Snyk into your workflows:
 
-* [**Gradle Plugin**](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) **(Community project)**
-* [**Maven Plugin**](https://snyk.io/blog/snyk-maven-plugin-integrated-security-vulnerability-scanning-for-developers/)
+* [Gradle Plugin](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) (Community project)
+* [Maven Plugin](https://snyk.io/blog/snyk-maven-plugin-integrated-security-vulnerability-scanning-for-developers/)
 
 ## Validating, Monitoring, Alerting, and Gating
 
@@ -32,7 +32,7 @@ Snyk can passively monitor and provide a QA gate by failing build checks during 
 
 Snyk provides flexible capabilities, including:
 
-* [Gradle Plugins](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) **(Community project)**
+* [Gradle Plugins](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) (Community project)
 * [Maven Plugins](https://snyk.io/blog/snyk-maven-plugin-integrated-security-vulnerability-scanning-for-developers/)
 * Dedicated plugins for Jenkins, Circle CI, and others (see relevant marketplaces)
 * Using [Github Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/)

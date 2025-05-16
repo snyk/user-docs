@@ -113,5 +113,3 @@ The following features are supported in Snyk for Java and Kotlin:
 | Snyk Open Source                                                           | Snyk Code                                                                                                                                                   |
 | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <ul><li>Reports</li><li>Fix PRs (Maven)</li><li>License scanning</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis - Kotlin fully supported</li><li>Interfile analysis - Android partially supported</li></ul> |
-
-If you need help, [contact Snyk Support](https://support.snyk.io).

@@ -55,8 +55,6 @@ Some Gradle features are not supported, and this may influence the scan results.
 * Custom configuration in [buildSrc](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources) directories
 * Dependencies introduced via [plugins](https://docs.gradle.org/current/userguide/plugins.html).
 
-If you see unexpected results from this Early Access feature, contact [Snyk support](https://support.snyk.io).
-
 ### How to enable improved Gradle SCM scanning
 
 {% hint style="warning" %}
@@ -78,8 +76,8 @@ After Improved Gradle SCM scanning is enabled:
 
 Configure language settings for your open source and licensing at the Organization level. The configuration settings apply to all Projects in that Organization.
 
-1. Open Snyk Web UI and go to **Settings >** **Languages** section.
-2. Under **Languages**, go to **Java** and select **Edit settings.**
+1. Open Snyk Web UI and navigate to **Settings** > **Languages**.
+2. Under **Languages**, navigate to **Java** and select **Edit settings.**
 3. Configure the settings for **Maven**.
 4. **Update Settings** to save changes.
 

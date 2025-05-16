@@ -6,20 +6,18 @@ In the .NET ecosystem, there are multiple levels of dependencies, some of which 
 
 Snyk resolves dependencies differently in the Snyk CLI and the Source Code Management (SCM) systems such as GitHub.
 
-**In the CLI,** if you manage your Project dependencies using `PackageReference`, Snyk scans your `obj/project.assets.json`. if you manage your dependencies using `packages.config`, Snyk scans the `packages` directory. This approach contributes to accuracy of scan results.
+In the CLI, if you manage your Project dependencies using `PackageReference`, Snyk scans your `obj/project.assets.json`. if you manage your dependencies using `packages.config`, Snyk scans the `packages` directory. This approach contributes to accuracy of scan results.
 
 {% hint style="info" %}
 Runtime dependencies (provided by the runtime environment also known as "meta-packages") are resolved more accurately in the CLI if the host machine uses a similar runtime SDK to the server running the app.
 {% endhint %}
 
-**In an SCM integration**, scanning uses a different process, as the generated files mentioned above are not available. To overcome this, Snyk follows the NuGet dependency [resolution algorithm](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution) to construct a dependency tree.
-
-For further information on .NET automated fixes, see the [Snyk blog](https://snyk.io/blog/automated-vulnerability-fixes-dot-net-dependencies).
+In an SCM integration, scanning uses a different process, as the generated files mentioned above are not available. To overcome this, Snyk follows the NuGet dependency [resolution algorithm](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution) to construct a dependency tree.
 
 ## Build-time versus runtime dependencies
 
-* **Build-time dependency**: Snyk understands build-time dependency to be resolved during build time and not susceptible to change at runtime.
-* **Runtime dependency**: Snyk understands runtime dependency to be resolved against the installed runtime, for example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . Snyk sometimes refers to runtime dependencies as meta-packages.
+* Build-time dependency: Snyk understands build-time dependency to be resolved during build time and not susceptible to change at runtime.
+* Runtime dependency: Snyk understands runtime dependency to be resolved against the installed runtime, for example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . Snyk sometimes refers to runtime dependencies as meta-packages.
 
 You can choose one of the following actions to address **vulnerabilities from runtime dependencies**. These vary between the SCM and the CLI.
 
@@ -58,12 +56,12 @@ For framework support, see [Snyk Code - Supported languages and frameworks](../)
 **Target Frameworks**: Snyk identifies the target frameworks and presents results against each identified version using the git integration.
 
 **Development dependencies**: Snyk generally does not scan developer dependencies, as they are not usually pushed to production and are seen as "noise." \
-Enable visibility in Nuget git import using the **Settings > Languages > .Net** settings (see [Git settings for .NET](./#git-settings-for-.net)). \
+Enable visibility in Nuget git import using the **Settings** > **Languages** > **.Net** settings (see [Git settings for .NET](./#git-settings-for-.net)). \
 Snyk scans and fixes the build and `development Dependency` sections of your [`*.proj`](#user-content-fn-1)[^1], `packages.config` and `project.json` files
 
-**Lock files**: Currently, **packages-lock.json** is not supported. Snyk interacts with the build system to determine the installed dependencies.
+Lock files: Currently, **packages-lock.json** is not supported. Snyk interacts with the build system to determine the installed dependencies.
 
-**PackageReference:** Snyk currently requires a version attribute. If your Project lacks this, Snyk may fail to open a PR for your Project.
+PackageReference: Snyk currently requires a version attribute. If your Project lacks this, Snyk may fail to open a PR for your Project.
 
 **Git analysis**
 
@@ -91,7 +89,7 @@ The CLI supports the following config files:
 
 Snyk can scan project.assets.json to determine dependencies, but the file must be generated. Similarly, if you point to the solution file (.sln), you must generate the file first.
 
-Run "**dotnet restore"** to generate the necessary `project.assets.json` before running the "**snyk test**" command.
+Run `dotnet restor`**e** to generate the necessary `project.assets.json` before running the `snyk test` command.
 
 The solution file contains pointers to the files necessary to perform the analysis. Note that the projects themselves must have `project.assets.json` files to be scanned. If you want Snyk to use the solution file as an entry point for scanning, you can point the Snyk CLI to the solution file by using `--file=<filename>.sln`.
 
@@ -99,7 +97,7 @@ Where multiple target frameworks are used in the same Project, the CLI scan retu
 
 **packages.config**
 
-Run "**nuget install -OutputDirectory packages**" before running the **snyk test** command.
+Run `nuget install -OutputDirectory packages` before running the **`snyk test`** command.
 
 {% hint style="info" %}
 Runtime dependencies (provided by the runtime environment known as "meta-packages") are resolved more accurately in the CLI if the host machine uses a similar runtime SDK to the server running the app.
@@ -161,7 +159,5 @@ The following is a collection of articles from the Snyk Security team and Develo
 * [Snyk Blog](https://snyk.io/blog/)
 * [Snyk for .Net](./)
 * [Best Practices for Containerizing .NET applications](https://snyk.io/blog/best-practices-for-containerizing-net-applications/)
-
-
 
 [^1]: 

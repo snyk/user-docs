@@ -7,5 +7,3 @@ The following summarizes Snyk support for the Composer package manager:
 | Package managers / Features         | CLI support | SCM support | License scanning | Fix PRs |
 | ----------------------------------- | ----------- | ----------- | ---------------- | ------- |
 | [Composer](https://getcomposer.org) | ✔︎          | ✔︎          | ✔︎               |         |
-
-If you need help, [contact Snyk Support](https://support.snyk.io).

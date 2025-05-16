@@ -27,15 +27,11 @@ Snyk does not hook into a build nor rely on a build to perform scanning. Snyk pe
 
 No additional options are required. The Snyk plugin has views within the IDE for displaying results.
 
-**With Snyk Open Source**&#x20;
+**With Snyk Open Source**
 
 Under **Additional Parameters** in the IDE settings, enter the `--unmanaged` option to scan for C/C++ open source dependencies.
 
-<div align="left">
-
-<figure><img src="https://lh6.googleusercontent.com/1j-2sJjuVejBJ6nARpaAx2uhdhqT7G3XyNCGZqFxBXJV9ujqRHBYiwInr_mFT7SH-fnhG6iUysKxzYKluPG1f3xUKyb2q-JycA_0QevtaS3hdm4I7-QT7M5benqzWkIe5N-7L3czV-F84_xUR5yl7k0" alt="Scan for dependencies"><figcaption><p>Scan for dependencies</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="https://lh6.googleusercontent.com/1j-2sJjuVejBJ6nARpaAx2uhdhqT7G3XyNCGZqFxBXJV9ujqRHBYiwInr_mFT7SH-fnhG6iUysKxzYKluPG1f3xUKyb2q-JycA_0QevtaS3hdm4I7-QT7M5benqzWkIe5N-7L3czV-F84_xUR5yl7k0" alt="Scan for dependencies"><figcaption><p>Scan for dependencies</p></figcaption></figure></div>
 
 ### CLI Tips and tricks
 
@@ -65,7 +61,7 @@ snyk test --unmanaged
 
 See [Snyk for C/C++](./) for details.
 
-* To test, ensure the open source source code is present; it may be placed in a vendor folder.&#x20;
+* To test, ensure the open source source code is present; it may be placed in a vendor folder.
 * If you precompile open source, the open source code must still be present. For Snyk to make an accurate comparison with its existing knowledge base, the open source code must remain present.
 
 Similarly, for monitoring and sharing reporting, use the following command:
@@ -74,10 +70,10 @@ Similarly, for monitoring and sharing reporting, use the following command:
 snyk monitor --unmanaged --org=<org-id>
 ```
 
-where `org-id` is found under your Organization settings in the Snyk web interface, Although the Organization ID is not required, it is strongly recommended that you use it. As with Snyk Code, you can generate reports using the [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts.&#x20;
+where `org-id` is found under your Organization settings in the Snyk web interface, Although the Organization ID is not required, it is strongly recommended that you use it. As with Snyk Code, you can generate reports using the [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) plugin to generate reporting artifacts.
 
 * For individual or personal scans, use the CLI or IDE, and use the `snyk monitor --unmanaged` command to upload results.
-  * However, Snyk recommends that you send these results to your personal folder and disable the scheduled scanning in the Project settings to ensure an individual scan does not cause noise.&#x20;
+  * However, Snyk recommends that you send these results to your personal folder and disable the scheduled scanning in the Project settings to ensure an individual scan does not cause noise.
   * This provides license and policy information in a viewable state.
 * For automated scans, such as CI/CD, use `snyk monitor --unmanaged` and send results to the Organization of your choice. This provides license and policy information in a viewable state.
 
@@ -97,26 +93,17 @@ The list is printed before the issues list, as shown in the following image:
 
 #### **License policy**
 
-{% hint style="info" %}
-**Feature availability**\
-The [License Compliance](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md) feature is available on the Snyk Team or Enterprise [plan](https://snyk.io/plans).
-{% endhint %}
+This feature allows a company to create a license policy for Open Source applications, indicating what licenses are not approved for use. When Snyk detects a match for a license that is not approved, Snyk sends an alert. This alert contains the name of the license and license policy text.
 
-This feature allows a company to create a license policy for Open Source applications, indicating what licenses are not approved for use. When Snyk detects a match for a license that is not approved, Snyk sends an alert. This alert contains the name of the license and license policy text.&#x20;
-
-License policy text is associated with the license issue by your administrators.  This text provides custom direction on what to do or why the license issue is contrary to the policy.
+License policy text is associated with the license issue by your administrators. This text provides custom direction on what to do or why the license issue is contrary to the policy.
 
 The following shows a license policy text example at the bottom of the screen, giving you directions on what to do if the license is found.
 
-<div align="left">
-
-<figure><img src="https://lh4.googleusercontent.com/lIn5JFEyaZaTNMVenBoeGIgTpC6YHxpmAjK947z5ISPlHV1rlOvPNCLyzXxsGNj65AAlGn6ff9dF4lHVsVFYMaKXWC939tasD91k98xcDv_Ske6Dz7goMXl5lByyqg6ptvvqaK0UEqLSdzUU9GKrW4U" alt="License policy text example"><figcaption><p>License policy text example</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="https://lh4.googleusercontent.com/lIn5JFEyaZaTNMVenBoeGIgTpC6YHxpmAjK947z5ISPlHV1rlOvPNCLyzXxsGNj65AAlGn6ff9dF4lHVsVFYMaKXWC939tasD91k98xcDv_Ske6Dz7goMXl5lByyqg6ptvvqaK0UEqLSdzUU9GKrW4U" alt="License policy text example"><figcaption><p>License policy text example</p></figcaption></figure></div>
 
 #### **Alternate testing options**
 
-If you develop advanced dependency management strategies, you might not use the standard and frequently used package managers. For that reason, Snyk has provided test APIs. In the case of C++, if you know the open-source packages and versions that are included in the application but do not have the source code, you can use the endpoint [List issues for a package](../../snyk-api/reference/issues.md#orgs-org\_id-packages-purl-issues) to do the analysis.
+If you develop advanced dependency management strategies, you might not use the standard and frequently used package managers. For that reason, Snyk has provided test APIs. In the case of C++, if you know the open-source packages and versions that are included in the application but do not have the source code, you can use the endpoint [List issues for a package](../../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues) to do the analysis.
 
 ### **Options and plugins**
 

@@ -10,10 +10,8 @@ Refer to the [Ruby details](./) for supported package managers and features.
 **Feature availability**\
 Depending on your plan, some features may not be available. For more information, see  [plans and pricing](https://snyk.io/plans/).
 
-Platform-specific packages are not supported. If these are present in your `Gemfile.lock`, this can cause an invalid Fix PR to be created. If possible, use the non-platform-specific variant of a package.
+Platform-specific packages are not supported. If these are present in your `Gemfile.lock`, this can cause an invalid Fix PR to be created. If possible, use the non-platform-specific variant of a package
 {% endhint %}
-
-
 
 ## Bundler support
 
@@ -47,4 +45,3 @@ For Ruby versions < 3.2, Snyk does not support pinning a specific version of Rub
 Snyk can fix vulnerabilities by updating vulnerable gems using `bundle update`after modifying your Gemfile, adhering to the rules you have specified there as far as possible.
 
 In some scenarios, Snyk cannot upgrade all dependencies to non-vulnerable versions. In this case, consider updating the rules in your Gemfile.
-

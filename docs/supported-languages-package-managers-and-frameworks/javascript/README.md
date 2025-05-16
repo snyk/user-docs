@@ -123,5 +123,3 @@ The following features are supported in Snyk for JavaScript:
 | Snyk Open Source                                                   | Snyk Code                                                                 |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------- |
 | <ul><li>Fix PRs</li><li>License scanning</li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
-
-If you need help, [contact Snyk Support](https://support.snyk.io).
