@@ -53,7 +53,7 @@ Alternatively, if you want to scan your code without authenticating to your sour
 
 ### Manual process
 
-You can add an integration to Snyk manually at any point, from the Snyk Web UI. To do this, navigate to **Integrations > Source Control**. For more information, see [Integrate with Snyk](../integrate-with-snyk/).
+You can add an integration to Snyk manually at any point, from the Snyk Web UI. To do this, navigate to **Integrations** > **Source Control**. For more information, see [Integrate with Snyk](../integrate-with-snyk/).
 
 {% hint style="info" %}
 If an integration is already configured for your Organization, it is marked as **Configured**.
@@ -71,7 +71,7 @@ Free and Team plan and trial users have access only to this personal token under
 
 To obtain your personal Snyk API token:
 
-1. Log in to Snyk and navigate to your personal **account settings**.&#x20;
+1. Log in to Snyk and navigate to your personal account settings.&#x20;
 2. In your **General** settings, under API Token, select **click to show**.
 3. Highlight and copy your API key.
 
