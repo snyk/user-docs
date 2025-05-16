@@ -23,7 +23,7 @@ If you do not have an existing `.snyk` file, you can create one and populate it 
 `version: v1.25.0`
 
 * You must set the `version` to `v1.25.0` as this is the current policy schema version.
-* The ignore block or blocks must follow the relevant syntax as shown in the [description of the `ignore` command](../../snyk-cli/commands/ignore.md#description) or the examples on this page.
+* The ignore block or blocks must follow the relevant syntax as shown in the [description of the `ignore` command](../../snyk-cli/commands/ignore.md#usage-and-description) or the examples on this page.
 
 For more information, see [Syntax of the `.snyk` file](the-.snyk-file.md#syntax-of-the-.snyk-file).
 
@@ -91,7 +91,7 @@ For more information about Python version support, see [Python version support](
 
 For more information about using the `.snyk` file with Open Source Projects, see the following:
 
-[Ignore vulnerabilities using the Snyk CLI](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)
+[Ignore vulnerabilities using the Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md)
 
 [Error message: Ignoring via the CLI is not enabled for this organization. Please ignore issues via our website](https://support.snyk.io/s/article/Error-message-Ignoring-via-the-CLI-is-not-enabled-for-this-organization-Please-ignore-issues-via-our-website)
 
@@ -108,7 +108,7 @@ language-settings:
   python: "3.7"
 ```
 
-For more information, see [Setting Python version in Git Projects](../../supported-languages-package-managers-and-frameworks/python/#setting-python-version-in-git-projects).
+For more information, see [Setting Python version in Git Projects](../../supported-languages-package-managers-and-frameworks/python/git-repositories-and-python.md#set-the-python-version-in-git-projects).
 
 #### Set vulnerability ignore rules
 

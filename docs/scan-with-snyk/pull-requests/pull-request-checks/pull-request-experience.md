@@ -11,7 +11,7 @@ The following features are part of the Pull Request Experience:
 
 * Snyk PR Checks must be enabled. For more information, see [Configure Pull Request Checks](configure-pull-request-checks.md).
 * For the GitHub integration, you must specify a GitHub account  to provide a consistent comment experience. For more information, see [Opening fix and upgrade pull requests from a fixed GitHub account](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
-* For inline comments, enable the **Code analysis PR checks** setting at the [integration level](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience#configure-pull-request-experience-at-the-integration-level). In the Snyk Web UI, under **Settings** > **Integrations** > **Edit settings**,  verify that the option is enabled under **Pull request status checks** > **Code analysis**.
+* For inline comments, enable the **Code analysis PR checks** setting at the [integration level](pull-request-experience.md#configure-pull-request-experience-at-the-integration-level). In the Snyk Web UI, under **Settings** > **Integrations** > **Edit settings**,  verify that the option is enabled under **Pull request status checks** > **Code analysis**.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-11-27 at 14.14.35.png" alt=""><figcaption><p>Code analysis feature for Pull Request status checks</p></figcaption></figure>
 
@@ -20,7 +20,7 @@ The following features are part of the Pull Request Experience:
 {% hint style="info" %}
 **Release status**
 
-Issue Summary Comment for Snyk PR Checks is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR Checks.
+Issue Summary Comment for Snyk PR Checks is in [Early Access](../../../getting-started/snyk-release-process.md#early-access-features) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR Checks.
 
 Issue Summary Comment for Snyk PR Checks fully supports GitHub integrations and Bitbucket Cloud integrations.
 {% endhint %}
@@ -34,7 +34,7 @@ The Issue Summary Comment feature adds a comment to each pull request, summarizi
 {% hint style="info" %}
 **Release status**
 
-Inline Comments for Snyk PR Checks is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR Checks.
+Inline Comments for Snyk PR Checks is in [Early Access](../../../getting-started/snyk-release-process.md#early-access-features) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR Checks.
 
 Inline Comments for Snyk PR Checks fully supports GitHub integrations and Bitbucket Cloud integrations.
 {% endhint %}
@@ -55,7 +55,7 @@ For Brokered integrations, the Data Flow section in the inline comments is avail
 
 ## Configure Pull Request Experience
 
-You can configure the Pull Request Experience [at the Integration level](pull-request-experience.md#configure-pr-checks-at-the-integration-level) for your Snyk Organization.
+You can configure the Pull Request Experience [at the Integration level](pull-request-experience.md#configure-pull-request-experience-at-the-integration-level) for your Snyk Organization.
 
 {% hint style="warning" %}
 The Pull Request Experience is set up individually for each integration. If you have multiple integrations, you need to configure the Pull Request Experience separately for each one.

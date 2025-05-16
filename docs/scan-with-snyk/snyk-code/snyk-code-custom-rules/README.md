@@ -11,7 +11,7 @@ Create custom rules to run queries against the code stack as part of your invest
 * Define a custom vulnerable method ([Sink](./#sink)) that security teams may be worried about.
 * Create regular expression scans to check for the use of secrets and credentials that should not be part of the code.
 * Determine whether certain unwanted methods are being called within the code base that are deemed unsafe by the security teams.
-* After creating a query, test it against a [code snippet](run-query.md#run-query-on-a-code-snippet) or [repository](run-query.md#run-query-on-a-repository) you have previously imported to Snyk. This way, you can see the results of your query before you run regular scans. You can use this feature to validate a rule before pushing it to production and ensure that it provides the expected results.
+* After creating a query, test it against a [code snippet](run-query.md#run-a-query-on-a-code-snippet) or [repository](run-query.md#run-a-query-on-a-repository) you have previously imported to Snyk. This way, you can see the results of your query before you run regular scans. You can use this feature to validate a rule before pushing it to production and ensure that it provides the expected results.
 
 You can run custom rules as part of any scan run by Snyk Code, and the feature is available when you are using Snyk Code in any of the following:
 
@@ -23,8 +23,8 @@ You can run custom rules as part of any scan run by Snyk Code, and the feature i
 
 You can create and test queries in a local environment, completely separate from your current Snyk scans. Perform one of the following actions in Snyk Web UI:
 
-* [Run query on a repository](run-query.md#run-query-on-a-repository)
-* [Run query on a code snippet](run-query.md#run-query-on-a-code-snippet)
+* [Run query on a repository](run-query.md#run-a-query-on-a-repository)
+* [Run query on a code snippet](run-query.md#run-a-query-on-a-code-snippet)
 * [Analyze query results](run-query.md#analyze-query-results)
 * [Save custom rules](create-custom-rule.md)
 

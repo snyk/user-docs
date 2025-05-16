@@ -94,7 +94,7 @@ exclude:
 
 <figure><img src="../../.gitbook/assets/code_analysis_retest_now.png" alt="Clicking the retest now option"><figcaption><p>Retest now option</p></figcaption></figure>
 
-* If the repository was not imported yet to Snyk, [import the repository](../snyk-code/import-project-with-snyk-code.md#import-repository-to-snyk).
+* If the repository was not imported yet to Snyk, [import the repository](../snyk-code/import-project-with-snyk-code.md).
 
 Your repository is imported to Snyk, without the directories and/or files you selected to exclude.
 

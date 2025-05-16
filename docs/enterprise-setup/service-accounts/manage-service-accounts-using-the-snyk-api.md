@@ -15,8 +15,8 @@ Specific permissions are required to perform all these tasks. For more informati
 `auth_type` - Authentication strategy for the service account. The following options are available:
 
 * `api_key` - The service account uses a regular Snyk API key.
-* `oauth_client_secret` - The service account uses an [OAuth 2.0 access token](./#service-accounts-using-oauth-2.0), which is retrieved with a client secret.
-* `oauth_private_key_jwt` - The service account uses an [OAuth 2.0 access token](./#service-accounts-using-oauth-2.0), which is retrieved with a JWT signed with a private key.
+* `oauth_client_secret` - The service account uses an [OAuth 2.0 access token](service-accounts-using-oauth-2.0.md#oauth-2.0-with-client-secret), which is retrieved with a client secret.
+* `oauth_private_key_jwt` - The service account uses an [OAuth 2.0 access token](service-accounts-using-oauth-2.0.md#oauth-2.0-with-private-key-jwt), which is retrieved with a JWT signed with a private key.
 
 `role_id` - The role of the service account, which defines the permissions it has. Available roles can be found using the endpoint [List all roles in a group](../../snyk-api/reference/groups-v1.md#group-groupid-roles).
 

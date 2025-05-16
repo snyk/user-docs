@@ -204,7 +204,7 @@ For Broker deployed by Helm chart, edit the `values.yaml` file to include the re
 
 {% include "../.gitbook/includes/release-status-snyk-code-local-engine.md" %}
 
-Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region based on the values found in the [Broker URLs](regional-hosting-and-data-residency.md#broker-urls) section.
+Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region based on the values found in the [Broker URLs](regional-hosting-and-data-residency.md#broker-server-urls) section.
 
 Then add an extra variable to the `values-customer-settings.yml`:
 

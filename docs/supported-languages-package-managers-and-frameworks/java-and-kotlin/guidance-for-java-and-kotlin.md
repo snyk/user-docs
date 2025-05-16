@@ -56,7 +56,7 @@ The following manifest files are supported:
 * build.gradle (Groovy DSL) for both SCM and CLI&#x20;
 * build.gradle.kts (Kotlin DSL) for CLI only
 
-See the [Java and Kotlin](./#open-source-and-licensing) page for more details about the supported features.
+See the [Java and Kotlin](./#features) page for more details about the supported features.
 
 ### **APIs**
 

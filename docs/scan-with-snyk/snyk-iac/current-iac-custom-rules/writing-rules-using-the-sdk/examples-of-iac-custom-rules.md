@@ -243,7 +243,7 @@ deny[msg] {
 This will successfully return all the rules that deny.
 
 {% hint style="info" %}
-Snyk recommends always validating that your rule is correct by [updating and running the unit tests](./#test-a-custom-rule).
+Snyk recommends always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
 The test for this rule will now contain multiple test cases, to show that the logical OR works as expected:

@@ -34,7 +34,7 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
 * Language support
   * [Improved .NET scanning](../supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning.md)
   * [Snyk CLI pnpm support](../supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm)
-  * [Improved Gradle SCM scanning](../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access)
+  * [Improved Gradle SCM scanning](../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning)
 * Third-party integrations for Snyk AppRisk&#x20;
   * [Veracode](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#veracode-setup-guide)
   * [Checkmarx](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#checkmarx-setup-guide)

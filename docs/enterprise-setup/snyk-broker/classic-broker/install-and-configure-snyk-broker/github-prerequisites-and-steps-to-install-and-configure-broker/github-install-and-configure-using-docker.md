@@ -16,7 +16,7 @@ To use the Snyk Broker Client with GitHub, **run** `docker pull snyk/broker:gith
 
 {% hint style="info" %}
 **Multi-tenant settings for regions**\
-When installing, you must add a command in your script to set the `BROKER_SERVER_URL`.This is the URL of the Broker server for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
+When installing, you must add a command in your script to set the `BROKER_SERVER_URL`.This is the URL of the Broker server for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).
 {% endhint %}
 
 ```bash

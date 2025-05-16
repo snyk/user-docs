@@ -18,7 +18,7 @@ You can report issues by submitting a [support ticket](https://support.snyk.io).
 
 The existing .NET scanning solution for SCM integration in the Snyk Web UI and CLI uses two [different approaches](guidance-for-snyk-for-.net.md#dependency-analysis). The Dependency Analysis for SCM integrations can produce [false positives](guidance-for-snyk-for-.net.md#tackling-vulnerabilities-from-runtime-dependencies) that have no remediation available and must be manually ignored.
 
-If you use the CLI to scan Projects, you can expect more accurate results compared to importing the same Project using an SCM integration. You can [encounter errors](troubleshooting-snyk-for-.net.md#not-supported-in-snyk-open-source-for-.net) when scanning Projects that use specific .NET features.
+If you use the CLI to scan Projects, you can expect more accurate results compared to importing the same Project using an SCM integration. You can [encounter errors](troubleshooting-snyk-for-.net.md) when scanning Projects that use specific .NET features.
 
 ## Scanning improvements
 

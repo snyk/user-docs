@@ -392,7 +392,7 @@ The poll results return a message per manifest processed, either `success: true`
 
 ### [Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-integrationid)
 
-**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md); \
+**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md);\
 [Scenario: For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management](scenarios-for-using-the-snyk-api.md#for-a-specific-event-or-time-disable-all-interactions-pull-requests-tests-from-snyk-to-the-code-base); [Examples for the Update existing integration endpoint](examples-for-the-update-existing-integration-endpoint.md)
 
 ### [Update](../reference/integrations-v1.md#org-orgid-integrations-integrationid-settings)
@@ -474,7 +474,7 @@ Additional information: [Reachability](../../manage-risk/prioritize-issues-for-f
 
 ### [Monitor Dep Graph](../reference/monitor-v1.md)
 
-**More information:** [Dep Graph API (Bazel)](../../scan-with-snyk/snyk-open-source/snyk-for-bazel/#dep-graph-api)
+**More information:** [Dep Graph API (Bazel)](../../scan-with-snyk/snyk-open-source/snyk-for-bazel/dep-graph-api.md)
 
 ## Organizations (v1)
 
@@ -837,7 +837,7 @@ This endpoint retrieves a list of Snyk Targets, which is used if you want to del
 
 ### [Delete target by target ID](../reference/targets.md#orgs-org_id-targets-target_id-1)
 
-This endpoint deletes the specified Targets and also deletes all the Projects in those Targets automatically.&#x20;
+This endpoint deletes the specified Targets and also deletes all the Projects in those Targets automatically.
 
 ## Test (v1)
 

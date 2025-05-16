@@ -1,10 +1,10 @@
 # Snyk SCM Integrations
 
-You can integrate Snyk with your Git repository to quickly and easily gain visibility across all the [Snyk Projects](https://docs.snyk.io/introducing-snyk/introduction-to-snyk-projects) that you add to your **Projects** list.
+You can integrate Snyk with your Git repository to quickly and easily gain visibility across all the [Snyk Projects](../../snyk-admin/snyk-projects/) that you add to your **Projects** list.
 
 This page contains information about the following Snyk SCM integration aspects:
 
-* [Snyk Essentials SCM integrations available at the Group level](./#group-level-snyk-apprisk-scm-integrations)
+* [Snyk Essentials SCM integrations available at the Group level](./#group-level-snyk-essentials-scm-integrations)
 * [Snyk SCM integrations available at the Organization level](./#organization-level-snyk-scm-integrations)
 * [Workspaces for SCM integrations](./#workspaces-for-scm-integrations)
 * [Deployment order recommendations](./#deployment-order-recommendations)
@@ -15,8 +15,8 @@ This page contains information about the following Snyk SCM integration aspects:
 
 When you want to add new integrations to your Snyk account you must first decide the level type at which you want to install the integration. Snyk supports different SCM integrations on different levels of the Snyk hierarchy:
 
-* [Group level ](./#group-level-snyk-apprisk-integrations)- Group level integrations only support Snyk Essentials or Snyk AppRisk.
-* [Organization level](./#organization-level-snyk-integrations) - Organization level integrations support all other Snyk products. Snyk does not support Snyk Essentials or Snyk AppRisk integrations at the Organization level.
+* [Group level](./#group-level-snyk-essentials-scm-integrations) - Group level integrations only support Snyk Essentials or Snyk AppRisk.
+* [Organization level](./#organization-level-snyk-scm-integrations) - Organization level integrations support all other Snyk products. Snyk does not support Snyk Essentials or Snyk AppRisk integrations at the Organization level.
 
 {% hint style="warning" %}
 If you added the GitHub integration at Organizational and/or Group levels and you have configured SAML SSO for it, then you must authorize your GitHub PAT. Navigate to the [How to authorize your Personal Access Token and enable SSO](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise#how-to-authorize-your-personal-access-token-and-enable-sso) page for more details.
@@ -247,7 +247,7 @@ A GAT is used for managing multiple GitLab projects in a GitLab group and requir
 
 The Snyk Bitbucket integrations use different access control mechanisms to connect with Snyk:
 
-* [Snyk Bitbucket Cloud](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires the creation of an [app password](bitbucket-cloud.md#how-to-set-up-the-snyk-bitbucket-cloud-integration).
+* [Snyk Bitbucket Cloud](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires the creation of an [app password](bitbucket-cloud.md#how-to-set-up-the-bitbucket-cloud-integration).
 * [Snyk Bitbucket Cloud App](./#bitbucket-cloud-app-scopes) requires [Bitbucket workspace authorization](bitbucket-cloud-app.md#setting-up-a-bitbucket-cloud-app) and related permissions.
 * [Snyk Bitbucket Data Center/Server](./#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires a [dedicated username and password](bitbucket-data-center-server.md#how-to-set-up-a-bitbucket-dc-server-integration) or a personal access token (PAT).
 

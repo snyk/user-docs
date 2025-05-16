@@ -51,12 +51,12 @@ The following sequence of API calls allows you to build a custom script tailored
 
 Steps to follow:
 
-1. [List relevant Snyk Code Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/~/changes/9165/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access/convert-project-scoped-ignores-to-asset-scoped-ignores)
-2. [Retrieve existing Project-scoped ignores for a Project](convert-project-scoped-ignores-to-asset-scoped-ignores.md#id-2.-retrieve-existing-project-scoped-ignores-for-a-project)
-3. [Map Project-scoped findings to asset-scoped findings](convert-project-scoped-ignores-to-asset-scoped-ignores.md#id-3.-map-project-scoped-findings-to-asset-scoped-findings)
-4. [Create the new asset-scoped ignore policy](convert-project-scoped-ignores-to-asset-scoped-ignores.md#id-4.-create-the-new-asset-scoped-ignore-policy)
-5. [Delete the original Project-scoped ignore](convert-project-scoped-ignores-to-asset-scoped-ignores.md#id-5.-delete-the-original-project-scoped-ignore)
-6. [Verify the changes](convert-project-scoped-ignores-to-asset-scoped-ignores.md#id-6.-verify-the-changes)
+1. [List relevant Snyk Code Projects](convert-project-scoped-ignores-to-asset-scoped-ignores.md#list-relevant-snyk-code-projects)
+2. [Retrieve existing Project-scoped ignores for a Project](convert-project-scoped-ignores-to-asset-scoped-ignores.md#retrieve-existing-project-scoped-ignores-for-a-project)
+3. [Map Project-scoped findings to asset-scoped findings](convert-project-scoped-ignores-to-asset-scoped-ignores.md#map-project-scoped-findings-to-asset-scoped-findings)
+4. [Create the new asset-scoped ignore policy](convert-project-scoped-ignores-to-asset-scoped-ignores.md#create-the-new-asset-scoped-ignore-policy)
+5. [Delete the original Project-scoped ignore](convert-project-scoped-ignores-to-asset-scoped-ignores.md#delete-the-original-project-scoped-ignore)
+6. [Verify the changes](convert-project-scoped-ignores-to-asset-scoped-ignores.md#verify-the-changes)
 
 #### **List relevant Snyk Code Projects**
 

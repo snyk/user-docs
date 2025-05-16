@@ -382,7 +382,7 @@ To deploy the Snyk Runtime Sensor on Amazon EKS with EKS Add-on, you need to mee
 1. Subscribe to Snyk Runtime Sensor on AWS Marketplace [here](https://aws.amazon.com/marketplace/pp/prodview-i23vvrxuamcya). This should be done in each account that has clusters you want to integrate the sensor with.
 2. Install the following tools: `kubectl`, `AWS CLI`, and optionally `eksctl`.
 3. Ensure you have access to the Amazon EKS clusters where you want to install the sensor.
-4. Ensure you have a Snyk service account token ready with the right permissions, as described in the [prerequisites](snyk-runtime-sensor.md#prerequisites).
+4. Ensure you have a Snyk service account token ready with the right permissions, as described in the [prerequisites](snyk-runtime-sensor.md#prerequisites-for-snyk-runtime-sensor).
 
 #### **Enable the Snyk Runtime Sensor add-on from AWS console**
 
@@ -398,10 +398,10 @@ On the next screen, select the latest version (even if already selected) and ope
 
 Under the "configuration values", set the following attributes in a YAML or JSON format:
 
-* `secretName` - the secret name that will be created later in the process. The default value is  `snyk-secret` .
+* `secretName` - the secret name that will be created later in the process. The default value is  `snyk-secret`.
 * `clusterName` - the name of the cluster where the add-on is installed.
 * `snykGroupId` - the Group ID associated with the used service account.
-* `snykAPIBaseURL` - should be configured to be `api.snyk.io:443` , unless your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md#what-regions-are-available) than the default (US).
+* `snykAPIBaseURL` - should be configured to be `api.snyk.io:443`, unless your data is hosted in a [different region](../../../working-with-snyk/regional-hosting-and-data-residency.md) than the default (US).
 
 Here is a base configuration to copy:
 

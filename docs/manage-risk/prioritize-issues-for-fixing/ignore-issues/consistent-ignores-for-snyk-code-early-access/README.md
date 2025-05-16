@@ -39,7 +39,7 @@ To create, edit and remove ignores, you need to have a user role assigned with I
 
 You can manage ignores proactively using group-level Snyk Code security policies. As a general rule, you can apply ignore policies when you identify a recurring need to apply similar individual ignores.&#x20;
 
-To manage the ignores through security policies, Snyk Code Consistent Ignores need to be enabled at the Group level by your Snyk team. You do not require [conversion](./#convert-project-scoped-ignores-to-asset-scoped-ignores) for any previously applied Group level policy ignores.
+To manage the ignores through security policies, Snyk Code Consistent Ignores need to be enabled at the Group level by your Snyk team. You do not require [conversion](convert-project-scoped-ignores-to-asset-scoped-ignores.md) for any previously applied Group level policy ignores.
 
 Policies configured to ignore-based Project attributes do not result in ignores being applied in Snyk CLI and IDE settings where a Snyk Project is not available.
 

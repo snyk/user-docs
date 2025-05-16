@@ -10,7 +10,7 @@ Each inventory layout is presented in a table format, detailing the available ke
 * [Class](assets-inventory-components.md#class)
 * [Risk factors](assets-inventory-components.md#risk-factors)
 * [Source](assets-inventory-components.md#source)
-* [SCM Repository freshness](assets-inventory-components.md#repository-freshness)
+* [SCM Repository freshness](assets-inventory-components.md#scm-repository-freshness)
 * [Clusters](assets-inventory-components.md#clusters)
 * [Organizations](assets-inventory-components.md#organizations)
 * [Visibility](assets-inventory-components.md#visibility)

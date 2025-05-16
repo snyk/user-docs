@@ -1,6 +1,6 @@
 # Create and delete Organizations
 
-You can use Organization-level options to [create](create-and-delete-organizations.md#create-an-organization) and [delete](create-and-delete-organizations.md#delete-an-organization) Organizations and [Set your preferred Organization](create-and-delete-organizations.md#set-your-preferred-organization)
+You can use Organization-level options to [create](create-and-delete-organizations.md#create-an-organization) and [delete](create-and-delete-organizations.md#delete-an-organization) Organizations and [Set your preferred Organization](set-your-preferred-organization.md)
 
 ## Create an Organization
 

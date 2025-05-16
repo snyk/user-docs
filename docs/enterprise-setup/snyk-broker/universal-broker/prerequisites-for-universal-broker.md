@@ -9,7 +9,7 @@ Using the snyk-broker-config CLI tool is supported on Windows.
 Before installing the Universal Broker `snyk-broker-config` CLI tool, be sure you have met the following prerequisites. If you need help, contact your Snyk account team.
 
 * Client machine system requirements: one CPU and 256 MB of RAM.
-* Network access that is allowed by any firewalls installed on your network: an outbound TLS (443) to <kbd>https://broker.snyk.io</kbd> AND `https://api.snyk.io`or your [regional Broker URL](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
+* Network access that is allowed by any firewalls installed on your network: an outbound TLS (443) to <kbd>https://broker.snyk.io</kbd> AND `https://api.snyk.io` or your [regional Broker URL](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
 * A Snyk account and your personal Snyk API token; you cannot use a service account.
 * Snyk Tenant admin permissions. If you are not a Tenant admin, you can reach out to your team's Tenant admin [to add you](../../../snyk-admin/tenant-groups-and-organizations/tenant/manage-users-in-a-tenant.md). Otherwise, reach out to your support team member or [raise a support case](https://support.snyk.io/s/).
 * A new Snyk Broker Admin Organization created in the Group of your choice in your Tenant, not a personal Organization. See [Create an Organization](../../../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#create-an-organization) for details.
@@ -30,7 +30,7 @@ See [Obtain and use your Snyk API token](../../../getting-started/#obtain-and-us
 2. Click your **Tenant name**. **I**f you are a member of multiple Tenants, navigate to the Tenant where the Universal Broker will be configured.
 3. Copy the Tenant ID from the URL. The format is `https://app.snyk.io/tenant/1234abcd-1234-abcd-5678-1234abcd5678`.
 
-When installing, you must add a command in your script to set the Broker server URL for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).\
+When installing, you must add a command in your script to set the Broker server URL for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).\
 Example:  `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`.
 
 If you are using a region other than SNYK US-01, run the following as applicable after you install the CLI tool and before you create your first connection:\

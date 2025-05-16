@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Multi-tenant settings for regions**\
-When installing, you must add a command in your script to set the Broker server URL for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
+When installing, you must add a command in your script to set the Broker server URL for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).
 {% endhint %}
 
 This page has information and instructions for the following:
@@ -109,7 +109,7 @@ https.get('<URL_HERE>', res => {console.log(`statusCode: ${res.statusCode}`)})
 
 ## **Support of big manifest files (> 1Mb) for GitHub and GitHub Enterprise**
 
-Open Fix/Upgrade PRs or PR/recurring tests may fail because of fetching big manifest files (> 1Mb) failure. To address this issue, follow either the [Docker](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup) or [Helm](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/snyk-open-source-scans-sca-of-large-manifest-files-helm-setup) instructions to allow large manifest files.Containers go down when you log out of the host
+Open Fix/Upgrade PRs or PR/recurring tests may fail because of fetching big manifest files (> 1Mb) failure. To address this issue, follow either the [Docker](classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup.md) or [Helm](classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/snyk-open-source-scans-sca-of-large-manifest-files-helm-setup.md) instructions to allow large manifest files.Containers go down when you log out of the host
 
 If your containers go down, along with the Broker ecosystem, when you detach from their host, run the following to ensure the containers stay online when you log out:
 

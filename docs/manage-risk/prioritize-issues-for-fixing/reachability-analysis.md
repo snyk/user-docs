@@ -29,7 +29,7 @@ Follow these steps to enable Reachability analysis and begin analyzing Projects 
 After Reachability analysis is enabled, the analysis is done as part of scanning Projects.&#x20;
 
 {% hint style="info" %}
-You can apply the reachability analysis to existing Projects by triggering a [manual test](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/#manual-pull-and-merge-requests-for-project-code).
+You can apply the reachability analysis to existing Projects by triggering a [manual test](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/#manual-snyk-prs).
 {% endhint %}
 
 ## Supported languages and integrations
@@ -77,7 +77,7 @@ After a vulnerability is identified, it has one of the following reachability st
 If a `NO PATH FOUND` status is given, do not assume that the vulnerability is totally unreachable or unexploitable.
 {% endhint %}
 
-Reachability analysis status is available [on the Project page](reachability-analysis.md#on-the-project-page), [as part of the Risk Score](reachability-analysis.md#as-part-of-the-risk-score), in the [Issues Detail report](../../manage-issues/reporting/available-snyk-reports.md#issues-detail-report), and through the API endpoint  [Get issues by Group ID](../../snyk-api/reference/issues.md#groups-group_id-issues).&#x20;
+Reachability analysis status is available [on the Project page](reachability-analysis.md#reachability-analysis-as-shown-on-the-project-page), [as part of the Risk Score](reachability-analysis.md#reachability-analysis-as-part-of-the-risk-score), in the [Issues Detail report](../../manage-issues/reporting/available-snyk-reports.md#issues-detail-report), and through the API endpoint  [Get issues by Group ID](../../snyk-api/reference/issues.md#groups-group_id-issues).&#x20;
 
 ### Reachability analysis as shown on the Project page
 

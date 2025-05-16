@@ -12,7 +12,7 @@ The Project includes only the production dependencies in the `compile`, `provide
 
 After you select a Project for import, Snyk builds the dependency tree based on the `build.gradle` file and (optional) `gradle.lockfile`.
 
-Improved scanning for Gradle Projects (including Groovy and Kotlin DSLs) is now in Early Access as explained [on this page](git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access).
+Improved scanning for Gradle Projects (including Groovy and Kotlin DSLs) is now in Early Access as explained [on this page](git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning).
 
 Only production dependencies in the `api`, `compile`, `classpath`, `implementation`, `runtime` and `runtimeOnly` configurations are included.
 

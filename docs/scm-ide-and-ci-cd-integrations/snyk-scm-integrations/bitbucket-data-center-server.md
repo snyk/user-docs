@@ -2,7 +2,7 @@
 
 When you want to add new integrations to your Snyk account you need to first decide the level type at which you want to install the integration.
 
-* [Group level ](bitbucket-data-center-server.md#group-level-snyk-essentials-integrations)- Add integrations to your Snyk application that will be available for your Snyk Essentials. If you want to set up integrations for Snyk Essentials or Snyk AppRisk, use the Integrations menu at the Group level.
+* [Group level](bitbucket-data-center-server.md#group-level-snyk-essentials-integrations) - Add integrations to your Snyk application that will be available for your Snyk Essentials. If you want to set up integrations for Snyk Essentials or Snyk AppRisk, use the Integrations menu at the Group level.
 * [Organization level](bitbucket-data-center-server.md#organization-level-snyk-integrations) - Add integrations for your Snyk application that will be available for all Snyk products, except Snyk Essentials or Snyk AppRisk.
 
 ## Organization level - Snyk integrations
@@ -40,8 +40,8 @@ The imported Projects appear on your Snyk **Projects** page and are continuously
 After the integration is in place, you can use capabilities such as:
 
 * [Project-level security reports](bitbucket-data-center-server.md#project-level-security-reports)
-* [Project monitoring and automatic fix pull requests](bitbucket-data-center-server.md#projects-monitoring-and-automatic-fix-pull-requests)
-* [Pull request testing](bitbucket-data-center-server.md#pull-request-testing)
+* [Project monitoring and automatic fix pull requests](bitbucket-data-center-server.md#project-monitoring-and-automatic-fix-pull-requests)
+* [Pull request testing](bitbucket-data-center-server.md#pull-request-tests)
 
 #### **Project-level security reports**
 
@@ -51,7 +51,7 @@ The example that follows shows a Project-level security report.
 
 <figure><img src="../../.gitbook/assets/project_lvl_security_rpt-18july2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
-#### **Project monitoring and automatic fix pull requests**
+#### Project monitoring and automatic fix pull requests
 
 Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening automated Snyk pull requests with fixes for your repositories.
 
@@ -74,7 +74,7 @@ Unlike manual pull requests opened from the Bitbucket interface, for the Snyk Bi
 For more information, see [Automated pull request creation for new fixes](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-new-fixes-fix-prs.md).
 {% endhint %}
 
-#### **Pull request tests**
+#### Pull request tests
 
 {% hint style="info" %}
 Snyk Code PR Checks are only available for Bitbucket DC/Server versions 7.0 and above.

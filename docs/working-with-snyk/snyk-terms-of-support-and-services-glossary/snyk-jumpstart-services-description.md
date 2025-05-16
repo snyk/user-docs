@@ -25,8 +25,8 @@ The Snyk Consultant will deliver the following services related to the setup of 
 4. [Snyk Code configuration](snyk-jumpstart-services-description.md#snyk-code-configuration)
 5. [Snyk Container configuration](snyk-jumpstart-services-description.md#snyk-container-configuration)
 6. [Snyk IaC configuration](snyk-jumpstart-services-description.md#snyk-iac-configuration)
-7. [Snyk Essentials configuration](snyk-jumpstart-services-description.md#snyk-apprisk-essentials-prioritization-configuration)
-8. [Snyk AppRisk configuration](snyk-jumpstart-services-description.md#snyk-apprisk-pro-configuration)
+7. [Snyk Essentials configuration](snyk-jumpstart-services-description.md#snyk-essentials-configuration)
+8. [Snyk AppRisk configuration](snyk-jumpstart-services-description.md#snyk-apprisk-configuration)
 9. [Snyk API & Web configuration](snyk-jumpstart-services-description.md#snyk-api-and-web-configuration-details)
 
 ## Pre-engagement planning and preparation

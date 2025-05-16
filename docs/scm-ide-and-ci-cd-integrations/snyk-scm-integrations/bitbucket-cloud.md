@@ -62,7 +62,7 @@ After the integration is in place, you will be able to use capabilities such as:
 
 #### Project-level security reports
 
-Snyk produces advanced [security reports](https://docs.snyk.io/features/reports/reports-overview) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
+Snyk produces advanced [security reports](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
 The example that follows shows a Project-level security report.
 
@@ -106,7 +106,7 @@ To review and adjust the pull request tests settings:
 
 ### Required permission scope for the Bitbucket Cloud integration
 
-All the operations, whether triggered manually or automatically, are performed for a Bitbucket Cloud [service account](https://docs.snyk.io/features/user-and-group-management/managing-groups-and-organizations/service-accounts) that has its token (App Password) configured in the **Integration settings**.
+All the operations, whether triggered manually or automatically, are performed for a Bitbucket Cloud [service account](../../enterprise-setup/service-accounts/) that has its token (App Password) configured in the **Integration settings**.
 
 For Snyk to perform the required operations on monitored repositories, such as reading manifest files on a frequent basis and opening fix or upgrade PRs, the integrated Bitbucket Cloud service account needs **Admin** permissions on the imported repositories.
 

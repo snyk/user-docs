@@ -23,7 +23,7 @@ If issues occur, such as failure to import Projects, failure to connect, and no 
 2. Select **New Access Token**.
 3. Enter the Access Token description.
 4. Set the permissions (Read is required and sufficient), and click **Generate**.
-5. Select **Copy Access Token** for use with the username when you [enable integration with Docker Hub](configure-the-integration-with-docker-hub.md#enable-integration-with-docker-hub).
+5. Select **Copy Access Token** for use with the username when you [enable integration with Docker Hub](configure-the-integration-with-docker-hub.md#enable-the-integration-with-docker-hub).
 
 More information on [Docker Hub Access Tokens](https://docs.docker.com/docker-hub/access-tokens/) is available in the Docker Hub docs.
 

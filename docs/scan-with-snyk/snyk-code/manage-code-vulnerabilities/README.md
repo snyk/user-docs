@@ -75,7 +75,7 @@ To understand the results, see [Breakdown of Code analysis](breakdown-of-code-an
 
 ### Import additional repositories
 
-If you have existing Projects in your Snyk account, you can add additional repositories for Snyk to test. See [Import repository to Snyk](../import-project-with-snyk-code.md#import-repository-to-snyk).
+If you have existing Projects in your Snyk account, you can add additional repositories for Snyk to test. See [Import repository to Snyk](../import-project-with-snyk-code.md).
 
 ### Remove repositories from testing
 

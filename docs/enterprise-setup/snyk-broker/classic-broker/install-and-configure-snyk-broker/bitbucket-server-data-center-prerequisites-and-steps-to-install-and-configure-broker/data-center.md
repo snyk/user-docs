@@ -4,7 +4,7 @@ Before installing, review the [prerequisites](./) and the general instructions f
 
 This integration is useful to ensure a secure connection with your on-premise Bitbucket deployment.
 
-This page describes two distinct authentication schemes: [Basic Auth](data-center.md#configure-broker-to-be-used-with-bitbucket-using-basic-auth) and B[earer (Personal Access Token)](data-center.md#configure-broker-to-be-used-with-bitbucket-using-personal-access-token-pat). Your Bitbucket Server settings might preclude Basic Auth usage, in which case Bearer Auth is preferred.
+This page describes two distinct authentication schemes: [Basic Auth](data-center.md#configure-broker-to-be-used-with-bitbucket-using-basic-auth) and [Bearer (Personal Access Token)](data-center.md#configure-broker-to-be-used-with-bitbucket-using-personal-access-token-pat). Your Bitbucket Server settings might preclude Basic Auth usage, in which case Bearer Auth is preferred.
 
 ## Configure Broker to be used with Bitbucket using Basic Auth
 
@@ -20,7 +20,7 @@ To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:b
 
 {% hint style="info" %}
 **Multi-tenant settings for regions**\
-When installing, you must add a command in your script to set the `BROKER_SERVER_URL`.This is the URL of the Broker server for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
+When installing, you must add a command in your script to set the `BROKER_SERVER_URL`. This is the URL of the Broker server for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).
 {% endhint %}
 
 ```bash

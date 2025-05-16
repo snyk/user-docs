@@ -51,7 +51,7 @@ You can promote a Group Member to a Group Admin by selecting the **role** dropdo
 <figure><img src="../../../.gitbook/assets/group-member-change-role.png" alt=""><figcaption><p>Promote to Group Admin</p></figcaption></figure>
 
 {% hint style="warning" %}
-If the user you want to promote to Group Admin is not already a part of your Group, you must first add that user as a member of at least one Organization; see [Add Members](../organizations/manage-users-in-organizations.md#add-members) on the Manage users in Organizations page. The user then appears on the Group members page with the role of Group Member. You can then promote the user to Group Admin.
+If the user you want to promote to Group Admin is not already a part of your Group, you must first add that user as a member of at least one Organization; see [Add Members](../organizations/manage-users-in-organizations.md#add-users) on the Manage users in Organizations page. The user then appears on the Group members page with the role of Group Member. You can then promote the user to Group Admin.
 {% endhint %}
 
 ## Delete Group members

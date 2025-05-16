@@ -31,7 +31,7 @@ Access and configure the integrations from the **Integrations** view. Select the
 
 The default display in the **Integrations** view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem).
+You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-essentials-and-snyk-apprisk-integrations-ecosystem).
 
 <figure><img src="../../../.gitbook/assets/image (357) (1).png" alt="Snyk AppRisk - Integration Hub option displaying the list of available integrations"><figcaption><p>Snyk Essentials - Integration Hub option displaying the list of available integrations</p></figcaption></figure>
 
@@ -55,12 +55,12 @@ When you set a token on the Group Level Integrations screen, it enhances securit
 
 The supported SCM integrations are:
 
-* [GitHub](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md#group-level-snyk-apprisk-integrations)
-* [GitLab](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md#group-level-snyk-apprisk-integrations)
-* [Azure DevOps (Azure Repos)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md#group-level-snyk-apprisk-integrations)
-* [BitBucket](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-apprisk-integrations)
+* [GitHub](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md#group-level-snyk-essentials-integrations)
+* [GitLab](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md#group-level-snyk-essentials-integrations)
+* [Azure DevOps (Azure Repos)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md#group-level-snyk-essentials-integrations)
+* [BitBucket](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-essentials-integrations)
 
-Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-apprisk-integrations-ecosystem) page for more details about the supported SCM integrations.
+Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-essentials-and-snyk-apprisk-integrations-ecosystem) page for more details about the supported SCM integrations.
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
@@ -91,7 +91,7 @@ The Snyk Essentials functionality is split across several menu options from the 
 * The Asset [Dashboard](../../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) report
 * [Inventory](../../../manage-assets/)
 * [Policies](../../../manage-risk/policies/assets-policies/)
-* [Integrations for SCM](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations)&#x20;
+* [Integrations for SCM](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations)&#x20;
 * [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
 
 #### Inventory view
@@ -125,7 +125,7 @@ Use tags to categorize the assets. You can use tags in multiple ways:
 BitBucket cannot automatically detect the language used in the source code from the repositories. In Snyk Essentials or Snyk Essentials, you can only see the language tags that have been manually added for BitBucket. For more information, see the official documentation provided by BitBucket.
 {% endhint %}
 
-* User-defined tags: set up custom tags through policies to categorize your assets beyond the system-generated tags. See the [Create policies ](../../../manage-risk/policies/assets-policies/create-policies.md)page for more details.&#x20;
+* User-defined tags: set up custom tags through policies to categorize your assets beyond the system-generated tags. See the [Create policies](../../../manage-risk/policies/assets-policies/create-policies.md) page for more details.&#x20;
 
 #### Asset Dashboard Report
 

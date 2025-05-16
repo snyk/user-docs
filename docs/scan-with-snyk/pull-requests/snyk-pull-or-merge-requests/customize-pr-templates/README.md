@@ -8,7 +8,7 @@ You may have your own standards and practices for submitting pull requests. For 
 
 You can set custom PR templates using the following methods:&#x20;
 
-* API request - set all PRs in the Group to the custom template that is uploaded. Refer to [Create an API request with a Custom template](apply-a-custom-pr-template.md#create-an-api-request-with-a-custom-template) on the [Apply a Custom PR template](apply-a-custom-pr-template.md) page.
+* API request - set all PRs in the Group to the custom template that is uploaded. Refer to [Create an API request with a Custom template](apply-a-custom-pr-template.md#create-and-manage-a-custom-pr-template-using-the-api) on the [Apply a Custom PR template](apply-a-custom-pr-template.md) page.
 * [YAML upload ](apply-a-custom-pr-template.md#customize-using-a-yaml-pr-template-file)- set the custom template for a specific repository
 
 After the template is set, the custom PR template feature is enabled.

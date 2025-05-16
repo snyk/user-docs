@@ -40,14 +40,14 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * The list of [Operating system distributions supported by Snyk Container](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) has been updated to include Alpine Linux 3.21, Ubuntu 25.04 - Plucky Puffin, and Ubuntu 24.10 - Oracular Oriole.
 * The section describing the automated integration process for Amazon Elastic Container Registry (ECR) has been removed, as Snyk no longer supports this method.
 
-### **Snyk  Integrations**
+### **Snyk Integrations**
 
-* For the [Jira integration](integrate-with-snyk/jira-and-slack-integrations/jira-integration.md#prerequisites-for-jira-integration-with-snyk), Snyk now supports Jira versions 5 to 10.&#x20;
+* For the [Jira integration](integrate-with-snyk/jira-and-slack-integrations/jira-integration.md#prerequisites-for-jira-integration-with-snyk), Snyk now supports Jira versions 5 to 10.
 * For [SCM integrations with Gradle](supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md), Snyk now supports `allprojects` and `subprojects` blocks, as well as Spring Boot plugins BOMs.
 
 ### **Other updates**
 
-* DAST scanning is now available with [Snyk API & Web](https://docs.snyk.io/scan-with-snyk#select-scanning-methods), enabling users to discover and test the security of their APIs and web apps, including AI-generated ones..
+* DAST scanning is now available with [Snyk API & Web](https://docs.snyk.io/scan-with-snyk#select-scanning-methods), enabling users to discover and test the security of their APIs and web apps, including AI-generated ones.
 * PR Checks is now available with a General Availability release status.
 
 ## March 2025
@@ -161,25 +161,24 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * The [API](snyk-api/) pages have been extensively updated to reflect changes in how APIs are published.
 * The [API Authentication](snyk-api/authentication-for-api/) pages have been updated to include when to use a personal token and when to use a service account, and to improve the flow of information.
 
-### &#x20;**Snyk AppRisk**&#x20;
+### **Snyk AppRisk**
 
 * [Risk factors on assets](manage-assets/#inventory-overview) is now in [EA](getting-started/snyk-release-process.md#early-access) for Snyk AppRisk customers.
 * [Asset inventory components](manage-assets/assets-inventory-components.md#clusters) has been updated to include details on clusters.
-* Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md#sonarqube-sast-integration).
+* Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](enterprise-setup/snyk-broker/using-snyk-apprisk-with-snyk-broker.md#sonarqube-sast-integration).
 
 ### **Snyk CLI and IDEs**
 
 * The [CLI authentication page](snyk-cli/authenticate-to-use-the-cli.md) has been updated for the OAuth 2.0 protocol.
 * The page [Debugging the Snyk CLI](snyk-cli/debugging-the-snyk-cli.md) has been added.
 * [CLI standalone executables](snyk-cli/install-or-update-the-snyk-cli/#install-with-standalone-executables) have been updated to include Alpine Arm64.
-* IDE Eclipse[ plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/) and [JetBrains plugin ](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/)documentation pages have been updated.
+* IDE Eclipse[ plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/) and [JetBrains plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/) documentation pages have been updated.
 * [Authentication information](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/) have been updated for all IDEs.
 
 ### **Snyk Integrations**
 
-* [Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/) is now in [GA](getting-started/snyk-release-process.md#general-availability).
+* [Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/) is now in [GA](getting-started/snyk-release-process.md).
 * [Snyk SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) has been updated with additional notices relating to repository retrieval and permission or scope modifications after initial configuration.
-* The **GitHub and GitHub Enterprise permission requirements** section title has been changed to [Personal Access Token (PAT) scopes and repository permission requirements for SCMs](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#personal-access-token-pat-scopes-and-repository-permission-requirements-for-scms) to capture PAT and repository permissions for multiple SCM integrations, including the GitHub Cloud App.
 * GitHub Cloud App has been added to feature support notices for Fix, Backlog, and Upgrade PRs.
 * Snyk SCM integrations has been updated to include a table detailing the [permissions and scopes](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-cloud-app-permission-requirements) required for the GitHub Cloud App.
 
@@ -240,13 +239,13 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 ### **Snyk CLI**
 
 * [`snyk auth`](snyk-cli/commands/auth.md) command help updated to reflect OAuth default.
-* &#x20; [CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for OAuth default and improved flow.
+* [CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for OAuth default and improved flow.
 * [`snyk config environment`](snyk-cli/commands/config-environment.md) command help has been added.
 * CLI [support for pnpm added](supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm).
 
 ### Snyk IDE
 
-* &#x20;[CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for IDE.
+* [CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for IDE.
 * IDE authentication instructions updated: [Eclipse](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin.md), [Jetbrains](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/authentication-for-the-jetbrains-plugins.md), [VS extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-extension-authentication.md), [VS Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-authentication.md)
 
 ### **Snyk Integrations**
@@ -275,7 +274,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
   * Inventory - [Manage assets](manage-assets/) section
   * Issues - [Prioritize issues for fixing](manage-risk/prioritize-issues-for-fixing/#prioritization-based-on-risk) section
   * Policies - [Assets policies](manage-risk/policies/assets-policies/) section
-  * Integrations - [Snyk SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and [Integrate with Snyk](integrate-with-snyk/#integrations-for-snyk-apprisk) sections
+  * Integrations - [Snyk SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [Integrate with Snyk](integrate-with-snyk/) sections
   * Snyk AppRisk - [Scan with Snyk](scan-with-snyk/snyk-apprisk.md) section
   * Analytics - [Manage risk](manage-risk/enterprise-analytics/application-analytics.md) section
 
@@ -284,7 +283,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 * A comparison of the GitHub and GitHub Enterprise integrations functions now resides on the [SCM, IDE, and CI/CD integrations](scm-ide-and-ci-cd-integrations/#github-vs-github-enterprise) page.
 * Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
 * The [Snyk SCM Integrations](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations) page now contains information critical to using these integrations successfully in your SDLC. This includes:
-  * Organizing integrations by [Group](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and [Organization](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#organization-level-snyk-scm-integrations) level in line with Snyk AppRisk functionality
+  * Organizing integrations by [Group](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [Organization](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#organization-level-snyk-scm-integrations) level in line with Snyk AppRisk functionality
   * [Git repository cloning](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-git-repository-cloning) details
   * [Deployment recommendations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#deployment-order-recommendations) for Enterprise customers
   * [User permissions and access scope requirements](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#user-permissions-and-access-scope-requirements) for each SCM integration

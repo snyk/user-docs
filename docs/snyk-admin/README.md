@@ -22,7 +22,7 @@ This page covers the following topics:
 
 * [The Snyk workspace](./#the-snyk-workspace)
 * [User types](./#user-types)
-* [Snyk Admin tools](./#snyk-admin-tools)
+* [Snyk Admin tools](./#admin-tools)
 
 ## The Snyk workspace
 

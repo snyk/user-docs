@@ -40,11 +40,11 @@ For information on how to automate the process of adding business context and re
 The Group-level Integrations view focuses on asset management and discovery and is available with Snyk Enterprise.
 {% endhint %}
 
-The **Integrations** page shows all active integrations, [SCM](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) or, [third-party](../integrate-with-snyk/#integrations-for-snyk-apprisk), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.
+The **Integrations** page shows all active integrations, [SCM](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) or, [third-party](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.
 
 You can find an overview of all your integrations on the Snyk Web UI **Integrations** page. You can enable or disable your integrations, edit them, or remove them from your configuration.
 
-For more details about available integrations, see [Snyk Essentials SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and [Integrate with Snyk](../integrate-with-snyk/#integrations-for-snyk-apprisk).
+For more details about available integrations, see [Snyk Essentials SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [Integrate with Snyk](../integrate-with-snyk/).
 
 #### Enable or disable an integration
 
@@ -144,7 +144,7 @@ To open the **Projects** listing page, select the **Projects** link in the side 
 * Use the settings icon on the ungrouped **Projects** listing or the **Settings** tab on the Project detail page to configure General and GitHub integration settings for notifications, Project testing, and pull request (PR) frequency. On the Settings tab, you can also look up the unique Project ID and deactivate or delete a Project.
 * View the Project history on the **History** tab.
 
-### **Manage your** **Integrations**
+### Manage your Integrations
 
 You can set up a range of integrations with Snyk from the [Integrations](../integrate-with-snyk/) page available on the Dashboard.
 
@@ -181,7 +181,7 @@ The [Issues page](../manage-risk/prioritize-issues-for-fixing/prioritization-for
 
 ### View dependencies and licenses
 
-You can [view dependencies](https://docs.snyk.io/manage-risk/reporting/dependencies-and-licenses/view-dependencies) and [license information](https://docs.snyk.io/manage-risk/reporting/dependencies-and-licenses/view-licenses) for all Projects in your Organization or Group, using the **Dependencies** option in your Organization or Group menu.
+You can [view dependencies](../manage-risk/reporting/dependencies-and-licenses/view-dependencies.md) and [license information](../manage-risk/reporting/dependencies-and-licenses/view-licenses.md) for all Projects in your Organization or Group, using the **Dependencies** option in your Organization or Group menu.
 
 ### Manage Organization or Group members
 
@@ -195,7 +195,7 @@ You must be assigned the [required Admin roles and permissions](../snyk-admin/us
 
 ### Snyk Organization or Group Settings
 
-Use the **Settings** option to view and manage your Organization or Group settings. For details, see[Group and Organization settings](../snyk-admin/groups-and-organizations/group-and-organization-settings.md).
+Use the **Settings** option to view and manage your Organization or Group settings. For details, see [Group and Organization settings](../snyk-admin/groups-and-organizations/group-and-organization-settings.md).
 
 <figure><img src="../.gitbook/assets/org_settings.png" alt=""><figcaption><p>Group and Organization settings</p></figcaption></figure>
 
@@ -211,7 +211,7 @@ Select your **name** in the navigation on the Dashboard and then **Account setti
 
 * View and manage your API token or the Auth Token for free accounts. For details, see [How to obtain and authenticate with your Snyk API token](./#obtain-and-use-your-snyk-api-token).
 * View the list of your **Authorized Applications**.
-* Set your preferred Organization. See [Manage Organizations: Set your preferred Organization](../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md#set-your-preferred-organization).
+* Set your preferred Organization. See [Manage Organizations: Set your preferred Organization](../snyk-admin/groups-and-organizations/organizations/set-your-preferred-organization.md).
 * **Delete** your account.
 * Manage your Account Settings for email **Notifications** (link in the left navigation), including Issue email alerts, Weekly report emails, and Usage alerts, as well as email notifications when reports are available and preferences for sales and marketing communications.  For details, see [Manage notifications](../snyk-admin/manage-notifications.md).
 * Get a referral link to **Share with a Friend**. The link is in the left navigation of your Account Settings.

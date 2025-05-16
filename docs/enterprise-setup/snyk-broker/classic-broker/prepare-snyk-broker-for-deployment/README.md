@@ -6,7 +6,7 @@ Using Snyk Broker on Windows is not supported. Snyk recommends that Windows user
 
 ## Prerequisites for Snyk Broker
 
-When you set up Broker for region other than SNYK-US-01, before you can authenticate, you must set environment variables with specific [Broker URLs](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).\
+When you set up Broker for region other than SNYK-US-01, before you can authenticate, you must set environment variables with specific [Broker URLs](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).\
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`
 
 The following are prerequisites for using Snyk Broker in any environment:

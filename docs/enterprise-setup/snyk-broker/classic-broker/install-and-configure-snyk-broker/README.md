@@ -2,7 +2,7 @@
 
 ## How to use Snyk Broker
 
-Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, providing for access by [snyk.io](http://snyk.io/) to scan code in repositories that are not internet-reachable and return results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC. For details, see [Integrations with Snyk Broker](../../#integrations-with-snyk-broker).
+Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, providing for access by [snyk.io](http://snyk.io/) to scan code in repositories that are not internet-reachable and return results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC. For details, see [Integrations with Snyk Broker](../../#integrations-supported-by-snyk-broker).
 
 For comprehensive information about Snyk Broker, including how it works, how to deploy it, commit signing, upgrading, and troubleshooting, see the full [Snyk Broker user documentation](../../).
 

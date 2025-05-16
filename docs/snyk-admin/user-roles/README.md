@@ -18,5 +18,5 @@ When you create or edit a role, as explained on the [User role management](user-
 
 There are many considerations involved in managing user roles. See these sections on the [User role management](user-role-management.md) page:
 
-* [Permissions (role) required to edit Project attributes from the Snyk CLI](user-role-management.md#permissions-role-required-to-edit-project-attributes-from-the-snyk-cli)
+* [Permissions (role) required to edit Project attributes from the Snyk CLI](user-role-management.md#permissions-required-to-edit-project-attributes-from-the-snyk-cli)
 * [Essential information for working with Member roles](user-role-management.md#essential-information-for-working-with-member-roles)
