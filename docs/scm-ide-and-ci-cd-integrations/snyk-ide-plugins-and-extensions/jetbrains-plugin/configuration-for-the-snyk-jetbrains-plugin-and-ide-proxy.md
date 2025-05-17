@@ -7,7 +7,7 @@ Navigate to **Preferences** > **Tools** > **Snyk** to set the following configur
 * **Authentication method:** Specify whether to authenticate with OAuth2 or with an API token. `OAuth2` is the default
 * **Token**: Set the token to use for authentication with Snyk. For details, see [Authentication for the JetBrains plugins](authentication-for-the-jetbrains-plugins.md).
 * **Custom endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).\
-  Multi-tenant users who do not belong to the default region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
+  Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 * **Ignore unknown CA**: Ignore the SSL cert, if needed
 *   **Organization**: Set the Organization to run `snyk test` against (similar to the `--org=` option in the CLI). Snyk recommends using the `ORG_ID`. If you specify an Organization slug name, the value must match the URL slug as displayed in the URL of your Organization in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
 
@@ -15,7 +15,7 @@ Navigate to **Preferences** > **Tools** > **Snyk** to set the following configur
 
 ## Scan configuration
 
-* **Snyk Open Source**: Enable a scanner for open source dependencies; enabled by default.
+* **Snyk Open Source**: Enable a scanner for open-source dependencies; enabled by default.
 * **Snyk Infrastructure as Code**: Enable a scanner for insecure configurations in Terraform and Kubernetes code; enabled by default.
 * **Snyk Container vulnerabilities**: Enable a scanner for container vulnerabilities in container images and Kubernetes applications; enabled by default.
 * **Snyk Code Security issues**: Enable a scanner for security vulnerabilities in your application code; enabled by default
@@ -28,11 +28,11 @@ Navigate to **Preferences** > **Tools** > **Snyk** to set the following configur
 
 ## **Executable settings**
 
-These options allow to customize the handling of the plugin dependency on Snyk CLI.&#x20;
+These options allow you to customize the handling of the plugin dependency on Snyk CLI.&#x20;
 
-* **Base URL to download the CLI:** Allow specifying an alternative download location of the CLI. This location must conform to the same file and folder layout as https://downloads.snyk.io. For example, FIPS-supported CLIs would use the base URL https://static.snyk.io/fips.
-* **Path to Snyk CLI:** Allow changing a file path of the Snyk CLI.
-* When **Automatically manage needed binaries** is checked, the plugin will download the CLI and update it regularly to the defined CLI Path. Uncheck this option if downloading the CLI is not possible due to your network configuration, for example, due to firewall rules, and you need to obtain the CLI through other means.
+* **Base URL to download the CLI:** Allow specifying an alternative download location of the CLI. This location must conform to the same file and folder layout as `https://downloads.snyk.io`. For example, FIPS-supported CLIs would use the base URL `https://static.snyk.io/fips`.
+* **Path to Snyk CLI:** Allow changing the file path of the Snyk CLI.
+* **Automatically manage needed binaries:** Check to have the plugin download the CLI and update it regularly to the defined CLI Path. Uncheck this option if downloading the CLI is not possible due to your network configuration, for example, due to firewall rules, and you need to obtain the CLI through other means.
 * **CLI release channel:** Allow specifying a release channel (**preview**, **rc**, **stable**) for the CLI. You can also pin the CLI to a version here, specifying the version, for example,`v1.1293.1`.
 
 ## User experience
