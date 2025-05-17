@@ -16,32 +16,30 @@ Follow these steps to set logging to the debug level.
 
 To obtain plugin logs, navigate to **Help** > **Show Log in Finder** (Mac) or **Show Log in Explorer** (Windows).
 
-<figure><img src="../../../.gitbook/assets/image (487).png" alt="Show log in Finder"><figcaption><p>Show log in Finder</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (487).png" alt="Show log in Finder" width="323"><figcaption><p>Show log in Finder</p></figcaption></figure>
 
-You can change the log level to debug using the IDE:
-
-Press `Shift Shift` quickly and select the tab **Actions** . Then search for `debug` . Alternatively, select the debug log settings in the menu (not available in Jetbrains Rider).
+You can change the log level to debug using the IDE. Press `Shift Shift` quickly and select the **Actions** tab. Then search for **Debug**. Alternatively, select the debug log settings in the menu (not available in JetBrains Rider).
 
 <figure><img src="../../../.gitbook/assets/image (488).png" alt="Actions tab"><figcaption><p>Actions tab</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (489).png" alt="Search for action"><figcaption><p>Search for action</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (489).png" alt="Search for action"><figcaption><p>Find the action</p></figcaption></figure>
 
-* `Snyk Code` enables normal debug logging (only until plugin version 2.6.0).
-* `Snyk CodeRequestLogging` enables a detailed protocol of the HTTP requests when communicating with the Snyk Code API (only until plugin version 2.6.0).
-* `Snyk Language Server` enables debug logging of the language server in the background.
+* **Snyk Code** enables normal debug logging (only until plugin version 2.6.0).
+* **Snyk CodeRequestLogging** enables a detailed protocol of the HTTP requests when communicating with the Snyk Code API (only until plugin version 2.6.0).
+* **Snyk Language Server** enables debug logging of the Language Server in the background.
 
 <figure><img src="../../../.gitbook/assets/image (490).png" alt="Snyk Language Server configuration"><figcaption><p>Snyk Language Server configuration</p></figcaption></figure>
 
 ## Trusted root certificates issues
 
-Refer to the [JetBrains documentation](https://www.jetbrains.com/help/idea/ssl-certificates.html) on how the IDE resolves custom certificates and how to import them if the plugin experiences any network failures due to incorrect configuration.
+See the [JetBrains documentation](https://www.jetbrains.com/help/idea/ssl-certificates.html) for information about how the IDE resolves custom certificates and how to import them if the plugin experiences any network failures due to incorrect configuration.
 
-## Snyk Code checkboxes disabled in IntelliJ
+## Snyk Code checkboxes disabled in JetBrains plugin
 
-Sometimes the checkboxes for Snyk Code in the JetBrains IntelliJ plugin are disabled. Some possible reasons follow:
+Sometimes the checkboxes for Snyk Code in the JetBrains plugin are disabled. Some possible reasons follow:
 
-* **Network or proxy settings:** If the network or proxy settings are not configured correctly, the checkboxes may be disabled. Check to see if there is an MITM proxy with certificate substitution. Also, verify whether connections to the endpoint API and deeproxy can be established using other tools, for example, the CLI or cURL.
-* **Incorrect endpoint address:** If the endpoint address in the Snyk Code plugin configuration is incorrect, the checkboxes will be disabled. To fix this, check that the endpoint address is correct by following the instructions. Restart IntelliJ afterwards.
+* Network or proxy settings: If the network or proxy settings are not configured correctly, the checkboxes may be disabled. Check to see if there is an MITM proxy with certificate substitution. Also, verify whether connections to the endpoint API and deeproxy can be established using other tools, for example, the CLI or cURL.
+* Incorrect endpoint addres&#x73;**:** If the endpoint address in the Snyk Code plugin configuration is incorrect, the checkboxes will be disabled. To fix this, refer to the instructions and check that the endpoint address is correct. Restart the plugin afterwards.
 * **Snyk Code is disabled server-side:** If Snyk Code is disabled in the Snyk Organisation's settings, the checkboxes will be disabled. To fix this, follow the instructions shown in the IntelliJ settings. Restart your IDE.
 * **Have a look at the JetBrains logs:** For additional information, see [Locating IDE log files](https://intellij-support.jetbrains.com/hc/en-us/articles/207241085-Locating-IDE-log-files).
 
@@ -86,21 +84,21 @@ The `NullPointerException: Cannot read field "objId" because "robj" is null` enc
 The most effective and recommended path to resolution is as follows:
 
 1. Update the Snyk Security plugin to version 2.12.2 or later. This version contains a specific workaround implemented by Snyk to mitigate the JCEF initialization problem in IntelliJ 2025.1.
-2. If updating the Snyk plugin does not resolve the issue, or as an alternative, apply the IntelliJ IDEA VM option `-Dide.browser.jcef.out-of-process.enabled=false` to revert to the in-process JCEF mode, which is known to bypass the bug described in IJPL-186252.
+2. If updating the plugin does not resolve the issue, or as an alternative, apply the IntelliJ IDEA VM option `-Dide.browser.jcef.out-of-process.enabled=false` to revert to the in-process JCEF mode, which is known to bypass the bug described in IJPL-186252.
 
-It is also advisable to keep IntelliJ IDEA updated to the latest patch release of version 2025.1.x or later, as future updates from JetBrains may include a permanent fix for IJPL-186252, rendering plugin-specific workarounds or manual VM option adjustments unnecessary. The dynamic between IDE platforms and their extensive plugin ecosystems often involves such diagnostic and adaptive challenges, where changes at one layer necessitate responses and adjustments at others to maintain overall system stability and user experience.
+It is also advisable to keep IntelliJ IDEA updated to the latest patch release of version 2025.1.x or later, as future updates may include a permanent fix for IJPL-186252, rendering plugin-specific workarounds or manual VM option adjustments unnecessary. The dynamic between IDE platforms and their extensive plugin ecosystems often involves such diagnostic and adaptive challenges, where changes at one layer necessitate responses and adjustments at others to maintain overall system stability and user experience.
 
 ## How Snyk Container and Kubernetes JetBrains integration works
 
 The JetBrains plugin scans your Kubernetes workload files and collects the images used. To troubleshoot whether the plugin is correctly scanning a container image, you can verify the following:
 
-* Whether the image definition is in the Kubernetes YAML file in the Project. Ensure you have the image specified with an image name mapped in the format `imageValue:imageKey` for the image yaml attribute, for example, `image:nginx:1.17.1`.
-* Whether the container image has been successfully built locally or pushed to a container registry or both. It is also a good practice to verify this before referring to the container image in the Kubernetes YAML file.
+* Whether the image definition is in the Kubernetes YAML file in the Project. Ensure you have the image specified with an image name mapped in the format `imageValue:imageKey` for the image YAML attribute, for example, `image:nginx:1.17.1`.
+* Whether the container image has been successfully built locally, pushed to a container registry, or both. It is also a good practice to verify this before referring to the container image in the Kubernetes YAML file.
 
-If you encounter an error [contact support](https://support.snyk.io).
+If you encounter an error, [contact Snyk support](https://support.snyk.io).
 
 For each image found, perform a test with the Snyk CLI.
 
-* For more information about how Snyk Container performs a test on the image, Refer to [Snyk CLI for Snyk Container](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/).
+* For more information about how Snyk Container performs a test on the image, refer to [Snyk CLI for Snyk Container](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/).
 * While testing the image, the CLI downloads the image if it is not already available locally in your Docker daemon.
-* Snyk plans to expand the scope of container scanning, so if there are more files, such as Dockerfiles or workflows that you want to be supported, submit a feature request [to Snyk support](https://support.snyk.io).
+* Snyk plans to expand the scope of container scanning, so if there are more files, such as Dockerfiles or workflows that you want to be supported, submit a feature request to [Snyk support](https://support.snyk.io).
