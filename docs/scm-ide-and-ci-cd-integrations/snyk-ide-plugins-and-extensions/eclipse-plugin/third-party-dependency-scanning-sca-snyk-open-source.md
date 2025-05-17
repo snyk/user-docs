@@ -2,7 +2,7 @@
 
 In the Eclipse plugin version 2.0.0 and later, Snyk has enhanced integrations with the native flows of Eclipse: inline code highlights with displays of information about the issue on hover, and Eclipse Problems integrations. The following shows all of these for a high-severity security vulnerability found in a `js` file:
 
-* The security vulnerability is highlighted in your code, with the underline color and icon adjacent to the line number indicating the severity of the issue. You can see the vulnerability ID and detailed information by hovering over the highlighted code. The hover information is limited to JavaEditor and GenericEditor, the latter being the default editor for plugins like Wild Web Developer.
+* The security vulnerability is highlighted in your code, with the underline color and icon adjacent to the line number indicating the severity of the issue. You can see the vulnerability ID and detailed information by hovering over the highlighted code. The hover information is limited to the JavaEditor and GenericEditor, the latter being the default editor for plugins like Wild Web Developer.
 * Vulnerabilities are displayed in the **Problems** view, which allows for filtering and grouping issues. The line containing the issue is shown in the **Location** column. You can navigate to the issue in the code by clicking the issue in the list of problems.
 
 <figure><img src="../../../.gitbook/assets/image (267) (1) (1) (1).png" alt=""><figcaption><p>Snyk Open Source issue displayed in Eclipse</p></figcaption></figure>
