@@ -35,7 +35,7 @@ When you enable `debug`, your code may be logged in the IDE log files, for examp
 
 To enable the debug log level,  you can add `-d` parameter through the **Extension Settings**, **Solution Settings**, **Additional Parameters**.
 
-<figure><img src="../../../.gitbook/assets/debug_logs.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/debug_logs.png" alt=""><figcaption><p>Adding the debug parameter</p></figcaption></figure>
 
 You must restart the IDE after you add this parameter and click **OK**.
 
@@ -57,7 +57,7 @@ If you are communicating with Snyk Support, they need the version number highlig
 
 #### Version numbers explained <a href="#version-numbers-explained" id="version-numbers-explained"></a>
 
-When customers mention that they are using a VS version, they usually say something like “we’re using VS 2022” or “VS 2019”. The year indicates the **major** part of the version. The “real” version is as follows:
+When customers mention that they are using a VS version, they usually say something like “we’re using VS 2022” or “VS 2019.” The year indicates the **major** part of the version. The “real” version is as follows:
 
 | 2022 | 17.\* |
 | ---- | ----- |
@@ -65,29 +65,29 @@ When customers mention that they are using a VS version, they usually say someth
 | 2017 | 15.\* |
 | 2015 | 14.\* |
 
-The other two parts of the version are the _minor_ and the _revision_ parts.
+The other two parts of the version are the `minor` and the `revision` parts.
 
-For example, your current may be VS 2022 version is 17.2.6, so the _minor_ is 2 and the _revision_ is 6.
+For example, your current version may be VS 2022. The version is 17.2.6, so the `minor` is `2` and the `revision` is `6`.
 
 #### How to upgrade
 
-Go to `Help → Check for Updates`. A window opens, stating whether VS is up to date or whether an update is needed.
+Go to **Help > Check for Updates**. A window opens, stating whether VS is up to date or whether an update is needed.
 
 #### What version does Snyk support? <a href="#what-does-snyk-support" id="what-does-snyk-support"></a>
 
-Snyk supports the latest version for VS 2015, 2017, 2019 and 2022, as long as the user is on the latest minor and revision version. A simple upgrade can ensure that.
+Snyk supports the latest version for VS 2015, 2017, 2019, and 2022, as long as the user is on the latest minor and revision version. An upgrade can ensure that.
 
-If a user has a bug with the Snyk plugin (especially bugs where the plugin fails to load and there are contains errors about missing files/DLLs), or both, the bug can be resolved by upgrading VS most of the time.
+If a user has a bug with the Snyk plugin, especially bugs where the plugin fails to load, and there are errors about missing files, DLLs, or both, typically, the bug can be resolved by upgrading Visual Studio
 
 ### Snyk Code ignores
 
-Snyk Code allows developers to ignore files in their codebase. This is done through the use of Snyk Code ignores. However, in Visual Studio, the `.snyk` file cannot be used to manage _Snyk Code_ Ignores for C# Projects. Instead, developers must use `.dcignore` or `.gitignore` files to manage Code Ignores for C# Projects in Visual Studio.
+Snyk Code allows developers to ignore files in their codebase. This is done through the use of Snyk Code Ignores. However, in Visual Studio, the `.snyk` file cannot be used to manage Snyk Code Ignores for C# Projects. Instead, developers must use `.dcignore` or `.gitignore` files to manage Code Ignores for C# Projects in Visual Studio.
 
 ### Settings storage
+
+The Snyk Plugin for Visual Studio stores settings in two locations.
 
 * `%HOME%/.config/configstore/snyk.json` contains the CLI settings. The Visual Studio plugin uses the following parameters from the CLI configuration
   * API Token
   * API endpoint
-* Additional settings are stored in a config file which is located at `settings.json` in the extension directory. This is a path starting with `%LocalAppData%\\Microsoft\\VisualStudio\\`, for example, `C:\\Users\\user\\AppData\\Local\\Microsoft\\VisualStudio\\17.0_b97950dd\\Extensions\\dnzygpqo.juy`
-
-The Snyk Plugin for Visual Studio stores settings in **two** locations.
+* Additional settings are stored in a config file located at `settings.json` in the extension directory. This is a path starting with `%LocalAppData%\\Microsoft\\VisualStudio\\`, for example, `C:\\Users\\user\\AppData\\Local\\Microsoft\\VisualStudio\\17.0_b97950dd\\Extensions\\dnzygpqo.juy`
