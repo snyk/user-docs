@@ -21,7 +21,7 @@ To authenticate follow these steps:
 
 
 
-    <figure><img src="../../../.gitbook/assets/SCR-20240821-qmuv.png" alt="Connect and turst workspace" width="359"><figcaption><p>Connect and turst workspace</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/SCR-20240821-qmuv.png" alt="Connect and turst workspace" width="359"><figcaption><p>Connect and trust workspace</p></figcaption></figure>
 2. The extension opens a new page in a default browser and asks you to log in to your Snyk account:
 
 <figure><img src="../../../.gitbook/assets/SCR-20240821-qogt.png" alt="Snyk login" width="375"><figcaption><p>Snyk login</p></figcaption></figure>
@@ -39,7 +39,7 @@ To authenticate follow these steps:
 The analysis starts automatically. If you have problems, see [OAuth 2.0 authentication does not work](../troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli-1.md).
 
 {% hint style="info" %}
-OAuth 2.0 tokens are not static and cannot be copied from Snyk account page.
+OAuth 2.0 tokens are not static and cannot be copied from the Snyk account page.
 {% endhint %}
 
 
@@ -67,7 +67,7 @@ To re-authenticate with a different account, follow these steps:
 
 1. Run the provided `Snyk: Log Out` command.
 
-<figure><img src="../../../.gitbook/assets/logging-out-command (1).png" alt="Snyk: Log Out" width="563"><figcaption><p>Snyk: Log Out</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/logging-out-command (1).png" alt="Snyk: Log Out" width="563"><figcaption><p>Snyk: Log out</p></figcaption></figure>
 
 2. When you have logged out, start authentication from scratch.
 
