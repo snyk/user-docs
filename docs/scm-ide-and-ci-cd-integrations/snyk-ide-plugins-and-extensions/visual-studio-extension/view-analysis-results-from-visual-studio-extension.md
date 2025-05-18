@@ -20,25 +20,27 @@ Users can configure the Snyk extension using the **Solution settings** in the **
 
 For Projects using Git repositories or when you specify a reference folder, Snyk can filter the displayed issues to show only issues introduced in the working branch.&#x20;
 
-This functionality _**reduces noise**_ and allows you to _**focus only on current changes**_. This helps prevent issues early, thus unblocking your CI/CD pipeline and speeding up your deliveries.
+This functionality reduces noise and allows you to focus only on current changes. This helps prevent issues early, thus unblocking your CI/CD pipeline and speeding up your deliveries.
 
 The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
-In **version 2.1.0** and later, you can choose **any folder** as your base for scanning.&#x20;
+In version 2.1.0 and later, you can choose **any folder** as your base for scanning.&#x20;
 
 To apply the filter and only see the new issues, use the **total/new** toggle in the summary panel.
 
 <div align="center" data-full-width="false"><figure><img src="../../../.gitbook/assets/image (696).png" alt="" width="375"><figcaption><p>Toggle in summary panel to show the total number of issues <br> and the number of issues in the checked out branch or current folder</p></figcaption></figure></div>
 
-The net new issues feature can also be enabled in the [scan settings](visual-studio-extension-configuration-environment-variables-and-proxy.md#scan-configuration) for the Visual Studio extension.&#x20;
+You can also enable net new issues feature in the [scan settings](visual-studio-extension-configuration-environment-variables-and-proxy.md#scan-configuration) for the Visual Studio extension.&#x20;
 
-For newly created feature branches, there will be no reported issues. That is an intended state, that developers would aim for, as shown in the screen image that follows:
+For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as shown in the screen image that follows:
 
 <figure><img src="../../../.gitbook/assets/image (697).png" alt="" width="481"><figcaption><p>Successful state, no net new issiues found</p></figcaption></figure>
 
-The base branch is usually automatically determined for each Git repository.&#x20;
+## Changing the base branch
 
-You may change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
+The base branch is usually determined automatically for each Git repository.&#x20;
+
+You can change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
 
 1. Toggle the total/new filter in the summary panel
 2. Click on the top-level node in the Issues tree to change the branch or directory.
