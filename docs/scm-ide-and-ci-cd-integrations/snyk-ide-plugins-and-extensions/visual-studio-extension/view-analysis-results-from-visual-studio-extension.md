@@ -30,7 +30,7 @@ To apply the filter and only see the new issues, use the **total/new** toggle in
 
 <div align="center" data-full-width="false"><figure><img src="../../../.gitbook/assets/image (696).png" alt="" width="375"><figcaption><p>Toggle in summary panel to show the total number of issues <br> and the number of issues in the checked out branch or current folder</p></figcaption></figure></div>
 
-The net new issues feature can also be enabled in the [scan settings](visual-studio-extension-configuration.md#scan-configuration) for the Visual Studio extension.&#x20;
+The net new issues feature can also be enabled in the [scan settings](visual-studio-extension-configuration-environment-variables-and-proxy.md#scan-configuration) for the Visual Studio extension.&#x20;
 
 For newly created feature branches, there will be no reported issues. That is an intended state, that developers would aim for, as shown in the screen image that follows:
 
