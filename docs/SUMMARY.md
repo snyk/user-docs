@@ -304,7 +304,7 @@
       * [Run an analysis with Visual Studio Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension.md)
       * [View analysis results from Visual Studio Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension/README.md)
         * [Analysis results: Snyk Code](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension/analysis-results-snyk-code.md)
-        * [Analysis results: Snyk IaC Configuration](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension/visual-studio-code-extension-analysis-results-snyk-iac-configuration.md)
+        * [Analysis results: Snyk IaC configuration](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension/analysis-results-snyk-iac-configuration.md)
         * [Analysis results: Snyk Open Source](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension/analysis-results-snyk-open-source.md)
       * [Troubleshooting for Visual Studio Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/troubleshooting-for-visual-studio-code-extension.md)
     * [Snyk Language Server](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/README.md)
