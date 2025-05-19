@@ -38,6 +38,10 @@ Snyk reports the following types of issues:
 * Infrastructure as Code issues: Found in infrastructure as code files; For more details, see [Snyk IaC Analysis results: Snyk IaC Configuration](visual-studio-code-extension-analysis-results-snyk-iac-configuration.md).
 
 {% hint style="info" %}
+Effective beginning on June 24, 2025, Snyk Code Quality issues will no longer be provided.
+{% endhint %}
+
+{% hint style="info" %}
 The exact capabilities and available scanners depend on your Snyk plan. Be sure your Organization's admin enabled all Snyk products prior to configuring any of them in the IDE plugin.
 {% endhint %}
 
