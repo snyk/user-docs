@@ -6,19 +6,19 @@ Snyk plugins are not supported on any operating system that has reached End Of L
 
 ## Failing CLI download
 
-The Snyk extension for Visual Studio Code downloads the CLI so the extension can operate. When the extension cannot download the required version of the CLI from the configured release channel, one of the following may be the reason:
+The Snyk extension for Visual Studio Code downloads the CLI so the extension can operate. When the extension cannot download the required version of the CLI from the configured release channel, the reason may be one of the following:
 
-1. Network connectivity issues
-2. Misconfigured release channel settings
-3. Temporary unavailability of the requested CLI version
+* Network connectivity issues
+* Misconfigured release channel settings
+* Temporary unavailability of the requested CLI version
 
 Follow these steps to resolve the issue:
 
 1. Check your internet connection and proxy settings.
 2. Verify the release channel configuration in the extension settings.
-3. Try switching to a different [release channel](../../../snyk-cli/releases-and-channels-for-the-snyk-cli.md) (for example, from **stable** to **preview**).
+3. Try switching to a different [release channel](../../../snyk-cli/releases-and-channels-for-the-snyk-cli.md), for example, from **stable** to **preview**.
 4. Restart Visual Studio Code and attempt to [reinstall the extension](./#how-to-install-and-set-up-the-extension).
-5. If the problem persists, check for any known issues or updates on the [Snyk GitHub VS Code](https://github.com/snyk/vscode-extension/releases) repository
+5. If the problem persists, check for any known issues or updates on the [Snyk GitHub VS Code](https://github.com/snyk/vscode-extension/releases) repository.
 
 ## Logs
 
@@ -36,11 +36,11 @@ Alternatively, you can add `-d` to additional parameters in the Snyk settings.
 
 You can obtain additional logs by navigating to **Help, Toggle Developer Tools,** and selecting the **Output** tab to see additional output. From the list displayed, select the **Snyk Security** channel and then the **Snyk Language Server** channel to see the debugging information.
 
-The Snyk Security channel has information on the extension itself. The Snyk Language Language Server channel receives the Language Server logs, displaying everything that is going on inside the Language Server and the CLI when you are using the extension.
+The Snyk Security channel has information on the extension itself. The Snyk Language Server channel receives the Language Server logs, displaying everything that is going on inside the Language Server and the CLI when you are using the extension.
 
 
 
-<figure><img src="../../../.gitbook/assets/2024-12-06-Ts-VS-Code-ext-obt-more-fin-.png" alt="" width="375"><figcaption><p>Obtain more information</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2024-12-06-Ts-VS-Code-ext-obt-more-fin-.png" alt="" width="375"><figcaption><p>Logs to use to obtain more information</p></figcaption></figure>
 
 ## Command not found (getActiveUser, LoginCommand, and so on)
 
