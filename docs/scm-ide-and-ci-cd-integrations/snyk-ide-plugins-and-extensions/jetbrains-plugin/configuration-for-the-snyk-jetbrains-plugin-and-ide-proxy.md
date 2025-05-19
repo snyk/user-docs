@@ -5,7 +5,7 @@ Navigate to **Preferences** > **Tools** > **Snyk** to set the following configur
 ## **Snyk account**
 
 * **Authentication method:** Specify whether to authenticate with OAuth2 or with an API token. `OAuth2` is the default
-* **Token**: Set the token to use for authentication with Snyk. For details, see [Authentication for the JetBrains plugins](authentication-for-the-jetbrains-plugin.md).
+* **Token**: Set the token to use for authentication with Snyk. For details, see [Authentication for the JetBrains plugins](authentication-for-the-jetbrains-plugins.md).
 * **Custom endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).\
   Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 * **Ignore unknown CA**: Ignore the SSL cert, if needed

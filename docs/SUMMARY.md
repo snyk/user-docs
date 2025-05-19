@@ -285,7 +285,7 @@
       * [Troubleshooting for the Eclipse plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/troubleshooting-for-the-eclipse-plugin.md)
     * [JetBrains plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/README.md)
       * [Configuration for the Snyk JetBrains plugin and IDE proxy](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md)
-      * [Authentication for the JetBrains plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/authentication-for-the-jetbrains-plugin.md)
+      * [Authentication for the JetBrains plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/authentication-for-the-jetbrains-plugins.md)
       * [JetBrains plugin folder trust](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/jetbrains-plugin-folder-trust.md)
       * [Run an analysis with the JetBrains plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/run-an-analysis-with-the-jetbrains-plugin.md)
       * [Troubleshooting for the JetBrains plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/troubleshooting-for-the-jetbrains-plugin.md)
