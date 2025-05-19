@@ -17,7 +17,7 @@ The Snyk Visual Studio extension allows you to analyze your code and open-source
 ## How to install and set up the extension
 
 {% hint style="info" %}
-For information about the versions of Visual Studio supported by the Visual Studio extension, see [Snyk IDE plugins and extensions](../).
+For information about the versions of Visual Studio supported by the Visual Studio extension, see [Snyk IDE plugins and extensions](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions).
 
 Snyk recommends always using the latest version of the Visual Studio extension.
 {% endhint %}
@@ -39,7 +39,7 @@ When the extension is installed, it automatically downloads the [Snyk CLI,](http
 
 Continue by following the instructions in the other Visual Studio extension docs:
 
-* [Visual Studio extension configuration](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-extension-configuration)
+* [Visual Studio extension configuration, environment variables, and proxy](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-extension-configuration)
 * [Visual Studio extension authentication](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-extension-authentication)
 * [Visual Studio Workspace trust](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/workspace-trust)
 * [Run an analysis with Visual Studio extension](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/run-an-analysis-with-visual-studio-extension)

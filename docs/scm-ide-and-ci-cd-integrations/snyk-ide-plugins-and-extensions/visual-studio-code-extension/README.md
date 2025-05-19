@@ -18,7 +18,7 @@ The Snyk Visual Studio Code extension allows you to analyze your code, open-sour
 ## How to install and set up the extension
 
 {% hint style="info" %}
-For information about the versions of Visual Studio Code supported by the Visual Studio Code extension, see [Snyk IDE plugins and extensions](../).
+For information about the versions of Visual Studio Code supported by the Visual Studio Code extension, see [Snyk IDE plugins and extensions](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions).
 
 Snyk recommends always using the latest version of the Visual Studio Code extension.
 {% endhint %}
@@ -41,9 +41,10 @@ When the extension is installed, it automatically downloads the [Snyk CLI,](http
 
 Continue by following the instructions in the other Visual Studio Code extension docs:
 
-* [Visual Studio Code extension configuration](visual-studio-code-extension-configuration-environment-variables-and-proxy.md)
+* [Visual Studio Code extension configuration, environment variables, and proxy](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-configuration-environment-variables-and-proxy)
 * [Visual Studio Code extension authentication](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-authentication)
 * [Visual Studio Code Workspace trust](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/workspace-trust)
+* [Create a .dcignore file](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/create-a-.dcignore-file)
 * [Run an analysis with Visual Studio Code extension](https://docs.snyk.io/integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension)
 * [View analysis results from Visual Studio Code extension](https://docs.snyk.io/integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension)
 
