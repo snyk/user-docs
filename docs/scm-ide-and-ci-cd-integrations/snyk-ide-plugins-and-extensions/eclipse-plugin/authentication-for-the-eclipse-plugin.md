@@ -9,7 +9,7 @@ Snyk supports the following protocols for authentication:
 
 ## Steps to authenticate using the OAuth 2.0 protocol
 
-After the extension is installed, to authenticate, follow these steps:
+After the plugin is installed, to authenticate, follow these steps:
 
 1. In the dialog that opens, set the Snyk API endpoint for a custom multi-tenant or single-tenant setup. For details, see [IDE URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).\
    \
@@ -23,7 +23,7 @@ After the extension is installed, to authenticate, follow these steps:
 
 <figure><img src="../../../.gitbook/assets/SCR-20240822-mibb (1) (1).png" alt="" width="563"><figcaption><p>Additional information and finish</p></figcaption></figure>
 
-3. The extension opens a new browser page; in response to the prompt, log in to your Snyk account.
+3. A new browser page opens; in response to the prompt, log in to your Snyk account.
 4. In the next prompt, the Snyk IDE plugin requests access to act on your behalf; click **Grant app access**.
 5. When you have authenticated successfully, a confirmation message appears; close the browser window and return to the IDE.
 

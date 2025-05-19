@@ -2,14 +2,14 @@
 
 To scan your Projects, you must authenticate with Snyk.&#x20;
 
-{% hint style="warning" %}
-Before authenticating, be sure you have set your region properly. For details, see [IDEs URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
-{% endhint %}
-
 Snyk supports the following protocols for authentication:
 
 * OAuth 2.0 (default)
 * Snyk API token (fallback option)
+
+{% hint style="warning" %}
+Before authenticating, be sure you have set your region properly. For details, see [IDEs URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
+{% endhint %}
 
 ## Steps to authenticate using the OAuth 2.0 protocol
 
