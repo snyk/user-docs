@@ -1,36 +1,34 @@
 # Run an analysis with Visual Studio Code extension
 
 {% hint style="info" %}
-Ensure the Snyk extension is configured, authenticated, and trusted for your current project, as described in the authentication and configuration pages.
+Ensure the Snyk extension is [configured](visual-studio-code-extension-configuration-environment-variables-and-proxy.md), [authenticated](view-analysis-results-from-visual-studio-code-extension/), and [trusted](visual-studio-code-workspace-trust.md) for your current Project.
 {% endhint %}
 
-You can trigger `snyk test` using one of these methods:
+You can trigger `snyk test` by using one of these methods:
 
 * automatic (default)
 * manual
 
-Snyk Code and Iac (configuration) scans are triggered automatically when your Project is opened and when any supported files are saved. This behavior can be turned off using an [existing configuration](visual-studio-code-extension-configuration-environment-variables-and-proxy.md#user-experience).
+Snyk Code and IaC configuration scans are triggered automatically when you open your Project and when you save any supported files. This behavior can be turned off in [user experience configuration](visual-studio-code-extension-configuration-environment-variables-and-proxy.md#user-experience).
 
-Snyk Open Source does not automatically run on save by default, but you can enable auto-scan in settings.
+Snyk Open Source, by default, does not automatically run on save, but you can enable auto-scan in the configuration settings.
+
+When the scan happens automatically, observe that the extension picks up the files and uploads them for analysis as soon as you open your Project or save any supported files.
+
+Snyk Open Source requires the Snyk CLI, so it is downloaded in the background.
+
+Snyk Code analysis runs quickly without the CLI, so results may be available quickly. If there is a delay, you see in-progress messages for each type of scan while Snyk scans your workspace for vulnerabilities and issues:
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-16 at 14.53.38.png" alt="" width="280"><figcaption><p>Snyk scan in progress</p></figcaption></figure>
 
 {% hint style="info" %}
 Ensure your files are saved before manually running an analysis.
 {% endhint %}
 
-To manually trigger snyk test (see the screen image that follows):
+To trigger `snyk test` manually:
 
-1. Click the Snyk icon in the sidebar to open the Snyk panel.
-2. Click the **Rescan** (play) button at the top of the plugin panel.
+1. Click the **Snyk icon** in the sidebar to open the Snyk panel.
+2. Click the **Rescan** (play) button at the top of the extension panel.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-qqsi.png" alt="How to manually trigger a Snyk analysis" width="355"><figcaption><p>How to manually trigger a Snyk analysis</p></figcaption></figure>
-
-## User experiences while scanning
-
-In the IDE, observe that the extension is already picking up the files and uploading them for analysis.
-
-Snyk Open Source requires the Snyk CLI, so it is downloaded in the background.
-
-Snyk Code analysis runs quickly without the CLI, so results may already be available. Otherwise, you see the following screen while Snyk scans your workspace for vulnerabilities and issues:
-
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-16 at 14.53.38.png" alt="Snyk scan in progress"><figcaption><p>Snyk scan in progress</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SCR-20241024-qqsi.png" alt="" width="355"><figcaption><p>Manually trigger a Snyk analysis</p></figcaption></figure>
 
