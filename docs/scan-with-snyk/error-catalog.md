@@ -351,6 +351,35 @@ The server cannot process the request due to an unexpected error. Check Snyk sta
 - [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ---
+# AiBom
+### [SNYK-AI-BOM-0001](#snyk-ai-bom-0001)
+
+#### Unexpected error
+
+An unexpected error occurred in the AI-BOM request. Review the request while providing the debug command flag `-d`. If the error persists, contact Snyk Support.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+
+### [SNYK-AI-BOM-0002](#snyk-ai-bom-0002)
+
+#### Forbidden
+
+You or your Organization do not have permission to use the AI-BOM feature.Check your user permissions or contact Snyk support.
+
+**HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
+
+
+### [SNYK-AI-BOM-0003](#snyk-ai-bom-0003)
+
+#### No supported files
+
+Snyk was unable to find any supported files for the aibom command.Ensure the directory you are scanning contains supported files.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+
+---
 # Custom Base Images
 ### [SNYK-CBI-0001](#snyk-cbi-0001)
 
@@ -708,6 +737,15 @@ CLI was unable to execute your SAST command, please take a look at the given det
 #### Feature under development
 
 This feature is under development and is not yet available for public use.
+
+**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+
+
+### [SNYK-CLI-0015](#snyk-cli-0015)
+
+#### Command is experimental
+
+This CLI command is experimental, which means it can change and break at any time.To run this command you must specify the --experimental flag as acknowledgement.
 
 **HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
@@ -2922,4 +2960,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-05-19T07:22:09.456Z
+--- Generated at 2025-05-20T08:30:25.181Z
