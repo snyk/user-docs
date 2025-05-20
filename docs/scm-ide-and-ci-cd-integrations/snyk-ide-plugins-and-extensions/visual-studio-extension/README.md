@@ -16,11 +16,7 @@ The Snyk Visual Studio extension allows you to analyze your code and open-source
 
 ## How to install and set up the extension
 
-{% hint style="info" %}
-For information about the versions of Visual Studio supported by the Visual Studio extension, see [Snyk IDE plugins and extensions](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions).
-
-Snyk recommends always using the latest version of the Visual Studio extension.
-{% endhint %}
+**Note:** For information about the versions of Visual Studio supported by the Visual Studio extension, see [Snyk IDE plugins and extensions](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions). Snyk recommends always using the latest version of the Visual Studio extension.
 
 You can use the Snyk Visual Studio extension in the following environments:
 

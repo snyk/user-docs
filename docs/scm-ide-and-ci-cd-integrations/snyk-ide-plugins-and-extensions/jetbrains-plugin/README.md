@@ -18,13 +18,7 @@ The Snyk JetBrains plugin allows you to analyze your code, open-source dependenc
 
 ## How to install and set up the extension
 
-{% hint style="info" %}
-For information about the versions of JetBrains supported by the JetBrains plugin, see [Snyk IDE plugins and extensions](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions).
-
-Snyk recommends always using the latest version of the JetBrains plugin.
-
-
-{% endhint %}
+**Note:** For information about the versions of JetBrains supported by the JetBrains plugin, see [Snyk IDE plugins and extensions](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions). Snyk recommends always using the latest version of the JetBrains plugin.
 
 You can use the Snyk JetBrains plugin in the following environments:
 
