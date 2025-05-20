@@ -374,7 +374,7 @@ You or your Organization do not have permission to use the AI-BOM feature. Check
 
 #### No supported files
 
-Snyk was unable to find any supported files for the aibom command.Ensure the directory you are scanning contains supported files.
+Snyk was unable to find any supported files for the aibom command. Ensure the directory you are scanning contains supported files.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -745,7 +745,7 @@ This feature is under development and is not yet available for public use.
 
 #### Command is experimental
 
-This CLI command is experimental, which means it can change and break at any time.To run this command you must specify the --experimental flag as acknowledgement.
+This CLI command is experimental, which means it can change and break at any time. To run this command you must specify the --experimental flag as acknowledgement.
 
 **HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
@@ -2960,4 +2960,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-05-20T15:39:46.539Z
+--- Generated at 2025-05-20T15:59:21.414Z
