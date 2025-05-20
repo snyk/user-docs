@@ -1,3 +1,19 @@
+## 2024-10-15 - Updated 2025-05-20
+
+### GET - `/orgs/{org_id}/projects` - Updated
+- added the optional property `data/items/attributes/settings/pull_requests/is_enabled` to the response with the `200` status
+
+
+
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added the optional property `data/attributes/settings/pull_requests/is_enabled` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added the optional property `data/attributes/settings/pull_requests/is_enabled` to the response with the `200` status
+
+
 ## 2024-10-15 - Updated 2025-05-15
 
 ### GET - `/orgs/{org_id}/policies` - Updated
