@@ -365,7 +365,7 @@ An unexpected error occurred in the AI-BOM request. Review the request while pro
 
 #### Forbidden
 
-You or your Organization do not have permission to use the AI-BOM feature.Check your user permissions or contact Snyk support.
+You or your Organization do not have permission to use the AI-BOM feature. Check your user permissions or contact Snyk support.
 
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
@@ -2960,4 +2960,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-05-20T09:35:23.871Z
+--- Generated at 2025-05-20T15:39:46.539Z
