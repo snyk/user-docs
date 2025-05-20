@@ -298,7 +298,7 @@
       * [Troubleshooting and known issues with Visual Studio extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/troubleshooting-and-known-issues-with-visual-studio-extension.md)
     * [Visual Studio Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/README.md)
       * [Visual Studio Code extension configuration, environment variables, and proxy](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-configuration-environment-variables-and-proxy.md)
-      * [Visual Studio Code extension authentication](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-authentication.md)
+      * [Authentication for Visual Studio Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/authentication-for-visual-studio-code-extension.md)
       * [Visual Studio Code Workspace trust](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-workspace-trust.md)
       * [Create a .dcignore file](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/create-a-.dcignore-file.md)
       * [Run an analysis with Visual Studio Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension.md)
