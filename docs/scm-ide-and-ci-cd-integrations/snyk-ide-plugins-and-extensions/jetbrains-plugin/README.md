@@ -42,7 +42,7 @@ Continue by following the instructions in the other JetBrains plugin docs:
 * [Configuration for the Snyk JetBrains plugin and IDE proxy](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugins/configuration-environment-variables-and-proxy-for-the-jetbrains-plugins)
 * [Authentication for the JetBrains plugin](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugins/authentication-for-the-jetbrains-plugins)
 * [JetBrains plugin folder trust](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugins/jetbrains-plugin-folder-trust)
-* [Run an analysis with the JetBrains plugins](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugins/run-an-analysis-with-the-jetbrains-plugins)
+* [Run an analysis with the JetBrains plugin](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/run-an-analysis-with-the-jetbrains-plugin)
 
 ## Support
 

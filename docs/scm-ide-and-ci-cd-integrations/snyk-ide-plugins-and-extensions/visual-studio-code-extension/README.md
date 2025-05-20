@@ -31,9 +31,9 @@ You can use the Snyk Visual Studio Code extension in the following environments:
 
 Snyk Visual Studio Code extension does not support remote and containerized environments:
 
-* [Cloud VS Code IDE](https://code.visualstudio.com/docs/editor/vscode-web)
+* [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web)
 * [VS Code Remote Development](https://code.visualstudio.com/docs/remote/remote-overview)
-* [Inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
+* [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
 
 Install the plugin at any time free of charge from the [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner) and use it with any Snyk account, including a Free account. For more information, see the [VS Code extension installation guide](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-an-extension).
 
@@ -42,7 +42,7 @@ When the extension is installed, it automatically downloads the [Snyk CLI,](http
 Continue by following the instructions in the other Visual Studio Code extension docs:
 
 * [Visual Studio Code extension configuration, environment variables, and proxy](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-configuration-environment-variables-and-proxy)
-* [Visual Studio Code extension authentication](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-authentication)
+* [Authentication for Visual Studio Code extension](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-authentication)
 * [Visual Studio Code Workspace trust](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/workspace-trust)
 * [Create a .dcignore file](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/create-a-.dcignore-file)
 * [Run an analysis with Visual Studio Code extension](https://docs.snyk.io/integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension)
