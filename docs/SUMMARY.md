@@ -291,7 +291,7 @@
       * [Troubleshooting for the JetBrains plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/troubleshooting-for-the-jetbrains-plugin.md)
     * [Visual Studio extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/README.md)
       * [Visual Studio extension configuration, environment variables, and proxy](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-extension-configuration-environment-variables-and-proxy.md)
-      * [Visual Studio extension authentication](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-extension-authentication.md)
+      * [Authentication for Visual Studio extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/authentication-for-visual-studio-extension.md)
       * [Visual Studio Workspace trust](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-workspace-trust.md)
       * [Run an analysis with Visual Studio extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/run-an-analysis-with-visual-studio-extension.md)
       * [View analysis results from Visual Studio extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/view-analysis-results-from-visual-studio-extension.md)
