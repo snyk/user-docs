@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-Snyk AppRisk and its third-party integrations are available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
+Snyk AppRisk and the third-party integrations associated with it are available only for Enterprise. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk AppRisk has many third-party integrations with security and development tools. If these tools are hosted within your private network and are not directly accessible from the internet, you must use Snyk Broker to establish a connection.
@@ -71,7 +71,7 @@ snyk/broker:universal
 
 ### Configuration complete
 
-After the Classic Broker connection with a third-party integration is established, the following message is displayed in the logs: `successfully established a websocket connection to the broker server`.
+After the Snyk Broker connection with a third-party integration is established, the following message is displayed in the logs: `successfully established a websocket connection to the broker server`.
 
 {% code overflow="wrap" %}
 ```docker
