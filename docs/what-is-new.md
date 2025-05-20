@@ -165,7 +165,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 * [Risk factors on assets](manage-assets/#inventory-overview) is now in [EA](getting-started/snyk-release-process.md#early-access) for Snyk AppRisk customers.
 * [Asset inventory components](manage-assets/assets-inventory-components.md#clusters) has been updated to include details on clusters.
-* Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](enterprise-setup/snyk-broker/using-snyk-apprisk-with-snyk-broker.md#sonarqube-sast-integration).
+* Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](enterprise-setup/snyk-broker/snyk-broker-apprisk.md#sonarqube-sast-integration).
 
 ### **Snyk CLI and IDEs**
 
