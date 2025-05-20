@@ -8,7 +8,7 @@ Snyk supports the following protocols for authentication:
 * Snyk API token (fallback option)
 
 {% hint style="warning" %}
-Before authenticating, be sure you have set your region properly. For details, see [IDEs URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#ides-urls).
+Before authenticating, be sure you have set your region properly. For details, see [IDEs URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#ides-urls).
 {% endhint %}
 
 ## Steps to authenticate using the OAuth 2.0 protocol
