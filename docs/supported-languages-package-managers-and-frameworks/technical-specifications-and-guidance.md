@@ -1,5 +1,9 @@
 # Technical specifications and guidance
 
+## Unicode character encoding
+
+Both Snyk Code and Snyk Open Source accept source code files in UTF-8 encoding. Consider converting source files to this encoding type before importing them into Snyk.
+
 ## Snyk Open Source
 
 Snyk analyzes and builds the dependencies tree depending on the language and package manager for the Project, as well as the location of the Project.
@@ -36,10 +40,6 @@ Snyk Code automatically excludes the following files from analysis:
 ### Filename length limitation
 
 The analysis is available only for files with names shorter than or equal to 255 characters. If the filename exceeds this limit, you receive an error. To ensure that all files are being analyzed, Snyk recommends shortening long filenames.
-
-### Unicode character encoding
-
-Snyk Code only accepts source code files in UTF-8 encoding. Consider converting source files to this encoding type before importing them into Snyk.
 
 ### Framework support&#x20;
 
