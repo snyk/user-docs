@@ -38,7 +38,7 @@ Broker exposes an endpoint at `/healthcheck`, which can be used to monitor the h
 
 In the case of the Broker Client, this endpoint also reports on the status of the Broker websocket connection. If the websocket connection is not open, this endpoint responds with status code `500 Internal Server Error` and `{ ok: false }` in the response body.
 
-This status can be tested by connecting to the Broker and running [http://localhost:8000/healthcheck](http://localhost:8000/healthcheck) with the default settings.
+This status can be tested by connecting to the Broker and running http://localhost:8000/healthcheck with the default settings.
 
 To change the location of the healthcheck endpoint, you can specify an alternative path in an environment variable:
 
@@ -86,7 +86,7 @@ If after running the Broker there is still an error connecting to the on-premise
 
 * If there is no log after performing the preceding steps, ensure that the customer has the correct Broker token. If so, ensure that the websocket has been established. Some firewalls will block this
 * Review the HTTP code in the request to the on-premise Git.
-  * **404 - Not found** - Ensure correct information in the docker run command.
+  * **404 - Not found** - Ensure correct information in the Docker run command.
   * **401/403** - Check credentials.
   * If there is any reference to SSL, this can be caused by a self-signed certificate. Ensure you have either mounted the correct certificate or use the flag `-e NODE_TLS_REJECT_UNAUTHORIZED=0.`
 
@@ -109,7 +109,7 @@ https.get('<URL_HERE>', res => {console.log(`statusCode: ${res.statusCode}`)})
 
 ## **Support of big manifest files (> 1Mb) for GitHub and GitHub Enterprise**
 
-Open Fix/Upgrade PRs or PR/recurring tests may fail because of fetching big manifest files (> 1Mb) failure. To address this issue, follow either the [Docker](classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup.md) or [Helm](classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/snyk-open-source-scans-sca-of-large-manifest-files-helm-setup.md) instructions to allow large manifest files.Containers go down when you log out of the host
+Open Fix/Upgrade PRs or PR/recurring tests may fail because of failure in fetching big manifest files (> 1Mb). To address this issue, follow either the [Docker](classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup.md) or [Helm](classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/snyk-open-source-scans-sca-of-large-manifest-files-helm-setup.md) instructions to allow large manifest files. Containers go down when you log out of the host
 
 If your containers go down, along with the Broker ecosystem, when you detach from their host, run the following to ensure the containers stay online when you log out:
 

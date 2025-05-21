@@ -6,13 +6,13 @@ Using Snyk Broker on Windows is not supported. Snyk recommends that Windows user
 
 ## Prerequisites for Snyk Broker
 
-When you set up Broker for region other than SNYK-US-01, before you can authenticate, you must set environment variables with specific [Broker URLs](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).\
+When you set up Broker for region other than SNYK-US-01, before you can authenticate you must set environment variables with specific [Broker URLs](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).\
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`
 
 The following are prerequisites for using Snyk Broker in any environment:
 
 * Client machine system requirements: one CPU, 256MB of RAM
-* Network access: an outbound TLS (443) to [https://broker.snyk.io](https://broker.snyk.io) AND [https://api.snyk.io](https://api.snyk.io) (or regional equivalent) that is also allowed by any firewalls installed on your network
+* Network access: an outbound TLS (443) to https://broker.snyk.io AND https://api.snyk.io (or regional equivalent) that is also allowed by any firewalls installed on your network
 * A Snyk account
 * Self-enabled Broker integration through the Snyk API or Broker enabled by contacting [Snyk Support](https://support.snyk.io)
 * A unique UUID token called a Broker token. See [Obtain the tokens required to set up a Snyk Broker](obtain-the-tokens-required-to-set-up-snyk-broker.md).
@@ -27,7 +27,7 @@ Snyk recommends configuring at least two separate instances of the Broker Client
 
 If you use a proxy server, ensure you configure it and any firewalls to allow the Broker Client inbound and outbound access as follows:
 
-* Outbound connection from the Broker Client running in your environment to [https://broker.snyk.io](https://broker.snyk.io) (or [https://broker.eu.snyk.io](https://broker.eu.snyk.io) / [https://broker.au.snyk.io](https://broker.au.snyk.io)) AND [https://api.snyk.io](https://api.snyk.io) (or [https://api.eu.snyk.io](https://api.eu.snyk.io) / [https://api.au.snyk.io](https://api.au.snyk.io)) on port 443.
+* Outbound connection from the Broker Client running in your environment to https://broker.snyk.io (or https://broker.eu.snyk.io / https://broker.au.snyk.io / https://broker.us.snyk.io) AND https://api.snyk.io (or https://api.eu.snyk.io / https://api.au.snyk.io / https://api.us.snyk.io) on port 443.
 * Internal connection that allows inbound access from the integration (SCM, CR) to the Broker Client at the BROKER\_CLIENT\_URL on the port you have configured (typically 8000). This is not inbound from the internet.
 
 Traffic initiated from the Snyk Broker Server side always uses the latest available Broker connection. All activity from the Snyk side, such as traffic driven by recurring tests, appears on only one of your replicas at a time. The amount of Snyk activity is proportional to the activity in the repositories or Jira items. That activity generates webhooks, which are distributed across all replicas.
