@@ -1,26 +1,23 @@
 # VB.NET
 
+{% hint style="info" %}
+Snyk for VB.NET is supported only for Snyk Code.
+{% endhint %}
+
 ## Applicability
 
-Snyk for VB.NET is supported only for Snyk Code.
-
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
-
-Available functions:
+The following functions are available for VB.NET:
 
 * SCM import, available for Snyk Code.&#x20;
 * Test or monitor your app through CLI and IDE, available for Snyk Code.&#x20;
 
-## Package managers and Supported files
+## Package managers and supported file extensions
 
-Snyk for VB.NET does not support any package manager but supports the following file formats:
-
-* Snyk Open Source: N/A
-* Snyk Code: `.vb`
+Snyk does not support any package managers for VB.NET, but supports the  `.vb` file format for Snyk Code.
 
 ## Frameworks and libraries
 
-Snyk for VB.NET supports the following frameworks and libraries:
+For VB.NET, Snyk supports the following frameworks and libraries:
 
 * .NET Core - Comprehensive&#x20;
 * .NET Framework 4.6-4.8.x - Comprehensive&#x20;
@@ -31,6 +28,11 @@ Snyk for VB.NET supports the following frameworks and libraries:
 
 ## Features
 
-The Reports feature is available for Snyk for VB.NET.
+The Reports feature is available for VB.NET.
 
-PR Checks configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and will not alert for VB.NET or other languages that do not support FixPRs.
+{% hint style="info" %}
+The **Snyk FixPR** feature is not available for Apex. This means that you will not be notified if the PR checks fail when the following conditions are met:
+
+* The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
+* "**Fixed in" available** is set to **Yes.**
+{% endhint %}
