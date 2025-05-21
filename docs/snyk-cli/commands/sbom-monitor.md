@@ -1,6 +1,8 @@
 # SBOM monitor
 
-**Feature availability:** This feature is available to customers on Snyk Enterprise plans.
+**Feature availability:**  SBOM monitor is in Closed Beta for Snyk Open Source and Snyk Container, available through the Snyk CLI  `sbom monitor` command. This feature is available only with Enterprise plans. If you want to get the feature up and running in your Group or Organization, contact your Snyk account team.
+
+**Note:** In order to use the SBOM monitoring feature, you must use a minimum of CLI version 1.1297.0.
 
 ## Usage
 
