@@ -10,16 +10,16 @@ Follow these steps configure an integration for OIDC Okta.
 2.  In the next step add an **App integration name** for your OIDC application, check the **Implicit** **Grant Type** and add the **Sign-in redirect URI** relevant to your [Snyk platform deployment](../../set-up-snyk-single-sign-on-sso.md). Remove the placeholder **Sign-out redirect URI** and choose your assignment access control before clicking **Save.**
 
     <figure><img src="../../../../.gitbook/assets/2 (1) (1) (1) (1).png" alt="Provide details for new web app integration"><figcaption><p>Provide details for new web app integration</p></figcaption></figure>
-3. On the application page that opens after saving, copy the details as per [OIDC information to provide to Snyk](../../set-up-snyk-single-sign-on-sso.md#oidc-information-to-provide-to-snyk) [following details](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#oidc-information-to-provide-to-snyk) and provide to your Snyk contact:
+3. On the application page that opens after saving, copy the details identified in  [OIDC information to provide to Snyk](../../set-up-snyk-single-sign-on-sso.md#oidc-information-to-provide-to-snyk) and provide to your Snyk contact:
    * Client ID
-   * If you are not using Implicit Grant type, the client secret
-4. Also share with Snyk the Issuer URL/domain. This is typically the URL you find in your browser address bar without "-admin", for example, https://customer.example.okta.com. It can also be found under the **Sign-On** tab of your application by editing the **OpenID Connect ID Token** from **Dynamic** Issuer to **Okta URL**.
+   * If you are not using the Implicit Grant type, the client secret
+4. Also, share with Snyk the Issuer URL/domain. This is typically the URL you find in your browser address bar without "-admin", for example, https://customer.example.okta.com. It can also be found under the **Sign-On** tab of your application by editing the **OpenID Connect ID Token** from **Dynamic** Issuer to **Okta URL**.
 
 If you wish to set up custom mapping, move on to the next section of this guide.
 
 ## Add custom mapping
 
-[Custom mapping](../) for an OIDC application in Okta is easily managed through custom attributes on group level.
+[Custom mapping](../) for an OIDC application in Okta is easily managed through custom attributes on the Group level.
 
 ### Create a custom app user attribute to contain both the Snyk Organization name and role
 
