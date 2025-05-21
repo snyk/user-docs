@@ -17,12 +17,12 @@ For **all other environments**, you can install Snyk Broker using the [Docker im
 
 {% hint style="info" %}
 **Multi-tenant settings for regions other than the default**\
-When you set up Snyk Broker for use in regions other than the default, additional environment variables with specific URLs are required. For the URLs and examples, see [Regional hosting and data residency, Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
+When you set up Snyk Broker for use in regions other than the default, additional environment variables with specific URLs are required. For the URLs and examples, see [Broker URLs](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).
 {% endhint %}
 
 ## Install using the Snyk Broker Helm Chart
 
-The Helm chart does not manage connectivity, and thus you will be responsible for managing [ingress](advanced-configuration-for-helm-chart-installation/ingress-options-with-snyk-broker-helm-installation.md) in the Kubernetes cluster.
+The Helm chart does not manage connectivity, and thus, you will be responsible for managing [ingress](advanced-configuration-for-helm-chart-installation/ingress-options-with-snyk-broker-helm-installation.md) in the Kubernetes cluster.
 
 To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
 
@@ -40,7 +40,7 @@ Then run the commands to customize the environment variables for each SCM, regis
 * [Nexus 2](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/nexus-repository-install-and-configure-using-helm.md) `scmType`: `nexus2`
 * [Jira](jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-helm.md) `scmType`: `jira`
 
-`scmType` designates the system type. For JFrog and Nexus, this is an artifact repository, For Jira, it is a ticket management system.
+`scmType` designates the system type. For JFrog and Nexus, this is an artifact repository. For Jira, it is a ticket management system.
 
 Running the commands for each SCM, registry, or Jira creates a namespace called `snyk-broker`. To deploy into an existing namespace, adjust the `-n` parameter and delete the `--create-namespace` parameter. See also [Deploying multiple Brokers in the same namespace](advanced-configuration-for-helm-chart-installation/deploying-multiple-brokers-in-the-same-namespace.md).
 

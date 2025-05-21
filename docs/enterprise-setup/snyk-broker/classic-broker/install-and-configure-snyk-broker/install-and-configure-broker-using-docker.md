@@ -22,11 +22,11 @@ The following pages explain how to install these special integrations.
 * [GitHub](github-prerequisites-and-steps-to-install-and-configure-broker/github-install-and-configure-using-docker.md)
 * [GitHub Enterprise](github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md)
 * [Bitbucket Server/Data Centre](bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-docker.md)
-* [Gitlab](gitlab-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-gitlab.md)
-* [Azure Repos](azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md)
+* [Gitlab](gitlab-prerequisites-and-steps-to-install-and-configure-broker/gitlab-install-and-configure-using-docker.md)
+* [Azure Repos](azure-repos-prerequisites-and-steps-to-install-and-configure-broker/azure-repos-install-and-configure-using-docker.md)
 * [JFrog Artifactory Repository](artifactory-repository-install-and-configure-broker/artifactory-repository-install-and-configure-using-docker.md)
-* [Nexus Repository Manager](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/set-up-snyk-broker-with-nexus-repository-manager.md)
-* [Jira](jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md)
+* [Nexus Repository Manager](nexus-repository-prerequisites-and-steps-to-install-and-configure-broker/nexus-repository-install-and-configure-using-docker.md)
+* [Jira](jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-docker.md)
 * [Snyk Broker - Container Registry Agent](../../snyk-broker-container-registry-agent/) (needed to connect to Container Registries)
 
 You can customize the configuration using the environment variables in the Docker images. For this reason, install separate, multiple instances of the Broker Client for different integration types to ensure proper configuration as well as redundancy.

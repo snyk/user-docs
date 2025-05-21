@@ -53,9 +53,9 @@ docker run --restart=always \
 
 &#x20;Paste the Broker Client configuration to start the Broker Client container.
 
-After the container is set up, and the Jira Integrations page shows the connection to Jira, under Projects you can create Jira tickets
+After the container is set up, and the Jira Integrations page shows the connection to Jira, under Projects, you can create Jira tickets
 
 ## **Basic troubleshooting for Broker with Jira**
 
-* Run `docker logs <container id>` to look for any errors, where container id is the Jira Broker container ID.
+* Run `docker logs <container id>` to look for any errors, where `container id` is the Jira Broker container ID.
 * Ensure relevant ports are exposed to Jira.
