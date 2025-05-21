@@ -6,27 +6,24 @@ C/C++ is supported for Snyk Open Source and Snyk Code.
 
 Specific considerations apply for the [Snyk CLI for open-source C++ scans](snyk-cli-for-open-source-c++-scans.md). [Guidance for Snyk for C/C++](guidance-for-snyk-for-c-c++.md) is provided.
 
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
+The following functions are available for C/C++:
 
-Available functions:
-
-* SCM import is available only for Snyk Code.
-* Test or monitor your app through CLI and IDE for both Snyk Open Source and Snyk Code.
-* Test your app's SBOM using `pkg:generic.`
-* Test your app's packages using `pkg:generic.`
-
-For Snyk IDE, no additional options are required. The Snyk plugin has views within the IDE for displaying results.
+* SCM import - available only for Snyk Code.
+* Test or monitor your app through CLI and IDE
+* Test your app's SBOM using `pkg:generic` or `pkg:conan` . For more information, see [Test an SBOM document for vulnerabilities](../../snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
+* Test your app's packages using `pkg:generic` or `pkg:conan` . For more information, see [List issues for a package](https://docs.snyk.io/snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package).
 
 ## Package managers and supported file extensions
 
-Snyk for C/C++ does not support any package managers but supports the following file formats:
+For Conan, Snyk supports [conan.io](https://conan.io/center) as a package registry.&#x20;
 
-* Snyk Open Source: N/A
-* Snyk Code: `.c`, `.cc`, `.cpp`, `.cxx`, `.h`, `.hpp`, `.hxx`
+No additional options are required for the Snyk IDE. You can display results within the IDE using the Snyk plugin views.
+
+For C/C++ for Snyk Code, Snyk supports the following file formats: `.c`, `.cc`, `.cpp`, `.cxx`, `.h`, `.hpp`, `.hxx`.
 
 ## Frameworks and libraries
 
-The following frameworks and libraries are supported in Snyk for C/C++:
+For C/C++, Snyk supports the following frameworks and libraries:
 
 * argparse parser - Comprehensive
 * Asio Library - Comprehensive
@@ -55,10 +52,15 @@ The following frameworks and libraries are supported in Snyk for C/C++:
 
 ## Features
 
-The following features are supported in Snyk for C/C++:
+&#x20;For C/C++, Snyk supports the following features:
 
 | Snyk Open Source                                   | Snyk Code          |
 | -------------------------------------------------- | ------------------ |
 | <ul><li>License scanning</li><li>Reports</li></ul> | Interfile analysis |
 
-PR Checks configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and will not alert for C/C++ or other languages that do not support FixPRs.
+{% hint style="info" %}
+The **Snyk FixPR** feature is not available for C/C++. This means that you will not be notified if the PR checks fail when the following conditions are met
+
+* The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
+* "**Fixed in" available** is set to **Yes.**
+{% endhint %}

@@ -12,7 +12,7 @@ The examples on this page use [HTTPie](https://httpie.io/), but you can use any 
 
 ## Supported purl types
 
-The current release supports the following `purl` types: `apk`, `cargo`, `cocoapods`, `composer`, `deb`, `gem`, `generic`, `golang`, `hex`, `npm`, `nuget`, `pub`, `pypi`, `rpm`, `swift` and `maven`.
+The current release supports the following `purl` types: `apk`, `cargo`, `cocoapods`, `conan`, `composer`, `deb`, `gem`, `generic`, `golang`, `hex`, `npm`, `nuget`, `pub`, `pypi`, `rpm`, `swift` and `maven`.
 
 If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io).
 

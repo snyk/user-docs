@@ -1,7 +1,7 @@
 # Test an SBOM document for vulnerabilities
 
 {% hint style="info" %}
-**Release status and feature availability**
+**Feature availability**
 
 The Snyk REST API is available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 
@@ -14,7 +14,7 @@ Snyk offers a [collection of API endpoints](https://apidocs.snyk.io/?version=202
 Supported SBOM formats are [CycloneDX](https://cyclonedx.org/) 1.4/1.5/1.6 JSON and [SPDX](https://spdx.dev/) 2.3 JSON.
 {% endhint %}
 
-Snyk identifies components within the SBOM by their [package URL](https://github.com/package-url/purl-spec) (purl). If a component does not contain a purl or the purl type is not supported, Snyk skips vulnerability analysis for that component. Supported purl types are: `apk`, `cargo`, `cocoapods`, `composer`, `deb`, `gem`, `golang`, `hex`, `maven`, `npm`, `nuget`, `pypi`, `rpm`, `swift`, and `generic` for unmanaged C/C++ dependencies.
+Snyk identifies components within the SBOM by their [package URL](https://github.com/package-url/purl-spec) (purl). If a component does not contain a purl or the purl type is not supported, Snyk skips vulnerability analysis for that component. Supported purl types are: `apk`, `cargo`, `cocoapods`, `conan`,`composer`, `deb`, `gem`, `golang`, `hex`, `maven`, `npm`, `nuget`, `pub`, `pypi`, `rpm`, `swift`, and `generic` for unmanaged C/C++ dependencies.
 
 ## How to test an SBOM document
 
