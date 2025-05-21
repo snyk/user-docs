@@ -18,7 +18,7 @@ To use the Broker Client with [Azure](https://azure.microsoft.com/en-us/services
 
 ## Docker run command to set up a Broker Client for Azure Repos
 
-**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk Essentials information **for one Azure organization**. **Enable** [Snyk Essentials](../../../../../scan-with-snyk/snyk-apprisk.md) to identify your application assets, monitor them, and prioritize the risks.
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk Essentials information **for one Azure organization**. **Enable** [Snyk Essentials](../../../../../scan-with-snyk/snyk-essentials.md) to identify your application assets, monitor them, and prioritize the risks.
 
 {% hint style="info" %}
 **Multi-tenant settings for regions**\

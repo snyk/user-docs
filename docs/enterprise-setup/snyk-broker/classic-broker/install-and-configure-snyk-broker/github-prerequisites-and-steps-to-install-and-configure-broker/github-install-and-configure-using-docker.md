@@ -12,7 +12,7 @@ To use the Snyk Broker Client with GitHub, **run** `docker pull snyk/broker:gith
 
 ## Docker run command to set up a Broker Client for GitHub
 
-**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files (with the Code Agent), and Snyk Essentials information. Enable [Snyk Essentials](../../../../../scan-with-snyk/snyk-apprisk.md) to identify your application assets, monitor them, and prioritize the risks.
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files (with the Code Agent), and Snyk Essentials information. Enable [Snyk Essentials](../../../../../scan-with-snyk/snyk-essentials.md) to identify your application assets, monitor them, and prioritize the risks.
 
 {% hint style="info" %}
 **Multi-tenant settings for regions**\
@@ -41,13 +41,13 @@ Snyk Essentials is set by default to **`false`**. Enable it by setting the flag 
 
 Paste the Broker Client configuration to start the Broker Client container.
 
-After the container is up, the GitHub Integrations page shows the connection to GitHub and you can `Add Projects`.
+After the container is up, the GitHub Integrations page shows the connection to GitHub, and you can `Add Projects`.
 
 ## Basic troubleshooting for Broker with GitHub
 
 ### **Support of big manifest files (> 1Mb) for GitHub**
 
-One reason that open Fix/Upgrade PRs or PR/recurring tests fail may be fetching big manifest files (> 1Mb). To address this issue, enable an additional variable in your broker by following the Additional instructions for [Snyk Open Source Scans (SCA) of large manifest files (Docker setup) ](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup)&#x20;
+One reason that open Fix/Upgrade PRs or PR/recurring tests fail may be fetching big manifest files (> 1Mb). To address this issue, enable an additional variable in your broker by following the Additional instructions for [Snyk Open Source Scans (SCA) of large manifest files (Docker setup)](../advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup.md). &#x20;
 
 {% hint style="info" %}
 To ensure the maximum possible security, Snyk does not enable this rule by default, as use of this endpoint means that the Snyk platform can theoretically access all files in this repository because the path does not include specific allowed file names.

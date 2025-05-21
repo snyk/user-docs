@@ -4,7 +4,7 @@ Before installing, review the [prerequisites](./) and the general instructions f
 
 This integration is useful to ensure a secure connection with your on-premise Bitbucket deployment.
 
-This page describes two distinct authentication schemes: [Basic Auth](data-center.md#configure-broker-to-be-used-with-bitbucket-using-basic-auth) and [Bearer (Personal Access Token)](data-center.md#configure-broker-to-be-used-with-bitbucket-using-personal-access-token-pat). Your Bitbucket Server settings might preclude Basic Auth usage, in which case Bearer Auth is preferred.
+This page describes two distinct authentication schemes: [Basic Auth](bitbucket-server-data-center-install-and-configure-using-docker.md#configure-broker-to-be-used-with-bitbucket-using-basic-auth) and [Bearer (Personal Access Token)](bitbucket-server-data-center-install-and-configure-using-docker.md#configure-broker-to-be-used-with-bitbucket-using-personal-access-token-pat). Your Bitbucket Server settings might preclude Basic Auth usage, in which case Bearer Auth is preferred.
 
 ## Configure Broker to be used with Bitbucket using Basic Auth
 
@@ -16,7 +16,7 @@ To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:b
 
 ## Docker run command to set up a Broker Client for Bitbucket using Basic Auth
 
-**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk Essentials information. Enable [Snyk Essentials](../../../../../scan-with-snyk/snyk-apprisk.md) to identify your application assets, monitor them, and prioritize the risks.
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files, and Snyk Essentials information. Enable [Snyk Essentials](../../../../../scan-with-snyk/snyk-essentials.md) to identify your application assets, monitor them, and prioritize the risks.
 
 {% hint style="info" %}
 **Multi-tenant settings for regions**\
@@ -79,9 +79,9 @@ Snyk Essentials is set by default to **`false`**. Enable it by setting the flag 
 
 Paste the Broker Client configuration to start the Broker Client container.
 
-Once the container is up, the Bitbucket Integrations page shows the connection to Bitbucket and you can `Add Projects`
+Once the container is up, the Bitbucket Integrations page shows the connection to Bitbucket, and you can `Add Projects`
 
 ## Basic troubleshooting for Broker with BitBucket
 
-* Run `docker logs <container id>` to look for any errors, where container id is the Bitbucket Broker container ID.
+* Run `docker logs <container id>` to look for any errors, where `container id` is the Bitbucket Broker container ID.
 * Ensure relevant ports are exposed to Bitbucket.
