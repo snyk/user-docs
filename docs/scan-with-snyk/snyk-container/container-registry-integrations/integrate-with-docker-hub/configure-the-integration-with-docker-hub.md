@@ -2,11 +2,15 @@
 
 This page explains how to enable and configure the integration between Docker Hub and Snyk. When the integration is complete, you can start managing your vulnerabilities.
 
+{% hint style="info" %}
+For the integration with Docker Hub, Snyk does not support Organization Access Tokens (OAT).
+{% endhint %}
+
 ## Enable the integration with Docker Hub
 
 1. Navigate to **Integrations**.
 2. Click **Docker Hub**.
-3. Enter your Docker Hub username and Access Token. For details, see [Generate Docker Hub Access Token](configure-the-integration-with-docker-hub.md#generate-docker-hub-access-token).
+3. Enter your Docker Hub username and Access Token.
 4. Click **Save**.\
    The page reloads with new options. The **Access Token** field is blank.\
    A confirmation message that the details were saved also appears in green at the top of the screen.
