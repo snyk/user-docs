@@ -1,47 +1,43 @@
 # TypeScript
 
-## Applicability
-
-Snyk supports TypeScript for Snyk Open Source and Snyk Code. In Snyk Open Source, TypeScript is supported in exactly the same way as [JavaScript](javascript/javascript-for-open-source.md).
-
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.&#x20;
-
 {% hint style="info" %}
-**TypeScript supported versions**
-
-You can use versions up to 4.2.
+TypeScript is supported for Snyk Open Source and Snyk Code.
 {% endhint %}
 
-Available functions:
+## Applicability
 
-* SCM import, available for Snyk Open Source and Snyk Code.
-* Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
+You can use TypeScript versions up to 4.2
+
+The following functions are available for TypeScript:
+
+* SCM import
+* Test or monitor your app through CLI and IDE
 * Test your app's SBOM: using `pkg:npm`&#x20;
 * Test your app's packages using `pkg:npm`
 
-## Package managers and Supported files
+## Package managers and supported file extensions
 
-Snyk for TypeScript supports npm, pnpm, Yarn as package managers with the following versions for them:&#x20;
+For TypeScript, Snyk supports npm, pnpm, Yarn as package managers, with the following versions:&#x20;
 
-* npm: `Lockfile 1`, `Lockfile 2`, `Lockfile 3, 7.*`&#x20;
+* npm: `Lockfile 1`, `Lockfile 2`, `Lockfile 3`
 * pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`&#x20;
 * Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
 
-As a package registry, it supports [npmjs.org](https://www.npmjs.org/).
+As a package registry, Snyk supports [npmjs.org](https://www.npmjs.org/).
 
-Snyk for TypeScript supports the following file formats:
+For TypeScript, Snyk supports the following file formats:
 
 * Snyk Open Source:&#x20;
-  * For npm: `package.json`, `package-lock.json`
-  * For pnpm: `pnpm-lock.yaml`,&#x20;
-  * For yarn: `yarn.lock`
-* Snyk Code: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`
+  * npm: `package.json`, `package-lock.json`
+  * pnpm: `pnpm-lock.yaml`
+  * Yarn: `yarn.lock`
+* For Snyk Code: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`
 
 ## Frameworks and libraries
 
-The following frameworks and libraries are supported in Snyk for TypeScript:&#x20;
+For TypeScript, Snyk supports the following frameworks and libraries:
 
-* All [JavaScript frameworks and libraries](javascript/#frameworks-and-libraries)
+* All JavaScript frameworks and libraries. For more information, see [JavaScript frameworks and libraries](javascript/#frameworks-and-libraries).
 * @Google Drive/generative-ai - Comprehensive&#x20;
 * @anthropic-ai/sdk - Comprehensive&#x20;
 * @huggingface/inference - Comprehensive&#x20;
@@ -115,10 +111,20 @@ The following frameworks and libraries are supported in Snyk for TypeScript:&#x2
 
 ## Features
 
-The following features are supported in Snyk for TypeScript:
+For TypeScript with Snyk Open Source, the following features are supported:
 
-| Snyk Open Source                                    | Snyk Code                                                                 |
-| --------------------------------------------------- | ------------------------------------------------------------------------- |
-| <ul><li>License scanning </li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
+* License scanning&#x20;
+* Reports
 
-PR Checks configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and will not alert for TypeScript or other languages that do not support FixPRs.
+&#x20;For TypeScript with Snyk Code, the following features are supported:
+
+* Reports
+* Custom rules
+* Interfile analysis
+
+{% hint style="info" %}
+The **Snyk FixPR** feature is not available for TypeScript. This means that you will not be notified if the PR checks fail when the following conditions are met:&#x20;
+
+* The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
+* "**Fixed in" available** is set to **Yes.**
+{% endhint %}
