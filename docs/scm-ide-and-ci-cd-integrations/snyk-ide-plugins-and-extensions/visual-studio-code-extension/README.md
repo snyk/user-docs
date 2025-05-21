@@ -6,6 +6,10 @@ Integrating security checks early in your development lifecycle helps you pass s
 
 The Snyk Visual Studio Code extension allows you to analyze your code, open-source dependencies, and Infrastructure as Code (IaC) configurations. With actionable insights directly in your IDE, you can address issues as they arise.
 
+{% hint style="info" %}
+The extension also works for other VSCode-based IDEs such as Windsurf, Cursor, and Eclipse Theia.
+{% endhint %}
+
 **Key features:**
 
 * **In-line issue highlighting:** Security issues are flagged directly within your code, categorized by type and severity for quick identification and resolution.
