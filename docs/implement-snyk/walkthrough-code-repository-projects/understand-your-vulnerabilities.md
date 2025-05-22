@@ -74,7 +74,7 @@ For open-source library scans by Snyk Open Source, you can also access fix and d
 
 ### Fixes tab
 
-Snyk's knowledge of the transitive dependencies in your project make it possible for Snyk to offer fix advice, in the **Fixes** tab:
+Snyk knowledge of the transitive dependencies in your Project makes it possible for Snyk to offer fix advice in the **Fixes** tab:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png" alt="Fix advice for Open Source vulnerabilities"><figcaption><p>Fix advice for Open Source vulnerabilities</p></figcaption></figure>
 
@@ -92,6 +92,6 @@ Click the file tree icon (![](<../../.gitbook/assets/image (201) (1) (1) (1) (1)
 
 For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
 
-Now you understand your vulnerability information, you can decide how to fix it.
+Now that you understand your vulnerability information, you can decide how to fix it.
 
 Continue with [Fix your first vulnerability](fix-your-first-vulnerability.md).

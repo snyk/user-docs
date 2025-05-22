@@ -72,7 +72,7 @@ This allows you to control settings for that Project by clicking on the cog icon
 
 <figure><img src="../../.gitbook/assets/image (208) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Click cog icon to edit settings"><figcaption><p>Click cog icon to edit Project settings</p></figcaption></figure>
 
-For example, you can change scan frequency, setting how often scans are run by default. See [View Project Settings](https://docs.snyk.io/introducing-snyk/introduction-to-snyk-projects/view-project-settings) for more information.
+For example, you can change scan frequency, setting how often scans are run by default. See [View and edit Project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md) for more information.
 
 ### Scan results
 
@@ -88,4 +88,4 @@ If your Snyk Open Source scan shows no vulnerabilities in your open-source libra
 
 Refer to the course [Introduction to the Snyk UI](https://learn.snyk.io/lesson/intro-to-snyk-ui/) to learn more about reviewing results from open-source, code, container, and infrastructure file scans.
 
-Now you understand the results you are seeing, you must [understand the vulnerabilities](understand-your-vulnerabilities.md) themselves.
+Now that you understand the results you are seeing, you must [understand the vulnerabilities](understand-your-vulnerabilities.md) themselves.
