@@ -1,5 +1,5 @@
 # Create Organizations
 
-You can use the [API-Import-Tool](https://docs.snyk.io/snyk-api/other-tools/tool-snyk-api-import/creating-orgs-in-snyk) and create organizations accordingly.
+You can use the [API-import tool](../../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) and [create organizations](../../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md) accordingly.
 
 See the [Snyk Account Structure](https://learn.snyk.io/lesson/groups-and-organizations/) lesson and the [Manage Organizations](../../../../snyk-admin/groups-and-organizations/organizations/create-and-delete-organizations.md) documentation for how to create Organizations manually.
