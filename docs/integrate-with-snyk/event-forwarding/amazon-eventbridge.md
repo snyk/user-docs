@@ -3,7 +3,7 @@
 The [Amazon EventBridge](https://aws.amazon.com/eventbridge/) integration sends Snyk platform events to EventBridge, allowing you to integrate Snyk events into your existing AWS environments. The integration can be configured to send two different types of events:
 
 * **Snyk issue events:** These events are sent when new issues are discovered in a Snyk Project, or when an issue is updated. Each event contains information about the vulnerability or other problem found, including whether a remediation is available.
-* **Snyk platform audit events:** These events are sent every time a Snyk user performs an action within the Snyk platform. For more information, see [Audit logs](https://docs.snyk.io/snyk-admin/manage-users-and-permissions/audit-logs). This event type is available with Snyk Enterprise plans. See [Pricing plans](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md) for details
+* **Snyk platform audit events:** These events are sent every time a Snyk user performs an action within the Snyk platform. For more information, see [Retrieve audit logs of user-initiated activity by API for an Org or Group](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md). This event type is available with Snyk Enterprise plans. For more information, see this page about [trials](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md) and [Plans and pricing](https://snyk.io/plans/).
 
 To set up the integration, there are two steps:
 
@@ -30,7 +30,7 @@ If this is the first time you have set up an Amazon EventBridge integration for 
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-auth.png" alt="" width="375"><figcaption></figcaption></figure>
 
-After completing the authorization flow you will be redirected to the settings page for the integration.&#x20;
+After completing the authorization flow, you will be redirected to the settings page for the integration.&#x20;
 
 ## Configure the integration in Amazon EventBridge
 
