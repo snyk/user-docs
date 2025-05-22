@@ -28,7 +28,7 @@ Snyk AppRisk provides additional features beyond [those available in Snyk Essent
 
 * You are a Snyk Enterprise customer.
 * Your account is entitled with access for Snyk AppRisk.
-* You are a Group Administrator for the Group associated with Snyk AppRisk, or you are assigned a Group level role with permissions to View Group and Edit AppRisk.
+* You are a Group Administrator for the Group associated with Snyk AppRisk, or you are assigned a Group level role with permissions to View Group and Edit Snyk Essentials.
 * The Group associated with Snyk AppRisk includes organizations that have onboarded Snyk application security products.
 * You have the necessary permissions to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk AppRisk for repository asset discovery.
 
@@ -41,12 +41,12 @@ The first import, synchronization, can take up to 24 hours to complete.
 
 ## Permissions
 
-You can access Snyk AppRisk with one of the Group level roles permissions described below. To access the permissions, navigate to **View groups** > **Snyk AppRisk permissions**.
+You can access Snyk AppRisk with one of the Group level roles permissions described below. To access the permissions, navigate to **View groups** > **Snyk Snyk Essentials permissions**.
 
-* **View AppRisk** - Grants you a read-only access to AppRisk.
-* **Edit AppRisk** - Grants you edit access to AppRisk, for example, edit policies, edit asset classification, and add the integration.
+* **View Snyk Essentials** - Grants you a read-only access to Snyk Essentials.
+* **Edit Snyk Essentials** - Grants you edit access to Snyk Essentials, for example, edit policies, edit asset classification, and add the integration.
 
-A Group Administrator has the **Edit AppRisk** permission assigned by default, and a Group Viewer has the **View AppRisk** permission assigned by default.
+A Group Administrator has the **Edit Snyk Essentials** permission assigned by default, and a Group Viewer has the **View Snyk Essentials** permission assigned by default.
 
 {% hint style="info" %}
 For more information on default user roles and permissions, see [Default user roles](../snyk-admin/user-roles/pre-defined-roles.md).
