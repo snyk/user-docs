@@ -58,7 +58,7 @@ The Snyk AppRisk functionality is split across several menu options from the Gro
 * [Policies](../../../manage-risk/policies/assets-policies/)
 * [Integrations for SCM](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and for [third-party](../../../integrate-with-snyk/#integrations-for-snyk-apprisk)
 * [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
-* [Analytics](../../../manage-risk/enterprise-analytics/application-analytics.md)
+* [Analytics](../../../manage-risk/analytics/application-analytics.md)
 
 #### Inventory view
 

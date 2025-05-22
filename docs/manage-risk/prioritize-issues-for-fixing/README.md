@@ -130,7 +130,7 @@ Snyk Issues Analytics provides a comprehensive overview of your entire applicati
 
 ### Issue Analytics
 
-[Issue Analytics](../enterprise-analytics/issues-analytics.md) provides a view into the performance of your AppSec program. You can use Issues Analytics to better understand the strengths and weaknesses of your program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
+[Issue Analytics](../analytics/issues-analytics.md) provides a view into the performance of your AppSec program. You can use Issues Analytics to better understand the strengths and weaknesses of your program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
 
 You can use this type of prioritization with the following Snyk Plan:&#x20;
 
@@ -141,7 +141,7 @@ You can use Issues Analytics at the Snyk tenant level, including both the Snyk G
 
 ### Application Analytics
 
-[Application Analytics](../enterprise-analytics/application-analytics.md) for Snyk AppRisk helps you assess your AppSec program from a top-down approach. It allows you to review applications, teams, and asset classes, and then focus on specific assets. You can improve security by identifying areas for enhancement, recognizing risks, and addressing blind spots. The tool retrieves data from all available groups for the tenant.
+[Application Analytics](../analytics/application-analytics.md) for Snyk AppRisk helps you assess your AppSec program from a top-down approach. It allows you to review applications, teams, and asset classes, and then focus on specific assets. You can improve security by identifying areas for enhancement, recognizing risks, and addressing blind spots. The tool retrieves data from all available groups for the tenant.
 
 Prioritize the displayed data by using the available filters, dimension views, and specific timeframes. \
 \

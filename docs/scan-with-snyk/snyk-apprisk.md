@@ -22,7 +22,7 @@ Snyk AppRisk provides additional features beyond [those available in Snyk Essent
 
 * [Integrations](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) with non-Snyk products to support security coverage and Insights use cases
 * [Insights](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md) for runtime context - providing risk factors to help with risk-based prioritization.
-* [Analytics](../manage-risk/enterprise-analytics/application-analytics.md) for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
+* [Analytics](../manage-risk/analytics/application-analytics.md) for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
 
 ## Prerequisites
 

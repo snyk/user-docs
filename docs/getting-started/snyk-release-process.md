@@ -43,7 +43,7 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
   * [Nightfall](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#nightfall-setup-guide)
   * [Dynatrace](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#dynatrace-setup-guide)
   * [Sysdig](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sysdig-setup-guide)
-* [Application Analytics](../manage-risk/enterprise-analytics/application-analytics.md)
+* [Application Analytics](../manage-risk/analytics/application-analytics.md)
 * [Snyk Runtime Sensor](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
 * Reports
   * [Repositories Tested in CI/CD report](../manage-issues/reporting/available-snyk-reports.md#repositories-tested-in-ci-cd-report)

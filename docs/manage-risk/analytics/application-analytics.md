@@ -6,13 +6,13 @@
 Application Analytics for Snyk AppRisk is in Early Access and available only with Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The Analytics menu, available at the tenant level, under the Application Analytics tab (available only with Snyk AppRisk). Application Analytics is designed to provide an in-depth analysis of your AppSec program, highlighting areas for improvement, emerging risks, and previously overlooked vulnerabilities to support AppSec managers and engineering teams.&#x20;
+The Analytics menu is available at the tenant level, under the Application Analytics tab (available only with Snyk AppRisk). Application Analytics is designed to provide an in-depth analysis of your AppSec program, highlighting areas for improvement, emerging risks, and previously overlooked vulnerabilities to support AppSec managers and engineering teams.&#x20;
 
 The dashboard displays essential data such as the status and trends of open issues, control coverage, and repository metadata. It also shows the state of imported assets. It provides a comprehensive and at-a-glance review of information from different viewpoints, such as asset class, application, or team, with a global filter bar to enhance your experience.
 
 ## Overview
 
-Application Analytics enables you to review and explore your AppSec program status and results from a top-down approach. You can start the exploration from a high, general level over applications, teams (owners), or asset classes and then narrow it down to the asset level.\
+Application Analytics enables you to review and explore your AppSec program status and results from a top-down approach. You can start the exploration from a high, general level over applications, teams (owners), or asset classes, and then narrow it down to the asset level.\
 You can enhance the security of your application by identifying areas for improvement, recognizing developing risks, and addressing blind spots. The Application Analytics retrieves the data from all the Groups available for the tenant.
 
 {% hint style="info" %}
@@ -39,7 +39,7 @@ You can refine the data even more by using the View by options. This focuses the
 
 The filters are located at the top left of your Application Analytics page, and you can customize them based on your needs.
 
-Here are the available filters:
+The following are the available filters:
 
 | Filter                                                                                                                                                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -85,7 +85,7 @@ The dashboard default view compares assets and issues metrics by asset class. Di
 
 [Asset class](../../manage-assets/assets-inventory-components.md#class) reflects the business criticality of the asset from A (most critical) to D (least critical).\
 By having this level of visibility, you can prioritize the most crucial assets in your inventory, applications, or code owners.\
-To associate assets with asset class, you can either change the asset class manually in the inventory screen or preferably define a [classification policy](../policies/assets-policies/use-cases-for-policies/classification-policy-use-case.md) that will automatically assign an asset class to your assets.
+To associate assets with asset class, you can either change the asset class manually in the inventory screen or, preferably, define a [classification policy](../policies/assets-policies/use-cases-for-policies/classification-policy-use-case.md) that will automatically assign an asset class to your assets.
 
 #### Applications and Owner view <a href="#applications-and-owners-view" id="applications-and-owners-view"></a>
 
@@ -94,7 +94,7 @@ To determine if this metadata is available in your repositories, check the compl
 
 ### Analytics timeframe
 
-You can select a specific date range for the assets analyzed data by adding the **Asset Introduction Date** filter. Applying that filter will impact all non-trend widgets, narrowing down from showing all available data, to data of assets that were introduced in the selected date range. The trend widgets are configured to show a fixed timeframe of the last 3 months.
+You can select a specific date range for the assets analyzed data by adding the **Asset Introduction Date** filter. Applying that filter will impact all non-trend widgets, narrowing them down from showing all available data to data for assets introduced in the selected date range. The trend widgets are configured to show a fixed timeframe of the last three (3) months.
 
 {% hint style="info" %}
 The data in Application Analytics is updated on an hourly basis.
@@ -110,9 +110,9 @@ Application Analytics - filters and views
 
 The Application Analytics dashboard focuses on three main data categories:
 
-* **Coverage** - provides the coverage status and the trends for the analyzed assets.
-* **Issues** - provides the status of the open issues.
-* **Assets** - provides the coverage status of the repository metadata and the status and trends for the imported assets.
+* Coverage - provides the coverage status and the trends for the analyzed assets.
+* Issues - provides the status of the open issues.
+* Assets - provides the coverage status of the repository metadata and the status and trends for the imported assets.
 
 ### Coverage
 
@@ -120,8 +120,8 @@ One of the leading missions of an AppSec team is ensuring appropriate scan cover
 
 In the Coverage section, you have information about the assets coverage.&#x20;
 
-* **Coverage overview** - provides information, in percentages, about the scanned assets, distributed by the scan category (SAST, SCA, Container, and Secrets).
-* **Coverage trend** - allows reviewing the coverage trend for the last 3 months. A growing trend will indicate that a larger portion of your asset inventory was scanned.
+* Coverage overview - provides information, in percentages, about the scanned assets, distributed by the scan category (SAST, SCA, Container, and Secrets).
+* Coverage trend - allows reviewing the coverage trend for the last three (3) months. A growing trend will indicate that a larger portion of your asset inventory was scanned.
 
 The Coverage section is based on the scan category and is not impacted by the selected view ( Asset Class, Application, or Owner).
 
@@ -137,10 +137,10 @@ Application Analytics Coverage view
 
 In the Issues section, you have information about the analyzed open issues.
 
-* **Open issues by category** - This graphic provides a clear overview of the number of issues distributed by the issue source category (SAST, SCA, Container, and Secrets) and by the selected view (allowing to compare between asset classes, applications and owners).
-* **Open issues breakdown** - This graphic provides information about the backlog of your open issues. The desired trend is a negative one, especially for higher asset classes or strategic applications. The selected view, allows comparing between asset classes, applications and owners.
+* Open issues by category - This graphic provides a clear overview of the number of issues distributed by the issue source category (SAST, SCA, Container, and Secrets) and by the selected view (allowing to compare between asset classes, applications and owners).
+* Open issues breakdown - This graphic provides information about the backlog of your open issues. The desired trend is a negative one, especially for higher asset classes or strategic applications. The selected view allows comparing asset classes, applications and owners.
 
-You can choose to view the issues based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection. When viewing by application or owner, only the top 5 applications or owners with most issues are displayed.
+You can choose to view the issues based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection. When viewing by application or owner, only the top five (5) applications or owners with the most issues are displayed.
 
 You can see more details about each graphic by hovering over the presented data. Extra controls are available on the right side of each graphic, allowing you to download it as an image.
 
@@ -154,8 +154,8 @@ Application Analytics Issues view
 
 In the Assets section, you have information about the analyzed assets.
 
-* **Risk factors breakdown -** a funnel that shows the progression of risk factors on code repositories and container images. Each layer is divided according to the selected view, asset class, application, or owner. When viewing by application or owner, only the top 5 applications/owners will be displayed according to the number of assets with risk factors.
-* **New assets introduced** - allows tracking the inventory size over time. The trend only counts repositories and container images. When viewing by application or owner, only the top 5 applications/owners with the most assets will be displayed.
+* Risk factors breakdown **-** a funnel that shows the progression of risk factors on code repositories and container images. Each layer is divided according to the selected view, asset class, application, or owner. When viewing by application or owner, only the top five (5) applications or owners will be displayed according to the number of assets with risk factors.
+* New assets introduced - allows tracking the inventory size over time. The trend only counts repositories and container images. When viewing by application or owner, only the top five (5) applications or owners with the most assets will be displayed.
 
 You can choose to view the Assets section based on Asset Class, Application, or Owner. The focus of the presented information is changed based on your View by selection.
 
@@ -171,8 +171,8 @@ Application Analytics Assets view
 
 The metadata completeness section provides information on the completeness of metadata from application context sources for your repositories.
 
-* **Repo metadata completeness** - displays the availability of application context metadata across code repositories (learn more about application context metadata [here](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/)).
-* **Repository source distribution** - provides information about the repositories distributed by the type of integration (SCM integrations, third-party integrations). When viewing by application or owner, only the top 5 applications/owners with the most assets will be displayed.
+* Repo metadata completeness - displays the availability of application context metadata across code repositories. For more information about context metadata, see [Application context for SCM Integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/).
+* Repository source distribution - provides information about the repositories distributed by the type of integration (SCM integrations, third-party integrations). When viewing by application or owner, only the top five (5)  applications or owners with the most assets will be displayed.
 
 The following video presents an overview of the Application Analytics Repository metadata completeness and source distribution view from the Snyk Web UI.
 

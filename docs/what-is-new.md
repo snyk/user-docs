@@ -103,7 +103,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * The Integrations UI at the Group level has been enhanced to improve readability and actionability and provide inline instructions and inline profile helpers.
 * Group-level [Integrations documentation](integrate-with-snyk/#integrations-syncing-time) has been updated with new, more accurate sync times.
 * The [asset filter](manage-risk/policies/assets-policies/create-policies.md) documentation has been consolidated into one section, and it now links to all relevant areas, such as Inventory and Asset Policy filters.
-* [Issues Analytics](manage-risk/enterprise-analytics/issues-analytics.md) is now available with a General Availability release status.
+* [Issues Analytics](manage-risk/analytics/issues-analytics.md) is now available with a General Availability release status.
 
 ### Other updates
 
@@ -232,8 +232,8 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 ### **Snyk AppRisk**&#x20;
 
 * The **Manage Risk > Analytics** pages have been consolidated to better reflect the two Snyk offerings:
-  * [Issues Analytics](manage-risk/enterprise-analytics/issues-analytics.md) - now in Early Access for Snyk Enterprise customers.
-  * [Application Analytics](manage-risk/enterprise-analytics/application-analytics.md) - available only for Snyk AppRisk customers.
+  * [Issues Analytics](manage-risk/analytics/issues-analytics.md) - now in Early Access for Snyk Enterprise customers.
+  * [Application Analytics](manage-risk/analytics/application-analytics.md) - available only for Snyk AppRisk customers.
 * The [Manage Assets](manage-assets/) documentation has been updated to reflect the addition of Quick filters. Users are only shown quick filters relevant to their entitlement.
 
 ### **Snyk CLI**
@@ -276,7 +276,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
   * Policies - [Assets policies](manage-risk/policies/assets-policies/) section
   * Integrations - [Snyk SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [Integrate with Snyk](integrate-with-snyk/) sections
   * Snyk AppRisk - [Scan with Snyk](scan-with-snyk/snyk-apprisk.md) section
-  * Analytics - [Manage risk](manage-risk/enterprise-analytics/application-analytics.md) section
+  * Analytics - [Manage risk](manage-risk/analytics/application-analytics.md) section
 
 ### Snyk Integrations
 
