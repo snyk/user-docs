@@ -27,7 +27,7 @@ To start performing basic tasks in the Snyk application:
 
 ## Create or log in to a Snyk account
 
-To create a free account or sign up for a pricing plan, navigate to [snyk.io](https://snyk.io/). For details, see [Snyk Pricing Plans](https://docs.snyk.io/implement-snyk/enterprise-implementation-guide/trial-limitations).&#x20;
+To create a free account or sign up for a pricing plan, navigate to [snyk.io](https://snyk.io/). For details, see [Snyk Pricing Plans](../implement-snyk/enterprise-implementation-guide/trial-limitations.md).&#x20;
 
 If your company has an existing Snyk account and uses single sign-on (SSO), use the SSO link provided by your administrators.
 
@@ -41,19 +41,19 @@ When you log in to the Snyk Web UI, Snyk shows your preferred (default) Organiza
 
 ## Set up a Snyk integration
 
-For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations - [Organization](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk) or [Group](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk-apprisk). For information about available integrators, see [Snyk SCM integrations](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations) and [Integrate with Snyk](https://docs.snyk.io/integrate-with-snyk) .
+For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations - [Organization](../integrate-with-snyk/) or [Group](../integrate-with-snyk/). For information about available integrators, see [Snyk SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) and [Integrate with Snyk](../integrate-with-snyk/).
 
 To scan your code, you must first integrate Snyk with the repository holding that code.
 
 ### Guided process
 
-After creating a Snyk account, you can follow the optional getting started walkthrough prompts to provide information and help Snyk guide your experience. This includes choosing an integration method, setting access permissions, configuring automation settings, and authenticating that integration.
+After creating a Snyk account, you can follow the optional getting-started walkthrough prompts to provide information and help Snyk guide your experience. This includes choosing an integration method, setting access permissions, configuring automation settings, and authenticating that integration.
 
 Alternatively, if you want to scan your code without authenticating to your source code repository, you can select the CLI integration. This allows you to run scans from your local machine and upload results to your Organization in Snyk.
 
 ### Manual process
 
-You can add an integration to Snyk manually at any point, from the Snyk Web UI. To do this, navigate to **Integrations** > **Source Control**. For more information, see [Integrate with Snyk](../integrate-with-snyk/).
+You can add an integration to Snyk manually at any point from the Snyk Web UI. To do this, navigate to **Integrations** > **Source Control**. For more information, see [Integrate with Snyk](../integrate-with-snyk/).
 
 {% hint style="info" %}
 If an integration is already configured for your Organization, it is marked as **Configured**.
