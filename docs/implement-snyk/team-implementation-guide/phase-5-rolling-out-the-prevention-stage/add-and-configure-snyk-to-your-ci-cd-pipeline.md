@@ -23,9 +23,7 @@ When running a test in your pipeline, there are filters available to determine w
 
 ## CLI supporting tools
 
-If you use the Snyk CLI in your pipeline, a range of supporting [Snyk Tools](../../../scan-with-snyk/snyk-tools/) provide additional functionality, including:
-
-* [snyk-filter](https://docs.snyk.io/snyk-api/other-tools/tool-snyk-filter) which can be used for more complex "fail" criteria, such as “fail if more than three High severity vulnerabilities are found”.
+If you use the Snyk CLI in your pipeline, a range of supporting [Snyk Tools](../../../scan-with-snyk/snyk-tools/) provide additional functionality, including [`snyk-filter`](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md), which can be used for more complex "fail" criteria, such as “fail if more than three High severity vulnerabilities are found”.
 
 ## Also see
 
