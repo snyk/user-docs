@@ -5,12 +5,12 @@
 
 Risk Score is in Early Access and available for Snyk Open Source and Snyk Container, with Snyk Enterprise and Snyk Free plans. If you want to set it up in your Group, contact your Snyk account team.
 
-Use [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
+Use [Snyk Preview](../../snyk-admin/snyk-preview.md) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
 {% endhint %}
 
 The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for all vulnerability-type issues. License issues are not supported. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
 
-Risk score remains the same over time if the contributing factors do not change. However, some contributing factors,  such as Exploit Prediction Scoring System (EPSS), potentially can change frequently. The number of days since the vulnerability was first published is also a factor and causes the score to change once, when the number of days becomes more than one year and the likelihood subscore decreases.&#x20;
+Risk score remains the same over time if the contributing factors do not change. However, some contributing factors,  such as the Exploit Prediction Scoring System (EPSS), can potentially change frequently. The number of days since the vulnerability was first published is also a factor and causes the score to change once, when the number of days becomes more than one year, and the likelihood subscore decreases.&#x20;
 
 Since real risk is scarce, you should expect a significant drift in the distribution of scores, as can be seen in this example of Project score distributions:&#x20;
 
@@ -21,18 +21,18 @@ Risk Score replaces the Priority Score directly. See the [priority score docs](p
 Risk Score is not available in the CLI.&#x20;
 
 {% hint style="info" %}
-The Risk Score replaces the Priority Score only after the Snyk Open Source and Snyk Container Projects are re-tested.&#x20;
+The Risk Score replaces the Priority Score only after the Snyk Open Source and Snyk Container Projects are retested.&#x20;
 
-You can wait for the Projects to be automatically re-tested (daily for Snyk Open Source and weekly for Snyk Container), or you can manually re-test the Project.
+You can wait for the Projects to be automatically retested (daily for Snyk Open Source and weekly for Snyk Container), or you can manually retest the Project.
 {% endhint %}
 
 {% hint style="warning" %}
-In the API, the relevant fields are still named with `priority.`When Risk Score is enabled, the scores and factors populated in these fields are based on the Risk Score model as part of the early access stage.
+In the API, the relevant fields are still named with `priority`. When Risk Score is enabled, the scores and factors populated in these fields are based on the Risk Score model as part of the early access stage.
 {% endhint %}
 
 ## Explore the Risk Score by issue&#x20;
 
-When looking at Issue card information, hover over the score to see the type of score (Priority or Risk Score) that is being displayed. The Risk Score tooltip provides information about the subscore and the Risk Factors contributing to the score.
+When looking at the Issue card information, hover over the score to see the type of score (Priority or Risk Score) that is being displayed. The Risk Score tooltip provides information about the subscore and the Risk Factors contributing to the score.
 
 <div data-full-width="false"><figure><img src="../../.gitbook/assets/image (118) (2).png" alt="Risk Score tooltip" width="563"><figcaption><p>Risk Score tooltip showing Impact and Likelihood</p></figcaption></figure></div>
 
@@ -84,23 +84,25 @@ Fixability is no longer considered part of the Score Calculation, as the effort 
 
 #### Confidentiality
 
-Represents the impact on customer’s data confidentiality, based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-1-Confidentiality-C).\
+Represents the impact on the customer’s data confidentiality, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-1-Confidentiality-C).\
 **Possible input values:** `None`, `Low`, `High`
 
 #### Integrity
 
-Represents the impact on customer’s data integrity, based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-2-Integrity-I).\
+Represents the impact on the customer’s data integrity, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-2-Integrity-I).\
 **Possible input values:** `None`, `Low`, `High`
 
 #### Availability
 
-Represents the impact of customer’s application availability based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-3-Availability-A).\
-**Possible input values:** `None`, `Low`, `High`
+Represents the impact of the customer’s application availability based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-3-Availability-A).\
+Possible input values are `None`, `Low`, and `High.`
 
 #### Scope
 
-Indicates whether the vulnerability can affect components outside of the target’s security scope, based on [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-2-Scope-S).\
-The objective impact subscore is calculated based on the CVSS impact subscore. For more information, see the references on CVSS definitions above and the [subscore equations](https://www.first.org/cvss/v3.1/specification-document#7-1-Base-Metrics-Equations).
+Indicates whether the vulnerability can affect components outside of the target’s security scope, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-2-Scope-S).\
+
+
+The objective impact subscore is calculated based on the CVSS impact subscore. For more information, see the references to CVSS definitions above and the [subscore equations](https://www.first.org/cvss/v3.1/specification-document#7-1-Base-Metrics-Equations).
 
 | Possible input value | Score impact                      |
 | -------------------- | --------------------------------- |
@@ -156,9 +158,10 @@ Represents the existence and maturity of any public exploit retrieved and valida
 
 #### EPSS score&#x20;
 
-Exploit Prediction Scoring System (EPSS) predicts whether a CVE will be exploited in the wild based on an elaborate model created and owned by the FIRST Organization. \
+The Exploit Prediction Scoring System (EPSS) predicts whether a CVE will be exploited in the wild based on an elaborate model created and owned by the FIRST Organization.
+
 The probability is the direct output of the EPSS model and conveys an overall sense of the threat of exploitation in the wild. This data is updated daily, relying on the latest available EPSS model version. See the EPSS [documentation](https://www.first.org/epss/articles/prob_percentile_bins) for more details.\
-**Possible input values:** `EPSS score [0.00-1.00]`
+The possible input values are the `EPSS score [0.00-1.00]`
 
 {% hint style="info" %}
 The likelihood subscore increases significantly according to the EPSS score.
@@ -269,7 +272,8 @@ Building on [past studies](https://arxiv.org/pdf/2301.07972.pdf), Snyk research 
 
 #### Reachability&#x20;
 
-Snyk static code analysis determines whether the vulnerable method is being called. This is supported for Java and JavaScript. For more details, navigate to the [Reachability analysis](reachability-analysis.md) page. \
+Snyk static code analysis determines whether the vulnerable method is being called. This is supported for Java and JavaScript. For more details, navigate to the [Reachability analysis](reachability-analysis.md) page.&#x20;
+
 When Reachability is not enabled, the Likelihood subscore will not change, and the factor will not show up.
 
 | Possible input values | Score impact                                                            |
