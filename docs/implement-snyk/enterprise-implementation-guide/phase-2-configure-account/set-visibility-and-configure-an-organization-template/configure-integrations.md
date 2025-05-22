@@ -84,7 +84,7 @@ For `snyk iac test --report` and `snyk code test --report` (beta), finding issue
 If you want to passively test this, including the `--report` option requires either setting the build step to always continue or an alternative like concatenating logic equating to `or true`, that is,  `snyk code test --report || true.` The exact syntax will depend on the ecosystem the CLI is running in.&#x20;
 {% endhint %}
 
-Plugins like [Snyk Filter](https://docs.snyk.io/snyk-api/other-tools/tool-snyk-filter) for advanced filtering and [Snyk Delta](https://docs.snyk.io/snyk-api/other-tools/tool-snyk-delta) for highlighting new issues are quite popular for configuring pipelines.
+Plugins like [Snyk Filter](https://docs.snyk.io/snyk-api/other-tools/tool-snyk-filter) for advanced filtering and [`snyk-delta`](../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md) for highlighting new issues are quite popular for configuring pipelines.
 
 Demonstrations of various pipeline integrations can be found on [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples)
 
