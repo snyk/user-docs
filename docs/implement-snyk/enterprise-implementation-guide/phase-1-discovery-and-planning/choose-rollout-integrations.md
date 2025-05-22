@@ -27,12 +27,12 @@ The advantages of SCM integrations are:
 * Visibility into repository security posture
 * Automatic Scan on code change
 * Immediate feedback on issues for the developer
-* Onboarding repositories can be configured through the UI or [API/API Import Tool](https://docs.snyk.io/snyk-api-info/other-tools/tool-snyk-api-import)
+* Onboarding repositories can be configured through the UI or [API/API Import Tool](../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/)
 * Support for Cloud and Private Code Repositories on the Snyk Enterprise plan
 
 See [Snyk SCM integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) for more details.
 
-If you have an on-premise Git repository, you must consider deploying [Snyk Broker](https://docs.snyk.io/snyk-admin/snyk-broker) for Snyk to communicate with your repositories.
+If you have an on-premise Git repository, you must consider deploying [Snyk Broker](../../../enterprise-setup/snyk-broker/) for Snyk to communicate with your repositories.
 
 {% hint style="info" %}
 Enterprise customers can enable and manage [Snyk Broker](../../../enterprise-setup/snyk-broker/) using the API.&#x20;
@@ -45,7 +45,7 @@ Enterprise customers can enable and manage [Snyk Broker](../../../enterprise-set
 Integrating Snyk into CI/CD pipelines, such as Jenkins, Travis CI, or CircleCI, automates security checks during the build and deployment process. This ensures that vulnerabilities are detected early in the software development lifecycle and prevents their propagation into production. Typical features include:
 
 * (Optional) Ability to passively monitor results during build and view results in Snyk
-* (Optional) Ability to test and potentially break the build if results are found based on criteria you specified
+* (Optional) Ability to test and potentially break the build if results are found based on the criteria you specified
 
 The advantages of CI/CD integrations are:
 
