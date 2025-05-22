@@ -36,10 +36,10 @@ For `snyk iac test --report` and `snyk code test --report` (beta), finding issue
 If you want to test passively,  the inclusion of the `--report` argument requires either setting the build step to always continue or an alternative like concatenating logic equating to "or true" (i.e. `snyk code test --report || true`). The exact syntax depends on the ecosystem the CLI is run in.&#x20;
 {% endhint %}
 
-When configuring pipelines, you can use popular plugins like [Snyk Filter](https://docs.snyk.io/snyk-api/other-tools/tool-snyk-filter) for advanced filtering.&#x20;
+When configuring pipelines, you can use popular plugins like [`snyk-filter`](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) for advanced filtering.&#x20;
 
 {% hint style="info" %}
-Some plugins may not be useable on the Team plan if they require API access, as it is a feature available on the Snyk Enterprise plan.
+Some plugins that require API access may not be usable on the Team plan, as API access is available on the Snyk Enterprise plan.
 {% endhint %}
 
 To see demonstrations of pipeline integrations, see [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples).
