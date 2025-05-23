@@ -1,9 +1,9 @@
 # Third-party integrations for Snyk AppRisk
 
-The Integrations page shows all active integrations, including data from your existing Snyk Organizations that are automatically synced and provides access to the Integration Hub.
+The Integrations page shows all active integrations, including data from your existing Snyk Organizations that are automatically synced, and provides access to the Integration Hub.
 
 {% hint style="info" %}
-The Loaded package risk factor is not supported by Snyk for operating system packages (such as Debian packages), only for packages which are hosted under package managers such as npm, Maven, or PyPI.
+The Loaded package risk factor is not supported by Snyk for operating system packages (such as Debian packages), only for packages hosted under package managers such as npm, Maven, or PyPI.
 {% endhint %}
 
 You can customize your AppRisk integrations from the **Integrations Hub** where the following integrations are available:
@@ -34,7 +34,7 @@ Veracode for Snyk AppRisk is in Early Access and available only with Snyk Enterp
 
 ### Prerequisites <a href="#verocode-prerequisites" id="verocode-prerequisites"></a>
 
-The Veracode application concept is matched into the Snyk AppRisk repository assets. You need to create and utilize the Veracode custom field by using the [Veracode API](https://app.swaggerhub.com/apis/Veracode/veracode-applications_api_specification/1.0#/Application%20information%20API/updateApplicationUsingPUT). Access the [Veracode custom metadata field](https://docs.veracode.com/r/t_create_custom_metadata) for more details.
+The Veracode application concept is matched to the Snyk AppRisk repository assets. You need to create and utilize the Veracode custom field by using the [Veracode API](https://app.swaggerhub.com/apis/Veracode/veracode-applications_api_specification/1.0#/Application%20information%20API/updateApplicationUsingPUT). Access the [Veracode custom metadata field](https://docs.veracode.com/r/t_create_custom_metadata) for more details.
 
 Ensure you are adding a custom field called repoURL:
 
@@ -80,7 +80,7 @@ Snyk AppRisk does not support the Checkmarx One integration.
 ### Prerequisites <a href="#checkmarx-prerequisites" id="checkmarx-prerequisites"></a>
 
 * Install and configure your [Snyk Broker](../../../enterprise-setup/snyk-broker/snyk-broker-apprisk.md#checkmarx-sast-integration) connection for Snyk AppRisk.&#x20;
-* Ensure you have properly used Git Setting for your Checkmarx Project. Access the Checkmarx [Set project's remote source settings as GIT](https://checkmarx.stoplight.io/docs/checkmarx-sast-api-reference-guide/8312d35369b9b-set-project-s-remote-source-settings-as-git) documentation page for more details.&#x20;
+* Ensure you have properly used Git Setting for your Checkmarx Project. For more details, see the Checkmarx [Set project's remote source settings as GIT](https://checkmarx.stoplight.io/docs/checkmarx-sast-api-reference-guide/8312d35369b9b-set-project-s-remote-source-settings-as-git) documentation page.&#x20;
 
 ### Required parameters <a href="#checkmarx-required-parameters" id="checkmarx-required-parameters"></a>
 
@@ -89,7 +89,7 @@ Snyk AppRisk does not support the Checkmarx One integration.
 
 ### Integration Hub setup <a href="#checkmarx-integration-hub-setup" id="checkmarx-integration-hub-setup"></a>
 
-After you have installed and configured Snyk Broker for AppRisk and you successfully established a connection for Checkmarx SAST, you also need to configure the integration from the Snyk AppRisk Integration Hub. &#x20;
+After you have installed and configured Snyk Broker for AppRisk and have successfully established a connection for Checkmarx SAST, you also need to configure the integration from the Snyk AppRisk Integration Hub. &#x20;
 
 1. Open the **Integration Hub** menu.&#x20;
 2. Select the **SAST** tag and search for Checkmarx.&#x20;
@@ -216,7 +216,7 @@ How GitGuardian uses data in Snyk
 Dynatrace for Snyk AppRisk is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
+The following risk factors are reported from the Dynatrace runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
 
 {% hint style="info" %}
 The supported languages for the Loaded package risk factor reported from the Dynatrace integration are detailed on the Dynatrace [Supported technologies](https://docs.dynatrace.com/docs/platform-modules/application-security/getting-started/get-started-with-application-security#tech) page.
@@ -277,7 +277,7 @@ After the Dynatrace runtime data becomes available from the runtime integration,
 Sysdig for Snyk AppRisk is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Sysdig runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
+The following [risk factors](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) are reported from the Sysdig runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
 
 {% hint style="info" %}
 The supported languages for the Loaded package risk factor are: Go, Java, JavaScript/TypeScript and Python.

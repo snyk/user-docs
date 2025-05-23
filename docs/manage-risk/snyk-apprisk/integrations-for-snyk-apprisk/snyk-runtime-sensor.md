@@ -8,7 +8,7 @@ The Snyk Runtime Sensor for Snyk AppRisk is in Early Access, and is available on
 
 The Snyk Runtime Sensor is a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) that watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.
 
-The following [risk factors](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk#risk-factors) are reported from the Snyk Runtime Sensor: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed) and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
+The following [risk factors](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) are reported from the Snyk Runtime Sensor: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed) and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
 
 {% hint style="info" %}
 * The Snyk Runtime Sensor reports the Loaded package risk factor only for application packages. The following ecosystems are supported:
@@ -38,7 +38,7 @@ Ensure that your environment meets the following technical prerequisites to prop
 * Kubernetes supported version - Use Kubernetes v.1.19 or higher.
 
 {% hint style="info" %}
-Managed Kubernetes services such as EKS Fargate or GKE Autopilot, are not supported, as the cluster nodes are managed by the cloud provider.
+Managed Kubernetes services, such as EKS Fargate or GKE Autopilot, are not supported, as the cluster nodes are managed by the cloud provider.
 {% endhint %}
 
 * CPU architecture - AMD64 or ARM64.
@@ -253,7 +253,7 @@ To install the Snyk runtime sensor as a Kubernetes Deployment using Helm Charts,
 
 ### Using a Helm Chart and the AWS Secrets Manager
 
-There is a [Helm chart](https://helm.sh) within this repo in [helm/runtime-sensor](https://github.com/snyk/runtime-sensor), that is hosted through GitHub pages in `https://snyk.github.io/runtime-sensor`.
+There is a [Helm chart](https://helm.sh) within this repo in [helm/runtime-sensor](https://github.com/snyk/runtime-sensor), which is hosted through GitHub pages in `https://snyk.github.io/runtime-sensor`.
 
 To install the Snyk runtime sensor using Helm Charts and the AWS Secrets Manager, you can follow these steps:
 
@@ -264,7 +264,7 @@ Prerequisite: Install AWS Provider and CSI Secrets Store in your cluster, as ins
 
     <pre><code><strong>kubectl create namespace snyk-runtime-sensor
     </strong></code></pre>
-3.  Create the Snyk Runtime Sensor Secret containing your service account token under the `snykToken` key in your AWS account, and obtain the resulted ARN:
+3.  Create the Snyk Runtime Sensor Secret containing your service account token under the `snykToken` key in your AWS account, and obtain the resulting ARN:
 
     ```
     aws secretsmanager create-secret \
@@ -371,7 +371,7 @@ oc adm policy add-scc-to-user privileged \
 system:serviceaccount:<<YOUR_NAMESPACE>>:runtime-sensor
 ```
 
-Run this command after the sensor is installed as the service account will not be available until the installation is complete.
+Run this command after the sensor is installed, as the service account will not be available until the installation is complete.
 
 ### Through the AWS Marketplace as an EKS add-on  <a href="#aws-eks-deployment" id="aws-eks-deployment"></a>
 
@@ -386,9 +386,9 @@ To deploy the Snyk Runtime Sensor on Amazon EKS with EKS Add-on, you need to mee
 
 #### **Enable the Snyk Runtime Sensor add-on from AWS console**
 
-After you have successfully set up a subscription to Snyk Runtime Sensor on AWS Marketplace and followed the on-screen instructions, you will be redirected to Amazon EKS console.
+After you have successfully set up a subscription to Snyk Runtime Sensor on AWS Marketplace and followed the on-screen instructions, you will be redirected to the Amazon EKS console.
 
-To enable the Snyk Runtime Sensor for your Amazon EKS cluster, select your cluster on the Amazon EKS console. Then, navigate to the Add-ons tab and choose "Get more add-ons". Use the search bar to find "runtime" and follow the on-screen instructions to enable the add-on for your cluster. This process should be done for each cluster you want to integrate the sensor with (i.e. for each cluster you want to collect data from).
+To enable the Snyk Runtime Sensor for your Amazon EKS cluster, select your cluster on the Amazon EKS console. Then, navigate to the Add-ons tab and choose "Get more add-ons". Use the search bar to find "runtime" and follow the on-screen instructions to enable the add-on for your cluster. This process should be done for each cluster you want to integrate the sensor with (that is, for each cluster you want to collect data from).
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.53.23.png" alt="Select the Snyk Runtime Sensor add-on"><figcaption><p>Select the Snyk Runtime Sensor add-on</p></figcaption></figure>
 
@@ -414,7 +414,7 @@ snykAPIBaseURL: api.snyk.io:443
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.58.12.png" alt="Set the appropriate configuration values under &#x22;Optional configuraiton settings&#x22;"><figcaption><p>Set the appropriate configuration values under "Optional configuraiton settings"</p></figcaption></figure>
 
-After you select the **Next** and **Create** options you will see the `Add-on snyk-runtimesensor successfully added to cluster <<YOUR_CLUSTER>>` notification on top of the page.
+After you select the **Next** and **Create** options, you will see the `Add-on snyk-runtimesensor successfully added to cluster <<YOUR_CLUSTER>>` notification on top of the page.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 16.26.13.png" alt="The success message."><figcaption><p>The success message.</p></figcaption></figure>
 
@@ -425,7 +425,7 @@ Run the following command on your workspace to enable the Snyk Runtime Sensor ad
 * $CLUSTER\_NAME
 * $AWS\_REGION
 * $SNYK\_GROUP\_ID&#x20;
-* $SNYK\_API\_BASE\_URL (should be set to `api.snyk.io:443` unless your account is hosted on a different region than US).
+* $SNYK\_API\_BASE\_URL (should be set to `api.snyk.io:443` unless your account is hosted in a different region than US).
 
 ```
 aws eks create-addon \
@@ -495,7 +495,7 @@ If the Snyk Runtime Sensor is not properly reporting the `is_loaded` risk factor
 In such cases, install the helm chart with either `--set securityContext.privileged=true` or add `SYS_ADMIN` as a required Linux capability `--set "securityContext.capabilities={SYS_ADMIN}"`.
 
 {% hint style="info" %}
-The Loaded package risk factor is not supported by Snyk for operating system packages (such as Debian packages), only for packages which are hosted under package managers such as npm, Maven, or PyPI.
+The Loaded package risk factor is not supported by Snyk for operating system packages (such as Debian packages), only for packages hosted under package managers such as npm, Maven, or PyPI.
 {% endhint %}
 
 Release versions can be found on[ GitHub](https://github.com/snyk/runtime-sensor/releases).
