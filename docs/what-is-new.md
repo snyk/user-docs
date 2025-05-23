@@ -27,7 +27,7 @@ Additional updates have been made to the [Universal Broker](snyk-api/reference/u
 
 ### **Snyk CLI**
 
-Information has been added about Snyk support for the Model Context Protocol (MCP) through the [`snyk mcp` experimental CLI command](snyk-cli/snyk-mcp-experimental.md).
+Information has been added about Snyk support for the Model Context Protocol (MCP) through the [`snyk mcp` experimental CLI command](snyk-cli/snyk-mcp-experimental/).
 
 ### **Snyk Code**
 
