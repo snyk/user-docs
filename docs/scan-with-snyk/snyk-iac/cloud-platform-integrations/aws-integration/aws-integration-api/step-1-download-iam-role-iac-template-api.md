@@ -8,10 +8,10 @@ You can choose the template format, either [Terraform HCL](https://www.terraform
 
 ## Retrieve the IaC template
 
-To retrieve the IaC template using  the [Snyk API endpoint Generate Clout Provider PermissionsI](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/permissions), you need the API token for an Organization-level [service account](../../../../../enterprise-setup/service-accounts/) with an Org Admin role.
+To retrieve the IaC template using  the [Snyk API endpoint Generate Cloud Provider Permissions](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/permissions), you need the API token for an Organization-level [service account](../../../../../enterprise-setup/service-accounts/) with an Org Admin role.
 
 1. In the [Snyk Web UI](https://app.snyk.io), navigate to **Settings** > **General** > **Organization ID** and copy your Organization ID.
-2. Send a request to the Snyk API in the follwoing format, replacing `INPUT-TYPE` with `tf` for Terraform or `cf` for CloudFormation:
+2. Send a request to the Snyk API in the following format, replacing `INPUT-TYPE` with `tf` for Terraform or `cf` for CloudFormation:
 
 ```
 curl -X POST \
