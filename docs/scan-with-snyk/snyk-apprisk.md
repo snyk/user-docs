@@ -34,16 +34,16 @@ Snyk AppRisk provides additional features beyond [those available in Snyk Essent
 
 {% hint style="info" %}
 When you integrate a Git code repository with Snyk Essentials, you should use a secondary token with a broad, complete view of the code repository, not only of what you imported into Snyk. \
-Use a secondary token to counterview everything onboarded using Snyk. \
-Using the secondary token reduces the likelihood of introducing a blindspot from a limited token at the Organization level configuration. \
+Use a secondary token to countercheck everything onboarded using Snyk. \
+Using the secondary token reduces the likelihood of introducing a blind spot from a limited token at the Organization level configuration. \
 The first import, synchronization, can take up to 24 hours to complete.
 {% endhint %}
 
 ## Permissions
 
-You can access Snyk AppRisk with one of the Group level roles permissions described below. To access the permissions, navigate to **View groups** > **Snyk Snyk Essentials permissions**.
+You can access Snyk AppRisk with one of the Group-level role permissions described here. To access the permissions, navigate to **View groups** > **Snyk Snyk Essentials permissions**.
 
-* **View Snyk Essentials** - Grants you a read-only access to Snyk Essentials.
+* **View Snyk Essentials** - Grants you read-only access to Snyk Essentials.
 * **Edit Snyk Essentials** - Grants you edit access to Snyk Essentials, for example, edit policies, edit asset classification, and add the integration.
 
 A Group Administrator has the **Edit Snyk Essentials** permission assigned by default, and a Group Viewer has the **View Snyk Essentials** permission assigned by default.
@@ -54,21 +54,21 @@ For more information on default user roles and permissions, see [Default user ro
 
 ## Login and Authentication
 
-Login and authenticate to Snyk using existing mechanisms (SSO, Google SAML, and so on).
+Log in and authenticate to Snyk using existing mechanisms (SSO, Google SAML, and so on).
 
 ## Accessing Snyk AppRisk
 
-Ensure you are at the Group level to access the Snyk AppRisk options. From the Group level you have a centralized security management that enhances security and simplifies security procedures for projects.
+Ensure you are at the Group level to access the Snyk AppRisk options. From the Group level, you have centralized security management that enhances security and simplifies security procedures for Projects.
 
-The Snyk AppRisk features are available at the Group level from the [Snyk Web UI](../getting-started/snyk-web-ui.md#group-level).&#x20;
+The Snyk AppRisk features are available at the [Group level from the Snyk Web UI](../getting-started/snyk-web-ui.md#group-level).&#x20;
 
-## Key Concepts
+## Key concepts
 
-Some of the key concepts for Snyk AppRisk are asset, class, coverage, or policy. Navigate to the [Snyk - Essentials Key concepts](snyk-essentials.md#key-concepts) section for more details.
+Some of the key concepts for Snyk AppRisk are asset, class, coverage, and policy. For more details, see  [Snyk - Essentials Key concepts](snyk-essentials.md).
 
 ## Scanning methods
 
-You can initiate a scan from the Web UI, the CLI, the API, or with PR Checks. See [Scanning methods](snyk-essentials.md#scanning-methods) and  [Start scanning](start-scanning.md) for more details.
+You can initiate a scan from the Web UI, the CLI, the API, or with PR Checks. For more details, see [Scanning methods](snyk-essentials.md#scanning-methods) and  [Start scanning](start-scanning.md).
 
 ## Capabilities and features
 

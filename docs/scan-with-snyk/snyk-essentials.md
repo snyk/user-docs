@@ -34,10 +34,10 @@ Snyk Essentials includes the following features:&#x20;
 When you integrate a Git code repository with Snyk Essentials, you should use a secondary token with a broad, complete view of the code repository, not only of what you imported into Snyk. \
 
 
-Use a secondary token to counterview everything onboarded using Snyk. \
+Use a secondary token to countercheck everything onboarded using Snyk. \
 
 
-Using the secondary token reduces the likelihood of introducing a blindspot from a limited token at the Organization level configuration. \
+Using the secondary token reduces the likelihood of introducing a blind spot from a limited token at the Organization level configuration. \
 
 
 The first import, synchronization, can take up to 24 hours to complete.
@@ -47,11 +47,11 @@ The first import, synchronization, can take up to 24 hours to complete.
 
 Snyk Essentials is included in the Snyk Enterprise plan. You do not need additional permissions to access it. For more information on default user roles and permissions, see [Default user roles](../snyk-admin/user-roles/pre-defined-roles.md).
 
-## Login and Authentication
+## Login and authentication
 
 Log in and authenticate to Snyk using existing mechanisms (SSO, Google SAML, and so on).
 
-## Key Concepts
+## Key concepts
 
 ### Asset
 
