@@ -4,7 +4,7 @@ When you decide to use a Snyk CI/CD Integration, typically you will adopt the in
 
 Set up the CI/CD Integration. See [CI/CD setup](ci-cd-setup.md).
 
-You will be using snyk test and snyk monitor in the CI/CD integration. [See Snyk test and snyk monitor in CI/CD integration](snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+You will be using `snyk test` and `snyk monitor` in the CI/CD integration. [See Snyk test and snyk monitor in CI/CD integration](snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 
 Review the CI/CD strategies for the code you are scanning:
 

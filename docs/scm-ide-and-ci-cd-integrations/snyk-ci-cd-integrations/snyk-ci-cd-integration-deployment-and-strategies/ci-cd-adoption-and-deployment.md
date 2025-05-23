@@ -48,15 +48,15 @@ There are various ways to configure Snyk within your pipeline. Choose a method d
 
 ### **Use Snyk native plugins**
 
-Snyk native plugins are available for most common CI/CD tools. Using these plugins is the easiest way to set up and get started. The plugins include the most common parameters and options in the user interface (UI).
+Snyk native plugins are available for most common CI/CD tools. You can use these plugins  to set up and get started. The plugins include the most common parameters and options in the user interface.
 
 ### **Deploy Snyk CLI using the npm method**
 
-Follow steps similar to those for [installing the CLI](../../../snyk-cli/install-or-update-the-snyk-cli/) locally. You must be able to run an npm command in the pipeline script. This method has the advantage of completely aligning with the CLI experience so you can easily troubleshoot and configure.
+Follow steps similar to those for [installing the CLI](../../../snyk-cli/install-or-update-the-snyk-cli/) locally. You must be able to run an npm command in the pipeline script. This method has the advantage of completely aligning with the CLI experience so that you can easily troubleshoot and configure.
 
 ### **Deploy Snyk CLI binary version**
 
-The advantage of the binary setup is that it has no dependency with the local environment. For example, it is useful if you cannot run an npm command in your pipeline.
+The advantage of the binary setup is that it has no dependency with the local environment. For example, binary setup is useful if you cannot run an npm command in your pipeline.
 
 CLI binaries are available on the [CLI GitHub repository](https://github.com/snyk/cli/tags).
 
@@ -69,5 +69,3 @@ You may also deploy Snyk in your pipeline using one of the Snyk images in [Docke
 ## Examples of Snyk CI/CD Integrations
 
 This repo shows some examples of binary and npm integrations for various CI/CD tools: [CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples).
-
-##

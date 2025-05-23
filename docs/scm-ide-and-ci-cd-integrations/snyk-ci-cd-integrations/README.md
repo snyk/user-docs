@@ -12,7 +12,7 @@ Snyk recommends using the [Snyk CLI ](https://github.com/snyk/cli)for CI/CD inte
 
 When you [decide to use a CI/CD integration,](../git-repository-and-ci-cd-integrations-comparisons.md) you typically adopt the integration in stages. You will select a deployment method and implement strategies for the code you are scanning. See [Snyk CI/CD Integration deployment and strategies](snyk-ci-cd-integration-deployment-and-strategies/).
 
-For detailed information, you can refer to the pages for the integration you are using:
+For detailed information, see the pages for the integration you are using:
 
 * [AWS CodePipeline integration](aws-codepipeline-integration-by-adding-a-snyk-scan-stage/)
 * [Azure Pipelines integration](azure-pipelines-integration/)

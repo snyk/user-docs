@@ -6,13 +6,13 @@ This section provides a few tips to help troubleshoot or scale CI/CD integration
 
 ### Step 1: Try to replicate with Snyk CLI
 
-If CLI and pipeline are running the same engine, try to clone the project and scan with CLI.
+If the CLI and the pipeline are running the same engine, try to clone the Project and scan with CLI.
 
-Try various CLI options. Use the Snyk CLI tool to find and fix known vulnerabilities as you run it in the pipeline. For more information see the [CLI docs](../../../snyk-cli/).
+Try various CLI options. Use the Snyk CL to find and fix known vulnerabilities as you run it in the pipeline. For more information, see the [CLI documentation](../../../snyk-cli/).
 
 ### Step 2: Get logs
 
-If you are able to replicate with CLI and the problem still exists, ask the CLI to output the debug logging using the following command: `DEBUG=*` or use the `-d` option to capture logs:
+If you are able to replicate with the CLI and the problem still exists, ask the CLI to output the debug logging using the following command: `DEBUG=*` or use the `-d` option to capture logs:
 
 ```
 snyk test -d
