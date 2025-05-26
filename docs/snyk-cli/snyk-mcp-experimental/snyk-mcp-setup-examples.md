@@ -65,7 +65,7 @@ SSE transport supports running the MCP server locally only. SSe does not support
 
 * The MCP Server name
 * The path to the Snyk CLI
-* The Snyk MCP command to [start the MCP server](snyk-mcp-setup-examples.md#starting-the-snyk-mcp-server).
+* The Snyk MCP command to [start the MCP server](./#starting-the-snyk-mcp-server).
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-04-24 at 10.01.57.png" alt="" width="563"><figcaption><p>MCP server details</p></figcaption></figure>
 

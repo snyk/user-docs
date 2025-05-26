@@ -10,7 +10,7 @@ Developer teams typically adopt Snyk in the following stages:
 2. [Use Snyk as a gatekeeper](ci-cd-adoption-and-deployment.md#stage-2-use-snyk-as-a-gatekeeper-snyk-test) (`snyk test`)
 3. [Continuous monitoring](ci-cd-adoption-and-deployment.md#stage-3-continuous-monitoring-snyk-test-and-snyk-monitor) (`snyk test` and `snyk monitor`)
 
-### **Stage 1: Expose vulnerabilities (`snyk monitor`)**
+### Stage 1: Expose vulnerabilities (`snyk monitor`)
 
 A typical approach is using Snyk results to expose vulnerabilities during the development process. This increases visibility of vulnerabilities among members of your team.
 
@@ -22,7 +22,7 @@ Using `snyk monitor` to expose results provides information without disrupting p
 
 For information about `snyk monitor`, see the [`monitor` command help](../../../snyk-cli/commands/monitor.md).
 
-### **Stage 2: Use Snyk as a gatekeeper (`snyk test`)**
+### Stage 2: Use Snyk as a gatekeeper (`snyk test`)
 
 Using Snyk as a gatekeeper prevents the introduction of new vulnerabilities (sometimes known as "stopping the bleeding").
 
@@ -32,7 +32,7 @@ Add `snyk test` to your build or enable the fail functionality to make Snyk fail
 
 For information about `snyk test`, see the [`test` command help](../../../snyk-cli/commands/test.md).
 
-### **Stage 3: Continuous monitoring (`snyk test`** and **`snyk monitor`)**
+### Stage 3: Continuous monitoring (`snyk test` and `snyk monitor`)
 
 After you configure Snyk to fail the build when vulnerabilities are detected, you can configure Snyk to send a snapshot of your project's successful builds to Snyk for ongoing monitoring.
 
