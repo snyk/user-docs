@@ -60,17 +60,6 @@ You can find scanned artifacts in the Inventory Type view, but they are not supp
 
 The asset information is divided into the following tabs:
 
-* **Summary** - a concentrated view of the asset properties. The Summary screen presents you with the following information:
-  * Info
-    * Class - specifies the business criticality of the asset.
-    * Source - specifies the origin of the asset.
-    * Visibility - lists the visibility status of the repositories.
-    * Risk factors - provides the list of active risk factors.
-    * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
-  * Tags - provides the list of all tags available for that asset.
-  * Issues  - categorizes the identified types of open issues.&#x20;
-  * App Context\* - asset metadata from App Context integrations, such as Backstage catalog or ServiceNow CMDB, can include the following attributes: catalog name, category, application, owner, and so on.
-  * Related assets - a list of assets related to the selected one.
 * [Summary](assets-inventory-components.md#summary)
 * [Related Assets](assets-inventory-components.md#related-assets)
 * [Related Projects](assets-inventory-components.md#related-projects)
