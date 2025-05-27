@@ -32,7 +32,8 @@ Follow these steps to install [**Snyk Security in Jira Cloud**](https://marketpl
 
 1. In Jira, navigate to **Apps** > **Find new apps.**
 2. Search for **Snyk Security in Jira Cloud**.\
-   If you are installing Jira for [EU](https://marketplace.atlassian.com/apps/1232502/snyk-security-in-jira-cloud-eu?hosting=cloud\&tab=overview) or [AU](https://marketplace.atlassian.com/apps/1232503/snyk-security-in-jira-cloud-au?hosting=cloud\&tab=overview) you must install the dedicated EU or AU app from the Atlassian app marketplace. Jira Cloud is not supported for customers on the AWS US instance of Snyk.
+   If you are installing Jira for [EU](https://marketplace.atlassian.com/apps/1232502/snyk-security-in-jira-cloud-eu?hosting=cloud\&tab=overview) or [AU](https://marketplace.atlassian.com/apps/1232503/snyk-security-in-jira-cloud-au?hosting=cloud\&tab=overview) you must install the dedicated EU or AU app from the Atlassian app marketplace.\
+   If you are installing Jira and are using SNYK-US-02 ([https://app.us.snyk.io/](https://app.us.snyk.io/)) you must install the [SNYK-US-02](https://marketplace.atlassian.com/apps/1232598/snyk-security-in-jira-cloud-snyk-us-02?hosting=cloud\&tab=overview) app from the Atlassian app marketplace.
 3. Click the app and then select **Get it now.**
 4. Review the information about the app, and select **Get it now**.
 5. Follow the instructions to install the app.
