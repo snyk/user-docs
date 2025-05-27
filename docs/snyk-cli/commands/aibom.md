@@ -35,4 +35,3 @@ Required. Use experimental command features. This option is required because the
 
 Optional. Save the AIBOM output as a JSON data structure directly to the specified file.
 
-\
