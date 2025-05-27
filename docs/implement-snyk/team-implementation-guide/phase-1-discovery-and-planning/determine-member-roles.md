@@ -4,9 +4,7 @@
 
 A key consideration when setting up Snyk is determining which [default user roles](../../../snyk-admin/user-roles/pre-defined-roles.md) align with your needs.
 
-{% hint style="info" %}
-The user roles in Snyk use a fixed set of permissions that cannot be changed.&#x20;
-{% endhint %}
+The Team plan has the following fixed roles in Snyk, each with a fixed set of permissions. These permissions cannot be changed on the Team plan.
 
 The following are the default roles:
 
