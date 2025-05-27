@@ -402,6 +402,14 @@
           "$ref": "#/components/schemas/Uuid"
         }
       },
+      "AssignableByMe": {
+        "description": "When true, only return roles that the current user can assign to others in the tenant.",
+        "in": "query",
+        "name": "assignable_by_me",
+        "schema": {
+          "$ref": "#/components/schemas/AssignableByMe"
+        }
+      },
       "BotId": {
         "description": "Bot ID",
         "in": "path",
@@ -544,6 +552,14 @@
         "name": "cursor",
         "schema": {
           "type": "string"
+        }
+      },
+      "Custom": {
+        "description": "Whether role is custom or not.",
+        "in": "query",
+        "name": "custom",
+        "schema": {
+          "$ref": "#/components/schemas/Custom"
         }
       },
       "CustomBaseImageId": {
@@ -720,13 +736,12 @@
         }
       },
       "GroupId": {
-        "description": "The ID of the group",
+        "description": "Unique identifier of the group.",
         "in": "path",
         "name": "group_id",
         "required": true,
         "schema": {
-          "format": "uuid",
-          "type": "string"
+          "$ref": "#/components/schemas/GroupId"
         }
       },
       "Id": {
@@ -883,25 +898,21 @@
         "style": "form"
       },
       "MembershipId": {
-        "description": "The ID of the Group Membership",
+        "description": "Unique identifier of the tenant membership.",
         "in": "path",
         "name": "membership_id",
         "required": true,
         "schema": {
-          "format": "uuid",
-          "type": "string"
+          "$ref": "#/components/schemas/TenantMembershipId"
         }
       },
       "Name": {
-        "description": "Filter resources by name (multi-value, comma-separated)",
-        "example": "example-bucket",
-        "explode": false,
+        "description": "Role name filter.",
         "in": "query",
         "name": "name",
         "schema": {
-          "type": "string"
-        },
-        "style": "form"
+          "$ref": "#/components/schemas/Name"
+        }
       },
       "NameFilter": {
         "description": "Filter the response by Users that match the provided name",
@@ -973,11 +984,12 @@
         }
       },
       "OrgId": {
-        "description": "The unique identifier of the organization.",
+        "description": "Unique identifier for org",
         "in": "path",
         "name": "org_id",
         "required": true,
         "schema": {
+          "example": "b667f176-df52-4b0a-9954-117af6b05ab7",
           "format": "uuid",
           "type": "string"
         }
@@ -1239,7 +1251,7 @@
             "user_display_name",
             "email",
             "login_method",
-            "role"
+            "role_name"
           ],
           "type": "string"
         }
@@ -1352,13 +1364,21 @@
         }
       },
       "TenantId": {
-        "description": "Tenant ID",
+        "description": "Unique identifier of the tenant.",
         "in": "path",
         "name": "tenant_id",
         "required": true,
         "schema": {
-          "format": "uuid",
-          "type": "string"
+          "$ref": "#/components/schemas/TenantId"
+        }
+      },
+      "TenantId__0": {
+        "description": "Unique identifier of the tenant.",
+        "in": "path",
+        "name": "tenant_id",
+        "required": true,
+        "schema": {
+          "$ref": "#/components/schemas/TenantId__0"
         }
       },
       "Title": {
@@ -2843,6 +2863,10 @@
           "required"
         ],
         "type": "object"
+      },
+      "AssignableByMe": {
+        "example": false,
+        "type": "boolean"
       },
       "AssignmentCreationAttributes": {
         "properties": {
@@ -4847,6 +4871,10 @@
         "format": "date-time",
         "type": "string"
       },
+      "Custom": {
+        "example": false,
+        "type": "boolean"
+      },
       "CustomBaseImageAttributes": {
         "additionalProperties": false,
         "properties": {
@@ -6568,7 +6596,18 @@
         "additionalProperties": true,
         "properties": {
           "attributes": {
-            "$ref": "#/components/schemas/GroupAttributes"
+            "additionalProperties": true,
+            "properties": {
+              "name": {
+                "description": "The name of the group.",
+                "example": "My Group",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "type": "object"
           },
           "id": {
             "example": "331ede0a-de94-456f-b788-166caeca58bf",
@@ -6589,11 +6628,11 @@
         "type": "object"
       },
       "GroupAttributes": {
-        "additionalProperties": true,
+        "example": {
+          "name": "My Group"
+        },
         "properties": {
           "name": {
-            "description": "The name of the group.",
-            "example": "My Group",
             "type": "string"
           }
         },
@@ -7118,6 +7157,46 @@
             "type": "object"
           }
         },
+        "type": "object"
+      },
+      "GroupResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "additionalProperties": false,
+            "properties": {
+              "attributes": {
+                "$ref": "#/components/schemas/GroupAttributes"
+              },
+              "id": {
+                "$ref": "#/components/schemas/GroupId"
+              },
+              "relationships": {
+                "$ref": "#/components/schemas/GroupRelationships"
+              },
+              "type": {
+                "$ref": "#/components/schemas/GroupType"
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "attributes"
+            ],
+            "type": "object"
+          },
+          "jsonapi": {
+            "$ref": "#/components/schemas/JsonApi"
+          },
+          "links": {
+            "$ref": "#/components/schemas/SelfLink"
+          }
+        },
+        "required": [
+          "data",
+          "jsonapi",
+          "links"
+        ],
         "type": "object"
       },
       "GroupType": {
@@ -8699,6 +8778,10 @@
         },
         "type": "object"
       },
+      "Name": {
+        "example": "examplename",
+        "type": "string"
+      },
       "NexusAttributes": {
         "properties": {
           "required": {
@@ -8836,52 +8919,45 @@
         "additionalProperties": false,
         "properties": {
           "attributes": {
-            "additionalProperties": false,
-            "properties": {
-              "group_id": {
-                "description": "The ID of a Group.",
-                "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
-                "format": "uuid",
-                "type": "string"
-              },
-              "is_personal": {
-                "description": "Whether this organization belongs to an individual, rather than a Group.",
-                "example": true,
-                "type": "boolean"
-              },
-              "name": {
-                "description": "Friendly name of the organization.",
-                "example": "My Org",
-                "type": "string"
-              },
-              "slug": {
-                "description": "Unique URL sanitized name of the organization for accessing it in Snyk.",
-                "example": "my-org",
-                "type": "string"
-              }
-            },
-            "required": [
-              "name",
-              "slug",
-              "is_personal"
-            ],
-            "type": "object"
+            "$ref": "#/components/schemas/OrgAttributes"
           },
           "id": {
-            "description": "The Snyk ID corresponding to this org",
+            "description": "The Snyk ID of the organization.",
             "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
             "format": "uuid",
             "type": "string"
           },
           "type": {
-            "description": "Content type.",
-            "example": "org",
-            "type": "string"
+            "$ref": "#/components/schemas/Types"
           }
         },
         "required": [
           "type",
-          "id"
+          "id",
+          "attributes"
+        ],
+        "type": "object"
+      },
+      "Org20230529": {
+        "additionalProperties": false,
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/OrgAttributes20230529"
+          },
+          "id": {
+            "description": "The Snyk ID of the organization.",
+            "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "$ref": "#/components/schemas/Types"
+          }
+        },
+        "required": [
+          "type",
+          "id",
+          "attributes"
         ],
         "type": "object"
       },
@@ -12476,7 +12552,37 @@
         "minLength": 1,
         "type": "string"
       },
+      "Tenant": {
+        "properties": {
+          "data": {
+            "properties": {
+              "id": {
+                "example": "d5b640e5-d88c-4c17-9bf0-93597b7a1ce2",
+                "format": "uuid",
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "tenant"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "type"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "object"
+      },
       "TenantId": {
+        "example": "00000000-0000-0000-0000-000000000000",
+        "format": "uuid",
+        "type": "string"
+      },
+      "TenantId__0": {
         "description": "Unique identifier for a tenant.",
         "example": "00000000-0000-0000-0000-000000000000",
         "format": "uuid",
@@ -12539,7 +12645,7 @@
             "type": "object"
           },
           "id": {
-            "$ref": "#/components/schemas/TenantId"
+            "$ref": "#/components/schemas/TenantId__0"
           },
           "type": {
             "$ref": "#/components/schemas/TenantType"
@@ -12730,6 +12836,65 @@
         "description": "The display name of the role.",
         "example": "Role name",
         "type": "string"
+      },
+      "TenantRoleResponseAttributes": {
+        "additionalProperties": false,
+        "properties": {
+          "custom": {
+            "default": false,
+            "type": "boolean"
+          },
+          "description": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "permissions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "permissions",
+          "custom"
+        ],
+        "type": "object"
+      },
+      "TenantRoleResponseData": {
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/TenantRoleResponseAttributes"
+          },
+          "id": {
+            "example": "d5b640e5-d88c-4c17-9bf0-93597b7a1ce2",
+            "format": "uuid",
+            "type": "string"
+          },
+          "relationships": {
+            "properties": {
+              "tenant": {
+                "$ref": "#/components/schemas/Tenant"
+              }
+            },
+            "type": "object"
+          },
+          "type": {
+            "enum": [
+              "tenant_role"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ],
+        "type": "object"
       },
       "TenantRoleType": {
         "description": "Resource type for tenant roles.",
@@ -14158,14 +14323,14 @@
     },
     "/groups/{group_id}": {
       "get": {
-        "description": "Returns a group by its ID\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "description": "Get a group\n\n#### Required permissions\n\n- `View Groups (group.read)`",
         "operationId": "getGroup",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/Version"
+            "$ref": "#/components/parameters/GroupId"
           }
         ],
         "responses": {
@@ -14173,30 +14338,19 @@
             "content": {
               "application/vnd.api+json": {
                 "schema": {
-                  "properties": {
-                    "data": {
-                      "$ref": "#/components/schemas/Group"
-                    },
-                    "jsonapi": {
-                      "$ref": "#/components/schemas/JsonApi"
-                    },
-                    "links": {
-                      "$ref": "#/components/schemas/Links"
-                    }
-                  },
-                  "required": [
-                    "jsonapi",
-                    "data",
-                    "links"
-                  ],
-                  "type": "object"
+                  "$ref": "#/components/schemas/GroupResponse"
                 }
               }
             },
-            "description": "Group is returned",
+            "description": "Returns an instance of a Group",
             "headers": {
               "deprecation": {
                 "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "location": {
+                "schema": {
+                  "type": "string"
+                }
               },
               "snyk-request-id": {
                 "$ref": "#/components/headers/RequestIdResponseHeader"
@@ -14227,18 +14381,22 @@
           "404": {
             "$ref": "#/components/responses/404"
           },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
           "500": {
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get a group",
+        "summary": "Get Group",
         "tags": [
-          "Groups"
+          "Group"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
           "2022-01-31~experimental",
-          "2023-01-30~beta"
+          "2023-01-30~beta",
+          "2024-04-25~experimental"
         ],
         "x-snyk-api-resource": "groups",
         "x-snyk-api-stability": "beta",
@@ -16918,7 +17076,14 @@
         "operationId": "listGroupMemberships",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "The ID of the group",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -17036,7 +17201,14 @@
         "operationId": "createGroupMembership",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "The ID of the group",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -17136,10 +17308,24 @@
         "operationId": "deleteGroupMembership",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "The ID of the group",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
-            "$ref": "#/components/parameters/MembershipId"
+            "description": "The ID of the Group Membership",
+            "in": "path",
+            "name": "membership_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Cascade"
@@ -17210,10 +17396,24 @@
         "operationId": "updateGroupUserMembership",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "The ID of the group",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
-            "$ref": "#/components/parameters/MembershipId"
+            "description": "The ID of the Group Membership",
+            "in": "path",
+            "name": "membership_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -17274,7 +17474,14 @@
         "operationId": "listGroupUserOrgMemberships",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "The ID of the group",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/UserId"
@@ -17427,75 +17634,7 @@
                   "properties": {
                     "data": {
                       "items": {
-                        "additionalProperties": false,
-                        "properties": {
-                          "attributes": {
-                            "additionalProperties": false,
-                            "properties": {
-                              "access_requests_enabled": {
-                                "description": "Whether the organization permits access requests from users who are not members of the organization.",
-                                "example": false,
-                                "type": "boolean"
-                              },
-                              "created_at": {
-                                "description": "The time the organization was created.",
-                                "example": "2022-03-16T00:00:00Z",
-                                "format": "date-time",
-                                "type": "string"
-                              },
-                              "group_id": {
-                                "description": "The Snyk ID of the group to which the organization belongs.",
-                                "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
-                                "format": "uuid",
-                                "type": "string"
-                              },
-                              "is_personal": {
-                                "description": "Whether the organization is independent (that is, not part of a group).",
-                                "example": true,
-                                "type": "boolean"
-                              },
-                              "name": {
-                                "description": "The display name of the organization.",
-                                "example": "My Org",
-                                "type": "string"
-                              },
-                              "slug": {
-                                "description": "The canonical (unique and URL-friendly) name of the organization.",
-                                "example": "my-org",
-                                "type": "string"
-                              },
-                              "updated_at": {
-                                "description": "The time the organization was last modified.",
-                                "example": "2022-03-16T00:00:00Z",
-                                "format": "date-time",
-                                "type": "string"
-                              }
-                            },
-                            "required": [
-                              "name",
-                              "slug",
-                              "is_personal"
-                            ],
-                            "type": "object"
-                          },
-                          "id": {
-                            "description": "The Snyk ID of the organization.",
-                            "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
-                            "format": "uuid",
-                            "type": "string"
-                          },
-                          "type": {
-                            "example": "resource",
-                            "pattern": "^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$",
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "id",
-                          "attributes"
-                        ],
-                        "type": "object"
+                        "$ref": "#/components/schemas/Org"
                       },
                       "type": "array"
                     },
@@ -18896,7 +19035,14 @@
         "operationId": "listGroupSsoConnections",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "The ID of the group",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -18998,7 +19144,14 @@
         "operationId": "listGroupSsoConnectionUsers",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "The ID of the group",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/SsoId"
@@ -19168,7 +19321,14 @@
         "operationId": "deleteUser",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "The ID of the group",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/SsoId"
@@ -19467,7 +19627,6 @@
             "name": "version",
             "required": true,
             "schema": {
-              "default": "2023-08-31~beta",
               "type": "string"
             }
           }
@@ -19666,21 +19825,14 @@
     },
     "/orgs/{org_id}": {
       "get": {
-        "description": "Returns an org by its ID\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "description": "Get the full details of an organization.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "getOrg",
         "parameters": [
           {
-            "description": "The ID of the org",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/Version"
+            "$ref": "#/components/parameters/OrgId"
           }
         ],
         "responses": {
@@ -19690,25 +19842,20 @@
                 "schema": {
                   "properties": {
                     "data": {
-                      "$ref": "#/components/schemas/Org"
+                      "$ref": "#/components/schemas/Org20230529"
                     },
                     "jsonapi": {
                       "$ref": "#/components/schemas/JsonApi"
                     },
                     "links": {
-                      "$ref": "#/components/schemas/Links"
+                      "$ref": "#/components/schemas/SelfLink"
                     }
                   },
-                  "required": [
-                    "jsonapi",
-                    "data",
-                    "links"
-                  ],
                   "type": "object"
                 }
               }
             },
-            "description": "Org is returned",
+            "description": "Returns an instance of an organization",
             "headers": {
               "deprecation": {
                 "$ref": "#/components/headers/DeprecationHeader"
@@ -19742,24 +19889,27 @@
           "404": {
             "$ref": "#/components/responses/404"
           },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
           "500": {
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get an org",
+        "summary": "Get organization",
         "tags": [
           "Orgs"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2022-02-16~experimental",
           "2022-04-06~experimental",
-          "2022-12-15~beta"
+          "2022-12-15~beta",
+          "2023-05-29"
         ],
         "x-snyk-api-resource": "orgs",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2022-12-15~beta",
-        "x-stability-level": "beta"
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2023-05-29",
+        "x-stability-level": "stable"
       },
       "patch": {
         "description": "Update the details of an organization\n\n#### Required permissions\n\n- `Edit Organization (org.edit)`",
@@ -23968,7 +24118,15 @@
             "style": "form"
           },
           {
-            "$ref": "#/components/parameters/Name"
+            "description": "Filter resources by name (multi-value, comma-separated)",
+            "example": "example-bucket",
+            "explode": false,
+            "in": "query",
+            "name": "name",
+            "schema": {
+              "type": "string"
+            },
+            "style": "form"
           },
           {
             "$ref": "#/components/parameters/Kind"
@@ -28068,7 +28226,14 @@
         "operationId": "deleteOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -28139,7 +28304,14 @@
         "operationId": "listOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -28235,7 +28407,14 @@
         "operationId": "updateOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -28335,7 +28514,14 @@
         "operationId": "createOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -28409,7 +28595,14 @@
         "operationId": "getCatalogProgress",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -28500,7 +28693,14 @@
         "operationId": "getUsersProgress",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -28619,7 +28819,19 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/SortBy"
+            "description": "Which column to sort by.",
+            "in": "query",
+            "name": "sort_by",
+            "schema": {
+              "enum": [
+                "username",
+                "user_display_name",
+                "email",
+                "login_method",
+                "role"
+              ],
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/SortOrder"
@@ -33194,7 +33406,14 @@
             }
           },
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -33303,7 +33522,14 @@
             "$ref": "#/components/parameters/ChannelId"
           },
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -34728,7 +34954,14 @@
         "operationId": "getBrokerConnectionIntegrations",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ConnectionId"
@@ -35567,7 +35800,14 @@
         "operationId": "createBrokerConnectionIntegration",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ConnectionId"
@@ -36409,7 +36649,14 @@
         "operationId": "deleteBrokerConnectionIntegration",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ConnectionId"
@@ -37235,7 +37482,14 @@
         "operationId": "listBrokerDeploymentsForTenant",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/EndingBefore"
@@ -38306,7 +38560,14 @@
         "operationId": "listConnectionContexts",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -39383,7 +39644,14 @@
         "operationId": "deleteBrokerContext",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -40432,7 +40700,14 @@
         "operationId": "getConnectionContext",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -41507,7 +41782,14 @@
         "operationId": "updateBrokerContext",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -42574,7 +42856,14 @@
         "operationId": "updateBrokerContextIntegration",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -43406,7 +43695,14 @@
         "operationId": "deleteBrokerContextIntegration",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -44225,7 +44521,14 @@
         "operationId": "listBrokerDeployments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -45297,7 +45600,14 @@
         "operationId": "createBrokerDeployment",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -46364,7 +46674,14 @@
         "operationId": "deleteBrokerDeployment",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -47413,7 +47730,14 @@
         "operationId": "updateBrokerDeployment",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -48480,7 +48804,14 @@
         "operationId": "deleteBrokerConnections",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -49529,7 +49860,14 @@
         "operationId": "listBrokerConnections",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -50604,7 +50942,14 @@
         "operationId": "createBrokerConnection",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -51674,7 +52019,14 @@
         "operationId": "deleteBrokerConnection",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -52726,7 +53078,14 @@
         "operationId": "getBrokerConnection",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -53804,7 +54163,14 @@
         "operationId": "updateBrokerConnection",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -54874,7 +55240,14 @@
         "operationId": "listDeploymentContexts",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -55949,7 +56322,14 @@
         "operationId": "createBrokerContext",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -57019,7 +57399,14 @@
         "operationId": "listDeploymentCredentials",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -58094,7 +58481,14 @@
         "operationId": "createDeploymentCredential",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -59164,7 +59558,14 @@
         "operationId": "deleteDeploymentCredential",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -60216,7 +60617,14 @@
         "operationId": "getDeploymentCredential",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -61294,7 +61702,14 @@
         "operationId": "updateDeploymentCredential",
         "parameters": [
           {
-            "$ref": "#/components/parameters/TenantId"
+            "description": "Tenant ID",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -62367,16 +62782,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Unique identifier of the tenant.",
-            "in": "path",
-            "name": "tenant_id",
-            "required": true,
-            "schema": {
-              "description": "Unique identifier for a tenant.",
-              "example": "00000000-0000-0000-0000-000000000000",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/TenantId__0"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -62388,19 +62794,7 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "description": "Which column to sort by.",
-            "in": "query",
-            "name": "sort_by",
-            "schema": {
-              "enum": [
-                "username",
-                "user_display_name",
-                "email",
-                "login_method",
-                "role_name"
-              ],
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/SortBy"
           },
           {
             "$ref": "#/components/parameters/SortOrder"
@@ -62506,28 +62900,10 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Unique identifier of the tenant membership.",
-            "in": "path",
-            "name": "membership_id",
-            "required": true,
-            "schema": {
-              "description": "Unique identifier for a tenant membership.",
-              "example": "00000000-0000-0000-0000-000000000000",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/MembershipId"
           },
           {
-            "description": "Unique identifier of the tenant.",
-            "in": "path",
-            "name": "tenant_id",
-            "required": true,
-            "schema": {
-              "description": "Unique identifier for a tenant.",
-              "example": "00000000-0000-0000-0000-000000000000",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/TenantId__0"
           }
         ],
         "responses": {
@@ -62598,28 +62974,10 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Unique identifier of the tenant.",
-            "in": "path",
-            "name": "tenant_id",
-            "required": true,
-            "schema": {
-              "description": "Unique identifier for a tenant.",
-              "example": "00000000-0000-0000-0000-000000000000",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/TenantId__0"
           },
           {
-            "description": "Unique identifier of the tenant membership.",
-            "in": "path",
-            "name": "membership_id",
-            "required": true,
-            "schema": {
-              "description": "Unique identifier for a tenant membership.",
-              "example": "00000000-0000-0000-0000-000000000000",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/MembershipId"
           }
         ],
         "requestBody": {
@@ -62699,6 +63057,120 @@
         "x-snyk-api-resource": "memberships",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-09-03~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/tenants/{tenant_id}/roles": {
+      "get": {
+        "description": "List all available roles for a given tenant.\n\n#### Required permissions\n\n- `tenant.roles.read`",
+        "operationId": "listTenantRoles",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/TenantId"
+          },
+          {
+            "$ref": "#/components/parameters/Name"
+          },
+          {
+            "$ref": "#/components/parameters/Custom"
+          },
+          {
+            "$ref": "#/components/parameters/AssignableByMe"
+          },
+          {
+            "$ref": "#/components/parameters/StartingAfter"
+          },
+          {
+            "$ref": "#/components/parameters/EndingBefore"
+          },
+          {
+            "$ref": "#/components/parameters/Limit"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "$ref": "#/components/schemas/TenantRoleResponseData"
+                      },
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/PaginatedLinks"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Returns an array of roles that are the roles on a Tenant.",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "List all available roles for a given tenant",
+        "tags": [
+          "TenantRole"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tenant_roles",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
       }
     }
