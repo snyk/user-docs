@@ -20,8 +20,6 @@ Snyk is transitioning from ignores tied to specific issues within a Project to i
 
 Enable Snyk Code Consistent Ignores for your Group or Organization in the Snyk Web UI by navigating to **Group/Organization** > **Settings** > **Ignores across the repository for Snyk Code**. See [Snyk Preview](../../../../snyk-admin/snyk-preview.md).
 
-Review the [Known limitations](known-limitations.md) before enabling this feature in your environment.
-
 ## Disable Snyk Code Consistent Ignores
 
 Any ignores created or converted with the feature enabled will not be automatically converted back to Project-based ignores. You can recreate them manually after disabling the feature.
