@@ -33,7 +33,3 @@ It is common to have a phased rollout of these features. Using PR checks as an e
 * Over time, as developers adapt to seeing these results and begin addressing the critical issues proactively, you can choose to start blocking PRs from being merged if there are any new High or Critical severity issues, or in the case of Snyk Open Source, if there is a fix available.&#x20;
 
 This phased rollout helps to decrease friction between your security and development teams.
-
-## Also see
-
-Here is a link to a webinar that covers PR checks in more detail and includes an example of how you can gradually introduce this feature: [Dev-First Prevention Strategies Using PR Checks](https://www.youtube.com/watch?v=6x33EJW\_d\_E).
