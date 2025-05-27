@@ -51,8 +51,9 @@ A command must be formulated for each type of test to perform (open source, code
 To use the Snyk CLI:
 
 1. [Install the CLI](../../../snyk-cli/install-or-update-the-snyk-cli/) using one of the appropriate methods as part of the build script.
-2. In the script, navigate to the Project folder.
-3. Run the appropriate `snyk test` or `snyk monitor` commands and options for the type of scan you want to run. \
+2. [Authenticate to use the CLI ](../../../snyk-cli/authenticate-to-use-the-cli.md)by using the `snyk auth` command or an environment variable.
+3. In the script, navigate to the Project folder.
+4. Run the appropriate `snyk test` or `snyk monitor` commands and options for the type of scan you want to run. \
    \
    Where to implement testing in your scripts is generally flexible but most commonly prior to deployment. Use the monitor command alone for Snyk Open Source and Snyk Container to passively report. When you are using gating through the `test` command, the purpose is to break the build if issues are found that meet particular criteria like `--severity-threshold` or any number of options in the CLI or the `snyk-filter` plugin. \
    \
@@ -65,7 +66,7 @@ To use the Snyk CLI:
      * `snyk monitor --all-projects --org=[org-id]`\
        Replace `[org-id]` with the ID of your Organization.
    * For Container and Infrastructure as Code scans, see [Container](../../../scan-with-snyk/snyk-container/scan-container-images.md) and [Infrastructure as Code](../../../scan-with-snyk/snyk-iac/), as this will vary based on the type being scanned.
-4. Review results either locally when running `snyk test`, or on the Snyk Web UI when using `monitor` or report.
+5. Review results either locally when running `snyk test`, or on the Snyk Web UI when using `monitor` or report.
 
 For demonstrations of various pipeline integrations, see [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples).
 
