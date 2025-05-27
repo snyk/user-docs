@@ -1,24 +1,22 @@
 # How Snyk handles your data
 
-Snyk is a developer security platform placing the utmost importance on data security. Fully understanding your privacy and security needs, Snyk provides this document with the goal of providing you with transparency as to how and what data is accessed, transferred, and stored by Snyk.
+Snyk is a developer security platform designed to place the utmost importance on data security. This document aims to provide you with transparency as to how and what data is accessed, transferred, and stored by Snyk in connection with our services.
 
-The data that Snyk handles varies depending on the product you are using, how you are integrating with Snyk and your Snyk deployment. Be aware that Snyk is subject to fast-moving changes. Therefore, the types of data that Snyk accesses and stores might change with the introduction of a new capability or changes to an existing capability.
+The data that Snyk handles varies depending on the product you are using, how you are integrating with Snyk and your Snyk deployment. Snyk is, however, subject to fast-moving changes. Therefore, the types of data that Snyk accesses and stores might change with the introduction of a new capability or changes to an existing capability.
 
 ## Flexible deployment options
 
-Snyk leverages the latest software development practices and technologies to provide customers with the flexibility to use the Snyk developer security platform in the manner that best suits the needs of their business.
-
-Snyk cloud-first deployment options offer ease of use and scalability while also providing the required level of data protection, with multi- and single-tenant options supported in the US, EU, and AU regions.
+Snyk's cloud-first deployment options offer ease of use and scalability while also including standard data protection measures. Snyk supports multi- and single-tenant options in the US, EU, and AU regions.
 
 Snyk deployment options are as follows:
 
-* **Multi-Tenant SaaS**: The simplest, most common, and most cost-effective way to use Snyk’s developer security platform
+* **Multi-Tenant SaaS**: The simplest, most common, and most cost-effective way to use Snyk’s developer security platform.
 * **Single-Tenant SaaS:** Private Cloud - An isolated and fully managed instance of the Snyk developer security platform. For details, see [Snyk Deployment Options](https://snyk.io/platform/deployment-options/).
-* **Snyk Broker**: A client service installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi- or single-tenant) and your on-premise codebase. [Snyk Broker](../enterprise-setup/snyk-broker/) securely handles inbound and outbound connections, encrypting data during transit and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
+* **Snyk Broker**: A client service installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi- or single-tenant) and your on-premise codebase. [Snyk Broker](../enterprise-setup/snyk-broker/) is designed to securely handle inbound and outbound connections, encrypting data during transit and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
 
-## Customer data flows across Snyk
+## Customer data within Snyk
 
-Snyk provides a wide range of development tools and integration points, requiring different types of data and involving different data interactions. The following sections provide an overview of both the common types of data Snyk accesses and stores and product and integration-specific types. The information is reviewed at least twice per year or when a significant change occurs within the product operations.
+Snyk provides a wide range of development tools and integration points, requiring different types of data and involving different data interactions. The following sections provide an overview of both the common types of data Snyk accesses and stores, and product and integration-specific details. The information is reviewed regularly, including when a significant change occurs within the product.
 
 ## Common data types
 
@@ -43,16 +41,16 @@ Snyk uses cloud products from Amazon Web Services (AWS) and Google Cloud Platfor
 
 ## Product-specific data types
 
-Snyk knows how important it is to protect your data. Therefore Snyk will only access and store the information needed to provide you with Snyk services and to ensure accurate analysis as described for each Snyk product: Snyk Open Source, Snyk Code, Snyk Container, and Snyk IaC.
+Below are details regarding data handling by specific Snyk products:&#x20;
 
 ### **Snyk Open Source**
 
 <figure><img src="../.gitbook/assets/SnykOSS.svg" alt="Snyk Open Source logo"><figcaption><p>Snyk Open Source</p></figcaption></figure>
 
-* Snyk accesses manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
+* Snyk accesses manifest files, lock files, and related configuration files to identify your open-source dependencies.
 * Snyk accesses your source code under these scenarios:
   * When [Workspaces for SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md) is enabled, Snyk ingests a short-lived, shallow clone of a [Git reference](https://git-scm.com/book/en/v2/Git-Internals-Git-References) and scans manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
-  * When CLI scans use the `--unmanaged` option, Snyk accesses your source code files to convert them to file signatures (hashes) and stores the file signatures and file names
+  * When CLI scans use the `--unmanaged` option, Snyk accesses your source code files to convert them to file signatures (hashes) and stores the file signatures and file names.
 * Snyk accesses and stores the names and version numbers of your dependencies.
 * Snyk stores the names of associated licenses, including copyright and attribution information.
 * Snyk accesses and stores repository-specific information.
@@ -114,7 +112,7 @@ Your account is subject to contract terms which might restrict your ability to e
 <figure><img src="../.gitbook/assets/AppRisk_Color_64px.png" alt="Snyk App Risk logo"><figcaption><p>Snyk AppRisk</p></figcaption></figure>
 
 * Snyk Essentials and Snyk AppRisk provide visibility into data at the Snyk Group level and, therefore, cover the scope of all Snyk Organizations within a Snyk Group.
-* From Snyk Targets and Projects within associated Snyk Organizations, Snyk Essentials and Snyk AppRisk accesses and stores asset metadata to generate code repository assets, package (first-party) assets, and container image assets. Asset metadata includes the Git remote URL, languages represented in repositories, and commit history metadata (not the underlying source code).
+* From Snyk Targets and Projects within associated Snyk Organizations, Snyk Essentials and Snyk AppRisk access and store asset metadata to generate code repository assets, package (first-party) assets, and container image assets. Asset metadata includes the Git remote URL, languages represented in repositories, and commit history metadata (not the underlying source code).
 * From SCM integrations configured using the Integration Hub, Snyk Essentials and Snyk AppRisk access and store the following data:
   * Commit history metadata from the last 50 commits for repositories monitored, including profile information on the code committer, such as GitHub user IDs, display name, or email.
   * Metadata on the languages, for example, Python, HTML, used for a given code repository.
@@ -126,19 +124,47 @@ Your account is subject to contract terms which might restrict your ability to e
   * Information on the runtime and cloud environment.
   * HTTP request metadata, for example, hostnames, paths, and so on, flowing through the cluster.
 
+## Snyk Learn
+
+* Snyk Learn stores data related to users' progress and completion of lessons, learning paths, and assignments. This data is used to provide personalized learning experiences, generate progress reports, and improve our educational content. You can access your stored learning data through your [Learning Progress](https://learn.snyk.io/user/learning-progress) portal.
+
+**Snyk Assist for Snyk Learn**
+
+Snyk maintains important safeguards regarding the data processed by Snyk Assist:
+
+* **Unintended Code Disclosure:** We've implemented technical safeguards designed to check for code in user input; if found, it's not sent to the AI or stored by Snyk.
+* **Usage Data:** We store anonymized user input and usage analytics for a reasonable period.
+* **Content Filtering:** Measures are in place to handle inappropriate input, for your safety and ours.
+
+## Snyk API & Web
+
+Snyk API & Web accesses and scans your web applications and APIs to identify security vulnerabilities through dynamic application security testing (DAST).
+
+Snyk accesses and stores the following information:
+
+* Website and API credentials required to authenticate and perform security scans.
+* Target configurations including sequences recorded by the browser plugin and specified paths to facilitate accurate scanning.
+* Vulnerability data identified during scans.
+* Requests and responses data - a sample of crawler requests and responses are stored, including a subset of scanner requests and responses indicating a vulnerability or potential vulnerability.
+* Integration-specific information from connected issue tracking integrations, including project names, issue types, severity levels, and comments in issues linked to Snyk API & Web findings.
+* Authentication credentials for third-party integrations (e.g., API keys and OAuth2 tokens for integrations such as Azure, Jira, Cloudflare).
+* Discovery feature data including screenshots of services scanned, portions of HTTP responses from those services, and a list of open ports for each domain/subdomain identified during scanning.&#x20;
+
+**Note**: When scans are performed against production systems, responses may contain customer data. While Snyk strongly recommends that you use Snyk API & Web in staging and testing sites, and not against production sites, Snyk does implement security controls designed to protect customer data in accordance with the SOC 2 standard.&#x20;
+
 ## Snyk integrations: Workspaces
 
 {% hint style="info" %}
 For more information on Workspaces enablement and use, see [Workspaces for SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md).
 {% endhint %}
 
-Snyk puts the following safeguards in place to ensure data is secure
+Snyk puts the following safeguards in place to ensure data is secure:
 
 * Snyk will perform a clone only when an SCM integration flow requires it, for example, PR check, import, and test.
 * Communication between the cloning service and cache is encrypted with TLS.
 * Cloned assets are deleted from the file system immediately after populating the cache.
 * All data is handled by Snyk in accordance with the SOC 2 standard. For more details, see [Snyk certifications](how-snyk-handles-your-data.md#snyk-certifications).
-* Your data is analyzed only for the purposes of improving code security and code quality and in accordance with your Data Processing Addendum.
+* Your data is analyzed only for the purposes of improving code security and code quality and in accordance with the governing agreement between us.
 
 ## Snyk certifications
 
@@ -148,11 +174,11 @@ Snyk is certified to ISO 27001:2022 with the additional objective controls of IS
 
 <figure><img src="../.gitbook/assets/schellman_iso27001_seal_blue_CMYK_300dpi_jpg.png" alt="ISO 27001 Schellman certification" width="375"><figcaption><p>ISO 27001 Schellman certification</p></figcaption></figure>
 
-## How Snyk maintains GDPR compliance
+## Privacy compliance
 
-Snyk takes privacy seriously and operates a global privacy program to meet the requirements of the GDPR, CCPA, and other applicable privacy laws. Snyk treats all user data the same way and uses industry-standard technical and organizational measures to secure the information Snyk stores. The Snyk Privacy Program is tailored to meet both legal requirements and your needs.
+Snyk takes privacy seriously and operates a robust global privacy program designed to align with the requirements of the GDPR, CCPA, and other applicable privacy laws.
 
-Learn more at the[ ](https://www.atlassian.com/trust/privacy)[Snyk Privacy Policy](https://snyk.io/policies/privacy/).
+Learn more here: [ ](https://www.atlassian.com/trust/privacy)[Snyk Privacy Policy](https://snyk.io/policies/privacy/) and [Snyk Data Processing Addendum](https://snyk.io/policies/dpa/).
 
 ## Snyk policies
 
@@ -161,4 +187,4 @@ For additional information, see the following pages on the Snyk website:
 * [Privacy](https://snyk.io/policies/privacy/)
 * [Snyk Sub-processing](https://snyk.io/policies/subprocessors/)
 * [Data Processing Addendum](https://snyk.io/policies/dpa/)
-* [Tracking and analytics](https://snyk.io/policies/tracking-and-analytics/)
+

@@ -14,7 +14,9 @@ This document outlines what Snyk counts as a test, in order for the customer to 
 
 There are two main types of tests:
 
-* Recurring: Tests are triggered by the Snyk application, based on the customer’s configurations, and occur at a set cadence (daily or weekly). These tests are triggered by the Web UI, CLI, or API and implemented through a cron job, typically within the SCM.
+* Recurring: Tests are triggered by the Snyk application, based on the customer’s configurations, and occur at a set cadence (daily or weekly). These tests are triggered by the Web UI, CLI, or API and implemented through a cron job, typically within the SCM.\
+  \
+  Note that if you have chosen the weekly retesting interval, and a manual test occurs before one week ends, the next test will occur a week after the manual test. Re-tests all begin at a set time each day. These re-tests may take sufficient time to process, such that a particular test takes place on the eighth day after the last test. If you see a test interval that is longer than you expect and you are concerned, contact Snyk support.
 * Manual: Tests are triggered by the Customer through a specific election within the application. These tests can occur at any cadence within the available functionality of the application. These tests can be triggered in a number of different ways, including:
   * API - triggered by API call
   * CLI - triggered by CLI commands
