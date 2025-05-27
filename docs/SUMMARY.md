@@ -908,6 +908,7 @@
     * [Fix vulnerabilities using the Snyk CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/fix-vulnerabilities-using-the-snyk-cli.md)
   * [CLI commands and options summary](snyk-cli/cli-commands-and-options-summary.md)
   * [CLI help](snyk-cli/commands/README.md)
+    * [AIBOM](snyk-cli/commands/aibom.md)
     * [Auth](snyk-cli/commands/auth.md)
     * [Code](snyk-cli/commands/code.md)
     * [Code test](snyk-cli/commands/code-test.md)
