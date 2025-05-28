@@ -117,7 +117,7 @@ Program analysis requires a trade-off between accurate results, minimizing false
 
 To facilitate this trade-off, Snyk DeepCode analysis applies real-time decision-making to determine whether to under-approximate the set of reachable elements based on analysis of the likelihood that a reachable path will be found in a specific environment.&#x20;
 
-For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. Snyk Deep Code analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure.&#x20;
+For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. The agentic capabiltiy of Snyk  analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure.&#x20;
 
 ### Understanding the Limits of Reachability in Static Analysis
 

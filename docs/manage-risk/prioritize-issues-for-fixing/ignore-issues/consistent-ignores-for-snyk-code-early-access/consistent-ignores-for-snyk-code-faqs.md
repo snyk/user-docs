@@ -44,7 +44,7 @@ Depending on feedback during the Early Access period, we may offer a broader sco
 
 ## Existing DeepCode inline ignores (legacy) are not supported or migrated
 
-Deepcode inline ignores are a legacy feature that is only available for certain customers. If you have pre-existing Deepcode inline ignores, Snyk removes them from the test results. The results are not marked as `Open` or `Ignored`.
+DeepCode inline ignores are a legacy feature that is only available to certain customers. If you have pre-existing DeepCode inline ignores, Snyk removes them from the test results. The results are not marked as `Open` or `Ignored`.
 
 ### Recommendation
 

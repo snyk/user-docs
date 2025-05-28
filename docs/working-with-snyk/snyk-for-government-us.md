@@ -12,7 +12,7 @@ This list identifies all the areas with differences in functionality in the Snyk
 
 * Snyk Code is available except:
   * Does not include Code Search
-  * Does not include DeepCode AI Fix
+  * Does not include Snyk Agent Fix
 * Snyk Container is available except for [Kubernetes Integration](https://docs.snyk.io/scan-applications/snyk-container/kubernetes-integration/kubernetes-integration-overview).
 * Snyk Open Source is available except:
   * Does not include Unmanaged C++
