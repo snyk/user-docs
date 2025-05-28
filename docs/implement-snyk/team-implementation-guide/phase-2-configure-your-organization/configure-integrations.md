@@ -14,7 +14,7 @@ To disable gating initially, use the daily monitoring that is automatically conf
   * Snyk vulnerability patches.
 * PR checks for
   * Pull Request status checks for Open Source security and licenses
-  * Code analysis (Beta).
+  * Code analysis
 
 ## CI/CD (Build pipelines)
 
