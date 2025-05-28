@@ -43,12 +43,12 @@ The following frameworks and libraries are supported in Snyk for Go:&#x20;
 
 The following features are supported in Snyk for Go:
 
-| Snyk Open Source                                   | Snyk Code                                                                 |
-| -------------------------------------------------- | ------------------------------------------------------------------------- |
-| <ul><li>License scanning</li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
+| Snyk Open Source                                                     | Snyk Code                                                                 |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| <ul><li>PR checks</li><li>License scanning</li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
 
 {% hint style="info" %}
-The **Snyk FixPR** feature is not available for Go. This means that you will not be notified if the PR checks fail when the following conditions are met:&#x20;
+If the **Snyk FixPR** feature is enabled, this means that you will be notified if the PR checks fail when the following conditions are met:&#x20;
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**
