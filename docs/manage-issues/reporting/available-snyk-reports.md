@@ -311,12 +311,18 @@ Teams can filter by date and Organization.
 The Repositories Tested in CI/CD report is in Early Access and available only with Enterprise plans.&#x20;
 {% endhint %}
 
-To use this report, you must ensure you have installed Snyk CLI version 1.1292.1 or newer.
+To use this report, consider the following prerequisites:
+
+* Snyk CLI version 1.1292.1 or newer.
+* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).&#x20;
+* When testing containers, include the `.git` context as part of the `snyk container test` command.
 
 This report analyzes Snyk tests performed as part of CI/CD pipelines executed using Snyk CLI. It will inform you about the usage of your company and adoption of testing in CI/CD, ensuring repositories are tested as expected and preventing critical vulnerabilities and misconfigurations from being deployed and reaching the production environment.
 
 {% hint style="info" %}
-The report results are scoped by a date range filter that you can use to review specific periods. The filter is defaulted to the last 30 days.
+* The report results are scoped by a date range filter that you can use to review specific periods. The filter is defaulted to the last 30 days.
+* This report provides visibility into Snyk tests (`snyk test`, `snyk code test`, `snyk container test`, `snyk iac test`) executed within your CI pipeline (using CLI). Its primary goal is to help you evaluate code test results and determine whether to pass or fail the build process based on these security checks.
+* Please note that `snyk monitor` commands are **not** included in this report. While `snyk monitor` is crucial for ongoing security posture and identifying new vulnerabilities, this report specifically tracks tests that actively gate your CI/CD pipeline.
 {% endhint %}
 
 The numbers displayed on the main view of the report represent the number of repositories tested in the selected date range per Snyk product.&#x20;
