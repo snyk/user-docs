@@ -12,8 +12,8 @@ To disable gating initially, use the daily monitoring that is automatically conf
   * Automatic fix PRs
   * Automatic dependency upgrade PRs
   * Snyk vulnerability patches.
-* PR checks for
-  * Pull Request status checks for Open Source security and licenses
+* Pull request status checks for
+  * Open Source security and licenses
   * Code analysis
 
 ## CI/CD (Build pipelines)
@@ -31,9 +31,9 @@ There are several [CI/CD integrations](../../../scm-ide-and-ci-cd-integrations/s
 In the initial phase, Snyk recommends using the “monitor” feature to import information into Snyk so you can see any discovered issues (unless you are already importing your repos using a source control integration to achieve this). Later, when you want to start gating/blocking new vulnerabilities from being added, you can introduce “test” features - initially failing builds on critical issues and then gradually adapting the fail criteria over time.
 
 {% hint style="info" %}
-For `snyk iac test --report` and `snyk code test --report` (beta), finding issues will result in the build possibly stopping with a non-zero response code. \
+For `snyk iac test --report`, finding issues will result in the build possibly stopping with a non-zero response code. \
 \
-If you want to test passively,  the inclusion of the `--report` argument requires either setting the build step to always continue or an alternative like concatenating logic equating to "or true" (i.e. `snyk code test --report || true`). The exact syntax depends on the ecosystem the CLI is run in.&#x20;
+If you want to test passively,  the inclusion of the `--report` argument requires either setting the build step to always continue or an alternative like concatenating logic equating to "or true" (for example `snyk iac test --report || true`). The exact syntax depends on the ecosystem the CLI is run in.&#x20;
 {% endhint %}
 
 When configuring pipelines, you can use popular plugins like [`snyk-filter`](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) for advanced filtering.&#x20;

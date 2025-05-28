@@ -55,9 +55,9 @@ To disable gating initially, use the daily monitoring that is automatically conf
   * Automatic fix PRs
   * Automatic dependency upgrade PRs
   * Snyk vulnerability patches
-* PR Checks are available for
+* Pull request status checks are available for
   * Open Source security and licenses
-  * Code analysis (Beta)
+  * Code analysis
 {% endhint %}
 
 &#x20;Similarly, you may want to disable fix and upgrade PR features.
@@ -79,9 +79,9 @@ There are a number of [CI/CD integrations](../../../../scm-ide-and-ci-cd-integra
 In the initial phase, Snyk recommends using the `monitor` feature to import information into Snyk so you can see any discovered issues, unless you are already importing your repos using a source control integration to achieve this. Later, when you want to start gating and blocking new vulnerabilities from being added, you can introduce `test` features, initially failing builds on critical issues, and then gradually adapting the fail criteria over time.
 
 {% hint style="info" %}
-For `snyk iac test --report` and `snyk code test --report` (beta), finding issues will result in the build possibly stopping with a non-zero response code. \
+For `snyk iac test --report`, finding issues will result in the build possibly stopping with a non-zero response code. \
 \
-If you want to passively test this, including the `--report` option requires either setting the build step to always continue or an alternative like concatenating logic equating to `or true`, that is,  `snyk code test --report || true.` The exact syntax will depend on the ecosystem the CLI is running in.&#x20;
+If you want to passively test this, including the `--report` option requires either setting the build step to always continue or an alternative like concatenating logic equating to "or true", (for example  `snyk iac test --report || true`). The exact syntax will depend on the ecosystem the CLI is running in.&#x20;
 {% endhint %}
 
 Tools like [`snyk-filter`](../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) for advanced filtering and [`snyk-delta`](../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md) for highlighting new issues are quite popular for configuring pipelines.
