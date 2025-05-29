@@ -217,7 +217,12 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md)
 
-`--tags=<TAG>[,<TAG>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md)
+`--tags=<TAG>[,<TAG>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md)&#x20;
+
+## `snyk aibom` command options
+
+`--html`\
+`--json-file-output`
 
 ## `snyk auth` command options
 
@@ -273,7 +278,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--filter`: [`iac describe`](commands/iac-describe.md)
 
-`--html`: [`iac describe`](commands/iac-describe.md)
+`--html`: [`iac describe`](commands/iac-describe.md)&#x20;
 
 `--html-file-output=<OUTPUT_FILE_PATH>`: [`iac-describe`](commands/iac-describe.md)
 
