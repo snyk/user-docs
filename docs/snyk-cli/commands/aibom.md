@@ -24,7 +24,7 @@ The current supported format is CycloneDX v1.6 (JSON).
 
 Required. Use experimental command features. This option is required because the command is in its experimental phase.
 
-`--html`
+### `--html`
 
 Optional. Embed the AIBOM into an HTML visualization of the AIBOM components and their relationships.
 
