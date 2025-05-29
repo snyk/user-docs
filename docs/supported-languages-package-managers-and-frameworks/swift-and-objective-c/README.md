@@ -22,7 +22,7 @@ Available functions:
 
 ## Package managers and supported files
 
-Snyk for Swift and Objective-C supports CocoaPods, Swift Package Manager v3.0 or higher as package managers and it uses multiple sources including [cocoapods.org](https://cocoapods.org/) [maven.org](https://maven.org/) for package registry.
+Snyk for Swift and Objective-C supports CocoaPods, Swift Package Manager v3.0 or higher as package managers and it uses multiple sources including [cocoapods.org](https://cocoapods.org/) and [swiftpackageregistry.com](https://swiftpackageregistry.com/) for package registry.
 
 Snyk for Swift and Objective-C supports the following file formats:
 
