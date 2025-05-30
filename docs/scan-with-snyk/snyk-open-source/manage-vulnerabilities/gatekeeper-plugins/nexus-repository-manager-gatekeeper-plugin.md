@@ -1,15 +1,15 @@
 # Nexus Repository Manager Gatekeeper Plugin
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
+{% hint style="warning" %}
+**Nexus Repository Manager Gatekeeper Plugin End of Life: September 15, 2025**\
+On September 15, 2025, this Enterprise-only feature reaches End of Life. Snyk will continue to offer support for using the plugin until September 15,  2025. However, note that no new enhancements or bug fixes will be released for the plugin during this period. After September 15, 2025, the plugin will no longer be available. If you need help, contact your Snyk team or [Snyk support](https://support.snyk.io/s/).
 {% endhint %}
 
 Install the Snyk Nexus Repository Manager Gatekeeper Plugin directly on the Nexus instance to track open-source vulnerabilities and license details in your artifacts based on your configurations.
 
 After the plugin is installed, Snyk runs in the background and whenever a download is requested from the developer's CLI, Snyk automatically does the following:
 
-* Scans artifacts for license issues and for vulnerabilities and delivers fix data for known vulnerabilities found in the artifact
+* Scans artifacts for license issues and for vulnerabilities, and delivers fix data for known vulnerabilities found in the artifact
 * Blocks developers from downloading vulnerable packages based on Snyk results and your severity threshold configurations
 
 By scanning artifacts as part of your work and then displaying those test results, the Snyk plugin enables developers to see the risks associated with their packages and administrators to track and identify issues that are a risk to application security more quickly, and to avoid using those artifacts in Projects.
@@ -24,7 +24,7 @@ Nexus transmits the package name and version to the test endpoint at the Snyk AP
 
 If the Nexus installation is configured to use a proxy, Snyk will automatically use it too. Potentially, there could be an issue if the proxy is an authenticated or Kerberos proxy, but a standard, unauthenticated, forwarding proxy should work if the Nexus installation and its underlying JVM are configured correctly with a proxy.
 
-Snyk calls [`https://api.snyk.io/v1/test`](https://api.snyk.io/v1/test) for the right packager manager with the right name and version.
+Snyk calls [`https://api.snyk.io/v1/test`](https://api.snyk.io/v1/test) for the right package manager with the right name and version.
 
 ## **How the Nexus Repository Manager Gatekeeper Plugin works**
 
