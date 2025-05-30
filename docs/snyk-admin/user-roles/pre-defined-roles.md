@@ -50,18 +50,23 @@ The available Tenant roles are: **Tenant Admin**, **Tenant Viewer**, and **Tenan
 
 This table details the Tenant-level permissions that apply to each pre-defined role:
 
-|                 | Tenant Admin         | Tenant Viewer        | Tenant Member        |
-| --------------- | -------------------- | -------------------- | -------------------- |
-| View Tenant     | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |
-| Edit Tenant     | :heavy\_check\_mark: |                      |                      |
-| List Group      | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
-| View Membership | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
-| Edit Membership | :heavy\_check\_mark: |                      |                      |
-| Edit Owner      | :heavy\_check\_mark: |                      |                      |
-| Create SSO      | :heavy\_check\_mark: |                      |                      |
-| Edit SSO        | :heavy\_check\_mark: |                      |                      |
-| View SSO        | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
-| Delete SSO      | :heavy\_check\_mark: |                      |                      |
-| View User       | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
-| View Report     | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
-| View Billing    | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
+|                   | Tenant Admin         | Tenant Viewer        | Tenant Member        |
+| ----------------- | -------------------- | -------------------- | -------------------- |
+| View Tenant       | :heavy\_check\_mark: | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| Edit Tenant       | :heavy\_check\_mark: |                      |                      |
+| List Group        | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
+| View Membership   | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
+| Edit Membership   | :heavy\_check\_mark: |                      |                      |
+| Delete Membership | :heavy\_check\_mark: |                      |                      |
+| Edit Owner        | :heavy\_check\_mark: |                      |                      |
+| Create SSO        | :heavy\_check\_mark: |                      |                      |
+| Edit SSO          | :heavy\_check\_mark: |                      |                      |
+| View SSO          | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
+| Delete SSO        | :heavy\_check\_mark: |                      |                      |
+| View User         | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
+| View Report       | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
+| View Billing      | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
+| Create Role       | :heavy\_check\_mark: |                      |                      |
+| View Role         | :heavy\_check\_mark: | :heavy\_check\_mark: |                      |
+| Edit Role         | :heavy\_check\_mark: |                      |                      |
+| Delete Role       | :heavy\_check\_mark: |                      |                      |
