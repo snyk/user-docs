@@ -321,7 +321,7 @@ This report analyzes Snyk tests performed as part of CI/CD pipelines executed us
 
 {% hint style="info" %}
 * The report results are scoped by a date range filter that you can use to review specific periods. The filter is defaulted to the last 30 days.
-* This report provides visibility into Snyk tests (`snyk test`, `snyk code test`, `snyk container test`, `snyk iac test`) executed within your CI pipeline (using CLI). Its primary goal is to help you evaluate code test results and determine whether to pass or fail the build process based on these security checks.
+* This report provides visibility into Snyk tests (`snyk test`, `snyk code test`, `snyk container test`, `snyk iac test`) executed within your CI pipeline (using CLI). Its primary goal is to help you evaluate test results and determine whether to pass or fail the build process based on these security checks.
 * Please note that `snyk monitor` commands are **not** included in this report. While `snyk monitor` is crucial for ongoing security posture and identifying new vulnerabilities, this report specifically tracks tests that actively gate your CI/CD pipeline.
 {% endhint %}
 
