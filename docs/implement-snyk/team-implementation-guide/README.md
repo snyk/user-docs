@@ -9,7 +9,9 @@ We start with the awareness that most businesses:
 
 ## **Typical timelines**
 
-You can implement Snyk for your team in days. You can start scanning with Snyk soon after implementation, often using the Git integration. For details, see [Getting started](../../getting-started/) and [Start scanning](../../scan-with-snyk/start-scanning.md). The main guidance for a team to roll out Snyk is to onboard your projects, pilot Snyk functionality with an important project, confirm it works best for your workflows, and then enable the other projects, letting the team know through regular communication what the expectations are.
+Once your Snyk Organization is set up, you can immediately start gaining visibility into your code by integrating your code repositories (with PR checks disabled), CI/CD pipelines, or container registries.
+
+To minimize disruption, Snyk recommends a gradual rollout of your "shift left" security strategy, focusing on backlog remediation and prevention. Key recommendations include providing developers with access to the IDE and piloting on a single Project before expanding best practices to the wider team.
 
 ## Implementation strategy overview
 
@@ -51,4 +53,3 @@ Snyk was built with developers in mind, providing:
 * Tools to create secure applications using integrations for IDE, Git, and CI/CD.
 * [Snyk Advisor](https://snyk.io/advisor) and other tools to make decisions.
 * [Snyk Learn](https://learn.snyk.io) training materials on products, securing code, and best practices.&#x20;
-
