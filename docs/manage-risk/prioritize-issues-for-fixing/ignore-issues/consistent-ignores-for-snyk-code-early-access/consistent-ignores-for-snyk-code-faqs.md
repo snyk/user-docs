@@ -28,14 +28,6 @@ There are no changes to the [Group](https://apidocs.snyk.io/?version=2024-10-15#
 
 An additional attribute containing the finding identifier will be added to these API endpoints and issue reports in the coming months. You can use this to assist you in converting from Project-scoped to asset-scoped ignores, especially at scale or if you have competing ignores across different Projects.
 
-## Support for Bitbucket Data Center/Server <a href="#support-for-bitbucket-data-center-server" id="support-for-bitbucket-data-center-server"></a>
-
-When testing a Bitbucket Server repository, the ignores created are not respected across Projects imported through an SCM integration, Snyk CLI, and IDE.
-
-### Recommendation <a href="#recommendation-2" id="recommendation-2"></a>
-
-Postpone activating Snyk Code Consistent Ignores until Bitbucket Data Center/Server is fully supported.
-
 ## Ignore limitations outside my Snyk Organization
 
 Ignores only work within the Organization where they're defined. You need to run tests in the Organization where you stored an ignore for it to be taken into account. This is also valid for Snyk IDE and CLI environments where developers work in repositories that span multiple Snyk organizations.
