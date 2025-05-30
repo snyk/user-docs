@@ -295,6 +295,39 @@ func Test_aggregateSpecs(t *testing.T) {
 			wantErr: assert.NoError,
 		},
 		{
+			name: "uses override order if present",
+			args: args{
+				cfg: &config.Config{
+					Specs: []config.Spec{
+						{
+							Path: "spec_with_order_override.yaml",
+						},
+					},
+				},
+				docsBasePath: "../testdata/reference_docs/",
+			},
+			want: map[string][]operationPath{
+				"test": {
+					{
+						method:   "POST",
+						specPath: "spec_with_order_override.yaml",
+						pathURL:  "/test",
+					},
+					{
+						method:   "POST",
+						specPath: "spec_with_order_override.yaml",
+						pathURL:  "/test/1",
+					},
+					{
+						method:   "POST",
+						specPath: "spec_with_order_override.yaml",
+						pathURL:  "/test/2",
+					},
+				},
+			},
+			wantErr: assert.NoError,
+		},
+		{
 			name: "filters out beta paths",
 			args: args{
 				cfg: &config.Config{
