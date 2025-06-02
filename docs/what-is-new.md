@@ -7,12 +7,45 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## May 2025
+
+### **Snyk CLI**
+
+* The [`sbom monitor`](snyk-cli/commands/sbom-monitor.md) command help was added.
+* The `--platform` option was added to the [`container sbom`](snyk-cli/commands/container-sbom.md) command.
+* The MCP information was expanded to [Developer guardrails for agentic workflows](snyk-cli/developer-guardrails-for-agentic-workflows/).
+
+### **IDE plugins and extensions**
+
+* Information was added to the [JetBrains plugin troubleshooting](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/troubleshooting-for-the-jetbrains-plugin.md).
+* Region information was updated on all [IDE pages](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/).
+
+### **Snyk Code**
+
+* Legacy ignores can be converted using [bulk ignore conversion](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access/convert-project-scoped-ignores-to-asset-scoped-ignores.md#bulk-ignore-conversion).
+* DeepCode AI Fix has a new name: [Snyk Agent Fix](scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md).
+
+### **Snyk Container**
+
+[Configure the integration with Docker Hub](scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-docker-hub/configure-the-integration-with-docker-hub.md) has been updated to state that Snyk does not support Organization Access Tokens (OAT).
+
+### **Snyk  Integrations**
+
+The [Bitbucket Cloud App](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md) and [Jira App](integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) integrations are now available in the `SNYK-US-02` environment.
+
+### **Other updates**
+
+* For [SCM integrations with Python](supported-languages-package-managers-and-frameworks/python/git-repositories-and-python.md), the list of dependencies that are not supported has been updated to include `pip` for Python 2.7 and 3.7.
+* [Python dependency filtering results](supported-languages-package-managers-and-frameworks/python/git-repositories-and-python.md) have been updated to clarify the conditions in which certain packages and configurations are skipped by SCM scans.
+* The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages-package-managers-and-frameworks/c-c++/), [SBOM monitor](snyk-cli/commands/sbom-monitor.md), [SBOM test](snyk-cli/commands/sbom-test.md), [Test an SBOM document for vulnerabilities](snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
+* [Instructions for upgrading an Organization integration from Classic Broker to Universal Broker](enterprise-setup/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md) were clarified.
+
 ## April 2025
 
 ### **Snyk API**&#x20;
 
 * Several APIs have been updated; see the [Changelog](snyk-api/changelog.md).
-* The navigation of the API section now reflects the use of Authentication and the Changelog for both the V1 and REST APIs.
+* The navigation in the API section now reflects the use of Authentication and the Changelog for both the V1 and REST APIs.
 * The [Authentication for API](snyk-api/authentication-for-api/) page has been updated with region information and clarity on using the bearer token.
 * The [API endpoints index and tips](snyk-api/api-endpoints-index-and-tips/) page now has a note about how to find your `org_id`.
 
@@ -47,7 +80,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Other updates**
 
-* DAST scanning is now available with [Snyk API & Web](https://docs.snyk.io/scan-with-snyk#select-scanning-methods), enabling users to discover and test the security of their APIs and web apps, including AI-generated ones.
+* DAST scanning is now available with [Snyk API & Web](scan-with-snyk/#select-scanning-methods), enabling users to discover and test the security of their APIs and web apps, including AI-generated ones..
 * PR Checks is now available with a General Availability release status.
 
 ## March 2025
@@ -65,13 +98,13 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk CLI, CI/CD, IDE**
 
 * [Advanced use of Snyk Container CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/advanced-use-of-snyk-container-cli.md) now includes support for scanning Kaniko image archives.
-* The [support policy for the CI/CD plugins](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations#support-policy) was updated to align with the CLI support policy.
+* The [support policy for the CI/CD plugins](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/#support-policy) was updated to align with the CLI support policy.
 * The Net new issues feature was added to the IDE documentation for [Eclipse](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects.md#net-new-issues-versus-all-issues), [JetBrains](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/run-an-analysis-with-the-jetbrains-plugin.md#net-new-issues-versus-all-issues), [Visual Studio](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/view-analysis-results-from-visual-studio-extension.md#net-new-issues-versus-all-issues), and [Visual Studio Code](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension/#net-new-issues-versus-all-issues), and [troubleshooting information](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/net-new-issues-delta-scan-troubleshooting.md) was added.
 
 ### **Snyk Code**
 
 * The Generated Pull Requests report is now available in Early Access. This report provides an overview of how Fix, Backlog, and Upgrade PRs are used and highlights the efficiency of PR merges.
-* The Pull Request Experience now supports GitLab and Azure Repos SCM integrations, with a few [limitations](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md#gitlab-and-azure-repos).
+* [The Pull Request Experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md) now supports GitLab and Azure Repos SCM integrations, with a few [limitations](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md#gitlab-and-azure-repos).
 * New Snyk Code filters and columns were added to [Snyk Reports](manage-risk/reporting/issue-columns-dictionary.md#issue-characteristics) and [Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary.md): File Path,  Code Region, and Asset Finding ID.
 * Snyk Code now supports [Rust](supported-languages-package-managers-and-frameworks/rust.md) and [Groovy](supported-languages-package-managers-and-frameworks/groovy.md) available in Early Access and accessible from Snyk Preview.
 
@@ -126,14 +159,14 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Other updates**
 
-* [Snyk Admin](https://docs.snyk.io/snyk-admin) pages have been updated to reflect the addition of [Tenants](https://docs.snyk.io/snyk-admin/groups-and-organizations/tenant) in the Snyk hierarchy, including a new infographic to illustrate the Tenant position in the [hierarchy](https://docs.snyk.io/snyk-admin/groups-and-organizations#the-snyk-hierarchy).
+* [Snyk Admin](snyk-admin/) pages have been updated to reflect the addition of [Tenants](https://docs.snyk.io/snyk-admin/groups-and-organizations/tenant) in the Snyk hierarchy, including a new infographic to illustrate the Tenant position in the [hierarchy](https://docs.snyk.io/snyk-admin/groups-and-organizations#the-snyk-hierarchy).
 
 ## November 2024
 
 ### &#x20;**Snyk AppRisk**&#x20;
 
 * The [Asset Dashboard](manage-issues/reporting/available-snyk-reports.md#asset-dashboard) has been redesigned and is included in the Reports section. It now features several enhancements, including a Global filter bar, new data widgets, and the option to export the dashboard as a PDF.
-* The [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md#scm-integrations) documentation has been updated to outline the specific steps necessary to configure each SCM integration with a Snyk Broker token.
+* The [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/snyk-broker-apprisk.md) documentation has been updated to outline the specific steps necessary to configure each SCM integration with a Snyk Broker token.
 
 ### **Snyk Container**
 
@@ -146,8 +179,8 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Other updates**
 
-* The Pull Request Checks section has been updated to include the new [Pull Request Experience for PR Checks](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience).
-* The [Supported Languages](supported-languages-package-managers-and-frameworks/) page has been reorganized to provide detailed information about language availability for each Snyk product. Additionally, it provides a list of package managers, frameworks, and features for each supported language.
+* The Pull Request Checks section has been updated to include the new [Pull Request Experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md) for PR Checks.
+* The [Supported languages](supported-languages-package-managers-and-frameworks/) page has been reorganized to provide detailed information about language availability for each Snyk product. Additionally, it provides a list of package managers, frameworks, and features for each supported language.
 * A service account using OAuth 2.0 can now be [created through the Snyk Web UI](enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md#create-oauth-service-accounts-through-the-ui).
 * The [API index ](snyk-api/api-endpoints-index-and-tips/)now includes entries for each endpoint mentioned in the Snyk user docs.
 * The[ Developer IDE and CLI usage](manage-issues/reporting/available-snyk-reports.md#developer-ide-and-cli-usage) report has been enhanced with additional functionalities: **Developer email address** and **PDF export**.
@@ -159,11 +192,11 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 * Links to APIs have been updated throughout the Snyk User Docs site.
 * The [API](snyk-api/) pages have been extensively updated to reflect changes in how APIs are published.
-* The [API Authentication](snyk-api/authentication-for-api/) pages have been updated to include when to use a personal token and when to use a service account, and to improve the flow of information.
+* The [API authentication](snyk-api/authentication-for-api/) pages have been updated to include when to use a personal token and when to use a service account, and to improve the flow of information.
 
 ### **Snyk AppRisk**
 
-* [Risk factors on assets](manage-assets/#inventory-overview) is now in [EA](getting-started/snyk-release-process.md#early-access) for Snyk AppRisk customers.
+* [Risk factors on assets](manage-assets/assets-inventory-components.md#risk-factors) is now in [EA](getting-started/snyk-release-process.md#early-access) for Snyk AppRisk customers.
 * [Asset inventory components](manage-assets/assets-inventory-components.md#clusters) has been updated to include details on clusters.
 * Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](enterprise-setup/snyk-broker/snyk-broker-apprisk.md#sonarqube-sast-integration).
 
@@ -172,8 +205,8 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * The [CLI authentication page](snyk-cli/authenticate-to-use-the-cli.md) has been updated for the OAuth 2.0 protocol.
 * The page [Debugging the Snyk CLI](snyk-cli/debugging-the-snyk-cli.md) has been added.
 * [CLI standalone executables](snyk-cli/install-or-update-the-snyk-cli/#install-with-standalone-executables) have been updated to include Alpine Arm64.
-* IDE Eclipse[ plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/) and [JetBrains plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/) documentation pages have been updated.
-* [Authentication information](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/) have been updated for all IDEs.
+* IDE Eclipse[ plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/) and [JetBrains plugin ](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/)documentation pages have been updated.
+* [Authentication information](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/) has been updated for all IDEs.
 
 ### **Snyk Integrations**
 
@@ -282,9 +315,9 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 * A comparison of the GitHub and GitHub Enterprise integrations functions now resides on the [SCM, IDE, and CI/CD integrations](scm-ide-and-ci-cd-integrations/#github-vs-github-enterprise) page.
 * Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
-* The [Snyk SCM Integrations](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations) page now contains information critical to using these integrations successfully in your SDLC. This includes:
-  * Organizing integrations by [Group](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [Organization](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#organization-level-snyk-scm-integrations) level in line with Snyk AppRisk functionality
-  * [Git repository cloning](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-git-repository-cloning) details
+* The [Snyk SCM Integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) page now contains information critical to using these integrations successfully in your SDLC. This includes:
+  * Organizing integrations by [Group](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-apprisk-scm-integrations) and [Organization](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#organization-level-snyk-scm-integrations) level in line with Snyk AppRisk functionality
+  * [Git repository cloning](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md) details
   * [Deployment recommendations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#deployment-order-recommendations) for Enterprise customers
   * [User permissions and access scope requirements](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#user-permissions-and-access-scope-requirements) for each SCM integration
   * Instructions on how to generate [integrated SCM tokens for Snyk Broker](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#integrated-scm-tokens-for-snyk-broker)
