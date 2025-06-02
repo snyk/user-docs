@@ -744,6 +744,15 @@
           "$ref": "#/components/schemas/GroupId"
         }
       },
+      "HasUsersAssigned": {
+        "description": "returns current memberships of the role in the meta relationships section",
+        "in": "query",
+        "name": "has_users_assigned",
+        "schema": {
+          "default": false,
+          "type": "boolean"
+        }
+      },
       "Id": {
         "description": "Filter resources by resource UUID (multi-value, comma-separated)",
         "example": "4a662442-7445-55c3-adcc-cbbbdd99999",
@@ -1186,6 +1195,15 @@
         "name": "role_name",
         "schema": {
           "type": "string"
+        }
+      },
+      "RoleId": {
+        "description": "Unique identifier of the role.",
+        "in": "path",
+        "name": "role_id",
+        "required": true,
+        "schema": {
+          "$ref": "#/components/schemas/RoleId"
         }
       },
       "ScanId": {
@@ -11835,6 +11853,11 @@
         ],
         "type": "object"
       },
+      "RoleId": {
+        "example": "00000000-0000-0000-0000-000000000000",
+        "format": "uuid",
+        "type": "string"
+      },
       "SSOConnection": {
         "additionalProperties": false,
         "properties": {
@@ -12832,6 +12855,21 @@
         "format": "uuid",
         "type": "string"
       },
+      "TenantRoleMeta": {
+        "additionalProperties": false,
+        "properties": {
+          "app_count": {
+            "type": "integer"
+          },
+          "service_account_count": {
+            "type": "integer"
+          },
+          "user_count": {
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
       "TenantRoleName": {
         "description": "The display name of the role.",
         "example": "Role name",
@@ -12875,6 +12913,9 @@
             "format": "uuid",
             "type": "string"
           },
+          "meta": {
+            "$ref": "#/components/schemas/TenantRoleMeta"
+          },
           "relationships": {
             "properties": {
               "tenant": {
@@ -12892,7 +12933,8 @@
         },
         "required": [
           "id",
-          "type"
+          "type",
+          "attributes"
         ],
         "type": "object"
       },
@@ -63161,6 +63203,100 @@
           }
         },
         "summary": "List all available roles for a given tenant",
+        "tags": [
+          "TenantRole"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tenant_roles",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/tenants/{tenant_id}/roles/{role_id}": {
+      "get": {
+        "description": "Return a role from a tenant by the tenant and role id with its details and permissions.\n\n#### Required permissions\n\n- `tenant.roles.read`",
+        "operationId": "getTenantRole",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/TenantId"
+          },
+          {
+            "$ref": "#/components/parameters/RoleId"
+          },
+          {
+            "$ref": "#/components/parameters/HasUsersAssigned"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/TenantRoleResponseData"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/SelfLink"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Returns the requested role.",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Return a specific role by its id and its tenant id.",
         "tags": [
           "TenantRole"
         ],
