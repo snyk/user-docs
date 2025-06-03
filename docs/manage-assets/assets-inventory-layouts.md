@@ -108,7 +108,7 @@ Assets in the inventory are presented with key attributes in the following colum
 * **Class** - Reflects the business criticality of the asset from A (most critical) to D (least critical), as defined by the user in the Policies view. You can manually change the class or automatically change it by applying a policy. You can lock the value you have manually set for a Class to prevent policies from overriding it.
 * **Risk factors** - Lists the potential vulnerabilities and security threats associated with each asset and helps users identify specific risks, enabling them to prioritize and address issues more effectively.&#x20;
 * **Source** - Reflects the source of the asset, which can come from Snyk, an SCM, or a third-party integration.
-* **SCM Integrations** - Shows how each SCM was integrated at the Group or Organization level. By understanding the source of the SCM integration, you can determine if you require an Organization-level integration to unlock full asset context.
+* **SCM Integrations** - Shows how each SCM was integrated at the Group or Organization level. By understanding the source of the SCM integration, you can determine if you require a Group-level integration to unlock full asset context.
 * **SCM Repository freshness** - Reflects the status of the repository and the date of the last commit.
 * **Clusters** - Provides a list of all the cluster names where the image asset is deployed.&#x20;
 * **Organizations** - Provides a list of the Snyk Organizations that are mapped to the asset.
