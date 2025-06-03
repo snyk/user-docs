@@ -21,7 +21,7 @@ To manually trigger `snyk test` , as illustrated in the following screen image:
 2. Click the **Run (play)** button at the top of the plugin sidebar.
 3. If the play button is grayed out, there is a scan in progress. Wait for it to complete before starting another scan.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-lqcw.png" alt="How to manually trigger a Snyk analysis"><figcaption><p>Manually triggering a Snyk analysis</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/runAnalysis.png" alt="How to manually trigger a Snyk analysis"><figcaption><p>Manually triggering a Snyk analysis</p></figcaption></figure>
 
 ## Scan configuration
 

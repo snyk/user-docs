@@ -17,7 +17,7 @@ To authenticate, follow these steps:
 
 1. After the extension is installed, click the **Snyk icon** in the navigation bar, then click **Trust project and scan**.
 
-<figure><img src="../../../.gitbook/assets/SCR-20240821-twbu.png" alt=""><figcaption><p>Snyk icon and connect and trust</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-06-03 at 11.17.13 AM.png" alt=""><figcaption><p>Snyk icon and connect and trust</p></figcaption></figure>
 
 2. A new browser window opens; in response to the prompt, log in to your Snyk account.
 3. In the next prompt, the Snyk IDE plugin requests access to act on your behalf; click **Grant app access**.
