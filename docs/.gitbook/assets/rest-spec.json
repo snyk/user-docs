@@ -736,12 +736,12 @@
         }
       },
       "GroupId": {
-        "description": "Unique identifier of the group.",
-        "in": "path",
+        "description": "The group ID of the custom base image",
+        "in": "query",
         "name": "group_id",
-        "required": true,
         "schema": {
-          "$ref": "#/components/schemas/GroupId"
+          "format": "uuid",
+          "type": "string"
         }
       },
       "HasUsersAssigned": {
@@ -993,12 +993,10 @@
         }
       },
       "OrgId": {
-        "description": "Unique identifier for org",
-        "in": "path",
+        "description": "The organization ID of the custom base image",
+        "in": "query",
         "name": "org_id",
-        "required": true,
         "schema": {
-          "example": "b667f176-df52-4b0a-9954-117af6b05ab7",
           "format": "uuid",
           "type": "string"
         }
@@ -1110,8 +1108,7 @@
         }
       },
       "ProjectId": {
-        "description": "Filter logs by project ID.",
-        "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+        "description": "The ID of the container project that the custom base image is based off of.",
         "in": "query",
         "name": "project_id",
         "schema": {
@@ -1260,16 +1257,14 @@
         }
       },
       "SortBy": {
-        "description": "Which column to sort by.",
+        "description": "Which column to sort by. \nIf sorting by version, the versioning schema is used.\n",
         "in": "query",
         "name": "sort_by",
         "schema": {
           "enum": [
-            "username",
-            "user_display_name",
-            "email",
-            "login_method",
-            "role_name"
+            "repository",
+            "tag",
+            "version"
           ],
           "type": "string"
         }
@@ -13840,31 +13835,13 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "description": "The ID of the container project that the custom base image is based off of.",
-            "in": "query",
-            "name": "project_id",
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/ProjectId"
           },
           {
-            "description": "The organization ID of the custom base image",
-            "in": "query",
-            "name": "org_id",
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
-            "description": "The group ID of the custom base image",
-            "in": "query",
-            "name": "group_id",
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/Repository"
@@ -13876,17 +13853,7 @@
             "$ref": "#/components/parameters/IncludeInRecommendations"
           },
           {
-            "description": "Which column to sort by. \nIf sorting by version, the versioning schema is used.\n",
-            "in": "query",
-            "name": "sort_by",
-            "schema": {
-              "enum": [
-                "repository",
-                "tag",
-                "version"
-              ],
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/SortBy"
           },
           {
             "$ref": "#/components/parameters/SortDirection"
@@ -14372,7 +14339,15 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "Unique identifier of the group.",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "example": "00000000-0000-0000-0000-000000000000",
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -15048,7 +15023,14 @@
             }
           },
           {
-            "$ref": "#/components/parameters/ProjectId"
+            "description": "Filter logs by project ID.",
+            "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+            "in": "query",
+            "name": "project_id",
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Events"
@@ -19874,7 +19856,15 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "Unique identifier for org",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "example": "b667f176-df52-4b0a-9954-117af6b05ab7",
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -22218,7 +22208,14 @@
             }
           },
           {
-            "$ref": "#/components/parameters/ProjectId"
+            "description": "Filter logs by project ID.",
+            "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
+            "in": "query",
+            "name": "project_id",
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Events"
@@ -62836,7 +62833,19 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "$ref": "#/components/parameters/SortBy"
+            "description": "Which column to sort by.",
+            "in": "query",
+            "name": "sort_by",
+            "schema": {
+              "enum": [
+                "username",
+                "user_display_name",
+                "email",
+                "login_method",
+                "role_name"
+              ],
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/SortOrder"
