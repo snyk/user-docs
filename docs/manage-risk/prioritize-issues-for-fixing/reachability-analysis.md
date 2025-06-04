@@ -5,10 +5,10 @@
 
 Reachability is now in General Availability (GA) status for certain [integrations and programming languages](reachability-analysis.md#supported-languages-and-integrations).
 
-&#x20;Snyk is expanding its reachability capabilities by adding more integrations and languages, which are available in Early Access and can be enabled through [Snyk Preview](../../snyk-admin/snyk-preview.md).
+Snyk is expanding its reachability capabilities by adding more integrations and languages, which are available in Early Access and can be enabled through [Snyk Preview](../../snyk-admin/snyk-preview.md).
 {% endhint %}
 
-Snyk reachability analysis allows you to analyze risk by identifying whether your application is calling a code element (e.g. functions, classes, modules, annotations, etc.) related to the vulnerability, thus raising the chances of that vulnerability being exploited in the context of your application.
+Snyk reachability analysis allows you to analyze risk by identifying whether your application is calling a code element (for example functions, classes, modules, annotations) related to the vulnerability, thus raising the chances of that vulnerability being exploited in the context of your application.
 
 Reachability analysis can be used as a standalone signal to make decisions, or as part of a broader risk-based prioritization approach using the Snyk Risk Score.&#x20;
 
@@ -117,7 +117,13 @@ Program analysis requires a trade-off between accurate results, minimizing false
 
 To facilitate this trade-off, Snyk DeepCode analysis applies real-time decision-making to determine whether to under-approximate the set of reachable elements based on analysis of the likelihood that a reachable path will be found in a specific environment.&#x20;
 
-For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. The agentic capabiltiy of Snyk  analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure.&#x20;
+For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. The agentic capability of Snyk  analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure.&#x20;
+
+{% hint style="info" %}
+Changes in the first-party code, in the vulnerability analysis, and enhancements in the SAST engine can impact the results.&#x20;
+
+Therefore, vulnerabilities labeled as **Not path found** can change to **Reachable** over time.
+{% endhint %}
 
 ### Understanding the Limits of Reachability in Static Analysis
 
