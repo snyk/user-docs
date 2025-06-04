@@ -1,3 +1,36 @@
+## 2024-10-15 - Updated 2025-06-04
+
+### GET - `/groups/{group_id}/assets/{asset_id}` - Added
+- Get an Asset by its ID
+
+#### Required permissions
+
+- `View Groups (group.read)`
+
+
+### GET - `/groups/{group_id}/assets/{asset_id}/relationships/projects` - Added
+- List asset projects with pagination
+
+#### Required permissions
+
+- `View Groups (group.read)`
+
+
+### GET - `/groups/{group_id}/assets/{asset_id}/relationships/assets` - Added
+- List related assets with pagination
+
+#### Required permissions
+
+- `View Groups (group.read)`
+
+
+### POST - `/groups/{group_id}/assets/search` - Added
+- List Assets with filters
+
+#### Required permissions
+
+- `View Groups (group.read)`
+
 ## 2024-10-15 - Updated 2025-05-27
 
 ### GET - `/orgs/{org_id}` - Updated

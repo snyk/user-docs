@@ -402,6 +402,29 @@
           "$ref": "#/components/schemas/Uuid"
         }
       },
+      "AssetId": {
+        "description": "Unique identifier for the Asset",
+        "in": "path",
+        "name": "asset_id",
+        "required": true,
+        "schema": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
+      "AssetTypeFilter": {
+        "description": "Filter by asset type",
+        "in": "query",
+        "name": "type",
+        "schema": {
+          "enum": [
+            "repository",
+            "package",
+            "image"
+          ],
+          "type": "string"
+        }
+      },
       "AssignableByMe": {
         "description": "When true, only return roles that the current user can assign to others in the tenant.",
         "in": "query",
@@ -649,6 +672,14 @@
           "type": "string"
         }
       },
+      "EndingBeforeCursor": {
+        "description": "Return records before the record identified by cursor position ending_before",
+        "in": "query",
+        "name": "ending_before",
+        "schema": {
+          "type": "string"
+        }
+      },
       "EnvironmentId": {
         "description": "Unique identifier for an environment",
         "example": "052781a7-17f6-494d-0000-25c8b509abcd",
@@ -736,12 +767,12 @@
         }
       },
       "GroupId": {
-        "description": "The group ID of the custom base image",
-        "in": "query",
+        "description": "Group ID",
+        "in": "path",
         "name": "group_id",
+        "required": true,
         "schema": {
-          "format": "uuid",
-          "type": "string"
+          "$ref": "#/components/schemas/Uuid"
         }
       },
       "HasUsersAssigned": {
@@ -882,17 +913,14 @@
         }
       },
       "Limit": {
-        "description": "Number of results to return per page",
-        "example": 10,
+        "description": "Number of records to return",
         "in": "query",
         "name": "limit",
         "schema": {
           "default": 10,
-          "format": "int32",
           "maximum": 100,
           "minimum": 10,
-          "multipleOf": 10,
-          "type": "integer"
+          "type": "number"
         }
       },
       "Location": {
@@ -1338,6 +1366,14 @@
       "StartingAfter": {
         "description": "Return the page of results immediately after this cursor",
         "example": "v1.eyJpZCI6IjEwMDAifQo=",
+        "in": "query",
+        "name": "starting_after",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "StartingAfterCursor": {
+        "description": "Return records after the record identified by cursor position starting_after",
         "in": "query",
         "name": "starting_after",
         "schema": {
@@ -2877,6 +2913,341 @@
         ],
         "type": "object"
       },
+      "AssetAttributes": {
+        "properties": {
+          "app_context": {
+            "description": "asset metadata from App Context integrations",
+            "nullable": true,
+            "type": "object"
+          },
+          "archived": {
+            "description": "Indicates if the asset is archived",
+            "type": "boolean"
+          },
+          "base_image": {
+            "description": "Base image of the container image",
+            "nullable": true,
+            "type": "string"
+          },
+          "browse_url": {
+            "description": "URL to browse the asset",
+            "format": "uri",
+            "nullable": true,
+            "type": "string"
+          },
+          "class": {
+            "$ref": "#/components/schemas/AssetClassAttributes"
+          },
+          "coverage_controls": {
+            "items": {
+              "$ref": "#/components/schemas/CoverageControlAttributes"
+            },
+            "type": "array"
+          },
+          "created_at": {
+            "description": "Creation timestamp",
+            "format": "date-time",
+            "type": "string"
+          },
+          "default_branch_name": {
+            "description": "Default branch name of the repository",
+            "example": "main",
+            "nullable": true,
+            "type": "string"
+          },
+          "developers": {
+            "description": "List of developers associated with the asset",
+            "items": {
+              "$ref": "#/components/schemas/DeveloperAttributes"
+            },
+            "type": "array"
+          },
+          "file_path": {
+            "description": "File path of the asset",
+            "nullable": true,
+            "type": "string"
+          },
+          "image_digests": {
+            "description": "List of digests for the container image",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true,
+            "type": "array"
+          },
+          "image_id": {
+            "description": "ID of the container image",
+            "nullable": true,
+            "type": "string"
+          },
+          "image_registries": {
+            "description": "List of registries containing the container image",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true,
+            "type": "array"
+          },
+          "image_repositories": {
+            "description": "List of repositories containing the container image",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true,
+            "type": "array"
+          },
+          "image_tags": {
+            "description": "List of tags for the container image",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true,
+            "type": "array"
+          },
+          "languages": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "description": "Languages used in the asset with usage counts",
+            "nullable": true,
+            "type": "object"
+          },
+          "name": {
+            "description": "Name of the asset of the file path",
+            "nullable": true,
+            "type": "string"
+          },
+          "repository_freshness": {
+            "description": "Indicating the activity level of the repository",
+            "format": "byte",
+            "nullable": true,
+            "type": "string"
+          },
+          "repository_url": {
+            "description": "URL to the asset's repository",
+            "nullable": true,
+            "type": "string"
+          },
+          "risk_factors": {
+            "description": "Runtime context that indicates increased asset risk",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sources": {
+            "description": "List of source identifiers for the asset",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "tags": {
+            "description": "Tags associated with the asset",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "updated_at": {
+            "description": "Last update timestamp",
+            "format": "date-time",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "AssetClassAttributes": {
+        "example": {
+          "locked": true,
+          "name": "A",
+          "rank": 1
+        },
+        "properties": {
+          "locked": {
+            "description": "Whether the asset class is locked",
+            "type": "boolean"
+          },
+          "name": {
+            "description": "class name of the asset",
+            "type": "string"
+          },
+          "rank": {
+            "description": "Rank associated with the asset class",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "AssetProjectAttributes": {
+        "properties": {
+          "issues_counts": {
+            "properties": {
+              "critical": {
+                "type": "number"
+              },
+              "high": {
+                "type": "number"
+              },
+              "low": {
+                "type": "number"
+              },
+              "medium": {
+                "type": "number"
+              }
+            },
+            "type": "object"
+          },
+          "last_scan": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "organization_id": {
+            "type": "string"
+          },
+          "organization_name": {
+            "type": "string"
+          },
+          "project_type": {
+            "type": "string"
+          },
+          "target_file": {
+            "type": "string"
+          },
+          "target_id": {
+            "type": "string"
+          },
+          "target_reference": {
+            "type": "string"
+          },
+          "test_surface": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "AssetProjectResponseData": {
+        "description": "asset project resource object",
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/AssetProjectAttributes"
+          },
+          "id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "project"
+            ],
+            "example": "project",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ],
+        "type": "object"
+      },
+      "AssetRelationships": {
+        "properties": {
+          "assets": {
+            "properties": {
+              "links": {
+                "properties": {
+                  "related": {
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "organizations": {
+            "description": "Snyk Organizations with Projects that map to this asset",
+            "nullable": true,
+            "properties": {
+              "data": {
+                "items": {
+                  "properties": {
+                    "attributes": {
+                      "properties": {
+                        "name": {
+                          "nullable": true,
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "projects": {
+            "properties": {
+              "links": {
+                "properties": {
+                  "related": {
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "type": "object"
+      },
+      "AssetResponseData": {
+        "description": "asset resource object",
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/AssetAttributes"
+          },
+          "id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "relationships": {
+            "$ref": "#/components/schemas/AssetRelationships"
+          },
+          "removed": {
+            "type": "boolean"
+          },
+          "type": {
+            "enum": [
+              "repository",
+              "image",
+              "package"
+            ],
+            "example": "repository",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type"
+        ],
+        "type": "object"
+      },
       "AssignableByMe": {
         "example": false,
         "type": "boolean"
@@ -4394,6 +4765,43 @@
         ],
         "type": "object"
       },
+      "CoverageControlAttributes": {
+        "example": {
+          "category": "security",
+          "gap": true,
+          "issues_count": {
+            "critical": 1,
+            "high": 2,
+            "low": 0,
+            "medium": 0
+          },
+          "last_scan": "2023-10-10T08:00:00Z",
+          "name": "control1"
+        },
+        "properties": {
+          "category": {
+            "description": "Category of the control",
+            "type": "string"
+          },
+          "gap": {
+            "description": "indicates if there is a coverage gap",
+            "type": "boolean"
+          },
+          "issues_count": {
+            "$ref": "#/components/schemas/IssuesCountAttributes"
+          },
+          "last_scan": {
+            "description": "Last scan date for this control",
+            "format": "date-time",
+            "type": "string"
+          },
+          "name": {
+            "description": "Name of the control",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "CreateAssignmentsPayload": {
         "properties": {
           "data": {
@@ -5262,6 +5670,39 @@
         },
         "maxItems": 10,
         "type": "array"
+      },
+      "DeveloperAttributes": {
+        "example": {
+          "discovered_by": "github",
+          "email": "john.doe@example.com",
+          "url": "https://github.com/johndoe",
+          "username": "johndoe"
+        },
+        "properties": {
+          "discovered_by": {
+            "description": "The SCM integration that was discovered by the developer",
+            "nullable": true,
+            "type": "string"
+          },
+          "email": {
+            "description": "Email address of the developer",
+            "format": "email",
+            "nullable": true,
+            "type": "string"
+          },
+          "url": {
+            "description": "URL of the developer's profile",
+            "format": "uri",
+            "nullable": true,
+            "type": "string"
+          },
+          "username": {
+            "description": "Username of the developer",
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
       },
       "DigitalOceanCrAttributes": {
         "properties": {
@@ -8184,6 +8625,33 @@
         ],
         "example": "issue",
         "type": "string"
+      },
+      "IssuesCountAttributes": {
+        "example": {
+          "critical": 5,
+          "high": 12,
+          "low": 3,
+          "medium": 7
+        },
+        "properties": {
+          "critical": {
+            "description": "Number of critical issues",
+            "type": "integer"
+          },
+          "high": {
+            "description": "Number of high-severity issues",
+            "type": "integer"
+          },
+          "low": {
+            "description": "Number of low-severity issues",
+            "type": "integer"
+          },
+          "medium": {
+            "description": "Number of medium-severity issues",
+            "type": "integer"
+          }
+        },
+        "type": "object"
       },
       "IssuesMeta": {
         "properties": {
@@ -12171,6 +12639,69 @@
         "minItems": 1,
         "type": "array"
       },
+      "SearchAttributesObject": {
+        "properties": {
+          "attribute": {
+            "description": "Name of the Asset attribute to filter on, not required if a logical operator is used",
+            "type": "string"
+          },
+          "operator": {
+            "description": "Required, name of the Operator for the query",
+            "type": "string"
+          },
+          "values": {
+            "description": "Required values, which can be strings, dates, integers, booleans, or nested attributes",
+            "items": {
+              "anyOf": [
+                {
+                  "description": "A string value",
+                  "type": "string"
+                },
+                {
+                  "description": "A date value in ISO 8601 format",
+                  "format": "date",
+                  "type": "string"
+                },
+                {
+                  "description": "An integer value",
+                  "type": "integer"
+                },
+                {
+                  "description": "Search object",
+                  "type": "object"
+                },
+                {
+                  "description": "A boolean value",
+                  "type": "boolean"
+                }
+              ]
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "operator",
+          "values"
+        ],
+        "type": "object"
+      },
+      "SearchObject": {
+        "description": "The request body can be empty or include query parameters.",
+        "properties": {
+          "query": {
+            "properties": {
+              "attributes": {
+                "$ref": "#/components/schemas/SearchAttributesObject"
+              }
+            },
+            "required": [
+              "attributes"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "object"
+      },
       "SecretAttributes": {
         "additionalProperties": false,
         "properties": {
@@ -13832,7 +14363,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/ProjectId"
@@ -13841,7 +14383,13 @@
             "$ref": "#/components/parameters/OrgId"
           },
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "The group ID of the custom base image",
+            "in": "query",
+            "name": "group_id",
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Repository"
@@ -14243,7 +14791,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -14443,14 +15002,7 @@
             "style": "form"
           },
           {
-            "description": "Group ID",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -14462,7 +15014,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -14558,14 +15121,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Group ID",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           }
         ],
         "requestBody": {
@@ -14732,14 +15288,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Group ID",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -14818,14 +15367,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Group ID",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -14964,6 +15506,449 @@
         "x-snyk-api-resource": "app_installs",
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-05-23",
+        "x-stability-level": "stable"
+      }
+    },
+    "/groups/{group_id}/assets/search": {
+      "post": {
+        "description": "List Assets with filters\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "operationId": "listAssets",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/GroupId"
+          },
+          {
+            "$ref": "#/components/parameters/Version"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "anyOf": [
+                  {
+                    "description": "Empty body",
+                    "type": "object"
+                  },
+                  {
+                    "$ref": "#/components/schemas/SearchObject"
+                  }
+                ]
+              }
+            }
+          },
+          "description": "Filter criteria for listing assets. Can be empty or contain query filters.",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "$ref": "#/components/schemas/AssetResponseData"
+                      },
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "version": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/Links"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Assets found",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "location": {
+                "$ref": "#/components/headers/LocationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "List Assets with filters",
+        "tags": [
+          "Asset"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15"
+        ],
+        "x-snyk-api-resource": "assets",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
+        "x-stability-level": "stable"
+      }
+    },
+    "/groups/{group_id}/assets/{asset_id}": {
+      "get": {
+        "description": "Get an Asset by its ID\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "operationId": "getAsset",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/AssetId"
+          },
+          {
+            "$ref": "#/components/parameters/GroupId"
+          },
+          {
+            "$ref": "#/components/parameters/Version"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/AssetResponseData"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "version": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/SelfLink"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Asset found",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "location": {
+                "$ref": "#/components/headers/LocationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get an Asset by its ID",
+        "tags": [
+          "Asset"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15"
+        ],
+        "x-snyk-api-resource": "assets",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
+        "x-stability-level": "stable"
+      }
+    },
+    "/groups/{group_id}/assets/{asset_id}/relationships/assets": {
+      "get": {
+        "description": "List related assets with pagination\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "operationId": "listRelatedAssets",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/GroupId"
+          },
+          {
+            "$ref": "#/components/parameters/AssetId"
+          },
+          {
+            "$ref": "#/components/parameters/StartingAfterCursor"
+          },
+          {
+            "$ref": "#/components/parameters/EndingBeforeCursor"
+          },
+          {
+            "$ref": "#/components/parameters/Limit"
+          },
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/AssetTypeFilter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "$ref": "#/components/schemas/AssetResponseData"
+                      },
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "version": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/Links"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Related assets found",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "List related assets with pagination",
+        "tags": [
+          "Asset"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15"
+        ],
+        "x-snyk-api-resource": "assets",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
+        "x-stability-level": "stable"
+      }
+    },
+    "/groups/{group_id}/assets/{asset_id}/relationships/projects": {
+      "get": {
+        "description": "List asset projects with pagination\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "operationId": "listAssetProjects",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/GroupId"
+          },
+          {
+            "$ref": "#/components/parameters/AssetId"
+          },
+          {
+            "$ref": "#/components/parameters/StartingAfterCursor"
+          },
+          {
+            "$ref": "#/components/parameters/EndingBeforeCursor"
+          },
+          {
+            "$ref": "#/components/parameters/Limit"
+          },
+          {
+            "$ref": "#/components/parameters/Version"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "$ref": "#/components/schemas/AssetProjectResponseData"
+                      },
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "version": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/Links"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Assets found",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "location": {
+                "$ref": "#/components/headers/LocationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "List asset projects with pagination",
+        "tags": [
+          "Asset"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15"
+        ],
+        "x-snyk-api-resource": "assets",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
         "x-stability-level": "stable"
       }
     },
@@ -15137,7 +16122,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "description": "Group ID",
@@ -17116,7 +18112,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -17523,7 +18530,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -17637,7 +18655,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/PathGroupId"
@@ -17754,7 +18783,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -18813,7 +19853,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -19075,7 +20126,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -19187,7 +20249,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -19517,7 +20590,18 @@
             "$ref": "#/components/parameters/ContentSource"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -19710,7 +20794,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "description": "If set, only return organizations within the specified group",
@@ -20144,7 +21239,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -20351,7 +21457,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -20562,7 +21679,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -21228,7 +22356,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -23473,7 +24612,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -24186,7 +25336,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -24305,7 +25466,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "description": "Organization ID",
@@ -24714,7 +25886,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "description": "Return collections sorted by the specified attributes",
@@ -25417,7 +26600,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "description": "Return projects sorted by the specified attributes",
@@ -25697,7 +26891,18 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -25908,7 +27113,18 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -26021,7 +27237,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -26302,7 +27529,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "description": "Org ID",
@@ -28362,7 +29600,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -28653,7 +29902,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/Type"
@@ -28751,7 +30011,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/Type"
@@ -28852,7 +30123,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -29448,7 +30730,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/Search"
@@ -29963,7 +31256,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "description": "Org ID",
@@ -30338,7 +31642,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -31338,7 +32653,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "description": "Org ID",
@@ -31490,7 +32816,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -33009,7 +34346,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "description": "Org ID",
@@ -34337,7 +35685,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/OrgIdFilter"
@@ -34440,7 +35799,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -34558,7 +35928,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
@@ -34812,7 +36193,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "$ref": "#/components/parameters/AppId"
@@ -62830,7 +64222,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           },
           {
             "description": "Which column to sort by.",
@@ -63138,7 +64541,18 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of results to return per page",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "format": "int32",
+              "maximum": 100,
+              "minimum": 10,
+              "multipleOf": 10,
+              "type": "integer"
+            }
           }
         ],
         "responses": {
