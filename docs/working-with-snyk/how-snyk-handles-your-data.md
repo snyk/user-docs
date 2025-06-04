@@ -128,6 +128,8 @@ Your account is subject to contract terms that might restrict your ability to en
 
 ### Snyk Learn
 
+<figure><img src="../.gitbook/assets/SnykLearn.png" alt=""><figcaption><p>Snyk Learn</p></figcaption></figure>
+
 #### User data
 
 Snyk Learn stores data related to users' progress and completion of lessons, learning paths, and assignments. This data is used to provide personalized learning experiences, generate progress reports, and improve our educational content. You can access your stored learning data through your [Learning Progress](https://learn.snyk.io/user/learning-progress) portal.
@@ -141,6 +143,8 @@ Snyk maintains important safeguards regarding the data processed by Snyk Assist:
 * **Content filtering:** Measures are in place to handle inappropriate input, for your safety and that of Snyk.
 
 ### Snyk API & Web
+
+<figure><img src="../.gitbook/assets/Api-Web.png" alt=""><figcaption><p>Snyk Web &#x26; API</p></figcaption></figure>
 
 Snyk API & Web accesses and scans your web applications and APIs to identify security vulnerabilities through dynamic application security testing (DAST).
 
