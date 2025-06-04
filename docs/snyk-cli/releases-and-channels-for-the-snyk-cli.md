@@ -110,6 +110,21 @@ This policy fosters innovation while optimizing resources.
 
 If you need help, submit a [request](https://support.snyk.io) to Snyk Support.
 
+## Runtime requirements
+
+This section specifies the minimum requirements for the latest CLI, covering aspects such as the operating system, dynamically linked libraries, and runtimes.
+
+{% hint style="warning" %}
+Snyk CLI is designed and expected to run on operating system environments that are actively supported by their vendors and have not reached their End of Support (EOS) or End of Life (EOL). Once an operating system environment reaches its end of support, Snyk will cease testing and providing support for Snyk CLI in that specific environment.
+{% endhint %}
+
+| OS\Architecture | amd64 (minimum requirements)                                                                  | arm64 (minimum requirements)                                                                                       |
+| --------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| macOS           | 10.13                                                                                         | 10.13                                                                                                              |
+| Linux           | glibc ≥ 2.28 & OpenSSL ≥ 3.0 (Enterprise Linux 8, Ubuntu 20.04, Debian buster, other distros) | <p>glibc ≥ 2.31 &#x26; OpenSSL ≥ 3.0 </p><p>(Enterprise Linux 9, Ubuntu 20.04, Debian bullseye, other distros)</p> |
+| Alpine          | musl libc >= 1.1.18 (3.7.3, other distros)                                                    | musl libc >= 1.1.18 (3.7.3, other distros)                                                                         |
+| Windows         | 8.1                                                                                           | -                                                                                                                  |
+
 ## Install standalone executables from a channel
 
 Use the`release.json` in each channel. The download links are provided here, followed by an example for the preview version on the MacOS platform:
