@@ -12,11 +12,13 @@ This is the list of supported operating systems and distributions:
 
 ## [AlmaLinux](https://almalinux.org/)
 
+* AlmaLinux 10
 * AlmaLinux 9
 * AlmaLinux 8
 
 ## [Alpine Linux](https://www.alpinelinux.org/)
 
+* Alpine 3.22
 * Alpine Linux 3.21
 * Alpine Linux 3.20
 * Alpine Linux 3.19
