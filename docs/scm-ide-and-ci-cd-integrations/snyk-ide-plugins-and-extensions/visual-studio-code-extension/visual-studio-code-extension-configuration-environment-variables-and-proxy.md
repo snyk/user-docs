@@ -18,12 +18,6 @@ After the plugin is installed, you can set the following configurations for the 
 
 * **Open Source**: Enable a scanner for open source dependencies; enabled by default.
 * **Snyk Code Security issues**: Enable a scanner for security vulnerabilities in your application code; enabled by default
-* **Snyk Code Quality issues**: Enable a scanner for code quality issues in your application code; disabled by default.
-
-{% hint style="info" %}
-Effective beginning with June 24, 2025, Snyk Code Quality issues will no longer be provided.
-{% endhint %}
-
 * **Infrastructure as Code**: Enable a scanner for insecure configurations in Terraform and Kubernetes code; enabled by default.
 * **Severity selection**: Filter issues by their severity, from Low to Critical.
 * **All Issues vs Net New Issues**: Specify whether to see all issues or only net new issues. The latter requires a Git repository, where the extension compares findings with those in the base branch.
@@ -48,13 +42,12 @@ These settings are not part of the stable functionality and are not officially s
 
 ## CLI and Language Server&#x20;
 
-* When **Automatic Dependency Management** is checked, the plugin will download the [Language Server](../snyk-language-server/) and the [CLI](../../../snyk-cli/) and update them regularly to the defined CLI path and Language Server path if defined. Uncheck this option if downloading the CLI is not possible due to your network configuration, for example, due to firewall rules, and you need to obtain these dependencies through other means.
+* When **Automatic Dependency Management** is checked, the plugin will download the the [CLI](../../../snyk-cli/) and update it regularly to the defined CLI path, if defined. Uncheck this option if downloading the CLI is not possible due to your network configuration, for example, due to firewall rules, and you need to obtain this dependency through other means.
 * **CLI Path:** Allow changing the file path of the CLI (optional field).
-* **Language Server Path:** Allow changing the file path of the Language Server (optional field).
 
 ## Environment variables
 
-To analyze Projects, the plugin uses the Snyk CLI, which requires environment variables:
+To analyze projects, the plugin uses the Snyk language server built into the Snyk CLI, which may require environment variables:
 
 * `PATH`: the path to needed binaries, for example, to Maven.
 * `JAVA_HOME`: the path to the JDK you want to use to analyze Java dependencies.

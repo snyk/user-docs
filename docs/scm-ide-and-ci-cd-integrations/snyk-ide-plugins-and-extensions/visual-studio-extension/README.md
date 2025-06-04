@@ -4,7 +4,7 @@
 
 Integrating security checks early in your development lifecycle helps you pass security reviews seamlessly and avoid expensive fixes down the line.
 
-The Snyk Visual Studio extension allows you to analyze your code and open-source dependencies. With actionable insights directly in your IDE, you can address issues as they arise.
+The Snyk Visual Studio extension allows you to analyze your code, infrastructure configuration, and open-source dependencies. With actionable insights directly in your IDE, you can address issues as they arise.
 
 **Key features:**
 

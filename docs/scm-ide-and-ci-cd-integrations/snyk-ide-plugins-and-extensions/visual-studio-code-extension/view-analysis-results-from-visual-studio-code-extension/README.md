@@ -34,12 +34,7 @@ Snyk reports the following types of issues:
 
 * Open Source issues: Found in open-source dependencies; for more details, see [Analysis results: Snyk Open Source](analysis-results-snyk-open-source.md).
 * Code Security issues: Found in your application’s source code; for more details, see [Analysis results: Snyk Code](analysis-results-snyk-code.md).
-* Code Quality issues: Found in your application source code (same structure as Code Security)
 * Infrastructure as Code issues: Found in infrastructure as code files; For more details, see [Snyk IaC Analysis results: Snyk IaC Configuration](analysis-results-snyk-iac-configuration.md).
-
-{% hint style="info" %}
-Effective beginning on June 24, 2025, Snyk Code Quality issues will no longer be provided.
-{% endhint %}
 
 {% hint style="info" %}
 The exact capabilities and available scanners depend on your Snyk plan. Be sure your Organization's admin enabled all Snyk products prior to configuring any of them in the IDE plugin.

@@ -14,12 +14,6 @@ After the plugin is installed, you can set the following configurations for the 
 
 * **Open Source**: Enable a scanner for open source dependencies; enabled by default.
 * **Snyk Code Security issues**: Enable a scanner for security vulnerabilities in your application code; enabled by default
-* **Snyk Code Quality issues**: Enable a scanner for code quality issues in your application code; disabled by default.
-
-{% hint style="info" %}
-Effective beginning  June 24, 2025, Snyk Code Quality issues will no longer[^1] be provided.
-{% endhint %}
-
 * **Infrastructure as Code**: Enable a scanner for insecure configurations in Terraform and Kubernetes code; enabled by default.
 * **All Issues vs Net New Issues**: Specify whether to see all issues or only net new issues. The latter requires a Git repository, where the extension compares findings with those in the base branch.
 *   **Additional parameters**: Set additional `snyk test` CLI options for Open Source scanning.
@@ -71,5 +65,3 @@ You can set environment variables using the Windows GUI or on the command line u
 If you are behind a proxy, set the proxy settings using the `http_proxy` and `https_proxy` environment variables. You can set environment variables using the Windows GUI or on the command line using the `setx` tool.
 
 For example, the commonly used setting `Proxy Strict SSL` specifies that the proxy server certificate should be verified against the list of supplied CAs specific to Snyk Code.
-
-[^1]: 
