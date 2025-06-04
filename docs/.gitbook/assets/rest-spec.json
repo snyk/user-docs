@@ -15620,12 +15620,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15"
+          "2024-10-15~beta"
         ],
         "x-snyk-api-resource": "assets",
-        "x-snyk-api-stability": "ga",
-        "x-snyk-api-version": "2024-10-15",
-        "x-stability-level": "stable"
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
       }
     },
     "/groups/{group_id}/assets/{asset_id}": {
@@ -15720,12 +15720,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15"
+          "2024-10-15~beta"
         ],
         "x-snyk-api-resource": "assets",
-        "x-snyk-api-stability": "ga",
-        "x-snyk-api-version": "2024-10-15",
-        "x-stability-level": "stable"
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
       }
     },
     "/groups/{group_id}/assets/{asset_id}/relationships/assets": {
@@ -15832,12 +15832,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15"
+          "2024-10-15~beta"
         ],
         "x-snyk-api-resource": "assets",
-        "x-snyk-api-stability": "ga",
-        "x-snyk-api-version": "2024-10-15",
-        "x-stability-level": "stable"
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
       }
     },
     "/groups/{group_id}/assets/{asset_id}/relationships/projects": {
@@ -15944,12 +15944,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15"
+          "2024-10-15~beta"
         ],
         "x-snyk-api-resource": "assets",
-        "x-snyk-api-stability": "ga",
-        "x-snyk-api-version": "2024-10-15",
-        "x-stability-level": "stable"
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
       }
     },
     "/groups/{group_id}/audit_logs/search": {
