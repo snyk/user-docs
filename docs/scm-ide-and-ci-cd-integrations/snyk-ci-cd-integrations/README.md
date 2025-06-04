@@ -14,7 +14,7 @@ When you [decide to use a CI/CD integration,](../git-repository-and-ci-cd-integr
 
 For detailed information, see the pages for the integration you are using:
 
-* [AWS CodePipeline integration](aws-codepipeline-integration-by-adding-a-snyk-scan-stage/)
+* [AWS CodePipeline integration](aws-codepipeline-integration-by-adding-a-snyk-scan-stage.md)
 * [Azure Pipelines integration](azure-pipelines-integration/)
 * [Bitbucket Pipelines integration](bitbucket-pipelines-integration-using-a-snyk-pipe/)
 * [CircleCI integration](circleci-integration-using-a-snyk-orb.md)
