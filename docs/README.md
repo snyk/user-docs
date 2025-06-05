@@ -1,5 +1,5 @@
 ---
-cover: .gitbook/assets/Snyk General Banner.webp
+cover: .gitbook/assets/Docs Banner.png
 coverY: 0
 ---
 
