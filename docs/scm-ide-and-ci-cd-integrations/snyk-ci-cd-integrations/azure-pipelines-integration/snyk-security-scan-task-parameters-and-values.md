@@ -22,13 +22,13 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Parameter:** testType\
 **Required:** Yes\
 **Default:** application\
-**Type:** string: "app" or "container" or "code"
+**Type:** string: `app` or `container` or `code`
 
 **Description:** Determines the type of testing to perform, which also selects the dynamic fields to display as described on the rest of this page.
 
-* Specifying "app" will perform analysis of your application's open-source dependencies (SCA)
-* Specifying "container" will analyze container packages and detected application open-source packages (SCA)
-* Specifying "code" will perform static analysis (SAST) on source code.
+* Specifying `app` will perform analysis of your application's open-source dependencies (SCA)
+* Specifying `container` will analyze container packages and detected application open-source packages (SCA)
+* Specifying `code` will perform static analysis (SAST) on source code.
 
 ## **Field:** Container Image Name
 
@@ -37,7 +37,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default:** none\
 **Type:** String
 
-**Description:** The name of the container image to test. This dynamic field appears when **What do you want to test** is set to **Container Image**. Set to **Yes** if container image test.
+**Description:** The name of the container image to test. This dynamic field appears when **What do you want to test** is set to **Container Image**. Set to **Yes** if you are performing a container image test.
 
 ## **Field:** Path to Dockerfile
 
@@ -46,7 +46,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default:** none\
 **Type:** string
 
-**Description:** The path to the Dockerfile corresponding to the `dockerImageName`. This dynamic field appears when **What do you want to test** is set to **Container Image**. Set to **Yes** if container image test.
+**Description:** The path to the Dockerfile corresponding to the `dockerImageName`. This dynamic field appears when **What do you want to test** is set to **Container Image**. Set to **Yes** if you are performing a container image test.
 
 ## **Field:** Custom path to manifest file to test
 
@@ -80,9 +80,9 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Parameter:** monitorWhen\
 **Required:** No\
 **Default:** "always"\
-**Type:** string: string: "always", "onIssuesFound", or "never"
+**Type:** string: string: `always`, `onIssuesFound`, or `never`
 
-**Description:** When to run snyk monitor to capture the dependency tree of the application or container image and monitor it within Snyk.
+**Description:** When to run `snyk monitor` to capture the dependency tree of the application or container image and monitor it within Snyk.
 
 ## **Field:** Fail build if Snyk finds issues
 
@@ -118,7 +118,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default:** none\
 **Type:** string
 
-**Description:** Alternate working directory. For example, if you want to test a manifest file in a directory other than the root of your repo, you would put in a relative path to that directory.
+**Description:** Alternate working directory. For example, if you want to test a manifest file in a directory other than the root of your repository, you would put in a relative path to that directory.
 
 ## **Field:** Additional command-line args for Snyk CLI (advanced)
 
@@ -127,7 +127,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default:** none\
 **Type:** string
 
-**Description:** Additional Snyk CLI arguments to be passed in. See the [CLI commands and options summary](../../../snyk-cli/cli-commands-and-options-summary.md) for details. Add `--all-projects` as good practice (for example, for .NET), if no project has been found.
+**Description:** Additional Snyk CLI arguments to be passed in. See the [CLI commands and options summary](../../../snyk-cli/cli-commands-and-options-summary.md) for details. Add `--all-projects` as good practice (for example, for .NET), if no Project has been found.
 
 ## **Field:** Trust unknown Certificate Authorities (advanced)
 
