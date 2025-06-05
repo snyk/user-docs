@@ -7,53 +7,6 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
-## June 2025
-
-### **Snyk API**&#x20;
-
-* first relevant info
-* second relevant info
-
-### **Snyk AppRisk**&#x20;
-
-* first relevant info
-* second relevant info
-
-### **Snyk Broker**
-
-* first relevant info
-* second relevant info
-
-### **Snyk CLI**
-
-* first relevant info
-* second relevant info
-
-### **Snyk Code**
-
-* first relevant info
-* second relevant info
-
-### **Snyk Container**
-
-* first relevant info
-* second relevant info
-
-### **Snyk  Integrations**
-
-* first relevant info
-* second relevant info
-
-### **Snyk Open Source**
-
-* first relevant info
-* second relevant info
-
-### **Other updates**
-
-* first relevant info
-* second relevant info
-
 ## May 2025
 
 ### **Snyk CLI**
