@@ -10,8 +10,8 @@ The following functions are available for C/C++:
 
 * SCM import - available only for Snyk Code.
 * Test or monitor your app through CLI and IDE
-* Test your app's SBOM using `pkg:generic` or `pkg:conan` . For more information, see [Test an SBOM document for vulnerabilities](../../snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
-* Test your app's packages using `pkg:generic` or `pkg:conan` . For more information, see [List issues for a package](https://docs.snyk.io/snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package).
+* Test your app's SBOM using `pkg:generic` or `pkg:conan`. For more information, see [Test an SBOM document for vulnerabilities](../../snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
+* Test your app's packages using `pkg:generic` or `pkg:conan`. For more information, see [List issues for a package](../../snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package.md).
 
 ## Package managers and supported file extensions
 

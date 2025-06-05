@@ -268,7 +268,7 @@ The following `snyk` command line options are supported with the `snyk test --un
 `--target-reference=<TARGET_REFERENCE>` (`snyk monitor` only)\
 `--project-name=<c-project>` (`snyk monitor` only)
 
-For more information about command line options, see the Snyk help docs: [Options for scanning with `snyk test --unmanaged`](https://docs.snyk.io/snyk-cli/commands/test#options-for-scanning-using-unmanaged) or [`snyk monitor --unmanaged`](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-scanning-using-unmanaged).
+For more information about command line options, see the Snyk help docs: [Options for scanning with `snyk test --unmanaged`](../../snyk-cli/commands/test.md#unmanaged) or [`snyk monitor --unmanaged`](../../snyk-cli/commands/monitor.md#unmanaged).
 
 To import the test results (issues and dependencies) in the Snyk CLI, run the `snyk monitor --unmanaged` command:
 
