@@ -1,8 +1,8 @@
 # Snyk Setup Action
 
-The [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup) provides a way to install the Snyk CLI to check for vulnerabilities. For information about when to use this action, see [Use your own development environment](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#use-your-own-development-environment) on the GitHub Actions Integration page.
+The [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup) provides a way to install the Snyk CLI to check for vulnerabilities. For information about when to use this action, see [Use your own development environment](./#use-your-own-development-environment).
 
-You can use the Snyk Setup Action to install [Snyk](https://snyk.co/SnykGH) to check for vulnerabilities as follows:
+You can use the Snyk Setup Action to install Snyk to check for vulnerabilities as follows:
 
 ```yaml
 name: Snyk example 
@@ -22,19 +22,19 @@ jobs:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```
 
-When using the Setup Action you are responsible for setting up the development environment required to run Snyk. In this case this is a Go project so `actions/setup-go` was used, but this would be specific to your project. The [GitHub language and frameworks guides](https://docs.github.com/en/actions/language-and-framework-guides) are a good starting point.
+When using the Setup Action, you are responsible for setting up the development environment required to run Snyk. In this case, this is a Go project, so `actions/setup-go` was used, but this would be specific to your Project. The [GitHub language and frameworks guides](https://docs.github.com/en/actions/language-and-framework-guides) are a good starting point.
 
-The Snyk Setup Action has a property which is passed to the underlying image using `with`.
+The Snyk Setup Action has a property that is passed to the underlying image using `with`.
 
-| Property     | Default | Description                        |
-| ------------ | ------- | ---------------------------------- |
-| snyk-version | latest  | Install a specific version of Snyk |
+| Property     | Default | Description                         |
+| ------------ | ------- | ----------------------------------- |
+| snyk-version | latest  | Install a specific version of Snyk. |
 
 The Action also has output:
 
-| Property | Default | Description                                |
-| -------- | ------- | ------------------------------------------ |
-| version  |         | The full version of the Snyk CLI installed |
+| Property | Default | Description                                 |
+| -------- | ------- | ------------------------------------------- |
+| version  |         | The full version of the Snyk CLI installed. |
 
 For example, you can choose to install a specific version of Snyk and grab the installed version from the output:
 

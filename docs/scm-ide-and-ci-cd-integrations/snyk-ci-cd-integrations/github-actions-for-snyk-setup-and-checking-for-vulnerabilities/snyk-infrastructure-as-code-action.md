@@ -1,8 +1,8 @@
 # Snyk Infrastructure as Code Action
 
-This page provides instructions for and examples of using the Snyk GitHub Action for [Infrastructure as Code](https://github.com/snyk/actions/tree/master/iac). For general instructions and information see [GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration).
+This page provides instructions for and examples of using the Snyk GitHub Action for [Infrastructure as Code](https://github.com/snyk/actions/tree/master/iac). For general instructions and information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
 
-In order to use the Snyk Infrastructure as Code Test Action, you must have a Snyk API token. See [Getting Your Snyk Token](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#getting-your-snyk-token), or you can [sign up for free](https://snyk.io/login).
+In order to use the Snyk Infrastructure as Code Test Action, you must have a Snyk API token. See [Getting your Snyk token](./#getting-your-snyk-token), or you can [sign up for free](https://snyk.io/login).
 
 ## Using the Snyk Infrastructure as Code Action to check for vulnerabilities
 
@@ -22,9 +22,9 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```
 
-Snyk Infrastructure as Code Action properties
+## Snyk Infrastructure as Code Action properties
 
-The Snyk Infrastructure as Code Action has properties which are passed to the underlying image. These are passed to the action using `with`:
+The Snyk Infrastructure as Code Action has properties thatwhich are passed to the underlying image. These are passed to the action using `with`:
 
 | Property  | Default  | Description                                                       |
 | --------- | -------- | ----------------------------------------------------------------- |
@@ -59,7 +59,7 @@ jobs:
 
 ### Specifying severity threshold
 
-You can also choose to only report on high severity vulnerabilities.
+You can also choose to report only on high severity vulnerabilities.
 
 ```yaml
 name: Example workflow for Snyk Infrastructure as Code
@@ -80,7 +80,7 @@ jobs:
 
 ### Sharing test results
 
-You can [share your test results](https://docs.snyk.io/products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-web-ui) to the Snyk platform.
+You can [share your test results](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/share-cli-results-with-the-snyk-web-ui.md) with the Snyk platform.
 
 ```yaml
 name: Example workflow for Snyk Infrastructure as Code
@@ -100,7 +100,7 @@ jobs:
 
 ### Specifying scan mode for Terraform Plan
 
-You can also choose the [scan mode](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-terraform-files-with-the-cli-tool#terraform-plan), when scanning Terraform Plan files.
+You can also choose the [scan mode](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/test-your-iac-files/terraform-files.md#scan-terraform-plan-output) when scanning Terraform Plan files.
 
 ```yaml
 name: Example workflow for Snyk Infrastructure as Code
@@ -120,7 +120,7 @@ jobs:
 
 ## Uploading Snyk scan results to GitHub Code Scanning using the Snyk Infrastructure as Code Action
 
-The Infrastructure as Code Action also supports integrating with GitHub Code Scanning and can show issues in the GitHub Security tab. When the action is run, a `snyk.sarif` file is generated which can be uploaded to GitHub Code Scanning:
+The Infrastructure as Code Action also supports integrating with GitHub Code Scanning and can show issues in the GitHub Security tab. When the action is run, a `snyk.sarif` file is generated, which can be uploaded to GitHub Code Scanning:
 
 ```yaml
 name: Snyk Infrastructure as Code
@@ -144,14 +144,14 @@ jobs:
 ```
 
 {% hint style="info" %}
-To use the upload-sarif option for private repos you must have GitHub Advanced Security. &#x20;
+To use the upload-sarif option for private repositories, you must have GitHub Advanced Security.
 
-If you see the error `Advanced Security must be enabled for this repository to use code scanning`, check that GitHub Advanced Security is enabled. For more information, see "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)."
+If you see the error `Advanced Security must be enabled for this repository to use code scanning`, check that GitHub Advanced Security is enabled. For more information, see [Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository).
 {% endhint %}
 
 ## Related documentation
 
 For more information on how to use the `snyk iac test` command, see the following:
 
-* [Snyk CLI for Infastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
-* [Snyk Infrastructure as Code Test Command](https://docs.snyk.io/snyk-cli/commands/iac-test)
+* [Snyk CLI for Infastructure as Code](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)
+* [Snyk Infrastructure as Code test command](../../../snyk-cli/commands/iac-test.md)

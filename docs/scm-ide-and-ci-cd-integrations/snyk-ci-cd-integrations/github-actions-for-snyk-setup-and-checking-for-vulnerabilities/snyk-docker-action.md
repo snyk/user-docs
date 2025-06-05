@@ -1,8 +1,8 @@
 # Snyk Docker Action
 
-This page provides instructions for and examples of using the Snyk GitHub Action for [Docker](https://github.com/snyk/actions/tree/master/docker). For general instructions and information see [GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration).
+This page provides instructions for and examples of using the Snyk GitHub Action for [Docker](https://github.com/snyk/actions/tree/master/docker). For general instructions and information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
 
-In order to use the Docker Action, you must have a Snyk API token. See [Getting Your Snyk Token](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#getting-your-snyk-token), or you can [sign up for free](https://snyk.io/login).
+In order to use the Docker Action, you must have a Snyk API token. See [Getting your Snyk token](./#getting-your-snyk-token), or you can [sign up for free](https://snyk.io/login).
 
 ## Using the Snyk Docker Action to check for vulnerabilities
 
@@ -25,17 +25,17 @@ jobs:
 
 ## Snyk Docker Action properties
 
-The Snyk Docker Action has properties which are passed to the underlying image. These are passed to the action using `with`.
+The Snyk Docker Action has properties that are passed to the underlying image. These are passed to the action using `with`.
 
-| Property | Default | Description                                                |
-| -------- | ------- | ---------------------------------------------------------- |
-| args     |         | Override the default arguments to the Snyk image           |
-| command  | test    | Specify which command to run, for instance test or monitor |
-| image    |         | The name of the image to test                              |
-| json     | false   | In addition to the stdout, save the results as snyk.json   |
-| sarif    | true    | In addition to the stdout, save the results as snyk.sarif  |
+| Property | Default | Description                                                 |
+| -------- | ------- | ----------------------------------------------------------- |
+| args     |         | Override the default arguments to the Snyk image.           |
+| command  | test    | Specify which command to run, for instance test or monitor. |
+| image    |         | The name of the image to test.                              |
+| json     | false   | In addition to the stdout, save the results as snyk.json.   |
+| sarif    | true    | In addition to the stdout, save the results as snyk.sarif.  |
 
-For example, You can use the Snyk Docker Action to check for **only high severity vulnerabilities** as follows:
+For example, you can use the Snyk Docker Action to check for only high severity vulnerabilities as follows:
 
 ```yaml
 name: Example workflow for Docker using Snyk 
@@ -55,7 +55,7 @@ jobs:
 
 ## Uploading Snyk scan results to GitHub Code Scanning using the Snyk Docker Action
 
-The Docker Action also supports integrating with GitHub Code Scanning and can show issues in the GitHub Security tab. As long as you reference a Dockerfile with `--file=Dockerfile` in the `args`, a `snyk.sarif` file will be generated which can be uploaded to GitHub Code Scanning.
+The Docker Action also supports integrating with GitHub Code Scanning and can show issues in the GitHub Security tab. As long as you reference a Dockerfile with `--file=Dockerfile` in the `args`, a `snyk.sarif` file will be generated, which can be uploaded to GitHub Code Scanning.
 
 ```yaml
 name: Snyk Container
@@ -87,7 +87,7 @@ jobs:
 ```
 
 {% hint style="info" %}
-To use the upload-sarif option for private repos you must have GitHub Advanced Security. &#x20;
+To use the upload-sarif option for private repositories, you must have GitHub Advanced Security.
 
-If you see the error `Advanced Security must be enabled for this repository to use code scanning`, check that GitHub Advanced Security is enabled. For more information, see "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)."
+If you see the error `Advanced Security must be enabled for this repository to use code scanning`, check that GitHub Advanced Security is enabled. For more information, see [Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository).
 {% endhint %}
