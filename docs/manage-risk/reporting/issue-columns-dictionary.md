@@ -33,10 +33,10 @@ Describes the main attributes of the issue.
 * **PRODUCT NAME** - Snyk product name.
 * **SEVERITY** - Indicates the issue severity according to the analysis by a specific Snyk product.
 * **SCORE** - A score based on an analysis model. Priority score is released in General Availability, while Risk Score is in Early Access. For details, see [Priority Score vs Risk Score](../prioritize-issues-for-fixing/priority-score-vs-risk-score.md).
-* **REACHABILITY** - The reachability of the issue indicates whether the issue is related to functions that are being called by the application and thus has a greater risk of exploitability. Allowed values:
+* **REACHABILITY** - The reachability of the issue indicates whether the issue is related to a code element (function, module, class, etc) that are being called by the application and thus has a greater risk of exploitability. Allowed values:
   * **Reachable** - A direct or indirect path was found from your application to the vulnerable code.
-  * **No path found** - No path found from your application to the vulnerable code.
-  * **Not applicable** - Reachability is not a relevant attribute for the specific issue.
+  * **No path found** - No path found from your application to the vulnerable code. Note that this value might change over time.
+  * **Not applicable** - Reachability is not relevant to the specific issue. This value will appear for languages that are not yet supported and for issues that are not Snyk Open Source vulnerabilities.
 
 ## Issue vulnerability details <a href="#issue-vulnerability-details" id="issue-vulnerability-details"></a>
 
