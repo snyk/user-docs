@@ -1,12 +1,12 @@
 # Maven plugin integration with Snyk
 
-Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin) based on the [Snyk CLI](https://docs.snyk.io/snyk-cli/cli-reference). This plugin allows you to scan and monitor your Maven dependencies for vulnerabilities.
+Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin) based on the [Snyk CLI](../../snyk-cli/). This plugin allows you to scan and monitor your Maven dependencies for vulnerabilities.
 
-See all releases on the [Maven Central Repository](https://search.maven.org/artifact/io.snyk/snyk-maven-plugin),
+See all releases in the [Maven Central Repository](https://search.maven.org/artifact/io.snyk/snyk-maven-plugin),
 
 ## Installation of Maven plugin
 
-1. Get your [Snyk API token](https://docs.snyk.io/snyk-api-info/authentication-for-api).
+1. Get your [Snyk API token](../../snyk-api/authentication-for-api/).
 2. Add the Snyk Maven Plugin to your `pom.xml` and configure it as needed.
 
 ```xml
@@ -45,8 +45,8 @@ See all releases on the [Maven Central Repository](https://search.maven.org/arti
 
 ## Supported versions
 
-* Java 8 and above.
-* Maven 3.2.5 and above.
+* Java 8 and above
+* Maven 3.2.5 and above
 
 ## Goals
 
@@ -54,13 +54,15 @@ See all releases on the [Maven Central Repository](https://search.maven.org/arti
 
 Default phase: `test`
 
-Performs a static-analysis of your project's source code and provides a list of vulnerabilities if any are found.
+Perform a static-analysis of your Project's source code and provide a list of vulnerabilities if any are found.
 
 ### `container-test` (experimental)
 
 Default phase: `install`
 
-Performs analysis of the layers of a container image. The tag of the image to be scanned should be provided as an argument:
+Perform analysis of the layers of a container image.
+
+Provide the tag of the image to be scanned as an argument:
 
 ```xml
 <!-- Example of specifying the tag of the image to scan -->
@@ -76,27 +78,27 @@ Performs analysis of the layers of a container image. The tag of the image to be
 
 Default Phase: `test`
 
-Scans your Project's dependencies and provides a list of vulnerabilities if any are found.
+Scan your Project's dependencies and provide a list of vulnerabilities if any are found.
 
 ### `monitor`
 
 Default Phase: `install`
 
-Takes a snapshot of your Project's dependency tree and monitors it on [snyk.io](https://snyk.io). You'll be alerted when new relevant vulnerabilities, updates, or patches are disclosed.
+Take a snapshot of your Project's dependency tree and monitor it on [snyk.io](https://snyk.io). You wil be alerted when new relevant vulnerabilities, updates, or patches are disclosed.
 
-## Configuration for Maven plugin
+## Configuration for the Maven plugin
 
 You can configure the following parameters inside the `<configuration>` section. All parameters are optional.
 
 ### `apiToken` \[string]
 
-**Do NOT** include your API token directly in your `pom.xml`. Use a variable instead.
+Do NOT include your API token directly in your `pom.xml`. Use a variable instead.
 
-You must provide a Snyk API token to access Snyk's services. You can do so by:
+You must provide a Snyk API token to access Snyk services. You can do so by:
 
 * Providing `apiToken` in your configuration using a variable.
 * Providing a `SNYK_TOKEN` environment variable.
-* Authenticating via `snyk auth` using the Snyk CLI before using this plugin.
+* Authenticating using the CLI  `snyk auth` command before using this plugin.
 
 ### `skip` \[boolean]
 
@@ -104,19 +106,19 @@ Default: `false`
 
 Skip this execution entirely.
 
-When running `mvn`, you can also use `-Dsnyk.skip` to enable this behavior.
+When you are running `mvn`, you can also use `-Dsnyk.skip` to enable this behavior.
 
 ### `failOnIssues` \[boolean]
 
 Default: `true`
 
-When set to `true`, should the Snyk CLI tool indicate that action is required to remedy a security issue, the Maven build will be considered failed. When set to `false` the build will continue even if action is required.
+When this variable is set to `true`, if the Snyk CLI tool indicates that action is required to remedy a security issue, the Maven build will be considered failed. When this variable is set to `false` , the build will continue even if action is required.
 
 ### `args` \[array\<string>]
 
-This plugin uses [Snyk CLI](https://github.com/snyk/snyk) so you can pass any supported arguments using `<args>`. See the example below.
+This plugin uses the [Snyk CLI](../../snyk-cli/), so you can pass any supported arguments using `<args>`. See the example that follows.
 
-For a list of supported CLI options, see [Snyk CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference).
+For a list of supported CLI options, see the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md).
 
 ```xml
 <!-- Example Arguments Configuration -->
@@ -139,7 +141,7 @@ See the CLI configuration section that follows.
 
 ## CLI configuration
 
-For most use cases you don't need to set any `<cli>` options.
+For most use cases, you need not set any `<cli>` options.
 
 You can configure the CLI in three different modes:
 
@@ -169,7 +171,7 @@ How often to download the latest CLI release. Snyk recommends always keeping you
 * `daily` - On the first execution of the day
 * `always` - On every execution
 * `never` - Never update after the initial download
-* `interval:<minutes>` - On the execution after more than `<minutes>` has passed since the last update. For example, `interval:60` will update after an hour
+* `interval:<minutes>` - On the execution after more than a specific number of `<minutes>` has passed since the last update. For example, `interval:60` to update after an hour
 
 #### **`downloadDestination` \[string]**
 
@@ -187,7 +189,7 @@ Where to place the downloaded executable. By default, this is OS-specific as fol
 
 Example: `~/.local/share/snyk/snyk-linux`
 
-Path to a pre-installed Snyk CLI executable. You can find executables on the [Snyk CLI Releases page](https://github.com/snyk/snyk/releases).
+Path to a pre-installed Snyk CLI executable. You can find executables on the [Snyk CLI releases page](https://github.com/snyk/snyk/releases).
 
 ### Specific CLI Version
 
@@ -195,7 +197,7 @@ Path to a pre-installed Snyk CLI executable. You can find executables on the [Sn
 
 Example: `1.542.0`
 
-Specify if you want to use a specific version. You can find versions on the [Snyk CLI Releases page](https://github.com/snyk/snyk/releases).
+Specify if you want to use a specific version. You can find versions on the [Snyk CLI releases page](https://github.com/snyk/snyk/releases).
 
 Setting this option triggers a download of the CLI on every execution.
 
@@ -205,13 +207,11 @@ To try out this plugin, see [the demo project](https://github.com/snyk/demo-snyk
 
 ## Migrating from Snyk Maven Plugin v1 to v2
 
-All plugin parameters from v1 should be moved to the `<args>` object, to keep them in line with the CLI usage. For example:
+Move all plugin parameters from v1 to the `<args>` object, to keep them in line with CLI usage. For example:
 
 * `org` => `<arg>--org=my-org-name</arg>`
 * `failOnSeverity` => `<arg>--severity-threshold=low|medium|high</arg>`
 * `failOnAuthError` => Use `<skip>true</skip>` to skip plugin execution.
-* `includeProvidedDependencies` => `provided` dependencies are always included.
-
-For a list of supported arguments, see Configuration.
+* `includeProvidedDependencies` => `provided` to include dependencies always.
 
 ***
