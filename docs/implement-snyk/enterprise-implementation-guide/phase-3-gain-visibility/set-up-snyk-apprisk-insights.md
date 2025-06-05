@@ -9,7 +9,6 @@ Risk-based prioritization, or insights, is the capability of Snyk AppRisk to und
 The [Snyk risk-based prioritization](../../../manage-risk/prioritize-issues-for-fixing/#prioritization-based-on-risk) product focuses on several risk factors for your vulnerabilities:
 
 * **Deployed**: Is my code in a container image that is deployed?
-* **OS condition**: Does this vulnerability apply to my operating system?
 * **Public facing**: Does my container image have a configured path to the internet?
 * **Loaded package**:  Has a third-party package that is the dependency of an image been loaded?
 
