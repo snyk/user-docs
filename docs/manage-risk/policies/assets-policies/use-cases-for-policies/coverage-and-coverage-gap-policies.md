@@ -33,6 +33,14 @@ Identify assets that have been scanned by either Snyk Code or Snyk OS. Identifyi
 
 ## Coverage gap
 
+### Pre-set coverage control policy
+
+Snyk Essentials includes a default asset policy to highlight potential coverage gaps in your inventory for Snyk Open Source and Code. Use this default policy to ensure you have immediate visibility into repositories that might not be scanned, specifically by identifying repositories with relevant language tags that are not currently covered through scanning.
+
+Identifying coverage gaps using this policy is SCM integration dependent, meaning that it does not flag coverage gaps when there are no language tags found.
+
+You can use this policy as a template, edit, update and delete it.
+
 ### Exclude all products
 
 Identify all assets that are not part of the policy. For this, you must create a Coverage gap filter covering all the available products.
@@ -56,3 +64,4 @@ Identify assets that meet the coverage requirements of both Snyk Code and Snyk O
 {% hint style="info" %}
 You can use the Coverage and Coverage gap filters to monitor coverage and coverage gaps of image assets. This provides a more complete view of the risks of the assets and the capability to take action when needed.
 {% endhint %}
+

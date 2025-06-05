@@ -4,6 +4,7 @@ Gain a better understanding of the policies you can use by going through the fol
 
 * [Coverage control](coverage-control-policy-use-case.md)
 * [Coverage and Coverage gap](coverage-and-coverage-gap-policies.md)
+* [Pre-set coverage control policy](coverage-and-coverage-gap-policies.md#pre-set-coverage-control-policy)
 * [Classification](classification-policy-use-case.md)
 * [Tagging](tagging-policy-use-case.md)
 * [Notifications](notification-policy-use-case.md)

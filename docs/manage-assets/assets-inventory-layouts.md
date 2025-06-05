@@ -46,7 +46,7 @@ Use this widget to get an overview of all repositories discovered and the number
 
 #### Control coverage gaps
 
-Use this widget to get a clear overview of all discovered repositories and see how many have at least one control coverage gap, as defined by an asset policy. A repository with a coverage gap is a repository that does not meet the coverage requirements set in the asset policy.&#x20;
+Use this widget to get a clear overview of all discovered repositories and see how many have at least one control coverage gap, as defined by an asset policy. A repository with a coverage gap is a repository that does not meet the coverage requirements set in the asset policy. The coverage gaps are automatically highlighted using a default policy applied to new Groups, helping you reduce application risk.&#x20;
 
 Follow the next steps to remediate the coverage gaps:
 
