@@ -1,18 +1,16 @@
 # CI/CD troubleshooting and resources
 
-## CI/CD troubleshooting
+This page provides a few tips to help troubleshoot or scale CI/CD integrations.
 
-This section provides a few tips to help troubleshoot or scale CI/CD integrations.
+### Step 1: Try to replicate with the Snyk CLI
 
-### Step 1: Try to replicate with Snyk CLI
+If the CLI and the pipeline are running the same engine, try to clone the Project and scan with the CLI.
 
-If the CLI and the pipeline are running the same engine, try to clone the Project and scan with CLI.
-
-Try various CLI options. Use the Snyk CL to find and fix known vulnerabilities as you run it in the pipeline. For more information, see the [CLI documentation](../../../snyk-cli/).
+Try various CLI options. Use the Snyk CLI to find and fix known vulnerabilities as you run it in the pipeline. For more information, see the [CLI documentation](../../../snyk-cli/).
 
 ### Step 2: Get logs
 
-If you are able to replicate with the CLI and the problem still exists, ask the CLI to output the debug logging using the following command: `DEBUG=*` or use the `-d` option to capture logs:
+If you can replicate with the CLI and the problem still exists, ask the CLI to output the debug logging using the following command: `DEBUG=*` or use the `-d` option to capture logs:
 
 ```
 snyk test -d
@@ -28,8 +26,8 @@ DEBUG=* snyk test
 
 Try to replace the native plugin with the CLI by installing the CLI. See [Install the Snyk CLI ](../../../snyk-cli/install-or-update-the-snyk-cli/)for instructions.
 
-## **Useful resources for CI/CD**
+{% hint style="info" %}
+The following repository provides some examples of binary and npm integrations for various CI/CD tools: [GitHub CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples).
 
-The following repo shares some examples of binary and npm integrations for various CI/CD tools: [GitHub CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples).
-
-To learn more about CI/CD see [What is CI/CD? CI/CD Pipeline and Tools Explained](https://snyk.io/learn/what-is-ci-cd-pipeline-and-tools-explained/).
+To learn more about CI/CD, see the article [What is CI/CD? CI/CD Pipeline and Tools Explained](https://snyk.io/learn/what-is-ci-cd-pipeline-and-tools-explained/).
+{% endhint %}

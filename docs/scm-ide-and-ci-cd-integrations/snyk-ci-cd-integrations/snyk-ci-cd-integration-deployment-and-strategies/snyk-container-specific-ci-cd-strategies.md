@@ -24,7 +24,7 @@ Snyk can help if the following circumstances exist:
 
 * You containerize each build task, but do not mount the Docker socket for security and performance reasons.
 * Pipeline tasks are split across hosts, or even clusters, and rely on artifacts to be handed off through a central volume or intermediate registry/object store.
-* You work exclusively in an ecosystem that only uses OCI-compliant container images.
+* You work exclusively in an ecosystem that uses only OCI-compliant container images.
 
 Snyk can provide help as follows:
 
@@ -34,6 +34,6 @@ Snyk can provide help as follows:
 ## Recommendations for integration with container images
 
 * Regardless of how you integrate with container images during CI, run a Snyk Container scan as a separate build step from your Snyk Open Source (application SCA) test. This allows you to isolate build failures to vulnerabilities within either the container or OS layer, or the application layer, respectively. This also enables more easily containerized build tasks.
-* Use CLI flags like `--fail-on` and `--severity-threshold` to customize the failure status for the build task. For more advanced usage, you can use `--json` to generate a JSON file containing the full vulnerability report and set your own build failure status based on the JSON data.
+* Use CLI options like `--fail-on` and `--severity-threshold` to customize the failure status for the build task. For more advanced testing, you can use `--json` to generate a JSON file containing the full vulnerability report and set your own build failure status based on the JSON data.
 * Pass `--exclude-base-image-vulns` to report only vulnerabilities introduced by your user layers, rather than vulnerabilities that come from the base image of the container, that is, the image you specify in the `FROM` line in the Dockerfile.
 * Run `snyk container monitor` following `snyk container test`, or check the **Monitor** box on your plugin settings, to keep a record of the bill of materials for the container within the Snyk UI and proactively monitor for new vulnerabilities on a daily basis. This is useful when pushing new releases into production environments. You can use `--project-name` to specify a unique identifier for the release to ensure production containers are tracked separately from others in your build process.

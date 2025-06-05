@@ -2,7 +2,7 @@
 
 These strategies are useful to teams using the Snyk SCA ([Software Composition Analysis](https://snyk.io/blog/what-is-software-composition-analysis-sca-and-does-my-company-need-it/)) testing features.
 
-Use CLI flags like `--fail-on` and `--severity-threshold` to customize the failure status for the build task. For more advanced usage, you can use the `--json` option to generate a JSON file containing the full vulnerability report and set your own build failure status based on the JSON data.
+Use CLI options like `--fail-on` and `--severity-threshold` to customize the failure status for the build task. For more advanced testing, you can use the `--json` option to generate a JSON file containing the full vulnerability report and set your own build failure status based on the JSON data.
 
 ## Gradle and Scala
 
@@ -18,7 +18,7 @@ Use CLI flags like `--fail-on` and `--severity-threshold` to customize the failu
 
 ## .NET
 
-If you use a `.sln` file, you can specify the path to the file, and Snyk scans all the sub-projects that are part of the repo, for example:
+If you use a `.sln` file, you can specify the path to the file, and Snyk scans all the sub-projects that are part of the repository, for example:
 
 ```
 snyk test --file=sln/.sln
@@ -26,7 +26,7 @@ snyk test --file=sln/.sln
 
 ## Yarn
 
-For Yarn workspaces, use the `--yarn-workspaces` option to test and monitor your packages. The root lockfile will be referenced for scans of all the packages. Use the `--detection-depth` option to find sub-folders that are not auto-discovered by default.
+For Yarn workspaces, use the `--yarn-workspaces` option to `test` and `monitor` your packages. The root lockfile will be referenced for scans of all the packages. Use the `--detection-depth` option to find sub-folders that are not auto-discovered by default.
 
 {% hint style="info" %}
 Support for Yarn workspaces is available for the `snyk test` and `snyk monitor` commands only.
@@ -54,7 +54,7 @@ Some customers have complex Projects, with multiple languages, package managers,
     snyk test --file=package.json
     ```
 * After you install the dependencies of each Project, make a similar call pointing to the specific artifact, such as `pom.xml`. This is fast and efficient, but can be difficult to scale, especially if you are not familiar with the Project.
-* For most Gradle Projects, using `--all-projects` works, as it invokes Gradle-specific options behind the scenes in the form of: `snyk test --file=build.gradle --all-sub-projects` when it finds the build file as part of the `--all-projects` search.
+* For most Gradle Projects, using `--all-projects` works, as it invokes Gradle-specific options behind the scenes in the form of `snyk test --file=build.gradle --all-sub-projects` when it finds the build file as part of the `--all-projects` search.
 * Gradle may require additional configuration parameters. If so, target the other artifacts by using `--file=` for each manifest in the other languages and package managers. You must then use `--all-sub-projects` and potentially `--configuration-matching` to scan a complex Gradle Project.
 
 See [Java and Kotlin](../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/) for more information.

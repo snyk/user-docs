@@ -1,8 +1,8 @@
 # Snyk CI/CD Integration deployment and strategies
 
-When you decide to use a Snyk CI/CD Integration, typically you will adopt the integration in specific stages. You will also choose a deployment method. See [CI/CD adoption and deployment](ci-cd-adoption-and-deployment.md).
+When you decide to use a Snyk CI/CD Integration, you typically adopt the integration in specific stages and choose a deployment method. See [CI/CD adoption and deployment](ci-cd-adoption-and-deployment.md).
 
-Set up the CI/CD Integration. See [CI/CD setup](ci-cd-setup.md).
+Then, [set up](ci-cd-setup.md) the CI/CD Integration.
 
 You will be using `snyk test` and `snyk monitor` in the CI/CD integration. [See Snyk test and snyk monitor in CI/CD integration](snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 
