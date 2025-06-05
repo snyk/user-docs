@@ -22,7 +22,7 @@ After you have validated that you are using a Snyk Image that will be removed, a
 Remember to use pinned versions where available for better stability. for example, `snyk/snyk:dotnet-8.0` is preferable to `snyk/snyk:dotnet`
 {% endhint %}
 
-An **example** follows of **upgrading to a supported Snyk Image**.
+An example follows of upgrading to a supported Snyk Image.
 
 In the example `bitbucket-pipeline.yml` configuration that follows, a Snyk image is configured that will be removed on 12 Aug 2024:
 
@@ -94,7 +94,7 @@ If you do not want to use the Bitbucket `snyk/snyk-scan` integration, you have t
 If you use this option, you will be unable to use integration features such as Code Insight Results
 {% endhint %}
 
-The following **example** shows **using the CLI directly**.
+The following example shows using the CLI directly.
 
 In the example `bitbucket-pipeline.yml` configuration that follows, a pipeline is configured that does the following:
 
