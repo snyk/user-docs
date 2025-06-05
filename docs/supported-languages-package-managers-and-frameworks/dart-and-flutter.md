@@ -21,16 +21,7 @@ Snyk does not support frameworks and libraries for Dart and Flutter.&#x20;
 
 ## Features
 
-Snyk features are not supported for Dart and Flutter.
-
-{% hint style="info" %}
-The **Snyk FixPR** feature is not available for Dart and Flutter. This means that you will not be notified if the PR checks fail when the following conditions are met:&#x20;
-
-* The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
-* "**Fixed in" available** is set to **Yes.**
-{% endhint %}
-
-You can test an open-source package from Pub package manager:
+Snyk features are not supported for Dart and Flutter. You can test an open-source package from Pub package manager:
 
 * Using the API endpoint [List issues for a package](../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues)
 * Using the [SBOM CLI](../snyk-cli/commands/sbom.md).
