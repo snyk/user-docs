@@ -48,14 +48,14 @@ script:
 The table that follows lists the Snyk CLI Docker images used in Bitbucket Pipelines < 1.0.0 and the equivalent Snyk images that can be used in Bitbucket Pipelines > 1.0.0.
 
 {% hint style="info" %}
-Node.js 14 is installed in all Snyk CLI Docker images for the purpose of installing the CLI. In comparison, NodeJS is installed only in Snyk images containing the `node` tag.
+Node.js 14 is installed in all Snyk CLI Docker images for installing the CLI. In comparison, NodeJS is installed only in Snyk images containing the `node` tag.
 {% endhint %}
 
-Note that the **images will not be exactly like-for-lik**e. Properties, including the base image, the installed Snyk CLI version, and others, will be different.
+Note that the images will not be exactly like-for-like. Properties, including the base image, the installed Snyk CLI version, and others, will be different.
 
 However, for the purpose of Bitbucket Pipelines, they are functionally equivalent.
 
-Where the supported language or framework has reached end of life, it is **highly recommended** that you use your own [user-defined custom images](../user-defined-custom-images-for-cli.md) with newer versions of the language or framework that are still supported by the vendor.
+Where the supported language or framework has reached end of life, Snyk highly recommends that you use your own [user-defined custom images](../user-defined-custom-images-for-cli.md) with newer versions of the language or framework that are still supported by the vendor.
 
 | **Language / Tooling** | **Snyk CLI Image**                                                       | **Snyk Image**                                                                                                                                                                                                                                                                                                                                                                         |
 | ---------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
