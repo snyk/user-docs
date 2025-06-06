@@ -29,7 +29,7 @@ categoryContext:
     The rate limit is up to **70 requests per minute, per user**. All requests above the limit will get a response with the status code `429 - Too many requests` until requests stop for the duration of the rate-limiting interval (one minute).
 - name: projects-v1
   hint: |
-    **Note:** For a list of Project types, see [Project type responses from the API](../api-endpoints-index-and-tips/project-type-responses-from-the-api).
+    **Note:** For a list of Project types, see [Project type responses from the API](../api-endpoints-index-and-tips/project-type-responses-from-the-api.md).
 - name: webhooks-v1
   hint: |
     {% hint style="warning" %}
@@ -37,7 +37,7 @@ categoryContext:
     {% endhint %}
 - name: projects
   hint: |
-    **Note:** For a list of Project types, see [Project type responses from the API](../api-endpoints-index-and-tips/project-type-responses-from-the-api).
+    **Note:** For a list of Project types, see [Project type responses from the API](../api-endpoints-index-and-tips/project-type-responses-from-the-api.md).
 output:
     summaryPath: docs/SUMMARY.md
     apiReferencePath: docs/snyk-api/reference
