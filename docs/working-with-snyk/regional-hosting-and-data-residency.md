@@ -224,7 +224,7 @@ Then add an extra variable to the `values-customer-settings.yml`:
 
 ### Kubernetes Integration URLs
 
-Follow the instructions to install the [Snyk Controller with Helm](https://docs.snyk.io/scan-with-snyk/snyk-container/kubernetes-integration/install-the-snyk-controller/install-the-snyk-controller-with-helm-azure-and-google-cloud-platform) with an extra variable added to the `helm upgrade`command:
+Follow the instructions to install the [Snyk Controller with Helm](../scan-with-snyk/snyk-container/kubernetes-integration/install-the-snyk-controller/install-the-snyk-controller-with-helm-azure-and-google-cloud-platform.md) with an extra variable added to the `helm upgrade`command:
 
 **SNYK-US-01**: (no configuration required)
 
