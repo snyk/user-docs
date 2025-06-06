@@ -93,7 +93,7 @@ After you select Generate Fix using Snyk DeepCode AI, the system will analyze yo
 
 The result, in this case, is five fixes, which you can navigate through to decide which one is best for you. The first fix is adding Helmet middleware package that disables the `X-Powered-By` header by default, preventing attackers from knowing that the app is running Express.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (25) (2).png" alt=""><figcaption><p>5 fixes have been generated</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk AI Fix 5 examples.png" alt=""><figcaption><p>5 fixes have been generated</p></figcaption></figure>
 
 When you apply the fix, you will be guided to where the new code has been introduced. After you save and rescan, the vulnerability will disappear.
 
