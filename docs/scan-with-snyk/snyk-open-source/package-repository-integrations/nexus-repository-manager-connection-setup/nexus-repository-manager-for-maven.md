@@ -14,7 +14,7 @@ This enables Snyk to resolve all direct and transitive dependencies of packages 
 
 Maven Projects can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.
 
-## **Setup custom Maven package registries**
+The following explains how to set up custom Maven package registries
 
 If authentication is required to access your Nexus registry, you must first configure the Nexus Repository Manager integration. See [Nexus Repository Manager setup](./).
 
@@ -52,4 +52,4 @@ If the URL is `http://nexus.company.io/nexus/content/repositories/releases`, Rep
 
 Alternatively, you can configure repositories  will be used as additional locations to check for artifacts.
 
-Repositories are configured in the same way as [Mirrors](nexus-repository-manager-for-maven.md#mirrors), but do not require **Mirror Of**.
+Repositories are configured in the same way as Mirrors, but do not require **Mirror Of**.

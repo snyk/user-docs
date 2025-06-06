@@ -62,7 +62,7 @@ Issues that have previously been ignored via the Snyk Web UI in the associated O
 3. Expand list of files that have been checked for this issue.
 4. (Optional) Click **View test page** to examine the issue details.\
    \
-   You can get a complete picture of the vulnerability by clicking **Show more detail**, with technical security information and remediation options.\
+   You can get a complete picture of the vulnerability by clicking **Show more detail** for technical security information and remediation options.\
    \
    To return to the main issue page, click **Project**.
 
