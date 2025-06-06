@@ -1,3 +1,19 @@
+## 2024-10-15 - Updated 2025-06-06
+
+### GET - `/orgs/{org_id}/projects` - Updated
+- added the optional property `data/items/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
+
+
+
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added the optional property `data/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added the optional property `data/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
+
+
 ## 2024-10-15 - Updated 2025-06-04
 
 ### GET - `/groups/{group_id}/assets/{asset_id}` - Added
