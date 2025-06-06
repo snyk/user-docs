@@ -7,4 +7,4 @@ Snyk Infrastructure as Code supports:
 * Deployments, Pods, and Services
 * CronJobs, Jobs, StatefulSet, ReplicaSet, DaemonSet, and ReplicationController
 
-See [Test your Kubernetes files with Snyk CLI](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool) for more details.
+See [Kubernetes files scanning with CLI for IaC ](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/test-your-iac-files/kubernetes-files.md)for more details.

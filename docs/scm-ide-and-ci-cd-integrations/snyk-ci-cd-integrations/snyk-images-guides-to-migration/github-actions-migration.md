@@ -103,11 +103,11 @@ By creating your own actions, you can avoid the effects of future cleanup and re
 
 ### Leveraging the [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup) <a href="#b.1-leveraging-the-snyk-setup-action" id="b.1-leveraging-the-snyk-setup-action"></a>
 
-This [action](https://docs.snyk.io/scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-setup-action) offers a versatile method of incorporating Snyk into your workflows effectively.
+This [action](../github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-setup-action.md) offers a versatile method of incorporating Snyk into your workflows effectively.
 
 Consider using this action when:
 
-* You ou have a workflow where you already have the development tools installed
+* You have a workflow where you already have the development tools installed
 * You do not want to depend on a predefined Snyk action for a specific environment, but still want a robust way to set up the Snyk CLI for your workflows
 * You are unable to find an action built for your specific environment
 
