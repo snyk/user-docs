@@ -767,12 +767,13 @@
         }
       },
       "GroupId": {
-        "description": "Group ID",
+        "description": "The ID of the group",
         "in": "path",
         "name": "group_id",
         "required": true,
         "schema": {
-          "$ref": "#/components/schemas/Uuid"
+          "format": "uuid",
+          "type": "string"
         }
       },
       "HasUsersAssigned": {
@@ -913,14 +914,17 @@
         }
       },
       "Limit": {
-        "description": "Number of records to return",
+        "description": "Number of results to return per page",
+        "example": 10,
         "in": "query",
         "name": "limit",
         "schema": {
           "default": 10,
+          "format": "int32",
           "maximum": 100,
           "minimum": 10,
-          "type": "number"
+          "multipleOf": 10,
+          "type": "integer"
         }
       },
       "Location": {
@@ -935,12 +939,13 @@
         "style": "form"
       },
       "MembershipId": {
-        "description": "Unique identifier of the tenant membership.",
+        "description": "The ID of the Group Membership",
         "in": "path",
         "name": "membership_id",
         "required": true,
         "schema": {
-          "$ref": "#/components/schemas/TenantMembershipId"
+          "format": "uuid",
+          "type": "string"
         }
       },
       "Name": {
@@ -1021,9 +1026,10 @@
         }
       },
       "OrgId": {
-        "description": "The organization ID of the custom base image",
-        "in": "query",
+        "description": "The ID of the org",
+        "in": "path",
         "name": "org_id",
+        "required": true,
         "schema": {
           "format": "uuid",
           "type": "string"
@@ -1285,14 +1291,16 @@
         }
       },
       "SortBy": {
-        "description": "Which column to sort by. \nIf sorting by version, the versioning schema is used.\n",
+        "description": "Which column to sort by.",
         "in": "query",
         "name": "sort_by",
         "schema": {
           "enum": [
-            "repository",
-            "tag",
-            "version"
+            "username",
+            "user_display_name",
+            "email",
+            "login_method",
+            "role"
           ],
           "type": "string"
         }
@@ -3352,6 +3360,11 @@
           },
           "is_enabled": {
             "description": "Automatically raise pull requests to update out-of-date dependencies.",
+            "example": true,
+            "type": "boolean"
+          },
+          "is_inherited": {
+            "description": "Apply the auto dependency integration settings of the Organization to this project.",
             "example": true,
             "type": "boolean"
           },
@@ -7050,18 +7063,7 @@
         "additionalProperties": true,
         "properties": {
           "attributes": {
-            "additionalProperties": true,
-            "properties": {
-              "name": {
-                "description": "The name of the group.",
-                "example": "My Group",
-                "type": "string"
-              }
-            },
-            "required": [
-              "name"
-            ],
-            "type": "object"
+            "$ref": "#/components/schemas/GroupAttributes"
           },
           "id": {
             "example": "331ede0a-de94-456f-b788-166caeca58bf",
@@ -7082,11 +7084,11 @@
         "type": "object"
       },
       "GroupAttributes": {
-        "example": {
-          "name": "My Group"
-        },
+        "additionalProperties": true,
         "properties": {
           "name": {
+            "description": "The name of the group.",
+            "example": "My Group",
             "type": "string"
           }
         },
@@ -7611,46 +7613,6 @@
             "type": "object"
           }
         },
-        "type": "object"
-      },
-      "GroupResponse": {
-        "additionalProperties": false,
-        "properties": {
-          "data": {
-            "additionalProperties": false,
-            "properties": {
-              "attributes": {
-                "$ref": "#/components/schemas/GroupAttributes"
-              },
-              "id": {
-                "$ref": "#/components/schemas/GroupId"
-              },
-              "relationships": {
-                "$ref": "#/components/schemas/GroupRelationships"
-              },
-              "type": {
-                "$ref": "#/components/schemas/GroupType"
-              }
-            },
-            "required": [
-              "id",
-              "type",
-              "attributes"
-            ],
-            "type": "object"
-          },
-          "jsonapi": {
-            "$ref": "#/components/schemas/JsonApi"
-          },
-          "links": {
-            "$ref": "#/components/schemas/SelfLink"
-          }
-        },
-        "required": [
-          "data",
-          "jsonapi",
-          "links"
-        ],
         "type": "object"
       },
       "GroupType": {
@@ -9400,45 +9362,52 @@
         "additionalProperties": false,
         "properties": {
           "attributes": {
-            "$ref": "#/components/schemas/OrgAttributes"
+            "additionalProperties": false,
+            "properties": {
+              "group_id": {
+                "description": "The ID of a Group.",
+                "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
+                "format": "uuid",
+                "type": "string"
+              },
+              "is_personal": {
+                "description": "Whether this organization belongs to an individual, rather than a Group.",
+                "example": true,
+                "type": "boolean"
+              },
+              "name": {
+                "description": "Friendly name of the organization.",
+                "example": "My Org",
+                "type": "string"
+              },
+              "slug": {
+                "description": "Unique URL sanitized name of the organization for accessing it in Snyk.",
+                "example": "my-org",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "slug",
+              "is_personal"
+            ],
+            "type": "object"
           },
           "id": {
-            "description": "The Snyk ID of the organization.",
+            "description": "The Snyk ID corresponding to this org",
             "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
             "format": "uuid",
             "type": "string"
           },
           "type": {
-            "$ref": "#/components/schemas/Types"
-          }
-        },
-        "required": [
-          "type",
-          "id",
-          "attributes"
-        ],
-        "type": "object"
-      },
-      "Org20230529": {
-        "additionalProperties": false,
-        "properties": {
-          "attributes": {
-            "$ref": "#/components/schemas/OrgAttributes20230529"
-          },
-          "id": {
-            "description": "The Snyk ID of the organization.",
-            "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
-            "format": "uuid",
+            "description": "Content type.",
+            "example": "org",
             "type": "string"
-          },
-          "type": {
-            "$ref": "#/components/schemas/Types"
           }
         },
         "required": [
           "type",
-          "id",
-          "attributes"
+          "id"
         ],
         "type": "object"
       },
@@ -13924,17 +13893,63 @@
         "type": "string"
       },
       "User": {
+        "additionalProperties": false,
         "properties": {
           "attributes": {
-            "$ref": "#/components/schemas/UserAttributes"
+            "additionalProperties": false,
+            "properties": {
+              "active": {
+                "description": "Whether the user status is enabled or not",
+                "example": true,
+                "type": "boolean"
+              },
+              "email": {
+                "description": "The email of the user.",
+                "example": "user@someorg.com",
+                "type": "string"
+              },
+              "membership": {
+                "properties": {
+                  "created_at": {
+                    "description": "The date the membership was established.",
+                    "example": "2022-09-14T09:19:29.206Z",
+                    "format": "date-time",
+                    "type": "string"
+                  },
+                  "strategy": {
+                    "description": "Whether the membership is a direct, or indirect membership.",
+                    "enum": [
+                      "direct",
+                      "indirect"
+                    ],
+                    "example": "direct",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "name": {
+                "description": "The name of the user.",
+                "example": "user",
+                "type": "string"
+              },
+              "username": {
+                "description": "The username of the user.",
+                "example": "username",
+                "type": "string"
+              }
+            },
+            "type": "object"
           },
           "id": {
+            "description": "The Snyk ID corresponding to this user",
+            "example": "55a348e2-c3ad-4bbc-b40e-9b232d1f4121",
+            "format": "uuid",
             "type": "string"
           },
           "type": {
-            "enum": [
-              "user"
-            ],
+            "description": "Content type.",
+            "example": "user",
             "type": "string"
           }
         },
@@ -13986,21 +14001,6 @@
         "description": "The type of the user account.",
         "example": "user",
         "type": "string"
-      },
-      "UserAttributes": {
-        "properties": {
-          "email": {
-            "type": "string"
-          },
-          "username": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "email",
-          "username"
-        ],
-        "type": "object"
       },
       "UserEmail": {
         "description": "The e-mail address of the user.",
@@ -14072,7 +14072,38 @@
       "UserRelationship": {
         "properties": {
           "data": {
-            "$ref": "#/components/schemas/User"
+            "properties": {
+              "attributes": {
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  },
+                  "username": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "email",
+                  "username"
+                ],
+                "type": "object"
+              },
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "user"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type",
+              "id",
+              "attributes"
+            ],
+            "type": "object"
           },
           "links": {
             "$ref": "#/components/schemas/PaginatedLinks"
@@ -14363,24 +14394,19 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/ProjectId"
           },
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The organization ID of the custom base image",
+            "in": "query",
+            "name": "org_id",
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "description": "The group ID of the custom base image",
@@ -14401,7 +14427,17 @@
             "$ref": "#/components/parameters/IncludeInRecommendations"
           },
           {
-            "$ref": "#/components/parameters/SortBy"
+            "description": "Which column to sort by. \nIf sorting by version, the versioning schema is used.\n",
+            "in": "query",
+            "name": "sort_by",
+            "schema": {
+              "enum": [
+                "repository",
+                "tag",
+                "version"
+              ],
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/SortDirection"
@@ -14791,18 +14827,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -14891,22 +14916,14 @@
     },
     "/groups/{group_id}": {
       "get": {
-        "description": "Get a group\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "description": "Returns a group by its ID\n\n#### Required permissions\n\n- `View Groups (group.read)`",
         "operationId": "getGroup",
         "parameters": [
           {
-            "$ref": "#/components/parameters/Version"
+            "$ref": "#/components/parameters/GroupId"
           },
           {
-            "description": "Unique identifier of the group.",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "example": "00000000-0000-0000-0000-000000000000",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/Version"
           }
         ],
         "responses": {
@@ -14914,19 +14931,30 @@
             "content": {
               "application/vnd.api+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GroupResponse"
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/Group"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/Links"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "data",
+                    "links"
+                  ],
+                  "type": "object"
                 }
               }
             },
-            "description": "Returns an instance of a Group",
+            "description": "Group is returned",
             "headers": {
               "deprecation": {
                 "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "location": {
-                "schema": {
-                  "type": "string"
-                }
               },
               "snyk-request-id": {
                 "$ref": "#/components/headers/RequestIdResponseHeader"
@@ -14957,22 +14985,18 @@
           "404": {
             "$ref": "#/components/responses/404"
           },
-          "409": {
-            "$ref": "#/components/responses/409"
-          },
           "500": {
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get Group",
+        "summary": "Get a group",
         "tags": [
-          "Group"
+          "Groups"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
           "2022-01-31~experimental",
-          "2023-01-30~beta",
-          "2024-04-25~experimental"
+          "2023-01-30~beta"
         ],
         "x-snyk-api-resource": "groups",
         "x-snyk-api-stability": "beta",
@@ -15002,7 +15026,14 @@
             "style": "form"
           },
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "Group ID",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -15014,18 +15045,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -15121,7 +15141,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "Group ID",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -15288,7 +15315,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "Group ID",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -15367,7 +15401,14 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "Group ID",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/InstallId"
@@ -15515,7 +15556,14 @@
         "operationId": "listAssets",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "Group ID",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -15637,7 +15685,14 @@
             "$ref": "#/components/parameters/AssetId"
           },
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "Group ID",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -15734,7 +15789,14 @@
         "operationId": "listRelatedAssets",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "Group ID",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/AssetId"
@@ -15746,7 +15808,15 @@
             "$ref": "#/components/parameters/EndingBeforeCursor"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of records to return",
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "maximum": 100,
+              "minimum": 10,
+              "type": "number"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -15846,7 +15916,14 @@
         "operationId": "listAssetProjects",
         "parameters": [
           {
-            "$ref": "#/components/parameters/GroupId"
+            "description": "Group ID",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/AssetId"
@@ -15858,7 +15935,15 @@
             "$ref": "#/components/parameters/EndingBeforeCursor"
           },
           {
-            "$ref": "#/components/parameters/Limit"
+            "description": "Number of records to return",
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 10,
+              "maximum": 100,
+              "minimum": 10,
+              "type": "number"
+            }
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -16122,18 +16207,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "description": "Group ID",
@@ -18096,14 +18170,7 @@
         "operationId": "listGroupMemberships",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -18112,18 +18179,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -18232,14 +18288,7 @@
         "operationId": "createGroupMembership",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -18339,24 +18388,10 @@
         "operationId": "deleteGroupMembership",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
-            "description": "The ID of the Group Membership",
-            "in": "path",
-            "name": "membership_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/MembershipId"
           },
           {
             "$ref": "#/components/parameters/Cascade"
@@ -18427,24 +18462,10 @@
         "operationId": "updateGroupUserMembership",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
-            "description": "The ID of the Group Membership",
-            "in": "path",
-            "name": "membership_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/MembershipId"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -18505,14 +18526,7 @@
         "operationId": "listGroupUserOrgMemberships",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/UserId"
@@ -18530,18 +18544,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -18655,18 +18658,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/PathGroupId"
@@ -18687,7 +18679,75 @@
                   "properties": {
                     "data": {
                       "items": {
-                        "$ref": "#/components/schemas/Org"
+                        "additionalProperties": false,
+                        "properties": {
+                          "attributes": {
+                            "additionalProperties": false,
+                            "properties": {
+                              "access_requests_enabled": {
+                                "description": "Whether the organization permits access requests from users who are not members of the organization.",
+                                "example": false,
+                                "type": "boolean"
+                              },
+                              "created_at": {
+                                "description": "The time the organization was created.",
+                                "example": "2022-03-16T00:00:00Z",
+                                "format": "date-time",
+                                "type": "string"
+                              },
+                              "group_id": {
+                                "description": "The Snyk ID of the group to which the organization belongs.",
+                                "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
+                                "format": "uuid",
+                                "type": "string"
+                              },
+                              "is_personal": {
+                                "description": "Whether the organization is independent (that is, not part of a group).",
+                                "example": true,
+                                "type": "boolean"
+                              },
+                              "name": {
+                                "description": "The display name of the organization.",
+                                "example": "My Org",
+                                "type": "string"
+                              },
+                              "slug": {
+                                "description": "The canonical (unique and URL-friendly) name of the organization.",
+                                "example": "my-org",
+                                "type": "string"
+                              },
+                              "updated_at": {
+                                "description": "The time the organization was last modified.",
+                                "example": "2022-03-16T00:00:00Z",
+                                "format": "date-time",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "name",
+                              "slug",
+                              "is_personal"
+                            ],
+                            "type": "object"
+                          },
+                          "id": {
+                            "description": "The Snyk ID of the organization.",
+                            "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
+                            "format": "uuid",
+                            "type": "string"
+                          },
+                          "type": {
+                            "example": "resource",
+                            "pattern": "^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "id",
+                          "attributes"
+                        ],
+                        "type": "object"
                       },
                       "type": "array"
                     },
@@ -18783,18 +18843,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -19853,18 +19902,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -20110,14 +20148,7 @@
         "operationId": "listGroupSsoConnections",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -20126,18 +20157,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -20230,14 +20250,7 @@
         "operationId": "listGroupSsoConnectionUsers",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/SsoId"
@@ -20249,18 +20262,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -20274,72 +20276,7 @@
                   "properties": {
                     "data": {
                       "items": {
-                        "additionalProperties": false,
-                        "properties": {
-                          "attributes": {
-                            "additionalProperties": false,
-                            "properties": {
-                              "active": {
-                                "description": "Whether the user status is enabled or not",
-                                "example": true,
-                                "type": "boolean"
-                              },
-                              "email": {
-                                "description": "The email of the user.",
-                                "example": "user@someorg.com",
-                                "type": "string"
-                              },
-                              "membership": {
-                                "properties": {
-                                  "created_at": {
-                                    "description": "The date the membership was established.",
-                                    "example": "2022-09-14T09:19:29.206Z",
-                                    "format": "date-time",
-                                    "type": "string"
-                                  },
-                                  "strategy": {
-                                    "description": "Whether the membership is a direct, or indirect membership.",
-                                    "enum": [
-                                      "direct",
-                                      "indirect"
-                                    ],
-                                    "example": "direct",
-                                    "type": "string"
-                                  }
-                                },
-                                "type": "object"
-                              },
-                              "name": {
-                                "description": "The name of the user.",
-                                "example": "user",
-                                "type": "string"
-                              },
-                              "username": {
-                                "description": "The username of the user.",
-                                "example": "username",
-                                "type": "string"
-                              }
-                            },
-                            "type": "object"
-                          },
-                          "id": {
-                            "description": "The Snyk ID corresponding to this user",
-                            "example": "55a348e2-c3ad-4bbc-b40e-9b232d1f4121",
-                            "format": "uuid",
-                            "type": "string"
-                          },
-                          "type": {
-                            "description": "Content type.",
-                            "example": "user",
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "id",
-                          "attributes"
-                        ],
-                        "type": "object"
+                        "$ref": "#/components/schemas/User"
                       },
                       "type": "array"
                     },
@@ -20418,14 +20355,7 @@
         "operationId": "deleteUser",
         "parameters": [
           {
-            "description": "The ID of the group",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/SsoId"
@@ -20590,18 +20520,7 @@
             "$ref": "#/components/parameters/ContentSource"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -20719,6 +20638,7 @@
             "$ref": "#/components/responses/500"
           }
         },
+        "security": [],
         "tags": [
           "OpenAPI"
         ]
@@ -20774,6 +20694,7 @@
             "$ref": "#/components/responses/500"
           }
         },
+        "security": [],
         "tags": [
           "OpenAPI"
         ]
@@ -20794,18 +20715,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "description": "If set, only return organizations within the specified group",
@@ -20944,22 +20854,21 @@
     },
     "/orgs/{org_id}": {
       "get": {
-        "description": "Get the full details of an organization.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "description": "Returns an org by its ID\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "getOrg",
         "parameters": [
           {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "description": "Unique identifier for org",
+            "description": "The ID of the org",
             "in": "path",
             "name": "org_id",
             "required": true,
             "schema": {
-              "example": "b667f176-df52-4b0a-9954-117af6b05ab7",
               "format": "uuid",
               "type": "string"
             }
+          },
+          {
+            "$ref": "#/components/parameters/Version"
           }
         ],
         "responses": {
@@ -20969,20 +20878,25 @@
                 "schema": {
                   "properties": {
                     "data": {
-                      "$ref": "#/components/schemas/Org20230529"
+                      "$ref": "#/components/schemas/Org"
                     },
                     "jsonapi": {
                       "$ref": "#/components/schemas/JsonApi"
                     },
                     "links": {
-                      "$ref": "#/components/schemas/SelfLink"
+                      "$ref": "#/components/schemas/Links"
                     }
                   },
+                  "required": [
+                    "jsonapi",
+                    "data",
+                    "links"
+                  ],
                   "type": "object"
                 }
               }
             },
-            "description": "Returns an instance of an organization",
+            "description": "Org is returned",
             "headers": {
               "deprecation": {
                 "$ref": "#/components/headers/DeprecationHeader"
@@ -21016,27 +20930,24 @@
           "404": {
             "$ref": "#/components/responses/404"
           },
-          "409": {
-            "$ref": "#/components/responses/409"
-          },
           "500": {
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get organization",
+        "summary": "Get an org",
         "tags": [
           "Orgs"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
+          "2022-02-16~experimental",
           "2022-04-06~experimental",
-          "2022-12-15~beta",
-          "2023-05-29"
+          "2022-12-15~beta"
         ],
         "x-snyk-api-resource": "orgs",
-        "x-snyk-api-stability": "ga",
-        "x-snyk-api-version": "2023-05-29",
-        "x-stability-level": "stable"
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2022-12-15~beta",
+        "x-stability-level": "beta"
       },
       "patch": {
         "description": "Update the details of an organization\n\n#### Required permissions\n\n- `Edit Organization (org.edit)`",
@@ -21239,18 +21150,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -21457,18 +21357,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -21679,18 +21568,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -22356,18 +22234,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -24612,18 +24479,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -25336,18 +25192,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -25466,18 +25311,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "description": "Organization ID",
@@ -25886,18 +25720,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "description": "Return collections sorted by the specified attributes",
@@ -26600,18 +26423,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "description": "Return projects sorted by the specified attributes",
@@ -26891,18 +26703,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -27113,18 +26914,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -27237,18 +27027,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -27529,18 +27308,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "description": "Org ID",
@@ -29600,18 +29368,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -29902,18 +29659,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/Type"
@@ -30011,18 +29757,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/Type"
@@ -30107,14 +29842,7 @@
         "operationId": "listOrgMemberships",
         "parameters": [
           {
-            "description": "The ID of the org",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -30123,36 +29851,13 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Which column to sort by.",
-            "in": "query",
-            "name": "sort_by",
-            "schema": {
-              "enum": [
-                "username",
-                "user_display_name",
-                "email",
-                "login_method",
-                "role"
-              ],
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/SortBy"
           },
           {
             "$ref": "#/components/parameters/SortOrder"
@@ -30252,14 +29957,7 @@
         "operationId": "createOrgMembership",
         "parameters": [
           {
-            "description": "The ID of the org",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -30730,18 +30428,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/Search"
@@ -31256,18 +30943,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "description": "Org ID",
@@ -31642,18 +31318,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -32653,18 +32318,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "description": "Org ID",
@@ -32816,18 +32470,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -34346,18 +33989,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "description": "Org ID",
@@ -35451,72 +35083,7 @@
                 "schema": {
                   "properties": {
                     "data": {
-                      "additionalProperties": false,
-                      "properties": {
-                        "attributes": {
-                          "additionalProperties": false,
-                          "properties": {
-                            "active": {
-                              "description": "Whether the user status is enabled or not",
-                              "example": true,
-                              "type": "boolean"
-                            },
-                            "email": {
-                              "description": "The email of the user.",
-                              "example": "user@someorg.com",
-                              "type": "string"
-                            },
-                            "membership": {
-                              "properties": {
-                                "created_at": {
-                                  "description": "The date the membership was established.",
-                                  "example": "2022-09-14T09:19:29.206Z",
-                                  "format": "date-time",
-                                  "type": "string"
-                                },
-                                "strategy": {
-                                  "description": "Whether the membership is a direct, or indirect membership.",
-                                  "enum": [
-                                    "direct",
-                                    "indirect"
-                                  ],
-                                  "example": "direct",
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            },
-                            "name": {
-                              "description": "The name of the user.",
-                              "example": "user",
-                              "type": "string"
-                            },
-                            "username": {
-                              "description": "The username of the user.",
-                              "example": "username",
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "id": {
-                          "description": "The Snyk ID corresponding to this user",
-                          "example": "55a348e2-c3ad-4bbc-b40e-9b232d1f4121",
-                          "format": "uuid",
-                          "type": "string"
-                        },
-                        "type": {
-                          "description": "Content type.",
-                          "example": "user",
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "id",
-                        "attributes"
-                      ],
-                      "type": "object"
+                      "$ref": "#/components/schemas/User"
                     },
                     "jsonapi": {
                       "$ref": "#/components/schemas/JsonApi"
@@ -35685,18 +35252,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/OrgIdFilter"
@@ -35799,18 +35355,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -35928,18 +35473,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -36193,18 +35727,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "$ref": "#/components/parameters/AppId"
@@ -64222,18 +63745,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           },
           {
             "description": "Which column to sort by.",
@@ -64354,7 +63866,16 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/MembershipId"
+            "description": "Unique identifier of the tenant membership.",
+            "in": "path",
+            "name": "membership_id",
+            "required": true,
+            "schema": {
+              "description": "Unique identifier for a tenant membership.",
+              "example": "00000000-0000-0000-0000-000000000000",
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/TenantId__0"
@@ -64431,7 +63952,16 @@
             "$ref": "#/components/parameters/TenantId__0"
           },
           {
-            "$ref": "#/components/parameters/MembershipId"
+            "description": "Unique identifier of the tenant membership.",
+            "in": "path",
+            "name": "membership_id",
+            "required": true,
+            "schema": {
+              "description": "Unique identifier for a tenant membership.",
+              "example": "00000000-0000-0000-0000-000000000000",
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -64541,18 +64071,7 @@
             "$ref": "#/components/parameters/EndingBefore"
           },
           {
-            "description": "Number of results to return per page",
-            "example": 10,
-            "in": "query",
-            "name": "limit",
-            "schema": {
-              "default": 10,
-              "format": "int32",
-              "maximum": 100,
-              "minimum": 10,
-              "multipleOf": 10,
-              "type": "integer"
-            }
+            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
