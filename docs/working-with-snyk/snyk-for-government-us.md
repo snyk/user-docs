@@ -13,7 +13,7 @@ This list identifies all the areas with differences in functionality in the Snyk
 * Snyk Code is available except:
   * Does not include Code Search
   * Does not include Snyk Agent Fix
-* Snyk Container is available except for [Kubernetes Integration](https://docs.snyk.io/scan-applications/snyk-container/kubernetes-integration/kubernetes-integration-overview).
+* Snyk Container is available except for [Kubernetes Integration](../scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/).
 * Snyk Open Source is available except:
   * Does not include Unmanaged C++
   * Does not include the npm packages `@snyk/protect` and `@snyk/fix.`
@@ -23,7 +23,7 @@ This list identifies all the areas with differences in functionality in the Snyk
 
 API keys are not available.
 
-This means that attempts to create Service Accounts either through the UI or using the API with an `auth_type` of `api_key` are not accepted. You must ensure that the OAuth protocol is used instead for all scenarios where API keys would typically be used. See[ Service accounts using OAuth 2.0](https://docs.snyk.io/enterprise-configuration/service-accounts/service-accounts-using-oauth-2.0) for details. If you need help, contact [Snyk Support](https://support.snyk.io).
+This means that attempts to create Service Accounts either through the UI or using the API with an `auth_type` of `api_key` are not accepted. You must ensure that the OAuth protocol is used instead for all scenarios where API keys would typically be used. See [Service accounts using OAuth 2.0](../enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md) for details. If you need help, contact [Snyk Support](https://support.snyk.io).
 
 In addition, the CLI must be used in OAuth mode, not with token-driven authentication.
 
@@ -55,8 +55,8 @@ See [Single Sign-On (SSO) for authentication to Snyk](../enterprise-setup/single
 * [Snyk Advisor](https://snyk.io/advisor/)
 * [Snyk Learn](https://learn.snyk.io/?)
 * Social logins: Google, GitHub, and so on as identity provider
-* SSO into [Snyk Support](https://support.snyk.io)
-* [Status Page](https://status.snyk.io)
+* SSO into [Snyk support](https://support.snyk.io)
+* [Status page](https://status.snyk.io)
 * Outbound webhooks
 * Session Concurrency is limited to three (3) sessions per user.
 * Session lockout: After sessions expire, the signed-in user loses access to all data present in existing session windows.
