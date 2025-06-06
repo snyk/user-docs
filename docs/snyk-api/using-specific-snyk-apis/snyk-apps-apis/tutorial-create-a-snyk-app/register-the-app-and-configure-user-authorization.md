@@ -9,18 +9,18 @@ We've made some good progress with our TypeScript application so far, but at the
 ### Prerequisites
 
 * A Snyk account with API privileges
-* A [Snyk API Token](https://docs.snyk.io/features/snyk-api-info/authentication-for-api)
+* A [Snyk API Token](../../../authentication-for-api/)
 * The `orgid` of the Snyk Organization that will be registered as the App owner
 
 ### Obtaining an `orgid`
 
-There are two methods for retrieving an `orgid`. The first is to log in to your Snyk account and visit the organization settings page of the Organization for which you wish to retrieve the ID. The path to the Organization settings page is:
+There are two methods for retrieving an `orgid`. The first is to log in to your Snyk account and visit the Organization settings page of the Organization for which you wish to retrieve the ID. The path to the Organization settings page is:
 
 ```
 https://app.snyk.io/org/{your-org-name}/manage/settings
 ```
 
-Alternatively, you may retrieve an Organization's `orgid` using the `https://api.snyk.io/v1/orgs` API endpoint, using your API token in the authorization header. For details about this endpoint, view its [documentation](../../../reference/organizations-v1.md#orgs).
+Alternatively, retrieve an Organization's `orgid` using the `https://api.snyk.io/v1/orgs` API endpoint, using your API token in the authorization header. For details about this endpoint, view its [documentation](../../../reference/organizations-v1.md#orgs).
 
 ### About Snyk Apps and the Snyk API
 
@@ -38,9 +38,9 @@ The body of the request requires the following details:
 
 A note on scopes: Once registered, Snyk Apps scopes cannot currently be changed. The only recourse is deleting the Snyk App using the [Delete App](../../../reference/apps.md#orgs-org_id-apps-creations-app_id-2) API endpoint and registering the app again as a new Snyk App.
 
-At the time of this writing, **Snyk Apps is still in beta**. At the moment, t**here is only one available scope: `apps:beta`**. This scope **allows** the App to test and monitor existing projects, as well as read information about Snyk organizations, existing projects, issues, and reports.
+At the time of this writing, **Snyk Apps is still in beta**. At the moment, t**here is only one available scope: `apps:beta`**. This scope **allows** the App to test and monitor existing projects, as well as read information about Snyk Organizations, existing Projects, issues, and reports.
 
-One of the **limitations of the Snyk Apps beta** is that **a Snyk App may only be authorized by users who have administrator access to the Organization to which the Snyk App is registered**.
+One of the **limitations of the Snyk Apps beta** is that **a Snyk App may be authorized only by users who have administrator access to the Organization to which the Snyk App is registered**.
 
 With your API token and `orgid` in hand, perform the following command in your terminal, substituting the values as necessary. For this tutorial, use `http://localhost:3000/callback` for the `redirectUris` value.
 
@@ -69,7 +69,7 @@ Now that we've registered the app as a Snyk App, we can start adjusting our Type
 
 User authentication for Snyk Apps is done by way of a webpage URL containing query parameters that match up with our Snyk App's data. We'll need to replace the query parameter values in this URL and send users to the final link in a web browser. From there they can grant account access to the Snyk App.
 
-Once access has been provisioned, the user will be kicked back to our app's registered `callbackURL`, which we defined as `http://localhost:3000/callback`.
+After access has been provisioned, the user will be kicked back to our app's registered `callbackURL`, which we defined as `http://localhost:3000/callback`.
 
 Essentially, our app needs to generate a link like the following and then send the user to it when it's time to authorize:
 
@@ -108,7 +108,7 @@ Based on the preceding information, our Snyk App has some new requirements. We w
 
 From here on, we'll be doing a lot of refactoring in our Snyk App and we'll be jumping into a number of different files. To help make the process easier to follow, this tutorial uses the convention of adding a commented filepath to the first line of code snippets, describing where they belong. In your own code; these comments aren't necessary.
 
-We'll also add a number of new packages to help address our new requirements. For convenience, go ahead and run the following in the root of your project:
+We'll also add a number of new packages to help address our new requirements. For convenience, go ahead and run the following in the root of your Project:
 
 ```bash
 npm install --save passport \
@@ -308,7 +308,7 @@ export const enum APIVersion {
 }
 ```
 
-We start by adding a single function to simplify our Apps' calls to the Snyk API. The function takes a `tokenType` (either _bearer_ or _token_), the `token` itself, and an `APIVersion` (conveniently corresponding to the enum we just defined).
+We start by adding a single function to simplify our Apps calls to the Snyk API. The function takes a `tokenType` (either _bearer_ or _token_), the `token` itself, and an `APIVersion` (conveniently corresponding to the enum we just defined).
 
 ```typescript
 // ./src/util/APIHelpers.ts
