@@ -175,7 +175,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--dev`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`sbom`](commands/sbom.md)
 
-`--org=<ORG_ID>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`iac describe`](commands/iac-describe.md), [`sbom`](commands/sbom.md), [`container sbom`](commands/container-sbom.md)
+`--org=<ORG_ID>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`iac describe`](commands/iac-describe.md), [`sbom`](commands/sbom.md), [`container sbom`](commands/container-sbom.md), [`aibom`](commands/aibom.md)
 
 `--file=<FILE>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md)
 
@@ -222,7 +222,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 ## `snyk aibom` command options
 
 `--html`\
-`--json-file-output`
+`--json-file-output`: [snyk aibom](commands/aibom.md)
 
 ## `snyk auth` command options
 
