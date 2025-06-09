@@ -9,7 +9,7 @@ You can trigger `snyk test` using one of these methods:
 * automatic (default)
 * manual
 
-A Snyk scan is triggered automatically when you opne your Project and when you save any supported files. This behavior can be turned off using the [existing configuration](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#user-experience).
+A Snyk scan is triggered automatically when you open your Project and when you save any supported files. This behavior can be turned off using [**Scan automatically on start-up and save**](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#user-experience).
 
 {% hint style="info" %}
 Ensure your files are saved before manually running an analysis.
