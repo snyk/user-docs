@@ -1,12 +1,10 @@
 # Prioritization for Snyk AppRisk
 
-Snyk uses holistic application intelligence to help you better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. Users can also prioritize their issues based on asset classification as defined in asset-related policies.&#x20;
+Synk AppRisk provides a centralized view for monitoring risks and automates the collection of compliance data. AppRisk ensures that users prioritize the most critical risks, safeguarding your business and highlighting the effectiveness of your security measures.
 
-You can access the [Issues](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues) page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues).
+You can access Synk AppRisk via the [Issues](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues) page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues).
 
-The Issues page provides a centralized view of all the issues identified by Snyk with additional asset context. This will help empower AppSec teams to better triage and remediate issues in Snyk.
-
-**Issues** is available at the Group level or at the Organization level.&#x20;
+**Issues** are available at the Group level or at the Organization level.&#x20;
 
 ## Insights for Snyk AppRisk
 
@@ -15,13 +13,13 @@ The [evidence graph](using-the-issues-ui-with-snyk-apprisk/evidence-graph.md) is
 The Snyk approach looks holistically at your application to understand the following:
 
 * What source code and dependencies were built into a container image
-* The operating system it is running on
+* The operating system is running on
 * Where the image was deployed
-* How the supporting Kubernetes and cloud infrastructure is configured
+* How the Kubernetes and cloud infrastructure is configured
 
 ## Issues page for Snyk AppRisk&#x20;
 
-**Issues** is nested in the main left menu and provides information about the identified issues. Use the available filters to customize and prioritize the issues list.
+The **Issues** page shows a table view of issues prioritized by risk factors.Use the available filters to customize and prioritize the issues list.
 
 {% hint style="info" %}
 The Risk Factor column and filter, and with it, the evidence graph information, are available only for Snyk AppRisk users.&#x20;
