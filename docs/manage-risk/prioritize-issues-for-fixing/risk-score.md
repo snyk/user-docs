@@ -66,17 +66,13 @@ Objective likelihood factors are taken into account:
 * Package popularity (Snyk Open Source)&#x20;
 
 {% hint style="warning" %}
-The Exploit Prediction Scoring System (EPSS)  is updated arbitrarily.
+The Exploit Prediction Scoring System (EPSS)  is updated daily.
 {% endhint %}
 
 Contextual likelihood factors then increase or decrease the likelihood subscore: &#x20;
 
 * Reachability (Snyk Open Source Java, JavaScript)&#x20;
 * Transitive depth
-
-{% hint style="info" %}
-Fixability is no longer considered part of the Score Calculation, as the effort needed to mitigate a security issue does not affect the risk it imposes. To focus on actionable issues, use Fixability filters and then use the Risk Score to start with the riskiest issues.&#x20;
-{% endhint %}
 
 ## Risk factors drill down
 
