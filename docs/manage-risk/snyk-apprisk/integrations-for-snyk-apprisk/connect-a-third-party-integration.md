@@ -15,6 +15,7 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 * [GitGuardian](connect-a-third-party-integration.md#gitguardian-setup-guide)
 * [Dynatrace](connect-a-third-party-integration.md#dynatrace-setup-guide)
 * [Sysdig](connect-a-third-party-integration.md#sysdig-setup-guide)
+* [Crowdstrike](connect-a-third-party-integration.md#crowdstrike-setup-guide)
 
 {% hint style="info" %}
 Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup. See the [Integration connected statuses](../../../integrate-with-snyk/#integration-connection-statuses) page for more details.
@@ -321,3 +322,44 @@ After the Sysdig runtime data becomes available from the runtime integration, it
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (593).png" alt=""><figcaption><p>Sysdig - Setup screen</p></figcaption></figure>
+
+## Crowdstrike setup guide
+
+{% hint style="info" %}
+**Release status**
+
+Crowdstrike for Snyk AppRisk is in Early Access and available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
+{% endhint %}
+
+The following [risk factors](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) are reported from the Crowdstrike runtime integration: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md).
+
+### Prerequisites <a href="#sysdig-prerequisites" id="sysdig-prerequisites"></a>
+
+* Deploy the [**Kubernetes Admission Controller Agent (KAC)**](https://falcon.us-2.crowdstrike.com/documentation/page/d0a3095c/deploy-falcon-kubernetes-admission-controller-with-a-helm-chart) to the cluster.
+* Create a [new API Client](https://falcon.us-2.crowdstrike.com/api-clients-and-keys/clients) for the integration:
+  * API Client should include the **Falcon Container Image** scope.
+  * Make sure you keep hold of the **Client Secret** being generated, as it's only visible once - during the generation of a new API Client.
+
+### Required Parameters
+
+The following parameters are required for setting the integration in Snyk UI. All values should be available from the newly generated API Client mentioned above.
+
+* **Client ID**
+* **Client Secret**
+* **Base URL**
+
+### Integration Hub Setup <a href="#crowdstrike-integration-hub-setup" id="crowdstrike-integration-hub-setup"></a>
+
+* Open the **Integration Hub** menu.
+* Select the **CNAPP** tag and search for CrowdStrike.
+* Click the **Add** button.
+* Add the **Profile name** for this integration.
+* Set the **Client ID, Client Secret** and **URL** from the API Client as mentioned above.
+* Click the **Done** button.
+* When the connection is established, the status of the CrowdStrike integration is changed to **Connected**.
+
+{% hint style="info" %}
+After the Crowdstrike runtime data becomes available from the runtime integration, it will appear in Snyk AppRisk within a few hours.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-05-29 at 17.01.33.png" alt=""><figcaption><p>Crowdstrike - Setup screen</p></figcaption></figure>
