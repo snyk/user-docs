@@ -1,20 +1,20 @@
 # Snyk Language Server
 
-Snyk offers IDE integrations that allow you to use the functionality of Snyk in your Integrated Development Environment or Editor. This page describes the Snyk Language Server that can provide diagnostics for any IDE or Editor that supports the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/). For information about all of the IDE plugins and their use, see [Snyk for IDEs](https://docs.snyk.io/ide-tools) in the docs.
+Snyk offers IDE integrations that allow you to use the functionality of Snyk in your Integrated Development Environment or Editor. This page describes the Snyk Language Server that can provide diagnostics for any IDE or Editor that supports the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/). For information about all of the IDE plugins and extensions and their use, see [Snyk IDE plugins and extensions](../).
 
-The Snyk Language Server scans for vulnerabilities, open source license issues, and infrastructure misconfigurations and returns results with security issues categorized by issue type and severity.
+The Snyk Language Server scans for vulnerabilities, open-source license issues, and infrastructure misconfigurations and returns results with security issues categorized by issue type and severity.
 
 For open source, you receive automated, algorithm-based fix suggestions for both direct and transitive dependencies.
 
 Snyk Language Server scans for the following types of issues:
 
-* [**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both the direct and indirect (transitive) open-source dependencies pulled into the Snyk Project. See also the [Open Source docs](https://docs.snyk.io/products/snyk-open-source).
-* [**Code Security**](https://snyk.io/product/snyk-code/) - security vulnerabilities in your code. See also the [Snyk Code docs](https://docs.snyk.io/products/snyk-code).
-* [**Infrastructure as Code (IaC) Security**](https://snyk.io/product/infrastructure-as-code-security/) - configuration issues in your IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager. See also the [Snyk Infrastructure as Code docs](https://docs.snyk.io/products/snyk-infrastructure-as-code).
+* [**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both the direct and indirect (transitive) open-source dependencies pulled into the Snyk Project. See also the [Open Source documentation](https://docs.snyk.io/scan-with-snyk/snyk-open-source).
+* [**Code Security**](https://snyk.io/product/snyk-code/) - security vulnerabilities in your code. See also the [Snyk Code documentation](https://docs.snyk.io/scan-with-snyk/snyk-code).
+* [**Infrastructure as Code (IaC) Security**](https://snyk.io/product/infrastructure-as-code-security/) - configuration issues in your IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager. See also the [Snyk Infrastructure as Code documentation](../../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/).
 
-After you have installed and configured the Language Server, every time you run it, open a file, or save, Snyk scans the manifest files, proprietary code, and configuration files in your project. Snyk delivers actionable vulnerability, license, or misconfiguration issue details and displays the results natively within the LSP supporting Editor or IDE.
+After you have installed and configured the Language Server, every time you run it, open a file, or save, Snyk scans the manifest files, proprietary code, and configuration files in your Project. Snyk delivers actionable vulnerability, license, or misconfiguration issue details and displays the results natively within the LSP supporting Editor or IDE.
 
-This page explains supported environments, support, and giving feedback and provides installation instructions.
+This page explains supported environments, support, and giving feedback, and provides installation instructions.
 
 ## Supported operating systems and architecture
 
@@ -26,7 +26,7 @@ You can use the Language Server in the following environments:
 
 * Linux: AMD64 and ARM64
 * Linux Alpine: 386 and AMD64
-* Windows: 386, AMD64, ARM via 386 compatibility
+* Windows: 386, AMD64, ARM through 386 compatibility
 * MacOS: AMD64 and ARM64
 
 ## Where you can download the Language Server
@@ -148,7 +148,7 @@ If no JAVA\_HOME is set, Snyk Language Server automatically searches for a java 
 * C:\Program Files
 * C:\Program Files (x86)
 
-The same directories are searched for a Maven executable and the parent directory is added to the path.
+The same directories are searched for a Maven executable, and the parent directory is added to the path.
 
 ## **Snyk CLI**
 
