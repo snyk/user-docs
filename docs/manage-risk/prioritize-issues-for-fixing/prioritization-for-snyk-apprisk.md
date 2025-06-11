@@ -1,8 +1,8 @@
 # Prioritization for Snyk AppRisk
 
-Synk AppRisk provides a centralized view for monitoring risks and automates the collection of compliance data. AppRisk ensures that users prioritize the most critical risks, safeguarding your business and highlighting the effectiveness of your security measures.
+Snyk AppRisk provides a centralized view for monitoring risks and automates the collection of compliance data. AppRisk ensures that users prioritize the most critical risks, safeguarding your business and highlighting the effectiveness of your security measures.
 
-You can access Synk AppRisk via the [Issues](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues) page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues).
+You can access Snyk AppRisk via the [Issues](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues) page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues).
 
 **Issues** are available at the Group level or at the Organization level.&#x20;
 
