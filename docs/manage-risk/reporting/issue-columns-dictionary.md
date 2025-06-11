@@ -47,6 +47,7 @@ The vulnerability details refer to various issue attributes that are being defin
 * **CWE** - Mitre CWE ID
 * **EPSS SCORE** - The probability of exploitation in the wild in the next 30 days.
 * **EPSS PERCENTILE** -  The proportion of all vulnerabilities with the same or lower EPSS score.
+* **EXISTS IN DIRECT DEPENDENCY -** Indicates if the vulnerability exists in a direct dependency. If false, the vulnerability only exists in transitive dependencies.
 * **EXPLOIT MATURITY** - Represents the existence and maturity of public exploits validated by Snyk. For details, see [View exploits in Projects](../prioritize-issues-for-fixing/view-exploits.md#view-exploits-in-projects). The allowed values include:
   * **Mature:** Snyk has a published code exploit for this vulnerability.
   * **Proof of concept:** Snyk has a proof-of-concept or detailed explanation of how to exploit this vulnerability. Proof of concept vulnerability patches cannot be disabled and will appear in fix PRs where they are found.

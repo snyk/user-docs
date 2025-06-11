@@ -20,16 +20,17 @@ This dictionary is designed to help you navigate the dataset efficiently. It pro
 
 ## Data Share Tables
 
-<figure><img src="../../../.gitbook/assets/New share dag.png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary</p></figcaption></figure>
-
 The diagram above represents the objects listed in the data dictionary as a database diagram. It covers the following tables:
 
 * [Groups](data-share-data-dictionary.md#groups)
 * [Orgs](data-share-data-dictionary.md#orgs)
 * [Projects](data-share-data-dictionary.md#projects)
 * [Issues](data-share-data-dictionary.md#issues)
+* [Dependencies](data-share-data-dictionary.md#dependencies)
 * [Usage events](data-share-data-dictionary.md#usage-events)
 * [Jira issues](data-share-data-dictionary.md#issue-jira-issues)
+
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary</p></figcaption></figure>
 
 ### Groups
 
@@ -145,7 +146,7 @@ If you would like to match your results with Snyk Reports:&#x20;
 | `fixed_in_available`                        | boolean        | Is the given vulnerability fixed in a different version of responsible source.                                                                                                                |
 | `fixed_in_version`                          | variant        | The first version in which a given vulnerability was fixed.                                                                                                                                   |
 | `group_public_id`                           | varchar        | A universally unique identifier for a group, assigned in the record's source database.                                                                                                        |
-| `id`                                        | varchar        | A unique identifier, representing a unique instance of a given vulnerability in a project.                                                                                                    |
+| `id`                                        | varchar        | A unique identifier, representing a unique instance of a given security issue in a project.                                                                                                   |
 | `introduction_category`                     | varchar        | A Snyk generated classification describing the nature of an issue's introduction in the context of Snyk product usage, for example, Baseline Issue, Non Preventable Issue, Preventable Issue. |
 | `issue_severity`                            | varchar        | Indicates the assessed level of risk, as Critical, High, Medium, or Low.                                                                                                                      |
 | `issue_status`                              | varchar        | Indicates whether the issue is open, resolved, or ignored.                                                                                                                                    |
@@ -171,6 +172,21 @@ If you would like to match your results with Snyk Reports:&#x20;
 | `vulnerability_publication_date`            | date           | The date a given vulnerability was first published by Snyk.                                                                                                                                   |
 | `vuln_db_url`                               | varchar        | URL which directs to the Snyk's Public Vulnerability Database website.                                                                                                                        |
 | `__updated_at`                              | timestamp\_ntz | When the data share data transformation last updated this record.                                                                                                                             |
+
+### Dependencies
+
+> Version in use: v1.0
+
+The `Dependencies` table allows you to identify issues based on their availability in direct dependencies.
+
+| Column name                   | Data type | Description                                                                                                                       |
+| ----------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `issue_id`                    | varchar   | A unique identifier, representing a unique instance of a given security issue in a project.                                       |
+| `problem_id`                  | varchar   | Snyk Vulnerability database ID that uniquely identifies the vulnerability.                                                        |
+| `project_public_id`           | varchar   | A universally unique identifier for a project, assigned in the record's source database.                                          |
+| `org_public_id`               | varchar   | A universally unique identifier for an organization, assigned in the record's source database.                                    |
+| `group_public_id`             | varchar   | A universally unique identifier for a group, assigned in the record's source database.                                            |
+| `exists_in_direct_dependency` | boolean   | Indicates if the vulnerability exists in a direct dependency. If false, the vulnerability only exists in transitive dependencies. |
 
 ### Usage Events
 
