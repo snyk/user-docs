@@ -92,6 +92,7 @@ The following frameworks and libraries are supported in Snyk for Java and Kotlin
 * Spongycastle - Comprehensive
 * Spring boot - Partial
 * Spring Web, MVC and JDBC - Comprehensive
+* Spring WebFlux - Comprehensive
 * Struts - Partial
 * Vaadin - Comprehensive
 * XStream - Comprehensive
