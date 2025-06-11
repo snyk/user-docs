@@ -4,7 +4,7 @@ The following environment variables are needed to customize the Broker Client fo
 
 `BROKER_TOKEN` - the Snyk Broker token, obtained from your Artifactory integration settings (**Integrations > Artifactory**).
 
-`BROKER_SERVER_URL` - the URL of the Broker server for the region in which your data is hosted. For the commands and URLs to use, see [Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
+`BROKER_SERVER_URL` - the URL of the Broker server for the region in which your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).
 
 `ARTIFACTORY_URL` - the URL of your Artifactory deployment, such as `<yourdomain>.artifactory.com/artifactory`.
 

@@ -7,7 +7,7 @@ The following environment variables are needed to customize the Broker client fo
 `BROKER_TOKEN`\
 The Snyk Broker token, obtained from your Nexus integration settings (**Integrations > Nexus**).
 
-`BROKER_SERVER_URL` - the URL of the Broker server for the region in which your data is hosted. For the commands and URLs to use, see [Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
+`BROKER_SERVER_URL` - the URL of the Broker server for the region in which your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).
 
 `BASE_NEXUS_URL`\
 The URL of your Nexus 3 deployment.\
@@ -41,7 +41,7 @@ The following environment variables are needed to customize the Broker client fo
 
 `BROKER_TOKEN` - the Snyk Broker token, obtained from your Nexus integration settings (**Integrations > Nexus**).
 
-`BROKER_SERVER_URL` - the URL of the Broker server for the region in which your data is hosted. For the commands and URLs to use, see [Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
+`BROKER_SERVER_URL` - the URL of the Broker server for the region in which your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).
 
 `BASE_NEXUS_URL`- the URL of your Nexus 2 deployment.\
 Example:\

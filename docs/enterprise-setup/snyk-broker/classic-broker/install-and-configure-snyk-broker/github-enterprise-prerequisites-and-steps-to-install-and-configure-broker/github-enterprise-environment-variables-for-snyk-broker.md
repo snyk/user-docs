@@ -4,7 +4,7 @@ The following environment variables are required to configure the Broker Client:
 
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Snyk Org settings view (app.snyk.io).
 * `GITHUB_TOKEN` - a personal access token with full `repo`, `read:org` and `admin:repo_hook` scopes.
-* `BROKER_SERVER_URL` - the URL of the Broker server for the region in which your data is hosted. For the commands and URLs to use, see [Broker URLs](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls).
+* `BROKER_SERVER_URL` - the URL of the Broker server for the region in which your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).
 * `GITHUB` - the hostname of your GitHub Enterprise deployment:
   * For self-hosted or custom domains, this is your GitHub Enterprise domain `your.ghe.domain.com`. &#x20;
   * For GitHub Enterprise Cloud without a custom domain, use `github.com`.

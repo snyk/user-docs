@@ -11,7 +11,7 @@ This page has information and instructions for the following:
 * Basic troubleshooting with the monitoring features, [Healthcheck](troubleshooting-broker.md#monitoring-healthcheck) and [Systemcheck](troubleshooting-broker.md#monitoring-systemcheck)
 * [Troubleshooting Standalone Broker](troubleshooting-broker.md#troubleshooting-standalone-broker)
 * [Support of big manifest files (> 1Mb) for GitHub and GitHub Enterprise](troubleshooting-broker.md#support-of-big-manifest-files-greater-than-1mb-for-github-and-github-enterprise)
-* [Ensuring your containers stay online when you log out of the host](troubleshooting-broker.md#containers-go-down-when-you-log-out-of-the-host)
+*
 
 For more comprehensive troubleshooting information, see [Broker Troubleshooting FAQs](https://support.snyk.io/s/article/Broker-Troubleshooting).
 

@@ -50,7 +50,7 @@ After the container is up, the GitHub Enterprise Integrations page shows the con
 
 ### **Support of big manifest files (> 1Mb) for GitHub Enterprise**
 
-One reason that open Fix/Upgrade PRs or PR/recurring tests fail may be fetching big manifest files (> 1Mb). To address this issue, enable an additional variable in your broker by following the Additional instructions for [Snyk Open Source Scans (SCA) of large manifest files (Docker setup) ](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup)&#x20;
+One reason that open Fix/Upgrade PRs or PR/recurring tests fail may be fetching big manifest files (> 1Mb). To address this issue, enable an additional variable in your broker by following the Additional instructions for [Snyk Open Source Scans (SCA) of large manifest files, Docker setup](../advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup.md)
 
 {% hint style="info" %}
 To ensure the maximum possible security, Snyk does not enable this rule by default, because use of this endpoint means that the Snyk platform can theoretically access all files in this repository, because the path does not include specific allowed file names.
