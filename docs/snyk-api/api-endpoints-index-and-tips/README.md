@@ -367,7 +367,7 @@ The poll results return a message per manifest processed, either `success: true`
 [api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md)\
 [api-import Kicking off an import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/kicking-off-an-import.md)\
 [Scenario:: Identify and import new repositories only](scenarios-for-using-the-snyk-api.md#identify-and-import-new-repositories-only)\
-[Scenario: Detect and import new Projects in a repository into a target](scenarios-for-using-the-snyk-api.md#detect-and-import-new-projects-in-a-repository-into-a-target)\
+[Scenario: Detect and import new Projects in a repository into a target](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)\
 [Scenario: Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)\
 [Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images)\
 [Manage code vulnerabilities ](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/)(Use: Automate importing multiple repositories)
@@ -643,7 +643,7 @@ The query-string parameter for types is optional. The endpoint does not enforce 
 [Scenario: Bulk ignore issues](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues);\
 [Scenario: Tag all Projects in Snyk](scenarios-for-using-the-snyk-api.md#tag-all-projects-in-snyk);\
 [Scenario: Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images);\
-[Scenario: Detect and import new Projects in a repository into a target](scenarios-for-using-the-snyk-api.md#detect-and-import-new-projects-in-a-repository-into-a-target)
+[Scenario: Detect and import new Projects in a repository into a target](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)
 
 ### [Updates project by project ID](../reference/projects.md#orgs-org_id-projects-project_id)
 

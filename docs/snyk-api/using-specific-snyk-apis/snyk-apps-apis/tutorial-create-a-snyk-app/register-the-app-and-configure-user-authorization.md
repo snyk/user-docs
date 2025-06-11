@@ -693,7 +693,7 @@ If you ran the app to test things, take a look at database entries. If you've be
 
 That `expires_in` value will continue to count down until 0. If it does, the user will need to re-authorize.
 
-To keep our access token from going stale, we need to make a POST request using our `refresh_token` to get an updated `access_token`. See [Set up the refresh token exchange](https://docs.snyk.io/features/integrations/snyk-apps/getting-started-with-snyk-apps/set-up-the-refresh-token-exchange).
+To keep our access token from going stale, we need to make a POST request using our `refresh_token` to get an updated `access_token`. See [Set up the refresh token exchange](../set-up-a-snyk-app-using-the-oauth2-api/set-up-the-refresh-token-exchange.md).
 
 We can automate this process in our Snyk App by utilizing [Axios interceptors](https://axios-http.com/docs/interceptors) to _intercept_ the requests we make and ensure we have an up-to-date `access_token`.
 
