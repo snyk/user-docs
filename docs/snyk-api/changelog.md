@@ -1,3 +1,72 @@
+## 2024-10-15 - Updated 2025-06-12
+
+### GET - `/tenants` - Added
+- Get a list of all Tenants which the calling user is a member of
+
+
+### PATCH - `/tenants/{tenant_id}` - Added
+- Update the details of a tenant
+
+#### Required permissions
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}` - Added
+- Get the full details of a Tenant.
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}/bulk_migration` - Added
+- Performs bulk migration for integrations from legacy to universal broker
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}/bulk_migration` - Added
+- Lists organization IDs associated with a connection type to be bulk migrated to universal broker
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### GET - `/orgs/{org_id}` - Updated
+- added the new optional `query` request parameter `expand`
+
+- added the optional property `data/relationships` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/projects` - Updated
+- added the optional property `data/items/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
+
+
+
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added the optional property `data/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added the optional property `data/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+- removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
+
+
+
+### POST - `/orgs/{org_id}/packages/issues` - Updated
+- removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
+
+
 ## 2024-10-15 - Updated 2025-06-04
 
 ### GET - `/groups/{group_id}/assets/{asset_id}` - Added
