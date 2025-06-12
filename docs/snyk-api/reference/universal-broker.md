@@ -72,6 +72,14 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}/bulk_migration" method="post" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}/bulk_migration" method="get" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}" method="patch" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
