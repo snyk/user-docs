@@ -49,11 +49,11 @@ Snyk uses Python in order to scan and find your dependencies.
 
 If you are using multiple Python versions, use the `--command` option to specify the correct Python command for execution. The plugin does not detect the Python version associated with the Project.
 
-## JCEF problem and error when showing Issue Details in 2025.1
+## JCEF problem and error when showing Issue Details
 
-A `java.lang.NullPointerException` was encountered within IntelliJ IDEA 2025.1 when the Snyk Security plugin was installed. The user query indicated a suspicion that changes in the Java Chromium Embedded Framework (JCEF) API or its support within the IntelliJ Platform 2025.1 might be the underlying cause. This analysis dissects the provided stack trace, correlates it with known platform issues and recent changes in both IntelliJ IDEA and the Snyk plugin, and provides actionable recommendations to resolve the error.
+A `java.lang.NullPointerException` was encountered within **Jetbrains 2025.1** when the Snyk Security plugin was installed. Also, **Android Studio** does not enable JCEF out of the box.
 
-### Initial analysis of the provided log
+### Initial analysis of the provided log (Jetbrains 2025.1 platform)
 
 The exception encountered is a `java.lang.NullPointerException` with the message: `Cannot read field "objId" because "robj" is null`. An examination of the stack trace reveals the origin and propagation of this error:
 
@@ -77,14 +77,35 @@ Key observations from the stack trace:
 * The Snyk plugin initiates the sequence of calls leading to the error. The trace shows `io.snyk.plugin.ui.jcef.OpenFileLoadHandlerGenerator.generate` attempting to create a `JBCefJSQuery` (via `com.intellij.ui.jcef.JBCefJSQuery.create`).
 * `JBCefJSQuery.create` internally calls `com.intellij.ui.jcef.JBCefApp.createMessageRouter`, which in turn attempts to create a `CefMessageRouter`. This process ultimately fails within the remote router initialization.
 
-The failure point, `RemoteMessageRouterImpl.create`, suggests an issue with setting up or accessing components related to a remote (out-of-process) JCEF instance. The field `robj` being null indicates that an expected remote object, crucial for establishing the message router, was not available or initialized at the point of access. This aligns with the user's initial hypothesis that changes to JCEF support in IntelliJ 2025.1 could be a factor.
-
 The `NullPointerException: Cannot read field "objId" because "robj" is null` encountered in IntelliJ IDEA 2025.1 with the Snyk plugin installed is a manifestation of a known platform issue, tracked as IJPL-186252. This issue is strongly correlated with the new default out-of-process JCEF architecture in IntelliJ IDEA 2025.1. The Snyk plugin, in its operations involving JCEF for UI rendering, was triggering this underlying platform instability.
+
+### How to solve Android Studio issue
 
 The most effective and recommended path to resolution is as follows:
 
-1. Update the Snyk Security plugin to version 2.12.2 or later. This version contains a specific workaround implemented by Snyk to mitigate the JCEF initialization problem in IntelliJ 2025.1.
-2. If updating the plugin does not resolve the issue, or as an alternative, apply the IntelliJ IDEA VM option `-Dide.browser.jcef.out-of-process.enabled=false` to revert to the in-process JCEF mode, which is known to bypass the bug described in IJPL-186252.
+As of **Android Studio Koala (2024.1.1), JCEF (Java Chromium Embedded Framework) is included** but **not enabled by default**. To utilize JCEF features, you need to manually enable it by following these steps:
+
+#### Step 1: Disable the JCEF Sandbox
+
+1. Open Android Studio.
+2. Navigate to **Help** > **Find Action...**\
+   (Or press `Ctrl+Shift+A` on Windows/Linux, or `Cmd+Shift+A` on macOS.)
+3. In the search box, type **Registry...** and select it.
+4. In the Registry dialog that appears, search for:`ide.browser.jcef.sandbox.enable`
+5. Uncheck the box next to it to disable the sandbox.
+
+#### Step 2: Choose a JCEF-Compatible Java Runtime
+
+1. Again, navigate to **Help** > **Find Action...**\
+   (Or press `Ctrl+Shift+A` on Windows/Linux, or `Cmd+Shift+A` on macOS.)
+2. Search for and select **Choose Boot Java Runtime for the IDE...**
+3. From the list, select a runtime labeled something like:**JetBrains Runtime with JCEF**
+4. Click **OK** to apply the change.
+5. Restart Android Studio when prompted.
+
+### How to solve issues with Jetbrains 2025.1 platform
+
+Apply the IntelliJ IDEA VM option `-Dide.browser.jcef.out-of-process.enabled=false` to revert to the in-process JCEF mode, which is known to bypass the bug described in IJPL-186252.
 
 It is also advisable to keep IntelliJ IDEA updated to the latest patch release of version 2025.1.x or later, as future updates may include a permanent fix for IJPL-186252, rendering plugin-specific workarounds or manual VM option adjustments unnecessary. The dynamic between IDE platforms and their extensive plugin ecosystems often involves such diagnostic and adaptive challenges, where changes at one layer necessitate responses and adjustments at others to maintain overall system stability and user experience.
 
