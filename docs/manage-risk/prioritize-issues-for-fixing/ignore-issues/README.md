@@ -168,18 +168,16 @@ For more information, see [IaC ignores using the .snyk policy file](../../../sny
 Suppressing vulnerabilities carries a level of risk, so you can make this function available to admins only as follows:
 
 1. Navigate to your Organization **Settings,** then **General**, then navigate to the **Ignores** section.
-2. Under **Ability to ignore an issue or edit the ignore settings on an issue**, select **Admin users only**.\
+2. Under **Ignore an issue or edit ignore settings using Snyk Web UI or Snyk API**, select **Group and Org Admin users (Default user roles only)**.\
    This also prevents ignores from being added through the CLI.
-3. Under **Require reason for each ignore**, you can set the **more details** field to be required when an issue is being ignored, so the user must enter a reason for each ignore.
+3. Under **Require reason for each ignore**, you can set to **Required** to enter a reason for each ignore.
 4. Select **Update** to make the changes.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2021-12-07 at 11.25.49.png" alt="Update ignore settings"><figcaption><p>Update ignore settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings-general-ignore-settings.png" alt="Update ignore settings"><figcaption><p>Update ignore settings</p></figcaption></figure>
 
 {% hint style="warning" %}
-The **Admin users only** Ignore setting applies only to Snyk Organization Admins. This setting is not compatible with custom roles or Group Admins.
+When Consistent Ignores is enabled, the **Group and Org Admin (Default user roles only)** configuration is disregarded.
 {% endhint %}
-
-## Using ignores in reports
 
 If you have access to the Snyk Reporting feature, and use the new [Snyk Reports](../../../manage-issues/reporting/available-snyk-reports.md), you can display an Issue Status report showing only the open, ignored issues.
 
