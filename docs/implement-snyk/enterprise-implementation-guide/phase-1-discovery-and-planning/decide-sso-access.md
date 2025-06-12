@@ -11,9 +11,7 @@ While it is common for the initial pilot or trial team to use personal authentic
 
 ## SSO provisioning options
 
-When you are setting up access for new users in your company, there are several approaches to consider that determine the user experience and access. In this step, consider **Open To All** or **Require an Invite**, and if **Custom Mapping** is desired.
+When you are setting up access for new users in your company, there are several approaches to consider that determine the user experience and access. In this step, consider **Open To All** or **Require an Invite**, and if **Custom Mapping** is desired. For more information, see [Choose a Provisioning Option](../../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/choose-a-provisioning-option.md).
 
-For more information, see [Choose a Provisioning Option](../../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/choose-a-provisioning-option.md).
-
-The **Custom Mapping** feature is available exclusively with [paid services](../../../working-with-snyk/snyk-terms-of-support-and-services-glossary/). This feature allows you to provision user accounts with customized rules, tailoring access and roles based on specific needs. Keep in mind that this feature may involve complex configuration and setup, and it is recommended for organizations with advanced specific access management requirements.
+For information on how to set up and pass custom roles to Snyk using your identity provider (IdP) see [Custom mapping](../../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/).
 
