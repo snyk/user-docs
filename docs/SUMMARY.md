@@ -984,6 +984,7 @@
     * [Slack](snyk-api/reference/slack.md)
     * [Snapshots (v1)](snyk-api/reference/snapshots-v1.md)
     * [Targets](snyk-api/reference/targets.md)
+    * [Tenants](snyk-api/reference/tenants.md)
     * [Test (v1)](snyk-api/reference/test-v1.md)
     * [Universal Broker](snyk-api/reference/universal-broker.md)
     * [Users (v1)](snyk-api/reference/users-v1.md)
