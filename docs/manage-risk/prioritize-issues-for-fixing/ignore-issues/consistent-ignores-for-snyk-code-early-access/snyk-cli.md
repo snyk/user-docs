@@ -10,13 +10,9 @@ To ensure Consistent Ignores meets your needs and requirements, review the [FAQ]
 
 Ignores are taken into account in the Snyk CLI when `snyk code test` is run.
 
-{% hint style="danger" %}
-The Snyk Code CLI Upload beta feature (`snyk code test --report`) will not show ignored findings at the start of the Early Access program.
-{% endhint %}
-
 ## **Minimum version required**
 
-You must have at least Snyk CLI v1.1295.3 installed for Snyk Code Consistent Ignores. See [Install or update the Snyk CLI](../../../../snyk-cli/install-or-update-the-snyk-cli/).
+You must have at least Snyk CLI v1.1297.1 installed for Snyk Code Consistent Ignores. See [Install or update the Snyk CLI](../../../../snyk-cli/install-or-update-the-snyk-cli/).
 
 ## **Set up the Organization**
 

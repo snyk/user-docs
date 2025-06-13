@@ -16,10 +16,10 @@ Snyk Code Consistent Ignores works best with the latest IDE plugin versions.
 
 | IDE           | Minimum version required |
 | ------------- | ------------------------ |
-| VS Code       | 2.5.0                    |
-| IntelliJ      | 2.7.14                   |
-| Visual Studio | 2.0.0                    |
-| Eclipse       | 3.0.0                    |
+| VS Code       | 2.22.0                   |
+| IntelliJ      | 2.13.1                   |
+| Visual Studio | 2.2.1                    |
+| Eclipse       | v20250516.122216         |
 
 ## **Set up the Organization**
 

@@ -8,26 +8,6 @@ Snyk Code Consistent Ignores is in Early Access and available only with Enterpri
 
 This FAQ section addresses common concerns about the Snyk Code Consistent Identity Early Access program. You can share feedback about these items with your Snyk account team.&#x20;
 
-## Snyk Code CLI Upload&#x20;
-
-Snyk Code Consistent Ignores does not support ignores for Projects associated with CLI Upload.&#x20;
-
-If you activate a Snyk Organization with Snyk Code CLI Upload Projects, ignores for any subsequent scans using `snyk code test --report` are not taken into account. All resulting Projects and associated issues are shown as open. Additionally, any pre-existing [Project-scoped ignores will not be converted to asset-scoped ignores](convert-project-scoped-ignores-to-asset-scoped-ignores.md).&#x20;
-
-<figure><img src="../../../../.gitbook/assets/Ignored-issue-using-legacy-system.png" alt=""><figcaption><p>Snyk Code Consistent Ignores limitation in CLI upload</p></figcaption></figure>
-
-### Recommendation
-
-If you're using Snyk Code CLI Upload Projects, consider postponing Consistent Ignores enablement until these workflows are supported.
-
-If you want to try out Snyk Code Consistent Ignores, you can enable it for Organizations that do not have Snyk Code CLI Upload Projects.
-
-## Finding identifier added to Issues API and Reporting&#x20;
-
-There are no changes to the [Group](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org_id-/issues) and [Organization](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org_id-/issues) level Issues API endpoints or Reporting (issue reporting).
-
-An additional attribute containing the finding identifier will be added to these API endpoints and issue reports in the coming months. You can use this to assist you in converting from Project-scoped to asset-scoped ignores, especially at scale or if you have competing ignores across different Projects.
-
 ## Ignore limitations outside my Snyk Organization
 
 Ignores only work within the Organization where they're defined. You need to run tests in the Organization where you stored an ignore for it to be taken into account. This is also valid for Snyk IDE and CLI environments where developers work in repositories that span multiple Snyk organizations.
