@@ -34,6 +34,10 @@ Note that you can start the Broker client before the connection is integrated wi
 
 If you are adding a connection to a running Broker deployment, the Broker client might take up to two minutes to pick up the new connection.
 
+{% hint style="info" %}
+You can learn more about importing a code repository from an SCM into Snyk and creating connections, and more, with the [Universal Broker Snyk Learn ](https://learn.snyk.io/lesson/universal-broker/#3f799f7f-58a9-4225-53fb-9cc5b6913920)course.
+{% endhint %}
+
 ## Integrate a connection with an Organization
 
 After you have created at least one deployment and connection:
@@ -44,5 +48,3 @@ After you have created at least one deployment and connection:
 * Enter the Organization ID you want to integrate the connection with.
 
 The connection is now integrated with the Organization and ready to use.
-
-\

@@ -21,6 +21,10 @@ Organizations A, B, C, D, and E are integrated with the Universal Broker A deplo
 
 Organization F is integrated with Universal Broker B, and thus has access to Jira and the container registry agent.
 
+{% hint style="info" %}
+You can learn more about Universal Broker in the dedicated Snyk Learn course. Explore the advantages, configuration, architecture, and much more with [Snyk Learn: Universal Broker](https://learn.snyk.io/lesson/universal-broker/?ecosystem=general).
+{% endhint %}
+
 To get started with using Universal Broker, be sure you have met the [prerequisites](prerequisites-for-universal-broker.md) and follow the [basic steps to install and configure Universal Broker](basic-steps-to-install-and-configure-universal-broker.md).
 
 \

@@ -1,5 +1,9 @@
 # Deployment tips and reference architectures
 
+{% hint style="info" %}
+You can learn more about deployment and architecture, and more, with the [Universal Broker Snyk Learn ](https://learn.snyk.io/lesson/universal-broker/#3f799f7f-58a9-4225-53fb-9cc5b6913920)course.
+{% endhint %}
+
 The Universal Broker allows you to run multiple connections of any type using a single container. Snyk recommends running in High Availability Mode (on by default), to run multiple replicas.
 
 On Kubernetes systems, the Helm chart creates a stateful set with numerous members, automatically creating multiple replicas.

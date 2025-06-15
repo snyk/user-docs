@@ -1,5 +1,9 @@
 # Basic steps to install and configure Universal Broker
 
+{% hint style="info" %}
+You can learn more about Universal Broker in the dedicated Snyk Learn course. Explore the advantages, configuration, architecture, and much more with [Snyk Learn: Universal Broker](https://learn.snyk.io/lesson/universal-broker/?ecosystem=general).
+{% endhint %}
+
 Follow these steps to install and configure your Universal Broker using the `snyk-broker-config` CLI tool. The tool guides you through the steps and indicates important points in the workflows.
 
 ## Install the snyk-broker-config CLI tool
