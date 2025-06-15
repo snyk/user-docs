@@ -32,14 +32,6 @@ For more information on Snyk data processing and safeguards concerning Git repo 
 
 Repositories are cloned using HTTPS. SSH-based clones are unavailable.
 
-## Snyk Broker interactions
-
-Brokered connections are supported when Git operations are allowed through Broker.
-
-{% hint style="warning" %}
-This will override restrictions from `accept.json`. For more information, see [Clone an integration across your Snyk Organizations](../../../enterprise-setup/snyk-broker/classic-broker/clone-an-integration-across-your-snyk-organizations.md).
-{% endhint %}
-
 ## Manage Workspaces
 
 The Workspaces feature is managed through the **Integrations settings** page on the Group or Organization level. To do so, you must be a Snyk Group Admin or Snyk Organization Admin.
