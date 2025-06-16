@@ -1031,13 +1031,12 @@
         }
       },
       "OrgId": {
-        "description": "The unique identifier of the organization.",
+        "description": "Org ID",
         "in": "path",
         "name": "org_id",
         "required": true,
         "schema": {
-          "format": "uuid",
-          "type": "string"
+          "$ref": "#/components/schemas/Uuid"
         }
       },
       "OrgIdFilter": {
@@ -25540,7 +25539,6 @@
             "name": "version",
             "required": true,
             "schema": {
-              "default": "2023-08-31~beta",
               "type": "string"
             }
           }
@@ -45314,14 +45312,7 @@
         "operationId": "listBrokerConnectionsForOrg",
         "parameters": [
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/EndingBefore"
@@ -47699,14 +47690,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/StartingAfter"
@@ -47846,14 +47830,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           }
         ],
         "requestBody": {
@@ -47975,14 +47952,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -48056,14 +48026,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -48177,14 +48140,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -48309,14 +48265,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -48399,14 +48348,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -48586,14 +48528,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/CollectionId"
@@ -50013,7 +49948,14 @@
         "operationId": "deleteOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -50084,7 +50026,14 @@
         "operationId": "listOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -50180,7 +50129,14 @@
         "operationId": "updateOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -50280,7 +50236,14 @@
         "operationId": "createOrgAssignments",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -50354,7 +50317,14 @@
         "operationId": "getCatalogProgress",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -50445,7 +50415,14 @@
         "operationId": "getUsersProgress",
         "parameters": [
           {
-            "$ref": "#/components/parameters/OrgId"
+            "description": "The unique identifier of the organization.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/ApiVersion"
@@ -51141,7 +51118,7 @@
     },
     "/orgs/{org_id}/policies": {
       "get": {
-        "description": "Get all policies for the requested organisation.\n\n*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently\nrestricted via \"snykCodeConsistentIgnores\" feature flag and will result in a 403 Forbidden error\nwithout the flag enabled. Please contact your account representative for\neligibility requirements.\n\n#### Required permissions\n\n- `View Ignores (org.project.ignore.read)`",
+        "description": "Get all policies for the requested organisation.\n\n*Org level Policy APIs Access Notice:* Org level Policy APIs are only available \nfor use with Code Consistent Ignores. For information about how to enable Code Consistent Ignores \nsee [this](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access#enable-snyk-code-consistent-ignores) \ndocumentation.\n\n#### Required permissions\n\n- `View Ignores (org.project.ignore.read)`",
         "operationId": "getOrgPolicies",
         "parameters": [
           {
@@ -51166,14 +51143,7 @@
             "$ref": "#/components/parameters/OrderDirection"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/Review"
@@ -51285,21 +51255,14 @@
         "x-stability-level": "stable"
       },
       "post": {
-        "description": "Create a new org-level policy.\n\n*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently\nrestricted via \"snykCodeConsistentIgnores\" feature flag and will result in a 403 Forbidden error\nwithout the flag enabled. Please contact your account representative for\neligibility requirements.\n\n#### Required permissions\n\n- `Create Ignores (org.project.ignore.create)`",
+        "description": "Create a new org-level policy.\n\n*Org level Policy APIs Access Notice:* Org level Policy APIs are only available \nfor use with Code Consistent Ignores. For information about how to enable Code Consistent Ignores \nsee [this](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access#enable-snyk-code-consistent-ignores) \ndocumentation.\n\n#### Required permissions\n\n- `Create Ignores (org.project.ignore.create)`",
         "operationId": "createOrgPolicy",
         "parameters": [
           {
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           }
         ],
         "requestBody": {
@@ -51395,21 +51358,14 @@
     },
     "/orgs/{org_id}/policies/{policy_id}": {
       "delete": {
-        "description": "Delete an existing org-level policy.\n\n*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently\nrestricted via \"snykCodeConsistentIgnores\" feature flag and will result in a 403 Forbidden error\nwithout the flag enabled. Please contact your account representative for\neligibility requirements.\n\n#### Required permissions\n\n- `Remove Ignores (org.project.ignore.delete)`",
+        "description": "Delete an existing org-level policy.\n\n*Org level Policy APIs Access Notice:* Org level Policy APIs are only available \nfor use with Code Consistent Ignores. For information about how to enable Code Consistent Ignores \nsee [this](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access#enable-snyk-code-consistent-ignores) \ndocumentation.\n\n#### Required permissions\n\n- `Remove Ignores (org.project.ignore.delete)`",
         "operationId": "deleteOrgPolicy",
         "parameters": [
           {
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/PolicyId"
@@ -51449,21 +51405,14 @@
         "x-stability-level": "stable"
       },
       "get": {
-        "description": "Get a specific org-level policy based on its ID.\n\n*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently\nrestricted via \"snykCodeConsistentIgnores\" feature flag and will result in a 403 Forbidden error\nwithout the flag enabled. Please contact your account representative for\neligibility requirements.\n\n#### Required permissions\n\n- `View Ignores (org.project.ignore.read)`",
+        "description": "Get a specific org-level policy based on its ID.\n\n*Org level Policy APIs Access Notice:* Org level Policy APIs are only available \nfor use with Code Consistent Ignores. For information about how to enable Code Consistent Ignores \nsee [this](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access#enable-snyk-code-consistent-ignores) \ndocumentation.\n\n#### Required permissions\n\n- `View Ignores (org.project.ignore.read)`",
         "operationId": "getOrgPolicy",
         "parameters": [
           {
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/PolicyId"
@@ -51543,21 +51492,14 @@
         "x-stability-level": "stable"
       },
       "patch": {
-        "description": "Update the org-level policy. \n\n*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently\nrestricted via \"snykCodeConsistentIgnores\" feature flag and will result in a 403 Forbidden error\nwithout the flag enabled. Please contact your account representative for\neligibility requirements.\n\n#### Required permissions\n\n- `Edit Ignores (org.project.ignore.edit)`",
+        "description": "Update the org-level policy. \n\n*Org level Policy APIs Access Notice:* Org level Policy APIs are only available \nfor use with Code Consistent Ignores. For information about how to enable Code Consistent Ignores \nsee [this](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access#enable-snyk-code-consistent-ignores) \ndocumentation.\n\n#### Required permissions\n\n- `Edit Ignores (org.project.ignore.edit)`",
         "operationId": "updateOrgPolicy",
         "parameters": [
           {
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/PolicyId"
@@ -51672,14 +51614,7 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/PolicyId"
@@ -52762,14 +52697,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           }
         ],
         "requestBody": {
@@ -52907,14 +52835,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/JobId"
@@ -53047,14 +52968,7 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/JobId"
@@ -54422,14 +54336,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/BotId"
@@ -54500,14 +54407,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/BotId"
@@ -54597,14 +54497,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/BotId"
@@ -54718,14 +54611,7 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/BotId"
@@ -54805,14 +54691,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "description": "Project ID",
@@ -54893,14 +54772,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/BotId"
@@ -55010,14 +54882,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "description": "Project ID",
@@ -55141,14 +55006,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "description": "Tenant ID",
@@ -55254,14 +55112,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/ChannelId"
@@ -63433,14 +63284,7 @@
             "$ref": "#/components/parameters/ConnectionId"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "description": "The requested version of the endpoint to process the request",
@@ -64282,14 +64126,7 @@
             "$ref": "#/components/parameters/ConnectionId"
           },
           {
-            "description": "Org ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/OrgId"
           },
           {
             "$ref": "#/components/parameters/IntegrationId"
