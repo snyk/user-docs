@@ -83,7 +83,7 @@ redirects:
   manage-risk/insights/insights-setup/insights-setup-associating-snyk-open-source-code-and-container-projects: manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/prioritization-setup/prioritization-setup-associating-snyk-open-source-code-and-container-projects.md
   snyk-admin/groups-and-organizations/groups/use-group-level-options: snyk-admin/groups-and-organizations/groups/README.md
   scan-with-snyk/snyk-code/custom-rules/cwe-312-query-example: scan-with-snyk/snyk-code/snyk-code-custom-rules/create-query.md
-  snyk-admin/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-broker-token: enterprise-configuration/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md
+  snyk-admin/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-broker-token: enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md
   manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk: manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/README.md
   manage-risk/snyk-apprisk/risk-based-prioritization-for-snyk-apprisk/how-risk-based-prioritization-works: manage-risk/snyk-apprisk/prioritization-with-insights-for-snyk-apprisk/how-risk-based-prioritization-works.md
   scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers: scan-using-snyk/supported-languages-frameworks-and-feature-availability-overview/README.md
