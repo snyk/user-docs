@@ -79,7 +79,7 @@ A server that provides a mechanism to store and retrieve container images.
 
 The security controls associated with the asset. Navigate to the Snyk Essentials Controls section to see all available statuses for security controls.
 
-### **Coverage (Snyk Essentials)**
+### Coverage (Snyk Essentials)
 
 An assessment of whether applicable assets are scanned and tested by security tools (like Snyk Open Source, for instance), as it relates to an application security program. A type of policy that allows you to specify what controls should be applied and, optionally, how often it needs to be run.
 

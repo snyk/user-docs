@@ -49,7 +49,7 @@ The process to connect Snyk with your Azure repositories includes the following 
 3. [Select the Projects and repositories](azure-repositories-tfs.md#add-projects-to-snyk-for-azure-repos) you want to associate with Snyk for testing and monitoring.\
    You can also enter custom file locations for any manifest files that are not located in the root folders of your repositories.
 
-### **Configure a Personal Access Token (PAT)**
+### Configure a Personal Access Token (PAT)
 
 Generate and copy a unique PAT to use for Snyk. For more information on the PAT access scope requirements to enable in Azure, see [Azure Repositories (TFS) permission requirements](./#azure-repositories-tfs-permission-requirements).
 
