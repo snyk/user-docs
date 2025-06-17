@@ -56,7 +56,7 @@ The templates are abstract, pre-built constructs created to provide a quicker an
 
 The predicate is a symbolic representation of a relationship between objects or properties that evaluates true or false. Snyk provides an exhaustive list of predefined predicates.&#x20;
 
-For example, all cross-site scripting (XSS) sinks as `PRED:XssSink`. You can extend these or define your own. See [Query language](./#the-query-language).
+For example, all cross-site scripting (XSS) sinks as `PRED:XssSink`. You can extend these or define your own. See [Query language](./#query-language).
 
 <figure><img src="../../../.gitbook/assets/custom-templates-query-predicates.png" alt="Overview of Query Predicates."><figcaption><p>Query Predicates</p></figcaption></figure>
 
@@ -126,7 +126,7 @@ The number value 123 can be matched by using the query `"123"`. Quotes are used 
 
 To make sure that the correct, fully-qualified names of elements are used, the search interface provides autocompletion of the values for program elements that exist in the given code snippet or the provided repository.
 
-#### **Predicate (PRED)**&#x20;
+#### Predicate (PRED)&#x20;
 
 A predicate matches program elements based on some predefined condition. The main advantage of predicates is that you can use them to leverage the existing Snyk Code knowledge base. For example, if you need to find all program locations where an HTTP server handles cookies, you can use the predefined predicate `PRED:SourceCookie`.&#x20;
 

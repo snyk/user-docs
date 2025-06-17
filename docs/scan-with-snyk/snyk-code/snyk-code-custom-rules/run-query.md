@@ -24,7 +24,7 @@ Run queries against a repository from your Snyk Project list. The list contains 
     <figure><img src="../../../.gitbook/assets/writing_query (2) (1).gif" alt="Writing a query"><figcaption><p>Writing a query</p></figcaption></figure>
 7. Click **Run query**.
 8. [Analyze the query results](run-query.md#analyze-query-results).
-9. (Optional) [Save the custom rule you created](run-query.md#save-custom-rule).
+9. (Optional) [Save the custom rule you created](create-custom-rule.md).
 
 For more information, see [Query examples](create-query.md).
 
@@ -44,7 +44,7 @@ You can run queries only on certain languages in the code snippet area. See the 
 <figure><img src="../../../.gitbook/assets/custom-rules-run-query-on-a-code-snippet.png" alt="Running a query on a code snippet."><figcaption><p>Running a query on a code snippet</p></figcaption></figure>
 
 5. [Analyze the query results](run-query.md#analyze-query-results).
-6. (Optional) [Save the custom rule you created](run-query.md#save-custom-rule).
+6. (Optional) [Save the custom rule you created](create-custom-rule.md).
 
 ## Analyze query results
 

@@ -18,7 +18,7 @@ Follow these steps to set up Qodo for use with the Snyk MCP server.
 
 * The MCP Server name
 * The path to the Snyk CLI
-* The Snyk MCP command to [start the MCP server](../snyk-mcp-experimental/#starting-the-snyk-mcp-server).
+* The Snyk MCP command to [start the MCP server](../snyk-mcp-experimental/snyk-mcp-installation-configuration-and-startup.md#starting-the-snyk-mcp-server).
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-04-24 at 10.01.57.png" alt="" width="375"><figcaption><p>MCP server details</p></figcaption></figure>
 

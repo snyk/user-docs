@@ -9,14 +9,14 @@ You can enable the feature by using [Snyk Preview](../../snyk-admin/snyk-preview
 {% endhint %}
 
 {% hint style="info" %}
-While in Early Access, this feature potentially can cause scans to fail or produce different results. Snyk recommends gradually enabling this feature, for example, starting with a subset of your Organizations. For more information, see [Enterprise setup](https://docs.snyk.io/enterprise-configuration).
+While in Early Access, this feature potentially can cause scans to fail or produce different results. Snyk recommends gradually enabling this feature, for example, starting with a subset of your Organizations. For more information, see [Enterprise setup](../../enterprise-setup/).
 
 You can report issues by submitting a [support ticket](https://support.snyk.io).
 {% endhint %}
 
 ## Limitations of existing solution
 
-The existing .NET scanning solution for SCM integration in the Snyk Web UI and CLI uses two [different approaches](guidance-for-snyk-for-.net.md#dependency-analysis). The Dependency Analysis for SCM integrations can produce [false positives](guidance-for-snyk-for-.net.md#tackling-vulnerabilities-from-runtime-dependencies) that have no remediation available and must be manually ignored.
+The existing .NET scanning solution for SCM integration in the Snyk Web UI and CLI uses two [different approaches](guidance-for-snyk-for-.net.md#dependency-analysis). The Dependency Analysis for SCM integrations can produce [false positives](guidance-for-snyk-for-.net.md#build-time-versus-runtime-dependencies) that have no remediation available and must be manually ignored.
 
 If you use the CLI to scan Projects, you can expect more accurate results compared to importing the same Project using an SCM integration. You can [encounter errors](troubleshooting-snyk-for-.net.md) when scanning Projects that use specific .NET features.
 
@@ -56,7 +56,7 @@ For more information, see [Package repository integrations](../../scan-with-snyk
 ### Limitations on improved .NET scanning for SCM integrations
 
 * `Directory.Build.props` , `global.json` and other .NET-specific manifest files are supported, but the file names must use upper and lower case, as Microsoft [describes](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets).
-* For `global.json`, Snyk does not support all `major.minor.patch` versions that are currently supported by Microsoft, only a subset thereof. For more information, see this [error code](https://docs.snyk.io/scan-with-snyk/error-catalog#snyk-os-dotnet-0008).
+* For `global.json`, Snyk does not support all `major.minor.patch` versions that are currently supported by Microsoft, only a subset thereof. For more information, see this [error code](../../scan-with-snyk/error-catalog.md#snyk-os-dotnet-0008).
 * The operations are performed on a case-sensitive file system, meaning manifest definitions like your `<ProjectReference>`s strings must match files and folders with the same case.
 * Snyk does not support Projects that use Visual Studio Build Tools.
 * Snyk does not support Windows-specific frameworks (WPF, WCF) for .NET Projects.

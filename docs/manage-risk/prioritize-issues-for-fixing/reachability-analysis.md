@@ -49,7 +49,7 @@ Reachability analysis is supported in the following integrations:
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
 | [GitHub](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md)                                                                                           | General Availability |
 | [GitHub Enterprise](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/scripts-for-scm-contributors-count/github-enterprise/) | General Availability |
-| [GitHub Cloud App](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app)                                                           | General Availability |
+| [GitHub Cloud App](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app.md)                                                                       | General Availability |
 | [Bitbucket Cloud](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md)                                                                     | General Availability |
 | [Bitbucket Server](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)                                                           | General Availability |
 | [GitLab](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md)                                                                                           | General Availability |

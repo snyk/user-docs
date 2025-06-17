@@ -8,7 +8,7 @@ Fix security issues and quality flaws in the source code through an automated fl
 
 ## Why use Snyk Agent Fix?
 
-Snyk Agent Fix combines the power of a thorough program analysis engine with the abilities of an in-house deep-learning-based large language model. This combination allows for compiling large amounts of unstructured language information [from open-source code](fix-code-vulnerabilities-automatically.md#what-data-does-deepcode-ai-fix-suggestions-collect).
+Snyk Agent Fix combines the power of a thorough program analysis engine with the abilities of an in-house deep-learning-based large language model. This combination allows for compiling large amounts of unstructured language information [from open-source code](fix-code-vulnerabilities-automatically.md#what-data-does-snyk-agent-fix-collect).
 
 Key features set Snyk Agent Fix apart. It has a neural network trained on millions of lines of code, allowing for greater versatility and creativity. The [Snyk Code engine](../snyk-code-local-engine.md) rigorously checks the suggestions from the neural network, ensuring all automated fixes are small and targeted to each vulnerability or code issue.
 
@@ -59,7 +59,7 @@ A representation of information flow involved in fixing one issue is presented i
 ## Requirements for Snyk Agent Fix
 
 * [Snyk Code](../../../implement-snyk/enterprise-implementation-guide/trial-limitations.md) enabled
-* Snyk IDE Plugin for  [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview), [Visual Studio](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022), [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations), or [JetBrains IDEs](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin)
+* Snyk IDE Plugin for  [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview), [Visual Studio](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022), [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations), or [JetBrains IDEs](../../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/)
 
 ## Enable Snyk Agent Fix
 

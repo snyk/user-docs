@@ -30,7 +30,7 @@ Snyk may fail to complete testing after you rename a repository, depending on wh
 
 **Before renaming**
 
-[Convert all ignores](./#convert-project-scoped-ignores-to-asset-scoped-ignores) to apply to the entire repository (consistent ignores).
+[Convert all ignores](convert-project-scoped-ignores-to-asset-scoped-ignores.md) to apply to the entire repository (consistent ignores).
 
 **After renaming**
 

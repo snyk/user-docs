@@ -391,7 +391,7 @@ An applicable test is a test that did not fail due to technical issues or a non-
 
 Having a low success rate can indicate that:
 
-* Snyk tests are failing due to security issues that can be prevented in local development or in the PR Check stages. Snyk recommends testing with the [Snyk IDE](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions) plugin, using [Snyk PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) and enroll in a [Snyk Learn](https://docs.snyk.io/getting-started/snyk-learn) program.
+* Snyk tests are failing due to security issues that can be prevented in local development or in the PR Check stages. Snyk recommends testing with the [Snyk IDE](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/) plugin, using [Snyk PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) and enroll in a [Snyk Learn](../../snyk-learn/) program.
 * The test success criteria are too strict. To explore this option further, Snyk recommends reviewing the test definitions of the organizations with the lowest success rate, as shown by the Adoption by Organizations widget. For more details about defining test success criteria, navigate to the [Failing of builds in Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md) page.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (717).png" alt=""><figcaption><p>Test Success Rate Trend</p></figcaption></figure>

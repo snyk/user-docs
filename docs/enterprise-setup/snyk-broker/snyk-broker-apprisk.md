@@ -22,7 +22,7 @@ The specific information you need to integrate Snyk AppRisk with Snyk Broker dep
 ### Prerequisite for using Snyk AppRisk with Universal Broker
 
 * Required: The identifier for your connection specific to your Universal Broker setup.
-* How to obtain it: You can find this identifier by referring to the [Validate your deployment (optional)](universal-broker/basic-steps-to-install-and-configure-universal-broker.md#validate-your-deployment-optional) section within the [Basic steps to install and configure Universal Broker](universal-broker/basic-steps-to-install-and-configure-universal-broker.md) documentation.
+* How to obtain it: You can find this identifier by referring to the [Validate your deployment (optional)](universal-broker/basic-steps-to-install-and-configure-universal-broker.md#validate-your-connection-optional) section within the [Basic steps to install and configure Universal Broker](universal-broker/basic-steps-to-install-and-configure-universal-broker.md) documentation.
 
 ### Final step in integration for both Broker types
 

@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-The Google Cloud Security Command Center integration is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access), and is available only with Snyk Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
+The Google Cloud Security Command Center integration is in [Early Access](../../getting-started/snyk-release-process.md#early-access-features), and is available only with Snyk Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 The Google Cloud Security Command Center (SCC) integration sends Snyk issues to SCC, enabling you to view and manage Snyk issues alongside cloud security findings from Google Cloud in a single viewpoint. Snyk issues are represented in SCC as code security findings. When Snyk issues are updated, corresponding SCC findings are automatically updated as well. All details are available at the Organization level in the Google Cloud Security Command Center (SCC) integration.
@@ -21,7 +21,7 @@ Service Accounts are not available at the Organization level in Google Cloud IAM
 
 ## Prerequisites
 
-* **Snyk:** A Snyk user account with [permissions](https://docs.snyk.io/admin/user-roles/user-role-management) to edit and view Group integrations
+* **Snyk:** A Snyk user account with [permissions](../../snyk-admin/user-roles/user-role-management.md) to edit and view Group integrations
 * **Google** **Cloud:** A Google Cloud organization with Security Command Center enabled. See the Google Cloud [Activate Security Command Center](https://cloud.google.com/security-command-center/docs/activate-scc-for-an-organization) page for more details on how to enable it.
 * **Google SCC API**: You must [enable the SCC API](https://console.cloud.google.com/apis/library) in the same Project as the Service Account
 

@@ -4,7 +4,7 @@
 
 * [`Directory.Build.props`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) and [`Directory.Build.targets`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) are not supported for SCM integration. You can scan private dependencies using central package management with the Snyk CLI. You must run `dotnet restore` and then run `snyk test` with `--all-projects`, as each sub-folder will contain its own `project.assets.json` file.
 * `<ProjectReference>`elements are not supported.
-* Private dependency scanning is supported for SCM integrations by enabling improved .NET scanning for your Organization or Group through the [Snyk Preview](https://docs.snyk.io/snyk-admin/snyk-preview) menu. Navigate to the [Improved .NET scanning](improved-.net-scanning.md) page for more details. You can also scan private dependencies using the Snyk CLI
+* Private dependency scanning is supported for SCM integrations by enabling improved .NET scanning for your Organization or Group through the [Snyk Preview](../../snyk-admin/snyk-preview.md) menu. Navigate to the [Improved .NET scanning](improved-.net-scanning.md) page for more details. You can also scan private dependencies using the Snyk CLI
 
 If you need help, [contact Snyk Support](https://support.snyk.io).
 

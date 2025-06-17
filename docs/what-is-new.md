@@ -104,7 +104,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk Code**
 
 * The Generated Pull Requests report is now available in Early Access. This report provides an overview of how Fix, Backlog, and Upgrade PRs are used and highlights the efficiency of PR merges.
-* [The Pull Request Experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md) now supports GitLab and Azure Repos SCM integrations, with a few [limitations](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md#gitlab-and-azure-repos).
+* [The Pull Request Experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md) now supports GitLab and Azure Repos SCM integrations, with a few [limitations](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md#inline-comments).
 * New Snyk Code filters and columns were added to [Snyk Reports](manage-risk/reporting/issue-columns-dictionary.md#issue-characteristics) and [Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary.md): File Path,  Code Region, and Asset Finding ID.
 * Snyk Code now supports [Rust](supported-languages-package-managers-and-frameworks/rust.md) and [Groovy](supported-languages-package-managers-and-frameworks/groovy.md) available in Early Access and accessible from Snyk Preview.
 
@@ -159,7 +159,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Other updates**
 
-* [Snyk Admin](snyk-admin/) pages have been updated to reflect the addition of [Tenants](https://docs.snyk.io/snyk-admin/groups-and-organizations/tenant) in the Snyk hierarchy, including a new infographic to illustrate the Tenant position in the [hierarchy](https://docs.snyk.io/snyk-admin/groups-and-organizations#the-snyk-hierarchy).
+* [Snyk Admin](snyk-admin/) pages have been updated to reflect the addition of [Tenants](snyk-admin/tenant-groups-and-organizations/tenant/) in the Snyk hierarchy, including a new infographic to illustrate the Tenant position in the [hierarchy](snyk-admin/groups-and-organizations/#the-snyk-hierarchy).
 
 ## November 2024
 
@@ -175,7 +175,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk Integrations**
 
-* The GitLab page has been updated to state that for the Snyk AppRisk level integration [PAT creation](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab#gitlab-access-tokens), the user generating the GitLab group requires a minimum GitLab permission level of Guest.
+* The GitLab page has been updated to state that for the Snyk AppRisk level integration [PAT creation](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md#gitlab-access-tokens), the user generating the GitLab group requires a minimum GitLab permission level of Guest.
 
 ### **Other updates**
 
@@ -198,7 +198,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 * [Risk factors on assets](manage-assets/assets-inventory-components.md#risk-factors) is now in [EA](getting-started/snyk-release-process.md#early-access) for Snyk AppRisk customers.
 * [Asset inventory components](manage-assets/assets-inventory-components.md#clusters) has been updated to include details on clusters.
-* Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](enterprise-setup/snyk-broker/snyk-broker-apprisk.md#sonarqube-sast-integration).
+* Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sonarqube-setup-guide).
 
 ### **Snyk CLI and IDEs**
 
@@ -326,7 +326,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 * **Snyk Reports:** The [issue column dictionary](manage-risk/reporting/issue-columns-dictionary.md#issue-vulnerability-details) includes new filters and columns for Jira (JIRA ISSUES LIST, LATEST JIRA ISSUE) and EPSS (EPSS SCORE, EPSS PERCENTILE). This allows you to manage your work with Jira and to include EPSS in your prioritization steps.
 * **Snyk Security:** Snyk has improved the prioritization workflow and risk assessment by adopting [CVSS V4.0](manage-risk/prioritize-issues-for-fixing/severity-levels.md#severity-levels-and-cvss) as the default evaluation for new vulnerabilities.
-* **Fix code vulnerabilities automatically:** [DeepCode AI Fix](scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md#deepcode-ai-fix-language-support) is now available in AWS Environments and JetBrains IDEs. If you use AWS multi-tenant environments, turn on the Snyk Preview [Snyk Code Fix Suggestions](scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md#enable-deepcode-ai-fix) and retest with Snyk in your IDE.
+* **Fix code vulnerabilities automatically:** [DeepCode AI Fix](scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md#snyk-agent-fix-language-support) is now available in AWS Environments and JetBrains IDEs. If you use AWS multi-tenant environments, turn on the Snyk Preview [Snyk Code Fix Suggestions](scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md#enable-snyk-agent-fix) and retest with Snyk in your IDE.
 
 
 

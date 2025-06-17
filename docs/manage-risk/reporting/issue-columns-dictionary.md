@@ -23,7 +23,7 @@ Describes the main attributes of the issue.
   * **Baseline Issue** - Issues identified right after the Project began to be monitored.
   * **Preventable Issue** - Issues for which Snyk published the related problem at least seven days before detection.
   * **Non Preventable Issue** - Issues that were created due to external factors such as a new vulnerability being published.
-  * **Other New Issue** - Issues for which Snyk cannot classify their preventability. For details, see [Delineation of how risk is introduced](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/~/changes/9357/manage-risk/analytics/issues-analytics#delineation-of-how-risk-is-introduced).
+  * **Other New Issue** - Issues for which Snyk cannot classify their preventability. For details, see [Delineation of how risk is introduced](../analytics/issues-analytics.md#delineation-of-how-risk-is-introduced).
 * **ISSUE** - A combination of:
   * **Problem Title**: Snyk vulnerability name.
   * **Issue Type:** indicates whether the issue is related to a vulnerability, license, or configuration.

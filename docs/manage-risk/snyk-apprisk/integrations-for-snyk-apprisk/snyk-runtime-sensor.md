@@ -8,7 +8,7 @@ The Snyk Runtime Sensor for Snyk AppRisk is in Early Access, and is available on
 
 The Snyk Runtime Sensor is a [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) that watches your deployments on a Kubernetes cluster and sends the collected data to Snyk.
 
-The following [risk factors](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) are reported from the Snyk Runtime Sensor: [Deployed](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed) and [Loaded package](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package).
+The following [risk factors](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/#risk-factors) are reported from the Snyk Runtime Sensor: [Deployed](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md) and [Loaded package](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
 
 {% hint style="info" %}
 * The Snyk Runtime Sensor reports the Loaded package risk factor only for application packages. The following ecosystems are supported:
@@ -55,7 +55,7 @@ Managed Kubernetes services, such as EKS Fargate or GKE Autopilot, are not suppo
 If you encounter network restrictions, ensure that port 443 is enabled and that the policy is stateful.
 {% endhint %}
 
-You also need a token for a [service account](https://docs.snyk.io/snyk-admin/service-accounts). The service account must have one of the following roles:
+You also need a token for a [service account](../../../enterprise-setup/service-accounts/). The service account must have one of the following roles:
 
 * Group Admin
 * Custom Group Level Role with `AppRisk edit` permission enabled.

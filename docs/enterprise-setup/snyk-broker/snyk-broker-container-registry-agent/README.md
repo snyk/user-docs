@@ -76,9 +76,9 @@ The system and software requirements to set up and run the Snyk Broker Container
 With the listed configuration of 1 vCPU and 2GB RAM, scanning capacity would be approximately 160 images of \~350MB each in one run. You can scale this up based on your image sizes. If you have a specific use case that does not allow scaling and does not fit the limitations, contact [Snyk Support](https://support.snyk.io).
 {% endhint %}
 
-## **Set up the remote connection for Container Registry Agent using Docker**
+## Set up the remote connection for Container Registry Agent using Docker
 
-### **Configuring and running the Broker Client for Container Registry Agent**
+### Configuring and running the Broker Client for Container Registry Agent
 
 To use the Broker Client with a Container Registry Agent deployment, run `docker pull snyk/broker:container-registry-agent` if you have not already done so as a [prerequisite](./#prerequisites-for-container-registry-agent).
 

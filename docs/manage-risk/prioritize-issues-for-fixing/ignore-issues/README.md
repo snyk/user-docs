@@ -118,7 +118,7 @@ ignore:
 ```
 
 {% hint style="info" %}
-For more information, see [The .snyk file](../../policies/the-.snyk-file.md), including the section about [.snyk files in monorepos](../../policies/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
+For more information, see [The .snyk file](../../policies/the-.snyk-file.md), including the section about [.snyk files in monorepos](../../policies/the-.snyk-file.md#use-the-.snyk-file-with-monorepos-and-complex-projects) and .[snyk files in different directories from manifest files](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
 {% endhint %}
 
 ### Use policy actions to ignore issues

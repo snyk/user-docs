@@ -48,4 +48,4 @@ See [IaC exclusions using the command line](../../../snyk-cli/scan-and-maintain-
 
 Why do ignores in the `.snyk` file in the root directory of my monorepo apply to all Projects when I scan with the CLI but not when I import using my SCM?
 
-For SCM scanning, the `.snyk` file must be present in each relevant subdirectory. See [Monorepos and complex Project considerations](../../policies/the-.snyk-file.md#monorepos-and-complex-project-considerations) with the `.snyk` file.\
+For SCM scanning, the `.snyk` file must be present in each relevant subdirectory. See [Monorepos and complex Project considerations](../../policies/the-.snyk-file.md#use-the-.snyk-file-with-monorepos-and-complex-projects) with the `.snyk` file.\

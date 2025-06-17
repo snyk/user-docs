@@ -64,7 +64,7 @@ Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-integrations/
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
-When setting up a Snyk Broker, there are some questions you need to ask regarding either standing up a new broker or updating an existing [Snyk broker connection](https://docs.snyk.io/enterprise-setup/snyk-broker):
+When setting up a Snyk Broker, there are some questions you need to ask regarding either standing up a new broker or updating an existing [Snyk broker connection](../../../enterprise-setup/snyk-broker/):
 
 * Are you hitting any API Rate Limit issues?
 * Do you need to update the SCM token to a user that has access to all relevant SCM repositories?

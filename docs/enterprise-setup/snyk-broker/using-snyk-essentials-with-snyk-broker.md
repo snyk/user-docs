@@ -10,7 +10,7 @@ To use the features of Snyk Essentials with repositories that are not publicly a
 
 To integrate Snyk Essentials with the Classic Snyk Broker, you need your Snyk Broker token. The Snyk support team can provide the needed token, or you can generate it yourself by following the instructions to [Obtain your Broker token from the Web UI](classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-from-the-web-ui).
 
-To integrate Snyk Essentials with the Universal Broker, you need the identifier for your connection. You can see how to retrieve this in the [Basic steps to install and configure Universal Broker, Validate your deployment (optional)](universal-broker/basic-steps-to-install-and-configure-universal-broker.md#validate-your-deployment-optional).
+To integrate Snyk Essentials with the Universal Broker, you need the identifier for your connection. You can see how to retrieve this in the [Basic steps to install and configure Universal Broker, Validate your deployment (optional)](universal-broker/basic-steps-to-install-and-configure-universal-broker.md#validate-your-connection-optional).
 
 When you have generated your Broker token or found the identifier for your connection, copy the value and paste it into the Broker token field for your Snyk Essentials integration.
 

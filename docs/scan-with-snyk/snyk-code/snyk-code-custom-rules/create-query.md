@@ -123,7 +123,7 @@ There is nothing language-specific in the query. It would work on similar code i
 
 Create a new rule because Snyk is not aware of the proprietary source built in-house, resulting in missed findings.
 
-Use a data flow [template](templates-and-predicates.md) known as `Taint` when [creating a data flow query](run-query.md#run-query-on-a-repository).&#x20;
+Use a data flow [template](templates-and-predicates.md) known as `Taint` when [creating a data flow query](run-query.md#run-a-query-on-a-repository).&#x20;
 
 ```javascript
 Taint<PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>

@@ -49,23 +49,23 @@ The provisioning app is only accessible through a unique link, all other access 
 
 ### Step 1: Enter the company name
 
-The company name you enter here will be used to create the [Tenant](https://docs.snyk.io/snyk-admin/groups-and-organizations/tenant), the top-level instance you'll see in the Snyk Platform. It is a required field and has 60-character limit.
+The company name you enter here will be used to create the [Tenant](../snyk-admin/tenant-groups-and-organizations/tenant/), the top-level instance you'll see in the Snyk Platform. It is a required field and has 60-character limit.
 
-Provisioning will also create a [Group](https://docs.snyk.io/snyk-admin/groups-and-organizations/groups) and a default [Organization](https://docs.snyk.io/snyk-admin/groups-and-organizations/organizations) using the same name.
+Provisioning will also create a [Group](../snyk-admin/groups-and-organizations/groups/) and a default [Organization](../snyk-admin/groups-and-organizations/organizations/) using the same name.
 
 ### Step 2: Choose where to host the account
 
 <div align="center" data-full-width="false"><figure><img src="../.gitbook/assets/Screenshot 2025-01-29 at 16.54.30.png" alt="Available hosting regions" width="375"><figcaption><p>Available hosting regions</p></figcaption></figure></div>
 
-Snyk offers [regional hosting](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency) to comply with regional data protection laws and improve service performance. This ensures data residency requirements are met and reduces data latency.
+Snyk offers [regional hosting](../working-with-snyk/regional-hosting-and-data-residency.md) to comply with regional data protection laws and improve service performance. This ensures data residency requirements are met and reduces data latency.
 
-Provisioning is currently enabled for these [three regions](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#available-snyk-regions). Each of these regions is running at least one instance of the Snyk Platform:
+Provisioning is currently enabled for these [three regions](../working-with-snyk/regional-hosting-and-data-residency.md#available-snyk-regions). Each of these regions is running at least one instance of the Snyk Platform:
 
 * :flag\_us: **United States**: SNYK-US-01, SNYK-US-02
 * :flag\_eu: **Europe**: SNYK-EU-01
 * :flag\_au: **Australia**: SNYK-AU-01
 
-In the case of [multiple instances](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#regional-multi-and-single-tenant-hosting) being available in a chosen region (United States), Snyk reserves the right to chose the specific instance where your account will be created. For more information see [Regional Hosting and data residency](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency).
+In the case of [multiple instances](../working-with-snyk/regional-hosting-and-data-residency.md#regional-multi-and-single-tenant-hosting) being available in a chosen region (United States), Snyk reserves the right to chose the specific instance where your account will be created. For more information see [Regional Hosting and data residency](../working-with-snyk/regional-hosting-and-data-residency.md).
 
 {% hint style="warning" %}
 Automated provisioning is only possible for multi-tenant environments. For single-tenant availability (Snyk Private Cloud), reach out to your account team in advance of provisioning.
@@ -77,8 +77,8 @@ Automated provisioning is only possible for multi-tenant environments. For singl
 
 The available authentication methods are either Single sign-on (SSO) or Third-party authentication.
 
-1. **Single Sign-On** - use your company's existing identity management system, see [Single Sign-On (SSO) for authentication to Snyk](https://docs.snyk.io/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk) for more details.
-2. **Third-party authentication** - we support a list of third-party identity providers, see [Authentication for third-party tools](https://docs.snyk.io/enterprise-setup/authentication-for-third-party-tools) for more details. This method is only available for the United States region.
+1. **Single Sign-On** - use your company's existing identity management system, see [Single Sign-On (SSO) for authentication to Snyk](single-sign-on-sso-for-authentication-to-snyk/) for more details.
+2. **Third-party authentication** - we support a list of third-party identity providers, see [Authentication for third-party tools](authentication-for-third-party-tools.md) for more details. This method is only available for the United States region.
 
 #### Which authentication methods are available for each region?
 
@@ -123,7 +123,7 @@ Clicking the sign-up link in your welcome email will take you to the log in page
 
 If you have a user account connected through a third-party provider, you will need to use SNYK-US-01
 
-You can find the links for all the regions in the [Login and Web UI URLs section](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#login-and-web-ui-urls).
+You can find the links for all the regions in the [Login and Web UI URLs section](../working-with-snyk/regional-hosting-and-data-residency.md#login-and-web-ui-urls).
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-01-30 at 15.11.52.png" alt="Log in page on provision.snyk.io"><figcaption><p>Log in page on provision.snyk.io</p></figcaption></figure>
 
@@ -133,9 +133,9 @@ You can find the links for all the regions in the [Login and Web UI URLs section
 
 If you already have a Snyk User, you can choose how you activate your Enterprise plan or Pilot after logging in:
 
-* Linking the plan to an existing [Tenant](https://docs.snyk.io/snyk-admin/groups-and-organizations/tenant).\
+* Linking the plan to an existing [Tenant](../snyk-admin/tenant-groups-and-organizations/tenant/).\
   If your user is a member of multiple Tenants, you have the option to choose between them. Click the card of the Tenant you wish to select and then click "Confirm and activate".
-* Starting fresh with a new [Tenant](https://docs.snyk.io/snyk-admin/groups-and-organizations/tenant) linked to your user.\
+* Starting fresh with a new [Tenant](../snyk-admin/tenant-groups-and-organizations/tenant/) linked to your user.\
   Click "Create new Tenant account" and enter the company name. It's the same field as [#step-1-enter-the-company-name](auto-provisioning-guide.md#step-1-enter-the-company-name "mention") of signing up. You will be asked to confirm the name you entered before starting the provisioning process.
 
 ### **Step 3: Access the Snyk Platform**

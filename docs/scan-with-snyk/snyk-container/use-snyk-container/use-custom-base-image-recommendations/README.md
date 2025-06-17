@@ -16,7 +16,7 @@ The Custom Base Image Recommendation feature (CBIR) allows Snyk to recommend an 
 \
 Snyk does not use the vulnerability data in order to detemine which version to display. All versions in the pool of images to recommend that are considered upgrades to the current image are offered. This provides users with the most control over what images to recommend and which not.\
 \
-You can remove images that must not be recommended by disabling the **Include in recommendations** option. For more information, see [Mark the created Project as a custom base image](https://docs.snyk.io/scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations#mark-the-created-project-as-a-custom-base-image).
+You can remove images that must not be recommended by disabling the **Include in recommendations** option. For more information, see [Mark the created Project as a custom base image](./#mark-the-created-project-as-a-custom-base-image).
 
 ## How CBIR works
 

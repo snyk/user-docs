@@ -109,7 +109,7 @@ The following shows examples of high-level and low-level severity in a file:
 
 ## Output test results
 
-You can output the `snyk code test` results to [JSON](view-snyk-code-cli-results.md#output-test-results-in-json-format) or [SARIF](view-snyk-code-cli-results.md#output-test-results-in-sarif-format) format in the terminal instead of displaying the results in the Snyk CLI format.
+You can output the `snyk code test` results to JSON or SARIF format in the terminal instead of displaying the results in the Snyk CLI format.
 
 You can also [export the test results to a JSON or SARIF format file](view-snyk-code-cli-results.md#export-test-results). SARIF is an open standard for the output of static analysis tools. For more information, see the [SARIF site](https://sarifweb.azurewebsites.net/).&#x20;
 

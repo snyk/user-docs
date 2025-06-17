@@ -148,7 +148,7 @@ Scan all workspaces projects in the current directory and five sub-directories d
 snyk test --all-projects --strict-out-of-sync=false --detection-depth=6 
 ```
 
-Use a common `.snyk` policy file, if you maintain ignores and patches in one place to be applied for all detected workspaces by using the policy path. For details about this file, see [The .snyk file](https://docs.snyk.io/manage-risk/policies/the-.snyk-file).
+Use a common `.snyk` policy file, if you maintain ignores and patches in one place to be applied for all detected workspaces by using the policy path. For details about this file, see [The .snyk file](../../manage-risk/policies/the-.snyk-file.md).
 
 ```bash
 snyk test --all-projects --strict-out-of-sync=false --policy-path=src/.snyk
