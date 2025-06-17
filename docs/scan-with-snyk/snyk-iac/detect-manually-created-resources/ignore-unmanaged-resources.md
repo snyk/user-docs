@@ -1,6 +1,6 @@
-# Ignore resources for drift
+# Ignore unmanaged resources
 
-The `.snyk` policy file can be used to exclude resources from being considered IaC drift by `snyk iac describe`. See [the `.snyk` policy file doc](../../../manage-risk/policies/the-.snyk-file.md) for general information.
+The `.snyk` policy file can be used to exclude unmanaged resources from being detected by `snyk iac describe`. See [the `.snyk` policy file doc](../../../manage-risk/policies/the-.snyk-file.md) for general information.
 
 If you need to exclude only a set of resources, use `.snyk`. If you have more complex requirements, consider using filter rules. For more information see [Filter rules](filter-rules.md).
 
@@ -25,7 +25,7 @@ exclude:
 ```
 {% endcode %}
 
-Ignore all S3 buckets drifts.
+Ignore all unmanaged resource in S3 buckets.
 
 {% code title=".snyk" %}
 ```yaml
@@ -50,7 +50,7 @@ exclude:
 ```
 {% endcode %}
 
-Ignore a specific IAM Policy Attachment (AWSServiceRoleForRDS) using its ARN (arn:aws:iam::aws:policy/aws-service-role/AmazonRDSServiceRolePolicy).
+Ignore a specific IAM Policy Attachment (AWSServiceRoleForRDS) using its ARN (`arn:aws:iam::aws:policy/aws-service-role/AmazonRDSServiceRolePolicy`).
 
 {% code title=".snyk" %}
 ```yaml
@@ -62,7 +62,7 @@ exclude:
 ```
 {% endcode %}
 
-Ignore the S3 bucket called my-bucket and so on, as shown.
+Ignore the S3 bucket called `my-bucket` and so on, as shown.
 
 ```
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
@@ -87,9 +87,9 @@ You can use the means to ignore resources explained on this page in combination 
 
 **Note:** If the same resource is included by a filter rule and excluded inside the `.snyk` file, `snyk iac describe` ignores this resource.
 
-## Automatically generate drift exclusion rules[​](https://docs.driftctl.com/0.22.0/usage/filtering/driftignore#automatically-generate-a-driftignore-file) <a href="#automatically-generate-a-driftignore-file" id="automatically-generate-a-driftignore-file"></a>
+## Automatically generate unmanaged resource exclusion rules[​](https://docs.driftctl.com/0.22.0/usage/filtering/driftignore#automatically-generate-a-driftignore-file) <a href="#automatically-generate-a-driftignore-file" id="automatically-generate-a-driftignore-file"></a>
 
-For details, run`snyk iac update-exclude-policy --help.`
+For details, run `snyk iac update-exclude-policy --help` .
 
 This command helps to generate a `.snyk` policy file, adding all the detected drifts to it in order to ignore them all.
 

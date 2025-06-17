@@ -28,9 +28,9 @@ You can use the [`/cloud/resources`](https://apidocs.snyk.io/?version=2023-05-29
 
 For a list of supported resource types for cloud environments, see the following:
 
-* [Supported AWS resources](../detect-drift-and-manually-created-resources/supported-resources/aws-resources.md)
-* [Supported Azure resources](../detect-drift-and-manually-created-resources/supported-resources/azure-resources.md)
-* [Supported Google resources](../detect-drift-and-manually-created-resources/supported-resources/google-resources.md)
+* [Supported AWS resources](../detect-manually-created-resources/supported-resources/aws-resources.md)
+* [Supported Azure resources](../detect-manually-created-resources/supported-resources/azure-resources.md)
+* [Supported Google resources](../detect-manually-created-resources/supported-resources/google-resources.md)
 
 ## Rules
 

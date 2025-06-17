@@ -38,7 +38,7 @@ These commands test and continuously monitor container images for vulnerabilitie
 
 ### [`snyk iac`](iac.md)
 
-These commands find and report security issues in Infrastructure as Code files; detect, track, and alert on infrastructure drift and unmanaged resources; and create a .driftigore file.
+These commands find and report security issues in Infrastructure as Code files; detect, track, and alert on unmanaged resources; and create a .driftignore file.
 
 ### [`snyk code`](code.md)
 

@@ -1,6 +1,6 @@
 # Google resources
 
-Snyk IaC drift scanning supports the following resources for Google:
+Snyk IaC unmanaged resource scanning supports the following resources for Google:
 
 | **Resource**                              |
 | ----------------------------------------- |

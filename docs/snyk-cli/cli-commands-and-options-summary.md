@@ -74,7 +74,7 @@ Test for any known security issue.
 
 ### [`snyk iac describe`](commands/iac-describe.md)
 
-Detect, track, and alert on infrastructure drift and unmanaged resources.
+Detect, track, and alert on unmanaged resources.
 
 ### [`snyk iac update-exclude-policy`](commands/iac-update-exclude-policy.md)
 

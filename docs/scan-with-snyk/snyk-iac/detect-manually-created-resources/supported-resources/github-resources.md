@@ -1,6 +1,6 @@
 # GitHub resources
 
-Snyk IaC drift scanning supports the following resources for GitHub:
+Snyk IaC unmanaged resource scanning supports the following resources for GitHub:
 
 | **Resource**               |
 | -------------------------- |
