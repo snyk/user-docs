@@ -41,9 +41,9 @@ You can then set up the integration in Snyk using the Snyk Web UI or REST API.
 * **Source ID** (Finding Source Name) - Identifies the name of the organization source. The Google organization ID is parsed automatically from this field.
 * **JSON Service Account Key File** - Authenticates with Google Cloud.
 
-### **Integration Hub setup**
+### **Integration setup**
 
-* Open the Integration Hub menu.
+* In the Snyk Web UI, at the Group level, navigate to Integrations > Add integration.
 * Select the Issue Forwarding tag and search for Google SCC.
 * Click the Add button.
 * Add the Profile name for this integration.
@@ -53,4 +53,4 @@ You can then set up the integration in Snyk using the Snyk Web UI or REST API.
 * Click the Done button.
 * When the connection is established, the Google SCC integration status changes to Connected.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfwL5JQFYq5FIQRMZxTHZYswjUr3cj-9Yb7W-fnAU25J8T8-u3jGH81ZUSTtMyUtLchzHMCCshP_5_5B3q3drJ_6sZlM1gdttTw8nDtVVuyn4Y-LDA2oqtffWCswFPqy0RyfSzQew?key=9J3dV91yICcvUevnOqzNv8VZ" alt=""><figcaption><p>Google SCC - Setup screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/scc-integration.png" alt=""><figcaption><p>Google SCC - Setup screen</p></figcaption></figure>
