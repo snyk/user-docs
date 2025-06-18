@@ -6,6 +6,7 @@ The following features are part of the Pull Request Experience:
 
 * [Issue Summary Comment](pull-request-experience.md#issue-summary-comment)
 * [Inline Comments](pull-request-experience.md#inline-comments)
+* [Snyk Agent Fix in the PR](pull-request-experience.md#snyk-agent-fix-in-the-pr)
 
 ## Prerequisites for the Snyk Pull Request Experience
 
@@ -53,6 +54,33 @@ For Brokered integrations, the Data Flow section in the inline comments is avail
 
 <figure><img src="../../../.gitbook/assets/inline_comment_feature.png" alt=""><figcaption><p>Inline Comment feature for Pull Request Experience</p></figcaption></figure>
 
+## Snyk Agent Fix in the PR
+
+{% hint style="info" %}
+**Release status**
+
+Snyk Agent Fix in the PR is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access)  and available only for GitHub Integrations.
+{% endhint %}
+
+The Snyk Agent Fix in the PR feature enables the user to request and apply fixes for vulnerabilities identified by the Snyk Code Pull Request Check and posted as inline comments. By enabling this feature, the user is able to interact with inline comments in the following way:&#x20;
+
+* Request an initial fix by replying to an inline comment using the `@snyk /fix` command.
+
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption><p>Inline Comments with Snyk Agent Fix enabled</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption><p>Request a fix by replying to the inline comment</p></figcaption></figure>
+
+* Request a different suggestion by replying with the `@snyk /fix` command to a previously generated fix. Snyk Agent Fix can generate up to five potential fixes, depending on the issue type.
+* Apply a specific fix by using the `@snyk /apply #` command, where # is the number of the suggestion the user wishes to apply. A commit is created by Snyk on the PR branch, containing the selected fix.
+
+#### Notes
+
+* The `@snyk /fix` command can be used only for automatically fixable vulnerabilities, identified in the inline comments with a zap icon and command description. See  [fix-code-vulnerabilities-automatically.md](../../snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md "mention") for supported languages and limitations.
+* Fixes expire after the time displayed in each suggestion, in accordance with the [#cache-retention-period-related-to-vulnerability-source-data](../../../working-with-snyk/how-snyk-handles-your-data.md#cache-retention-period-related-to-vulnerability-source-data "mention"). After expiration, a new fix can be requested by using the `@snyk /fix` command.
+* Snyk Agent Fix in the PR is not supported for [Snyk Code Local Engine](../../snyk-code/snyk-code-local-engine.md).
+* The `@snyk /fix` and `@snyk /apply #` commands can be used only as replies to the Inline Comments created by Snyk, commands created on other comment threads will not be processed.
+* For best results, Snyk recommends generating and applying fixes for a single inline comment at a time, to avoid situations where applying a fix causes conflicts with another previously generate fix.
+
 ## Configure Pull Request Experience
 
 You can configure the Pull Request Experience [at the Integration level](pull-request-experience.md#configure-pull-request-experience-at-the-integration-level) for your Snyk Organization.
@@ -70,8 +98,9 @@ Configure the Pull Request Experience for one or more integrations in your Snyk 
    1. **Enable Issue Summary Comment:** Enable this option to create an Issue Summary Comment on each pull request, which aggregates the PR Check results. If it is disabled, the entire Pull Request Experience is disabled.
    2. **Create comments for success cases:** By default, an Issue Summary Comment is created even if no vulnerabilities are detected by the PR Check. Disable this option to stop creating Issue Summary Comments for non-failing PR Checks.
    3. **Enable Inline Comments:** Enable inline comments to add a comment for each issue found by Snyk Code PR Check.
+   4. **Enable Snyk Agent Fix in the PR:** Enable requesting Snyk Agent Fix suggestions for issues found by Snyk Code PR Check, and applying the fixes to the PR branch.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-11-27 at 11.44.50.png" alt=""><figcaption><p>Configuration details for the GitHub integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption><p>Configuration details for the GitHub integration</p></figcaption></figure>
 
 For the GitHub integration, configure opening fix and upgrade pull requests from a fixed GitHub account, by providing a Personal Access Token (PAT), which has `write` permissions or above to the repos monitored by Snyk. See[ ](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)[Opening fix and upgrade pull requests from a fixed GitHub account](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md) for more information.
 
@@ -109,7 +138,7 @@ Inline comments are available only for issues detected by Snyk Code PR Checks. T
 
 3. **Inline Comments** are enabled in the **Pull Request Experience** section for your integration.
 
-<figure><img src="../../../.gitbook/assets/enable_inline_comments.png" alt=""><figcaption><p>Configuration details to enable Inline Comments</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption><p>Configuration details to enable Inline Comments</p></figcaption></figure>
 
 ### Why are some findings not appearing as inline comments?
 
@@ -121,3 +150,16 @@ Yes. Brokered integrations are supported for both Issue Summary Comment and Inli
 
 Supported Snyk Broker version 4.194 or higher.
 
+Snyk Agent Fix in the PR is supported in Snyk Broker version 4.216 or higher.
+
+### Why is Snyk Agent Fix in the PR not working after enabling the setting?
+
+When you enable the Snyk Agent Fix in the PR setting, a background process is initiated to upgrade the [Snyk webhooks](../snyk-pull-or-merge-requests/#snyk-scm-webhooks) in the user's repository with the pull request comment event subscription necessary for the feature. This process can take a couple of minutes to complete. During this time, the feature will not be fully active or available, and Snyk will not be able to react to commands in the PR.&#x20;
+
+Snyk Agent Fix in the PR will work only on inline comments created after the feature is enabled.
+
+To troubleshoot the webhook upgrade process, go to the repository settings page of your SCM, and confirm that the Snyk webhook is subscribed to the 'Pull request review comments' event.
+
+### Why is Snyk Agent Fix replying with command execution is already in progress, when I submitted a single command?
+
+This can happen when a repository is imported into multiple Snyk Organisations and there are multiple Snyk webhooks defined on the repository. For best results ensure that only a single Snyk webhook is subscribed to pull request comment events. If needed, the Snyk webhook event subscriptions can be edited from the repository settings page of your SCM.
