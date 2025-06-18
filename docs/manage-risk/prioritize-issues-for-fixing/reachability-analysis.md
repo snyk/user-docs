@@ -12,7 +12,7 @@ Snyk reachability analysis allows you to analyze risk by identifying whether you
 
 Reachability analysis can be used as a standalone signal to make decisions, or as part of a broader risk-based prioritization approach using the Snyk Risk Score.&#x20;
 
-Snyk uses a combination of program analysis and various AI techniques to determine the reachability of a given vulnerability, with validation conducted by security research experts.
+Snyk uses a combination of static program analysis and various AI techniques to determine the reachability of a given vulnerability, with validation conducted by security research experts. These capabilities enable Snyk to quickly analyze the code without requiring the application to be built prior to the scan.
 
 The following instructions explain how to set up and use reachability analysis and provide more information on how the underlying analysis works at Snyk.&#x20;
 
