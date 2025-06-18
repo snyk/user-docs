@@ -15701,6 +15701,9 @@
           "name": {
             "type": "string"
           },
+          "normalized_name": {
+            "type": "string"
+          },
           "permissions": {
             "items": {
               "type": "string"
