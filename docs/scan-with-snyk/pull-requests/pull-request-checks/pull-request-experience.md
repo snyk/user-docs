@@ -79,7 +79,7 @@ The Snyk Agent Fix in the PR feature enables the user to request and apply fixes
 * Fixes expire after the time displayed in each suggestion, in accordance with the [#cache-retention-period-related-to-vulnerability-source-data](../../../working-with-snyk/how-snyk-handles-your-data.md#cache-retention-period-related-to-vulnerability-source-data "mention"). After expiration, a new fix can be requested by using the `@snyk /fix` command.
 * Snyk Agent Fix in the PR is not supported for [Snyk Code Local Engine](../../snyk-code/snyk-code-local-engine.md).
 * The `@snyk /fix` and `@snyk /apply #` commands can be used only as replies to the Inline Comments created by Snyk, commands created on other comment threads will not be processed.
-* For best results, Snyk recommends generating and applying fixes for a single inline comment at a time, to avoid situations where applying a fix causes conflicts with another previously generate fix.
+* For best results, Snyk recommends generating and applying fixes for a single inline comment at a time, to avoid situations where applying a fix causes conflicts with another previously generated fix.
 
 ## Configure Pull Request Experience
 
