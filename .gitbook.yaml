@@ -138,8 +138,6 @@ redirects:
   enterprise-setup/snyk-broker/classic-broker/snyk-broker-apprisk: enterprise-setup/snyk-broker/classic-broker/snyk-broker-essentials.md
   enterprise-setup/snyk-broker/classic-broker/snyk-broker-apprisk-1: enterprise-setup/snyk-broker/universal-broker/snyk-broker-apprisk.md
   enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/custom-docker-images-for-broker-client-integrations-and-container-registry-agent: enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md
-  manage-risk/prioritize-issues-for-fixing/ignore-issues/convert-project-scoped-ignores-to-asset-scoped-ignores: manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access/convert-project-scoped-ignores-to-asset-scoped-ignores.md
-  integrate-with-snyk/vulnerability-management-tools: integrate-with-snyk/partner-integrations.md
   integrate-with-snyk/vulnerability-management-tools/appnovi-integration: integrate-with-snyk/partner-integrations.md
   integrate-with-snyk/vulnerability-management-tools/atlassian-compass-integration: integrate-with-snyk/partner-integrations.md
   integrate-with-snyk/vulnerability-management-tools/bright-integration: integrate-with-snyk/partner-integrations.md
