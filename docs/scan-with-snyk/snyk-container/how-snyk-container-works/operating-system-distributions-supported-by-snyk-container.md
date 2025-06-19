@@ -18,7 +18,7 @@ This is the list of supported operating systems and distributions:
 
 ## [Alpine Linux](https://www.alpinelinux.org/)
 
-* Alpine 3.22
+* Alpine Linux 3.22
 * Alpine Linux 3.21
 * Alpine Linux 3.20
 * Alpine Linux 3.19
