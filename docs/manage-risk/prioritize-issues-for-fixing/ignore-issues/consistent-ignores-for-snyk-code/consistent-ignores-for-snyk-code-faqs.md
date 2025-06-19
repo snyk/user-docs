@@ -1,10 +1,9 @@
+---
+hidden: true
+noIndex: true
+---
+
 # Consistent Ignores for Snyk Code FAQs
-
-{% hint style="info" %}
-**Release status**
-
-Snyk Code Consistent Ignores is in Early Access and available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
-{% endhint %}
 
 This FAQ section addresses common concerns about the Snyk Code Consistent Identity Early Access program. You can share feedback about these items with your Snyk account team.&#x20;
 

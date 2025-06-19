@@ -1,24 +1,12 @@
 # Consistent Ignores for Snyk Code
 
-{% hint style="info" %}
-**Release status**
-
-Snyk Code Consistent Ignores is in Early Access and available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
-
-To ensure Consistent Ignores meets your needs and requirements, review the [FAQ](consistent-ignores-for-snyk-code-faqs.md) section.
-{% endhint %}
-
 Snyk Code Consistent Ignores helps your teams focus on important tasks by filtering out distractions. It ensures that once an ignore is created, it is consistently respected regardless of how and where the test is run and what branch is being tested.&#x20;
 
 By filtering out false positives, inapplicable threats, and accepted risks, your security teams can prioritize fixing real problems, and developers can code without interruptions.&#x20;
 
-## From Project to asset-scoped ignores&#x20;
-
-Snyk is transitioning from ignores tied to specific issues within a Project to ignores tied to a finding within a repository. This change enables consistency across Projects and where Projects aren't present while reducing ignore management complexity.
-
 ## Enable Snyk Code Consistent Ignores
 
-Enable Snyk Code Consistent Ignores for your Group or Organization in the Snyk Web UI by navigating to **Group/Organization** > **Settings** > **Ignores across the repository for Snyk Code**. See [Snyk Preview](../../../../snyk-admin/snyk-preview.md).
+Enable Snyk Code Consistent Ignores for your Group or Organization in the Snyk Web UI by navigating to **Group/Organization** > **Settings** **> General >** **Ignores across the repository for Snyk Code**.&#x20;
 
 ## Disable Snyk Code Consistent Ignores
 
@@ -37,7 +25,7 @@ To create, edit and remove ignores, you need to have a user role assigned with I
 
 You can manage ignores proactively using group-level Snyk Code security policies. As a general rule, you can apply ignore policies when you identify a recurring need to apply similar individual ignores.&#x20;
 
-To manage the ignores through security policies, Snyk Code Consistent Ignores need to be enabled at the Group level by your Snyk team. You do not require [conversion](convert-project-scoped-ignores-to-asset-scoped-ignores.md) for any previously applied Group level policy ignores.
+To manage the ignores through security policies, Snyk Code Consistent Ignores need to be enabled at the Group level. You do not require [conversion](convert-project-scoped-ignores-to-asset-scoped-ignores.md) for any previously applied Group level policy ignores. If you want to activate Snyk Code Security Policies at the Group level, contact your Snyk account team or Snyk Support.
 
 Policies configured to ignore-based Project attributes do not result in ignores being applied in Snyk CLI and IDE settings where a Snyk Project is not available.
 

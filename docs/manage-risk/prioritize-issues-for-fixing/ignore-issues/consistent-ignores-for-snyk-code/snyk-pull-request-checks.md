@@ -1,13 +1,5 @@
 # Consistent Ignores for Snyk Code Pull Request Checks
 
-{% hint style="info" %}
-**Release status**
-
-Snyk Code Consistent Ignores is in Early Access and available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
-
-To ensure Consistent Ignores meets your needs and requirements, review the [FAQ](consistent-ignores-for-snyk-code-faqs.md) section.
-{% endhint %}
-
 ## Pull Request Check default ignore behavior
 
 When viewing a pull request (PR) check from Snyk in your integrated SCM, ignored findings do not contribute to the PR check outcome. A PR check does not fail due to an ignored finding. Additionally, the Snyk PR experience includes the count of active (unignored) findings in the summary comment and displays each finding as an inline comment within the PR.

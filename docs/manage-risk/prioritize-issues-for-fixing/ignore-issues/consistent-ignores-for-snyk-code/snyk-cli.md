@@ -1,13 +1,5 @@
 # Consistent Ignores for Snyk Code CLI
 
-{% hint style="info" %}
-**Release status**
-
-Snyk Code Consistent Ignores is in Early Access and available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
-
-To ensure Consistent Ignores meets your needs and requirements, review the [FAQ](consistent-ignores-for-snyk-code-faqs.md) section.
-{% endhint %}
-
 Ignores are taken into account in the Snyk CLI when `snyk code test` is run.
 
 ## **Minimum version required**

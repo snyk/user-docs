@@ -1,13 +1,5 @@
 # Consistent Ignores for Snyk Code IDE
 
-{% hint style="info" %}
-**Release status**
-
-Snyk Code Consistent Ignores is in Early Access and available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
-
-To ensure Consistent Ignores meets your needs and requirements, review the [FAQ](consistent-ignores-for-snyk-code-faqs.md) section.
-{% endhint %}
-
 When you run tests in any of the [four supported Snyk IDE plugins](../../../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), the plugins will take into account your ignores.
 
 ## **Minimum version required**

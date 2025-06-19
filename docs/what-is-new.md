@@ -22,7 +22,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk Code**
 
-* Legacy ignores can be converted using [bulk ignore conversion](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access/convert-project-scoped-ignores-to-asset-scoped-ignores.md#bulk-ignore-conversion).
+* Legacy ignores can be converted using [bulk ignore conversion](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/convert-project-scoped-ignores-to-asset-scoped-ignores.md#bulk-ignore-conversion).
 * DeepCode AI Fix has a new name: [Snyk Agent Fix](scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md).
 
 ### **Snyk Container**
@@ -64,7 +64,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk Code**
 
-* [Consistent Ignores ](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code-early-access/)is now available in Early Access. Your development teams can create ignores that are consistently respected regardless of how and where the test is run and what branch is being tested.&#x20;
+* [Consistent Ignores ](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/)is now available in Early Access. Your development teams can create ignores that are consistently respected regardless of how and where the test is run and what branch is being tested.&#x20;
 * Snyk Code supports gRPC libraries.
 
 ### **Snyk Container**
