@@ -1,94 +1,96 @@
-# V1 Reporting Issues and V1 Aggregated Issues APIs to REST Issues API migration guide
+---
+hidden: true
+---
 
-
-
-{% hint style="info" %}
-This page applies to the [V1 List All Aggregated Issues API](../../snyk-api/reference/projects-v1.md#post-org-orgid-project-projectid-aggregated-issues) (`post-org-orgid-project-projectid-aggregated-issues`) and to the V1 Reporting Issues API endpoints: [Get list of issues](../../snyk-api/reference/reporting-api-v1.md#post-reporting-issues) (`post-reporting-issues`) and [Get list of latest issues](../../snyk-api/reference/reporting-api-v1.md#post-reporting-issues-latest) (`post-reporting-issues-latest`).
-
-While the deprecation schedule for the V1 Issues API endpoints has not been established, these APIs will be deprecated soon, and migration to the REST Issues API is highly recommended as soon as possible. Additionally, the [V1 Reporting Issues API](../../snyk-api/reference/reporting-api-v1.md) is not available for customers or partners in the `Snyk-US-02`, `Snyk-EU-01`, and `Snyk-AU-01` regions.&#x20;
-{% endhint %}
-
-## Highlights of the GA REST Issues API
+# V1 Issues APIs to REST Issues API migration guide
 
 {% hint style="info" %}
-GA REST Issues API documentation [`/groups/{group_id}/issues`](https://apidocs.snyk.io/#get-/groups/-group_id-/issues) and [`/orgs/{org_id}/issues`](https://apidocs.snyk.io/#get-/orgs/-org_id-/issues). Updated link: [Get issues by Org ID](../../snyk-api/reference/issues.md#get-orgs-org_id-issues)
+This page applies to the following V1  API endpoints:
+
+* [Get list of issues](../../snyk-api/reference/reporting-api-v1.md#post-reporting-issues) (`POST /reporting/issues`) - not available for customers or partners in the `Snyk-US-02`, `Snyk-EU-01`, and `Snyk-AU-01` regions.
+* [Get list of latest issues](../../snyk-api/reference/reporting-api-v1.md#post-reporting-issues-latest) (`POST /reporting/issues/latest`) - not available for customers or partners in the `Snyk-US-02`, `Snyk-EU-01`, and `Snyk-AU-01` regions.
+* [List all aggregated issues](../../snyk-api/reference/projects-v1.md#post-org-orgid-project-projectid-aggregated-issues) (`POST /org/{orgId}/project/{projectId}/aggregated-issues`)
+
+These APIs are subject to deprecation, and migrating to the REST Issues API immediately is highly recommended. The REST Issues API accommodates multiple regions.
 {% endhint %}
 
-The REST version of the API delivers:
-
-* **Consistency:** Improved performance and reliability of the REST Issues API
-* **Depth:** detailed representations for Open Source packages, SAST, Container, and IaC issues
-* **Flexibility:** new filters for tailored API responses
-* **Usability:** improved pagination and response management, simplifying the API interaction
-
-Snyk understands that migrating to a new API can be a significant undertaking, and we want to support you throughout the process. This comprehensive migration guide is intended to facilitate a seamless transition by providing step-by-step instructions, code examples, and best practices to help you smoothly integrate with the new API.
-
-If you are using the V1 Issues endpoints, Snyk recommends reviewing this migration guide and migrating all your automations, API based reporting, and integrations accordingly.
-
-## Comparison of V1 Issues APIs vs REST GA API
+## Key benefits of the REST Issues API
 
 {% hint style="info" %}
-**Mapping V1 Issues API to REST GA API issues**
+Use the following REST API endpoints instead to get lists of issues:
 
-In the V1 Issues APIs, the id or issue.id is relative to the project to define uniqueness. To define the uniqueness in the REST API, a UUID is generated for each issue.&#x20;
+* [Get issues by Group ID](../../snyk-api/reference/issues.md#get-groups-group_id-issues)
+* [Get issues by Org ID](../../snyk-api/reference/issues.md#get-orgs-org_id-issues)
 {% endhint %}
 
-| **v1 Aggregated Project Issues**    | **V1 Reporting Issues** | **REST unified issues schema**                                                  | **Notes**                                                                                                                                                |
-| ----------------------------------- | ----------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                                  | issue.id                | problems.id\*                                                                   | \*where the source is "Snyk"                                                                                                                             |
-|                                     |                         | id                                                                              | The unique value of the issue in the REST API                                                                                                            |
-| issue.url                           | issue.url               | For SCA, built from “http://security.snyk.io/vuln/” + key                       |                                                                                                                                                          |
-| issueType                           | issue.type              | problems.type                                                                   |                                                                                                                                                          |
-| pkgName                             | issue.package           | coordinates.representations.dependency.package\_name                            |                                                                                                                                                          |
-| pkgVersions                         | issue.version           | coordinates.representations.dependency.package\_version                         | Each package name representation has it's own version coordinate.                                                                                        |
-| issueData.id                        | issue.id                | problems.id\*                                                                   | \*where the source is "Snyk"                                                                                                                             |
-| issueData.title                     | issue.title             | title                                                                           |                                                                                                                                                          |
-| issueData.severity                  | issue.severity          | effective\_severity                                                             |                                                                                                                                                          |
-| issueData.originalSeverity          | issue.originalSeverity  | original\_severity                                                              | Not returned if no changes to severity have been made.                                                                                                   |
-| issueData.url                       | issue.url               | problem.url                                                                     |                                                                                                                                                          |
-| issueData.description               | N/A                     | Available for issue type = code                                                 | The description attribute for CIM\* issues is currently populated only for Code issues. For all the other issue types, this information is not available |
-| issueData.identifiers.CVE           | issue.identifiers       | problems.id\*                                                                   | \*where the source is "NVD"                                                                                                                              |
-| issueData.identifiers.CWE           | issue.identifiers       | classes.id                                                                      |                                                                                                                                                          |
-| issueData.identifiers.OSVDB         | issue.identifiers       | N/A                                                                             |                                                                                                                                                          |
-| issueData.credit                    | issue.credit            | N/A                                                                             |                                                                                                                                                          |
-| issueData.exploitMaturity           | issue.exploitMaturity   | exploit\_details.maturity\_levels                                               | For REST, the maturity levels have a different format (standard CVSS4 naming convention).                                                                |
-| issueData.semver.vulnerable         | issue.semver.vulnerable | N/A                                                                             | Fix information is not available yet in the REST API.                                                                                                    |
-| issueData.semver.unaffected         | issue.semver.vulnerable | N/A                                                                             |                                                                                                                                                          |
-| issueData.publicationTime           | issue.publicationTime   | N/A                                                                             |                                                                                                                                                          |
-| issueData.disclosureTime            | issue.disclosureTime    | N/A                                                                             |                                                                                                                                                          |
-| issueData.CVSSv3                    | issue.CVSSv3            | severities.vector                                                               | This is an array in the REST response by source (NIST, Snyk, RedHat, and so on).                                                                         |
-| issueData.cvssScore                 | issue.cvssScore         | severities.score                                                                | This is an array in the REST response by source (NIST, Snyk, RedHat, and so on).                                                                         |
-| issueData.language                  | issue.language          | Data exists at the project level, inferred from the project type in field: type |                                                                                                                                                          |
-| issueData.patches.id                | issue.patches           | N/A                                                                             | Likely added in a future update.                                                                                                                         |
-| issueData.patches.urls              |                         | N/A                                                                             | Likely added in a future update.                                                                                                                         |
-| issueData.patches.version           |                         | N/A                                                                             | Likely added in a future update.                                                                                                                         |
-| issueData.patches.comments          |                         | N/A                                                                             | Likely added in a future update.                                                                                                                         |
-| issueData.patches.modificationTime  |                         | N/A                                                                             | Likely added in a future update.                                                                                                                         |
-| issueData.nearestFixedInVersion     |                         | N/A                                                                             | Likely added in a future update.                                                                                                                         |
-| issueData.path                      |                         |                                                                                 | Represented across multiple attributes only for Cloud issues.                                                                                            |
-| issueData.violatedPolicyPublicId    |                         | problem.id or class.id                                                          |                                                                                                                                                          |
-| issueData.isMaliciousPackage        |                         | N/A                                                                             | No data.                                                                                                                                                 |
-| introducedThrough.kind              |                         | N/A                                                                             | Specific to dependency chains which are not supported by the CIM\*.                                                                                      |
-| introducedThrough.data              |                         | N/A                                                                             | Specific to dependency chains which are not supported by the CIM\*.                                                                                      |
-| isPatched                           | issue.isPatched         | N/A                                                                             |                                                                                                                                                          |
-| isIgnored                           | issue.isIgnored         | ignored                                                                         |                                                                                                                                                          |
-| ignoreReasons.reason                | issue.ignored.reason    | N/A                                                                             | Can be retrieved with V1 List Ignores API.                                                                                                               |
-| ignoreReasons.expires               | issue.ignored.expires   | N/A                                                                             | Can be retrieved with V1 List Ignores API.                                                                                                               |
-| ignoreReasons.source                | issue.ignored.source    | N/A                                                                             | Can be retrieved with V1 List Ignores API.                                                                                                               |
-| fixInfo.isUpgradable                | issue.isUpgradeable     | coordinates.is\_upgradable                                                      |                                                                                                                                                          |
-| fixInfo.isPinnable                  | issue.isPinnable        | coordinates.is\_pinnable                                                        |                                                                                                                                                          |
-| fixInfo.isPatchable                 | issue.isPatchable       | coordinates.is\_patchable                                                       |                                                                                                                                                          |
-| fixInfo.isFixable                   | N/A                     | coordinates.is\_fixable                                                         |                                                                                                                                                          |
-| fixInfo.isPartiallyFixable          | N/A                     | N/A                                                                             | Infered by looking at all of the coordinates that belong to an issue.                                                                                    |
-| fixInfo.nearestFixedInVersion       | part of semver          | N/A                                                                             |                                                                                                                                                          |
-| priority.score                      | issue.priorityScore     | risk.score                                                                      | Priority score value is replaced by risk score. Previous score migrated to this field in REST.                                                           |
-| priority.factors                    | N/A                     | risk.factors                                                                    | Priority factors are replaced by risk score.                                                                                                             |
-| priority.factors.name = “Reachable” | issue.reachability      | coordinates.reachability                                                        |                                                                                                                                                          |
-| links                               | N/A                     | N/A                                                                             | New links object contains pagination and relationship links.                                                                                             |
+The REST Issues API provides:
 
-\* CIM refers to Snyk's "Common Issues Model."
+* Consistency through improved performance and reliability of the REST Issues API.
+* In-depth coverage of Open Source packages, SAST, Container, and IaC issues.
+* Flexibility through new filters for tailored API responses.
+* Enhanced usability through better pagination and response handling, streamlining API interactions.
 
-## Notes on migration
+This migration guide is intended to facilitate a seamless transition by providing step-by-step instructions, code examples, and best practices to help you smoothly integrate with the new API.
 
-* Filtering options vary between API versions. Refer to the [API Reference](../../snyk-api/reference/) for each API to validate your filtering choices.
-* As noted above, the REST API  paginates results. Code accordingly.
+If you are using the V1 Issues endpoints, Snyk recommends that you migrate all your automation, API-based reporting, and integrations accordingly, by using the guidance provided here.
+
+## Comparison of V1 Issues APIs vs REST Issues API
+
+{% hint style="info" %}
+In the V1 Issues APIs, the `id` or `issue.id` is relative to the Project to define uniqueness. &#x20;
+
+In the REST Issues API, a UUID is generated for each issue to define uniqueness.&#x20;
+{% endhint %}
+
+| V1 Project issues                     | V1 Reporting Issues       | REST unified issues                                                             | Notes                                                                                                                        |
+| ------------------------------------- | ------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `id`                                  | `issue.id`                | `problems.id`\*                                                                 | \*where the source is "Snyk"                                                                                                 |
+| N/A                                   | N/A                       | `id`                                                                            | The unique value of the issue in the REST API                                                                                |
+| `issue.url`                           | `issue.url`               | For SCA, built from “http://security.snyk.io/vuln/” + key                       |                                                                                                                              |
+| `issueType`                           | `issue.type`              | `problems.type`                                                                 |                                                                                                                              |
+| `pkgName`                             | `issue.package`           | `coordinates.representations.dependency.package_name`                           |                                                                                                                              |
+| `pkgVersions`                         | `issue.version`           | `coordinates.representations.dependency.package_version`                        | Each package name representation has its own version coordinate.                                                             |
+| `issueData.id`                        | `issue.id`                | `problems.id`\*                                                                 | \*where the source is "Snyk"                                                                                                 |
+| `issueData.title`                     | `issue.title`             | `title`                                                                         |                                                                                                                              |
+| `issueData.severity`                  | `issue.severity`          | `effective_severity`                                                            |                                                                                                                              |
+| `issueData.originalSeverity`          | `issue.originalSeverity`  | `original_severity`                                                             | Not returned if no changes to severity have been made.                                                                       |
+| `issueData.url`                       | `issue.url`               | `problem.url`                                                                   |                                                                                                                              |
+| `issueData.description`               | N/A                       | N/A                                                                             | Availability of this field may be limited to projects that have been updated (new issues found).                             |
+| `issueData.identifiers.CVE`           | `issue.identifiers`       | `problems.id`\*                                                                 | \*where the source is "NVD"                                                                                                  |
+| `issueData.identifiers.CWE`           | `issue.identifiers`       | `classes.id`                                                                    |                                                                                                                              |
+| `issueData.identifiers.OSVDB`         | `issue.identifiers`       | N/A                                                                             |                                                                                                                              |
+| `issueData.credit`                    | `issue.credit`            | N/A                                                                             |                                                                                                                              |
+| `issueData.exploitMaturity`           | `issue.exploitMaturity`   | `exploit_details.maturity_levels`                                               | For REST, the maturity levels have a different format (standard CVSS4 naming convention).                                    |
+| `issueData.semver.vulnerable`         | `issue.semver.vulnerable` | N/A                                                                             | Fix information is not available yet in the REST API.                                                                        |
+| `issueData.semver.unaffected`         | `issue.semver.vulnerable` | N/A                                                                             |                                                                                                                              |
+| `issueData.publicationTime`           | `issue.publicationTime`   | N/A                                                                             |                                                                                                                              |
+| `issueData.disclosureTime`            | `issue.disclosureTime`    | N/A                                                                             |                                                                                                                              |
+| `issueData.CVSSv3`                    | `issue.CVSSv3`            | `severities.vector`                                                             | This is an array in the REST response by source (NIST, Snyk, RedHat, and so on).                                             |
+| `issueData.cvssScore`                 | `issue.cvssScore`         | `severities.score`                                                              | This is an array in the REST response by source (NIST, Snyk, RedHat, and so on).                                             |
+| `issueData.language`                  | `issue.language`          | Data exists at the Project level, inferred from the project type in field: type |                                                                                                                              |
+| `issueData.patches.id`                | `issue.patches`           | N/A                                                                             |                                                                                                                              |
+| `issueData.patches.urls`              | N/A                       | N/A                                                                             |                                                                                                                              |
+| `issueData.patches.version`           | N/A                       | N/A                                                                             |                                                                                                                              |
+| `issueData.patches.comments`          | N/A                       | N/A                                                                             |                                                                                                                              |
+| `issueData.patches.modificationTime`  | N/A                       | N/A                                                                             |                                                                                                                              |
+| `issueData.nearestFixedInVersion`     | N/A                       | N/A                                                                             |                                                                                                                              |
+| `issueData.path`                      | N/A                       | N/A                                                                             | Represented across multiple attributes only for Cloud issues.                                                                |
+| `issueData.violatedPolicyPublicId`    | N/A                       | problem.id or class.id                                                          |                                                                                                                              |
+| `issueData.isMaliciousPackage`        | N/A                       | N/A                                                                             | No data.                                                                                                                     |
+| `introducedThrough.kind`              | N/A                       | N/A                                                                             | Specific to dependency chains which may not be available.                                                                    |
+| `introducedThrough.data`              | N/A                       | N/A                                                                             | Specific to dependency chains which may not be available.                                                                    |
+| `isPatched`                           | `issue.isPatched`         | N/A                                                                             |                                                                                                                              |
+| `isIgnored`                           | `issue.isIgnored`         | `ignored`                                                                       |                                                                                                                              |
+| `ignoreReasons.reason`                | `issue.ignored.reason`    | N/A                                                                             | Can be retrieved with [V1 List Ignores API](../../snyk-api/reference/ignores-v1.md#get-org-orgid-project-projectid-ignores). |
+| `ignoreReasons.expires`               | `issue.ignored.expires`   | N/A                                                                             | Can be retrieved with [V1 List Ignores API](../../snyk-api/reference/ignores-v1.md#get-org-orgid-project-projectid-ignores). |
+| `ignoreReasons.source`                | `issue.ignored.source`    | N/A                                                                             | Can be retrieved with [V1 List Ignores API](../../snyk-api/reference/ignores-v1.md#get-org-orgid-project-projectid-ignores). |
+| `fixInfo.isUpgradable`                | `issue.isUpgradeable`     | `coordinates.is_upgradable`                                                     |                                                                                                                              |
+| `fixInfo.isPinnable`                  | `issue.isPinnable`        | `coordinates.is_pinnable`                                                       |                                                                                                                              |
+| `fixInfo.isPatchable`                 | `issue.isPatchable`       | `coordinates.is_patchable`                                                      |                                                                                                                              |
+| `fixInfo.isFixable`                   | N/A                       | `coordinates.is_fixable`                                                        |                                                                                                                              |
+| `fixInfo.isPartiallyFixable`          | N/A                       | N/A                                                                             | Inferred by looking at all of the coordinates that belong to an issue.                                                       |
+| `fixInfo.nearestFixedInVersion`       | part of semver            | N/A                                                                             |                                                                                                                              |
+| `priority.score`                      | `issue.priorityScore`     | `risk.score`                                                                    | Priority score value is replaced by risk score. Previous score migrated to this field in REST.                               |
+| `priority.factors`                    | N/A                       | `risk.factors`                                                                  | Priority factors are replaced by risk score.                                                                                 |
+| `priority.factors.name = “Reachable”` | `issue.reachability`      | `coordinates.reachability`                                                      |                                                                                                                              |
+| `links`                               | N/A                       | N/A                                                                             | New links object contains pagination and relationship links.                                                                 |
