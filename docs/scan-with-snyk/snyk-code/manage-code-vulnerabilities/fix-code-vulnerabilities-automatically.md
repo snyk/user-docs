@@ -23,7 +23,7 @@ You can address various issues detected by the Snyk Code engine in terms of qual
 | Java       | APEX            |
 | JavaScript | C#              |
 | Python     | Go              |
-| TypeScript |                 |
+| TypeScript | C/C++           |
 
 What is the difference between supported and limited support?&#x20;
 
