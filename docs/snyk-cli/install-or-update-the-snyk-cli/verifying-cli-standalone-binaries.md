@@ -15,7 +15,7 @@ If you want to verify Snyk CLI standalone binaries against the [Snyk CLI GPG key
 ```
 # 467717A30B2B4658415975629691DA64D0025194 is the key belonging to code-signing@snyk.io
 # Copy of this public key is also in this repository /help/_about-this-project/snyk-code-signing-public.pgp
-gpg --keyserver hkps://keys.openpgp.org --recv-keys A22665FB96CAB0E0973604C83676C4B8289C296E
+gpg --keyserver hkps://keys.openpgp.org --recv-keys 467717A30B2B4658415975629691DA64D0025194
 ```
 
 Then verify the file is signed with:
