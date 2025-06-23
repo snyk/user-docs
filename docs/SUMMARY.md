@@ -511,7 +511,6 @@
       * [Integrate with Docker Hub](scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-docker-hub/README.md)
         * [Configure the integration with Docker Hub](scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-docker-hub/configure-the-integration-with-docker-hub.md)
         * [Docker Hub - add Projects and images to the Snyk UI](scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-docker-hub/docker-hub-add-projects-and-images-to-the-snyk-ui.md)
-      * [Integrate with Docker Desktop Extension](scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-docker-desktop-extension.md)
       * [Integrate with GitHub Container registry](scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-github-container-registry.md)
       * [Integrate with GitLab Container Registry](scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-gitlab-container-registry.md)
       * [Integrate with Google Artifact Registry (GAR)](scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-google-artifact-registry-gar.md)

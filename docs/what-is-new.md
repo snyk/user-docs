@@ -147,7 +147,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk Container**
 
-* [Integrate with Docker Desktop Extension](scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-docker-desktop-extension.md) has been updated to include an end-of-support notice. Effective June 20, 2025, the integration with Docker Desktop will no longer receive updates or technical support.
+* Page "Integrate with Docker Desktop Extension" has been updated to include an end-of-support notice. Effective June 20, 2025, the integration with Docker Desktop will no longer receive updates or technical support.
 
 ### **Snyk CLI and IDEs**
 

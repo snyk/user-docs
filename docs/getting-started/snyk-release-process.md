@@ -86,14 +86,6 @@ When a feature transitions to an end-of-support stage, both development and supp
 
 The documentation page will announce the transition of a feature to End of Support six months before its start date.
 
-**Snyk Docker Desktop extension**
-
-The[ Snyk Docker Desktop extension](../scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-docker-desktop-extension.md) will no longer be supported starting June 20, 2025. After this date, the extension will no longer receive updates or technical support. Until June 20, 2025, updates for this integration will only address known high-severity security vulnerabilities.&#x20;
-
-**Recommended alternative**&#x20;
-
-To avoid disruptions, Snyk recommends transitioning to scanning your container images using the [Snyk CLI](../snyk-cli/). This provides enhanced functionality, flexibility, and performance.
-
 ### End of life features
 
 A feature can also be the subject of an end-of-life event, meaning that the feature or capability impacted by this process ceases to exist and is removed from the product and public documentation.
