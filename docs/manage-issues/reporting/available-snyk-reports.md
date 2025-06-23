@@ -16,6 +16,7 @@ The following reports are available:
 * [Cloud Compliance Issues report](available-snyk-reports.md#cloud-compliance-issues-report)
 * [Snyk Generated Pull Requests](available-snyk-reports.md#snyk-generated-pull-requests)
 * [Asset Dashboard](available-snyk-reports.md#asset-dashboard)
+* [Saved Views](available-snyk-reports.md#saved-views)
 
 Select **Change Report** to change the report displayed:
 
@@ -622,3 +623,78 @@ The asset source breakdown widget visualizes the quantities of detected assets f
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (582).png" alt=""><figcaption><p>Asset source breakdown</p></figcaption></figure>
+
+## Saved Views
+
+The Saved Views feature enables collaboration based on shared, consistent, and customizable reports. This feature is available at Organization and Group level, in the **Reports** menu. It allows you to customize and save filter settings for your reports, which you can then reuse.
+
+To make it easier to share the view outside of the Snyk platform, the URL of a saved view remains the same after it's created, regardless of any changes you make to it.
+
+### Prerequisites
+
+To create, edit, and remove a saved view, you must have **Edit reports** permission. Saved views are not private. After being created, Saved Views are visible to all users with **View reports** permission. Only Organization and Group Admins can assign these permissions. For more information, see [User role management](https://docs.snyk.io/snyk-admin/user-roles/user-role-management).
+
+To assign report permissions:
+
+1. In the Snyk Web UI, navigate to your Group and Organization.
+2. At the Group level, navigate to **Members** > **Manage Roles** > **Group Admin** and enable the following permissions:
+   * **View reports:** to view Snyk Reports and to view the saved views that were created by others
+   * **Edit reports:** to create saved views.
+3. At the Organization level, enable the **View Organization reports** and **Edit Organization reports** permissions.
+
+### Create a view
+
+To create a new view:
+
+1. In the Snyk Web UI, navigate to your Group or Organization.
+2. Navigate to the **Reports** menu and select a report from the **Change Report** dropdown.
+3. Select the **Standard view** filter and click **Create new view**.
+
+<figure><img src="../../.gitbook/assets/reports_saved_views_standard_view.png" alt=""><figcaption><p>Create new view button in the Standard view filter</p></figcaption></figure>
+
+4. Fill in the name of the view and click **Create view**.
+
+{% hint style="info" %}
+The name of a saved view can contain a maximum of 60 characters and must be unique from other saved views for the same report.
+{% endhint %}
+
+### Update a view
+
+To update a saved view:
+
+1. In the Snyk Web UI, navigate to your Group and Organization.
+2. Navigate to the **Reports** menu and select the report that contains the saved view you want to update.
+3. From the **Standard view** filter, select and load the view you want to update.
+4. Make any necessary changes to the report view.
+5. Save the changes by clicking **Save** next to the Saved Views dropdown. This overwrites the existing view.
+
+### Rename, delete, or copy the URL of a view
+
+If you hover over the name of a saved view and click the three dots that appear, the following options are available:CommentShare feedback on the editor
+
+* **Copy URL**: to copy the URL of the saved view
+* **Set as Group default view:** to set a view as default for your Group. You can then remove it as the default by clicking **Remove as Group default view**.
+* **Rename:** to rename the saved view
+* **Delete**: to delete the saved view.
+
+<figure><img src="../../.gitbook/assets/reports_saved_views_view_options.png" alt=""><figcaption><p>Options available for saved views</p></figcaption></figure>
+
+### Example
+
+Snyk offers built-in reports that you can customize based on associated report filters. A wide range of filters are available, some with multiple values. In such cases, you can save the state of the report using a saved view.
+
+For example, your **Issues Detail** report shows a large number of issues and thus is difficult to manage.
+
+<figure><img src="../../.gitbook/assets/reports_issue_detail.png" alt=""><figcaption><p>An Issues Detail report</p></figcaption></figure>
+
+You can add a **Computed Fixability** filter to your report to show only issues that are computed as **Fixable.**
+
+Finally, you can add an **Exploit Maturity** filter to show only issues with a specific risk score.
+
+<figure><img src="../../.gitbook/assets/reports_issue_detail_filtered_reports.png" alt=""><figcaption><p>Filtered Issues Detail report</p></figcaption></figure>
+
+You can then save this filtered view by clicking **Save**, adding a name to your view, and then clicking **Create view**.&#x20;
+
+<figure><img src="../../.gitbook/assets/reports_saved_views_save_filtered_view.png" alt=""><figcaption><p>Create view window</p></figcaption></figure>
+
+You can then share the report with your development team by copying and sending the view URL.
