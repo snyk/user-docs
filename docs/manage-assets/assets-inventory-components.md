@@ -289,7 +289,7 @@ The Visibility column lists the visibility status of the repositories as follows
 * **Internal**: Internal repositories specific to GitHub and GitLab.
 * **N/A**
 
-Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../manage-issues/reporting/getting-started-with-snyk-reports.md#snyk-reporting-filters).
+Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](broken-reference).
 
 ## Actions
 

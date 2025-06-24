@@ -739,7 +739,6 @@
     * [Issues - Analytics](manage-risk/analytics/issues-analytics.md)
     * [Application - Analytics](manage-risk/analytics/application-analytics.md)
   * [Reporting](manage-issues/reporting/README.md)
-    * [Introducing Snyk Reports](manage-issues/reporting/getting-started-with-snyk-reports.md)
     * [Available Snyk Reports](manage-issues/reporting/available-snyk-reports.md)
     * [Issue columns dictionary](manage-risk/reporting/issue-columns-dictionary.md)
     * [Troubleshooting Snyk Reports](manage-issues/reporting/troubleshooting-snyk-reports.md)
