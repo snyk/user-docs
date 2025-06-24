@@ -36,7 +36,7 @@ For Snyk Open Source, the following requests are allowed:
 * No other source code is viewed, extracted, or modified.
 * You may check in additional `.snyk` files to support the Snyk patch mechanism and for any ignore instructions that are included in your vulnerability policy.
 
-Snyk Code and Snyk IaC need access to the entire repository.
+Snyk Code needs access to the entire repository.
 
 See [How Snyk handles your data](../../working-with-snyk/how-snyk-handles-your-data.md) for more details.
 
