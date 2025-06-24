@@ -1075,4 +1075,5 @@
     * [Snyk AI/LLM Penetration Testing Service Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-ai-llm-penetration-testing-service-description.md)
   * [How does Snyk count assets](working-with-snyk/how-does-snyk-count-assets.md)
   * [What counts as a test?](working-with-snyk/what-counts-as-a-test.md)
+  * [Snyk Platform Access credits](working-with-snyk/snyk-platform-access-credits.md)
   * [Snyk for Government (US)](working-with-snyk/snyk-for-government-us.md)

@@ -1,6 +1,8 @@
 # What counts as a test?
 
 {% hint style="info" %}
+The information on this page applies to Free and Team plans only.
+
 Capitalized terms used but not defined herein shall have the meaning as set forth in the Customer’s purchase agreement or other applicable documentation found on [snyk.docs.io](http://snyk.docs.io/).
 {% endhint %}
 
@@ -87,3 +89,4 @@ Tests are counted when calls are made to the `https://api.snyk.io/v1/test` endpo
 ## Test usage policy
 
 Snyk may monitor customer test volumes on a daily basis and actively review customer usage on a rolling thirty (30) day period. If a customer’s test usage exceeds the limit granted by the plan purchased by twenty percent (20%) on a rolling ninety (90) day period or by one-hundred percent (100%) for a period of thirty (30) days, Snyk may notify the customer to discuss the overage and, if action is required, provide an expansion invoice to increase the test allocation on the subscription or ask the customer to reduce its use. Except in unusual circumstances, Snyk does not invoice retroactively for test overages.
+
