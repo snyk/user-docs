@@ -8,7 +8,7 @@ An example follows of  how you can modify the Snyk scan task to use an alternate
 
 ```
 variables:
-  SNYK_API: http://api.us.snyk.io/
+  SNYK_API: https://api.us.snyk.io/
 ...
 
 - task: SnykSecurityScan@1
