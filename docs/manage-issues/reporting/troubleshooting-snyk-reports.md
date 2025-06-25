@@ -26,6 +26,8 @@ Changes in the Snyk code **resolved** column between snapshots may occur for any
 
 Data is available in reporting approximately one hour after a scan occurs. Data refreshes hourly and should, therefore, always be updated within two hours. Note the exception for ignores that follows.
 
+When you navigate to **Inventory** > **All Assets** and other inventory views from a filter in the **Asset Dashboard** report or **Inventory Overview**, you may see a notification indicating that data is still being processed and temporary inconsistencies may occur. The data source for the Inventory pages differs from that of the Reporting pages, leading to temporary discrepancies.
+
 ## Ignores in reporting
 
 After a Project rescan, issues that are ignored are reflected in reporting and the rest of the Snyk platform, including APIs. Likewise, Projects for which issues have been unignored are reflected in reporting after a rescan of the Project. This does not apply to an ignore in a `.snyk` file.
