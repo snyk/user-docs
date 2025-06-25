@@ -83,6 +83,10 @@ The following features are supported in Snyk for Python:
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------- |
 | <ul><li>Fix PRs</li><li>License scanning</li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
 
+{% hint style="info" %}
+For details on support for specific package managers in Snyk Open Source, see [Python for Open Source](python-for-open-source.md).&#x20;
+{% endhint %}
+
 ## Python version support
 
 Some Python Projects may contain dependencies that require specific versions of Python. Therefore, the version of Python used when scanning can affect the dependency tree that Snyk generates.

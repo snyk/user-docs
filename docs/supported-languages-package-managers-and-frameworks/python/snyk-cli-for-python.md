@@ -13,7 +13,7 @@ For details, see the options for Python Projects in the [`snyk test`](../../snyk
 ## Pip and  CLI
 
 {% hint style="info" %}
-Run `pip install` before scanning with the CLI,`for` for example:
+Run `pip install` before scanning with the CLI, for example:
 
 ```
 pip install -r requirements.txt
