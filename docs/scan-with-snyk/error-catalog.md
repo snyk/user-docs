@@ -898,28 +898,6 @@ To create a new Sast Rule extension you will have to remove an existing one.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
-### [SNYK-CODE-0012](#snyk-code-0012)
-
-#### Sast Rule extensions feature is not enabled for this Organization ID
-
-The Snyk Sast Rule extensions feature is not enabled for this Organization ID.
-
-Please reach out to the account team to get access.
-
-**HTTP Status:** [421](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/421)
-
-
-### [SNYK-CODE-0014](#snyk-code-0014)
-
-#### Rules relationships must be unique
-
-Each Rule relationship to a Snyk Sast Rule extension must be unique.
-
-Make sure each Rule in relationships has a different name.
-
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-
 ---
 # Integration
 ### [SNYK-INTEGRATION-0001](#snyk-integration-0001)
@@ -2960,4 +2938,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-06-23T08:40:57.777Z
+--- Generated at 2025-06-25T13:58:32.301Z
