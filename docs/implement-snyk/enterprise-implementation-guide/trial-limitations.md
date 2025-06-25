@@ -6,8 +6,6 @@ You can try out Snyk functionalities in several ways:
 * Using a self-serve 14-day trial
 * By piloting the full product with the Enterprise plan
 
-For more information, see [Plans and Pricing](https://snyk.io/plans/).
-
 The Snyk 14-day trial offers a sample of the features available in the paid Enterprise plan. However, certain features will have limited functionality or be entirely unavailable in order to provide a seamless experience when the trial concludes.
 
 {% hint style="info" %}
@@ -18,19 +16,15 @@ If you consider purchasing the Team plan, remember that the trial offers feature
 
 The following Enterprise features are limited or unavailable during the trial:
 
-* [**Single Sign-On (SSO)**](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/)**:** Not available.
-* [**Service Accounts**](../../enterprise-setup/service-accounts/)**:** Not available.
-* [**Group / Multiple Orgs**](../../snyk-admin/groups-and-organizations/)**:** Limited to one Group and one Organization
-* [**Custom Project Tags**](../../snyk-admin/introduction-to-snyk-projects/project-tags.md)**:** Not available.
-* [**Custom User Roles**](../../snyk-admin/user-roles/user-role-management.md): Not available.
-* [**Audit Logging**](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md): Not available.
-* [**Snyk Code Local Engine**](../../scan-with-snyk/snyk-code/snyk-code-local-engine.md): Not available.
-* [**Broker**](../../enterprise-setup/snyk-broker/): Not available.
-* [**Self-hosted Git**](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise.md): Not available.
-* [**Private Registry Integrations**](../../scan-with-snyk/snyk-open-source/package-repository-integrations/): Not available.
-* [**Snyk Essentials Inventory**](../../manage-assets/): Not available
-* [**Snyk Essentials Issue page**](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md): Limited capabilities, the Funnel view, Risk factors, and evidence graph, will not be available.
-
-{% hint style="info" %}
-Need more help? [Contact Snyk Support](https://support.snyk.io).
-{% endhint %}
+* [Single Sign-On (SSO)](../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/): Not available
+* [Service Accounts](../../enterprise-setup/service-accounts/): Not available
+* [Group / Multiple Orgs](../../snyk-admin/groups-and-organizations/): Limited to one Group and one Organization
+* [Custom Project Tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md): Not available
+* [Custom User Roles](../../snyk-admin/user-roles/user-role-management.md): Not available
+* [Audit Logging](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md): Not available
+* Snyk Code Local Engine: Not available
+* [Broker](../../enterprise-setup/snyk-broker/): Not available
+* [Self-hosted Git](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise.md): Not available
+* [Private Registry Integrations](../../scan-with-snyk/snyk-open-source/package-repository-integrations/): Not available
+* [Snyk Essentials Inventory](../../manage-assets/): Not available
+* [Snyk Essentials Issue page](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md): Limited capabilities, the Funnel view, Risk factors, and evidence graph, will not be available.
