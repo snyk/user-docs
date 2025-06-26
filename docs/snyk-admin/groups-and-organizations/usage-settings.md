@@ -62,7 +62,7 @@ By default, all Snyk products are enabled. Any Project that you import and test 
 {% endhint %}
 
 * **Credit usage:** the number of credits used so far and the number of days left on your subscription.
-* **Billable events log:** a detailed list of all events during a billing period.
+* **Billable events log:** a detailed list of all billable events.
 
 You can also see a breakdown of your credit usage and filter the information by Group, Snyk product, or date range.&#x20;
 
