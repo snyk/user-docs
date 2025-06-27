@@ -12,7 +12,7 @@ The application context provides broader access to resources and services in an 
 * Gather relevant information to effectively assess and manage application security vulnerabilities and identify potential risks.
 * Create a streamlined data flow by working cohesively with assets identified through Snyk Essentials SCM integrations
 
-By leveraging Application context, you can achieve a deeper understanding of your application's security posture. After the integration is set, use the application context that can be leveraged across Snyk to classify repositories, set Asset policier, or filter reports.&#x20;
+By leveraging Application context, you can achieve a deeper understanding of your application's security posture. After the integration is set, use the application context that can be leveraged across Snyk to classify repositories, set Asset policies, or filter reports.&#x20;
 
 These are the available integrations that you can set up for the application context:
 
