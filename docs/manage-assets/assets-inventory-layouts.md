@@ -32,7 +32,7 @@ Risk factors for Snyk AppRisk are in Early Access and are available only with Sn
 **Runtime discovered** and **Runtime last seen** filters take their release status from the [runtime integration](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) for which they provide data and are available only for Snyk AppRisk.
 {% endhint %}
 
-You can filter the information for all the inventory tabs and use any of the available filters listed on the [Assets inventory features](assets-inventory-features.md#available-filters) page.
+You can filter the information for all the inventory tabs and use any of the available filters listed on the [Assets inventory features](assets-inventory-features.md#filters-capabilities) page.
 
 ### Inventory Overview&#x20;
 

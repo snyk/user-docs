@@ -59,7 +59,7 @@ For Brokered integrations, the Data Flow section in the inline comments is avail
 {% hint style="info" %}
 **Release status**
 
-Snyk Agent Fix in the PR is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access)  and available only for GitHub Integrations.
+Snyk Agent Fix in the PR is in [Early Access](../../../getting-started/snyk-release-process.md#early-access-features) and available only for GitHub Integrations.
 {% endhint %}
 
 The Snyk Agent Fix in the PR feature enables the user to request and apply fixes for vulnerabilities identified by the Snyk Code Pull Request Check and posted as inline comments. By enabling this feature, the user is able to interact with inline comments in the following way:&#x20;

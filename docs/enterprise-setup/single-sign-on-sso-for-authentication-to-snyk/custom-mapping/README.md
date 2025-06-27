@@ -11,7 +11,7 @@ To understand more about roles and permissions within Snyk, see [Pre-defined rol
 ## Requirements for custom mapping
 
 * Complete the SSO information worksheet for the appropriate IdP (identity provider) found in [Resources for SSO setup](../set-up-snyk-single-sign-on-sso.md#resources-for-sso-setup).
-* Properly configure the custom attributes in your IdP to populate the `roles` array mapping. See [Example: roles array mapping](./#example-roles-array-mapping).
+* Properly configure the custom attributes in your IdP to populate the `roles` array mapping. See [Roles array mapping with Snyk](./#roles-array-mapping-with-snyk).
 
 ## Custom Mapping options
 

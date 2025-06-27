@@ -36,7 +36,7 @@ Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-integrations/
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
-Navigate to the [Snyk Broker - SCM integrations](../../../enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md#scm-integrations) page for more details about installing and configuring Snyk AppRisk using Snyk Broker.
+Navigate to the [Snyk Broker - SCM integrations](../../../enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md) page for more details about installing and configuring Snyk AppRisk using Snyk Broker.
 
 ### Third-party integrations
 
@@ -56,7 +56,7 @@ The Snyk AppRisk functionality is split across several menu options from the Gro
 
 * [Inventory](../../../manage-assets/)
 * [Policies](../../../manage-risk/policies/assets-policies/)
-* [Integrations for SCM](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and for [third-party](../../../integrate-with-snyk/#integrations-for-snyk-apprisk)
+* [Integrations for SCM](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and for [third-party](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md)
 * [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
 * [Analytics](../../../manage-risk/analytics/application-analytics.md)
 
