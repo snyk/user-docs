@@ -1,3 +1,134 @@
+## 2024-10-15 - Updated 2025-07-07
+
+### POST - `/orgs/{org_id}/service_accounts` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `201`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new optional request property `data/attributes/access_token_expires_at`
+
+- added the new `access_token` enum value to the request property `data/attributes/auth_type`
+
+- added the optional property `data/attributes/access_token` to the response with the `201` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `201` status
+
+- added the optional property `data/attributes/created_at` to the response with the `201` status
+
+
+
+### GET - `/orgs/{org_id}/service_accounts` - Updated
+- added the new `access_token` enum value to the `data/items/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/items/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/items/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/items/attributes/created_at` to the response with the `200` status
+
+
+
+### PATCH - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
+
+### POST - `/orgs/{org_id}/service_accounts/{serviceaccount_id}/secrets` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+- added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
+
+
+
+### POST - `/orgs/{org_id}/packages/issues` - Updated
+- added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
+
+
+
+### POST - `/groups/{group_id}/service_accounts` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `201`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new optional request property `data/attributes/access_token_expires_at`
+
+- added the new `access_token` enum value to the request property `data/attributes/auth_type`
+
+- added the optional property `data/attributes/access_token` to the response with the `201` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `201` status
+
+- added the optional property `data/attributes/created_at` to the response with the `201` status
+
+
+
+### GET - `/groups/{group_id}/service_accounts` - Updated
+- added the new `access_token` enum value to the `data/items/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/items/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/items/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/items/attributes/created_at` to the response with the `200` status
+
+- added the optional property `meta` to the response with the `200` status
+
+
+
+### PATCH - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
+
+### GET - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
+
+### POST - `/groups/{group_id}/service_accounts/{serviceaccount_id}/secrets` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
 # Changelog
 
 ### 2024-10-15 - Updated 2025-06-12
