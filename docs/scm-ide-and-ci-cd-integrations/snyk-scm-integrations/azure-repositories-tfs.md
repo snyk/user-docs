@@ -121,7 +121,7 @@ The Integrations page shows all active integrations, including data from your ex
 
 * Repository - the pulled entity retrieved by Snyk Essentials.
 
-#### Integrate using Snyk Essentials <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
+#### Integrate using Snyk Essentials
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
 2. Organizations (`mandatory`): Input the names of all the relevant Azure DevOps organizations.
