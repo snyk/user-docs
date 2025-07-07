@@ -40,7 +40,7 @@ Be sure to set your environment variables to make usage easier, including when y
 
 `- export TENANT_ID=yyyy (Linux/Mac)`
 
-`- set SNYK_TOKEN=xxxx (Wiindows)`
+`- set SNYK_TOKEN=xxxx (Windows)`
 
 `- set TENANT_ID=yyyy (Windows)`
 
