@@ -6,7 +6,7 @@
 Snyk Broker Container Registry Agent is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-The Snyk Broker Container Registry Agent enables you to establish connection with network-restricted container registries so you can scan these registries using the Snyk service.
+The Snyk Broker Container Registry Agent enables you to connect with network-restricted container registries so you can scan these registries using the Snyk service.
 
 When you use the Container Registry Agent, Snyk can integrate with private container registries that you host, and help you to better secure container images in those registries. Integration with private container registries allows you to:
 
@@ -47,17 +47,15 @@ Using the Snyk Broker Container Registry Agent you can integrate Snyk with the f
 
 Artifactory and Nexus are also available as private package repositories with Broker options. The Brokers required for the Container Registry must be those specified in [Prerequisites for Container Registry Agent](./#prerequisites-for-container-registry-agent), not the Brokers for `snyk/broker:artifactory` or `snyk/broker:nexus`.
 
-GitHub Container registry and GitLab Container Registry do not follow Docker v2 API; they do not have the /v2/\_catalog endpoint. Thus, it is not possible to list images in repos, and you must manually specify the images you wish to scan.
+GitHub Container Registry and GitLab Container Registry do not follow Docker v2 API; they do not have the /v2/\_catalog endpoint. Thus, it is not possible to list images in repos, and you must manually specify the images you wish to scan.
 
 ## Prerequisites for Container Registry Agent
-
-To set up the Snyk Broker and the Container Registry Agent, you must have a Broker token. Contact [Snyk Support](https://support.snyk.io) to obtain your Broker token.
 
 {% hint style="warning" %}
 For the Container Registry Agent to work, you must have two separate containers deployed in your infrastructure, creating two separate services. For details, see [Components of the network-restricted container registries solution](./#components-of-the-network-restricted-container-registries-solution).
 {% endhint %}
 
-The system and software requirements to set up and run the Snyk Broker Container Registry Agent are as follows;
+The system and software requirements to set up and run the Snyk Broker Container Registry Agent are as follows:
 
 * Broker Client machine system requirements: 1 CPU, 256MB of RAM
 * Container registry agent machine system requirements should be (given MAX\_ACTIVE\_OPERATIONS=1):
@@ -67,8 +65,9 @@ The system and software requirements to set up and run the Snyk Broker Container
 * Container registry credentials that have list and pull images permissions
 * Connection between Broker and Agent
 * HTTPS connection between the Agent and the registry. For HTTP-only registries, deploy a reverse proxy between the Agent and the container registry.
-* [Download for the Broker Client image on Docker](https://hub.docker.com/r/snyk/broker/tags?page=1\&ordering=last_updated\&name=container-registry-agent) : snyk/broker:container-registry-agent (if using Docker)
-* [Download for the Container Registry Agent image on Docker](https://hub.docker.com/r/snyk/container-registry-agent/tags?page=1\&ordering=last_updated) : snyk/container-registry-agent:latest If using Docker)
+* If using Classic Broker for Docker, use image `snyk/broker:container-registry-agent` when deploying the Broker client.&#x20;
+* If using Universal Broker: for Docker, use image `snyk/broker:universal` when deploying the Broker client.
+* [Download for the Container Registry Agent image on Docker](https://hub.docker.com/r/snyk/container-registry-agent/tags?page=1\&ordering=last_updated) and use the `snyk/container-registry-agent:latest` command if you use Docker.
 
 {% hint style="info" %}
 **Scaling to adjust scan capacity**
@@ -78,24 +77,58 @@ With the listed configuration of 1 vCPU and 2GB RAM, scanning capacity would be 
 
 ## Set up the remote connection for Container Registry Agent using Docker
 
-### Configuring and running the Broker Client for Container Registry Agent
+### Configuring and running **the Container Registry Agent**
+
+Snyk recommends deploying the Container Registry Agent first as both Universal and Classic Broker requires configuration input from that deployment, namely the Container Registry Agent URL. You can pull the Container Registry Agent image from Docker Hub using the link provided in the [prerequisites](./#prerequisites-for-container-registry-agent).
+
+To configure the Container Registry Agent, the following environment variables are available:
+
+* `SNYK_PORT` - the local port at which the Container Registry Agent accepts connections (default value: 17500).
+* `SNYK_MAX_IMAGE_SIZE_IN_BYTES` - the maximum size of an image that Snyk is able to scan (optional, default value: 2147483648).
+
+Run the Container Registry Agent container with the relevant configuration:
+
+```
+docker run --restart=always \
+       -p 8081:8081 \
+       -e SNYK_PORT=8081 \
+       snyk/container-registry-agent:latest
+```
+
+### Universal Broker
+
+Deploy the Universal Broker by following the installation instructions available on the [Universal Broker ](../universal-broker/)page. The `snyk-broker-config` CLI tool guides you through the process of submitting and storing all configuration details needed to connect the Broker Client to the Container Registry Agent and the Container Registry.
+
+You must provide the following details while creating your connection:
+
+* `CR_AGENT_URL` - The URL of your Container Registry Agent you have deployed above, including scheme and port, to which the Broker Client routes the requests, for example, "http://my.container-registry-agent:8081".
+* `CR_BASE` - The hostname of the container registry API to connect to, for example, "cr.host.com".
+* `CR_USERNAME` - The username for authenticating to the container registry API.
+* `CR_PASSWORD` - The password credential reference for authenticating to the container registry API.
+* `CR_TOKEN` - The authentication token credential reference, if required for the specific connection type.
+
+### Classic Broker
+
+To set up the Snyk Classic Broker and the Container Registry Agent, you must have a Broker token. Contact [Snyk Support](https://support.snyk.io) to obtain your Broker token.
+
+#### Configuring and running the Broker Client for Container Registry Agent
 
 To use the Broker Client with a Container Registry Agent deployment, run `docker pull snyk/broker:container-registry-agent` if you have not already done so as a [prerequisite](./#prerequisites-for-container-registry-agent).
 
 The following environment variables are required to configure the Broker Client.
 
 {% hint style="info" %}
-For DigitalOcean Container Registry, Google Cloud Container Registry, Google Artifact Registry, and Artifactory, there are a few values to note; see [Container registry-specific configurations](./#container-registry-specific-configurations). For Elastic Container Registry, additional setup is required. [Specific configurations](./#container-registry-specific-configurations) are also provided.
+[Container registry-specific configurations](./#container-registry-specific-configurations) are needed for DigitalOcean Container Registry, Google Cloud Container Registry, Google Artifact Registry, and Artifactory. For Elastic Container Registry, additional setup is required, while [specific configurations](./#container-registry-specific-configurations) are also provided.
 {% endhint %}
 
 * `BROKER_TOKEN` - The Snyk Broker token, obtained from your Container registry integration provided by Snyk support.
-* `BROKER_CLIENT_URL` - The URL of your Broker Client, including scheme and port, which is used by the container registry agent to call back to Snyk through the brokered connection, for example:\
-  "[http://my.broker.client:8000](http://my.broker.client:8000)".
+* `BROKER_CLIENT_URL` - The URL of your Broker Client, including scheme and port, which is used by the container registry agent to call back to Snyk through the brokered connection, for example,\
+  "http://my.broker.client:8000".
   * This must have `http://` and the port number.
   * [Additional settings](../https-for-broker-client-with-docker.md) are required to configure the client with HTTPS.
-* `CR_AGENT_URL` - The URL of your Container Registry Agent, including scheme and port, to which the Broker Client will route the requests, for example: "[http://my.container-registry-agent](http://my.container-registry-agent):8081".
-* `CR_TYPE` - The container registry type as listed in [Supported container registries](./#supported-container-registries) on this page, for example: "docker-hub", "gcr," "artifactory-cr".
-* `CR_BASE` - The hostname of the container registry api to connect to, for example: "cr.host.com".
+* `CR_AGENT_URL` - The URL of your Container Registry Agent, including scheme and port, to which the Broker Client routes the requests, for example "http://my.container-registry-agent:8081".
+* `CR_TYPE` - The container registry type as listed in [Supported container registries](./#supported-container-registries) on this page, for example, "docker-hub", "gcr," "artifactory-cr".
+* `CR_BASE` - The hostname of the container registry API to connect to, for example, "cr.host.com".
 * `CR_USERNAME` - The username for authenticating to the container registry API.
 * `CR_PASSWORD` - The password for authenticating to the container registry API.
 * `CR_TOKEN` - Authentication token for the DigitalOcean container registry.
@@ -118,41 +151,23 @@ docker run --restart=always \
        snyk/broker:container-registry-agent
 ```
 
-### Configuring and running **the Container Registry Agent**
-
-You can pull the Container Registry Agent image from Docker Hub using the link provided in the [prerequisites](./#prerequisites-for-container-registry-agent).
-
-To configure the Container Registry Agent, the following environment variables are required:
-
-* `SNYK_PORT` - the local port at which the Container Registry Agent accepts connections (default value: 17500).
-* `SNYK_MAX_IMAGE_SIZE_IN_BYTES` - the maximum size of an image that Snyk is able to scan (default value: 2147483648).
-
-Run the Container Registry Agent container with the relevant configuration:
-
-```
-docker run --restart=always \
-       -p 8081:8081 \
-       -e SNYK_PORT=8081 \
-       snyk/container-registry-agent:latest
-```
-
 ## Container registry-specific configurations
 
-The following container registries require specific environment variables, setup, or both.
+The following container registries require specific environment variables, setup, or both, and are valid for both the Universal and Classic Broker.
 
 ### **DigitalOcean Container Registry**
 
-`CR_USERNAME` and `CR_PASSWORD` are not required to set up the Broker Client for DigitalOcean Container Registry. Instead, specify `CR_TOKEN`, the Digital Ocean authentication token.
+`CR_USERNAME` and `CR_PASSWORD` are not required to set up the Broker Client for DigitalOcean Container Registry. Instead, specify the `CR_TOKEN`, the Digital Ocean authentication token.
 
 ### **GCR and Google Artifact Registry**
 
-All the preceding information applies to setting up the Broker Client for these container registries. Note that the `CR_USERNAME` value is permanent and should be `_json_key`, and the `CR_PASSWORD` value should be the JSON key used to authenticate to Google.
+All the preceding information applies to setting up the Broker Client for these container registries. The `CR_USERNAME` value is permanent and should be `_json_key`, and the `CR_PASSWORD` value should be the JSON key used to authenticate to Google.
 
 ### **JFrog Container Registry (Artifactory)**
 
 If you are using `Repository path` as your Docker access method, set the container registry hostname in the `CR_BASE` variable in this structure: `<your artifactory host>/artifactory/api/docker/<artifactory-repo-name>`
 
-Note that the catalog endpoint `/artifactory/api/docker/<artifactory-repository>/v2/_catalog` is not required for importing a project in Artifactory; this is used for listing the image repositories.
+The catalog endpoint `/artifactory/api/docker/<artifactory-repository>/v2/_catalog` is not required for importing a Project in Artifactory. The catalog endpoint is used for listing the image repositories.
 
 See [Configuring your JFrog Artifactory container registry integration](../../../scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-jfrog-artifactory/configuring-your-jfrog-artifactory-container-registry-integration.md) for more details.
 
@@ -188,7 +203,7 @@ ECR setup requires that the following kinds of IAM resources be created:
 
 #### **Setup steps for ECR**
 
-The resources described can be used as follows so that a single Container Registry Agent instance can access ECR repositories located in different accounts.
+The resources described can be used as follows, so that a single Container Registry Agent instance can access ECR repositories located in different accounts.
 
 **Run this step once only.** Create the Container Registry Agent IAM Role or IAM User and use it to run the Container Registry Agent. The IAM Role or IAM User could be provided to the Container Registry Agent using one of the methods described in the [AWS docs](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
 

@@ -6,9 +6,48 @@ You can learn more about Universal Broker in the dedicated Snyk Learn course. Ex
 
 Follow these steps to install and configure your Universal Broker using the `snyk-broker-config` CLI tool. The tool guides you through the steps and indicates important points in the workflows.
 
-## Install the snyk-broker-config CLI tool
+## Install and set up the snyk-broker-config CLI tool
 
 To install the tool, use `npm i -g snyk-broker-config`.
+
+{% hint style="info" %}
+The `snyk-broker-config` CLI tool is your primary guide for setting up and managing Snyk Broker connections. It is designed to walk you step-by-step through the process, asking for the required information for each integration type. This adaptive method guarantees that you receive the latest parameter requirements directly from the tool.
+{% endhint %}
+
+### How to use the CLI for parameter discovery
+
+Even if you are not running the full setup, the Snyk CLI can help you understand the required parameters. Use the interactive setup or the command line help.
+
+* **Interactive setup:** Run `snyk-broker-config workflows connections create` and follow the prompts. The CLI asks for all required and optional parameters based on the integration type you select, such as GitLab, Artifactory, or Bitbucket Server.
+*   **Command line help:** Use the `--help` flag for any `snyk-broker-config` command to see available options and parameters. For instance, to see parameters specifically relevant for creating a GitLab connection type, use the following command:
+
+    ```bash
+    snyk-broker-config workflows connections create --type gitlab --help
+    ```
+
+### Example of a connection workflow
+
+A typical workflow for adding a new Broker connection using the CLI involves these steps:
+
+1.  **Install the CLI:**
+
+    ```bash
+    npm install -g snyk-broker-config
+    ```
+2.  **Start the interactive workflow:**
+
+    ```bash
+    snyk-broker-config workflows connections create
+    ```
+
+    The CLI will then guide you through the process, prompting for:
+
+    * Your Snyk API Token, required for authentication.
+    * The Snyk Organization ID where the Broker connection is used.
+    * The specific type of integration you want to connect, such as `gitlab`, `artifactory`, `bitbucket-server`.
+    * All required and optional parameters, such as URLs, tokens, usernames, or passwords, are dynamically identified for your chosen integration type. Follow the on-screen instructions carefully.
+
+The interactive workflow is the most straightforward way to ensure all necessary parameters are correctly provided for your Broker connection.
 
 ## Create your first connection
 

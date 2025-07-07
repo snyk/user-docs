@@ -1,4 +1,4 @@
-# Using the API to set up a GitHub connection&#x20;
+# Using the API to set up a GitHub connection
 
 This page provides an example of using the API to set up a GitHub connection with the Universal Broker. Repeat connecting your Organization for as many integrations as needed.
 
@@ -12,9 +12,7 @@ In any of the calls that follow, replace `api.snyk.io` with your regional equiva
 
 The Universal Broker App facilitates the secure connection and communication with the Broker server through OAuth.
 
-Install the Broker App at the Organization level. Group-level installation is not supported. Use the endpoint [Install a Snyk App to this Organization](../../../../snyk-api/reference/apps.md#post-orgs-org_id-apps-installs).  The following is the App ID to use when you call the API:
-
-`Snyk Broker App ID: cb43d761-bd17-4b44-9b6c-e5b8ad077d33`
+Install the Broker App at the Organization level. Group-level installation is not supported. Use the endpoint [Install a Snyk App to this Organization](../../../../snyk-api/reference/apps.md#post-orgs-org_id-apps-installs).  Use the Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-client-urls).
 
 ## Create your deployment <a href="#id-2-create-your-deployment" id="id-2-create-your-deployment"></a>
 
@@ -62,7 +60,7 @@ At this point, you can start running the Broker client.
 
 ## Run your Broker deployment <a href="#run-your-broker-deployment_1" id="run-your-broker-deployment_1"></a>
 
-Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` if needed. For a list of URLs, see [Broker URLs](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-urls).
+Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` if needed. For a list of URLs, see [Broker server URLs](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).
 
 | <pre><code>docker run --restart=always \
     -p 8000:8000 \
@@ -205,7 +203,7 @@ If your credential reference is missing, you will get the following message:
 </code></pre> |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-When you update an envrionment variable you must restart your Broker. See [Restart your Broker for a new environment variable](restart-your-broker-for-a-new-environment-variable.md).
+When you update an envrionment variable you must restart your Broker. See [Restart your Broker for a new environment variable](../restart-your-broker-for-a-new-environment-variable.md).
 
 You can now use the connection in an Organization integration.
 
