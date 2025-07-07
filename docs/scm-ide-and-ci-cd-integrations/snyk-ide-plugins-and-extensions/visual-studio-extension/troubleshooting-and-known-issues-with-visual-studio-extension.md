@@ -33,27 +33,35 @@ Snyk plugins are not supported on any operating system that has reached End Of L
 When you enable `debug`, your code may be logged in the IDE log files, for example, the `snyk-extension.log` file.
 {% endhint %}
 
-To enable the debug log level,  you can add `-d` parameter through the **Extension Settings**, **Solution Settings**, **Additional Parameters**.
+To enable Snyk Language Server debug logs in Visual Studio, add `-d` parameter through the **Snyk** **Extension Settings** > **Solution Settings** > **Additional Parameters**.
 
 <figure><img src="../../../.gitbook/assets/debug_logs.png" alt=""><figcaption><p>Adding the debug parameter</p></figcaption></figure>
 
-You must restart the IDE after you add this parameter and click **OK**.
+Press OK and restart the IDE after adding the parameter.
 
-You can find logs in the user AppData directory:
+#### **View Log file**
 
-```
-%HOMEPATH%\AppData\Local\Snyk\snyk-extension.log
-```
+You can find logs in the user's AppData directory:
 
-### Visual Studio versions explained
+<pre><code><strong>%HOMEPATH%\AppData\Local\Snyk\snyk-extension.log
+</strong></code></pre>
+
+#### **View Logs in the Output view**
+
+* From the main menu, navigate to **View** > **Output**.
+* In the Output panel, select the Snyk language server from the dropdown list to see its logs.
+
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Visual Studio Output window with the Snyk Language Server debug logs</p></figcaption></figure>
+
+### Visual Studio versions
 
 #### Where to find the current VS version <a href="#where-to-find-the-current-vs-version" id="where-to-find-the-current-vs-version"></a>
 
-Go to `Help → About Microsoft Visual Studio`. It should open this window:
+Navigate to **Help** > **About Microsoft Visual Studio** to open the window with information about the IDE, including the version.
 
 <figure><img src="../../../.gitbook/assets/image (486).png" alt="Visual Studio verson information"><figcaption><p>Visual Studio verson information</p></figcaption></figure>
 
-If you are communicating with Snyk Support, they need the version number highlighted at the top left in the screen image. This is the VS version.
+If you are communicating with Snyk Support, provide the version number highlighted at the top left in the screen image. This is the VS version.
 
 #### Version numbers explained <a href="#version-numbers-explained" id="version-numbers-explained"></a>
 
@@ -69,15 +77,15 @@ The other two parts of the version are the `minor` and the `revision` parts.
 
 For example, your current version may be VS 2022. The version is 17.2.6, so the `minor` is `2` and the `revision` is `6`.
 
-#### How to upgrade
+#### How to update
 
-Go to **Help > Check for Updates**. A window opens, stating whether VS is up to date or whether an update is needed.
+Navigate to **Help** > **Check for Updates**. A window opens, stating whether VS is up to date or whether an update is needed.
 
 #### What version does Snyk support? <a href="#what-does-snyk-support" id="what-does-snyk-support"></a>
 
-Snyk supports the latest version for VS 2015, 2017, 2019, and 2022, as long as the user is on the latest minor and revision version. An upgrade can ensure that.
+Snyk supports the latest version for VS 2015, 2017, 2019, and 2022, as long as the user is on the latest minor and revision version. An update can ensure that.
 
-If a user has a bug with the Snyk plugin, especially bugs where the plugin fails to load, and there are errors about missing files, DLLs, or both, typically, the bug can be resolved by upgrading Visual Studio
+If a user has a bug with the Snyk plugin, especially bugs where the plugin fails to load, and there are errors about missing files, DLLs, or both, typically, the bug can be resolved by updating Visual Studio.
 
 ### Snyk Code ignores
 

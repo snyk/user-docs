@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # OAuth 2.0 authentication does not work
 
 ## A new browser tab does not open automatically  <a href="#windows" id="windows"></a>

@@ -4,31 +4,27 @@
 Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.
 {% endhint %}
 
-## Get detailed logs: debug logs
+## Get detailed debug logs
 
 {% hint style="warning" %}
 When you enable `debug`, your code may be logged in the IDE log files, for example, the `idea.log` file.
 {% endhint %}
 
-Each JetBrains IDE provides easy access to the logs.
+To enable Snyk Language Server debug logs in the JetBrains IDEs, change the log level to debug using the IDE by navigating to Debug Log Settings (Custom Debug Log Configuration).&#x20;
 
-Follow these steps to set logging to the debug level.
+Press the Shift key twice quickly and select the **Actions** tab. Then search for **Debug**. Alternatively, select the Debug Log Settings in the menu (not available in JetBrains Rider).
 
-To obtain plugin logs, navigate to **Help** > **Show Log in Finder** (Mac) or **Show Log in Explorer** (Windows).
+<figure><img src="../../../.gitbook/assets/image (488).png" alt="Actions tab"><figcaption><p>Use Actions tab to open Debug Log Settings</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (487).png" alt="Show log in Finder" width="323"><figcaption><p>Show log in Finder</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (489).png" alt="Search for action"><figcaption><p>Go to Custom Debug Log Configuration from Debug Log Settings</p></figcaption></figure>
 
-You can change the log level to debug using the IDE. Press `Shift Shift` quickly and select the **Actions** tab. Then search for **Debug**. Alternatively, select the debug log settings in the menu (not available in JetBrains Rider).
+Entering `Snyk Language Server` on its own line will enable debug logging of the Language Server. Restart the IDE to reload the Snyk Language Server with the new debug level logging enabled.
 
-<figure><img src="../../../.gitbook/assets/image (488).png" alt="Actions tab"><figcaption><p>Actions tab</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (490).png" alt="Snyk Language Server configuration"><figcaption><p>Snyk Language Server configuration set to Debug Mode in the Custom Debug Log Configuration</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (489).png" alt="Search for action"><figcaption><p>Find the action</p></figcaption></figure>
+To view the debug logs, navigate to **Help** > **Show Log** in the Finder (Mac) or **Show Log** in the Explorer (Windows). Then open the files idea.log, **idea.1.log**, and so on, in the folder.
 
-* **Snyk Code** enables normal debug logging (only until plugin version 2.6.0).
-* **Snyk CodeRequestLogging** enables a detailed protocol of the HTTP requests when communicating with the Snyk Code API (only until plugin version 2.6.0).
-* **Snyk Language Server** enables debug logging of the Language Server in the background.
-
-<figure><img src="../../../.gitbook/assets/image (490).png" alt="Snyk Language Server configuration"><figcaption><p>Snyk Language Server configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (487).png" alt="Show log in Finder" width="323"><figcaption><p>Opens the Intellij logs folder</p></figcaption></figure>
 
 ## Trusted root certificates issues
 
