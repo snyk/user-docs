@@ -293,6 +293,13 @@
           "type": "string"
         }
       },
+      "RetryAfter": {
+        "description": "Retry after seconds",
+        "example": 45,
+        "schema": {
+          "type": "integer"
+        }
+      },
       "SunsetHeader": {
         "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
         "example": "2021-08-02",
@@ -1593,6 +1600,113 @@
         "schema": {
           "$ref": "#/components/schemas/QueryVersion"
         }
+      },
+      "exportId": {
+        "description": "Unique export identifier",
+        "in": "path",
+        "name": "export_id",
+        "required": true,
+        "schema": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
+      "groupId": {
+        "description": "Group ID",
+        "in": "path",
+        "name": "group_id",
+        "required": true,
+        "schema": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
+      "include_deactivated": {
+        "description": "Optional parameter to include disabled issues in results",
+        "in": "query",
+        "name": "include_deactivated",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "include_deleted": {
+        "description": "Optional parameter to include deleted issues in results",
+        "in": "query",
+        "name": "include_deleted",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "orgId": {
+        "description": "Org ID",
+        "in": "path",
+        "name": "org_id",
+        "required": true,
+        "schema": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    },
+    "requestBodies": {
+      "CreateGroupExport": {
+        "content": {
+          "application/vnd.api+json": {
+            "schema": {
+              "properties": {
+                "data": {
+                  "properties": {
+                    "attributes": {
+                      "$ref": "#/components/schemas/ExportGroupAttributes"
+                    },
+                    "type": {
+                      "$ref": "#/components/schemas/Types"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "attributes"
+                  ],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "data"
+              ],
+              "type": "object"
+            }
+          }
+        }
+      },
+      "CreateOrgExport": {
+        "content": {
+          "application/vnd.api+json": {
+            "schema": {
+              "properties": {
+                "data": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "attributes": {
+                      "$ref": "#/components/schemas/ExportOrgAttributes"
+                    },
+                    "type": {
+                      "$ref": "#/components/schemas/Types"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "attributes"
+                  ],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "data"
+              ],
+              "type": "object"
+            }
+          }
+        }
       }
     },
     "responses": {
@@ -1979,6 +2093,96 @@
           }
         }
       },
+      "CreateExport": {
+        "content": {
+          "application/vnd.api+json": {
+            "schema": {
+              "properties": {
+                "data": {
+                  "description": "export resource object",
+                  "properties": {
+                    "attributes": {
+                      "example": {
+                        "created": "2022-01-14T00:23:50Z"
+                      },
+                      "properties": {
+                        "created": {
+                          "format": "date-time",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "created"
+                      ],
+                      "type": "object"
+                    },
+                    "id": {
+                      "example": "d5b640e5-d88c-4c17-9bf0-93597b7a1ce2",
+                      "format": "uuid",
+                      "type": "string"
+                    },
+                    "links": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "self": {
+                          "example": "/orgs/826e79b7-0073-44c3-a5ea-e0aa8a3dbf38/export/jobs/4d593250-aaf3-48ec-bf5a-1d9a7c0f80db",
+                          "format": "uri",
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "type": {
+                      "$ref": "#/components/schemas/Types"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "type"
+                  ],
+                  "type": "object"
+                },
+                "jsonapi": {
+                  "$ref": "#/components/schemas/JsonApi"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "Created an Export successfully",
+        "headers": {
+          "content-location": {
+            "$ref": "#/components/headers/LocationHeader"
+          },
+          "deprecation": {
+            "$ref": "#/components/headers/DeprecationHeader"
+          },
+          "retry-after": {
+            "description": "A header providing guidance on how long to wait before retrying the request\n",
+            "schema": {
+              "example": "10",
+              "format": "number",
+              "type": "string"
+            }
+          },
+          "snyk-request-id": {
+            "$ref": "#/components/headers/RequestIdResponseHeader"
+          },
+          "snyk-version-lifecycle-stage": {
+            "$ref": "#/components/headers/VersionStageResponseHeader"
+          },
+          "snyk-version-requested": {
+            "$ref": "#/components/headers/VersionRequestedResponseHeader"
+          },
+          "snyk-version-served": {
+            "$ref": "#/components/headers/VersionServedResponseHeader"
+          },
+          "sunset": {
+            "$ref": "#/components/headers/SunsetHeader"
+          }
+        }
+      },
       "Forbidden": {
         "content": {
           "application/vnd.api+json": {
@@ -1989,6 +2193,253 @@
         },
         "description": "Forbidden: the request requires an authentication token with more or different permissions.",
         "headers": {
+          "deprecation": {
+            "$ref": "#/components/headers/DeprecationHeader"
+          },
+          "snyk-request-id": {
+            "$ref": "#/components/headers/RequestIdResponseHeader"
+          },
+          "snyk-version-lifecycle-stage": {
+            "$ref": "#/components/headers/VersionStageResponseHeader"
+          },
+          "snyk-version-requested": {
+            "$ref": "#/components/headers/VersionRequestedResponseHeader"
+          },
+          "snyk-version-served": {
+            "$ref": "#/components/headers/VersionServedResponseHeader"
+          },
+          "sunset": {
+            "$ref": "#/components/headers/SunsetHeader"
+          }
+        }
+      },
+      "GetExport": {
+        "content": {
+          "application/vnd.api+json": {
+            "schema": {
+              "properties": {
+                "data": {
+                  "description": "export resource object",
+                  "properties": {
+                    "attributes": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "created": {
+                          "format": "date-time",
+                          "type": "string"
+                        },
+                        "date_range": {
+                          "deprecated": true,
+                          "properties": {
+                            "end": {
+                              "format": "date-time",
+                              "type": "string"
+                            },
+                            "start": {
+                              "format": "date-time",
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "finished": {
+                          "format": "date-time",
+                          "type": "string"
+                        },
+                        "formats": {
+                          "items": {
+                            "enum": [
+                              "csv"
+                            ],
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "introduced_date_range": {
+                          "properties": {
+                            "from": {
+                              "format": "date-time",
+                              "type": "string"
+                            },
+                            "to": {
+                              "format": "date-time",
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "results": {
+                          "items": {
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "row_count": {
+                          "type": "integer"
+                        },
+                        "status": {
+                          "enum": [
+                            "PENDING",
+                            "FINISHED",
+                            "ERRORED"
+                          ],
+                          "type": "string"
+                        },
+                        "updated_date_range": {
+                          "properties": {
+                            "from": {
+                              "format": "date-time",
+                              "type": "string"
+                            },
+                            "to": {
+                              "format": "date-time",
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      },
+                      "required": [
+                        "status",
+                        "row_count"
+                      ],
+                      "type": "object"
+                    },
+                    "id": {
+                      "example": "d5b640e5-d88c-4c17-9bf0-93597b7a1ce2",
+                      "format": "uuid",
+                      "type": "string"
+                    },
+                    "type": {
+                      "$ref": "#/components/schemas/Types"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "type"
+                  ],
+                  "type": "object"
+                },
+                "jsonapi": {
+                  "$ref": "#/components/schemas/JsonApi"
+                },
+                "links": {
+                  "properties": {
+                    "self": {
+                      "example": "/orgs/826e79b7-0073-44c3-a5ea-e0aa8a3dbf38/export/4d593250-aaf3-48ec-bf5a-1d9a7c0f80db",
+                      "format": "uri",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "Getting an export job results",
+        "headers": {
+          "content-location": {
+            "$ref": "#/components/headers/LocationHeader"
+          },
+          "deprecation": {
+            "$ref": "#/components/headers/DeprecationHeader"
+          },
+          "snyk-request-id": {
+            "$ref": "#/components/headers/RequestIdResponseHeader"
+          },
+          "snyk-version-lifecycle-stage": {
+            "$ref": "#/components/headers/VersionStageResponseHeader"
+          },
+          "snyk-version-requested": {
+            "$ref": "#/components/headers/VersionRequestedResponseHeader"
+          },
+          "snyk-version-served": {
+            "$ref": "#/components/headers/VersionServedResponseHeader"
+          },
+          "sunset": {
+            "$ref": "#/components/headers/SunsetHeader"
+          }
+        }
+      },
+      "GetExportJob": {
+        "content": {
+          "application/vnd.api+json": {
+            "schema": {
+              "properties": {
+                "data": {
+                  "description": "export resource object",
+                  "properties": {
+                    "attributes": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "created": {
+                          "format": "date-time",
+                          "type": "string"
+                        },
+                        "formats": {
+                          "items": {
+                            "enum": [
+                              "csv"
+                            ],
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "status": {
+                          "enum": [
+                            "PENDING",
+                            "FINISHED",
+                            "ERRORED",
+                            "STARTED"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "status"
+                      ],
+                      "type": "object"
+                    },
+                    "id": {
+                      "example": "d5b640e5-d88c-4c17-9bf0-93597b7a1ce2",
+                      "format": "uuid",
+                      "type": "string"
+                    },
+                    "type": {
+                      "$ref": "#/components/schemas/Types"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "type"
+                  ],
+                  "type": "object"
+                },
+                "jsonapi": {
+                  "$ref": "#/components/schemas/JsonApi"
+                },
+                "links": {
+                  "properties": {
+                    "self": {
+                      "example": "/orgs/826e79b7-0073-44c3-a5ea-e0aa8a3dbf38/export/4d593250-aaf3-48ec-bf5a-1d9a7c0f80db",
+                      "format": "uri",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "Getting an export job status",
+        "headers": {
+          "content-location": {
+            "$ref": "#/components/headers/LocationHeader"
+          },
           "deprecation": {
             "$ref": "#/components/headers/DeprecationHeader"
           },
@@ -2164,6 +2615,39 @@
         "headers": {
           "deprecation": {
             "$ref": "#/components/headers/DeprecationHeader"
+          },
+          "snyk-request-id": {
+            "$ref": "#/components/headers/RequestIdResponseHeader"
+          },
+          "snyk-version-lifecycle-stage": {
+            "$ref": "#/components/headers/VersionStageResponseHeader"
+          },
+          "snyk-version-requested": {
+            "$ref": "#/components/headers/VersionRequestedResponseHeader"
+          },
+          "snyk-version-served": {
+            "$ref": "#/components/headers/VersionServedResponseHeader"
+          },
+          "sunset": {
+            "$ref": "#/components/headers/SunsetHeader"
+          }
+        }
+      },
+      "TooManyRequests": {
+        "content": {
+          "application/vnd.api+json": {
+            "schema": {
+              "$ref": "#/components/schemas/ErrorDocument"
+            }
+          }
+        },
+        "description": "Too many requests",
+        "headers": {
+          "deprecation": {
+            "$ref": "#/components/headers/DeprecationHeader"
+          },
+          "retry-after": {
+            "$ref": "#/components/headers/RetryAfter"
           },
           "snyk-request-id": {
             "$ref": "#/components/headers/RequestIdResponseHeader"
@@ -4048,6 +4532,49 @@
           "type",
           "required"
         ],
+        "type": "object"
+      },
+      "BaseFilters": {
+        "properties": {
+          "environment": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "introduced": {
+            "properties": {
+              "from": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "to": {
+                "format": "date-time",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "lifecycle": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "updated": {
+            "properties": {
+              "from": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "to": {
+                "format": "date-time",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
         "type": "object"
       },
       "BitbucketServer": {
@@ -7120,6 +7647,191 @@
         },
         "type": "object"
       },
+      "ExportGroupAttributes": {
+        "example": {
+          "columns": [
+            "ISSUE_SEVERITY_RANK",
+            "ISSUE_SEVERITY",
+            "SCORE",
+            "PROBLEM_TITLE",
+            "CVE",
+            "CWE",
+            "PROJECT_NAME",
+            "PROJECT_URL",
+            "EXPLOIT_MATURITY",
+            "AUTOFIXABLE",
+            "FIRST_INTRODUCED",
+            "PRODUCT_NAME",
+            "ISSUE_URL",
+            "ISSUE_STATUS_INDICATOR",
+            "ISSUE_TYPE"
+          ],
+          "dataset": "issue_detail",
+          "destination": {
+            "file_name": "test_export",
+            "type": "snyk"
+          },
+          "filters": {
+            "general": {
+              "orgs": [
+                "985cdc6d-a88f-4af8-aa8b-37b22e2425aa",
+                "4aa34312-7ded-4fd7-bca8-93eaab3e08d5"
+              ]
+            },
+            "issues": {
+              "introduced": {
+                "from": "2024-01-01T00:00:00Z",
+                "to": "2024-01-31T00:00:00Z"
+              }
+            },
+            "projects": {
+              "environment": [
+                "BACKEND",
+                "EXTERNAL"
+              ],
+              "lifecycle": [
+                "PRODUCTION"
+              ]
+            }
+          },
+          "formats": [
+            "csv"
+          ]
+        },
+        "properties": {
+          "columns": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "dataset": {
+            "type": "string"
+          },
+          "destination": {
+            "properties": {
+              "file_name": {
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "snyk"
+                ],
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "filters": {
+            "$ref": "#/components/schemas/GroupFilters"
+          },
+          "formats": {
+            "items": {
+              "enum": [
+                "csv"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "formats",
+          "dataset",
+          "destination"
+        ],
+        "type": "object"
+      },
+      "ExportOrgAttributes": {
+        "example": {
+          "columns": [
+            "ISSUE_SEVERITY_RANK",
+            "ISSUE_SEVERITY",
+            "SCORE",
+            "PROBLEM_TITLE",
+            "CVE",
+            "CWE",
+            "PROJECT_NAME",
+            "PROJECT_URL",
+            "EXPLOIT_MATURITY",
+            "AUTOFIXABLE",
+            "FIRST_INTRODUCED",
+            "PRODUCT_NAME",
+            "ISSUE_URL",
+            "ISSUE_STATUS_INDICATOR",
+            "ISSUE_TYPE"
+          ],
+          "dataset": "issue_detail",
+          "destination": {
+            "file_name": "test_export",
+            "type": "snyk"
+          },
+          "filters": {
+            "issues": {
+              "introduced": {
+                "from": "2024-01-01T00:00:00Z",
+                "to": "2024-01-31T00:00:00Z"
+              }
+            },
+            "projects": {
+              "environment": [
+                "BACKEND",
+                "EXTERNAL"
+              ],
+              "lifecycle": [
+                "PRODUCTION"
+              ]
+            }
+          },
+          "formats": [
+            "csv"
+          ]
+        },
+        "properties": {
+          "columns": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "dataset": {
+            "type": "string"
+          },
+          "destination": {
+            "deprecated": true,
+            "properties": {
+              "file_name": {
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "snyk"
+                ],
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "filters": {
+            "$ref": "#/components/schemas/OrgFilters"
+          },
+          "formats": {
+            "items": {
+              "enum": [
+                "csv"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "formats",
+          "dataset",
+          "destination"
+        ],
+        "type": "object"
+      },
       "FileCoreAttrs": {
         "description": "Core attributes specific to a File asset.",
         "properties": {
@@ -8117,6 +8829,25 @@
           "name"
         ],
         "type": "object"
+      },
+      "GroupFilters": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseFilters"
+          },
+          {
+            "properties": {
+              "orgs": {
+                "items": {
+                  "format": "uuid",
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          }
+        ]
       },
       "GroupIacSettingsRequest": {
         "description": "The Infrastructure as Code settings for a group.",
@@ -11102,6 +11833,49 @@
           "slug",
           "is_personal"
         ],
+        "type": "object"
+      },
+      "OrgFilters": {
+        "properties": {
+          "environment": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "introduced": {
+            "properties": {
+              "from": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "to": {
+                "format": "date-time",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "lifecycle": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "updated": {
+            "properties": {
+              "from": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "to": {
+                "format": "date-time",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
         "type": "object"
       },
       "OrgIacSettingsRequest": {
@@ -18223,6 +18997,184 @@
         "x-stability-level": "stable"
       }
     },
+    "/groups/{group_id}/export": {
+      "post": {
+        "description": "Create and start an export for a group\n\n#### Required permissions\n\n- `View reports (group.report.read)`",
+        "operationId": "createGroupExport",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/groupId"
+          },
+          {
+            "$ref": "#/components/parameters/include_deleted"
+          },
+          {
+            "$ref": "#/components/parameters/include_deactivated"
+          }
+        ],
+        "requestBody": {
+          "$ref": "#/components/requestBodies/CreateGroupExport"
+        },
+        "responses": {
+          "202": {
+            "$ref": "#/components/responses/CreateExport"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "security": [
+          {
+            "TokenAuth": []
+          }
+        ],
+        "summary": "Start an export",
+        "tags": [
+          "Export"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "export",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/groups/{group_id}/export/{export_id}": {
+      "delete": {
+        "description": "Delete export results\n\n#### Required permissions\n\n- `View reports (group.report.read)`",
+        "operationId": "deleteGroupExport",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/groupId"
+          },
+          {
+            "$ref": "#/components/parameters/exportId"
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/204"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "security": [
+          {
+            "TokenAuth": []
+          }
+        ],
+        "summary": "Delete an export",
+        "tags": [
+          "Export"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "export",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      },
+      "get": {
+        "description": "Get an export results\n\n#### Required permissions\n\n- `View reports (group.report.read)`",
+        "operationId": "getGroupExport",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/groupId"
+          },
+          {
+            "$ref": "#/components/parameters/exportId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/GetExport"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "security": [
+          {
+            "TokenAuth": []
+          }
+        ],
+        "summary": "Get export results",
+        "tags": [
+          "Export"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "export",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
     "/groups/{group_id}/issues": {
       "get": {
         "description": "Get a list of a group's issues.\n\n#### Required permissions\n\n- `View Issues (group.issues.read)`",
@@ -20187,6 +21139,63 @@
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-01-23",
         "x-stability-level": "stable"
+      }
+    },
+    "/groups/{group_id}/jobs/export/{export_id}": {
+      "get": {
+        "description": "Get an export job status\n\n#### Required permissions\n\n- `View reports (group.report.read)`",
+        "operationId": "getGroupExportJobStatus",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/groupId"
+          },
+          {
+            "$ref": "#/components/parameters/exportId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/GetExportJob"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "security": [
+          {
+            "TokenAuth": []
+          }
+        ],
+        "summary": "Get export status",
+        "tags": [
+          "Export"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "export",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
       }
     },
     "/groups/{group_id}/memberships": {
@@ -29440,6 +30449,184 @@
         "x-stability-level": "stable"
       }
     },
+    "/orgs/{org_id}/export": {
+      "post": {
+        "description": "Create and start an export for an org\n\n#### Required permissions\n\n- `View Organization reports (org.report.read)`",
+        "operationId": "createExport",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/orgId"
+          },
+          {
+            "$ref": "#/components/parameters/include_deleted"
+          },
+          {
+            "$ref": "#/components/parameters/include_deactivated"
+          }
+        ],
+        "requestBody": {
+          "$ref": "#/components/requestBodies/CreateOrgExport"
+        },
+        "responses": {
+          "202": {
+            "$ref": "#/components/responses/CreateExport"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "security": [
+          {
+            "TokenAuth": []
+          }
+        ],
+        "summary": "Start an export",
+        "tags": [
+          "Export"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "export",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/export/{export_id}": {
+      "delete": {
+        "description": "Delete export results\n\n#### Required permissions\n\n- `View Organization reports (org.report.read)`",
+        "operationId": "deleteOrgExport",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/orgId"
+          },
+          {
+            "$ref": "#/components/parameters/exportId"
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/204"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "security": [
+          {
+            "TokenAuth": []
+          }
+        ],
+        "summary": "Delete an export",
+        "tags": [
+          "Export"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "export",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      },
+      "get": {
+        "description": "Get an export results\n\n#### Required permissions\n\n- `View Organization reports (org.report.read)`",
+        "operationId": "getExport",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/orgId"
+          },
+          {
+            "$ref": "#/components/parameters/exportId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/GetExport"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "security": [
+          {
+            "TokenAuth": []
+          }
+        ],
+        "summary": "Get export results",
+        "tags": [
+          "Export"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "export",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
     "/orgs/{org_id}/invites": {
       "get": {
         "description": "List pending user invitations to an organization.\n\n#### Required permissions\n\n- `View Organization (org.read)`\n\n- `View users (org.user.read)`",
@@ -31695,6 +32882,63 @@
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-01-23",
         "x-stability-level": "stable"
+      }
+    },
+    "/orgs/{org_id}/jobs/export/{export_id}": {
+      "get": {
+        "description": "Get an export job status\n\n#### Required permissions\n\n- `View Organization reports (org.report.read)`",
+        "operationId": "getExportJobStatus",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "$ref": "#/components/parameters/orgId"
+          },
+          {
+            "$ref": "#/components/parameters/exportId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/GetExportJob"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "security": [
+          {
+            "TokenAuth": []
+          }
+        ],
+        "summary": "Get export status",
+        "tags": [
+          "Export"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "export",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/learn/assignments": {
@@ -69036,7 +70280,7 @@
       "name": "Assets"
     },
     {
-      "description": "The OpenAPI specification for policy-service.",
+      "description": "The OpenAPI specification for Topcoat Early Access API",
       "name": "OpenAPI"
     }
   ],
