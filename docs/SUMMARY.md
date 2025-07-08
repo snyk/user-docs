@@ -7,7 +7,6 @@
   * [Explore the Snyk Web UI](getting-started/snyk-web-ui.md)
   * [Snyk release process](getting-started/snyk-release-process.md)
   * [Glossary](getting-started/glossary.md)
-  * [Page 123](getting-started/page-123.md)
 * [Supported languages, package managers, and frameworks](supported-languages-package-managers-and-frameworks/README.md)
   * [Technical specifications and guidance](supported-languages-package-managers-and-frameworks/technical-specifications-and-guidance.md)
   * [Apex](supported-languages-package-managers-and-frameworks/apex.md)
