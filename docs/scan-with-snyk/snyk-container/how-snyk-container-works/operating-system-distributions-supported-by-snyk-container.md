@@ -55,6 +55,7 @@ This is the list of supported operating systems and distributions:
 
 ## [CentOS Stream](https://www.centos.org/centos-stream/)
 
+* CentOS Linux 10
 * CentOS Linux 9
 * CentOS Linux 8
 
@@ -83,6 +84,7 @@ This is the list of supported operating systems and distributions:
 
 ## [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/technologies/linux-platforms/enterprise-linux)
 
+* Red Hat Enterprise Linux 10
 * Red Hat Enterprise Linux 9
 * Red Hat Enterprise Linux 8
 * Red Hat Enterprise Linux 7
