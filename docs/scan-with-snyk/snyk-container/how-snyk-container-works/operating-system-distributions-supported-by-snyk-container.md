@@ -74,6 +74,7 @@ This is the list of supported operating systems and distributions:
 
 ## [Oracle Linux](https://www.oracle.com/linux/)
 
+* Oracle Linux 10
 * Oracle Linux 9
 * Oracle Linux 8
 * Oracle Linux 7
