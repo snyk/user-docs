@@ -7,6 +7,23 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## June 2025
+
+### **Snyk Broker**
+
+* Updated the Snyk Broker documentation to include distinct steps for setting up the [Container Registry Agent with Docker](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent), whether using the Classic or Universal Broker.
+* Updated the [Using the API to set up Universal Broker](enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](working-with-snyk/regional-hosting-and-data-residency.md#broker-client-urls).
+* Snyk Learn courses have been integrated into the [Universal Broker ](enterprise-setup/snyk-broker/universal-broker/)pages.
+
+### **Other updates**
+
+* [Usage settings](snyk-admin/groups-and-organizations/usage-settings.md) has been updated with the new **Billing and Usage** dashboard, available with the new Snyk Platform Access plan.
+* [Snyk Platform Access credits](working-with-snyk/snyk-platform-access-credits.md) has been added with brief information on the new Snyk Platform Access plan.
+* The troubleshooting sections for all [Snyk IDE plugins](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), have been updated to include clear steps for working with the Logs details, which are available across all plugins.&#x20;
+* A new feature, the [Snyk Agent Fix in the PR](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md#snyk-agent-fix-in-the-pr), has been released, enabling the user to interact with inline comments by requesting an initial fix or a different suggestion, or by applying a specific fix by using the `@snyk /apply #` command.
+* [Consistent Ignores](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/) for Snyk Code now fully supports CLI Upload.
+* The page on Docker Desktop Extension integration has been removed, due to the end of support.
+
 ## May 2025
 
 ### **Snyk CLI**
