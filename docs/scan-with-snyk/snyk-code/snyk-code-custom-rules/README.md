@@ -16,8 +16,8 @@ Create custom rules to run queries against the code stack as part of your invest
 You can run custom rules as part of any scan run by Snyk Code, and the feature is available when you are using Snyk Code in any of the following:
 
 * [Snyk Web UI](../../../getting-started/snyk-web-ui.md)
-* [Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
-* [IDE](../../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/)
+* [Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
+* [IDE](../../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/)
 
 ## Use custom rules in the Snyk Web UI
 
@@ -30,7 +30,7 @@ You can create and test queries in a local environment, completely separate from
 
 ## Use custom rules in the Snyk CLI
 
-You can test your Code Projects using the Snyk CLI with regular commands and options as long as you have the [.snyk file](../../../manage-risk/policies/the-.snyk-file.md) to hold any custom rules you created using Snyk Web UI. See [Snyk CLI for Snyk Code](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
+You can test your Code Projects using the Snyk CLI with regular commands and options as long as you have the [.snyk file](../../../manage-risk/policies/the-.snyk-file.md) to hold any custom rules you created using Snyk Web UI. See [Snyk CLI for Snyk Code](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
 
 ## Use custom rules in the IDE
 

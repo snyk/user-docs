@@ -5,8 +5,8 @@
 Snyk Code is a developer-first static application security testing (SAST) solution. By scanning code in real-time and providing actionable insights directly in the developer workflow across IDEs, repositories, and CI/CD pipelines, you can identify and address vulnerabilities early on. The AI-based engine results in fewer false positives for your developers, improving code quality and security. You can scan your code using the following options:
 
 * [Snyk Web UI](../../getting-started/snyk-web-ui.md) (including [PR checks](../pull-requests/pull-request-checks/))
-* [Snyk IDE](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/)
-* [Snyk CLI](../../snyk-cli/)
+* [Snyk IDE](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/)
+* [Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/)
 * [Snyk API](../../snyk-api/)
 
 The following table shows the Snyk Code features, including analysis, managing security issues in your code, and facilitating remediations within your development environment.
@@ -40,16 +40,16 @@ Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the
 ## Supported integrations
 
 * IDE
-  * [JetBrains plugin](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/)
-  * [Visual Studio Code extension](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/)
-  * [Visual Studio extension](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/)
-* Git repository: With repository monitoring integration, you can actively manage your Code Projects using the existing native import flow and tools. You can view and prioritize security issues discovered in your source code. Additionally, you can initiate a retest of any Project and examine the historical snapshots to track changes over time. See [Supported Git repositories](../../scm-ide-and-ci-cd-integrations/git-repository-and-ci-cd-integrations-comparisons.md).
+  * [JetBrains plugin](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/)
+  * [Visual Studio Code extension](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/)
+  * [Visual Studio extension](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/)
+* Git repository: With repository monitoring integration, you can actively manage your Code Projects using the existing native import flow and tools. You can view and prioritize security issues discovered in your source code. Additionally, you can initiate a retest of any Project and examine the historical snapshots to track changes over time. See [Supported Git repositories](../../cli-ide-and-ci-cd-integrations/git-repository-and-ci-cd-integrations-comparisons.md).
 
 {% hint style="info" %}
 Snyk Code analysis can be applied to every pull request you create in your Git repository before you merge it into the target branch. See [PR Checks](../pull-requests/pull-request-checks/).
 {% endhint %}
 
-* CLI and CI/CD: [Using the CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/) helps you find and fix security flaws in your code on your local machine or in your CI/CD.
+* CLI and CI/CD: [Using the CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/) helps you find and fix security flaws in your code on your local machine or in your CI/CD.
 * APIs and extensibility: Query Code Projects and issues using the Snyk [REST API](../../snyk-api/reference/).
 * Notifications: [Integrate with Jira](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md) to export data to Jira issues.
 

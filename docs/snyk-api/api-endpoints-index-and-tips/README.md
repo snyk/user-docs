@@ -319,7 +319,7 @@ The View Project History permission is needed to use this API.
 
 ## Ignores (v1)
 
-**More information:** [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+**More information:** [Snyk test and snyk monitor in CI/CD integration](../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ### [List all ignores](../reference/ignores-v1.md#org-orgid-project-projectid-ignores)
 
@@ -459,12 +459,12 @@ Additional information: [Reachability](../../manage-risk/prioritize-issues-for-f
 
 ### [List all jira issues](../reference/jira-v1.md#org-orgid-project-projectid-jira-issues)
 
-**More information:** [Jira integration](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md); [Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+**More information:** [Jira integration](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md); [Snyk test and snyk monitor in CI/CD integration](../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ### [Create jira issue](../reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issuev)
 
 **More information:** [Jira integration](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md);\
-[Snyk test and snyk monitor in CI/CD integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+[Snyk test and snyk monitor in CI/CD integration](../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ## Licenses (v1)
 

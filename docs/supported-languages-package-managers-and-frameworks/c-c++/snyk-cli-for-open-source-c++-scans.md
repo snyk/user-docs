@@ -4,9 +4,9 @@
 
 To explore the vulnerabilities for C/C++, search the [Snyk Vuln DB](https://security.snyk.io). Snyk tests your code against this database, which is periodically updated with the latest source code from online sources. For details, see [Snyk Vulnerability Database](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md).
 
-For Snyk to scan the open-source Project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned. For details, see [Source code dependencies must be in the scanned folder](snyk-cli-for-open-source-c++-scans.md#source-code-dependencies-must-be-in-the-scanned-folder).
+For Snyk to scan the open-source Project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned.&#x20;
 
-When you run the [`snyk test --unmanaged`](../../snyk-cli/commands/test.md#unmanaged) command, Snyk does the following:
+When you run the [`snyk test --unmanaged`](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/test.md#unmanaged) command, Snyk does the following:
 
 1. Converts all files from your current folder into a list of hashes.
 2. Sends hashes to the Snyk scan server to compute the dependencies list.
@@ -268,7 +268,7 @@ The following `snyk` command line options are supported with the `snyk test --un
 `--target-reference=<TARGET_REFERENCE>` (`snyk monitor` only)\
 `--project-name=<c-project>` (`snyk monitor` only)
 
-For more information about command line options, see the Snyk help docs: [Options for scanning with `snyk test --unmanaged`](../../snyk-cli/commands/test.md#unmanaged) or [`snyk monitor --unmanaged`](../../snyk-cli/commands/monitor.md#unmanaged).
+For more information about command line options, see the Snyk help docs: [Options for scanning with `snyk test --unmanaged`](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/test.md#unmanaged) or [`snyk monitor --unmanaged`](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/monitor.md#unmanaged).
 
 To import the test results (issues and dependencies) in the Snyk CLI, run the `snyk monitor --unmanaged` command:
 

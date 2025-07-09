@@ -12,8 +12,8 @@ A benefit of adding tests to your pipeline is that you do not need to import the
 
 When adding Snyk to a build pipeline, you have these common options:&#x20;
 
-* Using the specific [pipeline integration](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) for your tool.
-* Using the [Snyk CLI](../../../snyk-cli/) and running the specific commands directly.&#x20;
+* Using the specific [pipeline integration](../../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) for your tool.
+* Using the [Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/) and running the specific commands directly.&#x20;
 
 Each option has benefits; using an existing pipeline integration may be faster and easier to configure, but using the Snyk CLI will give you a greater range of options and flexibility in your fail criteria.&#x20;
 
@@ -23,10 +23,10 @@ When you run a test in your pipeline, you can use filters to determine what woul
 
 ## CLI supporting tools
 
-When you use the Snyk CLI in your pipeline, you can use a range of supporting [CLI Tools](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/) that provide additional functionality, including:
+When you use the Snyk CLI in your pipeline, you can use a range of supporting [CLI Tools](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/) that provide additional functionality, including:
 
-* [snyk-delta,](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md) which can be used to compare two sets of results and identify new vulnerabilities, similar to how the PR Checks feature tests for new vulnerabilities only
-* [snyk-filter](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md), which can be used for more complex fail criteria, such as `fail if more than three High severity vulnerabilities are found`.
+* [snyk-delta,](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md) which can be used to compare two sets of results and identify new vulnerabilities, similar to how the PR Checks feature tests for new vulnerabilities only
+* [snyk-filter](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md), which can be used for more complex fail criteria, such as `fail if more than three High severity vulnerabilities are found`.
 
 ## Additional information
 

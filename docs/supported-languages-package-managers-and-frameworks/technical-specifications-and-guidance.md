@@ -11,7 +11,7 @@ Snyk analyzes and builds the dependencies tree depending on the language and pac
 ### How Snyk for Open Source and licensing works
 
 {% hint style="info" %}
-Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must build your Project. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
+Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must build your Project. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
 Snyk builds a dependency graph and (dependencies tree) and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.
@@ -85,6 +85,6 @@ You can use these tools to automatically check your code for security issues as 
 
 Navigate to the following pages for more details:
 
-* CLI for [Snyk Open Source](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/) and [Snyk Code](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
-* CI/CD for [Snyk Open Source](../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-open-source-specific-ci-cd-strategies.md) and [Snyk Code](../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/use-snyk-code-in-the-ci-cd-pipeline.md)
-* [SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) for Snyk Open Source and Snyk Code
+* CLI for [Snyk Open Source](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/) and [Snyk Code](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
+* CI/CD for [Snyk Open Source](../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-open-source-specific-ci-cd-strategies.md) and [Snyk Code](../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/use-snyk-code-in-the-ci-cd-pipeline.md)
+* [SCM integrations](../scm-integrations/organization-level-integrations/) for Snyk Open Source and Snyk Code

@@ -55,7 +55,7 @@ Select [**Policies**](../../../manage-risk/policies/) to view the license and se
 
 ### Group Integrations
 
-Select **Integrations** to view and configure the available integrations for both [SCM integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [third-party integrations](../../../integrate-with-snyk/).
+Select **Integrations** to view and configure the available integrations for both [SCM integrations](../../../scm-integrations/organization-level-integrations/#group-level-snyk-essentials-scm-integrations) and [third-party integrations](../../../integrate-with-snyk/).
 
 ### Group Members
 

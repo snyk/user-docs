@@ -5,7 +5,7 @@ Snyk Container helps you find and fix vulnerabilities in container images, based
 You can scan your container images using Snyk Container:&#x20;
 
 * In the [Snyk Web UI](use-snyk-container/)
-* Through the [Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
+* Through the [Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
 * With [Broker](../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md) (for self-hosted container registries)
 
 ## **Prerequisites for using Snyk Container in the Web UI**

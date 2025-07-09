@@ -133,7 +133,7 @@ Snyk prevents users from assigning roles to others with more privileges than tho
 
 {% hint style="info" %}
 **Feature availability**\
-Service accounts are available only with Enterprise plans. Free and Team users have access to [personal tokens](../../snyk-cli/authenticate-to-use-the-cli.md) only. Personal tokens are recommended for use with IDEs and the local CLI.
+Service accounts are available only with Enterprise plans. Free and Team users have access to [personal tokens](../../cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md) only. Personal tokens are recommended for use with IDEs and the local CLI.
 
 For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
@@ -167,6 +167,6 @@ If you already have Custom SSO set up, or are planning to create Member roles af
 
 ## Permissions required to edit Project attributes from the Snyk CLI
 
-The **Organization Collaborator** role lacks permission to edit Project attributes, including using the CLI [`snyk monitor`](../../snyk-cli/commands/monitor.md) command with arguments such as `--project-environment`. Attempting to use these arguments without the proper permission causes the `snyk monitor` command to fail.
+The **Organization Collaborator** role lacks permission to edit Project attributes, including using the CLI [`snyk monitor`](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/monitor.md) command with arguments such as `--project-environment`. Attempting to use these arguments without the proper permission causes the `snyk monitor` command to fail.
 
 Users or service accounts requiring the ability to edit Project attributes must be an **Organization Admin** or have a custom role with the **Edit Project Attributes** permission assigned. A user who does not have this permission must remove any arguments that edit the Project attributes to use the `snyk monitor` command.

@@ -20,7 +20,7 @@ If you are not already blocking vulnerabilities, start by blocking the differenc
 This eases developers into the process, as they take responsibility only for vulnerabilities directly related to their changes.&#x20;
 
 * [Run PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/), which include the option to block new issues.&#x20;
-* [Snyk Delta](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md) can assist with differences in results at the CLI level.
+* [Snyk Delta](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md) can assist with differences in results at the CLI level.
 
 ### Communicate exception processes
 

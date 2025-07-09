@@ -24,7 +24,7 @@ Snyk does not support frameworks and libraries for Dart and Flutter.&#x20;
 Snyk features are not supported for Dart and Flutter. You can test an open-source package from Pub package manager:
 
 * Using the API endpoint [List issues for a package](../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues)
-* Using the [SBOM CLI](../snyk-cli/commands/sbom.md).
+* Using the [SBOM CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom.md).
 
 ## Testing platform dependencies (iOS, macOS, Android) in Flutter Apps
 

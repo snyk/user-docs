@@ -52,7 +52,7 @@ After you select a region, the data in that region cannot be migrated to another
 
 During the initial onboarding of your system, you can work with your account team to select a multi-tenant hosting region. For single-tenant availability (Snyk Private Cloud), reach out to your account team in advance of onboarding. When using Snyk features, you will use specific URLs that differ from the SNYK-US-01 URL. See [Regional URLs](regional-hosting-and-data-residency.md#regional-urls) for the list of URLs.
 
-You must configure your environment to set your region before you authenticate. This does not apply when you are using the SNYK-US-01 URL. For details, see the [snyk config environment CLI help](../snyk-cli/commands/config-environment.md).
+You must configure your environment to set your region before you authenticate. This does not apply when you are using the SNYK-US-01 URL. For details, see the [snyk config environment CLI help](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/config-environment.md).
 
 Snyk offers data residency for the following regions:
 
@@ -133,11 +133,11 @@ Use the base URLs for your region:
 
 Both the CLI and CI running CLI must be configured to run against your instance.
 
-To do this, for [CLI v1.1293.0](https://updates.snyk.io/announcing-snyk-cli-v1-1293-0-299452) and later versions, use the [snyk config environment command](../snyk-cli/commands/config-environment.md), for example:
+To do this, for [CLI v1.1293.0](https://updates.snyk.io/announcing-snyk-cli-v1-1293-0-299452) and later versions, use the [snyk config environment command](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/config-environment.md), for example:
 
 `snyk config environment SNYK-US-02`
 
-The [Supported environment URL mappings](../snyk-cli/commands/config-environment.md#supported-environment-urls-mappings) are listed in the `snyk config environment` help.
+The [Supported environment URL mappings](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/config-environment.md#supported-environment-urls-mappings) are listed in the `snyk config environment` help.
 
 ### IDEs URLs
 

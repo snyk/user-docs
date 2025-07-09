@@ -21,7 +21,7 @@ The available Project attributes are summarized in the following table.
 {% hint style="info" %}
 You can apply attributes to Projects and remove attributes using endpoint [Applying attributes](../../snyk-api/reference/projects-v1.md#org-orgid-project-projectid-attributes).
 
-You can also apply and remove attributes using Snyk CLI options, `--project-business-criticality`, `--project-environment`, and `--project-lifecycle`. Refer to the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md) for the commands that support these options.
+You can also apply and remove attributes using Snyk CLI options, `--project-business-criticality`, `--project-environment`, and `--project-lifecycle`. Refer to the [CLI commands and options summary](../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) for the commands that support these options.
 {% endhint %}
 
 {% hint style="info" %}

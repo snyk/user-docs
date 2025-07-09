@@ -344,7 +344,7 @@ The Repositories Tested in CI/CD report is in Early Access and available only wi
 To use this report, consider the following prerequisites:
 
 * Snyk CLI version 1.1292.1 or newer.
-* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).&#x20;
+* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../scm-integrations/organization-level-integrations/).&#x20;
 * When testing containers, include the `.git` context as part of the `snyk container test` command.
 
 This report analyzes Snyk tests performed as part of CI/CD pipelines executed using Snyk CLI. It will inform you about the usage of your company and adoption of testing in CI/CD, ensuring repositories are tested as expected and preventing critical vulnerabilities and misconfigurations from being deployed and reaching the production environment.
@@ -375,7 +375,7 @@ Represented by the green line, you can see the weekly number of repositories tha
 This comparison helps determine whether Snyk tests in CI/CD are being increasingly adopted over time and highlights the number of repositories that have received commits but have not been tested in CI/CD.
 
 {% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) page.&#x20;
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-integrations/organization-level-integrations/) page.&#x20;
 {% endhint %}
 
 You can filter by specific products or by specific organizations or extend the viewed period using the date range filter.
@@ -392,8 +392,8 @@ An applicable test is a test that did not fail due to technical issues or a non-
 
 Having a low success rate can indicate that:
 
-* Snyk tests are failing due to security issues that can be prevented in local development or in the PR Check stages. Snyk recommends testing with the [Snyk IDE](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/) plugin, using [Snyk PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) and enroll in a [Snyk Learn](../../snyk-learn/) program.
-* The test success criteria are too strict. To explore this option further, Snyk recommends reviewing the test definitions of the organizations with the lowest success rate, as shown by the Adoption by Organizations widget. For more details about defining test success criteria, navigate to the [Failing of builds in Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md) page.&#x20;
+* Snyk tests are failing due to security issues that can be prevented in local development or in the PR Check stages. Snyk recommends testing with the [Snyk IDE](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/) plugin, using [Snyk PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) and enroll in a [Snyk Learn](../../snyk-learn/) program.
+* The test success criteria are too strict. To explore this option further, Snyk recommends reviewing the test definitions of the organizations with the lowest success rate, as shown by the Adoption by Organizations widget. For more details about defining test success criteria, navigate to the [Failing of builds in Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md) page.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (717).png" alt=""><figcaption><p>Test Success Rate Trend</p></figcaption></figure>
 
@@ -418,7 +418,7 @@ The repository test summary table shows the performed tests during the selected 
 The default sorting in the table surfaces repositories according to their last commit, allowing you to identify repositories that were expected to be tested in CI/CD pipelines and verify they were tested. Clicking the column names to sort the table according to the selected column. You can sort the table by multiple columns at a time.&#x20;
 
 {% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) page.&#x20;
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-integrations/organization-level-integrations/#group-level-snyk-essentials-scm-integrations) page.&#x20;
 {% endhint %}
 
 You can execute the test on a specific repository branch in the table. The `tested` indicator means that any branch of this repository was tested during the selected date range.
@@ -534,7 +534,7 @@ Here are the available filters:
 | Tags                 | The asset tags. For more details about tagging assets using a policy, see the [Tagging policy](../../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy-use-case.md) page.                                                                                                                                                                     |
 | \*Title              | The name of the component for which the application context catalog was configured.                                                                                                                                                                                                                                                                                    |
 
-**\***&#x41;ll filters marked with `*` are visible only if you configured the [application context](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) catalog for your SCM integrations.
+**\***&#x41;ll filters marked with `*` are visible only if you configured the [application context](../../scm-integrations/application-context-for-scm-integrations/) catalog for your SCM integrations.
 
 ### Repository coverage widget
 

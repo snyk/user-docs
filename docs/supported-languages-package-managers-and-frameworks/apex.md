@@ -1,5 +1,7 @@
 # Apex
 
+
+
 {% hint style="info" %}
 Apex is supported only for Snyk Code.
 {% endhint %}
@@ -9,7 +11,7 @@ Apex is supported only for Snyk Code.
 The following functions are available for Apex:
 
 * SCM import
-* Test or monitor your app through CLI and IDE. For more information, see [Snyk CLI for Snyk Code](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
+* Test or monitor your app through CLI and IDE. For more information, see [Snyk CLI for Snyk Code](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
 
 ## Package managers and supported file extensions
 

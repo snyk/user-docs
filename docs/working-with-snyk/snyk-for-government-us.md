@@ -49,7 +49,7 @@ See [Single Sign-On (SSO) for authentication to Snyk](../enterprise-setup/single
 
 ## Platform features not available
 
-* [Bitbucket Cloud App](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud-app.md). Note that [Bitbucket Data Center/Server](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-data-center-server.md) integration is available.
+* [Bitbucket Cloud App](../scm-integrations/organization-level-integrations/bitbucket-cloud-app.md). Note that [Bitbucket Data Center/Server](../scm-integrations/organization-level-integrations/bitbucket-data-center-server.md) integration is available.
 * [Slack App](../integrate-with-snyk/jira-and-slack-integrations/slack-app.md)
 * [Jira App](../integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md). Note that [Jira Integration](../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md) is available.
 * [Snyk Advisor](https://snyk.io/advisor/)
@@ -61,4 +61,4 @@ See [Single Sign-On (SSO) for authentication to Snyk](../enterprise-setup/single
 * Session Concurrency is limited to three (3) sessions per user.
 * Session lockout: After sessions expire, the signed-in user loses access to all data present in existing session windows.
 * Session timeout: The default session timeout is shorter (15 minutes). See [Configure session length for a Snyk Group](../snyk-admin/groups-and-organizations/groups/configure-session-length-for-a-snyk-group.md) for details.
-* [Snyk CLI docker images](../snyk-cli/install-or-update-the-snyk-cli/#snyk-cli-in-a-docker-image). These do not support FIPS-validated cryptography and should only be used when this can be accepted.
+* [Snyk CLI docker images](../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/#snyk-cli-in-a-docker-image). These do not support FIPS-validated cryptography and should only be used when this can be accepted.

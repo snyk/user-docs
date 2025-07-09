@@ -21,7 +21,7 @@ Available functions:
 * Test your app's SBOM: using `pkg:npm`
 * Test your app's packages using `pkg:npm`
 
-For information on using the Snyk CLI for code analysis, see [Snyk CLI for Snyk Code](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
+For information on using the Snyk CLI for code analysis, see [Snyk CLI for Snyk Code](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
 
 ## Package managers and supported file extensions
 

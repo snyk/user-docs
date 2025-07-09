@@ -7,7 +7,7 @@ Depending on the integrations you have configured, and the language / package ma
 
 The best import route varies based on the languages and package managers in your tech stack.&#x20;
 
-Here are some key points to determine the best starting point. For details, see [Git repositories and CI/CD comparisons](../../../scm-ide-and-ci-cd-integrations/git-repository-and-ci-cd-integrations-comparisons.md).
+Here are some key points to determine the best starting point. For details, see [Git repositories and CI/CD comparisons](../../../cli-ide-and-ci-cd-integrations/git-repository-and-ci-cd-integrations-comparisons.md).
 
 ## Getting started with Snyk
 
@@ -19,7 +19,7 @@ Depending on your needs, Snyk offers various integration methods:
 
 ### Git Integration
 
-For details, see [Git repositories (SCMs) integrations with Snyk](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
+For details, see [Git repositories (SCMs) integrations with Snyk](../../../scm-integrations/organization-level-integrations/).
 
 Connect your repositories for automatic scanning.
 
@@ -40,7 +40,7 @@ For hundreds or thousands of repositories:
 
 ## Snyk CLI
 
-For details, see [Snyk CLI](../../../snyk-cli/).
+For details, see [Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/).
 
 The CLI allows granular scanning of individual Projects.&#x20;
 
@@ -50,8 +50,8 @@ A command must be formulated for each type of test to perform (open source, code
 
 To use the Snyk CLI:
 
-1. [Install the CLI](../../../snyk-cli/install-or-update-the-snyk-cli/) using one of the appropriate methods as part of the build script.
-2. [Authenticate to use the CLI ](../../../snyk-cli/authenticate-to-use-the-cli.md)by using the `snyk auth` command or an environment variable.
+1. [Install the CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/) using one of the appropriate methods as part of the build script.
+2. [Authenticate to use the CLI ](../../../cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md)by using the `snyk auth` command or an environment variable.
 3. In the script, navigate to the Project folder.
 4. Run the appropriate `snyk test` or `snyk monitor` commands and options for the type of scan you want to run. \
    \

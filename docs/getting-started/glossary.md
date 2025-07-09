@@ -40,7 +40,7 @@ Information related to the organization's objectives, priorities, and regulatory
 
 ### CI/CD
 
-Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) for details of Snyk CI/CD integrations.
+Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) for details of Snyk CI/CD integrations.
 
 ### **Class (Snyk Essentials)**
 
@@ -222,7 +222,7 @@ A file containing metadata about other files in a package.
 
 ### Monitor
 
-The `snyk monitor` command tests a Project and uploads the results to Snyk. See the CLI help for [Monitor](../snyk-cli/commands/monitor.md).
+The `snyk monitor` command tests a Project and uploads the results to Snyk. See the CLI help for [Monitor](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/monitor.md).
 
 ## O
 
@@ -346,7 +346,7 @@ A scanned artifact in Snyk Essentials is an entity detected by Snyk that cannot 
 
 ### SCM
 
-Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
+Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../scm-integrations/organization-level-integrations/).
 
 ### SCM Repository freshness (Snyk **Essentials**)
 
@@ -394,7 +394,7 @@ A client/server system that serves as an agent or proxy, allowing Snyk to scan p
 
 ### Snyk CLI
 
-A Snyk platform tool that enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI](../snyk-cli/).
+A Snyk platform tool that enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/).
 
 ### Snyk Code
 
@@ -483,4 +483,4 @@ See [Snyk Web UI](glossary.md#snyk-web-ui).
 
 A Snyk feature. This enables Snyk to ingest shallow copies of your Git repositories for scanning, resulting in precise and reliable vulnerability scans.
 
-See [Workspaces for SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md).
+See [Workspaces for SCM integrations](../scm-integrations/workspaces.md).

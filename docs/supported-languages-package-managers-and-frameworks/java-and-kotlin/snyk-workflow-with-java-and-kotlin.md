@@ -37,7 +37,7 @@ Snyk provides flexible capabilities, including:
 * Dedicated plugins for Jenkins, Circle CI, and others (see relevant marketplaces)
 * Using [Github Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/)
 * The Snyk CLI can be used in most CI/CD systems (see [examples](https://github.com/snyk-labs/snyk-cicd-integration-examples))
-  * Fail the build based on criteria using options or the [snyk-filter](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) tool
+  * Fail the build based on criteria using options or the [snyk-filter](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) tool
   * There are [containerized](https://hub.docker.com/r/snyk/snyk) versions available
 * With Partner Platforms: Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk.
   * Note for Java: using the Git integration with Bitbucket Cloud or using the CLI instead of the prepackaged Bitbucket Pipe is suggested.
@@ -45,4 +45,4 @@ Snyk provides flexible capabilities, including:
 ## Production monitoring
 
 * (Snyk Enterprise plan only) Snyk can monitor container images and their open source or Linux based packages being used in production using Kubernetes integration, to notify customers of known vulnerabilities for applications in production.
-* (All plans) Where a production integration does not exist, use the [snyk monitor](../../snyk-cli/commands/monitor.md) CLI command to take a snapshot and monitor what is being pushed to production.
+* (All plans) Where a production integration does not exist, use the [snyk monitor](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/monitor.md) CLI command to take a snapshot and monitor what is being pushed to production.

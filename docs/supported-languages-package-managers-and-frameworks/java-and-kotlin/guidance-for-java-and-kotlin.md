@@ -74,11 +74,11 @@ Typically you can instrument testing as part of a build system or adopt a lockfi
 
 * It is quite common for large organizations to monitor applications via Git integration, to begin with, daily monitoring, turning on PR checks for only key applications at the start.
 * As developers become familiar with Snyk capabilities, they widen the scope of applications with PR checks for gating.
-* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commands](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commands](../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 
 ### Gradle Projects without a lock file
 
-* Use CI/CD to passively monitor and then turn on gating by using the [`snyk [product] test` and `monitor` commands](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+* Use CI/CD to passively monitor and then turn on gating by using the [`snyk [product] test` and `monitor` commands](../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 * Gating and failing the build typically will be turned on one Project to start so that everyone can become familiar with the process and use passive monitoring for the remainder of the portfolio.
 
 ## Snyk CLI Tips and Tricks
@@ -89,7 +89,7 @@ Typically you can instrument testing as part of a build system or adopt a lockfi
 
 Use the `--help` option in the CLI for details of Snyk CLI commands.
 
-:link: [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md)
+:link: [CLI commands and options summary](../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md)
 
 #### Testing your own code:
 
@@ -129,13 +129,13 @@ For Android Build variants, see [Snyk for Java and Kotlin](./).
 
 **Unmanaged**
 
-For more details on unmanaged Jars, navigate to the [Scan all unmanaged JAR files](../../snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md) page.
+For more details on unmanaged Jars, navigate to the [Scan all unmanaged JAR files](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/scan-all-unmanaged-jar-files.md) page.
 
 #### Testing containers
 
 Snyk automatically looks for application (such as open source, maven, and npm) vulnerabilities as part of a container scan. We recommend you integrate via CLI or Registry earlier in the pipeline and use this as an additional signal/insight into what is in production.
 
-See [Snyk CLI for container security](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/) for more details.
+See [Snyk CLI for container security](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/) for more details.
 
 #### Infrastructure as code
 
@@ -147,9 +147,9 @@ For more details, navigate to the [Fixing vulnerabilities on Maven projects](htt
 
 ### Options and plugins
 
-* To help generate reports locally or at build time, see [snyk-to-html plugin](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
+* To help generate reports locally or at build time, see [snyk-to-html plugin](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
 * See `--json` and `--sarif` options for generating output that can be programmatically accessed.
-* For advanced filtering options, see[ snyk-filter](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
+* For advanced filtering options, see[ snyk-filter](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
 
 Additionally, the Snyk team has built plugins to make it easy to integrate Snyk into your workflows:
 

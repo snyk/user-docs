@@ -64,11 +64,11 @@ For more information, see [Package repository integrations](../../scan-with-snyk
 
 ## .NET scanning improvements for the Snyk CLI
 
-The .NET scanning improvements are also available in the Snyk CLI for both the [snyk test](../../snyk-cli/commands/test.md) and [`snyk monitor`](../../snyk-cli/commands/monitor.md) commands.
+The .NET scanning improvements are also available in the Snyk CLI for both the [snyk test](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/test.md) and [`snyk monitor`](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/monitor.md) commands.
 
 Follow these steps to enable the improvements:
 
-1. [Install](../../snyk-cli/install-or-update-the-snyk-cli/) the latest version of the CLI.
+1. [Install](../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/) the latest version of the CLI.
 2. Run `dotnet restore.`
 3. Scan your .NET Projects using `snyk test` or `snyk monitor` as usual, but add the `--dotnet-runtime-resolution` option.
 

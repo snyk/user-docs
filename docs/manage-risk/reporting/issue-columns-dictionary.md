@@ -83,7 +83,7 @@ The context columns help you understand the impact and risk for an issue based o
 * **PROJECT OWNER** - A user who is defined as the owner of the Project.
 * **PROJECT TAGS** - Tags that are associated with the Project. For details, see [Project tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md).
 * **PROJECT TARGET** - The Target name.
-* **PROJECT TARGET REFERENCE** - Specify a reference that differentiates this Project, for example, a branch name or version. For details, see [Group Projects by branch or version for monitoring](../../snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md).
+* **PROJECT TARGET REFERENCE** - Specify a reference that differentiates this Project, for example, a branch name or version. For details, see [Group Projects by branch or version for monitoring](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md).
 * **PROJECT TYPE** - The package manager of the Project.
 
 ### Asset context&#x20;
@@ -107,7 +107,7 @@ When filtering issues by assets context, issues of archived assets will be exclu
 
 ### Application context
 
-Navigate to the [Application context for SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) page for more details about enriching the application context data.
+Navigate to the [Application context for SCM integrations](../../scm-integrations/application-context-for-scm-integrations/) page for more details about enriching the application context data.
 
 {% hint style="info" %}
 When filtering issues by application context, issues of archived assets will be excluded from the results

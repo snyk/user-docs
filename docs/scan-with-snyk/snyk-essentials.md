@@ -20,7 +20,7 @@ Snyk Essentials core capabilities overview
 
 Snyk Essentials includes the following features:&#x20;
 
-* [Integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) to support ingesting data from SCM tools for asset discovery, Snyk Application Security Testing products for security controls coverage, and ticketing or notification tools for policy actions. Use the Integration Hub from the Integration page to add and set up new integrations.
+* [Integrations](../scm-integrations/organization-level-integrations/#group-level-snyk-essentials-scm-integrations) to support ingesting data from SCM tools for asset discovery, Snyk Application Security Testing products for security controls coverage, and ticketing or notification tools for policy actions. Use the Integration Hub from the Integration page to add and set up new integrations.
 * [Policies](../manage-risk/policies/assets-policies/) to classify and tag assets with business context and configure actions using a Policy Builder UI.
 * [Inventory](../manage-assets/) layouts for managing assets and viewing Snyk coverage.
 * [Dashboard](../getting-started/snyk-web-ui.md#view-the-assets-dashboard) to view, add, and customize widgets.
@@ -90,8 +90,8 @@ Snyk Code does not automatically pick up the `git remoteurl`, even if the `.git`
 {% endhint %}
 
 2. If you do not have a `.git` folder available in the directory that the CLI is scanning, you can use different test or monitor commands to achieve the same result:
-   * [`snyk monitor`](../snyk-cli/commands/monitor.md#remote-repo-url-less-than-url-greater-than), for Snyk Open Source
-   * [`snyk iac test`](../snyk-cli/commands/iac-test.md#remote-repo-url-less-than-url-greater-than) - also requires the `--report` command
+   * [`snyk monitor`](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/monitor.md#remote-repo-url-less-than-url-greater-than), for Snyk Open Source
+   * [`snyk iac test`](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/iac-test.md#remote-repo-url-less-than-url-greater-than) - also requires the `--report` command
    * `snyk container monitor` - momentarily, no options are available.
    * `snyk code test` - momentarily, no options are available.
 

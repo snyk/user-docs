@@ -59,7 +59,7 @@ You can suppress issues through the CLI by using the `snyk ignore` command, for 
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
-For more information, see the [`ignore`](../../../snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md).
+For more information, see the [`ignore`](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md).
 
 When you use `snyk ignore` for Open Source, the `.snyk` policy file is updated with the path and reason given if one was provided. An example follows:
 
@@ -99,7 +99,7 @@ The same repository imported from the SCM is considered to be a different Projec
 {% hint style="warning" %}
 The `expires` field is optional. If you need a permanent ignore, omit the field.
 
-To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](../../../snyk-cli/commands/ignore.md#expiry-less-than-expiry-greater-than).
+To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/ignore.md#expiry-less-than-expiry-greater-than).
 {% endhint %}
 
 For Open Source Projects, you can ignore the vulnerability by creating a `.snyk` YAML file or  modifying the existing `.snyk` file.
@@ -118,7 +118,7 @@ ignore:
 ```
 
 {% hint style="info" %}
-For more information, see [The .snyk file](../../policies/the-.snyk-file.md), including the section about [.snyk files in monorepos](../../policies/the-.snyk-file.md#use-the-.snyk-file-with-monorepos-and-complex-projects) and .[snyk files in different directories from manifest files](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
+For more information, see [The .snyk file](../../policies/the-.snyk-file.md), including the section about [.snyk files in monorepos](../../policies/the-.snyk-file.md#use-the-.snyk-file-with-monorepos-and-complex-projects) and .[snyk files in different directories from manifest files](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md).
 {% endhint %}
 
 ### Use policy actions to ignore issues
@@ -167,7 +167,7 @@ When scanning your IaC configuration files using `snyk iac test`, you can ignore
 
 Snyk recommends storing and versioning the `.snyk` file in the root of your working directory, where you store your IaC configuration files.
 
-For more information, see [IaC ignores using the .snyk policy file](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md).
+For more information, see [IaC ignores using the .snyk policy file](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md).
 
 ## Configure ignore settings
 

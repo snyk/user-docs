@@ -16,7 +16,7 @@ For each entry, the icon shows the number of Snyk Projects in each entry, plus t
 
 ## Private versus public repositories: the lock symbol
 
-When [setting up your GitHub integration](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md), you can choose whether Snyk has access to public and private repositories or public repositories only:
+When [setting up your GitHub integration](../../scm-integrations/organization-level-integrations/github.md), you can choose whether Snyk has access to public and private repositories or public repositories only:
 
 <figure><img src="../../.gitbook/assets/image (405) (1) (1).png" alt="Set whether Snyk will have access to a private repository"><figcaption><p>Set whether Snyk will have access to a private repository</p></figcaption></figure>
 

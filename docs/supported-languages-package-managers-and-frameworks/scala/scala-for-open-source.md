@@ -16,7 +16,7 @@ The following summarizes Snyk support for sbt.
 
 ### CLI support for Scala for open source
 
-The [Snyk CLI](../../snyk-cli/) uses the [`sbt-dependency-graph`](https://github.com/sbt/sbt-dependency-graph) plugin, which has been [included](https://www.scala-sbt.org/1.x/docs/Combined+Pages.html#sbt-dependency-graph+is+in-sourced) in `sbt` as a built-in plugin since `sbt` 1.4.
+The [Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/) uses the [`sbt-dependency-graph`](https://github.com/sbt/sbt-dependency-graph) plugin, which has been [included](https://www.scala-sbt.org/1.x/docs/Combined+Pages.html#sbt-dependency-graph+is+in-sourced) in `sbt` as a built-in plugin since `sbt` 1.4.
 
 However, the recommended method of calling the plugin in sbt 1.4+ is not compatible with Snyk. Use the legacy method, `addSbtPlugin()` instead. Snyk recommends installing the `sbt-dependency-graph` as a [global plugin](https://www.scala-sbt.org/1.x/docs/Using-Plugins.html#Global+plugins) so you can use it in any `sbt` project.
 
@@ -29,7 +29,7 @@ Regardless of which `sbt` version you are using, you must use the following comm
 `addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.10.0-RC1")`
 
 {% hint style="warning" %}
-Do not use the `addDependencyTreePlugin` command which the `sbt-dependency-graph` plugin docs recommend for `sbt` 1.4+. This is incompatible with the Snyk CLI. \
+Do not use the `addDependencyTreePlugin` command which the `sbt-dependency-graph` plugin docs recommend for `sbt` 1.4+. This is incompatible with the Snyk CLI.\
 Use the `addSbtPlugin()` command as given above.
 {% endhint %}
 
@@ -37,7 +37,7 @@ For more information on installing `sbt-dependency-graph` for use with the Snyk 
 
 ### Git repository integration support for Scala for open source
 
-Scala `sbt` Projects can be imported from any of the Git repositories that Snyk [supports](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
+Scala `sbt` Projects can be imported from any of the Git repositories that Snyk [supports](../../scm-integrations/organization-level-integrations/).
 
 To test your Scala Projects using `sbt` as a package manager, Snyk analyzes your `build.sbt` file.\
 To ensure that this works properly, you must have this file in your repository before importing your projects.

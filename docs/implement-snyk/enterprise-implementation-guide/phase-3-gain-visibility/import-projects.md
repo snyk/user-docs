@@ -7,7 +7,7 @@ Depending on the integrations you have configured and the language and package m
 
 The best import route varies based on the languages and package managers in your tech stack.&#x20;
 
-Here are some key points to determine the best starting point. See [Git repositories and CI/CD comparisons](../../../scm-ide-and-ci-cd-integrations/git-repository-and-ci-cd-integrations-comparisons.md) for more details.
+Here are some key points to determine the best starting point. See [Git repositories and CI/CD comparisons](../../../cli-ide-and-ci-cd-integrations/git-repository-and-ci-cd-integrations-comparisons.md) for more details.
 
 ## Ways to get started with Snyk
 
@@ -19,7 +19,7 @@ Snyk offers various integration methods to meet your needs, as described here.
 
 ### Git integration
 
-You can connect your repositories for automatic scanning. See [Snyk SCM integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) for more details.
+You can connect your repositories for automatic scanning. See [Snyk SCM integrations](../../../scm-integrations/organization-level-integrations/) for more details.
 
 For a small number of applications, typically under a hundred, follow these steps.
 
@@ -36,7 +36,7 @@ The [API-import](../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) tool 
 
 ### Snyk CLI
 
-The [Snyk CLI ](../../../snyk-cli/)allows granular scanning of individual Projects.&#x20;
+The [Snyk CLI ](../../../cli-ide-and-ci-cd-integrations/snyk-cli/)allows granular scanning of individual Projects.&#x20;
 
 {% hint style="info" %}
 You must formulate a command for each type of test to perform: open source, code, infrastructure as code, or container tests.
@@ -44,7 +44,7 @@ You must formulate a command for each type of test to perform: open source, code
 
 Follow these steps to use the CLI:
 
-1. [Install the CLI ](../../../snyk-cli/install-or-update-the-snyk-cli/)using one of the appropriate methods as part of the build script.
+1. [Install the CLI ](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)using one of the appropriate methods as part of the build script.
 2. In the script, navigate to the Project folder.
 3. Run the appropriate `snyk test` or `snyk monitor` commands with the appropriate options for the type of scan being run. \
    Where to implement testing in your scripts is generally flexible, but most commonly, testing is done prior to deployment. Use the `monitor` command alone for Snyk Open Source and Snyk Container to report vulnerabilities passively. In using gating with the `test` command, the idea is to break the build if issues are found that meet particular criteria like `--severity-threshold` or any number of options in the CLI or snyk-filter plugin. \
@@ -56,7 +56,7 @@ Follow these steps to use the CLI:
    * Open source:&#x20;
      * `snyk test --all-projects --org=[org-id]`
      * `snyk monitor --all-projects --org=[org-id]`
-   * Refer to the documentation for [container](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/) and [infrastructure as code](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/) scans for information about how to scan those types of Projects.
+   * Refer to the documentation for [container](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/) and [infrastructure as code](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/) scans for information about how to scan those types of Projects.
 4. Review results either locally when running `snyk test`, or in the Web UI when using monitor or report functions.
 
 {% hint style="info" %}

@@ -51,7 +51,7 @@ PR Checks that are configured to "Only fail when the issues found have a fix ava
 
 ## Snyk CLI for PHP
 
-A [build is required](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md) to scan with the CLI if there is no `composer.lock` file present. There are no unique options for use when running Snyk for PHP.&#x20;
+A [build is required](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md) to scan with the CLI if there is no `composer.lock` file present. There are no unique options for use when running Snyk for PHP.&#x20;
 
 ## SCM integrations and PHP
 

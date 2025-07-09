@@ -7,7 +7,7 @@ If you have several Organizations, one of these Organizations is set by default 
 * On the Snyk Web UI: The Organization that is displayed by default when you log in to your Snyk account.
 * In the Snyk CLI: The Organization that is used by default for the test count when you scan through the CLI.\
   **Note**: To change the Organization used for the test count in the CLI, use the\
-  `--org=<ORG_ID>` option. For more information, see the CLI help for the test commands: [Snyk test](../../../snyk-cli/commands/test.md), [Snyk Code test](../../../snyk-cli/commands/code-test.md), [Snyk Container test](../../../snyk-cli/commands/container-test.md), or [Snyk IaC test](../../../snyk-cli/commands/iac-test.md).
+  `--org=<ORG_ID>` option. For more information, see the CLI help for the test commands: [Snyk test](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/test.md), [Snyk Code test](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/code-test.md), [Snyk Container test](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/container-test.md), or [Snyk IaC test](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/iac-test.md).
 
 Follow these steps to change your Preferred Organization:
 

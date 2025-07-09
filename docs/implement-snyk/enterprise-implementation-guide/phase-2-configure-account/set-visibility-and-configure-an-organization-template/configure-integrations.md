@@ -74,7 +74,7 @@ The CLI offers
 * Support for private packages without the need to configure an additional integration, given that your build environment will have access to your private packages.
 * Visibility to components that are pushed to production by either breaking builds and reporting to Snyk or only by reporting to Snyk.
 
-There are a number of [CI/CD integrations](../../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) that you can use, or you can use the [Snyk CLI](../../../../snyk-cli/) as part of your pipeline to have more flexibility in the tests you are running.
+There are a number of [CI/CD integrations](../../../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) that you can use, or you can use the [Snyk CLI](../../../../cli-ide-and-ci-cd-integrations/snyk-cli/) as part of your pipeline to have more flexibility in the tests you are running.
 
 In the initial phase, Snyk recommends using the `monitor` feature to import information into Snyk so you can see any discovered issues, unless you are already importing your repos using a source control integration to achieve this. Later, when you want to start gating and blocking new vulnerabilities from being added, you can introduce `test` features, initially failing builds on critical issues, and then gradually adapting the fail criteria over time.
 
@@ -84,7 +84,7 @@ For `snyk iac test --report`, finding issues will result in the build possibly s
 If you want to passively test this, including the `--report` option requires either setting the build step to always continue or an alternative like concatenating logic equating to "or true", (for example  `snyk iac test --report || true`). The exact syntax will depend on the ecosystem the CLI is running in.&#x20;
 {% endhint %}
 
-Tools like [`snyk-filter`](../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) for advanced filtering and [`snyk-delta`](../../../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md) for highlighting new issues are quite popular for configuring pipelines.
+Tools like [`snyk-filter`](../../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) for advanced filtering and [`snyk-delta`](../../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md) for highlighting new issues are quite popular for configuring pipelines.
 
 Demonstrations of various pipeline integrations can be found on [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples)
 

@@ -35,7 +35,7 @@ If you believe you have found false positives because when the application runs 
 <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
 ```
 
-* You may choose to publish a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained) app that includes the runtime. Then set `RuntimeFrameworkVersion`to the specific patch version in the Project file. You may choose to [ignore](../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md) vulnerabilities that you believe are no longer relevant.
+* You may choose to publish a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained) app that includes the runtime. Then set `RuntimeFrameworkVersion`to the specific patch version in the Project file. You may choose to [ignore](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md) vulnerabilities that you believe are no longer relevant.
 
 ```
 <PropertyGroup>
@@ -123,7 +123,7 @@ Navigate to the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/)​
 
 ## What to test&#x20;
 
-Use the `--help` option in the CLI for details of Snyk CLI commands. Navigate to the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md) page for more details.
+Use the `--help` option in the CLI for details of Snyk CLI commands. Navigate to the [CLI commands and options summary](../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) page for more details.
 
 ### **Open Source libraries**
 
@@ -140,7 +140,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 [Supported Operating System Distributions](../../scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md)
 
-[Snyk CLI for container security](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)&#x20;
+[Snyk CLI for container security](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)&#x20;
 
 ### Infrastructure as Code
 
@@ -148,9 +148,9 @@ Navigate to the [Infrastructure as Code security](https://snyk.io/product/infras
 
 ### **Helpful options and plugins**
 
-* To help generate reports locally or at build time, see [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
+* To help generate reports locally or at build time, see [snyk-to-html](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md).
 * See the `--json` and `--sarif` options for generating output that can be programmatically accessed.
-* For advanced filtering options, see[ snyk-filter](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
+* For advanced filtering options, see[ snyk-filter](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md).
 
 ## Additional security topics for .Net developers
 

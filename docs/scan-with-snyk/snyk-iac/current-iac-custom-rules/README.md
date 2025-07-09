@@ -12,7 +12,7 @@ These rules are intended to meet most of your needs on your first scan, but you 
 
 ## Creating additional Snyk IaC Custom Rules
 
-The IaC SDK helps security teams define their own rules, to be run by the [Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/), providing feedback to developers.
+The IaC SDK helps security teams define their own rules, to be run by the [Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/), providing feedback to developers.
 
 Using this SDK, you can add your own custom rules to Snyk IaC to run alongside the standard provided rules, giving comprehensive security feedback to your development teams in one place.
 

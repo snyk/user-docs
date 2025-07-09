@@ -8,7 +8,7 @@ To set the Python version in the CLI, add the following option to `snyk test` or
 --command=python3
 ```
 
-For details, see the options for Python Projects in the [`snyk test`](../../snyk-cli/commands/test.md) and [`snyk monitor`](../../snyk-cli/commands/monitor.md) help.
+For details, see the options for Python Projects in the [`snyk test`](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/test.md) and [`snyk monitor`](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/monitor.md) help.
 
 ## Pip and  CLI
 

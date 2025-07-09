@@ -37,7 +37,7 @@ The **Snyk FixPR** feature is not available for Elixir. This means that you will
 To scan your dependencies, you must first install Elixir and Mix. For details, [see the Elixir installation instructions](https://elixir-lang.org/install.html).
 {% endhint %}
 
-Snyk offers security scanning to test your Elixir Projects for vulnerabilities using the [CLI](../snyk-cli/).
+Snyk offers security scanning to test your Elixir Projects for vulnerabilities using the [CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/).
 
 Mix is a build tool that compiles, tests, and creates Elixir projects. Mix manages dependencies by integrating with the Hex package manager.
 

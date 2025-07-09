@@ -19,7 +19,7 @@ You can perform these actions in the Snyk Web UI, as shown on this page.
 
 You can also perform these actions using the API endpoints [Add a tag to a Project](../../snyk-api/reference/projects-v1.md#org-orgid-project-projectid-tags), [Remove a tag from a Project](../../snyk-api/reference/projects-v1.md#org-orgid-project-projectid-tags-remove), and  [List all tags in a Group](../../snyk-api/reference/groups-v1.md#group-groupid-tags).
 
-You can set values for a tag applied to a Project and clear the Project tags using the Snyk CLI option `--project-tags`. See the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md) for the commands that support this option.
+You can set values for a tag applied to a Project and clear the Project tags using the Snyk CLI option `--project-tags`. See the [CLI commands and options summary](../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) for the commands that support this option.
 
 {% hint style="info" %}
 If a Project tag is no longer assigned to a Project, the tag will no longer exist.&#x20;
