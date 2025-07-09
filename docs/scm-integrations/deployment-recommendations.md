@@ -21,13 +21,13 @@ For details, see [Set up a Snyk integration](../getting-started/#set-up-a-snyk-i
 
 Snyk has Group-level SCM integrations available for Snyk Essentials, including GitHub, GitLab, Azure DevOps, and Bitbucket.
 
-See [Group level SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) for details.
+See [Group level SCM integrations](group-level-integrations/) for details.
 
 ### **SCM permissions on repositories**
 
 Operations triggered using the Snyk UI, such as opening a Fix PR or retesting a Project, are performed for the acting user. Thus to perform these operations, you must connect your own SCM user or service account. This gives Snyk the required permissions for the repositories where you want to perform these operations.
 
-For details on these permissions, see [User permissions and access scope requirements](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#user-permissions-and-access-scope-requirements) for your chosen SCM integration.
+For details on these permissions, see [User permissions and access scope requirements](user-permissions-and-access-scopes.md) for your chosen SCM integration.
 
 ### **Change notification settings**
 
