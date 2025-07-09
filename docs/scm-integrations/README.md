@@ -11,7 +11,7 @@ Snyk Source Control Manager (SCM) integrations allow you to:
 You can implement SCM integrations in a Snyk environment as follows:
 
 * [Group level](group-level-integrations/) - At the Group level, set up the SCM integrations for an enriched context.
-* [Organization level](organization-level-integrations/) - At the Organization level, set up the SCM integrations for testing your repositories. See the [Manage your Integrations](../getting-started/snyk-web-ui.md) at the Organizational level page for more details.
+* [Organization level](snyk-scm-integrations/) - At the Organization level, set up the SCM integrations for testing your repositories. See the [Manage your Integrations](../getting-started/snyk-web-ui.md) at the Organizational level page for more details.
 
 To use the same SCM integration at both Group and Organization levels, you must set up that integration on both levels.
 
@@ -44,14 +44,14 @@ As a Free or Team plan user, Snyk recommends using the GitHub integration as it 
 If you use the self-hosted GitHub Enterprise product, you must use the GitHub Enterprise integration.
 
 {% hint style="info" %}
-For detailed steps on migrating from GitHub to GitHub Enterprise, see [Migrate to GitHub Enterprise](organization-level-integrations/github.md#migrate-to-the-github-enterprise-integration).
+For detailed steps on migrating from GitHub to GitHub Enterprise, see [Migrate to GitHub Enterprise](snyk-scm-integrations/github.md#migrate-to-the-github-enterprise-integration).
 {% endhint %}
 
 ### Bitbucket Cloud (PAT) vs Bitbucket Cloud App
 
 In general, Snyk recommends using the new Bitbucket Cloud app integration. However, the new integration does not fit all cases. The information in this section is intended to help you decide which integration is right for you.
 
-See [Migrate to the Snyk Bitbucket Cloud App](organization-level-integrations/bitbucket-cloud.md#migrate-to-the-bitbucket-cloud-app) for detailed migration instructions.
+See [Migrate to the Snyk Bitbucket Cloud App](snyk-scm-integrations/bitbucket-cloud.md#migrate-to-the-bitbucket-cloud-app) for detailed migration instructions.
 
 #### Main capabilities unlocked by the new app integration
 

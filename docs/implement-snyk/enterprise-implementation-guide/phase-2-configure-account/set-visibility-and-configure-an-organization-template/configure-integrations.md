@@ -62,7 +62,7 @@ To disable gating initially, use the daily monitoring that is automatically conf
 
 &#x20;Similarly, you may want to disable fix and upgrade PR features.
 
-[Snyk AppRisk integrations](../configure-asset-management-with-snyk-essentials.md#setup-integrations) require additional setup and configuration using the Integration Hub option from the Snyk Web UI, Snyk AppRisk menu.
+[Snyk AppRisk integrations](../configure-asset-management-with-snyk-essentials.md#setup-integrations) require additional setup and configuration using the **Add integration** option from the Snyk Web UI, Snyk AppRisk menu.
 
 ### CI/CD (Build Pipelines)
 

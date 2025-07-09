@@ -120,7 +120,7 @@ The Clusters column is hidden by default. To enable it, click Columns, select Cl
 
 ### **Asset Sources, Types, and Scanned Artifacts**
 
-Snyk Essentials automatically derives assets from Snyk and any SCM tools that are onboarded using the Snyk Essentials Integration Hub. SCM tools from the Snyk Essentials Integration Hub may add additional repositories that are not scanned by Snyk and additional contexts, such as teams and code committers.
+Snyk Essentials automatically derives assets from Snyk and any SCM tools that are onboarded using the Snyk Essentials Integration. SCM tools from the Snyk Essentials Integration may add additional repositories that are not scanned by Snyk and additional contexts, such as teams and code committers.
 
 ### Repository assets, scanned artifacts and packages
 

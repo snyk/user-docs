@@ -1,6 +1,6 @@
 # Backstage file in Asset Inventory - Use case
 
-After you finish configuring the [Backstage catalog](./#backstage-file-for-scm-integrations), Snyk Essentials starts enriching your repository assets (the [All Assets](../../manage-assets/#inventory-overview) tab from the Inventory layout) with the data found in the backstage `catalog-info.yaml` file.
+After you finish configuring the [Backstage catalog](./#backstage-file-for-scm-integrations), Snyk Essentials starts enriching your repository assets (the [All Assets](../../../manage-assets/#inventory-overview) tab from the Inventory layout) with the data found in the backstage `catalog-info.yaml` file.
 
 Use the Backstage catalog to enrich the repository assets and to define the component entity. For this type of situation, a component is defined as a software component, like a service, repository, website, library, and so on.&#x20;
 
@@ -15,7 +15,7 @@ Components have several attributes and most of them are optional:
 
 The Backstage data is dynamic and may change over time:
 
-* If new commits or updates are made on the `catalog-info.yaml` file, then Snyk Essentials updates the asset attribute for that specific repository asset.
+* If new commits or updates are made to the `catalog-info.yaml` file, then Snyk Essentials updates the asset attribute for that specific repository asset.
 * If the`catalog-info.yaml` file is removed from the repository, then Snyk Essentials deletes the asset attribute from that specific repository assets.
 
 {% hint style="info" %}
@@ -24,11 +24,11 @@ You can use quotes (`""`) to escape keys that contain periods (`.`), for example
 
 ## Inventory menu and the Backstage file&#x20;
 
-Depending on the selection you made on the Integration Hub configuration menu, only those selections are displayed in filters from the Inventory menu. For example, if you selected the Category attribute, then it will also be displayed in the filters list.
+Depending on the selection you made on the Integration configuration menu, only those selections are displayed in filters from the Inventory menu. For example, if you selected the Category attribute, then it will also be displayed in the filters list.
 
 ## Asset Summary Tab and the Backstage file&#x20;
 
-The Asset Summary tab shows the six Backstage attributes that are configured in the Integration Hub only if you choose to integrate with Backstage.
+The Asset Summary tab shows the six Backstage attributes that are configured in the Integrations page only if you choose to integrate with Backstage.
 
 ## Asset Attributes Tab and the Backstage file&#x20;
 

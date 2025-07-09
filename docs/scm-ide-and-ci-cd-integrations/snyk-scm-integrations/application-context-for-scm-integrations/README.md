@@ -44,9 +44,9 @@ You can use the Backstage catalog file for GitHub, GitLab, Azure DevOps, BitBuck
 * A configured SCM integration.&#x20;
 * The `catalog-info.yaml` file from your Project.
 
-### Integration Hub setup for Backstage file
+### Integration setup for Backstage file
 
-1. Open the **Integration Hub** menu.&#x20;
+1. Open the **Integrations** page.&#x20;
 2. Select an SCM integration.&#x20;
 3. Click the **Settings** option of the SCM integration.&#x20;
 4. Enable the **Add Backstage Catalog** option.
@@ -92,9 +92,9 @@ The ServiceNow CMDB integration is in Early Access and available with Snyk Enter
 * The ServiceNow CMDB integration uses basic authentication and suggests enabling the "Web service access only" option for Service Accounts.&#x20;
 {% endhint %}
 
-### Integration Hub setup for ServiceNow CMDB <a href="#servicenow-cmdb-integration-hub-setup" id="servicenow-cmdb-integration-hub-setup"></a>
+### Integration setup for ServiceNow CMDB <a href="#servicenow-cmdb-integration-hub-setup" id="servicenow-cmdb-integration-hub-setup"></a>
 
-* Open the **Integration Hub** menu.&#x20;
+* Open the **Integrations** page.&#x20;
 * Select the **App Context** tag and search for ServiceNow CMDB.&#x20;
 * Click the **Add** button.
 * Add the **Profile name** - this is the name of your ServiceNow CMDB profile.
@@ -109,7 +109,7 @@ The ServiceNow CMDB integration is in Early Access and available with Snyk Enter
 * When the connection is established, the status of the ServiceNow CMDB integration is changed to **Connected**.
 
 {% hint style="warning" %}
-When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration Hub setup.
+When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration setup.
 {% endhint %}
 
 The following videos present an overview of the ServiceNow CMDB from the Snyk Web UI.
@@ -143,9 +143,9 @@ The gathered data from Atlassian Compass will be correlated with the Repository 
 This feature is available only for the integration with Atlassian Compass.
 {% endhint %}
 
-### Integration Hub setup for Atlassian Compass
+### Integration setup for Atlassian Compass
 
-1. Open the **Integration Hub** menu.&#x20;
+1. Open the **Integrations** page.&#x20;
 2. Select the **App Context** tag and search for Atlassian Compass.&#x20;
 3. Click the **Add** button.
 4. Add the **Profile name** - this is the name of your Atlassian Compass profile.
@@ -183,9 +183,9 @@ The Harness integration is in Early Access and available with Snyk Enterprise pl
 This integration is focused on [Harness’s](https://developer.harness.io/docs/internal-developer-portal/catalog/software-catalog/) service catalog module and it is backed by the Backstage catalog.
 {% endhint %}
 
-### Integration Hub setup for Harness
+### Integration setup for Harness
 
-1. Open the **Integration Hub** menu.&#x20;
+1. Open the **Integrations** page.&#x20;
 2. Select the **App Context** tag and search for Harness.&#x20;
 3. Click the **Add** button.
 4. Add the **Profile name** - this is the name of your Harness instance.
@@ -202,7 +202,7 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
 9. When the connection is established, the status of the Harness integration is changed to **Connected**, and Snyk Essentials will start enriching repository assets with the data found in Harness.
 
 {% hint style="warning" %}
-When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration Hub setup.
+When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration setup.
 {% endhint %}
 
 ## OpsLevel
@@ -219,9 +219,9 @@ The OpsLevel integration is in Early Access and available with Snyk Enterprise p
 2. Add the **Instance URL** of your OpsLevel account. You can use this format type: `https://<YOUR Organizer>.opslevel.com`
 3. Add the **API Token** for your OpsLevel instance. To create an API Token in your OpsLevel account, use the instructions on the OpsLevel [Create an API token](https://docs.opslevel.com/docs/graphql#1-create-an-api-token) documentation page.
 
-### Integration Hub setup for OpsLevel
+### Integration setup for OpsLevel
 
-1. Open the **Integration Hub** menu.&#x20;
+1. Open the **Integrations** page.&#x20;
 2. Select the **App Context** tag and search for OpsLevel.&#x20;
 3. Click the **Add** button.
 4. Add the **Profile name** - this is the name of your OpsLevel instance.
@@ -254,9 +254,9 @@ The Datadog Service Catalog integration is in Early Access and available with Sn
 2. Add the **API key** for the Datadog instance. Your token should have the following scope permissions: `apm_service_catalog_read`.
 3. Add the **Application Key** along with your organization's API key to grant users access to Datadog's programmatic API. For more details, access the [Datadog API and Application key](https://docs.datadoghq.com/account_management/api-app-keys/) documentation page.
 
-### Integration Hub setup for Datadog Service Catalog
+### Integration setup for Datadog Service Catalog
 
-1. Open the **Integration Hub** menu.&#x20;
+1. Open the **Integrations** page.&#x20;
 2. Select the **App Context** tag and search for **Datadog Service Catalog**.&#x20;
 3. Click the **Add** button.
 4. Add the **Profile name** - this is the name of your Datadog instance.
@@ -274,7 +274,7 @@ The Datadog Service Catalog integration is in Early Access and available with Sn
 10. When the connection is established, the status of the Datadog Service Catalog integration is changed to **Connected**, and Snyk Essentials will start enriching repository assets collected by a Snyk Essentials SCM Integration with the data found in Datadog Service Catalog.
 
 {% hint style="warning" %}
-When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration Hub setup.
+When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration setup.
 {% endhint %}
 
 \

@@ -172,4 +172,4 @@ You can re-connect anytime; however, re-initiating GitHub Enterprise projects fo
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 5. API URL (`mandatory`) - Input the API URL. The default URL is `https://api.github.com`.
 6. Pull personal repositories (`optional`): Enable the option if you only want to pull the repositories you own.
-7. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](../application-context-for-scm-integrations/) page.
+7. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) page.

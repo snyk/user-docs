@@ -27,15 +27,15 @@ Start building your asset inventory by setting up the necessary integrations.
 The scanned information is automatically imported within two hours after enabling all features.  Note that for large onboardings, it is suggested to wait up to 24hours for all information to be processed.
 {% endhint %}
 
-Access and configure the integrations from the **Integrations** view. Select the **Integration Hub** option to see the list of all available integrations. See the [Using the Integration Hub](../../../scm-integrations/organization-level-integrations/#using-the-integration-hub) section for more details.
+Access and configure the integrations from the **Integrations** view. Select the **Add integration** option to see the list of all available integrations. See the [Adding an integration](../../../scm-integrations/snyk-scm-integrations/#adding-an-integration).
 
 The default display in the **Integrations** view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-integrations/organization-level-integrations/#snyk-essentials-and-snyk-apprisk-integrations-ecosystem).
+You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-integrations/snyk-scm-integrations/#snyk-essentials-and-snyk-apprisk-integrations-ecosystem).
 
-<figure><img src="../../../.gitbook/assets/image (357) (1).png" alt="Snyk AppRisk - Integration Hub option displaying the list of available integrations"><figcaption><p>Snyk Essentials - Integration Hub option displaying the list of available integrations</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/integration-add-integration.png" alt="Snyk Essentials - The list of available integrations"><figcaption><p>Snyk Essentials - The list of available integrations</p></figcaption></figure>
 
-After you click on the **Integration Hub**, a list of the available integrations is displayed. For each integration, you can add one or multiple profiles.&#x20;
+After you select **Add an integration**, a list of the available integrations is displayed. For each integration, you can add one or multiple profiles.&#x20;
 
 The following video shows how to configure integrations for asset management and discovery.
 
@@ -45,22 +45,22 @@ Configure integrations for asset management and discovery&#x20;
 
 ### SCM integrations
 
-Configure your SCM integrations in the Integrations Hub.
+Configure your SCM integrations in the **Integrations** page.
 
 {% hint style="warning" %}
-**Integration Hub** is a distinct integration interface dedicated to asset management. It is available with Snyk Essentials and is separate from the Organization integrations interface, which is used for security and license scanning.
+The integration interface is dedicated to asset management. It is available with Snyk Essentials and is separate from the Organization integrations interface, which is used for security and license scanning.
 {% endhint %}
 
 When you set a token on the Group Level Integrations screen, it enhances security by providing a comprehensive view of access. This token allows broad access to all repositories, even those not permitted for individual developers, ensuring alignment between security and development teams.
 
 The supported SCM integrations are:
 
-* [GitHub](../../../scm-integrations/organization-level-integrations/github.md#group-level-snyk-essentials-integrations)
-* [GitLab](../../../scm-integrations/organization-level-integrations/gitlab.md#group-level-snyk-essentials-integrations)
-* [Azure DevOps (Azure Repos)](../../../scm-integrations/organization-level-integrations/azure-repositories-tfs.md#group-level-snyk-essentials-integrations)
-* [BitBucket](../../../scm-integrations/organization-level-integrations/bitbucket-cloud.md#group-level-snyk-essentials-integrations)
+* [GitHub](../../../scm-integrations/snyk-scm-integrations/github.md#group-level-snyk-essentials-integrations)
+* [GitLab](../../../scm-integrations/snyk-scm-integrations/gitlab.md#group-level-snyk-essentials-integrations)
+* [Azure DevOps (Azure Repos)](../../../scm-integrations/snyk-scm-integrations/azure-repositories-tfs.md#group-level-snyk-essentials-integrations)
+* [BitBucket](../../../scm-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-essentials-integrations)
 
-Navigate to the [Snyk SCM Integrations](../../../scm-integrations/organization-level-integrations/#snyk-essentials-and-snyk-apprisk-integrations-ecosystem) page for more details about the supported SCM integrations.
+Navigate to the [Snyk SCM Integrations](../../../scm-integrations/snyk-scm-integrations/#snyk-essentials-and-snyk-apprisk-integrations-ecosystem) page for more details about the supported SCM integrations.
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
@@ -82,7 +82,7 @@ Navigate to the [Snyk Broker](../../../enterprise-setup/snyk-broker/using-snyk-e
 
 The application context refers to the information surrounding a particular application, which includes the assets that form the application and how these assets are related. Understanding this context is essential for assessing the impact and risk of security issues, as it provides a comprehensive view of the application's structure and its components. This understanding is crucial for effectively evaluating and managing application security risks.
 
-Access the [Application context for SCM Integrations](../../../scm-integrations/application-context-for-scm-integrations/) docs for more details about how to use this feature.
+Access the [Application context for SCM Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) docs for more details about how to use this feature.
 
 ## Features
 
@@ -91,7 +91,7 @@ The Snyk Essentials functionality is split across several menu options from the 
 * The Asset [Dashboard](../../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) report
 * [Inventory](../../../manage-assets/)
 * [Policies](../../../manage-risk/policies/assets-policies/)
-* [Integrations for SCM](../../../scm-integrations/organization-level-integrations/#group-level-snyk-essentials-scm-integrations)&#x20;
+* [Integrations for SCM](../../../scm-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations)&#x20;
 * [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
 
 #### Inventory view

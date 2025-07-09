@@ -40,11 +40,11 @@ For information on how to automate the process of adding business context and re
 The Group-level Integrations view focuses on asset management and discovery and is available with Snyk Enterprise.
 {% endhint %}
 
-The **Integrations** page shows all active integrations, [SCM](../scm-integrations/organization-level-integrations/#group-level-snyk-essentials-scm-integrations) or, [third-party](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.
+The **Integrations** page shows all active integrations, [SCM](../scm-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) or, [third-party](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.
 
 You can find an overview of all your integrations on the Snyk Web UI **Integrations** page. You can enable or disable your integrations, edit them, or remove them from your configuration.
 
-For more details about available integrations, see [Snyk Essentials SCM integrations](../scm-integrations/organization-level-integrations/#group-level-snyk-essentials-scm-integrations) and [Integrate with Snyk](../integrate-with-snyk/).
+For more details about available integrations, see [Snyk Essentials SCM integrations](../scm-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [Integrate with Snyk](../integrate-with-snyk/).
 
 #### Enable or disable an integration
 
