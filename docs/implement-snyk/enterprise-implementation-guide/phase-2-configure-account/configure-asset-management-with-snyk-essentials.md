@@ -57,8 +57,8 @@ The supported SCM integrations are:
 
 * [GitHub](../../../scm-integrations/group-level-integrations/github-for-snyk-essentials.md)
 * [GitLab](../../../scm-integrations/group-level-integrations/gitlab-for-snyk-essentials.md)
-* [Azure DevOps (Azure Repos)](../../../scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials.md)
-* [BitBucket](../../../scm-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-essentials-integrations)
+* [Azure DevOps (Azure Repos)](../../../scm-integrations/group-level-integrations/azure-devops-for-snyk-essentials.md)
+* [BitBucket](../../../scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials.md)
 
 Navigate to the [Group-level integrations](../../../scm-integrations/group-level-integrations/) page for more details about the supported SCM integrations.
 

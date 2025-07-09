@@ -136,7 +136,7 @@ The installation process begins again, and you can choose the relevant Snyk Orga
 
 ### Required permission scopes for the Bitbucket Cloud App integration
 
-For detailed information on the permissions required for this integration, see [Bitbucket permission requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#bitbucket-permission-requirements).
+For detailed information on the permissions required for this integration, see [Bitbucket permission requirements](../user-permissions-and-access-scopes.md#bitbucket-cloud-app-scopes).
 
 ### Disabling the Bitbucket Cloud App integration
 
