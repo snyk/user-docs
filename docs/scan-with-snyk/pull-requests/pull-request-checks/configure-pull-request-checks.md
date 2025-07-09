@@ -1,11 +1,11 @@
-# Configure Pull Request Checks
+# Configure Pull Request checks
 
 ## Prerequisites for automated PR Checks
 
 To check for open-source and licensing issues and code security, ensure that you have established the following:
 
 * You have the Group Admin role so you have access to all integration settings. See [Member roles](../../../snyk-admin/user-roles/user-role-management.md).
-* You have [set up a Git repository integration](../../../scm-integrations/snyk-scm-integrations/). For help, see the Snyk Learn course [Source code manager configuration](https://learn.snyk.io/lesson/configure-snyk-scm/).
+* You have [set up a Git repository integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/). For help, see the Snyk Learn course [Source code manager configuration](https://learn.snyk.io/lesson/configure-snyk-scm/).
 * Import a Project to have a working Git repository.
 * For code security (Snyk Code), meet all of the above conditions and then contact your Snyk representative to enable the feature for you.
 
@@ -67,9 +67,9 @@ When switched on, this will cause the PR check to fail when the PR introduces ne
 
 4. Either click **Save** to save the changes, select the Save dropdown and click **Apply changes to all overridden Projects** to extend the current configuration to Projects with custom settings. For more information, see [Configure PR Checks at the Project level](configure-pull-request-checks.md#configure-pr-checks-at-the-project-level).
 
-## Configure PR Checks at the Project level
+## Configure PR checks at the Project level
 
-You can configure PR Checks to work only for specific Projects:
+You can configure PR checks to work only for specific Projects:
 
 1. Navigate to **Projects** and expand the [target](../../../snyk-admin/snyk-projects/#target) containing your Project.
 2. Click a Project name to open it. Based on the Project type, you can choose the following:

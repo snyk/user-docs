@@ -52,8 +52,8 @@ The [Bitbucket Cloud App](scm-integrations/snyk-scm-integrations/bitbucket-cloud
 
 ### **Other updates**
 
-* For [SCM integrations with Python](supported-languages-package-managers-and-frameworks/python/git-repositories-and-python.md), the list of dependencies that are not supported has been updated to include `pip` for Python 2.7 and 3.7.
-* [Python dependency filtering results](supported-languages-package-managers-and-frameworks/python/git-repositories-and-python.md) have been updated to clarify the conditions in which certain packages and configurations are skipped by SCM scans.
+* For [SCM integrations with Python](supported-languages-package-managers-and-frameworks/python/scm-integrations-and-python.md), the list of dependencies that are not supported has been updated to include `pip` for Python 2.7 and 3.7.
+* [Python dependency filtering results](supported-languages-package-managers-and-frameworks/python/scm-integrations-and-python.md) have been updated to clarify the conditions in which certain packages and configurations are skipped by SCM scans.
 * The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages-package-managers-and-frameworks/c-c++/), [SBOM monitor](cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom-monitor.md), [SBOM test](cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom-test.md), [Test an SBOM document for vulnerabilities](snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
 * [Instructions for upgrading an Organization integration from Classic Broker to Universal Broker](enterprise-setup/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md) were clarified.
 
@@ -228,9 +228,9 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk Integrations**
 
 * [Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/) is now in [GA](getting-started/snyk-release-process.md).
-* [Snyk SCM integrations](scm-integrations/snyk-scm-integrations/) has been updated with additional notices relating to repository retrieval and permission or scope modifications after initial configuration.
+* [Snyk SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) has been updated with additional notices relating to repository retrieval and permission or scope modifications after initial configuration.
 * GitHub Cloud App has been added to feature support notices for Fix, Backlog, and Upgrade PRs.
-* Snyk SCM integrations has been updated to include a table detailing the [permissions and scopes](scm-integrations/snyk-scm-integrations/#github-cloud-app-permission-requirements) required for the GitHub Cloud App.
+* Snyk SCM integrations has been updated to include a table detailing the [permissions and scopes](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-cloud-app-permission-requirements) required for the GitHub Cloud App.
 
 ### **Other updates**
 
@@ -324,7 +324,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
   * Inventory - [Manage assets](manage-assets/) section
   * Issues - [Prioritize issues for fixing](manage-risk/prioritize-issues-for-fixing/#prioritization-based-on-risk) section
   * Policies - [Assets policies](manage-risk/policies/assets-policies/) section
-  * Integrations - [Snyk SCM integrations](scm-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [Integrate with Snyk](integrate-with-snyk/) sections
+  * Integrations - [Snyk SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [Integrate with Snyk](integrate-with-snyk/) sections
   * Snyk AppRisk - [Scan with Snyk](scan-with-snyk/snyk-apprisk.md) section
   * Analytics - [Manage risk](manage-risk/analytics/application-analytics.md) section
 
@@ -332,12 +332,12 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 * A comparison of the GitHub and GitHub Enterprise integrations functions now resides on the [SCM, IDE, and CI/CD integrations](scm-integrations/#github-vs-github-enterprise) page.
 * Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](scm-integrations/snyk-scm-integrations/github.md#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
-* The [Snyk SCM Integrations](scm-integrations/snyk-scm-integrations/) page now contains information critical to using these integrations successfully in your SDLC. This includes:
-  * Organizing integrations by [Group](scm-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [Organization](scm-integrations/snyk-scm-integrations/#organization-level-snyk-scm-integrations) level in line with Snyk AppRisk functionality
+* The [Snyk SCM Integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) page now contains information critical to using these integrations successfully in your SDLC. This includes:
+  * Organizing integrations by [Group](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [Organization](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#organization-level-snyk-scm-integrations) level in line with Snyk AppRisk functionality
   * [Git repository cloning](scm-integrations/workspaces.md) details
-  * [Deployment recommendations](scm-integrations/snyk-scm-integrations/#deployment-order-recommendations) for Enterprise customers
-  * [User permissions and access scope requirements](scm-integrations/snyk-scm-integrations/#user-permissions-and-access-scope-requirements) for each SCM integration
-  * Instructions on how to generate [integrated SCM tokens for Snyk Broker](scm-integrations/snyk-scm-integrations/#integrated-scm-tokens-for-snyk-broker)
+  * [Deployment recommendations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#deployment-order-recommendations) for Enterprise customers
+  * [User permissions and access scope requirements](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#user-permissions-and-access-scope-requirements) for each SCM integration
+  * Instructions on how to generate [integrated SCM tokens for Snyk Broker](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#integrated-scm-tokens-for-snyk-broker)
 
 ### **Other updates**
 

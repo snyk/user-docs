@@ -1,7 +1,7 @@
 # Run an analysis with Visual Studio Code extension
 
 {% hint style="info" %}
-Ensure the Snyk extension is [configured](visual-studio-code-extension-configuration-environment-variables-and-proxy.md), [authenticated](view-analysis-results-from-visual-studio-code-extension/), and [trusted](visual-studio-code-workspace-trust.md) for your current Project.
+Ensure the Snyk extension is [configured](visual-studio-code-extension-configuration-environment-variables-and-proxy.md), [authenticated](view-analysis-results-from-visual-studio-code-extension/), and [trusted](../../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-workspace-trust.md) for your current Project.
 {% endhint %}
 
 You can trigger `snyk test` by using one of these methods:

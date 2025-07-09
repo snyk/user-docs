@@ -1,4 +1,4 @@
-# Snyk Infrastructure as Code Action
+# Snyk Infrastructure as Code action
 
 This page provides instructions for and examples of using the Snyk GitHub Action for [Infrastructure as Code](https://github.com/snyk/actions/tree/master/iac). For general instructions and information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
 
@@ -80,7 +80,7 @@ jobs:
 
 ### Sharing test results
 
-You can [share your test results](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/share-cli-results-with-the-snyk-web-ui.md) with the Snyk platform.
+You can [share your test results](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/share-cli-results-with-the-snyk-web-ui.md) with the Snyk platform.
 
 ```yaml
 name: Example workflow for Snyk Infrastructure as Code
@@ -100,7 +100,7 @@ jobs:
 
 ### Specifying scan mode for Terraform Plan
 
-You can also choose the [scan mode](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/test-your-iac-files/terraform-files.md#scan-terraform-plan-output) when scanning Terraform Plan files.
+You can also choose the [scan mode](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/test-your-iac-files/terraform-files.md#scan-terraform-plan-output) when scanning Terraform Plan files.
 
 ```yaml
 name: Example workflow for Snyk Infrastructure as Code
@@ -153,5 +153,5 @@ If you see the error `Advanced Security must be enabled for this repository to u
 
 For more information on how to use the `snyk iac test` command, see the following:
 
-* [Snyk CLI for Infastructure as Code](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)
-* [Snyk Infrastructure as Code test command](../../snyk-cli/commands/iac-test.md)
+* [Snyk CLI for Infastructure as Code](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)
+* [Snyk Infrastructure as Code test command](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/iac-test.md)

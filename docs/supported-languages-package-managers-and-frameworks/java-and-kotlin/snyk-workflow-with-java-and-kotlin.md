@@ -5,7 +5,7 @@ The Snyk team has built plugins to integrate Snyk into your workflows:
 * [Gradle Plugin](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) (Community project)
 * [Maven Plugin](https://snyk.io/blog/snyk-maven-plugin-integrated-security-vulnerability-scanning-for-developers/)
 
-## Validating, Monitoring, Alerting, and Gating
+## Validating, monitoring, alerting, and gating
 
 The following capabilities are available for all Snyk users:
 

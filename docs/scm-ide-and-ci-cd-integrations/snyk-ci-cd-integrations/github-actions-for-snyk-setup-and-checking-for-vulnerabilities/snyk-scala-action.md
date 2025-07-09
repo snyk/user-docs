@@ -1,4 +1,4 @@
-# Snyk Scala Action
+# Snyk Scala action
 
 {% hint style="warning" %}
 This image has been removed on 12 Aug 2024. It is highly recommended that users consider migrating to a newer action to ensure continued support and up-to-date functionality. If you are currently using this image, plan an upgrade as soon as possible to avoid any disruptions in your workflow post this date.
@@ -48,7 +48,7 @@ For an example of running `snyk monitor`, see this [Snyk monitor example](./#sny
 
 ## Uploading Snyk scan results to GitHub Code Scanning using the Snyk Scala Action
 
-Using `--sarif-file-output` [Snyk CLI option](../../snyk-cli/cli-commands-and-options-summary.md) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
+Using `--sarif-file-output` [Snyk CLI option](../../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
 
 The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) option as shown in this example:
 

@@ -1,10 +1,10 @@
-# Snyk AI/LLM Penetration Testing Service Description
+# Snyk AI/LLM Penetration Testing service description
 
 ## Overview
 
 AI/LLM Penetration Testing service delivers an expert-driven, end-to-end security evaluation of your AI and Large Language Model-powered applications. We go beyond traditional application security testing to assess five critical layers: model behavior, LLM APIs and orchestration, integration layers (like function calling and RAG), data privacy controls, and the surrounding SDLC/infrastructure. Our methodology encompasses scoping, threat modeling, design review, custom test plan development, rigorous hands-on testing, and continuous reporting, culminating in clear remediation advice and a validation retest.
 
-### Key Benefits
+### Key benefits
 
 * Holistic AI/LLM Security Assessment: Evaluates the entire model stack, uncovering risks beyond traditional application security.
 * Threat-Led Approach: Focuses on real-world attack scenarios and potential business impact.
@@ -14,7 +14,7 @@ AI/LLM Penetration Testing service delivers an expert-driven, end-to-end securit
 * Validation of Remediation: Includes a no-cost retest to confirm the effectiveness of implemented fixes.
 * Clear Reporting for All Stakeholders: Delivers executive summaries and detailed technical reports.
 
-### AI/LLM Penetration Testing Activities
+### AI/LLM Penetration Testing activities
 
 Our comprehensive methodology ensures a thorough evaluation of your AI/LLM systems:
 
@@ -30,7 +30,7 @@ Our comprehensive methodology ensures a thorough evaluation of your AI/LLM syste
 * Executive & Technical Readouts: Presentation of findings with a focus on business impact for leadership and detailed technical information for security teams. Findings are mapped to standards like ISO 42001, NIST AI RMF, OWASP LLM Top 10, OWASP Agentic AI, OWASP GenAI Security, OWASP Top 10, OWASP API Top 10, and MITRE ATLAS.
 * Remediation Support & Retest: Guidance on addressing identified vulnerabilities, followed by a no-cost retest to validate the effectiveness of implemented fixes and a formal attestation of the testing.
 
-### Key Deliverables
+### Key deliverables
 
 Upon completion of the engagement, you will receive:
 
@@ -39,7 +39,7 @@ Upon completion of the engagement, you will receive:
 * Evidence Bundle: Supporting materials including logs and proof-of-concept exploits.
 * Attestation Letter: Formal confirmation of the penetration testing engagement and the validation of remediated findings (post-retest).
 
-### Engagement Timeline
+### Engagement timeline
 
 Typical engagement timelines for single LLM agent systems or small multi-agent systems are as follows (timelines scale with system complexity):
 
@@ -49,7 +49,7 @@ Typical engagement timelines for single LLM agent systems or small multi-agent s
 * ½ day final readout
 * 1 day for retest and attestation
 
-## Key Assumptions
+## Key assumptions
 
 To ensure a successful and effective AI/LLM penetration testing engagement, we require the following from the customer:
 
@@ -61,5 +61,3 @@ To ensure a successful and effective AI/LLM penetration testing engagement, we r
 * Defined Scope Confirmation: Formal confirmation and agreement on the testing scope.
 * Awareness of Testing Activities: Ensuring relevant internal teams are aware of the scheduled testing.
 * Prompt Response to Findings: Commitment to reviewing findings and engaging in remediation discussions.
-
-\

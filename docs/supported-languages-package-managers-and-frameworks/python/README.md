@@ -4,7 +4,7 @@
 
 Snyk supports [Python for code analysis](python-for-code-analysis.md) and [Python for open source](python-for-open-source.md).
 
-For specific information about the use of versions and package managers, See [Snyk CLI for Python](snyk-cli-for-python.md) and [Git repositories and Python](git-repositories-and-python.md).
+For specific information about the use of versions and package managers, See [Snyk CLI for Python](snyk-cli-for-python.md) and [Git repositories and Python](scm-integrations-and-python.md).
 
 Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
 
@@ -17,7 +17,7 @@ Available functions:
 
 ## Package managers and supported file extensions
 
-Snyk for Python supports Pip, Poetry, pipenv, and setup.py as package managers. For the list of supported Python versions, check the [Git repositories and Python](git-repositories-and-python.md) page.
+Snyk for Python supports Pip, Poetry, pipenv, and setup.py as package managers. For the list of supported Python versions, check the [Git repositories and Python](scm-integrations-and-python.md) page.
 
 As a package registry, [pypi.org](https://pypi.org/) is supported.
 
@@ -95,7 +95,7 @@ You can specify the version of Python that Snyk uses to scan dependencies in bot
 
 See [Snyk CLI for Python](snyk-cli-for-python.md) for information about the Python version and installation and use information for Pip, Poetry, Pipevn, and setup.py.
 
-See [Git repositories and Python](git-repositories-and-python.md) for information about the Python version and installation and use for Python and pip and use of Poetry and pipenv.
+See [Git repositories and Python](scm-integrations-and-python.md) for information about the Python version and installation and use for Python and pip and use of Poetry and pipenv.
 
 ### Pipenv and Python versions supported
 

@@ -12,7 +12,7 @@ Snyk features are provided to users in the following release stages.
 
 ## Feature lifecycle stages
 
-<table><thead><tr><th>Stage</th><th>Description</th><th width="131.5997314453125">Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Deprecated</td><td>The feature is available, but use is discouraged. See <a href="snyk-release-process.md#deprecated-features">Deprecated features</a></td><td>Active users only</td><td>Available by default</td><td>Full public documentation, with the Release status at the top of the page</td></tr><tr><td>End of support</td><td>No new support tickets will be answered. See <a href="snyk-release-process.md#end-of-support-features">End of support features</a></td><td>Active users only</td><td>Available by default</td><td>Full public documentation, with the Release status at the top of the page</td></tr><tr><td>End of life</td><td>The feature is no longer available</td><td>No users</td><td>Not available</td><td>No documentation available</td></tr></tbody></table>
+<table><thead><tr><th>Stage</th><th>Description</th><th width="131.5997314453125">Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Deprecated</td><td>The feature is available, but use is discouraged. See <a href="snyk-release-process.md#deprecated-features">Deprecated features</a></td><td>Active users only</td><td>Available by default</td><td>Full public documentation, with the Release status at the top of the page</td></tr><tr><td>End of support</td><td>No new support tickets will be answered. See <a href="snyk-release-process.md#end-of-support-features">End of support features</a></td><td>Active users only</td><td>Available by default</td><td>Full public documentation, with the Release status at the top of the page</td></tr><tr><td>End of Life</td><td>The feature is no longer available</td><td>No users</td><td>Not available</td><td>No documentation available</td></tr></tbody></table>
 
 ## Brownouts
 
@@ -46,14 +46,14 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
 * [Application Analytics](../manage-risk/analytics/application-analytics.md)
 * [Snyk Runtime Sensor](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
 * Reports
-  * [Repositories Tested in CI/CD report](../manage-issues/reporting/available-snyk-reports.md#repositories-tested-in-ci-cd-report)
+  * [Repositories tested in CI/CD report](../manage-issues/reporting/available-snyk-reports.md)
   * [PCI-DSS v4.0.1 report](../manage-issues/reporting/available-snyk-reports.md#pci-dss-v4.0.1-report)
 
 ### Deprecated features
 
 Deprecated features are outdated and will be removed in the future. The documentation page will announce the transition of a feature to Deprecated six months before its start date.
 
-* [Snyk Code Local Engine ](../scan-with-snyk/snyk-code/snyk-code-local-engine.md)is deprecated.
+* Snyk Code Local Engine is deprecated.
 * Apps API has the following deprecated endpoints:
   * **Revoke app bot authorization** endpoint
     * The [Revoke app bot authorization](../snyk-api/api-endpoints-index-and-tips/#deprecated-revoke-app-bot-authorization) endpoint is deprecated.&#x20;
@@ -86,7 +86,7 @@ When a feature transitions to an end-of-support stage, both development and supp
 
 The documentation page will announce the transition of a feature to End of Support six months before its start date.
 
-### End of life features
+### End of Life features
 
 A feature can also be the subject of an end-of-life event, meaning that the feature or capability impacted by this process ceases to exist and is removed from the product and public documentation.
 

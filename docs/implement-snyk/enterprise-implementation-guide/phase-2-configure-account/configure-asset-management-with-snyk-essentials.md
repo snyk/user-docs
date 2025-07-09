@@ -27,11 +27,11 @@ Start building your asset inventory by setting up the necessary integrations.
 The scanned information is automatically imported within two hours after enabling all features.  Note that for large onboardings, it is suggested to wait up to 24hours for all information to be processed.
 {% endhint %}
 
-Access and configure the integrations from the **Integrations** view. Select the **Add integration** option to see the list of all available integrations. See the [Adding an integration](../../../scm-integrations/snyk-scm-integrations/#adding-an-integration).
+Access and configure the integrations from the **Integrations** view. Select the **Add integration** option to see the list of all available integrations. See the [Adding an integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#adding-an-integration).
 
 The default display in the **Integrations** view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-integrations/snyk-scm-integrations/#snyk-essentials-and-snyk-apprisk-integrations-ecosystem).
+You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-essentials-and-snyk-apprisk-integrations-ecosystem).
 
 <figure><img src="../../../.gitbook/assets/integration-add-integration.png" alt="Snyk Essentials - The list of available integrations"><figcaption><p>Snyk Essentials - The list of available integrations</p></figcaption></figure>
 
@@ -60,7 +60,7 @@ The supported SCM integrations are:
 * [Azure DevOps (Azure Repos)](../../../scm-integrations/snyk-scm-integrations/azure-repositories-tfs.md#group-level-snyk-essentials-integrations)
 * [BitBucket](../../../scm-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-essentials-integrations)
 
-Navigate to the [Snyk SCM Integrations](../../../scm-integrations/snyk-scm-integrations/#snyk-essentials-and-snyk-apprisk-integrations-ecosystem) page for more details about the supported SCM integrations.
+Navigate to the [Snyk SCM Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#snyk-essentials-and-snyk-apprisk-integrations-ecosystem) page for more details about the supported SCM integrations.
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
@@ -91,7 +91,7 @@ The Snyk Essentials functionality is split across several menu options from the 
 * The Asset [Dashboard](../../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) report
 * [Inventory](../../../manage-assets/)
 * [Policies](../../../manage-risk/policies/assets-policies/)
-* [Integrations for SCM](../../../scm-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations)&#x20;
+* [Integrations for SCM](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations)&#x20;
 * [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
 
 #### Inventory view

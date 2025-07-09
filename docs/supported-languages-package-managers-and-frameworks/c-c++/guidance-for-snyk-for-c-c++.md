@@ -19,7 +19,7 @@ Snyk does not hook into a build nor rely on a build to perform scanning. Snyk pe
 * Open Source source code must be present.
 * Snyk fingerprints files and compares them to the Snyk database to identify packages, versions, licenses, and vulnerabilities.
 
-## Snyk Integrations and common usage patterns
+## Snyk integrations and common usage patterns
 
 ### IDE
 
@@ -33,7 +33,7 @@ Under **Additional Parameters** in the IDE settings, enter the `--unmanaged` opt
 
 <div align="left"><figure><img src="https://lh6.googleusercontent.com/1j-2sJjuVejBJ6nARpaAx2uhdhqT7G3XyNCGZqFxBXJV9ujqRHBYiwInr_mFT7SH-fnhG6iUysKxzYKluPG1f3xUKyb2q-JycA_0QevtaS3hdm4I7-QT7M5benqzWkIe5N-7L3czV-F84_xUR5yl7k0" alt="Scan for dependencies"><figcaption><p>Scan for dependencies</p></figcaption></figure></div>
 
-### CLI Tips and tricks
+### CLI tips and tricks
 
 #### Codebase
 

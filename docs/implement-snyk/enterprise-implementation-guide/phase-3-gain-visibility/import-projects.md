@@ -19,7 +19,7 @@ Snyk offers various integration methods to meet your needs, as described here.
 
 ### Git integration
 
-You can connect your repositories for automatic scanning. See [Snyk SCM integrations](../../../scm-integrations/snyk-scm-integrations/) for more details.
+You can connect your repositories for automatic scanning. See [Snyk SCM integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) for more details.
 
 For a small number of applications, typically under a hundred, follow these steps.
 

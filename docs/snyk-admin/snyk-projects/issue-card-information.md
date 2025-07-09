@@ -7,7 +7,7 @@ Issue cards appear on the details page for a Project. You can use available opti
 * [Filter and sort issue cards](issue-card-information.md#filter-and-sort-issue-cards).
 * [Perform additional card actions](issue-card-information.md#perform-additional-card-actions).
 
-## View Issue card information
+## View issue card information
 
 Issue cards show details for a specific vulnerability or license issue and actions you can take.
 

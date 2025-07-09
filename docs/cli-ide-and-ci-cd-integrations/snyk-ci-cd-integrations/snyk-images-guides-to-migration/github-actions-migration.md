@@ -103,7 +103,7 @@ By creating your own actions, you can avoid the effects of future cleanup and re
 
 ### Leveraging the [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup) <a href="#b.1-leveraging-the-snyk-setup-action" id="b.1-leveraging-the-snyk-setup-action"></a>
 
-This [action](../github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-setup-action.md) offers a versatile method of incorporating Snyk into your workflows effectively.
+This [action](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-setup-action.md) offers a versatile method of incorporating Snyk into your workflows effectively.
 
 Consider using this action when:
 

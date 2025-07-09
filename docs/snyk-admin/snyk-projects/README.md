@@ -24,7 +24,7 @@ Snyk creates a Target when you request to import a Project or scan using the CLI
 
 When you select **Group by target**, Snyk Targets appear in the **Projects** listing. You can also find Targets using the endpoints [Get targets by org ID](../../snyk-api/reference/targets.md#orgs-org_id-targets) and [List all Projects for an Org with the given Org ID](../../snyk-api/reference/projects.md#orgs-org_id-projects).
 
-Click the **dots** at the far right of each Target on the list to see the **available actions**; these include **deleting** a target.
+Click the dots at the far right of each Target on the list to see the available actions, including deleting a target.
 
 <figure><img src="../../.gitbook/assets/project-page-overview-projects.png" alt="Snyk Target and Projects in that Target"><figcaption><p>Snyk Target and Projects in that Target</p></figcaption></figure>
 
@@ -98,9 +98,9 @@ The Targetfile is the specific item to scan in a Target, such as a `pom.xml` fil
 
 The Type is the scanning method to use for a particular Project, such as Static Application Security Testing ([SAST](https://snyk.io/learn/application-security/sast-vs-dast/)) for scanning using Snyk Code, or Maven for a Maven project using Snyk Open Source. This is part of the configuration for scanning.
 
-## Project actions on the Project Listing Page
+## Project actions on the Project listing page
 
-### Delete, Activate, or Deactivate
+### Delete, activate, or deactivate
 
 To perform an action at bulk on your Projects, first select the Projects and then choose to **Delete**, **Activate,** or **Deactivate** the Projects.
 

@@ -1,4 +1,4 @@
-# Nexus Repository Manager connection setup
+# Nexus repository manager connection setup
 
 {% hint style="info" %}
 **Feature availability**\
@@ -8,9 +8,9 @@ Package repository integrations are available with Enterprise plans. For more in
 The Nexus Repository Manager integration supports [Node.js](../../../../supported-languages-package-managers-and-frameworks/javascript/#package-managers-and-supported-file-extensions) (npm and Yarn) and [Maven](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#package-managers-and-supported-file-extensions) Projects. For [Improved Gradle SCM scanning](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning), use the Maven settings.
 {% endhint %}
 
-Connecting Nexus Repository Manager enables Snyk to resolve all direct and transitive dependencies of packages hosted on the Nexus registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
+Connecting Nexus repository manager enables Snyk to resolve all direct and transitive dependencies of packages hosted on the Nexus registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
 
-You can configure these types of Nexus Repository Manager:
+You can configure these types of Nexus repository manager:
 
 * Publicly accessible instances protected by basic authentication
 * Instances on a private network by using Snyk Broker (with or without basic authentication).

@@ -1,4 +1,4 @@
-# Backstage file in Asset Inventory - Use case
+# Backstage file in Asset Inventory - use case
 
 After you finish configuring the [Backstage catalog](./#backstage-file-for-scm-integrations), Snyk Essentials starts enriching your repository assets (the [All Assets](../../../manage-assets/#inventory-overview) tab from the Inventory layout) with the data found in the backstage `catalog-info.yaml` file.
 
@@ -22,15 +22,15 @@ The Backstage data is dynamic and may change over time:
 You can use quotes (`""`) to escape keys that contain periods (`.`), for example`"`[`example.com`](http://example.com/)`".owner`.
 {% endhint %}
 
-## Inventory menu and the Backstage file&#x20;
+## Inventory menu and the backstage file&#x20;
 
 Depending on the selection you made on the Integration configuration menu, only those selections are displayed in filters from the Inventory menu. For example, if you selected the Category attribute, then it will also be displayed in the filters list.
 
-## Asset Summary Tab and the Backstage file&#x20;
+## Asset Summary tab and the backstage file&#x20;
 
 The Asset Summary tab shows the six Backstage attributes that are configured in the Integrations page only if you choose to integrate with Backstage.
 
-## Asset Attributes Tab and the Backstage file&#x20;
+## Asset Attributes tab and the backstage file&#x20;
 
 In the Asset Attributes tab only the selected attributes should be added as metadata to the repository asset.
 
@@ -51,7 +51,7 @@ In the Asset Attributes tab only the selected attributes should be added as meta
 }
 ```
 
-## Policies Filter and the Backstage file&#x20;
+## Policies filter and the backstage file&#x20;
 
 In the policy builder you can find only the attributes you have previously selected when configuring the backstage catalog file.&#x20;
 

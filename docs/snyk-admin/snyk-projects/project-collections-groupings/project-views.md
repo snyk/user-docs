@@ -11,8 +11,8 @@ A Project view is visible to all users in the same Organization they were create
 
 ## Create and configure a Project view
 
-1. On the right side of the Project listing page, beneath the View Import Log button, select **Group by none** from the drop-down list.
-2. Click the drop-down next to the FILTERS drop-down, and click **Create new view**. If you already have filters selected, click **Save Changes** next to the drop-down and follow the next step.
+1. On the right side of the Project listing page, beneath the **View import log** button, select **Group by none** from the drop-down list.
+2. Click the drop-down next to the FILTERS drop-down, and click **Create new view**. If you already have filters selected, click **Save changes** next to the drop-down and follow the next step.
 
 <figure><img src="../../../.gitbook/assets/create-view-projects.png" alt="Create a Project view" width="339"><figcaption><p>Create a Project view</p></figcaption></figure>
 
@@ -22,7 +22,7 @@ A Project view is visible to all users in the same Organization they were create
 
 Your new view is created and automatically selected. Click the icon next to your Project view to duplicate, rename, or delete it.
 
-4. In the FILTERS drop-down, select the criteria to organize your view.
+4. In the filters drop-down, select the criteria to organize your view.
 
 <figure><img src="https://lh4.googleusercontent.com/kzR-B4WryLY4NB3DwQl5bCVhBXo9oy-dkIDjKbyUe9f0bsOiIZ_IaUPYT0AhshgWaw3Ri6ofH-sWfaAY5-Sjf1jisDFHUP8BIRS967fUQPyMoAhpU_vPmaCocbNc1iCBCpRuCWYRpnA62VtIVuODuJk" alt="Apply filters"><figcaption><p>Apply filters</p></figcaption></figure>
 

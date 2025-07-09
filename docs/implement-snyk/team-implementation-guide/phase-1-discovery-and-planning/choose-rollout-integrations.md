@@ -30,7 +30,7 @@ Advantages:
 * Onboarding of repositories can be configured using the UI
 * Supports Cloud Repositories on the Team plan
 
-For more details, see [Git repositories (SCMs)](../../../scm-integrations/snyk-scm-integrations/).
+For more details, see [Git repositories (SCMs)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
 {% hint style="info" %}
 If you have a non-cloud-facing or your own instance of a Git SCM:

@@ -95,7 +95,7 @@ For Snyk to perform the required operations on monitored repositories, such as r
 **Admin** permissions are also needed to set secure webhooks. Snyk relies on webhooks to perform a variety of tasks, from PR checks, to commit tests upon merge events, and upcoming auto imports. To ensure the events come from your system and your system only, with no tampering or spoofing, we secure the webhooks using the recommended method shared by the systems we are connecting to. For Bitbucket Server, please see [this link](https://urldefense.proofpoint.com/v2/url?u=https-3A__confluence.atlassian.com_bitbucketserver_manage-2Dwebhooks-2D938025878.html-23Managewebhooks-2DwebhooksecretsSecuringyourwebhook\&d=DwMGaQ\&c=wwDYKmuffy0jxUGHACmjfA\&r=Ck2O4F9WHPBs7KXjKQbW8v6LYdkZzI7TbBwtHf0DvoQ\&m=aKqZjXlWOErUgMQ_jsYYcqqKiHpEYfZS1BT-ru1umJEnIorIvvNt1QshbHugekFP\&s=khA_g0Unp0YP0qTeBtQyma-KHpa1vgWwT0kzcA5tQr0\&e=).\
 To do this, a secret token is generated for each secure webhook we create. Snyk setting the webhooks resolves scalability constraints, eliminates token leakage, and reduces the integration workload for you.
 
-For detailed information on the permission scopes required, see [Bitbucket permission requirements](./#bitbucket-permission-requirements).
+For detailed information on the permission scopes required, see [Bitbucket permission requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#bitbucket-permission-requirements).
 
 ### **How to disconnect the Bitbucket Data Center/Server integration**
 

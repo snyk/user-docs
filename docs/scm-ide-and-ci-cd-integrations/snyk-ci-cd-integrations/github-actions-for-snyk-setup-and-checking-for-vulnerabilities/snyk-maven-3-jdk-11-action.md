@@ -1,13 +1,13 @@
-# Snyk Gradle-jdk11 Action
+# Snyk Maven-3-jdk-11 action
 
-This page provides examples of using the Snyk GitHub Action for [Gradle (jdk11)](https://github.com/snyk/actions/tree/master/gradle-jdk11). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
+This page provides examples of using the Snyk GitHub action for [Maven (3-jdk-11)](https://github.com/snyk/actions/tree/master/maven-3-jdk-11). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
 
-## Using the Snyk Gradle (jdk11) Action to check for vulnerabilities
+## Using the Snyk Maven (3-jdk-11) Action to check for vulnerabilities
 
-You can use the Snyk Gradle (jdk11) Action to check for vulnerabilities as follows:
+You can use the Snyk Maven (3-jdk-11) action to check for vulnerabilities as follows:
 
 ```yaml
-name: Example workflow for Gradle (jdk11) using Snyk
+name: Example workflow for Maven (3-jdk-11) using Snyk
 on: push
 jobs:
   security:
@@ -15,15 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/gradle-jdk11@master
+        uses: snyk/actions/maven-3-jdk-11@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```
 
-You can use the Snyk Gradle (jdk11) Action to check for only high severity vulnerabilities as follows:
+You can use the Snyk Snyk Maven (3-jdk-11) action to check for only high severity vulnerabilities as follows:
 
 ```yaml
-name: Example workflow for Gradle (jdk11) using Snyk
+name: Example workflow for Maven (3-jdk-11) using Snyk
 on: push
 jobs:
   security:
@@ -31,25 +31,25 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/gradle-jdk11@master
+        uses: snyk/actions/maven-3-jdk-11@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --severity-threshold=high
 ```
 
-## Using the Snyk Gradle (jdk11) Action to run snyk monitor
+## Using the Snyk Maven (3-jdk-11) Action to run snyk monitor
 
 For an example of running `snyk monitor`, see this [Snyk monitor example](./#snyk-monitor-example).
 
-## Uploading Snyk scan results to GitHub Code Scanning using the Snyk Gradle (jdk11) Action
+## Uploading Snyk scan results to GitHub Code Scanning using the Snyk Maven (3-jdk-11) Action
 
-Using `--sarif-file-output` [Snyk CLI option](../../snyk-cli/cli-commands-and-options-summary.md) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning.
+Using `--sarif-file-output` [Snyk CLI option](../../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
 
-The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus, you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) option as shown in this example:
+The Snyk action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus, you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) option as shown in this example:
 
 ```yaml
-name: Example workflow for Gradle (jdk11) using Snyk
+name: Example workflow for Maven (3-jdk-11) using Snyk
 on: push
 jobs:
   security:
@@ -57,7 +57,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/gradle-jdk11@master
+        uses: snyk/actions/maven-3-jdk-11@master
         continue-on-error: true # To make sure that SARIF upload gets called
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}

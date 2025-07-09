@@ -1,4 +1,4 @@
-# Available Snyk Reports
+# Available Snyk reports
 
 The following reports are available:
 
@@ -333,18 +333,18 @@ This report shows the test usage in the IDE and CLI by developers:
 
 Teams can filter by date and Organization.
 
-## Repositories Tested in CI/CD report
+## Repositories tested in CI/CD report
 
 {% hint style="info" %}
 **Release status**
 
-The Repositories Tested in CI/CD report is in Early Access and available only with Enterprise plans.&#x20;
+The Repositories tested in CI/CD report feature is in Early Access and available only with Enterprise plans.&#x20;
 {% endhint %}
 
 To use this report, consider the following prerequisites:
 
 * Snyk CLI version 1.1292.1 or newer.
-* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../scm-integrations/snyk-scm-integrations/).&#x20;
+* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).&#x20;
 * When testing containers, include the `.git` context as part of the `snyk container test` command.
 
 This report analyzes Snyk tests performed as part of CI/CD pipelines executed using Snyk CLI. It will inform you about the usage of your company and adoption of testing in CI/CD, ensuring repositories are tested as expected and preventing critical vulnerabilities and misconfigurations from being deployed and reaching the production environment.
@@ -375,7 +375,7 @@ Represented by the green line, you can see the weekly number of repositories tha
 This comparison helps determine whether Snyk tests in CI/CD are being increasingly adopted over time and highlights the number of repositories that have received commits but have not been tested in CI/CD.
 
 {% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-integrations/snyk-scm-integrations/) page.&#x20;
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) page.&#x20;
 {% endhint %}
 
 You can filter by specific products or by specific organizations or extend the viewed period using the date range filter.
@@ -418,7 +418,7 @@ The repository test summary table shows the performed tests during the selected 
 The default sorting in the table surfaces repositories according to their last commit, allowing you to identify repositories that were expected to be tested in CI/CD pipelines and verify they were tested. Clicking the column names to sort the table according to the selected column. You can sort the table by multiple columns at a time.&#x20;
 
 {% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) page.&#x20;
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) page.&#x20;
 {% endhint %}
 
 You can execute the test on a specific repository branch in the table. The `tested` indicator means that any branch of this repository was tested during the selected date range.

@@ -13,7 +13,7 @@ If you are a Snyk Enterprise plan customer, Snyk recommends that you use the Git
 * Internet-accessible repositories.\
   If your repositories are not internet-accessible, you must use [Snyk Broker](../../enterprise-setup/snyk-broker/). This requires creating a startup script. For the script and instructions, see [GitHub Enterprise - install and configure using Docker](../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md).
 * A public or private GitHub project.
-* The required [PAT](github-enterprise.md#generate-a-personal-access-token) and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permission requirements](./#github-and-github-enterprise-permissions-requirements).
+* The required [PAT](github-enterprise.md#generate-a-personal-access-token) and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permission requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements).
 
 {% hint style="info" %}
 You do not need to be on a GitHub Enterprise level plan to use the Snyk GitHub Enterprise integration.
@@ -42,7 +42,7 @@ Follow these steps to connect Snyk with your GitHub repositories:
 
 A personal access token (PAT) or fine-grained PAT must be generated in GitHub Enterprise under **Developer settings**.
 
-See [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements) for detailed information on the access scope requirements you must adhere to.
+See [GitHub and GitHub Enterprise permissions requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements) for detailed information on the access scope requirements you must adhere to.
 
 #### How to authorize your Personal Access Token and enable SSO
 

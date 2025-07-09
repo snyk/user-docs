@@ -1,6 +1,6 @@
-# Application context for SCM Integrations
+# Application context for SCM integrations
 
-## What is Application Context?
+## What is application context?
 
 The application context for SCM integrations provides a comprehensive and interconnected overview of application assets. This context is crucial for assessing security risks and their potential implications, as it outlines the entire structure and components of the applications involved.
 

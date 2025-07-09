@@ -27,7 +27,7 @@ The specific process for claiming CPE credits may vary depending on your certify
 
 ### Examples
 
-#### Learning Path Certificate
+#### Learning path certificate
 
 Navigate to the page for the Learning Path that you completed and click the **Download certificate** button.
 
@@ -36,7 +36,3 @@ Navigate to the page for the Learning Path that you completed and click the **Do
 #### Lesson completion example
 
 <figure><img src="../../.gitbook/assets/lesson-completion-example (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Need Help?
-
-If you have questions about your completion certificate or claiming CPE credits, contact Snyk Support for assistance.

@@ -14,7 +14,7 @@ To create this role, enable the following permissions in the relevant categories
 
 <table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Organization</td><td>true</td></tr><tr><td>Edit Organization</td><td>false</td></tr><tr><td>Remove Organization</td><td>false</td></tr></tbody></table>
 
-### Audit Log management
+### Audit log management
 
 <table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View audit logs</td><td>true</td></tr></tbody></table>
 
@@ -44,7 +44,7 @@ The remaining categories of permissions listed below should have all permissions
 * Container Image management
 * Entitlement management
 * Integration management
-* Kubernetes Integration management
+* Kubernetes integration management
 * Package management
 * Project pull request management
 * Service account management

@@ -1,6 +1,6 @@
 # Git repositories and CI/CD comparisons
 
-[Git repository](../scm-integrations/snyk-scm-integrations/) and [CI/CD pipeline](snyk-ci-cd-integrations/) integrations are commonly used.&#x20;
+[Git repository](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) and [CI/CD pipeline](snyk-ci-cd-integrations/) integrations are commonly used.&#x20;
 
 As the following diagram illustrates, you can use a Git repository (SCM) integration to check for issues, including vulnerabilities and license issues, and to prevent pull requests based on policies. You can start by testing and fixing in your development environment, and then test, fix, and monitor using a Git repository integration. Use a Git repository integration to improve application security in your Git repository, preventing vulnerable code from entering your codebase and getting quick visibility for your vulnerabilities.
 

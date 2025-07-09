@@ -1,8 +1,8 @@
-# Import Log
+# Import log
 
-The Import Log feature provides a history of all the Git repositories and container registry images imported into an Organization through an Integration, allowing all manual and automated changes to be reviewed and any errors troubleshooted. This log makes it easier to see if any errors have occurred and how to resolve them.
+The Import log feature provides a history of all the Git repositories and container registry images imported into an Organization through an Integration, allowing all manual and automated changes to be reviewed and any errors troubleshooted. This log makes it easier to see if any errors have occurred and how to resolve them.
 
-## View Import Log
+## View import log
 
 The Import Log is located under the Organization **Projects** page in the Snyk Web UI.\
 Select the **View import log** button next to **Add Projects**.
@@ -11,7 +11,7 @@ Select the **View import log** button next to **Add Projects**.
 You must have the View Organization and View Project [permissions](../user-roles/pre-defined-roles.md) to view Import Log messages for imports made within your Organization.
 {% endhint %}
 
-## Import Log timeline
+## Import log timeline
 
 The Import Log timeline will go back as far as the **most recent** applicable condition of:
 
@@ -26,9 +26,9 @@ The Import Log shows all imported targets listed in reverse chronological order,
 
 Targets that are in the process of being imported will have a loading icon stating **Importing target**.
 
-Selecting **View project** will take you to the Issues tab for that specific Project.
+Selecting **View Project** will take you to the Issues tab for that specific Project.
 
-## Import Log error messages
+## Import log error messages
 
 If an error occurs on import, a warning icon will display on the repository name. Expanding this will show the Project the error is related to, with the error detail under the **Status** column.
 

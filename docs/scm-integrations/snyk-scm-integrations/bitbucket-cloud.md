@@ -103,7 +103,7 @@ All the operations, whether triggered manually or automatically, are performed f
 
 For Snyk to perform the required operations on monitored repositories, such as reading manifest files on a frequent basis and opening fix or upgrade PRs, the integrated Bitbucket Cloud service account needs **Admin** permissions on the imported repositories.
 
-For detailed information on the permission scopes required, see [Bitbucket permission requirements](./#bitbucket-permission-requirements).
+For detailed information on the permission scopes required, see [Bitbucket permission requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#bitbucket-permission-requirements).
 
 ### How to disconnect Snyk from Bitbucket Cloud
 

@@ -1,13 +1,13 @@
-# Snyk Maven Action
+# Snyk Golang action
 
-This page provides examples of using the Snyk GitHub Action for [Maven](https://github.com/snyk/actions/tree/master/maven). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
+This page provides examples of using the Snyk GitHub Action for [Golang](https://github.com/snyk/actions/tree/master/golang). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
 
-## Using the Snyk Maven Action to check for vulnerabilities
+## Using the Snyk Golang action to check for vulnerabilities
 
-You can use the Snyk Maven Action to check for vulnerabilities as follows:
+You can use the Snyk Golang Action to check for vulnerabilities as follows:
 
 ```yaml
-name: Example workflow for Maven using Snyk
+name: Example workflow for Golang using Snyk
 on: push
 jobs:
   security:
@@ -15,15 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/maven@master
+        uses: snyk/actions/golang@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```
 
-You can use the Snyk Snyk Maven Action to check for only high severity vulnerabilities as follows:
+You can use the Snyk Golang Action to check for only high severity vulnerabilitie**s** as follows:
 
 ```yaml
-name: Example workflow for Maven using Snyk
+name: Example workflow for Golang using Snyk
 on: push
 jobs:
   security:
@@ -31,21 +31,25 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/maven@master
+        uses: snyk/actions/golang@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --severity-threshold=high
 ```
 
-## Uploading Snyk scan results to GitHub Code Scanning using the Snyk Maven Action
+## Using the Snyk Golang action to run snyk monitor
 
-Using `--sarif-file-output` [Snyk CLI option](../../snyk-cli/cli-commands-and-options-summary.md) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
+For an example of running `snyk monitor`, see this [Snyk monitor example](./#snyk-monitor-example).
+
+## Uploading Snyk scan results to GitHub Code Scanning using the Snyk Golang action
+
+Using `--sarif-file-output` [Snyk CLI option](../../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning.
 
 The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus, you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) option as shown in this example:
 
 ```yaml
-name: Example workflow for Maven using Snyk
+name: Example workflow for Golang using Snyk
 on: push
 jobs:
   security:
@@ -53,7 +57,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/maven@master
+        uses: snyk/actions/golang@master
         continue-on-error: true # To make sure that SARIF upload gets called
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}

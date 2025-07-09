@@ -23,9 +23,9 @@ The legacy **Reports tabs** are as follows:
 
 * [Summary](legacy-reports-summary-tab.md): the main dashboard displays a summary view of all of your issues (vulnerabilities and licenses), across all of your Projects.
 * [Issues](legacy-reports-issues-tab.md): all issues (vulnerabilities and licenses) across all of your Projects, including their severity, any available fixes, and more.
-* [Dependencies](dependencies-tab.md): the package dependencies in your Project and their health status.
+* [Dependencies](../../../manage-risk/reporting/legacy-reports/legacy-reports-dependencies-tab.md): the package dependencies in your Project and their health status.
 * [Licenses](legacy-reports-licenses-tab.md): the licenses in all of your Projects and their status.
 
-There may be a delay from the time a Project is tested  to the time when that data appears in the Reports area. If you find that there is more than a nine hour delay, [contact Snyk Support](https://support.snyk.io).
+There may be a delay from the time a Project is tested to the time when that data appears in the Reports area. If you find that there is more than a nine hour delay, [contact Snyk Support](https://support.snyk.io).
 
 Read-only and deactivated Projects and results do not appear in the Reports area.

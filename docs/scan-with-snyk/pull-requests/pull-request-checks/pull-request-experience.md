@@ -1,4 +1,4 @@
-# Pull Request Experience
+# Pull Request experience
 
 The Snyk Pull Request Experience reduces context switching by displaying additional information about the PR Check scan results in the pull request.
 
@@ -81,7 +81,7 @@ The Snyk Agent Fix in the PR feature enables the user to request and apply fixes
 * The `@snyk /fix` and `@snyk /apply #` commands can be used only as replies to the Inline Comments created by Snyk, commands created on other comment threads will not be processed.
 * For best results, Snyk recommends generating and applying fixes for a single inline comment at a time, to avoid situations where applying a fix causes conflicts with another previously generated fix.
 
-## Configure Pull Request Experience
+## Configure Pull Request experience
 
 You can configure the Pull Request Experience [at the Integration level](pull-request-experience.md#configure-pull-request-experience-at-the-integration-level) for your Snyk Organization.
 

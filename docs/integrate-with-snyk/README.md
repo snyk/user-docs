@@ -75,7 +75,7 @@ You can add an integration by following these steps:
 3. Click **Add** on the integration you want to connect.
 4. Configure your connection and click **Done**.
 
-See the [Snyk SCM integrations](../scm-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) page or the [Third-party integrations for Snyk AppRisk](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) page for step-by-step details about how to set up an integration.
+See the [Snyk SCM integrations](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) page or the [Third-party integrations for Snyk AppRisk](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) page for step-by-step details about how to set up an integration.
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
 

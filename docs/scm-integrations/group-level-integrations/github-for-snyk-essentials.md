@@ -14,7 +14,7 @@ If you used GitHub Apps for your SCM integrations at the Snyk Organization level
 
 #### Prerequisites&#x20;
 
-Ensure you meet all prerequisites listed on the [GitHub and GitHub Enterprise permission requirements](../snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements) page.
+Ensure you meet all prerequisites listed on the [GitHub and GitHub Enterprise permission requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements) page.
 
 #### Integrate GitHub using Snyk Essentials <a href="#github-integrate-using-snyk-apprisk" id="github-integrate-using-snyk-apprisk"></a>
 

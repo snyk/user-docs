@@ -12,7 +12,7 @@ The objective is a working setup of Snyk and a Customer team that is well-prepar
 * Teams who are new to Snyk and have limited experience with security scanning
 * Self-starters who are comfortable with extending and maintaining Snyk on their own, post-engagement
 
-## Jumpstart Services description
+## Jumpstart services description
 
 The Snyk Consultant will deliver the following services related to the setup of Snyk remotely as part of the Jumpstart Services to the Customer. Note that the Jumpstart Services will be delivered only for the Snyk Applications purchased on an Order Form at the same time as this service. References to Snyk Services not purchased by the Customer are hereby omitted unless otherwise noted.
 
@@ -31,7 +31,7 @@ The Snyk Consultant will deliver the following services related to the setup of 
 
 ## Pre-engagement planning and preparation
 
-A **pre-engagement call** will be held before the start of the Jumpstart Services listed herein, to ensure the Customer understands the prerequisites required for engagement start along with the deliverables completed during the engagement timeframe. Customer [prerequisites](snyk-jumpstart-customer-prerequisites.md), including resources, availability, and deliverables for each product module, will be reviewed and confirmed. The Customer acknowledges that complying with these prerequisites is its sole responsibility, and Snyk will not be responsible for any delays or failure to deliver the Jumpstart Services based on the Customer’s failure to meet these prerequisites.
+A pre-engagement cal**l** will be held before the start of the Jumpstart Services listed herein, to ensure the Customer understands the prerequisites required for engagement start along with the deliverables completed during the engagement timeframe. Customer [prerequisites](snyk-jumpstart-customer-prerequisites.md), including resources, availability, and deliverables for each product module, will be reviewed and confirmed. The Customer acknowledges that complying with these prerequisites is its sole responsibility, and Snyk will not be responsible for any delays or failure to deliver the Jumpstart Services based on the Customer’s failure to meet these prerequisites.
 
 ## Snyk Platform configuration
 
@@ -39,7 +39,7 @@ A **pre-engagement call** will be held before the start of the Jumpstart Service
 
 The Snyk delivery method is designed to ensure rapid value realization with Snyk. Throughout our collaboration, Snyk will guide the Customer in setting up a foundational configuration and equip them to expand this setup to other applications and integrations. Ensuring Snyk is correctly set up from the outset improves developer adoption and paves the way for long-term success.
 
-#### Base SSO Configuration and Custom Mapping
+#### Base SSO configuration and custom mapping
 
 The Snyk Consultant will work with the Customer to configure SSO through SAML, Entra ID (formerly Azure AD), OIDC, or ADFS connection along with custom mapping of dynamically assigned users to Snyk Groups and Organizations based on data provided by the desired Identity Provider (IdP) to set up a scaled user provisioning and access model.
 
@@ -71,7 +71,7 @@ Training topics include:
 
 The Snyk Consultant will run a 60-minute training session for Customer’s Developers to ensure all collaborator users know how to access Snyk results and initiate tests. This training will cover a range of tools, including the UI (app.snyk.io), IDE plugin, and CLI. Developer Training will be completed after the product-specific modules of Jumpstart have been completed.
 
-### Target Initiatives - Snyk Platform configuration
+### Target initiatives - Snyk Platform configuration
 
 <table><thead><tr><th width="176">Platform - initial setup</th><th width="555">Outcome</th></tr></thead><tbody><tr><td>Base SSO connection configuration</td><td>Users can access Snyk based on role.</td></tr><tr><td>SSO Custom Mapping</td><td>Users can access Snyk based on role.</td></tr><tr><td>(Template Org) Custom Roles and service account configuration</td><td>Provide a templated organization to replicate and scale your setup of Snyk quickly.</td></tr><tr><td>(Template Org) Notification configuration</td><td>Provide a templated organization to replicate and scale your setup of Snyk quickly.</td></tr><tr><td>(Template Org) Language settings configuration</td><td></td></tr><tr><td>(Template Org) Jira or Slack App configuration</td><td></td></tr><tr><td>(Template Org) Account Organization and Group configuration</td><td></td></tr><tr><td>Admin training (1 session)</td><td>Group and Organisation administrators are comfortable using Snyk to import their targets and complete the initial configuration for each team.</td></tr><tr><td>Developer training (1 session)</td><td>Delivered after product-specific modules are completed, ensuring a successful launch and initial adoption with Developers.</td></tr></tbody></table>
 
@@ -93,7 +93,7 @@ The Snyk Consultant will work with the Customer to configure SCM integration set
 
 The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/).
 
-#### Snyk API Import and SCM snyc
+#### Snyk API Import and SCM sync
 
 The Consultant will review the Snyk API Import script to ensure the Customer understands how to import additional Projects into Snyk and keep their SCM integration in sync with incoming changes to manifests.
 
@@ -115,7 +115,7 @@ The Customer will be provided with a document that provides a comprehensive over
 
 ### Target initiatives - Snyk Open Source configuration
 
-<table><thead><tr><th width="300">Snyk Open Source configuration</th><th width="306">Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="../../scm-integrations/snyk-scm-integrations/">supported SCM integration</a> (GitHub, Azure Repos, Bitbucket, GitLab).</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to the Customer’s desired gating settings.</td></tr><tr><td>SCM Broker installation</td><td>Install SCM Broker in a pre-determined customer environment based on Snyk system requirements.</td></tr><tr><td>Snyk Tools - API Import and SCM Sync</td><td>Gain an understanding of how to use the Snyk API Import script to import additional targets and keep repos in Sync (GHE only).</td></tr><tr><td>Single pipeline configuration (direct integration OR CLI)</td><td>Configure a pipeline to run <code>snyk test</code> and <code>snyk monitor</code>.</td></tr><tr><td>SBOM Walkthrough (CLI and API)</td><td>Gain an understanding of generating an SBOM through Snyk using the CLI and API.</td></tr><tr><td>Interpreting and actioning Open Source results</td><td>Gain an understanding of how to view Open Source results in Snyk Reporting along with managing issues.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed along with a runbook for onboarding additional projects.</td></tr></tbody></table>
+<table><thead><tr><th width="300">Snyk Open Source configuration</th><th width="306">Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/">supported SCM integration</a> (GitHub, Azure Repos, Bitbucket, GitLab).</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to the Customer’s desired gating settings.</td></tr><tr><td>SCM Broker installation</td><td>Install SCM Broker in a pre-determined customer environment based on Snyk system requirements.</td></tr><tr><td>Snyk Tools - API Import and SCM Sync</td><td>Gain an understanding of how to use the Snyk API Import script to import additional targets and keep repos in Sync (GHE only).</td></tr><tr><td>Single pipeline configuration (direct integration OR CLI)</td><td>Configure a pipeline to run <code>snyk test</code> and <code>snyk monitor</code>.</td></tr><tr><td>SBOM Walkthrough (CLI and API)</td><td>Gain an understanding of generating an SBOM through Snyk using the CLI and API.</td></tr><tr><td>Interpreting and actioning Open Source results</td><td>Gain an understanding of how to view Open Source results in Snyk Reporting along with managing issues.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed along with a runbook for onboarding additional projects.</td></tr></tbody></table>
 
 ## Snyk Code configuration
 
@@ -149,7 +149,7 @@ The Customer will be provided with a document that provides a comprehensive over
 
 ### Target initiatives - Snyk Code configuration
 
-<table><thead><tr><th width="250">Snyk Code Configuration</th><th>Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="../../scm-integrations/snyk-scm-integrations/">supported SCM Integration</a>.</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to the Customer’s desired gating settings.</td></tr><tr><td>SCM Broker installation</td><td>Install SCM Broker in a pre-determined customer environment based on Snyk system requirements.</td></tr><tr><td>Snyk Tools - API Import and SCM Sync</td><td>Gain an understanding of how to use the Snyk API Import script to import additional targets and keep their repos in sync (GHE only).</td></tr><tr><td>Interpreting and actioning Code results</td><td>Gain an understanding of how to view Code results in Snyk Reporting along with managing issues.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed along with a runbook for onboarding additional projects.</td></tr></tbody></table>
+<table><thead><tr><th width="250">Snyk Code Configuration</th><th>Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/">supported SCM Integration</a>.</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to the Customer’s desired gating settings.</td></tr><tr><td>SCM Broker installation</td><td>Install SCM Broker in a pre-determined customer environment based on Snyk system requirements.</td></tr><tr><td>Snyk Tools - API Import and SCM Sync</td><td>Gain an understanding of how to use the Snyk API Import script to import additional targets and keep their repos in sync (GHE only).</td></tr><tr><td>Interpreting and actioning Code results</td><td>Gain an understanding of how to view Code results in Snyk Reporting along with managing issues.</td></tr><tr><td>Documentation close-out</td><td>Gain an understanding of work completed along with a runbook for onboarding additional projects.</td></tr></tbody></table>
 
 ## Snyk Container configuration
 
@@ -157,11 +157,11 @@ The Customer will be provided with a document that provides a comprehensive over
 
 The Snyk delivery method is tailored to ensure rapid value realization with Snyk. Throughout our collaboration, Snyk will guide the Customer in setting up a foundational configuration and equip them to expand this setup to other applications and integrations. Ensuring Snyk is correctly set up from the outset improves developer adoption and paves the way for long-term success.
 
-#### Single Broker Container Registry installation and configuration
+#### Single Broker Container registry installation and configuration
 
 The Snyk Consultant will work with the Customer to configure and install Snyk Broker if needed for a single [supported Container Registry](https://snyk.io/integrations/?type=container-registries) integration.
 
-#### Container Registry import
+#### Container registry import
 
 The Snyk Consultant will work with the Customer to import their container images into Snyk (up to 50 targets) through the UI import functionality.
 
@@ -284,7 +284,7 @@ The Snyk Consultant will educate the Customer on how to filter and prioritize is
 
 The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, the document offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document sets out practical recommendations and actionable next steps that will aid the Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document is an essential guide for the Customer to realize the full potential of their investment in Snyk.
 
-### Target Initiatives - Snyk AppRisk configuration
+### Target initiatives - Snyk AppRisk configuration
 
 | Snyk AppRisk Configuration                                                   | Outcome                                                                                                                            |
 | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -322,7 +322,7 @@ The Snyk Consultant will educate the Customer on understanding a [DAST scan](htt
 
 The Customer will be provided with a document that provides a comprehensive overview of the professional services rendered by Snyk during the engagement. Spanning the period from the engagement's start to its conclusion, the document offers insights into account configuration, repository onboarding, and integrations. More than just a retrospective, the document puts forth practical recommendations and actionable next steps that will aid the Customer in optimizing their use of Snyk for improved application security. By detailing both the accomplishments and the roadmap ahead, this document provides an essential guide for customers to realize the full potential of their investment in Snyk.
 
-### Target Initiatives - Snyk API & Web configuration
+### Target initiatives - Snyk API & Web configuration
 
 | Snyk API & Web configuration                                                           | Outcome                                                                                                                                                                                                  |
 | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

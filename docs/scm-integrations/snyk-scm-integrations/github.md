@@ -5,7 +5,7 @@
 * Internet-accessible repositories.\
   If your repositories are not internet-accessible, you must use [Snyk Broker](../../enterprise-setup/snyk-broker/).
 * A public or private GitHub project.
-* The required PAT and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements).
+* The required PAT and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permissions requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements).
 
 ### Known limitations of the GitHub integration
 
@@ -123,7 +123,7 @@ You can review and adjust the pull request test settings using the Snyk GitHub I
 
 In non-brokered GitHub integrations, operations that are triggered through the Snyk Web UI, for example, opening a Fix PR or re-testing a Project, are performed on behalf of the acting user.&#x20;
 
-Therefore, a user who wants to perform this operation on GitHub through the Snyk UI must connect their GitHub account to Snyk with the required permission scope for the repositories where they want to perform these operations. See [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements) for details.
+Therefore, a user who wants to perform this operation on GitHub through the Snyk UI must connect their GitHub account to Snyk with the required permission scope for the repositories where they want to perform these operations. See [GitHub and GitHub Enterprise permissions requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements) for details.
 
 Operations that are not triggered through the Snyk Web UI, such as daily and weekly tests and automatic PRs (fix and upgrade), are performed on behalf of random Snyk Organization members who have connected their GitHub accounts to Snyk and have the required permission scope for the repository.
 
@@ -155,7 +155,7 @@ To use this feature, follow these steps:
 {% hint style="info" %}
 Ensure that the GitHub account that you designate to open Snyk PRs has **write-level** permissions or higher for the repos you want to monitor with Snyk.
 
-See [GitHub and GitHub Enterprise permissions requirements](./#github-and-github-enterprise-permissions-requirements) for more information.
+See [GitHub and GitHub Enterprise permissions requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements) for more information.
 {% endhint %}
 
 ### **How to assign pull requests to users** <a href="#pr-assignment" id="pr-assignment"></a>

@@ -1,4 +1,4 @@
-# Troubleshoot Certificate Errors
+# Troubleshoot certificate errors
 
 ## Problem <a href="#problem" id="problem"></a>
 

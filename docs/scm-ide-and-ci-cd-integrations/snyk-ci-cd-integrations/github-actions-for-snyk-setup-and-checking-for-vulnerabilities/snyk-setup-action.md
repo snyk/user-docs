@@ -1,4 +1,4 @@
-# Snyk Setup Action
+# Snyk Setup action
 
 The [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup) provides a way to install the Snyk CLI to check for vulnerabilities. For information about when to use this action, see [Use your own development environment](./#use-your-own-development-environment).
 

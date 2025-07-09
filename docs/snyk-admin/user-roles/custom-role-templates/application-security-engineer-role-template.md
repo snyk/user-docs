@@ -34,7 +34,7 @@ The remaining categories of permissions listed below should have all permissions
 * Container Image management
 * Entitlement management
 * Integration management
-* Kubernetes Integration management
+* Kubernetes integration management
 * Package management
 * Reports management
 * Service account management

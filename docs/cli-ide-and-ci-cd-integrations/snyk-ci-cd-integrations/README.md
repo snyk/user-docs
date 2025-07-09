@@ -20,7 +20,7 @@ For detailed information, see the pages for the integration you are using:
 * [Azure Pipelines integration](azure-pipelines-integration/)
 * [Bitbucket Pipelines integration](bitbucket-pipelines-integration-using-a-snyk-pipe/)
 * [CircleCI integration](circleci-integration-using-a-snyk-orb.md)
-* [GitHub Actions integration](github-actions-for-snyk-setup-and-checking-for-vulnerabilities/)
+* [GitHub Actions integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/)
 * [Jenkins integration](jenkins-plugin-integration-with-snyk.md)
 * [Maven integration](maven-plugin-integration-with-snyk.md)
 * [TeamCity integration](teamcity-jetbrains-integration-using-the-snyk-security-plugin/)

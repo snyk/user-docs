@@ -10,7 +10,7 @@ This template is for an Organization-level role and has no Group-level permissio
 
 To create this role, enable the following permissions in the relevant categories:
 
-### Kubernetes Integration management
+### Kubernetes integration management
 
 <table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>Publish Kubernetes resources</td><td>true</td></tr></tbody></table>
 

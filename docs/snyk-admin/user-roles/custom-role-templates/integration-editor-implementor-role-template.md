@@ -43,7 +43,7 @@ To create this role, enable the following permissions in the relevant categories
 
 <table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View integrations</td><td>true</td></tr><tr><td>Edit integrations</td><td>true</td></tr></tbody></table>
 
-### Kubernetes Integration management
+### Kubernetes integration management
 
 <table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>Publish Kubernetes resources</td><td>true</td></tr></tbody></table>
 

@@ -2,13 +2,13 @@
 
 ## SCM integrations available for Maven and Gradle Projects
 
-### Maven projects
+### Maven Projects
 
 Snyk creates a Project per `pom.xml` file when it scans Maven applications. The Project includes all direct and indirect dependencies associated with that file.
 
 The Project includes only the production dependencies in the `compile`, `provided`, and `runtime` scopes.
 
-### Gradle projects
+### Gradle Projects
 
 After you select a Project for import, Snyk builds the dependency tree based on the `build.gradle` file and (optional) `gradle.lockfile`.
 

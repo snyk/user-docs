@@ -31,7 +31,7 @@ You can create and edit multiple license policies for Organizations. For details
 
 ## View compliance issues
 
-Snyk’s [Git-based integrations ](../../../scm-integrations/snyk-scm-integrations/)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab.
+Snyk’s [Git-based integrations ](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab.
 
 <div align="left"><figure><img src="../../../.gitbook/assets/os_project_license_issues.png" alt=""><figcaption><p>Issues overview within a dependency project</p></figcaption></figure></div>
 

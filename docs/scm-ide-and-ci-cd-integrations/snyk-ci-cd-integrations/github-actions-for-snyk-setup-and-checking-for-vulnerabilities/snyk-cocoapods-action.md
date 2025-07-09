@@ -1,13 +1,13 @@
-# Snyk Gradle-jdk16 Action
+# Snyk CocoaPods action
 
-This page provides examples of using the Snyk GitHub Action for [Gradle (jdk16)](https://github.com/snyk/actions/tree/master/gradle-jdk16). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
+This page provides examples of using the Snyk GitHub Action for [CocoaPods](https://github.com/snyk/actions/tree/master/cocoapods). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
 
-## Using the Snyk Gradle (jdk16) Action to check for vulnerabilities
+## Using the Snyk CocoaPods action to check for vulnerabilities
 
-You can use the Snyk Gradle (jdk16) Action to check for vulnerabilities as follows:
+You can use the Snyk CocoaPods Action to check for vulnerabilities as follows:
 
 ```yaml
-name: Example workflow for Gradle (jdk16) using Snyk
+name: Example workflow for CocoaPods using Snyk
 on: push
 jobs:
   security:
@@ -15,15 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/gradle-jdk16@master
+        uses: snyk/actions/cocoapods@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```
 
-You can use the Snyk Gradle (jdk16) Action to check for only high severity vulnerabilities as follows:
+You can use the Snyk CocoaPods Action to check for only high severity vulnerabilities as follows:
 
 ```yaml
-name: Example workflow for Gradle (jdk16) using Snyk
+name: Example workflow for CocoaPods using Snyk
 on: push
 jobs:
   security:
@@ -31,25 +31,25 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/gradle-jdk16@master
+        uses: snyk/actions/cocoapods@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --severity-threshold=high
 ```
 
-## Using the Snyk Gradle (jdk16) Action to run snyk monitor
+## Using the Snyk CocoaPods action to run snyk monitor
 
 For an example of running `snyk monitor`, see this [Snyk monitor example](./#snyk-monitor-example).
 
-## Upload Snyk scan results to GitHub Code Scanning using the Gradle (jdk16) Action
+## Uploading Snyk scan results to GitHub Code Scanning using the Snyk CocoaPods action
 
-Using `--sarif-file-output` [Snyk CLI option](../../snyk-cli/cli-commands-and-options-summary.md) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning.
+Using `--sarif-file-output` [Snyk CLI option](../../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) and the GitHub SARIF upload action, you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
 
 The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus, you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) option as shown in this example:
 
 ```yaml
-name: Example workflow for Gradle (jdk16) using Snyk
+name: Example workflow for CocoaPods using Snyk
 on: push
 jobs:
   security:
@@ -57,7 +57,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/gradle-jdk16@master
+        uses: snyk/actions/cocoapods@master
         continue-on-error: true # To make sure that SARIF upload gets called
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}

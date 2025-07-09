@@ -26,7 +26,7 @@ Snyk features are not supported for Dart and Flutter. You can test an open-sourc
 * Using the API endpoint [List issues for a package](../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues)
 * Using the [SBOM CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom.md).
 
-## Testing platform dependencies (iOS, macOS, Android) in Flutter Apps
+## Testing platform dependencies (iOS, macOS, Android) in Flutter apps
 
 Flutter applications rely on native platform dependencies to handle lower-level tasks, such as analytics, hardware access, or integrating existing functionality. These dependencies can be added through pub packages to extend functionality or integrated directly into build systems like Gradle or Cocoapods.
 

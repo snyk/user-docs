@@ -18,7 +18,7 @@ The Snyk Learning Management add-on allows AppSec and compliance teams to easily
 
 For more information and to add this capability to your Snyk plan, contact your Snyk account team.
 
-## Regional Hosting
+## Regional hosting
 
 Snyk Learn also allows for regional hosting and data residency. Multi-tenant support enables seamless operation across multiple deployment environments, specifically tailored to meet the needs of Snyk users in the US, AU, and EU.
 

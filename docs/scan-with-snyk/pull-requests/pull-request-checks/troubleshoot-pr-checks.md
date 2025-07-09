@@ -1,20 +1,20 @@
-# Troubleshoot PR Checks
+# Troubleshoot PR checks
 
 {% hint style="info" %}
 If you use `###` in the description of the PR , it will be blocked and the PR check will not take place.
 {% endhint %}
 
-PR Checks that are configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and, therefore, will not alert for projects in languages that do not support FixPR Checks.
+PR checks that are configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and, therefore, will not alert for projects in languages that do not support FixPR checks.
 
-## General troubleshooting for PR Checks
+## General troubleshooting for PR checks
 
-The following table lists general issues with PR Checks and how to address them.
+The following table lists general issues with PR checks and how to address them.
 
-| Scenario                                                              | Description                                                                                                       | Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PR Check not triggered.                                               | The repository is imported to Snyk, but when a PR is raised it does not trigger a PR Check.                       | <ol><li>Check the <a href="configure-pull-request-checks.md">Project and Integration settings</a> to make sure PR checks are configured.</li><li>Check the Project Settings integration page for a banner advising you that a webhook is absent.<br><br>Double-check integration permission scopes (see <a href="../../../scm-integrations/snyk-scm-integrations/">Git repositories</a>).<br><br>If you still cannot create a webhook, <a href="https://support.snyk.io">contact support</a>.</li></ol> |
-| PR Check is expected but does not run.                                | The PR check is listed in the Git repository (SCM) as expected but never completes.                               | <p>This issue is generally caused by a Branch Protection rule requiring the PR check. If the Project has been disabled or removed from Snyk, the PR check will not run, but the branch protection rule is still in force until removed or edited.<br><br>Check for Branch Protection rules and confirm that the Project is imported and active.</p>                                                                                                                                                     |
-| Multiple Security and Licence PR Checks run on a single Pull Request. | When a PR is submitted, multiple Snyk PR Checks of the same type run against it, possibly with different results. | <p>If a repository is imported into multiple Snyk Organizations, PR checks will run on the repository for any configured Organization.<br><br>Check the name of the PR check as it includes the Organization name against which the check is run. Alternatively, selecting the PR Check details will take you to the results for the relevant Organization.</p>                                                                                                                                         |
+| Scenario                                                              | Description                                                                                                       | Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| PR check not triggered.                                               | The repository is imported to Snyk, but when a PR is raised it does not trigger a PR check.                       | <ol><li>Check the <a href="configure-pull-request-checks.md">Project and Integration settings</a> to make sure PR checks are configured.</li><li>Check the Project Settings integration page for a banner advising you that a webhook is absent.<br><br>Double-check integration permission scopes (see <a href="../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/">Git repositories</a>).<br><br>If you still cannot create a webhook, <a href="https://support.snyk.io">contact support</a>.</li></ol> |
+| PR check is expected but does not run.                                | The PR check is listed in the Git repository (SCM) as expected but never completes.                               | <p>This issue is generally caused by a Branch Protection rule requiring the PR check. If the Project has been disabled or removed from Snyk, the PR check will not run, but the branch protection rule is still in force until removed or edited.<br><br>Check for Branch Protection rules and confirm that the Project is imported and active.</p>                                                                                                                                                                   |
+| Multiple Security and Licence PR checks run on a single Pull Request. | When a PR is submitted, multiple Snyk PR checks of the same type run against it, possibly with different results. | <p>If a repository is imported into multiple Snyk Organizations, PR checks will run on the repository for any configured Organization.<br><br>Check the name of the PR check as it includes the Organization name against which the check is run. Alternatively, selecting the PR check details will take you to the results for the relevant Organization.</p>                                                                                                                                                       |
 
 ## Open-source and licensing checks
 
@@ -39,9 +39,9 @@ The following table lists code analysis errors and how to address them.
 
 ## What to do if there are errors
 
-### Re-run PR Checks results
+### Re-run PR checks results
 
-To re-run PR Checks results:
+To re-run PR checks results:
 
 * Create an empty commit for example with `git commit –allow-empty`
 * Create a new commit with a fix or additional capability
@@ -49,4 +49,4 @@ To re-run PR Checks results:
 
 ### Mark as successful
 
-Provide specific users or roles with the capability to pass the PR Check when errors happen. This can be done through the Snyk link in the PR Check and Marking as successful.
+Provide specific users or roles with the capability to pass the PR check when errors happen. This can be done through the Snyk link in the PR check and marking it as successful.

@@ -162,7 +162,7 @@ Snyk accesses and stores the following information:
 When scans are performed against production systems, responses may contain customer data. While Snyk strongly recommends that you use Snyk API & Web in staging and testing sites, and not against production sites, Snyk does implement security controls designed to protect customer data in accordance with the SOC 2 standard. For more details, see [Snyk certifications](how-snyk-handles-your-data.md#snyk-certifications).
 {% endhint %}
 
-## Snyk integrations: Workspaces
+## Snyk integrations: workspaces
 
 {% hint style="info" %}
 For more information on Workspaces enablement and use, see [Workspaces for SCM integrations](../scm-integrations/workspaces.md).
@@ -197,4 +197,3 @@ For additional information, see the following pages on the Snyk website:
 * [Privacy](https://snyk.io/policies/privacy/)
 * [Subprocessors](https://snyk.io/policies/subprocessors/)
 * [Data Processing Addendum](https://snyk.io/policies/dpa/)
-

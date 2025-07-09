@@ -18,7 +18,7 @@ In your profile, you can set your learning preferences, including the preferred 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-11-26 at 11.23.36.png" alt=""><figcaption><p>Snyk Learn My Profile</p></figcaption></figure>
 
-## In Progress Learning
+## In progress learning
 
 The [Learning Progress](https://learn.snyk.io/user/learning-progress/) area lets you see your in-progress learning and start where you left off. You will also receive recommendations for what to learn next.
 
@@ -36,6 +36,6 @@ Any learning that is assigned to you appears on the [Learning Progress](https://
 
 Some Snyk Learn lessons include a quiz at the end to test your knowledge. You must be logged in and complete the quiz to mark the course as completed.
 
-## Certificates of Completion
+## Certificates of completion
 
 For all Snyk Learn security learning paths, you will be awarded a Certificate of Completion upon completion. The certificate recognizes your time and effort to improve your security skills and knowledge. You can download a PDF of the certificate from the Learning Path page.&#x20;

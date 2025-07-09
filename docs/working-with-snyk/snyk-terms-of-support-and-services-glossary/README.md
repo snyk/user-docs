@@ -1,18 +1,18 @@
-# Snyk Terms of Support and Services Glossary
+# Snyk terms of support and services glossary
 
 The following terms shall apply if and to the extent the offerings below are purchased by the Customer on an Order Form. The Success Offerings are inclusive of the Support Plan with the same name. All Snyk customers receive Standard Success as part of their Subscription Allocation. The Silver, Gold, and Platinum Success Offerings are only available for purchase by customers on the Snyk Enterprise Plan.&#x20;
 
-## Success Offerings
+## Success offerings
 
 ### Summary of offerings
 
-<table data-full-width="false"><thead><tr><th width="164">Offering</th><th width="153">Standard*</th><th width="148">Silver Success</th><th width="148">Gold Success</th><th>Platinum Success</th></tr></thead><tbody><tr><td>Digital learning resources</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Online community</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Support resource and ticket routing <br><em><mark style="color:purple;">See the</mark></em> <a href="./#support-terms"><em><mark style="color:purple;">Support Terms</mark></em></a> <em><mark style="color:purple;">section for more details</mark></em></td><td>Pooled Technical Support</td><td>Pooled Technical Support<br><em>Priority path for escalation</em></td><td>Pooled Technical Support<br><em>Priority path for escalation</em></td><td><p>Aligned Technical Support Engineer</p><p><em>Priority routing for support issues</em></p><p><em>Priority path for escalation</em><br></p></td></tr><tr><td><p>Hours of operation</p><p><em><mark style="color:purple;">See the</mark></em> <a href="./#support-terms"><em><mark style="color:purple;">Support Terms</mark></em></a> <em><mark style="color:purple;">section for more details</mark></em></p></td><td>24x5</td><td>24x7</td><td>24x7</td><td>24x7</td></tr><tr><td>Initial Support response SLA<br><em><mark style="color:purple;">See the</mark></em> <a href="./#support-terms"><em><mark style="color:purple;">Support Terms</mark></em></a> <em><mark style="color:purple;">section for more details</mark></em></td><td><p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td>Urgent (1): 4 hrs</td></tr><tr><td>High (2): 8 hrs</td></tr><tr><td>Normal (3): 24 hrs</td></tr><tr><td>Low (4): 24 hrs</td></tr></tbody></table></td><td><p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td>Urgent (1): 2 hrs</td></tr><tr><td>High (2): 4 hrs</td></tr><tr><td>Normal (3): 8 hrs</td></tr><tr><td>Low (4): 12 hrs</td></tr></tbody></table></td><td><p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td>Urgent (1): 1 hr</td></tr><tr><td>High (2): 2 hrs</td></tr><tr><td>Normal (3): 8 hrs</td></tr><tr><td>Low (4): 12 hrs</td></tr></tbody></table></td><td><p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td>Urgent (1): 1 hr</td></tr><tr><td>High (2): 2 hrs</td></tr><tr><td>Normal (3): 4 hrs</td></tr><tr><td>Low (4): 8 hrs</td></tr></tbody></table></td></tr><tr><td>Technical Success Manager</td><td>❌</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Dedicated TSM hours</td><td>N/A</td><td>Bi-weekly meetings. Up to 2 hrs/week (average)</td><td>Up to 4 hrs/week (average)</td><td>Up to 8 hrs/week (average)</td></tr><tr><td>Solutions architecture</td><td>❌</td><td>❌</td><td>❌</td><td>✔</td></tr><tr><td>Guided onboarding </td><td>❌</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Success planning</td><td>❌</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Business review cadence</td><td>N/A</td><td>Bi-annually</td><td>Quarterly</td><td>Quarterly</td></tr><tr><td>Live training sessions</td><td>Public trainings on snyk.io/events</td><td>Public trainings on snyk.io/events</td><td>1 Private Session/Month</td><td>2 Private Sessions/Month</td></tr><tr><td>Private Slack channel</td><td>❌</td><td>✔</td><td>✔</td><td>✔</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="164">Offering</th><th width="153">Standard*</th><th width="148">Silver Success</th><th width="148">Gold Success</th><th>Platinum Success</th></tr></thead><tbody><tr><td>Digital learning resources</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Online community</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Support resource and ticket routing. For details, see <a href="./#support-terms">Support Terms</a>.</td><td>Pooled Technical Support</td><td><p>Pooled technical support<br></p><p>Priority path for escalation</p></td><td><p>Pooled Ttchnical support<br></p><p>Priority path for escalation</p></td><td><p>Aligned technical support engineer</p><p></p><p>Priority routing for support issues</p><p></p><p>Priority path for escalation<br></p></td></tr><tr><td>Hours of operation. For details, see <a href="./#support-terms">Support Terms</a>.</td><td>24x5</td><td>24x7</td><td>24x7</td><td>24x7</td></tr><tr><td>Initial Support response SLA<br>For details, see <a href="./#support-terms">Support Terms</a>.</td><td><p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td>Urgent (1): 4 hrs</td></tr><tr><td>High (2): 8 hrs</td></tr><tr><td>Normal (3): 24 hrs</td></tr><tr><td>Low (4): 24 hrs</td></tr></tbody></table></td><td><p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td>Urgent (1): 2 hrs</td></tr><tr><td>High (2): 4 hrs</td></tr><tr><td>Normal (3): 8 hrs</td></tr><tr><td>Low (4): 12 hrs</td></tr></tbody></table></td><td><p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td>Urgent (1): 1 hr</td></tr><tr><td>High (2): 2 hrs</td></tr><tr><td>Normal (3): 8 hrs</td></tr><tr><td>Low (4): 12 hrs</td></tr></tbody></table></td><td><p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td>Urgent (1): 1 hr</td></tr><tr><td>High (2): 2 hrs</td></tr><tr><td>Normal (3): 4 hrs</td></tr><tr><td>Low (4): 8 hrs</td></tr></tbody></table></td></tr><tr><td>Technical Success Manager</td><td>❌</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Dedicated TSM hours</td><td>N/A</td><td>Bi-weekly meetings. Up to 2 hrs/week (average)</td><td>Up to 4 hrs/week (average)</td><td>Up to 8 hrs/week (average)</td></tr><tr><td>Solutions architecture</td><td>❌</td><td>❌</td><td>❌</td><td>✔</td></tr><tr><td>Guided onboarding </td><td>❌</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Success planning</td><td>❌</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Business review cadence</td><td>N/A</td><td>Bi-annually</td><td>Quarterly</td><td>Quarterly</td></tr><tr><td>Live training sessions</td><td>Public trainings on snyk.io/events</td><td>Public trainings on snyk.io/events</td><td>1 Private Session/Month</td><td>2 Private Sessions/Month</td></tr><tr><td>Private Slack channel</td><td>❌</td><td>✔</td><td>✔</td><td>✔</td></tr></tbody></table>
 
 {% hint style="info" %}
 \*Standard refers to the default Offering that comes along with an Enterprise Plan when the Customer has opted out of purchasing a Success Offering (Silver, Gold, Platinum Success Offerings).
 {% endhint %}
 
-### Success Offering descriptions
+### Success offering descriptions
 
 #### Standard
 
@@ -24,7 +24,7 @@ Customers may purchase enhanced education and training functionality, the Snyk L
 
 **Online community:** Interact with, and learn from, Snyk customers and DevSecOps enthusiasts [https://snyk.io/community/](https://snyk.io/community/)
 
-#### Silver Success Offering
+#### Silver Success offering
 
 **Technical Success Manager:** Named Technical Resource assigned to your account to guide your onboarding and support your Snyk implementation as it grows and evolves.
 
@@ -48,7 +48,7 @@ Customer onboarding needs vary depending on the solutions purchased.&#x20;
 
 **Private Slack channel**: Direct engagement over Slack with your Technical Account team to encourage collaboration
 
-#### Gold Success Offering
+#### Gold Success offering
 
 **Technical Success Manager:** Named Technical Resource assigned to your account to guide your onboarding and support your Snyk implementation as it grows and evolves.
 
@@ -74,7 +74,7 @@ Customer onboarding needs vary depending on the solutions purchased.&#x20;
 
 **Private Slack channel:** Direct engagement over Slack with your Technical Account team to encourage collaboration.
 
-#### Platinum Success Offering
+#### Platinum Success offering
 
 **Technical Success Manager:** Named Technical Resource assigned to the customer account to guide their onboarding and support their Snyk implementation as it grows and evolves.
 
@@ -104,13 +104,13 @@ Customer onboarding needs vary depending on the solutions purchased.&#x20;
 
 ## Support terms
 
-### Summary of Snyk Global Support Offerings
+### Summary of Snyk Global Support offerings
 
 Response times are dependent on the severity of the ticket, the Snyk Plan purchased (Free or Team versus Enterprise), and the Success Offering purchased (Standard, Silver, Gold, Platinum).
 
 #### **Severity definitions**
 
-<table data-full-width="false"><thead><tr><th width="166">Severity Level</th><th width="121.33333333333331">Impact</th><th>Description</th></tr></thead><tbody><tr><td>1: Urgent</td><td>Critical</td><td>Snyk critical failure that impacts Licensee’s operations and prevents Licensee’s work from being done with no workaround.</td></tr><tr><td>2: High</td><td>Major</td><td>A major function of the Snyk service is not operational but Licensee’s operations are not affected, or operations are possible with a workaround.</td></tr><tr><td>3: Normal</td><td>Low</td><td>Minor defect in the Software or Platform with minor or no effect on Licensee’s operation.</td></tr><tr><td>4: Low</td><td>Trivial</td><td>Trivial defect in the Software or Platform with little or no impact on Licensee’s operation.</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="166">Severity level</th><th width="121.33333333333331">Impact</th><th>Description</th></tr></thead><tbody><tr><td>1: Urgent</td><td>Critical</td><td>Snyk critical failure that impacts Licensee’s operations and prevents Licensee’s work from being done with no workaround.</td></tr><tr><td>2: High</td><td>Major</td><td>A major function of the Snyk service is not operational but Licensee’s operations are not affected, or operations are possible with a workaround.</td></tr><tr><td>3: Normal</td><td>Low</td><td>Minor defect in the Software or Platform with minor or no effect on Licensee’s operation.</td></tr><tr><td>4: Low</td><td>Trivial</td><td>Trivial defect in the Software or Platform with little or no impact on Licensee’s operation.</td></tr></tbody></table>
 
 #### Initial response time details
 
@@ -120,7 +120,7 @@ Response times are dependent on the severity of the ticket, the Snyk Plan purcha
 * For issues outside of the typical support scope, issues determined to require a longer-term fix, or issues that are part of future development cycles, Snyk will provide regular and meaningful updates on a case-by-case basis. This includes, but is not limited to, new feature requests, items within Snyk’s long-term development roadmap, and complex bug fixes.
 * Technical Success Managers do not provide break or fix support and will refer requests for technical issue resolution to Snyk's Technical Support team.
 
-#### Definitions of Snyk Global Support hours
+#### Definitions of Snyk Global support hours
 
 **8x5**: Snyk Technical Support Engineers actively respond to tickets within the Customer's local business hours, Monday to Friday.
 
@@ -181,4 +181,3 @@ See the service descriptions on each of the following pages.
 * [Snyk Jumpstart Services](snyk-jumpstart-services-description.md)
 * [Snyk Residency Services](snyk-residency-services.md)
 * [Statement of Work](statement-of-work.md)
-

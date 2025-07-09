@@ -108,7 +108,7 @@ language-settings:
   python: "3.7"
 ```
 
-For more information, see [Setting Python version in Git Projects](../../supported-languages-package-managers-and-frameworks/python/git-repositories-and-python.md#set-the-python-version-in-git-projects).
+For more information, see [Setting Python version in Git Projects](../../supported-languages-package-managers-and-frameworks/python/scm-integrations-and-python.md#set-the-python-version-in-git-projects).
 
 #### Set vulnerability ignore rules
 

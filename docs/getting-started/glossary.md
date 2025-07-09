@@ -14,7 +14,7 @@ A Snyk Essentials asset is an identifiable entity that is part of an application
 
 An application is software that serves a business purpose and consists of assets that form the app. Organizations often define the scope of an application differently.
 
-### Application Graph
+### Application graph
 
 Represents the mapping of security issues, application assets, relationships between assets, and all relevant contextual information.&#x20;
 
@@ -28,7 +28,7 @@ The parent image used to construct a container image, usually defined in the `FR
 
 See [Snyk Broker](../enterprise-setup/snyk-broker/).
 
-### Build System
+### Build system
 
 A system that takes the source code and builds the deployable application (such as a container).
 
@@ -52,8 +52,7 @@ Command Line Interface. See [Snyk CLI](glossary.md#snyk-cli).
 
 ### Cloud Native Application Security
 
-Implementing security throughout the CI/CD pipeline, automating security embedding in microservices, and maximizing repetition to reduce the introduction of vulnerabilities. Snyk provides a comprehensive [CNAS platform](https://snyk.io/product/cloud-native-application-security/).\
-See the article [Cloud-native security guide for building secure applications](https://snyk.io/learn/cloud-native-security-for-cloud-native-applications/).
+Implementing security throughout the CI/CD pipeline, automating security embedding in microservices, and maximizing repetition to reduce the introduction of vulnerabilities. Snyk provides a comprehensive [CNAS platform](https://snyk.io/product/cloud-native-application-security/). See [Cloud-native security guide for building secure applications](https://snyk.io/learn/cloud-native-security-for-cloud-native-applications/).
 
 ### Code assets (Snyk **Essentials**)
 
@@ -346,7 +345,7 @@ A scanned artifact in Snyk Essentials is an entity detected by Snyk that cannot 
 
 ### SCM
 
-Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../scm-integrations/snyk-scm-integrations/).
+Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
 
 ### SCM Repository freshness (Snyk **Essentials**)
 
@@ -418,7 +417,7 @@ A library used by the Snyk CLI to scan a certain language or build system.
 
 ### Snyk Security Intelligence
 
-A component powering the Snk cloud-native application security platform.\
+A component powering the Snyk cloud-native application security platform.\
 Incorporates the Snyk Intel Vulnerability DB: the Snyk database of vulnerabilities, providing detailed information and fix advice for known vulnerabilities. See [Vulnerability DB](https://snyk.io/vuln).
 
 ### Snyk Web UI

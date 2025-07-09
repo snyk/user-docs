@@ -1,8 +1,8 @@
-# GitHub Actions for Snyk setup and checking for vulnerabilities
+# GitHub actions for Snyk setup and checking for vulnerabilities
 
 ## Overview of GitHub Actions Integration
 
-Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using Snyk to check for vulnerabilities in your GitHub projects. These actions are based on the [Snyk CLI](../../snyk-cli/), and you can use [all of its options and capabilities](../../snyk-cli/cli-commands-and-options-summary.md) with the `args` in the [properties](./#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
+Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using Snyk to check for vulnerabilities in your GitHub projects. These actions are based on the [Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/), and you can use [all of its options and capabilities](../../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) with the `args` in the [properties](./#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
 
 There is also a [Snyk Setup Action](snyk-setup-action.md).
 
@@ -45,11 +45,11 @@ For detailed information about the Setup Action and examples, see [Snyk Setup Ac
 
 The Snyk GitHub Action for open-source languages and package managers has properties that are passed to the underlying image using `with`.
 
-| Property | Default | Description                                                                                                                                                       |
-| -------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args     |         | Override the default arguments to the Snyk image. See the [CLI commands and options summary](../../snyk-cli/cli-commands-and-options-summary.md) for all options. |
-| command  | test    | Specify which command to run, for instance test or monitor.                                                                                                       |
-| json     | false   | In addition to the stdout, save the results as snyk.json.                                                                                                         |
+| Property | Default | Description                                                                                                                                                                                         |
+| -------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| args     |         | Override the default arguments to the Snyk image. See the [CLI commands and options summary](../../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) for all options. |
+| command  | test    | Specify which command to run, for instance test or monitor.                                                                                                                                         |
+| json     | false   | In addition to the stdout, save the results as snyk.json.                                                                                                                                           |
 
 For the properties associated with the other Snyk GitHub Actions, see [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](./#github-actions-for-snyk-container-and-snyk-infrastructure-as-code) and [Snyk Setup Action](snyk-setup-action.md).
 
@@ -101,7 +101,7 @@ jobs:
 
 ### Example of reporting only on high severity vulnerabilities
 
-By using the `args` property of the action, you can use [all of the options and capabilities of the Snyk CLI.](../../snyk-cli/cli-commands-and-options-summary.md) This example shows use of the option `--severity-threshold=high`.
+By using the `args` property of the action, you can use [all of the options and capabilities of the Snyk CLI.](../../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) This example shows use of the option `--severity-threshold=high`.
 
 ```yaml
 name: Example workflow using Snyk
@@ -123,7 +123,7 @@ jobs:
 
 Snyk GitHub Actions support integration with GitHub Code Scanning to show vulnerability information on the GitHub Security tab. The following applies to Snyk GitHub Actions for Open Source languages and package manager&#x73;**.** For information on specific languages, package managers, and processes see the pages listed in [GitHub Actions for Open Source languages and package managers](./#github-actions-for-open-source-languages-and-package-managers) and GitHub Actions for Snyk Container and Snyk Infrastructure as Code.
 
-Using `--sarif-file-output` [Snyk CLI ](../../snyk-cli/cli-commands-and-options-summary.md)option and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
+Using `--sarif-file-output` [Snyk CLI ](../../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md)option and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
 
 The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus, you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) option, as shown in the example that follows.
 
@@ -194,4 +194,4 @@ env:
 Every Snyk account has this token. After you have created an account with Snyk, you can find the API token in one of two ways:
 
 1. In the UI, go to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained on the page [Revoke and regenerate a Snyk API token](../../../snyk-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token.md).
-2. If you are using the [Snyk CLI](../../snyk-cli/getting-started-with-the-snyk-cli.md) locally, you can retrieve the API token by running `snyk config get api`.
+2. If you are using the [Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/getting-started-with-the-snyk-cli.md) locally, you can retrieve the API token by running `snyk config get api`.
