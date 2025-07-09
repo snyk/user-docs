@@ -55,9 +55,9 @@ For more information, see [Package repository integrations](../../scan-with-snyk
 
 ### Limitations on improved .NET scanning for SCM integrations
 
-* `Directory.Build.props` , `global.json` and other .NET-specific manifest files are supported, but the file names must use upper and lower case, as Microsoft [describes](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets).
+* `Directory.Build.props`, `global.json` and other .NET-specific manifest files are supported, but the file names must use upper and lower case, as Microsoft [describes](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets).
 * For `global.json`, Snyk does not support all `major.minor.patch` versions that are currently supported by Microsoft, only a subset thereof. For more information, see this [error code](../../scan-with-snyk/error-catalog.md#snyk-os-dotnet-0008).
-* The operations are performed on a case-sensitive file system, meaning manifest definitions like your `<ProjectReference>`s strings must match files and folders with the same case.
+* The operations are performed on a case-sensitive file system, meaning manifest definitions like your `<ProjectReference>` strings must match files and folders with the same case.
 * Snyk does not support Projects that use Visual Studio Build Tools.
 * Snyk does not support Windows-specific frameworks (WPF, WCF) for .NET Projects.
 * Projects with downloaded dependencies totaling more than 10GB are not supported.
@@ -69,7 +69,7 @@ The .NET scanning improvements are also available in the Snyk CLI for both the [
 Follow these steps to enable the improvements:
 
 1. [Install](../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/) the latest version of the CLI.
-2. Run `dotnet restore.`
+2. Run `dotnet restore`.
 3. Scan your .NET Projects using `snyk test` or `snyk monitor` as usual, but add the `--dotnet-runtime-resolution` option.
 
 The `--dotnet-runtime-resolution` option works with`--all-projects`.

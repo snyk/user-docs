@@ -17,15 +17,15 @@ In an SCM integration, scanning uses a different process, as the generated files
 ## Build-time versus runtime dependencies
 
 * Build-time dependency: Snyk understands build-time dependency to be resolved during build time and not susceptible to change at runtime.
-* Runtime dependency: Snyk understands runtime dependency to be resolved against the installed runtime, for example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . Snyk sometimes refers to runtime dependencies as meta-packages.
+* Runtime dependency: Snyk understands runtime dependency to be resolved against the installed runtime, for example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http). Snyk sometimes refers to runtime dependencies as meta-packages.
 
 You can choose one of the following actions to address **vulnerabilities from runtime dependencies**. These vary between the SCM and the CLI.
 
-### **Vulnerabilities from runtime dependencies in SCM**
+### Vulnerabilities from runtime dependencies in SCM
 
 If you believe you have found false positives because the application runs on a system that always has the latest patches from Microsoft installed, which _may_ mean the vulnerability is no longer relevant to your Project, you may choose to [ignore](../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) it.
 
-### **Vulnerabilities from runtime dependencies in CLI**
+### Vulnerabilities from runtime dependencies in CLI
 
 If you believe you have found false positives because when the application runs in production, you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your Project, you may [ignore](../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) them and do the following:
 
@@ -35,7 +35,7 @@ If you believe you have found false positives because when the application runs 
 <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
 ```
 
-* You may choose to publish a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained) app that includes the runtime. Then set `RuntimeFrameworkVersion`to the specific patch version in the Project file. You may choose to [ignore](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md) vulnerabilities that you believe are no longer relevant.
+* You may choose to publish a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained) app that includes the runtime. Then set `RuntimeFrameworkVersion` to the specific patch version in the Project file. You may choose to [ignore](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md) vulnerabilities that you believe are no longer relevant.
 
 ```
 <PropertyGroup>
@@ -47,7 +47,7 @@ Use this guide to apply Snyk effectively in your technology stack.
 
 ## C\#
 
-Snyk Code can analyze your C# code using IDE, CLI, and Git integration.&#x20;
+Snyk Code can analyze your C# code using IDE, CLI, and Git integration.
 
 For framework support, see [Snyk Code - Supported languages and frameworks](../).
 
@@ -55,27 +55,27 @@ For framework support, see [Snyk Code - Supported languages and frameworks](../)
 
 **Target Frameworks**: Snyk identifies the target frameworks and presents results against each identified version using the git integration.
 
-**Development dependencies**: Snyk generally does not scan developer dependencies, as they are not usually pushed to production and are seen as "noise." \
-Enable visibility in Nuget git import using the **Settings** > **Languages** > **.Net** settings (see [Git settings for .NET](./#git-settings-for-.net)). \
-Snyk scans and fixes the build and `development Dependency` sections of your [`*.proj`](#user-content-fn-1)[^1], `packages.config` and `project.json` files
+**Development dependencies**: Snyk generally does not scan developer dependencies, as they are not usually pushed to production and are seen as "noise."\
+Enable visibility in Nuget git import using the **Settings** > **Languages** > **.Net** settings (see [Git settings for .NET](./#git-settings-for-.net)).\
+Snyk scans and fixes the build and `development Dependency` sections of your `*.proj`, `packages.config` and `project.json` files
 
-Lock files: Currently, **packages-lock.json** is not supported. Snyk interacts with the build system to determine the installed dependencies.
+**Lock files**: Currently, **packages-lock.json** is not supported. Snyk interacts with the build system to determine the installed dependencies.
 
-PackageReference: Snyk currently requires a version attribute. If your Project lacks this, Snyk may fail to open a PR for your Project.
+**PackageReference**: Snyk currently requires a version attribute. If your Project lacks this, Snyk may fail to open a PR for your Project.
 
 **Git analysis**
 
 How dependency trees are created:
 
-* For .NET Core, using the \*.proj files&#x20;
-* For .NET Framework, using the \*.proj file, and packages.config
+* For .NET Core, using the `*.proj` files
+* For .NET Framework, using the `*.proj` file, and `packages.config`
 
-SCM integrations support the following:&#x20;
+SCM integrations support the following:
 
-* \*.csproj&#x20;
-* \*.fsproj
-* \*.vbproj
-* packages.config
+* `*.csproj`
+* `*.fsproj`
+* `*.vbproj`
+* `packages.config`
 
 Fix Pull Requests
 
@@ -89,7 +89,7 @@ The CLI supports the following config files:
 
 Snyk can scan project.assets.json to determine dependencies, but the file must be generated. Similarly, if you point to the solution file (.sln), you must generate the file first.
 
-Run `dotnet restor`**e** to generate the necessary `project.assets.json` before running the `snyk test` command.
+Run `dotnet restore` to generate the necessary `project.assets.json` before running the `snyk test` command.
 
 The solution file contains pointers to the files necessary to perform the analysis. Note that the projects themselves must have `project.assets.json` files to be scanned. If you want Snyk to use the solution file as an entry point for scanning, you can point the Snyk CLI to the solution file by using `--file=<filename>.sln`.
 
@@ -121,7 +121,7 @@ Navigate to the [.NET](./) page for more information.
 
 Navigate to the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/)​ page for more details.
 
-## What to test&#x20;
+## What to test
 
 Use the `--help` option in the CLI for details of Snyk CLI commands. Navigate to the [CLI commands and options summary](../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) page for more details.
 
@@ -129,7 +129,7 @@ Use the `--help` option in the CLI for details of Snyk CLI commands. Navigate to
 
 For open source analysis in the CLI, first, install the dependencies. After installing the dependencies, use one of the following options to run `snyk test`:
 
-* `--file=`: Choose this option to target the solution file (.sln) or a specific file.&#x20;
+* `--file=`: Choose this option to target the solution file (.sln) or a specific file.
 * &#x20;`--all-projects`: Choose this option to analyze your open source projects, especially if multiple languages, package managers, and .sln files are involved.
 
 ### **Codebase**
@@ -140,7 +140,7 @@ Use the `snyk code test` command from the root of the Project to perform source 
 
 [Supported Operating System Distributions](../../scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md)
 
-[Snyk CLI for container security](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)&#x20;
+[Snyk CLI for container security](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
 
 ### Infrastructure as Code
 
@@ -154,10 +154,8 @@ Navigate to the [Infrastructure as Code security](https://snyk.io/product/infras
 
 ## Additional security topics for .Net developers
 
-The following is a collection of articles from the Snyk Security team and Developer Relations related to this ecosystem.&#x20;
+The following is a collection of articles from the Snyk Security team and Developer Relations related to this ecosystem.
 
 * [Snyk Blog](https://snyk.io/blog/)
 * [Snyk for .Net](./)
 * [Best Practices for Containerizing .NET applications](https://snyk.io/blog/best-practices-for-containerizing-net-applications/)
-
-[^1]: 
