@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-If you are using Broker, see the [Universal Broker documentation](https://docs.snyk.io/enterprise-setup/snyk-broker/universal-broker).
+If you are using Broker, see the [Universal Broker documentation](../../enterprise-setup/snyk-broker/universal-broker/).
 
 If you want to use your own GitHub App, reach out to your Snyk account team.
 
@@ -15,7 +15,7 @@ The GitHub Cloud App does not have pre-configured IP addresses that can be autom
 * Snyk Organization Admin user role.
 * GitHub Organization Admin user role.
 * A public or private GitHub repository.
-* The required app permissions. For more information, see [GitHub Cloud App permission requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-cloud-app-permission-requirements).
+* The required app permissions. For more information, see [GitHub Cloud App permission requirements](../user-permissions-and-access-scopes.md#github-cloud-app-permission-requirements).
 
 {% hint style="info" %}
 Users can install the app on GitHub Organizations they are Repository Admins on through the GitHub UI.

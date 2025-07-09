@@ -10,7 +10,7 @@ You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445
 
 ## Integrated SCM tokens for Classic Broker
 
-An integrated SCM token is required for [Broker client setup](../enterprise-setup/snyk-broker/#integrations-with-snyk-broker). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
+An integrated SCM token is required for [Broker client setup](../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
 
 An integrated SCM token can be generated for the following SCM integrations:
 

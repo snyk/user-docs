@@ -11,7 +11,7 @@ Snyk supports only Git. Snyk does not currently support integration with Team Fo
 
 * [Snyk Organization Admin](../../snyk-admin/user-roles/pre-defined-roles.md) user role.
 * An Azure project. If you do not have a project yet, create one in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) or set one up in an [on-premise Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops) instance.
-* The required Personal Access Token (PAT) access scopes. For details on the permissions required, see [Azure Repositories (TFS) permission requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#azure-repositories-tfs-permission-requirements).
+* The required Personal Access Token (PAT) access scopes. For details on the permissions required, see [Azure Repositories (TFS) permission requirements](../user-permissions-and-access-scopes.md#azure-repositories-tfs-permission-requirements).
 
 ### Azure Repositories (TFS) integration features
 
@@ -40,7 +40,7 @@ The process to connect Snyk with your Azure repositories includes the following 
 
 ### Configure a Personal Access Token (PAT)
 
-Generate and copy a unique PAT to use for Snyk. For more information on the PAT access scope requirements to enable in Azure, see [Azure Repositories (TFS) permission requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#azure-repositories-tfs-permission-requirements).
+Generate and copy a unique PAT to use for Snyk. For more information on the PAT access scope requirements to enable in Azure, see [Azure Repositories (TFS) permission requirements](../user-permissions-and-access-scopes.md#azure-repositories-tfs-permission-requirements).
 
 ### Integrate using the Snyk Web UI
 

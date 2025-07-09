@@ -77,7 +77,7 @@ With the listed configuration of 1 vCPU and 2GB RAM, scanning capacity would be 
 
 ## Set up the remote connection for Container Registry Agent using Docker
 
-### Configuring and running **the Container Registry Agent**
+### Configuring and running the Container Registry Agent
 
 Snyk recommends deploying the Container Registry Agent first as both Universal and Classic Broker requires configuration input from that deployment, namely the Container Registry Agent URL. You can pull the Container Registry Agent image from Docker Hub using the link provided in the [prerequisites](./#prerequisites-for-container-registry-agent).
 

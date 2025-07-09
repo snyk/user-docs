@@ -5,7 +5,7 @@
 * Internet-accessible repositories.\
   If your repositories are not internet-accessible, you must use [Snyk Broker](../../enterprise-setup/snyk-broker/).
 * A public or private GitHub project.
-* The required PAT and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permissions requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements).
+* The required PAT and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permissions requirements](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements).
 
 ### Known limitations of the GitHub integration
 
@@ -123,7 +123,7 @@ You can review and adjust the pull request test settings using the Snyk GitHub I
 
 In non-brokered GitHub integrations, operations that are triggered through the Snyk Web UI, for example, opening a Fix PR or re-testing a Project, are performed on behalf of the acting user.&#x20;
 
-Therefore, a user who wants to perform this operation on GitHub through the Snyk UI must connect their GitHub account to Snyk with the required permission scope for the repositories where they want to perform these operations. See [GitHub and GitHub Enterprise permissions requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements) for details.
+Therefore, a user who wants to perform this operation on GitHub through the Snyk UI must connect their GitHub account to Snyk with the required permission scope for the repositories where they want to perform these operations. See [GitHub and GitHub Enterprise permissions requirements](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements) for details.
 
 Operations that are not triggered through the Snyk Web UI, such as daily and weekly tests and automatic PRs (fix and upgrade), are performed on behalf of random Snyk Organization members who have connected their GitHub accounts to Snyk and have the required permission scope for the repository.
 
@@ -155,7 +155,7 @@ To use this feature, follow these steps:
 {% hint style="info" %}
 Ensure that the GitHub account that you designate to open Snyk PRs has **write-level** permissions or higher for the repos you want to monitor with Snyk.
 
-See [GitHub and GitHub Enterprise permissions requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#github-and-github-enterprise-permissions-requirements) for more information.
+See [GitHub and GitHub Enterprise permissions requirements](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements) for more information.
 {% endhint %}
 
 ### **How to assign pull requests to users** <a href="#pr-assignment" id="pr-assignment"></a>
@@ -244,10 +244,10 @@ If you have already created multiple Snyk Organizations and Projects have been i
 If you already have multiple Snyk Organizations with Projects imported using the GitHub integration, follow these steps to migrate from GitHub integration to GitHub Enterprise integration.
 
 1. Create a new Snyk Organization that will be used as the template for all others. You can copy integration settings from an existing Organization if required.
-2. In this new template Organization, set up the Snyk GitHub Enterprise integration using the steps on the page [GitHub Enterprise integration](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise#how-to-set-up-a-github-enterprise-integration). The dedicated GitHub service account in those steps is a separate user account that you will use as the connection between Snyk and GitHub.
+2. In this new template Organization, set up the Snyk GitHub Enterprise integration using the steps on the page [GitHub Enterprise integration](github-enterprise.md#how-to-set-up-the-github-enterprise-integration). The dedicated GitHub service account in those steps is a separate user account that you will use as the connection between Snyk and GitHub.
 3. When the Snyk GitHub Enterprise integration is configured, you can import a Project to your template Organization to test that the integration is working as expected.
 4. You can now create new Organizations that will replace the existing Organizations that were configured using the GitHub integration. As you create each new Organization, ensure that you copy the integration settings from this template Organization so that the GitHub Enterprise integration is available.
 5. Now that your new Organizations are created, you can import your Projects, choosing the GitHub Enterprise integration when you select the source.
 6. You can now remove the previous Organizations that were configured using the GitHub integration.
 
-You may want to [disconnect your GitHub integration](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github#disconnecting-the-github-integration) to avoid unintentionally importing Projects using the GitHub integration in the future. Because the GitHub integration is configured per user account, rather than per Organization, each user who has set up the GitHub integration must complete this disconnection process individually.
+You may want to [disconnect your GitHub integration](github-enterprise.md#how-to-disconnect-the-github-enterprise-integration) to avoid unintentionally importing Projects using the GitHub integration in the future. Because the GitHub integration is configured per user account, rather than per Organization, each user who has set up the GitHub integration must complete this disconnection process individually.

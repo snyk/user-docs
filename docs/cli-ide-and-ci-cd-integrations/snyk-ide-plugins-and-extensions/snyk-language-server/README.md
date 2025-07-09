@@ -8,8 +8,8 @@ For open source, you receive automated, algorithm-based fix suggestions for both
 
 Snyk Language Server scans for the following types of issues:
 
-* [**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both the direct and indirect (transitive) open-source dependencies pulled into the Snyk Project. See also the [Open Source documentation](https://docs.snyk.io/scan-with-snyk/snyk-open-source).
-* [**Code Security**](https://snyk.io/product/snyk-code/) - security vulnerabilities in your code. See also the [Snyk Code documentation](https://docs.snyk.io/scan-with-snyk/snyk-code).
+* [**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both the direct and indirect (transitive) open-source dependencies pulled into the Snyk Project. See also the [Open Source documentation](../../../scan-with-snyk/snyk-open-source/).
+* [**Code Security**](https://snyk.io/product/snyk-code/) - security vulnerabilities in your code. See also the [Snyk Code documentation](../../../scan-with-snyk/snyk-code/).
 * [**Infrastructure as Code (IaC) Security**](https://snyk.io/product/infrastructure-as-code-security/) - configuration issues in your IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager. See also the [Snyk Infrastructure as Code documentation](../../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/).
 
 After you have installed and configured the Language Server, every time you run it, open a file, or save, Snyk scans the manifest files, proprietary code, and configuration files in your Project. Snyk delivers actionable vulnerability, license, or misconfiguration issue details and displays the results natively within the LSP supporting Editor or IDE.

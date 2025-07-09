@@ -16,12 +16,12 @@ The Integrations page shows all active integrations, including data from your ex
    * Access Token (`mandatory`): Create and add your Access token by following the instructions from the  [Generate a Personal access token from your Azure DevOps settings](azure-devops-for-snyk-essentials.md#generate-a-personal-access-token-from-your-azure-devops-settings) section.
    * API URL (`mandatory`): The API URL, for example, [`https://dev.azure.com/`](https://dev.azure.com/). You can use a custom URL that is publicly accessible.
 4. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk Broker.
-   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker ](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-for-snyk-broker-code-agent)page.&#x20;
+   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md) page.&#x20;
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) page.
 
 {% hint style="warning" %}
-The following PAT token permissions requirements are for Snyk Essentials integrations. For SCM integration, see the [Azure Respositories (TFS) permissions requirements](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#azure-repositories-tfs-permission-requirements) on the Snyk SCM integrations pages.
+The following PAT token permissions requirements are for Snyk Essentials integrations. For SCM integration, see the [Azure Respositories (TFS) permissions requirements](../user-permissions-and-access-scopes.md#azure-repositories-tfs-permission-requirements) on the Snyk SCM integrations pages.
 {% endhint %}
 
 #### Generate a Personal access token from your Azure DevOps settings

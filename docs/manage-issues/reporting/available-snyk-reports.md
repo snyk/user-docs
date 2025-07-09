@@ -418,7 +418,7 @@ The repository test summary table shows the performed tests during the selected 
 The default sorting in the table surfaces repositories according to their last commit, allowing you to identify repositories that were expected to be tested in CI/CD pipelines and verify they were tested. Clicking the column names to sort the table according to the selected column. You can sort the table by multiple columns at a time.&#x20;
 
 {% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) page.&#x20;
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [Group-level integrations](../../scm-integrations/group-level-integrations/) page.&#x20;
 {% endhint %}
 
 You can execute the test on a specific repository branch in the table. The `tested` indicator means that any branch of this repository was tested during the selected date range.
@@ -632,7 +632,7 @@ To make it easier to share the view outside of the Snyk platform, the URL of a s
 
 ### Prerequisites
 
-To create, edit, and remove a saved view, you must have **Edit reports** permission. Saved views are not private. After being created, Saved Views are visible to all users with **View reports** permission. Only Organization and Group Admins can assign these permissions. For more information, see [User role management](https://docs.snyk.io/snyk-admin/user-roles/user-role-management).
+To create, edit, and remove a saved view, you must have **Edit reports** permission. Saved views are not private. After being created, Saved Views are visible to all users with **View reports** permission. Only Organization and Group Admins can assign these permissions. For more information, see [User role management](../../snyk-admin/user-roles/user-role-management.md).
 
 To assign report permissions:
 

@@ -16,7 +16,7 @@ You can implement SCM integrations in a Snyk environment as follows:
 To use the same SCM integration at both Group and Organization levels, you must set up that integration on both levels.
 
 {% hint style="warning" %}
-If you have added the GitHub integration at Organizational and/or Group levels and you have configured SAML SSO for it, then you must authorize your GitHub PAT. Navigate to the [How to authorize your Personal Access Token and enable SSO](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise#how-to-authorize-your-personal-access-token-and-enable-sso) page for more details.
+If you have added the GitHub integration at Organizational and/or Group levels and you have configured SAML SSO for it, then you must authorize your GitHub PAT. Navigate to the [How to authorize your Personal Access Token and enable SSO](snyk-scm-integrations/github-enterprise.md#how-to-authorize-your-personal-access-token-and-enable-sso) page for more details.
 {% endhint %}
 
 ## Workspaces for SCM integrations

@@ -4,10 +4,10 @@ Group-level SCM integrations provide broader visibility into all the application
 
 At the Group level, you can set up and customize your Snyk Essentials integrations from the **Integrations Hub,** where the following SCMs are available:
 
-* [GitHub](../snyk-scm-integrations/github-enterprise.md#github-setup-guide-for-snyk-apprisk) and GitHub Enterprise
-* [GitLab](../snyk-scm-integrations/gitlab.md#gitlab-setup-guide)
-* [Azure DevOps](../snyk-scm-integrations/azure-repositories-tfs.md#azure-devops-setup-guide)
-* [BitBucket](../snyk-scm-integrations/bitbucket-cloud.md#bitbucket-setup-guide)
+* [GitHub](github-for-snyk-essentials.md) and GitHub Enterprise
+* [GitLab](gitlab-for-snyk-essentials.md)
+* [Azure DevOps](azure-devops-for-snyk-essentials.md)
+* [BitBucket](bitbucket-for-snyk-essentials.md)
 
 {% hint style="info" %}
 If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - Snyk Essentials](../../enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md).

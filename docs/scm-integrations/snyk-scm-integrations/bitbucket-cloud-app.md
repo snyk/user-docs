@@ -24,7 +24,7 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
 {% endhint %}
 
 1. In Snyk, navigate to **Integrations (Source control),** then **Bitbucket Cloud App** tile, and click **Connect** to install the Snyk Bitbucket Cloud App on your Bitbucket Cloud workspace.
-2.  In the new Bitbucket tab, select the relevant workspace to connect to your Snyk Organization from the list and [**Grant access** to let Snyk](bitbucket-cloud-app.md#required-snyk-bitbucket-cloud-app-permissions-scope):
+2.  In the new Bitbucket tab, select the relevant workspace to connect to your Snyk Organization from the list and [**Grant access** to let Snyk](../user-permissions-and-access-scopes.md#bitbucket-cloud-app-scopes):
 
     * Read your account information 
     * Read and modify your repositories and their pull requests
