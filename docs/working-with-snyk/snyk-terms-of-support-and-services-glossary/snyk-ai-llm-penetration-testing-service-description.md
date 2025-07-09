@@ -53,7 +53,7 @@ Typical engagement timelines for single LLM agent systems or small multi-agent s
 
 To ensure a successful and effective AI/LLM penetration testing engagement, we require the following from the customer:
 
-* Access to Test Environment: Provision of a stable and representative test environment for the AI/LLM applications and related infrastructure.
+* Access to Test Environment: Provision of a stable and representative test environment for the AI/LLM applications and related infrastructure. Use of any environment other than a test environment, will be entirely at the customer own risk.
 * Test Credentials and Access: Provision of necessary credentials and access permissions to interact with all in-scope AI/LLM components, APIs, user interfaces, and relevant data stores.
 * Detailed System Information: Provision of relevant documentation and information about the AI/LLM architecture, data flows, APIs, training data sources (if applicable and in scope), and any existing security controls.
 * Clear Communication Channels: Establishment of clear and responsive communication channels with designated technical contacts.
@@ -61,3 +61,7 @@ To ensure a successful and effective AI/LLM penetration testing engagement, we r
 * Defined Scope Confirmation: Formal confirmation and agreement on the testing scope.
 * Awareness of Testing Activities: Ensuring relevant internal teams are aware of the scheduled testing.
 * Prompt Response to Findings: Commitment to reviewing findings and engaging in remediation discussions.
+
+## Additional terms
+
+The customer acknowledges that the services referred to herein may be performed either by Snyk personnel or by a Snyk certified partner under the direction and supervision of Snyk. In either event, Snyk remains fully responsible and liable for the performance of these services and its partner's compliance with the terms of the underlying Agreement between Snyk and the customer.
