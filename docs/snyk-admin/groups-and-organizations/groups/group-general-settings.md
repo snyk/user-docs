@@ -1,6 +1,6 @@
 # Group general settings
 
-To view and modify settings for your Group, navigate to **Settings** and **General**.
+To view and modify settings for your Group, navigate to **Settings** > **General**.
 
 <div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2023-04-26 at 12.57.49.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure></div>
 

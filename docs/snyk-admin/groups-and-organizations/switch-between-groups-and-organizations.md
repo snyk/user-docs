@@ -6,7 +6,7 @@ Snyk shows your preferred Organization by default when you log into the Snyk Web
 
 If your company has multiple Groups, you must be aware of the Group you are viewing. Each Group contains different Organizations and has different settings.
 
-To navigate to a different Group, click the Group switcher (![Switcher](<../../.gitbook/assets/image (4) (3) (2).png>) icon) and select a Group:
+To navigate to a different Group, click the Group switcher icon and select a Group:
 
 <div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-04-25 at 10.06.46.png" alt="Switch Group"><figcaption><p>Switch Group</p></figcaption></figure></div>
 
@@ -35,4 +35,3 @@ To navigate to a different Organization, click the Organization switcher and sel
 The default `<ORG_ID>` is the currently preferred Organization in your [Account settings](https://app.snyk.io/account).
 
 See [How to select the Organization to use in the CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md) for more information.
-

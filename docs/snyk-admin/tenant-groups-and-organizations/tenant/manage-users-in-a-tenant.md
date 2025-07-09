@@ -10,7 +10,7 @@ Select the name of your Tenant and the **Members** menu option to manage members
 
 <figure><img src="../../../.gitbook/assets/tenant-nav-member.png" alt="Members page option in the Tenant menu" width="201"><figcaption><p>Members page option in the Tenant menu</p></figcaption></figure>
 
-## View Tenant Members
+## View Tenant members
 
 <figure><img src="../../../.gitbook/assets/Tenant-member-list.png" alt="Tenant member management list with assigned roles"><figcaption><p>Tenant member management list with assigned roles</p></figcaption></figure>
 
@@ -34,7 +34,7 @@ Only Tenant Admins can change the roles of Tenant users.
 
 You can promote a Tenant Member to a Tenant Viewer or Admin by selecting the role dropdown next to the user's name and choosing the appropriate option.
 
-## Delete Tenant Members
+## Delete Tenant Mmmbers
 
 {% hint style="info" %}
 Only Tenant Admins can delete Tenant users.

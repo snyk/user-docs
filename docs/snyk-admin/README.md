@@ -3,10 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-Some functions, such as Groups, are available only on certain plans. For more information, see [plans and pricing](https://snyk.io/plans/).\
-
-
-For details on Enterprise setup, see [Enterprise setup](../enterprise-setup/).
+Some functions, such as Groups, are available only on certain plans. For more information, see [plans and pricing](https://snyk.io/plans/). For details on Enterprise setup, see [Enterprise setup](../enterprise-setup/).
 {% endhint %}
 
 Administration encompasses the following functions:

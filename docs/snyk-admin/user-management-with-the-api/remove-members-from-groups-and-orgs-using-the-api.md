@@ -76,7 +76,7 @@ When an SSO connection is associated with only one Group, the following call can
 
 **Endpoint**: [Delete a user from a group SSO connection](https://apidocs.snyk.io/?version=2024-09-04%7Ebeta#delete-/groups/-group_id-/sso_connections/-sso_id-/users/-user_id-) (Beta, use current version)
 
-You can find the `{sso_id}` on the Snyk Web UI; navigate to **Group** >**Settings** >**SSO** >**Step 3**. If you need help, reach out to your Account team.
+You can find the `{sso_id}` on the Snyk Web UI; navigate to **Group** > **Settings** > **SSO** > **Step 3**. If you need help, reach out to your Account team.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 10.27.19.png" alt="Self Serve SSO screen, Step 3, sso_id highlighted"><figcaption><p>Self Serve SSO screen, Step 3, sso_id highlighted</p></figcaption></figure>
 

@@ -2,7 +2,7 @@
 
 This section provides templates for custom roles, with their titles and corresponding permissions reflecting the key responsibilities of users throughout the development lifecycle while using Snyk.
 
-These templates are not provided as[ pre-defined roles](../pre-defined-roles.md) in Snyk. For detailed information on how to create and manage custom roles, see [Manage user roles](../user-role-management.md).
+These templates are not provided as pre-defined roles in Snyk. For detailed information on how to create and manage custom roles, see [Manage user roles](../user-role-management.md).
 
 You can use these templates to create your own custom roles that fit into and reflect your business structure.
 

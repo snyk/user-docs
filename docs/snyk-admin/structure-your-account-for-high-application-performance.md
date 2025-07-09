@@ -8,9 +8,9 @@ You can have a large number of users in your Organizations and Groups.
 
 Snyk recommends structuring your Organizations so that there are no more than 2,000 users in each Organization.
 
-If you have **more than 2,000 users in an Organization**, you begin to risk performance issues. When the application must load a large number of users, performance is slowed for the dashboard and the Group members management page.
+If you have more than 2,000 users in an Organization, you begin to risk performance issues. When the application must load a large number of users, performance is slowed for the dashboard and the Group members management page.
 
-If users have a **large number of memberships in a given Group**, all requests--in the Snyk Web UI and through the CLI and the API, are slowed because, on most requests, calculations and queries occur to check access and permissions.
+If users have a large number of memberships in a given Group, all requests--in the Snyk Web UI and through the CLI and the API, are slowed because, on most requests, calculations and queries occur to check access and permissions.
 
 ## Structure of Groups
 
@@ -31,7 +31,7 @@ If you believe your business case requires multiple Groups, consult with your Sn
 
 Using either the Snyk Web UI or the Snyk API, you can create a large number of Organizations in your Group. However, if you have more than 2,000 Organizations in your Group, you begin to risk performance issues.
 
-**When Snyk loads a large number of Organizations, these consequences follow**:
+When Snyk loads a large number of Organizations, these consequences follow:
 
 * Performance is slowed for Group administrators and Group-level notifications.
 * Group-level service account creation may fail.
@@ -42,6 +42,6 @@ You can import a large number of Projects into your Organizations.
 
 Snyk recommends limiting each Organization to **no more than 10,000 Project**s, and does not allow more than 25,000 Projects in each Organization.
 
-If you need more than 10,000 Projects, consider how **a large number of Projects affects the experience with slower performance** for listing Projects, sending notifications, displaying the dashboard, and displaying the Usage page. Also, it is difficult to delete Organizations with a large number of Projects.
+If you need more than 10,000 Projects, consider how a large number of Projects affects the experience with slower performance for listing Projects, sending notifications, displaying the dashboard, and displaying the Usage page. Also, it is difficult to delete Organizations with a large number of Projects.
 
 While there is no limit to the overall number of Projects across all Organizations in a Group, Group-level reporting and displaying dependencies and license issues are slowed when there are several hundred thousand Projects.

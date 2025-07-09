@@ -5,13 +5,12 @@
 If you have several Organizations, one of these Organizations is set by default as your **Preferred Organization** in your Snyk account. A Preferred Organization determines the following:
 
 * On the Snyk Web UI: The Organization that is displayed by default when you log in to your Snyk account.
-* In the Snyk CLI: The Organization that is used by default for the test count when you scan through the CLI.\
-  **Note**: To change the Organization used for the test count in the CLI, use the\
+* In the Snyk CLI: The Organization that is used by default for the test count when you scan through the CLI. To change the Organization used for the test count in the CLI, use the\
   `--org=<ORG_ID>` option. For more information, see the CLI help for the test commands: [Snyk test](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/test.md), [Snyk Code test](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/code-test.md), [Snyk Container test](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/container-test.md), or [Snyk IaC test](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/iac-test.md).
 
 Follow these steps to change your Preferred Organization:
 
-1\. On the Snyk Web UI, click your Account icon at the bottom left corner of the screen. Then select the **Account settings** option:
+1\. On the Snyk Web UI, click your Account icon at the bottom left corner of the screen. Then click **Account settings**:
 
 <figure><img src="../../../.gitbook/assets/account-settings.png" alt=""><figcaption><p>Account settings</p></figcaption></figure>
 

@@ -1,6 +1,4 @@
-# Group and Organization Settings
-
-You can view and modify [Group](group-and-organization-settings.md#group-settings) and [Organization](group-and-organization-settings.md#organization-settings) settings.
+# Group and Organization settings
 
 ## Group settings
 

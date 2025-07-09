@@ -51,7 +51,7 @@ For Enterprise plan customers who create custom roles, Snyk prevents users from 
 Follow these steps to delete a member from the Organization:
 
 1. Click the trash icon next to the user.
-2. Click **Delete member from** _**your organization’s name**_ when prompted.
+2. Click **Delete member from** \[**your Organization’s name]** when prompted.
 
 ## Filter and sort views of Organization members
 

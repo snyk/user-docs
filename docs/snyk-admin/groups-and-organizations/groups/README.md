@@ -27,21 +27,21 @@ If your Group is set up to let its users join Organizations, you also see a list
 For a detailed breakdown of user roles and their associated access permissions, see [User roles](../../user-roles/).
 {% endhint %}
 
-### Group Reports
+### Group reports
 
 Select [**Reports**](../../../manage-issues/reporting/) to view the vulnerability status of the Organizations in your Group in one place as a report:
 
 <div align="left"><figure><img src="../../../.gitbook/assets/Reports.png" alt=""><figcaption><p>Group report filtered to show open issues</p></figcaption></figure></div>
 
-### Group Inventory
+### Group inventory
 
 Select [**Inventory**](../../../manage-assets/#inventory-menu) to view, filter, and manage your assets.&#x20;
 
-### Group Issues
+### Group issues
 
 Select [**Issues**](../../../manage-risk/prioritize-issues-for-fixing/) to better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. **Issues** offer a centralized view of all the issues identified by Snyk with additional asset context.
 
-### Group Dependencies
+### Group dependencies
 
 Select [**Dependencies**](../../../manage-risk/reporting/dependencies-and-licenses/) to view the dependencies and license issues for your Groups:
 
@@ -53,11 +53,11 @@ Select [**Policies**](../../../manage-risk/policies/) to view the license and se
 
 <figure><img src="../../../.gitbook/assets/image (725).png" alt=""><figcaption><p>Policies menu with focus on Assets tab</p></figcaption></figure>
 
-### Group Integrations
+### Group integrations
 
 Select **Integrations** to view and configure the available integrations for both [SCM integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#group-level-snyk-essentials-scm-integrations) and [third-party integrations](../../../integrate-with-snyk/).
 
-### Group Members
+### Group members
 
 Select **Members** to view users in the Group.
 
@@ -75,6 +75,4 @@ Select **Settings** to view and manage Group settings.
 
 <figure><img src="../../../.gitbook/assets/group-settings.png" alt=""><figcaption><p>Listed Group Settings for Enterprise plan users</p></figcaption></figure>
 
-{% hint style="info" %}
 See [Manage settings](../group-and-organization-settings.md) for details.
-{% endhint %}

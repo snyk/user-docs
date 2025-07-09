@@ -12,11 +12,11 @@ When you are satisfied with the settings and integrations for an Organization, y
 
 Follow these steps to create an Organization:
 
-1\. On the Snyk Web UI, open the Organizations dropdown list from the top menu and click the **Create new Organization** option:
+1\. On the Snyk Web UI, open the Organizations dropdown list from the top menu and click **Create new Organization**:
 
 <figure><img src="../../../.gitbook/assets/organization-create-new-org.png" alt=""><figcaption><p>Create an Organization</p></figcaption></figure>
 
-2\. On the page to **create a new Organization**, enter a name for the new Organization. Consider using a structured naming convention to identify your Organizations.
+2\. Enter a name for the new Organization. Consider using a structured naming convention to identify your Organizations.
 
 {% hint style="info" %}
 It is highly recommended to enter a unique name for the new Organization.
@@ -24,7 +24,7 @@ It is highly recommended to enter a unique name for the new Organization.
 
 3\. From the dropdown list, select an Organization from which to copy all settings and integrations.
 
-4\. Select **Create organization**.
+4\. Click **Create organization**.
 
 <figure><img src="../../../.gitbook/assets/organization-add-new-org.png" alt=""><figcaption><p>Create an Organization</p></figcaption></figure>
 
@@ -42,11 +42,11 @@ Follow these steps to delete an Organization:
 
 1\. On the Snyk Web UI, open the Organization dropdown list on the top menu and select the Organization you want to delete.
 
-2\. After the selected Organization appears, click the **Org Settings** button on the  Group menu.
+2\. After the selected Organization appears, click **Org Settings** on the Group menu.
 
 3\. On the **Settings** page, select **Genera**l on the menu.
 
-4\. Scroll down to the **Delete organization** section and click the **Delete organization** button:
+4\. Scroll down to the **Delete organization** section and click **Delete organization**:
 
 <figure><img src="../../../.gitbook/assets/organization-delete-org.png" alt=""><figcaption><p>Delete Organization</p></figcaption></figure>
 

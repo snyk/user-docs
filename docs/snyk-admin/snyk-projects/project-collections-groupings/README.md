@@ -48,6 +48,6 @@ In the Snyk Web UI and [API](../../../snyk-api/reference/collection.md), you can
 
 * Create collections using filters and selecting Projects individually
 * View all of the collections that have been created on a collections listing page
-* Perform bulk actions such as deleting, deactivating, and activating Projects in a collection. **Note:** Performing bulk actions is not exclusive to collections, and can be done on Projects in the Project listing page.
+* Perform bulk actions such as deleting, deactivating, and activating Projects in a collection. Performing bulk actions is not exclusive to collections, and can be done on Projects in the Project listing page.
 
 For details, see the [Project collections](project-collections.md) page.

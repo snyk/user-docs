@@ -28,6 +28,6 @@ Only a valid URL for a Project or status check allows users to request access. U
 
 ## Enable the Request Access setting
 
-In your Organization, navigate to the **Settings** > **General** option and then to the **Requesting Access** section. Select **Enabled** to allow access requests or **Disabled** to stop allowing access requests.
+In your Organization, navigate to **Settings** > **General** > **Requesting Access**. Select **Enabled** to allow access requests or **Disabled** to stop allowing access requests.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2022-09-27 at 09.44.52.png" alt=""><figcaption><p>Request Access setting</p></figcaption></figure>

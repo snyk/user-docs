@@ -907,7 +907,7 @@
       * [Requests for access to an Organization](snyk-admin/groups-and-organizations/organizations/requests-for-access-to-an-organization.md)
       * [Organization general settings](snyk-admin/groups-and-organizations/organizations/organization-general-settings.md)
     * [Switch between Groups and Organizations](snyk-admin/groups-and-organizations/switch-between-groups-and-organizations.md)
-    * [Group and Organization Settings](snyk-admin/groups-and-organizations/group-and-organization-settings.md)
+    * [Group and Organization settings](snyk-admin/groups-and-organizations/group-and-organization-settings.md)
     * [Usage settings](snyk-admin/groups-and-organizations/usage-settings.md)
   * [User roles](snyk-admin/user-roles/README.md)
     * [User role management](snyk-admin/user-roles/user-role-management.md)

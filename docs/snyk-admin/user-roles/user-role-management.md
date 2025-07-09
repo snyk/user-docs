@@ -6,7 +6,7 @@
 Managing user roles is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk **Manage roles** functionality enables you to manage pre-defined and custom roles, allowing you to create and enforce set permissions for roles that reflect the users and functions in your Organization.
+Snyk Manage roles functionality enables you to manage pre-defined and custom roles, allowing you to create and enforce set permissions for roles that reflect the users and functions in your Organization.
 
 Under **Manage roles**, you can:
 
@@ -21,7 +21,7 @@ Under **Manage roles**, you can:
 
 For more information, see [User management with the API](../user-management-with-the-api/).
 
-## Essential information for working with Member roles
+## Essential information for working with member roles
 
 * Permissions granted to users using the **Member roles** functionality enable the same capabilities across all Snyk environments: Web UI, API, CLI, and IDE.
 * The permission **View Organization** is needed by default for all Organization-level member roles.
