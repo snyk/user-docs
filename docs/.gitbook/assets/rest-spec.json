@@ -2228,20 +2228,6 @@
                           "format": "date-time",
                           "type": "string"
                         },
-                        "date_range": {
-                          "deprecated": true,
-                          "properties": {
-                            "end": {
-                              "format": "date-time",
-                              "type": "string"
-                            },
-                            "start": {
-                              "format": "date-time",
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        },
                         "finished": {
                           "format": "date-time",
                           "type": "string"
@@ -19064,62 +19050,6 @@
       }
     },
     "/groups/{group_id}/export/{export_id}": {
-      "delete": {
-        "description": "Delete export results\n\n#### Required permissions\n\n- `View reports (group.report.read)`",
-        "operationId": "deleteGroupExport",
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "$ref": "#/components/parameters/groupId"
-          },
-          {
-            "$ref": "#/components/parameters/exportId"
-          }
-        ],
-        "responses": {
-          "204": {
-            "$ref": "#/components/responses/204"
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "409": {
-            "$ref": "#/components/responses/409"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "security": [
-          {
-            "TokenAuth": []
-          }
-        ],
-        "summary": "Delete an export",
-        "tags": [
-          "Export"
-        ],
-        "x-internal": true,
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "export",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
-      },
       "get": {
         "description": "Get an export results\n\n#### Required permissions\n\n- `View reports (group.report.read)`",
         "operationId": "getGroupExport",
@@ -30517,62 +30447,6 @@
       }
     },
     "/orgs/{org_id}/export/{export_id}": {
-      "delete": {
-        "description": "Delete export results\n\n#### Required permissions\n\n- `View Organization reports (org.report.read)`",
-        "operationId": "deleteOrgExport",
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "$ref": "#/components/parameters/orgId"
-          },
-          {
-            "$ref": "#/components/parameters/exportId"
-          }
-        ],
-        "responses": {
-          "204": {
-            "$ref": "#/components/responses/204"
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "409": {
-            "$ref": "#/components/responses/409"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "security": [
-          {
-            "TokenAuth": []
-          }
-        ],
-        "summary": "Delete an export",
-        "tags": [
-          "Export"
-        ],
-        "x-internal": true,
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "export",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
-      },
       "get": {
         "description": "Get an export results\n\n#### Required permissions\n\n- `View Organization reports (org.report.read)`",
         "operationId": "getExport",
