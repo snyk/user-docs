@@ -1,6 +1,6 @@
 # Backstage file in Asset Inventory - use case
 
-After you finish configuring the [Backstage catalog](./#backstage-file-for-scm-integrations), Snyk Essentials starts enriching your repository assets (the [All Assets](../../../manage-assets/#inventory-overview) tab from the Inventory layout) with the data found in the backstage `catalog-info.yaml` file.
+After you finish configuring the [Backstage catalog](./#backstage-file-for-scm-integrations), Snyk Essentials starts enriching your repository assets (the [All Assets](../../../manage-assets/#inventory-menu) tab from the Inventory layout) with the data found in the backstage `catalog-info.yaml` file.
 
 Use the Backstage catalog to enrich the repository assets and to define the component entity. For this type of situation, a component is defined as a software component, like a service, repository, website, library, and so on.&#x20;
 

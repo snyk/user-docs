@@ -20,7 +20,7 @@ The following items are planned to be delivered in the months following the Earl
 
 Snyk Code Consistent Ignores does not support ignores for Projects associated with CLI Upload.&#x20;
 
-If you activate a Snyk Organization with Snyk Code CLI Upload Projects, ignores for any subsequent scans using `snyk code test --report` will not be taken into account. All resulting Projects and associated issues will show as open. Additionally, any pre-existing [Project-scoped ignores will not be converted to asset-scoped ignores](./#convert-project-scoped-ignores-to-asset-scoped-ignores).&#x20;
+If you activate a Snyk Organization with Snyk Code CLI Upload Projects, ignores for any subsequent scans using `snyk code test --report` will not be taken into account. All resulting Projects and associated issues will show as open. Additionally, any pre-existing Project-scoped ignores will not be converted to asset-scoped ignores.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/Ignored-issue-using-legacy-system.png" alt=""><figcaption><p>Snyk Code Consistent Ignores limitation in CLI upload</p></figcaption></figure>
 

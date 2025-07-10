@@ -138,7 +138,7 @@ The migration process includes the following steps:
 
 1. [Deleting the existing Projects](bitbucket-cloud.md#delete-existing-projects) that are connected to the Bitbucket Cloud PAT integration in Snyk.
 2. [Disconnecting the PAT integration](bitbucket-cloud.md#disconnect-the-pat-integration) in Snyk.
-3. [Removing the first-party extension](bitbucket-cloud.md#remove-the-snyk-tab-for-the-pat-integration-in-bitbucket-cloud-optional) for the PAT integration in Bitbucket (optional).
+3. Removing the first-party extension for the PAT integration in Bitbucket (optional). This step is explained in the [Disconnect the PAT integration](bitbucket-cloud.md#disconnect-the-pat-integration) section.
 4. [Connecting the Bitbucket Cloud App](bitbucket-cloud.md#set-up-the-bitbucket-cloud-app-integration) and importing Projects.
 
 #### Delete existing Projects
