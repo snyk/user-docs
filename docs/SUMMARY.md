@@ -1065,6 +1065,7 @@
     * [Claiming CPE Credits with Snyk Learn](snyk-learn/your-learning/claiming-cpe-credits-with-snyk-learn.md)
   * [Snyk Learn reports](snyk-learn/snyk-learn-reports.md)
   * [Snyk Learn assignments](snyk-learn/snyk-learn-assignments.md)
+  * [Snyk Assist](snyk-learn/snyk-assist.md)
   * [Snyk Learn access controls](snyk-learn/snyk-learn-access-controls.md)
   * [Snyk Learn API](snyk-learn/snyk-learn-api.md)
 * [Working with Snyk](working-with-snyk/README.md)
