@@ -5,9 +5,8 @@ This document uses the v1 API, which will eventually be deprecated, as further S
 {% endhint %}
 
 {% hint style="warning" %}
-The endpoints in this category support only Snyk legacy reporting, not the latest release. They are not available in regions such as single-tenant or multi-tenant US02, EU, and AU; instead use the [Issues REST API](issues.md).
+The endpoints in this category support only Snyk legacy reporting, not the latest release. They are not available in regions such as single-tenant or multi-tenant US02, EU, and AU; instead use the [Issues REST API](https://docs.snyk.io/snyk-api/reference/issues).
 {% endhint %}
-
 Using the Reporting API, you can find answers to questions like how many issues your Organization has, or how many tests have been conducted in a given time period.
 
 The rate limit is up to **70 requests per minute, per user**. All requests above the limit will get a response with the status code `429 - Too many requests` until requests stop for the duration of the rate-limiting interval (one minute).
