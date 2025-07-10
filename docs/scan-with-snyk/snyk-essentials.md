@@ -92,7 +92,7 @@ Snyk Code does not automatically pick up the `git remoteurl`, even if the `.git`
 2. If you do not have a `.git` folder available in the directory that the CLI is scanning, you can use different test or monitor commands to achieve the same result:
    * [`snyk monitor`](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/monitor.md#remote-repo-url-less-than-url-greater-than), for Snyk Open Source
    * [`snyk iac test`](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/iac-test.md#remote-repo-url-less-than-url-greater-than) - also requires the `--report` command
-   * `snyk container monitor` - momentarily, no options are available.
-   * `snyk code test` - momentarily, no options are available.
+   * `snyk container monitor` - no options available.
+   * `snyk code test` - no options available.
 
 To see the complete list of Snyk Essentials features and capabilities, see [Snyk AppRisk - Capabilities and features](snyk-apprisk.md#capabilities-and-features).
