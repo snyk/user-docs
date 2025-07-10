@@ -335,12 +335,6 @@ Teams can filter by date and Organization.
 
 ## Repositories tested in CI/CD report
 
-{% hint style="info" %}
-**Release status**
-
-The Repositories tested in CI/CD report feature is in Early Access and available only with Enterprise plans.&#x20;
-{% endhint %}
-
 To use this report, consider the following prerequisites:
 
 * Snyk CLI version 1.1292.1 or newer.
@@ -369,7 +363,7 @@ A sequential period refers to a date range covering the last seven days. In this
 
 #### Repository Test Adoption <a href="#repository-test-adoption" id="repository-test-adoption"></a>
 
-Review the Repository Test Adoption trend to learn more about the adoption over time.\
+Review the Repository Test Adoption trend to learn more about ‌adoption over time.\
 Represented by the green line, you can see the weekly number of repositories that have been tested compared to the repositories that had commits in the last 30 days, represented by the purple line.&#x20;
 
 This comparison helps determine whether Snyk tests in CI/CD are being increasingly adopted over time and highlights the number of repositories that have received commits but have not been tested in CI/CD.
