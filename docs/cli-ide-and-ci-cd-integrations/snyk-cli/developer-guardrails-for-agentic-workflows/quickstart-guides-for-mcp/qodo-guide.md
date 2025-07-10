@@ -4,11 +4,11 @@ Follow these steps to set up Qodo for use with the Snyk MCP server.
 
 1. Select the Agentic option for interacting with Qodo.
 
-<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-24 at 09.56.26.png" alt="" width="375"><figcaption><p>Select Agentic</p></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-24 at 09.56.26.png" alt="" width="375"><figcaption><p>Select Agentic</p></figcaption></figure></div>
 
 2. Click **Connect more tools**.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-24 at 09.56.52.png" alt="" width="374"><figcaption><p>Connect more tools</p></figcaption></figure>
+<div data-full-width="false"><figure><img src="../../../../.gitbook/assets/Screenshot 2025-04-24 at 09.56.52.png" alt="" width="374"><figcaption><p>Connect more tools</p></figcaption></figure></div>
 
 3. Click the **+** button to add a new MCP server.
 
