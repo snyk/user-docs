@@ -10002,6 +10002,14 @@ paths:
           schema:
             type: string
             example: 9695cbb1-3a87-4d6f-8ae1-61a1c37ee9f7
+        - name: prune-dep-graph
+          in: query
+          description: Will prune large dep-graphs by removing identical sub-graphs under a top level dependency. If you receive a 422 error, it's likely that your dep-graph is too large to monitor. Pruning can help reduce the number of repetative paths but still retain at least one fully resolved path to ensure vulnerablities are not missed.
+          style: form
+          explode: true
+          schema:
+            type: boolean
+            example: true
       requestBody:
         description: ''
         content:
