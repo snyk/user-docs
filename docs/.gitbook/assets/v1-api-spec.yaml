@@ -11198,6 +11198,8 @@ paths:
 
         - `Create Outbound Webhooks`
       operationId: Createawebhook
+      security:
+        - APIToken: []
       parameters:
         - name: orgId
           in: path
