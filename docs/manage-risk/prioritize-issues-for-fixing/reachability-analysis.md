@@ -45,16 +45,16 @@ Reachability analysis is supported for the following languages and package manag
 
 Reachability analysis is supported in the following integrations:
 
-| Integration                                                                                                                                                                                             | Release status       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| [GitHub](../../scm-integrations/snyk-scm-integrations/github.md)                                                                                                                                        | General Availability |
-| [GitHub Enterprise](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/scripts-for-scm-contributors-count/github-enterprise/) | General Availability |
-| [GitHub Cloud App](../../scm-integrations/snyk-scm-integrations/github-cloud-app.md)                                                                                                                    | General Availability |
-| [Bitbucket Cloud](../../scm-integrations/snyk-scm-integrations/bitbucket-cloud-app.md)                                                                                                                  | General Availability |
-| [Bitbucket Server](../../scm-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)                                                                                                        | General Availability |
-| [GitLab](../../scm-integrations/snyk-scm-integrations/gitlab.md)                                                                                                                                        | General Availability |
-| [Azure Repos](../../scm-integrations/snyk-scm-integrations/azure-repositories-tfs.md)                                                                                                                   | General Availability |
-| [Brokered connections](../../enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md)                                                                              | General Availability |
+| Integration                                                                                                                | Release status       |
+| -------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| [GitHub](../../scm-integrations/snyk-scm-integrations/github.md)                                                           | General Availability |
+| [GitHub Enterprise](../../scm-integrations/snyk-scm-integrations/github-enterprise.md)                                     | General Availability |
+| [GitHub Cloud App](../../scm-integrations/snyk-scm-integrations/github-cloud-app.md)                                       | General Availability |
+| [Bitbucket Cloud](../../scm-integrations/snyk-scm-integrations/bitbucket-cloud-app.md)                                     | General Availability |
+| [Bitbucket Server](../../scm-integrations/snyk-scm-integrations/bitbucket-data-center-server.md)                           | General Availability |
+| [GitLab](../../scm-integrations/snyk-scm-integrations/gitlab.md)                                                           | General Availability |
+| [Azure Repos](../../scm-integrations/snyk-scm-integrations/azure-repositories-tfs.md)                                      | General Availability |
+| [Brokered connections](../../enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md) | General Availability |
 
 {% hint style="info" %}
 Reachability analysis using the Snyk CLI, IDE, or other integrations is not supported.
