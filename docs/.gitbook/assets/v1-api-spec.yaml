@@ -11251,6 +11251,8 @@ paths:
 
         - `View Outbound Webhooks`
       operationId: Listwebhooks
+      security:
+        - APIToken: []
       parameters:
         - name: orgId
           in: path
@@ -11295,6 +11297,8 @@ paths:
 
         - `View Outbound Webhooks`
       operationId: Retrieveawebhook
+      security:
+        - APIToken: []
       parameters:
         - name: orgId
           in: path
@@ -11342,6 +11346,8 @@ paths:
 
         - `Remove Outbound Webhooks`
       operationId: Deleteawebhook
+      security:
+        - APIToken: []
       parameters:
         - name: orgId
           in: path
@@ -11380,6 +11386,8 @@ paths:
 
         - `View Outbound Webhooks`
       operationId: Pingawebhook
+      security:
+        - APIToken: []
       parameters:
         - name: orgId
           in: path
