@@ -10998,9 +10998,18 @@
             "maxLength": 2000,
             "type": "string"
           },
+          "duration": {
+            "description": "Duration of the learning program in weeks",
+            "type": "integer"
+          },
           "name": {
             "description": "Name of the learning program",
             "maxLength": 255,
+            "type": "string"
+          },
+          "start_date": {
+            "description": "Start date for the learning program",
+            "format": "date",
             "type": "string"
           },
           "status": {
