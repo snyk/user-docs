@@ -1,6 +1,6 @@
 # Snyk Language Server
 
-Snyk offers IDE integrations that allow you to use the functionality of Snyk in your Integrated Development Environment or Editor. This page describes the Snyk Language Server that can provide diagnostics for any IDE or Editor that supports the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/). For information about all of the IDE plugins and extensions and their use, see [Snyk IDE plugins and extensions](../).
+Snyk offers IDE integrations that allow you to use the functionality of Snyk in your Integrated Development Environment or Editor. This page describes the Snyk Language Server that can provide diagnostics for any IDE or Editor that supports the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/). For information about all of the IDE plugins and extensions and their use, see [Snyk IDE plugins and extensions](../../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/).
 
 The Snyk Language Server scans for vulnerabilities, open-source license issues, and infrastructure misconfigurations and returns results with security issues categorized by issue type and severity.
 
@@ -168,13 +168,9 @@ An initial set of trusted folders can be provided by setting `trustedFolders` to
 
 ## Telemetry
 
-Snyk collects telemetry from IDE plugins and CLI. For details, see [IDE and CLI usage telemetry](ide-and-cli-usage-telemetry.md).
+Snyk collects telemetry from IDE plugins and CLI. For details, see [IDE and CLI usage telemetry](../../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/ide-and-cli-usage-telemetry.md).
 
 ## Support policy for Snyk Language Server
-
-{% hint style="info" %}
-This policy will be effective beginning on June 24, 2025.
-{% endhint %}
 
 Snyk supports the latest 12 months of LS versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or troubleshooting.
 

@@ -13,7 +13,7 @@ Support for use of FIPS-validated cryptography is limited to the Windows and Lin
 
 ## FIPS-validated cryptography support and use in the Snyk CLI and Snyk Language Server
 
-To optimize the developer experience, Snyk is combining the [Snyk Language Server](../../snyk-ide-plugins-and-extensions/snyk-language-server/) and the [Snyk CLI](../getting-started-with-the-snyk-cli.md). As a first step, Snyk is bringing FIPS binaries under one application. Later also non-FIPS CLI binaries will be used for Snyk Language Server.
+To optimize the developer experience, Snyk is combining the [Snyk Language Server](../../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/) and the [Snyk CLI](../getting-started-with-the-snyk-cli.md). As a first step, Snyk is bringing FIPS binaries under one application. Later also non-FIPS CLI binaries will be used for Snyk Language Server.
 
 The Snyk Language Server can now be executed as a CLI command.
 
@@ -115,7 +115,7 @@ To make use of FIPS-validated cryptography in the [Snyk Visual Studio integratio
 
 ## FIPS-validated cryptography support and use in CI/CD Integrations
 
-FIPS in [CI/CD Integrations](../../snyk-ci-cd-integrations/) is available only by using a FIPS-enabled CLI directly.
+FIPS in [CI/CD Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) is available only by using a FIPS-enabled CLI directly.
 
 ## FIPS-validated cryptography support and use in Package Repositories
 

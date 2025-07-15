@@ -80,10 +80,10 @@ A preview version is not recommended for production environments. It may contain
   * Alpine arm64: [https://downloads.snyk.io/cli/stable/snyk-alpine-arm64](https://downloads.snyk.io/cli/stable/snyk-alpine-arm64)
   * For fips, add `fips` to the base URL, for example, `https://downloads.snyk.io/fips/cli/stable/snyk-linux`&#x20;
 * Installation methods:
-  * [npm](install-or-update-the-snyk-cli/#install-the-snyk-cli-with-npm-or-yarn)
-  * [Homebrew](install-or-update-the-snyk-cli/#install-with-homebrew-macos-linux)
-  * [Scoop](install-or-update-the-snyk-cli/#install-with-scoop-windows)
-  * [Snyk-images](install-or-update-the-snyk-cli/#snyk-cli-in-a-docker-image)
+  * [npm](../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/#install-the-snyk-cli-with-npm-or-yarn)
+  * [Homebrew](../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/#install-with-homebrew-macos-linux)
+  * [Scoop](../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/#install-with-scoop-windows)
+  * [Snyk-images](../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/#snyk-cli-in-a-docker-image)
 
 Snyk recommends opting in to a stable channel for the following reasons:
 
@@ -97,10 +97,6 @@ Existing Snyk customers who are opted in to the previously known latest channel 
 {% endhint %}
 
 ## Support policy
-
-{% hint style="info" %}
-This policy will be effective beginning on June 24, 2025.
-{% endhint %}
 
 Snyk supports the latest 12 months of CLI versions in the stable channel, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or support for troubleshooting.
 
@@ -153,4 +149,4 @@ To select a channel from the IDE, choose a CLI release channel using the dropdow
 
 However, Snyk also recommends the **stable** channel as the default for IDE users.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-09-02 at 10.32.41.png" alt="Choose a CLI release channel"><figcaption><p>Choose a CLI release channel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-09-02 at 10.32.41.png" alt="Choose a CLI release channel"><figcaption><p>Choose a CLI release channel</p></figcaption></figure>

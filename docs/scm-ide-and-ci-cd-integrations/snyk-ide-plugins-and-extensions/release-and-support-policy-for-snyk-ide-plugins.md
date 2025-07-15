@@ -26,10 +26,6 @@ Examples of **breaking** changes include the following:
 
 ## Support policy
 
-{% hint style="info" %}
-This policy will be effective beginning on June 24, 2025.
-{% endhint %}
-
 Snyk supports the latest 12 months of plugin versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or troubleshooting.
 
 Snyk provides fixes only in new versions and cannot fix older versions. Customers must upgrade to benefit from improvements.

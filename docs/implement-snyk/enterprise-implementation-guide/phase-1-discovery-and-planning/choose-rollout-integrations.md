@@ -53,7 +53,7 @@ The advantages of CI/CD integrations are:
 * Full control over testing: which tests to run and where in the build script
 * Automation by CI/CD if desired
 
-See [Snyk CI/CD integrations](../../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) for more details.
+See [Snyk CI/CD integrations](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) for more details.
 
 ### IDE Integrations
 

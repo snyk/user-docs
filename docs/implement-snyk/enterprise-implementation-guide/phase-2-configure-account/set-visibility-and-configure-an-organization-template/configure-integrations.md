@@ -74,7 +74,7 @@ The CLI offers
 * Support for private packages without the need to configure an additional integration, given that your build environment will have access to your private packages.
 * Visibility to components that are pushed to production by either breaking builds and reporting to Snyk or only by reporting to Snyk.
 
-There are a number of [CI/CD integrations](../../../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) that you can use, or you can use the [Snyk CLI](../../../../cli-ide-and-ci-cd-integrations/snyk-cli/) as part of your pipeline to have more flexibility in the tests you are running.
+There are a number of [CI/CD integrations](../../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) that you can use, or you can use the [Snyk CLI](../../../../cli-ide-and-ci-cd-integrations/snyk-cli/) as part of your pipeline to have more flexibility in the tests you are running.
 
 In the initial phase, Snyk recommends using the `monitor` feature to import information into Snyk so you can see any discovered issues, unless you are already importing your repos using a source control integration to achieve this. Later, when you want to start gating and blocking new vulnerabilities from being added, you can introduce `test` features, initially failing builds on critical issues, and then gradually adapting the fail criteria over time.
 

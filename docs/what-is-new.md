@@ -115,7 +115,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk CLI, CI/CD, IDE**
 
 * [Advanced use of Snyk Container CLI](cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/advanced-use-of-snyk-container-cli.md) now includes support for scanning Kaniko image archives.
-* The [support policy for the CI/CD plugins](cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/#support-policy) was updated to align with the CLI support policy.
+* The [support policy for the CI/CD plugins](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/#support-policy) was updated to align with the CLI support policy.
 * The Net new issues feature was added to the IDE documentation for [Eclipse](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects.md#net-new-issues-versus-all-issues), [JetBrains](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/run-an-analysis-with-the-jetbrains-plugin.md#net-new-issues-versus-all-issues), [Visual Studio](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/view-analysis-results-from-visual-studio-extension.md#net-new-issues-versus-all-issues), and [Visual Studio Code](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension/#net-new-issues-versus-all-issues), and [troubleshooting information](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/net-new-issues-delta-scan-troubleshooting.md) was added.
 
 ### **Snyk Code**

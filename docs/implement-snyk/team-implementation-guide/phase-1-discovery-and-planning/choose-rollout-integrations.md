@@ -55,7 +55,7 @@ Advantages:
 * Full control over testing (which tests to run, where in the build script)
 * Can automate using CI/CD
 
-For more details, see [Snyk CI/CD integrations](../../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/).
+For more details, see [Snyk CI/CD integrations](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/).
 
 ### Integrated Development Environment (IDE) integrations
 
