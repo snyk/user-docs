@@ -46,7 +46,7 @@ Configure the Organization-level integration by following these steps:
 * Navigate to the Organization-level
 * Open **Integrations**
 * Search and select the Azure DevOps integration
-* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Azure DevOps integration settings](../../../../scm-integrations/snyk-scm-integrations/azure-repositories-tfs.md#integrate-using-the-snyk-web-ui) page.
+* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Azure DevOps integration settings](../../../../scm-integrations/organization-level-integrations/azure-repositories-tfs.md#integrate-using-the-snyk-web-ui) page.
 
 <figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 

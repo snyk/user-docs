@@ -338,7 +338,7 @@ Teams can filter by date and Organization.
 To use this report, consider the following prerequisites:
 
 * Snyk CLI version 1.1292.1 or newer.
-* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).&#x20;
+* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../scm-integrations/organization-level-integrations/).&#x20;
 * When testing containers, include the `.git` context as part of the `snyk container test` command.
 
 This report analyzes Snyk tests performed as part of CI/CD pipelines executed using Snyk CLI. It will inform you about the usage of your company and adoption of testing in CI/CD, ensuring repositories are tested as expected and preventing critical vulnerabilities and misconfigurations from being deployed and reaching the production environment.
@@ -369,7 +369,7 @@ Represented by the green line, you can see the weekly number of repositories tha
 This comparison helps determine whether Snyk tests in CI/CD are being increasingly adopted over time and highlights the number of repositories that have received commits but have not been tested in CI/CD.
 
 {% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) page.&#x20;
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-integrations/organization-level-integrations/) page.&#x20;
 {% endhint %}
 
 You can filter by specific products or by specific organizations or extend the viewed period using the date range filter.

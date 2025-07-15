@@ -36,7 +36,7 @@ A fine-grained PAT requires additional repository access scopes:
 
 The `Administration: Read-only` permission on the PAT is crucial for Snyk to identify and list the user's accessible GitHub organizations, a prerequisite for importing a new Project.
 
-Snyk uses PRs to tell [GitHub Enterprise](snyk-scm-integrations/github-enterprise.md) that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
+Snyk uses PRs to tell [GitHub Enterprise](organization-level-integrations/github-enterprise.md) that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
 
 Snyk uses SCM webhooks to:
 
@@ -45,7 +45,7 @@ Snyk uses SCM webhooks to:
 
 ### GitHub Cloud App permission requirements
 
-The [Snyk GitHub Cloud App](snyk-scm-integrations/github-cloud-app.md) integration uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
+The [Snyk GitHub Cloud App](organization-level-integrations/github-cloud-app.md) integration uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
 
 To set up the GitHub Cloud app integration you must be a:
 
@@ -81,7 +81,7 @@ You must have a self-hosted instance of GitHub.
 
 ### GitLab permission requirements
 
-The [Snyk GitLab integration](snyk-scm-integrations/gitlab.md#gitlab-access-tokens) uses either a personal access token (PAT) or group access token (GAT), depending on the GitLab account tier you are on.
+The [Snyk GitLab integration](organization-level-integrations/gitlab.md#gitlab-access-tokens) uses either a personal access token (PAT) or group access token (GAT), depending on the GitLab account tier you are on.
 
 To set up the Snyk GitLab integration you must be a:
 
@@ -96,9 +96,9 @@ A GAT is used for managing multiple GitLab projects in a GitLab group and requir
 
 The Snyk Bitbucket integrations use different access control mechanisms to connect with Snyk:
 
-* [Snyk Bitbucket Cloud](user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires the creation of an [app password](snyk-scm-integrations/bitbucket-cloud.md#how-to-set-up-the-bitbucket-cloud-integration).
-* [Snyk Bitbucket Cloud App](user-permissions-and-access-scopes.md#bitbucket-cloud-app-scopes) requires [Bitbucket workspace authorization](snyk-scm-integrations/bitbucket-cloud-app.md#setting-up-a-bitbucket-cloud-app) and related permissions.
-* [Snyk Bitbucket Data Center/Server](user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires a [dedicated username and password](snyk-scm-integrations/bitbucket-data-center-server.md#how-to-set-up-a-bitbucket-dc-server-integration) or a personal access token (PAT).
+* [Snyk Bitbucket Cloud](user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires the creation of an [app password](organization-level-integrations/bitbucket-cloud.md#how-to-set-up-the-bitbucket-cloud-integration).
+* [Snyk Bitbucket Cloud App](user-permissions-and-access-scopes.md#bitbucket-cloud-app-scopes) requires [Bitbucket workspace authorization](organization-level-integrations/bitbucket-cloud-app.md#setting-up-a-bitbucket-cloud-app) and related permissions.
+* [Snyk Bitbucket Data Center/Server](user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires a [dedicated username and password](organization-level-integrations/bitbucket-data-center-server.md#how-to-set-up-a-bitbucket-dc-server-integration) or a personal access token (PAT).
 
 {% hint style="warning" %}
 To set up any Snyk Bitbucket integration, you must be a Bitbucket Workspace Admin.
@@ -135,7 +135,7 @@ The following table details the permissions required for the **Bitbucket Cloud A
 
 ### Azure Repositories (TFS) permission requirements
 
-The [Snyk Azure Repositories (TFS) integration](snyk-scm-integrations/azure-repositories-tfs.md) uses an Azure DevOps personal access token (PAT). This token is configured with the specific permissions Snyk needs to access your Azure repositories.
+The [Snyk Azure Repositories (TFS) integration](organization-level-integrations/azure-repositories-tfs.md) uses an Azure DevOps personal access token (PAT). This token is configured with the specific permissions Snyk needs to access your Azure repositories.
 
 To set up the Snyk Azure Repositories (TFS) integration you must be:
 

@@ -43,7 +43,7 @@ Configure the Organization-level integration by following these steps:
 * Navigate to the Organization-level
 * Open **Integrations**
 * Search and select the GitLab integration
-* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [GitLab integration settings](../../../../scm-integrations/snyk-scm-integrations/gitlab.md) page.
+* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [GitLab integration settings](../../../../scm-integrations/organization-level-integrations/gitlab.md) page.
 
 <figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
