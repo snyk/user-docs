@@ -27,11 +27,11 @@ Start building your asset inventory by setting up the necessary integrations.
 The scanned information is automatically imported within two hours after enabling all features.  Note that for large onboardings, it is suggested to wait up to 24hours for all information to be processed.
 {% endhint %}
 
-Access and configure the integrations from the **Integrations** view. Select the **Add integration** option to see the list of all available integrations. See the [Adding an integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#adding-an-integration).
+Access and configure the integrations from the **Integrations** view. Select the **Add integration** option to see the list of all available integrations. See the [Adding an integration](../../../scm-integrations/organization-level-integrations/#adding-an-integration).
 
 The default display in the **Integrations** view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/#adding-an-integration).
+You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-integrations/organization-level-integrations/#adding-an-integration).
 
 <figure><img src="../../../.gitbook/assets/integration-add-integration.png" alt="Snyk Essentials - The list of available integrations"><figcaption><p>Snyk Essentials - The list of available integrations</p></figcaption></figure>
 

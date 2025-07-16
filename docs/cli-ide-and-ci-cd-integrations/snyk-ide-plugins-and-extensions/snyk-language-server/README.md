@@ -29,38 +29,30 @@ You can use the Language Server in the following environments:
 * Windows: 386, AMD64, ARM through 386 compatibility
 * MacOS: AMD64 and ARM64
 
-## Where you can download the Language Server
+## Where you can download the Language Server (Snyk CLI)
 
-Snyk Language Server is automatically downloaded only when you use the Visual Studio Code (VS Code) and Eclipse plugins. Language Server can also be downloaded manually; the following shell script shows how to do that.
+Snyk Language Server is nowadays included in the Snyk CLI. The CLI is automatically downloaded only when you use the Snyk IDE plugins.&#x20;
 
-{% code title="getLanguageServer.sh" lineNumbers="true" %}
-```bash
-#!/bin/bash
-# This file allows you to download the latest language server, which is helpful for integration into non-managed Editors and IDEs.
-# This might be any editor that does not have a downloader built by Snyk and thus needs to download
-# and update the language server regularly, and this script allows this for system administrators and users.
-# Snyk recommends always using the latest version of the language server.
+Please refer to [snyk-cli](../../snyk-cli/ "mention") for installation and manual download instructions.
 
-set -e
-OS=$(uname -s | tr '[:upper:]' '[:lower:]')
-ARCH=$(uname -m | tr '[:upper:]' '[:lower:]')
-if [[ $ARCH == "x86_64" ]]; then
-  ARCH="amd64"
-fi
-if [[ $ARCH == "aarch64" ]]; then
-  ARCH="arm64"
-fi
-PROTOCOL_VERSION=3
-VERSION=$(curl https://static.snyk.io/snyk-ls/$PROTOCOL_VERSION/metadata.json | jq .version | sed -e s/\"//g)
-wget -O /usr/local/bin/snyk-ls "https://static.snyk.io/snyk-ls/$PROTOCOL_VERSION/snyk-ls_${VERSION}_${OS}_${ARCH}"
+## Usage of Snyk Language Server
+
+### Starting the Snyk CLI in language server mode
+
 ```
-{% endcode %}
+// we assume the CLI is in the system path and named `snyk`
+snyk language-server <flags>
 
-The PROTOCOL\_VERSION is 3, but may increase with ongoing development.
+// debug logging
+snyk language-server -d
 
-## Configuration of Snyk Language Server
+// trace logging
+SNYK_LOG_LEVEL=trace snyk language-server
+```
 
 ### Snyk LSP command line flags
+
+`-d`  output debug level logs
 
 `-c <FILE>` allows specifying a config file to load before all others.
 
@@ -86,13 +78,10 @@ As part of the [Initialize message](https://microsoft.github.io/language-server-
   "additionalParams": "--all-projects", // Any extra params for the Snyk CLI, separated by spaces
   "additionalEnv":  "MAVEN_OPTS=-Djava.awt.headless=true;FOO=BAR", // Additional environment variables, separated by semicolons
   "path": "/usr/local/bin", // Adds to the system path used by the CLI
-  "sendErrorReports":  "true", // Whether or not to report errors to Snyk - defaults to true
   "organization": "a string", // The name of your organization, e.g. the output of: curl -H "Authorization: token $(snyk config get api)"  https://api.snyk.io/v1/cli-config/settings/sast | jq .org
-  "enableTelemetry":  "true", // Whether or not user analytics can be tracked
-  "manageBinariesAutomatically": "true", // Whether or not CLI/LS binaries will be downloaded & updated automatically
-  "cliPath":  "/a/patch/snyk-cli", // The path where the CLI can be found, or where it should be downloaded to
   "token":  "secret-token", // The Snyk token, e.g.: snyk config get api
   "automaticAuthentication": "true", // Whether or not LS will automatically authenticate on scan start (default: true)
+  "authenticationMethod": "oauth", // the authentication method (token, oauth, pat)
   "enableTrustedFoldersFeature": "true", // Whether or not LS will prompt to trust a folder (default: true)
   "trustedFolders": ["/a/trusted/path", "/another/trusted/path"], // An array of folder that should be trusted
 }
@@ -102,7 +91,7 @@ For all .NET Projects, Snyk recommends adding the `--all-projects` additional pa
 
 ## **Authentication for Snyk Language Server**
 
-When Snyk Language Server starts, it checks for a token in the initializationOption `token`. If a token is not there, Snyk Language Server tries to retrieve and authenticate using the Snyk CLI. If the CLI is not authenticated either, Snyk Language Server opens a browser window to authenticate. After successful authentication in the web browser, Snyk Language Server automatically retrieves the Snyk authentication token from the CLI.
+When Snyk Language Server starts, it checks for a token in the initializationOption `token`. If a token is not there, Snyk Language Server tries to retrieve and authenticate.. If the CLI is not authenticated either, Snyk Language Server opens a browser window to authenticate. After successful authentication in the web browser, Snyk Language Server, in case of OAuth2 or API token authentication methods, automatically retrieves the Snyk authentication token from the CLI, but only for the session.
 
 ## **Environment variables for Snyk Language Server**
 
@@ -111,6 +100,7 @@ Snyk Language Server and Snyk CLI support and need certain environment variables
 1. `HTTP_PROXY`, `HTTPS_PROXY` and `NO_PROXY` to define the http proxy to be used
 2. `JAVA_HOME` to analyze Java JVM-based projects via Snyk CLI
 3. `PATH` to find `maven` when analyzing Maven projects, to find `python` and so on
+4. `SNYK_LOG_LEVEL`  force a log-level (trace, debug, info, warn, error), default is info level
 
 ## **Auto-configuration of environment variables for Snyk Language Server**
 
@@ -150,10 +140,6 @@ If no JAVA\_HOME is set, Snyk Language Server automatically searches for a java 
 
 The same directories are searched for a Maven executable, and the parent directory is added to the path.
 
-## **Snyk CLI**
-
-To find the automatically managed Snyk CLI, the [XDG Data Home](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables) and `PATH` path are automatically scanned for the OS-dependent file, for example, `snyk-macos` on macOS, `snyk-linux` on Linux and `snyk-win.exe` on Windows, and the first path where it is found is added to the environment. It is later used for all functionality that depends on the CLI. The path to the CLI can also be set manually using the `cliPath` initialization option.
-
 ## Folder trust
 
 As part of examining the codebase for vulnerabilities, Snyk may automatically execute code on your computer to obtain additional data for analysis. This includes invoking the package manager (for example, pip, Gradle, Maven, Yarn, npm, and so on) to get dependency information for Snyk Open Source. Invoking these programs on untrusted code that has malicious configurations may expose your system to malicious code execution and exploits.
@@ -171,10 +157,6 @@ An initial set of trusted folders can be provided by setting `trustedFolders` to
 Snyk collects telemetry from IDE plugins and CLI. For details, see [IDE and CLI usage telemetry](ide-and-cli-usage-telemetry.md).
 
 ## Support policy for Snyk Language Server
-
-{% hint style="info" %}
-This policy will be effective beginning on June 24, 2025.
-{% endhint %}
 
 Snyk supports the latest 12 months of LS versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or troubleshooting.
 

@@ -15,7 +15,7 @@ Stay up to date with the [latest updates in the Snyk user documentation](what-is
 
 ## Integrate with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
-<table data-header-hidden><thead><tr><th width="247"></th><th width="252"></th><th width="177"></th></tr></thead><tbody><tr><td><a href="scm-ide-and-ci-cd-integrations/snyk-scm-integrations/">Git repositories</a><br>Connect code repos to Snyk</td><td><a href="cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/">IDEs</a><br>Use Snyk in your dev environment</td><td><a href="cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/">CI/CD</a><br>Add Snyk to your CI/CD pipeline</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="247"></th><th width="252"></th><th width="177"></th></tr></thead><tbody><tr><td><a href="scm-integrations/organization-level-integrations/">Git repositories</a><br>Connect code repos to Snyk</td><td><a href="cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/">IDEs</a><br>Use Snyk in your dev environment</td><td><a href="scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/">CI/CD</a><br>Add Snyk to your CI/CD pipeline</td></tr></tbody></table>
 
 ## Scan with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 

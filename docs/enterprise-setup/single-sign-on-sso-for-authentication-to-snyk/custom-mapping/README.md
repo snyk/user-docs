@@ -15,7 +15,7 @@ To understand more about roles and permissions within Snyk, see [Pre-defined rol
 
 ## Custom Mapping options
 
-Snyk offers an updated custom mapping option explained on this page, with increased flexibility, including the ability to grant users Group-level custom roles as well as pre-defined roles.&#x20;
+Snyk offers an updated custom mapping option explained on this page, with increased flexibility, including the ability to grant users Group-level and Tenant-level custom roles, in addition to pre-defined roles.&#x20;
 
 The Snyk [Legacy custom mapping](../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md) option is still supported.
 
@@ -27,7 +27,7 @@ Refer to your identity provider documentation for further information on how to 
 
 ## Custom mapping assertions
 
-This section documents the role assertions that Snyk expects in order to map correctly to Snyk roles within Snyk Groups and Organizations.
+This section documents the role assertions that Snyk expects in order to map correctly to Snyk roles within Snyk Tenants, Groups, and Organizations.
 
 ### Role assertion format
 
@@ -50,21 +50,19 @@ Where:
 Users must only have one role mapped per Organization, Group or Tenant. Mapping multiple roles except when using wildcards is not supported and can lead to unexpected behavior.
 {% endhint %}
 
-### Tenant Role assertions
+### Default role assignments
+
+All users with any memberships within a Tenant must have a Tenant membership. If a user has a membership of an Organization, they must also have a Group Membership.&#x20;
+
+If only an Organization-level role assertion is provided for a given user, for example,  then the user will automatically be assigned the **Tenant Member** and **Group Member** roles. These automatic assignments can be overridden by providing role assertions at the Group or Tenant level.
+
+Snyk recommends providing explicit Tenant level and Group level role assertions where needed, to ensure that users have the correct role on login.
 
 {% hint style="info" %}
-Any user that is granted a role in an Organization within the SSO without an explicit Group-level role in the role assertion, will also be implicitly assigned the **Group Member** Group-level role for that Group. This is the pre-defined Group-level role with the fewest permissions and ensures that the user becomes a member of the Group.
-{% endhint %}
-
-If custom mapping is enabled you will receive a Tenant Member role on log in. Snyk recommends you amend this where appropriate to ensure any Tenant level roles are added where needed. For example, if a user is a Tenant Admin they should be included in the mapping to ensure they are assigned the correct role on log in.
-
-### Example role assertions
-
 An SSO connection may only be associated with one Tenant, and all users with any memberships within a tenant must also have a Tenant Membership.&#x20;
 
-Therefore, it may be easier to assign Tenant-level roles by using the wildcard syntax, since the SSO is only linked to the one Tenant.
-
-If no Tenant-level role assertions are provided, but the user does have other valid roles assigned,  Snyk will automatically assign users the **Tenant Member** role.
+Therefore, it may be easier to assign Tenant-level roles by using the wildcard syntax (see example below), since the SSO is only linked to the one Tenant.
+{% endhint %}
 
 ### Example role assertions
 
@@ -73,7 +71,7 @@ If no Tenant-level role assertions are provided, but the user does have other va
   * Note that `::` here indicates an empty string for the target, and so is treated as a wildcard in the preceding example.
   * Note that this Group-level custom role must be created manually before it can be assigned.
 * `snyk:org:my-default-org:org_admin` Assigns the user the **Organization Admin** Organization-level role for the Organization `my-default-org`.
-* `snyk:tenant::tenant_admin` Assigns the user the Tenant Admin Tenant-level role for the Tenant associated with the SSO connection.
+* `snyk:tenant::tenant_admin` Assigns the user the **Tenant Admin** Tenant-level role for the Tenant associated with the SSO connection.
 
 ### Example role assertions array
 

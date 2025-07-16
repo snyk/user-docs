@@ -1,3 +1,18 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Snyk release process
 
 {% hint style="info" %}
@@ -22,7 +37,7 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
 
 ### Early Access features
 
-* [Snyk GitHub Cloud App](../scm-integrations/snyk-scm-integrations/github-cloud-app.md)
+* [Snyk GitHub Cloud App](../scm-integrations/organization-level-integrations/github-cloud-app.md)
 * [Automatically created Project collections](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
 * Snyk Code
   * [Snyk Code custom rules](../scan-with-snyk/snyk-code/snyk-code-custom-rules/)

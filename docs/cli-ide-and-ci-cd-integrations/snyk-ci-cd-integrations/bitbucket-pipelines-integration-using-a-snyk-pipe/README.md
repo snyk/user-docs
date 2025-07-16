@@ -22,9 +22,9 @@ For setup and use details, see the following pages:
 
 * [Language support for Bitbucket Pipelines integration](language-support-for-bitbucket-pipelines-integration.md)
 * [Bitbucket Pipelines integration: how it works](bitbucket-pipelines-integration-how-it-works.md)
-* [Prerequisites for Bitbucket Pipelines integration](prerequisites-for-bitbucket-pipelines-integration.md)
+* [Prerequisites for Bitbucket Pipelines integration](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/bitbucket-pipelines-integration-using-a-snyk-pipe/prerequisites-for-bitbucket-pipelines-integration.md)
 * [Configure your Bitbucket Pipelines integration](configure-your-bitbucket-pipelines-integration.md)
 * [How to add a Snyk pipe](how-to-add-a-snyk-pipe.md)
-* [Snyk pipe parameters and values (Bitbucket Cloud)](snyk-pipe-parameters-and-values-bitbucket-cloud.md)
+* [Snyk pipe parameters and values (Bitbucket Cloud)](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/bitbucket-pipelines-integration-using-a-snyk-pipe/snyk-pipe-parameters-and-values-bitbucket-cloud.md)
 * [Snyk pipe examples for Bitbucket Cloud](https://bitbucket.org/snyk/snyk-scan/src/develop/README.md)
 

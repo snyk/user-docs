@@ -2,7 +2,7 @@
 
 ## Example configuration for Sublime Text
 
-```
+```json5
 // Settings in here override those in "LSP/LSP.sublime-settings"
 {
   // Show permanent language server status in the status bar.
@@ -14,7 +14,8 @@
       // enable this configuration
       "enabled": true,
       "command": [
-        "/usr/local/bin/snyk-ls", // path to the downloaded binary
+        "/usr/local/bin/snyk", // path to the downloaded CLI binary
+        "language-server", // start CLI in language server mode
         "-l", // define log level
         "info", // level info
         "-f", // file logging
@@ -52,7 +53,7 @@ touch init.lua
 
 The following is an example `init.lua` script:
 
-```
+```lua
 local on_windows = vim.loop.os_uname().version:match 'Windows'
 
 local function join_paths(...)
@@ -124,7 +125,7 @@ _G.load_config = function()
     if not configs.snyk then
         configs.snyk = {
             default_config = {
-                cmd = {'/usr/local/bin/snyk-ls','-f','/path/to/log/snyk-ls-vim.log'},
+                cmd = {'/usr/local/bin/snyk', 'language-server', '-f','/path/to/log/snyk-ls-vim.log'},
                 root_dir = function(name)
                     return lspconfig.util.find_git_ancestor(name) or vim.loop.os_homedir()
                 end,

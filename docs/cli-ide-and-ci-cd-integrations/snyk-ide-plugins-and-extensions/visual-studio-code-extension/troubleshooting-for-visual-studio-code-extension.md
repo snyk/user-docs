@@ -16,7 +16,7 @@ Follow these steps to resolve the issue:
 
 1. Check your internet connection and proxy settings.
 2. Verify the release channel configuration in the extension settings.
-3. Try switching to a different [release channel](../../snyk-cli/releases-and-channels-for-the-snyk-cli.md), for example, from **stable** to **preview**.
+3. Try switching to a different [release channel](../../../snyk-cli/releases-and-channels-for-the-snyk-cli.md), for example, from **stable** to **preview**.
 4. Restart Visual Studio Code and attempt to [reinstall the extension](./#how-to-install-and-set-up-the-extension).
 5. If the problem persists, check for any known issues or updates on the [Snyk GitHub VS Code](https://github.com/snyk/vscode-extension/releases) repository.
 

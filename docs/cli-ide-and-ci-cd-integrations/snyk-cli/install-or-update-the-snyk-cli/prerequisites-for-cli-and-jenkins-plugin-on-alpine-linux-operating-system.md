@@ -9,6 +9,6 @@ Before running Snyk CLI and Snyk Jenkins plugin on the Alpine Linux operating sy
    Snyk recommends that you install the **latest** version. &#x20;
 3. To use the Snyk Jenkins plugin, ensure also that the Snyk Jenkins plugin v2.10.0 or above is installed. \
    Snyk recommends that you install the **latest** version.&#x20;
-4. After you install the Snyk CLI, you must [authenticate](../authenticate-to-use-the-cli.md).
+4. After you install the Snyk CLI, you must [authenticate](../../../snyk-cli/authenticate-to-use-the-cli.md).
 
-For additional information, see [Install or update the Snyk CLI](./) and [Jenkins Plugin](../../snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk.md) in the CI/CD docs.
+For additional information, see [Install or update the Snyk CLI](./) and [Jenkins Plugin](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk.md) in the CI/CD docs.

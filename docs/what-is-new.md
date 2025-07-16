@@ -48,7 +48,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk  Integrations**
 
-The [Bitbucket Cloud App](scm-integrations/snyk-scm-integrations/bitbucket-cloud-app.md) and [Jira App](integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) integrations are now available in the `SNYK-US-02` environment.
+The [Bitbucket Cloud App](scm-integrations/organization-level-integrations/bitbucket-cloud-app.md) and [Jira App](integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) integrations are now available in the `SNYK-US-02` environment.
 
 ### **Other updates**
 
@@ -77,7 +77,7 @@ Additional updates have been made to the [Universal Broker](snyk-api/reference/u
 
 ### **Snyk CLI**
 
-Information has been added about Snyk support for the Model Context Protocol (MCP) through the [`snyk mcp` experimental CLI command](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental/).
+Information has been added about Snyk support for the Model Context Protocol (MCP) through the [`snyk mcp` experimental CLI command](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access/).
 
 ### **Snyk Code**
 
@@ -115,7 +115,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk CLI, CI/CD, IDE**
 
 * [Advanced use of Snyk Container CLI](cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/advanced-use-of-snyk-container-cli.md) now includes support for scanning Kaniko image archives.
-* The [support policy for the CI/CD plugins](cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/#support-policy) was updated to align with the CLI support policy.
+* The [support policy for the CI/CD plugins](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/#support-policy) was updated to align with the CLI support policy.
 * The Net new issues feature was added to the IDE documentation for [Eclipse](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects.md#net-new-issues-versus-all-issues), [JetBrains](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/run-an-analysis-with-the-jetbrains-plugin.md#net-new-issues-versus-all-issues), [Visual Studio](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/view-analysis-results-from-visual-studio-extension.md#net-new-issues-versus-all-issues), and [Visual Studio Code](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension/#net-new-issues-versus-all-issues), and [troubleshooting information](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/net-new-issues-delta-scan-troubleshooting.md) was added.
 
 ### **Snyk Code**
@@ -132,7 +132,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk  Integrations**
 
-* The [GitHub Server App](scm-integrations/snyk-scm-integrations/github-server-app.md) has moved into General Availability.
+* The [GitHub Server App](scm-integrations/organization-level-integrations/github-server-app.md) has moved into General Availability.
 * The [Jira integration documentation](integrate-with-snyk/jira-and-slack-integrations/jira-integration.md#prerequisites-for-jira-integration-with-snyk) has been updated to state that Snyk supports version 5 to version 9.
 
 ### **Other updates**
@@ -192,7 +192,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk Integrations**
 
-* The GitLab page has been updated to state that for the Snyk AppRisk level integration [PAT creation](scm-integrations/snyk-scm-integrations/gitlab.md#gitlab-access-tokens), the user generating the GitLab group requires a minimum GitLab permission level of Guest.
+* The GitLab page has been updated to state that for the Snyk AppRisk level integration [PAT creation](scm-integrations/organization-level-integrations/gitlab.md#gitlab-access-tokens), the user generating the GitLab group requires a minimum GitLab permission level of Guest.
 
 ### **Other updates**
 
@@ -219,7 +219,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk CLI and IDEs**
 
-* The [CLI authentication page](cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md) has been updated for the OAuth 2.0 protocol.
+* The [CLI authentication page](snyk-cli/authenticate-to-use-the-cli.md) has been updated for the OAuth 2.0 protocol.
 * The page [Debugging the Snyk CLI](cli-ide-and-ci-cd-integrations/snyk-cli/debugging-the-snyk-cli.md) has been added.
 * [CLI standalone executables](cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/#install-with-standalone-executables) have been updated to include Alpine Arm64.
 * IDE Eclipse[ plugin](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/) and [JetBrains plugin ](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/)documentation pages have been updated.
@@ -228,7 +228,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk Integrations**
 
 * [Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/) is now in [GA](getting-started/snyk-release-process.md).
-* [Snyk SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) has been updated with additional notices relating to repository retrieval and permission or scope modifications after initial configuration.
+* [Snyk SCM integrations](scm-integrations/organization-level-integrations/) has been updated with additional notices relating to repository retrieval and permission or scope modifications after initial configuration.
 * GitHub Cloud App has been added to feature support notices for Fix, Backlog, and Upgrade PRs.
 * Snyk SCM integrations has been updated to include a table detailing the [permissions and scopes](scm-integrations/user-permissions-and-access-scopes.md#github-cloud-app-permission-requirements) required for the GitHub Cloud App.
 
@@ -248,7 +248,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### &#x20;**Snyk AppRisk**&#x20;
 
-* A prerequisites section has been added to the Group level of [GitHub integration](scm-integrations/snyk-scm-integrations/github-enterprise.md#prerequisites), and more details about the [Pull personal repositories](scm-integrations/group-level-integrations/github-for-snyk-essentials.md) option have been added to the same documentation page.&#x20;
+* A prerequisites section has been added to the Group level of [GitHub integration](scm-integrations/organization-level-integrations/github-enterprise.md#prerequisites), and more details about the [Pull personal repositories](scm-integrations/group-level-integrations/github-for-snyk-essentials.md) option have been added to the same documentation page.&#x20;
 * The [Set up Insights for Snyk AppRisk ](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/)section was updated to emphasize the risk factors availability for each integration option.
 * The [Snyk Runtime Sensor](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) has been updated to reflect the importance of adopting it to achieve the most effective integration and to access its continuously expanded set of features.&#x20;
 
@@ -259,7 +259,7 @@ The Universal Broker feature is now available in Early Access. The Universal Bro
 ### **Snyk CLI**
 
 * The [CLI commands and options summary](cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) was updated.
-* [Authentication](cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md) has been updated.
+* [Authentication](snyk-cli/authenticate-to-use-the-cli.md) has been updated.
 * Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/config.md) help, [`snyk config environment`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/config-environment.md) help.
 
 ### **Snyk  Integrations**
@@ -289,19 +289,19 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 ### **Snyk CLI**
 
 * [`snyk auth`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/auth.md) command help updated to reflect OAuth default.
-* [CLI authentication](cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md) instructions updated for OAuth default and improved flow.
+* [CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for OAuth default and improved flow.
 * [`snyk config environment`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/config-environment.md) command help has been added.
 * CLI [support for pnpm added](supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm).
 
 ### Snyk IDE
 
-* [CLI authentication](cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md) instructions updated for IDE.
+* [CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for IDE.
 * IDE authentication instructions updated: [Eclipse](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin.md), [Jetbrains](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/authentication-for-the-jetbrains-plugins.md), [VS extension](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/authentication-for-visual-studio-extension.md), [VS Code extension](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/authentication-for-visual-studio-code-extension.md)
 
 ### **Snyk Integrations**
 
 * Git repository cloning has been renamed [Workspaces for SCM integrations](scm-integrations/workspaces.md) to better reflect its functionality. Additional detail on [enablement](scm-integrations/workspaces.md#manage-workspaces) has been added.
-* The [relationship](scm-integrations/snyk-scm-integrations/github-cloud-app.md#how-to-set-up-the-github-cloud-app) between GitHub organizations and Snyk Organizations when integrating with the GitHub Cloud App has been clarified.
+* The [relationship](scm-integrations/organization-level-integrations/github-cloud-app.md#how-to-set-up-the-github-cloud-app) between GitHub organizations and Snyk Organizations when integrating with the GitHub Cloud App has been clarified.
 * The [deployment stages table](scm-integrations/deployment-recommendations.md) for implementing SCM integrations has been updated to reflect AppRisk functionality.
 
 ## July 2024
@@ -331,9 +331,9 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 ### Snyk Integrations
 
 * A comparison of the GitHub and GitHub Enterprise integrations functions now resides on the [SCM, IDE, and CI/CD integrations](scm-integrations/#github-vs-github-enterprise) page.
-* Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](scm-integrations/snyk-scm-integrations/github.md#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
-* The [Snyk SCM Integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) page now contains information critical to using these integrations successfully in your SDLC. This includes:
-  * Organizing integrations by [Group](scm-integrations/group-level-integrations/) and [Organization](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/) level in line with Snyk AppRisk functionality
+* Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](scm-integrations/organization-level-integrations/github.md#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
+* The [Snyk SCM Integrations](scm-integrations/organization-level-integrations/) page now contains information critical to using these integrations successfully in your SDLC. This includes:
+  * Organizing integrations by [Group](scm-integrations/group-level-integrations/) and [Organization](scm-integrations/organization-level-integrations/) level in line with Snyk AppRisk functionality
   * [Git repository cloning](scm-integrations/workspaces.md) details
   * [Deployment recommendations](scm-integrations/deployment-recommendations.md) for Enterprise customers
   * [User permissions and access scope requirements](scm-integrations/user-permissions-and-access-scopes.md) for each SCM integration

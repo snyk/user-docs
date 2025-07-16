@@ -62,9 +62,9 @@ docker push foobar/snyk:node-lts
 
 Compatibility in the BitBucket Pipeline integration is limited to environments supported by the Docker container the integration runs in. Following the Snyk announcement [Decoupling Snyk Scan from Snyk CLI Docker Images](https://updates.snyk.io/decoupling-snyk-scan-from-snyk-cli-docker-images-277502), before v1.0.0, the experience was limited to environments supported by the Snyk CLI Docker Images.
 
-With the release of v1.0.0, users can define custom images. If the list of environments provided by the [LANGUAGE](bitbucket-pipelines-integration-using-a-snyk-pipe/snyk-pipe-parameters-and-values-bitbucket-cloud.md#snyk-pipe-variables) variable does not support your particular build environment, you can define your own build environment in the form of a custom Docker image.
+With the release of v1.0.0, users can define custom images. If the list of environments provided by the [LANGUAGE](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/bitbucket-pipelines-integration-using-a-snyk-pipe/snyk-pipe-parameters-and-values-bitbucket-cloud.md#snyk-pipe-variables) variable does not support your particular build environment, you can define your own build environment in the form of a custom Docker image.
 
-Ensure that the [Prerequisites for Bitbucket Pipelines integration](bitbucket-pipelines-integration-using-a-snyk-pipe/prerequisites-for-bitbucket-pipelines-integration.md) are met.
+Ensure that the [Prerequisites for Bitbucket Pipelines integration](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/bitbucket-pipelines-integration-using-a-snyk-pipe/prerequisites-for-bitbucket-pipelines-integration.md) are met.
 
 As long as the pushed image is publicly accessible, you can use the `SNYK_BASE_IMAGE` and `LANGUAGE` variables to reference your custom image and tag, respectively, in your Bitbucket pipeline:
 

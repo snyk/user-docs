@@ -27,7 +27,7 @@ The following explains **how to configure your build with a Snyk step**.
 
 ![Additional Snyk parameters](../../../.gitbook/assets/uuid-8f294e8d-ca5e-123b-2992-a98c1e62fd6f-en.png)
 
-* Configure **Snyk Settings** and **Snyk Tool Settings**. For more information, see [TeamCity configuration parameters](teamcity-configuration-parameters.md).
+* Configure **Snyk Settings** and **Snyk Tool Settings**. For more information, see [TeamCity configuration parameters](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/teamcity-jetbrains-integration-using-the-snyk-security-plugin/teamcity-configuration-parameters.md).
 * When the configuration is complete, run the build. When the Snyk Security step ends successfully, you can navigate to the **Snyk Security Report** tab to view results within TeamCity and to navigate to the Snyk UI for further action:
 
 ![Snyk test report](../../../.gitbook/assets/uuid-e8b1fd6f-3b49-069c-c9fe-c0948931b141-en.png)

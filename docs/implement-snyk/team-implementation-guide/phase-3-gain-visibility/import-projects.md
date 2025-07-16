@@ -19,7 +19,7 @@ Depending on your needs, Snyk offers various integration methods:
 
 ### Git Integration
 
-For details, see [Git repositories (SCMs) integrations with Snyk](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
+For details, see [Git repositories (SCMs) integrations with Snyk](../../../scm-integrations/organization-level-integrations/).
 
 Connect your repositories for automatic scanning.
 
@@ -51,7 +51,7 @@ A command must be formulated for each type of test to perform (open source, code
 To use the Snyk CLI:
 
 1. [Install the CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/) using one of the appropriate methods as part of the build script.
-2. [Authenticate to use the CLI ](../../../cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md)by using the `snyk auth` command or an environment variable.
+2. [Authenticate to use the CLI ](../../../snyk-cli/authenticate-to-use-the-cli.md)by using the `snyk auth` command or an environment variable.
 3. In the script, navigate to the Project folder.
 4. Run the appropriate `snyk test` or `snyk monitor` commands and options for the type of scan you want to run. \
    \

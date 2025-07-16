@@ -30,7 +30,7 @@ Advantages:
 * Onboarding of repositories can be configured using the UI
 * Supports Cloud Repositories on the Team plan
 
-For more details, see [Git repositories (SCMs)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/).
+For more details, see [Git repositories (SCMs)](../../../scm-integrations/organization-level-integrations/).
 
 {% hint style="info" %}
 If you have a non-cloud-facing or your own instance of a Git SCM:
@@ -55,7 +55,7 @@ Advantages:
 * Full control over testing (which tests to run, where in the build script)
 * Can automate using CI/CD
 
-For more details, see [Snyk CI/CD integrations](../../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/).
+For more details, see [Snyk CI/CD integrations](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/).
 
 ### Integrated Development Environment (IDE) integrations
 

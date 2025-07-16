@@ -115,7 +115,7 @@ To make use of FIPS-validated cryptography in the [Snyk Visual Studio integratio
 
 ## FIPS-validated cryptography support and use in CI/CD Integrations
 
-FIPS in [CI/CD Integrations](../../snyk-ci-cd-integrations/) is available only by using a FIPS-enabled CLI directly.
+FIPS in [CI/CD Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/) is available only by using a FIPS-enabled CLI directly.
 
 ## FIPS-validated cryptography support and use in Package Repositories
 
