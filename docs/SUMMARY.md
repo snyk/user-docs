@@ -285,7 +285,7 @@
     * [Developer guardrails for agentic workflows](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/README.md)
       * [Snyk MCP - Early Access](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access/README.md)
         * [Snyk MCP installation, configuration, and startup](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access/snyk-mcp-installation-configuration-and-startup.md)
-        * [Troubleshooting for the Snyk MCP server](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access/troubleshooting-for-the-snyk-mcp-server.md)
+        * [Troubleshooting for the Snyk MCP server](snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental/troubleshooting-for-the-snyk-mcp-server.md)
       * [Quickstart guides for MCP](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/README.md)
         * [Qodo guide](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/qodo-guide.md)
         * [Windsurf guide](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/windsurf-guide.md)
