@@ -49,6 +49,12 @@ If you are using SSE  (if using `snyk mcp -t sse`):
 * Check to see if the local firewall might be blocking incoming connections to the port used by the Snyk MCP SSE server.
 * Remember that SSE transport supports running the MCP server locally only.
 
+## Folder Trust
+
+if you are experiencing issues related to folder trust, you can disable this feature by using the&#x20;
+
+`--disable-trust` CLI flag.
+
 ## Verbose logging and debugging
 
 Use these suggestions to improve and expand on your Snyk CLI debug output to troubleshoot MCP-related issues:

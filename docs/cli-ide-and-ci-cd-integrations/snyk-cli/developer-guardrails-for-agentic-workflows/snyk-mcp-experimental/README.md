@@ -23,9 +23,18 @@ In environments or applications that use MCP, you can use the `snyk mcp` CLI com
 
 &#x20;The Snyk MCP server supports integrating the following Snyk security tools into an AI system:
 
-* `snyk_sca_test` (Open Source scans)
-* `snyk_code_test` (Code scans)
+* `snyk_sca_scan` (Open Source scan)
+* `snyk_code_scan` (Code scan)
+* `snyk_iac_scan` (IaC scan)
+* `snyk_container_scan` (IaC scan)
+* `snyk_sbom_scan` (SBOM file scan)
+* `snyk_aibom` (Create AIBOM)
+* `snyk_trust` (Trust a given folder before running a scan)
 * `snyk_auth` (authentication)
 * `snyk_logout` (logout)
 * `snyk_auth_status` (authentication status check)
 * `snyk_version` (version information)
+
+{% hint style="warning" %}
+Running `snyk_sca_scan` may execute third-party ecosystem tools (for example, Gradle or Maven) on your machine to fetch the project's dependency tree.
+{% endhint %}
