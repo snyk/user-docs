@@ -5,7 +5,7 @@ This document uses the v1 API, which will eventually be deprecated, as further S
 {% endhint %}
 
 {% hint style="warning" %}
-The endpoints in this category support only Snyk legacy reporting, not the latest release. They are not available in regions such as single-tenant or multi-tenant US02, EU, and AU; instead use the [Issues REST API](https://docs.snyk.io/snyk-api/reference/issues).
+The endpoints in this category support only Snyk legacy reporting, not the latest release. They are not available in regions such as single-tenant or multi-tenant US02, EU, and AU; instead use the [Issues REST API](issues.md).
 {% endhint %}
 Using the Reporting API, you can find answers to questions like how many issues your Organization has, or how many tests have been conducted in a given time period.
 
