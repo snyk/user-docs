@@ -29,6 +29,7 @@ For more information, see [User management with the API](../user-management-with
 * For [Integration edit abilities](custom-role-templates/integration-editor-implementor-role-template.md), the **Edit Organization** permission is required.
 * Snyk prevents role privileges from escalating. This means users cannot assign a higher privileged role to others and cannot create service accounts with a higher privileged role.
 * It is advisable to use the **Duplicate Role** functionality and create a copy of a standard role, then amend the permissions rather than build a role from scratch if you are unsure about the permissions.
+* The names of member roles are visible to all users within a Tenant; meaning that all users can see which roles are assigned to other users.&#x20;
 
 ## Manage roles
 
