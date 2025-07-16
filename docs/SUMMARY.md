@@ -1096,6 +1096,7 @@
   * [Reporting security issues](working-with-snyk/reporting-security-issues.md)
   * [Snyk terms of support and services glossary](working-with-snyk/snyk-terms-of-support-and-services-glossary/README.md)
     * [Snyk Jumpstart Services Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md)
+    * [Snyk Spark Services Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-spark-services-description.md)
     * [Snyk Jumpstart Customer Prerequisites](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-customer-prerequisites.md)
     * [Snyk Residency Services](working-with-snyk/snyk-terms-of-support-and-services-glossary/snyk-residency-services.md)
     * [Snyk Declining Balance of Hours Service Description](working-with-snyk/snyk-terms-of-support-and-services-glossary/statement-of-work.md)
