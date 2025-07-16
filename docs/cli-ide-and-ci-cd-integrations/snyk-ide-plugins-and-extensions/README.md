@@ -20,7 +20,7 @@ The following Snyk plugins and extensions are available.
 * [Visual Studio extension](visual-studio-extension/)
 * [Eclipse plugin](eclipse-plugin/)
 
-Snyk also offers a [Language Server](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/).&#x20;
+Snyk also offers a [Language Server](snyk-language-server/).&#x20;
 
 The following summarizes the versions of each IDE supported by the Snyk plugin or extension. Snyk recommends always using the latest version of the IDE plugin or extension.
 
