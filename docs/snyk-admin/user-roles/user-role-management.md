@@ -134,7 +134,7 @@ Snyk prevents users from assigning roles to others with more privileges than tho
 
 {% hint style="info" %}
 **Feature availability**\
-Service accounts are available only with Enterprise plans. Free and Team users have access to [personal tokens](../../cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md) only. Personal tokens are recommended for use with IDEs and the local CLI.
+Service accounts are available only with Enterprise plans. Free and Team users have access to [personal tokens](../../snyk-cli/authenticate-to-use-the-cli.md) only. Personal tokens are recommended for use with IDEs and the local CLI.
 
 For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}

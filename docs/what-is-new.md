@@ -219,7 +219,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk CLI and IDEs**
 
-* The [CLI authentication page](cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md) has been updated for the OAuth 2.0 protocol.
+* The [CLI authentication page](snyk-cli/authenticate-to-use-the-cli.md) has been updated for the OAuth 2.0 protocol.
 * The page [Debugging the Snyk CLI](cli-ide-and-ci-cd-integrations/snyk-cli/debugging-the-snyk-cli.md) has been added.
 * [CLI standalone executables](cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/#install-with-standalone-executables) have been updated to include Alpine Arm64.
 * IDE Eclipse[ plugin](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/) and [JetBrains plugin ](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/)documentation pages have been updated.
@@ -259,7 +259,7 @@ The Universal Broker feature is now available in Early Access. The Universal Bro
 ### **Snyk CLI**
 
 * The [CLI commands and options summary](cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) was updated.
-* [Authentication](cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md) has been updated.
+* [Authentication](snyk-cli/authenticate-to-use-the-cli.md) has been updated.
 * Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/config.md) help, [`snyk config environment`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/config-environment.md) help.
 
 ### **Snyk  Integrations**
@@ -289,13 +289,13 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 ### **Snyk CLI**
 
 * [`snyk auth`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/auth.md) command help updated to reflect OAuth default.
-* [CLI authentication](cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md) instructions updated for OAuth default and improved flow.
+* [CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for OAuth default and improved flow.
 * [`snyk config environment`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/config-environment.md) command help has been added.
 * CLI [support for pnpm added](supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm).
 
 ### Snyk IDE
 
-* [CLI authentication](cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md) instructions updated for IDE.
+* [CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for IDE.
 * IDE authentication instructions updated: [Eclipse](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin.md), [Jetbrains](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/authentication-for-the-jetbrains-plugins.md), [VS extension](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/authentication-for-visual-studio-extension.md), [VS Code extension](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/authentication-for-visual-studio-code-extension.md)
 
 ### **Snyk Integrations**

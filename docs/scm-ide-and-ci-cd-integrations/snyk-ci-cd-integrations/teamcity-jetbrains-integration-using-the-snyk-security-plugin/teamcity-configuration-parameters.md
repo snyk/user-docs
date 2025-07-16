@@ -33,13 +33,13 @@ This page provides information about [Snyk settings](teamcity-configuration-para
 ## Additional parameters
 
 * Optional
-* Enter additional CLI options as necessary. See the [CLI documentation](../../snyk-cli/) and [cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/).
+* Enter additional CLI options as necessary. See the [CLI documentation](../../../cli-ide-and-ci-cd-integrations/snyk-cli/) and [cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/).
 
 ## Snyk tool settings
 
-### Snyk API token
+### Snyk PAT or API token
 
-* From the Settings area in the Snyk UI, copy the Organization or Personal API token, or create a service account.
+* From the Settings area in the Snyk UI, copy the Organization, Personal API token, PAT, or create a service account.
 * Use the token to authenticate your Snyk account when connecting to TeamCity.
 
 ### Snyk version

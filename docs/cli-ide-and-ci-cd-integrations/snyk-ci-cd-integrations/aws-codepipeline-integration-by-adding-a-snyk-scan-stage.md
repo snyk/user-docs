@@ -15,7 +15,7 @@ This guide outlines the steps for setting up a [Snyk Open Source](https://snyk.i
 
 * Create a new CodeBuild project in your AWS account.
 * Choose a compatible [base image](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html) for your project based on your programming language and dependencies.
-* Review how to [authenticate the Snyk CLI with your account](../snyk-cli/authenticate-to-use-the-cli.md) and consider using an environment variable to store sensitive information such as your Snyk CLI token.
+* Review how to [authenticate the Snyk CLI with your account](../../snyk-cli/authenticate-to-use-the-cli.md) and consider using an environment variable to store sensitive information such as your Snyk CLI token.
 
 {% hint style="info" %}
 The default Service role in AWS CodeBuild includes an IAM permission that allows the CodeBuild project to pull any secret from the AWS Secrets Manager that starts with `/CodeBuild/` in the name. Refer to the [Troubleshooting](aws-codepipeline-integration-by-adding-a-snyk-scan-stage.md#troubleshooting) section at the end of this guide for more information.

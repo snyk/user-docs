@@ -9,7 +9,7 @@ The Snyk plugin scans as part of your build and then displays test results direc
 For setup and use details, see the following pages:
 
 * [TeamCity integration: install the Snyk plugin](teamcity-integration-install-the-snyk-plugin.md)
-* [TeamCity configuration parameters](teamcity-configuration-parameters.md)
+* [TeamCity configuration parameters](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/teamcity-jetbrains-integration-using-the-snyk-security-plugin/teamcity-configuration-parameters.md)
 * [Language support for TeamCity integration](language-support-for-teamcity-integration.md)
 * [How TeamCity integration works](how-teamcity-integration-works.md)
 * [TeamCity integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build.md)

@@ -21,7 +21,7 @@ snyk auth $SNYK_TOKEN
 snyk test
 ```
 
-See [authenticating the CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli.md) for more details.
+See [authenticating the CLI](../../../snyk-cli/authenticate-to-use-the-cli.md) for more details.
 
 ## Snyk API&#x20;
 

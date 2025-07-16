@@ -1,9 +1,9 @@
 # Jenkins plugin integration with Snyk
 
-Snyk offers a native plugin for Jenkins that is based on the [Snyk CLI](../snyk-cli/), to test and monitor Projects for vulnerabilities in your pipelines.
+Snyk offers a native plugin for Jenkins that is based on the [Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/), to test and monitor Projects for vulnerabilities in your pipelines.
 
 {% hint style="warning" %}
-The Snyk Jenkins plugin supports Snyk Open Source. If you plan to include Snyk Code, Snyk Container, and Snyk IaC scans in your pipeline, use the generic [Snyk CLI](../snyk-cli/).
+The Snyk Jenkins plugin supports Snyk Open Source. If you plan to include Snyk Code, Snyk Container, and Snyk IaC scans in your pipeline, use the generic [Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/).
 {% endhint %}
 
 For more information, [see the Snyk Jenkins Plugin repository](https://github.com/jenkinsci/snyk-security-scanner-plugin).
@@ -24,7 +24,7 @@ Follow the steps in each section of this document to use the Snyk Jenkins plugin
 
 ## Configure a Snyk installation
 
-* Go to **Manage Jenkins** > **Tools**.
+* Navigate to **Manage Jenkins** > **Tools**.
 * Add a **Snyk Installation**.
 * Configure the Installation.
 * Remember the **Name** to use when configuring the build step.
@@ -56,11 +56,11 @@ If you are in a region other than `SNYK-US-01`, which uses the `https://api.snyk
 * Click **Add**.
 * Set the name to `SNYK_API` and the value to the custom endpoint.
 
-For more information, see [Configure Snyk CLI to connect to Snyk API](../snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api.md).
+For more information, see [Configure Snyk CLI to connect to Snyk API](../../cli-ide-and-ci-cd-integrations/snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api.md).
 
-## Configure a Snyk API token credential
+## Configure a Snyk PAT or API token credential
 
-* Get your [Snyk API Token](../../snyk-api/authentication-for-api/).
+* Get your [Snyk API Token](../../snyk-api/authentication-for-api/) or [Snyk PAT](https://docs.snyk.io/snyk-api/authentication-for-api).
 * Navigate to **Manage Jenkins** > **Credentials**.
 * Choose a **Store**.
 * Choose a **Domain**.
@@ -143,23 +143,23 @@ Whether to monitor the Project on every build by taking a snapshot of its curren
 
 **`organisation`** (optional, default: `_automatic_`)
 
-The Snyk `organization` in which this Project should be tested and monitored. See `--org` in the [CLI commands and options summary](../snyk-cli/cli-commands-and-options-summary.md) for the default behavior.
+The Snyk `organization` in which this Project should be tested and monitored. See `--org` in the [CLI commands and options summary](../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) for the default behavior.
 
 **`projectName`** (optional, default: `_automatic_`)
 
-A custom name for the Snyk Project created for this Jenkins project on every build. See `--project-name` in the [CLI commands and options summary](../snyk-cli/cli-commands-and-options-summary.md) for default behavior.
+A custom name for the Snyk Project created for this Jenkins project on every build. See `--project-name` in the [CLI commands and options summary](../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) for default behavior.
 
 **`targetFile`** (optional, default: `_automatic_`)
 
-The path to the manifest file to be used by Snyk. See `--file` in the [CLI commands and options summary](../snyk-cli/cli-commands-and-options-summary.md) for default behavior
+The path to the manifest file to be used by Snyk. See `--file` in the [CLI commands and options summary](../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) for default behavior
 
 **`severity`** (optional, default: `_automatic_`)
 
-The minimum severity to detect. Can be one of the following: `low`, `medium`, `high`, `critical`. See `--severity-threshold` in the [CLI commands and options summary](../snyk-cli/cli-commands-and-options-summary.md) for default behavior.
+The minimum severity to detect. Can be one of the following: `low`, `medium`, `high`, `critical`. See `--severity-threshold` in the [CLI commands and options summary](../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) for default behavior.
 
 **`additionalArguments`** (optional, default: `_none_`)
 
-See the [CLI commands and options summary](../snyk-cli/cli-commands-and-options-summary.md) for information on additional CLI options.
+See the [CLI commands and options summary](../../cli-ide-and-ci-cd-integrations/snyk-cli/cli-commands-and-options-summary.md) for information on additional CLI options.
 
 ## View your Snyk Security Report
 

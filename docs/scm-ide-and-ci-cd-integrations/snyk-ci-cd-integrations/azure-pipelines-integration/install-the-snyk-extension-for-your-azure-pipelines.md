@@ -17,7 +17,7 @@ To start using the Snyk task as part of your pipeline build, from the [Visual St
 4. Search for the **Snyk Security Scan** extension and click **Get it free**.
 5. Create a new **Service Connection** in your Project using **Project Settings** > **Pipelines** > **Service Connections**.
 6. Select the **Snyk Authentication** service connection:
-   1. In the Snyk Authentication service connection form, enter the **Snyk API Token**.
+   1. In the Snyk Authentication service connection form, enter the **Snyk API Token or Snyk PAT**.
    2. Click **Save**, ensuring the new service connection appears in your list of service connections.
 
 <figure><img src="../../../.gitbook/assets/ap_-_search.jpg" alt="Create your first service connection"><figcaption><p>Create your first service connection</p></figcaption></figure>
@@ -27,5 +27,5 @@ To start using the Snyk task as part of your pipeline build, from the [Visual St
 
 
 {% hint style="info" %}
-If you are hosted in a region other than `SNYK-US-01`, see the section [Regional API endpoints](regional-api-endpoints.md).
+If you are hosted in a region other than `SNYK-US-01`, see the section [Regional API endpoints](../../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/azure-pipelines-integration/regional-api-endpoints.md).
 {% endhint %}
