@@ -1,11 +1,14 @@
 package generator
 
 import (
+	"cmp"
 	"fmt"
 	"os"
 	"path"
 	"path/filepath"
+	"slices"
 	"sort"
+	"strconv"
 	"strings"
 
 	"github.com/getkin/kin-openapi/openapi3"
@@ -20,6 +23,7 @@ type operationPath struct {
 	specPath  string
 	method    string
 	docsHint  string
+	order     int
 }
 
 func GenerateReferenceDocs(cfg *config.Config, docsBasePath string) error {
@@ -35,6 +39,9 @@ func GenerateReferenceDocs(cfg *config.Config, docsBasePath string) error {
 	}
 
 	for label, operations := range aggregatedDocs {
+		slices.SortFunc(operations, func(i, j operationPath) int {
+			return cmp.Compare(i.order, j.order)
+		})
 		destinationPath := path.Join(docsBasePath, cfg.Output.APIReferencePath, labelToFileName(label))
 		summary = append(summary, fmt.Sprintf("* [%s](%s)\n", label, path.Join(cfg.Output.APIReferencePath, labelToFileName(label))))
 
@@ -139,6 +146,7 @@ func processOperation(pathURL string,
 	operation *openapi3.Operation,
 	spec config.Spec,
 	specDocs map[string][]operationPath) error {
+	var order int
 	for _, tag := range operation.Tags {
 		if tag == "OpenAPI" {
 			continue
@@ -146,7 +154,15 @@ func processOperation(pathURL string,
 
 		if snykDocsExtension, ok := operation.Extensions["x-snyk-documentation"]; ok && snykDocsExtension != nil {
 			var err error
-			tag, err = extractCategoryNameFromExtension(snykDocsExtension)
+			renamedTag, err := extractCategoryNameFromExtension(snykDocsExtension)
+			if err != nil {
+				return err
+			}
+			if renamedTag != "" {
+				tag = renamedTag
+			}
+
+			order, err = extractOrderFromExtension(snykDocsExtension)
 			if err != nil {
 				return err
 			}
@@ -164,6 +180,7 @@ func processOperation(pathURL string,
 			specPath:  spec.Path,
 			method:    method,
 			docsHint:  spec.DocsHint,
+			order:     order,
 		})
 	}
 	return nil
@@ -181,6 +198,22 @@ func isBeta(operation *openapi3.Operation) bool {
 	return stabilityStr == "beta"
 }
 
+func extractOrderFromExtension(extension interface{}) (int, error) {
+	extensionMap, worked := extension.(map[string]interface{})
+	if !worked {
+		return 0, fmt.Errorf("failed to parse docs extension as an object")
+	}
+	orderValue, worked := extensionMap["order"].(string)
+	if !worked {
+		return 0, nil
+	}
+	orderAsInt, err := strconv.Atoi(orderValue)
+	if err != nil {
+		return 0, fmt.Errorf("x-snyk-documentation extension order field not a int, %w", err)
+	}
+	return orderAsInt, nil
+}
+
 func extractCategoryNameFromExtension(extension interface{}) (string, error) {
 	extensionMap, worked := extension.(map[string]interface{})
 	if !worked {
@@ -188,7 +221,7 @@ func extractCategoryNameFromExtension(extension interface{}) (string, error) {
 	}
 	categoryValue, worked := extensionMap["category"].(string)
 	if !worked {
-		return "", fmt.Errorf("x-snyk-documentation extension category field not a string")
+		return "", nil
 	}
 	return categoryValue, nil
 }
