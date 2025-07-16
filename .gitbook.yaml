@@ -168,3 +168,4 @@ redirects:
   scan-containers/image-scanning-library/ecr-image-scanning/amazon-elastic-container-registry-ecr-configure-your-integration-with-snyk: scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-amazon-elastic-container-registry-ecr/README.md
   docs/ignoring-issues: manage-risk/prioritize-issues-for-fixing/ignore-issues/README.md
   scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations: scm-integrations/README.md
+  scm-integrations/snyk-scm-integrations: /scm-integrations/organization-level-integrations/README.md
