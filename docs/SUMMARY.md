@@ -283,7 +283,7 @@
       * [Using FIPS-validated cryptography](cli-ide-and-ci-cd-integrations/snyk-cli/security-concept-of-operations-for-snyk/using-fips-validated-cryptography.md)
     * [Code execution warning for Snyk CLI](cli-ide-and-ci-cd-integrations/snyk-cli/code-execution-warning-for-snyk-cli.md)
     * [Developer guardrails for agentic workflows](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/README.md)
-      * [Snyk MCP experimental](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental/README.md)
+      * [Snyk MCP - Early Access](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental/README.md)
         * [Snyk MCP installation, configuration, and startup](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental/snyk-mcp-installation-configuration-and-startup.md)
         * [Troubleshooting for the Snyk MCP server](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental/troubleshooting-for-the-snyk-mcp-server.md)
       * [Quickstart guides for MCP](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/README.md)

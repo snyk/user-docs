@@ -16,8 +16,7 @@ This method requires that the Snyk CLI be in your system path and can be invoked
       "args": [
         "mcp",
         "-t",
-        "stdio",
-        "--experimental"
+        "stdio"
       ],
       "env":{
       // optional CLI environment variables, e.g. SNYK_CFG_ORG, SNYK_TOKEN
@@ -33,7 +32,7 @@ This method requires that the Snyk CLI be in your system path and can be invoked
 SSE transport supports running the MCP server locally only. SSE does not support remote or hosted configurations.
 {% endhint %}
 
-If your MCP Client expects a URL, then you will need to start the MCP server in your terminal first by running `snyk mcp -t sse --experimental`&#x20;
+If your MCP Client expects a URL, then you will need to start the MCP server in your terminal first by running `snyk mcp -t sse`&#x20;
 
 This will output the base URL for your local SSE server. The `sse` endpoint lives on `http://baseUrl/sse.`
 

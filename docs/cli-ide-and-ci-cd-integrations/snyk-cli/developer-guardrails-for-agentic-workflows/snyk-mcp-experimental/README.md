@@ -1,4 +1,4 @@
-# Snyk MCP experimental
+# Snyk MCP - Early Access
 
 MCP (Model Context Protocol) is an open protocol that standardizes how applications share context with large language models.
 
@@ -6,13 +6,13 @@ MCP can support AI systems with the context needed to generate accurate and rele
 
 Snyk is introducing an MCP server as part of the Snyk CLI. This will allow MCP-enabled security tools to integrate Snyk security scanning capabilities directly, thus bridging the gap between security scanning and emerging AI-assisted workflows.
 
-The `snyk mcp` command is available in Early Access, under the `--experimental` flag for the following reasons:
+The `snyk mcp` command is available in Early Access for the following reasons:
 
 * MCP is a new and evolving standard.
 * The `snyk mcp` command is an early implementation of integrating Snyk security scanning into the MCP-enabled environment.
 * Snyk wants to gather feedback on the benefits of MCP as an integration pattern for Snyk security.
 
-Because the `snyk mcp` command is an experimental feature, the specific usage, parameters, and output related to this command may evolve as both MCP and this Snyk integration mature. Changes are possible before a general release.
+Because the `snyk mcp` command is an Early Access feature, the specific usage, parameters, and output related to this command may evolve as both MCP and this Snyk integration mature. Changes are possible before a general release.
 
 In environments or applications that use MCP, you can use the `snyk mcp` CLI command to:
 

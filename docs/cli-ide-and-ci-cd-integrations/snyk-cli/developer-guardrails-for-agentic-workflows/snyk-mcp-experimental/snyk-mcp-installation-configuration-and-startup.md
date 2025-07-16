@@ -15,6 +15,6 @@ For a full list of supported CLI environment variables, see [Environment variabl
 
 To start the Snyk MCP server, use the `snyk mcp` command for a supported transport type, `stdio` or `sse` as follows:
 
-`snyk mcp -t sse --experimental` - Start the Snyk MCP server using `sse`, HTTP Server-Sent Events Transport. The available endpoint is `/sse`.
+`snyk mcp -t sse` - Start the Snyk MCP server using `sse`, HTTP Server-Sent Events Transport. The available endpoint is `/sse`.
 
-`snyk mcp -t stdio --experimental` - Start the Snyk MCP server using `stdio`, Stdio (Standard IO) Transport.
+`snyk mcp -t stdio` - Start the Snyk MCP server using `stdio`, Stdio (Standard IO) Transport.
