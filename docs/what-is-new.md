@@ -296,7 +296,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 ### Snyk IDE
 
 * [CLI authentication](snyk-cli/authenticate-to-use-the-cli.md) instructions updated for IDE.
-* IDE authentication instructions updated: [Eclipse](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin.md), [Jetbrains](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/authentication-for-the-jetbrains-plugins.md), [VS extension](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/authentication-for-visual-studio-extension.md), [VS Code extension](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/authentication-for-visual-studio-code-extension.md)
+* IDE authentication instructions updated: [Eclipse](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin.md), [Jetbrains](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/authentication-for-the-jetbrains-plugins.md), [VS extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/authentication-for-visual-studio-extension.md), [VS Code extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/authentication-for-visual-studio-code-extension.md)
 
 ### **Snyk Integrations**
 

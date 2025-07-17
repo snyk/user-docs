@@ -4,4 +4,4 @@ When you install the Eclipse plugin and open a file that Snyk supports, the [Sny
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2022-10-19 at 09.10.10 (1).png" alt=""><figcaption><p>Downloading the Snyk CLI</p></figcaption></figure>
 
-Continue with [Authentication for the Eclipse plugin](authentication-for-the-eclipse-plugin.md).
+Continue with [Authentication for the Eclipse plugin](../../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin.md).
