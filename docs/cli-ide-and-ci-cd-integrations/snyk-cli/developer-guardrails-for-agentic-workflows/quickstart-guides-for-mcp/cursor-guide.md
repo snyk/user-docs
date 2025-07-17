@@ -28,7 +28,7 @@ You can add the Snyk MCP server to Cursor to secure code generated with agentic 
 {
   "mcpServers": {
     "Snyk": {
-      "command": "snyk mcp -t stdio --experimental",
+      "command": "snyk mcp -t stdio",
       "env": {}
     }
   }
