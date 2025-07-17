@@ -70,7 +70,7 @@ Issues that have previously been ignored via the Snyk Web UI in the associated O
 
 5. **Mark as successful in SCM** to change the result status and merge the pull request with failed security issues.
 
-<figure><img src="../../../.gitbook/assets/github-mark-result-successful (1).png" alt="Marking PR Checks result as successful."><figcaption><p>Marking PR Checks result as successful</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/github-mark-result-successful.png" alt="Marking PR Checks result as successful."><figcaption><p>Marking PR Checks result as successful</p></figcaption></figure>
 
 {% hint style="warning" %}
 Marking a vulnerability as successful does not ignore the issue but only allows the security checks for the PR to pass in this current branch. If the issue is not fixed, it shows up in future commits and PR Checks after you merge it with the target branch.
