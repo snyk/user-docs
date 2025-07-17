@@ -47,7 +47,7 @@ The Common Vulnerability Scoring System (CVSS) determines the severity level of 
 
 Snyk supports the [CVSS framework version 4.0](https://www.first.org/cvss/v4-0/), along with the previous version, [CVSS framework version 3.1](https://www.first.org/cvss/v3-1/), to designate the characteristics and severity of vulnerabilities.
 
-&#x20;Vulnerabilities published prior to the support of CVSS v4.0, are **based on the 3.1 version of CVSS to define severities**.
+&#x20;Vulnerabilities published prior to the support of CVSS v4.0, are based on the 3.1 version of CVSS to define severities.
 
 | **Level** | **CVSS score** |
 | --------- | -------------- |

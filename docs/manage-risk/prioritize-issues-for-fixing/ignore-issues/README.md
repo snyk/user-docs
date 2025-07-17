@@ -80,7 +80,7 @@ Ignores for Open Source issues found in a CLI or CI/CD run are synchronized with
 2. You see the results of the scan in the Web UI and choose to ignore an issue.
 3. The issue is ignored when you run `snyk test` or `snyk monitor` in the CI/CD or CLI.
 
-Refer to the following example. Issues are identified as **CI/CLI**, meaning the Project was imported from `snyk monitor`. The issue is **`npmconf`**. It is **Not vulnerable,** and the user can select **Ignore**.
+Refer to the following example. Issues are identified as **CI/CLI**, meaning the Project was imported from `snyk monitor`. The issue is `npmconf`. It is **Not vulnerable,** and the user can select **Ignore**.
 
 <figure><img src="../../../.gitbook/assets/image (514).png" alt="Project imported by snyk monitor, ignore set in the Web UI"><figcaption><p>Project imported by <code>snyk monitor</code>, ignore set in the Web UI</p></figcaption></figure>
 
@@ -173,7 +173,7 @@ For more information, see [IaC ignores using the .snyk policy file](../../../cli
 
 Suppressing vulnerabilities carries a level of risk, so you can make this function available to admins only as follows:
 
-1. Navigate to your Organization **Settings,** then **General**, then navigate to the **Ignores** section.
+1. Navigate to your Organization **Settings** > **General** > **Ignores**.
 2. Under **Ignore an issue or edit ignore settings using Snyk Web UI or Snyk API**, select **Group and Org Admin users (Default user roles only)**.\
    This also prevents ignores from being added through the CLI.
 3. Under **Require reason for each ignore**, you can set to **Required** to enter a reason for each ignore.

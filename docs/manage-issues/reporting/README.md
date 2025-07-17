@@ -43,11 +43,11 @@ Filters are separated by an AND operator. For example, if you select the `Critic
 
 Every time a filter value is applied, the app.snyk.io URL is updated to persist the state of the page. You can bookmark and copy the URL, and share it with anyone who has the appropriate Snyk Organization or Group access. For easy sharing, use the copy URL button in the upper right corner of the list of reports.
 
-## Exporting Snyk Reports
+## Exporting Snyk reports
 
 You can export reports to PDF and download tabular data within a report to CSV.
 
-### Export Snyk Reports to PDF
+### Export Snyk reports to PDF
 
 Use the **Export to PDF** button at the top right to download a PDF of not only the content of a report, but also its context, including who ran the report, when it was exported, the scope being viewed (Snyk Organization or Group), and any filters applied.
 
@@ -55,7 +55,7 @@ Exporting a PDF allows sharing a report with a user who will not or should not a
 
 In tabular data on reports, only the first 50 results are shown in the PDF export. Links are provided in the PDF export to view the report in the browser.
 
-### Download Snyk Report to a CSV file
+### Download Snyk report to a CSV file
 
 You can use the **Download CSV** button at the right in the report to download data presented in tables to CSV. This information can be used, for example, for prioritization purposes or a one-time analysis of data in Excel or a similar tool.
 
@@ -71,13 +71,13 @@ Sort columns within tables by clicking the arrows next to the column header. Cli
 
 When columns are sorted, the app.snyk.io URL is updated to persist the state of the page, allowing for bookmarking, copying, and sharing.
 
-## Modifying Snyk Report columns
+## Modifying Snyk report columns
 
 In some reports, tables may include an option to modify columns. When this option is available, you can use it to select the columns to display in the UI. The export features (PDF and CSV) respect the selected columns.
 
 When columns are modified, the app.snyk.io URL is updated to persist the state of the page, allowing for bookmarking, copying, and sharing.
 
-## Saved Views
+## Saved views
 
 The Saved Views feature enables collaboration based on shared, consistent, and customizable reports. This feature is available at Organization and Group level, in the **Reports** menu. It allows you to customize and save filter settings for your reports, which you can then reuse.
 

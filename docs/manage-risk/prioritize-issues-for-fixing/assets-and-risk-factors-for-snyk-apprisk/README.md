@@ -42,7 +42,7 @@ By understanding your images, packages, and Kubernetes resources as "application
 * [OS condition](risk-factor-os-condition.md)
 * [Public facing](risk-factor-public-facing.md)
 
-You can enable and disable all of these "application context" risk factors through the Group **Settings**, on the **Issues** UI tab. If you choose to disable a risk factor, a provider selection, or the Kubernetes cluster mapping, Snyk will no longer compute them.&#x20;
+You can enable and disable all of these "application context" risk factors through the Group **Settings**, on the **Issues** tab. If you choose to disable a risk factor, a provider selection, or the Kubernetes cluster mapping, Snyk will no longer compute them.&#x20;
 
 {% hint style="info" %}
 The Risk Factors are available only for Snyk AppRisk.

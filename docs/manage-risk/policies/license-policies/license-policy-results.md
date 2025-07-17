@@ -6,7 +6,7 @@ If you change severity, results from scans are updated in the [Snyk Web UI](../.
 
 Examples of results follow.
 
-In the Snyk Web UI, **Dashboard** statistics are updated based on severity changes:
+In the Snyk Web UI, dashboard statistics are updated based on severity changes:
 
 <div align="left"><figure><img src="../../../.gitbook/assets/Screen Shot 2023-05-12 at 2.00.26 PM.png" alt="License issues on the Dashboard"><figcaption><p>License issues on the Dashboard</p></figcaption></figure></div>
 

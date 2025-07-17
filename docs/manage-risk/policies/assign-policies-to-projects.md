@@ -33,7 +33,7 @@ You can create and save a policy where no attributes are selected, for example, 
 To have a policy assigned, a Project must have all the attributes listed on the policy applied to the Project. The Project can also have attributes that are not listed on the policy.
 
 {% hint style="info" %}
-If a policy applies to a Project based on the attributes, then **role with edit project attribute permission** can edit the Project attributes.
+If a policy applies to a Project based on the attributes, then role with edit project attribute permission can edit the Project attributes.
 {% endhint %}
 
 If multiple tags are added to a policy, the Project needs to match with only one of the Project tags. However, if other attributes are also listed on the policy, the Project would need to have all the attributes and at least one of the listed tags.

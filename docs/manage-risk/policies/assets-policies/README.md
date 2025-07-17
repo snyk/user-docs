@@ -27,10 +27,10 @@ Overview of asset policies
 You can create policies for organizing the assets, classifying them, and always being up to date with the latest information about an asset.\
 Common use cases for policies include:
 
-* [New asset notifications](use-cases-for-policies/notification-policy-use-case.md)
-* [Asset classification](use-cases-for-policies/classification-policy-use-case.md)
-* [Asset tagging](use-cases-for-policies/tagging-policy-use-case.md)
-* [Coverage control](use-cases-for-policies/coverage-control-policy-use-case.md)
+* [New asset notifications](use-cases-for-policies/notification-policy.md)
+* [Asset classification](use-cases-for-policies/classification-policy.md)
+* [Asset tagging](use-cases-for-policies/tagging-policy.md)
+* [Coverage control](use-cases-for-policies/coverage-control-policy.md)
 
 ### New asset notifications
 

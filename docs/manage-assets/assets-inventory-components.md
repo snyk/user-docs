@@ -200,7 +200,7 @@ System tags are automatically generated from the SCM repositories. System tags c
 
 ### Tagging policy
 
-You can use pre-defined system tags and asset tags to mark the repositories that meet your filter criteria. Check the following [Tagging policy use case](../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy-use-case.md).
+You can use pre-defined system tags and asset tags to mark the repositories that meet your filter criteria. Check the following [Tagging policy use case](../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy.md).
 
 ### Tag rules related to metadata
 

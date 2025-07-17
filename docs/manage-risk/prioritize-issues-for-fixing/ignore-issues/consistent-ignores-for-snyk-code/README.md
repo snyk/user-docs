@@ -6,7 +6,7 @@ By filtering out false positives, inapplicable threats, and accepted risks, your
 
 ## Enable Snyk Code Consistent Ignores
 
-Enable Snyk Code Consistent Ignores for your Group or Organization in the Snyk Web UI by navigating to **Group/Organization** > **Settings** **> General >** **Ignores across the repository for Snyk Code**.&#x20;
+Enable Snyk Code Consistent Ignores for your Group or Organization in the Snyk Web UI by navigating to **Group/Organization** > **Settings** > **General** > **Ignores across the repository for Snyk Code**.&#x20;
 
 ## Disable Snyk Code Consistent Ignores
 

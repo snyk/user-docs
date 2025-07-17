@@ -20,7 +20,7 @@ This list includes the [default policy](view-create-and-modify-policies.md#defau
 
 ### Policy details
 
-When you expand a category, the screen shows the policies applied to **Project attributes** and applied to **Organizations**. You can click to **Learn which policies take precedence** in each category. You can also **search** for a particular policy.
+When you expand a category, the screen shows the policies applied to **Project attributes** and applied to **Organizations**. You can click to **Learn which policies take precedence** in each category. You can also search for a particular policy.
 
 <figure><img src="../../.gitbook/assets/screenshot_2021-03-26_at_11.04.50_am.png" alt="Policy manager screen including attributes and Organizations to which each policy is applied"><figcaption><p>Policy manager screen including attributes and Organizations to which each policy is applied</p></figcaption></figure>
 

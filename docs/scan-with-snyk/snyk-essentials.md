@@ -59,7 +59,7 @@ meaningful, real-world components in an application’s SDLC, where meaningful m
 
 ### **Controls**
 
-The security controls associated with the asset. Navigate to the [Coverage controls](../manage-risk/policies/assets-policies/use-cases-for-policies/coverage-control-policy-use-case.md) section to see all available statuses for security controls.
+The security controls associated with the asset. Navigate to the [Coverage controls](../manage-risk/policies/assets-policies/use-cases-for-policies/coverage-control-policy.md) section to see all available statuses for security controls.
 
 ### **Coverage**
 

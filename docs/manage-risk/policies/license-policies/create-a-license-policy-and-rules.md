@@ -22,7 +22,7 @@ If your company account has one or more Groups, follow these steps to view and e
 1.  Use the **Switch Group** selector and choose a Group to open its overview.
 
     <figure><img src="../../../.gitbook/assets/license_choose-group_19oct2022.png" alt="Switch Group"><figcaption><p>Switch Group</p></figcaption></figure>
-2.  Navigate to **Policies > Policy manager > License policies > Organization** and choose the policy you want to edit.
+2.  Navigate to **Policies** > **Policy manager** > **License policies** > **Organization** and choose the policy you want to edit.
 
     <figure><img src="../../../.gitbook/assets/policy_license_18oct2022.png" alt="Choose the policy to update"><figcaption><p>Choose the policy to update</p></figcaption></figure>
 
@@ -34,7 +34,7 @@ You can edit the license severities and instructions.
 
 ## Assign rules and severities for a license policy
 
-1. In the **Policy manager**, navigate to **License policies > Organization**, and choose a policy link to open the **License policy** screen.
+1. In the **Policy manager**, navigate to **License policies** > **Organization**, and choose a policy link to open the **License policy** screen.
 2. To set the severity for specific licenses, click the **Severity** selector on the **License policy** screen, and choose a **Severity** level to define which license issues you want to identify when Snyk tests run.\
    If you select a severity other than **None** and want additional instructions or fix recommendations to appear when that license issue is identified, select the instructions icon to the right of the **Severity** dropdown and enter the text for the license instruction.
 3. Click **Add** or **Update** to confirm your changes.

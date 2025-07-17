@@ -1,4 +1,4 @@
-# Notification policy - Use case
+# Notification policy
 
 You can use the **Send Email** and **Send Slack Message** actions to notify you about changes that take place on your assets.
 
@@ -34,7 +34,7 @@ Customize the Send Email action to notify you with a link to the assets impacted
 
 This is how your policy should look after all filters and actions are set.
 
-<figure><img src="../../../../.gitbook/assets/image (508).png" alt="Snyk AppRisk - Setting up a Notification policy"><figcaption><p>Assets Policy - Setting up a Notification policy</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (508).png" alt="Snyk AppRisk - Setting up a Notification policy"><figcaption><p>Assets Policy - Setting up a notification policy</p></figcaption></figure>
 
 You will receive an email notification after including the **Link to Assets** option in the Body field. You can access the assets from the notification individually, or view them in an aggregated form by clicking the **Click Here** link. The list of assets displayed in the email notification is automatically generated.
 

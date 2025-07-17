@@ -1,4 +1,4 @@
-# Set up Insights: Associating Snyk Open Source, Code, and Container Projects
+# Set up Insights: associating Snyk Open Source, Code, and Container Projects
 
 {% hint style="info" %}
 The Set up Insights option is available only with Snyk AppRisk.
@@ -23,8 +23,8 @@ For more details regarding supported assets, you can navigate to the [Asset](../
 
 The container image is the build artifact that is deployed and running on your Kubernetes cluster, so Snyk can map your application from its source code to its deployed state by understanding the following:
 
-* The link between the Source Code and Open Source Dependencies and the **image**.
-* What **images** are deployed to Kubernetes, and how are they configured.
+* The link between the Source Code and Open Source Dependencies and the image.
+* What images are deployed to Kubernetes, and how are they configured.
 
 
 
@@ -42,7 +42,7 @@ See the examples at the end of this section.&#x20;
 
 * The same tag must be applied to the container image and Code or Open Source Projects,
 * The tag must follow the specified format,
-* The Projects do not have to be in the same Snyk Organization to be mapped but MUST be in the same Snyk Group,
+* The Projects do not have to be in the same Snyk Organization to be mapped but must be in the same Snyk Group,
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-06-06 at 23.29.29.png" alt="Project tags"><figcaption><p>Project tags</p></figcaption></figure>
 
@@ -50,7 +50,7 @@ See the examples at the end of this section.&#x20;
 
 ### **Single repo to a single image**
 
-In this example, there is a single repository containing your package.json which is built into an image called image-A.
+In this example, a single repository contains your package.json, which is built into an image called image-A.
 
 <figure><img src="../../../.gitbook/assets/Example - Single repo Single image.png" alt="Example: single repo to single image"><figcaption><p>Example: single repo to single image</p></figcaption></figure>
 
@@ -66,8 +66,7 @@ For this scenario, there are two contributing repositories.
 
 There is a front-end repository containing the package.json scanned by Snyk Open Source and a back-end repository containing go code scanned by Snyk Code.&#x20;
 
-To map these associations, you would have the following tags set up:\
-
+To map these associations, you would have the following tags set up:
 
 <table><thead><tr><th width="180">Location</th><th>Asset</th><th>Snyk Project Location</th><th>Tag(s)</th><th>Notes</th></tr></thead><tbody><tr><td>github.com/my-team/front-end</td><td><code>package.json</code></td><td><p>Snyk Org: my-team</p><p><br></p><p>Project name: package.json</p></td><td><code>component=pkg:github/my-team/front-end@main</code></td><td><br></td></tr><tr><td>github.com/my-team/back-end</td><td><code>Go source code</code></td><td><p>Snyk Org: my-team</p><p><br></p><p>Project name: Code</p></td><td><code>component=pkg:github/my-team/back-end@main</code></td><td><br></td></tr><tr><td><br></td><td>Built container image called <code>image-A</code></td><td><p>Snyk Org: my-team</p><p><br></p><p>Project name: image-A</p></td><td><p><code>component=pkg:github/my-team/front-end@main</code></p><p></p><p><code>component=pkg:github/my-team/back-end@main</code></p></td><td><p>The image has two tags applied, as there are two upstream dependencies which have different tags. <br></p><p>You can apply multiple tags to an image. </p></td></tr></tbody></table>
 
@@ -77,7 +76,7 @@ To map these associations, you would have the following tags set up:\
 
 In this example, the application team is using a monorepo approach. The contents of the repository are built into different container images as they may be run separately.&#x20;
 
-Here we need to further differentiate the tags by scoping them more accurately.&#x20;
+Here, we need to further differentiate the tags by scoping them more accurately.&#x20;
 
 <table><thead><tr><th>Location</th><th width="168">Asset</th><th>Snyk Project Location</th><th>Tag(s)</th><th></th></tr></thead><tbody><tr><td>github.com/my-team/service</td><td><code>package.json</code></td><td><p>Snyk Org: my-team</p><p><br></p><p>Project name: package.json</p></td><td><code>component=pkg:github/my-team/service/front-end@main</code></td><td>The tag is further scoped by specifying /front-end at the end</td></tr><tr><td><br></td><td>Built container image called <code>my-app-frontend:latest</code></td><td><p>Snyk Org: my-team</p><p><br></p><p>Project name: my-app-frontend:latest</p></td><td><code>component=pkg:github/my-team/service/front-end@main</code></td><td></td></tr></tbody></table>
 

@@ -80,7 +80,7 @@ When the `.snyk` file is included in an SCM Project, Snyk considers both the dat
 
 When you include the `.snyk` file in your code repository and the `language-settings:` value is set, you gain the advantage of creating Project-level Python settings when you run code repository scans.
 
-* For SCM scans, for example, GitHub scans, the Snyk Web UI controls the Python version at the Organization level, from the **Organization > Settings > Snyk Open Source > Python > Pip Python version** option.
+* For SCM scans, for example, GitHub scans, the Snyk Web UI controls the Python version at the Organization level, from the **Organization** > **Settings** > **Snyk Open Source** > **Python** > **Pip Python version** option.
 * By including a `.snyk` file in your code repository with the `language settings:` value set to one of the available UI language settings options, you can override the Organization level settings for SCM scans of that repository to use any Python version that is available in the UI options.
 
 {% hint style="info" %}
@@ -194,7 +194,7 @@ If **Admin users only** is enabled by using **Settings > General > Ignores,** yo
 To set these ignore preferences for use by the Snyk Web UI and API:
 
 1. Log in to your Snyk account.
-2. Select **Settings**, then **General**.
+2. Select **Settings** > **General**.
 3. Select an option as follows:
    * **Admin users only** - only admins can customize the ignore settings.
    * **All users in any environment** - all users can customize the ignore settings.

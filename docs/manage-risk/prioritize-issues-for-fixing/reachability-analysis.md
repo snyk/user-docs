@@ -16,17 +16,17 @@ Snyk uses a combination of static program analysis and various AI techniques to 
 
 The following instructions explain how to set up and use reachability analysis and provide more information on how the underlying analysis works at Snyk.&#x20;
 
-## Set up Reachability analysis
+## Set up reachability analysis
 
-Follow these steps to enable Reachability analysis and begin analyzing Projects for reachable vulnerabilities:&#x20;
+Follow these steps to enable reachability analysis and begin analyzing Projects for reachable vulnerabilities:&#x20;
 
 * In the Organization **Settings**, navigate to the **Snyk Open Source** section.
 * In the **General** section, find **Reachability analysis**.
 * Activate **Enable reachability analysis**.
 
-<figure><img src="../../.gitbook/assets/image (573).png" alt=""><figcaption><p>Enabling Reachability setting</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (573).png" alt=""><figcaption><p>Enabling reachability setting</p></figcaption></figure>
 
-After Reachability analysis is enabled, the analysis is done as part of scanning Projects.&#x20;
+After reachability analysis is enabled, the analysis is done as part of scanning Projects.&#x20;
 
 {% hint style="info" %}
 You can apply the reachability analysis to existing Projects by triggering a [manual test](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/#manual-snyk-prs).
@@ -60,11 +60,11 @@ Reachability analysis is supported in the following integrations:
 Reachability analysis using the Snyk CLI, IDE, or other integrations is not supported.
 {% endhint %}
 
-## **Enabling Reachability** analysis **for brokered connections**
+## **Enabling reachability** analysis **for brokered connections**
 
 If you use a brokered connection to your SCM, configure the [Broker](../../enterprise-setup/snyk-broker/) to provide access to your source files.
 
-## Using Reachability analysis
+## Using reachability analysis
 
 ### Reachability status&#x20;
 
@@ -101,23 +101,23 @@ Risk Score is available on the Projects page and through the API and Reports.&#x
 [Priority score](priority-score.md), the legacy model preceding the Risk Score, also takes reachable vulnerabilities into account.&#x20;
 {% endhint %}
 
-## How Reachable vulnerability analysis works
+## How reachable vulnerability analysis works
 
 Snyk uses a combination of security expert analysis, program analysis, and various AI techniques to determine the reachability of a vulnerability, including these steps of analysis:&#x20;
 
-1. **Enriching vulnerabilities with the patches applied to fix them** - as part of the Snyk vulnerability curation process, Snyk references the fix commit that the maintainer applied.&#x20;
-2. **Related elements analysis** - Based on the commit fix, Snyk uses DeepCode AI program analysis to analyze the code elements and other parameters related to the vulnerability.&#x20;
-3. **Root Cause analysis** - Snyk uses DeepCode AI and Natural language processing (NLP) techniques to automatically rank the related code elements by their chances of being the root cause of the vulnerability.  &#x20;
-4. **Reachability analysis** -  As issues are found in your application by a Snyk scan, the DeepCode program analysis engine is used to analyze the call graph of your application in relation to the call graph between the open-source dependencies used. A path between your application and a code element ranked as a root cause will yield a “Reachable” vulnerability.&#x20;
-5. **Security experts supervision** - Snyk security experts will manually verify and mark elements as root causes in order to make the entire analysis more accurate over time
+1. Enriching vulnerabilities with the patches applied to fix them - as part of the Snyk vulnerability curation process, Snyk references the fix commit that the maintainer applied.&#x20;
+2. Related elements analysis - Based on the commit fix, Snyk uses DeepCode AI program analysis to analyze the code elements and other parameters related to the vulnerability.&#x20;
+3. Root Cause analysis - Snyk uses DeepCode AI and Natural language processing (NLP) techniques to automatically rank the related code elements by their chances of being the root cause of the vulnerability.  &#x20;
+4. Reachability analysis -  As issues are found in your application by a Snyk scan, the DeepCode program analysis engine is used to analyze the call graph of your application in relation to the call graph between the open-source dependencies used. A path between your application and a code element ranked as a root cause will yield a “Reachable” vulnerability.&#x20;
+5. Security experts supervision - Snyk security experts will manually verify and mark elements as root causes in order to make the entire analysis more accurate over time
 
-The following considerations related to **false positives and false negatives** apply to Reachable vulnerability analysis.&#x20;
+The following considerations related to **f**alse positives and false negatives apply to Reachable vulnerability analysis.&#x20;
 
 Program analysis requires a trade-off between accurate results, minimizing false positives, and recall rates, by avoiding potentially exploitable vulnerabilities.&#x20;
 
 To facilitate this trade-off, Snyk DeepCode analysis applies real-time decision-making to determine whether to under-approximate the set of reachable elements based on analysis of the likelihood that a reachable path will be found in a specific environment.&#x20;
 
-For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. The agentic capability of Snyk  analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure.&#x20;
+For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. The agentic capability of Snyk analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure.&#x20;
 
 {% hint style="info" %}
 Changes in the first-party code, in the vulnerability analysis, and enhancements in the SAST engine can impact the results.&#x20;
@@ -125,7 +125,7 @@ Changes in the first-party code, in the vulnerability analysis, and enhancements
 Therefore, vulnerabilities labeled as **Not path found** can change to **Reachable** over time.
 {% endhint %}
 
-### Understanding the Limits of Reachability in Static Analysis
+### Understanding the limits of reachability in static analysis
 
 Snyk aims to identify and demonstrate when a code element is reachable, while also addressing the challenges of indicating that a code element cannot be reached.  &#x20;
 

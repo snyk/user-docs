@@ -1,4 +1,4 @@
-# Application - Analytics
+# Application analytics
 
 {% hint style="info" %}
 **Release status**&#x20;
@@ -85,7 +85,7 @@ The dashboard default view compares assets and issues metrics by asset class. Di
 
 [Asset class](../../manage-assets/assets-inventory-components.md#class) reflects the business criticality of the asset from A (most critical) to D (least critical).\
 By having this level of visibility, you can prioritize the most crucial assets in your inventory, applications, or code owners.\
-To associate assets with asset class, you can either change the asset class manually in the inventory screen or, preferably, define a [classification policy](../policies/assets-policies/use-cases-for-policies/classification-policy-use-case.md) that will automatically assign an asset class to your assets.
+To associate assets with asset class, you can either change the asset class manually in the inventory screen or, preferably, define a [classification policy](../policies/assets-policies/use-cases-for-policies/classification-policy.md) that will automatically assign an asset class to your assets.
 
 #### Applications and Owner view <a href="#applications-and-owners-view" id="applications-and-owners-view"></a>
 
@@ -179,4 +179,3 @@ The following video presents an overview of the Application Analytics Repository
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1739219742/snyk-learn/product-training-videos/Snyk_AppRisk_-10e_-_v1_-_App_Analytics_Repo_Metadata_Completeness_and_Source_Distribution.mp4" %}
 Analytics Repository metadata completeness and source distribution view
 {% endembed %}
-

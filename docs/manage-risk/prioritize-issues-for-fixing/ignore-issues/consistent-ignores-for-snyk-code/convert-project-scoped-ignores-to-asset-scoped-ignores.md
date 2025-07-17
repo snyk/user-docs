@@ -39,7 +39,7 @@ Conversion using Snyk Web UI is only available for Projects with 200 or fewer le
 
 You can migrate pre-existing Project-scoped ignores to asset-scoped ignores manually on the Projects page.&#x20;
 
-To convert all legacy ignores from a Project page, navigate to your **Organization > Projects**, and then click **Convert (number of) ignores in this Project.**
+To convert all legacy ignores from a Project page, navigate to your **Organization** > **Projects**, and then click **Convert (number of) ignores in this Project.**
 
 <figure><img src="https://lh7-rt.googleusercontent.com/slidesz/AGV_vUf8vec5WgI3BrzPhkFHTmvuC4aPFWIsYWnMry83OueLkgImeYxYm2mFD_Ixu5-CF97pmgnjfaw1dc0tMGemmrEzsE4_kM5jJqzbxbTm7MZEUEPQEGOeIHuAeoCqoLTEVbzl4Zf1Pg=s2048?key=IJQqGeWGXBW00dvkAmRgPg" alt="Bulk conversion from the Projects page in Snyk Web UI."><figcaption><p>Bulk conversion from the Projects page</p></figcaption></figure>
 

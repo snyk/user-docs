@@ -16,10 +16,10 @@ The Risk Factors are available only with Snyk AppRisk.
 
 Snyk AppRisk Insights product operates by providing you with the following risk factors for your vulnerabilities:&#x20;
 
-* [**Deployed**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md): Is my code and container image deployed anywhere?
-* [**Loaded package**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md): Has a third-party package that is the dependency of an image been loaded?
-* [**OS condition**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-os-condition.md): Does this vulnerability apply to my operating system?
-* [**Public facing**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-public-facing.md): Does my container have any internet exposure?
+* [Deployed](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md): Is my code and container image deployed anywhere?
+* [Loaded package](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md): Has a third-party package that is the dependency of an image been loaded?
+* [OS condition](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-os-condition.md): Does this vulnerability apply to my operating system?
+* [Public facing](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-public-facing.md): Does my container have any internet exposure?
 
 ### Risk factors usage criteria
 
@@ -41,7 +41,7 @@ You need to meet the following conditions to use the OS condition risk factor:&#
 
 <figure><img src="../../../.gitbook/assets/Example OS condition.png" alt="Source code and dependencies built into a container image"><figcaption><p>Source code and dependencies built into a container image</p></figcaption></figure>
 
-#### **Deployed and Public facing risk factors**
+#### **Deployed and public facing risk factors**
 
 You need to meet the following conditions to use the Deployed and Public facing risk factors:&#x20;
 
@@ -51,7 +51,7 @@ Ensure you meet these requirements to gather data for all four risk factors for 
 
 ### Maximize your insights
 
-Snyk **recommends** that you also perform the following steps to get the maximum value out of insights:
+Snyk recommends that you also perform the following steps to get the maximum value out of insights:
 
 * Scan the third-party dependencies using Snyk Open Source,
 * Scan the source code using Snyk Code
@@ -81,7 +81,7 @@ The Kubernetes Connector is different from the Kubernetes Controller, Snyk-Monit
    You can also filter relevant sections by Organization for a granular view of your progress.
 
 {% hint style="info" %}
-The Insights page, from the Set up Insights tab, is available only for Snyk AppRisk users.
+The Insights page, from the **Set up Insights** tab, is available only for Snyk AppRisk users.
 {% endhint %}
 
 ## Set up Insights UI settings
@@ -94,15 +94,15 @@ The Insights settings are organized into three main categories:
 
 All these settings can be found in the Snyk Web UI, under Group Settings, the Settings option.
 
-### Risk Factors
+### Risk factors
 
 You can enable or disable the available risk factors: [Deployed](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), [Loaded package](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md), [OS condition](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-os-condition.md), [Public facing](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-public-facing.md). When a risk factor is disabled, it will not be used to calculate issues.
 
 You can enable or disable the risk factors from [Snyk Web UI](../../../getting-started/snyk-web-ui.md), Group Settings, Settings option, Risk factors.
 
-### Provider Selection
+### Provider selection
 
-You can set up multiple Kubernetes runtime providers to gather relevant runtime risk factors from your current integrations. When multiple Kubernetes runtime providers report the same resources, some details, such as the Loaded package, may only be available from one of them.&#x20;
+You can set up multiple Kubernetes runtime providers to gather relevant runtime risk factors from your current integrations. When multiple Kubernetes runtime providers report the same resources, some details, such as the loaded package, may only be available from one of them.&#x20;
 
 The default provider setting is used when two or more providers report data for the same Kubernetes cluster. When the same deployment is identified, select which one should take priority. When no default provider is selected, the earliest data available is used.
 
@@ -112,7 +112,7 @@ Individual providers can also be disabled here if they should not be used when c
 Consider setting up a default provider. When a default provider is not configured, Snyk prioritizes data from the first provider added.
 {% endhint %}
 
-### Kubernetes Cluster Mapping
+### Kubernetes cluster mapping
 
 Runtime providers may report different names that refer to the same Kubernetes cluster. You can add a cluster name mapping to let Insights correlate resources from the two data sets.&#x20;
 
@@ -128,17 +128,17 @@ When prioritizing issues, it is important to understand the available integratio
 
 Here are the integration options that you can choose from when setting up issues prioritization. You can customize the settings by navigating to the Group level [Snyk Web UI](../../../getting-started/snyk-web-ui.md), the Setting menu, and then the Insights option.&#x20;
 
-* [**Snyk Runtime Sensor**](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md): Used for deeper runtime analysis, providing detailed insight into the actual usage and potential vulnerabilities of your applications during execution. This sensor helps in gathering live traffic data, identifying runtime vulnerabilities, and assessing potential risks based on real-time application behavior.
-* [**Kubernetes Connector**](set-up-insights-kubernetes-connector.md): Offers comprehensive monitoring for your Kubernetes deployments. This integration helps identify vulnerabilities within Kubernetes clusters and provides data on workload vulnerabilities, infrastructure misconfigurations, and potential malicious activity.
-* [**Third-party Integrations**](../../snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md): These integrations, such as cloud providers or CI/CD tools, provide additional context and data sources for better vulnerability assessment. They help identify misconfigurations, exposure points, and integration-specific vulnerabilities.
+* [Snyk Runtime Sensor](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md): Used for deeper runtime analysis, providing detailed insight into the actual usage and potential vulnerabilities of your applications during execution. This sensor helps in gathering live traffic data, identifying runtime vulnerabilities, and assessing potential risks based on real-time application behavior.
+* [Kubernetes Connector](set-up-insights-kubernetes-connector.md): Offers comprehensive monitoring for your Kubernetes deployments. This integration helps identify vulnerabilities within Kubernetes clusters and provides data on workload vulnerabilities, infrastructure misconfigurations, and potential malicious activity.
+* [Third-party Integrations](../../snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md): These integrations, such as cloud providers or CI/CD tools, provide additional context and data sources for better vulnerability assessment. They help identify misconfigurations, exposure points, and integration-specific vulnerabilities.
 
 ### Risk factors mapped to integration options
 
 Each of these integration options uses different risk factors:
 
-* **Snyk Runtime Sensor**: Deployed and Loaded Package
-* **Kubernetes Connector**: Deployed, Public facing
-* **Third-party Integrations**: Deployed and Loaded Package
+* Snyk Runtime Sensor: **Deployed** and **Loaded Package**
+* Kubernetes Connector: **Deployed**, **Public facing**
+* Third-party Integrations: **Deployed** and **Loaded Package**
 
 By leveraging these integration options, you can ensure comprehensive coverage and accurate prioritization of security risks.
 

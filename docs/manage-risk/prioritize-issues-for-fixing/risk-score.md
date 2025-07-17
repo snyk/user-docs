@@ -81,12 +81,12 @@ Contextual likelihood factors then increase or decrease the likelihood subscore:
 #### Confidentiality
 
 Represents the impact on the customer’s data confidentiality, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-1-Confidentiality-C).\
-**Possible input values:** `None`, `Low`, `High`
+Possible input values: `None`, `Low`, `High`
 
 #### Integrity
 
 Represents the impact on the customer’s data integrity, based on the [CVSS definition](https://www.first.org/cvss/v3.1/specification-document#2-3-2-Integrity-I).\
-**Possible input values:** `None`, `Low`, `High`
+Possible input values: `None`, `Low`, `High`
 
 #### Availability
 

@@ -3,9 +3,7 @@
 Malicious packages are a popular and growing method of carrying out software supply chain attacks. This page explains what malicious packages are, how Snyk identifies them, and what customers should do if they have malicious packages in their Projects.
 
 {% hint style="warning" %}
-Snyk does not consider the provenance or origin of a scanned package. In some cases, Snyk may detect false positives when the ecosystem, name, and version of a scanned package match a malicious public package.
-
-Ensure you [verify the provenance of your packages](malicious-packages.md#verifying-the-provenance-of-packages).
+Snyk does not consider the provenance or origin of a scanned package. In some cases, Snyk may detect false positives when the ecosystem, name, and version of a scanned package match a malicious public package. Ensure you verify the provenance of your packages.
 {% endhint %}
 
 ## Introduction to malicious packages
@@ -163,8 +161,8 @@ If you find evidence that a malicious package was installed in your environment,
 
 You can remediate specific cases of malicious packages by implementing the following tactics:
 
-* **Typosquatting**:  Remove the malicious package and switch to the correct safe package.
-* **Dependency confusion:** If you imported the public package, either by accident or by default in the CI, before it was placed in "security holding," be sure to remove it. Ensure your development environment and the CI pipeline are configured to use the private registry and install the same-name internal package instead.&#x20;
-* **Dependency hijacking** and **Compromised account**: A new safe version is typically released after identifying the malicious package. To resolve this type of attack, update the package to a new version.
+* Typosquatting:  Remove the malicious package and switch to the correct safe package.
+* Dependency confusion: If you imported the public package, either by accident or by default in the CI, before it was placed in "security holding," be sure to remove it. Ensure your development environment and the CI pipeline are configured to use the private registry and install the same-name internal package instead.&#x20;
+* Dependency hijacking and Compromised account: A new safe version is typically released after identifying the malicious package. To resolve this type of attack, update the package to a new version.
 
 It is important to assume that your environment has been infected and to conduct internal security drills. After removing the malicious package, be sure to check for any remnants of the malicious code.
