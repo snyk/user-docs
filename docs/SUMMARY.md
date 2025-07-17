@@ -895,6 +895,7 @@
   * [Analytics](manage-risk/analytics/README.md)
     * [Issues - Analytics](manage-risk/analytics/issues-analytics.md)
     * [Application - Analytics](manage-risk/analytics/application-analytics.md)
+    * [Redesigned Analytics](manage-risk/analytics/redesigned-analytics.md)
   * [Reporting](manage-issues/reporting/README.md)
     * [Available Snyk reports](manage-issues/reporting/available-snyk-reports.md)
     * [Issue columns dictionary](manage-risk/reporting/issue-columns-dictionary.md)
