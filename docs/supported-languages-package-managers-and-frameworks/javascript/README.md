@@ -70,6 +70,7 @@ The following frameworks and libraries are supported in Snyk for JavaScript:
 * graceful-fs - Comprehensive
 * graphql-js - Partial
 * grpc-js - Comprehensive
+* hapi.js - Comprehensive
 * jQuery - Comprehensive
 * js-yaml - Comprehensive
 * jzip - Comprehensive
@@ -106,6 +107,7 @@ The following frameworks and libraries are supported in Snyk for JavaScript:
 * Stanford JS Crypto - Comprehensive
 * superagent - Comprehensive
 * tar-stream - Comprehensive
+* TSOA - Comprehensive
 * unirest - Comprehensive
 * unzip - Comprehensive
 * underscore - Comprehensive
