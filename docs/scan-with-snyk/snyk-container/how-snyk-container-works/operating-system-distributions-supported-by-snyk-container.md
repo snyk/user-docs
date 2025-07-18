@@ -97,6 +97,10 @@ This is the list of supported operating systems and distributions:
 
 ## [SUSE Linux Enterprise Server (SLES)](https://www.suse.com/products/server/)
 
+* SUSE Linux Enterprise Server 15.6
+* SUSE Linux Enterprise Server 15.5
+* SUSE Linux Enterprise Server 15.4
+* SUSE Linux Enterprise Server 15.3
 * SUSE Linux Enterprise Server 15.2
 * SUSE Linux Enterprise Server 15.1
 * SUSE Linux Enterprise Server 15.0
