@@ -2,7 +2,7 @@
 
 {% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
 
-Confirm with your Snyk account team the region where your Snyk account is located. The guide below shows the setup for SNYK-US-02, but the process is similar for [other regions](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#available-snyk-regions).
+Confirm with your Snyk account team the region where your Snyk account is located. The guide below shows the setup for SNYK-US-02, but the process is similar for [other regions](../../../working-with-snyk/regional-hosting-and-data-residency.md#available-snyk-regions).
 
 ## Snyk Web UI
 

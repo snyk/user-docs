@@ -119,7 +119,7 @@ For Brokered integrations, the Data Flow section in the inline comments is avail
 {% hint style="info" %}
 **Release status**
 
-Snyk Agent fix in the PR is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available only for GitHub Integrations.\
+Snyk Agent fix in the PR is in [Early Access](../../../getting-started/snyk-release-process.md#early-access-features) and available only for GitHub Integrations.\
 Snyk Agent fix in the PR will work only on inline comments created after the feature is enabled.
 {% endhint %}
 
@@ -163,7 +163,7 @@ For every pushed commit, a review is created if Snyk Code PR Check detects new i
 
 ### Why are PR comments not appearing in my repository?
 
-To ensure your repository receives PR comments, review the [Prerequisites for the Snyk Pull Request Experience](pull-request-experience.md#prerequisites-for-the-snyk-pull-request-experience) section. Ensure all required conditions are met and properly fulfilled.
+To ensure your repository receives PR comments, review the [Prerequisites for the Snyk Pull Request Experience](pull-request-experience.md#prerequisites) section. Ensure all required conditions are met and properly fulfilled.
 
 Inline comments are available only for issues detected by Snyk Code PR Checks. To ensure that issues appear as inline comments, verify the following requirements:
 

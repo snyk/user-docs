@@ -9,7 +9,7 @@ The redesigned Snyk Analytics experience in Early Access is available to all cus
 Learn how to build custom dashboards, access enhanced metrics, and explore Tenant-level analytics. The redesigned Snyk Analytics includes:
 
 * Customizable analytics landing page: A new tenant-level landing page featuring a widget inventory. You can select and arrange widgets to create a personalized dashboard focused on the metrics most relevant to your needs.
-* Saved views: This new experience features ‌[Saved Views](https://docs.snyk.io/manage-risk/reporting#saved-views).
+* Saved views: This new experience features ‌[Saved Views](../../manage-issues/reporting/#saved-views).
 * Report catalog: A centralized catalog of Snyk Group-level reports. Use this to discover and access pre-built reports relevant to specific Groups within your Organization.
 * Issues/Assets drill-down: Enhanced drill-down capabilities allow you to explore issues and assets in greater detail directly from the dashboard.
 

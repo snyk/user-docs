@@ -4,7 +4,7 @@
 
 ## Reporting
 
-The Snyk platform has a variety of [available reports](https://docs.snyk.io/manage-risk/reporting/available-snyk-reports) at the Organization and Group level, and [issue analytics](https://docs.snyk.io/manage-risk/enterprise-analytics/issues-analytics) to provide deeper insights at the tenant level. This guide covers a few of the key reports and capabilities.
+The Snyk platform has a variety of [available reports](../../../manage-issues/reporting/available-snyk-reports.md) at the Organization and Group level, and [issue analytics](../../../manage-risk/analytics/issues-analytics.md) to provide deeper insights at the tenant level. This guide covers a few of the key reports and capabilities.
 
 ## Issues Detail
 
@@ -28,7 +28,7 @@ The SLA Management report allows you to stay on top of any SLAs your company is 
 
 ## Issues Analytics
 
-Analytics can be accessed at the tenant level. This view breaks down the total issue count into baseline, preventable, and non-preventable issues. More details on this breakdown can be found [here](https://docs.snyk.io/manage-risk/enterprise-analytics/issues-analytics#delineation-of-how-risk-is-introduced), but the most important thing to know is that:
+Analytics can be accessed at the tenant level. This view breaks down the total issue count into baseline, preventable, and non-preventable issues. More details on this breakdown can be found [here](../../../manage-risk/analytics/issues-analytics.md#delineation-of-how-risk-is-introduced), but the most important thing to know is that:
 
 * Baseline issues are the issues identified during the first import of the repository.
 * Preventable issues are known issues that could have been identified earlier on in the SDLC. In other words, the issue could have been caught by a Snyk PR check.
@@ -44,7 +44,7 @@ This is a small taste of what reporting has to offer. Check out more of the Snyk
 
 Additional Resources
 
-* [Docs: Analytics](https://docs.snyk.io/manage-risk/enterprise-analytics)
-* [Docs: Reports](https://docs.snyk.io/manage-risk/reporting)
+* [Docs: Analytics](../../../manage-risk/analytics/)
+* [Docs: Reports](../../../manage-issues/reporting/)
 * [Product Training: Reports](https://learn.snyk.io/catalog/?type=product-training\&topics=Reporting)
 {% endhint %}

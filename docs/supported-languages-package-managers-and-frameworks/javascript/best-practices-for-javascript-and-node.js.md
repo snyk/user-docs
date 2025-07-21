@@ -66,7 +66,7 @@ As a user of npm, you may ask, “Why Snyk?” when npm-audit is at hand anytime
 * Broad support across programming languages and package managers.
 * Ignore capabilities.
 
-For more information, see the [Javascript](./#npm) overview page.
+For more information, see the [Javascript](./) overview page.
 
 ### Yarn
 
@@ -76,7 +76,7 @@ Requires yarn.lock and package.json
 * If a lock file is not present in CLI, the `node_modules` folder will be used to construct the dependency tree.
 * `nohoist` is not supported for Yarn Workspaces.
 
-For more information, see the [Javascript](./#yarn) overview page.
+For more information, see the [Javascript](./) overview page.
 
 ### Lerna/PNPM
 

@@ -40,6 +40,6 @@ The asset class is a great way to filter on the most critical repositories in yo
 {% hint style="info" %}
 Additional Resources
 
-* [Manage assets](https://docs.snyk.io/manage-assets)
+* [Manage assets](../../../manage-assets/)
 * [Product Training: Snyk Essentials](https://learn.snyk.io/catalog/?type=product-training\&topics=Snyk+Essentials)
 {% endhint %}

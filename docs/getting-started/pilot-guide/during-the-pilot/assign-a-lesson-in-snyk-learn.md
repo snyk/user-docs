@@ -32,7 +32,7 @@ See the [Snyk Learn reports](../../../snyk-learn/snyk-learn-reports.md) page for
 {% hint style="info" %}
 Additional Resources
 
-* [Docs: Snyk Learn](https://docs.snyk.io/snyk-learn)
-* [Docs: Snyk Learn Assignments](https://docs.snyk.io/snyk-learn/snyk-learn-assignments)
-* [Docs: Snyk Learn Reports](https://docs.snyk.io/snyk-learn/snyk-learn-reports)
+* [Docs: Snyk Learn](../../../snyk-learn/)
+* [Docs: Snyk Learn Assignments](../../../snyk-learn/snyk-learn-assignments.md)
+* [Docs: Snyk Learn Reports](../../../snyk-learn/snyk-learn-reports.md)
 {% endhint %}
