@@ -39,7 +39,7 @@ Reachability analysis is supported for the following languages and package manag
 | Language                                                                                                                                                                   | Package manager     | Release status       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | -------------------- |
 | [Java](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/)                                                                                         | Maven, Gradle       | General Availability |
-| [JavaScript](../../supported-languages-package-managers-and-frameworks/javascript/), [TypeScript](../../supported-languages-package-managers-and-frameworks/typescript.md) | npm, Yarn           | Early Access         |
+| [JavaScript](../../supported-languages-package-managers-and-frameworks/javascript/), [TypeScript](../../supported-languages-package-managers-and-frameworks/typescript.md) | npm, Yarn           | General Availability |
 | [Python](../../supported-languages-package-managers-and-frameworks/python/)                                                                                                | pip, poetry, pipenv | Early Access         |
 | [C#](../../supported-languages-package-managers-and-frameworks/.net/)                                                                                                      | NuGet               | Early Access         |
 
