@@ -119,8 +119,7 @@ For Brokered integrations, the Data Flow section in the inline comments is avail
 {% hint style="info" %}
 **Release status**
 
-Snyk Agent fix in the PR is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available only for GitHub Integrations.
-
+Snyk Agent fix in the PR is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available only for GitHub Integrations.\
 Snyk Agent fix in the PR will work only on inline comments created after the feature is enabled.
 {% endhint %}
 
@@ -201,3 +200,25 @@ To troubleshoot the webhook upgrade process, go to the repository settings page 
 ### Why is Snyk Agent fix replying with command execution is already in progress, when I submitted a single command?
 
 This can happen when a repository is imported into multiple Snyk Organisations and there are multiple Snyk webhooks defined on the repository. For best results ensure that only a single Snyk webhook is subscribed to pull request comment events. If needed, the Snyk webhook event subscriptions can be edited from the repository settings page of your SCM.
+
+### Why did my comment fail with a message about replying to the first comment in the thread in Bitbucket?
+
+In some cases, commands in comment replies may fail to run in long or complex threads. This can happen because the thread's length or structure prevents us from handling the reply correctly. If you encounter this rare issue, please scroll to the first comment in the thread and reply to that with your command. This will allow us to process it successfully and always works as a fallback.
+
+### Why doesn’t applying an AI Fix work on some pull requests from forks in Bitbucket Cloud?
+
+AI Fix supports pull requests from repositories within the same workspace (e.g., `base_workspace/fork_repo` → `base_workspace/base_repo`), but it does not support pull requests from a fork located in a different workspace (e.g., `fork_workspace/fork_repo` → `base_workspace/base_repo`). This limitation is specific to the Bitbucket Cloud Connect app when the integration only has access to the base workspace. To enable AI Fix for these cross-workspace pull requests, you can switch to the Bitbucket Cloud PAT integration instead.
+
+### I'm having trouble with the Snyk Agent Fix feature on Bitbucket Cloud. How can I debug it?
+
+If you are having issues with agent-based fixes on Bitbucket Cloud and can't identify the cause, a useful troubleshooting step is to inspect the webhook history in your Bitbucket repository settings.
+
+The Snyk Agent Fix feature relies on webhooks to communicate between Bitbucket Cloud and our systems. By checking the webhook history, you can verify if webhooks are being delivered successfully and inspect the responses from the service. This can help diagnose network issues, configuration problems, or errors returned by the service. In order to have access to the webhook history in Bitbucket Cloud you need to:
+
+1. Go to your repository on Bitbucket Cloud.
+2. Click on **Repository settings** in the left sidebar.
+3. Under the "WORKFLOW" section, select **Webhooks.**
+4. Locate the webhook used for the integration.
+5. Click **View requests** next to the webhook URL.
+6. Click on **Enable History**.
+7. Post a new Snyk Agent Fix command so you can see the webhook deliveries.
