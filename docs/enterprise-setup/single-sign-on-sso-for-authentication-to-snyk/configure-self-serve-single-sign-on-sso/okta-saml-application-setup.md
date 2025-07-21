@@ -20,7 +20,7 @@ This example shows setting up an Okta SAML application and connecting this to Sn
 6.  Scroll down to **Attribute Statements** and add three attributes named with values as follows:
 
     * **Name**: email, **Value**: user.email
-    * **Name**: name, **Value**: user.firstName + ' ' + user.lastName
+    * **Name**: name, **Value**: user.firstName + " " + user.lastName
     *   **Name**: username, **Value**: user.login
 
         <figure><img src="../../../.gitbook/assets/5 (2) (1) (1) (1) (1) (1).png" alt="Add Okta attribute statements"><figcaption><p>Add Okta attribute statements</p></figcaption></figure>
