@@ -21,11 +21,9 @@ This example shows setting up an Okta SAML application and connecting this to Sn
 
     * **Name**: email, **Value**: user.email
     * **Name**: name, **Value**: user.firstName + " " + user.lastName
-    *   **Name**: username, **Value**: user.login
+    * **Name**: username, **Value**: user.login
 
-        <figure><img src="../../../.gitbook/assets/5 (2) (1) (1) (1) (1) (1).png" alt="Add Okta attribute statements"><figcaption><p>Add Okta attribute statements</p></figcaption></figure>
-
-    Now click **Next** and enter feedback details if desired or go to the next step.
+    Click **Next** and enter feedback details if desired or go to the next step.
 7. Open your Okta application list again and click on your newly created application and the **Sign on** tab. To the right of the page, click on **View SAML setup instructions** then from the page that opens, copy the **Identity Provider Single Sign-On URL** and the **X.509 certificate**.
 8.  Go back to the previous page and go to the **Assignments** tab. Click on **Assign** and choose users, groups, or both according to your needs.
 
