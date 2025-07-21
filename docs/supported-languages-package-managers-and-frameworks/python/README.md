@@ -99,7 +99,7 @@ See [Git repositories and Python](scm-integrations-and-python.md) for informatio
 
 ### Pipenv and Python versions supported
 
-Supported Python versions are `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`.
+The supported versions of Python are `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`.
 
 Snyk uses Python version information specified in each `Pipfile` to choose the major and minor versions to use in scanning, for example:
 
