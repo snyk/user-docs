@@ -10,9 +10,11 @@ By specifying the environment variable `SNYK_CACHE_PATH`, you can define the pat
 
 ## **Configure a timeout for CLI operations**
 
-`SNYK_TIMEOUT_SECS`&#x20;
+`SNYK_TIMEOUT_SECS`
 
 When you specify an environment variable such as `SNYK_TIMEOUT_SECS=60`, the CLI will cancel all operations after 60 seconds and exit with exit code 69.
+
+The timeout can range from 1 to 2.147.483.648 seconds, approximately 596.523 hours.&#x20;
 
 ## **Configure authentication for container registries**
 
