@@ -458,6 +458,7 @@
       * [Error executing binary because of corporate policy (Windows)](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/error-executing-binary-because-of-corporate-policy-windows.md)
       * [Net new issues (delta) scan troubleshooting](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/net-new-issues-delta-scan-troubleshooting.md)
       * [IDE plugin scan fails on Windows systems with .exe download blocking](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/ide-plugin-fails-with-scan-failed-on-windows-systems-with-.exe-download-blocking.md)
+    * [IDE Plugin Compatibility Matrix](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/compatibility-matrix.md)
   * [Snyk CI/CD integrations](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/README.md)
     * [Snyk Code in the CI/CD pipeline](cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/use-snyk-code-in-the-ci-cd-pipeline.md)
     * [Snyk CI/CD Integration deployment and strategies](cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/README.md)
