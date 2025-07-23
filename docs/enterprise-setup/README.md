@@ -28,8 +28,6 @@ The tool that best serves your tech stack, environment, and workflow depends on 
 
 To learn more about choosing the best integration points within the software development lifecycle for you and for your team, at their current level of security maturity, see [Integrating Snyk at your company](https://learn.snyk.io/lesson/integrate-snyk-at-your-company/).
 
-To see what Snyk can do for you, try out a Project.
-
 The rest of this page explains how to connect a Git repository to Snyk and how to show results from scanning Snyk Projects that are in that repository. The focus is on helping you understand how Snyk works before you start the process of implementing Snyk with your team or teams.
 
 {% hint style="info" %}
@@ -101,7 +99,7 @@ Reviewing infrastructure issues video
 
 ## Scan with the Snyk CLI
 
-Some package managers **rely on context from the local environment**. With these package managers, **scanning in the local environment or as part of the CI/CD pipeline gives the most accurate results**.
+Some package managers rely on context from the local environment. With these package managers, scanning in the local environment or as part of the CI/CD pipeline gives the most accurate results.
 
 To start using the Snyk CLI or a CI/CD plugin, [install the Snyk CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/). After you have installed it, you must [authenticate your machine to associate the CLI with your Snyk account](../snyk-cli/authenticate-to-use-the-cli.md), as demonstrated in this video.
 
@@ -109,7 +107,7 @@ To start using the Snyk CLI or a CI/CD plugin, [install the Snyk CLI](../cli-ide
 Authenticate CLI video
 {% endembed %}
 
-A scan with [**Snyk test**](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/) provides information about open-source package issues, including fix advice, as demonstrated in this video.
+A scan with [Snyk test](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/) provides information about open-source package issues, including fix advice, as demonstrated in this video.
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/b8vrvtmnbu" %}
 Snyk test video
@@ -123,7 +121,7 @@ A scan with [`snyk iac test`](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-an
 
 ## Next steps in implementing the Snyk Enterprise plan
 
-* If you want developers to try Snyk in their local environment using the IDE or CLI, review [Walkthrough: Initiate a scan locally](../implement-snyk/walkthrough-initiate-a-scan-locally.md).
+* If you want developers to try Snyk in their local environment using the IDE or CLI, review [Snyk API](../snyk-api/) and [Snyk CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/).
 * To get specific recommendations for your tech stack, visit the guide specific to your language.
 * When you are ready to plan a Snyk rollout to more teams, review the [Enterprise implementation guide](../implement-snyk/enterprise-implementation-guide/) for more information.
 * See the [Developer launch package](https://assets.ctfassets.net/4un77bcsnjzw/2YfaqJNMsogGNJM6BBQz4p/8f5ca77b9c40a1bbe14cc9fb0aa05462/Snyk-developer-launch-package.pdf) for additional strategies, communication templates, and checklists for rolling Snyk out to a wider audience.
