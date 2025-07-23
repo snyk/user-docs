@@ -1,18 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Snyk release process
 
 {% hint style="info" %}
@@ -23,11 +8,11 @@ Not all features follow all these stages, and timelines for each feature vary.
 
 Snyk features are provided to users in the following release stages.
 
-<table><thead><tr><th>Stage</th><th width="195.8680419921875">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Alpha</td><td>Internal release only</td><td>Snyk internal users, potentially some design partners</td><td>Controlled </td><td>No documentation provided</td></tr><tr><td>Closed Beta</td><td>The first customer-facing rollout of a feature</td><td>A preselected group of users</td><td>Invitation only</td><td>Provided but not public</td></tr><tr><td>Early Access</td><td>Feature is tested and ready for use, but not available by default. See <a href="snyk-release-process.md#early-access-features">Early Access features</a></td><td>All users on an opt-in basis. This may include some additional purchase costs</td><td>Opt-in: on request through Snyk account team, or using Snyk Preview</td><td>Public documentation</td></tr><tr><td>General Availability</td><td>Feature is fully enabled</td><td>All users, subject to standard feature availability</td><td>Available by default</td><td>Full public documentation</td></tr></tbody></table>
+<table><thead><tr><th>Stage</th><th width="195.8680419921875">Description</th><th>Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Alpha</td><td>Internal release only</td><td>Snyk internal users, potentially some design partners</td><td>Controlled </td><td>No documentation provided</td></tr><tr><td>Closed Beta</td><td>The first customer-facing rollout of a feature</td><td>A preselected group of users</td><td>Invitation only</td><td>Provided but not public</td></tr><tr><td>Early Access</td><td>Feature is tested and ready for use, but not available by default. See <a href="snyk-release-process.md#early-access-features">Early Access features</a></td><td>All users on an opt-in basis. This may include some additional purchase costs</td><td>Opt-in: on request through Snyk account team, or using Snyk Preview</td><td>Public documentation</td></tr><tr><td>General Availability</td><td>Feature is fully enabled</td><td>All users, subject to standard feature availability</td><td>Available by default</td><td>Public documentation</td></tr></tbody></table>
 
 ## Feature lifecycle stages
 
-<table><thead><tr><th>Stage</th><th>Description</th><th width="131.5997314453125">Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Deprecated</td><td>The feature is available, but use is discouraged. See <a href="snyk-release-process.md#deprecated-features">Deprecated features</a></td><td>Active users only</td><td>Available by default</td><td>Full public documentation, with the Release status at the top of the page</td></tr><tr><td>End of support</td><td>No new support tickets will be answered. See <a href="snyk-release-process.md#end-of-support-features">End of support features</a></td><td>Active users only</td><td>Available by default</td><td>Full public documentation, with the Release status at the top of the page</td></tr><tr><td>End of Life</td><td>The feature is no longer available</td><td>No users</td><td>Not available</td><td>No documentation available</td></tr></tbody></table>
+<table><thead><tr><th>Stage</th><th>Description</th><th width="131.5997314453125">Available to</th><th>Access</th><th>Docs</th></tr></thead><tbody><tr><td>Deprecated</td><td>The feature is available, but use is discouraged. See <a href="snyk-release-process.md#deprecated-features">Deprecated features</a></td><td>Active users only</td><td>Available by default</td><td>Public documentation, with the Release status at the top of the page</td></tr><tr><td>End of support</td><td>No new support tickets will be answered. See <a href="snyk-release-process.md#end-of-support-features">End of support features</a></td><td>Active users only</td><td>Available by default</td><td>Public documentation, with the Release status at the top of the page</td></tr><tr><td>End of Life</td><td>The feature is no longer available</td><td>No users</td><td>Not available</td><td>No documentation available</td></tr></tbody></table>
 
 ## Brownouts
 
