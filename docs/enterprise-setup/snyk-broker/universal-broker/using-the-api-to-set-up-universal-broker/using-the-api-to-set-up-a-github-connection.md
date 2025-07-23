@@ -38,7 +38,7 @@ curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/broke
 
 This returns the DEPLOYMENT\_ID (data.id), for example:
 
-| <pre><code>{
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>{
     ...
     "data": {
         "id": "12345678-1234-1234-1234-123456789012",
@@ -53,8 +53,7 @@ This returns the DEPLOYMENT\_ID (data.id), for example:
     },
     ...
 }
-</code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 At this point, you can start running the Broker client.
 
@@ -62,7 +61,7 @@ At this point, you can start running the Broker client.
 
 Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` if needed. For a list of URLs, see [Broker server URLs](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).
 
-| <pre><code>docker run --restart=always \
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker run --restart=always \
     -p 8000:8000 \
     -e ACCEPT_CODE=true \
     -e DEPLOYMENT_ID=&#x3C;DEPLOYMENTID> \
@@ -72,18 +71,16 @@ Target your desired environment with the usual `-e BROKER_SERVER_URL=https://bro
     -e PORT=8000 \
     -e BROKER_HA_MODE_ENABLED=true \
 snyk/broker:universal
-</code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 When the command is running, you should get the following message in the output:
 
-| <pre><code>{"name":"snyk-broker","hostname":"c918a4e1535a","pid":1,"level":30,"msg":"Found deployment 12345678-1234-1234-1234-123456789012. Waiting for connections. (polling)","time":"2024-06-18T20:15:20.572Z","v":0}
-</code></pre> |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>{"name":"snyk-broker","hostname":"c918a4e1535a","pid":1,"level":30,"msg":"Found deployment 12345678-1234-1234-1234-123456789012. Waiting for connections. (polling)","time":"2024-06-18T20:15:20.572Z","v":0}
+</code></pre></td></tr></tbody></table>
 
 ## Create your credentials reference or references <a href="#id-3-create-your-credentials-references" id="id-3-create-your-credentials-references"></a>
 
-| <pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments/DEPLOYMENT_ID/credentials?version=2024-02-08~experimental' \
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments/DEPLOYMENT_ID/credentials?version=2024-02-08~experimental' \
 --header 'Content-Type: application/vnd.api+json' \
 --header 'Authorization: token YOUR_SNYK_TOKEN' \
 --data-raw '{
@@ -96,12 +93,11 @@ When the command is running, you should get the following message in the output:
         }]
     }
 }'
-</code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+</code></pre></td></tr></tbody></table>
 
 This returns the credential reference id (data. id), for example:
 
-| <pre><code>{
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>{
     ...
     "data": {
         "id": "12345678-1234-1234-1234-123456789012",
@@ -115,12 +111,11 @@ This returns the credential reference id (data. id), for example:
     },
     ...
 }
-</code></pre> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 You can create a maximum of ten credentials in one call by adding more objects in attributes. These objects can be of different types.
 
-| <pre><code>...
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>...
 "attributes": [{
             "comment": "This is github token service account XYZ (example)",
             "environment_variable_name": "MY_GITHUB_TOKEN",
@@ -132,12 +127,11 @@ You can create a maximum of ten credentials in one call by adding more objects i
             "type": "github"
         }]
 ...
-</code></pre> |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 ## Create your connection or connections <a href="#id-4-create-your-connections" id="id-4-create-your-connections"></a>
 
-| <pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments/DEPLOYMENT_ID/connections?version=2024-02-08~experimental' \
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments/DEPLOYMENT_ID/connections?version=2024-02-08~experimental' \
 --header 'Content-Type: application/vnd.api+json' \
 --header 'Authorization: token YOUR_SNYK_TOKEN' \
 --data-raw '{
@@ -156,12 +150,11 @@ You can create a maximum of ten credentials in one call by adding more objects i
         }
     }
 }'
-</code></pre> |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 This returns a Connection ID (data.id), as shown in the example. Note that this call returns the credential reference directly, ready for use, instead of the cred reference UUID.
 
-| <pre><code>{
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>{
     ...
     "data": {
         "id": "12345678-1234-1234-1234-123456789012",
@@ -192,16 +185,14 @@ This returns a Connection ID (data.id), as shown in the example. Note that this 
     },
     ...
 }
-</code></pre> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 If your credential reference is missing, you will get the following message:
 
-| <pre><code>{"name":"snyk-broker","hostname":"029cda64bd98","pid":1,"level":50,"connection":"my github connection","msg":"Connection is missing environment variable value MY_GITHUB_TOKEN. Connection is disabled till value is provided. Restart broker once added.","time":"2024-06-18T14:29:06.910Z","v":0}
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>{"name":"snyk-broker","hostname":"029cda64bd98","pid":1,"level":50,"connection":"my github connection","msg":"Connection is missing environment variable value MY_GITHUB_TOKEN. Connection is disabled till value is provided. Restart broker once added.","time":"2024-06-18T14:29:06.910Z","v":0}
 
 {"name":"my github connection","hostname":"029cda64bd98","pid":1,"level":50,"id":"12345678-1234-1234-1234-123456789012","msg":"Connection is disabled due to (a) missing environment variable(s). Please provide the value and restart the broker client.","time":"2024-06-18T14:29:06.911Z","v":0}
-</code></pre> |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 When you update an envrionment variable you must restart your Broker. See [Restart your Broker for a new environment variable](../restart-your-broker-for-a-new-environment-variable.md).
 
@@ -209,7 +200,7 @@ You can now use the connection in an Organization integration.
 
 ## &#x20;Connect your Organization integration to use a connection <a href="#id-5-connect-your-org-integration-to-use-a-connection" id="id-5-connect-your-org-integration-to-use-a-connection"></a>
 
-| <pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/connections/CONNECTION_ID/orgs/ORG_ID/integration?version=2024-02-08~experimental' \
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/connections/CONNECTION_ID/orgs/ORG_ID/integration?version=2024-02-08~experimental' \
 --header 'Content-Type: application/vnd.api+json' \
 --header 'Authorization: token YOUR_SNYK_TOKEN' \
 --data-raw '{
@@ -218,7 +209,6 @@ You can now use the connection in an Organization integration.
                 "type": "github"
     }
 }'
-</code></pre> |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 Repeat connecting your Organization for as many integrations as needed.
