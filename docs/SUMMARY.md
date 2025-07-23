@@ -406,6 +406,7 @@
       * [Proxy configuration for Snyk CLI](cli-ide-and-ci-cd-integrations/snyk-cli/configure-the-snyk-cli/proxy-configuration-for-snyk-cli.md)
     * [Debugging the Snyk CLI](cli-ide-and-ci-cd-integrations/snyk-cli/debugging-the-snyk-cli.md)
   * [Snyk IDE plugins and extensions](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/README.md)
+    * [IDE Plugin Compatibility Matrix](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/compatibility-matrix.md)
     * [Eclipse plugin](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/README.md)
       * [Download the CLI with the Eclipse plugin](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/download-the-cli-with-the-eclipse-plugin.md)
       * [Authentication for the Eclipse plugin](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin.md)
