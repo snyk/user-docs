@@ -9,7 +9,7 @@ Free and Team plan users and Trial users have access to a Snyk user's token unde
 
 Service accounts are a special type of system user. Creating a service account generates an API token that is the only token associated with the service account and takes the place of standard user credentials. Snyk needs authentication in order to initiate Snyk processes.
 
-You can set up a **service account** to use for automation rather than using a Snyk user's token and to help manage integrations.&#x20;
+You can set up a service account to use for automation rather than using a Snyk user's token and to help manage integrations.&#x20;
 
 You can generate single or multiple tokens on the Organization or Group levels to manage your integrations. Each service account has a unique name to make it easier to recognize. This name cannot be reused.
 
@@ -41,7 +41,7 @@ If you are an Enterprise user, use your Snyk user's token to run the CLI locally
 Snyk advises against using a service account token to authenticate with an IDE.
 {% endhint %}
 
-## Set up a Group or Organization level service account
+## Set up a Group or Organization-level service account
 
 Generate single or multiple tokens on the Group or Organization levels to manage your integrations.
 
@@ -51,7 +51,7 @@ Generate single or multiple tokens on the Group or Organization levels to manage
 Group viewers are not able to create service accounts, regardless of their Org role.
 {% endhint %}
 
-To create a **Group service account,** you must be a Group admin. To create an **Organization service account,** you must be either a Group member and Org Admin, or a Group admin.
+To create a Group service accoun&#x74;**,** you must be a Group admin. To create an Organization service account, you must be either a Group member and Org Admin, or a Group admin.
 
 This process describes all options. Repeat the steps to create multiple tokens for the same or any other Group or Organization.
 

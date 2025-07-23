@@ -1,8 +1,8 @@
-# Entra ID Enterprise Application setup
+# Entra ID Enterprise application setup
 
 This example shows setting up an Entra ID (formerly Azure AD) Enterprise Application and connecting this to Snyk to facilitate SSO. To configure your Azure Enterprise Application to use SSO with Snyk, first obtain an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.
 
-1.  From the dropdown at the top left select **GROUP OVERVIEW** and then the **cog** icon (top right corner) to get to your group settings.
+1.  From the dropdown at the top left select **GROUP OVERVIEW** and then the cog icon (top right corner) to get to your group settings.
 
     <figure><img src="../../../.gitbook/assets/1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3) (1) (1).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
 2.  Click on **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.
@@ -46,7 +46,7 @@ This example shows setting up an Entra ID (formerly Azure AD) Enterprise Applica
     <figure><img src="../../../.gitbook/assets/14.png" alt="Enter certificate and domains supported, set connection"><figcaption><p>Enter certificate and domains supported, set connection</p></figcaption></figure>
 14. Decide how new users should be treated when signing in and choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**. Finally, modify the **profile attributes** if your settings in Azure deviate from the default; then click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).\
     \
-    If you are not receiving profile values as expected, you may need to add email, name, and username as **additional claims** within **Azure SSO settings** and then map those accordingly in the Snyk SSO **Profile attributes** section.
+    If you are not receiving profile values as expected, you may need to add email, name, and username as additional claims within Azure SSO settings and then map those accordingly in the Snyk SSO **Profile attributes** section.
 
     <figure><img src="../../../.gitbook/assets/claim1.png" alt="Azure claim settings"><figcaption><p>Azure claim settings</p></figcaption></figure>
 
@@ -54,7 +54,7 @@ This example shows setting up an Entra ID (formerly Azure AD) Enterprise Applica
 
 If you wish to add signature verification of the incoming Snyk request:
 
-1. Download the the **Signing certificate** at step 1 of the Snyk SSO settings.
+1. Download the **Signing certificate** at step 1 of the Snyk SSO settings.
 2. Use the following openssl command to convert it to .cer-format `openssl x509 -outform DER -in snyk.pem -out snyk.cer`
 3. At the bottom of the **SAML Certificates** settings of your SSO app in Active Directory, click **Edit** next to **Verification certificates.**
 4. Check **Require verification certificates** and upload the certificate from the output of the above openssl command and click **Save**.

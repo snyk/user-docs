@@ -1,9 +1,9 @@
-# Example: Setting up custom mapping for Okta
+# Example: setting up custom mapping for Okta
 
 The following shows two different options for custom mapping of Okta roles, using [Legacy custom mapping](../../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md).
 
 {% hint style="info" %}
-For both of these options to work, the Snyk SSO application **must** be assigned at the group level, not the user level.
+For both of these options to work, the Snyk SSO application must be assigned at the group level, not the user level.
 {% endhint %}
 
 ## Option 1: Assign Custom Mapping with Groups
@@ -26,33 +26,33 @@ When you look at a user's Application assignment it should look similar to the i
 
 ### Create a single app attribute containing both the Snyk Organization name and role
 
-1. On the main page of Okta, select **Directory -> Profile Editor -> your Snyk SSO app**.
+1. On the main page of Okta, select **Directory** > **Profile Editor** > **your Snyk SSO app**.
 2. Select **+Add Attribute**.
 3. In the corresponding fields, add the following details for this Attribute:\
    **Data type**: string array\
    **Display name**: Snyk Orgs\
    **Variable name:** snyk\_orgs\
    **Group Priority**: Combine values across groups
-4. When you are finished select **Save.**
+4. Select **Save.**
 
 ### Assign the attribute to the relevant Okta groups
 
-1. On the main page of Okta select **Directory -> Groups**.
-2. Select a **Group**, navigate to the **Applications** tab, click **Assign** **application** if not already assigned, and choose your Snyk SSO app,. Then click on the **pencil** next to the displayed Snyk SSO app.
+1. On the main page of Okta select **Directory** > **Groups**.
+2. Select a **Group**, navigate to the **Applications** tab, click **Assign** **application** if not already assigned, and choose your Snyk SSO app,. Then click on the pencil next to the displayed Snyk SSO app.
 3. In the **Edit App Assignment** dialog, add the Snyk Organization slug, and the Organization role name associated with your Okta group (no spaces or capital letters), following the syntax explained in [custom mapping ](../)(or see [legacy custom mapping](../../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md) if you are using that option).&#x20;
 4. Repeat the preceding steps for all your applicable Okta groups to assign the org name and role combination to each user within each configured group.
 
 ### Construct a value expression that creates a roles array to be sent to Snyk
 
-1. Navigate to **Applications -> Applications** and click on the **Snyk app** you configured.
-2. Select **General Tab -> Edit SAML Settings** and click **next** to go to the **Configure SAML** step.
+1. Navigate to **Applications** > **Applications** and click on the **Snyk app** you configured.
+2. Select **General Tab** > **Edit SAML Settings** and click **next** to go to the **Configure SAML** step.
 3. Add an **Attribute Statement** named “roles” of an unspecified type.
 4.  Select **Attribute Statements** and set **roles** as the **Name** field with **Name format** **Unspecified** and the **Value** in the following expression:
 
     `Arrays.flatten(appuser.snyk_orgs)`
 5. Reach out to your Snyk point of contact so they can complete the configuration.
 
-## Option 2: Assign Custom Mapping with user roles
+## Option 2: Assign custom mapping with user roles
 
 The following describes Custom Mapping with user roles.&#x20;
 
@@ -76,14 +76,14 @@ When you look at a user's Application assignment it should look similar to the i
 
 When your Snyk Groups and users have been set up, follow these steps:
 
-1. On the main page of Okta select **Directory -> Profile Editor -> your Snyk SSO app**.
+1. On the main page of Okta select **Directory** > **Profile Editor** > **your Snyk SSO app**.
 2. Select **+Add Attribute**.
 3. In the corresponding fields, add the following details for the first Attribute:\
    **Data type**: string array\
    **Display name**: Snyk Orgs\
    **Variable name**: snyk\_orgs\
    **Group Priority**: Combine values across groups
-4. When you are finished, select **Save and Add Another**.
+4. select **Save and Add Another**.
 
 ### Create a second app attribute that contains roles
 
@@ -97,28 +97,28 @@ When your Snyk Groups and users have been set up, follow these steps:
    **Attribute members GroupAdmin**: groupadmin\
    **Attribute required**: Yes\
    **Scope**: User personal
-2. When you are finished, select **Save**.
+2. Select **Save**.
 
 ### Assign the first attribute to your Okta groups
 
-1. On the main page of Okta select **Directory -> Groups**.
-2. Select a **Group**, navigate to the **Applications** tab, click **Assign** **application i**f not already assigned, and choose your Snyk SSO app. Then click on the **pencil** next to the displayed Snyk app.
+1. On the main page of Okta select **Directory > Groups**.
+2. Select a **Group**, navigate to the **Applications** tab, click **Assign** **application i**f not already assigned, and choose your Snyk SSO app. Then click on the pencil next to the displayed Snyk app.
 3. In **Edit App Assignment** dialog, add the Snyk Organization name to associate with your Okta group (no spaces or capital letter(s)).
 4. Repeat the preceding steps to assign the Snyk app to all your applicable Okta groups, modifying the Snyk Organization name as needed.
 
 ### Assign the second attribute to your users
 
-1. On the main page of Okta select **Directory -> People.**
-2. Select a **User,** navigate to the **Applications** tab, and click on the **pencil** next to the application.
+1. On the main page of Okta select **Directory** > **People.**
+2. Select a **User,** navigate to the **Applications** tab, and click on the pencil next to the application.
 3. Select the right user type in group (user role): **Collaborator**, **Admin**, or **Group Admin**.
 
 ### Construct a value expression that concatenates these two attributes into string values in a roles array to be sent to Snyk
 
-1. Navigate to **Applications -> Applications** and click on the **Snyk app** you configured.
-2. Select **General Tab -> SAML Settings -> Edit** and click **next** to go to the Configure SAML step.
+1. Navigate to **Applications** > **Applications** and click on the **Snyk app** you configured.
+2. Select **General Tab** > **SAML Settings** > **Edit** and click **next** to go to the Configure SAML step.
 3. Select **Attribute Statements** and add an attribute named **roles** with **Name format** **Unspecified** and the **Value** in the following expression:\
    `appuser.user_role == "groupadmin" ? "snyk-groupadmin" : Arrays.flatten(String.replace(String.replace(String.append("snyk-",String.append(Arrays.toCsvString(appuser.snyk_orgs),"-"+appuser.user_role)),",",",snyk-"),",","-"+appuser.user_role+","))`
-4. Click **Next -> Finish.**
+4. Click **Next** > **Finish.**
 5. Reach out to your Snyk point of contact so they can complete the configuration. This process may take four to five days.
 
 The following explains the roles expression:

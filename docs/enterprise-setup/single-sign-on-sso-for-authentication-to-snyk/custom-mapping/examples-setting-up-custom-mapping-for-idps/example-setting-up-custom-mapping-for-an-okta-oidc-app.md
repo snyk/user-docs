@@ -1,10 +1,10 @@
-# Example: Setting up custom mapping for an Okta OIDC app
+# Example: setting up custom mapping for an Okta OIDC app
 
 Follow these steps configure an integration for OIDC Okta.
 
 ## Create an Okta OIDC app
 
-1.  In Okta, select **Applications -> Applications -> Create App Integration** then choose **OICD OpenID Connect** and **Web Application.**
+1.  In Okta, select **Applications** > **Applications** > **Create App Integration** then choose **OICD OpenID Connect** and **Web Application.**
 
     <figure><img src="../../../../.gitbook/assets/1 (4).png" alt="Create a new app integration in Okta"><figcaption><p>Create a new app integration in Okta</p></figcaption></figure>
 2.  In the next step add an **App integration name** for your OIDC application, check the **Implicit** **Grant Type** and add the **Sign-in redirect URI** relevant to your [Snyk platform deployment](../../set-up-snyk-single-sign-on-sso.md). Remove the placeholder **Sign-out redirect URI** and choose your assignment access control before clicking **Save.**
@@ -23,7 +23,7 @@ If you wish to set up custom mapping, move on to the next section of this guide.
 
 ### Create a custom app user attribute to contain both the Snyk Organization name and role
 
-1. In Okta, select your newly created OIDC application user profile under **Directory -> Profile editor.**
+1. In Okta, select your newly created OIDC application user profile under **Directory** > **Profile editor.**
 2.  Select **+Add Attribute.**
 
     <figure><img src="../../../../.gitbook/assets/3 (3) (1) (1).png" alt="Okta profile editor"><figcaption><p>Okta profile editor</p></figcaption></figure>
@@ -37,8 +37,8 @@ If you wish to set up custom mapping, move on to the next section of this guide.
 
 ### Assign the attribute to the relevant Okta groups
 
-1. On the main page of Okta select **Directory -> Groups**.
-2.  Select a **Group**, navigate to the **Applications** tab, click **Assign** **application** if not already assigned, and choose your Snyk OIDC app,. Then click on the **pencil** next to the displayed Snyk OIDC app.
+1. On the main page of Okta select **Directory** > **Groups**.
+2.  Select a **Group**, navigate to the **Applications** tab, click **Assign** **application** if not already assigned, and choose your Snyk OIDC app,. Then click on the pencil next to the displayed Snyk OIDC app.
 
     <figure><img src="../../../../.gitbook/assets/5 (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Group selected for modicification"><figcaption><p>Group selected for modicification</p></figcaption></figure>
 3.  In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [custom mapping](../) (or [legacy custom mapping](../../../../enterprise-configuration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md) if using the legacy mapping option). Example, `snyk:org:*:org_admin`.\

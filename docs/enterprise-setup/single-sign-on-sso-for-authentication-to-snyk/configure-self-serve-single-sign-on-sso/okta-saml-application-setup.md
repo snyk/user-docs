@@ -1,4 +1,4 @@
-# Okta SAML Application setup
+# Okta SAML application setup
 
 This example shows setting up an Okta SAML application and connecting this to Snyk to facilitate SSO. To configure your Okta to use SSO with Snyk, you need an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.
 
@@ -28,9 +28,9 @@ This example shows setting up an Okta SAML application and connecting this to Sn
 8.  Go back to the previous page and go to the **Assignments** tab. Click on **Assign** and choose users, groups, or both according to your needs.
 
     <figure><img src="../../../.gitbook/assets/7 (1) (2) (1).png" alt="Assign the SSO application"><figcaption><p>Assign the SSO application</p></figcaption></figure>
-9.  Go back to the Snyk portal, scroll to step 2, and enter the details from step 7, including the domain(s) you wish to use over the SSO connection, verify if an **IdP-initiated workflow** should be enabled, and then click **Create Auth0 connection.**
+9.  Go back to the Snyk portal, scroll to step 2, and enter the details from step 7, including the domain(s) you wish to use over the SSO connection, verify if an IdP-initiated workflow should be enabled, and then click **Create Auth0 connection.**
 
     <figure><img src="../../../.gitbook/assets/8 (3).png" alt="Snyk SSO step 2"><figcaption><p>Snyk SSO step 2</p></figcaption></figure>
-10. Scroll to step 3 and determine how new users should be treated when signing in. Choose the option you would like to use: **Group member, Org collaborator** or **Org admin**. Finally, enter the **profile attributes** as you configured them in Okta, click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).
+10. Scroll to step 3 and determine how new users should be treated when signing in. Choose the option you would like to use: **Group member, Org collaborator** or **Org admin**. Finally, enter the profile attributes as you configured them in Okta, click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).
 
     <figure><img src="../../../.gitbook/assets/9 (1) (1) (1) (1) (1).png" alt="Profile attributes"><figcaption><p>Profile attributes</p></figcaption></figure>

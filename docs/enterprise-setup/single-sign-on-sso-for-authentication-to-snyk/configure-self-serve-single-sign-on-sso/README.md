@@ -16,9 +16,9 @@ The following video demonstrates the process and steps for setting up single sig
 
 The process of establishing trust between your identity provider (IdP) and Snyk requires that the Group Admin do the following:
 
-1. **Configure your identity provider (IdP)** by using the details about the Snyk environment displayed on-screen and user attributes.
-2. **Enter SAML attributes** from your identity provider(IdP) on the Group SSO Settings page.
-3. **Configure Snyk SSO settings**, choosing how you want your members to log in.
+1. Configure your identity provider (IdP) by using the details about the Snyk environment displayed on-screen and user attributes.
+2. Enter SAML attributes from your identity provider(IdP) on the Group SSO Settings page.
+3. Configure Snyk SSO settings, choosing how you want your members to log in.
 4. Verify SSO login to confirm the login process is working correctly.
 
 {% hint style="info" %}
@@ -35,14 +35,14 @@ Users are [provisioned ](../choose-a-provisioning-option.md)to Snyk when they lo
 
 ### **Configuring the IdP**
 
-1. In the Snyk web UI, navigate to the **Group** menu and select **Settings.**
-2. Select **SSO** and copy the needed information in **Step 1**, namely **Entity ID**, **ACS URL,** and the Snyk **signing certificate URL**.
+1. In the Snyk web UI, navigate to **Group** > **Settings.**
+2. Select **SSO** and copy the needed information in step 1, namely **Entity ID**, **ACS URL,** and the Snyk **signing certificate URL**.
 3. Enter these details in the IdP where appropriate and upload the Snyk signing certificate after downloading it locally in case the IdP does not accept only the certificate URL.
-4. Before moving back to the Snyk UI, **copy** the **IdP provided sign in URL** and **copy or download** the IdP-provided **X509 signing certificate details.**
+4. Before moving back to the Snyk UI, copy the IdP provided sign in URL and copy or download the IdP-provided **X509 signing certificate** details.
 
 ### **Configuring Snyk**
 
-1. In **Step 2** of the SSO settings page in the Snyk web UI, enter the details collected from the IdP by providing the **sign in URL**, **sign out URL** if available and desired, the **IdP signing certificate** and **domains and subdomains** that will be served over the SSO connection.
+1. In Step 2 of the SSO settings page in the Snyk web UI, enter the details collected from the IdP by providing the sign in URL, sign out URL if available and desired, the IdP signing certificate and domains and subdomains that will be served over the SSO connection.
 2. In case the connection requires HTTP-Redirect protocol binding, change that option from the default HTTP-POST.
 3. Finally, verify if an IdP-initiated workflow should be enabled and then select **Create Connection** or **Save changes** if you are modifying an existing connectio&#x6E;**.**
 

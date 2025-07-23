@@ -1,4 +1,4 @@
-# Example: Setting up custom mapping for Entra ID
+# Example: setting up custom mapping for Entra ID
 
 The following information shows how to configure the custom mapping of roles for Entra ID (formerly Azure AD).
 
@@ -8,7 +8,7 @@ See the [Entra ID Enterprise Application example](../../configure-self-serve-sin
 Any step on the Snyk side in setting up the Enterprise application must be performed by your Snyk contact, as self-serve SSO does not accommodate custom mapping.
 {% endhint %}
 
-The following are the **prerequisites** for **configuring App roles**:
+The following are the prerequisites for configuring app roles:
 
 * Snyk support must configure your Snyk SSO as Microsoft Entra ID (WAAD or SAML).
 * If you select SAML, there is a requirement to add a custom claim; the step to do that is in these instructions.

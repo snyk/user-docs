@@ -10,7 +10,7 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 2.  Select **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.
 
     <figure><img src="../../../.gitbook/assets/2 (1) (1) (1) (1) (2).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
-3.  Navigate to Ping Identity and select **Applications** in the **Connections** menu. Click on the **plus** sign to create a new application.&#x20;
+3.  Navigate to Ping Identity and select **Applications** in the **Connections** menu. Click on the plus sign to create a new application.&#x20;
 
     <figure><img src="../../../.gitbook/assets/1 (2) (1).png" alt="Create a new application"><figcaption><p>Create a new Application</p></figcaption></figure>
 4.  Name your application appropriately, select **SAML Application**, and click **Configure.**
@@ -30,7 +30,7 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 
     <figure><img src="../../../.gitbook/assets/single-sign-on-URL-field.png" alt="Paste Sign in URL"><figcaption><p>Paste Sign in URL</p></figcaption></figure>
 9.  Open the downloaded certificate in your preferred text editor, copy the text and paste it into the Snyk **X509 signing certificate** field, and add the relevant domains that are supported by this SSO connection.\
-    Finally, verify if an **IdP-initiated workflow** should be enabled and then click **Create Auth0 connection** if you are creating a completely new connection or **Save changes** if you are editing an existing connection.&#x20;
+    Finally, verify if an IdP-initiated workflow should be enabled and then click **Create Auth0 connection** if you are creating a completely new connection or **Save changes** if you are editing an existing connection.&#x20;
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-09-05 at 11.01.53 AM.png" alt="Enter the Ping Identity details"><figcaption><p>Enter the Ping Identity details</p></figcaption></figure>
 10. In Ping Identity, select **Attribute mappings** and click the pencil to edit.
@@ -46,7 +46,7 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 
     <figure><img src="../../../.gitbook/assets/8 (2) (1) (2).png" alt="Add an advanced expression for the name attribute"><figcaption><p>Add an advanced expression for the name attribute</p></figcaption></figure>
 12. In the Snyk portal, decide how new users should be treated when signing in and choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**.
-13. Change the **profile attributes** to the attribute names you entered in Ping Identity then click **Save changes.**\
+13. Change the profile attributes to the attribute names you entered in Ping Identity then click **Save changes.**\
 
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-09-05 at 11.07.37 AM.png" alt="Step 3 Snyk SSO settings"><figcaption><p>Step 3 Snyk SSO settings</p></figcaption></figure>
@@ -54,4 +54,3 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 15. As a final step, enable the application and assign it to users.
 
     <figure><img src="../../../.gitbook/assets/10 (1) (1).png" alt="Enable and assign the application to users"><figcaption><p>Enable and assign the application to users</p></figcaption></figure>
-

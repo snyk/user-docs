@@ -32,7 +32,7 @@ Start by logging into the Google Workspace [admin area](https://admin.google.com
 8.  Go back to the Google admin portal , click **Continue,** and paste those two values into their respective fields. Then tick **Signed response**.
 
     <figure><img src="../../../.gitbook/assets/8 (2).png" alt="Enter details from Snyk in Google"><figcaption><p>Enter details from Snyk in Google</p></figcaption></figure>
-9.  Click **Continue**, add an app attribute named **email** tied to the **Primary Email**, and save the configuration.
+9.  Click **Continue**, add an app attribute named email tied to the **Primary Email**, and save the configuration.
 
     <figure><img src="../../../.gitbook/assets/9 (3) (1) (1).png" alt="Add email attribute"><figcaption><p>Add email attribute</p></figcaption></figure>
 10. Enable access to your app for your users by clicking **User Access**, tick **On for everyone**, and **Save**. Modify organizational access as needed.

@@ -32,35 +32,33 @@ Each type of SSO connection requires different details for establishing trust be
 
 To establish trust with Snyk, add an Entity ID, an Assertion Consumer Service (ACS) URL, and a Signing certificate in your identity provider.
 
-* The **Entity ID** is the URL that uniquely identifies Snyk as a SAML entity or service provider. Note: **default Entity ID must be checked** manually as no default is set for this.
+* The **Entity ID** is the URL that uniquely identifies Snyk as a SAML entity or service provider. The **d**efault Entity ID must be checked manually as no default is set for this.
 * The **Assertion Consumer Service (ACS)** is the endpoint on the Snyk network that listens for requests from your identity provider to enable communication between users on your network and Snyk. This URL is sometimes called a Reply URL.
 * The **Signing certificate** is the Snyk certificate, stored on your server that is needed to maintain the trust relationship. It contains the necessary encryption keys for authentication.
 
 Use these details to set up the connection with your Identity provider (IdP):
 
-| **Details**                                     | **Description**                                                                                                                                                  |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID (SNYK-US-01 and SNYK-US-02)           | **urn:auth0:snyk:saml-{group-slug}**                                                                                                                             |
-| Entity ID (SNYK-EU-01)                          | **urn:auth0:snyk-mt-eu-prod-1:saml-{group-slug}**                                                                                                                |
-| Entity ID (SNYK-AU-01)                          | **urn:auth0:snyk-mt-au-prod-1:saml-{group-slug}**                                                                                                                |
-| ACS URL (SNYK-US-01 and SNYK-US-02)             | [https://snyk.auth0.com/login/callback?connection=saml-](https://snyk.auth0.com/login/callback?connection=saml-)**{group-slug}**                                 |
-| ACS URL (SNYK-EU-01)                            | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-)**{group-slug}** |
-| ACS URL (SNYK-AU-01)                            | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml](https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml)-**{group-slug}**  |
-| Signing certificate (SNYK-US-01 and SNYK-US-02) | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem)                                                                                                         |
-| Signing certificate (SNYK-EU-01)                | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection)                                         |
-| Signing certificate (SNYK-AU-01)                | [https://snyk-mt-au-prod-1.au.auth0.com/pem?cert=connection)](https://snyk-mt-au-prod-1.au.auth0.com/pem?cert=connection\))                                      |
+| Entity ID (SNYK-US-01 and SNYK-US-02)           | urn:auth0:snyk:saml-{group-slug}                                                                                                                             |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Entity ID (SNYK-EU-01)                          | urn:auth0:snyk-mt-eu-prod-1:saml-{group-slug}                                                                                                                |
+| Entity ID (SNYK-AU-01)                          | urn:auth0:snyk-mt-au-prod-1:saml-{group-slug}                                                                                                                |
+| ACS URL (SNYK-US-01 and SNYK-US-02)             | [https://snyk.auth0.com/login/callback?connection=saml-](https://snyk.auth0.com/login/callback?connection=saml-){group-slug}                                 |
+| ACS URL (SNYK-EU-01)                            | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-){group-slug} |
+| ACS URL (SNYK-AU-01)                            | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml](https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml)-{group-slug}  |
+| Signing certificate (SNYK-US-01 and SNYK-US-02) | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem)                                                                                                     |
+| Signing certificate (SNYK-EU-01)                | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection)                                     |
+| Signing certificate (SNYK-AU-01)                | [https://snyk-mt-au-prod-1.au.auth0.com/pem?cert=connection)](https://snyk-mt-au-prod-1.au.auth0.com/pem?cert=connection\))                                  |
 
 {% hint style="info" %}
-Replace **{group-slug}** with the name of your Snyk Group. If your Group name includes spaces, replace them with dashes. For example, if your Group name is `Your Company Group`, then the **{group-slug}** value is **your-company-group**.
+Replace {group-slug} with the name of your Snyk Group. If your Group name includes spaces, replace them with dashes. For example, if your Group name is `Your Company Group`, then the {group-slug} value is your-company-group.
 {% endhint %}
 
 To map information from your Identity provider to Snyk, name your user attributes as follows, using the same capitalization and spelling:
 
-| **Attribute** | **Description**                                 |
-| ------------- | ----------------------------------------------- |
-| email         | The user email address                          |
-| name          | The name of the person to be authenticated      |
-| username      | The person’s username for the identity provider |
+| email    | The user email address                          |
+| -------- | ----------------------------------------------- |
+| name     | The name of the person to be authenticated      |
+| username | The person’s username for the identity provider |
 
 If your user attributes do not match, note that the Snyk configuration for your SSO will take more time.
 
@@ -68,15 +66,15 @@ If your user attributes do not match, note that the Snyk configuration for your 
 
 Obtain the following information from your identity provider. Provide this information to Snyk to establish trust on the service-provider side.
 
-| Information                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Sign-in URL                   | The URL for your identity provider sign-in page                                                                                                                                                                                                                                                                                                                                                                                     |
-| X509 Signing Certificate      | The identity provider public key, encoded in Base64 format                                                                                                                                                                                                                                                                                                                                                                          |
-| Sign-out URL                  | <p>Optional, but recommended -</p><p>The URL for redirect whenever a user logs out of Snyk</p>                                                                                                                                                                                                                                                                                                                                      |
-| User ID attribute             | <p>Optional default is <strong>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier</strong><br><br><strong>Important:</strong> This value uniquely identifies Snyk users and if changed will result in a duplicate user being created. If you see a duplicate user after changing identity provider <a href="https://support.snyk.io">submit a request </a>to Snyk support to have the duplicate user removed.</p> |
-| Protocol binding              | HTTP-POST is recommended, HTTP-Redirect is also supported                                                                                                                                                                                                                                                                                                                                                                           |
-| IdP initiated flow supported? | Idp-initiated flows carry a security risk and are therefore not recommended. Make sure you understand the risks before enabling                                                                                                                                                                                                                                                                                                     |
-| Email domains and subdomains  | The email domains and subdomains that need access to the SSO                                                                                                                                                                                                                                                                                                                                                                        |
+| Information                   | Description                                                                                                                                                                                                                                                                                                                                                                            |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sign-in URL                   | The URL for your identity provider sign-in page                                                                                                                                                                                                                                                                                                                                        |
+| X509 Signing Certificate      | The identity provider public key, encoded in Base64 format                                                                                                                                                                                                                                                                                                                             |
+| Sign-out URL                  | <p>Optional, but recommended -</p><p>The URL for redirect whenever a user logs out of Snyk</p>                                                                                                                                                                                                                                                                                         |
+| User ID attribute             | <p>Optional default is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier<br><br>This value uniquely identifies Snyk users and if changed will result in a duplicate user being created. If you see a duplicate user after changing identity provider <a href="https://support.snyk.io">submit a request </a>to Snyk support to have the duplicate user removed.</p> |
+| Protocol binding              | HTTP-POST is recommended, HTTP-Redirect is also supported                                                                                                                                                                                                                                                                                                                              |
+| IdP initiated flow supported? | Idp-initiated flows carry a security risk and are therefore not recommended. Make sure you understand the risks before enabling                                                                                                                                                                                                                                                        |
+| Email domains and subdomains  | The email domains and subdomains that need access to the SSO                                                                                                                                                                                                                                                                                                                           |
 
 ## Set up OpenID Connect (OIDC) for SSO
 
@@ -112,8 +110,6 @@ When using Entra ID (formerly Azure AD) for the connection between your Identity
 Use your Entra ID name when authenticating rather than the SCM user account name, or a connection error can occur.
 {% endhint %}
 
-
-
 | Information                               | Description                                                                                                    |
 | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Redirect URIs (SNYK-US-01 and SNYK-US-02) | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                 |
@@ -134,9 +130,8 @@ Obtain the following information from your identity provider. Provide this infor
 
 When using Active Directory Federation Service (ADFS) for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk. For more information, see [Connecting Auth0 to an ADFS server (video)](https://www.youtube.com/watch?v=ICW6sGP9ht8).
 
-| **Information**                              | **Description**                                                                                                                                                  |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Realm Identifier (SNYK-US-01 and SNYK-US-02) | urn:auth0:snyk                                                                                                                                                   |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Realm Identifier (SNYK-EU-01)                | urn:auth0:snyk-mt-eu-prod-1                                                                                                                                      |
 | Realm Identifier (SNYK-AU-01)                | urn:auth0:snyk-mt-au-prod-1                                                                                                                                      |
 | Callback URL (SNYK-US-01 and SNYK-US-02)     | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                                                                   |
@@ -148,11 +143,7 @@ When using Active Directory Federation Service (ADFS) for the connection between
 
 ## ADFS information to provide to Snyk
 
-Obtain the following information from your Identity provider. Provide this information to Snyk in order to establish trust on the service-provider side.
-
-* ADFS URL or Federation Metadata XML file
-
-## Map Enterprise users
+Obtain the following information from your Identity provider. Provide this information to Snyk in order to establish trust on the service-provider side: ADFS URL or Federation Metadata XML file
 
 For Enterprise plans, Snyk can map new users to a specific Organization and role when they first sign in using SSO. This option requires additional configuration, including specific naming conventions for organizations.
 
@@ -183,10 +174,10 @@ To complete your login:
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on. Please make sure you replace any Snyk URL with the correct regional environment per the tables above.
 
-{% file src="../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (3) (5).pdf" %}
+{% file src="../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (3) (5) (5).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
+{% file src="../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO ADFS Worksheet (2) (1) (1).pdf" %}
+{% file src="../../.gitbook/assets/SSO ADFS Worksheet (2) (1) (1) (1).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO OIDC Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
+{% file src="../../.gitbook/assets/SSO OIDC Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}

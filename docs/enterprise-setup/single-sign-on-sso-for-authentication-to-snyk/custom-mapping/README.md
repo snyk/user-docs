@@ -13,7 +13,7 @@ To understand more about roles and permissions within Snyk, see [Pre-defined rol
 * Complete the SSO information worksheet for the appropriate IdP (identity provider) found in [Resources for SSO setup](../set-up-snyk-single-sign-on-sso.md#resources-for-sso-setup).
 * Properly configure the custom attributes in your IdP to populate the `roles` array mapping. See [Roles array mapping with Snyk](./#roles-array-mapping-with-snyk).
 
-## Custom Mapping options
+## Custom mapping options
 
 Snyk offers an updated custom mapping option explained on this page, with increased flexibility, including the ability to grant users Group-level and Tenant-level custom roles, in addition to pre-defined roles.&#x20;
 

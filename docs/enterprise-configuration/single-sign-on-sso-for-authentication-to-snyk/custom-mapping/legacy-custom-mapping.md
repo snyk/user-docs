@@ -85,7 +85,11 @@ To assign users with Org Collaborator roles, use the following format:
 }
 ```
 
-To assign users as Org Admin or Org Collaborator, use the following format for the roles array. **Note**: You can assign different roles on a per-org basis. The following example assigns a user as Org Admin in the `orgslug` Org but a Collaborator in the `orgslug2` Org.
+To assign users as Org Admin or Org Collaborator, use the following format for the roles array.&#x20;
+
+{% hint style="info" %}
+You can assign different roles on a per-org basis. The following example assigns a user as Org Admin in the `orgslug` Org but a Collaborator in the `orgslug2` Org.
+{% endhint %}
 
 ```
 {

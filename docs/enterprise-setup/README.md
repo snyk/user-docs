@@ -36,13 +36,13 @@ Snyk provides limited free tests per month for each type of scan, Snyk Open Sour
 
 ## Create or log in to your Snyk account
 
-You must have a Snyk account to use Snyk functionality, even within your local environment. Create a free account to try out Snyk for a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account. For details, see [Create or log in to an existing account](../getting-started/#create-or-log-in-to-a-snyk-account).&#x20;
+You must have a Snyk account to use Snyk functionality, even within your local environment. Create a free account to try out Snyk for a Project. If your enterprise is already using Snyk, you may be able to log in using single sign-on to be provisioned with a Snyk account.
 
 ## **Enable Snyk Code**
 
 When you create a new Organization in Snyk, Snyk Code (SAST) scanning is disabled by default. Snyk recommends enabling the Snyk Code product before you import your first Projects into Snyk.
 
-1. Select the **Settings > Snyk Code** option.
+1. Select the **Settings** > **Snyk Code** option.
 2. Click the toggle to enable Snyk Code; then click **Save changes**.
 
 ## **Add a Snyk Project**
@@ -60,7 +60,7 @@ After your Git repository is connected (see [See Git repository integrations (SC
 The settings for each Snyk Project are inherited from the Snyk Organization integration settings. Follow these steps to ensure these settings are disabled: Default Snyk test for pull requests, Automatic fix pull requests, Automatic dependency upgrade pull requests, and Automatic updates to Dockerfile base images. You can go back and enable these settings when your teams are ready to implement these options.
 
 1. Select the **Integrations** page from the left-hand navigation menu.
-2. Select the **settings cog icon** for your Git repository integration.
+2. Select the settings cog icon for your Git repository integration.
 3. In the **Default Snyk test for pull requests** section, ensure the following are disabled:
    1. **Open Source Security & Licenses** (default checks when PRs are opened)
    2. **Automatic fix pull requests**: both **New vulnerabilities** and **Known vulnerabilities (backlog)**
