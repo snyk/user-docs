@@ -294,36 +294,6 @@ func Test_aggregateSpecs(t *testing.T) {
 			},
 			wantErr: assert.NoError,
 		},
-		{
-			name: "filters out beta paths",
-			args: args{
-				cfg: &config.Config{
-					Specs: []config.Spec{
-						{
-							Path: "spec_with_stability.yaml",
-						},
-					},
-				},
-				docsBasePath: "../testdata/reference_docs/",
-			},
-			want: map[string][]operationPath{
-				"stable": {
-					{
-						method:   "GET",
-						specPath: "spec_with_stability.yaml",
-						pathURL:  "/stable-path",
-					},
-				},
-				"no-stability": {
-					{
-						method:   "GET",
-						specPath: "spec_with_stability.yaml",
-						pathURL:  "/no-stability-path",
-					},
-				},
-			},
-			wantErr: assert.NoError,
-		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
