@@ -180,4 +180,4 @@ See the service descriptions on each of the following pages.
 
 * [Snyk Jumpstart Services](snyk-jumpstart-services-description.md)
 * [Snyk Residency Services](snyk-residency-services.md)
-* [Statement of Work](statement-of-work.md)
+* [Statement of Work](declining-balance.md)
