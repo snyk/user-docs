@@ -90,6 +90,7 @@ The following frameworks and libraries are supported in Snyk for Java and Kotlin
 * Seam logger - Comprehensive
 * SnakeYaml - Comprehensive
 * Spongycastle - Comprehensive
+* Spring AI - Partial
 * Spring boot - Partial
 * Spring Web, MVC and JDBC - Comprehensive
 * Spring WebFlux - Comprehensive

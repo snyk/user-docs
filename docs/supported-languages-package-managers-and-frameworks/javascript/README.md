@@ -64,6 +64,7 @@ The following frameworks and libraries are supported in Snyk for JavaScript:
 * express - Comprehensive
 * express-graphql - Partial
 * express-jwt - Partial
+* fastMCP - Comprehensive
 * fs - Comprehensive
 * fs-extra - Comprehensive
 * fs-plus - Comprehensive
@@ -82,6 +83,7 @@ The following frameworks and libraries are supported in Snyk for JavaScript:
 * luxon - Comprehensive
 * minimongo - Comprehensive
 * minimist - Comprehensive
+* modelcontextprotocol/typescript-sdk - Comprehensive
 * mongodb - Comprehensive
 * Mongoose - Comprehensive
 * mercurius - Partial

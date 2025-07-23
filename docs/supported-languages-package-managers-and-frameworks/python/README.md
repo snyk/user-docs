@@ -36,6 +36,7 @@ The following frameworks and libraries are supported in Snyk for Python:
 
 * AioHTTP - Comprehensive
 * iopg - Comprehensive
+* aiofiles - Comprehensive
 * argparse - Comprehensive
 * anthropic - Comprehensive
 * bottle - Comprehensive
@@ -43,6 +44,7 @@ The following frameworks and libraries are supported in Snyk for Python:
 * Django - Comprehensive
 * defusedxml - Comprehensive
 * fastapi - Partial
+* fastMCP - Comprehensive
 * flask - Comprehensive
 * flask\_pymongo - Comprehensive
 * google.cloud.bigquery - Comprehensive
@@ -54,6 +56,7 @@ The following frameworks and libraries are supported in Snyk for Python:
 * libxml - Comprehensive
 * lxml - Comprehensive
 * mistralai - Comprehensive
+* modelcontextprotocol/python-sdk - Comprehensive
 * mongoengine - Comprehensive
 * openai - Comprehensive
 * pandas - Partial
