@@ -1,4 +1,4 @@
-# How Snyk incorporates generative AI into our platform
+# How Snyk incorporates generative AI into the platform
 
 Snyk’s AI Trust Platform uses generative AI to enhance automation, efficiency, and innovation for developers and security teams. Snyk uses a mix of solutions, including proprietary, self-hosted models and third-party large language models (LLMs).
 
@@ -31,7 +31,7 @@ Snyk uses multiple AI deployment strategies to balance performance, security, an
 
 #### &#x20;Snyk API & Web (False Positive Reduction (FPR))
 
-<table data-header-hidden><thead><tr><th width="234.44921875"></th><th></th></tr></thead><tbody><tr><td><h4>Attribute</h4></td><td><h4>Details</h4></td></tr><tr><td><h4>Purpose</h4></td><td>Designed to help classify findings to reduce manual review and improve efficiency.</td></tr><tr><td><h4>AI models / deployment</h4></td><td>Anthropic’s Claude models through AWS Bedrock.</td></tr><tr><td><h4>Data processed</h4></td><td>Parts of HTTP requests and responses (i.e. components of web communications that are analyzed to detect and classify vulnerabilities).</td></tr><tr><td><h4>Data retention</h4></td><td>Customer proprietary software code is not passed to or retained by the provider of these AI models.</td></tr><tr><td><h4>Additional information</h4></td><td>More information about Snyk API &#x26; Web is available <a href="https://developers.probely.com/">here</a>.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="230.103515625"></th><th></th></tr></thead><tbody><tr><td><strong>Attribute</strong></td><td><strong>Details</strong></td></tr><tr><td><strong>Purpose</strong></td><td>Designed to help classify findings to reduce manual review and improve efficiency.</td></tr><tr><td><strong>AI models / deployment</strong></td><td>Anthropic’s Claude models through AWS Bedrock.</td></tr><tr><td><strong>Data Processed</strong></td><td>Parts of HTTP requests and responses (i.e. components of web communications that are analyzed to detect and classify vulnerabilities).</td></tr><tr><td><strong>Data retention</strong></td><td>Customer proprietary software code is not passed to or retained by the provider of these AI models.</td></tr><tr><td><strong>Additional information</strong></td><td>More information about Snyk API &#x26; Web is available <a href="https://developers.probely.com/">here</a>.</td></tr></tbody></table>
 
 ### &#x20;Additional AI safeguards and controls
 
