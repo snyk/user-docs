@@ -457,9 +457,9 @@ Use the information in the Cloud Compliance Issues report to investigate, triage
 ## Snyk Generated Pull Requests
 
 {% hint style="info" %}
-**Release status**
+**Feature availability**
 
-Snyk Generated Pull Requests report is now in Early Access and available only for Enterprise plan customers on the all SCM integrations. For more information, see [Plans and pricing](https://snyk.io/plans/).
+Snyk Generated Pull Requests report is available only for Enterprise plan customers, for all SCM integrations. For more information, see [Plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 ### Access the report
@@ -477,6 +477,10 @@ The analytics report covers the following:
 * Breakdown by repository for PR status.
 
 The report summary enables you to check the total number of Snyk PRs created, the total pull requests merged, and the mean time to merge for those pull requests.
+
+{% hint style="warning" %}
+This report type does not include PR checks.
+{% endhint %}
 
 ### Report features
 
