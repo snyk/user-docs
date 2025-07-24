@@ -1093,7 +1093,7 @@
   * [Snyk Learn API](snyk-learn/snyk-learn-api.md)
 * [Working with Snyk](working-with-snyk/README.md)
   * [How Snyk handles your data](working-with-snyk/how-snyk-handles-your-data.md)
-  * [How Snyk incorporates generative AI into our platform](working-with-snyk/how-snyk-incorporates-generative-ai-into-our-platform.md)
+  * [How Snyk incorporates generative AI into the platform](working-with-snyk/how-snyk-incorporates-generative-ai-into-the-platform.md)
   * [Regional hosting and data residency](working-with-snyk/regional-hosting-and-data-residency.md)
   * [Disclosure of a vulnerability in an open-source package](working-with-snyk/disclosure-of-a-vulnerability-in-an-open-source-package.md)
   * [Reporting security issues](working-with-snyk/reporting-security-issues.md)
