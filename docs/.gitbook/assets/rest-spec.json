@@ -931,6 +931,16 @@
           "$ref": "#/components/schemas/EnvironmentKind"
         }
       },
+      "LearningProgramId": {
+        "description": "The unique identifier of the learning program.",
+        "in": "path",
+        "name": "learning_program_id",
+        "required": true,
+        "schema": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
       "Limit": {
         "description": "Number of results to return per page",
         "example": 10,
@@ -69233,7 +69243,7 @@
     },
     "/tenants/{tenant_id}/learn/learning_programs": {
       "get": {
-        "description": "Retrieves a paginated list of learning programs available for the specified tenant.\n\n#### Required permissions\n\n- `tenant.learn_assignment.read`",
+        "description": "Retrieves a paginated list of learning programs available for the specified tenant.\n\n#### Required permissions\n\n- `Edit Tenant Details (tenant.edit)`",
         "operationId": "listTenantLearningPrograms",
         "parameters": [
           {
@@ -69320,7 +69330,7 @@
         "x-stability-level": "beta"
       },
       "post": {
-        "description": "Creates a new learning program in DRAFT status\n\n#### Required permissions\n\n- `tenant.learn_assignment.create`",
+        "description": "Creates a new learning program in DRAFT status\n\n#### Required permissions\n\n- `Edit Tenant Details (tenant.edit)`",
         "operationId": "createTenantLearningPrograms",
         "parameters": [
           {
@@ -69410,6 +69420,101 @@
           }
         },
         "summary": "Create a new learning program",
+        "tags": [
+          "Learning Program"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "learning_programs",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/tenants/{tenant_id}/learn/learning_programs/{learning_program_id}": {
+      "get": {
+        "description": "Retrieves a single learning program by its ID for the specified tenant.\n\n#### Required permissions\n\n- `Edit Tenant Details (tenant.edit)`",
+        "operationId": "getTenantLearningProgram",
+        "parameters": [
+          {
+            "description": "The unique identifier of the tenant.",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/LearningProgramId"
+          },
+          {
+            "$ref": "#/components/parameters/ApiVersion"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/LearningProgramResource"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/SelfLink"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Returns a single learning program",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get a single learning program for a tenant",
         "tags": [
           "Learning Program"
         ],
