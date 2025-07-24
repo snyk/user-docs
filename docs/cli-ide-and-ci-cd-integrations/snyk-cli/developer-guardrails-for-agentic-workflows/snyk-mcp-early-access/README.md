@@ -1,4 +1,10 @@
-# Snyk MCP - Early Access
+# Snyk MCP
+
+{% hint style="info" %}
+**Release status**&#x20;
+
+Snyk MCP is in Early Access and available only with Enterprise plans with Snyk AppRisk. You can access it through the Snyk CLI.
+{% endhint %}
 
 MCP (Model Context Protocol) is an open protocol that standardizes how applications share context with large language models.
 
