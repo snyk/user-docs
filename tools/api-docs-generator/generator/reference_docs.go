@@ -152,10 +152,6 @@ func processOperation(pathURL string,
 			}
 		}
 
-		if isBeta(operation) {
-			continue
-		}
-
 		tag += spec.Suffix
 		specDocs[tag] = append(specDocs[tag], operationPath{
 			operation: operation,
@@ -169,17 +165,17 @@ func processOperation(pathURL string,
 	return nil
 }
 
-func isBeta(operation *openapi3.Operation) bool {
-	apiStabilityExtension, ok := operation.Extensions["x-snyk-api-stability"]
-	if !ok || apiStabilityExtension == nil {
-		return false
-	}
-	stabilityStr, ok := apiStabilityExtension.(string)
-	if !ok {
-		return false
-	}
-	return stabilityStr == "beta"
-}
+//  func isBeta(operation *openapi3.Operation) bool {
+//	apiStabilityExtension, ok := operation.Extensions["x-snyk-api-stability"]
+//	if !ok || apiStabilityExtension == nil {
+//		return false
+//	}
+//	stabilityStr, ok := apiStabilityExtension.(string)
+//	if !ok {
+//		return false
+//	}
+//	return stabilityStr == "beta"
+//  }
 
 func extractCategoryNameFromExtension(extension interface{}) (string, error) {
 	extensionMap, worked := extension.(map[string]interface{})
