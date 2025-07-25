@@ -22,7 +22,7 @@ For false positive or false negative results, see [Troubleshooting PR Checks](tr
 
 Consider the following end-to-end scenario, including specific actions such as triggering a Fix PR and marking a **Failed** result as **Passed**. You can take these actions in relation to the information provided by the PR Checks. This example shows taking the steps for a [GitHub integration](../../../scm-integrations/organization-level-integrations/github.md) as follows:
 
-1. [Trigger a fix for an individual dependency issue](analyze-pr-checks-results.md#trigger-a-fix-for-an-individual-dependency-issue) to find and address vulnerabilities.
+1. [Trigger a fix for an individual dependency](analyze-pr-checks-results.md#trigger-a-fix-for-an-individual-dependency) to remediate that version's vulnerabilities.
 2. [Open a Fix PR](analyze-pr-checks-results.md#open-a-fix-pr) to open a pull request in GitHub.
 3. [Analyze PR Checks results and set status](analyze-pr-checks-results.md#analyze-pr-checks-result-and-set-status) to merge the pull request.
 
@@ -30,15 +30,15 @@ Consider the following end-to-end scenario, including specific actions such as t
 Before you begin, check the [Prerequisites for automated PR Checks](configure-pull-request-checks.md#prerequisites-for-automated-pr-checks) to make sure you have Snyk configured and the role defined.
 {% endhint %}
 
-### Trigger a fix for an individual dependency issue
+### Trigger a fix for an individual dependency
 
 1. Log in to the Snyk Web UI.
 2. Navigate to **Projects**.
 3. Expand the target containing your Project.
 4. Click a Project name to open it and select **package.json** to check for open-source and licensing issues.
-5. In the **Issues** tab, find an individual issue card and select **Fix this vulnerability**. For this example, an Uninitialized Memory Exposure is selected.
+5. In the **Issues** tab, find the dependency or specific vulnerability and, if a fix is available, click the **Upgrade to X.X.X** button at the bottom of the card and select **Fix this vulnerability**. For example, the jsonwebtoken can be upgraded from version 0.4.0 to version 5.0.0, fixing a number of vulnerabilities.
 
-<figure><img src="../../../.gitbook/assets/projects-issues-overview.png" alt="Fixing individual issue in dependencies project."><figcaption><p>Fixing an individual issue in the dependencies project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/PR-checks-fix-dependencies-issue.png" alt=""><figcaption><p>Updating a dependency to remediate the Authentication Bypass issue and others found in version 5.0.0.</p></figcaption></figure>
 
 6. (Optional) Select **Fix these vulnerabilities** at the top of the page to fix all dependency vulnerabilities with one pull request.
 
@@ -46,7 +46,7 @@ Before you begin, check the [Prerequisites for automated PR Checks](configure-pu
 
 Confirm your selected issue and click **Open a Fix PR** to open a pull request in the GitHub integration.
 
-<figure><img src="../../../.gitbook/assets/trigger-open-fix-pr.png" alt="Triggering a Fix PR for an individual issue in dependencies project." width="375"><figcaption><p>Triggering a Fix PR for an individual issue in the dependencies project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/PR-checks-triggering-fix-pr.png" alt=""><figcaption><p>Triggering a Fix PR for an individual issue in the dependencies project</p></figcaption></figure>
 
 ### Analyze PR checks result and set status
 

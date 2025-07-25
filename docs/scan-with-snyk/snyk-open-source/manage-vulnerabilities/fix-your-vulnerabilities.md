@@ -1,6 +1,6 @@
 # Fix your vulnerabilities
 
-Snyk helps you to fix vulnerabilities by upgrading the direct dependencies to a vulnerability-free version or by patching the vulnerability. After Snyk scans your Projects, the scan results allow you to resolve issues in your code with the help of clear suggestions and explanations.
+Snyk helps you to fix vulnerabilities by upgrading the direct dependencies to a more secure version or by patching the vulnerability. After Snyk scans your Projects, the scan results allow you to resolve issues in your code with the help of clear suggestions and explanations.
 
 Using Snyk Open Source, you can do the following:
 
@@ -10,18 +10,18 @@ Using Snyk Open Source, you can do the following:
 
 ## View scan results on the Snyk Web UI
 
-From Snyk Open Source, for each tab, both upgrade and patch, in the fix advice area of your Project details, results are displayed as follows:
+For Snyk Open Source, on the **Issues** tab, the results are displayed as follows:
 
-* The total number of packages that can be fixed is displayed in the tab title.
-* Groups of vulnerabilities by package are shown, labeled by the upgrade or fix that is recommended.
-* Packages are listed and can be expanded to show the full list of vulnerabilities affecting the package.
-* All the vulnerabilities found in your dependencies are displayed further down the page, together with contextual information that can help you prioritize the issues and start fixing them if required.
+* The total number of dependencies that can be fixed is displayed in the tab title.
+* Vulnerabilities grouped by dependency are shown, labeled by the current dependency version.
+* Different versions are listed and can be expanded to show the full list of vulnerabilities remediated in that specific version.
+* All vulnerabilities contain contextual information to help you prioritize the issues and start fixing them.
 
-<figure><img src="../../../.gitbook/assets/projects_issues_scan_results.png" alt=""><figcaption><p>Example of project issues</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/OS-fix-vulns-issues-in-project.png" alt=""><figcaption><p>Example of issues diplayed on the Issues tab for a Project</p></figcaption></figure>
 
-## View Fix Advice
+## View fix advice
 
-The Fix Advice area appears on the Project details page. Snyk offers you one of these solutions:
+The **Fixes** tab also appears on the Project details page. On this page, Snyk offers you one of these solutions:
 
 * An upgrade to the original package.
 * Pinning a package, installing a package as a top-level dependency; that is, a specific version of an indirect dependency. This avoids having a direct dependency pull in a vulnerable version.
