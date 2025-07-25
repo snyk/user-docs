@@ -25,7 +25,7 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
 * [Snyk GitHub Cloud App](../scm-integrations/organization-level-integrations/github-cloud-app.md)
 * [Automatically created Project collections](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
 * Snyk Code
-  * [Snyk Code custom rules](../scan-with-snyk/snyk-code/snyk-code-custom-rules/)
+  * [Snyk Code custom rules](broken-reference)
   * [Fix code vulnerabilities automatically](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
 * Risk Management
   * [Risk Score](../manage-risk/prioritize-issues-for-fixing/risk-score.md)
