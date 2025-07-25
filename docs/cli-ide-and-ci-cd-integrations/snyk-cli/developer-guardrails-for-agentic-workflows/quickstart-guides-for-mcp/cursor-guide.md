@@ -4,7 +4,7 @@ You can add the Snyk MCP server to Cursor to secure code generated with agentic 
 
 ## Direct link (preferred)
 
-* Click [this link](cursor://anysphere.cursor-deeplink/mcp/install?name=Snyk\&config=eyJjb21tYW5kIjoic255ayBtY3AgLXQgc3RkaW8gLS1leHBlcmltZW50YWwifQ%3D%3D) to directly add the server to Cursor.
+* Click [this link](cursor://anysphere.cursor-deeplink/mcp/install?name=Snyk\&config=eyJjb21tYW5kIjoic255ayBtY3AgLXQgc3RkaW8ifQ==) to directly add the server to Cursor.
 * Confirm installation in the Cursor settings by clicking on `Install`
 
 <figure><img src="../../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
