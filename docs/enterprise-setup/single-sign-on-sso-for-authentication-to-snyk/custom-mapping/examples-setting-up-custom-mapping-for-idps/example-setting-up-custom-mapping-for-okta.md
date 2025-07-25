@@ -52,6 +52,10 @@ When you look at a user's Application assignment it should look similar to the i
     `Arrays.flatten(appuser.snyk_orgs)`
 5. Reach out to your Snyk point of contact so they can complete the configuration.
 
+{% hint style="info" %}
+If your Snyk representative lets you know that `Arrays.flatten(appuser.snyk_orgs)` is sent to Snyk, instead of the actual roles value(s), you must verify that the App is assigned at the Group level and not the user level. If both user and Group have been assigned, the individual assignment will take precedence, and the roles assignment will not work. Remove the individual assignment if this is the case.
+{% endhint %}
+
 ## Option 2: Assign custom mapping with user roles
 
 The following describes Custom Mapping with user roles.&#x20;
