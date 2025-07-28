@@ -1,37 +1,35 @@
 # Elixir
 
+## Applicability and integration
+
 {% hint style="info" %}
 Elixir is supported only for Snyk Open Source.
 {% endhint %}
 
-## Applicability
+Available integrations: CLI and IDE: test or monitor your app
 
-The following functions are available for Elixir:
+Available functions:
 
-* Test or monitor your app through CLI and IDE, available for Snyk Open Source.
 * Test your app's SBOM using `pkg:hex`
 * Test your app's packages using `pkg:hex`
 
-## Package managers and supported file extensions
+## Technical specifications
 
-For Elixir, Snyk supports [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) as a package manager and [hex.pm](https://hex.pm/) as a package registry. It does not support any file formats.
+* Supported package manager:  [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/)
+* Supported package registry: [hex.pm](https://hex.pm/)
 
-## Frameworks and libraries
-
-Snyk does not support frameworks and libraries for Elixir.&#x20;
-
-## Features
+### Supported features
 
 For Elixir, Snyk supports the **Reports** feature.&#x20;
 
 {% hint style="info" %}
-The **Snyk FixPR** feature is not available for Elixir. This means that you will not be notified if the PR checks fail when the following conditions are met:&#x20;
+The **Snyk Fix PR** feature is not available for Elixir. This means that you will not be notified if the PR checks fail when the following conditions are met:&#x20;
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**
 {% endhint %}
 
-## Snyk CLI for Elixir
+### Snyk CLI for Elixir
 
 {% hint style="info" %}
 To scan your dependencies, you must first install Elixir and Mix. For details, [see the Elixir installation instructions](https://elixir-lang.org/install.html).
@@ -43,13 +41,13 @@ Mix is a build tool that compiles, tests, and creates Elixir projects. Mix manag
 
 Snyk builds a dependency tree for your Project by analyzing your `mix.exs` and `mix.lock` files. The `mix.lock` file must be present and in sync with the `mix.exs` file. After Snyk builds the tree, Snyk uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in the packages anywhere in the dependency tree.
 
-### **Project naming**
+#### **Project naming**
 
 Projects in the Snyk UI are named according to the `app` keyword from the `project/0` function exported by `Mix.Project` in the main `mix.exs` file.
 
 To override the name, use the `--project-name` CLI option.
 
-### **Mix umbrella projects**
+#### **Mix umbrella projects**
 
 If you test a Mix umbrella project, Snyk detects that it is an umbrella project and includes all the child apps automatically.
 
