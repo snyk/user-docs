@@ -1,21 +1,21 @@
 # VB.NET
 
+## Applicability and integration
+
 {% hint style="info" %}
 Snyk for VB.NET is supported only for Snyk Code.
 {% endhint %}
 
-## Applicability
+Available integrations:
 
-The following functions are available for VB.NET:
+* SCM import
+* CLI and IDE: test or monitor your app
 
-* SCM import, available for Snyk Code.&#x20;
-* Test or monitor your app through CLI and IDE, available for Snyk Code.&#x20;
+## Technical specifications
 
-## Package managers and supported file extensions
+For VB.NET, Snyk supports  the  `.vb` file format.
 
-Snyk does not support any package managers for VB.NET, but supports the  `.vb` file format for Snyk Code.
-
-## Frameworks and libraries
+### Supported frameworks and libraries
 
 For VB.NET, Snyk supports the following frameworks and libraries:
 
@@ -26,12 +26,12 @@ For VB.NET, Snyk supports the following frameworks and libraries:
 * Google\_GenerativeAI - Comprehensive&#x20;
 * Mistral.SDK - Comprehensive
 
-## Features
+### Supported features
 
-The Reports feature is available for VB.NET.
+The **Reports** feature is available for VB.NET.
 
 {% hint style="info" %}
-The **Snyk FixPR** feature is not available for Apex. This means that you will not be notified if the PR checks fail when the following conditions are met:
+The **Snyk Fix PR** feature is not available for Apex. This means that you will not be notified if the PR checks fail when the following conditions are met:
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**
