@@ -6,7 +6,9 @@
 Groovy for Snyk Code is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](../snyk-admin/snyk-preview.md).
 {% endhint %}
 
-## Frameworks and libraries
+## Technical specifications
+
+### Supported frameworks and libraries
 
 For Groovy, Snyk supports the following frameworks and libraries:
 
@@ -19,16 +21,14 @@ For Groovy, Snyk supports the following frameworks and libraries:
 * Play - Partial
 * Spring - Partial
 
-## Supported file extensions
+### Supported file extensions
 
-For Groovy, Snyk supports the following extensions:
+For Groovy, Snyk supports the following file extensions:
 
 * .groovy
 * .grt
 * .gtpl
 * .gvy
-
-## Features
 
 For Groovy, Snyk supports the following features:
 
