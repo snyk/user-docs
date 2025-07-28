@@ -1,25 +1,22 @@
 # Dart and Flutter
 
+## Applicability and integration
+
 {% hint style="info" %}
 Dart and Flutter are supported only for Open Source.
 {% endhint %}
 
-## Applicability
-
 The following functions are available for Dart and Flutter:
+
+Available functions:&#x20;
 
 * Test your app's SBOM using `pkg:pub`
 * Test your app's packages using `pkg:pub`
 
-## Package managers and supported file extensions
+## Technical specifications
 
-For Dart and Flutter, Snyk supports Pub as a package manager and [pub.dev](https://pub.dev/) as a package registry. It does not support any file formats.
-
-## Frameworks and libraries
-
-Snyk does not support frameworks and libraries for Dart and Flutter.&#x20;
-
-## Features
+* Supported package managers:  Pub
+* Supported package registry: [pub.dev](https://pub.dev/)
 
 Snyk features are not supported for Dart and Flutter. You can test an open-source package from Pub package manager:
 
