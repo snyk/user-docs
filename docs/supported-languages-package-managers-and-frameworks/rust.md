@@ -1,22 +1,23 @@
 # Rust
 
+## Applicability and integration
+
 {% hint style="info" %}
 Rust is supported for Snyk Code and for Snyk Open Source.
 {% endhint %}
 
-## Applicability
-
-The following functions are available for Rust:
+Available functions:
 
 * Test your app's SBOM using `pkg:cargo` For more information, see [Test an SBOM document for vulnerabilities](../snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
 * Test your app's packages using `pkg:cargo`
 * Test your individual Rust packages from the Cargo package manager. For more information, see [List issues for a package](../snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package.md).
 
-## Package managers and supported file extensions
+## Technical specifications
 
-For Rust, Snyk supports Cargo as a package manager and [crates.io](https://crates.io/) as a package registry. It does not support any file formats.
+* Supported package manager: Cargo
+* Supported package registry: [crates.io](https://crates.io/)
 
-## Frameworks and libraries
+### Supported frameworks and libraries
 
 For Rust with Snyk Open Source, the following frameworks and libraries are supported:
 
@@ -37,7 +38,7 @@ For Rust with Snyk Open Source, the following frameworks and libraries are suppo
 * sqlx - Comprehensive
 * Reqwest - Comprehensive
 
-## Features
+### Rust for Snyk Code
 
 For Rust with Snyk Code, the following features are supported:
 
@@ -45,11 +46,13 @@ For Rust with Snyk Code, the following features are supported:
 * Reports
 
 {% hint style="info" %}
-Code analysis support for Rust is available with **Snyk Preview**.&#x20;
+Code analysis support for Rust is available with Snyk Preview.&#x20;
 {% endhint %}
+
+### Rust for Snyk Open Source
 
 For Rust with Snyk Open Source, there are no features supported.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 If you want to use Open Source PR checks in Rust Projects for which the **Fix PRs** feature is not supported, it is possible that vulnerable dependencies are introduced without being flagged.
 {% endhint %}
