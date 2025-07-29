@@ -19109,12 +19109,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15"
         ],
         "x-snyk-api-resource": "export",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
+        "x-stability-level": "stable"
       }
     },
     "/groups/{group_id}/export/{export_id}": {
@@ -19166,12 +19166,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15"
         ],
         "x-snyk-api-resource": "export",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
+        "x-stability-level": "stable"
       }
     },
     "/groups/{group_id}/issues": {
@@ -21189,12 +21189,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15"
         ],
         "x-snyk-api-resource": "export",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
+        "x-stability-level": "stable"
       }
     },
     "/groups/{group_id}/memberships": {
@@ -30506,12 +30506,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15"
         ],
         "x-snyk-api-resource": "export",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
+        "x-stability-level": "stable"
       }
     },
     "/orgs/{org_id}/export/{export_id}": {
@@ -30563,12 +30563,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15"
         ],
         "x-snyk-api-resource": "export",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
+        "x-stability-level": "stable"
       }
     },
     "/orgs/{org_id}/invites": {
@@ -32877,12 +32877,12 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15"
         ],
         "x-snyk-api-resource": "export",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
+        "x-stability-level": "stable"
       }
     },
     "/orgs/{org_id}/learn/assignments": {
