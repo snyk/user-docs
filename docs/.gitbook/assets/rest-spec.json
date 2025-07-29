@@ -17708,7 +17708,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get all groups",
+        "summary": "Get all groups (Early Access)",
         "tags": [
           "Groups"
         ],
@@ -17798,7 +17798,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get Group",
+        "summary": "Get Group (Early Access)",
         "tags": [
           "Group"
         ],
@@ -18554,7 +18554,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "List Assets with filters",
+        "summary": "List Assets with filters (Early Access)",
         "tags": [
           "Asset"
         ],
@@ -18661,7 +18661,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get an Asset by its ID",
+        "summary": "Get an Asset by its ID (Early Access)",
         "tags": [
           "Asset"
         ],
@@ -18788,7 +18788,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "List related assets with pagination",
+        "summary": "List related assets with pagination (Early Access)",
         "tags": [
           "Asset"
         ],
@@ -18915,7 +18915,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "List asset projects with pagination",
+        "summary": "List asset projects with pagination (Early Access)",
         "tags": [
           "Asset"
         ],
@@ -23284,7 +23284,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get all SSO connections for a group",
+        "summary": "Get all SSO connections for a group (Early Access)",
         "tags": [
           "Groups"
         ],
@@ -23396,7 +23396,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get all users using a given SSO connection",
+        "summary": "Get all users using a given SSO connection (Early Access)",
         "tags": [
           "Groups"
         ],
@@ -23476,7 +23476,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Delete a user from a Group SSO connection",
+        "summary": "Delete a user from a Group SSO connection (Early Access)",
         "tags": [
           "Groups"
         ],
@@ -23563,7 +23563,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Update a user's role in a group",
+        "summary": "Update a user's role in a group (Early Access)",
         "tags": [
           "Users"
         ],
@@ -23655,7 +23655,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "List Snyk Learn's resources",
+        "summary": "List Snyk Learn's resources (Early Access)",
         "tags": [
           "Catalog Resource"
         ],
@@ -26253,7 +26253,7 @@
             "$ref": "#/components/responses/InternalServerError"
           }
         },
-        "summary": "List Assets",
+        "summary": "List Assets (Early Access)",
         "tags": [
           "Assets"
         ],
@@ -26498,7 +26498,7 @@
             "$ref": "#/components/responses/InternalServerError"
           }
         },
-        "summary": "Create Asset",
+        "summary": "Create Asset (Early Access)",
         "tags": [
           "Assets"
         ],
@@ -26584,7 +26584,7 @@
             "$ref": "#/components/responses/InternalServerError"
           }
         },
-        "summary": "Get an Asset by its ID",
+        "summary": "Get an Asset by its ID (Early Access)",
         "tags": [
           "Assets"
         ],
@@ -27946,7 +27946,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "List Environments",
+        "summary": "List Environments (Early Access)",
         "tags": [
           "Cloud"
         ],
@@ -28095,7 +28095,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Create New Environment",
+        "summary": "Create New Environment (Early Access)",
         "tags": [
           "Cloud"
         ],
@@ -28177,7 +28177,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Delete Environment",
+        "summary": "Delete Environment (Early Access)",
         "tags": [
           "Cloud"
         ],
@@ -28332,7 +28332,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Update Environment",
+        "summary": "Update Environment (Early Access)",
         "tags": [
           "Cloud"
         ],
@@ -28483,7 +28483,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Generate Cloud Provider Permissions",
+        "summary": "Generate Cloud Provider Permissions (Early Access)",
         "tags": [
           "Cloud"
         ],
@@ -28643,7 +28643,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "List Resources",
+        "summary": "List Resources (Early Access)",
         "tags": [
           "Cloud"
         ],
@@ -28773,7 +28773,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "List Scans",
+        "summary": "List Scans (Early Access)",
         "tags": [
           "Cloud"
         ],
@@ -28924,7 +28924,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Create Scan",
+        "summary": "Create Scan (Early Access)",
         "tags": [
           "Cloud"
         ],
@@ -29044,7 +29044,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get scan",
+        "summary": "Get scan (Early Access)",
         "tags": [
           "Cloud"
         ],
@@ -32951,7 +32951,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Bulk deletion of assignments in an organization",
+        "summary": "Bulk deletion of assignments in an organization (Early Access)",
         "tags": [
           "Learn assignment"
         ],
@@ -33054,7 +33054,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Retrieve a list of assignments for an organization",
+        "summary": "Retrieve a list of assignments for an organization (Early Access)",
         "tags": [
           "Learn assignment"
         ],
@@ -33161,7 +33161,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Update due date for assignments in an organization.",
+        "summary": "Update due date for assignments in an organization. (Early Access)",
         "tags": [
           "Learn assignment"
         ],
@@ -33239,7 +33239,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Bulk creation of assignments for users in an organization.",
+        "summary": "Bulk creation of assignments for users in an organization. (Early Access)",
         "tags": [
           "Learn assignment"
         ],
@@ -33348,7 +33348,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get collective learning progress",
+        "summary": "Get collective learning progress (Early Access)",
         "tags": [
           "Learn progress"
         ],
@@ -33471,7 +33471,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get individual user learning progress",
+        "summary": "Get individual user learning progress (Early Access)",
         "tags": [
           "Learn progress"
         ],
@@ -34722,7 +34722,7 @@
             "$ref": "#/components/responses/404"
           }
         },
-        "summary": "List org policy events",
+        "summary": "List org policy events (Early Access)",
         "tags": [
           "Policies"
         ],
@@ -35855,7 +35855,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Create an SBOM test run",
+        "summary": "Create an SBOM test run (Early Access)",
         "tags": [
           "SBOM"
         ],
@@ -35986,7 +35986,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Gets an SBOM test run status",
+        "summary": "Gets an SBOM test run status (Early Access)",
         "tags": [
           "SBOM"
         ],
@@ -36131,7 +36131,7 @@
             }
           }
         },
-        "summary": "Gets an SBOM test run result",
+        "summary": "Gets an SBOM test run result (Early Access)",
         "tags": [
           "SBOM"
         ],
@@ -38828,7 +38828,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get user by ID",
+        "summary": "Get user by ID (Early Access)",
         "tags": [
           "Users"
         ],
@@ -39018,7 +39018,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get access requests",
+        "summary": "Get access requests (Early Access)",
         "tags": [
           "AccessRequests"
         ],
@@ -69316,7 +69316,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "List learning programs for a tenant",
+        "summary": "List learning programs for a tenant (Early Access)",
         "tags": [
           "Learning Program"
         ],
@@ -69419,7 +69419,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Create a new learning program",
+        "summary": "Create a new learning program (Early Access)",
         "tags": [
           "Learning Program"
         ],
@@ -69514,7 +69514,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get a single learning program for a tenant",
+        "summary": "Get a single learning program for a tenant (Early Access)",
         "tags": [
           "Learning Program"
         ],
@@ -69642,7 +69642,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get all memberships of the tenant",
+        "summary": "Get all memberships of the tenant (Early Access)",
         "tags": [
           "Tenants"
         ],
@@ -69718,7 +69718,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Delete an individual tenant membership for a single user.",
+        "summary": "Delete an individual tenant membership for a single user. (Early Access)",
         "tags": [
           "Tenants"
         ],
@@ -69811,7 +69811,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Update tenant membership",
+        "summary": "Update tenant membership (Early Access)",
         "tags": [
           "Tenants"
         ],
@@ -69940,7 +69940,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "List all available roles for a given tenant",
+        "summary": "List all available roles for a given tenant (Early Access)",
         "tags": [
           "TenantRole"
         ],
@@ -70074,7 +70074,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Create a custom tenant role for a given tenant",
+        "summary": "Create a custom tenant role for a given tenant (Early Access)",
         "tags": [
           "TenantRole"
         ],
@@ -70154,7 +70154,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Delete a specific tenant role by its id and its tenant id.",
+        "summary": "Delete a specific tenant role by its id and its tenant id. (Early Access)",
         "tags": [
           "TenantRole"
         ],
@@ -70254,7 +70254,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Return a specific role by its id and its tenant id.",
+        "summary": "Return a specific role by its id and its tenant id. (Early Access)",
         "tags": [
           "TenantRole"
         ],
@@ -70387,7 +70387,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Update a specific tenant role by its id and its tenant id.",
+        "summary": "Update a specific tenant role by its id and its tenant id. (Early Access)",
         "tags": [
           "TenantRole"
         ],
