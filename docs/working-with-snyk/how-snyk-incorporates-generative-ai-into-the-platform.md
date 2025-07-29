@@ -9,7 +9,7 @@ This document explains what generative AI technologies Snyk uses and how data fl
 Snyk places the utmost importance on data security and integrity.
 
 * **No training on customer code**: Snyk does not use customer proprietary software code to train, optimize, fine tune or improve any of its AI models, and does not use or incorporate any third-party AI models into the platform unless they make the same commitments.
-* **Contractual protection**: all of the AI functionality described in this document forms part of Snyk’s services. Your use of this functionality is governed by your existing agreements with Snyk and benefits from the same contractual protections. No separate in-service terms, addenda, or amendments to your existing agreements with Snyk are required.
+* **Contractual protection**: All of the AI functionality described in this document forms part of Snyk’s services. Your use of this functionality is governed by your existing agreements with Snyk and benefits from the same contractual protections. No separate in-service terms, addenda, or amendments to your existing agreements with Snyk are required.
 
 ### AI models&#x20;
 
@@ -23,7 +23,7 @@ Snyk uses multiple AI deployment strategies to balance performance, security, an
 
 #### Agent Fix & Explain
 
-<table data-header-hidden><thead><tr><th width="226.24609375"></th><th></th></tr></thead><tbody><tr><td><strong>Attribute</strong></td><td><strong>Details</strong></td></tr><tr><td><strong>Purpose</strong></td><td><p>Designed to help developers:</p><p></p><ul><li>Fix their code faster by suggesting fixes to vulnerabilities identified by Snyk Code; and</li><li>Better understand findings and suggestions returned by Snyk by providing detailed explanations on demand.</li></ul></td></tr><tr><td><strong>AI models / deployment</strong></td><td>A combination of Snyk’s proprietary DeepCode AI engine and other open-source models that may be fine-tuned on Snyk’s existing datasets (which do not include any customer proprietary software code) and which are maintained and hosted entirely within our controlled environment.</td></tr><tr><td><strong>Data processed</strong></td><td>Code snippets containing only the relevant scope of the vulnerability.</td></tr><tr><td><strong>Data retention</strong></td><td>Because these models are entirely Snyk hosted, no customer proprietary software code is retained by them.</td></tr><tr><td><strong>Additional information</strong> </td><td>More information about Agent Fix is available<a data-footnote-ref href="#user-content-fn-1"> </a><a data-footnote-ref href="#user-content-fn-1">here</a>.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="226.24609375"></th><th></th></tr></thead><tbody><tr><td><strong>Attribute</strong></td><td><strong>Details</strong></td></tr><tr><td><strong>Purpose</strong></td><td><p>Designed to help developers:</p><p></p><ul><li>Fix their code faster by suggesting fixes to vulnerabilities identified by Snyk Code; and</li><li>Better understand findings and suggestions returned by Snyk by providing detailed explanations on demand.</li></ul></td></tr><tr><td><strong>AI models / deployment</strong></td><td>A combination of Snyk’s proprietary DeepCode AI engine and other open-source models that may be fine-tuned on Snyk’s existing datasets (which do not include any customer proprietary software code) and which are maintained and hosted entirely within our controlled environment.</td></tr><tr><td><strong>Data processed</strong></td><td>Code snippets containing only the relevant scope of the vulnerability.</td></tr><tr><td><strong>Data retention</strong></td><td>Because these models are entirely Snyk hosted, no customer proprietary software code is retained by them.</td></tr><tr><td><strong>Additional information</strong> </td><td>More information about Agent Fix is available <a href="../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md">here</a>.</td></tr></tbody></table>
 
 #### &#x20;Snyk Assist for Snyk Learn
 
@@ -31,7 +31,7 @@ Snyk uses multiple AI deployment strategies to balance performance, security, an
 
 #### &#x20;Snyk API & Web (False Positive Reduction (FPR))
 
-<table data-header-hidden><thead><tr><th width="230.103515625"></th><th></th></tr></thead><tbody><tr><td><strong>Attribute</strong></td><td><strong>Details</strong></td></tr><tr><td><strong>Purpose</strong></td><td>Designed to help classify findings to reduce manual review and improve efficiency.</td></tr><tr><td><strong>AI models / deployment</strong></td><td>Anthropic’s Claude models through AWS Bedrock.</td></tr><tr><td><strong>Data Processed</strong></td><td>Parts of HTTP requests and responses (i.e. components of web communications that are analyzed to detect and classify vulnerabilities).</td></tr><tr><td><strong>Data retention</strong></td><td>Customer proprietary software code is not passed to or retained by the provider of these AI models.</td></tr><tr><td><strong>Additional information</strong></td><td>More information about Snyk API &#x26; Web is available <a href="https://developers.probely.com/">here</a>.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="230.103515625"></th><th></th></tr></thead><tbody><tr><td><strong>Attribute</strong></td><td><strong>Details</strong></td></tr><tr><td><strong>Purpose</strong></td><td>Designed to help classify findings to reduce manual review and improve efficiency.</td></tr><tr><td><strong>AI models / deployment</strong></td><td>Anthropic’s Claude models through AWS Bedrock.</td></tr><tr><td><strong>Data Processed</strong></td><td>Parts of HTTP requests and responses (i.e. components of web communications that are analyzed to detect and classify vulnerabilities).</td></tr><tr><td><strong>Data retention</strong></td><td>Customer proprietary software code is not passed to or retained by the provider of these AI models.</td></tr><tr><td><strong>Additional information</strong></td><td>More information about Snyk API &#x26; Web is available <a href="https://help.probely.com/en/">here</a>.</td></tr></tbody></table>
 
 ### &#x20;Additional AI safeguards and controls
 
@@ -42,5 +42,3 @@ Snyk does not develop general-purpose AI models. Our proprietary AI is purpose-b
 ### How Snyk handles data generally
 
 View [How Snyk handles your data](https://docs.snyk.io/working-with-snyk/how-snyk-handles-your-data) for more general information about Snyk’s data management practices.&#x20;
-
-[^1]: 
