@@ -29,7 +29,7 @@ The following table summarizes how an ignore will be respected for testing depen
 | **Import through an SCM and set ignore by available methods**                                                                                                | **Ignore respected in UI for testing**                 | **Ignore respected in CLI and IDE tests**              |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------ |
 | Ignore by policy (add ignore commands to your security policies)                                                                                             | <p>Open Source: ✅<br>Container: ✅</p><p>Code: ❌</p>    | <p>Open Source: ✅</p><p>Container: ✅</p><p>Code: ❌</p> |
-| Ignore by UI or API                                                                                                                                          | <p>Open Source: ✅</p><p>Container: ✅</p><p>Code: ✅</p> | <p>Open Source: ❌</p><p>Container: ❌</p><p>Code: ❌</p> |
+| Ignore by UI or API                                                                                                                                          | <p>Open Source: ✅</p><p>Container: ✅</p><p>Code: ✅</p> | <p>Open Source: ❌</p><p>Container: ❌</p><p>Code: ✅</p> |
 | Ignore by `.snyk` file (add the issue to a `.snyk` file in the repostory; for Open Source, the `.snyk` file must be in the same folder as the manifest file) | <p>Open Source: ✅</p><p>Container: ✅</p><p>Code: ❌</p> | <p>Open Source: ✅</p><p>Container: ✅</p><p>Code: ❌</p> |
 
 ## Import through the CLI
