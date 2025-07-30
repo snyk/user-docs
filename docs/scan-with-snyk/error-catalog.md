@@ -352,29 +352,29 @@ The server cannot process the request due to an unexpected error. Check Snyk sta
 
 ---
 # AiBom
-### [SNYK-AI-BOM-0001](#snyk-ai-bom-0001)
+### [SNYK-AIBOM-0001](#snyk-aibom-0001)
 
 #### Unexpected error
 
-An unexpected error occurred in the AI-BOM request. Review the request while providing the debug command flag `-d`. If the error persists, contact Snyk Support.
+An unexpected error occurred in the AIBOM request. Review the request while providing the debug command flag `-d`. If the error persists, contact Snyk Support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
-### [SNYK-AI-BOM-0002](#snyk-ai-bom-0002)
+### [SNYK-AIBOM-0002](#snyk-aibom-0002)
 
 #### Forbidden
 
-You or your Organization do not have permission to use the AI-BOM feature. Check your user permissions or contact Snyk support.
+You or your Organization do not have permission to use the AIBOM feature. Check your user permissions or contact Snyk support.
 
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
 
-### [SNYK-AI-BOM-0003](#snyk-ai-bom-0003)
+### [SNYK-AIBOM-0003](#snyk-aibom-0003)
 
 #### No supported files
 
-Snyk was unable to find any supported files for the aibom command. Ensure the directory you are scanning contains supported files.
+Snyk was unable to find any supported files for the AIBOM command. Ensure the directory you are scanning contains supported files.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2960,4 +2960,4 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 - [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-07-29T10:46:34.625Z
+--- Generated at 2025-07-30T11:32:31.804Z
