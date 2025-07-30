@@ -1,21 +1,24 @@
 # TypeScript
 
+## Applicability and integration
+
 {% hint style="info" %}
 TypeScript is supported for Snyk Open Source and Snyk Code.
 {% endhint %}
 
-## Applicability
-
-You can use TypeScript versions up to 4.2
-
-The following functions are available for TypeScript:
+Available integrations:
 
 * SCM import
-* Test or monitor your app through CLI and IDE
+* CLI and IDE: test or monitor your app
+
+Available functions:&#x20;
+
 * Test your app's SBOM: using `pkg:npm`&#x20;
 * Test your app's packages using `pkg:npm`
 
-## Package managers and supported file extensions
+## Technical specifications
+
+You can use TypeScript versions up to 4.2
 
 For TypeScript, Snyk supports npm, pnpm, Yarn as package managers, with the following versions:&#x20;
 
@@ -24,16 +27,6 @@ For TypeScript, Snyk supports npm, pnpm, Yarn as package managers, with the foll
 * Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
 
 As a package registry, Snyk supports [npmjs.org](https://www.npmjs.org/).
-
-For TypeScript, Snyk supports the following file formats:
-
-* Snyk Open Source:&#x20;
-  * npm: `package.json`, `package-lock.json`
-  * pnpm: `pnpm-lock.yaml`
-  * Yarn: `yarn.lock`
-* For Snyk Code: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`
-
-## Frameworks and libraries
 
 For TypeScript, Snyk supports the following frameworks and libraries:
 
@@ -109,21 +102,31 @@ For TypeScript, Snyk supports the following frameworks and libraries:
 * xpath - Comprehensive&#x20;
 * yargs - Comprehensive
 
-## Features
+## TypeScript for Snyk Code
 
-For TypeScript with Snyk Open Source, the following features are supported:
+For TypeScript with Snyk Code, the following file formats are supported:  `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`
 
-* License scanning&#x20;
-* Reports
-
-&#x20;For TypeScript with Snyk Code, the following features are supported:
+Available features:
 
 * Reports
 * Custom rules
 * Interfile analysis
 
+## TypeScript for Snyk Open Source
+
+For TypeScript with Snyk Open Source, the following file formats are supported:
+
+* npm: `package.json`, `package-lock.json`
+* pnpm: `pnpm-lock.yaml`
+* Yarn: `yarn.lock`
+
+Available features:
+
+* License scanning&#x20;
+* Reports
+
 {% hint style="info" %}
-The **Snyk FixPR** feature is not available for TypeScript. This means that you will not be notified if the PR checks fail when the following conditions are met:&#x20;
+The **Snyk Fix PR** feature is not available for TypeScript. This means that you will not be notified if the PR checks fail when the following conditions are met:&#x20;
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**
