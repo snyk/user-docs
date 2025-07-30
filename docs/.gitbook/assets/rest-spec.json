@@ -320,9 +320,7 @@
         "description": "A header containing the version of the endpoint requested by the caller.",
         "example": "2021-06-04",
         "schema": {
-          "description": "Requested API version",
-          "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
-          "type": "string"
+          "$ref": "#/components/schemas/QueryVersion"
         }
       },
       "VersionRequestedResponseHeader__0": {
@@ -338,9 +336,7 @@
         "description": "A header containing the version of the endpoint that was served by the API.",
         "example": "2021-06-04",
         "schema": {
-          "description": "Resolved API version",
-          "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
-          "type": "string"
+          "$ref": "#/components/schemas/ActualVersion"
         }
       },
       "VersionServedResponseHeader__0": {
@@ -15183,11 +15179,13 @@
       "SCMBundleStoreAttributes": {
         "properties": {
           "target_id": {
+            "description": "The id of the target which has been imported into Snyk.",
             "format": "uuid",
             "type": "string"
           },
           "target_version": {
             "description": "The branch or commit hash to scan",
+            "example": "main",
             "type": "string"
           }
         },
@@ -24502,11 +24500,20 @@
     },
     "/orgs/{org_id}/ai_bom_jobs/{job_id}": {
       "get": {
-        "description": "Get an AI-BOM job status\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "description": "Returns the status of an AI-BOM job. The job status is returned in the response body. If the job is completed the response status code will be 303, redirecting to the getAiBom endpoint.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "getAiBomJob",
         "parameters": [
           {
-            "$ref": "#/components/parameters/Version"
+            "description": "The requested version of the endpoint to process the request",
+            "example": "2024-10-15",
+            "in": "query",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "description": "Requested API version",
+              "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/OrgIdParam"
@@ -24543,13 +24550,37 @@
                 "$ref": "#/components/headers/RequestIdResponseHeader"
               },
               "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
               },
               "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
               },
               "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
               },
               "sunset": {
                 "$ref": "#/components/headers/SunsetHeader"
@@ -24597,13 +24628,37 @@
                 "$ref": "#/components/headers/RequestIdResponseHeader"
               },
               "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
               },
               "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
               },
               "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
               },
               "sunset": {
                 "$ref": "#/components/headers/SunsetHeader"
@@ -24783,7 +24838,7 @@
                 }
               }
             },
-            "description": "Not Found: The resource being operated on could not be found.",
+            "description": "Not Found: The resource being operated on could not be found or you do not have permission to access it.",
             "headers": {
               "deprecation": {
                 "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -24802,7 +24857,7 @@
                 }
               },
               "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
                 "schema": {
                   "enum": [
                     "wip",
@@ -24818,7 +24873,7 @@
               },
               "snyk-version-requested": {
                 "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Requested API version",
                   "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
@@ -24827,7 +24882,7 @@
               },
               "snyk-version-served": {
                 "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Resolved API version",
                   "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
@@ -25036,7 +25091,7 @@
                 }
               },
               "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
                 "schema": {
                   "enum": [
                     "wip",
@@ -25052,7 +25107,7 @@
               },
               "snyk-version-requested": {
                 "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Requested API version",
                   "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
@@ -25061,7 +25116,7 @@
               },
               "snyk-version-served": {
                 "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Resolved API version",
                   "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
@@ -25095,11 +25150,20 @@
     },
     "/orgs/{org_id}/ai_boms": {
       "post": {
-        "description": "Create a new AI-BOM\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "description": "Triggers the creation of a new AI-BOM. The AI-BOM will be created in a background job. Users should query the background job status by using the getAiBomJob endpoint (/orgs/{org_id}/ai_bom_jobs/{job_id}). The response will contain a content-location header pointing to the getAiBomJob endpoint.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "createAiBom",
         "parameters": [
           {
-            "$ref": "#/components/parameters/Version"
+            "description": "The requested version of the endpoint to process the request",
+            "example": "2024-10-15",
+            "in": "query",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "description": "Requested API version",
+              "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/OrgIdParam"
@@ -25143,13 +25207,37 @@
                 "$ref": "#/components/headers/RequestIdResponseHeader"
               },
               "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
               },
               "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
               },
               "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
               },
               "sunset": {
                 "$ref": "#/components/headers/SunsetHeader"
@@ -25348,7 +25436,7 @@
                 }
               },
               "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
                 "schema": {
                   "enum": [
                     "wip",
@@ -25364,7 +25452,7 @@
               },
               "snyk-version-requested": {
                 "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Requested API version",
                   "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
@@ -25373,7 +25461,7 @@
               },
               "snyk-version-served": {
                 "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Resolved API version",
                   "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
@@ -25563,7 +25651,7 @@
                 }
               }
             },
-            "description": "Not Found: The resource being operated on could not be found.",
+            "description": "Not Found: The resource being operated on could not be found or you do not have permission to access it.",
             "headers": {
               "deprecation": {
                 "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -25582,7 +25670,7 @@
                 }
               },
               "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
                 "schema": {
                   "enum": [
                     "wip",
@@ -25598,7 +25686,7 @@
               },
               "snyk-version-requested": {
                 "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Requested API version",
                   "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
@@ -25607,7 +25695,7 @@
               },
               "snyk-version-served": {
                 "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Resolved API version",
                   "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
@@ -25816,7 +25904,7 @@
                 }
               },
               "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
                 "schema": {
                   "enum": [
                     "wip",
@@ -25832,7 +25920,7 @@
               },
               "snyk-version-requested": {
                 "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Requested API version",
                   "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
@@ -25841,7 +25929,7 @@
               },
               "snyk-version-served": {
                 "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Resolved API version",
                   "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
@@ -25875,11 +25963,20 @@
     },
     "/orgs/{org_id}/ai_boms/{ai_bom_id}": {
       "get": {
-        "description": "Get a AI-BOM.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "description": "Get a AI-BOM once it's job has finished\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "getAiBom",
         "parameters": [
           {
-            "$ref": "#/components/parameters/Version"
+            "description": "The requested version of the endpoint to process the request",
+            "example": "2024-10-15",
+            "in": "query",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "description": "Requested API version",
+              "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/OrgIdParam"
@@ -25909,13 +26006,37 @@
                 "$ref": "#/components/headers/RequestIdResponseHeader"
               },
               "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+                "schema": {
+                  "enum": [
+                    "wip",
+                    "experimental",
+                    "beta",
+                    "ga",
+                    "deprecated",
+                    "sunset"
+                  ],
+                  "example": "ga",
+                  "type": "string"
+                }
               },
               "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+                "description": "A header containing the version of the endpoint requested by the caller.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Requested API version",
+                  "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+                  "type": "string"
+                }
               },
               "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
+                "description": "A header containing the version of the endpoint that was served by the API.",
+                "example": "2024-10-15",
+                "schema": {
+                  "description": "Resolved API version",
+                  "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+                  "type": "string"
+                }
               },
               "sunset": {
                 "$ref": "#/components/headers/SunsetHeader"
@@ -26095,7 +26216,7 @@
                 }
               }
             },
-            "description": "Not Found: The resource being operated on could not be found.",
+            "description": "Not Found: The resource being operated on could not be found or you do not have permission to access it.",
             "headers": {
               "deprecation": {
                 "description": "A header containing the deprecation date of the underlying endpoint. For more information, please refer to the deprecation header RFC:\nhttps://tools.ietf.org/id/draft-dalal-deprecation-header-01.html\n",
@@ -26114,7 +26235,7 @@
                 }
               },
               "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
                 "schema": {
                   "enum": [
                     "wip",
@@ -26130,7 +26251,7 @@
               },
               "snyk-version-requested": {
                 "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Requested API version",
                   "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
@@ -26139,7 +26260,7 @@
               },
               "snyk-version-served": {
                 "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Resolved API version",
                   "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
@@ -26348,7 +26469,7 @@
                 }
               },
               "snyk-version-lifecycle-stage": {
-                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees snyk provides surrounding stability of the endpoint.\n",
+                "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
                 "schema": {
                   "enum": [
                     "wip",
@@ -26364,7 +26485,7 @@
               },
               "snyk-version-requested": {
                 "description": "A header containing the version of the endpoint requested by the caller.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Requested API version",
                   "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
@@ -26373,7 +26494,7 @@
               },
               "snyk-version-served": {
                 "description": "A header containing the version of the endpoint that was served by the API.",
-                "example": "2021-06-04",
+                "example": "2024-10-15",
                 "schema": {
                   "description": "Resolved API version",
                   "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
