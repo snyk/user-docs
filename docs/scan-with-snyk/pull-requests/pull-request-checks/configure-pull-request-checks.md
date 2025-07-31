@@ -1,5 +1,13 @@
 # Configure Pull Request checks
 
+{% hint style="info" %}
+**Feature availability**
+
+PR Checks for **Bitbucket Server** integrations require Bitbucket Server version 7.4 and above, or Bitbucket Data Center version 8 or above. \
+\
+When using a brokered connection Snyk Broker version 4.206 and above is required.
+{% endhint %}
+
 ## Prerequisites for automated PR Checks
 
 To check for open-source and licensing issues and code security, ensure that you have established the following:
@@ -19,9 +27,9 @@ A PR Check is counted as a test within your Organization's test count, including
 
 You can analyze the changed code with PR Checks as follows:
 
-* Snyk Code: Source code changes result in a vulnerability that exceeds a specified threshold. A full scan of the repository is done to determine if there are new vulnerabilities.
-* Snyk Open Source: Snyk analyzes dependency manifest or supported files for known security vulnerabilities that meet a threshold, such as exceeding severity, or checks to determine whether a fix is available.
-* Open Source license check: Snyk validates package licenses against the configured policy for license policy violations.
+* **Snyk Code**: Source code changes result in a vulnerability that exceeds a specified threshold. A full scan of the repository is done to determine if there are new vulnerabilities.
+* **Snyk Open Source**: Snyk analyzes dependency manifest or supported files for known security vulnerabilities that meet a threshold, such as exceeding severity, or checks to determine whether a fix is available.
+* **Open Source license check**: Snyk validates package licenses against the configured policy for license policy violations.
 
 PR Checks also support all programming languages and frameworks supported by the Snyk Code and Open Source engines. For more information, see [Supported languages, package managers, and frameworks](../../../supported-languages-package-managers-and-frameworks/).
 
