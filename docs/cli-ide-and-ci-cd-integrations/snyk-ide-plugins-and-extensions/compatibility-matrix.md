@@ -4,10 +4,11 @@ This matrix shows the compatible CLI version range for each IDE plugin version r
 
 | Release Date | IDE Plugin | Compatible CLIs |
 |--------------|------------|-----------------|
-| 2025-07-17 | JetBrains 2.15.0 | v1.1298.0 - v1.1298.1 |
-| 2025-07-17 | Visual Studio 2.3.0 | v1.1298.0 - v1.1298.1 |
-| 2025-07-17 | Eclipse v3.3.0 (v20250717.103834) | v1.1298.0 - v1.1298.1 |
-| 2025-07-17 | VSCode v2.23.0 | v1.1298.0 - v1.1298.1 |
+| 2025-07-29 | VSCode v2.23.1 | v1.1298.0 - v1.1298.2 |
+| 2025-07-17 | JetBrains 2.15.0 | v1.1298.0 - v1.1298.2 |
+| 2025-07-17 | Visual Studio 2.3.0 | v1.1298.0 - v1.1298.2 |
+| 2025-07-17 | Eclipse v3.3.0 (v20250717.103834) | v1.1298.0 - v1.1298.2 |
+| 2025-07-17 | VSCode v2.23.0 | v1.1298.0 - v1.1298.2 |
 | 2025-05-26 | JetBrains v2.13.1 | v1.1297.0 - v1.1297.3 |
 | 2025-05-16 | Visual Studio 2.2.1 | v1.1297.0 - v1.1297.3 |
 | 2025-05-16 | Eclipse v3.2.0 (v20250516.122216) | v1.1297.0 - v1.1297.3 |
@@ -43,7 +44,6 @@ This matrix shows the compatible CLI version range for each IDE plugin version r
 | 2024-08-20 | VSCode v2.17.0 | v1.1293.0 - v1.1293.1 |
 | 2024-08-13 | VSCode v2.16.2 | v1.1293.0 - v1.1293.1 |
 | 2024-08-06 | JetBrains v2.8.11 | v1.1292.2 - v1.1292.4 |
-| 2024-07-30 | JetBrains v2.8.10 | v1.1292.2 - v1.1292.4 |
 
 ## Notes
 
