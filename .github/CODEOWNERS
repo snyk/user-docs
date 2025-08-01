@@ -1,5 +1,5 @@
-#           <-- comment
-# foo/bar/  <-- foo/bar/index.ts, and foo/bar/baz/index.ts
+# <-- comment
+# foo/bar/ <-- foo/bar/index.ts, and foo/bar/baz/index.ts
 # foo/bar/* <-- foo/bar/index.ts, but *not* foo/bar/baz/index.ts
 
 # The file is interpreted from end to start, only the first match is taken.
@@ -13,9 +13,9 @@
 
 # https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners
 
-* @snyk/docs
-tools/api-docs-generator/* @snyk/api
-.github/workflows/* @snyk/api @snyk/docs
-docs/.gitbook/assets/v1-api-spec.yaml @snyk/api @snyk/docs
-docs/.gitbook/assets/rest-spec.json @snyk/api @snyk/docs
-docs/.gitbook/assets/oauth-api-spec.yaml @snyk/api @snyk/docs
+* @snyk/docs @snyk/central_docs
+tools/api-docs-generator/* @snyk/api @snyk/platformeng_api
+.github/workflows/* @snyk/api @snyk/platformeng_api @snyk/docs
+docs/.gitbook/assets/v1-api-spec.yaml @snyk/api @snyk/docs @snyk/central_docs
+docs/.gitbook/assets/rest-spec.json @snyk/api @snyk/docs @snyk/central_docs
+docs/.gitbook/assets/oauth-api-spec.yaml @snyk/api @snyk/platformeng_api @snyk/docs
