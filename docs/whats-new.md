@@ -20,7 +20,6 @@ The most recent updates include significant changes to the user docs, such as fe
   * [Updated the list of supported Snyk security tools into an AI system](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental).
   * Updated release status from experimental to [Early access](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access) and removed the experimental flag.
   * Added [Cursor](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide) as a new supported agentic IDE for MCP.
-  * Defined how [MCP works in the AI-BOM context](cli-ide-and-ci-cd-integrations/snyk-cli/commands/aibom.md).
 * PAT updates:
   * Added PAT support for [Snyk CLI](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli).
   * Added PAT support for Snyk CI/CD integrations ([CircleCI](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb), [Jenkins](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk), [Maven](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk)).
