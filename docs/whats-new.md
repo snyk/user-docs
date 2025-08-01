@@ -1,11 +1,59 @@
 ---
-cover: .gitbook/assets/Snyk General Banner.webp
+cover: .gitbook/assets/Docs Banner (1).png
 coverY: 0
 ---
 
-# What is new?
+# What's new?
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
+
+## July 2025
+
+### **Snyk API**&#x20;
+
+* The [Export API](snyk-api/reference/export.md) is now available as GA.
+* The Assets API is now available as Early Access.
+
+### **Snyk CLI**
+
+* MCP updates:
+  * [Updated the list of supported Snyk security tools into an AI system](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental).
+  * Updated release status from experimental to [Early access](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access) and removed the experimental flag.
+  * Added [Cursor](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide) as a new supported agentic IDE for MCP.
+  * Defined how [MCP works in the AI-BOM context](cli-ide-and-ci-cd-integrations/snyk-cli/commands/aibom.md).
+* PAT updates:
+  * Added PAT support for [Snyk CLI](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli).
+  * Added PAT support for Snyk CI/CD integrations ([CircleCI](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb), [Jenkins](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk), [Maven](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk)).
+
+### **Snyk Code**
+
+* Support for Python, JavaScript and Typescript now includes more frameworks.
+
+### **Snyk Container**
+
+[Operating system distributions supported by Snyk Container](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container) has been updated to include: SUSE Linux Enterprise (SLE) 15.3+, Red Hat Enterprise Linux 10, and Oracle Linux 10.
+
+### **Snyk IDE**
+
+* Added PAT support for all [Snyk IDE](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/) plugins and extensions.
+* Added an [IDE Plugin Compatibility Matrix](cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/compatibility-matrix.md) for all supported versions.
+
+### **Snyk Integrations**
+
+* [Snyk Agent Fix in the PR](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md#snyk-agent-fix-in-the-pr) has added support for Bitbucket integrations, still in Early Access.
+* The [minimum version](scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md) of Bitbucket Server and Bitbucket Data Center required to use the integrations with PR checks has been updated to 7.4 and 8 respectively.
+
+### **Snyk Open Source**
+
+[Scan open-source libraries and licenses](https://snyksec.atlassian.net/browse/DOCT-1524), [Snyk License Compliance Management](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management), and [Fix your vulnerabilities](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities) have been updated with the new **Issues** tab layout.
+
+### **Other updates**
+
+* A new architecture for user documentation on developer tools is now available. This update groups the main developer tools into a single section and distinctly separates them from the integrations documentation.
+* [Analytics](manage-risk/analytics/redesigned-analytics.md) has a fresh new look.
+* Added [Snyk Assist](snyk-learn/snyk-assist.md) documentation.
+* The [Developer IDE and CLI usage](manage-issues/reporting/available-snyk-reports.md#developer-ide-and-cli-usage) report has been improved with MCP-related data to provide better visibility into MCP usage.
+* [Okta custom mapping documentation](enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-okta.md#construct-a-value-expression-that-creates-a-roles-array-to-be-sent-to-snyk) has been updated to clarify handling of the `Arrays.flatten(appuser.snyk_orgs)` value during setup.
 
 ## June 2025
 

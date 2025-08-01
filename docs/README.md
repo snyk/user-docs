@@ -6,7 +6,7 @@ coverY: 0
 # User documentation
 
 {% hint style="info" %}
-Stay up to date with the [latest updates in the Snyk user documentation](what-is-new.md).
+Stay up to date with the [latest updates in the Snyk user documentation](whats-new.md).
 {% endhint %}
 
 ## Start using Snyk

@@ -1,7 +1,7 @@
 # Table of contents
 
 * [User documentation](README.md)
-* [What is new?](what-is-new.md)
+* [What's new?](whats-new.md)
 * [What is Snyk?](what-is-snyk.md)
 * [Getting started](getting-started/README.md)
   * [Explore the Snyk Web UI](getting-started/snyk-web-ui.md)
