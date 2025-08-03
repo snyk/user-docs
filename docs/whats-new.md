@@ -44,7 +44,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk Open Source**
 
-[Scan open-source libraries and licenses](https://snyksec.atlassian.net/browse/DOCT-1524), [Snyk License Compliance Management](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management), and [Fix your vulnerabilities](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities) have been updated with the new **Issues** tab layout.
+[Scan open-source libraries and licenses](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/), [Snyk License Compliance Management](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md), and [Fix your vulnerabilities](scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) have been updated with the new **Issues** tab layout.
 
 ### **Other updates**
 
