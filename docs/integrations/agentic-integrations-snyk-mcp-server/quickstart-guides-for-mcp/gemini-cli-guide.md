@@ -5,7 +5,7 @@ You can add the Snyk MCP server to Gemini CLI to secure code generated with agen
 ## Prerequisites
 
 * [Install the Gemini CLI](gemini-cli-guide.md#install-gemini-cli)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
 * [Install the Snyk MCP](gemini-cli-guide.md#install-the-snyk-mcp-server-in-github-copilot)
 
 ### Install Gemini CLI
@@ -67,7 +67,7 @@ To install the Snyk MCP Server using Gemini's own `.gemini/settings.json` file, 
 
 Use the Gemini CLI to list all MCP servers and verify that the Snyk MCP Server is installed and available by running the `mcp list` command.
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
 ## Setting up the Snyk MCP Server
 
@@ -75,7 +75,7 @@ As a one-time setup, you may need to authenticate and trust the current Project 
 
 These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 
 You can explicitly prompt to authenticate your account as follows:
 
@@ -83,11 +83,11 @@ You can explicitly prompt to authenticate your account as follows:
 Authenticate my Snyk account
 ```
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
 If you are not authenticated, this prompt opens a browser for you to authenticate to the Snyk Web UI, and then you can continue with the agent.
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
 ## Examples
 
@@ -103,7 +103,7 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Gemini will invoke Snyk scanning, provide output and insights based on the results that Snyk returned:
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 
 ### "Secure at inception" rules
 

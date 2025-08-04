@@ -5,7 +5,7 @@ You can add the Snyk MCP server to Gemini Code Assist to secure code generated w
 ## Prerequisites
 
 * [Install the code assistant extension](gemini-code-assist-guide.md#install-gemini-code-assist)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
 * [Install the Snyk MCP](gemini-code-assist-guide.md#install-the-snyk-mcp-server-in-gemini-code-assist)
 
 ### Install Gemini Code Assist
@@ -65,13 +65,13 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
 
 You might need to reload the IDE window for the changes to apply. In VS Code, do this by opening the Command Palette and choosing Developer: Reload Window.
 
 Next, you can verify that the Snyk MCP Server is available by enabling Agent mode on Gemini Code Assist and requesting it to list the tools it has available:
 
-<figure><img src="../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
 ## Setting up the Snyk MCP Server
 
@@ -93,7 +93,7 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Gemini indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
 ### Gemini Code Assist security rules
 
@@ -132,7 +132,7 @@ Following the [documentation proposal for Gemini Code Assist style guide](https:
 
 You can add these rules using VS Code **UI Settings** and locate the **Geminicodeassist: Rules** configuration:
 
-<figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
 
 
 

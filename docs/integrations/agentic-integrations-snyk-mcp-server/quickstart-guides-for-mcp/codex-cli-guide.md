@@ -5,7 +5,7 @@ You can add the Snyk MCP server to Codex CLI to secure code generated with agent
 ## Prerequisites
 
 * [Install the Codex CLI](codex-cli-guide.md#install-code-cli)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
 * [Install the Snyk MCP](codex-cli-guide.md#install-the-snyk-mcp-server-in-github-copilot)
 
 ### Install Codex CLI
@@ -57,7 +57,7 @@ As a one-time setup, you may need to authenticate and trust the current Project 
 
 These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 
 You can explicitly prompt to authenticate your account as follows:
 
@@ -65,11 +65,11 @@ You can explicitly prompt to authenticate your account as follows:
 Authenticate my Snyk account
 ```
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
 
 If you are not authenticated, this prompt opens a browser for you to authenticate to the Snyk Web UI, and then you can continue with the agent.
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (91).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Examples
 
@@ -85,7 +85,7 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Codex CLI will invoke Snyk scanning, provide output and insights based on the results that Snyk returned:
 
-<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
 ### "Secure at inception" rules
 

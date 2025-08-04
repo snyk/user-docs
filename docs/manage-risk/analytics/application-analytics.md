@@ -16,7 +16,7 @@ Application Analytics enables you to review and explore your AppSec program stat
 You can enhance the security of your application by identifying areas for improvement, recognizing developing risks, and addressing blind spots. The Application Analytics retrieves the data from all the Groups available for the tenant.
 
 {% hint style="info" %}
-If you are using Snyk Essentials, navigate to the [asset dashboard](../../discover-snyk/getting-started/snyk-web-ui.md#view-the-assets-dashboard) page to learn more about your assets or remain on the [Analytics](issues-analytics.md) page to explore the detected issues.
+If you are using Snyk Essentials, navigate to the [asset dashboard](../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) page to learn more about your assets or remain on the [Analytics](issues-analytics.md) page to explore the detected issues.
 {% endhint %}
 
 Harnessing Application Analytics provides answers to questions such as:
@@ -89,7 +89,7 @@ To associate assets with asset class, you can either change the asset class manu
 
 #### Applications and Owner view <a href="#applications-and-owners-view" id="applications-and-owners-view"></a>
 
-You can filter the data from your Application Analytics dashboard based on application or code owner. To proceed, it is necessary to have the appropriate metadata available for the repositories. The metadata can be pulled directly from the Snyk SCM integration. You can find details of how to set this up on the [Backstage catalog in Asset Inventory](../../developer-tools/scm-integrations/application-context-for-scm-integrations/#backstage-file-for-scm-integrations) page. \
+You can filter the data from your Application Analytics dashboard based on application or code owner. To proceed, it is necessary to have the appropriate metadata available for the repositories. The metadata can be pulled directly from the Snyk SCM integration. You can find details of how to set this up on the [Backstage catalog in Asset Inventory](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#backstage-file-for-scm-integrations) page. \
 To determine if this metadata is available in your repositories, check the completeness widget for repository metadata. Snyk recommends verifying that all class A assets are properly configured by using the asset class filter from the dashboard.&#x20;
 
 ### Analytics timeframe
@@ -116,7 +116,7 @@ The Application Analytics dashboard focuses on three main data categories:
 
 ### Coverage
 
-One of the leading missions of an AppSec team is ensuring appropriate scan coverage across the asset inventory. A [covered asset](../../discover-snyk/getting-started/glossary.md#coverage-snyk-essentials) is simply an asset that has been scanned by a certain application security testing (AST) product. Having uncovered assets expose the company to unknown risks, that is why it is essential to verify that business critical assets (based on asset class or strategic applications), are being properly scanned.
+One of the leading missions of an AppSec team is ensuring appropriate scan coverage across the asset inventory. A [covered asset](../../getting-started/glossary.md#coverage-snyk-essentials) is simply an asset that has been scanned by a certain application security testing (AST) product. Having uncovered assets expose the company to unknown risks, that is why it is essential to verify that business critical assets (based on asset class or strategic applications), are being properly scanned.
 
 In the Coverage section, you have information about the assets coverage.&#x20;
 
@@ -171,7 +171,7 @@ Application Analytics Assets view
 
 The metadata completeness section provides information on the completeness of metadata from application context sources for your repositories.
 
-* Repo metadata completeness - displays the availability of application context metadata across code repositories. For more information about context metadata, see [Application context for SCM Integrations](../../developer-tools/scm-integrations/application-context-for-scm-integrations/).
+* Repo metadata completeness - displays the availability of application context metadata across code repositories. For more information about context metadata, see [Application context for SCM Integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/).
 * Repository source distribution - provides information about the repositories distributed by the type of integration (SCM integrations, third-party integrations). When viewing by application or owner, only the top five (5)  applications or owners with the most assets will be displayed.
 
 The following video presents an overview of the Application Analytics Repository metadata completeness and source distribution view from the Snyk Web UI.

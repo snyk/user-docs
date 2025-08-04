@@ -48,7 +48,7 @@ Use the date filter in the upper right corner of the Issues Summary report to se
 
 At the top of the report, you can follow key metrics associated with security issues in the selected date range with a comparison to the previous sequential period's results. This allows you to get insights on trends. See the tooltips in Snyk Web UI for definitions of the metrics.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 The **Issues Identified and Resolved** trend captures the accumulated security issues that were identified and resolved during the selected date range. The gap between the two lines indicates the open issues backlog.
 
@@ -58,15 +58,15 @@ This visual trend allows you to identify if too many issues are being introduced
 The Total Open issues metric at the top completes the picture for this trend, by showing the total open issues at the end of the selected period compared with the total open issues at the beginning of the selected date range.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 Reviewing the **Exposure Window** trend allows you to identify the capacity of security issues that are open within predefined periods. This is a relevant metric to follow when filtering by attributes such as severity, exploit maturity, or asset class. and ensuring that the most critical issues for sensitive assets are being remediated on time.
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 The **Time to Resolve by Week** trend provides visibility on the number of issues remediated within predefined periods, allowing you to measure remediation performance over time.
 
-<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 The **Risk breakdown** table helps you make data-driven decisions about where you need to focus. The tables allow you to review ‌performance metrics from several angles.&#x20;
 
@@ -77,7 +77,7 @@ Use the dimension picker to browse:
 * **Asset Classes** - Ensure that efforts are prioritized to secure the most sensitive assets first.
 * **Introduction Categories** - Allows to determine if preventable issues are handled properly by looking at the percentage change of new preventable issues, as well as assessing the impact of new monitored assets over your AppSec Program. You can view this under the **Baseline Issue** category.
 
-<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ## Vulnerabilities Detail report
 
@@ -101,7 +101,7 @@ Use this report to discover your exposure to issues highlighted in a zero-day pu
 
 The [Security team at Snyk](https://snyk.io/platform/security-intelligence/) continuously updates the [Vulnerability Database](https://security.snyk.io/) with new vulnerabilities several times a day. When the team discovers a major new zero-day vulnerability—typically in a widely used package with high severity that affects many customers—it will be announced and addressed as a zero-day event.
 
-Upon the announcement of a new zero-day event, begin by examining the **Impacted Targets** table to gain a deeper understanding of the exposure. Use filters such as Project Lifecycle, Environment, or Project Criticality to focus solely on Targets associated with Projects in production that are externally exposed or of high criticality. Gaining such insights depends on the [availability of Project attributes](../../snyk-platform-administration/snyk-projects/project-attributes.md#available-attributes-and-their-values).
+Upon the announcement of a new zero-day event, begin by examining the **Impacted Targets** table to gain a deeper understanding of the exposure. Use filters such as Project Lifecycle, Environment, or Project Criticality to focus solely on Targets associated with Projects in production that are externally exposed or of high criticality. Gaining such insights depends on the [availability of Project attributes](../../snyk-admin/snyk-projects/project-attributes.md#available-attributes-and-their-values).
 
 Next, proceed to the **All** **Issues** table and compile a prioritized list of issues requiring remediation. Typically, prioritization is determined by either the Snyk [Risk Score](../../manage-risk/prioritize-issues-for-fixing/risk-score.md) or NVD CVSS Score, with emphasis placed on addressing vulnerabilities within sensitive targets. Apply filters based on Project Lifecycle, Environment, or Project Criticality to identify and address these targets promptly.
 
@@ -355,7 +355,7 @@ This report shows the test usage in the IDE, CLI, and MCP by developers. Teams c
 To use this report, consider the following prerequisites:
 
 * Snyk CLI version 1.1292.1 or newer.
-* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../developer-tools/scm-integrations/organization-level-integrations/).&#x20;
+* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../scm-integrations/organization-level-integrations/).&#x20;
 * When testing containers, include the `.git` context as part of the `snyk container test` command.
 
 This report analyzes Snyk tests performed as part of CI/CD pipelines executed using Snyk CLI. It will inform you about the usage of your company and adoption of testing in CI/CD, ensuring repositories are tested as expected and preventing critical vulnerabilities and misconfigurations from being deployed and reaching the production environment.
@@ -386,7 +386,7 @@ Represented by the green line, you can see the weekly number of repositories tha
 This comparison helps determine whether Snyk tests in CI/CD are being increasingly adopted over time and highlights the number of repositories that have received commits but have not been tested in CI/CD.
 
 {% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../developer-tools/scm-integrations/organization-level-integrations/) page.&#x20;
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../scm-integrations/organization-level-integrations/) page.&#x20;
 {% endhint %}
 
 You can filter by specific products or by specific organizations or extend the viewed period using the date range filter.
@@ -403,8 +403,8 @@ An applicable test is a test that did not fail due to technical issues or a non-
 
 Having a low success rate can indicate that:
 
-* Snyk tests are failing due to security issues that can be prevented in local development or in the PR Check stages. Snyk recommends testing with the [Snyk IDE](../../developer-tools/snyk-ide-plugins-and-extensions/) plugin, using [Snyk PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) and enroll in a [Snyk Learn](../../discover-snyk/snyk-learn/) program.
-* The test success criteria are too strict. To explore this option further, Snyk recommends reviewing the test definitions of the organizations with the lowest success rate, as shown by the Adoption by Organizations widget. For more details about defining test success criteria, navigate to the [Failing of builds in Snyk CLI](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md) page.&#x20;
+* Snyk tests are failing due to security issues that can be prevented in local development or in the PR Check stages. Snyk recommends testing with the [Snyk IDE](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/) plugin, using [Snyk PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) and enroll in a [Snyk Learn](../../snyk-learn/) program.
+* The test success criteria are too strict. To explore this option further, Snyk recommends reviewing the test definitions of the organizations with the lowest success rate, as shown by the Adoption by Organizations widget. For more details about defining test success criteria, navigate to the [Failing of builds in Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md) page.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (717).png" alt=""><figcaption><p>Test Success Rate Trend</p></figcaption></figure>
 
@@ -429,7 +429,7 @@ The repository test summary table shows the performed tests during the selected 
 The default sorting in the table surfaces repositories according to their last commit, allowing you to identify repositories that were expected to be tested in CI/CD pipelines and verify they were tested. Clicking the column names to sort the table according to the selected column. You can sort the table by multiple columns at a time.&#x20;
 
 {% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, navigate to the [Group-level integrations](../../developer-tools/scm-integrations/group-level-integrations/) page.&#x20;
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [Group-level integrations](../../scm-integrations/group-level-integrations/) page.&#x20;
 {% endhint %}
 
 You can execute the test on a specific repository branch in the table. The `tested` indicator means that any branch of this repository was tested during the selected date range.
@@ -549,7 +549,7 @@ Here are the available filters:
 | Tags                 | The asset tags. For more details about tagging assets using a policy, see the [Tagging policy](../../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy.md) page.                                                                                                                                                                              |
 | \*Title              | The name of the component for which the application context catalog was configured.                                                                                                                                                                                                                                                                                    |
 
-**\***&#x41;ll filters marked with `*` are visible only if you configured the [application context](../../developer-tools/scm-integrations/application-context-for-scm-integrations/) catalog for your SCM integrations.
+**\***&#x41;ll filters marked with `*` are visible only if you configured the [application context](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) catalog for your SCM integrations.
 
 ### Repository coverage widget
 
@@ -647,7 +647,7 @@ To make it easier to share the view outside of the Snyk platform, the URL of a s
 
 ### Prerequisites
 
-To create, edit, and remove a saved view, you must have **Edit reports** permission. Saved views are not private. After being created, Saved Views are visible to all users with **View reports** permission. Only Organization and Group Admins can assign these permissions. For more information, see [User role management](../../snyk-platform-administration/user-roles/user-role-management.md).
+To create, edit, and remove a saved view, you must have **Edit reports** permission. Saved views are not private. After being created, Saved Views are visible to all users with **View reports** permission. Only Organization and Group Admins can assign these permissions. For more information, see [User role management](../../snyk-admin/user-roles/user-role-management.md).
 
 To assign report permissions:
 

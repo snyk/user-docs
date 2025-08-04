@@ -5,7 +5,7 @@ You can add the Snyk MCP server to GitHub Copilot to secure code generated with 
 ## Prerequisites
 
 * [Install the code assistant extension](github-copilot-guide.md#install-github-copilot)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
 * [Install the Snyk MCP](github-copilot-guide.md#install-the-snyk-mcp-server-in-github-copilot)
 
 ### Install GitHub Copilot
@@ -24,7 +24,7 @@ Installing the extension using one of the following methods:
 *   Open the **Extensions: Install Extensions** side-pane, search for Snyk Security and install it.\
 
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
 
 VS Code automatically detects the Snyk MCP Server, but it needs to be explicitly enabled.
 
@@ -33,10 +33,10 @@ Enable the Snyk MCP Server using one of the following methods:
 * Open the Command Palette by pressing **CMD + SHIFT + P** on macOS or **CTRL + SHIFT + P** on Windows, choose the **MCP: List Servers,** and then find Snyk MCP Server in the list and enable all tools.
 * In the GitHub Copilot chat box, click the **Tools** icon.
 
-![](<../../../.gitbook/assets/image (4).png>)\
+![](<../../../.gitbook/assets/image (76).png>)\
 \
 You can see a list of all MCP Servers and their tool. Locate Snyk from the list and enable all of its tools:\
-![](<../../../.gitbook/assets/image (5).png>)
+![](<../../../.gitbook/assets/image (77).png>)
 
 #### Install with Node.js and `npx`
 
@@ -76,11 +76,11 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
 
 The following example shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 For additional MCP configuration options on VS Code and troubleshooting, consult the official [VS Code MCP server documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
@@ -90,11 +90,11 @@ As a one-time setup, you may need to authenticate and trust the current Project 
 
 These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
 If you need to authenticate and trust the current directory, then proceed and complete the process.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
 ## Examples
 
@@ -110,11 +110,11 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Copilot indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 
 Copilot is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found:
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
 
 ### "Secure at inception" rules
 

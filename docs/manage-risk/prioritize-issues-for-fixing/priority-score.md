@@ -26,7 +26,7 @@ You can filter issues by Priority Score range in the left sidebar.
 
 ## View issues by Priority Score
 
-The **Issues** tab on the Project details allows you to filter issues by Priority Score. You can find more details on how to filter your issues in the [Fix based on prioritization methods](../../implementation-and-setup/enterprise-implementation-guide/phase-4-create-a-fix-strategy.md#fix-based-on-prioritization-methods) page.
+The **Issues** tab on the Project details allows you to filter issues by Priority Score. You can find more details on how to filter your issues in the [Fix based on prioritization methods](../../implement-snyk/enterprise-implementation-guide/phase-4-create-a-fix-strategy.md#fix-based-on-prioritization-methods) page.
 
 <figure><img src="../../.gitbook/assets/filter issues by score.png" alt="Filter issues by score"><figcaption><p>Filter issues by score</p></figcaption></figure>
 
