@@ -8,7 +8,7 @@ You must be a GitLab administrator. In the GitLab settings, filter outbound requ
 
 Before installing the Snyk GitLab Broker, ask your Snyk account team to provide you with a Broker token.
 
-Ensure that the GitLab permissions are correct for integration with Snyk. For details, see [Snyk GitLab integration](../../../../../scm-integrations/organization-level-integrations/gitlab.md).
+Ensure that the GitLab permissions are correct for integration with Snyk. For details, see [Snyk GitLab integration](../../../../../developer-tools/scms/organization-level-integrations/gitlab.md).
 
 You must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 

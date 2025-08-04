@@ -18,7 +18,7 @@ You can customize your AppRisk integrations from the **Integrations Hub** where 
 * [Crowdstrike](connect-a-third-party-integration.md#crowdstrike-setup-guide)
 
 {% hint style="info" %}
-Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup. See the [Integration connected statuses](../../../integrate-with-snyk/#integration-connection-statuses) page for more details.
+Data synchronization may take up to two hours after receiving the **Connected** status from a new integration setup. See the [Integration connected statuses](../../../integrations/overview.md#integration-connection-statuses) page for more details.
 {% endhint %}
 
 After you finish setting up an integration, you can see it listed with a Connected status.

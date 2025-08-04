@@ -64,7 +64,7 @@ Improved Gradle scanning supports importing a maximum limit of 5,000 `build.grad
 To enable this feature, follow these steps for your Snyk Organisation:
 
 1. Configure [package repository integrations](../../scan-with-snyk/snyk-open-source/package-repository-integrations/) (if you use Artifactory or Nexus, see [below](git-repositories-with-maven-and-gradle.md#package-repository-integrations)).
-2. Enable [Workspaces for SCM integrations](../../scm-integrations/workspaces.md).
+2. Enable [Workspaces for SCM integrations](../../developer-tools/scms/workspaces.md).
 3. Enable **Improved Gradle scanning** in Snyk Preview.
 
 After Improved Gradle SCM scanning is enabled:

@@ -89,7 +89,7 @@ To associate assets with asset class, you can either change the asset class manu
 
 #### Applications and Owner view <a href="#applications-and-owners-view" id="applications-and-owners-view"></a>
 
-You can filter the data from your Application Analytics dashboard based on application or code owner. To proceed, it is necessary to have the appropriate metadata available for the repositories. The metadata can be pulled directly from the Snyk SCM integration. You can find details of how to set this up on the [Backstage catalog in Asset Inventory](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#backstage-file-for-scm-integrations) page. \
+You can filter the data from your Application Analytics dashboard based on application or code owner. To proceed, it is necessary to have the appropriate metadata available for the repositories. The metadata can be pulled directly from the Snyk SCM integration. You can find details of how to set this up on the [Backstage catalog in Asset Inventory](../../developer-tools/scms/application-context-for-scm-integrations/#backstage-file-for-scm-integrations) page. \
 To determine if this metadata is available in your repositories, check the completeness widget for repository metadata. Snyk recommends verifying that all class A assets are properly configured by using the asset class filter from the dashboard.&#x20;
 
 ### Analytics timeframe
@@ -171,7 +171,7 @@ Application Analytics Assets view
 
 The metadata completeness section provides information on the completeness of metadata from application context sources for your repositories.
 
-* Repo metadata completeness - displays the availability of application context metadata across code repositories. For more information about context metadata, see [Application context for SCM Integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/).
+* Repo metadata completeness - displays the availability of application context metadata across code repositories. For more information about context metadata, see [Application context for SCM Integrations](../../developer-tools/scms/application-context-for-scm-integrations/).
 * Repository source distribution - provides information about the repositories distributed by the type of integration (SCM integrations, third-party integrations). When viewing by application or owner, only the top five (5)  applications or owners with the most assets will be displayed.
 
 The following video presents an overview of the Application Analytics Repository metadata completeness and source distribution view from the Snyk Web UI.

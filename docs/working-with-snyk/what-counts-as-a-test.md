@@ -50,7 +50,7 @@ The following are examples of ways the customer may initiate a test in the Snyk 
 
 ## Counting Git repository integration scans
 
-These Snyk features for [Git Repositories (SCM)](../scm-integrations/organization-level-integrations/) integrations run scans automatically by default:
+These Snyk features for [Git Repositories (SCM)](../developer-tools/scms/organization-level-integrations/) integrations run scans automatically by default:
 
 * Daily recurring tests
 * An automatic scan, which runs if the dependencies change on your default branch

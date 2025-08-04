@@ -26,7 +26,7 @@ Navigate to the [Asset Dashboard](../manage-issues/reporting/available-snyk-repo
 
 ### View and manage your assets inventory
 
-You can use the [Inventory](../manage-assets/) page to organize your repository assets, enabling you to visualize all repository assets from your SCM tools, track Snyk product control coverage, and prioritize coverage mitigation based on business impact.
+You can use the [Inventory](../manage-assets/overview.md) page to organize your repository assets, enabling you to visualize all repository assets from your SCM tools, track Snyk product control coverage, and prioritize coverage mitigation based on business impact.
 
 The Overview tab will provide quick insights into the discovered repositories. Scanned artifacts are not supported through Policies.
 
@@ -40,11 +40,11 @@ For information on how to automate the process of adding business context and re
 The Group-level Integrations view focuses on asset management and discovery and is available with Snyk Enterprise.
 {% endhint %}
 
-The **Integrations** page shows all active integrations, [SCM](../scm-integrations/group-level-integrations/) or, [third-party](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.
+The **Integrations** page shows all active integrations, [SCM](../developer-tools/scms/group-level-integrations/) or, [third-party](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md), including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub. You can use the Integrations Hub button to add SCM integrations, connect a third-party integration, add App Context to an SCM integration, or use the Snyk Runtime Sensor.
 
 You can find an overview of all your integrations on the Snyk Web UI **Integrations** page. You can enable or disable your integrations, edit them, or remove them from your configuration.
 
-For more details about available integrations, see [Snyk Essentials SCM integrations](../scm-integrations/group-level-integrations/) and [Integrate with Snyk](../integrate-with-snyk/).
+For more details about available integrations, see [Snyk Essentials SCM integrations](../developer-tools/scms/group-level-integrations/) and [Integrate with Snyk](../integrations/overview.md).
 
 #### Enable or disable an integration
 
@@ -94,7 +94,7 @@ The following Snyk functions are available with the Web UI, at Organization leve
 * [Manage account preferences and settings](snyk-web-ui.md#manage-account-preferences-and-settings)
 
 {% hint style="info" %}
-You can also use Snyk functions from the [Snyk CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/), [in your IDE](../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), and with the [Snyk API](../snyk-api/).
+You can also use Snyk functions from the [Snyk CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/), [in your IDE](../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), and with the [Snyk API](../snyk-api/overview.md).
 {% endhint %}
 
 ### Explore the Dashboard
@@ -146,7 +146,7 @@ To open the **Projects** listing page, select the **Projects** link in the side 
 
 ### Manage your integrations
 
-You can set up a range of integrations with Snyk from the [Integrations](../integrate-with-snyk/) page available on the Dashboard.
+You can set up a range of integrations with Snyk from the [Integrations](../integrations/overview.md) page available on the Dashboard.
 
 ## General settings available for all level types
 

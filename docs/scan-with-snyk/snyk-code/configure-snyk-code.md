@@ -2,7 +2,7 @@
 
 ## Conditions
 
-To use Snyk Code in an [IDE](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), [Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/), and [Snyk API](../../snyk-api/), you must perform the following actions:
+To use Snyk Code in an [IDE](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), [Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/), and [Snyk API](../../snyk-api/overview.md), you must perform the following actions:
 
 1. [Enable Snyk Code in Snyk Web UI](configure-snyk-code.md#enable-snyk-code-in-snyk-web-ui)
 2. [Integrate Git repository with Snyk](configure-snyk-code.md#integrate-git-repository-with-snyk)
@@ -52,7 +52,7 @@ Then, you can import the required repositories to your Snyk account, and Snyk Co
 {% hint style="info" %}
 Snyk Code temporarily clones your repositories for code analysis. This requires appropriate permissions and HTTPS access to your SCM.
 
-For more information on how data is stored in Snyk, see [How Snyk handles your data](../../working-with-snyk/how-snyk-handles-your-data.md). For more details about integrations, see [Integrate with Snyk](../../integrate-with-snyk/).
+For more information on how data is stored in Snyk, see [How Snyk handles your data](../../working-with-snyk/how-snyk-handles-your-data.md). For more details about integrations, see [Integrate with Snyk](../../integrations/overview.md).
 {% endhint %}
 
 To integrate your SCM with your Snyk account:
@@ -73,7 +73,7 @@ The **Source control** integrations display only SCMs that are supported by Snyk
 
 This grants Snyk access permissions for the integrated SCM.
 
-For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../scm-integrations/organization-level-integrations/).
+For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../developer-tools/scms/organization-level-integrations/).
 
 After you have integrated the SCM with your Snyk account, you can import the repositories you want to scan using Snyk Code.
 

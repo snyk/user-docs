@@ -185,7 +185,7 @@ Container images typically consist of several different file system layers, whic
 
 ### Integrations
 
-Third-party products, applications, and platforms that Snyk works with, for example, SCM systems such as GitHub. See [Integrate with Snyk](../integrate-with-snyk/).
+Third-party products, applications, and platforms that Snyk works with, for example, SCM systems such as GitHub. See [Integrate with Snyk](../integrations/overview.md).
 
 ### Issue
 
@@ -345,7 +345,7 @@ A scanned artifact in Snyk Essentials is an entity detected by Snyk that cannot 
 
 ### SCM
 
-Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../scm-integrations/organization-level-integrations/).
+Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../developer-tools/scms/organization-level-integrations/).
 
 ### SCM Repository freshness (Snyk **Essentials**)
 
@@ -381,7 +381,7 @@ A free web application that allows you to compare software packages across open-
 
 ### Snyk API
 
-A Snyk tool that enables developers to integrate programmatically with Snyk. See [Snyk API](../snyk-api/).
+A Snyk tool that enables developers to integrate programmatically with Snyk. See [Snyk API](../snyk-api/overview.md).
 
 ### Snyk Apps
 
@@ -482,4 +482,4 @@ See [Snyk Web UI](glossary.md#snyk-web-ui).
 
 A Snyk feature. This enables Snyk to ingest shallow copies of your Git repositories for scanning, resulting in precise and reliable vulnerability scans.
 
-See [Workspaces for SCM integrations](../scm-integrations/workspaces.md).
+See [Workspaces for SCM integrations](../developer-tools/scms/workspaces.md).

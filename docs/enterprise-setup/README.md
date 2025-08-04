@@ -55,7 +55,7 @@ Adding projects video
 
 ## **Configure initial Snyk integration settings**
 
-After your Git repository is connected (see [See Git repository integrations (SCMs)](../scm-integrations/organization-level-integrations/) for details), you have automated processes available to automatically check pull requests for vulnerabilities, automatically generate pull requests, and automatically generate dependency upgrade pull requests. Snyk recommends you disable these options initially.
+After your Git repository is connected (see [See Git repository integrations (SCMs)](../developer-tools/scms/organization-level-integrations/) for details), you have automated processes available to automatically check pull requests for vulnerabilities, automatically generate pull requests, and automatically generate dependency upgrade pull requests. Snyk recommends you disable these options initially.
 
 The settings for each Snyk Project are inherited from the Snyk Organization integration settings. Follow these steps to ensure these settings are disabled: Default Snyk test for pull requests, Automatic fix pull requests, Automatic dependency upgrade pull requests, and Automatic updates to Dockerfile base images. You can go back and enable these settings when your teams are ready to implement these options.
 
@@ -121,7 +121,7 @@ A scan with [`snyk iac test`](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-an
 
 ## Next steps in implementing the Snyk Enterprise plan
 
-* If you want developers to try Snyk in their local environment using the IDE or CLI, review [Snyk API](../snyk-api/) and [Snyk CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/).
+* If you want developers to try Snyk in their local environment using the IDE or CLI, review [Snyk API](../snyk-api/overview.md) and [Snyk CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/).
 * To get specific recommendations for your tech stack, visit the guide specific to your language.
 * When you are ready to plan a Snyk rollout to more teams, review the [Enterprise implementation guide](../implement-snyk/enterprise-implementation-guide/) for more information.
 * See the [Developer launch package](https://assets.ctfassets.net/4un77bcsnjzw/2YfaqJNMsogGNJM6BBQz4p/8f5ca77b9c40a1bbe14cc9fb0aa05462/Snyk-developer-launch-package.pdf) for additional strategies, communication templates, and checklists for rolling Snyk out to a wider audience.

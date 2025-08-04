@@ -7,7 +7,7 @@ Snyk Code is a developer-first static application security testing (SAST) soluti
 * [Snyk Web UI](../../getting-started/snyk-web-ui.md) (including [PR checks](../pull-requests/pull-request-checks/))
 * [Snyk IDE](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/)
 * [Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/)
-* [Snyk API](../../snyk-api/)
+* [Snyk API](../../snyk-api/overview.md)
 
 The following table shows the Snyk Code features, including analysis, managing security issues in your code, and facilitating remediations within your development environment.
 

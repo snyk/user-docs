@@ -49,7 +49,7 @@ See [Single Sign-On (SSO) for authentication to Snyk](../enterprise-setup/single
 
 ## Platform features not available
 
-* [Bitbucket Cloud App](../scm-integrations/organization-level-integrations/bitbucket-cloud-app.md). Note that [Bitbucket Data Center/Server](../scm-integrations/organization-level-integrations/bitbucket-data-center-server.md) integration is available.
+* [Bitbucket Cloud App](../developer-tools/scms/organization-level-integrations/bitbucket-cloud-app.md). Note that [Bitbucket Data Center/Server](../developer-tools/scms/organization-level-integrations/bitbucket-data-center-server.md) integration is available.
 * [Slack App](../integrate-with-snyk/jira-and-slack-integrations/slack-app.md)
 * [Jira App](../integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md). Note that [Jira Integration](../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md) is available.
 * [Snyk Advisor](https://snyk.io/advisor/)

@@ -20,7 +20,7 @@ You can use one of the following identity providers for authentication with Snyk
 * Single Sign-On (SSO): available with Enterprise plans.\
   See [Setting up Single Sign-On (SSO) for authentication](single-sign-on-sso-for-authentication-to-snyk/).
 
-For additional instructions, see the integrations pages for [Git repositories (SCMs)](../scm-integrations/organization-level-integrations/).
+For additional instructions, see the integrations pages for [Git repositories (SCMs)](../developer-tools/scms/organization-level-integrations/).
 
 {% hint style="info" %}
 Logging in with a different provider from the one you registered with when you first created your Snyk account will create a separate new Snyk account.

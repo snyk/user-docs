@@ -89,7 +89,7 @@ N/A indicates that the repository was detected through a Snyk scan but not direc
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the application context catalog was configured.
 
-**\***&#x41;ll filters marked with `*` are visible only to the users who configured the [application context](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) catalog for their SCM integrations.
+**\***&#x41;ll filters marked with `*` are visible only to the users who configured the [application context](../developer-tools/scms/application-context-for-scm-integrations/) catalog for their SCM integrations.
 
 After applying the filters, the asset list will display only the assets that match the specified conditions, without a hierarchical structure.
 

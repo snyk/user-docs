@@ -8,7 +8,7 @@ The easiest way to start building a new Snyk App is to clone the [Demo Snyk Apps
 
 This document describes how to create a new Snyk App in the language of your choice. Use this document along with the [API reference documentation for Snyk Apps](../../reference/apps.md).
 
-Snyk Apps are based on the [Snyk API](../../) so that your integrations are inherently stable and secure.
+Snyk Apps are based on the [Snyk API](../../overview.md) so that your integrations are inherently stable and secure.
 
 ## Integrating Apps with Snyk
 

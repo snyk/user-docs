@@ -35,7 +35,7 @@ Select [**Reports**](../../../manage-issues/reporting/) to view the vulnerabilit
 
 ### Group inventory
 
-Select [**Inventory**](../../../manage-assets/#inventory-menu) to view, filter, and manage your assets.&#x20;
+Select [**Inventory**](../../../manage-assets/overview.md#inventory-menu) to view, filter, and manage your assets.&#x20;
 
 ### Group issues
 
@@ -55,7 +55,7 @@ Select [**Policies**](../../../manage-risk/policies/) to view the license and se
 
 ### Group integrations
 
-Select **Integrations** to view and configure the available integrations for both [SCM integrations](../../../scm-integrations/group-level-integrations/) and [third-party integrations](../../../integrate-with-snyk/).
+Select **Integrations** to view and configure the available integrations for both [SCM integrations](../../../developer-tools/scms/group-level-integrations/) and [third-party integrations](../../../integrations/overview.md).
 
 ### Group members
 

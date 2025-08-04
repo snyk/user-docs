@@ -47,13 +47,13 @@ Reachability analysis is supported in the following integrations:
 
 | Integration                                                                                                                | Release status       |
 | -------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| [GitHub](../../scm-integrations/organization-level-integrations/github.md)                                                 | General Availability |
-| [GitHub Enterprise](../../scm-integrations/organization-level-integrations/github-enterprise.md)                           | General Availability |
-| [GitHub Cloud App](../../scm-integrations/organization-level-integrations/github-cloud-app.md)                             | General Availability |
-| [Bitbucket Cloud](../../scm-integrations/organization-level-integrations/bitbucket-cloud-app.md)                           | General Availability |
-| [Bitbucket Server](../../scm-integrations/organization-level-integrations/bitbucket-data-center-server.md)                 | General Availability |
-| [GitLab](../../scm-integrations/organization-level-integrations/gitlab.md)                                                 | General Availability |
-| [Azure Repos](../../scm-integrations/organization-level-integrations/azure-repositories-tfs.md)                            | General Availability |
+| [GitHub](../../developer-tools/scms/organization-level-integrations/github.md)                                             | General Availability |
+| [GitHub Enterprise](../../developer-tools/scms/organization-level-integrations/github-enterprise.md)                       | General Availability |
+| [GitHub Cloud App](../../developer-tools/scms/organization-level-integrations/github-cloud-app.md)                         | General Availability |
+| [Bitbucket Cloud](../../developer-tools/scms/organization-level-integrations/bitbucket-cloud-app.md)                       | General Availability |
+| [Bitbucket Server](../../developer-tools/scms/organization-level-integrations/bitbucket-data-center-server.md)             | General Availability |
+| [GitLab](../../developer-tools/scms/organization-level-integrations/gitlab.md)                                             | General Availability |
+| [Azure Repos](../../developer-tools/scms/organization-level-integrations/azure-repositories-tfs.md)                        | General Availability |
 | [Brokered connections](../../enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md) | General Availability |
 
 {% hint style="info" %}

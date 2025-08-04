@@ -10,7 +10,7 @@ Before using Snyk IaC, be sure you have the prerequisites as follows:
 
 * A Snyk account. For details, see [Getting started](../../getting-started/).
 * An existing Terraform, CloudFormation, Kubernetes, or ARM environment to work in.
-* A Git repository you have integrated with Snyk in the same way as for other Snyk products. For details, see [Git repository (SCM)](../../scm-integrations/organization-level-integrations/).
+* A Git repository you have integrated with Snyk in the same way as for other Snyk products. For details, see [Git repository (SCM)](../../developer-tools/scms/organization-level-integrations/).
 
 For more information about IaC and supported environments, see the following pages:
 

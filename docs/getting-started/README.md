@@ -41,7 +41,7 @@ When you log in to the Snyk Web UI, Snyk shows your preferred (default) Organiza
 
 ## Set up a Snyk integration
 
-For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations - [Organization](../integrate-with-snyk/) or [Group](../integrate-with-snyk/). For information about available integrators, see [Snyk SCM integrations](../scm-integrations/organization-level-integrations/) and [Integrate with Snyk](../integrate-with-snyk/).
+For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations - [Organization](../integrations/overview.md) or [Group](../integrations/overview.md). For information about available integrators, see [Snyk SCM integrations](../developer-tools/scms/organization-level-integrations/) and [Integrate with Snyk](../integrations/overview.md).
 
 To scan your code, you must first integrate Snyk with the repository holding that code.
 
@@ -53,7 +53,7 @@ Alternatively, if you want to scan your code without authenticating to your sour
 
 ### Manual process
 
-You can add an integration to Snyk manually at any point from the Snyk Web UI. To do this, navigate to **Integrations** > **Source Control**. For more information, see [Integrate with Snyk](../integrate-with-snyk/).
+You can add an integration to Snyk manually at any point from the Snyk Web UI. To do this, navigate to **Integrations** > **Source Control**. For more information, see [Integrate with Snyk](../integrations/overview.md).
 
 {% hint style="info" %}
 If an integration is already configured for your Organization, it is marked as **Configured**.
@@ -88,7 +88,7 @@ When you import a Project, Snyk scans that imported Project, and displays the re
 Importing a Project also does the following:
 
 * Sets Snyk to run a regular scan on that Project for issues. See [Usage settings](../snyk-admin/groups-and-organizations/usage-settings.md).
-* Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../scm-integrations/organization-level-integrations/).
+* Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../developer-tools/scms/organization-level-integrations/).
 
 ## Set up Snyk Essentials&#x20;
 

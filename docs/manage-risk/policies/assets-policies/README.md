@@ -19,7 +19,7 @@ Overview of asset policies
 {% endembed %}
 
 {% hint style="info" %}
-[Manage assets](../../../manage-assets/) and [assets policies](./) are interconnected. Before setting up any new policy, ensure you have reviewed and filtered your assets from the Inventory menu.
+[Manage assets](../../../manage-assets/overview.md) and [assets policies](./) are interconnected. Before setting up any new policy, ensure you have reviewed and filtered your assets from the Inventory menu.
 {% endhint %}
 
 ## Use Cases

@@ -24,7 +24,7 @@ In the case of Go and Unmanaged scans (C/C++), this requires an official release
 
 Use Snyk Open Source to find and fix vulnerabilities in the open-source libraries in your application. Snyk provides actionable fix advice for vulnerabilities and supports workflows to fix vulnerabilities using pull requests. For more information, see [Snyk Pull or Merge Requests](../pull-requests/snyk-pull-or-merge-requests/).
 
-Snyk Open Source also helps prioritize and report on vulnerabilities discovered. For more information, see [Manage risk](../../manage-risk/).
+Snyk Open Source also helps prioritize and report on vulnerabilities discovered. For more information, see [Manage risk](../../manage-risk/overview.md).
 
 ## Find and fix license issues
 

@@ -87,4 +87,4 @@ Navigate to the following pages for more details:
 
 * CLI for [Snyk Open Source](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/) and [Snyk Code](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
 * CI/CD for [Snyk Open Source](../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-open-source-specific-ci-cd-strategies.md) and [Snyk Code](../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/use-snyk-code-in-the-ci-cd-pipeline.md)
-* [SCM integrations](../scm-integrations/organization-level-integrations/) for Snyk Open Source and Snyk Code
+* [SCM integrations](../developer-tools/scms/organization-level-integrations/) for Snyk Open Source and Snyk Code
