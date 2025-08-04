@@ -5,8 +5,8 @@ Snyk Container helps you find and fix vulnerabilities in container images, based
 You can scan your container images using Snyk Container:&#x20;
 
 * In the [Snyk Web UI](use-snyk-container/)
-* Through the [Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
-* With [Broker](../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md) (for self-hosted container registries)
+* Through the [Snyk CLI](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
+* With [Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md) (for self-hosted container registries)
 
 ## **Prerequisites for using Snyk Container in the Web UI**
 
@@ -15,14 +15,14 @@ Before scanning your container images with Snyk Container, ensure you:
 * Create or log in to a Snyk account.
 * Set up an integration with a supported container registry, such as Docker Hub. See [Container security integrations](container-registry-integrations/).
 
-For more information, see [Getting started](../../getting-started/).
+For more information, see [Getting started](../../discover-snyk/getting-started/).
 
 ## View vulnerabilities in your container images
 
 In the **Projects** tab, you can see vulnerability results for Snyk Projects that you have imported. The imported Projects are grouped into **Targets**.
 
 {% hint style="info" %}
-You can see the history of all the repositories and container registry images imported into an Organization. For details, see [Import Log](../../snyk-admin/snyk-projects/import-log.md).
+You can see the history of all the repositories and container registry images imported into an Organization. For details, see [Import Log](../../snyk-platform-administration/snyk-projects/import-log.md).
 {% endhint %}
 
 To see vulnerability information for that Project, select an imported Project from the target list.

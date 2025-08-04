@@ -5,7 +5,7 @@
 
 Risk Score is in Early Access and available for Snyk Open Source and Snyk Container, with Snyk Enterprise and Snyk Free plans. If you want to set it up in your Group, contact your Snyk account team.
 
-Use [Snyk Preview](../../snyk-admin/snyk-preview.md) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
+Use [Snyk Preview](../../snyk-platform-administration/snyk-preview.md) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
 {% endhint %}
 
 The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for all vulnerability-type issues. License issues are not supported. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.&#x20;
@@ -50,7 +50,7 @@ The Risk model results from extensive research conducted by the Snyk Security Da
 
 Objective impact factors are the CVSS impact metrics, Availability, Confidentiality, Integrity, and Scope, calculated based on the CVSS impact subscore. For Container issues, Provider Urgency is also taken into account.&#x20;
 
-The business criticality Project attribute will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore. For more information, see [Project attributes](../../snyk-admin/snyk-projects/project-attributes.md).
+The business criticality Project attribute will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore. For more information, see [Project attributes](../../snyk-platform-administration/snyk-projects/project-attributes.md).
 
 ### Likelihood subscore&#x20;
 
@@ -124,7 +124,7 @@ Provider Urgency affects the Likelihood subscore.&#x20;
 
 **Business criticality**&#x20;
 
-User-defined Project attribute representing the subjective business impact of the respective application. For more information, see [Project attributes](../../snyk-admin/snyk-projects/project-attributes.md).
+User-defined Project attribute representing the subjective business impact of the respective application. For more information, see [Project attributes](../../snyk-platform-administration/snyk-projects/project-attributes.md).
 
 | Possible input value | Score impact                             |
 | -------------------- | ---------------------------------------- |

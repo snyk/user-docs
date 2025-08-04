@@ -2,10 +2,10 @@
 
 You can scan your open-source libraries using Snyk Open Source:&#x20;
 
-* In the [Snyk Web UI](../../../getting-started/snyk-web-ui.md)
-* With your [IDE](../../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/)
-* With a [CI/CD integration](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/)
-* Through the [Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/)
+* In the [Snyk Web UI](../../../discover-snyk/getting-started/snyk-web-ui.md)
+* With your [IDE](../../../developer-tools/snyk-ide-plugins-and-extensions/)
+* With a [CI/CD integration](../../../developer-tools/snyk-ci-cd-integrations/)
+* Through the [Snyk CLI](../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/)
 * Through the [Snyk API](../../../snyk-api/reference/test-v1.md)
 
 ## View vulnerabilities in your open-source libraries
@@ -16,7 +16,7 @@ You can expand a **Target** to see vulnerability information for Projects, inclu
 
 Click a Project to open the issues page for that Project, where, for supported environments,  you can see the dependency cards, showing all of your dependencies, the versions where each associated issue was introduced, how to fix them, and more details about the individual vulnerabilities.
 
-For unsupported environments, you can see a list of individual vulnerabilities. For more details, see [View Project information](../../../snyk-admin/snyk-projects/project-information.md).
+For unsupported environments, you can see a list of individual vulnerabilities. For more details, see [View Project information](../../../snyk-platform-administration/snyk-projects/project-information.md).
 
 ## Fix vulnerabilities in your open-source libraries
 

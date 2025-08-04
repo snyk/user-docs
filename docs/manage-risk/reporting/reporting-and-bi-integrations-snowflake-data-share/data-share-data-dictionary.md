@@ -1,4 +1,4 @@
-# Data Share Data Dictionary
+# Data Share data dictionary
 
 Snyk Data Share is a comprehensive dataset encompassing various data pillars that support a wide range of use cases. You can use this dataset to present key security metrics such as issue backlog, aging, MTTR, SLA compliance, and test coverage, as well as to prioritize issues based on different factors, such as risk score, severity, CVSS, EPSS, and many more.
 
@@ -16,7 +16,7 @@ The diagram above represents the objects listed in the data dictionary as a data
 * [Usage events](data-share-data-dictionary.md#usage-events)
 * [Jira issues](data-share-data-dictionary.md#issue-jira-issues)
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary</p></figcaption></figure>
 
 ### Groups
 
@@ -219,7 +219,7 @@ Querying the `USAGE_EVENTS` table allows you to measure:
 
 > Version in use: v1.0
 
-The `ISSUE_JIRA_ISSUES` table allows correlation between Snyk issues and assigned Jira issues. As Snyk enables more than one type of Jira integration, it is important to emphasize that the Jira issues that are available in the dataset originated from this [Jira integration](../../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md).
+The `ISSUE_JIRA_ISSUES` table allows correlation between Snyk issues and assigned Jira issues. As Snyk enables more than one type of Jira integration, it is important to emphasize that the Jira issues that are available in the dataset originated from this [Jira integration](../../../integrations/jira-and-slack-integrations/jira-integration.md).
 
 | Object name            | Data type     | Description                                                                                    |
 | ---------------------- | ------------- | ---------------------------------------------------------------------------------------------- |

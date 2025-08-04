@@ -8,7 +8,7 @@ You will use this IaC template to provision the role in [Step 2: Create the Goog
 
 ## Retrieve the IaC template
 
-To retrieve the IaC template from the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/permissions), you need the API token for a Snyk Organization-level [service account](../../../../../enterprise-setup/service-accounts/) with an Org Admin role.
+To retrieve the IaC template from the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/permissions), you need the API token for a Snyk Organization-level [service account](../../../../../implementation-and-setup/enterprise-setup/service-accounts/) with an Org Admin role.
 
 1. In the [Snyk Web UI](https://app.snyk.io/), navigate to **Settings** > **General** > **Organization ID** and copy your Organization ID.
 2. Send a request to the Snyk API in the following format:

@@ -85,7 +85,7 @@ To make it easier to share the view outside of the Snyk platform, the URL of a s
 
 ### Prerequisites
 
-To create, edit, and remove a saved view, you must have **Edit reports** permission. Saved views are not private. After being created, Saved Views are visible to all users with **View reports** permission. Only Organization and Group Admins can assign these permissions. For more information, see [User role management](../../snyk-admin/user-roles/user-role-management.md).
+To create, edit, and remove a saved view, you must have **Edit reports** permission. Saved views are not private. After being created, Saved Views are visible to all users with **View reports** permission. Only Organization and Group Admins can assign these permissions. For more information, see [User role management](../../snyk-platform-administration/user-roles/user-role-management.md).
 
 To assign report permissions:
 

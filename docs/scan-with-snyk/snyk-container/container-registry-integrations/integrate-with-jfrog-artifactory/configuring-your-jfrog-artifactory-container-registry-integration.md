@@ -7,7 +7,7 @@ The instructions on this page explain how to enable integration between one Arti
 * You must be an administrator for the Organization you are configuring in Snyk.
 * You must provide user credentials to integrate with Artifactory.&#x20;
 * You must be running Docker. Snyk supports Docker repositories and the Docker package type for this integration.
-* If you are using a self-hosted Artifactory instance, see [Snyk Broker - Container Registry Agent](../../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/).
+* If you are using a self-hosted Artifactory instance, see [Snyk Broker - Container Registry Agent](../../../../implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/).
 
 ## Configure Artifactory Container Registry integration&#x20;
 

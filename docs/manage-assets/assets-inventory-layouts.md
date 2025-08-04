@@ -29,7 +29,7 @@ Each inventory tab may include different counts of assets and scanned artifacts,
 **Release status** \
 Risk factors for Snyk AppRisk are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 
-**Runtime discovered** and **Runtime last seen** filters take their release status from the [runtime integration](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) for which they provide data and are available only for Snyk AppRisk.
+**Runtime discovered** and **Runtime last seen** filters take their release status from the [runtime integration](../integrations/connect-a-third-party-integration.md) for which they provide data and are available only for Snyk AppRisk.
 {% endhint %}
 
 You can filter the information for all the inventory tabs and use any of the available filters listed on the [Assets inventory features](assets-inventory-features.md#filters-capabilities) page.

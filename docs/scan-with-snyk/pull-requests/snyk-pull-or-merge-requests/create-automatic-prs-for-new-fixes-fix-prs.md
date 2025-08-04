@@ -25,7 +25,7 @@ To determine when your last 24-hour window began, check the Project issue card f
 
 Pull requests for new vulnerabilities are enabled by default for new integrations.
 
-See the [Git repository SCM integrations](../../../scm-integrations/organization-level-integrations/) pages for details about supported integrations.
+See the [Git repository SCM integrations](../../../developer-tools/scm-integrations/organization-level-integrations/) pages for details about supported integrations.
 
 ## Enable or disable pull requests for an integration
 

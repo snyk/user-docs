@@ -4,13 +4,13 @@ Ignores are taken into account in the Snyk CLI when `snyk code test` is run.
 
 ## **Minimum version required**
 
-You must have at least Snyk CLI v1.1297.1 installed for Snyk Code Consistent Ignores. See [Install or update the Snyk CLI](../../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/).
+You must have at least Snyk CLI v1.1297.1 installed for Snyk Code Consistent Ignores. See [Install or update the Snyk CLI](../../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/).
 
 ## **Set up the Organization**
 
 To take ignores into account, specify the Organization where the ignores reside.&#x20;
 
-[Group-level policies also cascade down to all Organizations](./#manage-ignores-at-the-group-level-through-security-policies). See [How to select the Organization to use in the CLI](../../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
+[Group-level policies also cascade down to all Organizations](./#manage-ignores-at-the-group-level-through-security-policies). See [How to select the Organization to use in the CLI](../../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
 
 ## Snyk CLI default ignore behavior
 

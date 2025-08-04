@@ -14,7 +14,7 @@ Any ignores created or converted with the feature enabled will not be automatica
 
 ## User roles
 
-To create, edit and remove ignores, you need to have a user role assigned with Ignore management permissions. Only Group Admins can set these permissions (see [User role management](../../../../snyk-admin/user-roles/user-role-management.md)).&#x20;
+To create, edit and remove ignores, you need to have a user role assigned with Ignore management permissions. Only Group Admins can set these permissions (see [User role management](../../../../snyk-platform-administration/user-roles/user-role-management.md)).&#x20;
 
 1. Log in to the Snyk Web UI and navigate to your Group and Organization.
 2. Navigate to **Members** > **Manage Roles** and select one or more permissions.
@@ -32,7 +32,7 @@ Policies configured to ignore-based Project attributes do not result in ignores 
 | Criteria | Description                                                                                                                                                                                                                                                      |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | CWE      | You can provide any CWE value. Snyk Code will ignore any subsequent tests that find associated findings or issues. You can find valid CWEs on [MITRE’s website](https://cwe.mitre.org/data/published/cwe_latest.pdf) or anywhere you can view Snyk Code results. |
-| Rule IDs | You can provide any Snyk Code rule ID. You can find Snyk Code rule IDs as part of the SARIF output that you exported using [Snyk CLI](../../../../cli-ide-and-ci-cd-integrations/snyk-cli/).                                                                     |
+| Rule IDs | You can provide any Snyk Code rule ID. You can find Snyk Code rule IDs as part of the SARIF output that you exported using [Snyk CLI](../../../../developer-tools/snyk-cli/).                                                                                    |
 
 ## Manage ignores in Snyk Projects
 

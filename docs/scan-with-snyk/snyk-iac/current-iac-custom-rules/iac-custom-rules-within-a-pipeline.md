@@ -65,7 +65,7 @@ You must configure your `main` branch under `Settings` -> `Branches`first, so th
 
 ## Snyk IaC GitHub Action
 
-Another way to test the rules is by testing the contract with the [Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/) by using the [Snyk IaC GitHub Action](https://github.com/snyk/actions/tree/master/iac), making sure the generated bundle can be read by the CLI.
+Another way to test the rules is by testing the contract with the [Snyk CLI](../../../developer-tools/snyk-cli/) by using the [Snyk IaC GitHub Action](https://github.com/snyk/actions/tree/master/iac), making sure the generated bundle can be read by the CLI.
 
 To do this, you will need a step for installing the Snyk CLI and a `SNYK_TOKEN`, which can be found in your Snyk Account Settings.
 

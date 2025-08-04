@@ -20,7 +20,7 @@ Snyk AppRisk additional capabilities overview
 
 Snyk AppRisk provides additional features beyond [those available in Snyk Essentials](snyk-essentials.md#features):
 
-* [Integrations](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) with non-Snyk products to support security coverage and Insights use cases
+* [Integrations](../integrations/connect-a-third-party-integration.md) with non-Snyk products to support security coverage and Insights use cases
 * [Insights](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md) for runtime context - providing risk factors to help with risk-based prioritization.
 * [Analytics](../manage-risk/analytics/application-analytics.md) for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
 
@@ -49,7 +49,7 @@ You can access Snyk AppRisk with one of the Group-level role permissions describ
 A Group Administrator has the **Edit Snyk Essentials** permission assigned by default, and a Group Viewer has the **View Snyk Essentials** permission assigned by default.
 
 {% hint style="info" %}
-For more information on default user roles and permissions, see [Default user roles](../snyk-admin/user-roles/pre-defined-roles.md).
+For more information on default user roles and permissions, see [Default user roles](../snyk-platform-administration/user-roles/pre-defined-roles.md).
 {% endhint %}
 
 ## Login and Authentication
@@ -60,7 +60,7 @@ Log in and authenticate to Snyk using existing mechanisms (SSO, Google SAML, and
 
 Ensure you are at the Group level to access the Snyk AppRisk options. From the Group level, you have centralized security management that enhances security and simplifies security procedures for Projects.
 
-The Snyk AppRisk features are available at the [Group level from the Snyk Web UI](../getting-started/snyk-web-ui.md#group-level).&#x20;
+The Snyk AppRisk features are available at the [Group level from the Snyk Web UI](../discover-snyk/getting-started/snyk-web-ui.md#group-level).&#x20;
 
 ## Key concepts
 

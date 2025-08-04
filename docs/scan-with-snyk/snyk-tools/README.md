@@ -13,11 +13,11 @@ You must have a [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=nav\&page=
 Snyk provides full documentation for the following key Snyk Tools:
 
 * [snyk-api-import (docs)](tool-snyk-api-import/): Bulk import Projects into Snyk in a robust, paced way. Repo: [snyk-api-import](https://github.com/snyk/snyk-api-import)
-* [snyk-delta (docs)](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md): Get the delta between two Snyk snapshots. Repo: [snyk-delta](https://github.com/snyk-tech-services/snyk-delta)
-* [snyk-filter (docs)](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md): Takes the JSON output from the Snyk CLI and applies custom filtering of the results. Repo: [snyk-filter](https://github.com/snyk-tech-services/snyk-filter)
-* [snyk-to-html](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md): Snyk JSON to HTML Mapper takes the JSON output from `snyk test --json` and creates a local HTML file displaying the vulnerabilities discovered. Repo: [snyk-to-html](https://github.com/snyk/snyk-to-html)
+* [snyk-delta (docs)](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md): Get the delta between two Snyk snapshots. Repo: [snyk-delta](https://github.com/snyk-tech-services/snyk-delta)
+* [snyk-filter (docs)](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md): Takes the JSON output from the Snyk CLI and applies custom filtering of the results. Repo: [snyk-filter](https://github.com/snyk-tech-services/snyk-filter)
+* [snyk-to-html](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md): Snyk JSON to HTML Mapper takes the JSON output from `snyk test --json` and creates a local HTML file displaying the vulnerabilities discovered. Repo: [snyk-to-html](https://github.com/snyk/snyk-to-html)
 * [jira-tickets-for-new-vulns (docs)](tool-jira-tickets-for-new-vulns.md): Sync your Snyk-monitored Projects and auto-open JIRA tickets for issues. Repo: [jira-tickets-for-new-vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns)
-* [snyk-scm-contributors-count (docs)](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/): Count contributors for your SCM repos with commits in the last 90 days. Repo: [snyk-scm-contributors-count](https://github.com/snyk-tech-services/snyk-scm-contributors-count).
+* [snyk-scm-contributors-count (docs)](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/): Count contributors for your SCM repos with commits in the last 90 days. Repo: [snyk-scm-contributors-count](https://github.com/snyk-tech-services/snyk-scm-contributors-count).
 
 ## Additional Snyk Tools
 

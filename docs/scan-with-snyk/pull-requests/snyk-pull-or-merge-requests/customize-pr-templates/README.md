@@ -1,6 +1,6 @@
 # Customize PR templates
 
-When you fix or upgrade Snyk Open Source and Snyk Container Projects imported using the [SCM integrations](../../../../scm-integrations/organization-level-integrations/), Snyk raises pull requests (PRs) against your repository.&#x20;
+When you fix or upgrade Snyk Open Source and Snyk Container Projects imported using the [SCM integrations](../../../../developer-tools/scm-integrations/organization-level-integrations/), Snyk raises pull requests (PRs) against your repository.&#x20;
 
 Snyk has default PR templates for the title, description, and commit message. These indicate what packages are being changed, which issues are being fixed, and many other details.
 

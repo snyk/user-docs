@@ -1,6 +1,6 @@
 # Troubleshoot fixing vulnerabilities with Snyk Open Source
 
-When you find a vulnerability, you have the opportunity to report that vulnerability to Snyk. For details, see [Disclosure of a vulnerability in an open-source package](../../../working-with-snyk/disclosure-of-a-vulnerability-in-an-open-source-package.md).
+When you find a vulnerability, you have the opportunity to report that vulnerability to Snyk. For details, see [Disclosure of a vulnerability in an open-source package](../../../snyk-data-and-governance/disclosure-of-a-vulnerability-in-an-open-source-package.md).
 
 ## Unable to open a pull request or merge request for issues found by Snyk
 
@@ -14,9 +14,9 @@ Snyk can generate Fix Pull Requests (Fix PRs) or Merge Requests (MRs) for depend
 
 Snyk supports creating Fix PRs or MRs for the following languages:
 
-* [Maven](../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md#maven)
-* [.NET](../../../supported-languages-package-managers-and-frameworks/.net/)&#x20;
-* [npm](../../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#npm)
-* [Python](../../../supported-languages-package-managers-and-frameworks/python/)
-* [Ruby](../../../supported-languages-package-managers-and-frameworks/ruby/)
-* [Yarn](../../../supported-languages-package-managers-and-frameworks/javascript/best-practices-for-javascript-and-node.js.md#yarn)
+* [Maven](../../../supported-languages/supported-languages-list/java-and-kotlin/guidance-for-java-and-kotlin.md#maven)
+* [.NET](../../../supported-languages/supported-languages-list/.net/)&#x20;
+* [npm](../../../supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js.md#npm)
+* [Python](../../../supported-languages/supported-languages-list/python/)
+* [Ruby](../../../supported-languages/supported-languages-list/ruby/)
+* [Yarn](../../../supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js.md#yarn)

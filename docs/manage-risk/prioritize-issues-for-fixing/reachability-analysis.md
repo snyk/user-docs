@@ -5,7 +5,7 @@
 
 Reachability is now in General Availability (GA) status for certain [integrations and programming languages](reachability-analysis.md#supported-languages-and-integrations).
 
-Snyk is expanding its reachability capabilities by adding more integrations and languages, which are available in Early Access and can be enabled through [Snyk Preview](../../snyk-admin/snyk-preview.md).
+Snyk is expanding its reachability capabilities by adding more integrations and languages, which are available in Early Access and can be enabled through [Snyk Preview](../../snyk-platform-administration/snyk-preview.md).
 {% endhint %}
 
 Snyk reachability analysis allows you to analyze risk by identifying whether your application is calling a code element (for example functions, classes, modules, annotations) related to the vulnerability, thus raising the chances of that vulnerability being exploited in the context of your application.
@@ -36,25 +36,25 @@ You can apply the reachability analysis to existing Projects by triggering a [ma
 
 Reachability analysis is supported for the following languages and package managers:
 
-| Language                                                                                                                                                                   | Package manager     | Release status       |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | -------------------- |
-| [Java](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/)                                                                                         | Maven, Gradle       | General Availability |
-| [JavaScript](../../supported-languages-package-managers-and-frameworks/javascript/), [TypeScript](../../supported-languages-package-managers-and-frameworks/typescript.md) | npm, Yarn           | General Availability |
-| [Python](../../supported-languages-package-managers-and-frameworks/python/)                                                                                                | pip, poetry, pipenv | Early Access         |
-| [C#](../../supported-languages-package-managers-and-frameworks/.net/)                                                                                                      | NuGet               | Early Access         |
+| Language                                                                                                                                                     | Package manager     | Release status       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- | -------------------- |
+| [Java](../../supported-languages/supported-languages-list/java-and-kotlin/)                                                                                  | Maven, Gradle       | General Availability |
+| [JavaScript](../../supported-languages/supported-languages-list/javascript/), [TypeScript](../../supported-languages/supported-languages-list/typescript.md) | npm, Yarn           | General Availability |
+| [Python](../../supported-languages/supported-languages-list/python/)                                                                                         | pip, poetry, pipenv | Early Access         |
+| [C#](../../supported-languages/supported-languages-list/.net/)                                                                                               | NuGet               | Early Access         |
 
 Reachability analysis is supported in the following integrations:
 
-| Integration                                                                                                                | Release status       |
-| -------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| [GitHub](../../scm-integrations/organization-level-integrations/github.md)                                                 | General Availability |
-| [GitHub Enterprise](../../scm-integrations/organization-level-integrations/github-enterprise.md)                           | General Availability |
-| [GitHub Cloud App](../../scm-integrations/organization-level-integrations/github-cloud-app.md)                             | General Availability |
-| [Bitbucket Cloud](../../scm-integrations/organization-level-integrations/bitbucket-cloud-app.md)                           | General Availability |
-| [Bitbucket Server](../../scm-integrations/organization-level-integrations/bitbucket-data-center-server.md)                 | General Availability |
-| [GitLab](../../scm-integrations/organization-level-integrations/gitlab.md)                                                 | General Availability |
-| [Azure Repos](../../scm-integrations/organization-level-integrations/azure-repositories-tfs.md)                            | General Availability |
-| [Brokered connections](../../enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md) | General Availability |
+| Integration                                                                                                                                         | Release status       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| [GitHub](../../developer-tools/scm-integrations/organization-level-integrations/github.md)                                                          | General Availability |
+| [GitHub Enterprise](../../developer-tools/scm-integrations/organization-level-integrations/github-enterprise.md)                                    | General Availability |
+| [GitHub Cloud App](../../developer-tools/scm-integrations/organization-level-integrations/github-cloud-app.md)                                      | General Availability |
+| [Bitbucket Cloud](../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud-app.md)                                    | General Availability |
+| [Bitbucket Server](../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server.md)                          | General Availability |
+| [GitLab](../../developer-tools/scm-integrations/organization-level-integrations/gitlab.md)                                                          | General Availability |
+| [Azure Repos](../../developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs.md)                                     | General Availability |
+| [Brokered connections](../../implementation-and-setup/enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md) | General Availability |
 
 {% hint style="info" %}
 Reachability analysis using the Snyk CLI, IDE, or other integrations is not supported.
@@ -62,7 +62,7 @@ Reachability analysis using the Snyk CLI, IDE, or other integrations is not supp
 
 ## **Enabling reachability** analysis **for brokered connections**
 
-If you use a brokered connection to your SCM, configure the [Broker](../../enterprise-setup/snyk-broker/) to provide access to your source files.
+If you use a brokered connection to your SCM, configure the [Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/) to provide access to your source files.
 
 ## Using reachability analysis
 

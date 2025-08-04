@@ -2,7 +2,7 @@
 
 ## Step 1: Configure AWS authentication for your environment
 
-The [`snyk iac describe`](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/iac-describe.md) command requires authentication to your cloud provider in order to run properly. It requires only the lowest read-only access rights possible. You can use use the built-in AWS `ReadOnlyAccess` IAM policy for an IAM user as the default to get started.
+The [`snyk iac describe`](../../../developer-tools/snyk-cli/commands/iac-describe.md) command requires authentication to your cloud provider in order to run properly. It requires only the lowest read-only access rights possible. You can use use the built-in AWS `ReadOnlyAccess` IAM policy for an IAM user as the default to get started.
 
 `snyk iac describe` can reuse standard authentication methods for AWS, such as the `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` [environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-list). When those are set, the Snyk CLI will automatically pick them up to authenticate on AWS.
 
@@ -50,7 +50,7 @@ There are two options: ignore a specific resource or ignore multiple resources.
 
 #### Ignore multiple resources
 
-Use the output of the `describe` command and extract its results to [update the .snyk excluded policies](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/iac-update-exclude-policy.md):
+Use the output of the `describe` command and extract its results to [update the .snyk excluded policies](../../../developer-tools/snyk-cli/commands/iac-update-exclude-policy.md):
 
 `$ snyk iac describe --json --all | snyk iac update-exclude-policy`
 

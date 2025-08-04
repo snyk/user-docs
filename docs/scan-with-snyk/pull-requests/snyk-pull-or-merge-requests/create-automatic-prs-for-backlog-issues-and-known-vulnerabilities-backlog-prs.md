@@ -18,7 +18,7 @@ When Snyk creates automatic PRs for vulnerabilities, the following rules are app
 
 <figure><img src="../../../.gitbook/assets/project-settings-test-pull-request-frequency (1).png" alt="Project test and automated PR Checks frequency setting"><figcaption><p>Project test and automated PR Checks frequency setting</p></figcaption></figure>
 
-To determine when your last 24-hour window began, check the Project issue card for **Snapshot taken by recurring test**.&#x20;
+To determine when your last 24-hour window began, check the Project issue card for **Snapshot taken by recurring test**.
 
 <figure><img src="../../../.gitbook/assets/project-snapshot-taken.png" alt="Snapshot taken by recurrint test 13 hours ago"><figcaption><p>Snapshot taken by recurring test 13 hours ago</p></figcaption></figure>
 
@@ -54,7 +54,7 @@ The configuration settings apply to all Projects in that Organization. You can a
 
 You can configure Automatic fix PRs to work only for specific Projects rather than having Projects inherit the settings from the global integration.
 
-1. Navigate to **Projects** and expand the [target](../../../snyk-admin/snyk-projects/#target) containing your Open Source Project.
+1. Navigate to **Projects** and expand the [target](../../../snyk-platform-administration/snyk-projects/#target) containing your Open Source Project.
 2. Navigate to **Settings** and select an integration, for example, GitHub.
 3. In the **Automatic fix pull requests** section:
    * Select **Customize for only this project**

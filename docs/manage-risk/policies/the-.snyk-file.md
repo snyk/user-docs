@@ -16,14 +16,14 @@ Key considerations regarding how the `.snyk` file is used are as follows:
 
 ## How to create the `.snyk` file
 
-You can create the `.snyk` file by using the `snyk ignore` command. For details, see the [Ignore](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/ignore.md) command CLI help.
+You can create the `.snyk` file by using the `snyk ignore` command. For details, see the [Ignore](../../developer-tools/snyk-cli/commands/ignore.md) command CLI help.
 
 If you do not have an existing `.snyk` file, you can create one and populate it with the following code:\
 `# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities`\
 `version: v1.25.0`
 
 * You must set the `version` to `v1.25.0` as this is the current policy schema version.
-* The ignore block or blocks must follow the relevant syntax as shown in the [description of the `ignore` command](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/ignore.md#usage-and-description) or the examples on this page.
+* The ignore block or blocks must follow the relevant syntax as shown in the [description of the `ignore` command](../../developer-tools/snyk-cli/commands/ignore.md#usage-and-description) or the examples on this page.
 
 For more information, see [Syntax of the `.snyk` file](the-.snyk-file.md#syntax-of-the-.snyk-file).
 
@@ -64,7 +64,7 @@ For details, see [Excluding directories and files from the import process](../..
 
 ## Use the `.snyk` file with Snyk IaC
 
-For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md). For more information, see [Ignore unmanaged resources](../../scan-with-snyk/snyk-iac/detect-manually-created-resources/ignore-unmanaged-resources.md).
+For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md). For more information, see [Ignore unmanaged resources](../../scan-with-snyk/snyk-iac/detect-manually-created-resources/ignore-unmanaged-resources.md).
 
 ## Use the `.snyk` file with Snyk Open Source
 
@@ -87,11 +87,11 @@ When you include the `.snyk` file in your code repository and the `language-sett
 if the `.snyk` file was not present at the initial import of the Project into Snyk., you must re-import the Project.
 {% endhint %}
 
-For more information about Python version support, see [Python version support](../../supported-languages-package-managers-and-frameworks/python/#python-version-support).
+For more information about Python version support, see [Python version support](../../supported-languages/supported-languages-list/python/#python-version-support).
 
 For more information about using the `.snyk` file with Open Source Projects, see the following:
 
-[Ignore vulnerabilities using the Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md)
+[Ignore vulnerabilities using the Snyk CLI](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md)
 
 [Error message: Ignoring via the CLI is not enabled for this organization. Please ignore issues via our website](https://support.snyk.io/s/article/Error-message-Ignoring-via-the-CLI-is-not-enabled-for-this-organization-Please-ignore-issues-via-our-website)
 
@@ -108,14 +108,14 @@ language-settings:
   python: "3.7"
 ```
 
-For more information, see [Setting Python version in Git Projects](../../supported-languages-package-managers-and-frameworks/python/scm-integrations-and-python.md#set-the-python-version-in-git-projects).
+For more information, see [Setting Python version in Git Projects](../../supported-languages/supported-languages-list/python/scm-integrations-and-python.md#set-the-python-version-in-git-projects).
 
 #### Set vulnerability ignore rules
 
 {% hint style="warning" %}
 The `expires` field is optional. If you need a permanent ignore, omit the field.
 
-To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/ignore.md#expiry-less-than-expiry-greater-than).
+To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](../../developer-tools/snyk-cli/commands/ignore.md#expiry-less-than-expiry-greater-than).
 {% endhint %}
 
 Ignore a specific vulnerability for a given path:

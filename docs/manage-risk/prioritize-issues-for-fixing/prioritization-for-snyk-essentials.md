@@ -2,7 +2,7 @@
 
 Snyk uses holistic application intelligence to help you better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. You can also prioritize your issues based on asset classification as defined in asset-related policies.&#x20;
 
-You can access the [Issues](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues) page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues).
+You can access the [Issues](../../discover-snyk/getting-started/snyk-web-ui.md#view-and-prioritize-issues) page from the [Snyk Web UI](../../discover-snyk/getting-started/snyk-web-ui.md#view-and-prioritize-issues).
 
 The Issues page provides a centralized view of all the issues identified by Snyk with additional asset context. This will empower AppSec teams to better triage and remediate issues in Snyk.
 
@@ -23,4 +23,3 @@ Prioritizing issues with Snyk Essentials
 **Issues** is nested in the main left menu and provides information about the identified issues. Use the available filters to customize and prioritize the issues list.
 
 <figure><img src="../../.gitbook/assets/issues-apprisk-essentials.png" alt="Issues page - Snyk AppRisk"><figcaption><p>Issues menu - Snyk Essentials</p></figcaption></figure>
-
