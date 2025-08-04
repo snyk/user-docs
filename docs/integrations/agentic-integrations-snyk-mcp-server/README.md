@@ -46,4 +46,4 @@ The Snyk MCP server supports integrating the following Snyk security tools into 
 Running `snyk_sca_scan` may execute third-party ecosystem tools (for example, Gradle or Maven) on your machine to fetch the project's dependency tree.
 {% endhint %}
 
-For more details, see the [Snyk MCP installation, configuration and startup](snyk-mcp-early-access/snyk-mcp-installation-configuration-and-startup.md) and [Troubleshooting for the Snyk MCP server](../../../snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental/troubleshooting-for-the-snyk-mcp-server.md) pages.
+For more details, see the [Snyk MCP installation, configuration and startup](snyk-mcp-installation-configuration-and-startup.md) and [Troubleshooting for the Snyk MCP server](troubleshooting-for-the-snyk-mcp-server.md) pages.

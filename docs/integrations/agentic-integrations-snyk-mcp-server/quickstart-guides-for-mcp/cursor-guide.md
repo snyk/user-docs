@@ -5,7 +5,7 @@ You can add the Snyk MCP server to Cursor to secure code generated with agentic 
 ## Prerequisites
 
 * [Install the code assistant extension](cursor-guide.md#install-github-copilot)
-* [Install the Snyk CLI](../../install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
 * [Install the Snyk MCP](cursor-guide.md#install-the-snyk-mcp-server-in-github-copilot)
 
 ### Install Cursor
@@ -13,7 +13,7 @@ You can add the Snyk MCP server to Cursor to secure code generated with agentic 
 * Click [this link](cursor://anysphere.cursor-deeplink/mcp/install?name=snyk\&config=eyJjb21tYW5kIjoibnB4IC15IHNueWtAbGF0ZXN0IG1jcCAtdCBzdGRpbyJ9) to directly add the server to Cursor.
 * Confirm installation in the Cursor settings by clicking on `Install`
 
-<figure><img src="../../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
 ### Install the Snyk MCP Server in Cursor
 
@@ -23,7 +23,7 @@ Install the Snyk MCP Server using the method that best suits your operating syst
 
 Navigate to the list of MCP servers on the Cursor website and search for Snyk. Then install by clicking the `Add Snyk to Cursor` button.
 
-<div data-full-width="false"><figure><img src="../../../../.gitbook/assets/image (43).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../../../.gitbook/assets/image (43).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 Confirm the installation by clicking `Install` in the Cursor settings.
 

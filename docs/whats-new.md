@@ -77,7 +77,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * The [`sbom monitor`](broken-reference) command help was added.
 * The `--platform` option was added to the [`container sbom`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/container-sbom.md) command.
-* The MCP information was expanded to [Developer guardrails for agentic workflows](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/).
+* The MCP information was expanded to [Developer guardrails for agentic workflows](integrations/agentic-integrations-snyk-mcp-server/).
 
 ### **IDE plugins and extensions**
 
@@ -124,7 +124,7 @@ Additional updates have been made to the [Universal Broker](snyk-api/reference/u
 
 ### **Snyk CLI**
 
-Information has been added about Snyk support for the Model Context Protocol (MCP) through the [`snyk mcp` experimental CLI command](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access/).
+Information has been added about Snyk support for the Model Context Protocol (MCP) through the [`snyk mcp` experimental CLI command](integrations/agentic-integrations-snyk-mcp-server/snyk-mcp-early-access.md).
 
 ### **Snyk Code**
 
