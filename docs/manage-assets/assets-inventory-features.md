@@ -75,6 +75,8 @@ You can filter the information for all the inventory layouts and can use the fol
   * **Public**: Repositories that are publicly accessible.
   * **Private**: Restricted repositories.
   * **Internal**: Internal repositories specific to GitHub and GitLab.
+* **SCM Project** -  Specify the Project in the Azure DevOps or Bitbucket SCM integrations, where this asset is located.
+* **SCM Organization** - Specify the SCM Organization or Workspace where this asset is located.&#x20;
 * **SCM Repository freshness** - the status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
