@@ -34,7 +34,7 @@ Only Tenant Admins can change the roles of Tenant users.
 
 You can promote a Tenant Member to a Tenant Viewer or Admin by selecting the role dropdown next to the user's name and choosing the appropriate option.
 
-## Delete Tenant Mmmbers
+## Delete Tenant Members
 
 {% hint style="info" %}
 Only Tenant Admins can delete Tenant users.
