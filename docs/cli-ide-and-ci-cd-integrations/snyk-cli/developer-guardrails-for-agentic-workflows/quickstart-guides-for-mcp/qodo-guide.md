@@ -5,7 +5,7 @@ You can add the Snyk MCP server to Qodo to secure code generated with agentic wo
 ## Prerequisites
 
 * [Install the code assistant extension](qodo-guide.md#install-qodo)
-* [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../install-or-update-the-snyk-cli/)
 * [Install the Snyk MCP](qodo-guide.md#install-the-snyk-mcp-server-in-qodo)
 
 ### Install Qodo
@@ -20,7 +20,7 @@ In the Qodo chatbox, click the **Add MCP** **tools** > **Add new MCP**. Provide 
 
 * The MCP Server name
 * The path to the Snyk CLI
-* The Snyk MCP command to [start the MCP server](../snyk-mcp-installation-configuration-and-startup.md#starting-the-snyk-mcp-server).&#x20;
+* The Snyk MCP command to [start the MCP server](../snyk-mcp-early-access/snyk-mcp-installation-configuration-and-startup.md#starting-the-snyk-mcp-server).&#x20;
 * You can see a list of all MCP Servers and their tool. Locate Snyk from the list and enable all of its tools.
 
 #### Install with Node.js and `npx`
@@ -61,11 +61,11 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../install-or-update-the-snyk-cli/) page.&#x20;
 
 The following example shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 For additional MCP configuration options on VS Code and troubleshooting, consult the official [VS Code MCP server documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
@@ -75,11 +75,11 @@ As a one-time setup, you may need to authenticate and trust the current Project 
 
 These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
 
-<figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
 If you need to authenticate and trust the current directory, then proceed and complete the process.
 
-<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
 ## Examples
 
