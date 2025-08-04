@@ -11,7 +11,7 @@ Snyk provides information about:
 * [Snyk MCP installation, configuration, and startup](../cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access/snyk-mcp-installation-configuration-and-startup.md)
 * [Quickstart guides for several AI assistants](../cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/)
 * [Troubleshooting for the Snyk MCP Server](../snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental/troubleshooting-for-the-snyk-mcp-server.md)
-* [Usage analytics](../integrations/agentic-integrations-snyk-mcp-server/usage-analytics.md)
+* [Usage analytics](../integrations/agentic-integrations-snyk-mcp-server/snyk-mcp-early-access.md)
 
 ## Integrations for Snyk
 

@@ -4,7 +4,7 @@
 
 ## Discover Snyk
 
-* [What is Snyk?](what-is-snyk.md)
+* [What's Snyk?](discover-snyk/whats-snyk.md)
 * [What's new?](whats-new.md)
 * [Getting started](getting-started/README.md)
   * [Explore the Snyk Web UI](getting-started/snyk-web-ui.md)
@@ -299,7 +299,7 @@
     * [Qodo guide](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/qodo-guide.md)
     * [Windsurf guide](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/windsurf-guide.md)
   * [Troubleshooting for the Snyk MCP server](snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental/troubleshooting-for-the-snyk-mcp-server.md)
-  * [Usage analytics](integrations/agentic-integrations-snyk-mcp-server/usage-analytics.md)
+  * [Usage analytics](integrations/agentic-integrations-snyk-mcp-server/snyk-mcp-early-access.md)
 * [Third-party integrations for Snyk AppRisk](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md)
 * [Snyk runtime sensor](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
 * [Jira and Slack integrations](integrate-with-snyk/jira-and-slack-integrations/README.md)
@@ -594,7 +594,6 @@
 ## Scan with Snyk
 
 * [Overview](scan-with-snyk/README.md)
-* [Scanning process](scan-with-snyk/scanning-overview.md)
 * [Start scanning](scan-with-snyk/start-scanning.md)
 * [Import Project repository](scan-with-snyk/import-project-repository/README.md)
   * [Exclude directories and files from Project import](scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md)
