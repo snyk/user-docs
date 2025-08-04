@@ -444,7 +444,6 @@
     * [Monitor](cli-ide-and-ci-cd-integrations/snyk-cli/commands/monitor.md)
     * [Policy](cli-ide-and-ci-cd-integrations/snyk-cli/commands/policy.md)
     * [SBOM](cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom.md)
-    * [SBOM monitor](cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom-monitor.md)
     * [SBOM test](cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom-test.md)
     * [Test](cli-ide-and-ci-cd-integrations/snyk-cli/commands/test.md)
   * [Releases and channels for the Snyk CLI](snyk-cli/releases-and-channels-for-the-snyk-cli.md)

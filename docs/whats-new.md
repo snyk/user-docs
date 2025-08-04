@@ -75,7 +75,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk CLI**
 
-* The [`sbom monitor`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom-monitor.md) command help was added.
+* The [`sbom monitor`](broken-reference) command help was added.
 * The `--platform` option was added to the [`container sbom`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/container-sbom.md) command.
 * The MCP information was expanded to [Developer guardrails for agentic workflows](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/).
 
@@ -101,7 +101,7 @@ The [Bitbucket Cloud App](scm-integrations/organization-level-integrations/bitbu
 
 * For [SCM integrations with Python](supported-languages-package-managers-and-frameworks/python/scm-integrations-and-python.md), the list of dependencies that are not supported has been updated to include `pip` for Python 2.7 and 3.7.
 * [Python dependency filtering results](supported-languages-package-managers-and-frameworks/python/scm-integrations-and-python.md) have been updated to clarify the conditions in which certain packages and configurations are skipped by SCM scans.
-* The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages-package-managers-and-frameworks/c-c++/), [SBOM monitor](cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom-monitor.md), [SBOM test](cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom-test.md), [Test an SBOM document for vulnerabilities](snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
+* The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages-package-managers-and-frameworks/c-c++/), [SBOM monitor](broken-reference), [SBOM test](cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom-test.md), [Test an SBOM document for vulnerabilities](snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
 * [Instructions for upgrading an Organization integration from Classic Broker to Universal Broker](enterprise-setup/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md) were clarified.
 
 ## April 2025

@@ -96,7 +96,7 @@ Display the `.snyk` policy for a package.
 
 Generate an SBOM for a local software project in an ecosystem supported by Snyk.
 
-### &#x20;[`snyk sbom monitor`](commands/sbom-monitor.md)&#x20;
+### &#x20;[`snyk sbom monitor`](broken-reference)&#x20;
 
 Create a target and projects in your Snyk account to be continuously monitored for open-source vulnerabilities and license issues, sending the results to [snyk.io](https://snyk.io).
 
@@ -151,7 +151,7 @@ Additional CLI commands have exit codes as listed in the following help docs:
 * [`snyk iac update-exclude-policy` exit codes](commands/iac-update-exclude-policy.md#exit-codes)
 * [`snyk log4shell` exit codes](commands/log4shell.md#exit-codes)
 * [`snyk sbom` exit codes](commands/sbom.md#exit-codes)
-* [`snyk sbom monitor` exit codes](commands/sbom-monitor.md#exit-codes)
+* [`snyk sbom monitor` exit codes](broken-reference)
 * &#x20;[`snyk sbom test` exit codes](commands/sbom-test.md#exit-codes)
 * [`snyk container sbom` exit codes](commands/container-sbom.md#exit-codes)
 
