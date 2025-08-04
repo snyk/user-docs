@@ -25,8 +25,8 @@ Check out the latest [updates in the Snyk user documentation](whats-new.md).
 
 ## Find and fix vulnerabilities <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
-| <p><a href="scan-with-snyk/"><strong>Scan with Snyk</strong></a><br>Secure your codebase using Snyk's SAST, SCA, IaC, and DAST capabilities</p> | <p><a href="cli-ide-and-ci-cd-integrations/snyk-cli/"><strong>Snyk CLI</strong></a><br>Scan with Snyk locally on your command line</p> |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><a href="scan-with-snyk/overview.md"><strong>Scan with Snyk</strong></a><br>Secure your codebase using Snyk's SAST, SCA, IaC, and DAST capabilities</p> | <p><a href="cli-ide-and-ci-cd-integrations/snyk-cli/"><strong>Snyk CLI</strong></a><br>Scan with Snyk locally on your command line</p> |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 
 ## Manage your risk
 

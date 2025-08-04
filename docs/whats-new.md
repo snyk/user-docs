@@ -144,7 +144,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Other updates**
 
-* DAST scanning is now available with [Snyk API & Web](scan-with-snyk/#select-scanning-methods), enabling users to discover and test the security of their APIs and web apps, including AI-generated ones..
+* DAST scanning is now available with [Snyk API & Web](scan-with-snyk/overview.md#select-scanning-methods), enabling users to discover and test the security of their APIs and web apps, including AI-generated ones..
 * PR Checks is now available with a General Availability release status.
 
 ## March 2025

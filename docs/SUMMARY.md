@@ -593,7 +593,7 @@
 
 ## Scan with Snyk
 
-* [Overview](scan-with-snyk/README.md)
+* [Overview](scan-with-snyk/overview.md)
 * [Start scanning](scan-with-snyk/start-scanning.md)
 * [Import Project repository](scan-with-snyk/import-project-repository/README.md)
   * [Exclude directories and files from Project import](scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md)
