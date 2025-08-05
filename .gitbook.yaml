@@ -188,5 +188,6 @@ redirects:
   supported-languages-package-managers-and-frameworks/swift-and-objective-c: /supported-languages/supported-languages-list/swift-and-objective-c.md
   supported-languages-package-managers-and-frameworks/typescript: /supported-languages/supported-languages-list/typescript.md
   supported-languages-package-managers-and-frameworks/vb.net: /supported-languages/supported-languages-list/vb.net.md
-  cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access: /integrations/agentic-integrations-snyk-mcp-server.md
+  cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access: integrations/agentic-integrations-snyk-mcp-server/README.md
   docs.snyk.io/scan-with-snyk/scanning-overview: /scan-with-snyk/overview.md
+  integrations/agentic-integrations-snyk-mcp-server/snyk-mcp-early-access: integrations/agentic-integrations-snyk-mcp-server/README.md
