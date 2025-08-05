@@ -44,6 +44,7 @@ Each rule includes the following information.
 | Arbitrary File Write via Archive Extraction (Tar Slip)                     | CWE-22           | Sans Top 25, OWASP:A01 | No          |
 | Origin Validation Error                                                    | CWE-942, CWE-346 | OWASP:A05, OWASP:A07   | No          |
 | Cryptographic Issues                                                       | CWE-310          | OWASP:A02              | No          |
+| Use of Insufficiently Random Values                                        | CWE-330          | OWASP:A02              | No          |
 | Python 2 source code                                                       | CWE-1104         | OWASP:A06              | No          |
 | Selection of Less-Secure Algorithm During Negotiation (SSL instead of TLS) | CWE-757          | OWASP:A02              | No          |
 | Sensitive Cookie Without 'HttpOnly' Flag                                   | CWE-1004         | OWASP:A05              | Yes         |

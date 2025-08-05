@@ -30,6 +30,7 @@ Available functions:
 * labstack/echo - Partial&#x20;
 * sashabaranov/go-openai - Comprehensive&#x20;
 * spf13/pflag - Comprehensive
+* sqlx - Comprehensive
 
 ### Supported package managers
 

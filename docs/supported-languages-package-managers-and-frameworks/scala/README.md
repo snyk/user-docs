@@ -35,6 +35,7 @@ The following frameworks and libraries are supported in Snyk for Scala:&#x20;
 * io.cequence.openaiscala - Comprehensive&#x20;
 * Play Framework - Comprehensive&#x20;
 * Scala standard library - Comprehensive
+* Slick Framework - Comprehensive
 * All [Java frameworks and libraries](../java-and-kotlin/#frameworks-and-libraries)
 
 ## Features

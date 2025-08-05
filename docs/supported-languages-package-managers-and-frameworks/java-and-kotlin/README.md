@@ -73,6 +73,7 @@ The following frameworks and libraries are supported in Snyk for Java and Kotlin
 * Java Server Pages - Partial
 * Java Standard Edition - Comprehensive
 * javalin - Partial
+* Jax-RS - Comprehensive
 * jooq - Comprehensive
 * Kyro - Comprehensive
 * Micronaut - Comprehensive

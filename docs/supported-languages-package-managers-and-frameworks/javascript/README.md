@@ -62,6 +62,7 @@ The following frameworks and libraries are supported in Snyk for JavaScript:
 * ejs - Partial
 * execa - Comprehensive
 * express - Comprehensive
+* express-mongo-sanitize - Comprehensive
 * express-graphql - Partial
 * express-jwt - Partial
 * fastMCP - Comprehensive
