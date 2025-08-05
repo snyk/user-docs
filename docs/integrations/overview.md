@@ -11,7 +11,7 @@ Snyk provides information about:
 * [Snyk MCP installation, configuration, and startup](agentic-integrations-snyk-mcp-server/snyk-mcp-installation-configuration-and-startup.md)
 * [Quickstart guides for several AI assistants](agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/)
 * [Troubleshooting for the Snyk MCP Server](agentic-integrations-snyk-mcp-server/troubleshooting-for-the-snyk-mcp-server.md)
-* [Usage analytics](agentic-integrations-snyk-mcp-server/snyk-mcp-early-access.md)
+* [Usage analytics](agentic-integrations-snyk-mcp-server/usage-analytics.md)
 
 ## Integrations for Snyk
 

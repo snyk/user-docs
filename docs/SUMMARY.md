@@ -299,7 +299,7 @@
     * [Qodo guide](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/qodo-guide.md)
     * [Windsurf guide](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/windsurf-guide.md)
   * [Troubleshooting for the Snyk MCP server](integrations/agentic-integrations-snyk-mcp-server/troubleshooting-for-the-snyk-mcp-server.md)
-  * [Usage analytics](integrations/agentic-integrations-snyk-mcp-server/snyk-mcp-early-access.md)
+  * [Usage analytics](integrations/agentic-integrations-snyk-mcp-server/usage-analytics.md)
 * [Third-party integrations for Snyk AppRisk](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md)
 * [Snyk runtime sensor](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
 * [Jira and Slack integrations](integrate-with-snyk/jira-and-slack-integrations/README.md)
