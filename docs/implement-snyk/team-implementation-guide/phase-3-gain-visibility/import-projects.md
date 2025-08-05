@@ -7,7 +7,7 @@ Depending on the integrations you have configured, and the language / package ma
 
 The best import route varies based on the languages and package managers in your tech stack.&#x20;
 
-Here are some key points to determine the best starting point. For details, see [Git repositories and CI/CD comparisons](../../../cli-ide-and-ci-cd-integrations/git-repository-and-ci-cd-integrations-comparisons.md).
+Here are some key points to determine the best starting point. For details, see [Git repositories and CI/CD comparisons](broken-reference).
 
 ## Getting started with Snyk
 

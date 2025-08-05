@@ -589,7 +589,6 @@
     * [Set up the Terraform Cloud integration for IaC](cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/terraform-cloud-integration-for-snyk-iac-using-run-tasks/set-up-the-terraform-cloud-integration-for-iac.md)
     * [How to use the Terraform Cloud integration for IaC](cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/terraform-cloud-integration-for-snyk-iac-using-run-tasks/how-to-use-the-terraform-cloud-integration-for-iac.md)
   * [Terraform Enterprise integration for Snyk IaC](cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/terraform-enterprise-integration-for-snyk-iac.md)
-* [Git repositories and CI/CD comparisons](cli-ide-and-ci-cd-integrations/git-repository-and-ci-cd-integrations-comparisons.md)
 
 ## Scan with Snyk
 
