@@ -33,7 +33,7 @@ The Snyk MCP server supports integrating the following Snyk security tools into 
 * `snyk_sca_scan` (Open Source scan)
 * `snyk_code_scan` (Code scan)
 * `snyk_iac_scan` (IaC scan)
-* `snyk_container_scan` (IaC scan)
+* `snyk_container_scan` (Container scan)
 * `snyk_sbom_scan` (SBOM file scan)
 * `snyk_aibom` (Create AIBOM)
 * `snyk_trust` (Trust a given folder before running a scan)
