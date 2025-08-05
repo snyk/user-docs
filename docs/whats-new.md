@@ -17,12 +17,12 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk CLI**
 
 * MCP updates:
-  * [Updated the list of supported Snyk security tools into an AI system](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental).
-  * Updated release status from experimental to [Early access](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access) and removed the experimental flag.
-  * Added [Cursor](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide) as a new supported agentic IDE for MCP.
+  * [Updated the list of supported Snyk security tools into an AI system](integrations/agentic-integrations-snyk-mcp-server/#snyk-mcp-tools).
+  * Updated release status from experimental to [Early access](getting-started/snyk-release-process.md#early-access-features) and removed the experimental flag.
+  * Added [Cursor](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/cursor-guide.md) as a new supported agentic IDE for MCP.
 * PAT updates:
-  * Added PAT support for [Snyk CLI](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-cli/authenticate-to-use-the-cli).
-  * Added PAT support for Snyk CI/CD integrations ([CircleCI](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb), [Jenkins](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk), [Maven](https://docs.snyk.io/cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk)).
+  * Added PAT support for [Snyk CLI](snyk-cli/authenticate-to-use-the-cli.md).
+  * Added PAT support for Snyk CI/CD integrations ([CircleCI](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb.md), [Jenkins](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk.md), [Maven](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk.md)).
 
 ### **Snyk Code**
 
@@ -30,7 +30,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk Container**
 
-[Operating system distributions supported by Snyk Container](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container) has been updated to include: SUSE Linux Enterprise (SLE) 15.3+, Red Hat Enterprise Linux 10, and Oracle Linux 10.
+[Operating system distributions supported by Snyk Container](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) has been updated to include: SUSE Linux Enterprise (SLE) 15.3+, Red Hat Enterprise Linux 10, and Oracle Linux 10.
 
 ### **Snyk IDE**
 
@@ -60,7 +60,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * Updated the Snyk Broker documentation to include distinct steps for setting up the [Container Registry Agent with Docker](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent), whether using the Classic or Universal Broker.
 * Updated the [Using the API to set up Universal Broker](enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](working-with-snyk/regional-hosting-and-data-residency.md#broker-client-urls).
-* Snyk Learn courses have been integrated into the [Universal Broker ](enterprise-setup/snyk-broker/universal-broker/)pages.
+* Snyk Learn courses have been integrated into the [Universal Broker](enterprise-setup/snyk-broker/universal-broker/) pages.
 
 ### **Other updates**
 
@@ -75,7 +75,6 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk CLI**
 
-* The [`sbom monitor`](broken-reference) command help was added.
 * The `--platform` option was added to the [`container sbom`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/container-sbom.md) command.
 * The MCP information was expanded to [Developer guardrails for agentic workflows](integrations/agentic-integrations-snyk-mcp-server/).
 
@@ -101,7 +100,7 @@ The [Bitbucket Cloud App](developer-tools/scms/organization-level-integrations/b
 
 * For [SCM integrations with Python](supported-languages-package-managers-and-frameworks/python/scm-integrations-and-python.md), the list of dependencies that are not supported has been updated to include `pip` for Python 2.7 and 3.7.
 * [Python dependency filtering results](supported-languages-package-managers-and-frameworks/python/scm-integrations-and-python.md) have been updated to clarify the conditions in which certain packages and configurations are skipped by SCM scans.
-* The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages-package-managers-and-frameworks/c-c++/), [SBOM monitor](broken-reference), [SBOM test](cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom-test.md), [Test an SBOM document for vulnerabilities](snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
+* The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages-package-managers-and-frameworks/c-c++/), [SBOM test](cli-ide-and-ci-cd-integrations/snyk-cli/commands/sbom-test.md), [Test an SBOM document for vulnerabilities](snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
 * [Instructions for upgrading an Organization integration from Classic Broker to Universal Broker](enterprise-setup/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md) were clarified.
 
 ## April 2025
@@ -133,7 +132,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk Container**
 
-* [Using Custom Base Image Recommendation ](scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/)has been updated with clarifications on how Snyk recommends images.
+* [Using Custom Base Image Recommendation](scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/) has been updated with clarifications on how Snyk recommends images.
 * The list of [Operating system distributions supported by Snyk Container](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) has been updated to include Alpine Linux 3.21, Ubuntu 25.04 - Plucky Puffin, and Ubuntu 24.10 - Oracular Oriole.
 * The section describing the automated integration process for Amazon Elastic Container Registry (ECR) has been removed, as Snyk no longer supports this method.
 

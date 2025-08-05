@@ -4,9 +4,9 @@ You can add the Snyk MCP server to Amazon Q to secure code generated with agenti
 
 ## Prerequisites
 
-* [Install the code assistant extension](amazon-q-guide.md#install-github-copilot)
+* [Install the code assistant extension](amazon-q-guide.md#install-amazon-q)
 * [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](amazon-q-guide.md#install-the-snyk-mcp-server-in-github-copilot)
+* [Install the Snyk MCP](amazon-q-guide.md#install-the-snyk-mcp-server-in-amazon-q)
 
 ### Install Amazon Q
 

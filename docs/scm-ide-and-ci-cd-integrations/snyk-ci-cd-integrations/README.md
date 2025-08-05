@@ -12,7 +12,7 @@ For more information, see the  [Snyk CLI repository](https://github.com/snyk/cli
 
 ## Adopting a CI/CD integration
 
-When you [decide to use a CI/CD integration,](broken-reference) you typically adopt the integration in stages, initially selecting a deployment method and the implementing strategies for the code you are scanning. For details, see [Snyk CI/CD Integration deployment and strategies](../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/).
+When you decide to use a CI/CD integration, you typically adopt the integration in stages, initially selecting a deployment method and the implementing strategies for the code you are scanning. For details, see [Snyk CI/CD Integration deployment and strategies](../../cli-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/).
 
 For detailed information, see the pages for the integration you are using:
 

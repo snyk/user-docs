@@ -12,7 +12,7 @@ Follow the steps in each section of this document to use the Snyk Jenkins plugin
 
 1. [Install the Snyk Security Jenkins Plugin](jenkins-plugin-integration-with-snyk.md#install-the-snyk-security-jenkins-plugin)
 2. [Configure a Snyk installation](jenkins-plugin-integration-with-snyk.md#configure-a-snyk-installation)
-3. [Configure a Snyk API token credential](jenkins-plugin-integration-with-snyk.md#configure-a-snyk-api-token-credential)
+3. [Configure a Snyk API token credential](jenkins-plugin-integration-with-snyk.md#configure-a-snyk-pat-or-api-token-credential)
 4. [Add Snyk Security to your Project](jenkins-plugin-integration-with-snyk.md#add-snyk-security-to-your-project)
 5. [View your Snyk Security Report](jenkins-plugin-integration-with-snyk.md#view-your-snyk-security-report)
 
@@ -51,7 +51,7 @@ The plugin can download the latest version of Snyk binaries and keep them up-to-
 
 If you are in a region other than `SNYK-US-01`, which uses the `https://api.snyk.io` endpoint, configure Snyk to use a different endpoint by changing the `SNYK_API` environment variable:
 
-* Go to **Manage Jenkins** `>` **System**.
+* Go to **Manage Jenkins** > **System**.
 * Under **Global Properties**, check the **Environment** variables option.
 * Click **Add**.
 * Set the name to `SNYK_API` and the value to the custom endpoint.
@@ -60,7 +60,7 @@ For more information, see [Configure Snyk CLI to connect to Snyk API](../../cli-
 
 ## Configure a Snyk PAT or API token credential
 
-* Get your [Snyk API Token](../../snyk-api/authentication-for-api/) or [Snyk PAT](https://docs.snyk.io/snyk-api/authentication-for-api).
+* Get your [Snyk API Token or Snyk PAT](../../snyk-api/authentication-for-api/).
 * Navigate to **Manage Jenkins** > **Credentials**.
 * Choose a **Store**.
 * Choose a **Domain**.
@@ -125,7 +125,7 @@ Snyk Installation Name, as configured in [Configure a Snyk installation](jenkins
 
 **`snykTokenId`** (optional, default: `_none_`)
 
-Snyk API Token Credential ID, as configured in [Configure a Snyk API token credential](jenkins-plugin-integration-with-snyk.md#configure-a-snyk-api-token-credential).
+Snyk API Token Credential ID, as configured in [Configure a Snyk API token credential](jenkins-plugin-integration-with-snyk.md#configure-a-snyk-pat-or-api-token-credential).
 
 If you prefer to provide the Snyk API token another way, such as using alternative credential bindings, you must provide a `SNYK_TOKEN` build environment variable.
 

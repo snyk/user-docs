@@ -4,9 +4,9 @@ You can add the Snyk MCP server to Windsurf to secure code generated with agenti
 
 ## Prerequisites
 
-* [Install the code assistant extension](windsurf-guide.md#install-github-copilot)
+* [Install the code assistant extension](windsurf-guide.md#install-windsurf)
 * [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](windsurf-guide.md#install-the-snyk-mcp-server-in-github-copilot)
+* [Install the Snyk MCP](windsurf-guide.md#install-the-snyk-mcp-server-in-windsurf)
 
 ### Install Windsurf
 

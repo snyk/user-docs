@@ -119,7 +119,7 @@ For Brokered integrations, the Data Flow section in the inline comments is avail
 {% hint style="info" %}
 **Release status**
 
-Snyk Agent fix in the PR is in [Early Access](https://docs.snyk.io/getting-started/snyk-release-process#early-access) and available only for GitHub and Bitbucket Integrations.\
+Snyk Agent fix in the PR is in [Early Access](../../../getting-started/snyk-release-process.md#early-access-features) and available only for GitHub and Bitbucket Integrations.\
 Snyk Agent fix in the PR will work only on inline comments created after the feature is enabled.
 {% endhint %}
 

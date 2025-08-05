@@ -6,7 +6,7 @@ You can add the Snyk MCP server to Cline to secure code generated with agentic w
 
 * [Install Cline](cline-guide.md#install-cline)
 * [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](cline-guide.md#install-the-snyk-mcp-server-in-github-copilot)
+* [Install the Snyk MCP](cline-guide.md#install-the-snyk-mcp-server-in-cline-using-npx)
 
 ### Install Cline
 

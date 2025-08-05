@@ -2,8 +2,8 @@
 
 Issue cards appear on the details page for a Project. You can use available options to do the following:
 
-* [View dependency card information](issue-card-information.md#view-dependenc-card-information).
-* [Expand an issue card to show more details](issue-card-information.md#expand-an-issue-card-to-show-more-details).
+* [View dependency card information](issue-card-information.md#view-dependency-card-information).
+* [Expand an issue card to show more details](issue-card-information.md#expanded-vulnerability-section).
 * [Filter and sort issue cards](issue-card-information.md#filter-and-sort-issue-cards).
 * [Perform additional card actions](issue-card-information.md#perform-additional-card-actions).
 
@@ -13,7 +13,7 @@ Dependency cards show details for a specific dependency, its associated vulnerab
 
 <figure><img src="../../.gitbook/assets/PR-checks-fix-dependencies-issue.png" alt=""><figcaption><p>Issue card for the npmconf vulnerability</p></figcaption></figure>
 
-The dependency card provides a [Header section](issue-card-information.md#header-section) and [Body section](issue-card-information.md#body-section) with information as explained in the next sections of this documentation.
+The dependency card provides a [Header section](issue-card-information.md#header-section) and [Body section](issue-card-information.md#expanded-vulnerability-section) with information as explained in the next sections of this documentation.
 
 ### Header section
 

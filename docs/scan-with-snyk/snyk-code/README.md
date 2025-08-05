@@ -43,7 +43,7 @@ Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the
   * [JetBrains plugin](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/)
   * [Visual Studio Code extension](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/)
   * [Visual Studio extension](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/)
-* Git repository: With repository monitoring integration, you can actively manage your Code Projects using the existing native import flow and tools. You can view and prioritize security issues discovered in your source code. Additionally, you can initiate a retest of any Project and examine the historical snapshots to track changes over time. See [Supported Git repositories](broken-reference).
+* Git repository: With repository monitoring integration, you can actively manage your Code Projects using the existing native import flow and tools. You can view and prioritize security issues discovered in your source code. Additionally, you can initiate a retest of any Project and examine the historical snapshots to track changes over time.&#x20;
 
 {% hint style="info" %}
 Snyk Code analysis can be applied to every pull request you create in your Git repository before you merge it into the target branch. See [PR Checks](../pull-requests/pull-request-checks/).

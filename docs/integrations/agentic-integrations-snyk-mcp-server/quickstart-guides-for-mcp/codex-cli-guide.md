@@ -4,9 +4,9 @@ You can add the Snyk MCP server to Codex CLI to secure code generated with agent
 
 ## Prerequisites
 
-* [Install the Codex CLI](codex-cli-guide.md#install-code-cli)
+* [Install the Codex CLI](codex-cli-guide.md#install-codex-cli)
 * [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](codex-cli-guide.md#install-the-snyk-mcp-server-in-github-copilot)
+* [Install the Snyk MCP](codex-cli-guide.md#install-the-snyk-mcp-server-in-codex-cli-using-npx)
 
 ### Install Codex CLI
 

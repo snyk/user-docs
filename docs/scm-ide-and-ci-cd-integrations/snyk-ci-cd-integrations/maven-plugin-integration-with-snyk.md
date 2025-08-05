@@ -2,11 +2,11 @@
 
 Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin) based on the [Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/). This plugin allows you to scan and monitor your Maven dependencies for vulnerabilities.
 
-See all releases in the [Maven Central Repository](https://search.maven.org/artifact/io.snyk/snyk-maven-plugin),
+See all releases in the [Maven Central Repository](https://search.maven.org/artifact/io.snyk/snyk-maven-plugin).
 
 ## Installation of Maven plugin
 
-1. Get your [Snyk API token](../../snyk-api/authentication-for-api/) or [Snyk PAT](https://docs.snyk.io/snyk-api/authentication-for-api).
+1. Get your [Snyk API token or Snyk PAT](../../snyk-api/authentication-for-api/).
 2. Add the Snyk Maven Plugin to your `pom.xml` and configure it as needed.
 
 ```xml

@@ -6,7 +6,7 @@ You can add the Snyk MCP server to Gemini CLI to secure code generated with agen
 
 * [Install the Gemini CLI](gemini-cli-guide.md#install-gemini-cli)
 * [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](gemini-cli-guide.md#install-the-snyk-mcp-server-in-github-copilot)
+* [Install the Snyk MCP](gemini-cli-guide.md#install-the-snyk-mcp-server-in-gemini-cli-using-npx-and-settings.json)
 
 ### Install Gemini CLI
 

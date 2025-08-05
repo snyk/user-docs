@@ -4,9 +4,9 @@ You can add the Snyk MCP server to Cursor to secure code generated with agentic 
 
 ## Prerequisites
 
-* [Install the code assistant extension](cursor-guide.md#install-github-copilot)
+* [Install the code assistant extension](cursor-guide.md#install-cursor)
 * [Install the Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](cursor-guide.md#install-the-snyk-mcp-server-in-github-copilot)
+* [Install the Snyk MCP](cursor-guide.md#install-the-snyk-mcp-server-in-cursor)
 
 ### Install Cursor
 
