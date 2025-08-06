@@ -24,15 +24,15 @@ Start building your asset inventory by setting up the necessary integrations.
 The scanned information is automatically imported within two hours after enabling all features.  Note that for large onboardings, it is suggested to wait up to 24hours for all information to be processed.
 {% endhint %}
 
-Access and configure the integrations from the **Integrations** view. Select the **Integration Hub** option to see the list of all available integrations. See the [Using the Integration Hub](../../../developer-tools/scms/group-level-integrations/#using-the-integration-hub) section for more details.
+Access and configure the integrations from the **Integrations** view. Select the **Integration Hub** option to see the list of all available integrations. See the [Using the Integration Hub](../../../scm-integrations/group-level-integrations/#using-the-integration-hub) section for more details.
 
 The default display in the **Integrations** view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../developer-tools/scms/organization-level-integrations/#adding-an-integration).
+You can [customize an existing integration](../../../getting-started/snyk-web-ui.md#edit-an-integration) or [connect a new SCM integration](../../../scm-integrations/organization-level-integrations/#adding-an-integration).
 
 ### SCM integrations
 
-Navigate to the [Group-level integrations](../../../developer-tools/scms/group-level-integrations/) page for more details about the supported SCM integrations.
+Navigate to the [Group-level integrations](../../../scm-integrations/group-level-integrations/) page for more details about the supported SCM integrations.
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
@@ -48,15 +48,15 @@ For Group-level integrations in Snyk AppRisk, a token provides an overview of cu
 
 ### Application context for SCM Integrations
 
-See the [Application context for SCM Integrations](../../../developer-tools/scms/application-context-for-scm-integrations/) docs for more details about how to use this feature.
+See the [Application context for SCM Integrations](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) docs for more details about how to use this feature.
 
 ## Features
 
 The Snyk AppRisk functionality is split across several menu options from the Group level.&#x20;
 
-* [Inventory](../../../manage-assets/overview.md)
+* [Inventory](../../../manage-assets/)
 * [Policies](../../../manage-risk/policies/assets-policies/)
-* [Integrations for SCM](../../../developer-tools/scms/group-level-integrations/) and for [third-party](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md)
+* [Integrations for SCM](../../../scm-integrations/group-level-integrations/) and for [third-party](../../../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md)
 * [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
 * [Analytics](../../../manage-risk/analytics/application-analytics.md)
 

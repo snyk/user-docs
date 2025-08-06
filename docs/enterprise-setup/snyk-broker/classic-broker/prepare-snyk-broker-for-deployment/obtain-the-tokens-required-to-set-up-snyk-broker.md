@@ -9,7 +9,7 @@ By obtaining the tokens required to set up Snyk Broker, you generate the credent
 To set up Snyk Broker, you must have the following tokens:
 
 * **Broker token** - This token is **required for the Broker client setup**. It is used in the `-e BROKER_TOKEN` parameter. The Broker token is associated with a specific Organization by default and with a specific integrated SCM and enables Snyk Broker deployment for this Organization and SCM. A different Broker token is required for each SCM. Details are on this page.
-* **Integrated SCM token** - This token is required for the Broker Client setup. It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM with certain permissions needed for the operation of the Broker and Snyk Code. For details, see [Integrated SCM tokens for Snyk Broker](../../../../developer-tools/scms/scm-integrations-and-snyk-broker.md#integrated-scm-tokens-for-classic-broker).
+* **Integrated SCM token** - This token is required for the Broker Client setup. It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM with certain permissions needed for the operation of the Broker and Snyk Code. For details, see [Integrated SCM tokens for Snyk Broker](../../../../scm-integrations/scm-integrations-and-snyk-broker.md#integrated-scm-tokens-for-classic-broker).
 
 After you have obtained the required tokens, save them in a safe and accessible place for use in setting up the Broker Client.
 

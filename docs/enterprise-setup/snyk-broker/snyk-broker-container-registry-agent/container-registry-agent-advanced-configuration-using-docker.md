@@ -27,3 +27,47 @@ By default, the Container Registry Agent establishes HTTPS connections to the Co
 </strong>       -e NODE_EXTRA_CA_CERTS=/private/ca.cert.pem \
        snyk/container-registry-agent:latest
 </code></pre>
+
+## **Disable repository listing**
+
+Some container registries do not support the catalog endpoint (`GET /v2/_catalog`) that lists repositories, or your organization may have permission restrictions on this endpoint. You can disable listing repos by setting the `SNYK_DISABLE_LIST_REPOS` environment variable.
+
+When enabled, instead of calling the registry's catalog endpoint, an empty list is returned. This is useful for:
+
+* Container registries that do not support the catalog endpoint (for example, GitHub Container Registry, GitLab Container Registry)
+* Organizations with permission restrictions on the catalog endpoint
+* Reducing unnecessary API calls to the container registry.
+
+### Docker deployment
+
+Add the environment variable to your Docker run command:
+
+<pre class="language-markup"><code class="lang-markup">docker run --restart=always \
+       -p 8081:8081 \
+       -e SNYK_PORT=8081 \
+<strong>       -e SNYK_DISABLE_LIST_REPOS=true \
+</strong>       snyk/container-registry-agent:latest
+</code></pre>
+
+### Helm deployment
+
+Add the following to your Helm values file:
+
+```yaml
+env:
+  - name: SNYK_DISABLE_LIST_REPOS
+    value: "true"
+```
+
+### Kubernetes deployment
+
+Add the environment variable to your deployment specification:
+
+```yaml
+spec:
+  containers:
+    - name: container-registry-agent
+      env:
+        - name: SNYK_DISABLE_LIST_REPOS
+          value: "true"
+```

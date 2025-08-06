@@ -41,7 +41,7 @@
 
 ## Implementation and setup
 
-* [Overview](implementation-and-setup/overview.md)
+* [Overview](implement-snyk/README.md)
 * [Team implementation guide](implement-snyk/team-implementation-guide/README.md)
   * [Prerequisites: project plan templates](implement-snyk/team-implementation-guide/prerequisites-project-plan-templates.md)
   * [Phase 1: Discovery and planning](implement-snyk/team-implementation-guide/phase-1-discovery-and-planning/README.md)
@@ -285,20 +285,20 @@
 
 ## Integrations
 
-* [Overview](integrations/overview.md)
-* [Agentic integrations - Snyk MCP Server](integrations/agentic-integrations-snyk-mcp-server/README.md)
-  * [Snyk MCP installation, configuration, and startup](integrations/agentic-integrations-snyk-mcp-server/snyk-mcp-installation-configuration-and-startup.md)
-  * [Quickstart guides for MCP](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/README.md)
+* [Overview](integrate-with-snyk/README.md)
+* [Agentic integrations - Snyk MCP Server](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/README.md)
+  * [Snyk MCP installation, configuration, and startup](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access/snyk-mcp-installation-configuration-and-startup.md)
+  * [Quickstart guides for MCP](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/README.md)
     * [Amazon Q guide](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/amazon-q-guide.md)
     * [Cline guide](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/cline-guide.md)
     * [Codex CLI guide](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/codex-cli-guide.md)
-    * [Cursor guide](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/cursor-guide.md)
+    * [Cursor guide](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide.md)
     * [Gemini Code Assist guide](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/gemini-code-assist-guide.md)
     * [Gemini CLI guide](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/gemini-cli-guide.md)
     * [GitHub Copilot guide](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/github-copilot-guide.md)
-    * [Qodo guide](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/qodo-guide.md)
-    * [Windsurf guide](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/windsurf-guide.md)
-  * [Troubleshooting for the Snyk MCP server](integrations/agentic-integrations-snyk-mcp-server/troubleshooting-for-the-snyk-mcp-server.md)
+    * [Qodo guide](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/qodo-guide.md)
+    * [Windsurf guide](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/windsurf-guide.md)
+  * [Troubleshooting for the Snyk MCP server](snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-experimental/troubleshooting-for-the-snyk-mcp-server.md)
   * [Usage analytics](integrations/agentic-integrations-snyk-mcp-server/usage-analytics.md)
 * [Third-party integrations for Snyk AppRisk](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md)
 * [Snyk runtime sensor](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
@@ -316,29 +316,29 @@
 
 ## Developer tools
 
-* [SCMs](developer-tools/scms/README.md)
-  * [Deployment recommendations](developer-tools/scms/deployment-recommendations.md)
-  * [Workspaces](developer-tools/scms/workspaces.md)
-  * [User permissions and access scopes](developer-tools/scms/user-permissions-and-access-scopes.md)
-  * [Group-level integrations](developer-tools/scms/group-level-integrations/README.md)
-    * [GitHub for Snyk Essentials](developer-tools/scms/group-level-integrations/github-for-snyk-essentials.md)
-    * [GitLab for Snyk Essentials](developer-tools/scms/group-level-integrations/gitlab-for-snyk-essentials.md)
-    * [Bitbucket for Snyk Essentials](developer-tools/scms/group-level-integrations/bitbucket-for-snyk-essentials.md)
-    * [Azure DevOps for Snyk Essentials](developer-tools/scms/group-level-integrations/azure-devops-for-snyk-essentials.md)
-  * [Organization-level integrations](developer-tools/scms/organization-level-integrations/README.md)
-    * [GitHub](developer-tools/scms/organization-level-integrations/github.md)
-    * [GitHub Enterprise](developer-tools/scms/organization-level-integrations/github-enterprise.md)
-    * [GitHub Cloud App](developer-tools/scms/organization-level-integrations/github-cloud-app.md)
-    * [GitHub Server App](developer-tools/scms/organization-level-integrations/github-server-app.md)
-    * [GitHub Read-only Projects](developer-tools/scms/organization-level-integrations/github-read-only-projects.md)
-    * [GitLab](developer-tools/scms/organization-level-integrations/gitlab.md)
-    * [Bitbucket Cloud](developer-tools/scms/organization-level-integrations/bitbucket-cloud.md)
-    * [Bitbucket Cloud App](developer-tools/scms/organization-level-integrations/bitbucket-cloud-app.md)
-    * [Bitbucket Data Center/Server](developer-tools/scms/organization-level-integrations/bitbucket-data-center-server.md)
-    * [Azure Repositories (TFS)](developer-tools/scms/organization-level-integrations/azure-repositories-tfs.md)
-  * [Application context for SCM integrations](developer-tools/scms/application-context-for-scm-integrations/README.md)
-    * [Backstage file in Asset Inventory - use case](developer-tools/scms/application-context-for-scm-integrations/backstage-file-in-asset-inventory-use-case.md)
-  * [SCM integrations and Snyk Broker](developer-tools/scms/scm-integrations-and-snyk-broker.md)
+* [SCMs](scm-integrations/README.md)
+  * [Deployment recommendations](scm-integrations/deployment-recommendations.md)
+  * [Workspaces](scm-integrations/workspaces.md)
+  * [User permissions and access scopes](scm-integrations/user-permissions-and-access-scopes.md)
+  * [Group-level integrations](scm-integrations/group-level-integrations/README.md)
+    * [GitHub for Snyk Essentials](scm-integrations/group-level-integrations/github-for-snyk-essentials.md)
+    * [GitLab for Snyk Essentials](scm-integrations/group-level-integrations/gitlab-for-snyk-essentials.md)
+    * [Bitbucket for Snyk Essentials](scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials.md)
+    * [Azure DevOps for Snyk Essentials](scm-integrations/group-level-integrations/azure-devops-for-snyk-essentials.md)
+  * [Organization-level integrations](scm-integrations/organization-level-integrations/README.md)
+    * [GitHub](scm-integrations/organization-level-integrations/github.md)
+    * [GitHub Enterprise](scm-integrations/organization-level-integrations/github-enterprise.md)
+    * [GitHub Cloud App](scm-integrations/organization-level-integrations/github-cloud-app.md)
+    * [GitHub Server App](scm-integrations/organization-level-integrations/github-server-app.md)
+    * [GitHub Read-only Projects](scm-integrations/organization-level-integrations/github-read-only-projects.md)
+    * [GitLab](scm-integrations/organization-level-integrations/gitlab.md)
+    * [Bitbucket Cloud](scm-integrations/organization-level-integrations/bitbucket-cloud.md)
+    * [Bitbucket Cloud App](scm-integrations/organization-level-integrations/bitbucket-cloud-app.md)
+    * [Bitbucket Data Center/Server](scm-integrations/organization-level-integrations/bitbucket-data-center-server.md)
+    * [Azure Repositories (TFS)](scm-integrations/organization-level-integrations/azure-repositories-tfs.md)
+  * [Application context for SCM integrations](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/README.md)
+    * [Backstage file in Asset Inventory - use case](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/backstage-file-in-asset-inventory-use-case.md)
+  * [SCM integrations and Snyk Broker](scm-integrations/scm-integrations-and-snyk-broker.md)
 * [Snyk CLI](cli-ide-and-ci-cd-integrations/snyk-cli/README.md)
   * [Getting started with the Snyk CLI](cli-ide-and-ci-cd-integrations/snyk-cli/getting-started-with-the-snyk-cli.md)
   * [Security concept of operations for Snyk](cli-ide-and-ci-cd-integrations/snyk-cli/security-concept-of-operations-for-snyk/README.md)
@@ -842,14 +842,14 @@
 
 ## Manage assets
 
-* [Overview](manage-assets/overview.md)
+* [Overview](manage-assets/README.md)
 * [Assets inventory tabs](manage-assets/assets-inventory-layouts.md)
 * [Assets inventory components](manage-assets/assets-inventory-components.md)
 * [Assets inventory features](manage-assets/assets-inventory-features.md)
 
 ## Manage risk
 
-* [Overview](manage-risk/overview.md)
+* [Overview](manage-risk/README.md)
 * [Prioritize issues for fixing](manage-risk/prioritize-issues-for-fixing/README.md)
   * [Priority Score vs Risk Score](manage-risk/prioritize-issues-for-fixing/priority-score-vs-risk-score.md)
   * [Priority Score](manage-risk/prioritize-issues-for-fixing/priority-score.md)
@@ -936,7 +936,7 @@
 
 ## Snyk API
 
-* [Overview](snyk-api/overview.md)
+* [Overview](snyk-api/README.md)
 * [REST API](snyk-api/rest-api/README.md)
   * [About the REST API](snyk-api/rest-api/about-the-rest-api.md)
   * [Getting started with the REST API](snyk-api/rest-api/getting-started-with-the-rest-api.md)
@@ -1056,7 +1056,7 @@
 
 ## Snyk platform administration
 
-* [Overview](snyk-platform-administration/overview.md)
+* [Overview](snyk-admin/README.md)
 * [Structure your account for high application performance](snyk-admin/structure-your-account-for-high-application-performance.md)
 * [Tenant, Groups, and Organizations](snyk-admin/groups-and-organizations/README.md)
   * [Tenant](snyk-admin/tenant-groups-and-organizations/tenant/README.md)

@@ -20,7 +20,7 @@ This document collects questions the support team receives frequenty and provide
 ### How do I avoid scanning certain files for Open Source scans?
 
 * Use the --`exclude` option when scanning with the CLI to omit scanning directories or files but not paths. This option excludes all directories or all files with specified names. For details, see [the --exclude option](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/test.md#exclude-less-than-name-greater-than-less-than-name-greater-than-...greater-than) in the CLI `test` command help.
-*   If you import a Project through an SCM integration, add the exclusions, folders only, to the bottom of the import window; see [Stage 2: Import Project](../../../developer-tools/scms/deployment-recommendations.md#stage-2-import-projects) in Git repositories deployment recommendations.\
+*   If you import a Project through an SCM integration, add the exclusions, folders only, to the bottom of the import window; see [Stage 2: Import Project](../../../scm-integrations/deployment-recommendations.md#stage-2-import-projects) in Git repositories deployment recommendations.\
 
 
     <figure><img src="https://lh7-us.googleusercontent.com/stHVnzk1ZuP6oUm0zAImt0zROcajuZMm5iB4qX7vTbHkjPWklSgD9NxUdZ6UGgT1kV-dBjrcLyOp0SP1CqFzbNuq9S7qgl4cOD6T9UwuWlEk5SWVHUiHRlO-KfAyq_UppnGNvE67p7ZsSwuWok0_2RM" alt="Exclude folders"><figcaption><p>Exclude folders</p></figcaption></figure>

@@ -30,7 +30,7 @@ The advantages of SCM integrations are:
 * Onboarding repositories can be configured through the UI or [API/API Import Tool](../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/)
 * Support for Cloud and Private Code Repositories on the Snyk Enterprise plan
 
-See [Snyk SCM integrations](../../../developer-tools/scms/organization-level-integrations/) for more details.
+See [Snyk SCM integrations](../../../scm-integrations/organization-level-integrations/) for more details.
 
 If you have an on-premise Git repository, you must consider deploying [Snyk Broker](../../../enterprise-setup/snyk-broker/) for Snyk to communicate with your repositories.
 

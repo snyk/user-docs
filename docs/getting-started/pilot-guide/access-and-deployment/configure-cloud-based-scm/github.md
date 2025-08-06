@@ -29,7 +29,7 @@ Configure the Group-level integration by following these steps:
 <figure><img src="../../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
 * Search and select the GitHub integration
-* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate GitHub using Snyk Essentials](../../../../developer-tools/scms/group-level-integrations/github-for-snyk-essentials.md#github-integrate-using-snyk-apprisk) page.
+* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate GitHub using Snyk Essentials](../../../../scm-integrations/group-level-integrations/github-for-snyk-essentials.md#github-integrate-using-snyk-apprisk) page.
 
 {% hint style="info" %}
 After the integration is configured, the Group-level integration shifts to a **Partially connected** status. During the next synchronization, it will transition to the connected state, and the Inventory view will be filled with data from the GitHub source.
@@ -43,7 +43,7 @@ Configure the Organization-level integration by following these steps:
 * Navigate to the Organization-level
 * Open **Integrations**
 * Search and select the GitHub integration
-* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [GitHub integration settings](../../../../developer-tools/scms/organization-level-integrations/github.md#github-integration-settings) page.
+* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [GitHub integration settings](../../../../scm-integrations/organization-level-integrations/github.md#github-integration-settings) page.
 
 <figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 

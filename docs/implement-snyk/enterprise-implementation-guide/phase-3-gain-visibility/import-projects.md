@@ -19,7 +19,7 @@ Snyk offers various integration methods to meet your needs, as described here.
 
 ### Git integration
 
-You can connect your repositories for automatic scanning. See [Snyk SCM integrations](../../../developer-tools/scms/organization-level-integrations/) for more details.
+You can connect your repositories for automatic scanning. See [Snyk SCM integrations](../../../scm-integrations/organization-level-integrations/) for more details.
 
 For a small number of applications, typically under a hundred, follow these steps.
 
@@ -65,7 +65,7 @@ Demonstrations of various pipeline integrations can be found on [Snyk-Labs](http
 
 ## Snyk API
 
-You can scan using the [Snyk API](../../../snyk-api/overview.md). This enables large-scale automated scanning.
+You can scan using the [Snyk API](../../../snyk-api/). This enables large-scale automated scanning.
 
 The process is:
 

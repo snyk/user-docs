@@ -48,7 +48,7 @@ For information about fixing vulnerabilities, see [Fix vulnerabilities using the
 To apply fixes, you can:
 
 * Click **Fix this vulnerability** on a specific [issue card](../../../snyk-admin/snyk-projects/issue-card-information.md) on the relevant Project page.
-* If you are using a [Source code integration](../../../developer-tools/scms/organization-level-integrations/):
+* If you are using a [Source code integration](../../../scm-integrations/organization-level-integrations/):
   * Click **Open a fix PR** on the Project page.
   * Use [automated pull requests](../../pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-new-fixes-fix-prs.md) when new fixes become available that help you to fix a vulnerability.
 

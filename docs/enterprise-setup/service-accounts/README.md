@@ -23,7 +23,7 @@ This includes, but is not limited to, scanning using a CI/CD or build system plu
 
 ### Use a service account for GitHub Enterprise integration
 
-If your team needs to set up a service account in GitHub, you must use [GitHub Enterprise](../../developer-tools/scms/organization-level-integrations/github-enterprise.md), which is available only with Snyk Enterprise accounts.
+If your team needs to set up a service account in GitHub, you must use [GitHub Enterprise](../../scm-integrations/organization-level-integrations/github-enterprise.md), which is available only with Snyk Enterprise accounts.
 
 Using a service account to authenticate with an integration rather than a Snyk user's token ensures continuity when users change roles or close their personal Snyk accounts.
 

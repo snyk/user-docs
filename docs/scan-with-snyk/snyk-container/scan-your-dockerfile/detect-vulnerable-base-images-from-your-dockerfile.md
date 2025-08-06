@@ -42,7 +42,7 @@ Snyk detects vulnerable base images by scanning your Dockerfile when you import 
 When scanning Dockerfiles, Snyk can provide vulnerability information and base image recommendations for supported base images. If you need help, contact [Snyk Support](https://support.snyk.io).
 {% endhint %}
 
-After you [integrate your Git repository with Snyk](../../../developer-tools/scms/organization-level-integrations/), any Dockerfiles in that repository are automatically identified and shown in the Web UI as Projects.
+After you [integrate your Git repository with Snyk](../../../scm-integrations/organization-level-integrations/), any Dockerfiles in that repository are automatically identified and shown in the Web UI as Projects.
 
 <figure><img src="../../../.gitbook/assets/dockerfiles_projects.png" alt=""><figcaption><p>Dockerfiles displayed in the Project list</p></figcaption></figure>
 

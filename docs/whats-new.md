@@ -17,9 +17,9 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk CLI**
 
 * MCP updates:
-  * [Updated the list of supported Snyk security tools into an AI system](integrations/agentic-integrations-snyk-mcp-server/#snyk-mcp-tools).
+  * [Updated the list of supported Snyk security tools into an AI system](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/#snyk-mcp-tools).
   * Updated release status from experimental to [Early access](getting-started/snyk-release-process.md#early-access-features) and removed the experimental flag.
-  * Added [Cursor](integrations/agentic-integrations-snyk-mcp-server/quickstart-guides-for-mcp/cursor-guide.md) as a new supported agentic IDE for MCP.
+  * Added [Cursor](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide.md) as a new supported agentic IDE for MCP.
 * PAT updates:
   * Added PAT support for [Snyk CLI](snyk-cli/authenticate-to-use-the-cli.md).
   * Added PAT support for Snyk CI/CD integrations ([CircleCI](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb.md), [Jenkins](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk.md), [Maven](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk.md)).
@@ -76,7 +76,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk CLI**
 
 * The `--platform` option was added to the [`container sbom`](cli-ide-and-ci-cd-integrations/snyk-cli/commands/container-sbom.md) command.
-* The MCP information was expanded to [Developer guardrails for agentic workflows](integrations/agentic-integrations-snyk-mcp-server/).
+* The MCP information was expanded to [Developer guardrails for agentic workflows](cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/).
 
 ### **IDE plugins and extensions**
 
@@ -94,7 +94,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk  Integrations**
 
-The [Bitbucket Cloud App](developer-tools/scms/organization-level-integrations/bitbucket-cloud-app.md) and [Jira App](integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) integrations are now available in the `SNYK-US-02` environment.
+The [Bitbucket Cloud App](scm-integrations/organization-level-integrations/bitbucket-cloud-app.md) and [Jira App](integrate-with-snyk/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) integrations are now available in the `SNYK-US-02` environment.
 
 ### **Other updates**
 
@@ -178,7 +178,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk  Integrations**
 
-* The [GitHub Server App](developer-tools/scms/organization-level-integrations/github-server-app.md) has moved into General Availability.
+* The [GitHub Server App](scm-integrations/organization-level-integrations/github-server-app.md) has moved into General Availability.
 * The [Jira integration documentation](integrate-with-snyk/jira-and-slack-integrations/jira-integration.md#prerequisites-for-jira-integration-with-snyk) has been updated to state that Snyk supports version 5 to version 9.
 
 ### **Other updates**
@@ -197,7 +197,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### Snyk Essentials
 
 * The Integrations UI at the Group level has been enhanced to improve readability and actionability and provide inline instructions and inline profile helpers.
-* Group-level [Integrations documentation](integrations/overview.md#integrations-syncing-time) has been updated with new, more accurate sync times.
+* Group-level [Integrations documentation](integrate-with-snyk/#integrations-syncing-time) has been updated with new, more accurate sync times.
 * The [asset filter](manage-risk/policies/assets-policies/create-policies.md) documentation has been consolidated into one section, and it now links to all relevant areas, such as Inventory and Asset Policy filters.
 * [Issues Analytics](manage-risk/analytics/issues-analytics.md) is now available with a General Availability release status.
 
@@ -222,7 +222,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Other updates**
 
-* [Snyk Admin](snyk-platform-administration/overview.md) pages have been updated to reflect the addition of [Tenants](snyk-admin/tenant-groups-and-organizations/tenant/) in the Snyk hierarchy, including a new infographic to illustrate the Tenant position in the [hierarchy](snyk-admin/groups-and-organizations/#the-snyk-hierarchy).
+* [Snyk Admin](snyk-admin/) pages have been updated to reflect the addition of [Tenants](snyk-admin/tenant-groups-and-organizations/tenant/) in the Snyk hierarchy, including a new infographic to illustrate the Tenant position in the [hierarchy](snyk-admin/groups-and-organizations/#the-snyk-hierarchy).
 
 ## November 2024
 
@@ -238,7 +238,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk Integrations**
 
-* The GitLab page has been updated to state that for the Snyk AppRisk level integration [PAT creation](developer-tools/scms/organization-level-integrations/gitlab.md#gitlab-access-tokens), the user generating the GitLab group requires a minimum GitLab permission level of Guest.
+* The GitLab page has been updated to state that for the Snyk AppRisk level integration [PAT creation](scm-integrations/organization-level-integrations/gitlab.md#gitlab-access-tokens), the user generating the GitLab group requires a minimum GitLab permission level of Guest.
 
 ### **Other updates**
 
@@ -254,7 +254,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk API**&#x20;
 
 * Links to APIs have been updated throughout the Snyk User Docs site.
-* The [API](snyk-api/overview.md) pages have been extensively updated to reflect changes in how APIs are published.
+* The [API](snyk-api/) pages have been extensively updated to reflect changes in how APIs are published.
 * The [API authentication](snyk-api/authentication-for-api/) pages have been updated to include when to use a personal token and when to use a service account, and to improve the flow of information.
 
 ### **Snyk AppRisk**
@@ -274,9 +274,9 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk Integrations**
 
 * [Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/) is now in [GA](getting-started/snyk-release-process.md).
-* [Snyk SCM integrations](developer-tools/scms/organization-level-integrations/) has been updated with additional notices relating to repository retrieval and permission or scope modifications after initial configuration.
+* [Snyk SCM integrations](scm-integrations/organization-level-integrations/) has been updated with additional notices relating to repository retrieval and permission or scope modifications after initial configuration.
 * GitHub Cloud App has been added to feature support notices for Fix, Backlog, and Upgrade PRs.
-* Snyk SCM integrations has been updated to include a table detailing the [permissions and scopes](developer-tools/scms/user-permissions-and-access-scopes.md#github-cloud-app-permission-requirements) required for the GitHub Cloud App.
+* Snyk SCM integrations has been updated to include a table detailing the [permissions and scopes](scm-integrations/user-permissions-and-access-scopes.md#github-cloud-app-permission-requirements) required for the GitHub Cloud App.
 
 ### **Other updates**
 
@@ -294,7 +294,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### &#x20;**Snyk AppRisk**&#x20;
 
-* A prerequisites section has been added to the Group level of [GitHub integration](developer-tools/scms/organization-level-integrations/github-enterprise.md#prerequisites), and more details about the [Pull personal repositories](developer-tools/scms/group-level-integrations/github-for-snyk-essentials.md) option have been added to the same documentation page.&#x20;
+* A prerequisites section has been added to the Group level of [GitHub integration](scm-integrations/organization-level-integrations/github-enterprise.md#prerequisites), and more details about the [Pull personal repositories](scm-integrations/group-level-integrations/github-for-snyk-essentials.md) option have been added to the same documentation page.&#x20;
 * The [Set up Insights for Snyk AppRisk ](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/)section was updated to emphasize the risk factors availability for each integration option.
 * The [Snyk Runtime Sensor](manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) has been updated to reflect the importance of adopting it to achieve the most effective integration and to access its continuously expanded set of features.&#x20;
 
@@ -330,7 +330,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 * The **Manage Risk > Analytics** pages have been consolidated to better reflect the two Snyk offerings:
   * [Issues Analytics](manage-risk/analytics/issues-analytics.md) - now in Early Access for Snyk Enterprise customers.
   * [Application Analytics](manage-risk/analytics/application-analytics.md) - available only for Snyk AppRisk customers.
-* The [Manage Assets](manage-assets/overview.md) documentation has been updated to reflect the addition of Quick filters. Users are only shown quick filters relevant to their entitlement.
+* The [Manage Assets](manage-assets/) documentation has been updated to reflect the addition of Quick filters. Users are only shown quick filters relevant to their entitlement.
 
 ### **Snyk CLI**
 
@@ -346,15 +346,15 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 ### **Snyk Integrations**
 
-* Git repository cloning has been renamed [Workspaces for SCM integrations](developer-tools/scms/workspaces.md) to better reflect its functionality. Additional detail on [enablement](developer-tools/scms/workspaces.md#manage-workspaces) has been added.
-* The [relationship](developer-tools/scms/organization-level-integrations/github-cloud-app.md#how-to-set-up-the-github-cloud-app) between GitHub organizations and Snyk Organizations when integrating with the GitHub Cloud App has been clarified.
-* The [deployment stages table](developer-tools/scms/deployment-recommendations.md) for implementing SCM integrations has been updated to reflect AppRisk functionality.
+* Git repository cloning has been renamed [Workspaces for SCM integrations](scm-integrations/workspaces.md) to better reflect its functionality. Additional detail on [enablement](scm-integrations/workspaces.md#manage-workspaces) has been added.
+* The [relationship](scm-integrations/organization-level-integrations/github-cloud-app.md#how-to-set-up-the-github-cloud-app) between GitHub organizations and Snyk Organizations when integrating with the GitHub Cloud App has been clarified.
+* The [deployment stages table](scm-integrations/deployment-recommendations.md) for implementing SCM integrations has been updated to reflect AppRisk functionality.
 
 ## July 2024
 
 ### **Snyk API**
 
-* The API documentation now provides the API Reference and explanatory documentation in the [API section](snyk-api/overview.md).
+* The API documentation now provides the API Reference and explanatory documentation in the [API section](snyk-api/).
 * The [API End of Life (EOL) process and migration guides](api-end-of-life-eol-process-and-migration-guides/) are now published and updated to support the process, which began in July.
 
 ### Snyk AppRisk
@@ -362,28 +362,28 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 * [Asset inventory filtering](manage-assets/assets-inventory-components.md#asset-tabs) describes the new, simplified view that provides an improved experience of filtering the assets.
 * The [Asset inventory layouts](manage-assets/assets-inventory-layouts.md) have been renamed to better reflect their functionality.
 * Four new SCM integrations are now available for Snyk AppRisk:&#x20;
-  * [Atlassian Compass](developer-tools/scms/application-context-for-scm-integrations/#atlassian-compass)
-  * [Harness](developer-tools/scms/application-context-for-scm-integrations/#harness)
-  * [OpsLevel](developer-tools/scms/application-context-for-scm-integrations/#opslevel)
-  * [Datadog Service Catalog](developer-tools/scms/application-context-for-scm-integrations/#datadog-service-catalog)
+  * [Atlassian Compass](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#atlassian-compass)
+  * [Harness](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#harness)
+  * [OpsLevel](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#opslevel)
+  * [Datadog Service Catalog](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#datadog-service-catalog)
 * The Snyk AppRisk documentation section has been reorganized to enhance visibility and simplify the adoption of Snyk AppRisk. Here is where you can find the main features:
-  * Inventory - [Manage assets](manage-assets/overview.md) section
+  * Inventory - [Manage assets](manage-assets/) section
   * Issues - [Prioritize issues for fixing](manage-risk/prioritize-issues-for-fixing/#prioritization-based-on-risk) section
   * Policies - [Assets policies](manage-risk/policies/assets-policies/) section
-  * Integrations - [Snyk SCM integrations](developer-tools/scms/group-level-integrations/) and [Integrate with Snyk](integrations/overview.md) sections
+  * Integrations - [Snyk SCM integrations](scm-integrations/group-level-integrations/) and [Integrate with Snyk](integrate-with-snyk/) sections
   * Snyk AppRisk - [Scan with Snyk](scan-with-snyk/snyk-apprisk.md) section
   * Analytics - [Manage risk](manage-risk/analytics/application-analytics.md) section
 
 ### Snyk Integrations
 
-* A comparison of the GitHub and GitHub Enterprise integrations functions now resides on the [SCM, IDE, and CI/CD integrations](developer-tools/scms/#github-vs-github-enterprise) page.
-* Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](developer-tools/scms/organization-level-integrations/github.md#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
-* The [Snyk SCM Integrations](developer-tools/scms/organization-level-integrations/) page now contains information critical to using these integrations successfully in your SDLC. This includes:
-  * Organizing integrations by [Group](developer-tools/scms/group-level-integrations/) and [Organization](developer-tools/scms/organization-level-integrations/) level in line with Snyk AppRisk functionality
-  * [Git repository cloning](developer-tools/scms/workspaces.md) details
-  * [Deployment recommendations](developer-tools/scms/deployment-recommendations.md) for Enterprise customers
-  * [User permissions and access scope requirements](developer-tools/scms/user-permissions-and-access-scopes.md) for each SCM integration
-  * Instructions on how to generate [integrated SCM tokens for Snyk Broker](developer-tools/scms/scm-integrations-and-snyk-broker.md#integrated-scm-tokens-for-classic-broker)
+* A comparison of the GitHub and GitHub Enterprise integrations functions now resides on the [SCM, IDE, and CI/CD integrations](scm-integrations/#github-vs-github-enterprise) page.
+* Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](scm-integrations/organization-level-integrations/github.md#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
+* The [Snyk SCM Integrations](scm-integrations/organization-level-integrations/) page now contains information critical to using these integrations successfully in your SDLC. This includes:
+  * Organizing integrations by [Group](scm-integrations/group-level-integrations/) and [Organization](scm-integrations/organization-level-integrations/) level in line with Snyk AppRisk functionality
+  * [Git repository cloning](scm-integrations/workspaces.md) details
+  * [Deployment recommendations](scm-integrations/deployment-recommendations.md) for Enterprise customers
+  * [User permissions and access scope requirements](scm-integrations/user-permissions-and-access-scopes.md) for each SCM integration
+  * Instructions on how to generate [integrated SCM tokens for Snyk Broker](scm-integrations/scm-integrations-and-snyk-broker.md#integrated-scm-tokens-for-classic-broker)
 
 ### **Other updates**
 

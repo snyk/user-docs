@@ -19,7 +19,7 @@ The Snyk Essentials plan is included in the Snyk Enterprise plan, meaning that y
 
 * [Coverage control](../../manage-risk/policies/assets-policies/use-cases-for-policies/coverage-and-coverage-gap-policies.md) for SCM.
 * [Policy](../../manage-risk/policies/assets-policies/) creation to automatically trigger specific actions.
-* [Backstage file](../../developer-tools/scms/application-context-for-scm-integrations/) customization for SCM integrations.
+* [Backstage file](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) customization for SCM integrations.
 * [Customized analytics](../../manage-risk/analytics/) and reports about the application.&#x20;
 
 {% hint style="info" %}

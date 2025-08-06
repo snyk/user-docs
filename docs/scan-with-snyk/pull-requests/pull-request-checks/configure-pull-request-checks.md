@@ -13,7 +13,7 @@ When using a brokered connection Snyk Broker version 4.206 and above is required
 To check for open-source and licensing issues and code security, ensure that you have established the following:
 
 * You have the Group Admin role so you have access to all integration settings. See [Member roles](../../../snyk-admin/user-roles/user-role-management.md).
-* You have [set up a Git repository integration](../../../developer-tools/scms/organization-level-integrations/). For help, see the Snyk Learn course [Source code manager configuration](https://learn.snyk.io/lesson/configure-snyk-scm/).
+* You have [set up a Git repository integration](../../../scm-integrations/organization-level-integrations/). For help, see the Snyk Learn course [Source code manager configuration](https://learn.snyk.io/lesson/configure-snyk-scm/).
 * Import a Project to have a working Git repository.
 * For code security (Snyk Code), meet all of the above conditions and then contact your Snyk representative to enable the feature for you.
 

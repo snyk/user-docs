@@ -18,7 +18,7 @@ Snyk Infrastructure as Code has no equivalent command to `snyk monitor` because 
 
 For IaC CLI results to appear in the Snyk Web UI, use [`snyk iac test --report`](share-cli-results-with-the-snyk-web-ui.md) to capture a one-time snapshot. Optionally, run the command on a recurring schedule to regularly test your IaC files.
 
-Alternatively, you can add an [SCM integration](../../../../developer-tools/scms/organization-level-integrations/), and Snyk will monitor and test a given Git repository on a recurring basis.
+Alternatively, you can add an [SCM integration](../../../../scm-integrations/organization-level-integrations/), and Snyk will monitor and test a given Git repository on a recurring basis.
 
 ## Using Snyk behind a proxy
 

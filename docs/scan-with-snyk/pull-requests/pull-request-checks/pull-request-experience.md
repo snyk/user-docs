@@ -53,7 +53,7 @@ Additional to the general SCM and PR Checks prerequisites, certain features with
 
 ### SCM permission and access scope requirements
 
-The pull request experience integrates with various SCM platforms, each with specific requirements for a successful configuration with Snyk. Your existing SCM integration setup will work with the Pull Request experience out of the box, except for GitHub (OAuth) which requires an additional Fix PR token. For additional information, see [User permissions and access scopes](../../../developer-tools/scms/user-permissions-and-access-scopes.md).
+The pull request experience integrates with various SCM platforms, each with specific requirements for a successful configuration with Snyk. Your existing SCM integration setup will work with the Pull Request experience out of the box, except for GitHub (OAuth) which requires an additional Fix PR token. For additional information, see [User permissions and access scopes](../../../scm-integrations/user-permissions-and-access-scopes.md).
 
 {% hint style="info" %}
 For information on which SCM integrations are supported in each pull request experience feature, see the individual feature sections: [Issue Summary Comment](pull-request-experience.md#issue-summary-comment), [Inline Comments](pull-request-experience.md#inline-comments), and [Snyk Agent Fix in the PR](pull-request-experience.md#snyk-agent-fix-in-the-pr).

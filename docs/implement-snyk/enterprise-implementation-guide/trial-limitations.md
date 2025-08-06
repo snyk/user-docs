@@ -23,7 +23,7 @@ The following Enterprise features are limited or unavailable during the trial:
 * [**Custom User Roles**](../../snyk-admin/user-roles/user-role-management.md): Not available.
 * [**Audit Logging**](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md): Not available.
 * [**Broker**](../../enterprise-setup/snyk-broker/): Not available.
-* [**Self-hosted Git**](../../developer-tools/scms/organization-level-integrations/github-enterprise.md): Not available.
+* [**Self-hosted Git**](../../scm-integrations/organization-level-integrations/github-enterprise.md): Not available.
 * [**Private Registry Integrations**](../../scan-with-snyk/snyk-open-source/package-repository-integrations/): Not available.
-* [**Snyk Essentials Inventory**](../../manage-assets/overview.md): Not available
+* [**Snyk Essentials Inventory**](../../manage-assets/): Not available
 * [**Snyk Essentials Issue page**](../../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md): Limited capabilities, the Funnel view, Risk factors, and evidence graph, will not be available.

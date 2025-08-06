@@ -32,7 +32,7 @@ Snyk supports the following approaches to add tests to a build pipeline:
 
 * **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk.md), [Team City](../teamcity-jetbrains-integration-using-the-snyk-security-plugin/), [Bitbucket Pipelines](../bitbucket-pipelines-integration-using-a-snyk-pipe/), and [Azure Pipelines](../azure-pipelines-integration/).
 * **Snyk CLI:** Teams with more complex workflows or using a build system without a Snyk pre-built plugin, can use the Snyk CLI during CI/CD setups. For more informationm, see [Snyk test and snyk monitor in CI/CD integration](snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
-* **Snyk API**: For teams with complex requirements, Snyk provides an API, which you can use to automate functions including initiating scans, onboarding new Projects, and testing arbitrary libraries. See the [Snyk API documentation](../../../snyk-api/overview.md) for details.
+* **Snyk API**: For teams with complex requirements, Snyk provides an API, which you can use to automate functions including initiating scans, onboarding new Projects, and testing arbitrary libraries. See the [Snyk API documentation](../../../snyk-api/) for details.
 
 ## Setting up CI/CD using Snyk CLI
 

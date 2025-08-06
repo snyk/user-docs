@@ -29,7 +29,7 @@ From the Organization setting menu, select **Settings** and then select one of t
 
 * **General**: See [Organization general settings](organizations/organization-general-settings.md) for details.
 * **Service Accounts**: See [Service accounts](../../enterprise-setup/service-accounts/) for details.
-* **Integrations**: Set up integrations and see a list of those configured for your Organization; click the name of the configured integration to see the details. See [Integrate with Snyk](../../integrations/overview.md) for information about available Snyk integrations.
+* **Integrations**: Set up integrations and see a list of those configured for your Organization; click the name of the configured integration to see the details. See [Integrate with Snyk](../../integrate-with-snyk/) for information about available Snyk integrations.
 * **Open Source**: Enable Reachable vulnerabilities analysis and edit language settings; see [Snyk Open Source - supported languages and package managers](../../supported-languages-package-managers-and-frameworks/) for details.
 * **Snyk Code**: Enable Snyk Code; see the [Snyk Code](../../scan-with-snyk/snyk-code/) documentation for details.
 * **Snyk Iac:** Enable Snyk Iac, detecting configuration files, and rules. Select severity levels for configurations scanned. See the [IaC ](../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/)documentation for details.

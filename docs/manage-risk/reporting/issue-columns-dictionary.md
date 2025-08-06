@@ -107,7 +107,7 @@ When filtering issues by assets context, issues of archived assets will be exclu
 
 ### Application context
 
-Navigate to the [Application context for SCM integrations](../../developer-tools/scms/application-context-for-scm-integrations/) page for more details about enriching the application context data.
+Navigate to the [Application context for SCM integrations](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/) page for more details about enriching the application context data.
 
 {% hint style="info" %}
 When filtering issues by application context, issues of archived assets will be excluded from the results
