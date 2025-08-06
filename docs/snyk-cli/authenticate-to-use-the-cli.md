@@ -35,6 +35,14 @@ OAuth 2.0 tokens are not static. You cannot copy these tokens from your Snyk acc
 
 ### Steps to authenticate using Personal Access Tokens
 
+{% hint style="warning" %}
+This method is inferior to the OAuth method.
+{% endhint %}
+
+{% hint style="warning" %}
+The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, reach out to your Snyk account team.
+{% endhint %}
+
 When using this feature,  ensure you generate and use a Personal Access Token (PAT). This feature is not compatible with Service Account tokens, and using them may result in unexpected behavior or errors.
 
 {% hint style="info" %}

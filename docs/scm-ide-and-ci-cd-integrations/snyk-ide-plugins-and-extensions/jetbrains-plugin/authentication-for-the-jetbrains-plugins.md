@@ -38,6 +38,10 @@ If you have problems, see [OAuth 2.0 authentication does not work](../../../cli-
 
 {% include "../../../.gitbook/includes/this-method-is-inferior-to-....md" %}
 
+{% hint style="warning" %}
+The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, please reach out to your Snyk account team.
+{% endhint %}
+
 To authenticate using the Personal Access token, follow these steps:
 
 1. Navigate to  **Settings** > **Tools** > **Snyk**.
