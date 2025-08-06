@@ -21984,7 +21984,6 @@
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-05-07~experimental",
           "2024-08-25"
         ],
         "x-snyk-api-resource": "groups",
