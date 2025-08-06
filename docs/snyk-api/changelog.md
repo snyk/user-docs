@@ -1,3 +1,14 @@
+## 2024-10-15 - Updated 2025-08-06
+
+### POST - `/orgs/{org_id}/export` - Updated
+- removed the request property `data/attributes/destination`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### POST - `/groups/{group_id}/export` - Updated
+- removed the request property `data/attributes/destination`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2024-10-15 - Updated 2025-07-07
 
 ### POST - `/orgs/{org_id}/service_accounts` - Updated
