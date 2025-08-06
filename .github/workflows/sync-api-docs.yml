@@ -6,6 +6,8 @@ on:
     - cron: '0 * * * 1-5' # Mon-Fri every hour
   push:
     branches: [chore/docs-action]
+  pull_request:
+    branches: [main]
 jobs:
   build:
     name: synchronize-api-docs
@@ -26,7 +28,7 @@ jobs:
           cat /tmp/run.log >> $GITHUB_OUTPUT
           echo 'EOF' >> $GITHUB_OUTPUT
           exit $result_code
-      - uses: peter-evans/create-pull-request@v6
+      - uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "docs: synchronizing api spec with user-docs"
@@ -38,3 +40,4 @@ jobs:
             ```
           branch: docs/automatic-api-docs-update
           base: main
+          sign-commits: true
