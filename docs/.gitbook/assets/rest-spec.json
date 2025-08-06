@@ -7745,33 +7745,23 @@
             "ISSUE_STATUS_INDICATOR",
             "ISSUE_TYPE"
           ],
-          "dataset": "issue_detail",
-          "destination": {
-            "file_name": "test_export",
-            "type": "snyk"
-          },
+          "dataset": "issues",
           "filters": {
-            "general": {
-              "orgs": [
-                "985cdc6d-a88f-4af8-aa8b-37b22e2425aa",
-                "4aa34312-7ded-4fd7-bca8-93eaab3e08d5"
-              ]
+            "environment": [
+              "BACKEND",
+              "EXTERNAL"
+            ],
+            "introduced": {
+              "from": "2024-01-01T00:00:00Z",
+              "to": "2024-01-31T00:00:00Z"
             },
-            "issues": {
-              "introduced": {
-                "from": "2024-01-01T00:00:00Z",
-                "to": "2024-01-31T00:00:00Z"
-              }
-            },
-            "projects": {
-              "environment": [
-                "BACKEND",
-                "EXTERNAL"
-              ],
-              "lifecycle": [
-                "PRODUCTION"
-              ]
-            }
+            "lifecycle": [
+              "PRODUCTION"
+            ],
+            "orgs": [
+              "985cdc6d-a88f-4af8-aa8b-37b22e2425aa",
+              "4aa34312-7ded-4fd7-bca8-93eaab3e08d5"
+            ]
           },
           "formats": [
             "csv"
@@ -7786,20 +7776,6 @@
           },
           "dataset": {
             "type": "string"
-          },
-          "destination": {
-            "properties": {
-              "file_name": {
-                "type": "string"
-              },
-              "type": {
-                "enum": [
-                  "snyk"
-                ],
-                "type": "string"
-              }
-            },
-            "type": "object"
           },
           "filters": {
             "$ref": "#/components/schemas/GroupFilters"
@@ -7816,8 +7792,7 @@
         },
         "required": [
           "formats",
-          "dataset",
-          "destination"
+          "dataset"
         ],
         "type": "object"
       },
@@ -7840,27 +7815,19 @@
             "ISSUE_STATUS_INDICATOR",
             "ISSUE_TYPE"
           ],
-          "dataset": "issue_detail",
-          "destination": {
-            "file_name": "test_export",
-            "type": "snyk"
-          },
+          "dataset": "issues",
           "filters": {
-            "issues": {
-              "introduced": {
-                "from": "2024-01-01T00:00:00Z",
-                "to": "2024-01-31T00:00:00Z"
-              }
+            "environment": [
+              "BACKEND",
+              "EXTERNAL"
+            ],
+            "introduced": {
+              "from": "2024-01-01T00:00:00Z",
+              "to": "2024-01-31T00:00:00Z"
             },
-            "projects": {
-              "environment": [
-                "BACKEND",
-                "EXTERNAL"
-              ],
-              "lifecycle": [
-                "PRODUCTION"
-              ]
-            }
+            "lifecycle": [
+              "PRODUCTION"
+            ]
           },
           "formats": [
             "csv"
@@ -7875,21 +7842,6 @@
           },
           "dataset": {
             "type": "string"
-          },
-          "destination": {
-            "deprecated": true,
-            "properties": {
-              "file_name": {
-                "type": "string"
-              },
-              "type": {
-                "enum": [
-                  "snyk"
-                ],
-                "type": "string"
-              }
-            },
-            "type": "object"
           },
           "filters": {
             "$ref": "#/components/schemas/OrgFilters"
@@ -7906,8 +7858,7 @@
         },
         "required": [
           "formats",
-          "dataset",
-          "destination"
+          "dataset"
         ],
         "type": "object"
       },
