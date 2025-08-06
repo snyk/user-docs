@@ -57,7 +57,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 The following example shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
 
 For additional MCP configuration options on Amazon Q and troubleshooting, consult the official [Amazon Q MCP server documentation](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html).
 
