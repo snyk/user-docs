@@ -17,7 +17,7 @@ To enable permissions for GAR integration:
 7. In the Service account details page, under the **Keys** section, select **Add Key** and **Create New Key**.
 8. Select JSON for the **Key type** and select **Create**.
 
-The JSON key is generated for your Project. Copy the entire contents of the JSON file for the next step: [Configure integration for GAR](integrate-with-google-artifact-registry-gar.md#configure-integration-for-gar).
+The JSON key is generated for your Project. Copy the entire contents of the JSON file for the next step: [Configure integration for GAR](integrate-with-google-artifact-registry-gar.md#configure-gar-integration).
 
 ## Configure GAR integration
 

@@ -13,7 +13,7 @@ Automated provisioning is enabled only on multi-tenant environments for the foll
 * 🇦🇺 **Australia**: SNYK-AU-01
 
 {% hint style="info" %}
-For more information on region authentication methods, see [Which authentication methods are available for each region?](https://docs.snyk.io/enterprise-setup/auto-provisioning-guide#which-authentication-methods-are-available-for-each-region).
+For more information on region authentication methods, see [Which authentication methods are available for each region?](../../enterprise-setup/auto-provisioning-guide.md#which-authentication-methods-are-available-for-each-region).
 {% endhint %}
 
 ## Project plan templates
