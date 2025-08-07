@@ -77,6 +77,7 @@ Deprecated features are outdated and will be removed in the future. The document
   * **Get a list of app bots authorized to an organization** endpoint
     * The [Get a list of app bots authorized to an organization](../snyk-api/api-endpoints-index-and-tips/#deprecated-get-a-list-of-app-bots-authorized-to-an-organization) endpoint is deprecated.&#x20;
     * Use the [Get a list of apps installed for an organization](../snyk-api/api-endpoints-index-and-tips/#get-a-list-of-apps-installed-for-an-organization) endpoint.
+  * [Integration with Google Container Registry (GCR)](../scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-google-container-registry-gcr.md) is deprecated.
 
 ### End of support features
 
