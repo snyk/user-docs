@@ -6,5 +6,4 @@ This section provides information on how to integrate Snyk with Kubernetes and h
 * [Install the Snyk Controller](install-the-snyk-controller/)
 * [Manually import Kubernetes workload Projects](manually-import-kubernetes-workload-projects.md)
 * [Integrate with Sysdig](integrate-with-sysdig.md)
-* [Annotated import](annotated-import.md)
 * [Navigate the Kubernetes integration UI](kubernetes-integration-ui-explained/)

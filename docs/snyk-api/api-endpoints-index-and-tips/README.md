@@ -579,7 +579,7 @@ The only editable attribute of Update organization settings is `requestAccess`.
 
 ### [Delete a project](../reference/projects-v1.md#org-orgid-project-projectid-2)
 
-More information: [Annotated import](../../scan-with-snyk/snyk-container/kubernetes-integration/annotated-import.md) (Kubernetes integration section); [Project type responses from the API](project-type-responses-from-the-api.md); [Scenario: Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images)
+More information: [Project type responses from the API](project-type-responses-from-the-api.md); [Scenario: Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images)
 
 ### [Add a tag to a project](../reference/projects-v1.md#org-orgid-project-projectid-tags)
 
