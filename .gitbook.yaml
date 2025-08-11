@@ -169,10 +169,10 @@ redirects:
   docs/ignoring-issues: manage-risk/prioritize-issues-for-fixing/ignore-issues/README.md
   scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations: scm-integrations/README.md
   scm-integrations/snyk-scm-integrations: /scm-integrations/organization-level-integrations/README.md
-  docs.snyk.io/snyk-admin: /snyk-platform-administration/overview.md
-  docs.snyk.io/snyk-api: /snyk-api/overview.md
-  docs.snyk.io/manage-risk: /manage-risk/overview.md
-  docs.snyk.io/manage-assets: /manage-assets/overview.md
+  snyk-admin: /snyk-platform-administration/overview.md
+  snyk-api: /snyk-api/overview.md
+  manage-risk: /manage-risk/overview.md
+  manage-assets: /manage-assets/overview.md
   supported-languages-package-managers-and-frameworks/apex: /supported-languages/supported-languages-list/apex.md
   supported-languages-package-managers-and-frameworks/c-c++: /supported-languages/supported-languages-list/c-c++.md
   supported-languages-package-managers-and-frameworks/dart-and-flutter: /supported-languages/supported-languages-list/dart-and-flutter.md
@@ -189,6 +189,6 @@ redirects:
   supported-languages-package-managers-and-frameworks/typescript: /supported-languages/supported-languages-list/typescript.md
   supported-languages-package-managers-and-frameworks/vb.net: /supported-languages/supported-languages-list/vb.net.md
   cli-ide-and-ci-cd-integrations/snyk-cli/developer-guardrails-for-agentic-workflows/snyk-mcp-early-access: integrations/agentic-integrations-snyk-mcp-server/README.md
-  docs.snyk.io/scan-with-snyk/scanning-overview: /scan-with-snyk/overview.md
+  scan-with-snyk/scanning-overview: /scan-with-snyk/overview.md
   integrations/agentic-integrations-snyk-mcp-server/snyk-mcp-early-access: integrations/agentic-integrations-snyk-mcp-server/README.md
   supported-languages-package-managers-and-frameworks/go/go-for-open-source: /supported-languages-package-managers-and-frameworks/go.md
