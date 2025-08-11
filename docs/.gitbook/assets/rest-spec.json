@@ -11240,6 +11240,41 @@
         ],
         "type": "object"
       },
+      "LearningProgramContentCreateResource": {
+        "properties": {
+          "lesson_id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "learning_program_content"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "lesson_id"
+        ],
+        "type": "object"
+      },
+      "LearningProgramContentsCreateRequestBody": {
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "description": "The resource data to be created.",
+            "items": {
+              "$ref": "#/components/schemas/LearningProgramContentCreateResource"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "data"
+        ],
+        "type": "object"
+      },
       "LearningProgramCreateAttributes": {
         "additionalProperties": false,
         "properties": {
@@ -11310,6 +11345,76 @@
           "data",
           "links",
           "jsonapi"
+        ],
+        "type": "object"
+      },
+      "LearningProgramParticipantAttributes": {
+        "additionalProperties": false,
+        "properties": {
+          "learning_program_id": {
+            "description": "UUID of the learning program",
+            "format": "uuid",
+            "type": "string"
+          },
+          "user_id": {
+            "description": "UUID of the user participating in the learning program",
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "required": [
+          "user_id",
+          "learning_program_id"
+        ],
+        "type": "object"
+      },
+      "LearningProgramParticipantListResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "description": "Array of learning program participant resources",
+            "items": {
+              "$ref": "#/components/schemas/LearningProgramParticipantResource"
+            },
+            "type": "array"
+          },
+          "jsonapi": {
+            "$ref": "#/components/schemas/JsonApi"
+          },
+          "links": {
+            "$ref": "#/components/schemas/PaginatedLinks"
+          }
+        },
+        "required": [
+          "data",
+          "links",
+          "jsonapi"
+        ],
+        "type": "object"
+      },
+      "LearningProgramParticipantResource": {
+        "additionalProperties": false,
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/LearningProgramParticipantAttributes"
+          },
+          "id": {
+            "description": "Unique identifier for the participant record",
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "description": "Resource type identifier",
+            "enum": [
+              "learning_program_participant"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "attributes"
         ],
         "type": "object"
       },
@@ -71803,6 +71908,184 @@
           }
         },
         "summary": "Get a single learning program for a tenant (Early Access)",
+        "tags": [
+          "Learning Program"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "learning_programs",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/tenants/{tenant_id}/learn/learning_programs/{learning_program_id}/learning_contents": {
+      "post": {
+        "description": "Creates content for an existing learning program\n\n#### Required permissions\n\n- `Edit Tenant Details (tenant.edit)`",
+        "operationId": "createTenantLearningProgramContents",
+        "parameters": [
+          {
+            "description": "The unique identifier of the tenant.",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/LearningProgramId"
+          },
+          {
+            "$ref": "#/components/parameters/ApiVersion"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LearningProgramContentsCreateRequestBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "The learning program content was created successfully.",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Create learning program content (Early Access)",
+        "tags": [
+          "Learning Program"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "learning_programs",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/tenants/{tenant_id}/learn/learning_programs/{learning_program_id}/participants": {
+      "get": {
+        "description": "Retrieves a paginated list of participants enrolled in a specific learning program.\n\n#### Required permissions\n\n- `Edit Tenant Details (tenant.edit)`",
+        "operationId": "getTenantLearningProgramParticipants",
+        "parameters": [
+          {
+            "description": "The unique identifier of the tenant.",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/LearningProgramId"
+          },
+          {
+            "$ref": "#/components/parameters/ApiVersion"
+          },
+          {
+            "$ref": "#/components/parameters/Limit"
+          },
+          {
+            "$ref": "#/components/parameters/StartingAfter"
+          },
+          {
+            "$ref": "#/components/parameters/EndingBefore"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LearningProgramParticipantListResponse"
+                }
+              }
+            },
+            "description": "Returns a paginated list of learning program participants",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get participants of a learning program (Early Access)",
         "tags": [
           "Learning Program"
         ],
