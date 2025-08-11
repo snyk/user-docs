@@ -122,7 +122,6 @@ redirects:
   getting-started/snyk-learn/product-training-on-snyk-learn: getting-started/snyk-learn/README.md
   features/snyk-broker/broker-introduction: enterprise-setup/snyk-broker/README.md
   scan-using-snyk/supported-languages-and-frameworks: supported-languages-package-managers-and-frameworks/README.md
-  snyk-admin: admin/README.md
   snyk-api/rest-api/authentication-for-api/authenticate-for-the-api: snyk-api/rest-api/authentication-for-api/README.md
   scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-web-ui/step-1-download-iam-role-iac-template-web-ui: scan-with-snyk/snyk-iac/cloud-platform-integrations/aws-integration/README.md
   scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-azure: scan-with-snyk/snyk-iac/cloud-platform-integrations/azure-integration-for-cloud-configurations/README.md
