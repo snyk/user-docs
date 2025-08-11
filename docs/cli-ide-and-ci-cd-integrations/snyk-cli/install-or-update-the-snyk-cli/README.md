@@ -57,7 +57,7 @@ Install Snyk CLI from [Snyk's tap](https://github.com/snyk/homebrew-tap) with [H
 
 ```bash
 brew tap snyk/tap
-brew install snyk
+brew install snyk-cli
 ```
 
 {% hint style="warning" %}
