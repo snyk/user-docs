@@ -17,6 +17,10 @@ For any Dockerfile Project created in Snyk, if the base image is a [Docker Offic
 
 Snyk then automatically issues a fix pull request against your Dockerfile to upgrade to the latest minor version available.
 
+{% hint style="info" %}
+In a multi-stage build, Snyk analyzes only the final stage. &#x20;
+{% endhint %}
+
 Snyk opens an automatic fix PR when there is a change in the Dockerfile or when it identifies a better base image after the initial scan.
 
 ### Enable automatic update of Dockerfile base images
