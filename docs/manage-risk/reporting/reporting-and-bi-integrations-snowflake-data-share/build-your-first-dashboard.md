@@ -60,7 +60,7 @@ ORDER BY fixable_critical_issues DESC, fixable_high_issues DESC,
 
 #### **Output format:**
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt="Output of SQL query for SCA issues backlog counters"><figcaption><p>Output of SQL query for SCA issues backlog counters</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt="Output of SQL query for SCA issues backlog counters"><figcaption><p>Output of SQL query for SCA issues backlog counters</p></figcaption></figure>
 
 ### Example query - Code
 
@@ -183,7 +183,7 @@ ORDER BY organization_display_name ASC;         -- Update based on the desired o
 
 #### **Output format:**
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt="Output format of SQL query for MTTR per issue severity"><figcaption><p>Output format of SQL query for MTTR per issue severity</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt="Output format of SQL query for MTTR per issue severity"><figcaption><p>Output format of SQL query for MTTR per issue severity</p></figcaption></figure>
 
 ## SLA
 
@@ -259,7 +259,7 @@ The example query can be extended to support various SLA use-cases, such as defi
 
 #### **Output format:**
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt="Output format of SQL query for open issues counter per SLA status"><figcaption><p>Output format of SQL query for open issues counter per SLA status</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt="Output format of SQL query for open issues counter per SLA status"><figcaption><p>Output format of SQL query for open issues counter per SLA status</p></figcaption></figure>
 
 ## Developers IDE & CLI test usage and adoption
 

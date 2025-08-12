@@ -86,7 +86,7 @@ For additional MCP configuration options on VS Code and troubleshooting, consult
 
 ## Setting up the Snyk MCP Server
 
-As a one-time setup, you may need to authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.
+As a one-time setup, you may need to authenticate and trust the Project directory. If required, the agentic workflow will likely manage this automatically.
 
 These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
 
