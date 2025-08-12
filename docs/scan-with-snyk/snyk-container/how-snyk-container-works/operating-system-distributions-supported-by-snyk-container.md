@@ -66,6 +66,7 @@ This is the list of supported operating systems and distributions:
 ## [Debian](https://www.debian.org/)
 
 * Unstable - Sid
+* Debian 14 - Forky
 * Debian 13 - Trixie
 * Debian 12 - Bookworm
 * Debian 11 - Bullseye
