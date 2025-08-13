@@ -16,6 +16,7 @@ The following reports are available:
 * [Cloud Compliance Issues report](available-snyk-reports.md#cloud-compliance-issues-report)
 * [Snyk Generated Pull Requests](available-snyk-reports.md#snyk-generated-pull-requests)
 * [Asset Dashboard](available-snyk-reports.md#asset-dashboard)
+* [Risk Exposure report](available-snyk-reports.md#risk-exposure-report)
 * [Saved Views](available-snyk-reports.md#saved-views)
 
 Select **Change Report** to change the report displayed:
@@ -638,6 +639,46 @@ The asset source breakdown widget visualizes the quantities of detected assets f
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (582).png" alt=""><figcaption><p>Asset source breakdown</p></figcaption></figure>
+
+## Risk Exposure report
+
+This report gives you a single, consolidated view of your security risks. It allows you to quickly understand your risk exposure, track your progress in reducing it, and pinpoint high-risk areas.
+
+The Risk Exposure Report helps AppSec teams make quicker, more informed decisions. Rather than reviewing multiple reports, it provides a clear overview of the security landscape, allowing you to:
+
+* Make faster decisions by quickly identifying your biggest security challenges and where to focus your attention.
+* Prioritize effectively by using data to guide your mitigation efforts toward the areas that contribute the most risk.
+* Show progress by tracking the impact of your team on reducing risk over time with easy-to-understand visualizations.
+
+### Severity source
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdufjGtE0kED7zHIl_L4jGrLbWkgeFfzbNwzEISsiINoEyWo2mQSnJxEBrzRca5bD1QCz-u60m-CQvDHVC-lx4gYd4LvsDrtTUkMcl6ff8V2q4uc5lUi1S8zAieM5s36JNVFbLU-Q?key=Dqdjzf6y3TJS6QA9IfBneg)
+
+Choose your preferred severity source and automatically update selected severity throughout the report:
+
+* **Snyk**: utilizing Snyk proprietary CVSS calculations and other factors, including the relative importance of the Linux distributor.
+* **NVD CVSS**: leveraging severity scores from the National Vulnerability Database (NVD).
+* **Non-SCA Severities:** For non-SCA issues (e.g., Code, IaC), Snyk's severity calculates High, Medium, and Low levels for specific code vulnerabilities and makes use of the Common Configuration Scoring System (CCSS) for IaC severity determinations
+
+The report includes two main sections to provide a comprehensive view of your risk landscape:
+
+### **Risk Exposure Trends**
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd5HXXMoOzL2GsdBqF8tdO17PhaHx-1GdOdjVLAKpg46xqSMl1ooJB_KoaOkZb61O6Pu44KVI5hYkrn08aLiYfvKbIu0vZIraPlI1t44JcZP49KGbyYczwgn-jbXObBOmx-b_XF?key=Dqdjzf6y3TJS6QA9IfBneg" alt=""><figcaption></figcaption></figure>
+
+This section provides a visual overview of your issues over time. You can view these trends by:
+
+* **Severity**: See the distribution of issues across different severity levels.
+* **Introduction Category**: Understand how issues are being introduced into your Projects.
+* **Asset Class**: Group issues by the type of asset they affect.
+
+### **Risk Exposure Breakdown**
+
+This detailed table breaks down issues and impacted assets. You can dynamically group the data to fit your needs by selecting from the following dimensions: group, organization, project, introduction category, and asset class.
+
+The table is sorted by default to surface the total number of critical and high-severity issues, helping you focus on the most urgent risks first.
+
+You can also export data to PDF or CSV and drill down into issues for more detail.
 
 ## Saved Views
 
