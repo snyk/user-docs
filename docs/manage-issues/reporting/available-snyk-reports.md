@@ -16,7 +16,7 @@ The following reports are available:
 * [Cloud Compliance Issues report](available-snyk-reports.md#cloud-compliance-issues-report)
 * [Snyk Generated Pull Requests](available-snyk-reports.md#snyk-generated-pull-requests)
 * [Asset Dashboard](available-snyk-reports.md#asset-dashboard)
-* [Risk Exposure report](available-snyk-reports.md#risk-exposure-report)
+* [Risk exposure report](available-snyk-reports.md#risk-exposure-report)
 * [Saved Views](available-snyk-reports.md#saved-views)
 
 Select **Change Report** to change the report displayed:
@@ -640,7 +640,7 @@ The asset source breakdown widget visualizes the quantities of detected assets f
 
 <figure><img src="../../.gitbook/assets/image (582).png" alt=""><figcaption><p>Asset source breakdown</p></figcaption></figure>
 
-## Risk Exposure report
+## Risk exposure report
 
 This report gives you a single, consolidated view of your security risks. It allows you to quickly understand your risk exposure, track your progress in reducing it, and pinpoint high-risk areas.
 
@@ -662,7 +662,7 @@ Choose your preferred severity source and automatically update selected severity
 
 The report includes two main sections to provide a comprehensive view of your risk landscape:
 
-### **Risk Exposure Trends**
+### **Risk exposure Trends**
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd5HXXMoOzL2GsdBqF8tdO17PhaHx-1GdOdjVLAKpg46xqSMl1ooJB_KoaOkZb61O6Pu44KVI5hYkrn08aLiYfvKbIu0vZIraPlI1t44JcZP49KGbyYczwgn-jbXObBOmx-b_XF?key=Dqdjzf6y3TJS6QA9IfBneg" alt=""><figcaption></figcaption></figure>
 
@@ -672,7 +672,7 @@ This section provides a visual overview of your issues over time. You can view t
 * **Introduction Category**: Understand how issues are being introduced into your Projects.
 * **Asset Class**: Group issues by the type of asset they affect.
 
-### **Risk Exposure Breakdown**
+### **Risk exposure Breakdown**
 
 This detailed table breaks down issues and impacted assets. You can dynamically group the data to fit your needs by selecting from the following dimensions: group, organization, project, introduction category, and asset class.
 
