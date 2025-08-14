@@ -9,9 +9,11 @@ coverY: 0
 
 # Homepage
 
-{% hint style="info" %}
-Check out the latest [updates in the Snyk user documentation](whats-new.md).
+{% hint style="success" %}
+Share your experience with AI-Assisted Coding tools by filling in [this survey](https://forms.gle/DnfMiqc6BtAy16UX7) and secure a chance to win Snyk swag!
 {% endhint %}
+
+Check out the latest [updates in the Snyk user documentation](whats-new.md).
 
 ## First steps
 
