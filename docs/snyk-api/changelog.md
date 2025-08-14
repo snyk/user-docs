@@ -1,3 +1,9 @@
+## 2024-10-15 - Updated 2025-08-14
+
+### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
+- added the new `cancelled` enum value to the request property `data/attributes/review`
+
+
 ## 2024-10-15 - Updated 2025-08-06
 
 ### POST - `/orgs/{org_id}/export` - Updated
