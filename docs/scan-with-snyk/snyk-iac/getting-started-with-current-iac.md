@@ -1,6 +1,6 @@
 # Getting started with Snyk IaC
 
-You can use Snyk IaC (Infrastructure as Code) in the Snyk Web UI to find, view, and fix issues in configuration files. You can also use Snyk IaC in the Snyk CLI. For details, see [Snyk CLI for Infrastructure as Code](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/).
+You can use Snyk IaC (Infrastructure as Code) in the Snyk Web UI to find, view, and fix issues in configuration files. You can also use Snyk IaC in the Snyk CLI. For details, see [Snyk CLI for Infrastructure as Code](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/).
 
 On this page, you will find steps to find, view, and fix issues in configuration files for the supported environments: [Terraform](scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](scan-your-iac-source-code/scan-kubernetes-configuration-files/), including Helm, and [Azure Resource Manager (ARM)](scan-your-iac-source-code/scan-arm-configuration-files.md). These steps are specific to the current IaC.&#x20;
 
@@ -8,9 +8,9 @@ On this page, you will find steps to find, view, and fix issues in configuration
 
 Before using Snyk IaC, be sure you have the prerequisites as follows:
 
-* A Snyk account. For details, see [Getting started](../../getting-started/).
+* A Snyk account. For details, see [Getting started](../../discover-snyk/getting-started/).
 * An existing Terraform, CloudFormation, Kubernetes, or ARM environment to work in.
-* A Git repository you have integrated with Snyk in the same way as for other Snyk products. For details, see [Git repository (SCM)](../../scm-integrations/organization-level-integrations/).
+* A Git repository you have integrated with Snyk in the same way as for other Snyk products. For details, see [Git repository (SCM)](../../developer-tools/scm-integrations/organization-level-integrations/).
 
 For more information about IaC and supported environments, see the following pages:
 
@@ -24,7 +24,7 @@ You must use the Snyk CLI to scan ARM configuration files. See [Scan ARM configu
 
 ## Import IaC Projects
 
-You will start by importing [Projects](../../snyk-admin/snyk-projects/) you want to scan with Snyk. In these steps, you choose repositories for Snyk to test and re-test:
+You will start by importing [Projects](../../snyk-platform-administration/snyk-projects/) you want to scan with Snyk. In these steps, you choose repositories for Snyk to test and re-test:
 
 1. Log in to Snyk and on your dashboard, select **Projects** from the navigation.
 2. On the Projects page, from the **Add projects** dropdown, select the SCM where the repositories and projects that you want to scan are; for example, select GitHub.
@@ -43,8 +43,8 @@ After you have imported an IaC Project, Snyk re-tests your Project once a week b
 
 On the Projects page, you can view the results for configuration files in the imported Projects.
 
-* If **Group by targets** is selected, a list of [Targets](../../snyk-admin/snyk-projects/#target) is displayed. These are the repositories with the Projects you imported. Select a Target to expand its list of Projects.
-* If **Group by none** is selected: A list of all [Projects](../../snyk-admin/snyk-projects/#project) is displayed.
+* If **Group by targets** is selected, a list of [Targets](../../snyk-platform-administration/snyk-projects/#target) is displayed. These are the repositories with the Projects you imported. Select a Target to expand its list of Projects.
+* If **Group by none** is selected: A list of all [Projects](../../snyk-platform-administration/snyk-projects/#project) is displayed.
 
 In your **Projects** listing, select the Project to open to display detailed information about that Project.
 
@@ -52,7 +52,7 @@ In your **Projects** listing, select the Project to open to display detailed inf
 
 Each Project detail page has a snapshot showing when the Project was last tested, the name of the user who imported the Project, and, on the **Issues** tab, the number of critical, high, medium, and low-severity issues found and issue cards for each scanned configuration file. You can also select the **Overview**, **History,** and **Settings** options. Choose **History** to see previous snapshots of the Project.
 
-<figure><img src="../../.gitbook/assets/image (2) (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (106).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
 
 ## Issue card details for Snyk IaC
 
@@ -97,14 +97,14 @@ Examples follow of results displayed for current IaC.
 
 Terraform Cloud and Helm do not show a code snippet, only the path details. There is no **Full details** button to show the preview of the full code.
 
-<figure><img src="../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Details for Helm"><figcaption><p>Details for Helm</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Details for Helm"><figcaption><p>Details for Helm</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (100) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3) (2) (3).png" alt="Details for Terraform Cloud"><figcaption><p>Details for Terraform Cloud</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (100) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Details for Terraform Cloud"><figcaption><p>Details for Terraform Cloud</p></figcaption></figure>
 
 ### Example showing the code preview is not available
 
 If Snyk can not identify the exact line of the vulnerable path in the file, Snyk does not show a code snippet, only a message and the path details. If possible, Snyk shows the **Full details** button so you can see a preview of the full code.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07 (1).png" alt="Issue card without code snippet"><figcaption><p>Issue card without code snippet</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07.png" alt="Issue card without code snippet"><figcaption><p>Issue card without code snippet</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17 (1).png" alt="Full code display"><figcaption><p>Full code display</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17.png" alt="Full code display"><figcaption><p>Full code display</p></figcaption></figure>

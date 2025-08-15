@@ -1,4 +1,4 @@
-# Nexus Repository Manager for npm
+# Nexus repository manager for npm
 
 {% hint style="info" %}
 **Feature availability**\
@@ -23,7 +23,7 @@ If you have not previously connected to Nexus Repository Manager you will be ask
 
 Follow the steps on the tabs below, according to your version of Nexus.
 
-<figure><img src="../../../../.gitbook/assets/image (669).png" alt=""><figcaption><p>Configure Nexus registry</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (345).png" alt=""><figcaption><p>Configure Nexus registry</p></figcaption></figure>
 
 {% tabs %}
 {% tab title="Nexus 3" %}

@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-The following features within the Pull Request experience are in [Early Access](../../../getting-started/snyk-release-process.md#early-access-features):
+The following features within the Pull Request experience are in [Early Access](../../../discover-snyk/getting-started/snyk-release-process.md#early-access-features):
 
 * Issue summary comment
 * Inline comments
@@ -28,7 +28,7 @@ Snyk Agent fix in the PR enables action to be taken based on the previous featur
 
 ### User role requirement
 
-To configure and manage the pull request experience, the user must be a [Group Admin](../../../snyk-admin/user-roles/pre-defined-roles.md#group-level-permissions). This is to ensure access to all integrations for setup as the pull request experience is configured at the Organization level.
+To configure and manage the pull request experience, the user must be a [Group Admin](../../../snyk-platform-administration/user-roles/pre-defined-roles.md#group-level-permissions). This is to ensure access to all integrations for setup as the pull request experience is configured at the Organization level.
 
 ### Pull request checks enablement
 
@@ -53,7 +53,7 @@ Additional to the general SCM and PR Checks prerequisites, certain features with
 
 ### SCM permission and access scope requirements
 
-The pull request experience integrates with various SCM platforms, each with specific requirements for a successful configuration with Snyk. Your existing SCM integration setup will work with the Pull Request experience out of the box, except for GitHub (OAuth) which requires an additional Fix PR token. For additional information, see [User permissions and access scopes](../../../scm-integrations/user-permissions-and-access-scopes.md).
+The pull request experience integrates with various SCM platforms, each with specific requirements for a successful configuration with Snyk. Your existing SCM integration setup will work with the Pull Request experience out of the box, except for GitHub (OAuth) which requires an additional Fix PR token. For additional information, see [User permissions and access scopes](../../../developer-tools/scm-integrations/user-permissions-and-access-scopes.md).
 
 {% hint style="info" %}
 For information on which SCM integrations are supported in each pull request experience feature, see the individual feature sections: [Issue Summary Comment](pull-request-experience.md#issue-summary-comment), [Inline Comments](pull-request-experience.md#inline-comments), and [Snyk Agent Fix in the PR](pull-request-experience.md#snyk-agent-fix-in-the-pr).
@@ -70,7 +70,7 @@ Configure the pull request experience for one or more integrations in your Snyk 
    3. Enable[ inline comments](pull-request-experience.md#inline-comments)**:** Enable inline comments to add a comment for each issue found by Snyk Code PR check.
    4. Enable [Snyk Agent fix in the PR](pull-request-experience.md#snyk-agent-fix-in-the-pr): Enable requesting Snyk Agent fix suggestions for issues found by Snyk Code PR check, and applying the fixes to the PR branch.
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption><p>Configuration details for the PR Comment experience</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (418).png" alt=""><figcaption><p>Configuration details for the PR Comment experience</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/pat_config.png" alt=""><figcaption><p>Configuration details for the GitHub integration</p></figcaption></figure>
 
@@ -79,21 +79,21 @@ Configure the pull request experience for one or more integrations in your Snyk 
 {% hint style="info" %}
 **Release status**
 
-Issue summary comment for Snyk PR Checks is in [Early Access](../../../getting-started/snyk-release-process.md#early-access-features) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR checks.
+Issue summary comment for Snyk PR Checks is in [Early Access](../../../discover-snyk/getting-started/snyk-release-process.md#early-access-features) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR checks.
 
 Issue summary comment for Snyk PR Checks fully supports GitHub integrations and Bitbucket Cloud integrations.
 {% endhint %}
 
 The issue summary comment feature adds a comment to each pull request, summarizing the latest PR check results. The summary includes the type of checks performed and a breakdown of the findings by severity. Select **View Details** to access the PR check details in the Snyk Web UI.
 
-<figure><img src="../../../.gitbook/assets/image (586).png" alt=""><figcaption><p>Issue summary comment feature for pull request experience</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (269).png" alt=""><figcaption><p>Issue summary comment feature for pull request experience</p></figcaption></figure>
 
 ## Inline comments
 
 {% hint style="info" %}
 **Release status**
 
-Inline comments for Snyk PR checks is in [Early Access](../../../getting-started/snyk-release-process.md#early-access-features) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR Checks.
+Inline comments for Snyk PR checks is in [Early Access](../../../discover-snyk/getting-started/snyk-release-process.md#early-access-features) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR Checks.
 
 Inline comments for Snyk PR checks fully supports GitHub integrations and Bitbucket Cloud integrations.
 {% endhint %}
@@ -119,7 +119,7 @@ For Brokered integrations, the Data Flow section in the inline comments is avail
 {% hint style="info" %}
 **Release status**
 
-Snyk Agent fix in the PR is in [Early Access](../../../getting-started/snyk-release-process.md#early-access-features) and available only for GitHub and Bitbucket Integrations.\
+Snyk Agent fix in the PR is in [Early Access](../../../discover-snyk/getting-started/snyk-release-process.md#early-access-features) and available only for GitHub and Bitbucket Integrations.\
 Snyk Agent fix in the PR will work only on inline comments created after the feature is enabled.
 {% endhint %}
 
@@ -127,9 +127,9 @@ The Snyk Agent fix in the PR feature enables the user to request and apply fixes
 
 * Request an initial fix by replying to an inline comment using the `@snyk /fix` command.
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption><p>Inline Comments with Snyk Agent Fix enabled</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (413).png" alt=""><figcaption><p>Inline Comments with Snyk Agent Fix enabled</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption><p>Request a fix by replying to the inline comment</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (417).png" alt=""><figcaption><p>Request a fix by replying to the inline comment</p></figcaption></figure>
 
 * Request a different suggestion by replying with the `@snyk /fix` command to a previously generated fix. Snyk Agent fix can generate up to five potential fixes, depending on the issue type.
 * Apply a specific fix by using the `@snyk /apply #` command, where # is the number of the suggestion the user wishes to apply. A commit is created by Snyk on the PR branch, containing the selected fix.
@@ -137,7 +137,7 @@ The Snyk Agent fix in the PR feature enables the user to request and apply fixes
 ### Exceptions
 
 * The `@snyk /fix` command can be used only for automatically fixable vulnerabilities, identified in the inline comments with a zap icon and command description. See  [fix-code-vulnerabilities-automatically.md](../../snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md "mention") for supported languages and limitations.
-* Fixes expire after the time displayed in each suggestion, in accordance with the [#cache-retention-period-related-to-vulnerability-source-data](../../../working-with-snyk/how-snyk-handles-your-data.md#cache-retention-period-related-to-vulnerability-source-data "mention"). After expiration, a new fix can be requested by using the `@snyk /fix` command.
+* Fixes expire after the time displayed in each suggestion, in accordance with the [#cache-retention-period-related-to-vulnerability-source-data](../../../snyk-data-and-governance/how-snyk-handles-your-data.md#cache-retention-period-related-to-vulnerability-source-data "mention"). After expiration, a new fix can be requested by using the `@snyk /fix` command.
 * Snyk Agent fix in the PR is not supported for [Snyk Code Local Engine](../../snyk-code/snyk-code-local-engine.md).
 * The `@snyk /fix` and `@snyk /apply #` commands can be used only as replies to the Inline Comments created by Snyk, commands created on other comment threads will not be processed.
 
@@ -177,7 +177,7 @@ Inline comments are available only for issues detected by Snyk Code PR Checks. T
 
 3. **Inline Comments** are enabled in the **Pull Request Experience** section for your integration.
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption><p>Configuration details to enable Inline Comments</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (419).png" alt=""><figcaption><p>Configuration details to enable Inline Comments</p></figcaption></figure>
 
 ### Why are some findings not appearing as inline comments?
 

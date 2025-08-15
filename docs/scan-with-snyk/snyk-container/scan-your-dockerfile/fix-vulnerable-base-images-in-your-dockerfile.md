@@ -35,7 +35,7 @@ To enable automatic update PRs, navigate to **Settings** > **Integrations** and 
 
 Alternatively, you can open a fix PR manually from the Project page by clicking **Open a Fix PR** for the base image version you wish to upgrade to.
 
-<figure><img src="../../../.gitbook/assets/open_fix_PR (1).png" alt="Open a fix PR to upgrade the base image"><figcaption><p>Open a fix PR</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/open_fix_PR.png" alt="Open a fix PR to upgrade the base image"><figcaption><p>Open a fix PR</p></figcaption></figure>
 
 After the fix PR is opened, you can view it in your Git repository and see what the change is and where it takes place. The `FROM` line in your Dockerfile is updated with the new and improved version.
 

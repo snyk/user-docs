@@ -78,7 +78,7 @@ After the plugin is installed, every time a developer requests a download of an 
 
 <figure><img src="../../../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png" alt="Results of a scan"><figcaption><p>Results of a scan</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Example of results of a scan"><figcaption><p>Attributes displaying results of a scan</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (2).png" alt="Example of results of a scan"><figcaption><p>Attributes displaying results of a scan</p></figcaption></figure>
 
 By reviewing the results, you can evaluate the issues found in your artifact and determine a course of action.
 

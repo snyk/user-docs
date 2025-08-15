@@ -52,7 +52,7 @@ Depending on the integration options enabled for your application, risk factors 
 
 Risk factors are supported for stateful entities such as the following Kubernetes components: [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/), [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), and [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/).
 
-<figure><img src="../../../.gitbook/assets/image (640).png" alt=""><figcaption><p>Group settings - Insights tab in the Group settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (320).png" alt=""><figcaption><p>Group settings - Insights tab in the Group settings</p></figcaption></figure>
 
 {% hint style="info" %}
 Risk factor settings may take up to four hours to take effect.

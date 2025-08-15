@@ -54,7 +54,7 @@ The configuration settings apply to all Projects in that Organization. You can a
 
 You can configure Automatic fix PRs to work only for specific Projects rather than having Projects inherit the settings from the global integration.
 
-1. Navigate to **Projects** and expand the [target](../../../snyk-admin/snyk-projects/#target) containing your Open Source Project.
+1. Navigate to **Projects** and expand the [target](../../../snyk-platform-administration/snyk-projects/#target) containing your Open Source Project.
 2. Navigate to **Settings** and select an integration, for example, GitHub.
 3. In the **Automatic fix pull requests** section:
    * Select **Customize for only this project**

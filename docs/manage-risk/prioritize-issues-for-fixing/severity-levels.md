@@ -10,12 +10,12 @@ Severity levels also apply to license issues. See [Licenses](../../scan-with-sny
 
 The severity levels are defined in the following table.
 
-| Icon                                                                                                               | Level        | Description                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="../../.gitbook/assets/image (131) (1) (1) (1) (1) (1).png" alt="C" data-size="line">                     | **C**ritical | May allow attackers to access sensitive data and run code on your application                                                              |
-| <img src="../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="H" data-size="original"> | **High**     | May allow attackers to access sensitive data in your application                                                                           |
-| ![M](<../../.gitbook/assets/image (133) (1).png>)                                                                  | **M**edium   | Under some conditions, may allow attackers to access sensitive data on your application                                                    |
-| ![L](<../../.gitbook/assets/image (422).png>)                                                                      | **L**ow      | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
+| Icon                                                                                                       | Level        | Description                                                                                                                                |
+| ---------------------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="../../.gitbook/assets/image (107).png" alt="C" data-size="line">                                 | **C**ritical | May allow attackers to access sensitive data and run code on your application                                                              |
+| <img src="../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (2).png" alt="H" data-size="original"> | **High**     | May allow attackers to access sensitive data in your application                                                                           |
+| ![M](<../../.gitbook/assets/image (22).png>)                                                               | **M**edium   | Under some conditions, may allow attackers to access sensitive data on your application                                                    |
+| ![L](<../../.gitbook/assets/image (78).png>)                                                               | **L**ow      | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
 
 ## Severity levels and Priority Score
 
@@ -29,15 +29,15 @@ Severity levels are displayed throughout Snyk, to keep this information visible 
 
 For example, the severity levels appear in the **Pending tasks** section of the Dashboard:
 
-<img src="../../.gitbook/assets/image (158) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Severity levels with Pending tasks" data-size="original">
+<img src="../../.gitbook/assets/image (47).png" alt="Severity levels with Pending tasks" data-size="original">
 
-Severity levels are displayed in association with your [Snyk Projects](../../snyk-admin/snyk-projects/):
+Severity levels are displayed in association with your [Snyk Projects](../../snyk-platform-administration/snyk-projects/):
 
-<figure><img src="../../.gitbook/assets/image (43) (2).png" alt="Severity levels assoicated with Projects"><figcaption><p>Severity levels associated with Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43) (1).png" alt="Severity levels assoicated with Projects"><figcaption><p>Severity levels associated with Projects</p></figcaption></figure>
 
 The number of issues at each severity level is also displayed in the left sidebar of an issue card:
 
-<figure><img src="../../.gitbook/assets/image (39) (1) (1) (1).png" alt="Issue card; severity levels in sidebar"><figcaption><p>Issue card; severity levels in sidebar</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (39) (1).png" alt="Issue card; severity levels in sidebar"><figcaption><p>Issue card; severity levels in sidebar</p></figcaption></figure>
 
 ## How Snyk determines severity levels
 

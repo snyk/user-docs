@@ -23,7 +23,7 @@ Snyk can also retest and alert on the default branch on a scheduled basis and sh
 For more information, see [Run PR checks](pull-requests/pull-request-checks/).
 
 {% hint style="info" %}
-Scans may be limited on your account, depending on your[ Pricing Plan](../implement-snyk/enterprise-implementation-guide/trial-limitations.md). For more information, see [What counts as a test?](../working-with-snyk/what-counts-as-a-test.md)
+Scans may be limited on your account, depending on your[ Pricing Plan](../implementation-and-setup/enterprise-implementation-guide/trial-limitations.md). For more information, see [What counts as a test?](../snyk-data-and-governance/what-counts-as-a-test.md)
 {% endhint %}
 
 ## The scanning process
@@ -44,16 +44,16 @@ The following resources are available for all users:
 
 ### Write and deploy your code
 
-* Using the [Snyk CLI](../cli-ide-and-ci-cd-integrations/snyk-cli/), you can scan locally on your machine. This is useful in scanning open-source and static code as well as containers and infrastructure as code configurations, including complex files that are templated with variables, such as Terraform plan files.
-* Using [Snyk IDE Plugins](../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
-* Using [Git integrations](../scm-integrations/organization-level-integrations/), you can improve security in your Git repositories for both your code and deployed applications.
-* Using [CI/CD integrations](../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/), you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
+* Using the [Snyk CLI](../developer-tools/snyk-cli/), you can scan locally on your machine. This is useful in scanning open-source and static code as well as containers and infrastructure as code configurations, including complex files that are templated with variables, such as Terraform plan files.
+* Using [Snyk IDE Plugins](../developer-tools/snyk-ide-plugins-and-extensions/), you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
+* Using [Git integrations](../developer-tools/scm-integrations/organization-level-integrations/), you can improve security in your Git repositories for both your code and deployed applications.
+* Using [CI/CD integrations](../developer-tools/snyk-ci-cd-integrations/), you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
 
 ### Monitor your code in production
 
-Before integrating your code into production, use the [`snyk monitor`](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/monitor.md) or [`snyk container monitor`](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/container-monitor.md) CLI command to identify issues introduced into open-source and container Projects, monitoring these Projects for vulnerabilities before pushing them into production.
+Before integrating your code into production, use the [`snyk monitor`](../developer-tools/snyk-cli/commands/monitor.md) or [`snyk container monitor`](../developer-tools/snyk-cli/commands/container-monitor.md) CLI command to identify issues introduced into open-source and container Projects, monitoring these Projects for vulnerabilities before pushing them into production.
 
-For more information, see [Monitor your projects at regular intervals](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals.md).
+For more information, see [Monitor your projects at regular intervals](../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals.md).
 
 ### Manage and fix issues using Snyk
 
@@ -73,6 +73,6 @@ Snyk offers capabilities to address issues both reactively and proactively:
 
 ### Deployment and rollout recommendations
 
-Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams benefit from being agile and determining what works best for their workflow. For more details, see the [Team implementation guide](../implement-snyk/team-implementation-guide/).
+Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams benefit from being agile and determining what works best for their workflow. For more details, see the [Team implementation guide](../implementation-and-setup/team-implementation-guide/).
 
-With large organizations developing hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For more details, see the [Enterprise implementation guide](../implement-snyk/enterprise-implementation-guide/).
+With large organizations developing hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For more details, see the [Enterprise implementation guide](../implementation-and-setup/enterprise-implementation-guide/).

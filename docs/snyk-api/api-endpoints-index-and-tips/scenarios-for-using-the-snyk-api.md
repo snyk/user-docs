@@ -26,7 +26,7 @@ Scenario: [assign-users-to-all-orgs](https://github.com/snyk-playground/cx-tools
 
 ### Add users to organizations at scale ahead of the first login
 
-Scenario: [Provision users to Orgs via API](../../snyk-admin/user-management-with-the-api/provision-users-to-organizations-using-the-api.md)
+Scenario: [Provision users to Orgs via API](../../snyk-platform-administration/user-management-with-the-api/provision-users-to-organizations-using-the-api.md)
 
 **Endpoint used:**\
 [Provision a user to the organization](../reference/organizations-v1.md#org-orgid-provision)

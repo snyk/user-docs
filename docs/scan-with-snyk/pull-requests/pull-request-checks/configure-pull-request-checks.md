@@ -12,15 +12,15 @@ When using a brokered connection Snyk Broker version 4.206 and above is required
 
 To check for open-source and licensing issues and code security, ensure that you have established the following:
 
-* You have the Group Admin role so you have access to all integration settings. See [Member roles](../../../snyk-admin/user-roles/user-role-management.md).
-* You have [set up a Git repository integration](../../../scm-integrations/organization-level-integrations/). For help, see the Snyk Learn course [Source code manager configuration](https://learn.snyk.io/lesson/configure-snyk-scm/).
+* You have the Group Admin role so you have access to all integration settings. See [Member roles](../../../snyk-platform-administration/user-roles/user-role-management.md).
+* You have [set up a Git repository integration](../../../developer-tools/scm-integrations/organization-level-integrations/). For help, see the Snyk Learn course [Source code manager configuration](https://learn.snyk.io/lesson/configure-snyk-scm/).
 * Import a Project to have a working Git repository.
 * For code security (Snyk Code), meet all of the above conditions and then contact your Snyk representative to enable the feature for you.
 
 {% hint style="info" %}
 PR Checks rely on webhooks from the SCM. Integration scope must include the ability to create webhooks.
 
-A PR Check is counted as a test within your Organization's test count, including automatic checks of new commits in an open pull request. See[ What counts as a test](../../../working-with-snyk/what-counts-as-a-test.md). The number of tests allowed is determined by the [pricing plans](../../../implement-snyk/enterprise-implementation-guide/trial-limitations.md).
+A PR Check is counted as a test within your Organization's test count, including automatic checks of new commits in an open pull request. See[ What counts as a test](../../../snyk-data-and-governance/what-counts-as-a-test.md). The number of tests allowed is determined by the [pricing plans](../../../implementation-and-setup/enterprise-implementation-guide/trial-limitations.md).
 {% endhint %}
 
 ## Types of Snyk scans supported
@@ -31,7 +31,7 @@ You can analyze the changed code with PR Checks as follows:
 * **Snyk Open Source**: Snyk analyzes dependency manifest or supported files for known security vulnerabilities that meet a threshold, such as exceeding severity, or checks to determine whether a fix is available.
 * **Open Source license check**: Snyk validates package licenses against the configured policy for license policy violations.
 
-PR Checks also support all programming languages and frameworks supported by the Snyk Code and Open Source engines. For more information, see [Supported languages, package managers, and frameworks](../../../supported-languages-package-managers-and-frameworks/).
+PR Checks also support all programming languages and frameworks supported by the Snyk Code and Open Source engines. For more information, see [Supported languages, package managers, and frameworks](../../../supported-languages/supported-languages-package-managers-and-frameworks.md).
 
 ## How configuration of PR Checks works
 
@@ -71,7 +71,7 @@ If you cannot see the **Code Analysis** section, ensure that your user has the G
 
 When switched on, this will cause the PR check to fail when the PR introduces new vulnerabilities that are fixable by Snyk. PR checks will not fail on newly introduced vulnerabilities if Snyk is unable to fix them.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-28 at 12.06.13 (1) (1).png" alt="Pull request check settings to analyze open-source and licensing issues." width="563"><figcaption><p>PR check settings to analyze open-source and licensing issues</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-28 at 12.06.13.png" alt="Pull request check settings to analyze open-source and licensing issues." width="563"><figcaption><p>PR check settings to analyze open-source and licensing issues</p></figcaption></figure>
 
 4. Either click **Save** to save the changes, select the Save dropdown and click **Apply changes to all overridden Projects** to extend the current configuration to Projects with custom settings. For more information, see [Configure PR Checks at the Project level](configure-pull-request-checks.md#configure-pr-checks-at-the-project-level).
 
@@ -79,13 +79,13 @@ When switched on, this will cause the PR check to fail when the PR introduces ne
 
 You can configure PR checks to work only for specific Projects:
 
-1. Navigate to **Projects** and expand the [target](../../../snyk-admin/snyk-projects/#target) containing your Project.
+1. Navigate to **Projects** and expand the [target](../../../snyk-platform-administration/snyk-projects/#target) containing your Project.
 2. Click a Project name to open it. Based on the Project type, you can choose the following:
 
 * **package.json** to check for open-source and licensing issues.
 * **Code analysis** to check for security issues in your code.
 
-<figure><img src="../../../.gitbook/assets/project-overview (1).png" alt="Project overview"><figcaption><p>Project overview</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project-overview.png" alt="Project overview"><figcaption><p>Project overview</p></figcaption></figure>
 
 6. Navigate to **Settings.**
 7. On the left side, select your integration. For this example, GitHub has been integrated with Snyk.

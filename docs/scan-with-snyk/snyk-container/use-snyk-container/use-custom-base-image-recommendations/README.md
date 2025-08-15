@@ -113,7 +113,7 @@ You can modify previously imported container Projects in order to attach a Docke
 
 On the Project page for the application image, navigate to **Settings** and configure the Dockerfile by clicking **Configure Dockerfile** and selecting your source control system from the dropdown.
 
-<figure><img src="../../../../.gitbook/assets/configure_project_dockerfile (1).png" alt=""><figcaption><p>Configure the Project Dockerfile</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/configure_project_dockerfile.png" alt=""><figcaption><p>Configure the Project Dockerfile</p></figcaption></figure>
 
 Choose the Dockerfile repository and add the path to your Dockerfile. Click **Update Dockerfile**.
 

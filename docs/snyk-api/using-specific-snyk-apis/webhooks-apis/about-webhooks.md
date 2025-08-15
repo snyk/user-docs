@@ -24,7 +24,7 @@ Get real-time security alerts aggregated across various sources into a single pl
 
 ### Vulnerability Management and Aggregation
 
-Browse the various [Snyk Partner integrations](../../../integrate-with-snyk/partner-integrations.md) for a comprehensive list of solutions.
+Browse the various [Snyk Partner integrations](../../../integrations/partner-integrations.md) for a comprehensive list of solutions.
 
 ## Security SSL
 

@@ -12,7 +12,7 @@ First of all, we need to create a new Zap in [Zapier](https://zapier.com).
 
 In order to have an access to request headers, we need to create **"Catch Raw Hook"** trigger. It comes with a disadvantage that request payload will be provided as a string and we will need to parse it to the JSON.
 
-![](<../../../../.gitbook/assets/untitled (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/untitled (1).png>)
 
 It will provide us a Webhook url, were we can send requests:
 

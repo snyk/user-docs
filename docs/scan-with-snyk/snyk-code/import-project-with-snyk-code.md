@@ -1,8 +1,8 @@
 # Import Project with Snyk Code
 
-Imported Projects are organized under Target folders on the Projects page, named after the Git repository account and specific repository. See [Import a Project to scan and identify issues](../../getting-started/#import-a-project-to-scan-and-identify-issues).
+Imported Projects are organized under Target folders on the Projects page, named after the Git repository account and specific repository. See [Import a Project to scan and identify issues](../../discover-snyk/getting-started/#import-a-project-to-scan-and-identify-issues).
 
-Configure the test frequency by navigating to **Code Analysis Project** > **Settings**. See [Snyk Code Analysis test frequency settings](../../snyk-admin/snyk-projects/#test-frequency-settings).
+Configure the test frequency by navigating to **Code Analysis Project** > **Settings**. See [Snyk Code Analysis test frequency settings](../../snyk-platform-administration/snyk-projects/#test-frequency-settings).
 
 To do a manual test on your repository, you can use the [Retest now option](manage-code-vulnerabilities/#retesting-code-repository).
 
@@ -10,7 +10,7 @@ To do a manual test on your repository, you can use the [Retest now option](mana
 
 If you want to test repositories already imported to Snyk before the [Snyk Code option was enabled](configure-snyk-code.md#enable-snyk-code-in-snyk-web-ui), you need to re-import them (see [Snyk Code conditions](configure-snyk-code.md#conditions)).
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../snyk-admin/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](../../snyk-platform-administration/groups-and-organizations/).
 2. Navigate to **Projects** > **Add projects**.
 3. In the **Enable Snyk Code** section, change the setting to **Enabled**.
 4. Select the Git repository containing the repositories you want to re-import.

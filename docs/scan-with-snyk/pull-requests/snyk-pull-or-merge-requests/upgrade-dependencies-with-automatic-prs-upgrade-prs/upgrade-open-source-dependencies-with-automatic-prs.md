@@ -8,7 +8,7 @@ After you import Git repositories, Snyk continuously monitors these repositories
 
 Snyk supports the Automatic dependency upgrade pull requests feature for npm, Yarn, and Maven Central repositories with the following Source Control Managers (SCMs): GitHub, GitHub Enterprise, GitHub Cloud App, Bitbucket Server, Bitbucket Cloud, Bitbucket Connect, GitLab, and Azure Repos.
 
-You can also use this feature with Snyk Broker. To use this feature, you must upgrade Snyk Broker to v. 1.4.55.0 or later. For more information, see [Upgrade the Snyk Broker client](../../../../enterprise-setup/snyk-broker/update-the-snyk-broker-client.md).
+You can also use this feature with Snyk Broker. To use this feature, you must upgrade Snyk Broker to v. 1.4.55.0 or later. For more information, see [Upgrade the Snyk Broker client](../../../../implementation-and-setup/enterprise-setup/snyk-broker/update-the-snyk-broker-client.md).
 
 ## Automatic dependency (upgrade) PRs
 
@@ -41,7 +41,7 @@ Follow these steps to configure automatic upgrade PRs for an entire Organization
 1. On the Snyk Web UI, open the required Organization.
 2. Navigate to **Settings** > **Organization Settings** > **Integrations,** find your configured SCM, and click **Edit settings** at the end of the row for that integration.
 
-<figure><img src="../../../../.gitbook/assets/settings-integrations-source-control-github (1).png" alt="Editing integration settings"><figcaption><p>Editing integration settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-integrations-source-control-github.png" alt="Editing integration settings"><figcaption><p>Editing integration settings</p></figcaption></figure>
 
 3. On the **Settings** page of the selected integration, navigate to the **Automatic dependency upgrade PRs** section.
 4. In this section, perform the following actions:
@@ -50,7 +50,7 @@ Follow these steps to configure automatic upgrade PRs for an entire Organization
    * **Include major version in upgrade recommendation** – select whether to include major version upgrades in the recommendations. By default, only patches and minor versions are included in the upgrade recommendations.
    * **Dependencies to ignore** – enter the exact name of the dependencies that should NOT be included in the **Automatic upgrade** operation. You can only enter lowercase letters.
 
-<figure><img src="../../../../.gitbook/assets/image (437).png" alt="Enabling Automatic dependency upgrade PFs"><figcaption><p>Enabling Automatic dependency upgrade PFs</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (214).png" alt="Enabling Automatic dependency upgrade PFs"><figcaption><p>Enabling Automatic dependency upgrade PFs</p></figcaption></figure>
 
 5. To save and apply your changes, select one of the following from the **Save** dropdown:
    * **Save**  – your changes are saved and will be applied to all the Projects in the Organization that are configured to inherit these Settings from the Organization. Projects that have Custom Settings will not be influenced by this change.
@@ -87,6 +87,6 @@ Follow these steps to configure automatic upgrade PRs for a specific Project:
        You can only enter lowercase letters.
      * Click **Update dependency upgrade settings** to save your changes.
 
-<figure><img src="../../../../.gitbook/assets/github-settings-automatic-dependecny-upgrade-pull-requests (1).png" alt="Automatic dependency upgrade pull requests settings at the Project level"><figcaption><p>Automatic dependency upgrade pull requests settings at the Project level</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/github-settings-automatic-dependecny-upgrade-pull-requests.png" alt="Automatic dependency upgrade pull requests settings at the Project level"><figcaption><p>Automatic dependency upgrade pull requests settings at the Project level</p></figcaption></figure>
 
 After you have completed these steps, Snyk scans the Project and automatically submits Upgrade PRs if the scan discovers that an upgrade is available. If a newer version is released for an existing Snyk Upgrade PR or an existing Fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.

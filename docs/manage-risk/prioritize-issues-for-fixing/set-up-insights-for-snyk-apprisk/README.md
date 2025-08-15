@@ -31,7 +31,7 @@ You need to meet the following conditions to use the Loaded package risk factor:
 
 * There is a package that is loaded more often than others poses a higher risk to your application compared to one that is rarely loaded.
 * This is the minimum requirement you need to set up for the loaded package risk factor to be applied for runtime prioritization with Insights:
-* You must set up the Dynatrace or Sysdig integrations with Snyk AppRisk, or the [Snyk Runtime Sensor](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md). You can find more details on the [runtime third-party integrations](../../snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md) page.&#x20;
+* You must set up the Dynatrace or Sysdig integrations with Snyk AppRisk, or the [Snyk Runtime Sensor](../../../integrations/snyk-runtime-sensor.md). You can find more details on the [runtime third-party integrations](../../../integrations/connect-a-third-party-integration.md) page.&#x20;
 
 #### **OS condition risk factor**
 
@@ -62,7 +62,7 @@ By scanning both the source code and the third-party dependencies, you will get 
 ## Prioritization process overview
 
 {% hint style="info" %}
-Snyk recommends installing the [Snyk Runtime Sensor](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) to achieve the most effective integration and access its continuously expanded set of features.
+Snyk recommends installing the [Snyk Runtime Sensor](../../../integrations/snyk-runtime-sensor.md) to achieve the most effective integration and access its continuously expanded set of features.
 {% endhint %}
 
 The major steps in setting up issues are as follows:
@@ -98,7 +98,7 @@ All these settings can be found in the Snyk Web UI, under Group Settings, the Se
 
 You can enable or disable the available risk factors: [Deployed](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), [Loaded package](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md), [OS condition](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-os-condition.md), [Public facing](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-public-facing.md). When a risk factor is disabled, it will not be used to calculate issues.
 
-You can enable or disable the risk factors from [Snyk Web UI](../../../getting-started/snyk-web-ui.md), Group Settings, Settings option, Risk factors.
+You can enable or disable the risk factors from [Snyk Web UI](../../../discover-snyk/getting-started/snyk-web-ui.md), Group Settings, Settings option, Risk factors.
 
 ### Provider selection
 
@@ -126,11 +126,11 @@ Ensure each source name is assigned to only one cluster mapping.
 
 When prioritizing issues, it is important to understand the available integration options and associated risk factors.&#x20;
 
-Here are the integration options that you can choose from when setting up issues prioritization. You can customize the settings by navigating to the Group level [Snyk Web UI](../../../getting-started/snyk-web-ui.md), the Setting menu, and then the Insights option.&#x20;
+Here are the integration options that you can choose from when setting up issues prioritization. You can customize the settings by navigating to the Group level [Snyk Web UI](../../../discover-snyk/getting-started/snyk-web-ui.md), the Setting menu, and then the Insights option.&#x20;
 
-* [Snyk Runtime Sensor](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md): Used for deeper runtime analysis, providing detailed insight into the actual usage and potential vulnerabilities of your applications during execution. This sensor helps in gathering live traffic data, identifying runtime vulnerabilities, and assessing potential risks based on real-time application behavior.
+* [Snyk Runtime Sensor](../../../integrations/snyk-runtime-sensor.md): Used for deeper runtime analysis, providing detailed insight into the actual usage and potential vulnerabilities of your applications during execution. This sensor helps in gathering live traffic data, identifying runtime vulnerabilities, and assessing potential risks based on real-time application behavior.
 * [Kubernetes Connector](set-up-insights-kubernetes-connector.md): Offers comprehensive monitoring for your Kubernetes deployments. This integration helps identify vulnerabilities within Kubernetes clusters and provides data on workload vulnerabilities, infrastructure misconfigurations, and potential malicious activity.
-* [Third-party Integrations](../../snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md): These integrations, such as cloud providers or CI/CD tools, provide additional context and data sources for better vulnerability assessment. They help identify misconfigurations, exposure points, and integration-specific vulnerabilities.
+* [Third-party Integrations](../../../integrations/connect-a-third-party-integration.md): These integrations, such as cloud providers or CI/CD tools, provide additional context and data sources for better vulnerability assessment. They help identify misconfigurations, exposure points, and integration-specific vulnerabilities.
 
 ### Risk factors mapped to integration options
 

@@ -9,11 +9,11 @@ The redesigned Snyk Analytics experience in Early Access is available to all cus
 Learn how to build custom dashboards, access enhanced metrics, and explore Tenant-level analytics. The redesigned Snyk Analytics includes:
 
 * Customizable analytics landing page: A new tenant-level landing page featuring a widget inventory. You can select and arrange widgets to create a personalized dashboard focused on the metrics most relevant to your needs.
-* Saved views: This new experience features ‌[Saved Views](../../manage-issues/reporting/#saved-views).
+* Saved views: This new experience features ‌[Saved Views](../reporting/#saved-views).
 * Report catalog: A centralized catalog of Snyk Group-level reports. Use this to discover and access pre-built reports relevant to specific Groups within your Organization.
 * Issues/Assets drill-down: Enhanced drill-down capabilities allow you to explore issues and assets in greater detail directly from the dashboard.
 
-<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
 
 ## User access permissions
 
@@ -68,7 +68,7 @@ You can select and remove metrics from each section to tailor your view.
 
 ### Report catalog
 
-The comprehensive suite of reports helps you manage and improve your application security posture. The following reports are available at the Tenant level. For more details on each report, view [available Snyk reports](../../manage-issues/reporting/available-snyk-reports.md).
+The comprehensive suite of reports helps you manage and improve your application security posture. The following reports are available at the Tenant level. For more details on each report, view [available Snyk reports](../reporting/available-snyk-reports.md).
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-07-15 at 11.22.49 AM.png" alt=""><figcaption></figcaption></figure>
 

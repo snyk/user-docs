@@ -5,7 +5,7 @@
 Package repository integrations are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 **Supported projects**\
-The Artifactory Package Repository integration supports [Node.js](../../../../supported-languages-package-managers-and-frameworks/javascript/#package-managers-and-supported-file-extensions) (npm and Yarn) and [Maven](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#package-managers-and-supported-file-extensions) Projects. For [Improved Gradle SCM scanning](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning), use the Maven settings on this page.
+The Artifactory Package Repository integration supports [Node.js](../../../../supported-languages/supported-languages-list/javascript/#package-managers-and-supported-file-extensions) (npm and Yarn) and [Maven](../../../../supported-languages/supported-languages-list/java-and-kotlin/#package-managers-and-supported-file-extensions) Projects. For [Improved Gradle SCM scanning](../../../../supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning), use the Maven settings on this page.
 {% endhint %}
 
 Snyk can use custom Artifactory Package Repositories with Maven Projects.
@@ -24,7 +24,7 @@ You can choose whether to use Artifactory as a mirror or as an additional reposi
 
 ## Mirrors
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Maven settings, choose Type</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (338).png" alt=""><figcaption><p>Maven settings, choose Type</p></figcaption></figure>
 
 Choose a value for the Type, either **Direct** or, if you are using authentication, **Integration.**
 

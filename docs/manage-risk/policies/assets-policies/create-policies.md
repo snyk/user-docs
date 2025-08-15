@@ -42,7 +42,7 @@ You can customize the filters and actions or use the template as is. After finis
 
 The risk factors on assets are taking the release status of the applied [risk factor](../../prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md).
 
-The Runtime discovered and Runtime last seen filters are taking the release status of the used runtime [integration](../../snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md).
+The Runtime discovered and Runtime last seen filters are taking the release status of the used runtime [integration](../../../integrations/connect-a-third-party-integration.md).
 {% endhint %}
 
 The following video explains how to create a new policy:
@@ -68,7 +68,7 @@ Using and/or operators in the asset policy editor
 After defining filter components, you need to define the actions that the policy has to perform on the filtered assets. Asset policies support the following actions:
 
 * **Send Email** - Receive an email every time there are asset updates. You can choose between daily emails or scheduling the checks. You can include a link to the relevant assets. Each notification lists all impacted assets. You can view them individually or see the aggregated view by clicking **Click Here**. The list of assets displayed in the email notification is automatically generated.
-* **Send Slack Message** - Receive a Slack notification every time there are asset updates. You need to add your [Slack webhook URL](../../../integrate-with-snyk/jira-and-slack-integrations/slack-integration.md), then you can choose between daily emails or scheduling the checks. You can include a link to the relevant assets. Each notification lists all impacted assets. You can view them individually or see the aggregated view by clicking **Click Here**. The list of assets displayed in the email notification is automatically generated.
+* **Send Slack Message** - Receive a Slack notification every time there are asset updates. You need to add your [Slack webhook URL](../../../integrations/jira-and-slack-integrations/slack-integration.md), then you can choose between daily emails or scheduling the checks. You can include a link to the relevant assets. Each notification lists all impacted assets. You can view them individually or see the aggregated view by clicking **Click Here**. The list of assets displayed in the email notification is automatically generated.
 * **Set Asset Class** - Sets the class on the matched assets. Removing the policy or turning in off does not retroactively change the asset class back to default.
 * **Set Asset Tag** - Sets a tag on the matched assets. Removing the policy or turning in off will remove the tags of this policy from the relevant assets.
 * **Set Coverage Control Policy** - Sets a control on filtered assets that checks whether selected security products are scanning assets, optionally within a given timeframe. Assets that fail this control will be marked accordingly on inventory pages. This control applies the OR logic across products.

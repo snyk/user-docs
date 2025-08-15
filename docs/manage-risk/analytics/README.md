@@ -3,7 +3,7 @@
 Analytics provides executives, as well as Application Security (AppSec) leaders and practitioners a view into the performance of their AppSec program. Snyk customers can understand at a glance the strengths and weaknesses of their program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment. Analytics is available at the tenant level.&#x20;
 
 {% hint style="info" %}
-To access Analytics, you need to have one of the following [tenant roles](../../snyk-admin/tenant-groups-and-organizations/tenant/manage-users-in-a-tenant.md): Tenant Admin, Tenant Viewer.
+To access Analytics, you need to have one of the following [tenant roles](../../snyk-platform-administration/groups-and-organizations/tenant/manage-users-in-a-tenant.md): Tenant Admin, Tenant Viewer.
 {% endhint %}
 
 The Analytics view is structured as follows:

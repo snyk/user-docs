@@ -8,7 +8,7 @@ The easiest way to start building a new Snyk App is to clone the [Demo Snyk Apps
 
 This document describes how to create a new Snyk App in the language of your choice. Use this document along with the [API reference documentation for Snyk Apps](../../reference/apps.md).
 
-Snyk Apps are based on the [Snyk API](../../) so that your integrations are inherently stable and secure.
+Snyk Apps are based on the [Snyk API](../../snyk-api.md) so that your integrations are inherently stable and secure.
 
 ## Integrating Apps with Snyk
 
@@ -26,7 +26,7 @@ Authorizing a Snyk App that has the `user` context grants the Snyk App access to
 
 ### Tenant context
 
-When a user authorizes a Snyk App that has the `tenant` context, the user selects the way to connect to either a Snyk Organization or a Group, with access to either all or one of the Organizations in the Group. The resulting connection is no longer tied to that specific user, so it is not bound by the user’s access or lifecycle but is linked to the lifecycle of the Organization. For more information, see [Organizations](../../../snyk-admin/groups-and-organizations/organizations/) and  [Groups](../../../snyk-admin/groups-and-organizations/groups/).
+When a user authorizes a Snyk App that has the `tenant` context, the user selects the way to connect to either a Snyk Organization or a Group, with access to either all or one of the Organizations in the Group. The resulting connection is no longer tied to that specific user, so it is not bound by the user’s access or lifecycle but is linked to the lifecycle of the Organization. For more information, see [Organizations](../../../snyk-platform-administration/groups-and-organizations/organizations/) and  [Groups](../../../snyk-platform-administration/groups-and-organizations/groups/).
 
 The `scopes` of an App determine which actions an App can perform while connected to a Snyk account. The`scopes` are related to actions performed through Snyk Organizations, which determine the API endpoints that can be used in an App. Endpoints authorized through a Snyk Group are not supported. For more information about scopes, see [Scopes to request](scopes-to-request.md).
 
@@ -44,7 +44,7 @@ Navigate to your personal **Account Settings** and select the **Authorized Snyk 
 
 You can also navigate directly to the [Authorized Snyk Apps page](https://app.snyk.io/account/manage/authorized-apps) or open the page from your Organization **Settings**.
 
-<figure><img src="../../../.gitbook/assets/image (472) (1).png" alt="Snyk Apps management UI"><figcaption><p>Snyk Apps management UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (225).png" alt="Snyk Apps management UI"><figcaption><p>Snyk Apps management UI</p></figcaption></figure>
 
 ### Revoking a Snyk App from the management UI
 

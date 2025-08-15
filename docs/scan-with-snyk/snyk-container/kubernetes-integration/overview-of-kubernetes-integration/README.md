@@ -9,7 +9,7 @@ Snyk is able to integrate with Kubernetes, enabling you to import and scan your 
 
 ## **How Kubernetes integration works**
 
-Kubernetes integration follows this process:&#x20;
+Kubernetes integration follows this process:
 
 1. Your administrator installs a controller on your cluster, authenticating the integration with a unique integration ID and a service account token with the needed permissions generated from your Snyk account. For more information, including the permissions needed, see [Prerequisites for installing the Snyk Controller](../install-the-snyk-controller/#prerequisites-for-installing-the-snyk-controller).
 2. You install the controller with one of the options:
@@ -27,9 +27,9 @@ To maintain the health of the database, Snyk removes any information relating to
 If an image and its corresponding Project are removed, and you reimport the same workload during the eight days when the metadata still resides in the Snyk database, you can create the Project again.
 {% endhint %}
 
-## **The architecture of Snyk and Kubernetes integration**&#x20;
+## **The architecture of Snyk and Kubernetes integration**
 
-<figure><img src="../../../../.gitbook/assets/System Diagram-Kubernetes integration (1).jpg" alt="Kubernetes integration architecture diagram"><figcaption><p>Kubernetes integration architecture diagram</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/System Diagram-Kubernetes integration.jpg" alt="Kubernetes integration architecture diagram"><figcaption><p>Kubernetes integration architecture diagram</p></figcaption></figure>
 
 Based on the process exemplified in this diagram:
 
@@ -51,4 +51,3 @@ If you have an existing Red Hat Enterprise Agreement (or other negotiated agreem
 ## Kubernetes integration troubleshooting
 
 For troubleshooting information on the Kubernetes integration or the Snyk Controller, as well as for common onboarding errors, see the [Kubernetes integration troubleshooting](https://support.snyk.io/s/article/Kubernetes-Integration-troubleshooting) support page.
-

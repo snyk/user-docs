@@ -5,7 +5,7 @@
 Package repository integrations are available with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 **Supported projects**\
-The Nexus Repository Manager integration supports [Node.js](../../../../supported-languages-package-managers-and-frameworks/javascript/#package-managers-and-supported-file-extensions) (npm and Yarn) and [Maven](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#package-managers-and-supported-file-extensions) Projects.  For [Improved Gradle SCM scanning](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning), use the Maven settings.
+The Nexus Repository Manager integration supports [Node.js](../../../../supported-languages/supported-languages-list/javascript/#package-managers-and-supported-file-extensions) (npm and Yarn) and [Maven](../../../../supported-languages/supported-languages-list/java-and-kotlin/#package-managers-and-supported-file-extensions) Projects.  For [Improved Gradle SCM scanning](../../../../supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning), use the Maven settings.
 {% endhint %}
 
 Snyk can use Nexus Repository Manager with Maven Projects.
@@ -22,7 +22,7 @@ You can choose to use Nexus as a mirror or as an additional repository where you
 
 These settings are very similar to what you have in `~/.m2/settings.xml`.
 
-<figure><img src="../../../../.gitbook/assets/image (667).png" alt=""><figcaption><p>Set up for Mirrors</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (344).png" alt=""><figcaption><p>Set up for Mirrors</p></figcaption></figure>
 
 Choose a value for the Type, either **Direct** or, if you are using using authentication, **Integration**.
 

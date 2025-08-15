@@ -13,7 +13,7 @@ Scanning CloudFormation provides security feedback on everything that is statica
 ### **Prerequisites for scanning CloudFormation files**
 
 * You must be an administrator for the Organization you are configuring in Snyk.
-* Ensure you have already integrated your Git repository, For details, see [Git repository (SCM) integrations](../../../../scm-integrations/organization-level-integrations/).
+* Ensure you have already integrated your Git repository, For details, see [Git repository (SCM) integrations](../../../../developer-tools/scm-integrations/organization-level-integrations/).
 
 ### **Configure Snyk to scan CloudFormation files**
 
@@ -26,4 +26,4 @@ Scanning CloudFormation provides security feedback on everything that is statica
 * If needed, review and adjust the **Infrastructure as code** **Severity settings** on the AWS tab in the example.\
   Check to select the file types to scan, CloudFormation, Terraform, or both, and from the pulldown selection, choose the severity level for each API Gateway.
 
-<figure><img src="../../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (3) (3).png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>

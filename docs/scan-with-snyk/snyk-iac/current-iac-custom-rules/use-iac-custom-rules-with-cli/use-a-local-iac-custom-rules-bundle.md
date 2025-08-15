@@ -10,7 +10,7 @@ In your Project folder, run the following command:
 snyk iac test --rules=bundle.tar.gz
 ```
 
-The configuration scan results now include issues from both the default Snyk rules and your custom rules. See [Understanding the IaC CLI test results](../../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/understand-the-iac-cli-test-results/).
+The configuration scan results now include issues from both the default Snyk rules and your custom rules. See [Understanding the IaC CLI test results](../../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/understand-the-iac-cli-test-results/).
 
 To troubleshoot a local custom rules bundle, enable debug logs by running the command with the `--d` options:
 

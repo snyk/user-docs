@@ -3,7 +3,7 @@
 In addition to fixing advice, Snyk can automatically create pull requests (PRs) on your behalf to upgrade your dependencies based on the scan results. To create PRs automatically in implementations with Snyk Broker, your administrator should first upgrade to v4.55.0 or later.
 
 {% hint style="info" %}
-For the basic steps in fixing vulnerabilities, see  [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To ensure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md#languages-supported-for-fix-pull-requests-or-merge-requests) and [Supported browsers](../../../getting-started/#supported-browsers) pages.
+For the basic steps in fixing vulnerabilities, see  [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To ensure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md#languages-supported-for-fix-pull-requests-or-merge-requests) and [Supported browsers](../../../discover-snyk/getting-started/#supported-browsers) pages.
 {% endhint %}
 
 {% hint style="info" %}
@@ -54,11 +54,11 @@ After you have reviewed the pull request, you can approve the merge.
 
 ## Generated Pull Requests report
 
-Snyk provides a report which for Enterprise plan customers that gives an overview of how [Fix](create-automatic-prs-for-new-fixes-fix-prs.md), [Backlog](create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md), and [Upgrade PRs](upgrade-dependencies-with-automatic-prs-upgrade-prs/) are used and highlights the efficiency of PR merges. For more information, see [Snyk Generated Pull Requests report](../../../manage-issues/reporting/available-snyk-reports.md#snyk-generated-pull-requests).
+Snyk provides a report which for Enterprise plan customers that gives an overview of how [Fix](create-automatic-prs-for-new-fixes-fix-prs.md), [Backlog](create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md), and [Upgrade PRs](upgrade-dependencies-with-automatic-prs-upgrade-prs/) are used and highlights the efficiency of PR merges. For more information, see [Snyk Generated Pull Requests report](../../../manage-risk/reporting/available-snyk-reports.md#snyk-generated-pull-requests).
 
 ## Snyk SCM webhooks
 
-To track pull request events, Snyk adds webhooks to your imported repositories. For more information, see the [GitHub and Git repository integrations](../../../scm-integrations/organization-level-integrations/).
+To track pull request events, Snyk adds webhooks to your imported repositories. For more information, see the [GitHub and Git repository integrations](../../../developer-tools/scm-integrations/organization-level-integrations/).
 
 Snyk uses these webhooks to:
 

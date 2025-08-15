@@ -2,7 +2,7 @@
 
 Snyk AppRisk provides a centralized view for monitoring risks and automates the collection of compliance data. AppRisk ensures that users prioritize the most critical risks, safeguarding your business and highlighting the effectiveness of your security measures.
 
-You can access Snyk AppRisk via the [Issues](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues) page from the [Snyk Web UI](../../getting-started/snyk-web-ui.md#view-and-prioritize-issues).
+You can access Snyk AppRisk via the [Issues](../../discover-snyk/getting-started/snyk-web-ui.md#view-and-prioritize-issues) page from the [Snyk Web UI](../../discover-snyk/getting-started/snyk-web-ui.md#view-and-prioritize-issues).
 
 **Issues** are available at the Group level or at the Organization level.&#x20;
 
@@ -27,7 +27,7 @@ The Risk Factor column and filter, and with it, the evidence graph information, 
 
 **Issues - Snyk AppRisk**&#x20;
 
-<figure><img src="../../.gitbook/assets/image (451) (1).png" alt="Issues page - Snyk AppRisk"><figcaption><p>Issues menu - Snyk AppRisk </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt="Issues page - Snyk AppRisk"><figcaption><p>Issues menu - Snyk AppRisk </p></figcaption></figure>
 
 The insights presented under the Issues menu for Snyk AppRisk work as illustrated in the following example.&#x20;
 

@@ -20,10 +20,10 @@ Snyk Essentials core capabilities overview
 
 Snyk Essentials includes the following features:&#x20;
 
-* [Integrations](../scm-integrations/group-level-integrations/) to support ingesting data from SCM tools for asset discovery, Snyk Application Security Testing products for security controls coverage, and ticketing or notification tools for policy actions. Use the the Integration page to add and set up new integrations.
+* [Integrations](../developer-tools/scm-integrations/group-level-integrations/) to support ingesting data from SCM tools for asset discovery, Snyk Application Security Testing products for security controls coverage, and ticketing or notification tools for policy actions. Use the the Integration page to add and set up new integrations.
 * [Policies](../manage-risk/policies/assets-policies/) to classify and tag assets with business context and configure actions using a Policy Builder UI.
-* [Inventory](../manage-assets/) layouts for managing assets and viewing Snyk coverage.
-* [Dashboard](../getting-started/snyk-web-ui.md#view-the-assets-dashboard) to view, add, and customize widgets.
+* [Inventory](../manage-assets/manage-assets.md) layouts for managing assets and viewing Snyk coverage.
+* [Dashboard](../discover-snyk/getting-started/snyk-web-ui.md#view-the-assets-dashboard) to view, add, and customize widgets.
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ The first import, synchronization, can take up to 24 hours to complete.
 
 ## Permissions
 
-Snyk Essentials is included in the Snyk Enterprise plan. You do not need additional permissions to access it. For more information on default user roles and permissions, see [Default user roles](../snyk-admin/user-roles/pre-defined-roles.md).
+Snyk Essentials is included in the Snyk Enterprise plan. You do not need additional permissions to access it. For more information on default user roles and permissions, see [Default user roles](../snyk-platform-administration/user-roles/pre-defined-roles.md).
 
 ## Login and authentication
 
@@ -90,8 +90,8 @@ Snyk Code does not automatically pick up the `git remoteurl`, even if the `.git`
 {% endhint %}
 
 2. If you do not have a `.git` folder available in the directory that the CLI is scanning, you can use different test or monitor commands to achieve the same result:
-   * [`snyk monitor`](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/monitor.md#remote-repo-url-less-than-url-greater-than), for Snyk Open Source
-   * [`snyk iac test`](../cli-ide-and-ci-cd-integrations/snyk-cli/commands/iac-test.md#remote-repo-url-less-than-url-greater-than) - also requires the `--report` command
+   * [`snyk monitor`](../developer-tools/snyk-cli/commands/monitor.md#remote-repo-url-less-than-url-greater-than), for Snyk Open Source
+   * [`snyk iac test`](../developer-tools/snyk-cli/commands/iac-test.md#remote-repo-url-less-than-url-greater-than) - also requires the `--report` command
    * `snyk container monitor` - no options available.
    * `snyk code test` - no options available.
 

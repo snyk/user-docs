@@ -1,6 +1,6 @@
 # Analyze and fix container images
 
-You can import container Projects into Snyk using the CLI command [`snyk container monitor`](../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/container-monitor.md). Alternatively, you can import Projects directly from a supported container registry using the Snyk Web UI.
+You can import container Projects into Snyk using the CLI command [`snyk container monitor`](../../../developer-tools/snyk-cli/commands/container-monitor.md). Alternatively, you can import Projects directly from a supported container registry using the Snyk Web UI.
 
 Snyk imports a snapshot of your container image and then scans the snapshot for vulnerabilities. Based on your configuration, daily or weekly, Snyk regularly scans the dependencies snapshotted in that original import, which in turn refers to its tag. Based on your configuration, Snyk sends you an update by email or Slack when any new vulnerabilities are identified.
 
@@ -32,7 +32,7 @@ If the Project is imported from a registry integration, on the **Projects** page
 
 When you open a container Project, the analysis and fix advice appear for that Project.
 
-<figure><img src="../../../.gitbook/assets/image (315) (1) (1) (1).png" alt="Project page displaying analysis and fix advice for a container Project"><figcaption><p>Analysis and fix advice for a container Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (315).png" alt="Project page displaying analysis and fix advice for a container Project"><figcaption><p>Analysis and fix advice for a container Project</p></figcaption></figure>
 
 The following information is displayed:
 
@@ -78,4 +78,4 @@ Recommendations for upgrading the base image include:
 * The number of vulnerabilities that exist in the recommended upgrade
 * A summary of the vulnerability severities.
 
-<figure><img src="../../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>

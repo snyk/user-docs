@@ -13,14 +13,14 @@ Snyk scans your Terraform code for misconfigurations and security issues as well
 * Log in to your account and navigate to the relevant Group and Organization that you want to manage.
 * If you  imported your repositories for testing before the infrastructure as code feature was enabled by your administrator, from the **Add project** screen, re-import that repository in order to detect the Terraform code:
 
-<figure><img src="../../../../.gitbook/assets/screenshot_2020-07-09_at_12.44.03 (1) (1) (3) (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (28).png" alt="Add project screen"><figcaption><p>Add project screen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/screenshot_2020-07-09_at_12.44.03 (1) (1) (3) (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (14).png" alt="Add project screen"><figcaption><p>Add project screen</p></figcaption></figure>
 
 Every time a repository is scanned, every Terraform file is imported as a separate Project, grouped together per repository, similar to the example shown.
 
 If you re-imported the repository in order to import the Terraform files, then Snyk imports and re-tests the already imported application manifest files, displaying the test time as "now".
 
-<figure><img src="../../../../.gitbook/assets/image (205).png" alt="List of Terraform Projects"><figcaption><p>List of Terraform Projects</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (84).png" alt="List of Terraform Projects"><figcaption><p>List of Terraform Projects</p></figcaption></figure>
 
 * Click the link for the Project of interest to you to view the scan results and to help correct your Terraform code:
 
-<figure><img src="../../../../.gitbook/assets/image (340) (1) (1) (1).png" alt="Terraform Project detail"><figcaption><p>Terraform Project detail</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (340).png" alt="Terraform Project detail"><figcaption><p>Terraform Project detail</p></figcaption></figure>

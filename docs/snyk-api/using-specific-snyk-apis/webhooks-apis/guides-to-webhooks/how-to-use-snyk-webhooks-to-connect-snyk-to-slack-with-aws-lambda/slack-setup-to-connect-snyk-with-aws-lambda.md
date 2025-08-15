@@ -20,7 +20,7 @@ To set up Slack Apps with a webhook, follow these steps:
     <figure><img src="https://lh3.googleusercontent.com/yc2jyH0npATioGnzPLv5WEmI762OIYoefYVztKfvfAS9iV6yHNudbralS8VfLE0NT2x9TqM7lDCVLfV_27cC6Z82P5qprCIu4FKnVco1FfzsDJb3t6_V5BowDpBYw8GrNEaW8TZGbb1hmXsQflr1eeCTNAhKNpbE-AbUJGnxT65Uu67niA_HdCklQg" alt=""><figcaption><p>Add features and functionality to Slack App, Incoming webhooks</p></figcaption></figure>
 9.  Activate incoming webhooks in that page.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1) (4) (1) (1) (1) (1).png" alt=""><figcaption><p>Incoming webhooks activation</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (45).png" alt=""><figcaption><p>Incoming webhooks activation</p></figcaption></figure>
 10. Generate a webhook URL for the channel you want by clicking on **Add New Webhook to Workspace**.
 11. Select the channel you want Snyk to post to. If you haven’t already done so, [create a channel](https://slack.com/intl/en-gb/help/articles/201402297-Create-a-channel).
 12. When the webhook has been created, copy and save the webhook URL to use in the next step in AWS.

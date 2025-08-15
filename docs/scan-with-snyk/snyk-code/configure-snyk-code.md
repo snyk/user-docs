@@ -2,7 +2,7 @@
 
 ## Conditions
 
-To use Snyk Code in an [IDE](../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/), [Snyk CLI](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/), and [Snyk API](../../snyk-api/), you must perform the following actions:
+To use Snyk Code in an [IDE](../../developer-tools/snyk-ide-plugins-and-extensions/), [Snyk CLI](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/), and [Snyk API](../../snyk-api/snyk-api.md), you must perform the following actions:
 
 1. [Enable Snyk Code in Snyk Web UI](configure-snyk-code.md#enable-snyk-code-in-snyk-web-ui)
 2. [Integrate Git repository with Snyk](configure-snyk-code.md#integrate-git-repository-with-snyk)
@@ -14,20 +14,20 @@ Snyk Code only scans and tests new repositories that are imported to Snyk. If a 
 
 Before scanning your code with Snyk Code, ensure the following:
 
-* You have completed the steps to [Getting started](../../getting-started/).
-* Your repositories contain code in a [supported language and platform](../../supported-languages-package-managers-and-frameworks/).
+* You have completed the steps to [Getting started](../../discover-snyk/getting-started/).
+* Your repositories contain code in a [supported language and platform](../../supported-languages/supported-languages-package-managers-and-frameworks.md).
 
 ## Enable Snyk Code in Snyk Web UI
 
 ### Prerequisites
 
-To enable Snyk Code in your Organization, you need to be an [Org Admin](../../snyk-admin/user-roles/pre-defined-roles.md).
+To enable Snyk Code in your Organization, you need to be an [Org Admin](../../snyk-platform-administration/user-roles/pre-defined-roles.md).
 
 ### Enable Snyk Code&#x20;
 
 If you've already set up an integration for the first time and enabled Snyk Code, you can check if the setting is still valid before importing repositories.
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../snyk-admin/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](../../snyk-platform-administration/groups-and-organizations/).
 2. Navigate to **Settings** > **Snyk Code**.
 3. In the **Enable Snyk Code** section, change the setting to **Enabled**.
 4. Click **Save changes**.
@@ -52,7 +52,7 @@ Then, you can import the required repositories to your Snyk account, and Snyk Co
 {% hint style="info" %}
 Snyk Code temporarily clones your repositories for code analysis. This requires appropriate permissions and HTTPS access to your SCM.
 
-For more information on how data is stored in Snyk, see [How Snyk handles your data](../../working-with-snyk/how-snyk-handles-your-data.md). For more details about integrations, see [Integrate with Snyk](../../integrate-with-snyk/).
+For more information on how data is stored in Snyk, see [How Snyk handles your data](../../snyk-data-and-governance/how-snyk-handles-your-data.md). For more details about integrations, see [Integrate with Snyk](../../integrations/integrate-with-snyk.md).
 {% endhint %}
 
 To integrate your SCM with your Snyk account:
@@ -73,7 +73,7 @@ The **Source control** integrations display only SCMs that are supported by Snyk
 
 This grants Snyk access permissions for the integrated SCM.
 
-For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../scm-integrations/organization-level-integrations/).
+For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../developer-tools/scm-integrations/organization-level-integrations/).
 
 After you have integrated the SCM with your Snyk account, you can import the repositories you want to scan using Snyk Code.
 

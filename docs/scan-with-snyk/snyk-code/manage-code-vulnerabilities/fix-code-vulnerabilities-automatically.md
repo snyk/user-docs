@@ -48,7 +48,7 @@ The training data is regularly checked for quality to optimize the performance o
 
 Snyk does not use customer code submitted to Snyk Agent Fix for training purposes.
 
-For more information on how Snyk manages data, see [How Snyk handles your data](../../../working-with-snyk/how-snyk-handles-your-data.md).
+For more information on how Snyk manages data, see [How Snyk handles your data](../../../snyk-data-and-governance/how-snyk-handles-your-data.md).
 
 ## How Snyk Agent Fix works
 
@@ -58,8 +58,8 @@ A representation of information flow involved in fixing one issue is presented i
 
 ## Requirements for Snyk Agent Fix
 
-* [Snyk Code](../../../implement-snyk/enterprise-implementation-guide/trial-limitations.md) enabled
-* Snyk IDE Plugin for [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview), [Visual Studio](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022), [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations), or [JetBrains IDEs](../../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/)
+* [Snyk Code](../../../implementation-and-setup/enterprise-implementation-guide/trial-limitations.md) enabled
+* Snyk IDE Plugin for [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview), [Visual Studio](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022), [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations), or [JetBrains IDEs](../../../developer-tools/snyk-ide-plugins-and-extensions/jetbrains-plugin/)
 
 ## Enable Snyk Agent Fix
 
@@ -72,8 +72,8 @@ Enable Snyk Agent Fix for your Group or Organization in the Snyk Web UI by navig
 {% hint style="info" %}
 **Before you begin**
 
-* Ensure you have automated fixes enabled in Snyk Preview to work with your [Snyk IDE plugin or extension](../../../cli-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/).
-* Save the files and [scan your code](../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md) to generate a fresh set of results.
+* Ensure you have automated fixes enabled in Snyk Preview to work with your [Snyk IDE plugin or extension](../../../developer-tools/snyk-ide-plugins-and-extensions/).
+* Save the files and [scan your code](../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md) to generate a fresh set of results.
 * You should see a zap icon next to all Snyk Code issues that can be automatically fixed.
 {% endhint %}
 
@@ -87,7 +87,7 @@ Snyk Agent Fix highlights all identified vulnerabilities that can be automatical
 
 Opening the vulnerability gives us details on where the issue is and allows us to generate a fix using Snyk Agent Fix.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption><p>Opening the Snyk Code vulnerability panel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (3).png" alt=""><figcaption><p>Opening the Snyk Code vulnerability panel</p></figcaption></figure>
 
 After you select Generate Fix using Snyk DeepCode AI, the system will analyze your code and generate up to five potential fixes. After you apply a fix, Snyk Agent Fix automatically retests the fix for quality using Snyk Code's engine.
 
@@ -97,7 +97,7 @@ The result, in this case, is five fixes, which you can navigate through to decid
 
 When you apply the fix, you will be guided to where the new code has been introduced. After you save and rescan, the vulnerability will disappear.
 
-<figure><img src="../../../.gitbook/assets/image (26) (2).png" alt=""><figcaption><p>Vulnerability has been fixed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption><p>Vulnerability has been fixed</p></figcaption></figure>
 
 ## Limitations
 

@@ -40,7 +40,7 @@ You can edit the license severities and instructions.
 3. Click **Add** or **Update** to confirm your changes.
 4. Click **Submit** to save your policy.
 
-<figure><img src="../../../.gitbook/assets/policy-severity-instructions-x_06oct2022 (1).png" alt="Update license policy instructions"><figcaption><p>Update license policy instructions</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/policy-severity-instructions-x_06oct2022.png" alt="Update license policy instructions"><figcaption><p>Update license policy instructions</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/policy-severity-instructions-2_06oct2022.png" alt="Submit policy instructions"><figcaption><p>Submit policy instructions</p></figcaption></figure>
 

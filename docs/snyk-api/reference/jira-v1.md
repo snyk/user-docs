@@ -4,10 +4,10 @@
 This document uses the v1 API, which will eventually be deprecated, as further Snyk developments are now focused on the REST API. For more details, see the [v1 API](../v1-api.md).
 {% endhint %}
 
-{% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/jira-issues" method="get" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
+{% openapi src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/jira-issues" method="get" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endopenapi %}
 
-{% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/issue/{issueId}/jira-issue" method="post" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
+{% openapi src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/project/{projectId}/issue/{issueId}/jira-issue" method="post" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endopenapi %}

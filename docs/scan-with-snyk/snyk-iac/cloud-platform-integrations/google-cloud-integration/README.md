@@ -16,6 +16,6 @@ To add a Google Cloud integration, you need the following:
 * A Snyk Group Administrator or Organization Administrator role
 * Access to a [Google Cloud](https://cloud.google.com/) project and associated credentials with permissions to create a read-only Google service account
 * Access to the [Terraform CLI](https://www.terraform.io/downloads), [configured with your Google credentials](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/getting_started), to create the Google service account for Snyk
-* API only: An Organization-level [service account](../../../../enterprise-setup/service-accounts/) with an Org Admin role to use the Snyk API
+* API only: An Organization-level [service account](../../../../implementation-and-setup/enterprise-setup/service-accounts/) with an Org Admin role to use the Snyk API
 * API only: An API client such as [curl](https://curl.se/), [HTTPie](https://httpie.io/), or [Postman](https://www.postman.com/)
 * API only (optional): [jq](https://stedolan.github.io/jq/), to unescape JSON containing the service account Terraform template

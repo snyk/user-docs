@@ -10,7 +10,7 @@ The `.snyk` file is a policy file that Snyk uses to define specific analysis beh
 
 Snyk policies contain rules to define how Snyk behaves when encountering specific types of Open Source issues. With policies, you can identify types of issues based on conditions, such as `no exploit available`, and then apply actions to these issues, such as changing the severity. Thus by using customizable Snyk policies, you can define actions for specific types of issues encountered in scanning.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2) (3) (3).png" alt="Snyk Policy manager"><figcaption><p>Snyk Policy manager</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Snyk Policy manager"><figcaption><p>Snyk Policy manager</p></figcaption></figure></div>
 
 Using the Snyk Policy Manager, you can view, create, and edit policies. For details, see [View, create, and modify policies](view-create-and-modify-policies.md).
 

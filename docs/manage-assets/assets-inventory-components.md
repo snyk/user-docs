@@ -19,8 +19,8 @@ Each inventory layout is presented in a table format, detailing the available ke
 
 Assets in Snyk Essentials are meaningful, real-world components in an application’s SDLC. The following asset types are available:
 
-* Repository assets [**`Billable`**](../working-with-snyk/how-does-snyk-count-assets.md#billable-assets)
-* Container images [**`Billable`**](../working-with-snyk/how-does-snyk-count-assets.md#billable-assets)
+* Repository assets [**`Billable`**](../snyk-data-and-governance/how-does-snyk-count-assets.md#billable-assets)
+* Container images [**`Billable`**](../snyk-data-and-governance/how-does-snyk-count-assets.md#billable-assets)
 * Packages
 * Scanned artifacts
 
@@ -113,7 +113,7 @@ The Related Projects tab provides a collection of Snyk Projects that are associa
 
 The Attributes tab shows miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
-<figure><img src="../.gitbook/assets/image (662).png" alt=""><figcaption><p>Asset card - Assets Attributes view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (337).png" alt=""><figcaption><p>Asset card - Assets Attributes view</p></figcaption></figure>
 
 ## Issues
 
@@ -138,18 +138,18 @@ The Controls column displays all of the Snyk products that were executed on a sp
 
 The Controls logos can have one of the following states:
 
-| Logo                                                                                 | Description                                                                      |
-| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
-| <img src="../.gitbook/assets/image (3) (5) (1).png" alt="" data-size="original">     | The Snyk product was executed.                                                   |
-| <img src="../.gitbook/assets/image (4) (7) (1).png" alt="" data-size="original">     | The Snyk product was executed but with issues.                                   |
-| <img src="../.gitbook/assets/image (5) (3) (1).png" alt="" data-size="original">     | The Snyk product should have been executed but was not executed.                 |
-| <img src="../.gitbook/assets/image (6) (6) (1) (1).png" alt="" data-size="original"> | The Snyk product was executed and failed.                                        |
-| <img src="../.gitbook/assets/image (7) (4).png" alt="" data-size="original">         | The Snyk product was executed and failed with issues.                            |
-| <img src="../.gitbook/assets/image (8) (3).png" alt="" data-size="original">         | The Snyk product was executed and failed due to not being covered by the policy. |
+| Logo                                                                       | Description                                                                      |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| <img src="../.gitbook/assets/image (182).png" alt="" data-size="original"> | The Snyk product was executed.                                                   |
+| <img src="../.gitbook/assets/image (183).png" alt="" data-size="original"> | The Snyk product was executed but with issues.                                   |
+| <img src="../.gitbook/assets/image (184).png" alt="" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
+| <img src="../.gitbook/assets/image (185).png" alt="" data-size="original"> | The Snyk product was executed and failed.                                        |
+| <img src="../.gitbook/assets/image (186).png" alt="" data-size="original"> | The Snyk product was executed and failed with issues.                            |
+| <img src="../.gitbook/assets/image (189).png" alt="" data-size="original"> | The Snyk product was executed and failed due to not being covered by the policy. |
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.&#x20;
 
-<figure><img src="../.gitbook/assets/image (499).png" alt="Snyk AppRisk - Controls"><figcaption><p>Inventory menu - Controls column</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (239).png" alt="Snyk AppRisk - Controls"><figcaption><p>Inventory menu - Controls column</p></figcaption></figure>
 
 ## Tags
 
@@ -178,7 +178,7 @@ A system-generated tag includes the following information:
   * **Dormant**: No commits in the last 6 months.
   * **N/A**: There are no commits detected by Snyk Essentials.
 
-<figure><img src="../.gitbook/assets/image (500).png" alt="Snyk AppRisk - Tags"><figcaption><p>Inventory menu - Tags column</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (240).png" alt="Snyk AppRisk - Tags"><figcaption><p>Inventory menu - Tags column</p></figcaption></figure>
 
 ### Tag rules overview
 
@@ -223,7 +223,7 @@ You can manually change the business criticality of an asset. Click the critical
 
 After manually setting the value of a class, you have the option to lock the value to prevent any potential overriding by a policy that has the Set Asset Class as an action. You can lock the value from the general or summary views of an asset. You can unlock the class value at any time by clicking the lock icon. A popup is displayed, asking you for confirmation about unlocking the value.
 
-<figure><img src="../.gitbook/assets/image (501).png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Inventory menu - Lock the value of a class</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (241).png" alt="Snyk AppRisk - Lock the value of a class"><figcaption><p>Inventory menu - Lock the value of a class</p></figcaption></figure>
 
 The Asset Class column is also available on the Insights UI for risk-based prioritization, and it has the same functionality as it does here. At the moment, the Asset Class column is available only for repository assets, and applicable only for Snyk Code.
 
@@ -289,7 +289,7 @@ The Visibility column lists the visibility status of the repositories as follows
 * **Internal**: Internal repositories specific to GitHub and GitLab.
 * **N/A**
 
-Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../manage-issues/reporting/#snyk-reporting-filters).
+Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../manage-risk/reporting/#snyk-reporting-filters).
 
 ## Actions
 
@@ -297,6 +297,6 @@ The Actions column provides a workflow to set up the SCM integration at the Grou
 
 If a Group level integration has not been set up, repositories discovered at the Organization level display a **Set up integration** button under the **Actions** column. If you set up the integration at the Group level, this option becomes unavailable.&#x20;
 
-To add context enrichment, find an asset and select **Set up integration**. For configuration details, see [Snyk SCM Integrations](../scm-integrations/organization-level-integrations/).
+To add context enrichment, find an asset and select **Set up integration**. For configuration details, see [Snyk SCM Integrations](../developer-tools/scm-integrations/organization-level-integrations/).
 
 <figure><img src="../.gitbook/assets/group-inventory-all-assets-actions-set-up-integration.png" alt="Set up SCM integration at the Organization level from the Actions column"><figcaption><p>Set up SCM integration at the Organization level from the Actions column</p></figcaption></figure>

@@ -16,6 +16,6 @@ The Risk Factor and evidence graph information is available only to Snyk AppRisk
 * How the scan was performed to identify the issue.
 * Which Snyk product was used to perform the scan.
 
-<figure><img src="../../../.gitbook/assets/image (467).png" alt=""><figcaption><p>Snyk AppRisk - Issues page, Table view of issues</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Snyk AppRisk - Issues page, Table view of issues</p></figcaption></figure>
 
 You can also sort the table of issues by these details.

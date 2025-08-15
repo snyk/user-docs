@@ -2,7 +2,7 @@
 
 ## Overview of licenses
 
-Every time you test your code in the [Snyk Web UI](../../../getting-started/snyk-web-ui.md), the [Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/), or using [PR Checks](../../pull-requests/pull-request-checks/), your repositories are scanned for vulnerabilities and license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files and checks for license issues against Snyk known licenses.
+Every time you test your code in the [Snyk Web UI](../../../discover-snyk/getting-started/snyk-web-ui.md), the [Snyk CLI](../../../developer-tools/snyk-cli/), or using [PR Checks](../../pull-requests/pull-request-checks/), your repositories are scanned for vulnerabilities and license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files and checks for license issues against Snyk known licenses.
 
 ### Default license policy
 
@@ -19,11 +19,11 @@ For more information, see [License policies](../../../manage-risk/policies/licen
 
 To facilitate the onboarding of your developers, Snyk recommends that your teams check these defaults, update severities, and add instructions according to license type based on the policies outlined specifically by your Legal teams.
 
-After the license policy is updated, when Snyk detects a license violation, it is displayed for all users in the Organization in the test results on the [Snyk Web UI](../../../getting-started/snyk-web-ui.md), the [Snyk CLI](../../../cli-ide-and-ci-cd-integrations/snyk-cli/), or [PR Checks](../../pull-requests/pull-request-checks/), in the same way as a security vulnerability, and including the severity and instructions you configured.
+After the license policy is updated, when Snyk detects a license violation, it is displayed for all users in the Organization in the test results on the [Snyk Web UI](../../../discover-snyk/getting-started/snyk-web-ui.md), the [Snyk CLI](../../../developer-tools/snyk-cli/), or [PR Checks](../../pull-requests/pull-request-checks/), in the same way as a security vulnerability, and including the severity and instructions you configured.
 
 An example follows:
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image5 (2).png" alt=""><figcaption><p>License card overview</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image5.png" alt=""><figcaption><p>License card overview</p></figcaption></figure></div>
 
 ## View and manage license policies
 
@@ -47,11 +47,11 @@ There are two types of dual or multiple licenses:
 
 * OR **-** If Snyk recognizes two licenses marked with `OR`being used in a package, this means the customer can comply with either of the licenses.
 
-<figure><img src="../../../.gitbook/assets/image (475).png" alt="" width="184"><figcaption><p>Example of an OR license in npm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (226).png" alt="" width="184"><figcaption><p>Example of an OR license in npm</p></figcaption></figure>
 
 * AND **-** If the license explicitly has `AND`, customers must comply with all (dual or multiple) licenses.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt="" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
 
 In both of these cases, Snyk displays the severity of the license with the highest severity when displaying issues, where all licenses have a severity.&#x20;
 

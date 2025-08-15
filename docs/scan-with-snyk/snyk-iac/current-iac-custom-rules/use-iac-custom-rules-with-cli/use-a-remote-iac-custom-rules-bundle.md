@@ -26,10 +26,10 @@ After you have completed this configuration, you can run a Snyk IaC scan. The CL
 snyk iac test <file>
 ```
 
-The resulting configuration scan issues will include issues from both the default Snyk rules and your custom rules. See also [Understanding the IaC CLI test results](../../../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/understand-the-iac-cli-test-results/).
+The resulting configuration scan issues will include issues from both the default Snyk rules and your custom rules. See also [Understanding the IaC CLI test results](../../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/understand-the-iac-cli-test-results/).
 
 {% hint style="info" %}
-Only one method for defining the bundle's path should be defined at any given time. Make sure to disable the custom rules settings using the Snyk settings page or the [Snyk API](../../../../snyk-api/reference/iacsettings.md). Alternatively, clear any previously stored settings using [`snyk config unset`](../../../../cli-ide-and-ci-cd-integrations/snyk-cli/commands/config.md#unset-less-than-key-greater-than).
+Only one method for defining the bundle's path should be defined at any given time. Make sure to disable the custom rules settings using the Snyk settings page or the [Snyk API](../../../../snyk-api/reference/iacsettings.md). Alternatively, clear any previously stored settings using [`snyk config unset`](../../../../developer-tools/snyk-cli/commands/config.md#unset-less-than-key-greater-than).
 {% endhint %}
 
 ## Snyk settings and remote custom rules bundle
@@ -52,15 +52,15 @@ You can configure remote custom rules bundles on the Organization level by navig
 You can configure remote custom rules bundles on the Group level by navigating to `Settings` > `Infrastructure as Code.`
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (2) (3).png" alt="Enable remote custom rules bundles"><figcaption><p>Enable remote custom rules bundles</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (2).png" alt="Enable remote custom rules bundles"><figcaption><p>Enable remote custom rules bundles</p></figcaption></figure>
 
 * Enable configuration of remote bundles by using the **Enable rules** toggle. Doing so loads the form to specify the Registry URL and tag as shown in this example:
 
-<figure><img src="../../../../.gitbook/assets/image (102) (2) (1) (2).png" alt="Specify Registry URL and tag form"><figcaption><p>Specify Registry URL and tag form</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (102) (2).png" alt="Specify Registry URL and tag form"><figcaption><p>Specify Registry URL and tag form</p></figcaption></figure>
 
 * Configure the OCI registry URL and tag for your remote bundle of custom rules and click **Save changes** to save.
 
-<figure><img src="../../../../.gitbook/assets/image (184) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Registry URL and tag configured"><figcaption><p>Registry URL and tag configured</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19).png" alt="Registry URL and tag configured"><figcaption><p>Registry URL and tag configured</p></figcaption></figure>
 
 Your remote bundle of custom rules is now configured and will be used when testing IaC files.
 
@@ -74,11 +74,11 @@ To override the Group configurations, go to the Organization's `Rules` section i
 
 * Initially, the section is populated with the configurations inherited from the Organization's Group.
 
-<figure><img src="../../../../.gitbook/assets/image (165) (1) (1) (1).png" alt="Organization Rules section in the IaC Settings"><figcaption><p>Organization Rules section in the IaC Settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (72).png" alt="Organization Rules section in the IaC Settings"><figcaption><p>Organization Rules section in the IaC Settings</p></figcaption></figure>
 
 * Update the configurations to those customized for your Organization and click **Save changes**.
 
-<figure><img src="../../../../.gitbook/assets/image (196) (1) (2).png" alt="Organization rules configuration updated"><figcaption><p>Organization rules configuration updated</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (152).png" alt="Organization rules configuration updated"><figcaption><p>Organization rules configuration updated</p></figcaption></figure>
 
 * Now, configurations on the Group level will not override these customized settings for your Organization.
 

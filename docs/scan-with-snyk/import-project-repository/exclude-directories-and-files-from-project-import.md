@@ -16,7 +16,7 @@ When you import a repository to be tested by Snyk Code, you can exclude certain 
 Consider excluding directories and files only if you do not publish or compile them into production. If a trace goes through an excluded file or directory with existing vulnerabilities, Snyk might miss potential issues.
 {% endhint %}
 
-You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md), by creating the `.snyk` file in your tested repository.
+You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md), by creating the `.snyk` file in your tested repository.
 
 ## **Exclusion syntax of the .snyk file**
 
@@ -118,4 +118,4 @@ Now you want to exclude the `app.js` and `db.js` files from the Snyk Code analys
 
 The `app.js` and `db.js` files are excluded from the retest and, therefore, are not tested by Snyk Code and do not appear in the Code Analysis results. Now, only five vulnerability issues are detected:
 
-<figure><img src="../../.gitbook/assets/image (545) (1) (1).png" alt="Example of issues detected in files after excluding"><figcaption><p>Detected issues after files have been excluded</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (545).png" alt="Example of issues detected in files after excluding"><figcaption><p>Detected issues after files have been excluded</p></figcaption></figure>

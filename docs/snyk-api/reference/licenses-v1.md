@@ -6,6 +6,6 @@ This document uses the v1 API, which will eventually be deprecated, as further S
 
 **Note:** When you import or update Projects, changes will be reflected in the endpoint results after a one-hour delay.
 
-{% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/licenses" method="post" %}
-[v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
+{% openapi src="../../.gitbook/assets/spec.yaml" path="/org/{orgId}/licenses" method="post" %}
+[spec.yaml](../../.gitbook/assets/spec.yaml)
 {% endopenapi %}

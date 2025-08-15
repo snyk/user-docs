@@ -19,11 +19,11 @@ The legal team in your company requires strict license compliance controls for b
 
 To meet this requirement, first add the `Critical`, `Production`, and `Frontend` attributes to the Snyk Projects you want this policy to apply to:
 
-<figure><img src="../../.gitbook/assets/image (1) (3).png" alt="Add relevant attributes to a Project from the Issues tab"><figcaption><p>Add relevant attributes to a Project from the Issues tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (49).png" alt="Add relevant attributes to a Project from the Issues tab"><figcaption><p>Add relevant attributes to a Project from the Issues tab</p></figcaption></figure>
 
 Next, create a new license policy and apply the policy to those attributes:
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt="Apply license policy to selected attributes"><figcaption><p>Apply license policy to selected attributes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (163).png" alt="Apply license policy to selected attributes"><figcaption><p>Apply license policy to selected attributes</p></figcaption></figure>
 
 {% hint style="info" %}
 In the policy itself, a high severity can be applied to any copyleft license identified in Projects, such as the [GPL-3.0](https://snyk.io/learn/what-is-gpl-license-gplv3-explained/) and [AGPL-3.0 licenses](https://snyk.io/learn/agpl-license/). \
@@ -38,7 +38,7 @@ See [License policies](license-policies/) for more details.
 
 Using a process similar to the one in the previous example, you can define a security policy to automatically ignore all `Medium` severity vulnerabilities in the `FrontEnd` environment without a known exploit:
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (14) (3).png" alt="Snyk security policy - specify vulnerabilities to ignore"><figcaption><p>Snyk security policy - specify vulnerabilities to ignore</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (101).png" alt="Snyk security policy - specify vulnerabilities to ignore"><figcaption><p>Snyk security policy - specify vulnerabilities to ignore</p></figcaption></figure></div>
 
 This policy is now assigned to all Projects with the selected attributes applied and takes effect the next time Snyk scans those Projects.
 
@@ -56,7 +56,7 @@ An example follows of a PR check on a JavaScript package license.
 
 This example shows a pull request to add the `fullpage.js` package to a JavaScript application. Although this change passes the security policy check, because the latest version of the package has no known vulnerability, it fails the license policy check because the GPLv3 license is included in violation of the license policy of the company.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (2) (1).png" alt="PR Check fails on license compliance"><figcaption><p>PR Check fails on license compliance</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (109).png" alt="PR Check fails on license compliance"><figcaption><p>PR Check fails on license compliance</p></figcaption></figure>
 
 ## Apply policies in CI/CD
 

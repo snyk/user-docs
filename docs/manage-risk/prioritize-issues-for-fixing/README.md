@@ -15,7 +15,7 @@ For example, if you only prioritize the Projects from your repositories, then th
 
 ### Prioritize the Projects
 
-[Prioritize the Projects](../../snyk-admin/snyk-projects/project-information.md) from your repositories by the type of Projects you want to focus on, for example, prioritize your Projects depending on their severity.
+[Prioritize the Projects](../../snyk-platform-administration/snyk-projects/project-information.md) from your repositories by the type of Projects you want to focus on, for example, prioritize your Projects depending on their severity.
 
 With this type of prioritization, you can group, filter, and sort your Projects.
 
@@ -36,7 +36,7 @@ You can prioritize your Projects at the Snyk Group level and Snyk Organization l
 
 ### Prioritize the issues within a Project
 
-[Prioritize the issues](../../snyk-admin/snyk-projects/view-project-issues-fixes-and-dependencies.md) within a Project by using any of the following custom filters:&#x20;
+[Prioritize the issues](../../snyk-platform-administration/snyk-projects/view-project-issues-fixes-and-dependencies.md) within a Project by using any of the following custom filters:&#x20;
 
 * Issue type
 * Severity&#x20;
@@ -97,7 +97,7 @@ You can use the Risk Score at the Snyk Organization level.
 
 ### Prioritize issues when using reports
 
-You can [prioritize issues when using reports](../../manage-issues/reporting/available-snyk-reports.md) to generate reports across an Organization or Group.
+You can [prioritize issues when using reports](../reporting/available-snyk-reports.md) to generate reports across an Organization or Group.
 
 You can use this type of prioritization with any of the following Snyk Plans:&#x20;
 
@@ -189,10 +189,10 @@ Based on your priorities, you can start [fixing vulnerabilities](../../scan-with
 
 See [Prioritize issues in the Snyk Web UI](https://learn.snyk.io/lesson/prioritize-issues-snyk) to learn about prioritization in action.
 
-You can use many features of [Snyk Projects](../../snyk-admin/snyk-projects/) to help you focus on priority issues:
+You can use many features of [Snyk Projects](../../snyk-platform-administration/snyk-projects/) to help you focus on priority issues:
 
-* [View Project information](../../snyk-admin/snyk-projects/project-information.md).
-* Apply and remove [Project attributes ](../../snyk-admin/snyk-projects/project-attributes.md)and [Project tags](../../snyk-admin/introduction-to-snyk-projects/project-tags.md) to characterize Projects.
-* Look at [Project collections groupings](../../snyk-admin/snyk-projects/project-collections-groupings/).
-* [View Project issues, fixes, and dependencies](../../snyk-admin/snyk-projects/view-project-issues-fixes-and-dependencies.md).
-* [View Project settings](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md).
+* [View Project information](../../snyk-platform-administration/snyk-projects/project-information.md).
+* Apply and remove [Project attributes ](../../snyk-platform-administration/snyk-projects/project-attributes.md)and [Project tags](../../snyk-platform-administration/snyk-projects/project-tags.md) to characterize Projects.
+* Look at [Project collections groupings](../../snyk-platform-administration/snyk-projects/project-collections-groupings/).
+* [View Project issues, fixes, and dependencies](../../snyk-platform-administration/snyk-projects/view-project-issues-fixes-and-dependencies.md).
+* [View Project settings](../../snyk-platform-administration/snyk-projects/view-and-edit-project-settings.md).

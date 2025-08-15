@@ -14,7 +14,7 @@ Both methods create the same infrastructure, so pick the method you are most com
 
 ## Retrieve the IaC template or script
 
-To retrieve the IaC template from the Snyk API, you need the API token for a Snyk Organization-level [service account](../../../../../enterprise-setup/service-accounts/) with an Org Admin role.
+To retrieve the IaC template from the Snyk API, you need the API token for a Snyk Organization-level [service account](../../../../../implementation-and-setup/enterprise-setup/service-accounts/) with an Org Admin role.
 
 You also need the subscription and tenant IDs of the Azure subscription you are onboarding. You can find them using the method [described in the Azure documentation](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id).
 

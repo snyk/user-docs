@@ -18,7 +18,7 @@ Integration with Quay is available for all Snyk users.
 1. In your Snyk account, navigate to **Integrations.** Under the **Container Registries** section, find the **Quay** option and click it.
 2. In the **Account credentials** section, enter your Quay username and password login credentials. In the **container registry name**, enter the full URL to the registry you want to integrate with. This can be a cloud-based Quay or a private host. To finish, click **Save**.
 
-If you are using a self-hosted Quay registry, [contact Snyk Support](https://support.snyk.io) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md).
+If you are using a self-hosted Quay registry, [contact Snyk Support](https://support.snyk.io) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md).
 
 {% hint style="info" %}
 [Quay.io](https://quay.io/) deprecated the use of Quay login in June 2021. The credentials can no longer be Quay username and password, but must be Quay robot account credentials (username and token) that have at least 'read' permissions to the desired repository.
