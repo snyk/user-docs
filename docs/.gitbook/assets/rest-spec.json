@@ -23909,7 +23909,8 @@
                 "type": "object"
               }
             }
-          }
+          },
+          "required": true
         },
         "responses": {
           "204": {
