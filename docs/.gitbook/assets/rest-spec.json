@@ -1058,7 +1058,9 @@
         "schema": {
           "enum": [
             "created",
-            "expires"
+            "expires",
+            "ignore-type",
+            "requested-by"
           ],
           "type": "string"
         }

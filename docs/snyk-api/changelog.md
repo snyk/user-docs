@@ -1,3 +1,11 @@
+## 2024-10-15 - Updated 2025-08-15
+
+### GET - `/orgs/{org_id}/policies` - Updated
+- added the new enum value `ignore-type` to the `query` request parameter `order_by`
+
+- added the new enum value `requested-by` to the `query` request parameter `order_by`
+
+
 ## 2024-10-15 - Updated 2025-08-14
 
 ### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
