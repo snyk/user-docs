@@ -398,6 +398,27 @@ Snyk was unable to find any supported files for the AIBOM command. Ensure the di
 
 ***
 
+## Agent fix
+
+#### [SNYK-AGENTFIX-0001](error-catalog.md#snyk-agentfix-0001)
+
+**Interfile issue or bad input**
+
+The most common cause is the fix spanning across multiple files which is not currently supported. This error can also arise if any of the input is not supported. Retrying will not resolve this error.
+
+#### [SNYK-AGENTFIX-0002](error-catalog.md#snyk-agentfix-0002)
+
+**Temporary error with the service**
+
+Retry in a few minutes may resolve the error.
+
+#### [SNYK-AGENTFIX-0003](error-catalog.md#snyk-agentfix-0003)
+
+**Fatal internal failure**
+
+Feel free to reach out to support for more help on this issue.
+
+
 ## Custom Base Images
 
 #### [SNYK-CBI-0001](error-catalog.md#snyk-cbi-0001)
