@@ -1,0 +1,122 @@
+name: Synchronize Error Catalog Docs
+on:
+  # This gets triggered on merges in the error-catalog repository.
+  # See: https://github.com/snyk/error-catalog
+  workflow_dispatch:
+  # And for good measure, also runs at 3 AM UTC on the 1st of every month
+  schedule:
+    - cron: '0 3 1 * *'
+
+env:
+  DESTINATION_BRANCH: auto/synchronize-error-catalog-docs-${{ github.ref_name }}
+  COMMIT_MESSAGE: 'fix: synchronize Error Catalog documentation'
+  ERROR_CATALOG_LOCATION: 'error-catalog'
+  ERROR_CATALOG_DOCS_FILE_LOCAL: 'error-catalog/packages/error-catalog-docs/docs/README.md'
+  ERROR_CATALOG_DOCS_FILE_REMOTE: 'docs/scan-with-snyk/error-catalog.md'
+
+jobs:
+  synchronize-variants:
+    name: synchronize-error-catalog-docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure Git user
+        run: |
+          git config --global user.name "Team CLI Bot"
+          git config --global user.email "team-cli@snyk.io"
+
+      - name: Import and configure GPG
+        env:
+          GPG_KEY: ${{ secrets.TEAM_CLI_BOT_GPG_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.TEAM_CLI_BOT_GPG_PASSPHRASE }}
+        run: |
+          echo "$GPG_KEY" | gpg --batch --import
+          gpg --pinentry-mode loopback --passphrase "$GPG_PASSPHRASE" --batch --sign >/dev/null 2>&1
+
+      - name: Create or checkout destination branch
+        run: |
+          if git show-ref --verify --quiet refs/heads/${{ env.DESTINATION_BRANCH }}; then
+            echo "Branch ${{ env.DESTINATION_BRANCH }} already exists, checking out."
+            git checkout ${{ env.DESTINATION_BRANCH }}
+            echo "Cleaning it for a fresh start."
+            git reset --hard origin/main
+            exit 0
+          fi
+
+          echo "Branch ${{ env.DESTINATION_BRANCH }} does not exist, creating and checking out."
+          git checkout -b ${{ env.DESTINATION_BRANCH }}
+
+      - name: Checkout error-catalog repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.TEAM_CLI_BOT_GITHUB_PAT }}
+          repository: snyk/error-catalog
+          path: ${{ env.ERROR_CATALOG_LOCATION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          cache: 'npm'
+          node-version: '20'
+          cache-dependency-path: ${{ env.ERROR_CATALOG_LOCATION }}/package-lock.json
+
+      - name: Authenticate with NPM
+        working-directory: ${{ env.ERROR_CATALOG_LOCATION }}
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.TEAM_CLI_NPM_TOKEN }}" > ~/.npmrc
+
+      - name: Generate documentation
+        id: generate_documentation
+        working-directory: ${{ env.ERROR_CATALOG_LOCATION }}
+        env:
+          NPM_TOKEN: ${{ secrets.TEAM_CLI_NPM_TOKEN }}
+        run: |
+          npm i
+          node_modules/.bin/nx run error-catalog-docs:generate-docs
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          # Check if the error catalog documentation file has changed from what we have in the repository
+          COMMAND="diff ${{ env.ERROR_CATALOG_DOCS_FILE_REMOTE }} ${{ env.ERROR_CATALOG_DOCS_FILE_LOCAL }} --color=always"
+          if [[ -z "$($COMMAND)" ]]; then
+            echo "No changes detected, exiting."
+            echo "continue=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          
+          echo "Changes detected:"
+          $COMMAND || true
+          echo "continue=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push changes (if any)
+        if: steps.check_changes.outputs.continue == 'true'
+        run: |
+          cp ${{ env.ERROR_CATALOG_DOCS_FILE_LOCAL }} ${{ env.ERROR_CATALOG_DOCS_FILE_REMOTE }}
+          git add .
+          git commit -S -m "${{ env.COMMIT_MESSAGE }}"
+          git push --force --set-upstream origin ${{ env.DESTINATION_BRANCH }}
+
+      - name: Create or update a pull request
+        if: steps.check_changes.outputs.continue == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.TEAM_CLI_BOT_GITHUB_PAT }}
+        run: |
+          PR_NUMBER=$(gh pr list \
+            --head "${{ env.DESTINATION_BRANCH }}" \
+            --json number \
+            --jq '.[0].number' \
+            --limit 1)
+          
+          if [ -n "$PR_NUMBER" ]; then
+            echo "PR #$PR_NUMBER already exists. Updating it."
+            echo "Pushed changes to existing PR #$PR_NUMBER."
+            exit 0
+          fi
+          
+          echo "No existing PR found. Creating a new one."
+          gh pr create \
+            --title="${{ env.COMMIT_MESSAGE }}" \
+            --body="This PR automatically updates the [error-catalog](https://github.com/snyk/error-catalog) documentation as changes were detected." \
+            --head "${{ env.DESTINATION_BRANCH }}" \
+            --base main
