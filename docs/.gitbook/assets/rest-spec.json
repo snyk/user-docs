@@ -18925,7 +18925,7 @@
         },
         "summary": "List Assets with filters (Early Access)",
         "tags": [
-          "Asset"
+          "Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -19032,7 +19032,7 @@
         },
         "summary": "Get an Asset by its ID (Early Access)",
         "tags": [
-          "Asset"
+          "Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -19159,7 +19159,7 @@
         },
         "summary": "List related assets with pagination (Early Access)",
         "tags": [
-          "Asset"
+          "Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -19286,7 +19286,7 @@
         },
         "summary": "List asset projects with pagination (Early Access)",
         "tags": [
-          "Asset"
+          "Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
