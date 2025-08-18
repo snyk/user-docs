@@ -6,13 +6,15 @@ By default, the Snyk CLI connects to `https://api.snyk.io/`. You can use the fol
 
 `SNYK_API`
 
-Specifying this variable sets the API host that will be used for Snyk requests. This is useful for [regional hosting](../../../working-with-snyk/regional-hosting-and-data-residency.md#cli-and-ci-pipeline-urls), on-premise instances, or when you are using a proxy server. If this variable is set with the `http` protocol, the CLI upgrades the requests to `https` unless `SNYK_HTTP_PROTOCOL_UPGRADE` is set to `0`.
+Specifying this variable sets the API host that will be used for Snyk requests. This is useful for [regional hosting](../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#cli-and-ci-pipeline-urls), on-premise instances, or when you are using a proxy server. If this variable is set with the `http` protocol, the CLI upgrades the requests to `https` unless `SNYK_HTTP_PROTOCOL_UPGRADE` is set to `0`.
 
 `SNYK_HTTP_PROTOCOL_UPGRADE=0`
 
 If you set this variable to the value of `0`, API and CLI requests aimed at `http` URLs are not upgraded to `https`. If the protocol is not set, the default behavior is to upgrade these requests from `http` to `https`. Setting this variable is useful, for example, for reverse proxies.
 
 ## **Configure CLI Analytics**
+
+Learn more in the [snyk-cli-analytics.md](../../../developer-tools/snyk-cli/snyk-cli-analytics.md "mention") documentation.
 
 `SNYK_DISABLE_ANALYTICS=1`
 
@@ -22,9 +24,9 @@ Specifying this variable disables all Snyk CLI analytics.
 
 `SNYK_TOKEN`
 
-Specifying this variable allows you to override the token that may be available in your Snyk configuration settings (`~/.config/configstore/snyk.json`). Use `SNYK_TOKEN` in a CI/CD environment. After setting `SNYK_TOKEN` you can [get started](../getting-started-with-the-snyk-cli.md) using the CLI.
+Specifying this variable allows you to override the token that may be available in your Snyk configuration settings (`~/.config/configstore/snyk.json`). Use `SNYK_TOKEN` in a CI/CD environment. After setting `SNYK_TOKEN` you can [get started](../../../developer-tools/snyk-cli/getting-started-with-the-snyk-cli.md) using the CLI.
 
-For information on how to get your account token see [Authenticate the CLI with your account](../../../snyk-cli/authenticate-to-use-the-cli.md). You can also use a service account to authenticate; for more information see [Service accounts](../../../enterprise-setup/service-accounts/). For additional information, see [Authentication for third-party tools](../../../enterprise-setup/authentication-for-third-party-tools.md).
+For information on how to get your account token see [Authenticate the CLI with your account](../../../developer-tools/snyk-cli/authenticate-to-use-the-cli.md). You can also use a service account to authenticate; for more information see [Service accounts](../../../implementation-and-setup/enterprise-setup/service-accounts/). For additional information, see [Authentication for third-party tools](../../../implementation-and-setup/enterprise-setup/authentication-for-third-party-tools.md).
 
 `SNYK_OAUTH_TOKEN=<OAuth token>`
 
