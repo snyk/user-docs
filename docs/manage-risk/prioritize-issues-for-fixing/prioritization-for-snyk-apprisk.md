@@ -2,9 +2,7 @@
 
 Snyk AppRisk provides a centralized view for monitoring risks and automates the collection of compliance data. AppRisk ensures that users prioritize the most critical risks, safeguarding your business and highlighting the effectiveness of your security measures.
 
-You can access Snyk AppRisk via the [Issues](../../discover-snyk/getting-started/snyk-web-ui.md#view-and-prioritize-issues) page from the [Snyk Web UI](../../discover-snyk/getting-started/snyk-web-ui.md#view-and-prioritize-issues).
-
-**Issues** are available at the Group level or at the Organization level.&#x20;
+You can access Snyk AppRisk via the **Issues** page from the Snyk Web UI. The **Issues** page is available at the Group or Organization level.&#x20;
 
 ## Insights for Snyk AppRisk
 

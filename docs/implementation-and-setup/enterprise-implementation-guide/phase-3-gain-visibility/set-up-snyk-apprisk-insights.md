@@ -2,7 +2,7 @@
 
 ## Prioritize issues with risk factors
 
-Learn about risk-based prioritization and how to set up and deploy the Kubernetes connector for Snyk AppRisk, using the [**Issues**](../../../discover-snyk/getting-started/snyk-web-ui.md#view-and-prioritize-issues) page from the Snyk AppRisk menu.
+Learn about risk-based prioritization and how to set up and deploy the Kubernetes connector for Snyk AppRisk, using the **Issues** page from the Snyk AppRisk menu.
 
 Risk-based prioritization, or insights, is the capability of Snyk AppRisk to understand the context of your application and help you better prioritize your security issues.
 

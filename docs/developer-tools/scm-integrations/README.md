@@ -11,7 +11,7 @@ Snyk Source Control Manager (SCM) integrations allow you to:
 You can implement SCM integrations in a Snyk environment as follows:
 
 * [Group level](group-level-integrations/) - At the Group level, set up the SCM integrations for an enriched context.
-* [Organization level](organization-level-integrations/) - At the Organization level, set up the SCM integrations for testing your repositories. See the [Manage your Integrations](../../discover-snyk/getting-started/snyk-web-ui.md) at the Organizational level page for more details.
+* [Organization level](organization-level-integrations/) - At the Organization level, set up the SCM integrations for testing your repositories.&#x20;
 
 To use the same SCM integration at both Group and Organization levels, you must set up that integration on both levels.
 

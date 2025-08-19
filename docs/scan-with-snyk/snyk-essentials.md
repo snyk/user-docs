@@ -23,7 +23,7 @@ Snyk Essentials includes the following features:&#x20;
 * [Integrations](../developer-tools/scm-integrations/group-level-integrations/) to support ingesting data from SCM tools for asset discovery, Snyk Application Security Testing products for security controls coverage, and ticketing or notification tools for policy actions. Use the the Integration page to add and set up new integrations.
 * [Policies](../manage-risk/policies/assets-policies/) to classify and tag assets with business context and configure actions using a Policy Builder UI.
 * [Inventory](../manage-assets/manage-assets.md) layouts for managing assets and viewing Snyk coverage.
-* [Dashboard](../discover-snyk/getting-started/snyk-web-ui.md#view-the-assets-dashboard) to view, add, and customize widgets.
+* A dashboard to view, add, and customize widgets.
 
 ## Prerequisites
 

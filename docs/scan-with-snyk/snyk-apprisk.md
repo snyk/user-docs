@@ -58,9 +58,7 @@ Log in and authenticate to Snyk using existing mechanisms (SSO, Google SAML, and
 
 ## Accessing Snyk AppRisk
 
-Ensure you are at the Group level to access the Snyk AppRisk options. From the Group level, you have centralized security management that enhances security and simplifies security procedures for Projects.
-
-The Snyk AppRisk features are available at the [Group level from the Snyk Web UI](../discover-snyk/getting-started/snyk-web-ui.md#group-level).&#x20;
+Ensure you are at the Group level to access the Snyk AppRisk options. From the Group level, you have centralized security management that enhances security and simplifies security procedures for Projects. The Snyk AppRisk features are available at the Group level from the Snyk Web UI.&#x20;
 
 ## Key concepts
 

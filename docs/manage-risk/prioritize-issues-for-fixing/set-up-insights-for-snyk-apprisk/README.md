@@ -98,7 +98,7 @@ All these settings can be found in the Snyk Web UI, under Group Settings, the Se
 
 You can enable or disable the available risk factors: [Deployed](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), [Loaded package](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md), [OS condition](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-os-condition.md), [Public facing](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-public-facing.md). When a risk factor is disabled, it will not be used to calculate issues.
 
-You can enable or disable the risk factors from [Snyk Web UI](../../../discover-snyk/getting-started/snyk-web-ui.md), Group Settings, Settings option, Risk factors.
+You can enable or disable the risk factors from Snyk web UI under Group **Settings** > **Settings** option > **Risk factors**.
 
 ### Provider selection
 

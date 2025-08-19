@@ -2,7 +2,7 @@
 
 ## Overview of licenses
 
-Every time you test your code in the [Snyk Web UI](../../../discover-snyk/getting-started/snyk-web-ui.md), the [Snyk CLI](../../../developer-tools/snyk-cli/), or using [PR Checks](../../pull-requests/pull-request-checks/), your repositories are scanned for vulnerabilities and license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files and checks for license issues against Snyk known licenses.
+Every time you test your code in the Snyk web UI, the [Snyk CLI](../../../developer-tools/snyk-cli/), or using [PR Checks](../../pull-requests/pull-request-checks/), your repositories are scanned for vulnerabilities and license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files and checks for license issues against Snyk known licenses.
 
 ### Default license policy
 
@@ -19,7 +19,7 @@ For more information, see [License policies](../../../manage-risk/policies/licen
 
 To facilitate the onboarding of your developers, Snyk recommends that your teams check these defaults, update severities, and add instructions according to license type based on the policies outlined specifically by your Legal teams.
 
-After the license policy is updated, when Snyk detects a license violation, it is displayed for all users in the Organization in the test results on the [Snyk Web UI](../../../discover-snyk/getting-started/snyk-web-ui.md), the [Snyk CLI](../../../developer-tools/snyk-cli/), or [PR Checks](../../pull-requests/pull-request-checks/), in the same way as a security vulnerability, and including the severity and instructions you configured.
+After the license policy is updated, when Snyk detects a license violation, it is displayed for all users in the Organization in the test results on the Snyk web UI, the [Snyk CLI](../../../developer-tools/snyk-cli/), or [PR Checks](../../pull-requests/pull-request-checks/), in the same way as a security vulnerability, and including the severity and instructions you configured.
 
 An example follows:
 

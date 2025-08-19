@@ -4,7 +4,7 @@
 
 Snyk Code is a developer-first static application security testing (SAST) solution. By scanning code in real-time and providing actionable insights directly in the developer workflow across IDEs, repositories, and CI/CD pipelines, you can identify and address vulnerabilities early on. The AI-based engine results in fewer false positives for your developers, improving code quality and security. You can scan your code using the following options:
 
-* [Snyk Web UI](../../discover-snyk/getting-started/snyk-web-ui.md) (including [PR checks](../pull-requests/pull-request-checks/))
+* Snyk web UI (including [PR checks](../pull-requests/pull-request-checks/))
 * [Snyk IDE](../../developer-tools/snyk-ide-plugins-and-extensions/)
 * [Snyk CLI](../../developer-tools/snyk-cli/)
 * [Snyk API](../../snyk-api/snyk-api.md)

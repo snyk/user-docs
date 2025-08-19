@@ -2,7 +2,7 @@
 
 Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and, or metadata, for example, information on developers, commits, and so on.
 
-At the Group level, you can set up and customize your Snyk Essentials integrations from the **Integrations Hub,** where the following SCMs are available:
+At the Group level, you can set up and customize your Snyk Essentials integrations from the **Integrations** pag&#x65;**,** where the following SCMs are available:
 
 * [GitHub](github-for-snyk-essentials.md) and GitHub Enterprise
 * [GitLab](gitlab-for-snyk-essentials.md)
@@ -45,9 +45,9 @@ The wildcard integration allows you to use a special character to detect and int
 The wildcard integration applies to the GitHub integration and offers support when you set it up using [Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md).&#x20;
 {% endhint %}
 
-You can use the wildcards while setting up your integration using the Integration Hub:
+You can use the wildcards while setting up your integration using the **Integrations** page:
 
-* Open the **Integration Hub** menu.&#x20;
+* Navigate to **Integrations**.&#x20;
 * Select the **SCM** tag and search for GitHub or Azure DevOps.&#x20;
 * Click the **Add** button.
 * In the **Organizations** field, add the Organization details by using the `*` symbol. For example, using  `*snyk` integrates all SCM Organizations that have Snyk in their name.
@@ -63,11 +63,9 @@ You can refer to the table below to verify the availability and compatibility of
 
 <table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk Essentials</th><th>Snyk AppRisk</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="../organization-level-integrations/github.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="../organization-level-integrations/bitbucket-cloud.md#bitbucket-setup-guide">BitBucket</a></li><li><a href="../organization-level-integrations/github.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="../organization-level-integrations/azure-repositories-tfs.md#azure-devops-setup-guide">Azure DevOps</a></li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                   <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="../application-context-for-scm-integrations/">Backstage catalog</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#servicenow-cmdb-setup-guide">ServiceNow CMDB</a></li><li><a href="../application-context-for-scm-integrations/#atlassian-compass">Atlassian Compass</a></li><li><a href="../application-context-for-scm-integrations/#harness">Harness</a></li><li><a href="../application-context-for-scm-integrations/#opslevel">OpsLevel</a></li><li><a href="../application-context-for-scm-integrations/#datadog-org-context-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="../../../integrations/connect-a-third-party-integration.md#jira-setup-guide">Jira</a></li><li><a href="../../../integrations/jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                    <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="../../../integrations/connect-a-third-party-integration.md#nightfall-setup-guide">NightFall</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Runtime security and observability</td><td><ul><li><a href="../../../integrations/snyk-runtime-sensor.md">Snyk runtime sensor</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#sysdig-setup-guide">Sysdig</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
 
-### Using the Integration Hub
+### Using the Integrations page
 
-Use the Integration Hub page to onboard integrations and populate Snyk Essentials with data from SCM tools.
-
-See the [Snyk Web UI](../../../discover-snyk/getting-started/snyk-web-ui.md#manage-your-integrations) page for step-by-step instructions on how to set up an integration.
+Use the **Integrations** page to onboard integrations and populate Snyk Essentials with data from SCM tools.
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
 

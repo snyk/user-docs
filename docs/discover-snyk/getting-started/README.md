@@ -37,7 +37,7 @@ If your company requires an invitation to use Snyk, when you log in for the firs
 If you log in with a different authentication provider from the one your company uses for the Snyk account, you create a new account. You will not be logged in to the correct Organization for your company.
 {% endhint %}
 
-When you log in to the Snyk Web UI, Snyk shows your preferred (default) Organization. Snyk also uses the settings for your preferred Organization when you test a Project locally using the CLI. To change your default Organization, see [Manage account preferences and settings](snyk-web-ui.md#manage-account-preferences-and-settings).
+When you log in to the Snyk Web UI, Snyk shows your preferred (default) Organization. Snyk also uses the settings for your preferred Organization when you test a Project locally using the CLI.&#x20;
 
 ## Set up a Snyk integration
 
