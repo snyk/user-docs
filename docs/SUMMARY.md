@@ -7,7 +7,6 @@
 * [What's Snyk?](discover-snyk/whats-snyk.md)
 * [What's new?](discover-snyk/whats-new.md)
 * [Getting started](discover-snyk/getting-started/README.md)
-  * [Explore the Snyk Web UI](discover-snyk/getting-started/snyk-web-ui.md)
   * [Snyk release process](discover-snyk/getting-started/snyk-release-process.md)
   * [Glossary](discover-snyk/getting-started/glossary.md)
   * [Pilot Guide](discover-snyk/getting-started/pilot-guide/README.md)

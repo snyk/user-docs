@@ -20,7 +20,7 @@ Use the following Snyk [CLI commands](../developer-tools/snyk-cli/cli-commands-a
 
 ## Scan using the Web UI
 
-A scan runs when you import a Snyk Project (see [Import a Project to scan and identify issues ](../discover-snyk/getting-started/#import-a-project-to-scan-and-identify-issues)or click **Retest now** on a Project. Snyk then automatically runs periodic scans on that imported Project, to see if your code is affected by newly disclosed vulnerabilities. For more information, see [Explore Snyk through the Web UI](../discover-snyk/getting-started/snyk-web-ui.md).
+A scan runs when you import a Snyk Project (see [Import a Project to scan and identify issues ](../discover-snyk/getting-started/#import-a-project-to-scan-and-identify-issues)or click **Retest now** on a Project. Snyk then automatically runs periodic scans on that imported Project, to see if your code is affected by newly disclosed vulnerabilities. For more information, see [Explore Snyk through the Web UI](broken-reference).
 
 The default scanning frequency and available frequencies vary depending on the type of Project. For more information, see [Usage settings](../snyk-platform-administration/groups-and-organizations/usage-settings.md).
 
