@@ -14,7 +14,7 @@ Start onboarding Snyk Essentials by identifying all inventory code-based assets 
 
 ## Access Snyk Essentials
 
-Verify you can access Inventory from the [Snyk Web UI.](broken-reference)
+Verify you can access Inventory from the Snyk web UI.
 
 * Access the **Inventory** menu from the Group level of your Snyk Group.
 * Ensure you have Group Admin access.
@@ -88,7 +88,7 @@ Access the [Application context for SCM Integrations](../../../developer-tools/s
 
 The Snyk Essentials functionality is split across several menu options from the Group level.&#x20;
 
-* The Asset [Dashboard](broken-reference) report
+* The Asset Dashboard report
 * [Inventory](../../../manage-assets/manage-assets.md)
 * [Policies](../../../manage-risk/policies/assets-policies/)
 * [Integrations for SCM](../../../developer-tools/scm-integrations/group-level-integrations/)&#x20;

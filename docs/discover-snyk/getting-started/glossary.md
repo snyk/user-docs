@@ -420,9 +420,9 @@ A library used by the Snyk CLI to scan a certain language or build system.
 A component powering the Snyk cloud-native application security platform.\
 Incorporates the Snyk Intel Vulnerability DB: the Snyk database of vulnerabilities, providing detailed information and fix advice for known vulnerabilities. See [Vulnerability DB](https://snyk.io/vuln).
 
-### Snyk Web UI
+### Snyk web UI
 
-The browser-based environment that provides users access to Snyk functions. See [Snyk Web UI](broken-reference).
+The browser-based environment that provides users access to Snyk functions.
 
 ### Social Trends
 

@@ -126,7 +126,7 @@ Ensure each source name is assigned to only one cluster mapping.
 
 When prioritizing issues, it is important to understand the available integration options and associated risk factors.&#x20;
 
-Here are the integration options that you can choose from when setting up issues prioritization. You can customize the settings by navigating to the Group level [Snyk Web UI](broken-reference), the Setting menu, and then the Insights option.&#x20;
+Here are the integration options that you can choose from when setting up issues prioritization. You can customize the settings by navigating to the Group level Snyk web UI, the Setting menu, and then the Insights option.&#x20;
 
 * [Snyk Runtime Sensor](../../../integrations/snyk-runtime-sensor.md): Used for deeper runtime analysis, providing detailed insight into the actual usage and potential vulnerabilities of your applications during execution. This sensor helps in gathering live traffic data, identifying runtime vulnerabilities, and assessing potential risks based on real-time application behavior.
 * [Kubernetes Connector](set-up-insights-kubernetes-connector.md): Offers comprehensive monitoring for your Kubernetes deployments. This integration helps identify vulnerabilities within Kubernetes clusters and provides data on workload vulnerabilities, infrastructure misconfigurations, and potential malicious activity.
