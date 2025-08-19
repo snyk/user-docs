@@ -115,7 +115,7 @@ If you are an existing customer and are updating your Snyk Controller:
 kubectl delete secret snyk-monitor -n snyk-monitor
 ```
 
-3. Follow the [mandatory installation steps](install-the-snyk-controller-with-helm-azure-and-google-cloud-platform.md#mandatory-installation-steps-for-the-snyk-controller-with-helm). To get the latest Helm chart version, run the following command:
+3. Follow the [mandatory installation steps](install-the-snyk-controller-with-helm-azure-and-google-cloud-platform.md#installing-the-snyk-controller-with-helm). To get the latest Helm chart version, run the following command:
 
 <pre><code><strong>helm repo add snyk-charts https://snyk.github.io/kubernetes-monitor --force-update
 </strong></code></pre>

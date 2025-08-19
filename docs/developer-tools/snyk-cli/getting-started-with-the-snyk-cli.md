@@ -13,9 +13,9 @@
 
 The Snyk CLI brings the functionality of Snyk into your development workflow. You can run the CLI locally from the command line or in an IDE. You can also run the CLI in your CI/CD pipeline. The following shows an example of Snyk CLI test command output.
 
-<figure><img src="../../.gitbook/assets/snyk-cli-screenshot.png" alt="Snyk CLI test command output example"><figcaption><p>Snyk CLI test command output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-cli-screenshot.png" alt=""><figcaption><p>Snyk CLI test command output example</p></figcaption></figure>
 
-Snyk CLI scanning supports many languages and tool&#x73;**.** For detailed information, see the following:
+Snyk CLI scanning supports many languages and tools. For detailed information, see the following:
 
 * [Supported languages, package managers, and frameworks](../../supported-languages/supported-languages-package-managers-and-frameworks.md) for Open Source and Snyk Code
 * [Supported operating system distributions for Container](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container)
@@ -33,9 +33,9 @@ You can also install the CLI in your IDE or CI/CD environment. For details, see 
 
 ## Test your installation
 
-After authenticating, you can **t**est your installation. For a quick test, run. `snyk --help`.
+After authenticating, you can test your installation. For a quick test, run `snyk --help`.
 
-Alternatively, you can perform a quick test on a public npm package, for example. `snyk test ionic`.
+Alternatively, you can perform a quick test on a public npm package, for example `snyk test ionic`.
 
 Look at the `test` command report in your terminal. The report shows the vulnerabilities Snyk found in the package. For each issue found, Snyk reports the severity of the issue, provides a link to a detailed description, reports the path through which the vulnerable module got into your system, and provides guidance on how to fix the problem.
 
@@ -81,7 +81,7 @@ dependencies will be emailed to you.
 
 You can log in to your Snyk account and navigate to the Projects page to find the latest snapshot and scan results:
 
-<figure><img src="../../.gitbook/assets/monitor.png" alt="Snyk monitor snapshot and scan results"><figcaption><p>Snyk monitor snapshot and scan results</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/monitor.png" alt=""><figcaption><p>Snyk monitor snapshot and scan results</p></figcaption></figure>
 
 For more information, see [Monitor your Projects at regular intervals](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals).
 
@@ -99,7 +99,7 @@ If you run out of tests on an open-source Project, follow these steps:
 
 Run `snyk help` or see the [CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary).
 
-See the course [Introduction to the Snyk CLI](https://learn.snyk.io/lesson/snyk-cli/https://learn.snyk.io/lesson/snyk-cli/) for a quick video training session.
+See the course [Introduction to the Snyk CLI](https://learn.snyk.io/lesson/snyk-cli/) for a quick video training session.
 
 Snyk also provides a [cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1664236143/cheat-sheets/cheat-sheet-snyk-cli-v3.pdf) ([blog post](https://snyk.io/blog/snyk-cli-cheat-sheet/)).
 
@@ -113,7 +113,7 @@ For detailed information about the CLI, see the [CLI documentation](https://docs
 
 ## Getting support for the Snyk CLI
 
-Use the resources on the [Snyk support page ](https://support.snyk.io)to find help for using the Snyk CLI or Snyk in general. Note that Snyk support does not actively monitor GitHub Issues on any [Snyk development project](https://github.com/snyk).
+Use the resources on the [Snyk support page](https://support.snyk.io) to find help for using the Snyk CLI or Snyk in general. Note that Snyk support does not actively monitor GitHub Issues on any [Snyk development project](https://github.com/snyk).
 
 ## Snyk CLI is closed to contributions
 
