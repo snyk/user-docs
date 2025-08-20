@@ -23,3 +23,7 @@ This document uses the REST API. For more details, see the [Authentication for A
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/learn/learning_programs/{learning_program_id}/learning_contents" method="post" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/learn/learning_programs/{learning_program_id}/contents" method="get" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}

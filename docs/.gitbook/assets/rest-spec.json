@@ -758,6 +758,19 @@
           "type": "array"
         }
       },
+      "FilterStatus": {
+        "description": "Filter learning programs by status.",
+        "explode": true,
+        "in": "query",
+        "name": "status",
+        "schema": {
+          "items": {
+            "$ref": "#/components/schemas/LearningProgramStatusEnum"
+          },
+          "type": "array"
+        },
+        "style": "form"
+      },
       "ForceUpdate": {
         "description": "flag to force the update of a role, required if users are assigned to the role",
         "in": "query",
@@ -11211,14 +11224,7 @@
             "type": "string"
           },
           "status": {
-            "description": "Current status of the learning program",
-            "enum": [
-              "draft",
-              "scheduled",
-              "in_progress",
-              "complete"
-            ],
-            "type": "string"
+            "$ref": "#/components/schemas/LearningProgramStatusEnum"
           },
           "tenant_id": {
             "description": "UUID of the tenant that owns this learning program",
@@ -11242,6 +11248,26 @@
         ],
         "type": "object"
       },
+      "LearningProgramContentAttributes": {
+        "additionalProperties": false,
+        "properties": {
+          "learning_program_id": {
+            "description": "UUID of the learning program",
+            "format": "uuid",
+            "type": "string"
+          },
+          "lesson_id": {
+            "description": "UUID of the lesson that is part of the learning program",
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "required": [
+          "lesson_id",
+          "learning_program_id"
+        ],
+        "type": "object"
+      },
       "LearningProgramContentCreateResource": {
         "properties": {
           "lesson_id": {
@@ -11258,6 +11284,56 @@
         "required": [
           "type",
           "lesson_id"
+        ],
+        "type": "object"
+      },
+      "LearningProgramContentListResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "description": "Array of learning program content resources",
+            "items": {
+              "$ref": "#/components/schemas/LearningProgramContentResource"
+            },
+            "type": "array"
+          },
+          "jsonapi": {
+            "$ref": "#/components/schemas/JsonApi"
+          },
+          "links": {
+            "$ref": "#/components/schemas/PaginatedLinks"
+          }
+        },
+        "required": [
+          "data",
+          "links",
+          "jsonapi"
+        ],
+        "type": "object"
+      },
+      "LearningProgramContentResource": {
+        "additionalProperties": false,
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/LearningProgramContentAttributes"
+          },
+          "id": {
+            "description": "Unique identifier for the content record",
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "description": "Resource type identifier",
+            "enum": [
+              "learning_program_content"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "attributes"
         ],
         "type": "object"
       },
@@ -11445,6 +11521,16 @@
           "attributes"
         ],
         "type": "object"
+      },
+      "LearningProgramStatusEnum": {
+        "description": "Current status of the learning program",
+        "enum": [
+          "draft",
+          "scheduled",
+          "in_progress",
+          "complete"
+        ],
+        "type": "string"
       },
       "LessonAssignmentCreationAttributes": {
         "properties": {
@@ -71664,6 +71750,9 @@
           },
           {
             "$ref": "#/components/parameters/EndingBefore"
+          },
+          {
+            "$ref": "#/components/parameters/FilterStatus"
           }
         ],
         "responses": {
@@ -71912,6 +72001,98 @@
           }
         },
         "summary": "Get a single learning program for a tenant (Early Access)",
+        "tags": [
+          "Learning Program"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "learning_programs",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/tenants/{tenant_id}/learn/learning_programs/{learning_program_id}/contents": {
+      "get": {
+        "description": "Retrieves a paginated list of contents for a specific learning program.\n\n#### Required permissions\n\n- `Edit Tenant Details (tenant.edit)`",
+        "operationId": "getTenantLearningProgramContents",
+        "parameters": [
+          {
+            "description": "The unique identifier of the tenant.",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/LearningProgramId"
+          },
+          {
+            "$ref": "#/components/parameters/ApiVersion"
+          },
+          {
+            "$ref": "#/components/parameters/Limit"
+          },
+          {
+            "$ref": "#/components/parameters/StartingAfter"
+          },
+          {
+            "$ref": "#/components/parameters/EndingBefore"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LearningProgramContentListResponse"
+                }
+              }
+            },
+            "description": "Returns a paginated list of learning program contents",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get contents of a learning program (Early Access)",
         "tags": [
           "Learning Program"
         ],
