@@ -10383,7 +10383,6 @@
                       }
                     ]
                   },
-                  "maxItems": 5,
                   "minItems": 1,
                   "type": "array"
                 }
