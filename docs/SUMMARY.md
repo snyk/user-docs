@@ -990,7 +990,7 @@
   * [Project type responses from the API](snyk-api/api-endpoints-index-and-tips/project-type-responses-from-the-api.md)
   * [Examples for the Update existing integration endpoint](snyk-api/api-endpoints-index-and-tips/examples-for-the-update-existing-integration-endpoint.md)
 * [Using specific Snyk APIs](snyk-api/using-specific-snyk-apis/README.md)
-  * [Export API: Specifications, columns, and filtersrt](snyk-api/using-specific-snyk-apis/export-api-specifications-columns-and-filters.md)
+  * [Export API: Specifications, columns, and filters](snyk-api/using-specific-snyk-apis/export-api-specifications-columns-and-filters.md)
   * [Issues: List issues for a package](snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package.md)
   * [SBOM APIs](snyk-api/using-specific-snyk-apis/sbom-apis/README.md)
     * [Get a Project’s SBOM document](snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-get-a-projects-sbom-document.md)
