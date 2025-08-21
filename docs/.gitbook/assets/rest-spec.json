@@ -39636,6 +39636,133 @@
         "x-stability-level": "stable"
       }
     },
+    "/orgs/{org_id}/settings/opensource": {
+      "get": {
+        "description": "Returns settings for your Org which may also be controlled at the Group level.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getOpenSourceSettingsForOrg",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "The id of the org.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "description": "The Open Source settings for an Org.",
+                      "properties": {
+                        "attributes": {
+                          "properties": {
+                            "reachability": {
+                              "description": "The reachability setting for Org.",
+                              "properties": {
+                                "enabled": {
+                                  "description": "When enabled projects in this Org will be scanned for reachable vulnerabilities.",
+                                  "example": true,
+                                  "type": "boolean"
+                                }
+                              },
+                              "type": "object"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "id": {
+                          "description": "ID",
+                          "example": "ea536a06-0566-40ca-b96b-155568aa2027",
+                          "format": "uuid",
+                          "type": "string"
+                        },
+                        "type": {
+                          "description": "Content type",
+                          "example": "opensource_settings",
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/Links"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "data",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "The Open Source Settings for given Org.",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get the Open Source Settings for an Org. (Early Access)",
+        "tags": [
+          "OpenSourceSettings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "open_source",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
     "/orgs/{org_id}/settings/sast": {
       "get": {
         "description": "Retrieves the SAST settings for an org\n\n#### Required permissions\n\n- `View Organization (org.read)`",
