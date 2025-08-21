@@ -276,9 +276,7 @@
   * [Scala](supported-languages/supported-languages-list/scala/README.md)
     * [Scala for code analysis](supported-languages/supported-languages-list/scala/scala-for-code-analysis.md)
     * [Scala for open source](supported-languages/supported-languages-list/scala/scala-for-open-source.md)
-  * [Swift and Objective-C](supported-languages/supported-languages-list/swift-and-objective-c/README.md)
-    * [Swift for code analysis](supported-languages/supported-languages-list/swift-and-objective-c/swift-for-code-analysis.md)
-    * [Swift and Objective-C for open source](supported-languages/supported-languages-list/swift-and-objective-c/swift-and-objective-c-for-open-source.md)
+  * [Swift and Objective-C](supported-languages/supported-languages-list/swift-and-objective-c.md)
   * [TypeScript](supported-languages/supported-languages-list/typescript.md)
   * [VB.NET](supported-languages/supported-languages-list/vb.net.md)
 
