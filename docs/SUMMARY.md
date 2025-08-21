@@ -961,6 +961,7 @@
   * [Jira (v1)](snyk-api/reference/jira-v1.md)
   * [Licenses (v1)](snyk-api/reference/licenses-v1.md)
   * [Monitor (v1)](snyk-api/reference/monitor-v1.md)
+  * [OpenSourceSettings](snyk-api/reference/opensourcesettings.md)
   * [Organizations (v1)](snyk-api/reference/organizations-v1.md)
   * [Orgs](snyk-api/reference/orgs.md)
   * [Policies](snyk-api/reference/policies.md)
