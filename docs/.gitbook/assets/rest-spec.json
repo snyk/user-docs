@@ -10185,7 +10185,7 @@
                         "type": "object"
                       },
                       {
-                        "description": "A resource location to some service, like a cloud resource.",
+                        "description": "A resource location to some service, like a cloud resource. Only available for issue type 'cloud'.",
                         "properties": {
                           "cloud_resource": {
                             "properties": {
