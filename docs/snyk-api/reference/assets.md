@@ -4,18 +4,6 @@
 This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
 {% endhint %}
 
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/assets" method="post" %}
-[rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
-
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/assets" method="get" %}
-[rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
-
-{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/assets/{asset_id}" method="get" %}
-[rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endopenapi %}
-
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/assets/{asset_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
