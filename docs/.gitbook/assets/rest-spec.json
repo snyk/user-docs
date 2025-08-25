@@ -10203,12 +10203,26 @@
           },
           "links": {
             "$ref": "#/components/schemas/PaginatedLinks"
+          },
+          "meta": {
+            "properties": {
+              "total_participants_count": {
+                "description": "Total number of participants for the learning program",
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "total_participants_count"
+            ],
+            "type": "object"
           }
         },
         "required": [
           "data",
           "links",
-          "jsonapi"
+          "jsonapi",
+          "meta"
         ],
         "type": "object"
       },
@@ -70142,6 +70156,80 @@
       }
     },
     "/tenants/{tenant_id}/learn/learning_programs/{learning_program_id}": {
+      "delete": {
+        "description": "Deletes a learning program by its ID for the specified tenant.\n\n#### Required permissions\n\n- `Edit Tenant Details (tenant.edit)`",
+        "operationId": "deleteTenantLearningProgram",
+        "parameters": [
+          {
+            "description": "The unique identifier of the tenant.",
+            "in": "path",
+            "name": "tenant_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/LearningProgramId"
+          },
+          {
+            "$ref": "#/components/parameters/ApiVersion"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "The learning program was deleted successfully.",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Delete a learning program (Early Access)",
+        "tags": [
+          "Learning Program"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "learning_programs",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      },
       "get": {
         "description": "Retrieves a single learning program by its ID for the specified tenant.\n\n#### Required permissions\n\n- `Edit Tenant Details (tenant.edit)`",
         "operationId": "getTenantLearningProgram",
@@ -70326,9 +70414,7 @@
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
-      }
-    },
-    "/tenants/{tenant_id}/learn/learning_programs/{learning_program_id}/learning_contents": {
+      },
       "post": {
         "description": "Creates content for an existing learning program\n\n#### Required permissions\n\n- `Edit Tenant Details (tenant.edit)`",
         "operationId": "createTenantLearningProgramContents",
