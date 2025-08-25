@@ -1,13 +1,13 @@
-# Export API: Specifications, columns, and filtersrt
+# Export API: Specifications, columns, and filters
 
 The Export API, which Snyk Analytics supports, makes it easier to export data by allowing users to create and manage CSV files. These files are safely stored by Snyk. Designed for efficiency and security, the Export API helps users organize and scale the export of large datasets, which is useful for reporting and analytics tasks.
 
-You can use the Export API to export the Snyk issues dataset in the scope of `Snyk Organization` or `Snyk Group`. Navigate to the [available columns and filters](export-api-specifications-columns-and-filters.md#available-columns-and-filters) section to see the full lists. &#x20;
+You can use the Export API to export the Snyk issues and usage events datasets in the scope of `Snyk Organization` or `Snyk Group`. Navigate to the [available columns and filters](export-api-specifications-columns-and-filters.md#available-columns-and-filters) section to see the full lists.  &#x20;
 
 {% hint style="info" %}
 Before running the first export, ensure that all API requests include:
 
-* The API version parameter. The latest version is `2024-10-15.`
+* The API version parameter. The latest version is `2024-10-15`.
 * The authorization header. Use a user or a service account Snyk API Token.
 * The date of the current day for the version, if you want to autoupgrade when you use the API.
 {% endhint %}
@@ -17,7 +17,7 @@ Before running the first export, ensure that all API requests include:
 The Export API includes three endpoints for each scope, where the scope can be `Snyk Organization` or `Snyk Group`. Use the following workflow to successfully run an export using this API. &#x20;
 
 1. **Initiate the export** \
-   Start by initiating an export process. The response to that request returns the `export_id.`\
+   Start by initiating an export process. The response to that request returns the `export_id`.\
    Set the [filters and columns](export-api-specifications-columns-and-filters.md#available-columns-and-filters) based on your preferences.
 
 ```javascript
@@ -70,10 +70,6 @@ While the files are accessible for three days, the self-signed link to retrieve 
 
 ## Available columns and filters
 
-### Default filters
-
-If the Export API call does not include a definition for the specific filters, the returned data is scoped by default to fetch issues that were introduced.
-
 ### Default columns&#x20;
 
 If the Export API call does not define the specific columns, the returned data includes all the available columns by default.
@@ -84,9 +80,15 @@ Although the requested filters are not case-sensitive, the values for those filt
 
 Use the exact filter value as it appears in the Snyk Web UI. To clarify this requirement, case-sensitive filters are indicated in the table of available filters.
 
-<table><thead><tr><th width="310">Filter</th><th>Description</th></tr></thead><tbody><tr><td>updated (from and to)</td><td><p>The date and time of the last update that affected any attribute in the dataset.</p><p></p><p>Use this filter during cyclic exports to export only data that was updated since the last export.</p><p><br>Acceptable format: <code>YYYY-MM-DDTHH:MM:SSZ</code> <br>(example: <code>2024-11-28T09:10:00Z</code>)</p></td></tr><tr><td>introduced (from and to)</td><td>Date when the issue was introduced. <br>Acceptable format: <code>YYYY-MM-DDTHH:MM:SSZ</code> <br>(example: <code>2024-11-28T09:10:00</code>Z)</td></tr><tr><td>orgs</td><td>Snyk <code>Organization ID</code> (available only for the Group endpoints).</td></tr><tr><td>environment</td><td>The environment of the Project (case sensitive).</td></tr><tr><td>lifecycle</td><td>The lifecycle of the Project (case sensitive).</td></tr></tbody></table>
+{% hint style="info" %}
+At least one date filter (`introduced` or `updated`) must be included in your request.
+{% endhint %}
 
-### Available columns
+<table><thead><tr><th width="205.140625">Filter</th><th>Applicable Datasets</th><th width="366.3046875">Description</th></tr></thead><tbody><tr><td>updated (from and to)</td><td>issues, usage</td><td><p>The date and time of the last update that affected any attribute in the dataset.</p><p></p><p>Use this filter during cyclic exports to export only data that was updated since the last export.</p><p><br>Acceptable format: <code>YYYY-MM-DDTHH:MM:SSZ</code> <br>(example: <code>2024-11-28T09:10:00Z</code>)</p></td></tr><tr><td>introduced (from and to)</td><td>issues</td><td>Date when the issue was introduced. <br>Acceptable format: <code>YYYY-MM-DDTHH:MM:SSZ</code> <br>(example: <code>2024-11-28T09:10:00Z</code>)</td></tr><tr><td>orgs</td><td>issues, usage</td><td>Snyk <code>Organization ID</code> (available only for the Group endpoints).</td></tr><tr><td>environment</td><td>issues</td><td>The environment of the Project (case sensitive).</td></tr><tr><td>lifecycle</td><td>issues</td><td>The lifecycle of the Project (case sensitive).</td></tr></tbody></table>
+
+### Issues dataset columns
+
+#### Available columns
 
 <details>
 
@@ -209,8 +211,64 @@ Use the exact filter value as it appears in the Snyk Web UI. To clarify this req
 
 **Project and Target context**
 
-<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>project_public_id</code></td><td>A universally unique identifier for a Project, assigned in the source database or the record.</td></tr><tr><td><code>project_name</code></td><td>The name given to this Project, when added to Snyk.</td></tr><tr><td><code>project_url</code></td><td>The project URL in Snyk platform.</td></tr><tr><td><code>project_is_monitored</code></td><td>The Project is set to be actively monitored. By default, the API returns only monitored issues of the Project. To fetch issues of deactivated Projects, check the API parameters.</td></tr><tr><td><code>project_type</code></td><td>The scanning method to use for a particular Project, such as Static Application Security Testing (SAST) for scanning using Snyk Code, or Maven for a Maven Project using Snyk Open Source. This is part of the configuration for scanning.</td></tr><tr><td><code>project_type_display_name</code></td><td>A display name Snyk assigned to internal Project type values.</td></tr><tr><td><code>project_test_frequency</code></td><td>The frequency of testing for a given Project, for example, Daily, Weekly, and so on.</td></tr><tr><td><code>project_origin</code></td><td>The Origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes. Origins are a property of Targets.</td></tr><tr><td><code>project_target_ref</code></td><td>A reference that differentiates this Project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference.</td></tr><tr><td><code>project_target_runtime</code></td><td>The environment in which the Target is executed and run.</td></tr><tr><td><code>project_target_display_name</code></td><td>A display name for the Project's Target.</td></tr><tr><td><code>project_is_private_target</code></td><td>Indicates whether the Target's source is private or publicly reachable</td></tr><tr><td><code>project_target_source_type</code></td><td>The hosting provider of a givenTarget, for example, <code>docker-hub</code>, <code>github</code>, and so on.</td></tr><tr><td><code>project_target_source_type_display_value</code></td><td>A display value that represents the grouping forTarget sources, for example, Source Control, Container Registry, and so on.</td></tr><tr><td><code>project_target_upstream_url</code></td><td>The URL that points to a Target's upstream source, such as a URL for a GitHub repository.</td></tr><tr><td><code>project_target_file</code></td><td>The full file path within a project that Snyk is targeting for security scanning, such as /var/www/composer.lock, /app/package.json, or other dependency manifest files.</td></tr><tr><td><code>project_criticalities</code></td><td>A Project attribute that indicates business criticality. For example, <code>low</code>, <code>medium</code>, <code>high</code>, <code>critical</code>.</td></tr><tr><td><code>project_lifecycles</code></td><td>A Project attribute, for example, <code>production</code>, <code>development</code>, <code>sandbox</code>.</td></tr><tr><td><code>project_environments</code></td><td>A Poject attribute, for example, <code>frontend</code>, <code>backend</code>, <code>internal</code>, <code>external</code>, <code>mobile</code>, <code>saas</code>, <code>onprem</code>, <code>hosted</code>, <code>distributed</code>.</td></tr><tr><td><code>project_collections</code></td><td>All Project collections to which this Project has been added.</td></tr><tr><td><code>project_tags</code></td><td>All tags which have been assigned to this Project.</td></tr><tr><td><code>project_owner_email</code></td><td>The email of the user assigned as the owner of this Project.</td></tr><tr><td><code>project_owner_username</code></td><td>The username of the user assigned as the owner of this Project.</td></tr></tbody></table>
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>project_public_id</code></td><td>A universally unique identifier for a Project, assigned in the source database or the record.</td></tr><tr><td><code>project_name</code></td><td>The name given to this Project, when added to Snyk.</td></tr><tr><td><code>project_url</code></td><td>The project URL in Snyk platform.</td></tr><tr><td><code>project_is_monitored</code></td><td>The Project is set to be actively monitored. By default, the API returns only monitored issues of the Project. To fetch issues of deactivated Projects, check the API parameters.</td></tr><tr><td><code>project_type</code></td><td>The scanning method to use for a particular Project, such as Static Application Security Testing (SAST) for scanning using Snyk Code, or Maven for a Maven Project using Snyk Open Source. This is part of the configuration for scanning.</td></tr><tr><td><code>project_type_display_name</code></td><td>A display name Snyk assigned to internal Project type values.</td></tr><tr><td><code>project_test_frequency</code></td><td>The frequency of testing for a given Project, for example, Daily, Weekly, and so on.</td></tr><tr><td><code>project_origin</code></td><td>The Origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes. Origins are a property of Targets.</td></tr><tr><td><code>project_target_ref</code></td><td>A reference that differentiates this Project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference.</td></tr><tr><td><code>project_target_runtime</code></td><td>The environment in which the Target is executed and run.</td></tr><tr><td><code>project_target_display_name</code></td><td>A display name for the Project's Target.</td></tr><tr><td><code>project_is_private_target</code></td><td>Indicates whether the Target's source is private or publicly reachable</td></tr><tr><td><code>project_target_source_type</code></td><td>The hosting provider of a givenTarget, for example, <code>docker-hub</code>, <code>github</code>, and so on.</td></tr><tr><td><code>project_target_source_type_display_value</code></td><td>A display value that represents the grouping forTarget sources, for example, Source Control, Container Registry, and so on.</td></tr><tr><td><code>project_target_upstream_url</code></td><td>The URL that points to a Target's upstream source, such as a URL for a GitHub repository.</td></tr><tr><td><code>project_target_file</code></td><td>The full file path within a project that Snyk is targeting for security scanning, such as <code>/var/www/composer.lock</code>, <code>/app/package.json</code>, or other dependency manifest files.</td></tr><tr><td><code>project_criticalities</code></td><td>A Project attribute that indicates business criticality. For example, <code>low</code>, <code>medium</code>, <code>high</code>, <code>critical</code>.</td></tr><tr><td><code>project_lifecycles</code></td><td>A Project attribute, for example, <code>production</code>, <code>development</code>, <code>sandbox</code>.</td></tr><tr><td><code>project_environments</code></td><td>A Poject attribute, for example, <code>frontend</code>, <code>backend</code>, <code>internal</code>, <code>external</code>, <code>mobile</code>, <code>saas</code>, <code>onprem</code>, <code>hosted</code>, <code>distributed</code>.</td></tr><tr><td><code>project_collections</code></td><td>All Project collections to which this Project has been added.</td></tr><tr><td><code>project_tags</code></td><td>All tags which have been assigned to this Project.</td></tr><tr><td><code>project_owner_email</code></td><td>The email of the user assigned as the owner of this Project.</td></tr><tr><td><code>project_owner_username</code></td><td>The username of the user assigned as the owner of this Project.</td></tr></tbody></table>
 
 **Assets and application context**
 
 <table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>asset_id</code></td><td>Asset ID.</td></tr><tr><td><code>parent_asset_id</code> </td><td> Parent Asset ID.</td></tr><tr><td><code>asset_name</code> </td><td>The display name of the asset.</td></tr><tr><td><code>parent_asset_name</code> </td><td>The display name of the parent asset.</td></tr><tr><td><code>asset_class</code> </td><td>The customer configured business criticality of the asset (A, most critical to D, least critical).</td></tr><tr><td><code>asset_type</code></td><td> Specific type of the asset (Repository, Package, Container Image, Image Package, or Scanned Artifact).</td></tr><tr><td><code>asset_tags</code></td><td>Array of the tags that were assigned to the asset based on imported data or user input.</td></tr><tr><td><code>repository_freshness</code> </td><td>The repository activity status based on the last commit date.</td></tr><tr><td><p></p><p><code>asset_application</code> </p></td><td>The application or service that the asset is associated with.</td></tr><tr><td><p></p><p><code>asset_owner</code> </p></td><td>The code owner of the asset, usually a development team.</td></tr><tr><td><code>asset_category</code> </td><td>Category from integrated development platforms, such as Backstage and Roadie.</td></tr><tr><td><code>asset_catalog_name</code> </td><td>The catalog name as mentioned in the application context (ServiceNow, DataDog, and so on).</td></tr><tr><td><code>asset_lifecycle</code> </td><td>The lifecycle state of the asset.</td></tr></tbody></table>
+
+### Usage events dataset columns
+
+#### Available columns
+
+<details>
+
+<summary>A list of all columns that can be easily copied to the request body</summary>
+
+```yaml
+"ID",
+"ORG_PUBLIC_ID",
+"GROUP_PUBLIC_ID",
+"PRODUCT_DISPLAY_NAME",
+"INTERACTION_TYPE",
+"INTERACTION_CATEGORIES",
+"INTERACTION_TIMESTAMP",
+"INTERACTION_STATUS",
+"INTERACTION_STAGE",
+"INTERACTION_EXIT_CODE",
+"INTERACTION_TARGET_ID",
+"RUNTIME_APPLICATION_NAME",
+"RUNTIME_APPLICATION_VERSION",
+"RUNTIME_APPLICATION_DATA_SCHEMA_VERSION",
+"RUNTIME_PLATFORM_OS",
+"RUNTIME_PLATFORM_ARCH",
+"RUNTIME_ENVIRONMENT_NAME",
+"ENVIRONMENT_DISPLAY_NAME",
+"RUNTIME_ENVIRONMENT_VERSION",
+"RUNTIME_INTEGRATION_NAME",
+"RUNTIME_INTEGRATION_VERSION",
+"RUNTIME_PERFORMANCE_DURATION_MS",
+"USER_EMAIL",
+"USER_NAME",
+"ORG_DISPLAY_NAME",
+"ORG_SLUG",
+"GROUP_DISPLAY_NAME",
+"GROUP_SLUG",
+"ORG_DELETED_AT",
+"GROUP_DELETED_AT",
+"UPDATED_AT"
+```
+
+</details>
+
+#### Interaction context
+
+<table><thead><tr><th width="318.18359375">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td>A unique identifier for an interaction event</td></tr><tr><td><code>product_display_name</code></td><td>The Snyk product used during this interaction, for example, Snyk Open Source, Snyk IaC, Snyk Code, Snyk Container.</td></tr><tr><td><code>interaction_type</code></td><td>The type of interaction, could be "Scan done". Scan Done indicates that a test was run no matter if the CLI or IDE ran it, other types can be freely chosen types.</td></tr><tr><td><code>interaction_categories</code></td><td>The category vector used to describe the interaction in detail, "oss", "test".</td></tr><tr><td><code>interaction_timestamp</code></td><td>When the interaction was started in UTC.</td></tr><tr><td><code>interaction_status</code></td><td>Status would be "success" or "failure", where success means the action was executed, while failure means it didn't run.</td></tr><tr><td><code>interaction_stage</code></td><td>The stage of the SDLC where the Interaction occurred, such as "dev"|"cicd"|"prchecks"|"unknown".</td></tr><tr><td><code>interaction_exit_code</code></td><td>The interaction's exit code as returned by the running process. More info about the exit codes and their meaning is available in Snyk Docs per a given interaction (test, monitor, and so on).</td></tr><tr><td><code>interaction_target_id</code></td><td>A purl is a URL composed of seven components. scheme:type/namespace/name@version?qualifiers#subpath The purl specification is available here: <code>https://github.com/package-url/purl-spec</code> Some purl examples <code>pkg:github/package-url/purl-spec@244fd47e07d1004f0aed9c</code> <code>pkg:npm/%40angular/animation@12.3.1</code> <code>pkg:pypi/django@1.11.1</code></td></tr><tr><td><code>updated_at</code></td><td>When the interaction event or any related context was last updated.</td></tr></tbody></table>
+
+#### Runtime context
+
+<table><thead><tr><th width="330.3359375">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>runtime_application_name</code></td><td>The application used to execute a snyk interaction, for example, PyCharm, Visual Studio, snyk-ls, snyk-cli.</td></tr><tr><td><code>runtime_application_version</code></td><td>The version of the integration.</td></tr><tr><td><code>runtime_application_data_schema_version</code></td><td>The data schema version of Snyk's runtime interactions. The current version (v2) was released in Q2 2024. Prior versions' data may behave differently.</td></tr><tr><td><code>runtime_platform_os</code></td><td>The operating system for the integration (darwin, windows, linux, etc).</td></tr><tr><td><code>runtime_platform_arch</code></td><td>The architecture for the integration (AMD64, ARM64, 386, ALPINE).</td></tr><tr><td><code>runtime_environment_name</code></td><td>The environment for the integration (e.g., IntelliJ Ultimate, Pycharm).</td></tr><tr><td><code>environment_display_name</code></td><td>The Environment used during this interaction, for example: CLI, Eclipse, Jetbrains IDE, Visual Studio, Visual Studio Code, or Other</td></tr><tr><td><code>runtime_environment_version</code></td><td>The version of the integration environment (e.g. 2023.3)</td></tr><tr><td><code>runtime_integration_name</code></td><td>The name of the integration, could be a plugin or extension.</td></tr><tr><td><code>runtime_integration_version</code></td><td>The version of the integration, for example: 2.3.4.</td></tr><tr><td><code>runtime_performance_duration_ms</code></td><td>The duration in milliseconds of the interaction</td></tr></tbody></table>
+
+#### Snyk hierarchy
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>group_public_id</code></td><td>A universally unique identifier for a Group, assigned in the source database of the record.</td></tr><tr><td><code>org_public_id</code></td><td>A universally unique identifier for an Organization, assigned in the source database of the record.</td></tr><tr><td><code>group_display_name</code></td><td>The display name set for this Group.</td></tr><tr><td><code>group_slug</code></td><td>The name of the Group within Snyk.</td></tr><tr><td><code>org_display_name</code></td><td>The display name set for this Organization.</td></tr><tr><td><code>org_slug</code></td><td>The name for the Organization within Snyk.</td></tr><tr><td><code>user_email</code></td><td>The email of the user who was authenticated during the interaction.</td></tr><tr><td><code>user_name</code></td><td>The name of the user who was authenticated during the interaction.</td></tr></tbody></table>
