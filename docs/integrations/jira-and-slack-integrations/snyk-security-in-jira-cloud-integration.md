@@ -54,11 +54,16 @@ When you have completed the following steps to connect Snyk to Jira, you can sta
 Typically research and development engineering managers do this task because they own the Jira projects and know their team's code repositories.
 {% endhint %}
 
-1. In Jira, navigate to **Project settings** > **Toolchain** and find Snyk in the list of tools.\
-   See [What is the project toolchain in Jira Software?](https://support.atlassian.com/jira-software-cloud/docs/what-is-the-project-toolchain-in-jira/)
-2. Select the **Add connection** plus sign button for Snyk.
-3. Choose the container code repository from the list and select **Connect security containers**. This is a Snyk Target.\
-   You can connect more than one code repository to Jira.
+1. In Jira, navigate to your **Project** and select the **Security** tab.
+2. Click the **Connect security containers** button.
+3.  Click on the Snyk application and then select **Connect security containers**.
+
+    <figure><img src="../../.gitbook/assets/image (510).png" alt="Connect security containers in Jira via the Security tab and panels"><figcaption><p>Connect security containers in Jira via the Security tab and panels</p></figcaption></figure>
+
+
+4. Select your Snyk Organization from the list, and choose the Snyk Targets to connect to Jira.
+
+<figure><img src="../../.gitbook/assets/image (509).png" alt="Connect a security container in Jira via the Security panel" width="351"><figcaption><p>Connect a security container in Jira via the Security panel</p></figcaption></figure>
 
 Developers can now use the security feature to view recent vulnerabilities found in the linked code repositories and start [creating Jira issues](snyk-security-in-jira-cloud-integration.md#create-a-jira-issue-from-a-vulnerability) from those vulnerabilities or [linking them to existing Jira issues](snyk-security-in-jira-cloud-integration.md#link-an-existing-jira-issue-to-a-vulnerability).
 
@@ -67,14 +72,19 @@ Issue syncing between Snyk and Jira happens asynchronously, meaning there may be
 {% endhint %}
 
 {% hint style="info" %}
-Only security vulnerabilities will be shown on the Jira Security tab.
+Only **security vulnerabilities** will be shown on the Jira Security tab.
 {% endhint %}
 
 ### Deleting a target or repository
 
-To delete a target or repository from Snyk that you have connected to Jira, you must first delete the container code repository in Jira, through the **Security** panel in each Jira Project. Then you can remove the target or repository from Snyk.
+To delete a target or repository from Snyk that you have connected to Jira, you must first delete the container code repository in Jira, through the **Security** panel in each Jira Project. Then you can remove the target or repository from Snyk:
 
-<figure><img src="../../.gitbook/assets/2024-08-27_14-05-04.png" alt="Remove connected security containers in the Jira Security panel" width="335"><figcaption><p>Remove connected security containers in the Jira Security panel</p></figcaption></figure>
+1. In Jira, navigate to your **Project** and select the **Security** tab.
+2. Click on the **Connect security containers** button.
+3. Click on the Snyk application
+4. Select the security container you want to remove from the list using the **Remove connection** option
+
+<figure><img src="../../.gitbook/assets/image (511).png" alt="Remove connected security containers in the Jira Security panel" width="349"><figcaption><p>Remove connected security containers in the Jira Security panel</p></figcaption></figure>
 
 ## Automate ticket creation in Jira
 
