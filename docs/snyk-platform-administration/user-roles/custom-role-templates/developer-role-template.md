@@ -41,7 +41,6 @@ The remaining categories of permissions listed below should have all permissions
 * Entitlement management
 * Integration management
 * Kubernetes Integration management
-* Package management
 * Reports management
 * Service account management
 * Snyk Apps management
