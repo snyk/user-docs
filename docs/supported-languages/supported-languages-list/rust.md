@@ -14,12 +14,7 @@ Available functions:
 
 ## Technical specifications
 
-### Supported package managers and registries
-
-* Supported package manager: Cargo
-* Supported package registry: [crates.io](https://crates.io/)
-
-### Supported framworks and libraries
+### Supported frameworks and libraries
 
 For Rust with Snyk Open Source, the following frameworks and libraries are supported:
 
@@ -39,6 +34,11 @@ For Rust with Snyk Open Source, the following frameworks and libraries are suppo
 * rustcrypto - Comprehensive
 * sqlx - Comprehensive
 * Reqwest - Comprehensive
+
+### Supported package managers and registries
+
+* Supported package manager: Cargo
+* Supported package registry: [crates.io](https://crates.io/)
 
 ## Rust for Snyk Code
 
