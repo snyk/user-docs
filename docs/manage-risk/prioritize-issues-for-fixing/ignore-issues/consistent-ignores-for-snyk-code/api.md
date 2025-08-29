@@ -1,6 +1,6 @@
 # Consistent Ignores for Snyk Code API
 
-You can manage ignores individually through the [Snyk Policies API (REST)](https://apidocs.snyk.io/version=2024-10-14~experimental?version=2024-10-15#get-/orgs/-org_id-/policies).&#x20;
+You can manage ignores individually through the [Snyk Policies API (REST)](../../../../snyk-api/reference/policies.md).&#x20;
 
 The SARIF output from Snyk CLI contains the `snyk/asset/finding/v1` identifier used to manage ignores at the start of the Early Access program.&#x20;
 
