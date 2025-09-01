@@ -5,7 +5,7 @@
 ## Discover Snyk
 
 * [What's Snyk?](discover-snyk/whats-snyk.md)
-* [What's new?](discover-snyk/whats-new.md)
+* [What's new?](whats-new.md)
 * [Getting started](discover-snyk/getting-started/README.md)
   * [Snyk release process](discover-snyk/getting-started/snyk-release-process.md)
   * [Glossary](discover-snyk/getting-started/glossary.md)

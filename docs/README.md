@@ -11,7 +11,7 @@ coverY: 0
 
 {% include ".gitbook/includes/ai-assisted-coding-survey.md" %}
 
-Check out the latest [updates in the Snyk user documentation](discover-snyk/whats-new.md).
+Check out the latest [updates in the Snyk user documentation](whats-new.md).
 
 ## First steps
 
