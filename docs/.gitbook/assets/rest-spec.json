@@ -22707,6 +22707,9 @@
         "x-snyk-api-resource": "catalog",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       }
     },
@@ -33564,6 +33567,9 @@
         "x-snyk-api-resource": "assignments",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-13~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       },
       "get": {
@@ -33667,6 +33673,9 @@
         "x-snyk-api-resource": "assignments",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-13~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       },
       "patch": {
@@ -33774,6 +33783,9 @@
         "x-snyk-api-resource": "assignments",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       },
       "post": {
@@ -33853,6 +33865,9 @@
         "x-snyk-api-resource": "assignments",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       }
     },
@@ -33961,6 +33976,9 @@
         "x-snyk-api-resource": "progress",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       }
     },
@@ -34084,6 +34102,9 @@
         "x-snyk-api-resource": "progress",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       }
     },
@@ -70062,6 +70083,9 @@
         "x-snyk-api-resource": "learning_programs",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       },
       "post": {
@@ -70165,6 +70189,9 @@
         "x-snyk-api-resource": "learning_programs",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       }
     },
@@ -70241,6 +70268,9 @@
         "x-snyk-api-resource": "learning_programs",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       },
       "get": {
@@ -70334,6 +70364,9 @@
         "x-snyk-api-resource": "learning_programs",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       }
     },
@@ -70426,6 +70459,9 @@
         "x-snyk-api-resource": "learning_programs",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       },
       "post": {
@@ -70510,6 +70546,9 @@
         "x-snyk-api-resource": "learning_programs",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       }
     },
@@ -70602,6 +70641,9 @@
         "x-snyk-api-resource": "learning_programs",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-documentation": {
+          "category": "learn"
+        },
         "x-stability-level": "beta"
       }
     },
