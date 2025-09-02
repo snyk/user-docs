@@ -12,6 +12,6 @@ When you set up a connection, the webhook target endpoint is defined by the valu
 
 Normally, and by default for SCM integrations, the regional Snyk API endpoint is used. For the list of URLs, see [Broker client URLs](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls). Sometimes, however, your environment may prohibit SCM webhooks from leaving the private cloud or data center. In that case, the webhook and thus the SCM must point to the Snyk Broker container running in your environment. In these cases, the`broker_client_url` has to reflect the hostname and port of the Broker client.&#x20;
 
-Non-SCM integrations, notably the container registries integrations, require the Broker client URL to be the Broker client address. Snyk recommends using the DNS hostname (`http://my.broker.client`), but you can also use IP addresses (`http://192.168.0.1`). Append the port, for example, `http://my.broker.client:8000`.
+Non-SCM integrations, notably the container registries integrations, require the Broker client URL to be the Broker client address. Snyk recommends using a DNS host name, such as `http://my.broker.client`, but you can also use IP addresses (`http://192.168.0.1`). Ensure to append the port, for example, `http://my.broker.client:8000`.
 
-Note that the `https` webhook calls requires additional setup in the Broker client to bring a TLS certificate and mount it into the container. For details, see [HTTPS for Broker client with Docker](../https-for-broker-client-with-docker.md).
+The `https` webhook calls requires additional setup in the Broker client to bring a TLS certificate and mount it into the container. For details, see [HTTPS for Broker client with Docker](../https-for-broker-client-with-docker.md).
