@@ -18,6 +18,8 @@ Available functions:
 
 ## Technical specifications
 
+### Supported versions
+
 Snyk supports the following Ruby versions:
 
 | Ruby main version | Ruby specific version                                                                                                                                                                                             |
