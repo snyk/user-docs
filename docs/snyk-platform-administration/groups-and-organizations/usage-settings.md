@@ -43,7 +43,7 @@ A contributor is recognized through the author email field, set in the local Git
 ## Billing and Usage
 
 {% hint style="info" %}
-The **Billing and Usage** menu is available only for Tenant Admins on the Snyk Platform Access plan.
+The **Billing and Usage** menu is available only for Tenant Admins on the Snyk Platform Access plan (not enrolling new customers).
 
 For more information on billable events and credits, see [Policies](https://snyk.io/policies/definition-of-snyk-platform-access/).
 {% endhint %}
