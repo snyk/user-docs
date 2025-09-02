@@ -644,7 +644,7 @@
     * [Fix code vulnerabilities automatically](scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
   * [Snyk Code security rules](scan-with-snyk/snyk-code/snyk-code-security-rules/README.md)
     * [Apex rules](scan-with-snyk/snyk-code/snyk-code-security-rules/apex-rules.md)
-    * [C++ rules](scan-with-snyk/snyk-code/snyk-code-security-rules/c++-rules.md)
+    * [C/C++ rules](scan-with-snyk/snyk-code/snyk-code-security-rules/c-c++-rules.md)
     * [C# and ASP.NET rules](scan-with-snyk/snyk-code/snyk-code-security-rules/c-and-asp.net-rules.md)
     * [Go rules](scan-with-snyk/snyk-code/snyk-code-security-rules/go-rules.md)
     * [Java rules](scan-with-snyk/snyk-code/snyk-code-security-rules/java-rules.md)
