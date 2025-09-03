@@ -10054,12 +10054,26 @@
           },
           "links": {
             "$ref": "#/components/schemas/PaginatedLinks"
+          },
+          "meta": {
+            "properties": {
+              "total_contents_count": {
+                "description": "Total number of contents for the learning program",
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "total_contents_count"
+            ],
+            "type": "object"
           }
         },
         "required": [
           "data",
           "links",
-          "jsonapi"
+          "jsonapi",
+          "meta"
         ],
         "type": "object"
       },
@@ -70581,6 +70595,9 @@
           },
           {
             "$ref": "#/components/parameters/EndingBefore"
+          },
+          {
+            "$ref": "#/components/parameters/FilterName"
           }
         ],
         "responses": {
