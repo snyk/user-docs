@@ -1,10 +1,14 @@
-# SCM integrations and Python
+# SCM integration support for Python
+
+{% hint style="warning" %}
+Python packages that are operating system-specific and not supported by Linux may not be compatible with Snyk SCM scans, leading to errors.
+{% endhint %}
+
+To scan your Projects, you must ensure your repository contains the supported manifest files.
 
 ## Set the Python version in Git Projects
 
-The supported versions of Python are `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`.
-
-When scanning Pip Projects imported from Git, Snyk uses the version of Python specified in Organization settings or `.snyk` files.
+When scanning Pip Projects imported from Git, Snyk uses the version of Python specified in Organization settings or `.snyk` files.&#x20;
 
 {% hint style="info" %}
 It is important to specify the correct Python version for your Organization, as it can affect the version of dependencies used in scanning your Projects.
@@ -32,7 +36,7 @@ To define the Python version for all Projects in an Organization:
 
 <figure><img src="../../../.gitbook/assets/python-version.png" alt="Pip Python version settings"><figcaption><p>Pip Python version settings</p></figcaption></figure>
 
-If you require a Project in an Organization to use a different Python version, you may add a `.snyk` file to the Project repository and specify the desired version.
+If you need a Project in an Organization to use a different Python version, you can add a `.snyk` file to the Project repository and specify the desired version.
 
 ```python
 language-settings:
@@ -48,15 +52,7 @@ Snyk will select which Python version to use according to the `major`, `minor` a
 * `Major`, `minor` and `patch` version (or example, 3.8.x, 3.9.x, 3.10.x, 3.11.x, 3.12.x, 3.13.x): the specific `patch` version is ignored, the Project is scanned with default versions of 3.8, 3.9, 3.10, 3.11, 3.12, or 3.13
 * Any versions specified with an unsupported `minor` version: defaults to 2.7 or 3.7
 
-## SCM integration and Snyk for Python
-
-{% hint style="warning" %}
-Python packages that are operating system-specific and not supported by Linux may not be compatible with Snyk SCM scans, leading to errors.
-{% endhint %}
-
-To scan your Projects, you must ensure your repository contains the supported manifest files.
-
-### Pip and SCM repositories
+## SCM repositories and Pip
 
 The following dependencies are not supported and are removed before the file is scanned. The remaining dependencies are included in the scan.
 
@@ -89,7 +85,7 @@ An example follows of how `dephell` is used to convert from Conda `environments.
 dephell deps convert --from=conda --to=requirements.txt
 ```
 
-### Poetry and SCM repositories
+## SCM repositories and Poetry
 
 Poetry v1 and v2 are supported.
 
@@ -108,7 +104,7 @@ Poetry dev dependencies are not included in scans by default. To change this, mo
 
 <figure><img src="../../../.gitbook/assets/image (8).png" alt="Poetry dev dependency settings"><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
 
-### Pipenv and SCM repositories
+## SCM repositories and Pipenv
 
 {% hint style="warning" %}
 Private PyPI mirrors are not supported. `Pipfiles` specifying a private mirror as their only source will not be imported.

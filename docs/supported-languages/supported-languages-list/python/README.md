@@ -1,38 +1,32 @@
 # Python
 
-## Applicability
+## &#x20;Applicability and integration
 
-Snyk supports [Python for code analysis](python-for-code-analysis.md) and [Python for open source](python-for-open-source.md).
-
-For specific information about the use of versions and package managers, See [Snyk CLI for Python](snyk-cli-for-python.md) and [Git repositories and Python](scm-integrations-and-python.md).
-
-Check the language availability to be imported as an application, tested, or monitored using the Snyk products.
+{% hint style="info" %}
+Python is supported for Snyk Code and Snyk Open Source.
+{% endhint %}
 
 Available functions:
 
-* SCM import, available for Snyk Open Source and Snyk Code. For Python used with Snyk Open Source, the SCM import is available for Pip, pipenv, and Poetry.
-* Test or monitor your app through CLI and IDE, available for Snyk Open Source and Snyk Code.
-* Test your app's SBOM using pkg:pypi
-* Test your app's packages using pkg:pypi
+* SCM import
+* CLI and IDE: test or monitor your app
 
-## Package managers and supported file extensions
+Available functions:
 
-Snyk for Python supports Pip, Poetry, pipenv, and setup.py as package managers. For the list of supported Python versions, check the [Git repositories and Python](scm-integrations-and-python.md) page.
+* Test your app's SBOM using `pkg:pypi`
+* Test your app's packages using `pkg:pypi`
 
-As a package registry, [pypi.org](https://pypi.org/) is supported.
+## Technical specifications
 
-Snyk for Python supports the following file formats:
+{% hint style="info" %}
+It is possible that some Python Projects contain dependencies that require specific versions of Python. Therefore, the version of Python used when scanning can affect the dependency tree that Snyk generates.
+{% endhint %}
 
-* Snyk Open Source:
-  * For poetry: `pyproject.toml`, `poetry.lock`
-  * For pip: `requirements.txt`
-  * For pipenv: `pipfile`, `pipfile.lock`
-  * For setup.py: `setup.py`
-* Snyk Code: `.py`
+Snyk supports the following Python versions:  `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`.
 
-## Frameworks and libraries
+### Supported frameworks and libraries
 
-The following frameworks and libraries are supported in Snyk for Python:
+For Python, the following frameworks and libraries are supported:
 
 * AioHTTP - Comprehensive
 * iopg - Comprehensive
@@ -78,33 +72,12 @@ The following frameworks and libraries are supported in Snyk for Python:
 * urllib - Comprehensive
 * werkzeug - Comprehensive
 
-## Features
+### Supported package managers and registries
 
-The following features are supported in Snyk for Python:
+* Supported package managers: [Pip](https://pypi.org/project/pip/), [Poetry](https://python-poetry.org/), [pipenv](https://pipenv.pypa.io/en/latest/), and setup.py
+* Supported package registry: [pypi.org](https://pypi.org/)
 
-| Snyk Open Source                                                   | Snyk Code                                                                 |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------------- |
-| <ul><li>Fix PRs</li><li>License scanning</li><li>Reports</li></ul> | <ul><li>Reports</li><li>Custom rules</li><li>Interfile analysis</li></ul> |
-
-{% hint style="info" %}
-For details on support for specific package managers in Snyk Open Source, see [Python for Open Source](python-for-open-source.md).&#x20;
-{% endhint %}
-
-## Python version support
-
-Some Python Projects may contain dependencies that require specific versions of Python. Therefore, the version of Python used when scanning can affect the dependency tree that Snyk generates.
-
-You can specify the version of Python that Snyk uses to scan dependencies in both the CLI and Git integration.
-
-See [Snyk CLI for Python](snyk-cli-for-python.md) for information about the Python version and installation and use information for Pip, Poetry, Pipevn, and setup.py.
-
-See [Git repositories and Python](scm-integrations-and-python.md) for information about the Python version and installation and use for Python and pip and use of Poetry and pipenv.
-
-### Pipenv and Python versions supported
-
-The supported versions of Python are `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`.
-
-Snyk uses Python version information specified in each `Pipfile` to choose the major and minor versions to use in scanning, for example:
+For pipenv Projects, Snyk uses Python version information specified in each `Pipfile` to choose the major and minor versions to use in scanning, for example:
 
 ```python
 [requires]
@@ -119,18 +92,64 @@ Snyk defaults to Python `3.10` if the `Pipfile` contains:
 * Only a major version
 * An unsupported version
 
-### Poetry and Python versions supported
+For Poetry projects, you do not need to specify the Python version. Poetry files contain sufficient information to build a full dependency tree without running native tooling.
 
-There is no need to tell Snyk the Python version for Poetry Projects.
+## Python for Code
 
-Poetry files contain sufficient information to build a full dependency tree without running native tooling.
+For Python with Snyk Code, the following file format is supported: `.py`
 
-## IDE and CI/CD with Snyk for Python
+Available features:
+
+* Reports
+* Custom rules
+* Interfile analysis
+
+Snyk Code relies on Python projects to follow a standard directory layout for accurate analysis. Specifically, Snyk Code expects Projects to be compatible with [`setuptools` automatic discovery](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#auto-discovery), which identifies packages and modules automatically based on the directory structure. This includes support for `init.py` files to ensure that symbols defined in package initialization files are imported correctly, leading to a more accurate and deeper analysis.
+
+Both `src-layout` and `flat-layout` are supported. Proper adherence to these conventions allows the scanner to trace code effectively and provide accurate results.
+
+## Python for Open Source
+
+For Python with Snyk Open Source, the following file formats are supported:
+
+* For poetry: `pyproject.toml`, `poetry.lock`
+* For pip: `requirements.txt`
+* For pipenv: `pipfile`, `pipfile.lock`
+* For setup.py: `setup.py`
+
+Available features:
+
+* Fix PRs
+* License scanning
+* Reports
+
+{% hint style="info" %}
+Depending on your plan, some features may not be available. For more information, see [plans and pricing](https://snyk.io/plans/).
+{% endhint %}
+
+## IDE and CI/CD support for Python
 
 If you are using any of the supported IDEs to write Python, there are some configurations you must add to scan Python manifest files properly.
 
-If you are using a virtual environment, you must add the `PYTHON_PATH` to the **Additional Options** text input in the Snyk integration settings, for example, `--command=.venv/bin/python`. Snyk tries to look for a `*req*.txt` file in the root of the Project as it is seen in the IDE.
+To scan your Projects, you must first install the relevant package manager and ensure that your Project contains the supported manifest files.
 
-However, if you have manifest files in other directories within the root of the Project, Snyk cannot identify them. For Snyk to find them, you must use the `--all-projects` option. Snyk then recursively searches each Project directory to find all the manifest files.
+Python packages that are operating system-specific and not supported by Linux may not be compatible with Snyk SCM scans, leading to errors.
 
-If those directories each require a different virtual environment to run, the Snyk scan will not be successful because it will use one virtual environment to search for installed dependencies. In this case, it is best to use the CLI or the Git integration rather than an IDE to get vulnerability information on all the dependencies listed in each Project directory.
+### Virtual environment configuration
+
+If you are using a virtual environment, you must add the following information:
+
+* In your Snyk integration settings, locate the **Additional Options** field.
+* Add the `PYTHON_PATH` to this field, for example `--command=.venv/bin/python`.
+
+By default, the Snyk IDE integration looks for a `*req*.txt` file in the root of the Project as it is seen in the IDE.
+
+### Scan multiple directories
+
+If you have manifest files in other directories within the root of the Project, Snyk cannot identify them unless directed to do so.
+
+In your Snyk integration settings, locate the **Additional Options** field. Enable a recursive search and add the  `--all-projects` option in the **Additional Options** field.
+
+{% hint style="warning" %}
+If each directory needs a different virtual environment, it is possible that the Snyk scan fails because it uses a single virtual environment for dependency detection. In such cases, Snyk recommends using the CLI or SCM integration instead of an IDE , in order to gather vulnerability details for all dependencies in each Project directory.
+{% endhint %}

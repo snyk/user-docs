@@ -1,6 +1,6 @@
-# Snyk CLI for Python
+# CLI support for Python
 
-## Set the Python version for CLI
+## Set the Python version in the CLI
 
 To set the Python version in the CLI, add the following option to `snyk test` or `snyk monitor` with the name of the Python binary:
 
