@@ -6,7 +6,7 @@
 Python is supported for Snyk Code and Snyk Open Source.
 {% endhint %}
 
-Available functions:
+Available integrations:
 
 * SCM import
 * CLI and IDE: test or monitor your app
