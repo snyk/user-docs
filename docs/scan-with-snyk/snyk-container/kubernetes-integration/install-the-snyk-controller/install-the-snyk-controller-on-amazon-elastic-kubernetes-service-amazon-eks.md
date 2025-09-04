@@ -61,14 +61,48 @@ kubectl create secret generic snyk-monitor \
 
 #### **Create an EKS node role for your Node Group**
 
-1. Follow the instructions on [Amazon EKS node IAM role](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html) and check your existing node role. Ensure you have attached the policy `AmazonEC2ContainerRegistryReadOnly`**.**
-2. Navigate to the **Details** tab on your EKS node group page, where you will see `Node IAM Role ARN`
+1. **Create an EKS node role for your Node Group**
+   
+   Follow the instructions on [Amazon EKS node IAM role](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html) and check your existing node role. Ensure you have attached the policy `AmazonEC2ContainerRegistryReadOnly`.
+
+2. **Add the Trust Relationship for the IAM Role**
+   
+   For the Snyk Controller to successfully assume the IAM role and pull images from ECR, the role's trust policy must be configured to trust your EKS cluster's OIDC provider.
+
+   In the AWS Management Console, navigate to the IAM role created for your EKS node group.
+
+   Select the Trust relationships tab and click Edit trust policy.
+
+   Add the following JSON to the policy document. Replace the placeholders `xxx` and `oidc.eks.us-east-1.amazonaws.com/id/xxx` with your specific account ID and OIDC provider URL.
+
+   ```json
+   {
+     "Version": "2012-10-17",
+     "Statement": [
+       {
+         "Effect": "Allow",
+         "Principal": {
+           "Federated": "arn:aws:iam::xxx:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/xxx"
+         },
+         "Action": "sts:AssumeRoleWithWebIdentity",
+         "Condition": {
+           "StringEquals": {
+             "oidc.eks.us-east-1.amazonaws.com/id/xxx:sub": "system:serviceaccount:snyk-monitor:snyk-monitor"
+           }
+         }
+       }
+     ]
+   }
+   ```
+
+   Click Update policy to save your changes. 
+3. Navigate to the **Details** tab on your EKS node group page, where you will see `Node IAM Role ARN`
 
 ```
 arn:aws:iam::<role-id>:role/<role-name>
 ```
 
-3. Create a \<newFile>.yaml with the following content:
+4. Create a \<newFile>.yaml with the following content:
 
 ```
 volumes:
@@ -84,7 +118,7 @@ rbac:
       eks.amazonaws.com/role-arn: <Node IAM Role ARN>
 ```
 
-4. Install the Snyk Controller.
+5. Install the Snyk Controller.
 
 After creating the IAM role for your service account, you can install your Snyk Controller with the newly created YAML file to overwrite the values in the Helm chart.
 
