@@ -59,7 +59,7 @@ kubectl create secret generic snyk-monitor \
 2. Attach the `AmazonEC2ContainerRegistryReadOnly` policy to your EKS worker nodes.\
    The Snyk Controller is now able to pull private images when running on those worker nodes.
 
-#### Create an EKS node role for your Node Group and Add the Trust Relationship for the IAM Role
+#### Create an EKS node role for your Node Group and add the Trust Relationship for the IAM Role
 
 1. Follow the instructions on [Amazon EKS node IAM role](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html) and check your existing node role. Ensure you have attached the policy `AmazonEC2ContainerRegistryReadOnly`.
 
