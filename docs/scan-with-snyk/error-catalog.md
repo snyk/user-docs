@@ -3205,4 +3205,3 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 
 * [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-09-04T13:05:32.980Z
