@@ -1,11 +1,5 @@
 # Troubleshoot PR checks
 
-{% hint style="info" %}
-If you use `###` in the description of the PR , it will be blocked and the PR check will not take place.
-{% endhint %}
-
-PR checks that are configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and, therefore, will not alert for projects in languages that do not support FixPR checks.
-
 ## General troubleshooting for PR checks
 
 The following table lists general issues with PR checks and how to address them.
@@ -17,6 +11,8 @@ The following table lists general issues with PR checks and how to address them.
 | Multiple Security and Licence PR checks run on a single Pull Request. | When a PR is submitted, multiple Snyk PR checks of the same type run against it, possibly with different results. | <p>If a repository is imported into multiple Snyk Organizations, PR checks will run on the repository for any configured Organization.<br><br>Check the name of the PR check as it includes the Organization name against which the check is run. Alternatively, selecting the PR check details will take you to the results for the relevant Organization.</p>                                                                                                                                                                   |
 
 ## Open-source and licensing checks
+
+PR checks that are configured to “Only fail when the issues found have a fix available” will not alert for projects in languages that do not support Fix PR checks. For more information, see [Supported languages](../../../supported-languages/supported-languages-list/) to check feature support.
 
 If you come across false positive or false negative results, you can take action to diagnose and report the issue.
 
