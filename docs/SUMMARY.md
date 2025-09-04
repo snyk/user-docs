@@ -281,6 +281,8 @@
   * [Snyk MCP installation, configuration, and startup](integrations/developer-guardrails-for-agentic-workflows/snyk-mcp-installation-configuration-and-startup.md)
   * [Quickstart guides for MCP](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/README.md)
     * [Amazon Q guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/amazon-q-guide.md)
+    * [JetBrains AI assistant](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/amazon-q-guide-1.md)
+    * [JetBrains Junie](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/amazon-q-guide-2.md)
     * [Cline guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cline-guide.md)
     * [Codex CLI guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/codex-cli-guide.md)
     * [Cursor guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide.md)
