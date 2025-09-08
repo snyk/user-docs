@@ -302,9 +302,9 @@
       },
       "SunsetHeader": {
         "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
-        "example": "2021-08-02",
+        "example": "2021-08-02T00:00:00Z",
         "schema": {
-          "format": "date",
+          "format": "date-time",
           "type": "string"
         }
       },
@@ -1547,6 +1547,16 @@
           "$ref": "#/components/schemas/TenantId__0"
         }
       },
+      "TestIdParam": {
+        "description": "The test id",
+        "in": "path",
+        "name": "test_id",
+        "required": true,
+        "schema": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
       "Title": {
         "deprecated": true,
         "description": "This is deprecated, use Titles instead",
@@ -1688,6 +1698,66 @@
         "description": "Optional parameter to include deleted issues in results",
         "in": "query",
         "name": "include_deleted",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "io.snyk.api.request.PaginatedRequest.ending_before": {
+        "description": "Opaque pagination cursor for reverse traversal.",
+        "explode": false,
+        "in": "query",
+        "name": "ending_before",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "io.snyk.api.request.PaginatedRequest.limit": {
+        "description": "The number of items to return.",
+        "explode": false,
+        "in": "query",
+        "name": "limit",
+        "schema": {
+          "default": 10,
+          "format": "int8",
+          "maximum": 100,
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "io.snyk.api.request.PaginatedRequest.starting_after": {
+        "description": "Opaque pagination cursor for forward traversal.",
+        "explode": false,
+        "in": "query",
+        "name": "starting_after",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "io.snyk.api.request.SnykApiRequest.interaction_id": {
+        "description": "Identifies the Snyk client interaction in which this API request occurs.\n\nThe identifier is an opaque string. though at the time of writing it may either be a\nuuid or a urn containing a uuid and some metadata.\nto be safe, the",
+        "in": "header",
+        "name": "snyk-interaction-id",
+        "schema": {
+          "maxLength": 128,
+          "minLength": 36,
+          "type": "string"
+        }
+      },
+      "io.snyk.api.request.SnykApiRequest.request_id": {
+        "description": "A unique ID assigned to each API request, for tracing and troubleshooting.\n\nSnyk clients can optionally provide this ID.",
+        "in": "header",
+        "name": "snyk-request-id",
+        "schema": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
+      "io.snyk.api.request.SnykApiRequest.version": {
+        "description": "The API version requested.",
+        "explode": false,
+        "in": "query",
+        "name": "version",
+        "required": true,
         "schema": {
           "type": "string"
         }
@@ -6296,6 +6366,36 @@
         "pattern": "^[\\d]{4}-[\\d]{2}-[\\d]{2}/[\\d]{4}-[\\d]{2}-[\\d]{2}$",
         "type": "string"
       },
+      "DeepcodeBundleSubject": {
+        "description": "Test subject representing source code uploaded to Snyk using DeepCode\nbundle APIs.",
+        "properties": {
+          "bundle_id": {
+            "description": "Deepcode Bundle ID. These IDs are sha256 digests (32 bytes or 64 hex digits).",
+            "pattern": "^[a-fA-F0-9]{64}$",
+            "type": "string"
+          },
+          "locator": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/LocalPathLocator"
+              }
+            ],
+            "description": "Locate local paths from which the source code bundle was derived."
+          },
+          "type": {
+            "enum": [
+              "deepcode_bundle"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "bundle_id",
+          "locator"
+        ],
+        "type": "object"
+      },
       "DeleteAssignmentsRequest": {
         "properties": {
           "data": {
@@ -6358,6 +6458,86 @@
         },
         "required": [
           "data"
+        ],
+        "type": "object"
+      },
+      "DepGraphSubject": {
+        "description": "Test subject representing a Snyk dependency graph (a legacy SBOM format).",
+        "properties": {
+          "locator": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/LocalPathLocator"
+              }
+            ],
+            "description": "Source file(s) from which the dependency graph was derived.\n\nFor some managed package ecosystems (examples: Maven, Yarn workspaces),\nSnyk might derive a dependency graph from several files."
+          },
+          "type": {
+            "enum": [
+              "dep_graph"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "locator"
+        ],
+        "type": "object"
+      },
+      "DepGraphSubjectCreate": {
+        "description": "Test subject representing a Snyk dependency graph (a legacy SBOM format).",
+        "properties": {
+          "dep_graph": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.DepGraph"
+              }
+            ],
+            "description": "When creating a test, provide the dep-graph contents inline to the request.\n\nThis attribute is only available when creating a new Test."
+          },
+          "locator": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/LocalPathLocator"
+              }
+            ],
+            "description": "Source file(s) from which the dependency graph was derived.\n\nFor some managed package ecosystems (examples: Maven, Yarn workspaces),\nSnyk might derive a dependency graph from several files."
+          },
+          "type": {
+            "enum": [
+              "dep_graph"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "dep_graph",
+          "locator"
+        ],
+        "type": "object"
+      },
+      "DependencyPathEvidence": {
+        "description": "Dependency path to a software component within an SBOM dependency graph.\n\nFinding types: SCA",
+        "properties": {
+          "path": {
+            "description": "Series of component identifiers starting from the top-level component tested,\nand ending in the vulnerable software component.\n\nThe identifiers are domain-specific and determined by the test subject.",
+            "items": {
+              "$ref": "#/components/schemas/Package"
+            },
+            "type": "array"
+          },
+          "source": {
+            "enum": [
+              "dependency_path"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "source",
+          "path"
         ],
         "type": "object"
       },
@@ -7120,6 +7300,56 @@
         ],
         "type": "object"
       },
+      "Evidence": {
+        "description": "Supporting evidence for (rather than representative of) the finding in other\nsecurity domains and systems, lacking a well-known identifier.\n\nMore detailed attributes may also be included inline, especially when this\ninformation is not yet generally available in a well-known public APIs.\n\nExamples include:\n- Detailed enumeration of dependency paths\n- Execution flows leading to a code rule violation",
+        "discriminator": {
+          "mapping": {
+            "dependency_path": "#/components/schemas/DependencyPathEvidence",
+            "execution_flow": "#/components/schemas/ExecutionFlowEvidence",
+            "other": "#/components/schemas/OtherEvidence",
+            "reachability": "#/components/schemas/ReachabilityEvidence"
+          },
+          "propertyName": "source"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/DependencyPathEvidence"
+          },
+          {
+            "$ref": "#/components/schemas/ExecutionFlowEvidence"
+          },
+          {
+            "$ref": "#/components/schemas/ReachabilityEvidence"
+          },
+          {
+            "$ref": "#/components/schemas/OtherEvidence"
+          }
+        ]
+      },
+      "ExecutionFlowEvidence": {
+        "description": "Indicate a program flow of execution as additional evidence for the finding.",
+        "properties": {
+          "flow": {
+            "description": "Sequence of locations within this flow of execution.\n\nFor example, a sequence of locations connecting the \"source\" location\nwhere input data is obtained, to a \"sink\" location where it is used.",
+            "items": {
+              "$ref": "#/components/schemas/FileRegion"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "source": {
+            "enum": [
+              "execution_flow"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "source",
+          "flow"
+        ],
+        "type": "object"
+      },
       "ExploitDetails": {
         "description": "Details about the exploits",
         "properties": {
@@ -7306,6 +7536,1455 @@
           "attributes"
         ],
         "type": "object"
+      },
+      "FileRegion": {
+        "description": "FileRegion models a location where vulnerable code is found.",
+        "properties": {
+          "file_path": {
+            "description": "File path for the code snippet.",
+            "type": "string"
+          },
+          "from_column": {
+            "description": "Column on which the snippet starts.",
+            "type": "integer"
+          },
+          "from_line": {
+            "description": "Line in the file where the code snippet starts.",
+            "type": "integer"
+          },
+          "to_column": {
+            "description": "Column at which the code snippet ends.",
+            "type": "integer"
+          },
+          "to_line": {
+            "description": "Line on which the code snippet ends.",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "file_path",
+          "from_line"
+        ],
+        "type": "object"
+      },
+      "FindingAttributes": {
+        "description": "FindingAttributes represent the attributes of a Finding resource.",
+        "properties": {
+          "cause_of_failure": {
+            "default": false,
+            "description": "Did this finding cause the test outcome to fail?",
+            "type": "boolean"
+          },
+          "description": {
+            "description": "A longer human-readable text description for this finding.",
+            "type": "string"
+          },
+          "evidence": {
+            "description": "Supporting evidence for (rather than representative of) the finding in\nother security domains and systems, lacking a well-known identifier.",
+            "example": [
+              {
+                "path": [
+                  {
+                    "name": "my-app:1.0.0",
+                    "version": "log4j:2.4.1"
+                  }
+                ],
+                "source": "dependency_path"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Evidence"
+            },
+            "type": "array"
+          },
+          "finding_type": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FindingType"
+              }
+            ],
+            "description": "Type of finding."
+          },
+          "key": {
+            "description": "An opaque key used for aggregating the finding across multiple test\nexecutions operating on the same or originating Asset.\n\nFindings within a Test execution are aggregated by this key.",
+            "type": "string"
+          },
+          "locations": {
+            "description": "Locations in the Asset's contents where the finding may be found.",
+            "items": {
+              "$ref": "#/components/schemas/FindingLocation"
+            },
+            "type": "array"
+          },
+          "policy_modifications": {
+            "description": "Attributes which have been modified by policy decisions.",
+            "items": {
+              "$ref": "#/components/schemas/PolicyModification"
+            },
+            "type": "array"
+          },
+          "problems": {
+            "description": "Problems are representative of the finding in other security domains and\nsystems with a well-known identifier.",
+            "example": [
+              {
+                "id": "CWE-943",
+                "source": "cwe"
+              },
+              {
+                "default_configuration": {
+                  "severity": "high"
+                },
+                "help": {
+                  "markdown": "help text goes here"
+                },
+                "id": "javascript/NoSqli",
+                "name": "NoSqli",
+                "properties": {
+                  "categories": [
+                    "Security"
+                  ],
+                  "cwe": [
+                    "CWE-943"
+                  ],
+                  "example_commit_descriptions": [],
+                  "example_commit_fixes": [],
+                  "precision": "very-high",
+                  "repo_dataset_size": 30,
+                  "tags": [
+                    "javascript",
+                    "NoSqli"
+                  ]
+                },
+                "short_description": {
+                  "text": "NoSQL Injection"
+                },
+                "source": "snyk_code_rule"
+              }
+            ],
+            "items": {
+              "description": "Problems are representative of the finding in other security domains and\nsystems with a well-known identifier.\n\nMore detailed attributes for the problem may be included, especially when\nthis information is not yet readily available in a relatable public API.\n\nProblems are defined in industry standard taxonomies such as:\n- MITRE's Common Weakness Enumeration (CWE)\n- Common Vulnerability Exposures (CVE)\n\nSnyk systems also define problems, such as:\n- Code SAST rules\n- VulnDB vulnerabilities\n- Software licenses",
+              "discriminator": {
+                "mapping": {
+                  "cve": "#/components/schemas/CveProblem",
+                  "cwe": "#/components/schemas/CweProblem",
+                  "ghsa": "#/components/schemas/GithubSecurityAdvisoryProblem",
+                  "other": "#/components/schemas/OtherProblem",
+                  "snyk_cloud_rule": "#/components/schemas/SnykCloudRuleProblem",
+                  "snyk_code_rule": "#/components/schemas/SnykCodeRuleProblem",
+                  "snyk_license": "#/components/schemas/SnykLicenseProblem",
+                  "snyk_vuln": "#/components/schemas/SnykVulnProblem"
+                },
+                "propertyName": "source"
+              },
+              "oneOf": [
+                {
+                  "description": "CWE classification according to MITRE's Common Weakness Enumeration (CWE)\ndatabase.",
+                  "properties": {
+                    "id": {
+                      "example": "CWE-190",
+                      "pattern": "^CWE-[0-9]+$",
+                      "type": "string"
+                    },
+                    "source": {
+                      "enum": [
+                        "cwe"
+                      ],
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "source",
+                    "id"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "description": "Static code analysis rule, from the standard Snyk Code rule set.",
+                  "properties": {
+                    "default_configuration": {
+                      "description": "Snyk Code rule configuration options.",
+                      "properties": {
+                        "severity": {
+                          "allOf": [
+                            {
+                              "description": "Indicate the severity of a finding discovered by a Test.",
+                              "enum": [
+                                "critical",
+                                "high",
+                                "medium",
+                                "low",
+                                "none",
+                                "other"
+                              ],
+                              "type": "string"
+                            }
+                          ],
+                          "description": "Severity to apply when the rule matches."
+                        }
+                      },
+                      "required": [
+                        "severity"
+                      ],
+                      "type": "object"
+                    },
+                    "help": {
+                      "description": "Represent a message string in multiple formats: plain text or markdown.",
+                      "properties": {
+                        "markdown": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "id": {
+                      "example": "javascript/NoSqli",
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "properties": {
+                      "description": "Additional properties of a Snyk Code rule. Represented in SARIF as free-form\nmetadata, but Snyk Code scanner outputs prescribe a specific structure for\nthis content.",
+                      "properties": {
+                        "categories": {
+                          "description": "Categories applied to the rule.",
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "cwe": {
+                          "description": "List of CWE (Common Weakness Enumeration) identifiers corresponding to this rule.",
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "example_commit_descriptions": {
+                          "description": "Descriptions of the fix examples.",
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "example_commit_fixes": {
+                          "description": "Examples of fixing this rule in public open-source code.",
+                          "items": {
+                            "description": "An example of fixing this rule in a public open-source code.",
+                            "properties": {
+                              "commit_url": {
+                                "description": "Commit URL identifying a specific commit within a public open-source SCM repo.",
+                                "type": "string"
+                              },
+                              "lines": {
+                                "description": "Lines containing an example of the Snyk Code rule with an example fix.",
+                                "items": {
+                                  "description": "Source line content, line number, and unified diff indicating the changes in\nthe fix.",
+                                  "properties": {
+                                    "line": {
+                                      "type": "string"
+                                    },
+                                    "line_change": {
+                                      "type": "string"
+                                    },
+                                    "line_number": {
+                                      "format": "uint32",
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "line",
+                                    "line_number",
+                                    "line_change"
+                                  ],
+                                  "type": "object"
+                                },
+                                "type": "array"
+                              }
+                            },
+                            "required": [
+                              "commit_url",
+                              "lines"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "precision": {
+                          "description": "A qualitative description of the rule's precision.",
+                          "example": "very-high",
+                          "type": "string"
+                        },
+                        "repo_dataset_size": {
+                          "format": "uint32",
+                          "type": "integer"
+                        },
+                        "tags": {
+                          "description": "Tags applied to the rule.",
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "required": [
+                        "tags",
+                        "categories",
+                        "example_commit_fixes",
+                        "example_commit_descriptions",
+                        "precision",
+                        "repo_dataset_size",
+                        "cwe"
+                      ],
+                      "type": "object"
+                    },
+                    "short_description": {
+                      "description": "Represent a message string in multiple formats: plain text or markdown.",
+                      "properties": {
+                        "markdown": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "source": {
+                      "enum": [
+                        "snyk_code_rule"
+                      ],
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "source",
+                    "id",
+                    "name",
+                    "short_description",
+                    "default_configuration",
+                    "help",
+                    "properties"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "description": "CVE designation according to the public Common Vulnerability Exposure\ndatabase.",
+                  "properties": {
+                    "id": {
+                      "example": "CVE-2006-7135",
+                      "pattern": "^CVE-[0-9]+-[0-9]+$",
+                      "type": "string"
+                    },
+                    "source": {
+                      "enum": [
+                        "cve"
+                      ],
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "source",
+                    "id"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "description": "Vulnerability from Snyk's Vulnerability Database.",
+                  "properties": {
+                    "affected_hash_ranges": {
+                      "description": "Range of commit hashes known to be affected by this problem.\n\nGenerally used with package ecosystems which use Git SCM repositories for\ndistribution.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "affected_hashes": {
+                      "description": "List of specific commit hashes known to be affected by this problem.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "affected_versions": {
+                      "description": "All the package versions which are affected by this problem. Expect this to\nbe smaller than 0 ([,0] or \u003c0.0.0 ) for vulnerabilities that have been\nrevoked. Per ecosystem, the official package version guidelines are\nbeing used.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "created_at": {
+                      "description": "Timestamp indicating when the problem was orginally created.",
+                      "example": "2022-05-17T14:23:25Z",
+                      "format": "date-time",
+                      "type": "string"
+                    },
+                    "credits": {
+                      "description": "Discoverer / Reporter of the vulnerability.",
+                      "example": [
+                        "Snyk Research Team"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "cvss_base_score": {
+                      "allOf": [
+                        {
+                          "maximum": 10,
+                          "minimum": 0,
+                          "type": "number"
+                        }
+                      ],
+                      "description": "The Snyk curated or recommended CVSS score, in the highest CVSS version\nsupported and available for the issue, computed based on the Base Score\nof the cvss_vector field.",
+                      "example": 9.8
+                    },
+                    "cvss_sources": {
+                      "description": "All CVSS vector information (Base), with corresponding sources, scores\nand severities applying to the same vulnerability. The data is sourced\nfrom external security vendors (e.g. NVD), as well as assigned by Snyk.\n\nThe “type” key indicates whether this is the “primary” (recommended) CVSS\nto use, or “secondary” (provided as additional information).\n\nInformation might be partial and will be updated upon evaluation by\nexternal sources.",
+                      "items": {
+                        "description": "CVSS vector information with provenance indicating the source of the scoring.",
+                        "properties": {
+                          "assigner": {
+                            "description": "Entity providing the CVSS information.",
+                            "type": "string"
+                          },
+                          "base_score": {
+                            "allOf": [
+                              {
+                                "maximum": 10,
+                                "minimum": 0,
+                                "type": "number"
+                              }
+                            ],
+                            "description": "Base CVSS score."
+                          },
+                          "cvss_version": {
+                            "description": "CVSS version.",
+                            "type": "string"
+                          },
+                          "modified_at": {
+                            "description": "When the CVSS scoring was last modified.",
+                            "format": "date-time",
+                            "type": "string"
+                          },
+                          "severity": {
+                            "allOf": [
+                              {
+                                "description": "Indicate the severity of a finding discovered by a Test.",
+                                "enum": [
+                                  "critical",
+                                  "high",
+                                  "medium",
+                                  "low",
+                                  "none",
+                                  "other"
+                                ],
+                                "type": "string"
+                              }
+                            ],
+                            "description": "Severity based on the CVSS rating scale (see SnykVulnAttributes.severity)."
+                          },
+                          "type": {
+                            "allOf": [
+                              {
+                                "description": "Indicate whether the CVSS source is primary (recommended) or secondary\n(provided as supplemental information).",
+                                "enum": [
+                                  "primary",
+                                  "secondary",
+                                  "other"
+                                ],
+                                "type": "string"
+                              }
+                            ],
+                            "description": "Designation of whether the CVSS score is primary (recommended assessment)\nor secondary (supplemental information)."
+                          },
+                          "vector": {
+                            "description": "The CVSS vector string.",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "assigner",
+                          "modified_at",
+                          "severity",
+                          "vector",
+                          "base_score",
+                          "cvss_version",
+                          "type"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "cvss_vector": {
+                      "description": "The primary CVSS Base vector, either Snyk curated or from the recommended\nsource, in v3.0, v3.1 or v4.0 CVSS versions. Might include exploit\nvalues where applicable.",
+                      "example": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+                      "type": "string"
+                    },
+                    "disclosed_at": {
+                      "description": "Timestamp of when the vulnerability was first made publicly available\n(either known to us or as appears in the vulnerability source)",
+                      "example": "2022-10-09T23:55:03Z",
+                      "format": "date-time",
+                      "type": "string"
+                    },
+                    "ecosystem": {
+                      "allOf": [
+                        {
+                          "description": "Describe a software package ecosystem.",
+                          "discriminator": {
+                            "mapping": {
+                              "build": "#/components/schemas/snykvulndb.BuildPackageEcosystem",
+                              "os": "#/components/schemas/snykvulndb.OsPackageEcosystem",
+                              "other": "#/components/schemas/snykvulndb.OtherPackageEcosystem"
+                            },
+                            "propertyName": "type"
+                          },
+                          "oneOf": [
+                            {
+                              "description": "Software packages supporting the application build process.\n\nThese are generally development libraries, which may be distributed in source\nor compiled form, used during the application build process by various\nprogramming language toolchains.\n\nExamples include, but are not limited to: Javascript NPM, Java Maven, Python pip, etc.",
+                              "properties": {
+                                "language": {
+                                  "type": "string"
+                                },
+                                "package_manager": {
+                                  "type": "string"
+                                },
+                                "type": {
+                                  "enum": [
+                                    "build"
+                                  ],
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "language",
+                                "package_manager"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "description": "Software packages supporting operating system software installation and\nupgrades.\n\nThese are generally software packages containing runtime libraries and\napplications which are installed as part of an operating system software\ndistribution.",
+                              "properties": {
+                                "distribution": {
+                                  "description": "Distribution name providing the package.",
+                                  "example": "debian",
+                                  "type": "string"
+                                },
+                                "os_name": {
+                                  "description": "Name of the operating system.",
+                                  "example": "linux",
+                                  "type": "string"
+                                },
+                                "release": {
+                                  "description": "Release version of the operating system distribution.\n\nNote that for Linux distributions this is the release version (typically a\nsemver or date-derived number), rather than the codename for the release.",
+                                  "example": "12.6",
+                                  "type": "string"
+                                },
+                                "type": {
+                                  "enum": [
+                                    "os"
+                                  ],
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "os_name",
+                                "distribution",
+                                "release"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "description": "Package ecosystem which this API version is not capable of expressing.\n\nMore information may be available in a newer version of this API.",
+                              "properties": {
+                                "type": {
+                                  "enum": [
+                                    "other"
+                                  ],
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type"
+                              ],
+                              "type": "object"
+                            }
+                          ]
+                        }
+                      ],
+                      "description": "Package ecosystem in which the package is distributed.\n\nThis applies to private packages distributed with ecosystem tooling as well\nas those publicly distributed."
+                    },
+                    "epss_details": {
+                      "allOf": [
+                        {
+                          "description": "Exploit Prediction Scoring System (EPSS), which predicts the likelihood (probability) of the vulnerability to be\nexploited, and the percentile of the EPSS of a vulnerability relative to all other vulnerabilities.\nWe are using the latest model.\nhttps://www.first.org/epss/model",
+                          "properties": {
+                            "model_version": {
+                              "description": "The version of the EPSS model we use.",
+                              "example": "v2025.03.14",
+                              "type": "string"
+                            },
+                            "percentile": {
+                              "description": "The percentile of the EPSS of a vulnerability relative to all other vulnerabilities.\nIn value range 0 - 1 with 5 fixed digits.",
+                              "example": "0.73768",
+                              "type": "string"
+                            },
+                            "probability": {
+                              "description": "The probability of the vulnerability to be exploited.\nIn value range 0 - 1 with 5 fixed digits.",
+                              "example": "0.00859",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "percentile",
+                            "probability",
+                            "model_version"
+                          ],
+                          "type": "object"
+                        }
+                      ],
+                      "description": "EPSS details - see note on model definition."
+                    },
+                    "exploit_details": {
+                      "allOf": [
+                        {
+                          "description": "Details about the exploitability of a vulnerability.",
+                          "properties": {
+                            "maturity_levels": {
+                              "description": "Exploit maturity representation in CVSS version formats.",
+                              "items": {
+                                "description": "Represents exploit maturity.",
+                                "properties": {
+                                  "format": {
+                                    "description": "Format of the maturity level.",
+                                    "example": "CVSSv4",
+                                    "type": "string"
+                                  },
+                                  "level": {
+                                    "description": "Maturity level in the given format.",
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "allOf": [
+                                      {
+                                        "description": "Indicate whether the CVSS source is primary (recommended) or secondary\n(provided as supplemental information).",
+                                        "enum": [
+                                          "primary",
+                                          "secondary",
+                                          "other"
+                                        ],
+                                        "type": "string"
+                                      }
+                                    ],
+                                    "description": "Designation of whether the maturity information is primary (recommended\nassessment) or secondary (supplemental information) in nature."
+                                  }
+                                },
+                                "required": [
+                                  "format",
+                                  "level",
+                                  "type"
+                                ],
+                                "type": "object"
+                              },
+                              "type": "array"
+                            },
+                            "sources": {
+                              "description": "Sources of the exploitation maturity assessment.",
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "required": [
+                            "sources",
+                            "maturity_levels"
+                          ],
+                          "type": "object"
+                        }
+                      ],
+                      "description": "Details about the maturity of exploits for this vulnerability."
+                    },
+                    "id": {
+                      "example": "npm:jsonwebtoken:20150331",
+                      "pattern": "(^SNYK(-[^-]+)+[-][0-9]+$)|(^[^:]+(:[^:]+)+$)",
+                      "type": "string"
+                    },
+                    "initially_fixed_in_versions": {
+                      "description": "This indicates the earliest version that is vulnerability-free. As this\nmight be a backported fix, this does not mean that newer versions aren’t\nvulnerable. vulnerable_versions should also be used to determine whether\na given version is vulnerable.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "is_fixable": {
+                      "default": false,
+                      "description": "Is there a fixed version published to the relevant package manager\nrepository- i.e., a newer version without this specific vulnerability",
+                      "type": "boolean"
+                    },
+                    "is_malicious": {
+                      "default": false,
+                      "description": "Indicate if the vulnerability is known to mark a malicious package.",
+                      "type": "boolean"
+                    },
+                    "is_social_media_trending": {
+                      "default": false,
+                      "description": "This boolean field is true when increased activity is detected related to\nthis vulnerability. The \"trending\" determination is based on social media\nactivity, using Snyk models which are tuned to detect an increased chance\nof near-future exploitation.",
+                      "type": "boolean"
+                    },
+                    "modified_at": {
+                      "description": "Timestamp indicating when the vulnerability was last modified (anything\nfrom typo to version change). When the vulnerability is first added, this\nfield and published will be (almost) identical.",
+                      "format": "date-time",
+                      "type": "string"
+                    },
+                    "package_name": {
+                      "description": "Package name.",
+                      "type": "string"
+                    },
+                    "package_popularity_rank": {
+                      "description": "Percentile rank indicating the package's prevalence across Snyk-monitored projects.\nA higher rank signifies the package is used in a larger percentage of projects.",
+                      "maximum": 100,
+                      "minimum": 0,
+                      "type": "number"
+                    },
+                    "package_repository_url": {
+                      "description": "Link to the package repository containing the vulnerable package.",
+                      "example": "https://repo.maven.apache.org/maven2",
+                      "format": "uri",
+                      "type": "string"
+                    },
+                    "package_version": {
+                      "description": "Package version.",
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "description": "Timestamp indicating when the problem was published.",
+                      "example": "2022-05-17T14:23:25Z",
+                      "format": "date-time",
+                      "type": "string"
+                    },
+                    "references": {
+                      "description": "Links to external websites related to the vulnerability. Links also\ninclude a user-facing curated title.",
+                      "items": {
+                        "description": "Represent links to external sources of vulnerability information.",
+                        "properties": {
+                          "title": {
+                            "description": "User-facing title of the link.",
+                            "type": "string"
+                          },
+                          "url": {
+                            "description": "External link where more information about the vulnerability can be found.",
+                            "format": "uri",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "title",
+                          "url"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "severity": {
+                      "allOf": [
+                        {
+                          "description": "Indicate the severity of a finding discovered by a Test.",
+                          "enum": [
+                            "critical",
+                            "high",
+                            "medium",
+                            "low",
+                            "none",
+                            "other"
+                          ],
+                          "type": "string"
+                        }
+                      ],
+                      "description": "The Snyk curated or recommended vulnerability severity for the problem.",
+                      "example": "critical"
+                    },
+                    "source": {
+                      "enum": [
+                        "snyk_vuln"
+                      ],
+                      "type": "string"
+                    },
+                    "vendor_severity": {
+                      "description": "The assigned severity/impact/urgency rating by the distros teams for the\nspecific vulnerability package and release of the operating system (if available).",
+                      "type": "string"
+                    },
+                    "vulnerable_functions": {
+                      "additionalProperties": {
+                        "description": "Information about a function known to be vulnerable in a software package.",
+                        "properties": {
+                          "function_id": {
+                            "allOf": [
+                              {
+                                "description": "Identify a vulnerable function in a software package.",
+                                "properties": {
+                                  "class_name": {
+                                    "description": "Class containing the function.",
+                                    "type": "string"
+                                  },
+                                  "function_name": {
+                                    "description": "Vulnerable function name.",
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "function_name"
+                                ],
+                                "type": "object"
+                              }
+                            ],
+                            "description": "Vulnerable function."
+                          },
+                          "versions": {
+                            "description": "Package versions in which the function is vulnerable.",
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "required": [
+                          "function_id",
+                          "versions"
+                        ],
+                        "type": "object"
+                      },
+                      "description": "Known vulnerable functions in software packages.",
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "source",
+                    "id",
+                    "ecosystem",
+                    "created_at",
+                    "package_name",
+                    "package_version",
+                    "published_at",
+                    "severity",
+                    "credits",
+                    "cvss_base_score",
+                    "cvss_sources",
+                    "cvss_vector",
+                    "disclosed_at",
+                    "exploit_details",
+                    "initially_fixed_in_versions",
+                    "is_fixable",
+                    "is_malicious",
+                    "is_social_media_trending",
+                    "modified_at",
+                    "references"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "description": "License from Snyk's Vulnerability Database.\n\nA software license can be considered a problem when policy designates it as\na business risk.",
+                  "properties": {
+                    "affected_hash_ranges": {
+                      "description": "Range of commit hashes known to be affected by this problem.\n\nGenerally used with package ecosystems which use Git SCM repositories for\ndistribution.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "affected_hashes": {
+                      "description": "List of specific commit hashes known to be affected by this problem.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "affected_versions": {
+                      "description": "All the package versions which are affected by this problem. Expect this to\nbe smaller than 0 ([,0] or \u003c0.0.0 ) for vulnerabilities that have been\nrevoked. Per ecosystem, the official package version guidelines are\nbeing used.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "created_at": {
+                      "description": "Timestamp indicating when the problem was orginally created.",
+                      "example": "2022-05-17T14:23:25Z",
+                      "format": "date-time",
+                      "type": "string"
+                    },
+                    "ecosystem": {
+                      "allOf": [
+                        {
+                          "description": "Describe a software package ecosystem.",
+                          "discriminator": {
+                            "mapping": {
+                              "build": "#/components/schemas/snykvulndb.BuildPackageEcosystem",
+                              "os": "#/components/schemas/snykvulndb.OsPackageEcosystem",
+                              "other": "#/components/schemas/snykvulndb.OtherPackageEcosystem"
+                            },
+                            "propertyName": "type"
+                          },
+                          "oneOf": [
+                            {
+                              "description": "Software packages supporting the application build process.\n\nThese are generally development libraries, which may be distributed in source\nor compiled form, used during the application build process by various\nprogramming language toolchains.\n\nExamples include, but are not limited to: Javascript NPM, Java Maven, Python pip, etc.",
+                              "properties": {
+                                "language": {
+                                  "type": "string"
+                                },
+                                "package_manager": {
+                                  "type": "string"
+                                },
+                                "type": {
+                                  "enum": [
+                                    "build"
+                                  ],
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "language",
+                                "package_manager"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "description": "Software packages supporting operating system software installation and\nupgrades.\n\nThese are generally software packages containing runtime libraries and\napplications which are installed as part of an operating system software\ndistribution.",
+                              "properties": {
+                                "distribution": {
+                                  "description": "Distribution name providing the package.",
+                                  "example": "debian",
+                                  "type": "string"
+                                },
+                                "os_name": {
+                                  "description": "Name of the operating system.",
+                                  "example": "linux",
+                                  "type": "string"
+                                },
+                                "release": {
+                                  "description": "Release version of the operating system distribution.\n\nNote that for Linux distributions this is the release version (typically a\nsemver or date-derived number), rather than the codename for the release.",
+                                  "example": "12.6",
+                                  "type": "string"
+                                },
+                                "type": {
+                                  "enum": [
+                                    "os"
+                                  ],
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "os_name",
+                                "distribution",
+                                "release"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "description": "Package ecosystem which this API version is not capable of expressing.\n\nMore information may be available in a newer version of this API.",
+                              "properties": {
+                                "type": {
+                                  "enum": [
+                                    "other"
+                                  ],
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type"
+                              ],
+                              "type": "object"
+                            }
+                          ]
+                        }
+                      ],
+                      "description": "Package ecosystem in which the package is distributed.\n\nThis applies to private packages distributed with ecosystem tooling as well\nas those publicly distributed."
+                    },
+                    "id": {
+                      "example": "snyk:lic:golang:github.com:hashicorp:terraform-svchost:MPL-2.0",
+                      "pattern": "^snyk(:[^:]+)+$",
+                      "type": "string"
+                    },
+                    "license": {
+                      "description": "Software license identifier.",
+                      "example": "MPL-2.0",
+                      "type": "string"
+                    },
+                    "package_name": {
+                      "description": "Package name.",
+                      "type": "string"
+                    },
+                    "package_version": {
+                      "description": "Package version.",
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "description": "Timestamp indicating when the problem was published.",
+                      "example": "2022-05-17T14:23:25Z",
+                      "format": "date-time",
+                      "type": "string"
+                    },
+                    "severity": {
+                      "allOf": [
+                        {
+                          "description": "Indicate the severity of a finding discovered by a Test.",
+                          "enum": [
+                            "critical",
+                            "high",
+                            "medium",
+                            "low",
+                            "none",
+                            "other"
+                          ],
+                          "type": "string"
+                        }
+                      ],
+                      "description": "The Snyk curated or recommended vulnerability severity for the problem.",
+                      "example": "critical"
+                    },
+                    "source": {
+                      "enum": [
+                        "snyk_license"
+                      ],
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "source",
+                    "id",
+                    "ecosystem",
+                    "created_at",
+                    "package_name",
+                    "package_version",
+                    "published_at",
+                    "severity",
+                    "license"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "description": "Configuration policy violation from Snyk's Cloud Rules Database.",
+                  "properties": {
+                    "id": {
+                      "example": "SNYK-CC-TF-14",
+                      "pattern": "^SNYK-CC-([^-]+)+[-][0-9]+$",
+                      "type": "string"
+                    },
+                    "source": {
+                      "enum": [
+                        "snyk_cloud_rule"
+                      ],
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "source",
+                    "id"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "description": "Github Security Advisory associated with this finding.",
+                  "properties": {
+                    "id": {
+                      "example": "GHSA-pxg6-pf52-xh8x",
+                      "type": "string"
+                    },
+                    "source": {
+                      "enum": [
+                        "ghsa"
+                      ],
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "source",
+                    "id"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "description": "Problem which this API version is not capable of expressing.\n\nThis problem may be available in a newer version of this API.",
+                  "properties": {
+                    "source": {
+                      "enum": [
+                        "other"
+                      ],
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "source"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "rating": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Rating"
+              }
+            ],
+            "description": "Qualitative ratings on a finding."
+          },
+          "risk": {
+            "allOf": [
+              {
+                "description": "Risk represents Snyk's risk assessment of a finding.",
+                "properties": {
+                  "risk_score": {
+                    "allOf": [
+                      {
+                        "description": "Risk score assigns a numeric metric based on various attributes of the\nfinding and the risk context in which it was discovered.",
+                        "properties": {
+                          "value": {
+                            "format": "uint16",
+                            "maximum": 1000,
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "value"
+                        ],
+                        "type": "object"
+                      }
+                    ],
+                    "description": "Risk score assessment for the finding."
+                  }
+                },
+                "type": "object"
+              }
+            ],
+            "description": "Qualitative risk analysis on a finding."
+          },
+          "suppression": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Suppression"
+              }
+            ],
+            "description": "Indication of whether a finding is suppressed by a policy decision."
+          },
+          "title": {
+            "description": "A human-readable title for this finding.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "finding_type",
+          "title",
+          "description",
+          "key",
+          "cause_of_failure",
+          "problems",
+          "evidence",
+          "locations",
+          "rating",
+          "risk"
+        ],
+        "type": "object"
+      },
+      "FindingData": {
+        "description": "FindingData represents a Finding resource object.",
+        "properties": {
+          "attributes": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FindingAttributes"
+              }
+            ],
+            "readOnly": true
+          },
+          "id": {
+            "format": "uuid",
+            "readOnly": true,
+            "type": "string"
+          },
+          "links": {
+            "description": "Links to external resources outside this API.\n\nBecause these are not REST API resources, they are expressed here as links,\nrather than as relationships.",
+            "properties": {
+              "snyk_advisory": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                  }
+                ],
+                "description": "Link to Snyk's vulnerability advisory for more information on the\nfinding, if applicable.",
+                "example": "https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720"
+              },
+              "snyk_learn": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                  }
+                ],
+                "description": "Link to a Snyk Learn lesson relevant to the finding, if applicable.",
+                "example": "https://learn.snyk.io/lesson/csrf-attack/"
+              }
+            },
+            "type": "object"
+          },
+          "relationships": {
+            "properties": {
+              "asset": {
+                "description": "Originating asset in which this finding was discovered.",
+                "properties": {
+                  "data": {
+                    "properties": {
+                      "id": {
+                        "format": "uuid",
+                        "type": "string"
+                      },
+                      "type": {
+                        "pattern": "^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "id"
+                    ],
+                    "type": "object"
+                  },
+                  "links": {
+                    "$ref": "#/components/schemas/io.snyk.api.common.RelatedLink"
+                  },
+                  "meta": {
+                    "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                  }
+                },
+                "required": [
+                  "links"
+                ],
+                "type": "object"
+              },
+              "org": {
+                "description": "Snyk organization scope in which the finding was discovered.",
+                "properties": {
+                  "data": {
+                    "properties": {
+                      "id": {
+                        "format": "uuid",
+                        "type": "string"
+                      },
+                      "type": {
+                        "pattern": "^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "id"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "type": "object"
+              },
+              "policy": {
+                "description": "Relate to the policy or policies applied to this finding.",
+                "properties": {
+                  "data": {
+                    "properties": {
+                      "id": {
+                        "format": "uuid",
+                        "type": "string"
+                      },
+                      "type": {
+                        "pattern": "^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "id"
+                    ],
+                    "type": "object"
+                  },
+                  "links": {
+                    "$ref": "#/components/schemas/io.snyk.api.common.RelatedLink"
+                  },
+                  "meta": {
+                    "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                  }
+                },
+                "required": [
+                  "links"
+                ],
+                "type": "object"
+              },
+              "test": {
+                "description": "Test in which this finding was discovered.",
+                "properties": {
+                  "data": {
+                    "properties": {
+                      "id": {
+                        "format": "uuid",
+                        "type": "string"
+                      },
+                      "type": {
+                        "pattern": "^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "id"
+                    ],
+                    "type": "object"
+                  },
+                  "links": {
+                    "$ref": "#/components/schemas/io.snyk.api.common.RelatedLink"
+                  },
+                  "meta": {
+                    "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                  }
+                },
+                "required": [
+                  "links"
+                ],
+                "type": "object"
+              }
+            },
+            "readOnly": true,
+            "type": "object"
+          },
+          "type": {
+            "enum": [
+              "findings"
+            ],
+            "readOnly": true,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "attributes"
+        ],
+        "type": "object"
+      },
+      "FindingLocation": {
+        "description": "Location within an Subject's contents where the finding was discovered.",
+        "discriminator": {
+          "mapping": {
+            "other": "#/components/schemas/OtherLocation",
+            "package": "#/components/schemas/PackageLocation",
+            "source": "#/components/schemas/SourceLocation"
+          },
+          "propertyName": "type"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/PackageLocation"
+          },
+          {
+            "description": "Source file location.\n\nFinding types: SCA, SAST",
+            "example": {
+              "file_path": "package.json",
+              "from_column": 12,
+              "from_line": 24,
+              "to_column": 36,
+              "to_line": 24,
+              "type": "source"
+            },
+            "properties": {
+              "file_path": {
+                "description": "File path for the code snippet.",
+                "type": "string"
+              },
+              "from_column": {
+                "description": "Column on which the snippet starts.",
+                "type": "integer"
+              },
+              "from_line": {
+                "description": "Line in the file where the code snippet starts.",
+                "type": "integer"
+              },
+              "to_column": {
+                "description": "Column at which the code snippet ends.",
+                "type": "integer"
+              },
+              "to_line": {
+                "description": "Line on which the code snippet ends.",
+                "type": "integer"
+              },
+              "type": {
+                "enum": [
+                  "source"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type",
+              "file_path",
+              "from_line"
+            ],
+            "type": "object"
+          },
+          {
+            "$ref": "#/components/schemas/OtherLocation"
+          }
+        ]
+      },
+      "FindingSummary": {
+        "description": "Summary of findings found by the Test.",
+        "properties": {
+          "count": {
+            "description": "Total count of findings.",
+            "example": 30,
+            "format": "uint32",
+            "type": "integer"
+          },
+          "count_by": {
+            "additionalProperties": {
+              "additionalProperties": {
+                "format": "uint32",
+                "type": "integer"
+              },
+              "type": "object"
+            },
+            "description": "Counts of findings grouped by various finding attributes.\n\nThe outer record is keyed by finding attribute name. The value is a record\nkeyed by distinct values of this attribute, whose value is the number of\nfindings with a distinct value.",
+            "example": {
+              "result_type": {
+                "sast": 12,
+                "sca": 18
+              },
+              "severity": {
+                "critical": 2,
+                "high": 3,
+                "low": 15,
+                "medium": 10
+              }
+            },
+            "type": "object"
+          }
+        },
+        "required": [
+          "count"
+        ],
+        "type": "object"
+      },
+      "FindingType": {
+        "description": "Type of Finding which was discovered.",
+        "enum": [
+          "sca",
+          "sast",
+          "dast",
+          "other"
+        ],
+        "type": "string"
       },
       "ForceUpdate": {
         "example": false,
@@ -7876,6 +9555,42 @@
         "required": [
           "type",
           "required"
+        ],
+        "type": "object"
+      },
+      "GitUrlCoordinatesSubject": {
+        "description": "Test subject representing a source tree located in a Git repository that\nhas a Snyk SCM integration.",
+        "properties": {
+          "commit_id": {
+            "description": "Commit ID of the Git commit from which content will be retrieved for the\ntest.",
+            "pattern": "^[a-f0-9]{40,}$",
+            "type": "string"
+          },
+          "integration_id": {
+            "description": "Integration used to access the Git SCM repository in order to retrieve its source contents.",
+            "format": "uuid",
+            "type": "string"
+          },
+          "locator": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ScmRepoLocator"
+              }
+            ],
+            "description": "Locate the SCM repository from which content will be retrieved for the\ntest."
+          },
+          "type": {
+            "enum": [
+              "git_url_coordinates"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "integration_id",
+          "commit_id",
+          "locator"
         ],
         "type": "object"
       },
@@ -10448,19 +12163,7 @@
                 "type": "string"
               },
               "meta": {
-                "additionalProperties": true,
-                "description": "Free-form object that may contain non-standard information.",
-                "example": {
-                  "key1": "value1",
-                  "key2": {
-                    "sub_key": "sub_value"
-                  },
-                  "key3": [
-                    "array_value1",
-                    "array_value2"
-                  ]
-                },
-                "type": "object"
+                "$ref": "#/components/schemas/Meta"
               }
             },
             "required": [
@@ -10630,6 +12333,76 @@
           "name",
           "updated_at",
           "value"
+        ],
+        "type": "object"
+      },
+      "LocalPathLocator": {
+        "description": "LocalPathLocator locates a test subject by local file paths, relative to the\nworking copy top-level directory of the source code.",
+        "properties": {
+          "paths": {
+            "description": "Local file paths.",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "type": {
+            "enum": [
+              "local_path"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "paths"
+        ],
+        "type": "object"
+      },
+      "LocalPolicy": {
+        "description": "Locally configured policy options for determining outcome of this specific test.",
+        "properties": {
+          "fail_on_upgradable": {
+            "default": false,
+            "description": "Use to fail a test when there is at least one vulnerable finding that can be fixed by upgrading the version of the related\n   dependency. E.g. bumping lodash from 1.1.1 to 1.1.2.",
+            "type": "boolean"
+          },
+          "risk_score_threshold": {
+            "description": "Findings of equal or greater risk score will fail the test.",
+            "format": "uint16",
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "severity_threshold": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Severity"
+              }
+            ],
+            "description": "Findings of equal or greater severity will fail the test."
+          },
+          "suppress_pending_ignores": {
+            "default": false,
+            "description": "Suppress ignores pending approval, so that they do not fail the test. If\nallowed by administrators, this might be set in developer workflows in\norder to unblock local development while an ignore is pending approval.",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "suppress_pending_ignores"
+        ],
+        "type": "object"
+      },
+      "ManagedPolicyRef": {
+        "description": "Reference to a managed policy.",
+        "properties": {
+          "id": {
+            "$ref": "#/components/schemas/Uuid"
+          }
+        },
+        "required": [
+          "id"
         ],
         "type": "object"
       },
@@ -11696,6 +13469,112 @@
         "example": "organization",
         "type": "string"
       },
+      "OtherEvidence": {
+        "description": "Evidence which this API version is not capable of expressing.\n\nMore information may be available in a newer version of this API.",
+        "properties": {
+          "source": {
+            "enum": [
+              "other"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "source"
+        ],
+        "type": "object"
+      },
+      "OtherLocation": {
+        "description": "Finding locations which this API version is not capable of expressing.\n\nThis location may be available in a newer version of this API.",
+        "properties": {
+          "type": {
+            "enum": [
+              "other"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type"
+        ],
+        "type": "object"
+      },
+      "OtherLocator": {
+        "description": "OtherLocator represents any locator that this version of the API is not\ncapable of expressing.",
+        "properties": {
+          "type": {
+            "enum": [
+              "other"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type"
+        ],
+        "type": "object"
+      },
+      "OtherSubject": {
+        "description": "OtherSubject represents any subject that this version of the API is not\ncapable of expressing.",
+        "properties": {
+          "type": {
+            "enum": [
+              "other"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type"
+        ],
+        "type": "object"
+      },
+      "Package": {
+        "description": "Dependency models a package dependency.",
+        "properties": {
+          "name": {
+            "description": "Name is the name of the package.",
+            "example": "lodash",
+            "type": "string"
+          },
+          "version": {
+            "description": "Version is the version of the named package.",
+            "example": "1.2.3",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "version"
+        ],
+        "type": "object"
+      },
+      "PackageLocation": {
+        "description": "Package dependency version.\n\nFinding type: SCA",
+        "example": {
+          "package": {
+            "name": "log4j",
+            "version": "2.4.1"
+          },
+          "type": "package"
+        },
+        "properties": {
+          "package": {
+            "$ref": "#/components/schemas/Package"
+          },
+          "type": {
+            "enum": [
+              "package"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "package"
+        ],
+        "type": "object"
+      },
       "PackageMeta": {
         "properties": {
           "name": {
@@ -11789,6 +13668,14 @@
           }
         },
         "type": "object"
+      },
+      "PassFail": {
+        "description": "Indicate whether a Test passes or fails.",
+        "enum": [
+          "pass",
+          "fail"
+        ],
+        "type": "string"
       },
       "PatchProjectRequest": {
         "additionalProperties": false,
@@ -12271,6 +14158,70 @@
         ],
         "type": "string"
       },
+      "PolicyModification": {
+        "description": "Prior attribute values and the reason they were modified.",
+        "properties": {
+          "pointer": {
+            "description": "A JSON Pointer (RFC 6901) reference to the modified value, relative to\nthe top-level attributes of the same Finding.",
+            "example": "/rating/severity",
+            "type": "string"
+          },
+          "policy": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PolicyRef"
+              }
+            ],
+            "description": "Policy which modified the finding, if available."
+          },
+          "prior": {
+            "description": "The prior value at the referenced pointer.",
+            "example": "low"
+          },
+          "reason": {
+            "description": "A human-readable explanation for why the value was modified.",
+            "example": "CWE-123 poses an elevated risk to workloads exposed to the public internet",
+            "type": "string"
+          }
+        },
+        "required": [
+          "pointer",
+          "reason"
+        ],
+        "type": "object"
+      },
+      "PolicyRef": {
+        "description": "Reference to a single policy.",
+        "oneOf": [
+          {
+            "enum": [
+              "local_policy"
+            ],
+            "type": "string"
+          },
+          {
+            "$ref": "#/components/schemas/ManagedPolicyRef"
+          }
+        ]
+      },
+      "PolicyRefSet": {
+        "description": "A set of local and/or managed policies.",
+        "properties": {
+          "ids": {
+            "items": {
+              "$ref": "#/components/schemas/Uuid"
+            },
+            "type": "array"
+          },
+          "local_policy": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "ids"
+        ],
+        "type": "object"
+      },
       "PolicyResponse": {
         "additionalProperties": false,
         "properties": {
@@ -12349,7 +14300,6 @@
           "pending",
           "approved",
           "rejected",
-          "cancelled",
           "not-required"
         ],
         "type": "string"
@@ -12684,6 +14634,27 @@
         ],
         "type": "object"
       },
+      "ProjectEntityLocator": {
+        "description": "ProjectEntityLocator locates a Snyk Project by its public ID.",
+        "properties": {
+          "project_id": {
+            "description": "Public ID of the Snyk Project.",
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "project_entity"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "project_id"
+        ],
+        "type": "object"
+      },
       "ProjectMeta": {
         "additionalProperties": false,
         "properties": {
@@ -12727,6 +14698,30 @@
           "issues_high_count",
           "issues_medium_count",
           "issues_low_count"
+        ],
+        "type": "object"
+      },
+      "ProjectNameLocator": {
+        "description": "ProjectNameLocator locates a Snyk Project by its name.",
+        "properties": {
+          "project_name": {
+            "description": "Name of the Snyk Project.",
+            "type": "string"
+          },
+          "target_reference": {
+            "description": "Target reference which differentiates this project, for example, with a\nbranch name or version. Projects having the same reference can be grouped\nbased on that reference.",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "project_name"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "project_name"
         ],
         "type": "object"
       },
@@ -13398,6 +15393,89 @@
         "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
         "type": "string"
       },
+      "Rating": {
+        "description": "Rating represents qualitative metrics on a finding.",
+        "properties": {
+          "severity": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Severity"
+              }
+            ],
+            "description": "Severity level of the finding."
+          }
+        },
+        "required": [
+          "severity"
+        ],
+        "type": "object"
+      },
+      "ReachabilityEvidence": {
+        "description": "Indicate the reachability signals as additional evidence for the finding.",
+        "properties": {
+          "paths": {
+            "description": "Sequence of locations within this flow of execution.\n\nFor example, a sequence of locations connecting the \"source\" location\nwhere input data is obtained, to a \"sink\" location where it is used.",
+            "items": {
+              "$ref": "#/components/schemas/ReachablePath"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "reachability": {
+            "$ref": "#/components/schemas/ReachabilityType"
+          },
+          "source": {
+            "enum": [
+              "reachability"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "source",
+          "reachability"
+        ],
+        "type": "object"
+      },
+      "ReachabilityType": {
+        "description": "Reachability enum for reachability signal.",
+        "enum": [
+          "none",
+          "function",
+          "no_info",
+          "not_applicable"
+        ],
+        "type": "string"
+      },
+      "ReachablePath": {
+        "description": "ReachablePath represents the paths to a vulnerable function.",
+        "properties": {
+          "call_paths": {
+            "description": "Paths in code bundle that call the vulnerable function.",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "function_name": {
+            "description": "Vulnerable function name.",
+            "type": "string"
+          },
+          "location": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FileRegion"
+              }
+            ],
+            "description": "Location in a file where the vulnerability can be found."
+          }
+        },
+        "required": [
+          "function_name",
+          "call_paths"
+        ],
+        "type": "object"
+      },
       "ReadTenantMembershipResponseRelationships": {
         "additionalProperties": false,
         "properties": {
@@ -14029,6 +16107,42 @@
         "additionalProperties": true,
         "type": "object"
       },
+      "SbomReachabilitySubject": {
+        "description": "Test subject for SBOM test with reachability analysis.",
+        "properties": {
+          "code_bundle_id": {
+            "description": "Source code to inspect for the reach of the vulnerable dependencies.",
+            "pattern": "^[a-fA-F0-9]{64}$",
+            "type": "string"
+          },
+          "locator": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/LocalPathLocator"
+              }
+            ],
+            "description": "Locate the local paths from which the SBOM and source code were derived."
+          },
+          "sbom_bundle_id": {
+            "description": "The SBOM to test for vulnerable dependencies.",
+            "pattern": "^[a-fA-F0-9]{64}$",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "sbom_reachability"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "sbom_bundle_id",
+          "code_bundle_id",
+          "locator"
+        ],
+        "type": "object"
+      },
       "SbomResource": {
         "additionalProperties": false,
         "properties": {
@@ -14060,6 +16174,36 @@
         "required": [
           "jsonapi",
           "data"
+        ],
+        "type": "object"
+      },
+      "SbomSubject": {
+        "description": "Test subject for SBOM test with reachability analysis.",
+        "properties": {
+          "locator": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/LocalPathLocator"
+              }
+            ],
+            "description": "Locate the local paths from which the SBOM and source code were derived."
+          },
+          "sbom_bundle_id": {
+            "description": "The SBOM to test for vulnerable dependencies.",
+            "pattern": "^[a-fA-F0-9]{64}$",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "sbom"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "sbom_bundle_id",
+          "locator"
         ],
         "type": "object"
       },
@@ -14262,6 +16406,31 @@
       "ScanType": {
         "example": "scan",
         "type": "string"
+      },
+      "ScmRepoLocator": {
+        "description": "ScmRepoLocator locates a test subject by SCM repository coordinates.",
+        "properties": {
+          "branch_name": {
+            "description": "Branch name, if known and applicable to locating the test subject.\n\nIf not specified, the branch name can be assumed to be the \"default\nintegration branch\" of the repository.",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "scm_repo"
+            ],
+            "type": "string"
+          },
+          "url": {
+            "description": "URL of the SCM repository.",
+            "format": "uri",
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "url"
+        ],
+        "type": "object"
       },
       "Scopes": {
         "description": "The scopes this app is allowed to request during authorization.",
@@ -14596,6 +16765,18 @@
         ],
         "type": "object"
       },
+      "Severity": {
+        "description": "Indicate the severity of a finding discovered by a Test.",
+        "enum": [
+          "critical",
+          "high",
+          "medium",
+          "low",
+          "none",
+          "other"
+        ],
+        "type": "string"
+      },
       "Severity3": {
         "properties": {
           "level": {
@@ -14761,6 +16942,44 @@
           "sonarqube_api_token"
         ],
         "type": "object"
+      },
+      "Suppression": {
+        "description": "Details about a finding's suppression in test results.\n\nSuppressed findings do not contribute to the test outcome, but they are still\nprovided in the results.",
+        "properties": {
+          "justification": {
+            "description": "Reason given for an ignore pending approval.",
+            "type": "string"
+          },
+          "policy": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PolicyRef"
+              }
+            ],
+            "description": "Policy responsible for the state of suppression represented here, if available."
+          },
+          "status": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SuppressionStatus"
+              }
+            ],
+            "description": "Status of the suppression."
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "type": "object"
+      },
+      "SuppressionStatus": {
+        "description": "Status of a suppression on a finding.",
+        "enum": [
+          "ignored",
+          "pending_ignore_approval",
+          "other"
+        ],
+        "type": "string"
       },
       "Tag": {
         "properties": {
@@ -15276,12 +17495,428 @@
         ],
         "type": "object"
       },
+      "TestAttributes": {
+        "description": "TestAttributes represents the attributes of a Test resource.",
+        "properties": {
+          "config": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestConfiguration"
+              }
+            ],
+            "description": "The test configuration. If not specified, caller accepts test configuration\ndefaults within the calling scope (org, group or tenant settings, etc)."
+          },
+          "created_at": {
+            "description": "Creation time of the test resource.",
+            "format": "date-time",
+            "readOnly": true,
+            "type": "string"
+          },
+          "effective_summary": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FindingSummary"
+              }
+            ],
+            "description": "Summary of findings discovered by the test, effective to the outcome\ndecision. This summary excludes findings suppressed by policy.\n\nThis attribute is set when the test execution\ncompletes (state.execution == 'finished') successfully (without fatal errors\nblocking an outcome).",
+            "readOnly": true
+          },
+          "outcome": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestOutcome"
+              }
+            ],
+            "description": "The outcome of the test.\n\nThis attribute is set when the test execution\ncompletes (state.execution == 'completed') successfully (without fatal errors\nblocking an outcome).",
+            "readOnly": true
+          },
+          "raw_summary": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FindingSummary"
+              }
+            ],
+            "description": "Summary of findings regardless of whether they are effective or not. This\nsummary includes all findings, even those suppressed by policy.\n\nThis attribute is set when the test execution\ncompletes (state.execution == 'finished') successfully (without fatal errors\nblocking an outcome).",
+            "readOnly": true
+          },
+          "state": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestState"
+              }
+            ],
+            "description": "The state of the test's execution.",
+            "readOnly": true
+          },
+          "subject": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestSubject"
+              }
+            ],
+            "description": "The subject of a test."
+          },
+          "subject_locators": {
+            "description": "Additional locators which may help locate the test subject across test workflows.\n\nTest subjects generally will have a primary locator. Additional locators\nmay be provided to help link the test to existing projects and/or assets in\nthe Snyk platform.",
+            "example": [
+              {
+                "paths": [
+                  "package.json"
+                ],
+                "type": "local_path"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/TestSubjectLocator"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "subject",
+          "created_at",
+          "state"
+        ],
+        "type": "object"
+      },
+      "TestAttributesCreate": {
+        "description": "TestAttributes represents the attributes of a Test resource.",
+        "properties": {
+          "config": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestConfiguration"
+              }
+            ],
+            "description": "The test configuration. If not specified, caller accepts test configuration\ndefaults within the calling scope (org, group or tenant settings, etc)."
+          },
+          "subject": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestSubjectCreate"
+              }
+            ],
+            "description": "The subject of a test."
+          },
+          "subject_locators": {
+            "description": "Additional locators which may help locate the test subject across test workflows.\n\nTest subjects generally will have a primary locator. Additional locators\nmay be provided to help link the test to existing projects and/or assets in\nthe Snyk platform.",
+            "example": [
+              {
+                "paths": [
+                  "package.json"
+                ],
+                "type": "local_path"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/TestSubjectLocator"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "subject"
+        ],
+        "type": "object"
+      },
+      "TestConfiguration": {
+        "description": "Test configuration.",
+        "properties": {
+          "local_policy": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/LocalPolicy"
+              }
+            ],
+            "description": "Inline configured policy options for determining outcome of this specific test.\n\nIf centrally managed policies are in scope, inline policies are overridden\nby managed policies. Policy references explain which policies were\neffective for test evaluation."
+          },
+          "publish_report": {
+            "description": "Publish findings into a report, viewable in the Snyk web UI.",
+            "type": "boolean"
+          },
+          "timeout": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TimeoutSpec"
+              }
+            ],
+            "description": "Maximum test time in seconds, after which execution will be cancelled and\nthe test will fail with reason \"timeout\"."
+          }
+        },
+        "type": "object"
+      },
+      "TestData": {
+        "description": "TestData represents a Test resource object.",
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/TestAttributes"
+          },
+          "id": {
+            "format": "uuid",
+            "readOnly": true,
+            "type": "string"
+          },
+          "links": {
+            "properties": {
+              "findings": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                  }
+                ],
+                "description": "Link to the findings discovered by the test, when it completes."
+              }
+            },
+            "readOnly": true,
+            "type": "object"
+          },
+          "type": {
+            "enum": [
+              "tests"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "attributes"
+        ],
+        "type": "object"
+      },
+      "TestDataCreate": {
+        "description": "TestData represents a Test resource object.",
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/TestAttributesCreate"
+          },
+          "type": {
+            "enum": [
+              "tests"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "attributes"
+        ],
+        "type": "object"
+      },
+      "TestExecutionStates": {
+        "enum": [
+          "pending",
+          "started",
+          "finished",
+          "errored"
+        ],
+        "type": "string"
+      },
       "TestExecutionType": {
         "enum": [
           "test-workflow-execution",
           "custom-execution"
         ],
         "type": "string"
+      },
+      "TestOutcome": {
+        "description": "Outcome of a test; pass or fail.",
+        "properties": {
+          "breached_policies": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PolicyRefSet"
+              }
+            ],
+            "description": "Test-level policies which were breached in a failing outcome.\n\nThis array may be truncated for a large number of policies."
+          },
+          "reason": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestOutcomeReason"
+              }
+            ],
+            "description": "Reason for the outcome, if applicable."
+          },
+          "result": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PassFail"
+              }
+            ],
+            "description": "Whether the test passed or failed."
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object"
+      },
+      "TestOutcomeReason": {
+        "description": "Reasons for the outcome.",
+        "enum": [
+          "policy_breach",
+          "timeout",
+          "other"
+        ],
+        "type": "string"
+      },
+      "TestRequestBody": {
+        "description": "TestRequestBody represents the request body used when creating an Test.",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/TestDataCreate"
+          }
+        },
+        "required": [
+          "data"
+        ],
+        "type": "object"
+      },
+      "TestState": {
+        "description": "Test execution state information.",
+        "properties": {
+          "errors": {
+            "description": "Errors which occurred during the execution of a test.\n\nIf execution state is errored, at least one error will be\nindicated here.",
+            "items": {
+              "$ref": "#/components/schemas/io.snyk.api.common.Error"
+            },
+            "type": "array"
+          },
+          "execution": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TestExecutionStates"
+              }
+            ],
+            "description": "Current execution state of the test. This should be polled to completion\n(\"completed\" or \"errored\") when waiting for a test result.\n\nCompletion is no guarantee of an outcome in the event of fatal errors."
+          },
+          "warnings": {
+            "description": "Non-fatal errors which occurred during the execution of a test.\n\nExecution state and warnings are not linked; any of passed/failed/\nerrored tests can have warnings.",
+            "items": {
+              "$ref": "#/components/schemas/io.snyk.api.common.Error"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "execution"
+        ],
+        "type": "object"
+      },
+      "TestSubject": {
+        "description": "The subject of a test, which identifies the asset/project and content references\nnecessary to conduct a security test.",
+        "discriminator": {
+          "mapping": {
+            "deepcode_bundle": "#/components/schemas/DeepcodeBundleSubject",
+            "dep_graph": "#/components/schemas/DepGraphSubject",
+            "git_url_coordinates": "#/components/schemas/GitUrlCoordinatesSubject",
+            "other": "#/components/schemas/OtherSubject",
+            "sbom": "#/components/schemas/SbomSubject",
+            "sbom_reachability": "#/components/schemas/SbomReachabilitySubject"
+          },
+          "propertyName": "type"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/DeepcodeBundleSubject"
+          },
+          {
+            "$ref": "#/components/schemas/DepGraphSubject"
+          },
+          {
+            "$ref": "#/components/schemas/GitUrlCoordinatesSubject"
+          },
+          {
+            "$ref": "#/components/schemas/SbomReachabilitySubject"
+          },
+          {
+            "$ref": "#/components/schemas/OtherSubject"
+          },
+          {
+            "$ref": "#/components/schemas/SbomSubject"
+          }
+        ]
+      },
+      "TestSubjectCreate": {
+        "description": "The subject of a test, which identifies the asset/project and content references\nnecessary to conduct a security test.",
+        "discriminator": {
+          "mapping": {
+            "deepcode_bundle": "#/components/schemas/DeepcodeBundleSubject",
+            "dep_graph": "#/components/schemas/DepGraphSubjectCreate",
+            "git_url_coordinates": "#/components/schemas/GitUrlCoordinatesSubject",
+            "other": "#/components/schemas/OtherSubject",
+            "sbom": "#/components/schemas/SbomSubject",
+            "sbom_reachability": "#/components/schemas/SbomReachabilitySubject"
+          },
+          "propertyName": "type"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/DeepcodeBundleSubject"
+          },
+          {
+            "$ref": "#/components/schemas/DepGraphSubjectCreate"
+          },
+          {
+            "$ref": "#/components/schemas/GitUrlCoordinatesSubject"
+          },
+          {
+            "$ref": "#/components/schemas/SbomReachabilitySubject"
+          },
+          {
+            "$ref": "#/components/schemas/OtherSubject"
+          },
+          {
+            "$ref": "#/components/schemas/SbomSubject"
+          }
+        ]
+      },
+      "TestSubjectLocator": {
+        "discriminator": {
+          "mapping": {
+            "local_path": "#/components/schemas/LocalPathLocator",
+            "other": "#/components/schemas/OtherLocator",
+            "project_entity": "#/components/schemas/ProjectEntityLocator",
+            "project_name": "#/components/schemas/ProjectNameLocator",
+            "scm_repo": "#/components/schemas/ScmRepoLocator"
+          },
+          "propertyName": "type"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/ProjectEntityLocator"
+          },
+          {
+            "$ref": "#/components/schemas/ProjectNameLocator"
+          },
+          {
+            "$ref": "#/components/schemas/ScmRepoLocator"
+          },
+          {
+            "$ref": "#/components/schemas/LocalPathLocator"
+          },
+          {
+            "$ref": "#/components/schemas/OtherLocator"
+          }
+        ]
+      },
+      "TimeoutSpec": {
+        "description": "Specification for a test timeout policy. If the test does not complete within\nthe seconds specified, the test will instantly complete with the given outcome.",
+        "properties": {
+          "outcome": {
+            "$ref": "#/components/schemas/PassFail"
+          },
+          "seconds": {
+            "format": "uint32",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "seconds",
+          "outcome"
+        ],
+        "type": "object"
       },
       "Titles": {
         "items": {
@@ -15675,8 +18310,7 @@
         "enum": [
           "pending",
           "approved",
-          "rejected",
-          "cancelled"
+          "rejected"
         ],
         "type": "string"
       },
@@ -16205,6 +18839,286 @@
         },
         "required": [
           "root_workspace"
+        ],
+        "type": "object"
+      },
+      "io.snyk.api.common.Error": {
+        "properties": {
+          "code": {
+            "description": "An application-specific error code, expressed as a string value.",
+            "type": "string"
+          },
+          "detail": {
+            "description": "A human-readable explanation specific to this occurrence of the problem.",
+            "type": "string"
+          },
+          "id": {
+            "description": "A unique identifier for this particular occurrence of the problem.",
+            "format": "uuid",
+            "type": "string"
+          },
+          "links": {
+            "$ref": "#/components/schemas/io.snyk.api.common.ErrorLink"
+          },
+          "meta": {
+            "type": "object"
+          },
+          "source": {
+            "properties": {
+              "parameter": {
+                "type": "string"
+              },
+              "pointer": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "status": {
+            "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+            "pattern": "^[45]\\d\\d$",
+            "type": "string"
+          },
+          "title": {
+            "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "detail"
+        ],
+        "type": "object"
+      },
+      "io.snyk.api.common.ErrorDocument": {
+        "properties": {
+          "errors": {
+            "items": {
+              "$ref": "#/components/schemas/io.snyk.api.common.Error"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "jsonapi": {
+            "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+          }
+        },
+        "required": [
+          "jsonapi",
+          "errors"
+        ],
+        "type": "object"
+      },
+      "io.snyk.api.common.ErrorLink": {
+        "additionalProperties": {
+          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+        },
+        "description": "A link that leads to further details about this particular occurrance of the problem.",
+        "properties": {
+          "about": {
+            "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+          }
+        },
+        "type": "object"
+      },
+      "io.snyk.api.common.JsonApi": {
+        "properties": {
+          "version": {
+            "description": "Version of the JSON API specification this server supports.",
+            "enum": [
+              "1.0"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "version"
+        ],
+        "type": "object"
+      },
+      "io.snyk.api.common.LinkObject": {
+        "properties": {
+          "href": {
+            "$ref": "#/components/schemas/io.snyk.api.common.LinkString"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+          }
+        },
+        "required": [
+          "href"
+        ],
+        "type": "object"
+      },
+      "io.snyk.api.common.LinkProperty": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/io.snyk.api.common.LinkString"
+          },
+          {
+            "$ref": "#/components/schemas/io.snyk.api.common.LinkObject"
+          }
+        ]
+      },
+      "io.snyk.api.common.LinkString": {
+        "format": "uri",
+        "type": "string"
+      },
+      "io.snyk.api.common.Meta": {
+        "additionalProperties": {},
+        "description": "Free-form object that may contain non-standard information.",
+        "type": "object"
+      },
+      "io.snyk.api.common.PaginatedLinks": {
+        "properties": {
+          "first": {
+            "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+          },
+          "last": {
+            "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+          },
+          "next": {
+            "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+          },
+          "prev": {
+            "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+          },
+          "self": {
+            "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+          }
+        },
+        "type": "object"
+      },
+      "io.snyk.api.common.RelatedLink": {
+        "properties": {
+          "related": {
+            "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+          }
+        },
+        "type": "object"
+      },
+      "io.snyk.api.v1testdepgraph.request.DepGraph": {
+        "additionalProperties": {},
+        "properties": {
+          "graph": {
+            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.Graph"
+          },
+          "pkgManager": {
+            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.PackageManager"
+          },
+          "pkgs": {
+            "items": {
+              "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.Package"
+            },
+            "type": "array"
+          },
+          "schemaVersion": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "schemaVersion",
+          "pkgManager",
+          "pkgs",
+          "graph"
+        ],
+        "type": "object"
+      },
+      "io.snyk.api.v1testdepgraph.request.Graph": {
+        "additionalProperties": {},
+        "properties": {
+          "nodes": {
+            "items": {
+              "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.Node"
+            },
+            "type": "array"
+          },
+          "rootNodeId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "rootNodeId",
+          "nodes"
+        ],
+        "type": "object"
+      },
+      "io.snyk.api.v1testdepgraph.request.Node": {
+        "additionalProperties": {},
+        "properties": {
+          "deps": {
+            "items": {
+              "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.NodeRef"
+            },
+            "type": "array"
+          },
+          "nodeId": {
+            "type": "string"
+          },
+          "pkgId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nodeId",
+          "pkgId",
+          "deps"
+        ],
+        "type": "object"
+      },
+      "io.snyk.api.v1testdepgraph.request.NodeRef": {
+        "additionalProperties": {},
+        "properties": {
+          "nodeId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nodeId"
+        ],
+        "type": "object"
+      },
+      "io.snyk.api.v1testdepgraph.request.Package": {
+        "additionalProperties": {},
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "info": {
+            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.PackageInfo"
+          }
+        },
+        "required": [
+          "id",
+          "info"
+        ],
+        "type": "object"
+      },
+      "io.snyk.api.v1testdepgraph.request.PackageInfo": {
+        "additionalProperties": {},
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "version"
+        ],
+        "type": "object"
+      },
+      "io.snyk.api.v1testdepgraph.request.PackageManager": {
+        "additionalProperties": {},
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
         ],
         "type": "object"
       },
@@ -39502,6 +42416,969 @@
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-02-21",
         "x-stability-level": "stable"
+      }
+    },
+    "/orgs/{org_id}/test_jobs/{job_id}": {
+      "get": {
+        "description": "Get a test job.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getJob",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "description": "The org id",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/JobIdParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "description": "JobData represents a Job resource object.",
+                      "properties": {
+                        "attributes": {
+                          "description": "JobAttributes represents the attributes of a Job resource",
+                          "properties": {
+                            "created_at": {
+                              "description": "Creation time of the job resource",
+                              "format": "date-time",
+                              "type": "string"
+                            },
+                            "status": {
+                              "allOf": [
+                                {
+                                  "enum": [
+                                    "pending",
+                                    "started",
+                                    "finished",
+                                    "errored"
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "description": "State of the test, whether it is pending, running, complete or errored."
+                            }
+                          },
+                          "required": [
+                            "status",
+                            "created_at"
+                          ],
+                          "type": "object"
+                        },
+                        "id": {
+                          "format": "uuid",
+                          "type": "string"
+                        },
+                        "relationships": {
+                          "properties": {
+                            "test": {
+                              "properties": {
+                                "data": {
+                                  "properties": {
+                                    "id": {
+                                      "format": "uuid",
+                                      "type": "string"
+                                    },
+                                    "type": {
+                                      "enum": [
+                                        "tests"
+                                      ],
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "id",
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                }
+                              },
+                              "required": [
+                                "data"
+                              ],
+                              "type": "object"
+                            }
+                          },
+                          "required": [
+                            "test"
+                          ],
+                          "type": "object"
+                        },
+                        "type": {
+                          "enum": [
+                            "test_jobs"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "attributes",
+                        "type"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                      },
+                      "properties": {
+                        "related": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        },
+                        "self": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful API response with a single resource",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "303": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "description": "JobData represents a Job resource object.",
+                      "properties": {
+                        "attributes": {
+                          "description": "JobAttributes represents the attributes of a Job resource",
+                          "properties": {
+                            "created_at": {
+                              "description": "Creation time of the job resource",
+                              "format": "date-time",
+                              "type": "string"
+                            },
+                            "status": {
+                              "allOf": [
+                                {
+                                  "enum": [
+                                    "pending",
+                                    "started",
+                                    "finished",
+                                    "errored"
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "description": "State of the test, whether it is pending, running, complete or errored."
+                            }
+                          },
+                          "required": [
+                            "status",
+                            "created_at"
+                          ],
+                          "type": "object"
+                        },
+                        "id": {
+                          "format": "uuid",
+                          "type": "string"
+                        },
+                        "relationships": {
+                          "properties": {
+                            "test": {
+                              "properties": {
+                                "data": {
+                                  "properties": {
+                                    "id": {
+                                      "format": "uuid",
+                                      "type": "string"
+                                    },
+                                    "type": {
+                                      "enum": [
+                                        "tests"
+                                      ],
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "id",
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                }
+                              },
+                              "required": [
+                                "data"
+                              ],
+                              "type": "object"
+                            }
+                          },
+                          "required": [
+                            "test"
+                          ],
+                          "type": "object"
+                        },
+                        "type": {
+                          "enum": [
+                            "test_jobs"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "attributes",
+                        "type"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                      },
+                      "properties": {
+                        "related": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        },
+                        "self": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Redirect to another resource after async processing.",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "location": {
+                "required": true,
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get a test job. (Early Access)",
+        "tags": [
+          "Tests"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/tests": {
+      "post": {
+        "description": "Create a new test.\n\n#### Required permissions\n\n- `View Organization (org.read)`\n\n- `Test packages (org.package.test)`",
+        "operationId": "createTest",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "description": "The org id",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TestRequestBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "properties": {
+                        "attributes": {
+                          "description": "JobAttributes represents the attributes of a Job resource",
+                          "properties": {
+                            "created_at": {
+                              "description": "Creation time of the job resource",
+                              "format": "date-time",
+                              "type": "string"
+                            },
+                            "status": {
+                              "allOf": [
+                                {
+                                  "enum": [
+                                    "pending",
+                                    "started",
+                                    "finished",
+                                    "errored"
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "description": "State of the test, whether it is pending, running, complete or errored."
+                            }
+                          },
+                          "required": [
+                            "status",
+                            "created_at"
+                          ],
+                          "type": "object"
+                        },
+                        "id": {
+                          "format": "uuid",
+                          "type": "string"
+                        },
+                        "type": {
+                          "enum": [
+                            "test_jobs"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "id",
+                        "attributes"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                      },
+                      "properties": {
+                        "related": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        },
+                        "self": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "The request has been accepted for processing, but processing has not yet completed.",
+            "headers": {
+              "content-location": {
+                "description": "A pointer to the newly created Test resource",
+                "required": true,
+                "schema": {
+                  "format": "string",
+                  "type": "string"
+                }
+              },
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Create a new test. (Early Access)",
+        "tags": [
+          "Tests"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/tests/{test_id}": {
+      "get": {
+        "description": "Get a test.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getTest",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "description": "The org id",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/TestIdParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/TestData"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                      },
+                      "properties": {
+                        "related": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        },
+                        "self": {
+                          "$ref": "#/components/schemas/io.snyk.api.common.LinkProperty"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful API response with a single resource",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get a test. (Early Access)",
+        "tags": [
+          "Tests"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/tests/{test_id}/findings": {
+      "get": {
+        "description": "List findings for a test.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "listFindings",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.request_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.interaction_id"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.SnykApiRequest.version"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.PaginatedRequest.starting_after"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.PaginatedRequest.ending_before"
+          },
+          {
+            "$ref": "#/components/parameters/io.snyk.api.request.PaginatedRequest.limit"
+          },
+          {
+            "description": "The org id",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/TestIdParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "$ref": "#/components/schemas/FindingData"
+                      },
+                      "type": "array"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.PaginatedLinks"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/io.snyk.api.common.Meta"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "jsonapi",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful API response for a paginated collection.",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/io.snyk.api.common.ErrorDocument"
+                }
+              }
+            },
+            "description": "Invalid input",
+            "headers": {
+              "deprecation": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-request-id": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-lifecycle-stage": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-requested": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "snyk-version-served": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "sunset": {
+                "description": "A header containing the date of when the underlying endpoint will be removed. This header is only present if the endpoint has been deprecated. For information purposes only. Returned as a date in the format: YYYY-MM-DD",
+                "example": "2021-08-02",
+                "schema": {
+                  "format": "date",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "List findings for a test. (Early Access)",
+        "tags": [
+          "Findings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "tests",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/users/{id}": {
@@ -71558,7 +75435,7 @@
       "name": "Assets"
     },
     {
-      "description": "The OpenAPI specification for ai-bom.",
+      "description": "The OpenAPI specification for test-api-shim.",
       "name": "OpenAPI"
     }
   ],
