@@ -97,7 +97,7 @@ To determine if this metadata is available in your repositories, check the compl
 You can select a specific date range for the assets analyzed data by adding the **Asset Introduction Date** filter. Applying that filter will impact all non-trend widgets, narrowing them down from showing all available data to data for assets introduced in the selected date range. The trend widgets are configured to show a fixed timeframe of the last three (3) months.
 
 {% hint style="info" %}
-The data in Application Analytics is updated on an hourly basis.
+The data in Application Analytics is updated on an daily basis.
 {% endhint %}
 
 The following video presents an overview of the Application Analytics filters and views from the Snyk Web UI.
