@@ -1,5 +1,10 @@
 # Ruby
 
+{% hint style="warning" %}
+**End of support notice**\
+Effective October 1, 2025, Fix PRs are no longer supported for Projects using Ruby versions 3.1.x and lower. To avoid disruption, Snyk recommends upgrading to a supported Ruby version.
+{% endhint %}
+
 ## Applicability and integration
 
 {% hint style="info" %}
