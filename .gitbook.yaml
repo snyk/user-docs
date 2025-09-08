@@ -191,3 +191,6 @@ redirects:
   scan-with-snyk/scanning-overview: /scan-with-snyk/overview.md
   integrations/agentic-integrations-snyk-mcp-server/snyk-mcp-early-access: integrations/agentic-integrations-snyk-mcp-server/README.md
   supported-languages-package-managers-and-frameworks/go/go-for-open-source: /supported-languages-package-managers-and-frameworks/go.md
+  supported-languages-package-managers-and-frameworks/php/php-for-open-source.md: /supported-languages-package-managers-and-frameworks/php
+  supported-languages-package-managers-and-frameworks/php/php-for-code-analysis.md: /supported-languages-package-managers-and-frameworks/php
+  
