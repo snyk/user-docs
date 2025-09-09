@@ -18,7 +18,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * [Experimental builds ](developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli.md#experimental-builds)information is now available for the CLI releases and channels.
 * The [AI-BOM](developer-tools/snyk-cli/commands/aibom.md) Snyk CLI command is now available with any stable CLI release.
-* A new Snyk CLI analytics page is now available, providing information about [Essential Operational Analytics](whats-new.md#essential-operational-analytics) and [Optional Usage Analytics](whats-new.md#optional-usage-analytics).
+* A new Snyk CLI analytics page is now available, providing information about [Essential Operational Analytics](developer-tools/snyk-cli/snyk-cli-analytics.md#essential-operational-analytics) and [Optional Usage Analytics](developer-tools/snyk-cli/snyk-cli-analytics.md#optional-usage-analytics).
 
 ### **Snyk integrations**
 
