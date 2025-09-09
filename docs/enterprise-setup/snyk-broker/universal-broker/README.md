@@ -5,9 +5,9 @@
 Universal Broker is in Early Access and is available only with Enterprise plans.
 {% endhint %}
 
-The Universal Broker improves the management of Broker deployments and connections, supporting many connections of any type through a single running client, preferably with multiple replicas, that is, entirely distinct clients. Credentials remain entirely local to your network and are never stored on the Snyk platform, which uses credentials references.
+The Universal Broker improves the management of Broker deployments and connections by supporting many connections of any type with a single running client (container) or with multiple client replicas. Credentials remain within your network and are never stored by or transmitted to Snyk, the Snyk platform uses credentials references to instruct the Universal Broker how to authenticate with your private resources.
 
-Each client or client with replicas is called a Broker deployment. The diagram shows two deployments, Universal Broker A and Universal Broker B.
+Each client or set of client replicas is called a Broker deployment. The diagram below shows two deployments, Universal Broker A and Universal Broker B.
 
 A deployment can support multiple connections of any type, as shown in the diagram examples: GitHub, GitLab, Artifactory, Jira, and Container Registry Agent. Connections are configured to communicate with specific private resources: SCMs, JIRA, and others.
 
@@ -17,9 +17,9 @@ Connections are integrated with Organizations to provide access to your private 
 
 In the diagram, Group 1 includes Organizations A through D, and Group 2 includes Organizations E and F.
 
-Organizations A, B, C, D, and E are integrated with the Universal Broker A deployment, and thus have access to all of the resources except the container registry agent.&#x20;
+Organizations A, B, C, D, and E are integrated with the Universal Broker A deployment, and thus have access to all of the resources except the Container Registry Agent.&#x20;
 
-Organization F is integrated with Universal Broker B, and thus has access to Jira and the container registry agent.
+Organization F is integrated with Universal Broker B, and thus has access to Jira and the Container Registry Agent.
 
 {% hint style="info" %}
 You can learn more about Universal Broker in the dedicated Snyk Learn course. Explore the advantages, configuration, architecture, and much more with [Snyk Learn: Universal Broker](https://learn.snyk.io/lesson/universal-broker/?ecosystem=general).
