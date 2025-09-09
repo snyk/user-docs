@@ -7,7 +7,7 @@ The `snyk-broker-config` CLI tool provides resources to guide you in configuring
 * Deployments
 * Integrations
 
-To list the resources, run `snyk-broker-config-workflows`.
+To list the workflows available, run `snyk-broker-config workflows`.
 
 ```
 > snyk-broker-config-workflows

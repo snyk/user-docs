@@ -14,12 +14,17 @@ To install the tool, use `npm i -g snyk-broker-config`.
 The `snyk-broker-config` CLI tool is your primary guide for setting up and managing Snyk Broker connections. It is designed to walk you step-by-step through the process, asking for the required information for each integration type. This adaptive method guarantees that you receive the latest parameter requirements directly from the tool.
 {% endhint %}
 
+The basic process for configuring a new Universal Broker deployment is as follows:
+1. Install the `snyk-broker-config` tool by running `npm i -g snyk-broker-config`
+2. Create a Universal Broker new connection by following the create workflow `snyk-broker-config workflows connections create`
+3. Integrate your new Universal Broker Connection by following the integrate workflow `snyk-broker-config workflows connections integrate`
+
 ### How to use the CLI for parameter discovery
 
-Even if you are not running the full setup, the Snyk CLI can help you understand the required parameters. Use the interactive setup or the command line help.
+Even if you are not running the full setup, the `snyk-broker-config` CLI tool can help you understand the required parameters. Use the interactive setup or the command line help.
 
 * **Interactive setup:** Run `snyk-broker-config workflows connections create` and follow the prompts. The CLI asks for all required and optional parameters based on the integration type you select, such as GitLab, Artifactory, or Bitbucket Server.
-*   **Command line help:** Use the `--help` flag for any `snyk-broker-config` command to see available options and parameters. For instance, to see parameters specifically relevant for creating a GitLab connection type, use the following command:
+* **Command line help:** Use the `--help` flag for any `snyk-broker-config` command to see available options and parameters. For instance, to see parameters specifically relevant for creating a GitLab connection type, use the following command:
 
     ```bash
     snyk-broker-config workflows connections create --type gitlab --help
@@ -42,7 +47,7 @@ A typical workflow for adding a new Broker connection using the CLI involves the
 
     The CLI will then guide you through the process, prompting for:
 
-    * Your Snyk API Token, required for authentication.
+    * Your Snyk API Token, required for authentication if you did not already export it as an environment variable.
     * The Snyk Organization ID where the Broker connection is used.
     * The specific type of integration you want to connect, such as `gitlab`, `artifactory`, `bitbucket-server`.
     * All required and optional parameters, such as URLs, tokens, usernames, or passwords, are dynamically identified for your chosen integration type. Follow the on-screen instructions carefully.
@@ -100,9 +105,9 @@ Now using Tenant ID <current Tenant ID> and Install ID <current Install ID>.
 Do you want to create a new Deployment? (Y/N)
 ```
 
-Snyk recommends that you set the INSTALL\_ID as an environment variable now, to make the tool easier to use.:\
-`- export INSTALL_ID=zzzz (Linux/Mac)`\
-`- set INSTALL_ID=zzzz(Windows)`
+Snyk recommends that you set the INSTALL\_ID as an environment variable now, to make the tool easier to use:\
+- `export INSTALL_ID=zzzz` (Linux/Mac)\
+- `set INSTALL_ID=zzzz` (Windows)
 
 ## Input connection parameters
 
