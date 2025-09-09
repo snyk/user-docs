@@ -10,18 +10,18 @@ The `snyk-broker-config` CLI tool provides resources to guide you in configuring
 To list the workflows available, run `snyk-broker-config workflows`.
 
 ```
-> snyk-broker-config-workflows
+> snyk-broker-config workflows
 Interactive workflows for Deployments, Credentials, Connections and 
 Integrations management
 
 USAGE
-     $ snyk-broker.config workflows COMMAND
+     $ snyk-broker-config workflows COMMAND
 
 TOPICS
       workflows connections    Universal Broker - Create Connection Workflow
-      workflows credentials.   Universal Broker - Create Credentials Workflow
+      workflows credentials   Universal Broker - Create Credentials Workflow
       workflows deployments    Universal Broker - Create Deployment Workflow
-      workflows integration.   Universal Broker - Get Connection Integration Workflow
+      workflows integration   Universal Broker - Get Connection Integration Workflow
 ```
 
 Run `snyk-broker-config workflows <RESOURCE>` to list the available resources to get, create, delete, disconnect, integrate, and migrate.

@@ -9,7 +9,7 @@ The Universal Broker improves the management of Broker deployments and connectio
 
 Each client or set of client replicas is called a Broker deployment. The diagram below shows two deployments, Universal Broker A and Universal Broker B.
 
-A deployment can support multiple connections of any type, as shown in the diagram examples: GitHub, GitLab, Artifactory, Jira, and Container Registry Agent. Connections are configured to communicate with specific private resources: SCMs, JIRA, and others.
+A deployment can support multiple connections of any type, as shown in the diagram examples: GitHub, GitLab, Artifactory, Jira, and Container Registry Agent. Connections are configured to communicate with specific private resources: SCMs, Jira, and others.
 
 <figure><img src="../../../.gitbook/assets/image 5 (6).png" alt=""><figcaption><p>Universal Broker deployment example</p></figcaption></figure>
 

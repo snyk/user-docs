@@ -16,7 +16,7 @@ Establish the outbound connection on port 443 from the Broker Client running in 
 
 Establish an internal connection that allows inbound access from the integration (SCM, CR) to the Broker Client at the BROKER\_CLIENT\_URL on the port you have configured (typically 8000). This is not inbound from the internet.
 
-Traffic initiated from the Snyk Broker server side always uses the latest available Broker connection. All activity from the Snyk side, such as traffic driven by recurring tests, appears on only one of your replicas at a time. The amount of Snyk activity is proportional to the activity in the repositories or Jira items. That activity generates webhooks, which are distributed across all replicas
+Traffic initiated from the Snyk Broker server side always uses the latest available Broker connection. All activity from the Snyk side, such as traffic driven by recurring tests, appears on only one of your replicas at a time. The amount of Snyk activity is proportional to the activity in the repositories or Jira items. That activity generates webhooks, which are distributed across all replicas.
 
 Use the Universal Broker `snyk-broker-config` CLI tool to configure and manage connections, integrations, and all Universal Broker resources.
 

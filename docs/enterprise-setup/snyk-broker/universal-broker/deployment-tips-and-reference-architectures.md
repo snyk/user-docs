@@ -20,8 +20,10 @@ Contact your Snyk account team or [Snyk support](https://support.snyk.io/s/) if 
 
 ## High Availability Mode
 
-High Availability Mode for a Universal Broker deployment is enabled by default and can be disabled by by setting the `BROKER_HA_MODE_ENABLED=false` environment variable inside the container. When this mode is enabled the Universal Broker deployment will open a second backup websocket with the Snyk platform to provide redundancy in the event of a network failure. 
+High Availability Mode for a Universal Broker deployment is enabled by default and can be disabled by setting the `BROKER_HA_MODE_ENABLED=false` environment variable inside the container. When HA mode is enabled the Universal Broker deployment will open a second backup websocket with the Snyk platform to provide redundancy in the event of a network failure. 
 
 Each Universal Broker deployment is limited to 4 total web sockets. They can be deployed in any configuration such as two Universal Broker Clients each with HA mode enabled, or four Universal Broker Clients with HA mode disabled. When deploying the Universal Broker using the [Snyk Universal Broker Helm chart](https://github.com/snyk/snyk-universal-broker-helm/blob/rc/snyk-universal-broker/values.yaml#L66) the default configuration is 2 replicas with HA mode enabled.
+
+Note that exceeding 4 web sockets per Universal Broker deployment will result in unpredictable and unstable behaviour for all broker clients in the deployment.
 
 \

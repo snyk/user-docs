@@ -16,8 +16,8 @@ The `snyk-broker-config` CLI tool is your primary guide for setting up and manag
 
 The basic process for configuring a new Universal Broker deployment is as follows:
 1. Install the `snyk-broker-config` tool by running `npm i -g snyk-broker-config`
-2. Create a Universal Broker new connection by following the create workflow `snyk-broker-config workflows connections create`
-3. Integrate your new Universal Broker Connection by following the integrate workflow `snyk-broker-config workflows connections integrate`
+2. Create a new Universal Broker connection by following the create workflow `snyk-broker-config workflows connections create`
+3. Integrate your new Universal Broker connection by following the integrate workflow `snyk-broker-config workflows connections integrate`
 
 ### How to use the CLI for parameter discovery
 
@@ -185,7 +185,7 @@ Selected Connection ID <number>.
 Ready to configure integrations to use this connection.
 ```
 
-Details of the connection follow: `connection ID`; `connection type (broker_connection)`; `attributes:  deployment_id, identifier, name, and secrets-primary and secondary`, each with the `status`, `encrypted`, `expires_at`, and `nonce`; `configuration required: broker-client-url` and `github_token values`; `type: github.`
+Details of the connection follow: `connection ID`; `connection type (broker_connection)`; `attributes:  deployment_id, identifier, name, and secrets: primary and secondary`, each with the `status`, `encrypted`, `expires_at`, and `nonce`; `configuration required: broker-client-url` and `github_token values`; `type: github.`
 
 ```
 Connection Detail Workflow completed.

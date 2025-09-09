@@ -8,7 +8,7 @@ The `snyk-broker-config workflows connections disconnect` command walks you thro
 
 For all resources, you must delete the child items before you can delete a parent, as illustrated in the diagram that follows. A deployment contains connections and credentials references. Connections use credentials references. Each connection may have an integration with one or more Organizations.
 
-The `snyk-broker-config introduction` command walks you through this flow and indicate what needs to be done to achieve successful deletion. These commands implement and enforce the following rules:
+The `snyk-broker-config introduction` command walks you through this flow and indicates what needs to be done to achieve successful deletion. These commands implement and enforce the following rules:
 
 * Before you delete a connection, you must disconnect all integrations.
 * Before you delete a credentials reference, you must delete the connection(s) using it.
@@ -33,7 +33,7 @@ In response to the prompt, type Y and press Enter if you want to disconnect all 
 ```
 Universal Broker - Delete Connection Workflow
 ✓ Valid Snyk Token.
-✓ Tenant Adnmim role confirms.
+✓ Tenant Admin role confirms.
 Now using Tenant ID of <returned number>.
 Now using Deployment <returned number>.
    Which Connection do you want to use? <number entered>
@@ -58,9 +58,8 @@ Now using Deployment <number returned>.
 Which Connection do you want to use <number entered>
 Selected Connection ID <number entered>. Ready to disconnect integrations using 
 this connection.
-Select (Press <backspace> to remove option) {Type: github] in <Organization ID returned>
-[✓ ] Type github in <Organization ID returned> integr <number returned>)
-[    ] Type github in <Organization ID returned>? integr <number returned>)
+Select (Press <backspace> to remove option) [Type: github] in <Organization ID returned>
+[✓ ] Type github in <Organization ID returned> (integration <Integration ID returned>)
 ```
 
 ## Delete credentials references
