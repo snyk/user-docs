@@ -10,7 +10,7 @@ In the diagram, GitHub connection 123 is integrated with Organization Y using in
 
 ## Create deployments and connections
 
-After you have installed the `snyk-broker-config tool`:
+After you have installed the `snyk-broker-config` CLI tool:
 
 * Run `snyk-broker-config workflows connections create`.
 * Create a deployment if none exists, or select a deployment if more than one exists.\

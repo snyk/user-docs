@@ -14,7 +14,7 @@ Usage of resources varies based on a number of factors, making it difficult to m
 
 If you find you need more resource segregation or allocation that does not fit well into a single container setup, you can create a new deployment with its set of connections to split the load across numerous Broker clients and containers.
 
-Note that moving connections from deployment A to deployment B is not supported.
+Note that moving connections from one deployment to another is not supported.
 
 Contact your Snyk account team or [Snyk support](https://support.snyk.io/s/) if you need more assistance designing a Universal Broker architecture for your needs.
 

@@ -194,7 +194,7 @@ If your credential reference is missing, you will get the following message:
 {"name":"my github connection","hostname":"029cda64bd98","pid":1,"level":50,"id":"12345678-1234-1234-1234-123456789012","msg":"Connection is disabled due to (a) missing environment variable(s). Please provide the value and restart the broker client.","time":"2024-06-18T14:29:06.911Z","v":0}
 </code></pre></td></tr></tbody></table>
 
-When you update an envrionment variable you must restart your Broker. See [Restart your Broker for a new environment variable](../restart-your-broker-for-a-new-environment-variable.md).
+When you update an environment variable you must restart your Broker. See [Restart your Broker for a new environment variable](../restart-your-broker-for-a-new-environment-variable.md).
 
 You can now use the connection in an Organization integration.
 

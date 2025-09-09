@@ -216,7 +216,6 @@ docker run -d --restart=always \
 -p 8000:8000 \
 -e DEPLOYMENT_ID=<DEPLOYMENT_ID_JUST_CREATED> \
 -e CLIENT_ID=<CLIENT_ID_SAVED_EARLIER> \
-
 -e CLIENT_SECRET=<CLIENT_SECRET_SAVED_EARLIER> \
 -e MY_GITHUB_TOKEN=<THE_ACTUAL_GITHUB_TOKEN_VALUE> \
 -e PORT=8000 \
@@ -229,7 +228,7 @@ When the Broker client has started, the connection is ready to use, in this case
 
 ## Integrate your connection with more Organizations
 
-To integrate your connection with another Organization so it will use the same connection, run the command again and enter the ID of the new Organization to integrate. You can repeat this step as often as needed to integrate with Organizations.
+To integrate your connection with another Organization so it will use the same connection, run the following command again and enter the ID of the new Organization to integrate. You can repeat this step as often as needed to integrate with multiple Organizations.
 
 ```
 > snyk-broker-config workflows connections integrate
