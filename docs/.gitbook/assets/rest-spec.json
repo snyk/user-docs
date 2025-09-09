@@ -45408,7 +45408,7 @@
     },
     "/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integration": {
       "post": {
-        "description": "Configures integrations to use the Broker connection for an deployment\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`\n\n- `Edit Tenant Details (tenant.edit)`",
+        "description": "Configures integrations to use the Broker connection for an deployment\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
         "operationId": "createBrokerConnectionIntegration",
         "parameters": [
           {
