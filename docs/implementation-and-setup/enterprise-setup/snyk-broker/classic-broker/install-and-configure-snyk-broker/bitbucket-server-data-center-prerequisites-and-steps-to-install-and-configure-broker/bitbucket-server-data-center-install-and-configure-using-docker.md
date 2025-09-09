@@ -44,9 +44,9 @@ docker run --restart=always \
 Snyk Essentials is set by default to **`false`**. Enable it by setting the flag to **`true`**.
 {% endhint %}
 
-## Configure Broker to be used with Bitbucket using a Personal Access Token (PAT)
+## Configure Broker to be used with Bitbucket using an API token
 
-The following explains how to configure Snyk Broker to use the Broker Client with a Bitbucket Server deployment using a Personal Access Token (PAT).
+The following explains how to configure Snyk Broker to use the Broker Client with a Bitbucket Server deployment using an API token.
 
 To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:bitbucket-server-bearer-auth`. For definitions of the environment variables, refer to [Bitbucket Server/Data Center - environment variables for Snyk Broker Basic Auth](bitbucket-server-data-center-environment-variables-for-snyk-broker-basic-auth.md) and [Bitbucket Server/Data Center - environment variables for Snyk Broker Personal Access Token (PAT)](bitbucket-server-data-center-environment-variables-for-snyk-broker-personal-access-token-pat.md).
 

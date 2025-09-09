@@ -4,7 +4,7 @@
 Snyk recommends installing or migrating to the [Bitbucket Cloud Application](bitbucket-cloud-app.md) for smoother integration and to ensure long-term support.
 {% endhint %}
 
-The Bitbucket Cloud (PAT) integration lets you:
+The Bitbucket Cloud API token integration lets you:
 
 * Continuously perform security scanning across all the integrated repositories
 * Detect vulnerabilities in your open-source components
@@ -13,25 +13,27 @@ The Bitbucket Cloud (PAT) integration lets you:
 ### How to set up the Bitbucket Cloud Integration
 
 {% hint style="info" %}
-Admin permissions are required; however, Snyk's access is ultimately limited by the [permissions assigned to the App Password](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/).
+Admin permissions are required; however, Snyk's access is ultimately limited by the [permissions assigned to the API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/).\
+\
+To improve security, the use of app passwords in Bitbucket Cloud is transitioning to API tokens. Existing integrations that use app passwords will continue to function temporarily until **9 June 2026.**\
+To ensure continued support and functionality, update your Bitbucket Cloud integration in Snyk to use an API token.
 {% endhint %}
 
 1. To give Snyk access to your Bitbucket account, set up a dedicated service account in Bitbucket with admin permissions. See the [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about adding users to a workspace.\
    The newly created user must have **Admin** permissions to all the repositories you need to monitor with Snyk.
 2. In Snyk, go to the **Integrations** page, open the **Bitbucket Cloud** card, and configure the **Account credentials**.
-3. In the **Account credentials >** **Creating an app password** section in Snyk, use the link **Create an App password** to jump to your Bitbucket Cloud account.
+3. In BitBucket, under the Personal settings, select Atlassian account settings **>** **Security** tab> Create and manage API tokens.
 4.  Follow the Bitbucket procedure to set up an account with the following permissions:
 
-    * **Account: Email & Read**
-    * **Workspace membership: Read**
-    * **Projects: Read**
-    * **Repositories: Read & Write**
-    * **Pull requests: Read & Write**
-    * **Webhooks: Read & Write**
+    * **read:user:bitbucket**
+    * **read:workspace:bitbucket**
+    * **read:repository:bitbucket**
 
-    See the [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html) for more details about the procedure.
-5. Enter the username and the [App Password for the Bitbucket account](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/) you created and **Save** your changes.\
-   You can find your username under the Bitbucket **Personal settings.**\
+
+
+    See the [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/)for more details about the procedure.
+5. Enter the email and the [API key for the Bitbucket account](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#api-tokens) you created, and **save** your changes.\
+   You can find your email under the Bitbucket **Personal settings.**\
    Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the confirmation message "**Bitbucket Cloud settings successfully updated**" appears.
 
 ### How to add Bitbucket repositories to Snyk
@@ -121,9 +123,9 @@ To disconnect this integration, in **Organization settings** > **Integrations:**
 
 ### Migrate to the Bitbucket Cloud App
 
-This section describes how to migrate your existing [Bitbucket Cloud Personal Access Token (PAT) integration](bitbucket-cloud.md), displayed in Snyk as Bitbucket Cloud, to the [**Bitbucket Cloud App**](bitbucket-cloud-app.md) integration.
+This section describes how to migrate your existing [Bitbucket Cloud API token integration](bitbucket-cloud.md), displayed in Snyk as Bitbucket Cloud, to the [**Bitbucket Cloud App**](bitbucket-cloud-app.md) integration.
 
-To migrate to the new app integration, you must remove all the previously imported Projects from Snyk, delete the PAT integration and its Projects, set up the new app integration, and reimport your Projects to Snyk from the new integration.
+To migrate to the new app integration, you must remove all the previously imported Projects from Snyk, delete the API token and its Projects, set up the new app integration, and reimport your Projects to Snyk from the new integration.
 
 {% hint style="info" %}
 Before going through the migration process, you should note that the following Project-level information will not persist:
@@ -136,7 +138,7 @@ Before going through the migration process, you should note that the following P
 
 The migration process includes the following steps:
 
-1. [Deleting the existing Projects](bitbucket-cloud.md#delete-existing-projects) that are connected to the Bitbucket Cloud PAT integration in Snyk.
+1. [Deleting the existing Projects](bitbucket-cloud.md#delete-existing-projects) that are connected to the Bitbucket Cloud API token integration in Snyk.
 2. [Disconnecting the PAT integration](bitbucket-cloud.md#disconnect-the-pat-integration) in Snyk.
 3. Removing the first-party extension for the PAT integration in Bitbucket (optional). This step is explained in the [Disconnect the PAT integration](bitbucket-cloud.md#disconnect-the-pat-integration) section.
 4. [Connecting the Bitbucket Cloud App](bitbucket-cloud.md#set-up-the-bitbucket-cloud-app-integration) and importing Projects.

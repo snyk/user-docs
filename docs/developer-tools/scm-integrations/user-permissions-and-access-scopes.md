@@ -96,9 +96,9 @@ A GAT is used for managing multiple GitLab projects in a GitLab group and requir
 
 The Snyk Bitbucket integrations use different access control mechanisms to connect with Snyk:
 
-* [Snyk Bitbucket Cloud](user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires the creation of an [app password](organization-level-integrations/bitbucket-cloud.md#how-to-set-up-the-bitbucket-cloud-integration).
+* [Snyk Bitbucket Cloud](user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires the creation of an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#api-tokens).
 * [Snyk Bitbucket Cloud App](user-permissions-and-access-scopes.md#bitbucket-cloud-app-scopes) requires [Bitbucket workspace authorization](organization-level-integrations/bitbucket-cloud-app.md#setting-up-a-bitbucket-cloud-app) and related permissions.
-* [Snyk Bitbucket Data Center/Server](user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires a [dedicated username and password](organization-level-integrations/bitbucket-data-center-server.md#how-to-set-up-a-bitbucket-dc-server-integration) or a personal access token (PAT).
+* [Snyk Bitbucket Data Center/Server](user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires a [dedicated username and password](organization-level-integrations/bitbucket-data-center-server.md#how-to-set-up-a-bitbucket-dc-server-integration) or an API token.
 
 {% hint style="warning" %}
 To set up any Snyk Bitbucket integration, you must be a Bitbucket Workspace Admin.
