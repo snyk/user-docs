@@ -2,14 +2,15 @@
 
 The Export API, which Snyk Analytics supports, makes it easier to export data by allowing users to create and manage CSV files. These files are safely stored by Snyk. Designed for efficiency and security, the Export API helps users organize and scale the export of large datasets, which is useful for reporting and analytics tasks.
 
-You can use the Export API to export the Snyk issues and usage events datasets in the scope of `Snyk Organization` or `Snyk Group`. Navigate to the [available columns and filters](export-api-specifications-columns-and-filters.md#available-columns-and-filters) section to see the full lists.  &#x20;
+You can use the Export API to export the Snyk **issues** and **usage** **events** datasets in the scope of `Snyk Organization` or `Snyk Group`. Navigate to the [available columns and filters](export-api-specifications-columns-and-filters.md#available-columns-and-filters) section to see the full lists.  &#x20;
 
 {% hint style="info" %}
 Before running the first export, ensure that all API requests include:
 
-* The API version parameter. The latest version is `2024-10-15`.
+* The API version parameter. The latest version is `2024-10-15`. You can also include the date of the current day for the version if you want to auto-upgrade when you use the API.
 * The authorization header. Use a user or a service account Snyk API Token.
-* The date of the current day for the version, if you want to autoupgrade when you use the API.
+* The `dataset` parameter. The only valid values are `issues` or `usage`. This parameter is required to specify which dataset you want to export.
+* At least one date filter (`introduced` or `updated`)
 {% endhint %}
 
 ## Data consumption process
@@ -53,7 +54,6 @@ The data provided by the Export API service updates approximately every two hour
 
 The API is limited by:
 
-* The actual data consumption compared to the number of API calls; this allows for the consumption of **up to five million records daily**.
 * The export `POST` endpoint allows up to 20 export requests per hour, while the status checks and results retrieval are unlimited.
 
 {% hint style="info" %}
