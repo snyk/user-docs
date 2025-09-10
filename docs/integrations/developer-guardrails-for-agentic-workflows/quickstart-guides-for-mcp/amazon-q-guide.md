@@ -1,7 +1,5 @@
 # Amazon Q guide
 
-{% include "../../../.gitbook/includes/ai-assisted-coding-survey.md" %}
-
 You can add the Snyk MCP server to Amazon Q to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
 
 ## Prerequisites
@@ -24,7 +22,7 @@ Create or edit the MCP configuration file `~/.aws/amazonq/mcp.json` .
 
 If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to the file:
 
-<pre class="language-json5"><code class="lang-json5"><strong>{
+<pre><code><strong>{
 </strong>  "servers": {
     "Snyk": {
       "type": "stdio",
@@ -42,7 +40,7 @@ Create or edit the MCP configuration file `~/.aws/amazonq/mcp.json` .
 
 If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in the file. You might need to specify the full path to the Snyk executable CLI:
 
-```json5
+```
 {
   "servers": {
     "Snyk": {

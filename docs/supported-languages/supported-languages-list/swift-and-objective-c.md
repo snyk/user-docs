@@ -18,12 +18,6 @@ Available functions:&#x20;
 
 ## Technical specifications
 
-### Supported package managers and registries
-
-For Swift and Objective-C, Snyk supports the following package managers: CocoaPods, Swift Package Manager v3.0 or higher.
-
-As package registries, Snyk for Swift and Objective-C uses multiple sources, including [cocoapods.org](https://cocoapods.org/) and [swiftpackageregistry.com](https://swiftpackageregistry.com/).
-
 ### Supported frameworks and libraries
 
 For Swift and Objective-C, the following frameworks and libraries are supported:&#x20;
@@ -54,6 +48,12 @@ For Swift and Objective-C, the following frameworks and libraries are supported:
 * Shout - Comprehensive
 * Swiftline - Comprehensive&#x20;
 * RNCryptor - Comprehensive
+
+### Supported package managers and registries
+
+For Swift and Objective-C, Snyk supports the following package managers: CocoaPods, Swift Package Manager v3.0 or higher.
+
+As package registries, Snyk for Swift and Objective-C uses multiple sources, including [cocoapods.org](https://cocoapods.org/) and [swiftpackageregistry.com](https://swiftpackageregistry.com/).
 
 ## Swift for Snyk Code
 

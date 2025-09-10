@@ -4,6 +4,8 @@ The Integrations page shows all active integrations, including data from your ex
 
 {% hint style="info" %}
 The Bitbucket Cloud App is not supported at the Group level. The available options at the Group level are BitBucket Cloud and BitBucket Server.
+
+To improve security, the use of app passwords in Bitbucket Cloud is transitioning to API tokens. Existing integrations that use app passwords will continue to function temporarily until **9 June 2026**. To ensure continued support and functionality, update your Bitbucket Cloud integration in Snyk to use an API token.
 {% endhint %}
 
 ### BitBucket setup guide
@@ -21,27 +23,18 @@ After manually setting up the languages in your Bitbucket project, Snyk can auto
 #### Integrate using Snyk Essentials <a href="#bitbucket-integrate-using-snyk-apprisk" id="bitbucket-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
-2. Access Token (`mandatory`) to create your BitBucket PAT from your BitBucket organization.
-   * API URL (`mandatory`) - Input the API URL.
-   * Username (`mandatory`): Input the BitBucket username of your organization.
-   * App password (`mandatory`): Create an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#app-passwords) from your BitBucket account, with the following permissions:
-     * **Account** - Read
-     * **Projects** - Read
+2. Service type (`mandatory`): Select the service type, Cloud, or Server.
+3. User email (`mandatory`): Atlassian account email.
+4. API Token (`mandatory`) to create your BitBucket [API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/) from your BitBucket organization,  with the following permissions:
+   * `read:user:bitbucket`
+   * `read:workspace:bitbucket`
+   * `read:repository:bitbucket`
+5.  Broker Token (`mandatory`) to create and add your Broker token if you use Snyk Broker.
 
-{% hint style="info" %}
-Create a BitBucket app password by following these steps:
+    This step is only for BitBucket Server that are not reachable through the internet.
 
-1. Open your BitBucket account&#x20;
-2. Click the Settings option
-3. Click the Personal BitBucket settings option&#x20;
-4. Navigate to the App passwords sub-section from the ACCESS MANAGEMENT section.
-{% endhint %}
-
-3. Broker Token (`mandatory`) to create and add your Broker token if you use Snyk Broker.
-   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md) page.&#x20;
-   * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
-4. Service type (`mandatory`): Select the service type, Cloud, or On-premises.
-5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](../application-context-for-scm-integrations/) page.
+    Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md) page. Copy and paste the Broker token on the integration setup menu from the Integration Hub.
+6. Add Backstage Catalog (`optional`). If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](../application-context-for-scm-integrations/) page.
 
 #### API version <a href="#bitbucket-api-version" id="bitbucket-api-version"></a>
 

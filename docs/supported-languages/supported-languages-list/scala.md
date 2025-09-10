@@ -20,11 +20,6 @@ Available functions:
 
 Snyk supports the following Scala versions: 2.x
 
-### Supported package managers and registries
-
-* Supported package managers: [sbt](https://www.scala-sbt.org/)
-* Supported package registries: [maven.org](https://maven.org/)
-
 ### Supported frameworks and libraries
 
 For Scala, the following frameworks and libraries are supported:
@@ -36,6 +31,11 @@ For Scala, the following frameworks and libraries are supported:
 * Scala standard library - Comprehensive
 * Slick Framework - Comprehensive
 * All [Java frameworks and libraries](java-and-kotlin/#frameworks-and-libraries)
+
+### Supported package managers and registries
+
+* Supported package managers: [sbt](https://www.scala-sbt.org/)
+* Supported package registries: [maven.org](https://maven.org/)
 
 ## Scala for Snyk Code
 

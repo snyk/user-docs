@@ -47,7 +47,7 @@ If you use the self-hosted GitHub Enterprise product, you must use the GitHub En
 For detailed steps on migrating from GitHub to GitHub Enterprise, see [Migrate to GitHub Enterprise](organization-level-integrations/github.md#migrate-to-the-github-enterprise-integration).
 {% endhint %}
 
-### Bitbucket Cloud (PAT) vs Bitbucket Cloud App
+### Bitbucket Cloud (API token) vs Bitbucket Cloud App
 
 In general, Snyk recommends using the new Bitbucket Cloud app integration. However, the new integration does not fit all cases. The information in this section is intended to help you decide which integration is right for you.
 
@@ -67,6 +67,6 @@ See [Migrate to the Snyk Bitbucket Cloud App](organization-level-integrations/bi
 
 #### Are there any plans for end-of-life for the Personal Access Token (PAT) integration?
 
-No, the Personal Access Token Bitbucket Cloud integration is fully supported, and there are no plans to stop supporting it.
+To improve security, the use of app passwords in Bitbucket Cloud is transitioning to API tokens. Existing integrations that use app passwords will continue to function temporarily until 9 June, 2026:&#x20;
 
-However, there is a first-party interface _extension_ app that serves as an extension layer to the PAT integration, allowing developers to consume Snyk's findings from within the Bitbucket interface. This extension app was developed and supported by an external contractor company. As this functionality is now an integral part of the new app integration, the extension app has now moved to no-support mode, meaning that customers who use the PAT integration alongside the first-party extension app must migrate to the new app integration to get support for the first-party interface functionality.
+To ensure continued support and functionality, update your Bitbucket Cloud integration in Snyk to use an API token.

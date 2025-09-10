@@ -13,7 +13,7 @@ Snyk Code Consistent Ignores works best with the latest IDE plugin versions.
 | Visual Studio | 2.2.1                    |
 | Eclipse       | v20250516.122216         |
 
-## **Set up the Organization**
+## **Setup**&#x20;
 
 To take ignores into account, specify the Organization where the ignores reside. [Group-level policies also cascade down to all Organizations](./#manage-ignores-at-the-group-level-through-security-policies). See [How to select the Organization to use in IDE plugins (Visual Studio Code example)](../../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
 

@@ -1,3 +1,26 @@
+## 2024-10-15 - Updated 2025-09-08
+
+### POST - `/orgs/{org_id}/policies` - Updated
+- removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `201`
+
+
+
+### GET - `/orgs/{org_id}/policies` - Updated
+- removed the `cancelled` enum value from the `data/items/attributes/review` response property for the response status `200`
+
+
+
+### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
+- removed the enum value `cancelled` of the request property `data/attributes/review`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `200`
+
+
+
+### GET - `/orgs/{org_id}/policies/{policy_id}` - Updated
+- removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `200`
+
+
 ## 2024-10-15 - Updated 2025-08-15
 
 ### GET - `/orgs/{org_id}/policies` - Updated

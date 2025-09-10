@@ -5,8 +5,6 @@
 
 The following features within the Pull Request experience are in [Early Access](../../../discover-snyk/getting-started/snyk-release-process.md#early-access-features):
 
-* Issue summary comment
-* Inline comments
 * Snyk Agent fix in the PR
 {% endhint %}
 
@@ -76,27 +74,11 @@ Configure the pull request experience for one or more integrations in your Snyk 
 
 ## Issue summary comment
 
-{% hint style="info" %}
-**Release status**
-
-Issue summary comment for Snyk PR Checks is in [Early Access](../../../discover-snyk/getting-started/snyk-release-process.md#early-access-features) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR checks.
-
-Issue summary comment for Snyk PR Checks fully supports GitHub integrations and Bitbucket Cloud integrations.
-{% endhint %}
-
 The issue summary comment feature adds a comment to each pull request, summarizing the latest PR check results. The summary includes the type of checks performed and a breakdown of the findings by severity. Select **View Details** to access the PR check details in the Snyk Web UI.
 
-<figure><img src="../../../.gitbook/assets/image (269).png" alt=""><figcaption><p>Issue summary comment feature for pull request experience</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (506).png" alt=""><figcaption><p>Issue summary comment feature for pull request experience</p></figcaption></figure>
 
 ## Inline comments
-
-{% hint style="info" %}
-**Release status**
-
-Inline comments for Snyk PR checks is in [Early Access](../../../discover-snyk/getting-started/snyk-release-process.md#early-access-features) for Bitbucket Server, GitLab and Azure Repos, and available only for Snyk Code PR Checks.
-
-Inline comments for Snyk PR checks fully supports GitHub integrations and Bitbucket Cloud integrations.
-{% endhint %}
 
 The inline comments feature adds a detailed comment for each issue identified by the Snyk Code pull request check. Each comment includes the severity level, the name and a short description of the issue, helpful links for further information, and, if applicable, the data flow. For best results, Snyk recommends generating and applying fixes for a single inline comment at a time, to avoid situations where applying a fix causes conflicts with another previously generated fix.
 

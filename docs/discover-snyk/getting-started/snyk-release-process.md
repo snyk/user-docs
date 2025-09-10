@@ -51,6 +51,7 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
 
 Deprecated features are outdated and will be removed in the future. The documentation page will announce the transition of a feature to Deprecated six months before its start date.
 
+* Snyk Code Quality is deprecated.
 * Snyk Code Local Engine is deprecated.
 * Apps API has the following deprecated endpoints:
   * **Revoke app bot authorization** endpoint

@@ -30,7 +30,7 @@ Snyk for Java and Kotlin supports Maven and Gradle as package managers and [mave
 Use any of the following versions:
 
 * Maven: `3.*.` For more information, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
-* Gradle: `4.*`, `5.*`, `6.*`, `7.*, 8.*.` For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
+* Gradle: `4.*`, `5.*`, `6.*`, `7.*`, `8.*`, `9.*` For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
 
 Snyk for Java and Kotlin supports the following file formats:
 

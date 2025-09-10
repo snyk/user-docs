@@ -9,6 +9,7 @@ The error codes in the table below describe the codes that you may encounter whi
 ## Fix
 
 ### [PR-FAILURES-0001](#pr-failures-0001)
+<a id="#PR-FAILURES-0001"></a>
 
 **Fix scenario not supported**
 
@@ -17,6 +18,7 @@ Snyk failed to open a fix PR as the scenario is not supported.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [PR-FAILURES-0002](#pr-failures-0002)
+<a id="#PR-FAILURES-0002"></a>
 
 **SCM rate limit**
 
@@ -25,6 +27,7 @@ SCM rate limit exceeded due to too many requests.
 **HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
 ### [PR-FAILURES-0003](#pr-failures-0003)
+<a id="#PR-FAILURES-0003"></a>
 
 **Unauthorised access**
 
@@ -37,6 +40,7 @@ Request failed due to unathorised access. Please read documentation around addin
 * [https://docs.snyk.io/snyk-admin/groups-and-organizations/organizations/manage-users-in-organizations](https://docs.snyk.io/snyk-admin/groups-and-organizations/organizations/manage-users-in-organizations)
 
 ### [SNYK-PACKAGES-0001](#snyk-packages-0001)
+<a id="#SNYK-PACKAGES-0001"></a>
 
 **Unsupported ecosystem**
 
@@ -49,6 +53,7 @@ The language or package manager is not supported. Please refer to the supported 
 * [https://docs.snyk.io/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/upgrade-open-source-dependencies-with-automatic-prs#supported-languages-and-scms](https://docs.snyk.io/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/upgrade-open-source-dependencies-with-automatic-prs#supported-languages-and-scms)
 
 ### [SNYK-PACKAGES-0003](#snyk-packages-0003)
+<a id="#SNYK-PACKAGES-0003"></a>
 
 **Metadata not found**
 
@@ -61,6 +66,7 @@ Package metadata not or found or missing.
 * [https://docs.snyk.io/supported-languages-package-managers-and-frameworks#package-managers-and-frameworks](https://docs.snyk.io/supported-languages-package-managers-and-frameworks#package-managers-and-frameworks)
 
 ### [SNYK-PACKAGES-0005](#snyk-packages-0005)
+<a id="#SNYK-PACKAGES-0005"></a>
 
 **No mature versions found for package**
 
@@ -69,6 +75,7 @@ Unable to provide a recommended version as no mature versions were found.
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-PACKAGES-0006](#snyk-packages-0006)
+<a id="#SNYK-PACKAGES-0006"></a>
 
 **No recommended version found**
 
@@ -77,6 +84,7 @@ Unable to provide a recommended version for package using this policy.
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-PACKAGES-0007](#snyk-packages-0007)
+<a id="#SNYK-PACKAGES-0007"></a>
 
 **Package is already at latest version**
 
@@ -85,6 +93,7 @@ No newer version found for this package, as it is already to latest version.
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-PACKAGES-0008](#snyk-packages-0008)
+<a id="#SNYK-PACKAGES-0008"></a>
 
 **Version downgrade is not supported**
 
@@ -93,6 +102,7 @@ Unable to suggest a downgrade for a package version.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-PACKAGES-0009](#snyk-packages-0009)
+<a id="#SNYK-PACKAGES-0009"></a>
 
 **Invalid version**
 
@@ -105,6 +115,7 @@ Not a valid version for semver format.
 * [https://semver.org/](https://semver.org/)
 
 ### [SNYK-PR-TEMPLATE-0001](#snyk-pr-template-0001)
+<a id="#SNYK-PR-TEMPLATE-0001"></a>
 
 **Failed to get pull request attributes**
 
@@ -117,6 +128,7 @@ Snyk could not get the custom pull request template attributes, using the given 
 * [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ### [SNYK-PR-TEMPLATE-0002](#snyk-pr-template-0002)
+<a id="#SNYK-PR-TEMPLATE-0002"></a>
 
 **Not found**
 
@@ -129,6 +141,7 @@ We could not find your pull request template, have you created one yet? Please c
 * [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ### [SNYK-PR-TEMPLATE-0003](#snyk-pr-template-0003)
+<a id="#SNYK-PR-TEMPLATE-0003"></a>
 
 **Failed to compile pull request template**
 
@@ -141,6 +154,7 @@ Could not compile your customize pull request template. Please check for syntax 
 * [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ### [SNYK-PR-TEMPLATE-0004](#snyk-pr-template-0004)
+<a id="#SNYK-PR-TEMPLATE-0004"></a>
 
 **Failed to parse pull request attributes**
 
@@ -153,6 +167,7 @@ Snyk could not parse the custom pull request template, using the given variables
 * [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ### [SNYK-PR-TEMPLATE-0005](#snyk-pr-template-0005)
+<a id="#SNYK-PR-TEMPLATE-0005"></a>
 
 **Failed to load YAML file after substituting Snyk variables**
 
@@ -165,6 +180,7 @@ Could not load YAML file after substituting Snyk variables into the custom PR te
 * [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ### [SNYK-PR-TEMPLATE-0006](#snyk-pr-template-0006)
+<a id="#SNYK-PR-TEMPLATE-0006"></a>
 
 **Failed to generate hash for custom PR template**
 
@@ -177,6 +193,7 @@ Snyk could not generate hash using the customer PR files and projects vulnIds.
 * [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ### [SNYK-PR-TEMPLATE-0007](#snyk-pr-template-0007)
+<a id="#SNYK-PR-TEMPLATE-0007"></a>
 
 **Unable to create pull request template**
 
@@ -189,6 +206,7 @@ Snyk could not create pull request template.
 * [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ### [SNYK-PR-TEMPLATE-0008](#snyk-pr-template-0008)
+<a id="#SNYK-PR-TEMPLATE-0008"></a>
 
 **Unable to get pull request template**
 
@@ -201,6 +219,7 @@ Snyk could not get pull request template.
 * [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ### [SNYK-PR-TEMPLATE-0009](#snyk-pr-template-0009)
+<a id="#SNYK-PR-TEMPLATE-0009"></a>
 
 **Unable to delete pull request template**
 
@@ -213,6 +232,7 @@ Snyk could not delete pull request template.
 * [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ### [SNYK-PR-TEMPLATE-0010](#snyk-pr-template-0010)
+<a id="#SNYK-PR-TEMPLATE-0010"></a>
 
 **Invalid payload**
 
@@ -221,6 +241,7 @@ The pull request template payload is invalid.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-PR-TEMPLATE-0011](#snyk-pr-template-0011)
+<a id="#SNYK-PR-TEMPLATE-0011"></a>
 
 **Failed to load JSON file after substituting Snyk variables**
 
@@ -233,6 +254,7 @@ Could not load JSON file after substituting Snyk variables into the custom PR te
 * [https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta](https://docs.snyk.io/scan-application-code/snyk-open-source/open-source-basics/customize-pr-templates-closed-beta)
 
 ### [SNYK-PR-TEMPLATE-0012](#snyk-pr-template-0012)
+<a id="#SNYK-PR-TEMPLATE-0012"></a>
 
 **Failed to render default PR template**
 
@@ -249,6 +271,7 @@ Could not render default PR template.
 ## Snyk
 
 ### [SNYK-0001](#snyk-0001)
+<a id="#SNYK-0001"></a>
 
 **Service temporarily throttled**
 
@@ -257,6 +280,7 @@ The request rate limit has been exceeded. Wait a few minutes, then try again.
 **HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
 ### [SNYK-0002](#snyk-0002)
+<a id="#SNYK-0002"></a>
 
 **Server error response**
 
@@ -269,6 +293,7 @@ The server doesn't recognize the request method, or it cannot fulfill it. Review
 * [https://docs.snyk.io/snyk-api-info](https://docs.snyk.io/snyk-api-info)
 
 ### [SNYK-0003](#snyk-0003)
+<a id="#SNYK-0003"></a>
 
 **Client request cannot be processed**
 
@@ -277,6 +302,7 @@ The server cannot process the request due to a client error, such as malformed r
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-0004](#snyk-0004)
+<a id="#SNYK-0004"></a>
 
 **Server communication error**
 
@@ -290,6 +316,7 @@ The server timed out during the request. Check Snyk status, then try again.
 * [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-0005](#snyk-0005)
+<a id="#SNYK-0005"></a>
 
 **Authentication error**
 
@@ -298,6 +325,7 @@ Authentication credentials not recognized, or user access is not provisioned. Re
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
 ### [SNYK-0006](#snyk-0006)
+<a id="#SNYK-0006"></a>
 
 **Test limit reached**
 
@@ -312,6 +340,7 @@ You have reached the maximum number of tests in your Snyk plan. This causes Snyk
 * [https://support.snyk.io/s/article/Snyk-Test-of-PR-failing-due-to-test-limit](https://support.snyk.io/s/article/Snyk-Test-of-PR-failing-due-to-test-limit)
 
 ### [SNYK-0007](#snyk-0007)
+<a id="#SNYK-0007"></a>
 
 **Organization is not part of a group**
 
@@ -330,6 +359,7 @@ If you want to override this global configuration for individual runs of snyk mo
 * [https://docs.snyk.io/snyk-admin/snyk-projects/project-tags](https://docs.snyk.io/snyk-admin/snyk-projects/project-tags)
 
 ### [SNYK-0008](#snyk-0008)
+<a id="#SNYK-0008"></a>
 
 **Unable to fulfill the request**
 
@@ -343,6 +373,7 @@ Due to a server gateway error, the server cannot process the request. Check Snyk
 * [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-0009](#snyk-0009)
+<a id="#SNYK-0009"></a>
 
 **Unable to fulfill the request**
 
@@ -356,6 +387,7 @@ Due to service availability issues, Snyk cannot process the request. This issue 
 * [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-9999](#snyk-9999)
+<a id="#SNYK-9999"></a>
 
 **Unable to process request**
 
@@ -373,6 +405,7 @@ The server cannot process the request due to an unexpected error. Check Snyk sta
 ## AiBom
 
 ### [SNYK-AIBOM-0001](#snyk-aibom-0001)
+<a id="#SNYK-AIBOM-0001"></a>
 
 **Unexpected error**
 
@@ -381,6 +414,7 @@ An unexpected error occurred in the AIBOM request. Review the request while prov
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-AIBOM-0002](#snyk-aibom-0002)
+<a id="#SNYK-AIBOM-0002"></a>
 
 **Forbidden**
 
@@ -389,6 +423,7 @@ You or your Organization do not have permission to use the AIBOM feature. Check 
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
 ### [SNYK-AIBOM-0003](#snyk-aibom-0003)
+<a id="#SNYK-AIBOM-0003"></a>
 
 **No supported files**
 
@@ -401,6 +436,7 @@ Snyk was unable to find any supported files for the AIBOM command. Ensure the di
 ## Custom Base Images
 
 ### [SNYK-CBI-0001](#snyk-cbi-0001)
+<a id="#SNYK-CBI-0001"></a>
 
 **Versioning schema does not support tag**
 
@@ -418,6 +454,7 @@ For example, if the repository currently uses Semver, and a new tag "1.2.5.7" ne
 * [https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations/versioning-schema-for-custom-base-images](https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations/versioning-schema-for-custom-base-images)
 
 ### [SNYK-CBI-0002](#snyk-cbi-0002)
+<a id="#SNYK-CBI-0002"></a>
 
 **Missing required parameter**
 
@@ -426,6 +463,7 @@ Provide an ORG ID or GROUP ID.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CBI-0003](#snyk-cbi-0003)
+<a id="#SNYK-CBI-0003"></a>
 
 **Project does not exist**
 
@@ -434,6 +472,7 @@ The project could not be found. Check that the project exists, that you have acc
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-CBI-0004](#snyk-cbi-0004)
+<a id="#SNYK-CBI-0004"></a>
 
 **Project is not a container image**
 
@@ -446,6 +485,7 @@ The project is not a container image.
 * [https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations](https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/use-custom-base-image-recommendations)
 
 ### [SNYK-CBI-0005](#snyk-cbi-0005)
+<a id="#SNYK-CBI-0005"></a>
 
 **Unable to retrieve group**
 
@@ -454,6 +494,7 @@ The project's org does not belong to a group. In order to use a Custom Base Imag
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CBI-0006](#snyk-cbi-0006)
+<a id="#SNYK-CBI-0006"></a>
 
 **The values in the request do not match**
 
@@ -462,6 +503,7 @@ The request body ID and the request path ID do not match. Ensure that the values
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CBI-0007](#snyk-cbi-0007)
+<a id="#SNYK-CBI-0007"></a>
 
 **The request body cannot be updated**
 
@@ -470,6 +512,7 @@ The request body does not contain any attributes that can be updated. Provide th
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CBI-0008](#snyk-cbi-0008)
+<a id="#SNYK-CBI-0008"></a>
 
 **Invalid pagination cursor**
 
@@ -478,6 +521,7 @@ The provided pagination cursor is invalid.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CBI-0009](#snyk-cbi-0009)
+<a id="#SNYK-CBI-0009"></a>
 
 **Unable to sort by version**
 
@@ -486,6 +530,7 @@ Snyk was unable to filter by version. Provide a repository filter and try again.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CBI-0010](#snyk-cbi-0010)
+<a id="#SNYK-CBI-0010"></a>
 
 **Unable to update versioning schema**
 
@@ -494,6 +539,7 @@ The versioning schema could not be applied to all images in the repository. Ther
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CBI-0011](#snyk-cbi-0011)
+<a id="#SNYK-CBI-0011"></a>
 
 **Project is already linked to a custom base image**
 
@@ -502,6 +548,7 @@ The project ID provided is already linked to another Custom Base Image.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CBI-0012](#snyk-cbi-0012)
+<a id="#SNYK-CBI-0012"></a>
 
 **No versioning schema for repository**
 
@@ -510,6 +557,7 @@ No versioning schema exists for the repository. This image is the first in its r
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CBI-0013](#snyk-cbi-0013)
+<a id="#SNYK-CBI-0013"></a>
 
 **Unable to apply versioning schema**
 
@@ -518,6 +566,7 @@ A versioning schema already exists for repository. Remove the "versioning_schema
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CBI-0014](#snyk-cbi-0014)
+<a id="#SNYK-CBI-0014"></a>
 
 **Unable to find custom base image**
 
@@ -526,6 +575,7 @@ Unable to find the requested custom base image. Try again, and if the error pers
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-CBI-0015](#snyk-cbi-0015)
+<a id="#SNYK-CBI-0015"></a>
 
 **Custom base image does not exist**
 
@@ -539,6 +589,7 @@ The requested custom base image does not exist.
 * [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-CBI-0016](#snyk-cbi-0016)
+<a id="#SNYK-CBI-0016"></a>
 
 **Unable to update custom base image**
 
@@ -552,6 +603,7 @@ An internal error occurred while trying to update a custom base image. Try again
 * [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-CBI-0017](#snyk-cbi-0017)
+<a id="#SNYK-CBI-0017"></a>
 
 **Unable to retrieve project properties**
 
@@ -565,6 +617,7 @@ An internal error occurred while trying to retrieve project properties. Try agai
 * [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-CBI-0018](#snyk-cbi-0018)
+<a id="#SNYK-CBI-0018"></a>
 
 **Unable to retrieve image collection**
 
@@ -578,6 +631,7 @@ An internal error occurred while trying to retrieve the image collection. Try ag
 * [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
 ### [SNYK-CBI-0019](#snyk-cbi-0019)
+<a id="#SNYK-CBI-0019"></a>
 
 **Unable to create versioning schema**
 
@@ -590,6 +644,7 @@ The provided versioning schema is invalid and image could therefor not be create
 ## CLI
 
 ### [SNYK-CLI-0000](#snyk-cli-0000)
+<a id="#SNYK-CLI-0000"></a>
 
 **Unspecified Error**
 
@@ -603,6 +658,7 @@ The encountered error only provides basic information, please take a look at the
 * [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
 
 ### [SNYK-CLI-0001](#snyk-cli-0001)
+<a id="#SNYK-CLI-0001"></a>
 
 **Unable to set environment**
 
@@ -615,6 +671,7 @@ The specified environment cannot be used. As a result, the configuration remains
 * [https://docs.snyk.io/snyk-cli/commands/config-environment](https://docs.snyk.io/snyk-cli/commands/config-environment)
 
 ### [SNYK-CLI-0002](#snyk-cli-0002)
+<a id="#SNYK-CLI-0002"></a>
 
 **Possible inconsistent configuration**
 
@@ -629,6 +686,7 @@ Review configured environment variables and ensure that everything is intentiona
 * [https://docs.snyk.io/snyk-cli/commands/config-environment](https://docs.snyk.io/snyk-cli/commands/config-environment)
 
 ### [SNYK-CLI-0003](#snyk-cli-0003)
+<a id="#SNYK-CLI-0003"></a>
 
 **Empty flag option**
 
@@ -641,6 +699,7 @@ A specified flag is missing an option value. Provide a correct option value and 
 * [https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary)
 
 ### [SNYK-CLI-0004](#snyk-cli-0004)
+<a id="#SNYK-CLI-0004"></a>
 
 **Invalid flag option**
 
@@ -653,6 +712,7 @@ A specified flag option or combination is invalid. Provide a valid flag option o
 * [https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary)
 
 ### [SNYK-CLI-0005](#snyk-cli-0005)
+<a id="#SNYK-CLI-0005"></a>
 
 **Unable to get vulnerabilities from resource**
 
@@ -661,6 +721,7 @@ If you are testing an npm package, check the version and package name and try ru
 **HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 ### [SNYK-CLI-0006](#snyk-cli-0006)
+<a id="#SNYK-CLI-0006"></a>
 
 **Missing AUTH token**
 
@@ -674,6 +735,7 @@ When running your command, Snyk requires an authenticated account. You must incl
 * [https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli)
 
 ### [SNYK-CLI-0007](#snyk-cli-0007)
+<a id="#SNYK-CLI-0007"></a>
 
 **Incomplete command arguments**
 
@@ -686,6 +748,7 @@ The specified CLI command includes missing or misconfigured arguments. Provide t
 * [https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary](https://docs.snyk.io/snyk-cli/cli-commands-and-options-summary)
 
 ### [SNYK-CLI-0008](#snyk-cli-0008)
+<a id="#SNYK-CLI-0008"></a>
 
 **No supported files found**
 
@@ -698,6 +761,7 @@ Snyk could not detect any supported target files. Ensure the files you are impor
 * [https://docs.snyk.io/supported-languages-package-managers-and-frameworks](https://docs.snyk.io/supported-languages-package-managers-and-frameworks)
 
 ### [SNYK-CLI-0009](#snyk-cli-0009)
+<a id="#SNYK-CLI-0009"></a>
 
 **Too many vulnerable paths to Project**
 
@@ -713,6 +777,7 @@ There are too many vulnerable paths to process the project. If your command supp
 * [https://docs.snyk.io/snyk-cli/commands/test#exclude-less-than-name-greater-than-less-than-name-greater-than-...greater-than](https://docs.snyk.io/snyk-cli/commands/test#exclude-less-than-name-greater-than-less-than-name-greater-than-...greater-than)
 
 ### [SNYK-CLI-0010](#snyk-cli-0010)
+<a id="#SNYK-CLI-0010"></a>
 
 **CLI validation failure**
 
@@ -721,6 +786,7 @@ CLI was unable to validate the required parameter. Provide the correct parameter
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CLI-0011](#snyk-cli-0011)
+<a id="#SNYK-CLI-0011"></a>
 
 **SCA failure**
 
@@ -733,6 +799,7 @@ CLI was unable to execute your SCA command, please take a look at the given deta
 * [https://docs.snyk.io/snyk-cli/commands/test](https://docs.snyk.io/snyk-cli/commands/test)
 
 ### [SNYK-CLI-0012](#snyk-cli-0012)
+<a id="#SNYK-CLI-0012"></a>
 
 **IAC failure**
 
@@ -745,6 +812,7 @@ CLI was unable to execute your IAC command, please take a look at the given deta
 * [https://docs.snyk.io/snyk-cli/commands/iac](https://docs.snyk.io/snyk-cli/commands/iac)
 
 ### [SNYK-CLI-0013](#snyk-cli-0013)
+<a id="#SNYK-CLI-0013"></a>
 
 **SAST failure**
 
@@ -757,6 +825,7 @@ CLI was unable to execute your SAST command, please take a look at the given det
 * [https://docs.snyk.io/snyk-cli/commands/code](https://docs.snyk.io/snyk-cli/commands/code)
 
 ### [SNYK-CLI-0014](#snyk-cli-0014)
+<a id="#SNYK-CLI-0014"></a>
 
 **Feature under development**
 
@@ -765,6 +834,7 @@ This feature is under development and is not yet available for public use.
 **HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 ### [SNYK-CLI-0015](#snyk-cli-0015)
+<a id="#SNYK-CLI-0015"></a>
 
 **Command is experimental**
 
@@ -773,6 +843,7 @@ This CLI command is experimental, which means it can change and break at any tim
 **HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 ### [SNYK-CLI-0016](#snyk-cli-0016)
+<a id="#SNYK-CLI-0016"></a>
 
 **Feature not enabled**
 
@@ -781,6 +852,7 @@ This feature is disabled for your current organization. You can enable it in the
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
 ### [SNYK-OS-7001](#snyk-os-7001)
+<a id="#SNYK-OS-7001"></a>
 
 **Request to Snyk API timeout**
 
@@ -798,6 +870,7 @@ A request to the Snyk API has unexpectedly timeout. Check Snyk status, then try 
 ## Code
 
 ### [SNYK-CODE-0001](#snyk-code-0001)
+<a id="#SNYK-CODE-0001"></a>
 
 **Analysis file count limit exceeded**
 
@@ -814,6 +887,7 @@ To reduce the file count, use a `.snyk` file to ignore specified directories or 
 * [https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli](https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli)
 
 ### [SNYK-CODE-0002](#snyk-code-0002)
+<a id="#SNYK-CODE-0002"></a>
 
 **Analysis result size limit exceeded**
 
@@ -829,6 +903,7 @@ To reduce the overall result size, use a `.snyk` file to ignore specified direct
 * [https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli](https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli)
 
 ### [SNYK-CODE-0003](#snyk-code-0003)
+<a id="#SNYK-CODE-0003"></a>
 
 **Analysis target size limit exceeded**
 
@@ -843,6 +918,7 @@ To reduce the overall result size, use a `.snyk` file to ignore specified direct
 * [https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli](https://docs.snyk.io/snyk-cli/using-snyk-code-from-the-cli)
 
 ### [SNYK-CODE-0004](#snyk-code-0004)
+<a id="#SNYK-CODE-0004"></a>
 
 **Analysis target includes a file with a name longer than 255 bytes**
 
@@ -857,6 +933,7 @@ To be able to scan the analysis target, rename the file to a name that is 255 by
 * [https://docs.snyk.io/scan-with-snyk/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks#filename-length-limitation](https://docs.snyk.io/scan-with-snyk/supported-languages-and-frameworks/introduction-to-snyk-supported-languages-and-frameworks#filename-length-limitation)
 
 ### [SNYK-CODE-0005](#snyk-code-0005)
+<a id="#SNYK-CODE-0005"></a>
 
 **Snyk Code is not enabled**
 
@@ -869,6 +946,7 @@ This error occurs when Snyk Code is not enabled for the current Organization. Ac
 * [https://docs.snyk.io/scan-using-snyk/snyk-code/configure-snyk-code#enable-snyk-code-in-snyk-web-ui](https://docs.snyk.io/scan-using-snyk/snyk-code/configure-snyk-code#enable-snyk-code-in-snyk-web-ui)
 
 ### [SNYK-CODE-0006](#snyk-code-0006)
+<a id="#SNYK-CODE-0006"></a>
 
 **Project not supported**
 
@@ -881,6 +959,7 @@ Snyk was unable to find supported files.
 * [https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code](https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview#code-analysis-snyk-code)
 
 ### [SNYK-CODE-0007](#snyk-code-0007)
+<a id="#SNYK-CODE-0007"></a>
 
 **Sast Rule extension already exists for the Group**
 
@@ -893,6 +972,7 @@ Sast Rule extension with a different type or attributes.
 **HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
 
 ### [SNYK-CODE-0008](#snyk-code-0008)
+<a id="#SNYK-CODE-0008"></a>
 
 **Organization relationships must be unique**
 
@@ -903,6 +983,7 @@ Make sure each Org in relationships has a different ID.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CODE-0009](#snyk-code-0009)
+<a id="#SNYK-CODE-0009"></a>
 
 **Group relationship must match the Group in the requested URL**
 
@@ -913,6 +994,7 @@ Make sure the Group ID under relationships matches the Group ID in the request p
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CODE-0010](#snyk-code-0010)
+<a id="#SNYK-CODE-0010"></a>
 
 **Organization outside of the administrating Group**
 
@@ -923,6 +1005,7 @@ Make sure each Org under relationships is within the Group in the requested URL.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CODE-0011](#snyk-code-0011)
+<a id="#SNYK-CODE-0011"></a>
 
 **Sast Rule extension limit reached**
 
@@ -937,6 +1020,7 @@ To create a new Sast Rule extension you will have to remove an existing one.
 ## Integration
 
 ### [SNYK-INTEGRATION-0001](#snyk-integration-0001)
+<a id="#SNYK-INTEGRATION-0001"></a>
 
 **SCM integration not found**
 
@@ -953,6 +1037,7 @@ Ensure your SCM integration exists and that it is correctly set up.
 ## OpenAPI
 
 ### [SNYK-OPENAPI-0001](#snyk-openapi-0001)
+<a id="#SNYK-OPENAPI-0001"></a>
 
 **Bad request**
 
@@ -965,6 +1050,7 @@ The server cannot process the request due to invalid or corrupt data. Review the
 * [https://docs.snyk.io/snyk-api-info/getting-started-using-snyk-rest-api ](https://docs.snyk.io/snyk-api-info/getting-started-using-snyk-rest-api )
 
 ### [SNYK-OPENAPI-0002](#snyk-openapi-0002)
+<a id="#SNYK-OPENAPI-0002"></a>
 
 **Forbidden**
 
@@ -973,6 +1059,7 @@ Access to the requested resource is forbidden. Review the request, then try agai
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
 ### [SNYK-OPENAPI-0003](#snyk-openapi-0003)
+<a id="#SNYK-OPENAPI-0003"></a>
 
 **Not acceptable**
 
@@ -981,6 +1068,7 @@ The server cannot provide a response that matches the provided accept headers. R
 **HTTP Status:** [406](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)
 
 ### [SNYK-OPENAPI-0004](#snyk-openapi-0004)
+<a id="#SNYK-OPENAPI-0004"></a>
 
 **Not found**
 
@@ -989,6 +1077,7 @@ The server cannot find the requested resource. Review the request, then try agai
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-OPENAPI-0005](#snyk-openapi-0005)
+<a id="#SNYK-OPENAPI-0005"></a>
 
 **Method not allowed**
 
@@ -997,6 +1086,7 @@ The target endpoint does not support your request method. Review the request, th
 **HTTP Status:** [405](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405)
 
 ### [SNYK-OPENAPI-0006](#snyk-openapi-0006)
+<a id="#SNYK-OPENAPI-0006"></a>
 
 **Request entity too large**
 
@@ -1005,6 +1095,7 @@ The request entity exceeds server limitations. Reduce the size of the request en
 **HTTP Status:** [413](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413)
 
 ### [SNYK-OPENAPI-0007](#snyk-openapi-0007)
+<a id="#SNYK-OPENAPI-0007"></a>
 
 **Unauthorized**
 
@@ -1017,6 +1108,7 @@ The request lacks authentication credentials for the requested resource. Ensure 
 * [https://docs.snyk.io/snyk-api-info/authentication-for-api](https://docs.snyk.io/snyk-api-info/authentication-for-api)
 
 ### [SNYK-OPENAPI-0008](#snyk-openapi-0008)
+<a id="#SNYK-OPENAPI-0008"></a>
 
 **Unsupported media type**
 
@@ -1025,6 +1117,7 @@ The media format of the request is not supported. Change media format, then try 
 **HTTP Status:** [415](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)
 
 ### [SNYK-OPENAPI-0009](#snyk-openapi-0009)
+<a id="#SNYK-OPENAPI-0009"></a>
 
 **Conflict**
 
@@ -1037,6 +1130,7 @@ The request could not be completed due to a conflict with the current state of t
 ## Open Source Languages & Package Managers
 
 ### [SNYK-OS-0001](#snyk-os-0001)
+<a id="#SNYK-OS-0001"></a>
 
 **Unable to parse manifest file**
 
@@ -1045,6 +1139,7 @@ The provided manifest file could not be parsed as it has invalid syntax or does 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OS-0002](#snyk-os-0002)
+<a id="#SNYK-OS-0002"></a>
 
 **Unable to parse lock file**
 
@@ -1053,6 +1148,7 @@ The provided lock file could not be parsed as it has invalid syntax or does not 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OS-0003](#snyk-os-0003)
+<a id="#SNYK-OS-0003"></a>
 
 **Unknown dependency version**
 
@@ -1065,6 +1161,7 @@ Dependency version could not be resolved.
 * [https://support.snyk.io/s/article/Could-not-determine-version-for-dependencies](https://support.snyk.io/s/article/Could-not-determine-version-for-dependencies)
 
 ### [SNYK-OS-0004](#snyk-os-0004)
+<a id="#SNYK-OS-0004"></a>
 
 **Missing required request header**
 
@@ -1073,6 +1170,7 @@ The server encountered a request that is missing a mandatory request header.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-0005](#snyk-os-0005)
+<a id="#SNYK-OS-0005"></a>
 
 **Payload missing required elements**
 
@@ -1081,6 +1179,7 @@ The server could not process the request.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-0006](#snyk-os-0006)
+<a id="#SNYK-OS-0006"></a>
 
 **Files cannot be processed**
 
@@ -1089,6 +1188,7 @@ The dependency service could not process the files.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-0007](#snyk-os-0007)
+<a id="#SNYK-OS-0007"></a>
 
 **Cannot get file from source**
 
@@ -1097,6 +1197,7 @@ Could not get the file from the source URL.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-0008](#snyk-os-0008)
+<a id="#SNYK-OS-0008"></a>
 
 **Missing environment variable**
 
@@ -1105,6 +1206,7 @@ The server encountered a critical operation that requires a specific environment
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-0009](#snyk-os-0009)
+<a id="#SNYK-OS-0009"></a>
 
 **Brokered connections not currently supported**
 
@@ -1113,6 +1215,7 @@ The service encountered a permissions or credentials error most likely related t
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-0010](#snyk-os-0010)
+<a id="#SNYK-OS-0010"></a>
 
 **Snyk failed to clone your repository**
 
@@ -1127,6 +1230,7 @@ And try the operation again.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-DOTNET-0001](#snyk-os-dotnet-0001)
+<a id="#SNYK-OS-DOTNET-0001"></a>
 
 **Unsupported manifest file type for remediation**
 
@@ -1139,6 +1243,7 @@ The provided manifest file is not supported by Snyk for .NET.
 * [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/.net)
 
 ### [SNYK-OS-DOTNET-0002](#snyk-os-dotnet-0002)
+<a id="#SNYK-OS-DOTNET-0002"></a>
 
 **Target framework not supported**
 
@@ -1147,6 +1252,7 @@ The provided manifest file defines a `<TargetFramework>` or `<TargetFrameworks>`
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-DOTNET-0003](#snyk-os-dotnet-0003)
+<a id="#SNYK-OS-DOTNET-0003"></a>
 
 **Your C# code is missing a static Main function**
 
@@ -1174,6 +1280,7 @@ namespace Example
 * [https://learn.microsoft.com/en-us/dotnet/csharp/misc/cs5001](https://learn.microsoft.com/en-us/dotnet/csharp/misc/cs5001)
 
 ### [SNYK-OS-DOTNET-0004](#snyk-os-dotnet-0004)
+<a id="#SNYK-OS-DOTNET-0004"></a>
 
 **The dotnet CLI is unable to generate a self-contained binary**
 
@@ -1196,6 +1303,7 @@ If this step is successful locally, it is possible that Snyk is running another 
 * [https://github.com/snyk/snyk-nuget-plugin/blob/885486aa656c28d3db465c8d22710770d5cc6773/lib/nuget-parser/cli/dotnet.ts#L67](https://github.com/snyk/snyk-nuget-plugin/blob/885486aa656c28d3db465c8d22710770d5cc6773/lib/nuget-parser/cli/dotnet.ts#L67)
 
 ### [SNYK-OS-DOTNET-0005](#snyk-os-dotnet-0005)
+<a id="#SNYK-OS-DOTNET-0005"></a>
 
 **The dotnet CLI was unable to restore from private package sources**
 
@@ -1225,6 +1333,7 @@ You can set up a connection to your private Nuget repository in your Snyk integr
 * [https://github.com/microsoft/artifacts-credprovider#environment-variables](https://github.com/microsoft/artifacts-credprovider#environment-variables)
 
 ### [SNYK-OS-DOTNET-0006](#snyk-os-dotnet-0006)
+<a id="#SNYK-OS-DOTNET-0006"></a>
 
 **Missing MSBuild Condition Construct in project file**
 
@@ -1274,6 +1383,7 @@ This error occurs when your code depends on external libraries that are added to
 * [https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-conditional-constructs](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-conditional-constructs)
 
 ### [SNYK-OS-DOTNET-0007](#snyk-os-dotnet-0007)
+<a id="#SNYK-OS-DOTNET-0007"></a>
 
 **No target frameworks found in manifest files**
 
@@ -1288,6 +1398,7 @@ If you are using `Directory.Build.props` files to determine the target framework
 * [https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets)
 
 ### [SNYK-OS-DOTNET-0008](#snyk-os-dotnet-0008)
+<a id="#SNYK-OS-DOTNET-0008"></a>
 
 **Your global.json is targeting an outdated SDK version**
 
@@ -1359,6 +1470,7 @@ Which will allow Snyk to scan your code using a newer version of the SDK, despit
 * [https://learn.microsoft.com/en-us/dotnet/core/tools/global-json#rollforward](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json#rollforward)
 
 ### [SNYK-OS-DOTNET-0009](#snyk-os-dotnet-0009)
+<a id="#SNYK-OS-DOTNET-0009"></a>
 
 **Project failed to build due to missing type or namespace references**
 
@@ -1375,6 +1487,7 @@ This can present itself as a problem for customers that are using Mac or Windows
 * [https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/assembly-references#missing-references](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/assembly-references#missing-references)
 
 ### [SNYK-OS-DOTNET-0010](#snyk-os-dotnet-0010)
+<a id="#SNYK-OS-DOTNET-0010"></a>
 
 **The 10 GB space limit for downloaded Nuget dependencies has been exceeded**
 
@@ -1388,6 +1501,7 @@ This often happens due to the large number or the large size of Nuget dependenci
 * [https://docs.snyk.io/supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning#limitations-on-improved-.net-scanning-for-scm-integrations](https://docs.snyk.io/supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning#limitations-on-improved-.net-scanning-for-scm-integrations)
 
 ### [SNYK-OS-DOTNET-0011](#snyk-os-dotnet-0011)
+<a id="#SNYK-OS-DOTNET-0011"></a>
 
 **The dotnet CLI is unable to download and install all the required dependencies**
 
@@ -1411,6 +1525,7 @@ If this step is successful locally, it is possible that Snyk is running another 
 * [https://github.com/snyk/snyk-nuget-plugin/blob/885486aa656c28d3db465c8d22710770d5cc6773/lib/nuget-parser/cli/dotnet.ts#L50](https://github.com/snyk/snyk-nuget-plugin/blob/885486aa656c28d3db465c8d22710770d5cc6773/lib/nuget-parser/cli/dotnet.ts#L50)
 
 ### [SNYK-OS-GO-0001](#snyk-os-go-0001)
+<a id="#SNYK-OS-GO-0001"></a>
 
 **Failed to access private module**
 
@@ -1423,6 +1538,7 @@ Snyk could not access the private modules within your go.mod files.
 * [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go)
 
 ### [SNYK-OS-GO-0002](#snyk-os-go-0002)
+<a id="#SNYK-OS-GO-0002"></a>
 
 **Go mod file not found**
 
@@ -1435,6 +1551,7 @@ A go.mod file was not found in the current directory or any parent directory.
 * [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/go)
 
 ### [SNYK-OS-GO-0003](#snyk-os-go-0003)
+<a id="#SNYK-OS-GO-0003"></a>
 
 **OAuth re-authorization required**
 
@@ -1460,6 +1577,7 @@ Going forward, [SNYK-OS-8004](#snyk-os-8004) will be used instead.
 * [https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso)
 
 ### [SNYK-OS-GO-0004](#snyk-os-go-0004)
+<a id="#SNYK-OS-GO-0004"></a>
 
 **Your project repository is missing required files**
 
@@ -1480,6 +1598,7 @@ If Snyk cannot process your code successfully, insert the Snyk CLI as part of yo
 * [https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go](https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go)
 
 ### [SNYK-OS-GO-0005](#snyk-os-go-0005)
+<a id="#SNYK-OS-GO-0005"></a>
 
 **Your project repository has inconsistent vendoring information**
 
@@ -1502,6 +1621,7 @@ Then try and run the above mentioned commands and see if your SCM system reports
 * [https://go.dev/ref/mod#go-mod-vendor](https://go.dev/ref/mod#go-mod-vendor)
 
 ### [SNYK-OS-GO-0006](#snyk-os-go-0006)
+<a id="#SNYK-OS-GO-0006"></a>
 
 **Unsupported external file generation**
 
@@ -1512,6 +1632,7 @@ Snyk can only work with the files available in your repository and does not have
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-GO-0007](#snyk-os-go-0007)
+<a id="#SNYK-OS-GO-0007"></a>
 
 **Unable to access private dependencies**
 
@@ -1529,6 +1650,7 @@ This error appears when the authorization credentials do not allow access to the
 * [https://go.dev/ref/mod#vcs](https://go.dev/ref/mod#vcs)
 
 ### [SNYK-OS-GO-0008](#snyk-os-go-0008)
+<a id="#SNYK-OS-GO-0008"></a>
 
 **Unable to fetch private dependencies**
 
@@ -1541,6 +1663,7 @@ This error appears when Snyk is unable to properly access the authorization cred
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
 ### [SNYK-OS-GO-0009](#snyk-os-go-0009)
+<a id="#SNYK-OS-GO-0009"></a>
 
 **Toolchain not available**
 
@@ -1549,6 +1672,7 @@ Could not download Go toolchain.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-GO-0010](#snyk-os-go-0010)
+<a id="#SNYK-OS-GO-0010"></a>
 
 **The 10 GB space limit for downloaded Golang dependencies has been exceeded**
 
@@ -1564,6 +1688,7 @@ Currently this is a product limitation for SCM. As a workaround, use the 'snyk m
 * [https://docs.snyk.io/snyk-cli/commands/monitor](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ### [SNYK-OS-GO-0011](#snyk-os-go-0011)
+<a id="#SNYK-OS-GO-0011"></a>
 
 **No secure protocol found for repository**
 
@@ -1578,6 +1703,7 @@ Note: SSH is not supported.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-GO-0012](#snyk-os-go-0012)
+<a id="#SNYK-OS-GO-0012"></a>
 
 **Connection reset by peer**
 
@@ -1590,6 +1716,7 @@ Try to reimport the project, if that does not work, please reach out to Snyk sup
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-GO-0013](#snyk-os-go-0013)
+<a id="#SNYK-OS-GO-0013"></a>
 
 **Invalid zip file**
 
@@ -1604,6 +1731,7 @@ If the issue persists, please reach out to Snyk support.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-GO-0014](#snyk-os-go-0014)
+<a id="#SNYK-OS-GO-0014"></a>
 
 **Go version mismatch**
 
@@ -1622,6 +1750,7 @@ If the Go version used in the go.mod file is supported based on our Golang docum
 * [https://docs.snyk.io/supported-languages-package-managers-and-frameworks/go/go-for-open-source#go-for-snyk-open-source-support](https://docs.snyk.io/supported-languages-package-managers-and-frameworks/go/go-for-open-source#go-for-snyk-open-source-support)
 
 ### [SNYK-OS-GO-0015](#snyk-os-go-0015)
+<a id="#SNYK-OS-GO-0015"></a>
 
 **Invalid Go version in go.mod**
 
@@ -1634,6 +1763,7 @@ Ensure that the Go version specified in the go.mod file matches the required for
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-GO-0016](#snyk-os-go-0016)
+<a id="#SNYK-OS-GO-0016"></a>
 
 **Dial TCP timeout**
 
@@ -1646,6 +1776,7 @@ Ensure that the server hosting the module is reachable and that there are no net
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-GO-0017](#snyk-os-go-0017)
+<a id="#SNYK-OS-GO-0017"></a>
 
 **Host key verification failed**
 
@@ -1662,6 +1793,7 @@ Ensure that the key used to connect to the remote repository is correct and prop
 * [https://docs.github.com/en/authentication/troubleshooting-ssh/error-host-key-verification-failed](https://docs.github.com/en/authentication/troubleshooting-ssh/error-host-key-verification-failed)
 
 ### [SNYK-OS-GO-0018](#snyk-os-go-0018)
+<a id="#SNYK-OS-GO-0018"></a>
 
 **Missing module declaration in go.mod**
 
@@ -1676,6 +1808,7 @@ Update the go.mod file with the correct module path and try again.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-GO-0019](#snyk-os-go-0019)
+<a id="#SNYK-OS-GO-0019"></a>
 
 **Go module version constraint not met**
 
@@ -1688,6 +1821,7 @@ To resolve this, ensure your Go toolchain version meets the module's specified c
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0001](#snyk-os-maven-0001)
+<a id="#SNYK-OS-MAVEN-0001"></a>
 
 **Missing property**
 
@@ -1696,6 +1830,7 @@ The required property is missing from the pom object.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0002](#snyk-os-maven-0002)
+<a id="#SNYK-OS-MAVEN-0002"></a>
 
 **Unable to resolve value for property**
 
@@ -1704,6 +1839,7 @@ The targeted property could not be resolved with a valid value.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0003](#snyk-os-maven-0003)
+<a id="#SNYK-OS-MAVEN-0003"></a>
 
 **Unable to resolve version for property**
 
@@ -1712,6 +1848,7 @@ The targeted property could not be resolved with a valid version.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-MAVEN-0004](#snyk-os-maven-0004)
+<a id="#SNYK-OS-MAVEN-0004"></a>
 
 **Cyclic property detected in POM file**
 
@@ -1720,6 +1857,7 @@ There is circular dependency among properties in the Maven project's configurati
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0005](#snyk-os-maven-0005)
+<a id="#SNYK-OS-MAVEN-0005"></a>
 
 **Error parsing the XML file**
 
@@ -1728,6 +1866,7 @@ There is an error parsing the XML file. This could be referring to either pom.xm
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0006](#snyk-os-maven-0006)
+<a id="#SNYK-OS-MAVEN-0006"></a>
 
 **Invalid coordinates provided**
 
@@ -1736,6 +1875,7 @@ The coordinates provided for a project were invalid.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0007](#snyk-os-maven-0007)
+<a id="#SNYK-OS-MAVEN-0007"></a>
 
 **Skipping group**
 
@@ -1744,6 +1884,7 @@ Skipping a specific groupId starting due to remapped coordinates.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0008](#snyk-os-maven-0008)
+<a id="#SNYK-OS-MAVEN-0008"></a>
 
 **Pom file not found**
 
@@ -1752,6 +1893,7 @@ The pom file was not found in Maven repository.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0009](#snyk-os-maven-0009)
+<a id="#SNYK-OS-MAVEN-0009"></a>
 
 **Missing project from POM**
 
@@ -1760,6 +1902,7 @@ A project element is missing from POM.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0010](#snyk-os-maven-0010)
+<a id="#SNYK-OS-MAVEN-0010"></a>
 
 **Cannot resolve the target POM from the input XML**
 
@@ -1768,6 +1911,7 @@ Cannot resolve the targeted POM from the input XML.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0011](#snyk-os-maven-0011)
+<a id="#SNYK-OS-MAVEN-0011"></a>
 
 **Cannot resolve the target POM from the repository**
 
@@ -1776,6 +1920,7 @@ Cannot resolve the targeted POM from the repository.
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-OS-MAVEN-0012](#snyk-os-maven-0012)
+<a id="#SNYK-OS-MAVEN-0012"></a>
 
 **Cannot get the build file repository**
 
@@ -1784,6 +1929,7 @@ Cannot get the build file repository.
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-OS-MAVEN-0013](#snyk-os-maven-0013)
+<a id="#SNYK-OS-MAVEN-0013"></a>
 
 **Unable to create hosted git info**
 
@@ -1792,6 +1938,7 @@ Cannot create source URL.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-MAVEN-0014](#snyk-os-maven-0014)
+<a id="#SNYK-OS-MAVEN-0014"></a>
 
 **No released version for versions range**
 
@@ -1800,6 +1947,7 @@ There was no version released for the specified versions range.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0015](#snyk-os-maven-0015)
+<a id="#SNYK-OS-MAVEN-0015"></a>
 
 **Source is not supported**
 
@@ -1808,6 +1956,7 @@ The source used is not supported by fetcher. The supported sources are: github, 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0016](#snyk-os-maven-0016)
+<a id="#SNYK-OS-MAVEN-0016"></a>
 
 **Timeout when processing the dependency tree**
 
@@ -1816,6 +1965,7 @@ There was an timeout when processing the dependency tree.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-MAVEN-0017](#snyk-os-maven-0017)
+<a id="#SNYK-OS-MAVEN-0017"></a>
 
 **Cannot reach one or more Maven repositories configured under your Snyk organisations language settings**
 
@@ -1835,6 +1985,7 @@ In order to solve this issue, refer to the specific details of this error messag
 * [https://docs.snyk.io/integrate-with-snyk/package-repository-integrations](https://docs.snyk.io/integrate-with-snyk/package-repository-integrations)
 
 ### [SNYK-OS-NODEJS-0001](#snyk-os-nodejs-0001)
+<a id="#SNYK-OS-NODEJS-0001"></a>
 
 **No repository found for A NPM package**
 
@@ -1843,6 +1994,7 @@ No repository found for the NPM package.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0002](#snyk-os-nodejs-0002)
+<a id="#SNYK-OS-NODEJS-0002"></a>
 
 **Could not parse NPM registry URL**
 
@@ -1851,6 +2003,7 @@ Could not parse NPM registry URL.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0003](#snyk-os-nodejs-0003)
+<a id="#SNYK-OS-NODEJS-0003"></a>
 
 **Could not find a broker resolved URL**
 
@@ -1859,6 +2012,7 @@ Could not find a broker resolved URL.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0004](#snyk-os-nodejs-0004)
+<a id="#SNYK-OS-NODEJS-0004"></a>
 
 **Unable to replace broker URL**
 
@@ -1867,6 +2021,7 @@ Unable to replace all broker urls in lock file.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0005](#snyk-os-nodejs-0005)
+<a id="#SNYK-OS-NODEJS-0005"></a>
 
 **Bad NPM version**
 
@@ -1875,6 +2030,7 @@ The NPM version is not supported.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0006](#snyk-os-nodejs-0006)
+<a id="#SNYK-OS-NODEJS-0006"></a>
 
 **Unknown blob encoding on Github**
 
@@ -1883,6 +2039,7 @@ Unknown blob encoding on Github.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0007](#snyk-os-nodejs-0007)
+<a id="#SNYK-OS-NODEJS-0007"></a>
 
 **No result from forked process**
 
@@ -1891,6 +2048,7 @@ No result from forked process.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-NODEJS-0008](#snyk-os-nodejs-0008)
+<a id="#SNYK-OS-NODEJS-0008"></a>
 
 **Child Process Execution Error**
 
@@ -1899,6 +2057,7 @@ The child process encountered an error during execution.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-NODEJS-0009](#snyk-os-nodejs-0009)
+<a id="#SNYK-OS-NODEJS-0009"></a>
 
 **No valid package upgrades**
 
@@ -1907,6 +2066,7 @@ The system attempted to find valid upgrades for the packages specified in the lo
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0010](#snyk-os-nodejs-0010)
+<a id="#SNYK-OS-NODEJS-0010"></a>
 
 **No dependency updates**
 
@@ -1915,6 +2075,7 @@ There are no available updates for the dependencies.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0011](#snyk-os-nodejs-0011)
+<a id="#SNYK-OS-NODEJS-0011"></a>
 
 **Could not parse JSON file**
 
@@ -1923,6 +2084,7 @@ An error occurred while attempting to parse a JSON file.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0012](#snyk-os-nodejs-0012)
+<a id="#SNYK-OS-NODEJS-0012"></a>
 
 **Could not Base64 encode**
 
@@ -1931,6 +2093,7 @@ An error occurred while attempting to perform Base64 encoding.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0013](#snyk-os-nodejs-0013)
+<a id="#SNYK-OS-NODEJS-0013"></a>
 
 **Could not Base64 decode**
 
@@ -1939,6 +2102,7 @@ An error occurred while attempting to perform Base64 decoding.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0014](#snyk-os-nodejs-0014)
+<a id="#SNYK-OS-NODEJS-0014"></a>
 
 **Missing supported file**
 
@@ -1947,6 +2111,7 @@ Could not find supported file.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OS-NODEJS-0015](#snyk-os-nodejs-0015)
+<a id="#SNYK-OS-NODEJS-0015"></a>
 
 **Invalid configuration**
 
@@ -1955,6 +2120,7 @@ The configuration parameter does not meet the expected data type. Please ensure 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OS-NODEJS-0016](#snyk-os-nodejs-0016)
+<a id="#SNYK-OS-NODEJS-0016"></a>
 
 **Out of Sync Error**
 
@@ -1971,6 +2137,7 @@ In some cases, it may be necessary to delete the node_modules folder and the pnp
 * [https://support.snyk.io/s/article/Out-of-sync-manifest--lockfile-in-the-project](https://support.snyk.io/s/article/Out-of-sync-manifest--lockfile-in-the-project)
 
 ### [SNYK-OS-NODEJS-0017](#snyk-os-nodejs-0017)
+<a id="#SNYK-OS-NODEJS-0017"></a>
 
 **Unsupported pnpm lockfile version**
 
@@ -1979,6 +2146,7 @@ The lockfile version is not supported. Supported lockfile versions for pnpm incl
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-NODEJS-0019](#snyk-os-nodejs-0019)
+<a id="#SNYK-OS-NODEJS-0019"></a>
 
 **Yarn package not found**
 
@@ -1987,6 +2155,7 @@ Snyk could not find the package in the Yarn registry.
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-OS-NODEJS-0020](#snyk-os-nodejs-0020)
+<a id="#SNYK-OS-NODEJS-0020"></a>
 
 **Unable to reach package registry**
 
@@ -1995,6 +2164,7 @@ Snyk could not reach the node package registry.
 **HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
 
 ### [SNYK-OS-NODEJS-0021](#snyk-os-nodejs-0021)
+<a id="#SNYK-OS-NODEJS-0021"></a>
 
 **Lock file is outdated**
 
@@ -2003,6 +2173,7 @@ The lock file is outdated. Update the lock file and try again.
 **HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
 
 ### [SNYK-OS-NODEJS-0022](#snyk-os-nodejs-0022)
+<a id="#SNYK-OS-NODEJS-0022"></a>
 
 **Unable to read from remote repository**
 
@@ -2011,6 +2182,7 @@ Snyk does not have sufficient permissions to access the repository, or the repos
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
 ### [SNYK-OS-PYTHON-0001](#snyk-os-python-0001)
+<a id="#SNYK-OS-PYTHON-0001"></a>
 
 **Unsupported manifest file type for remediation**
 
@@ -2023,6 +2195,7 @@ The provided requirements file is not supported by Snyk for Python.
 * [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/python)
 
 ### [SNYK-OS-PYTHON-0002](#snyk-os-python-0002)
+<a id="#SNYK-OS-PYTHON-0002"></a>
 
 **Received more manifests than expected**
 
@@ -2031,6 +2204,7 @@ Too many manifest files were provided in the request body.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-PYTHON-0003](#snyk-os-python-0003)
+<a id="#SNYK-OS-PYTHON-0003"></a>
 
 **Failed to apply dependency updates**
 
@@ -2039,6 +2213,7 @@ An error occurred while updating dependencies.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-PYTHON-0004](#snyk-os-python-0004)
+<a id="#SNYK-OS-PYTHON-0004"></a>
 
 **Python package not found**
 
@@ -2048,6 +2223,7 @@ Make sure all packages included in the manifest file are public existing ones.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-PYTHON-0005](#snyk-os-python-0005)
+<a id="#SNYK-OS-PYTHON-0005"></a>
 
 **Syntax errors found in manifest file**
 
@@ -2057,6 +2233,7 @@ Make sure the manifest file follows the syntax stardards and can be installed lo
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-PYTHON-0006](#snyk-os-python-0006)
+<a id="#SNYK-OS-PYTHON-0006"></a>
 
 **Python version not supported**
 
@@ -2067,6 +2244,7 @@ Alternatively, add a `.snyk` file for Python version selection override.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-PYTHON-0007](#snyk-os-python-0007)
+<a id="#SNYK-OS-PYTHON-0007"></a>
 
 **Packages versions caused conflicts**
 
@@ -2076,6 +2254,7 @@ Make sure no two packages and their requirements cause conflicts and that the ma
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-PYTHON-0008](#snyk-os-python-0008)
+<a id="#SNYK-OS-PYTHON-0008"></a>
 
 **No matching distribution found for one or more of the packages**
 
@@ -2086,6 +2265,7 @@ Alternatively, add a `.snyk` file for Python version selection override.
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-PYTHON-0009](#snyk-os-python-0009)
+<a id="#SNYK-OS-PYTHON-0009"></a>
 
 **Packages installation failed**
 
@@ -2094,6 +2274,7 @@ Some packages failed during installation due to missing system dependencies, com
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-PYTHON-0010](#snyk-os-python-0010)
+<a id="#SNYK-OS-PYTHON-0010"></a>
 
 **Python version not supported**
 
@@ -2103,6 +2284,7 @@ Make sure to use the correct python version in the requires section of the Pipfi
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-PYTHON-0011](#snyk-os-python-0011)
+<a id="#SNYK-OS-PYTHON-0011"></a>
 
 **No matching distribution found for one or more of the packages**
 
@@ -2112,6 +2294,7 @@ Make sure to use the correct python version in the requires section of the Pipfi
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-OS-PYTHON-0012](#snyk-os-python-0012)
+<a id="#SNYK-OS-PYTHON-0012"></a>
 
 **The 10 GB space limit for downloaded Python dependencies has been exceeded**
 
@@ -2125,6 +2308,7 @@ This often happens due to the large size of some of the Python dependencies and 
 * [https://docs.snyk.io/supported-languages-package-managers-and-frameworks/python/git-repositories-and-python#pip-and-git-repositories](https://docs.snyk.io/supported-languages-package-managers-and-frameworks/python/git-repositories-and-python#pip-and-git-repositories)
 
 ### [SNYK-OS-RUBY-0001](#snyk-os-ruby-0001)
+<a id="#SNYK-OS-RUBY-0001"></a>
 
 **Cyclic dependency detected in lockfile**
 
@@ -2137,6 +2321,7 @@ Cyclic dependency detected in lockfile.
 ## Builds
 
 ### [SNYK-OS-8001](#snyk-os-8001)
+<a id="#SNYK-OS-8001"></a>
 
 **Invalid request**
 
@@ -2149,6 +2334,7 @@ The provided request payload is not valid for the selected ecosystem. Please rev
 * [https://apidocs.snyk.io/](https://apidocs.snyk.io/)
 
 ### [SNYK-OS-8002](#snyk-os-8002)
+<a id="#SNYK-OS-8002"></a>
 
 **Build environment not found**
 
@@ -2157,6 +2343,7 @@ The build environment for the provided context could not be found. Please ensure
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-OS-8003](#snyk-os-8003)
+<a id="#SNYK-OS-8003"></a>
 
 **Unsupported Ecosystem**
 
@@ -2169,6 +2356,7 @@ The language or package manager is not supported. Please refer to the supported 
 * [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#open-source-and-licensing-snyk-open-source)
 
 ### [SNYK-OS-8004](#snyk-os-8004)
+<a id="#SNYK-OS-8004"></a>
 
 **OAuth re-authorization required**
 
@@ -2186,6 +2374,7 @@ Verify your authentication configuration with your Git cloud provider and try ag
 * [https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso)
 
 ### [SNYK-OS-8005](#snyk-os-8005)
+<a id="#SNYK-OS-8005"></a>
 
 **Project too large to be processed**
 
@@ -2199,6 +2388,7 @@ For node projects, please try again after removing requirement to generate a loc
 * [https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#howtonotrequestalockfiletobegenerated](https://docs.snyk.io/scan-applications/supported-languages-and-frameworks/supported-languages-frameworks-and-feature-availability-overview#howtonotrequestalockfiletobegenerated)
 
 ### [SNYK-OS-8006](#snyk-os-8006)
+<a id="#SNYK-OS-8006"></a>
 
 **No default image found in repository**
 
@@ -2211,6 +2401,7 @@ Unable to find the default image. Please try again, and contact Snyk support if 
 ## SBOM Export
 
 ### [SNYK-OS-9000](#snyk-os-9000)
+<a id="#SNYK-OS-9000"></a>
 
 **SBOM generation export server error**
 
@@ -2219,6 +2410,7 @@ An unexpected error occurred during the SBOM generation. Review the request, the
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-9001](#snyk-os-9001)
+<a id="#SNYK-OS-9001"></a>
 
 **Dependency graph error**
 
@@ -2227,6 +2419,7 @@ An unexpected dependency graph error occurred. Review the request, then try agai
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-9002](#snyk-os-9002)
+<a id="#SNYK-OS-9002"></a>
 
 **Error parsing dependency graph**
 
@@ -2235,6 +2428,7 @@ The dependency graph cannot be parsed due to an unexpected error. Review the req
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-9003](#snyk-os-9003)
+<a id="#SNYK-OS-9003"></a>
 
 **SBOM not supported due to project type**
 
@@ -2243,6 +2437,7 @@ Only SBOMs for Snyk Open Source or Snyk Container projects are supported.
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-OS-9004](#snyk-os-9004)
+<a id="#SNYK-OS-9004"></a>
 
 **SBOM not supported**
 
@@ -2251,6 +2446,7 @@ Only SBOMs for open source projects are supported (Snyk Open Source).
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-OS-9005](#snyk-os-9005)
+<a id="#SNYK-OS-9005"></a>
 
 **Dependency graph request cannot be processed**
 
@@ -2259,6 +2455,7 @@ The server cannot process the request due to incomplete data. Review the request
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-OS-9006](#snyk-os-9006)
+<a id="#SNYK-OS-9006"></a>
 
 **Authorization failed due to missing API token**
 
@@ -2271,6 +2468,7 @@ The API token is misconfigured or expired. Configure or generate the API token, 
 * [https://docs.snyk.io/snyk-api-info/revoking-and-regenerating-snyk-api-tokens](https://docs.snyk.io/snyk-api-info/revoking-and-regenerating-snyk-api-tokens)
 
 ### [SNYK-OS-9007](#snyk-os-9007)
+<a id="#SNYK-OS-9007"></a>
 
 **Client request cannot be processed**
 
@@ -2279,6 +2477,7 @@ The body of the request is empty. Review the request, then try again.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OS-9008](#snyk-os-9008)
+<a id="#SNYK-OS-9008"></a>
 
 **Invalid dependency graph**
 
@@ -2291,6 +2490,7 @@ The supplied dependency graph was not valid. Review the request, then try again.
 ## Open Source Unmanaged
 
 ### [SNYK-OSJVM-001](#snyk-osjvm-001)
+<a id="#SNYK-OSJVM-001"></a>
 
 **Maven search service unavailable**
 
@@ -2304,6 +2504,7 @@ The upstream Maven search service is not available.
 * [https://status.maven.org](https://status.maven.org)
 
 ### [SNYK-OSJVM-002](#snyk-osjvm-002)
+<a id="#SNYK-OSJVM-002"></a>
 
 **SHA1 not found**
 
@@ -2320,6 +2521,7 @@ Unable to find the coordinates for the provided SHA1. Please verify the data you
 ## PURL Vulnerabilities
 
 ### [SNYK-OSSI-1040](#snyk-ossi-1040)
+<a id="#SNYK-OSSI-1040"></a>
 
 **Your Organisation is not authorized to perform this action**
 
@@ -2328,6 +2530,7 @@ You likely don’t have access to the features in Beta. To get access, you can r
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
 ### [SNYK-OSSI-1050](#snyk-ossi-1050)
+<a id="#SNYK-OSSI-1050"></a>
 
 **Authorization request failure**
 
@@ -2336,6 +2539,7 @@ Unexpected error when authenticating. Try again, and if the error still occurs, 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OSSI-2010](#snyk-ossi-2010)
+<a id="#SNYK-OSSI-2010"></a>
 
 **Invalid purl**
 
@@ -2348,6 +2552,7 @@ Make sure that the purl is valid. See the Package URL specification link for fur
 * [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
 
 ### [SNYK-OSSI-2011](#snyk-ossi-2011)
+<a id="#SNYK-OSSI-2011"></a>
 
 **Namespace not specified**
 
@@ -2360,6 +2565,7 @@ You have requested a package type that requires a namespace (e.g. maven group id
 * [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
 
 ### [SNYK-OSSI-2020](#snyk-ossi-2020)
+<a id="#SNYK-OSSI-2020"></a>
 
 **Unsupported ecosystem**
 
@@ -2368,6 +2574,7 @@ The package type is not supported. Check the List issues for a package in Snyk A
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OSSI-2021](#snyk-ossi-2021)
+<a id="#SNYK-OSSI-2021"></a>
 
 **Purl components required**
 
@@ -2376,6 +2583,7 @@ A list of components of the purl spec is required. The purl did not specify all 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OSSI-2022](#snyk-ossi-2022)
+<a id="#SNYK-OSSI-2022"></a>
 
 **Unsupported purl components**
 
@@ -2384,6 +2592,7 @@ Remove the unsupported component and retry the request.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OSSI-2030](#snyk-ossi-2030)
+<a id="#SNYK-OSSI-2030"></a>
 
 **Requested package not found**
 
@@ -2392,6 +2601,7 @@ The package you specified in the purl cannot be found in the vulnerability datab
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-OSSI-2031](#snyk-ossi-2031)
+<a id="#SNYK-OSSI-2031"></a>
 
 **Vulnerability service not available**
 
@@ -2400,6 +2610,7 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 **HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
 
 ### [SNYK-OSSI-2032](#snyk-ossi-2032)
+<a id="#SNYK-OSSI-2032"></a>
 
 **This issue is unexpected and the service should recover quickly if not please contact support**
 
@@ -2408,6 +2619,7 @@ An unexpected error occurred. Please try again, and if you continue to experienc
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OSSI-2033](#snyk-ossi-2033)
+<a id="#SNYK-OSSI-2033"></a>
 
 **This issue is unexpected and the service should recover quickly if not please contact support**
 
@@ -2416,6 +2628,7 @@ An unexpected error occurred with the vulnerability service. Please try again, a
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OSSI-2040](#snyk-ossi-2040)
+<a id="#SNYK-OSSI-2040"></a>
 
 **Request not processed due to unexpected error**
 
@@ -2424,6 +2637,7 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OSSI-2041](#snyk-ossi-2041)
+<a id="#SNYK-OSSI-2041"></a>
 
 **Invalid pagination parameters**
 
@@ -2432,6 +2646,7 @@ The pagination limit is > 1 and ≤ 1000, and the offset is ≥0.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OSSI-2042](#snyk-ossi-2042)
+<a id="#SNYK-OSSI-2042"></a>
 
 **purls exceed limit**
 
@@ -2440,6 +2655,7 @@ The number of purls sent in the request exceeds the limit of 1000 set by the ser
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OSSI-2043](#snyk-ossi-2043)
+<a id="#SNYK-OSSI-2043"></a>
 
 **Number of issues exceeds limit**
 
@@ -2448,6 +2664,7 @@ The number of issues found for the provided purls exceeds the limit defined by t
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OSSI-2044](#snyk-ossi-2044)
+<a id="#SNYK-OSSI-2044"></a>
 
 **Expected distro to be present**
 
@@ -2460,6 +2677,7 @@ The given Package URL does not have a required distro qualifier.
 * [https://docs.snyk.io/scan-containers/how-snyk-container-works/supported-operating-system-distributions#debian](https://docs.snyk.io/scan-containers/how-snyk-container-works/supported-operating-system-distributions#debian)
 
 ### [SNYK-OSSI-2045](#snyk-ossi-2045)
+<a id="#SNYK-OSSI-2045"></a>
 
 **Unsupported Debian distro**
 
@@ -2468,6 +2686,7 @@ This Debian distro is currently not supported.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OSSI-2046](#snyk-ossi-2046)
+<a id="#SNYK-OSSI-2046"></a>
 
 **Expected namespace to be present**
 
@@ -2476,6 +2695,7 @@ The given Package URL does not have a required namespace.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OSSI-2047](#snyk-ossi-2047)
+<a id="#SNYK-OSSI-2047"></a>
 
 **Unsupported vendor**
 
@@ -2484,6 +2704,7 @@ The given Package URL does not contain a supported vendor. Please use one of the
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OSSI-2048](#snyk-ossi-2048)
+<a id="#SNYK-OSSI-2048"></a>
 
 **Unsupported Alpine distro**
 
@@ -2496,6 +2717,7 @@ This Alpine distro is currently not supported.
 ## Open Source Project Issues
 
 ### [SNYK-OSSI-OSPI-1001](#snyk-ossi-ospi-1001)
+<a id="#SNYK-OSSI-OSPI-1001"></a>
 
 **Invalid request**
 
@@ -2504,6 +2726,7 @@ Check the body of your request and try again.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OSSI-OSPI-1002](#snyk-ossi-ospi-1002)
+<a id="#SNYK-OSSI-OSPI-1002"></a>
 
 **Unable to return valid API response**
 
@@ -2512,6 +2735,7 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OSSI-OSPI-2001](#snyk-ossi-ospi-2001)
+<a id="#SNYK-OSSI-OSPI-2001"></a>
 
 **Failed to process data**
 
@@ -2520,6 +2744,7 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OSSI-OSPI-3001](#snyk-ossi-ospi-3001)
+<a id="#SNYK-OSSI-OSPI-3001"></a>
 
 **Failed to store issue data**
 
@@ -2528,6 +2753,7 @@ Check inputs and then try again. If the error still occurs, contact support.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OSSI-OSPI-4001](#snyk-ossi-ospi-4001)
+<a id="#SNYK-OSSI-OSPI-4001"></a>
 
 **Internal server error**
 
@@ -2540,6 +2766,7 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 ## Open Source Project Snapshots
 
 ### [SNYK-OSSI-OSPSS-1001](#snyk-ossi-ospss-1001)
+<a id="#SNYK-OSSI-OSPSS-1001"></a>
 
 **Invalid request**
 
@@ -2548,6 +2775,7 @@ Check the body of your request and try again.
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-OSSI-OSPSS-1002](#snyk-ossi-ospss-1002)
+<a id="#SNYK-OSSI-OSPSS-1002"></a>
 
 **Unable to return valid API response**
 
@@ -2556,6 +2784,7 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OSSI-OSPSS-2001](#snyk-ossi-ospss-2001)
+<a id="#SNYK-OSSI-OSPSS-2001"></a>
 
 **Failed to process data**
 
@@ -2564,6 +2793,7 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OSSI-OSPSS-3001](#snyk-ossi-ospss-3001)
+<a id="#SNYK-OSSI-OSPSS-3001"></a>
 
 **Failed to store snapshot data**
 
@@ -2572,6 +2802,7 @@ Check inputs and then try again. If the error still occurs, contact support.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OSSI-OSPSS-4001](#snyk-ossi-ospss-4001)
+<a id="#SNYK-OSSI-OSPSS-4001"></a>
 
 **Internal server error**
 
@@ -2584,6 +2815,7 @@ This issue is unexpected, and the service will recover shortly. If the error sti
 ## Policies
 
 ### [SNYK-POLICY-0001](#snyk-policy-0001)
+<a id="#SNYK-POLICY-0001"></a>
 
 **Unable to apply a policy with an invalid configuration**
 
@@ -2601,6 +2833,7 @@ You may be able to fix the policy and try again.
 ## PRChecks
 
 ### [SNYK-PR-CHECK-0001](#snyk-pr-check-0001)
+<a id="#SNYK-PR-CHECK-0001"></a>
 
 **Error reading manifest**
 
@@ -2621,6 +2854,7 @@ Ultimately, you should contact support@snyk.io if the issue persists
 * [https://support.snyk.io/s/article/Failed-to-read-manifest-file---Commit-Status](https://support.snyk.io/s/article/Failed-to-read-manifest-file---Commit-Status)
 
 ### [SNYK-PR-CHECK-0002](#snyk-pr-check-0002)
+<a id="#SNYK-PR-CHECK-0002"></a>
 
 **Manifest not found**
 
@@ -2640,6 +2874,7 @@ As during the original import, Snyk scans the project and locates the manifest f
 * [https://support.snyk.io/s/article/Manifest-not-found](https://support.snyk.io/s/article/Manifest-not-found)
 
 ### [SNYK-PR-CHECK-0003](#snyk-pr-check-0003)
+<a id="#SNYK-PR-CHECK-0003"></a>
 
 **Rate limit hit while testing project**
 
@@ -2650,6 +2885,7 @@ If you receive any of these errors, try re-running the tests, by closing and reo
 **HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
 ### [SNYK-PR-CHECK-0004](#snyk-pr-check-0004)
+<a id="#SNYK-PR-CHECK-0004"></a>
 
 **Out of Sync Error**
 
@@ -2666,6 +2902,7 @@ In some cases, it may be necessary to delete the node_modules folder and the pac
 * [https://support.snyk.io/s/article/Out-of-sync-manifest--lockfile-in-the-project](https://support.snyk.io/s/article/Out-of-sync-manifest--lockfile-in-the-project)
 
 ### [SNYK-PR-CHECK-0005](#snyk-pr-check-0005)
+<a id="#SNYK-PR-CHECK-0005"></a>
 
 **Failed determining project target**
 
@@ -2678,6 +2915,7 @@ Ultimately, you should contact support@snyk.io if the issue persists.
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-PR-CHECK-0006](#snyk-pr-check-0006)
+<a id="#SNYK-PR-CHECK-0006"></a>
 
 **Failed to complete the test**
 
@@ -2694,6 +2932,7 @@ Ultimately, you should contact support@snyk.io if the issue persists.
 * [https://support.snyk.io/s/article/Unknown-PR-test-error](https://support.snyk.io/s/article/Unknown-PR-test-error)
 
 ### [SNYK-PR-CHECK-0007](#snyk-pr-check-0007)
+<a id="#SNYK-PR-CHECK-0007"></a>
 
 **Failed to fetch merge commit SHA**
 
@@ -2704,6 +2943,7 @@ Try closing and then reopening the pull request, or you can Skip the Pull Reques
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-PR-CHECK-0008](#snyk-pr-check-0008)
+<a id="#SNYK-PR-CHECK-0008"></a>
 
 **Merge conflict error**
 
@@ -2718,6 +2958,7 @@ To resolve this, you might need to figure out all the merge conflicts on your SC
 * [https://support.snyk.io/s/article/Merge-conflict-error](https://support.snyk.io/s/article/Merge-conflict-error)
 
 ### [SNYK-PR-CHECK-0009](#snyk-pr-check-0009)
+<a id="#SNYK-PR-CHECK-0009"></a>
 
 **Failed to detect issues**
 
@@ -2732,6 +2973,7 @@ Occasionally you might see a "Failed to detect issues" commit status which may b
 * [https://support.snyk.io/s/article/Failed-to-detect-issues](https://support.snyk.io/s/article/Failed-to-detect-issues)
 
 ### [SNYK-PR-CHECK-0010](#snyk-pr-check-0010)
+<a id="#SNYK-PR-CHECK-0010"></a>
 
 **No valid credentials to process PR check**
 
@@ -2742,6 +2984,7 @@ If this error occurs, please ensure your integration and credentials are correct
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
 ### [SNYK-PR-CHECK-0011](#snyk-pr-check-0011)
+<a id="#SNYK-PR-CHECK-0011"></a>
 
 **Failed to generate a commit status**
 
@@ -2756,6 +2999,7 @@ Occasionally you might see a "Failed to generate a commit status" which may bloc
 ## SBOM Test
 
 ### [SNYK-SBOM-0001](#snyk-sbom-0001)
+<a id="#SNYK-SBOM-0001"></a>
 
 **SBOM test error**
 
@@ -2764,6 +3008,7 @@ An unexpected error occurred. Review the request, then try again. If the error p
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-SBOM-0002](#snyk-sbom-0002)
+<a id="#SNYK-SBOM-0002"></a>
 
 **Organization ID mismatch**
 
@@ -2775,6 +3020,7 @@ Ensure the organization ID used to make the request is the same as the the organ
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-SBOM-0003](#snyk-sbom-0003)
+<a id="#SNYK-SBOM-0003"></a>
 
 **Unable to find SBOM test**
 
@@ -2783,6 +3029,7 @@ Snyk was unable to find the requested SBOM test.
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-SBOM-0004](#snyk-sbom-0004)
+<a id="#SNYK-SBOM-0004"></a>
 
 **SBOM test failed**
 
@@ -2793,6 +3040,7 @@ This error occurs when results for a failed SBOM test are being requested.
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-SBOM-0005](#snyk-sbom-0005)
+<a id="#SNYK-SBOM-0005"></a>
 
 **SBOM test results still pending**
 
@@ -2803,6 +3051,7 @@ This error occurs when the results for an SBOM test have been requested, but the
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 ### [SNYK-SBOM-0006](#snyk-sbom-0006)
+<a id="#SNYK-SBOM-0006"></a>
 
 **Unknown SBOM format**
 
@@ -2817,6 +3066,7 @@ Provide an SBOM document with a supported format.
 * [https://docs.snyk.io/snyk-cli/commands/sbom-test](https://docs.snyk.io/snyk-cli/commands/sbom-test)
 
 ### [SNYK-SBOM-0007](#snyk-sbom-0007)
+<a id="#SNYK-SBOM-0007"></a>
 
 **Unable to process SBOM input**
 
@@ -2829,6 +3079,7 @@ Snyk is unable to decode the SBOM file. Provide a valid SBOM document and try ag
 * [https://docs.snyk.io/snyk-cli/commands/sbom-test](https://docs.snyk.io/snyk-cli/commands/sbom-test)
 
 ### [SNYK-SBOM-0008](#snyk-sbom-0008)
+<a id="#SNYK-SBOM-0008"></a>
 
 **SBOM format not supported**
 
@@ -2841,6 +3092,7 @@ Provide a supported format of the SBOM document and try again.
 * [https://docs.snyk.io/snyk-cli/commands/sbom-test](https://docs.snyk.io/snyk-cli/commands/sbom-test)
 
 ### [SNYK-SBOM-0009](#snyk-sbom-0009)
+<a id="#SNYK-SBOM-0009"></a>
 
 **SBOM analysis failed**
 
@@ -2849,6 +3101,7 @@ Snyk was unable to process the provided SBOM input and is unable to scan it for 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-SBOM-0010](#snyk-sbom-0010)
+<a id="#SNYK-SBOM-0010"></a>
 
 **No testable packages found**
 
@@ -2861,6 +3114,7 @@ The SBOM document you provided does not contain any packages supported by Snyk v
 ## SCM
 
 ### [SNYK-SCM-0001](#snyk-scm-0001)
+<a id="#SNYK-SCM-0001"></a>
 
 **Integration type not supported**
 
@@ -2873,6 +3127,7 @@ The integration you provided does not support SCM repository access.
 * [https://docs.snyk.io/scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations](https://docs.snyk.io/scm-ide-and-ci-cd-workflow-and-integrations/snyk-scm-integrations)
 
 ### [SNYK-SCM-0002](#snyk-scm-0002)
+<a id="#SNYK-SCM-0002"></a>
 
 **Revision cannot be resolved**
 
@@ -2881,6 +3136,7 @@ Snyk was unable to resolve the SCM revision you provided. Provide a valid revisi
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 ### [SNYK-SCM-0003](#snyk-scm-0003)
+<a id="#SNYK-SCM-0003"></a>
 
 **Integration authentication failed**
 
@@ -2889,6 +3145,7 @@ Snyk was unable to authenticate with your SCM provider. Ensure you are using val
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
 ### [SNYK-SCM-0004](#snyk-scm-0004)
+<a id="#SNYK-SCM-0004"></a>
 
 **Integration authorization failed**
 
@@ -2897,6 +3154,7 @@ Snyk was unable to authorize with your SCM provider. If your Organization has SA
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
 ### [SNYK-SCM-0005](#snyk-scm-0005)
+<a id="#SNYK-SCM-0005"></a>
 
 **Too many files**
 
@@ -2907,6 +3165,7 @@ To reduce the file count, use a `.snyk` file to ignore certain directories or fi
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-SCM-0006](#snyk-scm-0006)
+<a id="#SNYK-SCM-0006"></a>
 
 **Repository size too large**
 
@@ -2921,6 +3180,7 @@ To reduce the overall size of the repository, use a a `.snyk` file to ignore cer
 ## Target
 
 ### [SNYK-TARGET-0001](#snyk-target-0001)
+<a id="#SNYK-TARGET-0001"></a>
 
 **Target not found**
 
@@ -2933,6 +3193,7 @@ Snyk was unable to resolve the imported target. Ensure that Snyk created the tar
 * [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
 ### [SNYK-TARGET-0002](#snyk-target-0002)
+<a id="#SNYK-TARGET-0002"></a>
 
 **No unique target found**
 
@@ -2944,4 +3205,3 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 
 * [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
 
---- Generated at 2025-08-18T08:58:10.073Z

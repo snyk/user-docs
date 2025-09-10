@@ -20,13 +20,7 @@ Available functions:&#x20;
 
 You can use TypeScript versions up to 4.2
 
-For TypeScript, Snyk supports npm, pnpm, Yarn as package managers, with the following versions:&#x20;
-
-* npm: `Lockfile 1`, `Lockfile 2`, `Lockfile 3`
-* pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`&#x20;
-* Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
-
-As a package registry, Snyk supports [npmjs.org](https://www.npmjs.org/).
+### Supported frameworks and libraries
 
 For TypeScript, Snyk supports the following frameworks and libraries:
 
@@ -101,6 +95,16 @@ For TypeScript, Snyk supports the following frameworks and libraries:
 * WebCryptoAPI - Comprehensive&#x20;
 * xpath - Comprehensive&#x20;
 * yargs - Comprehensive
+
+### Supported package managers and registries
+
+For TypeScript, Snyk supports npm, pnpm, Yarn as package managers, with the following versions:&#x20;
+
+* npm: `Lockfile 1`, `Lockfile 2`, `Lockfile 3`
+* pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`&#x20;
+* Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
+
+As a package registry, Snyk supports [npmjs.org](https://www.npmjs.org/).
 
 ## TypeScript for Snyk Code
 
