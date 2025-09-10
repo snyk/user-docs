@@ -46250,7 +46250,7 @@
     },
     "/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integrations/{integration_id}": {
       "delete": {
-        "description": "Deletes an existing Broker connection for an deployment\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`\n\n- `Edit Tenant Details (tenant.edit)`",
+        "description": "Deletes an existing Broker connection for an deployment\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
         "operationId": "deleteBrokerConnectionIntegration",
         "parameters": [
           {
