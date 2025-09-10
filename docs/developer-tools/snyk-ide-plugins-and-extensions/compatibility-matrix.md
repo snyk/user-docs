@@ -4,6 +4,10 @@ This matrix shows the compatible CLI version range for each IDE plugin version r
 
 | Release Date | IDE Plugin                        | Compatible CLIs       |
 | ------------ | --------------------------------- | --------------------- |
+| 2025-09-02   | VSCode v2.24.0                    | v1.1298.0 - v1.1299.0 |
+| 2025-09-02   | Eclipse v3.4.0 (v20250902.141917) | v1.1298.0 - v1.1299.0 |
+| 2025-09-02   | Visual Studio 2.4.0               | v1.1298.0 - v1.1299.0 |
+| 2025-09-02   | JetBrains 2.16.0                  | v1.1298.0 - v1.1299.0 |
 | 2025-07-29   | VSCode v2.23.1                    | v1.1298.0 - v1.1299.0 |
 | 2025-07-17   | JetBrains 2.15.0                  | v1.1298.0 - v1.1299.0 |
 | 2025-07-17   | Visual Studio 2.3.0               | v1.1298.0 - v1.1299.0 |
