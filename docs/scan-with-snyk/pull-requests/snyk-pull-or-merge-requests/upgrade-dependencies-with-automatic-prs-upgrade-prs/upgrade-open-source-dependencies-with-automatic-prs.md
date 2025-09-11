@@ -39,9 +39,9 @@ Automatic dependency upgrade PRs are available only for the following SCM integr
 Follow these steps to configure automatic upgrade PRs for an entire Organization:
 
 1. On the Snyk Web UI, open the required Organization.
-2. Navigate to **Settings** > **Organization Settings** > **Integrations,** find your configured SCM, and click **Edit settings** at the end of the row for that integration.
+2. Navigate to **Settings** > **Organization settings**. Find and click your configured SCM in the **Integrations** sidebar.
 
-<figure><img src="../../../../.gitbook/assets/settings-integrations-source-control-github.png" alt="Editing integration settings"><figcaption><p>Editing integration settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/edit_integration_settings.png" alt=""><figcaption><p>Edit integration settings</p></figcaption></figure>
 
 3. On the **Settings** page of the selected integration, navigate to the **Automatic dependency upgrade PRs** section.
 4. In this section, perform the following actions:
