@@ -73,6 +73,4 @@ See [Manage users in a Group](manage-users-in-a-group.md) for details.
 
 Select **Settings** to view and manage Group settings.
 
-<figure><img src="../../../.gitbook/assets/group-settings.png" alt=""><figcaption><p>Listed Group Settings for Enterprise plan users</p></figcaption></figure>
-
 See [Manage settings](../group-and-organization-settings.md) for details.

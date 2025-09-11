@@ -52,7 +52,7 @@ To navigate to the Group level notification settings:
 2. Select **Settings**.
 3. Select **Notifications**.
 
-<figure><img src="../.gitbook/assets/notifications-group-settings.png" alt=""><figcaption><p>Notification settings at the Group level</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/settings_notifications.png" alt=""><figcaption><p>Notification settings at the Group level</p></figcaption></figure>
 
 #### Group defaults for issue alert emails
 

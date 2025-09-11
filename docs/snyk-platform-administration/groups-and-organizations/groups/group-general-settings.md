@@ -2,7 +2,7 @@
 
 To view and modify settings for your Group, navigate to **Settings** > **General**.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2023-04-26 at 12.57.49.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure></div>
+<figure><img src="../../../.gitbook/assets/settings_group_settings_general (1).png" alt=""><figcaption><p>Group settings</p></figcaption></figure>
 
 In the Group general settings, you can view and modify the following:
 

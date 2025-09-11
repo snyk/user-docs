@@ -92,7 +92,7 @@ The example that follows shows a fix pull request opened by Snyk.
 
 To review and update the automatic fix pull request settings:
 
-1. In Snyk, navigate to **Settings** > **Integrations** > **Source control** > **GitHub Enterprise** > **Edit Settings**.
+1. In Snyk, navigate to **Settings** > **Integrations** > **GitHub Enterprise**.
 2. Scroll to the **Automatic fix pull requests** section, then select options as required:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-28 at 15.41.56.png" alt="Automatic pull requests settings"><figcaption><p>Automatic pull request settings</p></figcaption></figure>
@@ -105,9 +105,10 @@ The following example shows how Snyk pull request checks appear on the pull requ
 
 <figure><img src="../../../.gitbook/assets/pr_testing-14july2022.png" alt="Pull request checks shown in GitHub Enterprise"><figcaption><p>Pull request checks shown in GitHub Enterprise</p></figcaption></figure>
 
-To review and adjust the pull request test settings: In Snyk, navigate to Organization **Settings** > **Integrations** > **Source control** > **GitHub Enterprise**, and select **Edit Settings**.
+To review and adjust the pull request test settings:
 
-1. Scroll to **Snyk PR status checks**; see [Configure PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md) for details.
+1. Navigate to Organization **Settings** > **Integrations** > **GitHub Enterprise**.
+2. Scroll to **Snyk PR status checks**; see [Configure PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md) for details.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-28 at 15.43.34.png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
 
@@ -127,7 +128,7 @@ Users can either be manually specified, and all will be assigned, or automatical
 
 #### **Enable Auto-assign for all Projects in the GitHub Enterprise integration**
 
-To configure the Auto-assign settings for all the Projects from an imported private repository, go to the Github integration settings using Organization **Settings** > **Integrations** > **Source control** > **GitHub** and select **Enable pull request assignees**.&#x20;
+To configure the Auto-assign settings for all the Projects from an imported private repository, go to the Github integration settings using Organization **Settings** > **Integrations** > **GitHub** and select **Enable pull request assignees**.&#x20;
 
 You can then choose to assign PRs to the last user to change the manifest file or specified contributors.
 

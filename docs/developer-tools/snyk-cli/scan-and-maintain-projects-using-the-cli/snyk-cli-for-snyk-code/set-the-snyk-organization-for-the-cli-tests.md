@@ -2,13 +2,13 @@
 
 If you have several Organizations in your Snyk account, before you test your code using the CLI, specify which Snyk Organization will be used for the test count.
 
-You can find your available CLI test count on the Organization **Settings** page -> **Usage** tab -> **Test Usage** section -> **Snyk Code** field:
+You can find your available CLI test count on the Organization **Settings** page > **Plan and billing** > **Usage** tab > **Test Usage** section > **Snyk Code** field:
 
-<figure><img src="../../../../.gitbook/assets/snyk-code-usage.png" alt="Snyk Code allowed test usage"><figcaption><p>Snyk Code allowed test usage</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/plan_and_billing_test_usage.png" alt=""><figcaption><p>Snyk Code test usage</p></figcaption></figure>
 
 By default, the CLI runs tests under your **Preferred Organization**, as defined in your **Account settings:**
 
-<figure><img src="../../../../.gitbook/assets/snyk-pref-org.png" alt="Preferred Organization in Snyk Account settings"><figcaption><p>Preferred Organization in Snyk Account settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/set_snyk_org_CLI_tests_account_settings.png" alt=""><figcaption><p>Preferred Organization in Snyk Account settings</p></figcaption></figure>
 
 You can [change your **Preferred Organization**](../../../../snyk-platform-administration/groups-and-organizations/organizations/create-and-delete-organizations.md) or set another Organization for the CLI tests via the CLI.
 
@@ -37,7 +37,7 @@ Follow these steps to find an Organization ID and internal name:
   * When using the internal name for setting the Organization for the CLI tests, copy the name from the **Settings** page. The internal name is always written in lowercase letters.
 * **ID:** appears in the **Organization ID** section. You can use the **Copy** button to copy the ID to the CLI.
 
-<figure><img src="../../../../.gitbook/assets/snyk-org-info.png" alt="Organization name and ID"><figcaption><p>Organization name and ID</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings_general_org_name_id.png" alt=""><figcaption><p>Organization name and ID</p></figcaption></figure>
 
 ## Set the default Organization globally for CLI tests&#x20;
 
