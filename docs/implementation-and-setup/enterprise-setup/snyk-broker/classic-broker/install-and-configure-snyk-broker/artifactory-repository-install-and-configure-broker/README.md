@@ -6,20 +6,20 @@
 Integration with Artifactory Repository is available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Before installing, **review the general instructions** for the installation method you plan to use, [Helm](../install-and-configure-broker-using-helm.md) or [Docker](../install-and-configure-broker-using-docker.md).
+Before installing, review the general instructions for the installation method you plan to use, [Helm](../install-and-configure-broker-using-helm.md) or [Docker](../install-and-configure-broker-using-docker.md).
 
-The **prerequisites** follow.
+The prerequisites follow.
 
 Before installing the Snyk Artifactory Repository Broker, ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
 
 You must have Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 
-For convenience, instructions to obtain or generate the Broker token follow. When you are done, **continue** with the steps to install using [Docker](artifactory-repository-install-and-configure-using-docker.md) or [Helm](artifactory-repository-install-and-configure-using-helm.md).
+For convenience, instructions to obtain or generate the Broker token follow. When you are done, continue with the steps to install using [Docker](artifactory-repository-install-and-configure-using-docker.md) or [Helm](artifactory-repository-install-and-configure-using-helm.md).
 
 ## Obtain Broker token for Artifactory Repository setup
 
-1. Navigate to **Settings** > **Integrations > Package Repositories > Artifactory**.
-2. Enter the URL of your Artifactory instance, this **must** end with **/artifactory**.
+1. Navigate to **Settings** > **Add integrations** > **Package Repositories > Artifactory**.
+2. Enter the URL of your Artifactory instance, this must end with /artifactory.
 3. Enter your username and password.
 4. Select **Save**.
 
