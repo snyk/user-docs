@@ -11,7 +11,7 @@ Available integrations:
 * SCM import
 * CLI and IDE: test or monitor your app
 
-Available functions:&#x20;
+Available functions:
 
 * Test your app's SBOM using `pkg:swift`, `pkg:cocoapods`
 * Test your app's packages using `pkg:swift`, `pkg:cocoapods`
@@ -20,33 +20,33 @@ Available functions:&#x20;
 
 ### Supported frameworks and libraries
 
-For Swift and Objective-C, the following frameworks and libraries are supported:&#x20;
+For Swift and Objective-C, the following frameworks and libraries are supported:
 
-* Swift standard library - Comprehensive&#x20;
-* Foundation- Comprehensive&#x20;
-* Appkit - Comprehensive&#x20;
-* Swift UI - Comprehensive&#x20;
-* UI Kit - Comprehensive&#x20;
-* Asynchttpclient - Comprehensive&#x20;
-* Commoncrypt - Comprehensive&#x20;
-* Commoncrypto - Comprehensive&#x20;
-* Cryptokit - Comprehensive&#x20;
-* Cryptoswift - Comprehensive&#x20;
-* Cryptor - Comprehensive&#x20;
-* AlamoFire - Comprehensive&#x20;
-* Filekit - Comprehensive&#x20;
-* google-gemini/generative-ai-swift - Comprehensive&#x20;
-* MacPaw/OpenAI - Comprehensive&#x20;
-* dylanshine/openai-kit - Comprehensive&#x20;
-* Pathos - Comprehensive&#x20;
-* SQLite3 - Comprehensive&#x20;
-* Webkit - Comprehensive&#x20;
-* SwiftCLI - Comprehensive&#x20;
-* ShellOut - Comprehensive&#x20;
-* SwiftShell - Comprehensive&#x20;
-* Subprocess - Comprehensive&#x20;
+* Swift standard library - Comprehensive
+* Foundation- Comprehensive
+* Appkit - Comprehensive
+* Swift UI - Comprehensive
+* UI Kit - Comprehensive
+* Asynchttpclient - Comprehensive
+* Commoncrypt - Comprehensive
+* Commoncrypto - Comprehensive
+* Cryptokit - Comprehensive
+* Cryptoswift - Comprehensive
+* Cryptor - Comprehensive
+* AlamoFire - Comprehensive
+* Filekit - Comprehensive
+* google-gemini/generative-ai-swift - Comprehensive
+* MacPaw/OpenAI - Comprehensive
+* dylanshine/openai-kit - Comprehensive
+* Pathos - Comprehensive
+* SQLite3 - Comprehensive
+* Webkit - Comprehensive
+* SwiftCLI - Comprehensive
+* ShellOut - Comprehensive
+* SwiftShell - Comprehensive
+* Subprocess - Comprehensive
 * Shout - Comprehensive
-* Swiftline - Comprehensive&#x20;
+* Swiftline - Comprehensive
 * RNCryptor - Comprehensive
 
 ### Supported package managers and registries
@@ -74,10 +74,10 @@ For Swift with Snyk Open Source, you can use Swift 3.0 or higher.
 
 For Swift and Objective-C with Snyk Open Source, the following file formats are supported:
 
-* For CocoaPods: `podfile`, `podfile.lock`,&#x20;
+* For CocoaPods: `podfile`, `podfile.lock`,
 * For Swift: `package.swift`
 
-For Swift and Objective-C with Snyk Open Source, Snyk provides support for package managers as follows:&#x20;
+For Swift and Objective-C with Snyk Open Source, Snyk provides support for package managers as follows:
 
 * For CocoaPods: CLI support, Git support, License scanning
 * For Swift Package Manager: CLI support
@@ -88,10 +88,10 @@ For Swift and Objective-C with Snyk Open Source, Snyk provides support for packa
 Snyk supports only Projects using Swift 3.0 or higher.
 {% endhint %}
 
-A `Package.swift` file must be present for the Snyk CLI to discover the Project.\
-\
-Snyk uses the `swift package show-dependencies` command to build the dependency graph.\
-\
+In order for Snyk to discover a Project, a `Package.swift` file must be present. Also, Snyk uses the `swift package show-dependencies` command to build the dependency graph.
+
+When the .build folder of your Project is not present - in a pipeline, for example, it is possible that Snyk takes longer to scan your Swift Projects. When the CLI runs the command `swift package show-dependencies`, Swift must resolve the dependencies as part of this process, which can add to the overall time it takes Snyk to complete the scan. Therefore, ensuring that you have your Projects built first and that the .build folder is present can speed up the CLI processing time.
+
 Swift Package Manager supports pre-processing and post-processing. For post-processing, custom commands can add extra dependencies. Detecting such dependencies is not supported.
 
 It is not possible to scan Swift Package Manager Projects using Git import.
@@ -110,7 +110,7 @@ The following summarizes support for Git import and testing.
 
 Available features:
 
-* License scanning (CocoaPods)&#x20;
+* License scanning (CocoaPods)
 * Reports
 
 {% hint style="info" %}
@@ -119,6 +119,3 @@ The **Snyk Fix PR** feature is not available for Swift and Objective-C. This mea
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**
 {% endhint %}
-
-
-
