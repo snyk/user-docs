@@ -2316,6 +2316,19 @@ Cyclic dependency detected in lockfile.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
+### [SNYK-OS-SETTINGS-0001](#snyk-os-settings-0001)
+<a id="#SNYK-OS-SETTINGS-0001"></a>
+
+**Reachability settings not enabled**
+
+The reachability settings are not enabled for your Organization. You can enable them from the Setttings page or you can switch to an Organization where the reachability settings are already enabled.
+
+**HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
+
+**Help Links:**
+
+* [https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/reachability-analysis](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/reachability-analysis)
+
 ***
 
 ## Builds
