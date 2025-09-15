@@ -71,6 +71,18 @@ Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, reg
 
 Use to display the human-readable test output using stdout and, at the same time, save the SARIF format output to a file.
 
+### `--report`
+
+Share CLI results with the Snyk Web UI.
+
+```
+snyk code test --report --project-name="<PROJECT_NAME>"
+```
+
+- Project name must be in double quotation marks. Single quotes or missing quotes will result in an error.
+- Project name must contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (_), and square brackets ([]).
+- There is a temporary limit of 6MB for the resulting payload. If the SARIF output is larger than 6MB, the process will not complete.
+
 ### `--severity-threshold=<low|medium|high>`
 
 Report only vulnerabilities at the specified level or higher.
