@@ -90,7 +90,16 @@ paths:
                       id: ''
                       username: ''
                       email: ''
-                      orgs: []
+                      orgs: [
+                        {
+                          name: '',
+                          id: '',
+                          group: {
+                            name: '',
+                            id: ''
+                          }
+                        }
+                      ]
         '401':
           description: '`API_KEY` is invalid.'
           headers: {}
@@ -14017,9 +14026,27 @@ components:
           description: The email of the user.
         orgs:
           type: array
-          items:
-            type: string
           description: The organizations that the user belongs to.
+          items:
+            type: object
+            description: An organization that the user belongs to.
+            properties:
+              name:
+                type: string
+                description: The name of the organization.
+              id:
+                type: string
+                description: The id of the organization.
+              group:
+                type: object
+                description: The group that the organization belongs to.
+                properties:
+                  name:
+                    type: string
+                    description: The name of the group.
+                  id:
+                    type: string
+                    description: The id of the group.
 
     Getprojectcountsrequest:
       title: Getprojectcountsrequest
