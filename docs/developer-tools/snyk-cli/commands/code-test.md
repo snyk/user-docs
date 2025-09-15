@@ -81,7 +81,6 @@ snyk code test --report --project-name="<PROJECT_NAME>"
 
 - Project name must be in double quotation marks. Single quotes or missing quotes will result in an error.
 - Project name must contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (_), and square brackets ([]).
-- There is a temporary limit of 6MB for the resulting payload. If the SARIF output is larger than 6MB, the process will not complete.
 
 ### `--severity-threshold=<low|medium|high>`
 
