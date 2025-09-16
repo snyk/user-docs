@@ -32,3 +32,37 @@ helm install my-snyk-broker oci://registry-1.docker.io/snyk/snyk-universal-broke
   --set clientSecret='YOUR_CLIENT_SECRET' \
   --set credentialReferences.MY_GITHUB_TOKEN='YOUR_GITHUB_PAT' \
 ```
+
+### Secret Values
+
+Integration types may require different SCM-specific authentication parameters. When setting your credential reference environment variable in your Broker deployment you may wish to consult the following list of secret values and their required formats:
+
+| Integration Type | Parameter Name | Format |
+| ---------- | --------- | ----------- |
+| Snyk AppRisk | Checkmarx password | Alphanumeric password |
+|| SonarQube API token | API token |
+| Artifactory | Artifactory URL | `<username>:<password>@<yourdomain.artifactory.com>/artifactory` |
+| Azure Repos | Azure Repos Token | Azure Repos PAT |
+| Bitbucket Server | Bitbucket Password | Alphanumeric password |
+|| Bitbucket PAT | Bitbucket Personal Access Token |
+| Container Registry | Azure CR Password | Alphanumeric password |
+|| Artifactory CR Password (ACR) | Alphanumeric password |
+|| Docker Hub Password | Alphanumeric password |
+|| DigitalOcean CR Token | DigitalOcean PAT |
+|| Amazon Elastic Container CR Role ARN (ECR) | AWS IAM role ARN |
+|| Google Cloud Container (GCR) Password | Alphanumeric password |
+|| GitHub CR Password | Alphanumeric password |
+|| GitLab CR Password | Alphanumeric password |
+|| Google Artifact CR Password | Alphanumeric password |
+|| Harbor CR Password | Alphanumeric password |
+|| Nexus CR Password | Alphanumeric password |
+|| Quay CR Password | Alphanumeric password |
+| Github | Github Token | Github Personal Access Token |
+| Github Enterprise | Github Token | Github Personal Access Token |
+| Github Server App | Github App Client ID | Github App Client ID |
+| Github Cloud App | Github App Client ID | Github App Client ID |
+| Gitlab | Gitlab Token | Gitlab Personal Access Token |
+| Jira | Jira Password | Alphanumeric password |
+|| Jira PAT | JIRA Personal Access Token |
+| Nexus | Nexus Base URL | `https://<username>:<password>@<your.nexus.hostname>` |
+
