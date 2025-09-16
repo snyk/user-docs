@@ -8,9 +8,9 @@ Configure language settings for open source and licensing at the Organization le
 
 1. In your Snyk account, navigate to **Settings** > **Languages**..
 2. Under **Languages**, navigate to **JavaScript** and select **Edit settings.**
-3. Configure the settings based on your package manager, npm or Yarn.
+3. Configure the settings based on your package manager: npm, Yarn or pnpm.
    * **Scan and fix dev dependencies**: If this is selected, Snyk reads the `devDependencies` property on the `package.json` and reports and fixes any vulnerabilities accordingly.
-   * **Require package.json and package-lock.json/yarn.lock files to be in sync**: When this is selected, if the `package.json` and `package-lock.json`/`yarn.lock`files are out-of-sync, Snyk fails the import.
+   * **Require package.json and package-lock.json/yarn.lock files to be in sync**: When this is selected, if the `package.json` and `package-lock.json`/`yarn.lock/pnpm-lock.yaml` files are out-of-sync, Snyk fails the import.
    * **Exclude package-lock.json from being generated when fixing vulnerabilities**: If you are using private mirrors or registries, a Snyk-generated lockfile might not be appropriate for you because Snyk uses the npm registry to update the lockfile. Enterprise customers can use [package repository integrations](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/) to ensure lockfiles are updated correctly. Alternatively, this setting allows you to opt out of getting lockfiles generated for you in Snyk fix pull requests and merge requests.
 4. **Update Settings** to save changes.
 
@@ -18,6 +18,8 @@ Configure language settings for open source and licensing at the Organization le
 
 {% hint style="info" %}
 Yarn and npm workspaces are not explicitly supported in Snyk git repository integration scans.
+
+pnpm workspaces must have the `package.json`, `pnpm-lock.yaml` and `pnpm-workspace.yaml` files in the root directory. Fix and Upgrade PRs do not support lockfile update for pnpm workspaces.
 {% endhint %}
 
 Root-level `package.json`manifest files with adjacent lockfiles will be scanned as normal.&#x20;

@@ -78,9 +78,22 @@ Requires yarn.lock and package.json
 
 For more information, see the [Javascript](./) overview page.
 
-### Lerna/PNPM
+### Pnpm
 
-Not officially supported, but if configured with Yarn workspaces, you may get Snyk results from the CLI or in an IDE.
+Snyk supports pnpm versions 7 to 10 for both CLI and SCM-based scans.
+
+For Snyk to detect a Project as using pnpm, the Project must include the relevant lockfile and configuration files:
+
+* Standard pnpm Projects must contain both `package.json` and `pnpm-lock.yaml` in the same directory.
+* pnpm workspaces must include `package.json`, `pnpm-lock.yaml`, and `pnpm-workspace.yaml` in the root directory. Additionally, each package within the workspace must have its own `package.json`.
+
+If the mentioned pnpm lockfile is not present, Snyk treats the Project as an `npm` Project and scans it according to the details mentioned above, for `npm`.
+
+For more information, see [Javascript](./).
+
+### Lerna
+
+Not officially supported, but if configured with Yarn workspaces, it is possible to get Snyk results from the CLI or in an IDE.
 
 ### Unmanaged JavaScript
 
@@ -101,7 +114,7 @@ Control behavior when the lockfile and package file are in sync can be done usin
 
 ## Snyk integrations common usage patterns
 
-npm and Yarn are well-designed package managers. The main considerations for npm and Yarn packages are whether there are multiple package managers or Projects in the same repository or build and what criteria you want to apply, such as the threshold severity of critical/high for each.
+npm , Yarn and pnpm are well-designed package managers. The main considerations for npm, Yarn and pnpm packages are whether there are multiple package managers or Projects in the same repository or build and what criteria you want to apply, such as the threshold severity of critical/high for each.
 
 For source code scanning, this ecosystem is straightforward, with no special options required. Testing runs under Git and Snyk CLI with the basic features and commands.
 
