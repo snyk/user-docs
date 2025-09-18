@@ -23,7 +23,7 @@
 
 Artifactory, Nexus, npm Teams, and npm Enterprise Package Registry integrations are available to Snyk Enterprise plan users.
 
-Snyk Open Source Gatekeeper plugins integrate with Artifactory and Nexus to block builds from downloading packages with vulnerability and license issues.
+Snyk Open Source Gatekeeper plugins integrates with Artifactory to block builds from downloading packages with vulnerability and license issues.
 
 Snyk Open Source can also integrate with Artifactory, Nexus, npm Teams, and npm Enterprise to assist in the security testing of your applications. Snyk uses this integration for dependency resolution, fix calculation, and re-locking lock files.
 
@@ -32,7 +32,7 @@ If your Projects reference private dependencies in these repositories but you ar
 For more information, see the following:
 
 * Package registry integrations: [npm Teams and npm Enterprise](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/npm-teams-and-npm-enterprise-integration.md), [Artifactory Registry setup](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/) and [Nexus Repository Manager setup](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/).
-* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/artifactory-gatekeeper-plugin.md) and [Nexus Repository Manager Gatekeeper plugin](../../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
+* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin.md)
 
 ## Language and package manager considerations
 

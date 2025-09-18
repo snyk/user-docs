@@ -20,7 +20,7 @@ For more information on package registry integrations, including Maven, see the 
 * [Artifactory Registry for Maven](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md)
 * [Nexus Registry for Maven](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven.md)
 * Nexus Container Registry: [Container security with Nexus integration](../../../scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-nexus-container-registry.md)
-* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/artifactory-gatekeeper-plugin.md) and [Nexus Repository Manager Gatekeeper plugin](../../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
+* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin.md)
 
 ## Language and package manager considerations
 

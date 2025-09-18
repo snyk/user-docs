@@ -39,7 +39,7 @@ See [Single Sign-On (SSO) for authentication to Snyk](../implementation-and-setu
 
 ## Integrations not available
 
-[Gatekeeper plugins](../scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/) are **not available** as they support OAuth authentication.
+[Gatekeeper plugins](broken-reference) are **not available** as they support OAuth authentication.
 
 ## Reporting and data not available
 

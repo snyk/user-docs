@@ -17,7 +17,7 @@ By scanning artifacts as part of your workflow and then displaying those test re
 {% hint style="info" %}
 This page refers to the Artifactory Plugin, an independent piece of software that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance.
 
-This plugin is separate from the [Artifactory Registry for Maven](../../package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md), a Snyk integration that allows configuring SCM scans to use custom package registries.
+This plugin is separate from the [Artifactory Registry for Maven](../package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md), a Snyk integration that allows configuring SCM scans to use custom package registries.
 {% endhint %}
 
 ## Package managers supported by the Artifactory Plugin
@@ -66,7 +66,7 @@ Snyk calls [`https://api.snyk.io/v1/test`](https://api.snyk.io/v1/test) for the 
 8. Restart your Artifactory server. Note that **Refresh now** or **Reload** is not sufficient. Artifactory must be restarted.
 9. Log in to your Artifactory instance and navigate to the **System Logs** to check that Snyk has been installed successfully.
 
-<figure><img src="../../../../.gitbook/assets/artifactory-system-logs.png" alt="Successful installation of Snyk"><figcaption><p>Successful installation of Snyk</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/artifactory-system-logs.png" alt="Successful installation of Snyk"><figcaption><p>Successful installation of Snyk</p></figcaption></figure>
 
 ## How the Artifactory plugin works
 
@@ -82,7 +82,7 @@ If a scan finds issues, based on your configuration, the download request can be
 
 You can find the results of a scan under the artifact properties, where you can decide to ignore the issues and allow downloads. To find the artifact, use the Artifactory search bar or navigate the **t**ree view.
 
-<figure><img src="../../../../.gitbook/assets/Screen Shot 2022-02-02 at 9.47.46 AM.png" alt="Results of a scan"><figcaption><p>Results of a scan</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2022-02-02 at 9.47.46 AM.png" alt="Results of a scan"><figcaption><p>Results of a scan</p></figcaption></figure>
 
 ## Plugin configuration
 
