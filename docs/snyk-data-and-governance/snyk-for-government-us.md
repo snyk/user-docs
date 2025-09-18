@@ -39,7 +39,7 @@ See [Single Sign-On (SSO) for authentication to Snyk](../implementation-and-setu
 
 ## Integrations not available
 
-[Gatekeeper plugins](broken-reference) are **not available** as they support OAuth authentication.
+[Artifactory Gatekeeper Plugin](../scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin.md) is **not available** as it supports OAuth authentication.
 
 ## Reporting and data not available
 

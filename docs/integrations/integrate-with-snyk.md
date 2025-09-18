@@ -21,7 +21,7 @@ This page identifies additional Snyk integrations and where to find them.
 
 Snyk provides plugins for repository gatekeepers and integrations to connect with package repositories:
 
-* [Gatekeeper plugins](broken-reference)
+* [Artifactory Gatekeeper Plugin](../scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin.md)
 * [Package repository integrations](../scan-with-snyk/snyk-open-source/package-repository-integrations/)
 
 There are integrations that support [Snyk Container](../scan-with-snyk/snyk-container/container-registry-integrations/).
