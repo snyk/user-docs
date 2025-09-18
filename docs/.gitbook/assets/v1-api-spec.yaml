@@ -143,6 +143,12 @@ paths:
                       weekly-report:
                         enabled: true
                         inherited: false
+                      request-updates:
+                        enabled: true
+                        inherited: false
+                      pending-requests:
+                        enabled: true
+                        inherited: false
               example:
                 new-issues-remediations:
                   enabled: true
@@ -156,6 +162,12 @@ paths:
                   enabled: true
                   inherited: false
                 weekly-report:
+                  enabled: true
+                  inherited: false
+                request-updates:
+                  enabled: true
+                  inherited: false
+                pending-requests:
                   enabled: true
                   inherited: false
       deprecated: false
@@ -192,6 +204,10 @@ paths:
                       enabled: true
                     weekly-report:
                       enabled: true
+                    request-updates:
+                      enabled: true
+                    pending-requests:
+                      enabled: true
             example:
               new-issues-remediations:
                 enabled: true
@@ -202,6 +218,10 @@ paths:
               test-limit:
                 enabled: true
               weekly-report:
+                enabled: true
+              request-updates:
+                enabled: true
+              pending-requests:
                 enabled: true
         required: true
       responses:
@@ -226,6 +246,12 @@ paths:
                         enabled: true
                         inherited: false
                       weekly-report:
+                        enabled: true
+                        inherited: false
+                      request-updates:
+                        enabled: true
+                        inherited: false
+                      pending-requests:
                         enabled: true
                         inherited: false
               example:
@@ -947,6 +973,12 @@ paths:
                       weekly-report:
                         enabled: true
                         inherited: false
+                      request-updates:
+                        enabled: true
+                        inherited: false
+                      pending-requests:
+                        enabled: true
+                        inherited: false
               example:
                 new-issues-remediations:
                   enabled: true
@@ -960,6 +992,12 @@ paths:
                   enabled: true
                   inherited: false
                 weekly-report:
+                  enabled: true
+                  inherited: false
+                request-updates:
+                  enabled: true
+                  inherited: false
+                pending-requests:
                   enabled: true
                   inherited: false
       deprecated: false
@@ -1005,6 +1043,10 @@ paths:
                       enabled: true
                     weekly-report:
                       enabled: true
+                    request-updates:
+                      enabled: true
+                    pending-requests:
+                      enabled: true
             example:
               new-issues-remediations:
                 enabled: true
@@ -1015,6 +1057,10 @@ paths:
               test-limit:
                 enabled: true
               weekly-report:
+                enabled: true
+              request-updates:
+                enabled: true
+              pending-requests:
                 enabled: true
         required: true
       responses:
@@ -1197,12 +1243,14 @@ paths:
                       ignores:
                         reasonRequired: false
                         autoApproveIgnores: false
+                        approvalWorkflowEnabled: false
               example:
                 requestAccess:
                   enabled: true
                 ignores:
                   reasonRequired: false
                   autoApproveIgnores: false
+                  approvalWorkflowEnabled: false
       deprecated: false
     put:
       tags:
@@ -12763,6 +12811,24 @@ components:
           $ref: '#/components/schemas/Simplenotificationsettingrequest'
         weekly-report:
           $ref: '#/components/schemas/Simplenotificationsettingrequest'
+        request-updates:
+          required:
+            - enabled
+          type: object
+          properties:
+            enabled:
+              type: boolean
+              description: Whether Ignore Approval Workflow Request Update notifications should be sent
+              example: true
+        pending-requests:
+          required:
+            - enabled
+          type: object
+          properties:
+            enabled:
+              type: boolean
+              description: Whether Ignore Approval Workflow Pending Requests notifications should be sent
+              example: true
     Notificationsettingsresponse:
       title: Notificationsettingsresponse
       type: object
@@ -12774,6 +12840,10 @@ components:
         test-limit:
           $ref: '#/components/schemas/Simplenotificationsettingresponse'
         weekly-report:
+          $ref: '#/components/schemas/Simplenotificationsettingresponse'
+        request-updates:
+          $ref: '#/components/schemas/Simplenotificationsettingresponse'
+        pending-requests:
           $ref: '#/components/schemas/Simplenotificationsettingresponse'
     Newissuesnotificationsettingrequest:
       title: Newissuesnotificationsettingrequest
@@ -17669,6 +17739,10 @@ components:
         reasonRequired:
           type: boolean
           description: Whether a reason is required for creating ignores.
+          example: false
+        approvalWorkflowEnabled:
+          type: boolean
+          description: Whether Ignore Approval Workflow is enabled.
           example: false
       description: Will only be returned if `API_KEY` has read access to ignore settings.
     requestAccess2:
