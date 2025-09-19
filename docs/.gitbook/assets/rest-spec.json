@@ -10617,6 +10617,8 @@
             "type": "string"
           },
           "type": {
+            "description": "Connection type",
+            "example": "github",
             "type": "string"
           }
         },
