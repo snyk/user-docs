@@ -303,6 +303,7 @@
   * [AWS CloudTrail Lake](integrations/event-forwarding/aws-cloudtrail-lake.md)
   * [AWS Security Hub](integrations/event-forwarding/aws-security-hub.md)
   * [Google Security Command Center](integrations/event-forwarding/google-security-command-center.md)
+  * [CrowdStrike Falcon Next-Gen SIEM](integrations/event-forwarding/crowdstrike-falcon-next-gen-siem.md)
 * [Partner integrations](integrations/partner-integrations.md)
 
 ## Developer tools

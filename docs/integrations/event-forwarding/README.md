@@ -25,3 +25,4 @@ Event forwarding integrations are available with the following products:
 * [AWS CloudTrail Lake](aws-cloudtrail-lake.md) - **Audit events**
 * [AWS SecurityHub](aws-security-hub.md) - **Issue events**
 * [Google Security Command Center](google-security-command-center.md) **- Issue events**
+* [CrowdStrike Falcon Next-Gen SIEM](crowdstrike-falcon-next-gen-siem.md) - **Issue events**
