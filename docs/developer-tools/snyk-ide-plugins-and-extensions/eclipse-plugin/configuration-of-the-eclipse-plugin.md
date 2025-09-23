@@ -18,7 +18,7 @@ You can set the following global configuration settings in the Snyk preferences.
 * **Snyk Code Security enabled**: Enable or disable Snyk Code Security Issues through the Language Server. Default: `Disabled`.
 * **Snyk Infrastructure-as-Code enabled**: Enable or disable Snyk IaC scans through the Language Server. Default: `Enabled`.
 * **Scan automatically on start-up and save**: Scan automatically or not when you start the extension.
-* **Organization**: Specify the Snyk Organization to use for scanning. Snyk recommends using the `ORG_ID`. The `ORG_ID`  is a UUID. If you specify an Organization slug name, the value must match the URL slug (`[orgslugname]`) as displayed in the URL of your Organization in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
+* **Organization**: Specify the Snyk Organization to use for scanning. Snyk recommends using the `ORG_ID`. The `ORG_ID`  is a UUID. If you specify an Organization slug name, the value must match the URL slug (`[orgslugname]`) as displayed in the URL of your Organization in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. If this is not specified or incorrect, the preferred Organization, as defined in your [web account settings](https://app.snyk.io/account), is used to run tests.
 * **Additional Parameters**: Specify additional parameters to pass to the CLI, for example, `--file=pom.xml` or `--debug.` \
   Note: When you enable `debug`, your code may be logged in the IDE log files, for example, the `idea.log` file.
 * **Additional Environment**: Add environment variables to the Language Server; multiple variables can be separated by `;`. Example: `JAVA_HOME=/Library/JDK/bin;GOPATH=/usr/local/bin`&#x20;

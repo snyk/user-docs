@@ -9,9 +9,7 @@ After the plugin is installed, you can set the following configurations for the 
 * **Authentication method:** Specify whether to authenticate with OAuth2 or with an API token. `OAuth2` is the default
 * **Custom Endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDE URLs](../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#ides-urls).\
   Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
-*   **Organization**: Sets the Organization to run `snyk test` against, similar to the `--org=` option in the CLI. Snyk recommends using the `ORG_ID`. If you specify an Organization slug name, the value must match the URL slug as displayed in the URL of your Organization in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
-
-    If this is not specified, the preferred Organization, as defined in your [web account settings](https://app.snyk.io/account), is used to run tests.
+* **Organization**: Sets the Organization to run `snyk test` against, similar to the `--org=` option in the CLI. Snyk recommends using the `ORG_ID`. If you specify an Organization slug name, the value must match the URL slug as displayed in the URL of your Organization in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.  If this is not specified or incorrect, the preferred Organization, as defined in your [web account settings](https://app.snyk.io/account), is used to run tests.
 * **Send error reports to Snyk**: Help Snyk to improve the stability of the plugin by analyzing such reports.
 
 ### Scan configuration
