@@ -93,6 +93,7 @@ This is the list of supported operating systems and distributions:
 
 ## [Rocky Linux](https://rockylinux.org/)
 
+* Rocky Linux 10
 * Rocky Linux 9
 * Rocky Linux 8
 
