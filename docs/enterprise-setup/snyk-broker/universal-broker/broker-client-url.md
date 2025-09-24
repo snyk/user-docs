@@ -10,8 +10,8 @@ The same webhook mechanism is used to facilitate communication when Snyk creates
 
 When you set up a connection, the webhook target endpoint is defined by the value of the `broker_client_url` value. The webhook can point directly to Snyk or to the Broker client container, which will relay the webhook to Snyk.&#x20;
 
-Normally, and by default for SCM integrations, the regional Snyk API endpoint is used. For the list of URLs, see [Broker client URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-client-urls). Sometimes, however, your environment may prohibit SCM webhooks from leaving the private cloud or data center. In that case, the webhook and thus the SCM must point to the Snyk Broker container running in your environment. In these cases, the`broker_client_url` has to reflect the hostname and port of the Broker client.&#x20;
+By default, SCM integrations use the regional Snyk API endpoint. For the list of URLs, see [Broker client URLs](../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-client-urls). Sometimes, environments restrict SCM webhooks from leaving the private cloud or data center. In is scenario, the webhook and SCM must point to the Snyk Broker container in your environment, with `broker_client_url` reflecting the hostname and port of the Broker client.
 
 Non-SCM integrations, notably the container registries integrations, require the Broker client URL to be the Broker client address. Snyk recommends using the DNS hostname (`http://my.broker.client`), but you can also use IP addresses (`http://192.168.0.1`). Append the port, for example, `http://my.broker.client:8000`.
 
-Note that the `https` webhook calls requires additional setup in the Broker client to bring a TLS certificate and mount it into the container. For details, see [HTTPS for Broker client with Docker](../https-for-broker-client-with-docker.md).
+Note that the `https` webhook calls require additional setup in the Broker client to bring a TLS certificate and mount it into the container. For details, see [HTTPS for Broker client with Docker](../https-for-broker-client-with-docker.md).

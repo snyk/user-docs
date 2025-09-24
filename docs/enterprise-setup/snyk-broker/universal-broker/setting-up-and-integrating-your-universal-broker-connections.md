@@ -1,6 +1,6 @@
 # Setting up and integrating your Universal Broker connections
 
-The following diagram illustrates installing the Snyk Broker App , which facilitates the secure connection and communication with the Broker server through OAuth, and creating a Universal Broker deployment with connections to GitHub and Jira. The process includes creating credentials references for both GitHub and Jira and creating Broker connections for both.
+The following diagram illustrates installing the Snyk Broker App, which facilitates the secure connection and communication with the Snyk platform through OAuth, and creating a Universal Broker deployment with connections to GitHub and Jira. The process includes creating credentials references for both GitHub and Jira and creating Broker connections for both.
 
 In the diagram, GitHub connection 123 is integrated with Organization Y using integration X. Jira connection 456 is integrated with Organization E using integration D.
 
@@ -10,7 +10,7 @@ In the diagram, GitHub connection 123 is integrated with Organization Y using in
 
 ## Create deployments and connections
 
-After you have installed the `snyk-broker-config tool` :
+After you have installed the `snyk-broker-config` CLI tool:
 
 * Run `snyk-broker-config workflows connections create`.
 * Create a deployment if none exists, or select a deployment if more than one exists.\
@@ -42,7 +42,7 @@ You can learn more about importing a code repository from an SCM into Snyk and c
 
 After you have created at least one deployment and connection:
 
-* Run `snyk-broker-config workflows connections integrate` .
+* Run `snyk-broker-config workflows connections integrate`.
 * Select the deployment and connection to use.\
   Selection is automatic if only one deployment and one connection exist.
 * Enter the Organization ID you want to integrate the connection with.
