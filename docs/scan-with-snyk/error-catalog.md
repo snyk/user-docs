@@ -961,13 +961,13 @@ Snyk was unable to find supported files.
 ### [SNYK-CODE-0007](#snyk-code-0007)
 <a id="#SNYK-CODE-0007"></a>
 
-**Sast Rule extension already exists for the Group**
+**SAST Rule extension already exists for the Group**
 
-A Sast Rule extension with the same type and attributes already exists
+A SAST Rule extension with the same type and attributes already exists
 for the given Group.
 
-Either modify the existing Sast Rule extension or create a new
-Sast Rule extension with a different type or attributes.
+Either modify the existing SAST Rule extension or create a new
+SAST Rule extension with a different type or attributes.
 
 **HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
 
@@ -976,7 +976,7 @@ Sast Rule extension with a different type or attributes.
 
 **Organization relationships must be unique**
 
-Each Org relationship to a Snyk Sast Rule extension must be unique.
+Each Org relationship to a Snyk SAST Rule extension must be unique.
 
 Make sure each Org in relationships has a different ID.
 
@@ -987,7 +987,7 @@ Make sure each Org in relationships has a different ID.
 
 **Group relationship must match the Group in the requested URL**
 
-You cannot associate a Snyk Sast Rule extension to any other Group.
+You cannot associate a Snyk SAST Rule extension to any other Group.
 
 Make sure the Group ID under relationships matches the Group ID in the request path.
 
@@ -998,20 +998,20 @@ Make sure the Group ID under relationships matches the Group ID in the request p
 
 **Organization outside of the administrating Group**
 
-You cannot associate a Snyk Sast Rule extension to an Org outside of the administrating Group.
+You cannot use the SAST Rule extensions feature with an Org outside of the administrating Group.
 
-Make sure each Org under relationships is within the Group in the requested URL.
+Make sure each Org in the request is within the requested Group.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CODE-0011](#snyk-code-0011)
 <a id="#SNYK-CODE-0011"></a>
 
-**Sast Rule extension limit reached**
+**SAST Rule extension limit reached**
 
-You have hit the maximum number of published Snyk Sast Rule extensions allowed for a Group.
+You have hit the maximum number of published Snyk SAST Rule extensions allowed for a Group.
 
-To create a new Sast Rule extension you will have to remove an existing one.
+To create a new SAST Rule extension you will have to remove an existing one.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
