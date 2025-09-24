@@ -23,7 +23,7 @@ The [Universal Broker workflow diagrams](universal-broker-workflow-diagrams.md) 
 
 ## API configuration for Broker
 
-You can either follow the general API steps to understand the underlying process or go directly to a specific SCM tutorial for detailed API commands. Use the instructions provided under the[Universal Broker API](../../../../snyk-api/reference/universal-broker.md) or specific instructions on how to [Set up an SCM connection using the API](using-the-api-to-set-up-a-github-connection.md).&#x20;
+You can either follow the general API steps to understand the underlying process or go directly to a specific SCM tutorial for detailed API commands. Use the instructions provided under the [Universal Broker API](../../../../snyk-api/reference/universal-broker.md) or specific instructions on how to [Set up an SCM connection using the API](using-the-api-to-set-up-a-github-connection.md).&#x20;
 
 See the [Universal Broker APIs ](../../../../snyk-api/reference/universal-broker.md)in the API Reference for more details. An example is provided: [Using the API to set up a GitHub connection](using-the-api-to-set-up-a-github-connection.md).
 

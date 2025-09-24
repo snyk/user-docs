@@ -5,7 +5,7 @@
 Universal Broker is in Early Access and is available only with Enterprise plans.
 {% endhint %}
 
-The Universal Broker improves the management of Broker deployments and connections by supporting many connections of any type with a single running client (container) or with multiple client replicas. Credentials remain within your network and are never stored by or transmitted to Snyk, the Snyk platform uses credentials references to instruct the Universal Broker how to authenticate with your private resources.
+The Universal Broker improves the management of Broker deployments and connections by supporting many connections of any type with a single running client (container) or with multiple client replicas. Credentials remain within your network and are never stored by or transmitted to Snyk. The Snyk platform uses credentials references to instruct the Universal Broker how to authenticate with your private resources.
 
 Each client or set of client replicas is called a Broker deployment. The diagram below shows two deployments, Universal Broker A and Universal Broker B.
 

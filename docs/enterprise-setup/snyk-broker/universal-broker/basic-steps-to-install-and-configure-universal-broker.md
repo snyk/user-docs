@@ -105,7 +105,7 @@ Now using Tenant ID <current Tenant ID> and Install ID <current Install ID>.
 Do you want to create a new Deployment? (Y/N)
 ```
 
-Snyk recommends that you set the INSTALL\_ID as an environment variable now, to make the tool easier to use:\
+Snyk recommends that you set the INSTALL_ID as an environment variable to improve usability:\
 - `export INSTALL_ID=zzzz` (Linux/Mac)\
 - `set INSTALL_ID=zzzz` (Windows)
 
@@ -228,7 +228,7 @@ When the Broker client has started, the connection is ready to use, in this case
 
 ## Integrate your connection with more Organizations
 
-To integrate your connection with another Organization so it will use the same connection, run the following command again and enter the ID of the new Organization to integrate. You can repeat this step as often as needed to integrate with multiple Organizations.
+To integrate your connection with another Organization, run the integrate command again and enter the new Organization ID. Repeat as needed to connect with multiple Organizations.
 
 ```
 > snyk-broker-config workflows connections integrate
