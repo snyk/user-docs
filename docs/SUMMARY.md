@@ -282,6 +282,7 @@
     * [JetBrains AI assistant](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/amazon-q-guide-1.md)
     * [JetBrains Junie](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/amazon-q-guide-2.md)
     * [Cline guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cline-guide.md)
+    * [Claude Code guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/claude-code-guide.md)
     * [Codex CLI guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/codex-cli-guide.md)
     * [Cursor guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide.md)
     * [Gemini Code Assist guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-code-assist-guide.md)
