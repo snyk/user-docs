@@ -1,3 +1,22 @@
+## 2024-10-15 - Updated 2025-09-25
+
+### POST - `/orgs/{org_id}/export` - Updated
+- added the new optional request property `data/attributes/filters/product_name`
+
+- added the new optional request property `data/attributes/filters/project_tags`
+
+- added the new optional request property `data/attributes/filters/project_type`
+
+
+
+### POST - `/groups/{group_id}/export` - Updated
+- added the new optional request property `data/attributes/filters/product_name`
+
+- added the new optional request property `data/attributes/filters/project_tags`
+
+- added the new optional request property `data/attributes/filters/project_type`
+
+
 ## 2024-10-15 - Updated 2025-09-08
 
 ### POST - `/orgs/{org_id}/policies` - Updated
