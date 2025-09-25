@@ -106,3 +106,91 @@ The Coverage gap filter identifies assets that fall 'out of policy' and do not s
 
 
 
+### Filtering using the unenriched repository banner
+
+With this feature, you can filter the repositories that are not being enriched by the Group-level integration. These assets are discovered by the Organization-level integration or by the Snyk targets. To filter by the unenriched repositories, select the **\[the number of] repositories** part of the banner.
+
+<figure><img src="../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
+
+#### Unenriched assets with Group SCM Integration
+
+As a user with Group-level integration, you can see the banner in Inventory about assets not being discovered through the group-level SCM integration. You already have a Group-level integration, but assets are not being discovered. Below is a playbook to better understand where each asset is coming from and why it is not discovered through the Group-level SCM integration.
+
+\
+Potential reasons for this include the following:
+
+* **Permission issues** - Permission issues can happen when the Organization-level integration has wider permissions than the Group-level integration.
+* **Old deleted repository** - a repository that Snyk tested (has a target in Snyk) and was deleted in the SCM integration before the group-level integration was set up.
+* **Snyk CLI Projects**  - Snyk CLI projects that have a different repo URL than the SCM repository URL.
+* **Missing SCM Organization** - SCM Organization is not being explicitly written and is missing in the Group-level integration.
+* **Discovered via a different vendor** - The asset was discovered by a vendor that is not SCM integration, such as GitGuardian.\
+
+
+There are three sections with step-by-step instructions:
+
+1. **Source is only Snyk:** This section covers assets that are not discovered by Group-level integration, or the Organization-level integration.&#x20;
+2. **Source is something other than Snyk (SCM and Snyk or just SCM):** This section covers assets that are not discovered by Group-level integration and are discovered by Organization-level integration.
+3. **Additional tools:** This section provides a Looker dashboard to do a deep dive into all the assets and where they are discovered.
+
+#### Source is only Snyk
+
+This section covers assets that are not discovered by Group-level integration or the Organization-level integration, meaning they are only discovered ‌through the Snyk targets. Issues here are Snyk CLI Projects or old deleted repositories.
+
+1. Log in to the Snyk Web UI and select your [Group](https://docs.snyk.io/snyk-platform-administration/groups-and-organizations).
+2. Navigate to **Inventory**.
+3. Select the repositories that are not being discovered through Group-level SCM Integration.
+
+<figure><img src="../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
+
+2.  Filter out the SCM sources first to tackle all assets not discovered through Group or Organization-level integrations. **Source is not one of**.
+
+    <figure><img src="../.gitbook/assets/image (514).png" alt=""><figcaption></figcaption></figure>
+3.  If the asset comes from a Snyk CLI project, check the repo URL . When a repo URL from the Snyk CLI Project does not match the repo URL from the SCM repository, duplicated assets can appear. Ensure the local repo URL matches the remote repo URL.
+
+    <figure><img src="../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>
+4. If the project is not a Snyk CLI project, it’s possible that these repositories were deleted long before setting up the group-level integration. Double-check to ensure the repositories exist in their SCMs. If they are deleted, remove those assets by deleting the Snyk targets of those repositories.&#x20;
+5.  If it’s not a Snyk CLI project or a deleted Project, it’s possible the repository was imported, but the integration connection is no longer working. This means it cannot be picked up through Auto Repo Discovery, and there are not enough permissions in the Group-level integration to discover it. In this case, double-check the Organization-level integrations and the Group-level integration’s permissions.
+
+
+
+#### Source field is something other than Snyk (SCM and Snyk or just SCM)
+
+This section covers assets that the Group-level integration does not discover and are discovered by the Organization-level integration. Issues here are either missing SCM Organization in the integration, permission issues, and/or assets being discovered through a different vendor.
+
+1. Log in to the Snyk Web UI and select your [Group](https://docs.snyk.io/snyk-platform-administration/groups-and-organizations).
+2. Navigate to **Inventory**.
+3. Select the repositories that are not being discovered through Group-level SCM Integration
+
+<figure><img src="../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
+
+1.  **Filter** **Source** **is one of the SCMs**, which will exclude assets that have a source that is only Snyk, and select Apply.\
+
+
+    <figure><img src="../.gitbook/assets/image (518).png" alt=""><figcaption></figcaption></figure>
+2. Open one of the assets and look for the SCM Organization in the URL . The following screenshots show you how it will look like based on your SCM integration
+   1.  GitHub
+
+       <figure><img src="../.gitbook/assets/image (519).png" alt=""><figcaption></figcaption></figure>
+
+
+   2.  GitLab
+
+       <figure><img src="../.gitbook/assets/image (520).png" alt=""><figcaption></figcaption></figure>
+
+
+   3.  Azure DevOps
+
+       <figure><img src="../.gitbook/assets/image (521).png" alt=""><figcaption></figcaption></figure>
+
+
+   4.  Bitbucket
+
+       <figure><img src="../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
+3.  On GitHub and Azure, you can see if ‌Organizations were added to the profiles. Go to the Group-level integration page and open the SCM profile to check if the SCM Organization has been added to it.&#x20;
+
+    <figure><img src="../.gitbook/assets/image (523).png" alt=""><figcaption></figcaption></figure>
+4. If it has not been added, add the SCM Organization and select **Done**.
+5. If it has been added, check the token's permissions and ensure it has access to the unenriched repositories.
+6. For GitLab and Bitbucket, ensure that the Group-level tokens have access to and the right permissions for the organization from the repo URL.
+7. Another reason this can happen is if the assets are being discovered by a different vendor. Ensure the repo URLs are the same to avoid creating duplicate assets.
+
