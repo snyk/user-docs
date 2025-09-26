@@ -1115,7 +1115,7 @@
 * [How Snyk handles your data](snyk-data-and-governance/how-snyk-handles-your-data.md)
 * [How Snyk incorporates generative AI into the platform](snyk-data-and-governance/how-snyk-incorporates-generative-ai-into-the-platform.md)
 * [Regional hosting and data residency](snyk-data-and-governance/regional-hosting-and-data-residency.md)
-* [Disclosure of a vulnerability in an open-source package](snyk-data-and-governance/disclosure-of-a-vulnerability-in-an-open-source-package.md)
+* [Disclosure of a vulnerability in an open-source package](working-with-snyk/disclosure-of-a-vulnerability-in-an-open-source-package.md)
 * [Reporting security issues](snyk-data-and-governance/reporting-security-issues.md)
 * [Snyk terms of support and services glossary](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/README.md)
   * [Snyk Jumpstart Services Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md)

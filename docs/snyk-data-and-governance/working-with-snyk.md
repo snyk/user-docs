@@ -8,7 +8,7 @@ Snyk is dedicated to the secure and responsible handling of user data, with a st
 *   [**Regional hosting and data residency**](regional-hosting-and-data-residency.md)
 
     Snyk offers regional hosting to comply with regional data protection laws and improve service performance. This ensures data residency requirements are met and reduces data latency.
-*   [**Disclosure of a vulnerability in an open-source package**](disclosure-of-a-vulnerability-in-an-open-source-package.md)
+*   [**Disclosure of a vulnerability in an open-source package**](../working-with-snyk/disclosure-of-a-vulnerability-in-an-open-source-package.md)
 
     Through this program, Snyk encourages the community to report potential vulnerabilities in open-source packages, facilitating quick identification, validation, and remediation to enhance security.&#x20;
 * [**Reporting security issues**](reporting-security-issues.md)\
