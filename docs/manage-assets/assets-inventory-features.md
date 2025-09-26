@@ -110,7 +110,7 @@ The Coverage gap filter identifies assets that fall 'out of policy' and do not s
 
 With this feature, you can filter the repositories that are not being enriched by the Group-level integration. These assets are discovered by the Organization-level integration or by the Snyk targets. To filter by the unenriched repositories, select the **\[the number of] repositories** part of the banner.
 
-<figure><img src="../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (512) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Unenriched assets with Group SCM Integration
 
@@ -140,11 +140,11 @@ This section covers assets that are not discovered by Group-level integration or
 2. Navigate to **Inventory**.
 3. Select the repositories that are not being discovered through Group-level SCM Integration.
 
-<figure><img src="../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (513) (1).png" alt=""><figcaption></figcaption></figure>
 
 2.  Filter out the SCM sources first to tackle all assets not discovered through Group or Organization-level integrations. **Source is not one of**.
 
-    <figure><img src="../.gitbook/assets/image (514).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (514) (1).png" alt=""><figcaption></figcaption></figure>
 3.  If the asset comes from a Snyk CLI project, check the repo URL . When a repo URL from the Snyk CLI Project does not match the repo URL from the SCM repository, duplicated assets can appear. Ensure the local repo URL matches the remote repo URL.
 
     <figure><img src="../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>
