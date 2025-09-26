@@ -1,20 +1,14 @@
 # Improved .NET scanning
 
 {% hint style="info" %}
-Feature availability
+**Release status**
 
-Improved Snyk Open Source scanning for NuGet .NET applications is in Early Access and available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
-
-You can enable the feature by using [Snyk Preview](../../../snyk-platform-administration/snyk-preview.md).
+Improved Snyk Open Source scanning for NuGet .NET applications is in Early Access and available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/). You can enable the feature by using [Snyk Preview](../../../snyk-platform-administration/snyk-preview.md).
 {% endhint %}
 
-{% hint style="info" %}
-While in Early Access, this feature potentially can cause scans to fail or produce different results. Snyk recommends gradually enabling this feature, for example, starting with a subset of your Organizations. For more information, see [Enterprise setup](../../../implementation-and-setup/enterprise-setup/).
+While in Early Access, this feature potentially can cause scans to fail or produce different results. Snyk recommends gradually enabling this feature, for example, starting with a subset of your Organizations. For more information, see [Enterprise setup](../../../implementation-and-setup/enterprise-setup/). You can report issues by submitting a [support ticket](https://support.snyk.io).
 
-You can report issues by submitting a [support ticket](https://support.snyk.io).
-{% endhint %}
-
-## Limitations of existing solution
+## Limitations
 
 The existing .NET scanning solution for SCM integration in the Snyk Web UI and CLI uses two [different approaches](guidance-for-snyk-for-.net.md#dependency-analysis). The Dependency Analysis for SCM integrations can produce [false positives](guidance-for-snyk-for-.net.md#build-time-versus-runtime-dependencies) that have no remediation available and must be manually ignored.
 
@@ -27,10 +21,6 @@ Snyk improved the .NET scanning process to ensure that dependency results are co
 The improved .NET scanning also provides the capability of scanning any Project that can be successfully built by the `dotnet` SDK itself, removing the previous limitations of not being able to scan Projects using certain .NET features, such as `.props` files, `global.json`, or Central Package Management.
 
 ## .NET scanning improvements for SCM integrations
-
-{% hint style="info" %}
-Snyk Broker is not supported.
-{% endhint %}
 
 The .NET scanning improvements are available when importing Projects using Git repository integrations.
 
@@ -54,6 +44,10 @@ Fill in the **Your tokens** fields by adding a **Username**, the **Personal acce
 For more information, see [Package repository integrations](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/).
 
 ### Limitations on improved .NET scanning for SCM integrations
+
+{% hint style="info" %}
+Snyk Broker is not supported.
+{% endhint %}
 
 * `Directory.Build.props`, `global.json` and other .NET-specific manifest files are supported, but the file names must use upper and lower case, as Microsoft [describes](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets).
 * For `global.json`, Snyk does not support all `major.minor.patch` versions that are currently supported by Microsoft, only a subset thereof. For more information, see this [error code](../../../scan-with-snyk/error-catalog.md#snyk-os-dotnet-0008).
