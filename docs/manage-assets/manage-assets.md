@@ -46,3 +46,11 @@ In the [**Analytics**](../manage-risk/analytics/application-analytics.md) menu, 
 The [**Issues**](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md) menu uses information from both the Inventory and Policies menus to prioritize issues based on their severity and impact. This prioritization assists organizations in concentrating on addressing the most critical risks first, streamlining risk management, and enhancing overall security posture.
 
 Through this interconnected framework, Snyk ensures robust asset protection and optimized performance, integrating inventory management, policy enforcement, analytical insights, and risk prioritization into a cohesive, efficient system.
+
+
+
+## Assets Enrichments by SCM Integration
+
+The table below outlines the asset enrichments provided by each SCM Integration. It highlights which capabilities are available today that are not available due to the SCM provider.
+
+<table data-full-width="false"><thead><tr><th></th><th>GitHub</th><th width="93.44140625">GitLab</th><th>BitBucket Cloud</th><th>BitBucket Server</th><th>Azure DevOps</th></tr></thead><tbody><tr><td>Organization/Workspace</td><td><p>✅</p><p></p></td><td><p>✅</p><p></p></td><td><p>✅</p><p></p></td><td><p>✅</p><p></p></td><td><p>✅</p><p></p></td></tr><tr><td>SCM Projects</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Contributors</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>Teams</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>Languages (tags)</td><td>✅</td><td>✅</td><td>✅<br>When manually set up</td><td>❌</td><td>✅</td></tr><tr><td>Tags</td><td><p>✅</p><p>GitHub topics / GitHub custom properties</p></td><td><p>✅</p><p>GitLab topics</p></td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td>Visibility</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Archive Repos</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr></tbody></table>
