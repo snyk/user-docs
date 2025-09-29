@@ -11,7 +11,7 @@ Before you begin, ensure you have:
 * A user personal API key with Tenant admin access and at minimum Org admin access for the Organization on which you want to install the Snyk Broker App, allowing you to complete all steps in the deployment workflow.
 * Access to a command-line tool like `curl` and `jq` for JSON parsing (recommended).
 * Any necessary pre-configurations for your specific SCM integration.
-* Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-client-urls).
+* Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
 
 {% hint style="info" %}
 When you change an environment variable, you must restart your Broker.
@@ -19,16 +19,16 @@ When you change an environment variable, you must restart your Broker.
 
 ## Understand the workflow
 
-The [Universal Broker workflow diagrams](universal-broker-workflow-diagrams.md) illustrate the steps that are implemented in the `snyk broker config` tool when you use the commands to automate. The same workflows are implemented when you use the API.
+The [Universal Broker workflow diagrams](../../../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/universal-broker-workflow-diagrams.md) illustrate the steps that are implemented in the `snyk broker config` tool when you use the commands to automate. The same workflows are implemented when you use the API.
 
 ## API configuration for Broker
 
-You can either follow the general API steps to understand the underlying process or go directly to a specific SCM tutorial for detailed API commands. Use the instructions provided under the [Universal Broker API](../../../../snyk-api/reference/universal-broker.md) or specific instructions on how to [Set up an SCM connection using the API](using-the-api-to-set-up-a-github-connection.md).&#x20;
+You can either follow the general API steps to understand the underlying process or go directly to a specific SCM tutorial for detailed API commands. Use the instructions provided under the [Universal Broker API](../../../../snyk-api/reference/universal-broker.md) or specific instructions on how to [Set up an SCM connection using the API](using-the-api-to-set-up-a-github-connection.md).
 
 See the [Universal Broker APIs ](../../../../snyk-api/reference/universal-broker.md)in the API Reference for more details. An example is provided: [Using the API to set up a GitHub connection](using-the-api-to-set-up-a-github-connection.md).
 
 {% hint style="info" %}
-Use the Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-client-urls).
+Use the Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
 {% endhint %}
 
-\
+\\

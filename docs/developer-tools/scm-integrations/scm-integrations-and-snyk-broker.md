@@ -97,7 +97,7 @@ On installation of the app you will be assigned an `InstallationID`. These are t
 
 ### Create the Universal Broker connection for your GitHub Server App
 
-Before the GitHub Server App can be used with the Universal Broker, you must create a connection of the `github-server-app` type using the `snyk-broker-config` tool. For more details, see the  [Universal Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/) documentation. After the connection is created, it can be integrated with one or more Organization(s) of your choice.
+Before the GitHub Server App can be used with the Universal Broker, you must create a connection of the `github-server-app` type using the `snyk-broker-config` tool. For more details, see the  [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/) documentation. After the connection is created, it can be integrated with one or more Organization(s) of your choice.
 
 To set up the integration you will need the following:
 
@@ -116,4 +116,4 @@ Visit the integrations page in Snyk to see that the integration has been configu
 
 <figure><img src="../../.gitbook/assets/image (306).png" alt=""><figcaption><p>A successful GitHub Server App integration</p></figcaption></figure>
 
-See the [Universal Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/) documentation for more details.
+See the [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/) documentation for more details.

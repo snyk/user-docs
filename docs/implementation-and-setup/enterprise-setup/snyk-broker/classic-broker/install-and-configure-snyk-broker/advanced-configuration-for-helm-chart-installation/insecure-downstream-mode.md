@@ -17,5 +17,5 @@ Use the [Custom additional options for Broker Helm Chart installation](custom-ad
 {% hint style="warning" %}
 Using HTTP is highly insecure. Your data and credentials will transit in the clear over the network exchanges.
 
-Snyk **will not be held responsible** for any credential leaks that may occur as a result of the use of HTTP.
+Snyk is not responsible for any credential leaks that may occur as a result of the use of HTTP.
 {% endhint %}

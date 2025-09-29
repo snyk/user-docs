@@ -4,7 +4,7 @@ Universal Broker operators declare their desired deployment model before running
 
 To upgrade existing Classic Broker integrations to Universal Broker, follow these steps for one Organization at a time.&#x20;
 
-1. Create the Universal Broker connection you want to use. For details, see [Basic steps to install and configure Universal Broker](basic-steps-to-install-and-configure-universal-broker.md).
+1. Create the Universal Broker connection you want to use. For details, see [Basic steps to install and configure Universal Broker](../../../../enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker.md).
 2. Run the Universal Broker client. For details, see [Running your Universal Broker client](running-your-universal-broker-client.md).
 3. Use a test Organization to test the Universal Broker connection. Run `snyk-broker-config workflows connections integrate`  and enter the test Organization ID, using the same credentials as were used for the Classic Broker connection. The objective is to have the same access as the Classic Broker
 4. When you are ready, run `snyk-broker-config workflows connections migrate`.

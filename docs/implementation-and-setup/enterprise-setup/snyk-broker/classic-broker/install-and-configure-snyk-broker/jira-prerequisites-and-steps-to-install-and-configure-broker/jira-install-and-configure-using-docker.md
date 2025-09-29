@@ -1,6 +1,6 @@
 # Jira - install and configure using Docker
 
-Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../install-and-configure-broker-using-docker.md).
+Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md).
 
 This integration is useful to ensure a secure connection with your on-premise Jira deployment.
 
@@ -15,7 +15,7 @@ To use the Broker Client with a Jira deployment, run `docker pull snyk/broker:ji
 When installing, you must add a command in your script to set the `BROKER_SERVER_URL`. This is the URL of the Broker server for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-server-urls).
 {% endhint %}
 
-**Copy the following command** to set up a fully configured Broker Client to use with Jira. You can run the Docker container by providing the relevant configuration:
+Copy the following command to set up a fully configured Broker Client to use with Jira. You can run the Docker container by providing the relevant configuration:
 
 ```console
 docker run --restart=always \

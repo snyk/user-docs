@@ -85,8 +85,8 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk Broker**
 
 * Updated the Snyk Broker documentation to include distinct steps for setting up the [Container Registry Agent with Docker](implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent), whether using the Classic or Universal Broker.
-* Updated the [Using the API to set up Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
-* Snyk Learn courses have been integrated into the [Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/) pages.
+* Updated the [Using the API to set up Universal Broker](enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
+* Snyk Learn courses have been integrated into the [Universal Broker](enterprise-setup/snyk-broker/universal-broker/) pages.
 
 ### **Other updates**
 
@@ -176,8 +176,8 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk Broker**
 
-* The Snyk Broker section has been divided into [Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/) and [Classic Broker](implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/) documentation and the [main page](implementation-and-setup/enterprise-setup/snyk-broker/) has been updated.
-* The Classic Broker installation instructions now include the command to set the `BROKER_SERVER_URL` for [Docker](implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md) and the `brokerServerUrl` for [Helm](implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md).
+* The Snyk Broker section has been divided into [Universal Broker](enterprise-setup/snyk-broker/universal-broker/) and [Classic Broker](implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/) documentation and the [main page](implementation-and-setup/enterprise-setup/snyk-broker/) has been updated.
+* The Classic Broker installation instructions now include the command to set the `BROKER_SERVER_URL` for [Docker](enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md) and the `brokerServerUrl` for [Helm](enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md).
 
 ### **Snyk API**
 

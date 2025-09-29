@@ -97,7 +97,7 @@ docker run --restart=always \
 
 ### Universal Broker
 
-Deploy the Universal Broker by following the installation instructions available on the [Universal Broker ](../universal-broker/)page. The `snyk-broker-config` CLI tool guides you through the process of submitting and storing all configuration details needed to connect the Broker Client to the Container Registry Agent and the Container Registry.
+Deploy the Universal Broker by following the installation instructions available on the [Universal Broker ](../../../../enterprise-setup/snyk-broker/universal-broker/)page. The `snyk-broker-config` CLI tool guides you through the process of submitting and storing all configuration details needed to connect the Broker Client to the Container Registry Agent and the Container Registry.
 
 You must provide the following details while creating your connection:
 
@@ -205,9 +205,9 @@ ECR setup requires that the following kinds of IAM resources be created:
 
 The resources described can be used as follows, so that a single Container Registry Agent instance can access ECR repositories located in different accounts.
 
-**Run this step once only.** Create the Container Registry Agent IAM Role or IAM User and use it to run the Container Registry Agent. The IAM Role or IAM User could be provided to the Container Registry Agent using one of the methods described in the [AWS docs](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
+Run this step once only. Create the Container Registry Agent IAM Role or IAM User and use it to run the Container Registry Agent. The IAM Role or IAM User could be provided to the Container Registry Agent using one of the methods described in the [AWS docs](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
 
-**Run the following steps for each of your ECR accounts, using a separate Broker instance for each ECR account:**
+Run the following steps for each of your ECR accounts, using a separate Broker instance for each ECR account:
 
 1. In the AWS account where your ECR resides, create the Snyk ECR Service Role with read access to your ECR, and edit the trust relationship to allow this role to be assumed only by the specific Container Registry Agent IAM Role or IAM User created in the one-time step.
 2. Restrict the Container Registry Agent IAM Role or IAM User to be allowed to assume only the Snyk ECR Service Role(s).
