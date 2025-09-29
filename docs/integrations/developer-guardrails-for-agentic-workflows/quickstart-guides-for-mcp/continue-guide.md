@@ -1,12 +1,12 @@
-# Continue guid
+# Continue guide
 
 You can add the Snyk MCP server to Continue to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server asks for trust and trigger authentication if necessary.
 
 ## Prerequisites
 
-* [Install the Continue extension](continue-guid.md#install-continue)
+* [Install the Continue extension](continue-guide.md#install-continue)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](continue-guid.md#install-the-snyk-mcp-server-in-amazon-q)
+* [Install the Snyk MCP](continue-guide.md#install-the-snyk-mcp-server-in-amazon-q)
 
 ### Install Continue
 
