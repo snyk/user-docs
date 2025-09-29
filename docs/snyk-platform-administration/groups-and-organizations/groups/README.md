@@ -51,7 +51,7 @@ Select [**Dependencies**](../../../manage-risk/reporting/dependencies-and-licens
 
 Select [**Policies**](../../../manage-risk/policies/) to view the license and security policies or the assets policies for your Group.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Policies menu with focus on Assets tab</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Policies menu with focus on Assets tab</p></figcaption></figure>
 
 ### Group integrations
 

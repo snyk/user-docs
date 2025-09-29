@@ -51,7 +51,7 @@ There are two types of dual or multiple licenses:
 
 * AND **-** If the license explicitly has `AND`, customers must comply with all (dual or multiple) licenses.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt="" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
 
 In both of these cases, Snyk displays the severity of the license with the highest severity when displaying issues, where all licenses have a severity.&#x20;
 
