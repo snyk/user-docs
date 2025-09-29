@@ -78,12 +78,6 @@ Marking a vulnerability as successful does not ignore the issue but only allows 
 
 The issue is marked as **Passed** and shows up as **Skipped** in the PR Checks card in GitHub.
 
-## SCM integrations
-
-### GitLab
-
-Snyk sets the status on a merge request's latest pipeline based on scan results and the project's CI/CD configuration for merged results, merge requests, and branch pipelines. This feature blocks merge requests with security issues when the "Pipelines must succeed" [setting](https://docs.gitlab.com/user/project/merge_requests/auto_merge/#require-a-successful-pipeline-for-merge) is enabled.
-
 ## Troubleshooting PR checks
 
 [Troubleshooting PR Checks](troubleshoot-pr-checks.md) has more information on how to troubleshoot PR checks or how to restart them

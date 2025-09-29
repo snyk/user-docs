@@ -1724,7 +1724,7 @@
         }
       },
       "io.snyk.api.request.SnykApiRequest.interaction_id": {
-        "description": "Identifies the Snyk client interaction in which this API request occurs.\n\nThe identifier is an opaque string. though at the time of writing it may either be a\nuuid or a urn containing a uuid and some metadata.",
+        "description": "Identifies the Snyk client interaction in which this API request occurs.\n\nThe identifier is an opaque string. though at the time of writing it may either be a\nuuid or a urn containing a uuid and some metadata.\nto be safe, the",
         "in": "header",
         "name": "snyk-interaction-id",
         "schema": {
@@ -4193,24 +4193,6 @@
             "type": "object"
           },
           "lifecycle": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "product_name": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "project_tags": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "project_type": {
             "items": {
               "type": "string"
             },
@@ -7386,21 +7368,6 @@
             "orgs": [
               "985cdc6d-a88f-4af8-aa8b-37b22e2425aa",
               "4aa34312-7ded-4fd7-bca8-93eaab3e08d5"
-            ],
-            "product_name": [
-              "Snyk Code",
-              "Snyk Open Source",
-              "Snyk IaC",
-              "Snyk Container"
-            ],
-            "project_tags": [
-              "scanType: CSS",
-              "user: CLI-user"
-            ],
-            "project_type": [
-              "npm",
-              "pip",
-              "golang"
             ]
           },
           "formats": [
@@ -7467,21 +7434,6 @@
             },
             "lifecycle": [
               "PRODUCTION"
-            ],
-            "product_name": [
-              "Snyk Code",
-              "Snyk Open Source",
-              "Snyk IaC",
-              "Snyk Container"
-            ],
-            "project_tags": [
-              "scanType: CSS",
-              "user: CLI-user"
-            ],
-            "project_type": [
-              "npm",
-              "pip",
-              "golang"
             ]
           },
           "formats": [
@@ -10665,8 +10617,6 @@
             "type": "string"
           },
           "type": {
-            "description": "Connection type",
-            "example": "github",
             "type": "string"
           }
         },
@@ -10769,7 +10719,6 @@
                   "type": "boolean"
                 },
                 "reachability": {
-                  "description": "- function and package are both presented in e.g. reporting as \"Reachable\", meaning that a direct or indirect path was found from the application to the vulnerable code.\n- no-info is presented as \"No path found\", meaning that there was no path found from the application to the vulnerable code.\n- not-applicable is presented as \"Not applicable\" and it means that reachability information isn't applicable to the issue. E.g we do not provide reachability info for Snyk container issues.\n",
                   "enum": [
                     "function",
                     "package",
@@ -11923,25 +11872,6 @@
         ],
         "type": "object"
       },
-      "LearningProgramParticipantCreateResource": {
-        "properties": {
-          "type": {
-            "enum": [
-              "learning_program_participant"
-            ],
-            "type": "string"
-          },
-          "user_id": {
-            "format": "uuid",
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "user_id"
-        ],
-        "type": "object"
-      },
       "LearningProgramParticipantListResponse": {
         "additionalProperties": false,
         "properties": {
@@ -12006,116 +11936,11 @@
         ],
         "type": "object"
       },
-      "LearningProgramParticipantsCreateRequestBody": {
-        "additionalProperties": false,
-        "properties": {
-          "data": {
-            "description": "The resource data to be created.",
-            "items": {
-              "$ref": "#/components/schemas/LearningProgramParticipantCreateResource"
-            },
-            "maxItems": 1000,
-            "minItems": 1,
-            "type": "array",
-            "uniqueItems": true
-          }
-        },
-        "required": [
-          "data"
-        ],
-        "type": "object"
-      },
       "LearningProgramResource": {
         "additionalProperties": false,
         "properties": {
           "attributes": {
             "$ref": "#/components/schemas/LearningProgramAttributes"
-          },
-          "id": {
-            "description": "Unique identifier for the learning program",
-            "format": "uuid",
-            "type": "string"
-          },
-          "meta": {
-            "additionalProperties": false,
-            "properties": {
-              "participants_count": {
-                "description": "Number of participants enrolled in this learning program",
-                "minimum": 0,
-                "type": "integer"
-              }
-            },
-            "required": [
-              "participants_count"
-            ],
-            "type": "object"
-          },
-          "type": {
-            "description": "Resource type identifier",
-            "enum": [
-              "learning_program"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "id",
-          "type",
-          "attributes",
-          "meta"
-        ],
-        "type": "object"
-      },
-      "LearningProgramStatusEnum": {
-        "description": "Current status of the learning program",
-        "enum": [
-          "draft",
-          "scheduled",
-          "in_progress",
-          "complete"
-        ],
-        "type": "string"
-      },
-      "LearningProgramUpdateAttributes": {
-        "additionalProperties": false,
-        "properties": {
-          "description": {
-            "description": "Description of the learning program",
-            "type": "string"
-          },
-          "name": {
-            "description": "Name of the learning program",
-            "maxLength": 255,
-            "minLength": 1,
-            "type": "string"
-          },
-          "status": {
-            "description": "Status of the learning program (Only allow setting the learning program status to 'complete')",
-            "enum": [
-              "complete"
-            ],
-            "type": "string"
-          }
-        },
-        "type": "object"
-      },
-      "LearningProgramUpdateRequestBody": {
-        "additionalProperties": false,
-        "properties": {
-          "data": {
-            "$ref": "#/components/schemas/LearningProgramUpdateResource"
-          }
-        },
-        "required": [
-          "data"
-        ],
-        "type": "object"
-      },
-      "LearningProgramUpdateResource": {
-        "additionalProperties": false,
-        "properties": {
-          "attributes": {
-            "$ref": "#/components/schemas/LearningProgramUpdateAttributes"
           },
           "id": {
             "description": "Unique identifier for the learning program",
@@ -12136,6 +11961,16 @@
           "attributes"
         ],
         "type": "object"
+      },
+      "LearningProgramStatusEnum": {
+        "description": "Current status of the learning program",
+        "enum": [
+          "draft",
+          "scheduled",
+          "in_progress",
+          "complete"
+        ],
+        "type": "string"
       },
       "LessonAssignmentCreationAttributes": {
         "properties": {
@@ -12944,24 +12779,6 @@
             "type": "object"
           },
           "lifecycle": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "product_name": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "project_tags": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "project_type": {
             "items": {
               "type": "string"
             },
@@ -16285,7 +16102,7 @@
         "type": "object"
       },
       "SbomSubject": {
-        "description": "Test subject for SBOM test without reachability analysis.",
+        "description": "Test subject for SBOM test with reachability analysis.",
         "properties": {
           "locator": {
             "allOf": [
@@ -26826,7 +26643,7 @@
     },
     "/orgs/{org_id}/ai_boms": {
       "post": {
-        "description": "Triggers the creation of a new AI-BOM. The AI-BOM will be created in a background job. Users should query the background job status by using the getAiBomJob endpoint (/orgs/{org_id}/ai_bom_jobs/{job_id}). The response will contain a content-location header pointing to the getAiBomJob endpoint.\n\n#### Required permissions\n\n- `Edit Organization (org.edit)`",
+        "description": "Triggers the creation of a new AI-BOM. The AI-BOM will be created in a background job. Users should query the background job status by using the getAiBomJob endpoint (/orgs/{org_id}/ai_bom_jobs/{job_id}). The response will contain a content-location header pointing to the getAiBomJob endpoint.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "createAiBom",
         "parameters": [
           {
@@ -66211,93 +66028,6 @@
           "category": "learn"
         },
         "x-stability-level": "beta"
-      },
-      "patch": {
-        "description": "Updates a learning program by its ID for the specified tenant.\n\n#### Required permissions\n\n- `Edit Tenant Details (tenant.edit)`",
-        "operationId": "updateTenantLearningProgram",
-        "parameters": [
-          {
-            "description": "The unique identifier of the tenant.",
-            "in": "path",
-            "name": "tenant_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          },
-          {
-            "$ref": "#/components/parameters/LearningProgramId"
-          },
-          {
-            "$ref": "#/components/parameters/ApiVersion"
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/vnd.api+json": {
-              "schema": {
-                "$ref": "#/components/schemas/LearningProgramUpdateRequestBody"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "204": {
-            "description": "The learning program was updated successfully.",
-            "headers": {
-              "deprecation": {
-                "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "snyk-request-id": {
-                "$ref": "#/components/headers/RequestIdResponseHeader"
-              },
-              "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
-              },
-              "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
-              },
-              "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
-              },
-              "sunset": {
-                "$ref": "#/components/headers/SunsetHeader"
-              }
-            }
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "summary": "Update a learning program (Early Access)",
-        "tags": [
-          "Learning Program"
-        ],
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "learning_programs",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-snyk-documentation": {
-          "category": "learn"
-        },
-        "x-stability-level": "beta"
       }
     },
     "/tenants/{tenant_id}/learn/learning_programs/{learning_program_id}/contents": {
@@ -66577,90 +66307,6 @@
         "x-snyk-documentation": {
           "category": "learn"
         },
-        "x-stability-level": "beta"
-      },
-      "post": {
-        "description": "Creates participants for an existing learning program\n\n#### Required permissions\n\n- `Edit Tenant Details (tenant.edit)`",
-        "operationId": "createTenantLearningProgramParticipants",
-        "parameters": [
-          {
-            "description": "The unique identifier of the tenant.",
-            "in": "path",
-            "name": "tenant_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          },
-          {
-            "$ref": "#/components/parameters/LearningProgramId"
-          },
-          {
-            "$ref": "#/components/parameters/ApiVersion"
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/vnd.api+json": {
-              "schema": {
-                "$ref": "#/components/schemas/LearningProgramParticipantsCreateRequestBody"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "204": {
-            "description": "The learning program participants were created successfully.",
-            "headers": {
-              "deprecation": {
-                "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "snyk-request-id": {
-                "$ref": "#/components/headers/RequestIdResponseHeader"
-              },
-              "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
-              },
-              "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
-              },
-              "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
-              },
-              "sunset": {
-                "$ref": "#/components/headers/SunsetHeader"
-              }
-            }
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "summary": "Create learning program participants (Early Access)",
-        "tags": [
-          "Learning Program"
-        ],
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "learning_programs",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
       }
     },

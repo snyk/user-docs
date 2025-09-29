@@ -86,26 +86,6 @@ To review and adjust the pull request tests settings:
 
 <div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2023-05-02 at 11.21.53.png" alt="Configure PR Checks for your integration"><figcaption><p>Configure PR Checks for your integration</p></figcaption></figure></div>
 
-### Required builds feature support
-
-{% hint style="info" %}
-**Feature availability**
-
-You must have at least [Bitbucket Server 7.14](https://confluence.atlassian.com/bitbucketserver/bitbucket-data-center-and-server-7-14-release-notes-1069876097.html) and​ [Snyk Broker 4.218.0](https://github.com/snyk/broker/releases/tag/v4.218.0)​ for this feature.
-{% endhint %}
-
-The Snyk integration for Bitbucket Data Center/Server now supports the[ Required Builds](https://confluence.atlassian.com/bitbucketserver/checks-for-merging-pull-requests-776640039.html) feature for granular control over pull requests.
-
-You can select which Snyk security checks must pass before a merge can occur. Snyk reports distinct build statuses for different scan types (security vulnerabilities, license compliance, and code analysis), so you can configure your Bitbucket Data Center/Server repository to enforce specific security gates.
-
-To configure, open a pull request for the imported repository to make the build statuses available, then add them in the **Required builds** settings by navigating.
-
-To configure:
-
-1. Open a pull request from the imported repository to make the build statuses available in the settings list within Bitbucket.
-2. In the Bitbucket **Repository settings**, navigate to **Required builds** then **Add builds**.\
-   You can select the protected targets branch by name, pattern, or model, and specify any source branches which do not have to pass before merging to the target branch.
-
 ### Required permission scopes for the Bitbucket DC/Server integration
 
 Snyk performs all the Bitbucket DC/Server operations on behalf of the integrated service account.
