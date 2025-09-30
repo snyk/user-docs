@@ -4,9 +4,9 @@ You can add the Snyk MCP server to JetBrains AI Assistant to secure code generat
 
 ## Prerequisites
 
-* [Install the code assistant extension](amazon-q-guide-1.md#install-jetbrains-ai-assistant)
+* [Install the code assistant extension](jetbrains-ai-assistant.md#install-jetbrains-ai-assistant)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](amazon-q-guide-1.md#install-the-snyk-mcp-server-in-amazon-q)
+* [Install the Snyk MCP](jetbrains-ai-assistant.md#install-the-snyk-mcp-server-in-amazon-q)
 
 ### Install JetBrains AI Assistant
 
