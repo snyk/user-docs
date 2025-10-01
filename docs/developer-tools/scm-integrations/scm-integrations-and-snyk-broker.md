@@ -43,7 +43,7 @@ GitLab account with `Maintainer` permission.
 
 ## GitHub Server App for Universal Broker
 
-If your GithHub server is not publicly available, you can provide access to it through the Universal Broker, a proxy deployed in your internal network to facilitate outbound connections and communication with Snyk.
+If your GitHub server is not publicly available, you can provide access to it through the Universal Broker, a proxy deployed in your internal network to facilitate outbound connections and communication with Snyk.
 
 The setup process for Universal Broker involves:
 
