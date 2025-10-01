@@ -7,6 +7,29 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## September 2025
+
+### **Snyk Container**
+
+* The instructions for [installing the Snyk Controller on Amazon Elastic Kubernetes Service (Amazon AKS)](scan-with-snyk/snyk-container/kubernetes-integration/install-the-snyk-controller/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md#create-an-eks-node-role-for-your-node-group-and-add-the-trust-relationship-for-the-iam-role) have been updated with details for configuring trust relationships for the IAM role.
+* The list of [operating system distributions supported by Snyk Container](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) has been updated to include SUSE Linux Enterprise Server 15.7 and Rocky Linux 10.
+
+### **Snyk  Integrations**
+
+* The SCM integration for Bitbucket Data Center/Server now supports the Required Builds feature for granular control over pull requests. To learn more, visit [Required Builds](developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server.md#required-builds).
+* [GitLab](scan-with-snyk/pull-requests/pull-request-checks/analyze-pr-checks-results.md#gitlab) is supported for PR check results. This feature blocks merge requests with security issues when the "Pipelines must succeed" setting is enabled.
+* The Snyk MCP quick guides list has been enriched with the following guides: [Claude Code](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/claude-code-guide.md), [Continue](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/continue-guide.md), [JetBrains AI Assistant](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/jetbrains-ai-assistant.md), [JetBrains Junie](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/jetbrains-junie.md)
+
+### **Other updates**
+
+* For Java and Kotlin, the list of [supported Gradle versions](supported-languages/supported-languages-list/java-and-kotlin/#package-managers-and-supported-file-extensions) now includes Gradle 9.
+* For [Ruby](supported-languages/supported-languages-list/ruby.md), an end-of-support notice has been added  to say that starting Oct 1, 2025, Fix PRs are no longer supported for Projects using Ruby versions 3.1.x and lower. The table of supported Ruby versions has also been updated.
+* For Javascript, [support for pnpm Projects](supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js.md#pnpm) has been added.
+* `Raise Support Community Cases` and `View Support Community Cases` Tenant level permissions have been added. To learn more about which Tenant roles these permissions apply to, visit Pre-defined roles, [Tenant-level permissions](snyk-platform-administration/user-roles/pre-defined-roles.md#tenant-level-permissions).
+* The [Analytics](manage-risk/analytics/) menu now updates its data daily instead of hourly.
+* Learn how to resolve duplicated and unenriched assets discovered outside Group and Organization-level SCM integrations.&#x20;
+* You can now [exclude specific values](https://docs.snyk.io/manage-risk/reporting) when you filter your reports.&#x20;
+
 ## August 2025
 
 ### **Snyk API**&#x20;
