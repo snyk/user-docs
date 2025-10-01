@@ -1,8 +1,7 @@
 # Ruby
 
-{% hint style="warning" %}
-**End of support notice**\
-Effective October 1, 2025, Fix PRs are no longer supported for Projects using Ruby versions 3.1.x and lower. To avoid disruption, Snyk recommends upgrading to a supported Ruby version.
+{% hint style="info" %}
+Snyk does not support Fix PRs for Projects using Ruby versions 3.1.x and lower. To avoid disruption, Snyk recommends upgrading to a supported Ruby version.
 {% endhint %}
 
 ## Applicability and integration
@@ -27,18 +26,17 @@ Available functions:
 
 Snyk supports the following Ruby versions:
 
-| Ruby main version | Ruby specific version                                                                                                                                                                                             |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `2.3.X`           | `2.3.1`, `2.3.6`                                                                                                                                                                                                  |
-| `2.4.X`           | `2.4.0`, `2.4.1`, `2.4.2`, `2.4.5`, `2.4.6`, `2.4.9`                                                                                                                                                              |
-| `2.5.X`           | `2.5.0`, `2.5.1`, `2.5.3`                                                                                                                                                                                         |
-| `2.6.X`           | `2.6.1`, `2.6.3`, `2.6.5`, `2.6.6`                                                                                                                                                                                |
-| `2.7.X`           | `2.7.2`, `2.7.3`, `2.7.4`, `2.7.5`, `2.7.6`, `2.7.7`, `2.7.8`                                                                                                                                                     |
-| `3.0.X`           | `3.0.0`                                                                                                                                                                                                           |
-| `3.1.X`           | `3.1.0`, `3.1.1`, `3.1.2`, `3.1.3`                                                                                                                                                                                |
-| `3.2.X`           | `3.2.0`, `3.2.1`                                                                                                                                                                                                  |
-| `3.3.X`           | <p><code>3.3.0</code>, <code>3.3.1</code>, <code>3.3.2</code>, <code>3.3.3</code>, <code>3.3.4</code><br>, <code>3.3.5</code>, <code>3.3.6</code>, <code>3.3.7</code>, <code>3.3.8</code>, <code>3.3.9</code></p> |
-| `3.4.X`           | `3.4.0`, `3.4.1`, `3.4.2`, `3.4.3`, `3.4.4`, `3.4.5`                                                                                                                                                              |
+| Ruby main version | Ruby specific version |
+| ----------------- | --------------------- |
+| `2.4.X`           | `2.4.0` to `2.4.10`   |
+| `2.5.X`           | `2.5.0` to `2.5.9`    |
+| `2.6.X`           | `2.6.1` to `2.6.10`   |
+| `2.7.X`           | `2.7.0` to `2.7.8`    |
+| `3.0.X`           | `3.0.0` to `3.0.7`    |
+| `3.1.X`           | `3.1.0` to `3.1.7`    |
+| `3.2.X`           | `3.2.0` to `3.2.9`    |
+| `3.3.X`           | `3.3.0` to `3.3.9`    |
+| `3.4.X`           | `3.4.0` to `3.4.5`    |
 
 ### Supported frameworks and libraries
 
