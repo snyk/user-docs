@@ -17,12 +17,12 @@ The specific information you need to integrate Snyk AppRisk with Snyk Broker dep
 * Required: Your Snyk Broker toke&#x6E;**.**
 * How to obtain it:
   * Contact the Snyk Support team.
-  * Alternatively, generate it yourself by following the instructions to [Obtain your Broker token from the Web UI](classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-from-the-web-ui).
+  * Alternatively, generate it yourself by following the instructions to [Obtain your Broker token from the Web UI](../../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-from-the-web-ui).
 
 ### Prerequisite for using Snyk AppRisk with Universal Broker
 
 * Required: The identifier for your connection specific to your Universal Broker setup.
-* How to obtain it: You can find this identifier by referring to the [Validate your deployment (optional)](universal-broker/basic-steps-to-install-and-configure-universal-broker.md#validate-your-connection-optional) section within the [Basic steps to install and configure Universal Broker](universal-broker/basic-steps-to-install-and-configure-universal-broker.md) documentation.
+* How to obtain it: You can find this identifier by referring to the [Validate your deployment (optional)](../../../enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker.md#validate-your-connection-optional) section within the [Basic steps to install and configure Universal Broker](../../../enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker.md) documentation.
 
 ### Final step in integration for both Broker types
 
@@ -78,4 +78,3 @@ After the Snyk Broker connection with a third-party integration is established, 
 {"id":"broker-client-url-validation","name":"Broker Client URL Validation Check","status":"passing","output":"config check: ok"},{"id":"universal-broker-connections-config-validation","name":"Universal Broker Client Connections Configuration Check","status":"passing","output":"connections config check: ok"}],"version":"4.179.5","supportedIntegrationType":"apprisk"},"msg":"successfully established a websocket connection to the broker server","time":"2024-03-11T11:43:26.014Z","v":0}
 ```
 {% endcode %}
-

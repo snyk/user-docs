@@ -1,191 +1,160 @@
-## 2024-10-15 - Updated 2025-09-08
-
-### POST - `/orgs/{org_id}/policies` - Updated
-- removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `201`
-
-
-
-### GET - `/orgs/{org_id}/policies` - Updated
-- removed the `cancelled` enum value from the `data/items/attributes/review` response property for the response status `200`
-
-
-
-### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
-- removed the enum value `cancelled` of the request property `data/attributes/review`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `200`
-
-
-
-### GET - `/orgs/{org_id}/policies/{policy_id}` - Updated
-- removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `200`
-
-
-## 2024-10-15 - Updated 2025-08-15
-
-### GET - `/orgs/{org_id}/policies` - Updated
-- added the new enum value `ignore-type` to the `query` request parameter `order_by`
-
-- added the new enum value `requested-by` to the `query` request parameter `order_by`
-
-
-## 2024-10-15 - Updated 2025-08-14
-
-### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
-- added the new `cancelled` enum value to the request property `data/attributes/review`
-
-
-## 2024-10-15 - Updated 2025-08-06
+## 2024-10-15 - Updated 2025-09-29
 
 ### POST - `/orgs/{org_id}/export` - Updated
-- removed the request property `data/attributes/destination`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new optional request property `data/attributes/filters/product_name`
+
+- added the new optional request property `data/attributes/filters/project_tags`
+
+- added the new optional request property `data/attributes/filters/project_type`
+
 
 
 ### POST - `/groups/{group_id}/export` - Updated
-- removed the request property `data/attributes/destination`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new optional request property `data/attributes/filters/product_name`
 
-## 2024-10-15 - Updated 2025-07-07
+- added the new optional request property `data/attributes/filters/project_tags`
 
-### POST - `/orgs/{org_id}/service_accounts` - Updated
-- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `201`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the new optional request property `data/attributes/access_token_expires_at`
-
-- added the new `access_token` enum value to the request property `data/attributes/auth_type`
-
-- added the optional property `data/attributes/access_token` to the response with the `201` status
-
-- added the optional property `data/attributes/access_token_expires_at` to the response with the `201` status
-
-- added the optional property `data/attributes/created_at` to the response with the `201` status
-
-
-
-### GET - `/orgs/{org_id}/service_accounts` - Updated
-- added the new `access_token` enum value to the `data/items/attributes/auth_type` response property for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the optional property `data/items/attributes/access_token` to the response with the `200` status
-
-- added the optional property `data/items/attributes/access_token_expires_at` to the response with the `200` status
-
-- added the optional property `data/items/attributes/created_at` to the response with the `200` status
-
-
-
-### PATCH - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated
-- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the optional property `data/attributes/access_token` to the response with the `200` status
-
-- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
-
-- added the optional property `data/attributes/created_at` to the response with the `200` status
-
-
-
-### GET - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated
-- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the optional property `data/attributes/access_token` to the response with the `200` status
-
-- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
-
-- added the optional property `data/attributes/created_at` to the response with the `200` status
-
-
-
-### POST - `/orgs/{org_id}/service_accounts/{serviceaccount_id}/secrets` - Updated
-- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the optional property `data/attributes/access_token` to the response with the `200` status
-
-- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
-
-- added the optional property `data/attributes/created_at` to the response with the `200` status
-
-
-
-### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
-- added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
-
-
-
-### POST - `/orgs/{org_id}/packages/issues` - Updated
-- added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
-
-
-
-### POST - `/groups/{group_id}/service_accounts` - Updated
-- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `201`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the new optional request property `data/attributes/access_token_expires_at`
-
-- added the new `access_token` enum value to the request property `data/attributes/auth_type`
-
-- added the optional property `data/attributes/access_token` to the response with the `201` status
-
-- added the optional property `data/attributes/access_token_expires_at` to the response with the `201` status
-
-- added the optional property `data/attributes/created_at` to the response with the `201` status
-
-
-
-### GET - `/groups/{group_id}/service_accounts` - Updated
-- added the new `access_token` enum value to the `data/items/attributes/auth_type` response property for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the optional property `data/items/attributes/access_token` to the response with the `200` status
-
-- added the optional property `data/items/attributes/access_token_expires_at` to the response with the `200` status
-
-- added the optional property `data/items/attributes/created_at` to the response with the `200` status
-
-- added the optional property `meta` to the response with the `200` status
-
-
-
-### PATCH - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated
-- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the optional property `data/attributes/access_token` to the response with the `200` status
-
-- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
-
-- added the optional property `data/attributes/created_at` to the response with the `200` status
-
-
-
-### GET - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated
-- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the optional property `data/attributes/access_token` to the response with the `200` status
-
-- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
-
-- added the optional property `data/attributes/created_at` to the response with the `200` status
-
-
-
-### POST - `/groups/{group_id}/service_accounts/{serviceaccount_id}/secrets` - Updated
-- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-- added the optional property `data/attributes/access_token` to the response with the `200` status
-
-- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
-
-- added the optional property `data/attributes/created_at` to the response with the `200` status
+- added the new optional request property `data/attributes/filters/project_type`
 
 
 # Changelog
 
-### 2024-10-15 - Updated 2025-06-12
+### 2024-10-15 - Updated 2025-09-08
 
-#### GET - `/tenants` - Added
+#### POST - `/orgs/{org_id}/policies` - Updated
+
+* removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `201`
+
+#### GET - `/orgs/{org_id}/policies` - Updated
+
+* removed the `cancelled` enum value from the `data/items/attributes/review` response property for the response status `200`
+
+#### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
+
+* removed the enum value `cancelled` of the request property `data/attributes/review` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+* removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `200`
+
+#### GET - `/orgs/{org_id}/policies/{policy_id}` - Updated
+
+* removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `200`
+
+### 2024-10-15 - Updated 2025-08-15
+
+#### GET - `/orgs/{org_id}/policies` - Updated
+
+* added the new enum value `ignore-type` to the `query` request parameter `order_by`
+* added the new enum value `requested-by` to the `query` request parameter `order_by`
+
+### 2024-10-15 - Updated 2025-08-14
+
+#### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
+
+* added the new `cancelled` enum value to the request property `data/attributes/review`
+
+### 2024-10-15 - Updated 2025-08-06
+
+#### POST - `/orgs/{org_id}/export` - Updated
+
+* removed the request property `data/attributes/destination` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+#### POST - `/groups/{group_id}/export` - Updated
+
+* removed the request property `data/attributes/destination` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+### 2024-10-15 - Updated 2025-07-07
+
+#### POST - `/orgs/{org_id}/service_accounts` - Updated
+
+* added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `201` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+* added the new optional request property `data/attributes/access_token_expires_at`
+* added the new `access_token` enum value to the request property `data/attributes/auth_type`
+* added the optional property `data/attributes/access_token` to the response with the `201` status
+* added the optional property `data/attributes/access_token_expires_at` to the response with the `201` status
+* added the optional property `data/attributes/created_at` to the response with the `201` status
+
+#### GET - `/orgs/{org_id}/service_accounts` - Updated
+
+* added the new `access_token` enum value to the `data/items/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+* added the optional property `data/items/attributes/access_token` to the response with the `200` status
+* added the optional property `data/items/attributes/access_token_expires_at` to the response with the `200` status
+* added the optional property `data/items/attributes/created_at` to the response with the `200` status
+
+#### PATCH - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated
+
+* added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+* added the optional property `data/attributes/access_token` to the response with the `200` status
+* added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+* added the optional property `data/attributes/created_at` to the response with the `200` status
+
+#### GET - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated
+
+* added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+* added the optional property `data/attributes/access_token` to the response with the `200` status
+* added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+* added the optional property `data/attributes/created_at` to the response with the `200` status
+
+#### POST - `/orgs/{org_id}/service_accounts/{serviceaccount_id}/secrets` - Updated
+
+* added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+* added the optional property `data/attributes/access_token` to the response with the `200` status
+* added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+* added the optional property `data/attributes/created_at` to the response with the `200` status
+
+#### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+
+* added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
+
+#### POST - `/orgs/{org_id}/packages/issues` - Updated
+
+* added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
+
+#### POST - `/groups/{group_id}/service_accounts` - Updated
+
+* added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `201` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+* added the new optional request property `data/attributes/access_token_expires_at`
+* added the new `access_token` enum value to the request property `data/attributes/auth_type`
+* added the optional property `data/attributes/access_token` to the response with the `201` status
+* added the optional property `data/attributes/access_token_expires_at` to the response with the `201` status
+* added the optional property `data/attributes/created_at` to the response with the `201` status
+
+#### GET - `/groups/{group_id}/service_accounts` - Updated
+
+* added the new `access_token` enum value to the `data/items/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+* added the optional property `data/items/attributes/access_token` to the response with the `200` status
+* added the optional property `data/items/attributes/access_token_expires_at` to the response with the `200` status
+* added the optional property `data/items/attributes/created_at` to the response with the `200` status
+* added the optional property `meta` to the response with the `200` status
+
+#### PATCH - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated
+
+* added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+* added the optional property `data/attributes/access_token` to the response with the `200` status
+* added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+* added the optional property `data/attributes/created_at` to the response with the `200` status
+
+#### GET - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated
+
+* added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+* added the optional property `data/attributes/access_token` to the response with the `200` status
+* added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+* added the optional property `data/attributes/created_at` to the response with the `200` status
+
+#### POST - `/groups/{group_id}/service_accounts/{serviceaccount_id}/secrets` - Updated
+
+* added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+* added the optional property `data/attributes/access_token` to the response with the `200` status
+* added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+* added the optional property `data/attributes/created_at` to the response with the `200` status
+
+## Changelog
+
+#### 2024-10-15 - Updated 2025-06-12
+
+**GET - `/tenants` - Added**
 
 * Get a list of all Tenants which the calling user is a member of
 
-#### PATCH - `/tenants/{tenant_id}` - Added
+**PATCH - `/tenants/{tenant_id}` - Added**
 
 * Update the details of a tenant
 
@@ -193,7 +162,7 @@
 
 * `Edit Tenant Details (tenant.edit)`
 
-#### GET - `/tenants/{tenant_id}` - Added
+**GET - `/tenants/{tenant_id}` - Added**
 
 * Get the full details of a Tenant.
 
@@ -201,7 +170,7 @@
 
 * `View Tenant Details (tenant.read)`
 
-#### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}/bulk_migration` - Added
+**POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}/bulk_migration` - Added**
 
 * Performs bulk migration for integrations from legacy to universal broker
 
@@ -209,7 +178,7 @@
 
 * `View Tenant Details (tenant.read)`
 
-#### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}/bulk_migration` - Added
+**GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}/bulk_migration` - Added**
 
 * Lists organization IDs associated with a connection type to be bulk migrated to universal broker
 
@@ -217,34 +186,34 @@
 
 * `View Tenant Details (tenant.read)`
 
-#### GET - `/orgs/{org_id}` - Updated
+**GET - `/orgs/{org_id}` - Updated**
 
 * added the new optional `query` request parameter `expand`
 * added the optional property `data/relationships` to the response with the `200` status
 
-#### GET - `/orgs/{org_id}/projects` - Updated
+**GET - `/orgs/{org_id}/projects` - Updated**
 
 * added the optional property `data/items/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
 
-#### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+**PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated**
 
 * added the optional property `data/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
 
-#### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+**GET - `/orgs/{org_id}/projects/{project_id}` - Updated**
 
 * added the optional property `data/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
 
-#### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+**GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated**
 
 * removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### POST - `/orgs/{org_id}/packages/issues` - Updated
+**POST - `/orgs/{org_id}/packages/issues` - Updated**
 
 * removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-### 2024-10-15 - Updated 2025-06-04
+#### 2024-10-15 - Updated 2025-06-04
 
-#### GET - `/groups/{group_id}/assets/{asset_id}` - Added
+**GET - `/groups/{group_id}/assets/{asset_id}` - Added**
 
 * Get an Asset by its ID
 
@@ -252,7 +221,7 @@
 
 * `View Groups (group.read)`
 
-#### GET - `/groups/{group_id}/assets/{asset_id}/relationships/projects` - Added
+**GET - `/groups/{group_id}/assets/{asset_id}/relationships/projects` - Added**
 
 * List asset projects with pagination
 
@@ -260,7 +229,7 @@
 
 * `View Groups (group.read)`
 
-#### GET - `/groups/{group_id}/assets/{asset_id}/relationships/assets` - Added
+**GET - `/groups/{group_id}/assets/{asset_id}/relationships/assets` - Added**
 
 * List related assets with pagination
 
@@ -268,7 +237,7 @@
 
 * `View Groups (group.read)`
 
-#### POST - `/groups/{group_id}/assets/search` - Added
+**POST - `/groups/{group_id}/assets/search` - Added**
 
 * List Assets with filters
 
@@ -276,9 +245,9 @@
 
 * `View Groups (group.read)`
 
-### 2024-10-15 - Updated 2025-05-27
+#### 2024-10-15 - Updated 2025-05-27
 
-#### GET - `/orgs/{org_id}` - Updated
+**GET - `/orgs/{org_id}` - Updated**
 
 * the response property `data` became optional for the status `200`![Badge](https://img.shields.io/badge/Breaking-yellow)
 * the response property `jsonapi` became optional for the status `200`![Badge](https://img.shields.io/badge/Breaking-yellow)
@@ -294,206 +263,206 @@
 * the response property `data/attributes` became required for the status `200`
 * the `data/type` response`s property pattern` ^\[a-z]\[a-z0-9]_(\_\[a-z]\[a-z0-9]_)\*$`was added for the status`200\`
 
-### 2024-10-15 - Updated 2025-05-20
+#### 2024-10-15 - Updated 2025-05-20
 
-#### GET - `/orgs/{org_id}/projects` - Updated
+**GET - `/orgs/{org_id}/projects` - Updated**
 
 * added the optional property `data/items/attributes/settings/pull_requests/is_enabled` to the response with the `200` status
 
-#### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+**PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated**
 
 * added the optional property `data/attributes/settings/pull_requests/is_enabled` to the response with the `200` status
 
-#### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+**GET - `/orgs/{org_id}/projects/{project_id}` - Updated**
 
 * added the optional property `data/attributes/settings/pull_requests/is_enabled` to the response with the `200` status
 
-### 2024-10-15 - Updated 2025-05-15
+#### 2024-10-15 - Updated 2025-05-15
 
-#### GET - `/orgs/{org_id}/policies` - Updated
+**GET - `/orgs/{org_id}/policies` - Updated**
 
 * added the new optional `query` request parameter `order_by`
 * added the new optional `query` request parameter `order_direction`
 
-### 2024-10-15 - Updated 2025-05-08
+#### 2024-10-15 - Updated 2025-05-08
 
-#### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
-
-* added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
-
-#### POST - `/orgs/{org_id}/packages/issues` - Updated
+**GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated**
 
 * added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-### 2024-10-15 - Updated 2025-04-28
+**POST - `/orgs/{org_id}/packages/issues` - Updated**
 
-#### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+* added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
+
+#### 2024-10-15 - Updated 2025-04-28
+
+**GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated**
 
 * removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### POST - `/orgs/{org_id}/packages/issues` - Updated
+**POST - `/orgs/{org_id}/packages/issues` - Updated**
 
 * removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### GET - `/orgs/{org_id}/issues` - Updated
+**GET - `/orgs/{org_id}/issues` - Updated**
 
 * added the optional property `data/items/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
 * added the optional property `data/items/attributes/key_asset` to the response with the `200` status
 
-#### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+**GET - `/orgs/{org_id}/issues/{issue_id}` - Updated**
 
 * added the optional property `data/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
 * added the optional property `data/attributes/key_asset` to the response with the `200` status
 
-#### GET - `/groups/{group_id}/issues` - Updated
+**GET - `/groups/{group_id}/issues` - Updated**
 
 * added the optional property `data/items/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
 * added the optional property `data/items/attributes/key_asset` to the response with the `200` status
 
-#### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+**GET - `/groups/{group_id}/issues/{issue_id}` - Updated**
 
 * added the optional property `data/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
 * added the optional property `data/attributes/key_asset` to the response with the `200` status
 
-### 2024-10-15 - Updated 2025-04-25
+#### 2024-10-15 - Updated 2025-04-25
 
-#### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Added
+**POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Added**
 
 * Creates a new Broker Deployment for an installation
 
-#### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Added
+**GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Added**
 
 * List Broker deployments for a given install ID
 
-#### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}` - Added
+**PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}` - Added**
 
 * Updates a Broker deployment for a given install ID
 
-#### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}` - Added
+**DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}` - Added**
 
 * Delete a Broker deployment for a given install ID
 
-#### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials` - Added
+**POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials` - Added**
 
 * Creates a new Deployment credential
 
-#### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials` - Added
+**GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials` - Added**
 
 * List Deployment credentials for a given deployment ID
 
-#### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added
+**PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added**
 
 * Updates a Deployment credential for an deployment
 
-#### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added
+**GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added**
 
 * Get all Deployment credential data for an deployment
 
-#### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added
+**DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added**
 
 * Deletes an existing Deployment credential for an deployment
 
-#### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts` - Added
+**POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts` - Added**
 
 * Creates a new Broker Context
 
-#### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts` - Added
+**GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts` - Added**
 
 * List Deployment contexts for a given deployment ID
 
-#### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added
+**POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added**
 
 * Creates a new Broker connection for an deployment
 
-#### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added
+**GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added**
 
 * List all Broker connections for a given deployment
 
-#### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added
+**DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added**
 
 * Deletes all existing Broker connections for an deployment
 
-#### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added
+**PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added**
 
 * Updates a Broker connection for an deployment
 
-#### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added
+**GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added**
 
 * Get all Broker connection data for an deployment
 
-#### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added
+**DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added**
 
 * Deletes an existing Broker connection for an deployment
 
-#### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+**PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added**
 
 * Updates a Broker Context for an deployment
 
-#### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+**GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added**
 
 * List Broker context for a given broker context ID
 
-#### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+**DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added**
 
 * Deletes an existing broker context
 
-#### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integrations/{integration_id}` - Added
+**DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integrations/{integration_id}` - Added**
 
 * Deletes an existing Broker context association for an integration
 
-#### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integration` - Added
+**PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integration` - Added**
 
 * Updates an integration to be associated with a Broker context
 
-#### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/connections/{connection_id}/contexts` - Added
+**GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/connections/{connection_id}/contexts` - Added**
 
 * List Broker contexts for a given broker connection ID
 
-#### GET - `/tenants/{tenant_id}/brokers/deployments` - Added
+**GET - `/tenants/{tenant_id}/brokers/deployments` - Added**
 
 * List Broker deployments for the tenant
 
-#### DELETE - `/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integrations/{integration_id}` - Added
+**DELETE - `/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integrations/{integration_id}` - Added**
 
 * Deletes an existing Broker connection for an deployment
 
-#### POST - `/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integration` - Added
+**POST - `/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integration` - Added**
 
 * Configures integrations to use the Broker connection for an deployment
 
-#### GET - `/tenants/{tenant_id}/brokers/connections/{connection_id}/integrations` - Added
+**GET - `/tenants/{tenant_id}/brokers/connections/{connection_id}/integrations` - Added**
 
 * Get all integrations using the Broker connection
 
-#### POST - `/orgs/{org_id}/policies` - Updated
+**POST - `/orgs/{org_id}/policies` - Updated**
 
 * the `data/attributes/action/data/reason` request property`s maxLength was set to` 10000\`![Badge](https://img.shields.io/badge/Breaking-yellow)
 * the `data/attributes/name` request property`s maxLength was set to` 255\`![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-#### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
+**PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated**
 
 * the `data/attributes/action/data/reason` request property`s maxLength was set to` 10000\`![Badge](https://img.shields.io/badge/Breaking-yellow)
 * the `data/attributes/name` request property`s maxLength was set to` 255\`![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-#### GET - `/orgs/{org_id}/brokers/connections` - Added
+**GET - `/orgs/{org_id}/brokers/connections` - Added**
 
 * List all Broker connections integrated with a given org
 
-### 2024-10-15 - Updated 2025-04-22
+#### 2024-10-15 - Updated 2025-04-22
 
-#### GET - `/orgs/{org_id}/policies` - Updated
+**GET - `/orgs/{org_id}/policies` - Updated**
 
 * added the new optional `query` request parameter `search`
 
-### 2024-10-15 - Updated 2025-04-02
+#### 2024-10-15 - Updated 2025-04-02
 
-#### POST - `/orgs/{org_id}/policies` - Updated
+**POST - `/orgs/{org_id}/policies` - Updated**
 
 * added the new optional request property `data/meta`
 
-### 2024-10-15 - Updated 2025-04-01
+#### 2024-10-15 - Updated 2025-04-01
 
-#### POST - `/orgs/{org_id}/memberships` - Updated
+**POST - `/orgs/{org_id}/memberships` - Updated**
 
 * the request property `data` became required![Badge](https://img.shields.io/badge/Breaking-yellow)
 * the request property `data/relationships` became required![Badge](https://img.shields.io/badge/Breaking-yellow)
@@ -508,15 +477,15 @@
 * the request property `data/relationships/user/data/type` became required![Badge](https://img.shields.io/badge/Breaking-yellow)
 * the request property `data/type` became required![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-### 2024-10-15 - Updated 2025-03-19
+#### 2024-10-15 - Updated 2025-03-19
 
-#### PATCH - `/orgs/{org_id}/memberships/{membership_id}` - Updated
+**PATCH - `/orgs/{org_id}/memberships/{membership_id}` - Updated**
 
 * the request property `data` became required![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-## Changelog
+### Changelog
 
-#### 2024-10-15 - Updated 2025-03-04
+**2024-10-15 - Updated 2025-03-04**
 
 **GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated**
 
@@ -526,7 +495,7 @@
 
 * added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### 2024-10-15 - Updated 2025-02-11
+**2024-10-15 - Updated 2025-02-11**
 
 **GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated**
 
@@ -536,7 +505,7 @@
 
 * removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### 2024-10-15 - Updated 2025-02-04
+**2024-10-15 - Updated 2025-02-04**
 
 **POST - `/orgs/{org_id}/policies` - Added**
 
@@ -568,7 +537,7 @@ _Org level Policy APIs Access Notice:_ Access to our Org level Policy APIs is cu
 
 _Org level Policy APIs Access Notice:_ Access to our Org level Policy APIs is currently restricted via "snykCodeConsistentIgnores" feature flag and will result in a 403 Forbidden error without the flag enabled. Please contact your account representative for eligibility requirements.
 
-#### 2024-10-15 - Updated 2025-01-22
+**2024-10-15 - Updated 2025-01-22**
 
 **GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated**
 
@@ -578,7 +547,7 @@ _Org level Policy APIs Access Notice:_ Access to our Org level Policy APIs is cu
 
 * added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### 2024-10-15 - Updated 2025-01-13
+**2024-10-15 - Updated 2025-01-13**
 
 **GET - `/orgs/{org_id}/issues` - Updated**
 
@@ -600,7 +569,7 @@ _Org level Policy APIs Access Notice:_ Access to our Org level Policy APIs is cu
 * added the optional property `data/attributes/exploit_details` to the response with the `200` status
 * added the optional property `data/attributes/severities` to the response with the `200` status
 
-#### 2024-10-15 - Updated 2025-01-07
+**2024-10-15 - Updated 2025-01-07**
 
 **GET - `/orgs/{org_id}/issues` - Updated**
 
@@ -622,7 +591,7 @@ _Org level Policy APIs Access Notice:_ Access to our Org level Policy APIs is cu
 * added `loaded_package` discriminator mapping keys to the `data/attributes/risk/factors/items/` response property for the response status `200`
 * added `#/components/schemas/LoadedPackageRiskFactor` to the `data/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
 
-#### 2024-10-15 - Updated 2024-12-09
+**2024-10-15 - Updated 2024-12-09**
 
 **GET - `/orgs/{org_id}` - Updated**
 
@@ -640,13 +609,13 @@ _Org level Policy APIs Access Notice:_ Access to our Org level Policy APIs is cu
 * the response property `data/attributes` became required for the status `200`
 * the `data/type` response`s property pattern` ^\[a-z]\[a-z0-9]_(\_\[a-z]\[a-z0-9]_)\*$`was added for the status`200\`
 
-#### 2024-10-15 - Updated 2024-11-28
+**2024-10-15 - Updated 2024-11-28**
 
 **GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Updated**
 
 * added the new optional `query` request parameter `exclude`
 
-#### 2024-10-15 - Updated 2024-11-06
+**2024-10-15 - Updated 2024-11-06**
 
 **GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated**
 
@@ -656,7 +625,7 @@ _Org level Policy APIs Access Notice:_ Access to our Org level Policy APIs is cu
 
 * removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### 2024-10-15 - Updated 2024-10-31
+**2024-10-15 - Updated 2024-10-31**
 
 **GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated**
 
@@ -666,7 +635,7 @@ _Org level Policy APIs Access Notice:_ Access to our Org level Policy APIs is cu
 
 * added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### 2024-10-15 - Updated 2024-10-30
+**2024-10-15 - Updated 2024-10-30**
 
 **GET - `/orgs/{org_id}/issues` - Updated**
 
@@ -696,13 +665,13 @@ _Org level Policy APIs Access Notice:_ Access to our Org level Policy APIs is cu
 * added the new `not-applicable` enum value to the `data/attributes/coordinates/items/reachability` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the new `package` enum value to the `data/attributes/coordinates/items/reachability` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-#### 2024-10-15
+**2024-10-15**
 
 **Simplified API Versioning**
 
 Going forward, Snyk will expose one API specification per version-date, rather than one for each stability. New versions of the Snyk API will only be published when necessitated by breaking changes. For newer versions, you should only specify the date for beta versions, i.e `2024-10-15` rather than `2024-10-15~beta`. It's important to note that existing versions won't be affected by these changes; this new approach only applies to upcoming new versions.
 
-#### 2024-08-25 - Updated 2024-10-10
+**2024-08-25 - Updated 2024-10-10**
 
 **GET - `/self` - Updated**
 
@@ -746,7 +715,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 * the `data/items/attributes/role` response`s property type/format changed from` string`/`uuid`to`string`/`` for status` 200\` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * removed the `org_invitation` enum value from the `data/items/type` response property for the response status `200`
 
-#### 2024-08-25 - Updated 2024-09-11
+**2024-08-25 - Updated 2024-09-11**
 
 **POST - `/orgs/{org_id}/apps` - Updated**
 
@@ -779,7 +748,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 * the response property `data/attributes/client_id` became required for the status `200`
 * the response property `data/attributes/redirect_uris` became required for the status `200`
 
-#### 2024-08-25 - Updated 2024-09-03
+**2024-08-25 - Updated 2024-09-03**
 
 **POST - `/groups/{group_id}/memberships` - Updated**
 
@@ -815,7 +784,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 * the response property `data/items/relationships/user/data/attributes/username` became required for the status `200`
 * the response property `data/items/relationships/user/data/id` became required for the status `200`
 
-#### 2024-08-25 - Updated 2024-08-30
+**2024-08-25 - Updated 2024-08-30**
 
 **POST - `/orgs/{org_id}/memberships` - Updated**
 
@@ -851,7 +820,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 * the response property `data/items/relationships/user/data/attributes/username` became required for the status `200`
 * the response property `data/items/relationships/user/data/id` became required for the status `200`
 
-#### 2024-08-25
+**2024-08-25**
 
 **POST - `/orgs/{org_id}/memberships` - Added**
 
@@ -889,7 +858,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * Deletes a membership from a group
 
-#### 2024-08-22
+**2024-08-22**
 
 **GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Updated**
 
@@ -907,7 +876,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 * added the new enum value `cyclonedx1.6+json` to the `query` request parameter `format`
 * added the new enum value `cyclonedx1.6+xml` to the `query` request parameter `format`
 
-#### 2024-08-15
+**2024-08-15**
 
 **GET - `/orgs/{org_id}/audit_logs/search` - Updated**
 
@@ -917,7 +886,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * for the `query` request parameter `size`, default value `100.00` was added ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-#### 2024-06-21 - Updated 2024-06-27
+**2024-06-21 - Updated 2024-06-27**
 
 **POST - `/orgs/{org_id}/collections` - Updated**
 
@@ -943,7 +912,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 * the `data/attributes/name` response property's minLength was decreased from `1` to `0` for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * the `data/attributes/name` response's property pattern `^([a-zA-Z0-9 _\-\/:.])+$` was removed for the status `200`
 
-#### 2024-06-21 - Updated 2024-06-25
+**2024-06-21 - Updated 2024-06-25**
 
 **PATCH - `/orgs/{org_id}` - Updated**
 
@@ -956,13 +925,13 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 * removed the pattern `^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$` from the request property `data/type`
 * the `data/type` response's property pattern `^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$` was removed for the status `200`
 
-#### 2024-06-21
+**2024-06-21**
 
 **POST - `/orgs/{org_id}/invites` - Updated**
 
 * removed the request property `data/relationships` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-#### 2024-06-18
+**2024-06-18**
 
 **POST - `/groups/{group_id}/settings/pull_request_template` - Updated**
 
@@ -973,7 +942,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * removed the optional property `data/attributes/branch_name` from the response with the `200` status ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-#### 2024-06-06
+**2024-06-06**
 
 **GET - `/orgs/{org_id}/projects` - Updated**
 
@@ -987,7 +956,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * removed the optional property `data/attributes/settings/auto_dependency_upgrade/is_inherited` from the response with the `200` status ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-#### 2024-05-23
+**2024-05-23**
 
 **DELETE - `/self/apps/installs/{install_id}` - Updated**
 
@@ -1001,7 +970,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * api operation id `deleteGroupAppInstallByID` removed and replaced with `deleteGroupAppInstallById`
 
-#### 2024-05-08
+**2024-05-08**
 
 **POST - `/groups/{group_id}/settings/pull_request_template` - Added**
 
@@ -1015,7 +984,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * Delete your groups pull request template. This means Snyk pull requests will start to use the default template for this group.
 
-#### 2024-04-29
+**2024-04-29**
 
 **GET - `/orgs/{org_id}/audit_logs/search` - Updated**
 
@@ -1031,7 +1000,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 * added the new optional `query` request parameter `events`
 * added the new optional `query` request parameter `exclude_events`
 
-#### 2024-04-22
+**2024-04-22**
 
 **GET - `/self` - Added**
 
@@ -1049,7 +1018,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
 
-#### 2024-02-28
+**2024-02-28**
 
 **GET - `/orgs` - Updated**
 
@@ -1070,7 +1039,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * Get a paginated list of all the organizations belonging to the group. By default, this endpoint returns the organizations in alphabetical order of their name.
 
-#### 2024-02-21
+**2024-02-21**
 
 **GET - `/orgs/{org_id}/targets` - Added**
 
@@ -1096,7 +1065,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * removed `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` from the `data/relationships/target` response property `oneOf` list for the response status `200`
 
-#### 2024-01-23
+**2024-01-23**
 
 **GET - `/orgs/{org_id}/issues` - Added**
 
@@ -1114,7 +1083,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * Get an issue
 
-#### 2024-01-04
+**2024-01-04**
 
 **POST - `/custom_base_images` - Updated**
 
@@ -1130,13 +1099,13 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * removed `#/components/schemas/VersioningSchemaDateType` from the `data/attributes/versioning_schema` response property `oneOf` list for the response status `200`
 
-#### 2023-11-06
+**2023-11-06**
 
 **DELETE - `/orgs/{org_id}/projects/{project_id}` - Added**
 
 * Delete one project in the organization by project ID.
 
-#### 2023-11-03
+**2023-11-03**
 
 **GET - `/self/apps/{app_id}/sessions` - Added**
 
@@ -1238,7 +1207,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * Manage client secret for non-interactive Snyk App installations.
 
-#### 2023-11-02
+**2023-11-02**
 
 **GET - `/orgs/{org_id}/container_images` - Added**
 
@@ -1252,7 +1221,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * List instances of image target references for a container image
 
-#### 2023-09-13
+**2023-09-13**
 
 **GET - `/orgs/{org_id}/projects` - Updated**
 
@@ -1266,7 +1235,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * added `#/components/schemas/Relationship, #/components/schemas/ProjectRelationshipsTarget` to the `data/relationships/target` response property `oneOf` list for the response status `200`
 
-#### 2023-09-12
+**2023-09-12**
 
 **GET - `/orgs/{org_id}/projects` - Updated**
 
@@ -1312,7 +1281,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * Remove projects from a collection by specifying an array of project ids
 
-#### 2023-09-11
+**2023-09-11**
 
 **PATCH - `/orgs/{org_id}/settings/sast` - Added**
 
@@ -1430,7 +1399,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
   * group.user.remove
   * group.user.role.edit
 
-#### 2023-09-07
+**2023-09-07**
 
 **POST - `/orgs/{org_id}/service_accounts` - Added**
 
@@ -1480,7 +1449,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * Manage the client secret of a group service account by the service account ID.
 
-#### 2023-08-28
+**2023-08-28**
 
 **GET - `/orgs/{org_id}/projects` - Updated**
 
@@ -1493,7 +1462,7 @@ Going forward, Snyk will expose one API specification per version-date, rather t
 
 * deleted the `query` request parameter `user_id` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-#### 2023-08-21
+**2023-08-21**
 
 **POST - `/orgs/{org_id}/packages/issues` - Updated**
 
@@ -1523,13 +1492,13 @@ Note, after the first image in a repository gets added, a versioning schema cann
 
 * Delete a custom base image resource. (the related container project is unaffected)
 
-#### 2023-06-22
+**2023-06-22**
 
 **GET - `/orgs/{org_id}/settings/sast` - Added**
 
 * Retrieves the SAST settings for an org
 
-#### 2023-05-29
+**2023-05-29**
 
 **GET - `/orgs` - Added**
 
@@ -1543,7 +1512,7 @@ Note, after the first image in a repository gets added, a versioning schema cann
 
 * Get the full details of an organization.
 
-#### 2023-04-28
+**2023-04-28**
 
 **POST - `/orgs/{org_id}/invites` - Updated**
 
@@ -1558,13 +1527,13 @@ Note, after the first image in a repository gets added, a versioning schema cann
 * the `data/items/attributes/role` response`s property type/format changed from` string`/`` to` string`/`uuid`for status`200\` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the new `org_invitation` enum value to the `data/items/type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-#### 2023-04-17
+**2023-04-17**
 
 **POST - `/orgs/{org_id}/packages/issues` - Added**
 
 * This endpoint is not available to all customers. If you are interested please contact support. Query issues for a batch of packages identified by Package URL (purl). Only direct vulnerabilities are returned, transitive vulnerabilities (from dependencies) are not returned because they can vary depending on context.
 
-#### 2023-03-20
+**2023-03-20**
 
 **GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Added**
 
@@ -1575,7 +1544,7 @@ Note, after the first image in a repository gets added, a versioning schema cann
 
 By default it will respond with an empty JSON:API response.
 
-#### 2023-02-15
+**2023-02-15**
 
 **GET - `/orgs/{org_id}/projects` - Added**
 
@@ -1589,7 +1558,7 @@ By default it will respond with an empty JSON:API response.
 
 * Get one project of the organization by project ID.
 
-#### 2022-12-14
+**2022-12-14**
 
 **POST - `/orgs/{org_id}/slack_app/{bot_id}` - Added**
 
@@ -1619,7 +1588,7 @@ By default it will respond with an empty JSON:API response.
 
 * Remove Slack settings override for a project.
 
-#### 2022-11-14
+**2022-11-14**
 
 **GET - `/orgs/{org_id}/invites` - Added**
 
@@ -1629,7 +1598,7 @@ By default it will respond with an empty JSON:API response.
 
 * Cancel a pending user invitations to an organization.
 
-#### 2022-11-07
+**2022-11-07**
 
 **GET - `/orgs/{org_id}/slack_app/{tenant_id}/channels` - Added**
 
@@ -1639,19 +1608,19 @@ By default it will respond with an empty JSON:API response.
 
 * Requires the Snyk Slack App to be set up for this org. It will return the Slack channel name for the provided Slack channel ID.
 
-#### 2022-09-15
+**2022-09-15**
 
 **GET - `/orgs/{org_id}/packages/{purl}/issues` - Added**
 
 * Query issues for a specific package version identified by Package URL (purl). Snyk returns only direct vulnerabilities. Transitive vulnerabilities (from dependencies) are not returned because they can vary depending on context.
 
-#### 2022-06-01
+**2022-06-01**
 
 **POST - `/orgs/{org_id}/invites` - Added**
 
 * Invite a user to an organization with a role.
 
-#### 2022-03-11
+**2022-03-11**
 
 **GET - `/self/apps` - Added**
 
@@ -1693,7 +1662,7 @@ By default it will respond with an empty JSON:API response.
 
 * Revoke app bot authorization. Deprecated, use /orgs/{org\_id}/apps/installs/{install\_id} instead.
 
-#### 2021-12-09
+**2021-12-09**
 
 **PATCH - `/orgs/{org_id}/settings/iac` - Added**
 

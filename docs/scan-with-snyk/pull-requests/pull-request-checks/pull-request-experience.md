@@ -101,7 +101,7 @@ For Brokered integrations, the Data Flow section in the inline comments is avail
 {% hint style="info" %}
 **Release status**
 
-Snyk Agent fix in the PR is in [Early Access](../../../discover-snyk/getting-started/snyk-release-process.md#early-access-features) and available only for GitHub and Bitbucket Integrations.\
+Snyk Agent fix in the PR is in [Early Access](../../../discover-snyk/getting-started/snyk-release-process.md#early-access-features).\
 Snyk Agent fix in the PR will work only on inline comments created after the feature is enabled.
 {% endhint %}
 
@@ -171,7 +171,7 @@ Yes. Brokered integrations are supported for both **i**ssue summary comment and 
 
 Supported Snyk Broker version 4.194 or higher for the issue summary comment and inline comments features.
 
-Snyk Agent fix in the PR is supported in Snyk Broker version 4.216 or higher.
+Snyk Agent fix in the PR is supported in Snyk Broker version 4.219 or higher.
 
 ### Why is Snyk Agent fix in the PR not working after enabling the setting?
 

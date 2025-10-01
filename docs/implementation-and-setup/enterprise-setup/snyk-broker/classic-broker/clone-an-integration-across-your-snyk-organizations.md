@@ -4,7 +4,7 @@ You can choose to use the same brokered Git integration across multiple Organiza
 
 For example, you can integrate Snyk Organizations X, Y, and Z with your single Git repo X.
 
-**Prerequisites**: to clone Organization configurations, you must have teams and groups enabled.
+To clone Organization configurations, you must have teams and groups enabled.
 
 1. From the **Organization** list, choose an Organization in the Group that you are working with.\
    <img src="../../../../.gitbook/assets/switch_org_02oct2022.png" alt="Choose Organization" data-size="original">

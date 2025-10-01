@@ -16,5 +16,5 @@ Export the environment variable `INSECURE_DOWNSTREAM="true"` to use this mode, p
 {% hint style="warning" %}
 Using HTTP is highly insecure! Your data and credentials will be transmitted in clear form over the network exchanges.
 
-Snyk **will not be held responsible** for any credential leaks that may occur as a result of the use of insecure downstream mode.
+Snyk is not responsible for any credential leaks that may occur as a result of the use of an insecure downstream mode.
 {% endhint %}

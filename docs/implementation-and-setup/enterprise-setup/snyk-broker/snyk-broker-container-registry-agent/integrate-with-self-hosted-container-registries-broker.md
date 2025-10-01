@@ -18,8 +18,8 @@ To enable and configure your hosted container registry, contact your Snyk team.
 
 Integration with self-hosted container registries contains the following components:
 
-* **Broker Server** - running on Snyk SaaS backend
-* **Broker Client and Container Registry Agent** - two Docker images deployed in your infrastructure, creating two separate services responsible for sampling your container registries in a secured manner and sending the allowed information to Snyk.
+* Broker Server - running on Snyk SaaS backend
+* Broker Client and Container Registry Agent - two Docker images deployed in your infrastructure, creating two separate services responsible for sampling your container registries in a secured manner and sending the allowed information to Snyk.
 
 <figure><img src="../../../../.gitbook/assets/mceclip0-8-.png" alt="High-level architecture of the Snyk Broker Container Registry Agent"><figcaption><p>High-level architecture of the Snyk Broker Container Registry Agent</p></figcaption></figure>
 

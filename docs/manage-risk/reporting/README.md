@@ -31,17 +31,31 @@ All reports are filterable by a number of attributes, enabling users to create t
 
 If you do not select or enter any values for a particular key, the filter is not applied.
 
+**Exclude Filters**\
+In addition to selecting values to include, you can exclude specific values using the `Not equal to` option available across many report filters. This allows you to:
+
+* **Remove unwanted results** (for example, exclude certain Organizations, project types, or asset names).
+* **Spot gaps more easily** (for example, find projects not in a collection, or assets missing specific tags).
+
 ### Snyk reporting filter logic
 
-Within a given filter, all values selected are separated by an OR operator. For example, if you select the values `Critical` and `High` for the `Issue Severity` filter, Snyk displays issues that have a severity of either `critical` or `high`.
+Within a given filter, all values selected are separated by an OR operator. For example, if you select the values `Critical` and `High` for the `Issue Severity` filter, Snyk displays issues that have a severity of either `Critical` or `High`.
+
+
 
 <figure><img src="../../.gitbook/assets/issue-severity-reporting-beta.png" alt="Issue severity selected"><figcaption><p>Issue severity selected</p></figcaption></figure>
 
+With exclude filters, if you select `Is not Critical` in the Issue Severity filter, Snyk will display issues of all other severities except Critical.
+
 Filters are separated by an AND operator. For example, if you select the `Critical` value for the `Issue Severity` filter and the `Resolved` value for the `Issue Status` filter, Snyk displays issues that are both `critical` severity and `resolved`.
+
+This same logic applies when using exclusions. For example, if you exclude `Critical` severity AND exclude `Resolved` status, Snyk displays issues that are neither `Critical` nor `Resolved`.
 
 ### Stateful URLs for filtered views
 
 Every time a filter value is applied, the app.snyk.io URL is updated to persist the state of the page. You can bookmark and copy the URL, and share it with anyone who has the appropriate Snyk Organization or Group access. For easy sharing, use the copy URL button in the upper right corner of the list of reports.
+
+Exclude filter selections are also saved in the URL, so your "not equal to" filters persist when you share or bookmark a view.
 
 ## Exporting Snyk reports
 

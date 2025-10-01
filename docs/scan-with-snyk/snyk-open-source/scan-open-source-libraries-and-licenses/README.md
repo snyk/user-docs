@@ -2,7 +2,7 @@
 
 You can scan your open-source libraries using Snyk Open Source:&#x20;
 
-* In the Snyk eeb UI
+* In the Snyk Web UI
 * With your [IDE](../../../developer-tools/snyk-ide-plugins-and-extensions/)
 * With a [CI/CD integration](../../../developer-tools/snyk-ci-cd-integrations/)
 * Through the [Snyk CLI](../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/)

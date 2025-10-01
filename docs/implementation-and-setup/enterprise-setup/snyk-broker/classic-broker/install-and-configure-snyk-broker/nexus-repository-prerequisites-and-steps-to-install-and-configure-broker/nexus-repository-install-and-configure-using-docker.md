@@ -6,7 +6,7 @@
 Integration with Nexus Repository Manager is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../install-and-configure-broker-using-docker.md).
+Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md).
 
 This integration is useful to ensure a secure connection with your on-premise Nexus Repository Manager deployment.
 
@@ -16,9 +16,9 @@ For information about non-brokered integration with Nexus Repository Manager inc
 
 ### Docker pull for Nexus 3 and Nexus 2 configuration
 
-To use the Broker client with a Nexus 3 deployment, **run** `docker pull snyk/broker:nexus`.
+To use the Broker client with a Nexus 3 deployment, run `docker pull snyk/broker:nexus`.
 
-To use the Broker client with a Nexus 2 deployment, **run** `docker pull snyk/broker:nexus2`.
+To use the Broker client with a Nexus 2 deployment, run `docker pull snyk/broker:nexus2`.
 
 For definitions of the environment variables, see [Nexus Repository - environment variables for Snyk Broker](nexus-repository-environment-variables-for-snyk-broker.md).
 
@@ -29,7 +29,7 @@ For definitions of the environment variables, see [Nexus Repository - environmen
 When installing, you must add a command in your script to set the `BROKER_SERVER_URL`.This is the URL of the Broker server for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-server-urls).
 {% endhint %}
 
-**Copy the following command** to set up a fully configured Broker Client to use with Nexus 3. You can run the Docker container by providing the relevant configuration:
+Copy the following command to set up a fully configured Broker Client to use with Nexus 3. You can run the Docker container by providing the relevant configuration:
 
 ```console
 docker run --restart=always \
@@ -42,7 +42,7 @@ docker run --restart=always \
        snyk/broker:nexus
 ```
 
-**Copy the following command** to set up a fully configured Broker Client to use with Nexus 2. You can run the Docker container by providing the relevant configuration:
+Copy the following command to set up a fully configured Broker Client to use with Nexus 2. You can run the Docker container by providing the relevant configuration:
 
 ```
 docker run --restart=always \

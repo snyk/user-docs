@@ -36,7 +36,7 @@ Alternatively, you can add `-d` to additional parameters in the Snyk extension s
 
 You can obtain the logs by navigating to **View** > **Output.** From the list displayed, select the **Snyk Security** channel and then the **Snyk Language Server** channel to see the debugging information.
 
-The Snyk Security channel has information on the extension itself. The Snyk Language Server channel receives the Language Server logs, displaying everything that is going on inside the Language Server and the CLI when you are using the extension.
+The **Snyk Security** channel has information on the extension itself. The **Snyk Language Server** channel receives the Language Server logs, displaying everything that is going on inside the Language Server and the CLI when you are using the extension.
 
 
 

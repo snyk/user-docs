@@ -8,7 +8,7 @@ Ingress is a way to route incoming network traffic to specific services in a Kub
 
 There are two options available for ingress traffic. By default, the pods are not accessible from outside the cluster.
 
-To enable a **load balancer**, add the `--set service.<service-type>=LoadBalancer`. Allowed values are `brokertype`, `crType`, and `caType`. Servicet ype refers to the type of Broker you are running.
+To enable a load balancer, add the `--set service.<service-type>=LoadBalancer`. Allowed values are `brokertype`, `crType`, and `caType`. Servicet ype refers to the type of Broker you are running.
 
 Example for Github:
 
@@ -22,4 +22,4 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-To add an **ingress**, enable it in the `values.yaml` file and add the relevant configuration parameters, following the example values in the values file. For this to work, your cluster must have an ingress controller configured properly.
+To add an ingress, enable it in the `values.yaml` file and add the relevant configuration parameters, following the example values in the values file. For this to work, your cluster must have an ingress controller configured properly.

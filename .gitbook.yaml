@@ -195,3 +195,4 @@ redirects:
   supported-languages/supported-languages-list/swift-and-objective-c/swift-for-code-analysis: supported-languages/supported-languages-list/swift-and-objective-c.md
   supported-languages/supported-languages-list/php/php-for-code-analysis: /supported-languages/supported-languages-list/php.md
   supported-languages/supported-languages-list/php/php-for-open-source: /supported-languages/supported-languages-list/php.md
+  snyk-api/reference/assets: snyk-api/reference/asset.md

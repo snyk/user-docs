@@ -18,7 +18,7 @@ The following illustrates the architecture for a brokered ECR integration. Refer
 
 Follow these steps to set up a single Container Registry Agent instance with access to ECR repositories located in different accounts.
 
-1. **Run this step once only.** Create the Container Registry Agent IAM Role or IAM User with permissions to assume a role. Use the IAM Role or IAM User to run the Container Registry Agent. Run the following steps for each of your ECR accounts, using a separate Broker instance for each ECR accoun**t**.
+1. Run this step once only. Create the Container Registry Agent IAM Role or IAM User with permissions to assume a role. Use the IAM Role or IAM User to run the Container Registry Agent. Run the following steps for each of your ECR accounts, using a separate Broker instance for each ECR accoun**t**.
 2. In the AWS account where your ECR resides, create the Snyk ECR Service Role with read access to your ECR and restrict this role to be assumed only by the specific Container Registry Agent IAM Role or IAM User created in the previous step.
 3. Restrict the Container Registry Agent IAM Role or IAM User to be allowed to assume only your Snyk ECR Service Role(s).
 4. Provide the Broker Client with the Role Amazon Resource Name (ARN) of the Snyk ECR Service Role. The Broker Client passes this Role ARN to the Container Registry Agent, and the Container Registry Agent assumes it to access your ECR.
@@ -27,16 +27,11 @@ Follow these steps to set up a single Container Registry Agent instance with acc
 
 In this step, create an IAM Role or an IAM User for use by the Container Registry Agent. The IAM Role or IAM User could be provided to the Container Registry Agent via the methods described in the [AWS docs](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
 
-The following examples explain how to provide the IAM Role or IAM User using one of the following methods:
+The following examples explain how to provide the IAM Role or IAM User using one of the following methods. You can also provide a dedicated role in Amazon ECS tasks. For more information, see the [AWS docs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html).
 
-* **Example a:** Create a dedicated EC2 role and load credentials from AWS Identity and Access Management (IAM) roles to the EC2 instance running the Container Registry Agent image.
-* **Example b:** Create a dedicated user and provide its credentials through environment variables.
+### **Example: Create a dedicated EC2 Service Role and load credentials from AWS Identity and Access Management (IAM) roles for Amazon EC2**
 
-You can also provide a dedicated role in Amazon ECS tasks. For more information see the [AWS docs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html).
-
-### **Example a: Create a dedicated EC2 Service Role and load credentials from AWS Identity and Access Management (IAM) roles for Amazon EC2**
-
-#### Stage 1: Create a Role
+#### Create a role
 
 1. Go to [AWS](https://console.aws.amazon.com/iam/home?#/policies) to log in to the AWS Management Console with the IAM service and navigate to the **Roles** page.
 2. Choose to **create a role**.
@@ -51,11 +46,11 @@ You can also provide a dedicated role in Amazon ECS tasks. For more information 
 
     Example: `arn:aws:iam::aws-account:role` or `SnykCraEc2Role`
 
-#### Stage 2: Create a policy to allow the EC2 role to assume another role
+#### Create a policy to allow the EC2 role to assume another role
 
 1. In the newly created role page, in the **Permissions** tab, create an **Inline policy**.
 2. In **Service** choose **STS**.
-3. In **Actions** choose **Write → AssumeRole**.
+3. In **Actions** choose **Write** > **AssumeRole**.
 4. In **Resources** choose **All resources** (you will harden the resources in a later step).
 5.  In the **JSON** tab verify that the policy contains the following:
 
@@ -75,19 +70,19 @@ You can also provide a dedicated role in Amazon ECS tasks. For more information 
 6. Review the policy and provide a policy name: **SnykCraAssumeRolePolicy**.
 7. Choose to create the policy.
 
-#### Stage 3: Attach the role to the EC2 machine running the Container Registry Agent
+#### Attach the role to the EC2 machine running the Container Registry Agent
 
 1. Go to the **EC2 Management Console** and choose the instance running the Container Registry Agent container.
-2. Select **Actions → Security → Modify IAM Role**.
+2. Select **Actions** > **Security** > **Modify IAM Role**.
 3. From the **IAM role** dropdown list, choose the Instance profile of the IAM role created in the first step.\
    Example: `arn:aws:iam::aws-accoun:instance-profile` or `SnykCraEc2Role`
-4. Then **Save**.
+4. **Save**.
 
-When you are running the Container Registry Agent image on the EC2 machine, the credentials of the attached role are automatically picked up by the running Container Registry Agent. Therefore, no extra steps are needed. For more information see the [Amazon docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#instance-metadata-security-credentials).
+When you are running the Container Registry Agent image on the EC2 machine, the credentials of the attached role are automatically picked up by the running Container Registry Agent. Therefore, no extra steps are needed. For more information, see the [Amazon docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#instance-metadata-security-credentials).
 
-### Example b: Creating a dedicated user and providing its credentials through environment variables
+### Example: Creating a dedicated user and providing its credentials through environment variables
 
-#### Stage 1: Create a user
+#### Create a user
 
 1. Go to [AWS](https://console.aws.amazon.com/iam/home?#/policies) to log in to the AWS Management Console with the IAM service and navigate to the **Users** page.
 2. Select **Add users**.
@@ -99,11 +94,11 @@ When you are running the Container Registry Agent image on the EC2 machine, the 
 8. From the user's **Summary** page, copy the **User ARN** for later use.\
    Example: `arn:aws:iam::aws-account:user` or `SnykCraUser`
 
-#### Stage 2: Create a policy to allow the user to assume a role
+#### Create a policy to allow the user to assume a role
 
 1. In the newly created user page, in the **Permissions** tab create an **Inline policy**.
 2. In **Service** choose **STS**.
-3. In **Actions** choose **Write→AssumeRole**.
+3. In **Actions** choose **Write** >**AssumeRole**.
 4. In **Resources** choose **All resources** (you will harden the resources in a later step).
 5.  In the **JSON** tab verify that the policy contains the following statement:
 
@@ -123,7 +118,7 @@ When you are running the Container Registry Agent image on the EC2 machine, the 
 6. Review the policy and provide a policy name: **SnykCraAssumeRolePolicy**.
 7. Choose to create the policy.
 
-#### Stage 3: Use the credentials when running the Container Registry Agent
+#### Use the credentials when running the Container Registry Agent
 
 When you are running the Container Registry Agent image, the credentials could be provided by setting the following environment variables:
 
@@ -180,13 +175,13 @@ In this step, you will create a Role in the account in which your ECR repositori
 5. Check the policy **AmazonEC2ContainerRegistryReadOnlyForSnyk** on the list.
 6. Choose to go next with tags and review.
 7. Set **SnykEcrServiceRole** as the Name.
-8. Set **Allows EC2 instances to call ECR AWS services on your behalf** as the Description.
+8. Set **Allows EC2 instances to call ECR AWS services on your behalf** as the description.
 
 ### 3. Harden the usability scope of the Snyk ECR Service Role
 
-This step hardens the usability of the Snyk ECR Service Role so that it could be assumed only by the Container Registry Agent IAM Role or IAM Role.
+This step hardens the usability of the Snyk ECR Service Role so that it can be assumed only by the Container Registry Agent IAM Role or IAM Role.
 
-1. Again from the **Roles** page, find and select the [SnykEcrServiceRole](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole) to enter the Role configurations.
+1. From the **Roles** page, find and select the [SnykEcrServiceRole](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole) to enter the Role configurations.
 2. Select the **Trust relationships** tab.
 3. Edit the trust relationship.
 4.  Delete all of the data and replace it with the following JSON:

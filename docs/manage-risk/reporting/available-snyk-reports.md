@@ -18,6 +18,7 @@ The following reports are available:
 * [Asset Dashboard](available-snyk-reports.md#asset-dashboard)
 * [Risk exposure report](available-snyk-reports.md#risk-exposure-report)
 * [Saved Views](available-snyk-reports.md#saved-views)
+* [Learn Engagement](available-snyk-reports.md#learn-engagement)
 
 Select **Change Report** to change the report displayed:
 
@@ -454,6 +455,51 @@ You can view a report for a single version of a compliance standard at a time, f
 Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../scan-with-snyk/snyk-iac/getting-started-with-cloud-scans/manage-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
 
 Use the information in the Cloud Compliance Issues report to investigate, triage, and fix cloud compliance issues.
+
+## Learn Engagement
+
+{% hint style="info" %}
+Snyk Learn engagement report is available only in the Learning Management add-on offering. For more information, contact your Snyk account team.
+{% endhint %}
+
+The goal of the engagement report is to provide insights into your security education and training programs overall progress, and give you insights into which parts of your organization are engaging with Snyk Learn content. You can use the data an insights to better optimise your program, find security champions, generate reports for compliance and show progress to your executive sponsors.
+
+### Access the report
+
+The Learn Engagement report can be accessed at the Group level from the **Change Report** drop down in the Reports menu.
+
+### Report features
+
+The report allows you to track:
+
+* Learn engagement snapshot analytics
+* Assignment Progress
+* Adoption rankings
+* Content usage breakdown
+* Filtering
+  * Custom time periods, users, organizations, organization role, and Lesson titles.
+
+### Learn engagement snapshot and assignment progress
+
+The first section of the report focuses on showing key engagement statistics and progress of any assignments. Tool tips give more detail on the definitions of the metrics.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.30.57.png" alt=""><figcaption></figcaption></figure>
+
+### Adoption rankings
+
+The adoption ranking section shows your organization and individual user engagement with Snyk Learn. This is ranked by "Lessons complete" and also has the estimated duration the org/user has spent on Snyk Learn lessons. Estimated duration calculated using the estimated duration presented at the start of each lesson, and includes estimated time from any progress on "in-progress" lessons in the selected period.
+
+{% hint style="info" %}
+The user level adoption ranking is a great way to identify potential security champions who are proactively engaging in security education and training.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.34.12 (1).png" alt=""><figcaption></figcaption></figure>
+
+### Learning breakdown
+
+The breakdown shows the different types of Learn content the users are engaging with, using lesson completions as the measure. You can see if users are engaging with product training or security education, along with the most popular lessons and insights into which CWE categories users are studying the most.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.34.22.png" alt=""><figcaption></figcaption></figure>
 
 ## Snyk Generated Pull Requests
 

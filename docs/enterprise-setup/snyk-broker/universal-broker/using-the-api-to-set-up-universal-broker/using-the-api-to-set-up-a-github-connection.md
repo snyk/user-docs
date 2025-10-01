@@ -5,14 +5,14 @@ This page provides an example of using the API to set up a GitHub connection wit
 Using the `snyk-broker-config` CLI tool is recommended for an easier experience. The API allows for automation and more control, and also requires a clear understanding of Broker deployments, credentials, connections, and integrations.
 
 {% hint style="info" %}
-In any of the calls that follow, replace `api.snyk.io` with your regional equivalent if necessary, for example, `api.eu.snyk.io`. For a list of URLs, see [API URLs](../../../../working-with-snyk/regional-hosting-and-data-residency.md#api-urls).
+In any of the calls that follow, replace `api.snyk.io` with your regional equivalent if necessary, for example, `api.eu.snyk.io`. For a list of URLs, see [API URLs](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#api-urls).
 {% endhint %}
 
-## Install the Broker App for your Organization <a href="#id-1-install-the-broker-app-on-your-org" id="id-1-install-the-broker-app-on-your-org"></a>
+## Install the Broker app for your Organization <a href="#id-1-install-the-broker-app-on-your-org" id="id-1-install-the-broker-app-on-your-org"></a>
 
 The Universal Broker App facilitates the secure connection and communication with the Broker server through OAuth.
 
-Install the Broker App at the Organization level. Group-level installation is not supported. Use the endpoint [Install a Snyk App to this Organization](../../../../snyk-api/reference/apps.md#post-orgs-org_id-apps-installs).  Use the Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-client-urls).
+Install the Broker app at the Organization level. Group-level installation is not supported. Use the endpoint [Install a Snyk App to this Organization](../../../../snyk-api/reference/apps.md#post-orgs-org_id-apps-installs).  Use the Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
 
 ## Create your deployment <a href="#id-2-create-your-deployment" id="id-2-create-your-deployment"></a>
 
@@ -59,7 +59,7 @@ At this point, you can start running the Broker client.
 
 ## Run your Broker deployment <a href="#run-your-broker-deployment_1" id="run-your-broker-deployment_1"></a>
 
-Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` if needed. For a list of URLs, see [Broker server URLs](../../../../working-with-snyk/regional-hosting-and-data-residency.md#broker-server-urls).
+Target your desired environment with the usual `-e BROKER_SERVER_URL=https://broker.REGION.snyk.io \` if needed. For a list of URLs, see [Broker server URLs](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-server-urls).
 
 <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker run --restart=always \
     -p 8000:8000 \
@@ -194,7 +194,7 @@ If your credential reference is missing, you will get the following message:
 {"name":"my github connection","hostname":"029cda64bd98","pid":1,"level":50,"id":"12345678-1234-1234-1234-123456789012","msg":"Connection is disabled due to (a) missing environment variable(s). Please provide the value and restart the broker client.","time":"2024-06-18T14:29:06.911Z","v":0}
 </code></pre></td></tr></tbody></table>
 
-When you update an environment variable you must restart your Broker. See [Restart your Broker for a new environment variable](../restart-your-broker-for-a-new-environment-variable.md).
+When you update an envrionment variable you must restart your Broker. See [Restart your Broker for a new environment variable](../../../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/restart-your-broker-for-a-new-environment-variable.md).
 
 You can now use the connection in an Organization integration.
 

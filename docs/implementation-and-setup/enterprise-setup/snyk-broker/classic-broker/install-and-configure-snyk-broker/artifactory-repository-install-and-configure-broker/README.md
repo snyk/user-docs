@@ -6,7 +6,7 @@
 Integration with Artifactory Repository is available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Before installing, review the general instructions for the installation method you plan to use, [Helm](../install-and-configure-broker-using-helm.md) or [Docker](../install-and-configure-broker-using-docker.md).
+Before installing, review the general instructions for the installation method you plan to use, [Helm](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md) or [Docker](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md).
 
 The prerequisites follow.
 
@@ -26,7 +26,7 @@ For convenience, instructions to obtain or generate the Broker token follow. Whe
 <figure><img src="../../../../../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png" alt="Artifactory integration setup"><figcaption><p>Artifactoryrepository setup</p></figcaption></figure>
 
 {% hint style="info" %}
-If you do not see the **Snyk Broker** on/off switch, you do not have the necessary permissions and can only add a publicly accessible instance.
+If you do not see the Snyk Broker on/off switch, you do not have the necessary permissions and can only add a publicly accessible instance.
 
 Submit a request to [Snyk Support](https://support.snyk.io) if you want to add a private registry.
 {% endhint %}
@@ -35,6 +35,6 @@ When you have the permissions needed to add a private registry, continue with th
 
 ## Generate a Broker token from the Web UI
 
-1. In the Artifactory integration settings, move the **Snyk Broker on/off** switch to **on** to display a form for generating a Broker token.
+1. In the Artifactory integration settings, move the Snyk Broker on/off switch to **on** to display a form for generating a Broker token.
 2. Select **Generate and Save.**
 3. Copy the token that was generated to use when you set up the Broker Client.

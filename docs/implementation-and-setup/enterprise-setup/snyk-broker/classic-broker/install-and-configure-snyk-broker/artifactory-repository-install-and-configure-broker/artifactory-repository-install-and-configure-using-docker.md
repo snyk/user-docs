@@ -6,7 +6,7 @@
 Integration with Artifactory Repository is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../install-and-configure-broker-using-docker.md).
+Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md).
 
 This integration is useful to ensure a secure connection with your on-premise Artifactory Repository deployment.
 
@@ -23,7 +23,7 @@ To use the Broker client with an Artifactory Registry deployment, **run** `docke
 When installing, you must add a command in your script to set the `BROKER_SERVER_URL`. This is the URL of the Broker server for the region where your data is hosted. For the commands and URLs to use, see [Broker URLs](../../../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-server-urls).
 {% endhint %}
 
-**Copy the following command** to set up a fully configured Broker Client to use with Artifactory Registry. You can run the Docker container by providing the relevant configuration:
+Copy the following command to set up a fully configured Broker Client to use with Artifactory Registry. You can run the Docker container by providing the relevant configuration:
 
 ```console
 docker run --restart=always \
@@ -34,7 +34,7 @@ docker run --restart=always \
        snyk/broker:artifactory
 ```
 
-For an **npm or Yarn integration**, use the following **command**.
+For an npm or Yarn integration, use the following command.
 
 ```
 docker run --restart=always \
