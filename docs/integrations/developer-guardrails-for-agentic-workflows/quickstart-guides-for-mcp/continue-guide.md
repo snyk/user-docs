@@ -6,7 +6,7 @@ You can add the Snyk MCP server to Continue to secure code generated with agenti
 
 * [Install the Continue extension](continue-guide.md#install-continue)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](continue-guide.md#install-the-snyk-mcp-server-in-amazon-q)
+* [Install the Snyk MCP](continue-guide.md#install-the-snyk-mcp-server-in-continue)
 
 ### Install Continue
 
@@ -34,7 +34,7 @@ mcpServers:
     env: {}
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
 
 #### Install with Node.js and `npx`
 

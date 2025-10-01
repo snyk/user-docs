@@ -18,7 +18,7 @@ The process for setting up this integration consists of:
 
 * A CrowdStrike subscription for Falcon Next-Gen SIEM or Falcon Next-Gen SIEM 10GB.
 * Connector Manager access to the Falcon console for the relevant CID.
-* A Snyk user account with [permissions](https://docs.snyk.io/snyk-platform-administration/user-roles/user-role-management) to edit and view Group integrations.
+* A Snyk user account with [permissions](../../snyk-platform-administration/user-roles/user-role-management.md) to edit and view Group integrations.
 
 ## Configure the CrowdStrike Data Connector
 

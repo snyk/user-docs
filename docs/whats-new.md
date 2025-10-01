@@ -28,7 +28,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * `Raise Support Community Cases` and `View Support Community Cases` Tenant level permissions have been added. To learn more about which Tenant roles these permissions apply to, visit Pre-defined roles, [Tenant-level permissions](snyk-platform-administration/user-roles/pre-defined-roles.md#tenant-level-permissions).
 * The [Analytics](manage-risk/analytics/) menu now updates its data daily instead of hourly.
 * Learn how to resolve duplicated and unenriched assets discovered outside Group and Organization-level SCM integrations.&#x20;
-* You can now [exclude specific values](https://docs.snyk.io/manage-risk/reporting) when you filter your reports.&#x20;
+* You can now [exclude specific values](manage-risk/reporting/) when you filter your reports.&#x20;
 
 ## August 2025
 

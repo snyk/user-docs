@@ -6,7 +6,7 @@ You can add the Snyk MCP server to Claude Code to secure code generated with age
 
 * [Install Claude Code](claude-code-guide.md#install-claude-code)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](claude-code-guide.md#install-the-snyk-mcp-server-in-amazon-q)
+* [Install the Snyk MCP](claude-code-guide.md#install-the-snyk-mcp-server-in-claude-code)
 
 ### Install Claude Code
 

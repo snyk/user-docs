@@ -6,7 +6,7 @@ You can add the Snyk MCP server to JetBrains Junie to secure code generated with
 
 * [Install the code assistant extension](jetbrains-junie.md#install-jetbrains-junie)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](jetbrains-junie.md#install-the-snyk-mcp-server-in-amazon-q)
+* [Install the Snyk MCP](jetbrains-junie.md#install-the-snyk-mcp-server-in-jetbrains-junie)
 
 ### Install JetBrains Junie
 

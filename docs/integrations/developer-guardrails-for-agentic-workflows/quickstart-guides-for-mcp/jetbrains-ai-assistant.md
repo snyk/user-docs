@@ -6,7 +6,7 @@ You can add the Snyk MCP server to JetBrains AI Assistant to secure code generat
 
 * [Install the code assistant extension](jetbrains-ai-assistant.md#install-jetbrains-ai-assistant)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](jetbrains-ai-assistant.md#install-the-snyk-mcp-server-in-amazon-q)
+* [Install the Snyk MCP](jetbrains-ai-assistant.md#install-the-snyk-mcp-server-in-jetbrains-ai-assistant)
 
 ### Install JetBrains AI Assistant
 
@@ -31,7 +31,7 @@ If you have the Snyk CLI installed and accessible on your system path add the fo
 
 <figure><img src="../../../.gitbook/assets/image1 (1).png" alt=""><figcaption></figcaption></figure>
 
-If the snyk command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli) page.
+If the snyk command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
 
 Reload the IDE window for the changes to apply.
 
