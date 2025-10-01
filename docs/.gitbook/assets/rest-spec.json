@@ -3652,6 +3652,13 @@
             "nullable": true,
             "type": "array"
           },
+          "labels": {
+            "description": "Labels associated with the asset",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
           "languages": {
             "additionalProperties": {
               "type": "integer"
@@ -3691,11 +3698,11 @@
             "type": "array"
           },
           "tags": {
-            "description": "Tags associated with the asset",
-            "items": {
+            "additionalProperties": {
               "type": "string"
             },
-            "type": "array"
+            "description": "Custom tags associated with the asset (key-value pairs)",
+            "type": "object"
           },
           "updated_at": {
             "description": "Last update timestamp",
@@ -3705,24 +3712,93 @@
         },
         "type": "object"
       },
-      "AssetClassAttributes": {
-        "example": {
-          "locked": true,
-          "name": "A",
-          "rank": 1
-        },
+      "AssetClass": {
+        "additionalProperties": false,
+        "anyOf": [
+          {
+            "required": [
+              "display_name"
+            ]
+          },
+          {
+            "required": [
+              "rank"
+            ]
+          }
+        ],
+        "description": "Sets the asset's class using either a rank (a number between 1 and 4) or a display name (e.g., \"A,\" \"B,\" \"C,\" or \"D\").\n* This attribute accepts a single value. It can be locked: When a class attribute is \"locked\", this attribute will not be affected by any policy.\n  * UI: When the user changes the asset class, by default is \"locked\".\n  * API: The user will need to indicate wether they want to \"lock\" the class attribute.\n",
         "properties": {
+          "display_name": {
+            "description": "Asset class display name",
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "type": "string"
+          },
           "locked": {
             "description": "Whether the asset class is locked",
             "type": "boolean"
           },
-          "name": {
+          "rank": {
+            "description": "Asset class rank (1-4)",
+            "enum": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "AssetClassAttributes": {
+        "additionalProperties": false,
+        "example": {
+          "display_name": "A",
+          "locked": true,
+          "rank": 1
+        },
+        "properties": {
+          "display_name": {
             "description": "class name of the asset",
             "type": "string"
+          },
+          "locked": {
+            "description": "Whether the asset class is locked",
+            "type": "boolean"
           },
           "rank": {
             "description": "Rank associated with the asset class",
             "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "AssetLabelsUpdate": {
+        "additionalProperties": false,
+        "description": "Updates the asset's labels by adding or removing label values.\n",
+        "properties": {
+          "add": {
+            "description": "Labels to add to the asset",
+            "items": {
+              "maxLength": 40,
+              "minLength": 1,
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "remove": {
+            "description": "Labels to remove from the asset",
+            "items": {
+              "maxLength": 40,
+              "minLength": 1,
+              "type": "string"
+            },
+            "type": "array"
           }
         },
         "type": "object"
@@ -3894,6 +3970,31 @@
           "id",
           "type"
         ],
+        "type": "object"
+      },
+      "AssetTagsUpdate": {
+        "additionalProperties": false,
+        "description": "Updates the asset's custom tags by adding or removing tag key-value pairs.\n",
+        "properties": {
+          "add": {
+            "additionalProperties": {
+              "maxLength": 256,
+              "pattern": "^[a-zA-Z0-9_/:?#@\u0026=+%~-]+$",
+              "type": "string"
+            },
+            "description": "Tags to add to the asset (key-value pairs). Tag keys must be 1-30 characters long and contain only alphanumeric characters, underscores, and hyphens.\n",
+            "type": "object"
+          },
+          "remove": {
+            "description": "Tag keys to remove from the asset",
+            "items": {
+              "maxLength": 30,
+              "pattern": "^[a-zA-Z0-9_-]+$",
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
         "type": "object"
       },
       "AssignableByMe": {
@@ -16551,30 +16652,39 @@
       "SearchAttributesObject": {
         "properties": {
           "attribute": {
-            "description": "Name of the Asset attribute to filter on, not required if a logical operator is used",
-            "enum": [
-              "id",
-              "type",
-              "removed",
-              "name",
-              "repository_url",
-              "file_path",
-              "sources",
-              "risk_factors",
-              "repository_freshness",
-              "browse_url",
-              "image_id",
-              "image_digests",
-              "image_tags",
-              "image_repositories",
-              "image_registries",
-              "tags",
-              "class",
-              "organizations",
-              "created_at",
-              "updated_at"
-            ],
-            "type": "string"
+            "description": "Name of the Asset attribute to filter on, not required if a logical operator is used.\n\n**Tags Filtering:**\n\nThe API supports filtering on tags using dot notation:\n\n- **Tags**: `tags.{tagName}` - Filter by tag keys (e.g., `tags.environment`, `tags.team`, `tags.owner`)\n",
+            "oneOf": [
+              {
+                "enum": [
+                  "id",
+                  "type",
+                  "removed",
+                  "name",
+                  "repository_url",
+                  "file_path",
+                  "sources",
+                  "risk_factors",
+                  "repository_freshness",
+                  "browse_url",
+                  "image_id",
+                  "image_digests",
+                  "image_tags",
+                  "image_repositories",
+                  "image_registries",
+                  "labels",
+                  "class",
+                  "organizations",
+                  "created_at",
+                  "updated_at"
+                ],
+                "type": "string"
+              },
+              {
+                "description": "Tag attribute in the format `tags.{tagName}`",
+                "pattern": "^tags\\.[a-zA-Z0-9_-]{1,30}$",
+                "type": "string"
+              }
+            ]
           },
           "operator": {
             "description": "Required, name of the Operator for the query",
@@ -16599,7 +16709,7 @@
           "values": {
             "description": "Required values, which can be strings, dates, integers, booleans, or nested attributes",
             "items": {
-              "anyOf": [
+              "oneOf": [
                 {
                   "description": "A string value",
                   "type": "string"
@@ -16614,8 +16724,7 @@
                   "type": "integer"
                 },
                 {
-                  "description": "Search object",
-                  "type": "object"
+                  "$ref": "#/components/schemas/SearchAttributesObject"
                 },
                 {
                   "description": "A boolean value",
@@ -16647,6 +16756,9 @@
             "type": "object"
           }
         },
+        "required": [
+          "query"
+        ],
         "type": "object"
       },
       "SecretAttributes": {
@@ -18053,6 +18165,47 @@
         "example": "resource",
         "pattern": "^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$",
         "type": "string"
+      },
+      "UpdateAssetAttributes": {
+        "additionalProperties": false,
+        "properties": {
+          "class": {
+            "$ref": "#/components/schemas/AssetClass"
+          },
+          "labels": {
+            "$ref": "#/components/schemas/AssetLabelsUpdate"
+          },
+          "tags": {
+            "$ref": "#/components/schemas/AssetTagsUpdate"
+          }
+        },
+        "type": "object"
+      },
+      "UpdateAssetRequestData": {
+        "description": "Asset update request data",
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/UpdateAssetAttributes"
+          },
+          "id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "repository",
+              "image",
+              "package"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "id",
+          "attributes"
+        ],
+        "type": "object"
       },
       "UpdateAssignmentsPayload": {
         "properties": {
@@ -20445,11 +20598,45 @@
                       }
                     }
                   }
+                },
+                "example4": {
+                  "summary": "Tags filtering",
+                  "value": {
+                    "query": {
+                      "attributes": {
+                        "operator": "and",
+                        "values": [
+                          {
+                            "attribute": "type",
+                            "operator": "equal",
+                            "values": [
+                              "repository"
+                            ]
+                          },
+                          {
+                            "attribute": "tags.environment",
+                            "operator": "equal",
+                            "values": [
+                              "production"
+                            ]
+                          },
+                          {
+                            "attribute": "tags.team",
+                            "operator": "equal",
+                            "values": [
+                              "backend"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
                 }
               },
               "schema": {
-                "anyOf": [
+                "oneOf": [
                   {
+                    "additionalProperties": false,
                     "description": "Empty body",
                     "type": "object"
                   },
@@ -20539,15 +20726,16 @@
         },
         "summary": "List Assets with filters (Early Access)",
         "tags": [
-          "Assets"
+          "Asset"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2025-09-28~beta"
         ],
         "x-snyk-api-resource": "assets",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2025-09-28~beta",
         "x-stability-level": "beta"
       }
     },
@@ -20646,15 +20834,137 @@
         },
         "summary": "Get an Asset by its ID (Early Access)",
         "tags": [
-          "Assets"
+          "Asset"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2025-09-28~beta"
         ],
         "x-snyk-api-resource": "assets",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2025-09-28~beta",
+        "x-stability-level": "beta"
+      },
+      "patch": {
+        "description": "The endpoint allows for partial updates to an asset's attributes.\n\n#### Required permissions\n\n- `Edit Group Details (group.edit)`",
+        "operationId": "updateAsset",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/AssetId"
+          },
+          {
+            "description": "Group ID",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/Version"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "data": {
+                    "$ref": "#/components/schemas/UpdateAssetRequestData"
+                  }
+                },
+                "required": [
+                  "data"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/AssetResponseData"
+                    },
+                    "jsonapi": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "version": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/SelfLink"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Asset updated successfully",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Update asset attributes (Early Access)",
+        "tags": [
+          "Asset"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2025-09-28~beta"
+        ],
+        "x-snyk-api-resource": "assets",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2025-09-28~beta",
         "x-stability-level": "beta"
       }
     },
@@ -20773,15 +21083,16 @@
         },
         "summary": "List related assets with pagination (Early Access)",
         "tags": [
-          "Assets"
+          "Asset"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2025-09-28~beta"
         ],
         "x-snyk-api-resource": "assets",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2025-09-28~beta",
         "x-stability-level": "beta"
       }
     },
@@ -20900,15 +21211,16 @@
         },
         "summary": "List asset projects with pagination (Early Access)",
         "tags": [
-          "Assets"
+          "Asset"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2024-10-15~beta"
+          "2024-10-15~beta",
+          "2025-09-28~beta"
         ],
         "x-snyk-api-resource": "assets",
         "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
+        "x-snyk-api-version": "2025-09-28~beta",
         "x-stability-level": "beta"
       }
     },
