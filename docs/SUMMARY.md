@@ -292,6 +292,7 @@
     * [Goose CLI guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-cli-guide.md)
     * [JetBrains AI assistant](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/jetbrains-ai-assistant.md)
     * [JetBrains Junie](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/jetbrains-junie.md)
+    * [Kiro guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/kiro-guide.md)
     * [Qodo guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/qodo-guide.md)
     * [Windsurf guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/windsurf-guide.md)
   * [Troubleshooting for the Snyk MCP server](integrations/developer-guardrails-for-agentic-workflows/troubleshooting-for-the-snyk-mcp-server.md)
