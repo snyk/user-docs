@@ -39,4 +39,4 @@ To grant permissions for access to Reports beyond the default Organization and G
 
 After the role is created, a Group or Organization administrator can give this role to users of Snyk.&#x20;
 
-For more information, see [Snyk Learn Reports](snyk-learn-reports.md).
+For more information, see [Snyk Learn Reports](snyk-learn-reports/).

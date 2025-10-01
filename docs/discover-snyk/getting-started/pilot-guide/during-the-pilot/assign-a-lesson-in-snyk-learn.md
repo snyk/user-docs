@@ -27,12 +27,12 @@ Admins in Snyk can also review progress for the entire Organization by accessing
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdAeUEIKHvZi8Zm51zUiT4Pd7dA9gbjzf6jIyORzQxuf0CL5Zfgr7eYhw8PTUIiroMY2pmiUspC4suJUWkYTJKPyiMUdkKL-Ne4Sls_tLyAn3c7lvVHKwRUjEwtW3bWudjGOTxMGw?key=i_CNrr-DvB8PGUAzq09BT3pc)
 
-See the [Snyk Learn reports](../../../snyk-learn/snyk-learn-reports.md) page for more details.
+See the [Snyk Learn reports](../../../snyk-learn/snyk-learn-reports/) page for more details.
 
 {% hint style="info" %}
 Additional Resources
 
 * [Docs: Snyk Learn](../../../snyk-learn/)
 * [Docs: Snyk Learn Assignments](../../../snyk-learn/snyk-learn-assignments.md)
-* [Docs: Snyk Learn Reports](../../../snyk-learn/snyk-learn-reports.md)
+* [Docs: Snyk Learn Reports](../../../snyk-learn/snyk-learn-reports/)
 {% endhint %}
