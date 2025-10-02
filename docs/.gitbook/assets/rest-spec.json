@@ -11938,8 +11938,17 @@
             "description": "Description of the learning program",
             "type": "string"
           },
+          "duration": {
+            "description": "Duration in weeks of the program",
+            "type": "integer"
+          },
           "name": {
             "description": "Name of the learning program",
+            "type": "string"
+          },
+          "start_date": {
+            "description": "Date at which the program will start",
+            "format": "date",
             "type": "string"
           }
         },
