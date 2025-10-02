@@ -16,7 +16,7 @@ When you enable `debug`, your code may be logged in the IDE log files, for examp
 
 To enable Snyk Language Server debug logs in Eclipse, navigate to the Snyk Preferences, set the **Additional Environment** preference to `SNYK_LOG_LEVEL=debug` and restart Eclipse.
 
-<figure><img src="../../../.gitbook/assets/image (216).png" alt=""><figcaption><p>Snyk Preferences, Eclipse</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (216) (1).png" alt=""><figcaption><p>Snyk Preferences, Eclipse</p></figcaption></figure>
 
 To view Snyk plugin logs, open the **Error Log** view:
 
@@ -28,7 +28,7 @@ To get the **Snyk Language Server log file**, click on the **Open Log** button i
 
 Notice that **\[Info]** lines contain **INF**, **WRN**, and **DBG** log rows if the SNYK\_LOG\_LEVEL is set to debug.
 
-<figure><img src="../../../.gitbook/assets/image (218).png" alt=""><figcaption><p>Error Log view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (218) (1).png" alt=""><figcaption><p>Error Log view</p></figcaption></figure>
 
 ## Proxy settings
 

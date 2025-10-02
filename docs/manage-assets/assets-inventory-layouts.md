@@ -103,7 +103,8 @@ Assets in the inventory are presented with key attributes in the following colum
 * **Asset** - The name of the repository asset, scanned artifact, and the Git remote URL, if available. Scanned artifacts are missing Git remote URLs.
 * **Issue** - The number of issue counts on open assets aggregated across all relevant tools of the same severity of the asset itself and its child assets or packages. The severity level is classified into **C** (critical), **H** (high), **M** (medium), and **L** (low).
 * **Controls** - A report detailing all products detected by the Snyk Essentials on a specific repository asset and all products that should be but are not covered by Snyk Essentials.
-* **Tags** -  Snyk Essentials automatically tags repository assets with information about the used technologies (Python, Terraform, and so on) in the repository, and repository latest updates. You can also use policies to tag repository assets.
+* **Tags** - You will be able to add a unique key-value tag to provide a more powerful and granular context for your assets. This attribute lets you attach specific, unique metadata to your assets, which enables  precise filtering, robust policy creation, and alignment with your internal systems.
+* **Labels** -  Snyk Essentials automatically labels repository assets with information about the used technologies (Python, Terraform, and so on) in the repository, and repository latest updates. You can also use policies to label repository assets.
 * **Developers** - Includes the SCM profile details for code committers to the repository asset.
 * **Class** - Reflects the business criticality of the asset from A (most critical) to D (least critical), as defined by the user in the Policies view. You can manually change the class or automatically change it by applying a policy. You can lock the value you have manually set for a Class to prevent policies from overriding it.
 * **Risk factors** - Lists the potential vulnerabilities and security threats associated with each asset and helps users identify specific risks, enabling them to prioritize and address issues more effectively.&#x20;
@@ -112,7 +113,7 @@ Assets in the inventory are presented with key attributes in the following colum
 * **SCM Repository freshness** - Reflects the status of the repository and the date of the last commit.
 * **Clusters** - Provides a list of all the cluster names where the image asset is deployed.&#x20;
 * **Organizations** - Provides a list of the Snyk Organizations that are mapped to the asset.
-* **Actions** - Provides a workflow to set up an SCM integration, enriching the asset context with information such as tags, developers, and repository freshness. This use case is available when a Group-level integration is not configured.
+* **Actions** - Provides a workflow to set up an SCM integration, enriching the asset context with information such as labels, developers, and repository freshness. This use case is available when a Group-level integration is not configured.
 
 {% hint style="info" %}
 The Clusters column is hidden by default. To enable it, click Columns, select Clusters from the dropdown list, then click Apply to save the changes.&#x20;

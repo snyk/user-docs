@@ -88,7 +88,8 @@ N/A indicates that the repository was detected through a Snyk scan but not direc
 {% endhint %}
 
 * **Source** - specify the asset source.
-* **Tags** - information about the detected languages and repository update status.
+* **Labels** - A collection of unstructured text values representing both system-detected attributes and user-assigned markers.
+* **Tags** - highly flexible, structured metadata applied to an asset in the form of unique `key:value` pairs. Use tags to attach unique context relevant to your internal systems and business needs.
 * **Title\*** - represents the name of the component for which the application context catalog was configured.
 
 **\***&#x41;ll filters marked with `*` are visible only to the users who configured the [application context](../developer-tools/scm-integrations/application-context-for-scm-integrations/) catalog for their SCM integrations.

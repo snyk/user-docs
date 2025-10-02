@@ -1,14 +1,14 @@
-# Classification policy - Use case
+# Classification policy
 
 You can use the **Set Asset Class** action from the Policies view to classify the assets based on importance, where class A is the most important and class D is the least important.&#x20;
 
 You can set the asset class based on:&#x20;
 
 * the repository name &#x20;
-* the asset tags
+* the asset labels
 
 {% hint style="info" %}
-Snyk Essentials identifies GitHub and GitLab topics as asset tags.
+Snyk Essentials identifies GitHub and GitLab topics as asset labels.
 {% endhint %}
 
 Use the classification policy to give business context to your application. When you set up a classification policy, all your assets are automatically classified.

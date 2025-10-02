@@ -894,7 +894,7 @@
       * [Coverage control policy](manage-risk/policies/assets-policies/use-cases-for-policies/coverage-control-policy.md)
       * [Coverage and coverage gap policies](manage-risk/policies/assets-policies/use-cases-for-policies/coverage-and-coverage-gap-policies.md)
       * [Classification policy](manage-risk/policies/assets-policies/use-cases-for-policies/classification-policy.md)
-      * [Tagging policy](manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy.md)
+      * [Labeling policy](manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy.md)
       * [Notification policy](manage-risk/policies/assets-policies/use-cases-for-policies/notification-policy.md)
   * [Use policies in the SDLC](manage-risk/policies/use-policies-in-the-sdlc.md)
   * [Security policies](manage-risk/policies/security-policies/README.md)
