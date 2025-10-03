@@ -1130,7 +1130,7 @@
   * [Snyk Residency Services](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-residency-services.md)
   * [Snyk Declining Balance of Hours Service Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/declining-balance.md)
   * [Snyk API & Web Managed Scans Service Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-api-and-web-managed-scans-service-description.md)
-  * [Snyk Penetration Testing service description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-penetration-testing-service-description.md)
+  * [Snyk Penetration Testing Service Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-penetration-testing-service-description.md)
 * [How Snyk counts assets](snyk-data-and-governance/how-does-snyk-count-assets.md)
 * [What counts as a test?](snyk-data-and-governance/what-counts-as-a-test.md)
 * [Snyk Platform Access credits](snyk-data-and-governance/snyk-platform-access-credits.md)
