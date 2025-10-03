@@ -23,9 +23,8 @@ Create or edit the MCP configuration file `~/.aws/amazonq/mcp.json` .
 If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to the file:
 
 <pre><code><strong>{
-</strong>  "servers": {
+</strong>  "mcpServers": {
     "Snyk": {
-      "type": "stdio",
       "command": "npx",
       "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"],
       "env": {}
@@ -42,9 +41,8 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```
 {
-  "servers": {
+  "mcpServers": {
     "Snyk": {
-      "type": "stdio",
       "command": "/absolute/path/to/snyk",
       "args": ["mcp", "-t", "stdio"],
       "env": {}

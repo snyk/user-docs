@@ -31,7 +31,7 @@ If you have the Node.js `npx` executable installed in your environment, add the 
 
 ```json5
 {
-  "servers": {
+  "mcpServers": {
     "Snyk": {
       "type": "stdio",
       "command": "npx",
@@ -50,7 +50,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```json5
 {
-  "servers": {
+  "mcpServers": {
     "Snyk": {
       "type": "stdio",
       "command": "/absolute/path/to/snyk",
@@ -63,9 +63,9 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
 
-The following example shows a Snyk MCP Server that was successfully configured and started.
+The following example shows a Snyk MCP Server that was successfully configured.
 
-<figure><img src="../../../.gitbook/assets/image (465).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (529).png" alt=""><figcaption></figcaption></figure>
 
 For additional MCP configuration options on VS Code and troubleshooting, consult the official [VS Code MCP server documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 

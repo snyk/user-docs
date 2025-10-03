@@ -23,7 +23,7 @@ Create or edit the MCP configuration file `~/.claude.json`.
 If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to the file:
 
 <pre><code><strong>{
-</strong>  "servers": {
+</strong>  "mcpServers": {
     "Snyk": {
       "type": "stdio",
       "command": "npx",
@@ -42,7 +42,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```
 {
-  "servers": {
+  "mcpServers": {
     "Snyk": {
       "type": "stdio",
       "command": "/absolute/path/to/snyk",

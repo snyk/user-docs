@@ -10,7 +10,10 @@ You can add the Snyk MCP server to Windsurf to secure code generated with agenti
 
 ### Install Windsurf
 
-Add the Windsurf extension to VS Code. For mode details, see the official [Setup Windsurf on VS Code guide.](https://docs.windsurf.com/plugins/getting-started)
+Choose one of the following:
+
+* Add the Windsurf extension to VS Code. For mode details, see the official [Setup Windsurf on VS Code guide.](https://docs.windsurf.com/plugins/getting-started)
+* Install Windsurf to your local machine from the [Windsurf website](https://windsurf.com/)
 
 ### Install the Snyk MCP Server in Windsurf
 
@@ -24,9 +27,8 @@ If you have the Node.js `npx` executable installed in your environment, add the 
 
 ```json5
 {
-  "servers": {
+  "mcpServers": {
     "Snyk": {
-      "type": "stdio",
       "command": "npx",
       "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"],
       "env": {}
@@ -43,9 +45,8 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```json5
 {
-  "servers": {
+  "mcpServers": {
     "Snyk": {
-      "type": "stdio",
       "command": "/absolute/path/to/snyk",
       "args": ["mcp", "-t", "stdio"],
       "env": {}
@@ -58,7 +59,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 The following example shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../../.gitbook/assets/image (465).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (528).png" alt=""><figcaption></figcaption></figure>
 
 For additional MCP configuration options on VS Code and troubleshooting, consult the official [VS Code MCP server documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
