@@ -1,81 +1,99 @@
-# Goose CLI guide
+# Gemini CLI guide
 
-You can add the Snyk MCP server to Goose CLI to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+You can add the Snyk MCP server to Gemini CLI to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
 
 ## Prerequisites
 
-* [Install the Goose CLI](gemini-cli-guide.md#install-goosecli)
+* [Install Gemini CLI](gemini-cli-guide.md#install-gemini-cli)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](gemini-cli-guide.md#install-the-snyk-mcp-server-in-gemini-cli-using-npx-and-settings.json)
+* [Install the Snyk MCP](gemini-cli-guide.md#install-the-snyk-mcp-server-in-gemini-code-assist)
 
-### Install GooseCLI
+### Install Gemini CLI
 
-Install the GooseCLI. For mode details, see the official [Goose CLI installation instructions.](https://block.github.io/goose/docs/quickstart)
+Install [the Gemini CLI](https://github.com/google-gemini/gemini-cli?tab=readme-ov-file) to your local machine.&#x20;
 
-### Install the Snyk MCP Server in Goose CLI using npx command
+### Install the Snyk Extension or MCP Server in Gemini CLI
 
-This installation instruction assumes you have a Node.js local development environment setup with the `npx` executable.
+Get started with Snyk and Gemini CLI by using the Gemini extension, which installs the Snyk MCP Server. Run this in your terminal:
 
-To install the Snyk MCP Server using the Goose CLI interactive session, proceed with the following instructions:
+```sh
+gemini extensions install git@github.com:snyk/agentic-integration-wrappers
+```
 
-*   Start an interactive Goose configuration wizard by running the `goose configure` command:\
+To confirm the extension was installed, run:
+
+```
+/extensions list
+```
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
-    <figure><img src="../../../.gitbook/assets/image (396).png" alt=""><figcaption></figcaption></figure>
-* From the configuration menu, chose **Add Extension.**
-* Choose **Command-line extension (run a local command or script).**
-* Name this extension **Snyk Security.**
-* Run the command by typing in: `npx -y snyk@latest mcp -t stdio`
-* Continue with the defaults (timeout of 300 seconds), and optionally provide the Snyk API token if your Organization policy requires one.&#x20;
 
-A complete Goose configuration walkthrough should look as follows:
+To install the Snyk MCP Server manually, use the method that best suits your operating system and local development environment.
 
-<figure><img src="../../../.gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure>
+#### Install with Node.js and `npx`
 
-Start or resume your Goose session with the Snyk MCP server enabled.
+Create or edit the file `~/.gemini/settings.json` in the root directory of your Project.
 
-### Install the Snyk MCP Server in Goose CLI using Snyk CLI
+If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to the file:
 
-This installation instruction assumes you have installed the Snyk CLI and the `snyk` executable is available in your system's path.
+```json5
+{
+  "mcpServers": {
+    "snyk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "snyk@latest",
+        "mcp",
+        "-t",
+        "stdio"
+      ]
+    }
+  }
+}
+```
 
-Install the Snyk MCP Server using the Goose CLI interactive session by following these instructions:
+#### Install with pre-installed Snyk CLI
 
-* Start an interactive Goose configuration wizard by running the `goose configure` command.
-* Choose **Add Extension f**rom the configuration menu.
-* Select **Command-line extension (run a local command or script).**
-* Name this extension **Snyk Security.**
-* Run the command by typing in: `/path/to/snyk mcp -t stdio` - replacing `/path/to/snyk` with the fully qualified absolute path to your Snyk CLI.
-* Continue with the defaults (timeout of 300 seconds), and optionally provide the Snyk API token if your Organization policy requires one.&#x20;
+Create or edit the file `~/.gemini/settings.json` in the root directory of your Project.
 
-{% hint style="info" %}
-&#x20;If you installed `snyk` using npm as a global module and you are using fnm to manage your versions, then you must specify the full path to the `snyk` executable. The path may look like this: `/Users/username/.local/state/fnm_multishells/8831_1753881185071/bin/snyk`.
-{% endhint %}
+If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in the file. Specify the full path to the Snyk executable CLI:
 
-Start or resume your Goose session with the Snyk MCP server enabled.
+```json5
+{
+  "mcpServers": {
+    "snyk": {
+      "command": "/absolute/path/to/snyk",
+      "args": [
+        "mcp",
+        "-t",
+        "stdio"
+      ]
+    }
+  }
+}
+
+```
+
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
+
+Run `/mcp list` to confirm the Snyk MCP Server is connected.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Setting up the Snyk MCP Server
 
-As a one-time setup, you may need to authenticate and trust the Project directory. If required, the agentic workflow will likely manage this automatically.
+As a one-time setup, you may need to authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.
 
-These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog.&#x20;
-
-You can explicitly prompt to authenticate your account as follows:
-
-```
-Authenticate my Snyk account
-```
-
-<figure><img src="../../../.gitbook/assets/image (398).png" alt=""><figcaption></figcaption></figure>
-
-If you are not authenticated, this prompt opens a browser for you to authenticate to the Snyk Web UI, and then you can continue with the agent.
-
-<figure><img src="../../../.gitbook/assets/image (486).png" alt="" width="375"><figcaption></figcaption></figure>
+If you are already authenticated with the Snyk CLI installed on your system path, or through a prior interaction, then proceed to working with the Snyk MCP Server.
 
 ## Examples
 
-### Scanning for security vulnerabilities
+### Scanning code and dependencies for security vulnerabilities
 
-In the chat, you can tag specific files or functions and ask the agent to scan your code and third-party dependencies of the Project.
+In the chat, you can tag specific files or functions and ask Gemini CLI to scan your code for safe deployment to production.
 
 {% code title="prompt" overflow="wrap" %}
 ```
@@ -83,29 +101,17 @@ Scan this directory for code security & dependency vulnerabilities and security 
 ```
 {% endcode %}
 
-Goose CLI invokes Snyk scanning, providing output, and insights based on the results that Snyk returned:
+Gemini CLI indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../../.gitbook/assets/image (399).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-### "Secure at inception" rules
+### Gemini CLI Rules
 
 To practice [Secure at Inception](https://snyk.io/solutions/secure-ai-generated-code/), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
-The following is a suggested instruction to use with [Goose CLI recipes](https://block.github.io/goose/docs/guides/recipes/session-recipes) or with [Goose hints file](https://block.github.io/goose/docs/guides/using-goosehints)
+&#x20;Append the following contents to the context file at `~/.gemini/GEMINI.md`
 
-{% code title="Goose CLI rules" overflow="wrap" %}
-```
-Always run Snyk Code scanning tool for new first party code generated.
-Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
-Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-Repeat this process until no issues are found.
-```
-{% endcode %}
-
-Add the following contents to the `.goosehints` file in the root directory of the Project:
-
-{% code title=".goosehints" overflow="wrap" %}
+{% code title="~/.gemini/GEMINI.md" overflow="wrap" %}
 ```
 # Project security best practices
 
@@ -116,3 +122,6 @@ Add the following contents to the `.goosehints` file in the root directory of th
 - Repeat this process until no issues are found.
 ```
 {% endcode %}
+
+
+
