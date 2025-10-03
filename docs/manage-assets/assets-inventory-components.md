@@ -35,7 +35,7 @@ You can copy the name of an asset or browse the repository. Each asset has a men
 
 Repository assets represent SCM repositories. A repository asset is created by discovering the repositories directly in the SCM, when such integration is configured. Alternatively, a repository asset can be created by scanning a repository, (by Snyk or third-party tools) as long as the scanned code is identified with a specific repository (in Snyk, this means filling in the `gitRemoteURL` parameter).
 
-If you scan the code locally using CLI, with no association to a repository, then a repository asset will not be created.
+If you scan the code locally using CLI, with no association to a repository, then a repository asset will not be created. For more details about CLI commands, see [Scanning methods](../scan-with-snyk/snyk-essentials.md#scanning-methods).
 
 ### Container Image assets
 
