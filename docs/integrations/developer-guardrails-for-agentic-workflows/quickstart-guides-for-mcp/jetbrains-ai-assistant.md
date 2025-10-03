@@ -24,12 +24,12 @@ If you have the Snyk CLI installed, open **Settings/Preferences** > **Tools** > 
 
 {% hint style="info" %}
 * You might need to specify the full path to the Snyk executable CLI.
-* JetBrain AI Assistant may have issues with the snyk\_trust function, needed before a dependency check (SCA scan). To fix this, add --disable-trust to the MCP command.
+* JetBrains AI Assistant may have issues with the snyk\_trust function, needed before a dependency check (SCA scan). To fix this, add --disable-trust to the MCP command.
 {% endhint %}
 
 If you have the Snyk CLI installed and accessible on your system path add the following command.
 
-<figure><img src="../../../.gitbook/assets/image1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image2 (1).png" alt=""><figcaption></figcaption></figure>
 
 If the snyk command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
 
@@ -41,17 +41,17 @@ Open Settings/Preferences ▸ Tools ▸ AI Assistant ▸ Model Context Protocol 
 
 If you have the Node.js npx executable installed in your environment, add the following command:
 
-{% hint style="info" %}
-JetBrain AI Assistant may have issues with the snyk\_trust function, needed before a dependency check (SCA scan). To fix this, add --disable-trust to the MCP command.
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/image1 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image2 (1).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+JetBrains AI Assistant may have issues with the snyk\_trust function, needed before a dependency check (SCA scan). To fix this, add --disable-trust to the MCP command.
+{% endhint %}
 
 Reload the IDE window for the changes to apply.
 
 ## Setting up the Snyk MCP Server
 
-Next, you can verify that the Snyk MCP Server is available by checking the Status column in the MCP configuration and requesting it to list the tools it has available.
+Verify that the Snyk MCP Server is available by checking the Status column in the MCP configuration and requesting it to list the tools it has available.
 
 <figure><img src="../../../.gitbook/assets/image3 (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -68,7 +68,7 @@ In the chat, you can tag specific files or functions and ask JetBrains AI Assist
 
 {% code title="prompt" overflow="wrap" %}
 ```
-Scan this directory for code security & dependency vulnerabilities and security issues
+Scan this project for code security & dependency vulnerabilities and security issues with snyk
 ```
 {% endcode %}
 
