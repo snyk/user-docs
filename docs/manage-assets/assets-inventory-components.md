@@ -151,7 +151,7 @@ The Controls logos can have one of the following states:
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.&#x20;
 
-<figure><img src="../.gitbook/assets/image (216).png" alt=""><figcaption><p>Inventory menu - Controls column</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (216) (2).png" alt=""><figcaption><p>Inventory menu - Controls column</p></figcaption></figure>
 
 ## Tags
 
@@ -165,7 +165,7 @@ In Snyk Web UI, you can filter assets by their tags using **Advanced filters**. 
 
 * Filter by `Tags`: The new `Tags` filter is a key-value pair filter. This filter allows you to select a specific tag key such as `department` and then choose a corresponding value such as `finance` to narrow down the asset list.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="Advanced Filters - Tags"><figcaption><p>Advanced Filters - Tags</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (3).png" alt="Advanced Filters - Tags"><figcaption><p>Advanced Filters - Tags</p></figcaption></figure>
 
 ## Labels
 

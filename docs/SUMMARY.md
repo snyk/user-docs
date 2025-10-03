@@ -287,6 +287,7 @@
     * [Codex CLI guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/codex-cli-guide.md)
     * [Continue guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/continue-guide.md)
     * [Cursor guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide.md)
+    * [Factory guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/factory-guide.md)
     * [Gemini Code Assist guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-code-assist-guide.md)
     * [GitHub Copilot guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/github-copilot-guide.md)
     * [Goose CLI guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-cli-guide.md)
