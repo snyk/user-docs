@@ -2716,6 +2716,24 @@
         ],
         "type": "object"
       },
+      "Action": {
+        "description": "Different types of managed OS package fix actions",
+        "discriminator": {
+          "mapping": {
+            "pin_package": "#/components/schemas/PinPackageAction",
+            "upgrade_package": "#/components/schemas/UpgradePackageAction"
+          },
+          "propertyName": "type"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/UpgradePackageAction"
+          },
+          {
+            "$ref": "#/components/schemas/PinPackageAction"
+          }
+        ]
+      },
       "ActualVersion": {
         "description": "Resolved API version",
         "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
@@ -8624,6 +8642,30 @@
                       "pattern": "^snyk(:[^:]+)+$",
                       "type": "string"
                     },
+                    "instructions": {
+                      "description": "License policy instructions. Legal instructions for the user on what to do\nwhen met with the license policy violation.",
+                      "items": {
+                        "description": "License instructions are free-form, customer defined messages typically provided\nby application security or legal teams. They appear in the CLI alongside detected\nlicense violations to guide developers on how to handle specific licenses in their\ndependencies.",
+                        "properties": {
+                          "content": {
+                            "description": "License policy instructions. Legal instructions for the user on what to do\nwhen met with the license policy violation.",
+                            "example": "You must include the MPL-2.0 license in all copies of the software.",
+                            "type": "string"
+                          },
+                          "license": {
+                            "description": "Software license identifier.",
+                            "example": "MPL-2.0",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "license",
+                          "content"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
                     "license": {
                       "description": "Software license identifier.",
                       "example": "MPL-2.0",
@@ -8677,7 +8719,8 @@
                     "package_version",
                     "published_at",
                     "severity",
-                    "license"
+                    "license",
+                    "instructions"
                   ],
                   "type": "object"
                 },
@@ -8878,6 +8921,37 @@
                 "required": [
                   "links"
                 ],
+                "type": "object"
+              },
+              "fix": {
+                "description": "Fix for this finding, it comes expanded with all data preloaded",
+                "properties": {
+                  "data": {
+                    "properties": {
+                      "attributes": {
+                        "allOf": [
+                          {
+                            "$ref": "#/components/schemas/FixAttributes"
+                          }
+                        ],
+                        "description": "Inlined attributes included in the relationship, if it is expanded.\n\nExpansion is a Snyk variation on JSON API. See\nhttps://snyk.roadie.so/docs/default/component/sweater-comb/standards/rest/#expansion"
+                      },
+                      "id": {
+                        "format": "uuid",
+                        "type": "string"
+                      },
+                      "type": {
+                        "pattern": "^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "id"
+                    ],
+                    "type": "object"
+                  }
+                },
                 "type": "object"
               },
               "org": {
@@ -9097,6 +9171,35 @@
           "other"
         ],
         "type": "string"
+      },
+      "FixAppliedOutcome": {
+        "description": "Indicates the outcome of a fix in terms of resolving the finding at hand",
+        "enum": [
+          "fully_resolved",
+          "partially_resolved",
+          "unresolved"
+        ],
+        "type": "string"
+      },
+      "FixAttributes": {
+        "description": "FixAttributes is the main payload modelling a fix",
+        "properties": {
+          "actions": {
+            "$ref": "#/components/schemas/Action"
+          },
+          "outcome": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FixAppliedOutcome"
+              }
+            ],
+            "description": "Indicates whether applying these actions will address the finding or not"
+          }
+        },
+        "required": [
+          "outcome"
+        ],
+        "type": "object"
       },
       "ForceUpdate": {
         "example": false,
@@ -12567,6 +12670,9 @@
             "description": "Use to fail a test when there is at least one vulnerable finding that can be fixed by upgrading the version of the related\n   dependency. E.g. bumping lodash from 1.1.1 to 1.1.2.",
             "type": "boolean"
           },
+          "reachability_filter": {
+            "$ref": "#/components/schemas/ReachabilityFilter"
+          },
           "risk_score_threshold": {
             "description": "Findings of equal or greater risk score will fail the test.",
             "format": "uint16",
@@ -14069,6 +14175,34 @@
         "required": [
           "data",
           "type"
+        ],
+        "type": "object"
+      },
+      "PinPackageAction": {
+        "description": "Pin a package at a specific version. Pinning is a capability not supported\nby all ecosystems, which causes a transitive dependency to be pinned at\na specific version with an override.\n\nFor example, the `replace` go.mod directive can override package dependency\nconstraints, forcing a specific version to be used in the application.\n\nPinning could break an application.\n\nNote: In practice pin actions today are solely used in python pip's packages as pip does not calculate upgrade paths",
+        "example": {
+          "package_name": "requests",
+          "pin_version": "2.25.1",
+          "type": "pin_package"
+        },
+        "properties": {
+          "package_name": {
+            "type": "string"
+          },
+          "pin_version": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "pin_package"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "package_name",
+          "pin_version"
         ],
         "type": "object"
       },
@@ -15653,6 +15787,15 @@
           "reachability"
         ],
         "type": "object"
+      },
+      "ReachabilityFilter": {
+        "description": "Represent various reachability filters available for findings.",
+        "enum": [
+          "reachable",
+          "no_path_found",
+          "no_info"
+        ],
+        "type": "string"
       },
       "ReachabilityType": {
         "description": "Reachability enum for reachability signal.",
@@ -18559,6 +18702,74 @@
         "example": "2021-11-12T10:31:06.026Z",
         "format": "date-time",
         "type": "string"
+      },
+      "UpgradePackageAction": {
+        "description": "Upgrade a package from one version to another.",
+        "example": {
+          "package_name": "lodash",
+          "type": "upgrade_package",
+          "upgrade_paths": [
+            {
+              "dependency_path": [
+                {
+                  "name": "lodash",
+                  "version": "2.1.1"
+                },
+                {
+                  "name": "minimist",
+                  "version": "4.7.6"
+                }
+              ],
+              "is_drop": false
+            }
+          ]
+        },
+        "properties": {
+          "package_name": {
+            "description": "The package that's receiving an upgrade to fix this vulnerability",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "upgrade_package"
+            ],
+            "type": "string"
+          },
+          "upgrade_paths": {
+            "description": "Upgrading a package may lead to one or more paths to change. These paths are modelled as evidence\nin DependencyPathEvidence.\n\nUltimately upgradePaths illustrates the minimum version upgrades that need to happen to apply this action.",
+            "items": {
+              "$ref": "#/components/schemas/UpgradePath"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "type",
+          "package_name",
+          "upgrade_paths"
+        ],
+        "type": "object"
+      },
+      "UpgradePath": {
+        "description": "Upgrade path model all known dependency paths that will change when applying an upgrade action.",
+        "properties": {
+          "dependency_path": {
+            "items": {
+              "$ref": "#/components/schemas/Package"
+            },
+            "maxItems": 100,
+            "type": "array"
+          },
+          "is_drop": {
+            "description": "A drop describes an upgrade path, where the vulnerability gets addressed by removing the vulnerable dependency.\nThis typically happens when a package somewhere mid-way drops this library in newer versions.\n\nNote: For drops, the length of the upgradePath will be smaller than the length of the original dependencyPath.",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "dependency_path",
+          "is_drop"
+        ],
+        "type": "object"
       },
       "User": {
         "additionalProperties": false,
