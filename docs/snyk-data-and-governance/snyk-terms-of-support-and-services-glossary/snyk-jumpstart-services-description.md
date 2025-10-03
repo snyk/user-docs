@@ -64,26 +64,6 @@ The Snyk Consultant will educate the Customer on how to identify assets not curr
 
 The Snyk Consultant will educate the Customer on how to filter and prioritize issues in the Asset Dashboard.
 
-#### Admin training
-
-The Snyk Consultant will run a 60-minute training session to ensure Customer administrator users know how to configure essential settings in Snyk based on the maturity of their security program.
-
-Training topics include:
-
-* Navigating the Snyk UI
-* Integration Settings
-* Notification Settings
-* Enabling new features
-* User roles and permissions
-* Filtering and prioritizing issues
-* Viewing results in Snyk reporting
-* Remediation workflow
-* Ignoring issues in the Snyk UI
-* PR Check walkthrough
-* Security and license policies
-* Accessing additional training materials (learn.snyk.io)
-* Project Collections and views
-
 #### Developer training
 
 The Snyk Consultant will run a 60-minute training session for Customer’s Developers to ensure all collaborator users know how to access Snyk results and initiate tests. This training will cover a range of tools, including the UI (app.snyk.io), IDE plugin, and CLI. Developer Training will be completed after the product-specific modules of Jumpstart have been completed.
