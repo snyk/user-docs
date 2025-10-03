@@ -859,7 +859,6 @@
       * [Consistent Ignores for Snyk Code CLI](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/snyk-cli.md)
       * [Consistent Ignores for Snyk Code IDE](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/snyk-ide.md)
       * [Consistent Ignores for Snyk Code Pull Request Checks](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/snyk-pull-request-checks.md)
-      * [Known limitations](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/known-limitations.md)
       * [Consistent Ignores for Snyk Code FAQs](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/consistent-ignores-for-snyk-code-faqs.md)
   * [Prioritization for Snyk Essentials](manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md)
   * [Prioritization for Snyk AppRisk](manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-apprisk.md)
