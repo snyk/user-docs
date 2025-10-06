@@ -119,7 +119,7 @@ For Python with Snyk Open Source, the following file formats are supported:
 
 Available features:
 
-* Fix PRs
+* Fix PRs (supported only for pip)
 * License scanning
 * Reports
 
