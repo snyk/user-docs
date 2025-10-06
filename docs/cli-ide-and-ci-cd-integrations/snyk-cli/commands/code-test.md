@@ -13,17 +13,62 @@ The `snyk code test` command tests source code for any known security issues (St
 Possible exit codes and their meaning:
 
 **0**: success (scan completed), no vulnerabilities found\
-**1**: action\_needed (scan completed), vulnerabilities found\
+**1**: action_needed (scan completed), vulnerabilities found\
 **2**: failure, try to re-run the command. Use `-d` to output the debug logs.\
 **3**: failure, no supported projects detected
 
 ## Configure the Snyk CLI
+
+You can use environment variables to configure the Snyk CLI and set variables for connecting with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli)
 
 ## Debug
 
 Use the `-d` option to output the debug logs.
 
 ## Options
+
+### `--report`
+
+Share results with the Snyk Web UI.
+
+This creates a project in your Snyk account with a snapshot of the current issues or appends the snapshot to an existing project.
+
+After using this option, log in to the Snyk website and view your projects to see the snapshot.
+
+Example: `$ snyk code test --report`
+
+### `--project-name=<PROJECT_NAME>`
+
+**Required** when using `--report`. Specify a custom Snyk project name.
+
+Example: `$ snyk code test --report --project-name=my-project`
+
+### `--target-name=<TARGET_NAME>`
+
+This can be used in combination with the `--report` option.
+
+Set or override the target name for the project.
+
+### `--target-reference=<TARGET_REFERENCE>`
+
+This can be used in combination with the `--report` option.
+
+Specify a reference that differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference.
+
+Example, setting to the current Git branch:
+
+`snyk code test --report --target-reference="$(git branch --show-current)"`
+
+Example, setting to the latest Git tag:
+
+`snyk code test --report --target-reference="$(git describe --tags --abbrev=0)"`
+
+### `--remote-repo-url=<URL>`
+
+Set or override the repository's remote URL metadata for the test.
+
+Example: `--remote-repo-url=https://gitlab.com/example/project` will create a target for given URL and on the UI it would be visible as `/example/project/` .
+
 
 ### `--org=<ORG_ID>`
 
@@ -67,20 +112,9 @@ Example: `$ snyk code test --sarif`
 
 ### `--sarif-file-output=<OUTPUT_FILE_PATH>`
 
-Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, regardless of whether or not you use the `--sarif` option.
+Save test output in SARIF format directly to the \<OUTPUT_FILE_PATH> file, regardless of whether or not you use the `--sarif` option.
 
 Use to display the human-readable test output using stdout and, at the same time, save the SARIF format output to a file.
-
-### `--report`
-
-Share CLI results with the Snyk Web UI.
-
-```
-snyk code test --report --project-name="<PROJECT_NAME>"
-```
-
-- Project name must be in double quotation marks. Single quotes or missing quotes will result in an error.
-- Project name must contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (_), and square brackets ([]).
 
 ### `--severity-threshold=<low|medium|high>`
 
