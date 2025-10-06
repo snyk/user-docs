@@ -13,7 +13,7 @@ The `snyk code test` command tests source code for any known security issues (St
 Possible exit codes and their meaning:
 
 **0**: success (scan completed), no vulnerabilities found\
-**1**: action_needed (scan completed), vulnerabilities found\
+**1**: action\_needed (scan completed), vulnerabilities found\
 **2**: failure, try to re-run the command. Use `-d` to output the debug logs.\
 **3**: failure, no supported projects detected
 
@@ -94,7 +94,7 @@ Print results on the console as a JSON data structure.
 
 Example: `$ snyk code test --json`
 
-### `--json-file-output=<OUTPUT_FILE_PATH>`
+### `--json-file-output=<OUTPUT\_FILE\_PATH>`
 
 Save test output as a JSON data structure directly to the specified file, regardless of whether or not you use the `--json` option.
 
