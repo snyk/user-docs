@@ -29,6 +29,18 @@ Service Accounts are not available at the Organization level in Google Cloud IAM
 
 * In the SCC console, navigate to **Marketplace** and search for **Snyk**. Alternatively, navigate directly to the [Snyk for SCC marketplace listing](https://console.cloud.google.com/marketplace/product/snyk-marketplace/snyk-google-scc).
 * Click **SIGN UP WITH PARTNER** to install the Snyk for SCC integration. During this process, you will create a **Findings Source** for Snyk and a **Service Account** with [Security Center Findings Editor](https://cloud.google.com/security-command-center/docs/access-control-org#securitycenter.findingsEditor) permissions.
+
+{% hint style="warning" %}
+**Important Identity and Access Management (IAM) Configuration for Security Command Center**
+
+The setup process will grant the Snyk Service Account the `Security Center Findings Editor` role on the Project you select. However, how you use Security Command Center determines if an additional step is needed.
+
+* **If you use Google SCC at the Organization level** (most common for businesses):&#x20;
+  * You must also add an IAM policy binding at the Organization level.&#x20;
+  * Grant the Snyk Service Account the `Security Center Findings Editor` role there as well. This is required because Snyk posts findings to your Organization's central SCC dashboard.
+* **If you use Google SCC in a standalone, Project-level mode**: No extra steps are needed. The Project-level permission is sufficient.
+{% endhint %}
+
 * Navigate to Google Cloud IAM and locate the **Service Accoun**t you created in the previous step, then [create a service account key](https://cloud.google.com/iam/docs/keys-create-delete#creating) in JSON format.
 * Make a note of the **Source ID** (Findings Source name) and the **Service Account Ke**y, as you will need to provide them to the Snyk Web UI.
 
