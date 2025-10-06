@@ -3671,7 +3671,7 @@
             "type": "array"
           },
           "labels": {
-            "description": "Labels associated with the asset",
+            "description": "Unstructured, simple text strings that can be applied to an asset",
             "items": {
               "type": "string"
             },
@@ -3719,7 +3719,7 @@
             "additionalProperties": {
               "type": "string"
             },
-            "description": "Custom tags associated with the asset (key-value pairs)",
+            "description": "Explicitly defined, key:value pairs that are associated with an asset",
             "type": "object"
           },
           "updated_at": {
@@ -3775,6 +3775,7 @@
       },
       "AssetClassAttributes": {
         "additionalProperties": false,
+        "description": "Mandated, hierarchical attribute that provides a standardized measure of an asset's importance to the business. It can be a number from 1-4 or a display name (e.g \"A\", \"B\", \"C\" or \"D\").\nThe locked status is a boolean flag that, when true, prevents automated policy-driven actions from overriding the manually set Business Criticality (Class) value.\n",
         "example": {
           "display_name": "A",
           "locked": true,
@@ -3996,7 +3997,7 @@
         "properties": {
           "add": {
             "additionalProperties": {
-              "maxLength": 256,
+              "maxLength": 40,
               "pattern": "^[a-zA-Z0-9_/:?#@\u0026=+%~-]+$",
               "type": "string"
             },
