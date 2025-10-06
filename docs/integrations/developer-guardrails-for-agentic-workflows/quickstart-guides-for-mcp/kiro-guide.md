@@ -6,7 +6,7 @@ You can add the Snyk MCP server to Kiro to secure code generated with agentic wo
 
 * [Install the code assistant extension](kiro-guide.md#install-kiro)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](kiro-guide.md#install-the-snyk-mcp-server-in-qodo)
+* [Install the Snyk MCP](kiro-guide.md#install-the-snyk-mcp-server-in-kiro)
 
 ### Install Kiro
 

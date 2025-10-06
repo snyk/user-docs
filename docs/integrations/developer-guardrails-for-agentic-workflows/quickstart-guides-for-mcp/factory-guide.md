@@ -6,7 +6,7 @@ You can add the Snyk MCP server to Factory to secure code generated with agentic
 
 * [Install Factory](factory-guide.md#install-factory)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](factory-guide.md#install-the-snyk-mcp-server-in-amazon-q)
+* [Install the Snyk MCP](factory-guide.md#install-the-snyk-mcp-server-in-factory)
 
 ### Install Factory
 
