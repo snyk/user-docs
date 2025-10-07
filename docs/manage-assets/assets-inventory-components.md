@@ -6,7 +6,6 @@ Each inventory layout is presented in a table format, detailing the available ke
 * [Issues](assets-inventory-components.md#issues)
 * [Coverage Controls](assets-inventory-components.md#coverage-controls)
 * [Tags](assets-inventory-components.md#tags)
-* [Labels](assets-inventory-components.md#labels)
 * [Developers](assets-inventory-components.md#developers)
 * [Class](assets-inventory-components.md#class)
 * [Risk factors](assets-inventory-components.md#risk-factors)
@@ -77,8 +76,7 @@ The Summary tab is a concentrated view of asset properties. The Summary screen p
   * Risk factors - provides the list of active risk factors.
   * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
 * **Organization** - specifies the Organizations associated with the asset.
-* **Labels** - provides the list of all labels available for that asset.
-* **Tags -** provides a key-value pair that allows you to attach structured metadata to your assets.&#x20;
+* **Tags** - provides the list of all tags available for that asset.
 * **Issues**  - categorizes the identified types of open issues.&#x20;
 * **App Context**\* - asset metadata from App Context integrations, such as Backstage catalog or ServiceNow CMDB, can include the following attributes: catalog name, category, application, owner, and so on.
 
@@ -88,7 +86,7 @@ The Summary tab is a concentrated view of asset properties. The Summary screen p
 After you apply the filters, the assets list will only display the assets that directly match the filter conditions, and, if available, a list of children assets related to the selected one is displayed, with the information shown in a table format, with a focus on the following topics: Asset (name), Issues, Controls, Class.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (217).png" alt=""><figcaption><p>Asset card - Assets Summary view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Asset card - Assets Summary view orig.png" alt=""><figcaption><p>Asset card - Assets Summary view</p></figcaption></figure>
 
 ### Related Assets
 
@@ -151,60 +149,46 @@ The Controls logos can have one of the following states:
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.&#x20;
 
-<figure><img src="../.gitbook/assets/image (216) (2).png" alt=""><figcaption><p>Inventory menu - Controls column</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Inventory menu - Controls column orig.png" alt=""><figcaption><p>Inventory menu - Controls column</p></figcaption></figure>
 
 ## Tags
 
-Provides a key-value tagging capability that allows you to attach specific, structured metadata to your assets. Use this feature lets you granular filtering, robust policy creation, and better alignment with your internal systems.
+Asset tags are metadata labels applied to repository assets and build artifacts. You can use asset tags to tag based on predefined values, manage and apply security policies, and group assets based on common characteristics. The following asset types are available:
 
-**Example:** A structured tag provides both a key and a value, such as `platform:aws` or `region:eu-central-1`.
+* **GitHub custom properties** - lists the GitHub custom properties associated with your GitHub repository as a tag.
+* **User-defined tags** are customizable, as you can define their logic through Assets Policies. For example, you can set tags to label a repository that comes from a specific source, such as GitHub. Tags associated with assets are identified in the UI with the **Asset policy tag's** name.
+* **System tags** are automatically assigned by Snyk based on asset names or detected keywords (for example, `codeowners`).
 
-### How to filter assets by tags <a href="#how-to-filter-the-projects-listing-by-tags" id="how-to-filter-the-projects-listing-by-tags"></a>
-
-In Snyk Web UI, you can filter assets by their tags using **Advanced filters**. You can define filters based on specific criteria, such as a property of an asset, a condition, and a value.
-
-* Filter by `Tags`: The new `Tags` filter is a key-value pair filter. This filter allows you to select a specific tag key such as `department` and then choose a corresponding value such as `finance` to narrow down the asset list.
-
-<figure><img src="../.gitbook/assets/image (1) (3).png" alt="Advanced Filters - Tags"><figcaption><p>Advanced Filters - Tags</p></figcaption></figure>
-
-## Labels
-
-Asset labels are metadata that is applied to repository assets and build artifacts. You can use asset labels to tag assets based on predefined values, manage and apply security policies, and group assets based on common characteristics. The following asset types are available:
-
-* **GitHub custom properties** - lists the GitHub custom properties associated with your GitHub repository as a label.
-* **User-defined labels** are customizable, as you can define their logic through Assets Policies. For example, you can set labels to represent a repository that comes from a specific source, such as GitHub. Labels associated with assets are identified in the UI with the **Asset policy labels** name.
-* **System labels** are automatically assigned by Snyk based on asset names or detected keywords (for example, `codeowners`).
-
-A repository asset label can be added through Policies or be system-generated by Snyk Essentials to provide more context. Click on a labels field to view all labels.
+A repository asset tag can be added through Policies or be system-generated by Snyk Essentials to provide more context. Click on a tag field to view all tags.
 
 {% hint style="info" %}
-BitBucket Cloud cannot automatically detect the language used in the source code from the repositories. In Snyk Essentials, you can only see the language labels that have been manually added for BitBucket Cloud. \
+BitBucket Cloud cannot automatically detect the language used in the source code from the repositories. In Snyk Essentials, you can only see the language tags that have been manually added for BitBucket Cloud. \
 Language data is not available for BitBucket Server. \
 For more information, you can refer to the official documentation provided by BitBucket.
 {% endhint %}
 
-A system-generated label includes the following information:
+A system-generated tag includes the following information:
 
 * **Technology** - The languages detected by Snyk Essentials in the source code within a repository asset.
 * **SCM Topic** - The topics found in the integrated SCM repositories. Snyk Essentials supports topics from GitHub and GitLab.
-* **Asset type label** - The label explaining the type of the asset. For example, ‌container assets will be assigned an image asset label.&#x20;
+* **Asset type tag** - The tag explaining the type of the asset. For example, ‌container assets will be assigned an image asset tag.&#x20;
 * **SCM Repository freshness** - The status of the repository and the date of the last commit.
   * **Active**: Had commits in the last 3 months.
   * **Inactive**: The last commits were made in the last 3 - 6 months.
   * **Dormant**: No commits in the last 6 months.
   * **N/A**: There are no commits detected by Snyk Essentials.
 
-<figure><img src="../.gitbook/assets/image (218).png" alt=""><figcaption><p>Inventory menu - Labels column</p></figcaption></figure>
+### Tag rules overview
 
-### Labels rules overview
+<figure><img src="../.gitbook/assets/Inventory menu - Tags column.png" alt=""><figcaption><p>Inventory menu - Tags column</p></figcaption></figure>
 
-Labels are organized into three main categories:
+Tags are organized into three main categories:
 
 * GitHub custom properties
-* Asset policy labels
-* System labels
+* Asset policy tags
+* System tags
 
-System labels are automatically generated from the SCM repositories. System labels can be classified into three main categories:
+System tags are automatically generated from the SCM repositories. System tags can be classified into three main categories:
 
 * Languages:
   * This applies to GitHub, GitLab, Azure DevOps, and BitBucket as long the data is available in the repository.
@@ -214,40 +198,34 @@ System labels are automatically generated from the SCM repositories. System labe
 * Multiple different rules based on the words we found in the repositories:
   * This applies to GitHub, GitLab, Azure DevOps, and BitBucket.
 
-### Labeling policy
+### Tagging policy
 
-You can use pre-defined system labels and asset labels to mark the repositories that meet your filter criteria. Check the following [Labeling policy](../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy.md) use case.
+You can use pre-defined system tags and asset tags to mark the repositories that meet your filter criteria. Check the following [Tagging policy](../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy.md) use case.
 
-### Labeling rules related to metadata
+### Tag rules related to metadata
 
-| Rule                                                                  | Label             |
+| Rule                                                                  | Tag               |
 | --------------------------------------------------------------------- | ----------------- |
 | Snyk Essentials found technologies in use.                            | `< technologies>` |
 | Snyk Essentials found languages from the SCM.                         | `<languages>`     |
 | Snyk Essentials detected a new repository created in the last 7 days. | `new repository`  |
 | Snyk Essentials found the code Project with the code owner.           | `codeowners`      |
 
-In the Snyk web interface, you can filter assets by their labels using the **Advanced Filters** option. You can define filters based on highly specific criteria, such as a property of an asset, a condition, and a value.
-
-* Filter by `labels`: This filter allows you to select a specific label.
-
-<figure><img src="../.gitbook/assets/image (527).png" alt="Advanced Filters - By Labels"><figcaption><p>Advanced Filters - By Labels</p></figcaption></figure>
-
 ## Developers
 
-You can see a list of all the developers that worked on that specific asset. The details list includes the SCM profile details for code committers to the repository asset.
+You can see the list of all the developers that worked on that specific asset. The details list includes the SCM profile details for code committers to the repository asset.
 
 ## Class
 
-Reflects the business criticality of the asset from A (most critical) to D (least critical), as you define it in the Policies view.&#x20;
+Reflects the business criticality of the asset from A (most critical) to D (least critical), as you defined it in the Policies view.&#x20;
 
-You can change the business criticality of an asset. To manually update it, select the criticality level and select another one from the list.&#x20;
+You can manually change the business criticality of an asset. Click the criticality level and select another one from the list.&#x20;
 
 After manually setting the value of a class, you have the option to lock the value to prevent any potential overriding by a policy that has the Set Asset Class as an action. You can lock the value from the general or summary views of an asset. You can unlock the class value at any time by clicking the lock icon. A pop-up is displayed, asking you for confirmation about unlocking the value.
 
-<figure><img src="../.gitbook/assets/image (219).png" alt=""><figcaption><p>Inventory menu - Lock the value of a class</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Inventory menu - Lock the value of a class orig.png" alt=""><figcaption><p>Inventory menu - Lock the value of a class</p></figcaption></figure>
 
-The Asset Class column is available on the Insights UI for risk-based prioritization, and it has the same functionality as it does here. At the moment, the Asset Class column is available only for repository assets, and applicable only for Snyk Code.
+The Asset Class column is also available on the Insights UI for risk-based prioritization, and it has the same functionality as it does here. At the moment, the Asset Class column is available only for repository assets, and applicable only for Snyk Code.
 
 {% hint style="info" %}
 Synchronization between the Asset Class and the Insights UI can take up to 3 hours.
