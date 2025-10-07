@@ -12074,7 +12074,7 @@ components:
           description: A list of issues
         total:
           type: number
-          description: The number of results returned
+          description: The total number of dependencies in the organization matching the applied filters
     Dependenciesfilters:
       title: Dependenciesfilters
       type: object
