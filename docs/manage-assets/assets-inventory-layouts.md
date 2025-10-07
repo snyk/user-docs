@@ -32,7 +32,7 @@ Risk factors for Snyk AppRisk are in Early Access and are available only with Sn
 **Runtime discovered** and **Runtime last seen** filters take their release status from the [runtime integration](../integrations/connect-a-third-party-integration.md) for which they provide data and are available only for Snyk AppRisk.
 {% endhint %}
 
-You can filter the information for all the inventory tabs and use any of the available filters listed on the [Assets inventory features](assets-inventory-features.md#filters-capabilities) page.
+You can filter the information for all the inventory tabs and use any of the available filters listed on the [Assets inventory features](assets-inventory-filters.md#filters-capabilities) page.
 
 ### Inventory Overview&#x20;
 
@@ -146,4 +146,3 @@ You can see the scanned artifacts in the Inventory Type view. The scanned artifa
 Packages are defined as software or libraries that are managed by package management systems.
 
 Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk Essentials to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
-

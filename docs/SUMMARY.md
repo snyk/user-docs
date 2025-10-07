@@ -840,7 +840,7 @@
 * [Overview](manage-assets/manage-assets.md)
 * [Assets inventory tabs](manage-assets/assets-inventory-layouts.md)
 * [Assets inventory components](manage-assets/assets-inventory-components.md)
-* [Assets inventory features](manage-assets/assets-inventory-features.md)
+* [Assets inventory filters](manage-assets/assets-inventory-filters.md)
 
 ## Manage risk
 
