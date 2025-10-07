@@ -4,9 +4,9 @@ You can add the Snyk MCP server to Goose CLI to secure code generated with agent
 
 ## Prerequisites
 
-* [Install the Goose CLI](goose-cli-guide.md#install-goosecli)
+* [Install the Goose CLI](gemini-cli-guide-1.md#install-goosecli)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](goose-cli-guide.md#install-the-snyk-mcp-server-in-gemini-cli-using-npx-and-settings.json)
+* [Install the Snyk MCP](gemini-cli-guide-1.md#install-the-snyk-mcp-server-in-gemini-cli-using-npx-and-settings.json)
 
 ### Install GooseCLI
 

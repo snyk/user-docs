@@ -62,19 +62,11 @@ If you want to force npm to create a specific lockfile version, use the npm `--l
 npm install --lockfile-version=2
 ```
 
-### pnpm
-
-{% hint style="info" %}
-**Release status**
-
-Snyk CLI pnpm support is in Early Access.
-
-Enable it using [Snyk Preview](../../../snyk-platform-administration/snyk-preview.md) and install CLI v1.1293.0 or later.
-{% endhint %}
+### pnpm&#x20;
 
 The following table shows a matrix of pnpm versions and Snyk features availability.
 
-<table><thead><tr><th>pnpm version</th><th>CLI support</th><th width="151">SCM support</th><th>License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td>pnpm 7</td><td>✔︎ (Early Access)</td><td></td><td>✔︎ (Early Access)</td><td></td></tr><tr><td>pnpm 8</td><td>✔︎ (Early Access)</td><td></td><td>✔︎ (Early Access)︎</td><td></td></tr><tr><td>pnpm 9</td><td>✔︎ (Early Access)︎</td><td></td><td>✔︎ (Early Access)︎</td><td></td></tr><tr><td>pnpm 10</td><td>✔︎ (Early Access)︎</td><td></td><td>✔︎ (Early Access)︎</td><td></td></tr></tbody></table>
+<table><thead><tr><th>pnpm version</th><th>CLI support</th><th width="151">SCM support</th><th>License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td>pnpm 7</td><td>✔︎ </td><td>✔︎ </td><td>✔︎ </td><td>✔︎ </td></tr><tr><td>pnpm 8</td><td>✔︎ </td><td>✔︎ </td><td>✔︎ </td><td>✔︎ </td></tr><tr><td>pnpm 9</td><td>✔︎ </td><td>✔︎ </td><td>✔︎ </td><td>✔︎ </td></tr><tr><td>pnpm 10</td><td>✔︎ </td><td>✔︎ </td><td>✔︎ </td><td>✔︎ </td></tr></tbody></table>
 
 **Lockfile versions**
 

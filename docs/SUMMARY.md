@@ -291,7 +291,7 @@
     * [Gemini CLI guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-cli-guide.md)
     * [Gemini Code Assist guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-code-assist-guide.md)
     * [GitHub Copilot guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/github-copilot-guide.md)
-    * [Goose CLI guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/goose-cli-guide.md)
+    * [Goose CLI guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-cli-guide-1.md)
     * [JetBrains AI assistant](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/jetbrains-ai-assistant.md)
     * [JetBrains Junie](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/jetbrains-junie.md)
     * [Kiro guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/kiro-guide.md)
