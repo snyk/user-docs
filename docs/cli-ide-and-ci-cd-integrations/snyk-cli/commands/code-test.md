@@ -29,15 +29,15 @@ Use the `-d` option to output the debug logs.
 
 Share results with the Snyk Web UI.
 
-This creates a project in your Snyk account with a snapshot of the current issues or appends the snapshot to an existing project.
+This creates a Project in your Snyk account with a snapshot of the current issues or appends the snapshot to an existing Project.
 
-After using this option, log in to the Snyk website and view your projects to see the snapshot.
+After using this option, log in to the Snyk website and view your Projects to see the snapshot.
 
 Example: `$ snyk code test --report`
 
 ### `--project-name=<PROJECT_NAME>`
 
-**Required** when using `--report`. Specify a custom Snyk project name.
+**Required** when using `--report`. Specify a custom Snyk Project name.
 
 Example: `$ snyk code test --report --project-name=my-project`
 
@@ -45,19 +45,19 @@ Example: `$ snyk code test --report --project-name=my-project`
 
 This can be used in combination with the `--report` option.
 
-Set or override the target name for the project.
+Set or override the target name for the Project.
 
 ### `--target-reference=<TARGET_REFERENCE>`
 
 This can be used in combination with the `--report` option.
 
-Specify a reference that differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference.
+Specify a reference that differentiates this Project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference.
 
-Example, setting to the current Git branch:
+Example of setting to the current Git branch:
 
 `snyk code test --report --target-reference="$(git branch --show-current)"`
 
-Example, setting to the latest Git tag:
+Example of setting to the latest Git tag:
 
 `snyk code test --report --target-reference="$(git describe --tags --abbrev=0)"`
 
@@ -75,7 +75,7 @@ If you have multiple Organizations, you can set a default from the CLI using:
 
 `$ snyk config set org=<ORG_ID>`
 
-Set a default to ensure all newly tested projects are tested under your default Organization. If you need to override the default, use the `--org=<ORG_ID>` option.
+Set a default to ensure all newly tested Projects are tested under your default Organization. If you need to override the default, use the `--org=<ORG_ID>` option.
 
 Default: `<ORG_ID>` that is the current preferred Organization in your [Account settings](https://app.snyk.io/account)
 
@@ -83,7 +83,7 @@ Default: `<ORG_ID>` that is the current preferred Organization in your [Account 
 
 `orgslugname` must match the slug name as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. The orgname does not work.
 
-For more information, see the article [How to select the Organization to use in the CLI](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli)
+To learn more, visit [How to select the Organization to use in the CLI](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli)
 
 ### `--json`
 
