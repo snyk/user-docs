@@ -48,7 +48,7 @@ Before engagement starts, prerequisites must be met for each product module.
 | Single pipeline CI/CD CLI configuration | Must be using Terraform                                                                                                                                                                                                                                                                                                                                | CI/CD user with pipeline edit access for CI/CD tool and Snyk Admin permissions |
 
 
-## Snyk API & Web **prerequisites**
+## Snyk API & Web prerequisites
 
 | Snyk API & Web configuration                                                           | Prerequisites                                                                                                                                                             | Customer participants                                                                                                             |
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -60,7 +60,7 @@ Before engagement starts, prerequisites must be met for each product module.
 | Issue ticketing integration configuration                                                          | <p><br></p>                                                                                                                                                               | <p>Jira or Azure Boards admin</p>                                                                                                                       |
 | Review of Target Scan results                                                          | <p><br></p>                                                                                                                                                               | <p><br></p>                                                                                                                       |
 
-## Snyk Learning Management Add-On **prerequisites**
+## Snyk Learning Management Add-On prerequisites
 
 | Snyk Learning Management Add-On configuration                                                           | Prerequisites                                                                                                                                                             | Customer participants                                                                                                             |
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
