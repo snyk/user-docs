@@ -41,7 +41,7 @@ The Snyk delivery method is designed to ensure rapid value realization with Snyk
 
 The Snyk Consultant will work with the Customer to configure SSO through SAML, Entra ID (formerly Azure AD), OIDC, or ADFS connection along with custom mapping of dynamically assigned users to Snyk Groups and Organizations based on data provided by the desired Identity Provider (IdP) to set up a scaled user provisioning and access model.
 
-#### **Template Organization configuration**
+#### Template Organization configuration
 
 The Snyk Consultant will work with the Customer to configure notification settings, Open Source settings, Code settings, and Snyk account structure. Time will be spent reviewing configuration details with the Customer to ensure the Customer understands and maintains them.
 
@@ -56,11 +56,11 @@ The Snyk Consultant will work with Customer to configure your Asset Inventory as
   * Identify coverage gaps based on purchased Snyk products
   * Notify by email when a criteria (e.g. coverage gap or new repo detected) is met
 
-#### **Walkthrough of coverage and visibility use cases in Snyk Essentials**
+#### Walkthrough of coverage and visibility use cases in Snyk Essentials
 
 The Snyk Consultant will educate the Customer on how to identify assets not currently being scanned by Snyk and how to group assets and issues based on asset classification.
 
-#### **Walkthrough of prioritized issues in Snyk Essentials dashboard**
+#### Walkthrough of prioritized issues in Snyk Essentials dashboard
 
 The Snyk Consultant will educate the Customer on how to filter and prioritize issues in the Asset Dashboard.
 
@@ -198,31 +198,31 @@ The Snyk Consultant will educate the Customer on understanding Snyk IaC results 
 
 ### Delivery approach - Snyk API & Web configuration
 
-#### **Web Target configuration, including authenticated scans**
+#### Web Target configuration, including authenticated scans
 
 The Snyk Consultant will work with the Customer to configure [Web Targets](https://help.probely.com/en/articles/3292779-how-to-set-up-target-authentication-with-a-login-form?q=Web+Target+configuration) (up to three web applications) to be scanned by Snyk API & Web. This includes configuring the authentication for each Target where necessary, such as using a login form or recorded login sequence. Snyk will also help to set up a single navigation sequence for each web application.
 
-#### **API Target configuration**
+#### API Target configuration
 
 The Snyk Consultant will work with the Customer to [configure API collections](https://help.probely.com/en/articles/8178059-how-to-configure-an-api-target-postman-collection) (maximum of one collection) to be scanned by Snyk API & Web, using a Postman Collection or OpenAPI definition.
 
-#### **Domain Ownership Verification**
+#### Domain Ownership Verification
 
 The Snyk Consultant will work with the Customer to complete [Domain Ownership Verification](https://help.probely.com/en/articles/3289281-how-to-verify-the-ownership-of-a-domain-using-a-txt-file) for one domain. This can be achieved by a .txt file, a TXT record, a CNAME record, or a meta tag.
 
-#### **Scanning Agent configuration**
+#### Scanning Agent configuration
 
 The Snyk Consultant will work with the Customer to configure the [Scanning Agent](https://help.probely.com/en/articles/4615595-how-to-scan-internal-applications-with-a-scanning-agent) using Docker, Docker-Compose, or Kubernetes. This is required only if there are Targets to be scanned that are not internet-accessible, and there is a maximum of one agent to be configured.
 
-#### **Target scanning in CI/CD configuration**
+#### Target scanning in CI/CD configuration
 
 The Snyk Consultant will work with the Customer to configure an example workflow using the API & Web CLI that allows you to trigger a Target scan when a repo is updated. This can include the opportunity of failing the pipeline if the scan finds vulnerabilities of High severity.
 
-#### **Issue ticketing integration configuration**
+#### Issue ticketing integration configuration
 
 The Snyk Consultant will work with the Customer to configure a single issue ticketing integration (e.g. Jira or Azure Boards).
 
-#### **Review of Target Scan Results**
+#### Review of Target Scan Results
 
 The Snyk Consultant will educate the Customer on understanding [DAST scan results](https://help.probely.com/en/articles/6843262-how-to-interpret-target-scan-results) for Web and API Targets in the Snyk API & Web UI, including the different reporting functionality that is available in the tool.
 
@@ -244,19 +244,19 @@ The Snyk Consultant will educate the Customer on understanding [DAST scan result
 
 ### Delivery approach - Snyk Learning Management Add-On configuration
 
-#### **Best Practices and Content Overview**
+#### Best Practices and Content Overview
 
 The Snyk Consultant will share best practices for administering a security awareness program within the Snyk Learn platform, including an overview of the types of content available in Snyk Learn that can be leveraged. Provide insights and recommendations to help the Customer shape their program strategy and select appropriate learning materials.
 
-#### **Custom Roles and User Management**
+#### Custom Roles and User Management
 
 The Snyk Consultant will guide the Customer on creating custom roles, such as a "Learning Manager" role, with tailored permissions related to the Learning Management add-on. The Consultant will explain the process of assigning these roles to users within the Customer's Organizations, ensuring appropriate access and responsibilities for managing and overseeing the Snyk Learn program.
 
-#### **Configuring Assignments using a Learning Organization**
+#### Configuring Assignments using a Learning Organization
 
 The Snyk Consultant will educate the Customer on creating Snyk Learn Assignments, setting a due date, and using a ‘Learning Organization’ to specify who needs to complete the Assignment. This includes optional settings, such as resetting user progress to force the lesson to be retaken for compliance reasons.
 
-#### **Tracking Assignments and controlling access**
+#### Tracking Assignments and controlling access
 
 The Snyk Consultant will walk through how to track the progress for active Assignments to review which employees have completed the course. This also includes reviewing which users can access the main Assignments page where they are tracked, created, and removed. An overview of the different reports available in the tool will help to track progress on usage.
 
