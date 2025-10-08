@@ -74,6 +74,10 @@ This is the list of supported operating systems and distributions:
 * Debian 9 - Stretch
 * Debian 8 - Jessie
 
+## [Minimus](https://www.minimus.io/)
+
+* Any
+
 ## [Oracle Linux](https://www.oracle.com/linux/)
 
 * Oracle Linux 10
