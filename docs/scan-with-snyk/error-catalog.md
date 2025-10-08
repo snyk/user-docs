@@ -650,7 +650,6 @@ The provided versioning schema is invalid and image could therefor not be create
 
 The encountered error only provides basic information, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 **Help Links:**
 
@@ -664,7 +663,6 @@ The encountered error only provides basic information, please take a look at the
 
 The specified environment cannot be used. As a result, the configuration remains unchanged.Provide the correct specifications for the environment and try again.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 **Help Links:**
 
@@ -679,7 +677,6 @@ You can configure the CLI in different ways, for example via Environment Variabl
 If one parameter is configured multiple times, it is probably unintentional and might cause unexpected behavior.
 Review configured environment variables and ensure that everything is intentional. If so, you can skip this check by using --no-check.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 **Help Links:**
 
@@ -692,7 +689,6 @@ Review configured environment variables and ensure that everything is intentiona
 
 A specified flag is missing an option value. Provide a correct option value and try again.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 **Help Links:**
 
@@ -705,7 +701,6 @@ A specified flag is missing an option value. Provide a correct option value and 
 
 A specified flag option or combination is invalid. Provide a valid flag option or combination and try again.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 **Help Links:**
 
@@ -718,7 +713,6 @@ A specified flag option or combination is invalid. Provide a valid flag option o
 
 If you are testing an npm package, check the version and package name and try running `snyk test` again. If you are testing a repository, try testing it at https://snyk.io/test/.For further assistance, run `snyk help` or see the Snyk docs.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 ### [SNYK-CLI-0006](#snyk-cli-0006)
 <a id="#SNYK-CLI-0006"></a>
@@ -727,7 +721,6 @@ If you are testing an npm package, check the version and package name and try ru
 
 When running your command, Snyk requires an authenticated account. You must include your API token as an environment value, or use `snyk auth` to authenticate.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 **Help Links:**
 
@@ -741,7 +734,6 @@ When running your command, Snyk requires an authenticated account. You must incl
 
 The specified CLI command includes missing or misconfigured arguments. Provide the correct arguments and try again.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 **Help Links:**
 
@@ -754,7 +746,6 @@ The specified CLI command includes missing or misconfigured arguments. Provide t
 
 Snyk could not detect any supported target files. Ensure the files you are importing are supported, that you are in the right directory, and try again.
 
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 **Help Links:**
 
@@ -792,7 +783,6 @@ CLI was unable to validate the required parameter. Provide the correct parameter
 
 CLI was unable to execute your SCA command, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 **Help Links:**
 
@@ -805,7 +795,6 @@ CLI was unable to execute your SCA command, please take a look at the given deta
 
 CLI was unable to execute your IAC command, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 **Help Links:**
 
@@ -818,7 +807,6 @@ CLI was unable to execute your IAC command, please take a look at the given deta
 
 CLI was unable to execute your SAST command, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 **Help Links:**
 
@@ -831,7 +819,6 @@ CLI was unable to execute your SAST command, please take a look at the given det
 
 This feature is under development and is not yet available for public use.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 ### [SNYK-CLI-0015](#snyk-cli-0015)
 <a id="#SNYK-CLI-0015"></a>
@@ -840,7 +827,6 @@ This feature is under development and is not yet available for public use.
 
 This CLI command is experimental, which means it can change and break at any time. To run this command you must specify the --experimental flag as acknowledgement.
 
-**HTTP Status:** [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 ### [SNYK-CLI-0016](#snyk-cli-0016)
 <a id="#SNYK-CLI-0016"></a>
@@ -850,6 +836,110 @@ This CLI command is experimental, which means it can change and break at any tim
 This feature is disabled for your current organization. You can enable it in the settings or switch to an organization where it's already enabled.
 
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
+
+### [SNYK-CLI-0017](#snyk-cli-0017)
+<a id="#SNYK-CLI-0017"></a>
+
+**DNS resolution failed**
+
+Unable to resolve the hostname to an IP address. Troubleshooting steps.
+1) Test DNS resolution: nslookup api.<instance>.snyk.io.
+2) Try different DNS servers: Change DNS to 8.8.8.8 or 1.1.1.1.
+3) Check corporate proxy/firewall DNS blocking.
+4) Verify hostname spelling in your Snyk configuration.
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+* [https://status.snyk.io/](https://status.snyk.io/)
+
+### [SNYK-CLI-0018](#snyk-cli-0018)
+<a id="#SNYK-CLI-0018"></a>
+
+**Network request timeout**
+
+The network request timed out. Troubleshooting steps.
+1) Test connectivity: ping api.<instance>.snyk.io.
+2) Check corporate proxy timeout settings.
+3) Try different network: Mobile hotspot or different WiFi.
+4) Check if firewall is blocking or throttling connections.
+
+
+**Help Links:**
+
+* [https://status.snyk.io/](https://status.snyk.io/)
+* [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+
+### [SNYK-CLI-0019](#snyk-cli-0019)
+<a id="#SNYK-CLI-0019"></a>
+
+**Network unreachable**
+
+Unable to reach the target network or host. Troubleshooting steps.
+1) Test Snyk connectivity: ping api.<instance>.snyk.io.
+2) Check corporate firewall blocks Snyk domains.
+3) Check if VPN routing is blocking Snyk domains.
+4) Try mobile hotspot to isolate network issues.
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+* [https://status.snyk.io/](https://status.snyk.io/)
+
+### [SNYK-CLI-0020](#snyk-cli-0020)
+<a id="#SNYK-CLI-0020"></a>
+
+**TLS certificate error**
+
+There was an issue with the TLS/SSL certificate during the secure connection. Troubleshooting steps.
+1) Check system time: Ensure your system clock is correct (certificates are time-sensitive).
+2) Update system certificates: Windows Update or macOS Software Update.
+3) Corporate firewall: Check if corporate firewall intercepts SSL traffic.
+4) Custom certificates: Set NODE_EXTRA_CA_CERTS environment variable to path of your CA certificate file.
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+* [https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli)
+
+### [SNYK-CLI-0021](#snyk-cli-0021)
+<a id="#SNYK-CLI-0021"></a>
+
+**Connection refused**
+
+The connection to the server was refused. Troubleshooting steps.
+1) Check Snyk status: Visit status.snyk.io for service outages.
+2) Test connectivity: ping api.<instance>.snyk.io.
+3) Check corporate proxy blocks HTTPS connections to Snyk.
+4) Try mobile hotspot or different network.
+
+
+**Help Links:**
+
+* [https://status.snyk.io/](https://status.snyk.io/)
+* [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+
+### [SNYK-CLI-0022](#snyk-cli-0022)
+<a id="#SNYK-CLI-0022"></a>
+
+**Network communication error**
+
+An unexpected network error occurred during communication. Troubleshooting steps.
+1) Test connectivity: ping api.<instance>.snyk.io.
+2) Check proxy settings: HTTP_PROXY and HTTPS_PROXY environment variables.
+3) Run with verbose logging: snyk command --debug.
+4) Try mobile hotspot to isolate network issues.
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+* [https://status.snyk.io/](https://status.snyk.io/)
 
 ### [SNYK-OS-7001](#snyk-os-7001)
 <a id="#SNYK-OS-7001"></a>
@@ -3217,4 +3307,3 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 
 * [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
-
