@@ -49,6 +49,7 @@ You can use `global` or `code`. Either will exclude the specified directories an
 ### **Considerations in creating the `.snyk` file**
 
 * The path in the rule should be relative to the `.snyk` file location.
+* Do not use paths starting with `./`.
 * All rules must have a preceding dash to be valid: `- <exclusion_rule>`
 * For rules beginning with special characters and patterns, such as an asterisk character `*`, you must wrap them in double quotes (`" "`). This ensures they are treated as a single entity, avoiding potential misinterpretation or unintended behavior. For example, `"*/src"`
 * The following are considerations in using indentations:
