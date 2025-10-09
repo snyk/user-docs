@@ -297,6 +297,7 @@
     * [Kiro guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/kiro-guide.md)
     * [Qodo guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/qodo-guide.md)
     * [Windsurf guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/windsurf-guide.md)
+    * [Devin guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/devin-guide.md)
   * [Troubleshooting for the Snyk MCP server](integrations/developer-guardrails-for-agentic-workflows/troubleshooting-for-the-snyk-mcp-server.md)
   * [Usage analytics](integrations/developer-guardrails-for-agentic-workflows/usage-analytics.md)
 * [Third-party integrations for Snyk AppRisk](integrations/connect-a-third-party-integration.md)
