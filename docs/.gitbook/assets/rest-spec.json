@@ -14351,6 +14351,17 @@
           "name": {
             "maxLength": 255,
             "type": "string"
+          },
+          "source": {
+            "description": "The source of the policy creation. Defaults to 'api' if not provided.",
+            "enum": [
+              "api",
+              "cli",
+              "ide",
+              "web",
+              "unknown"
+            ],
+            "type": "string"
           }
         },
         "required": [
