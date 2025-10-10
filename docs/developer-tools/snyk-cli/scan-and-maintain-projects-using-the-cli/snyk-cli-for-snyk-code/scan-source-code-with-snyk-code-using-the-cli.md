@@ -59,7 +59,7 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof
 * To explore the test results, see [View Snyk Code CLI results](view-snyk-code-cli-results.md).
 * To work with the test results, see [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](../cli-tools/snyk-to-html.md).
 
-## Publishing Snyk Code CLI results
+## Publish Snyk Code CLI results
 
 {% hint style="info" %}
 The minimum supported CLI version is v1.1297.0. For best results, Snyk recommends using version v1.1299.1+ or later.
