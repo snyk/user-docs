@@ -748,6 +748,15 @@
           "type": "array"
         }
       },
+      "ExpandPermissions": {
+        "description": "option to show all permission types",
+        "in": "query",
+        "name": "expand_permissions",
+        "schema": {
+          "default": false,
+          "type": "boolean"
+        }
+      },
       "FilterName": {
         "description": "Search learning programs by name (case-insensitive partial match)",
         "in": "query",
@@ -17854,6 +17863,39 @@
           "tenant_role"
         ],
         "type": "string"
+      },
+      "TenantRolesExternalMeta": {
+        "properties": {
+          "permissions": {
+            "items": {
+              "properties": {
+                "description": {
+                  "example": "Edit details of the Group",
+                  "type": "string"
+                },
+                "name": {
+                  "example": "Edit Group Details",
+                  "type": "string"
+                },
+                "parent": {
+                  "example": "group.read",
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value",
+                "description",
+                "name"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
       },
       "TenantType": {
         "description": "Resource type for tenants.",
@@ -67541,6 +67583,9 @@
             "$ref": "#/components/parameters/AssignableByMe"
           },
           {
+            "$ref": "#/components/parameters/ExpandPermissions"
+          },
+          {
             "$ref": "#/components/parameters/StartingAfter"
           },
           {
@@ -67568,6 +67613,9 @@
                     },
                     "links": {
                       "$ref": "#/components/schemas/PaginatedLinks"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/TenantRolesExternalMeta"
                     }
                   },
                   "required": [
