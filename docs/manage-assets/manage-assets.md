@@ -47,18 +47,17 @@ The [**Issues**](../manage-risk/prioritize-issues-for-fixing/prioritization-for-
 
 Through this interconnected framework, Snyk ensures robust asset protection and optimized performance, integrating inventory management, policy enforcement, analytical insights, and risk prioritization into a cohesive, efficient system.
 
-<table data-full-width="false"><thead><tr><th></th><th>GitHub</th><th width="93.44140625">GitLab</th><th>BitBucket Cloud</th><th>BitBucket Server</th><th>Azure DevOps</th></tr></thead><tbody><tr><td>YXBi6VWXCKUG</td><td>n6geam4AQFbK</td><td>Wc6ibd1G8yaa</td><td>V9dfUtedUEmT</td><td>eB4OwAO2X6xx</td><td>DuK2FGF2fwgW</td></tr><tr><td>KIQORXVeKUlp</td><td>zilPP4HcuQjm</td><td>nCYibm74OqGE</td><td>Nou1J0ga9BcK</td><td>ekUWLlyAiRX9</td><td>L86XKPBUwU5X</td></tr><tr><td>VEyakITebTdY</td><td>gXTuErHqYSrN</td><td>Ng6fxyegq6AD</td><td>9e7DrWqhF6Lj</td><td>59WhRdqTxoSK</td><td>z2I1RSObplB7</td></tr><tr><td>VoLgUsYuuW43</td><td>Pwn2788JKjKg</td><td>UNrs8f0jThb4</td><td>ZxAZeSvLyUh3</td><td>cHHCoXG4Hy3J</td><td>RFUKTxvhTpBt</td></tr><tr><td>RykPXwKL5Kdv</td><td>cUbV7yfJudDn</td><td>LQiBAJu7N2xz</td><td>5sDQM2yhEylM</td><td>b1IQEDd7aYIc</td><td>GpZYselb3DvY</td></tr><tr><td>S03xzAX0lC50</td><td>ZfVGIoCMhVTS</td><td>iD8MYJkIYV2z</td><td>8F3K5p40mRFG</td><td>sVn3QCGGckiV</td><td>OES8aybw3K1v</td></tr><tr><td>HpgnwJF2fqDd</td><td>j7FUq9HwOj6p</td><td>rZKYxIn2cfWF</td><td>AlKaPZEdkTXb</td><td>1qg3pp9wrrYn</td><td>QIr9ZFdtmHMZ</td></tr><tr><td>Su35XAIFBmWR</td><td>qMi5bL6lCqi6</td><td>kUto1utr2CZs</td><td>9d4iRvje2lKN</td><td>PrJgi9bVpvYL</td><td>2bBYR2ixrEym</td></tr></tbody></table>
-
 ### Assets Enrichments by SCM Integration <a href="#assets-enrichments-by-scm-integration" id="assets-enrichments-by-scm-integration"></a>
 
 The table below outlines the asset enrichments provided by each SCM Integration. It highlights which capabilities are available today that are not available due to the SCM provider.
 
-| Organization/Workspace | ✅​                                        | ✅​             | ✅​                     | ✅​ | ✅​ |
-| ---------------------- | ----------------------------------------- | -------------- | ---------------------- | -- | -- |
-| SCM Projects           | ❌                                         | ❌              | ✅                      | ✅  | ✅  |
-| Contributors           | ✅                                         | ❌              | ❌                      | ✅  | ✅  |
-| Teams                  | ✅                                         | ✅              | ❌                      | ✅  | ✅  |
-| Languages (tags)       | ✅                                         | ✅              | ✅ When manually set up | ❌  | ✅  |
-| Tags                   | ✅GitHub topics / GitHub custom properties | ✅GitLab topics | ❌                      | ❌  | ❌  |
-| Visibility             | ✅                                         | ✅              | ✅                      | ✅  | ✅  |
-| Archive Repos          | ✅                                         | ✅              | ✅                      | ✅  | ✅  |
+|                        | GitHub                                     | GitLab          | BitBucket Cloud        | BitBucket Server | Azure DevOps |
+| ---------------------- | ------------------------------------------ | --------------- | ---------------------- | ---------------- | ------------ |
+| Organization/Workspace | ✅​                                         | ✅​              | ✅​                     | ✅​               | ✅​           |
+| SCM Projects           | ❌                                          | ❌               | ✅                      | ✅                | ✅            |
+| Contributors           | ✅                                          | ❌               | ❌                      | ✅                | ✅            |
+| Teams                  | ✅                                          | ✅               | ❌                      | ✅                | ✅            |
+| Languages (tags)       | ✅                                          | ✅               | ✅ When manually set up | ❌                | ✅            |
+| Tags                   | ✅ GitHub topics / GitHub custom properties | ✅ GitLab topics | ❌                      | ❌                | ❌            |
+| Visibility             | ✅                                          | ✅               | ✅                      | ✅                | ✅            |
+| Archive Repos          | ✅                                          | ✅               | ✅                      | ✅                | ✅            |

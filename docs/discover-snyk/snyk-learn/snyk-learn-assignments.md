@@ -56,7 +56,7 @@ By default, only Snyk Org or Group admins can create assignments. Group admins c
 
 1. Log in to Snyk Learn and click **Assignments** in the account panel dropdown.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (251).png" alt=""><figcaption><p>Assignments section on Snyk Learn home page</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (251) (1).png" alt=""><figcaption><p>Assignments section on Snyk Learn home page</p></figcaption></figure></div>
 
 2. Select an Organization.
 
@@ -82,7 +82,7 @@ The **New Assignments** page opens, which allows you to create assignments for S
 
 4. Select the content to assign.
 
-<figure><img src="../../.gitbook/assets/image (356).png" alt=""><figcaption><p>Select content to assign</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (356) (2).png" alt=""><figcaption><p>Select content to assign</p></figcaption></figure>
 
 5. Optionally set the assignment due date. This date defines the date by which the assignment needs to be completed.
 

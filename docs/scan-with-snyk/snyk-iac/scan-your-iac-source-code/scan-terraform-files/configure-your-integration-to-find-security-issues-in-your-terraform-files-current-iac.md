@@ -28,4 +28,4 @@ See the Snyk blog post about the ability to interpolate variables: [Snyk IaC pub
 * If needed, review and adjust the **Infrastructure as code** **Severity settings** on the AWS tab in the example.\
   Check to select the file types to scan, CloudFormation, Terraform, or both, and from the pulldown selection, choose the severity level for each API Gateway.
 
-<figure><img src="../../../../.gitbook/assets/image (105) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (105) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>

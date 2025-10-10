@@ -80,7 +80,7 @@ Snyk produces advanced [security reports](../../../manage-risk/reporting/legacy-
 
 The example that follows shows a Project-level security report.
 
-<figure><img src="../../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1).png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1) (1).png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
 Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](../../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-new-fixes-fix-prs.md) with fixes for your repositories.
 

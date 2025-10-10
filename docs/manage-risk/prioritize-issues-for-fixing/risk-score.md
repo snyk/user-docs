@@ -38,7 +38,7 @@ When looking at the Issue card information, hover over the score to see the type
 
 ## About the Risk Score model&#x20;
 
-<figure><img src="../../.gitbook/assets/matrix (2).png" alt="he Snyk Risk Score Model"><figcaption><p>The Snyk Risk Score Model</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/matrix (2) (2).png" alt="he Snyk Risk Score Model"><figcaption><p>The Snyk Risk Score Model</p></figcaption></figure>
 
 The model that powers the Risk Score applies automatic risk analysis for each security issue based on the potential impact and likelihood of exploitability.
 

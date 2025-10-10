@@ -17,7 +17,7 @@ Alternatively, you can start the import from the Integrations tab and select the
 
 * Select the repositories that you want to import and click **Add selected repositories**
 
-<figure><img src="../../../../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (430) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The import begins immediately, which can be monitored in the Import Log:
 
