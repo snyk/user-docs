@@ -52,17 +52,17 @@ Devin is then able to gather all the security scanning results, both code (SAST)
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://snyk.io/solutions/secure-ai-generated-code/), Snyk recommends adopting rules that align the LLM for secure code generation and workflows. The rules can be added to [Devin Knowledge](https://app.gitbook.com/u/vmSHyzn12dg748vWJFUXr9guzoj1).
+To practice [Secure at Inception](https://snyk.io/solutions/secure-ai-generated-code/), Snyk recommends adopting rules that align the LLM for secure code generation and workflows. The rules can be added to [Devin Knowledge](https://docs.devin.ai/product-guides/knowledge).
 
-The following is a suggested instruction for Devin rules:
+The following is a suggested instruction for Devin Knowledge:
 
-{% code title="Devin rule" overflow="wrap" %}
+{% code title="Devin Knowledge" overflow="wrap" %}
 ```
-Always run Snyk Code scanning tool for new first party code generated.
-Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
-Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-Repeat this process until no issues are found.
+- Always run Snyk Code scanning tool for new first party code generated.
+- Always run Snyk SCA scanning tool for new dependencies or dependency updates.
+- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
+- Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
+- Repeat this process until no issues are found.
 ```
 {% endcode %}
 
