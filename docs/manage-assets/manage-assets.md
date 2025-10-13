@@ -51,13 +51,4 @@ Through this interconnected framework, Snyk ensures robust asset protection and 
 
 The table below outlines the asset enrichments provided by each SCM Integration. It highlights which capabilities are available today that are not available due to the SCM provider.
 
-|                        | GitHub                                     | GitLab          | BitBucket Cloud        | BitBucket Server | Azure DevOps |
-| ---------------------- | ------------------------------------------ | --------------- | ---------------------- | ---------------- | ------------ |
-| Organization/Workspace | ✅​                                         | ✅​              | ✅​                     | ✅​               | ✅​           |
-| SCM Projects           | ❌                                          | ❌               | ✅                      | ✅                | ✅            |
-| Contributors           | ✅                                          | ❌               | ❌                      | ✅                | ✅            |
-| Teams                  | ✅                                          | ✅               | ❌                      | ✅                | ✅            |
-| Languages (tags)       | ✅                                          | ✅               | ✅ When manually set up | ❌                | ✅            |
-| Tags                   | ✅ GitHub topics / GitHub custom properties | ✅ GitLab topics | ❌                      | ❌                | ❌            |
-| Visibility             | ✅                                          | ✅               | ✅                      | ✅                | ✅            |
-| Archive Repos          | ✅                                          | ✅               | ✅                      | ✅                | ✅            |
+<table data-full-width="true"><thead><tr><th width="212.5364990234375"></th><th>GitHub</th><th>GitLab</th><th>BitBucket Cloud</th><th>BitBucket Server</th><th>Azure DevOps</th></tr></thead><tbody><tr><td>Organization/Workspace</td><td>✅​</td><td>✅​</td><td>✅​</td><td>✅​</td><td>✅​</td></tr><tr><td>SCM Projects</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Contributors</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>Teams</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>Languages (tags)</td><td>✅</td><td>✅</td><td>✅ When manually set up</td><td>❌</td><td>✅</td></tr><tr><td>Tags</td><td>✅ GitHub topics / GitHub custom properties</td><td>✅ GitLab topics</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td>Visibility</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Archive Repos</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr></tbody></table>

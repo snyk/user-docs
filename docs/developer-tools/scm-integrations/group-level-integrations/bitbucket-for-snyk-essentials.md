@@ -20,6 +20,10 @@ After manually setting up the languages in your Bitbucket project, Snyk can auto
 * Users
 * Repositories
 
+#### Prerequisites <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
+
+To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](../../../snyk-platform-administration/user-roles/pre-defined-roles.md#group-level-permissions).
+
 #### Integrate using Snyk Essentials <a href="#bitbucket-integrate-using-snyk-apprisk" id="bitbucket-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;
