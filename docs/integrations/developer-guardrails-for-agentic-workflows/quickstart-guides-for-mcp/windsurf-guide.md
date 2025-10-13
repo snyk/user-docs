@@ -4,16 +4,13 @@ You can add the Snyk MCP server to Windsurf to secure code generated with agenti
 
 ## Prerequisites
 
-* [Install the code assistant extension](windsurf-guide.md#install-windsurf)
+* [Install Windsurf](windsurf-guide.md#install-windsurf)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
 * [Install the Snyk MCP](windsurf-guide.md#install-the-snyk-mcp-server-in-windsurf)
 
 ### Install Windsurf
 
-Choose one of the following:
-
-* Add the Windsurf extension to VS Code. For mode details, see the official [Setup Windsurf on VS Code guide.](https://docs.windsurf.com/plugins/getting-started)
-* Install Windsurf to your local machine from the [Windsurf website](https://windsurf.com/)
+Install Windsurf to your local machine from the [Windsurf website](https://windsurf.com/).
 
 ### Install the Snyk MCP Server in Windsurf
 
@@ -21,9 +18,9 @@ Install the Snyk MCP Server using the method that best suits your operating syst
 
 #### Install with Node.js and `npx`
 
-Create or edit the MCP configuration file `mcp_config.json` in the root directory of your Project.
+Create or edit the MCP configuration file `mcp_config.json` . This file can be accessed by navigating to the Windsurf Settings > Manage MCPs > View raw config.
 
-If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to the file:
+If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to `mcp_config.json`:
 
 ```json5
 {
@@ -37,11 +34,11 @@ If you have the Node.js `npx` executable installed in your environment, add the 
 }
 ```
 
+<figure><img src="../../../.gitbook/assets/image (528).png" alt=""><figcaption></figcaption></figure>
+
 #### Install with pre-installed Snyk CLI
 
-Create or edit the MCP configuration file `mcp_config.json` in the root directory of your Project.
-
-If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in the file. You might need to specify the full path to the Snyk executable CLI:
+If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in `mcp_config.json`. Specify the full path to the Snyk executable CLI:
 
 ```json5
 {
@@ -59,21 +56,13 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 The following example shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../../.gitbook/assets/image (528).png" alt=""><figcaption></figcaption></figure>
-
-For additional MCP configuration options on VS Code and troubleshooting, consult the official [VS Code MCP server documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
+<figure><img src="../../../.gitbook/assets/image (10).png" alt="Example of a successful MCP server configuration " width="375"><figcaption></figcaption></figure>
 
 ## Setting up the Snyk MCP Server
 
-As a one-time setup, you may need to authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.
+As a one-time setup, you may need to authenticate and trust the current Project directory. If required, the agentic workflow will manage this automatically.
 
-These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
-
-<figure><img src="../../../.gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
-
-If you need to authenticate and trust the current directory, then proceed and complete the process.
-
-<figure><img src="../../../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
+These workflows are automatically executed by the underlying model and the agentic code assistant, and you will need to approve them in the Devin chat window.&#x20;
 
 ## Examples
 
@@ -88,6 +77,8 @@ Scan this directory for code security & dependency vulnerabilities and security 
 {% endcode %}
 
 Windsurf indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
+
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 Windsurf is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found.
 
