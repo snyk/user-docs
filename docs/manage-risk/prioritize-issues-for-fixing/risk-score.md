@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-Risk Score is in Early Access and available for Snyk Open Source and Snyk Container, with Snyk Enterprise and Snyk Free plans. If you want to set it up in your Group, contact your Snyk account team.
+Risk Score is in Early Access and available for Snyk Open Source and Snyk Container, for all Snyk plans. If you want to set it up in your Group, contact your Snyk account team.
 
 Use [Snyk Preview](../../snyk-platform-administration/snyk-preview.md) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
 {% endhint %}
