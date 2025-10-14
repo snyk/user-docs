@@ -3753,7 +3753,7 @@
             ]
           }
         ],
-        "description": "Sets the asset's class using either a rank (a number between 1 and 4) or a display name (e.g., \"A,\" \"B,\" \"C,\" or \"D\").\n* This attribute accepts a single value. It can be locked: When a class attribute is \"locked\", this attribute will not be affected by any policy.\n  * UI: When the user changes the asset class, by default is \"locked\".\n  * API: The user will need to indicate wether they want to \"lock\" the class attribute.\n",
+        "description": "Sets the asset's class using either a rank (a number between 1 and 4) or a display name (e.g., \"A,\" \"B,\" \"C,\" or \"D\"). If both rank and name are provided, rank takes precedence.\n* This attribute accepts a single value. It can be locked: When a class attribute is \"locked\", this attribute will not be affected by any policy.\n  * UI: When the user changes the asset class, by default is \"locked\".\n  * API: The user will need to indicate wether they want to \"lock\" the class attribute.\n",
         "properties": {
           "display_name": {
             "description": "Asset class display name",
