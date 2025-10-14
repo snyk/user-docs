@@ -11,9 +11,10 @@ If you are a Snyk Enterprise plan customer, Snyk recommends that you use the Git
 ### Prerequisites for GitHub Enterprise integration
 
 * Internet-accessible repositories.\
-  If your repositories are not internet-accessible, you must use [Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/). This requires creating a startup script. For the script and instructions, see [GitHub Enterprise - install and configure using Docker](../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md).
+  If your repositories are not internet-accessible, you must use [Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/). This requires creating a startup script. For the script and instructions, visit [GitHub Enterprise - install and configure using Docker](../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md).
 * A public or private GitHub project.
-* The required [PAT](github-enterprise.md#generate-a-personal-access-token) and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permission requirements](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements).
+* A Snyk Organization Admin user role. To learn more, visit [Pre-defined roles](../../../snyk-platform-administration/user-roles/pre-defined-roles.md#organization-level-permissions).
+* The required [PAT](github-enterprise.md#generate-a-personal-access-token) and GitHub repository access scope permissions. To learn more, visit [GitHub and GitHub Enterprise permission requirements](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements).
 
 {% hint style="info" %}
 You do not need to be on a GitHub Enterprise level plan to use the Snyk GitHub Enterprise integration.
