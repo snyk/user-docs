@@ -11176,7 +11176,6 @@
                                     "type": "string"
                                   },
                                   "name": {
-                                    "maxLength": 256,
                                     "minLength": 1,
                                     "type": "string"
                                   },
