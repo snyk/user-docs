@@ -1,8 +1,12 @@
 # Upgrade an Organization integration from Classic Broker to Universal Broker
 
+{% hint style="info" %}
 Universal Broker operators declare their desired deployment model before running any Broker client, specifying what Broker connections to support. Thus the Classic Broker approach of `org->integrations->broker connections` is evolving to be `broker connections -> integration/org`.
+{% endhint %}
 
-To upgrade existing Classic Broker integrations to Universal Broker, follow these steps for one Organization at a time.&#x20;
+## Migrating a single Organization
+
+To upgrade existing Classic Broker integrations to Universal Broker for one Organization at a time:&#x20;
 
 1. Create the Universal Broker connection you want to use. For details, see [Basic steps to install and configure Universal Broker](../../../../enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker.md).
 2. Run the Universal Broker client. For details, see [Running your Universal Broker client](running-your-universal-broker-client.md).
@@ -20,3 +24,15 @@ If you run into issues, you can roll back to the Classic Broker client as long a
 1. Disconnect the Universal Broker connection that you migrated to previously.
 2. IF any other Classic Broker Organization is left with the same Broker token, after you disconnect the Universal Broker token, use the API endpoint [Clone an integration (with settings and credentials) ](../../../../snyk-api/reference/integrations-v1.md#post-org-orgid-integrations-integrationid-clone)to copy the integration settings from another Organization and reuse the previously used Classic Broker token through the API.
 3. IF there is no Classic Broker Organization left with the old Broker token, then after you disconnect the Universal Broker connection, set up a new Classic Brokered connection. Copy the Broker token from the new Brokered connection as a parameter and restart the Broker container.
+
+## Migrating multiple Organizations
+
+The bulk migration workflow allows you to migrate multiple Organizations at the same time. To do this:
+
+1. Create a test connection and integrate it. See steps 1-3 from [Migrating a single Organization](upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md#migration-a-single-organization).
+2. Run `snyk-broker-config workflows bulk-migration list` to see a list of all the Organizations that can be migrated.
+3. Run `snyk-broker-config workflows bulk-migration apply` to migrate all the Organizations listed in the previous step. Select the deployment and connection you want to upgrade to and confirm your choice.
+
+This command is asynchronous, which means migration happens in the background. If you are migrating several Organizations, the migration process can take some time to complete.
+
+You can run `snyk-broker-config workflows connections get` to list the connections and confirm they have been migrated.
