@@ -61,7 +61,7 @@ Snyk produces advanced [security reports](../../../manage-risk/reporting/legacy-
 
 The example that follows shows a Project-level security report.
 
-<figure><img src="../../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1).png" alt="An example of a Project-level security report"><figcaption><p>An example of a Project-level security report</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1) (1).png" alt="An example of a Project-level security report"><figcaption><p>An example of a Project-level security report</p></figcaption></figure>
 
 #### Project monitoring and automatic fix Pull Requests
 
@@ -101,7 +101,13 @@ To review and adjust the pull request tests settings:
 
 ### Required permission scope for the Bitbucket Cloud integration
 
-All the operations, whether triggered manually or automatically, are performed for a Bitbucket Cloud [service account](../../../implementation-and-setup/enterprise-setup/service-accounts/) that has its token (App Password) configured in the **Integration settings**.
+{% hint style="warning" %}
+Bitbucket Cloud has replaced App Passwords with API tokens\
+Existing credentials will continue to work normally until completely deprecated by Bitbucket Cloud [details here](https://www.atlassian.com/blog/bitbucket/bitbucket-cloud-transitions-to-api-tokens-enhancing-security-with-app-password-deprecation).\
+New integrations will now use API tokens.
+{% endhint %}
+
+All the operations, whether triggered manually or automatically, are performed for a Bitbucket Cloud [service account](../../../implementation-and-setup/enterprise-setup/service-accounts/) that has its token (API Token) configured in the **Integration settings**.
 
 For Snyk to perform the required operations on monitored repositories, such as reading manifest files on a frequent basis and opening fix or upgrade PRs, the integrated Bitbucket Cloud service account needs **Admin** permissions on the imported repositories.
 

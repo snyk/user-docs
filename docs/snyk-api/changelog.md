@@ -1,5 +1,29 @@
 # Changelog
 
+### 2025-09-28 - Updated 2025-10-14
+
+#### GET - `/orgs/{org_id}/issues` - Updated
+
+* the `data/items/attributes/coordinates/items/representations/items/oneOf[subschema #3]/cloud_resource/resource/name` response property`s maxLength was unset from` 256`for the response status`200\` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+#### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+
+* the `data/attributes/coordinates/items/representations/items/oneOf[subschema #3]/cloud_resource/resource/name` response property`s maxLength was unset from` 256`for the response status`200\` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+#### GET - `/groups/{group_id}/issues` - Updated
+
+* the `data/items/attributes/coordinates/items/representations/items/oneOf[subschema #3]/cloud_resource/resource/name` response property`s maxLength was unset from` 256`for the response status`200\` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+#### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+
+* the `data/attributes/coordinates/items/representations/items/oneOf[subschema #3]/cloud_resource/resource/name` response property`s maxLength was unset from` 256`for the response status`200\` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+### 2025-09-28
+
+#### POST - `/orgs/{org_id}/policies` - Updated
+
+* added the new optional request property `data/attributes/source`
+
 ### 2024-10-15 - Updated 2025-09-29
 
 #### POST - `/orgs/{org_id}/export` - Updated

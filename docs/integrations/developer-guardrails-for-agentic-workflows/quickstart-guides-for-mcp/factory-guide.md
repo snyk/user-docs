@@ -60,7 +60,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 The following example shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../../.gitbook/assets/image (215) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 
 This json file can also be found by clicking on the Factory icon on the top toolbar and then selecting "Open MCP Config File".&#x20;
 

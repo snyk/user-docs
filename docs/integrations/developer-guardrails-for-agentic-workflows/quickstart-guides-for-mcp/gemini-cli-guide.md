@@ -14,19 +14,21 @@ Install [the Gemini CLI](https://github.com/google-gemini/gemini-cli?tab=readme-
 
 ### Install the Snyk Extension or MCP Server in Gemini CLI
 
-Get started with Snyk and Gemini CLI by using the Gemini extension, which installs the Snyk MCP Server. Run this in your terminal:
+Get started with Snyk and Gemini CLI by using the Gemini extension, which installs the Snyk MCP Server. Run in your terminal:
 
 ```sh
 gemini extensions install git@github.com:snyk/agentic-integration-wrappers
 ```
 
-To confirm the extension was installed, run:
+<figure><img src="../../../.gitbook/assets/image (37).png" alt="Gemini extensions install in the CLI"><figcaption></figcaption></figure>
+
+To confirm the extension was installed, run the following command in the Gemini CLI:
 
 ```
 /extensions list
 ```
 
-<figure><img src="../../../.gitbook/assets/image (483).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -81,7 +83,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 Run `/mcp list` to confirm the Snyk MCP Server is connected.
 
-<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Setting up the Snyk MCP Server
 
@@ -103,7 +105,7 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Gemini CLI indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Gemini CLI Rules
 

@@ -21,7 +21,7 @@ To install the Snyk MCP Server using the Goose CLI interactive session, proceed 
 *   Start an interactive Goose configuration wizard by running the `goose configure` command:\
 
 
-    <figure><img src="../../../.gitbook/assets/image (396).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (396) (1).png" alt=""><figcaption></figcaption></figure>
 * From the configuration menu, chose **Add Extension.**
 * Choose **Command-line extension (run a local command or script).**
 * Name this extension **Snyk Security.**

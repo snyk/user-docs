@@ -28,7 +28,7 @@ The container image is the build artifact that is deployed and running on your K
 
 
 
-<figure><img src="../../../.gitbook/assets/Associating Snyk OS, Code and Container projects (1).png" alt="Mapping your application"><figcaption><p>Mapping your application</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Associating Snyk OS, Code and Container projects (1) (1).png" alt="Mapping your application"><figcaption><p>Mapping your application</p></figcaption></figure>
 
 ## Use Project tags to link Projects
 
