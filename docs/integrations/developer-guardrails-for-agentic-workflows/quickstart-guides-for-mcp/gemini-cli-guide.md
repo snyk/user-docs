@@ -17,7 +17,7 @@ Install [the Gemini CLI](https://github.com/google-gemini/gemini-cli?tab=readme-
 Get started with Snyk and Gemini CLI by using the Gemini extension, which installs the Snyk MCP Server. Run in your terminal:
 
 ```sh
-gemini extensions install git@github.com:snyk/agentic-integration-wrappers
+gemini extensions install https://github.com/snyk/agentic-integration-wrappers
 ```
 
 <figure><img src="../../../.gitbook/assets/image (37).png" alt="Gemini extensions install in the CLI"><figcaption></figcaption></figure>
