@@ -26,7 +26,7 @@ The following table describes the different parts of the **Summary** area:
 
 ## Activity
 
-<figure><img src="../../../.gitbook/assets/image (143) (2).png" alt="Activity section"><figcaption><p>Activity section</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (143).png" alt="Activity section"><figcaption><p>Activity section</p></figcaption></figure>
 
 For the **Activity** area, the following are the parameters and their descriptions:
 

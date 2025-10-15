@@ -206,7 +206,7 @@ Snyk PCI-DSS v4.0.1 Report is designed to help you:
 * Provide evidence that the Organization is meeting the PCI-DSS AppSec requirements for SCA and SAST vulnerabilities.
 * Prioritize issues to improve PCI-DSS compliance readiness.
 
-<figure><img src="../../.gitbook/assets/image (389) (1).png" alt=""><figcaption><p>Snyk PCI-DSS v4.0.1 Report</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (389).png" alt=""><figcaption><p>Snyk PCI-DSS v4.0.1 Report</p></figcaption></figure>
 
 The report identifies PCI-DSS risks and violations based on the following PCI-DSS v4.0.1 requirements:
 
@@ -493,7 +493,7 @@ The adoption ranking section shows your organization and individual user engagem
 The user level adoption ranking is a great way to identify potential security champions who are proactively engaging in security education and training.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.34.12 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.34.12 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Learning breakdown
 

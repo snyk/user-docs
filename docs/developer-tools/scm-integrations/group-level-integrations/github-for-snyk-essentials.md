@@ -16,8 +16,6 @@ If you used GitHub Apps for your SCM integrations at the Snyk Organization level
 
 Ensure you meet all prerequisites listed on the [GitHub and GitHub Enterprise permission requirements](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements) page.
 
-To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](../../../snyk-platform-administration/user-roles/pre-defined-roles.md#group-level-permissions).
-
 #### Integrate GitHub using Snyk Essentials <a href="#github-integrate-using-snyk-apprisk" id="github-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.&#x20;

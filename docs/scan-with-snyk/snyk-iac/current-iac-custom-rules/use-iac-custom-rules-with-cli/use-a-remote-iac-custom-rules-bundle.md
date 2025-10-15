@@ -56,7 +56,7 @@ You can configure remote custom rules bundles on the Group level by navigating t
 
 * Enable configuration of remote bundles by using the **Enable rules** toggle. Doing so loads the form to specify the Registry URL and tag as shown in this example:
 
-<figure><img src="../../../../.gitbook/assets/image (102) (2) (1).png" alt="Specify Registry URL and tag form"><figcaption><p>Specify Registry URL and tag form</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (102) (2).png" alt="Specify Registry URL and tag form"><figcaption><p>Specify Registry URL and tag form</p></figcaption></figure>
 
 * Configure the OCI registry URL and tag for your remote bundle of custom rules and click **Save changes** to save.
 
@@ -74,7 +74,7 @@ To override the Group configurations, go to the Organization's `Rules` section i
 
 * Initially, the section is populated with the configurations inherited from the Organization's Group.
 
-<figure><img src="../../../../.gitbook/assets/image (72) (1).png" alt="Organization Rules section in the IaC Settings"><figcaption><p>Organization Rules section in the IaC Settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (72).png" alt="Organization Rules section in the IaC Settings"><figcaption><p>Organization Rules section in the IaC Settings</p></figcaption></figure>
 
 * Update the configurations to those customized for your Organization and click **Save changes**.
 

@@ -1,96 +1,66 @@
-## 2025-09-28 - Updated 2025-10-14
-
-### GET - `/orgs/{org_id}/issues` - Updated
-- the `data/items/attributes/coordinates/items/representations/items/oneOf[subschema #3]/cloud_resource/resource/name` response property`s maxLength was unset from `256` for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-
-
-### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
-- the `data/attributes/coordinates/items/representations/items/oneOf[subschema #3]/cloud_resource/resource/name` response property`s maxLength was unset from `256` for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-
-
-### GET - `/groups/{group_id}/issues` - Updated
-- the `data/items/attributes/coordinates/items/representations/items/oneOf[subschema #3]/cloud_resource/resource/name` response property`s maxLength was unset from `256` for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-
-
-### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
-- the `data/attributes/coordinates/items/representations/items/oneOf[subschema #3]/cloud_resource/resource/name` response property`s maxLength was unset from `256` for the response status `200`
-![Badge](https://img.shields.io/badge/Breaking-yellow)
-
-## 2025-09-28
-
-### POST - `/orgs/{org_id}/policies` - Updated
-- added the new optional request property `data/attributes/source`
-
-
-## 2024-10-15 - Updated 2025-09-29
-
-### POST - `/orgs/{org_id}/export` - Updated
-- added the new optional request property `data/attributes/filters/product_name`
-
-- added the new optional request property `data/attributes/filters/project_tags`
-
-- added the new optional request property `data/attributes/filters/project_type`
-
-
-
-### POST - `/groups/{group_id}/export` - Updated
-- added the new optional request property `data/attributes/filters/product_name`
-
-- added the new optional request property `data/attributes/filters/project_tags`
-
-- added the new optional request property `data/attributes/filters/project_type`
-
-
 # Changelog
 
-### 2024-10-15 - Updated 2025-09-08
+### 2024-10-15 - Updated 2025-09-29
 
-#### POST - `/orgs/{org_id}/policies` - Updated
+#### POST - `/orgs/{org_id}/export` - Updated
+
+* added the new optional request property `data/attributes/filters/product_name`
+* added the new optional request property `data/attributes/filters/project_tags`
+* added the new optional request property `data/attributes/filters/project_type`
+
+#### POST - `/groups/{group_id}/export` - Updated
+
+* added the new optional request property `data/attributes/filters/product_name`
+* added the new optional request property `data/attributes/filters/project_tags`
+* added the new optional request property `data/attributes/filters/project_type`
+
+## Changelog
+
+#### 2024-10-15 - Updated 2025-09-08
+
+**POST - `/orgs/{org_id}/policies` - Updated**
 
 * removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `201`
 
-#### GET - `/orgs/{org_id}/policies` - Updated
+**GET - `/orgs/{org_id}/policies` - Updated**
 
 * removed the `cancelled` enum value from the `data/items/attributes/review` response property for the response status `200`
 
-#### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
+**PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated**
 
 * removed the enum value `cancelled` of the request property `data/attributes/review` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `200`
 
-#### GET - `/orgs/{org_id}/policies/{policy_id}` - Updated
+**GET - `/orgs/{org_id}/policies/{policy_id}` - Updated**
 
 * removed the `cancelled` enum value from the `data/attributes/review` response property for the response status `200`
 
-### 2024-10-15 - Updated 2025-08-15
+#### 2024-10-15 - Updated 2025-08-15
 
-#### GET - `/orgs/{org_id}/policies` - Updated
+**GET - `/orgs/{org_id}/policies` - Updated**
 
 * added the new enum value `ignore-type` to the `query` request parameter `order_by`
 * added the new enum value `requested-by` to the `query` request parameter `order_by`
 
-### 2024-10-15 - Updated 2025-08-14
+#### 2024-10-15 - Updated 2025-08-14
 
-#### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
+**PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated**
 
 * added the new `cancelled` enum value to the request property `data/attributes/review`
 
-### 2024-10-15 - Updated 2025-08-06
+#### 2024-10-15 - Updated 2025-08-06
 
-#### POST - `/orgs/{org_id}/export` - Updated
-
-* removed the request property `data/attributes/destination` ![Badge](https://img.shields.io/badge/Breaking-yellow)
-
-#### POST - `/groups/{group_id}/export` - Updated
+**POST - `/orgs/{org_id}/export` - Updated**
 
 * removed the request property `data/attributes/destination` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-### 2024-10-15 - Updated 2025-07-07
+**POST - `/groups/{group_id}/export` - Updated**
 
-#### POST - `/orgs/{org_id}/service_accounts` - Updated
+* removed the request property `data/attributes/destination` ![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+#### 2024-10-15 - Updated 2025-07-07
+
+**POST - `/orgs/{org_id}/service_accounts` - Updated**
 
 * added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `201` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the new optional request property `data/attributes/access_token_expires_at`
@@ -99,43 +69,43 @@
 * added the optional property `data/attributes/access_token_expires_at` to the response with the `201` status
 * added the optional property `data/attributes/created_at` to the response with the `201` status
 
-#### GET - `/orgs/{org_id}/service_accounts` - Updated
+**GET - `/orgs/{org_id}/service_accounts` - Updated**
 
 * added the new `access_token` enum value to the `data/items/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the optional property `data/items/attributes/access_token` to the response with the `200` status
 * added the optional property `data/items/attributes/access_token_expires_at` to the response with the `200` status
 * added the optional property `data/items/attributes/created_at` to the response with the `200` status
 
-#### PATCH - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated
+**PATCH - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated**
 
 * added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the optional property `data/attributes/access_token` to the response with the `200` status
 * added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
 * added the optional property `data/attributes/created_at` to the response with the `200` status
 
-#### GET - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated
+**GET - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated**
 
 * added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the optional property `data/attributes/access_token` to the response with the `200` status
 * added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
 * added the optional property `data/attributes/created_at` to the response with the `200` status
 
-#### POST - `/orgs/{org_id}/service_accounts/{serviceaccount_id}/secrets` - Updated
+**POST - `/orgs/{org_id}/service_accounts/{serviceaccount_id}/secrets` - Updated**
 
 * added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the optional property `data/attributes/access_token` to the response with the `200` status
 * added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
 * added the optional property `data/attributes/created_at` to the response with the `200` status
 
-#### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+**GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated**
 
 * added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### POST - `/orgs/{org_id}/packages/issues` - Updated
+**POST - `/orgs/{org_id}/packages/issues` - Updated**
 
 * added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### POST - `/groups/{group_id}/service_accounts` - Updated
+**POST - `/groups/{group_id}/service_accounts` - Updated**
 
 * added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `201` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the new optional request property `data/attributes/access_token_expires_at`
@@ -144,7 +114,7 @@
 * added the optional property `data/attributes/access_token_expires_at` to the response with the `201` status
 * added the optional property `data/attributes/created_at` to the response with the `201` status
 
-#### GET - `/groups/{group_id}/service_accounts` - Updated
+**GET - `/groups/{group_id}/service_accounts` - Updated**
 
 * added the new `access_token` enum value to the `data/items/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the optional property `data/items/attributes/access_token` to the response with the `200` status
@@ -152,30 +122,30 @@
 * added the optional property `data/items/attributes/created_at` to the response with the `200` status
 * added the optional property `meta` to the response with the `200` status
 
-#### PATCH - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated
+**PATCH - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated**
 
 * added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the optional property `data/attributes/access_token` to the response with the `200` status
 * added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
 * added the optional property `data/attributes/created_at` to the response with the `200` status
 
-#### GET - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated
+**GET - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated**
 
 * added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the optional property `data/attributes/access_token` to the response with the `200` status
 * added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
 * added the optional property `data/attributes/created_at` to the response with the `200` status
 
-#### POST - `/groups/{group_id}/service_accounts/{serviceaccount_id}/secrets` - Updated
+**POST - `/groups/{group_id}/service_accounts/{serviceaccount_id}/secrets` - Updated**
 
 * added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200` ![Badge](https://img.shields.io/badge/Breaking-yellow)
 * added the optional property `data/attributes/access_token` to the response with the `200` status
 * added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
 * added the optional property `data/attributes/created_at` to the response with the `200` status
 
-## Changelog
+### Changelog
 
-#### 2024-10-15 - Updated 2025-06-12
+**2024-10-15 - Updated 2025-06-12**
 
 **GET - `/tenants` - Added**
 
@@ -238,7 +208,7 @@
 
 * removed `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` from the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### 2024-10-15 - Updated 2025-06-04
+**2024-10-15 - Updated 2025-06-04**
 
 **GET - `/groups/{group_id}/assets/{asset_id}` - Added**
 
@@ -272,7 +242,7 @@
 
 * `View Groups (group.read)`
 
-#### 2024-10-15 - Updated 2025-05-27
+**2024-10-15 - Updated 2025-05-27**
 
 **GET - `/orgs/{org_id}` - Updated**
 
@@ -290,7 +260,7 @@
 * the response property `data/attributes` became required for the status `200`
 * the `data/type` response`s property pattern` ^\[a-z]\[a-z0-9]_(\_\[a-z]\[a-z0-9]_)\*$`was added for the status`200\`
 
-#### 2024-10-15 - Updated 2025-05-20
+**2024-10-15 - Updated 2025-05-20**
 
 **GET - `/orgs/{org_id}/projects` - Updated**
 
@@ -304,14 +274,14 @@
 
 * added the optional property `data/attributes/settings/pull_requests/is_enabled` to the response with the `200` status
 
-#### 2024-10-15 - Updated 2025-05-15
+**2024-10-15 - Updated 2025-05-15**
 
 **GET - `/orgs/{org_id}/policies` - Updated**
 
 * added the new optional `query` request parameter `order_by`
 * added the new optional `query` request parameter `order_direction`
 
-#### 2024-10-15 - Updated 2025-05-08
+**2024-10-15 - Updated 2025-05-08**
 
 **GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated**
 
@@ -321,7 +291,7 @@
 
 * added `#/components/schemas/ResourcePathRepresentation, #/components/schemas/PackageRepresentation` to the `data/items/attributes/coordinates/items/representations/items/` response property `anyOf` list for the response status `200`
 
-#### 2024-10-15 - Updated 2025-04-28
+**2024-10-15 - Updated 2025-04-28**
 
 **GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated**
 
@@ -351,7 +321,7 @@
 * added the optional property `data/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
 * added the optional property `data/attributes/key_asset` to the response with the `200` status
 
-#### 2024-10-15 - Updated 2025-04-25
+**2024-10-15 - Updated 2025-04-25**
 
 **POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Added**
 
@@ -475,19 +445,19 @@
 
 * List all Broker connections integrated with a given org
 
-#### 2024-10-15 - Updated 2025-04-22
+**2024-10-15 - Updated 2025-04-22**
 
 **GET - `/orgs/{org_id}/policies` - Updated**
 
 * added the new optional `query` request parameter `search`
 
-#### 2024-10-15 - Updated 2025-04-02
+**2024-10-15 - Updated 2025-04-02**
 
 **POST - `/orgs/{org_id}/policies` - Updated**
 
 * added the new optional request property `data/meta`
 
-#### 2024-10-15 - Updated 2025-04-01
+**2024-10-15 - Updated 2025-04-01**
 
 **POST - `/orgs/{org_id}/memberships` - Updated**
 
@@ -504,13 +474,13 @@
 * the request property `data/relationships/user/data/type` became required![Badge](https://img.shields.io/badge/Breaking-yellow)
 * the request property `data/type` became required![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-#### 2024-10-15 - Updated 2025-03-19
+**2024-10-15 - Updated 2025-03-19**
 
 **PATCH - `/orgs/{org_id}/memberships/{membership_id}` - Updated**
 
 * the request property `data` became required![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-### Changelog
+#### Changelog
 
 **2024-10-15 - Updated 2025-03-04**
 

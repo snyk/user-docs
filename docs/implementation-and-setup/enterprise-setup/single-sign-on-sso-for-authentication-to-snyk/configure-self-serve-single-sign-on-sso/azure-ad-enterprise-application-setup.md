@@ -28,7 +28,7 @@ This example shows setting up an Entra ID (formerly Azure AD) Enterprise Applica
     <figure><img src="../../../../.gitbook/assets/8 (1) (1).png" alt="Select SAML"><figcaption><p>Select SAML</p></figcaption></figure>
 9.  Click **Edit** under **Basic SAML configuration**.
 
-    <figure><img src="../../../../.gitbook/assets/9 (1) (1).png" alt="Edit basic SAML configuration"><figcaption><p>Edit basic SAML configuration</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/9 (1).png" alt="Edit basic SAML configuration"><figcaption><p>Edit basic SAML configuration</p></figcaption></figure>
 10. Add the Identity (Entity ID) and reply URL (Assertion Consumer Service URL) you obtained from Snyk and click **Save**; then close the edit window.
 
     <figure><img src="../../../../.gitbook/assets/10.png" alt="Entity ID and Assertion Consumer Service URL"><figcaption><p>Entity ID and Assertion Consumer Service URL</p></figcaption></figure>

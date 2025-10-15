@@ -23,4 +23,4 @@ When you re-import the repository in order to import the cloud configuration fil
 
 * Click the link for the Project of interest to you to view the scan results and to correct your configuration files accordingly:
 
-<figure><img src="../../../../.gitbook/assets/image (343) (1) (1).png" alt="Kubernetes Proejct detail"><figcaption><p>Kubernetes Proejct detail</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (343) (1).png" alt="Kubernetes Proejct detail"><figcaption><p>Kubernetes Proejct detail</p></figcaption></figure>

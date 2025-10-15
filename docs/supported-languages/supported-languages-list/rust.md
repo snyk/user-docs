@@ -16,7 +16,7 @@ Available functions:
 
 ### Supported frameworks and libraries
 
-For Rust with Snyk Code, the following frameworks and libraries are supported:
+For Rust with Snyk Open Source, the following frameworks and libraries are supported:
 
 * Warp - Comprehensive
 * Rust standard library - Comprehensive
@@ -42,9 +42,7 @@ For Rust with Snyk Code, the following frameworks and libraries are supported:
 
 ## Rust for Snyk Code
 
-For Rust with Snyk Code, the following file formats are supported: `.rs`.
-
-Available features:
+For Rust with Snyk Code, the following features are supported:
 
 * Support for Interfile analysis
 * Reports

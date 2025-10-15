@@ -25,7 +25,7 @@ The Risk Factor column and filter, and with it, the evidence graph information, 
 
 **Issues - Snyk AppRisk**&#x20;
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="Issues page - Snyk AppRisk"><figcaption><p>Issues menu - Snyk AppRisk </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="Issues page - Snyk AppRisk"><figcaption><p>Issues menu - Snyk AppRisk </p></figcaption></figure>
 
 The insights presented under the Issues menu for Snyk AppRisk work as illustrated in the following example.&#x20;
 

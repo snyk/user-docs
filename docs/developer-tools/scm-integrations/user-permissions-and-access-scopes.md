@@ -104,18 +104,7 @@ The Snyk Bitbucket integrations use different access control mechanisms to conne
 To set up any Snyk Bitbucket integration, you must be a Bitbucket Workspace Admin.
 {% endhint %}
 
-#### Bitbucket Cloud:
-
-| Action and purpose                                                                                                                                      |                                                                               API Token Scope Requirements                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <p><strong>Daily / weekly tests:</strong><br>Read manifest files in private repos.</p>                                                                  |                                                                                `read:repository:bitbucket`                                                                               |
-| <p><strong>Manual fix pull requests (triggered by the user):</strong><br>Create fix PRs in repos.</p>                                                   | <p><code>read:repository:bitbucket</code></p><p><code>write:repoistory:bitbucket</code></p><p><code>read:pullrequest:bitbucket</code></p><p><code>write:pullrequest:bitbucket</code></p> |
-| <p><strong>Automatic fix and upgrade pull requests:</strong><br>Create fix/upgrade PRs in repos.</p>                                                    | <p><code>read:repository:bitbucket</code></p><p><code>write:repoistory:bitbucket</code></p><p><code>read:pullrequest:bitbucket</code></p><p><code>write:pullrequest:bitbucket</code></p> |
-| <p><strong>Snyk tests on pull requests:</strong><br>Send PR status checks when a new PR is created or a PR is updated.</p>                              | <p><code>read:repository:bitbucket</code></p><p><code>write:repoistory:bitbucket</code></p><p><code>read:pullrequest:bitbucket</code></p><p><code>write:pullrequest:bitbucket</code></p> |
-| <p><strong>Snyk tests on pull requests (initial configuration):</strong><br>Add SCM webhooks to imported repos.</p>                                     |                                                   <p><code>read:webhook:bitbucket</code></p><p><code>write:webhook:bitbucket</code></p>                                                  |
-| <p><strong>Importing new projects to Snyk:</strong><br>Lists available repos in the Bitbucket instance in the <strong>Add Projects</strong> screen.</p> |               <p><code>read:project:bitbucket</code></p><p><code>read:workspace:bitbucket</code></p><p><code>read:account</code></p><p><code>read:user:bitbucket</code></p>              |
-
-#### Bitbucket Data Center/Server scopes
+#### Bitbucket Cloud and Bitbucket Data Center/Server scopes
 
 The following table details the required permission scopes in Bitbucket Cloud and Bitbucket Data Center/Serve&#x72;**:**
 

@@ -81,7 +81,7 @@ To open the code fix for the vulnerability on the Git repository, select the Git
 
 The fix appears in the Git repository, showing you exactly where to fix the vulnerability. You can make the required fix to address the vulnerability.
 
-<figure><img src="../../../.gitbook/assets/vulnerability-example-fix-github (1) (1).png" alt="Source code external link in Fix analysis"><figcaption><p>Source code external link in Fix analysis</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-example-fix-github (1).png" alt="Source code external link in Fix analysis"><figcaption><p>Source code external link in Fix analysis</p></figcaption></figure>
 
 ## Severity score factors
 

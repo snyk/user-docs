@@ -6,4 +6,4 @@ Click the Project link to view test results and resolve any misconfigurations th
 
 The results page looks similar to the following:
 
-<figure><img src="../../../../.gitbook/assets/image (79) (2).png" alt="Kubernetes Project detail"><figcaption><p>Kubernetes Project detail</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (79).png" alt="Kubernetes Project detail"><figcaption><p>Kubernetes Project detail</p></figcaption></figure>

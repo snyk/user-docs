@@ -49,7 +49,6 @@ You can use `global` or `code`. Either will exclude the specified directories an
 ### **Considerations in creating the `.snyk` file**
 
 * The path in the rule should be relative to the `.snyk` file location.
-* Do not use paths starting with `./`.
 * All rules must have a preceding dash to be valid: `- <exclusion_rule>`
 * For rules beginning with special characters and patterns, such as an asterisk character `*`, you must wrap them in double quotes (`" "`). This ensures they are treated as a single entity, avoiding potential misinterpretation or unintended behavior. For example, `"*/src"`
 * The following are considerations in using indentations:
@@ -119,4 +118,4 @@ Now you want to exclude the `app.js` and `db.js` files from the Snyk Code analys
 
 The `app.js` and `db.js` files are excluded from the retest and, therefore, are not tested by Snyk Code and do not appear in the Code Analysis results. Now, only five vulnerability issues are detected:
 
-<figure><img src="../../.gitbook/assets/image (545) (1).png" alt="Example of issues detected in files after excluding"><figcaption><p>Detected issues after files have been excluded</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (545).png" alt="Example of issues detected in files after excluding"><figcaption><p>Detected issues after files have been excluded</p></figcaption></figure>

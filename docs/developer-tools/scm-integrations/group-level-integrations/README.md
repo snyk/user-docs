@@ -37,10 +37,6 @@ Each connected integration enables you to:
 
 See the [Integration syncing time](../../../integrations/integrate-with-snyk.md#integrations-syncing-time) for more details about the time required to sync for each action.
 
-### Prerequisites
-
-To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](../../../snyk-platform-administration/user-roles/pre-defined-roles.md#group-level-permissions).
-
 ### Wildcard SCM integration
 
 The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.&#x20;

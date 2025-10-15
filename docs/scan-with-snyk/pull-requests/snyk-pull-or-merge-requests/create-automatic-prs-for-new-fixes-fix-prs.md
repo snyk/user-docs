@@ -39,8 +39,6 @@ Follow these steps to enable pull requests at the global integration level:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-05-03 at 14.49.59.png" alt=""><figcaption><p>Configure Automatic Fix PRs</p></figcaption></figure>
 
-If you select **Fix all vulnerabilities for the same dependency in a single PR**, this will add any PR opened to address an issue with any potential PR for upgrades which also fix the same issue. So, fixing an instance of the vulnerability may imply that other vulnerabilities will also be fixed implicitly.
-
 ## Set creation thresholds for score and severity
 
 For every new actionable vulnerability found on each recurring test, Snyk raises a Fix PR. This may not be ideal depending on the velocity you are looking for in your organization, so setting up specific criteria to match your needs can be achieved through setting thresholds.

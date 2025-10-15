@@ -18,55 +18,19 @@ The following instructions explain how to set up and use reachability analysis a
 
 ## Set up reachability analysis
 
-### Supported configuration options
+Follow these steps to enable reachability analysis and begin analyzing Projects for reachable vulnerabilities:&#x20;
 
-Snyk supports multiple reachability analysis configuration options:
+* In the Organization **Settings**, navigate to the **Snyk Open Source** section.
+* In the **General** section, find **Reachability analysis**.
+* Activate **Enable reachability analysis**.
 
-* **At the Group level**: You can set the default Reachability analysis setting for all Organizations using the parent Group's Setting&#x73;**.** The default setting applies to existing Organizations with no reachability analysis configuration and all new Organizations.&#x20;
-* **At the Organization level**: You can enable reachability for a single Organization in the Organization Settings. The reachability analysis Organization setting overrides the Group level default.
-* **Enable for all Organizations in a Group**: You can enable and disable reachability analysis for all Organizations in a Group using the parent Group's Settings. Bulk settings changes override any existing reachability analysis Organization setting.
-
-### Enable reachability at the Group level
-
-You can set the reachability analysis default setting for multiple Organizations  as follows:&#x20;
-
-1. In the Group **Settings**, navigate to **Snyk Open Source**.
-2. Under **Reachability analysis** select **Enable Reachability** to apply it to new Organizations.
-3. Confirm the selection to save changes.
-
-<figure><img src="../../.gitbook/assets/image (13).png" alt="Enable reachability at the Group level"><figcaption><p>Enable reachability at the Group level</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (263).png" alt=""><figcaption><p>Enabling reachability setting</p></figcaption></figure>
 
 After reachability analysis is enabled, the analysis is done as part of scanning Projects.&#x20;
 
 {% hint style="info" %}
 You can apply the reachability analysis to existing Projects by triggering a [manual test](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/#manual-snyk-prs).
 {% endhint %}
-
-### Enable reachability at the Organization level
-
-To enable reachability analysis for your Organization and begin analyzing Projects for reachable vulnerabilities, perform the following steps:
-
-1. In the Organization **Settings**, navigate to **Snyk Open Source**.
-2. Under **General**, select **Enable reachability analysis**.
-3. Confirm the selection to save changes.
-
-<figure><img src="../../.gitbook/assets/image (263).png" alt="Enable reachability at the Organization level"><figcaption><p>Enable reachability at the Organization level</p></figcaption></figure>
-
-After reachability analysis is enabled, the analysis is done as part of scanning Projects.&#x20;
-
-{% hint style="info" %}
-You can apply the reachability analysis to existing Projects by triggering a [manual test](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/#manual-snyk-prs).
-{% endhint %}
-
-### Enable reachability for all Organizations in a Group
-
-You can enable and disable reachability for all Organizations in a Group, overriding all existing Organization-level settings.
-
-1. In the Group **Settings**, navigate to **Snyk Open Source**.
-2. Under **General**, select **Enable/Disable reachability analysis** to activate it for all Organizations.&#x20;
-3. Confirm the selection to save changes.
-
-<figure><img src="../../.gitbook/assets/image (17).png" alt="Enable reachability analysis for all Organizations in a Group"><figcaption><p>Enable reachability for all Organizations in a Group</p></figcaption></figure>
 
 ## Supported languages and integrations
 
@@ -123,7 +87,7 @@ After you import  or test a Project using the Snyk UI, the Project is monitored 
 * Reachability badge - Allows you to quickly see on the issue card when a vulnerability is reachable.
 * Call path - Allows you to see the path from your code to the vulnerable code element to validate the result.
 
-<figure><img src="../../.gitbook/assets/image (147) (1).png" alt="Reachability filters, badge and call path on the Projects UI"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (147).png" alt="Reachability filters, badge and call path on the Projects UI"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
 
 ### Reachability analysis as part of the Risk Score
 
