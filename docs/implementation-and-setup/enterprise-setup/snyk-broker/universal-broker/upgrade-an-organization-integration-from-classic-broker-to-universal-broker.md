@@ -29,7 +29,7 @@ If you run into issues, you can roll back to the Classic Broker client as long a
 
 The bulk migration workflow allows you to migrate multiple Organizations at the same time. To do this:
 
-1. Create a test connection and integrate it. See steps 1-3 from [Migrating a single Organization](upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md#migration-a-single-organization).
+1. Create a test connection and integrate it. See steps 1-3 from [Migrating a single Organization](upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md#migrating-a-single-organization).
 2. Run `snyk-broker-config workflows bulk-migration list` to see a list of all the Organizations that can be migrated.
 3. Run `snyk-broker-config workflows bulk-migration apply` to migrate all the Organizations listed in the previous step. Select the deployment and connection you want to upgrade to and confirm your choice.
 
