@@ -3324,6 +3324,15 @@ To reduce the overall size of the repository, use a a `.snyk` file to ignore cer
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
+### [SNYK-SCM-0010](#snyk-scm-0010)
+<a id="#SNYK-SCM-0010"></a>
+
+**Specified resource cannot be found**
+
+Snyk was unable to resolve the SCM resource you provided. Provide a valid resource path and revision.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
 ***
 
 ## Target
