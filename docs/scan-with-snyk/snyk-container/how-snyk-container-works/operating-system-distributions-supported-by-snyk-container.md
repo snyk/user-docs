@@ -114,6 +114,7 @@ This is the list of supported operating systems and distributions:
 
 ## [Ubuntu](https://ubuntu.com/)
 
+* Ubuntu 25.10 - Questing Quokka
 * Ubuntu 25.04 - Plucky Puffin
 * Ubuntu 24.10 - Oracular Oriole
 * Ubuntu 24.04 - Noble Numbat
