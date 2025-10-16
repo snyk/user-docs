@@ -1365,6 +1365,15 @@ And try the operation again.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
+### [SNYK-OS-0011](#snyk-os-0011)
+<a id="#SNYK-OS-0011"></a>
+
+**Unsupported platform**
+
+The specified platform is not supported.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
 ### [SNYK-OS-DOTNET-0001](#snyk-os-dotnet-0001)
 <a id="#SNYK-OS-DOTNET-0001"></a>
 
@@ -2451,6 +2460,28 @@ This often happens due to the large size of some of the Python dependencies and 
 Cyclic dependency detected in lockfile.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+### [SNYK-OS-RUBY-0002](#snyk-os-ruby-0002)
+<a id="#SNYK-OS-RUBY-0002"></a>
+
+**Gem not found**
+
+A gem listed in the Gemfile cannot be found in the RubyGems repository or locally.
+Make sure all gems included in the Gemfile are publicly available or properly configured in your gem sources.
+Verify that the gem name and version are correct, and check that you have access to any private gem repositories.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+### [SNYK-OS-RUBY-0003](#snyk-os-ruby-0003)
+<a id="#SNYK-OS-RUBY-0003"></a>
+
+**Gem version conflict**
+
+Bundler was unable to resolve compatible versions for the gems specified in the Gemfile.
+This occurs when multiple gems have conflicting version requirements that cannot be satisfied simultaneously.
+Review your Gemfile and Gemfile.lock to identify conflicting dependencies, and consider updating gem versions or constraints to resolve the conflict.
+
+**HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
 
 ### [SNYK-OS-SETTINGS-0001](#snyk-os-settings-0001)
 <a id="#SNYK-OS-SETTINGS-0001"></a>
