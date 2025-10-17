@@ -3,9 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-The following features within the Pull Request experience are in [Early Access](../../../discover-snyk/getting-started/snyk-release-process.md#early-access-features):
-
-* Snyk Agent fix in the PR
+As part of the Pull Request experience, Snyk Agent fix in the PR is in [Early Access](../../../discover-snyk/getting-started/snyk-release-process.md#early-access-features).
 {% endhint %}
 
 The Pull Request experience is an enhancement of the foundational [Pull Request Checks](./) functionality. It streamlines the security review process by reducing the need to switch between different developer tools, and providing contextually relevant feedback within your Source Code Manager (SCM) interface.
@@ -76,7 +74,7 @@ Configure the pull request experience for one or more integrations in your Snyk 
 
 The issue summary comment feature adds a comment to each pull request, summarizing the latest PR check results. The summary includes the type of checks performed and a breakdown of the findings by severity. Select **View Details** to access the PR check details in the Snyk Web UI.
 
-<figure><img src="../../../.gitbook/assets/image (506).png" alt=""><figcaption><p>Issue summary comment feature for pull request experience</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (38).png" alt=""><figcaption><p>Issue summary comment feature for pull request experience</p></figcaption></figure>
 
 ## Inline comments
 
