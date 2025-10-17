@@ -55,6 +55,26 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
 
+#### Install with Claude Code CLI commands
+
+First, run the Snyk MCP Server in `sse` transport mode using the Snyk CLI:
+
+```
+snyk mcp -t sse 
+```
+
+Then run the Claude Code CLI for adding a new Model Context Protocol server:
+
+```
+claude mcp add --transport sse snyk http://127.0.0.1:7695/sse
+```
+
+Watch this step-by-step [YouTube video](https://www.youtube.com/watch?v=qAcTPMXbfyU) that shows how to configure the Snyk MCP Server with Claude Code CLI:
+
+{% embed url="https://www.youtube.com/watch?v=qAcTPMXbfyU" %}
+
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
+
 The following examples shows a Snyk MCP Server that was successfully configured and started.
 
 <figure><img src="../../../.gitbook/assets/image (512) (1).png" alt="" width="563"><figcaption></figcaption></figure>
