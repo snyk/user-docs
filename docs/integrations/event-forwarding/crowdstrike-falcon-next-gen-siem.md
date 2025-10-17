@@ -22,9 +22,9 @@ The process for setting up this integration consists of:
 
 ## Configure the CrowdStrike Data Connector
 
-To use the CrowdStrike NG-SIEM destination, you need to set up a CrowdStrike data connector using the HEC/HTTP Event Connector. For more details, visit the [Step 1: Set up the HEC/HTTP event data connector](https://falcon.us-2.crowdstrike.com/documentation/page/bdded008/hec-http-event-connector-guide) CrowdStrike page for instructions. Select the **snyk-platform (Snyk Platform)** parser while configuring the data connector.
+To use the CrowdStrike NG-SIEM destination, you need to set up a Snyk Data Connector in your CrowdStrike NG-SIEM environment. To learn more, visit the [Snyk](https://falcon.us-2.crowdstrike.com/documentation/page/c7182a06/snyk) page in the CrowdStrike documentation. Select the **snyk-platform (Snyk Platform)** parser while configuring the data connector.
 
-When setting up the data connector, you receive a HEC API key and URL, which you will use later to configure the Snyk Issue Forwarder.
+When setting up the data connector, you receive an API key and URL, which you will use later to configure the Snyk Issue Forwarder.
 
 ## Configure Snyk Issue Forwarder
 
@@ -35,14 +35,14 @@ This section configures Snyk to send issue data to the CrowdStrike connector you
 * Select the **Issue Forwardin**g tag and search for CrowdStrike Issue Forwarding.
 * Click the **Add** button.
 * Add the profile name for this integration.
-* Add the **API ID** you copied earlier from your CrowdStrike Issue Forwarding account.
+* Add the **API URL** you copied earlier from your CrowdStrike Issue Forwarding account.
 * Add the **API key** you copied earlier from your CrowdStrike Issue Forwarding account.
 * Click the **Done** button.
 * When the connection is established, the status of the CrowdStrike Issue Forwarding integration is changed to **Connected**.
 
 ## Verify the integration connection
 
-After the integration is set up, you can verify that Snyk data is being forwarded to CrowdStrike. For more details, visit the [Step 3: Verify successful data ingestion](https://falcon.us-2.crowdstrike.com/documentation/page/bdded008/hec-http-event-connector-guide#pb414544) CrowdStrike page for instructions.
+After the integration is set up, you can verify that Snyk data is being forwarded to CrowdStrike. For more details, visit the [Step 3: Verify successful data ingestion](https://falcon.us-2.crowdstrike.com/documentation/page/c7182a06/snyk#s4fea4f4) CrowdStrike page for instructions.
 
 If you need to run a manual search, use this query in Advanced Event Search:
 
