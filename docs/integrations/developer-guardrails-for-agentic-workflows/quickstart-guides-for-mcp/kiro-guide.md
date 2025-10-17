@@ -40,7 +40,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```json5
 {
-  "servers": {
+  "mcpServers": {
     "Snyk": {
       "command": "/absolute/path/to/snyk",
       "args": ["mcp", "-t", "stdio"],
