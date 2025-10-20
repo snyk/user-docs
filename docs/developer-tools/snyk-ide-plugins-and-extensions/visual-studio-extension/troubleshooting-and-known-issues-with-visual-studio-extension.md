@@ -6,12 +6,6 @@ Snyk plugins are not supported on any operating system that has reached End Of L
 
 ## Known issues
 
-### Could not detect supported target files
-
-**Solution:** Open the Visual Studio Options to navigate to the **Project Setting**s of the Snyk extension and check **Scan all projects**.
-
-<figure><img src="../../../.gitbook/assets/readme_image_4_1.png" alt="Scan all projects option"><figcaption><p>Scan all projects option</p></figcaption></figure>
-
 ### The system cannot find the file specified
 
 **Solution:** This issue is related to the CLI file. Close and open Snyk extension window to start the CLI download.
