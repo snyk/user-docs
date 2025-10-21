@@ -197,3 +197,4 @@ redirects:
   supported-languages/supported-languages-list/php/php-for-open-source: /supported-languages/supported-languages-list/php.md
   snyk-api/reference/assets: snyk-api/reference/asset.md
   snyk-api/rest-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token: snyk-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token.md
+  products/snyk-code/snyk-code-language-and-framework-support: supported-languages/supported-languages-package-managers-and-frameworks.md
