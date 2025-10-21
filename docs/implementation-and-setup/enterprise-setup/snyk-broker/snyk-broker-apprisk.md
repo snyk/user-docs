@@ -17,12 +17,12 @@ The specific information you need to integrate Snyk AppRisk with Snyk Broker dep
 * Required: Your Snyk Broker toke&#x6E;**.**
 * How to obtain it:
   * Contact the Snyk Support team.
-  * Alternatively, generate it yourself by following the instructions to [Obtain your Broker token from the Web UI](../../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-from-the-web-ui).
+  * Alternatively, generate it yourself by following the instructions to [Obtain your Broker token from the Web UI](classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md#obtain-your-broker-token-from-the-web-ui).
 
 ### Prerequisite for using Snyk AppRisk with Universal Broker
 
 * Required: The identifier for your connection specific to your Universal Broker setup.
-* How to obtain it: You can find this identifier by referring to the [Validate your deployment (optional)](../../../enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker.md#validate-your-connection-optional) section within the [Basic steps to install and configure Universal Broker](../../../enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker.md) documentation.
+* How to obtain it: You can find this identifier by referring to the [Validate your deployment (optional)](universal-broker/basic-steps-to-install-and-configure-universal-broker.md#validate-your-connection-optional) section within the [Basic steps to install and configure Universal Broker](universal-broker/basic-steps-to-install-and-configure-universal-broker.md) documentation.
 
 ### Final step in integration for both Broker types
 

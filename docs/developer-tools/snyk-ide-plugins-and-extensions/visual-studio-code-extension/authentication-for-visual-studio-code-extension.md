@@ -54,11 +54,11 @@ To authenticate using the Personal Access token, follow these steps:
 
 1.  Click the **Snyk Icon** in the navigation bar, then click the **Settings** icon, find **Authentication Method,** and change it to **Personal Access Token**.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
 2. Create your **Personal Access** **Token**. For details, see the [Authentication for API](../../../snyk-api/authentication-for-api/) page.&#x20;
 3.  Run the `Snyk: Set Token` command and paste the token in the text field.
 
-    <figure><img src="../../../.gitbook/assets/image (446).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
 
 ## Steps to authenticate using your Snyk API token
 
@@ -73,7 +73,7 @@ Follow these steps to authenticate:
 2. Press **Connect & Trust Workspace**.
 3.  Click **Authenticate** in the web browser window that opens.
 
-    <figure><img src="../../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
 
 The analysis starts automatically.
 

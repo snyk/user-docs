@@ -16,11 +16,11 @@ Navigate to [Devin.ai](https://devin.ai/) to get started using the AI software e
 
 Install the Snyk MCP Server by navigating to **Settings** > **Organization settings** > **MCP marketplace** > **Add your own**.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (385).png" alt=""><figcaption></figcaption></figure>
 
 Devin uses [snapshots of virtual machines](https://docs.devin.ai/onboard-devin/repo-setup) to complete its tasks. Install the Snyk CLI on a virtual machine to enable the Snyk MCP Server to function properly.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (392).png" alt=""><figcaption></figcaption></figure>
 
 ## Setting up the Snyk MCP Server
 
@@ -46,9 +46,9 @@ Devin indicates that this request is related to security vulnerability scanning 
 
 Devin is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found.
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (387).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (388).png" alt=""><figcaption></figcaption></figure>
 
 ### "Secure at inception" rules
 
@@ -66,4 +66,4 @@ The following is a suggested instruction for Devin Knowledge:
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (390).png" alt=""><figcaption></figcaption></figure>

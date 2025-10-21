@@ -9,7 +9,7 @@ To start scanning code in the IDE, navigate to your IDE plugin or extension mark
 * Open VS Code, Extensions and search for Snyk.
 * Install the Snyk extension.
 
-<figure><img src="../../../../.gitbook/assets/image (431).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (313).png" alt=""><figcaption></figcaption></figure>
 
 * Select **Connect & Trust Workspace** to let Snyk scan your code.
 

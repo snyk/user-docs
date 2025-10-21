@@ -22,7 +22,7 @@ See [Import the Certificate as a Trusted Certificate (The Java™ Tutorials > Se
 
 ### Eclipse <a href="#eclipse" id="eclipse"></a>
 
-<figure><img src="../../../.gitbook/assets/image (228).png" alt="Allow unknown certificate authorities"><figcaption><p>Allow unknown certificate authorities</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (173).png" alt="Allow unknown certificate authorities"><figcaption><p>Allow unknown certificate authorities</p></figcaption></figure>
 
 * Update the JDK used by Snyk scans to add unknown certificates.
 * Update to the latest CLI and pugin version.
@@ -30,7 +30,7 @@ See [Import the Certificate as a Trusted Certificate (The Java™ Tutorials > Se
 
 ### IntelliJ  <a href="#intellij" id="intellij"></a>
 
-<figure><img src="../../../.gitbook/assets/image (229).png" alt="IntelliJ setting"><figcaption><p>IntelliJ setting</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (174).png" alt="IntelliJ setting"><figcaption><p>IntelliJ setting</p></figcaption></figure>
 
 * See [Trusted root certificates | IntelliJ IDEA](https://www.jetbrains.com/help/idea/ssl-certificates.html).
 * Updating the Jetbrains certificate handling only will most likely not be sufficient, as the CLI does not use Jetbrains settings, but JAVA\_HOME and PATH to determine a JDK. This JDKs certificate store must be updated.&#x20;
@@ -45,9 +45,9 @@ Another option is using environment variables; see [How to add custom certificat
 
 The last resort is to disable Certificate checks. Add `--insecure` to additional arguments to disable checks in the CLI, and **uncheck** the setting to use a strict proxy (`http.proxyStrictSSL`) in VSCode to disable certificate checks in `https` calls.
 
-<figure><img src="../../../.gitbook/assets/image (230).png" alt="--inseucure argument"><figcaption><p>--inseucure argument</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (175).png" alt="--inseucure argument"><figcaption><p>--inseucure argument</p></figcaption></figure>
 
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (231).png" alt="Proxy settings"><figcaption><p>Proxy settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (176).png" alt="Proxy settings"><figcaption><p>Proxy settings</p></figcaption></figure>
 

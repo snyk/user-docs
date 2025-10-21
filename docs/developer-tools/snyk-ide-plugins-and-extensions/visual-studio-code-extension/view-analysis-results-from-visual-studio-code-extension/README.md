@@ -10,7 +10,7 @@ The **Snyk analysis panel** on the left shows the time the analysis took and a l
 
 Each issue contains a severity icon that has the following meaning:
 
-| ![](<../../../../.gitbook/assets/image (67).png>) Critical severity                                                                                                                                                                 | May allow attackers access to sensitive data and to run code on your application.                                                            |
+| ![](<../../../../.gitbook/assets/image (50).png>) Critical severity                                                                                                                                                                 | May allow attackers access to sensitive data and to run code on your application.                                                            |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](<../../../../.gitbook/assets/image (10) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png>) High severity | May allow attackers access to sensitive data on your application.                                                                            |
 | ![](<../../../../.gitbook/assets/image (116) (1) (2).png>) Medium severity                                                                                                                                                          | May allow attackers under some conditions to have access to sensitive data on your application.                                              |
@@ -54,9 +54,9 @@ In Visual Studio Code version 2.21.0 and later, you can choose any folder as you
 
 To apply the filter and see only the new issues, use the **total** or **new** toggle in the summary panel.
 
-<figure><img src="../../../../.gitbook/assets/image (378).png" alt=""><figcaption><p>Summary panel with a toggle that shows the total number of issues, and the number of issues in the checked out branch or current folder</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (272).png" alt=""><figcaption><p>Summary panel with a toggle that shows the total number of issues, and the number of issues in the checked out branch or current folder</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (375).png" alt=""><figcaption><p>Net new issues filter enabled after the user clicks on the total/new issues toggle</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (271).png" alt=""><figcaption><p>Net new issues filter enabled after the user clicks on the total/new issues toggle</p></figcaption></figure>
 
 You can also enable the net new issues feature in the [scan configuration](./#scan-configuration) settings for the extension.
 
@@ -75,5 +75,5 @@ You can change the base branch or base folder by following these steps, as illus
 3. Click on the top-level node in the issues tree to change the branch or directory.
 4. Use text input to specify any branch name or reference directory.
 
-<figure><img src="../../../../.gitbook/assets/image (380).png" alt=""><figcaption><p>Changing the reference branch or reference directory for calculation of net new issues</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (273).png" alt=""><figcaption><p>Changing the reference branch or reference directory for calculation of net new issues</p></figcaption></figure>
 

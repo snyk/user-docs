@@ -9,15 +9,15 @@ After setting up your SCM integration, you are ready to import repositories to S
 * Open **Dashboard**
 * Select **Import projects**
 
-<figure><img src="../../../../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
 
 Alternatively, you can start the import from the Integrations tab and select the integration that you just configured:
 
-<figure><img src="../../../../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
 
 * Select the repositories that you want to import and click **Add selected repositories**
 
-<figure><img src="../../../../.gitbook/assets/image (430) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>
 
 * The import begins immediately, which can be monitored in the Import Log:
 

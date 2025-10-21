@@ -8,7 +8,7 @@ Effective beginning on June 24, 2025, Snyk Code Quality issues will no longer be
 
 ## Snyk Code vulnerability window
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-17 at 12.25.28 (1).png" alt="Snuk Code vulnerability window"><figcaption><p>Snyk Code vulnerability window</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-17 at 12.25.28.png" alt="Snuk Code vulnerability window"><figcaption><p>Snyk Code vulnerability window</p></figcaption></figure>
 
 The Snyk suggestion panel on the right of the results screen shows the Snyk Code Vulnerability name, the line it was found in, a suggestion for a fix, and an option to ignore, either in the entire file or a specific line.
 

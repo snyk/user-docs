@@ -67,7 +67,7 @@ If you are a Slack Admin, you can manually add the Snyk for Slack app to a priva
 After the Slack app has been configured, new issue notifications are forwarded to the selected Slack channel according to the desired severity level threshold. \
 New issue notifications may take up to an hour to start propagating to your Slack workspace after it is configured.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (165).png" alt="Example of a new critical vulnerability notification received in Slack"><figcaption><p>Example of a new critical vulnerability notification received in Slack</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (116).png" alt="Example of a new critical vulnerability notification received in Slack"><figcaption><p>Example of a new critical vulnerability notification received in Slack</p></figcaption></figure>
 
 ## Manage Project-level notification overrides
 
@@ -101,7 +101,7 @@ To set a Project level override, find the ID of the Project for which you want t
 
 After a notification customization has been created, you can edit its configuration or delete it at any time. To do so, select the action in the ellipsis menu for the customization table entry.
 
-<figure><img src="../../.gitbook/assets/image (173).png" alt="Edit and Delete options for notification customizations" width="443"><figcaption><p>Edit and Delete options for notification customizations</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (124).png" alt="Edit and Delete options for notification customizations" width="443"><figcaption><p>Edit and Delete options for notification customizations</p></figcaption></figure>
 
 ## Manage notification customizations using the REST API
 

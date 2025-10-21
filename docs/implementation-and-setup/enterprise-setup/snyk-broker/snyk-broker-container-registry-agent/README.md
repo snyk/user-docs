@@ -97,7 +97,7 @@ docker run --restart=always \
 
 ### Universal Broker
 
-Deploy the Universal Broker by following the installation instructions available on the [Universal Broker ](../../../../enterprise-setup/snyk-broker/universal-broker/)page. The `snyk-broker-config` CLI tool guides you through the process of submitting and storing all configuration details needed to connect the Broker Client to the Container Registry Agent and the Container Registry.
+Deploy the Universal Broker by following the installation instructions available on the [Universal Broker ](../universal-broker/)page. The `snyk-broker-config` CLI tool guides you through the process of submitting and storing all configuration details needed to connect the Broker Client to the Container Registry Agent and the Container Registry.
 
 You must provide the following details while creating your connection:
 
@@ -175,7 +175,7 @@ See [Configuring your JFrog Artifactory container registry integration](../../..
 
 In Elastic Container Registries and other container registries, the communication is the same. The Agent makes synchronous calls to the container registries to list and pull the image. Then the Agent scans the images and sends the results to the Broker Client using callbacks. ECR has a special authentication mechanism that requires setting up an IAM Role or User in the Agent.
 
-<figure><img src="../../../../.gitbook/assets/image (89).png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (69).png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
 
 #### **Required AWS Resource with ECR**
 

@@ -178,4 +178,4 @@ For the Product Team, Snyk uses the snyk-{groupID} mapping, where the value of g
 
 ## Summary diagram of roles under custom mapping
 
-<figure><img src="../../../../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>

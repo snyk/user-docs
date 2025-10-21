@@ -18,7 +18,7 @@ Every time a repository is scanned, every CloudFormation file is imported as a s
 
 If you re-imported the repository in order to import the CloudFormation files, then Snyk imports and re-tests the already imported application manifest files, displaying the test time as "now".
 
-<figure><img src="../../../../.gitbook/assets/image (66).png" alt="List of CloudFormation Projects"><figcaption><p>List of CloudFormation Projects</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (49).png" alt="List of CloudFormation Projects"><figcaption><p>List of CloudFormation Projects</p></figcaption></figure>
 
 * Click a Project link to view the scan results and details for the CloudFormation code:
 

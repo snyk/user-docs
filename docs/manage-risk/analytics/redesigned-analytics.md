@@ -13,7 +13,7 @@ Learn how to build custom dashboards, access enhanced metrics, and explore Tenan
 * Report catalog: A centralized catalog of Snyk Group-level reports. Use this to discover and access pre-built reports relevant to specific Groups within your Organization.
 * Issues/Assets drill-down: Enhanced drill-down capabilities allow you to explore issues and assets in greater detail directly from the dashboard.
 
-<figure><img src="../../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (316).png" alt=""><figcaption></figcaption></figure>
 
 ## User access permissions
 

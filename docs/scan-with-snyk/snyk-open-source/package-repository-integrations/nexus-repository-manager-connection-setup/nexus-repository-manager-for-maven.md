@@ -22,7 +22,7 @@ You can choose to use Nexus as a mirror or as an additional repository where you
 
 These settings are very similar to what you have in `~/.m2/settings.xml`.
 
-<figure><img src="../../../../.gitbook/assets/image (344).png" alt=""><figcaption><p>Set up for Mirrors</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (245).png" alt=""><figcaption><p>Set up for Mirrors</p></figcaption></figure>
 
 Choose a value for the Type, either **Direct** or, if you are using using authentication, **Integration**.
 

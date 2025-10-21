@@ -52,7 +52,7 @@ In your **Projects** listing, select the Project to open to display detailed inf
 
 Each Project detail page has a snapshot showing when the Project was last tested, the name of the user who imported the Project, and, on the **Issues** tab, the number of critical, high, medium, and low-severity issues found and issue cards for each scanned configuration file. You can also select the **Overview**, **History,** and **Settings** options. Choose **History** to see previous snapshots of the Project.
 
-<figure><img src="../../.gitbook/assets/image (106).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (88).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
 
 ## Issue card details for Snyk IaC
 

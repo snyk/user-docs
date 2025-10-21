@@ -6,7 +6,7 @@
 Snyk Azure Repos are available only for Azure DevOps/TFS 2020 or above.
 {% endhint %}
 
-Before installing, review the general instructions for the installation method you plan to use, [Helm](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md) or [Docker](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md).
+Before installing, review the general instructions for the installation method you plan to use, [Helm](../install-and-configure-broker-using-helm.md) or [Docker](../install-and-configure-broker-using-docker.md).
 
 Before installing the Snyk Azure Repos Broker, ask your Snyk account team to provide you with a Broker token.
 

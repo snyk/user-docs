@@ -12,7 +12,7 @@ Snyk supports the following protocols for authentication:
 Before authenticating, ensure your region is properly set. For more details, see [IDEs URLs](../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#ides-urls).
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (457).png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Jetbrains IDEs</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (326).png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Jetbrains IDEs</p></figcaption></figure>
 
 ## Steps to authenticate using the OAuth 2.0 protocol
 
@@ -47,7 +47,7 @@ To authenticate using the Personal Access token, follow these steps:
 1. Navigate to  **Settings** > **Tools** > **Snyk**.
 2.  Set the **Authentication Method** to **Use Personal Access Token**.
 
-    <figure><img src="../../../.gitbook/assets/image (458).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4. Create your **Personal Access** **Token**. For details, see the [Authentication for API](../../../snyk-api/authentication-for-api/) page.&#x20;
 5. Add the token in the **Token** field.
@@ -62,11 +62,11 @@ To authenticate, follow these steps:
 1. In the JetBrains plugin, navigate to **Settings** > **Tools** > **Snyk**.
 2.  Set the **Authentication Method** to **API token**.
 
-    <figure><img src="../../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4.  Click **Authenticate** in the web browser window that opens.
 
-    <figure><img src="../../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
 5. The API token is automatically updated in the **API Token field**.
 6. Click **Apply** or **OK.**
 

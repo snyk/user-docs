@@ -113,7 +113,7 @@ The Related Projects tab provides a collection of Snyk Projects that are associa
 
 The Attributes tab shows miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
 
-<figure><img src="../.gitbook/assets/image (337).png" alt=""><figcaption><p>Asset card - Assets Attributes view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (243).png" alt=""><figcaption><p>Asset card - Assets Attributes view</p></figcaption></figure>
 
 ## Issues
 
@@ -140,12 +140,12 @@ The Controls logos can have one of the following states:
 
 | Logo                                                                       | Description                                                                      |
 | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| <img src="../.gitbook/assets/image (182).png" alt="" data-size="original"> | The Snyk product was executed.                                                   |
-| <img src="../.gitbook/assets/image (183).png" alt="" data-size="original"> | The Snyk product was executed but with issues.                                   |
-| <img src="../.gitbook/assets/image (184).png" alt="" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
-| <img src="../.gitbook/assets/image (185).png" alt="" data-size="original"> | The Snyk product was executed and failed.                                        |
-| <img src="../.gitbook/assets/image (186).png" alt="" data-size="original"> | The Snyk product was executed and failed with issues.                            |
-| <img src="../.gitbook/assets/image (189).png" alt="" data-size="original"> | The Snyk product was executed and failed due to not being covered by the policy. |
+| <img src="../.gitbook/assets/image (132).png" alt="" data-size="original"> | The Snyk product was executed.                                                   |
+| <img src="../.gitbook/assets/image (133).png" alt="" data-size="original"> | The Snyk product was executed but with issues.                                   |
+| <img src="../.gitbook/assets/image (134).png" alt="" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
+| <img src="../.gitbook/assets/image (135).png" alt="" data-size="original"> | The Snyk product was executed and failed.                                        |
+| <img src="../.gitbook/assets/image (136).png" alt="" data-size="original"> | The Snyk product was executed and failed with issues.                            |
+| <img src="../.gitbook/assets/image (137).png" alt="" data-size="original"> | The Snyk product was executed and failed due to not being covered by the policy. |
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.&#x20;
 

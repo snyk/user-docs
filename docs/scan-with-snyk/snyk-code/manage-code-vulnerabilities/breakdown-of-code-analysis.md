@@ -81,7 +81,7 @@ To open the code fix for the vulnerability on the Git repository, select the Git
 
 The fix appears in the Git repository, showing you exactly where to fix the vulnerability. You can make the required fix to address the vulnerability.
 
-<figure><img src="../../../.gitbook/assets/vulnerability-example-fix-github (1) (1).png" alt="Source code external link in Fix analysis"><figcaption><p>Source code external link in Fix analysis</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-example-fix-github.png" alt="Source code external link in Fix analysis"><figcaption><p>Source code external link in Fix analysis</p></figcaption></figure>
 
 ## Severity score factors
 
@@ -120,10 +120,10 @@ You can filter issues in the Code analysis Project by Priority Score using the *
 
 For CWE-22 Path Traversal, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is High severity. Otherwise, it is Low severity.
 
-<figure><img src="../../../.gitbook/assets/image (130).png" alt="Decision flow chart for Priority Score CWE-22 Path Traversal"><figcaption><p>Decision flow chart for Priority Score CWE-22 Path Traversal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (97).png" alt="Decision flow chart for Priority Score CWE-22 Path Traversal"><figcaption><p>Decision flow chart for Priority Score CWE-22 Path Traversal</p></figcaption></figure>
 
 ## Example: CWE-601: Open Redirect
 
 For CWE-2601 Open Redirect, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is Medium severity.
 
-<figure><img src="../../../.gitbook/assets/image (96).png" alt="Decision flow chart for Priority Score CWE-601 Open Redirect"><figcaption><p>Decision flow chart for Priority Score CWE-601 Open Redirect</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (75).png" alt="Decision flow chart for Priority Score CWE-601 Open Redirect"><figcaption><p>Decision flow chart for Priority Score CWE-601 Open Redirect</p></figcaption></figure>

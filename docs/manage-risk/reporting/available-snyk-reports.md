@@ -50,7 +50,7 @@ Use the date filter in the upper right corner of the Issues Summary report to se
 
 At the top of the report, you can follow key metrics associated with security issues in the selected date range with a comparison to the previous sequential period's results. This allows you to get insights on trends. See the tooltips in Snyk Web UI for definitions of the metrics.
 
-<figure><img src="../../.gitbook/assets/image (400).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (293).png" alt=""><figcaption></figcaption></figure>
 
 The **Issues Identified and Resolved** trend captures the accumulated security issues that were identified and resolved during the selected date range. The gap between the two lines indicates the open issues backlog.
 
@@ -60,15 +60,15 @@ This visual trend allows you to identify if too many issues are being introduced
 The Total Open issues metric at the top completes the picture for this trend, by showing the total open issues at the end of the selected period compared with the total open issues at the beginning of the selected date range.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (401).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (294).png" alt=""><figcaption></figcaption></figure>
 
 Reviewing the **Exposure Window** trend allows you to identify the capacity of security issues that are open within predefined periods. This is a relevant metric to follow when filtering by attributes such as severity, exploit maturity, or asset class. and ensuring that the most critical issues for sensitive assets are being remediated on time.
 
-<figure><img src="../../.gitbook/assets/image (403).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (295).png" alt=""><figcaption></figcaption></figure>
 
 The **Time to Resolve by Week** trend provides visibility on the number of issues remediated within predefined periods, allowing you to measure remediation performance over time.
 
-<figure><img src="../../.gitbook/assets/image (408).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
 
 The **Risk breakdown** table helps you make data-driven decisions about where you need to focus. The tables allow you to review ‌performance metrics from several angles.&#x20;
 
@@ -79,7 +79,7 @@ Use the dimension picker to browse:
 * **Asset Classes** - Ensure that efforts are prioritized to secure the most sensitive assets first.
 * **Introduction Categories** - Allows to determine if preventable issues are handled properly by looking at the percentage change of new preventable issues, as well as assessing the impact of new monitored assets over your AppSec Program. You can view this under the **Baseline Issue** category.
 
-<figure><img src="../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (296).png" alt=""><figcaption></figcaption></figure>
 
 ## Vulnerabilities Detail report
 
@@ -124,7 +124,7 @@ The SLA status of an issue can be:
 
 You can control the SLA targets and the transition of issues to the “At Risk” status by editing the **SLA target** and setting the **At risk duration before breach (days)** field.
 
-<figure><img src="../../.gitbook/assets/image (319).png" alt=""><figcaption><p>SLA Management Report - Edit SLA targets</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (229).png" alt=""><figcaption><p>SLA Management Report - Edit SLA targets</p></figcaption></figure>
 
 The SLA report includes additional filters under the SLA category, allowing for better identification of the age of issues in relation to the SLA target:
 
@@ -136,7 +136,7 @@ The SLA report includes additional filters under the SLA category, allowing for 
 The report is, by default, showing only issues that are with high or critical severity. Update the severity filter if you want to view the SLA status for additional severities.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (311).png" alt="" width="300"><figcaption><p>SLA Filters within the filters picker </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (224).png" alt="" width="300"><figcaption><p>SLA Filters within the filters picker </p></figcaption></figure>
 
 You can share the report with predefined SLA targets by sharing the report URL or return to a predefined SLA report by bookmarking the web page in your browser.
 
@@ -144,15 +144,15 @@ In the **Open issues** section, the **SLA severity breakdown** shows a distribut
 
 The **SLA trend** shows the cumulative SLA status of issues over time.
 
-<figure><img src="../../.gitbook/assets/image (312).png" alt=""><figcaption><p>SLA Management Report - Open issues section</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (225).png" alt=""><figcaption><p>SLA Management Report - Open issues section</p></figcaption></figure>
 
 The **SLA breakdown table** allows you to compare the SLA compliance results of Organizations in the Group view, or Targets in the Organization view. The table is sorted by default according to the quantity of breached issues.
 
-<figure><img src="../../.gitbook/assets/image (313).png" alt=""><figcaption><p>SLA Management Report - SLA Breakdown</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (226).png" alt=""><figcaption><p>SLA Management Report - SLA Breakdown</p></figcaption></figure>
 
 The **Breached and at-risk open issues** table helps you prioritize issues based on their aging and SLA compliance status. You can use the **Modify Column** picker to add additional columns and learn more about the specific issues.
 
-<figure><img src="../../.gitbook/assets/image (316).png" alt=""><figcaption><p>SLA Management Report - Breached and at risk open issues</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (227).png" alt=""><figcaption><p>SLA Management Report - Breached and at risk open issues</p></figcaption></figure>
 
 {% hint style="info" %}
 You can download the **SLA Breakdown** and the **Breached and at risk open issues data** in a CSV format using the **Download CSV** option.
@@ -160,7 +160,7 @@ You can download the **SLA Breakdown** and the **Breached and at risk open issue
 
 You can review the SLA results for resolved issues and perform a retrospective analysis by reviewing the **Resolved issues** section.
 
-<figure><img src="../../.gitbook/assets/image (318).png" alt=""><figcaption><p>Resolved issues section</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (228).png" alt=""><figcaption><p>Resolved issues section</p></figcaption></figure>
 
 ## OWASP Top 10 report
 
@@ -206,7 +206,7 @@ Snyk PCI-DSS v4.0.1 Report is designed to help you:
 * Provide evidence that the Organization is meeting the PCI-DSS AppSec requirements for SCA and SAST vulnerabilities.
 * Prioritize issues to improve PCI-DSS compliance readiness.
 
-<figure><img src="../../.gitbook/assets/image (389) (1).png" alt=""><figcaption><p>Snyk PCI-DSS v4.0.1 Report</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (283).png" alt=""><figcaption><p>Snyk PCI-DSS v4.0.1 Report</p></figcaption></figure>
 
 The report identifies PCI-DSS risks and violations based on the following PCI-DSS v4.0.1 requirements:
 
@@ -291,7 +291,7 @@ The number on the left indicates the violation status and the progress made in t
 
 The trend shows all vulnerabilities per Requirement 6.2.4, categorized by age bucket. This allows for quick identification of potential violations and vulnerabilities that may soon become violations.
 
-<figure><img src="../../.gitbook/assets/image (385).png" alt=""><figcaption><p>PCI-DSS Readiness Trend</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (280).png" alt=""><figcaption><p>PCI-DSS Readiness Trend</p></figcaption></figure>
 
 #### Attack category breakdown
 
@@ -307,7 +307,7 @@ After you investigate and see the actual issues behind the figures, you may proc
 * Run a vulnerability eradication campaign or assign Snyk Learn training to relevant engineering teams.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (387).png" alt=""><figcaption><p>Attack Category Breakdown</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (282).png" alt=""><figcaption><p>Attack Category Breakdown</p></figcaption></figure>
 
 ## Developer IDE and CLI usage
 
@@ -374,7 +374,7 @@ In addition, you can learn about the change in the number of tested repositories
 
 A green upward arrow indicates that more repositories were tested compared to the previous sequential period, while a red downward arrow indicates the opposite. The absolute change value appears next to the arrow, and the perception of change appears right underneath to measure the degree of change.
 
-<figure><img src="../../.gitbook/assets/image (381).png" alt=""><figcaption><p>Repositories tested during date range</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (274).png" alt=""><figcaption><p>Repositories tested during date range</p></figcaption></figure>
 
 {% hint style="info" %}
 A sequential period refers to a date range covering the last seven days. In this case, the period starts seven days ago and ends today. The previous sequential period spans from 14 days ago to seven days ago. As a result, both sequential periods are of the same duration.
@@ -393,7 +393,7 @@ Viewing the last commit data requires SCM Group integration. For more details, n
 
 You can filter by specific products or by specific organizations or extend the viewed period using the date range filter.
 
-<figure><img src="../../.gitbook/assets/image (382).png" alt=""><figcaption><p>Repository Test Adoption</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption><p>Repository Test Adoption</p></figcaption></figure>
 
 #### Test Success Rate Trend <a href="#test-success-rate-trend" id="test-success-rate-trend"></a>
 
@@ -408,7 +408,7 @@ Having a low success rate can indicate that:
 * Snyk tests are failing due to security issues that can be prevented in local development or in the PR Check stages. Snyk recommends testing with the [Snyk IDE](../../developer-tools/snyk-ide-plugins-and-extensions/) plugin, using [Snyk PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) and enroll in a [Snyk Learn](../../discover-snyk/snyk-learn/) program.
 * The test success criteria are too strict. To explore this option further, Snyk recommends reviewing the test definitions of the organizations with the lowest success rate, as shown by the Adoption by Organizations widget. For more details about defining test success criteria, navigate to the [Failing of builds in Snyk CLI](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md) page.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (383).png" alt=""><figcaption><p>Test Success Rate Trend</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption><p>Test Success Rate Trend</p></figcaption></figure>
 
 #### Adoption by Organizations <a href="#adoption-by-organizations" id="adoption-by-organizations"></a>
 
@@ -440,7 +440,7 @@ You can execute the test on a specific repository branch in the table. The `test
 Hovering over the TESTED tag reveals the last test performed during the selected date range
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (384).png" alt=""><figcaption><p>Repository Test Summary</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (279).png" alt=""><figcaption><p>Repository Test Summary</p></figcaption></figure>
 
 ## Cloud Compliance Issues report
 
@@ -493,7 +493,7 @@ The adoption ranking section shows your organization and individual user engagem
 The user level adoption ranking is a great way to identify potential security champions who are proactively engaging in security education and training.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.34.12 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.34.12.png" alt=""><figcaption></figcaption></figure>
 
 ### Learning breakdown
 
@@ -604,7 +604,7 @@ The repository coverage widget provides an overview of the percentage of scanned
 
 Hover over any column to see how the coverage percentage is calculated.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (268).png" alt=""><figcaption><p>Repository Coverage</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption><p>Repository Coverage</p></figcaption></figure>
 
 ### Asset class breakdown
 
@@ -617,7 +617,7 @@ The asset class breakdown widget surfaces the distribution of repositories and c
 * Using the filters enables narrowing down the asset class distribution within specific applications or code owners, as well as focusing on active repositories or a set of assets based on the asset tags.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (267).png" alt=""><figcaption><p>Asset Class Breakdown</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption><p>Asset Class Breakdown</p></figcaption></figure>
 
 ### Top 10 technologies breakdown
 
@@ -651,7 +651,7 @@ You can use this widget to surface the quantity of repositories that are more or
 You can use the asset class filter to identify business-critical assets that are not being maintained. Click a specific slice to open the inventory page in a new browser tab where you can browse and learn more about those assets.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (266).png" alt=""><figcaption><p>Repository freshness</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (202).png" alt=""><figcaption><p>Repository freshness</p></figcaption></figure>
 
 ### Application context availability
 
@@ -671,7 +671,7 @@ The application context availability widget allows you to discover gaps in the c
 * Reviewing the unique values allows you to spot gaps in context. For example, you may realize that the number of unique code owners does not match the number of teams.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (264).png" alt=""><figcaption><p>Application Context Availability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (199).png" alt=""><figcaption><p>Application Context Availability</p></figcaption></figure>
 
 ### Asset source breakdown
 
@@ -684,7 +684,7 @@ The asset source breakdown widget visualizes the quantities of detected assets f
 * When asset inventory quantities seem incomplete or exceed expectations, this widget will help you discover which integrations should be examined and potentially configured differently.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (265).png" alt=""><figcaption><p>Asset source breakdown</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (200).png" alt=""><figcaption><p>Asset source breakdown</p></figcaption></figure>
 
 ## Risk exposure report
 

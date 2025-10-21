@@ -5,7 +5,7 @@ In the Eclipse plugin version 2.0.0 and later, Snyk has enhanced integrations wi
 * The security vulnerability is highlighted in your code, with the underline color and icon adjacent to the line number indicating the severity of the issue. You can see the vulnerability ID and detailed information by hovering over the highlighted code. The hover information is limited to the JavaEditor and GenericEditor, the latter being the default editor for plugins like Wild Web Developer.
 * Vulnerabilities are displayed in the **Problems** view, which allows for filtering and grouping issues. The line containing the issue is shown in the **Location** column. You can navigate to the issue in the code by clicking the issue in the list of problems.
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption><p>Snyk Open Source issue displayed in Eclipse</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Snyk Open Source issue displayed in Eclipse</p></figcaption></figure>
 
 In addition to this, the **Snyk Results** view offers detailed issue descriptions, including any available fixes. In this view, you can start and stop scans, filter issues, and more.&#x20;
 
@@ -15,4 +15,4 @@ To ignore an issue for 30 days, right-click the issue in the left panel of the *
 
 You can enable monitoring for a Project to help spot new issues as they are reported. To do this, right-click a folder in the left panel of the **Snyk** view and select **Monitor project**.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (328).png" alt=""><figcaption><p>Details for a Snyk Open Source issue dispilayed in the Snyk view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (235).png" alt=""><figcaption><p>Details for a Snyk Open Source issue dispilayed in the Snyk view</p></figcaption></figure>

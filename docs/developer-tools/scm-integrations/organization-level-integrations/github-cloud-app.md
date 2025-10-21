@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-If you are using Broker, see the [Universal Broker documentation](../../../enterprise-setup/snyk-broker/universal-broker/).
+If you are using Broker, see the [Universal Broker documentation](../../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/).
 
 If you want to use your own GitHub App, reach out to your Snyk account team.
 
@@ -47,7 +47,7 @@ Log in to your Snyk account and navigate to the Integrations section in the Snyk
 
 Select the **GitHub Cloud App** tile.
 
-<figure><img src="../../../.gitbook/assets/image (270).png" alt=""><figcaption><p>GitHub Cloud App tile on the Integrations page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (205).png" alt=""><figcaption><p>GitHub Cloud App tile on the Integrations page</p></figcaption></figure>
 
 In the confirmation modal, select **Configure GitHub Cloud App.**
 

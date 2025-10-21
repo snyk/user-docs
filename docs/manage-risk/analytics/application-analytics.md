@@ -25,7 +25,7 @@ Harnessing Application Analytics provides answers to questions such as:
 * Which applications and code owners bear the most risk in terms of accumulated critical and high issues, and how do they compare to others?
 * How many repositories exist without a clear association to an application or a code owner? And are new assets being associated as expected?
 
-<figure><img src="../../.gitbook/assets/image (220) (1).png" alt=""><figcaption><p>Application Analytics Overview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (168).png" alt=""><figcaption><p>Application Analytics Overview</p></figcaption></figure>
 
 ## Filters and views <a href="#filters-and-views" id="filters-and-views"></a>
 
@@ -125,7 +125,7 @@ In the Coverage section, you have information about the assets coverage.&#x20;
 
 The Coverage section is based on the scan category and is not impacted by the selected view ( Asset Class, Application, or Owner).
 
-<figure><img src="../../.gitbook/assets/image (223).png" alt=""><figcaption><p>The Coverage Section</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption><p>The Coverage Section</p></figcaption></figure>
 
 The following video presents an overview of the Application Analytics Coverage view from the Snyk Web UI.
 

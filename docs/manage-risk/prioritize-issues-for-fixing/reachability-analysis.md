@@ -50,7 +50,7 @@ To enable reachability analysis for your Organization and begin analyzing Projec
 2. Under **General**, select **Enable reachability analysis**.
 3. Confirm the selection to save changes.
 
-<figure><img src="../../.gitbook/assets/image (263).png" alt="Enable reachability at the Organization level"><figcaption><p>Enable reachability at the Organization level</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (198).png" alt="Enable reachability at the Organization level"><figcaption><p>Enable reachability at the Organization level</p></figcaption></figure>
 
 After reachability analysis is enabled, the analysis is done as part of scanning Projects.&#x20;
 
@@ -123,7 +123,7 @@ After you import  or test a Project using the Snyk UI, the Project is monitored 
 * Reachability badge - Allows you to quickly see on the issue card when a vulnerability is reachable.
 * Call path - Allows you to see the path from your code to the vulnerable code element to validate the result.
 
-<figure><img src="../../.gitbook/assets/image (147) (1).png" alt="Reachability filters, badge and call path on the Projects UI"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (110).png" alt="Reachability filters, badge and call path on the Projects UI"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
 
 ### Reachability analysis as part of the Risk Score
 
@@ -131,7 +131,7 @@ After you import  or test a Project using the Snyk UI, the Project is monitored 
 
 Risk Score is available on the Projects page and through the API and Reports.&#x20;
 
-<div data-full-width="false"><figure><img src="../../.gitbook/assets/image (175).png" alt="Reachability as part of the Risk Score"><figcaption><p>Reachability as part of the Risk Score</p></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/image (125).png" alt="Reachability as part of the Risk Score"><figcaption><p>Reachability as part of the Risk Score</p></figcaption></figure></div>
 
 {% hint style="info" %}
 [Priority score](priority-score.md), the legacy model preceding the Risk Score, also takes reachable vulnerabilities into account.&#x20;

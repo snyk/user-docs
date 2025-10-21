@@ -18,7 +18,7 @@ The funnel view is a visual representation of your application's issues and risk
 The OS Condition risk factor is now available only in the table view of the Issues UI.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (330).png" alt=""><figcaption><p>Issues - Funnel view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (237).png" alt=""><figcaption><p>Issues - Funnel view</p></figcaption></figure>
 
 ## Table view filters
 
@@ -47,4 +47,4 @@ When you filter based on the Asset class and an issue is found in two different 
 
 When you want to split out Open Source and Snyk Code issues, use a product filter.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (4).png" alt="Add filters option from the Issues page" width="303"><figcaption><p>Add filters option from the Issues page</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (5).png" alt="Add filters option from the Issues page" width="303"><figcaption><p>Add filters option from the Issues page</p></figcaption></figure></div>

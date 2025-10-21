@@ -45,7 +45,7 @@ You can find logs in the user's AppData directory:
 * From the main menu, navigate to **View** > **Output**.
 * In the Output panel, select the Snyk language server from the dropdown list to see its logs.
 
-<figure><img src="../../../.gitbook/assets/image (219) (1).png" alt=""><figcaption><p>Visual Studio Output window with the Snyk Language Server debug logs</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (167).png" alt=""><figcaption><p>Visual Studio Output window with the Snyk Language Server debug logs</p></figcaption></figure>
 
 ### Visual Studio versions
 
@@ -53,7 +53,7 @@ You can find logs in the user's AppData directory:
 
 Navigate to **Help** > **About Microsoft Visual Studio** to open the window with information about the IDE, including the version.
 
-<figure><img src="../../../.gitbook/assets/image (232).png" alt="Visual Studio verson information"><figcaption><p>Visual Studio verson information</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (177).png" alt="Visual Studio verson information"><figcaption><p>Visual Studio verson information</p></figcaption></figure>
 
 If you are communicating with Snyk Support, provide the version number highlighted at the top left in the screen image. This is the VS version.
 

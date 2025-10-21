@@ -20,7 +20,7 @@ The Import Log timeline will go back as far as the **most recent** applicable co
 
 For example, if the Organization was created before January 25th, 2023, Snyk cannot retrieve any logs before that date.
 
-<figure><img src="../../.gitbook/assets/2024-04-29_15-38-51 (1).png" alt=""><figcaption><p>The Import Log timeline</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-04-29_15-38-51.png" alt=""><figcaption><p>The Import Log timeline</p></figcaption></figure>
 
 The Import Log shows all imported targets listed in reverse chronological order, with the most recent import at the top of the page. Each import can be expanded using the dropdown, listing all the imported Projects created in Snyk at the time of import.
 

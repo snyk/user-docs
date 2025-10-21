@@ -12,8 +12,8 @@ In the Snyk Web UI, dashboard statistics are updated based on severity changes:
 
 License issues appear in the IDE.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (62).png" alt="License issues in an IDE"><figcaption><p>License issues in an IDE</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (48).png" alt="License issues in an IDE"><figcaption><p>License issues in an IDE</p></figcaption></figure></div>
 
 License issues are reported in PR Checks.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (148).png" alt="License issues in PR Checks"><figcaption><p>License issues in PR Checks</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (111).png" alt="License issues in PR Checks"><figcaption><p>License issues in PR Checks</p></figcaption></figure></div>

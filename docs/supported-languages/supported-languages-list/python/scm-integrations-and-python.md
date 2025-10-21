@@ -102,7 +102,7 @@ Poetry dev dependencies are not included in scans by default. To change this, mo
 3. Select **Edit settings** for **Python**.
 4. Enable or disable the **Scan Poetry dev dependencies** option under the **Poetry dev dependencies** settings.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt="Poetry dev dependency settings"><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt="Poetry dev dependency settings"><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
 
 ## SCM repositories and Pipenv
 
@@ -127,4 +127,4 @@ Pipenv dev dependencies are not included in scans by default. To change this, mo
 3. Select **Edit settings** for **Python**.
 4. Enable or disable the **Scan Pipenv dev dependencies** option under the **Pipenv** settings.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt="Pipenv dev dependency settings"><figcaption><p>Pipenv dev dependency settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt="Pipenv dev dependency settings"><figcaption><p>Pipenv dev dependency settings</p></figcaption></figure>

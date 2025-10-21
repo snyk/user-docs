@@ -21,7 +21,7 @@ An integrated SCM token can be generated for the following SCM integrations:
 
 ### GitHub and GitHub Enterprise SCM token
 
-**Format**: `GITHUB_TOKEN=` - a GitHub personal access token. \
+**Format**: `GITHUB_TOKEN=` - a GitHub personal access token.\
 **Scopes:** `repo, read:org` and `admin:repo_hook.`
 
 ### GitLab SCM token
@@ -33,8 +33,8 @@ GitLab account with `Maintainer` permission.
 
 ### Azure Repositories (TFS) SCM token
 
-**Format**: `AZURE_REPOS_TOKEN=` - an Azure Repos personal access token. \
-**Scopes**: `Custom defined`,  `Code:`  `Read & write`_._
+**Format**: `AZURE_REPOS_TOKEN=` - an Azure Repos personal access token.\
+**Scopes**: `Custom defined`, `Code:` `Read & write`_._
 
 ### Bitbucket Server/Data Center SCM token
 
@@ -69,7 +69,7 @@ Replace the following in the URL above:
 
 After the values are replaced, navigate to that URL. This will take you to the app creation screen in your GitHub Server instance with all the required details pre-filled. Afterward, scroll to the end of the page and click on the **Create GitHub App** button, ensuring that the **Any account** radio button is selected.
 
-<figure><img src="../../.gitbook/assets/image (290).png" alt=""><figcaption><p>Create GitHub App account setting selection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (218).png" alt=""><figcaption><p>Create GitHub App account setting selection</p></figcaption></figure>
 
 {% hint style="warning" %}
 On creation of your GitHub Server App you will see a`ClientId` and `AppId` - store these safely as these are your app's credentials and should be treated as secrets.
@@ -77,15 +77,15 @@ On creation of your GitHub Server App you will see a`ClientId` and `AppId` - sto
 
 After creating your GitHub Server App you will see a banner at the top of the page prompting you to create a private key. Click on it and create a private key for your app.
 
-<figure><img src="../../.gitbook/assets/image (298).png" alt=""><figcaption><p>Registration success message with a link for private key generation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (219).png" alt=""><figcaption><p>Registration success message with a link for private key generation</p></figcaption></figure>
 
 Generating a private key will initiate a download of a `.pem` file; this should be treated as a secret and kept safe.
 
 Your GitHub Server App is now ready to be installed against repositories in your Snyk Organization. You can scroll to the top of the same page and select **Install App** from the left-hand panel. Choose the newly created app and click on the **Install** button to the right.
 
-<figure><img src="../../.gitbook/assets/image (304).png" alt=""><figcaption><p>Install the GitHub App in your repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (221).png" alt=""><figcaption><p>Install the GitHub App in your repositories</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (334).png" alt="" width="563"><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (241).png" alt="" width="563"><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
 
 Choose where you want to install the app in your GitHub organization. It can be installed against specific repositories, or all of them in your GitHub organization.
 
@@ -97,7 +97,7 @@ On installation of the app you will be assigned an `InstallationID`. These are t
 
 ### Create the Universal Broker connection for your GitHub Server App
 
-Before the GitHub Server App can be used with the Universal Broker, you must create a connection of the `github-server-app` type using the `snyk-broker-config` tool. For more details, see the  [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/) documentation. After the connection is created, it can be integrated with one or more Organization(s) of your choice.
+Before the GitHub Server App can be used with the Universal Broker, you must create a connection of the `github-server-app` type using the `snyk-broker-config` tool. For more details, see the [Universal Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/) documentation. After the connection is created, it can be integrated with one or more Organization(s) of your choice.
 
 To set up the integration you will need the following:
 
@@ -112,8 +112,8 @@ When you have these prerequisites, use the following commands
 * `snyk-broker-config workflows connections create,`choosing the `github-server-app` option and providing the information you are prompted for in the workflow.
 * `snyk-broker-config workflows connections integrate`to integrate the newly created connection to the Organization of your choice, pasting the org ID when you are prompted.
 
-Visit the integrations page in Snyk to see that the integration has been configured.&#x20;
+Visit the integrations page in Snyk to see that the integration has been configured.
 
-<figure><img src="../../.gitbook/assets/image (306).png" alt=""><figcaption><p>A successful GitHub Server App integration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (222).png" alt=""><figcaption><p>A successful GitHub Server App integration</p></figcaption></figure>
 
-See the [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/) documentation for more details.
+See the [Universal Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/) documentation for more details.

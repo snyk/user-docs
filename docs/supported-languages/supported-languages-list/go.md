@@ -131,7 +131,7 @@ To enable full source code analysis, adjust your settings as follows:
 3. Select **Edit settings** for **Go**.
 4. Toggle **Enable full source code analysis** on or off.
 
-<figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption><p>Enable full source code analysis</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption><p>Enable full source code analysis</p></figcaption></figure>
 
 For more details on levels of access to your repository required by different Snyk features, see [How Snyk handles your data](../../snyk-data-and-governance/how-snyk-handles-your-data.md).
 

@@ -62,12 +62,12 @@ Typically research and development engineering managers do this task because the
 2. Click the **Connect security containers** button.
 3.  Click on the Snyk application and then select **Connect security containers**.
 
-    <figure><img src="../../.gitbook/assets/image (510).png" alt="Connect security containers in Jira via the Security tab and panels"><figcaption><p>Connect security containers in Jira via the Security tab and panels</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (366).png" alt="Connect security containers in Jira via the Security tab and panels"><figcaption><p>Connect security containers in Jira via the Security tab and panels</p></figcaption></figure>
 
 
 4. Select your Snyk Organization from the list, and choose the Snyk Targets to connect to Jira.
 
-<figure><img src="../../.gitbook/assets/image (509).png" alt="Connect a security container in Jira via the Security panel" width="351"><figcaption><p>Connect a security container in Jira via the Security panel</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (365).png" alt="Connect a security container in Jira via the Security panel" width="351"><figcaption><p>Connect a security container in Jira via the Security panel</p></figcaption></figure>
 
 Developers can now use the security feature to view recent vulnerabilities found in the linked code repositories and start [creating Jira issues](snyk-security-in-jira-cloud-integration.md#create-a-jira-issue-from-a-vulnerability) from those vulnerabilities or [linking them to existing Jira issues](snyk-security-in-jira-cloud-integration.md#link-an-existing-jira-issue-to-a-vulnerability).
 
@@ -88,7 +88,7 @@ To delete a target or repository from Snyk that you have connected to Jira, you 
 3. Click on the Snyk application
 4. Select the security container you want to remove from the list using the **Remove connection** option
 
-<figure><img src="../../.gitbook/assets/image (511).png" alt="Remove connected security containers in the Jira Security panel" width="349"><figcaption><p>Remove connected security containers in the Jira Security panel</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (367).png" alt="Remove connected security containers in the Jira Security panel" width="349"><figcaption><p>Remove connected security containers in the Jira Security panel</p></figcaption></figure>
 
 ## Automate ticket creation in Jira
 

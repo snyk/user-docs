@@ -28,7 +28,7 @@ This example shows setting up an Entra ID (formerly Azure AD) Enterprise Applica
     <figure><img src="../../../../.gitbook/assets/8 (1) (1).png" alt="Select SAML"><figcaption><p>Select SAML</p></figcaption></figure>
 9.  Click **Edit** under **Basic SAML configuration**.
 
-    <figure><img src="../../../../.gitbook/assets/9 (1) (1).png" alt="Edit basic SAML configuration"><figcaption><p>Edit basic SAML configuration</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/9 (2).png" alt="Edit basic SAML configuration"><figcaption><p>Edit basic SAML configuration</p></figcaption></figure>
 10. Add the Identity (Entity ID) and reply URL (Assertion Consumer Service URL) you obtained from Snyk and click **Save**; then close the edit window.
 
     <figure><img src="../../../../.gitbook/assets/10.png" alt="Entity ID and Assertion Consumer Service URL"><figcaption><p>Entity ID and Assertion Consumer Service URL</p></figcaption></figure>
@@ -36,7 +36,7 @@ This example shows setting up an Entra ID (formerly Azure AD) Enterprise Applica
 
     <figure><img src="../../../../.gitbook/assets/11 (1).png" alt="Login URL"><figcaption><p>Login URL</p></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/1 (4).png" alt="Sign in URL in Snyk portal"><figcaption><p>Sign in URL in Snyk portal</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1 (3).png" alt="Sign in URL in Snyk portal"><figcaption><p>Sign in URL in Snyk portal</p></figcaption></figure>
 12. Return to Entra ID and click **Download** next to **Certificate (Base64)**.
 
     <figure><img src="../../../../.gitbook/assets/13.png" alt="Download SAML Certificate (Base 64)"><figcaption><p>Download SAML Certificate (Base 64)</p></figcaption></figure>

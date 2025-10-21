@@ -14,7 +14,7 @@ Risk score remains the same over time if the contributing factors do not change.
 
 Since real risk is scarce, you should expect a significant drift in the distribution of scores, as can be seen in this example of Project score distributions:&#x20;
 
-<div data-full-width="false"><figure><img src="../../.gitbook/assets/image (18).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/image (15).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure></div>
 
 Risk Score replaces the Priority Score directly. See the [priority score docs](priority-score.md) for how to interact with the Risk Score in the UI, API, and Reports, where the Risk Score is now introduced when enabled.&#x20;
 
@@ -34,11 +34,11 @@ In the API, the relevant fields are still named with `priority`. When Risk Score
 
 When looking at the Issue card information, hover over the score to see the type of score (Priority or Risk Score) that is being displayed. The Risk Score tooltip provides information about the subscore and the Risk Factors contributing to the score.
 
-<div data-full-width="false"><figure><img src="../../.gitbook/assets/image (166).png" alt="Risk Score tooltip" width="563"><figcaption><p>Risk Score tooltip showing Impact and Likelihood</p></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/image (117).png" alt="Risk Score tooltip" width="563"><figcaption><p>Risk Score tooltip showing Impact and Likelihood</p></figcaption></figure></div>
 
 ## About the Risk Score model&#x20;
 
-<figure><img src="../../.gitbook/assets/matrix (2) (2).png" alt="he Snyk Risk Score Model"><figcaption><p>The Snyk Risk Score Model</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/matrix.png" alt="he Snyk Risk Score Model"><figcaption><p>The Snyk Risk Score Model</p></figcaption></figure>
 
 The model that powers the Risk Score applies automatic risk analysis for each security issue based on the potential impact and likelihood of exploitability.
 

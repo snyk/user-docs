@@ -14,17 +14,17 @@ To enable Snyk Language Server debug logs in the JetBrains IDEs, change the log 
 
 Press the Shift key twice quickly and select the **Actions** tab. Then search for **Debug**. Alternatively, select the Debug Log Settings in the menu (not available in JetBrains Rider).
 
-<figure><img src="../../../.gitbook/assets/image (234).png" alt="Actions tab"><figcaption><p>Use Actions tab to open Debug Log Settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (179).png" alt="Actions tab"><figcaption><p>Use Actions tab to open Debug Log Settings</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (235).png" alt="Search for action"><figcaption><p>Go to Custom Debug Log Configuration from Debug Log Settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (180).png" alt="Search for action"><figcaption><p>Go to Custom Debug Log Configuration from Debug Log Settings</p></figcaption></figure>
 
 Entering `Snyk Language Server` on its own line will enable debug logging of the Language Server. Restart the IDE to reload the Snyk Language Server with the new debug level logging enabled.
 
-<figure><img src="../../../.gitbook/assets/image (236).png" alt="Snyk Language Server configuration"><figcaption><p>Snyk Language Server configuration set to Debug Mode in the Custom Debug Log Configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (181).png" alt="Snyk Language Server configuration"><figcaption><p>Snyk Language Server configuration set to Debug Mode in the Custom Debug Log Configuration</p></figcaption></figure>
 
 To view the debug logs, navigate to **Help** > **Show Log** in the Finder (Mac) or **Show Log** in the Explorer (Windows). Then open the files idea.log, **idea.1.log**, and so on, in the folder.
 
-<figure><img src="../../../.gitbook/assets/image (233).png" alt="Show log in Finder" width="323"><figcaption><p>Opens the Intellij logs folder</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (178).png" alt="Show log in Finder" width="323"><figcaption><p>Opens the Intellij logs folder</p></figcaption></figure>
 
 ## Trusted root certificates issues
 

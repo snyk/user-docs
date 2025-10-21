@@ -38,7 +38,7 @@ By default, all levels are selected. You must select at least one.
 
 Snyk severity icons have the following meaning:
 
-| ![](<../../../.gitbook/assets/image (67).png>) Critical severity                                                                                                                                                                 | May allow attackers to access sensitive data and run code on your application.                                                               |
+| ![](<../../../.gitbook/assets/image (50).png>) Critical severity                                                                                                                                                                 | May allow attackers to access sensitive data and run code on your application.                                                               |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](<../../../.gitbook/assets/image (10) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png>) High severity | May allow attackers to access sensitive data on your application.                                                                            |
 | ![](<../../../.gitbook/assets/image (116) (1) (2).png>) Medium severity                                                                                                                                                          | May allow attackers under some conditions to access sensitive data on your application.                                                      |
@@ -79,7 +79,7 @@ In plugin version 2.12.0 and later, you can choose any folder as your base for s
 
 To apply the filter and see only the new issues, use the toggle in the summary panel.
 
-<figure><img src="../../../.gitbook/assets/image (369).png" alt=""><figcaption><p>Summary panel toggle showing the the total number of issues and the number of issues in the checked out branch or current folder or new issues only</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (267).png" alt=""><figcaption><p>Summary panel toggle showing the the total number of issues and the number of issues in the checked out branch or current folder or new issues only</p></figcaption></figure>
 
 You can also enable the net new issues feature in the [scan configuration](run-an-analysis-with-the-jetbrains-plugin.md#scan-configuration) settings. \
 \

@@ -22,6 +22,6 @@ Snyk scans your Kubernetes configuration files in JSON and YAML format when they
 * If needed, review and adjust the **Infrastructure as code** **Severity settings** on the Kubernetes tab in the example.\
   Check to select the file types to scan, CloudFormation, Terraform, or both, and from the pulldown selection, choose the severity level for each Deployment.
 
-<figure><img src="../../../../.gitbook/assets/image (88).png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (67).png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>
 
 The number of tests you can run per product is based on your account plan. For details, see the [plans and pricing](https://snyk.io/plans/) page.

@@ -23,7 +23,7 @@ If you re-imported the repository in order to import the configuration files, th
 * Click the Project link you are interested in to view the scan results and to correct your configuration files accordingly.\
   Projects that were created from external dependencies will also be scanned, and issues will be shown.
 
-<figure><img src="../../../../.gitbook/assets/image (162) (2).png" alt="Helm Charts Project detail"><figcaption><p>Helm Charts Project detail</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (114).png" alt="Helm Charts Project detail"><figcaption><p>Helm Charts Project detail</p></figcaption></figure>
 
 ## Templating charts and scanning Kubernetes manifests
 

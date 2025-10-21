@@ -77,9 +77,9 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 The following examples shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../../.gitbook/assets/image (512) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (372).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (513) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (373).png" alt="" width="563"><figcaption></figcaption></figure>
 
 For additional MCP configuration options on Claude Code and troubleshooting, consult the official [Claude Code MCP documentation](https://docs.anthropic.com/en/docs/claude-code/mcp).
 
@@ -87,7 +87,7 @@ For additional MCP configuration options on Claude Code and troubleshooting, con
 
 As a one-time setup, you may need to authenticate and trust the current Project directory.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (514) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (374).png" alt=""><figcaption></figcaption></figure>
 
 ## Examples
 
@@ -103,11 +103,11 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Claude Code indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../../.gitbook/assets/image (516) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (378).png" alt=""><figcaption></figcaption></figure>
 
 Claude Code is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found:
 
-<figure><img src="../../../.gitbook/assets/image (517) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (380).png" alt=""><figcaption></figcaption></figure>
 
 ### "Secure at inception" rules
 
@@ -127,7 +127,7 @@ Repeat this process until no issues are found.
 
 Append the following contents to the rules file at `CLAUDE.md`:
 
-<figure><img src="../../../.gitbook/assets/image (518) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (381).png" alt=""><figcaption></figcaption></figure>
 
 {% code title="CLAUDE.md" overflow="wrap" %}
 ```

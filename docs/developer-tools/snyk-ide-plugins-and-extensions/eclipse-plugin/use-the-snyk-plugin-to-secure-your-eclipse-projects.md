@@ -12,7 +12,7 @@ All of the issues found by Snyk are now integrated natively with Eclipse flows. 
 
 In addition, starting with version 3+, Snyk provides a custom UI in the Snyk Tab, that displays issue details:
 
-<figure><img src="../../../.gitbook/assets/image (322).png" alt=""><figcaption><p>Issue details in Eclipse plugin</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (231).png" alt=""><figcaption><p>Issue details in Eclipse plugin</p></figcaption></figure>
 
 ## Net new issues versus all issues
 
@@ -25,13 +25,13 @@ The logic uses your local Git repository or any folder to compare the current fi
 To apply the filter and see only the new issues, use the **total**/**new** toggle in the summary panel, or apply the **Show only Net New Issues filter** from the **View** menu (under **Issues Status**).\
 
 
-<figure><img src="../../../.gitbook/assets/image (371).png" alt=""><figcaption><p>Net new issues filter enabled after clicking on the total/new issues toggle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (268).png" alt=""><figcaption><p>Net new issues filter enabled after clicking on the total/new issues toggle</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (327).png" alt=""><figcaption><p>Activate Net new issues in the dot menu of the Snyk View</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (234).png" alt=""><figcaption><p>Activate Net new issues in the dot menu of the Snyk View</p></figcaption></figure>
 
 For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as illustrated in the screen image that follows:
 
-<figure><img src="../../../.gitbook/assets/image (373).png" alt=""><figcaption><p>No new issues introduced in a newly created branch</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (269).png" alt=""><figcaption><p>No new issues introduced in a newly created branch</p></figcaption></figure>
 
 The base branch is usually automatically determined for each Git repository.&#x20;
 
@@ -41,7 +41,7 @@ You may change the base branch or base folder by following these steps, as illus
 2. Click on the top-level node in the Issues tree to change the branch or directory.
 3. Use the dropdown selection to choose any branch or reference folder.
 
-<figure><img src="../../../.gitbook/assets/image (374).png" alt=""><figcaption><p>Changing reference branch or reference directory for calculation net new issues</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (270).png" alt=""><figcaption><p>Changing reference branch or reference directory for calculation net new issues</p></figcaption></figure>
 
 \
 Continue by following the instructions on the page for the type of scan you are doing:

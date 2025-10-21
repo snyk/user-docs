@@ -45,5 +45,5 @@ You can set the following global configuration settings in the Snyk preferences.
 
 You can specify Project-specific scan settings on the **Snyk** page in the **Project Properties**. To open the **Project Properties** page, right-click the root folder of your Project in either the **Package Explorer** or **Project Explorer** view, then select **Properties** from the context menu.
 
-<figure><img src="../../../.gitbook/assets/image (329).png" alt=""><figcaption><p>Snyk Project-specific properties page, allowing entry of scan parameters for the Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (236).png" alt=""><figcaption><p>Snyk Project-specific properties page, allowing entry of scan parameters for the Project</p></figcaption></figure>
 

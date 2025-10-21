@@ -15,7 +15,7 @@ See the following for detailed permission requirements:
 ### GitHub and GitHub Enterprise permissions requirements&#x20;
 
 {% hint style="info" %}
-For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/) and [Integrated SCM tokens for Snyk Broker](scm-integrations-and-snyk-broker.md#integrated-scm-tokens-for-classic-broker).
+For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/) and [Integrated SCM tokens for Snyk Broker](scm-integrations-and-snyk-broker.md#integrated-scm-tokens-for-classic-broker).
 {% endhint %}
 
 The Snyk GitHub Enterprise integration is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub and the access defined for the Personal Access Token (PAT) on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.

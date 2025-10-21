@@ -28,7 +28,7 @@ The **steps** in **configuring App role**s follow.
     Enable the app role.\
     When you are finished, select **Apply**.\\
 
-    <figure><img src="../../../../../.gitbook/assets/image (208).png" alt="Create app role" width="285"><figcaption><p>Create app role</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (157).png" alt="Create app role" width="285"><figcaption><p>Create app role</p></figcaption></figure>
 4.  In Entra ID, select your Enterprise Application.
 
     <figure><img src="../../../../../.gitbook/assets/image (3) (3).png" alt="Select Enterprise Application in Entra ID"><figcaption><p>Select Enterprise Application in Entra ID</p></figcaption></figure>
@@ -38,12 +38,12 @@ The **steps** in **configuring App role**s follow.
     <figure><img src="../../../../../.gitbook/assets/image (4) (1).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
 6.  Select **Users and groups**; from the dropdown, select a role and select **Assign**.\\
 
-    <figure><img src="../../../../../.gitbook/assets/image (209).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (158).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
 7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.\\
 
     Note that it is also possible to add multiple Snyk roles to one App role, as the payload can be interpreted as a comma-separated string. However, this can not be used in conjunction with multiple App roles, as only one syntax will be respected (string or array).
 
-    <figure><img src="../../../../../.gitbook/assets/image (210).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (159).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
 8. If you have configured a SAML connection, add a custom claim to pass the roles array in the SAML payload to Snyk. Select **Single sign-on** in the left-hand menu.
 9.  Select **Edit** next to **Attributes and Claims.**
 

@@ -69,7 +69,7 @@ After you finish setting up an integration, you can see the following connection
 
 If you encounter any of the failed statuses, check the Connection failure details list available on the integration card.
 
-<figure><img src="../.gitbook/assets/image (335).png" alt=""><figcaption><p>Integration card - Connection failure details list</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption><p>Integration card - Connection failure details list</p></figcaption></figure>
 
 ### Snyk AppRisk and Essentials integrations ecosystem
 
@@ -91,7 +91,7 @@ See the [Group-level integrations](../developer-tools/scm-integrations/group-lev
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
 
-<figure><img src="../.gitbook/assets/image (190).png" alt="AppRisk - Integration status" width="375"><figcaption><p>Integration card - Integration status</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (138).png" alt="AppRisk - Integration status" width="375"><figcaption><p>Integration card - Integration status</p></figcaption></figure>
 
 ### Using Snyk Broker
 
@@ -102,16 +102,16 @@ Enable the Snyk Essentials flag in your Snyk Broker deployment environment befor
 {% endhint %}
 
 * GitHub - install and configure Snyk Broker
-  * [using Docker](../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/github-install-and-configure-using-docker.md#docker-run-command-to-set-up-a-broker-client-for-github)
+  * [using Docker](../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/github-install-and-configure-using-docker.md#docker-run-command-to-set-up-a-broker-client-for-github)
   * [using Helm](../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/github-install-and-configure-using-helm.md)
   * [environment variables](../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/github-environment-variables-for-snyk-broker.md)
 * GitHub Enterprise - install and configure Snyk Broker:
-  * [using Docker](../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md#docker-run-command-to-set-up-a-broker-client-for-github-enterprise)
+  * [using Docker](../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md#docker-run-command-to-set-up-a-broker-client-for-github-enterprise)
   * [using Helm](../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-helm.md)
   * [environment variables](../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-environment-variables-for-snyk-broker.md)
 * BitBucket - install and configure Snyk Broker:
-  * [using Docker](../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-docker.md#docker-run-command-to-set-up-a-broker-client-for-bitbucket)
-  * [using Helm](../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-helm.md)
+  * [using Docker](../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-docker.md#docker-run-command-to-set-up-a-broker-client-for-bitbucket)
+  * [using Helm](../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-helm.md)
   * [environment variables](../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker-basic-auth.md)
 * GitLab - install and configure Snyk Broker:
   * [using Docker](../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/gitlab-prerequisites-and-steps-to-install-and-configure-broker/gitlab-install-and-configure-using-docker.md#docker-run-command-to-set-up-a-broker-client-for-gitlab)

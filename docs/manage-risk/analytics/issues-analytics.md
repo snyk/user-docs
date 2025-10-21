@@ -93,7 +93,7 @@ There may be a repository that has not been modified in months or years, but bec
 
 Issues are categorized as Non-preventable if the issue is detected within seven days of becoming known to Snyk. This could include a new vulnerability in a dependency already in use or a vulnerability disclosed in the same time frame as the dependency was introduced to the Project. While it is possible that introducing an issue could have been prevented within the seven-day period, this definition provides some buffer for scenarios where code takes longer to get through the deployment process or for weekly recurring tests.
 
-<figure><img src="../../.gitbook/assets/image (213) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
 
 ### Other new issues
 

@@ -16,7 +16,7 @@ The diagram above represents the objects listed in the data dictionary as a data
 * [Usage events](data-share-data-dictionary.md#usage-events)
 * [Jira issues](data-share-data-dictionary.md#issue-jira-issues)
 
-<figure><img src="../../../.gitbook/assets/image (393).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (287).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary</p></figcaption></figure>
 
 ### Groups
 

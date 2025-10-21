@@ -26,7 +26,7 @@ Click on the 'Not tested' section of the first pie chart on the overview page, o
 
 The Class column is available for each repository. This class is meant to reflect the business criticality of the asset from A (most critical) to D (least critical). Try setting a few of your most important repos manually to Class A. This attribute can be used in reporting to help focus on issues from your company’s most important repositories.
 
-![](<../../../../.gitbook/assets/image (432).png>)\
+![](<../../../../.gitbook/assets/image (314).png>)\
 
 
 While you can set the class manually, you can also create a policy to automatically classify the repository. For example, Snyk ingests metadata like GitHub Topics and Custom Properties that can be used in a policy.

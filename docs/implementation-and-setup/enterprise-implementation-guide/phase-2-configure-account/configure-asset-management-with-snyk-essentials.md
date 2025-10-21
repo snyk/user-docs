@@ -110,10 +110,10 @@ You can use the Coverage Gap filter to:
 
 *   &#x20;Find any asset that does not comply with the Set coverage control policy requirements:&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (194).png" alt="Use the Coverage gap filter to Find any asset that is out of policy"><figcaption><p>Coverage gap - Use case 1</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (142).png" alt="Use the Coverage gap filter to Find any asset that is out of policy"><figcaption><p>Coverage gap - Use case 1</p></figcaption></figure>
 *   Find any assets that do not meet the coverage requirements for Snyk Open Source or Snyk Code, or both of them simultaneously:&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (195).png" alt="Use the Coverage gap filter to Find any asset that is out of policy for Snyk Open Source OR Snyk Code"><figcaption><p>Coverage gap - Use case 2</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (144).png" alt="Use the Coverage gap filter to Find any asset that is out of policy for Snyk Open Source OR Snyk Code"><figcaption><p>Coverage gap - Use case 2</p></figcaption></figure>
 
 #### Tags <a href="#hardbreak-tags" id="hardbreak-tags"></a>
 

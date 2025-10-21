@@ -23,7 +23,7 @@ Data synchronization may take up to two hours after receiving the **Connected** 
 
 After you finish setting up an integration, you can see it listed with a Connected status.
 
-<figure><img src="../.gitbook/assets/image (310).png" alt=""><figcaption><p>Third-party integration card - Connected status</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (223).png" alt=""><figcaption><p>Third-party integration card - Connected status</p></figcaption></figure>
 
 ## Veracode setup guide
 
@@ -62,7 +62,7 @@ Ensure you are adding a custom field called repoURL:
 7. Click the **Done** button.
 8. When the connection is established, the status of the Veracode integration is changed to **Connected**.
 
-<figure><img src="../.gitbook/assets/image (271).png" alt=""><figcaption><p>Veracode - Setup screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (206).png" alt=""><figcaption><p>Veracode - Setup screen</p></figcaption></figure>
 
 ## Checkmarx setup guide
 
@@ -101,7 +101,7 @@ After you have installed and configured Snyk Broker for AppRisk and have success
 7. Click the **Done** button.
 8. When the connection is established, the status of the Checkmarx integration is changed to **Connected**.
 
-<figure><img src="../.gitbook/assets/image (272).png" alt=""><figcaption><p>Checkmarx - Setup screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (207).png" alt=""><figcaption><p>Checkmarx - Setup screen</p></figcaption></figure>
 
 ## SonarQube setup guide
 
@@ -126,7 +126,7 @@ SonarQube for Snyk AppRisk is in Early Access and available only with Snyk Enter
 * Click the **Done** button.
 * When the connection is established, the status of the SonarQube integration is changed to **Connected**.
 
-<figure><img src="../.gitbook/assets/image (273).png" alt=""><figcaption><p>SonarQube - Setup screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (208).png" alt=""><figcaption><p>SonarQube - Setup screen</p></figcaption></figure>
 
 ## Nightfall setup guide
 
@@ -268,7 +268,7 @@ Comply with the following steps before integrating Dynatrace with Snyk AppRisk:
 After the Dynatrace runtime data becomes available from the runtime integration, it will appear in Snyk AppRisk within a few hours.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (274).png" alt=""><figcaption><p>Dynatrace - Setup screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (209).png" alt=""><figcaption><p>Dynatrace - Setup screen</p></figcaption></figure>
 
 ## Sysdig setup guide
 
@@ -321,7 +321,7 @@ The created **Service Account** must be under **Sysdig Secure**, not **Sysdig Mo
 After the Sysdig runtime data becomes available from the runtime integration, it will appear in Snyk AppRisk within a few hours.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (275).png" alt=""><figcaption><p>Sysdig - Setup screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (210).png" alt=""><figcaption><p>Sysdig - Setup screen</p></figcaption></figure>
 
 ## Crowdstrike setup guide
 

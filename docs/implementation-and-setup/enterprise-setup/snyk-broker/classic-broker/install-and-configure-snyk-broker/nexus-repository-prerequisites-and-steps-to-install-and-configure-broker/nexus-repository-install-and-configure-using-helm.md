@@ -15,7 +15,7 @@ When installing, you must add a command in your script to set the `brokerServerU
 
 ## Nexus 3 Helm installation
 
-Before installing, review the [prerequisites](./) and the general instructions for installation using [Helm](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md).
+Before installing, review the [prerequisites](./) and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
 
 To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
 
@@ -42,7 +42,7 @@ You can verify that the Broker is running by looking at the settings for your br
 
 ## Nexus 2 Helm installation
 
-Before installing, review the [prerequisites](./) and the general instructions for installation using [Helm](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md).
+Before installing, review the [prerequisites](./) and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
 
 To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
 

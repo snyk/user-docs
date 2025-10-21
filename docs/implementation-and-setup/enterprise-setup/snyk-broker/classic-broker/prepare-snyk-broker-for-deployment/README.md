@@ -15,8 +15,8 @@ The following are prerequisites for using Snyk Broker in any environment:
 * Network access: an outbound TLS (443) to https://broker.snyk.io AND https://api.snyk.io (or regional equivalent) that is also allowed by any firewalls installed on your network
 * A Snyk account
 * Self-enabled Broker integration through the Snyk API or Broker enabled by contacting [Snyk Support](https://support.snyk.io)
-* A unique UUID token called a Broker token. See [Obtain the tokens required to set up a Snyk Broker](../../../../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md).
-* An SCM token or password. See [Obtain the tokens required to set up a Snyk Broker](../../../../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md). Snyk Broker does not support authentication with the mTLS method.
+* A unique UUID token called a Broker token. See [Obtain the tokens required to set up a Snyk Broker](obtain-the-tokens-required-to-set-up-snyk-broker.md).
+* An SCM token or password. See [Obtain the tokens required to set up a Snyk Broker](obtain-the-tokens-required-to-set-up-snyk-broker.md). Snyk Broker does not support authentication with the mTLS method.
 * Docker configured to pull images from Docker Hub to install with Docker.
 
 ## Prepare hosts for installation of Snyk Broker
@@ -52,4 +52,4 @@ Every integration has a specific Broker token assigned to it. An integration to 
 * One Broker for the SCM with the additional environment variable `-e ACCEPT_CODE`
 * One Broker for the Container Registry and one Broker Container Registry agent
 
-Continue by [obtaining the tokens](../../../../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md) required for your deployment.
+Continue by [obtaining the tokens](obtain-the-tokens-required-to-set-up-snyk-broker.md) required for your deployment.

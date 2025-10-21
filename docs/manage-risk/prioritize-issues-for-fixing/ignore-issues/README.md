@@ -37,7 +37,7 @@ You can select **Not vulnerable** for any issue that is not exploitable at the t
 
 If you select **Ignore temporarily,** then you can check the **Until fix is available** checkbox:
 
-<figure><img src="../../../.gitbook/assets/image (247).png" alt="Ignore temporarily"><figcaption><p>Ignore temporarily</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (185).png" alt="Ignore temporarily"><figcaption><p>Ignore temporarily</p></figcaption></figure>
 
 This is checked by default if no fix is available for the issue. The vulnerability resurfaces as soon as Snyk has a fix for it, and optionally you can provide additional details on why you are ignoring the issue.
 
@@ -49,7 +49,7 @@ An issue ignored in an Open Source or Code Project in the Snyk web UI will be re
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allows you to edit the ignore or unignore the issue.
 
-<figure><img src="../../../.gitbook/assets/image (248).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (186).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
 
 For more information, see the training: [Ignoring issues](https://learn.snyk.io/lesson/ignoring-issues/).
 
@@ -82,11 +82,11 @@ Ignores for Open Source issues found in a CLI or CI/CD run are synchronized with
 
 Refer to the following example. Issues are identified as **CI/CLI**, meaning the Project was imported from `snyk monitor`. The issue is `npmconf`. It is **Not vulnerable,** and the user can select **Ignore**.
 
-<figure><img src="../../../.gitbook/assets/image (249).png" alt="Project imported by snyk monitor, ignore set in the Web UI"><figcaption><p>Project imported by <code>snyk monitor</code>, ignore set in the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (187).png" alt="Project imported by snyk monitor, ignore set in the Web UI"><figcaption><p>Project imported by <code>snyk monitor</code>, ignore set in the Web UI</p></figcaption></figure>
 
 The following shows `snyk test` results before an ignore is set in the Web UI:
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
 
 The following shows `snyk test` results after an ignore is set in the Web UI:
 

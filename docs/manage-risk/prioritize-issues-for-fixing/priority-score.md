@@ -14,7 +14,7 @@ You can view Priority Scores in Projects views, Reports, and the API.
 
 There are no settings related to the Priority Score; they are read-only and cannot be hidden. An example follows of Priority Scores displayed in a Project view.
 
-<figure><img src="../../.gitbook/assets/image (224).png" alt="Snyk Priority Score in a Project view"><figcaption><p>Snyk Priority Score in a Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (170).png" alt="Snyk Priority Score in a Project view"><figcaption><p>Snyk Priority Score in a Project view</p></figcaption></figure>
 
 ## View Priority Score for an issue
 

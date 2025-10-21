@@ -11,4 +11,4 @@
 
 Verify that Snyk Essentials is configured by navigating to the Group level > Integrations. If not set up yet, follow the in-product instructions for your SCM(s).
 
-<figure><img src="../../../../.gitbook/assets/image (422).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (305).png" alt=""><figcaption></figcaption></figure>

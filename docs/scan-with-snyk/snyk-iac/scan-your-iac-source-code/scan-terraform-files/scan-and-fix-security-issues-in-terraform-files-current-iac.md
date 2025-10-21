@@ -19,7 +19,7 @@ Every time a repository is scanned, every Terraform file is imported as a separa
 
 If you re-imported the repository in order to import the Terraform files, then Snyk imports and re-tests the already imported application manifest files, displaying the test time as "now".
 
-<figure><img src="../../../../.gitbook/assets/image (84).png" alt="List of Terraform Projects"><figcaption><p>List of Terraform Projects</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (63).png" alt="List of Terraform Projects"><figcaption><p>List of Terraform Projects</p></figcaption></figure>
 
 * Click the link for the Project of interest to you to view the scan results and to help correct your Terraform code:
 

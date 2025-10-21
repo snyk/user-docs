@@ -61,7 +61,7 @@ Snyk produces advanced [security reports](../../../manage-risk/reporting/legacy-
 
 The example that follows shows a Project-level security report.
 
-<figure><img src="../../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1) (1).png" alt="An example of a Project-level security report"><figcaption><p>An example of a Project-level security report</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt="An example of a Project-level security report"><figcaption><p>An example of a Project-level security report</p></figcaption></figure>
 
 #### Project monitoring and automatic fix Pull Requests
 

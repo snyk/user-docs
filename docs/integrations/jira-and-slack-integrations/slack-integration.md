@@ -16,7 +16,7 @@ You can get the following alerts in Slack:
 
 A newly disclosed vulnerability:
 
-<figure><img src="../../.gitbook/assets/image (23) (3).png" alt="Newly disclosed vulnerability notification"><figcaption><p>Newly disclosed vulnerability notification</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (1).png" alt="Newly disclosed vulnerability notification"><figcaption><p>Newly disclosed vulnerability notification</p></figcaption></figure>
 
 A new upgrade or patch is available for a vulnerability that you previously ignored or patched.
 

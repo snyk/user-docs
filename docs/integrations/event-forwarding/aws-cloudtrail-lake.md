@@ -37,7 +37,7 @@ This integration supports both use cases:
 
 To get started setting up a CloudTrail Lake integration, whether for a group or a single Organization, follow the setup [instructions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-integration.html) in the AWS CloudTrail Lake documentation, choosing Snyk as the integration type.
 
-<div align="left"><figure><img src="../../.gitbook/assets/aws-ctl-1 (1).png" alt="Choose Snyk, Add integration for Snyk"><figcaption><p>Choose Snyk, Add integration for Snyk</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/aws-ctl-1.png" alt="Choose Snyk, Add integration for Snyk"><figcaption><p>Choose Snyk, Add integration for Snyk</p></figcaption></figure></div>
 
 During the setup, you must supply an **External ID** for the integration. The value for this ID depends on whether you are setting up the integration for a single Snyk Organization, or for a Snyk Group that includes all child Organizations.
 
@@ -130,7 +130,7 @@ Navigate to the [AWS CloudTrail Lake settings](https://app.snyk.io/manage/integr
 
 Select **Remove integration** and confirm that you want to remove the integration.
 
-<figure><img src="../../.gitbook/assets/aws-ctl-6 (2).png" alt="Remove integration button"><figcaption><p>Remove integration button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-6.png" alt="Remove integration button"><figcaption><p>Remove integration button</p></figcaption></figure>
 
 This action removes Snyk’s configuration for this integration, which will prevent any further audit logs from being sent to AWS CloudTrail Lake. This does not remove the Snyk integration in AWS CloudTrail Lake. To do this, navigate to AWS CloudTrail Lake and delete the Snyk integration from the **Integration** list.
 

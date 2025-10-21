@@ -34,7 +34,7 @@ If you have the Node.js `npx` executable installed in your environment, add the 
 }
 ```
 
-<figure><img src="../../../.gitbook/assets/image (528).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
 
 #### Install with pre-installed Snyk CLI
 
@@ -56,7 +56,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 The following example shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt="Example of a successful MCP server configuration " width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (393).png" alt="Example of a successful MCP server configuration " width="375"><figcaption></figcaption></figure>
 
 ## Setting up the Snyk MCP Server
 
@@ -78,7 +78,7 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Windsurf indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
 
 Windsurf is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found.
 

@@ -178,7 +178,7 @@ To configure the Auto-assign settings for all the Projects from an imported priv
 
 You can then choose to assign PRs to the last user to change the manifest file or specified contributors.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (70).png" alt="Auto-assign PRs in private repos"><figcaption><p>Auto-assign PRs in private repos</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (53).png" alt="Auto-assign PRs in private repos"><figcaption><p>Auto-assign PRs in private repos</p></figcaption></figure></div>
 
 {% hint style="info" %}
 For pull request assignees, the option **The last user to change the manifest file** is based on blame data, not Git commits.
@@ -195,7 +195,7 @@ To configure the Auto-assign settings for a specific Project from an imported pr
 4. Ensure **Auto-assign PRs for this private Project** is enabled.
 5. Choose to assign PRs to the last user to change the manifest file or named contributors.
 
-<div align="center"><figure><img src="../../../.gitbook/assets/image (58).png" alt="Auto-assign PRs for this private Project" width="375"><figcaption><p>Auto-assign PRs for this private Project</p></figcaption></figure></div>
+<div align="center"><figure><img src="../../../.gitbook/assets/image (44).png" alt="Auto-assign PRs for this private Project" width="375"><figcaption><p>Auto-assign PRs for this private Project</p></figcaption></figure></div>
 
 ### How to disable the GitHub integration
 

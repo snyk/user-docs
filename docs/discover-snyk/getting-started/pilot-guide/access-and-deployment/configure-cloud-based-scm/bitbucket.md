@@ -29,7 +29,7 @@ Configure the Group-level integration by following these steps:
 * Navigate to the Group-level
 * Open **Integrations**, then **Add integration**
 
-<figure><img src="../../../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (307).png" alt=""><figcaption></figcaption></figure>
 
 * Search and select the BitBucket integration
 * Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate BitBucket using Snyk Essentials](../../../../../developer-tools/scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials.md) page.
@@ -49,6 +49,6 @@ Configure the Organization-level integration by following these steps:
 * Search and select the BitBucket integration
 * Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [BitBucket integration settings](../../../../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud.md) page.
 
-<figure><img src="../../../../../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
 
 The Organization-level integration is immediately available to import repositories and begin scanning.
