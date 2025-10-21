@@ -8992,6 +8992,301 @@
                 "properties": {
                   "data": {
                     "properties": {
+                      "attributes": {
+                        "allOf": [
+                          {
+                            "properties": {
+                              "policies": {
+                                "items": {
+                                  "properties": {
+                                    "applied_policy": {
+                                      "anyOf": [
+                                        {
+                                          "properties": {
+                                            "action_type": {
+                                              "enum": [
+                                                "severity-change"
+                                              ],
+                                              "type": "string"
+                                            },
+                                            "policy_ref": {
+                                              "description": "Reference to a policy, serving as a container for a set of policy-rules and can be owned by the group or the org.",
+                                              "properties": {
+                                                "id": {
+                                                  "format": "uuid",
+                                                  "type": "string"
+                                                },
+                                                "owner": {
+                                                  "enum": [
+                                                    "org",
+                                                    "group"
+                                                  ],
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "id",
+                                                "owner"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            "rule": {
+                                              "description": "A policy rule is the central entity of a policy, including an action as well as conditions\nwhen this policy applies.\nOnly a subset of fields are included, for more details see the API documentation\nhttps://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org_id-/policies/-policy_id-",
+                                              "properties": {
+                                                "created": {
+                                                  "format": "date-time",
+                                                  "type": "string"
+                                                },
+                                                "id": {
+                                                  "format": "uuid",
+                                                  "type": "string"
+                                                },
+                                                "modified": {
+                                                  "format": "date-time",
+                                                  "type": "string"
+                                                },
+                                                "name": {
+                                                  "type": "string"
+                                                },
+                                                "review": {
+                                                  "enum": [
+                                                    "approved",
+                                                    "rejected",
+                                                    "pending",
+                                                    "cancelled",
+                                                    "not-required"
+                                                  ],
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "id",
+                                                "name",
+                                                "modified",
+                                                "created",
+                                                "review"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            "severity_change": {
+                                              "properties": {
+                                                "new_severity": {
+                                                  "description": "Indicate the severity of a finding discovered by a Test.",
+                                                  "enum": [
+                                                    "critical",
+                                                    "high",
+                                                    "medium",
+                                                    "low",
+                                                    "none",
+                                                    "other"
+                                                  ],
+                                                  "type": "string"
+                                                },
+                                                "original_severity": {
+                                                  "description": "Indicate the severity of a finding discovered by a Test.",
+                                                  "enum": [
+                                                    "critical",
+                                                    "high",
+                                                    "medium",
+                                                    "low",
+                                                    "none",
+                                                    "other"
+                                                  ],
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "original_severity",
+                                                "new_severity"
+                                              ],
+                                              "type": "object"
+                                            }
+                                          },
+                                          "required": [
+                                            "action_type",
+                                            "policy_ref",
+                                            "rule",
+                                            "severity_change"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "action_type": {
+                                              "enum": [
+                                                "ignore"
+                                              ],
+                                              "type": "string"
+                                            },
+                                            "ignore": {
+                                              "properties": {
+                                                "created": {
+                                                  "format": "date-time",
+                                                  "type": "string"
+                                                },
+                                                "disregard_if_fixable": {
+                                                  "description": "Disregards the policy if set to true and the finding this policy is applied to is fixable",
+                                                  "type": "boolean"
+                                                },
+                                                "expires": {
+                                                  "format": "date-time",
+                                                  "type": "string"
+                                                },
+                                                "ignored_by": {
+                                                  "properties": {
+                                                    "email": {
+                                                      "description": "Email of the user who created the ignore",
+                                                      "type": "string"
+                                                    },
+                                                    "id": {
+                                                      "description": "User ID of the author of the ignore",
+                                                      "format": "uuid",
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "description": "Name of the user who created the ignore",
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "name"
+                                                  ],
+                                                  "type": "object"
+                                                },
+                                                "path": {
+                                                  "items": {
+                                                    "type": "string"
+                                                  },
+                                                  "maxItems": 10,
+                                                  "type": "array"
+                                                },
+                                                "reason": {
+                                                  "type": "string"
+                                                },
+                                                "reason_type": {
+                                                  "enum": [
+                                                    "wont-fix",
+                                                    "not-vulnerable",
+                                                    "temporary-ignore"
+                                                  ],
+                                                  "type": "string"
+                                                },
+                                                "source": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "reason",
+                                                "source"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            "policy_ref": {
+                                              "description": "Reference to a policy, serving as a container for a set of policy-rules and can be owned by the group or the org.",
+                                              "properties": {
+                                                "id": {
+                                                  "format": "uuid",
+                                                  "type": "string"
+                                                },
+                                                "owner": {
+                                                  "enum": [
+                                                    "org",
+                                                    "group"
+                                                  ],
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "id",
+                                                "owner"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            "rule": {
+                                              "description": "A policy rule is the central entity of a policy, including an action as well as conditions\nwhen this policy applies.\nOnly a subset of fields are included, for more details see the API documentation\nhttps://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org_id-/policies/-policy_id-",
+                                              "properties": {
+                                                "created": {
+                                                  "format": "date-time",
+                                                  "type": "string"
+                                                },
+                                                "id": {
+                                                  "format": "uuid",
+                                                  "type": "string"
+                                                },
+                                                "modified": {
+                                                  "format": "date-time",
+                                                  "type": "string"
+                                                },
+                                                "name": {
+                                                  "type": "string"
+                                                },
+                                                "review": {
+                                                  "enum": [
+                                                    "approved",
+                                                    "rejected",
+                                                    "pending",
+                                                    "cancelled",
+                                                    "not-required"
+                                                  ],
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "id",
+                                                "name",
+                                                "modified",
+                                                "created",
+                                                "review"
+                                              ],
+                                              "type": "object"
+                                            }
+                                          },
+                                          "required": [
+                                            "action_type",
+                                            "policy_ref",
+                                            "ignore"
+                                          ],
+                                          "type": "object"
+                                        }
+                                      ],
+                                      "discriminator": {
+                                        "mapping": {
+                                          "ignore": "#/components/schemas/Ignore",
+                                          "severity-change": "#/components/schemas/SeverityChange"
+                                        },
+                                        "propertyName": "action_type"
+                                      }
+                                    },
+                                    "id": {
+                                      "format": "uuid",
+                                      "type": "string"
+                                    },
+                                    "type": {
+                                      "enum": [
+                                        "legacy_policy_snapshot"
+                                      ],
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "type",
+                                    "id",
+                                    "applied_policy"
+                                  ],
+                                  "type": "object"
+                                },
+                                "type": "array"
+                              }
+                            },
+                            "required": [
+                              "policies"
+                            ],
+                            "type": "object"
+                          }
+                        ],
+                        "description": "Inlined attributes included in the relationship, if it is expanded.\n\nExpansion is a Snyk variation on JSON API. See\nhttps://snyk.roadie.so/docs/default/component/sweater-comb/standards/rest/#expansion"
+                      },
                       "id": {
                         "format": "uuid",
                         "type": "string"
@@ -12261,6 +12556,11 @@
           "meta": {
             "additionalProperties": false,
             "properties": {
+              "graduates_count": {
+                "description": "Number of participants that completed this learning program",
+                "minimum": 0,
+                "type": "integer"
+              },
               "participants_count": {
                 "description": "Number of participants enrolled in this learning program",
                 "minimum": 0,
@@ -12268,7 +12568,8 @@
               }
             },
             "required": [
-              "participants_count"
+              "participants_count",
+              "graduates_count"
             ],
             "type": "object"
           },
@@ -12647,6 +12948,49 @@
         ],
         "type": "object"
       },
+      "LocalIgnore": {
+        "properties": {
+          "created_at": {
+            "description": "When the ignore was first created.",
+            "format": "date-time",
+            "type": "string"
+          },
+          "expires_at": {
+            "description": "When the ignore will expire.",
+            "format": "date-time",
+            "type": "string"
+          },
+          "path": {
+            "description": "Dependency path to the vulnerable package to be ignored.\n\nIf not provided, the ignore will apply to all packages with the given\nvulnerability ID.",
+            "example": [
+              "myapp@1.0.0",
+              "org.apache.logging.log4j:log4j@2.6.2"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reason": {
+            "description": "Reason for the ignore.",
+            "example": "False positive",
+            "type": "string"
+          },
+          "skip_if_fixable": {
+            "description": "Skips the ignore rule if an actual fix is available.",
+            "type": "boolean"
+          },
+          "vuln_id": {
+            "description": "The vulnerability ID of the finding to be ignored.\n\nThis typically matches SnykVulnProblem.id for open source vulnerabilities.",
+            "example": "SNYK-JAVA-ORGAPACHELOGGINGLOG4J-31456",
+            "type": "string"
+          }
+        },
+        "required": [
+          "vuln_id"
+        ],
+        "type": "object"
+      },
       "LocalPathLocator": {
         "description": "LocalPathLocator locates a test subject by local file paths, relative to the\nworking copy top-level directory of the source code.",
         "properties": {
@@ -12678,6 +13022,13 @@
             "default": false,
             "description": "Use to fail a test when there is at least one vulnerable finding that can be fixed by upgrading the version of the related\n   dependency. E.g. bumping lodash from 1.1.1 to 1.1.2.",
             "type": "boolean"
+          },
+          "ignores": {
+            "description": "Defines ignore rules for known issues.",
+            "items": {
+              "$ref": "#/components/schemas/LocalIgnore"
+            },
+            "type": "array"
           },
           "reachability_filter": {
             "$ref": "#/components/schemas/ReachabilityFilter"
@@ -17337,9 +17688,26 @@
       "Suppression": {
         "description": "Details about a finding's suppression in test results.\n\nSuppressed findings do not contribute to the test outcome, but they are still\nprovided in the results.",
         "properties": {
+          "created_at": {
+            "description": "When the suppression was first created.",
+            "format": "date-time",
+            "type": "string"
+          },
+          "expires_at": {
+            "description": "When the suppression will expire.",
+            "format": "date-time",
+            "type": "string"
+          },
           "justification": {
             "description": "Reason given for an ignore pending approval.",
             "type": "string"
+          },
+          "path": {
+            "description": "Dependency path to the vulnerable package to be suppressed.\n\nIf not provided, the suppression will apply to all packages with the given\nvulnerability ID.",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
           },
           "policy": {
             "allOf": [
