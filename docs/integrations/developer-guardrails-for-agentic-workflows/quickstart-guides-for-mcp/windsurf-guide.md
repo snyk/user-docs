@@ -14,55 +14,25 @@ Install Windsurf to your local machine from the [Windsurf website](https://winds
 
 ### Install the Snyk MCP Server in Windsurf
 
-Install the Snyk MCP Server using the method that best suits your operating system and local development environment.
+Install the official Snyk MCP Server using the Windsurf MCP Marketplace.
 
-#### Install with Node.js and `npx`
-
-Create or edit the MCP configuration file `mcp_config.json` . This file can be accessed by navigating to the Windsurf Settings > Manage MCPs > View raw config.
-
-If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to `mcp_config.json`:
-
-```json5
-{
-  "mcpServers": {
-    "Snyk": {
-      "command": "npx",
-      "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"],
-      "env": {}
-    }
-  }
-}
-```
-
-<figure><img src="../../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
-
-#### Install with pre-installed Snyk CLI
-
-If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in `mcp_config.json`. Specify the full path to the Snyk executable CLI:
-
-```json5
-{
-  "mcpServers": {
-    "Snyk": {
-      "command": "/absolute/path/to/snyk",
-      "args": ["mcp", "-t", "stdio"],
-      "env": {}
-    }
-  }
-}
-```
+<figure><img src="../../../.gitbook/assets/image (528).png" alt=""><figcaption></figcaption></figure>
 
 If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
 
+<figure><img src="../../../.gitbook/assets/image (26).png" alt="Example of a successful MCP server configuration " width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+
 The following example shows a Snyk MCP Server that was successfully configured and started.
 
-<figure><img src="../../../.gitbook/assets/image (393).png" alt="Example of a successful MCP server configuration " width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26).png" alt="Example of a successful MCP server configuration " width="375"><figcaption></figcaption></figure>
 
 ## Setting up the Snyk MCP Server
 
 As a one-time setup, you may need to authenticate and trust the current Project directory. If required, the agentic workflow will manage this automatically.
 
-These workflows are automatically executed by the underlying model and the agentic code assistant, and you will need to approve them in the Devin chat window.&#x20;
+These workflows are automatically executed by the underlying model and the agentic code assistant, and you will need to approve them in the Windsurf chat window.&#x20;
 
 ## Examples
 
@@ -116,3 +86,44 @@ applyTo: "**"
 ```
 {% endcode %}
 
+#### Troubleshooting - Install Snyk MCP Server
+
+The Snyk MCP Server should be installed via the Windsurf MCP Marketplace. If you need to install the Snyk MCP Server manually then follow one of the options below.
+
+#### Install with Node.js and `npx`
+
+Create or edit the MCP configuration file `mcp_config.json` . This file can be accessed by navigating to the Windsurf Settings > Manage MCPs > View raw config.
+
+If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to `mcp_config.json`:
+
+```json5
+{
+  "mcpServers": {
+    "Snyk": {
+      "command": "npx",
+      "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"],
+      "env": {}
+    }
+  }
+}
+```
+
+<figure><img src="../../../.gitbook/assets/image (528).png" alt=""><figcaption></figcaption></figure>
+
+#### Install with pre-installed Snyk CLI
+
+If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in `mcp_config.json`. Specify the full path to the Snyk executable CLI:
+
+```json5
+{
+  "mcpServers": {
+    "Snyk": {
+      "command": "/absolute/path/to/snyk",
+      "args": ["mcp", "-t", "stdio"],
+      "env": {}
+    }
+  }
+}
+```
+
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;

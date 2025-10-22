@@ -10,17 +10,15 @@ The **Snyk analysis panel** on the left shows the time the analysis took and a l
 
 Each issue contains a severity icon that has the following meaning:
 
-| ![](<../../../../.gitbook/assets/image (50).png>) Critical severity                                                                                                                                                                 | May allow attackers access to sensitive data and to run code on your application.                                                            |
+| ![](<../../../../.gitbook/assets/image (50) (1).png>) Critical severity                                                                                                                                                             | May allow attackers access to sensitive data and to run code on your application.                                                            |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](<../../../../.gitbook/assets/image (10) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png>) High severity | May allow attackers access to sensitive data on your application.                                                                            |
 | ![](<../../../../.gitbook/assets/image (116) (1) (2).png>) Medium severity                                                                                                                                                          | May allow attackers under some conditions to have access to sensitive data on your application.                                              |
 | ![](<../../../../.gitbook/assets/image (81) (1) (1) (1) (1) (1).png>) Low severity                                                                                                                                                  | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
-
-
 ## Scan configuration
 
-You can customize your scan behavior to reflect your company's security policy or to focus on certain areas.&#x20;
+You can customize your scan behavior to reflect your company's security policy or to focus on certain areas.
 
 ### Severity filter
 
@@ -50,7 +48,7 @@ This functionality reduces noise and allows you to focus only on current changes
 
 The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
-In Visual Studio Code version 2.21.0 and later, you can choose any folder as your base for scanning.&#x20;
+In Visual Studio Code version 2.21.0 and later, you can choose any folder as your base for scanning.
 
 To apply the filter and see only the new issues, use the **total** or **new** toggle in the summary panel.
 
@@ -62,13 +60,13 @@ You can also enable the net new issues feature in the [scan configuration](./#sc
 
 For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as shown in the screen image that follows:
 
-<figure><img src="../../../../.gitbook/assets/SCR-20241024-ruvq.png" alt="Successful state. No Net New issues found. " width="304"><figcaption><p>Successful state. No net new issues found.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/SCR-20241024-ruvq.png" alt="Successful state. No Net New issues found." width="304"><figcaption><p>Successful state. No net new issues found.</p></figcaption></figure>
 
 ### Changing the base branch
 
-The base branch is usually determined automatically for each Git repository.&#x20;
+The base branch is usually determined automatically for each Git repository.
 
-You can change the base branch or base folder by following these steps, as illustrated in the screen image that follows:&#x20;
+You can change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
 
 1. Select the Snyk plugin.
 2. Toggle the `total/new` filter in the summary panel.
@@ -76,4 +74,3 @@ You can change the base branch or base folder by following these steps, as illus
 4. Use text input to specify any branch name or reference directory.
 
 <figure><img src="../../../../.gitbook/assets/image (273).png" alt=""><figcaption><p>Changing the reference branch or reference directory for calculation of net new issues</p></figcaption></figure>
-

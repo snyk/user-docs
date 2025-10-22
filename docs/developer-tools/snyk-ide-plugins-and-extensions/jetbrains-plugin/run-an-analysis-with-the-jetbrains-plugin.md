@@ -25,7 +25,7 @@ To manually trigger `snyk test` , as illustrated in the following screen image:
 
 ## Scan configuration
 
-You may customize your scan behavior to reflect the security policy of your company or to focus on certain areas.&#x20;
+You may customize your scan behavior to reflect the security policy of your company or to focus on certain areas.
 
 ### Severity filter
 
@@ -38,7 +38,7 @@ By default, all levels are selected. You must select at least one.
 
 Snyk severity icons have the following meaning:
 
-| ![](<../../../.gitbook/assets/image (50).png>) Critical severity                                                                                                                                                                 | May allow attackers to access sensitive data and run code on your application.                                                               |
+| ![](<../../../.gitbook/assets/image (50) (1).png>) Critical severity                                                                                                                                                             | May allow attackers to access sensitive data and run code on your application.                                                               |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](<../../../.gitbook/assets/image (10) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png>) High severity | May allow attackers to access sensitive data on your application.                                                                            |
 | ![](<../../../.gitbook/assets/image (116) (1) (2).png>) Medium severity                                                                                                                                                          | May allow attackers under some conditions to access sensitive data on your application.                                                      |
@@ -75,13 +75,13 @@ This functionality reduces noise and allows you to focus only on current changes
 
 The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
-In plugin version 2.12.0 and later, you can choose any folder as your base for scanning.&#x20;
+In plugin version 2.12.0 and later, you can choose any folder as your base for scanning.
 
 To apply the filter and see only the new issues, use the toggle in the summary panel.
 
 <figure><img src="../../../.gitbook/assets/image (267).png" alt=""><figcaption><p>Summary panel toggle showing the the total number of issues and the number of issues in the checked out branch or current folder or new issues only</p></figcaption></figure>
 
-You can also enable the net new issues feature in the [scan configuration](run-an-analysis-with-the-jetbrains-plugin.md#scan-configuration) settings. \
+You can also enable the net new issues feature in the [scan configuration](run-an-analysis-with-the-jetbrains-plugin.md#scan-configuration) settings.\
 \
 For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as illustrated in the screen image that follows:
 
@@ -89,7 +89,7 @@ For newly created feature branches, there will be no reported issues. That is an
 
 ### Changing the base branch
 
-The base branch is usually automatically determined for each Git repository.&#x20;
+The base branch is usually automatically determined for each Git repository.
 
 You can change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
 
