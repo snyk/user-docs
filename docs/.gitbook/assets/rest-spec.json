@@ -7534,7 +7534,8 @@
           },
           "formats": [
             "csv"
-          ]
+          ],
+          "url_expiration_seconds": 3600
         },
         "properties": {
           "columns": {
@@ -7557,6 +7558,13 @@
               "type": "string"
             },
             "type": "array"
+          },
+          "url_expiration_seconds": {
+            "default": 3600,
+            "format": "int32",
+            "maximum": 3600,
+            "minimum": 0,
+            "type": "integer"
           }
         },
         "required": [
@@ -7615,7 +7623,8 @@
           },
           "formats": [
             "csv"
-          ]
+          ],
+          "url_expiration_seconds": 3600
         },
         "properties": {
           "columns": {
@@ -7638,6 +7647,13 @@
               "type": "string"
             },
             "type": "array"
+          },
+          "url_expiration_seconds": {
+            "default": 3600,
+            "format": "int32",
+            "maximum": 3600,
+            "minimum": 0,
+            "type": "integer"
           }
         },
         "required": [

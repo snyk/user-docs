@@ -1,3 +1,14 @@
+## 2025-09-28 - Updated 2025-10-22
+
+### POST - `/orgs/{org_id}/export` - Updated
+- added the new optional request property `data/attributes/url_expiration_seconds`
+
+
+
+### POST - `/groups/{group_id}/export` - Updated
+- added the new optional request property `data/attributes/url_expiration_seconds`
+
+
 # Changelog
 
 ### 2025-09-28 - Updated 2025-10-14
