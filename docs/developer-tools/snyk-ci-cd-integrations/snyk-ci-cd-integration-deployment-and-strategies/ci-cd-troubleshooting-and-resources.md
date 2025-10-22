@@ -10,17 +10,7 @@ Try various CLI options. Use the Snyk CLI to find and fix known vulnerabilities 
 
 ### Step 2: Get logs
 
-If you can replicate with the CLI and the problem still exists, ask the CLI to output the debug logging using the following command: `DEBUG=*` or use the `-d` option to capture logs:
-
-```
-snyk test -d
-```
-
-or
-
-```
-DEBUG=* snyk test
-```
+If you can replicate the issue using the Command Line Interface (CLI) and the problem still exists, consult the [Debugging the Snyk CLI ](../../snyk-cli/debugging-the-snyk-cli.md) troubleshooting guidelines for capturing logs in a debug mode.
 
 ### Step 3: Use the CLI instead of the plugin
 
