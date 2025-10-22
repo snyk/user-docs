@@ -1,14 +1,10 @@
 # Gemini CLI guide
 
-You can add the Snyk MCP server to Gemini CLI to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+You can access Snyk Studio, including Snyk's MCP server, in Gemini CLI to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
 
 ## Prerequisites
 
 * [Install Gemini CLI](gemini-cli-guide.md#install-gemini-cli)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](gemini-cli-guide.md#install-the-snyk-extension-or-mcp-server-in-gemini-cli)
-
-### Install Gemini CLI
 
 Install [the Gemini CLI](https://github.com/google-gemini/gemini-cli?tab=readme-ov-file) to your local machine.&#x20;
 
@@ -17,7 +13,7 @@ Install [the Gemini CLI](https://github.com/google-gemini/gemini-cli?tab=readme-
 Get started with Snyk and Gemini CLI by using the Gemini extension, which installs the Snyk MCP Server. Run in your terminal:
 
 ```sh
-gemini extensions install git@github.com:snyk/agentic-integration-wrappers
+gemini extensions install https://github.com/snyk/agentic-integration-wrappers
 ```
 
 <figure><img src="../../../.gitbook/assets/image (425).png" alt="Gemini extensions install in the CLI"><figcaption></figcaption></figure>
@@ -29,8 +25,6 @@ To confirm the extension was installed, run the following command in the Gemini 
 ```
 
 <figure><img src="../../../.gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
-
-
 
 To install the Snyk MCP Server manually, use the method that best suits your operating system and local development environment.
 
@@ -79,7 +73,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
 
 Run `/mcp list` to confirm the Snyk MCP Server is connected.
 
@@ -109,9 +103,20 @@ Gemini CLI indicates that this request is related to security vulnerability scan
 
 ### Gemini CLI Rules
 
-To practice [Secure at Inception](https://snyk.io/solutions/secure-ai-generated-code/), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
-&#x20;Append the following contents to the context file at `~/.gemini/GEMINI.md`
+Append the following contents to the context file at `~/.gemini/GEMINI.md`
+
+{% code title="~/.gemini/GEMINI.md" overflow="wrap" %}
+```
+# Project security best practices
+
+- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
+- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
+- Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
+- Repeat this process until no new issues are found.
+```
+{% endcode %}
 
 {% code title="~/.gemini/GEMINI.md" overflow="wrap" %}
 ```
@@ -124,6 +129,3 @@ To practice [Secure at Inception](https://snyk.io/solutions/secure-ai-generated-
 - Repeat this process until no issues are found.
 ```
 {% endcode %}
-
-
-

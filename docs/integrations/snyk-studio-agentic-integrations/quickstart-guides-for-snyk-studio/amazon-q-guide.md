@@ -1,6 +1,6 @@
 # Amazon Q guide
 
-You can add the Snyk MCP server to Amazon Q to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+You can access Snyk Studio, including Snyk's MCP server, in Amazon Q to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
 
 The following example shows a Snyk MCP Server that was successfully configured and started.
 
@@ -93,30 +93,17 @@ Amazon Q is then able to gather all the security scanning results, both code (SA
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://snyk.io/solutions/secure-ai-generated-code/), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
-The following is a suggested instruction for creating project rules for use with [Amazon Q Developer chat](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/context-project-rules.html):
+The following is a suggested instruction for creating project rules for use with [Amazon Q Developer chat](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/context-project-rules.html). Append the following contents to the rules file at `.amazonq/rules/amazonq-rules.md`:
 
-{% code title="Amazon Q rule" overflow="wrap" %}
-```
-Always run Snyk Code scanning tool for new first party code generated.
-Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
-Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-Repeat this process until no issues are found.
-```
-{% endcode %}
-
-Append the following contents to the rules file at `.amazonq/rules/amazonq-rules.md`:
-
-<figure><img src="../../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (482).png" alt=""><figcaption></figcaption></figure>
 
 {% code title=".amazonq/rules/amazonq-rules.md" overflow="wrap" %}
 ```
-- Always run Snyk Code scanning tool for new first party code generated.
-- Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
+- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
+- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
 - Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no issues are found.
+- Repeat this process until no new issues are found.
 ```
 {% endcode %}

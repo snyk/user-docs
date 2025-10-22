@@ -35,7 +35,7 @@ Select [**Reports**](../../../manage-risk/reporting/) to view the vulnerability 
 
 ### Group inventory
 
-Select [**Inventory**](../../../manage-assets/manage-assets.md#inventory-menu) to view, filter, and manage your assets.&#x20;
+Select [**Inventory**](../../../manage-assets/manage-assets.md#inventory-menu) to view, filter, and manage your assets.
 
 ### Group issues
 
@@ -51,7 +51,7 @@ Select [**Dependencies**](../../../manage-risk/reporting/dependencies-and-licens
 
 Select [**Policies**](../../../manage-risk/policies/) to view the license and security policies or the assets policies for your Group.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Policies menu with focus on Assets tab</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Policies menu with focus on Assets tab</p></figcaption></figure>
 
 ### Group integrations
 

@@ -59,7 +59,7 @@ To see the documentation for each integration, click on the integration name in 
 | [TabbyML](https://snyk.io/blog/Securing-the-future-of-AI-generated-code/)                                                      | Tabby is an open-source, self-hosted AI coding assistant. Scan your code for vulnerabilities with Snyk in the IDE extension.                                        |
 | [Tabnine](https://www.tabnine.com/blog/open-source-and-generative-ai/)                                                         | Use Snyk to scan vulnerabilities with the Tabnine AI coding assistant.                                                                                              |
 | [Windsurf (formerly Codeium)](https://snyk.io/articles/a-beginners-guide-to-visually-understanding-mcp-architecture/)          | Scan Windsurf's AI-generated code using Snyk MCP.                                                                                                                   |
-| [Cursor](developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide.md)                                 | Add the Snyk MCP server to Cursor to secure code generated with agentic workflows through an LLM.                                                                   |
+| [Cursor](snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/cursor-guide.md)                                   | Add the Snyk MCP server to Cursor to secure code generated with agentic workflows through an LLM.                                                                   |
 
 ## Compliance
 

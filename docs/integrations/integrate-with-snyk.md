@@ -1,17 +1,24 @@
 # Overview
 
-## Agentic integrations - Snyk MCP Server
+## Snyk Studio - Agentic integrations
 
-Agentic workflows transform software development by using AI assistants to automate tasks and write code, boosting productivity. But this speed poses security risks, as AI-generated code may have vulnerabilities.&#x20;
+Agentic workflows transform software development by using AI assistants to automate tasks and write code, boosting productivity. But this speed poses security risks, as AI-generated code may have vulnerabilities.
 
-Snyk offers security guardrails through its integration with the Model Context Protocol (MCP), an open standard enabling AI tools to communicate with the Snyk security platform. This allows AI assistants to run scans and check for vulnerabilities during code generation, embedding security early in AI-powered development for both human and AI-generated code.
+Snyk offers security guardrails through Snyk Studio, including its integration with the Model Context Protocol (MCP), an open standard enabling AI tools to communicate with the Snyk security platform. This allows AI assistants to run scans and check for vulnerabilities during code generation, embedding security early in AI-powered development for both human and AI-generated code.
 
 Snyk provides information about:
 
-* [Snyk MCP installation, configuration, and startup](developer-guardrails-for-agentic-workflows/snyk-mcp-installation-configuration-and-startup.md)
-* [Quickstart guides for several AI assistants](developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/)
-* [Troubleshooting for the Snyk MCP Server](developer-guardrails-for-agentic-workflows/troubleshooting-for-the-snyk-mcp-server.md)
-* [Usage analytics](developer-guardrails-for-agentic-workflows/usage-analytics.md)
+* [Quickstart guides for several AI assistants](snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/)
+* [Troubleshooting for the Snyk MCP Server](snyk-studio-agentic-integrations/troubleshooting.md)
+* [Usage analytics](snyk-studio-agentic-integrations/usage-analytics.md)
+
+{% hint style="info" %}
+**Feature availability**
+
+Snyk does not offer a hosted, remote version of its MCP server.
+
+The Snyk MCP Server is designed as a local MCP server, running on your system using the Snyk CLI to ensure local file access
+{% endhint %}
 
 ## Integrations for Snyk
 
@@ -38,10 +45,10 @@ Snyk provides alternative reporting tools. For more information, see [Reporting 
 
 The **Integrations** page shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub.
 
-The following supported Snyk data are automatically synced: Snyk Open Source, Snyk Code, Snyk IaC, Snyk Container.&#x20;
+The following supported Snyk data are automatically synced: Snyk Open Source, Snyk Code, Snyk IaC, Snyk Container.
 
 {% hint style="info" %}
-Navigate to the [Third-party integrations for Snyk AppRisk](connect-a-third-party-integration.md) to check all available integrations and their setup details.&#x20;
+Navigate to the [Third-party integrations for Snyk AppRisk](connect-a-third-party-integration.md) to check all available integrations and their setup details.
 {% endhint %}
 
 Each connected integration enables you to pause data syncing, modify integration profiles and configurations, delete the integration, or check when the integration was last synced and when the next sync is scheduled.
@@ -61,10 +68,10 @@ Depending on the type of action, the syncing times might differ:
 After you finish setting up an integration, you can see the following connection statuses:
 
 * Setup in progress
-* Connected&#x20;
-* Connection failed&#x20;
+* Connected
+* Connection failed
 * x profile(s) connected
-* &#x20;x/y profile(s) connected
+* x/y profile(s) connected
 * x profile(s) failed
 
 If you encounter any of the failed statuses, check the Connection failure details list available on the integration card.
@@ -75,7 +82,7 @@ If you encounter any of the failed statuses, check the Connection failure detail
 
 You can refer to the table below to verify the availability and compatibility of all integrations for Snyk AppRisk and Essentials. The integrations are categorized by type, listed by name, and indicated as available or not for both Snyk Essentials and Snyk AppRisk.
 
-<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk Essentials</th><th>Snyk AppRisk</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="../developer-tools/scm-integrations/organization-level-integrations/github.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="../developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud.md#group-level-snyk-apprisk-integrations">BitBucket</a></li><li><a href="../developer-tools/scm-integrations/organization-level-integrations/gitlab.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="../developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs.md#group-level-snyk-apprisk-integrations">Azure DevOps</a></li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                   <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/">Backstage catalog</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#servicenow-cmdb-for-scm-integrations">ServiceNow CMDB</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#atlassian-compass">Atlassian Compass</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#harness">Harness</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#opslevel">OpsLevel</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#datadog-org-context-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                    <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="connect-a-third-party-integration.md#nightfall-setup-guide">NightFall</a></li><li><a href="connect-a-third-party-integration.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Runtime security and observability</td><td><ul><li><a href="snyk-runtime-sensor.md">Snyk runtime sensor</a></li><li><a href="connect-a-third-party-integration.md#sysdig-setup-guide">Sysdig</a></li><li><a href="connect-a-third-party-integration.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
+<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk Essentials</th><th>Snyk AppRisk</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="../developer-tools/scm-integrations/organization-level-integrations/github.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="../developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud.md#group-level-snyk-apprisk-integrations">BitBucket</a></li><li><a href="../developer-tools/scm-integrations/organization-level-integrations/gitlab.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="../developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs.md#group-level-snyk-apprisk-integrations">Azure DevOps</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/">Backstage catalog</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#servicenow-cmdb-for-scm-integrations">ServiceNow CMDB</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#atlassian-compass">Atlassian Compass</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#harness">Harness</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#opslevel">OpsLevel</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#datadog-org-context-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="connect-a-third-party-integration.md#nightfall-setup-guide">NightFall</a></li><li><a href="connect-a-third-party-integration.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Runtime security and observability</td><td><ul><li><a href="snyk-runtime-sensor.md">Snyk runtime sensor</a></li><li><a href="connect-a-third-party-integration.md#sysdig-setup-guide">Sysdig</a></li><li><a href="connect-a-third-party-integration.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
 
 ### Using the Integrations page
 

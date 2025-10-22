@@ -1,6 +1,6 @@
 # Continue guide
 
-You can add the Snyk MCP server to Continue to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server asks for trust and trigger authentication if necessary.
+You can access Snyk Studio, including Snyk's MCP server, in Continue to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server asks for trust and trigger authentication if necessary.
 
 ## Prerequisites
 
@@ -90,19 +90,9 @@ Continue is then able to gather all the security scanning results, both code (SA
 
 ### "Secure at inception" rules <a href="#secure-at-inception-rules" id="secure-at-inception-rules"></a>
 
-To practice [Secure at Inception](https://snyk.io/solutions/secure-ai-generated-code/), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
-The following is a suggested instruction for creating project rules for use with [Continue](https://docs.continue.dev/customize/deep-dives/rules):
-
-```
-Always run Snyk Code scanning tool for new first party code generated.
-Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
-Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-Repeat this process until no issues are found.
-```
-
-Append the following contents to the rules file at `.continue/rules/new-rule.md`:
+The following is a suggested instruction for creating project rules for use with [Continue](https://docs.continue.dev/customize/deep-dives/rules). Append the following contents to the rules file at `.continue/rules/new-rule.md`:
 
 ```
 ---
@@ -111,9 +101,8 @@ applyTo: "**"
 
 # Project security best practices
 
-- Always run Snyk Code scanning tool for new first party code generated.
-- Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
+- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
+- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
 - Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no issues are found.
+- Repeat this process until no new issues are found.
 ```

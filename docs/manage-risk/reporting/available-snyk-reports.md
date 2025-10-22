@@ -38,7 +38,7 @@ For a table of only the unique vulnerabilities, use Change Report to switch to t
 
 ## Issues Summary report
 
-The Issues Summary report highlights the value that Snyk is providing by enabling both the identification and resolution of issues.&#x20;
+The Issues Summary report highlights the value that Snyk is providing by enabling both the identification and resolution of issues.
 
 The report provides a glimpse into how well teams are optimizing the use of the Snyk platform for their workflow and provides a means to measure and improve security.
 
@@ -54,7 +54,7 @@ At the top of the report, you can follow key metrics associated with security is
 
 The **Issues Identified and Resolved** trend captures the accumulated security issues that were identified and resolved during the selected date range. The gap between the two lines indicates the open issues backlog.
 
-This visual trend allows you to identify if too many issues are being introduced, meaning that prevention should become a higher priority. Conversely, if not enough issues are being resolved, it means that you need to further analyze metrics such as MTTR and SLA.&#x20;
+This visual trend allows you to identify if too many issues are being introduced, meaning that prevention should become a higher priority. Conversely, if not enough issues are being resolved, it means that you need to further analyze metrics such as MTTR and SLA.
 
 {% hint style="info" %}
 The Total Open issues metric at the top completes the picture for this trend, by showing the total open issues at the end of the selected period compared with the total open issues at the beginning of the selected date range.
@@ -70,12 +70,12 @@ The **Time to Resolve by Week** trend provides visibility on the number of issue
 
 <figure><img src="../../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
 
-The **Risk breakdown** table helps you make data-driven decisions about where you need to focus. The tables allow you to review ‌performance metrics from several angles.&#x20;
+The **Risk breakdown** table helps you make data-driven decisions about where you need to focus. The tables allow you to review ‌performance metrics from several angles.
 
 Use the dimension picker to browse:
 
 * **Projects** - Available at the Organization level. Allows you to pinpoint Projects that require your attention.
-* **Organizations** - Available at the Group level. Surface Snyk Organizations based on their performance.  &#x20;
+* **Organizations** - Available at the Group level. Surface Snyk Organizations based on their performance.
 * **Asset Classes** - Ensure that efforts are prioritized to secure the most sensitive assets first.
 * **Introduction Categories** - Allows to determine if preventable issues are handled properly by looking at the percentage change of new preventable issues, as well as assessing the impact of new monitored assets over your AppSec Program. You can view this under the **Baseline Issue** category.
 
@@ -83,14 +83,14 @@ Use the dimension picker to browse:
 
 ## Vulnerabilities Detail report
 
-The Vulnerabilities Detail report is similar to the Issues Detail report but shows issues grouped by Snyk Problem ID ([see Snyk Vulnerability DB](https://security.snyk.io/vuln)).&#x20;
+The Vulnerabilities Detail report is similar to the Issues Detail report but shows issues grouped by Snyk Problem ID ([see Snyk Vulnerability DB](https://security.snyk.io/vuln)).
 
 You can easily see how many instances of a vulnerability exist and how many Projects are affected. Use this report to understand which vulnerabilities are most prevalent for both resolution and prevention use cases.
 
 For a table of Total Issues, use Change Reports to switch to the Issues Detail report.
 
 {% hint style="info" %}
-#### Dependencies and license information
+**Dependencies and license information**
 
 To view Dependencies and license information, select the **Dependencies** menu option. See [Dependencies and licenses](dependencies-and-licenses/) for details.
 {% endhint %}
@@ -112,7 +112,7 @@ The **Accumulative Issues Backlog Trend** diagram shows the weekly changes in th
 
 In parallel, review the **Issues Identified versus Resolved over Time** diagram to conclude whether additional emphasis should be placed on preventing the introduction of new issues or on accelerating the remediation efforts.
 
-## SLA Management report&#x20;
+## SLA Management report
 
 The report presents a set of default SLA targets per severity based on common security standards, such as FedRAMP. These SLA targets can be modified to meet your own security requirements.
 
@@ -136,11 +136,11 @@ The SLA report includes additional filters under the SLA category, allowing for 
 The report is, by default, showing only issues that are with high or critical severity. Update the severity filter if you want to view the SLA status for additional severities.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (224).png" alt="" width="300"><figcaption><p>SLA Filters within the filters picker </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (224).png" alt="" width="300"><figcaption><p>SLA Filters within the filters picker</p></figcaption></figure>
 
 You can share the report with predefined SLA targets by sharing the report URL or return to a predefined SLA report by bookmarking the web page in your browser.
 
-In the **Open issues** section, the **SLA severity breakdown** shows a distribution of severity levels by the SLA compliance status of the viewed Group or Organization.&#x20;
+In the **Open issues** section, the **SLA severity breakdown** shows a distribution of severity levels by the SLA compliance status of the viewed Group or Organization.
 
 The **SLA trend** shows the cumulative SLA status of issues over time.
 
@@ -164,11 +164,11 @@ You can review the SLA results for resolved issues and perform a retrospective a
 
 ## OWASP Top 10 report
 
-The [OWASP Top 10](https://owasp.org/www-project-top-ten/) is a standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks for web applications and is globally recognized by developers as the first step towards more secure coding.&#x20;
+The [OWASP Top 10](https://owasp.org/www-project-top-ten/) is a standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks for web applications and is globally recognized by developers as the first step towards more secure coding.
 
-Each control in the list (A1, A2, and so on) is based on a list of Common Weakness Enumerations (CWEs). For example, [A01:2021 – Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/) is based on a list of 34 CWEs.&#x20;
+Each control in the list (A1, A2, and so on) is based on a list of Common Weakness Enumerations (CWEs). For example, [A01:2021 – Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/) is based on a list of 34 CWEs.
 
-The CWEs are mapped to Snyk-IDs (), which are mapped to issues.&#x20;
+The CWEs are mapped to Snyk-IDs (), which are mapped to issues.
 
 For example, the critical vulnerability [SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720) is classified as [CWE-94](https://cwe.mitre.org/data/definitions/94.html), which is part of the OWASP TOP 10 [A03:2021 - Injection](https://owasp.org/Top10/A03_2021-Injection/). All the issues related to this vulnerability will be under the A03 category.
 
@@ -178,20 +178,20 @@ The report is based on the latest mapping released in 2021. The supported produc
 
 ## CWE Top 25 report
 
-The [CWE Top 25](https://cwe.mitre.org/top25/) Most Dangerous Software Weaknesses is a list that demonstrates the current most common and impactful software weaknesses based on Common Vulnerabilities and Exposures (CVEs) severity and their exploitation potential.&#x20;
+The [CWE Top 25](https://cwe.mitre.org/top25/) Most Dangerous Software Weaknesses is a list that demonstrates the current most common and impactful software weaknesses based on Common Vulnerabilities and Exposures (CVEs) severity and their exploitation potential.
 
 The report is based on the latest version released in 2023 by Mitre. The supported products are Snyk Open Source, Snyk Container, and Snyk Code.
 
-## CWE Top 10 KEV report&#x20;
+## CWE Top 10 KEV report
 
-The [CWE Top 10 KEV Weaknesses](https://cwe.mitre.org/top25/archive/2023/2023_kev_list.html) list identifies the top ten CWEs in the Cybersecurity and Infrastructure Security Agency’s (CISA) [Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (KEV) Catalog, a database of security flaws in software applications and weaknesses that have been exposed and leveraged by attackers.&#x20;
+The [CWE Top 10 KEV Weaknesses](https://cwe.mitre.org/top25/archive/2023/2023_kev_list.html) list identifies the top ten CWEs in the Cybersecurity and Infrastructure Security Agency’s (CISA) [Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (KEV) Catalog, a database of security flaws in software applications and weaknesses that have been exposed and leveraged by attackers.
 
 The report is based on the version released in 2023 by Mitre. The supported products are Snyk Open Source, Snyk Container, and Snyk Code.
 
 ## PCI-DSS v4.0.1 report
 
 {% hint style="info" %}
-**Release status**&#x20;
+**Release status**
 
 The PCI-DSS v4.0.1 report is in Early Access and available only with Enterprise plans.
 {% endhint %}
@@ -215,9 +215,9 @@ The report identifies PCI-DSS risks and violations based on the following PCI-DS
    * Attacks on data and data structures, including attempts to manipulate buffers, pointers, input data, or shared data.
    * Attacks on cryptography usage, including attempts to exploit weak, insecure, or inappropriate cryptographic implementations, algorithms, cipher suites, or modes of operation.
    * Attacks on business logic, including attempts to abuse or bypass application features and functionalities through the manipulation of APIs, communication protocols and channels, client-side functionality, or other system or application functions and resources. This includes cross-site scripting (XSS) and cross-site request forgery (CSRF).
-   * Attacks on access control mechanisms, including attempts to bypass or abuse identification, authentication, or authorization mechanisms or attempts to exploit weaknesses in the implementation of such mechanisms.&#x20;
+   * Attacks on access control mechanisms, including attempts to bypass or abuse identification, authentication, or authorization mechanisms or attempts to exploit weaknesses in the implementation of such mechanisms.
    * Attacks using any “high-risk” vulnerabilities identified in the vulnerability identification process, as defined in Requirement 6.3.1.
-2. **Requirement 6.3.3:** All system components are protected from known vulnerabilities by installing applicable security patches and updates as follows:&#x20;
+2. **Requirement 6.3.3:** All system components are protected from known vulnerabilities by installing applicable security patches and updates as follows:
    * Patches and updates for critical vulnerabilities, identified according to the risk ranking process at Requirement 6.3.1 are installed within one month of release.
 
 ### Snyk Violation Analysis based on PCI-DSS attack categories
@@ -230,7 +230,7 @@ The following list provides an association between the identified attack categor
 
 * SQL Injection: CWE-89
 * LDAP Injection: CWE-90
-* XML Injection (XPath Injection): CWE-91&#x20;
+* XML Injection (XPath Injection): CWE-91
 * Command Injection: CWE-77
 * Use of Unsafe Reflection: CWE-470
 
@@ -277,7 +277,7 @@ The following list provides an association between the identified attack categor
 
 #### Attacks on Access Control Mechanisms Violations Summary
 
-The Missing Authorization attack category is associated with CWE-862.&#x20;
+The Missing Authorization attack category is associated with CWE-862.
 
 ### PCI-DSS v4.0.1 Guidance
 
@@ -303,7 +303,7 @@ Use the table to pinpoint major attack categories or Snyk Organizations that lea
 After you investigate and see the actual issues behind the figures, you may proceed by:
 
 * Vulnerability triage and prioritization.
-* Conclude the prevalent CWEs and CVEs by sorting on the CWE/CVE column and filtering those CWEs/CVEs in the [Vulnerabilities Detail Report](available-snyk-reports.md#vulnerabilities-detail-report) to surface all the vulnerability occurrences across targets and Projects.&#x20;
+* Conclude the prevalent CWEs and CVEs by sorting on the CWE/CVE column and filtering those CWEs/CVEs in the [Vulnerabilities Detail Report](available-snyk-reports.md#vulnerabilities-detail-report) to surface all the vulnerability occurrences across targets and Projects.
 * Run a vulnerability eradication campaign or assign Snyk Learn training to relevant engineering teams.
 {% endhint %}
 
@@ -311,28 +311,28 @@ After you investigate and see the actual issues behind the figures, you may proc
 
 ## Developer IDE and CLI usage
 
-To use this report, you must ensure you have installed the following prerequisites:&#x20;
+To use this report, you must ensure you have installed the following prerequisites:
 
 * Snyk CLI&#x20;
   * version 1.1292.1 or newer (for CLI and IDE plugins usage)
-  * version 1.1297.0 or newer for general Agentic scans (MCP)
+  * version 1.1297.0 or newer for general Agentic scans (Snyk Studio using MCP)
   * version 1.1298.1 or newer for granular Agentic scans (such as MCP host)
 * VS Code 1.86.0 or newer and Snyk Security plugin 2.3.3 or newer
 * IntelliJ IDEs 2023.3 or newer and Snyk Security plugin 2.7.3 or newer
 * Visual Studio 2019, 2022 and Snyk Security Plugin 1.1.47 or newer
 * Eclipse 2023.12 or newer and Snyk Security plugin 2.1.0 or newer
 
-This report shows the adoption of Snyk testing in local development through the IDE plugins, using the CLI locally or incorporating the Snyk MCP into agentic workflows. The report is available under the Change Report dropdown at the Group and Organization levels.
+This report shows the adoption of Snyk testing in local development through the IDE plugins, using the CLI locally or incorporating Snyk Studio into agentic workflows. The report is available under the Change Report dropdown at the Group and Organization levels.
 
 {% hint style="info" %}
-This report focuses on the local developer experience and does not include the use of CI/CD. In addition, it does not show Organizations or developers that have never used the CLI, IDE, or MCP.
+This report focuses on the local developer experience and does not include the use of CI/CD. In addition, it does not show Organizations or developers that have never used the CLI, IDE, or Snyk Studio (via MCP).
 {% endhint %}
 
 Security teams can use this report to demonstrate strong shift-left behavior as a model behavior to bring to other teams. This report also shows where teams or individual developers are not adopting Snyk locally. Companies can use this report to encourage more shift-left behavior.
 
-This report shows the test usage in the IDE, CLI, and MCP by developers. Teams can filter by date and Organization. The report includes visibility into metrics such as:
+This report shows the test usage in the IDE, CLI, and Snyk Studio by developers. Teams can filter by date and Organization. The report includes visibility into metrics such as:
 
-#### Total number of developers running scans and the number of scans in IDE, CLI, and Agentic integrations (such as MCP)
+#### Total number of developers running scans and the number of scans in IDE, CLI, and Agentic integrations (Snyk Studio)
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-07-22 at 10.16.07.png" alt=""><figcaption></figcaption></figure>
 
@@ -357,7 +357,7 @@ This report shows the test usage in the IDE, CLI, and MCP by developers. Teams c
 To use this report, consider the following prerequisites:
 
 * Snyk CLI version 1.1292.1 or newer.
-* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../developer-tools/scm-integrations/organization-level-integrations/).&#x20;
+* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../developer-tools/scm-integrations/organization-level-integrations/).
 * When testing containers, include the `.git` context as part of the `snyk container test` command.
 
 This report analyzes Snyk tests performed as part of CI/CD pipelines executed using Snyk CLI. It will inform you about the usage of your company and adoption of testing in CI/CD, ensuring repositories are tested as expected and preventing critical vulnerabilities and misconfigurations from being deployed and reaching the production environment.
@@ -368,9 +368,9 @@ This report analyzes Snyk tests performed as part of CI/CD pipelines executed us
 * Please note that `snyk monitor` commands are **not** included in this report. While `snyk monitor` is crucial for ongoing security posture and identifying new vulnerabilities, this report specifically tracks tests that actively gate your CI/CD pipeline.
 {% endhint %}
 
-The numbers displayed on the main view of the report represent the number of repositories tested in the selected date range per Snyk product.&#x20;
+The numbers displayed on the main view of the report represent the number of repositories tested in the selected date range per Snyk product.
 
-In addition, you can learn about the change in the number of tested repositories compared to the previous sequential period, so you can conclude whether the adoption of CI/CD tests across repositories improved.&#x20;
+In addition, you can learn about the change in the number of tested repositories compared to the previous sequential period, so you can conclude whether the adoption of CI/CD tests across repositories improved.
 
 A green upward arrow indicates that more repositories were tested compared to the previous sequential period, while a red downward arrow indicates the opposite. The absolute change value appears next to the arrow, and the perception of change appears right underneath to measure the degree of change.
 
@@ -383,12 +383,12 @@ A sequential period refers to a date range covering the last seven days. In this
 #### Repository Test Adoption <a href="#repository-test-adoption" id="repository-test-adoption"></a>
 
 Review the Repository Test Adoption trend to learn more about ‌adoption over time.\
-Represented by the green line, you can see the weekly number of repositories that have been tested compared to the repositories that had commits in the last 30 days, represented by the purple line.&#x20;
+Represented by the green line, you can see the weekly number of repositories that have been tested compared to the repositories that had commits in the last 30 days, represented by the purple line.
 
 This comparison helps determine whether Snyk tests in CI/CD are being increasingly adopted over time and highlights the number of repositories that have received commits but have not been tested in CI/CD.
 
 {% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../developer-tools/scm-integrations/organization-level-integrations/) page.&#x20;
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [SCM integrations](../../developer-tools/scm-integrations/organization-level-integrations/) page.
 {% endhint %}
 
 You can filter by specific products or by specific organizations or extend the viewed period using the date range filter.
@@ -406,7 +406,7 @@ An applicable test is a test that did not fail due to technical issues or a non-
 Having a low success rate can indicate that:
 
 * Snyk tests are failing due to security issues that can be prevented in local development or in the PR Check stages. Snyk recommends testing with the [Snyk IDE](../../developer-tools/snyk-ide-plugins-and-extensions/) plugin, using [Snyk PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) and enroll in a [Snyk Learn](../../discover-snyk/snyk-learn/) program.
-* The test success criteria are too strict. To explore this option further, Snyk recommends reviewing the test definitions of the organizations with the lowest success rate, as shown by the Adoption by Organizations widget. For more details about defining test success criteria, navigate to the [Failing of builds in Snyk CLI](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md) page.&#x20;
+* The test success criteria are too strict. To explore this option further, Snyk recommends reviewing the test definitions of the organizations with the lowest success rate, as shown by the Adoption by Organizations widget. For more details about defining test success criteria, navigate to the [Failing of builds in Snyk CLI](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md) page.
 
 <figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption><p>Test Success Rate Trend</p></figcaption></figure>
 
@@ -422,16 +422,16 @@ In addition, you can examine the success rate column to surface organizations th
 
 * **Tested Repositories:** the number of repositories that were tested in the selected time range, with an indication of the percentage of change compared to the previous sequential period.
 * **Committed Repositories:** the number of repositories that had any commits in the last 30 days at any given time within the selected time range, with an indication of the percentage of change compared to the previous sequential period.
-* **Success Rate:**  the portion of successful tests in CI/CD against all other tests that were executed.
+* **Success Rate:** the portion of successful tests in CI/CD against all other tests that were executed.
 
 #### Repository Test Summary <a href="#repository-test-summary" id="repository-test-summary"></a>
 
 The repository test summary table shows the performed tests during the selected date range.
 
-The default sorting in the table surfaces repositories according to their last commit, allowing you to identify repositories that were expected to be tested in CI/CD pipelines and verify they were tested. Clicking the column names to sort the table according to the selected column. You can sort the table by multiple columns at a time.&#x20;
+The default sorting in the table surfaces repositories according to their last commit, allowing you to identify repositories that were expected to be tested in CI/CD pipelines and verify they were tested. Clicking the column names to sort the table according to the selected column. You can sort the table by multiple columns at a time.
 
 {% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, navigate to the [Group-level integrations](../../developer-tools/scm-integrations/group-level-integrations/) page.&#x20;
+Viewing the last commit data requires SCM Group integration. For more details, navigate to the [Group-level integrations](../../developer-tools/scm-integrations/group-level-integrations/) page.
 {% endhint %}
 
 You can execute the test on a specific repository branch in the table. The `tested` indicator means that any branch of this repository was tested during the selected date range.
@@ -543,7 +543,7 @@ Pull Request usage is visualized in a **Pull requests by type** graph and a **Pu
 
 #### Open vs Fixed issues
 
-<figure><img src="../../.gitbook/assets/open-vs-fixed-issues-pr-report.png" alt="Open vs Fixed issues graph and table"><figcaption><p>Open vs Fixed issues graph and table </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/open-vs-fixed-issues-pr-report.png" alt="Open vs Fixed issues graph and table"><figcaption><p>Open vs Fixed issues graph and table</p></figcaption></figure>
 
 The Open vs Fixed issues in Snyk PRs graph and table displays the number of open and fixed issues based on severity.
 
@@ -561,18 +561,18 @@ The repository breakdown details the number of PRs segmented by PR type and PR s
 
 ## Asset Dashboard
 
-The Asset Dashboard provides a comprehensive overview of your application and security controls. It displays essential data such as the status and trends of open issues, control coverage, and repository metadata.&#x20;
+The Asset Dashboard provides a comprehensive overview of your application and security controls. It displays essential data such as the status and trends of open issues, control coverage, and repository metadata.
 
 The Asset Dashboard is a central hub for managing and reviewing assets, making tracking inventory size easier over time and understanding the interaction between different asset types.
 
-While Snyk Inventory enables the discovery and management of your assets that should be secured,  the Snyk Asset Dashboard allows you to go beyond the details and better understand the main building blocks of your inventory. \
+While Snyk Inventory enables the discovery and management of your assets that should be secured, the Snyk Asset Dashboard allows you to go beyond the details and better understand the main building blocks of your inventory.\
 \
 The Asset Dashboard brings all the asset data that is available in your inventory and helps to answer various questions, such as:
 
 * Does my AppSec program meet the coverage requirements for business-critical assets and strategic applications?
-* Are the assets being classified properly according to their criticality?&#x20;
-* Do you know which repositories belong to which application or code owners? Are newly introduced repositories being updated with that data?&#x20;
-* What are the main programming languages and package managers that are used in repositories that have been worked on recently?&#x20;
+* Are the assets being classified properly according to their criticality?
+* Do you know which repositories belong to which application or code owners? Are newly introduced repositories being updated with that data?
+* What are the main programming languages and package managers that are used in repositories that have been worked on recently?
 
 ### Filters
 
@@ -580,21 +580,21 @@ The filters are located at the top left of the page, with the following filterin
 
 Here are the available filters:
 
-| Filter               | Description                                                                                                                                                                                                                                                                                                                                                            |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Asset Class          | The business criticality of an asset (A - most critical to D - least critical).                                                                                                                                                                                                                                                                                        |
-| Asset type           | The type of an asset (Container image, Package, Repository). Most data widgets already present certain asset types by default.                                                                                                                                                                                                                                         |
-| \*Application        | The list of the applications for which you have configured the application context catalog in Snyk Essentials.                                                                                                                                                                                                                                                         |
-| \*Catalog name       | The name of your application context catalog.                                                                                                                                                                                                                                                                                                                          |
-| \*Category           | The category of a repository asset. For example, `service` or `library`.                                                                                                                                                                                                                                                                                               |
-| Discovered           | The period when the asset was discovered.                                                                                                                                                                                                                                                                                                                              |
-| Last Seen            | The period when the asset was last imported from the integration.                                                                                                                                                                                                                                                                                                      |
-| \*Lifecycle          | The lifecycle state of the application context catalog component. For example `production`, `experimental`, `deprecated`.                                                                                                                                                                                                                                              |
-| \*Owner              | The team that owns the repository for which the application context catalog was configured.                                                                                                                                                                                                                                                                            |
-| Repository Freshness | <p>The last commit date in the repository: </p><ul><li><strong>Active</strong>: Had commits in the last 3 months.</li><li><strong>Inactive</strong>: The last commits were made in the last 3 - 6 months.</li><li><strong>Dormant</strong>: No commits in the last 6 months.</li><li><strong>N/A</strong>: There are no commits detected by Snyk Essentials.</li></ul> |
-| Source               | The integration that imported the asset.                                                                                                                                                                                                                                                                                                                               |
-| Tags                 | The asset tags. For more details about tagging assets using a policy, see the [Tagging policy](../policies/assets-policies/use-cases-for-policies/tagging-policy.md) page.                                                                                                                                                                                             |
-| \*Title              | The name of the component for which the application context catalog was configured.                                                                                                                                                                                                                                                                                    |
+| Filter               | Description                                                                                                                                                                                                                                                                                                                                                           |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Asset Class          | The business criticality of an asset (A - most critical to D - least critical).                                                                                                                                                                                                                                                                                       |
+| Asset type           | The type of an asset (Container image, Package, Repository). Most data widgets already present certain asset types by default.                                                                                                                                                                                                                                        |
+| \*Application        | The list of the applications for which you have configured the application context catalog in Snyk Essentials.                                                                                                                                                                                                                                                        |
+| \*Catalog name       | The name of your application context catalog.                                                                                                                                                                                                                                                                                                                         |
+| \*Category           | The category of a repository asset. For example, `service` or `library`.                                                                                                                                                                                                                                                                                              |
+| Discovered           | The period when the asset was discovered.                                                                                                                                                                                                                                                                                                                             |
+| Last Seen            | The period when the asset was last imported from the integration.                                                                                                                                                                                                                                                                                                     |
+| \*Lifecycle          | The lifecycle state of the application context catalog component. For example `production`, `experimental`, `deprecated`.                                                                                                                                                                                                                                             |
+| \*Owner              | The team that owns the repository for which the application context catalog was configured.                                                                                                                                                                                                                                                                           |
+| Repository Freshness | <p>The last commit date in the repository:</p><ul><li><strong>Active</strong>: Had commits in the last 3 months.</li><li><strong>Inactive</strong>: The last commits were made in the last 3 - 6 months.</li><li><strong>Dormant</strong>: No commits in the last 6 months.</li><li><strong>N/A</strong>: There are no commits detected by Snyk Essentials.</li></ul> |
+| Source               | The integration that imported the asset.                                                                                                                                                                                                                                                                                                                              |
+| Tags                 | The asset tags. For more details about tagging assets using a policy, see the [Tagging policy](../policies/assets-policies/use-cases-for-policies/tagging-policy.md) page.                                                                                                                                                                                            |
+| \*Title              | The name of the component for which the application context catalog was configured.                                                                                                                                                                                                                                                                                   |
 
 **\***&#x41;ll filters marked with `*` are visible only if you configured the [application context](../../developer-tools/scm-integrations/application-context-for-scm-integrations/) catalog for your SCM integrations.
 
@@ -602,7 +602,7 @@ Here are the available filters:
 
 The repository coverage widget provides an overview of the percentage of scanned repositories compared to the total number of available repositories, using integrated Snyk or third-party security products.
 
-Hover over any column to see how the coverage percentage is calculated.&#x20;
+Hover over any column to see how the coverage percentage is calculated.
 
 <figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption><p>Repository Coverage</p></figcaption></figure>
 
@@ -626,13 +626,13 @@ The top 10 technologies widget identifies the leading programming languages and 
 {% hint style="info" %}
 **Tips**
 
-* The technology data is available in the [asset tags](../../manage-assets/assets-inventory-components.md#tags).&#x20;
+* The technology data is available in the [asset tags](../../manage-assets/assets-inventory-components.md#tags).
 * Click a presented technology to open the inventory page in a new browser tab. This will allow you to review the related repositories in detail.
 {% endhint %}
 
 ### Top 10 package managers breakdown
 
-The top 10 package managers widget allows you to identify the leading package managers in your inventory. The quantities represent assets of package type. A [package asset](../../manage-assets/assets-inventory-layouts.md#packages) is defined as software or library that is managed by package management systems.&#x20;
+The top 10 package managers widget allows you to identify the leading package managers in your inventory. The quantities represent assets of package type. A [package asset](../../manage-assets/assets-inventory-layouts.md#packages) is defined as software or library that is managed by package management systems.
 
 ### Repository freshness
 
@@ -643,7 +643,7 @@ The repository freshness widget displays the distribution of repositories accord
 * **Dormant**: No commits in the last 6 months.
 * **N/A**: Commits data is unavailable.
 
-You can use this widget to surface the quantity of repositories that are more or less maintained in various contexts, such as specific applications.&#x20;
+You can use this widget to surface the quantity of repositories that are more or less maintained in various contexts, such as specific applications.
 
 {% hint style="info" %}
 **Tips**
@@ -795,7 +795,7 @@ Finally, you can add an **Exploit Maturity** filter to show only issues with a s
 
 <figure><img src="../../.gitbook/assets/reports_issue_detail_filtered_reports.png" alt=""><figcaption><p>Filtered Issues Detail report</p></figcaption></figure>
 
-You can then save this filtered view by clicking **Save**, adding a name to your view, and then clicking **Create view**.&#x20;
+You can then save this filtered view by clicking **Save**, adding a name to your view, and then clicking **Create view**.
 
 <figure><img src="../../.gitbook/assets/reports_saved_views_save_filtered_view.png" alt=""><figcaption><p>Create view window</p></figcaption></figure>
 

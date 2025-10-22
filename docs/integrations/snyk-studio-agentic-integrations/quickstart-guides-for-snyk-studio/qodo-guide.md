@@ -1,6 +1,6 @@
 # Qodo guide
 
-You can add the Snyk MCP server to Qodo to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+You can access Snyk Studio, including Snyk's MCP server, in Qodo to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ In the Qodo chatbox, click the **Add MCP** **tools** > **Add new MCP**. Provide 
 
 * The MCP Server name
 * The path to the Snyk CLI
-* The Snyk MCP command to [start the MCP server](../snyk-mcp-installation-configuration-and-startup.md#starting-the-snyk-mcp-server).&#x20;
+* The Snyk MCP command to [start the MCP server](broken-reference).
 * You can see a list of all MCP Servers and their tool. Locate Snyk from the list and enable all of its tools.
 
 #### Install with Node.js and `npx`
@@ -61,7 +61,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
 
 The following example shows a Snyk MCP Server that was successfully configured.
 
@@ -99,21 +99,9 @@ Qodo is then able to gather all the security scanning results, both code (SAST) 
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://snyk.io/solutions/secure-ai-generated-code/), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
-The following is a suggested instruction for [Qodo best practices](https://docs.qodo.ai/qodo-documentation/qodo-gen/chat/chat-modes/standard-mode/commands/generate-best-practices):
-
-{% code title="Qodo rule" overflow="wrap" %}
-```
-Always run Snyk Code scanning tool for new first party code generated.
-Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
-Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-Repeat this process until no issues are found.
-```
-{% endcode %}
-
-Append the following contents to the rules file at `best_practices.md`:
+The following is a suggested instruction for [Qodo best practices](https://docs.qodo.ai/qodo-documentation/qodo-gen/chat/chat-modes/standard-mode/commands/generate-best-practices). Append the following contents to the rules file at `best_practices.md`:
 
 {% code title="best_practices.md" overflow="wrap" %}
 ```
@@ -123,10 +111,9 @@ applyTo: "**"
 
 # Project security best practices
 
-- Always run Snyk Code scanning tool for new first party code generated.
-- Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
+- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
+- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
 - Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no issues are found.
+- Repeat this process until no new issues are found.
 ```
 {% endcode %}

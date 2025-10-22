@@ -1,6 +1,6 @@
 # Devin guide
 
-You can add the Snyk MCP server to Devin to secure code generated with agentic workflows through an LLM. You can achieve this in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+You can access Snyk Studio, including Snyk's MCP server, in Devin to secure code generated with agentic workflows through an LLM. You can achieve this in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
 
 ## Prerequisites
 
@@ -10,15 +10,15 @@ You can add the Snyk MCP server to Devin to secure code generated with agentic w
 
 ### Get started with Devin
 
-Navigate to [Devin.ai](https://devin.ai/) to get started using the AI software engineer.&#x20;
+Navigate to [Devin.ai](https://devin.ai/) to get started using the AI software engineer.
 
 ### Install the Snyk MCP Server in Devin
 
-Install the Snyk MCP Server by navigating to **Settings** > **Organization settings** > **MCP marketplace** > **Add your own**.&#x20;
+Install the Snyk MCP Server by navigating to **Settings** > **Organization settings** > **MCP marketplace** > **Add your own**.
 
 <figure><img src="../../../.gitbook/assets/image (385).png" alt=""><figcaption></figcaption></figure>
 
-Devin uses [snapshots of virtual machines](https://docs.devin.ai/onboard-devin/repo-setup) to complete its tasks. Install the Snyk CLI on a virtual machine to enable the Snyk MCP Server to function properly.&#x20;
+Devin uses [snapshots of virtual machines](https://docs.devin.ai/onboard-devin/repo-setup) to complete its tasks. Install the Snyk CLI on a virtual machine to enable the Snyk MCP Server to function properly.
 
 <figure><img src="../../../.gitbook/assets/image (392).png" alt=""><figcaption></figcaption></figure>
 
@@ -26,7 +26,7 @@ Devin uses [snapshots of virtual machines](https://docs.devin.ai/onboard-devin/r
 
 As a one-time setup, it is possible that you need to authenticate and trust the current Project directory. If required, the agentic workflow will manage this automatically.
 
-These workflows are automatically executed by the underlying model and the agentic code assistant, and you must approve them using a browser confirmation dialog.&#x20;
+These workflows are automatically executed by the underlying model and the agentic code assistant, and you must approve them using a browser confirmation dialog.
 
 If you need to authenticate and trust the current directory, proceed and complete the process.
 
@@ -52,17 +52,16 @@ Devin is then able to gather all the security scanning results, both code (SAST)
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://snyk.io/solutions/secure-ai-generated-code/), Snyk recommends adopting rules that align the LLM for secure code generation and workflows. The rules can be added to [Devin Knowledge](https://docs.devin.ai/product-guides/knowledge).
+To practice [Secure at Inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception), Snyk recommends adopting rules that align the LLM for secure code generation and workflows. The rules can be added to [Devin Knowledge](https://docs.devin.ai/product-guides/knowledge).
 
 The following is a suggested instruction for Devin Knowledge:
 
 {% code title="Devin Knowledge" overflow="wrap" %}
 ```
-- Always run Snyk Code scanning tool for new first party code generated.
-- Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
+- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
+- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
 - Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no issues are found.
+- Repeat this process until no new issues are found.
 ```
 {% endcode %}
 

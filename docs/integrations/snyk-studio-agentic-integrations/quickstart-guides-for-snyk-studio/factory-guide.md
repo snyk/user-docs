@@ -1,6 +1,6 @@
 # Factory guide
 
-You can add the Snyk MCP server to Factory to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+You can access Snyk Studio, including Snyk's MCP server, in Factory to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ You can add the Snyk MCP server to Factory to secure code generated with agentic
 
 ### Install Factory
 
-Add the Factory extension to your IDE. For more details, see the [Factory official documentation](https://docs.factory.ai/user-guides/factory-bridge/installation-and-usage).&#x20;
+Add the Factory extension to your IDE. For more details, see the [Factory official documentation](https://docs.factory.ai/user-guides/factory-bridge/installation-and-usage).
 
 ### Install the Snyk MCP Server in Factory
 
@@ -62,7 +62,7 @@ The following example shows a Snyk MCP Server that was successfully configured a
 
 <figure><img src="../../../.gitbook/assets/image (409).png" alt=""><figcaption></figcaption></figure>
 
-This json file can also be found by clicking on the Factory icon on the top toolbar and then selecting "Open MCP Config File".&#x20;
+This json file can also be found by clicking on the Factory icon on the top toolbar and then selecting "Open MCP Config File".
 
 ### Setting up the Snyk MCP Server <a href="#setting-up-the-snyk-mcp-server" id="setting-up-the-snyk-mcp-server"></a>
 
@@ -96,14 +96,13 @@ Factory is then able to gather all the security scanning results, both code (SAS
 
 ### "Secure at inception" rules <a href="#secure-at-inception-rules" id="secure-at-inception-rules"></a>
 
-To practice [Secure at Inception](https://snyk.io/solutions/secure-ai-generated-code/), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [Secure at Inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for [creating memories with Factory](https://docs.factory.ai/user-guides/memory/understanding-memory#adding-new-facts):
 
 ```
-Always run Snyk Code scanning tool for new first party code generated.
-Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
-Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-Repeat this process until no issues are found.
+- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
+- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
+- Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
+- Repeat this process until no new issues are found.
 ```

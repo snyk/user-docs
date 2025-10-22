@@ -8,7 +8,7 @@ To scan your Projects, you must ensure your repository contains the supported ma
 
 ## Set the Python version in Git Projects
 
-When scanning Pip Projects imported from Git, Snyk uses the version of Python specified in Organization settings or `.snyk` files.&#x20;
+When scanning Pip Projects imported from Git, Snyk uses the version of Python specified in Organization settings or `.snyk` files.
 
 {% hint style="info" %}
 It is important to specify the correct Python version for your Organization, as it can affect the version of dependencies used in scanning your Projects.
@@ -58,11 +58,11 @@ The following dependencies are not supported and are removed before the file is 
 
 * Private PyPI repos
 * `file://`, regular URLs, relative paths, and more generally URIs in `requirements.txt` files
-* Setting a different package index with `--index-url`, `-i`, `--extra-index-url`&#x20;
+* Setting a different package index with `--index-url`, `-i`, `--extra-index-url`
 * Specifying dependency archive locations with `--find-links`, `-f`
-* Installing a dependency in editable mode with `--editable`, `-e`&#x20;
+* Installing a dependency in editable mode with `--editable`, `-e`
 * Relying on a version constraints file with `--constraint`, `-c`
-* Including another requirement file with `--requirement`, `-r`&#x20;
+* Including another requirement file with `--requirement`, `-r`
 * Specific packages: `virtualenv` and `pip` for Python 2.7 and 3.7
 
 {% hint style="warning" %}
@@ -71,7 +71,7 @@ Projects with downloaded dependencies totalling more than 10GB are not supported
 
 To scan Pip Projects, Snyk analyzes your `requirements.txt` files using native `pip` tooling in an isolated Linux environment.
 
-Pip Projects scanned using the SCM integration will be given the same name as the directory where they are located.&#x20;
+Pip Projects scanned using the SCM integration will be given the same name as the directory where they are located.
 
 Snyk imports any file that follows the `**/*req*.txt` pattern. This can help if you have renamed the `requirements.txt` files, for example, to `requirements-dev.txt`.
 
@@ -100,7 +100,7 @@ Poetry dev dependencies are not included in scans by default. To change this, mo
 1. Log in to your Snyk account and navigate to the relevant Group and Organization.
 2. Select **Settings** > **Languages**.
 3. Select **Edit settings** for **Python**.
-4. Enable or disable the **Scan Poetry dev dependencies** option under the **Poetry dev dependencies** settings.&#x20;
+4. Enable or disable the **Scan Poetry dev dependencies** option under the **Poetry dev dependencies** settings.
 
 <figure><img src="../../../.gitbook/assets/image (9).png" alt="Poetry dev dependency settings"><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
 
@@ -115,7 +115,7 @@ To scan Pipenv Projects, Snyk analyzes your `Pipfile` and `Pipfile.lock` files u
 {% hint style="info" %}
 Packages from private repositories and those with non-Linux OS requirements may be unresolvable and omitted from the dependency tree.
 
-If a `Pipfile.lock` is present, any unresolved packages it contains are added to the top level of the dependency tree using versions from the lock file.&#x20;
+If a `Pipfile.lock` is present, any unresolved packages it contains are added to the top level of the dependency tree using versions from the lock file.
 {% endhint %}
 
 You can choose whether Snyk should include dependencies specified in `[dev-packages]` when scanning your Pipenv Projects.
@@ -125,6 +125,6 @@ Pipenv dev dependencies are not included in scans by default. To change this, mo
 1. Log in to your Snyk account and navigate to the relevant Group and Organization.
 2. Select **Settings** > **Languages**.
 3. Select **Edit settings** for **Python**.
-4. Enable or disable the **Scan Pipenv dev dependencies** option under the **Pipenv** settings.&#x20;
+4. Enable or disable the **Scan Pipenv dev dependencies** option under the **Pipenv** settings.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt="Pipenv dev dependency settings"><figcaption><p>Pipenv dev dependency settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt="Pipenv dev dependency settings"><figcaption><p>Pipenv dev dependency settings</p></figcaption></figure>

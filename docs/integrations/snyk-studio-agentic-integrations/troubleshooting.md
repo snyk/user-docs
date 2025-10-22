@@ -1,6 +1,6 @@
-# Troubleshooting for the Snyk MCP server
+# Troubleshooting
 
-If you encounter issues with the Snyk MCP server or its integration, try the troubleshooting steps provided here.
+If you encounter issues with Snyk Studio or the integration using Snyk's MCP server, try the troubleshooting steps provided here.
 
 ## Check Snyk CLI version compatibility
 
@@ -65,7 +65,7 @@ Remember that the MCP server can only be run locally when using SSE transport.
 
 Use these suggestions to improve and expand on your Snyk CLI debug output to troubleshoot MCP-related issues:
 
-* For more detailed Snyk CLI logs, which are useful whether you are starting the `snyk mcp` server or performing direct test scans (see [Basic repository scanning](troubleshooting-for-the-snyk-mcp-server.md#basic-repository-scanning-crucial-diagnostic)), you can add verbosity parameters to your Snyk commands.\
+* For more detailed Snyk CLI logs, which are useful whether you are starting the `snyk mcp` server or performing direct test scans (see [Basic repository scanning](troubleshooting.md#basic-repository-scanning-crucial-diagnostic)), you can add verbosity parameters to your Snyk commands.\
   \
   These include using the `-d` or `--debug` flag for debug level output, for example:
   * `snyk mcp -t sse -d`

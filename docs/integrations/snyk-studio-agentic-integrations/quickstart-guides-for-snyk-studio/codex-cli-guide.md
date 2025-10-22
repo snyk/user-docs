@@ -1,6 +1,6 @@
 # Codex CLI guide
 
-You can add the Snyk MCP server to Codex CLI to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+You can access Snyk Studio, including Snyk's MCP server, in Codex CLI to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
 
 ## Prerequisites
 
@@ -19,8 +19,7 @@ This installation instruction assumes you have a Node.js local development envir
 To install the Snyk MCP Server using Codex's own `.codex/config.toml` file, proceed with the following instructions:
 
 * Create or edit the `.codex/config.toml` file
-*   Insert the following `mcp_servers` configuration block to the file:\
-
+*   Insert the following `mcp_servers` configuration block to the file:\\
 
     ```
     [mcp_servers.snyk-security]
@@ -33,11 +32,10 @@ To install the Snyk MCP Server using Codex's own `.codex/config.toml` file, proc
 
 This installation instruction assumes you have installed the Snyk CLI and the `snyk` executable is available in your system's path.
 
-To install the Snyk MCP Server using the `.codex/config.toml`  Codex file, follow these instructions:
+To install the Snyk MCP Server using the `.codex/config.toml` Codex file, follow these instructions:
 
 * Create or edit the `.codex/config.toml` file
-*   Insert the following `mcpServers` configuration block to the file:\
-
+*   Insert the following `mcpServers` configuration block to the file:\\
 
     ```
     [mcp_servers.snyk-security]
@@ -46,7 +44,7 @@ To install the Snyk MCP Server using the `.codex/config.toml`  Codex file, follo
     ```
 
 {% hint style="info" %}
-&#x20;If you installed `snyk` using npm as a global module and you are using fnm to manage your versions, then you must specify the full path to the `snyk` executable. The path may look like this: `/Users/username/.local/state/fnm_multishells/8831_1753881185071/bin/snyk`.
+If you installed `snyk` using npm as a global module and you are using fnm to manage your versions, then you must specify the full path to the `snyk` executable. The path may look like this: `/Users/username/.local/state/fnm_multishells/8831_1753881185071/bin/snyk`.
 {% endhint %}
 
 * Restart the Codex CLI
@@ -89,30 +87,17 @@ Codex CLI will invoke Snyk scanning, provide output and insights based on the re
 
 ### "Secure at inception" rules
 
-To practice [Secure at Inception](https://snyk.io/solutions/secure-ai-generated-code/), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice s[#secure-at-inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception "mention"), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
-The following is a suggested instruction for [Codex CLI's AGENTS.md context file](https://github.com/openai/codex?tab=readme-ov-file#memory--project-docs):
-
-{% code title="Codex CLI context" overflow="wrap" %}
-```
-Always run Snyk Code scanning tool for new first party code generated.
-Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
-Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-Repeat this process until no issues are found.
-```
-{% endcode %}
-
-Add the following contents to the `AGENTS.md` file in your root directory of your Project:
+The following is a suggested instruction for [Codex CLI's AGENTS.md context file](https://github.com/openai/codex?tab=readme-ov-file#memory--project-docs). Add the following contents to the `AGENTS.md` file in your root directory of your Project:
 
 {% code title="AGENTS.md" overflow="wrap" %}
 ```
 # Project security best practices
 
-- Always run Snyk Code scanning tool for new first party code generated.
-- Always run Snyk SCA scanning tool for new dependencies or dependency updates.
-- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from Snyk.
+- Always run **snyk_code_scan** tool for new first party code that is generated in a Snyk-supported language.
+- If any security issues are found based on newly introduced or modified code or dependencies, attempt to fix the issues using the results context from **Snyk**.
 - Rescan the code after fixing the issues to ensure that the issues were fixed and that there are no newly introduced issues.
-- Repeat this process until no issues are found.
+- Repeat this process until no new issues are found.
 ```
 {% endcode %}
