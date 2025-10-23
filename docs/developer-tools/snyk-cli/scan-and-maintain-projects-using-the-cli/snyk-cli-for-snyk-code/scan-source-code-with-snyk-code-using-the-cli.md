@@ -62,7 +62,7 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof
 ## Publish Snyk Code CLI results
 
 {% hint style="info" %}
-The minimum supported CLI version is v1.1297.0. For best results, Snyk recommends using version v1.1299.1+ or later.
+The minimum supported CLI version is v1.1297.0. For best results, Snyk recommends using version v1.1300.0+ or later.
 {% endhint %}
 
 You can publish Snyk Code results to a Snyk Project with or without using an integration. Here’s how it works and what you need to know.
@@ -97,9 +97,6 @@ In the terminal, enter the following command:
 snyk code test --report --project-name="<PROJECT_NAME>"
 ```
 
-* `project-name` must be in double quotation marks. Single quotes or missing quotes will result in an error.
-* `project-name` must contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (\_), and square brackets (\[]).
-
 After using this option, log in to Snyk and view your Projects to see the snapshot.
 
 ### Commands to publish Snyk Code CLI results <a href="#commands-to-publish-snyk-code-cli-results" id="commands-to-publish-snyk-code-cli-results"></a>
@@ -116,9 +113,6 @@ To make the Project easier to interpret in Snyk Web UI, you can use additional c
 snyk code test --report --project-name="<PROJECT_NAME>" --target-name="<TARGET_NAME>"
 ```
 
-* Both `<PROJECT_NAME>` and `<TARGET_NAME>` must be in double quotation marks. Single quotes or missing quotes will result in an error.
-* The Project name and Target name each must contain only alphanumeric characters, forward slashes (/), dashes (-), underscores (\_), and square brackets (\[]).
-
 The following command creates or uploads an existing Project named `<PROJECT_NAME>` under a target named `<TARGET_NAME>` and grouped by the "`$(git branch --show-current)"` branch name.
 
 ```
@@ -126,6 +120,12 @@ snyk code test --report --project-name="<PROJECT_NAME>" --target-name="<TARGET_N
 ```
 
 <figure><img src="../../../../.gitbook/assets/image (4) (4).png" alt=""><figcaption><p>Code analysis Projects grouped by branch</p></figcaption></figure>
+
+You can use the `--help` flag with the `snyk code test` command to view inline documentation directly in your terminal.
+
+```
+snyk code test --help
+```
 
 ### **Troubleshooting published Snyk Code CLI results** <a href="#troubleshooting-publication-of-snyk-code-cli-results" id="troubleshooting-publication-of-snyk-code-cli-results"></a>
 
