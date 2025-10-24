@@ -825,7 +825,8 @@ This feature is under development and is not yet available for public use.
 
 **Command is experimental**
 
-This CLI command is experimental, which means it is provided "as-is" without warranty of any kind. You must acknowledge this by specifying the --experimental flag to run the command.
+This CLI command is experimental, which means it is provided "as-is" without warranty of any kind.
+You must acknowledge this by specifying the --experimental flag to run the command.
 
 
 ### [SNYK-CLI-0016](#snyk-cli-0016)
