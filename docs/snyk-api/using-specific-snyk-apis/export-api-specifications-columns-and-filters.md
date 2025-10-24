@@ -10,7 +10,7 @@ Before running the first export, ensure that all API requests include:
 * The API version parameter. The latest version is `2024-10-15`. You can also include the date of the current day for the version if you want to auto-upgrade when you use the API.
 * The authorization header. Use a user or a service account Snyk API Token.
 * The `dataset` parameter. The only valid values are `issues` or `usage`. This parameter is required to specify which dataset you want to export.
-* At least one date filter (`introduced` or `updated`)
+* At least one date filter (`introduced` for the `issues` dataset or `updated` for either)
 {% endhint %}
 
 ## Data consumption process
@@ -65,7 +65,7 @@ Given that the data is typically refreshed every two hours, Snyk anticipates tha
 The exported CSV files will remain available in the designated S3 bucket for a period of three days.
 
 {% hint style="danger" %}
-While the files are accessible for three days, the self-signed link to retrieve the export results is available only for 60 minutes after its creation.
+While the files are accessible for three days, the self-signed link to retrieve the export results is available only for 60 minutes after its creation by default. Users can limit the link expiration by passing a value between 0 and 3600 to the `url_expiration_seconds` attribute.
 {% endhint %}
 
 ## Available columns and filters
@@ -81,7 +81,7 @@ Although the requested filters are not case-sensitive, the values for those filt
 Use the exact filter value as it appears in the Snyk Web UI. To clarify this requirement, case-sensitive filters are indicated in the table of available filters.
 
 {% hint style="info" %}
-At least one date filter (`introduced` or `updated`) must be included in your request.
+At least one date filter (`introduced` for the `issues` dataset or `updated` for either) must be included in your request.
 {% endhint %}
 
 <table><thead><tr><th width="205.140625">Filter</th><th>Applicable Datasets</th><th width="366.3046875">Description</th></tr></thead><tbody><tr><td>updated (from and to)</td><td>issues, usage</td><td><p>The date and time of the last update that affected any attribute in the dataset.</p><p></p><p>Use this filter during cyclic exports to export only data that was updated since the last export.</p><p><br>Acceptable format: <code>YYYY-MM-DDTHH:MM:SSZ</code> <br>(example: <code>2024-11-28T09:10:00Z</code>)</p></td></tr><tr><td>introduced (from and to)</td><td>issues</td><td>Date when the issue was introduced. <br>Acceptable format: <code>YYYY-MM-DDTHH:MM:SSZ</code> <br>(example: <code>2024-11-28T09:10:00Z</code>)</td></tr><tr><td>orgs</td><td>issues, usage</td><td>Snyk <code>Organization ID</code> (available only for the Group endpoints).</td></tr><tr><td>environment</td><td>issues</td><td>The environment of the Project (case insensitive).</td></tr><tr><td>lifecycle</td><td>issues</td><td>The lifecycle of the Project (case insensitive).</td></tr><tr><td>product_name</td><td>issues</td><td>Name of the Snyk product that produced the issue (case sensitive).</td></tr><tr><td>project_type</td><td>issues</td><td>The scanning method to use for a particular Project (case sensitive).</td></tr><tr><td>project_tags</td><td>issues</td><td>All tags (as key:value pair) which have been assigned to this Project (case sensitive).</td></tr></tbody></table>
