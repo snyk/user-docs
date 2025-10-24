@@ -198,3 +198,8 @@ redirects:
   snyk-api/reference/assets: snyk-api/reference/asset.md
   snyk-api/rest-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token: snyk-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token.md
   products/snyk-code/snyk-code-language-and-framework-support: supported-languages/supported-languages-package-managers-and-frameworks.md
+  supported-languages/supported-languages-list/java-and-kotlin/java-and-kotlin-for-code-analysis.md: supported-languages/supported-languages-list/java-and-kotlin/README.md
+  supported-languages/supported-languages-list/java-and-kotlin/java-and-kotlin-for-open-source.md: supported-languages/supported-languages-list/java-and-kotlin/README.md
+  supported-languages/supported-languages-list/java-and-kotlin/guidance-for-java-and-kotlin.md: supported-languages/supported-languages-list/java-and-kotlin/README.md
+  supported-languages/supported-languages-list/java-and-kotlin/snyk-workflow-with-java-and-kotlin.md: supported-languages/supported-languages-list/java-and-kotlin/README.md
+  supported-languages/supported-languages-list/java-and-kotlin/more-information-about-java-support.md: supported-languages/supported-languages-list/java-and-kotlin/README.md
