@@ -48,8 +48,8 @@ The `.snyk` file must be in the same directory as the Project manifest file.
 Snyk will select which Python version to use according to the `major`, `minor` and `patch` versions specified in the `.snyk` file.
 
 * `Major` version only (for example, 2 or 3): scanned with default `minor` versions - 2.7 or 3.7
-* `Major` and `minor` version (for example, 3.7, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13): scanned with 3.7, 3.8, 3.9, 3.10, 3.11, 3.12, or 3.13
-* `Major`, `minor` and `patch` version (or example, 3.8.x, 3.9.x, 3.10.x, 3.11.x, 3.12.x, 3.13.x): the specific `patch` version is ignored, the Project is scanned with default versions of 3.8, 3.9, 3.10, 3.11, 3.12, or 3.13
+* `Major` and `minor` version (for example, 3.7, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13, 3.14): scanned with 3.7, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13, or 3.14
+* `Major`, `minor` and `patch` version (or example, 3.8.x, 3.9.x, 3.10.x, 3.11.x, 3.12.x, 3.13.x): the specific `patch` version is ignored, the Project is scanned with default versions of 3.8, 3.9, 3.10, 3.11, 3.12, 3.13 or 3.14
 * Any versions specified with an unsupported `minor` version: defaults to 2.7 or 3.7
 
 ## SCM repositories and Pip

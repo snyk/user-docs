@@ -22,7 +22,7 @@ Available functions:
 It is possible that some Python Projects contain dependencies that require specific versions of Python. Therefore, the version of Python used when scanning can affect the dependency tree that Snyk generates.
 {% endhint %}
 
-Snyk supports the following Python versions:  `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`.
+Snyk supports the following Python versions:  `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`, `3.14`
 
 ### Supported frameworks and libraries
 
