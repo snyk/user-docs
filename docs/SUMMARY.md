@@ -296,7 +296,7 @@
     * [JetBrains Junie](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/jetbrains-junie.md)
     * [Kiro guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/kiro-guide.md)
     * [Qodo guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/qodo-guide.md)
-    * [Windsurf guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/windsurf-guide.md)
+    * [Windsurf guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/windsurf-guide.md)
   * [Troubleshooting](integrations/snyk-studio-agentic-integrations/troubleshooting.md)
   * [Usage analytics](integrations/developer-guardrails-for-agentic-workflows/usage-analytics.md)
 * [Third-party integrations for Snyk AppRisk](integrations/connect-a-third-party-integration.md)

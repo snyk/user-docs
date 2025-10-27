@@ -1,17 +1,17 @@
 # Windsurf guide
 
-Access Snyk Studio, including Snyk's MCP server, in Windsurf to secure code generated with agentic workflows through an LLM. This can be achieved by using the Snyk Security plugin or installing Snyk Studio directly. For most users, we recommend accessing Snyk Studio using the Snyk Security plugin.&#x20;
+Access [Snyk Studio](../../../discover-snyk/getting-started/glossary.md#snyk-studio), including Snyk's MCP server, in Windsurf to secure code generated with agentic workflows through an LLM. This can be achieved by using the Snyk Security plugin or installing Snyk Studio directly. For most users, we recommend accessing Snyk Studio using the Snyk Security plugin.&#x20;
 
 ## Recommended: Access Snyk Studio using the Snyk Security Plugin
 
-1. Open the [Snyk Security plugin](cursor:extension/snyk-security.snyk-vulnerability-scanner) in Visual Studio Code
+1. Open the Snyk Security plugin in Windsurf
 2. Click `Install`
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-10-13 at 2.19.30 PM.png" alt="Install the Snyk Security plugin in Visual Studio Code"><figcaption><p>Install the Snyk Security plugin in Visual Studio Code</p></figcaption></figure>
 
 ### Enable "Secure At Inception"
 
-Once installation completes, a modal will appear prompting you to opt-in to Snyk Studio's "Secure at Inception." This will automatically configure the necessary rules to scan any new AI generated code. Additional variations are available within the plugin's **Settings** page.
+Once installation completes, a modal will appear prompting you to opt-in to Snyk Studio's "[Secure at Inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception)." This will automatically configure the necessary rules to scan any new AI generated code. Additional variations are available within the plugin's **Settings** page.
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -58,17 +58,7 @@ Install Windsurf to your local machine from the [Windsurf website](https://winds
 
 Install the official Snyk MCP Server using the Windsurf MCP Marketplace.
 
-<figure><img src="../../../.gitbook/assets/image (528).png" alt=""><figcaption></figcaption></figure>
-
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.&#x20;
-
-<figure><img src="../../../.gitbook/assets/image (26).png" alt="Example of a successful MCP server configuration " width="375"><figcaption></figcaption></figure>
-
 <figure><img src="../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
-
-The following example shows a Snyk MCP Server that was successfully configured and started.
-
-<figure><img src="../../../.gitbook/assets/image (26).png" alt="Example of a successful MCP server configuration " width="375"><figcaption></figcaption></figure>
 
 ## Setting up the Snyk MCP Server
 
@@ -121,7 +111,7 @@ description: Snyk Security At Inception
 
 #### Troubleshooting - Install Snyk MCP Server
 
-The Snyk MCP Server should be installed via the Windsurf MCP Marketplace. If you need to install the Snyk MCP Server manually then follow one of the options below.
+The Snyk MCP Server should be installed using the IDE Extension or Windsurf MCP Marketplace. If you need to install the Snyk MCP Server manually then follow one of the options below.
 
 #### Install with Node.js and `npx`
 
