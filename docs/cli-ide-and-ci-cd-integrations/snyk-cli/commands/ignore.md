@@ -178,7 +178,7 @@ Ignore a specific file.
 The rule created in the `.snyk` file is used by `snyk test --unmanaged` until 2031-01-20, with a description as a reference for the future.
 
 ```
-$ snyk ignore --file-path='./deps/curl-7.58.0/src/tool_msgs.c' --expiry='2031-01-20' --reason='patched file'
+$ snyk ignore --file-path='deps/curl-7.58.0/src/tool_msgs.c' --expiry='2031-01-20' --reason='patched file'
 ```
 
 ### Ignore files or folders using glob expression - Snyk Code and `unmanaged` only
@@ -188,7 +188,7 @@ To ignore files matching a glob expression, add them to a specific group.
 This applies to Snyk Code; it does not apply to Snyk Open Source except `unmanaged`, to Container, or to IaC.
 
 ```
-$ snyk ignore --file-path='./**/vendor/**/*.cpp' --file-path-group='global'
+$ snyk ignore --file-path='**/vendor/**/*.cpp' --file-path-group='global'
 ```
 
 ## More information about the `snyk ignore` command
