@@ -21,7 +21,7 @@ Snyk for .NET supports NuGet and Paket as package managers and [nuget.org](https
 
 * Snyk Open Source:
   * For NuGet: `project.assets.json`, `*.sln`, `packages.config,` `project.json`
-  * For Paket: `paket.dependencies`, `paket.lock`
+  * For Paket: `paket.dependencies` and `paket.lock`
 
 ## Frameworks and libraries
 

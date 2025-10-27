@@ -74,7 +74,7 @@ For Swift with Snyk Open Source, you can use Swift 3.0 or higher.
 
 For Swift and Objective-C with Snyk Open Source, the following file formats are supported:
 
-* For CocoaPods: `podfile`, `podfile.lock`,
+* For CocoaPods: `podfile` and `podfile.lock`
 * For Swift: `package.swift`
 
 For Swift and Objective-C with Snyk Open Source, Snyk provides support for package managers as follows:

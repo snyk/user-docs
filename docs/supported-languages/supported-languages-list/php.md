@@ -57,7 +57,7 @@ The **Snyk Fix PR** feature is not available for Swift and Objective-C. This mea
 
 ## PHP for Snyk Open Source
 
-For PHP with Snyk Open Source, the following file formats are supported: `composer.json`, `composer.lock`
+For PHP with Snyk Open Source, the following file formats are supported: `composer.json` and `composer.lock`
 
 Available features:
 

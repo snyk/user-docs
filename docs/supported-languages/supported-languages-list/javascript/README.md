@@ -36,7 +36,7 @@ As a package registry, it supports [npmjs.org](https://www.npmjs.org/).
 Snyk for JavaScript supports the following file formats:
 
 * Snyk Open Source:
-  * For npm package manager: `package.json`, `package-lock.json`
+  * For npm package manager: `package.json` and `package-lock.json`
   * For pnpm package manager: `pnpm-lock.yaml`
   * For yarn package manager: `yarn.lock`
 * Snyk Code: `.ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.cts`, `.mts`, `.tsx`, `.vue`, `.mjs`, `.cjs`

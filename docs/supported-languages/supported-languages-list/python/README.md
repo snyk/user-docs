@@ -112,9 +112,9 @@ Both `src-layout` and `flat-layout` are supported. Proper adherence to these con
 
 For Python with Snyk Open Source, the following file formats are supported:
 
-* For poetry: `pyproject.toml`, `poetry.lock`
+* For poetry: `pyproject.toml` and `poetry.lock`
 * For pip: `requirements.txt`
-* For pipenv: `pipfile`, `pipfile.lock`
+* For pipenv: `pipfile` and `pipfile.lock`
 * For setup.py: `setup.py`
 
 Available features:
