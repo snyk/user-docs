@@ -1,15 +1,15 @@
-# Tagging policy
+# Labeling policy
 
-## Tagging policy
+## Labeling policy
 
-Categorize and label repository assets with [asset tags](../../../../manage-assets/assets-inventory-components.md#tags). You can use the **Set Asset Tag** action to mark the repositories to which the filter criteria you have set apply.&#x20;
+Categorize and label repository assets with [asset labels](../../../../manage-assets/assets-inventory-components.md#tags). You can use the **Set Asset Labels** action to mark the repositories to which the filter criteria you have set apply.&#x20;
 
-Snyk Essentials has a number of pre-defined system tags that can be used for filtering and setting tags with policies. User-defined custom tags can be created using policies. You can create a Set Asset Tag policy action and define a custom tag by typing your tag in the tag search bar and selecting **Create new: `tag_name`**. In this example the `tag_name` is payment.
+Snyk Essentials has a number of pre-defined system labels that can be used for filtering and setting labels with policies. User-defined custom labels can be created using policies. You can create a Set Asset Label policy action and define a custom tag by typing your tag in the tag search bar and selecting **Create new: `label_name`**. In this example the `label_name` is payment.
 
-<figure><img src="../../../../.gitbook/assets/set asset tag 1.png" alt="" width="375"><figcaption><p>Assets Policy - Creating a new tag</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/set asset label new2.png" alt="" width="182"><figcaption><p>Assets Policy - Creating a new label</p></figcaption></figure>
 
-The following use case demonstrates how to apply the custom-defined `backend` tag to assets that match certain naming conventions. This allows a quick filter for backend assets from the Inventory view.
+The following use case demonstrates how to apply the custom-defined `backend` label to assets that match certain naming conventions. This allows a quick filter for backend assets from the Inventory view.
 
 This is how the policy should look after you finish setting up all filters and actions.
 
-<figure><img src="../../../../.gitbook/assets/set_asset_tag.png" alt=""><figcaption><p>Assets Policy - Set Asset Tag</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/set asset label new (1).png" alt=""><figcaption><p>Assets Policy - Labeling backend repositories</p></figcaption></figure>
