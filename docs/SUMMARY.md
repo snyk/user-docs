@@ -1057,6 +1057,7 @@
     * [REST Issues experimental API to GA API migration guide](snyk-api/api-end-of-life-eol-process-and-migration-guides/guides-to-migration/rest-issues-experimental-api-to-ga-api-migration-guide.md)
     * [Search Audit Logs (Group and Org) v1 API to GA REST Audit logs API migration guide](snyk-api/api-end-of-life-eol-process-and-migration-guides/guides-to-migration/search-audit-logs-group-and-org-v1-api-to-ga-rest-audit-logs-api-migration-guide.md)
     * [V1 Issues APIs to REST Issues API migration guide](snyk-api/api-end-of-life-eol-process-and-migration-guides/guides-to-migration/v1-reporting-issues-and-v1-aggregated-issues-apis-to-rest-issues-api-migration-guide.md)
+    * [V1 Reporting APIs to Export API migration guide](snyk-api/api-end-of-life-eol-process-and-migration-guides/guides-to-migration/v1-reporting-apis-to-export-api-migration-guide.md)
   * [Candidates for upcoming API end-of-life cadences](snyk-api/api-end-of-life-eol-process-and-migration-guides/candidates-for-upcoming-api-end-of-life-cadences.md)
 
 ## Snyk platform administration

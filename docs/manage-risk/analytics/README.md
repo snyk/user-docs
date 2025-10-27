@@ -1,5 +1,9 @@
 # Analytics
 
+{% hint style="info" %}
+Legacy Reports (in the Snyk Web UI) and the Reporting API v1 have been deprecated.  They will be removed from the product on April 27, 2026. This extended timeline is designed to give your teams ample time to assess your usage and migrate to the new solution. View the API Migration guide for help transitioning to the newer [Export API](../../snyk-api/using-specific-snyk-apis/export-api-specifications-columns-and-filters.md).&#x20;
+{% endhint %}
+
 Analytics provides executives, as well as Application Security (AppSec) leaders and practitioners a view into the performance of their AppSec program. Snyk customers can understand at a glance the strengths and weaknesses of their program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment. Analytics is available at the tenant level.&#x20;
 
 {% hint style="info" %}
