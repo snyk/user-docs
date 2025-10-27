@@ -12,10 +12,10 @@ See the following for detailed permission requirements:
 * Bitbucket
 * Azure Repositories (TFS)
 
-### GitHub and GitHub Enterprise permissions requirements&#x20;
+### GitHub and GitHub Enterprise permissions requirements
 
 {% hint style="info" %}
-For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/) and [Integrated SCM tokens for Snyk Broker](scm-integrations-and-snyk-broker.md#integrated-scm-tokens-for-classic-broker).
+For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/) and [Integrated SCM tokens for Snyk Broker](scm-integrations-and-snyk-broker.md#integrated-scm-tokens-for-classic-broker).
 {% endhint %}
 
 The Snyk GitHub Enterprise integration is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub and the access defined for the Personal Access Token (PAT) on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
@@ -54,7 +54,7 @@ To set up the GitHub Cloud app integration you must be a:
 * GitHub Repository Admin (if installing through the GitHub UI).
 
 {% hint style="info" %}
-While some permissions may be optional from GitHub’s perspective, they are necessary to support Snyk functions. These permissions **cannot be customized** for your individual needs because the app is registered under the Snyk Organization.&#x20;
+While some permissions may be optional from GitHub’s perspective, they are necessary to support Snyk functions. These permissions **cannot be customized** for your individual needs because the app is registered under the Snyk Organization.
 {% endhint %}
 
 The following table states the required GitHub App permissions and scopes:
@@ -155,5 +155,5 @@ To set up the Snyk Azure Repositories (TFS) integration you must be:
 
 In Azure, the PAT requires the following permissions for Snyk access:
 
-* **Expiry**: Custom defined. Snyk recommends choosing a token expiration date that is far in the future.&#x20;
+* **Expiry**: Custom defined. Snyk recommends choosing a token expiration date that is far in the future.
 * **Scopes**: Custom defined. `Read & write` permissions are needed for the **Code** scope.

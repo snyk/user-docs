@@ -11,7 +11,7 @@ If you are a Snyk Enterprise plan customer, Snyk recommends that you use the Git
 ### Prerequisites for GitHub Enterprise integration
 
 * Internet-accessible repositories.\
-  If your repositories are not internet-accessible, you must use [Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/). This requires creating a startup script. For the script and instructions, visit [GitHub Enterprise - install and configure using Docker](../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md).
+  If your repositories are not internet-accessible, you must use [Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/). This requires creating a startup script. For the script and instructions, visit [GitHub Enterprise - install and configure using Docker](../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md).
 * A public or private GitHub project.
 * A Snyk Organization Admin user role. To learn more, visit [Pre-defined roles](../../../snyk-platform-administration/user-roles/pre-defined-roles.md#organization-level-permissions).
 * The required [PAT](github-enterprise.md#generate-a-personal-access-token) and GitHub repository access scope permissions. To learn more, visit [GitHub and GitHub Enterprise permission requirements](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements).
@@ -34,7 +34,7 @@ Follow these steps to connect Snyk with your GitHub repositories:
 
 1. Create a dedicated service account in GitHub Enterprise with a write level or higher scope for the repos you want to monitor with Snyk permissions.\
    See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required access scopes for the GitHub integration](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements) for details.\
-   Note that to create webhooks, which is required for PR checks, the repo permission for the account must be `Admin`. GitHub custom roles are not supported.&#x20;
+   Note that to create webhooks, which is required for PR checks, the repo permission for the account must be `Admin`. GitHub custom roles are not supported.
 2. [Generate a personal access token](github-enterprise.md#generate-a-personal-access-token) for that account.
 3. [Authorize your personal access token and enable SSO.](github-enterprise.md#how-to-authorize-your-personal-access-token-and-enable-sso)
 4. [Import your GitHub repositories](github-enterprise.md#how-to-import-github-repositories).
@@ -129,7 +129,7 @@ Users can either be manually specified, and all will be assigned, or automatical
 
 #### **Enable Auto-assign for all Projects in the GitHub Enterprise integration**
 
-To configure the Auto-assign settings for all the Projects from an imported private repository, go to the Github integration settings using Organization **Settings** > **Integrations** > **GitHub** and select **Enable pull request assignees**.&#x20;
+To configure the Auto-assign settings for all the Projects from an imported private repository, go to the Github integration settings using Organization **Settings** > **Integrations** > **GitHub** and select **Enable pull request assignees**.
 
 You can then choose to assign PRs to the last user to change the manifest file or specified contributors.
 
@@ -160,8 +160,7 @@ Disconnecting the Snyk GitHub Enterprise integration halts all scans for importe
 
 1. Navigate to the Snyk GitHub Enterprise integration **Settings**.
 2. At the bottom of the page, select **Remove GitHub Enterprise.**
-3.  A confirmation modal opens. To proceed, select **Disconnect GitHub Enterprise**. \
-
+3.  A confirmation modal opens. To proceed, select **Disconnect GitHub Enterprise**. \\
 
     <figure><img src="../../../.gitbook/assets/2023-11-09_17-38-28.png" alt="Confirm disconnecting from GitHub Enterprise" width="375"><figcaption><p>Confirm disconnecting from GitHub Enterprise</p></figcaption></figure>
 
@@ -170,7 +169,7 @@ After GitHub Enterprise is disconnected, imported Snyk Projects will be set to i
 You can re-connect anytime; however, re-initiating GitHub Enterprise projects for monitoring requires setting up the integration again.
 
 4. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk Broker.
-   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md) page.
+   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](../../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md) page.
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 5. API URL (`mandatory`) - Input the API URL. The default URL is `https://api.github.com`.
 6. Pull personal repositories (`optional`): Enable the option if you only want to pull the repositories you own.

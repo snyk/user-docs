@@ -13,7 +13,7 @@ Available integrations:
 
 Available functions:
 
-* Test your app's SBOM using `pkg:golang`&#x20;
+* Test your app's SBOM using `pkg:golang`
 * Test your app's packages using `pkg:golang`
 
 ## Technical specifications
@@ -23,7 +23,6 @@ Available functions:
 * Azure/azure-sdk-for-go/sdk/ai/azopenai - Comprehensive&#x20;
 * gage-technologies/mistral-go - Comprehensive&#x20;
 * Gin - Partial&#x20;
-* Go Standard Library - Comprehensive&#x20;
 * google/generative-ai-go/genai - Comprehensive&#x20;
 * GORM library - Partial&#x20;
 * grpc-go - Comprehensive
@@ -38,7 +37,7 @@ For Go, Snyk supports Go Modules and dep as package managers.
 
 ## Go for Snyk Code
 
-The following file format is supported: .`go`
+For Go with Snyk Code, Snyk supports Go Standard Library comprehensive as a library, and .`go` as a file format.
 
 Available features:
 
@@ -57,7 +56,7 @@ Available features:
 * Reports
 
 {% hint style="info" %}
-If the **Snyk Fix PR** feature is enabled, this means that you will be notified if the PR checks fail when the following conditions are met:&#x20;
+If the **Snyk Fix PR** feature is enabled, this means that you will be notified if the PR checks fail when the following conditions are met:
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**
@@ -145,9 +144,9 @@ If your private modules have other private modules from another Git organization
 
 Private module support in different SCMs varies depending on whether [full source code analysis](go.md#enable-full-source-code-analysis) is enabled or disabled.
 
-| Full source code analysis enabled                                                                                                      | Full source code analysis disabled                                                |
-| -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| <ul><li>Azure Repos</li><li>Bitbucket Cloud</li><li>Bitbucket Server</li><li>GitHub</li><li>GitLab</li><li>GitHub Enterprise</li></ul> | <p></p><ul><li>Bitbucket Cloud</li><li>GitHub</li><li>GitHub Enterprise</li></ul> |
+| Full source code analysis enabled                                                                                                      | Full source code analysis disabled                                         |
+| -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| <ul><li>Azure Repos</li><li>Bitbucket Cloud</li><li>Bitbucket Server</li><li>GitHub</li><li>GitLab</li><li>GitHub Enterprise</li></ul> | <ul><li>Bitbucket Cloud</li><li>GitHub</li><li>GitHub Enterprise</li></ul> |
 
 #### **Snyk Broker support for Go**
 

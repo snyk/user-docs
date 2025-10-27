@@ -1,6 +1,6 @@
 # Jira - install and configure using Helm
 
-Before installing, review the [prerequisites](./) and the general instructions for installation using [Helm](../install-and-configure-broker-using-helm.md).
+Before installing, review the [prerequisites](./) and the general instructions for installation using [Helm](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md).
 
 {% hint style="info" %}
 **Multi-tenant settings for regions**\
@@ -11,7 +11,7 @@ When installing, you must add a command in your script to set the `brokerServerU
 
 To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
 
-`helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`&#x20;
+`helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`
 
 Then, run the following commands to install the Broker and customize the environment variables. For definitions of the environment variables, see [Jira - environment variables for Snyk Broker](jira-environment-variables-for-snyk-broker.md).
 

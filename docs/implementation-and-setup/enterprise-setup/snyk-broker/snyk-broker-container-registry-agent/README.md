@@ -65,7 +65,7 @@ The system and software requirements to set up and run the Snyk Broker Container
 * Container registry credentials that have list and pull images permissions
 * Connection between Broker and Agent
 * HTTPS connection between the Agent and the registry. For HTTP-only registries, deploy a reverse proxy between the Agent and the container registry.
-* If using Classic Broker for Docker, use image `snyk/broker:container-registry-agent` when deploying the Broker client.&#x20;
+* If using Classic Broker for Docker, use image `snyk/broker:container-registry-agent` when deploying the Broker client.
 * If using Universal Broker: for Docker, use image `snyk/broker:universal` when deploying the Broker client.
 * [Download for the Container Registry Agent image on Docker](https://hub.docker.com/r/snyk/container-registry-agent/tags?page=1\&ordering=last_updated) and use the `snyk/container-registry-agent:latest` command if you use Docker.
 
@@ -97,7 +97,7 @@ docker run --restart=always \
 
 ### Universal Broker
 
-Deploy the Universal Broker by following the installation instructions available on the [Universal Broker ](../universal-broker/)page. The `snyk-broker-config` CLI tool guides you through the process of submitting and storing all configuration details needed to connect the Broker Client to the Container Registry Agent and the Container Registry.
+Deploy the Universal Broker by following the installation instructions available on the [Universal Broker ](../../../../enterprise-setup/snyk-broker/universal-broker/)page. The `snyk-broker-config` CLI tool guides you through the process of submitting and storing all configuration details needed to connect the Broker Client to the Container Registry Agent and the Container Registry.
 
 You must provide the following details while creating your connection:
 

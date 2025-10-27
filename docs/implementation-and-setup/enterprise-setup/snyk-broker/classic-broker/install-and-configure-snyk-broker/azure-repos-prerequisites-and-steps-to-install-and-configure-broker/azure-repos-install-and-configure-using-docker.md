@@ -6,7 +6,7 @@
 Snyk Azure Repos are available only for Azure DevOps/TFS 2020 or above.
 {% endhint %}
 
-Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../install-and-configure-broker-using-docker.md).
+Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md).
 
 This integration is useful to ensure a secure connection with your on-premise or cloud Azure Repos deployment.
 

@@ -1,6 +1,6 @@
 # Jira - install and configure using Docker
 
-Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../install-and-configure-broker-using-docker.md).
+Before installing, review the [prerequisites](./) and the general instructions for installation using [Docker](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md).
 
 This integration is useful to ensure a secure connection with your on-premise Jira deployment.
 
@@ -51,7 +51,7 @@ docker run --restart=always \
 
 ## Start the Broker Client container and verify the connection with Jira
 
-&#x20;Paste the Broker Client configuration to start the Broker Client container.
+Paste the Broker Client configuration to start the Broker Client container.
 
 After the container is set up, and the Jira Integrations page shows the connection to Jira, under Projects, you can create Jira tickets
 

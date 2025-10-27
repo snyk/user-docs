@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-If you are using Broker, see the [Universal Broker documentation](../../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/).
+If you are using Broker, see the [Universal Broker documentation](../../../enterprise-setup/snyk-broker/universal-broker/).
 
 If you want to use your own GitHub App, reach out to your Snyk account team.
 

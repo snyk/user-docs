@@ -14,13 +14,13 @@ To configure a Group-level integration, you must be a Group Admin or have a cust
 
 #### Integrate using Snyk Essentials <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
 
-1. Profile name (`mandatory`): Input your integration profile name.&#x20;
+1. Profile name (`mandatory`): Input your integration profile name.
 2. Organizations (`mandatory`): Input the names of all the relevant Azure DevOps organizations.
-3. Access Token (`mandatory`): Create your Azure DevOps PAT from your Azure DevOps settings.&#x20;
-   * Access Token (`mandatory`): Create and add your Access token by following the instructions from the  [Generate a Personal access token from your Azure DevOps settings](azure-devops-for-snyk-essentials.md#generate-a-personal-access-token-from-your-azure-devops-settings) section.
+3. Access Token (`mandatory`): Create your Azure DevOps PAT from your Azure DevOps settings.
+   * Access Token (`mandatory`): Create and add your Access token by following the instructions from the [Generate a Personal access token from your Azure DevOps settings](azure-devops-for-snyk-essentials.md#generate-a-personal-access-token-from-your-azure-devops-settings) section.
    * API URL (`mandatory`): The API URL, for example, [`https://dev.azure.com/`](https://dev.azure.com/). You can use a custom URL that is publicly accessible.
 4. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk Broker.
-   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md) page.&#x20;
+   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](../../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md) page.
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](../application-context-for-scm-integrations/) page.
 
