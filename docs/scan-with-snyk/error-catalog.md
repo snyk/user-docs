@@ -1054,11 +1054,7 @@ Snyk was unable to find supported files.
 
 **SAST Rule extension already exists for the Group**
 
-A SAST Rule extension with the same type and attributes already exists
-for the given Group.
-
-Either modify the existing SAST Rule extension or create a new
-SAST Rule extension with a different type or attributes.
+A published SAST Rule extension with the same fully qualified name already exists for the given Group.
 
 **HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
 
