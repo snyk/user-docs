@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-This role is for the [Snyk Learn Assignments](../../../discover-snyk/snyk-learn/snyk-learn-assignments.md) feature, which is in Early Access. If you want to set it up in your Group or Organization, contact your Snyk account team.
+This role requires the [Snyk Learn Assignments](../../../discover-snyk/snyk-learn/snyk-learn-assignments.md) feature, which is part of the Learning Management add-on.  For more information, contact your Snyk account team.
 {% endhint %}
 
 To use [Snyk Learn Access Controls](../../../discover-snyk/snyk-learn/snyk-learn-access-controls.md) beyond the default Snyk Group and Organization Admin roles, a Snyk Group Admin must create a custom role.
