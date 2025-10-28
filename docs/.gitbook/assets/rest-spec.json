@@ -9260,7 +9260,6 @@
                                           },
                                           "required": [
                                             "action_type",
-                                            "policy_ref",
                                             "ignore"
                                           ],
                                           "type": "object"
@@ -17732,6 +17731,10 @@
               }
             ],
             "description": "Policy responsible for the state of suppression represented here, if available."
+          },
+          "skipIfFixable": {
+            "description": "Skip the suppression if an actual fix is available.",
+            "type": "boolean"
           },
           "status": {
             "allOf": [
