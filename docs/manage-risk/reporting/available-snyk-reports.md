@@ -14,11 +14,12 @@ The following reports are available:
 * [Developer IDE and CLI usage report](available-snyk-reports.md#developer-ide-and-cli-usage)
 * [Repositories Tested in CI/CD report](available-snyk-reports.md#repositories-tested-in-ci-cd-report)
 * [Cloud Compliance Issues report](available-snyk-reports.md#cloud-compliance-issues-report)
+* [Learn Engagement](available-snyk-reports.md#learn-engagement)
+* [Learning Impact & Opportunities](available-snyk-reports.md#learning-impact-and-opportunities)
 * [Snyk Generated Pull Requests](available-snyk-reports.md#snyk-generated-pull-requests)
 * [Asset Dashboard](available-snyk-reports.md#asset-dashboard)
 * [Risk exposure report](available-snyk-reports.md#risk-exposure-report)
 * [Saved Views](available-snyk-reports.md#saved-views)
-* [Learn Engagement](available-snyk-reports.md#learn-engagement)
 
 Select **Change Report** to change the report displayed:
 
@@ -459,14 +460,14 @@ Use the information in the Cloud Compliance Issues report to investigate, triage
 ## Learn Engagement
 
 {% hint style="info" %}
-Snyk Learn engagement report is available only in the Learning Management add-on offering. For more information, contact your Snyk account team.
+Learn Engagement report is available only in the Learning Management add-on offering. For more information, contact your Snyk account team.
 {% endhint %}
 
-The goal of the engagement report is to provide insights into your security education and training programs overall progress, and give you insights into which parts of your organization are engaging with Snyk Learn content. You can use the data an insights to better optimise your program, find security champions, generate reports for compliance and show progress to your executive sponsors.
+The goal of the engagement report is to provide insights into your security education and training programs overall progress, and give you insights into which parts of your Organization are engaging with Snyk Learn content. You can use the data and insights to better optimise your program, find security champions, generate reports for compliance and show progress to your executive sponsors.
 
 ### Access the report
 
-The Learn Engagement report can be accessed at the Group level from the **Change Report** drop down in the Reports menu.
+The Learn Engagement report can be accessed at the Group level from the **Change Report** dropdown in the Reports menu.
 
 ### Report features
 
@@ -476,12 +477,11 @@ The report allows you to track:
 * Assignment Progress
 * Adoption rankings
 * Content usage breakdown
-* Filtering
-  * Custom time periods, users, organizations, organization role, and Lesson titles.
+* Filtering: custom time periods, users, organizations, organization role, and Lesson titles.
 
 ### Learn engagement snapshot and assignment progress
 
-The first section of the report focuses on showing key engagement statistics and progress of any assignments. Tool tips give more detail on the definitions of the metrics.
+The first section of the report focuses on showing key engagement statistics and the progress of any assignments. Tool tips provide more details on the definitions of the metrics.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.30.57.png" alt=""><figcaption></figcaption></figure>
 
@@ -500,6 +500,50 @@ The user level adoption ranking is a great way to identify potential security ch
 The breakdown shows the different types of Learn content the users are engaging with, using lesson completions as the measure. You can see if users are engaging with product training or security education, along with the most popular lessons and insights into which CWE categories users are studying the most.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.34.22.png" alt=""><figcaption></figcaption></figure>
+
+## Learning Impact & Opportunities
+
+{% hint style="info" %}
+Learning Impact & Opportunities report is in Early Access and available only in the Learning Management add-on offering. For more information, contact your Snyk account team.
+{% endhint %}
+
+The goal of the impact and opportunities report is to provide insights into the impact your security education and training programs are having on code issue remediation and code issue prevention. In addition, the report gives recommendations for future training based on your code issue backlog, and issues that were introduced during the selected time period of the report.
+
+### Access the report
+
+The Learning Impact & Opportunities report can be accessed at the Group level from the **Change Report** dropdown in the Reports menu.
+
+### Report features
+
+The report allows you to track:
+
+* Impact of education and training on code issue remediation
+* Impact of education and training on code issue prevention
+* Recommendations for further training opportunities&#x20;
+* Coverage rates of users trained in identified training opportunities.
+* Filtering: custom time periods, users, organizations, lesson title, CWE, issue severity.
+
+### Learning impact snapshot&#x20;
+
+The first section of the report focuses on the impact education is having on your security program, focusing on code issue resolution and code issue prevention.&#x20;
+
+The "Learning Impact on Issue Resolution" chart measures the relationship between lesson completion and the resolution of detected code security issues. Resolved issues are counted when a related lesson was completed before the issue was fixed within the selected period. Lesson completions are counted when a related issue was fixed after the lesson was completed within the selected period. Use the filters to drill into specific lessons or CWE categories.&#x20;
+
+The "Learning Impact on Issue Prevention" chart measures the relationship between lesson completion and the prevention code security issues. Introduced issues are counted when a related lesson was completed within the selected period. Issues introduced on the day a Project was imported are not counted. Use the filters to drill into specific lessons or CWE categories.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-10-23 at 15.00.57 (2).png" alt=""><figcaption></figcaption></figure>
+
+### Top 10 CWEs - open issues / issues introduced in the period
+
+This section of the report shows recommendation for training for your top open code issues, and most frequently introduced issues, by volume. Note issues are only included when Snyk Learn has a related lesson for the CWE category.
+
+You will see coverage for all users within organisation scope of the report filters. This shows you how many people have ever completed a related Snyk Learn lesson on the topic.
+
+<div><figure><img src="../../.gitbook/assets/Screenshot 2025-10-23 at 14.12.24 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-10-23 at 14.12.18 (1).png" alt=""><figcaption></figcaption></figure></div>
+
+{% hint style="info" %}
+The recommendations in this section allow you to focus on the most impactful training opportunities. Use the filters to further customise the recommendations based on issue severity or for specific Organizations.
+{% endhint %}
 
 ## Snyk Generated Pull Requests
 
