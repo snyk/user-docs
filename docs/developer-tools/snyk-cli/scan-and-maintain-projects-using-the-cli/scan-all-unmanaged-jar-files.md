@@ -1,10 +1,10 @@
 # Scan all unmanaged JAR files
 
-The Snyk CLI can scan unmanaged JAR files in [Java applications](../../../supported-languages/supported-languages-list/java-and-kotlin/#features) to identify which open-source package they contain.
+The Snyk CLI can scan unmanaged JAR files in [Java applications](../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#features) to identify which open-source package they contain.
 
 The CLI identifies the package name, version, and vulnerabilities only if the package is available in Maven Central, and the JAR file hash matches the hash in Maven Central.
 
-**Prerequisite:** You must install a [supported version](../../../supported-languages/supported-languages-list/java-and-kotlin/#package-managers-and-supported-file-extensions) of Maven to scan unmanaged JAR files.
+**Prerequisite:** You must install a [supported version](../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#package-managers-and-supported-file-extensions) of Maven to scan unmanaged JAR files.
 
 ## Scanning all JAR files in a single folder and scanning each JAR file individually
 

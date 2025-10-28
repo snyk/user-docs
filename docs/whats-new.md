@@ -22,7 +22,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Other updates**
 
-* For Java and Kotlin, the list of [supported Gradle versions](supported-languages/supported-languages-list/java-and-kotlin/#package-managers-and-supported-file-extensions) now includes Gradle 9.
+* For Java and Kotlin, the list of [supported Gradle versions](supported-languages-package-managers-and-frameworks/java-and-kotlin/#package-managers-and-supported-file-extensions) now includes Gradle 9.
 * For [Ruby](supported-languages/supported-languages-list/ruby.md), an end-of-support notice has been added to say that starting Oct 1, 2025, Fix PRs are no longer supported for Projects using Ruby versions 3.1.x and lower. The table of supported Ruby versions has also been updated.
 * For Javascript, [support for pnpm Projects](supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js.md#pnpm) has been added.
 * `Raise Support Community Cases` and `View Support Community Cases` Tenant level permissions have been added. To learn more about which Tenant roles these permissions apply to, visit Pre-defined roles, [Tenant-level permissions](snyk-platform-administration/user-roles/pre-defined-roles.md#tenant-level-permissions).
@@ -188,7 +188,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk Integrations**
 
 * For the [Jira integration](integrations/jira-and-slack-integrations/jira-integration.md#prerequisites-for-jira-integration-with-snyk), Snyk now supports Jira versions 5 to 10.
-* For [SCM integrations with Gradle](supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle.md), Snyk now supports `allprojects` and `subprojects` blocks, as well as Spring Boot plugins BOMs.
+* For [SCM integrations with Gradle](supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md), Snyk now supports `allprojects` and `subprojects` blocks, as well as Spring Boot plugins BOMs.
 
 ### **Other updates**
 

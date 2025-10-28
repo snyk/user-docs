@@ -5,7 +5,7 @@
 Package repository integrations are available with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 **Supported projects**\
-The Nexus Repository Manager integration supports [Node.js](../../../../supported-languages/supported-languages-list/javascript/#package-managers-and-supported-file-extensions) (npm and Yarn) and [Maven](../../../../supported-languages/supported-languages-list/java-and-kotlin/#package-managers-and-supported-file-extensions) Projects.  For [Improved Gradle SCM scanning](../../../../supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning), use the Maven settings.
+The Nexus Repository Manager integration supports [Node.js](../../../../supported-languages/supported-languages-list/javascript/#package-managers-and-supported-file-extensions) (npm and Yarn) and [Maven](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#package-managers-and-supported-file-extensions) Projects. For [Improved Gradle SCM scanning](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning), use the Maven settings.
 {% endhint %}
 
 Snyk can use Nexus Repository Manager with Maven Projects.
@@ -50,6 +50,6 @@ If the URL is `http://nexus.company.io/nexus/content/repositories/releases`, Rep
 {% endtab %}
 {% endtabs %}
 
-Alternatively, you can configure repositories  will be used as additional locations to check for artifacts.
+Alternatively, you can configure repositories will be used as additional locations to check for artifacts.
 
 Repositories are configured in the same way as Mirrors, but do not require **Mirror Of**.

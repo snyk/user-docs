@@ -9,7 +9,7 @@ Apex is supported only for Snyk Code.
 Available integrations:
 
 * SCM import
-* CLI and IDE: test or monitor your app. For more information, see [Snyk CLI for Snyk Code](../cli-ide-and-ci-cd-integrations/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
+* CLI and IDE: test or monitor your app. For more information, see [Snyk CLI for Snyk Code](../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
 
 ## Technical specifications
 

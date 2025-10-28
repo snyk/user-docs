@@ -24,13 +24,13 @@ Snyk supports the following Scala versions: 2.x
 
 For Scala, the following frameworks and libraries are supported:
 
-* Akka - Comprehensive&#x20;
-* HTTP4S - Comprehensive&#x20;
-* io.cequence.openaiscala - Comprehensive&#x20;
-* Play Framework - Comprehensive&#x20;
+* Akka - Comprehensive
+* HTTP4S - Comprehensive
+* io.cequence.openaiscala - Comprehensive
+* Play Framework - Comprehensive
 * Scala standard library - Comprehensive
 * Slick Framework - Comprehensive
-* All [Java frameworks and libraries](java-and-kotlin/#frameworks-and-libraries)
+* All [Java frameworks and libraries](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#frameworks-and-libraries)
 
 ### Supported package managers and registries
 
@@ -59,10 +59,10 @@ For Scala with Snyk Open Source, the following file format is supported: `build.
 
 Available features:
 
-* License scanning&#x20;
+* License scanning
 * Reports
 
-For sbt, Snyk provides:  CLI support, SCM support, license scanning.
+For sbt, Snyk provides: CLI support, SCM support, license scanning.
 
 ### CLI support for Scala
 

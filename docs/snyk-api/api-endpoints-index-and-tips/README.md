@@ -430,7 +430,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 **More information:** [Dart and Flutter](../../supported-languages/supported-languages-list/dart-and-flutter.md);\
 [Rust](../../supported-languages/supported-languages-list/rust.md):\
 [Guidance for Snyk for C++ page, Alternate testing options section](../../supported-languages/supported-languages-list/c-c++/guidance-for-snyk-for-c-c++.md#alternate-testing-options);\
-[Guidance for Java and Kotlin](../../supported-languages/supported-languages-list/java-and-kotlin/guidance-for-java-and-kotlin.md);\
+[Guidance for Java and Kotlin](broken-reference);\
 [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript);\
 [List issues for a package page](../using-specific-snyk-apis/issues-list-issues-for-a-package.md)
 
@@ -841,7 +841,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ## Test (v1)
 
-**More information:** [Guidance for Java and Kotlin](../../supported-languages/supported-languages-list/java-and-kotlin/guidance-for-java-and-kotlin.md);\
+**More information:** [Guidance for Java and Kotlin](broken-reference);\
 [Start scanning](../../scan-with-snyk/start-scanning.md);\
 [Scan open-source libraries and licenses](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/)
 
@@ -869,7 +869,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ### [Test for issues in a public package by group id, artifact id and version](../reference/test-v1.md#test-maven-groupid-artifactid-version) (Maven)
 
-**More information:** [Guidance for Java and Kotlin](../../supported-languages/supported-languages-list/java-and-kotlin/guidance-for-java-and-kotlin.md)
+**More information:** [Guidance for Java and Kotlin](broken-reference)
 
 ### [Test gradle file](../reference/test-v1.md#test-gradle)
 
