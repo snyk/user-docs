@@ -17,7 +17,7 @@ If your Jira instance is private, use [the Snyk Broker deployment method](../../
 * Snyk supports Jira from version 5 to version 10.
 * The following [Jira permissions](https://confluence.atlassian.com/adminjiraserver073/managing-project-permissions-861253293.html) are required: **Browse Projects** and **Create Issues.**
 
-## **How to set up your Jira integration**
+## How to set up your Jira integration
 
 It is best practice to set up a new user in Jira for this integration, instead of using the credentials of an existing account.
 
@@ -27,13 +27,13 @@ Enter the Jira account credentials in the Snyk Web UI: **Organization Settings >
 
 <figure><img src="../../.gitbook/assets/JiraSettings_nonBroker.png" alt="Jira settings"><figcaption><p>Jira settings</p></figcaption></figure>
 
-After the details have been entered into the integration, press **Save and continue**.&#x20;
+After the details have been entered into the integration, press **Save and continue**.
 
 {% hint style="info" %}
 If the connection is not successful, check that the Base URL starts with exactly `https://` It must not have capitals or be http.
 {% endhint %}
 
-If the connection is successful, you will see the connection details in orange at the top of the page. &#x20;
+If the connection is successful, you will see the connection details in orange at the top of the page.
 
 Fill in the following fields:
 

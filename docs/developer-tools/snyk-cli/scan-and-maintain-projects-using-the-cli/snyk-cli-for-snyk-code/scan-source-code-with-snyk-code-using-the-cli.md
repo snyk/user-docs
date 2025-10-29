@@ -173,7 +173,7 @@ snyk code test --report --project-name="PROJECT_NAME"
 * Assuming that the --project-name provided matches what is in the Web UI
 * Ignores that have been applied to the Project with a `PROJECT_NAME` suppress the issue the next time that the CLI runs for the same `PROJECT_NAME`.
 
-For the [trigger using the CLI workflow](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results-and-ignore-issues#use-the-cli-to-trigger-a-snyk-code-git-repository-project-to-test-a-specific-commit-in-a-git-reposit), ignores added to the Git repository monitored Project will also be ignored the next time an SCM scan is triggered from the CLI for a given `<PROJECT_UUID>` and `<COMMIT_ID>.`
+For the [trigger using the CLI workflow](scan-source-code-with-snyk-code-using-the-cli.md#use-the-cli-to-trigger-a-test-for-a-specific-commit-to-an-existing-snyk-code-git-repository-project), ignores added to the Git repository monitored Project will also be ignored the next time an SCM scan is triggered from the CLI for a given `<PROJECT_UUID>` and `<COMMIT_ID>.`
 
 An example follows:
 

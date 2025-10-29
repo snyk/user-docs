@@ -6,7 +6,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Devin to secure code
 
 * [Get Started with Devin](devin-guide.md#get-started-with-devin)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](devin-guide.md#install-the-snyk-mcp-server-in-cursor)
+* [Install the Snyk MCP](devin-guide.md#install-the-snyk-mcp-server-in-devin)
 
 ### Get started with Devin
 
