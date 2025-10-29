@@ -848,6 +848,12 @@ You can then share the report with your development team by copying and sending 
 
 ## PR Check Report&#x20;
 
+{% hint style="info" %}
+**Release status**
+
+The PR Check report is in Early Access and available only with Enterprise plans.
+{% endhint %}
+
 This report combines adoption, performance, and reliability into a single view of PR scanning health, and it provides visibility into the adoption and performance of PR scanning across your different repositories.&#x20;
 
 You can use this report to determine where Snyk PR checks are implemented, where adoption could be increased, and which types of failures most frequently impact developer workflows. Together, these insights guide teams towards better PR scan coverage, more stable runs, and an improved developer experience across your whole Organization.&#x20;
