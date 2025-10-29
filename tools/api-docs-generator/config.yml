@@ -15,7 +15,7 @@ categoryContext:
     The rate limit is up to **150 requests per minute, per user**.
 - name: import-projects-v1
   hint: |
-    You can use this API to import projects into Snyk. Projects imported can be Git repositories, Docker images, containers, configuration files, and much more. See the [Projects and Targets documentation](../../snyk-admin/snyk-projects/#target) for more information. A typical import would start with requesting a target to be processed and then polling the Import Job API for more details on completion of an import and the resulting Snyk Projects.
+    You can use this API to import projects into Snyk. Projects imported can be Git repositories, Docker images, containers, configuration files, and much more. See the [Projects and Targets documentation](../snyk-platform-administration/snyk-projects/#target) for more information. A typical import would start with requesting a target to be processed and then polling the Import Job API for more details on completion of an import and the resulting Snyk Projects.
 - name: licenses-v1
   hint: |
     **Note:** When you import or update Projects, changes will be reflected in the endpoint results after a one-hour delay.
