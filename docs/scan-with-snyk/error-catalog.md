@@ -1137,17 +1137,6 @@ Please trigger a new test.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
-### [SNYK-CODE-0015](#snyk-code-0015)
-<a id="#SNYK-CODE-0015"></a>
-
-**Test ID not associated with group**
-
-There is no SAST Rule Extension impact test associated with the given Test ID for the group.
-
-Please verify you are using the correct Group ID associated with the test.
-
-**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
-
 ***
 
 ## Integration
