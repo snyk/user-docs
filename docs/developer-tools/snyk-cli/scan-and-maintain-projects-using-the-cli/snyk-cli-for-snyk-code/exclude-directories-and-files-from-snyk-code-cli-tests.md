@@ -8,7 +8,7 @@ When you test a Snyk Code repository using the CLI, you can exclude certain dire
 * Consider excluding directories and files only if you do not publish or compile them into production. If a trace goes through an excluded file or directory with existing vulnerabilities, Snyk might miss potential issues.
 {% endhint %}
 
-## **Exclude directories and files from the CLI test**
+## Exclude directories and files from the CLI test
 
 Follow these steps to exclude Snyk Code directories and files from the CLI test:
 

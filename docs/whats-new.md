@@ -22,7 +22,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Other updates**
 
-* For Java and Kotlin, the list of [supported Gradle versions](supported-languages-package-managers-and-frameworks/java-and-kotlin/#package-managers-and-supported-file-extensions) now includes Gradle 9.
+* For Java and Kotlin, the list of [supported Gradle versions](supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-package-managers-and-package-registries) now includes Gradle 9.
 * For [Ruby](supported-languages/supported-languages-list/ruby.md), an end-of-support notice has been added to say that starting Oct 1, 2025, Fix PRs are no longer supported for Projects using Ruby versions 3.1.x and lower. The table of supported Ruby versions has also been updated.
 * For Javascript, [support for pnpm Projects](supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js.md#pnpm) has been added.
 * `Raise Support Community Cases` and `View Support Community Cases` Tenant level permissions have been added. To learn more about which Tenant roles these permissions apply to, visit Pre-defined roles, [Tenant-level permissions](snyk-platform-administration/user-roles/pre-defined-roles.md#tenant-level-permissions).
@@ -66,7 +66,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk CLI**
 
 * MCP updates:
-  * [Updated the list of supported Snyk security tools into an AI system](integrations/snyk-studio-agentic-integrations/#snyk-mcp-tools).
+  * [Updated the list of supported Snyk security tools into an AI system](integrations/snyk-studio-agentic-integrations/#snyk-studio-tools).
   * Updated release status from experimental to [Early access](discover-snyk/getting-started/snyk-release-process.md#early-access-features) and removed the experimental flag.
   * Added [Cursor](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide.md) as a new supported agentic IDE for MCP.
 * PAT updates:

@@ -30,7 +30,7 @@ For Scala, the following frameworks and libraries are supported:
 * Play Framework - Comprehensive
 * Scala standard library - Comprehensive
 * Slick Framework - Comprehensive
-* All [Java frameworks and libraries](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#frameworks-and-libraries)
+* All [Java frameworks and libraries](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-frameworks-and-libraries)
 
 ### Supported package managers and registries
 

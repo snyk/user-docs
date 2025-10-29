@@ -15,16 +15,16 @@ Snyk Security in Jira Cloud is a Jira app.
 To install and configure the Jira app, you must be a Jira Cloud administrator in the site-admins, administrators, or jira-administrators group. Contact your IT team to support your effort in installing the Snyk Security in Jira Cloud app.
 
 {% hint style="warning" %}
-For the Jira app to load successfully, the base URL of your Jira board must precisely match the [base URL configured in your Snyk Jira integration](https://docs.snyk.io/integrations/jira-and-slack-integrations/jira-integration#how-to-set-up-your-jira-integration). If your Jira instance uses URL rewrites or redirects that alter the accessible board URL, the Jira app may fail to load.
+For the Jira app to load successfully, the base URL of your Jira board must precisely match the [base URL configured in your Snyk Jira integration](jira-integration.md#how-to-set-up-your-jira-integration). If your Jira instance uses URL rewrites or redirects that alter the accessible board URL, the Jira app may fail to load.
 {% endhint %}
 
 To connect the Jira app to Snyk, you must be a [Snyk Organization administrator](../../snyk-platform-administration/user-roles/pre-defined-roles.md).
 
-To activate Security in Jira Cloud in Jira, navigate to **Project Settings > Features > Development > Security** and toggle **Security** **ON**.&#x20;
+To activate Security in Jira Cloud in Jira, navigate to **Project Settings > Features > Development > Security** and toggle **Security** **ON**.
 
 Ensure you have the following permission scopes in Jira, which are required for the integration to operate.
 
-<table><thead><tr><th width="344.5">Required scope in Jira</th><th>Purpose</th></tr></thead><tbody><tr><td>Write data to the host application</td><td>Synchronize vulnerabilities in Snyk with Jira so they appear in the Security tab in Jira.</td></tr><tr><td>Read data from the host application</td><td>Read vulnerabilities from Jira to optimize the issues synchronization process.</td></tr><tr><td>Delete data from the host application</td><td>Remove vulnerabilities from Jira when a Snyk Organization is removed from Jira. </td></tr></tbody></table>
+<table><thead><tr><th width="344.5">Required scope in Jira</th><th>Purpose</th></tr></thead><tbody><tr><td>Write data to the host application</td><td>Synchronize vulnerabilities in Snyk with Jira so they appear in the Security tab in Jira.</td></tr><tr><td>Read data from the host application</td><td>Read vulnerabilities from Jira to optimize the issues synchronization process.</td></tr><tr><td>Delete data from the host application</td><td>Remove vulnerabilities from Jira when a Snyk Organization is removed from Jira.</td></tr></tbody></table>
 
 {% hint style="warning" %}
 To add containers, you must have the **project admin** Jira permissions.
@@ -63,8 +63,6 @@ Typically research and development engineering managers do this task because the
 3.  Click on the Snyk application and then select **Connect security containers**.
 
     <figure><img src="../../.gitbook/assets/image (366).png" alt="Connect security containers in Jira via the Security tab and panels"><figcaption><p>Connect security containers in Jira via the Security tab and panels</p></figcaption></figure>
-
-
 4. Select your Snyk Organization from the list, and choose the Snyk Targets to connect to Jira.
 
 <figure><img src="../../.gitbook/assets/image (365).png" alt="Connect a security container in Jira via the Security panel" width="351"><figcaption><p>Connect a security container in Jira via the Security panel</p></figcaption></figure>
@@ -96,16 +94,13 @@ The following steps describe how to use Jira automation to automatically create 
 
 1. In Jira, in your project, navigate to **Project Settings** and then **Automation**.
 2. Click **Create Rule**.
-3.  Set **Vulnerability Found** as the Trigger. Choose a minimum ticket severity.\
-
+3.  Set **Vulnerability Found** as the Trigger. Choose a minimum ticket severity.\\
 
     <figure><img src="../../.gitbook/assets/jira-ticket-creation-automation-one.png" alt=""><figcaption><p>Select vulnerability severity for the new rule</p></figcaption></figure>
-4.  Click **Add Component**, **Then,** and select **Create Issue**. Select a project and issue type.\
-
+4.  Click **Add Component**, **Then,** and select **Create Issue**. Select a project and issue type.\\
 
     <figure><img src="../../.gitbook/assets/2024-12-13_10-19-14.png" alt=""><figcaption><p>Add an action and create issue for the new rule</p></figcaption></figure>
-5.  In the summary field add “Fix \{{vulnerability.displayName\}}”. In the **Description** put \{{vulnerability.description.wiki\}}.\
-
+5.  In the summary field add “Fix \{{vulnerability.displayName\}}”. In the **Description** put \{{vulnerability.description.wiki\}}.\\
 
     <figure><img src="../../.gitbook/assets/2024-12-13_10-19-31.png" alt=""><figcaption><p>Add summary field and description for the new rule</p></figcaption></figure>
 6. Click **Add Component**, **Then**, and select **Link vulnerability to issue** under Security.
@@ -127,7 +122,7 @@ Ignored and closed vulnerabilities are not shown in the **Vulnerabilities** sect
 
 Select the title of a column in the table to sort all vulnerabilities by that attribute.
 
-### Create a Jira issue from a vulnerability&#x20;
+### Create a Jira issue from a vulnerability
 
 When triaging issues, you can add a Jira issue to the sprint or backlog to ensure the required work for resolving the vulnerability is planned and tracked.
 
@@ -178,4 +173,3 @@ To uninstall a Jira app, you must be an administrator in the site-admins, admini
 1. In Jira, navigate to **Apps** in the main menu and select **Manage your apps.**
 2. Select **Snyk Security in Jira.**
 3. Click the **Uninstall** button.
-

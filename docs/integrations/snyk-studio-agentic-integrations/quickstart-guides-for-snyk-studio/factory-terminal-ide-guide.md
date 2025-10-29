@@ -29,7 +29,7 @@ If you are a new user, select the preferred sign-up method and agree to the term
 {% hint style="info" %}
 To use Snyk Studio, specifically the SAST scanning capabilities, you must enable [Snyk Code](../../../scan-with-snyk/snyk-code/).&#x20;
 
-Snyk Code analyzes your code for vulnerabilities, temporarily clones the repository, and uploads your code. Cloned or uploaded code is cached according to the Snyk [data retention policy](https://docs.snyk.io/working-with-snyk/how-snyk-handles-your-data?_gl=1*rvqm9c*_gcl_aw*R0NMLjE3NTk4NDYyNDEuQ2owS0NRanc5SkxIQmhDLUFSSXNBSzRQaGNwSnZ0dWZLRnN1R0hDVWdCd3NoUEtZUmZVSHRGUGZtLWRyN2k2T0ZRbnR0QkZLZmZoM2tIRWFBcllfRUFMd193Y0I.*_gcl_au*MTQyNDgzNDU5OC4xNzU1MTg3MDAw*_ga*MTkyMDQ5MDY0Ni4xNzQzNTI5ODQy*_ga_X9SH3KP7B4*czE3NjAzODIyOTckbzg2JGcxJHQxNzYwMzgyNzg5JGo0NyRsMCRoMA..).&#x20;
+Snyk Code analyzes your code for vulnerabilities, temporarily clones the repository, and uploads your code. Cloned or uploaded code is cached according to the Snyk [data retention policy](../../../snyk-data-and-governance/how-snyk-handles-your-data.md).&#x20;
 
 With the Snyk Free Plan, Snyk Code offers unlimited scans for Open Source Projects, and limited tests for first-party code. To learn more about our available plans, visit [Plans and Pricing](https://snyk.io/plans/).
 {% endhint %}

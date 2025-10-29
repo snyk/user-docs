@@ -14,7 +14,7 @@ Snyk can generate Fix Pull Requests (Fix PRs) or Merge Requests (MRs) for depend
 
 Snyk supports creating Fix PRs or MRs for the following languages:
 
-* [Maven](broken-reference)
+* [Maven](../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#maven)
 * [.NET](../../../supported-languages/supported-languages-list/.net/)&#x20;
 * [npm](../../../supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js.md#npm)
 * [Python](../../../supported-languages/supported-languages-list/python/)

@@ -24,23 +24,23 @@ Verify you can access Inventory from the Snyk web UI.
 Start building your asset inventory by setting up the necessary integrations.
 
 {% hint style="info" %}
-The scanned information is automatically imported within two hours after enabling all features.  Note that for large onboardings, it is suggested to wait up to 24hours for all information to be processed.
+The scanned information is automatically imported within two hours after enabling all features. Note that for large onboardings, it is suggested to wait up to 24hours for all information to be processed.
 {% endhint %}
 
-Access and configure the integrations from the **Integrations** view. Select the **Add integration** option to see the list of all available integrations. See the [Adding an integration](../../../developer-tools/scm-integrations/organization-level-integrations/#adding-an-integration).
+Access and configure the integrations from the **Integrations** view. Select the **Add integration** option to see the list of all available integrations. See [Set up a Snyk integration](../../../discover-snyk/getting-started/#set-up-a-snyk-integration).
 
 The default display in the **Integrations** view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-You can customize an existing integration or [connect a new SCM integration](../../../developer-tools/scm-integrations/organization-level-integrations/#adding-an-integration).
+You can customize an existing integration or connect a new SCM integration.
 
 <figure><img src="../../../.gitbook/assets/integration-add-integration.png" alt="Snyk Essentials - The list of available integrations"><figcaption><p>Snyk Essentials - The list of available integrations</p></figcaption></figure>
 
-After you select **Add an integration**, a list of the available integrations is displayed. For each integration, you can add one or multiple profiles.&#x20;
+After you select **Add an integration**, a list of the available integrations is displayed. For each integration, you can add one or multiple profiles.
 
 The following video shows how to configure integrations for asset management and discovery.
 
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1737657000/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-3_-_v1_-_Snyk_Essentials_and_Snyk_AppRisk_Integrations.mp4" %}
-Configure integrations for asset management and discovery&#x20;
+Configure integrations for asset management and discovery
 {% endembed %}
 
 ### SCM integrations
@@ -70,7 +70,7 @@ When setting up a Snyk Broker, there are some questions you need to ask regardin
 * Do you need to update the SCM token to a user that has access to all relevant SCM repositories?
 * Do you have more than 1000 repos?
 
-If you answered Yes to any of the above questions, then you need to deploy a new Snyk Broker to accommodate the Snyk Essentials SCM connection.&#x20;
+If you answered Yes to any of the above questions, then you need to deploy a new Snyk Broker to accommodate the Snyk Essentials SCM connection.
 
 {% hint style="info" %}
 Snyk recommends creating a new Organization in Snyk specifically for the Snyk Essentials Broker.
@@ -86,12 +86,12 @@ Access the [Application context for SCM Integrations](../../../developer-tools/s
 
 ## Features
 
-The Snyk Essentials functionality is split across several menu options from the Group level.&#x20;
+The Snyk Essentials functionality is split across several menu options from the Group level.
 
 * The Asset Dashboard report
 * [Inventory](../../../manage-assets/manage-assets.md)
 * [Policies](../../../manage-risk/policies/assets-policies/)
-* [Integrations for SCM](../../../developer-tools/scm-integrations/group-level-integrations/)&#x20;
+* [Integrations for SCM](../../../developer-tools/scm-integrations/group-level-integrations/)
 * [Issues](../../../manage-risk/prioritize-issues-for-fixing/)
 
 #### Inventory view
@@ -108,10 +108,10 @@ If you are using Snyk Essentials for the first time, Snyk recommends you first u
 
 You can use the Coverage Gap filter to:
 
-*   &#x20;Find any asset that does not comply with the Set coverage control policy requirements:&#x20;
+*   Find any asset that does not comply with the Set coverage control policy requirements:
 
     <figure><img src="../../../.gitbook/assets/image (142).png" alt="Use the Coverage gap filter to Find any asset that is out of policy"><figcaption><p>Coverage gap - Use case 1</p></figcaption></figure>
-*   Find any assets that do not meet the coverage requirements for Snyk Open Source or Snyk Code, or both of them simultaneously:&#x20;
+*   Find any assets that do not meet the coverage requirements for Snyk Open Source or Snyk Code, or both of them simultaneously:
 
     <figure><img src="../../../.gitbook/assets/image (144).png" alt="Use the Coverage gap filter to Find any asset that is out of policy for Snyk Open Source OR Snyk Code"><figcaption><p>Coverage gap - Use case 2</p></figcaption></figure>
 
@@ -125,13 +125,8 @@ Use tags to categorize the assets. You can use tags in multiple ways:
 BitBucket cannot automatically detect the language used in the source code from the repositories. In Snyk Essentials or Snyk Essentials, you can only see the language tags that have been manually added for BitBucket. For more information, see the official documentation provided by BitBucket.
 {% endhint %}
 
-* User-defined tags: set up custom tags through policies to categorize your assets beyond the system-generated tags. See the [Create policies](../../../manage-risk/policies/assets-policies/create-policies.md) page for more details.&#x20;
+* User-defined tags: set up custom tags through policies to categorize your assets beyond the system-generated tags. See the [Create policies](../../../manage-risk/policies/assets-policies/create-policies.md) page for more details.
 
 #### Asset Dashboard Report
 
 The [Asset Dashboard](../../../manage-risk/reporting/available-snyk-reports.md#asset-dashboard) provides a comprehensive overview of your application and security controls. It displays essential data such as the status and trends of open issues, control coverage, and repository metadata.
-
-
-
-
-

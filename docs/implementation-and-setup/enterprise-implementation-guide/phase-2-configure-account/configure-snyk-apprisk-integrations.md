@@ -28,7 +28,7 @@ Access and configure the integrations from the **Integrations** view. Select the
 
 The default display in the **Integrations** view includes the configured Snyk integrations. The status of each integration, **Connected** or **Not connected**, depends on the specific content imported into Snyk.
 
-You can customize an existing integration or [connect a new SCM integration](../../../developer-tools/scm-integrations/organization-level-integrations/#adding-an-integration).
+You can customize an existing integration or [connect a new SCM integration](../../../discover-snyk/getting-started/#set-up-a-snyk-integration).
 
 ### SCM integrations
 

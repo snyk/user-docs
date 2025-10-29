@@ -137,7 +137,7 @@ This error indicates that the contents of the scanned Project exceed the limit. 
   * Create two Projects for your frontend and backend directories, and scan them separately.
   * Create and scan Projects for each MicroService.
 * Exclude unnecessary files from the scanning process using the [.snyk exclude option](exclude-directories-and-files-from-snyk-code-cli-tests.md#exclude-directories-and-files-from-the-cli-test). For example, you can exclude test files from the scan.
-* Set a severity threshold using the [`--severity-threshold=high`](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli#combining-security-policies-with-severity-threshold) to focus on more critical issues and gain visibility into urgent matters.
+* Set a severity threshold using the [`--severity-threshold=high`](../failing-of-builds-in-snyk-cli.md#combining-security-policies-with-severity-threshold) to focus on more critical issues and gain visibility into urgent matters.
 
 ## Use the CLI to trigger a test for a specific commit to an existing Snyk Code Git repository Project <a href="#use-the-cli-to-trigger-a-test-for-a-specific-commit-to-an-existing-snyk-code-git-repository-project" id="use-the-cli-to-trigger-a-test-for-a-specific-commit-to-an-existing-snyk-code-git-repository-project"></a>
 

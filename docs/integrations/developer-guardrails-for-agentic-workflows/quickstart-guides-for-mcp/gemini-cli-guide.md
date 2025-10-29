@@ -4,8 +4,6 @@ You can access Snyk Studio, including Snyk's MCP server, in Gemini CLI to secure
 
 ## Prerequisites
 
-* [Install Gemini CLI](gemini-cli-guide.md#install-gemini-cli)
-
 Install [the Gemini CLI](https://github.com/google-gemini/gemini-cli?tab=readme-ov-file) to your local machine.&#x20;
 
 ### Install the Snyk Extension or MCP Server in Gemini CLI
