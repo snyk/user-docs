@@ -5,7 +5,7 @@
 Log in to Snyk, navigate to your **Organization**, and then to your **Settings** > **General**. The **Organization ID** is on the General settings page, and you can copy it.
 {% endhint %}
 
-This index and notes section of the documentation provides, in addition to this index, \[solutions for specific use cases]\(solutions-for-specific-use-cases.md), \[scenarios for using Snyk APIs]\(scenarios-for-using-the-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
+This index and notes section of the documentation provides, in addition to this index, [solutions for specific use cases](solutions-for-specific-use-cases.md), [scenarios for using Snyk APIs](scenarios-for-using-the-snyk-api.md), and pages with detailed information about using Snyk API endpoints:
 
 * [Organization and Group identification for Projects using the API](organization-and-group-identification-for-projects-using-the-api.md)
 * [Project issue paths V1 API endpoints](project-issue-paths-api-endpoints.md)
@@ -430,7 +430,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 **More information:** [Dart and Flutter](../../supported-languages/supported-languages-list/dart-and-flutter.md);\
 [Rust](../../supported-languages/supported-languages-list/rust.md):\
 [Guidance for Snyk for C++ page, Alternate testing options section](../../supported-languages/supported-languages-list/c-c++/guidance-for-snyk-for-c-c++.md#alternate-testing-options);\
-[Guidance for Java and Kotlin](broken-reference);\
+[Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/);\
 [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](../../supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js.md#unmanaged-javascript);\
 [List issues for a package page](../using-specific-snyk-apis/issues-list-issues-for-a-package.md)
 
@@ -841,7 +841,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ## Test (v1)
 
-**More information:** [Guidance for Java and Kotlin](broken-reference);\
+**More information:** [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/);\
 [Start scanning](../../scan-with-snyk/start-scanning.md);\
 [Scan open-source libraries and licenses](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/)
 
@@ -869,7 +869,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ### [Test for issues in a public package by group id, artifact id and version](../reference/test-v1.md#test-maven-groupid-artifactid-version) (Maven)
 
-**More information:** [Guidance for Java and Kotlin](broken-reference)
+**More information:** [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/)
 
 ### [Test gradle file](../reference/test-v1.md#test-gradle)
 
