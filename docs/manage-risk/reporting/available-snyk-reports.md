@@ -20,6 +20,7 @@ The following reports are available:
 * [Asset Dashboard](available-snyk-reports.md#asset-dashboard)
 * [Risk exposure report](available-snyk-reports.md#risk-exposure-report)
 * [Saved Views](available-snyk-reports.md#saved-views)
+* [PR Check Report](available-snyk-reports.md#pr-check-report)
 
 Select **Change Report** to change the report displayed:
 
@@ -844,3 +845,51 @@ You can then save this filtered view by clicking **Save**, adding a name to your
 <figure><img src="../../.gitbook/assets/reports_saved_views_save_filtered_view.png" alt=""><figcaption><p>Create view window</p></figcaption></figure>
 
 You can then share the report with your development team by copying and sending the view URL.
+
+## PR Check Report&#x20;
+
+This report combines adoption, performance, and reliability into a single view of PR scanning health, and it provides visibility into the adoption and performance of PR scanning across your different repositories.&#x20;
+
+You can use this report to determine where Snyk PR checks are implemented, where adoption could be increased, and which types of failures most frequently impact developer workflows. Together, these insights guide teams towards better PR scan coverage, more stable runs, and an improved developer experience across your whole Organization.&#x20;
+
+Filters and CSV downloads allow users to focus on specific groups or configurations for deeper analysis.
+
+### PR check performance and status
+
+You can visualize PR check performance through trend charts and summary tiles that display the successful, failed, and errored checks.&#x20;
+
+The charts break down performance across time and PR Check status. A secondary view distinguishes between Snyk Code and Snyk Open Source, allowing you to understand which product area contributes most to success or error patterns.&#x20;
+
+Use this report as an overview of platform reliability and scanning performance.
+
+<figure><img src="../../.gitbook/assets/unknown.png" alt=""><figcaption><p>PR check performance and status report</p></figcaption></figure>
+
+### Error PR checks by error message
+
+This view allows you to see the most common causes of PR check errors. This helps teams identify recurring issues and prioritize fixes that improve developer experience. The report highlights technical limitations or setup problems for quick resolution.
+
+<figure><img src="../../.gitbook/assets/unknown (1).png" alt=""><figcaption><p>Lst of error PR checks displayed by error message</p></figcaption></figure>
+
+### PR scanning adoption&#x20;
+
+This view highlights PR scanning adoption across teams. You can view adoption by Group, Organization, or repository by using the dropdown controls.&#x20;
+
+Each view displays the following key indicators:&#x20;
+
+* SCM integrations with PR scanning&#x20;
+* Repositories using Snyk Code &#x20;
+* Repositories using Snyk Open Source&#x20;
+
+The layout displays where PR scanning is active and where further enablement could extend coverage across repositories. The long-term goal is to achieve full coverage, ensuring that 100% of repositories and integrations are included in PR scanning.
+
+<figure><img src="../../.gitbook/assets/unknown (2).png" alt=""><figcaption><p>PR scanning adoption view by Group</p></figcaption></figure>
+
+### PR scanning performance&#x20;
+
+This view displays how PR activity across different Groups, Organizations, or repositories translates into scan coverage and failure rates.
+
+You can go into detail by using the dropdown menu. The table summarizes total PRs and those with failed checks, and highlights where scanning activity is concentrated and where security risks can appear more frequently.&#x20;
+
+It is common that teams or repositories with higher PR volumes generate more checks. This view helps to surface patterns in failure distribution.
+
+<figure><img src="../../.gitbook/assets/unknown (3).png" alt=""><figcaption><p>PR scanning performance view by Group</p></figcaption></figure>
