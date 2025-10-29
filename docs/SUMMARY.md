@@ -283,6 +283,7 @@
     * [Cursor guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide.md)
     * [Devin guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/devin-guide.md)
     * [Factory guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/factory-guide.md)
+    * [Factory Terminal/IDE guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/factory-terminal-ide-guide.md)
     * [Gemini CLI guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-cli-guide.md)
     * [Gemini Code Assist guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-code-assist-guide.md)
     * [GitHub Copilot guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/github-copilot-guide.md)
