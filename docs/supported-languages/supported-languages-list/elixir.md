@@ -15,10 +15,8 @@ Available functions:
 
 ## Technical specifications
 
-* Supported package manager:  [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/)
+* Supported package manager:  [Mix](https://hexdocs.pm/mix/Mix.html) or [Hex](https://hex.pm/)
 * Supported package registry: [hex.pm](https://hex.pm/)
-
-### Supported features
 
 For Elixir, Snyk supports the **Reports** feature.&#x20;
 
@@ -29,7 +27,7 @@ The **Snyk Fix PR** feature is not available for Elixir. This means that you wil
 * "**Fixed in" available** is set to **Yes.**
 {% endhint %}
 
-### Snyk CLI for Elixir
+## CLI support for Elixir
 
 {% hint style="info" %}
 To scan your dependencies, you must first install Elixir and Mix. For details, [see the Elixir installation instructions](https://elixir-lang.org/install.html).
