@@ -1,0 +1,105 @@
+name: Docs Quality
+
+on:
+  pull_request:
+    paths:
+      - 'docs/**'
+      - '.github/workflows/docs-quality.yml'
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/docs-quality.yml'
+  schedule:
+    - cron: '0 6 * * 1' # Mondays at 06:00 UTC
+
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
+jobs:
+  cspell:
+    name: Spelling (cspell)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install cspell
+        run: npm install -g cspell@latest
+      - name: Run cspell
+        run: |
+          npx cspell --no-progress --relative --config cspell.json "docs/**/*.md" "README.md"
+
+  lychee:
+    name: Links (lychee)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: '--config .lychee.toml docs/**/*.md README.md'
+
+  vale:
+    name: Style (Vale)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Vale
+        uses: errata-ai/vale-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          config: .vale.ini
+          files: docs/
+
+  jira:
+    name: Create Jira issue if checks failed
+    needs: [cspell, lychee, vale]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Determine failures
+        id: failures
+        run: |
+          FAIL=0
+          : > failures.txt
+          if [ "${{ needs.cspell.result }}" = "failure" ]; then echo "cspell" >> failures.txt; FAIL=1; fi
+          if [ "${{ needs.lychee.result }}" = "failure" ]; then echo "lychee" >> failures.txt; FAIL=1; fi
+          if [ "${{ needs.vale.result }}" = "failure" ]; then echo "vale" >> failures.txt; FAIL=1; fi
+          echo "HAS_FAILURES=$FAIL" >> $GITHUB_ENV
+          echo "DESC<<'EOF'" >> $GITHUB_ENV
+          echo "Docs quality checks failed." >> $GITHUB_ENV
+          echo "" >> $GITHUB_ENV
+          echo "Failed jobs:" >> $GITHUB_ENV
+          sed 's/^/- /' failures.txt >> $GITHUB_ENV || true
+          echo "" >> $GITHUB_ENV
+          echo "Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+      - name: Check Jira secrets presence
+        run: |
+          if [ -n "${{ secrets.JIRA_BASE_URL }}" ] && [ -n "${{ secrets.JIRA_EMAIL }}" ] && [ -n "${{ secrets.JIRA_API_TOKEN }}" ] && [ -n "${{ secrets.JIRA_PROJECT_KEY }}" ]; then
+            echo "HAS_JIRA=1" >> $GITHUB_ENV
+          else
+            echo "HAS_JIRA=0" >> $GITHUB_ENV
+          fi
+      - name: Jira login
+        if: env.HAS_FAILURES == '1' && env.HAS_JIRA == '1'
+        uses: atlassian/gajira-login@v3
+        env:
+          JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+          JIRA_USER_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+      - name: Create Jira issue
+        if: env.HAS_FAILURES == '1' && env.HAS_JIRA == '1'
+        uses: atlassian/gajira-create@v3
+        with:
+          project: ${{ secrets.JIRA_PROJECT_KEY }}
+          issuetype: Task
+          summary: "Docs quality checks failed - ${{ github.repository }} run #${{ github.run_number }}"
+          description: ${{ env.DESC }}

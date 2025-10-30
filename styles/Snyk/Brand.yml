@@ -1,0 +1,6 @@
+extends: existence
+message: "Capitalize 'Snyk'."
+level: error
+ignorecase: false
+scope: text
+raw: "\bsnyk\b"

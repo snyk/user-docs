@@ -1,0 +1,18 @@
+# Lychee link checker configuration
+verbose = true
+no_progress = true
+max_redirects = 5
+retry_wait_time = 2
+retries = 2
+timeout = 20
+user_agent = "SnykDocsLinkChecker/1.0 (+https://docs.snyk.io)"
+
+# Treat these patterns as OK / skip them
+exclude = [
+  "^mailto:",
+  "^tel:",
+  "localhost",
+  "127.0.0.1",
+  "0.0.0.0",
+  "^https?://app\\.snyk\\.io"
+]

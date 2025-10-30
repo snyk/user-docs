@@ -1,0 +1,6 @@
+extends: existence
+message: "Avoid 'please' in instructions; use direct language."
+ignorecase: true
+level: suggestion
+scope: text
+raw: "\bplease\b"

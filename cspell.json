@@ -1,0 +1,34 @@
+{
+  "version": "0.2",
+  "language": "en-US",
+  "useGitignore": true,
+  "allowCompoundWords": false,
+  "ignorePaths": [
+    ".git/",
+    ".github/",
+    "node_modules/",
+    "tools/",
+    "Local apps/",
+    ".gitbook.yaml"
+  ],
+  "files": [
+    "docs/**/*.md",
+    "README.md"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "snykTerms",
+      "path": "./cspell-dictionary.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": [
+    "softwareTerms",
+    "en_US",
+    "snykTerms"
+  ],
+  "flagWords": [
+    "whitelist",
+    "blacklist"
+  ]
+}

@@ -1,0 +1,16 @@
+Snyk
+SnykCode
+SnykContainer
+SnykOpenSource
+SnykIaC
+IaC
+DevOps
+CLI
+GitHub
+GitLab
+Bitbucket
+Kubernetes
+Terraform
+OpenAPI
+OIDC
+OAuth
