@@ -2725,24 +2725,6 @@
         ],
         "type": "object"
       },
-      "Action": {
-        "description": "Different types of managed OS package fix actions",
-        "discriminator": {
-          "mapping": {
-            "pin_package": "#/components/schemas/PinPackageAction",
-            "upgrade_package": "#/components/schemas/UpgradePackageAction"
-          },
-          "propertyName": "type"
-        },
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/UpgradePackageAction"
-          },
-          {
-            "$ref": "#/components/schemas/PinPackageAction"
-          }
-        ]
-      },
       "ActualVersion": {
         "description": "Resolved API version",
         "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
@@ -6774,6 +6756,67 @@
         },
         "type": "object"
       },
+      "Diff": {
+        "description": "Fix suggestions in the unified diff format that introduce code changes\nto remediate the vulnerability.",
+        "example": {
+          "format": "diff",
+          "suggestions": [
+            {
+              "diff": "--- a/auth.ts\n+++ b/auth.ts\n@@ -1,1 +1,1 @@\n-eval(userInput)\n+safeEval(userInput)\n",
+              "external_id": "550e8400-e29b-41d4-a716-446655440000",
+              "rank": 1
+            },
+            {
+              "diff": "--- a/auth.ts\n+++ b/auth.ts\n@@ -1,1 +1,1 @@\n-password === input\n+bcrypt.compare(input, password)\n",
+              "external_id": "550e8400-e29b-41d4-a716-446655440001",
+              "rank": 2
+            }
+          ]
+        },
+        "properties": {
+          "format": {
+            "enum": [
+              "diff"
+            ],
+            "type": "string"
+          },
+          "suggestions": {
+            "description": "Alternative suggestions - choose one to fix the vulnerability.\nThe 'rank' field signals the relative confidence in each one.",
+            "items": {
+              "$ref": "#/components/schemas/DiffSuggestion"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "format",
+          "suggestions"
+        ],
+        "type": "object"
+      },
+      "DiffSuggestion": {
+        "description": "A suggestion in unified diff format representing the code changes to fix the vulnerability.",
+        "properties": {
+          "diff": {
+            "description": "Unified diff that contains changes for one or multiple files.\nIt already contains file path, but this can be extracted as a separate field if needed.",
+            "maxLength": 10485760,
+            "type": "string"
+          },
+          "external_id": {
+            "description": "The fix suggestion identifier from an external source.",
+            "format": "uuid",
+            "type": "string"
+          },
+          "rank": {
+            "format": "uint8",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "diff"
+        ],
+        "type": "object"
+      },
       "DigitalOceanCrAttributes": {
         "properties": {
           "required": {
@@ -9492,6 +9535,28 @@
         ],
         "type": "string"
       },
+      "FixAction": {
+        "description": "Different fix formats in which the fix action is represented. We distinguish between advice and diff formats.\n\nAdvice - Fix advice in a display only / informational format. These are highly product line specific, so they have their own model.\n- upgradePackageAdvice: Upgrade a direct package from one version to a newer one that resolves the vulnerability.\n- pinPackageAdvice: Pin a package at a specific version.\n\nDiff - Fix suggestions in the unified diff format that introduce code changes\nto remediate the vulnerability. Can be used to represent fix actions for any product line.",
+        "discriminator": {
+          "mapping": {
+            "diff": "#/components/schemas/Diff",
+            "pin_package_advice": "#/components/schemas/PinPackageAdvice",
+            "upgrade_package_advice": "#/components/schemas/UpgradePackageAdvice"
+          },
+          "propertyName": "format"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/UpgradePackageAdvice"
+          },
+          {
+            "$ref": "#/components/schemas/PinPackageAdvice"
+          },
+          {
+            "$ref": "#/components/schemas/Diff"
+          }
+        ]
+      },
       "FixAppliedOutcome": {
         "description": "Indicates the outcome of a fix in terms of resolving the finding at hand",
         "enum": [
@@ -9504,8 +9569,13 @@
       "FixAttributes": {
         "description": "FixAttributes is the main payload modelling a fix",
         "properties": {
-          "actions": {
-            "$ref": "#/components/schemas/Action"
+          "action": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FixAction"
+              }
+            ],
+            "description": "Applying the steps specified by the action within the fix leads to resolving either completely or partially this finding.\nAn action may be a simple upgrade, a code swap, or may model sets of boolean operations.\n\nFor now only simple actions are modelled but could be extended to include more complex actions in the future.\nSee doc for more info: https://docs.google.com/document/d/151vAXurvX4k8fNOWspSI2Ou9OF1G5fj8LHa-NuKOfgw"
           },
           "outcome": {
             "allOf": [
@@ -14553,29 +14623,29 @@
         ],
         "type": "object"
       },
-      "PinPackageAction": {
+      "PinPackageAdvice": {
         "description": "Pin a package at a specific version. Pinning is a capability not supported\nby all ecosystems, which causes a transitive dependency to be pinned at\na specific version with an override.\n\nFor example, the `replace` go.mod directive can override package dependency\nconstraints, forcing a specific version to be used in the application.\n\nPinning could break an application.\n\nNote: In practice pin actions today are solely used in python pip's packages as pip does not calculate upgrade paths",
         "example": {
+          "format": "pin_package_advice",
           "package_name": "requests",
-          "pin_version": "2.25.1",
-          "type": "pin_package"
+          "pin_version": "2.25.1"
         },
         "properties": {
+          "format": {
+            "enum": [
+              "pin_package_advice"
+            ],
+            "type": "string"
+          },
           "package_name": {
             "type": "string"
           },
           "pin_version": {
             "type": "string"
-          },
-          "type": {
-            "enum": [
-              "pin_package"
-            ],
-            "type": "string"
           }
         },
         "required": [
-          "type",
+          "format",
           "package_name",
           "pin_version"
         ],
@@ -19143,11 +19213,11 @@
         "format": "date-time",
         "type": "string"
       },
-      "UpgradePackageAction": {
+      "UpgradePackageAdvice": {
         "description": "Upgrade a package from one version to another.",
         "example": {
+          "format": "upgrade_package_advice",
           "package_name": "lodash",
-          "type": "upgrade_package",
           "upgrade_paths": [
             {
               "dependency_path": [
@@ -19165,14 +19235,14 @@
           ]
         },
         "properties": {
-          "package_name": {
-            "description": "The package that's receiving an upgrade to fix this vulnerability",
+          "format": {
+            "enum": [
+              "upgrade_package_advice"
+            ],
             "type": "string"
           },
-          "type": {
-            "enum": [
-              "upgrade_package"
-            ],
+          "package_name": {
+            "description": "The package that's receiving an upgrade to fix this vulnerability",
             "type": "string"
           },
           "upgrade_paths": {
@@ -19184,7 +19254,7 @@
           }
         },
         "required": [
-          "type",
+          "format",
           "package_name",
           "upgrade_paths"
         ],
