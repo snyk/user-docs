@@ -4,7 +4,7 @@ Before installing, review the [prerequisites](./) and the general instructions f
 
 This integration is useful to ensure a secure connection with your on-premise Bitbucket deployment.
 
-This page describes two distinct authentication schemes: [Basic Auth](bitbucket-server-data-center-install-and-configure-using-docker.md#configure-broker-to-be-used-with-bitbucket-using-basic-auth) and [Bearer (Personal Access Token)](bitbucket-server-data-center-install-and-configure-using-docker.md#configure-broker-to-be-used-with-bitbucket-using-a-personal-access-token-pat). Your Bitbucket Server settings might preclude Basic Auth usage, in which case Bearer Auth is preferred.
+This page describes two distinct authentication schemes: using [Basic Auth](bitbucket-server-data-center-install-and-configure-using-docker.md#configure-broker-to-be-used-with-bitbucket-using-basic-auth) and [using an API token](bitbucket-server-data-center-install-and-configure-using-docker.md#configure-broker-to-be-used-with-bitbucket-using-an-api-token). Your Bitbucket Server settings might preclude Basic Auth usage, in which case Bearer Auth is preferred.
 
 ## Configure Broker to be used with Bitbucket using Basic Auth
 
