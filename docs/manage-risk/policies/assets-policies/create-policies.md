@@ -51,7 +51,7 @@ The following video explains how to create a new policy:
 Overview of asset policy editor
 {% endembed %}
 
-You must specify an asset property for each filter component. Navigate to the [Filters capabilities](../../../manage-assets/assets-inventory-filters.md#filters-capabilities) page to view all available properties for asset policies.&#x20;
+You must specify an asset property for each filter component. For all available properties for asset policies, see [Asset inventory filters](../../../manage-assets/assets-inventory-filters.md).&#x20;
 
 You can specify more than one filter component with an **And** or **Or** operator.
 

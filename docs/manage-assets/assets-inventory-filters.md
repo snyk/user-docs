@@ -1,11 +1,11 @@
 # Assets inventory filters
 
 {% hint style="info" %}
-**Release status** \
+**Release status**\
 Risk factors for Snyk AppRisk are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
 {% endhint %}
 
-From the **Inventory** > **All Assets** tab, you can use the search bar to look for specific keywords across assets. Results can include the asset name and data retrieved from the **Attributes** tab of an asset.&#x20;
+From the **Inventory** > **All Assets** tab, you can use the search bar to look for specific keywords across assets. Results can include the asset name and data retrieved from the **Attributes** tab of an asset.
 
 ## Quick filters
 
@@ -16,13 +16,13 @@ Quick filters are predefined filters that you can apply to assets. Available qui
 * **Assets with Repository freshness** **`ACTIVE` and `COVERAGE GAP`**: displays only the assets from active repositories and with a coverage gap for the selected Snyk products.
 * **Assets with Asset Class `A` and `COVERAGE GAP`**: displays only Class A assets that have a coverage gap for the selected Snyk products.
 
-You can change or add additional filters by clicking **Advanced Filters**.&#x20;
+You can change or add additional filters by clicking **Advanced Filters**.
 
 ## Advanced filters
 
-Using advanced filters, you can define and apply filters to assets based on specific criteria. For details on how to define filters, see [Define filters](../manage-risk/policies/assets-policies/create-policies.md#define-filters).&#x20;
+Using advanced filters, you can define and apply filters to assets based on specific criteria. For details on how to define filters, see [Define filters](../manage-risk/policies/assets-policies/create-policies.md#define-filters).
 
-&#x20;When you select advanced filters, you can specify one or more sets of criteria:
+When you select advanced filters, you can specify one or more sets of criteria:
 
 * **Property**: a characteristic of the asset. You can select it from a dropdown list.
 * **Condition:** depends on the asset selected (such as `contains` or `does not contain` for `asset name`).
@@ -34,7 +34,7 @@ You can add as many filters as needed by clicking **Add Filter**.
 If you are using Snyk Essentials for the first time, Snyk recommends starting with the **Coverage** filter to determine where Snyk is already implemented.
 {% endhint %}
 
-You can filter the information for all inventory layouts using the available filters in the **Advanced Filters** section.&#x20;
+You can filter the information for all inventory layouts using the available filters in the **Advanced Filters** section.
 
 {% hint style="info" %}
 The filters **Application**, **Catalog name**, **Category**, **Lifecycle**, **Owner**, **Title** are visible only if you have configured the [application context](../developer-tools/scm-integrations/application-context-for-scm-integrations/) catalog for your SCM integrations.
@@ -68,7 +68,7 @@ The filters **Application**, **Catalog name**, **Category**, **Lifecycle**, **Ow
   * **N/A**: with no commits detected by Snyk Essentials. This filter indicates that the repository was detected through a Snyk scan but not directly from the SCM. To detect SCM repositories, you must set up SCM integration at the Group level.
 * **Risk factors**: the available risk factors. Risk factors refer to assets that are vulnerable to security threats due to their exposure, sensitivity, compliance with security standards, and vulnerability history.
 * **Runtime discovered**: the period when Snyk discovered the runtime image asset.
-* **Runtime last seen**:  the most recent time Snyk detected this image asset.
+* **Runtime last seen**: the most recent time Snyk detected this image asset.
 * **SCM Integrations**: specifies how the asset is integrated with Snyk - at Group or Org level.
 * **SCM Organization**: the SCM Organization or Workspace where this asset is located.
 * **SCM Project**: the Project in the Azure DevOps or Bitbucket SCM integrations, where this asset is located.
@@ -79,10 +79,6 @@ The filters **Application**, **Catalog name**, **Category**, **Lifecycle**, **Ow
   * **Public**: repositories that are publicly accessible.
   * **Private**: restricted repositories.
   * **Internal**: internal repositories specific to GitHub and GitLab.
-* **Source** - specify the asset source.
-* **Labels** - A collection of unstructured text values representing both system-detected attributes and user-assigned markers.
-* **Tags** - highly flexible, structured metadata applied to an asset in the form of unique `key:value` pairs. Use tags to attach unique context relevant to your internal systems and business needs.
-* **Title\*** - represents the name of the component for which the application context catalog was configured.
 * **Source** - specify the asset source.
 * **Tags** - information about the detected languages and repository update status.
 * **Title\*** - represents the name of the component for which the application context catalog was configured.
@@ -97,7 +93,7 @@ You can filter unenriched repositories directly from the banner by selecting the
 
 #### Unenriched assets with Group SCM integration
 
-If you use a Group-level integration, the banner shows assets not discovered through that integration. Although the integration is in place, some assets are not being pulled in. Possible reasons for unrenriched assets:&#x20;
+If you use a Group-level integration, the banner shows assets not discovered through that integration. Although the integration is in place, some assets are not being pulled in. Possible reasons for unrenriched assets:
 
 * Organization-level integration has broader permissions than the Group-level integration.
 * A repository previously tested by Snyk was deleted in the SCM before the Group-level integration was set up.
@@ -107,11 +103,11 @@ If you use a Group-level integration, the banner shows assets not discovered thr
 
 ## Troubleshooting
 
-### The assets are not discovered by Group or Organization-level integrations.&#x20;
+### The assets are not discovered by Group or Organization-level integrations.
 
 The assets are not discovered by Group or Organization-level integrations, but are discovered only through Snyk targets (for example, CLI Projects or old deleted repositories).
 
-To resolve this issue, select the unenriched repositories that are not being discovered through Group-level SCM integration and filter SCM sources to isolate assets not discovered by integrations.&#x20;
+To resolve this issue, select the unenriched repositories that are not being discovered through Group-level SCM integration and filter SCM sources to isolate assets not discovered by integrations.
 
 Example:
 
