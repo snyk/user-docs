@@ -97,8 +97,8 @@ Kotlin only:
 ### Supported package managers and package registries <a href="#supported-package-managers-and-package-registries" id="supported-package-managers-and-package-registries"></a>
 
 * Supported package managers: [Maven](https://maven.apache.org) and [Gradle](https://gradle.org), with the following supported versions:
-  * Maven: `3.*.` For more information, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
-  * Gradle: `4.*`, `5.*`, `6.*`, `7.*,` `8.*.` For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
+  * Maven: `3.*` , `4.*`.  For more information, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
+  * Gradle: `4.*`, `5.*`, `6.*`, `7.*`, `8.*`, `9*`. For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
 * Supported package registry: [maven.org](https://maven.org/) (Maven Central Repository)
 
 ## Java and Kotlin for Snyk Code
