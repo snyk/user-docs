@@ -97,7 +97,7 @@ To practice [Secure at Inception](../../../discover-snyk/getting-started/glossar
 
 The following is a suggested instruction for creating project rules for use with [Amazon Q Developer chat](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/context-project-rules.html). Append the following contents to the rules file at `.amazonq/rules/amazonq-rules.md`:
 
-<figure><img src="../../../.gitbook/assets/image (482).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (346) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% code title=".amazonq/rules/amazonq-rules.md" overflow="wrap" %}
 ```

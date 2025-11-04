@@ -8,12 +8,12 @@ Assignments are available in the Snyk Learning Management add-on offering. For m
 
 Assignments streamline training management by empowering admins to assign, track, and manage learning efficiently. The Assignments feature enhances accountability by allowing customers to set due dates for completion and seamlessly integrate with organizational goals, for example, compliance timelines, ensuring alignment across training initiatives.
 
-Using Assignments, your company can gain:&#x20;
+Using Assignments, your company can gain:
 
-* Efficiency: Save time and effort in managing and tracking training assignments.&#x20;
-* Clarity: Set clear expectations with start and due dates for completion.&#x20;
-* Security: Equip developers with the knowledge to write more secure code, mitigating risks and vulnerabilities.&#x20;
-* Engagement: Promote active participation by providing personalized learning paths.&#x20;
+* Efficiency: Save time and effort in managing and tracking training assignments.
+* Clarity: Set clear expectations with start and due dates for completion.
+* Security: Equip developers with the knowledge to write more secure code, mitigating risks and vulnerabilities.
+* Engagement: Promote active participation by providing personalized learning paths.
 * Compliance: Get help with meeting regulatory requirements through the timely completion of mandatory training.
 
 {% hint style="info" %}
@@ -48,9 +48,9 @@ Assignments are linked to the individual user and can be tracked from any Organi
 Snyk requires users to log in to the platform before they become active users and are available for assignments.
 {% endhint %}
 
-## Who can create assignments?&#x20;
+## Who can create assignments?
 
-By default, only Snyk Org or Group admins can create assignments. Group admins can create custom roles by using the standard Snyk workflow. Learn more about the access controls for assignments at [Snyk Learn Access Controls](snyk-learn-access-controls.md).&#x20;
+By default, only Snyk Org or Group admins can create assignments. Group admins can create custom roles by using the standard Snyk workflow. Learn more about the access controls for assignments at [Snyk Learn Access Controls](snyk-learn-access-controls.md).
 
 ## Creating new assignments
 
@@ -68,9 +68,9 @@ By default, only Snyk Org or Group admins can create assignments. Group admins c
 
 The **New Assignments** page opens, which allows you to create assignments for Snyk Organization users. On the **New Assignments** page:
 
-1. &#x20;Verify that the selected Organization is correct.
+1. Verify that the selected Organization is correct.
 
-<figure><img src="../../.gitbook/assets/image (248).png" alt=""><figcaption><p>Select an Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (247) (1).png" alt=""><figcaption><p>Select an Organization</p></figcaption></figure>
 
 2. Select users
 
@@ -96,6 +96,6 @@ The **New Assignments** page opens, which allows you to create assignments for S
 
 <figure><img src="../../.gitbook/assets/image (258).png" alt=""><figcaption><p>Send custom notification emails</p></figcaption></figure>
 
-8. Review the assignment details and click **Submit**.&#x20;
+8. Review the assignment details and click **Submit**.
 
 <figure><img src="../../.gitbook/assets/image (259).png" alt=""><figcaption><p>Review and submit assignments</p></figcaption></figure>

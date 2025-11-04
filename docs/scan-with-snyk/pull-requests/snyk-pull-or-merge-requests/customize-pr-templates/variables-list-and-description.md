@@ -2,17 +2,15 @@
 
 {% tabs %}
 {% tab title="API custom PR templates" %}
-
-
 You can use the following variables in your template.
 
-## <mark style="color:purple;">`jira_ids: string[]`</mark>
+### <mark style="color:purple;">`jira_ids: string[]`</mark>
 
 A list of Jira tickets associated with the issues contained within the pull request. Ensure that the Snyk Jira integration is enabled on the Project or repository that contains the Project and that you have linked Snyk issues to JIRA tickets.
 
-To automatically link Jira to the relevant pull requests, include a list of associated Jira tickets in the commit message.&#x20;
+To automatically link Jira to the relevant pull requests, include a list of associated Jira tickets in the commit message.
 
-### Input
+#### Input
 
 ```json
 {
@@ -25,9 +23,9 @@ To automatically link Jira to the relevant pull requests, include a list of asso
 }
 ```
 
-### Output
+#### Output
 
-The commit message of your PR will be:&#x20;
+The commit message of your PR will be:
 
 ```json
 This pull request is from Snyk and relates to JIRA-1,JIRA-2,JIRA-3
@@ -35,11 +33,11 @@ This pull request is from Snyk and relates to JIRA-1,JIRA-2,JIRA-3
 
 This output indicates that the suggested solution successfully resolved three problems. It also includes links to every Jira ticket.
 
-## <mark style="color:purple;">`snyk_project_url: string`</mark>
+### <mark style="color:purple;">`snyk_project_url: string`</mark>
 
-This is the Snyk Project URL and can be used to link to the Snyk Project page.&#x20;
+This is the Snyk Project URL and can be used to link to the Snyk Project page.
 
-### Input
+#### Input
 
 ```json
 {
@@ -53,21 +51,21 @@ This is the Snyk Project URL and can be used to link to the Snyk Project page.&#
 }
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 To find more details, see the Snyk project https://app.snyk.io/org/my-org/project/xx-xxx-xx-xx
 ```
 
-In this output, `my-org` is your Snyk Organization name and `xx-xxx-xx-xx-xxxx` is the public ID of your Project or repository.&#x20;
+In this output, `my-org` is your Snyk Organization name and `xx-xxx-xx-xx-xxxx` is the public ID of your Project or repository.
 
-## <mark style="color:purple;">`snyk_project_name: string`</mark>
+### <mark style="color:purple;">`snyk_project_name: string`</mark>
 
 This is the Snyk Project name. You can add the Snyk Project name to your description.
 
-### Input
+#### Input
 
 ```json
 {
@@ -81,19 +79,19 @@ This is the Snyk Project name. You can add the Snyk Project name to your descrip
 }
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Fix applied to project my-org/project:filename
 ```
 
-## <mark style="color:purple;">`snyk_org_name: string`</mark>
+### <mark style="color:purple;">`snyk_org_name: string`</mark>
 
 This is the Snyk Organization name. You can add the Snyk Organization name to your description.
 
-### Input
+#### Input
 
 ```json
 {
@@ -107,21 +105,21 @@ This is the Snyk Organization name. You can add the Snyk Organization name to yo
 }
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Fix applied by my-org
 ```
 
-## <mark style="color:purple;">`package_name: string`</mark>
+### <mark style="color:purple;">`package_name: string`</mark>
 
 This is the name of the package being fixed or upgraded. When more than one package is changed, this variable will default to the first one.
 
-Follow this example to display in the description the package name of the first dependency being fixed in the PR.&#x20;
+Follow this example to display in the description the package name of the first dependency being fixed in the PR.
 
-### Input
+#### Input
 
 ```json
 {
@@ -135,19 +133,19 @@ Follow this example to display in the description the package name of the first 
 }
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Fixes adm-zip
 ```
 
-## <mark style="color:purple;">`package_from: string`</mark>
+### <mark style="color:purple;">`package_from: string`</mark>
 
 This is the version of the package that is being fixed or upgraded. In cases where more than one package is changed, this variable will default to the `from` version of the first one.
 
-### Input
+#### Input
 
 ```json
 {
@@ -161,19 +159,19 @@ This is the version of the package that is being fixed or upgraded. In cases whe
 }
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Fix is applied by moving from 0.4.7
 ```
 
-## <mark style="color:purple;">`package_to: string`</mark>
+### <mark style="color:purple;">`package_to: string`</mark>
 
 The package is transitioning to this particular version. In cases where more than one package is changed, this variable will default to the `to` version of the first one.
 
-### Input
+#### Input
 
 ```json
 {
@@ -187,19 +185,19 @@ The package is transitioning to this particular version. In cases where more tha
 }
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Fix is applied by moving to 0.5.2
 ```
 
-## <mark style="color:purple;">`issue_count: number`</mark>
+### <mark style="color:purple;">`issue_count: number`</mark>
 
-This is the number of issues in your Project or repository that are covered by the PR.&#x20;
+This is the number of issues in your Project or repository that are covered by the PR.
 
-### Input
+#### Input
 
 ```json
 {
@@ -212,19 +210,19 @@ This is the number of issues in your Project or repository that are covered by t
 }
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 The PR will fix 98 issues.
 ```
 
-## <mark style="color:purple;">`product_is_container: boolean`</mark>
+### <mark style="color:purple;">`product_is_container: boolean`</mark>
 
-This variable can be used to customize attributes based on whether the PR is a Snyk Container product. Currently, there are two different product types at Snyk that can open PRs (Snyk Open Source PRs and Snyk Container PRs). Using this variable will help you customize your template to differentiate between the two.&#x20;
+This variable can be used to customize attributes based on whether the PR is a Snyk Container product. Currently, there are two different product types at Snyk that can open PRs (Snyk Open Source PRs and Snyk Container PRs). Using this variable will help you customize your template to differentiate between the two.
 
-### Input
+#### Input
 
 ```
 {
@@ -238,19 +236,19 @@ This variable can be used to customize attributes based on whether the PR is a S
 }
 ```
 
-### Output
+#### Output
 
-If your PR is an Open Source product, then the description of your PR will be:&#x20;
+If your PR is an Open Source product, then the description of your PR will be:
 
 ```
 This Container PR has been opened to fix vulnerabilities in your project
 ```
 
-## <mark style="color:purple;">`product_is_open_source: boolean`</mark>
+### <mark style="color:purple;">`product_is_open_source: boolean`</mark>
 
-This variable can be used to customize attributes based on whether the PR is an Open-Source product. Currently, Snyk has two different product types that can open PRs (Open-Source PRs and Container PRs). Using this variable will help you customize your template to differentiate between the two.&#x20;
+This variable can be used to customize attributes based on whether the PR is an Open-Source product. Currently, Snyk has two different product types that can open PRs (Open-Source PRs and Container PRs). Using this variable will help you customize your template to differentiate between the two.
 
-### Input
+#### Input
 
 ```
 {
@@ -264,19 +262,19 @@ This variable can be used to customize attributes based on whether the PR is an 
 }
 ```
 
-### Output
+#### Output
 
-If your PR is an Open Source product then the description of your PR will be:&#x20;
+If your PR is an Open Source product then the description of your PR will be:
 
 ```
 This Open Source PR has been opened to fix vulnerabilities in your project
 ```
 
-## <mark style="color:purple;">`is_fix_pr: boolean`</mark>
+### <mark style="color:purple;">`is_fix_pr: boolean`</mark>
 
-This variable can be used to customize attributes based on whether the PR is a backlog PR,  for example, opened to fix new vulnerabilities introduced to the Project or repository in the latest scan. In the example below, you can see that the description of the PR will only show if it is a fixed PR.
+This variable can be used to customize attributes based on whether the PR is a backlog PR, for example, opened to fix new vulnerabilities introduced to the Project or repository in the latest scan. In the example below, you can see that the description of the PR will only show if it is a fixed PR.
 
-### Input
+#### Input
 
 ```json
 {
@@ -290,19 +288,19 @@ This variable can be used to customize attributes based on whether the PR is a b
 }
 ```
 
-### Output
+#### Output
 
-If your PR is a fixed PR ,then the description of your PR will be:&#x20;
+If your PR is a fixed PR ,then the description of your PR will be:
 
 ```yaml
 This PR has been opened to fix vulnerabilities in your project.
 ```
 
-## <mark style="color:purple;">`is_backlog_pr: boolean`</mark>
+### <mark style="color:purple;">`is_backlog_pr: boolean`</mark>
 
-This variable can be used to customize attributes based on whether the PR is a backlog PR, for example, opened to fix known vulnerabilities already in the Project or repository. In the example below you can see that the description of the PR will only show if it is a backlog PR.&#x20;
+This variable can be used to customize attributes based on whether the PR is a backlog PR, for example, opened to fix known vulnerabilities already in the Project or repository. In the example below you can see that the description of the PR will only show if it is a backlog PR.
 
-### Input
+#### Input
 
 ```json
 {
@@ -316,19 +314,19 @@ This variable can be used to customize attributes based on whether the PR is a b
 }
 ```
 
-### Output
+#### Output
 
-If your PR is a backlog PR then the description of your PR will be:&#x20;
+If your PR is a backlog PR then the description of your PR will be:
 
 ```yaml
 This PR has been opened to fix known vulnerabilities. These vulnerabilities are retrieved from the Project's backlog.
 ```
 
-## <mark style="color:purple;">`is_upgrade_pr: boolean`</mark>
+### <mark style="color:purple;">`is_upgrade_pr: boolean`</mark>
 
-This variable can be used to customize attributes based on whether the PR is an Upgrade PR, or to upgrade dependencies to newer versions regardless of vulnerabilities. In the example below you can see that the description of the PR will only show if it is an upgrade PR.&#x20;
+This variable can be used to customize attributes based on whether the PR is an Upgrade PR, or to upgrade dependencies to newer versions regardless of vulnerabilities. In the example below you can see that the description of the PR will only show if it is an upgrade PR.
 
-### Input
+#### Input
 
 ```json
 {
@@ -342,19 +340,19 @@ This variable can be used to customize attributes based on whether the PR is an 
 }
 ```
 
-### Output
+#### Output
 
-If your PR is an upgrade PR then the description of your PR will be:&#x20;
+If your PR is an upgrade PR then the description of your PR will be:
 
 ```json
 This PR has been opened to make sure our repositories are kept up-to-date. It updates package-x from version 1.0.0 to version 2.0.0. Review relevant docs for possible breaking changes.
 ```
 
-## <mark style="color:purple;">`files_changed`</mark>
+### <mark style="color:purple;">`files_changed`</mark>
 
-This variable can be used in your template to list the files changed as part of the pull request.&#x20;
+This variable can be used in your template to list the files changed as part of the pull request.
 
-### Input
+#### Input
 
 ```
 {
@@ -368,21 +366,19 @@ This variable can be used in your template to list the files changed as part of 
 }
 ```
 
+#### Output
 
-
-### Output
-
-If the pull request was for a maven project and the changes made were in the pom.xml file then this is what the description of your PR would look like.&#x20;
+If the pull request was for a maven project and the changes made were in the pom.xml file then this is what the description of your PR would look like.
 
 ```
 Changes included in this PR: pom.xml
 ```
 
-## <mark style="color:purple;">`container.recommended_base_image_name`</mark>
+### <mark style="color:purple;">`container.recommended_base_image_name`</mark>
 
 This variable is for container projects only. It can be used to display the name of the recommended base image applied in this PR.
 
-### Input
+#### Input
 
 ```
 {
@@ -396,19 +392,19 @@ This variable is for container projects only. It can be used to display the name
 }
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```
 We recommend upgrading to node:xx.xx.x
 ```
 
-## <mark style="color:purple;">`container.current_base_image_name`</mark>
+### <mark style="color:purple;">`container.current_base_image_name`</mark>
 
 This variable is for container projects only. It can be used to display the current base image.
 
-### Input
+#### Input
 
 ```
 {
@@ -422,19 +418,19 @@ This variable is for container projects only. It can be used to display the curr
 }
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```
 The current base image is: node:xx.xx.x
 ```
 
-## <mark style="color:purple;">`snyk_pull_request_type: prType (fix, upgrade, backlog, unknown)`</mark>
+### <mark style="color:purple;">`snyk_pull_request_type: prType (fix, upgrade, backlog, unknown)`</mark>
 
 This is the prType of your Project or repository. You can use it to display the PR type from the pull request description.
 
-### Input
+#### Input
 
 ```json
 {
@@ -448,9 +444,9 @@ This is the prType of your Project or repository. You can use it to display the 
 }
 ```
 
-### Output
+#### Output
 
-If you have opened a Fix PR, then the commit message of your PR will be:&#x20;
+If you have opened a Fix PR, then the commit message of your PR will be:
 
 ```yaml
 fix: for package-x
@@ -458,26 +454,24 @@ fix: for package-x
 {% endtab %}
 
 {% tab title="YAML file custom PR templates" %}
+You can use the following variables in your template. These variables can be used in any of the customizable PR properties.
 
-
-You can use the following variables in your template. These variables can be used in any of the customizable PR properties.&#x20;
-
-## <mark style="color:purple;">`jira_ids: string[]`</mark>
+### <mark style="color:purple;">`jira_ids: string[]`</mark>
 
 A list of Jira tickets associated with the issues contained within the pull request. Ensure that the Snyk Jira integration is enabled on the Project or repository that contains the Project and that you have linked Snyk issues to JIRA tickets.
 
-To automatically link Jira to the relevant pull requests, include a list of associated Jira tickets in the commit message.&#x20;
+To automatically link Jira to the relevant pull requests, include a list of associated Jira tickets in the commit message.
 
-### Input
+#### Input
 
 ```yaml
 commitMessage: |
   This pull request is from Snyk and relates to {{ jira_ids }}
 ```
 
-### Output
+#### Output
 
-The commit message of your PR will be:&#x20;
+The commit message of your PR will be:
 
 ```yaml
 This pull request is from Snyk and relates to JIRA-1,JIRA-2,JIRA-3
@@ -485,91 +479,91 @@ This pull request is from Snyk and relates to JIRA-1,JIRA-2,JIRA-3
 
 This output indicates that the suggested solution successfully resolved three problems. It also includes links to every Jira ticket.
 
-## <mark style="color:purple;">`snyk_project_url: string`</mark>
+### <mark style="color:purple;">`snyk_project_url: string`</mark>
 
-This is the Snyk Project URL and can be used to link to the Snyk Project page.&#x20;
+This is the Snyk Project URL and can be used to link to the Snyk Project page.
 
-### Input
+#### Input
 
 ```yaml
 description: |
   To find more details, see the Snyk project {{ snyk_project_url }}
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 To find more details, see the Snyk project https://app.snyk.io/org/my-org/project/xx-xxx-xx-xx
 ```
 
-In this output, `my-org` is your Snyk Organization name and `xx-xxx-xx-xx-xxxx` is the public ID of your Project or repository.&#x20;
+In this output, `my-org` is your Snyk Organization name and `xx-xxx-xx-xx-xxxx` is the public ID of your Project or repository.
 
-## <mark style="color:purple;">`snyk_project_name: string`</mark>
+### <mark style="color:purple;">`snyk_project_name: string`</mark>
 
 This is the Snyk Project name. You can add the Snyk Project name to your description.
 
-### Input
+#### Input
 
 ```yaml
 description: |
   Fix applied to project {{ snyk_project_name }}
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Fix applied to project my-org/project:filename
 ```
 
-## <mark style="color:purple;">`snyk_org_name: string`</mark>
+### <mark style="color:purple;">`snyk_org_name: string`</mark>
 
 This is the Snyk Organization name. You can add the Snyk Organization name to your description.
 
-### Input
+#### Input
 
 ```yaml
 description: |
   Fix applied by {{ snyk_org_name }}
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Fix applied by my-org
 ```
 
-## <mark style="color:purple;">`package_name: string`</mark>
+### <mark style="color:purple;">`package_name: string`</mark>
 
 This is the name of the package being fixed or upgraded. When more than one package is changed, this variable will default to the first one.
 
-Follow this example to display in the description the package name of the first dependency being fixed in the PR.&#x20;
+Follow this example to display in the description the package name of the first dependency being fixed in the PR.
 
-### Input
+#### Input
 
 ```yaml
 description: |
   Fixes {{ package_name }}
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Fixes adm-zip
 ```
 
-## <mark style="color:purple;">`package_from: string`</mark>
+### <mark style="color:purple;">`package_from: string`</mark>
 
 This is the version of the package that is being fixed or upgraded. In cases where more than one package is changed, this variable will default to the `from` version of the first one.
 
-### Input
+#### Input
 
 ```yaml
 description: |
@@ -577,19 +571,19 @@ description: |
 
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Fix is applied by moving from 0.4.7
 ```
 
-## <mark style="color:purple;">`package_to: string`</mark>
+### <mark style="color:purple;">`package_to: string`</mark>
 
 The package is transitioning to this particular version. In cases where more than one package is changed, this variable will default to the `to` version of the first one.
 
-### Input
+#### Input
 
 ```yaml
 description: |
@@ -597,39 +591,39 @@ description: |
 
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Fix is applied by moving to 0.5.2
 ```
 
-## <mark style="color:purple;">`issue_count: number`</mark>
+### <mark style="color:purple;">`issue_count: number`</mark>
 
-This is the number of issues in your Project or repository that are covered by the PR.&#x20;
+This is the number of issues in your Project or repository that are covered by the PR.
 
-### Input
+#### Input
 
 ```yaml
 description: |
    The PR will fix {{ issue_count }} issues.
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 The PR will fix 98 issues.
 
 ```
 
-## <mark style="color:purple;">`product_is_container: boolean`</mark>
+### <mark style="color:purple;">`product_is_container: boolean`</mark>
 
 This variable can be used to customize attributes based on whether the PR is a Container product. Currently there are two different product types at Snyk which can open PRs (Open Source PRs and Container Prs). Using this variable will help you customise your template to differentiate between the two.
 
-### Input
+#### Input
 
 ```
 description: |
@@ -640,7 +634,7 @@ description: |
   {{ /product_is_container }}
 ```
 
-### Output
+#### Output
 
 If your project is a Container project, the description will be:
 
@@ -650,11 +644,11 @@ If your project is a Container project, the description will be:
   Review relevant docs for possible breaking changes.
 ```
 
-## <mark style="color:purple;">`product_is_open_source: boolean`</mark>
+### <mark style="color:purple;">`product_is_open_source: boolean`</mark>
 
 This variable can be used to customize attributes based on whether the PR is an Open Source product. Currently there are two different product types at Snyk which can open PRs (Open Source PRs and Container Prs). Using this variable will help you customise your template to differentiate between the two.
 
-### Input
+#### Input
 
 ```
 description: |
@@ -665,7 +659,7 @@ description: |
   {{ /product_is_open_source }}
 ```
 
-### Output
+#### Output
 
 If your project is an Open Source project, the description will be:
 
@@ -675,11 +669,11 @@ If your project is an Open Source project, the description will be:
   Review relevant docs for possible breaking changes.
 ```
 
-## <mark style="color:purple;">`is_fix_pr: boolean`</mark>
+### <mark style="color:purple;">`is_fix_pr: boolean`</mark>
 
 This checks to determine whether the pull request is a fix PR, for example, opened to fix new vulnerabilities introduced to the Project or repository in the latest scan.
 
-### Input
+#### Input
 
 ```yaml
 description: |
@@ -687,59 +681,57 @@ description: |
 
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Is this a fix pr? true
 ```
 
-## <mark style="color:purple;">`is_backlog_pr: boolean`</mark>
+### <mark style="color:purple;">`is_backlog_pr: boolean`</mark>
 
 This checks to determine whether the pull request is a backlog PR, for example, opened to fix known vulnerabilities already in the Project or repository.
 
-### Input
+#### Input
 
 ```yaml
 description: |
   Is this pr a backlog pr? {{ is_backlog_pr }}
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Is this a backlog pr? false
 ```
 
-## <mark style="color:purple;">`is_upgrade_pr: boolean`</mark>
+### <mark style="color:purple;">`is_upgrade_pr: boolean`</mark>
 
 This checks whether the pull request is an upgrade PR, for example, opened to upgrade dependencies to newer versions regardless of vulnerabilities.
 
-### Input
+#### Input
 
 ```yaml
 description: |
   Is this pr an upgrade pr? {{ is_upgrade_pr }}
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 Is this an upgrade pr? false
 ```
 
+### <mark style="color:purple;">`files_changed`</mark>
 
+This variable can be used in your template to list the files changed as part of the pull request.
 
-## <mark style="color:purple;">`files_changed`</mark>
-
-This variable can be used in your template to list the files changed as part of the pull request.&#x20;
-
-### Input
+#### Input
 
 ```
 {
@@ -753,21 +745,19 @@ This variable can be used in your template to list the files changed as part of 
 }
 ```
 
+#### Output
 
-
-### Output
-
-If the pull request was for a maven project and the changes made were in the pom.xml file then this is what the description of your PR would look like.&#x20;
+If the pull request was for a maven project and the changes made were in the pom.xml file then this is what the description of your PR would look like.
 
 ```
 Changes included in this PR: pom.xml
 ```
 
-## <mark style="color:purple;">`container.recommended_base_image_name`</mark>
+### <mark style="color:purple;">`container.recommended_base_image_name`</mark>
 
 This variable is for container projects only. It can be used to display the name of the recommended base image applied in this PR.
 
-### Input
+#### Input
 
 ```
 {
@@ -781,19 +771,19 @@ This variable is for container projects only. It can be used to display the name
 }
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```
 We recommend upgrading to node:xx.xx.x
 ```
 
-## <mark style="color:purple;">`container.current_base_image_name`</mark>
+### <mark style="color:purple;">`container.current_base_image_name`</mark>
 
 This variable is for container projects only. It can be used to display the current base image.
 
-### Input
+#### Input
 
 ```
 {
@@ -807,28 +797,28 @@ This variable is for container projects only. It can be used to display the curr
 }
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```
 The current base image is: node:xx.xx.x
 ```
 
-## <mark style="color:purple;">`snyk_pull_request_type: prType (fix, upgrade, backlog, unknown)`</mark>
+### <mark style="color:purple;">`snyk_pull_request_type: prType (fix, upgrade, backlog, unknown)`</mark>
 
 This is the prType of your Project or repository. You can use it to display the PR type from the pull request description.
 
-### Input
+#### Input
 
 ```yaml
 description: |
   This is a {{ snyk_pull_request_type }} pull request
 ```
 
-### Output
+#### Output
 
-The description of your PR will be:&#x20;
+The description of your PR will be:
 
 ```yaml
 This is a fix pull request

@@ -115,7 +115,7 @@ To practice [Secure at Inception](../../../discover-snyk/getting-started/glossar
 
 The following is a suggested instruction for creating project rules for use with [Claude Code md files](https://www.anthropic.com/engineering/claude-code-best-practices). Append the following contents to the rules file at `CLAUDE.md`:
 
-<figure><img src="../../../.gitbook/assets/image (518) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (381) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% code title="CLAUDE.md" overflow="wrap" %}
 ```

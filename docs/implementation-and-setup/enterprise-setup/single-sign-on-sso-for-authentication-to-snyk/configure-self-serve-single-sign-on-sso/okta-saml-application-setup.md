@@ -4,13 +4,13 @@ This example shows setting up an Okta SAML application and connecting this to Sn
 
 1.  From the drop-down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
 
-    <figure><img src="../../../../.gitbook/assets/5.png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1 (5).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
 2.  Click on **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.
 
     <figure><img src="../../../../.gitbook/assets/2 (2).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
 3.  Navigate to [Okta](https://www.okta.com/se/login/), open the application menu, and click on **Create App Integration.**
 
-    <figure><img src="../../../../.gitbook/assets/1 (5).png" alt="Okta Applications main page"><figcaption><p>Okta Applications main page</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1 (1) (1).png" alt="Okta Applications main page"><figcaption><p>Okta Applications main page</p></figcaption></figure>
 4.  Choose **SAML 2.0** and name your application appropriately; click **Next**.
 
     <figure><img src="../../../../.gitbook/assets/2.png" alt="Okta SAML application creation"><figcaption><p>Okta SAML application creation</p></figcaption></figure>

@@ -2,7 +2,7 @@
 
 After you run the `snyk test` command in the CLI, the Snyk Open Source test results are displayed. The report of results includes a summary of the test findings, a list of vulnerability issues detected, and descriptive information about the Snyk Project tested.
 
-<figure><img src="../../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Snyk Open Source CLI test results."><figcaption><p>Snyk Open Source CLI test results</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (40) (1).png" alt="Snyk Open Source CLI test results."><figcaption><p>Snyk Open Source CLI test results</p></figcaption></figure>
 
 ## Summary of test findings
 
@@ -34,7 +34,7 @@ These are issues that cannot be resolved by upgrading a direct dependency. They 
 
 ### License Issues
 
-License issues are determined by the [license policy](../../../../manage-risk/policies/license-policies/) of your Snyk Organization. License issues  contain the following information:
+License issues are determined by the [license policy](../../../../manage-risk/policies/license-policies/) of your Snyk Organization. License issues contain the following information:
 
 * Type of license
 * License severity as determined by the license policy of your Snyk Organization

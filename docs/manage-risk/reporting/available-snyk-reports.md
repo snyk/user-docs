@@ -315,7 +315,7 @@ After you investigate and see the actual issues behind the figures, you may proc
 
 To use this report, you must ensure you have installed the following prerequisites:
 
-* Snyk CLI&#x20;
+* Snyk CLI
   * version 1.1292.1 or newer (for CLI and IDE plugins usage)
   * version 1.1297.0 or newer for general Agentic scans (Snyk Studio using MCP)
   * version 1.1298.1 or newer for granular Agentic scans (such as MCP host)
@@ -484,7 +484,7 @@ The report allows you to track:
 
 The first section of the report focuses on showing key engagement statistics and the progress of any assignments. Tool tips provide more details on the definitions of the metrics.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.30.57.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.30.57 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Adoption rankings
 
@@ -520,19 +520,19 @@ The report allows you to track:
 
 * Impact of education and training on code issue remediation
 * Impact of education and training on code issue prevention
-* Recommendations for further training opportunities&#x20;
+* Recommendations for further training opportunities
 * Coverage rates of users trained in identified training opportunities.
 * Filtering: custom time periods, users, organizations, lesson title, CWE, issue severity.
 
-### Learning impact snapshot&#x20;
+### Learning impact snapshot
 
-The first section of the report focuses on the impact education is having on your security program, focusing on code issue resolution and code issue prevention.&#x20;
+The first section of the report focuses on the impact education is having on your security program, focusing on code issue resolution and code issue prevention.
 
-The "Learning Impact on Issue Resolution" chart measures the relationship between lesson completion and the resolution of detected code security issues. Resolved issues are counted when a related lesson was completed before the issue was fixed within the selected period. Lesson completions are counted when a related issue was fixed after the lesson was completed within the selected period. Use the filters to drill into specific lessons or CWE categories.&#x20;
+The "Learning Impact on Issue Resolution" chart measures the relationship between lesson completion and the resolution of detected code security issues. Resolved issues are counted when a related lesson was completed before the issue was fixed within the selected period. Lesson completions are counted when a related issue was fixed after the lesson was completed within the selected period. Use the filters to drill into specific lessons or CWE categories.
 
 The "Learning Impact on Issue Prevention" chart measures the relationship between lesson completion and the prevention code security issues. Introduced issues are counted when a related lesson was completed within the selected period. Issues introduced on the day a Project was imported are not counted. Use the filters to drill into specific lessons or CWE categories.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-10-23 at 15.00.57 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-10-23 at 15.00.57 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Top 10 CWEs - open issues / issues introduced in the period
 
@@ -846,7 +846,7 @@ You can then save this filtered view by clicking **Save**, adding a name to your
 
 You can then share the report with your development team by copying and sending the view URL.
 
-## PR Check Report&#x20;
+## PR Check Report
 
 {% hint style="info" %}
 **Release status**
@@ -854,17 +854,17 @@ You can then share the report with your development team by copying and sending 
 The PR Check report is in Early Access and available only with Enterprise plans.
 {% endhint %}
 
-This report combines adoption, performance, and reliability into a single view of PR scanning health, and it provides visibility into the adoption and performance of PR scanning across your different repositories.&#x20;
+This report combines adoption, performance, and reliability into a single view of PR scanning health, and it provides visibility into the adoption and performance of PR scanning across your different repositories.
 
-You can use this report to determine where Snyk PR checks are implemented, where adoption could be increased, and which types of failures most frequently impact developer workflows. Together, these insights guide teams towards better PR scan coverage, more stable runs, and an improved developer experience across your whole Organization.&#x20;
+You can use this report to determine where Snyk PR checks are implemented, where adoption could be increased, and which types of failures most frequently impact developer workflows. Together, these insights guide teams towards better PR scan coverage, more stable runs, and an improved developer experience across your whole Organization.
 
 Filters and CSV downloads allow users to focus on specific groups or configurations for deeper analysis.
 
 ### PR check performance and status
 
-You can visualize PR check performance through trend charts and summary tiles that display the successful, failed, and errored checks.&#x20;
+You can visualize PR check performance through trend charts and summary tiles that display the successful, failed, and errored checks.
 
-The charts break down performance across time and PR Check status. A secondary view distinguishes between Snyk Code and Snyk Open Source, allowing you to understand which product area contributes most to success or error patterns.&#x20;
+The charts break down performance across time and PR Check status. A secondary view distinguishes between Snyk Code and Snyk Open Source, allowing you to understand which product area contributes most to success or error patterns.
 
 Use this report as an overview of platform reliability and scanning performance.
 
@@ -876,25 +876,25 @@ This view allows you to see the most common causes of PR check errors. This help
 
 <figure><img src="../../.gitbook/assets/unknown (1).png" alt=""><figcaption><p>Lst of error PR checks displayed by error message</p></figcaption></figure>
 
-### PR scanning adoption&#x20;
+### PR scanning adoption
 
-This view highlights PR scanning adoption across teams. You can view adoption by Group, Organization, or repository by using the dropdown controls.&#x20;
+This view highlights PR scanning adoption across teams. You can view adoption by Group, Organization, or repository by using the dropdown controls.
 
-Each view displays the following key indicators:&#x20;
+Each view displays the following key indicators:
 
-* SCM integrations with PR scanning&#x20;
-* Repositories using Snyk Code &#x20;
-* Repositories using Snyk Open Source&#x20;
+* SCM integrations with PR scanning
+* Repositories using Snyk Code
+* Repositories using Snyk Open Source
 
 The layout displays where PR scanning is active and where further enablement could extend coverage across repositories. The long-term goal is to achieve full coverage, ensuring that 100% of repositories and integrations are included in PR scanning.
 
 <figure><img src="../../.gitbook/assets/unknown (2).png" alt=""><figcaption><p>PR scanning adoption view by Group</p></figcaption></figure>
 
-### PR scanning performance&#x20;
+### PR scanning performance
 
 This view displays how PR activity across different Groups, Organizations, or repositories translates into scan coverage and failure rates.
 
-You can go into detail by using the dropdown menu. The table summarizes total PRs and those with failed checks, and highlights where scanning activity is concentrated and where security risks can appear more frequently.&#x20;
+You can go into detail by using the dropdown menu. The table summarizes total PRs and those with failed checks, and highlights where scanning activity is concentrated and where security risks can appear more frequently.
 
 It is common that teams or repositories with higher PR volumes generate more checks. This view helps to surface patterns in failure distribution.
 

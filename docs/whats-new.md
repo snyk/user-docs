@@ -1,11 +1,42 @@
 ---
-cover: .gitbook/assets/Docs Banner (1) (1).png
+cover: .gitbook/assets/docs-banner-nov25.webp
 coverY: 0
 ---
 
 # What's new?
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
+
+## October 2025
+
+### **Snyk API**&#x20;
+
+* A new [API migration guide](snyk-api/api-end-of-life-eol-process-and-migration-guides/guides-to-migration/v1-reporting-apis-to-export-api-migration-guide.md) is available to help you migrate from the v1 Reporting API to the REST Exporting API.
+* The Export API has been improved with the option to [limit the link expiration](snyk-api/using-specific-snyk-apis/export-api-specifications-columns-and-filters.md#data-retention).
+
+### **Snyk Broker**
+
+* The [Universal Broker](snyk-api/reference/universal-broker.md) release status has transitioned to Generally Available.
+* The page [Upgrade an Organization from Classic Broker to Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md#migrating-multiple-organizations) has been updated with steps to migrate multiple Organizations at a time.&#x20;
+
+### **Snyk CLI**
+
+* Snyk CLI now supports uploading files and folders for Snyk Code scanning. The command [`code-test` ](developer-tools/snyk-cli/commands/code-test.md)has been updated with options reflecting these capabilities.
+* The latest [Snyk CLI version](developer-tools/snyk-cli/install-or-update-the-snyk-cli/) available is v1.1300.2.
+
+### **Snyk integrations**
+
+* The list of Snyk MCP quick guides now includes [Devin guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/devin-guide.md), [Factory guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/factory-guide.md), [Factory terminal guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/factory-terminal-ide-guide.md).
+* The Snyk MCP Server has been rebranded as [Snyk Studio](integrations/snyk-studio-agentic-integrations/).&#x20;
+* [SCM integration support for Python](supported-languages/supported-languages-list/python/scm-integrations-and-python.md) has been updated with support for Python 3.14.
+
+### **Other updates**
+
+* The [Operating system distributions supported by Snyk Container](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md#minimus) has been updated to include include support for Minimus, Ubuntu 25.10 - Questing Quokka, and Ubuntu 25.04 - Plucky Puffin.&#x20;
+* For [Ruby](supported-languages/supported-languages-list/ruby.md), versions 2.3.X are no longer supported.  The Ruby-specific versions have been updated to include more version patches.
+* PR Check report was added as Early Access to the available reports to identify Snyk PR check locations, increase adoption, and pinpoint common failure impacts on developer workflows.&#x20;
+* You can now label your assets with metadata on repository assets and build artifacts, helping tag, manage security, and group items by features. An asset label differs from an asset tag, which enables key-value tags for structured metadata, allowing for granular filtering, policy creation, and improved system alignment.
+* &#x20;[JavaScript for open source](supported-languages/supported-languages-list/javascript/javascript-for-open-source.md#pnpm) has been updated to include full support for pnpm Projects.
 
 ## September 2025
 
@@ -14,7 +45,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * The instructions for [installing the Snyk Controller on Amazon Elastic Kubernetes Service (Amazon AKS)](scan-with-snyk/snyk-container/kubernetes-integration/install-the-snyk-controller/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md#create-an-eks-node-role-for-your-node-group-and-add-the-trust-relationship-for-the-iam-role) have been updated with details for configuring trust relationships for the IAM role.
 * The list of [operating system distributions supported by Snyk Container](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) has been updated to include SUSE Linux Enterprise Server 15.7 and Rocky Linux 10.
 
-### **Snyk Integrations**
+### **Snyk integrations**
 
 * The SCM integration for Bitbucket Data Center/Server now supports the Required Builds feature for granular control over pull requests. To learn more, visit [Required Builds](developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server.md#required-builds).
 * [GitLab](scan-with-snyk/pull-requests/pull-request-checks/analyze-pr-checks-results.md#gitlab) is supported for PR check results. This feature blocks merge requests with security issues when the "Pipelines must succeed" setting is enabled.
@@ -86,7 +117,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * Added PAT support for all [Snyk IDE](developer-tools/snyk-ide-plugins-and-extensions/) plugins and extensions.
 * Added an [IDE Plugin Compatibility Matrix](developer-tools/snyk-ide-plugins-and-extensions/compatibility-matrix.md) for all supported versions.
 
-### **Snyk Integrations**
+### **Snyk integrations**
 
 * [Snyk Agent Fix in the PR](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md#snyk-agent-fix-in-the-pr) has added support for Bitbucket integrations, still in Early Access.
 * The [minimum version](scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md) of Bitbucket Server and Bitbucket Data Center required to use the integrations with PR checks has been updated to 7.4 and 8 respectively.

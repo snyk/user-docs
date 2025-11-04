@@ -2,10 +2,9 @@
 
 {% include "../../../../../.gitbook/includes/pilot-guide-toc.md" %}
 
-‌Review the steps below to configure the Bitbucket integration with Snyk. For more details about setting up the GitHub integration, contact your Snyk account team.\
+‌Review the steps below to configure the Bitbucket integration with Snyk. For more details about setting up the GitHub integration, contact your Snyk account team.\\
 
-
-## Generate a BitBucket PAT&#x20;
+## Generate a BitBucket PAT
 
 Generate a BitBucket PAT with the following permissions enabled:
 
@@ -29,7 +28,7 @@ Configure the Group-level integration by following these steps:
 * Navigate to the Group-level
 * Open **Integrations**, then **Add integration**
 
-<figure><img src="../../../../../.gitbook/assets/image (307).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (307) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Search and select the BitBucket integration
 * Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate BitBucket using Snyk Essentials](../../../../../developer-tools/scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials.md) page.

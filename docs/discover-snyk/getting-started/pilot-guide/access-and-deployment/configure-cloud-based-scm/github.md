@@ -4,7 +4,7 @@
 
 ‌Review the steps below to configure the GitHub integration with Snyk. For more details about setting up the GitHub integration, contact your Snyk account team.
 
-## Generate a GitHub PAT&#x20;
+## Generate a GitHub PAT
 
 Generate a GitHub PAT with the following permissions enabled:
 
@@ -26,7 +26,7 @@ Configure the Group-level integration by following these steps:
 * Navigate to the Group-level
 * Open **Integrations**, then **Add integration**
 
-<figure><img src="../../../../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (307) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Search and select the GitHub integration
 * Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate GitHub using Snyk Essentials](../../../../../developer-tools/scm-integrations/group-level-integrations/github-for-snyk-essentials.md#github-integrate-using-snyk-apprisk) page.
@@ -49,6 +49,4 @@ Configure the Organization-level integration by following these steps:
 
 The Organization-level integration is immediately available to import repositories and begin scanning.
 
-
-
-\
+\\

@@ -8,6 +8,6 @@ The `state` value is used to carry any App-specific state from this `/authorize`
 
 The `code_challenge` value is a URL-safe base64-encoded string of the SHA256 hash of a generated code verifier. This code verifier must be a highly randomised string generated on the app side before calling `/authorize`, the code verifier is sent when exchanging the returned authorization code for an access token. For more information see [Proof Key for Code Exchange by OAuth Public Clients](https://datatracker.ietf.org/doc/html/rfc7636). Note that Snyk Apps only supports `S256` for the code challenge method.
 
-<figure><img src="../../../../.gitbook/assets/image (118).png" alt="Authorize access to Organization"><figcaption><p>Authorize access to Organization</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (70) (1).png" alt="Authorize access to Organization"><figcaption><p>Authorize access to Organization</p></figcaption></figure>
 
 After the connection is complete, the user is redirected to the specified redirect URI with query string parameters `code` and `state` added on, which are necessary for the next step.

@@ -1,10 +1,8 @@
 # Authentication for Visual Studio extension
 
-To scan your Projects, you must authenticate with Snyk.&#x20;
+To scan your Projects, you must authenticate with Snyk.
 
 Snyk supports the following protocols for authentication:
-
-
 
 * OAuth 2.0 (Recommended)
 * Personal Access Token
@@ -18,7 +16,7 @@ Snyk supports the following protocols for authentication:
 
 Follow the next steps to authenticate:
 
-1. After the extension is installed, navigate to **Extensions** > **Snyk** > **Windows**, and then **Snyk** to open the Snyk panel.&#x20;
+1. After the extension is installed, navigate to **Extensions** > **Snyk** > **Windows**, and then **Snyk** to open the Snyk panel.
 
 <figure><img src="../../../.gitbook/assets/SCR-20240822-llxy.png" alt="" width="563"><figcaption><p>Snyk extension navigation</p></figcaption></figure>
 
@@ -30,7 +28,7 @@ Follow the next steps to authenticate:
 4. In the next prompt, the Snyk IDE extension requests access to act on your behalf. Click **Grant app access**.
 5. When you have authenticated successfully, a confirmation message appears. Close the browser window and return to the IDE.
 
-The analysis starts automatically. The IDE reads and saves the authentication on your local machine.&#x20;
+The analysis starts automatically. The IDE reads and saves the authentication on your local machine.
 
 {% hint style="info" %}
 OAuth 2.0 tokens are not static and cannot be copied from the Snyk account page.
@@ -51,9 +49,9 @@ To authenticate using the Personal Access token, follow these steps:
 1. Navigate to **Preferences** > **Snyk**.
 2.  Set the flag to **Use Personal Access Token.**
 
-    <figure><img src="../../../.gitbook/assets/image (320).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (318) (1).png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
-4. Create your **Personal Access** **Token**. For details, see the [Authentication for API](../../../snyk-api/authentication-for-api/) page.&#x20;
+4. Create your **Personal Access** **Token**. For details, see the [Authentication for API](../../../snyk-api/authentication-for-api/) page.
 5. Paste or enter the token in the **Token** field.
 6. Click **Apply and Close.**
 
@@ -67,9 +65,9 @@ Follow these steps to authenticate:
 
 <figure><img src="../../../.gitbook/assets/SCR-20240822-lyzs.png" alt="" width="375"><figcaption><p>Snyk Settings navigation</p></figcaption></figure>
 
-2.  Find the **Authentication Method** and change it to **API Token** authentication.&#x20;
+2.  Find the **Authentication Method** and change it to **API Token** authentication.
 
-    <figure><img src="../../../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (318) (1).png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4.  Click **Authenticate** in the web browser window that opens.
 
@@ -80,7 +78,7 @@ Follow these steps to authenticate:
 The analysis starts automatically.
 
 {% hint style="info" %}
-Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field.  For details, see [Obtain and use your Snyk API token](../../../discover-snyk/getting-started/#obtain-and-use-your-snyk-api-token).
+Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](../../../discover-snyk/getting-started/#obtain-and-use-your-snyk-api-token).
 {% endhint %}
 
 ## How to switch accounts

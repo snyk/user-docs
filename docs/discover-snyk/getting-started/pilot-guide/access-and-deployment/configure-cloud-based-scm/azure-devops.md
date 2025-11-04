@@ -4,10 +4,9 @@
 
 Review the steps below to configure the Azure DevOps integration with Snyk. For more details about setting up the GitHub integration, contact your Snyk account team.
 
-## Generate an Azure DevOps PAT&#x20;
+## Generate an Azure DevOps PAT
 
-Generate an Azure DevOps PAT  with the following permissions enabled:\
-
+Generate an Azure DevOps PAT with the following permissions enabled:\\
 
 * `Code` - Read and Write
 * `Project and Team` - Read
@@ -28,7 +27,7 @@ Configure the Group-level integration by following these steps:
 * Navigate to the Group-level
 * Open **Integrations**, then **Add integration**
 
-<figure><img src="../../../../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (307) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Search and select the Azure DevOps integration
 * Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate Azure DevOps using Snyk Essentials](../../../../../developer-tools/scm-integrations/group-level-integrations/azure-devops-for-snyk-essentials.md#azure-devops-integrate-using-snyk-apprisk) page.

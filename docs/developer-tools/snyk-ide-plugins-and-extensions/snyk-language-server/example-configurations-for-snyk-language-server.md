@@ -34,7 +34,7 @@
 
 After opening a supported file, the Language Server should be started by Sublime Text and findings will be highlighted.
 
-![Snyk Open Source findings displayed in Sublime Text](<../../../.gitbook/assets/image (166) (1) (1) (1) (1) (1) (1) (2).png>)
+![Snyk Open Source findings displayed in Sublime Text](<../../../.gitbook/assets/image (109) (1).png>)
 
 ![Snyk Code findings displayed in Sublime Text](<../../../.gitbook/assets/image (56).png>)
 

@@ -2,7 +2,7 @@
 
 You can ignore a vulnerability or open-source license issue if you do not need to fix it and want to avoid seeing the issue in scan results. You can ignore issues temporarily or permanently and set ignores individually or as actions. By using Snyk ignores you can display results only for issues you need to fix
 
-&#x20;For Open Source details, see [How to set ignores](./#how-to-set-ignores). This information provides a useful background for using ignores with other Snyk scanning methods. For more information, see the following sections on this page:
+For Open Source details, see [How to set ignores](./#how-to-set-ignores). This information provides a useful background for using ignores with other Snyk scanning methods. For more information, see the following sections on this page:
 
 * [Ignore issues in Snyk Code](./#ignore-issues-in-snyk-code)
 * [Ignore issues in Snyk Container](./#ignore-issues-in-snyk-container)
@@ -90,7 +90,7 @@ The following shows `snyk test` results before an ignore is set in the Web UI:
 
 The following shows `snyk test` results after an ignore is set in the Web UI:
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (3).png" alt="Snyk test results after ignoring in the Web UI"><figcaption><p>Snyk test results after ignoring in the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Snyk test results after ignoring in the Web UI"><figcaption><p>Snyk test results after ignoring in the Web UI</p></figcaption></figure>
 
 The same repository imported from the SCM is considered to be a different Project, and any ignore set for an SCM Project does not impact the results of `snyk test` from the CLI or a CI/CD. SCM and CI Projects behave as two standalone Projects.
 
@@ -102,7 +102,7 @@ The `expires` field is optional. If you need a permanent ignore, omit the field.
 To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](../../../developer-tools/snyk-cli/commands/ignore.md#expiry-less-than-expiry-greater-than).
 {% endhint %}
 
-For Open Source Projects, you can ignore the vulnerability by creating a `.snyk` YAML file or  modifying the existing `.snyk` file.
+For Open Source Projects, you can ignore the vulnerability by creating a `.snyk` YAML file or modifying the existing `.snyk` file.
 
 <figure><img src="../../../.gitbook/assets/screen+shot+2017-05-10+at+11.16.57+am.png" alt="A .snyk file"><figcaption><p>A .snyk file</p></figcaption></figure>
 
