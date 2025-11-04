@@ -3681,6 +3681,29 @@
             "nullable": true,
             "type": "string"
           },
+          "removed_reasons": {
+            "description": "List of reasons for removal",
+            "items": {
+              "properties": {
+                "reason": {
+                  "description": "Reason for removal:\n- repo-archived - The asset was archived on the SCM.\n- repo-deleted - The asset was deleted on the SCM.\n- org-level-inactive - The Org-Level integration/profile is inactive.\n- snyk-project-deleted - The associated Snyk Project was deleted and Snyk was the only source.\n- deleted-profile - The integration profile was deleted.\n",
+                  "enum": [
+                    "deleted-profile",
+                    "org-level-inactive",
+                    "repo-archived",
+                    "repo-deleted",
+                    "snyk-project-deleted"
+                  ]
+                },
+                "removed_at": {
+                  "format": "date-time",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
           "repository_freshness": {
             "description": "Indicating the activity level of the repository",
             "format": "byte",
