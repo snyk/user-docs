@@ -1,11 +1,5 @@
 # Snyk Studio and Secure at Inception
 
-{% hint style="info" %}
-**Release status**
-
-The Secure at Inception feature is in Early Access and is available with Snyk Enterprise plans.
-{% endhint %}
-
 The [Snyk quickstart guides for MCP](https://docs.snyk.io/integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp) enable you to install and configure Snyk Studio in your preferred coding assistant, such as Cursor, in minutes. To scale this process at the company level, you can roll out the [Secure at Inception ruleset](https://docs.snyk.io/integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide#secure-at-inception-rules) broadly with as little friction as possible.
 
 Secure at Inception is a configurable option that prompts the LLM to scan code for security issues during generation in the IDE. Developers can manually run Snyk security scans to add custom rules to ensure secure code at inception, or can enable the Secure at Inception option at the company level.
@@ -30,7 +24,7 @@ A fix is suggested:
 
 Using the VS Code Snyk IDE extension, the Secure at Inception option introduced settings that automatically set up Snyk Studio.
 
-![Secure at Inception settings](<../../.gitbook/assets/unknown (8).png>)
+<figure><img src="../../.gitbook/assets/Security at inception setting.jpg" alt=""><figcaption><p>Secure at inception settings</p></figcaption></figure>
 
 The rules of Secure at Inception are as follows:
 

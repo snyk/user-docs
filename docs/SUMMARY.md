@@ -274,7 +274,6 @@
 
 * [Overview](integrations/integrate-with-snyk.md)
 * [Snyk Studio - Agentic integrations](integrations/snyk-studio-agentic-integrations/README.md)
-  * [Snyk Studio and Secure at Inception](integrations/snyk-studio-agentic-integrations/snyk-studio-and-secure-at-inception.md)
   * [Quickstart guides for Snyk Studio](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/README.md)
     * [Amazon Q guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/amazon-q-guide.md)
     * [Claude Code guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/claude-code-guide.md)
@@ -294,6 +293,7 @@
     * [Kiro guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/kiro-guide.md)
     * [Qodo guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/qodo-guide.md)
     * [Windsurf guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/windsurf-guide.md)
+  * [Snyk Studio and Secure at Inception](integrations/snyk-studio-agentic-integrations/snyk-studio-and-secure-at-inception.md)
   * [Troubleshooting](integrations/snyk-studio-agentic-integrations/troubleshooting.md)
   * [Usage analytics](integrations/developer-guardrails-for-agentic-workflows/usage-analytics.md)
 * [Third-party integrations for Snyk AppRisk](integrations/connect-a-third-party-integration.md)
