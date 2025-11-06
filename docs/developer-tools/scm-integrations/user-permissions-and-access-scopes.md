@@ -4,13 +4,23 @@ Snyk SCM integrations may require different permission requirements based on the
 
 See the following for detailed permission requirements:
 
-* GitHub and GitHub Enterprise
-* GitHub Cloud App
-* GitHub Server App
-* GitHub Server App for Universal Broker
-* GitLab
-* Bitbucket
-* Azure Repositories (TFS)
+* [GitHub for Snyk Essentials](user-permissions-and-access-scopes.md#github-for-snyk-essentials)
+* [GitHub and GitHub Enterprise](user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements)
+* [GitHub Cloud App](user-permissions-and-access-scopes.md#github-cloud-app-permission-requirements)
+* [GitHub Server App](user-permissions-and-access-scopes.md#github-server-app-permission-requirements)
+* [GitHub Server App for Universal Broker](user-permissions-and-access-scopes.md#github-server-app-for-universal-broker-permission-requirements)
+* [GitLab](user-permissions-and-access-scopes.md#gitlab-permission-requirements)
+* [Bitbucket](user-permissions-and-access-scopes.md#bitbucket-permission-requirements)
+* [Azure Repositories (TFS)](user-permissions-and-access-scopes.md#azure-repositories-tfs-permission-requirements)
+
+### GitHub for Snyk Essentials
+
+A PAT generated for the Group-level GitHub integration requires the following permissions:
+
+* `repo`
+* `read:org`
+* `read:user`
+* `user:email`
 
 ### GitHub and GitHub Enterprise permissions requirements
 
