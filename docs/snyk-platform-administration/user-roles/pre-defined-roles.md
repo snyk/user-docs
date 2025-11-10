@@ -10,7 +10,7 @@ Snyk provides a set of standard user roles that can be assigned and managed usin
 
 The pre-defined roles Snyk provides are as follows:
 
-* **Organization Admin:** the standard role equivalent for Team Leads. Users with this role can add and delete Projects, override Snyk checks, and provision Group members with an Organization-level role.
+* **Organization Admin:** the standard role equivalent for Team Leads. Users with this role can add and delete Projects, override Snyk checks, and provision Group members with an Organization-level role. This role and the associated permissions supersede Group Member role restrictions.
 * **Organization Collaborator:** the standard role equivalent for Developers. This role is ideal for small teams or a developer-first organizational approach.
 * **Group Admin:** the standard role equivalent for the person in your company who oversees Snyk use at a high level, providing a full set of permissions at the Group and Organization level. This also means that a Group Admin is automatically an Organization Admin to all Organizations that sit under the Group, although they will not be visible in an Organization level list.
 * **Group Viewer:** a user who can access the Group level but requires Organization-level permissions to take actions in Snyk. This is normally used as a starting point during onboarding with Snyk to understand functions tied to Group permissions and design a custom Group role for post-deployment use.
