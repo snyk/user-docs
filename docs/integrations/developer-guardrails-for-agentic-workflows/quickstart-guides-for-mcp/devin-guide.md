@@ -5,7 +5,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Devin to secure code
 ## Prerequisites
 
 * [Get Started with Devin](devin-guide.md#get-started-with-devin)
-* [Install the Snyk MCP](devin-guide.md#install-the-snyk-mcp-server-in-cursor)
+* [Install the Snyk MCP](devin-guide.md#install-the-snyk-mcp-server-in-devin)
 
 ### Get started with Devin
 
@@ -19,7 +19,7 @@ The command to run the Snyk MCP server is `npx -y snyk@latest mcp -t stdio`. Add
 
 <figure><img src="../../../.gitbook/assets/2025-11-05_11-22-43.png" alt=""><figcaption></figcaption></figure>
 
-Select **Add a new secret** and add your API token. To learn more, visit [How to obtain your personal token](https://docs.snyk.io/snyk-api/authentication-for-api#how-to-obtain-your-personal-token). You must use `SNYK_TOKEN` for the **Secret Name** and **Environment Variable** name.
+Select **Add a new secret** and add your API token. To learn more, visit [How to obtain your personal token](../../../snyk-api/authentication-for-api/#how-to-obtain-your-personal-token). You must use `SNYK_TOKEN` for the **Secret Name** and **Environment Variable** name.
 
 {% hint style="warning" %}
 The `SNYK_TOKEN` **Secret** is stored securely and referenced with `$SNYK_TOKEN`. Do not put your full Snyk token in the **Environment Variables** section.

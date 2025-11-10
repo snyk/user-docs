@@ -1,6 +1,6 @@
 # Snyk Studio and Secure at Inception
 
-The [Snyk quickstart guides for MCP](https://docs.snyk.io/integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp) enable you to install and configure Snyk Studio in your preferred coding assistant, such as Cursor, in minutes. To scale this process at the company level, you can roll out the [Secure at Inception ruleset](https://docs.snyk.io/integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide#secure-at-inception-rules) broadly with as little friction as possible.
+The [Snyk quickstart guides for MCP](quickstart-guides-for-snyk-studio/) enable you to install and configure Snyk Studio in your preferred coding assistant, such as Cursor, in minutes. To scale this process at the company level, you can roll out the [Secure at Inception ruleset](../developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide.md#secure-at-inception-rules) broadly with as little friction as possible.
 
 Secure at Inception is a configurable option that prompts the LLM to scan code for security issues during generation in the IDE. Developers can manually run Snyk security scans to add custom rules to ensure secure code at inception, or can enable the Secure at Inception option at the company level.
 
@@ -394,4 +394,4 @@ In order for the IDE and the MCP to be properly configured:
 
 ![Rules file and rules activation mode option in Windsurf](<../../.gitbook/assets/unknown (13).png>)
 
-To learn more, see [Troubleshooting for the Snyk MCP](https://docs.snyk.io/integrations/developer-guardrails-for-agentic-workflows/troubleshooting-for-the-snyk-mcp-server).
+To learn more, see [Troubleshooting for the Snyk MCP](troubleshooting.md).
