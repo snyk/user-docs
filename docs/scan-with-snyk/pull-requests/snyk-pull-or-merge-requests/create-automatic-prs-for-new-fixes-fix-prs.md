@@ -7,7 +7,7 @@
 * The Automatic Fix PR settings may vary depending on the integration.
 {% endhint %}
 
-&#x20;The following rules are applied to the creation of automatic PRs for vulnerabilities:
+The following rules are applied to the creation of automatic PRs for vulnerabilities:
 
 * Pull requests are created based on the **Test & Automated Pull Request Frequency** notification setting.
 * If you select **Retest now** for the Project, a scan runs manually. The 24-hour window is marked as having had the scan run. and no automatic PR is created until the next automated scan runs.
@@ -17,7 +17,7 @@
 * Fixing a vulnerability by upgrading a package may sometimes introduce a new vulnerability. Snyk will only automatically create such a pull request if the fixed vulnerabilities are a higher severity than any new ones introduced.
 * For known vulnerabilities, see [Configure Automatic Backlog PRs.](create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md)
 
-<figure><img src="../../../.gitbook/assets/project-settings-test-pull-request-frequency.png" alt="Test &#x26; Automated Pull Request Frequency setting"><figcaption><p>Test &#x26; Automated Pull Request Frequency setting</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project-settings-test-pull-request-frequency (1).png" alt="Test &#x26; Automated Pull Request Frequency setting"><figcaption><p>Test &#x26; Automated Pull Request Frequency setting</p></figcaption></figure>
 
 To determine when your last 24-hour window began, check the Project issue card for **Snapshot taken by recurring test** and check your email for **\[snyk] Vulnerability alert** for specific scan results:
 
