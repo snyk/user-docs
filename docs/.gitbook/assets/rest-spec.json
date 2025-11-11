@@ -24872,7 +24872,7 @@
         },
         "summary": "Get group level policies (Early Access)",
         "tags": [
-          "Group Policies"
+          "Policies"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -24980,7 +24980,7 @@
         },
         "summary": "Create a new group level policy (Early Access)",
         "tags": [
-          "Group Policies"
+          "Policies"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -25036,7 +25036,7 @@
         },
         "summary": "Delete an group-level policy (Early Access)",
         "tags": [
-          "Group Policies"
+          "Policies"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -25147,7 +25147,7 @@
         },
         "summary": "Update a group-level policy (Early Access)",
         "tags": [
-          "Group Policies"
+          "Policies"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
