@@ -1,17 +1,11 @@
 # Improved .NET scanning
 
 {% hint style="info" %}
-Feature availability
+**Release status**
 
-Improved Snyk Open Source scanning for NuGet .NET applications is in Early Access and available with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
+Improved Snyk Open Source scanning for NuGet .NET applications is in Early Access and available only with Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
 
 You can enable the feature by using [Snyk Preview](../../../snyk-platform-administration/snyk-preview.md).
-{% endhint %}
-
-{% hint style="info" %}
-While in Early Access, this feature potentially can cause scans to fail or produce different results. Snyk recommends gradually enabling this feature, for example, starting with a subset of your Organizations. For more information, see [Enterprise setup](../../../implementation-and-setup/enterprise-setup/).
-
-You can report issues by submitting a [support ticket](https://support.snyk.io).
 {% endhint %}
 
 ## Limitations of existing solution
@@ -43,13 +37,13 @@ Follow these steps to enable the improvements:
 
 Since the improved .NET solution will build your .NET Project, Snyk requires access to any private NuGet repositories.
 
-The recommended approach is to use [`nuget.config`](https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file) files along with registering the credentials in Snyk NuGet private package repository integration (**Settings** > **Integrations** > **NuGet**).
+The recommended approach is to use [`nuget.config`](https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file) files along with registering the credentials in Snyk NuGet private package repository integration (**Settings** > **Integrations** > **NuGet Repositories**).
 
 <figure><img src="../../../.gitbook/assets/org_settings_nuget_repo.png" alt="Set up Nuget Repositories from the Settings, Integrations screen"><figcaption><p>Set up Nuget Repositories from the Settings, Integrations screen</p></figcaption></figure>
 
 If you are not using `nuget.config`, but another way of informing the .NET ecosystem of where to look for private packages, Snyk will attempt to add all private NuGet repository credentials defined in the private package repository integration as a `dotnet nuget` source before restoring the Project.
 
-Fill in the **Your tokens** fields by adding a **Username**, the **Personal access token**, and the repository **URL** (supports only HTTPS sources).&#x20;
+Fill in the **Your tokens** fields by adding a **Username**, the **Personal access token**, and the repository **URL** (supports only HTTPS sources).
 
 For more information, see [Package repository integrations](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/).
 
@@ -98,9 +92,18 @@ When Snyk scans your Project with Improved .NET, an environment variable named `
 
 The improved .NET scanning feature supports:
 
-* .NET 6, 7, 8 and 9
+* .NET 6, 7 - only latest SDK version
+* .NET 8, 9 and 10 - all SDK versions
 * All versions of .NET Standard
 
 If you import an unsupported .NET Project using an SCM integration, the improved .NET scanning feature will not be enabled and will fall back to the legacy scanning method.
 
 The `<TargetFramework>` used must be compatible with what is [currently supported by Microsoft](https://learn.microsoft.com/en-us/dotnet/standard/frameworks#supported-target-frameworks) in order to be correctly picked up by Snyk scanners.
+
+## .NET framework package pruning ([RestoreEnablePackagePruning](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-10/sdk#pruning-of-framework-provided-package-references))
+
+For Projects targeting .NET 10.0 and later, Snyk's improved .NET scanner (for both SCM integrations and the CLI) aligns with the default Microsoft build behaviour.
+
+By default, Microsoft enables the `RestoreEnablePackagePruning` property for these target frameworks. This setting prunes framework-provided package references during the restore operation.
+
+The Improved .NET scanner respects your project configuration. If you disable this feature by setting the `RestoreEnablePackagePruning` property to `false` (either in your project file or in a `Directory.Build.props` file), Snyk respects this setting and doesnot prune those references during the scan.
