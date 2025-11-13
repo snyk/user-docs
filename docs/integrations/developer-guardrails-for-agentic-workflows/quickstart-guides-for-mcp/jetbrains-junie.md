@@ -88,4 +88,3 @@ Scan this directory for code security & dependency vulnerabilities and security 
 Junie indicates in the plan that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
 <figure><img src="../../../.gitbook/assets/image2 (2).png" alt=""><figcaption></figcaption></figure>
-

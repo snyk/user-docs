@@ -5,7 +5,7 @@
 ## Discover Snyk
 
 * [What's Snyk?](discover-snyk/whats-snyk.md)
-* [What's new?](whats-new.md)
+* [What's new?](discover-snyk/whats-new.md)
 * [Getting started](discover-snyk/getting-started/README.md)
   * [Snyk release process](discover-snyk/getting-started/snyk-release-process.md)
   * [Glossary](discover-snyk/getting-started/glossary.md)
@@ -273,8 +273,8 @@
 ## Integrations
 
 * [Overview](integrations/integrate-with-snyk.md)
-* [Snyk Studio - Agentic integrations](integrations/snyk-studio-agentic-integrations/README.md)
-  * [Quickstart guides for Snyk Studio](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/README.md)
+* [Snyk Studio - Agentic integrations](integrations/developer-guardrails-for-agentic-workflows/README.md)
+  * [Quickstart guides for Snyk Studio](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/README.md)
     * [Amazon Q guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/amazon-q-guide.md)
     * [Claude Code guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/claude-code-guide.md)
     * [Cline guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cline-guide.md)
@@ -288,13 +288,13 @@
     * [Gemini Code Assist guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-code-assist-guide.md)
     * [GitHub Copilot guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/github-copilot-guide.md)
     * [Goose CLI guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-cli-guide-1.md)
-    * [JetBrains AI assistant](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/jetbrains-ai-assistant.md)
-    * [JetBrains Junie](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/jetbrains-junie.md)
+    * [JetBrains AI assistant](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/jetbrains-ai-assistant.md)
+    * [JetBrains Junie](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/jetbrains-junie.md)
     * [Kiro guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/kiro-guide.md)
     * [Qodo guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/qodo-guide.md)
     * [Windsurf guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/windsurf-guide.md)
   * [Snyk Studio and Secure at Inception](integrations/snyk-studio-agentic-integrations/snyk-studio-and-secure-at-inception.md)
-  * [Troubleshooting](integrations/snyk-studio-agentic-integrations/troubleshooting.md)
+  * [Troubleshooting](integrations/developer-guardrails-for-agentic-workflows/troubleshooting-for-the-snyk-mcp-server.md)
   * [Usage analytics](integrations/developer-guardrails-for-agentic-workflows/usage-analytics.md)
 * [Third-party integrations for Snyk AppRisk](integrations/connect-a-third-party-integration.md)
 * [Snyk runtime sensor](integrations/snyk-runtime-sensor.md)

@@ -4,7 +4,7 @@ If you encounter issues with Snyk Studio or the integration using Snyk's MCP ser
 
 ## Check Snyk CLI version compatibility
 
-After downloading or updating the CLI, run `snyk version`. The version must be higher than or equal to v1.1298.0.&#x20;
+After downloading or updating the CLI, run `snyk version`. The version must be higher than or equal to v1.1298.0.
 
 Snyk recommends using the latest version.
 
@@ -55,7 +55,7 @@ If you are using SSE through the `snyk mcp -t sse` command, then check if the lo
 
 ## Folder Trust
 
-if you are experiencing issues related to folder trust, you can disable this feature by using the&#x20;
+if you are experiencing issues related to folder trust, you can disable this feature by using the
 
 `--disable-trust` CLI flag.
 
@@ -65,14 +65,14 @@ Remember that the MCP server can only be run locally when using SSE transport.
 
 Use these suggestions to improve and expand on your Snyk CLI debug output to troubleshoot MCP-related issues:
 
-* For more detailed Snyk CLI logs, which are useful whether you are starting the `snyk mcp` server or performing direct test scans (see [Basic repository scanning](troubleshooting.md#basic-repository-scanning-crucial-diagnostic)), you can add verbosity parameters to your Snyk commands.\
+* For more detailed Snyk CLI logs, which are useful whether you are starting the `snyk mcp` server or performing direct test scans (see [Basic repository scanning](troubleshooting-for-the-snyk-mcp-server.md#basic-repository-scanning-crucial-diagnostic)), you can add verbosity parameters to your Snyk commands.\
   \
   These include using the `-d` or `--debug` flag for debug level output, for example:
   * `snyk mcp -t sse -d`
   * `snyk test -d`
   * `snyk code test -d`
 * For even more granular, trace-level logging, you can use the `--log-level=trace` option or set the `SNYK_LOG_LEVEL=trace` environment variable:
-  * `snyk mcp -t sse -d --log-level=trace`&#x20;
+  * `snyk mcp -t sse -d --log-level=trace`
   * `SNYK_LOG_LEVEL=trace snyk mcp -t sse -d`
 * Inspect the MCP client and host logs from your AI tool, IDE, or MCP client application. These logs might contain errors related to connecting to or communicating with the Snyk MCP server.
 
@@ -84,7 +84,7 @@ These include using the `-d` or `--debug` flag for debug level output, for examp
 * `snyk test -d`
 * `snyk code test -d`
 * For even more granular, trace-level logging, you can use the `--log-level=trace` option or set the `SNYK_LOG_LEVEL=trace` environment variable:
-  * `snyk mcp -t sse -d --log-level=trace`&#x20;
+  * `snyk mcp -t sse -d --log-level=trace`
   * `SNYK_LOG_LEVEL=trace snyk mcp -t sse -d`
 
 Inspect the MCP client and host logs from your AI tool, IDE, or MCP client application. These logs can contain errors related to connecting to or communicating with the Snyk MCP server.

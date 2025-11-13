@@ -20,7 +20,7 @@ In the Qodo chatbox, click the **Add MCP** **tools** > **Add new MCP**. Provide 
 
 * The MCP Server name
 * The path to the Snyk CLI
-* The Snyk MCP command to [start the MCP server](../../snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/#starting-the-snyk-mcp-server).
+* The Snyk MCP command to [start the MCP server](./#starting-the-snyk-mcp-server).
 * You can see a list of all MCP Servers and their tool. Locate Snyk from the list and enable all of its tools.
 
 #### Install with Node.js and `npx`

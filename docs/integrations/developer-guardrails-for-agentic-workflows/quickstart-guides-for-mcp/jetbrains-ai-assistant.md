@@ -73,4 +73,3 @@ Scan this project for code security & dependency vulnerabilities and security is
 {% endcode %}
 
 The AI Assistant indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
-
