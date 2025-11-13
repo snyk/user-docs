@@ -10981,6 +10981,7 @@
       },
       "GroupPolicyActionAnnotation": {
         "additionalProperties": false,
+        "description": "Annotation action",
         "properties": {
           "data": {
             "$ref": "#/components/schemas/GroupPolicyActionAnnotationData"
@@ -11008,6 +11009,7 @@
       },
       "GroupPolicyActionIgnore": {
         "additionalProperties": false,
+        "description": "Ignore action",
         "properties": {
           "data": {
             "$ref": "#/components/schemas/GroupPolicyActionIgnoreData"
@@ -11046,6 +11048,7 @@
       },
       "GroupPolicyActionSeverityOverride": {
         "additionalProperties": false,
+        "description": "Severity override action",
         "properties": {
           "data": {
             "$ref": "#/components/schemas/GroupPolicyActionSeverityOverrideData"
