@@ -1,5 +1,16 @@
 ## 2025-09-28 - Updated 2025-11-13
 
+### POST - `/orgs/{org_id}/export` - Updated
+- added the new optional request property `data/attributes/filters/empty_project_tags`
+
+
+
+### POST - `/groups/{group_id}/export` - Updated
+- added the new optional request property `data/attributes/filters/empty_project_tags`
+
+
+## 2025-09-28 - Updated 2025-11-13
+
 ### GET - `/orgs/{org_id}/issues` - Updated
 - added the optional property `data/items/attributes/coordinates/items/created_at` to the response with the `200` status
 
