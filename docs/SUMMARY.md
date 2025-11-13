@@ -952,7 +952,6 @@
   * [Entitlements (v1)](snyk-api/reference/entitlements-v1.md)
   * [Export](snyk-api/reference/export.md)
   * [Findings](snyk-api/reference/findings.md)
-  * [Fix Pull Requests](snyk-api/reference/fix-pull-requests.md)
   * [Group](snyk-api/reference/group.md)
   * [Groups (v1)](snyk-api/reference/groups-v1.md)
   * [Groups](snyk-api/reference/groups.md)
