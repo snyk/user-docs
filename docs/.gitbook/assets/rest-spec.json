@@ -10981,6 +10981,7 @@
       },
       "GroupPolicyActionAnnotation": {
         "additionalProperties": false,
+        "description": "Annotation action",
         "properties": {
           "data": {
             "$ref": "#/components/schemas/GroupPolicyActionAnnotationData"
@@ -11008,6 +11009,7 @@
       },
       "GroupPolicyActionIgnore": {
         "additionalProperties": false,
+        "description": "Ignore action",
         "properties": {
           "data": {
             "$ref": "#/components/schemas/GroupPolicyActionIgnoreData"
@@ -11046,6 +11048,7 @@
       },
       "GroupPolicyActionSeverityOverride": {
         "additionalProperties": false,
+        "description": "Severity override action",
         "properties": {
           "data": {
             "$ref": "#/components/schemas/GroupPolicyActionSeverityOverrideData"
@@ -11668,6 +11671,11 @@
             "description": "Where the issue originated, specific to issue type. Details on what\ncode, package, etc introduced the issue. An issue may be caused by\nmore than one coordinate.\n",
             "items": {
               "properties": {
+                "created_at": {
+                  "description": "The time when this coordinate was created.",
+                  "format": "date-time",
+                  "type": "string"
+                },
                 "is_fixable_manually": {
                   "description": "Indicates whether a issue can be fixed manually by the user. This typically involves making changes directly to the code or configuration to address the issue.",
                   "type": "boolean"
@@ -11691,6 +11699,20 @@
                 "is_upgradeable": {
                   "description": "Indicates whether the issue can be resolved by upgrading the package to a newer version. Upgrading typically involves moving to a version where the vulnerability has been fixed.",
                   "type": "boolean"
+                },
+                "last_introduced_at": {
+                  "description": "The time when this coordinate was last introduced.",
+                  "format": "date-time",
+                  "type": "string"
+                },
+                "last_resolved_at": {
+                  "description": "The time when this coordinate was last resolved.",
+                  "format": "date-time",
+                  "type": "string"
+                },
+                "last_resolved_details": {
+                  "description": "Optional details about the last resolution of this coordinate.",
+                  "type": "string"
                 },
                 "reachability": {
                   "description": "- function and package are both presented in e.g. reporting as \"Reachable\", meaning that a direct or indirect path was found from the application to the vulnerable code.\n- no-info is presented as \"No path found\", meaning that there was no path found from the application to the vulnerable code.\n- not-applicable is presented as \"Not applicable\" and it means that reachability information isn't applicable to the issue. E.g we do not provide reachability info for Snyk container issues.\n",
@@ -12011,6 +12033,19 @@
                   },
                   "minItems": 1,
                   "type": "array"
+                },
+                "state": {
+                  "description": "The state of this coordinate.",
+                  "enum": [
+                    "open",
+                    "resolved"
+                  ],
+                  "type": "string"
+                },
+                "updated_at": {
+                  "description": "The time when this coordinate was last updated.",
+                  "format": "date-time",
+                  "type": "string"
                 }
               },
               "type": "object"
