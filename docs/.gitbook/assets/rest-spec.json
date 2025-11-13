@@ -4274,6 +4274,14 @@
       },
       "BaseFilters": {
         "properties": {
+          "empty_project_tags": {
+            "enum": [
+              "include",
+              "exclude",
+              "only"
+            ],
+            "type": "string"
+          },
           "environment": {
             "items": {
               "type": "string"
@@ -7556,11 +7564,12 @@
             "FIRST_INTRODUCED",
             "PRODUCT_NAME",
             "ISSUE_URL",
-            "ISSUE_STATUS_INDICATOR",
+            "ISSUE_STATUS",
             "ISSUE_TYPE"
           ],
           "dataset": "issues",
           "filters": {
+            "empty_project_tags": "include",
             "environment": [
               "BACKEND",
               "EXTERNAL"
@@ -7649,11 +7658,12 @@
             "FIRST_INTRODUCED",
             "PRODUCT_NAME",
             "ISSUE_URL",
-            "ISSUE_STATUS_INDICATOR",
+            "ISSUE_STATUS",
             "ISSUE_TYPE"
           ],
           "dataset": "issues",
           "filters": {
+            "empty_project_tags": "include",
             "environment": [
               "BACKEND",
               "EXTERNAL"
@@ -13463,6 +13473,14 @@
       },
       "OrgFilters": {
         "properties": {
+          "empty_project_tags": {
+            "enum": [
+              "include",
+              "exclude",
+              "only"
+            ],
+            "type": "string"
+          },
           "environment": {
             "items": {
               "type": "string"
