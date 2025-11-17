@@ -12,7 +12,7 @@ Reachability analysis can be used as an indicator to make decisions, or as part 
 
 Snyk uses a combination of static program analysis and various AI techniques to determine the reachability of a given vulnerability, with validation conducted by security research experts. These capabilities enable Snyk to quickly analyze the code without requiring the application to be built prior to the scan.
 
-To use this feature, Snyk must analyze your source code. To learn more, visit [How Snyk handles your data](https://docs.snyk.io/working-with-snyk/how-snyk-handles-your-data).&#x20;
+To use this feature, Snyk must analyze your source code. To learn more, visit [How Snyk handles your data](../../snyk-data-and-governance/how-snyk-handles-your-data.md).&#x20;
 
 ## How reachable vulnerability analysis works
 
@@ -59,24 +59,24 @@ Reachability analysis is supported for the following languages and package manag
 
 Reachability analysis is supported in the following integrations:
 
-| Integration                                                                                                                                                          | Release status       |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| [GitHub](../../developer-tools/scm-integrations/organization-level-integrations/github.md)                                                                           | General Availability |
-| [GitHub Enterprise](../../developer-tools/scm-integrations/organization-level-integrations/github-enterprise.md)                                                     | General Availability |
-| [GitHub Cloud App](../../developer-tools/scm-integrations/organization-level-integrations/github-cloud-app.md)                                                       | General Availability |
-| [Bitbucket Cloud](../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud-app.md)                                                     | General Availability |
-| [Bitbucket Server](../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server.md)                                           | General Availability |
-| [GitLab](../../developer-tools/scm-integrations/organization-level-integrations/gitlab.md)                                                                           | General Availability |
-| [Azure Repos](../../developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs.md)                                                      | General Availability |
-| [Brokered connections](../../implementation-and-setup/enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md)                  | General Availability |
-| [Snyk CLI](../../developer-tools/snyk-cli/)                                                                                                                          | Early Access         |
-| [AWS CodePipeline integration with CodeBuild](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage) | Early Access         |
-| [Azure Pipelines](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/azure-pipelines-integration)                                                          | Early Access         |
-| [Bitbucket Pipelines](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/bitbucket-pipelines-integration-using-a-snyk-pipe)                                | Early Access         |
-| [CircleCI](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb)                                                       | Early Access         |
-| [GitHub Actions](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities)                        | Early Access         |
-| [Jenkins](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk)                                                         | Early Access         |
-| [Maven](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk)                                                             | Early Access         |
+| Integration                                                                                                                                              | Release status       |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| [GitHub](../../developer-tools/scm-integrations/organization-level-integrations/github.md)                                                               | General Availability |
+| [GitHub Enterprise](../../developer-tools/scm-integrations/organization-level-integrations/github-enterprise.md)                                         | General Availability |
+| [GitHub Cloud App](../../developer-tools/scm-integrations/organization-level-integrations/github-cloud-app.md)                                           | General Availability |
+| [Bitbucket Cloud](../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud-app.md)                                         | General Availability |
+| [Bitbucket Server](../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server.md)                               | General Availability |
+| [GitLab](../../developer-tools/scm-integrations/organization-level-integrations/gitlab.md)                                                               | General Availability |
+| [Azure Repos](../../developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs.md)                                          | General Availability |
+| [Brokered connections](../../implementation-and-setup/enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md)      | General Availability |
+| [Snyk CLI](../../developer-tools/snyk-cli/)                                                                                                              | Early Access         |
+| [AWS CodePipeline integration with CodeBuild](../../developer-tools/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage.md) | Early Access         |
+| [Azure Pipelines](../../developer-tools/snyk-ci-cd-integrations/azure-pipelines-integration/)                                                            | Early Access         |
+| [Bitbucket Pipelines](../../developer-tools/snyk-ci-cd-integrations/bitbucket-pipelines-integration-using-a-snyk-pipe/)                                  | Early Access         |
+| [CircleCI](../../developer-tools/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb.md)                                                       | Early Access         |
+| [GitHub Actions](../../developer-tools/snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/)                          | Early Access         |
+| [Jenkins](../../developer-tools/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk.md)                                                         | Early Access         |
+| [Maven](../../developer-tools/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk.md)                                                             | Early Access         |
 
 ## Set up reachability analysis
 
