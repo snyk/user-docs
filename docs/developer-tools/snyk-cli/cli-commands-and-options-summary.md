@@ -166,7 +166,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--print-deps`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`container test`](commands/container-test.md)
 
-`--remote-repo-url=<URL>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`iac test`](commands/iac-test.md)
+`--remote-repo-url=<URL>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`code test`](commands/code-test.md), [`iac test`](commands/iac-test.md)
 
 `--dev`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`sbom`](commands/sbom.md)
 
@@ -225,9 +225,13 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--client-secret=<SECRET>`\
 `--client-id=<ID>`: [`snyk auth`](commands/auth.md)
 
-## `snyk code test` command option&#x20;
+## `snyk code test` command option
 
 `--include-ignores`: [`code test`](commands/code-test.md)
+
+`--report`: [`code test`](commands/code-test.md)
+
+`--target-name=<TARGET_NAME>`: [`code test`](commands/code-test.md)
 
 ## `snyk config environment` command option
 
