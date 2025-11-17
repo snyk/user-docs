@@ -3,18 +3,80 @@
 {% hint style="info" %}
 **Release status**
 
-Reachability is now in General Availability (GA) status for certain [integrations and programming languages](reachability-analysis.md#supported-languages-and-integrations).
-
-Snyk is expanding its reachability capabilities by adding more integrations and languages, which are available in Early Access and can be enabled through [Snyk Preview](../../snyk-platform-administration/snyk-preview.md).
+Reachability analysis is in General Availability (GA) for specific [integrations and programming languages](reachability-analysis.md#supported-languages-and-integrations).
 {% endhint %}
 
-Snyk reachability analysis allows you to analyze risk by identifying whether your application is calling a code element (for example functions, classes, modules, annotations) related to the vulnerability, thus raising the chances of that vulnerability being exploited in the context of your application.
+Snyk reachability analysis allows you to analyze risk by identifying whether your application is calling a code element (for example, functions, classes, modules, and more) related to the vulnerability, thus raising the chances of that vulnerability being exploited in the context of your application.
 
-Reachability analysis can be used as a standalone signal to make decisions, or as part of a broader risk-based prioritization approach using the Snyk Risk Score.
+Reachability analysis can be used as an indicator to make decisions, or as part of a broader risk-based prioritization approach using the Snyk Risk Score.
 
 Snyk uses a combination of static program analysis and various AI techniques to determine the reachability of a given vulnerability, with validation conducted by security research experts. These capabilities enable Snyk to quickly analyze the code without requiring the application to be built prior to the scan.
 
-The following instructions explain how to set up and use reachability analysis and provide more information on how the underlying analysis works at Snyk.
+To use this feature, Snyk must analyze your source code. To learn more, visit [How Snyk handles your data](https://docs.snyk.io/working-with-snyk/how-snyk-handles-your-data).&#x20;
+
+## How reachable vulnerability analysis works
+
+Snyk uses a combination of security expert analysis, program analysis, and various AI techniques to determine the reachability of a vulnerability. Analysis steps include:
+
+* Enriching vulnerabilities with the patches applied to fix them - as part of the Snyk vulnerability curation process, Snyk references the fix commit that the maintainer applied.
+* Related elements analysis - Based on the commit fix, Snyk uses DeepCode AI program analysis to analyze the code elements and other parameters related to the vulnerability.
+* Root Cause analysis - Snyk uses DeepCode AI and Natural Language Processing (NLP) techniques to automatically rank the related code elements by their chances of being the root cause of the vulnerability.
+* Reachability analysis - As issues are found in your application by a Snyk scan, the DeepCode program analysis engine is used to analyze the call graph of your application in relation to the call graph between the open-source dependencies used. A path between your application and a code element ranked as a root cause will yield a “Reachable” vulnerability.
+* Security experts supervision - Snyk security experts will manually verify and mark elements as root causes in order to make the entire analysis more accurate over time
+
+The following considerations related to false positives and false negatives apply to Reachable vulnerability analysis.
+
+Program analysis requires a trade-off between accurate results, minimizing false positives, and recall rates, by avoiding potentially exploitable vulnerabilities.
+
+To facilitate this trade-off, Snyk DeepCode analysis applies real-time decision-making to determine whether to under-approximate the set of reachable elements based on analysis of the likelihood that a reachable path will be found in a specific environment.
+
+For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. The agentic capability of Snyk analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure.
+
+{% hint style="info" %}
+Changes in the first-party code, in the vulnerability analysis, and enhancements in the SAST engine can impact the results. Therefore, vulnerabilities labeled as **Not path found** can change to **Reachable** over time.
+{% endhint %}
+
+## Limits of reachability in static analysis
+
+Snyk aims to identify and demonstrate when a code element is reachable, while also addressing the challenges of indicating that a code element cannot be reached.
+
+Static analysis techniques can show that a vulnerability or code element can be reached through at least one execution path. However, just because there is no evidence of this does not mean that the element cannot be reached.
+
+A code element that is not marked as reachable may still be accessible under conditions that were not considered during analysis. This can occur due to incomplete information, control flow issues, potential dynamic behaviors, or overlooked edge cases.
+
+Reachability is an important factor in assessing security risks. When evaluating these risks, consider both reachable issues and those that are not reachable. This helps you evaluate security risks as a whole, making sure you do not overlook any potential threats.
+
+## Supported languages and integrations
+
+Reachability analysis is supported for the following languages and package managers:
+
+| Language                                                                                                                                                     | Package manager     | Release status       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- | -------------------- |
+| [Java](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/)                                                                           | Maven, Gradle       | General Availability |
+| [JavaScript](../../supported-languages/supported-languages-list/javascript/), [TypeScript](../../supported-languages/supported-languages-list/typescript.md) | npm, Yarn, pnpm     | General Availability |
+| [Python](../../supported-languages/supported-languages-list/python/)                                                                                         | pip, poetry, pipenv | Early Access         |
+| [C#](../../supported-languages/supported-languages-list/.net/)                                                                                               | NuGet               | Early Access         |
+
+Reachability analysis is supported in the following integrations:
+
+| Integration                                                                                                                                                          | Release status       |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| [GitHub](../../developer-tools/scm-integrations/organization-level-integrations/github.md)                                                                           | General Availability |
+| [GitHub Enterprise](../../developer-tools/scm-integrations/organization-level-integrations/github-enterprise.md)                                                     | General Availability |
+| [GitHub Cloud App](../../developer-tools/scm-integrations/organization-level-integrations/github-cloud-app.md)                                                       | General Availability |
+| [Bitbucket Cloud](../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud-app.md)                                                     | General Availability |
+| [Bitbucket Server](../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server.md)                                           | General Availability |
+| [GitLab](../../developer-tools/scm-integrations/organization-level-integrations/gitlab.md)                                                                           | General Availability |
+| [Azure Repos](../../developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs.md)                                                      | General Availability |
+| [Brokered connections](../../implementation-and-setup/enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md)                  | General Availability |
+| [Snyk CLI](../../developer-tools/snyk-cli/)                                                                                                                          | Early Access         |
+| [AWS CodePipeline integration with CodeBuild](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage) | Early Access         |
+| [Azure Pipelines](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/azure-pipelines-integration)                                                          | Early Access         |
+| [Bitbucket Pipelines](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/bitbucket-pipelines-integration-using-a-snyk-pipe)                                | Early Access         |
+| [CircleCI](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb)                                                       | Early Access         |
+| [GitHub Actions](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities)                        | Early Access         |
+| [Jenkins](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk)                                                         | Early Access         |
+| [Maven](https://docs.snyk.io/developer-tools/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk)                                                             | Early Access         |
 
 ## Set up reachability analysis
 
@@ -28,15 +90,15 @@ Snyk supports multiple reachability analysis configuration options:
 
 ### Enable reachability at the Group level
 
-You can set the reachability analysis default setting for multiple Organizations as follows:
+You can set the reachability analysis as the default setting for multiple Organizations. To do this:
 
-1. In the Group **Settings**, navigate to **Snyk Open Source**.
-2. Under **Reachability analysis** select **Enable Reachability** to apply it to new Organizations.
+1. Navigate to Group **Settings** > **Snyk Open Source**.
+2. Under **Reachability analysis,** click **Enable Reachability** to apply it to new Organizations.
 3. Confirm the selection to save changes.
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt="Enable reachability at the Group level"><figcaption><p>Enable reachability at the Group level</p></figcaption></figure>
 
-After reachability analysis is enabled, the analysis is done as part of scanning Projects.
+After reachability analysis is enabled, Snyk performs the analysis as part of scanning Projects.
 
 {% hint style="info" %}
 You can apply the reachability analysis to existing Projects by triggering a [manual test](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/#manual-snyk-prs).
@@ -44,9 +106,9 @@ You can apply the reachability analysis to existing Projects by triggering a [ma
 
 ### Enable reachability at the Organization level
 
-To enable reachability analysis for your Organization and begin analyzing Projects for reachable vulnerabilities, perform the following steps:
+To enable reachability analysis for your Organization and begin analyzing Projects for reachable vulnerabilities:
 
-1. In the Organization **Settings**, navigate to **Snyk Open Source**.
+1. Navigate to Organization **Settings** > **Snyk Open Source**.
 2. Under **General**, select **Enable reachability analysis**.
 3. Confirm the selection to save changes.
 
@@ -68,58 +130,44 @@ You can enable and disable reachability for all Organizations in a Group, overri
 
 <figure><img src="../../.gitbook/assets/image (1) (5).png" alt="Enable reachability analysis for all Organizations in a Group"><figcaption><p>Enable reachability for all Organizations in a Group</p></figcaption></figure>
 
-## Supported languages and integrations
-
-Reachability analysis is supported for the following languages and package managers:
-
-| Language                                                                                                                                                     | Package manager     | Release status       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- | -------------------- |
-| [Java](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/)                                                                           | Maven, Gradle       | General Availability |
-| [JavaScript](../../supported-languages/supported-languages-list/javascript/), [TypeScript](../../supported-languages/supported-languages-list/typescript.md) | npm, Yarn           | General Availability |
-| [Python](../../supported-languages/supported-languages-list/python/)                                                                                         | pip, poetry, pipenv | Early Access         |
-| [C#](../../supported-languages/supported-languages-list/.net/)                                                                                               | NuGet               | Early Access         |
-
-Reachability analysis is supported in the following integrations:
-
-| Integration                                                                                                                                         | Release status       |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| [GitHub](../../developer-tools/scm-integrations/organization-level-integrations/github.md)                                                          | General Availability |
-| [GitHub Enterprise](../../developer-tools/scm-integrations/organization-level-integrations/github-enterprise.md)                                    | General Availability |
-| [GitHub Cloud App](../../developer-tools/scm-integrations/organization-level-integrations/github-cloud-app.md)                                      | General Availability |
-| [Bitbucket Cloud](../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud-app.md)                                    | General Availability |
-| [Bitbucket Server](../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server.md)                          | General Availability |
-| [GitLab](../../developer-tools/scm-integrations/organization-level-integrations/gitlab.md)                                                          | General Availability |
-| [Azure Repos](../../developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs.md)                                     | General Availability |
-| [Brokered connections](../../implementation-and-setup/enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md) | General Availability |
+### Enable reachability for Snyk CLI and CI/CD integrations
 
 {% hint style="info" %}
-Reachability analysis using the Snyk CLI, IDE, or other integrations is not supported.
+Reachability analysis for Snyk CLI and CI/CD integrations is in Early Access.&#x20;
 {% endhint %}
 
-## **Enabling reachability** analysis **for brokered connections**
+Snyk supports performing reachability analysis through the CLI and CI/CD integrations. When **Reachability analysis for Snyk CLI and CI/CD integrations** is enabled, the Snyk Preview toggle is on by default, for all Groups and Organizations. &#x20;
 
-If you use a brokered connection to your SCM, configure the [Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/) to provide access to your source files.
+To enable or disable **Reachability in the Snyk CLI and CI/CD integrations** for a Group or Org:
 
-## Using reachability analysis
+1. Navigate to Group or Org **Settings** > **Snyk Preview**.
+2. Under **Reachability for Snyk CLI and CI/CD integrations**, toggle **Enable Reachability for Snyk CLI and CI/CD integrations** on or off.
+3. Confirm the selection to save changes.
 
-### Reachability status
+<figure><img src="../../.gitbook/assets/image (45).png" alt="Enable Reachability for Snyk CLI and CI/CD integrations in Snyk Preview"><figcaption><p>Enable Reachability for Snyk CLI and CI/CD integrations in Snyk Preview</p></figcaption></figure>
 
-After a vulnerability is identified, it has one of the following reachability statuses:
+### **Enable reachability** analysis **for brokered connections**
+
+If you use a brokered connection to your SCM, configure [Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/) to provide access to your source files.
+
+## Use reachability analysis in the Snyk Web UI
+
+After it is identified, a vulnerability has one of the following reachability statuses:
 
 * `REACHABLE` - A direct or indirect path was found from your application to the vulnerable code.
 * `NO PATH FOUND` - No path found from your application to the vulnerable code.
 
 {% hint style="info" %}
-If a `NO PATH FOUND` status is given, do not assume that the vulnerability is totally unreachable or unexploitable.
+A vulnerability with the status  `NO PATH FOUND`  it does not mean that the vulnerability is completely unreachable or unexploitable.
 {% endhint %}
 
-Reachability analysis status is available [on the Project page](reachability-analysis.md#reachability-analysis-as-shown-on-the-project-page), [as part of the Risk Score](reachability-analysis.md#reachability-analysis-as-part-of-the-risk-score), in the [Issues Detail report](../reporting/available-snyk-reports.md#issues-detail-report), and through the API endpoint [Get issues by Group ID](../../snyk-api/reference/issues.md#groups-group_id-issues).
+Reachability analysis status is available on the Project page, as part of the Risk Score, in the [Issues Detail report](../reporting/available-snyk-reports.md#issues-detail-report), and through the API endpoint [Get issues by Group ID](../../snyk-api/reference/issues.md#groups-group_id-issues).
 
 ### Reachability analysis as shown on the Project page
 
-After you import or test a Project using the Snyk UI, the Project is monitored by Snyk, and the results of the reachable vulnerabilities analysis appear on the Project page in the following places:
+After you import or test a Project using the Snyk Web UI, Snyk monitors the Project, and the results of the reachable vulnerabilities analysis appear on the Project page as follows:
 
-* Filters - Allow you to focus first on reachable vulnerabilities by filtering results based on reachability.
+* As a filter - The filter **Reachable** allows you to filter results based on reachability.
 * Reachability badge - Allows you to quickly see on the issue card when a vulnerability is reachable.
 * Call path - Allows you to see the path from your code to the vulnerable code element to validate the result.
 
@@ -137,36 +185,139 @@ Risk Score is available on the Projects page and through the API and Reports.
 [Priority score](priority-score.md), the legacy model preceding the Risk Score, also takes reachable vulnerabilities into account.
 {% endhint %}
 
-## How reachable vulnerability analysis works
+## Using reachability analysis with Snyk CLI
 
-Snyk uses a combination of security expert analysis, program analysis, and various AI techniques to determine the reachability of a vulnerability, including these steps of analysis:
-
-1. Enriching vulnerabilities with the patches applied to fix them - as part of the Snyk vulnerability curation process, Snyk references the fix commit that the maintainer applied.
-2. Related elements analysis - Based on the commit fix, Snyk uses DeepCode AI program analysis to analyze the code elements and other parameters related to the vulnerability.
-3. Root Cause analysis - Snyk uses DeepCode AI and Natural language processing (NLP) techniques to automatically rank the related code elements by their chances of being the root cause of the vulnerability.
-4. Reachability analysis - As issues are found in your application by a Snyk scan, the DeepCode program analysis engine is used to analyze the call graph of your application in relation to the call graph between the open-source dependencies used. A path between your application and a code element ranked as a root cause will yield a “Reachable” vulnerability.
-5. Security experts supervision - Snyk security experts will manually verify and mark elements as root causes in order to make the entire analysis more accurate over time
-
-The following considerations related to **f**alse positives and false negatives apply to Reachable vulnerability analysis.
-
-Program analysis requires a trade-off between accurate results, minimizing false positives, and recall rates, by avoiding potentially exploitable vulnerabilities.
-
-To facilitate this trade-off, Snyk DeepCode analysis applies real-time decision-making to determine whether to under-approximate the set of reachable elements based on analysis of the likelihood that a reachable path will be found in a specific environment.
-
-For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. The agentic capability of Snyk analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure.
+Snyk supports Reachability CLI version `1.1301.0` and greater. To perform Reachability analysis, use the `--reachability=true` option.&#x20;
 
 {% hint style="info" %}
-Changes in the first-party code, in the vulnerability analysis, and enhancements in the SAST engine can impact the results.
-
-Therefore, vulnerabilities labeled as **Not path found** can change to **Reachable** over time.
+When using `--reachability`, Snyk returns a new findings schema. Some legacy fields may not be available in this schema. Before using, please first check your usage to ensure automations do not fail.&#x20;
 {% endhint %}
 
-### Understanding the limits of reachability in static analysis
+By default, Snyk uploads source code from the current working directory for Reachability analysis. To specify source files for analysis in a separate directory, use the `--source-dir` option.
 
-Snyk aims to identify and demonstrate when a code element is reachable, while also addressing the challenges of indicating that a code element cannot be reached.
+To filter findings on Reachability, use the `--reachability-filter=reachable` option.&#x20;
 
-Static analysis techniques can show that a vulnerability or code element can be reached through at least one execution path. However, just because there is no evidence of this does not mean that the element cannot be reached.
+For a full list of supported options, see the CLI help docs for `test`, `monitor`, and `sbom test` CLI commands.
 
-A code element that is not marked as reachable may still be accessible under conditions that were not considered during analysis. This can occur due to incomplete information, control flow issues, potential dynamic behaviors, or overlooked edge cases.
+### Human-readable output
 
-Reachability is an important factor in assessing security risks. When evaluating these risks, consider both reachable issues and those that are not reachable. This helps you evaluate security risks as a whole, making sure you do not overlook any potential threats.
+By default, findings will be returned in human-readable output with **Reachability** as a property of each finding.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+
+### JSON output
+
+To print the findings in JSON, use the `--json` option. `reachability` is a property of `vulnerabilities`.
+
+```json
+{
+  "dependencyCount": 12,
+  "displayTargetFile": "../java-goof/log4shell-goof/log4shell-server/pom.xml",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": null,
+    "patch": null
+  },
+  "hasUnknownVersions": false,
+  "ignoreSettings": {
+    "adminOnly": false,
+    "autoApproveIgnores": false,
+    "disregardFilesystemIgnores": false,
+    "reasonRequired": false
+  },
+  "isPrivate": false,
+  "licensesPolicy": {
+    "orgLicenseRules": null,
+    "severities": null
+  },
+  "ok": false,
+  "org": "",
+  "packageManager": "maven",
+  "path": "/Users/bsalomon/devel/cli",
+  "policy": "",
+  "projectName": "io.snyk:log4shell-server",
+  "summary": "",
+  "uniqueCount": 0,
+  "vulnerabilities": [
+    {
+      "id": "SNYK-JAVA-COMMONSCOLLECTIONS-30078",
+      "identifiers": {
+        "CVE": ["CVE-2015-7501"],
+        "CWE": ["CWE-502"]
+      },
+      "reachability": "REACHABLE",
+      "riskScore": 892,
+      "isMalicious": true,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H/RL:O",
+      "creationTime": "2016-12-25T16:51:56.000000Z",
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "cvssV3BaseScore": 7.3,
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "modificationTime": "2024-03-11T09:52:38.421377Z",
+          "severity": "high"
+        }
+      ],
+      "cvssScore": 9.8,
+      "cvssSources": [
+        {
+          "assigner": "Snyk",
+          "baseScore": 9.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-02-10T14:22:01.344278Z",
+          "severity": "critical",
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H/RL:O"
+        },
+        {
+          "assigner": "NVD",
+          "baseScore": 9.8,
+          "cvssVersion": "3.0",
+          "modificationTime": "2024-03-11T09:46:27.924934Z",
+          "severity": "critical",
+          "type": "secondary",
+          "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "assigner": "Red Hat",
+          "baseScore": 7.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:52:38.421377Z",
+          "severity": "high",
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "description": "## Overview\n[commons-collections:commons-collections](https://mvnrepository.com/artifact/commons-collections/commons-collections) is a library which contains types that extend and augment the Java Collections Framework.\n\nAffected versions of this package are ...\n",
+      "disclosureTime": "2015-11-06T16:51:56.000000Z",
+      "epssDetails": null,
+      "exploitDetails": {
+        "maturityLevels": [
+          {
+            "format": "",
+            "level": "",
+            "type": "secondary"
+          },
+          {
+            "format": "",
+            "level": "",
+            "type": "primary"
+          }
+        ],
+        "sources": []
+      },
+      "from": [],
+      "isPatchable": false,
+      "isUpgradable": false,
+      "name": "commons-collections:commons-collections",
+      "packageManager": "maven",
+      "packageName": "commons-collections:commons-collections",
+      "severity": "critical",
+      "title": "Deserialization of Untrusted Data",
+      "upgradePath": null,
+      "version": "3.1"
+    }
+  ]
+}
+```
