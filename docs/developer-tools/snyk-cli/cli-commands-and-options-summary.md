@@ -1,7 +1,5 @@
 # CLI commands and options summary
 
-
-
 {% hint style="info" %}
 This page **only summarizes** the CLI commands and the options for each command. **For details, use the links in this summary to open the help** docs page for the command you are using. The help docs pages are the same as the help in the CLI.
 {% endhint %}
@@ -147,7 +145,7 @@ Additional CLI commands have exit codes as listed in the following help docs:
 * [`snyk iac update-exclude-policy` exit codes](commands/iac-update-exclude-policy.md#exit-codes)
 * [`snyk log4shell` exit codes](commands/log4shell.md#exit-codes)
 * [`snyk sbom` exit codes](commands/sbom.md#exit-codes)
-* &#x20;[`snyk sbom test` exit codes](commands/sbom-test.md#exit-codes)
+* [`snyk sbom test` exit codes](commands/sbom-test.md#exit-codes)
 * [`snyk container sbom` exit codes](commands/container-sbom.md#exit-codes)
 
 ## Options for multiple commands
@@ -172,7 +170,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--org=<ORG_ID>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`iac describe`](commands/iac-describe.md), [`sbom`](commands/sbom.md), [`container sbom`](commands/container-sbom.md), [`aibom`](commands/aibom.md)
 
-`--file=<FILE>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md)
+`--file=<FILE>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md),[`sbom test`](commands/sbom-test.md)   &#x20;
 
 `--file=<FILE_PATH>`: [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md), [`sbom test`](commands/sbom-test.md)
 
@@ -212,7 +210,13 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md)
 
-`--tags=<TAG>[,<TAG>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md)&#x20;
+`--tags=<TAG>[,<TAG>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md)
+
+`--reachability=<true|false>`:  [`test`](commands/test.md),[`monitor`](commands/monitor.md), [`sbom test`](commands/sbom-test.md)
+
+`--source-dir`: [`test`](commands/test.md),[`monitor`](commands/monitor.md), [`sbom test`](commands/sbom-test.md)
+
+`--reachability-filter=<reachable|no-info|not-applicable>`: [`test`](commands/test.md),[`monitor`](commands/monitor.md), [`sbom test`](commands/sbom-test.md)
 
 ## `snyk aibom` command options
 
@@ -225,7 +229,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--client-secret=<SECRET>`\
 `--client-id=<ID>`: [`snyk auth`](commands/auth.md)
 
-## `snyk code test` command option&#x20;
+## `snyk code test` command option
 
 `--include-ignores`: [`code test`](commands/code-test.md)
 
@@ -243,7 +247,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--exclude-base-image-vulns`: [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md)
 
-`--platform=<PLATFORM>`: [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md) ; [`container sbom`](commands/container-sbom.md)&#x20;
+`--platform=<PLATFORM>`: [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md) ; [`container sbom`](commands/container-sbom.md)
 
 `--username=<CONTAINER_REGISTRY_USERNAME>`: [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md)
 
@@ -273,7 +277,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--filter`: [`iac describe`](commands/iac-describe.md)
 
-`--html`: [`iac describe`](commands/iac-describe.md)&#x20;
+`--html`: [`iac describe`](commands/iac-describe.md)
 
 `--html-file-output=<OUTPUT_FILE_PATH>`: [`iac-describe`](commands/iac-describe.md)
 
@@ -361,7 +365,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--project-name-prefix=my-group/`: [`test`](commands/test.md), [`monitor`](commands/monitor.md)
 
-`--dotnet-runtime-resolution`:  [`test`](commands/test.md), [`monitor`](commands/monitor.md)
+`--dotnet-runtime-resolution`: [`test`](commands/test.md), [`monitor`](commands/monitor.md)
 
 `--dotnet-target-framework`: [`test`](commands/test.md), [`monitor`](commands/monitor.md)
 
