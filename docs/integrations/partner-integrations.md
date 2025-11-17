@@ -210,7 +210,7 @@ To see the documentation for each integration, click on the integration name in 
 
 | Integration                                                                                                                    | Description                                                                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ServiceNow: Snyk Vulnerbility Intelligence for SBOM](https://store.servicenow.com/store/app/bc2ae7e21b246a50a85b16db234bcb88) | Vulnerability Intelligence for ServiceNow SBOM allows you to efficiently prioritize and remediate vulnerabilities in the components identified in your SBOMs. |
+| [ServiceNow: Snyk Vulnerbility Intelligence for SBOM](https://store.servicenow.com/store/app/994d67e21b646a50a85b16db234bcb56) | Vulnerability Intelligence for ServiceNow SBOM allows you to efficiently prioritize and remediate vulnerabilities in the components identified in your SBOMs. |
 
 ## Ticketing and workflow
 
