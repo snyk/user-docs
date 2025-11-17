@@ -55,7 +55,7 @@ Reachability analysis is supported for the following languages and package manag
 | [Java](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/)                                                                           | Maven, Gradle       | General Availability |
 | [JavaScript](../../supported-languages/supported-languages-list/javascript/), [TypeScript](../../supported-languages/supported-languages-list/typescript.md) | npm, Yarn, pnpm     | General Availability |
 | [Python](../../supported-languages/supported-languages-list/python/)                                                                                         | pip, poetry, pipenv | Early Access         |
-| [C#](../../supported-languages/supported-languages-list/.net/)                                                                                               | NuGet               | Early Access         |
+| [C#](../../supported-languages/supported-languages-list/.net/)                                                                                               | NuGet, paket        | Early Access         |
 
 Reachability analysis is supported in the following integrations:
 
@@ -156,6 +156,7 @@ After it is identified, a vulnerability has one of the following reachability st
 
 * `REACHABLE` - A direct or indirect path was found from your application to the vulnerable code.
 * `NO PATH FOUND` - No path found from your application to the vulnerable code.
+* `NOT APPLICABLE` - Reachability is not supported for this vulnerability.&#x20;
 
 {% hint style="info" %}
 A vulnerability with the status  `NO PATH FOUND`  it does not mean that the vulnerability is completely unreachable or unexploitable.
@@ -212,11 +213,11 @@ To print the findings in JSON, use the `--json` option. `reachability` is a prop
 ```json
 {
   "dependencyCount": 12,
-  "displayTargetFile": "../java-goof/log4shell-goof/log4shell-server/pom.xml",
+  "displayTargetFile": "log4shell-server/pom.xml",
   "filesystemPolicy": false,
   "filtered": {
-    "ignore": null,
-    "patch": null
+    "ignore": [],
+    "patch": []
   },
   "hasUnknownVersions": false,
   "ignoreSettings": {
@@ -225,41 +226,153 @@ To print the findings in JSON, use the `--json` option. `reachability` is a prop
     "disregardFilesystemIgnores": false,
     "reasonRequired": false
   },
-  "isPrivate": false,
+  "isPrivate": true,
   "licensesPolicy": {
     "orgLicenseRules": null,
     "severities": null
   },
   "ok": false,
-  "org": "",
+  "org": "mysnykorg",
   "packageManager": "maven",
-  "path": "/Users/bsalomon/devel/cli",
+  "path": "/Users/jck/workspace/java-goof/log4shell-goof",
   "policy": "",
   "projectName": "io.snyk:log4shell-server",
-  "summary": "",
-  "uniqueCount": 0,
+  "remediation": {
+    "ignore": null,
+    "pin": {},
+    "unresolved": [],
+    "upgrade": {}
+  },
+  "summary": "10 vulnerable dependency paths",
+  "targetFile": "",
+  "uniqueCount": 10,
   "vulnerabilities": [
     {
-      "id": "SNYK-JAVA-COMMONSCOLLECTIONS-30078",
-      "identifiers": {
-        "CVE": ["CVE-2015-7501"],
-        "CWE": ["CWE-502"]
-      },
-      "reachability": "REACHABLE",
-      "riskScore": 892,
-      "isMalicious": true,
-      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H/RL:O",
-      "creationTime": "2016-12-25T16:51:56.000000Z",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L/E:P/RL:O/RC:R",
+      "creationTime": "2019-10-10T18:31:03.943542Z",
+      "credit": [
+        "Unknown"
+      ],
       "cvssDetails": [
         {
-          "assigner": "Red Hat",
+          "assigner": "NVD",
           "cvssV3BaseScore": 7.3,
           "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
-          "modificationTime": "2024-03-11T09:52:38.421377Z",
+          "modificationTime": "2024-03-11T07:51:53.729801Z",
           "severity": "high"
         }
       ],
-      "cvssScore": 9.8,
+      "cvssScore": 5.6,
+      "cvssSources": [
+        {
+          "assigner": "Snyk",
+          "baseScore": 5.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-06T13:45:01.631734Z",
+          "severity": "medium",
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L/E:P/RL:O/RC:R"
+        },
+        {
+          "assigner": "NVD",
+          "baseScore": 7.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T07:51:53.729801Z",
+          "severity": "high",
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "description": "## Overview\n\n[commons-collections:commons-collections](https://mvnrepository.com/artifact/commons-collections/commons-collections) is a library which contains types that extend and augment the Java Collections...",
+      "disclosureTime": "2019-10-10T00:00:00.000000Z",
+      "epssDetails": {
+        "modelVersion": "v2025.03.14",
+        "percentile": "0.93995",
+        "probability": "0.13769"
+      },
+      "exploit": "Proof of Concept",
+      "exploitDetails": {
+        "maturityLevels": [
+          {
+            "format": "CVSSv3",
+            "level": "Proof of Concept",
+            "type": "secondary"
+          },
+          {
+            "format": "CVSSv4",
+            "level": "Proof of Concept",
+            "type": "primary"
+          }
+        ],
+        "sources": [
+          "Snyk"
+        ]
+      },
+      "fixedIn": [
+        "3.2.2"
+      ],
+      "from": [
+        "io.snyk:log4shell-server@0.0.1-SNAPSHOT",
+        "commons-collections:commons-collections@3.1"
+      ],
+      "functions": [],
+      "id": "SNYK-JAVA-COMMONSCOLLECTIONS-472711",
+      "identifiers": {
+        "CVE": [
+          "CVE-2015-6420"
+        ],
+        "CWE": [
+          "CWE-502"
+        ],
+        "GHSA": [
+          "GHSA-6hgm-866r-3cjv"
+        ]
+      },
+      "insights": {
+        "triageAdvice": null
+      },
+      "isPatchable": false,
+      "isUpgradable": true,
+      "language": "java",
+      "malicious": false,
+      "modificationTime": "2024-03-11T07:51:53.729801Z",
+      "name": "commons-collections:commons-collections",
+      "packageManager": "maven",
+      "packageName": "commons-collections:commons-collections",
+      "patches": [],
+      "publicationTime": "2020-02-24T00:00:00.000000Z",
+      "reachability": "reachable",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/apache/commons-collections/commit/5ec476b0b756852db865b2e442180f091f8209ee"
+        },
+        {
+          "title": "GitHub PR",
+          "url": "https://github.com/apache/commons-collections/pull/18"
+        },
+        {
+          "title": "Jira Ticket",
+          "url": "https://issues.apache.org/jira/browse/COLLECTIONS-580"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,3.2.2)"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "socialTrendAlert": false,
+      "title": "Deserialization of Untrusted Data",
+      "upgradePath": [
+        false,
+        "commons-collections:commons-collections@3.2.2"
+      ],
+      "version": "3.1"
+    }
+  ]
+}Score": 9.8,
       "cvssSources": [
         {
           "assigner": "Snyk",
@@ -321,3 +434,12 @@ To print the findings in JSON, use the `--json` option. `reachability` is a prop
   ]
 }
 ```
+
+### Technical specifications and guidance
+
+Using Reachability will perform an upload of source code files to Snyk for analysis. The following technical limitations exist:
+
+* **Total number of files:** 300,000 files
+* **Total size of files:** 3GB&#x20;
+* **Total size per file:** 50MB
+* **File name length:** 256 characters
