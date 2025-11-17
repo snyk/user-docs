@@ -4341,6 +4341,110 @@
         },
         "type": "object"
       },
+      "BaseResource": {
+        "properties": {
+          "resource": {
+            "$ref": "#/components/schemas/BaseResourceVariant"
+          },
+          "type": {
+            "enum": [
+              "base"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "resource"
+        ],
+        "type": "object"
+      },
+      "BaseResourceCreateItem": {
+        "properties": {
+          "resource": {
+            "$ref": "#/components/schemas/BaseResourceVariantCreateItem"
+          },
+          "type": {
+            "enum": [
+              "base"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "resource"
+        ],
+        "type": "object"
+      },
+      "BaseResourceVariant": {
+        "description": "Resources containing testable content.",
+        "discriminator": {
+          "mapping": {
+            "bundle": "#/components/schemas/BundleResource",
+            "container": "#/components/schemas/ContainerRepoResource",
+            "inline": "#/components/schemas/InlineResource",
+            "scm": "#/components/schemas/ScmResource",
+            "snyk_ref": "#/components/schemas/SnykReferenceResource",
+            "upload": "#/components/schemas/UploadResource"
+          },
+          "propertyName": "type"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/InlineResource"
+          },
+          {
+            "$ref": "#/components/schemas/BundleResource"
+          },
+          {
+            "$ref": "#/components/schemas/UploadResource"
+          },
+          {
+            "$ref": "#/components/schemas/ScmResource"
+          },
+          {
+            "$ref": "#/components/schemas/ContainerRepoResource"
+          },
+          {
+            "$ref": "#/components/schemas/SnykReferenceResource"
+          }
+        ]
+      },
+      "BaseResourceVariantCreateItem": {
+        "description": "Resources containing testable content.",
+        "discriminator": {
+          "mapping": {
+            "bundle": "#/components/schemas/BundleResource",
+            "container": "#/components/schemas/ContainerRepoResource",
+            "inline": "#/components/schemas/InlineResourceCreateItem",
+            "scm": "#/components/schemas/ScmResource",
+            "snyk_ref": "#/components/schemas/SnykReferenceResource",
+            "upload": "#/components/schemas/UploadResource"
+          },
+          "propertyName": "type"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/InlineResourceCreateItem"
+          },
+          {
+            "$ref": "#/components/schemas/BundleResource"
+          },
+          {
+            "$ref": "#/components/schemas/UploadResource"
+          },
+          {
+            "$ref": "#/components/schemas/ScmResource"
+          },
+          {
+            "$ref": "#/components/schemas/ContainerRepoResource"
+          },
+          {
+            "$ref": "#/components/schemas/SnykReferenceResource"
+          }
+        ]
+      },
       "BitbucketServer": {
         "properties": {
           "bitbucket": {
@@ -4745,6 +4849,54 @@
         },
         "required": [
           "data"
+        ],
+        "type": "object"
+      },
+      "BundleResource": {
+        "properties": {
+          "bundle_id": {
+            "pattern": "^[a-fA-F0-9]{64}$",
+            "type": "string"
+          },
+          "content_type": {
+            "enum": [
+              "sbom",
+              "source"
+            ],
+            "type": "string"
+          },
+          "file_patterns": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 20,
+            "type": "array"
+          },
+          "name": {
+            "maxLength": 256,
+            "type": "string"
+          },
+          "repository_url": {
+            "format": "url",
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "root_folder_id": {
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "bundle"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "bundle_id",
+          "content_type",
+          "file_patterns"
         ],
         "type": "object"
       },
@@ -5585,6 +5737,34 @@
         "required": [
           "platform"
         ],
+        "type": "object"
+      },
+      "ContainerRepoResource": {
+        "properties": {
+          "image_url": {
+            "format": "url",
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "tag": {
+            "pattern": "^[a-fA-F0-9]{64}$",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "container"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "image_url",
+          "tag"
+        ],
+        "type": "object"
+      },
+      "ContainerScanConfiguration": {
         "type": "object"
       },
       "Context": {
@@ -6819,6 +6999,50 @@
         ],
         "type": "object"
       },
+      "DiffResource": {
+        "properties": {
+          "base": {
+            "$ref": "#/components/schemas/BaseResourceVariant"
+          },
+          "compare": {
+            "$ref": "#/components/schemas/BaseResourceVariant"
+          },
+          "type": {
+            "enum": [
+              "diff"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "base",
+          "compare"
+        ],
+        "type": "object"
+      },
+      "DiffResourceCreateItem": {
+        "properties": {
+          "base": {
+            "$ref": "#/components/schemas/BaseResourceVariantCreateItem"
+          },
+          "compare": {
+            "$ref": "#/components/schemas/BaseResourceVariantCreateItem"
+          },
+          "type": {
+            "enum": [
+              "diff"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "base",
+          "compare"
+        ],
+        "type": "object"
+      },
       "DiffSuggestion": {
         "description": "A suggestion in unified diff format representing the code changes to fix the vulnerability.",
         "properties": {
@@ -7895,6 +8119,7 @@
                   "cwe": "#/components/schemas/CweProblem",
                   "ghsa": "#/components/schemas/GithubSecurityAdvisoryProblem",
                   "other": "#/components/schemas/OtherProblem",
+                  "secret": "#/components/schemas/SecretsRuleProblem",
                   "snyk_cloud_rule": "#/components/schemas/SnykCloudRuleProblem",
                   "snyk_code_rule": "#/components/schemas/SnykCodeRuleProblem",
                   "snyk_license": "#/components/schemas/SnykLicenseProblem",
@@ -8862,6 +9087,80 @@
                   "type": "object"
                 },
                 {
+                  "description": "Secret rule that produces a Secret finding.",
+                  "properties": {
+                    "categories": {
+                      "description": "Categories applied to the rule.",
+                      "example": [
+                        "security"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "maxItems": 10,
+                      "type": "array"
+                    },
+                    "help": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "precision": {
+                      "description": "A qualitative description of the rule's precision.",
+                      "example": "very-high",
+                      "type": "string"
+                    },
+                    "severity": {
+                      "description": "Indicate the severity of a finding discovered by a Test.",
+                      "enum": [
+                        "critical",
+                        "high",
+                        "medium",
+                        "low",
+                        "none",
+                        "other"
+                      ],
+                      "type": "string"
+                    },
+                    "short_description": {
+                      "type": "string"
+                    },
+                    "source": {
+                      "enum": [
+                        "secret"
+                      ],
+                      "type": "string"
+                    },
+                    "tags": {
+                      "description": "Tags applied to the rule.",
+                      "example": [
+                        "aws"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "maxItems": 20,
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "source",
+                    "id",
+                    "severity",
+                    "name",
+                    "short_description",
+                    "help",
+                    "tags",
+                    "precision",
+                    "categories"
+                  ],
+                  "type": "object"
+                },
+                {
                   "description": "Problem which this API version is not capable of expressing.\n\nThis problem may be available in a newer version of this API.",
                   "properties": {
                     "source": {
@@ -9558,7 +9857,9 @@
           "sca",
           "sast",
           "dast",
-          "other"
+          "other",
+          "config",
+          "secret"
         ],
         "type": "string"
       },
@@ -11410,6 +11711,9 @@
         ],
         "type": "object"
       },
+      "IacScanConfiguration": {
+        "type": "object"
+      },
       "Id": {
         "format": "uuid",
         "type": "string"
@@ -11534,6 +11838,84 @@
           "group"
         ],
         "type": "string"
+      },
+      "InlineContent": {
+        "properties": {
+          "type": {
+            "enum": [
+              "dep_graph"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type"
+        ],
+        "type": "object"
+      },
+      "InlineContentCreateItem": {
+        "properties": {
+          "dep_graph": {
+            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.DepGraph"
+          },
+          "type": {
+            "enum": [
+              "dep_graph"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "dep_graph"
+        ],
+        "type": "object"
+      },
+      "InlineResource": {
+        "properties": {
+          "content": {
+            "$ref": "#/components/schemas/InlineContent"
+          },
+          "name": {
+            "maxLength": 256,
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "inline"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "name",
+          "content"
+        ],
+        "type": "object"
+      },
+      "InlineResourceCreateItem": {
+        "properties": {
+          "content": {
+            "$ref": "#/components/schemas/InlineContentCreateItem"
+          },
+          "name": {
+            "maxLength": 256,
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "inline"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "name",
+          "content"
+        ],
+        "type": "object"
       },
       "InstalledAt": {
         "description": "Timestamp at which this app was first installed at.",
@@ -16815,6 +17197,9 @@
         ],
         "type": "object"
       },
+      "SastScanConfiguration": {
+        "type": "object"
+      },
       "SbomDocument": {
         "additionalProperties": true,
         "type": "object"
@@ -16938,6 +17323,9 @@
         "additionalProperties": true,
         "type": "object"
       },
+      "ScaScanConfiguration": {
+        "type": "object"
+      },
       "ScanAttributes": {
         "description": "Scan attributes",
         "example": {
@@ -17047,6 +17435,26 @@
         ],
         "type": "object"
       },
+      "ScanConfiguration": {
+        "properties": {
+          "container": {
+            "$ref": "#/components/schemas/ContainerScanConfiguration"
+          },
+          "iac": {
+            "$ref": "#/components/schemas/IacScanConfiguration"
+          },
+          "sast": {
+            "$ref": "#/components/schemas/SastScanConfiguration"
+          },
+          "sca": {
+            "$ref": "#/components/schemas/ScaScanConfiguration"
+          },
+          "secrets": {
+            "$ref": "#/components/schemas/SecretsScanConfiguration"
+          }
+        },
+        "type": "object"
+      },
       "ScanCreateAttributes": {
         "additionalProperties": false,
         "description": "Scan create attributes",
@@ -17141,6 +17549,46 @@
         "required": [
           "type",
           "url"
+        ],
+        "type": "object"
+      },
+      "ScmResource": {
+        "properties": {
+          "commit": {
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "file_patterns": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 20,
+            "type": "array"
+          },
+          "integration_id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "ref": {
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "repo_url": {
+            "format": "url",
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "scm"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "repo_url",
+          "integration_id"
         ],
         "type": "object"
       },
@@ -17284,6 +17732,9 @@
           "encrypted",
           "expires_at"
         ],
+        "type": "object"
+      },
+      "SecretsScanConfiguration": {
         "type": "object"
       },
       "SelfLink": {
@@ -17662,6 +18113,34 @@
             "type": "array"
           }
         },
+        "type": "object"
+      },
+      "SnykReferenceResource": {
+        "properties": {
+          "ref_id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "reference_type": {
+            "enum": [
+              "target",
+              "project",
+              "asset"
+            ],
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "snyk_ref"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "reference_type",
+          "ref_id"
+        ],
         "type": "object"
       },
       "SonarqubeAttributes": {
@@ -18331,6 +18810,34 @@
             "description": "Summary of findings regardless of whether they are effective or not. This\nsummary includes all findings, even those suppressed by policy.\n\nThis attribute is set when the test execution\ncompletes (state.execution == 'finished') successfully (without fatal errors\nblocking an outcome).",
             "readOnly": true
           },
+          "resources": {
+            "example": [
+              {
+                "resource": {
+                  "content_type": "source",
+                  "file_patterns": [
+                    "*.go"
+                  ],
+                  "repository_url": "https://example.com/source/repo",
+                  "revision_id": "abcde12345",
+                  "type": "upload"
+                },
+                "type": "base"
+              },
+              {
+                "resource": {
+                  "ref_id": "6BD4F5E2-D4E8-4C6B-BB0E-ECF0A70423F5",
+                  "reference_type": "target",
+                  "type": "snyk_ref"
+                },
+                "type": "base"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/TestResource"
+            },
+            "type": "array"
+          },
           "state": {
             "allOf": [
               {
@@ -18382,6 +18889,34 @@
             ],
             "description": "The test configuration. If not specified, caller accepts test configuration\ndefaults within the calling scope (org, group or tenant settings, etc)."
           },
+          "resources": {
+            "example": [
+              {
+                "resource": {
+                  "content_type": "source",
+                  "file_patterns": [
+                    "*.go"
+                  ],
+                  "repository_url": "https://example.com/source/repo",
+                  "revision_id": "abcde12345",
+                  "type": "upload"
+                },
+                "type": "base"
+              },
+              {
+                "resource": {
+                  "ref_id": "6BD4F5E2-D4E8-4C6B-BB0E-ECF0A70423F5",
+                  "reference_type": "target",
+                  "type": "snyk_ref"
+                },
+                "type": "base"
+              }
+            ],
+            "items": {
+              "$ref": "#/components/schemas/TestResourceCreateItem"
+            },
+            "type": "array"
+          },
           "subject": {
             "allOf": [
               {
@@ -18422,9 +18957,46 @@
             ],
             "description": "Inline configured policy options for determining outcome of this specific test.\n\nIf centrally managed policies are in scope, inline policies are overridden\nby managed policies. Policy references explain which policies were\neffective for test evaluation."
           },
+          "project_business_criticality": {
+            "maxLength": 256,
+            "type": "string"
+          },
+          "project_environment": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 10,
+            "type": "array"
+          },
+          "project_lifecycle": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 10,
+            "type": "array"
+          },
+          "project_tags": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 10,
+            "type": "array"
+          },
           "publish_report": {
             "description": "Publish findings into a report, viewable in the Snyk web UI.",
             "type": "boolean"
+          },
+          "scan_config": {
+            "$ref": "#/components/schemas/ScanConfiguration"
+          },
+          "target_name": {
+            "maxLength": 256,
+            "type": "string"
+          },
+          "target_reference": {
+            "description": "Fields from CLI.",
+            "maxLength": 1024,
+            "type": "string"
           },
           "timeout": {
             "allOf": [
@@ -18564,6 +19136,40 @@
           "data"
         ],
         "type": "object"
+      },
+      "TestResource": {
+        "anyOf": [
+          {
+            "$ref": "#/components/schemas/BaseResource"
+          },
+          {
+            "$ref": "#/components/schemas/DiffResource"
+          }
+        ],
+        "discriminator": {
+          "mapping": {
+            "base": "#/components/schemas/BaseResource",
+            "diff": "#/components/schemas/DiffResource"
+          },
+          "propertyName": "type"
+        }
+      },
+      "TestResourceCreateItem": {
+        "anyOf": [
+          {
+            "$ref": "#/components/schemas/BaseResourceCreateItem"
+          },
+          {
+            "$ref": "#/components/schemas/DiffResourceCreateItem"
+          }
+        ],
+        "discriminator": {
+          "mapping": {
+            "base": "#/components/schemas/BaseResourceCreateItem",
+            "diff": "#/components/schemas/DiffResourceCreateItem"
+          },
+          "propertyName": "type"
+        }
       },
       "TestState": {
         "description": "Test execution state information.",
@@ -19244,6 +19850,54 @@
         "required": [
           "dependency_path",
           "is_drop"
+        ],
+        "type": "object"
+      },
+      "UploadResource": {
+        "properties": {
+          "content_type": {
+            "enum": [
+              "sbom",
+              "source"
+            ],
+            "type": "string"
+          },
+          "file_patterns": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 20,
+            "type": "array"
+          },
+          "name": {
+            "maxLength": 256,
+            "type": "string"
+          },
+          "repository_url": {
+            "format": "url",
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "revision_id": {
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "root_folder_id": {
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "upload"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "revision_id",
+          "content_type",
+          "file_patterns"
         ],
         "type": "object"
       },
