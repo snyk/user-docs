@@ -2124,6 +2124,225 @@
           }
         }
       },
+      "503": {
+        "content": {
+          "application/vnd.api+json": {
+            "schema": {
+              "additionalProperties": false,
+              "example": {
+                "errors": [
+                  {
+                    "detail": "Permission denied for this resource",
+                    "status": "403"
+                  }
+                ],
+                "jsonapi": {
+                  "version": "1.0"
+                }
+              },
+              "properties": {
+                "errors": {
+                  "example": [
+                    {
+                      "detail": "Permission denied for this resource",
+                      "status": "403"
+                    }
+                  ],
+                  "items": {
+                    "additionalProperties": false,
+                    "example": {
+                      "detail": "Not Found",
+                      "status": "404"
+                    },
+                    "properties": {
+                      "code": {
+                        "description": "An application-specific error code, expressed as a string value.",
+                        "example": "entity-not-found",
+                        "type": "string"
+                      },
+                      "detail": {
+                        "description": "A human-readable explanation specific to this occurrence of the problem.",
+                        "example": "The request was missing these required fields: ...",
+                        "type": "string"
+                      },
+                      "id": {
+                        "description": "A unique identifier for this particular occurrence of the problem.",
+                        "example": "f16c31b5-6129-4571-add8-d589da9be524",
+                        "format": "uuid",
+                        "type": "string"
+                      },
+                      "links": {
+                        "additionalProperties": false,
+                        "description": "A link that leads to further details about this particular occurrence of the problem.",
+                        "example": {
+                          "about": "https://example.com/about_this_error"
+                        },
+                        "properties": {
+                          "about": {
+                            "example": "https://example.com/api/resource",
+                            "oneOf": [
+                              {
+                                "description": "A string containing the link’s URL.",
+                                "example": "https://example.com/api/resource",
+                                "type": "string"
+                              },
+                              {
+                                "additionalProperties": false,
+                                "example": {
+                                  "href": "https://example.com/api/resource"
+                                },
+                                "properties": {
+                                  "href": {
+                                    "description": "A string containing the link’s URL.",
+                                    "example": "https://example.com/api/resource",
+                                    "type": "string"
+                                  },
+                                  "meta": {
+                                    "additionalProperties": true,
+                                    "description": "Free-form object that may contain non-standard information.",
+                                    "example": {
+                                      "key1": "value1",
+                                      "key2": {
+                                        "sub_key": "sub_value"
+                                      },
+                                      "key3": [
+                                        "array_value1",
+                                        "array_value2"
+                                      ]
+                                    },
+                                    "type": "object"
+                                  }
+                                },
+                                "required": [
+                                  "href"
+                                ],
+                                "type": "object"
+                              }
+                            ]
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "meta": {
+                        "additionalProperties": true,
+                        "example": {
+                          "key": "value"
+                        },
+                        "type": "object"
+                      },
+                      "source": {
+                        "additionalProperties": false,
+                        "example": {
+                          "pointer": "/data/attributes"
+                        },
+                        "properties": {
+                          "parameter": {
+                            "description": "A string indicating which URI query parameter caused the error.",
+                            "example": "param1",
+                            "type": "string"
+                          },
+                          "pointer": {
+                            "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                            "example": "/data/attributes",
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "status": {
+                        "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+                        "example": "400",
+                        "pattern": "^[45]\\d\\d$",
+                        "type": "string"
+                      },
+                      "title": {
+                        "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+                        "example": "Bad request",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "status",
+                      "detail"
+                    ],
+                    "type": "object"
+                  },
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "jsonapi": {
+                  "additionalProperties": false,
+                  "example": {
+                    "version": "1.0"
+                  },
+                  "properties": {
+                    "version": {
+                      "description": "Version of the JSON API specification this server supports.",
+                      "example": "1.0",
+                      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "version"
+                  ],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "jsonapi",
+                "errors"
+              ],
+              "type": "object"
+            }
+          }
+        },
+        "description": "Service Unavailable: The server is currently unavailable to handle the request.",
+        "headers": {
+          "deprecation": {
+            "$ref": "#/components/headers/DeprecationHeader"
+          },
+          "snyk-request-id": {
+            "$ref": "#/components/headers/RequestIdResponseHeader"
+          },
+          "snyk-version-lifecycle-stage": {
+            "description": "A header containing the version stage of the endpoint. This stage describes the guarantees Snyk provides surrounding stability of the endpoint.\n",
+            "schema": {
+              "enum": [
+                "wip",
+                "experimental",
+                "beta",
+                "ga",
+                "deprecated",
+                "sunset"
+              ],
+              "example": "ga",
+              "type": "string"
+            }
+          },
+          "snyk-version-requested": {
+            "description": "A header containing the version of the endpoint requested by the caller.",
+            "example": "2024-10-15",
+            "schema": {
+              "description": "Requested API version",
+              "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
+              "type": "string"
+            }
+          },
+          "snyk-version-served": {
+            "description": "A header containing the version of the endpoint that was served by the API.",
+            "example": "2024-10-15",
+            "schema": {
+              "description": "Resolved API version",
+              "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
+              "type": "string"
+            }
+          },
+          "sunset": {
+            "$ref": "#/components/headers/SunsetHeader"
+          }
+        }
+      },
       "CreateExport": {
         "content": {
           "application/vnd.api+json": {
@@ -11393,11 +11612,18 @@
         ],
         "type": "string"
       },
-      "GroupPolicyCondition": {
+      "GroupPolicyConditionCVE": {
         "additionalProperties": false,
+        "description": "Matches on the CVE.",
         "properties": {
           "field": {
-            "$ref": "#/components/schemas/GroupPolicyConditionField"
+            "enum": [
+              "cve"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicyCVE"
+            ]
           },
           "operator": {
             "$ref": "#/components/schemas/GroupPolicyConditionOperator"
@@ -11417,28 +11643,109 @@
         ],
         "type": "object"
       },
-      "GroupPolicyConditionField": {
-        "enum": [
-          "snyk/asset/finding/v1",
-          "exploit-maturity",
-          "cwe",
-          "cve",
-          "snyk-id",
-          "fixable",
-          "severity",
-          "rule-id"
+      "GroupPolicyConditionCWE": {
+        "additionalProperties": false,
+        "description": "Matches on the CWE.",
+        "properties": {
+          "field": {
+            "enum": [
+              "cwe"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicyCWE"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
         ],
-        "type": "string",
-        "x-enum-varnames": [
-          "GroupPolicySnykassetfindingv1",
-          "GroupPolicyExploitMaturity",
-          "GroupPolicyCwe",
-          "GroupPolicyCve",
-          "GroupPolicySnykId",
-          "GroupPolicyFixable",
-          "GroupPolicySeverity",
-          "GroupPolicyRuleId"
-        ]
+        "type": "object"
+      },
+      "GroupPolicyConditionExploitMaturity": {
+        "additionalProperties": false,
+        "description": "Matches on the exploit maturity.",
+        "properties": {
+          "field": {
+            "enum": [
+              "exploit-maturity"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicyExploitMaturity"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "enum": [
+                "mature",
+                "proof-of-concept",
+                "no-known-exploit",
+                "no-data"
+              ],
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
+      },
+      "GroupPolicyConditionFixable": {
+        "additionalProperties": false,
+        "description": "Matches on the fixable status.",
+        "properties": {
+          "field": {
+            "enum": [
+              "fixable"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicyFixable"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "enum": [
+                "true",
+                "false"
+              ],
+              "type": "string"
+            },
+            "maxItems": 1,
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
       },
       "GroupPolicyConditionOperator": {
         "enum": [
@@ -11451,12 +11758,168 @@
           "GroupPolicyNotIncludes"
         ]
       },
+      "GroupPolicyConditionRuleId": {
+        "additionalProperties": false,
+        "description": "Matches on the rule ID.",
+        "properties": {
+          "field": {
+            "enum": [
+              "rule-id"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicyRuleId"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
+      },
+      "GroupPolicyConditionSeverity": {
+        "additionalProperties": false,
+        "description": "Matches on the severity.",
+        "properties": {
+          "field": {
+            "enum": [
+              "severity"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicySeverity"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "critical"
+              ],
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
+      },
+      "GroupPolicyConditionSnykAssetFindingV1": {
+        "additionalProperties": false,
+        "description": "Matches on the Snyk Asset Finding V1 identifier.",
+        "properties": {
+          "field": {
+            "enum": [
+              "snyk/asset/finding/v1"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicySnykAssetFindingV1"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "format": "uuid",
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
+      },
+      "GroupPolicyConditionSnykId": {
+        "additionalProperties": false,
+        "description": "Matches on the Snyk ID.",
+        "properties": {
+          "field": {
+            "enum": [
+              "snyk-id"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicySnykId"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
+      },
       "GroupPolicyConditionsGroup": {
         "additionalProperties": false,
         "properties": {
           "conditions": {
             "items": {
-              "$ref": "#/components/schemas/GroupPolicyCondition"
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionExploitMaturity"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionFixable"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionSnykAssetFindingV1"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionRuleId"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionSeverity"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionCWE"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionCVE"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionSnykId"
+                }
+              ]
             },
             "minItems": 1,
             "type": "array"
@@ -28868,7 +29331,7 @@
     },
     "/orgs/{org_id}/ai_boms": {
       "post": {
-        "description": "Triggers the creation of a new AI-BOM. The AI-BOM will be created in a background job. Users should query the background job status by using the getAiBomJob endpoint (/orgs/{org_id}/ai_bom_jobs/{job_id}). The response will contain a content-location header pointing to the getAiBomJob endpoint.\n\n#### Required permissions\n\n- `Edit Organization (org.edit)`",
+        "description": "Triggers the creation of a new AI-BOM. The AI-BOM will be created in a background job. Users should query the background job status by using the getAiBomJob endpoint (/orgs/{org_id}/ai_bom_jobs/{job_id}). The response will contain a content-location header pointing to the getAiBomJob endpoint.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "createAiBom",
         "parameters": [
           {
@@ -29663,6 +30126,9 @@
                 }
               }
             }
+          },
+          "503": {
+            "$ref": "#/components/responses/503"
           }
         },
         "summary": "Create a new AI-BOM (Early Access)",
