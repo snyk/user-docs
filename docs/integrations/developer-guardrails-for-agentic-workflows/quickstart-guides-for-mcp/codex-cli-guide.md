@@ -10,7 +10,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Codex CLI to secure 
 
 ### Install Codex CLI
 
-Consult the official OpenAI Codex CLI documentation on GitHub for [Codex CLI installation instructions](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/zCoTzHhADDnyD0YBwt1O/).
+Consult the official OpenAI Codex CLI documentation on GitHub for [Codex CLI installation instructions](https://github.com/openai/codex).
 
 ### Install the Snyk MCP Server in Codex CLI using npx
 
