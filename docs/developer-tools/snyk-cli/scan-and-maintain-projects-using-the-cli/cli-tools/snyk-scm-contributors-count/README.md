@@ -36,5 +36,15 @@ Run the following:
 ```
 npm i -g snyk-scm-contributors-count
 ```
-
 You can also get the binaries from the [release page](https://github.com/snyk-tech-services/snyk-scm-contributors-count/releases).
+
+Please note:
+1) Before running the script it is required to export the Snyk token (the API token of the user running the script. This can be found in the Snyk web UI under account settings).
+
+2) The SCM PAT needs to have Code/Read permission at least (preferably full access).
+
+3) The user running the script needs to have access to all the SCM orgs/projects in scope.
+
+4) You may choose to use npx for one-off executions instead of installing the script globally.
+
+5) For further details see the README of the repository of the tool: https://github.com/snyk-tech-services/snyk-scm-contributors-count/blob/main/README.md
