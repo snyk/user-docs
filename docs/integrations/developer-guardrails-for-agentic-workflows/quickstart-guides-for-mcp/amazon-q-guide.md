@@ -12,52 +12,23 @@ You can access Snyk Studio, including Snyk's MCP server, in Amazon Q to secure c
 
 Add the Amazon Q extension to your IDE. For more details, see the official [Installing the Amazon Q Developer extension or plugin in your IDE](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-in-IDE-setup.html).
 
-### Install the Snyk MCP Server in Amazon Q
+### Install the Snyk MCP Server in the Amazon Q IDE extension
 
-Install the Snyk MCP Server using the method that best suits your operating system and local development environment.
+You can configure the Snyk MCP Server in VS Code and JetBrains for Amazon Q.
 
-#### Install with Node.js and `npx`
+Using the AmazonQ extension UI in your chosen IDE:
 
-Create or edit the MCP configuration file `~/.aws/amazonq/mcp.json` .
+1. Add a new MCP Server
+2. Provide the following values in the specified fields:
+   1. Command: `npx`&#x20;
+   2. Arguments: `-y snyk@latest mcp -t stdio -o=ostemp`&#x20;
+   3. Timeout: `0`&#x20;
 
-If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to the file:
+The `-o` option instructs the MCP server to write the scan results to a file. To direct the results to a specific folder, provide an absolute path instead of using `ostemp`. For example, `-o=/absolute/path/to/folder`
 
-<pre><code><strong>{
-</strong>  "mcpServers": {
-    "Snyk": {
-      "command": "npx",
-      "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"],
-      "env": {}
-    }
-  }
-}
-</code></pre>
-
-#### Install with pre-installed Snyk CLI
-
-Create or edit the MCP configuration file `~/.aws/amazonq/mcp.json` .
-
-If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in the file. You might need to specify the full path to the Snyk executable CLI:
-
-```
-{
-  "mcpServers": {
-    "Snyk": {
-      "command": "/absolute/path/to/snyk",
-      "args": ["mcp", "-t", "stdio"],
-      "env": {}
-    }
-  }
-}
-```
-
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
-
-The following example shows a Snyk MCP Server that was successfully configured and started.
-
-<figure><img src="../../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
-
-For additional MCP configuration options on Amazon Q and troubleshooting, consult the official [Amazon Q MCP server documentation](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html).
+{% hint style="info" %}
+For additional MCP configuration options on Amazon Q and troubleshooting, visit the official [Amazon Q MCP server documentation](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html).
+{% endhint %}
 
 ## Setting up the Snyk MCP Server
 
