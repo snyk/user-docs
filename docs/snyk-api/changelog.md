@@ -1,3 +1,26 @@
+## 2025-11-05
+
+### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+- for the `query` request parameter `limit`, the type/format was changed from `number`/`` to `integer`/``
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- for the `query` request parameter `offset`, the type/format was changed from `number`/`` to `integer`/``
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- for the `query` request parameter `limit`, the max was set to `1000.00`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- for the `query` request parameter `limit`, the min was set to `1.00`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- for the `query` request parameter `offset`, the min was set to `0.00`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- api operation id `fetchIssuesPerPurl` removed and replaced with `getIssuesPerPurl`
+
+- added the optional property `meta/match` to the response with the `200` status
+
+
+
+### POST - `/orgs/{org_id}/packages/issues` - Updated
+- added the optional property `meta/packages` to the response with the `200` status
+
+
 ## 2025-09-28 - Updated 2025-11-13
 
 ### POST - `/orgs/{org_id}/export` - Updated
