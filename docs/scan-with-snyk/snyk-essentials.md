@@ -1,10 +1,10 @@
 # Snyk Essentials
 
-Snyk Essentials helps AppSec teams better operationalize and scale use of Snyk with broad application visibility and security coverage management.&#x20;
+Snyk Essentials helps AppSec teams better operationalize and scale use of Snyk with broad application visibility and security coverage management.
 
 ## Overview
 
-Snyk Essentials enables:&#x20;
+Snyk Essentials enables:
 
 * Automated app asset discovery: Continually discover application assets and classify them by business context, ensuring security is in sync with development.
 * Tailored security controls: Define and manage appropriate security and compliance requirements, and verify the correct controls are in place.
@@ -18,7 +18,7 @@ Snyk Essentials core capabilities overview
 
 ## Features
 
-Snyk Essentials includes the following features:&#x20;
+Snyk Essentials includes the following features:
 
 * [Integrations](../developer-tools/scm-integrations/group-level-integrations/) to support ingesting data from SCM tools for asset discovery, Snyk Application Security Testing products for security controls coverage, and ticketing or notification tools for policy actions. Use the the Integration page to add and set up new integrations.
 * [Policies](../manage-risk/policies/assets-policies/) to classify and tag assets with business context and configure actions using a Policy Builder UI.
@@ -31,14 +31,11 @@ Snyk Essentials includes the following features:&#x20;
 * You have the necessary permissions to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk Essentials for repository asset discovery.
 
 {% hint style="info" %}
-When you integrate a Git code repository with Snyk Essentials, you should use a secondary token with a broad, complete view of the code repository, not only of what you imported into Snyk. \
+When you integrate a Git code repository with Snyk Essentials, you should use a secondary token with a broad, complete view of the code repository, not only of what you imported into Snyk. \\
 
+Use a secondary token to countercheck everything onboarded using Snyk. \\
 
-Use a secondary token to countercheck everything onboarded using Snyk. \
-
-
-Using the secondary token reduces the likelihood of introducing a blind spot from a limited token at the Organization level configuration. \
-
+Using the secondary token reduces the likelihood of introducing a blind spot from a limited token at the Organization level configuration. \\
 
 The first import, synchronization, can take up to 24 hours to complete.
 {% endhint %}
@@ -63,11 +60,11 @@ The security controls associated with the asset. Navigate to the [Coverage contr
 
 ### **Coverage**
 
-An assessment of whether applicable assets are scanned and tested by security tools (like Snyk Open Source, for instance), as it relates to an application security program.  A type of policy that allows you to specify what controls should be applied and, optionally, how often it needs to be run.
+An assessment of whether applicable assets are scanned and tested by security tools (like Snyk Open Source, for instance), as it relates to an application security program. A type of policy that allows you to specify what controls should be applied and, optionally, how often it needs to be run.
 
 ### **Tags**
 
-A way to categorize assets. Helps you recognize or handle assets differently according to mutual properties. Assets can be filtered by their tags in the inventory or when creating policy rules. A tag can be automatically assigned to an asset, or the asset can be tagged by a policy you created. GitHub and GitLab topics are treated as asset tags, and you can use them to create policies.&#x20;
+A way to categorize assets. Helps you recognize or handle assets differently according to mutual properties. Assets can be filtered by their tags in the inventory or when creating policy rules. A tag can be automatically assigned to an asset, or the asset can be tagged by a policy you created. GitHub and GitLab topics are treated as asset tags, and you can use them to create policies.
 
 ### **Class**
 
@@ -83,7 +80,7 @@ You can initiate a scan from the Web UI, the CLI, the API, or with PR Checks. Se
 
 If you initiate your scans using the CLI, you might encounter one of the following situations:
 
-1. If you have a `.git` folder available in the directory that the CLI is scanning, then the `git remoteurl` is picked up automatically for Snyk Open Source, Snyk Container, and Snyk IaC.&#x20;
+1. If you have a `.git` folder available in the directory that the CLI is scanning, then the `git remoteurl` is picked up automatically for Snyk Open Source, Snyk Container, and Snyk IaC.
 
 {% hint style="info" %}
 Snyk Code does not automatically pick up the `git remoteurl`, even if the `.git` folder is available in the directory scanned by the CLI.
@@ -95,4 +92,4 @@ Snyk Code does not automatically pick up the `git remoteurl`, even if the `.git`
    * `snyk container monitor` - no options available.
    * `snyk code test` - no options available.
 
-To see the complete list of Snyk Essentials features and capabilities, see [Snyk AppRisk - Capabilities and features](snyk-apprisk.md#capabilities-and-features).
+To see the complete list of Snyk Essentials features and capabilities, see [Snyk AppRisk - Capabilities and features](broken-reference).

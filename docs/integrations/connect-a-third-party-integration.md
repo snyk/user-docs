@@ -9,7 +9,7 @@ The Loaded package risk factor is not supported by Snyk for operating system pac
 You can customize your AppRisk integrations from the **Integrations Hub** where the following integrations are available:
 
 * [Veracode SAST](connect-a-third-party-integration.md#veracode-setup-guide)
-* [Checkmarx SAST ](connect-a-third-party-integration.md#checkmarx-setup-guide)
+* [Checkmarx SAST](connect-a-third-party-integration.md#checkmarx-setup-guide)
 * [SonarQube](connect-a-third-party-integration.md#sonarqube-setup-guide)
 * [Nightfall](connect-a-third-party-integration.md#nightfall-setup-guide)
 * [GitGuardian](connect-a-third-party-integration.md#gitguardian-setup-guide)
@@ -53,8 +53,8 @@ Ensure you are adding a custom field called repoURL:
 
 ### Integration Hub setup <a href="#veracode-integration-hub-setup" id="veracode-integration-hub-setup"></a>
 
-1. Open the **Integration Hub** menu.&#x20;
-2. Select the **SAST** tag and search for Veracode.&#x20;
+1. Open the **Integration Hub** menu.
+2. Select the **SAST** tag and search for Veracode.
 3. Click the **Add** button.
 4. Add the profile name for this integration.
 5. Add the **API ID** from your Veracode account.
@@ -80,8 +80,8 @@ Snyk AppRisk does not support the Checkmarx One integration.
 
 ### Prerequisites <a href="#checkmarx-prerequisites" id="checkmarx-prerequisites"></a>
 
-* Install and configure your [Snyk Broker](../implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-apprisk.md) connection for Snyk AppRisk.&#x20;
-* Ensure you have properly used Git Setting for your Checkmarx Project. For more details, see the Checkmarx [Set project's remote source settings as GIT](https://checkmarx.stoplight.io/docs/checkmarx-sast-api-reference-guide/8312d35369b9b-set-project-s-remote-source-settings-as-git) documentation page.&#x20;
+* Install and configure your [Snyk Broker](broken-reference) connection for Snyk AppRisk.
+* Ensure you have properly used Git Setting for your Checkmarx Project. For more details, see the Checkmarx [Set project's remote source settings as GIT](https://checkmarx.stoplight.io/docs/checkmarx-sast-api-reference-guide/8312d35369b9b-set-project-s-remote-source-settings-as-git) documentation page.
 
 ### Required parameters <a href="#checkmarx-required-parameters" id="checkmarx-required-parameters"></a>
 
@@ -90,10 +90,10 @@ Snyk AppRisk does not support the Checkmarx One integration.
 
 ### Integration Hub setup <a href="#checkmarx-integration-hub-setup" id="checkmarx-integration-hub-setup"></a>
 
-After you have installed and configured Snyk Broker for AppRisk and have successfully established a connection for Checkmarx SAST, you also need to configure the integration from the Snyk AppRisk Integration Hub. &#x20;
+After you have installed and configured Snyk Broker for AppRisk and have successfully established a connection for Checkmarx SAST, you also need to configure the integration from the Snyk AppRisk Integration Hub.
 
-1. Open the **Integration Hub** menu.&#x20;
-2. Select the **SAST** tag and search for Checkmarx.&#x20;
+1. Open the **Integration Hub** menu.
+2. Select the **SAST** tag and search for Checkmarx.
 3. Click the **Add** button.
 4. Add the profile name for this integration.
 5. Add the Broker token for the Snyk AppRisk Checkmarx integration.
@@ -117,8 +117,8 @@ SonarQube for Snyk AppRisk is in Early Access and available only with Snyk Enter
 
 ### Integration Hub setup <a href="#sonarqube-integration-hub-setup" id="sonarqube-integration-hub-setup"></a>
 
-* Open the **Integration Hub** menu.&#x20;
-* Select the **SAST** tag and search for SonarQube.&#x20;
+* Open the **Integration Hub** menu.
+* Select the **SAST** tag and search for SonarQube.
 * Click the **Add** button.
 * Add the **Profile name** for this integration.
 * Add the **Host URL** for this integration.
@@ -138,12 +138,12 @@ Nightfall for Snyk AppRisk is in Early Access and available only with Snyk Enter
 
 ### Required parameters <a href="#nightfall-required-parameters" id="nightfall-required-parameters"></a>
 
-* API Key. Access the Nightfall [Creating an API Key](https://help.nightfall.ai/nightfall-firewall-for-ai/key-concepts/setting-up-nightfall/creating-api-key) documentation page for more details about how to create a Nightfall API key.&#x20;
+* API Key. Access the Nightfall [Creating an API Key](https://help.nightfall.ai/nightfall-firewall-for-ai/key-concepts/setting-up-nightfall/creating-api-key) documentation page for more details about how to create a Nightfall API key.
 
 ### Integration Hub setup <a href="#nightfall-integration-hub-setup" id="nightfall-integration-hub-setup"></a>
 
-1. Open the **Integration Hub** menu.&#x20;
-2. Select the **Secrets** tag and search for Nightfall.&#x20;
+1. Open the **Integration Hub** menu.
+2. Select the **Secrets** tag and search for Nightfall.
 3. Click the **Add** button.
 4. Add the **Profile name** for this integration.
 5. Add the **Base API URL** for this integration.
@@ -175,7 +175,7 @@ GitGuardian for Snyk AppRisk is in Early Access and available only with Snyk Ent
 
 ### Required parameters <a href="#gitguardian-required-parameters" id="gitguardian-required-parameters"></a>
 
-* API Key. Access the GitGuardian [authentication](https://docs.gitguardian.com/api-docs/authentication) documentation page for more details about how to create a GitGuardian API Key.&#x20;
+* API Key. Access the GitGuardian [authentication](https://docs.gitguardian.com/api-docs/authentication) documentation page for more details about how to create a GitGuardian API Key.
 
 When you create a GitGuardian API Key, remember that it works for both service accounts and personal access token.
 
@@ -187,8 +187,8 @@ Ensure that the following permissions are set as READ:
 
 ### Integration Hub setup <a href="#gitguardian-integration-hub-setup" id="gitguardian-integration-hub-setup"></a>
 
-1. Open the **Integration Hub** menu.&#x20;
-2. Select the **Secrets** tag and search for GitGuardian.&#x20;
+1. Open the **Integration Hub** menu.
+2. Select the **Secrets** tag and search for GitGuardian.
 3. Click the **Add** button.
 4. Add the **Profile name** for this integration.
 5. Add the **API Token** for this integration.
@@ -308,8 +308,8 @@ The created **Service Account** must be under **Sysdig Secure**, not **Sysdig Mo
 
 ### Integration Hub setup <a href="#sysdig-integration-hub-setup" id="sysdig-integration-hub-setup"></a>
 
-* Open the **Integration Hub** menu.&#x20;
-* Select the **Runtime** tag and search for Sysdig.&#x20;
+* Open the **Integration Hub** menu.
+* Select the **Runtime** tag and search for Sysdig.
 * Click the **Add** button.
 * Add the **Profile name** for this integration.
 * Add the **Account API Token**.

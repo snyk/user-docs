@@ -1,7 +1,5 @@
 # Regional hosting and data residency
 
-
-
 {% hint style="info" %}
 **Feature availability**
 
@@ -90,7 +88,7 @@ All Snyk Essentials and Snyk AppRisk features are supported in all multi-tenant 
 
 There are special considerations when you set up specific integrations in your Snyk ecosystem.
 
-* If you choose to install the Snyk Runtime Sensor using a Helm chart, you must provide the Snyk API base URL. You can find all the necessary details under step 5 of the [Using a Helm chart](../integrations/snyk-runtime-sensor.md#using-a-helm-chart) section of the Snyk Runtime Sensor documentation page.
+* If you choose to install the Snyk Runtime Sensor using a Helm chart, you must provide the Snyk API base URL. You can find all the necessary details under step 5 of the [Using a Helm chart](broken-reference) section of the Snyk Runtime Sensor documentation page.
 * If you choose to set up third-party integrations, verify whether you need to specify the base API URL of the third-party
 
 ## Regional URLs

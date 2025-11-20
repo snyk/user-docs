@@ -9,4 +9,4 @@ This section provides information about the classic Snyk Broker:
 * [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/)
 * [Snyk Broker - Infrastructure as Code detection](snyk-broker-infrastructure-as-code-detection.md)
 * [Snyk Broker - Essentials](../using-snyk-essentials-with-snyk-broker.md)
-* [Snyk Broker - AppRisk](../snyk-broker-apprisk.md)
+* [Snyk Broker - AppRisk](broken-reference)

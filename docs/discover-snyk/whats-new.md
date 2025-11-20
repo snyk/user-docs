@@ -272,7 +272,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### Snyk AppRisk
 
 * A new third-party integration, the [Google Cloud Security Command Center](../integrations/event-forwarding/google-security-command-center.md) (SCC) integration, is now available in Early Access. This integration sends Snyk issues to SCC, enabling you to view and manage Snyk issues alongside cloud security findings from Google Cloud in a single pane of glass.
-* [Snyk Runtime Sensor](../integrations/snyk-runtime-sensor.md) has been updated and now clearly separates the DaemonSet and Deployment helm installation steps.
+* [Snyk Runtime Sensor](broken-reference) has been updated and now clearly separates the DaemonSet and Deployment helm installation steps.
 
 ### Snyk Essentials
 
@@ -309,7 +309,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk AppRisk**
 
 * The [Asset Dashboard](../manage-risk/reporting/available-snyk-reports.md#asset-dashboard) has been redesigned and is included in the Reports section. It now features several enhancements, including a Global filter bar, new data widgets, and the option to export the dashboard as a PDF.
-* The [Snyk Broker - AppRisk](../implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-apprisk.md) documentation has been updated to outline the specific steps necessary to configure each SCM integration with a Snyk Broker token.
+* The [Snyk Broker - AppRisk](broken-reference) documentation has been updated to outline the specific steps necessary to configure each SCM integration with a Snyk Broker token.
 
 ### **Snyk Container**
 
@@ -375,8 +375,8 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk AppRisk**
 
 * A prerequisites section has been added to the Group level of [GitHub integration](../developer-tools/scm-integrations/organization-level-integrations/github-enterprise.md#prerequisites), and more details about the [Pull personal repositories](../developer-tools/scm-integrations/group-level-integrations/github-for-snyk-essentials.md) option have been added to the same documentation page.
-* The [Set up Insights for Snyk AppRisk ](../manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/)section was updated to emphasize the risk factors availability for each integration option.
-* The [Snyk Runtime Sensor](../integrations/snyk-runtime-sensor.md) has been updated to reflect the importance of adopting it to achieve the most effective integration and to access its continuously expanded set of features.
+* The [Set up Insights for Snyk AppRisk ](broken-reference)section was updated to emphasize the risk factors availability for each integration option.
+* The [Snyk Runtime Sensor](broken-reference) has been updated to reflect the importance of adopting it to achieve the most effective integration and to access its continuously expanded set of features.
 
 ### Snyk Broker
 
@@ -409,7 +409,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 * The **Manage Risk > Analytics** pages have been consolidated to better reflect the two Snyk offerings:
   * [Issues Analytics](../manage-risk/analytics/issues-analytics.md) - now in Early Access for Snyk Enterprise customers.
-  * [Application Analytics](../manage-risk/analytics/application-analytics.md) - available only for Snyk AppRisk customers.
+  * [Application Analytics](broken-reference) - available only for Snyk AppRisk customers.
 * The [Manage Assets](../manage-assets/manage-assets.md) documentation has been updated to reflect the addition of Quick filters. Users are only shown quick filters relevant to their entitlement.
 
 ### **Snyk CLI**
@@ -451,8 +451,8 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
   * Issues - [Prioritize issues for fixing](../manage-risk/prioritize-issues-for-fixing/#prioritization-based-on-risk) section
   * Policies - [Assets policies](../manage-risk/policies/assets-policies/) section
   * Integrations - [Snyk SCM integrations](../developer-tools/scm-integrations/group-level-integrations/) and [Integrate with Snyk](../integrations/integrate-with-snyk.md) sections
-  * Snyk AppRisk - [Scan with Snyk](../scan-with-snyk/snyk-apprisk.md) section
-  * Analytics - [Manage risk](../manage-risk/analytics/application-analytics.md) section
+  * Snyk AppRisk - [Scan with Snyk](broken-reference) section
+  * Analytics - [Manage risk](broken-reference) section
 
 ### Snyk Integrations
 

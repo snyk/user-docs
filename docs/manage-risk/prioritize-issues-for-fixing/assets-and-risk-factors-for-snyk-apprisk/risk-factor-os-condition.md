@@ -26,13 +26,13 @@ When an image is scanned by Snyk Container, the information about which operatin
 
 ## Kubernetes Connector integration
 
-The OS condition risk factor works with your [Kubernetes Connector](../set-up-insights-for-snyk-apprisk/set-up-insights-kubernetes-connector.md) integrations.&#x20;
+The OS condition risk factor works with your [Kubernetes Connector](broken-reference) integrations.
 
 The Kubernetes Connector leverages the OS condition risk factors to enhance the identification of vulnerabilities within containerized applications. It continuously checks and compares the operating systems of running containers with the known risk factors from the Snyk database. This integration helps to detect potentially vulnerable packages or images in real-time based on the operating system conditions. It allows proactive security measures within Kubernetes environments.
 
 ## Technical details for OS condition risk factor
 
-Every hour, the data pipeline takes a snapshot of all Snyk Projects and data sources and extrapolates packages and images. This snapshot determines which images and packages are known to Snyk for any customer.&#x20;
+Every hour, the data pipeline takes a snapshot of all Snyk Projects and data sources and extrapolates packages and images. This snapshot determines which images and packages are known to Snyk for any customer.
 
 Snyk Project tags are used to enable the customer to relate image assets to packages. This information is extracted from the hourly data snapshot, and a basic composition graph is generated between images and packages.
 

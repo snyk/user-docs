@@ -26,7 +26,7 @@ The following supported Snyk data are automatically synced:
 * Snyk Open Source
 * Snyk Code
 * Snyk IaC
-* Snyk Container&#x20;
+* Snyk Container
 
 Each connected integration enables you to:
 
@@ -43,29 +43,29 @@ To configure a Group-level integration, you must be a Group Admin or have a cust
 
 ### Wildcard SCM integration
 
-The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.&#x20;
+The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.
 
 {% hint style="info" %}
-The wildcard integration applies to the GitHub integration and offers support when you set it up using [Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md).&#x20;
+The wildcard integration applies to the GitHub integration and offers support when you set it up using [Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md).
 {% endhint %}
 
 You can use the wildcards while setting up your integration using the **Integrations** page:
 
-* Navigate to **Integrations**.&#x20;
-* Select the **SCM** tag and search for GitHub or Azure DevOps.&#x20;
+* Navigate to **Integrations**.
+* Select the **SCM** tag and search for GitHub or Azure DevOps.
 * Click the **Add** button.
-* In the **Organizations** field, add the Organization details by using the `*` symbol. For example, using  `*snyk` integrates all SCM Organizations that have Snyk in their name.
-* All the Organizations that match with the wildcard, `*` symbol will be added.&#x20;
+* In the **Organizations** field, add the Organization details by using the `*` symbol. For example, using `*snyk` integrates all SCM Organizations that have Snyk in their name.
+* All the Organizations that match with the wildcard, `*` symbol will be added.
 
 {% hint style="info" %}
-The wildcard, `*` symbol is considered a living command and will be applied every time you are rescanning your repositories.&#x20;
+The wildcard, `*` symbol is considered a living command and will be applied every time you are rescanning your repositories.
 {% endhint %}
 
 ### Snyk Essentials and Snyk AppRisk integrations ecosystem
 
 You can refer to the table below to verify the availability and compatibility of all integrations for Snyk Essentials and Snyk AppRisk. The integrations are categorized by type, listed by name, and indicated as available or not for both Snyk Essentials and Snyk AppRisk.
 
-<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk Essentials</th><th>Snyk AppRisk</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="../organization-level-integrations/github.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="../organization-level-integrations/bitbucket-cloud.md#bitbucket-setup-guide">BitBucket</a></li><li><a href="../organization-level-integrations/github.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="../organization-level-integrations/azure-repositories-tfs.md#azure-devops-setup-guide">Azure DevOps</a></li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                   <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="../application-context-for-scm-integrations/">Backstage catalog</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#servicenow-cmdb-setup-guide">ServiceNow CMDB</a></li><li><a href="../application-context-for-scm-integrations/#atlassian-compass">Atlassian Compass</a></li><li><a href="../application-context-for-scm-integrations/#harness">Harness</a></li><li><a href="../application-context-for-scm-integrations/#opslevel">OpsLevel</a></li><li><a href="../application-context-for-scm-integrations/#datadog-org-context-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="../../../integrations/connect-a-third-party-integration.md#jira-setup-guide">Jira</a></li><li><a href="../../../integrations/jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                    <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="../../../integrations/connect-a-third-party-integration.md#nightfall-setup-guide">NightFall</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Runtime security and observability</td><td><ul><li><a href="../../../integrations/snyk-runtime-sensor.md">Snyk runtime sensor</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#sysdig-setup-guide">Sysdig</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
+<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk Essentials</th><th>Snyk AppRisk</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="../organization-level-integrations/github.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="../organization-level-integrations/bitbucket-cloud.md#bitbucket-setup-guide">BitBucket</a></li><li><a href="../organization-level-integrations/github.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="../organization-level-integrations/azure-repositories-tfs.md#azure-devops-setup-guide">Azure DevOps</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="../application-context-for-scm-integrations/">Backstage catalog</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#servicenow-cmdb-setup-guide">ServiceNow CMDB</a></li><li><a href="../application-context-for-scm-integrations/#atlassian-compass">Atlassian Compass</a></li><li><a href="../application-context-for-scm-integrations/#harness">Harness</a></li><li><a href="../application-context-for-scm-integrations/#opslevel">OpsLevel</a></li><li><a href="../application-context-for-scm-integrations/#datadog-org-context-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="../../../integrations/connect-a-third-party-integration.md#jira-setup-guide">Jira</a></li><li><a href="../../../integrations/jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="../../../integrations/connect-a-third-party-integration.md#nightfall-setup-guide">NightFall</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Runtime security and observability</td><td><ul><li><a href="broken-reference">Snyk runtime sensor</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#sysdig-setup-guide">Sysdig</a></li><li><a href="../../../integrations/connect-a-third-party-integration.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
 
 ### Using the Integrations page
 

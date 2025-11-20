@@ -7,8 +7,8 @@ To manage and govern the security program, Snyk gives security teams immediate v
 * Snyk Open Source and Snyk Code: see [Supported languages, package managers, and frameworks](../supported-languages/supported-languages-package-managers-and-frameworks.md).
 * Snyk Container: see [Supported operating system distributions](../scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md).
 * Snyk Infrastructure as Code: see [Supported IaC and cloud providers](../scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/).
-* Snyk Essentials: see [Snyk Essentials](../scan-with-snyk/snyk-essentials.md)&#x20;
-* Snyk AppRisk: see [Snyk AppRisk](../scan-with-snyk/snyk-apprisk.md).
+* Snyk Essentials: see [Snyk Essentials](../scan-with-snyk/snyk-essentials.md)
+* Snyk AppRisk: see [Snyk AppRisk](broken-reference).
 * Snyk API & Web: see [Snyk API & Web](https://snyk.io/product/dast-api-web/).
 
 ## The Snyk developer-first approach
