@@ -1131,8 +1131,8 @@
         }
       },
       "PackageUrl": {
-        "description": "A URI-encoded Package URL (purl). Supported purl types are apk, cargo, cocoapods, composer, conan, deb, gem, generic, golang, hex, maven, npm, nuget, pub, pypi, rpm, and swift. A version for the package is also required.",
-        "example": "pkg:maven/com.fasterxml.woodstox/woodstox-core@5.0.0",
+        "description": "A URI-encoded Package URL (purl). Supported purl types are apk, cargo, cocoapods, composer, conan, deb, gem, generic, golang, hex, maven, npm, nuget, pub, pypi, rpm, and swift. A version for the package is also required. Maven packages support an optional checksum qualifier to request checksum validation. When provided, the response will include checksum validation metadata indicating whether the package and checksum match records in Snyk's database. Checksum format: `algorithm:hex_value` (lowercase), for example `sha1:ad9503c3e994a4f611a4892f2e67ac82df727086`. Only one checksum is supported per request. Supported algorithms: md5, sha1, sha256, sha512.",
+        "example": "pkg:maven/com.fasterxml.woodstox/woodstox-core@5.0.0?checksum=sha1:ad9503c3e994a4f611a4892f2e67ac82df727086",
         "in": "path",
         "name": "purl",
         "required": true,
@@ -5364,6 +5364,73 @@
           "checkmarx",
           "checkmarx_password",
           "checkmarx_username"
+        ],
+        "type": "object"
+      },
+      "ChecksumValidationMeta": {
+        "description": "Metadata about checksum validation when a checksum qualifier is provided in the PURL",
+        "properties": {
+          "description": {
+            "description": "Human-readable explanation of the validation result",
+            "example": "Package and checksum both match",
+            "type": "string"
+          },
+          "details": {
+            "properties": {
+              "checksum": {
+                "description": "Whether the checksum matched (null if no checksum validation was requested)",
+                "example": true,
+                "nullable": true,
+                "type": "boolean"
+              },
+              "name_version": {
+                "description": "Whether the package name and version were found",
+                "example": true,
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "name_version",
+              "checksum"
+            ],
+            "type": "object"
+          },
+          "input": {
+            "properties": {
+              "checksum": {
+                "description": "The checksum value provided (null if none)",
+                "example": "sha1:abc123",
+                "nullable": true,
+                "type": "string"
+              },
+              "purl": {
+                "description": "The original PURL provided",
+                "example": "pkg:maven/com.example/my-package@1.0.0?checksum=sha1:abc123",
+                "type": "string"
+              }
+            },
+            "required": [
+              "purl",
+              "checksum"
+            ],
+            "type": "object"
+          },
+          "type": {
+            "description": "The type of match found: - `full`: Both package ID and checksum match - `partial`: Only one of package ID or checksum matches - `none`: Neither package ID nor checksum found",
+            "enum": [
+              "none",
+              "partial",
+              "full"
+            ],
+            "example": "full",
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "details",
+          "description",
+          "input"
         ],
         "type": "object"
       },
@@ -13239,6 +13306,9 @@
       },
       "IssuesMeta": {
         "properties": {
+          "match": {
+            "$ref": "#/components/schemas/ChecksumValidationMeta"
+          },
           "package": {
             "$ref": "#/components/schemas/PackageMeta__0"
           }
@@ -13246,6 +13316,7 @@
         "type": "object"
       },
       "IssuesResponse": {
+        "additionalProperties": false,
         "properties": {
           "data": {
             "items": {
@@ -13266,6 +13337,7 @@
         "type": "object"
       },
       "IssuesWithPurlsResponse": {
+        "additionalProperties": false,
         "properties": {
           "data": {
             "items": {
@@ -13280,15 +13352,7 @@
             "$ref": "#/components/schemas/PaginatedLinks"
           },
           "meta": {
-            "properties": {
-              "errors": {
-                "items": {
-                  "$ref": "#/components/schemas/Error"
-                },
-                "type": "array"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/PurlIssuesMeta"
           }
         },
         "type": "object"
@@ -16884,6 +16948,35 @@
         "example": "https://api.snyk.io/rest/groups/7626925e-4b0f-11ee-be56-0242ac120002/pull_request_template",
         "format": "uri",
         "type": "string"
+      },
+      "PurlIssuesMeta": {
+        "properties": {
+          "errors": {
+            "items": {
+              "$ref": "#/components/schemas/Error"
+            },
+            "type": "array"
+          },
+          "packages": {
+            "additionalProperties": {
+              "properties": {
+                "match": {
+                  "$ref": "#/components/schemas/ChecksumValidationMeta"
+                },
+                "package": {
+                  "$ref": "#/components/schemas/PackageMeta__0"
+                }
+              },
+              "required": [
+                "package"
+              ],
+              "type": "object"
+            },
+            "description": "Package metadata and checksum validation results, keyed by PURL.\nKeys must be valid Package URLs (e.g., \"pkg:maven/com.example/foo@1.0.0\").\n",
+            "type": "object"
+          }
+        },
+        "type": "object"
       },
       "QuayCrAttributes": {
         "properties": {
@@ -40106,18 +40199,19 @@
           "2023-03-29~beta",
           "2023-04-17",
           "2023-08-21",
-          "2024-06-26"
+          "2024-06-26",
+          "2025-11-05"
         ],
         "x-snyk-api-resource": "issues",
         "x-snyk-api-stability": "ga",
-        "x-snyk-api-version": "2024-06-26",
+        "x-snyk-api-version": "2025-11-05",
         "x-stability-level": "stable"
       }
     },
     "/orgs/{org_id}/packages/{purl}/issues": {
       "get": {
-        "description": "Query issues for a specific package version identified by Package URL (purl). Snyk returns only direct vulnerabilities. Transitive vulnerabilities (from dependencies) are not returned because they can vary depending on context.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
-        "operationId": "fetchIssuesPerPurl",
+        "description": "Query issues for a specific package version identified by Package URL (purl). Snyk returns only direct vulnerabilities. Transitive vulnerabilities (from dependencies) are not returned because they can vary depending on context. For Maven packages, you can optionally include a checksum qualifier in the PURL to request checksum validation. The response will include metadata indicating whether the provided checksum matches Snyk's records. Vulnerabilities are always returned regardless of checksum match status; the validation metadata allows clients to interpret results appropriately.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getIssuesPerPurl",
         "parameters": [
           {
             "$ref": "#/components/parameters/Version"
@@ -40140,7 +40234,8 @@
             "in": "query",
             "name": "offset",
             "schema": {
-              "type": "number"
+              "minimum": 0,
+              "type": "integer"
             }
           },
           {
@@ -40148,7 +40243,9 @@
             "in": "query",
             "name": "limit",
             "schema": {
-              "type": "number"
+              "maximum": 1000,
+              "minimum": 1,
+              "type": "integer"
             }
           }
         ],
@@ -40210,11 +40307,12 @@
         "x-snyk-api-releases": [
           "2022-06-29~beta",
           "2022-09-15",
-          "2024-06-26"
+          "2024-06-26",
+          "2025-11-05"
         ],
         "x-snyk-api-resource": "issues",
         "x-snyk-api-stability": "ga",
-        "x-snyk-api-version": "2024-06-26",
+        "x-snyk-api-version": "2025-11-05",
         "x-stability-level": "stable"
       }
     },
