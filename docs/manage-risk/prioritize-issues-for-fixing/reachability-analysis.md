@@ -12,7 +12,7 @@ Reachability analysis can be used as an indicator to make decisions, or as part 
 
 Snyk uses a combination of static program analysis and various AI techniques to determine the reachability of a given vulnerability, with validation conducted by security research experts. These capabilities enable Snyk to quickly analyze the code without requiring the application to be built prior to the scan.
 
-To use this feature, Snyk must analyze your source code. To learn more, visit [How Snyk handles your data](../../snyk-data-and-governance/how-snyk-handles-your-data.md).&#x20;
+To use this feature, Snyk must analyze your source code. To learn more, visit [How Snyk handles your data](../../snyk-data-and-governance/how-snyk-handles-your-data.md).
 
 ## How reachable vulnerability analysis works
 
@@ -133,10 +133,10 @@ You can enable and disable reachability for all Organizations in a Group, overri
 ### Enable reachability for Snyk CLI and CI/CD integrations
 
 {% hint style="info" %}
-Reachability analysis for Snyk CLI and CI/CD integrations is in Early Access.&#x20;
+Reachability analysis for Snyk CLI and CI/CD integrations is in Early Access.
 {% endhint %}
 
-Snyk supports performing reachability analysis through the CLI and CI/CD integrations. When **Reachability analysis for Snyk CLI and CI/CD integrations** is enabled, the Snyk Preview toggle is on by default, for all Groups and Organizations. &#x20;
+Snyk supports performing reachability analysis through the CLI and CI/CD integrations. When **Reachability analysis for Snyk CLI and CI/CD integrations** is enabled, the Snyk Preview toggle is on by default, for all Groups and Organizations.
 
 To enable or disable **Reachability in the Snyk CLI and CI/CD integrations** for a Group or Org:
 
@@ -156,10 +156,10 @@ After it is identified, a vulnerability has one of the following reachability st
 
 * `REACHABLE` - A direct or indirect path was found from your application to the vulnerable code.
 * `NO PATH FOUND` - No path found from your application to the vulnerable code.
-* `NOT APPLICABLE` - Reachability is not supported for this vulnerability.&#x20;
+* `NOT APPLICABLE` - Reachability is not supported for this vulnerability.
 
 {% hint style="info" %}
-A vulnerability with the status  `NO PATH FOUND`  it does not mean that the vulnerability is completely unreachable or unexploitable.
+A vulnerability with the status `NO PATH FOUND` it does not mean that the vulnerability is completely unreachable or unexploitable.
 {% endhint %}
 
 Reachability analysis status is available on the Project page, as part of the Risk Score, in the [Issues Detail report](../reporting/available-snyk-reports.md#issues-detail-report), and through the API endpoint [Get issues by Group ID](../../snyk-api/reference/issues.md#groups-group_id-issues).
@@ -188,21 +188,21 @@ Risk Score is available on the Projects page and through the API and Reports.
 
 ## Using reachability analysis with Snyk CLI
 
-Snyk supports Reachability CLI version `1.1301.0` and greater. To perform Reachability analysis, use the `--reachability=true` option.&#x20;
+Snyk supports Reachability CLI version `1.1301.0` and greater. To perform Reachability analysis, use the `--reachability=true` option.
 
 {% hint style="info" %}
-When using `--reachability`, Snyk returns a new findings schema. Some legacy fields may not be available in this schema. Before using, please first check your usage to ensure automations do not fail.&#x20;
+When using `--reachability`, Snyk returns a new findings schema. Some legacy fields may not be available in this schema. Before using, please first check your usage to ensure automations do not fail.
 {% endhint %}
 
 By default, Snyk uploads source code from the current working directory for Reachability analysis. To specify source files for analysis in a separate directory, use the `--source-dir` option.
 
-To filter findings on Reachability, use the `--reachability-filter=reachable` option.&#x20;
+To filter findings on Reachability, use the `--reachability-filter=reachable` option.
 
 For a full list of supported options, see the CLI help docs for `test`, `monitor`, and `sbom test` CLI commands.
 
 ### Human-readable output
 
-By default, findings will be returned in human-readable output with **Reachability** as a property of each finding.&#x20;
+By default, findings will be returned in human-readable output with **Reachability** as a property of each finding.
 
 <figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
@@ -440,6 +440,6 @@ To print the findings in JSON, use the `--json` option. `reachability` is a prop
 Using Reachability will perform an upload of source code files to Snyk for analysis. The following technical limitations exist:
 
 * **Total number of files:** 300,000 files
-* **Total size of files:** 3GB&#x20;
-* **Total size per file:** 50MB
+* **Total size of files:** 3GB
+* **Total size per file:** 1MB. See the [Technical specifications and guidance](https://docs.snyk.io/supported-languages/technical-specifications-and-guidance#file-size-limit-for-snyk-code-analysis) for more details.&#x20;
 * **File name length:** 256 characters
