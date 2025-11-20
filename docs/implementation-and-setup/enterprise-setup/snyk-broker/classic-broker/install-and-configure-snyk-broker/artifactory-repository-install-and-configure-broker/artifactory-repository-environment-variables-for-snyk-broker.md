@@ -11,9 +11,9 @@ The following environment variables are needed to customize the Broker Client fo
 The following fields are optional:
 
 * `Port`: Omit if no port number is needed.
-* _`Basic auth`_: Omit if no basic auth required.\
+* `Basic auth`: Omit if no basic auth required.\
   URL encode both username and password info to avoid errors that may prevent authentication.
-* _Protocol_: Defaults to https://\
+* `Protocol`: Defaults to `https://`\
   This should only be specified when no certificate is present and `http://` is required instead for your instance.
 
 `ARTIFACTORY_URL` format with optional fields:\

@@ -8,9 +8,9 @@ Sometimes the webhook cannot communicate directly with Snyk because the infrastr
 
 The same webhook mechanism is used to facilitate communication when Snyk creates a pull request, for example, when you see an issue in the Snyk interface and use the button to fix the vulnerability.
 
-When you set up a connection, the webhook target endpoint is defined by the value of the `broker_client_url` value. The webhook can point directly to Snyk or to the Broker client container, which will relay the webhook to Snyk.&#x20;
+When you set up a connection, the webhook target endpoint is defined by the value of the `broker_client_url` value. The webhook can point directly to Snyk or to the Broker client container, which will relay the webhook to Snyk.
 
-Normally, and by default for SCM integrations, the regional Snyk API endpoint is used. For the list of URLs, see [Broker client URLs](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls). Sometimes, however, your environment may prohibit SCM webhooks from leaving the private cloud or data center. In that case, the webhook and thus the SCM must point to the Snyk Broker container running in your environment. In these cases, the`broker_client_url` has to reflect the hostname and port of the Broker client.&#x20;
+By default, SCM integrations use the regional Snyk API endpoint. For the list of URLs, see [Broker client URLs](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls). Sometimes, however, your environment may prohibit SCM webhooks from leaving the private cloud or data center. In that case, the webhook and thus the SCM must point to the Snyk Broker container running in your environment. In these cases, the`broker_client_url` has to reflect the hostname and port of the Broker client.
 
 Non-SCM integrations, notably the container registries integrations, require the Broker client URL to be the Broker client address. Snyk recommends using a DNS host name, such as `http://my.broker.client`, but you can also use IP addresses (`http://192.168.0.1`). Ensure to append the port, for example, `http://my.broker.client:8000`.
 

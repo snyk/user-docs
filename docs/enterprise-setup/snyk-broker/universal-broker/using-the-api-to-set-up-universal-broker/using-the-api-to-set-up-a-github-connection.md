@@ -12,7 +12,7 @@ In any of the calls that follow, replace `api.snyk.io` with your regional equiva
 
 The Universal Broker App facilitates the secure connection and communication with the Broker server through OAuth.
 
-Install the Broker app at the Organization level. Group-level installation is not supported. Use the endpoint [Install a Snyk App to this Organization](../../../../snyk-api/reference/apps.md#post-orgs-org_id-apps-installs).  Use the Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
+Install the Broker app at the Organization level. Group-level installation is not supported. Use the endpoint [Install a Snyk App to this Organization](../../../../snyk-api/reference/apps.md#post-orgs-org_id-apps-installs). Use the Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
 
 ## Create your deployment <a href="#id-2-create-your-deployment" id="id-2-create-your-deployment"></a>
 
@@ -190,15 +190,14 @@ This returns a Connection ID (data.id), as shown in the example. Note that this 
 If your credential reference is missing, you will get the following message:
 
 <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>{"name":"snyk-broker","hostname":"029cda64bd98","pid":1,"level":50,"connection":"my github connection","msg":"Connection is missing environment variable value MY_GITHUB_TOKEN. Connection is disabled till value is provided. Restart broker once added.","time":"2024-06-18T14:29:06.910Z","v":0}
-
 {"name":"my github connection","hostname":"029cda64bd98","pid":1,"level":50,"id":"12345678-1234-1234-1234-123456789012","msg":"Connection is disabled due to (a) missing environment variable(s). Please provide the value and restart the broker client.","time":"2024-06-18T14:29:06.911Z","v":0}
 </code></pre></td></tr></tbody></table>
 
-When you update an envrionment variable you must restart your Broker. See [Restart your Broker for a new environment variable](../../../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/restart-your-broker-for-a-new-environment-variable.md).
+When you update an environment variable you must restart your Broker. See [Restart your Broker for a new environment variable](../../../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/restart-your-broker-for-a-new-environment-variable.md).
 
 You can now use the connection in an Organization integration.
 
-## &#x20;Connect your Organization integration to use a connection <a href="#id-5-connect-your-org-integration-to-use-a-connection" id="id-5-connect-your-org-integration-to-use-a-connection"></a>
+## Connect your Organization integration to use a connection <a href="#id-5-connect-your-org-integration-to-use-a-connection" id="id-5-connect-your-org-integration-to-use-a-connection"></a>
 
 <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/connections/CONNECTION_ID/orgs/ORG_ID/integration?version=2024-02-08~experimental' \
 --header 'Content-Type: application/vnd.api+json' \

@@ -1,14 +1,14 @@
 # Disconnect and clean up
 
-The `snyk-broker-config workflows <RESOURCE> delete` commands allow you to remove resources.&#x20;
+The `snyk-broker-config workflows <RESOURCE> delete` command allows you to remove resources.
 
 Protections are in place to prevent invalid connection states, so you cannot delete connections that are integrated, and therefore relied upon, by Organizations. You must disconnect the integration before deleting the connection.
 
-`snyk-broker-config workflows connections delete` walks you through the disconnection steps.
+The `snyk-broker-config workflows connections delete` command walks you through the disconnection steps.
 
 For all resources, you must delete the child items before you can delete a parent, as illustrated in the diagram that follows. A deployment contains connections and credentials references. Connections use credentials references. Each connection may have an integration with one or more Organizations.
 
-`snyk-broker-config` commands walk you through this flow and indicate what needs to be done to achieve successful deletion. These commands implement and enforce the following rules:
+The `snyk-broker-config introduction` command walk you through this flow and indicates what needs to be done to achieve successful deletion. These commands implement and enforce the following rules:
 
 * Before you delete a connection, you must disconnect all integrations.
 * Before you delete a credentials reference, you must delete the connection(s) using it.
@@ -22,7 +22,7 @@ To remove an integration, run `snyk-broker-config workflows connections disconne
 
 Enter the Organization ID for the Organization from which to disconnect the connection.
 
-## Delete  a connection
+## Delete a connection
 
 Run `snyk-broker-config workflows connections delete`.
 
@@ -33,7 +33,7 @@ In response to the prompt, type Y and press Enter if you want to disconnect all 
 ```
 Universal Broker - Delete Connection Workflow
 ✓ Valid Snyk Token.
-✓ Tenant Adnmim role confirms.
+✓ Tenant Admin role confirms.
 Now using Tenant ID of <returned number>.
 Now using Deployment <returned number>.
    Which Connection do you want to use? <number entered>
@@ -43,7 +43,7 @@ Do you want to disconnect them all? (Y/N)
 
 ## Disconnect integrations
 
-To delete multiple integrations, run s`nyk-broker-config workflows connections disconnect`.
+To delete multiple integrations, run `snyk-broker-config workflows connections disconnect`.
 
 Enter the connection from which to disconnect.
 
@@ -58,9 +58,8 @@ Now using Deployment <number returned>.
 Which Connection do you want to use <number entered>
 Selected Connection ID <number entered>. Ready to disconnect integrations using 
 this connection.
-Select (Press <backspace> to remove option) {Type: github] in <Organization ID returned>
-[✓ ] Type github in <Organization ID returned> integr <number returned>)
-[    ] Type github in <Organization ID returned>? integr <number returned>)
+Select (Press <backspace> to remove option) [Type: github] in <Organization ID returned>
+[✓] Type github in <Organization ID returned> (integration <Integration ID returned>)
 ```
 
 ## Delete credentials references
