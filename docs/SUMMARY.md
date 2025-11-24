@@ -293,7 +293,6 @@
   * [Snyk Studio and Secure at Inception](integrations/snyk-studio-agentic-integrations/snyk-studio-and-secure-at-inception.md)
   * [Troubleshooting](integrations/developer-guardrails-for-agentic-workflows/troubleshooting-for-the-snyk-mcp-server.md)
   * [Usage analytics](integrations/developer-guardrails-for-agentic-workflows/usage-analytics.md)
-* [Third-party integrations for Snyk AppRisk](integrations/connect-a-third-party-integration.md)
 * [Jira and Slack integrations](integrations/jira-and-slack-integrations/README.md)
   * [Snyk Security in Jira Cloud integration](integrations/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md)
   * [Jira integration](integrations/jira-and-slack-integrations/jira-integration.md)
