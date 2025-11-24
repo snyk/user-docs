@@ -25,7 +25,7 @@ For a full list of supported CLI environment variables, see [Environment variabl
 
 ## Starting the Snyk MCP server
 
-Check our Quickstart guides for MCP. If you don’t find a guide for your specific AI agent or IDE, you can use to the following sample configuration snippet:
+Check our Quickstart guides for MCP. If you don’t find a guide for your specific AI agent or IDE, you can use the following sample configuration snippet:
 
 ```
 {
