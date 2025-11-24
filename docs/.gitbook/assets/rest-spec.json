@@ -19428,7 +19428,6 @@
           }
         },
         "required": [
-          "subject",
           "created_at",
           "state"
         ],
@@ -19497,9 +19496,6 @@
             "type": "array"
           }
         },
-        "required": [
-          "subject"
-        ],
         "type": "object"
       },
       "TestConfiguration": {
