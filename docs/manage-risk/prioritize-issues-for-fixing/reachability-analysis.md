@@ -172,7 +172,7 @@ After you import or test a Project using the Snyk Web UI, Snyk monitors the Proj
 * Reachability badge - Allows you to quickly see on the issue card when a vulnerability is reachable.
 * Call path - Allows you to see the path from your code to the vulnerable code element to validate the result.
 
-<figure><img src="broken-reference" alt="Reachability filters, badge and call path on the Projects UI"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (91) (1).png" alt="Reachability filters, badge and call path on the Projects UI"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
 
 ### Reachability analysis as part of the Risk Score
 

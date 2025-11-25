@@ -12,7 +12,7 @@ The goal of the engagement report is to provide insights into your security educ
 
 Read more about this report [here](../../../manage-risk/reporting/available-snyk-reports.md#learn-engagement).
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-29 at 19.30.57 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Learning Impact & Opportunities Report
 

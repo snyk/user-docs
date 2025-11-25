@@ -17,15 +17,15 @@ Start by logging into the Google Workspace [admin area](https://admin.google.com
     <figure><img src="../../../../.gitbook/assets/3 (3).png" alt="Name the SAML app"><figcaption><p>Name the SAML app</p></figcaption></figure>
 4.  Download the certificate and open it in your preferred text editor.
 
-    <figure><img src="broken-reference" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/4 (3).png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
 5.  Navigate to the Snyk portal, login and from the drop down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
 
-    <figure><img src="broken-reference" alt="Open group view in Snyk"><figcaption><p>Open group view in Snyk</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1 (5).png" alt="Open group view in Snyk"><figcaption><p>Open group view in Snyk</p></figcaption></figure>
 6.  Click on **SSO**, scroll down to step 2, and paste the Google SSO URL from step 4 into **Sign in URL** and the certificate in your text editor into **X509 signing certificate**.\
     Add the domain name(s) you are configuring this connection for in **Email domains and subdomains that need SSO access**.\
     Verify if an **IdP-initiated workflow** should be enabled and then save your modifications
 
-    <figure><img src="broken-reference" alt="Enter details from Google Workspace"><figcaption><p>Enter details from Google Workspace</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/6 (2).png" alt="Enter details from Google Workspace"><figcaption><p>Enter details from Google Workspace</p></figcaption></figure>
 7.  Scroll up to step 1 and copy the **Entity ID** and **ACS URL**.
 
     <figure><img src="../../../../.gitbook/assets/7.png" alt="Copy details from Snyk"><figcaption><p>Copy details from Snyk</p></figcaption></figure>
@@ -34,7 +34,7 @@ Start by logging into the Google Workspace [admin area](https://admin.google.com
     <figure><img src="../../../../.gitbook/assets/8.png" alt="Enter details from Snyk in Google"><figcaption><p>Enter details from Snyk in Google</p></figcaption></figure>
 9.  Click **Continue**, add an app attribute named email tied to the **Primary Email**, and save the configuration.
 
-    <figure><img src="broken-reference" alt="Add email attribute"><figcaption><p>Add email attribute</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/9 (2).png" alt="Add email attribute"><figcaption><p>Add email attribute</p></figcaption></figure>
 10. Enable access to your app for your users by clicking **User Access**, tick **On for everyone**, and **Save**. Modify organizational access as needed.
 
     <figure><img src="../../../../.gitbook/assets/10 (1).png" alt="Enable SSO app for the organization"><figcaption><p>Enable SSO app for the organization</p></figcaption></figure>

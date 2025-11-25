@@ -56,7 +56,7 @@ An example follows of a PR check on a JavaScript package license.
 
 This example shows a pull request to add the `fullpage.js` package to a JavaScript application. Although this change passes the security policy check, because the latest version of the package has no known vulnerability, it fails the license policy check because the GPLv3 license is included in violation of the license policy of the company.
 
-<figure><img src="broken-reference" alt="PR Check fails on license compliance"><figcaption><p>PR Check fails on license compliance</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (76) (1).png" alt="PR Check fails on license compliance"><figcaption><p>PR Check fails on license compliance</p></figcaption></figure>
 
 ## Apply policies in CI/CD
 
