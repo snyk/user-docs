@@ -20,13 +20,13 @@ Select the **Issues** page to see detailed information on open issues across all
 
 To view IaC issues only, select **Configuration** from the **Issue filters** drop-down.
 
-<figure><img src="broken-reference" alt="IaC issues page"><figcaption><p>IaC issues page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image3 (1).png" alt="IaC issues page"><figcaption><p>IaC issues page</p></figcaption></figure>
 
 This shows the title of each issue, the type, and the severity.
 
 You can also view the issues ungrouped; this shows more information about the Project file where the issue is found, and details on when it was first introduced:
 
-![](broken-reference)
+![](<../../.gitbook/assets/image2-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5) (1).png>)
 
 For more details on the issues tab, see [Issues tab](../../manage-risk/reporting/legacy-reports/legacy-reports-issues-tab.md) documentation.
 

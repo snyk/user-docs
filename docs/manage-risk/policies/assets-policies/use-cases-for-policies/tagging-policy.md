@@ -12,4 +12,4 @@ The following use case demonstrates how to apply the custom-defined `backend` la
 
 This is how the policy should look after you finish setting up all filters and actions.
 
-<figure><img src="broken-reference" alt=""><figcaption><p>Assets Policy - Labeling backend repositories</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/set asset label new (1).png" alt=""><figcaption><p>Assets Policy - Labeling backend repositories</p></figcaption></figure>

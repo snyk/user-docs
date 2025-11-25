@@ -8,7 +8,7 @@ Use attributes to group, prioritize, and filter Projects. Use attributes such as
 
 On the **Projects** listing, use **Group by none** (ungrouped) for optimal Project visibility and to apply [tags](project-tags.md) and filtering attributes at the Project level.
 
-<figure><img src="broken-reference" alt="Project level filtering attributes"><figcaption><p>Project level filtering attributes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46 (1).png" alt="Project level filtering attributes"><figcaption><p>Project level filtering attributes</p></figcaption></figure>
 
 The available Project attributes are summarized in the following table.
 

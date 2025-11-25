@@ -70,7 +70,7 @@ The **New Assignments** page opens, which allows you to create assignments for S
 
 1. Verify that the selected Organization is correct.
 
-<figure><img src="broken-reference" alt=""><figcaption><p>Select an Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (247) (1).png" alt=""><figcaption><p>Select an Organization</p></figcaption></figure>
 
 2. Select users
 
