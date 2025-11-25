@@ -34,7 +34,7 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
     <figure><img src="../../../../.gitbook/assets/Screenshot 2023-09-05 at 11.01.53 AM.png" alt="Enter the Ping Identity details"><figcaption><p>Enter the Ping Identity details</p></figcaption></figure>
 10. In Ping Identity, select **Attribute mappings** and click the pencil to edit.
 
-    <figure><img src="broken-reference" alt="Edit attribue mappings"><figcaption><p>Edit attribue mappings</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/6 (4) (1).png" alt="Edit attribue mappings"><figcaption><p>Edit attribue mappings</p></figcaption></figure>
 11. Click the cog icon and add the following attributes:
 
     **email**: Email Address\
@@ -43,7 +43,7 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 
     <figure><img src="../../../../.gitbook/assets/7 (2).png" alt="Add attribute mappings"><figcaption><p>Add attribute mappings</p></figcaption></figure>
 
-    <figure><img src="broken-reference" alt="Add an advanced expression for the name attribute"><figcaption><p>Add an advanced expression for the name attribute</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/8 (3) (1).png" alt="Add an advanced expression for the name attribute"><figcaption><p>Add an advanced expression for the name attribute</p></figcaption></figure>
 12. In the Snyk portal, decide how new users should be treated when signing in and choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**.
 13. Change the profile attributes to the attribute names you entered in Ping Identity then click **Save changes.**\\
 

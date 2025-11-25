@@ -484,7 +484,7 @@ The report allows you to track:
 
 The first section of the report focuses on showing key engagement statistics and the progress of any assignments. Tool tips provide more details on the definitions of the metrics.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.30.57 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Adoption rankings
 
@@ -532,7 +532,7 @@ The "Learning Impact on Issue Resolution" chart measures the relationship betwee
 
 The "Learning Impact on Issue Prevention" chart measures the relationship between lesson completion and the prevention code security issues. Introduced issues are counted when a related lesson was completed within the selected period. Issues introduced on the day a Project was imported are not counted. Use the filters to drill into specific lessons or CWE categories.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-10-23 at 15.00.57 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Top 10 CWEs - open issues / issues introduced in the period
 
@@ -540,7 +540,7 @@ This section of the report shows recommendation for training for your top open c
 
 You will see coverage for all users within organisation scope of the report filters. This shows you how many people have ever completed a related Snyk Learn lesson on the topic.
 
-<div><figure><img src="broken-reference" alt=""><figcaption></figcaption></figure> <figure><img src="broken-reference" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/Screenshot 2025-10-23 at 14.12.24 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-10-23 at 14.12.18 (1).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 The recommendations in this section allow you to focus on the most impactful training opportunities. Use the filters to further customise the recommendations based on issue severity or for specific Organizations.
