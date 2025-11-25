@@ -144,7 +144,7 @@ To enable or disable **Reachability in the Snyk CLI and CI/CD integrations** for
 2. Under **Reachability for Snyk CLI and CI/CD integrations**, toggle **Enable Reachability for Snyk CLI and CI/CD integrations** on or off.
 3. Confirm the selection to save changes.
 
-<figure><img src="../../.gitbook/assets/image (45).png" alt="Enable Reachability for Snyk CLI and CI/CD integrations in Snyk Preview"><figcaption><p>Enable Reachability for Snyk CLI and CI/CD integrations in Snyk Preview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45) (1).png" alt="Enable Reachability for Snyk CLI and CI/CD integrations in Snyk Preview"><figcaption><p>Enable Reachability for Snyk CLI and CI/CD integrations in Snyk Preview</p></figcaption></figure>
 
 ### **Enable reachability** analysis **for brokered connections**
 
@@ -172,7 +172,7 @@ After you import or test a Project using the Snyk Web UI, Snyk monitors the Proj
 * Reachability badge - Allows you to quickly see on the issue card when a vulnerability is reachable.
 * Call path - Allows you to see the path from your code to the vulnerable code element to validate the result.
 
-<figure><img src="../../.gitbook/assets/image (91) (1).png" alt="Reachability filters, badge and call path on the Projects UI"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
+<figure><img src="broken-reference" alt="Reachability filters, badge and call path on the Projects UI"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
 
 ### Reachability analysis as part of the Risk Score
 
@@ -441,5 +441,5 @@ Using Reachability will perform an upload of source code files to Snyk for analy
 
 * **Total number of files:** 300,000 files
 * **Total size of files:** 3GB
-* **Total size per file:** 1MB. See the [Technical specifications and guidance](https://docs.snyk.io/supported-languages/technical-specifications-and-guidance#file-size-limit-for-snyk-code-analysis) for more details.&#x20;
+* **Total size per file:** 1MB. See the [Technical specifications and guidance](https://docs.snyk.io/supported-languages/technical-specifications-and-guidance#file-size-limit-for-snyk-code-analysis) for more details.
 * **File name length:** 256 characters

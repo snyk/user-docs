@@ -32,7 +32,7 @@ If the Project is imported from a registry integration, on the **Projects** page
 
 When you open a container Project, the analysis and fix advice appear for that Project.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt="Project page displaying analysis and fix advice for a container Project"><figcaption><p>Analysis and fix advice for a container Project</p></figcaption></figure>
+<figure><img src="broken-reference" alt="Project page displaying analysis and fix advice for a container Project"><figcaption><p>Analysis and fix advice for a container Project</p></figcaption></figure>
 
 The following information is displayed:
 
@@ -77,4 +77,4 @@ Recommendations for upgrading the base image include:
 * The number of vulnerabilities that exist in the recommended upgrade
 * A summary of the vulnerability severities.
 
-<figure><img src="../../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
+<figure><img src="broken-reference" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>

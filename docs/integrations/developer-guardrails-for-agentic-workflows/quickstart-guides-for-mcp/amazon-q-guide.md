@@ -20,9 +20,9 @@ Using the AmazonQ extension UI in your chosen IDE:
 
 1. Add a new MCP Server
 2. Provide the following values in the specified fields:
-   1. Command: `npx`&#x20;
-   2. Arguments: `-y snyk@latest mcp -t stdio -o=ostemp`&#x20;
-   3. Timeout: `0`&#x20;
+   1. Command: `npx`
+   2. Arguments: `-y snyk@latest mcp -t stdio -o=ostemp`
+   3. Timeout: `0`
 
 The `-o` option instructs the MCP server to write the scan results to a file. To direct the results to a specific folder, provide an absolute path instead of using `ostemp`. For example, `-o=/absolute/path/to/folder`
 
@@ -68,7 +68,7 @@ To practice [Secure at Inception](../../../discover-snyk/getting-started/glossar
 
 The following is a suggested instruction for creating project rules for use with [Amazon Q Developer chat](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/context-project-rules.html). Append the following contents to the rules file at `.amazonq/rules/amazonq-rules.md`:
 
-<figure><img src="../../../.gitbook/assets/image (346) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 {% code title=".amazonq/rules/amazonq-rules.md" overflow="wrap" %}
 ```

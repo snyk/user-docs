@@ -10,12 +10,12 @@ Severity levels also apply to license issues. See [Licenses](../../scan-with-sny
 
 The severity levels are defined in the following table.
 
-| Icon                                                                                                           | Level        | Description                                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="../../.gitbook/assets/image (89).png" alt="C" data-size="line">                                      | **C**ritical | May allow attackers to access sensitive data and run code on your application                                                              |
-| <img src="../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="H" data-size="original"> | **High**     | May allow attackers to access sensitive data in your application                                                                           |
-| ![M](<../../.gitbook/assets/image (17).png>)                                                                   | **M**edium   | Under some conditions, may allow attackers to access sensitive data on your application                                                    |
-| ![L](<../../.gitbook/assets/image (60).png>)                                                                   | **L**ow      | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
+| Icon                                                                      | Level        | Description                                                                                                                                |
+| ------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="../../.gitbook/assets/image (89).png" alt="C" data-size="line"> | **C**ritical | May allow attackers to access sensitive data and run code on your application                                                              |
+| <img src="broken-reference" alt="H" data-size="original">                 | **High**     | May allow attackers to access sensitive data in your application                                                                           |
+| ![M](<../../.gitbook/assets/image (17).png>)                              | **M**edium   | Under some conditions, may allow attackers to access sensitive data on your application                                                    |
+| ![L](<../../.gitbook/assets/image (60).png>)                              | **L**ow      | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
 
 ## Severity levels and Priority Score
 
@@ -37,7 +37,7 @@ Severity levels are displayed in association with your [Snyk Projects](../../sny
 
 The number of issues at each severity level is also displayed in the left sidebar of an issue card:
 
-<figure><img src="../../.gitbook/assets/image (39) (1).png" alt="Issue card; severity levels in sidebar"><figcaption><p>Issue card; severity levels in sidebar</p></figcaption></figure>
+<figure><img src="broken-reference" alt="Issue card; severity levels in sidebar"><figcaption><p>Issue card; severity levels in sidebar</p></figcaption></figure>
 
 ## How Snyk determines severity levels
 
@@ -47,7 +47,7 @@ The Common Vulnerability Scoring System (CVSS) determines the severity level of 
 
 Snyk supports the [CVSS framework version 4.0](https://www.first.org/cvss/v4-0/), along with the previous version, [CVSS framework version 3.1](https://www.first.org/cvss/v3-1/), to designate the characteristics and severity of vulnerabilities.
 
-&#x20;Vulnerabilities published prior to the support of CVSS v4.0, are based on the 3.1 version of CVSS to define severities.
+Vulnerabilities published prior to the support of CVSS v4.0, are based on the 3.1 version of CVSS to define severities.
 
 | **Level** | **CVSS score** |
 | --------- | -------------- |
@@ -74,12 +74,12 @@ There are multiple CVSS Scores for the same vulnerability for several reasons:
 * Having some differences in CVSS vectors is normal and expected. The likelihood of certain attack vectors will involve discrepancies and judgments made about them that make sense for the application and use cases of open source software users.
 * The severity of a vulnerability is influenced by a variety of factors, including whether it comes from a "red team" angle or a "blue team" angle. To arrive at an objective and actionable rating, Snyk analysts examine the full range of data, from vendors to reporters to attackers.
 * There are times when a vendor discovers additional information about a vulnerability that can affect its severity. Users can find all the relevant information used to determine the severity that Snyk curated in the description and references of the advisory.
-*   Different vendors may use different versions of CVSS, resulting in differing scores and severity levels. For instance, Snyk adopted CVSS version 4.0 as its primary framework in 2024. When comparing a vulnerability published by Snyk using [CVSS v4.0 ](https://www.first.org/cvss/v4-0/)with one published by the NVD using CVSS v3.1, the scores and severity ratings may differ significantly. In addition, CVSS score calculation can be done based on different vectors:&#x20;
+*   Different vendors may use different versions of CVSS, resulting in differing scores and severity levels. For instance, Snyk adopted CVSS version 4.0 as its primary framework in 2024. When comparing a vulnerability published by Snyk using [CVSS v4.0 ](https://www.first.org/cvss/v4-0/)with one published by the NVD using CVSS v3.1, the scores and severity ratings may differ significantly. In addition, CVSS score calculation can be done based on different vectors:
 
     * Base (CVSS-B),
-    * Base + Threat (CVSS-BT),&#x20;
-    * Base + Environmental (CVSS-BE),&#x20;
-    * Base + Threat + Environmental (CVSS-BTE).&#x20;
+    * Base + Threat (CVSS-BT),
+    * Base + Environmental (CVSS-BE),
+    * Base + Threat + Environmental (CVSS-BTE).
 
     Snyk performs the calculation of the score and the severity based on the Base metrics (as advised in compliance frameworks like FedRAMP and PCI-DSS) and provides the Threat Metric (also known as Exploit Maturity) as a separate data point.
 

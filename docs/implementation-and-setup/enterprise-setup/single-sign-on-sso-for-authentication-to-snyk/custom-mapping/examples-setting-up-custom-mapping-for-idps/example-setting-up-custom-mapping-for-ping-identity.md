@@ -12,7 +12,7 @@ Any step on the Snyk side in setting up the Enterprise application must be perfo
 
 1.  In your application configuration, select **Attribute mappings** and click the pencil to edit the attributes.
 
-    <figure><img src="../../../../../.gitbook/assets/6 (4) (1).png" alt="Edit mapping attributes"><figcaption><p>Edit mapping attributes</p></figcaption></figure>
+    <figure><img src="broken-reference" alt="Edit mapping attributes"><figcaption><p>Edit mapping attributes</p></figcaption></figure>
 2.  Select **+Add** and enter the following attribute, then save the change,\
     **roles**: `Group Names`\\
 

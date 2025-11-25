@@ -13,7 +13,7 @@ Access [Snyk Studio](../../../discover-snyk/getting-started/glossary.md#snyk-stu
 
 Once installation completes, a modal will appear prompting you to opt-in to Snyk Studio's "[Secure at Inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception)." This will automatically configure the necessary rules to scan any new AI generated code. Additional variations are available within the plugin's **Settings** page.
 
-<figure><img src="../../../.gitbook/assets/image (41) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 ### Authenticate
 
@@ -131,7 +131,7 @@ If you have the Node.js `npx` executable installed in your environment, add the 
 }
 ```
 
-<figure><img src="../../../.gitbook/assets/image (407) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 #### Install with pre-installed Snyk CLI
 

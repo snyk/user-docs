@@ -33,4 +33,4 @@ Logging in with a different provider from the one you registered with when you f
 3. In the token field, click to show and then select and copy your API token.
 4. In the third-party interface, configure your integration by pasting your Snyk token when prompted.
 
-<figure><img src="../../.gitbook/assets/account-settings-general-auth-token (1).png" alt="API token screen; revoke; regenerate; click to show"><figcaption><p>API token screen; revoke; regenerate; click to show</p></figcaption></figure>
+<figure><img src="broken-reference" alt="API token screen; revoke; regenerate; click to show"><figcaption><p>API token screen; revoke; regenerate; click to show</p></figcaption></figure>

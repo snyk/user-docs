@@ -16,7 +16,7 @@ When Snyk creates automatic PRs for vulnerabilities, the following rules are app
   * To update the **Test & Automated Pull Request Frequency**, navigate to **Projects** and select your Open Source Project.
   * Navigate to **Settings** and select an option from the pulldown list.
 
-<figure><img src="../../../.gitbook/assets/project-settings-test-pull-request-frequency (1).png" alt="Project test and automated PR Checks frequency setting"><figcaption><p>Project test and automated PR Checks frequency setting</p></figcaption></figure>
+<figure><img src="broken-reference" alt="Project test and automated PR Checks frequency setting"><figcaption><p>Project test and automated PR Checks frequency setting</p></figcaption></figure>
 
 To determine when your last 24-hour window began, check the Project issue card for **Snapshot taken by recurring test**.
 

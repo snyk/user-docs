@@ -22,7 +22,7 @@ Add the Snyk entry to `~/.factory/mcp.json`. To learn more, visit the official [
 }  
 ```
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Authenticate
 
