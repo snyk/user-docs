@@ -170,7 +170,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--org=<ORG_ID>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md), [`iac test`](commands/iac-test.md), [`iac describe`](commands/iac-describe.md), [`sbom`](commands/sbom.md), [`container sbom`](commands/container-sbom.md), [`aibom`](commands/aibom.md)
 
-`--file=<FILE>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md),[`sbom test`](commands/sbom-test.md)   &#x20;
+`--file=<FILE>`: [`test`](commands/test.md), [`monitor`](commands/monitor.md),[`sbom test`](commands/sbom-test.md)
 
 `--file=<FILE_PATH>`: [`container test`](commands/container-test.md), [`container monitor`](commands/container-monitor.md), [`sbom test`](commands/sbom-test.md)
 
@@ -212,7 +212,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--tags=<TAG>[,<TAG>]...>`: [`monitor`](commands/monitor.md), [`container monitor`](commands/container-monitor.md)
 
-`--reachability=<true|false>`:  [`test`](commands/test.md),[`monitor`](commands/monitor.md), [`sbom test`](commands/sbom-test.md)
+`--reachability=<true|false>`: [`test`](commands/test.md),[`monitor`](commands/monitor.md), [`sbom test`](commands/sbom-test.md)
 
 `--source-dir`: [`test`](commands/test.md),[`monitor`](commands/monitor.md), [`sbom test`](commands/sbom-test.md)
 
@@ -236,6 +236,10 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--report`: [`code test`](commands/code-test.md)
 
 `--target-name=<TARGET_NAME>`: [`code test`](commands/code-test.md)
+
+`--report`: [`code test`](commands/code-test.md)
+
+`--target-name=<TARGET_NAME>`:  [`code test`](commands/code-test.md)
 
 ## `snyk config environment` command option
 
