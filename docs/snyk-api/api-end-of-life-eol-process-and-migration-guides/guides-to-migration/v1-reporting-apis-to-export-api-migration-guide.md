@@ -15,7 +15,7 @@ The most significant change is the shift from a direct, synchronous request/resp
 | Feature            | Legacy v1 Reporting API                          | New Export API                                                                                                                                                                                                                                                                                                                 |
 | ------------------ | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Endpoint Structure | Direct resource endpoints (/v1/reporting/issues) | Scoped job endpoints. The new API is focused on the Organization or Group scope, with Organization ID or Group ID as path parameters                                                                                                                                                                                           |
-| Response Format    | JSON in the response body                        | CSV or JSON files using a signed URL                                                                                                                                                                                                                                                                                           |
+| Response Format    | JSON in the response body                        | CSV files using a signed URL                                                                                                                                                                                                                                                                                                   |
 | Data Retrieval     | Synchronous, immediate response                  | The Export API offers a robust, scalable solution for data export, providing results as CSV files stored securely and accessible using a self-signed link. It uses an asynchronous job pattern (Initiate, Check Status, Fetch Results) for large datasets, replacing direct, synchronous POST requests for large data volumes. |
 | Rate Limit         | 70 requests per minute, per user                 | 20 export POST requests per hour (status/results checks are unlimited)                                                                                                                                                                                                                                                         |
 | Required Headers   | Authorization                                    | Authorization, Version (for example `2024-10-15`)                                                                                                                                                                                                                                                                              |
@@ -24,7 +24,7 @@ The most significant change is the shift from a direct, synchronous request/resp
 
 To replace any v1 Reporting API call, follow these steps:
 
-1. Initiate the Export:&#x20;
+1. Initiate the Export:
    1. Send a `POST` request with your filters to create an export job. You will receive an `export_id`.
    2. Endpoint: `POST /groups/{group_id}/export`
    3. Required Parameters: The body must include the filters (including at least one date filter: introduced or updated) and specify the dataset (issues or usage) in the request header.
@@ -88,7 +88,7 @@ For any v1 filter not listed above (for example, `severity`, `fixable`, `languag
 
 Since the Export API returns data as CSV, and the legacy API returned JSON, you will likely need to convert the exported file for structured consumption by your application.
 
-**Native JSON output**&#x20;
+**Native JSON output**
 
 We are prioritizing adding the ability to export data directly in JSON format. It will be available early November. This feature will simplify data consumption for users migrating from the v1 API.
 
