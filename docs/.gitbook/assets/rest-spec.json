@@ -11778,42 +11778,6 @@
         ],
         "type": "object"
       },
-      "GroupPolicyConditionFixable": {
-        "additionalProperties": false,
-        "description": "Matches on the fixable status.",
-        "properties": {
-          "field": {
-            "enum": [
-              "fixable"
-            ],
-            "type": "string",
-            "x-enum-varnames": [
-              "GroupPolicyFixable"
-            ]
-          },
-          "operator": {
-            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
-          },
-          "value": {
-            "items": {
-              "enum": [
-                "true",
-                "false"
-              ],
-              "type": "string"
-            },
-            "maxItems": 1,
-            "minItems": 1,
-            "type": "array"
-          }
-        },
-        "required": [
-          "field",
-          "operator",
-          "value"
-        ],
-        "type": "object"
-      },
       "GroupPolicyConditionOperator": {
         "enum": [
           "includes",
@@ -11964,9 +11928,6 @@
               "anyOf": [
                 {
                   "$ref": "#/components/schemas/GroupPolicyConditionExploitMaturity"
-                },
-                {
-                  "$ref": "#/components/schemas/GroupPolicyConditionFixable"
                 },
                 {
                   "$ref": "#/components/schemas/GroupPolicyConditionSnykAssetFindingV1"
