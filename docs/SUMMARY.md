@@ -290,6 +290,7 @@
     * [Kiro guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/kiro-guide.md)
     * [Qodo guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/qodo-guide.md)
     * [Windsurf guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/windsurf-guide.md)
+    * [Antigravity guide](integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/antigravity-guide.md)
   * [Snyk Studio and Secure at Inception](integrations/snyk-studio-agentic-integrations/snyk-studio-and-secure-at-inception.md)
   * [Troubleshooting](integrations/developer-guardrails-for-agentic-workflows/troubleshooting-for-the-snyk-mcp-server.md)
   * [Usage analytics](integrations/developer-guardrails-for-agentic-workflows/usage-analytics.md)
