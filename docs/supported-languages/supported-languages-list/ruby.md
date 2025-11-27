@@ -69,7 +69,7 @@ For Ruby with Snyk Code, the following file formats are supported:  `.erb`, `.ha
 Available features:
 
 * Reports
-* Custom rules
+
 
 ## Ruby for Snyk Open Source
 
