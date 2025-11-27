@@ -46,6 +46,13 @@ A code element that is not marked as reachable may still be accessible under con
 
 Reachability is an important factor in assessing security risks. When evaluating these risks, consider both reachable issues and those that are not reachable. This helps you evaluate security risks as a whole, making sure you do not overlook any potential threats.
 
+Technical limitations:
+
+* Total file count: you can upload a maximum of 300,000 files
+* Total file size: the combined size of all uploaded files must not exceed 3 GB.
+* Individual file size: each individual file has a maximum size limit of 1 MB. For more information, visit [Technical specifications and guidance](https://docs.snyk.io/supported-languages/technical-specifications-and-guidance#file-size-limit-for-snyk-code-analysis).
+* File name length: the length of file names cannot exceed 256 characters.
+
 ## Supported languages and integrations
 
 Reachability analysis is supported for the following languages and package managers:
@@ -84,9 +91,9 @@ Reachability analysis is supported in the following integrations:
 
 Snyk supports multiple reachability analysis configuration options:
 
-* **At the Group level**: You can set the default Reachability analysis setting for all Organizations using the parent Group's Setting&#x73;**.** The default setting applies to existing Organizations with no reachability analysis configuration and all new Organizations.
-* **At the Organization level**: You can enable reachability for a single Organization in the Organization Settings. The reachability analysis Organization setting overrides the Group level default.
-* **Enable for all Organizations in a Group**: You can enable and disable reachability analysis for all Organizations in a Group using the parent Group's Settings. Bulk settings changes override any existing reachability analysis Organization setting.
+* At the Group level: You can set the default Reachability analysis setting for all Organizations using the parent Group's Setting&#x73;**.** The default setting applies to existing Organizations with no reachability analysis configuration and all new Organizations.
+* At the Organization level: You can enable reachability for a single Organization in the Organization Settings. The reachability analysis Organization setting overrides the Group level default.
+* Enable for all Organizations in a Group: You can enable and disable reachability analysis for all Organizations in a Group using the parent Group's Settings. Bulk settings changes override any existing reachability analysis Organization setting.
 
 ### Enable reachability at the Group level
 
@@ -173,6 +180,8 @@ After you import or test a Project using the Snyk Web UI, Snyk monitors the Proj
 * Call path - Allows you to see the path from your code to the vulnerable code element to validate the result.
 
 <figure><img src="../../.gitbook/assets/image (91) (1).png" alt="Reachability filters, badge and call path on the Projects UI"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
+
+For Projects that have been imported through a CLI monitor, the Reachability status is based on the snapshot of code taken at the time of the monitor. Recurring tests update the Project as new vulnerabilities are introduced or existing vulnerabilities change. To ensure Reachability status is up to date, Snyk recommends using the CLI monitor on an ongoing basis.&#x20;
 
 ### Reachability analysis as part of the Risk Score
 
@@ -372,74 +381,5 @@ To print the findings in JSON, use the `--json` option. `reachability` is a prop
       "version": "3.1"
     }
   ]
-}Score": 9.8,
-      "cvssSources": [
-        {
-          "assigner": "Snyk",
-          "baseScore": 9.8,
-          "cvssVersion": "3.1",
-          "modificationTime": "2025-02-10T14:22:01.344278Z",
-          "severity": "critical",
-          "type": "primary",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H/RL:O"
-        },
-        {
-          "assigner": "NVD",
-          "baseScore": 9.8,
-          "cvssVersion": "3.0",
-          "modificationTime": "2024-03-11T09:46:27.924934Z",
-          "severity": "critical",
-          "type": "secondary",
-          "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "assigner": "Red Hat",
-          "baseScore": 7.3,
-          "cvssVersion": "3.1",
-          "modificationTime": "2024-03-11T09:52:38.421377Z",
-          "severity": "high",
-          "type": "secondary",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
-        }
-      ],
-      "description": "## Overview\n[commons-collections:commons-collections](https://mvnrepository.com/artifact/commons-collections/commons-collections) is a library which contains types that extend and augment the Java Collections Framework.\n\nAffected versions of this package are ...\n",
-      "disclosureTime": "2015-11-06T16:51:56.000000Z",
-      "epssDetails": null,
-      "exploitDetails": {
-        "maturityLevels": [
-          {
-            "format": "",
-            "level": "",
-            "type": "secondary"
-          },
-          {
-            "format": "",
-            "level": "",
-            "type": "primary"
-          }
-        ],
-        "sources": []
-      },
-      "from": [],
-      "isPatchable": false,
-      "isUpgradable": false,
-      "name": "commons-collections:commons-collections",
-      "packageManager": "maven",
-      "packageName": "commons-collections:commons-collections",
-      "severity": "critical",
-      "title": "Deserialization of Untrusted Data",
-      "upgradePath": null,
-      "version": "3.1"
-    }
-  ]
 }
 ```
-
-### Technical specifications and guidance
-
-Using Reachability will perform an upload of source code files to Snyk for analysis. The following technical limitations exist:
-
-* **Total number of files:** 300,000 files
-* **Total size of files:** 3GB
-* **Total size per file:** 1MB. See the [Technical specifications and guidance](https://docs.snyk.io/supported-languages/technical-specifications-and-guidance#file-size-limit-for-snyk-code-analysis) for more details.
-* **File name length:** 256 characters
