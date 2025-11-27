@@ -318,7 +318,7 @@
       },
       "VersionRequestedResponseHeader": {
         "description": "A header containing the version of the endpoint requested by the caller.",
-        "example": "2021-06-04",
+        "example": "2025-11-05",
         "schema": {
           "$ref": "#/components/schemas/QueryVersion"
         }
@@ -334,7 +334,7 @@
       },
       "VersionServedResponseHeader": {
         "description": "A header containing the version of the endpoint that was served by the API.",
-        "example": "2021-06-04",
+        "example": "2025-11-05",
         "schema": {
           "$ref": "#/components/schemas/ActualVersion"
         }
@@ -1624,7 +1624,7 @@
       },
       "Version": {
         "description": "The requested version of the endpoint to process the request",
-        "example": "2021-06-04",
+        "example": "2025-11-05",
         "in": "query",
         "name": "version",
         "required": true,
@@ -2913,6 +2913,7 @@
       },
       "ActualVersion": {
         "description": "Resolved API version",
+        "example": "2025-11-05",
         "pattern": "^((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?)$",
         "type": "string"
       },
@@ -16992,6 +16993,7 @@
       },
       "QueryVersion": {
         "description": "Requested API version",
+        "example": "2025-11-05",
         "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
         "type": "string"
       },
@@ -68738,7 +68740,7 @@
     },
     "/tenants/{tenant_id}/memberships/{membership_id}": {
       "delete": {
-        "description": "Delete an individual tenant membership for a single user.\n\n#### Required permissions\n\n- `View Tenant Memberships (tenant.membership.read)`\n\n- `tenant.membership.delete`",
+        "description": "Delete an individual tenant membership for a single user.\n\n#### Required permissions\n\n- `View Tenant Memberships (tenant.membership.read)`\n\n- `Delete Tenant Memberships (tenant.membership.delete)`",
         "operationId": "deleteTenantMembership",
         "parameters": [
           {
@@ -68907,7 +68909,7 @@
     },
     "/tenants/{tenant_id}/roles": {
       "get": {
-        "description": "List all available roles for a given tenant.\n\n#### Required permissions\n\n- `tenant.roles.read`",
+        "description": "List all available roles for a given tenant.\n\n#### Required permissions\n\n- `View Tenant Roles (tenant.roles.read)`",
         "operationId": "listTenantRoles",
         "parameters": [
           {
@@ -69039,7 +69041,7 @@
         "x-stability-level": "beta"
       },
       "post": {
-        "description": "Create a custom tenant role for a given tenant.\n\n#### Required permissions\n\n- `tenant.roles.read`\n\n- `tenant.roles.create`",
+        "description": "Create a custom tenant role for a given tenant.\n\n#### Required permissions\n\n- `View Tenant Roles (tenant.roles.read)`\n\n- `Create Tenant Roles (tenant.roles.create)`",
         "operationId": "createTenantRole",
         "parameters": [
           {
@@ -69175,7 +69177,7 @@
     },
     "/tenants/{tenant_id}/roles/{role_id}": {
       "delete": {
-        "description": "Delete a custom tenant role in a given tenant\n\n#### Required permissions\n\n- `tenant.roles.read`\n\n- `tenant.roles.delete`",
+        "description": "Delete a custom tenant role in a given tenant\n\n#### Required permissions\n\n- `View Tenant Roles (tenant.roles.read)`\n\n- `Delete Tenant Roles (tenant.roles.delete)`",
         "operationId": "deleteTenantRole",
         "parameters": [
           {
@@ -69253,7 +69255,7 @@
         "x-stability-level": "beta"
       },
       "get": {
-        "description": "Return a role from a tenant by the tenant and role id with its details and permissions.\n\n#### Required permissions\n\n- `tenant.roles.read`",
+        "description": "Return a role from a tenant by the tenant and role id with its details and permissions.\n\n#### Required permissions\n\n- `View Tenant Roles (tenant.roles.read)`",
         "operationId": "getTenantRole",
         "parameters": [
           {
@@ -69353,7 +69355,7 @@
         "x-stability-level": "beta"
       },
       "patch": {
-        "description": "Update attributes of a custom tenant role in a given tenant\n\n#### Required permissions\n\n- `tenant.roles.read`\n\n- `tenant.roles.edit`",
+        "description": "Update attributes of a custom tenant role in a given tenant\n\n#### Required permissions\n\n- `View Tenant Roles (tenant.roles.read)`\n\n- `Edit Tenant Roles (tenant.roles.edit)`",
         "operationId": "updateTenantRole",
         "parameters": [
           {
