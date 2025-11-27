@@ -119,7 +119,7 @@ To enable reachability analysis for your Organization and begin analyzing Projec
 2. Under **General**, select **Enable reachability analysis**.
 3. Confirm the selection to save changes.
 
-<figure><img src="../../.gitbook/assets/image (198).png" alt="Enable reachability at the Organization level"><figcaption><p>Enable reachability at the Organization level</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-11-24 at 14.44.25 (2).png" alt="Enable reachability at the Organization level"><figcaption><p>Enable reachability at the Organization level</p></figcaption></figure>
 
 After reachability analysis is enabled, the analysis is done as part of scanning Projects.
 
