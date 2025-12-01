@@ -15,6 +15,16 @@ Once installation completes, a modal window will appear prompting an opt-in to S
 
 <figure><img src="../../../.gitbook/assets/image (41) (2).png" alt=""><figcaption></figcaption></figure>
 
+Choosing yes will activate `Auto Configure Snyk Mcp Server` and set the `Secure at Inception: Execution Frequency` to "On Code Generation." These settings willl handle the configuration of the Snyk MCP and the creation of the snyk\_rules.mdc file within the directory.
+
+#### Updating Secure at Inception settings
+
+Users who previously installed the VS Code IDE extensions and did not enable Secure at Inception via the modal window can enable them after the fact via the IDE extension settings. Users can also update Secure at Inception settings or disable them by setting the `Execution Frequency` to "Manual."
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
 ### Authenticate
 
 Once you've made a selection regarding Secure at Inception, you'll be asked to authenticate. You can authenticate at two points in this process:

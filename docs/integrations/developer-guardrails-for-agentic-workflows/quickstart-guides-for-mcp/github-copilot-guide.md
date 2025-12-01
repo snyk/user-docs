@@ -7,36 +7,50 @@ You can access Snyk Studio, including Snyk's MCP server, in VSCode to secure cod
 * Click [this link](cursor:extension/snyk-security.snyk-vulnerability-scanner) to open up the Snyk Security plugin directly
 * Click `Install`
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-10-13 at 2.19.30 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-10-13 at 2.19.30 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Enable Secure At Inception
 
 Once installation completes, a modal window will appear prompting an opt-in to Snyk Studio's "Secure at Inception." This will automatically configure the necessary rules to scan any new AI generated code. Additional variations are available within the plugin's Settings page.
 
-<figure><img src="../../../.gitbook/assets/image (41) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (41) (2).png" alt="" width="215"><figcaption></figcaption></figure>
+
+Choosing yes will activate `Auto Configure Snyk Mcp Server` and set the `Secure at Inception: Execution Frequency` to "On Code Generation." These settings willl handle the configuration of the Snyk MCP and the creation of the snyk\_rules.mdc file within the directory.
+
+#### Updating Secure at Inception settings
+
+Users who previously installed the VS Code IDE extensions and did not enable Secure at Inception via the modal window can enable them after the fact via the IDE extension settings. Users can also update Secure at Inception settings or disable them by setting the `Execution Frequency` to "Manual."
+
+<figure><img src="../../../.gitbook/assets/image (65).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Authenticate
 
-Once you've made a selection regarding Secure at Inception, you'll be asked to authenticate. You can authenticate at two points in this process:
+Making a selection on Execution Frequency triggers an authenitcation request. You can authenticate at two points in this process:
 
 * Immediately after plugin install
-* Prior to your first Snyk code scan
+* Before your first Snyk code scan
 
-As part of the authentication flow, you'll be asked to either sign up or sign in on the Snyk website. A browser window will open.
+As part of the authentication flow, you will be asked to either sign up or sign in on the Snyk website. A browser window will open.
 
-_For new users_, select the preferred sign up method and agree to the terms on the next screen. Once you've successfully authenticated, you'll be instructed to return to your IDE.
+For new users, select the preferred sign up method and agree to the terms on the next screen. On successful authentication, you will be instructed to return to your IDE.
 
-**Please note:** In order to use Snyk Studio, specifically Snyk's SAST scanning capabilities, you'll need to enable [Snyk Code](../../../scan-with-snyk/snyk-code/). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to our [data retention policy](../../../snyk-data-and-governance/how-snyk-handles-your-data.md). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code. [More details on plans](https://snyk.io/plans/)
+{% hint style="info" %}
+To use Snyk Studio, specifically Snyk's SAST scanning capabilities, you'll need to enable [Snyk Code](../../../scan-with-snyk/snyk-code/). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to our [data retention policy](../../../snyk-data-and-governance/how-snyk-handles-your-data.md). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code. [More details on plans](https://snyk.io/plans/)
+{% endhint %}
 
-_For existing users,_ select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM will prompt you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md).
+For existing user&#x73;_,_ select the log-in method associated with your account. If you do not have access to Snyk Code, the LLM will prompt you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md).
 
-**Please note:** If you are enabling Snyk Code for the first time, you must import / re-import existing projects in order to properly scan them.
+{% hint style="warning" %}
+If you are enabling Snyk Code for the first time, you must import or re-import existing projects in order to properly scan them.
+{% endhint %}
 
 ### Run Snyk Studio
 
-Once authenticated, Snyk Studio should be triggered whenever new code is generated by the LLM. If Snyk Studio is not enabled, restart your IDE and try generating code again.
+On authentication, Snyk Studio should be triggered whenever new code is generated by the LLM. If Snyk Studio is not enabled, restart your IDE and try generating code again.
 
-**Please note:** Free users are limited to a set number of scans. If you reach the allotment, we recommend [reaching out to sales](https://snyk.io/contact-us/) to unlock additional thresholds.
+{% hint style="info" %}
+Free users are limited to a set number of scans. If you reach the allotment, Snyk recommend [reaching out to sales](https://snyk.io/contact-us/) to unlock additional thresholds.
+{% endhint %}
 
 ## Alternate: Install Snyk Studio Directly
 
