@@ -31,7 +31,7 @@ You may customize your scan behavior to reflect the security policy of your comp
 
 Snyk reports critical, high, medium, and low severities. There are two ways to control severity:
 
-* Use the plugin settings for the [Scan configuration](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#scan-configuration).
+* Use the plugin settings for the [Scan configuration](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#general-settings).
 * Use the small buttons with the severity icons at the top of the issues in the Snyk panel.
 
 By default, all levels are selected. You must select at least one.
@@ -60,7 +60,7 @@ The exact capabilities and available scanners depend on your plan. Be sure your 
 
 There are two ways to show or hide specific issue types:
 
-* Use the plugin settings for the [Scan configuration](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#scan-configuration).
+* Use the plugin settings for the [Scan configuration](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#general-settings).
 * Use the filter button in the panel's sidebar, as illustrated in the screen image that follows
 
 By default, all issue types shown are selected.

@@ -1,6 +1,6 @@
 # Configuration of the Eclipse plugin
 
-You can configure both [Global settings](configuration-of-the-eclipse-plugin.md#global-settings) and [Project-specific properties](configuration-of-the-eclipse-plugin.md#project-specific-properties).
+You can configure both [Global settings](configuration-of-the-eclipse-plugin.md#general-settings) and [Project-specific properties](configuration-of-the-eclipse-plugin.md#project-specific-properties).
 
 ## General settings
 
@@ -23,7 +23,7 @@ You can set the following global configuration settings in the Snyk preferences.
     Organization selection follows this order:
 
     1. [Project-specific settings](configuration-of-the-eclipse-plugin.md#project-specific-properties) (if configured)
-    2. [General setting](configuration-of-the-eclipse-plugin.md#global-settings) (if the project-specific setting is empty)
+    2. [General setting](configuration-of-the-eclipse-plugin.md#general-settings) (if the project-specific setting is empty)
     3. Your [web account's](https://app.snyk.io/account) preferred Organization (if both General and Project-specific settings are empty).
 * **Additional Parameters**: Specify additional parameters to pass to the CLI, for example, `--file=pom.xml` or `--debug.`\
   Note: When you enable `debug`, your code may be logged in the IDE log files, for example, the `io.snyk.languageserver.log` file.
@@ -51,7 +51,7 @@ You can set the following global configuration settings in the Snyk preferences.
 
 You can specify Project-specific scan settings on the **Snyk** page in the **Project Properties**. To open the **Project Properties** page, right-click the root folder of your Project in either the **Package Explorer** or **Project Explorer** view, then select **Properties** from the context menu.
 
-* **Additional Parameters**: Overrides the value defined in [Global settings](configuration-of-the-eclipse-plugin.md#global-settings).
+* **Additional Parameters**: Overrides the value defined in [Global settings](configuration-of-the-eclipse-plugin.md#general-settings).
 * **Auto-select Organization**: When enabled, Snyk automatically selects the most appropriate Organization for your Project using context found in your repository and your authentication. If an Organization is configured manually, this feature is overridden. If an appropriate Organization cannot be identified automatically, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) is used as a fallback.
 * **Project Organization**: Specify the Organization (ID or name) for Snyk to target when running scans in this particular IDE Project. Retrieve the Organization ID from the Organization settings in the Snyk Web UI: `https://app.snyk.io/org/[ORG_NAME]/manage/settings` and copy the ID from the Organization ID section. If the Organization is provided manually, automatic Organization selection is overridden. If the Organization value is blank or invalid, the value from the global Organization field is used.
 

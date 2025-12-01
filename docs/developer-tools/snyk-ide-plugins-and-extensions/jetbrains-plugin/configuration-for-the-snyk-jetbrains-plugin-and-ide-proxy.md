@@ -4,7 +4,7 @@ Navigate to **Preferences** > **Tools** > **Snyk** to set the following configur
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-24 at 16.31.39.png" alt=""><figcaption></figcaption></figure>
 
-## **General settings**
+## General settings
 
 * **Authentication method:** Specify whether to authenticate with OAuth2 or with an API token. `OAuth2` is the default
 * **Token**: Set the token to use for authentication with Snyk. For details, see [Authentication for the JetBrains plugins](authentication-for-the-jetbrains-plugins.md).
@@ -32,7 +32,7 @@ Navigate to **Preferences** > **Tools** > **Snyk** to set the following configur
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-24 at 16.34.07.png" alt=""><figcaption></figcaption></figure>
 
-## **Executable settings**
+## Executable settings
 
 These options allow you to customize the handling of the plugin dependency on Snyk CLI.
 

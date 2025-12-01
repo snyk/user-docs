@@ -6,7 +6,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Amazon Q to secure c
 
 * [Install the code assistant extension](amazon-q-guide.md#install-amazon-q)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](amazon-q-guide.md#install-the-snyk-mcp-server-in-amazon-q)
+* [Install the Snyk MCP](amazon-q-guide.md#install-the-snyk-mcp-server-in-the-amazon-q-ide-extension)
 
 ### Install Amazon Q
 

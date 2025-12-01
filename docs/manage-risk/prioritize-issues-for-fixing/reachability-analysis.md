@@ -50,7 +50,7 @@ Technical limitations:
 
 * Total file count: you can upload a maximum of 300,000 files
 * Total file size: the combined size of all uploaded files must not exceed 3 GB.
-* Individual file size: each individual file has a maximum size limit of 1 MB. For more information, visit [Technical specifications and guidance](https://docs.snyk.io/supported-languages/technical-specifications-and-guidance#file-size-limit-for-snyk-code-analysis).
+* Individual file size: each individual file has a maximum size limit of 1 MB. For more information, visit [Technical specifications and guidance](../../supported-languages/technical-specifications-and-guidance.md#file-size-limit-for-snyk-code-analysis).
 * File name length: the length of file names cannot exceed 256 characters.
 
 ## Supported languages and integrations
@@ -119,7 +119,7 @@ To enable reachability analysis for your Organization and begin analyzing Projec
 2. Under **General**, select **Enable reachability analysis**.
 3. Confirm the selection to save changes.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-11-24 at 14.44.25 (2).png" alt="Enable reachability at the Organization level"><figcaption><p>Enable reachability at the Organization level</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-11-24 at 14.44.25 (1).png" alt="Enable reachability at the Organization level"><figcaption><p>Enable reachability at the Organization level</p></figcaption></figure>
 
 After reachability analysis is enabled, the analysis is done as part of scanning Projects.
 
@@ -181,7 +181,7 @@ After you import or test a Project using the Snyk Web UI, Snyk monitors the Proj
 
 <figure><img src="../../.gitbook/assets/image (91) (1).png" alt="Reachability filters, badge and call path on the Projects UI"><figcaption><p>Reachability filters, badge and call path on the Projects UI</p></figcaption></figure>
 
-For Projects that have been imported through a CLI monitor, the Reachability status is based on the snapshot of code taken at the time of the monitor. Recurring tests update the Project as new vulnerabilities are introduced or existing vulnerabilities change. To ensure Reachability status is up to date, Snyk recommends using the CLI monitor on an ongoing basis.&#x20;
+For Projects that have been imported through a CLI monitor, the Reachability status is based on the snapshot of code taken at the time of the monitor. Recurring tests update the Project as new vulnerabilities are introduced or existing vulnerabilities change. To ensure Reachability status is up to date, Snyk recommends using the CLI monitor on an ongoing basis.
 
 ### Reachability analysis as part of the Risk Score
 
