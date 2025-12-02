@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-PR Checks for **Bitbucket Server** integrations require Bitbucket Server version 7.4 and above, or Bitbucket Data Center version 8 or above. \
+PR Checks for **Bitbucket Server** integrations require Bitbucket Server version 7.4 and above, or Bitbucket Data Center version 8 or above.\
 \
 When using a brokered connection Snyk Broker version 4.206 and above is required.
 {% endhint %}
@@ -54,10 +54,14 @@ The configuration settings apply to all Projects in that Organization. You can a
 
 PR Checks that are configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and, therefore, will not alert for projects in languages that do not support FixPR Checks.
 
+{% hint style="info" %}
+A PR test is configured to be optional or blocking within your source control management platform, such as GitHub’s branch protection rules. To learn more on issue prevention, visit [Phase 6: Rolling out the prevention stage](../../../implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/).
+{% endhint %}
+
 <figure><img src="../../../.gitbook/assets/enable analyze code.png" alt="PR check settings to analyze code issues."><figcaption><p>PR check settings to analyze code issues</p></figcaption></figure>
 
 {% hint style="info" %}
-If you cannot see the **Code Analysis** section, ensure that your user has the Group Admin role assigned and that the feature is enabled for Snyk Code. See the  [Prerequisites](configure-pull-request-checks.md#prerequisites).
+If you cannot see the **Code Analysis** section, ensure that your user has the Group Admin role assigned and that the feature is enabled for Snyk Code. See the [Prerequisites](configure-pull-request-checks.md#prerequisites).
 {% endhint %}
 
 3. To check for open-source and licensing issues, configure and save the following changes:

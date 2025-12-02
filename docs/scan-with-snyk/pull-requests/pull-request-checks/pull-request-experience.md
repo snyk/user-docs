@@ -103,7 +103,7 @@ Snyk Agent fix in the PR is in [Early Access](../../../discover-snyk/getting-sta
 Snyk Agent fix in the PR will work only on inline comments created after the feature is enabled.
 {% endhint %}
 
-The Snyk Agent fix in the PR feature enables the user to request and apply fixes for vulnerabilities identified by the Snyk Code pull request check and posted as inline comments. By enabling this feature, the user is able to interact with inline comments in the following way:&#x20;
+The Snyk Agent fix in the PR feature enables the user to request and apply fixes for vulnerabilities identified by the Snyk Code pull request check and posted as inline comments. By enabling this feature, the user is able to interact with inline comments in the following way:
 
 * Request an initial fix by replying to an inline comment using the `@snyk /fix` command.
 
@@ -116,7 +116,7 @@ The Snyk Agent fix in the PR feature enables the user to request and apply fixes
 
 ### Exceptions
 
-* The `@snyk /fix` command can be used only for automatically fixable vulnerabilities, identified in the inline comments with a zap icon and command description. See  [fix-code-vulnerabilities-automatically.md](../../snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md "mention") for supported languages and limitations.
+* The `@snyk /fix` command can be used only for automatically fixable vulnerabilities, identified in the inline comments with a zap icon and command description. See [fix-code-vulnerabilities-automatically.md](../../snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md "mention") for supported languages and limitations.
 * Fixes expire after the time displayed in each suggestion, in accordance with the [#cache-retention-period-related-to-vulnerability-source-data](../../../snyk-data-and-governance/how-snyk-handles-your-data.md#cache-retention-period-related-to-vulnerability-source-data "mention"). After expiration, a new fix can be requested by using the `@snyk /fix` command.
 * Snyk Agent fix in the PR is not supported for [Snyk Code Local Engine](../../snyk-code/snyk-code-local-engine.md).
 * The `@snyk /fix` and `@snyk /apply #` commands can be used only as replies to the Inline Comments created by Snyk, commands created on other comment threads will not be processed.
@@ -126,6 +126,10 @@ The Snyk Agent fix in the PR feature enables the user to request and apply fixes
 {% hint style="info" %}
 For detailed descriptions on troubleshooting scenarios and their relevant resolutions, see [Troubleshoot PR Checks](troubleshoot-pr-checks.md).
 {% endhint %}
+
+### How do I block Pull Requests based on Snyk findings?
+
+A PR test is configured to be optional or blocking within your source control management platform, such as GitHub’s branch protection rules. To learn more about issue prevention, visit [Enable and configure Snyk on PRs](../../../implementation-and-setup/team-implementation-guide/phase-5-rolling-out-the-prevention-stage/enable-and-configure-snyk-on-prs.md).
 
 ### How can I handle false positives?
 
@@ -165,7 +169,7 @@ Inline comments are only available for issues detected by Snyk Code PR checks. T
 
 ### Is Snyk Broker supported?
 
-Yes. Brokered integrations are supported for both **i**ssue summary comment and inline comments, with compatibility for both Classic and Universal Broker.&#x20;
+Yes. Brokered integrations are supported for both **i**ssue summary comment and inline comments, with compatibility for both Classic and Universal Broker.
 
 Supported Snyk Broker version 4.194 or higher for the issue summary comment and inline comments features.
 
@@ -173,7 +177,7 @@ Snyk Agent fix in the PR is supported in Snyk Broker version 4.219 or higher.
 
 ### Why is Snyk Agent fix in the PR not working after enabling the setting?
 
-When you enable the Snyk Agent Fix in the PR setting, a background process is initiated to upgrade the [Snyk webhooks](../snyk-pull-or-merge-requests/#snyk-scm-webhooks) in the user's repository with the pull request comment event subscription necessary for the feature. This process can take a couple of minutes to complete. During this time, the feature will not be fully active or available, and Snyk will not be able to react to commands in the PR.&#x20;
+When you enable the Snyk Agent Fix in the PR setting, a background process is initiated to upgrade the [Snyk webhooks](../snyk-pull-or-merge-requests/#snyk-scm-webhooks) in the user's repository with the pull request comment event subscription necessary for the feature. This process can take a couple of minutes to complete. During this time, the feature will not be fully active or available, and Snyk will not be able to react to commands in the PR.
 
 To troubleshoot the webhook upgrade process, go to the repository settings page of your SCM, and confirm that the Snyk webhook is subscribed to the 'Pull request review comments' event.
 
