@@ -18,7 +18,7 @@ When Snyk Container tests an image using any of the available integrations, Snyk
 * Application packages, based on the presence of a manifest file
 
 {% hint style="info" %}
-To determine the final file system, Snyk does not squash the layers of the container image into one. Snyk scans for supported application package manifest files in each intermediate layer of the container image, even when those files are deleted by a subsequent layer.
+Snyk scans for packages and vulnerabilities in the final built image, not in the intermediate layers.
 {% endhint %}
 
 Because Snyk reads the information from the file system, the container does not need to be run. This means that for a successful scan, no container or foreign code must be run.
