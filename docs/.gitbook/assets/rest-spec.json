@@ -4223,6 +4223,17 @@
       },
       "AssignmentCreationAttributes": {
         "properties": {
+          "learning_path_ids": {
+            "description": "Array of learning path IDs that contain the lessons being assigned.\nOnly include when assignments are created from learning paths.\nThe system will automatically determine which lessons belong to which learning paths.\n",
+            "example": [
+              "lp-uuid-A",
+              "lp-uuid-B"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
           "lesson_ids": {
             "items": {
               "type": "string"
@@ -13529,6 +13540,13 @@
             "properties": {
               "assigning_user_email": {
                 "type": "string"
+              },
+              "learning_path_ids": {
+                "items": {
+                  "format": "uuid",
+                  "type": "string"
+                },
+                "type": "array"
               },
               "learning_program_id": {
                 "format": "uuid",
