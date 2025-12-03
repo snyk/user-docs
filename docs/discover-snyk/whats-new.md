@@ -7,6 +7,31 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## November 2025
+
+### **Snyk Container**
+
+* The list of [operated distribution systems supported by Snyk Container](../scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) has been updated with support for Chisel.
+
+### **Snyk CLI**
+
+* The latest [Snyk CLI version](../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) available is v1.1301.0.
+* The [CLI help](../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md#using-reachability-analysis-with-snyk-cli) has been updated with commands for reachability analysis.&#x20;
+
+### Snyk IDE
+
+* The Automated Org Selection feature uses repository context to choose an Organization. Manual configuration overrides this automated selection. If the selection fails, Snyk defaults to your preferred Organization setting. The feature is available for the [Eclipse plugin](../developer-tools/snyk-ide-plugins-and-extensions/eclipse-plugin/configuration-of-the-eclipse-plugin.md), the [JetBrains plugin](../developer-tools/snyk-ide-plugins-and-extensions/jetbrains-plugin/configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md), the [Visual Studio extension](../developer-tools/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-extension-configuration-environment-variables-and-proxy.md), and the [Visual Studio Code extension](../developer-tools/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-configuration-environment-variables-and-proxy.md).
+
+### **Snyk integrations**
+
+* The Amazon Q guide for Snyk Studio now includes [updated instructions](../integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/amazon-q-guide.md#install-the-snyk-mcp-server-in-the-amazon-q-ide-extension) for configuring the Snyk MCP Server in VS Code and JetBrains.
+
+### **Other updates**
+
+* [Reachabilty analysis](../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md) has been updated with instructions on how it works and how to use it in both the Snyk Web UI and the Snyk CLI and clear support for specific languages and package managers.
+* The [Pre-defined roles](../snyk-platform-administration/user-roles/pre-defined-roles.md#role-types) documentation has been updated to communicate that the Organization Admin role and associated permissions supersede any Group Member role restrictions.
+* The [severity condition](../manage-risk/policies/security-policies/security-policies-conditions.md) is now available in Group-level policies. Use this feature to create more granular policies for Snyk Code and Snyk Open Source findings, for example, ignoring a finding or changing its severity.
+
 ## October 2025
 
 ### **Snyk API**
@@ -341,7 +366,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 * [Risk factors on assets](../manage-assets/assets-inventory-components.md#risk-factors) is now in [EA](getting-started/snyk-release-process.md#early-access) for Snyk AppRisk customers.
 * [Asset inventory components](../manage-assets/assets-inventory-components.md#clusters) has been updated to include details on clusters.
-* Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](broken-reference).
+* Snyk Broker - AppRisk has been updated to include [SonarQube installation steps](broken-reference/).
 
 ### **Snyk CLI and IDEs**
 
