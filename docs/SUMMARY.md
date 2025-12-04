@@ -939,6 +939,7 @@
   * [Cloud](snyk-api/reference/cloud.md)
   * [Collection](snyk-api/reference/collection.md)
   * [ContainerImage](snyk-api/reference/containerimage.md)
+  * [ContainerRegistryImportPolicy](snyk-api/reference/containerregistryimportpolicy.md)
   * [Custom Base Images](snyk-api/reference/custom-base-images.md)
   * [Dependencies (v1)](snyk-api/reference/dependencies-v1.md)
   * [Entitlements (v1)](snyk-api/reference/entitlements-v1.md)
