@@ -1,3 +1,14 @@
+## 2025-11-05 - Updated 2025-12-04
+
+### DELETE - `/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integrations/{integration_id}` - Updated
+- added the non-success response with the status `403`
+
+
+
+### POST - `/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integration` - Updated
+- added the non-success response with the status `403`
+
+
 ## 2025-11-05
 
 ### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
