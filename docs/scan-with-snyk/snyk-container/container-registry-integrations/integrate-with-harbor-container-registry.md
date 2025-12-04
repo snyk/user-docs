@@ -28,7 +28,7 @@ Follow these instructions to set up Harbor integration in Snyk and start managin
 If you are using a self-hosted Harbor registry, contact Snyk to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md).
 
 {% hint style="info" %}
-To set up the integration, the Harbor user should be an admin user. The integration uses /v2/\_catalog endpoint for listing repositories.
+Integration setup requires a Harbor user with sufficient permissions to access the repository list via the `/v2/_catalog` endpoint. You can use an admin user or a system Robot account with Read Catalog permissions granted.
 {% endhint %}
 
 Snyk tests the connection values, and the page reloads, now displaying Harbor integration information. The **Add your Harbor images to Snyk** button becomes available. If the connection to Harbor fails, a notification appears under the **Connected to Harbor** section.
