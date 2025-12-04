@@ -82,7 +82,7 @@ In the chat, you can tag specific files or functions and ask Windsurf to scan yo
 
 {% code title="prompt" overflow="wrap" %}
 ```
-Scan this directory for code security & dependency vulnerabilities and security issues
+Scan this directory for security issues in code and dependencies
 ```
 {% endcode %}
 
