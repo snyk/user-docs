@@ -9,9 +9,9 @@ Snyk offers security guardrails through Snyk Studio, including its integration w
 Snyk provides information about:
 
 * [Snyk Studio and Secure at inception](snyk-studio-agentic-integrations/snyk-studio-and-secure-at-inception.md)
-* [Quickstart guides for several AI assistants](developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/)
-* [Troubleshooting for the Snyk MCP Server](developer-guardrails-for-agentic-workflows/troubleshooting-for-the-snyk-mcp-server.md)
-* [Usage analytics](developer-guardrails-for-agentic-workflows/usage-analytics.md)
+* [Quickstart guides for several AI assistants](snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/)
+* [Troubleshooting for the Snyk MCP Server](snyk-studio-agentic-integrations/troubleshooting.md)
+* [Usage analytics](snyk-studio-agentic-integrations/usage-analytics.md)
 
 {% hint style="info" %}
 **Feature availability**

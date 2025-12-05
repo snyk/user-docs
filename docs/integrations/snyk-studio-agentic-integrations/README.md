@@ -37,6 +37,6 @@ Snyk Studio supports integrating the following Snyk security tools into an AI sy
 Running `snyk_sca_scan` may execute third-party ecosystem tools (for example, Gradle or Maven) on your machine to fetch the project's dependency tree.
 {% endhint %}
 
-To learn more about Snyk MCP install and configuration, visit [Quickstart guides for MCP](quickstart-guides-for-mcp/).
+To learn more about Snyk MCP install and configuration, visit [Quickstart guides for MCP](quickstart-guides-for-snyk-studio/).
 
-To learn how to resolve encountered issues, visit [Troubleshooting](troubleshooting-for-the-snyk-mcp-server.md).
+To learn how to resolve encountered issues, visit [Troubleshooting](troubleshooting.md).

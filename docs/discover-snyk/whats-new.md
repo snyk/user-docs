@@ -16,7 +16,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk CLI**
 
 * The latest [Snyk CLI version](../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) available is v1.1301.0.
-* The [CLI help](../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md#using-reachability-analysis-with-snyk-cli) has been updated with commands for reachability analysis.&#x20;
+* The [CLI help](../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md#using-reachability-analysis-with-snyk-cli) has been updated with commands for reachability analysis.
 
 ### Snyk IDE
 
@@ -24,7 +24,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk integrations**
 
-* The Amazon Q guide for Snyk Studio now includes [updated instructions](../integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/amazon-q-guide.md#install-the-snyk-mcp-server-in-the-amazon-q-ide-extension) for configuring the Snyk MCP Server in VS Code and JetBrains.
+* The Amazon Q guide for Snyk Studio now includes [updated instructions](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/amazon-q-guide.md#install-the-snyk-mcp-server-in-the-amazon-q-ide-extension) for configuring the Snyk MCP Server in VS Code and JetBrains.
 
 ### **Other updates**
 
@@ -51,8 +51,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk integrations**
 
-* The list of Snyk MCP quick guides now includes [Devin guide](../integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/devin-guide.md), [Factory guide](../integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/factory-guide.md), [Factory terminal guide](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/factory-terminal-ide-guide.md).
-* The Snyk MCP Server has been rebranded as [Snyk Studio](../integrations/developer-guardrails-for-agentic-workflows/).
+* The list of Snyk MCP quick guides now includes [Devin guide](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/devin-guide.md), [Factory guide](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/factory-guide.md), [Factory terminal guide](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/factory-terminal-ide-guide.md).
+* The Snyk MCP Server has been rebranded as [Snyk Studio](../integrations/snyk-studio-agentic-integrations/).
 * [SCM integration support for Python](../supported-languages/supported-languages-list/python/scm-integrations-and-python.md) has been updated with support for Python 3.14.
 
 ### **Other updates**
@@ -74,7 +74,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * The SCM integration for Bitbucket Data Center/Server now supports the Required Builds feature for granular control over pull requests. To learn more, visit [Required Builds](../developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server.md#required-builds).
 * [GitLab](../scan-with-snyk/pull-requests/pull-request-checks/analyze-pr-checks-results.md#gitlab) is supported for PR check results. This feature blocks merge requests with security issues when the "Pipelines must succeed" setting is enabled.
-* The Snyk MCP quick guides list has been enriched with the following guides: [Claude Code](../integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/claude-code-guide.md), [Continue](../integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/continue-guide.md), [JetBrains AI Assistant](../integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/jetbrains-ai-assistant.md), [JetBrains Junie](../integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/jetbrains-junie.md)
+* The Snyk MCP quick guides list has been enriched with the following guides: [Claude Code](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/claude-code-guide.md), [Continue](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/continue-guide.md), [JetBrains AI Assistant](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/jetbrains-ai-assistant.md), [JetBrains Junie](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/jetbrains-junie.md)
 
 ### **Other updates**
 
@@ -101,7 +101,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk integrations**
 
-* You can now add the Snyk MCP server to [Goose CLI](../integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/gemini-cli-guide-1.md) to secure code generated with agentic workflows through an LLM.
+* You can now add the Snyk MCP server to [Goose CLI](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/gemini-cli-guide-1.md) to secure code generated with agentic workflows through an LLM.
 * You can now integrate Akamai with the Snyk API & Web to discover and scan your API. See the [API Security](../integrations/partner-integrations.md#api-security) section under Partner integrations page for more details.
 * The [Jira Cloud documentation](../integrations/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) has been updated for parity with the current version.
 
@@ -122,9 +122,9 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk CLI**
 
 * MCP updates:
-  * [Updated the list of supported Snyk security tools into an AI system](../integrations/developer-guardrails-for-agentic-workflows/#snyk-studio-tools).
+  * [Updated the list of supported Snyk security tools into an AI system](../integrations/snyk-studio-agentic-integrations/#snyk-studio-tools).
   * Updated release status from experimental to [Early access](getting-started/snyk-release-process.md#early-access-features) and removed the experimental flag.
-  * Added [Cursor](../integrations/developer-guardrails-for-agentic-workflows/quickstart-guides-for-mcp/cursor-guide.md) as a new supported agentic IDE for MCP.
+  * Added [Cursor](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/cursor-guide.md) as a new supported agentic IDE for MCP.
 * PAT updates:
   * Added PAT support for [Snyk CLI](../developer-tools/snyk-cli/authenticate-to-use-the-cli.md).
   * Added PAT support for Snyk CI/CD integrations ([CircleCI](../developer-tools/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb.md), [Jenkins](../developer-tools/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk.md), [Maven](../developer-tools/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk.md)).
@@ -181,7 +181,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk CLI**
 
 * The `--platform` option was added to the [`container sbom`](../developer-tools/snyk-cli/commands/container-sbom.md) command.
-* The MCP information was expanded to [Developer guardrails for agentic workflows](../integrations/developer-guardrails-for-agentic-workflows/).
+* The MCP information was expanded to [Developer guardrails for agentic workflows](../integrations/snyk-studio-agentic-integrations/).
 
 ### **IDE plugins and extensions**
 
@@ -228,7 +228,7 @@ Additional updates have been made to the [Universal Broker](../snyk-api/referenc
 
 ### **Snyk CLI**
 
-Information has been added about Snyk support for the Model Context Protocol (MCP) through the [`snyk mcp` experimental CLI command](../integrations/developer-guardrails-for-agentic-workflows/usage-analytics.md).
+Information has been added about Snyk support for the Model Context Protocol (MCP) through the [`snyk mcp` experimental CLI command](../integrations/snyk-studio-agentic-integrations/usage-analytics.md).
 
 ### **Snyk Code**
 
