@@ -11816,6 +11816,43 @@
         ],
         "type": "string"
       },
+      "GroupPolicyConditionBusinessCriticality": {
+        "additionalProperties": false,
+        "description": "Matches on the project business criticality.",
+        "properties": {
+          "field": {
+            "enum": [
+              "business-criticality"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicyBusinessCriticality"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "critical"
+              ],
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
+      },
       "GroupPolicyConditionCVE": {
         "additionalProperties": false,
         "description": "Matches on the CVE.",
@@ -11878,6 +11915,48 @@
         ],
         "type": "object"
       },
+      "GroupPolicyConditionEnvironment": {
+        "additionalProperties": false,
+        "description": "Matches on the project environment.",
+        "properties": {
+          "field": {
+            "enum": [
+              "environment"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicyEnvironment"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "enum": [
+                "frontend",
+                "backend",
+                "mobile",
+                "internal",
+                "external",
+                "saas",
+                "on-prem",
+                "hosted",
+                "distributed"
+              ],
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
+      },
       "GroupPolicyConditionExploitMaturity": {
         "additionalProperties": false,
         "description": "Matches on the exploit maturity.",
@@ -11915,6 +11994,42 @@
         ],
         "type": "object"
       },
+      "GroupPolicyConditionLifecycle": {
+        "additionalProperties": false,
+        "description": "Matches on the project lifecycle - if lifecycle is provided, the policy will only apply to projects with the specified lifecycle.",
+        "properties": {
+          "field": {
+            "enum": [
+              "lifecycle"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicyLifecycle"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "enum": [
+                "development",
+                "production",
+                "sandbox"
+              ],
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
+      },
       "GroupPolicyConditionOperator": {
         "enum": [
           "includes",
@@ -11925,6 +12040,71 @@
           "GroupPolicyIncludes",
           "GroupPolicyNotIncludes"
         ]
+      },
+      "GroupPolicyConditionOrgID": {
+        "additionalProperties": false,
+        "description": "Matches on the organization ID - if org ID is provided, the policy will only apply to the specified organization. If no org ID is provided, the policy will apply to all organizations.",
+        "properties": {
+          "field": {
+            "enum": [
+              "org-id"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicyOrgID"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "format": "uuid",
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
+      },
+      "GroupPolicyConditionProjectTags": {
+        "additionalProperties": false,
+        "description": "Matches on the project tags - if project tags are provided, the policy will only apply to projects with the specified tags.\nThe value is a list of key:value pairs.\nThe key and value must be Alphanumeric including - and _ with a limit of 30 characters for each key and value.\n",
+        "properties": {
+          "field": {
+            "enum": [
+              "project-tags"
+            ],
+            "type": "string",
+            "x-enum-varnames": [
+              "GroupPolicyProjectTags"
+            ]
+          },
+          "operator": {
+            "$ref": "#/components/schemas/GroupPolicyConditionOperator"
+          },
+          "value": {
+            "items": {
+              "example": "key:value",
+              "pattern": "^[A-Za-z0-9_-]{1,30}:[A-Za-z0-9_-]{1,30}$",
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "type": "object"
       },
       "GroupPolicyConditionRuleId": {
         "additionalProperties": false,
@@ -12083,6 +12263,21 @@
                 },
                 {
                   "$ref": "#/components/schemas/GroupPolicyConditionSnykId"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionOrgID"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionProjectTags"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionBusinessCriticality"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionEnvironment"
+                },
+                {
+                  "$ref": "#/components/schemas/GroupPolicyConditionLifecycle"
                 }
               ]
             },
