@@ -16,6 +16,8 @@ Snyk supports Dockerfile analysis for the following services:
 
 * GitHub
 * GitHub Enterprise
+* GitHub Cloud App
+* GitHub Server App
 * GitLab
 * Bitbucket Cloud
 * Bitbucket Cloud App
