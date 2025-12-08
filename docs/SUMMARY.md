@@ -285,7 +285,7 @@
     * [Gemini CLI guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/gemini-cli-guide.md)
     * [Gemini Code Assist guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/gemini-code-assist-guide.md)
     * [GitHub Copilot guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/github-copilot-guide.md)
-    * [Goose CLI guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/gemini-cli-guide-1.md)
+    * [Goose CLI guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/goose-cli-guide.md)
     * [JetBrains AI assistant](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/jetbrains-ai-assistant.md)
     * [JetBrains Junie](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/jetbrains-junie.md)
     * [Kiro guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/kiro-guide.md)

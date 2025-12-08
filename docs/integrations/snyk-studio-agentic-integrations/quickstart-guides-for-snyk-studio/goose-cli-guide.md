@@ -4,9 +4,9 @@ You can access Snyk Studio, including Snyk's MCP server, in Goose CLI to secure 
 
 ## Prerequisites
 
-* [Install the Goose CLI](gemini-cli-guide-1.md#install-goosecli)
+* [Install the Goose CLI](goose-cli-guide.md#install-goosecli)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP Server in Goose CLI using npx command](gemini-cli-guide-1.md#install-the-snyk-mcp-server-in-goose-cli-using-npx-command) or [Install the Goose MCP Server in Goose CLI using Snyk CLI](gemini-cli-guide-1.md#install-the-snyk-mcp-server-in-goose-cli-using-snyk-cli)
+* [Install the Snyk MCP Server in Goose CLI using npx command](goose-cli-guide.md#install-the-snyk-mcp-server-in-goose-cli-using-npx-command) or [Install the Goose MCP Server in Goose CLI using Snyk CLI](goose-cli-guide.md#install-the-snyk-mcp-server-in-goose-cli-using-snyk-cli)
 
 ### Install GooseCLI
 
