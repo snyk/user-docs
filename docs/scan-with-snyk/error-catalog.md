@@ -3008,7 +3008,8 @@ Sometimes things go wrong: a flaky connection, 3rd party services go down and Sn
 
 If this happens, you could try:
 
-- Opening and re-opening your Pull Request / Merge Request, to kick off a new test
+- Closing and re-opening your Pull Request / Merge Request, to kick off a new test
+- Change the status of Pull Request / Merge Request to draft, then change it back to "Ready for review", to kick off a new test
 - Removing and re-adding the repo to Snyk
 
 Ultimately, you should contact support@snyk.io if the issue persists
