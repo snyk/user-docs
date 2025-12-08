@@ -11818,7 +11818,7 @@
       },
       "GroupPolicyConditionBusinessCriticality": {
         "additionalProperties": false,
-        "description": "Matches on the project business criticality.",
+        "description": "Matches on the project business criticality - if business criticality is provided, the policy will only apply to projects with the specified business criticality.",
         "properties": {
           "field": {
             "enum": [
@@ -11917,7 +11917,7 @@
       },
       "GroupPolicyConditionEnvironment": {
         "additionalProperties": false,
-        "description": "Matches on the project environment.",
+        "description": "Matches on the project environment - if environment is provided, the policy will only apply to projects with the specified environment.",
         "properties": {
           "field": {
             "enum": [
