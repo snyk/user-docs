@@ -1,6 +1,6 @@
 # Python
 
-## &#x20;Applicability and integration
+## Applicability and integration
 
 {% hint style="info" %}
 Python is supported for Snyk Code and Snyk Open Source.
@@ -22,55 +22,55 @@ Available functions:
 It is possible that some Python Projects contain dependencies that require specific versions of Python. Therefore, the version of Python used when scanning can affect the dependency tree that Snyk generates.
 {% endhint %}
 
-Snyk supports the following Python versions:  `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`, `3.14`
+Snyk supports the following Python versions: `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`, `3.14`
 
 ### Supported frameworks and libraries
 
 For Python, the following frameworks and libraries are supported:
 
-* AioHTTP - Comprehensive
-* iopg - Comprehensive
-* aiofiles - Comprehensive
-* argparse - Comprehensive
-* anthropic - Comprehensive
-* bottle - Comprehensive
-* CherryPy - Comprehensive
-* Django - Comprehensive
-* defusedxml - Comprehensive
-* fastapi - Partial
-* fastMCP - Comprehensive
-* flask - Comprehensive
-* flask\_pymongo - Comprehensive
-* google.cloud.bigquery - Comprehensive
-* google\_generativeai - Comprehensive
-* grpcio - Comprehensive
-* huggingface\_hub - Comprehensive
-* httpx - Comprehensive
-* ldap3 - Comprehensive
-* libxml - Comprehensive
-* lxml - Comprehensive
-* mistralai - Comprehensive
-* modelcontextprotocol/python-sdk - Comprehensive
-* mongoengine - Comprehensive
-* openai - Comprehensive
-* pandas - Partial
-* paramiko - Comprehensive
-* peewee - Comprehensive
-* pickle - Comprehensive
-* pilyaml - Comprehensive
-* pyca/cryptography - Comprehensive
-* pymongo - Comprehensive
-* pymssql - Comprehensive
-* pyramid - Comprehensive
-* psycopg - Comprehensive
-* python-ldap - Comprehensive
-* Python Standard Library - Comprehensive
-* requests - Comprehensive
-* sqlite3 (or pysqlite2) - Comprehensive
-* sqlalchemy - Comprehensive
-* turboGears - Comprehensive
-* urllib - Comprehensive
-* werkzeug - Comprehensive
+* AioHTTP
+* iopg
+* aiofiles
+* argparse
+* anthropic
+* bottle
+* CherryPy
+* Django
+* defusedxml
+* fastapi
+* fastMCP
+* flask
+* flask\_pymongo
+* google.cloud.bigquery
+* google\_generativeai
+* grpcio
+* huggingface\_hub
+* httpx
+* ldap3
+* libxml
+* lxml
+* mistralai
+* modelcontextprotocol/python-sdk
+* mongoengine
+* openai
+* pandas
+* paramiko
+* peewee
+* pickle
+* pilyaml
+* pyca/cryptography
+* pymongo
+* pymssql
+* pyramid
+* psycopg
+* python-ldap
+* Python Standard Library
+* requests
+* sqlite3 (or pysqlite2)
+* sqlalchemy
+* turboGears
+* urllib
+* werkzeug
 
 ### Supported package managers and registries
 
@@ -148,7 +148,7 @@ By default, the Snyk IDE integration looks for a `*req*.txt` file in the root of
 
 If you have manifest files in other directories within the root of the Project, Snyk cannot identify them unless directed to do so.
 
-In your Snyk integration settings, locate the **Additional Options** field. Enable a recursive search and add the  `--all-projects` option in the **Additional Options** field.
+In your Snyk integration settings, locate the **Additional Options** field. Enable a recursive search and add the `--all-projects` option in the **Additional Options** field.
 
 {% hint style="warning" %}
 If each directory needs a different virtual environment, it is possible that the Snyk scan fails because it uses a single virtual environment for dependency detection. In such cases, Snyk recommends using the CLI or SCM integration instead of an IDE , in order to gather vulnerability details for all dependencies in each Project directory.

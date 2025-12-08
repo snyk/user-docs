@@ -20,16 +20,17 @@ Available functions:
 
 ### Supported frameworks and libraries
 
-* Azure/azure-sdk-for-go/sdk/ai/azopenai - Comprehensive&#x20;
-* gage-technologies/mistral-go - Comprehensive&#x20;
-* Gin - Partial&#x20;
-* google/generative-ai-go/genai - Comprehensive&#x20;
-* GORM library - Partial&#x20;
-* grpc-go - Comprehensive
-* labstack/echo - Partial&#x20;
-* sashabaranov/go-openai - Comprehensive&#x20;
-* spf13/pflag - Comprehensive
-* sqlx - Comprehensive
+* Azure/azure-sdk-for-go/sdk/ai/azopenai
+* gage-technologies/mistral-go
+* Gin
+* google/generative-ai-go/genai
+* GORM library
+* grpc-go
+* labstack/echo
+* lib/pq
+* sashabaranov/go-openai
+* spf13/pflag
+* sqlx
 
 ### Supported package managers
 

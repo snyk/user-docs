@@ -101,7 +101,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk integrations**
 
-* You can now add the Snyk MCP server to [Goose CLI](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/goose-cli-guide.md) to secure code generated with agentic workflows through an LLM.
+* You can now add the Snyk MCP server to [Goose CLI](../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/gemini-cli-guide-1.md) to secure code generated with agentic workflows through an LLM.
 * You can now integrate Akamai with the Snyk API & Web to discover and scan your API. See the [API Security](../integrations/partner-integrations.md#api-security) section under Partner integrations page for more details.
 * The [Jira Cloud documentation](../integrations/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md) has been updated for parity with the current version.
 

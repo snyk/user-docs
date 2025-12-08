@@ -18,22 +18,22 @@ Available functions:
 
 For Rust with Snyk Code, the following frameworks and libraries are supported:
 
-* Warp - Comprehensive
-* Rust standard library - Comprehensive
-* Iron - Comprehensive
-* tokio - Comprehensive
-* Hyper - Comprehensive
-* axum - Comprehensive
-* tower - Partial
-* age - Comprehensive
-* ammonia - Comprehensive
-* diesel - Comprehensive
-* orion - Comprehensive
-* postgres - Comprehensive
-* ring - Comprehensive
-* rustcrypto - Comprehensive
-* sqlx - Comprehensive
-* Reqwest - Comprehensive
+* Warp
+* Rust standard library
+* Iron
+* tokio
+* Hyper
+* axum
+* tower
+* age
+* ammonia
+* diesel
+* orion
+* postgres
+* ring
+* rustcrypto
+* sqlx
+* Reqwest
 
 ### Supported package managers and registries
 

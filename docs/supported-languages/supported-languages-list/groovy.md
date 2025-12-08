@@ -12,14 +12,14 @@ Groovy for Snyk Code is in Early Access and is available only with Enterprise pl
 
 For Groovy, Snyk supports the following frameworks and libraries:
 
-* groovy-cli-picollo - Comprehensive
-* Groovy standard library - Comprehensive
-* groovy-cli-commons - Comprehensive
-* Grails - Comprehensive
-* GDK - Comprehensive
-* Micronaut - Partial
-* Play - Partial
-* Spring - Partial
+* groovy-cli-picollo
+* Groovy standard library
+* groovy-cli-commons
+* Grails
+* GDK
+* Micronaut
+* Play
+* Spring
 
 ### Supported file extensions
 

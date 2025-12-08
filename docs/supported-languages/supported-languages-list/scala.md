@@ -24,12 +24,13 @@ Snyk supports the following Scala versions: 2.x
 
 For Scala, the following frameworks and libraries are supported:
 
-* Akka - Comprehensive
-* HTTP4S - Comprehensive
-* io.cequence.openaiscala - Comprehensive
-* Play Framework - Comprehensive
-* Scala standard library - Comprehensive
-* Slick Framework - Comprehensive
+* Akka
+* HTTP4S
+* io.cequence.openaiscala
+* Play Framework
+* Scala standard library
+* Slick Framework
+* Tapir Framework
 * All [Java frameworks and libraries](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-frameworks-and-libraries)
 
 ### Supported package managers and registries

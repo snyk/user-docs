@@ -24,23 +24,23 @@ Snyk has tested support for PHP versions 5.2 through 8.0. You can also use later
 
 For PHP, the following frameworks and libraries are supported:
 
-* grpc-php - Comprehensive
-* Laravel - Partial
-* llphant - Comprehensive
-* openai-php/client - Comprehensive
-* orhanerday/open-ai - Comprehensive
-* Pclzip - Comprehensive
-* Symfony - Partial
-* theodo-group/llphant - Comprehensive
+* grpc-php
+* Laravel
+* llphant
+* openai-php/client
+* orhanerday/open-ai
+* Pclzip
+* Symfony
+* theodo-group/llphant
 
 ### Supported package managers and package registries
 
 * Supported package manager: [Composer](https://getcomposer.org)
-* Supported package registry:  [packagist.org](https://packagist.org/)
+* Supported package registry: [packagist.org](https://packagist.org/)
 
 ## PHP for Snyk Code
 
-For PHP with Snyk Code, the following file formats are supported: `.php`, `.phtml`, `.module`, `.inc`, `.install`
+For PHP with Snyk Code, the following file formats are supported: `.php`, `.phtml`, `.module`, `.inc`, `.install`, `.theme`, `.profile`
 
 Available features:
 
@@ -66,7 +66,7 @@ Available features:
 
 ## CLI support for PHP
 
-A [build is required](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md) to scan with the CLI if there is no `composer.lock` file present. There are no unique options for use when running Snyk for PHP.&#x20;
+A [build is required](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md) to scan with the CLI if there is no `composer.lock` file present. There are no unique options for use when running Snyk for PHP.
 
 ## SCM integrations for PHP
 
@@ -79,7 +79,7 @@ After you select a Project for import, Snyk builds the dependency tree based on 
 
 If the `composer.lock` file is not present in the repository, the import will not process the `composer.json` manifest.
 
-By default, Snyk scans your production dependencies. Using the Snyk Web UI, you can configure whether or not to include your development dependencies, such as  `require_dev` \[...] in the scan for vulnerabilities.
+By default, Snyk scans your production dependencies. Using the Snyk Web UI, you can configure whether or not to include your development dependencies, such as `require_dev` \[...] in the scan for vulnerabilities.
 
 To update language preferences:
 

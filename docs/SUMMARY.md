@@ -250,7 +250,7 @@
     * [JavaScript for open source](supported-languages/supported-languages-list/javascript/javascript-for-open-source.md)
     * [Git repositories and JavaScript](supported-languages/supported-languages-list/javascript/git-repositories-and-javascript.md)
     * [Guidance for JavaScript and Node.js](supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js.md)
-  * [.NET](supported-languages/supported-languages-list/.net/README.md)
+  * [.NET (C# and VB.NET)](supported-languages/supported-languages-list/.net/README.md)
     * [.NET for code analysis](supported-languages/supported-languages-list/.net/.net-for-code-analysis.md)
     * [.NET for open source](supported-languages/supported-languages-list/.net/.net-for-open-source.md)
     * [Improved .NET scanning](supported-languages/supported-languages-list/.net/improved-.net-scanning.md)
@@ -265,7 +265,6 @@
   * [Scala](supported-languages/supported-languages-list/scala.md)
   * [Swift and Objective-C](supported-languages/supported-languages-list/swift-and-objective-c.md)
   * [TypeScript](supported-languages/supported-languages-list/typescript.md)
-  * [VB.NET](supported-languages/supported-languages-list/vb.net.md)
 
 ## Integrations
 
@@ -285,7 +284,7 @@
     * [Gemini CLI guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/gemini-cli-guide.md)
     * [Gemini Code Assist guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/gemini-code-assist-guide.md)
     * [GitHub Copilot guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/github-copilot-guide.md)
-    * [Goose CLI guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/goose-cli-guide.md)
+    * [Goose CLI guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/gemini-cli-guide-1.md)
     * [JetBrains AI assistant](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/jetbrains-ai-assistant.md)
     * [JetBrains Junie](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/jetbrains-junie.md)
     * [Kiro guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/kiro-guide.md)

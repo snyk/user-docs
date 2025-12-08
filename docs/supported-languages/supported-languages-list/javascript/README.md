@@ -45,81 +45,82 @@ Snyk for JavaScript supports the following file formats:
 
 The following frameworks and libraries are supported in Snyk for JavaScript:
 
-* @Google Drive/generative-ai - Comprehensive
-* @anthropic-ai/sdk - Comprehensive
-* @huggingface/inference - Comprehensive
-* @mistralai/mistralai - Comprehensive
-* axios - Comprehensive
-* Angular - Partial
-* apollo-server - Partial
-* bcrypt-nodejs - Comprehensive
-* cross-spawn - Comprehensive
-* crypto-js - Comprehensive
-* date-fns - Comprehensive
-* dayjs - Comprehensive
-* dompurify - Comprehensive
-* electron - Partial
-* ejs - Partial
-* execa - Comprehensive
-* express - Comprehensive
-* express-mongo-sanitize - Comprehensive
-* express-graphql - Partial
-* express-jwt - Partial
-* fastMCP - Comprehensive
-* fs - Comprehensive
-* fs-extra - Comprehensive
-* fs-plus - Comprehensive
-* graceful-fs - Comprehensive
-* graphql-js - Partial
-* grpc-js - Comprehensive
-* hapi.js - Comprehensive
-* jQuery - Comprehensive
-* js-yaml - Comprehensive
-* jzip - Comprehensive
-* koa - Comprehensive
-* koa-graphql - Comprehensive
-* libxml - Comprehensive
-* libxmljs - Comprehensive
-* lodash - Comprehensive
-* luxon - Comprehensive
-* minimongo - Comprehensive
-* minimist - Comprehensive
-* modelcontextprotocol/typescript-sdk - Comprehensive
-* mongodb - Comprehensive
-* Mongoose - Comprehensive
-* mercurius - Partial
-* Nestjs - Partial
-* Node Crypto - Comprehensive
-* node-buffer - Partial
-* node-cmd - Comprehensive
-* Node Crypto - Comprehensive
-* node-dir - Comprehensive
-* node-forge - Comprehensive
-* node-pty - Comprehensive
-* node-serialize - Comprehensive
-* octokit - Comprehensive
-* openai - Comprehensive
-* pg - Comprehensive
-* pg-promise - Comprehensive
-* React - Partial
-* request-promise - Comprehensive
-* restler - Partial
-* rimraf - Comprehensive
-* sanitize-html - Comprehensive
-* shelljs - Comprehensive
-* Stanford JS Crypto - Comprehensive
-* superagent - Comprehensive
-* tar-stream - Comprehensive
-* TSOA - Comprehensive
-* unirest - Comprehensive
-* unzip - Comprehensive
-* underscore - Comprehensive
-* url - Comprehensive
-* vm - Comprehensive
-* webstomp-client - Partial
-* WebCryptoAPI - Comprehensive
-* xpath - Comprehensive
-* yargs - Comprehensive
+* @Google Drive/generative-ai
+* @anthropic-ai/sdk
+* @huggingface/inference
+* @mistralai/mistralai
+* axios
+* Angular
+* apollo-server
+* bcrypt-nodejs
+* cross-spawn
+* crypto-js
+* date-fns
+* dayjs
+* dompurify
+* electron
+* ejs
+* execa
+* express
+* express-mongo-sanitize
+* express-graphql
+* express-jwt
+* fastMCP
+* fs
+* fs-extra
+* fs-plus
+* graceful-fs
+* graphql-js
+* grpc-js
+* hapi.js
+* jQuery
+* js-yaml
+* jzip
+* koa
+* koa-graphql
+* libxml
+* libxmljs
+* lodash
+* luxon
+* minimongo
+* minimist
+* modelcontextprotocol/typescript-sdk
+* mongodb
+* Mongoose
+* mercurius
+* mysql2/mysql2-promise
+* Nestjs
+* Node Crypto
+* node-buffer
+* node-cmd
+* Node Crypto
+* node-dir
+* node-forge
+* node-pty
+* node-serialize
+* octokit
+* openai
+* pg
+* pg-promise
+* React
+* request-promise
+* restler
+* rimraf
+* sanitize-html
+* shelljs
+* Stanford JS Crypto
+* superagent
+* tar-stream
+* TSOA
+* unirest
+* unzip
+* underscore
+* url
+* vm
+* webstomp-client
+* WebCryptoAPI
+* xpath
+* yargs
 
 ## Features
 

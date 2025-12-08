@@ -42,19 +42,19 @@ Snyk supports the following Ruby versions:
 
 For Ruby, the following frameworks and libraries are supported:
 
-* ActiveRecord - Partial
-* Connection - Comprehensive
-* grpc-ruby - Comprehensive
-* LibXML - Comprehensive
-* mysql2 - Comprehensive
-* Nokogiri - Comprehensive
-* OpenSSL - Comprehensive
-* openai ruby client - Comprehensive
-* ruby-openai - Comprehensive
-* rexml - Comprehensive
-* Ruby On Rails - Comprehensive
-* sinatra - Comprehensive
-* sqlite3-ruby - Comprehensive
+* ActiveRecord
+* Connection
+* grpc-ruby
+* LibXML
+* mysql2
+* Nokogiri
+* OpenSSL
+* openai ruby client
+* ruby-openai
+* rexml
+* Ruby On Rails
+* sinatra
+* sqlite3-ruby
 
 ### Supported package managers and registries
 
@@ -64,7 +64,7 @@ As a package registry, [rubygems.org](https://rubygems.org/) is supported.
 
 ## Ruby for Snyk Code
 
-For Ruby with Snyk Code, the following file formats are supported:  `.erb`, `.haml`, `.rb`, `.rhtml`, `.slm`
+For Ruby with Snyk Code, the following file formats are supported: `.erb`, `.haml`, `.rb`, `.rhtml`, `.slm`
 
 Available features:
 

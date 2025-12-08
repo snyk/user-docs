@@ -3,7 +3,7 @@
 ## Applicability and integration
 
 {% hint style="info" %}
-Java and Kotlin are supported for Snyk Code and Snyk Open Source.&#x20;
+Java and Kotlin are supported for Snyk Code and Snyk Open Source.
 {% endhint %}
 
 Available integrations:
@@ -28,76 +28,76 @@ Snyk supports Java analysis for Java versions up to SE 21 and is designed to pro
 
 ### Supported frameworks and libraries
 
-For Java and Kotlin,  the following frameworks and libraries are supported:
+For Java and Kotlin, the following frameworks and libraries are supported:
 
-* Amazon AWS SDK - Comprehensive
-* Android Standard Library - Partial
-* Apache Commons - Comprehensive
-* Apache Tomcat - Partial
-* Apache XML - Comprehensive
-* apache.mahou - Comprehensive
-* bouncycastle - Comprehensive
-* com.azure.ai.openai - Comprehensive
-* com.google.ai.client.generativeai - Comprehensive
-* com.google.cloud.vertexai.generativeai - Comprehensive
-* com.google.re2j - Comprehensive
-* com.google.gwt - Partial
-* Dropwizard - Comprehensive
-* elasticsearch - Partial
-* FasterXML Jackson - Comprehensive
-* Google Guava - Comprehensive
-* grpc-java - Comprehensive
-* hibernate - Comprehensive
-* http4k - Comprehensive
-* io.jsonwebtoken - Comprehensive
-* Jakarta EE - Partial
-* Jakarta XML Services - Partial
-* Java EE - Partial
-* Java Servlet - Comprehensive
-* Java Servlet (javax) - Comprehensive
-* Java Server Pages - Partial
-* Java Standard Edition - Comprehensive
-* javalin - Partial
-* Jax-RS - Comprehensive
-* jooq - Comprehensive
-* Kyro - Comprehensive
-* Micronaut - Comprehensive
-* mongo-java-driver - Comprehensive
-* Netty - Comprehensive
-* okhttp3 - Comprehensive
-* org.apache.hc.client5 - Comprehensive
-* org.apache.http.client - Comprehensive
-* org.apache.sling - Partial
-* org.apache.tools.zip - Comprehensive
-* org.codehaus.plexus - Comprehensive
-* org.dom4j.io - Comprehensive
-* Playframework - Comprehensive
-* rxhttp - Comprehensive
-* Seam logger - Comprehensive
-* SnakeYaml - Comprehensive
-* Spongycastle - Comprehensive
-* Spring AI - Partial
-* Spring boot - Partial
-* Spring Web, MVC and JDBC - Comprehensive
-* Spring WebFlux - Comprehensive
-* Struts - Partial
-* Vaadin - Comprehensive
-* XStream - Comprehensive
+* Amazon AWS SDK
+* Android Standard Library
+* Apache Commons
+* Apache Tomcat
+* Apache XML
+* apache.mahou
+* bouncycastle
+* com.azure.ai.openai
+* com.google.ai.client.generativeai
+* com.google.cloud.vertexai.generativeai
+* com.google.re2j
+* com.google.gwt
+* Dropwizard
+* elasticsearch
+* FasterXML Jackson
+* Google Guava
+* grpc-java
+* hibernate
+* http4k
+* io.jsonwebtoken
+* Jakarta EE
+* Jakarta XML Services
+* Java EE
+* Java Servlet
+* Java Servlet (javax)
+* Java Server Pages
+* Java Standard Edition
+* javalin
+* Jax-RS
+* jooq
+* Kyro
+* Micronaut
+* mongo-java-driver
+* Netty
+* okhttp3
+* org.apache.hc.client5
+* org.apache.http.client
+* org.apache.sling
+* org.apache.tools.zip
+* org.codehaus.plexus
+* org.dom4j.io
+* Playframework
+* rxhttp
+* Seam logger
+* SnakeYaml
+* Spongycastle
+* Spring AI
+* Spring boot
+* Spring Web, MVC and JDBC
+* Spring WebFlux
+* Struts
+* Vaadin
+* XStream
 
 Kotlin only:
 
-* Android Standard Library - Partial
-* com.aallam.openai - Comprehensive
-* com.expediagroup.graphql.server - Comprehensive
-* Javalin - Partial
-* Ktor - Comprehensive
-* Kotlin Standard Library - Comprehensive
-* khttp - Comprehensive
+* Android Standard Library
+* com.aallam.openai
+* com.expediagroup.graphql.server
+* Javalin
+* Ktor
+* Kotlin Standard Library
+* khttp
 
 ### Supported package managers and package registries <a href="#supported-package-managers-and-package-registries" id="supported-package-managers-and-package-registries"></a>
 
 * Supported package managers: [Maven](https://maven.apache.org) and [Gradle](https://gradle.org), with the following supported versions:
-  * Maven: `3.*` , `4.*`.  For more information, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
+  * Maven: `3.*` , `4.*`. For more information, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
   * Gradle: `4.*`, `5.*`, `6.*`, `7.*`, `8.*`, `9*`. For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
 * Supported package registry: [maven.org](https://maven.org/) (Maven Central Repository)
 
@@ -122,7 +122,7 @@ For Java and Kotlin with Snyk Open Source, the following file formats are suppor
 * For Maven: `pom.xml`
 * For Gradle: `build.gradle`, `build.gradle.kts`
 
-Reports are available for Java and Kotlin with Open Source.&#x20;
+Reports are available for Java and Kotlin with Open Source.
 
 Available features:
 
@@ -130,7 +130,7 @@ Available features:
 * License scanning
 * Fix PRs (for Gradle only Fix advice is available)
 
-## Validating, monitoring, alerting, and gating for Java and Kotlin&#x20;
+## Validating, monitoring, alerting, and gating for Java and Kotlin
 
 For SCM integrations, Snyk allows you to [run PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis. You can see the results on the **Projects** page.
 
