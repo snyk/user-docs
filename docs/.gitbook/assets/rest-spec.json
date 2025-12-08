@@ -12682,20 +12682,6 @@
       },
       "InlineContent": {
         "properties": {
-          "type": {
-            "enum": [
-              "dep_graph"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type"
-        ],
-        "type": "object"
-      },
-      "InlineContentCreateItem": {
-        "properties": {
           "dep_graph": {
             "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.DepGraph"
           },
@@ -12714,9 +12700,6 @@
       },
       "InlineResource": {
         "properties": {
-          "content": {
-            "$ref": "#/components/schemas/InlineContent"
-          },
           "name": {
             "maxLength": 256,
             "type": "string"
@@ -12730,15 +12713,14 @@
         },
         "required": [
           "type",
-          "name",
-          "content"
+          "name"
         ],
         "type": "object"
       },
       "InlineResourceCreateItem": {
         "properties": {
           "content": {
-            "$ref": "#/components/schemas/InlineContentCreateItem"
+            "$ref": "#/components/schemas/InlineContent"
           },
           "name": {
             "maxLength": 256,
