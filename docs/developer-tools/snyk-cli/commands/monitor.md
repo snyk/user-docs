@@ -10,8 +10,6 @@ The `snyk monitor` command creates a project in your Snyk account to be continuo
 
 Use the `monitor` command before integrating a project into production, to take a snapshot of the code to be monitored in order to avoid pushing vulnerabilities into production. Choose a test frequency in your Settings if you want to change the frequency from the default, which is daily.
 
-A PR check will also do a test.
-
 After running the `snyk monitor` command, log in to the Snyk website and view your projects to see the monitor.
 
 If you make changes to your code, you must run the `monitor` command again.
@@ -149,7 +147,7 @@ Example: `$ snyk monitor --file=req.txt --package-manager=pip`
 
 For more information, see [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects)
 
-### `--source-dir=<PATH_TO_SOURCE_CODE>`&#x20;
+### `--source-dir=<PATH_TO_SOURCE_CODE>`
 
 Specify a directory of source code to be analyzed. Use with `--reachability`.
 
