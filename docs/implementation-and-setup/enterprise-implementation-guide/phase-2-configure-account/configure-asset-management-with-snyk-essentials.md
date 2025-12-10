@@ -1,18 +1,18 @@
-# Configure Asset Management with Snyk Essentials
+# Configure Asset management
 
-## Prerequisites for Snyk Essentials
+## Prerequisites
 
-Ensure that you meet the following prerequisites before setting up Snyk Essentials:
+Ensure that you meet the following prerequisites:
 
 * You are a Group Administrator for the Group, or you are assigned a Group level role with permissions to View Group and Edit Essentials.
 * The Group associated with Snyk Essentials includes organizations that have onboarded Snyk application security products.
 * You have the necessary permissions and authority to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk Essentials for repository asset discovery.
 
-## Configure Snyk Essentials and setup SCM integrations
+## Configure asset management and setup SCM integrations
 
-Start onboarding Snyk Essentials by identifying all inventory code-based assets and detecting which assets have security controls set up.
+Identify all inventory code-based assets and determine which assets have security controls in place.
 
-## Access Snyk Essentials
+## Access asset management
 
 Verify you can access Inventory from the Snyk web UI.
 
@@ -33,22 +33,14 @@ The default display in the **Integrations** view includes the configured Snyk in
 
 You can customize an existing integration or connect a new SCM integration.
 
-<figure><img src="../../../.gitbook/assets/integration-add-integration.png" alt="Snyk Essentials - The list of available integrations"><figcaption><p>Snyk Essentials - The list of available integrations</p></figcaption></figure>
-
 After you select **Add an integration**, a list of the available integrations is displayed. For each integration, you can add one or multiple profiles.
-
-The following video shows how to configure integrations for asset management and discovery.
-
-{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737657000/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-3_-_v1_-_Snyk_Essentials_and_Snyk_AppRisk_Integrations.mp4" %}
-Configure integrations for asset management and discovery
-{% endembed %}
 
 ### SCM integrations
 
 Configure your SCM integrations in the **Integrations** page.
 
 {% hint style="warning" %}
-The integration interface is dedicated to asset management. It is available with Snyk Essentials and is separate from the Organization integrations interface, which is used for security and license scanning.
+The integration interface is dedicated to asset management. It is available with Snyk Enterprise and is separate from the Organization integrations interface, which is used for security and license scanning.
 {% endhint %}
 
 When you set a token on the Group Level Integrations screen, it enhances security by providing a comprehensive view of access. This token allows broad access to all repositories, even those not permitted for individual developers, ensuring alignment between security and development teams.
@@ -104,7 +96,7 @@ The Inventory feature is structured in four sections, each focused on a specific
 * **Teams**: SCM repository assets grouped by teams. Note that only SCM organizations with teams, and repositories assigned to a team, appear on this layout.
 * **Technology**: SCM repository assets grouped by technology, as detected and tagged by Snyk Essentials.
 
-If you are using Snyk Essentials for the first time, Snyk recommends you first use the Coverage filter to determine where you have Snyk implemented. Then, you can use the Coverage Gap filter to identify the assets that do not meet the coverage requirements set in a **Set coverage control** policy.
+If you are using asset management for the first time, Snyk recommends you first use the Coverage filter to determine where you have Snyk implemented. Then, you can use the Coverage Gap filter to identify the assets that do not meet the coverage requirements set in a **Set coverage control** policy.
 
 You can use the Coverage Gap filter to:
 
@@ -119,10 +111,10 @@ You can use the Coverage Gap filter to:
 
 Use tags to categorize the assets. You can use tags in multiple ways:
 
-* Automatic tags: Snyk Essentials automatically tags repository assets with information about the used technologies (Python, Terraform, and so on) in the repository and repository latest updates. You can also use policies to tag repository and package assets. GitHub and GitLab topics can also be pulled from the repository and applied as Asset Tags in Snyk Essentials or Snyk AppRisk.
+* Automatic tags: asset management automatically tags repository assets with information about the used technologies (Python, Terraform, and so on) in the repository and repository latest updates. You can also use policies to tag repository and package assets. GitHub and GitLab topics can also be pulled from the repository and applied as Asset tags.
 
 {% hint style="info" %}
-BitBucket cannot automatically detect the language used in the source code from the repositories. In Snyk Essentials or Snyk Essentials, you can only see the language tags that have been manually added for BitBucket. For more information, see the official documentation provided by BitBucket.
+BitBucket cannot automatically detect the language used in the source code from the repositories. You can only see the language tags that have been manually added for BitBucket. For more information, see the official documentation provided by BitBucket.
 {% endhint %}
 
 * User-defined tags: set up custom tags through policies to categorize your assets beyond the system-generated tags. See the [Create policies](../../../manage-risk/policies/assets-policies/create-policies.md) page for more details.

@@ -33,16 +33,6 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
   * [Improved .NET scanning](../../supported-languages/supported-languages-list/.net/improved-.net-scanning.md)
   * [Snyk CLI pnpm support](../../supported-languages/supported-languages-list/javascript/javascript-for-open-source.md#pnpm)
   * [Improved Gradle SCM scanning](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning)
-* Third-party integrations for Snyk AppRisk
-  * [Veracode](broken-reference)
-  * [Checkmarx](broken-reference)
-  * [SonarQube](broken-reference)
-  * [GitGuardian](broken-reference)
-  * [Nightfall](broken-reference)
-  * [Dynatrace](broken-reference)
-  * [Sysdig](broken-reference)
-* [Application Analytics](broken-reference/)
-* [Snyk Runtime Sensor](broken-reference/)
 * Reports
   * [Repositories tested in CI/CD report](../../manage-risk/reporting/available-snyk-reports.md)
   * [PCI-DSS v4.0.1 report](../../manage-risk/reporting/available-snyk-reports.md#pci-dss-v4.0.1-report)

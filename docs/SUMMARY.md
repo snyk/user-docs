@@ -5,7 +5,7 @@
 ## Discover Snyk
 
 * [What's Snyk?](discover-snyk/whats-snyk.md)
-* [What's new?](discover-snyk/whats-new.md)
+* [What's new?](whats-new.md)
 * [Getting started](discover-snyk/getting-started/README.md)
   * [Snyk release process](discover-snyk/getting-started/snyk-release-process.md)
   * [Glossary](discover-snyk/getting-started/glossary.md)
@@ -85,7 +85,7 @@
       * [Enable Snyk Code](implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md)
       * [Configure integrations](implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/configure-integrations.md)
       * [Create Organizations](implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/create-organizations.md)
-    * [Configure Asset Management with Snyk Essentials](implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/configure-asset-management-with-snyk-essentials.md)
+    * [Configure Asset management](implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/configure-asset-management-with-snyk-essentials.md)
     * [Apply security and license policies](implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/apply-security-and-license-policies.md)
   * [Phase 3: Gain visibility](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/README.md)
     * [Set up Asset Policies](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/set-up-snyk-apprisk-policies.md)
@@ -897,6 +897,7 @@
     * [License policy results](manage-risk/policies/license-policies/license-policy-results.md)
 * [Analytics](manage-risk/analytics/README.md)
   * [Issues analytics](manage-risk/analytics/issues-analytics.md)
+  * [Application analytics](manage-risk/analytics/application-analytics.md)
   * [Redesigned Analytics](manage-risk/analytics/redesigned-analytics.md)
 * [Reporting](manage-risk/reporting/README.md)
   * [Available Snyk reports](manage-risk/reporting/available-snyk-reports.md)

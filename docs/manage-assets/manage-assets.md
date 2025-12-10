@@ -24,16 +24,9 @@ The following video summarizes the main features of the Inventory view from the 
 Reviewing asset inventory
 {% endembed %}
 
-{% hint style="info" %}
-**Release status**\
-Risk factors for Snyk AppRisk are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
-
-**Runtime discovered** and **Runtime last seen** filters take their release status from the [runtime integration](broken-reference) for which they provide data and are available only for Snyk AppRisk.
-{% endhint %}
-
 ## Assets overview
 
-In the Snyk Enterprise context, you can find information about assets under the following menus: [Inventory](manage-assets.md), [Policies](../manage-risk/policies/assets-policies/), [Insights for Snyk AppRisk](../manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials.md), and [Analytics](broken-reference/).
+In the Snyk Enterprise context, you can find information about assets under the following menus: [Inventory](manage-assets.md), [Policies](../manage-risk/policies/assets-policies/), and [Analytics](../manage-risk/analytics/application-analytics.md).
 
 The main source of information is the **Inventory** menu. Here, you can view, filter, and manage your assets.
 

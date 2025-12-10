@@ -305,10 +305,6 @@ A repository asset is created by discovering the repositories directly in the SC
 
 A cloud infrastructure entity such as an AWS S3 bucket, Identity and Access Management (IAM) role, or Virtual Private Cloud (VPC) flow log.
 
-### Risk-based prioritization **(Snyk AppRisk)**
-
-Assess the risk for each app based on the application context and conduct best-in-class security analysis. Provide fix guidance to direct developer remediation efforts towards the most critical business issues.
-
 ### Risk score
 
 A value assigned to an issue, ranging from 0 to 1,000, representing the risk imposed on your environment.
@@ -316,10 +312,6 @@ A value assigned to an issue, ranging from 0 to 1,000, representing the risk imp
 ### Rule
 
 A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/) and [IaC custom rules](../../scan-with-snyk/snyk-iac/current-iac-custom-rules/).
-
-### Runtime context (Snyk AppRisk)
-
-Information on where and how an application is running.
 
 ## S
 

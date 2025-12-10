@@ -1,10 +1,5 @@
 # Assets inventory filters
 
-{% hint style="info" %}
-**Release status**\
-Risk factors for Snyk AppRisk are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
-{% endhint %}
-
 From the **Inventory** > **All Assets** tab, you can use the search bar to look for specific keywords across assets. Results can include the asset name and data retrieved from the **Attributes** tab of an asset.
 
 ## Quick filters
@@ -67,8 +62,6 @@ The filters **Application**, **Catalog name**, **Category**, **Lifecycle**, **Ow
   * **Dormant**: with no commits made in the last six months.
   * **N/A**: with no commits detected by Snyk Essentials. This filter indicates that the repository was detected through a Snyk scan but not directly from the SCM. To detect SCM repositories, you must set up SCM integration at the Group level.
 * **Risk factors**: the available risk factors. Risk factors refer to assets that are vulnerable to security threats due to their exposure, sensitivity, compliance with security standards, and vulnerability history.
-* **Runtime discovered**: the period when Snyk discovered the runtime image asset.
-* **Runtime last seen**: the most recent time Snyk detected this image asset.
 * **SCM Integrations**: specifies how the asset is integrated with Snyk - at Group or Org level.
 * **SCM Organization**: the SCM Organization or Workspace where this asset is located.
 * **SCM Project**: the Project in the Azure DevOps or Bitbucket SCM integrations, where this asset is located.

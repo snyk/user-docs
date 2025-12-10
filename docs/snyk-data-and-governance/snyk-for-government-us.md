@@ -17,7 +17,6 @@ This list identifies all the areas with differences in functionality in the Snyk
 * Snyk Open Source is available except:
   * Does not include Unmanaged C++
   * Does not include the npm packages `@snyk/protect` and `@snyk/fix.`
-* Snyk AppRisk is **not available**.
 
 ## API keys not available
 

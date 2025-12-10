@@ -70,7 +70,7 @@ Your account is subject to contract terms that might restrict your ability to en
 
 <figure><img src="../.gitbook/assets/SnykCode.svg" alt="Snyk Code logo"><figcaption><p>Snyk Code</p></figcaption></figure>
 
-* &#x20;Snyk stores repository-specific information, for example, the name of the Git repository and file names. Snyk accesses your repository code for a one-time analysis and caches the source code according to the Cloud provider's storage minimum policy. After this period, only the location (file path, line, and column) of the issues found, the issue ID, and explanations are maintained. Your code is removed and is not stored in the Snyk network or logs.
+* Snyk stores repository-specific information, for example, the name of the Git repository and file names. Snyk accesses your repository code for a one-time analysis and caches the source code according to the Cloud provider's storage minimum policy. After this period, only the location (file path, line, and column) of the issues found, the issue ID, and explanations are maintained. Your code is removed and is not stored in the Snyk network or logs.
 * Results are stored in a database and used for analytic and monitoring purposes by Snyk.
 * Snyk Code does not use any customer code (1) for engine training purposes or (2) to extract examples to show possible fixes.
 * The AI model for Snyk Code Fix Suggestions is trained on public repositories with permissive licenses. Any data from repositories with changing licenses is immediately removed. Static analysis, automated assessment, and partial human labeling are used during the data collection.
@@ -109,23 +109,6 @@ Your account is subject to contract terms that might restrict your ability to en
 * During scans, Snyk gathers and stores a resource configuration state to perform analysis and stores the results of that analysis, including the details of misconfigurations that result in issues.
 * Snyk Cloud retains resource configuration states found in scans to provide context for Issues and resources, but does not store secrets or sensitive values.
 
-### Snyk Essentials and Snyk AppRisk
-
-<figure><img src="../.gitbook/assets/AppRisk_Color_64px.png" alt="Snyk App Risk logo"><figcaption><p>Snyk AppRisk</p></figcaption></figure>
-
-* Snyk Essentials and Snyk AppRisk provide visibility into data at the Snyk Group level and, therefore, cover the scope of all Snyk Organizations within a Snyk Group.
-* From Snyk Targets and Projects within associated Snyk Organizations, both Snyk Essentials and Snyk AppRisk access and store asset metadata to generate code repository assets, package (first-party) assets, and container image assets. Asset metadata includes the Git remote URL, languages represented in repositories, and commit history metadata (not the underlying source code).
-* From SCM integrations configured using the Integrations page, both Snyk Essentials and Snyk AppRisk access and store the following data:
-  * Commit history metadata from the last 50 commits for repositories monitored, including profile information on the code committer, such as GitHub user IDs, display name, or email.
-  * Metadata on the languages used for a given code repository, for example, Python, HTML, and so on.
-  * Repository “topics,” which are represented as asset tags.
-* From runtime data sources configured using Snyk AppRisk Integrations (including observability, CNAPP, and so on), Snyk AppRisk can access and store the following data:
-  * Kubernetes resources (including, but not limited to, deployments, pods, and so on) that are present across the various clusters.
-  * Application entities used in runtime, and how they are executed (for example, loaded into memory) - including but not limited to services and packages.
-  * Metadata on files in the OS itself.
-  * Information on the runtime and cloud environment.
-  * HTTP request metadata, for example, hostnames, paths, and so on, that are flowing through the cluster.
-
 ### Snyk Learn
 
 <figure><img src="../.gitbook/assets/SnykLearn.png" alt=""><figcaption><p>Snyk Learn</p></figcaption></figure>
@@ -156,7 +139,7 @@ Snyk accesses and stores the following information:
 * Requests and responses data: A sample of crawler requests and responses is stored, including a subset of scanner requests and responses indicating a vulnerability or potential vulnerability.
 * Integration-specific information from connected issue tracking integrations, including Project names, issue types, severity levels, and comments in issues linked to Snyk API & Web findings.
 * Authentication credentials for third-party integrations, for example, API keys and OAuth2 tokens for integrations such as Azure, Jira, and Cloudflare.
-* Discovery feature data, including screenshots of services scanned, portions of HTTP responses from those services, and a list of open ports for each domain/subdomain identified during scanning.&#x20;
+* Discovery feature data, including screenshots of services scanned, portions of HTTP responses from those services, and a list of open ports for each domain/subdomain identified during scanning.
 
 {% hint style="info" %}
 When scans are performed against production systems, responses may contain customer data. While Snyk strongly recommends that you use Snyk API & Web in staging and testing sites, and not against production sites, Snyk does implement security controls designed to protect customer data in accordance with the SOC 2 standard. For more details, see [Snyk certifications](how-snyk-handles-your-data.md#snyk-certifications).

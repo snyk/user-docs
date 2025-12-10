@@ -6,10 +6,6 @@ Snyk has several features to help you manage Application Security (AppSec) risk.
 
 Snyk Essentials provides a powerful set of tools to enhance application security management, including thorough vulnerability detection, easy integration, and effective remediation processes for improved security throughout the development lifecycle. See the [Snyk Essentials ](../scan-with-snyk/snyk-essentials.md)page for more details.
 
-## Snyk AppRisk
-
-Snyk AppRisk helps your organization manage application security risks by providing a centralized platform for a complete overview of your security posture. As an Application Security Posture Management (ASPM) solution, it integrates with your existing tools and fits directly into your team's workflows. This developer-focused approach creates a single source of truth, simplifying the process of identifying, prioritizing, and addressing security risks without disrupting the development lifecycle. By unifying security insights, Snyk AppRisk enables your teams to handle risks more effectively and efficiently. See the [Snyk AppRisk](broken-reference) page for more details about Snyk AppRisk.
-
 ## Analytics
 
 [Analytics](analytics/) shows the performance of a company's Application Security program.

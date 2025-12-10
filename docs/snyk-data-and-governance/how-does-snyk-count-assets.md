@@ -2,13 +2,13 @@
 
 ## Billable assets <a href="#billable-assets" id="billable-assets"></a>
 
-Managed Billable Assets are the resources, assets, and configuration files accessed through or managed by the customer in Snyk Essentials and Snyk AppRisk.
+Managed Billable Assets are the resources, assets, and configuration files accessed through or managed by the customer in Snyk Essentials.
 
 According to Snyk, the following are considered Managed Billable Assets against the customer's subscription allocation:
 
 | Asset type                                                                                                                                                                                                                                                                             | Billable asset examples                  |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| <p><strong>Repository assets:</strong> </p><p>Source Code Repository, where Snyk counts the total repositories.</p>                                                                                                                                                                    | github.com/snyk/hello-world              |
+| <p><strong>Repository assets:</strong></p><p>Source Code Repository, where Snyk counts the total repositories.</p>                                                                                                                                                                     | github.com/snyk/hello-world              |
 | <p><strong>Container image assets:</strong></p><p>Represent the built image that is found in a customer’s estate, where images are counted based on the globally unique identifiers, like image IDs and SHA, that may contain an application and all of its software dependencies.</p> | dockerhub.com/my-company/my-image:latest |
 
 ## Asset usage policy <a href="#asset-usage-policy" id="asset-usage-policy"></a>

@@ -30,7 +30,6 @@ SCM integrations with Broker Support Snyk Code, Open Source, Container, IaC, and
 
 | Integration                        | Classic Broker support               | Universal Broker support             |
 | ---------------------------------- | ------------------------------------ | ------------------------------------ |
-| AppRisk                            | Yes                                  | Yes                                  |
 | Artifactory Private Registry       | Yes                                  | Yes                                  |
 | Azure Repository                   | Yes                                  | Yes                                  |
 | Bitbucket Server                   | Yes                                  | Yes                                  |

@@ -25,13 +25,6 @@ To get better context and clarity over your asset inventory, Snyk Essentials all
 
 Each inventory tab may include different counts of assets and scanned artifacts, depending on the grouping context. Otherwise, all columns and data manipulation features are the same on each inventory tab.
 
-{% hint style="info" %}
-**Release status**\
-Risk factors for Snyk AppRisk are in Early Access and are available only with Snyk Enterprise plans with Snyk AppRisk. If you want to set it up in your Group, contact your Snyk account team.
-
-**Runtime discovered** and **Runtime last seen** filters take their release status from the [runtime integration](broken-reference) for which they provide data and are available only for Snyk AppRisk.
-{% endhint %}
-
 You can filter the information for all the inventory tabs and use any of the available filters listed on the [Assets inventory filters](assets-inventory-filters.md) page.
 
 ### Inventory Overview
