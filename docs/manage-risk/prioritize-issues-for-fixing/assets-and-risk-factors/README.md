@@ -1,17 +1,16 @@
-# Assets and risk factors for Snyk AppRisk
+# Assets and risk factors
 
-The capabilities of the SnykWeb UI Issues menu rely on understanding your application context to help you better prioritize your security issues. It does that by understanding how your application is configured and relying on that information to provide you with triage and prioritization of your assets and issues for the Snyk Essentials plan, and it also adds specific [risk factors](./#risk-factors) and [evidence graph](../using-the-issues-ui-with-snyk-apprisk/evidence-graph.md) information for the Snyk AppRisk plan.
+The capabilities of the SnykWeb UI Issues menu rely on understanding your application context to help you better prioritize your security issues. It does that by understanding how your application is configured and relying on that information to provide you with triage and prioritization of your assets and issues for the Snyk Essentials plan, and it also adds specific [risk factors](./#risk-factors) and [evidence graph](../using-the-issues-ui/evidence-graph.md) information.
 
 * [Assets](./#assets) are analyzed using Snyk Issues, focusing on images, Kubernetes resources, and packages to understand how they all interact with each other.
 * [Risk factors](./#risk-factors) are analyzed using Snyk Issues and grouped into four main categories:
   * [Deployed](risk-factor-deployed.md)
-  * [Loaded package](risk-factor-loaded-package.md)
   * [OS conditions](risk-factor-os-condition.md)
   * [Public facing](risk-factor-public-facing.md)
 
 ## Assets
 
-Snyk AppRisk issues analyzes the assets described on this page.
+Snyk issues analyzes the assets described on this page.
 
 ### Images
 
@@ -38,7 +37,7 @@ Snyk Open Source uses the word package to refer to the third-party dependencies 
 By understanding your images, packages, and Kubernetes resources as "application context", Snyk can compute the following risk factors:
 
 * [Deployed](risk-factor-deployed.md)
-* [Loaded package](risk-factor-loaded-package.md)
+* [Loaded package](/broken/pages/x5b9XFg7zGtut8eTWBQp)
 * [OS condition](risk-factor-os-condition.md)
 * [Public facing](risk-factor-public-facing.md)
 
@@ -48,7 +47,7 @@ You can enable and disable all of these "application context" risk factors throu
 The Risk Factors are available only for Snyk AppRisk.
 {% endhint %}
 
-Depending on the integration options enabled for your application, risk factors are applied differently. You can [prioritize your integrations](broken-reference) by customizing the available Insights options from the Group settings.
+Depending on the integration options enabled for your application, risk factors are applied differently. You can [prioritize your integrations](../assets-and-risk-factors-for-snyk-apprisk/broken-reference/) by customizing the available Insights options from the Group settings.
 
 Risk factors are supported for stateful entities such as the following Kubernetes components: [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/), [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), and [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/).
 

@@ -45,7 +45,7 @@ See [Single Sign-On (SSO) for authentication to Snyk](../implementation-and-setu
 
 * [Legacy reporting](../manage-risk/reporting/legacy-reports/)
 * [Issues Analytics](../manage-risk/analytics/issues-analytics.md)
-* [Insights](../manage-risk/prioritize-issues-for-fixing/using-the-issues-ui-with-snyk-apprisk/)
+* [Insights](../manage-risk/prioritize-issues-for-fixing/using-the-issues-ui/)
 
 ## Platform features not available
 

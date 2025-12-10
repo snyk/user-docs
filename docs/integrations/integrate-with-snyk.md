@@ -73,8 +73,6 @@ After you finish setting up an integration, you can see the following connection
 
 If you encounter any of the failed statuses, check the Connection failure details list available on the integration card.
 
-<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption><p>Integration card - Connection failure details list</p></figcaption></figure>
-
 ### Snyk Essentials integrations ecosystem
 
 You can refer to the table below to verify the availability and compatibility of all integrations for Snyk Essentials. The integrations are categorized by type, listed by name, and indicated as available or not for Snyk Essentials.
@@ -92,8 +90,6 @@ You can add an integration by following these steps:
 3. Configure your connection and click **Done**.
 
 After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
-
-<figure><img src="../.gitbook/assets/image (138).png" alt="AppRisk - Integration status" width="375"><figcaption><p>Integration card - Integration status</p></figcaption></figure>
 
 ### Using Snyk Broker
 
