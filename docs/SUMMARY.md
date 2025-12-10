@@ -406,7 +406,7 @@
     * [Invalid string length error when scanning projects](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/invalid-string-length-error-when-scanning-projects.md)
     * [Scan all unmanaged JAR files](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/scan-all-unmanaged-jar-files.md)
     * [Log4shell command use](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/log4shell-command-use.md)
-    * [Monitor your projects at regular intervals](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals.md)
+    * [Monitor your Projects at regular intervals](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals.md)
     * [How to select the Organization to use in the CLI](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md)
     * [Group Projects by branch or version for monitoring](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md)
     * [Setup.py file failing to scan or finding zero dependencies](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/setup.py-file-failing-to-scan-or-finding-zero-dependencies.md)
