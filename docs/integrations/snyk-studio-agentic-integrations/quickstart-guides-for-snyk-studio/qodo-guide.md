@@ -19,49 +19,33 @@ Install the Snyk MCP Server using the method that best suits your operating syst
 In the Qodo chatbox, click the **Add MCP** **tools** > **Add new MCP**. Provide the required details for the Snyk MCP server:
 
 * The MCP Server name
-* The path to the Snyk CLI
-* The Snyk MCP command to [start the MCP server](./#starting-the-snyk-mcp-server).
-* You can see a list of all MCP Servers and their tool. Locate Snyk from the list and enable all of its tools.
+* `command`: Either `npx` or the full path to the Snyk CLI.
+* `args`: The Snyk MCP command to [start the MCP server](./#starting-the-snyk-mcp-server).
 
-#### Install with Node.js and `npx`
+`npx` option:
 
-Create or edit the MCP configuration file `.vscode/mcp.json` in the root directory of your Project.
-
-If you have the Node.js `npx` executable installed in your environment, add the following JSON snippet to the file:
-
-```json5
+```json
 {
-  "mcpServers": {
     "Snyk": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"],
-      "env": {}
+        "command": "npx",
+        "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"]
     }
-  }
 }
+
 ```
 
-#### Install with pre-installed Snyk CLI
+full path option:
 
-Create or edit the MCP configuration file `.vscode/mcp.json` in the root directory of your Project.
-
-If you have the Snyk CLI installed and accessible on your system path, include the following JSON snippet in the file. You might need to specify the full path to the Snyk executable CLI:
-
-```json5
+```json
 {
-  "mcpServers": {
     "Snyk": {
-      "type": "stdio",
       "command": "/absolute/path/to/snyk",
       "args": ["mcp", "-t", "stdio"],
-      "env": {}
-    }
   }
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
+For the full path option, if the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
 
 The following example shows a Snyk MCP Server that was successfully configured.
 
@@ -117,3 +101,49 @@ applyTo: "**"
 - Repeat this process until no new issues are found.
 ```
 {% endcode %}
+
+#### Qodo Workflows
+
+Create a custom Snyk workflow to scan and remediate security vulnerabilities. The following is a suggestion for [Qodo workflows](https://docs.qodo.ai/qodo-documentation/qodo-gen/agent/workflows). Append the following contents to a Qodo agent file `remediate-snyk-studio.toml`:
+
+```toml
+# Version of the agent configuration standard
+version = "1.0"
+
+[commands.remediate]
+available_tools = [
+  "Snyk",
+  "Code Navigation",
+  "filesystem",
+  "git",
+  "Terminal",
+  "Web Search"
+]
+description = "Remediate application security issues with Snyk Studio"
+instructions = """
+You are an expert at developing secure code. Snyk flagged several SAST and SCA issues in this application.
+
+Please do the following:
+
+1. Use Snyk to get context on the issues.
+2. Fix all of the issues.
+3. Use Snyk again to confirm the issues are fixed. If the issues are not fixed, go back to the previous step.
+4. Build the app and run unit tests to ensure you didn’t break it. I’ll run it and do additional validation when you’re done.
+
+Thanks!"""
+mcpServers = """
+{
+  "Snyk": {
+    "command": "npx",
+    "type": "CUSTOM",
+    "env": {},
+    "args": [
+      "-y",
+      "snyk@latest",
+      "mcp",
+      "-t",
+      "stdio"
+    ]
+  }
+}"""
+```
