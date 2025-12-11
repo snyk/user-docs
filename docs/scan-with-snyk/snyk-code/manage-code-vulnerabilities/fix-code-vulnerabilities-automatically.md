@@ -63,9 +63,7 @@ A representation of information flow involved in fixing one issue is presented i
 
 ## Enable Snyk Agent Fix
 
-Enable Snyk Agent Fix for your Group or Organization in the Snyk Web UI by navigating to **Group/Organization** > **Settings** > **DeepCode AI Fix**.
-
-<figure><img src="../../../.gitbook/assets/2024-10-25_15-34-58.png" alt="DeepCodeAI Fix Suggestions settings in Snyk Preview"><figcaption><p>DeepCodeAI Fix Suggestions settings in Snyk Preview</p></figcaption></figure>
+Enable Snyk Agent Fix for your Group or Organization in the Snyk Web UI by navigating to **Group/Organization** > **Settings** > **Snyk Agent Fix**.
 
 ## Fix code issues automatically
 
