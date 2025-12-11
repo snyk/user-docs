@@ -7150,6 +7150,26 @@
         ],
         "type": "object"
       },
+      "DependencyCountFact": {
+        "description": "DependencyCountFact represents a dependency count fact.",
+        "properties": {
+          "total_dependency_count": {
+            "format": "int64",
+            "type": "integer"
+          },
+          "type": {
+            "enum": [
+              "dependency_count_fact"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "total_dependency_count"
+        ],
+        "type": "object"
+      },
       "DependencyPathEvidence": {
         "description": "Dependency path to a software component within an SBOM dependency graph.\n\nFinding types: SCA",
         "properties": {
@@ -19771,6 +19791,14 @@
               "$ref": "#/components/schemas/TestSubjectLocator"
             },
             "type": "array"
+          },
+          "test_facts": {
+            "description": "Facts about the test that were computed during test execution.",
+            "items": {
+              "$ref": "#/components/schemas/TestFact"
+            },
+            "readOnly": true,
+            "type": "array"
           }
         },
         "required": [
@@ -19980,6 +20008,15 @@
           "custom-execution"
         ],
         "type": "string"
+      },
+      "TestFact": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DependencyCountFact"
+          }
+        ],
+        "description": "TestFact represents a test fact union.",
+        "type": "object"
       },
       "TestOutcome": {
         "description": "Outcome of a test; pass or fail.",
