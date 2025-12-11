@@ -13881,6 +13881,9 @@
               "assigning_user_email": {
                 "type": "string"
               },
+              "is_active": {
+                "type": "boolean"
+              },
               "learning_path_ids": {
                 "items": {
                   "format": "uuid",
