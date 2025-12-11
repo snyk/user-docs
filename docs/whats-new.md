@@ -373,7 +373,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Snyk API**
 
 * A prerequisites section has been added to the Group level of [GitHub integration](developer-tools/scm-integrations/organization-level-integrations/github-enterprise.md#prerequisites), and more details about the [Pull personal repositories](developer-tools/scm-integrations/group-level-integrations/github-for-snyk-essentials.md) option have been added to the same documentation page.
-* The [Set up Insights for Snyk AppRisk ](discover-snyk/broken-reference/)section was updated to emphasize the risk factors availability for each integration option.
+* The [Set up Insights ](discover-snyk/broken-reference/)section was updated to emphasize the risk factors availability for each integration option.
 * The [Snyk Runtime Sensor](discover-snyk/broken-reference/) has been updated to reflect the importance of adopting it to achieve the most effective integration and to access its continuously expanded set of features.
 
 ### Snyk Broker
@@ -435,13 +435,6 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
   * [Harness](developer-tools/scm-integrations/application-context-for-scm-integrations/#harness)
   * [OpsLevel](developer-tools/scm-integrations/application-context-for-scm-integrations/#opslevel)
   * [Datadog Service Catalog](developer-tools/scm-integrations/application-context-for-scm-integrations/#datadog-service-catalog)
-* The Snyk AppRisk documentation section has been reorganized to enhance visibility and simplify the adoption of Snyk AppRisk. Here is where you can find the main features:
-  * Inventory - [Manage assets](manage-assets/manage-assets.md) section
-  * Issues - [Prioritize issues for fixing](manage-risk/prioritize-issues-for-fixing/#prioritization-based-on-risk) section
-  * Policies - [Assets policies](manage-risk/policies/assets-policies/) section
-  * Integrations - [Snyk SCM integrations](developer-tools/scm-integrations/group-level-integrations/) and [Integrate with Snyk](integrations/integrate-with-snyk.md) sections
-  * Snyk AppRisk - [Scan with Snyk](/broken/pages/nNWD8AlEZMgFVpuuOo4P) section
-  * Analytics - [Manage risk](manage-risk/analytics/application-analytics.md) section
 
 ### Snyk Integrations
 
