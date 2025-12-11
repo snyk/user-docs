@@ -1,5 +1,9 @@
 # Visual Studio extension
 
+{% hint style="info" %}
+Visual Studio 2026 not supported.
+{% endhint %}
+
 ## **Scan early, fix as you develop: elevate your security posture**
 
 Integrating security checks early in your development lifecycle helps you pass security reviews seamlessly and avoid expensive fixes down the line.
