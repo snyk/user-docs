@@ -1116,6 +1116,8 @@
 * [Reporting security issues](snyk-data-and-governance/reporting-security-issues.md)
 * [Snyk terms of support and services glossary](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/README.md)
   * [Snyk Jumpstart Services Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md)
+  * [Snyk Jumpstart Basic Services Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-basic-services-description.md)
+  * [Snyk Jumpstart Basic for API & Web Services Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-basic-api-web-services-description.md)
   * [Snyk Spark Services Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-spark-services-description.md)
   * [Snyk Jumpstart Customer Prerequisites](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-customer-prerequisites.md)
   * [Snyk Residency Services](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-residency-services.md)
