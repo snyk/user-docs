@@ -22,11 +22,6 @@ The Snyk Essentials plan is included in the Snyk Enterprise plan, meaning that y
 * [Backstage file](../../developer-tools/scm-integrations/application-context-for-scm-integrations/) customization for SCM integrations.
 * [Customized analytics](../../manage-risk/analytics/) and reports about the application.
 
-{% hint style="info" %}
-If you want to upgrade your plan to Snyk AppRisk, please contact your salesperson.\
-On the [Snyk AppRisk ](broken-reference)page, you can find more details about the available features.
-{% endhint %}
-
 ## Implementation strategy overview
 
 This guide is composed of multiple phases, outlining a series of actions that align with three goals:

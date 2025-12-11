@@ -120,7 +120,6 @@ This includes creating credentials references needed for your connections. Each 
 ```
 Which Connection type do you want to create?
 acr
-apprisk
 artifactory
 …
 > github

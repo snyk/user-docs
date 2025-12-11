@@ -39,8 +39,6 @@ Integration types may require different SCM-specific authentication parameters. 
 
 | Integration Type   | Parameter Name                             | Format                                                           |
 | ------------------ | ------------------------------------------ | ---------------------------------------------------------------- |
-| Snyk AppRisk       | Checkmarx password                         | Alphanumeric password                                            |
-|                    | SonarQube API token                        | API token                                                        |
 | Artifactory        | Artifactory URL                            | `<username>:<password>@<yourdomain.artifactory.com>/artifactory` |
 | Azure Repos        | Azure Repos Token                          | Azure Repos PAT                                                  |
 | Bitbucket Server   | Bitbucket Password                         | Alphanumeric password                                            |

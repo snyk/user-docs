@@ -17,21 +17,17 @@ You can hover over a policy to gain access to extra details:
 * **Clone** - Duplicates the policy.
 * **Delete** - Removes the policy.
 
-<figure><img src="../../../.gitbook/assets/Policies-New UI.png" alt="AppRisk - Policies overview screen"><figcaption><p>Assets Policy - Overview screen</p></figcaption></figure>
-
 ## Customize a policy
 
-Click any available policies to view them on the full screen and access all their functionalities.&#x20;
+Click any available policies to view them on the full screen and access all their functionalities.
 
 ### Simulate the policy
 
-You can run a simulation to get an overview of how the policy is working. A number is displayed above the policy, indicating the total of assets found matching the criteria you added to the policy.&#x20;
-
-<figure><img src="../../../.gitbook/assets/Simulate Policies -New UI.png" alt="AppRisk - Policy simulation"><figcaption><p>Assets Policy  - Policy simulation</p></figcaption></figure>
+You can run a simulation to get an overview of how the policy is working. A number is displayed above the policy, indicating the total of assets found matching the criteria you added to the policy.
 
 ### Run the policy
 
-All policies are automatically run in a maximum of 3 hours after creation, then every 3 hours. You can manually run a policy by clicking Run to apply the policy to your assets. Changes are applied automatically to your assets by implementing the actions you set on the policy.&#x20;
+All policies are automatically run in a maximum of 3 hours after creation, then every 3 hours. You can manually run a policy by clicking Run to apply the policy to your assets. Changes are applied automatically to your assets by implementing the actions you set on the policy.
 
 You can also add an **AND** **Send email** or **Send Slack notification** action to be notified after the policy is successfully run.
 

@@ -29,7 +29,7 @@ To configure a Group-level integration, you must be a Group Admin or have a cust
 1. Profile name (`mandatory`): Input your integration profile name.
 2. Service type (`mandatory`): Select the service type, Cloud, or Server.
 3. User email (`mandatory`): Atlassian account email.
-4. API Token (`mandatory`) to create your BitBucket [API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/) from your BitBucket organization, with the following permissions:
+4. API Token (`mandatory`) to create your BitBucket [API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/) from your BitBucket Organization, with the following permissions:
    * `read:user:bitbucket`
    * `read:workspace:bitbucket`
    * `read:repository:bitbucket`

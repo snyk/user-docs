@@ -37,15 +37,10 @@ Snyk Open Source uses the word package to refer to the third-party dependencies 
 By understanding your images, packages, and Kubernetes resources as "application context", Snyk can compute the following risk factors:
 
 * [Deployed](risk-factor-deployed.md)
-* [Loaded package](/broken/pages/x5b9XFg7zGtut8eTWBQp)
 * [OS condition](risk-factor-os-condition.md)
 * [Public facing](risk-factor-public-facing.md)
 
 You can enable and disable all of these "application context" risk factors through the Group **Settings**, on the **Issues** tab. If you choose to disable a risk factor, a provider selection, or the Kubernetes cluster mapping, Snyk will no longer compute them.
-
-{% hint style="info" %}
-The Risk Factors are available only for Snyk AppRisk.
-{% endhint %}
 
 Depending on the integration options enabled for your application, risk factors are applied differently. You can [prioritize your integrations](../assets-and-risk-factors-for-snyk-apprisk/broken-reference/) by customizing the available Insights options from the Group settings.
 

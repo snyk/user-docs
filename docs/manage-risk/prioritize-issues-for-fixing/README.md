@@ -109,7 +109,7 @@ You can use the Risk Score at the Snyk Group or Snyk Organization level.
 
 ## Prioritization based on risk
 
-[Prioritization with Issues](prioritization-for-snyk-essentials.md) for Snyk AppRisk uses holistic application intelligence to help you identify and prioritize container, code, and open source issues based on the risk they pose to your application. You can prioritize issues based on asset classification as defined in Snyk AppRisk policies.
+[Prioritization with Issues](prioritization-for-snyk-essentials.md) for Snyk uses holistic application intelligence to help you identify and prioritize container, code, and open source issues based on the risk they pose to your application. You can prioritize issues based on asset classification as defined in Snyk policies.
 
 You can use Prioritization with Insights to identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. These are the risk factors that you can use:
 
@@ -141,7 +141,7 @@ You can use Issues Analytics at the Snyk tenant level, including both the Snyk G
 
 ### Application Analytics
 
-[Application Analytics](broken-reference) for Snyk AppRisk helps you assess your AppSec program from a top-down approach. It allows you to review applications, teams, and asset classes, and then focus on specific assets. You can improve security by identifying areas for enhancement, recognizing risks, and addressing blind spots. The tool retrieves data from all available groups for the tenant.
+[Application Analytics](broken-reference/) for Snyk helps you assess your AppSec program from a top-down approach. It allows you to review applications, teams, and asset classes, and then focus on specific assets. You can improve security by identifying areas for enhancement, recognizing risks, and addressing blind spots. The tool retrieves data from all available groups for the tenant.
 
 Prioritize the displayed data by using the available filters, dimension views, and specific timeframes.\
 \

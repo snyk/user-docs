@@ -1,21 +1,17 @@
 # Risk factor: public facing
 
-{% hint style="info" %}
-The Public facing risk factor is available only to Snyk AppRisk users.
-{% endhint %}
-
 Knowing that code is deployed tells you that there is a possibility that someone can exploit a flaw you are concerned about. That someone may be a well-trusted person within your Organization or a completely unknown external entity. Snyk can further narrow down the possibilities by determining if the package or Image is configured to be exposed to external traffic.
 
 Cloud-native solutions such as AWS, Kubernetes, and GCP are used for many purposes, including running workloads and providing network connectivity to the workloads. This can be done in many ways, including using core networking primitives like services, ingresses, load balancers, or a combination of various networking solutions like Gloo, Istio, Envoy, and so on.
 
 ## Snyk analysis to determine the network connectivity paths
 
-The Snyk platform analyzes various data sources to compute the network connectivity paths. This information is used by Snyk AppRisk to determine if packages and Images may be exposed to external traffic.
+The Snyk platform analyzes various data sources to compute the network connectivity paths. This information is used by Snyk to determine if packages and Images may be exposed to external traffic.
 
 Cloud-native solutions are deterministic in how network connectivity is configured. Snyk uses that knowledge to compute the answers based on the available information. For example, to understand how the network connectivity can be configured, see Kubernetes [Services](https://kubernetes.io/docs/concepts/services-networking/service/) and [Ingresses](https://kubernetes.io/docs/concepts/services-networking/ingress/) documentation.
 
 {% hint style="info" %}
-Snyk AppRisk Issues supports the following configurations: Kubernetes services and ingress, and Gloo.
+Snyk Issues supports the following configurations: Kubernetes services and ingress, and Gloo.
 {% endhint %}
 
 Kubernetes Connector checks the images for ingress configuration. If not detected, the image is considered public facing.

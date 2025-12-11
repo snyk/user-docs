@@ -88,7 +88,7 @@
     * [Configure Asset management](implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/configure-asset-management-with-snyk-essentials.md)
     * [Apply security and license policies](implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/apply-security-and-license-policies.md)
   * [Phase 3: Gain visibility](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/README.md)
-    * [Set up Asset Policies](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/set-up-snyk-apprisk-policies.md)
+    * [Set up Asset Policies](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/set-up-asset-policies.md)
     * [Import Projects](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/import-projects.md)
     * [Add Project tags and attributes](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/add-project-tags-and-attributes.md)
   * [Phase 4: Create a fix strategy](implementation-and-setup/enterprise-implementation-guide/phase-4-create-a-fix-strategy.md)
