@@ -142,7 +142,7 @@
       * [Add a new connection to your Universal Broker](enterprise-setup/snyk-broker/universal-broker/add-a-new-connection-to-your-universal-broker.md)
       * [Restart your Broker for a new environment variable](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/restart-your-broker-for-a-new-environment-variable.md)
       * [Disconnect and clean up](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/disconnect-and-clean-up.md)
-      * [Using the API to set up Universal Broker](enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/README.md)
+      * [Using the API to set up Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/README.md)
         * [Using the API to set up a GitHub connection](enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/using-the-api-to-set-up-a-github-connection.md)
         * [Universal Broker workflow diagrams](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/universal-broker-workflow-diagrams.md)
       * [Upgrade an Organization integration from Classic Broker to Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md)

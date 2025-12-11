@@ -164,7 +164,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk Broker**
 
 * Updated the Snyk Broker documentation to include distinct steps for setting up the [Container Registry Agent with Docker](implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent), whether using the Classic or Universal Broker.
-* Updated the [Using the API to set up Universal Broker](enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
+* Updated the [Using the API to set up Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
 * Snyk Learn courses have been integrated into the [Universal Broker](enterprise-setup/snyk-broker/universal-broker/) pages.
 
 ### **Other updates**
