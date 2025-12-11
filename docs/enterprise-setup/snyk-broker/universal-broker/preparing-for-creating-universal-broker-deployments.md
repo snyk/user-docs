@@ -1,6 +1,6 @@
 # Preparing for creating Universal Broker deployments
 
-Before creating deployments, ensure you have met the [prerequisites](prerequisites-for-universal-broker.md).
+Before creating deployments, ensure you have met the [prerequisites](../../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/prerequisites-for-universal-broker.md).
 
 ## Prepare hosts for the installation of Universal Broker
 

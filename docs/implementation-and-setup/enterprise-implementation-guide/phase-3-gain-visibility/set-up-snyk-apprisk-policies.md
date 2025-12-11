@@ -1,12 +1,12 @@
 # Set up Asset Policies
 
-The [asset policies](../../../manage-risk/policies/assets-policies/), which come with Snyk Essentials, help you automate the process of adding business context and receiving notifications. You can set up policies to automatically identify the coverage control gaps. &#x20;
+The [asset policies](../../../manage-risk/policies/assets-policies/), which come with Snyk Essentials, help you automate the process of adding business context and receiving notifications. You can set up policies to automatically identify the coverage control gaps.
 
 ## Understand a policy
 
 You need two components to create and understand a policy:
 
-* &#x20;**Filters**: helps you create asset groups based on defined criteria such as tags or asset name.
+* **Filters**: helps you create asset groups based on defined criteria such as tags or asset name.
 * **Actions**: set actions that can be performed on the filtered assets, such as setting asset classification or sending a Slack message or email.
 
 {% hint style="info" %}
@@ -15,7 +15,7 @@ A newly created policy may take up to 3 hours to become visible and be applied.
 
 ## Create a policy
 
-You can create a policy by navigating to the Policy view and using the **New policy** button in the top right corner. Name the policy and, optionally, describe it.&#x20;
+You can create a policy by navigating to the Policy view and using the **New policy** button in the top right corner. Name the policy and, optionally, describe it.
 
 The policy builder editor focuses on two main areas:
 
@@ -36,11 +36,11 @@ Here are the steps for creating a policy:
 1. Navigate to the Policy view and click the **New policy** button in the top right corner.
 2. Provide a name and, optionally, a description of your policy, and click **Next**.
 3. Define the filters of your policy and click **Apply**.
-4.  Set actions for your policy. Click the + icon to add an action. You can trigger an action based on the assets you have filtered or create a logic node to combine it with another filter node.&#x20;
+4.  Set actions for your policy. Click the + icon to add an action. You can trigger an action based on the assets you have filtered or create a logic node to combine it with another filter node.
 
     <figure><img src="../../../.gitbook/assets/image (145).png" alt="Create policy - multiple nodes"><figcaption><p>Create policy - Multiple nodes</p></figcaption></figure>
 5. When you add another filter node and select the + icon next to it, you can flow into existing logic nodes.
-6.  Trigger an action based on the assets you have filtered.&#x20;
+6.  Trigger an action based on the assets you have filtered.
 
     <figure><img src="../../../.gitbook/assets/image (148).png" alt=""><figcaption><p>Create policy - Set action</p></figcaption></figure>
 
