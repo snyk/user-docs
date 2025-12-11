@@ -29,8 +29,6 @@ You can use this type of prioritization with any of the following Snyk Plans:
 
 * Snyk Free/Team Plan
 * Snyk Enterprise Plan
-* Snyk Essentials
-* Snyk AppRisk
 
 You can prioritize your Projects at the Snyk Group level and Snyk Organization level.
 
@@ -48,8 +46,6 @@ You can use this type of prioritization with any of the following Snyk Plans:
 
 * Snyk Free/Team Plan
 * Snyk Enterprise Plan
-* Snyk Essentials
-* Snyk AppRisk
 
 You can prioritize your Projects at the Snyk Organization level.
 
@@ -77,8 +73,6 @@ You can use this type of prioritization with any of the following Snyk Plans:
 
 * Snyk Free/Team Plan
 * Snyk Enterprise Plan
-* Snyk Essentials
-* Snyk AppRisk
 
 You can use the Priority Score at the Snyk Organization level.
 
@@ -90,8 +84,6 @@ You can use this type of prioritization with any of the following Snyk Plans:
 
 * Snyk Free/Team Plan
 * Snyk Enterprise Plan
-* Snyk Essentials
-* Snyk AppRisk
 
 You can use the Risk Score at the Snyk Organization level.
 
@@ -99,13 +91,7 @@ You can use the Risk Score at the Snyk Organization level.
 
 You can [prioritize issues when using reports](../reporting/available-snyk-reports.md) to generate reports across an Organization or Group.
 
-You can use this type of prioritization with any of the following Snyk Plans:
-
-* Snyk Enterprise Plan
-* Snyk Essentials
-* Snyk AppRisk
-
-You can use the Risk Score at the Snyk Group or Snyk Organization level.
+You can use this type of prioritization with the Snyk Enterprise Plan. You can use the Risk Score at the Snyk Group or Snyk Organization level.
 
 ## Prioritization based on risk
 
@@ -118,10 +104,6 @@ You can use Prioritization with Insights to identify and prioritize your Contain
 * OS condition
 * Public facing
 
-You can use this type of prioritization with the following Snyk Plan:
-
-* Snyk AppRisk
-
 You can use the Prioritization with Insights at the Snyk Group or Snyk Organization level.
 
 ## Prioritization based on coverage and security program
@@ -132,10 +114,7 @@ Snyk Issues Analytics provides a comprehensive overview of your entire applicati
 
 [Issue Analytics](../analytics/issues-analytics.md) provides a view into the performance of your AppSec program. You can use Issues Analytics to better understand the strengths and weaknesses of your program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
 
-You can use this type of prioritization with the following Snyk Plan:
-
-* Snyk Enterprise
-* Snyk AppRisk
+You can use this type of prioritization with the Snyk Enterprise Plan.
 
 You can use Issues Analytics at the Snyk tenant level, including both the Snyk Group and Snyk Organization levels.
 
@@ -156,10 +135,6 @@ View by:
 * Asset Class
 * Application
 * Owner
-
-You can use this type of prioritization with the following Snyk Plan:
-
-* Snyk AppRisk
 
 ## Prioritization strategies
 
