@@ -11191,15 +11191,44 @@
       },
       "GroupAttributes": {
         "example": {
-          "name": "My Group"
+          "created_at": "2022-03-16T00:00:00Z",
+          "name": "My Group",
+          "updated_at": "2022-03-16T00:00:00Z"
         },
         "properties": {
+          "avatar_url": {
+            "description": "The URL of an image to use as the group's avatar.",
+            "format": "uri",
+            "type": "string"
+          },
+          "created_at": {
+            "description": "The time the group was created.",
+            "format": "date-time",
+            "type": "string"
+          },
+          "logo_url": {
+            "description": "The URL of an image to use as the group's logo.",
+            "format": "uri",
+            "type": "string"
+          },
           "name": {
+            "description": "The name of the group.",
+            "type": "string"
+          },
+          "slug": {
+            "description": "A slug uniquely identifying the group",
+            "type": "string"
+          },
+          "updated_at": {
+            "description": "The time the group was created.",
+            "format": "date-time",
             "type": "string"
           }
         },
         "required": [
-          "name"
+          "name",
+          "created_at",
+          "updated_at"
         ],
         "type": "object"
       },
