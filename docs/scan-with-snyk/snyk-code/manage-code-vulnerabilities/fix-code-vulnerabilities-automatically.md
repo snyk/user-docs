@@ -99,7 +99,7 @@ When you apply the fix, you will be guided to where the new code has been introd
 
 ## Limitations
 
-Snyk Agent Fix is at the forefront of AI, but there are still limitations based on the AI engine. Users must always review the Snyk Agent Fix suggestions to ensure that the resulting implementation of the fix does not break their application
+Snyk Agent Fix is at the forefront of AI, but there are still limitations based on the AI engine. Users must always review the Snyk Agent Fix suggestions to ensure that the resulting implementation of the fix does not break their application.
 
 * Snyk Agent Fix suggestions might generate code that results in the application not working properly
 * Snyk Agent Fix suggestions might generate code that is not syntactically correct
