@@ -176,6 +176,8 @@ options:
 
 Snyk also supports scanning targets that are not publicly accessible. Snyk utilizes an on-prem agent `Farcaster`. To learn more about how this works and the different configuration options, visit the [GitHub repository](https://github.com/Probely/farcaster-onprem-agent).
 
+Note that the scanning agent is scoped to the user and Organization, meaning that only the user who set up the agent can use it.
+
 ### Quick start
 
 1.  Create a scanning agent:<br>
@@ -227,7 +229,10 @@ https://github.com/Probely/farcaster-onprem-agent
 {"name":"test-output","installer_generated":false,"id":"<uuid>","online":false,"fallback":false,"rx_bytes":0,"tx_bytes":0,"latest_handshake":0}
 ```
 
-Note: Make sure to copy the `Agent Token`, store it securely and follow the instructions.&#x20;
+Notes:
+
+* Ensure to copy the `Agent Token`, store it securely, and follow the instructions.&#x20;
+* You are limited to three scanning agents per user and Organization.&#x20;
 
 #### Specifying the name (optional)
 
