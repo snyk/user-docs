@@ -14,7 +14,9 @@ For Maven, Snyk can generate a dependency tree from POM through the SCM integrat
 * SCM integration: Snyk approximates the build as if it were built at that time.
 
 {% hint style="info" %}
-Developer dependencies (`scope=test`) are ignored as they are not pushed to production and are generally considered noise. You can enable them in CLI by adding `--dev`
+Developer dependencies (`scope=test`) are ignored as they are not pushed to production and are generally considered noise. You can enable them in CLI by adding `--dev`.
+
+Because Maven resolves dependencies in the order it encounters them in the POM file, it is important that dev dependencies are listed last in the POM file. Not doing so can lead to dev dependencies being reported by Snyk.
 {% endhint %}
 
 ### Gradle
@@ -29,7 +31,7 @@ If possible, enable [Gradle lockfiles](https://docs.gradle.org/current/userguide
 
 For Kotlin, the following manifest files are supported:
 
-* build.gradle (Groovy DSL) for both SCM and CLI&#x20;
+* build.gradle (Groovy DSL) for both SCM and CLI
 * build.gradle.kts (Kotlin DSL) for CLI only
 
 ## **Maven and Gradle Projects using gradle.lockfile**
@@ -72,7 +74,7 @@ Improved Gradle SCM scanning is in Early Access. You can enable the feature by u
 * [Dependency exclusions](https://docs.gradle.org/current/userguide/dependency_downgrade_and_exclude.html#sec:excluding-transitive-deps)
 * Version catalogs declared in [Gradle](https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog-declaration) and [TOML](https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format) files - `gradle/libs.versions.toml`
 * [Multi-project builds](https://docs.gradle.org/current/userguide/declaring_dependencies_between_subprojects.html), project names, project references
-* [Spring's `mavenBom`](https://docs.spring.io/dependency-management-plugin/docs/current/reference/html/#dependency-management-configuration-bom-import)&#x20;
+* [Spring's `mavenBom`](https://docs.spring.io/dependency-management-plugin/docs/current/reference/html/#dependency-management-configuration-bom-import)
 * [Spring Boot plugin BOMs](https://docs.spring.io/spring-boot/gradle-plugin/managing-dependencies.html)
 * Maven BOMs as [`platform`](https://docs.gradle.org/current/userguide/platforms.html#sub:using-platform-to-control-transitive-deps) dependencies
 
