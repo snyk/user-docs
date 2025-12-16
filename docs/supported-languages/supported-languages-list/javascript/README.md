@@ -52,14 +52,14 @@ The following frameworks and libraries are supported:
 * lodash
 * luxon
 * minimongo
+{% endcolumn %}
+
+{% column %}
 * minimist
 * modelcontextprotocol/typescript-sdk
 * mongodb
 * Mongoose
 * mercurius
-{% endcolumn %}
-
-{% column %}
 * Nestjs
 * Node Crypto
 * node-buffer

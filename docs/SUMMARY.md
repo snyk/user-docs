@@ -247,7 +247,7 @@
     * [SCM integrations with Maven and Gradle](supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md)
   * [JavaScript](supported-languages/supported-languages-list/javascript/README.md)
     * [Snyk CLI for JavaScript](supported-languages/supported-languages-list/javascript/snyk-cli-for-javascript.md)
-    * [SCM integrations for JavaScript](supported-languages/supported-languages-list/javascript/scm-integrations-for-javascript.md)
+    * [SCM integrations for JavaScript](supported-languages/supported-languages-list/javascript/git-repositories-and-javascript.md)
   * [.NET (C# and VB.NET)](supported-languages/supported-languages-list/.net/README.md)
     * [.NET for code analysis](supported-languages/supported-languages-list/.net/.net-for-code-analysis.md)
     * [.NET for open source](supported-languages/supported-languages-list/.net/.net-for-open-source.md)
