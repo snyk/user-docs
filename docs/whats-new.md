@@ -61,7 +61,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * For [Ruby](supported-languages/supported-languages-list/ruby.md), versions 2.3.X are no longer supported. The Ruby-specific versions have been updated to include more version patches.
 * PR Check report was added as Early Access to the available reports to identify Snyk PR check locations, increase adoption, and pinpoint common failure impacts on developer workflows.
 * You can now label your assets with metadata on repository assets and build artifacts, helping tag, manage security, and group items by features. An asset label differs from an asset tag, which enables key-value tags for structured metadata, allowing for granular filtering, policy creation, and improved system alignment.
-* [JavaScript for open source](supported-languages/supported-languages-list/javascript/javascript-for-open-source.md#pnpm) has been updated to include full support for pnpm Projects.
+* [JavaScript for open source](/broken/pages/pSj77gr1a5XbHtxJxYTN#pnpm) has been updated to include full support for pnpm Projects.
 
 ## September 2025
 
@@ -80,7 +80,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * For Java and Kotlin, the list of [supported Gradle versions](supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-package-managers-and-package-registries) now includes Gradle 9.
 * For [Ruby](supported-languages/supported-languages-list/ruby.md), an end-of-support notice has been added to say that starting Oct 1, 2025, Fix PRs are no longer supported for Projects using Ruby versions 3.1.x and lower. The table of supported Ruby versions has also been updated.
-* For Javascript, [support for pnpm Projects](supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js.md#pnpm) has been added.
+* For Javascript, [support for pnpm Projects](/broken/pages/kJOeCbuqexRTuTQPx6aZ#pnpm) has been added.
 * `Raise Support Community Cases` and `View Support Community Cases` Tenant level permissions have been added. To learn more about which Tenant roles these permissions apply to, visit Pre-defined roles, [Tenant-level permissions](snyk-platform-administration/user-roles/pre-defined-roles.md#tenant-level-permissions).
 * The [Analytics](manage-risk/analytics/) menu now updates its data daily instead of hourly.
 * Learn how to resolve duplicated and unenriched assets discovered outside Group and Organization-level SCM integrations.
@@ -410,7 +410,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 * [`snyk auth`](developer-tools/snyk-cli/commands/auth.md) command help updated to reflect OAuth default.
 * [CLI authentication](developer-tools/snyk-cli/authenticate-to-use-the-cli.md) instructions updated for OAuth default and improved flow.
 * [`snyk config environment`](developer-tools/snyk-cli/commands/config-environment.md) command help has been added.
-* CLI [support for pnpm added](supported-languages/supported-languages-list/javascript/javascript-for-open-source.md#pnpm).
+* CLI [support for pnpm added](/broken/pages/pSj77gr1a5XbHtxJxYTN#pnpm).
 
 ### Snyk IDE
 
