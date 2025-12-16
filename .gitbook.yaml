@@ -205,3 +205,6 @@ redirects:
   supported-languages/supported-languages-list/java-and-kotlin/more-information-about-java-support: supported-languages/supported-languages-list/java-and-kotlin/README.md
   developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/publish-snyk-code-cli-results: developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md
   integrations/connect-a-third-party-integration: /integrations/integrate-with-snyk.md
+  supported-languages/supported-languages-list/javascript/javascript-for-code-analysis: supported-languages/supported-languages-list/javascript/README.md
+  supported-languages/supported-languages-list/javascript/javascript-for-open-source: supported-languages/supported-languages-list/javascript/README.md
+  supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js: supported-languages/supported-languages-list/javascript/README.md
