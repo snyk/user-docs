@@ -6,19 +6,17 @@ Snyk API v1 docs are in the [Reference](../../../reference/).
 
 ## ​Integration example
 
-First of all, we need to create a new Zap in [Zapier](https://zapier.com).
+Create a new Zap in [Zapier](https://zapier.com).
 
 ### Trigger
 
-In order to have an access to request headers, we need to create **"Catch Raw Hook"** trigger. It comes with a disadvantage that request payload will be provided as a string and we will need to parse it to the JSON.
+To access request headers, create a **Catch Raw Hook** trigger. This trigger provides the request payload as a string, so you must parse it to JSON.
 
-![](<../../../../.gitbook/assets/untitled (1).png>)
-
-It will provide us a Webhook url, were we can send requests:
+You receive a webhook URL where you send requests.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-1%20\(1\).png)
 
-Now we need to create a Webhook in Snyk via API with provided url.
+Create a Webhook in Snyk using the API with the `your-url` URL.
 
 ```
 POST /api/v1/org/{orgId}/webhooks HTTP/2
@@ -31,7 +29,7 @@ POST /api/v1/org/{orgId}/webhooks HTTP/2
 | }
 ```
 
-The API will respond with a nearly created Webhook.
+The API responds with the new webhook.
 
 ```
 < HTTP/2 200 
@@ -42,7 +40,7 @@ The API will respond with a nearly created Webhook.
 | }
 ```
 
-Now we are able to ping a webhook, in order to test a Zapier's trigger.
+You can ping a webhook to test the Zapier trigger.
 
 ```
 > POST /api/v1/org/{orgId}/webhooks/{webhookId}/ping HTTP/2
@@ -51,23 +49,23 @@ Now we are able to ping a webhook, in order to test a Zapier's trigger.
 > Content-Type: application/json
 ```
 
-Now we will be able to select a ping request from the list, and map fields.
+Select a ping request from the list and map fields.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-2%20\(1\).png)
 
 ### Action (validate a payload)
 
-In order to validate a payload, we need to create a JS Action:
+Create a JS Action to validate a payload:
 
 **"Code by Zapier" → "Run Javascript"**
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-3%20\(1\).png)
 
-We need to map `headers['X-Hub-Signature']` and payload string to the snippet variables.
+Map `headers['X-Hub-Signature']` and `payload string` to the snippet variables.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-4%20\(1\).png)
 
-Following snippet will introduce a `isValid: boolean` variable to the Zap's fields.
+This snippet adds an `isValid: boolean` variable to Zap fields.
 
 {% hint style="info" %}
 Replace `my-secret-string` string with a webhook's secret string.
@@ -96,15 +94,15 @@ try {
 }
 ```
 
-Test the snippet, make sure `isValid === true`.
+Test the snippet, ensure `isValid === true`.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-5%20\(1\).png)
 
 ### Action (parse a payload)
 
-Let's create another action, to parse a payload from string to something Zapier can understand.
+Create another action to parse the payload string into a format Zapier uses.
 
-We need to create the same JS Action:
+Create the same JS Action:
 
 **"Code by Zapier" → "Run Javascript"**, with the following field mapping:
 
@@ -120,13 +118,13 @@ try {
 }
 ```
 
-That will parse a request payload and map it to Zap's variables.
+Parse a request payload and map it to the Zap variables.
 
 ### Action (format issues)
 
-New issues are provided as a list of objects, unfortunately, Zapier doesn't understand that format well, rather it likes a list of strings. So We need to format `newIssues` to `string[]`.
+New issues are lists of objects. Zapier requires a list of strings. Format `newIssues` as `string[]`.
 
-Let's create one more JS Action:
+Create one more JS Action:
 
 **"Code by Zapier" → "Run Javascript"**, and paste the following snippet:
 
@@ -149,18 +147,18 @@ try {
 
 ### Action (filter)
 
-Now with all fields provided, we can decide whatever we want to do anything with an event or not.
+After providing all fields, decide whether to use the event.
 
-To filter, we need to create **"Filter by Zapier"** app:
+To filter, create **"Filter by Zapier"** app:
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-7%20\(1\).png)
 
-Now you will be able to choose how you want it to be filtered.
+Select a filter method.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-8%20\(1\).png)
 
 ### Action (send a notification)
 
-With the actions above, we are able to access all necessary fields, and we can build a notification template. In my case, I choose to send an email. But it can be anything else.
+Access all fields to build a notification template. Send an email or choose other notification types.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-9%20\(1\).png)
