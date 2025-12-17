@@ -430,7 +430,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 * The [API End of Life (EOL) process and migration guides](snyk-api/api-end-of-life-eol-process-and-migration-guides/) are now published and updated to support the process, which began in July.
 * [Asset inventory filtering](manage-assets/assets-inventory-components.md#asset-tabs) describes the new, simplified view that provides an improved experience of filtering the assets.
 * The [Asset inventory layouts](manage-assets/assets-inventory-layouts.md) have been renamed to better reflect their functionality.
-* Four new SCM integrations are now available for Snyk AppRisk:
+* Four new SCM integrations are now available for Snyk:
   * [Atlassian Compass](developer-tools/scm-integrations/application-context-for-scm-integrations/#atlassian-compass)
   * [Harness](developer-tools/scm-integrations/application-context-for-scm-integrations/#harness)
   * [OpsLevel](developer-tools/scm-integrations/application-context-for-scm-integrations/#opslevel)
