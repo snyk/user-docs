@@ -25,6 +25,20 @@ Snyk is hosted in the following regions. Each region has its own base URL.
 
 <table><thead><tr><th width="189">Region</th><th>Base URL</th></tr></thead><tbody><tr><td>SNYK-US-01</td><td><code>https://api.snyk.io/v1/</code></td></tr><tr><td>SNYK-US-02</td><td><code>https://api.us.snyk.io/v1/</code></td></tr><tr><td>SNYK-EU-01 </td><td><code>https://api.eu.snyk.io/v1/</code> </td></tr><tr><td>SNYK-AU-01</td><td><code>https://api.au.snyk.io/v1/</code></td></tr></tbody></table>
 
+Before running 
+``` 
+snyk auth <API_TOKEN>
+``` 
+run 
+``` 
+snyk config environment <REGION_NAME>
+```
+
+For example, 
+```
+snyk config environment SNYK-US-02
+```
+
 {% hint style="info" %}
 This API is available only over HTTPS. Calling the API over HTTP will yield a 404 for all requests.
 {% endhint %}
@@ -70,7 +84,7 @@ The V1 API uses standard HTTP error codes for error responses.
     "error": "Org 39db46b1-ad57-47e6-a87d-e34f6968030b was not found or you may not have the correct permissions to access the org."
 }
 ```
-
+The error 404 could also be due to you trying to authenticate with an API token generated in a region different than the one you are trying to work with. Please ensure the region you are authenticating in and the region in which API token is generated.
 The error reference is also supplied in the `x-error-reference` header in the server reply.
 
 Example `500` response:
