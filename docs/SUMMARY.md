@@ -271,6 +271,7 @@
   * [Quickstart guides for Snyk Studio](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/README.md)
     * [Amazon Q guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/amazon-q-guide.md)
     * [Antigravity guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/antigravity-guide.md)
+    * [Augment Code guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/augment-code-guide.md)
     * [Claude Code guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/claude-code-guide.md)
     * [Cline guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/cline-guide.md)
     * [Codex CLI guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/codex-cli-guide.md)
