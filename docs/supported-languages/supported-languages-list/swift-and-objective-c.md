@@ -1,74 +1,88 @@
 # Swift and Objective-C
 
-## Applicability and integration
-
 {% hint style="info" %}
-Swift is supported for Snyk Code and Snyk Open Source.
+Swift and Objective-C are supported for Snyk Code. Swift and Objective-C are also supported for Snyk Open Source.
 {% endhint %}
 
-Available integrations:
+{% hint style="info" %}
+Code analysis support for Objective-C is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](../../snyk-platform-administration/snyk-preview.md).
+{% endhint %}
 
-* SCM import
-* CLI and IDE: test or monitor your app
+## Swift and Objective-C for Snyk Code
 
-Available functions:
+For an overview of the supported security rules, see the following pages:
+* [Swift rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/swift-rules.md)
+* [Objective-C rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/objective-c-rules.md)
 
-* Test your app's SBOM using `pkg:swift`, `pkg:cocoapods`
-* Test your app's packages using `pkg:swift`, `pkg:cocoapods`
-
-## Technical specifications
+For Swift with Snyk Code, Snyk supports Swift versions up to 5.7.x. You can use higher versions, but Snyk does not provide support for them.
 
 ### Supported frameworks and libraries
 
-For Swift and Objective-C, the following frameworks and libraries are supported:
+The following frameworks and libraries are supported for both Swift and Objective-C:
 
-* Swift standard library
-* Foundation
-* AppKit
-* Swift UI
-* UI Kit
-* Asynchttpclient
-* Commoncrypt
-* Commoncrypto
-* Cryptokit
-* Cryptoswift
-* Cryptor
+{% columns %}
+{% column %}
+* AFNetworking
 * AlamoFire
-* Filekit
-* google-gemini/generative-ai-swift
-* MacPaw/OpenAI
+* AppKit
+* Asynchttpclient
+* CocoaLumberjack
+* CommonCrypto (Native API)
+* Commoncrypt
+* Cryptokit
+* Cryptor
+* Cryptoswift
 * dylanshine/openai-kit
+* Filekit
+* FMDB
+* Foundation
+* google-gemini/generative-ai-swift
+* IDZSwiftCommonCrypto
+* JLRoutes
+* MacPaw/OpenAI
+{% endcolumn %}
+
+{% column %}
+* Mantle
+* NSTask (Native API)
+* OneSignal-iOS-SDK
 * Pathos
-* SQLite3
-* Webkit
-* SwiftCLI
-* ShellOut
-* SwiftShell
-* Subprocess
-* Shout
-* Swiftline
+* Realm
 * RNCryptor
+* SDWebImage
+* ShellOut
+* Shout
+* SQLite3
+* Subprocess
+* Swift standard library
+* Swift UI
+* SwiftCLI
+* Swiftline
+* SwiftShell
+* UI Kit
+* Webkit
+* XLForm
+* ZXingObjC
+{% endcolumn %}
+{% endcolumns %}
+
+### Supported file formats
+
+* For Swift: .`swift`
+* For Objective-C: Snyk supports `.m` files, and implicitly supports `.h` files.
+
+### Available features
+
+* Reports
+* Interfile analysis
+
+## Swift and Objective-C for Snyk Open Source
 
 ### Supported package managers and registries
 
 For Swift and Objective-C, Snyk supports the following package managers: CocoaPods, Swift Package Manager v3.0 or higher.
 
 As package registries, Snyk for Swift and Objective-C uses multiple sources, including [cocoapods.org](https://cocoapods.org/) and [swiftpackageregistry.com](https://swiftpackageregistry.com/).
-
-## Swift for Snyk Code
-
-For Swift with Snyk Code, Snyk supports Swift versions up to 5.7.x. You can use higher versions, but Snyk does not provide support for them.
-
-For Swift with Snyk Code, the following file formats are supported: .`swift`
-
-Available features:
-
-* Reports
-* Interfile analysis
-
-## Swift for Snyk Open Source
-
-For Swift with Snyk Open Source, you can use Swift 3.0 or higher.
 
 ### Supported file formats
 
@@ -98,13 +112,11 @@ It is not possible to scan Swift Package Manager Projects using Git import.
 
 ### Cocoapods and CLI
 
-To build the dependency graph, Snyk examines the `Podfile` and `Podfile.lock` files.\
-\
+To build the dependency graph, Snyk examines the `Podfile` and `Podfile.lock` files.
+
 When working with Swift and Objective-C projects from the Snyk CLI, you can prevent testing any lock files that are out-of-sync by using the `--strict-out-of-sync=true`
 
 For Cocoapods and Git, to test your Projects, Snyk analyzes the `Podfile` and `Podfile.lock` files.
-
-The following summarizes support for Git import and testing.
 
 ### Features
 

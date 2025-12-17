@@ -1,14 +1,65 @@
 # Dart and Flutter
 
-## Applicability and integration
+{% hint style="info" %}
+Dart and Flutter are supported for Snyk Code and Snyk Open Source. 
+{% endhint %}
 
 {% hint style="info" %}
-Dart and Flutter are supported only for Open Source.
+Code analysis support for Dart is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](../../snyk-platform-administration/snyk-preview.md).
 {% endhint %}
+
+## Dart and Flutter for Snyk Code
+
+For an overview of the supported security rules, visit [Dart/Flutter rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/dart-flutter-rules.md).
+
+### Supported frameworks and libraries
+
+The following frameworks and libraries are supported:
+
+{% columns %}
+{% column %}
+* crypto
+* encrypt
+* uuid
+* basic_utils
+* pointycastle
+* cryptography
+* sqflite
+* sqlite3
+* drift
+* realm
+* http
+* dio
+* cupertino_http
+* web_socket_channel
+* web
+{% endcolumn %}
+
+{% column %}
+* cronet_http
+* flutter_inappwebview
+* webview_flutter
+* twilio_flutter
+* dart_eval
+* google_sign_in
+* flutter_facebook_auth
+* sign_in_with_apple
+* flutter_appauth
+* openid_client
+* firebase_auth
+* amplify_flutter
+* flutter_stripe
+* nfc_manager
+* mobile_scanner
+* flutter
+{% endcolumn %}
+{% endcolumns %}
+
+## Applicability and integration
 
 The following functions are available for Dart and Flutter:
 
-Available functions:&#x20;
+Available functions: 
 
 * Test your app's SBOM using `pkg:pub`
 * Test your app's packages using `pkg:pub`
