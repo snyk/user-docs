@@ -6198,7 +6198,7 @@
         "discriminator": {
           "mapping": {
             "ai_bom_file_bundle": "#/components/schemas/FileBundleStoreData",
-            "ai_bom_scm_bundle": "#/components/schemas/SCMBundleStoreData"
+            "ai_bom_scm_bundle": "#/components/schemas/ScmBundleStoreData"
           },
           "propertyName": "type"
         },
@@ -6207,7 +6207,7 @@
             "$ref": "#/components/schemas/FileBundleStoreData"
           },
           {
-            "$ref": "#/components/schemas/SCMBundleStoreData"
+            "$ref": "#/components/schemas/ScmBundleStoreData"
           }
         ]
       },
@@ -18044,42 +18044,6 @@
         "format": "uuid",
         "type": "string"
       },
-      "SCMBundleStoreAttributes": {
-        "properties": {
-          "target_id": {
-            "description": "The id of the target which has been imported into Snyk.",
-            "format": "uuid",
-            "type": "string"
-          },
-          "target_version": {
-            "description": "The branch or commit hash to scan",
-            "example": "main",
-            "type": "string"
-          }
-        },
-        "required": [
-          "target_id"
-        ],
-        "type": "object"
-      },
-      "SCMBundleStoreData": {
-        "properties": {
-          "attributes": {
-            "$ref": "#/components/schemas/SCMBundleStoreAttributes"
-          },
-          "type": {
-            "enum": [
-              "ai_bom_scm_bundle"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "attributes"
-        ],
-        "type": "object"
-      },
       "SSOConnection": {
         "additionalProperties": false,
         "properties": {
@@ -18480,6 +18444,42 @@
       "ScanType": {
         "example": "scan",
         "type": "string"
+      },
+      "ScmBundleStoreAttributes": {
+        "properties": {
+          "target_id": {
+            "description": "The id of the target which has been imported into Snyk.",
+            "format": "uuid",
+            "type": "string"
+          },
+          "target_version": {
+            "description": "The branch or commit hash to scan",
+            "example": "main",
+            "type": "string"
+          }
+        },
+        "required": [
+          "target_id"
+        ],
+        "type": "object"
+      },
+      "ScmBundleStoreData": {
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/ScmBundleStoreAttributes"
+          },
+          "type": {
+            "enum": [
+              "ai_bom_scm_bundle"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "attributes"
+        ],
+        "type": "object"
       },
       "ScmRepoLocator": {
         "description": "ScmRepoLocator locates a test subject by SCM repository coordinates.",
