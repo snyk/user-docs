@@ -426,6 +426,62 @@ The description of your PR will be:
 The current base image is: node:xx.xx.x
 ```
 
+#### <mark style="color:purple;">`container.recommended_base_image_short_name`</mark>
+
+This variable is for container projects only. It extracts the short image name (image:tag) from the full recommended base image path by removing the registry prefix.
+
+For example, `docker.io/library/node:18-alpine` becomes `node:18-alpine`.
+
+**Input**
+
+```
+{
+    "data": {
+        "attributes": {
+            "description": "Upgrade to {{ container.recommended_base_image_short_name }}"
+            
+        },
+        "type": "pull_request_template"
+    }
+}
+```
+
+**Output**
+
+The description of your PR will be:
+
+```
+Upgrade to node:18-alpine
+```
+
+#### <mark style="color:purple;">`container.current_base_image_short_name`</mark>
+
+This variable is for container projects only. It extracts the short image name (image:tag) from the full current base image path by removing the registry prefix.
+
+For example, `docker.io/library/node:16` becomes `node:16`.
+
+**Input**
+
+```
+{
+    "data": {
+        "attributes": {
+            "description": "Upgrading from {{ container.current_base_image_short_name }}"
+            
+        },
+        "type": "pull_request_template"
+    }
+}
+```
+
+**Output**
+
+The description of your PR will be:
+
+```
+Upgrading from node:16
+```
+
 #### <mark style="color:purple;">`snyk_pull_request_type: prType (fix, upgrade, backlog, unknown)`</mark>
 
 This is the prType of your Project or repository. You can use it to display the PR type from the pull request description.
@@ -803,6 +859,48 @@ The description of your PR will be:
 
 ```
 The current base image is: node:xx.xx.x
+```
+
+#### <mark style="color:purple;">`container.recommended_base_image_short_name`</mark>
+
+This variable is for container projects only. It extracts the short image name (image:tag) from the full recommended base image path by removing the registry prefix.
+
+For example, `docker.io/library/node:18-alpine` becomes `node:18-alpine`.
+
+**Input**
+
+```yaml
+description: |
+  Upgrade to {{ container.recommended_base_image_short_name }}
+```
+
+**Output**
+
+The description of your PR will be:
+
+```yaml
+Upgrade to node:18-alpine
+```
+
+#### <mark style="color:purple;">`container.current_base_image_short_name`</mark>
+
+This variable is for container projects only. It extracts the short image name (image:tag) from the full current base image path by removing the registry prefix.
+
+For example, `docker.io/library/node:16` becomes `node:16`.
+
+**Input**
+
+```yaml
+description: |
+  Upgrading from {{ container.current_base_image_short_name }}
+```
+
+**Output**
+
+The description of your PR will be:
+
+```yaml
+Upgrading from node:16
 ```
 
 #### <mark style="color:purple;">`snyk_pull_request_type: prType (fix, upgrade, backlog, unknown)`</mark>
