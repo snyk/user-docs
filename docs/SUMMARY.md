@@ -959,6 +959,8 @@
   * [OpenSourceSettings](snyk-api/reference/opensourcesettings.md)
   * [Organizations (v1)](snyk-api/reference/organizations-v1.md)
   * [Orgs](snyk-api/reference/orgs.md)
+  * [Package Version](snyk-api/reference/package-version.md)
+  * [Package](snyk-api/reference/package.md)
   * [Policies](snyk-api/reference/policies.md)
   * [Projects (v1)](snyk-api/reference/projects-v1.md)
   * [Projects](snyk-api/reference/projects.md)
