@@ -630,6 +630,16 @@
           "type": "string"
         }
       },
+      "Ecosystem": {
+        "description": "Ecosystem name (e.g., npm, maven, pypi)",
+        "in": "path",
+        "name": "ecosystem",
+        "required": true,
+        "schema": {
+          "example": "npm",
+          "type": "string"
+        }
+      },
       "EffectiveSeverityLevel": {
         "description": "One or more effective severity levels to filter issues.",
         "explode": false,
@@ -1130,6 +1140,16 @@
           "type": "string"
         }
       },
+      "PackageName": {
+        "description": "Package name (URL encoded if needed)",
+        "in": "path",
+        "name": "package_name",
+        "required": true,
+        "schema": {
+          "example": "express",
+          "type": "string"
+        }
+      },
       "PackageUrl": {
         "description": "A URI-encoded Package URL (purl). Supported purl types are apk, cargo, cocoapods, composer, conan, deb, gem, generic, golang, hex, maven, npm, nuget, pub, pypi, rpm, and swift. A version for the package is also required. Maven packages support an optional checksum qualifier to request checksum validation. When provided, the response will include checksum validation metadata indicating whether the package and checksum match records in Snyk's database. Checksum format: `algorithm:hex_value` (lowercase), for example `sha1:ad9503c3e994a4f611a4892f2e67ac82df727086`. Only one checksum is supported per request. Supported algorithms: md5, sha1, sha256, sha512.",
         "example": "pkg:maven/com.fasterxml.woodstox/woodstox-core@5.0.0?checksum=sha1:ad9503c3e994a4f611a4892f2e67ac82df727086",
@@ -1137,6 +1157,16 @@
         "name": "purl",
         "required": true,
         "schema": {
+          "type": "string"
+        }
+      },
+      "PackageVersion": {
+        "description": "Package version (URL encoded if needed)",
+        "in": "path",
+        "name": "package_version",
+        "required": true,
+        "schema": {
+          "example": "4.19.2",
           "type": "string"
         }
       },
@@ -5771,6 +5801,32 @@
         },
         "type": "object"
       },
+      "CommunityDetails": {
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "has_code_of_conduct_file": {
+            "type": "boolean"
+          },
+          "has_contributing_file": {
+            "type": "boolean"
+          },
+          "has_funding_file": {
+            "type": "boolean"
+          },
+          "has_readme_file": {
+            "type": "boolean"
+          },
+          "rating": {
+            "type": "string"
+          },
+          "stargazers_count": {
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
       "ConfigurationAttributes": {
         "properties": {
           "configuration": {
@@ -7466,6 +7522,23 @@
           "type",
           "required"
         ],
+        "type": "object"
+      },
+      "DirectVulnerabilitiesCounts": {
+        "properties": {
+          "critical": {
+            "type": "integer"
+          },
+          "high": {
+            "type": "integer"
+          },
+          "low": {
+            "type": "integer"
+          },
+          "medium": {
+            "type": "integer"
+          }
+        },
         "type": "object"
       },
       "DockerHubAttributes": {
@@ -14293,6 +14366,46 @@
         ],
         "type": "object"
       },
+      "MaintenanceDetails": {
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "first_release_published_at": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "forks_count": {
+            "type": "integer"
+          },
+          "is_archived": {
+            "type": "boolean"
+          },
+          "is_forked": {
+            "type": "boolean"
+          },
+          "latest_release_number": {
+            "type": "string"
+          },
+          "latest_release_published_at": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "lifecycle": {
+            "type": "string"
+          },
+          "open_pull_request_count": {
+            "type": "integer"
+          },
+          "rating": {
+            "type": "string"
+          },
+          "total_versions_count": {
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
       "ManagedPolicyRef": {
         "description": "Reference to a managed policy.",
         "properties": {
@@ -15454,6 +15567,26 @@
         ],
         "type": "object"
       },
+      "OwnerDetails": {
+        "properties": {
+          "followers_count": {
+            "type": "integer"
+          },
+          "location": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "repositories_count": {
+            "type": "integer"
+          },
+          "total_stars": {
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
       "Package": {
         "description": "Dependency models a package dependency.",
         "properties": {
@@ -15472,6 +15605,190 @@
           "name",
           "version"
         ],
+        "type": "object"
+      },
+      "PackageAttributes": {
+        "example": {
+          "ecosystem": "npm",
+          "language": "JavaScript",
+          "latest_version": "4.19.2",
+          "owner_details": {
+            "followers_count": 123,
+            "location": "somewhere",
+            "name": "expressjs",
+            "repositories_count": 45,
+            "total_stars": 65000
+          },
+          "package_details": {
+            "homepage_url": "https://expressjs.com",
+            "registry_url": "https://www.npmjs.com/package/express",
+            "repository_url": "https://github.com/expressjs/express"
+          },
+          "package_health": {
+            "community": {
+              "description": "...",
+              "has_code_of_conduct_file": true,
+              "has_contributing_file": true,
+              "has_funding_file": false,
+              "has_readme_file": true,
+              "rating": "Active",
+              "stargazers_count": 75000
+            },
+            "maintenance": {
+              "description": "...",
+              "first_release_published_at": "2010-01-03T00:00:00Z",
+              "forks_count": 66,
+              "is_archived": false,
+              "is_forked": false,
+              "latest_release_number": "4.19.2",
+              "latest_release_published_at": "2024-10-08T00:00:00Z",
+              "lifecycle": "active",
+              "open_pull_request_count": 2,
+              "rating": "Healthy",
+              "total_versions_count": 760
+            },
+            "overall_rating": "Recommended with Review",
+            "popularity": {
+              "dependent_packages_count": 280,
+              "dependent_repos_count": 65000,
+              "description": "...",
+              "downloads": 12000,
+              "rating": "Influential"
+            },
+            "security": {
+              "description": "...",
+              "direct_vulnerabilities": true,
+              "direct_vulnerabilities_total": 3,
+              "rating": "Security review needed"
+            }
+          },
+          "package_id": "pkg:npm/express",
+          "package_name": "express"
+        },
+        "properties": {
+          "description": {
+            "example": "Fast, unopinionated, minimalist web framework",
+            "type": "string"
+          },
+          "ecosystem": {
+            "example": "npm",
+            "type": "string"
+          },
+          "keywords": {
+            "example": [
+              "node",
+              "javascript",
+              "express",
+              "server"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "language": {
+            "example": "JavaScript",
+            "type": "string"
+          },
+          "latest_version": {
+            "example": "4.19.2",
+            "type": "string"
+          },
+          "owner_details": {
+            "$ref": "#/components/schemas/OwnerDetails"
+          },
+          "package_details": {
+            "$ref": "#/components/schemas/PackageDetails"
+          },
+          "package_health": {
+            "$ref": "#/components/schemas/PackageHealth"
+          },
+          "package_id": {
+            "example": "pkg:npm/express",
+            "type": "string"
+          },
+          "package_name": {
+            "example": "express",
+            "type": "string"
+          }
+        },
+        "required": [
+          "package_id",
+          "ecosystem",
+          "package_name",
+          "language"
+        ],
+        "type": "object"
+      },
+      "PackageDetails": {
+        "properties": {
+          "homepage_url": {
+            "type": "string"
+          },
+          "registry_url": {
+            "type": "string"
+          },
+          "repository_url": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "PackageDetails__0": {
+        "properties": {
+          "homepage_url": {
+            "format": "uri",
+            "type": "string"
+          },
+          "registry_url": {
+            "format": "uri",
+            "type": "string"
+          },
+          "repository_url": {
+            "format": "uri",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "PackageHealth": {
+        "properties": {
+          "community": {
+            "$ref": "#/components/schemas/CommunityDetails"
+          },
+          "maintenance": {
+            "$ref": "#/components/schemas/MaintenanceDetails"
+          },
+          "overall_rating": {
+            "type": "string"
+          },
+          "popularity": {
+            "$ref": "#/components/schemas/PopularityDetails"
+          },
+          "security": {
+            "$ref": "#/components/schemas/SecurityDetails"
+          }
+        },
+        "type": "object"
+      },
+      "PackageHealth__0": {
+        "properties": {
+          "community": {
+            "$ref": "#/components/schemas/CommunityDetails"
+          },
+          "maintenance": {
+            "$ref": "#/components/schemas/MaintenanceDetails"
+          },
+          "overall_rating": {
+            "type": "string"
+          },
+          "popularity": {
+            "$ref": "#/components/schemas/PopularityDetails__0"
+          },
+          "security": {
+            "$ref": "#/components/schemas/SecurityDetails"
+          }
+        },
         "type": "object"
       },
       "PackageLocation": {
@@ -15566,6 +15883,147 @@
             "$ref": "#/components/schemas/PackageMeta"
           }
         },
+        "type": "object"
+      },
+      "PackageVersionAttributes": {
+        "example": {
+          "ecosystem": "npm",
+          "language": "JavaScript",
+          "latest_version_indicator": true,
+          "owner_details": {
+            "followers_count": 123,
+            "location": "somewhere",
+            "name": "expressjs",
+            "repositories_count": 45,
+            "total_stars": 65000
+          },
+          "package_details": {
+            "homepage_url": "https://expressjs.com",
+            "registry_url": "https://www.npmjs.com/package/express",
+            "repository_url": "https://github.com/expressjs/express"
+          },
+          "package_health": {
+            "community": {
+              "description": "...",
+              "has_code_of_conduct_file": true,
+              "has_contributing_file": true,
+              "has_funding_file": false,
+              "has_readme_file": true,
+              "rating": "Active",
+              "stargazers_count": 75000
+            },
+            "maintenance": {
+              "description": "...",
+              "first_release_published_at": "2010-01-03T00:00:00Z",
+              "forks_count": 66,
+              "is_archived": false,
+              "is_forked": false,
+              "latest_release_number": "4.19.2",
+              "latest_release_published_at": "2024-10-08T00:00:00Z",
+              "lifecycle": "active",
+              "open_pull_request_count": 2,
+              "rating": "Healthy",
+              "total_versions_count": 760
+            },
+            "overall_rating": "Recommended with Review",
+            "popularity": {
+              "dependent_packages_count": 280,
+              "dependent_repos_count": 65000,
+              "description": "...",
+              "downloads": 12000,
+              "rating": "Influential"
+            },
+            "security": {
+              "description": "...",
+              "direct_vulnerabilities": true,
+              "direct_vulnerabilities_total": 3,
+              "rating": "Security review needed"
+            }
+          },
+          "package_id": "pkg:npm/express",
+          "package_name": "express",
+          "package_version": "4.19.2",
+          "package_version_id": "pkg:npm/express@4.19.2",
+          "published_at": "2024-10-08T00:00:00Z"
+        },
+        "properties": {
+          "description": {
+            "example": "Fast, unopinionated, minimalist web framework",
+            "type": "string"
+          },
+          "download_url": {
+            "example": "https://registry.npmjs.org/express/-/express-4.19.2.tgz",
+            "format": "uri",
+            "type": "string"
+          },
+          "ecosystem": {
+            "example": "npm",
+            "type": "string"
+          },
+          "keywords": {
+            "example": [
+              "node",
+              "javascript",
+              "express",
+              "server"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "language": {
+            "example": "JavaScript",
+            "type": "string"
+          },
+          "latest_version_indicator": {
+            "example": true,
+            "type": "boolean"
+          },
+          "owner_details": {
+            "$ref": "#/components/schemas/OwnerDetails"
+          },
+          "package_details": {
+            "$ref": "#/components/schemas/PackageDetails__0"
+          },
+          "package_health": {
+            "$ref": "#/components/schemas/PackageHealth__0"
+          },
+          "package_id": {
+            "example": "pkg:npm/express",
+            "type": "string"
+          },
+          "package_name": {
+            "example": "express",
+            "type": "string"
+          },
+          "package_version": {
+            "example": "4.19.2",
+            "type": "string"
+          },
+          "package_version_id": {
+            "example": "pkg:npm/express@4.19.2",
+            "type": "string"
+          },
+          "published_at": {
+            "example": "2024-10-08T00:00:00Z",
+            "format": "date-time",
+            "type": "string"
+          },
+          "registry_url": {
+            "example": "https://www.npmjs.com/package/express",
+            "format": "uri",
+            "type": "string"
+          }
+        },
+        "required": [
+          "package_id",
+          "package_version_id",
+          "ecosystem",
+          "package_name",
+          "package_version",
+          "language"
+        ],
         "type": "object"
       },
       "PaginatedLinks": {
@@ -16292,6 +16750,46 @@
           "not-required"
         ],
         "type": "string"
+      },
+      "PopularityDetails": {
+        "properties": {
+          "dependent_packages_count": {
+            "type": "integer"
+          },
+          "dependent_repos_count": {
+            "type": "number"
+          },
+          "description": {
+            "type": "string"
+          },
+          "downloads": {
+            "type": "integer"
+          },
+          "rating": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "PopularityDetails__0": {
+        "properties": {
+          "dependent_packages_count": {
+            "type": "integer"
+          },
+          "dependent_repos_count": {
+            "type": "integer"
+          },
+          "description": {
+            "type": "string"
+          },
+          "downloads": {
+            "type": "integer"
+          },
+          "rating": {
+            "type": "string"
+          }
+        },
+        "type": "object"
       },
       "Principal": {
         "properties": {
@@ -18689,6 +19187,26 @@
         "type": "object"
       },
       "SecretsScanConfiguration": {
+        "type": "object"
+      },
+      "SecurityDetails": {
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "direct_vulnerabilities": {
+            "type": "boolean"
+          },
+          "direct_vulnerabilities_counts": {
+            "$ref": "#/components/schemas/DirectVulnerabilitiesCounts"
+          },
+          "direct_vulnerabilities_total": {
+            "type": "integer"
+          },
+          "rating": {
+            "type": "string"
+          }
+        },
         "type": "object"
       },
       "SelfLink": {
@@ -37314,6 +37832,272 @@
         "x-snyk-api-resource": "import_policy",
         "x-snyk-api-stability": "beta",
         "x-snyk-api-version": "2025-09-17~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/ecosystems/{ecosystem}/packages/{package_name}": {
+      "get": {
+        "description": "Get package metadata for a specific package from an ecosystem\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getPackage",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/Ecosystem"
+          },
+          {
+            "$ref": "#/components/parameters/PackageName"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "additionalProperties": false,
+                      "description": "package resource object",
+                      "properties": {
+                        "attributes": {
+                          "$ref": "#/components/schemas/PackageAttributes"
+                        },
+                        "id": {
+                          "example": "pkg:npm/express",
+                          "format": "uri",
+                          "type": "string"
+                        },
+                        "type": {
+                          "example": "package",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "self": {
+                          "example": "https://api.snyk.io/rest/orgs/12345/ecosystems/npm/packages/express?version=2024-10-15",
+                          "format": "uri",
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Returns package metadata",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get a package (Early Access)",
+        "tags": [
+          "Package"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "packages",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      }
+    },
+    "/orgs/{org_id}/ecosystems/{ecosystem}/packages/{package_name}/versions/{package_version}": {
+      "get": {
+        "description": "Get package version metadata for a specific version of a package from an ecosystem\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getPackageVersion",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/Ecosystem"
+          },
+          {
+            "$ref": "#/components/parameters/PackageName"
+          },
+          {
+            "$ref": "#/components/parameters/PackageVersion"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "additionalProperties": false,
+                      "description": "package version resource object",
+                      "properties": {
+                        "attributes": {
+                          "$ref": "#/components/schemas/PackageVersionAttributes"
+                        },
+                        "id": {
+                          "example": "pkg:npm/express@4.19.2",
+                          "format": "uri",
+                          "type": "string"
+                        },
+                        "package_version": {
+                          "example": "4.19.2",
+                          "type": "string"
+                        },
+                        "type": {
+                          "example": "package_version",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type",
+                        "package_version"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "self": {
+                          "example": "https://api.snyk.io/rest/orgs/12345/ecosystems/npm/packages/express/versions/4.19.2?version=2024-10-15",
+                          "format": "uri",
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Returns package version metadata",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get a package version (Early Access)",
+        "tags": [
+          "Package Version"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "versions",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
         "x-stability-level": "beta"
       }
     },
@@ -70739,7 +71523,7 @@
       "name": "Assets"
     },
     {
-      "description": "The OpenAPI specification for container-importer rest API.",
+      "description": "The OpenAPI specification for package-api-service.",
       "name": "OpenAPI"
     }
   ],
