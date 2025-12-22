@@ -386,6 +386,14 @@ Due to service availability issues, Snyk cannot process the request. This issue 
 * [https://status.snyk.io/](https://status.snyk.io/)
 * [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
 
+### [SNYK-0010](#snyk-0010)
+<a id="#SNYK-0010"></a>
+
+**Missing runtime requirements**
+
+The environment is missing requirements to execute the application successfully.
+
+
 ### [SNYK-9999](#snyk-9999)
 <a id="#SNYK-9999"></a>
 
@@ -648,7 +656,7 @@ The provided versioning schema is invalid and image could therefor not be create
 
 **Unspecified Error**
 
-The encountered error only provides basic information, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
+The encountered error only provides basic information, please take a look at the given details. If they do not help to resolve the issue, consider debugging or consulting support.
 
 
 **Help Links:**
@@ -661,7 +669,7 @@ The encountered error only provides basic information, please take a look at the
 
 **Unable to set environment**
 
-The specified environment cannot be used. As a result, the configuration remains unchanged.Provide the correct specifications for the environment and try again.
+The specified environment cannot be used. As a result, the configuration remains unchanged. Provide the correct specifications for the environment and try again.
 
 
 **Help Links:**
@@ -711,7 +719,7 @@ A specified flag option or combination is invalid. Provide a valid flag option o
 
 **Unable to get vulnerabilities from resource**
 
-If you are testing an npm package, check the version and package name and try running `snyk test` again. If you are testing a repository, try testing it at https://snyk.io/test/.For further assistance, run `snyk help` or see the Snyk docs.
+If you are testing an npm package, check the version and package name and try running `snyk test` again. If you are testing a repository, try testing it at https://snyk.io/test/. For further assistance, run `snyk help` or see the Snyk docs.
 
 
 ### [SNYK-CLI-0006](#snyk-cli-0006)
@@ -756,7 +764,7 @@ Snyk could not detect any supported target files. Ensure the files you are impor
 
 **Too many vulnerable paths to Project**
 
-There are too many vulnerable paths to process the project. If your command supports it, consider the following:pruning repeated sub-dependencies (`snyk test -p`); excluding directories (`snyk test --all-projects --exclude=dir1,file2`); setting a detection depth (`snyk test --all-projects --detection-depth=3`). If the error still occurs, consider debugging or contact Snyk Support.
+There are too many vulnerable paths to process the project. If your command supports it, consider the following: pruning repeated sub-dependencies (`snyk test -p`); excluding directories (`snyk test --all-projects --exclude=dir1,file2`); setting a detection depth (`snyk test --all-projects --detection-depth=3`). If the error still occurs, consider debugging or contact Snyk Support.
 
 **HTTP Status:** [413](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413)
 
@@ -781,7 +789,7 @@ CLI was unable to validate the required parameter. Provide the correct parameter
 
 **SCA failure**
 
-CLI was unable to execute your SCA command, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
+CLI was unable to execute your SCA command, please take a look at the given details. If they do not help to resolve the issue, consider debugging or consulting support.
 
 
 **Help Links:**
@@ -793,7 +801,7 @@ CLI was unable to execute your SCA command, please take a look at the given deta
 
 **IAC failure**
 
-CLI was unable to execute your IAC command, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
+CLI was unable to execute your IAC command, please take a look at the given details. If they do not help to resolve the issue, consider debugging or consulting support.
 
 
 **Help Links:**
@@ -805,7 +813,7 @@ CLI was unable to execute your IAC command, please take a look at the given deta
 
 **SAST failure**
 
-CLI was unable to execute your SAST command, please take a look at the given details.If they do not help to resolve the issue, consider debugging or consulting support.
+CLI was unable to execute your SAST command, please take a look at the given details. If they do not help to resolve the issue, consider debugging or consulting support.
 
 
 **Help Links:**
