@@ -16,6 +16,14 @@ This tool counts and prints a summary of the contributors count for the last 90 
 There are some minor differences between the SCMs as to the naming convention. For example: "Orgs" in GitHub can be "Projects" in Azure and "Workspaces" in Bitbucket. These differences are reflected in the commands that the tool accepts for each SCM.
 {% endhint %}
 
+## **Prerequisites**
+
+Complete the following prerequisites before running the script:
+
+1. Export the [Snyk API token](../../../../../discover-snyk/getting-started/#obtain-and-use-your-snyk-api-token). You can find the token in the Snyk Web UI under the account **Settings**.
+2. Ensure the SCM Personal Access Token (PAT) has **Code/Read** permissions. Snyk recommends full access.
+3. Verify you have access to all in-scope SCM Organizations and Projects.
+
 ## **How the SCM-Contributors-Count tool works**
 
 The tool works in two modes: **Scoping usage prior to onboarding** and **Snyk License Consumption.**
