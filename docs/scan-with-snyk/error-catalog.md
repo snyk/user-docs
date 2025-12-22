@@ -394,6 +394,20 @@ Due to service availability issues, Snyk cannot process the request. This issue 
 The environment is missing requirements to execute the application successfully.
 
 
+### [SNYK-0099](#snyk-0099)
+<a id="#SNYK-0099"></a>
+
+**Unavailable due to maintenance**
+
+We are currently unavailable due to a maintenance window. For additional information please visit our status pages. Thank you for your patience.
+
+**HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
+
+**Help Links:**
+
+* [https://status.snyk.io/](https://status.snyk.io/)
+* [https://privatecloudstatus.snyk.io](https://privatecloudstatus.snyk.io)
+
 ### [SNYK-9999](#snyk-9999)
 <a id="#SNYK-9999"></a>
 
