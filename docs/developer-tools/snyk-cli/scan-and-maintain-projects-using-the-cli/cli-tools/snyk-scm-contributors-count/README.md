@@ -23,6 +23,9 @@ Complete the following prerequisites before running the script:
 1. Export the [Snyk API token](../../../../../discover-snyk/getting-started/#obtain-and-use-your-snyk-api-token). You can find the token in the Snyk Web UI under the account **Settings**.
 2. Ensure the SCM Personal Access Token (PAT) has **Code/Read** permissions. Snyk recommends full access.
 3. Verify you have access to all in-scope SCM Organizations and Projects.
+4. Use `npx` for one-off executions to avoid installing the script globally.
+
+For more information, see the [tool repository README](https://github.com/snyk-tech-services/snyk-scm-contributors-count/blob/main/README.md).
 
 ## **How the SCM-Contributors-Count tool works**
 
