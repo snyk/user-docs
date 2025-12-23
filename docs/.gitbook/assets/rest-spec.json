@@ -6289,6 +6289,20 @@
       },
       "CreateAssignmentsPayload": {
         "properties": {
+          "contact_email": {
+            "description": "Custom contact email to display in email templates when customized_contact_details is true",
+            "format": "email",
+            "type": "string"
+          },
+          "contact_name": {
+            "description": "Custom contact name to display in email templates when customized_contact_details is true",
+            "type": "string"
+          },
+          "customized_contact_details": {
+            "default": false,
+            "description": "Flag to indicate if custom contact details should be used in email templates",
+            "type": "boolean"
+          },
           "data": {
             "items": {
               "$ref": "#/components/schemas/AssignmentCreationResource"
