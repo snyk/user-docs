@@ -1,10 +1,72 @@
 # Rust
 
-## Applicability and integration
-
 {% hint style="info" %}
 Rust is supported for Snyk Code and for Snyk Open Source.
 {% endhint %}
+
+{% hint style="info" %}
+Code analysis support for Rust is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](../../snyk-platform-administration/snyk-preview.md).
+{% endhint %}
+
+## Rust for Snyk Code
+
+For an overview of the supported security rules, visit [Rust rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/rust-rules.md).
+
+### Supported frameworks and libraries
+
+The following frameworks and libraries are supported:
+
+{% columns %}
+{% column %}
+* actix_files
+* actix_identity
+* actix_multipart
+* actix_session
+* actix_web
+* age
+* ammonia
+* async_graphql
+* axum
+* diesel
+* handlebars
+* hyper
+* iron
+{% endcolumn %}
+
+{% column %}
+* orion
+* postgres
+* reqwest
+* ring
+* rustcrypto
+* sqlx
+* tera
+* tokio
+* tokio_dbs
+* tonic
+* uuid
+* warp
+{% endcolumn %}
+{% endcolumns %}
+
+### Supported file formats
+
+The following file formats are supported: `.rs`.
+
+### Available features
+
+* Support for Interfile analysis
+* Reports
+
+## Rust for Snyk Open Source
+
+For Rust with Snyk Open Source, there are no features supported.
+
+{% hint style="warning" %}
+If you want to use Open Source PR checks in Rust Projects for which the **Fix PRs** feature is not supported, it is possible that vulnerable dependencies are introduced without being flagged.
+{% endhint %}
+
+## Applicability and integration
 
 Available functions:
 
@@ -14,49 +76,7 @@ Available functions:
 
 ## Technical specifications
 
-### Supported frameworks and libraries
-
-For Rust with Snyk Code, the following frameworks and libraries are supported:
-
-* Warp
-* Rust standard library
-* Iron
-* tokio
-* Hyper
-* axum
-* tower
-* age
-* ammonia
-* diesel
-* orion
-* postgres
-* ring
-* rustcrypto
-* sqlx
-* Reqwest
-
 ### Supported package managers and registries
 
 * Supported package manager: Cargo
 * Supported package registry: [crates.io](https://crates.io/)
-
-## Rust for Snyk Code
-
-For Rust with Snyk Code, the following file formats are supported: `.rs`.
-
-Available features:
-
-* Support for Interfile analysis
-* Reports
-
-{% hint style="info" %}
-Code analysis support for Rust is available with Snyk Preview.
-{% endhint %}
-
-## Rust for Snyk Open Source
-
-For Rust with Snyk Open Source, there are no features supported.
-
-{% hint style="warning" %}
-If you want to use Open Source PR checks in Rust Projects for which the **Fix PRs** feature is not supported, it is possible that vulnerable dependencies are introduced without being flagged.
-{% endhint %}
