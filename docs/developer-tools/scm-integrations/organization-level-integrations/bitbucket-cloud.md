@@ -14,9 +14,12 @@ The Bitbucket Cloud API token integration lets you:
 
 {% hint style="info" %}
 Admin permissions are required; however, Snyk's access is ultimately limited by the [permissions assigned to the API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/).\
+
+**Note:** **Scopeless tokens are not supported.** You must select specific permissions (scopes) when creating your token in Bitbucket.
+
 \
 To improve security, the use of app passwords in Bitbucket Cloud is transitioning to API tokens. Existing integrations that use app passwords will continue to function temporarily until **9 June 2026.**\
-To ensure continued support and functionality, update your Bitbucket Cloud integration in Snyk to use an API token.
+To ensure continued support and functionality, update your Bitbucket Cloud integration in Snyk to use a scoped API token.
 {% endhint %}
 
 1. To give Snyk access to your Bitbucket account, set up a dedicated service account in Bitbucket with admin permissions. See the [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about adding users to a workspace.\
