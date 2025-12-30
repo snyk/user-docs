@@ -40,9 +40,9 @@ You can customize the filters and actions or use the template as is. After finis
 {% hint style="info" %}
 **Release status**
 
-The risk factors on assets are taking the release status of the applied [risk factor](/broken/pages/x5b9XFg7zGtut8eTWBQp).
+The risk factors on assets are taking the release status of the applied [risk factor](../../prioritize-issues-for-fixing/assets-and-risk-factors/#risk-factors).
 
-The Runtime discovered and Runtime last seen filters are taking the release status of the used runtime [integration](broken-reference/).
+The Runtime discovered and Runtime last seen filters are taking the release status of the used runtime integration.
 {% endhint %}
 
 The following video explains how to create a new policy:

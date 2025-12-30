@@ -28,8 +28,8 @@ If your Projects reference private dependencies in these repositories but you ar
 
 For more information, see the following external resources:
 
-* Package registry integrations: [npm Teams and npm Enterprise](https://docs.snyk.io/scan-with-snyk/snyk-open-source/package-repository-integrations/npm-teams-and-npm-enterprise-integration), [Artifactory Registry setup](https://docs.snyk.io/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup) and [Nexus Repository Manager setup](https://docs.snyk.io/scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup).
-* Gatekeeper plugins: [Artifactory Gatekeeper plugin](https://docs.snyk.io/scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin)
+* Package registry integrations: [npm Teams and npm Enterprise](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/npm-teams-and-npm-enterprise-integration.md), [Artifactory Registry setup](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/) and [Nexus Repository Manager setup](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/).
+* Gatekeeper plugins: [Artifactory Gatekeeper plugin](../../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin.md)
 
 ## Fix PRs and npm save-prefix
 

@@ -16,7 +16,7 @@ Snyk supports creating Fix PRs or MRs for the following languages:
 
 * [Maven](../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#maven)
 * [.NET](../../../supported-languages/supported-languages-list/.net/)
-* [npm](/broken/pages/kJOeCbuqexRTuTQPx6aZ#npm)
+* [npm](../../../supported-languages/supported-languages-list/javascript/#support-for-npm)
 * [Python](../../../supported-languages/supported-languages-list/python/)
 * [Ruby](../../../supported-languages/supported-languages-list/ruby.md)
-* [Yarn](/broken/pages/kJOeCbuqexRTuTQPx6aZ#yarn)
+* [Yarn](../../../supported-languages/supported-languages-list/javascript/#support-for-yarn)

@@ -9,7 +9,7 @@ Customize prioritization using the Set up Insights option and an application tha
 The Set up insights product operates by providing you with the following risk factors for your vulnerabilities:
 
 * [Deployed](../assets-and-risk-factors/risk-factor-deployed.md): Is my code and container image deployed anywhere?
-* [Loaded package](/broken/pages/x5b9XFg7zGtut8eTWBQp): Has a third-party package that is the dependency of an image been loaded?
+* [Loaded package](./#loaded-package-risk-factor): Has a third-party package that is the dependency of an image been loaded?
 * [OS condition](../assets-and-risk-factors/risk-factor-os-condition.md): Does this vulnerability apply to my operating system?
 * [Public facing](../assets-and-risk-factors/risk-factor-public-facing.md): Does my container have any internet exposure?
 
@@ -17,11 +17,11 @@ The Set up insights product operates by providing you with the following risk fa
 
 To get data about these four risk factors, you must meet the following criteria:
 
-#### **Loaded package risk factor**
+#### Loaded package risk factor
 
 You can use the Loaded package risk factor if there is a package that is loaded more often than others poses a higher risk to your application compared to one that is rarely loaded.
 
-#### **OS condition risk factor**
+#### OS condition risk factor
 
 You need to meet the following conditions to use the OS condition risk factor:
 
@@ -29,11 +29,11 @@ You need to meet the following conditions to use the OS condition risk factor:
 
 <figure><img src="../../../.gitbook/assets/Example OS condition.png" alt="Source code and dependencies built into a container image"><figcaption><p>Source code and dependencies built into a container image</p></figcaption></figure>
 
-#### **Deployed and public facing risk factors**
+#### Deployed and public facing risk factors
 
 You need to meet the following conditions to use the Deployed and Public facing risk factors:
 
-* For both risk factors, you have a container image that is deployed onto a Kubernetes cluster, where you can deploy the [Kubernetes Connector](broken-reference/).
+* For both risk factors, you have a container image that is deployed onto a Kubernetes cluster, where you can deploy the [Kubernetes Connector](set-up-insights-kubernetes-connector.md).
 
 Ensure you meet these requirements to gather data for all four risk factors for the code in your scanned image.
 
@@ -51,15 +51,15 @@ By scanning both the source code and the third-party dependencies, you will get 
 
 The major steps in setting up issues are as follows:
 
-1. Grant users the Group Viewer role or the Organization Collaborator role. See [Prioritization setup: User permissions](broken-reference/).
-2. Create the required Organization, roles, and permissions, and deploy the agent. See [Prioritization setup: Kubernetes Connector](broken-reference/).
+1. Grant users the Group Viewer role or the Organization Collaborator role. See [Set up Insights: user permissions](set-up-insights-user-permissions.md).
+2. Create the required Organization, roles, and permissions, and deploy the agent. See [Set up Insights: Kubernetes Connector](set-up-insights-kubernetes-connector.md).
 
 {% hint style="info" %}
 The Kubernetes Connector is different from the Kubernetes Controller, Snyk-Monitor.
 {% endhint %}
 
-3. Scan your images properly so Snyk has access to the right data. See [Prioritization setup: Image scanning](broken-reference/).
-4. Set up the required link for the application on which you want to use prioritization. See [Prioritization setup: Associating Snyk Open Source, Code, and Container Projects](broken-reference/).
+3. Scan your images properly so Snyk has access to the right data. See [Set up Insights: image scanning](set-up-insights-image-scanning.md).
+4. Set up the required link for the application on which you want to use prioritization. See [Set up Insights: associating Snyk Open Source, Code, and Container Projects](set-up-insights-associating-snyk-open-source-code-and-container-projects.md).
 
 ## Set up Insights UI settings
 
@@ -73,7 +73,7 @@ All these settings can be found in the Snyk Web UI, under Group Settings, the Se
 
 ### Risk factors
 
-You can enable or disable the available risk factors: [Deployed](../assets-and-risk-factors/risk-factor-deployed.md), [Loaded package](/broken/pages/x5b9XFg7zGtut8eTWBQp), [OS condition](../assets-and-risk-factors/risk-factor-os-condition.md), [Public facing](../assets-and-risk-factors/risk-factor-public-facing.md). When a risk factor is disabled, it will not be used to calculate issues.
+You can enable or disable the available risk factors: [Deployed](../assets-and-risk-factors/risk-factor-deployed.md), [Loaded package](./#loaded-package-risk-factor), [OS condition](../assets-and-risk-factors/risk-factor-os-condition.md), [Public facing](../assets-and-risk-factors/risk-factor-public-facing.md). When a risk factor is disabled, it will not be used to calculate issues.
 
 You can enable or disable the risk factors from Snyk web UI under Group **Settings** > **Settings** option > **Risk factors**.
 
@@ -105,7 +105,7 @@ When prioritizing issues, it is important to understand the available integratio
 
 Here are the integration options that you can choose from when setting up issues prioritization. You can customize the settings by navigating to the Group level Snyk web UI, the Setting menu, and then the Insights option.
 
-* [Kubernetes Connector](broken-reference/): Offers comprehensive monitoring for your Kubernetes deployments. This integration helps identify vulnerabilities within Kubernetes clusters and provides data on workload vulnerabilities, infrastructure misconfigurations, and potential malicious activity.
+* [Kubernetes Connector](set-up-insights-kubernetes-connector.md): Offers comprehensive monitoring for your Kubernetes deployments. This integration helps identify vulnerabilities within Kubernetes clusters and provides data on workload vulnerabilities, infrastructure misconfigurations, and potential malicious activity.
 
 By leveraging these integration options, you can ensure comprehensive coverage and accurate prioritization of security risks.
 

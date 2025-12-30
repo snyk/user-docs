@@ -22,7 +22,7 @@ You can use TypeScript versions up to 4.2
 
 ### Supported frameworks and libraries
 
-Snyk supports all JavaScript frameworks and libraries. For more information, see [JavaScript frameworks and libraries](javascript/#frameworks-and-libraries).
+Snyk supports all JavaScript frameworks and libraries. For more information, see [JavaScript frameworks and libraries](javascript/#supported-frameworks-and-libraries).
 
 ### Supported package managers and registries
 

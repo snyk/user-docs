@@ -42,7 +42,7 @@ By understanding your images, packages, and Kubernetes resources as "application
 
 You can enable and disable all of these "application context" risk factors through the Group **Settings**, on the **Issues** tab. If you choose to disable a risk factor, a provider selection, or the Kubernetes cluster mapping, Snyk will no longer compute them.
 
-Depending on the integration options enabled for your application, risk factors are applied differently. You can [prioritize your integrations](../assets-and-risk-factors-for-snyk-apprisk/broken-reference/) by customizing the available Insights options from the Group settings.
+Depending on the integration options enabled for your application, risk factors are applied differently. You can [prioritize your integrations](../set-up-insights/#prioritize-your-integrations) by customizing the available Insights options from the Group settings.
 
 Risk factors are supported for stateful entities such as the following Kubernetes components: [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/), [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), and [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/).
 

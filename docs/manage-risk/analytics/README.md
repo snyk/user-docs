@@ -13,7 +13,7 @@ To access Analytics, you need to have one of the following [tenant roles](../../
 The Analytics view is structured as follows:
 
 * [Issues Analytics](issues-analytics.md) - provides the exposure and performance details of Snyk issues in Groups and Organizations while focusing on the issue introduction method (baseline, preventable, or non-preventable).
-* [Application Analytics](broken-reference/) - provides data analytics for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
+* [Application Analytics](application-analytics.md) - provides data analytics for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
 
 The following table presents an overview of the features available for both Issues Analytics and Application Analytics.
 

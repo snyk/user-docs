@@ -120,7 +120,7 @@ You can use Issues Analytics at the Snyk tenant level, including both the Snyk G
 
 ### Application Analytics
 
-[Application Analytics](broken-reference/) for Snyk helps you assess your AppSec program from a top-down approach. It allows you to review applications, teams, and asset classes, and then focus on specific assets. You can improve security by identifying areas for enhancement, recognizing risks, and addressing blind spots. The tool retrieves data from all available groups for the tenant.
+[Application Analytics](../analytics/application-analytics.md) for Snyk helps you assess your AppSec program from a top-down approach. It allows you to review applications, teams, and asset classes, and then focus on specific assets. You can improve security by identifying areas for enhancement, recognizing risks, and addressing blind spots. The tool retrieves data from all available groups for the tenant.
 
 Prioritize the displayed data by using the available filters, dimension views, and specific timeframes.\
 \

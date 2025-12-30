@@ -12,7 +12,7 @@ If necessary, go to the [Advanced configuration page](../../../../../implementat
 
 ## Docker run command to set up a Broker Client for GitHub Enterprise
 
-Copy the following command to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files (with the Code Agent), and Snyk Essentials information. Enable [Snyk Essentials](broken-reference) to identify your application assets, monitor them, and prioritize the risks.
+Copy the following command to set up a fully configured Broker Client to analyze Open Source, IaC, Container, Code files (with the Code Agent), and Snyk Essentials information.&#x20;
 
 {% hint style="info" %}
 **Multi-tenant settings for regions**\

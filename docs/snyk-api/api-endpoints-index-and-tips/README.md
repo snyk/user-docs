@@ -431,7 +431,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 [Rust](../../supported-languages/supported-languages-list/rust.md):\
 [Guidance for Snyk for C++ page, Alternate testing options section](../../supported-languages/supported-languages-list/c-c++/guidance-for-snyk-for-c-c++.md#alternate-testing-options);\
 [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/);\
-[Guidance for JavaScript and Node.js, Unmanaged JavaScript section](/broken/pages/kJOeCbuqexRTuTQPx6aZ#unmanaged-javascript);\
+[Guidance for JavaScript and Node.js](../../supported-languages/supported-languages-list/javascript/#unmanaged-javascript);\
 [List issues for a package page](../using-specific-snyk-apis/issues-list-issues-for-a-package.md)
 
 ### [List issues for a given set of packages](../reference/issues.md#orgs-org_id-packages-issues) (not available to all customers)
@@ -583,7 +583,7 @@ More information: [Project type responses from the API](project-type-responses-f
 
 ### [Add a tag to a project](../reference/projects-v1.md#org-orgid-project-projectid-tags)
 
-**More information:** [Project tags](../../snyk-platform-administration/snyk-projects/project-tags.md); [Set up Insights: Associating Snyk Open Source, Code, and Container Projects](broken-reference/);\
+**More information:** [Project tags](../../snyk-platform-administration/snyk-projects/project-tags.md); [Set up Insights: Associating Snyk Open Source, Code, and Container Projects](../../manage-risk/prioritize-issues-for-fixing/set-up-insights/set-up-insights-associating-snyk-open-source-code-and-container-projects.md);\
 [Scenario: Rotate or change your Broker token for any reason](scenarios-for-using-the-snyk-api.md#rotate-or-change-your-broker-token-for-any-reason)
 
 ### [Remove a tag from a project](../reference/projects-v1.md#org-orgid-project-projectid-tags-remove)
@@ -863,7 +863,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ### [Test for issues in a public package by name and version](../reference/test-v1.md#test-npm-packagename-version) (npm)
 
-**More information:** [Guidance for JavaScript and Node.js, Unmanaged JavaScript section](/broken/pages/kJOeCbuqexRTuTQPx6aZ#unmanaged-javascript)
+**More information:** [Guidance for JavaScript and Node.js](../../supported-languages/supported-languages-list/javascript/#unmanaged-javascript)
 
 ### [Test maven file](../reference/test-v1.md#test-maven)
 
@@ -882,7 +882,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 ### [Test Dep Graph](../reference/test-v1.md#test-dep-graph)
 
 **More information:** [Dep Graph API](../../scan-with-snyk/snyk-open-source/snyk-for-bazel/dep-graph-api.md) (Bazel);\
-[Unmanaged JavaScript](/broken/pages/kJOeCbuqexRTuTQPx6aZ#unmanaged-javascript) (Guidance for JavaScript and Node.js);\
+[Unmanaged JavaScript](../../supported-languages/supported-languages-list/javascript/#unmanaged-javascript);\
 [Start scanning](../../scan-with-snyk/start-scanning.md)
 
 ### [Test composer.json & composer.lock file](../reference/test-v1.md#test-composer)

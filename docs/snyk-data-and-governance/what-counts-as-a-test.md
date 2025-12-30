@@ -1,7 +1,7 @@
 # What counts as a test?
 
 {% hint style="info" %}
-The information on this page, including any reference to “test limits”, does not apply to capabilities for which customers are on a credit-based license. For the credit and usage policies applicable to these customers, see [Snyk Platform Access Plan](https://docs.snyk.io/snyk-data-and-governance/snyk-platform-access-credits) (for credit-based licenses purchased on or before 31 December 2025), or [Platform Credit Consumption Licensing ](https://snyk.io/policies/credit-based-billing/)(for credit-based licenses purchased on or after 1 January 2026).
+The information on this page, including any reference to “test limits”, does not apply to capabilities for which customers are on a credit-based license. For the credit and usage policies applicable to these customers, see [Snyk Platform Access Plan](snyk-platform-access-credits.md) (for credit-based licenses purchased on or before 31 December 2025), or [Platform Credit Consumption Licensing ](https://snyk.io/policies/credit-based-billing/)(for credit-based licenses purchased on or after 1 January 2026).
 
 Capitalized terms used but not defined herein shall have the meaning as set forth in the Customer’s purchase agreement or other applicable documentation found on [snyk.docs.io](http://snyk.docs.io/).
 {% endhint %}
