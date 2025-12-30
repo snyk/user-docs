@@ -11,7 +11,7 @@ Before you begin, ensure you have:
 * A user personal API key with Tenant admin access and at minimum Org admin access for the Organization on which you want to install the Snyk Broker App, allowing you to complete all steps in the deployment workflow.
 * Access to a command-line tool like `curl` and `jq` for JSON parsing (recommended).
 * Any necessary pre-configurations for your specific SCM integration.
-* Snyk Broker App ID whenever you want to call the API.  For most regions, the Snyk Broker App ID is: [`cb43d761-bd17-4b44-9b6c-e5b8ad077d33`](#user-content-fn-1)[^1]\
+* Snyk Broker App ID whenever you want to call the API.  For most regions, the Snyk Broker App ID is: `cb43d761-bd17-4b44-9b6c-e5b8ad077d33`\
   If you are using a Snyk for Government tenant, contact your account team for the App ID.
 
 {% hint style="info" %}
@@ -31,7 +31,3 @@ See the [Universal Broker APIs ](../../../../../snyk-api/reference/universal-bro
 {% hint style="info" %}
 Use the Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](../../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
 {% endhint %}
-
-\\
-
-[^1]: 

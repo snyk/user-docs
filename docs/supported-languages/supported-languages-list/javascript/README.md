@@ -203,7 +203,7 @@ As a user of npm, even though npm-audit is at hand anytime you are working with 
 * Broad support across programming languages and package managers.
 * Ignore capabilities.
 
-#### **Peer dependencies**
+#### Peer dependencies
 
 In npm v7 and above, the behavior of peer dependencies changes if they are being installed by default. To match this in npm v7+ Projects, Snyk assumes peer dependencies are installed and scans them by default.
 
@@ -223,7 +223,7 @@ An npm v7+ Project ignores peer dependencies only if they are explicitly marked 
 
 In npm v6 and below, peer dependencies are not scanned by default, as the package manager does not install them by default. To scan peer dependencies, ensure they are installed, and then run the CLI with the `--peer-dependencies` option.
 
-#### **Lockfile versions**
+#### Lockfile versions
 
 Snyk uses the `package-lock.json` lockfile when present to generate a dependency tree for your Project. These lockfiles come in different versions.
 
@@ -261,7 +261,7 @@ For Snyk to detect a Project as using pnpm, the Project must include the relevan
 
 If the mentioned pnpm lockfile is not present, Snyk treats the Project as an `npm` Project and scans it according to the details mentioned above, for `npm`.
 
-**Lockfile versions**
+#### Lockfile versions
 
 Snyk uses the `pnpm-lock.yaml` lockfile to generate a dependency tree for your Project.&#x20;
 
@@ -269,7 +269,7 @@ The supported lockfile versions are 5.4, 6.x and 9.x, as used by pnpm 7, 8, 9 an
 
 pnpm lockfiles do not include [bundledDependencies](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#bundledependencies), so Snyk does not include them in scans.
 
-### **Support for Yarn**
+### Support for Yarn
 
 Snyk uses the Yarn lockfile (`yarn.lock`) to generate a representation of Project dependencies.
 
@@ -354,15 +354,15 @@ Use a common `.snyk` policy file, if you maintain ignores and patches in one pla
 snyk test --all-projects --strict-out-of-sync=false --policy-path=src/.snyk
 ```
 
-#### **Scanning npm workspaces**
+#### Scanning npm workspaces
 
 npm v7 introduced support for workspaces. To detect and scan all workspaces in your npm Project, use the CLI options described above.
 
-#### **Scanning pnpm workspaces**
+#### Scanning pnpm workspaces
 
 pnpm workspaces must have the `package.json`, `pnpm-lock.yaml` and `pnpm-workspace.yaml` files in the root directory. To detect and scan all workspaces in your pnpm Project, use the CLI options described above.
 
-#### **Scanning Yarn workspaces**
+#### Scanning Yarn workspaces
 
 {% hint style="info" %}
 `nohoist` is not supported for Yarn Workspaces.
