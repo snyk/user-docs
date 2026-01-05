@@ -1125,5 +1125,5 @@
   * [Snyk Penetration Testing Service Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-penetration-testing-service-description.md)
 * [How Snyk counts assets](snyk-data-and-governance/how-does-snyk-count-assets.md)
 * [What counts as a test?](snyk-data-and-governance/what-counts-as-a-test.md)
-* [Snyk Platform Access credits](snyk-data-and-governance/snyk-platform-access-credits.md)
+* [Snyk Platform credits](snyk-data-and-governance/snyk-platform-access-credits.md)
 * [Snyk for Government (US)](snyk-data-and-governance/snyk-for-government-us.md)

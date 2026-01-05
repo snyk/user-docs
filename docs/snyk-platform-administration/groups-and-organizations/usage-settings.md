@@ -43,9 +43,10 @@ A contributor is recognized through the author email field, set in the local Git
 ## Billing and Usage
 
 {% hint style="info" %}
-The **Billing and Usage** menu is available only for Tenant Admins on the Snyk Platform Access plan (not enrolling new customers).
+The Billing and Usage menu is available only to Tenant Admins on the Snyk Credits plan and the Snyk Platform Access plan (excluding new customer enrollments).
 
-For more information on billable events and credits, see [Policies](https://snyk.io/policies/definition-of-snyk-platform-access/).
+For more information on billable events and credits for the Snyk Credits plan, visit [Policies](https://snyk.io/policies/credit-based-billing/).\
+For more information on billable events and credits for the Snyk Platform Access plan, visit [Policies](https://snyk.io/policies/definition-of-snyk-platform-access/).
 {% endhint %}
 
 At the Tenant level, navigate to **Billing and Usage** to view credit consumption and usage patterns across all Groups and Organizations within the selected Tenant. The **Billing and Usage** dashboard also provides an overview of which Snyk products and Projects consume your credits.
@@ -55,15 +56,15 @@ At the Tenant level, navigate to **Billing and Usage** to view credit consumptio
 The **Billing and Usage** dashboard provides the following information:
 
 * **Billing period**
-* **Platform Access:** the number of available credits per billing period, the number of contributing developers, and the Snyk products enabled. To see which Snyk products are enabled, hover over the information button.&#x20;
+* **Platform Access:** the number of available credits per billing period, the number of contributing developers, and the Snyk products enabled. To see which Snyk products are enabled, hover over the information button.
 
 {% hint style="info" %}
-By default, all Snyk products are enabled. Any Project that you import and test using one of the Snyk products can consume credits.&#x20;
+You may need to enable certain capabilities at the tenant level to begin using Snyk. Capability enablement can be done in the Snyk Console through your tenant’s **Settings** page in the navigation panel.
 {% endhint %}
 
 * **Credit usage:** the number of credits used so far and the number of days left on your subscription.
 * **Billable events log:** a detailed list of all billable events.
 
-You can also see a breakdown of your credit usage and filter the information by Group, Snyk product, or date range.&#x20;
+You can also see a breakdown of your credit usage and filter the information by Group, Snyk product, or date range.
 
 <figure><img src="../../.gitbook/assets/billing_and_usage_dahsboard_credit_breakdown.png" alt=""><figcaption><p>Example of credit usage breakdown</p></figcaption></figure>
