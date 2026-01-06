@@ -1,7 +1,7 @@
 # Dart and Flutter
 
 {% hint style="info" %}
-Dart and Flutter are supported for Snyk Code and Snyk Open Source. 
+Dart and Flutter is supported for Snyk Code and Snyk Open Source. 
 {% endhint %}
 
 {% hint style="info" %}
@@ -55,26 +55,43 @@ The following frameworks and libraries are supported:
 {% endcolumn %}
 {% endcolumns %}
 
-## Applicability and integration
+### Supported file formats
 
-The following functions are available for Dart and Flutter:
+The following file formats are supported: `.dart`
 
-Available functions: 
+### Available features
 
-* Test your app's SBOM using `pkg:pub`
-* Test your app's packages using `pkg:pub`
+- Reports
+- Interfile analysis
 
-## Technical specifications
+## Dart and Flutter for Snyk Open Source
 
-* Supported package managers:  Pub
-* Supported package registry: [pub.dev](https://pub.dev/)
+### Available features
 
-Snyk features are not supported for Dart and Flutter. You can test an open-source package from Pub package manager:
+* Test your app's SBOM and packages using `pkg:pub`  PURLs, using [SBOM test](../../../developer-tools/snyk-cli/commands/sbom-test.md) command
+* Test & monitor your Flutter apps native platform dependencies using [`snyk test`](../../developer-tools/snyk-cli/commands/test.md) and [`snyk monitor`](../../developer-tools/snyk-cli/commands/monitor.md) commands
 
-* Using the API endpoint [List issues for a package](../../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues)
-* Using the [SBOM CLI](../../developer-tools/snyk-cli/commands/sbom.md).
+### Testing a Dart applications pub dependency tree 
 
-## Testing platform dependencies (iOS, macOS, Android) in Flutter apps
+Activate the pub [`sbom`](https://pub.dev/packages/sbom) package & create a minimal `sbom.yaml` file in the root folder of the repository:
+
+```
+dart pub global activate sbom
+cat << EOF > sbom.yaml
+type: spdx
+spdx:
+  SPDXFormat: 'tagvalue'
+EOF
+```
+
+Then, use the dart `sbom` command to create a SBOM file & test it using the [SBOM test](../../../developer-tools/snyk-cli/commands/sbom-test.md) command:
+
+```
+dart pub global run sbom
+snyk sbom test --experimental --file sbom-pub.json
+```
+
+### Testing platform dependencies (iOS, macOS, Android) in Flutter apps
 
 Flutter applications rely on native platform dependencies to handle lower-level tasks, such as analytics, hardware access, or integrating existing functionality. These dependencies can be added through pub packages to extend functionality or integrated directly into build systems like Gradle or Cocoapods.
 
