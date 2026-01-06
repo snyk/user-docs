@@ -16,13 +16,23 @@ Available functions:
 * Test your app's SBOM using `pkg:pypi`
 * Test your app's packages using `pkg:pypi`
 
-## Technical specifications
+## Python for Snyk Code
 
-{% hint style="info" %}
-It is possible that some Python Projects contain dependencies that require specific versions of Python. Therefore, the version of Python used when scanning can affect the dependency tree that Snyk generates.
-{% endhint %}
+For Python with Snyk Code, the following file format is supported: `.py`
 
-Snyk supports the following Python versions: `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`, `3.14`
+Available features:
+
+* Reports
+* Custom rules
+* Interfile analysis
+
+### Directory layout
+
+Snyk Code relies on Python projects to follow a **standard directory layout** for accurate analysis. Specifically, Snyk Code expects projects to be compatible with [`setuptools` automatic discovery](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#auto-discovery), which identifies packages and modules automatically based on the directory structure. This includes support for `init.py` files to ensure that symbols defined in package initialization files are imported correctly, leading to a more accurate and deeper analysis.
+
+Both `src-layout` and `flat-layout` are supported. Proper adherence to these conventions allows the scanner to trace code effectively and provide accurate results.
+
+Snyk Code supports Python versions up to `3.11`. Language features introduced in newer versions are not supported.
 
 ### Supported frameworks and libraries
 
@@ -72,6 +82,14 @@ For Python, the following frameworks and libraries are supported:
 * urllib
 * werkzeug
 
+## Python for Snyk Open Source
+
+{% hint style="info" %}
+It is possible that some Python Projects contain dependencies that require specific versions of Python. Therefore, the version of Python used when scanning can affect the dependency tree that Snyk generates.
+{% endhint %}
+
+Snyk Open Source supports the following Python versions: `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`, `3.14`
+
 ### Supported package managers and registries
 
 * Supported package managers: [Pip](https://pypi.org/project/pip/), [Poetry](https://python-poetry.org/), [pipenv](https://pipenv.pypa.io/en/latest/), and setup.py
@@ -94,30 +112,14 @@ Snyk defaults to Python `3.10` if the `Pipfile` contains:
 
 For Poetry projects, you do not need to specify the Python version. Poetry files contain sufficient information to build a full dependency tree without running native tooling.
 
-## Python for Code
-
-For Python with Snyk Code, the following file format is supported: `.py`
-
-Available features:
-
-* Reports
-* Custom rules
-* Interfile analysis
-
-Snyk Code relies on Python projects to follow a standard directory layout for accurate analysis. Specifically, Snyk Code expects Projects to be compatible with [`setuptools` automatic discovery](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#auto-discovery), which identifies packages and modules automatically based on the directory structure. This includes support for `init.py` files to ensure that symbols defined in package initialization files are imported correctly, leading to a more accurate and deeper analysis.
-
-Both `src-layout` and `flat-layout` are supported. Proper adherence to these conventions allows the scanner to trace code effectively and provide accurate results.
-
-## Python for Open Source
-
-For Python with Snyk Open Source, the following file formats are supported:
+### Supported file formats
 
 * For poetry: `pyproject.toml` and `poetry.lock`
 * For pip: `requirements.txt`
 * For pipenv: `pipfile` and `pipfile.lock`
 * For setup.py: `setup.py`
 
-Available features:
+### Available features
 
 * Fix PRs (supported only for pip)
 * License scanning
@@ -127,7 +129,7 @@ Available features:
 Depending on your plan, some features may not be available. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-## IDE and CI/CD support for Python
+### IDE and CI/CD support
 
 If you are using any of the supported IDEs to write Python, there are some configurations you must add to scan Python manifest files properly.
 
@@ -135,7 +137,7 @@ To scan your Projects, you must first install the relevant package manager and e
 
 Python packages that are operating system-specific and not supported by Linux may not be compatible with Snyk SCM scans, leading to errors.
 
-### Virtual environment configuration
+#### Virtual environment configuration
 
 If you are using a virtual environment, you must add the following information:
 
@@ -144,7 +146,7 @@ If you are using a virtual environment, you must add the following information:
 
 By default, the Snyk IDE integration looks for a `*req*.txt` file in the root of the Project as it is seen in the IDE.
 
-### Scan multiple directories
+#### Scan multiple directories
 
 If you have manifest files in other directories within the root of the Project, Snyk cannot identify them unless directed to do so.
 
