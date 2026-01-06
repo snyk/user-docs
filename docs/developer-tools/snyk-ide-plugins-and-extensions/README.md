@@ -11,7 +11,7 @@ The results of a vulnerability scan show issues with context, impact, and fix gu
 
 The Snyk IDE plugins and extensions rely on the [Snyk CLI](../snyk-cli/) to perform many functions. For details, refer to the documentation for each IDE. When you are troubleshooting, it is always helpful to run the CLI for the same action with the debug option, `-d`.
 
-The Snyk IDE plugins and extensions also rely on the [Snyk Vulnerability Database](https://security.snyk.io/). For more information, see the documentation for the [Snyk Vulnerability Database](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md).
+The Snyk IDE plugins and extensions also rely on the [Snyk Vulnerability Database](https://security.snyk.io/). For more information, see the [Snyk Vulnerability Database](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md).
 
 The following Snyk plugins and extensions are available.
 
@@ -19,6 +19,11 @@ The following Snyk plugins and extensions are available.
 * [JetBrains plugin](jetbrains-plugin/)
 * [Visual Studio extension](visual-studio-extension/)
 * [Eclipse plugin](eclipse-plugin/)
+
+The Visual Studio Code extension is compatible with the following Visual Studio Code-based IDEs.
+
+* [Cursor](../../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/cursor-guide.md)&#x20;
+* [Windsurf](../../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/windsurf-guide.md)
 
 Snyk also offers a [Language Server](snyk-language-server/).
 
@@ -30,5 +35,7 @@ The following summarizes the versions of each IDE supported by the Snyk plugin o
 | JetBrains plugin             | <p>The latest Snyk JetBrains plugin supports use with all JetBrains IDEs 2024.2 or newer.</p><p>Older plugin versions may support use with JetBrains IDEs 2020.3 or newer.</p>                                                                                                    |
 | Visual Studio extension      | <p><strong>Visual Studio 2026 is not supported.</strong><br><br>The latest version of the Snyk Visual Studio extension supports use with Visual Studio 2022 (version 17.5 and above).</p><p>Older extension versions may support use with Visual Studio 2015, 2017, and 2019.</p> |
 | Eclipse plugin               | <p>The latest Snyk Eclipse plugin supports use with Eclipse 2024-03 or newer.</p><p>Older plugin versions may support use with Eclipse 2023-03 or newer.</p>                                                                                                                      |
+| Cursor extension             | See the [Visual Studio Code extension](visual-studio-code-extension/) page for more details.                                                                                                                                                                                      |
+| Windsurf extension           | See the [Visual Studio Code extension](visual-studio-code-extension/) page for more details.                                                                                                                                                                                      |
 
-To learn more, see the Snyk Learn lessons about [Using Snyk in an IDE](https://learn.snyk.io/lesson/snyk-in-an-ide/?ecosystem=general).\\
+To learn more, see the Snyk Learn lessons about [Using Snyk in an IDE](https://learn.snyk.io/lesson/snyk-in-an-ide/?ecosystem=general).

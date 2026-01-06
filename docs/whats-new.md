@@ -46,7 +46,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk CLI**
 
-* Snyk CLI now supports uploading files and folders for Snyk Code scanning. The command [`code-test` ](developer-tools/snyk-cli/commands/code-test.md)has been updated with options reflecting these capabilities.
+* Snyk CLI now supports uploading files and folders for Snyk Code scanning. The command [`code-test`](developer-tools/snyk-cli/commands/code-test.md) has been updated with options reflecting these capabilities.
 * The latest [Snyk CLI version](developer-tools/snyk-cli/install-or-update-the-snyk-cli/) available is v1.1300.2.
 
 ### **Snyk integrations**
@@ -61,7 +61,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * For [Ruby](supported-languages/supported-languages-list/ruby.md), versions 2.3.X are no longer supported. The Ruby-specific versions have been updated to include more version patches.
 * PR Check report was added as Early Access to the available reports to identify Snyk PR check locations, increase adoption, and pinpoint common failure impacts on developer workflows.
 * You can now label your assets with metadata on repository assets and build artifacts, helping tag, manage security, and group items by features. An asset label differs from an asset tag, which enables key-value tags for structured metadata, allowing for granular filtering, policy creation, and improved system alignment.
-* [JavaScript for open source](/broken/pages/pSj77gr1a5XbHtxJxYTN#pnpm) has been updated to include full support for pnpm Projects.
+* [JavaScript for open source](supported-languages/supported-languages-list/javascript/#javascript-for-snyk-open-source) has been updated to include full support for pnpm Projects.
 
 ## September 2025
 
@@ -80,7 +80,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * For Java and Kotlin, the list of [supported Gradle versions](supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-package-managers-and-package-registries) now includes Gradle 9.
 * For [Ruby](supported-languages/supported-languages-list/ruby.md), an end-of-support notice has been added to say that starting Oct 1, 2025, Fix PRs are no longer supported for Projects using Ruby versions 3.1.x and lower. The table of supported Ruby versions has also been updated.
-* For Javascript, [support for pnpm Projects](/broken/pages/kJOeCbuqexRTuTQPx6aZ#pnpm) has been added.
+* For Javascript, [support for pnpm Projects](supported-languages/supported-languages-list/javascript/#support-for-pnpm) has been added.
 * `Raise Support Community Cases` and `View Support Community Cases` Tenant level permissions have been added. To learn more about which Tenant roles these permissions apply to, visit Pre-defined roles, [Tenant-level permissions](snyk-platform-administration/user-roles/pre-defined-roles.md#tenant-level-permissions).
 * The [Analytics](manage-risk/analytics/) menu now updates its data daily instead of hourly.
 * Learn how to resolve duplicated and unenriched assets discovered outside Group and Organization-level SCM integrations.
@@ -248,7 +248,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Other updates**
 
-* DAST scanning is now available with [Snyk API & Web](scan-with-snyk/overview.md#select-scanning-methods), enabling users to discover and test the security of their APIs and web apps, including AI-generated ones..
+* DAST scanning is now available with [Snyk API & Web](scan-with-snyk/overview.md#select-scanning-methods), enabling users to discover and test the security of their APIs and web apps, including AI-generated ones.
 * PR Checks is now available with a General Availability release status.
 
 ## March 2025
@@ -370,27 +370,27 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ## September 2024
 
-### **Snyk API**
+### Snyk API
 
 * A prerequisites section has been added to the Group level of [GitHub integration](developer-tools/scm-integrations/organization-level-integrations/github-enterprise.md#prerequisites), and more details about the [Pull personal repositories](developer-tools/scm-integrations/group-level-integrations/github-for-snyk-essentials.md) option have been added to the same documentation page.
-* The [Set up Insights ](discover-snyk/broken-reference/)section was updated to emphasize the risk factors availability for each integration option.
-* The [Snyk Runtime Sensor](discover-snyk/broken-reference/) has been updated to reflect the importance of adopting it to achieve the most effective integration and to access its continuously expanded set of features.
+* The [Set up Insights](manage-risk/prioritize-issues-for-fixing/set-up-insights/) section was updated to emphasize the risk factors availability for each integration option.
+* The Snyk Runtime Sensor has been updated to reflect the importance of adopting it to achieve the most effective integration and to access its continuously expanded set of features.
 
 ### Snyk Broker
 
 The Universal Broker feature is now available in Early Access. The Universal Broker separates deployment and container concerns from connection concerns. It allows for a smaller or a single deployment to support numerous connections of varied types.
 
-### **Snyk CLI**
+### Snyk CLI
 
 * The [CLI commands and options summary](developer-tools/snyk-cli/cli-commands-and-options-summary.md) was updated.
 * [Authentication](developer-tools/snyk-cli/authenticate-to-use-the-cli.md) has been updated.
 * Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](developer-tools/snyk-cli/commands/config.md) help, [`snyk config environment`](developer-tools/snyk-cli/commands/config-environment.md) help.
 
-### **Snyk Integrations**
+### Snyk Integrations
 
 The Snowflake Data Share section has been updated to include a [Data Share Dictionary](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary.md), designed to help you navigate and build your dataset.
 
-### **Other updates**
+### Other updates
 
 * The updated [Regional hosting and data residency](snyk-data-and-governance/regional-hosting-and-data-residency.md) page was published.
 * [Glossary](discover-snyk/getting-started/glossary.md) terms were updated for SCA, SAST, DAST, and IAST as well as Software Composition Analysis.
@@ -398,19 +398,19 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 ## August 2024
 
-### **Snyk API**
+### Snyk API
 
 * Links in the API reference docs have been updated.
 * The [API endpoints index and notes](snyk-api/api-endpoints-index-and-tips/) have been updated.
 
-### **Snyk Essentials**
+### Snyk Essentials
 
-### **Snyk CLI**
+### Snyk CLI
 
 * [`snyk auth`](developer-tools/snyk-cli/commands/auth.md) command help updated to reflect OAuth default.
 * [CLI authentication](developer-tools/snyk-cli/authenticate-to-use-the-cli.md) instructions updated for OAuth default and improved flow.
 * [`snyk config environment`](developer-tools/snyk-cli/commands/config-environment.md) command help has been added.
-* CLI [support for pnpm added](/broken/pages/pSj77gr1a5XbHtxJxYTN#pnpm).
+* CLI [support for pnpm added](supported-languages/supported-languages-list/javascript/#support-for-pnpm).
 
 ### Snyk IDE
 
@@ -430,7 +430,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 * The [API End of Life (EOL) process and migration guides](snyk-api/api-end-of-life-eol-process-and-migration-guides/) are now published and updated to support the process, which began in July.
 * [Asset inventory filtering](manage-assets/assets-inventory-components.md#asset-tabs) describes the new, simplified view that provides an improved experience of filtering the assets.
 * The [Asset inventory layouts](manage-assets/assets-inventory-layouts.md) have been renamed to better reflect their functionality.
-* Four new SCM integrations are now available for Snyk AppRisk:
+* Four new SCM integrations are now available for Snyk:
   * [Atlassian Compass](developer-tools/scm-integrations/application-context-for-scm-integrations/#atlassian-compass)
   * [Harness](developer-tools/scm-integrations/application-context-for-scm-integrations/#harness)
   * [OpsLevel](developer-tools/scm-integrations/application-context-for-scm-integrations/#opslevel)

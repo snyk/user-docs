@@ -1,10 +1,10 @@
 # Cursor guide
 
-You can access Snyk Studio, including Snyk's MCP server, in Cursor to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. For most users, we recommend accessing Snyk Studio using the Snyk Security plugin.
+You can access Snyk Studio, including Snyk's MCP server, in Cursor to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. For most users, we recommend accessing Snyk Studio using the Snyk Security extension.
 
-## Recommended: Access Snyk Studio using the Snyk Security Plugin
+## Recommended: Access Snyk Studio using the Snyk Security Extension
 
-* Click [this link](cursor:extension/snyk-security.snyk-vulnerability-scanner) to open up the Snyk Security plugin directly
+* Click [this link](cursor:extension/snyk-security.snyk-vulnerability-scanner) to open up the Snyk Security extension directly
 * Click `Install`
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-10-13 at 2.19.30 PM.png" alt=""><figcaption></figcaption></figure>
@@ -13,17 +13,15 @@ You can access Snyk Studio, including Snyk's MCP server, in Cursor to secure cod
 
 Once installation completes, a modal window will appear prompting an opt-in to Snyk Studio's "Secure at Inception." This will automatically configure the necessary rules to scan any new AI generated code. Additional variations are available within the plugin's Settings page.
 
-<figure><img src="../../../.gitbook/assets/image (41) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
 
-Choosing yes will activate `Auto Configure Snyk Mcp Server` and set the `Secure at Inception: Execution Frequency` to "On Code Generation." These settings willl handle the configuration of the Snyk MCP and the creation of the snyk\_rules.mdc file within the directory.
+Choosing **Yes** activates `Auto Configure Snyk Mcp Server` and sets the `Secure at Inception: Execution Frequency` to **On Code Generation**. These settings handle the configuration of the Snyk MCP Server and the creation of the snyk\_rules.mdc file within the directory.
 
-#### Updating Secure at Inception settings
+#### Updating the Secure at Inception setting
 
 Users who previously installed the VS Code IDE extensions and did not enable Secure at Inception via the modal window can enable them after the fact via the IDE extension settings. Users can also update Secure at Inception settings or disable them by setting the `Execution Frequency` to "Manual."
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Authenticate
 
@@ -36,57 +34,59 @@ As part of the authentication flow, you'll be asked to either sign up or sign in
 
 _For new users_, select the preferred sign up method and agree to the terms on the next screen. Once you've successfully authenticated, you'll be instructed to return to your IDE.
 
-**Please note:** In order to use Snyk Studio, specifically Snyk's SAST scanning capabilities, you'll need to enable [Snyk Code](../../../scan-with-snyk/snyk-code/). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to our [data retention policy](../../../snyk-data-and-governance/how-snyk-handles-your-data.md). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code. [More details on plans](https://snyk.io/plans/)
+In order to use Snyk Studio, specifically Snyk's SAST scanning capabilities, you must [enable Snyk Code](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to Snyk's [data retention policy](../../../snyk-data-and-governance/how-snyk-handles-your-data.md). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code.
 
-_For existing users,_ select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM will prompt you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md).
+_For existing users,_ select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md).
 
-**Please note:** If you are enabling Snyk Code for the first time, you must import / re-import existing projects in order to properly scan them.
+If you are enabling Snyk Code for the first time, you must import or re-import existing projects in order to properly scan them.
 
 ### Run Snyk Studio
 
 Once authenticated, Snyk Studio should be triggered whenever new code is generated by the LLM. If Snyk Studio is not enabled, restart your IDE and try generating code again.
 
-**Please note:** Free users are limited to a set number of scans. If you reach the allotment, we recommend [reaching out to sales](https://snyk.io/contact-us/) to unlock additional thresholds.
+Free users are limited to a set number of scans. If you reach the allotment, we recommend [reaching out to sales](https://snyk.io/contact-us/) to unlock additional thresholds.
 
-## Alternate: Install Snyk Studio Directly
+## Alternative: Install Snyk Studio Directly
 
-## Prerequisites
+#### Install using the Cursor Link
 
-* [Install the code assistant extension](cursor-guide.md#install-cursor)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
-* [Install the Snyk MCP](cursor-guide.md#install-the-snyk-mcp-server-in-cursor)
-
-### Install Cursor
-
-* Click [this link](cursor://anysphere.cursor-deeplink/mcp/install?name=snyk\&config=eyJjb21tYW5kIjoibnB4IC15IHNueWtAbGF0ZXN0IG1jcCAtdCBzdGRpbyJ9) to directly add the server to Cursor.
-* Confirm installation in the Cursor settings by clicking on `Install`
+Click [this link](cursor://anysphere.cursor-deeplink/mcp/install?name=snyk\&config=eyJjb21tYW5kIjoibnB4IC15IHNueWtAbGF0ZXN0IG1jcCAtdCBzdGRpbyJ9) to directly add the Snyk MCP Server to Cursor. Confirm the installation by clicking `Install` in the Cursor settings.
 
 <figure><img src="../../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
 
-### Install the Snyk MCP Server in Cursor
+#### Install using the Cursor MCP Directory
 
-Install the Snyk MCP Server using the method that best suits your operating system and local development environment.
+Search the [Cursor MCP Directory](https://cursor.com/docs/context/mcp/directory) for `Snyk`. Then install by clicking the `Add to Cursor` button. Confirm the installation by clicking `Install` in the Cursor settings.
 
-#### Install using the Snyk extension
+<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
-Navigate to the list of MCP servers on the Cursor website and search for Snyk. Then install by clicking the `Add Snyk to Cursor` button.
+#### Install manually&#x20;
 
-<div data-full-width="false"><figure><img src="../../../.gitbook/assets/image (330).png" alt="" width="375"><figcaption></figcaption></figure></div>
+Install the Snyk MCP Server using the method that best suits your operating system and local development environment. The Snyk MCP Server can be installed and run via `npx` or via the Snyk CLI.
 
-Confirm the installation by clicking `Install` in the Cursor settings.
+Navigate to Cursor **Settings** > **Tools & Integrations** > **Add Custom MCP.**
 
-#### Install manually in Cursor
-
-* Open Cursor settings
-* Navigate to **Tools & Integrations**
-* Select **Add Custom MCP**
-* Add the following json snippet to the file in use. For this example, the assumption is that Snyk is on the system path. If this is not applicable, then use the absolute path to the Snyk CLI.
+To install and run via `npx`:
 
 ```json5
 {
   "mcpServers": {
     "Snyk": {
       "command": "npx -y snyk@latest mcp -t stdio",
+      "env": {}
+    }
+  }
+}
+```
+
+To install and run via Snyk CLI:
+
+```json5
+{
+  "mcpServers": {
+    "Snyk": {
+      "command": "/abosolute/path/to/snyk"
+      "args": ["mcp", "-t", "stdio"],
       "env": {}
     }
   }

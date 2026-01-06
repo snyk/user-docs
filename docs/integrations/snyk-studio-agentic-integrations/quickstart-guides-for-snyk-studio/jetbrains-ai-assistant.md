@@ -12,7 +12,7 @@ You can access Snyk Studio, including Snyk's MCP server, in JetBrains AI Assista
 
 Add the JetBrains AI Assistant plugin to your JetBrains IDE (IntelliJ IDEA, WebStorm, PyCharm, and so on). For more details, see the official [JetBrains AI Assistant getting started page](https://www.jetbrains.com/help/ai-assistant/getting-started-with-ai-assistant.html).
 
-Jetbrians AI Assistent tends to work more stably with the Snyk MCP service when using the [pre-installed CLI option](https://docs.google.com/document/d/1IfJ6dj6cEEvASoMKxg321IT3y2VkluP0juI_hHuDlJU/edit?tab=t.0#heading=h.nu8pk2tv8p88).
+Jetbrians AI Assistent tends to work more stably with the Snyk MCP service when using the [pre-installed CLI option](jetbrains-ai-assistant.md#install-with-pre-installed-snyk-cli).
 
 ### Install the Snyk MCP Server in JetBrains AI Assistant
 

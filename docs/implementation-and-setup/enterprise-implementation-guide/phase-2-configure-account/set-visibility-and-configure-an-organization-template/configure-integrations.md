@@ -6,7 +6,7 @@
 For information about importing Projects, see [Import Projects](../../phase-3-gain-visibility/import-projects.md) and [Rollout](../../phase-5-initial-rollout-to-team/).
 {% endhint %}
 
-When you create your Organizations, you must decide where to add Snyk in your Software Development Lifecycle (SDLC).&#x20;
+When you create your Organizations, you must decide where to add Snyk in your Software Development Lifecycle (SDLC).
 
 Snyk recommends that you first gain visibility for your vulnerabilities, with features related to gating disabled initially.
 
@@ -29,16 +29,16 @@ Snyk can integrate with multiple Git repositories to help you track, monitor, an
 
 If you have on-premise Git repositories, you must configure and run [Snyk Broker](../../../enterprise-setup/snyk-broker/) to enable the integration.
 
-When importing a repository, Snyk will scan and monitor the default branch for vulnerabilities.&#x20;
+When importing a repository, Snyk will scan and monitor the default branch for vulnerabilities.
 
 Monitoring takes the form of
 
-* daily scanning of a specified branch, even when you are not working on it,&#x20;
+* daily scanning of a specified branch, even when you are not working on it,
 * Pull Request and Merge Checks
 
 Source control scanning of your Git repositories is suitable for the majority of supported languages, but note that if you use a private package manager, such as Artifactory, this must be integrated with Snyk to scan your private packages.
 
-You can import Projects through a Git repository integration manually through the browser, or you can use the API, either with the [snyk-api-import](../../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) tool to import repositories in bulk, or the endpoint  [Import Targets](../../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to import specific repositories, which can be inserted into a pipeline.
+You can import Projects through a Git repository integration manually through the browser, or you can use the API, either with the [snyk-api-import](../../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) tool to import repositories in bulk, or the endpoint [Import Targets](../../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to import specific repositories, which can be inserted into a pipeline.
 
 {% hint style="info" %}
 For Snyk Enterprise customers, it is strongly suggested to use the **GitHub Enterprise integration card** on the Snyk Integrations page. You do not need to be a GitHub Enterprise customer to use this option; however, using this option allows a Personal Access Token (PAT) to be used, whereas OAuth, provided through the GitHub Integration card, provides an inconsistent experience in terms of access in the interface.
@@ -60,9 +60,7 @@ To disable gating initially, use the daily monitoring that is automatically conf
   * Code analysis
 {% endhint %}
 
-&#x20;Similarly, you may want to disable fix and upgrade PR features.
-
-[Snyk AppRisk integrations](../configure-asset-management-with-snyk-essentials.md#setup-integrations) require additional setup and configuration using the **Add integration** option from the Snyk Web UI, Snyk AppRisk menu.
+Similarly, you may want to disable fix and upgrade PR features.
 
 ### CI/CD (Build Pipelines)
 
@@ -79,16 +77,11 @@ There are a number of [CI/CD integrations](../../../../developer-tools/snyk-ci-c
 In the initial phase, Snyk recommends using the `monitor` feature to import information into Snyk so you can see any discovered issues, unless you are already importing your repos using a source control integration to achieve this. Later, when you want to start gating and blocking new vulnerabilities from being added, you can introduce `test` features, initially failing builds on critical issues, and then gradually adapting the fail criteria over time.
 
 {% hint style="info" %}
-For `snyk iac test --report`, finding issues will result in the build possibly stopping with a non-zero response code. \
+For `snyk iac test --report`, finding issues will result in the build possibly stopping with a non-zero response code.\
 \
-If you want to passively test this, including the `--report` option requires either setting the build step to always continue or an alternative like concatenating logic equating to "or true", (for example  `snyk iac test --report || true`). The exact syntax will depend on the ecosystem the CLI is running in.&#x20;
+If you want to passively test this, including the `--report` option requires either setting the build step to always continue or an alternative like concatenating logic equating to "or true", (for example `snyk iac test --report || true`). The exact syntax will depend on the ecosystem the CLI is running in.
 {% endhint %}
 
 Tools like [`snyk-filter`](../../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) for advanced filtering and [`snyk-delta`](../../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-delta.md) for highlighting new issues are quite popular for configuring pipelines.
 
 Demonstrations of various pipeline integrations can be found on [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples)
-
-
-
-
-

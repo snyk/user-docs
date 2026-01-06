@@ -49,7 +49,7 @@ Set the frequency of scanning and initiation of fixes for AI-generated code in t
 ## Configuration at scale
 
 {% hint style="info" %}
-For broad deployment, use an MDM or Endpoint Management tool like JAMF to target [MCP configuration](snyk-studio-and-secure-at-inception.md#install-the-snyk-extension-and-configure-the-snyk-mcp-server) to developer devices.
+For broad deployment, use an MDM or Endpoint Management tool like JAMF to target [MCP configuration](snyk-studio-and-secure-at-inception.md#install-the-extension-and-configure-the-snyk-mcp-server) to developer devices.
 {% endhint %}
 
 To configure using JAMF, separate targeting for groups and configurations:

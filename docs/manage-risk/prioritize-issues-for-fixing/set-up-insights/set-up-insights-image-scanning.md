@@ -4,7 +4,7 @@ To determine the risk factors and prioritize your Code, Open Source, and Contain
 
 The container image is at the center of the application model that powers Snyk Enterprise. A container image includes your source code and dependencies, and it is deployed to your running environment, enabling Snyk to use the container image to bridge the development and deployment states.\
 \
-Snyk will identify any deployed container images using the [Kubernetes Connector](broken-reference) and compare the deployed container images to the list of scanned images you have scanned using [Snyk Container](../../../scan-with-snyk/snyk-container/).
+Snyk will identify any deployed container images using the [Kubernetes Connector](set-up-insights-kubernetes-connector.md) and compare the deployed container images to the list of scanned images you have scanned using [Snyk Container](../../../scan-with-snyk/snyk-container/).
 
 {% hint style="info" %}
 Snyk recommends that you scan each image using at least one of the Snyk Container integrations.

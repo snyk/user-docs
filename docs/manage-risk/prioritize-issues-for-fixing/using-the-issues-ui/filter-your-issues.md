@@ -29,7 +29,7 @@ You can also add a variety of filters that you consider relevant for any particu
 
 In an initial triage, you want to look at OS condition, Deployed, and Public facing, and choose both critical and high severity. Snyk Open Source finds critical vulnerabilities, while Snyk Code finds vulnerabilities up to high severity only. When you filter on the issues of greatest concern, filter for both critical and high severity.
 
-When you filter based on the Asset class and an issue is found in two different repositories with two different classes assigned, the class with the highest priority is displayed in Snyk AppRisk.
+When you filter based on the Asset class and an issue is found in two different repositories with two different classes assigned, the class with the highest priority is displayed in Snyk.
 
 When you want to split out Open Source and Snyk Code issues, use a product filter.
 

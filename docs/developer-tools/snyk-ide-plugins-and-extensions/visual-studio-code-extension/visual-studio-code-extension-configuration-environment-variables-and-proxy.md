@@ -28,6 +28,7 @@ After the plugin is installed, you can set the following configurations for the 
 
 * **Scanning mode:** The **auto** option activates automatic scans when saving files and when opening a Project. This works with Snyk Code and Snyk IaC.
 * **Auto Scan Open Source Security:** Set to run Open Source Security analysis in automatic mode.
+* **Snyk window recommendation**: Dock the Snyk window at the bottom or side of your screen for easier navigation. Avoid using it in full-screen mode.
 
 ## Experimental
 

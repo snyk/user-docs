@@ -9,4 +9,4 @@ As part of this configuration, you will want to do the following:
 * [Configure SSO](configure-sso.md)
 * [Configure Organizations](set-visibility-and-configure-an-organization-template/), including [setting up integrations](set-visibility-and-configure-an-organization-template/configure-integrations.md)
 * [Configure license and security policies](apply-security-and-license-policies.md)
-* [Configure Snyk integrations](configure-asset-management-with-snyk-essentials.md), [policies](../phase-3-gain-visibility/set-up-snyk-apprisk-policies.md), and [issues prioritization](broken-reference/).
+* [Configure Snyk integrations](configure-asset-management-with-snyk-essentials.md) and [policies](../phase-3-gain-visibility/set-up-snyk-apprisk-policies.md).

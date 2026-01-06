@@ -27,11 +27,13 @@ After the plugin is installed, you can set the following configurations for the 
 
 **Scanning mode:** The auto option activates automatic scans when saving files and when opening a Project. This works with Snyk Code and Snyk IaC.
 
+**Snyk Window Recommendation:** The Snyk window should be docked either to the bottom or to the side of the IDE, to enable smoother navigation. It should not be used in full-screen mode.
+
 ## Experimental
 
-This section contains experimental features that may change at any time.&#x20;
+This section contains experimental features that may change at any time.
 
-These settings are not part of the stable functionality and are not officially supported. &#x20;
+These settings are not part of the stable functionality and are not officially supported.
 
 ## CLI settings
 
@@ -52,8 +54,8 @@ For example, to enable unmanaged [C/C++](../../../supported-languages/supported-
 
 Settings on this page are scoped to the active solution
 
-* **Additional parameters:** Passed to `snyk test` [CLI options](../../snyk-cli/commands/test.md) for **Snyk Open Source** scanning. \
-  For example, to enable unmanaged [C/C++](../../../supported-languages/supported-languages-list/c-c++/) scanning to find vulnerabilities in open-source packages, use the CLI option `--unmanaged`. Note that `--unmanaged` works only for unmanaged C/C++ scanning.&#x20;
+* **Additional parameters:** Passed to `snyk test` [CLI options](../../snyk-cli/commands/test.md) for **Snyk Open Source** scanning.\
+  For example, to enable unmanaged [C/C++](../../../supported-languages/supported-languages-list/c-c++/) scanning to find vulnerabilities in open-source packages, use the CLI option `--unmanaged`. Note that `--unmanaged` works only for unmanaged C/C++ scanning.
 * **Auto-select Organization:** When enabled, Snyk will automatically select the most appropriate Organization for your Project using context found in your repository and your authentication. If an Organization is configured manually, this feature is overridden. If an appropriate Organization cannot be identified automatically, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) is used as a fallback.
 * **Organization**: Specify the Organization (ID or name) for Snyk to run scans against for this specific IDE project. Retrieve the Organization ID from the Organization settings in the Snyk Web UI: `https://app.snyk.io/org/[ORG_NAME]/manage/settings` and copy the ID from the Organization ID section. If the Organization is provided manually, automatic Organization selection is overridden. If the Organization value is blank or invalid, the value from the global Organization field is used.
 

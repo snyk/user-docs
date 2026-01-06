@@ -77,16 +77,16 @@ If you encounter any of the failed statuses, check the Connection failure detail
 
 You can refer to the table below to verify the availability and compatibility of all integrations for Snyk Essentials. The integrations are categorized by type, listed by name, and indicated as available or not for Snyk Essentials.
 
-<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk Essentials</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="../developer-tools/scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials.md">GitHub</a></li><li><a href="../developer-tools/scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials.md">BitBucket</a></li><li><a href="../developer-tools/scm-integrations/group-level-integrations/gitlab-for-snyk-essentials.md">GitLab</a></li><li><a href="../developer-tools/scm-integrations/group-level-integrations/azure-devops-for-snyk-essentials.md">Azure DevOps</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/">Backstage catalog</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#servicenow-cmdb-for-scm-integrations">ServiceNow CMDB</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#atlassian-compass">Atlassian Compass</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#harness">Harness</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#opslevel">OpsLevel</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#datadog-org-context-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
+<table><thead><tr><th width="172">Integration type</th><th width="164">Integration name</th><th width="198">Snyk Essentials</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="../developer-tools/scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials.md">GitHub</a></li><li><a href="../developer-tools/scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials.md">BitBucket</a></li><li><a href="../developer-tools/scm-integrations/group-level-integrations/gitlab-for-snyk-essentials.md">GitLab</a></li><li><a href="../developer-tools/scm-integrations/group-level-integrations/azure-devops-for-snyk-essentials.md">Azure DevOps</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Dev portals and Service catalogs</td><td><ul><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/">Backstage catalog</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#servicenow-cmdb-for-scm-integrations">ServiceNow CMDB</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#atlassian-compass">Atlassian Compass</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#harness">Harness</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#opslevel">OpsLevel</a></li><li><a href="../developer-tools/scm-integrations/application-context-for-scm-integrations/#datadog-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>Risk management collaboration</td><td><ul><li><a href="jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>Email</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
 
-You can refer to the list below to view available and compatible integrations for Snyk Essentials.&#x20;
+You can refer to the list below to view available and compatible integrations for Snyk Essentials.
 
 **SCM**
 
-* [GitHub](../developer-tools/scm-integrations/organization-level-integrations/github.md#group-level-snyk-apprisk-integrations)
-* [BitBucket](../developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud.md#bitbucket-setup-guide)
-* [GitLab](../developer-tools/scm-integrations/organization-level-integrations/github.md#group-level-snyk-apprisk-integrations)
-* [Azure DevOps](../developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs.md#azure-devops-setup-guide)
+* [GitHub](../developer-tools/scm-integrations/group-level-integrations/github-for-snyk-essentials.md)
+* [BitBucket](../developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud.md#how-to-set-up-the-bitbucket-cloud-integration)
+* [GitLab](../developer-tools/scm-integrations/group-level-integrations/gitlab-for-snyk-essentials.md)
+* [Azure DevOps](../developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs.md)
 
 **Dev portals and Service catalogs**
 
@@ -95,7 +95,7 @@ You can refer to the list below to view available and compatible integrations fo
 * [Atlassian Compass](../developer-tools/scm-integrations/application-context-for-scm-integrations/#atlassian-compass)
 * [Harness](../developer-tools/scm-integrations/application-context-for-scm-integrations/#harness)
 * [OpsLevel](../developer-tools/scm-integrations/application-context-for-scm-integrations/#opslevel)
-* [Datadog Org Context (Service Catalog)](../developer-tools/scm-integrations/application-context-for-scm-integrations/#datadog-org-context-service-catalog)
+* [Datadog Org Context (Service Catalog)](../developer-tools/scm-integrations/application-context-for-scm-integrations/#datadog-service-catalog)
 
 **Risk management collaboration**
 
