@@ -1,9 +1,9 @@
 # Redesigned Analytics
 
-## Snyk Analytics: Redesigned Tenant-Level Experience (Early Access)
+## Snyk Analytics: Redesigned Tenant-Level Experience
 
 {% hint style="info" %}
-The redesigned Snyk Analytics experience in Early Access is available to all customers on an Enterprise plan with group-level reporting permissions.
+The redesigned Snyk Analytics experience is available to all customers on an Enterprise plan with group-level reporting permissions.
 {% endhint %}
 
 Learn how to build custom dashboards, access enhanced metrics, and explore Tenant-level analytics. The redesigned Snyk Analytics includes:
@@ -21,7 +21,7 @@ Data access at the Tenant level is governed by your existing Group-level permiss
 
 * Any Group member with reporting permissions can now see their Groups on the Tenant-level analytics page.
 * Access is restricted to those Groups the user has permissions for, based on their Group-level permissions (in both predefined and custom roles).
-*   Users who previously had Group reporting permissions but no direct access to Tenant-level analytics  can now access  Tenant-level analytics for the first time. For example, users missing a feature flag or without Tenant-level roles such as Tenant Admin or Tenant Viewer.
+*   Users who previously had Group reporting permissions but no direct access to Tenant-level analytics can now access Tenant-level analytics for the first time. For example, users missing a feature flag or without Tenant-level roles such as Tenant Admin or Tenant Viewer.
 
     Users with Group reporting permissions, who couldn't previously access Tenant-level analytics, will now be able to view Tenant analytics.
 
