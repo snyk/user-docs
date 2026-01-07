@@ -19,24 +19,24 @@ Choosing **Yes** activates `Auto Configure Snyk Mcp Server` and sets the `Secure
 
 #### Updating the Secure at Inception setting
 
-Users who previously installed the VS Code IDE extensions and did not enable Secure at Inception via the modal window can enable them after the fact via the IDE extension settings. Users can also update Secure at Inception settings or disable them by setting the `Execution Frequency` to "Manual."
+Users who previously installed the VS Code IDE extensions and did not enable Secure at Inception using the modal window can enable them after the fact through the IDE extension settings. Users can also update Secure at Inception settings or disable them by setting the `Execution Frequency` to "Manual."
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Authenticate
 
-Once you've made a selection regarding Secure at Inception, you'll be asked to authenticate. You can authenticate at two points in this process:
+Once you've made a selection regarding Secure at Inception, you will be asked to authenticate. You can authenticate at two points in this process:
 
 * Immediately after plugin install
 * Prior to your first Snyk code scan
 
 As part of the authentication flow, you'll be asked to either sign up or sign in on the Snyk website. A browser window will open.
 
-_For new users_, select the preferred sign up method and agree to the terms on the next screen. Once you've successfully authenticated, you'll be instructed to return to your IDE.
+For new users, select the preferred sign up method and agree to the terms on the next screen. Once you've successfully authenticated, you'll be instructed to return to your IDE.
 
-In order to use Snyk Studio, specifically Snyk's SAST scanning capabilities, you must [enable Snyk Code](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to Snyk's [data retention policy](../../../snyk-data-and-governance/how-snyk-handles-your-data.md). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code.
+To use Snyk Studio, specifically Snyk's SAST scanning capabilities, you must [enable Snyk Code](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to Snyk's [data retention policy](../../../snyk-data-and-governance/how-snyk-handles-your-data.md). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code.
 
-_For existing users,_ select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md).
+For existing user&#x73;_,_ select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md).
 
 If you are enabling Snyk Code for the first time, you must import or re-import existing projects in order to properly scan them.
 
@@ -66,7 +66,7 @@ Install the Snyk MCP Server using the method that best suits your operating syst
 
 Navigate to Cursor **Settings** > **Tools & Integrations** > **Add Custom MCP.**
 
-To install and run via `npx`:
+To install and run using `npx`:
 
 ```json5
 {
@@ -79,7 +79,7 @@ To install and run via `npx`:
 }
 ```
 
-To install and run via Snyk CLI:
+To install and run using the Snyk CLI:
 
 ```json5
 {
