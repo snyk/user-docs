@@ -211,11 +211,11 @@ For a full list of supported options, see the CLI help docs for `test`, `monitor
 
 ### Human-readable output
 
+By default findings are returned in human-readable output with **Reachability** as a property for each finding.&#x20;
+
 When the `--reachability=true`  option is used, Reachability results are returned in human readable format by default. **Reachability** as a property of each finding.
 
 <figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
-
-If the `--reachability=true`  option is not used, the **Reachability** property does not appear in the command outpu&#x74;**.**
 
 ### JSON output
 
