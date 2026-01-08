@@ -137,11 +137,11 @@ If a finding is a false positive, you can manually resolve the comment in the SC
 
 ### What happens to comments when a new commit is pushed?
 
-#### **Issue Summary Comment**
+#### Issue Summary Comment
 
 When a new commit is pushed to the pull request, the existing summary comment is updated with the latest Snyk scan results for that commit. This means the issues count is refreshed to reflect the most recent analysis. No new issue summary comment is added, ensuring developers get a concise view of potential vulnerabilities without being flooded with notifications.
 
-#### **Inline Comments**
+#### Inline Comments
 
 For every pushed commit, a review is created if Snyk Code PR Check detects new issues. Each issue is added as an inline comment. If an issue from a previous commit is fixed in the new commit, its comment is marked as resolved. Unresolved issues remain as inline comments.
 
