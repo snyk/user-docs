@@ -18,6 +18,8 @@ Available functions:
 
 ## Python for Snyk Code
 
+For Python with Snyk Code, Python versions up to `3.11` are supported. Language features introduced in newer versions are not supported.
+
 For Python with Snyk Code, the following file format is supported: `.py`
 
 Available features:
@@ -25,14 +27,6 @@ Available features:
 * Reports
 * Custom rules
 * Interfile analysis
-
-### Directory layout
-
-Snyk Code relies on Python projects to follow a **standard directory layout** for accurate analysis. Specifically, Snyk Code expects projects to be compatible with [`setuptools` automatic discovery](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#auto-discovery), which identifies packages and modules automatically based on the directory structure. This includes support for `init.py` files to ensure that symbols defined in package initialization files are imported correctly, leading to a more accurate and deeper analysis.
-
-Both `src-layout` and `flat-layout` are supported. Proper adherence to these conventions allows the scanner to trace code effectively and provide accurate results.
-
-Snyk Code supports Python versions up to `3.11`. Language features introduced in newer versions are not supported.
 
 ### Supported frameworks and libraries
 
@@ -82,13 +76,19 @@ For Python, the following frameworks and libraries are supported:
 * urllib
 * werkzeug
 
+### Directory layout
+
+Snyk Code relies on Python projects to follow a standard directory layout for accurate analysis. Specifically, Snyk Code expects Projects to be compatible with [`setuptools` automatic discovery](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#auto-discovery), which identifies packages and modules automatically based on the directory structure. This includes support for `init.py` files to ensure that symbols defined in package initialization files are imported correctly, leading to a more accurate and deeper analysis.
+
+Both `src-layout` and `flat-layout` are supported. Proper adherence to these conventions allows the scanner to trace code effectively and provide accurate results.
+
 ## Python for Snyk Open Source
 
 {% hint style="info" %}
 It is possible that some Python Projects contain dependencies that require specific versions of Python. Therefore, the version of Python used when scanning can affect the dependency tree that Snyk generates.
 {% endhint %}
 
-Snyk Open Source supports the following Python versions: `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`, `3.14`
+For Python with Snyk Open Source, the following Python versions are supported: `2.7`, `3.7`, `3.8`, `3.9`, `3.10`, `3.11`, `3.12`, `3.13`, `3.14`
 
 ### Supported package managers and registries
 
