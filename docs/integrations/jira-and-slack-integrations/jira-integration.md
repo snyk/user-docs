@@ -4,7 +4,7 @@
 For Snyk Infrastructure as Code, see [Jira Integration for IaC](../../scan-with-snyk/snyk-iac/snyk-iac-integrations/jira-integration-for-iac.md).
 {% endhint %}
 
-## **Set up your Jira integration**
+## Set up your Jira integration
 
 Snyk Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues. The Jira integration also includes the API endpoints [Create jira issue](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue) and [List all jira issues](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-jira-issues).
 
@@ -43,7 +43,7 @@ Fill in the following fields:
 
 <figure><img src="../../.gitbook/assets/JiraSettings.png" alt=""><figcaption><p>A successful connection</p></figcaption></figure>
 
-## **Create a Jira issue**
+## Create a Jira issue
 
 After you set up the Jira integration connection, open one of your Snyk Projects in the Snyk Web UI. A new button, **Create an issue**, appears at the bottom of each vulnerability and license issue card. This button allows you to create a Jira issue.
 

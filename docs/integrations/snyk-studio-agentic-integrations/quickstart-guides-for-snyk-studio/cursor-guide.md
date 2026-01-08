@@ -36,7 +36,7 @@ For new users, select the preferred sign up method and agree to the terms on the
 
 To use Snyk Studio, specifically Snyk's SAST scanning capabilities, you must [enable Snyk Code](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and/or uploads your code. Cloned or uploaded code is cached according to Snyk's [data retention policy](../../../snyk-data-and-governance/how-snyk-handles-your-data.md). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code.
 
-For existing user&#x73;_,_ select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md).
+For existing users, select the log-in method associated with your account. If you don't already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md).
 
 If you are enabling Snyk Code for the first time, you must import or re-import existing projects in order to properly scan them.
 
