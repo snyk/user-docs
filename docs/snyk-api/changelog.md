@@ -1,3 +1,9 @@
+## 2025-11-05 - Updated 2026-01-09
+
+### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Updated
+- added the new optional `query` request parameter `go-module-level`
+
+
 ## 2025-11-05 - Updated 2025-12-04
 
 ### DELETE - `/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integrations/{integration_id}` - Updated
