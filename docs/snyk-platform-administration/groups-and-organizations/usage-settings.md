@@ -59,7 +59,7 @@ The **Billing and Usage** dashboard provides the following information:
 * **Platform Access:** the number of available credits per billing period, the number of contributing developers, and the Snyk products enabled. To see which Snyk products are enabled, hover over the information button.
 
 {% hint style="info" %}
-You may need to enable certain capabilities at the tenant level to begin using Snyk. Capability enablement can be done in the Snyk Console through your tenant’s **Settings** page in the navigation panel.
+You may need to enable certain capabilities at the Tenant level to begin using Snyk. Capability enablement can be done in the Snyk Web UI through your Tenant’s **Settings** page in the navigation panel.
 {% endhint %}
 
 * **Credit usage:** the number of credits used so far and the number of days left on your subscription.

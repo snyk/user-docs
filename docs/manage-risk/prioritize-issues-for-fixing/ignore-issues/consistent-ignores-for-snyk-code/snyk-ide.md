@@ -2,7 +2,7 @@
 
 When you run tests in any of the [four supported Snyk IDE plugins](../../../../developer-tools/snyk-ide-plugins-and-extensions/), the plugins will take into account your ignores.
 
-## **Minimum version required**
+## Minimum version required
 
 Snyk Code Consistent Ignores works best with the latest IDE plugin versions.
 
@@ -13,13 +13,13 @@ Snyk Code Consistent Ignores works best with the latest IDE plugin versions.
 | Visual Studio | 2.2.1                    |
 | Eclipse       | v20250516.122216         |
 
-## **Setup**&#x20;
+## Setup
 
-To take ignores into account, specify the Organization where the ignores reside. [Group-level policies also cascade down to all Organizations](./#manage-ignores-at-the-group-level-through-security-policies). See [How to select the Organization to use in IDE plugins (Visual Studio Code example)](../../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
+To take ignores into account, specify the Organization where the ignores reside. [Group-level policies also cascade down to all Organizations](./#manage-ignores-at-the-group-level-through-snyk-code-security-policies). See [How to select the Organization to use in IDE plugins (Visual Studio Code example)](../../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
 
 ## Snyk IDE default ignore behavior
 
-The IDE display output hides ignored results by default to maintain developer focus.&#x20;
+The IDE display output hides ignored results by default to maintain developer focus.
 
 ## View ignores in Snyk IDE
 

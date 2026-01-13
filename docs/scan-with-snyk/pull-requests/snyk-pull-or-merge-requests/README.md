@@ -3,7 +3,7 @@
 In addition to fixing advice, Snyk can automatically create pull requests (PRs) on your behalf to upgrade your dependencies based on the scan results. To create PRs automatically in implementations with Snyk Broker, your administrator should first upgrade to v4.55.0 or later.
 
 {% hint style="info" %}
-For the basic steps in fixing vulnerabilities, see  [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To ensure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md#languages-supported-for-fix-pull-requests-or-merge-requests) and [Supported browsers](../../../discover-snyk/getting-started/#supported-browsers) pages.
+For the basic steps in fixing vulnerabilities, see [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To ensure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md#languages-supported-for-fix-pull-requests-or-merge-requests) and [Supported browsers](../../../discover-snyk/getting-started/#supported-browsers) pages.
 {% endhint %}
 
 {% hint style="info" %}
@@ -15,7 +15,7 @@ Snyk provides actionable fix advice for vulnerabilities in your Open Source libr
 * [#automated-snyk-prs](./#automated-snyk-prs "mention"): automatic pull and merge requests
 * [#manual-snyk-prs](./#manual-snyk-prs "mention"): manual pull and merge requests
 
-## **Automated Snyk PRs**
+## Automated Snyk PRs
 
 For Projects imported through an SCM integration, Snyk offers the following types of automated pull and merge requests:
 
@@ -29,7 +29,7 @@ Follow these steps to generate a PR or MR directly from your Project in the Snyk
 
 1. Navigate to your Project from the Project list.
 2. Select the Project.
-3. Select **Open a Fix PR/MR** or **Fix this vulnerability.** A preview screen appears, showing you what fixes will be applied.
+3. Select **Open a Fix PR/MR** or **Fix this vulnerability**. A preview screen appears, showing you what fixes will be applied.
 4. Click **Open a Fix PR** on this screen to generate the pull request.
 
 {% hint style="info" %}

@@ -2,15 +2,15 @@
 
 Ignores are taken into account in the Snyk CLI when `snyk code test` is run.
 
-## **Minimum version required**
+## Minimum version required
 
 You must have at least Snyk CLI v1.1297.1 installed for Snyk Code Consistent Ignores. See [Install or update the Snyk CLI](../../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/).
 
-## **Setup**
+## Setup
 
-To take ignores into account, specify the Organization where the ignores reside.&#x20;
+To take ignores into account, specify the Organization where the ignores reside.
 
-[Group-level policies also cascade down to all Organizations](./#manage-ignores-at-the-group-level-through-security-policies). See [How to select the Organization to use in the CLI](../../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
+[Group-level policies also cascade down to all Organizations](./#manage-ignores-at-the-group-level-through-snyk-code-security-policies). See [How to select the Organization to use in the CLI](../../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md).
 
 Repository context is required for asset-scoped ignores to take effect. Policy-based ignores such as those based on CWE or Snyk Code Rule ID are still being applied regardless of repository context.
 
@@ -38,7 +38,7 @@ You can find the ignore metadata in the suppressions module of the SARIF output.
 
 The finding identifier is included in the JSON and SARIF output of Snyk CLI. To view it, run `snyk code test --json` and navigate to `runs.results[n].fingerprints.snyk/assets/finding/v1` in the JSON output. See How Snyk Code identifies and tracks issues.
 
-You can use this identifier to [create new ignores using API calls](api.md).&#x20;
+You can use this identifier to [create new ignores using API calls](api.md).
 
 ## Ignores in CI/CD pipelines
 

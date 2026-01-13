@@ -964,6 +964,18 @@ An unexpected network error occurred during communication. Troubleshooting steps
 * [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
 * [https://status.snyk.io/](https://status.snyk.io/)
 
+### [SNYK-CLI-0023](#snyk-cli-0023)
+<a id="#SNYK-CLI-0023"></a>
+
+**Secrets failure**
+
+CLI was unable to execute your Secrets command, please take a look at the given details. If they do not help to resolve the issue, consider debugging or consulting support.
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/commands/secrets](https://docs.snyk.io/snyk-cli/commands/secrets)
+
 ### [SNYK-OS-7001](#snyk-os-7001)
 <a id="#SNYK-OS-7001"></a>
 

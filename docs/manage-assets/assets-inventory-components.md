@@ -16,7 +16,7 @@ Each inventory layout is presented in a table format, detailing the available ke
 * [Organizations](assets-inventory-components.md#organizations)
 * [Visibility](assets-inventory-components.md#visibility)
 
-## **Asset**
+## Asset
 
 Assets in Snyk Essentials are meaningful, real-world components in an application’s SDLC. The following asset types are available:
 

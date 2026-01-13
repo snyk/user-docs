@@ -802,6 +802,15 @@
           "type": "string"
         }
       },
+      "GoModuleLevel": {
+        "description": "When true, consolidate Go package-level dependencies into module-level components in the SBOM. Only applies to gomodules graphs; default is false.",
+        "in": "query",
+        "name": "go-module-level",
+        "schema": {
+          "default": false,
+          "type": "boolean"
+        }
+      },
       "GroupId": {
         "description": "The ID of the Group.",
         "example": "0d3728ec-eebf-484d-9907-ba238019f10b",
@@ -43541,6 +43550,9 @@
           },
           {
             "$ref": "#/components/parameters/Exclude"
+          },
+          {
+            "$ref": "#/components/parameters/GoModuleLevel"
           }
         ],
         "responses": {

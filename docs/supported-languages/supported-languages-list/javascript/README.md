@@ -290,9 +290,9 @@ Because different versions of Yarn have different feature sets, there are differ
 Resolutions are supported in Yarn v2 and above. Yarn v1 resolutions are not supported.
 {% endhint %}
 
-If a lock file is not present in CLI, the `node_modules` folder will be used to construct the dependency tree.
-
 `nohoist` is not supported for Yarn Workspaces.
+
+If the mentioned yarn lockfile is not present, Snyk treats the Project as an `npm` Project and scans it according to the details mentioned above, for `npm`.
 
 ### Support for Lerna
 
@@ -321,6 +321,26 @@ The following table lists the steps to start scanning your dependencies. It cove
 
 Yarn, npm, and pnpm support workspaces, to help manage monorepos containing multiple sub-Projects.
 
+#### SCM scanning considerations
+
+Npm workspaces are not explicitly supported in Snyk SCM integrations scans.&#x20;
+
+*   Root-level `package.json` manifest files with adjacent lockfiles are scanned as normal.&#x20;
+
+    For nested manifest files with no lockfiles, Snyk approximates what the dependency tree looks like at build time without using the root lockfile.&#x20;
+
+Yarn workspaces projects must have the `package.json` and `yarn.lock` files in the root directory.
+
+Pnpm workspaces must have the `package.json`, `pnpm-lock.yaml` and `pnpm-workspace.yaml` files in the root directory.&#x20;
+
+* pnpm [workspace protocol](https://pnpm.io/workspaces#workspace-protocol-workspace) is not supported for SCM scans.&#x20;
+  * Dependencies should be defined explicitly with specific versions, or versions using standard semver.  (eg `"foo": "^1.1.0"` )&#x20;
+  * Dependencies that are defined using workspace protocol for the version (eg `"foo" : "workspace:*"` ) will be listed in SCM scans as undefined version.&#x20;
+
+For all workspaces, Fix PRs and Upgrade PRs do not support workspaces lockfile updates. PRs for these projects will update the `package.json` only.&#x20;
+
+#### CLI scanning considerations
+
 Workspaces are supported in the Snyk CLI for the following CLI options:
 
 * `--all-projects` : Discovers and scan all Yarn,  npm and pnpm workspaces Projects, along with Projects from other supported ecosystems. The root lock file is referenced when scanning the workspace Projects.
@@ -328,19 +348,7 @@ Workspaces are supported in the Snyk CLI for the following CLI options:
 * `--strict-out-of-sync=false` :  Allows testing out-of-sync lockfiles for packages in a  workspace. When this option is set to `false` , you can run Snyk tests with unsynchronized manifest and lock files without causing errors.
 * `--policy-path` : Specifies the path to a policy used by Snyk during testing.
 
-{% hint style="info" %}
-Yarn and npm workspaces are not explicitly supported in Snyk SCM integrations scans.
-
-pnpm workspaces must have the `package.json`, `pnpm-lock.yaml` and `pnpm-workspace.yaml` files in the root directory. Fix and Upgrade PRs do not support lockfile update for pnpm workspaces.
-{% endhint %}
-
-Root-level `package.json` manifest files with adjacent lockfiles are scanned as normal.&#x20;
-
-For nested manifest files with no lockfiles, Snyk approximates what the dependency tree looks like at build time without using the root lockfile.&#x20;
-
-In addition, Fix PRs and Upgrade PRs are not supported for nested manifest files with no lockfiles.
-
-#### Examples of scanning workspaces
+#### Examples of scanning workspaces with the CLI&#x20;
 
 To scan all workspaces Projects in the current directory and five sub-directories deep, plus any other Projects types detected, use the following command:
 
