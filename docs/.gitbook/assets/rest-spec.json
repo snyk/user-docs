@@ -8906,6 +8906,14 @@
                       },
                       "type": "array"
                     },
+                    "alternative_ids": {
+                      "description": "This is the list of alternative IDs Snyk gives for a certain vulnerability.\nIt's usually present in older vulnerabilities, in which Snyk used to use a different identifier format.\ne.g a vuln with the ID \"npm:foo:bar\", will likely have an alternative ID of \"SNYK-JS-FOO-BAR\".",
+                      "items": {
+                        "type": "string"
+                      },
+                      "maxItems": 50,
+                      "type": "array"
+                    },
                     "created_at": {
                       "description": "Timestamp indicating when the problem was orginally created.",
                       "example": "2022-05-17T14:23:25Z",
@@ -9037,10 +9045,16 @@
                             {
                               "description": "Software packages supporting the application build process.\n\nThese are generally development libraries, which may be distributed in source\nor compiled form, used during the application build process by various\nprogramming language toolchains.\n\nExamples include, but are not limited to: Javascript NPM, Java Maven, Python pip, etc.",
                               "properties": {
+                                "client": {
+                                  "description": "Ecosystem client is the tool the consumer used to manage the dependencies.\nIn managed ecosystems, this is commonly refered to as the package manager,\nwhile in the case of C++, this would be \"unmanaged\".",
+                                  "type": "string"
+                                },
                                 "language": {
+                                  "deprecated": true,
                                   "type": "string"
                                 },
                                 "package_manager": {
+                                  "deprecated": true,
                                   "type": "string"
                                 },
                                 "type": {
@@ -9213,6 +9227,11 @@
                       },
                       "type": "array"
                     },
+                    "is_disputed": {
+                      "default": false,
+                      "description": "Indicates if the vulnerability is formally disputed.\nA vulnerability's claim (e.g., that it's a security flaw, or the scope/impact) is\n**disputed** when one party, often the vendor or a security professional, formally\nchallenges the assertion.\nMost cybersecurity public listings, such as CVE, have a defined process\nallowing vendors or researchers to officially challenge the validity\nof a reported issue, leading to this 'DISPUTED' status being formally annotated.",
+                      "type": "boolean"
+                    },
                     "is_fixable": {
                       "default": false,
                       "description": "Is there a fixed version published to the relevant package manager\nrepository- i.e., a newer version without this specific vulnerability",
@@ -9221,6 +9240,11 @@
                     "is_malicious": {
                       "default": false,
                       "description": "Indicate if the vulnerability is known to mark a malicious package.",
+                      "type": "boolean"
+                    },
+                    "is_proprietary": {
+                      "default": false,
+                      "description": "This field indicates if the vulnerability was first published in the Snyk DB.\nThis happens when either of the following is true:\n- Snyk was responsilbe for coordinating the disclosure\n- Snyk researchers discovered the vulnerability/malicious package\n- Snyk gave the first or best indication about the vulnerability based on unofficial sources.\nThe only exceptions are when:\n- The vulnerability is a Linux container\n- The vulnerable package is written in C/C++ and not hosted on conan center\n- The vulnerable package is a `webjar`",
                       "type": "boolean"
                     },
                     "is_social_media_trending": {
@@ -9233,8 +9257,16 @@
                       "format": "date-time",
                       "type": "string"
                     },
+                    "package_full_name": {
+                      "description": "The full name of the vulnerable software package.\nIt's achieved by combining the packageName and packageNamespace\nwith the ecosystem specific delimiter.",
+                      "type": "string"
+                    },
                     "package_name": {
                       "description": "Package name.",
+                      "type": "string"
+                    },
+                    "package_namespace": {
+                      "description": "Vulnerable software package namespace, if applicable.",
                       "type": "string"
                     },
                     "package_popularity_rank": {
@@ -9299,6 +9331,10 @@
                       ],
                       "description": "The Snyk curated or recommended vulnerability severity for the problem.",
                       "example": "critical"
+                    },
+                    "severity_based_on": {
+                      "description": "Indicates how the vulnerability severity was determined.",
+                      "type": "string"
                     },
                     "source": {
                       "enum": [
@@ -9424,10 +9460,16 @@
                             {
                               "description": "Software packages supporting the application build process.\n\nThese are generally development libraries, which may be distributed in source\nor compiled form, used during the application build process by various\nprogramming language toolchains.\n\nExamples include, but are not limited to: Javascript NPM, Java Maven, Python pip, etc.",
                               "properties": {
+                                "client": {
+                                  "description": "Ecosystem client is the tool the consumer used to manage the dependencies.\nIn managed ecosystems, this is commonly refered to as the package manager,\nwhile in the case of C++, this would be \"unmanaged\".",
+                                  "type": "string"
+                                },
                                 "language": {
+                                  "deprecated": true,
                                   "type": "string"
                                 },
                                 "package_manager": {
+                                  "deprecated": true,
                                   "type": "string"
                                 },
                                 "type": {
@@ -9531,8 +9573,16 @@
                       "example": "MPL-2.0",
                       "type": "string"
                     },
+                    "package_full_name": {
+                      "description": "The full name of the vulnerable software package.\nIt's achieved by combining the packageName and packageNamespace\nwith the ecosystem specific delimiter.",
+                      "type": "string"
+                    },
                     "package_name": {
                       "description": "Package name.",
+                      "type": "string"
+                    },
+                    "package_namespace": {
+                      "description": "Vulnerable software package namespace, if applicable.",
                       "type": "string"
                     },
                     "package_version": {
