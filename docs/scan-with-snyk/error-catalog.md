@@ -3413,3 +3413,106 @@ Snyk was unable to resolve a single target. Snyk found multiple targets configur
 **Help Links:**
 
 * [https://docs.snyk.io/snyk-admin/snyk-projects#target](https://docs.snyk.io/snyk-admin/snyk-projects#target)
+
+***
+
+## UploadRevision
+
+### [SNYK-UPLOAD-REVISION-0001](#snyk-upload-revision-0001)
+<a id="#SNYK-UPLOAD-REVISION-0001"></a>
+
+**Upload revision not found**
+
+The upload revision was not found. The upload revision may have expired or does not exist. Provide a valid upload revision identifier.
+
+**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+### [SNYK-UPLOAD-REVISION-0002](#snyk-upload-revision-0002)
+<a id="#SNYK-UPLOAD-REVISION-0002"></a>
+
+**Upload revision is sealed**
+
+The upload revision cannot be modified after it has been sealed. Create a new upload revision and retry the operation.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+### [SNYK-UPLOAD-REVISION-0003](#snyk-upload-revision-0003)
+<a id="#SNYK-UPLOAD-REVISION-0003"></a>
+
+**File too large**
+
+One of the uploaded files exceeds the maximum allowed size. Reduce the file size and try again, or contact support for assistance.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+### [SNYK-UPLOAD-REVISION-0004](#snyk-upload-revision-0004)
+<a id="#SNYK-UPLOAD-REVISION-0004"></a>
+
+**Total files size limit exceeded**
+
+The total size of all files uploaded in a single request exceeds the maximum allowed limit. Reduce the total size of files in the request.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+### [SNYK-UPLOAD-REVISION-0005](#snyk-upload-revision-0005)
+<a id="#SNYK-UPLOAD-REVISION-0005"></a>
+
+**File count limit exceeded**
+
+The request includes more files than the maximum allowed file count. Reduce the number of files in the request.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+### [SNYK-UPLOAD-REVISION-0006](#snyk-upload-revision-0006)
+<a id="#SNYK-UPLOAD-REVISION-0006"></a>
+
+**File path too long**
+
+One or more file paths exceed the maximum allowed length. Reduce the length of the file paths.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+### [SNYK-UPLOAD-REVISION-0007](#snyk-upload-revision-0007)
+<a id="#SNYK-UPLOAD-REVISION-0007"></a>
+
+**Populate request limit exceeded**
+
+The number of populate requests for this upload revision exceeds the maximum allowed limit. Create a new upload revision and upload a revision using fewer requests.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+### [SNYK-UPLOAD-REVISION-0008](#snyk-upload-revision-0008)
+<a id="#SNYK-UPLOAD-REVISION-0008"></a>
+
+**Upload revision file count limit exceeded**
+
+The number of files exceeds the limit for a single upload revision. Consider splitting the files across multiple upload revisions.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+### [SNYK-UPLOAD-REVISION-0009](#snyk-upload-revision-0009)
+<a id="#SNYK-UPLOAD-REVISION-0009"></a>
+
+**Upload revision size limit exceeded**
+
+The total size of all files uploaded across the entire upload revision exceeds the maximum allowed limit. Consider splitting the files across multiple upload revisions.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+### [SNYK-UPLOAD-REVISION-0010](#snyk-upload-revision-0010)
+<a id="#SNYK-UPLOAD-REVISION-0010"></a>
+
+**Upload revision identifier mismatch**
+
+The upload revision identifier in the request body does not match the upload revision identifier in the request path. Ensure both identifiers match and retry the request.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+### [SNYK-UPLOAD-REVISION-0011](#snyk-upload-revision-0011)
+<a id="#SNYK-UPLOAD-REVISION-0011"></a>
+
+**Missing field name in multipart request**
+
+The multipart request has a missing or empty name parameter in the Content-Disposition header. Ensure each part includes a valid field name.
+
+**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
