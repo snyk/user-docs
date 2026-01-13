@@ -1,4 +1,4 @@
-# Dart/Flutter rules
+# Dart and Flutter rules
 
 {% hint style="info" %}
 Code analysis support for Dart is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](../../snyk-platform-administration/snyk-preview.md).

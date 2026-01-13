@@ -1,14 +1,14 @@
 # Swift and Objective-C
 
 {% hint style="info" %}
-Swift and Objective-C are supported for Snyk Code. Swift and Objective-C are also supported for Snyk Open Source.
+Swift and Objective-C are supported for Snyk Code and Snyk Open Source.
 {% endhint %}
+
+## Swift and Objective-C for Snyk Code
 
 {% hint style="info" %}
 Code analysis support for Objective-C is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](../../snyk-platform-administration/snyk-preview.md).
 {% endhint %}
-
-## Swift and Objective-C for Snyk Code
 
 For an overview of the supported security rules, see the following pages:
 * [Swift rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/swift-rules.md)
@@ -18,7 +18,7 @@ For Swift with Snyk Code, Snyk supports Swift versions up to 5.7.x. You can use 
 
 ### Supported frameworks and libraries
 
-The following frameworks and libraries are supported for both Swift and Objective-C:
+For Swift and Objective-C, the following frameworks and libraries are supported:
 
 {% columns %}
 {% column %}

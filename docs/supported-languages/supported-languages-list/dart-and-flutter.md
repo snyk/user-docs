@@ -4,17 +4,17 @@
 Dart and Flutter is supported for Snyk Code and Snyk Open Source. 
 {% endhint %}
 
+## Dart and Flutter for Snyk Code
+
 {% hint style="info" %}
 Code analysis support for Dart is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](../../snyk-platform-administration/snyk-preview.md).
 {% endhint %}
 
-## Dart and Flutter for Snyk Code
-
-For an overview of the supported security rules, visit [Dart/Flutter rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/dart-flutter-rules.md).
+For an overview of the supported security rules, visit [Dart and Flutter rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/dart-flutter-rules.md).
 
 ### Supported frameworks and libraries
 
-The following frameworks and libraries are supported:
+For Dart and Flutter, Snyk supports the following frameworks and libraries:
 
 {% columns %}
 {% column %}
@@ -84,7 +84,7 @@ spdx:
 EOF
 ```
 
-Then, use the dart `sbom` command to create a SBOM file & test it using the [SBOM test](../../../developer-tools/snyk-cli/commands/sbom-test.md) command:
+Use the dart `sbom` command to create a SBOM file & test it using the [SBOM test](../../../developer-tools/snyk-cli/commands/sbom-test.md) command:
 
 ```
 dart pub global run sbom
@@ -114,5 +114,4 @@ snyk monitor --all-projects --exclude=example,.symlinks
 The `--exclude` parameter removes duplicates and ignores example applications, which are part of the plugin source code but not included in regular application builds.
 
 You are now able to view in the Snyk Web UI all native dependencies, including those introduced by third-party plugins.
-
 <figure><img src="../../.gitbook/assets/image (197).png" alt=""><figcaption><p>Snyk Project page showing dependencies in Flutter apps</p></figcaption></figure>
