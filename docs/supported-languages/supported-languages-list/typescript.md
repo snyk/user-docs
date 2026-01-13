@@ -11,11 +11,6 @@ Available integrations:
 * SCM import
 * CLI and IDE: test or monitor your app
 
-Available functions:
-
-* Test your app's SBOM: using `pkg:npm`
-* Test your app's packages using `pkg:npm`
-
 ## Technical specifications
 
 You can use TypeScript versions up to 4.2
@@ -56,6 +51,7 @@ Available features:
 
 * License scanning
 * Reports
+* Test your app's SBOM and packages using `pkg:npm` PURLs, using the [SBOM test](../../developer-tools/snyk-cli/commands/sbom-test.md) command
 
 {% hint style="info" %}
 The **Snyk Fix PR** feature is not available for TypeScript. This means that you will not be notified if the PR checks fail when the following conditions are met:
