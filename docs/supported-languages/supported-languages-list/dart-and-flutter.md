@@ -68,7 +68,7 @@ The following file formats are supported: `.dart`
 
 ### Available features
 
-* Test your app's SBOM and packages using `pkg:pub`  PURLs, using [SBOM test](../../../developer-tools/snyk-cli/commands/sbom-test.md) command
+* Test your app's SBOM and packages using `pkg:pub` PURLs, using the [`sbom test`](../../developer-tools/snyk-cli/commands/sbom-test.md) command
 * Test & monitor your Flutter apps native platform dependencies using [`snyk test`](../../developer-tools/snyk-cli/commands/test.md) and [`snyk monitor`](../../developer-tools/snyk-cli/commands/monitor.md) commands
 
 ### Testing a Dart applications pub dependency tree 
@@ -84,7 +84,7 @@ spdx:
 EOF
 ```
 
-Use the dart `sbom` command to create a SBOM file & test it using the [SBOM test](../../../developer-tools/snyk-cli/commands/sbom-test.md) command:
+Use the dart `sbom` command to create a SBOM file & test it using the [`sbom test`](../../developer-tools/snyk-cli/commands/sbom-test.md) command:
 
 ```
 dart pub global run sbom
