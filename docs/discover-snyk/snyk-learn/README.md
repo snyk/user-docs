@@ -32,7 +32,7 @@ Security education lessons address the needs of developers who want to learn mor
 
 The lessons on Snyk Learn are aligned with the[ NIST NICE Framework](https://www.nist.gov/itl/applied-cybersecurity/nice) Work Role Categories and Competency Areas.
 
-Security education lessons cover many languages, including JavaScript, Java, C#, Python, PHP, Go, and C++. Snyk Learn also has lessons in general security, Kubernetes, artificial intelligence, and LLMs.
+Security education lessons cover many languages, including JavaScript, Java, C#, Python, PHP, Go, Rust, and C++. Snyk Learn also has lessons in general security, Kubernetes, artificial intelligence, and LLMs.
 
 Snyk offers multiple security education learning paths, including OWASP Top 10, Snyk Top 10, and Security for Developers, built in partnership with [NYU](https://engineering.nyu.edu/academics/programs/cybersecurity-ms-online/nyu-cyber-fellows/badges/snyk).
 

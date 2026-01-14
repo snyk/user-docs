@@ -29,7 +29,7 @@ Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the
 * Coding issues: Finds problems such as dead code, branches that are predefined, and branches having the same code on each side.
 * Control flow: Identifies null dereference or race conditions by modeling each possible control flow in the application.
 * Data flow: Follows the flow of data within the application from the source to the sink. Combined with AI-based learning of external insecure data sources, data sinks, and sanitation functions, this enables a strong taint analysis.
-* Hardcoded secrets: Hardcoded secrets detection rules are invoked during SAST scans but do not act as a standalone secrets scanning tool, as this is done through our partnership with third-party tools. See our Snyk Learn lessons on [GitGuardian](https://learn.snyk.io/lesson/snyk-apprisk-gitguardian/) and [Nightfall AI](https://learn.snyk.io/lesson/snyk-apprisk-nightfall-ai/).
+* Hardcoded secrets: Hardcoded secrets detection rules are invoked during SAST scans but do not act as a standalone secrets scanning tool, as this is done through our partnership with third-party tools.
 
 <figure><img src="../../.gitbook/assets/Introduction - AI Engine - Hardcoded secrets.png" alt="Hardcoded secret found"><figcaption><p>Hardcoded secret found</p></figcaption></figure>
 
@@ -43,7 +43,7 @@ Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the
   * [JetBrains plugin](../../developer-tools/snyk-ide-plugins-and-extensions/jetbrains-plugin/)
   * [Visual Studio Code extension](../../developer-tools/snyk-ide-plugins-and-extensions/visual-studio-code-extension/)
   * [Visual Studio extension](../../developer-tools/snyk-ide-plugins-and-extensions/visual-studio-extension/)
-* Git repository: With repository monitoring integration, you can actively manage your Code Projects using the existing native import flow and tools. You can view and prioritize security issues discovered in your source code. Additionally, you can initiate a retest of any Project and examine the historical snapshots to track changes over time.&#x20;
+* Git repository: With repository monitoring integration, you can actively manage your Code Projects using the existing native import flow and tools. You can view and prioritize security issues discovered in your source code. Additionally, you can initiate a retest of any Project and examine the historical snapshots to track changes over time.
 
 {% hint style="info" %}
 Snyk Code analysis can be applied to every pull request you create in your Git repository before you merge it into the target branch. See [PR Checks](../pull-requests/pull-request-checks/).
