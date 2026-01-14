@@ -1,29 +1,97 @@
 # Dart and Flutter
 
-## Applicability and integration
-
 {% hint style="info" %}
-Dart and Flutter are supported only for Open Source.
+Dart and Flutter is supported for Snyk Code and Snyk Open Source.
 {% endhint %}
 
-The following functions are available for Dart and Flutter:
+## Dart and Flutter for Snyk Code
 
-Available functions:&#x20;
+{% hint style="info" %}
+Code analysis support for Dart is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](../../snyk-platform-administration/snyk-preview.md).
+{% endhint %}
 
-* Test your app's SBOM using `pkg:pub`
-* Test your app's packages using `pkg:pub`
+For an overview of the supported security rules, visit [Dart and Flutter rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/dart-and-flutter-rules.md).
 
-## Technical specifications
+### Supported frameworks and libraries
 
-* Supported package managers:  Pub
-* Supported package registry: [pub.dev](https://pub.dev/)
+For Dart and Flutter, Snyk supports the following frameworks and libraries:
 
-Snyk features are not supported for Dart and Flutter. You can test an open-source package from Pub package manager:
+{% columns %}
+{% column %}
+* crypto
+* encrypt
+* uuid
+* basic_utils
+* pointycastle
+* cryptography
+* sqflite
+* sqlite3
+* drift
+* realm
+* http
+* dio
+* cupertino_http
+* web_socket_channel
+* web
+{% endcolumn %}
 
-* Using the API endpoint [List issues for a package](../../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues)
-* Using the [SBOM CLI](../../developer-tools/snyk-cli/commands/sbom.md).
+{% column %}
+* cronet_http
+* flutter_inappwebview
+* webview_flutter
+* twilio_flutter
+* dart_eval
+* google_sign_in
+* flutter_facebook_auth
+* sign_in_with_apple
+* flutter_appauth
+* openid_client
+* firebase_auth
+* amplify_flutter
+* flutter_stripe
+* nfc_manager
+* mobile_scanner
+* flutter
+{% endcolumn %}
+{% endcolumns %}
 
-## Testing platform dependencies (iOS, macOS, Android) in Flutter apps
+### Supported file formats
+
+The following file formats are supported: `.dart`
+
+### Available features
+
+- Reports
+- Interfile analysis
+
+## Dart and Flutter for Snyk Open Source
+
+### Available features
+
+* Test your app's SBOM and packages using `pkg:pub` PURLs, using the [`sbom test`](../../developer-tools/snyk-cli/commands/sbom-test.md) command
+* Test & monitor your Flutter apps native platform dependencies using [`snyk test`](../../developer-tools/snyk-cli/commands/test.md) and [`snyk monitor`](../../developer-tools/snyk-cli/commands/monitor.md) commands
+
+### Testing a Dart applications pub dependency tree 
+
+Activate the pub [`sbom`](https://pub.dev/packages/sbom) package & create a minimal `sbom.yaml` file in the root folder of the repository:
+
+```
+dart pub global activate sbom
+cat << EOF > sbom.yaml
+type: spdx
+spdx:
+  SPDXFormat: 'tagvalue'
+EOF
+```
+
+Use the dart `sbom` command to create a SBOM file & test it using the [`sbom test`](../../developer-tools/snyk-cli/commands/sbom-test.md) command:
+
+```
+dart pub global run sbom
+snyk sbom test --experimental --file sbom-pub.json
+```
+
+### Testing platform dependencies (iOS, macOS, Android) in Flutter apps
 
 Flutter applications rely on native platform dependencies to handle lower-level tasks, such as analytics, hardware access, or integrating existing functionality. These dependencies can be added through pub packages to extend functionality or integrated directly into build systems like Gradle or Cocoapods.
 
