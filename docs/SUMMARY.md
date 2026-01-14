@@ -643,7 +643,7 @@
     * [Apex rules](scan-with-snyk/snyk-code/snyk-code-security-rules/apex-rules.md)
     * [C/C++ rules](scan-with-snyk/snyk-code/snyk-code-security-rules/c-c++-rules.md)
     * [C# and ASP.NET rules](scan-with-snyk/snyk-code/snyk-code-security-rules/c-and-asp.net-rules.md)
-    * [Dart/Flutter rules](scan-with-snyk/snyk-code/snyk-code-security-rules/dart-and-flutter-rules.md)
+    * [Dart and Flutter rules](scan-with-snyk/snyk-code/snyk-code-security-rules/dart-and-flutter-rules.md)
     * [Go rules](scan-with-snyk/snyk-code/snyk-code-security-rules/go-rules.md)
     * [Groovy rules](scan-with-snyk/snyk-code/snyk-code-security-rules/groovy-rules.md)
     * [Java rules](scan-with-snyk/snyk-code/snyk-code-security-rules/java-rules.md)
