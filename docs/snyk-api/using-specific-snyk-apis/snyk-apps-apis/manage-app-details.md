@@ -64,7 +64,7 @@ Snyk recommends you adopt the following procedure when rotating your secrets:
 
 It is recommended that in normal operation you periodically rotate your client secrets. To start the process, send the request body `{"mode": "create"}` to the endpoint which will create a new secret. The returned value of this call will be your app with the newly generated secret. Both the new secret and any existing secrets will be valid until they are manually replaced or deleted. You can also immediately replace a client secret.
 
-An App can have a maximum of two active secrets at any time. This endpoint fails if you try to call `create` when you already have the maximum number of secrets active.
+An App can have a maximum of two active secrets at any time. This endpoint fails with the error  `cannot update secrets` if you try to call `create` when you already have the maximum number of secrets active.
 
 ### Replace a clientSecret
 
