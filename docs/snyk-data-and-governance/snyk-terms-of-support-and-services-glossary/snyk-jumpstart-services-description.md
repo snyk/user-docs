@@ -29,7 +29,7 @@ The Snyk Consultant will deliver the following services related to the setup of 
 
 ## Pre-engagement planning and preparation
 
-A pre-engagement call will be held before the start of the Jumpstart Services listed herein, to ensure the Customer understands the prerequisites required for engagement start, along with the deliverables to be completed during the engagement timeframe. Customer [prerequisites](snyk-jumpstart-customer-prerequisites.md), including resources, availability, and deliverables for each product module, will be reviewed and confirmed. The Customer acknowledges that complying with these prerequisites is its sole responsibility, and Snyk will not be responsible for any delays or failure to deliver the Jumpstart Services based on the Customer’s failure to meet these prerequisites.
+The customer should review the [prerequisites](https://docs.snyk.io/snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-customer-prerequisites), including resources, availability, and deliverables for each product module, before starting their services. The Customer acknowledges that complying with these prerequisites is its sole responsibility, and Snyk will not be responsible for any delays or failure to deliver the Jumpstart  Services based on the Customer’s failure to meet these prerequisites.
 
 ## Snyk Platform configuration
 
@@ -275,9 +275,9 @@ If the Jumpstart project is for an existing Snyk customer, the Platform Configur
 
 The fees for this project will be a fixed price. Services will be invoiced in full at the time of purchase and are non-refundable.
 
-Upon purchase, the Snyk implementation team will coordinate a pre-engagement call at a time that works for both parties. Note that Jumpstart services expire 120 days after our consultant's first outreach, regardless of customer engagement. All Jumpstart Services automatically conclude either upon completion or eight weeks following the kick-off call, whichever occurs first.
+Upon purchase, the Snyk implementation team will coordinate a call at a time that works for both parties. Note that Jumpstart services expire 120 days after our consultant's first outreach, regardless of customer engagement. All Jumpstart Services automatically conclude either upon completion or eight weeks following the kick-off call, whichever occurs first.
 
-Unless otherwise agreed to by the parties in writing, a) services must be scheduled as agreed during the pre-engagement call; b) product modules will be delivered consecutively; and c) all services will occur during normal business hours.
+Unless otherwise agreed to by the parties in writing, a) services must be scheduled as agreed during the  call; b) product modules will be delivered consecutively; and c) all services will occur during normal business hours.
 
 All services will be performed remotely. Any onsite time requires Snyk’s prior consent and will be subject to additional fees and expenses to be agreed in advance.
 
