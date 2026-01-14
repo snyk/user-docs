@@ -10,7 +10,7 @@ Dart and Flutter is supported for Snyk Code and Snyk Open Source.
 Code analysis support for Dart is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](../../snyk-platform-administration/snyk-preview.md).
 {% endhint %}
 
-For an overview of the supported security rules, visit [Dart and Flutter rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/dart-flutter-rules.md).
+For an overview of the supported security rules, visit [Dart and Flutter rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/dart-and-flutter-rules.md).
 
 ### Supported frameworks and libraries
 
