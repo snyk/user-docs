@@ -7,6 +7,31 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
 
+## December 2025
+
+### **Snyk API**
+
+* The API docs navigation was enhanced with additional package-related reference pages (including `ContainerRegistryImagePolicy`).&#x20;
+* The [Error Catalog](scan-with-snyk/error-catalog.md) was synced with upstream updates on **2025-12-22**.
+
+### **Snyk integrations**
+
+* The [Partner integrations](integrations/partner-integrations.md) page has been updated, including additional coverage for Coding Assistants and how they can use Snyk Studio (MCP) in agentic workflows.
+* [JavaScript](supported-languages/supported-languages-list/javascript/) navigation has been enhanced with better redirect and routing features.&#x20;
+
+### **Snyk Studio**
+
+* The [Snyk Studio - Agentic integrations](integrations/snyk-studio-agentic-integrations/) documentation has been updated to provide a clearer explanation of MCP usage and the available Snyk Studio tools.
+* The [Quickstart guides for Snyk Studio](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/) were updated with new and refreshed setup guidance, including [Cursor](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/cursor-guide.md) and [Windsurf](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/windsurf-guide.md).
+
+### **Other updates**
+
+* GitHub Cloud App and GitHub Server App have been added to the list of [supported SCMs for Dockerfile analysis](scan-with-snyk/snyk-container/scan-your-dockerfile/#supported-scms-for-dockerfile-analysis).
+* The `snyk-scm-contributors-count` docs were updated with prerequisites and setup notes. See [snyk-scm-contributors-count](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/).
+* The Declining Balance documentation from the [Snyk Declining Balance of Hours Service Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/declining-balance.md) page was updated with service description and expiration details.&#x20;
+* The IaC issue-reporting walkthrough from the 'Getting started with Snyk IaC' page was updated to remove outdated screenshots and copy.&#x20;
+* PR template variables were updated on the [Variables list and description](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/variables-list-and-description.md) page with a new container base image `short name` values for cleaner PR titles and messages.&#x20;
+
 ## November 2025
 
 ### **Snyk Container**
@@ -288,7 +313,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Other updates**
 
-* The [PCI-DSS v4.0.1 report](manage-risk/reporting/available-snyk-reports.md#pci-dss-v4.0.1-report) is now available in Early Access. This report leverages Snyk scan results to assess, prove, and improve readiness for PCI-DSS AppSec compliance regarding SCA and SAST vulnerabilities.
+* The PCI-DSS v4.0.1 report is now available in Early Access. This report leverages Snyk scan results to assess, prove, and improve readiness for PCI-DSS AppSec compliance regarding SCA and SAST vulnerabilities.
 * The [Repositories Tested in CI/CD report](manage-risk/reporting/available-snyk-reports.md#repositories-tested-in-ci-cd-report) is available in Early Access. This report tracks Snyk CI/CD testing to prevent vulnerable production deployments.
 * [Severity levels](manage-risk/prioritize-issues-for-fixing/severity-levels.md#why-are-there-multiple-cvss-scores-for-the-same-vulnerability) now provide more details about the CVSS v4.0.
 
