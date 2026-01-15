@@ -65,6 +65,14 @@ A representation of information flow involved in fixing one issue is presented i
 
 Enable Snyk Agent Fix for your Group or Organization in the Snyk Web UI by navigating to **Group/Organization** > **Settings** > **Snyk Agent Fix**.
 
+Enabling Snyk Agent Fix at the Group level enables the feature for all Organizations in that Group.
+
+To enable Snyk Agent Fix for specific Organizations only, configure the setting at the Organization level, not the Group level.
+
+{% hint style="info" %}
+If you have enabled the feature at the Group level and want to switch to an Organization-level configuration, contact your Snyk account team.
+{% endhint %}
+
 ## Fix code issues automatically
 
 {% hint style="info" %}
