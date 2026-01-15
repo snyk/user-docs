@@ -12,6 +12,10 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/ai_boms/upload" method="post" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/ai_bom_jobs/{job_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
