@@ -10,9 +10,7 @@ Swift and Objective-C are supported for Snyk Code and Snyk Open Source.
 Code analysis support for Objective-C is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](../../snyk-platform-administration/snyk-preview.md).
 {% endhint %}
 
-For an overview of the supported security rules, see the following pages:
-* [Swift rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/swift-rules.md)
-* [Objective-C rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/objective-c-rules.md)
+For an overview of the supported security rules, visit [Swift rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/swift-rules.md) and [Objective-C rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/objective-c-rules.md).
 
 For Swift with Snyk Code, Snyk supports Swift versions up to 5.7.x. You can use higher versions, but Snyk does not provide support for them.
 
@@ -96,6 +94,13 @@ For Swift and Objective-C with Snyk Open Source, Snyk provides support for packa
 * For CocoaPods: CLI support, Git support, License scanning
 * For Swift Package Manager: CLI support
 
+{% hint style="info" %}
+The **Snyk Fix PR** feature is not available for Swift and Objective-C. This means that you will not be notified if the PR checks fail when the following conditions are met:
+
+* The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available**.
+* **"Fixed in" available** is set to **Yes**.
+{% endhint %}
+
 ### Requirements for Swift Package Manager
 
 {% hint style="info" %}
@@ -117,17 +122,3 @@ To build the dependency graph, Snyk examines the `Podfile` and `Podfile.lock` fi
 When working with Swift and Objective-C projects from the Snyk CLI, you can prevent testing any lock files that are out-of-sync by using the `--strict-out-of-sync=true`
 
 For Cocoapods and Git, to test your Projects, Snyk analyzes the `Podfile` and `Podfile.lock` files.
-
-### Features
-
-Available features:
-
-* License scanning (CocoaPods)
-* Reports
-
-{% hint style="info" %}
-The **Snyk Fix PR** feature is not available for Swift and Objective-C. This means that you will not be notified if the PR checks fail when the following conditions are met:
-
-* The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available**.
-* **"Fixed in" available** is set to **Yes**.
-{% endhint %}

@@ -14,14 +14,14 @@ For an overview of the supported security rules, visit [Dart and Flutter rules](
 
 ### Supported frameworks and libraries
 
-For Dart and Flutter, Snyk supports the following frameworks and libraries:
+For Dart and Flutter with Snyk Code, Snyk supports the following frameworks and libraries:
 
 {% columns %}
 {% column %}
 * crypto
 * encrypt
 * uuid
-* basic_utils
+* basic\_utils
 * pointycastle
 * cryptography
 * sqflite
@@ -30,27 +30,27 @@ For Dart and Flutter, Snyk supports the following frameworks and libraries:
 * realm
 * http
 * dio
-* cupertino_http
-* web_socket_channel
+* cupertino\_http
+* web\_socket\_channel
 * web
 {% endcolumn %}
 
 {% column %}
-* cronet_http
-* flutter_inappwebview
-* webview_flutter
-* twilio_flutter
-* dart_eval
-* google_sign_in
-* flutter_facebook_auth
-* sign_in_with_apple
-* flutter_appauth
-* openid_client
-* firebase_auth
-* amplify_flutter
-* flutter_stripe
-* nfc_manager
-* mobile_scanner
+* cronet\_http
+* flutter\_inappwebview
+* webview\_flutter
+* twilio\_flutter
+* dart\_eval
+* google\_sign\_in
+* flutter\_facebook\_auth
+* sign\_in\_with\_apple
+* flutter\_appauth
+* openid\_client
+* firebase\_auth
+* amplify\_flutter
+* flutter\_stripe
+* nfc\_manager
+* mobile\_scanner
 * flutter
 {% endcolumn %}
 {% endcolumns %}
@@ -61,8 +61,8 @@ The following file formats are supported: `.dart`
 
 ### Available features
 
-- Reports
-- Interfile analysis
+* Reports
+* Interfile analysis
 
 ## Dart and Flutter for Snyk Open Source
 
@@ -71,7 +71,7 @@ The following file formats are supported: `.dart`
 * Test your app's SBOM and packages using `pkg:pub` PURLs, using the [`sbom test`](../../developer-tools/snyk-cli/commands/sbom-test.md) command
 * Test & monitor your Flutter apps native platform dependencies using [`snyk test`](../../developer-tools/snyk-cli/commands/test.md) and [`snyk monitor`](../../developer-tools/snyk-cli/commands/monitor.md) commands
 
-### Testing a Dart applications pub dependency tree 
+### Testing a Dart applications pub dependency tree
 
 Activate the pub [`sbom`](https://pub.dev/packages/sbom) package & create a minimal `sbom.yaml` file in the root folder of the repository:
 

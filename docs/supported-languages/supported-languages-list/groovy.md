@@ -12,21 +12,14 @@ For an overview of the supported security rules, visit [Groovy rules](../../scan
 
 For Groovy, Snyk supports the following frameworks and libraries:
 
-{% columns %}
-{% column %}
 * groovy-cli-picollo
 * Groovy standard library
 * groovy-cli-commons
 * Grails
-{% endcolumn %}
-
-{% column %}
 * GDK
 * Micronaut
 * Play
 * Spring
-{% endcolumn %}
-{% endcolumns %}
 
 ### Supported file extensions
 
