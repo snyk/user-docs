@@ -28,14 +28,21 @@ To ensure continued support and functionality, update your Bitbucket Cloud integ
 3. In BitBucket, under the Personal settings, select Atlassian account settings **>** **Security** tab> Create and manage API tokens.
 4.  Follow the Bitbucket procedure to set up an account with the following permissions:
 
+    * **read:account**
     * **read:user:bitbucket**
     * **read:workspace:bitbucket**
+    * **read:project:bitbucket**
     * **read:repository:bitbucket**
-
+    * **write:repository:bitbucket**
+    * **read:webhook:bitbucket**
+    * **write:webhook:bitbucket**
+    * **delete:webhook:bitbucket**
+    * **read:pullrequest:bitbucket**
+    * **write:pullrequest:bitbucket**
 
 
     See the [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/)for more details about the procedure.
-5. Enter the email and the [API key for the Bitbucket account](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#api-tokens) you created, and **save** your changes.\
+6. Enter the email and the [API key for the Bitbucket account](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#api-tokens) you created, and **save** your changes.\
    You can find your email under the Bitbucket **Personal settings.**\
    Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the confirmation message "**Bitbucket Cloud settings successfully updated**" appears.
 
