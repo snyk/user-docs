@@ -1,6 +1,6 @@
-# Snyk Jumpstart Services Description
+# Snyk Jumpstart Standard Services Description
 
-## Overview of Snyk Jumpstart
+## Overview of Snyk Jumpstart Standard
 
 A Snyk Consultant will provide services to help the Customer accelerate its setup of Snyk products through assisted account configuration (the “Jumpstart Services”). The engagement will consist of knowledge transfer, paired with configuration guidance for your team.
 
