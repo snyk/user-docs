@@ -4611,6 +4611,56 @@
         },
         "type": "object"
       },
+      "BasePackageAttributes": {
+        "description": "Common attributes shared between package and package version resources",
+        "properties": {
+          "description": {
+            "example": "Fast, unopinionated, minimalist web framework",
+            "type": "string"
+          },
+          "ecosystem": {
+            "example": "npm",
+            "type": "string"
+          },
+          "keywords": {
+            "example": [
+              "node",
+              "javascript",
+              "express",
+              "server"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "language": {
+            "example": "JavaScript",
+            "type": "string"
+          },
+          "owner_details": {
+            "$ref": "#/components/schemas/OwnerDetails"
+          },
+          "package_health": {
+            "$ref": "#/components/schemas/PackageHealth"
+          },
+          "package_id": {
+            "example": "pkg:npm/express",
+            "type": "string"
+          },
+          "package_name": {
+            "example": "express",
+            "type": "string"
+          }
+        },
+        "required": [
+          "package_id",
+          "ecosystem",
+          "package_name",
+          "language"
+        ],
+        "type": "object"
+      },
       "BaseResource": {
         "properties": {
           "resource": {
@@ -14516,9 +14566,6 @@
           "lifecycle": {
             "type": "string"
           },
-          "open_pull_request_count": {
-            "type": "integer"
-          },
           "rating": {
             "type": "string"
           },
@@ -15730,6 +15777,24 @@
         "type": "object"
       },
       "PackageAttributes": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BasePackageAttributes"
+          },
+          {
+            "properties": {
+              "latest_version": {
+                "example": "4.19.2",
+                "type": "string"
+              },
+              "package_details": {
+                "$ref": "#/components/schemas/PackageDetails"
+              }
+            },
+            "type": "object"
+          }
+        ],
+        "description": "Attributes for a package resource",
         "example": {
           "ecosystem": "npm",
           "language": "JavaScript",
@@ -15765,7 +15830,6 @@
               "latest_release_number": "4.19.2",
               "latest_release_published_at": "2024-10-08T00:00:00Z",
               "lifecycle": "active",
-              "open_pull_request_count": 2,
               "rating": "Healthy",
               "total_versions_count": 760
             },
@@ -15786,88 +15850,21 @@
           },
           "package_id": "pkg:npm/express",
           "package_name": "express"
-        },
-        "properties": {
-          "description": {
-            "example": "Fast, unopinionated, minimalist web framework",
-            "type": "string"
-          },
-          "ecosystem": {
-            "example": "npm",
-            "type": "string"
-          },
-          "keywords": {
-            "example": [
-              "node",
-              "javascript",
-              "express",
-              "server"
-            ],
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "language": {
-            "example": "JavaScript",
-            "type": "string"
-          },
-          "latest_version": {
-            "example": "4.19.2",
-            "type": "string"
-          },
-          "owner_details": {
-            "$ref": "#/components/schemas/OwnerDetails"
-          },
-          "package_details": {
-            "$ref": "#/components/schemas/PackageDetails"
-          },
-          "package_health": {
-            "$ref": "#/components/schemas/PackageHealth"
-          },
-          "package_id": {
-            "example": "pkg:npm/express",
-            "type": "string"
-          },
-          "package_name": {
-            "example": "express",
-            "type": "string"
-          }
-        },
-        "required": [
-          "package_id",
-          "ecosystem",
-          "package_name",
-          "language"
-        ],
-        "type": "object"
+        }
       },
       "PackageDetails": {
+        "description": "Base package details with URLs",
         "properties": {
           "homepage_url": {
+            "example": "https://expressjs.com",
             "type": "string"
           },
           "registry_url": {
+            "example": "https://www.npmjs.com/package/express",
             "type": "string"
           },
           "repository_url": {
-            "type": "string"
-          }
-        },
-        "type": "object"
-      },
-      "PackageDetails__0": {
-        "properties": {
-          "homepage_url": {
-            "format": "uri",
-            "type": "string"
-          },
-          "registry_url": {
-            "format": "uri",
-            "type": "string"
-          },
-          "repository_url": {
-            "format": "uri",
+            "example": "https://github.com/expressjs/express",
             "type": "string"
           }
         },
@@ -15886,26 +15883,6 @@
           },
           "popularity": {
             "$ref": "#/components/schemas/PopularityDetails"
-          },
-          "security": {
-            "$ref": "#/components/schemas/SecurityDetails"
-          }
-        },
-        "type": "object"
-      },
-      "PackageHealth__0": {
-        "properties": {
-          "community": {
-            "$ref": "#/components/schemas/CommunityDetails"
-          },
-          "maintenance": {
-            "$ref": "#/components/schemas/MaintenanceDetails"
-          },
-          "overall_rating": {
-            "type": "string"
-          },
-          "popularity": {
-            "$ref": "#/components/schemas/PopularityDetails__0"
           },
           "security": {
             "$ref": "#/components/schemas/SecurityDetails"
@@ -16008,6 +15985,41 @@
         "type": "object"
       },
       "PackageVersionAttributes": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BasePackageAttributes"
+          },
+          {
+            "properties": {
+              "latest_version_indicator": {
+                "example": true,
+                "type": "boolean"
+              },
+              "package_details": {
+                "$ref": "#/components/schemas/PackageVersionDetails"
+              },
+              "package_version": {
+                "example": "4.19.2",
+                "type": "string"
+              },
+              "package_version_id": {
+                "example": "pkg:npm/express@4.19.2",
+                "type": "string"
+              },
+              "published_at": {
+                "example": "2024-10-08T00:00:00Z",
+                "format": "date-time",
+                "type": "string"
+              }
+            },
+            "required": [
+              "package_version_id",
+              "package_version"
+            ],
+            "type": "object"
+          }
+        ],
+        "description": "Attributes for a package version resource",
         "example": {
           "ecosystem": "npm",
           "language": "JavaScript",
@@ -16020,8 +16032,10 @@
             "total_stars": 65000
           },
           "package_details": {
+            "download_url": "https://registry.npmjs.org/express/-/express-4.19.2.tgz",
             "homepage_url": "https://expressjs.com",
             "registry_url": "https://www.npmjs.com/package/express",
+            "registry_version_url": "https://www.npmjs.com/package/express/v/4.19.2",
             "repository_url": "https://github.com/expressjs/express"
           },
           "package_health": {
@@ -16043,7 +16057,6 @@
               "latest_release_number": "4.19.2",
               "latest_release_published_at": "2024-10-08T00:00:00Z",
               "lifecycle": "active",
-              "open_pull_request_count": 2,
               "rating": "Healthy",
               "total_versions_count": 760
             },
@@ -16067,86 +16080,27 @@
           "package_version": "4.19.2",
           "package_version_id": "pkg:npm/express@4.19.2",
           "published_at": "2024-10-08T00:00:00Z"
-        },
-        "properties": {
-          "description": {
-            "example": "Fast, unopinionated, minimalist web framework",
-            "type": "string"
+        }
+      },
+      "PackageVersionDetails": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/PackageDetails"
           },
-          "download_url": {
-            "example": "https://registry.npmjs.org/express/-/express-4.19.2.tgz",
-            "format": "uri",
-            "type": "string"
-          },
-          "ecosystem": {
-            "example": "npm",
-            "type": "string"
-          },
-          "keywords": {
-            "example": [
-              "node",
-              "javascript",
-              "express",
-              "server"
-            ],
-            "items": {
-              "type": "string"
+          {
+            "properties": {
+              "download_url": {
+                "example": "https://registry.npmjs.org/express/-/express-4.19.2.tgz",
+                "type": "string"
+              },
+              "registry_version_url": {
+                "example": "https://www.npmjs.com/package/express/v/4.19.2",
+                "type": "string"
+              }
             },
-            "type": "array"
-          },
-          "language": {
-            "example": "JavaScript",
-            "type": "string"
-          },
-          "latest_version_indicator": {
-            "example": true,
-            "type": "boolean"
-          },
-          "owner_details": {
-            "$ref": "#/components/schemas/OwnerDetails"
-          },
-          "package_details": {
-            "$ref": "#/components/schemas/PackageDetails__0"
-          },
-          "package_health": {
-            "$ref": "#/components/schemas/PackageHealth__0"
-          },
-          "package_id": {
-            "example": "pkg:npm/express",
-            "type": "string"
-          },
-          "package_name": {
-            "example": "express",
-            "type": "string"
-          },
-          "package_version": {
-            "example": "4.19.2",
-            "type": "string"
-          },
-          "package_version_id": {
-            "example": "pkg:npm/express@4.19.2",
-            "type": "string"
-          },
-          "published_at": {
-            "example": "2024-10-08T00:00:00Z",
-            "format": "date-time",
-            "type": "string"
-          },
-          "registry_url": {
-            "example": "https://www.npmjs.com/package/express",
-            "format": "uri",
-            "type": "string"
+            "type": "object"
           }
-        },
-        "required": [
-          "package_id",
-          "package_version_id",
-          "ecosystem",
-          "package_name",
-          "package_version",
-          "language"
-        ],
-        "type": "object"
+        ]
       },
       "PaginatedLinks": {
         "additionalProperties": false,
@@ -16874,26 +16828,6 @@
         "type": "string"
       },
       "PopularityDetails": {
-        "properties": {
-          "dependent_packages_count": {
-            "type": "integer"
-          },
-          "dependent_repos_count": {
-            "type": "number"
-          },
-          "description": {
-            "type": "string"
-          },
-          "downloads": {
-            "type": "integer"
-          },
-          "rating": {
-            "type": "string"
-          }
-        },
-        "type": "object"
-      },
-      "PopularityDetails__0": {
         "properties": {
           "dependent_packages_count": {
             "type": "integer"
