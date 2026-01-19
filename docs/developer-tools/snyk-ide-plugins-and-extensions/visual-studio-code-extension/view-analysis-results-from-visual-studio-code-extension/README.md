@@ -66,11 +66,9 @@ For newly created feature branches, there will be no reported issues. That is an
 
 The base branch is usually determined automatically for each Git repository.
 
-You can change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
+You can change the base branch or base folder by following these steps:
 
 1. Select the Snyk plugin.
 2. Toggle the `total/new` filter in the summary panel.
 3. Click on the top-level node in the issues tree to change the branch or directory.
 4. Use text input to specify any branch name or reference directory.
-
-<figure><img src="../../../../.gitbook/assets/image (273).png" alt=""><figcaption><p>Changing the reference branch or reference directory for calculation of net new issues</p></figcaption></figure>

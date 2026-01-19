@@ -1,7 +1,7 @@
 # Run an analysis with Visual Studio Code extension
 
 {% hint style="info" %}
-Ensure the Snyk extension is [configured](visual-studio-code-extension-configuration-environment-variables-and-proxy.md), [authenticated](view-analysis-results-from-visual-studio-code-extension/), and [trusted](visual-studio-code-workspace-trust.md) for your current Project.
+Ensure the Snyk extension is [configured](visual-studio-code-extension-configuration-environment-variables-and-proxy.md), [authenticated](view-analysis-results-from-visual-studio-code-extension/), and [trusted](visual-studio-code-workspace-trust.md) for your Project.
 {% endhint %}
 
 You can trigger `snyk test` by using one of these methods:
@@ -31,4 +31,3 @@ To trigger `snyk test` manually:
 2. Click the **Rescan** (play) button at the top of the extension panel.
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-qqsi.png" alt="" width="355"><figcaption><p>Manually trigger a Snyk analysis</p></figcaption></figure>
-
