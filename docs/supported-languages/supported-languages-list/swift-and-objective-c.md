@@ -38,11 +38,11 @@ For Swift and Objective-C, the following frameworks and libraries are supported:
 * IDZSwiftCommonCrypto
 * JLRoutes
 * MacPaw/OpenAI
+* Mantle
+* NSTask (Native API)
 {% endcolumn %}
 
 {% column %}
-* Mantle
-* NSTask (Native API)
 * OneSignal-iOS-SDK
 * Pathos
 * Realm
@@ -66,8 +66,9 @@ For Swift and Objective-C, the following frameworks and libraries are supported:
 
 ### Supported file formats
 
-* For Swift: .`swift`
-* For Objective-C: Snyk supports `.m` files, and implicitly supports `.h` files.
+For Swift, Snyk supports .`swift`
+
+For Objective-C, Snyk supports `.m` files, and implicitly supports `.h` files.
 
 ### Available features
 
@@ -75,6 +76,8 @@ For Swift and Objective-C, the following frameworks and libraries are supported:
 * Interfile analysis
 
 ## Swift and Objective-C for Snyk Open Source
+
+For Swift with Snyk Open Source, Snyk supports Swifts versions from 3.0 up to 6.2.x.
 
 ### Supported package managers and registries
 
@@ -113,7 +116,7 @@ When the .build folder of your Project is not present - in a pipeline, for examp
 
 Swift Package Manager supports pre-processing and post-processing. For post-processing, custom commands can add extra dependencies. Detecting such dependencies is not supported.
 
-It is not possible to scan Swift Package Manager Projects using Git import.
+It is not possible to scan Swift Package Manager Projects using SCM import.
 
 ### Cocoapods and CLI
 
