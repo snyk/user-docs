@@ -1,24 +1,19 @@
 # PHP
 
-## Applicability and integration
-
 {% hint style="info" %}
 PHP is supported for Snyk Code and Snyk Open Source.
 {% endhint %}
 
-Available integrations:
+## PHP for Snyk Code
 
-* SCM import
-* CLI and IDE: test or monitor your app
+Snyk Code has support for PHP versions 5.2 through 8.0 and is designed to process code from newer PHP versions where feasible.
 
-Available functions:
+For an overview of the supported security rules, visit [php-rules.md](../../scan-with-snyk/snyk-code/snyk-code-security-rules/php-rules.md "mention").
 
-* Test your app's SBOM using `pkg:composer`
-* Test your app's packages using `pkg:composer`
+### Available features
 
-## Technical specifications
-
-Snyk has tested support for PHP versions 5.2 through 8.0. You can also use later versions.
+* Reports
+* Interfile analysis
 
 ### Supported frameworks and libraries
 
@@ -33,36 +28,38 @@ For PHP, the following frameworks and libraries are supported:
 * Symfony
 * theodo-group/llphant
 
+### Supported file formats
+
+The following file formats are supported: `.php`, `.phtml`, `.module`, `.inc`, `.install`, `.theme`, `.profile`.
+
+## PHP for Snyk Open Source
+
+For PHP with Snyk Open Source, PHP versions 5.2 through 8.5 are supported.
+
+For PHP with Snyk Open Source, the following file formats are supported: `composer.json` and `composer.lock`&#x20;
+
+### Available integrations
+
+* SCM import
+* CLI and IDE: test or monitor your app
+
 ### Supported package managers and package registries
 
 * Supported package manager: [Composer](https://getcomposer.org)
 * Supported package registry: [packagist.org](https://packagist.org/)
 
-## PHP for Snyk Code
+### Available features
 
-For PHP with Snyk Code, the following file formats are supported: `.php`, `.phtml`, `.module`, `.inc`, `.install`, `.theme`, `.profile`
-
-Available features:
-
+* License scanning
 * Reports
-* Custom rules
-* Interfile analysis
+* Test your app's SBOM and packages using `pkg:composer` PURLs, using [SBOM test](../../developer-tools/snyk-cli/commands/sbom-test.md) command.
 
 {% hint style="info" %}
-The **Snyk Fix PR** feature is not available for Swift and Objective-C. This means that you will not be notified if the PR checks fail when the following conditions are met:
+The **Snyk Fix PR** feature is not available for PHP. This means that you will not be notified if the PR checks fail when the following conditions are met:
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**
 {% endhint %}
-
-## PHP for Snyk Open Source
-
-For PHP with Snyk Open Source, the following file formats are supported: `composer.json` and `composer.lock`
-
-Available features:
-
-* License scanning
-* Reports
 
 ## CLI support for PHP
 
