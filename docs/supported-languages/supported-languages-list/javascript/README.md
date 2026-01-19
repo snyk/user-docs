@@ -116,7 +116,7 @@ Snyk supports the following package managers and versions:
 
     Supported Lockfile versions: `Lockfile v1`, `Lockfile v2`, `Lockfile v3`
 * pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`, `pnpm 10`
-* Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`
+* Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`, `Yarn 4`&#x20;
 
 Snyk's default package registry is [npmjs.org](https://www.npmjs.org/). Private package registries are supported. For more information, visit [Package repository integrations.](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/)
 
