@@ -15821,6 +15821,7 @@
               "rating": "Active",
               "stargazers_count": 75000
             },
+            "description": "The package has mixed or concerning signals that require closer review. Applies to medium, high, and critical vulnerabilities. Low-severity vulnerabilities are excluded.",
             "maintenance": {
               "description": "...",
               "first_release_published_at": "2010-01-03T00:00:00Z",
@@ -15833,7 +15834,7 @@
               "rating": "Healthy",
               "total_versions_count": 760
             },
-            "overall_rating": "Recommended with Review",
+            "overall_rating": "Review recommended",
             "popularity": {
               "dependent_packages_count": 280,
               "dependent_repos_count": 65000,
@@ -15874,6 +15875,9 @@
         "properties": {
           "community": {
             "$ref": "#/components/schemas/CommunityDetails"
+          },
+          "description": {
+            "type": "string"
           },
           "maintenance": {
             "$ref": "#/components/schemas/MaintenanceDetails"
@@ -16048,6 +16052,7 @@
               "rating": "Active",
               "stargazers_count": 75000
             },
+            "description": "The package has mixed or concerning signals that require closer review. Applies to medium, high, and critical vulnerabilities. Low-severity vulnerabilities are excluded.",
             "maintenance": {
               "description": "...",
               "first_release_published_at": "2010-01-03T00:00:00Z",
@@ -16060,7 +16065,7 @@
               "rating": "Healthy",
               "total_versions_count": 760
             },
-            "overall_rating": "Recommended with Review",
+            "overall_rating": "Review recommended",
             "popularity": {
               "dependent_packages_count": 280,
               "dependent_repos_count": 65000,
@@ -18096,9 +18101,10 @@
         "type": "object"
       },
       "RedirectUris": {
-        "description": "List of allowed redirect URIs to call back after authentication.",
+        "description": "List of allowed redirect URIs (OAuth callbacks) where Snyk will redirect users after authorization.\n\nThese are URLs controlled by your application that Snyk will send the user to after they authorize your app. \nThe redirect URI used in your authorization request must exactly match one of the URIs registered here.\n\n**Important:** The redirect URI in your OAuth authorization request must be an exact match (including protocol, domain, path, and query parameters) to one of the URIs specified in this list.\n\n**Example valid redirect URI:** `https://example.com/callback` or `https://myapp.example.com/auth/snyk/callback`\n\nFor more information on the complete OAuth workflow, see the [Snyk Apps API tutorial](https://docs.snyk.io/snyk-api/using-specific-snyk-apis/snyk-apps-apis/tutorial-create-a-snyk-app).\n",
         "example": [
-          "https://example.com/callback"
+          "https://example.com/callback",
+          "https://example.com/auth/snyk/callback"
         ],
         "items": {
           "format": "uri",
@@ -18108,9 +18114,10 @@
         "type": "array"
       },
       "RedirectUrisNoMin": {
-        "description": "List of allowed redirect URIs to call back after authentication.",
+        "description": "List of allowed redirect URIs (OAuth callbacks) where Snyk will redirect users after authorization.\n\nThese are URLs controlled by your application that Snyk will send the user to after they authorize your app. \nThe redirect URI used in your authorization request must exactly match one of the URIs registered here.\n\n**Important:** The redirect URI in your OAuth authorization request must be an exact match (including protocol, domain, path, and query parameters) to one of the URIs specified in this list.\n\n**Example valid redirect URI:** `https://example.com/callback` or `https://myapp.example.com/auth/snyk/callback`\n\nFor more information on the complete OAuth workflow, see the [Snyk Apps API tutorial](https://docs.snyk.io/snyk-api/using-specific-snyk-apis/snyk-apps-apis/tutorial-create-a-snyk-app).\n",
         "example": [
-          "https://example.com/callback"
+          "https://example.com/callback",
+          "https://example.com/auth/snyk/callback"
         ],
         "items": {
           "format": "uri",
