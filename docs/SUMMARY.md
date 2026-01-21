@@ -416,7 +416,7 @@
     * [Fix vulnerabilities using the Snyk CLI](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/fix-vulnerabilities-using-the-snyk-cli.md)
   * [CLI commands and options summary](developer-tools/snyk-cli/cli-commands-and-options-summary.md)
   * [CLI help](developer-tools/snyk-cli/commands/README.md)
-    * [AIBOM](developer-tools/snyk-cli/commands/aibom.md)
+    * [AI-BOM](developer-tools/snyk-cli/commands/aibom.md)
     * [Auth](developer-tools/snyk-cli/commands/auth.md)
     * [Code](developer-tools/snyk-cli/commands/code.md)
     * [Code test](developer-tools/snyk-cli/commands/code-test.md)

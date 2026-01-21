@@ -100,7 +100,7 @@ Check an SBOM for vulnerabilities in open-source packages.
 
 ### [`snyk aibom`](commands/aibom.md)
 
-Generates an AIBOM for a local software project that is written in Python, to help you understand what AI models, datasets, tools, and so on are used in that project.
+Generates an AI-BOM for a local software project that is written in Python, to help you understand what AI models, datasets, tools, and so on are used in that project.
 
 ### [`snyk apps`](../../snyk-api/using-specific-snyk-apis/snyk-apps-apis/create-a-snyk-app-using-the-snyk-cli.md)
 
