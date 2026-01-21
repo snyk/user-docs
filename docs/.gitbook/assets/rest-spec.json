@@ -399,12 +399,12 @@
       },
       "ApiVersion": {
         "description": "The requested version of the endpoint to process the request",
-        "example": "2024-05-13~experimental",
+        "example": "2025-11-05",
         "in": "query",
         "name": "version",
         "required": true,
         "schema": {
-          "default": "2024-05-13~experimental",
+          "default": "2025-11-05",
           "description": "Requested API version",
           "pattern": "^(wip|work-in-progress|experimental|beta|((([0-9]{4})-([0-1][0-9]))-((3[01])|(0[1-9])|([12][0-9]))(~(wip|work-in-progress|experimental|beta))?))$",
           "type": "string"
