@@ -55,7 +55,7 @@ When you run `snyk aibom`, the output shows these dependencies clearly. For exam
 
 ### `--experimental`
 
-Required. Use experimental command features. This option is required because the command is in its experimental phase.
+**Required**. Use experimental command features. This option is required because the command is in its experimental phase.
 
 ### `--org=<ORG_ID>`
 
@@ -71,8 +71,23 @@ Default: `<ORG_ID>` that is the current preferred Organization in your [Account 
 
 ### `--html`
 
-Optional. Embed the AIBOM into an HTML visualization of the AIBOM components and their relationships.
+**Optional.** Embed the AIBOM into an HTML visualization of the AIBOM components and their relationships.
 
 ### `[--json-file-output]`
 
-Optional. Save the AIBOM output as a JSON data structure directly to the specified file.
+**Optional.** Save the AIBOM output as a JSON data structure directly to the specified file.
+
+### `--upload`&#x20;
+
+**Optional**. Persist the AIBOM into your Snyk organisation. If this flag is set the [repo](aibom.md#repo) flag needs to be set also.
+
+This will enable you to see your AI-BOM for the repository on Evo's web interface.
+
+### `--repo`&#x20;
+
+**Optional** (Required If the [upload flag](aibom.md#upload) is used). Repository to use when persisting the AI BOM.
+
+{% hint style="info" %}
+snyk aibom --upload --repo **https://github.com/\[owner]/\[repo]**
+{% endhint %}
+
