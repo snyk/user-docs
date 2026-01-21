@@ -12,7 +12,6 @@ The following reports are available:
 * [CWE TOP 10 KEV report](available-snyk-reports.md#cwe-top-10-kev-report)
 * [PCI-DSS v4.0.1 report](available-snyk-reports.md#pci-dss-v4.0.1-report)
 * [Developer IDE and CLI usage report](available-snyk-reports.md#developer-ide-and-cli-usage)
-* [Snyk Studio Adoption report](available-snyk-reports.md#snyk-studio-adoption-report)
 * [Repositories Tested in CI/CD report](available-snyk-reports.md#repositories-tested-in-ci-cd-report)
 * [Cloud Compliance Issues report](available-snyk-reports.md#cloud-compliance-issues-report)
 * [Learn Engagement](available-snyk-reports.md#learn-engagement)
@@ -354,16 +353,6 @@ This report shows the test usage in the IDE, CLI, and Snyk Studio by developers.
 #### List of organizations and developers adopting Snyk locally
 
 <figure><img src="../../.gitbook/assets/ide usage by developer.png" alt=""><figcaption></figcaption></figure>
-
-## Snyk Studio adoption report
-
-To use this report, you need to have Snyk Studio configured on your machine.
-
-The report shows the adoption of Snyk Studio across developers in your company. It also provides insights into the Agentic IDEs (ADEs) used and how generated code is being tested with Snyk Studio.
-
-Scanning new code as it is being generated with Snyk Studio is helpful to prevent the introduction of issues at creation. Scanning existing code with Snyk Studio is effective for agentic remediation.
-
-Security teams can use this report to validate the effective rollout across the company, as well ensure coverage and adoption over time.
 
 ## Repositories tested in CI/CD report
 
