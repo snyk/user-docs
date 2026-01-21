@@ -24,6 +24,7 @@ Navigate to **Preferences** > **Tools** > **Snyk** to set the following configur
 * **Snyk infrastructure as code**: Enable a scanner for insecure configurations in Terraform and Kubernetes code. Enabled by default.
 * **Snyk Code security issues**: Enable a scanner for security vulnerabilities in your application code. Enabled by default.
 * **Severity selection**: Filter issues by their severity, from Low to Critical.
+* **Issue View Options**: Filter issues by their [Code Consistent Ignores](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/) status. These filters do not apply if you disable **Code Consistent Ignores** for the Organization.
 * **All Issues vs Net New Issues**: Specify whether to see all issues or only net new issues. The latter requires an SCM integration, where it compares findings with those in the base branch.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-24 at 16.32.44.png" alt=""><figcaption></figcaption></figure>

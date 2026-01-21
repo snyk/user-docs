@@ -14,6 +14,24 @@ In addition, starting with version 3+, Snyk provides a custom UI in the Snyk Tab
 
 <figure><img src="../../../.gitbook/assets/image (231).png" alt=""><figcaption><p>Issue details in Eclipse plugin</p></figcaption></figure>
 
+## Severity filtering
+
+Filter issues by severity level to reduce noise and focus on high-severity issues.
+
+To hide low-severity issues, navigate to **View > Severity** and clear **Low Severity**. Select **Show All Severities** to enable or disable all severity filters.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-12-22 at 15.55.35.png" alt=""><figcaption><p>Severity filters in the View menu</p></figcaption></figure>
+
+## Issue View Options
+
+[Code Consistent Ignores](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/) filters issues to help teams focus on critical tasks. After you create an ignore, Snyk applies it to all tests and branches.
+
+{% hint style="info" %}
+These filters do not apply if you disable **Code Consistent Ignores** for the Organization.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-12-22 at 15.58.46.png" alt=""><figcaption><p>Issue View Options alongside the Net New filter in the View menu</p></figcaption></figure>
+
 ## Net new issues versus all issues
 
 Starting with version 3.1.0, it is possible to see only newly introduced issues.
@@ -22,8 +40,7 @@ This functionality reduces noise and allows you to focus only on current changes
 
 The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
-To apply the filter and see only the new issues, use the **total**/**new** toggle in the summary panel, or apply the **Show only Net New Issues filter** from the **View** menu (under **Issues Status**).\
-
+To apply the filter and see only the new issues, use the **total**/**new** toggle in the summary panel, or apply the **Show only Net New Issues filter** from the **View** menu (under **Issues Status**).
 
 <figure><img src="../../../.gitbook/assets/image (268).png" alt=""><figcaption><p>Net new issues filter enabled after clicking on the total/new issues toggle</p></figcaption></figure>
 
@@ -33,7 +50,7 @@ For newly created feature branches, there will be no reported issues. That is an
 
 <figure><img src="../../../.gitbook/assets/image (269).png" alt=""><figcaption><p>No new issues introduced in a newly created branch</p></figcaption></figure>
 
-The base branch is usually automatically determined for each Git repository.&#x20;
+The base branch is usually automatically determined for each Git repository.
 
 You may change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
 

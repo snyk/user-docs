@@ -19,7 +19,7 @@ After the plugin is installed, you can set the following configurations for the 
 * **Snyk Code Security issues**: Enable a scanner for security vulnerabilities in your application code. Enabled by default
 * **Snyk IaC**: Enable a scanner for insecure configurations in Terraform and Kubernetes code. Enabled by default.
 * **Severity selection**: Filter issues by their severity, from Low to Critical.
-* **Risk Score Threshold:** Filter Open Source issues by their [risk score](../../../manage-risk/prioritize-issues-for-fixing/risk-score.md). Only issues with a risk score greater than or equal to the threshold are shown. Set to 0 to show all issues. This filter applies in conjunction with other filters, such as Severity and Issue View Options. Only issues meeting all selected criteria are displayed.
+* **Issue View Options**: Filter issues by their [Code Consistent Ignores](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/) status. These filters do not apply if you disable **Code Consistent Ignores** for the Organization.
 * **All issues vs Net new issues**: Specify whether to see all issues or only net new issues. The latter requires an SCM integration, where the extension compares findings with those in the base branch.
 *   **Additional parameters**: Set additional `snyk test` CLI options for Open Source scanning.
 
