@@ -290,7 +290,7 @@
     * [Kiro guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/kiro-guide.md)
     * [Qodo guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/qodo-guide.md)
     * [Windsurf guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/windsurf-guide.md)
-  * [Secure at Inception with Snyk Studio](integrations/snyk-studio-agentic-integrations/snyk-studio-and-secure-at-inception.md)
+  * [Distribution at scale](integrations/snyk-studio-agentic-integrations/distribution-at-scale.md)
   * [Troubleshooting](integrations/snyk-studio-agentic-integrations/troubleshooting.md)
   * [Usage analytics](integrations/snyk-studio-agentic-integrations/usage-analytics.md)
 * [Jira and Slack integrations](integrations/jira-and-slack-integrations/README.md)
