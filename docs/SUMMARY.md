@@ -268,6 +268,7 @@
 
 * [Overview](integrations/integrate-with-snyk.md)
 * [Snyk Studio - Agentic integrations](integrations/snyk-studio-agentic-integrations/README.md)
+  * [Directives](integrations/snyk-studio-agentic-integrations/directives.md)
   * [Quickstart guides for Snyk Studio](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/README.md)
     * [Amazon Q guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/amazon-q-guide.md)
     * [Antigravity guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/antigravity-guide.md)

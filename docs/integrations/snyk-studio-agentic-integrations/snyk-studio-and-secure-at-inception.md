@@ -1,27 +1,9 @@
 # Secure at Inception with Snyk Studio
 
-To prevent the introduction of security issues during code generation, Snyk outlines a set of [directives](snyk-studio-and-secure-at-inception.md#custom-rules-at-scale) that enable you to scale custom rules at the company level for securing code at inception. Snyk also provides an [**Execution Frequency**](snyk-studio-and-secure-at-inception.md#execution-frequency-setting) setting in the IDE that supports issue prevention in AI-generated code.
-
-{% hint style="info" %}
-To learn how to install and configure Snyk Studio in your preferred coding assistant, visit [Quickstart guides for Snyk Studio](quickstart-guides-for-snyk-studio/).
-{% endhint %}
-
 ## Prerequisites
 
 * An active Snyk user account
 * Access to an Endpoint Management tool, such as JAMF
-
-### Validated environments
-
-The functionality documented here has been validated on:
-
-* OS: macOS
-* MDM: JAMF
-* IDEs: Cursor, VSCode, and Windsurf
-
-{% hint style="info" %}
-Reach out to your Snyk representative for support with enablement if you plan to use Snyk Studio with unvalidated environments, for example, Windows.
-{% endhint %}
 
 ## Custom rules at scale
 
