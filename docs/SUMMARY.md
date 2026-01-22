@@ -267,9 +267,11 @@
 ## Integrations
 
 * [Overview](integrations/integrate-with-snyk.md)
-* [Snyk Studio - Agentic integrations](integrations/snyk-studio-agentic-integrations/README.md)
+* [Agentic security with Snyk Studio](integrations/snyk-studio-agentic-integrations/README.md)
+  * [Getting started with Snyk Studio](integrations/snyk-studio-agentic-integrations/getting-started-with-snyk-studio.md)
   * [Directives](integrations/snyk-studio-agentic-integrations/directives.md)
-  * [Quickstart guides for Snyk Studio](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/README.md)
+  * [Distribution at scale](integrations/snyk-studio-agentic-integrations/snyk-studio-and-secure-at-inception.md)
+  * [Quickstart guides](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/README.md)
     * [Amazon Q guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/amazon-q-guide.md)
     * [Antigravity guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/antigravity-guide.md)
     * [Augment Code guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/augment-code-guide.md)
@@ -290,7 +292,6 @@
     * [Kiro guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/kiro-guide.md)
     * [Qodo guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/qodo-guide.md)
     * [Windsurf guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/windsurf-guide.md)
-  * [Distribution at scale](integrations/snyk-studio-agentic-integrations/distribution-at-scale.md)
   * [Troubleshooting](integrations/snyk-studio-agentic-integrations/troubleshooting.md)
   * [Usage analytics](integrations/snyk-studio-agentic-integrations/usage-analytics.md)
 * [Jira and Slack integrations](integrations/jira-and-slack-integrations/README.md)

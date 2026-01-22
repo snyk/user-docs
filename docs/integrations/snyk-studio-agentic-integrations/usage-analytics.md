@@ -5,5 +5,5 @@ You can find Snyk Studio usage analytics in the [Developer IDE and CLI usage](..
 <figure><img src="../../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Data will only be available for Agentic scans with CLI version 1.1298.1 or later.
+Data is only be available for Agentic scans with CLI version 1.1298.1 or later.
 {% endhint %}

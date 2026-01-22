@@ -23,7 +23,7 @@ Coding assistants have differences in how MCP server configuration is managed, a
 
 ### What MDM tools does your organization use?
 
-Your OS (Windows or Mac) determines which MDM (Intune, Jamf, and so on) your IT department uses to deploy software. They should have the proficiency in writing the necessary scripts and incorporating them into the corresponding MDM playbooks for deployment. However, the [Example Company X Blueprint](distribution-at-scale.md#decisions-made-by-company-x) section can serve as a model for how to port to your company’s MDM solution.
+Your OS (Windows or Mac) determines which MDM (Intune, Jamf, and so on) your IT department uses to deploy software. They should have the proficiency in writing the necessary scripts and incorporating them into the corresponding MDM playbooks for deployment. However, the [Example Company X Blueprint](snyk-studio-and-secure-at-inception.md#decisions-made-by-company-x) section can serve as a model for how to port to your company’s MDM solution.
 
 ### Do you want to auto-update Snyk CLI or MCP versions?
 
