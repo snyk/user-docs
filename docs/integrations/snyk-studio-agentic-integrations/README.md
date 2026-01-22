@@ -4,7 +4,7 @@ Agentic workflows accelerate software development and innovation but introduce s
 
 Snyk Studio connects the Snyk platform, your development environment, and your AI tools, in four interconnected layers:
 
-* **Snyk MCP Server:** A MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI .
+* **Snyk MCP Server:** A MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI.
 * **AI agents or IDE's**: Agentic development environments that enable developers to interact with coding agents, which can integrate with Snyk Studio to drive security.
 * **Directives**: Policies, rules and commands provided to coding assistants to guide them on coding and security standards.
 * **The Snyk platform:** Security intelligence from Snyk products (Snyk Code, Snyk Open Source, and more) which can be used to identify security issues and drive resolutions.
