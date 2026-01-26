@@ -11632,7 +11632,6 @@ components:
         - github
         - github-cr
         - github-enterprise
-        - github-cloud-app
         - gitlab
         - gitlab-cr
         - google-artifact-cr
