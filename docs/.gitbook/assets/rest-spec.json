@@ -4263,10 +4263,9 @@
       "AssignmentCreationAttributes": {
         "properties": {
           "learning_path_ids": {
-            "description": "Array of learning path IDs that contain the lessons being assigned.\nOnly include when assignments are created from learning paths.\nThe system will automatically determine which lessons belong to which learning paths.\n",
+            "description": "Optional array of learning path IDs for tracking and metadata purposes only.\n\n**Important:** This field does NOT automatically expand learning paths into lessons. \nYou must explicitly provide all lesson IDs in the **lesson_ids** field.\n\nUse this field to record which learning paths these lessons belong to for reporting \nand analytics purposes.\n",
             "example": [
-              "lp-uuid-A",
-              "lp-uuid-B"
+              "30526dd7-efbd-4254-a963-3e6383c6ebdc"
             ],
             "items": {
               "type": "string"
@@ -4274,16 +4273,35 @@
             "type": "array"
           },
           "lesson_ids": {
+            "description": "Array of lesson IDs to assign. Must contain at least one lesson ID.\n\n**To assign all lessons from a learning path:**\n1. Call [List Snyk Learn's resources](#operation/listLearnCatalog) (GET /rest/learn/catalog)\n2. Find the learning path in the response data array\n3. Extract the **lesson_ids** array from the learning path's **attributes**\n4. Pass those lesson IDs to this field\n",
+            "example": [
+              "215947a8-d678-50aa-56e0-270c983b4c48",
+              "12cde434-5fcb-4c9c-92d0-c4040b735a77",
+              "83bc3aa6-df84-478c-8b46-f8499a60129f",
+              "eb44604a-48e2-49af-d86b-8ddc2ead52b0",
+              "2bcea8ed-fb48-4563-9c1a-10e37bbf70c6",
+              "af794526-aa3b-476b-9d20-6806ea87f0b6",
+              "f654aed0-4c94-4e83-791f-6d39630ce0ed",
+              "7ebd499c-973e-4ec0-4d93-07dbe68a9d9b",
+              "cd0b4c2b-b6c9-4c04-f3dd-4094a2819b36",
+              "ab3f6f4c-3a45-4388-32b0-5f97e24d46b6"
+            ],
             "items": {
               "type": "string"
             },
+            "minItems": 1,
             "type": "array"
           },
           "user_ids": {
+            "description": "Array of user IDs (UUIDs) to assign lessons to. Must contain at least one user ID.",
+            "example": [
+              "00000000-0000-0000-0000-000000000001"
+            ],
             "items": {
               "format": "uuid",
               "type": "string"
             },
+            "minItems": 1,
             "type": "array"
           }
         },
@@ -5891,30 +5909,30 @@
           "configuration": {
             "discriminator": {
               "mapping": {
-                "acr": "./acr.yaml#/schemas/AcrAttributes",
-                "apprisk": "./apprisk.yaml#/schemas/AppRiskAttributes",
-                "artifactory": "./artifactory.yaml#/schemas/ArtifactoryAttributes",
-                "artifactory-cr": "./artifactoryCr.yaml#/schemas/ArtifactoryCr",
-                "azure-repos": "./azureRepos.yaml#/schemas/AzureReposAttributes",
-                "bitbucket-server": "./bitbucketServer.yaml#/schemas/BitbucketServerAttributes",
-                "digitalocean-cr": "./digitaloceanCr.yaml#/schemas/DigitalOceanCrAttributes",
-                "docker-hub": "./dockerHub.yaml#/schemas/DockerHubAttributes",
-                "ecr": "./ecr.yaml#/schemas/EcrAttributes",
-                "gcr": "./gcr.yaml#/schemas/GcrAttributes",
-                "github": "./github.yaml#/schemas/GitHubAttributes",
-                "github-cloud-app": "./githubServerApp.yaml#/schemas/GitHubCloudAppAttributes",
-                "github-cr": "./githubCr.yaml#/schemas/GithubCrAttributes",
-                "github-enterprise": "./githubEnterprise.yaml#/schemas/GitHubEnterpriseAttributes",
-                "github-server-app": "./githubServerApp.yaml#/schemas/GitHubServerAppAttributes",
-                "gitlab": "./gitlab.yaml#/schemas/GitLabAttributes",
-                "gitlab-cr": "./gitlabCr.yaml#/schemas/GitlabCrAttributes",
-                "google-artifact-cr": "./googleArtifactCr.yaml#/schemas/GoogleArtifactCrAttributes",
-                "harbor-cr": "./harborCr.yaml#/schemas/HarborCrAttributes",
-                "jira": "./jira.yaml#/schemas/JiraAttributes",
-                "nexus": "./nexus.yaml#/schemas/NexusAttributes",
-                "nexus-cr": "./nexusCr.yaml#/schemas/NexusCrAttributes",
-                "quay-cr": "./quayCr.yaml#/schemas/QuayCrAttributes",
-                "workload": "./workload.yaml#/schemas/WorkloadAttributes"
+                "acr": "#/components/schemas/AcrAttributes",
+                "apprisk": "#/components/schemas/AppRiskAttributes",
+                "artifactory": "#/components/schemas/ArtifactoryAttributes",
+                "artifactory-cr": "#/components/schemas/ArtifactoryCrAttributes",
+                "azure-repos": "#/components/schemas/AzureReposAttributes",
+                "bitbucket-server": "#/components/schemas/BitbucketServerAttributes",
+                "digitalocean-cr": "#/components/schemas/DigitalOceanCrAttributes",
+                "docker-hub": "#/components/schemas/DockerHubAttributes",
+                "ecr": "#/components/schemas/EcrAttributes",
+                "gcr": "#/components/schemas/GcrAttributes",
+                "github": "#/components/schemas/GitHubAttributes",
+                "github-cloud-app": "#/components/schemas/GitHubCloudAppAttributes",
+                "github-cr": "#/components/schemas/GithubCrAttributes",
+                "github-enterprise": "#/components/schemas/GitHubEnterpriseAttributes",
+                "github-server-app": "#/components/schemas/GitHubServerAppAttributes",
+                "gitlab": "#/components/schemas/GitLabAttributes",
+                "gitlab-cr": "#/components/schemas/GitlabCrAttributes",
+                "google-artifact-cr": "#/components/schemas/GoogleArtifactCrAttributes",
+                "harbor-cr": "#/components/schemas/HarborCrAttributes",
+                "jira": "#/components/schemas/JiraAttributes",
+                "nexus": "#/components/schemas/NexusAttributes",
+                "nexus-cr": "#/components/schemas/NexusCrAttributes",
+                "quay-cr": "#/components/schemas/QuayCrAttributes",
+                "workload": "#/components/schemas/WorkloadAttributes"
               },
               "propertyName": "type"
             },
@@ -6412,9 +6430,11 @@
             "type": "boolean"
           },
           "data": {
+            "description": "Array of assignment creation objects. Must contain at least one assignment.",
             "items": {
               "$ref": "#/components/schemas/AssignmentCreationResource"
             },
+            "minItems": 1,
             "type": "array"
           },
           "due_date": {
