@@ -116,6 +116,12 @@ This report tracks the adoption of Snyk tests within your Continuous Integration
 
 The SLA Management report allows you to view the current Service Level Agreement (SLA) status of security issues based on your defined policies. It helps pinpoint gaps in adherence and identifies specific teams that require attention to improve remediation efforts and maintain compliance goals.
 
+#### Snyk Studio Adoption
+
+This report shows the adoption of [Snyk Studio](../../integrations/snyk-studio-agentic-integrations/) across developers in your company. It also provides insights into the Agentic IDEs ([ADEs](../../discover-snyk/getting-started/glossary.md#ade)) used where testing occurs with Snyk Studio.
+
+Security teams can use this report to validate the effective rollout across the company, as well as ensure coverage and adoption over time.
+
 #### Vulnerabilities Detail
 
 The Vulnerabilities Detail report helps prioritize remediation efforts, developer education, and eradication campaigns by focusing on the most prevalent security issues. Similar to the Issues Detail report, it groups issues by Snyk Problem ID, enabling a clearer understanding of the number of instances for a specific vulnerability and the Projects they affect.
