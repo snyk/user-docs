@@ -77,17 +77,17 @@ Default: `<ORG_ID>` that is the current preferred Organization in your [Account 
 
 **Optional.** Save the AIBOM output as a JSON data structure directly to the specified file.
 
+#### Upcoming Features in 1.1303.0
+
 ### `--upload`&#x20;
 
-**Optional**. Persist the AIBOM into your Snyk organisation. If this flag is set the [repo](aibom.md#repo) flag needs to be set also.
-
-This will enable you to see your AI-BOM for the repository on Evo's web interface.
+**Optional**. Persist the AIBOM into your Snyk Organization. This flag requires the [`--repo`](aibom.md#repo) flag. It enables you to view your AI-BOM for the repository in the Evo web interface.
 
 ### `--repo`&#x20;
 
-**Optional** (Required If the [upload flag](aibom.md#upload) is used). Repository to use when persisting the AI BOM.
+**Optional**. Specify the repository to use when persisting the AI-BOM. Required when you use the [`--upload`](aibom.md#upload) flag.
 
-{% hint style="info" %}
-snyk aibom --upload --repo **https://github.com/\[owner]/\[repo]**
-{% endhint %}
+```bash
+snyk aibom --upload --repo https://github.com/[owner]/[repo]
+```
 
