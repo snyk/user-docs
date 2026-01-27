@@ -19,7 +19,7 @@ If these are not available to you, the Snyk CLI can be manually introduced in th
 
 ## Configure the Snyk MCP server
 
-Navigate to the coding assistant's MCP server configuration setup. This often involves modifying a file called `mcp.json` or similar. The following snippet can be used to configure the Snyk MCP server:
+Navigate to the coding assistant MCP server configuration setup. This often involves modifying a file called `mcp.json` or similar. The following snippet can be used to configure the Snyk MCP server:
 
 {% code overflow="wrap" expandable="true" %}
 ```

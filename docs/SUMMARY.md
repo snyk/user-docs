@@ -270,7 +270,7 @@
 * [Agentic security with Snyk Studio](integrations/snyk-studio-agentic-integrations/README.md)
   * [Getting started with Snyk Studio](integrations/snyk-studio-agentic-integrations/getting-started-with-snyk-studio.md)
   * [Directives](integrations/snyk-studio-agentic-integrations/directives.md)
-  * [Distribution at scale](integrations/snyk-studio-agentic-integrations/snyk-studio-and-secure-at-inception.md)
+  * [Distribution at scale](integrations/snyk-studio-agentic-integrations/distribution-at-scale.md)
   * [Quickstart guides](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/README.md)
     * [Amazon Q guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/amazon-q-guide.md)
     * [Antigravity guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/antigravity-guide.md)

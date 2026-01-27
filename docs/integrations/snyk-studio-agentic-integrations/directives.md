@@ -27,9 +27,9 @@ Non-determinism is a factor with LLM interactions and there can be scenarios whe
 
 ### Secure at inception directives
 
-There are many guardrail directives that your company may choose to implement, some of which may relate to security. Snyk's Secure at inception directives are code examples that can be used to ensure that AI-generated code is tested for security issues at the time of code generation.
+There are many guardrail directives that your company may choose to implement, some of which may relate to security. Snyk Secure at inception directives are code examples that can be used to ensure that AI-generated code is tested for security issues at the time of code generation.
 
-The following directives can be customized to fit your organization's specific needs.
+The following directives can be customized to fit your organization needs.
 
 <details>
 
@@ -78,7 +78,7 @@ Command directives are manually invoked by human developers or agents. They codi
 
 Remediation directives, a category of command directive, trigger a full, end-to-end security remediation playbook that results in a secure pull request.
 
-There are many command directives that companies may choose to implement, some of which may relate to security. Snyk's remediation directives are code examples that can be used to accelerate the remediation of pre-existing security issues.
+There are many command directives that companies may choose to implement, some of which may relate to security. Snyk remediation directives are code examples that can be used to accelerate the remediation of pre-existing security issues.
 
 The following directive can be customized to fit your organization's specific needs.
 

@@ -1,41 +1,37 @@
 # Distribution at scale
 
-This documentation outlines how to distribute Snyk Studio as a managed utility, automating local security testing and integrating it into your SDLC.
+Distribute Snyk Studio as a managed utility to automate local security testing and integrate it into your software development life cycle (SDLC).
 
-Why distribute Snyk Studio to every developer?
+## Benefits of distributing Snyk Studio
 
-* Eliminates setup frictio&#x6E;**:** deliver Snyk Studio as pre-configured infrastructure, enabling easy adoption from day one.
-* Security parit&#x79;**:** enable engineers across all levels to have access to the same tooling and to leverage the same security rules in their AI workflows.
-* Reduced support overhea&#x64;**:** centralized configuration reduces isolated troubleshooting associated with separate local setups.
-* Ever-present remediatio&#x6E;**:** provide every developer with a standardized, AI-assisted triage experience, accelerating remediation with native LLM integrations for both triage and fix generation.
+Distributing Snyk Studio to every developer offers the following benefits:
 
-## Distribution decisions to make
+* Eliminate setup friction: Deliver Snyk Studio as pre-configured infrastructure to allow adoption immediately.
+* Ensure security parity: Give engineers access to the same tooling and use the same security rules in their AI workflows.
+* Reduce support overhead: Use centralized configuration to reduce troubleshooting for separate local setups.
+* Standardize remediation: Provide a standardized, AI-assisted triage experience. Accelerate remediation using native LLM integrations for triage and fix generation.
 
-When distributing at scale, Snyk offers general guidelines, but also recognizes that decisions must be made based on your organization’s tooling, security policies, and developer culture.
+## Deployment decisions
 
-This section provides an overview of each decision and provides guidance on how to manage the deployment accordingly.
+Snyk provides general guidelines for distributing at scale. You can adapt these based on your tooling, security policies, and developer culture. This section covers key decisions and deployment management.
 
 ### Which coding assistants are available to your developers?
 
-You decide what coding assistants to make available to your developers. Nearly all coding assistants support the Model Context Protocol (MCP) and support some version of directives.
-
-Coding assistants have differences in how MCP server configuration is managed, as well as how and where directives can be applied. This guide covers where some of these differences could manifest in your implementation, but Snyk Studio deployment at scale should work in conjunction with any coding assistant.
+You determine which coding assistants developers use. Most assistants support the Model Context Protocol (MCP) and directives. While configuration management varies by assistant, Snyk Studio deployment works with any coding assistant.
 
 ### What MDM tools does your organization use?
 
-Your OS (Windows or Mac) determines which MDM (Intune, Jamf, and so on) your IT department uses to deploy software. They should have the proficiency in writing the necessary scripts and incorporating them into the corresponding MDM playbooks for deployment. However, the [Example Company X Blueprint](snyk-studio-and-secure-at-inception.md#decisions-made-by-company-x) section can serve as a model for how to port to your company’s MDM solution.
+The operating system (Windows or macOS) determines the mobile device management (MDM) tool your IT department uses, such as Intune or Jamf. IT administrators write and incorporate the necessary scripts into MDM playbooks. Use the [Decisions made by Example company](distribution-at-scale.md#decisions-made-by-example-company) section as a model to port to your MDM solution.
 
 ### Do you want to auto-update Snyk CLI or MCP versions?
 
-The Snyk CLI and MCP Server are regularly improved with new features and fixes. Each have a regular schedule of release and are thoroughly tested beforehand. If needed, you can distribute a specific version to developers and allow time for internal vetting before distributing updates.
-
-Expand the relevant option for more information on what actions you need to take. &#x20;
+Snyk updates the Snyk CLI and MCP Server regularly with features and fixes. You can distribute specific versions to developers to allow time for internal vetting. Expand the relevant option for more information on what actions you need to take.&#x20;
 
 <details>
 
 <summary><strong>Yes</strong>, I would like to enable auto-updates for Snyk CLI/MCP versions.</summary>
 
-* If you are deploying alongside [Cursor](quickstart-guides-for-snyk-studio/cursor-guide.md), [Windsurf](quickstart-guides-for-snyk-studio/windsurf-guide.md), or [Copilot](quickstart-guides-for-snyk-studio/github-copilot-guide.md) in VS Code, no action needs to be taken as the default setting automatically upgrades dependencies when they are available.
+* If you are deploying alongside [Cursor](quickstart-guides-for-snyk-studio/cursor-guide.md), [Windsurf](quickstart-guides-for-snyk-studio/windsurf-guide.md), or [Copilot](quickstart-guides-for-snyk-studio/github-copilot-guide.md) in VS Code, you do not need to take any action as the default setting automatically upgrades dependencies when they are available.
 * If you are deploying Snyk Studio into any other coding assistant, you will need to keep the Snyk CLI on the latest version using MDM, which will depend on your [chosen installation method](../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/).
 
 </details>
@@ -47,26 +43,25 @@ Expand the relevant option for more information on what actions you need to take
 * If you are deploying alongside Cursor, Windsurf, or Copilot in VS Code, [install that specific CLI version](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli#install-with-standalone-executables).
   * If you want to use the Snyk VS Code IDE extension to facilitate the MCP server configuration and Secure at inception directives, install the VS Code IDE extension and disable auto CLI updates (`snyk.advanced.automaticDependencyManagement`) and set the path to your CLI explicitly (`snyk.advanced.cliPath`).
 * If you are deploying alongside Claude Code or Gemini CLI, [install a specific CLI version](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli#install-with-standalone-executables) and run `snyk mcp config --name=[ade_name]`.
-* If you are deploying alongside a coding assistant not covered by the above or prefer fine-grained controls, [install a specific CLI version](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli#install-with-standalone-executables), configure your ADE’s MCP server, and optionally write the rule files (varies by ADE).
+* If you are deploying alongside a coding assistant this guide does not cover or prefer fine-grained controls, [install a specific CLI version](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli#install-with-standalone-executables), configure your ADE’s MCP server, and optionally write the rule files (varies by ADE).
 
 </details>
 
 ### Do you want to enable Secure at inception directives?
 
-[Secure at inception directives](directives.md#secure-at-inception-directives) guide the coding assistant on how and when to scan the code it generates and automatically fix newly introduced security issues.
-
-You can configure whether you use these rules, the content, and how strictly you want them enforced.
+[Secure at inception directives](directives.md#secure-at-inception-directives) guide the coding assistant on how and when to scan generated code and automatically fix security issues. You can configure whether you use these rules, the content, and how strictly you want them enforced.
 
 <details>
 
 <summary><strong>Yes</strong>, I want to enable Secure at inception directives.</summary>
 
-* If you are deploying alongside Cursor, Windsurf, or Copilot in VS Code and want to use Snyk’s default Secure at inception directives which write to individual directories and automatically git ignore the files, you can leverage the [Snyk VS Code IDE extension](https://docs.snyk.io/developer-tools/snyk-ide-plugins-and-extensions/visual-studio-code-extension) to configure the Snyk MCP server (`snyk.securityAtInception.autoConfigureSnykMcpServer`) as well as Secure at inception directives and their corresponding execution frequency (`snyk.securityAtInception.executionFrequency`).
-* If you are deploying Snyk Studio into any other coding assistant or want to customize the Secure at inception directives, write the directives to the appropriate directory for the specific coding assistant.
-  *   Directives can be written at the user level, covering all repositories, for most coding assistants. For example, in Windsurf, rules should be written in the `global_rules.md` file in the `~/.codeium/windsurf/` directory for MacOS/Linux and `%USERPROFILE%\.codeium\windsurf\` for Windows.
-
-      Some tools, including Cursor, do not allow rules to be written programmatically at the user level. Some tools have their own administrative consoles for managing directives, but you need to ensure they are kept in sync across your ADEs.
-  * Directives can be written to each repository. These rules can be written using scripts (not MDM) and or Global Templates in Git. For example, in Cursor repository scoped rules are written as a `.md` file in the `.cursor/rules` directory at the root of the project.
+* If you use Cursor, Windsurf, or Copilot in VS Code, use the [Snyk VS Code extension](../../developer-tools/snyk-ide-plugins-and-extensions/visual-studio-code-extension/) to apply default Secure at inception directives. This automatically writes to individual directories and adds files to `.gitignore`. You can configure the following settings:
+  * `snyk.securityAtInception.autoConfigureSnykMcpServer`: Configures the Snyk MCP server.
+  * `snyk.securityAtInception.executionFrequency`: Sets the directive execution frequency.
+* If you deploy Snyk Studio into any other coding assistant or want to customize the Secure at inception directives, write the directives to the appropriate directory for your assistant. You can apply directives at the user level or the repository level.
+  * User level directives: These apply to all repositories. For Windsurf, add rules to the `global_rules.md` file. For MacOS or Linux, this file is located in the `~/.codeium/windsurf/directory`. For Windows, this file is located in the `%USERPROFILE%\.codeium\windsurf\` directory. Cursor does not support programmatic user level rules.
+  * If you use administrative consoles to manage directives, they must remain in sync across your development environments.
+  * Repository-level directives: You can write directives for specific repositories using scripts (not MDM) or Git Global Templates. For Cursor, add a `.md` file to the `.cursor/rules` directory at the project root.
 
 </details>
 
@@ -74,19 +69,17 @@ You can configure whether you use these rules, the content, and how strictly you
 
 <summary><strong>No</strong>, I do not want to enable any directives.</summary>
 
-No additional action is required beyond configuring the Snyk MCP server. You can still manually invoke scans using your chosen agent.
+No additional action is required beyond configuring the Snyk MCP server. You can manually invoke scans using your chosen agent.
 
 </details>
 
 ### Do you want to allow developers to modify directive settings?
 
-The main reason to offer this flexibility is that there is no standardized approach across the individual developers workflow to using AI coding assistants.
+Developer workflows vary. If you use the Snyk VS Code extension to configure the Snyk MCP server and Secure at inception directives, developers can change the scan frequency:
 
-If the Snyk VS Code IDE extension is being used to configure the Snyk MCP server as well as Secure at inception directives and their corresponding execution frequency, developers can change the frequency between:
-
-* **On Code Generation:** guides the agent to execute scans every time it generates new code in a Snyk supported language.
-* **Smart Scan:** the agent model decides when to invoke Secure at Inception rules.
-* **Manual:** disables Secure at inception rules but allows a user to invoke scans through the agent using natural language. You can change the settings back to **On Code Generation**, depending on your needs.
+* **On Code Generation:** Guides the agent to scan every time it generates new code in a Snyk supported language.
+* **Smart Scan:** The agent model decides when to invoke Secure at Inception rules.
+* **Manual:** Disables Secure at inception rules but allows users to invoke scans through the agent using natural language. You can revert to **On Code Generation**, as needed.
 
 If you deploy Snyk Studio into any other coding assistant or customize the Secure at inception directives, you can modify directives by manually overwriting or deleting directive files.
 
@@ -94,8 +87,9 @@ If you deploy Snyk Studio into any other coding assistant or customize the Secur
 
 <summary><strong>Yes</strong>, I want to enable developers to modify directive settings.</summary>
 
-* As part of your MDM playbook, consider writing a helper file that indicates when directives were written to each developer’s machine. The script can check to see if a developer already has directives deployed, making no changes to the directive file contents.
-* If you decide to roll out modification of directives on developer machines, you can change the MDM playbook to overwrite directive files based on the helper file timestamp and write a new helper file timestamp value.
+* To modify directive on developer machines, update your MDM playbook to:
+  * Overwrite directive files using the helper file timestamp. The script can check to see if a developer already has directives deployed, making no changes to the directive file contents.
+  * Write a new timestamp value.
 
 </details>
 
@@ -103,15 +97,17 @@ If you deploy Snyk Studio into any other coding assistant or customize the Secur
 
 <summary><strong>No</strong>, I do not want to enable developers to modify directive settings.</summary>
 
-As part of your regular execution of the script using the MDM tool, no special consideration needs to be made to determine to which developer machines should have the directives written. For example, if your MDM script runs daily, any developers who changed directives since the last run will have their directives overwritten. If you choose this option, consider more frequent script executions.
+Run the MDM script on all developer machines. You do not need to identify specific machines for updates.
+
+If the script runs daily, it overwrites any manual changes developers made since the last run. Run the script frequently to ensure consistency.
 
 </details>
 
 ## Example decisions and distribution steps
 
-This example uses a fictional company called Company X.
+The following example details deployment steps for "Example Company":
 
-### Decisions made by Company X
+### Decisions made by Example company
 
 * Cursor and Windsurf are available to developers to use internally.
 * Jamf is used as a MDM tool.
@@ -123,7 +119,7 @@ This results in a straightforward deployment where the Snyk VS Code IDE extensio
 
 ### Development and rollout steps
 
-Company X drafted the script and followed these steps:
+Example company drafted the script and followed these steps:
 
 <details>
 
@@ -206,7 +202,7 @@ This demonstrates functionality and troubleshoots any issues, with the user test
 
 ### Sample script
 
-Snyk provides a sample script for the Company X example for distributing Snyk Studio:
+Snyk provides a sample script modeled after the Example company for distributing Snyk Studio:
 
 <details>
 
