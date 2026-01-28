@@ -263,36 +263,34 @@ The Snyk Consultant will walk through how to track the progress for active Assig
 | Configuring Assignments using a Learning Organization | Gain an understanding of how to create and send Assignments to members of an Organization.                                                               |
 | Tracking Assignments and controlling access           | Gain an understanding of how to review in-progress Assignments and control who has access to review/create/delete Assignments based on Custom Roles.     |
 
-## Timeline for Snyk Jumpstart delivery
+### Timeline for Snyk Jumpstart delivery
 
-Snyk Jumpstart delivery is a 60-day engagement that begins when a Consultant first reaches out to schedule a Kickoff call.&#x20;
+Snyk Jumpstart delivery is typically a 60-day engagement that begins when a Consultant first reaches out to schedule a Kickoff call at or near the contract start date.&#x20;
 
 For customers starting their journey with Snyk, Jumpstart includes initial Platform Configuration and each purchased product module. If the Jumpstart project is for an existing Snyk customer, the Platform Configuration content is adjusted to reflect this, with the Snyk Consultant providing a ‘healthcheck’ review of the existing configuration, before working through the onboarding of new features or products.
 
-## Additional terms
+### Additional terms
 
 The fees for this project will be a fixed price. Services will be invoiced in full at the time of purchase and are non-refundable.
 
-Upon purchase, the Snyk Implementation team will coordinate a Kick-off call. The Jumpstart is a 60-day engagement that commences upon Snyk’s initial outreach to the Customer, regardless of Customer participation. Services automatically conclude upon the earlier of: (a) completion of the established outcomes, (b) the end of the 60-day engagement period, or (c) 120 days after the Contract Start Date.&#x20;
+Upon purchase, the Snyk Implementation team will coordinate a Kick-off call. While the Jumpstart engagement is optimized for a 60-day completion cycle, Snyk provides a fixed 120-day service window commencing on the Contract Start Date to fulfill services. This extended duration offers necessary flexibility to accommodate internal scheduling requirements or complex environment configurations.
 
 The timely delivery of Jumpstart Services depends on the Customer providing necessary access to environments, repositories, and the required stakeholders. If the project is delayed due to the Customer’s internal processes, the engagement period will continue to run. Any extensions to the delivery period require a written Contract Change Order and may incur additional fees, unless such extension is necessitated by delays caused by Snyk.
 
-Unless otherwise agreed to by the parties in writing, a) services must be scheduled as agreed during the Kick-off call; b) product modules will be delivered consecutively; and c) all services will occur during regular business hours.
+Unless otherwise agreed to by the parties in writing, a) services must be scheduled as agreed during the Kick-off call; b) product modules will be delivered consecutively; and c) all services will occur during normal business hours. All services will be performed remotely. Any on-site time requires Snyk’s prior consent and will be subject to additional fees and expenses to be agreed in advance.
 
-&#x20;All services will be performed remotely. Any on-site time requires Snyk’s prior consent and will be subject to additional fees and expenses to be agreed in advance.
-
-## Key assumptions
+### Key assumptions
 
 The following assumptions are reflected in the services outlined in this Jumpstart Services description:
 
 1. All services will be performed remotely using video conferencing software such as Zoom.
 2. The Customer must provide prompt feedback on all deliverables.
-3. The Customer will appoint one subject matter expert who will serve as the primary point of contact for the Jumpstart Services. This subject matter expert must be available to work remotely with the Snyk Consultant throughout the entire engagement.
+3. The Customer will appoint one subject-matter expert who will serve as the primary point of contact for Jumpstart Services. This subject matter expert must be available to work remotely with the Snyk Consultant throughout the entire engagement.
 4. The Customer will provide Snyk with documentation and access to subject matter experts for non-Snyk systems and software as required within the scope of the engagement.
-5. The Customer will have identified key personnel before the engagement.
-6. Services will be scheduled and delivered during Snyk’s regular business hours: 8 am to 5 pm local time zone, Monday through Friday (Sunday through Thursday where applicable based on the region of the assigned Snyk Consultant).
+5. The Customer will have identified key personnel prior to the engagement.
+6. Services will be scheduled and delivered during Snyk’s normal business hours: 8 am to 5 pm local time zone, Monday through Friday (Sunday through Thursday where applicable based on the region of the assigned Snyk Consultant).
 7. The Customer will provide prompt access to all systems and resources that Snyk requires to complete the work.
-8. Snyk does not provide support for third-party software solutions, such as version control systems, repository management, trouble ticketing systems, packaging, and other software not part of the Snyk stack.
+8. Snyk does not provide support for third-party software used as part of the Snyk solutions, such as version control systems, repository management, trouble ticketing systems, packaging, and other software not part of the Snyk stack.
 9. If a Broker is required, the Customer will have all system requirements before services start.
 10. All services and communications will be conducted in English.
 
