@@ -309,6 +309,7 @@
 
 ## Developer tools
 
+* [Overview](developer-tools/overview.md)
 * [SCMs](developer-tools/scm-integrations/README.md)
   * [Deployment recommendations](developer-tools/scm-integrations/deployment-recommendations.md)
   * [Workspaces](developer-tools/scm-integrations/workspaces.md)
@@ -1116,6 +1117,7 @@
 
 ## Snyk data and governance
 
+* [Overview](snyk-data-and-governance/overview.md)
 * [Working with Snyk](snyk-data-and-governance/working-with-snyk.md)
 * [How Snyk handles your data](snyk-data-and-governance/how-snyk-handles-your-data.md)
 * [How Snyk incorporates generative AI into the platform](snyk-data-and-governance/how-snyk-incorporates-generative-ai-into-the-platform.md)
