@@ -18,11 +18,12 @@ Snyk Studio supports integrating the following Snyk security tools into an AI sy
 * `snyk_iac_scan` (IaC scan)
 * `snyk_container_scan` (Container scan)
 * `snyk_sbom_scan` (SBOM file scan)
-* `snyk_aibom` (Create AI-BOM)
-* `snyk_trust` (Trust a given folder before running a scan)
+* `snyk_aibom` (create AI-BOM)
+* `snyk_trust` (trust a given folder before running a scan)
 * `snyk_auth` (authentication)
 * `snyk_logout` (logout)
 * `snyk_version` (version information)
+* `snyk_send_feedback` (summarizing issues fixed)
 
 {% hint style="info" %}
 Running `snyk_sca_scan` can execute third-party ecosystem tools (for example, Gradle or Maven) on your machine to fetch the project's dependency tree.
