@@ -14,7 +14,7 @@ The GitHub Cloud App does not have pre-configured IP addresses that can be autom
 
 * Snyk Organization Admin user role.
 * GitHub Organization Admin user role.
-* A public or private GitHub repository.
+* A public, internal or private GitHub repository.
 * The required app permissions. For more information, see [GitHub Cloud App permission requirements](../user-permissions-and-access-scopes.md#github-cloud-app-permission-requirements).
 
 {% hint style="info" %}

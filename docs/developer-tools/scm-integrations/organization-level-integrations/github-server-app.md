@@ -13,7 +13,7 @@ This feature supports self-hosted instances of GitHub and Snyk [Universal Broker
 * A self-hosted instance of GitHub
 * Snyk Organization Admin user role
 * GitHub organization Admin user role
-* A public or private GitHub repository
+* A public, internal or private GitHub repository
 
 ### GitHub Server App benefits <a href="#github-server-app-benefits" id="github-server-app-benefits"></a>
 
