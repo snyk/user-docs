@@ -85,7 +85,7 @@ The dedicated hours are a guideline intended to set expectations, rather than a 
 
 The Platinum Success Offering includes on average up to eight (8) dedicated TSM hours per week.
 
-**Solutions Architecture:** Snyk will provide in-depth technical consulting as needed, up to 40 hours per quarter, for customer use cases requiring deep integration of Snyk functionality and data into existing enterprise systems and workflows above and beyond the core product workflows, typically through the use of Snyk APIs, CLI automation, and other means in a reliable and scalable way for enterprise customer environments.
+**Solutions Architecture:** Snyk will provide in-depth technical consulting as needed for customer use cases requiring deep integration of Snyk functionality and data into existing enterprise systems and workflows above and beyond the core product workflows, typically through the use of Snyk APIs, CLI automation, and other means in a reliable and scalable way for enterprise customer environments. Solutions Architecture engagements will be scoped and scheduled by Snyk based on the complexity of the workflow and subject to Snyk's resource availability and operational requirements.
 
 **Guided Onboarding:** Snyk will guide the Customer through onboarding, ensuring the customer is enabled with the following:
 
