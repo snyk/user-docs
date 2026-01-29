@@ -32,16 +32,26 @@ All reports are filterable by a number of attributes, enabling users to create t
 If you do not select or enter any values for a particular key, the filter is not applied.
 
 **Exclude Filters**\
-In addition to selecting values to include, you can exclude specific values using the `Not equal to` option available across many report filters. This allows you to:
+In addition to selecting values to include, you can exclude specific values using the `is not` option available across many report filters. This allows you to:
 
 * **Remove unwanted results** (for example, exclude certain Organizations, project types, or asset names).
 * **Spot gaps more easily** (for example, find projects not in a collection, or assets missing specific tags).
 
+To use an exclude filter, first select the filter, then select the drop-down menu next to the filter name, and select `is Not` . Select the items you'd like to exclude.&#x20;
+
+<figure><img src="../../.gitbook/assets/2025-11-19_11-52.png" alt="Once you&#x27;ve selected the filter name, select the is/is not drop down menu next to the filter name in the pop-up"><figcaption></figcaption></figure>
+
+The resulting filter shows "{filterName} is not: {excluded items}"&#x20;
+
+<figure><img src="../../.gitbook/assets/2025-11-19_11-47_1.png" alt="Image shows a completed Project Target filter, without a pop-up. The text reads &#x22;Project Target is not:&#x22; followed by the excluded items"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+A specific filter type can only be used once - it is not possible to have both an include ("is")  and an exclude ("is not" filter for the same item.&#x20;
+{% endhint %}
+
 ### Snyk reporting filter logic
 
-Within a given filter, all values selected are separated by an OR operator. For example, if you select the values `Critical` and `High` for the `Issue Severity` filter, Snyk displays issues that have a severity of either `Critical` or `High`.
-
-
+In a given filter, all values selected are separated by an OR operator. For example, if you select the values `Critical` and `High` for the `Issue Severity` filter, Snyk displays issues that have a severity of either `Critical` or `High`.
 
 <figure><img src="../../.gitbook/assets/issue-severity-reporting-beta.png" alt="Issue severity selected"><figcaption><p>Issue severity selected</p></figcaption></figure>
 
@@ -77,7 +87,7 @@ All columns displayed in the UI are included in the CSV output. In addition, any
 
 There is no row limit, but there is a 5GB file size limit.
 
-The **Download CSV** button is disabled if there are no vulnerabilities in the report, either because the Organization has no vulnerable projects or the filters applied remove all vulnerabilities. In this case, the report can still be exported to PDF if proof of zero vulns is required.&#x20;
+The **Download CSV** button is disabled if there are no vulnerabilities in the report, either because the Organization has no vulnerable projects or the filters applied remove all vulnerabilities. In this case, the report can still be exported to PDF if proof of zero vulns is required.
 
 ## Column sorting
 
@@ -160,7 +170,7 @@ Finally, you can add an **Exploit Maturity** filter to show only issues with a s
 
 <figure><img src="../../.gitbook/assets/reports_issue_detail_filtered_reports.png" alt=""><figcaption><p>Filtered Issues Detail report</p></figcaption></figure>
 
-You can then save this filtered view by clicking **Save**, adding a name to your view, and then clicking **Create view**.&#x20;
+You can then save this filtered view by clicking **Save**, adding a name to your view, and then clicking **Create view**.
 
 <figure><img src="../../.gitbook/assets/reports_saved_views_save_filtered_view.png" alt=""><figcaption><p>Create view window</p></figcaption></figure>
 
