@@ -13,7 +13,7 @@ The Bitbucket Cloud API token integration lets you:
 ### How to set up the Bitbucket Cloud Integration
 
 {% hint style="info" %}
-Admin permissions are required; however, Snyk's access is ultimately limited by the [permissions assigned to the API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/).\
+Admin permissions are required; however, Snyk's access is ultimately limited by the [permissions assigned to the API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/).
 
 **Note:** **Scopeless tokens are not supported.** You must select specific permissions (scopes) when creating your token in Bitbucket.
 
