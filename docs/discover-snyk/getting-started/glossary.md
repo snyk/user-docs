@@ -10,11 +10,47 @@ An Agentic Development Environment (ADE), also known as an Agentic IDE, is a eng
 
 See [Snyk Advisor](https://snyk.io/advisor/).
 
-### **Asset (Snyk Essentials)**
+### Agent
+
+A software entity that uses an artificial intelligence model to reason, make decisions, and take autonomous actions to achieve a goal. It uses LLMs and various tools, memory, and external systems, not just generated text, to accomplish a specific task on the user’s behalf.
+
+### Agent frameworks
+
+Software libraries and platforms that provide the tools to build, manage, and coordinate the behavior of autonomous AI agents.
+
+### AI evaluation
+
+The process of measuring an AI system’s performance, quality, and safety against defined goals and benchmarks, using tests, metrics, and human judgement.
+
+### Agentic
+
+The ability of an AI system to plan, reason, and act independently toward a goal without explicit human instruction. Following multiple instructions, it can determine next steps by itself, without direction.
+
+### AI observability
+
+The ability to monitor and trace the internal behavior, performance, and decision-making processes of AI systems in real time. It’s critical for traceability especially in the context of complex, distributed, or agentic systems.
+
+### AI orchestration
+
+The management and coordination of multiple AI models, agents, and tools to complete complex tasks as a unified system, using frameworks.
+
+### AI runtime
+
+The execution environment where AI models actually run in production, and, based on a trained model or agent and input executes inference or actions and returns results. For example laptops or endpoints, a container, or the cloud.
+
+### AI training
+
+The process of teaching an AI model how to perform tasks. It involves feeding the model large datasets so it can learn patterns, facts, and how to respond to different situations.
+
+### AI-SPM
+
+AI Security Posture Management (AISPM) is a category of security tooling focused on discovering, monitoring, and governing artificial intelligence systems, including their models, data sources, and infrastructure.
+
+### Asset (Snyk Essentials)
 
 A Snyk Essentials asset is an identifiable entity that is part of an application, and relevant for security and developers. Snyk is generally focused on the development stages of application software, secures repository assets containing software package assets, and builds artifacts like container image assets.
 
-### Application (Snyk **Essentials**)
+### Application (Snyk Essentials)
 
 An application is software that serves a business purpose and consists of assets that form the app. Organizations often define the scope of an application differently.
 
@@ -46,19 +82,19 @@ Information related to the organization's objectives, priorities, and regulatory
 
 Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](../../developer-tools/snyk-ci-cd-integrations/) for details of Snyk CI/CD integrations.
 
-### **Class (Snyk Essentials)**
+### Class (Snyk Essentials)
 
 A way to assign business context to assets and categorize an asset based on the business criticality. Assets can be assigned Classes A, B, C, or D, where Class A (assets that are business critical, deal with sensitive data, are subject to compliance, and so on) is the most important, and Class D (test apps, sandbox environments, and so on) the least important. Assets are assigned Class C by default. A class can be used in policies as well as defined in a policy.
 
 ### CLI
 
-Command Line Interface. See [Snyk CLI](glossary.md#snyk-cli).
+Command Line Interface. A text-based tool that interacts with an operating system or application by typing specific commands into a terminal to perform tasks and automate workflows. See [Snyk CLI](glossary.md#snyk-cli).
 
 ### Cloud Native Application Security
 
 Implementing security throughout the CI/CD pipeline, automating security embedding in microservices, and maximizing repetition to reduce the introduction of vulnerabilities. Snyk provides a comprehensive [CNAS platform](https://snyk.io/product/cloud-native-application-security/). See [Cloud-native security guide for building secure applications](https://snyk.io/learn/cloud-native-security-for-cloud-native-applications/).
 
-### Code assets (Snyk **Essentials**)
+### Code assets (Snyk Essentials)
 
 A hierarchical list of all assets retrieved from the scanned repositories.
 
@@ -82,7 +118,11 @@ One or more files that, when instantiated by a container engine or runtime, prov
 
 A server that provides a mechanism to store and retrieve container images.
 
-### **Controls (Snyk Essentials)**
+### Context window
+
+The maximum amount of information that an artificial intelligence model can consider and remember at a single point in time during a conversation or task.
+
+### Controls (Snyk Essentials)
 
 The security controls associated with the asset. Navigate to the Snyk Essentials Controls section to see all available statuses for security controls.
 
@@ -145,6 +185,10 @@ A text file format used to build container images using Docker. The Dockerfile c
 
 ## E
 
+### Embedded agent
+
+An AI assistant built directly into an existing software application or workflow to provide assistance in context.
+
 ### Environment
 
 Can refer to a cloud environment, a [Project attribute](../../snyk-platform-administration/snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
@@ -199,6 +243,10 @@ The stored instance of a container that holds a set of software needed to run an
 
 Container images typically consist of several different file system layers, which are combined together at runtime into a single file system.
 
+### Inference
+
+The real-time process of using a trained AI model to generate an output from new input data without changing the model's parameters.
+
 ### Integrations
 
 Third-party products, applications, and platforms that Snyk works with, for example, SCM systems such as GitHub. See [Integrate with Snyk](../../integrations/integrate-with-snyk.md).
@@ -229,17 +277,33 @@ A specific type of package.
 
 A set of criteria for evaluating open-source license issues. License policies enable you to set the severity level and define legal instructions for each license. See [License policies](../../manage-risk/policies/license-policies/).
 
+### LLM
+
+Large Language Model. A type of AI model trained on vast amounts of data to understand, generate, and reason over human language and code. It understands logic, reasoning, and grammar, but it’s based on static knowledge.
+
+### LLM red teaming
+
+The practice of stress-testing AI models to discover security, safety, and reliability flaws through simulated adversarial attacks. As opposed to DAST (focused on code security issues), it looks for behavior-based security issues in running AI systems.
+
 ## M
 
 ### Manifest
 
 A file containing metadata about other files in a package.
 
+### MCP
+
+Model Context Protocol. An open standard that allows developers to create secure, bidirectional connections between AI-powered tools and their data sources. Visit [Agentic security with Snyk studio](../../integrations/snyk-studio-agentic-integrations/).
+
 ### Monitor
 
 The `snyk monitor` command tests a Project and uploads the results to Snyk. See the CLI help for [Monitor](../../developer-tools/snyk-cli/commands/monitor.md).
 
 ## N
+
+### NLP
+
+Natural Language Processing.The technology that enables computers to understand, interpret, and generate human language. It is used with chatbots, threat detection, and intelligence gathering.
 
 ### NPX
 
@@ -304,6 +368,10 @@ Snyk scores issues, including vulnerabilities and licenses for Open Source, to h
 ### Project
 
 An external item scanned by Snyk with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See also [Target](glossary.md#target). For details, see [Snyk Projects](../../snyk-platform-administration/snyk-projects/).
+
+### Prompt
+
+The input or set of instructions provided to an AI model that defines what task to perform, what context to use, and how it should respond.
 
 ## R
 
@@ -484,6 +552,10 @@ A way to categorize assets. Helps you recognize or handle assets differently acc
 
 The top level of the Snyk hierarchy. It encompasses all your Groups and Organizations and all their corresponding Snyk work items. For more information, see [Tenants, Groups, and Organizations](../../snyk-platform-administration/groups-and-organizations/).
 
+Token
+
+<br>
+
 ## U
 
 ### Upgradable / Patchable
@@ -491,6 +563,10 @@ The top level of the Snyk hierarchy. It encompasses all your Groups and Organiza
 A fix type: a problem can be fixed by upgrading a version of a package or by applying a patch.
 
 ## V
+
+### Vector DB
+
+Vector database. A database that stores information as numerical representations, and it enables users to retrieve the most semantically relevant information instead of keyword matches.
 
 ### Vulnerability
 
