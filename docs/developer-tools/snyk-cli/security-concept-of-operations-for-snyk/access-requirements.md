@@ -21,6 +21,9 @@ The required filesystem access may vary by product.
 
 * api.\<SNYK\_INSTANCE>.io:443
 * app.\<SNYK\_INSTANCE>.io:443
+* 127.0.0.1:\<EPHEMERAL\_PORT\_RANGE>
+  * required for Inter Process Communication
+  * [Ephemeral Port Range](https://www.rfc-editor.org/rfc/rfc6335.html#section-6) might vary by Operating System and Settings
 
 ### Optional
 
