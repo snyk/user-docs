@@ -11,11 +11,6 @@ Available integrations:
 * SCM import
 * CLI and IDE: test or monitor your app
 
-Available functions:
-
-* Test your app's SBOM using `pkg:golang`
-* Test your app's packages using `pkg:golang`
-
 ## Technical specifications
 
 ### Supported frameworks and libraries
@@ -34,7 +29,7 @@ Available functions:
 
 ### Supported package managers
 
-For Go, Snyk supports Go Modules and dep as package managers.
+For Go, Snyk supports [Go Modules](https://go.dev/ref/mod) and [dep](https://github.com/golang/dep) as package managers.
 
 ## Go for Snyk Code
 
@@ -50,11 +45,12 @@ Available features:
 
 ### Features
 
-Available features:
+Available features for Go Projects with dependencies managed by Go Modules and dep:
 
 * PR checks
 * License scanning
 * Reports
+* Test your app's SBOM and packages using `pkg:golang` PURLs, using the [SBOM test](../../developer-tools/snyk-cli/commands/sbom-test.md) command.
 
 {% hint style="info" %}
 If the **Snyk Fix PR** feature is enabled, this means that you will be notified if the PR checks fail when the following conditions are met:
@@ -80,19 +76,15 @@ Since Snyk no longer supports scanning of govendor Projects, a warning is issued
 Some features may not be available, depending on your plan. For more information, see [Plans and pricing.](https://snyk.io/plans/)
 {% endhint %}
 
-Snyk supports testing and monitoring of Go Projects with dependencies managed by [Go Modules](https://golang.org/ref/mod) and [dep](https://github.com/golang/dep).
-
-<table><thead><tr><th width="167">Package managers / Features</th><th width="126">CLI support</th><th width="147">SCM support</th><th width="160">License scanning</th><th>Fix PRs</th></tr></thead><tbody><tr><td><a href="https://golang.org/ref/mod">Go Modules</a></td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td></td></tr><tr><td><a href="https://github.com/golang/dep">dep</a></td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td></td></tr></tbody></table>
-
 #### **Go Modules and the CLI**
 
 Snyk scans Go Modules Projects in the CLI at the package level rather than the module level, as Snyk has full access to your local source code.
 
-Packages from the [Go standard library](https://pkg.go.dev/std) are not supported or included in the dependency tree.
+Packages from the [Go standard library](https://pkg.go.dev/std) are supported and included in the dependency tree.
 
-Packages under `golang.org/x/` that are [part of the Go Project](https://pkg.go.dev/golang.org/x) but outside the main Go tree are supported.
+Packages under `golang.org/x/` that are [part of the Go Project](https://pkg.go.dev/golang.org/x) but outside the main Go tree are also supported.
 
-To build the dependency tree, Snyk uses the `go list -json -deps ./...` command, and the dependencies found in `Imports` .
+To build the dependency tree for all third party packages, Snyk uses the `go list -json -deps ./...` command, and the dependencies found in `Imports` . Additionally, Snyk uses the `toolchain` directive in the `go.mod` file, and the `go version` command to determine the Golang version to apply to standard libraries.
 
 `TestImports` and `XTestImports` are not supported.
 
@@ -106,13 +98,13 @@ To build the dependency tree, Snyk analyzes your `Gopkg.lock` files.
 
 When you test dep Projects using the CLI, Snyk requires installation of dependencies. Run `dep ensure` to achieve this.
 
-#### **Dep and Git**
+#### **Dep and SCM integrations**
 
-To build the dependency tree, Snyk analyzes the `Gopkg.lock` files in your Git repository.
+To build the dependency tree, Snyk analyzes the `Gopkg.lock` files in your SCM repository.
 
-#### **Go Modules and Git**
+#### **Go Modules and SCM integrations**
 
-By default, dependencies for Go Modules Projects imported using Git are resolved at the **module** level rather than the **package** level, as with Projects tested in the CLI. Thus, when importing using Git, you may see more dependencies and issues reported, including potential false positives, than with the CLI.
+By default, dependencies for Go Modules Projects imported using an SCM integration are resolved at the module level rather than the package level, as with Projects tested in the CLI. Thus, when importing using Git, you may see more dependencies and issues reported, including potential false positives, than with the CLI.
 
 To obtain the best possible resolution, enable [full source code analysis](go.md#enable-full-source-code-analysis).
 
@@ -143,7 +135,7 @@ If you have private modules in repositories from other Git organizations, your P
 
 If your private modules have other private modules from another Git organization, your Project imports will not work. All private modules, including the ones within other modules, need to be part of the same Git organization as the main project repository.
 
-Private module support in different SCMs varies depending on whether [full source code analysis](go.md#enable-full-source-code-analysis) is enabled or disabled.
+Private module support in different SCMs varies depending on whether full source code analysis is enabled or disabled.
 
 | Full source code analysis enabled                                                                                                      | Full source code analysis disabled                                         |
 | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
