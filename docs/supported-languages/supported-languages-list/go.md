@@ -46,7 +46,7 @@ Available features:
 
 ## Go for Snyk Open Source
 
-### Features
+### Available features
 
 Available features for Go Projects with dependencies managed by Go Modules and dep:
 

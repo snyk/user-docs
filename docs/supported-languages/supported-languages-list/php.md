@@ -52,7 +52,7 @@ For PHP with Snyk Open Source, the following file formats are supported: `compos
 
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:composer` PURLs, using [SBOM test](../../developer-tools/snyk-cli/commands/sbom-test.md) command.
+* Test your app's SBOM and packages using `pkg:composer` PURLs through the [SBOM test](../../developer-tools/snyk-cli/commands/sbom-test.md) CLI command.
 
 {% hint style="info" %}
 The **Snyk Fix PR** feature is not available for PHP. This means that you will not be notified if the PR checks fail when the following conditions are met:

@@ -77,7 +77,7 @@ Available features:
 
 * Fix PRs
 * License scanning
-* Test your app's SBOM and packages using `pkg:gem` PURLs, using the [SBOM test](../../developer-tools/snyk-cli/commands/sbom-test.md) command.
+* Test your app's SBOM and packages using `pkg:gem` PURLs through the [SBOM test](../../developer-tools/snyk-cli/commands/sbom-test.md) CLI command.
 
 ### Bundler support
 
