@@ -10,7 +10,7 @@ Snyk plugins are not supported on any operating system that has reached End Of L
 When you enable `debug`, your code may be logged in the IDE log files, for example, the `idea.log` file.
 {% endhint %}
 
-To enable Snyk Language Server debug logs in the JetBrains IDEs, change the log level to debug using the IDE by navigating to Debug Log Settings (Custom Debug Log Configuration).&#x20;
+To enable Snyk Language Server debug logs in the JetBrains IDEs, change the log level to debug using the IDE by navigating to Debug Log Settings (Custom Debug Log Configuration).
 
 Press the Shift key twice quickly and select the **Actions** tab. Then search for **Debug**. Alternatively, select the Debug Log Settings in the menu (not available in JetBrains Rider).
 
@@ -22,7 +22,7 @@ Entering `Snyk Language Server` on its own line will enable debug logging of the
 
 <figure><img src="../../../.gitbook/assets/image (181).png" alt="Snyk Language Server configuration"><figcaption><p>Snyk Language Server configuration set to Debug Mode in the Custom Debug Log Configuration</p></figcaption></figure>
 
-To view the debug logs, navigate to **Help** > **Show Log** in the Finder (Mac) or **Show Log** in the Explorer (Windows). Then open the files idea.log, **idea.1.log**, and so on, in the folder.
+To view the debug logs, navigate to **Help** > **Show Log** in the Finder (Mac) or **Show Log** in the Explorer (Windows). Then open the files idea.log, idea.1.log, and so on, in the folder.
 
 <figure><img src="../../../.gitbook/assets/image (178).png" alt="Show log in Finder" width="323"><figcaption><p>Opens the Intellij logs folder</p></figcaption></figure>
 
@@ -36,8 +36,8 @@ Sometimes the checkboxes for Snyk Code in the JetBrains plugin are disabled. Som
 
 * Network or proxy settings: If the network or proxy settings are not configured correctly, the checkboxes may be disabled. Check to see if there is an MITM proxy with certificate substitution. Also, verify whether connections to the endpoint API and deeproxy can be established using other tools, for example, the CLI or cURL.
 * Incorrect endpoint addres&#x73;**:** If the endpoint address in the Snyk Code plugin configuration is incorrect, the checkboxes will be disabled. To fix this, refer to the instructions and check that the endpoint address is correct. Restart the plugin afterwards.
-* **Snyk Code is disabled server-side:** If Snyk Code is disabled in the Snyk Organisation's settings, the checkboxes will be disabled. To fix this, follow the instructions shown in the IntelliJ settings. Restart your IDE.
-* **Have a look at the JetBrains logs:** For additional information, see [Locating IDE log files](https://intellij-support.jetbrains.com/hc/en-us/articles/207241085-Locating-IDE-log-files).
+* Snyk Code is disabled server-side: If Snyk Code is disabled in the Snyk Organisation's settings, the checkboxes will be disabled. To fix this, follow the instructions shown in the IntelliJ settings. Restart your IDE.
+* Have a look at the JetBrains logs: For additional information, see [Locating IDE log files](https://intellij-support.jetbrains.com/hc/en-us/articles/207241085-Locating-IDE-log-files).
 
 ## Undefined Python version
 
@@ -47,7 +47,7 @@ If you are using multiple Python versions, use the `--command` option to specify
 
 ## JCEF problem and error when showing Issue Details
 
-A `java.lang.NullPointerException` was encountered within **Jetbrains 2025.1** when the Snyk Security plugin was installed. Also, **Android Studio** does not enable JCEF out of the box.
+A `java.lang.NullPointerException` was encountered within Jetbrains 2025.1 when the Snyk Security plugin was installed. Also, Android Studio does not enable JCEF out of the box.
 
 ### Initial analysis of the provided log (Jetbrains 2025.1 platform)
 
@@ -79,7 +79,7 @@ The `NullPointerException: Cannot read field "objId" because "robj" is null` enc
 
 The most effective and recommended path to resolution is as follows:
 
-As of **Android Studio Koala (2024.1.1), JCEF (Java Chromium Embedded Framework) is included** but **not enabled by default**. To utilize JCEF features, you need to manually enable it by following these steps:
+As of Android Studio Koala (2024.1.1), JCEF (Java Chromium Embedded Framework) is included but not enabled by default. To utilize JCEF features, you need to manually enable it by following these steps:
 
 #### Step 1: Disable the JCEF Sandbox
 

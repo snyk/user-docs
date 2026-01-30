@@ -2,7 +2,7 @@
 
 To analyze open-source dependencies and IAC template files, the plugin uses the Snyk CLI. The CLI needs the following environment variables:
 
-* `PATH`: The path to needed binaries, for example, to Maven. You can also adjust the `PATH` variable manually using the **`Path`** field in the settings dialog.
+* `PATH`: The path to needed binaries, for example, to Maven. You can also adjust the `PATH` variable manually using the `Path` field in the settings dialog.
 * `JAVA_HOME`: The path to the JDK you want to use to analyze Java dependencies.
 * `http_proxy` and `https_proxy`: Proxy set using the value in the format `http://username:password@proxyhost:proxyport`.\
   Note that the leading `http://` in the value does not change to `https://` for an `https_proxy`. If you populate the proxy settings in Eclipse, the Snyk plugin will set the environment variables automatically for Language Server and CLI.

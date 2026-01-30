@@ -2,9 +2,7 @@
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
 
-### GitLab setup guide
-
-#### Pulled entities <a href="#gitlab-pulled-entities" id="gitlab-pulled-entities"></a>
+## Pulled entities <a href="#gitlab-pulled-entities" id="gitlab-pulled-entities"></a>
 
 * Users
 * Repositories
@@ -13,7 +11,7 @@ The Integrations page shows all active integrations, including data from your ex
 
 To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](../../../snyk-platform-administration/user-roles/pre-defined-roles.md#group-level-permissions).
 
-#### Integrate using Snyk Essentials <a href="#gitlab-integrate-using-snyk-apprisk" id="gitlab-integrate-using-snyk-apprisk"></a>
+## Integrate using Snyk Essentials <a href="#gitlab-integrate-using-snyk-apprisk" id="gitlab-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.
 2. Access Token (`mandatory`):
@@ -25,7 +23,7 @@ To configure a Group-level integration, you must be a Group Admin or have a cust
 4. Pull personal repositories (`optional`): Enable the option If you only want to pull the repositories you own.
 5. Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](../application-context-for-scm-integrations/) page.
 
-#### Generate a [Personal access token](../organization-level-integrations/gitlab.md#gitlab-access-tokens) from your GitLab settings
+## Generate a [Personal access token](../organization-level-integrations/gitlab.md#gitlab-access-tokens) from your GitLab settings
 
 1. Navigate to your GitLab profile.
 2. Select Edit Profile.
@@ -38,6 +36,6 @@ To configure a Group-level integration, you must be a Group Admin or have a cust
 7. Click the Create personal access token button.
 8. Copy and store the displayed key.
 
-#### API version <a href="#gitlab-api-version" id="gitlab-api-version"></a>
+## API version <a href="#gitlab-api-version" id="gitlab-api-version"></a>
 
 You can use the[ GitLab REST API v4](https://docs.gitlab.com/ee/api/index.html) repository to access information about the API.

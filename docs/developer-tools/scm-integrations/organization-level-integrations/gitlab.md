@@ -42,7 +42,7 @@ Group Access Tokens can only be created by a GitLab Owner using a GitLab Premium
 #### Add a GitLab Personal Access Token in GitLab
 
 1. Generate a GitLab Personal Access Token in a GitLab instance.\
-   Select the profile icon, then **Edit Profile > Access Tokens**.\
+   Select the profile icon, then **Edit Profile** > **Access Tokens**.\
    Set the token name, for example, Snyk, and select the **api** scope. The **api** scope grants complete read/write access to the API, including all groups and projects, the container registry, and the package registry.
 2. Navigate to the Snyk [**Integrations**](https://app.snyk.io/integrations) page, select the GitLab integration tile, and enter the URL of the GitLab instance and the token you generated.
 3. Click **Save**.
@@ -106,7 +106,7 @@ The Projects will be set to inactive, and you will no longer get alerts, pull re
 
 1. Navigate to the Snyk GitLab integration **Settings**.
 2. At the bottom of the page, select **Remove GitLab**.
-3.  A confirmation screen opens. To proceed, select **Disconnect GitLab**.\\
+3.  A confirmation screen opens. To proceed, select **Disconnect GitLab**.
 
     <figure><img src="../../../.gitbook/assets/2023-08-15_16-36-28.png" alt="Confirm diconnecting from GitLab" width="375"><figcaption><p>Confirm disconnecting from GitLab</p></figcaption></figure>
 

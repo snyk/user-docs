@@ -1,7 +1,7 @@
 # Troubleshooting for the Eclipse plugin
 
 {% hint style="warning" %}
-Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
+Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.
 {% endhint %}
 
 ## General troubleshooting
@@ -34,16 +34,16 @@ Notice that **\[Info]** lines contain **INF**, **WRN**, and **DBG** log rows if 
 
 Ensure that you read the Snyk [Eclipse documentation](./).
 
-### &#x20;Details to address
+### Details to address
 
 * Determine whether the issue occurs on the CLI terminal, outside of the IDE.
 * Preferably, use the latest Snyk CLI version.
 * Use the debug option to obtain the user's `snyk test` and `snyk monitor` output.
 * Set the proxy variable in the command line: s`et http_proxy=<http….>`
 
-### &#x20;Proxy setting confirmation
+### Proxy setting confirmation
 
-In Eclipse, navigate to **Windows > Preferences > General > Network Connections**.
+In Eclipse, navigate to **Windows** > **Preferences** > **General** > **Network Connections**.
 
 Ensure the configured proxy settings are identical to the ones that have been set in the CLI terminal.
 
@@ -65,7 +65,7 @@ If you are facing issues installing Eclipse plugins, it might be due to the inco
     Ensure you replace `{path to JDK 17 or higher version}` with the actual path where the JDK 17 or higher version is installed on your system.
 5. Save and close the `eclipse.ini` file.
 6. Launch the Eclipse IDE by the usual method.
-7. After Eclipse is launched, navigate to **Window > Preferences > Java > Installed JREs**.
+7. After Eclipse is launched, navigate to **Window** > **Preferences** > **Java** > **Installed JREs**.
 8. Click on **Add** and select the **path to JDK 17 or higher version** installed on your system.
 9. Click **OK** and close the Preferences dialogue box.
 
@@ -87,7 +87,7 @@ To change the JDK version used by Eclipse for a specificProject, follow these st
 
 1. Open the Project in Eclipse.
 2. Right-click on the Project and select **Properties**.
-3. In the Properties dialogue box, navigate to J**ava Build Path > Libraries**.
+3. In the Properties dialogue box, navigate to J**ava Build Path** > **Libraries**.
 4. Locate the **JRE System Library** and click on it to expand the options.
 5. Click on **Edit** and select the desired JDK version from the list of installed JREs.
 6. Click **Finish** to save the changes.
@@ -109,5 +109,3 @@ To resolve this issue, you can try the following solutions:
 If you want to verify the correct provenance of your plugin, verify the signing details from the Eclipse dialog using this data.
 
 <figure><img src="../../../.gitbook/assets/image (23).png" alt="The signing key details to verify the integrity and origin of the download plugin"><figcaption><p>The signing key details to verify the integrity and origin of the downloaded plugin</p></figcaption></figure>
-
-\

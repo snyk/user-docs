@@ -17,7 +17,7 @@ Ensure your files are saved before manually running an analysis.
 
 To manually trigger `snyk test` , as illustrated in the following screen image:
 
-1. Click the **Snyk icon** in the sidebar to open the Snyk panel.
+1. Click the Snyk icon in the sidebar to open the Snyk panel.
 2. Click the **Run (play)** button at the top of the plugin sidebar.
 3. If the play button is grayed out, there is a scan in progress. Wait for it to complete before starting another scan.
 
@@ -48,11 +48,11 @@ Snyk severity icons have the following meaning:
 
 Snyk reports the following types of issues:
 
-* **Open Source** issues: found in open source dependencies. For details, see the section [Snyk Open Source issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-open-source-issues).
-* **Code Security** issues: found in your application’s source code. For details, see the section [Snyk Code security vulnerabilities and quality issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-code-security-vulnerabilities-and-quality-issues).
-* **Code Quality** issues: found in your application source code. For details, see the section [Snyk Code security vulnerabilities and quality issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-code-security-vulnerabilities-and-quality-issues).
-* **Infrastructure as Code** issues: found in infrastructure as code files. For details, see the section [Snyk Infrastructure as Code issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-infrastructure-as-code-issues).
-* **Container** issues: found in images sourced from Kubernetes workload files. For details, see the section [Snyk Container issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-container-issues).
+* Open Source issues: found in open source dependencies. For details, see the section [Snyk Open Source issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-open-source-issues).
+* Code Security issues: found in your application’s source code. For details, see the section [Snyk Code security vulnerabilities and quality issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-code-security-vulnerabilities-and-quality-issues).
+* Code Quality issues: found in your application source code. For details, see the section [Snyk Code security vulnerabilities and quality issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-code-security-vulnerabilities-and-quality-issues).
+* Infrastructure as Code issues: found in infrastructure as code files. For details, see the section [Snyk Infrastructure as Code issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-infrastructure-as-code-issues).
+* Container issues: found in images sourced from Kubernetes workload files. For details, see the section [Snyk Container issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-container-issues).
 
 {% hint style="info" %}
 The exact capabilities and available scanners depend on your plan. Be sure your Organization's admin has enabled all Snyk products prior to configuring any of them in the IDE plugin.

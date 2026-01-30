@@ -1,24 +1,20 @@
 # GitHub for Snyk Essentials
 
-### GitHub setup guide for Snyk Essentials
-
 {% hint style="info" %}
 If you used GitHub Apps for your SCM integrations at the Snyk Organization level, Snyk Essentials requires an overview of your GitHub Organization. This means that the GitHub integration in Snyk Essentials uses an API token as an authentication method to onboard your GitHub Organization.
 {% endhint %}
 
-#### Pulled entities by Snyk Essentials from GitHub <a href="#github-pulled-entities" id="github-pulled-entities"></a>
+## Pulled entities <a href="#github-pulled-entities" id="github-pulled-entities"></a>
 
 * Repositories
 * Builds - only when using GitHub Actions.
 * Scans - only when using Code security.
 
-#### Prerequisites
-
 Ensure you meet all prerequisites listed on the [GitHub and GitHub Enterprise permission requirements](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements) page.
 
 To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](../../../snyk-platform-administration/user-roles/pre-defined-roles.md#group-level-permissions).
 
-#### Integrate GitHub using Snyk Essentials <a href="#github-integrate-using-snyk-apprisk" id="github-integrate-using-snyk-apprisk"></a>
+## Integrate GitHub using Snyk Essentials: <a href="#github-integrate-using-snyk-apprisk" id="github-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.
 2. Organizations (`mandatory`): Input the names of all the relevant GitHub organizations.
@@ -45,7 +41,7 @@ If you enabled the **Pull personal repositories** option, only your personal rep
 If you want to pull data from both organization and personal repositories, then you must set up separate profiles.
 {% endhint %}
 
-#### Generate a Personal access token from your GitHub settings
+## Generate a Personal access token from your GitHub settings
 
 1. Open GitHub and click the Settings menu for your profile.
 2. Select Developer settings from the left sidebar.
@@ -64,7 +60,7 @@ If you want to pull data from both organization and personal repositories, then 
 Fine-grained personal access token is not supported.
 {% endhint %}
 
-#### API Version <a href="#github-api-version" id="github-api-version"></a>
+## API version
 
 You can use the[ GitHub REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28) repository to access information about the API.
 

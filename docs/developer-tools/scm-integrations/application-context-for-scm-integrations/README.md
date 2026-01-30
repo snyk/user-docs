@@ -12,16 +12,16 @@ The application context provides broader access to resources and services in an 
 * Gather relevant information to effectively assess and manage application security vulnerabilities and identify potential risks.
 * Create a streamlined data flow by working cohesively with assets identified through Snyk Essentials SCM integrations
 
-By leveraging Application context, you can achieve a deeper understanding of your application's security posture. After the integration is set, use the application context that can be leveraged across Snyk to classify repositories, set Asset policies, or filter reports.&#x20;
+By leveraging Application context, you can achieve a deeper understanding of your application's security posture. After the integration is set, use the application context that can be leveraged across Snyk to classify repositories, set Asset policies, or filter reports.
 
 These are the available integrations that you can set up for the application context:
 
-* [Backstage file](./#backstage-file-for-scm-integrations)&#x20;
+* [Backstage file](./#backstage-file-for-scm-integrations)
 * [ServiceNow CMDB](./#servicenow-cmdb-for-scm-integrations)
 * [Atlassian Compass](./#atlassian-compass)
 * [Harness](./#harness)
 * [OpsLevel](./#opslevel)
-* [Datadog Service Catalog](./#datadog-service-catalog) &#x20;
+* [Datadog Service Catalog](./#datadog-service-catalog)
 
 {% hint style="info" %}
 The Application Context integrations on this page work in conjunction with assets found through Snyk Essentials SCM integrations. If there is no Snyk Essentials SCM integration configured at the Group level on the Integrations page, then data will not populate from these integrations.
@@ -32,43 +32,43 @@ The Application Context integrations on this page work in conjunction with asset
 {% hint style="info" %}
 **Release status**
 
-The Backstage file integration is in Early Access and available with Snyk Enterprise plans.
+The ackstage file integration is in Early Access and available with Snyk Enterprise plans.
 {% endhint %}
 
-Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with Backstage catalog files into Snyk Essentials.
+Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with backstage catalog files into Snyk Essentials.
 
-You can use the Backstage catalog file for GitHub, GitLab, Azure DevOps, BitBucket Cloud, and BitBucket on-prem SCM integrations.
+You can use the backstage catalog file for GitHub, GitLab, Azure DevOps, BitBucket Cloud, and BitBucket on-prem SCM integrations.
 
-### Required Parameters for Backstage file
+### Required parameters for the backstage file
 
-* A configured SCM integration.&#x20;
+* A configured SCM integration.
 * The `catalog-info.yaml` file from your Project.
 
-### Integration setup for Backstage file
+### Integration setup for the backstage file
 
 1. Open the **Integrations** page.&#x20;
 2. Select an SCM integration.&#x20;
 3. Click the **Settings** option of the SCM integration.&#x20;
 4. Enable the **Add Backstage Catalog** option.
-5. Optional - if the Backstage catalog filename in your repository is not `catalog-info.yaml` you can change the default value in the Backstage catalog filename field.
+5. Optional - if the backstage catalog filename in your repository is not `catalog-info.yaml` you can change the default value in the backstage catalog filename field.
 6. Select at least one attribute you want to add to Snyk Essentials.
 
 {% hint style="info" %}
 Snyk Essentials parses the fields of the detected file using the default field names unless an alternate field name is specified.
 {% endhint %}
 
-7. Click the **Done** button.
+7. Click **Done**.
 
-After you finish configuring the Backstage catalog, Snyk Essentials starts enriching your repository assets with the data found in the backstage catalog .yaml file.
+After you finish configuring the backstage catalog, Snyk Essentials starts enriching your repository assets with the data found in the backstage catalog .yaml file.
 
 {% hint style="warning" %}
 When you set up the catalog attributes, you must use the specific service-level attributes, for example `attribute.name.`
 {% endhint %}
 
-The following video presents an overview of the Backstage file from the Snyk Web UI.
+The following video presents an overview of the backstage file from the Snyk Web UI.
 
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1738609432/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-9a_-_v1_-_Application_Context_with_Backstage.mp4" %}
-Application Context with Backstage Catalog for Snyk Essentials
+Application context with backstage Catalog for Snyk Essentials
 {% endembed %}
 
 ## ServiceNow CMDB for SCM integrations
@@ -79,24 +79,24 @@ Application Context with Backstage Catalog for Snyk Essentials
 The ServiceNow CMDB integration is in Early Access and available with Snyk Enterprise plans.
 {% endhint %}
 
-### Required Parameters for ServiceNow CMDB <a href="#servicenow-cmdb-required-parameters" id="servicenow-cmdb-required-parameters"></a>
+### Required parameters for ServiceNow CMDB <a href="#servicenow-cmdb-required-parameters" id="servicenow-cmdb-required-parameters"></a>
 
 1. Add the **profile name** for your ServiceNow CMDB instance.
 2. Setup the **CMDB instance** for the ServiceNow CMDB by following this example `https://<INSTANCE_NAME>.service-now.com`.
 3. **Username** and **Password** - Credentials for your ServiceNow CMDB instance.
-4. Add the t**able name** for the CMDB configuration item class. Navigate to the [ServiceNow CMDB tables details](https://docs.servicenow.com/bundle/washingtondc-servicenow-platform/page/product/configuration-management/reference/cmdb-tables-details.html) page for the full list of names.&#x20;
+4. Add the **table name** for the CMDB configuration item class. Navigate to the [ServiceNow CMDB tables details](https://docs.servicenow.com/bundle/washingtondc-servicenow-platform/page/product/configuration-management/reference/cmdb-tables-details.html) page for the full list of names.&#x20;
 5. Add the **CMDB field to map Repo URL** - Add the URL of the repository.
 
 {% hint style="info" %}
 * The data gathered by Snyk from ServiceNow CMDB will be correlated with the Repository Assets.
-* The ServiceNow CMDB integration uses basic authentication and suggests enabling the "Web service access only" option for Service Accounts.&#x20;
+* The ServiceNow CMDB integration uses basic authentication and suggests enabling the "Web service access only" option for Service Accounts.
 {% endhint %}
 
 ### Integration setup for ServiceNow CMDB <a href="#servicenow-cmdb-integration-hub-setup" id="servicenow-cmdb-integration-hub-setup"></a>
 
 * Open the **Integrations** page.&#x20;
 * Select the **App Context** tag and search for ServiceNow CMDB.&#x20;
-* Click the **Add** button.
+* Click **Add** .
 * Add the **Profile name** - this is the name of your ServiceNow CMDB profile.
 * Add the **CMDB Instance** - this is your ServiceNow instance, use this format: `https://<INSTANCE_NAME>.service-now.com`
 * Add the **Username** and the **Password**- the username and password to access the ServiceNow CMDB instance
@@ -105,7 +105,7 @@ The ServiceNow CMDB integration is in Early Access and available with Snyk Enter
 * You can select one or more attributes related to repository assets and configure where Snyk Essentials can take this attribute in ServiceNow CMDB. Example:&#x20;
   * Category: application\_type
   * Owner: business\_unit
-* Click the **Done** button.
+* Click **Done**.
 * When the connection is established, the status of the ServiceNow CMDB integration is changed to **Connected**.
 
 {% hint style="warning" %}
@@ -115,11 +115,11 @@ When you set up the catalog attributes, you can customize the name of the attrib
 The following videos present an overview of the ServiceNow CMDB from the Snyk Web UI.
 
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1738609416/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-8a_-_v1_-_ServiceNow-CMDB_-_Part_1.mp4" %}
-Application Context with ServiceNow CMDB for Snyk Essentials - Part 1
+Application context with ServiceNow CMDB for Snyk Essentials - Part 1
 {% endembed %}
 
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1738609417/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-8b_-_v2_-_ServiceNow-CMDB_-_Part_2.mp4" %}
-Application Context with ServiceNow CMDB for Snyk Essentials - Part 2
+Application context with ServiceNow CMDB for Snyk Essentials - Part 2
 {% endembed %}
 
 ## Atlassian Compass
@@ -135,7 +135,7 @@ The Atlassian Compass integration is in Early Access and available with Snyk Ent
 1. Add your Atlassian Compass **Profile name**.
 2. Add your Atlassian Compass **Instance URL**. You can use this format type: `https://<YOUR ORGANIZATION>.atlassian.net`.
 3. Add your Atlassian Compass **Username**.
-4. Add your Atlassian Compass instance **Token**. Navigate to the [Manage API tokens for your Atlassian account](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) page for more details about creating an Atlassian API token. &#x20;
+4. Add your Atlassian Compass instance **Token**. Navigate to the [Manage API tokens for your Atlassian account](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) page for more details about creating an Atlassian API token.
 
 {% hint style="info" %}
 The gathered data from Atlassian Compass will be correlated with the Repository Assets.
@@ -147,7 +147,7 @@ This feature is available only for the integration with Atlassian Compass.
 
 1. Open the **Integrations** page.&#x20;
 2. Select the **App Context** tag and search for Atlassian Compass.&#x20;
-3. Click the **Add** button.
+3. Click **Add**.
 4. Add the **Profile name** - this is the name of your Atlassian Compass profile.
 5. Add the **Instance URL** - this is the URL of the Atlassian Compass instance. Use this format type: `https://<YOUR ORGANIZATION>.atlassian.net`
 6. Add the **Username** - this is the username to access the Atlassian Compass instance.
@@ -158,7 +158,7 @@ This feature is available only for the integration with Atlassian Compass.
    * **Lifecycle** - Identified when '`fields.definition.name`' equals lifecycle.
    * **Owner** - the `ownerId` (finding owner name from ownerId).
    * **Application** - the `typeId` (all component types, Application, Service, Library, and so on receive an ID).
-9. Click the **Done** button.
+9. Click **Done**.
 10. When the connection is established, the status of the Atlassian Compass integration is changed to **Connected**, and Snyk Essentials will start enriching repository assets with the data found in Atlassian Compass.
 
 {% hint style="warning" %}
@@ -180,14 +180,14 @@ The Harness integration is in Early Access and available with Snyk Enterprise pl
 3. Add the **API key** for your Harness instance. You can use the Harness [Add and manage your API keys](https://developer.harness.io/docs/platform/automation/api/add-and-manage-api-keys/) documentation page to manage your API key.
 
 {% hint style="info" %}
-This integration is focused on [Harness’s](https://developer.harness.io/docs/internal-developer-portal/catalog/software-catalog/) service catalog module and it is backed by the Backstage catalog.
+This integration is focused on [Harness’s](https://developer.harness.io/docs/internal-developer-portal/catalog/software-catalog/) service catalog module and it is backed by the backstage catalog.
 {% endhint %}
 
 ### Integration setup for Harness
 
 1. Open the **Integrations** page.&#x20;
 2. Select the **App Context** tag and search for Harness.&#x20;
-3. Click the **Add** button.
+3. Click **Add**.
 4. Add the **Profile name** - this is the name of your Harness instance.
 5. Add the **Host URL** of your Harness account.&#x20;
 6. Add the **API key** of your Harness instance.
@@ -198,7 +198,7 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
    * Lifecycle - If you select this metadata, it is mandatory to add the **Lifecycle key**.
    * Owner - If you select this metadata, it is mandatory to add the **Owner key**.
    * Application - If you select this metadata, it is mandatory to add the **Application key**.
-8. Click the **Done** button.
+8. Click **Done**.
 9. When the connection is established, the status of the Harness integration is changed to **Connected**, and Snyk Essentials will start enriching repository assets with the data found in Harness.
 
 {% hint style="warning" %}
@@ -223,7 +223,7 @@ The OpsLevel integration is in Early Access and available with Snyk Enterprise p
 
 1. Open the **Integrations** page.&#x20;
 2. Select the **App Context** tag and search for OpsLevel.&#x20;
-3. Click the **Add** button.
+3. Click **Add**.
 4. Add the **Profile name** - this is the name of your OpsLevel instance.
 5. Add the **Instance URL** of your OpsLevel account.&#x20;
 6. Add the **API Token** for your OpsLevel instance.
@@ -233,7 +233,7 @@ The OpsLevel integration is in Early Access and available with Snyk Enterprise p
    * Lifecycle - Identified with `lifecycle.name` in OpsLevel.
    * Owner - Identified with `owner.name` in OpsLevel.
    * Application - Identified with `product` in OpsLevel.
-8. Click the **Done** button.
+8. Click **Done**.
 9. When the connection is established, the status of the OpsLevel integration is changed to **Connected**, and Snyk Essentials will start enriching repository assets with the data found in OpsLevel.
 
 {% hint style="warning" %}
@@ -258,7 +258,7 @@ The Datadog Service Catalog integration is in Early Access and available with Sn
 
 1. Open the **Integrations** page.&#x20;
 2. Select the **App Context** tag and search for **Datadog Service Catalog**.&#x20;
-3. Click the **Add** button.
+3. Click **Add**.
 4. Add the **Profile name** - this is the name of your Datadog instance.
 5. Add the **API key** for your Datadog instance.
 6. Add the **Application key** for your Datadog instance.
@@ -270,11 +270,9 @@ The Datadog Service Catalog integration is in Early Access and available with Sn
    * Lifecycle - If you select this metadata, it is mandatory to add the **Lifecycle key**.
    * Owner - If you select this metadata, it is mandatory to add the **Owner key**.
    * Application - If you select this metadata, it is mandatory to add the **Application key**.
-9. Click the **Done** button.
+9. Click **Done**.
 10. When the connection is established, the status of the Datadog Service Catalog integration is changed to **Connected**, and Snyk Essentials will start enriching repository assets collected by a Snyk Essentials SCM Integration with the data found in Datadog Service Catalog.
 
 {% hint style="warning" %}
 When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration setup.
 {% endhint %}
-
-\

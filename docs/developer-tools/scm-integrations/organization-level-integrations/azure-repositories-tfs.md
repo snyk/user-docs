@@ -47,10 +47,10 @@ Generate and copy a unique PAT to use for Snyk. For more information on the PAT 
 1. Log in to [your Snyk account](https://app.snyk.io) and navigate to **Integrations**.
 2. On the **Azure Repos** tile, click the settings icon to open **Organization Settings** > **Integrations** > **Azure Repos** > **Account credentials**.
 3. Pay special attention to the instructions given on the **Account Credentials** page. Depending on your plan, you may need to enter just the Azure DevOps Organization, or you may need to enter the entire URL.
-   * **Set your organization**: Enter the slug for your Organization only. \
+   * **Set your organization**: Enter the slug for your Organization only.\
      For example, enter `your-azure-devops-org`
-   * **Set your host**: enter the entire url. \
-     For example, enter `https://dev.azure.com/your-azure-devops-org` \
+   * **Set your host**: enter the entire url.\
+     For example, enter `https://dev.azure.com/your-azure-devops-org`\
      Alternatively, you may enter a custom url that is publicly reachable
 4. Click **Save**, and then enter the PAT that you generated.
 5. Click **Save**.\
@@ -80,7 +80,7 @@ To add a default Project:
 
 Use this procedure to add an Azure Repository dependency from a non-default path.
 
-1. In Snyk, navigate to **Projects** > **Add projects > Azure repos > Settings**.
+1. In Snyk, navigate to **Projects** > **Add projects** > **Azure repos** > **Settings**.
 2. Open the **Add custom file location (optional)** list and **select a repository...** to configure a custom path.
 3. In the text field, enter the `relative path for the manifest file location`.
 
@@ -99,5 +99,3 @@ After repositories are imported, a confirmation appears in green at the top of t
 {% hint style="info" %}
 The Azure Repository integration works like the other [Snyk SCM integrations](./). To continue to monitor, fix, and manage your Projects, see the [Projects](../../../snyk-platform-administration/snyk-projects/) documentation.
 {% endhint %}
-
-#### Integrate using Snyk Essentials <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>

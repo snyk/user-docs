@@ -27,10 +27,10 @@ The GitHub Cloud App integration is available at the Organization level within t
 
 The GitHub Cloud App improves on many features as compared to the current GitHub integration, including role-based, granular access control, increased API rate limits, and creation of an entry point for expanded and enhanced developer experiences.
 
-* **RBAC (Role-Based Access Control) Compliance**: With the GitHub Cloud App, the access control mechanism is decoupled from individual user accounts. Instead, it is associated with the app entity itself. This separation allows for better management and enforcement of RBAC policies, as access control is handled at the application level rather than being tied to individual user accounts.
-* **Granular access control**: The GitHub Cloud App allows for fine-grained control over access permissions at the repository level.
-* **Increased API rate limit**: The GitHub Cloud App provides higher rate limits, allowing Snyk to make a larger number of API requests. This increased limit will assist in handling large-scale use cases, such as monorepos with a large number of Projects, GitHub organizations with a large number of repositories, and more.
-* **Enabler for an enhanced developer experience:**
+* RBAC (Role-Based Access Control) Compliance: With the GitHub Cloud App, the access control mechanism is decoupled from individual user accounts. Instead, it is associated with the app entity itself. This separation allows for better management and enforcement of RBAC policies, as access control is handled at the application level rather than being tied to individual user accounts.
+* Granular access control: The GitHub Cloud App allows for fine-grained control over access permissions at the repository level.
+* Increased API rate limit: The GitHub Cloud App provides higher rate limits, allowing Snyk to make a larger number of API requests. This increased limit will assist in handling large-scale use cases, such as monorepos with a large number of Projects, GitHub organizations with a large number of repositories, and more.
+* Enabler for an enhanced developer experience:
   * Pull request checks: The Checks tab experience in GitHub is exclusively accessible through the GitHub Cloud App, enabling an SCM native experience as part of potential future PR check workflow improvements.
   * Fix and upgrade pull requests: Pull requests initiated by Snyk are performed directly by the GitHub App rather than a service account.
 
@@ -76,7 +76,3 @@ The GitHub Cloud App will lose access to Snyk if it is uninstalled from the GitH
 ## How to migrate to the GitHub Cloud App
 
 If you are an Enterprise plan customer, you can migrate Snyk Targets to the GitHub Cloud App using the [snyk-migrate-to-github-app](https://github.com/snyk-labs/snyk-migrate-to-github-app) tool in the [tool repository](https://github.com/snyk-labs/snyk-migrate-to-github-app).
-
-## Feedback on the GitHub Cloud App
-
-If you would like to provide any feedback, contact your Account Manager or [Snyk support](https://support.snyk.io).

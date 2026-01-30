@@ -8,7 +8,7 @@ Enable the Snyk Essentials flag in your Snyk Broker deployment environment befor
 
 You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445489dd96cc68c8386ede38/defaultFilters/apprisk) all the updated `.json` files that include the allowed list of accessible endpoints for the integrations.
 
-## Integrated SCM tokens for Classic Broker
+## Integrated SCM tokens for classic Broker
 
 An integrated SCM token is required for [Broker client setup](../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
 
@@ -21,25 +21,25 @@ An integrated SCM token can be generated for the following SCM integrations:
 
 ### GitHub and GitHub Enterprise SCM token
 
-**Format**: `GITHUB_TOKEN=` - a GitHub personal access token.\
-**Scopes:** `repo, read:org` and `admin:repo_hook.`
+* Format: `GITHUB_TOKEN=` - a GitHub personal access token.&#x20;
+* Scopes: `repo, read:org` and `admin:repo_hook.`
 
 ### GitLab SCM token
 
-**Format**: `GITLAB_TOKEN=` - a GitLab personal access token.\
-**Scopes**: `api`.
+* Format: `GITLAB_TOKEN=` - a GitLab personal access token.
+* Scopes: `api`.
 
 GitLab account with `Maintainer` permission.
 
 ### Azure Repositories (TFS) SCM token
 
-**Format**: `AZURE_REPOS_TOKEN=` - an Azure Repos personal access token.\
-**Scopes**: `Custom defined`, `Code:` `Read & write`_._
+* Format: `AZURE_REPOS_TOKEN=` - an Azure Repos personal access token.&#x20;
+* Scopes: `Custom defined`,  `Code:`  `Read & write`_._
 
 ### Bitbucket Server/Data Center SCM token
 
-**Format**: `BITBUCKET_USERNAME=`, `BITBUCKET_PASSWORD=` – the Bitbucket Server username and password or a Bitbucket Server personal access token.\
-**Scope**: `Repository admin`**.**
+* Format: `BITBUCKET_USERNAME=`, `BITBUCKET_PASSWORD=` – the Bitbucket Server username and password or a Bitbucket Server personal access token.
+* Scope: `Repository admin`.
 
 ## GitHub Server App for Universal Broker
 

@@ -18,7 +18,7 @@ Before authenticating, ensure your region is properly set. For more details, see
 
 Follow the next steps to authenticate:
 
-1. After the extension is installed, click the **Snyk icon** in the navigation bar, then click **Trust project and scan**.
+1. After the extension is installed, click the Snyk icon in the navigation bar, then click **Trust project and scan**.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-06-03 at 11.17.13 AM.png" alt=""><figcaption><p>Snyk icon and connect and trust</p></figcaption></figure>
 

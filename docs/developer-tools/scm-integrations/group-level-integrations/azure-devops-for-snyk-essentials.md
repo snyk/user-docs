@@ -2,17 +2,15 @@
 
 The Integrations page shows all active integrations, including data from your existing Snyk Organizations that is automatically synced and provides access to the Integration Hub.
 
-### Azure DevOps setup guide
-
-#### Pulled entities <a href="#azure-devops-pulled-entities" id="azure-devops-pulled-entities"></a>
-
-* Repository - the pulled entity retrieved by Snyk Essentials.
+## Pulled entities <a href="#azure-devops-pulled-entities" id="azure-devops-pulled-entities"></a>
 
 #### Prerequisites <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
 
 To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](../../../snyk-platform-administration/user-roles/pre-defined-roles.md#group-level-permissions).
 
-#### Integrate using Snyk Essentials <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
+Repository - the pulled entity retrieved by Snyk Essentials.
+
+## Integrate using Snyk Essentials <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.
 2. Organizations (`mandatory`): Input the names of all the relevant Azure DevOps organizations.
@@ -28,7 +26,7 @@ To configure a Group-level integration, you must be a Group Admin or have a cust
 The following PAT token permissions requirements are for Snyk Essentials integrations. For SCM integration, see the [Azure Respositories (TFS) permissions requirements](../user-permissions-and-access-scopes.md#azure-repositories-tfs-permission-requirements) on the Snyk SCM integrations pages.
 {% endhint %}
 
-#### Generate a Personal access token from your Azure DevOps settings
+## Generate a Personal access token from your Azure DevOps settings
 
 {% hint style="warning" %}
 The user account that owns the PAT needs `Basic` access level on the Azure organisation.
@@ -46,6 +44,6 @@ The user account that owns the PAT needs `Basic` access level on the Azure organ
 4. Set the expiration to 12 months.
 5. Copy the generated personal access token and share it through a secured vault.
 
-#### API version <a href="#azure-devops-api-version" id="azure-devops-api-version"></a>
+## API version <a href="#azure-devops-api-version" id="azure-devops-api-version"></a>
 
 You can use the[ Azure DevOps REST API v6](https://learn.microsoft.com/en-us/rest/api/azure/devops/core/?view=azure-devops-rest-6.0) repository to access information about the API.

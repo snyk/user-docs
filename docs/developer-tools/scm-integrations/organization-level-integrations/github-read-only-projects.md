@@ -18,7 +18,7 @@ Unlike Projects imported through the Snyk GitHub integration, Projects that are 
 
 ### How to monitor a public GitHub repository
 
-Import a read-only Project using the **Add project** **> Monitor public GitHub repos** menu in the **Dashboard** and **Projects** tabs, or by going to [Monitor public GitHub repositories](https://app.snyk.io/add/github-readonly).
+Import a read-only Project using the **Add project** > **Monitor public GitHub repos** menu in the **Dashboard** and **Projects** tabs, or by going to [Monitor public GitHub repositories](https://app.snyk.io/add/github-readonly).
 
 1. Enter a public repository to monitor, following the format `owner/repository.`
 2. When you have entered a valid repository name, click **+ Add repo**.\
