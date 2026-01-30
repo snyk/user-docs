@@ -33,7 +33,10 @@ For Go, Snyk supports [Go Modules](https://go.dev/ref/mod) and [dep](https://git
 
 ## Go for Snyk Code
 
-For Go with Snyk Code, Snyk supports Go Standard Library comprehensive as a library, and .`go` as a file format.
+For Go with Snyk Code, Snyk support:
+
+* Go Standard Library comprehensive as a library&#x20;
+* .`go` as a file format
 
 Available features:
 
@@ -50,7 +53,7 @@ Available features for Go Projects with dependencies managed by Go Modules and d
 * PR checks
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:golang` PURLs, using the [SBOM test](../../developer-tools/snyk-cli/commands/sbom-test.md) command.
+* Test your app's SBOM and packages using `pkg:golang` PURLs through the [SBOM test](../../developer-tools/snyk-cli/commands/sbom-test.md) command.
 
 {% hint style="info" %}
 If the **Snyk Fix PR** feature is enabled, this means that you will be notified if the PR checks fail when the following conditions are met:
@@ -61,7 +64,7 @@ If the **Snyk Fix PR** feature is enabled, this means that you will be notified 
 
 Snyk supports all versions of Go, including the latest stable version listed on the Go [All releases](https://go.dev/dl/) page.
 
-Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag. In the case of Projects that have a package manager, this means a release to the package manager. In the case of Go and Unmanaged scans (C/C++) this requires an official release or tag on the GitHub repo.
+Snyk tracks only official releases. Snyk does not identify commits, including those in the default branch, unless they are included in an official release or tag. For Projects with a package manager, Snyk requires a release to the package manager. For Go and unamanaged scans (C/C++), Snyk requires an official release or tag in the GitHub repository.
 
 {% hint style="warning" %}
 Since January 1, 2023, Snyk has not supported govendor Projects. As a general security best practice, Snyk recommends using tools that are consistently maintained and up-to-date.
@@ -84,9 +87,15 @@ Packages from the [Go standard library](https://pkg.go.dev/std) are supported an
 
 Packages under `golang.org/x/` that are [part of the Go Project](https://pkg.go.dev/golang.org/x) but outside the main Go tree are also supported.
 
-To build the dependency tree for all third party packages, Snyk uses the `go list -json -deps ./...` command, and the dependencies found in `Imports` . Additionally, Snyk uses the `toolchain` directive in the `go.mod` file, and the `go version` command to determine the Golang version to apply to standard libraries.
+To build the dependency tree for all third party packages, Snyk uses
 
+* The `go list -json -deps ./...` command and the dependencies found in `Imports` .
+* The `toolchain` directive in the `go.mod` file
+* The `go version` command to determine the Golang version to apply to standard libraries.
+
+{% hint style="info" %}
 `TestImports` and `XTestImports` are not supported.
+{% endhint %}
 
 When you test Go Modules Projects using the CLI, Snyk does not require that their dependencies are installed, but you must have a `go.mod` file at the root of your Project. `go list` uses this and your Project source code to build a complete dependency tree.
 
@@ -104,7 +113,9 @@ To build the dependency tree, Snyk analyzes the `Gopkg.lock` files in your SCM r
 
 #### **Go Modules and SCM integrations**
 
-By default, dependencies for Go Modules Projects imported using an SCM integration are resolved at the module level rather than the package level, as with Projects tested in the CLI. Thus, when importing using Git, you may see more dependencies and issues reported, including potential false positives, than with the CLI.
+Snyk resolves dependencies for Go Modules Projects imported using an SCM integration at the module level. In contrast, the CLI resolves dependencies at the package level.
+
+Because of this difference, SCM integrations report more dependencies and issues than the CLI, including false positives.
 
 To obtain the best possible resolution, enable [full source code analysis](go.md#enable-full-source-code-analysis).
 
@@ -112,9 +123,9 @@ When full source code analysis is enabled, Snyk uses the `go list -json -deps ./
 
 #### Enable full source code analysis
 
-To build the most accurate dependency tree for Go Modules Projects imported from Git, Snyk needs to access all the files in your repository.
+To build the most accurate dependency tree for Go Modules Projects imported from SCM integrations, Snyk needs to access all the files in your repository.
 
-This enables Snyk to see the `import` statements in your `.go` source files, and determine which specific packages are used in your application. Without this access, Snyk will include all packages from the modules listed in your `go.mod` file.
+This enables Snyk to see the `import` statements in your `.go` source files, and determine which specific packages are used in your application. Without this access, Snyk includes all packages from the modules listed in your `go.mod` file.
 
 To enable full source code analysis, adjust your settings as follows:
 
@@ -129,11 +140,11 @@ For more details on levels of access to your repository required by different Sn
 
 #### **Private modules**
 
-Go modules Projects that rely on modules from private Git repositories are supported if those repositories are in the same Git organization as the main project repository.
+Go modules Projects that rely on modules from private SCM repositories are supported if those repositories are in the same SCM organization as the main project repository.
 
-If you have private modules in repositories from other Git organizations, your Project imports may not work properly. The same is true if your code uses Git Submodules from another organization.
+If you have private modules in repositories from other SCM organizations, it is possible that your Project imports do not work properly. The same is true if your code uses SCM submodules from another organization.
 
-If your private modules have other private modules from another Git organization, your Project imports will not work. All private modules, including the ones within other modules, need to be part of the same Git organization as the main project repository.
+If your private modules have other private modules from another SCM organization, your Project imports do not work. All private modules, including the ones within other modules, need to be part of the same SCM organization as the main project repository.
 
 Private module support in different SCMs varies depending on whether full source code analysis is enabled or disabled.
 
@@ -151,4 +162,4 @@ Go Modules Projects imported using new [Snyk Broker](../../implementation-and-se
 
 To add support to clients created before December 30, 2020, add `go.mod` and `go.sum` to your `accept.json` file, as per the changes in this [pull request](https://github.com/snyk/broker/pull/299/files).
 
-If you're using private Go Modules integrated through the Broker, each private module must have a `go.mod` file defined.
+If you are using private Go Modules integrated through the Broker, each private module must have a `go.mod` file defined.
