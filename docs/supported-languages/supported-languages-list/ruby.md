@@ -1,9 +1,5 @@
 # Ruby
 
-{% hint style="info" %}
-Snyk does not support Fix PRs for Projects using Ruby versions 3.1.x and lower. To avoid disruption, Snyk recommends upgrading to a supported Ruby version.
-{% endhint %}
-
 ## Applicability and integration
 
 {% hint style="info" %}
@@ -14,11 +10,6 @@ Available integrations:
 
 * SCM import
 * CLI and IDE: test or monitor your app
-
-Available functions:
-
-* Test your app's SBOM using `pkg:gem`
-* Test your app's packages using `pkg:gem`
 
 ## Technical specifications
 
@@ -34,9 +25,10 @@ Snyk supports the following Ruby versions:
 | `2.7.X`           | `2.7.0` to `2.7.8`    |
 | `3.0.X`           | `3.0.0` to `3.0.7`    |
 | `3.1.X`           | `3.1.0` to `3.1.7`    |
-| `3.2.X`           | `3.2.0` to `3.2.9`    |
+| `3.2.X`           | `3.2.0` to `3.2.10`   |
 | `3.3.X`           | `3.3.0` to `3.3.9`    |
 | `3.4.X`           | `3.4.0` to `3.4.5`    |
+| `4.0.X`           | `4.0.0` to `4.0.1`    |
 
 ### Supported frameworks and libraries
 
@@ -85,7 +77,7 @@ Available features:
 
 * Fix PRs
 * License scanning
-* Reports
+* Test your app's SBOM and packages using `pkg:gem` PURLs, using the [SBOM test](../../developer-tools/snyk-cli/commands/sbom-test.md) command.
 
 ### Bundler support
 
