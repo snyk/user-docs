@@ -5,14 +5,52 @@ coverY: 0
 
 # What's new?
 
-The most recent updates include significant changes to the user docs, such as features added or removed, structure changes that affect how you find relevant information, and other improvements aimed at enhancing your interaction with the Snyk knowledge base.
+The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
+
+## January 2026
+
+### Snyk Code
+
+* The [Snyk Code Security policies](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/#manage-ignores-at-the-group-level-through-snyk-code-security-policies) documentation has been updated to clarify that Snyk Code Security policies are different to Snyk Security Policies.
+* The [Enable Snyk Agent Fix](scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md#enable-snyk-agent-fix) section has been enhanced with more details and clear configuration steps.
+
+### Snyk CLI&#x20;
+
+* [SBOM test](developer-tools/snyk-cli/commands/sbom-test.md) command is now in Early Access.
+* The latest [Snyk CLI version](developer-tools/snyk-cli/install-or-update-the-snyk-cli/) available is v1.1302.1.
+* The [debugging mode of the Snyk CLI](developer-tools/snyk-cli/debugging-the-snyk-cli.md) has been enhanced with error catalog codes and exit codes.
+
+### Snyk IDE
+
+* You can now use the Issue View Options in [Eclipse](developer-tools/snyk-ide-plugins-and-extensions/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects.md#issue-view-options), [JetBrains](developer-tools/snyk-ide-plugins-and-extensions/jetbrains-plugin/configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#general-settings), and [Visual Studio Code ](developer-tools/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-configuration-environment-variables-and-proxy.md#scan-configuration)to filter issues by their Code Consistent Ignores status.
+* The Risk Score Threshold option has been added to the [Visual Studio Code ](developer-tools/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-configuration-environment-variables-and-proxy.md#scan-configuration)extension to allow you to filter Open Source issues by their risk score.
+
+### Snyk Studio
+
+* The [Agentic security with Snyk Studio](integrations/snyk-studio-agentic-integrations/) documentation has been restructured to accurately reflect the workflow you would go through when using Snyk Studio for the first time, and using the available [Quickstart guides](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/).
+* The [Snyk Studio Adoption](integrations/snyk-studio-agentic-integrations/usage-analytics.md) report is now available under [Redesigned analytics](manage-risk/analytics/redesigned-analytics.md#snyk-studio-adoption).
+* The [supported tools list](integrations/snyk-studio-agentic-integrations/#mcp-server-supported-tools) was updated to clarify that Snyk supports `snyk_send_feedback`.
+
+### Snyk supported languages
+
+* [PHP](supported-languages/supported-languages-list/php.md) has been updated to include support for PHP version 8.5.
+* [JavaScript](supported-languages/supported-languages-list/javascript/) was updated with support for Yarn 4.
+* [Ruby](supported-languages/supported-languages-list/ruby.md) was updated with support for Ruby 4.
+* [Python](supported-languages/supported-languages-list/python/) has been updated to remove the limitation note for Projects with downloaded dependencies.
+* [Go](supported-languages/supported-languages-list/go.md) has been updated to include support for Go standard library, for Go with Open Source.
+* Several supported language pages and their rules have been updated with Code analysis support in Early Access:  [Rust](supported-languages/supported-languages-list/rust.md), [Swift and Objective-C](supported-languages/supported-languages-list/swift-and-objective-c.md), [Dart and Flutter](supported-languages/supported-languages-list/dart-and-flutter.md), [Groovy](supported-languages/supported-languages-list/groovy.md), [Rust rules](scan-with-snyk/snyk-code/snyk-code-security-rules/rust-rules.md), [Objective-C rules](scan-with-snyk/snyk-code/snyk-code-security-rules/objective-c-rules.md), [Dart and Flutter rules](scan-with-snyk/snyk-code/snyk-code-security-rules/dart-and-flutter-rules.md), [Groovy rules](scan-with-snyk/snyk-code/snyk-code-security-rules/groovy-rules.md).
+
+### Other updates
+
+* [Container monitor](developer-tools/snyk-cli/commands/container-monitor.md) has been updated to include a new CLI option `--prune-repeated-subdependencies` to prune depgraphs for large container scans.&#x20;
+* The [redesigned Snyk Analytics experience](manage-risk/analytics/redesigned-analytics.md) is now in General Availability.
+* The [Bitbucket Cloud documentation](developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud.md) has been updated to make it clear that scopeless API tokens are not supported for this integration.
 
 ## December 2025
 
 ### **Snyk API**
 
 * The API docs navigation was enhanced with additional package-related reference pages (including `ContainerRegistryImagePolicy`).&#x20;
-* The [Error Catalog](scan-with-snyk/error-catalog.md) was synced with upstream updates on **2025-12-22**.
 
 ### **Snyk integrations**
 
