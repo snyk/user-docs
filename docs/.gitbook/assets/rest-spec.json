@@ -6387,6 +6387,7 @@
         "discriminator": {
           "mapping": {
             "ai_bom_file_bundle": "#/components/schemas/FileBundleStoreData",
+            "ai_bom_file_upload": "#/components/schemas/FileUploadApiData",
             "ai_bom_scm_bundle": "#/components/schemas/ScmBundleStoreData"
           },
           "propertyName": "type"
@@ -6397,6 +6398,9 @@
           },
           {
             "$ref": "#/components/schemas/ScmBundleStoreData"
+          },
+          {
+            "$ref": "#/components/schemas/FileUploadApiData"
           }
         ]
       },
@@ -6420,7 +6424,7 @@
         ],
         "type": "object"
       },
-      "CreateAndUploadAiBomAttributes": {
+      "CreateAndUploadAiBomFileBundleAttributes": {
         "properties": {
           "bundle_id": {
             "description": "The id of the bundle that has been uploaded by the user, sha256 hash",
@@ -6440,21 +6444,10 @@
         ],
         "type": "object"
       },
-      "CreateAndUploadAiBomRequestBody": {
-        "properties": {
-          "data": {
-            "$ref": "#/components/schemas/CreateAndUploadAiBomRequestData"
-          }
-        },
-        "required": [
-          "data"
-        ],
-        "type": "object"
-      },
-      "CreateAndUploadAiBomRequestData": {
+      "CreateAndUploadAiBomFileBundleData": {
         "properties": {
           "attributes": {
-            "$ref": "#/components/schemas/CreateAndUploadAiBomAttributes"
+            "$ref": "#/components/schemas/CreateAndUploadAiBomFileBundleAttributes"
           },
           "type": {
             "enum": [
@@ -6468,6 +6461,72 @@
           "attributes"
         ],
         "type": "object"
+      },
+      "CreateAndUploadAiBomFileUploadAttributes": {
+        "properties": {
+          "repo_name": {
+            "description": "The name of the repository",
+            "maxLength": 200,
+            "minLength": 1,
+            "type": "string"
+          },
+          "upload_revision_id": {
+            "description": "The id of the upload revision the has been created by the user",
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "required": [
+          "upload_revision_id",
+          "repo_name"
+        ],
+        "type": "object"
+      },
+      "CreateAndUploadAiBomFileUploadData": {
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/CreateAndUploadAiBomFileUploadAttributes"
+          },
+          "type": {
+            "enum": [
+              "ai_bom_file_upload"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "attributes"
+        ],
+        "type": "object"
+      },
+      "CreateAndUploadAiBomRequestBody": {
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/CreateAndUploadAiBomRequestData"
+          }
+        },
+        "required": [
+          "data"
+        ],
+        "type": "object"
+      },
+      "CreateAndUploadAiBomRequestData": {
+        "discriminator": {
+          "mapping": {
+            "ai_bom_file_bundle": "#/components/schemas/CreateAndUploadAiBomFileBundleData",
+            "ai_bom_file_upload": "#/components/schemas/CreateAndUploadAiBomFileUploadData"
+          },
+          "propertyName": "type"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/CreateAndUploadAiBomFileBundleData"
+          },
+          {
+            "$ref": "#/components/schemas/CreateAndUploadAiBomFileUploadData"
+          }
+        ]
       },
       "CreateAssignmentsPayload": {
         "properties": {
@@ -8783,6 +8842,37 @@
         "required": [
           "file_path",
           "from_line"
+        ],
+        "type": "object"
+      },
+      "FileUploadApiAttributes": {
+        "properties": {
+          "upload_revision_id": {
+            "description": "The id of the upload revision the has been created by the user",
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "required": [
+          "upload_revision_id"
+        ],
+        "type": "object"
+      },
+      "FileUploadApiData": {
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/FileUploadApiAttributes"
+          },
+          "type": {
+            "enum": [
+              "ai_bom_file_upload"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "attributes"
         ],
         "type": "object"
       },
