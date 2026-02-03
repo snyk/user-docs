@@ -805,7 +805,7 @@
       "GoModuleLevel": {
         "description": "When true, consolidate Go package-level dependencies into module-level components in the SBOM. Only applies to gomodules graphs; default is false.",
         "in": "query",
-        "name": "go-module-level",
+        "name": "go_module_level",
         "schema": {
           "default": false,
           "type": "boolean"
