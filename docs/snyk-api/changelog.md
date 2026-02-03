@@ -1,3 +1,11 @@
+## 2025-11-05 - Updated 2026-02-03
+
+### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Updated
+- deleted the `query` request parameter `go-module-level`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new optional `query` request parameter `go_module_level`
+
+
 ## 2025-11-05 - Updated 2026-01-09
 
 ### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Updated
