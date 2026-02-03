@@ -69,12 +69,18 @@ For Rust with Snyk Open Source, the following are supported:
 
 ### Available features
 
-* Test your SBOM containing `cargo` PURLs using the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom-test) CLI command or API.
+* Test your SBOM containing `cargo` PURLs through the [SBOM test](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom-test) CLI command or API.
 * Test your individual Rust packages using the [List issues for a package](../../snyk-api/using-specific-snyk-apis/issues-list-issues-for-a-package.md) API.
 
+{% hint style="info" %}
 SCM import and the standard CLI commands `snyk test`, `snyk monitor` are not available.
+{% endhint %}
 
 Open Source scanning of Rust manifests and dependencies is limited to testing using the CLI command `snyk sbom test`, or through the Snyk API, using either SBOM testing or individual package testing. API access is available only with Ignite or Enterprise plans.
+
+{% hint style="info" %}
+License scanning is not available for Cargo.
+{% endhint %}
 
 ### Scan Rust dependencies in bulk using the CLI
 
