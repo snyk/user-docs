@@ -7312,7 +7312,7 @@
         "type": "string"
       },
       "DeepcodeBundleSubject": {
-        "description": "**Deprecated**\n\nProvide a BundleResource and include the\nSAST Scan Configuration instead.\n\nTest subject representing source code uploaded to Snyk using DeepCode\nbundle APIs.",
+        "description": "**Deprecated**\n\nProvide a BundleResource and include the\nSAST Scan Configuration instead.\n\nTest subject representing source code uploaded to Snyk using DeepCode\nbundle APIs.\n\nDeepcode bundles are accepted through the API, but are not\nguaranteed to return Findings.",
         "properties": {
           "bundle_id": {
             "description": "Deepcode Bundle ID. These IDs are sha256 digests (32 bytes or 64 hex digits).",
@@ -11391,7 +11391,7 @@
         "type": "object"
       },
       "GitUrlCoordinatesSubject": {
-        "description": "**Deprecated**\n\nProvide an ScmResource and include the\nSAST Scan Configuration instead.\n\nTest subject representing a source tree located in a Git repository that\nhas a Snyk SCM integration.",
+        "description": "**Deprecated**\n\nProvide an ScmResource and include the\nSAST Scan Configuration instead.\n\nTest subject representing a source tree located in a Git repository that\nhas a Snyk SCM integration.\n\nGit URL coordinates are accepted through the API, but are not\nguaranteed to return Findings.",
         "properties": {
           "commit_id": {
             "description": "Commit ID of the Git commit from which content will be retrieved for the\ntest.",
@@ -48405,7 +48405,7 @@
     },
     "/orgs/{org_id}/tests": {
       "post": {
-        "description": "Create a new test.\n\nCurrently the Test API Shim supports 2 paths to starting Tests:\n- Subject-based (DEPRECATED Jan 2026)\n- Resource-based (Preferred)\n\nResource-based Tests are the foundation for the Test API moving forward.\nResources represent a \"thing\" to be Tested by Snyk, including both what\nthat thing is as well as where to find it. Resources should always be\nprovided with a ScanConfiguration in the TestConfiguration. The ScanConfiguration\ncontains scanner-specific parameter objects for the scanners offered by Snyk.\nThe presence of a specific scanner's config informs the Test API to attempt to use\nthat scanner to Test the Resource(s).\n\nThe design of the Resource \u0026 ScanConfig structure is that\nSnyk will handle determining which requested Scans can be performed on\nthe provided list of Resources.\n\nCurrently, the Test API supports running one Scanner on the provided\nResources, and each scanner only in combination with specific sets\nof Resources.\n\nResource-based Tests that are currently supported are:\n\n- Secrets Scan (Closed Beta): Secrets ScanConfig + (1) Upload Resource containing Source code.\n- SBOM SCA Scan (Early Access): SCA ScanConfig + (1) Upload Resource containing an SBOM.\n- SBOM SCA Scan + Reachability Analysis (Early Access): SCA ScanConfig + (2) Upload Resources,\none containing Source Code and another containing an SBOM.\n\nAs more Test flows are made available through the Test API, this listing\nwill be updated.\n\n---\n\nSubject-based Tests represent the initial version of the Test API\nand use a \"Subject\" to inform Snyk of both what should be Tested as well\nas how to Test it - e.g. a DepGraph Subject tells the Shim to Test the\nprovided DepGraph using the Open Source scanner.\n\nCurrently supported Subjects are:\n- Dep Graph (SCA Scan)\n- SBOM Bundle (SCA Scan)\n- SBOM + Reachability Bundle (SCA Scan)\n\nEach of these Subjects is available for use through the Test API and\nwill run and yield results for users with appropriate permissions.\n\nOther Subjects that are present in the API specification and are not\nofficially released are:\n- Git URL\n- Deepcode Bundle\n\nEither of these Subjects will be accepted through the API, but are not\nguaranteed to return enriched Test results.\n\n#### Required permissions\n\n- `View Organization (org.read)`\n\n- `Test packages (org.package.test)`",
+        "description": "Create a new test.\n\nProvide the items to be tested by Snyk as well as any configuration\nparameters for the test to be run.\n\nCurrently, scans using the Open Source (SCA) and Code Analysis (SAST)\nscanners can be run using the Test API.\n\nTests begun through the Test API yield lists of Findings when\nfinished. These Findings can be retrieved using the ListFindings endpoint.\n\nSuccessfully creating a new Test will yield a Job ID that can be used\nto poll for the Test's completion via the GetJob endpoint.\n\n#### Required permissions\n\n- `View Organization (org.read)`\n\n- `Test packages (org.package.test)`",
         "operationId": "createTest",
         "parameters": [
           {
@@ -48630,7 +48630,7 @@
     },
     "/orgs/{org_id}/tests/{test_id}": {
       "get": {
-        "description": "Get a test.\n\nA Test returned through this endpoint is intended to\nbe a completed Test with results. The data returned through\nthis endpoint does not contain the Findings for the Test, but\na description of the Test that was run and its status.\n\nTests that completed successfully are marked with an appropriate\noutcome according to the configured Thresholds.\n\nFacts about the Test (e.g. how many dependencies were present in\na Tested SBOM) are attached to this response as well as a summary\nof the Findings uncovered during the Test.\n\nAny Errors or Warnings that occurred during the Test will be present in the\nresponse from this endpoint.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "description": "Get a test.\n\nA Test returned through this endpoint is intended to\nbe a completed Test with results. The data returned through\nthis endpoint does not contain the Findings for the Test, but\na description of the Test that was run and its status.\n\nTests that completed successfully are marked with an appropriate\noutcome according to the configured Thresholds.\n\nFacts about the Test (e.g. how many dependencies were present in\na Tested SBOM) are attached to this response as well as a summary\nof the Findings uncovered during the Test.\n\nAny Errors or Warnings that occurred during the Test will be present in the\nresponse from this endpoint.\n\nThe response will also contain a link to the first page of the Test's\nFindings.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "getTest",
         "parameters": [
           {
