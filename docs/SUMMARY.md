@@ -606,6 +606,7 @@
       * [Troubleshooting and limitations for custom PR templates](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/troubleshooting-and-limitations-for-custom-pr-templates.md)
       * [Examples and template validation](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/examples-and-template-validation.md)
     * [Opening fix and upgrade pull requests from a fixed GitHub account](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
+    * [Breakability risk levels](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/breakability-risk-levels.md)
   * [Pull Request checks](scan-with-snyk/pull-requests/pull-request-checks/README.md)
     * [Configure Pull Request checks](scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
     * [Pull Request experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md)
