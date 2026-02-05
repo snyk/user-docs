@@ -13,7 +13,7 @@ Repository - the pulled entity retrieved by Snyk Essentials.
 ## Integrate using Snyk Essentials <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
 
 1. Profile name (`mandatory`): Input your integration profile name.
-2. Organizations (`mandatory`): Input the names of all the relevant Azure DevOps organizations.
+2. Organizations (`mandatory`): Input the name of the relevant Azure DevOps Organization (one Organization per Azure profile).
 3. Access Token (`mandatory`): Create your Azure DevOps PAT from your Azure DevOps settings.
    * Access Token (`mandatory`): Create and add your Access token by following the instructions from the [Generate a Personal access token from your Azure DevOps settings](azure-devops-for-snyk-essentials.md#generate-a-personal-access-token-from-your-azure-devops-settings) section.
    * API URL (`mandatory`): The API URL, for example, [`https://dev.azure.com/`](https://dev.azure.com/). You can use a custom URL that is publicly accessible.
