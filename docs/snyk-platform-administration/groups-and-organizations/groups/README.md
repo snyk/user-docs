@@ -1,13 +1,12 @@
 # Groups
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available only with Enterprise Plans. For more information, see [plans and pricing](https://snyk.io/plans/).
-{% endhint %}
-
 Snyk Groups make it easier for you to work in teams. Groups can contain many Organizations, and each Organization can contain many collaborators and Projects.
 
-As part of your onboarding, Snyk sets you up with a Group for your company. You can then add your current Organizations to this Group. If you think your company will need multiple Groups, submit a request to [Snyk Support](https://support.snyk.io). See [Structure your account for high application performance](../../structure-your-account-for-high-application-performance.md) for details concerning multiple Groups.
+As part of your onboarding, Snyk sets you up with a Group for your company. You can then add your current Organizations to this Group. Enterprise plan customers may have more than one Group. If you think your company will need multiple Groups, submit a request to [Snyk Support](https://support.snyk.io).
+
+{% hint style="info" %}
+Visit [Structure your account for high application performance](../../structure-your-account-for-high-application-performance.md) for details concerning multiple Groups.
+{% endhint %}
 
 ## Group-level options
 

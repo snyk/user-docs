@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-Some functions, such as Groups, are available only on certain plans. For more information, see [plans and pricing](https://snyk.io/plans/). For details on Enterprise setup, see [Enterprise setup](../implementation-and-setup/enterprise-setup/).
+Some functions, such as Custom roles, are available only on certain plans. For more information, visit [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Administration encompasses the following functions:
@@ -23,15 +23,7 @@ This page covers the following topics:
 
 ## The Snyk workspace
 
-Snyk has a hierarchy that controls access to scanning and other Snyk features in the Snyk workspace. This hierarchy changes depending on your Snyk plan level.
-
-For Free and Team plan users, this includes:
-
-* Organizations
-* Targets
-* Projects
-
-For Enterprise plan users, this includes:
+Snyk has a hierarchy that controls access to scanning and other Snyk features in the Snyk workspace. This hierarchy changes depending on your Snyk plan level. This includes:
 
 * Tenant
 * Groups
@@ -39,7 +31,7 @@ For Enterprise plan users, this includes:
 * Targets
 * Projects
 
-For a detailed view of how Snyk encompasses all your work items in the Snyk workspace, see [The Snyk hierarchy](groups-and-organizations/#the-snyk-hierarchy).&#x20;
+For a detailed view of how Snyk encompasses all your work items in the Snyk workspace, visit [The Snyk hierarchy](groups-and-organizations/#the-snyk-hierarchy).
 
 ## User types
 
@@ -54,17 +46,11 @@ Snyk has the following types of pre-defined users:
 * Tenant Viewer
 * Tenant Member
 
-See [Pre-defined roles](user-roles/pre-defined-roles.md) for more details, including the permissions associated with each role.
-
-{% hint style="info" %}
-**Feature availability**
-
-Group-level roles are available only for Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).&#x20;
-{% endhint %}
+Visit the [Pre-defined roles](user-roles/pre-defined-roles.md) page for more details, including the permissions associated with each role.
 
 ## Admin tools
 
-Snyk provides tools to manage Groups, Organizations, and user roles and permissions, as well as notifications and settings.
+Snyk provides tools to manage Groups, Organizations, user roles and permissions, notifications, and settings.
 
 ### Manage users and permissions
 

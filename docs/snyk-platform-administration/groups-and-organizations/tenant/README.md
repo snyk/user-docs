@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-The Tenant functionality is available with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).&#x20;
+Some Tenant features, such as Snyk Analytics, are available only for Enterprise plan customers. For more information, visit [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 A Tenant is the top level of the Snyk hierarchy. It encompasses all your Groups and Organizations and all their corresponding Snyk work items. The Tenant is helpful in organizing access and reporting on the platform when you are a large Enterprise with multiple Groups.

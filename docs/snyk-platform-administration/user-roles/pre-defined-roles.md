@@ -1,11 +1,5 @@
 # Pre-defined roles
 
-{% hint style="info" %}
-**Feature availability**
-
-Group-level roles are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
-{% endhint %}
-
 Snyk provides a set of standard user roles that can be assigned and managed using the Snyk Web UI or the [Snyk API](../user-management-with-the-api/). The permission sets for pre-defined roles cannot be customized. Instead, Snyk recommends creating a custom role under Manage role in the Snyk Web UI.
 
 The pre-defined roles Snyk provides are as follows:

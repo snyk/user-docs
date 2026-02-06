@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-The Tenant functionality is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).&#x20;
+Tenant functions are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Select the name of your Tenant and the **Members** menu option to manage members:
@@ -16,7 +16,7 @@ Select the name of your Tenant and the **Members** menu option to manage members
 
 On the Tenant **Members** page, you can see all the users associated with your Tenant, their authentication type, and their Tenant role. The [pre-defined](../../user-roles/pre-defined-roles.md#role-types) Tenant roles are:
 
-* **Tenant Admin**: can access all Tenant products and settings. Reserved for Snyk Admins only.&#x20;
+* **Tenant Admin**: can access all Tenant products and settings. Reserved for Snyk Admins only.
 * **Tenant Viewer:** can see the list of all Tenant users, all the Groups, and all the Organizations of the Tenant.
 * **Tenant Member**: the default role of all users of the Tenant with no access to any Tenant level option.
 
