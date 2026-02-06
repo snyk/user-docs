@@ -5245,7 +5245,7 @@
         "type": "object"
       },
       "BundleResource": {
-        "description": "Resource representing Bundles of files created through the\nDeepcode Bundle API.\n\nBundles contain collections of files uploaded by clients to\nSnyk for testing.\n\nBundleResources can be marked either as SBOM or Source to\nindicate the contents of the Bundle.\n\nSBOM BundleResources should provide the following fields:\n- type\n- bundle_id\n- name\n- file_patterns (may be empty)\n\nSource BundleResources should provide the following fields:\n- type\n- bundle_id\n- repository_url\n- root_folder_id\n- file_patterns (may be empty)\n\nCurrently supported scans utilizing BundleResources are:\n- SBOM (SCA): (1) BundleResource containing an SBOM\n- SBOM + Reachability Analysis (SCA): (1) BundleResource containing an SBOM, (1) BundleResource containing Source files.",
+        "description": "Resource representing Bundles of files created through the\nDeepcode Bundle API.\n\nBundles contain collections of files uploaded by clients to\nSnyk for testing.\n\nBundleResources can be marked either as SBOM or Source to\nindicate the contents of the Bundle.\n\nSBOM BundleResources should provide the following fields:\n- type\n- bundle_id\n- name\n- file_patterns (may be empty)\n\nSource BundleResources should provide the following fields:\n- type\n- bundle_id\n- repository_url\n- root_folder_id\n- file_patterns (may be empty)\n\nCurrently supported scans utilizing BundleResources are:\n- SAST: (1) BundleResource containing Source files.\n- SBOM (SCA): (1) BundleResource containing an SBOM\n- SBOM + Reachability Analysis (SCA): (1) BundleResource containing an SBOM, (1) BundleResource containing Source files.",
         "example": {
           "bundle_id": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
           "content_type": "source",
@@ -5292,6 +5292,9 @@
             "description": "Folder inside the BundleRevision at which the Source files are located.",
             "maxLength": 1024,
             "type": "string"
+          },
+          "scm_context": {
+            "$ref": "#/components/schemas/ScmContext"
           },
           "type": {
             "enum": [
@@ -6304,6 +6307,9 @@
             "format": "url",
             "maxLength": 1024,
             "type": "string"
+          },
+          "scm_context": {
+            "$ref": "#/components/schemas/ScmContext"
           },
           "tag": {
             "description": "Tagged version of the container to scan.",
@@ -13297,6 +13303,9 @@
             "maxLength": 256,
             "type": "string"
           },
+          "scm_context": {
+            "$ref": "#/components/schemas/ScmContext"
+          },
           "type": {
             "enum": [
               "inline"
@@ -13356,6 +13365,9 @@
           "name": {
             "maxLength": 256,
             "type": "string"
+          },
+          "scm_context": {
+            "$ref": "#/components/schemas/ScmContext"
           },
           "type": {
             "enum": [
@@ -19455,6 +19467,25 @@
         ],
         "type": "object"
       },
+      "ScmContext": {
+        "description": "Additional SCM information about a resource.\nProvides context about where the content came from; the resource itself is the testable item.\nScmResource does not use this; it identifies SCM via its own fields.",
+        "properties": {
+          "branch": {
+            "maxLength": 256,
+            "type": "string"
+          },
+          "commit_ref": {
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "repo_url": {
+            "format": "url",
+            "maxLength": 1024,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "ScmRepoLocator": {
         "description": "ScmRepoLocator locates a test subject by SCM repository coordinates.",
         "properties": {
@@ -19481,7 +19512,7 @@
         "type": "object"
       },
       "ScmResource": {
-        "description": "Resource representing a repository of source files located in\na Source Code Management tool (e.g. GitHub).\n\nScmResources provide Snyk with the requisite information to\nlocate and scan the source files located in the repository.\n\nCurrently no scans are supported through the Test API for\nScmResources.",
+        "description": "Resource representing a repository of source files located in\na Source Code Management tool (e.g. GitHub).\n\nScmResources provide Snyk with the requisite information to\nlocate and scan the source files located in the repository.\n\nCurrently supported scans utilizing ScmResources are:\n- SAST scans on (1) ScmResource that references a repo already\nimported into Snyk",
         "example": {
           "commit": "8dbd1ea7201a0d49603467981075a633d91e40b9",
           "file_patterns": [],
@@ -19543,6 +19574,17 @@
         },
         "minItems": 1,
         "type": "array"
+      },
+      "SdlcStage": {
+        "description": "SDLC stage where the test was initiated.",
+        "enum": [
+          "ide",
+          "cli",
+          "pr_check",
+          "ci_cd",
+          "other"
+        ],
+        "type": "string"
       },
       "SearchAttributesObject": {
         "properties": {
@@ -20111,6 +20153,9 @@
               "asset"
             ],
             "type": "string"
+          },
+          "scm_context": {
+            "$ref": "#/components/schemas/ScmContext"
           },
           "type": {
             "enum": [
@@ -20822,6 +20867,14 @@
             },
             "type": "array"
           },
+          "sdlc_stage": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SdlcStage"
+              }
+            ],
+            "description": "SDLC stage where the test was initiated."
+          },
           "state": {
             "allOf": [
               {
@@ -20861,6 +20914,11 @@
             },
             "readOnly": true,
             "type": "array"
+          },
+          "user_public_id": {
+            "description": "Public identifier of the user who initiated the test.",
+            "maxLength": 64,
+            "type": "string"
           }
         },
         "required": [
@@ -20909,6 +20967,14 @@
             },
             "type": "array"
           },
+          "sdlc_stage": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SdlcStage"
+              }
+            ],
+            "description": "SDLC stage where the test was initiated."
+          },
           "subject": {
             "allOf": [
               {
@@ -20931,6 +20997,11 @@
               "$ref": "#/components/schemas/TestSubjectLocator"
             },
             "type": "array"
+          },
+          "user_public_id": {
+            "description": "Public identifier of the user who initiated the test.",
+            "maxLength": 64,
+            "type": "string"
           }
         },
         "type": "object"
@@ -21901,6 +21972,9 @@
             "description": "Folder inside the UploadRevision at which the Source files are located.",
             "maxLength": 1024,
             "type": "string"
+          },
+          "scm_context": {
+            "$ref": "#/components/schemas/ScmContext"
           },
           "type": {
             "enum": [
