@@ -6,7 +6,7 @@ After you import Git repositories, Snyk continuously monitors these repositories
 
 ## Supported languages and SCMs
 
-Snyk supports the Automatic dependency upgrade pull requests feature for npm, Yarn, and Maven Central repositories with the following Source Control Managers (SCMs): GitHub, GitHub Enterprise, GitHub Cloud App, Bitbucket Server, Bitbucket Cloud, Bitbucket Connect, GitLab, and Azure Repos.
+Automatic dependency upgrade pull requests are supported for npm, Yarn, pip, NuGet, and Maven Central repositories with the following Source Control Managers (SCMs): GitHub, GitHub Enterprise, GitHub Cloud App, Bitbucket Server, Bitbucket Cloud, Bitbucket Connect, GitLab, and Azure Repos.
 
 You can also use this feature with Snyk Broker. To use this feature, you must upgrade Snyk Broker to v. 1.4.55.0 or later. For more information, see [Upgrade the Snyk Broker client](../../../../implementation-and-setup/enterprise-setup/snyk-broker/update-the-snyk-broker-client.md).
 
@@ -17,7 +17,7 @@ Automatic dependency or upgrade PRs work as follows.
 1. The **Automatic dependency upgrade pull requests** option must be enabled in [the Integration Settings at the Organization level](upgrade-open-source-dependencies-with-automatic-prs.md#how-to-enable-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization) or in the Project Settings.
 2. When you import repositories, Snyk scans the repositories and provides scan results. Snyk then continues to monitor your Open Source Projects, scanning them on a regular basis. The re-scan frequency is based on the schedule set in the Project Settings.
 3. For each scan, when new versions for your dependencies are identified, Snyk creates automatic upgrade PRs.
-   * Snyk does not open a new upgrade PR for a dependency that is already upgraded or patched in another open Snyk PR. This also applies to PRs that were opened for such an issue and closed before the upgrade took place.&#x20;
+   * Snyk does not open a new upgrade PR for a dependency that is already upgraded or patched in another open Snyk PR. This also applies to PRs that were opened for such an issue and closed before the upgrade took place.
    * Snyk opens separate PRs for each dependency.
    * By default, Snyk does not create upgrade PRs for a Project that has five or more open Snyk PRs. After the limit of open PRs is reached, no new PRs are created. This limit can be set on the Integration or Project Settings to be between 1-10. This limit applies only to Upgrade PRs, but it does count Fix PRs. However, Fix PRs are not limited in this way.
    * By default, Snyk recommends only patches and minor upgrades. However, recommendations for major version upgrades can be requested on the **Settings** page where the feature is enabled.
@@ -53,7 +53,7 @@ Follow these steps to configure automatic upgrade PRs for an entire Organization
 <figure><img src="../../../../.gitbook/assets/image (163).png" alt="Enabling Automatic dependency upgrade PFs"><figcaption><p>Enabling Automatic dependency upgrade PFs</p></figcaption></figure>
 
 5. To save and apply your changes, select one of the following from the **Save** dropdown:
-   * **Save**  – your changes are saved and will be applied to all the Projects in the Organization that are configured to inherit these Settings from the Organization. Projects that have Custom Settings will not be influenced by this change.
+   * **Save** – your changes are saved and will be applied to all the Projects in the Organization that are configured to inherit these Settings from the Organization. Projects that have Custom Settings will not be influenced by this change.
    * **Save changes and apply to all overridden Projects** – your changes are saved and will be applied to all the Projects in the Organization. Projects that have Custom Settings will inherit these Organization Settings, and their Custom Settings will be overridden.
 
 From now on, every time Snyk scans any Project in the Organization, it automatically submits Upgrade PRs if the scan discovers that an upgrade is available.
