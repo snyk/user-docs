@@ -146,6 +146,7 @@
         * [Using the API to set up a GitHub connection](enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/using-the-api-to-set-up-a-github-connection.md)
         * [Universal Broker workflow diagrams](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/universal-broker-workflow-diagrams.md)
       * [Upgrade an Organization integration from Classic Broker to Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md)
+      * [Configuring Broker Contexts](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/broker-context.md)
       * [Broker client URL](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/broker-client-url.md)
     * [Classic Broker](implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/README.md)
       * [Prepare Snyk Broker for deployment](implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/README.md)
