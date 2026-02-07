@@ -11,7 +11,7 @@ Typical use case: A Connection is shared by many Orgs, with some Orgs using a di
 ## Configuring Broker Contexts
 
 {% hint style="info" %}
-Before starting ensure that you have installed the snyk-broker-config have configured your local set up correctly. Please see [Prerequisites for Universal Broker](prerequisites-for-universal-broker.md) for more info. You must also have at least one Broker Connection configured and integrated.
+Before starting ensure that you have installed the snyk-broker-config and have configured your local environment correctly. Please see [Prerequisites for Universal Broker](prerequisites-for-universal-broker.md) for more info. You must also have at least one Broker Connection configured and integrated.
 {% endhint %}
 
 ### Create a Context
