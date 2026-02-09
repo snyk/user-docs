@@ -35,7 +35,7 @@ The **steps** in **configuring App role**s follow.
 5.  Select **Users and groups**; then **Add user/group**.\
     Search and select the users and groups to add.
 
-    <figure><img src="../../../../../.gitbook/assets/image (4) (1).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
 6.  Select **Users and groups**; from the dropdown, select a role and select **Assign**.\\
 
     <figure><img src="../../../../../.gitbook/assets/image (158).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
@@ -54,7 +54,7 @@ The **steps** in **configuring App role**s follow.
     **Source attribute**: user.assignedroles
 
 {% hint style="warning" %}
-Ensure you add the claim correctly. If you do not add it or you do it incorrectly, for example, by adding a typo, it can lead to a full mapping failure, which can lock users out of their accounts.&#x20;
+Ensure you add the claim correctly. If you do not add it or you do it incorrectly, for example, by adding a typo, it can lead to a full mapping failure, which can lock users out of their accounts.
 {% endhint %}
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2023-03-10 at 2.55.05 PM.png" alt="Custom claim"><figcaption><p>Custom claim</p></figcaption></figure>

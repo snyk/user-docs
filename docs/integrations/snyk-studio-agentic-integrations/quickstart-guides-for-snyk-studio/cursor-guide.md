@@ -21,7 +21,7 @@ Choosing **Yes** activates `Auto Configure Snyk Mcp Server` and sets the `Secure
 
 Users who previously installed the VS Code IDE extensions and did not enable Secure at Inception using the modal window can enable them after the fact through the IDE extension settings. Users can also update Secure at Inception settings or disable them by setting the `Execution Frequency` to "Manual."
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Authenticate
 

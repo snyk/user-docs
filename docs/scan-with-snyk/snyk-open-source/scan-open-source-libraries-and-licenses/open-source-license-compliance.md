@@ -51,14 +51,14 @@ There are two types of dual or multiple licenses:
 
 * AND **-** If the license explicitly has `AND`, customers must comply with all (dual or multiple) licenses.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt="" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt="" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
 
-In both of these cases, Snyk displays the severity of the license with the highest severity when displaying issues, where all licenses have a severity.&#x20;
+In both of these cases, Snyk displays the severity of the license with the highest severity when displaying issues, where all licenses have a severity.
 
 {% hint style="warning" %}
-Licenses on the vulnerability card are sorted with the lowest severity license first, even when the vulnerability card is labeled with the highest severity.&#x20;
+Licenses on the vulnerability card are sorted with the lowest severity license first, even when the vulnerability card is labeled with the highest severity.
 
-If any of the multiple licenses on the package at the scanned version are set to `severity:none`, then the current behavior is that no license vulnerability is shown.&#x20;
+If any of the multiple licenses on the package at the scanned version are set to `severity:none`, then the current behavior is that no license vulnerability is shown.
 {% endhint %}
 
 ## **Supported package types**
