@@ -92,7 +92,7 @@ If you use a Group-level integration, the banner shows assets not discovered thr
 * A repository previously tested by Snyk was deleted in the SCM before the Group-level integration was set up.
 * Snyk CLI Projects have a different repository URL than the SCM repository URL.
 * The SCM Organization is not explicitly configured in the Group-level integration.
-* Assets detected by a non-SCM vendor (for example, GitGuardian).
+* Assets detected by a non-SCM vendor.
 
 ## Troubleshooting
 

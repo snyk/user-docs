@@ -200,18 +200,6 @@ To see the documentation for each integration, click on the integration name in 
 | [SentinelOne](https://www.sentinelone.com/partners/snyk/)                                                                | By combining SentinelOne’s real-time CWPP (Cloud Workload Protection Platform) with Snyk Container image vulnerability scanning, you can secure cloud-native applications from build time to runtime. |
 | [Sysdig](https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/risk-spotlight-integrations/snyk/) | By leveraging runtime insights from Sysdig, the joint solution significantly reduces vulnerability noise by focusing only on packages actively used in running containers.                            |
 
-## Secrets
-
-Identifying sensitive information in code that represents credential leakage for protected resources.\
-There is no API integration today, but the partner solutions below are complementary.
-
-To see the documentation for each integration, click on the integration name in the table.
-
-| Integration                                                                                                                           | Description                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [GitGuardian](https://blog.gitguardian.com/gitguardian-joins-forces-with-snyk-to-offer-best-in-class-software-supply-chain-security/) | GitGuardian’s advanced secrets detection technology detects, alerts, and prevents hardcoded secrets in the software delivery pipeline.                                                                                    |
-| [Nightfall](https://snyk.io/blog/nightfall-ai-and-snyk-partner/)                                                                      | Nightfall AI is the first AI-native data protection platform that automatically protects PII, PHI, PCI, API keys, and other sensitive data to help organizations achieve compliance with the leading industry frameworks. |
-
 ## SBOM management
 
 Software Bill of Materials is an inventory of software, which is a list of ingredients that make up software components.
