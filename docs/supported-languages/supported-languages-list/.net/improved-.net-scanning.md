@@ -8,12 +8,6 @@ Improved Snyk Open Source scanning for NuGet .NET applications is in Early Acces
 You can enable the feature by using [Snyk Preview](../../../snyk-platform-administration/snyk-preview.md).
 {% endhint %}
 
-## Limitations of existing solution
-
-The existing .NET scanning solution for SCM integration in the Snyk Web UI and CLI uses two [different approaches](guidance-for-snyk-for-.net.md#dependency-analysis). The Dependency Analysis for SCM integrations can produce [false positives](guidance-for-snyk-for-.net.md#build-time-versus-runtime-dependencies) that have no remediation available and must be manually ignored.
-
-If you use the CLI to scan Projects, you can expect more accurate results compared to importing the same Project using an SCM integration. You can [encounter errors](troubleshooting-snyk-for-.net.md) when scanning Projects that use specific .NET features.
-
 ## Scanning improvements
 
 Snyk improved the .NET scanning process to ensure that dependency results are consistent across the CLI and SCM integrations. This update also eliminates false positives from runtime dependencies that were previously displayed in the UI. The approach involves using the internal workings of the .NET ecosystem.
@@ -37,9 +31,7 @@ Follow these steps to enable the improvements:
 
 Since the improved .NET solution will build your .NET Project, Snyk requires access to any private NuGet repositories.
 
-The recommended approach is to use [`nuget.config`](https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file) files along with registering the credentials in Snyk NuGet private package repository integration (**Settings** > **Integrations** > **NuGet Repositories**).
-
-<figure><img src="../../../.gitbook/assets/org_settings_nuget_repo.png" alt="Set up Nuget Repositories from the Settings, Integrations screen"><figcaption><p>Set up Nuget Repositories from the Settings, Integrations screen</p></figcaption></figure>
+Snyk recommends using [`nuget.config`](https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file) files along with registering the credentials in Snyk NuGet private package repository integration. To do this, navigate to Organization **Settings** > **Integrations** > **Add integration** > **Nuget** > **Edit settings**.&#x20;
 
 If you are not using `nuget.config`, but another way of informing the .NET ecosystem of where to look for private packages, Snyk will attempt to add all private NuGet repository credentials defined in the private package repository integration as a `dotnet nuget` source before restoring the Project.
 
@@ -47,7 +39,13 @@ Fill in the **Your tokens** fields by adding a **Username**, the **Personal acce
 
 For more information, see [Package repository integrations](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/).
 
-### Limitations on improved .NET scanning for SCM integrations
+## Limitations
+
+The existing .NET scanning solution for SCM integration in the Snyk Web UI and CLI uses two [different approaches](guidance-for-snyk-for-.net.md#dependency-analysis). The Dependency Analysis for SCM integrations can produce [false positives](guidance-for-snyk-for-.net.md#build-time-versus-runtime-dependencies) that have no remediation available and must be manually ignored.
+
+If you use the CLI to scan Projects, you can expect more accurate results compared to importing the same Project using an SCM integration. You can encounter errors when scanning Projects that use specific .NET features.
+
+For improved .NET scanning for SCM integrations:&#x20;
 
 * `Directory.Build.props`, `global.json` and other .NET-specific manifest files are supported, but the file names must use upper and lower case, as Microsoft [describes](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022#directorybuildprops-and-directorybuildtargets).
 * For `global.json`, Snyk does not support all `major.minor.patch` versions that are currently supported by Microsoft, only a subset thereof. For more information, see this [error code](../../../scan-with-snyk/error-catalog.md#snyk-os-dotnet-0008).
