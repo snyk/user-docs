@@ -4642,7 +4642,6 @@
           "description": {
             "description": "Package description from the registry (max 255 characters)",
             "example": "Fast, unopinionated, minimalist web framework",
-            "maxLength": 255,
             "type": "string"
           },
           "ecosystem": {
@@ -4668,7 +4667,6 @@
             "items": {
               "type": "string"
             },
-            "maxItems": 20,
             "type": "array"
           },
           "language": {
@@ -5952,6 +5950,7 @@
         "type": "object"
       },
       "CommunityDetails": {
+        "additionalProperties": false,
         "description": "Community health signals for the package",
         "properties": {
           "description": {
@@ -5989,6 +5988,13 @@
             "type": "integer"
           }
         },
+        "required": [
+          "has_code_of_conduct_file",
+          "has_contributing_file",
+          "has_funding_file",
+          "has_readme_file",
+          "stargazers_count"
+        ],
         "type": "object"
       },
       "ConfigurationAttributes": {
@@ -7879,7 +7885,8 @@
         "type": "object"
       },
       "DirectVulnerabilitiesCounts": {
-        "description": "Breakdown of direct vulnerabilities by severity level",
+        "additionalProperties": false,
+        "description": "Breakdown of direct vulnerabilities by Snyk severity level",
         "properties": {
           "critical": {
             "description": "Number of critical severity vulnerabilities (\u003e= 0)",
@@ -7902,6 +7909,12 @@
             "type": "integer"
           }
         },
+        "required": [
+          "critical",
+          "high",
+          "medium",
+          "low"
+        ],
         "type": "object"
       },
       "DockerHubAttributes": {
@@ -14862,7 +14875,8 @@
         "type": "object"
       },
       "MaintenanceDetails": {
-        "description": "Maintenance health signals for the package",
+        "additionalProperties": false,
+        "description": "Maintenance health signals for the package as a whole, based on repository-level activity. These signals reflect the overall project status. They do not represent the maintenance state of specific versions or version lines.",
         "properties": {
           "description": {
             "description": "Human-readable explanation of the maintenance rating",
@@ -14879,7 +14893,7 @@
             "type": "integer"
           },
           "is_archived": {
-            "description": "Whether the repository is archived",
+            "description": "Whether the source repository is archived. This is a repository-level signal. It does not represent the maintenance state of specific versions or version lines.",
             "type": "boolean"
           },
           "is_forked": {
@@ -14896,7 +14910,7 @@
             "type": "string"
           },
           "lifecycle": {
-            "description": "Package lifecycle status",
+            "description": "Package-level lifecycle status as reported by the registry. Reflects the overall package state. It does not represent the maintenance state of specific versions or version lines.",
             "enum": [
               "active",
               "archived",
@@ -14907,7 +14921,7 @@
             "type": "string"
           },
           "rating": {
-            "description": "Overall maintenance health level, reflecting how actively the package is being developed and updated",
+            "description": "Package-level maintenance health, reflecting how actively the package repository is being developed and updated. This applies to the project as a whole. It does not represent the maintenance state of specific versions or version lines.",
             "enum": [
               "Healthy",
               "Sustainable",
@@ -14921,6 +14935,12 @@
             "type": "integer"
           }
         },
+        "required": [
+          "is_archived",
+          "is_forked",
+          "total_versions_count",
+          "forks_count"
+        ],
         "type": "object"
       },
       "ManagedPolicyRef": {
@@ -16085,6 +16105,7 @@
         "type": "object"
       },
       "OwnerDetails": {
+        "additionalProperties": false,
         "description": "Details about the package owner/maintainer",
         "properties": {
           "followers_count": {
@@ -16111,6 +16132,11 @@
             "type": "integer"
           }
         },
+        "required": [
+          "followers_count",
+          "repositories_count",
+          "total_stars"
+        ],
         "type": "object"
       },
       "Package": {
@@ -16233,6 +16259,7 @@
         "type": "object"
       },
       "PackageHealth": {
+        "additionalProperties": false,
         "description": "Overall health assessment of the package based on multiple signals",
         "properties": {
           "community": {
@@ -16392,7 +16419,8 @@
             },
             "required": [
               "package_version_id",
-              "package_version"
+              "package_version",
+              "latest_version_indicator"
             ],
             "type": "object"
           }
@@ -17209,6 +17237,7 @@
         "type": "string"
       },
       "PopularityDetails": {
+        "additionalProperties": false,
         "description": "Popularity signals for the package",
         "properties": {
           "dependent_packages_count": {
@@ -17243,6 +17272,11 @@
             "type": "string"
           }
         },
+        "required": [
+          "dependent_packages_count",
+          "dependent_repos_count",
+          "downloads"
+        ],
         "type": "object"
       },
       "Principal": {
@@ -19698,6 +19732,7 @@
         "type": "object"
       },
       "SecurityDetails": {
+        "additionalProperties": false,
         "description": "Security signals for the package",
         "properties": {
           "description": {
@@ -19726,6 +19761,10 @@
             "type": "string"
           }
         },
+        "required": [
+          "direct_vulnerabilities",
+          "direct_vulnerabilities_total"
+        ],
         "type": "object"
       },
       "SelfLink": {
