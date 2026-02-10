@@ -1,25 +1,19 @@
 # Getting started
 
-
-
 {% hint style="info" %}
 Ensure you use languages, package managers, and frameworks supported by Snyk. See [Supported languages, package managers, and frameworks](../../supported-languages/supported-languages-package-managers-and-frameworks.md).
 {% endhint %}
 
 ## Supported browsers
 
-{% hint style="info" %}
-Snyk does not support Microsoft Internet Explorer.
-{% endhint %}
-
-Snyk supports the latest versions of the following web browsers:&#x20;
+Snyk supports the latest versions of the following web browsers:
 
 * [Chrome](https://www.google.com/chrome/)
 * [Edge](https://www.microsoft.com/en-us/edge?form=MA13FJ)
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 * [Safari](https://www.apple.com/safari/) (except for [Opening Fix PR](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/))
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Snyk requires Javascript to be enabled on your browser.
 {% endhint %}
 
@@ -27,7 +21,7 @@ To start performing basic tasks in the Snyk application:
 
 ## Create or log in to a Snyk account
 
-To create a free account or sign up for a pricing plan, navigate to [snyk.io](https://snyk.io/). For details, see [Snyk Pricing Plans](../../implementation-and-setup/enterprise-implementation-guide/trial-limitations.md).&#x20;
+To create a free account or sign up for a pricing plan, navigate to [snyk.io](https://snyk.io/). For details, see [Snyk Pricing Plans](../../implementation-and-setup/enterprise-implementation-guide/trial-limitations.md).
 
 If your company has an existing Snyk account and uses single sign-on (SSO), use the SSO link provided by your administrators.
 
@@ -37,7 +31,7 @@ If your company requires an invitation to use Snyk, when you log in for the firs
 If you log in with a different authentication provider from the one your company uses for the Snyk account, you create a new account. You will not be logged in to the correct Organization for your company.
 {% endhint %}
 
-When you log in to the Snyk Web UI, Snyk shows your preferred (default) Organization. Snyk also uses the settings for your preferred Organization when you test a Project locally using the CLI.&#x20;
+When you log in to the Snyk Web UI, Snyk shows your preferred (default) Organization. Snyk also uses the settings for your preferred Organization when you test a Project locally using the CLI.
 
 ## Set up a Snyk integration
 
@@ -67,17 +61,34 @@ Before authenticating, be sure you have set your region properly. For details, s
 
 Your Snyk API token is a personal token available under your user profile. The Snyk API token is associated with your Snyk Account and not with a specific Organization.
 
-Free and Team plan and trial users have access only to this personal token under the user profile. The personal token can be used to authenticate with the Snyk CLI running on a local or a build machine and an IDE when you are setting a token manually. Use a personal token with caution if you are authenticating for CI/CD or with the API, which is available for Enterprise plan users only.
+Free and Team plan and trial users have access only to tokens under the user profile. Your personal tokens can be used to authenticate with the Snyk CLI running on a local or a build machine and an IDE when you are setting a token manually. Use a personal token with caution if you are authenticating for CI/CD or with the API, which is available for Enterprise plan users only.
+
+#### Personal Access Tokens (recommended)
+
+To create your Snyk personal access token:
+
+1. Log in to Snyk and navigate to your personal account settings.
+2. Navigate to **Personal Access Tokens** using the sidebar navigation.
+3. Create your first personal access token by completing the form and clicking **Generate new token**.
+4. Highlight and copy your personal access token.
+
+{% hint style="info" %}
+For more information, visit [Personal Access Tokens](../../snyk-api/authentication-for-api/personal-access-tokens-pats.md).
+{% endhint %}
+
+#### Legacy API Tokens
 
 To obtain your personal Snyk API token:
 
-1. Log in to Snyk and navigate to your personal account settings.&#x20;
+1. Log in to Snyk and navigate to your personal account settings.
 2. In your **General** settings, under API Token, select **click to show**.
 3. Highlight and copy your API key.
 
-If you want a new API token, select **Revoke & Regenerate**, but be aware that this will make the previous API token invalid.
+If you want a new API token, select **Revoke & Regenerate**, but this will make the previous API token invalid.
 
-For information on when to use an API token and when to use a service account token, available to Enterprise plan users only, see [Authentication for API](../../snyk-api/authentication-for-api/).
+{% hint style="info" %}
+For information on when to use an API token and when to use a service account token, available to Enterprise plan users only, visit [Authentication for API](../../snyk-api/authentication-for-api/).
+{% endhint %}
 
 ## Import a Project to scan and identify issues
 
@@ -90,19 +101,19 @@ Importing a Project also does the following:
 * Sets Snyk to run a regular scan on that Project for issues. See [Usage settings](../../snyk-platform-administration/groups-and-organizations/usage-settings.md).
 * Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../../developer-tools/scm-integrations/organization-level-integrations/).
 
-## Set up Snyk Essentials&#x20;
+## Set up Snyk Essentials
 
 {% hint style="info" %}
 Snyk Essentials is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk Essentials enables Application Security teams to implement, manage, and scale a modern, high-performing, developer security program. It covers use cases under Application Security Posture Management (ASPM).&#x20;
+Snyk Essentials enables Application Security teams to implement, manage, and scale a modern, high-performing, developer security program. It covers use cases under Application Security Posture Management (ASPM).
 
 For more information, see [Snyk Essentials](../../scan-with-snyk/snyk-essentials.md).
 
 ## Review results and fix your issues
 
-After you have imported a Project, and Snyk has scanned that Project for issues, you can view the results of your scan and take action to fix issues.  You can see the number of issues found, grouped by severity level (**C**ritical, **H**igh, **M**edium or **L**ow). For details, see [Severity levels](../../manage-risk/prioritize-issues-for-fixing/severity-levels.md).
+After you have imported a Project, and Snyk has scanned that Project for issues, you can view the results of your scan and take action to fix issues. You can see the number of issues found, grouped by severity level (**C**ritical, **H**igh, **M**edium or **L**ow). For details, see [Severity levels](../../manage-risk/prioritize-issues-for-fixing/severity-levels.md).
 
 The scan results and available actions depend on the type of Project you scan:
 

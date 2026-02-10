@@ -3,7 +3,7 @@
 You can manage service accounts using the [Snyk REST API](../../../snyk-api/reference/serviceaccounts.md).
 
 {% hint style="info" %}
-Specific permissions are required to perform all these tasks. For more information, see [Service accounts-select a role](./#select-a-role).
+Specific permissions are required to perform all these tasks. For more information, visit [Service accounts-select a role](./#select-a-role).
 {% endhint %}
 
 ## Service account attributes
@@ -14,15 +14,18 @@ Specific permissions are required to perform all these tasks. For more informati
 
 `auth_type` - Authentication strategy for the service account. The following options are available:
 
-* `api_key` - The service account uses a regular Snyk API key.
-* `oauth_client_secret` - The service account uses an [OAuth 2.0 access token](service-accounts-using-oauth-2.0.md#oauth-2.0-with-client-secret), which is retrieved with a client secret.
-* `oauth_private_key_jwt` - The service account uses an [OAuth 2.0 access token](service-accounts-using-oauth-2.0.md#oauth-2.0-with-private-key-jwt), which is retrieved with a JWT signed with a private key.
+* `access_token` - The service account uses a Snyk access token with expiry.
+* `api_key` - The service account uses a legacy Snyk API key (no expiry).
+* `oauth_client_secret` - The service account uses an [OAuth 2.0 access token](service-accounts-using-oauth-2.0.md#oauth-2.0-with-client-secret), retrieved with a client secret.
+* `oauth_private_key_jwt` - The service account uses an [OAuth 2.0 access token](service-accounts-using-oauth-2.0.md#oauth-2.0-with-private-key-jwt), retrieved with a JWT signed with a private key.
 
 `role_id` - The role of the service account, which defines the permissions it has. Available roles can be found using the endpoint [List all roles in a group](../../../snyk-api/reference/groups-v1.md#group-groupid-roles).
 
-`jwks_url` - A JWKs URL hosting your public keys used to verify signed JWT requests; this must be `https`. Required only when `auth_type` is `oauth_private_key_jwt`.
+`access_token_expires_at` - The expiry date of the access token in ISO-8601 format, for example, `2025-08-16T00:00:00Z`. The maximum expiry is one year from creation time. Required only when `auth_type` is `access_token`.
 
-`access_token_ttl_seconds` - The time, in seconds, that a generated access token will be valid for. Defaults to 1 hour if unset. Required only when `auth_type` is `oauth_client_secret` or `oauth_private_key_jwt`.
+`jwks_url` - A JWKs URL hosting your public keys used to verify signed JWT requests. This must be `https`. Required only when `auth_type` is `oauth_private_key_jwt`.
+
+`access_token_ttl_seconds` - The time, in seconds, that a generated access token will be valid for. Defaults to one hour if unset. Required only when `auth_type` is `oauth_client_secret` or `oauth_private_key_jwt`.
 
 ## Manage Group-level service accounts
 
