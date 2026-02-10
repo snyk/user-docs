@@ -9024,17 +9024,6 @@
             "items": {
               "description": "Problems are representative of the finding in other security domains and\nsystems with a well-known identifier.\n\nMore detailed attributes for the problem may be included, especially when\nthis information is not yet readily available in a relatable public API.\n\nProblems are defined in industry standard taxonomies such as:\n- MITRE's Common Weakness Enumeration (CWE)\n- Common Vulnerability Exposures (CVE)\n\nSnyk systems also define problems, such as:\n- Code SAST rules\n- VulnDB vulnerabilities\n- Software licenses\n- Secret leaks",
               "discriminator": {
-                "mapping": {
-                  "cve": "#/components/schemas/CveProblem",
-                  "cwe": "#/components/schemas/CweProblem",
-                  "ghsa": "#/components/schemas/GithubSecurityAdvisoryProblem",
-                  "other": "#/components/schemas/OtherProblem",
-                  "secret": "#/components/schemas/SecretsRuleProblem",
-                  "snyk_cloud_rule": "#/components/schemas/SnykCloudRuleProblem",
-                  "snyk_code_rule": "#/components/schemas/SnykCodeRuleProblem",
-                  "snyk_license": "#/components/schemas/SnykLicenseProblem",
-                  "snyk_vuln": "#/components/schemas/SnykVulnProblem"
-                },
                 "propertyName": "source"
               },
               "oneOf": [
@@ -9405,11 +9394,6 @@
                         {
                           "description": "Describe a software package ecosystem.",
                           "discriminator": {
-                            "mapping": {
-                              "build": "#/components/schemas/snykvulndb.BuildPackageEcosystem",
-                              "os": "#/components/schemas/snykvulndb.OsPackageEcosystem",
-                              "other": "#/components/schemas/snykvulndb.OtherPackageEcosystem"
-                            },
                             "propertyName": "type"
                           },
                           "oneOf": [
@@ -9820,11 +9804,6 @@
                         {
                           "description": "Describe a software package ecosystem.",
                           "discriminator": {
-                            "mapping": {
-                              "build": "#/components/schemas/snykvulndb.BuildPackageEcosystem",
-                              "os": "#/components/schemas/snykvulndb.OsPackageEcosystem",
-                              "other": "#/components/schemas/snykvulndb.OtherPackageEcosystem"
-                            },
                             "propertyName": "type"
                           },
                           "oneOf": [
@@ -10603,10 +10582,6 @@
                                         }
                                       ],
                                       "discriminator": {
-                                        "mapping": {
-                                          "ignore": "#/components/schemas/Ignore",
-                                          "severity-change": "#/components/schemas/SeverityChange"
-                                        },
                                         "propertyName": "action_type"
                                       }
                                     },
@@ -10722,8 +10697,7 @@
         "discriminator": {
           "mapping": {
             "other": "#/components/schemas/OtherLocation",
-            "package": "#/components/schemas/PackageLocation",
-            "source": "#/components/schemas/SourceLocation"
+            "package": "#/components/schemas/PackageLocation"
           },
           "propertyName": "type"
         },
