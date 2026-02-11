@@ -1,8 +1,14 @@
 # Breakability risk levels
 
+{% hint style="info" %}
+**Release status**
+
+Breakability analysis is in Early Access and available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
+{% endhint %}
+
 Snyk analyzes dependency upgrades to predict if a proposed change will break your build or application. Breakability analysis assigns a risk level to each upgrade to help you decide whether to auto-merge a fix or review it manually.
 
-Snyk assesses the practical impact of a change rather than relying only on version numbers. For example, a generic `v2.0` label can be perceived as a form of breaking change, even if the change is trivial.
+Snyk assesses the practical impact of a change rather than relying only on version numbers. For example, a major version update (v2.0) can appear risky based on the version number, even if the code change is trivial.
 
 To determine risk levels, Snyk uses official release notes, change logs, and ecosystem data. This page outlines the logic and definitions Snyk uses to classify upgrades.
 
@@ -10,6 +16,12 @@ Snyk classifies risk based on two factors:
 
 * Evidence: what the maintainers of the system say has changed in the system.
 * Confidence: how certain Snyk is about that evidence.
+
+{% hint style="info" %}
+With breakability analysis, Snyk sends package information to a Large Language Model (LLM). This information includes the current and proposed upgrade versions. Snyk does not transmit application data. Future features involving application context require you to enable them separately.
+
+Ensure to review AI-generated content for accuracy before use.
+{% endhint %}
 
 ## Risk level definitions and actions
 
@@ -46,7 +58,7 @@ Criteria for medium-risk assessment include:
 Snyk confirms or suspects that the upgrade introduces breaking changes that require code refactoring.
 
 {% hint style="danger" %}
-&#x20;Do not merge a high risk PR without code changes and thorough testing. Snyk recommends treating it as a development task.
+Do not merge a high risk PR without code changes and thorough testing. Snyk recommends treating it as a development task.
 {% endhint %}
 
 Criteria for high-risk assessment include:
@@ -77,5 +89,5 @@ The following use cases show how the logic applies.
 | Ancient runtime drop   | From `3.0` to `4.0`     | Low                  | The upgrade is a major version, but the only change is dropping Node.js v4 (EOL 2018). There is no practical impact.                 |
 | Missing documentation  | From `2.1` to `2.2`     | Medium               | The upgrade is a minor version, but there is no changelog. Snyk cannot detemine if it is safe, so it flags it for review.            |
 | API removal            | From `3.0` to `4.0`     | High                 | The changelog confirms that `_.pluck` was removed and must be replaced with `_.map`. Code changes are required.                      |
-| Long term support drop | From `5.0` to  `6.0`    | High                 | The upgrade drops support for Java 17, which is an active LTS. This upgrade breaks builds that are running on standard environments. |
+| Long term support drop | From `5.0` to `6.0`     | High                 | The upgrade drops support for Java 17, which is an active LTS. This upgrade breaks builds that are running on standard environments. |
 |                        |                         |                      |                                                                                                                                      |
