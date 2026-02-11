@@ -910,6 +910,7 @@
     * [Remediation reports](manage-risk/analytics/reports-tab/remediation-reports.md)
     * [Prevention reports](manage-risk/analytics/reports-tab/prevention-reports.md)
     * [Compliance reports](manage-risk/analytics/reports-tab/compliance-reports.md)
+    * [Education reports](manage-risk/analytics/reports-tab/education-reports.md)
     * [Issue columns dictionary](manage-risk/analytics/reports-tab/issue-columns-dictionary.md)
     * [Troubleshooting Snyk reports](manage-risk/analytics/reports-tab/troubleshooting-snyk-reports.md)
     * [Reporting and BI integrations: Snowflake Data Share](manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/README.md)

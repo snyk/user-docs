@@ -9,12 +9,13 @@ Use Snyk reports to manage and improve your application security posture. You ca
 
 ## Overview
 
-Reports are organized into four main categories:
+Reports are organized into multiple categories:
 
 * [Exposure and coverage reports](exposure-and-coverage-reports.md)
 * [Remediation reports](remediation-reports.md)
 * [Prevention reports](prevention-reports.md)
 * [Compliance reports](compliance-reports.md)
+* [Education](education-reports.md) reports
 
 Snyk reports provide the visibility and analytics needed to drive data-based conversations between development and security.
 
