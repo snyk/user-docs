@@ -3,12 +3,12 @@
 ## Conversion setup
 
 {% hint style="info" %}
-If you're new to Snyk or with Snyk Code Projects, you can skip this step as there are no existing ignores to be converted.
+If you are new to Snyk or using Snyk Code Projects, you can skip this step, as there are no existing ignores to convert.
 {% endhint %}
 
 Conversion provides you with control over which ignores Snyk converts. For example, if you monitor multiple branches for a given repository, you can decide what ignore metadata Snyk converts and uses as the single source of truth going forward.
 
-The following scenario assumes that you have ignored issues within your Snyk Code Project prior to enabling Snyk Code Consistent Ignores.
+The following scenario assumes that you have ignored issues in your Snyk Code Project prior to enabling Snyk Code Consistent Ignores.
 
 If you have enabled the **Snyk Code Consistent Ignores** feature and have not performed a rescan since, in order for the **Ignore across repository** button to be active, it is possible that you need to [retest the Project](../../../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/#retesting-code-repository). In most cases, the **Ignore across repository** button is active, and this step is not necessary.
 
@@ -16,15 +16,13 @@ If you have enabled the **Snyk Code Consistent Ignores** feature and have not pe
 
 In the Snyk Web UI, navigate to a Project and open an issue card that contains an issue that was ignored before enabling this feature.
 
-<figure><img src="../../../../.gitbook/assets/Ignored-issue-using-legacy-system.png" alt=""><figcaption><p>Ignored issue using the legacy system</p></figcaption></figure>
-
-A warning states that the ignore was created through the legacy system and is not consistent across the repository. All issues ignored before enabling the feature appear with this warning, so you can determine what ignore metadata must be converted and used as the source of truth.&#x20;
+A warning states that the ignore was created through the legacy system and is not consistent across the repository. All issues ignored before enabling the feature appear with this warning, so you can determine what ignore metadata must be converted and used as the source of truth.
 
 To convert an issue from a Project-scoped to an asset-scoped ignore, click **Ignore across repository**.
 
 ## How Snyk handles metadata
 
-Consider the following implications for conversion:&#x20;
+Consider the following implications for conversion:
 
 * **Ignored by** and **Timestamp** reflect the time and user who performed the conversion, not the original ignore creator or the date of the ignore.
 * **Reason**, **Description**, and **Expiration date** are all retained.
@@ -37,11 +35,9 @@ Consider the following implications for conversion:&#x20;
 Conversion using Snyk Web UI is only available for Projects with 200 or fewer legacy ignores. If you need to convert ignores for Projects with more than 200 ignores, see [Convert ignores using Snyk API](convert-project-scoped-ignores-to-asset-scoped-ignores.md#convert-ignores-using-snyk-api).
 {% endhint %}
 
-You can migrate pre-existing Project-scoped ignores to asset-scoped ignores manually on the Projects page.&#x20;
+You can migrate pre-existing Project-scoped ignores to asset-scoped ignores manually on the Projects page.
 
 To convert all legacy ignores from a Project page, navigate to your **Organization** > **Projects**, and then click **Convert (number of) ignores in this Project.**
-
-<figure><img src="https://lh7-rt.googleusercontent.com/slidesz/AGV_vUf8vec5WgI3BrzPhkFHTmvuC4aPFWIsYWnMry83OueLkgImeYxYm2mFD_Ixu5-CF97pmgnjfaw1dc0tMGemmrEzsE4_kM5jJqzbxbTm7MZEUEPQEGOeIHuAeoCqoLTEVbzl4Zf1Pg=s2048?key=IJQqGeWGXBW00dvkAmRgPg" alt="Bulk conversion from the Projects page in Snyk Web UI."><figcaption><p>Bulk conversion from the Projects page</p></figcaption></figure>
 
 ### Convert ignores using Snyk API
 
@@ -61,7 +57,7 @@ Steps to follow:
 #### List relevant Snyk Code Projects
 
 * Goal: Identify the project\_id for the Snyk Code Projects whose ignores you want to convert.
-* [API Endpoint](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org_id-/projects): `GET /rest/orgs/{org_id}/projects`&#x20;
+* [API Endpoint](https://apidocs.snyk.io/?version=2024-10-15#get-/orgs/-org_id-/projects): `GET /rest/orgs/{org_id}/projects`
 * Filter: Use the query parameter `&types=sast` to list only Snyk Code Projects.
 
 {% hint style="info" %}

@@ -82,9 +82,7 @@ Ignores for Open Source issues found in a CLI or CI/CD run are synchronized with
 
 Refer to the following example. Issues are identified as **CI/CLI**, meaning the Project was imported from `snyk monitor`. The issue is `npmconf`. It is **Not vulnerable,** and the user can select **Ignore**.
 
-<figure><img src="../../../.gitbook/assets/image (187).png" alt="Project imported by snyk monitor, ignore set in the Web UI"><figcaption><p>Project imported by <code>snyk monitor</code>, ignore set in the Web UI</p></figcaption></figure>
-
-The following shows `snyk test` results before an ignore is set in the Web UI:
+The following shows `snyk test` results before an ignore is set in the Web UI.
 
 <figure><img src="../../../.gitbook/assets/image (18) (1).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
 

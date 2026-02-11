@@ -88,13 +88,9 @@ The Summary tab is a concentrated view of asset properties. The Summary screen p
 After you apply the filters, the assets list will only display the assets that directly match the filter conditions, and, if available, a list of children assets related to the selected one is displayed, with the information shown in a table format, with a focus on the following topics: Asset (name), Issues, Controls, Class.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/Asset card - Assets Summary view.png" alt=""><figcaption><p>Asset card - Assets Summary view</p></figcaption></figure>
-
 ### Related Assets
 
 The Related assets tab provides a detailed view of assets related to the selected one. Use this tab to assess scanning coverage or asset ownership. You can see the details of a related asset by clicking on one of them. Usually, these are Package assets. When looking at Related Assets, you can notice a link to the parent repository at the top. If you click on the parent asset link, you will revert to the initial view of the parent asset.
-
-<figure><img src="../.gitbook/assets/inventory-asset-card.png" alt="Snyk AppRisk Inventory - Assets Summary view of a children asset"><figcaption><p>Asset card - Assets Summary view of a children asset</p></figcaption></figure>
 
 ### Related Projects
 
@@ -109,13 +105,9 @@ The Related Projects tab provides a collection of Snyk Projects that are associa
 
 ‌Projects are sorted by Target, Target Reference, and Tested date. This makes it easy to find related Projects to monitor and fix.
 
-<figure><img src="../.gitbook/assets/inventory-asset-card-related-projects-view.png" alt=""><figcaption><p>Asset card - Assets Related Projects view</p></figcaption></figure>
-
 ### Attributes
 
 The Attributes tab shows miscellaneous attributes, like the Asset ID or Asset Type, that are fetched from the data source, but do not have a dedicated column. The benefit of having this info is not only by presenting it but mostly by making it searchable. You can search for an attribute by either using the inventory search bar or the filters.
-
-<figure><img src="../.gitbook/assets/image (243).png" alt=""><figcaption><p>Asset card - Assets Attributes view</p></figcaption></figure>
 
 ## Issues
 
@@ -151,8 +143,6 @@ The Controls logos can have one of the following states:
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.
 
-<figure><img src="../.gitbook/assets/Inventory menu - Controls column new.png" alt=""><figcaption><p>Inventory menu - Controls column</p></figcaption></figure>
-
 ## Tags <a href="#tags" id="tags"></a>
 
 Provides a key-value tagging capability that allows you to attach specific, structured metadata to your assets. Use this feature lets you granular filtering, robust policy creation, and better alignment with your internal systems.**Example:** A structured tag provides both a key and a value, such as `platform:aws` or `region:eu-central-1`.
@@ -162,8 +152,6 @@ Provides a key-value tagging capability that allows you to attach specific, stru
 In Snyk Web UI, you can filter assets by their tags using **Advanced filters**. You can define filters based on specific criteria, such as a property of an asset, a condition, and a value.
 
 * Filter by `Tags`: The new `Tags` filter is a key-value pair filter. This filter allows you to select a specific tag key such as `department` and then choose a corresponding value such as `finance` to narrow down the asset list.
-
-<figure><img src="../.gitbook/assets/filters.png" alt=""><figcaption><p>Advanced Filters - Tags</p></figcaption></figure>
 
 ## Labels
 
@@ -193,8 +181,6 @@ A system-generated label includes the following information:
   * **N/A**: There are no commits detected by Snyk Essentials.
 
 ### Labels rules overview
-
-<figure><img src="../.gitbook/assets/Inventory menu - Labels column.png" alt=""><figcaption><p>Inventory menu - Labels column</p></figcaption></figure>
 
 Labels are organized into three main categories:
 
@@ -229,8 +215,6 @@ In the Snyk web interface, you can filter assets by their labels using the **Adv
 
 * Filter by `labels`: This filter allows you to select a specific label.
 
-<figure><img src="../.gitbook/assets/Advanced filters by labels.png" alt=""><figcaption><p>Advanced Filters - By Labels</p></figcaption></figure>
-
 ## Developers
 
 You can see the list of all the developers that worked on that specific asset. The details list includes the SCM profile details for code committers to the repository asset.
@@ -244,8 +228,6 @@ You can manually change the business criticality of an asset. Click the critical
 You can change the business criticality of an asset. To manually update it, select the criticality level and select another one from the list.
 
 After manually setting the value of a class, you have the option to lock the value to prevent any potential overriding by a policy that has the Set Asset Class as an action. You can lock the value from the general or summary views of an asset. You can unlock the class value at any time by clicking the lock icon. A pop-up is displayed, asking you for confirmation about unlocking the value.
-
-<figure><img src="../.gitbook/assets/Inventory menu - Lock the value of a class new.png" alt=""><figcaption><p>Inventory menu - Lock the value of a class</p></figcaption></figure>
 
 The Asset Class column is available on the Insights UI for risk-based prioritization, and it has the same functionality as it does here. At the moment, the Asset Class column is available only for repository assets, and applicable only for Snyk Code.
 
@@ -262,7 +244,6 @@ The Risk Factors column lists the potential vulnerabilities and security threats
 Here is a list of the available risk factors:
 
 * [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-deployed.md)
-* [Loaded package](/broken/pages/x5b9XFg7zGtut8eTWBQp)
 * [OS Condition](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-os-condition.md)
 * [Public facing](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-public-facing.md)
 
@@ -320,5 +301,3 @@ The Actions column provides a workflow to set up the SCM integration at the Grou
 If a Group level integration has not been set up, repositories discovered at the Organization level display a **Set up integration** button under the **Actions** column. If you set up the integration at the Group level, this option becomes unavailable.
 
 To add context enrichment, find an asset and select **Set up integration**. For configuration details, see [Snyk SCM Integrations](../developer-tools/scm-integrations/organization-level-integrations/).
-
-<figure><img src="../.gitbook/assets/group-inventory-all-assets-actions-set-up-integration.png" alt="Set up SCM integration at the Organization level from the Actions column"><figcaption><p>Set up SCM integration at the Organization level from the Actions column</p></figcaption></figure>

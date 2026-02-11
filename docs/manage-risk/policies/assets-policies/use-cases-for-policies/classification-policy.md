@@ -1,10 +1,10 @@
 # Classification policy
 
-You can use the **Set Asset Class** action from the Policies view to classify the assets based on importance, where class A is the most important and class D is the least important.&#x20;
+You can use the **Set Asset Class** action from the Policies view to classify the assets based on importance, where class A is the most important and class D is the least important.
 
-You can set the asset class based on:&#x20;
+You can set the asset class based on:
 
-* the repository name &#x20;
+* the repository name
 * the asset labels
 
 {% hint style="info" %}
@@ -17,12 +17,6 @@ If you just started using the classification policy, the recommendation is to fo
 
 The following example filters the assets that contain `sandbox`, `test`, and `to-delete` in their names. In Snyk Essentials, GitHub and GitLab topics are pulled in from the SCM integration and applied to repository assets, so if topics like `PCI-Compliance` have been added to repos in the SCM, Snyk can take those tags in Snyk Essentials and classify those assets as Class A.
 
-<figure><img src="../../../../.gitbook/assets/Create policy.png" alt="AppRisk - Setting up filters for a classification policy"><figcaption><p>Assets Policy  - Setting up filters for a classification policy</p></figcaption></figure>
-
 After you set up the filters, you need to apply a Class D asset classification to those assets.
 
-<figure><img src="../../../../.gitbook/assets/Set action.png" alt="AppRisk - Setting up actions for a classification policy"><figcaption><p>Assets Policy - Setting up actions for a classification policy</p></figcaption></figure>
-
 You can apply a similar pattern and create actions for Class A, B, and C assets, within the same policy.
-
-<figure><img src="../../../../.gitbook/assets/Set Class.png" alt="AppRisk - Setting up multiple actions for a classification policy"><figcaption><p>Assets Policy - Setting up multiple actions for a classification policy</p></figcaption></figure>

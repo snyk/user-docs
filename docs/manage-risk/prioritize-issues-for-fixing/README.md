@@ -89,7 +89,7 @@ You can use the Risk Score at the Snyk Organization level.
 
 ### Prioritize issues when using reports
 
-You can [prioritize issues when using reports](/broken/pages/Xet9BNiX2RviFlrTiatG) to generate reports across an Organization or Group.
+You can [prioritize issues when using reports](../analytics/reports-tab/) to generate reports across an Organization or Group.
 
 You can use this type of prioritization with the Snyk Enterprise Plan. You can use the Risk Score at the Snyk Group or Snyk Organization level.
 
@@ -110,17 +110,9 @@ You can use the Prioritization with Insights at the Snyk Group or Snyk Organizat
 
 Snyk Issues Analytics provides a comprehensive overview of your entire application security program, offering insights into strengths, weaknesses, and opportunities at the tenant level. On the other hand, Snyk Application Analytics focuses specifically on the security and performance of individual applications. This narrower analysis helps pinpoint specific app vulnerabilities and inefficiencies, enabling targeted improvements and more detailed insights at the Snyk Group or Organization level.
 
-### Issue Analytics
+### Analytics
 
-[Issue Analytics](/broken/pages/1m1GoANo0CromJXOD7H1) provides a view into the performance of your AppSec program. You can use Issues Analytics to better understand the strengths and weaknesses of your program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.
-
-You can use this type of prioritization with the Snyk Enterprise Plan.
-
-You can use Issues Analytics at the Snyk tenant level, including both the Snyk Group and Snyk Organization levels.
-
-### Application Analytics
-
-[Application Analytics](/broken/pages/h2ySSQkFfo09XLYR2XTR) for Snyk helps you assess your AppSec program from a top-down approach. It allows you to review applications, teams, and asset classes, and then focus on specific assets. You can improve security by identifying areas for enhancement, recognizing risks, and addressing blind spots. The tool retrieves data from all available groups for the tenant.
+[Analytics](../analytics/) for Snyk helps you assess your AppSec program from a top-down approach. It allows you to review applications, teams, and asset classes, and then focus on specific assets. You can improve security by identifying areas for enhancement, recognizing risks, and addressing blind spots. The tool retrieves data from all available groups for the tenant.
 
 Prioritize the displayed data by using the available filters, dimension views, and specific timeframes.\
 \

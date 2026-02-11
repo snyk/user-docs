@@ -45,8 +45,6 @@ To configure a Snyk Code Security policy, select the organization/s or project a
 | Rule IDs | You can provide any Snyk Code rule ID. You can find Snyk Code rule IDs as part of the SARIF output that you exported using [Snyk CLI](../../../../developer-tools/snyk-cli/).                                                                                    |
 | Severity | Matches all issues that contain a specified severity level. When multiple values are selected, the condition applies to all issues containing any of the selected severity levels (for example, High, Medium, Low).                                              |
 
-<figure><img src="../../../../.gitbook/assets/image (92).png" alt=""><figcaption><p>Adding or Editing a Snyk Code Security policy by navigating to Group > Policies > Snyk Code Security policies</p></figcaption></figure>
-
 ## Manage ignores in Snyk Projects
 
 You can take action from Project issues, but Snyk will apply any ignores to the underlying asset-scoped findings that can span across Snyk Projects, integrations, and branches.
@@ -60,9 +58,7 @@ Project retests typically occur on a nightly or weekly basis, but you can also r
 ### Create an ignore
 
 1. Log in to the Snyk Web UI and navigate to your Group and Organization.
-2.  Open a Project and find an issue card.
-
-    <figure><img src="../../../../.gitbook/assets/issue-card-ignore.png" alt=""><figcaption><p>Issue card overview</p></figcaption></figure>
+2. Open a Project and find an issue card.
 3. Select **Ignore across repository** on an issue card to create an ignore.
 4. Fill in the ignore information and confirm its creation. The issue will be updated and moved from **Open** to **Ignored**.\
    \

@@ -6,9 +6,7 @@ Group administrators can define Open Source and Container security policies, pro
 Security policies are applicable to Snyk Open Source and Snyk Container Projects.
 {% endhint %}
 
-You can [create a security policy and set rules](create-a-security-policy-and-rules.md) by clicking the **Policies** menu option on the Group Overview page to open the Policy manager:
-
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-30 at 10.05.27.png" alt="Policy manager"><figcaption><p>Policy manager</p></figcaption></figure>
+You can [create a security policy and set rules](create-a-security-policy-and-rules.md) by clicking the **Policies** menu option on the Group Overview page to open the Policy manager.
 
 You can [apply a policy to Project attributes](../assign-policies-to-projects.md) or [apply a policy to an Organization](../assign-a-policy-to-an-organization.md).
 

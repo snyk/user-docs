@@ -1,6 +1,6 @@
 # Consistent Ignores for Snyk Code IDE
 
-When you run tests in any of the [four supported Snyk IDE plugins](../../../../developer-tools/snyk-ide-plugins-and-extensions/), the plugins will take into account your ignores.
+When you run tests in any of the [supported Snyk IDE plugins](../../../../developer-tools/snyk-ide-plugins-and-extensions/), the plugins will take into account your ignores.
 
 ## Minimum version required
 
@@ -24,5 +24,3 @@ The IDE display output hides ignored results by default to maintain developer fo
 ## View ignores in Snyk IDE
 
 You can apply filters in the plugin settings to show ignored results alongside open results or in isolation. When you set ignored issues to display, the issues and their details appear in the plugin.
-
-<figure><img src="../../../../.gitbook/assets/snyk-code-ignored-issue-ide.png" alt=""><figcaption><p>View ignores in Snyk IDE</p></figcaption></figure>

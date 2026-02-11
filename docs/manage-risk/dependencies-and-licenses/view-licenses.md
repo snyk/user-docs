@@ -1,8 +1,6 @@
 # View licenses
 
-The **Licenses** tab displays all licenses detected for your Projects, with summaries of all dependencies in your Projects and all of your Projects using the license. This allows you to see which Projects and dependencies have a license. An example follows:
-
-<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-05-11 at 15.38.44.png" alt="Licenses tab"><figcaption><p>Licenses tab</p></figcaption></figure></div>
+The **Licenses** tab displays all licenses detected for your Projects, with summaries of all dependencies in your Projects and all of your Projects using the license. This allows you to see which Projects and dependencies have a license.&#x20;
 
 ## **Field details**
 
@@ -11,8 +9,6 @@ The **Licenses** tab displays all licenses detected for your Projects, with summ
 ## **Licenses tab actions**
 
 The actions appear at the top of the tab.
-
-<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-05-11 at 15.50.22.png" alt="Licenses tab actions"><figcaption><p>Licenses tab actions</p></figcaption></figure></div>
 
 * **Search for Licenses**: Enter free text and begins searching with the first character you type. You can also select multiple packages from the dropdown list that opens when you click the field. You can also click the **Select All** or **Deselect All** links that appear dynamically in the dropdown list.
 * **Export as CSV**: Export issue data in CSV file format.

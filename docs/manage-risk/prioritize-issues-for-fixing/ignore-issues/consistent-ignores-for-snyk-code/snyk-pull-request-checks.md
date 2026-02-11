@@ -14,20 +14,9 @@ Ignores are respected in[ Snyk Code Pull Request Checks](../../../../scan-with-s
 
 ## Example: Snyk Pull Request Check with ignored finding
 
-The following example shows the behavior of a Snyk Code issue in a Pull Request (PR) Check in GitHub before and after it is ignored.
+This example demonstrates Snyk Code behavior in a GitHub Pull Request (PR) Check before and after you ignore an issue.
 
-In the following screenshots, a high-severity issue was detected, causing the Snyk PR Check to fail.
+Snyk detects a high-severity issue and fails the PR Check. To view all findings, including ignored issues, select **View Details** on the SCM integration PR page.
 
-<figure><img src="../../../../.gitbook/assets/view-pr-check-details.png" alt=""><figcaption><p>PR check ignored finding overview in GitHub</p></figcaption></figure>
-
-You can see all findings, including ignored ones, by selecting **View Details** from the PR page of your SCM integration.
-
-<figure><img src="../../../../.gitbook/assets/finding-after-ignore-snyk-web-ui.png" alt=""><figcaption><p>Open and ignored finding in Snyk Web PR check UI</p></figcaption></figure>
-
-Before being ignored, the finding appears as an inline comment in your SCM integration.
-
-<figure><img src="../../../../.gitbook/assets/finding-before-ignore.png" alt=""><figcaption><p>PR check ignored finding details in GitHub</p></figcaption></figure>
-
-After an ignore is applied and a PR check is re-triggered, the inline comment for the ignored finding is collapsed by default and marked as resolved.
-
-<figure><img src="../../../../.gitbook/assets/finding-after-ignored-collapsed-view.png" alt=""><figcaption><p>Collapsed view of a finding in Github</p></figcaption></figure>
+* **Before you ignore the issue:** The finding appears as an inline comment.
+* **After you ignore the issue:** When you re-trigger the PR check, Snyk collapses the inline comment and marks it as resolved.

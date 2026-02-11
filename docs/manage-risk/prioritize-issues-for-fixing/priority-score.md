@@ -14,21 +14,15 @@ You can view Priority Scores in Projects views, Reports, and the API.
 
 There are no settings related to the Priority Score; they are read-only and cannot be hidden. An example follows of Priority Scores displayed in a Project view.
 
-<figure><img src="../../.gitbook/assets/image (170).png" alt="Snyk Priority Score in a Project view"><figcaption><p>Snyk Priority Score in a Project view</p></figcaption></figure>
-
 ## View Priority Score for an issue
 
 Priority Scores are visible for each Issue card, with all issues sorted by score to show you the most pressing issues first.
 
 You can filter issues by Priority Score range in the left sidebar.
 
-<figure><img src="../../.gitbook/assets/screen_shot_2021-07-14_at_1.41.24_pm.png" alt="Filter issues"><figcaption><p>Filter issues</p></figcaption></figure>
-
 ## View issues by Priority Score
 
 The **Issues** tab on the Project details allows you to filter issues by Priority Score. You can find more details on how to filter your issues in the [Fix based on prioritization methods](../../implementation-and-setup/enterprise-implementation-guide/phase-4-create-a-fix-strategy.md#fix-based-on-prioritization-methods) page.
-
-<figure><img src="../../.gitbook/assets/filter issues by score.png" alt="Filter issues by score"><figcaption><p>Filter issues by score</p></figcaption></figure>
 
 ## View Priority Score in the Snyk API
 

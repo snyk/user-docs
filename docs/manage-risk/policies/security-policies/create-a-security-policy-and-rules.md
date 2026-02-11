@@ -2,8 +2,6 @@
 
 To create a new security policy, navigate to **Policies** in your Group menu, and in the Policies manager, expand the **Security policies** category and click **Add new policy**. For details, see [View policies](../view-create-and-modify-policies.md).
 
-<figure><img src="../../../.gitbook/assets/screenshot_2020-10-20_at_10.01.49_am.png" alt="Security policies category expanded"><figcaption><p>Security policies category expanded</p></figcaption></figure>
-
 {% hint style="info" %}
 Select **Snyk Default Security Policy** to change the conditions or actions for a security policy that applies to all Projects in all Organizations in the Group.
 
@@ -13,8 +11,6 @@ Security policies are applicable to Snyk Open Source and Snyk Container Projects
 ## Rules, conditions, and actions
 
 Security policy rules are in the “if, then” format with one or more conditions and an action. An example follows:
-
-<div align="left"><figure><img src="../../../.gitbook/assets/screenshot_2020-07-06_at_11.38.07.png" alt="Security policy rule format with plus sign to add a rule and three dots top right"><figcaption><p>Security policy rule format with plus sign to add a rule and three dots top right</p></figcaption></figure></div>
 
 {% hint style="info" %}
 When you create a new security policy, the first blank rule is created automatically.
@@ -26,7 +22,7 @@ Select the conditions and actions to complete a rule. See [Security policy condi
 * To delete or duplicate a rule, click the three dots at the top right of the rule box.
 
 {% hint style="info" %}
-The order of the rules you create determines the order they will be applied. If multiple rules with the same action type match the same issue, the rule closest to the top takes precedence over any subsequent rules.&#x20;
+The order of the rules you create determines the order they will be applied. If multiple rules with the same action type match the same issue, the rule closest to the top takes precedence over any subsequent rules.
 
 **Example:**
 

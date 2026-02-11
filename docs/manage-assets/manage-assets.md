@@ -18,15 +18,9 @@ Here is a list of all the available inventory tabs:
 
 Each inventory tab may include different counts of assets and scanned artifacts, depending on the grouping context. Otherwise, all columns and data manipulation features are the same on each inventory layout.
 
-The following video summarizes the main features of the Inventory view from the Snyk Web UI.
-
-{% embed url="https://res.cloudinary.com/snyk/video/upload/v1746127384/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-4c_-_v2_-_Inventory_Overview.mp4" %}
-Reviewing asset inventory
-{% endembed %}
-
 ## Assets overview
 
-In the Snyk Enterprise context, you can find information about assets under the following menus: [Inventory](manage-assets.md), [Policies](../manage-risk/policies/assets-policies/), and [Analytics](/broken/pages/h2ySSQkFfo09XLYR2XTR).
+In the Snyk Enterprise context, you can find information about assets under the following menus: [Inventory](manage-assets.md), [Policies](../manage-risk/policies/assets-policies/), and [Analytics](../manage-risk/analytics/).
 
 The main source of information is the **Inventory** menu. Here, you can view, filter, and manage your assets.
 
@@ -44,4 +38,4 @@ Through this interconnected framework, Snyk ensures robust asset protection and 
 
 The table below outlines the asset enrichments provided by each SCM Integration. It highlights which capabilities are available today that are not available due to the SCM provider.
 
-<table data-full-width="false"><thead><tr><th width="212.5364990234375">Capability</th><th>GitHub</th><th>GitLab</th><th>BitBucket Cloud</th><th>BitBucket Server</th><th>Azure DevOps</th></tr></thead><tbody><tr><td>Organization/Workspace</td><td>✅​</td><td>✅​</td><td>✅​</td><td>✅​</td><td>✅​</td></tr><tr><td>SCM Projects</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Contributors</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>Teams</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>Languages (tags)</td><td>✅</td><td>✅</td><td>✅ When manually set up</td><td>❌</td><td>✅</td></tr><tr><td>Tags</td><td>✅ GitHub topics / GitHub custom properties</td><td>✅ GitLab topics</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td>Visibility</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Archive Repos</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="144.1553955078125">Capability</th><th width="103.8853759765625">GitHub</th><th width="96.415771484375">GitLab</th><th width="110.57470703125">BitBucket Cloud</th><th width="112.80908203125">BitBucket Server</th><th width="99.44970703125">Azure DevOps</th></tr></thead><tbody><tr><td>Org/Workspace</td><td>✅​</td><td>✅​</td><td>✅​</td><td>✅​</td><td>✅​</td></tr><tr><td>SCM Projects</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Contributors</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>Teams</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>Languages (tags)</td><td>✅</td><td>✅</td><td>✅ When manually set up</td><td>❌</td><td>✅</td></tr><tr><td>Tags</td><td>✅ GitHub topics / GitHub custom properties</td><td>✅ GitLab topics</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td>Visibility</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Archive Repos</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr></tbody></table>

@@ -9,7 +9,6 @@ Customize prioritization using the Set up Insights option and an application tha
 The Set up insights product operates by providing you with the following risk factors for your vulnerabilities:
 
 * [Deployed](../assets-and-risk-factors/risk-factor-deployed.md): Is my code and container image deployed anywhere?
-* [Loaded package](./#loaded-package-risk-factor): Has a third-party package that is the dependency of an image been loaded?
 * [OS condition](../assets-and-risk-factors/risk-factor-os-condition.md): Does this vulnerability apply to my operating system?
 * [Public facing](../assets-and-risk-factors/risk-factor-public-facing.md): Does my container have any internet exposure?
 
@@ -73,7 +72,7 @@ All these settings can be found in the Snyk Web UI, under Group Settings, the Se
 
 ### Risk factors
 
-You can enable or disable the available risk factors: [Deployed](../assets-and-risk-factors/risk-factor-deployed.md), [Loaded package](./#loaded-package-risk-factor), [OS condition](../assets-and-risk-factors/risk-factor-os-condition.md), [Public facing](../assets-and-risk-factors/risk-factor-public-facing.md). When a risk factor is disabled, it will not be used to calculate issues.
+You can enable or disable the available risk factors: [Deployed](../assets-and-risk-factors/risk-factor-deployed.md), [OS condition](../assets-and-risk-factors/risk-factor-os-condition.md), [Public facing](../assets-and-risk-factors/risk-factor-public-facing.md). When a risk factor is disabled, it will not be used to calculate issues.
 
 You can enable or disable the risk factors from Snyk web UI under Group **Settings** > **Settings** option > **Risk factors**.
 

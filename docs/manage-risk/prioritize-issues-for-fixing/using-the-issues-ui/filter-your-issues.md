@@ -32,5 +32,3 @@ In an initial triage, you want to look at OS condition, Deployed, and Public fac
 When you filter based on the Asset class and an issue is found in two different repositories with two different classes assigned, the class with the highest priority is displayed in Snyk.
 
 When you want to split out Open Source and Snyk Code issues, use a product filter.
-
-<div align="left"><figure><img src="../../../.gitbook/assets/image (5).png" alt="Add filters option from the Issues page" width="303"><figcaption><p>Add filters option from the Issues page</p></figcaption></figure></div>

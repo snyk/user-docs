@@ -124,8 +124,6 @@ For deeper analysis, use the dashboard to see where assets are discovered and ho
 
 For GitHub and Azure, ensure that the Organization is included in the profile. To see the Organization name, click an asset and navigate to the **Attributes** tab.
 
-<figure><img src="../.gitbook/assets/SCM_org_URL_asset_attribute.png" alt=""><figcaption></figcaption></figure>
-
 If your profile includes the Organization, check the token permissions and ensure access to the unenriched repositories.
 
 For GitLab and BitBucket, ensure that the Group-level tokens have access and the right permissions for the Organization.

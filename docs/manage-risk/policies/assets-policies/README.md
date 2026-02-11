@@ -2,21 +2,15 @@
 
 ## Overview
 
-With Policies, you can easily automate the process of adding business context and receiving notifications.&#x20;
+With Policies, you can easily automate the process of adding business context and receiving notifications.
 
 {% hint style="info" %}
-After a policy is created, it is run in a maximum of 3 hours after creation, then once every 3 hours.&#x20;
+After a policy is created, it is run in a maximum of 3 hours after creation, then once every 3 hours.
 
 If your policy is set to run daily, then the policy is run 3 hours after the 24-hour period ends. You can always manually run a policy by using the Run button.
 {% endhint %}
 
 Access the Snyk Essentials policies by positioning yourself at the Group level, selecting **Policies**, then **Assets**.
-
-The following video presents an overview of the types of policies you can create from the Policies view.
-
-{% embed url="https://res.cloudinary.com/snyk/video/upload/v1737656954/snyk-learn/product-training-videos/Snyk_Essentials_and_Snyk_AppRisk_-5a_-_v1_-_Policy_Overview.mp4" %}
-Overview of asset policies
-{% endembed %}
 
 {% hint style="info" %}
 [Manage assets](../../../manage-assets/manage-assets.md) and [assets policies](./) are interconnected. Before setting up any new policy, ensure you have reviewed and filtered your assets from the Inventory menu.
@@ -34,7 +28,7 @@ Common use cases for policies include:
 
 ### New asset notifications
 
-&#x20;Notify members of the AppSec team when new assets meeting certain criteria are discovered. For example, you may send a Slack message to the infra team if new repository assets that leverage Terraform as a technology are detected by Snyk Essentials.
+Notify members of the AppSec team when new assets meeting certain criteria are discovered. For example, you may send a Slack message to the infra team if new repository assets that leverage Terraform as a technology are detected by Snyk Essentials.
 
 When setting up a notification action (email or Slack) for a policy, you can include a link to the relevant assets. Each notification will list all the assets impacted by the policy. You can view the assets individually, or you can see a summary of all the assets by clicking the **Click Here** option in the notification. The list of assets displayed in the email notification is automatically generated.
 
@@ -44,7 +38,7 @@ Classify repository assets according to their business criticality from A (most 
 
 ### Asset tagging
 
-Categorize and label repository assets with [asset tags](../../../manage-assets/assets-inventory-components.md#tags) to filter the asset inventory.&#x20;
+Categorize and label repository assets with [asset tags](../../../manage-assets/assets-inventory-components.md#tags) to filter the asset inventory.
 
 * **GitHub custom properties** - lists the GitHub custom properties associated with your GitHub repository as a tag
 * **User-defined tags** are customizable, as you can define their logic through [Assets Policies](./). For example, you can set tags to label a repository that comes from a specific source, such as GitHub. Tags associated with assets are identified in the UI with the **Asset policy tags** name.

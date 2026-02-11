@@ -10,7 +10,7 @@ Build custom dashboards, access enhanced metrics, and explore analytics at the T
 The Snyk Analytics allows you to:
 
 * Select and arrange widgets from the inventory to create a personalized dashboard.
-* Access the [Saved Views](/broken/pages/ESO9SlllNm4KuC5roygB#saved-views) feature.
+* Access the [Saved Views](reports-tab/#saved-views) feature.
 * Discover and access pre-built reports for specific Groups in your Organization.
 * Explore issues and assets in detail directly from the dashboard.
 

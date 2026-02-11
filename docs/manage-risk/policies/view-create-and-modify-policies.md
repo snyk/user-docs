@@ -8,11 +8,7 @@ You must be a Group administrator to view, create, and modify policies for that 
 
 Select the **Policies** menu option to see the policies in your Group, arranged by category, [License policies](license-policies/), and [Security policies](security-policies/).
 
-<div align="left"><figure><img src="../../.gitbook/assets/Policies-menu.png" alt="View policies"><figcaption><p>View policies</p></figcaption></figure></div>
-
-Expand a category to see a list of the policies in that category:
-
-<figure><img src="../../.gitbook/assets/snyk-policy-manager.png" alt="License policies list expanded"><figcaption><p>License policies list expanded</p></figcaption></figure>
+Expand a category to see a list of the policies in that category.
 
 {% hint style="info" %}
 This list includes the [default policy](view-create-and-modify-policies.md#default-policies), which is automatically created for new Groups for each policy category and cannot be removed.
@@ -21,8 +17,6 @@ This list includes the [default policy](view-create-and-modify-policies.md#defau
 ### Policy details
 
 When you expand a category, the screen shows the policies applied to **Project attributes** and applied to **Organizations**. You can click to **Learn which policies take precedence** in each category. You can also search for a particular policy.
-
-<figure><img src="../../.gitbook/assets/screenshot_2021-03-26_at_11.04.50_am.png" alt="Policy manager screen including attributes and Organizations to which each policy is applied"><figcaption><p>Policy manager screen including attributes and Organizations to which each policy is applied</p></figcaption></figure>
 
 ### Default policies
 
@@ -46,19 +40,15 @@ The Policy Manager allows you to [create](view-create-and-modify-policies.md#cre
 5. Add rules to the policy. See [Create a license policy and rules](license-policies/create-a-license-policy-and-rules.md) or [Create a security policy and rules](security-policies/create-a-security-policy-and-rules.md).
 6. Click **Submit** to create and save the policy.
 
-<div align="left"><figure><img src="../../.gitbook/assets/screenshot_2020-05-26_at_9.47.26_am.png" alt="Create a policy" width="563"><figcaption><p>Create a policy</p></figcaption></figure></div>
-
 ## Edit a policy
 
 1. Click the name of an existing policy in the Policy Manager tab to make any changes.
 2. Change the [Organizations](assign-a-policy-to-an-organization.md), [attributes](assign-policies-to-projects.md), and rules as you wish.
 3. Click **Submit** to save your changes.
 
-## Duplicate or delete a policy&#x20;
+## Duplicate or delete a policy
 
 To duplicate or delete a policy, click the three dots on the right-hand side:
-
-<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-03-28 at 16.42.45.png" alt="Other policy actions"><figcaption><p>Duplicate or delete a policy</p></figcaption></figure></div>
 
 Duplicating a policy copies the rules of a policy but not the assigned Organizations or Projects. The new policy is automatically called **Copy of (Policy Name)…** and can be edited as [explained in Edit a policy](view-create-and-modify-policies.md#edit-a-policy).
 

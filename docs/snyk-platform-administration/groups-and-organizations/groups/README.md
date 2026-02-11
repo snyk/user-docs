@@ -12,13 +12,9 @@ Visit [Structure your account for high application performance](../../structure-
 
 Use Group-level options to view [Organizations](./#group-organizations), [reports](./#group-reports), [dependencies](./#group-dependencies), and [policies](./#group-policies) across all of the Organizations in your Group, configure your [Group settings](./#group-settings), and view all the [users](./#group-members) in a Group.
 
-<figure><img src="../../../.gitbook/assets/group-level-options.png" alt=""><figcaption><p>Group-level options for Enterprise plan users</p></figcaption></figure>
-
 ### Group Organizations
 
 Select **Organizations** to view all the Organizations you have access to and your assigned role inside each one:
-
-<figure><img src="../../../.gitbook/assets/group-orgs-list.png" alt=""><figcaption><p>A list of all the Organizations a user has access to</p></figcaption></figure>
 
 If your Group is set up to let its users join Organizations, you also see a list of all the Organizations in the Group and options to join the Organizations where you are not a member.
 
@@ -28,9 +24,7 @@ For a detailed breakdown of user roles and their associated access permissions, 
 
 ### Group reports
 
-Select [**Reports**](/broken/pages/ESO9SlllNm4KuC5roygB) to view the vulnerability status of the Organizations in your Group in one place as a report:
-
-<div align="left"><figure><img src="../../../.gitbook/assets/Reports.png" alt=""><figcaption><p>Group report filtered to show open issues</p></figcaption></figure></div>
+Select [**Reports**](../../../manage-risk/analytics/reports-tab/) to view the vulnerability status of the Organizations in your Group in one place as a report.
 
 ### Group inventory
 
@@ -42,19 +36,19 @@ Select [**Issues**](../../../manage-risk/prioritize-issues-for-fixing/) to bette
 
 ### Group dependencies
 
-Select [**Dependencies**](../../../manage-risk/dependencies-and-licenses/) to view the dependencies and license issues for your Groups:
-
-<div align="left"><figure><img src="../../../.gitbook/assets/dependencies (1).png" alt=""><figcaption><p>View Group dependencies</p></figcaption></figure></div>
+You can [view dependencies](../../../manage-risk/dependencies-and-licenses/view-dependencies.md) and [license information](https://docs.snyk.io/manage-risk/dependencies-and-licenses/view-licenses) for all Projects in your Group or Organization using the **Dependencies** option in your Group or Organization menu.
 
 ### Group Policies
 
-Select [**Policies**](../../../manage-risk/policies/) to view the license and security policies or the assets policies for your Group.
+With Policies, you can easily automate the process of adding business context and receiving notifications.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Policies menu with focus on Assets tab</p></figcaption></figure>
+After a policy is created, it is run in a maximum of 3 hours after creation, then once every 3 hours.
+
+If your policy is set to run daily, then the policy is run 3 hours after the 24-hour period ends. You can always manually run a policy by using the Run button.
 
 ### Group integrations
 
-Select **Integrations** to view and configure the available integrations for both [SCM integrations](../../../developer-tools/scm-integrations/group-level-integrations/) and [third-party integrations](../../../integrations/integrate-with-snyk.md).
+Select **Integrations** to view and configure the available integrations for [SCM integrations](../../../developer-tools/scm-integrations/group-level-integrations/).
 
 ### Group members
 

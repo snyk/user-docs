@@ -7,20 +7,9 @@ This use case demonstrates how to set up and receive a notification every time a
 To follow this example, you need to create four filters that find:
 
 * **Filter 1**: Assets that are of type Repository.
-
-<figure><img src="../../../../.gitbook/assets/image (139).png" alt="Filter configuration for asset type" width="352"><figcaption><p>Filter configuration for asset type</p></figcaption></figure>
-
 * **Filter 2**: assets that are Class A.
-
-<figure><img src="../../../../.gitbook/assets/image (140).png" alt="Filter configuration for asset class" width="354"><figcaption><p>Filter configuration for asset class</p></figcaption></figure>
-
 * **Filter 3**: tags that include relevant programming languages (like Apex, ASP, C, C#, C++, CMake, Go, HTML, Java, JavaScript, Kotlin, PHP, Python, Ruby, Scala, Swift, TypeScript, VisualBasic, Handlebars, Makefile, Objective-C).
-
-<figure><img src="../../../../.gitbook/assets/image (141).png" alt="Filter configuration for tags" width="349"><figcaption><p>Filter configuration for tags</p></figcaption></figure>
-
 * **Filter 4**: Do not have Snyk Open Code or Snyk Open Source scan coverage.
-
-<figure><img src="../../../../.gitbook/assets/Coverage filter.png" alt="Filter configuration for coverage control" width="353"><figcaption><p>Filter configuration for coverage control</p></figcaption></figure>
 
 After setting up the filter conditions, you need to choose the **Send Email** action.
 
@@ -37,8 +26,6 @@ This is how your policy should look after all filters and actions are set.
 <figure><img src="../../../../.gitbook/assets/image (182).png" alt="Snyk AppRisk - Setting up a Notification policy"><figcaption><p>Assets Policy - Setting up a notification policy</p></figcaption></figure>
 
 You will receive an email notification after including the **Link to Assets** option in the Body field. You can access the assets from the notification individually, or view them in an aggregated form by clicking the **Click Here** link. The list of assets displayed in the email notification is automatically generated.
-
-<figure><img src="../../../../.gitbook/assets/image (79).png" alt="" width="375"><figcaption><p>Assets Policy - notification example from the Send Email action</p></figcaption></figure>
 
 {% hint style="info" %}
 After an email notification policy is created, it is run in a maximum of 3 hours after creation, then once every 3 hours.
