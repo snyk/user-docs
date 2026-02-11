@@ -28,7 +28,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Snyk Studio
 
 * The [Agentic security with Snyk Studio](integrations/snyk-studio-agentic-integrations/) documentation has been restructured to accurately reflect the workflow you would go through when using Snyk Studio for the first time, and using the available [Quickstart guides](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/).
-* The [Snyk Studio Adoption](integrations/snyk-studio-agentic-integrations/usage-analytics.md) report is now available under [Redesigned analytics](manage-risk/analytics/redesigned-analytics.md#snyk-studio-adoption).
+* The [Snyk Studio Adoption](integrations/snyk-studio-agentic-integrations/usage-analytics.md) report is now available under [Redesigned analytics](manage-risk/analytics/overview-tab.md#snyk-studio-adoption).
 * The [supported tools list](integrations/snyk-studio-agentic-integrations/#mcp-server-supported-tools) was updated to clarify that Snyk supports `snyk_send_feedback`.
 
 ### Snyk supported languages
@@ -43,7 +43,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Other updates
 
 * [Container monitor](developer-tools/snyk-cli/commands/container-monitor.md) has been updated to include a new CLI option `--prune-repeated-subdependencies` to prune depgraphs for large container scans.&#x20;
-* The [redesigned Snyk Analytics experience](manage-risk/analytics/redesigned-analytics.md) is now in General Availability.
+* The [redesigned Snyk Analytics experience](manage-risk/analytics/overview-tab.md) is now in General Availability.
 * The [Bitbucket Cloud documentation](developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud.md) has been updated to make it clear that scopeless API tokens are not supported for this integration.
 
 ## December 2025
@@ -147,7 +147,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * `Raise Support Community Cases` and `View Support Community Cases` Tenant level permissions have been added. To learn more about which Tenant roles these permissions apply to, visit Pre-defined roles, [Tenant-level permissions](snyk-platform-administration/user-roles/pre-defined-roles.md#tenant-level-permissions).
 * The [Analytics](manage-risk/analytics/) menu now updates its data daily instead of hourly.
 * Learn how to resolve duplicated and unenriched assets discovered outside Group and Organization-level SCM integrations.
-* You can now [exclude specific values](manage-risk/reporting/) when you filter your reports.
+* You can now [exclude specific values](/broken/pages/ESO9SlllNm4KuC5roygB) when you filter your reports.
 
 ## August 2025
 
@@ -170,7 +170,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Other updates**
 
-* A new [Risk exposure report](manage-risk/reporting/available-snyk-reports.md#risk-exposure-report) has been released, providing you with a single, consolidated view of your security risks.
+* A new [Risk exposure report](/broken/pages/Xet9BNiX2RviFlrTiatG#risk-exposure-report) has been released, providing you with a single, consolidated view of your security risks.
 * The rollout to General Availability has started for the [Pull Request Experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md).
 * The [Operating system distributions supported by Snyk Container](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) now includes Debian 14 - Forky.
 * Snyk now supports [Ruby versions](supported-languages/supported-languages-list/ruby.md#technical-specifications) 3.3 \[3.3.9] and 3.4 \[3.4.5]. If the Ruby version is not specified in the gemfile, it will default to version 3.1.
@@ -217,9 +217,9 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Other updates**
 
 * A new architecture for user documentation on developer tools is now available. This update groups the main developer tools into a single section and distinctly separates them from the integrations documentation.
-* [Analytics](manage-risk/analytics/redesigned-analytics.md) has a fresh new look.
+* [Analytics](manage-risk/analytics/overview-tab.md) has a fresh new look.
 * Added [Snyk Assist](discover-snyk/snyk-learn/snyk-assist.md) documentation.
-* The [Developer IDE and CLI usage](manage-risk/reporting/available-snyk-reports.md#developer-ide-and-cli-usage) report has been improved with MCP-related data to provide better visibility into MCP usage.
+* The [Developer IDE and CLI usage](/broken/pages/Xet9BNiX2RviFlrTiatG#developer-ide-and-cli-usage) report has been improved with MCP-related data to provide better visibility into MCP usage.
 * [Okta custom mapping documentation](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-okta.md#construct-a-value-expression-that-creates-a-roles-array-to-be-sent-to-snyk) has been updated to clarify handling of the `Arrays.flatten(appuser.snyk_orgs)` value during setup.
 
 ## June 2025
@@ -336,7 +336,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 * The Generated Pull Requests report is now available in Early Access. This report provides an overview of how Fix, Backlog, and Upgrade PRs are used and highlights the efficiency of PR merges.
 * [The Pull Request Experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md) now supports GitLab and Azure Repos SCM integrations, with a few [limitations](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md#inline-comments).
-* New Snyk Code filters and columns were added to [Snyk Reports](manage-risk/reporting/issue-columns-dictionary.md#issue-characteristics) and [Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary.md): File Path, Code Region, and Asset Finding ID.
+* New Snyk Code filters and columns were added to [Snyk Reports](manage-risk/analytics/reports-tab/issue-columns-dictionary.md#issue-characteristics) and [Snowflake Data Share](manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary.md): File Path, Code Region, and Asset Finding ID.
 * Snyk Code now supports [Rust](supported-languages/supported-languages-list/rust.md) and [Groovy](supported-languages/supported-languages-list/groovy.md) available in Early Access and accessible from Snyk Preview.
 
 ### Snyk Essentials
@@ -352,7 +352,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Other updates**
 
 * The PCI-DSS v4.0.1 report is now available in Early Access. This report leverages Snyk scan results to assess, prove, and improve readiness for PCI-DSS AppSec compliance regarding SCA and SAST vulnerabilities.
-* The [Repositories Tested in CI/CD report](manage-risk/reporting/available-snyk-reports.md#repositories-tested-in-ci-cd-report) is available in Early Access. This report tracks Snyk CI/CD testing to prevent vulnerable production deployments.
+* The [Repositories Tested in CI/CD report](/broken/pages/Xet9BNiX2RviFlrTiatG#repositories-tested-in-ci-cd-report) is available in Early Access. This report tracks Snyk CI/CD testing to prevent vulnerable production deployments.
 * [Severity levels](manage-risk/prioritize-issues-for-fixing/severity-levels.md#why-are-there-multiple-cvss-scores-for-the-same-vulnerability) now provide more details about the CVSS v4.0.
 
 ## February 2025
@@ -362,7 +362,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * The Integrations UI at the Group level has been enhanced to improve readability and actionability and provide inline instructions and inline profile helpers.
 * Group-level [Integrations documentation](integrations/integrate-with-snyk.md#integrations-syncing-time) has been updated with new, more accurate sync times.
 * The [asset filter](manage-risk/policies/assets-policies/create-policies.md) documentation has been consolidated into one section, and it now links to all relevant areas, such as Inventory and Asset Policy filters.
-* [Issues Analytics](manage-risk/analytics/issues-analytics.md) is now available with a General Availability release status.
+* [Issues Analytics](/broken/pages/1m1GoANo0CromJXOD7H1) is now available with a General Availability release status.
 
 ### Other updates
 
@@ -402,8 +402,8 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * The [Supported languages](supported-languages/supported-languages-package-managers-and-frameworks.md) page has been reorganized to provide detailed information about language availability for each Snyk product. Additionally, it provides a list of package managers, frameworks, and features for each supported language.
 * A service account using OAuth 2.0 can now be [created through the Snyk Web UI](implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md#create-oauth-service-accounts-through-the-ui).
 * The [API index ](snyk-api/api-endpoints-index-and-tips/)now includes entries for each endpoint mentioned in the Snyk user docs.
-* The[ Developer IDE and CLI usage](manage-risk/reporting/available-snyk-reports.md#developer-ide-and-cli-usage) report has been enhanced with additional functionalities: **Developer email address** and **PDF export**.
-* The [Vulnerabilities Detail](manage-risk/reporting/available-snyk-reports.md#vulnerabilities-detail-report) report has been enhanced with additional functionalities, such as **Target indication** and **Column picker**.
+* The[ Developer IDE and CLI usage](/broken/pages/Xet9BNiX2RviFlrTiatG#developer-ide-and-cli-usage) report has been enhanced with additional functionalities: **Developer email address** and **PDF export**.
+* The [Vulnerabilities Detail](/broken/pages/Xet9BNiX2RviFlrTiatG#vulnerabilities-detail-report) report has been enhanced with additional functionalities, such as **Target indication** and **Column picker**.
 
 ## October 2024
 
@@ -421,7 +421,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk Integrations**
 
-* [Snowflake Data Share](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/) is now in [GA](discover-snyk/getting-started/snyk-release-process.md).
+* [Snowflake Data Share](manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/) is now in [GA](discover-snyk/getting-started/snyk-release-process.md).
 * [Snyk SCM integrations](developer-tools/scm-integrations/organization-level-integrations/) has been updated with additional notices relating to repository retrieval and permission or scope modifications after initial configuration.
 * GitHub Cloud App has been added to feature support notices for Fix, Backlog, and Upgrade PRs.
 * Snyk SCM integrations has been updated to include a table detailing the [permissions and scopes](developer-tools/scm-integrations/user-permissions-and-access-scopes.md#github-cloud-app-permission-requirements) required for the GitHub Cloud App.
@@ -451,7 +451,7 @@ The Universal Broker feature is now available in Early Access. The Universal Bro
 
 ### Snyk Integrations
 
-The Snowflake Data Share section has been updated to include a [Data Share Dictionary](manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary.md), designed to help you navigate and build your dataset.
+The Snowflake Data Share section has been updated to include a [Data Share Dictionary](manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary.md), designed to help you navigate and build your dataset.
 
 ### Other updates
 
@@ -511,6 +511,6 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 ### **Other updates**
 
-* **Snyk Reports:** The [issue column dictionary](manage-risk/reporting/issue-columns-dictionary.md#issue-vulnerability-details) includes new filters and columns for Jira (JIRA ISSUES LIST, LATEST JIRA ISSUE) and EPSS (EPSS SCORE, EPSS PERCENTILE). This allows you to manage your work with Jira and to include EPSS in your prioritization steps.
+* **Snyk Reports:** The [issue column dictionary](manage-risk/analytics/reports-tab/issue-columns-dictionary.md#issue-vulnerability-details) includes new filters and columns for Jira (JIRA ISSUES LIST, LATEST JIRA ISSUE) and EPSS (EPSS SCORE, EPSS PERCENTILE). This allows you to manage your work with Jira and to include EPSS in your prioritization steps.
 * **Snyk Security:** Snyk has improved the prioritization workflow and risk assessment by adopting [CVSS V4.0](manage-risk/prioritize-issues-for-fixing/severity-levels.md#severity-levels-and-cvss) as the default evaluation for new vulnerabilities.
 * **Fix code vulnerabilities automatically:** [DeepCode AI Fix](scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md#snyk-agent-fix-language-support) is now available in AWS Environments and JetBrains IDEs. If you use AWS multi-tenant environments, turn on the Snyk Preview [Snyk Code Fix Suggestions](scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md#enable-snyk-agent-fix) and retest with Snyk in your IDE.

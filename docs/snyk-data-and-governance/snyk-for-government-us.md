@@ -42,8 +42,8 @@ See [Single Sign-On (SSO) for authentication to Snyk](../implementation-and-setu
 
 ## Reporting and data not available
 
-* [Legacy reporting](../manage-risk/reporting/legacy-reports/)
-* [Issues Analytics](../manage-risk/analytics/issues-analytics.md)
+* [Legacy reporting](/broken/pages/-MgktriEEa4jLtivq8XP)
+* [Issues Analytics](/broken/pages/1m1GoANo0CromJXOD7H1)
 * [Insights](../manage-risk/prioritize-issues-for-fixing/using-the-issues-ui/)
 
 ## Platform features not available

@@ -16,7 +16,7 @@ Customers can find the most serious problems that they must resolve, address tho
 
 ## Reports
 
-Use Snyk [Reporting](reporting/) to track issues and their resolution.
+Use Snyk [Reporting](/broken/pages/ESO9SlllNm4KuC5roygB) to track issues and their resolution.
 
 The following reports are available:
 
@@ -26,7 +26,7 @@ The following reports are available:
 * Cloud Compliance Issues
 * Developer IDE and CLI usage
 
-For more information, see [Available Snyk Reports](reporting/available-snyk-reports.md).
+For more information, see [Available Snyk Reports](/broken/pages/Xet9BNiX2RviFlrTiatG).
 
 ## Risk Score
 

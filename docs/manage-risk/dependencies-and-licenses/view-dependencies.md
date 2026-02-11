@@ -4,7 +4,7 @@ The **Dependencies** tab acts as a Bill Of Materials (BOM) for all dependencies 
 
 Dependency reports show details about the packages included in your Projects, including their full names, the version of the package currently used, the Projects in which they are used, and a summary of the issues they contain:
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (20) (1).png" alt="Dependencies tab"><figcaption><p>Dependencies tab</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (20) (1).png" alt="Dependencies tab"><figcaption><p>Dependencies tab</p></figcaption></figure></div>
 
 Examining the details for each package can help you determine the dependency health of your packages.
 
@@ -16,7 +16,7 @@ Examining the details for each package can help you determine the dependency hea
 
 The actions appear at the top of the tab.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-11 at 13.19.55.png" alt="Dependencies tab actions"><figcaption><p>Dependencies tab actions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-11 at 13.19.55.png" alt="Dependencies tab actions"><figcaption><p>Dependencies tab actions</p></figcaption></figure>
 
 * **Search for Dependencies**: Start typing to search for a package. To view the results for multiple packages, select them from the dropdown list that opens when you click the field. You can also click the **Select All** or **Deselect All** links that appear dynamically in the dropdown list.
 *   **Dependency filters**: Select specific Project types and dependency health status to mark the packages to be displayed. Only issues matching all selected criteria are displayed.

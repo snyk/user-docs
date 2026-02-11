@@ -35,8 +35,8 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
   * [Snyk CLI pnpm support](../../supported-languages/supported-languages-list/javascript/#support-for-pnpm)
   * [Improved Gradle SCM scanning](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning)
 * Reports
-  * [Repositories tested in CI/CD report](../../manage-risk/reporting/available-snyk-reports.md)
-  * [PCI-DSS v4.0.1 report](../../manage-risk/reporting/available-snyk-reports.md#pci-dss-v4.0.1-report)
+  * [Repositories tested in CI/CD report](/broken/pages/Xet9BNiX2RviFlrTiatG)
+  * [PCI-DSS v4.0.1 report](/broken/pages/Xet9BNiX2RviFlrTiatG#pci-dss-v4.0.1-report)
 
 ### Deprecated features
 

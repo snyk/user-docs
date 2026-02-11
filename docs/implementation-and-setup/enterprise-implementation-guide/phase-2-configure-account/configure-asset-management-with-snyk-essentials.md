@@ -121,4 +121,4 @@ BitBucket cannot automatically detect the language used in the source code from 
 
 #### Asset Dashboard Report
 
-The [Asset Dashboard](../../../manage-risk/reporting/available-snyk-reports.md#asset-dashboard) provides a comprehensive overview of your application and security controls. It displays essential data such as the status and trends of open issues, control coverage, and repository metadata.
+The [Asset Dashboard](/broken/pages/Xet9BNiX2RviFlrTiatG#asset-dashboard) provides a comprehensive overview of your application and security controls. It displays essential data such as the status and trends of open issues, control coverage, and repository metadata.

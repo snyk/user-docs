@@ -185,6 +185,6 @@ Suppressing vulnerabilities carries a level of risk, so you can make this functi
 When Consistent Ignores is enabled, the **Group and Org Admin (Default user roles only)** configuration is disregarded.
 {% endhint %}
 
-If you have access to the Snyk Reporting feature, and use the new [Snyk Reports](../../reporting/available-snyk-reports.md), you can display an Issue Status report showing only the open, ignored issues.
+If you have access to the Snyk Reporting feature, and use the new [Snyk Reports](/broken/pages/Xet9BNiX2RviFlrTiatG), you can display an Issue Status report showing only the open, ignored issues.
 
-If you use the [Legacy reports](../../reporting/legacy-reports/), you can see an overview of how many issues in the Projects in your Organization are ignored, with an option to filter the issues so you can drill down into each one. If the issue was ignored in the Snyk Web UI, Snyk includes a credit so you can see who initiated it.
+If you use the [Legacy reports](/broken/pages/-MgktriEEa4jLtivq8XP), you can see an overview of how many issues in the Projects in your Organization are ignored, with an option to filter the issues so you can drill down into each one. If the issue was ignored in the Snyk Web UI, Snyk includes a credit so you can see who initiated it.

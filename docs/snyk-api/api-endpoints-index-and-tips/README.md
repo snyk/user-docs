@@ -672,8 +672,8 @@ The V1 Reporting API underlies Snyk legacy reporting. Using the V1 Reporting API
 
 The rate limit is up to 70 requests per minute, per user. For all requests above the limit, the response will have the status code `429: Too many requests`, until requests stop for the duration of the rate-limiting interval (one minute). For more information see [Rate limiting for V1 API](../v1-api.md#rate-limiting).
 
-**More information:** [Legacy reports](../../manage-risk/reporting/legacy-reports/);\
-[Dependencies and licenses](../../manage-risk/reporting/dependencies-and-licenses/)
+**More information:** [Legacy reports](/broken/pages/-MgktriEEa4jLtivq8XP);\
+[Dependencies and licenses](../../manage-risk/dependencies-and-licenses/)
 
 ### [Get list of issues](../reference/reporting-api-v1.md#reporting-issues)
 

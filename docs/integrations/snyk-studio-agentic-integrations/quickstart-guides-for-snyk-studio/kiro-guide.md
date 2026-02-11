@@ -17,11 +17,11 @@ Snyk Studio provides Amazon Kiro users with a unique, customized power to bypass
 
 Navigate to the Powers panel in your Kiro agentic development environment.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="View of the Powers panel in Kiro"><figcaption><p>View of the Powers panel in Kiro</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="View of the Powers panel in Kiro"><figcaption><p>View of the Powers panel in Kiro</p></figcaption></figure>
 
 Click **Add Custom Power**. When the pop-up appears, select **Import Power from GitHub**.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Add a Custom Power in Kiro by importing from GitHub</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p>Add a Custom Power in Kiro by importing from GitHub</p></figcaption></figure>
 
 When prompted, copy and paste the following URL path into the window:
 

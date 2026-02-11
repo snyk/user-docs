@@ -4,7 +4,7 @@
 
 ## Reporting
 
-The Snyk platform has a variety of [available reports](../../../../manage-risk/reporting/available-snyk-reports.md) at the Organization and Group level, and [issue analytics](../../../../manage-risk/analytics/issues-analytics.md) to provide deeper insights at the tenant level. This guide covers a few of the key reports and capabilities.
+The Snyk platform has a variety of [available reports](/broken/pages/Xet9BNiX2RviFlrTiatG) at the Organization and Group level, and [issue analytics](/broken/pages/1m1GoANo0CromJXOD7H1) to provide deeper insights at the tenant level. This guide covers a few of the key reports and capabilities.
 
 ## Issues Detail
 
@@ -28,7 +28,7 @@ The SLA Management report allows you to stay on top of any SLAs your company is 
 
 ## Issues Analytics
 
-Analytics can be accessed at the tenant level. This view breaks down the total issue count into baseline, preventable, and non-preventable issues. More details on this breakdown can be found [here](../../../../manage-risk/analytics/issues-analytics.md#delineation-of-how-risk-is-introduced), but the most important thing to know is that:
+Analytics can be accessed at the tenant level. This view breaks down the total issue count into baseline, preventable, and non-preventable issues. More details on this breakdown can be found [here](/broken/pages/1m1GoANo0CromJXOD7H1#delineation-of-how-risk-is-introduced), but the most important thing to know is that:
 
 * Baseline issues are the issues identified during the first import of the repository.
 * Preventable issues are known issues that could have been identified earlier on in the SDLC. In other words, the issue could have been caught by a Snyk PR check.
@@ -40,11 +40,9 @@ This is a small taste of what reporting has to offer. Check out more of the Snyk
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfS5UzFsGMM5_N5fK6iFLN16rFFfSmj3W9BXkmDnZOvvOBoUjCIQD6j1afOaN9PySsB-MI4TNLtKdgFbVk1OMe5u1uCYDSKv1pjhkaUSqhGspmGqOggsPx5XCK7IZGVv7QQmN5NqQ?key=i_CNrr-DvB8PGUAzq09BT3pc)
 
 {% hint style="info" %}
-
-
 Additional Resources
 
 * [Docs: Analytics](../../../../manage-risk/analytics/)
-* [Docs: Reports](../../../../manage-risk/reporting/)
+* [Docs: Reports](/broken/pages/ESO9SlllNm4KuC5roygB)
 * [Product Training: Reports](https://learn.snyk.io/catalog/?type=product-training\&topics=Reporting)
 {% endhint %}

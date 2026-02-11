@@ -28,7 +28,7 @@ For a detailed breakdown of user roles and their associated access permissions, 
 
 ### Group reports
 
-Select [**Reports**](../../../manage-risk/reporting/) to view the vulnerability status of the Organizations in your Group in one place as a report:
+Select [**Reports**](/broken/pages/ESO9SlllNm4KuC5roygB) to view the vulnerability status of the Organizations in your Group in one place as a report:
 
 <div align="left"><figure><img src="../../../.gitbook/assets/Reports.png" alt=""><figcaption><p>Group report filtered to show open issues</p></figcaption></figure></div>
 
@@ -42,7 +42,7 @@ Select [**Issues**](../../../manage-risk/prioritize-issues-for-fixing/) to bette
 
 ### Group dependencies
 
-Select [**Dependencies**](../../../manage-risk/reporting/dependencies-and-licenses/) to view the dependencies and license issues for your Groups:
+Select [**Dependencies**](../../../manage-risk/dependencies-and-licenses/) to view the dependencies and license issues for your Groups:
 
 <div align="left"><figure><img src="../../../.gitbook/assets/dependencies (1).png" alt=""><figcaption><p>View Group dependencies</p></figcaption></figure></div>
 

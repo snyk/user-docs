@@ -34,7 +34,7 @@ For a list of supported resource types for cloud environments, see the following
 
 ## Rules
 
-A security rule checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems.&#x20;
+A security rule checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems.
 
 An example rule is "S3 bucket does not have all block public access options enabled". Snyk can scan the configuration of an AWS S3 bucket to see if it fails the rule and so is vulnerable to a data breach.
 
@@ -48,7 +48,7 @@ You can view your Organization's issues in the Snyk Web UI. See [View cloud issu
 
 ## Compliance standard <a href="#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e" id="docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e"></a>
 
-A compliance standard is a framework that establishes guidelines and controls for Organizations to secure their IT systems and infrastructure. Compliance standards are versioned, with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](../../../manage-risk/reporting/available-snyk-reports.md#cloud-compliance-issues-report).
+A compliance standard is a framework that establishes guidelines and controls for Organizations to secure their IT systems and infrastructure. Compliance standards are versioned, with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](/broken/pages/Xet9BNiX2RviFlrTiatG#cloud-compliance-issues-report).
 
 For more information, see [supported compliance standards](../view-cloud-compliance-reporting.md#supported-compliance-standards).
 

@@ -1,26 +1,37 @@
 # Analytics
 
 {% hint style="info" %}
-Legacy Reports (in the Snyk Web UI) and the Reporting API v1 have been deprecated. They will be removed from the product on April 27, 2026. This extended timeline is designed to give your teams ample time to assess your usage and migrate to the new solution. View the API Migration guide for help transitioning to the newer [Export API](../../snyk-api/using-specific-snyk-apis/export-api-specifications-columns-and-filters.md).
+**Feature availability**\
+The Snyk Analytics experience is available only for Enterprise plan customers with Group-level reporting permissions.
 {% endhint %}
 
-Analytics provides executives, as well as Application Security (AppSec) leaders and practitioners a view into the performance of their AppSec program. Snyk customers can understand at a glance the strengths and weaknesses of their program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment. Analytics is available at the tenant level.
+Build custom dashboards, access enhanced metrics, and explore analytics at the Tenant, Group, or Organization level.
 
-{% hint style="info" %}
-To access Analytics, you need to have one of the following [tenant roles](../../snyk-platform-administration/groups-and-organizations/tenant/manage-users-in-a-tenant.md): Tenant Admin, Tenant Viewer.
-{% endhint %}
+The Snyk Analytics allows you to:
 
-The Analytics view is structured as follows:
+* Select and arrange widgets from the inventory to create a personalized dashboard.
+* Access the [Saved Views](/broken/pages/ESO9SlllNm4KuC5roygB#saved-views) feature.
+* Discover and access pre-built reports for specific Groups in your Organization.
+* Explore issues and assets in detail directly from the dashboard.
 
-* [Issues Analytics](issues-analytics.md) - provides the exposure and performance details of Snyk issues in Groups and Organizations while focusing on the issue introduction method (baseline, preventable, or non-preventable).
-* [Application Analytics](application-analytics.md) - provides data analytics for reviewing and comparing assets and issues metrics at the level of asset classes, applications, or code owners.
+## Data access permissions
 
-The following table presents an overview of the features available for both Issues Analytics and Application Analytics.
+Your Group-level permissions govern data access at the Tenant level. You view data only for the Groups you are authorized to access.
 
-| Issues Analytics                                                                                                                                                                                                                           | Application Analytics                                                                                                                                                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <ul><li>Data filtered by default on critical and high-severity issues.</li><li>Drill down to see the way that issues were introduced.</li><li>Issues framework: categorized based on Exposure, Manage, Prevention, and Coverage.</li></ul> | <ul><li>Data filtered based on assets, applications, and code owners (teams).</li><li>Helps you to identify and take action on risk, coverage gaps, and association gaps.</li><li>Asset class view</li><li>Application and owner view</li><li>Surface coverage gap</li><li>Comparison and prioritization</li></ul> |
+### Tenant-level analytics
 
-{% hint style="info" %}
-The specific features and availability of both products may vary as they continue to evolve. For the latest information, refer to the respective product documentation.
-{% endhint %}
+Group members with reporting permissions can view their Groups on the Tenant-level analytics page.
+
+Snyk restricts access based on Group-level permissions in both predefined and custom roles.
+
+Users with Group reporting permissions can access Tenant-level analytics without Tenant-level roles, such as Tenant Admin or Tenant Viewer.
+
+### Group-level analytics
+
+Snyk restricts access based on Group-level permissions in both predefined and custom roles.
+
+Users with Group access can view data for the Organizations associated with those Groups.
+
+### Organization-level analytics
+
+Snyk restricts access based on Organization-level permissions in both predefined and custom roles.

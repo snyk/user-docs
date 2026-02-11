@@ -12,8 +12,8 @@ Describes the main attributes of the issue.
 
 * **ASSET FINDING ID** - A unique issue ID at the repository level that is only applicable for Snyk Code issues.
 * **COMMIT ID** - The unique ID that the SCM integration assigns to commits so that they can be uniquely identified. Snyk provides a Commit ID only for Snyk Code issues.
-* **CODE REGION** - The line numbers and columns range where the issues were found within a file.&#x20;
-* **COMPUTED FIXABILITY** - Indicates whether the issue can be fixed based on the vulnerability remediation paths. Relevant for SCA vulnerabilities. For details, see [Computed Fixability filters](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md#computed-fixability-filters).
+* **CODE REGION** - The line numbers and columns range where the issues were found within a file.
+* **COMPUTED FIXABILITY** - Indicates whether the issue can be fixed based on the vulnerability remediation paths. Relevant for SCA vulnerabilities. For details, see [Computed Fixability filters](../../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md#computed-fixability-filters).
   * **Fixable:** There is a fix for all the identified issues, meaning that all detailed paths have remediation.
   * **Partially fixable:** The issue has upgradable paths, but not all detailed paths have remediation.
   * **No supported fix**: The issue has no upgradable paths.
@@ -23,7 +23,7 @@ Describes the main attributes of the issue.
   * **Baseline Issue** - Issues identified right after the Project began to be monitored.
   * **Preventable Issue** - Issues for which Snyk published the related problem at least seven days before detection.
   * **Non Preventable Issue** - Issues that were created due to external factors such as a new vulnerability being published.
-  * **Other New Issue** - Issues for which Snyk cannot classify their preventability. For details, see [Delineation of how risk is introduced](../analytics/issues-analytics.md#delineation-of-how-risk-is-introduced).
+  * **Other New Issue** - Issues for which Snyk cannot classify their preventability. For details, see [Delineation of how risk is introduced](/broken/pages/1m1GoANo0CromJXOD7H1#delineation-of-how-risk-is-introduced).
 * **ISSUE** - A combination of:
   * **Problem Title**: Snyk vulnerability name.
   * **Issue Type:** indicates whether the issue is related to a vulnerability, license, or configuration.
@@ -32,7 +32,7 @@ Describes the main attributes of the issue.
 * **LATEST JIRA ISSUE** - The latest attached Jira issue key with a link to the issue card on the Project page.
 * **PRODUCT NAME** - Snyk product name.
 * **SEVERITY** - Indicates the issue severity according to the analysis by a specific Snyk product.
-* **SCORE** - A score based on an analysis model. Priority score is released in General Availability, while Risk Score is in Early Access. For details, see [Priority Score vs Risk Score](../prioritize-issues-for-fixing/priority-score-vs-risk-score.md).
+* **SCORE** - A score based on an analysis model. Priority score is released in General Availability, while Risk Score is in Early Access. For details, see [Priority Score vs Risk Score](../../prioritize-issues-for-fixing/priority-score-vs-risk-score.md).
 * **REACHABILITY** - The reachability of the issue indicates whether the issue is related to a code element (function, module, class, etc) that are being called by the application and thus has a greater risk of exploitability. Allowed values:
   * **Reachable** - A direct or indirect path was found from your application to the vulnerable code.
   * **No path found** - No path found from your application to the vulnerable code. Note that this value might change over time.
@@ -42,13 +42,13 @@ Describes the main attributes of the issue.
 
 The vulnerability details refer to various issue attributes that are being defined by Snyk, Mitre, NVD, or any other trusted security organization.
 
-* **ATTACK VECTOR -** Represents the context by which vulnerability exploitation is possible. For more details about the attack vector and its values (Network, Adjacent, Local, Physical), see the [specification document](https://www.first.org/cvss/specification-document).&#x20;
+* **ATTACK VECTOR -** Represents the context by which vulnerability exploitation is possible. For more details about the attack vector and its values (Network, Adjacent, Local, Physical), see the [specification document](https://www.first.org/cvss/specification-document).
 * **CVE** - Mitre CVE ID
 * **CWE** - Mitre CWE ID
 * **EPSS SCORE** - The probability of exploitation in the wild in the next 30 days.
-* **EPSS PERCENTILE** -  The proportion of all vulnerabilities with the same or lower EPSS score.
+* **EPSS PERCENTILE** - The proportion of all vulnerabilities with the same or lower EPSS score.
 * **EXISTS IN DIRECT DEPENDENCY -** Indicates if the vulnerability exists in a direct dependency. If false, the vulnerability only exists in transitive dependencies.
-* **EXPLOIT MATURITY** - Represents the existence and maturity of public exploits validated by Snyk. For details, see [View exploits in Projects](../prioritize-issues-for-fixing/view-exploits.md#view-exploits-in-projects). The allowed values include:
+* **EXPLOIT MATURITY** - Represents the existence and maturity of public exploits validated by Snyk. For details, see [View exploits in Projects](../../prioritize-issues-for-fixing/view-exploits.md#view-exploits-in-projects). The allowed values include:
   * **Mature:** Snyk has a published code exploit for this vulnerability.
   * **Proof of concept:** Snyk has a proof-of-concept or detailed explanation of how to exploit this vulnerability. Proof of concept vulnerability patches cannot be disabled and will appear in fix PRs where they are found.
   * **No known exploit:** Snyk did not find a proof-of-concept or a published exploit for this vulnerability.
@@ -75,18 +75,18 @@ The context columns help you understand the impact and risk for an issue based o
 ### Project and target context
 
 * **PROJECT COLLECTION** - Project collections are static collections of Projects.
-* **PROJECT CRITICALITY** - The business criticality of the Project. For details, see [Project attributes](../../snyk-platform-administration/snyk-projects/project-attributes.md).
-* **PROJECT ENVIRONMENT** - The environment of the Project. For details, see [Project attributes](../../snyk-platform-administration/snyk-projects/project-attributes.md).
-* **PROJECT LIFECYCLE** - The lifecycle of a Project. For details, see [Project attributes](../../snyk-platform-administration/snyk-projects/project-attributes.md).
+* **PROJECT CRITICALITY** - The business criticality of the Project. For details, see [Project attributes](../../../snyk-platform-administration/snyk-projects/project-attributes.md).
+* **PROJECT ENVIRONMENT** - The environment of the Project. For details, see [Project attributes](../../../snyk-platform-administration/snyk-projects/project-attributes.md).
+* **PROJECT LIFECYCLE** - The lifecycle of a Project. For details, see [Project attributes](../../../snyk-platform-administration/snyk-projects/project-attributes.md).
 * **PROJECT NAME** - The Project name.
 * **PROJECT ORIGIN** - The source of integration for the Project; can be the name of the originating SCM, Container registry, and so on.
 * **PROJECT OWNER** - A user who is defined as the owner of the Project.
-* **PROJECT TAGS** - Tags that are associated with the Project. For details, see [Project tags](../../snyk-platform-administration/snyk-projects/project-tags.md).
+* **PROJECT TAGS** - Tags that are associated with the Project. For details, see [Project tags](../../../snyk-platform-administration/snyk-projects/project-tags.md).
 * **PROJECT TARGET** - The Target name.
-* **PROJECT TARGET REFERENCE** - Specify a reference that differentiates this Project, for example, a branch name or version. For details, see [Group Projects by branch or version for monitoring](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md).
+* **PROJECT TARGET REFERENCE** - Specify a reference that differentiates this Project, for example, a branch name or version. For details, see [Group Projects by branch or version for monitoring](../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring.md).
 * **PROJECT TYPE** - The package manager of the Project.
 
-### Asset context&#x20;
+### Asset context
 
 {% hint style="info" %}
 When filtering issues by assets context, issues of archived assets will be excluded from the results
@@ -107,7 +107,7 @@ When filtering issues by assets context, issues of archived assets will be exclu
 
 ### Application context
 
-Navigate to the [Application context for SCM integrations](../../developer-tools/scm-integrations/application-context-for-scm-integrations/) page for more details about enriching the application context data.
+Navigate to the [Application context for SCM integrations](../../../developer-tools/scm-integrations/application-context-for-scm-integrations/) page for more details about enriching the application context data.
 
 {% hint style="info" %}
 When filtering issues by application context, issues of archived assets will be excluded from the results

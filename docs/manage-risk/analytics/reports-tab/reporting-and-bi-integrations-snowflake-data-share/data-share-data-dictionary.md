@@ -16,7 +16,7 @@ The diagram above represents the objects listed in the data dictionary as a data
 * [Usage events](data-share-data-dictionary.md#usage-events)
 * [Jira issues](data-share-data-dictionary.md#issue-jira-issues)
 
-<figure><img src="../../../.gitbook/assets/image (287).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (287).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary</p></figcaption></figure>
 
 ### Groups
 
@@ -220,7 +220,7 @@ Querying the `USAGE_EVENTS` table allows you to measure:
 
 > Version in use: v1.0
 
-The `ISSUE_JIRA_ISSUES` table allows correlation between Snyk issues and assigned Jira issues. As Snyk enables more than one type of Jira integration, it is important to emphasize that the Jira issues that are available in the dataset originated from this [Jira integration](../../../integrations/jira-and-slack-integrations/jira-integration.md).
+The `ISSUE_JIRA_ISSUES` table allows correlation between Snyk issues and assigned Jira issues. As Snyk enables more than one type of Jira integration, it is important to emphasize that the Jira issues that are available in the dataset originated from this [Jira integration](../../../../integrations/jira-and-slack-integrations/jira-integration.md).
 
 | Object name            | Data type     | Description                                                                                    |
 | ---------------------- | ------------- | ---------------------------------------------------------------------------------------------- |
