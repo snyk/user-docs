@@ -5,7 +5,7 @@
 After you implement a strategy to prevent new issues from entering your repositories, whether blocking builds or running in a non-blocking, advisory mode, the next step is to prioritize and start fixing issues in your backlog.
 
 * In [Phase 4: Create a Fix strategy](phase-4-create-a-fix-strategy.md), you created a plan for prioritizing your Projects and issues. To implement this, you can schedule regular meetings with development team leads to assist them with this process.
-* In the [Snyk Tools](../../scan-with-snyk/snyk-tools/) section, there is a tool called [**j**ira-tickets-for-new-vulns](../../scan-with-snyk/snyk-tools/tool-jira-tickets-for-new-vulns.md)**,** which can be scheduled to run on a regular basis to automatically create Jira tickets for vulnerabilities that meet your specified criteria. Whether this process is automated or not, creating tickets for your developers to review can be a great way to help make issues identified by Snyk more visible.
+* In the [Snyk Tools](../../scan-with-snyk/snyk-tools/) section, there is a tool called [jira-tickets-for-new-vulns](../../scan-with-snyk/snyk-tools/tool-jira-tickets-for-new-vulns.md)**,** which can be scheduled to run on a regular basis to automatically create Jira tickets for vulnerabilities that meet your specified criteria. Whether this process is automated or not, creating tickets for your developers to review can be a great way to help make issues identified by Snyk more visible.
 * If you use Jira Cloud, you can download and install the [Snyk Security in Jira Cloud](https://marketplace.atlassian.com/apps/1230482/snyk-security-in-jira-cloud) plugin from the Atlassian marketplace. This allows you to view information on your Snyk Vulnerabilities directly in Jira, and use Jira Automation to create new tickets when new vulnerabilities are identified.
 
 ## Use the ignore feature
@@ -40,7 +40,7 @@ See [Ignore issues](../../manage-risk/prioritize-issues-for-fixing/ignore-issues
 
 ## Review Snyk reports to track the adoption of Snyk across your teams
 
-There are a number of different reports in Snyk to help you get an overview of your issues and vulnerabilities. For more information, see [Reporting](/broken/pages/ESO9SlllNm4KuC5roygB).
+There are a number of different reports in Snyk to help you get an overview of your issues and vulnerabilities. For more information, see [Reports tab](../../manage-risk/analytics/reports-tab/).
 
 * On the **Issues Summary** report, the **Risk Breakdown** section displays open, new, and resolved issues across different Organizations. Tracking the amount of activity in each Organization can help you identify which teams are adopting the tool most actively.
 * Individual Organization administrators can also view reports focused on their Organization as a way to help identify which vulnerabilities are most common across their repositories, and also to track issues resolved in different Projects.

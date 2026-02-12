@@ -145,7 +145,9 @@ Click a Controls logo to see **Last test** details and the **Issues** count, spl
 
 ## Tags <a href="#tags" id="tags"></a>
 
-Provides a key-value tagging capability that allows you to attach specific, structured metadata to your assets. Use this feature lets you granular filtering, robust policy creation, and better alignment with your internal systems.**Example:** A structured tag provides both a key and a value, such as `platform:aws` or `region:eu-central-1`.
+Provides a key-value tagging capability that allows you to attach specific, structured metadata to your assets. Use this feature lets you granular filtering, robust policy creation, and better alignment with your internal systems.
+
+**Example:** A structured tag provides both a key and a value, such as `platform:aws` or `region:eu-central-1`.
 
 ## How to filter assets by tags <a href="#how-to-filter-the-projects-listing-by-tags" id="how-to-filter-the-projects-listing-by-tags"></a>
 
@@ -292,7 +294,7 @@ The Visibility column lists the visibility status of the repositories as follows
 * **Internal**: Internal repositories specific to GitHub and GitLab.
 * **N/A**
 
-Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](/broken/pages/ESO9SlllNm4KuC5roygB#snyk-reporting-filters).
+Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../manage-risk/analytics/reports-tab/#snyk-reporting-filters).
 
 ## Actions
 

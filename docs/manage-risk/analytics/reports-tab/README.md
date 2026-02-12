@@ -15,7 +15,7 @@ Reports are organized into multiple categories:
 * [Remediation reports](remediation-reports.md)
 * [Prevention reports](prevention-reports.md)
 * [Compliance reports](compliance-reports.md)
-* [Education](education-reports.md) reports
+* [Education reports](education-reports.md)
 
 Snyk reports provide the visibility and analytics needed to drive data-based conversations between development and security.
 
@@ -41,7 +41,8 @@ All reports are filterable by a number of attributes, enabling users to create t
 
 If you do not select or enter any values for a particular key, the filter is not applied.
 
-**Exclude Filters**\
+### Exclude Filters
+
 In addition to selecting values to include, you can exclude specific values using the `is not` option available across many report filters. This allows you to:
 
 * **Remove unwanted results** (for example, exclude certain Organizations, project types, or asset names).

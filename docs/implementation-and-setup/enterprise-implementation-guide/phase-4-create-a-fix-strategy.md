@@ -3,7 +3,7 @@
 After you set up your integrations, create your Organizations, and import your Projects, view reports for visibility into the current vulnerability backlog for your business.
 
 {% hint style="info" %}
-For more information on how to use reports, see [Reporting](/broken/pages/ESO9SlllNm4KuC5roygB) and [Available Snyk Reports](/broken/pages/Xet9BNiX2RviFlrTiatG).
+For more information on how to use reports, see [Reports tab](../../manage-risk/analytics/reports-tab/).
 {% endhint %}
 
 In most cases, when you look across all of your Organizations and vulnerabilities, there will be many issues, and it can be difficult to know where to start.

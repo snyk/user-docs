@@ -40,7 +40,7 @@ Tables in PDF exports are limited to 50 results. A link is available at the bott
 
 Session data is shared between browser tabs. Snyk recommends you have reporting tabs for one Group or one Organization open in the browser at any one time because having tabs open for different Groups or Organizations can result in unexpected behavior.
 
-Customers may experience an error if hundreds of filter values are applied on a page. This is the result of the [stateful URLs for filtered views](/broken/pages/ESO9SlllNm4KuC5roygB#stateful-urls-for-filtered-views) capability and a URL length limit. If you experience an error with many filter values applied, consider alternate filter mechanisms such as [Project collections](../../../snyk-platform-administration/snyk-projects/project-collections-groupings/project-collections.md).
+Customers may experience an error if hundreds of filter values are applied on a page. This is the result of the [stateful URLs for filtered views](./#stateful-urls-for-filtered-views) capability and a URL length limit. If you experience an error with many filter values applied, consider alternate filter mechanisms such as [Project collections](../../../snyk-platform-administration/snyk-projects/project-collections-groupings/project-collections.md).
 
 ## Filtered views
 

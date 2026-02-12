@@ -147,7 +147,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * `Raise Support Community Cases` and `View Support Community Cases` Tenant level permissions have been added. To learn more about which Tenant roles these permissions apply to, visit Pre-defined roles, [Tenant-level permissions](snyk-platform-administration/user-roles/pre-defined-roles.md#tenant-level-permissions).
 * The [Analytics](manage-risk/analytics/) menu now updates its data daily instead of hourly.
 * Learn how to resolve duplicated and unenriched assets discovered outside Group and Organization-level SCM integrations.
-* You can now [exclude specific values](/broken/pages/ESO9SlllNm4KuC5roygB) when you filter your reports.
+* You can now [exclude specific values](manage-risk/analytics/reports-tab/#exclude-filters) when you filter your reports.
 
 ## August 2025
 
@@ -170,7 +170,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Other updates**
 
-* A new [Risk exposure report](/broken/pages/Xet9BNiX2RviFlrTiatG#risk-exposure-report) has been released, providing you with a single, consolidated view of your security risks.
+* A new [Risk exposure report](manage-risk/analytics/reports-tab/exposure-and-coverage-reports.md#risk-exposure-report) has been released, providing you with a single, consolidated view of your security risks.
 * The rollout to General Availability has started for the [Pull Request Experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md).
 * The [Operating system distributions supported by Snyk Container](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) now includes Debian 14 - Forky.
 * Snyk now supports [Ruby versions](supported-languages/supported-languages-list/ruby.md#technical-specifications) 3.3 \[3.3.9] and 3.4 \[3.4.5]. If the Ruby version is not specified in the gemfile, it will default to version 3.1.
@@ -219,7 +219,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * A new architecture for user documentation on developer tools is now available. This update groups the main developer tools into a single section and distinctly separates them from the integrations documentation.
 * [Analytics](manage-risk/analytics/overview-tab.md) has a fresh new look.
 * Added [Snyk Assist](discover-snyk/snyk-learn/snyk-assist.md) documentation.
-* The [Developer IDE and CLI usage](/broken/pages/Xet9BNiX2RviFlrTiatG#developer-ide-and-cli-usage) report has been improved with MCP-related data to provide better visibility into MCP usage.
+* The [Developer IDE and CLI usage report](manage-risk/analytics/reports-tab/prevention-reports.md#developer-ide-and-cli-usage-report) has been improved with MCP-related data to provide better visibility into MCP usage.
 * [Okta custom mapping documentation](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-okta.md#construct-a-value-expression-that-creates-a-roles-array-to-be-sent-to-snyk) has been updated to clarify handling of the `Arrays.flatten(appuser.snyk_orgs)` value during setup.
 
 ## June 2025
@@ -352,7 +352,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 ### **Other updates**
 
 * The PCI-DSS v4.0.1 report is now available in Early Access. This report leverages Snyk scan results to assess, prove, and improve readiness for PCI-DSS AppSec compliance regarding SCA and SAST vulnerabilities.
-* The [Repositories Tested in CI/CD report](/broken/pages/Xet9BNiX2RviFlrTiatG#repositories-tested-in-ci-cd-report) is available in Early Access. This report tracks Snyk CI/CD testing to prevent vulnerable production deployments.
+* The [Repositories Tested in CI/CD report](manage-risk/analytics/reports-tab/prevention-reports.md#repositories-tested-in-ci-cd-report) is available in Early Access. This report tracks Snyk CI/CD testing to prevent vulnerable production deployments.
 * [Severity levels](manage-risk/prioritize-issues-for-fixing/severity-levels.md#why-are-there-multiple-cvss-scores-for-the-same-vulnerability) now provide more details about the CVSS v4.0.
 
 ## February 2025
@@ -402,8 +402,8 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * The [Supported languages](supported-languages/supported-languages-package-managers-and-frameworks.md) page has been reorganized to provide detailed information about language availability for each Snyk product. Additionally, it provides a list of package managers, frameworks, and features for each supported language.
 * A service account using OAuth 2.0 can now be [created through the Snyk Web UI](implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md#create-oauth-service-accounts-through-the-ui).
 * The [API index ](snyk-api/api-endpoints-index-and-tips/)now includes entries for each endpoint mentioned in the Snyk user docs.
-* The[ Developer IDE and CLI usage](/broken/pages/Xet9BNiX2RviFlrTiatG#developer-ide-and-cli-usage) report has been enhanced with additional functionalities: **Developer email address** and **PDF export**.
-* The [Vulnerabilities Detail](/broken/pages/Xet9BNiX2RviFlrTiatG#vulnerabilities-detail-report) report has been enhanced with additional functionalities, such as **Target indication** and **Column picker**.
+* The [Developer IDE and CLI usage report](manage-risk/analytics/reports-tab/prevention-reports.md#developer-ide-and-cli-usage-report) has been enhanced with additional functionalities: **Developer email address** and **PDF export**.
+* The [Vulnerabilities Detail report](manage-risk/analytics/reports-tab/remediation-reports.md#vulnerabilities-detail-report) has been enhanced with additional functionalities, such as **Target indication** and **Column picker**.
 
 ## October 2024
 

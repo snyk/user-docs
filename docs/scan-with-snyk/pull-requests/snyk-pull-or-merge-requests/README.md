@@ -54,7 +54,7 @@ After you have reviewed the pull request, you can approve the merge.
 
 ## Generated Pull Requests report
 
-Snyk provides a report for Enterprise customers that gives an overview of how [Fix](create-automatic-prs-for-new-fixes-fix-prs.md), [Backlog](create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md), and [Upgrade PRs](upgrade-dependencies-with-automatic-prs-upgrade-prs/) are used and highlights the efficiency of PR merges. For more information, see [Snyk Generated Pull Requests report](/broken/pages/Xet9BNiX2RviFlrTiatG#snyk-generated-pull-requests).
+Snyk provides a report for Enterprise customers that gives an overview of how [Fix](create-automatic-prs-for-new-fixes-fix-prs.md), [Backlog](create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md), and [Upgrade PRs](upgrade-dependencies-with-automatic-prs-upgrade-prs/) are used and highlights the efficiency of PR merges. For more information, see [Snyk Generated Pull Requests report](../../../manage-risk/analytics/reports-tab/prevention-reports.md#snyk-generated-pull-requests-report).
 
 ## Snyk SCM webhooks
 

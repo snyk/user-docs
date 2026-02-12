@@ -80,7 +80,7 @@ Access the [Application context for SCM Integrations](../../../developer-tools/s
 
 The Snyk Essentials functionality is split across several menu options from the Group level.
 
-* The Asset Dashboard report
+* The [Asset Dashboard report](../../../manage-risk/analytics/reports-tab/exposure-and-coverage-reports.md#asset-dashboard)
 * [Inventory](../../../manage-assets/manage-assets.md)
 * [Policies](../../../manage-risk/policies/assets-policies/)
 * [Integrations for SCM](../../../developer-tools/scm-integrations/group-level-integrations/)
@@ -121,4 +121,4 @@ BitBucket cannot automatically detect the language used in the source code from 
 
 #### Asset Dashboard Report
 
-The [Asset Dashboard](/broken/pages/Xet9BNiX2RviFlrTiatG#asset-dashboard) provides a comprehensive overview of your application and security controls. It displays essential data such as the status and trends of open issues, control coverage, and repository metadata.
+The [Asset Dashboard](../../../manage-risk/analytics/reports-tab/exposure-and-coverage-reports.md#asset-dashboard) provides a comprehensive overview of your application and security controls. It displays essential data such as the status and trends of open issues, control coverage, and repository metadata.
