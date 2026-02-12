@@ -5282,7 +5282,6 @@
           },
           "repository_url": {
             "description": "Repository URL at which the Source files are stored.",
-            "format": "url",
             "maxLength": 1024,
             "type": "string"
           },
@@ -10399,7 +10398,8 @@
                                                     "rejected",
                                                     "pending",
                                                     "cancelled",
-                                                    "not-required"
+                                                    "not-required",
+                                                    "unknown"
                                                   ],
                                                   "type": "string"
                                                 }
@@ -10572,7 +10572,8 @@
                                                     "rejected",
                                                     "pending",
                                                     "cancelled",
-                                                    "not-required"
+                                                    "not-required",
+                                                    "unknown"
                                                   ],
                                                   "type": "string"
                                                 }
@@ -14041,13 +14042,6 @@
           "ignored"
         ],
         "type": "object"
-      },
-      "IssueIds": {
-        "items": {
-          "example": "SNYK-JS-YARGSPARSER-560381",
-          "type": "string"
-        },
-        "type": "array"
       },
       "IssueRelationships": {
         "additionalProperties": false,
@@ -19487,7 +19481,6 @@
             "type": "string"
           },
           "repo_url": {
-            "format": "url",
             "maxLength": 1024,
             "type": "string"
           }
@@ -19556,7 +19549,6 @@
           "repo_url": {
             "description": "URL at which the repository can be found in the SCM.",
             "example": "https://github.com/snyk/cli",
-            "format": "url",
             "maxLength": 1024,
             "type": "string"
           },
@@ -19590,6 +19582,7 @@
           "cli",
           "pr_check",
           "ci_cd",
+          "mcp",
           "other"
         ],
         "type": "string"
@@ -21971,7 +21964,6 @@
           },
           "repository_url": {
             "description": "Repository URL at which the Source files are stored.",
-            "format": "url",
             "maxLength": 1024,
             "type": "string"
           },
@@ -29047,7 +29039,7 @@
           "2023-10-13~beta",
           "2024-05-08"
         ],
-        "x-snyk-api-resource": "pull-request-templates",
+        "x-snyk-api-resource": "pullRequestTemplates",
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-05-08",
         "x-stability-level": "stable"
@@ -29085,6 +29077,7 @@
             "content": {
               "application/vnd.api+json": {
                 "schema": {
+                  "additionalProperties": false,
                   "properties": {
                     "data": {
                       "additionalProperties": false,
@@ -29168,7 +29161,7 @@
           "2023-10-13~beta",
           "2024-05-08"
         ],
-        "x-snyk-api-resource": "pull-request-templates",
+        "x-snyk-api-resource": "pullRequestTemplates",
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-05-08",
         "x-stability-level": "stable"
@@ -29228,6 +29221,7 @@
             "content": {
               "application/vnd.api+json": {
                 "schema": {
+                  "additionalProperties": false,
                   "properties": {
                     "data": {
                       "additionalProperties": false,
@@ -29311,7 +29305,7 @@
           "2023-10-13~beta",
           "2024-05-08"
         ],
-        "x-snyk-api-resource": "pull-request-templates",
+        "x-snyk-api-resource": "pullRequestTemplates",
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-05-08",
         "x-stability-level": "stable"
@@ -44751,186 +44745,6 @@
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-05-31",
         "x-stability-level": "stable"
-      }
-    },
-    "/orgs/{org_id}/projects/{project_id}/fix_pull_requests": {
-      "post": {
-        "description": "Creates a Snyk Fix pull-request asynchronously and responds with a remediation job ID that can be used to check the status and result.\n\n#### Required permissions\n\n- `org.org.project.pr.create`",
-        "operationId": "createFixPullRequest",
-        "parameters": [
-          {
-            "description": "Org ID",
-            "example": "7626925e-4b0f-11ee-be56-0242ac120002",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          },
-          {
-            "description": "Project ID",
-            "example": "7626925e-4b0f-11ee-be56-0242ac120002",
-            "in": "path",
-            "name": "project_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          },
-          {
-            "$ref": "#/components/parameters/Version"
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/vnd.api+json": {
-              "schema": {
-                "properties": {
-                  "data": {
-                    "additionalProperties": false,
-                    "properties": {
-                      "issue_ids": {
-                        "$ref": "#/components/schemas/IssueIds"
-                      },
-                      "type": {
-                        "$ref": "#/components/schemas/Types"
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "issue_ids"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "required": [
-                  "data"
-                ],
-                "type": "object"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "202": {
-            "content": {
-              "application/vnd.api+json": {
-                "schema": {
-                  "additionalProperties": false,
-                  "properties": {
-                    "data": {
-                      "description": "Remediation job response",
-                      "properties": {
-                        "attributes": {
-                          "properties": {
-                            "created_at": {
-                              "description": "The timestamp when the job was created",
-                              "example": "2024-10-29T12:00:00Z",
-                              "format": "date-time",
-                              "type": "string"
-                            },
-                            "status": {
-                              "description": "The current status of the remediation job",
-                              "enum": [
-                                "STARTED",
-                                "FINISHED",
-                                "ERRORED"
-                              ],
-                              "example": "STARTED",
-                              "type": "string"
-                            }
-                          },
-                          "required": [
-                            "created_at",
-                            "status"
-                          ],
-                          "type": "object"
-                        },
-                        "id": {
-                          "description": "The unique identifier for the remediation job",
-                          "example": "7626925e-4b0f-11ee-be56-0242ac120002",
-                          "format": "uuid",
-                          "type": "string"
-                        },
-                        "type": {
-                          "$ref": "#/components/schemas/Types"
-                        }
-                      },
-                      "required": [
-                        "id",
-                        "type",
-                        "attributes"
-                      ],
-                      "type": "object"
-                    },
-                    "jsonapi": {
-                      "$ref": "#/components/schemas/JsonApi"
-                    },
-                    "links": {
-                      "$ref": "#/components/schemas/PaginatedLinks"
-                    }
-                  },
-                  "type": "object"
-                }
-              }
-            },
-            "description": "Fix pull request job accepted for processing",
-            "headers": {
-              "content-location": {
-                "$ref": "#/components/headers/LocationHeader"
-              },
-              "deprecation": {
-                "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "snyk-request-id": {
-                "$ref": "#/components/headers/RequestIdResponseHeader"
-              },
-              "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
-              },
-              "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
-              },
-              "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
-              },
-              "sunset": {
-                "$ref": "#/components/headers/SunsetHeader"
-              }
-            }
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "summary": "Creates a Snyk Fix PR. This feature is currently in experimental phase and access is restricted behind the \"apiFixPrCreation\" feature flag. (Early Access)",
-        "tags": [
-          "Fix Pull Requests"
-        ],
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "fix-pull-requests",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/projects/{project_id}/sbom": {
