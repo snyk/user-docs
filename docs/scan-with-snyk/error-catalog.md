@@ -976,6 +976,15 @@ CLI was unable to execute your Secrets command, please take a look at the given 
 
 * [https://docs.snyk.io/snyk-cli/commands/secrets](https://docs.snyk.io/snyk-cli/commands/secrets)
 
+### [SNYK-CLI-0024](#snyk-cli-0024)
+<a id="#SNYK-CLI-0024"></a>
+
+**Data rendering failed**
+
+Rendering the data to at least one of the required outputs failed. Please review the error details provided.
+If the details do not help resolve the issue, consider debugging or contacting support.
+
+
 ### [SNYK-OS-7001](#snyk-os-7001)
 <a id="#SNYK-OS-7001"></a>
 
