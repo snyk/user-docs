@@ -6,7 +6,7 @@ Understanding what code is deployed and where enables you to adopt a remediation
 
 ## Types of integration
 
-The Deployed risk factor works with the Kubernetes Connector, the Snyk Runtime Sensor, and third-party integrations.
+The Deployed risk factor works with the Kubernetes Connector and third-party integrations.
 
 ### Kubernetes **Connector**
 
@@ -97,10 +97,6 @@ This enables Insights to successfully match both Snyk Container Projects and app
 {% hint style="info" %}
 Snyk recommends always specifying the full name of the image in your CLI command. If you are not able to do this, Snyk recommends also scanning the same image using a second integration.
 {% endhint %}
-
-### Snyk Runtime Sensor
-
-The Snyk Runtime Sensor applies the Deployed risk factor by constantly monitoring the active containers within a Kubernetes cluster. It does this by capturing real-time Kubernetes events and taking hourly snapshots of the cluster's state. These real-time data and snapshots help identify which images are currently being deployed. By comparing this information with Snyk Projects and known vulnerabilities, the Snyk Runtime Sensor accurately assesses deployed risks. This ensures that security insights are up-to-date and reflect the current deployment environment.
 
 ### Third-party integrations
 
