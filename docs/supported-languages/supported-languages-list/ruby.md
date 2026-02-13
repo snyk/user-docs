@@ -61,7 +61,7 @@ For Ruby with Snyk Code, the following file formats are supported: `.erb`, `.ham
 Available features:
 
 * Reports
-* Custom rules
+
 
 ## Ruby for Snyk Open Source
 
