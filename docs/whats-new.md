@@ -362,7 +362,6 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * The Integrations UI at the Group level has been enhanced to improve readability and actionability and provide inline instructions and inline profile helpers.
 * Group-level [Integrations documentation](integrations/integrate-with-snyk.md#integrations-syncing-time) has been updated with new, more accurate sync times.
 * The [asset filter](manage-risk/policies/assets-policies/create-policies.md) documentation has been consolidated into one section, and it now links to all relevant areas, such as Inventory and Asset Policy filters.
-* [Issues Analytics](/broken/pages/1m1GoANo0CromJXOD7H1) is now available with a General Availability release status.
 
 ### Other updates
 

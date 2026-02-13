@@ -57,7 +57,7 @@ After the integration is in place, you will be able to use capabilities such as:
 
 #### Project-level security reports
 
-Snyk produces advanced [security reports](/broken/pages/-MhEHe4_cik3nchhmNWZ) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
+Snyk produces advanced [remediation reports](../../../manage-risk/analytics/reports-tab/remediation-reports.md) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
 The example that follows shows a Project-level security report.
 

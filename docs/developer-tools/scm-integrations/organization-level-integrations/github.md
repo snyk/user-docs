@@ -77,7 +77,7 @@ After you have connected GitHub to Snyk, you can use:
 Reports are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk produces advanced [security reports](/broken/pages/-MhEHe4_cik3nchhmNWZ) that let you explore the vulnerabilities found in your repositories and fix them right away by opening a fix pull request directly in your repository, with the required upgrades or patches.
+Snyk produces advanced [remediation reports](../../../manage-risk/analytics/reports-tab/remediation-reports.md) that let you explore the vulnerabilities found in your repositories and fix them right away by opening a fix pull request directly in your repository, with the required upgrades or patches.
 
 This example shows a Project-level security report.
 
