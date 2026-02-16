@@ -6,7 +6,7 @@ Learn how to install Snyk API & Web Scanning Agent
 
 <span class="text-body-secondary-color"></span>
 
-The Scanning Agent allows scanning internal applications with a secure, clean, and easy-to-set-up solution to scan your non-public applications. You can learn more about the Scanning Agent in this article on [how to scan internal applications with a Scanning Agent](https://help.probely.com/en/articles/4615595-how-to-scan-internal-applications-with-a-scanning-agent).
+The Scanning Agent allows scanning internal applications with a secure, clean, and easy-to-set-up solution to scan your non-public applications. You can learn more about the Scanning Agent in this article on [how to scan internal applications with a Scanning Agent](scan-internal-apps-with-agent.md).
 
 Installing a Scanning Agent involves two steps:
 
