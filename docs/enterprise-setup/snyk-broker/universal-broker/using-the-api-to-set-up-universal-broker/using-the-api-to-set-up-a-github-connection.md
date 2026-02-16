@@ -8,18 +8,50 @@ Using the `snyk-broker-config` CLI tool is recommended for an easier experience.
 In any of the calls that follow, replace `api.snyk.io` with your regional equivalent if necessary, for example, `api.eu.snyk.io`. For a list of URLs, see [API URLs](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#api-urls).
 {% endhint %}
 
+{% hint style="info" %}
+Prerequisites:
+
+- You must be a Tenant admin.
+- Use a personal API token for all API calls.
+
+For full details, see [Using the API to set up Universal Broker – Prerequisites](../../../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/README.md#prerequisites).
+{% endhint %}
+
 ## Install the Broker app for your Organization <a href="#id-1-install-the-broker-app-on-your-org" id="id-1-install-the-broker-app-on-your-org"></a>
 
 The Universal Broker App facilitates the secure connection and communication with the Broker server through OAuth.
 
 Install the Broker app at the Organization level. Group-level installation is not supported. Use the endpoint [Install a Snyk App to this Organization](../../../../snyk-api/reference/apps.md#post-orgs-org_id-apps-installs). Use the Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](../../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
 
+Follow these steps to install and verify the Snyk Broker App for your Organization:
+
+1. Ensure you have a personal API token and Tenant admin permissions.
+2. Identify the Snyk Broker App ID for your region.
+3. Install the app using the endpoint linked above for your target Organization.
+4. Verify the installation using `GET /orgs/{org_id}/apps/installs`.
+5. Locate the App ID in the install record under `relationships.app.data.id`.
+
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>{
+  "data": [
+    {
+      "type": "app_install",
+      "id": "INSTALL_ID",
+      "relationships": {
+        "app": {
+          "data": { "id": "APP_ID", "type": "app" }
+        }
+      }
+    }
+  ]
+}
+</code></pre></td></tr></tbody></table>
+
 ## Create your deployment <a href="#id-2-create-your-deployment" id="id-2-create-your-deployment"></a>
 
 Use the following call to create your deployment.
 
 ```
-curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments?version=2024-02-08~experimental' \
+curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments?version=2025-11-05' \
 --header 'Content-Type: application/vnd.api+json' \
 --header 'Authorization: token YOUR_SNYK_TOKEN' \
 --data-raw '{
@@ -80,7 +112,7 @@ When the command is running, you should get the following message in the output:
 
 ## Create your credentials reference or references <a href="#id-3-create-your-credentials-references" id="id-3-create-your-credentials-references"></a>
 
-<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments/DEPLOYMENT_ID/credentials?version=2024-02-08~experimental' \
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments/DEPLOYMENT_ID/credentials?version=2025-11-05' \
 --header 'Content-Type: application/vnd.api+json' \
 --header 'Authorization: token YOUR_SNYK_TOKEN' \
 --data-raw '{
@@ -131,7 +163,7 @@ You can create a maximum of ten credentials in one call by adding more objects i
 
 ## Create your connection or connections <a href="#id-4-create-your-connections" id="id-4-create-your-connections"></a>
 
-<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments/DEPLOYMENT_ID/connections?version=2024-02-08~experimental' \
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments/DEPLOYMENT_ID/connections?version=2025-11-05' \
 --header 'Content-Type: application/vnd.api+json' \
 --header 'Authorization: token YOUR_SNYK_TOKEN' \
 --data-raw '{
@@ -199,7 +231,7 @@ You can now use the connection in an Organization integration.
 
 ## Connect your Organization integration to use a connection <a href="#id-5-connect-your-org-integration-to-use-a-connection" id="id-5-connect-your-org-integration-to-use-a-connection"></a>
 
-<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/connections/CONNECTION_ID/orgs/ORG_ID/integration?version=2024-02-08~experimental' \
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/connections/CONNECTION_ID/orgs/ORG_ID/integration?version=2025-11-05' \
 --header 'Content-Type: application/vnd.api+json' \
 --header 'Authorization: token YOUR_SNYK_TOKEN' \
 --data-raw '{

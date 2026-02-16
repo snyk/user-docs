@@ -112,6 +112,8 @@ Dynamic Application Security Testing.
 
 To see the documentation for each integration, click on the integration name in the table.
 
+For first-party guidance, see [Snyk API & Web Integrations](../scan-with-snyk/snyk-api-web/integrations/README.md).
+
 | Integration                                                             | Description                                                                                                                       |
 | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | [Bright](https://docs.brightsec.com/docs/snyk)                          | Validates SAST issues, reducing false positives and improving the reliability of vulnerability assessments.                       |
