@@ -281,7 +281,7 @@ This is a more advanced configuration for building, deploying, and scanning an a
 
 Using ephemeral environments requires agent token, target hostname and target URL. We recommend storing them as variables for better security.
 
-You also need to create a scanning agent in Snyk API & Web and configure your target to use it. This process requires the `scanning-agent/farcasterd-linux-amd64-0.4.3` file. For detailed instructions, see <a href="https://www.google.com/search?q=link-to-article" rel="nofollow noopener noreferrer" target="_blank">How to install a Scanning Agent</a> and <a href="https://www.google.com/search?q=link-to-article" rel="nofollow noopener noreferrer" target="_blank">How to scan internal applications</a>.
+You also need to create a scanning agent in Snyk API & Web and configure your target to use it. This process requires the `scanning-agent/farcasterd-linux-amd64-0.4.3` file. For detailed instructions, see <a href="../agents/install-a-scanning-agent.md" rel="nofollow noopener noreferrer">How to install a Scanning Agent</a> and <a href="../agents/scan-internal-apps-with-agent.md" rel="nofollow noopener noreferrer">How to scan internal applications</a>.
 
 **Note:** In this code example, Docker is used to create ephemeral environments. However, you can use any other solution to create your environment.
 
