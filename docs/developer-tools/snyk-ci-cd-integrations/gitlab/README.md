@@ -6,8 +6,8 @@ Use Snyk API & Web to run dynamic scans of web apps and APIs in your GitLab pipe
 - Create a target in Snyk API & Web and note the target ID.
 - In GitLab, add CI/CD variables for `PROBELY_API_KEY` and `TARGET_ID`.
 - For internal apps or ephemeral environments, run with a scanning agent; see:
-  - [Install a Scanning Agent](../../../scan-with-snyk/snyk-api-web/agents/install-a-scanning-agent.md)
-  - [Scan internal apps with an agent](../../../scan-with-snyk/snyk-api-web/agents/scan-internal-apps-with-agent.md)
+  - [Install a Scanning Agent](../../../implementation-and-setup/enterprise-setup/networking-and-connectivity/install-a-scanning-agent.md)
+  - [Scan internal apps with an agent](../../../implementation-and-setup/enterprise-setup/networking-and-connectivity/scan-internal-apps-with-agent.md)
 
 ## Example: Non-blocking scan job
 This job starts a scan and exits without waiting for results.

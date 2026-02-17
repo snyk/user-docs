@@ -25,4 +25,4 @@ pipelines:
           - echo "Started scan ${SCAN_ID}"
 ```
 
-For blocking scans that wait for results and optionally fail on high issues, poll the scan status using `probely scans get`. For scanning internal apps or ephemeral environments, run with a scanning agent; see [Install a Scanning Agent](../../../scan-with-snyk/snyk-api-web/agents/install-a-scanning-agent.md) and [Scan internal apps with an agent](../../../scan-with-snyk/snyk-api-web/agents/scan-internal-apps-with-agent.md).
+For blocking scans that wait for results and optionally fail on high issues, poll the scan status using `probely scans get`. For scanning internal apps or ephemeral environments, run with a scanning agent; see [Install a Scanning Agent](../../../implementation-and-setup/enterprise-setup/networking-and-connectivity/install-a-scanning-agent.md) and [Scan internal apps with an agent](../../../implementation-and-setup/enterprise-setup/networking-and-connectivity/scan-internal-apps-with-agent.md).
