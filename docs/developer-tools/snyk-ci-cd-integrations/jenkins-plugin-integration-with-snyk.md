@@ -161,6 +161,36 @@ The minimum severity to detect. Can be one of the following: `low`, `medium`, `h
 
 See the [CLI commands and options summary](../snyk-cli/cli-commands-and-options-summary.md) for information on additional CLI options.
 
+## Snyk API & Web scanning (Pipeline example)
+
+Use Snyk API & Web to run dynamic scans of web apps and APIs from Jenkins pipelines using the Snyk API & Web CLI.
+
+Prerequisites:
+
+- Store `PROBELY_API_KEY` and `TARGET_ID` securely (for example, Jenkins credentials + environment bindings).
+- For internal apps or ephemeral environments, run with a scanning agent; see [Install a Scanning Agent](../../scan-with-snyk/snyk-api-web/agents/install-a-scanning-agent.md) and [Scan internal apps with an agent](../../scan-with-snyk/snyk-api-web/agents/scan-internal-apps-with-agent.md).
+
+Pipeline snippet (non-blocking scan):
+
+```
+pipeline {
+  agent any
+  stages {
+    stage('Dynamic scan') {
+      steps {
+        sh '''
+          pip install probely
+          SCAN_ID=$(probely targets start-scan ${TARGET_ID} -o IDS_ONLY --api-key ${PROBELY_API_KEY})
+          echo "Started scan ${SCAN_ID}"
+        '''
+      }
+    }
+  }
+}
+```
+
+To block on results and optionally fail on high issues, poll with `probely scans get ${SCAN_ID}` and evaluate the findings before exiting the stage.
+
 ## View your Snyk Security Report
 
 * Complete a new build of your Project.

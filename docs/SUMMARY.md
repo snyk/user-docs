@@ -574,6 +574,7 @@
     * [Snyk Docker action](developer-tools/snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-docker-action.md)
     * [Snyk Infrastructure as Code action](developer-tools/snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-infrastructure-as-code-action.md)
     * [Snyk Setup action](developer-tools/snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-setup-action.md)
+  * [GitLab CI/CD: Snyk API & Web scanning](developer-tools/snyk-ci-cd-integrations/gitlab/README.md)
   * [Jenkins plugin integration with Snyk](developer-tools/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk.md)
   * [Maven plugin integration with Snyk](developer-tools/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk.md)
   * [TeamCity (JetBrains) integration using the Snyk security plugin](developer-tools/snyk-ci-cd-integrations/teamcity-jetbrains-integration-using-the-snyk-security-plugin/README.md)

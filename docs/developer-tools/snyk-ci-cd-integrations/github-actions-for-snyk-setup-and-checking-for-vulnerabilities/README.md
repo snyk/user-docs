@@ -195,3 +195,29 @@ Every Snyk account has this token. After you have created an account with Snyk, 
 
 1. In the UI, go to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained on the page [Revoke and regenerate a Snyk API token](../../../snyk-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token.md).
 2. If you are using the [Snyk CLI](../../snyk-cli/getting-started-with-the-snyk-cli.md) locally, you can retrieve the API token by running `snyk config get api`.
+
+### Dynamic application scanning (Snyk API & Web)
+
+Use Snyk API & Web to run dynamic scans of web apps and APIs as part of your workflows. At a high level:
+
+- Store a `PROBELY_API_KEY` repository secret.
+- Optionally set `TARGET_ID` (the Snyk API & Web target ID) as an Actions variable or secret.
+- Add a job step that installs the Snyk API & Web CLI and starts a scan.
+
+Example (non-blocking scan):
+
+```yaml
+jobs:
+  dast-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Snyk API & Web CLI
+        run: pip install probely
+      - name: Start dynamic scan (non-blocking)
+        run: |
+          SCAN_ID=$(probely targets start-scan ${{ vars.TARGET_ID }} -o IDS_ONLY --api-key ${{ secrets.PROBELY_API_KEY }})
+          echo "Started scan ${SCAN_ID}"
+```
+
+For blocking scans that wait for results and optionally fail on high issues, see the pipeline examples in this section. For scanning internal apps or ephemeral environments, run with a scanning agent; see [Install a Scanning Agent](../../../scan-with-snyk/snyk-api-web/agents/install-a-scanning-agent.md) and [Scan internal apps with an agent](../../../scan-with-snyk/snyk-api-web/agents/scan-internal-apps-with-agent.md).

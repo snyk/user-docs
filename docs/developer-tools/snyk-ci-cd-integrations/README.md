@@ -31,6 +31,15 @@ For integration with GitLab pipelines, see this [pipeline configuration](https:/
 
 For additional examples of binary and npm integrations for CI/CD, see [GitHub CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples).
 
+### Dynamic application scanning (Snyk API & Web) in CI/CD
+
+Use Snyk API & Web to run dynamic scans of web apps and APIs from your pipelines. Start with the following guides:
+
+- [GitHub Actions: Dynamic application scanning](github-actions-for-snyk-setup-and-checking-for-vulnerabilities/#dynamic-application-scanning-snyk-api-web)
+- [Bitbucket Pipelines: API & Web scanning](bitbucket-pipelines-integration-using-a-snyk-pipe/configure-your-bitbucket-pipelines-integration.md#api-web-scanning)
+- [Jenkins: Snyk API & Web scanning (Pipeline example)](jenkins-plugin-integration-with-snyk.md#snyk-api-web-scanning-pipeline-example)
+- [GitLab CI/CD: Snyk API & Web scanning](gitlab/)
+
 ## Support policy <a href="#support-policy" id="support-policy"></a>
 
 Snyk supports the latest 12 months of CI/CD plugin versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or troubleshooting.
