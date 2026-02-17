@@ -39,3 +39,15 @@ Through this interconnected framework, Snyk ensures robust asset protection and 
 The table below outlines the asset enrichments provided by each SCM Integration. It highlights which capabilities are available today that are not available due to the SCM provider.
 
 <table data-full-width="false"><thead><tr><th width="144.1553955078125">Capability</th><th width="103.8853759765625">GitHub</th><th width="96.415771484375">GitLab</th><th width="110.57470703125">BitBucket Cloud</th><th width="112.80908203125">BitBucket Server</th><th width="99.44970703125">Azure DevOps</th></tr></thead><tbody><tr><td>Org/Workspace</td><td>✅​</td><td>✅​</td><td>✅​</td><td>✅​</td><td>✅​</td></tr><tr><td>SCM Projects</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Contributors</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>Teams</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>Languages (tags)</td><td>✅</td><td>✅</td><td>✅ When manually set up</td><td>❌</td><td>✅</td></tr><tr><td>Tags</td><td>✅ GitHub topics / GitHub custom properties</td><td>✅ GitLab topics</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td>Visibility</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Archive Repos</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr></tbody></table>
+
+## Tune dynamic crawl scope (seeds & rejects)
+
+Control and refine what your dynamic scans discover by configuring seeds and reject lists for your targets. This helps focus crawling on relevant paths and exclude areas like logout endpoints or noisy routes.
+
+- See guidance: [Seeds and reject lists](../scan-with-snyk/snyk-api-web/targets/seeds-and-reject-lists.md)
+
+## Asset discovery overview (web & APIs)
+
+Understand how Snyk API & Web discovers endpoints and pages during dynamic scanning to assess coverage and identify gaps.
+
+- Read the primer: [Asset discovery overview](../scan-with-snyk/snyk-api-web/targets/asset-discovery-overview.md)

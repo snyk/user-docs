@@ -225,6 +225,7 @@
     * [Preflight checks for Snyk Broker](implementation-and-setup/enterprise-setup/snyk-broker/preflight-checks-for-snyk-broker.md)
     * [Troubleshooting Broker](implementation-and-setup/enterprise-setup/snyk-broker/troubleshooting-broker.md)
     * [Common questions about Broker](implementation-and-setup/enterprise-setup/snyk-broker/common-questions-about-broker.md)
+  * [Networking and connectivity](implementation-and-setup/enterprise-setup/networking-and-connectivity/README.md)
 
 ## Supported languages
 

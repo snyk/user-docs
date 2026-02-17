@@ -76,3 +76,17 @@ Snyk offers capabilities to address issues both reactively and proactively:
 Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams benefit from being agile and determining what works best for their workflow. For more details, see the [Team implementation guide](../implementation-and-setup/team-implementation-guide/).
 
 With large organizations developing hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For more details, see the [Enterprise implementation guide](../implementation-and-setup/enterprise-implementation-guide/).
+
+## Schedule dynamic scans (Snyk API & Web)
+
+Automate recurring dynamic scans of your web apps and APIs to track drift and regressions. See how to configure schedules and policies:
+
+- [Schedule a scan](snyk-api-web/scanning/schedule-a-scan.md)
+
+## Troubleshooting Snyk API & Web scanning
+
+Resolve common issues when scanning dynamic targets:
+
+- [Improve coverage (common issues)](snyk-api-web/troubleshooting/low-coverage.md)
+- [Verify site ownership for scanning (DNS)](snyk-api-web/troubleshooting/domain-verification-dns.md)
+- [Authenticate login forms for crawlers](snyk-api-web/troubleshooting/login-failed-target-authentication-login-form.md)

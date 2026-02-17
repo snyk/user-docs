@@ -35,6 +35,12 @@ Navigate to **Analytics** > **Reports** to see all available reports.&#x20;
 
 After you selected a specific report, you can switch to a different report from the dropdown in the upper left corner.
 
+### Saved reports for web app scans (Snyk API & Web)
+
+Create and manage saved views for your dynamic (web/API) scan results to track trends and share recurring views with stakeholders.
+
+- See: [Saved reports](../../../scan-with-snyk/snyk-api-web/reporting/saved-reports.md)
+
 ## Snyk reporting filters
 
 All reports are filterable by a number of attributes, enabling users to create the appropriate horizontal or vertical slice of the business for their use case. You can see the available filters in the dropdown furthest right at the top.
