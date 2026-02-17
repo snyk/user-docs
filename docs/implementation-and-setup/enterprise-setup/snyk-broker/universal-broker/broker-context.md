@@ -1,6 +1,6 @@
 # Broker Contexts
 
-A Broker Context is an optional configuration override for Broker Connections that you can apply to a Broker Integration. When a Context is applied, that Integration begins using the override's parameters instead of the Connection's default values.
+Use a Broker Context to override the configuration of a Broker Connection. When you apply a Context to a Broker Integration, the Integration uses the override parameters instead of the default values.
 
 Typical use case: A Connection is shared by many Orgs, with some Orgs using a different endpoint or credentials. You create a Context with the necessary parameters overrides, then apply that Context to the relevant Integrations for each Org.
 
