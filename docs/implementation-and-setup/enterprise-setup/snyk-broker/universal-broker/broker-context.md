@@ -6,7 +6,7 @@ Use a Broker Context to override the configuration of a Broker Connection. When 
 
 Use a Context when multiple Organizations share a Connection but require different endpoints or credentials. Create a Context with the necessary parameter overrides and apply it to the relevant Integrations for each Organization.
 
-- Connection: Defines how the Broker connects to an SCM (e.g. GitHub, Jira, etc). It has a type and a fixed set of parameters (URLs, tokens, etc.).
+*   **Connection:** Defines how the Broker connects to a platform, for example, GitHub or Jira. A Connection includes a type and fixed parameters, such as URLs and tokens.
 *   **Context:** Associates with a single Connection and contains a subset of parameters. These parameters override the corresponding Connection parameters.
 *   **Integration:** Represents the use of a Connection by an Organization. An Integration consists of one Organization and one Connection. You can apply only one Context per Integration.
 
