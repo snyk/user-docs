@@ -38,7 +38,7 @@ Use **Sort by** (pull down on the far right) to sort the **Projects** listing by
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="Sorting attributes available when grouping by Target"><figcaption><p>Sorting attributes available when grouping by Target</p></figcaption></figure>
 
-### Snyk API & Web targets (dynamic scans)
+### What is a target (Snyk API & Web)
 
 For dynamic application and API scanning with Snyk API & Web, a Target is typically a URL or base path (for example, `https://example.com`, `https://example.com/app1`, or `https://api.example.com`). The scanner will not crawl or test outside the base URL scope.
 

@@ -1,5 +1,9 @@
 # How to install a Scanning Agent
 
+{% hint style="info" %}
+This page has moved. See [Install a Scanning Agent](../../../implementation-and-setup/enterprise-setup/networking-and-connectivity/install-a-scanning-agent.md) under Enterprise setup > Networking and connectivity.
+{% endhint %}
+
 Learn how to install Snyk API & Web Scanning Agent
 
 <img src="../../../.gitbook/assets/snyk-api-web/5530a2b28285ea60de10f16a64f57b44160bec88.jpg" class="inline-flex items-center justify-center rounded-full bg-primary text-lg font-bold leading-6 text-primary-text shadow-solid-2 shadow-body-bg [&amp;:nth-child(n+2)]:hidden lg:[&amp;:nth-child(n+2)]:inline-flex h-8 w-8 sm:h-9 sm:w-9" width="24" height="24" alt="Martim Valente avatar" />

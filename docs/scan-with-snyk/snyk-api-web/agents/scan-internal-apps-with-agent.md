@@ -1,5 +1,9 @@
 # How to scan internal applications with a Scanning Agent
 
+{% hint style="info" %}
+This page has moved. See [Scan internal apps with an agent](../../../implementation-and-setup/enterprise-setup/networking-and-connectivity/scan-internal-apps-with-agent.md) under Enterprise setup > Networking and connectivity.
+{% endhint %}
+
 Scan your internal applications with Snyk API & Web's Scanning Agent. A secure, clean, and easy-to-set-up solution to scan non-public applications.
 
 <img src="../../../.gitbook/assets/snyk-api-web/0581f948f3d016b0996055b218f51b7485035d04.jpg" class="inline-flex items-center justify-center rounded-full bg-primary text-lg font-bold leading-6 text-primary-text shadow-solid-2 shadow-body-bg [&amp;:nth-child(n+2)]:hidden lg:[&amp;:nth-child(n+2)]:inline-flex h-8 w-8 sm:h-9 sm:w-9" width="24" height="24" alt="Tiago Mendo avatar" />
