@@ -52,7 +52,9 @@ snyk-broker-config workflows contexts withdraw
 ```bash
 snyk-broker-config workflows contexts delete
 ```
-- Note that you cannot delete a Context that has been applied to an Integration. Withdraw the Context from any Integrations it has been applied to before deletion.
+{% hint style="info" %}
+You cannot delete a Context that is applied to an integration. First, withdraw the Context from all integrations it has been applied to before attempting to delete it.
+{% endhint %}
 
 ## Viewing context details
 
