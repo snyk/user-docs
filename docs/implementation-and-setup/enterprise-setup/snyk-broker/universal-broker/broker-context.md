@@ -2,7 +2,9 @@
 
 Use a Broker Context to override the configuration of a Broker Connection. When you apply a Context to a Broker Integration, the Integration uses the override parameters instead of the default values.
 
-Typical use case: A Connection is shared by many Orgs, with some Orgs using a different endpoint or credentials. You create a Context with the necessary parameters overrides, then apply that Context to the relevant Integrations for each Org.
+**Use case**
+
+Use a Context when multiple Organizations share a Connection but require different endpoints or credentials. Create a Context with the necessary parameter overrides and apply it to the relevant Integrations for each Organization.
 
 - Connection: Defines how the Broker connects to an SCM (e.g. GitHub, Jira, etc). It has a type and a fixed set of parameters (URLs, tokens, etc.).
 *   **Context:** Associates with a single Connection and contains a subset of parameters. These parameters override the corresponding Connection parameters.
