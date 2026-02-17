@@ -5,8 +5,8 @@ A Broker Context is an optional configuration override for Broker Connections th
 Typical use case: A Connection is shared by many Orgs, with some Orgs using a different endpoint or credentials. You create a Context with the necessary parameters overrides, then apply that Context to the relevant Integrations for each Org.
 
 - Connection: Defines how the Broker connects to an SCM (e.g. GitHub, Jira, etc). It has a type and a fixed set of parameters (URLs, tokens, etc.).
-- Context: Belongs to one Connection and holds a overriding subset of that Connection’s parameters. Each key in the Context overrides the same key on the Connection when the Context is applied.
-- Integration: An Organization’s use of a Connection (one Org + one Connection = one Integration). You can apply at most one Context per Integration.
+*   **Context:** Associates with a single Connection and contains a subset of parameters. These parameters override the corresponding Connection parameters.
+*   **Integration:** Represents the use of a Connection by an Organization. An Integration consists of one Organization and one Connection. You can apply only one Context per Integration.
 
 ## Configuring Broker Contexts
 
@@ -26,20 +26,20 @@ snyk-broker-config workflows contexts create
 - You then choose which parameters to override. Allowed parameters depend on the connection type (e.g. for jira: `jira_hostname`, `jira_username`, `jira_password` and `jira_pat` can all be overridden).
 - For each chosen parameter you enter a value. For sensitive parameters the API expects a credential reference from the same deployment, you will be prompted to choose or create a new credential reference.
 
-### Apply a Context to an Integration
+### Apply a Context to an integration
 
-Applies a Context's overrides to an Integration. You select the Context, then the Integration you want to override.
+Apply context overrides to an integration. Select the context and the integration to override.
 
 ```bash
 snyk-broker-config workflows contexts apply
 ```
 
-- Only integrations for the same Connection as the Context are offered. 
-- If you only have one Context then you won't be prompted to choose the Context.
+- Snyk displays integrations only for the same Connection as the Context.
+- If you have only one Context, Snyk does not prompt you to select a Context.
 
-### Withdraw a Context from an Integration
+### Withdraw a Context from an integration
 
-Stops an Integration from using the Context, the Integration falls back to the Connection’s default parameters. You select the Context, then one or more Integrations to withdraw from.
+Stop an integration from using a context. The integration reverts to the default connection parameters. Select the context, then select one or more integrations to remove.
 
 ```bash
 snyk-broker-config workflows contexts withdraw
@@ -52,9 +52,9 @@ snyk-broker-config workflows contexts delete
 ```
 - Note that you cannot delete a Context that has been applied to an Integration. Withdraw the Context from any Integrations it has been applied to before deletion.
 
-## Viewing Context Details
+## Viewing context details
 
-### List all Contexts for a Deployment
+### List all Contexts for a deployment
 
 ```bash
 snyk-broker-config workflows contexts list
@@ -65,9 +65,9 @@ snyk-broker-config workflows contexts list
 snyk-broker-config workflows contexts get
 ```
 
-### See which Integrations use a specific Context
+### See which integrations use a specific Context
 
-Shows which Integration and Org IDs currently have this Context applied.
+Displays the integration and Organization IDs associated with this Context.
 
 ```bash
 snyk-broker-config workflows contexts usage
