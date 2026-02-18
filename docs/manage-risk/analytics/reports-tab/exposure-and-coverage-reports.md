@@ -147,12 +147,6 @@ For a table of only the unique vulnerabilities, use **Change Report** to switch 
 
 ## Risk exposure report
 
-{% hint style="info" %}
-**Feature availability**
-
-Snyk Risk exposure report is in Early Access and available only for Enterprise plan customers. For more information, see [Plans and pricing](https://snyk.io/plans/).
-{% endhint %}
-
 This report gives you a single, consolidated view of your security risks. It allows you to quickly understand your risk exposure, track your progress in reducing it, and pinpoint high-risk areas.
 
 The Risk Exposure Report helps AppSec teams make quicker, more informed decisions. Rather than reviewing multiple reports, it provides a clear overview of the security landscape, allowing you to:
@@ -169,11 +163,11 @@ Choose your preferred severity source and automatically update selected severity
 
 * **Snyk**: utilizing Snyk proprietary CVSS calculations and other factors, including the relative importance of the Linux distributor.
 * **NVD CVSS**: leveraging severity scores from the National Vulnerability Database (NVD).
-* **Non-SCA Severities:** For non-SCA issues (e.g., Code, IaC), Snyk's severity calculates High, Medium, and Low levels for specific code vulnerabilities and makes use of the Common Configuration Scoring System (CCSS) for IaC severity determinations
+* **Non-SCA Severities:** For non-SCA issues (for example, Code, IaC), Snyk severity calculates High, Medium, and Low levels for specific code vulnerabilities and makes use of the Common Configuration Scoring System (CCSS) for IaC severity determinations
 
 The report includes two main sections to provide a comprehensive view of your risk landscape:
 
-### **Risk exposure Trends**
+### **Risk exposure trends**
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd5HXXMoOzL2GsdBqF8tdO17PhaHx-1GdOdjVLAKpg46xqSMl1ooJB_KoaOkZb61O6Pu44KVI5hYkrn08aLiYfvKbIu0vZIraPlI1t44JcZP49KGbyYczwgn-jbXObBOmx-b_XF?key=Dqdjzf6y3TJS6QA9IfBneg" alt=""><figcaption></figcaption></figure>
 
@@ -182,10 +176,13 @@ This section provides a visual overview of your issues over time. You can view t
 * **Severity**: See the distribution of issues across different severity levels.
 * **Introduction Category**: Understand how issues are being introduced into your Projects.
 * **Asset Class**: Group issues by the type of asset they affect.
+* **Snyk Product**: Group issues by scanner.
+* **Exploit Maturity:** Understand which issues have mature exploits.
+* **Top 10 Orgs:** View risk by the Top 10 Organizations with the most open issues.
 
-### **Risk exposure Breakdown**
+### **Risk exposure breakdown**
 
-This detailed table breaks down issues and impacted assets. You can dynamically group the data to fit your needs by selecting from the following dimensions: group, organization, project, introduction category, and asset class.
+This detailed table breaks down issues and impacted assets. You can dynamically group the data to fit your needs by selecting from the following dimensions: Group, Organization, Project, introduction category, and asset class.
 
 The table is sorted by default to surface the total number of critical and high-severity issues, helping you focus on the most urgent risks first.
 
