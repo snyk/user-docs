@@ -31,7 +31,6 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
   * [Breakability risk levels](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/breakability-risk-levels.md)
 * Universal Broker
 * Language support
-  * [Improved .NET scanning](/broken/pages/PvXOZ1NqIqQz46Zk799z)
   * [Snyk CLI pnpm support](../../supported-languages/supported-languages-list/javascript/#support-for-pnpm)
   * [Improved Gradle SCM scanning](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning)
 * Reports
