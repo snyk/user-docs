@@ -110,6 +110,7 @@
   * [Single Sign-On (SSO) for authentication to Snyk](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/README.md)
     * [Choose a provisioning option](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/choose-a-provisioning-option.md)
     * [Set up Snyk Single Sign-On (SSO)](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/set-up-snyk-single-sign-on-sso.md)
+    * [Set up Target 2FA using an alternative OTP](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/set-up-target-2fa-using-an-alternative-otp.md)
     * [Configure Self-Serve Single Sign-On (SSO)](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/README.md)
       * [Okta SAML application setup](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/okta-saml-application-setup.md)
       * [Entra ID Enterprise application setup](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/azure-ad-enterprise-application-setup.md)
