@@ -1,17 +1,33 @@
 # Troubleshooting Snyk for .NET
 
-## Snyk Open Source limitations for .NET
+### .NET SDK resolution limitations
 
-* [`Directory.Build.props`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) and [`Directory.Build.targets`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) are not supported for SCM integration. You can scan private dependencies using central package management with the Snyk CLI. You must run `dotnet restore` and then run `snyk test` with `--all-projects`, as each sub-folder will contain its own `project.assets.json` file.
-* `<ProjectReference>`elements are not supported.
-* Private dependency scanning is supported for SCM integrations by enabling improved .NET scanning for your Organization or Group through the [Snyk Preview](../../../snyk-platform-administration/snyk-preview.md) menu. Navigate to the [Improved .NET scanning](improved-.net-scanning.md) page for more details. You can also scan private dependencies using the Snyk CLI
+Snyk uses static analysis instead of the .NET SDK to resolve dependencies in the following scenarios:
 
-If you need help, [contact Snyk Support](https://support.snyk.io).
+* Legacy Project files: Projects use legacy non-SDK style Project files.
+* Legacy Broker: Organizations use the Legacy Broker instead of the Universal Broker to connect to brokered private package repositories and SCMs.
 
-## Snyk technical support for .NET
+To improve accuracy, migrate to the Universal Broker.
 
-The following support articles are available:
+### Static analysis limitations
 
-* [Project import errors](https://support.snyk.io/s/article/Project-import-errors)
-* [Changing .NET Target Framework not reflected in Snyk Portal](https://support.snyk.io/s/article/Changing-NET-Target-Framework-not-reflected-in-Snyk-Portal)
-* [How does Snyk aggregate .NET Projects?](https://support.snyk.io/s/article/How-does-Snyk-aggregate-NET-Projects)
+The following functionality is not supported when using static analysis:
+
+* Private dependencies: Snyk cannot access private dependencies, including brokered and non-brokered. Transitive dependencies are not resolved.
+* Build configuration: Snyk ignores `Directory.Build.props`, `Directory.Build.targets`, and `global.json` files.
+* Runtime precision: Snyk cannot reliably identify the specific runtime, which may increase false positives
+
+### Handle runtime false positives
+
+Static analysis may flag vulnerabilities already patched in your environment because it may not detect your specific runtime patch version.
+
+#### Vulnerabilities in SCM
+
+If your application runs on a system updated with the latest Microsoft patches, a flagged vulnerability may not be relevant. You can ignore these vulnerabilities in the Snyk Web UI.
+
+#### Vulnerabilities in CLI
+
+If your production environment pulls the latest patches or you deploy a self-contained application, use the following configurations in your project file to improve accuracy:
+
+* Latest SDK patch: If your application always runs on the latest SDK patch version in production, set `TargetLatestRuntimePatch` to `true` in the project file. Ensure you upgrade all environments to the latest runtime version.
+* Self-contained applications: If you publish a self-contained app that includes the runtime, set `RuntimeFrameworkVersion` to the specific patch version in the project file. You can ignore vulnerabilities that are no longer relevant.
