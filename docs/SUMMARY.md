@@ -1132,7 +1132,6 @@
   * [Snyk Jumpstart Standard Services Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-services-description.md)
   * [Snyk Spark Services Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-spark-services-description.md)
   * [Snyk Jumpstart Customer Prerequisites](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-jumpstart-customer-prerequisites.md)
-  * [Snyk Residency Services](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-residency-services.md)
   * [Snyk Declining Balance of Hours Service Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/declining-balance.md)
   * [Snyk API & Web Managed Scans Service Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-api-and-web-managed-scans-service-description.md)
   * [Snyk Penetration Testing Service Description](snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/snyk-penetration-testing-service-description.md)

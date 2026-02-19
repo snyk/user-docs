@@ -10,8 +10,6 @@ For customers with legacy success offerings that are no longer available for new
 
 <table data-full-width="false"><thead><tr><th width="164">Offering</th><th width="153">Standard*</th><th width="148">Flex Success</th><th width="148">Gold Success</th><th>Platinum Success</th></tr></thead><tbody><tr><td>Digital learning resources</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Customer Support Portal</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Support resource and ticket routing. For details, see <a href="./#support-terms">Support Terms</a>.</td><td>Pooled Technical Support</td><td><p>Pooled technical support<br></p><p>Priority path for escalation</p></td><td><p>Pooled Technical support<br></p><p>Priority path for escalation</p></td><td><p>Aligned technical support engineer</p><p>Priority routing for support issues</p><p>Priority path for escalation<br></p></td></tr><tr><td>Hours of operation. For details, see <a href="./#support-terms">Support Terms</a>.</td><td>24x5</td><td>24x5</td><td>24x7</td><td>24x7</td></tr><tr><td>Initial Support response SLA<br>For details, see <a href="./#support-terms">Support Terms</a>.</td><td><ul><li>Urgent (1): 4 hrs</li><li>High (2): 8 hrs</li><li>Normal (3): 24hrs</li><li>Low (4): 24 hrs</li></ul></td><td><ul><li>Urgent (1): 2 hrs</li><li>High (2): 4 hrs</li><li>Normal (3): 8 hrs</li><li>Low (4): 12 hrs</li></ul></td><td><ul><li>Urgent (1): 1 hr</li><li>High (2): 2 hr</li><li>Normal (3): 8 hr</li><li>Low (4): 12 hrs</li></ul></td><td><ul><li>Urgent (1): 1 hr</li><li>High (2): 2 hr</li><li>Normal (3): 4 hrs</li><li>Low (4): 8 hrs</li></ul></td></tr><tr><td>Technical Success Manager</td><td>Customer Support Portal</td><td>Pooled and available for Bookable sessions (12 one-hour sessions/year)</td><td>Dedicated</td><td>Dedicated</td></tr><tr><td>Solutions architecture</td><td>❌</td><td>❌</td><td>❌</td><td>✔</td></tr><tr><td>Guided onboarding</td><td>❌</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Success planning</td><td>❌</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Business review cadence</td><td>N/A</td><td>Bookable session (One of the 12 one-hour sessions/year)</td><td>Bi-annual</td><td>Quarterly</td></tr><tr><td>Live training sessions</td><td>Public trainings on snyk.io/events</td><td><p>Bookable Sessions (One of the 12 one-hour sessions/year)</p><p>and</p><p>Public trainings on snyk.io/events</p></td><td>1 Private Session/Month</td><td>2 Private Sessions/Month</td></tr><tr><td>Private Slack channel</td><td><p>No and</p><p>Customer Support Portal</p></td><td>No and Customer Support Portal</td><td>Yes and Customer Support Portal</td><td>Yes and Customer Support Portal</td></tr></tbody></table>
 
-
-
 {% hint style="info" %}
 \*Standard refers to the default Offering that comes along with an Enterprise Plan when the Customer has opted out of purchasing a Success Offering (Flex, Gold, Platinum Success Offerings).
 {% endhint %}
@@ -43,7 +41,7 @@ Customers may purchase enhanced education and training functionality, the Snyk L
 
 **Success planning**: Snyk will provide a template to assist the Customer with identifying goals and creating their success plan. The Customer is responsible for tracking and executing their plan.
 
-**Business review cadence:** Available as one of the twelve bookable sessions with a pooled TSM per contract year.&#x20;
+**Business review cadence:** Available as one of the twelve bookable sessions with a pooled TSM per contract year.
 
 **Live training sessions:** Available as one of the twelve bookable sessions with a pooled TSM per contract year. \*Free access to the Snyk learning platform [https://snyk.io/platform/learn/](https://snyk.io/platform/learn/) and live educational webinars [https://snyk.io/events/?type=webinar](https://snyk.io/events/?type=webinar).
 
@@ -178,5 +176,4 @@ The Customer acknowledges that the implementation, support and/or professional s
 See the service descriptions on each of the following pages.
 
 * [Snyk Jumpstart Services](snyk-jumpstart-services-description.md)
-* [Snyk Residency Services](snyk-residency-services.md)
 * [Statement of Work](declining-balance.md)
