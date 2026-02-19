@@ -1,3 +1,12 @@
+## 2025-11-05 - Updated 2026-02-19
+
+### GET - `/self/personal_access_tokens` - Added
+- List personal access tokens
+
+
+### DELETE - `/self/personal_access_tokens/{personal_access_token_id}` - Added
+- Delete a personal access token
+
 ## 2025-11-05 - Updated 2026-02-03
 
 ### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Updated
