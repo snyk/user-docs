@@ -149,7 +149,7 @@ The Snyk Consultant will educate the Customer on understanding Snyk IaC results 
 
 ## Timeline for Snyk Jumpstart Basic delivery
 
-Snyk Jumpstart Basic is a 30-day engagement, starting with a Jumpstart Basic Kickoff call.
+Snyk Jumpstart Basic is typically a 30-day engagement, starting with a Jumpstart Basic Kickoff call.
 
 For new Snyk customers, Jumpstart Basic includes initial Platform Configuration and all purchased product modules.
 
@@ -159,9 +159,9 @@ For existing Snyk customers, a Snyk Consultant adjusts the Platform Configuratio
 
 Project fees are fixed. Services are invoiced in full at purchase and are non-refundable.
 
-After purchase, the Snyk implementation team coordinates a pre-engagement call at a mutually agreed time. Jumpstart Basic services expire 60 days after the first Snyk Consultant outreach, regardless of customer engagement. Jumpstart Basic services conclude automatically after project completion or 30 days after the Kickoff call, whichever occurs first.
+After purchase, the Snyk implementation team coordinates a pre-engagement call at a mutually agreed time. While the Jumpstart engagement is optimized for a 30-day completion cycle, Snyk provides a fixed 60-day service window commencing on the Contract Start Date to fulfill services. This extended duration offers necessary flexibility to accommodate internal scheduling requirements or complex environment configurations.
 
-Unless otherwise agreed to by the parties in writing, a) services must be scheduled as agreed during the  call; b) product modules will be delivered consecutively; and c) all services will occur during normal business hours.
+Unless otherwise agreed to by the parties in writing, a) services must be scheduled as agreed during the call; b) product modules will be delivered consecutively; and c) all services will occur during normal business hours.
 
 All services are remote.
 
@@ -174,7 +174,7 @@ The following assumptions are reflected in the services outlined in this Jumpsta
 * The customer appoints one subject matter expert (SME) as the contact for Jumpstart Basic Services. The SME is available to work remotely with the Snyk Consultant throughout the engagement.
 * The customer provides Snyk with documentation and access to SMEs for non-Snyk systems and software when required.
 * The customer identifies key personnel before the engagement starts.
-* Snyk delivers services during normal business hours: Monday through Friday, 8 am to 5 pm local time. Regional variations apply (for example, Sunday through Thursday). Regional variations are based on the region of the assigned Snyk consultant.
+* Snyk delivers services during normal business hours: Monday through Friday, 8 am to 5 pm local time. Regional variations apply (for example, Sunday through Thursday). Regional variations are based on the region assigned to the Snyk consultant.
 * The customer provides prompt access to all systems and resources Snyk needs to complete the work.
 * Snyk does not support third-party software used with the Snyk solution, for example, version control systems, repository management, or trouble-ticketing systems.
 * Snyk conducts all services and communications in English.
