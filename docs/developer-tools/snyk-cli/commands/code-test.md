@@ -33,6 +33,8 @@ This creates a project in your Snyk account with a snapshot of the current issue
 
 After using this option, log in to the Snyk website and view your projects to see the snapshot.
 
+**Note:** When using `--report`, the service account or user token must have the **View Project Ignores** permission enabled. This permission is required to access ignore information when reporting results to the Snyk Web UI. If you receive a 403 Forbidden error, ensure your service account role includes this permission.
+
 Example: `$ snyk code test --report`
 
 ### `--project-name=<PROJECT_NAME>`
