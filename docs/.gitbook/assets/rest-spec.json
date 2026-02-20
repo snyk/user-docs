@@ -14339,7 +14339,7 @@
         "type": "object"
       },
       "InlineResource": {
-        "description": "Resource comprised of file contents included directly in\na request body.",
+        "description": "Resource comprised of file contents included directly in\na request body.\n\nCurrently supported scans utilizing InlineResources are:\n- SCA (Open Source): (1) InlineResource containing a Dep Graph",
         "example": {
           "content": {
             "dep_graph": {
@@ -14394,7 +14394,7 @@
         "type": "object"
       },
       "InlineResourceCreateItem": {
-        "description": "Resource comprised of file contents included directly in\na request body.",
+        "description": "Resource comprised of file contents included directly in\na request body.\n\nCurrently supported scans utilizing InlineResources are:\n- SCA (Open Source): (1) InlineResource containing a Dep Graph",
         "example": {
           "content": {
             "dep_graph": {
