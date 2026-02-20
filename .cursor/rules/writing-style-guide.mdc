@@ -1,0 +1,509 @@
+---
+description: Writing style guide for Snyk user docs
+globs: "**/*.{md,mdx}"
+alwaysApply: false
+---
+
+# Writing style guide
+
+When editing docs in this repo, follow the style guide in:
+
+- `.cursor/rules/writing-rules-style-guide.md`
+
+If you're about to make substantial edits to a doc page, read that file first and apply it to:
+
+- audience/persona and scannability
+- global, inclusive, bias-free language
+- accessibility (alt text, no color-only cues, avoid left/right/above/below references)
+- grammar/tone (active voice, present tense, avoid filler)
+- UI writing conventions (bold UI text, navigation with `Settings > Notifications`)
+- preferred word choices and standard casing (see the replacements table)
+
+---
+
+## Full style guide (reference)
+
+# Writing rules style guide
+
+## Audience (persona)
+
+If you reach for too many audiences, you'll miss them all. How you write to an advanced user will always differ from how you write to a novice. The same goes for personas. An AppSec user loves the power of Snyk, whereas a developer cares about ease of use within their workflow.
+
+- **Writing to a developer new to security?** Explain the basics clearly and provide easy-to-follow steps.
+
+- **Writing to a CISO looking for a new SAST?** Don't waste time on basic definitions. Show how Snyk overcomes the limitations of existing tools.
+
+## Core principles
+
+- **Write for scannability:** Users scan, they don't read. They decide quickly if content is relevant. Structure your content to help them, using clear headings, short paragraphs, and lists.
+
+- **Give the conclusion first (inverted pyramid):** Write the key points and answers first. This lets users get the most important information immediately and decide if they want to read the supporting details.
+
+- **Use headings as keywords:** Headings and subheadings should be short, use keywords users would search for, and help users understand the content at a glance. Avoid starting a topic with vague phrases like "This guide describes"; the title should make the topic clear.
+
+- **Use content chunks:** Use short, digestible paragraphs. Ensure there is enough white space between "chunks" to help users scan and identify what they need.
+
+- **Omit needless words:** Make every word count. Avoid filler words that don't add meaning.
+  - **Good:** Follow these steps to change your password.
+  - **Bad:** Follow these steps **in order to** change your password.
+
+## Global, inclusive, and bias-free communication
+
+Snyk reaches a global audience. Content must be respectful, inclusive, and easy to understand for everyone, including non-native English speakers.
+
+- **Inclusive language:** Do not use terms that may show bias regarding gender, race, culture, ability, or age.
+
+  - Use gender-neutral terms (for example, "chairperson" instead of "chairman").
+
+  - Use "they/them" as the default non-gendered pronoun.
+
+  - Portray people with disabilities positively. Use "people with disabilities" instead of "the disabled".
+
+  - Use "allowlist" instead of "whitelist" and "blocklist" instead of "blacklist".
+
+- **Avoid slang, jargon, and idioms:** Avoid slang, jargon, local terms, and colloquialisms. Do not use U.S.-centric sports or military metaphors (for example, avoid "hit a home run" or "demilitarized zone").
+
+- **Avoid non-English words:** Do not use Latin or other non-English phrases, even if they seem common.
+
+  - Use "for example" instead of "e.g.".
+
+  - Use "that is" instead of "i.e.".
+
+  - Use "and so on" instead of "etc.".
+
+  - Use "through" or "using" instead of "via".
+
+- **Language (US English):** Default to US English spelling and grammar.
+
+  - **US:** analyze
+
+  - **non-US:** analyse
+
+- **Be careful with art:** Images present globalization issues. Avoid hand signs, holiday themes, or specific flags that could be offensive or misunderstood in other cultures.
+
+## Accessibility
+
+Content must be easy for everyone to use, including people with disabilities.
+
+- **Provide alternative text (alt text):** All non-text elements (graphics, video) must have descriptive alternative (alt) text so they are accessible to screen readers.
+
+- **Don't use color alone:** Do not use color as the *only* way to convey information (for example, "click the green button"). This is inaccessible to users with color blindness.
+
+- **Avoid vague directional cues:** Do not use directional terms (like "left," "right," "above," or "below") as the *only* clue to location. This is confusing for users who rely on screen readers.
+
+  - **Good:** In the **Save As** dialog box, click **OK**.
+
+  - **Bad:** In the dialog box on the left, click **OK**.
+
+- **Document all keyboard shortcuts:** Document all keyboard shortcuts for users who cannot use a mouse.
+
+## Grammar, style, and tone
+
+### Active voice
+
+Use active voice and avoid passive voice. In active voice, the subject of the sentence does the action.
+
+- **Active (good):** Patch logged into the account.
+
+- **Active (good):** **You can** change your password.
+
+- **Passive (bad):** The account was logged into by Patch.
+
+- **Passive (bad):** **This functionality enables the users to** change their passwords.
+
+### Tense
+
+Use the present tense unless you have no choice. Avoid future tense like "will be" and imprecise words like "currently".
+
+- **Good:** After you click **Start**, the start screen appears.
+
+- **Bad:** After you click **Start**, the start screen **will appear**.
+
+### Pronouns
+
+- Write in the first person plural ("we," "us") or second person ("you") instead of "I".
+
+- When possible, avoid pronouns entirely by using imperatives (commands).
+  - **Best:** Click **Start** to begin the scan.
+  - **Good:** Now **we** can see the full list of vulnerabilities.
+  - **Bad:** Now **I** can see the full list of vulnerabilities.
+
+### Avoid modal verbs
+
+Modal verbs (may, should, might) add uncertainty. Use them sparingly.
+
+- **Good:** Snyk identifies vulnerabilities in your dependencies.
+
+- **Bad:** Snyk **should** identify vulnerabilities in your dependencies.
+
+### Avoid "please"
+
+Avoid using **please**. It is often unnecessary and can sound condescending. Use it only for situations that are inconvenient for the user (like waiting) or when the software is at fault.
+
+**Good:** Click **Save**.
+**Bad:** **Please** click the **Save** button.
+
+### Avoid subjective and filler words
+
+Do not use subjective terms like **simply**, **easy**, or **fast**. What is easy for one user may be difficult for another. Avoid meaningless filler words like "just", "actually", or "literally".
+
+- **Good:** To publish, click **Publish to Web**.
+
+- **Bad:** To publish, **simply** click **Publish to Web**.
+
+### Brand possessives
+
+Avoid using possessives for brand names.
+
+- **Good:** The Priority Score feature in Snyk Code ranks vulnerabilities.
+
+- **Bad:** Snyk Code's Priority Score ranks vulnerabilities.
+
+### Lists
+
+List type
+
+- Use **bulleted lists** when order is unimportant.
+
+- Use **numbered lists** for a sequence of steps (procedures).
+
+Procedure steps
+
+Use the **imperative mood** (a command) for steps in a numbered list.
+
+**Good:**
+
+1.  Click **Start**.
+
+2.  Type your password.
+
+**Bad:**
+
+1.  You **should click** the **Start** button.
+
+2.  Then you **will type** your password.
+
+Parallel construction
+
+Use parallel construction for all list items. If you start one item with a verb, start all items with a verb of the same tense.
+
+- **Good:** Snyk can find vulnerabilities, suggest fixes, and recommend updates.
+
+- **Bad:** Snyk is great for finding vulnerabilities, base image update reporting, and secure coding.
+
+Punctuation and capitalization
+
+- If items are complete sentences, capitalize the first word and end with a period.
+
+- If items are fragments that complete the introductory sentence, start with a lowercase letter and use no end punctuation.
+
+- Do not add commas (,) or semicolons (;) to the end of list items.
+
+### Formatting and punctuation
+
+Placeholders
+
+Use *italics* for placeholder values that the user must replace with their own information.
+
+*Example:* git clone https://github.com/your-username/your-repo.git
+*Example:* Go to Settings \> Organization \> *your-org-name*.
+
+Spacing
+
+Use **one space** after a period, not two.
+
+Ampersands (&)
+
+Do not use ampersands, unless required by a space limit.
+
+Apostrophes (')
+
+Do not use apostrophes in plurals of abbreviations or dates (for example, "APIs" or "1990s").
+
+Colons (:)
+
+- Use colons to introduce lists.
+
+- When a colon is used in a sentence, the first word following it is lowercase unless it is a proper noun.
+
+- Capitalize the first word after a colon in a title.
+
+#### Commas (,)
+
+- Default to using the serial (Oxford) comma.
+
+- Avoid comma splices.
+  - **Good:** Snyk is a security platform. It helps developers code securely.
+  - **Bad:** Snyk is a security platform, it helps developers code securely.
+
+Dashes and hyphens
+
+- **Hyphen (-):** Use to combine words (for example, "client-side" or "read-only"). Do not hyphenate adverbs ending in -ly.
+
+- **En Dash (–):** Use to indicate a range, meaning "through" (for example, "pages 37–59" or "Dec 9–Jan 1").
+
+- **Em Dash (—):** Use to create a strong break in a sentence. Put spaces on both sides of an em dash.
+
+Exclamation points (!)
+
+Use sparingly. Overexcitement reads as disingenuous.
+
+Semicolons (;)
+
+Use sparingly. They often signal an overcomplicated sentence.
+
+#### Plurals (s)
+
+Do not use parentheses (s) to indicate a plural. Use the plural form.
+
+- **Good:** ...displays one or more repositories.
+
+- **Bad:** ...displays the repository(s).
+
+### Word choice and usage
+
+Names
+
+- **Snyk:** Snyk **Projects** are always capitalized.
+
+- **Products:** Node.js, Composer, .NET, dep.
+
+- **Concepts:** Fintech, infrastructure as code (lowercase).
+
+Numbers
+
+- Spell out numbers one through nine.
+
+- Use numerals for 10 and greater.
+
+- **Exception:** Always use numerals for measurements (3 cm), time, or in lists with other numerals.
+
+- Spell out numbers that begin a sentence.
+
+Avoid "once"
+
+Avoid using "once" to mean "after." It can be confusing.
+
+- **Good:** **After** you enter the details, click **XYZ**.
+
+- **Bad:** **Once** you enter the details, click **XYZ**.
+
+Place "only" carefully
+
+"Only" comes immediately before the thing it limits.
+
+#### Simple > complex
+
+- Use "use" instead of "utilize".
+
+- Use "start" instead of "commence".
+
+- Use "before" instead of "prior to" or "in advance of".
+
+- Use "if" instead of "in the event that".
+
+- Use "ensure" instead of "make sure".
+
+- Use "first" instead of "first of all".
+
+- Use "and" instead of "and/or".
+
+Verbs and nouns (common pairs)
+
+Back up (v) / Backup (n, adj)
+
+- **Good:** You must **back up** your database.
+
+- **Good:** Create a **backup** file.
+
+Click (v) / Select (v)
+
+- **Good:** **Click Submit** (an action button).
+
+- **Good:** **Select** the **Enable** check box (an option).
+
+Log in (v) / Login (n)
+
+- **Good:** **Log in** to the Snyk Web UI.
+
+- **Good:** Use your **login** credentials.
+
+Set up (v) / Setup (n, adj)
+
+- **Good:** **Set up** your environment.
+
+- **Good:** The **setup** process is fast.
+
+Folder (n) / Directory (n)
+
+- **Good (UI):** Double-click the My Project **folder**.
+
+- **Good (CLI/Technical):** Change to the /lib **directory**.
+
+Compound words and hyphenation
+
+- Use client-side (adj); not client side (n)
+
+- Use cloud-native (adj); cloud native (n)
+
+- Use open-source (adj); open source (n)
+
+- Use server-side (adj); server side (n)
+
+- Use step-by-step (adj)
+
+- Use third-party (adj)
+
+- Use man-in-the-middle (adj)
+
+- Use same-origin policy (adj)
+
+- Use real time (n)
+
+- Use cheat sheet (n)
+
+- Use pull request (n)
+
+- Use white paper (n)
+
+- Use webhook (n)
+
+- Use codebase (n)
+
+- Use hard coded (adj)
+
+- Use username (n)
+
+- Use dropdown (n, adj)
+
+- Use lifecycle (n)
+
+- Use runtime (n, adj)
+
+### Documenting the user interface (UI)
+
+UI elements include all text on the screen, such as buttons, check boxes, menus, tabs, and window titles.
+
+Formatting UI elements
+
+Use **bold** to emphasize UI elements. Match the capitalization of the UI element exactly.
+
+- **Good:** Click **Start** to scan for vulnerabilities.
+
+- **Good:** Navigate to **ORGANIZATION SETTINGS**.
+
+- **Bad:** Click "Start" to scan for vulnerabilities.
+
+Be direct
+
+Do not include the name of the UI element type (like "button" or "tab") unless it is absolutely needed for clarity.
+
+- **Good:** Click **Update**.
+
+- **Bad:** Click the **Update** button.
+
+Describing navigation
+
+- Use Navigate to instead of "go to".
+
+- Use a greater-than symbol (>) with spaces to separate sequential UI steps.
+  - **Example:** Navigate to **Settings** > **Notifications**.
+
+### Links
+
+Add hyperlinks organically into sentences.
+
+- **Good:** Learn more in the Snyk IaC documentation.
+
+- **Bad:** **Click here** to learn more about Snyk IaC.
+
+### Messages (success, warnings, errors)
+
+- **Success:** A success message must tell the user what happened. If follow-up actions are needed, list them.
+
+  - **Example:** Project monitoring was successfully stopped, but the webhook could not be removed. Ask the repository owner to delete the webhook.
+
+- **Warnings:** A warning message must tell the user what the problem is and how to fix it.
+
+  - **Example:** This organization is at the limit of the Starter plan. Any new projects will be inactive. Please upgrade.
+
+- **Errors:** An error message must be informative.
+
+  - **Example:** Sorry, the page could not be found. It might be an old link or it may have moved.
+
+### Abbreviations and acronyms
+
+- Spell out an abbreviation or acronym the first time you use it, followed by the short version in parentheses.
+  - **First use:** static application security testing (SAST)
+  - **Second use:** SAST
+
+- **Exception:** If the abbreviation is universally known (like API or HTML), you do not need to spell it out.
+
+- **CI/CD:** Use a slash, not a space.
+
+- See the Snyk Terms list for common acronyms.
+
+|  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|
+| **Original text** | **Rule** | **Explanation** | **URL** | **Display name** | **Original text is case-sensitive** | **Replacement text is lowercase at the start of a sentence** | **Context awareness** |
+| **org;Org;organization** | Organization | Snyk Organizations are always capitalized. |  |  | TRUE | TRUE |  |
+| **Please** |  | Redundant and used inconsistently. |  |  | TRUE | TRUE |  |
+| **code base** | codebase | Standardize as one word. |  |  | FALSE | FALSE |  |
+| **1** | one | Spell out single digits. |  |  | FALSE | FALSE |  |
+| **NodeJS** | Node.js | Standardize technical casing. |  |  | TRUE | TRUE |  |
+| **when it comes to** |  | Redundant; remove. |  |  | FALSE | FALSE |  |
+| **Once** | after | Clearer and avoids cultural-specific ambiguity. |  |  | TRUE | TRUE |  |
+| **usage;utilize;utilization** | use | Shorter and simpler. |  |  | FALSE | FALSE |  |
+| **snyk app, snyk ui** | Snyk Web UI |  |  |  | FALSE | FALSE |  |
+| **1000** | 1,000 | Use commas for thousands. |  |  | FALSE | FALSE |  |
+| **via** | through; using; by means of | Try replacing it with "through", "using", or "by means of". Via is a Latin term used more for geographical reasons. |  |  | FALSE | FALSE |  |
+| **7** | seven | Spell out single digits. |  |  | FALSE | FALSE |  |
+| **Just** |  | Doesn't bring any value. |  |  | TRUE | TRUE |  |
+| **in this new era;in the ever-evolving landscape** |  | AI-sounding buzzwords; avoid. |  |  | FALSE | FALSE |  |
+| **snyk code** | Snyk Code |  |  |  | FALSE | FALSE |  |
+| **pull-request** | pull request |  |  |  | FALSE | FALSE |  |
+| **not to mention** |  | Redundant; remove. |  |  | FALSE | FALSE |  |
+| **Is able to** | can | Shorter and simpler. |  |  | TRUE | TRUE |  |
+| **fintech** | FinTech | Standardize capitalization. |  |  | FALSE | FALSE |  |
+| **Delivering seamless and intuitive user experiences** |  | AI-sounding buzzwords; avoid. |  |  | FALSE | FALSE |  |
+| **she;he;he / she** | they;you | Use gender-neutral pronouns. |  |  | FALSE | FALSE |  |
+| **Driving innovation through cutting-edge technology** |  | AI-sounding buzzwords; avoid. |  |  | FALSE | FALSE |  |
+| **3** | three | Spell out single digits. |  |  | FALSE | FALSE |  |
+| **Within** | in | Shorter, simpler |  |  | FALSE | FALSE |  |
+| **devsecops** | DevSecOps | Standardize technical casing. |  |  | FALSE | FALSE |  |
+| **Is required to** | must | Shorter and simpler. |  |  | TRUE | TRUE |  |
+| **4** | four | Spell out single digits. |  |  | FALSE | FALSE |  |
+| **synergy** |  | AI-sounding buzzword; avoid. |  |  | FALSE | FALSE |  |
+| **life cycle** | lifecycle |  |  |  | FALSE | FALSE |  |
+| **snyk open source** | Snyk Open Source |  |  |  | FALSE | FALSE |  |
+| **9** | nine | Spell out single digits. |  |  | FALSE | FALSE |  |
+| **group** | Group | Snyk Groups are always capitalized. |  |  | TRUE | TRUE |  |
+| **In the event that** | If | Shorter and simpler. |  |  | TRUE | TRUE |  |
+| **snyk** | Snyk |  |  |  | FALSE | FALSE |  |
+| **black-list;blacklist** | denylist | Use inclusive language unless the software requires specific terms. |  |  | FALSE | FALSE |  |
+| **project** | Project | Snyk Projects are always capitalized. |  |  | TRUE | TRUE |  |
+| **resonates** |  | Vague; consider removing. |  |  | FALSE | FALSE |  |
+| **appsec** | AppSec | Standardize technical casing. |  |  | FALSE | FALSE |  |
+| **&** | and | Avoid ampersands in body text. |  |  | FALSE | FALSE |  |
+| **actually;very;literally;really** |  | Common superlatives that don't add value; remove. |  |  | FALSE | FALSE |  |
+| **Prior to;In advance of** | before | Clearer and simpler. |  |  | TRUE | TRUE |  |
+| **thereby;furthermore;Accordingly;therefore** | so | Overly academic; rework to be conversational. |  |  | FALSE | FALSE |  |
+| **white-list;whitelist** | allowlist | Use inclusive language unless the software requires specific terms. |  |  | FALSE | FALSE |  |
+| **2** | two | Spell out single digits. |  |  | FALSE | FALSE |  |
+| **step by step** | step-by-step |  |  |  | FALSE | FALSE |  |
+| **snyk project** | Snyk Project |  |  |  | FALSE | FALSE |  |
+| **5** | five | Spell out single digits. |  |  | FALSE | FALSE |  |
+| **e.g.** | for example | Avoid Latin abbreviations for non-Western readers. |  |  | TRUE | TRUE |  |
+| **8** | eight | Spell out single digits. |  |  | FALSE | FALSE |  |
+| **devops** | DevOps | Standardize technical casing. |  |  | FALSE | FALSE |  |
+| **N.B.** | note | Avoid Latin abbreviations for non-Western readers. |  |  | TRUE | TRUE |  |
+| **etc.;etc** | and so on | Avoids cultural-specific terms that may be confusing for non-Western readers. |  |  | FALSE | FALSE |  |
+| **AIBOM AiBOM AIBom** | AI-BOM | AI-BOM is the official Snyk-approved format; unless used in a command, then it's 'aibom'. |  |  | FALSE | FALSE |  |
+| **Leveraging advanced tools and methodologies** |  | AI-sounding buzzwords; avoid. |  |  | FALSE | FALSE |  |
+| **6** | six | Spell out single digits. |  |  | FALSE | FALSE |  |
+| **Snyk's** | Snyk |  |  |  | FALSE | FALSE |  |
+| **In order to** | to | Shorter and simpler. |  |  | TRUE | TRUE |  |
+| **cross site scripting** | cross-site scripting | Standardize technical terms. |  |  | FALSE | FALSE |  |
+| **realtime** | real time | If used as a noun. |  |  | FALSE | FALSE |  |
+| **drop-down** | dropdown |  |  |  | FALSE | FALSE |  |
+| **i.e** | that is | Avoid Latin abbreviations for non-Western readers. |  |  | TRUE | TRUE |  |
