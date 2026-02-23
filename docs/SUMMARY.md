@@ -775,7 +775,6 @@
       * [Update a cloud environment](scan-with-snyk/snyk-iac/getting-started-with-cloud-scans/manage-cloud-environments/update-a-cloud-environment.md)
       * [Remove a cloud environment](scan-with-snyk/snyk-iac/getting-started-with-cloud-scans/manage-cloud-environments/remove-a-cloud-environment.md)
     * [View cloud resources](scan-with-snyk/snyk-iac/getting-started-with-cloud-scans/view-cloud-resources.md)
-  * [View cloud compliance reporting](scan-with-snyk/snyk-iac/view-cloud-compliance-reporting.md)
   * [Cloud platform integrations](scan-with-snyk/snyk-iac/cloud-platform-integrations/README.md)
     * [AWS integration](scan-with-snyk/snyk-iac/cloud-platform-integrations/aws-integration/README.md)
       * [AWS Integration: Web UI](scan-with-snyk/snyk-iac/cloud-platform-integrations/aws-integration/aws-integration-web-ui/README.md)

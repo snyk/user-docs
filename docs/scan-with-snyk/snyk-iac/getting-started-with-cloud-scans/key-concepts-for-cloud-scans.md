@@ -46,12 +46,6 @@ After Snyk creates an issue, Snyk keeps it open until the misconfiguration is fi
 
 You can view your Organization's issues in the Snyk Web UI. See [View cloud issues in the Snyk Web UI](manage-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md).
 
-## Compliance standard <a href="#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e" id="docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e"></a>
-
-A compliance standard is a framework that establishes guidelines and controls for Organizations to secure their IT systems and infrastructure. Compliance standards are versioned, with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](/broken/pages/Xet9BNiX2RviFlrTiatG#cloud-compliance-issues-report).
-
-For more information, see [supported compliance standards](../view-cloud-compliance-reporting.md#supported-compliance-standards).
-
 ## Compliance control <a href="#docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b" id="docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b"></a>
 
 A compliance control is a specific recommendation or guideline from a compliance standard that prescribes how an Organization should secure systems or infrastructure. Example: control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings)’”. To be compliant with this control, an Organization would enable the “block public access” settings for all of their S3 buckets.
