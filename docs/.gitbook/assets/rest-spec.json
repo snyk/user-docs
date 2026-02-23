@@ -1540,9 +1540,9 @@
         }
       },
       "SparseFieldsets": {
-        "description": "Sparse fieldsets allow clients to request only specific fields for a given resource type.\nUse the format `fields[\u003ctype\u003e]=field1,field2` where `\u003ctype\u003e` is the JSON:API resource type.\n\n**Container image fields** (use with `fields[container_images]`):\n- `class` - Classification of the asset\n- `registry` - Container registry hostname\n- `repository` - Repository path\n- `name` - Image name/tag\n- `is_private` - Whether the image is in a private registry\n- `image_content_id` - Reference to the image content entity\n- `config_digest` - Config digest\n- `distribution_digests` - Array of distribution digests (image, manifest, index digests)\n- `full_reference` - Complete container image reference\n- `created_at` - When the asset was created\n- `updated_at` - When the asset was last updated\n\nNote: `type` and `id` are always included regardless of field selection.\n",
+        "description": "Sparse fieldsets allow clients to request only specific fields for a given resource type.\nUse the format `fields[\u003ctype\u003e]=field1,field2` where `\u003ctype\u003e` is the JSON:API resource type.\n\n**Container image fields** (use with `fields[container_images]`):\n- `class` - Classification of the asset\n- `registry` - Container registry hostname\n- `repository` - Repository path\n- `config_digest` - Image config digest\n- `distribution_digests` - Distribution digests (manifest/index pairs)\n- `image_tags` - Distinct image tags across all discovery sources\n- `built_at` - When the image was built\n- `size_bytes` - Size of the image in bytes\n- `author` - Image author\n- `architecture` - CPU architecture\n- `os` - Operating system\n- `variant` - CPU architecture variant\n- `os_version` - Operating system version\n- `os_features` - OS features\n- `config` - Image runtime configuration (OCI config)\n- `root_fs` - Root filesystem information\n- `history` - Image build history\n- `inferred_base_images` - Inferred base images\n- `teams` - Teams associated with the asset\n- `labels` - Labels associated with the asset\n- `tags` - Key-value tags for the asset\n- `risk_score` - Risk score for the asset\n- `test_surfaces` - Test surfaces for the asset\n- `issues` - Issue counts by severity\n- `created_at` - When the asset was created\n- `updated_at` - When the asset was last updated\n- `last_scan` - When the asset was last scanned\n- `scan_engines` - Scan engines applied to the asset\n\nNote: `type` and `id` are always included regardless of field selection.\n",
         "example": {
-          "container_images": "registry,name,config_digest"
+          "container_images": "registry,repository,config_digest"
         },
         "explode": true,
         "in": "query",
@@ -6712,6 +6712,11 @@
             },
             "maxItems": 100,
             "type": "array"
+          },
+          "updated_at": {
+            "description": "When the asset was last updated",
+            "format": "date-time",
+            "type": "string"
           },
           "variant": {
             "description": "Variant of the CPU architecture",
