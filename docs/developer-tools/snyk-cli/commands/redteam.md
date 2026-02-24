@@ -47,6 +47,26 @@ Default: redteam.yaml in the current working directory.
 
 Optional. Save the output as a JSON to the specified file path.
 
+### `--html`
+
+Optional. Print the red teaming report in HTML format to stdout instead of JSON. The generated report is a self-contained HTML file with embedded CSS and JavaScript that can be viewed in any browser.
+
+Example: `$ snyk redteam --experimental --html > report.html`
+
+### `--html-file-output=<PATH>`
+
+Optional. Save the HTML report to the specified file path, regardless of whether or not you use the `--html` option.
+
+Use to display the default JSON output using stdout and at the same time save the HTML report to a file.
+
+Example: `$ snyk redteam --experimental --html-file-output=report.html`
+
+### `--scanning-agent-id=<UUID>`
+
+Optional. Specify the scanning agent ID to use for the scan. This overrides the `scanning_agent` value in the configuration file.
+
+Example: `$ snyk redteam --experimental --scanning-agent-id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+
 ## Configuration file
 
 If you do not specify a configuration file with `--config=<PATH>`, the tool searches for `redteam.yaml` in the current working directory by default.
