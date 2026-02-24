@@ -36,7 +36,7 @@
     * [Organization reports](discover-snyk/snyk-learn/snyk-learn-reports/organization-reports.md)
     * [Assignment reports](discover-snyk/snyk-learn/snyk-learn-reports/assignment-reports.md)
     * [Program reporting](discover-snyk/snyk-learn/snyk-learn-reports/program-reporting.md)
-  * [Snyk Assist](discover-snyk/snyk-learn/snyk-assist.md)
+  * [Snyk Assist for Learn](discover-snyk/snyk-learn/snyk-assist.md)
   * [Snyk Learn assignments](discover-snyk/snyk-learn/snyk-learn-assignments.md)
   * [Snyk Learn access controls](discover-snyk/snyk-learn/snyk-learn-access-controls.md)
   * [Snyk Learn API](discover-snyk/snyk-learn/snyk-learn-api.md)
