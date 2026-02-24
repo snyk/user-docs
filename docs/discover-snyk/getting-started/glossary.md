@@ -221,6 +221,12 @@ A distributed version control system for tracking changes in source code during 
 
 A Guardrail directive is a type of [Directive](glossary.md#directive) that is automatically injected into AI agent interactions to govern AI agent behaviour. For more information, visit [Guardrail directives](../../integrations/snyk-studio-agentic-integrations/directives.md#guardrail-directives).
 
+## H
+
+### Hook (Snyk Studio)
+
+Hooks are automated processes that execute skills or tools at specific points in an agent lifecycle.
+
 ## I
 
 ### IaC
@@ -453,6 +459,10 @@ A set of criteria for evaluating open-source vulnerabilities. Security policies 
 
 A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../../manage-risk/prioritize-issues-for-fixing/severity-levels.md).
 
+### Skill (Snyk Studio)
+
+Skills are packaged instructions (containing specialised procedures and knowledge) loaded on demand to guide agent actions. They can be triggered by [Hooks](glossary.md#hook-snyk-studio).
+
 ### Snapshot
 
 An individual report within the test history of a Project. Includes a tree of dependencies and a list of vulnerabilities that was accurate at the time the test was conducted.
@@ -551,10 +561,6 @@ A way to categorize assets. Helps you recognize or handle assets differently acc
 ### Tenant
 
 The top level of the Snyk hierarchy. It encompasses all your Groups and Organizations and all their corresponding Snyk work items. For more information, see [Tenants, Groups, and Organizations](../../snyk-platform-administration/groups-and-organizations/).
-
-Token
-
-<br>
 
 ## U
 

@@ -6,7 +6,7 @@ They have varying names across different coding assistants. For example, rules, 
 
 Snyk categorizes anything that guides an agent to produce code a certain way under the term "Directives" and offers code examples that you can use as they are, or customized to meet your needs.
 
-Snyk provides the following directive types:
+Snyk categorizes directives into the following types:
 
 * [Guardrail directives](directives.md#guardrail-directives)
 * [Command directives](directives.md#command-directives)
@@ -25,9 +25,11 @@ Coding assistants have different mechanisms for how these types of directives ar
 Non-determinism is a factor with LLM interactions and there can be scenarios where coding assistants do not append directives to prompts.
 {% endhint %}
 
+There are many guardrail directives that your company may choose to implement, some of which may relate to security.
+
 ### Secure at inception directives
 
-There are many guardrail directives that your company may choose to implement, some of which may relate to security. Snyk Secure at inception directives are code examples that can be used to ensure that AI-generated code is tested for security issues at the time of code generation.
+Snyk Secure at inception directives are code examples that can be used to ensure that AI-generated code is tested for security issues at the time of code generation.
 
 The following directives can be customized to fit your organization needs.
 
@@ -67,6 +69,67 @@ The following code snippet extends the Secure at inception testing to include ch
 - Repeat this process until no new issues are found.
 ```
 {% endcode %}
+
+</details>
+
+<details>
+
+<summary>Secure at inception: Package health check [Experimental]</summary>
+
+The `snyk_package_health_check` directive evaluates open-source packages for security vulnerabilities, maintenance health, community engagement, and popularity. This reduces supply chain risk in agentic development workflows where AI agents autonomously select and install dependencies.
+
+{% hint style="info" %}
+The `snyk_package_health_check` is available only for npm, pypi, nuget, maven, and golang.
+{% endhint %}
+
+Snyk Studio provides two ready-to-use sample scripts that integrate `snyk_package_health_check` into your development workflow: a skill for proactive package selection and a hook for enforcing security gates on package installations.
+
+### Skill: Secure dependency health check
+
+This skill evaluates and compares open-source packages for AI agents.
+
+When a developer requests a recommendation or an agent imports a dependency, the skill runs `snyk_package_health_check` on each candidate. The tool returns a structured comparison including:
+
+* Overall health rating
+* Vulnerability counts by severity
+* Maintenance and community ratings
+* Popularity metrics
+
+The agent uses these signals to recommend packages with clear reasoning or flag packages to avoid because of security issues or inactive maintenance.
+
+Install this skill to evaluate packages before recommending or adding them.
+
+You can:
+
+* Compare multiple candidates for the same functionality.
+* Check if an existing dependency is safe.
+* Find a secure alternative to a vulnerable package.
+
+To use this skill, refer to the sample script in the [Snyk Studio recipes repository](https://github.com/snyk/studio-recipes/tree/feat/package-health-checks/command_directives/synchronous_remediation/skills/secure-dependency-health-check).
+
+### Hook: Enforce security scan on new packages
+
+{% hint style="info" %}
+The `snyk_package_health_check` hook works only with Cursor.
+{% endhint %}
+
+The Enforce Security Scan hook implements a security gate for the Cursor IDE. Install this hook to enforce a policy that prevents installing new dependencies without a security check.&#x20;
+
+When an AI agent modifies a package manifest, for example, `package.json`, the hook blocks install commands, like `npm install`, until the `snyk_package_health_check` runs. After the agent invokes the health check, the install commands proceed. If a session ends with unscanned manifest changes, the hook displays a warning.
+
+The hook operates in the background and requires no developer intervention. This suits teams that want consistent guardrails across all agent coding sessions.
+
+To use this hook, refer to the sample script in the [Snyk Studio recipes repository](https://github.com/snyk/studio-recipes/tree/feat/package-health-checks/guardrail_directives/package_enforcement/cursor/hooks).
+
+### How to use the sample scripts
+
+Sample scripts are available in the [studio-recipes repository](https://github.com/snyk/studio-recipes).&#x20;
+
+To use them:
+
+1. Clone or download the repository.
+2. Copy the skill or hook directory into your project's `.cursor/` configuration.
+3. Ensure the [Snyk MCP server](https://docs.snyk.io/integrations/snyk-studio-agentic-integrations/getting-started-with-snyk-studio) is configured, and you have an authenticated Snyk account.
 
 </details>
 
