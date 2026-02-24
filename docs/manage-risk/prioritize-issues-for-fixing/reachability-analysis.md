@@ -106,7 +106,7 @@ You can set the reachability analysis as the default setting for multiple Organi
 After reachability analysis is enabled, Snyk performs the analysis as part of scanning Projects.
 
 {% hint style="info" %}
-You can apply the reachability analysis to existing Projects by triggering a [manual test](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/#manual-snyk-prs).
+You can apply the reachability analysis to existing Projects by triggering a [manual test](../../scan-with-snyk/start-scanning.md).
 {% endhint %}
 
 ### Enable reachability at the Organization level
@@ -120,7 +120,7 @@ To enable reachability analysis for your Organization and begin analyzing Projec
 After reachability analysis is enabled, the analysis is done as part of scanning Projects.
 
 {% hint style="info" %}
-You can apply the reachability analysis to existing Projects by triggering a [manual test](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/#manual-snyk-prs).
+You can apply the reachability analysis to existing Projects by triggering a [manual test](../../scan-with-snyk/start-scanning.md).
 {% endhint %}
 
 ### Enable reachability for all Organizations in a Group
