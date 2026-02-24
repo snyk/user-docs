@@ -1,30 +1,118 @@
-# Installing Snyk CLI as a binary using npm
+# Install the Snyk CLI with npm
 
-As a part of the [evolution of the Snyk CLI towards an extensible approach](https://snyk.io/blog/evolving-the-snyk-cli-through-an-extensible-approach/), Snyk is adapting the deployment via npm. While Snyk is attempting to make this as smooth and transparent to users as possible, the change might still cause issues for some users.
+Snyk is updating the CLI deployment using npm to support extensibility. The Extensible CLI now deploys as a binary using npm.
 
-Snyk is starting to deploy the new Extensible CLI as a binary via npm and has implemented a graceful degradation in case of errors. If graceful degradation is triggered, users will see a warning like the one that follows.
+## Prerequisites
+
+Ensure you have the following:
+
+* Node.js v12 or higher
+* npm v7 or higher
+* Permission to install global npm packages
+* Network access to the npm registry
+
+To check your installed versions, run:
 
 ```bash
+node -v
+npm -v
+```
+
+## Install the CLI
+
+Install the Snyk CLI globally:
+
+```bash
+npm install -g snyk
+```
+
+If you encounter permission issues on macOS or Linux, run:
+
+```bash
+npm install -g snyk --unsafe-perm
+```
+
+## Verify installation
+
+Run the following commands to verify the version, authenticate, and test the installation:
+
+```bash
+snyk --version
+snyk auth
+snyk test
+```
+
+## Update the CLI
+
+To update the CLI, run:
+
+```bash
+npm update -g snyk
+```
+
+Alternatively, install the latest version:
+
+```bash
+npm install -g snyk@latest
+```
+
+## Troubleshooting degraded CLI versions
+
+This process includes a fallback mechanism. If the binary download fails, Snyk reverts to the previous method and displays the following warning:
+
+```
 ------------------------------ Warning -------------------------------
 You are currently running a degraded version of the Snyk CLI.
 As a result, some features of the CLI will be unavailable.
 For information on how to resolve this, please see this article: https://docs.snyk.io/snyk-cli/installing-snyk-cli-as-a-binary-via-npm
 For any assistance, please check http://support.snyk.io/.
-------------------------------- Warning -------------------------------
+------------------------------- Warning -----
 ```
 
-This warning is typically accompanied by an error message indicating the nature of the error. Some of the errors will include resolution options as shown in the following example:
+Follow the instructions in the error message. If the issue persists, try the following solutions:
+
+### Verify your npm version
+
+Ensure your npm version is supported and Node.js environment is up to date.
+
+### Fix permissions
+
+Permission issues can cause degraded installs. Ensure your global npm directory is writable or use the unsafe permissions flag:
 
 ```bash
------------------------------- Warning -------------------------------
-You don't have the permissions to install Snyk. Please try the following options:
-* If you are installing with increased privileges (for example sudo), try adding unsafe-perm a parameter to npm install
-* If you run NPM <= 6, please upgrade to a later version.
-If the problems persist please check http://support.snyk.io/.
------------------------------- Warning -------------------------------
+npm install -g snyk --unsafe-perm
 ```
 
-If you continue to experience issues and they are not resolved by following any of the suggestions, you have the following options
+### Clear cache and reinstall
 
-* Install the Snyk CLI from any of the other deployment channels suggested on the [installation page](./).
-* If you experience an error that is not automatically handled, or you suspect that the Extensible CLI behaves incorrectly, you can use `--legacy-cli` to force use of the legacy Typescript CLI instead of the Extensible CLI.
+Try clearing the npm cache and reinstalling if the installation appears corrupted.
+
+```bash
+npm cache clean --force
+npm uninstall -g snyk
+npm install -g snyk
+```
+
+### Check network or proxy restrictions
+
+Ensure npm can reach the public registry. Verify that a firewall or proxy does not block downloads.
+
+### Use the legacy CLI
+
+As a temporary workaround, use the legacy CLI:
+
+```bash
+snyk --legacy-cli
+```
+
+### Contact Snyk Support
+
+If the CLI continues to run in degraded mode, try another installation method, such as standalone binaries.
+
+If you need to contact Snyk Support, include the following information to help diagnose the issue:
+
+* Full error message
+* Output of `snyk --version`
+* Node.js and npm versions
+* OS and architecture
+* Proxy or firewall details

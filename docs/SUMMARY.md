@@ -442,7 +442,7 @@
   * [Releases and channels for the Snyk CLI](developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli.md)
   * [Install or update the Snyk CLI](developer-tools/snyk-cli/install-or-update-the-snyk-cli/README.md)
     * [Verifying CLI standalone binaries](developer-tools/snyk-cli/install-or-update-the-snyk-cli/verifying-cli-standalone-binaries.md)
-    * [Installing Snyk CLI as a binary using npm](developer-tools/snyk-cli/install-or-update-the-snyk-cli/installing-snyk-cli-as-a-binary-using-npm.md)
+    * [Install the Snyk CLI with npm](developer-tools/snyk-cli/install-or-update-the-snyk-cli/installing-snyk-cli-as-a-binary-using-npm.md)
     * [Install or upgrade to version of Node.js required for Snyk CLI](developer-tools/snyk-cli/install-or-update-the-snyk-cli/install-or-upgrade-to-version-of-node.js-required-for-snyk-cli.md)
     * [Most recent version of the CLI that supports Node.js 4](developer-tools/snyk-cli/install-or-update-the-snyk-cli/most-recent-version-of-the-cli-that-supports-node.js-4.md)
     * [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](developer-tools/snyk-cli/install-or-update-the-snyk-cli/prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md)
