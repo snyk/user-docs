@@ -29,7 +29,7 @@
       * [Review scan coverage](discover-snyk/getting-started/pilot-guide/during-the-pilot/review-scan-coverage.md)
       * [Review reporting](discover-snyk/getting-started/pilot-guide/during-the-pilot/review-reporting.md)
       * [Assign a lesson in Snyk Learn](discover-snyk/getting-started/pilot-guide/during-the-pilot/assign-a-lesson-in-snyk-learn.md)
-* [Developer security education and Snyk product training](discover-snyk/snyk-learn/README.md)
+* [Developer security education and Snyk product training with Snyk Learn](discover-snyk/snyk-learn/README.md)
   * [Your learning](discover-snyk/snyk-learn/your-learning/README.md)
     * [Claiming CPE Credits with Snyk Learn](discover-snyk/snyk-learn/your-learning/claiming-cpe-credits-with-snyk-learn.md)
   * [Snyk Learn reporting](discover-snyk/snyk-learn/snyk-learn-reports/README.md)
