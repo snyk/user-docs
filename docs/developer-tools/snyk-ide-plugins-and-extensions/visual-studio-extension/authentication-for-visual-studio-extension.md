@@ -31,6 +31,12 @@ Follow the next steps to authenticate:
 The analysis starts automatically. The IDE reads and saves the authentication on your local machine.
 
 {% hint style="info" %}
+You might encounter the browser redirecting to 127.0.0.1:8080. This is normal, and you would need to retry the steps above.<br>
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
 OAuth 2.0 tokens are not static and cannot be copied from the Snyk account page.
 {% endhint %}
 
