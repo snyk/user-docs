@@ -179,6 +179,10 @@ A set of cultural philosophies, practices, and tools that combines software deve
 
 The integration of security into emerging agile IT and DevOps development as seamlessly and as transparently as possible.
 
+### Docker
+
+A platform that allows developers to package applications and all their dependencies into standardized units called containers.
+
 ### Dockerfile
 
 A text file format used to build container images using Docker. The Dockerfile contains all the commands needed to construct the final image, including specifying the parent base image.
@@ -217,11 +221,19 @@ A pull request with an automatic fix for discovered vulnerabilities that Snyk ca
 
 A distributed version control system for tracking changes in source code during software development.
 
+### Group
+
+In Snyk, a Group is the top-level entity used to manage multiple Organizations, centralize billing, and enforce global security policies across an entire company.
+
 ### Guardrail directive
 
 A Guardrail directive is a type of [Directive](glossary.md#directive) that is automatically injected into AI agent interactions to govern AI agent behaviour. For more information, visit [Guardrail directives](../../integrations/snyk-studio-agentic-integrations/directives.md#guardrail-directives).
 
 ## H
+
+### Helm
+
+A package manager for Kubernetes that simplifies the deployment and management of applications using reusable configuration files called charts. A Helm chart contains all the necessary resource definitions (YAML templates) and parameters required to deploy a specific application or service to a cluster.
 
 ### Hook (Snyk Studio)
 
@@ -273,6 +285,12 @@ Provides a centralized view of all the issues identified by Snyk with additional
 
 Information surrounding a particular security issue that serves as objective risk factors such as issue severity level, availability of a fix, exploit maturity.
 
+## K
+
+### Kubernetes
+
+An open-source orchestration platform that automates the deployment, scaling, and management of containerized applications.
+
 ## L
 
 ### Library
@@ -317,6 +335,10 @@ Natural Language Processing.The technology that enables computers to understand,
 
 ## O
 
+### OAuth
+
+An open-standard authorization protocol that allows a third-party application to access a user's data without ever seeing their login credentials.
+
 ### OCI
 
 Open Container Initiative. An independent body set up to facilitate collaboration on standards for containers, to ensure they are interoperable between vendor solutions.
@@ -346,6 +368,10 @@ A set of tools that automate and manage packages of bundled files, and are usual
 ### Package registry
 
 A software package hosting service that allows customers to host packages and code in one place.
+
+### PAT
+
+A Personal Access Token (PAT) is a unique string used as an alternative to a password to authenticate a specific user when accessing Snyk using the API or CLI.
 
 ### Pinnable
 
@@ -455,6 +481,10 @@ A Secure at inception directive is a type of [Guardrail directive](../../integra
 
 A set of criteria for evaluating open-source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. See [Security policies](../../manage-risk/policies/security-policies/).
 
+### Service account
+
+A non-human identity used to authenticate automated processes, such as CI/CD pipelines, to Snyk without being tied to a specific individual's credentials.
+
 ### Severity
 
 A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](../../manage-risk/prioritize-issues-for-fixing/severity-levels.md).
@@ -507,6 +537,10 @@ A Snyk product. Enables developers to find and fix vulnerabilities in container 
 
 A Snyk product. Enables developers to find and fix vulnerabilities in Kubernetes, Helm, and Terraform configuration files. See [Snyk IaC](../../scan-with-snyk/snyk-iac/).
 
+### Snyk Learn
+
+An interactive education platform that provides developers with bite-sized lessons and structured learning paths to master secure coding and product best practices.
+
 ### Snyk MCP Server
 
 A MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI. For more information, visit [Agentic security with Snyk Studio](../../integrations/snyk-studio-agentic-integrations/).
@@ -543,6 +577,10 @@ See [Origin](glossary.md#origin-or-source).
 ### SPDX
 
 Software Package Data Exchange. A file format used to document information on the software licenses under which a piece of computer software is distributed. See [SPDX](https://spdx.dev/).
+
+### SSO
+
+An authentication method that allows users to access multiple, independent software systems or applications using a single set of login credentials.
 
 ### Static Code Analysis
 
