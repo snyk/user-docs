@@ -11,22 +11,25 @@ Use a Context when multiple Organizations share a Connection but require differe
 *   **Integration:** Represents the use of a Connection by an Organization. An Integration consists of one Organization and one Connection. You can apply only one Context per Integration.
 
 ## Configuring Broker Contexts
+**Prerequisites**
 
-{% hint style="info" %}
-Before starting ensure that you have installed the snyk-broker-config and have configured your local environment correctly. Please see [Prerequisites for Universal Broker](prerequisites-for-universal-broker.md) for more info. You must also have at least one Broker Connection configured and integrated.
-{% endhint %}
+*   Install `snyk-broker-config` and configure your local environment. For more details, see [Prerequisites for Universal Broker](prerequisites-for-universal-broker.md).
+*   Configure and integrate at least one Broker Connection.
 
 ### Create a Context
 
-Creates a new Broker Context. You choose the Connection, then which parameters to override, then provide the values (or credential references for sensitive fields) that you wish to override.
+Create a new Broker Context. Select the Connection and parameters to override, enter the new values or credential references for sensitive fields.
 
 ```bash
 snyk-broker-config workflows contexts create
 ```
 
-- You will be asked to pick a Connection.
-- You then choose which parameters to override. Allowed parameters depend on the connection type (e.g. for jira: `jira_hostname`, `jira_username`, `jira_password` and `jira_pat` can all be overridden).
-- For each chosen parameter you enter a value. For sensitive parameters the API expects a credential reference from the same deployment, you will be prompted to choose or create a new credential reference.
+When prompted, follow these steps:
+1. Select a connection.
+2. Select the parameters to override.
+   Available parameters depend on the connection type. For example, for Jira, you can override `jira_hostname`, `jira_username`, `jira_password`, and `jira_pat`.
+3. Enter a value for each parameter.
+   For sensitive parameters, the API requires a credential reference from the same deployment. Select or create a new credential reference.
 
 ### Apply a Context to an integration
 
