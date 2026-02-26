@@ -18,7 +18,7 @@ Available functions:
 
 ## Python for Snyk Code
 
-For Python with Snyk Code, Python versions up to `3.11` are supported. Language features introduced in newer versions are not supported.
+For Python with Snyk Code, Python versions up to `3.12` are supported. Language features introduced in newer versions are not supported.
 
 For Python with Snyk Code, the following file format is supported: `.py`
 
