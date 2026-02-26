@@ -2112,6 +2112,8 @@ paths:
               autoDepUpgradeIgnoredDependencies: []
               autoDepUpgradeEnabled: false
               autoDepUpgradeMinAge: 21
+              pullRequestTestCodeEnabled: true
+              pullRequestTestCodeSeverity: high
               pullRequestTestEnabled: true
               pullRequestFailOnAnyVulns: false
               pullRequestFailOnlyForHighSeverity: true
@@ -2138,6 +2140,8 @@ paths:
                 autoDepUpgradeIgnoredDependencies: []
                 autoDepUpgradeEnabled: false
                 autoDepUpgradeMinAge: 21
+                pullRequestTestCodeEnabled: true
+                pullRequestTestCodeSeverity: high
                 pullRequestTestEnabled: true
                 pullRequestFailOnAnyVulns: false
                 pullRequestFailOnlyForHighSeverity: true
@@ -11600,6 +11604,12 @@ components:
         pullRequestFailOnlyForHighSeverity:
           type: boolean
           description: If an opened PR only should fail its validation if any dependencies are marked as being of high severity
+        pullRequestTestCodeEnabled:
+          type: boolean
+          description: If opened PRs should be tested with Snyk Code
+        pullRequestTestCodeSeverity:
+          type: string
+          description: 'Snyk severity for this issue. One of: `low`, `medium`, `high`, or `null`.'
         pullRequestTestEnabled:
           type: boolean
           description: If opened PRs should be tested
