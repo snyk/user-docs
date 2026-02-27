@@ -1,4 +1,4 @@
-# Assets
+# Assets V2
 
 {% hint style="info" %}
 This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.

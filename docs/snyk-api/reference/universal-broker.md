@@ -40,6 +40,14 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts" method="post" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts" method="get" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections" method="post" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
@@ -69,6 +77,30 @@ This document uses the REST API. For more details, see the [Authentication for A
 {% endopenapi %}
 
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}/bulk_migration" method="get" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}" method="patch" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}" method="get" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}" method="delete" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integrations/{integration_id}" method="delete" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integration" method="patch" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/brokers/installs/{install_id}/connections/{connection_id}/contexts" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
