@@ -1,3 +1,78 @@
+## 2025-11-05 - Updated 2026-02-27
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts` - Added
+- Creates a new Broker Context
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts` - Added
+- List Deployment contexts for a given deployment ID
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+- Updates a Broker Context for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+- List Broker context for a given broker context ID
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+- Deletes an existing broker context
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integrations/{integration_id}` - Added
+- Deletes an existing Broker context association for an integration
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integration` - Added
+- Updates an integration to be associated with a Broker context
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/connections/{connection_id}/contexts` - Added
+- List Broker contexts for a given broker connection ID
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
 ## 2025-11-05 - Updated 2026-02-19
 
 ### GET - `/self/personal_access_tokens` - Added
