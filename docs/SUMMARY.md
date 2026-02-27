@@ -942,7 +942,7 @@
   * [Asset Projects](snyk-api/reference/asset-projects.md)
   * [Asset Targets](snyk-api/reference/asset-targets.md)
   * [Asset](snyk-api/reference/asset.md)
-  * [Assets](snyk-api/reference/assets.md)
+  * [Assets V2](snyk-api/reference/assets-v2.md)
   * [Audit Logs](snyk-api/reference/audit-logs.md)
   * [Cloud](snyk-api/reference/cloud.md)
   * [Collection](snyk-api/reference/collection.md)
