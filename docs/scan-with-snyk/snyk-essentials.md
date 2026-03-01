@@ -90,4 +90,4 @@ Snyk Code does not automatically pick up the `git remoteurl`, even if the `.git`
    * [`snyk monitor`](../developer-tools/snyk-cli/commands/monitor.md#remote-repo-url-less-than-url-greater-than), for Snyk Open Source
    * [`snyk iac test`](../developer-tools/snyk-cli/commands/iac-test.md#remote-repo-url-less-than-url-greater-than) - also requires the `--report` command
    * `snyk container monitor` - no options available.
-   * `snyk code test` - no options available.
+   * `snyk code test` - also requires --report --project-name="<PROJECT_NAME>" .
