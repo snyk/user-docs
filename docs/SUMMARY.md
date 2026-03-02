@@ -252,7 +252,7 @@
     * [SCM integrations for JavaScript](supported-languages/supported-languages-list/javascript/scm-integrations-for-javascript.md)
   * [.NET (C# and VB.NET)](supported-languages/supported-languages-list/.net/README.md)
     * [Snyk CLI for .NET](supported-languages/supported-languages-list/.net/snyk-cli-for-.net.md)
-    * [SCM integrations for .NET](supported-languages/supported-languages-list/.net/.net-for-open-source.md)
+    * [SCM integrations for .NET](supported-languages/supported-languages-list/.net/scm-integrations-for-.net.md)
     * [Troubleshooting Snyk for .NET](supported-languages/supported-languages-list/.net/troubleshooting-snyk-for-.net.md)
   * [PHP](supported-languages/supported-languages-list/php.md)
   * [Python](supported-languages/supported-languages-list/python/README.md)
