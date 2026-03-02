@@ -5620,9 +5620,9 @@
             "type": "string"
           },
           "file_patterns": {
-            "description": "File Patterns to include in the scan.\n\nCurrently unsupported. Provide an empty list.",
+            "description": "File Patterns to include in the scan. Elements must be less than 256 characters.\n\nCurrently unsupported. Provide an empty list.",
             "items": {
-              "type": "string"
+              "$ref": "#/components/schemas/String256"
             },
             "maxItems": 20,
             "type": "array"
@@ -21248,9 +21248,9 @@
             "type": "string"
           },
           "file_patterns": {
-            "description": "File Patterns to include in the scan.\n\nCurrently unsupported. Provide an empty list.",
+            "description": "File Patterns to include in the scan. Elements must be less than 256 characters.\n\nCurrently unsupported. Provide an empty list.",
             "items": {
-              "type": "string"
+              "$ref": "#/components/schemas/String256"
             },
             "maxItems": 20,
             "type": "array"
@@ -21912,6 +21912,10 @@
           "sonarqube_api_token"
         ],
         "type": "object"
+      },
+      "String256": {
+        "maxLength": 256,
+        "type": "string"
       },
       "Suppression": {
         "description": "Details about a finding's suppression in test results.\n\nSuppressed findings do not contribute to the test outcome, but they are still\nprovided in the results.",
@@ -23879,9 +23883,9 @@
             "type": "string"
           },
           "file_patterns": {
-            "description": "File Patterns to include in the scan.\n\nCurrently unsupported. Provide an empty list.",
+            "description": "File Patterns to include in the scan. Elements must be less than 256 characters.\n\nCurrently unsupported. Provide an empty list.",
             "items": {
-              "type": "string"
+              "$ref": "#/components/schemas/String256"
             },
             "maxItems": 20,
             "type": "array"
