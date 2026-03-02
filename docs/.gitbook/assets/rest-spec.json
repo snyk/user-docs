@@ -21110,7 +21110,8 @@
         "required": [
           "type",
           "name",
-          "last_seen"
+          "last_seen",
+          "issues"
         ],
         "type": "object"
       },
