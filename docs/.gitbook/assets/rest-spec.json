@@ -4102,6 +4102,85 @@
         },
         "type": "object"
       },
+      "AssetBaseAttributes": {
+        "description": "Asset-level fields shared across all asset types.",
+        "properties": {
+          "class": {
+            "$ref": "#/components/schemas/ClassResponse"
+          },
+          "created_at": {
+            "description": "When the asset was created",
+            "format": "date-time",
+            "type": "string"
+          },
+          "issues": {
+            "$ref": "#/components/schemas/IssueCounts"
+          },
+          "labels": {
+            "description": "Labels associated with the asset",
+            "items": {
+              "maxLength": 40,
+              "type": "string"
+            },
+            "maxItems": 50,
+            "type": "array"
+          },
+          "last_scan": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "last_seen_at": {
+            "description": "When the asset was last seen (i.e., confirmed to exist) via any discovery source.\nUpdated on every upsert operation.\n",
+            "format": "date-time",
+            "type": "string"
+          },
+          "risk_score": {
+            "description": "Risk score for the asset",
+            "format": "int32",
+            "type": "integer"
+          },
+          "scan_engines": {
+            "description": "Scan engines applied to the asset",
+            "items": {
+              "$ref": "#/components/schemas/ScanEngine"
+            },
+            "maxItems": 50,
+            "type": "array"
+          },
+          "tags": {
+            "additionalProperties": {
+              "maxLength": 40,
+              "type": "string"
+            },
+            "description": "Key-value tags for the asset",
+            "maxProperties": 100,
+            "type": "object"
+          },
+          "teams": {
+            "description": "Teams associated with the asset",
+            "items": {
+              "maxLength": 64,
+              "type": "string"
+            },
+            "maxItems": 20,
+            "type": "array"
+          },
+          "test_surfaces": {
+            "description": "Test surfaces for the asset",
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 100,
+            "type": "array"
+          },
+          "updated_at": {
+            "description": "When the asset was last updated",
+            "format": "date-time",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "AssetBulkPatchRequestBody": {
         "additionalProperties": false,
         "properties": {
@@ -6569,172 +6648,112 @@
         "type": "object"
       },
       "ContainerImageAttributesResponse": {
-        "properties": {
-          "architecture": {
-            "$ref": "#/components/schemas/Architecture"
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/AssetBaseAttributes"
           },
-          "author": {
-            "description": "Author of the image",
-            "maxLength": 256,
-            "type": "string"
-          },
-          "built_at": {
-            "description": "When the image was built",
-            "format": "date-time",
-            "type": "string"
-          },
-          "class": {
-            "$ref": "#/components/schemas/ClassResponse"
-          },
-          "config": {
-            "$ref": "#/components/schemas/ImageConfig"
-          },
-          "config_digest": {
-            "description": "Image config digest",
-            "maxLength": 256,
-            "type": "string"
-          },
-          "created_at": {
-            "description": "When the asset was created",
-            "format": "date-time",
-            "type": "string"
-          },
-          "distribution_digests": {
-            "description": "Distribution digests (manifest/index pairs)",
-            "items": {
-              "$ref": "#/components/schemas/DistributionDigest"
+          {
+            "description": "Attributes specific to container image assets.",
+            "properties": {
+              "architecture": {
+                "$ref": "#/components/schemas/Architecture"
+              },
+              "author": {
+                "description": "Author of the image",
+                "maxLength": 256,
+                "type": "string"
+              },
+              "built_at": {
+                "description": "When the image was built",
+                "format": "date-time",
+                "type": "string"
+              },
+              "config": {
+                "$ref": "#/components/schemas/ImageConfig"
+              },
+              "config_digest": {
+                "description": "Image config digest",
+                "maxLength": 256,
+                "type": "string"
+              },
+              "distribution_digests": {
+                "description": "Distribution digests (manifest/index pairs)",
+                "items": {
+                  "$ref": "#/components/schemas/DistributionDigest"
+                },
+                "maxItems": 100,
+                "type": "array"
+              },
+              "history": {
+                "description": "Image build history",
+                "items": {
+                  "$ref": "#/components/schemas/History"
+                },
+                "maxItems": 1000,
+                "type": "array"
+              },
+              "image_tags": {
+                "description": "Distinct image tags across all discovery sources",
+                "items": {
+                  "maxLength": 256,
+                  "type": "string"
+                },
+                "maxItems": 100,
+                "type": "array"
+              },
+              "inferred_base_images": {
+                "description": "Inferred base images",
+                "items": {
+                  "maxLength": 512,
+                  "type": "string"
+                },
+                "maxItems": 100,
+                "type": "array"
+              },
+              "os": {
+                "$ref": "#/components/schemas/OperatingSystem"
+              },
+              "os_features": {
+                "description": "OS features",
+                "items": {
+                  "maxLength": 256,
+                  "type": "string"
+                },
+                "maxItems": 100,
+                "type": "array"
+              },
+              "os_version": {
+                "description": "Operating system version",
+                "maxLength": 256,
+                "type": "string"
+              },
+              "registry": {
+                "description": "Container registry hostname",
+                "maxLength": 256,
+                "type": "string"
+              },
+              "repository": {
+                "description": "Repository path, e.g. \"library/nginx\"",
+                "maxLength": 256,
+                "type": "string"
+              },
+              "root_fs": {
+                "$ref": "#/components/schemas/RootFs"
+              },
+              "size_bytes": {
+                "description": "Size of the image in bytes",
+                "format": "int64",
+                "type": "integer"
+              },
+              "variant": {
+                "description": "Variant of the CPU architecture",
+                "maxLength": 64,
+                "type": "string"
+              }
             },
-            "maxItems": 100,
-            "type": "array"
-          },
-          "history": {
-            "description": "Image build history",
-            "items": {
-              "$ref": "#/components/schemas/History"
-            },
-            "maxItems": 1000,
-            "type": "array"
-          },
-          "image_tags": {
-            "description": "Distinct image tags across all discovery sources",
-            "items": {
-              "maxLength": 256,
-              "type": "string"
-            },
-            "maxItems": 100,
-            "type": "array"
-          },
-          "inferred_base_images": {
-            "description": "Inferred base images",
-            "items": {
-              "maxLength": 512,
-              "type": "string"
-            },
-            "maxItems": 100,
-            "type": "array"
-          },
-          "issues": {
-            "$ref": "#/components/schemas/IssueCounts"
-          },
-          "labels": {
-            "description": "Labels associated with the asset",
-            "items": {
-              "maxLength": 40,
-              "type": "string"
-            },
-            "maxItems": 50,
-            "type": "array"
-          },
-          "last_scan": {
-            "format": "date-time",
-            "type": "string"
-          },
-          "os": {
-            "$ref": "#/components/schemas/OperatingSystem"
-          },
-          "os_features": {
-            "description": "OS features",
-            "items": {
-              "maxLength": 256,
-              "type": "string"
-            },
-            "maxItems": 100,
-            "type": "array"
-          },
-          "os_version": {
-            "description": "Operating system version",
-            "maxLength": 256,
-            "type": "string"
-          },
-          "registry": {
-            "description": "Container registry hostname",
-            "maxLength": 256,
-            "type": "string"
-          },
-          "repository": {
-            "description": "Repository path, e.g. \"library/nginx\"",
-            "maxLength": 256,
-            "type": "string"
-          },
-          "risk_score": {
-            "description": "Risk score for the asset",
-            "format": "int32",
-            "type": "integer"
-          },
-          "root_fs": {
-            "$ref": "#/components/schemas/RootFs"
-          },
-          "scan_engines": {
-            "description": "Scan engines applied to the asset",
-            "items": {
-              "$ref": "#/components/schemas/ScanEngine"
-            },
-            "maxItems": 50,
-            "type": "array"
-          },
-          "size_bytes": {
-            "description": "Size of the image in bytes",
-            "format": "int64",
-            "type": "integer"
-          },
-          "tags": {
-            "additionalProperties": {
-              "maxLength": 40,
-              "type": "string"
-            },
-            "description": "Key-value tags for the asset",
-            "maxProperties": 100,
             "type": "object"
-          },
-          "teams": {
-            "description": "Teams associated with the asset",
-            "items": {
-              "maxLength": 64,
-              "type": "string"
-            },
-            "maxItems": 20,
-            "type": "array"
-          },
-          "test_surfaces": {
-            "description": "Test surfaces for the asset",
-            "items": {
-              "type": "string"
-            },
-            "maxItems": 100,
-            "type": "array"
-          },
-          "updated_at": {
-            "description": "When the asset was last updated",
-            "format": "date-time",
-            "type": "string"
-          },
-          "variant": {
-            "description": "Variant of the CPU architecture",
-            "maxLength": 64,
-            "type": "string"
           }
-        },
-        "type": "object"
+        ]
       },
       "ContainerRegistryImportPolicyAttributes": {
         "additionalProperties": false,
@@ -18602,7 +18621,11 @@
         "description": "JSON:API data for any asset type (polymorphic)",
         "properties": {
           "attributes": {
-            "$ref": "#/components/schemas/ContainerImageAttributesResponse"
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ContainerImageAttributesResponse"
+              }
+            ]
           },
           "id": {
             "description": "The unique identifier of the asset",
