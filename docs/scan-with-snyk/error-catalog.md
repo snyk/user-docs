@@ -972,10 +972,6 @@ An unexpected network error occurred during communication. Troubleshooting steps
 CLI was unable to execute your Secrets command, please take a look at the given details. If they do not help to resolve the issue, consider debugging or consulting support.
 
 
-**Help Links:**
-
-* [https://docs.snyk.io/snyk-cli/commands/secrets](https://docs.snyk.io/snyk-cli/commands/secrets)
-
 ### [SNYK-CLI-0024](#snyk-cli-0024)
 <a id="#SNYK-CLI-0024"></a>
 
@@ -1697,6 +1693,82 @@ If this step is successful locally, it is possible that Snyk is running another 
 * [https://learn.microsoft.com/en-us/dotnet/core/tools/sdk-errors/](https://learn.microsoft.com/en-us/dotnet/core/tools/sdk-errors/)
 * [https://learn.microsoft.com/en-us/dotnet/core/tools/global-json](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json)
 * [https://github.com/snyk/snyk-nuget-plugin/blob/885486aa656c28d3db465c8d22710770d5cc6773/lib/nuget-parser/cli/dotnet.ts#L50](https://github.com/snyk/snyk-nuget-plugin/blob/885486aa656c28d3db465c8d22710770d5cc6773/lib/nuget-parser/cli/dotnet.ts#L50)
+
+### [SNYK-OS-DOTNET-0012](#snyk-os-dotnet-0012)
+<a id="#SNYK-OS-DOTNET-0012"></a>
+
+**Package version defined incorrectly**
+
+Your `dotnet restore` command failed with NuGet error **NU1008**.
+
+This occurs because a `PackageReference` in your project file directly defines a package version when Central Package Management (CPM) is enabled. To resolve this, remove the `Version` attribute from the `PackageReference`. Define the package version instead as a `PackageVersion` entry in your `Directory.Packages.props` file. For project-specific exceptions, use `VersionOverride`.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+
+* [https://learn.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1008](https://learn.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1008)
+* [https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management)
+
+### [SNYK-OS-DOTNET-0013](#snyk-os-dotnet-0013)
+<a id="#SNYK-OS-DOTNET-0013"></a>
+
+**Missing package version in CPM**
+
+The `dotnet restore` command failed with NuGet error NU1010.
+
+Central Package Management (CPM) cannot find a matching `PackageVersion` for a `PackageReference` in your `Directory.Packages.props` file. To resolve this, add the necessary `PackageVersion` entry for the package to `Directory.Packages.props`. For example:
+
+```xml
+<PackageVersion Include="Example.Package" Version="1.0.0" />
+```
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+
+* [https://learn.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1010](https://learn.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1010)
+* [https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management)
+
+### [SNYK-OS-DOTNET-0014](#snyk-os-dotnet-0014)
+<a id="#SNYK-OS-DOTNET-0014"></a>
+
+**Missing package version in CPM and CPM not active**
+
+The `dotnet restore` command failed with NuGet error NU1015.
+
+This occurs because a `PackageReference` lacks a version and Central Package Management (CPM) is not active.
+
+To resolve this, perform one of the following actions:
+
+1. Enable Central Package Management: In `Directory.Packages.props`, set `ManagePackageVersionsCentrally` to `true`. Ensure your project can access the file.
+2. Add an explicit `Version` attribute to the `PackageReference` in your project file.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+
+* [https://learn.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1015](https://learn.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1015)
+* [https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management)
+
+### [SNYK-OS-DOTNET-0015](#snyk-os-dotnet-0015)
+<a id="#SNYK-OS-DOTNET-0015"></a>
+
+**Dependency target framework not supported**
+
+Your project failed to restore dependencies with NuGet error NU1202 because a dependency does not support the current `TargetFramework`. This means the dependency lacks assets for your project's framework.
+
+To resolve this, perform one of the following actions:
+
+1. Change your project's `TargetFramework` to one the dependency supports.
+2. Update the dependency to a version that supports your current `TargetFramework`.
+3. If the dependency is a project reference, add the required `TargetFramework` to that project.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Help Links:**
+
+* [https://learn.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1202](https://learn.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1202)
 
 ### [SNYK-OS-GO-0001](#snyk-os-go-0001)
 <a id="#SNYK-OS-GO-0001"></a>
