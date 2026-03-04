@@ -23,7 +23,7 @@ The following options are available for the `snyk-scm-contributors-count bitbuck
 ## Before running the command
 
 1. Export SNYK\_TOKEN (if you want to get the contributors ONLY for repos that are already monitored by Snyk):
-   * Make sure that your token has Group level access or use a service account's token that has Group level access. To learn more on how to create a service account, refer to [Service accounts](../../../../../../../snyk-platform-administration/service-accounts/).
+   * Make sure that your token has Group level access or use a service account's token that has Group level access. To learn more on how to create a service account, refer to [Service accounts](../../../../../../../implementation-and-setup/enterprise-setup/service-accounts/).
    * Copy the token value.
    *   Export the token in your environment:
 

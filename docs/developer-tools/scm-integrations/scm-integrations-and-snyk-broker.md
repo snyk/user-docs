@@ -1,6 +1,6 @@
 # SCM integrations and Snyk Broker
 
-If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the [Snyk Broker](../../snyk-platform-administration/snyk-broker/) documentation, including [Using Snyk Essentials wtih Snyk Broker](../../snyk-platform-administration/snyk-broker/using-snyk-essentials-with-snyk-broker.md).
+If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the [Snyk Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/) documentation, including [Using Snyk Essentials wtih Snyk Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md).
 
 {% hint style="warning" %}
 Enable the Snyk Essentials flag in your Snyk Broker deployment environment before running the commands.
@@ -10,7 +10,7 @@ You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445
 
 ## Integrated SCM tokens for classic Broker
 
-An integrated SCM token is required for [Broker client setup](../../snyk-platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
+An integrated SCM token is required for [Broker client setup](../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
 
 An integrated SCM token can be generated for the following SCM integrations:
 
@@ -97,7 +97,7 @@ On installation of the app you will be assigned an `InstallationID`. These are t
 
 ### Create the Universal Broker connection for your GitHub Server App
 
-Before the GitHub Server App can be used with the Universal Broker, you must create a connection of the `github-server-app` type using the `snyk-broker-config` tool. For more details, see the [Universal Broker](../../snyk-platform-administration/snyk-broker/universal-broker/) documentation. After the connection is created, it can be integrated with one or more Organization(s) of your choice.
+Before the GitHub Server App can be used with the Universal Broker, you must create a connection of the `github-server-app` type using the `snyk-broker-config` tool. For more details, see the [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/) documentation. After the connection is created, it can be integrated with one or more Organization(s) of your choice.
 
 To set up the integration you will need the following:
 
@@ -116,4 +116,4 @@ Visit the integrations page in Snyk to see that the integration has been configu
 
 <figure><img src="../../.gitbook/assets/image (222).png" alt=""><figcaption><p>A successful GitHub Server App integration</p></figcaption></figure>
 
-See the [Universal Broker](../../snyk-platform-administration/snyk-broker/universal-broker/) documentation for more details.
+See the [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/) documentation for more details.

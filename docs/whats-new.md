@@ -105,7 +105,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk Broker**
 
 * The [Universal Broker](snyk-api/reference/universal-broker.md) release status has transitioned to Generally Available.
-* The page [Upgrade an Organization from Classic Broker to Universal Broker](snyk-platform-administration/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md#migrating-multiple-organizations) has been updated with steps to migrate multiple Organizations at a time.
+* The page [Upgrade an Organization from Classic Broker to Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md#migrating-multiple-organizations) has been updated with steps to migrate multiple Organizations at a time.
 
 ### **Snyk CLI**
 
@@ -220,15 +220,15 @@ The most recent updates include significant changes to the user docs, such as fe
 * [Analytics](manage-risk/analytics/overview-tab.md) has a fresh new look.
 * Added [Snyk Assist](discover-snyk/snyk-learn/snyk-assist.md) documentation.
 * The [Developer IDE and CLI usage report](manage-risk/analytics/reports-tab/prevention-reports.md#developer-ide-and-cli-usage-report) has been improved with MCP-related data to provide better visibility into MCP usage.
-* [Okta custom mapping documentation](snyk-platform-administration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-okta.md#construct-a-value-expression-that-creates-a-roles-array-to-be-sent-to-snyk) has been updated to clarify handling of the `Arrays.flatten(appuser.snyk_orgs)` value during setup.
+* [Okta custom mapping documentation](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-okta.md#construct-a-value-expression-that-creates-a-roles-array-to-be-sent-to-snyk) has been updated to clarify handling of the `Arrays.flatten(appuser.snyk_orgs)` value during setup.
 
 ## June 2025
 
 ### **Snyk Broker**
 
-* Updated the Snyk Broker documentation to include distinct steps for setting up the [Container Registry Agent with Docker](snyk-platform-administration/snyk-broker/snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent), whether using the Classic or Universal Broker.
-* Updated the [Using the API to set up Universal Broker](snyk-platform-administration/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
-* Snyk Learn courses have been integrated into the [Universal Broker](snyk-platform-administration/snyk-broker/universal-broker/) pages.
+* Updated the Snyk Broker documentation to include distinct steps for setting up the [Container Registry Agent with Docker](implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent), whether using the Classic or Universal Broker.
+* Updated the [Using the API to set up Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](snyk-data-and-governance/regional-hosting-and-data-residency.md#broker-client-urls).
+* Snyk Learn courses have been integrated into the [Universal Broker](enterprise-setup/snyk-broker/universal-broker/) pages.
 
 ### **Other updates**
 
@@ -269,7 +269,7 @@ The [Bitbucket Cloud App](developer-tools/scm-integrations/organization-level-in
 * For [SCM integrations with Python](supported-languages/supported-languages-list/python/scm-integrations-and-python.md), the list of dependencies that are not supported has been updated to include `pip` for Python 2.7 and 3.7.
 * [Python dependency filtering results](supported-languages/supported-languages-list/python/scm-integrations-and-python.md) have been updated to clarify the conditions in which certain packages and configurations are skipped by SCM scans.
 * The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages/supported-languages-list/c-c++/), [SBOM test](developer-tools/snyk-cli/commands/sbom-test.md), [Test an SBOM document for vulnerabilities](snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md).
-* [Instructions for upgrading an Organization integration from Classic Broker to Universal Broker](snyk-platform-administration/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md) were clarified.
+* [Instructions for upgrading an Organization integration from Classic Broker to Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker.md) were clarified.
 
 ## April 2025
 
@@ -318,8 +318,8 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### **Snyk Broker**
 
-* The Snyk Broker section has been divided into [Universal Broker](snyk-platform-administration/snyk-broker/universal-broker/) and [Classic Broker](snyk-platform-administration/snyk-broker/classic-broker/) documentation and the [main page](snyk-platform-administration/snyk-broker/) has been updated.
-* The Classic Broker installation instructions now include the command to set the `BROKER_SERVER_URL` for [Docker](snyk-platform-administration/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md) and the `brokerServerUrl` for [Helm](snyk-platform-administration/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md).
+* The Snyk Broker section has been divided into [Universal Broker](enterprise-setup/snyk-broker/universal-broker/) and [Classic Broker](implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/) documentation and the [main page](implementation-and-setup/enterprise-setup/snyk-broker/) has been updated.
+* The Classic Broker installation instructions now include the command to set the `BROKER_SERVER_URL` for [Docker](enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md) and the `brokerServerUrl` for [Helm](enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md).
 
 ### **Snyk API**
 
@@ -365,7 +365,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 ### Other updates
 
-* A new [Automated Provisioning guide](implementation-and-setup/auto-provisioning-guide.md) has been created for **Pilot** and **Enterprise** **users**, detailing the steps of the auto-provisioning process for new and existing user accounts.
+* A new [Automated Provisioning guide](implementation-and-setup/enterprise-setup/auto-provisioning-guide.md) has been created for **Pilot** and **Enterprise** **users**, detailing the steps of the auto-provisioning process for new and existing user accounts.
 * [Snyk Code PR Checks](scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md#configure-for-code-analysis-click-to-expand) are in General Availability.
 
 ## December 2024 and January 2025
@@ -399,7 +399,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 * The Pull Request Checks section has been updated to include the new [Pull Request Experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md) for PR Checks.
 * The [Supported languages](supported-languages/supported-languages-package-managers-and-frameworks.md) page has been reorganized to provide detailed information about language availability for each Snyk product. Additionally, it provides a list of package managers, frameworks, and features for each supported language.
-* A service account using OAuth 2.0 can now be [created through the Snyk Web UI](snyk-platform-administration/service-accounts/service-accounts-using-oauth-2.0.md#create-oauth-service-accounts-through-the-ui).
+* A service account using OAuth 2.0 can now be [created through the Snyk Web UI](implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md#create-oauth-service-accounts-through-the-ui).
 * The [API index ](snyk-api/api-endpoints-index-and-tips/)now includes entries for each endpoint mentioned in the Snyk user docs.
 * The [Developer IDE and CLI usage report](manage-risk/analytics/reports-tab/prevention-reports.md#developer-ide-and-cli-usage-report) has been enhanced with additional functionalities: **Developer email address** and **PDF export**.
 * The [Vulnerabilities Detail report](manage-risk/analytics/reports-tab/remediation-reports.md#vulnerabilities-detail-report) has been enhanced with additional functionalities, such as **Target indication** and **Column picker**.

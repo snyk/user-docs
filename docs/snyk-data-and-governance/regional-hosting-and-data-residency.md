@@ -76,7 +76,7 @@ SNYK-US-02, EU, and AU data center Snyk accounts are available only with the pur
 
 Snyk offers almost all the same features, support, and performance in the regional multi- and single-tenant regions as in SNYK-US-01. For an up-to-date overview of feature parity across regions, contact your account team.
 
-[Automated provisioning](../implementation-and-setup/auto-provisioning-guide.md) is only possible for multi-tenant environments and Pilot or Enterprise plan users.
+[Automated provisioning](../implementation-and-setup/enterprise-setup/auto-provisioning-guide.md) is only possible for multi-tenant environments and Pilot or Enterprise plan users.
 
 ## Integration considerations
 
@@ -181,7 +181,7 @@ For Broker deployed by Helm chart, use [https://github.com/snyk/snyk-broker-helm
 
 ### Broker with high availability (HA) mode URLs
 
-Follow the [High availability mode](../snyk-platform-administration/snyk-broker/high-availability-mode.md) instructions, BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
+Follow the [High availability mode](../implementation-and-setup/enterprise-setup/snyk-broker/high-availability-mode.md) instructions, BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
 
 **SNYK-US-02**: `-e BROKER_DISPATCHER_BASE_URL=https://api.us.snyk.io`
 

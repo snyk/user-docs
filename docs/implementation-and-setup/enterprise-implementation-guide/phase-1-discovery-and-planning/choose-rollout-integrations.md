@@ -32,10 +32,10 @@ The advantages of SCM integrations are:
 
 See [Snyk SCM integrations](../../../developer-tools/scm-integrations/organization-level-integrations/) for more details.
 
-If you have an on-premise Git repository, you must consider deploying [Snyk Broker](../../../snyk-platform-administration/snyk-broker/) for Snyk to communicate with your repositories.
+If you have an on-premise Git repository, you must consider deploying [Snyk Broker](../../enterprise-setup/snyk-broker/) for Snyk to communicate with your repositories.
 
 {% hint style="info" %}
-Enterprise customers can enable and manage [Snyk Broker](../../../snyk-platform-administration/snyk-broker/) using the API.
+Enterprise customers can enable and manage [Snyk Broker](../../enterprise-setup/snyk-broker/) using the API.
 
 [Paid services](../../../snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/) can be engaged to assist in Snyk Broker deployments.
 {% endhint %}

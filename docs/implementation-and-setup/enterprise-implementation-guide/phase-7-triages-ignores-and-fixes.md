@@ -1,46 +1,69 @@
-# Phase 7: Triages, ignores, and fixes
+# Manage and remediate issues
 
-## Tips for deciding on prioritization
+After establishing visibility and prevention measures, focus on managing your existing vulnerability backlog. This stage involves defining a fix strategy, prioritizing issues based on risk, and operationalizing the remediation process in your development teams. Effective management ensures that your security posture improves over time rather than just maintaining the status quo.
 
-After you implement a strategy to prevent new issues from entering your repositories, whether blocking builds or running in a non-blocking, advisory mode, the next step is to prioritize and start fixing issues in your backlog.
+To manage and remediate issues, follow these stages:
 
-* In [Phase 4: Create a Fix strategy](phase-4-create-a-fix-strategy.md), you created a plan for prioritizing your Projects and issues. To implement this, you can schedule regular meetings with development team leads to assist them with this process.
-* In the [Snyk Tools](../../scan-with-snyk/snyk-tools/) section, there is a tool called [jira-tickets-for-new-vulns](../../scan-with-snyk/snyk-tools/tool-jira-tickets-for-new-vulns.md)**,** which can be scheduled to run on a regular basis to automatically create Jira tickets for vulnerabilities that meet your specified criteria. Whether this process is automated or not, creating tickets for your developers to review can be a great way to help make issues identified by Snyk more visible.
-* If you use Jira Cloud, you can download and install the [Snyk Security in Jira Cloud](https://marketplace.atlassian.com/apps/1230482/snyk-security-in-jira-cloud) plugin from the Atlassian marketplace. This allows you to view information on your Snyk Vulnerabilities directly in Jira, and use Jira Automation to create new tickets when new vulnerabilities are identified.
+1. [Define a fix strategy:](phase-7-triages-ignores-and-fixes.md#define-a-fix-strategy) Identify focus areas and group work by team responsibilities.
+2. [Apply prioritization filters:](phase-7-triages-ignores-and-fixes.md#prioritize-issues) Use Snyk metrics to identify the most critical issues.
+3. [Establish remediation workflows:](phase-7-triages-ignores-and-fixes.md#establish-remediation-workflows) Integrate with ticket systems like Jira and manage exceptions using the ignore feature.
+4. [Monitor adoption and progress:](phase-7-triages-ignores-and-fixes.md#monitor-adoption-and-progress) Use Snyk Reports to track resolution trends and team engagement.
 
-## Use the ignore feature
+## Define a fix strategy
 
-### When should you ignore an issue?
-
-When deciding your priority for fixing issues, you may see specific packages or vulnerabilities that you do not currently want to fix. This could be for a range of reasons, such as:
-
-* The fix introduces breaking changes, and you do not have time to fix them.
-* This vulnerability does not apply to you for an environmental or contextual reason.
-
-In each case, you can use the ignore feature to stop these issues from appearing each time you run a test.
-
-### Implement the ignore feature
-
-{% hint style="info" %}
-Confirm an ignore with a Group Admin or Organization Admin. They may need to complete this step themselves.
+{% hint style="success" %}
+Key decision: Select a focus area based on business impact. Start with one high-traffic Organization or public-facing application to demonstrate success before scaling.
 {% endhint %}
 
-When adding an ignore:
+Analyze your imported Projects to determine where to start:
 
-* Ensure you add a detailed reason, so the ignore reason is clear to others who see this issue.
-* Set an expiration date for the ignore, rather than having a permanent ignore. This is essential, as even if the issue may not be fixable or relevant today, it should be reviewed regularly, monthly or quarterly, to see if it is possible to implement a fix.
+* **Identify critical assets**: Use discovery data obtained from configuring global settings to prioritize business-critical applications.
+* **Group by team**: Assign Open Source and Snyk Code issues to development teams, and Container or IaC issues to DevOps teams.
+* **Use metadata**: Filter Projects using attributes or tags to focus on specific business units or application types.
 
-{% hint style="info" %}
-It is common to use the General Settings to limit access for users to permission to ignore an issue and to require a reason.
+## Prioritize issues
+
+{% hint style="success" %}
+Key decision: Choose a primary metric for triage. Use **Priority Score** (900+) for a risk-based approach, or **Severity** (Critical/High) for a policy-based approach.
 {% endhint %}
 
-By default, the **Organization Collaborator** role has permission to ignore issues, but this can be controlled for each Organization on the settings page, that is, restricted to **Organization admins** only.
+Use Snyk filters iteratively to build your plan:
 
-See [Ignore issues](../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) for more details.
+* **Risk and priority scores**: Start with scores of 900–1000 and work downward.
+* **Severity**: filter for **Critical** and **High** issues.
 
-## Review Snyk reports to track the adoption of Snyk across your teams
+{% hint style="info" %}
+For Snyk Open Source, prioritize critical issues with a **Fixable** filter to identify quick wins.
+{% endhint %}
 
-There are a number of different reports in Snyk to help you get an overview of your issues and vulnerabilities. For more information, see [Reports tab](../../manage-risk/analytics/reports-tab/).
+* **Exploit maturity**: Focus on issues with **Mature** or **Proof of Concept** exploit code to address the most reachable threats.
+* **Issue type**: Run targeted vulnerability campaigns to eliminate specific types of flaws across all Projects, such as SQL injection (using CWE filters).
 
-* On the **Issues Summary** report, the **Risk Breakdown** section displays open, new, and resolved issues across different Organizations. Tracking the amount of activity in each Organization can help you identify which teams are adopting the tool most actively.
-* Individual Organization administrators can also view reports focused on their Organization as a way to help identify which vulnerabilities are most common across their repositories, and also to track issues resolved in different Projects.
+## Establish remediation workflows
+
+{% hint style="success" %}
+**Key decision**: Automate ticket creation. Use the `jira-tickets-for-new-vulns` tool or the Snyk Security in Jira Cloud plugin to ensure visibility in developer backlogs.
+{% endhint %}
+
+Operationalize the fix process using:
+
+* **Jira integration**: Automatically create tickets for vulnerabilities that meet your priority criteria.
+* **Ignore policy**: Use the **Ignore** feature for issues that cannot be fixed immediately due to environmental context or breaking changes.
+
+{% hint style="info" %}
+Ensure to always include a detailed reason and always set an expiration date (monthly or quarterly) for review.
+{% endhint %}
+
+* **Permissions**: Restrict ignore permissions to Organization admins in the general settings to maintain oversight.
+
+## Monitor adoption and progress
+
+{% hint style="success" %}
+**Key decision**: Track **Resolved** versus **New** issues. A healthy program shows a downward trend in the total backlog over time.
+{% endhint %}
+
+Use the **Reports** tab to audit your progress using:
+
+* **Issues summary**: View the **Risk Breakdown** to see open, new, and resolved issues.
+* **Adoption tracking**: Identify which Organizations are most active in resolving issues to recognize successful teams or provide extra support where needed.
+* **Organization reports**: Allow local admins to identify recurring vulnerabilities common across their specific repositories.

@@ -75,7 +75,7 @@ Reachability analysis is supported in the following integrations:
 | [Bitbucket Server](../../developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server.md)                               | General Availability |
 | [GitLab](../../developer-tools/scm-integrations/organization-level-integrations/gitlab.md)                                                               | General Availability |
 | [Azure Repos](../../developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs.md)                                          | General Availability |
-| [Brokered connections](../../snyk-platform-administration/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md)                   | General Availability |
+| [Brokered connections](../../implementation-and-setup/enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests.md)      | General Availability |
 | [Snyk CLI](../../developer-tools/snyk-cli/)                                                                                                              | Early Access         |
 | [AWS CodePipeline integration with CodeBuild](../../developer-tools/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage.md) | Early Access         |
 | [Azure Pipelines](../../developer-tools/snyk-ci-cd-integrations/azure-pipelines-integration/)                                                            | Early Access         |
@@ -149,7 +149,7 @@ To enable or disable **Reachability in the Snyk CLI and CI/CD integrations** for
 
 ### **Enable reachability** analysis **for brokered connections**
 
-If you use a brokered connection to your SCM, configure [Broker](../../snyk-platform-administration/snyk-broker/) to provide access to your source files.
+If you use a brokered connection to your SCM, configure [Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/) to provide access to your source files.
 
 ## Use reachability analysis in the Snyk Web UI
 

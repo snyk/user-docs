@@ -22,19 +22,19 @@ This list identifies all the areas with differences in functionality in the Snyk
 
 API keys are not available.
 
-This means that attempts to create Service Accounts either through the UI or using the API with an `auth_type` of `api_key` are not accepted. You must ensure that the OAuth protocol is used instead for all scenarios where API keys would typically be used. See [Service accounts using OAuth 2.0](../snyk-platform-administration/service-accounts/service-accounts-using-oauth-2.0.md) for details. If you need help, contact [Snyk support](https://support.snyk.io).
+This means that attempts to create Service Accounts either through the UI or using the API with an `auth_type` of `api_key` are not accepted. You must ensure that the OAuth protocol is used instead for all scenarios where API keys would typically be used. See [Service accounts using OAuth 2.0](../implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md) for details. If you need help, contact [Snyk support](https://support.snyk.io).
 
 In addition, the CLI must be used in OAuth mode, not with token-driven authentication.
 
 ## Single Sign-On limitations on availability
 
-[Single Sign-On (SSO)](../snyk-platform-administration/single-sign-on-sso-for-authentication-to-snyk/) is available except for [Self-Serve Single Sign-On (SSO)](../snyk-platform-administration/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/). All SSO setups are managed by Snyk. Some setup steps for Single Sign-On are slightly different:
+[Single Sign-On (SSO)](../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/) is available except for [Self-Serve Single Sign-On (SSO)](../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/). All SSO setups are managed by Snyk. Some setup steps for Single Sign-On are slightly different:
 
 * The service provider is Okta rather than Auth0.
 * The ACS URL and Entity ID and certificate will be different per connection and thus will not match the Snyk Single Sign-On documentation.
 * To get the ACS Url, Entity ID, and cert, Snyk will need to part-provision the connection in Okta.
 
-See [Single Sign-On (SSO) for authentication to Snyk](../snyk-platform-administration/single-sign-on-sso-for-authentication-to-snyk/) for details.
+See [Single Sign-On (SSO) for authentication to Snyk](../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/) for details.
 
 ## Integrations not available
 

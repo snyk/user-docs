@@ -35,7 +35,7 @@ For more details, see [Git repositories (SCMs)](../../../developer-tools/scm-int
 {% hint style="info" %}
 If you have a non-cloud-facing or your own instance of a Git SCM:
 
-* Consider deploying a [Snyk Broker](../../../snyk-platform-administration/snyk-broker/) for Snyk to communicate with your repositories, which would also require a Snyk Enterprise Plan.
+* Consider deploying a [Snyk Broker](../../enterprise-setup/snyk-broker/) for Snyk to communicate with your repositories, which would also require a Snyk Enterprise Plan.
 * Enterprise customers can enable and manage Snyk Broker using the API.
 
 [Paid services](../../../snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/) can be engaged to assist in Broker deployments.

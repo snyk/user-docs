@@ -18,4 +18,4 @@ Invite members to the Organization you configured. Follow these steps to invite 
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfZakhAyTXXqEigvhHYY0bH3jZ__Zx9kIbt8Dwa9erputbh1_4ZennUPqXzXFfvZBdHzlO6OOLJjUFzo35uDHUSvo5C1HV7HXK4EZ3wAT5zM6PhQWuutwH-DsDmyWVH4JlkGSj1?key=i_CNrr-DvB8PGUAzq09BT3pc)
 
-Alternatively, SSO can be configured as self-serve in the Group settings. More details on that can be found on the [Configure Self-Serve Single Sign-On (SSO)](../../../../snyk-platform-administration/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/) page.
+Alternatively, SSO can be configured as self-serve in the Group settings. More details on that can be found on the [Configure Self-Serve Single Sign-On (SSO)](../../../../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/) page.
