@@ -105,7 +105,3 @@ Large enterprises often require more granular control. Because you cannot change
 * **Customization**: Assign a specific set of permissions to a role name you define.
 * **Flexibility**: Update permissions for a custom role at any time. Changes apply immediately to all assigned users.
 * **Efficiency**: Use custom role templates provided by Snyk to jumpstart your configuration.
-
-
-
-ADD VIDEO HERE.
