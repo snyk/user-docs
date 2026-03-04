@@ -208,3 +208,17 @@ redirects:
   supported-languages/supported-languages-list/javascript/javascript-for-code-analysis: supported-languages/supported-languages-list/javascript/README.md
   supported-languages/supported-languages-list/javascript/javascript-for-open-source: supported-languages/supported-languages-list/javascript/README.md
   supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js: supported-languages/supported-languages-list/javascript/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/import-projects: implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/add-project-tags-and-attributes: implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/notifying-the-team: implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/announcement-templates-for-initial-rollout: implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/developer-training-from-snyk: implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/engage-development-with-ide-plugins: implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/enable-and-configure-snyk-on-prs: implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/add-and-configure-snyk-in-your-ci-cd-pipeline: implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/custom-base-images: implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/infrastructure-as-code: implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/announcement-templates-for-prevention: implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-4-create-a-fix-strategy: implementation-and-setup/enterprise-implementation-guide/phase-7-triages-ignores-and-fixes.md
+
+  
