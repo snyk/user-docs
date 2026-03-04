@@ -29,7 +29,7 @@ For more information, see [User management with the API](../user-management-with
 * For [Integration edit abilities](custom-role-templates/integration-editor-implementor-role-template.md), the **Edit Organization** permission is required.
 * Snyk prevents role privileges from escalating. This means users cannot assign a higher privileged role to others and cannot create service accounts with a higher privileged role.
 * It is advisable to use the **Duplicate Role** functionality and create a copy of a standard role, then amend the permissions rather than build a role from scratch if you are unsure about the permissions.
-* The names of member roles are visible to all users within a Tenant; meaning that all users can see which roles are assigned to other users.&#x20;
+* The names of member roles are visible to all users within a Tenant; meaning that all users can see which roles are assigned to other users.
 
 ## Manage roles
 
@@ -139,7 +139,7 @@ Service accounts are available only with Enterprise plans. Free and Team users h
 For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Users with the Group-level View, Create, and Edit service account permissions can change the assigned role and related permissions of a service account. For detailed steps, see [Assign roles and permissions to a service account](../../implementation-and-setup/enterprise-setup/service-accounts/#assign-roles-and-permissions-to-a-service-account).
+Users with the Group-level View, Create, and Edit service account permissions can change the assigned role and related permissions of a service account. For detailed steps, see [Assign roles and permissions to a service account](../service-accounts/#assign-roles-and-permissions-to-a-service-account).
 
 ## Change the role of a user
 
@@ -160,7 +160,7 @@ If the user is not already a part of your Group, you must first add that user as
 
 Member roles are supported as part of a customized SSO authentication flow. All new and existing customers who have customized SSO can use new roles they create in their IDP SAML assertions to provision users in their Organizations with those roles.
 
-For more details, see [Custom mapping](../../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/)
+For more details, see [Custom mapping](../single-sign-on-sso-for-authentication-to-snyk/custom-mapping/)
 
 {% hint style="info" %}
 If you already have Custom SSO set up, or are planning to create Member roles after setting up Custom SSO, you can use Member roles with no modification to the Snyk Custom SSO configuration, provided you send the normalized role name in your payload in the agreed-upon format.

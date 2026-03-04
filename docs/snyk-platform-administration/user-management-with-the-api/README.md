@@ -6,7 +6,7 @@
 The Snyk API is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-You can manage users through the Snyk Web UI and Snyk API. You can also [manage service accounts](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md) using the API.
+You can manage users through the Snyk Web UI and Snyk API. You can also [manage service accounts](../service-accounts/manage-service-accounts-using-the-snyk-api.md) using the API.
 
 * You can use the [provisioning endpoints ](provision-users-to-organizations-using-the-api.md)to organize and grant permissions under a specified role for SSO users before initial log-on.
 * You must use the API to [update member roles](update-member-roles-using-the-api.md).

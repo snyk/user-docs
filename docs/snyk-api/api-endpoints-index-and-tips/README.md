@@ -274,12 +274,12 @@ The View Project History permission is needed to use this API.
 ### [List all roles in a group](../reference/groups-v1.md#group-groupid-roles)
 
 **More information:** [Update member roles using the API](../../snyk-platform-administration/user-management-with-the-api/update-member-roles-using-the-api.md);\
-[Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+[Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
 **More information:** [Org and group identification for Projects](organization-and-group-identification-for-projects-using-the-api.md);\
-[Legacy custom mapping](../../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md);\
+[Legacy custom mapping](../../snyk-platform-administration/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/legacy-custom-mapping.md);\
 [api-import Creating import targets data for import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-import-targets-data-for-import-command.md);\
 [Scenario: Retrieve a Project snapshot for every Project in a given Group](scenarios-for-using-the-snyk-api.md#retrieve-a-project-snapshot-for-every-project-in-a-given-group);\
 [Scenario: Find all Projects affected by a vulnerability](scenarios-for-using-the-snyk-api.md#find-all-projects-affected-by-a-vulnerability)
@@ -392,7 +392,7 @@ The poll results return a message per manifest processed, either `success: true`
 
 ### [Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-integrationid)
 
-**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md);\
+**More information:** [Obtain the required tokens for setup](../../snyk-platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md);\
 [Scenario: For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management](scenarios-for-using-the-snyk-api.md#for-a-specific-event-or-time-disable-all-interactions-pull-requests-tests-from-snyk-to-the-code-base); [Examples for the Update existing integration endpoint](examples-for-the-update-existing-integration-endpoint.md)
 
 ### [Update](../reference/integrations-v1.md#org-orgid-integrations-integrationid-settings)
@@ -401,8 +401,8 @@ The poll results return a message per manifest processed, either `success: true`
 
 ### [Clone an integration (with settings and credentials)](../reference/integrations-v1.md#org-orgid-integrations-integrationid-clone)
 
-**More information:** [Prepare Snyk Broker for deployment](../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/);\
-[Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md);\
+**More information:** [Prepare Snyk Broker for deployment](../../snyk-platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/);\
+[Obtain the required tokens for setup](../../snyk-platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md);\
 Scenario: [Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
 ### [Delete credentials](../reference/integrations-v1.md#org-orgid-integrations-integrationid-authentication)
@@ -411,7 +411,7 @@ Scenario: [Create multiple new Organizations that all have the same settings in 
 
 ### [Provision new broker token](../reference/integrations-v1.md#org-orgid-integrations-integrationid-authentication-provision-token)
 
-**More information:** [Obtain the required tokens for setup](../../enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md)
+**More information:** [Obtain the required tokens for setup](../../snyk-platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker.md)
 
 ## Invites
 
@@ -727,57 +727,57 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ## ServiceAccounts
 
-**More information:** [Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md); [Choose a service account type to use with Snyk APIs](../../implementation-and-setup/enterprise-setup/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis.md)
+**More information:** [Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md); [Choose a service account type to use with Snyk APIs](../../snyk-platform-administration/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis.md)
 
 ### [Create a service account for an organization](../reference/serviceaccounts.md#orgs-org_id-service_accounts)
 
-**More information:** [Service accounts using OAuth 2.0](../../implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md);\
-[Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Service accounts using OAuth 2.0](../../snyk-platform-administration/service-accounts/service-accounts-using-oauth-2.0.md);\
+[Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Get a list of organization service accounts](../reference/serviceaccounts.md#orgs-org_id-service_accounts-1)
 
-**More information:** [Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Update an organization service account](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id)
 
-**More information:** [Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Get an organization service account](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id-1)
 
-**More information:** [Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Delete a service account in an organization](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id-2)
 
-**More information:** [Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Manage an organization service account’s client secret](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id-secrets)
 
-**More information:** [Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Create a service account for a group](../reference/serviceaccounts.md#groups-group_id-service_accounts)
 
-**More information:** [Service accounts using OAuth 2.0](../../implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md);\
-[Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Service accounts using OAuth 2.0](../../snyk-platform-administration/service-accounts/service-accounts-using-oauth-2.0.md);\
+[Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Get a list of group service accounts](../reference/serviceaccounts.md#groups-group_id-service_accounts-1)
 
-**More information:** [Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Update a group service account](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id)
 
-**More information:** [Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Get a group service account](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id-1)
 
-**More information:** [Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Delete a group service account](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id)
 
-**More information:** [Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ### [Manage a group service account’s client secret](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id-secrets)
 
-**More information:** [Manage service accounts using the Snyk API](../../implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
+**More information:** [Manage service accounts using the Snyk API](../../snyk-platform-administration/service-accounts/manage-service-accounts-using-the-snyk-api.md)
 
 ## SlackSettings
 

@@ -24,7 +24,7 @@ The following options are available for the `snyk-scm-contributors-count azure d
 ## Before running the command
 
 1. Export SNYK\_TOKEN (if you want to get the contributors only for repos that are already monitored by Snyk):
-   * Make sure that your token has Group level access or use a service account's token that has Group level access. To learn more about how to create a service account, refer to [Service accounts](../../../../../../../implementation-and-setup/enterprise-setup/service-accounts/).
+   * Make sure that your token has Group level access or use a service account's token that has Group level access. To learn more about how to create a service account, refer to [Service accounts](../../../../../../../snyk-platform-administration/service-accounts/).
    * Copy the token value.
    *   Export the token in your environment:
 

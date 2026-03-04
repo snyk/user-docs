@@ -107,7 +107,7 @@ Existing credentials will continue to work normally until completely deprecated 
 New integrations will now use API tokens.
 {% endhint %}
 
-All the operations, whether triggered manually or automatically, are performed for a Bitbucket Cloud [service account](../../../implementation-and-setup/enterprise-setup/service-accounts/) that has its token (API Token) configured in the **Integration settings**.
+All the operations, whether triggered manually or automatically, are performed for a Bitbucket Cloud [service account](../../../snyk-platform-administration/service-accounts/) that has its token (API Token) configured in the **Integration settings**.
 
 For Snyk to perform the required operations on monitored repositories, such as reading manifest files on a frequent basis and opening fix or upgrade PRs, the integrated Bitbucket Cloud service account needs **Admin** permissions on the imported repositories.
 

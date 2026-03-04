@@ -86,7 +86,7 @@ The Snyk Consultant will work with the Customer to configure SCM integration set
 
 #### SCM Broker installation
 
-The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/).
+The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](../../snyk-platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/).
 
 #### Single pipeline configuration (direct Integration or CLI)
 
@@ -118,7 +118,7 @@ The Snyk Consultant will work with the Customer to configure SCM integration set
 
 #### SCM Broker installation
 
-The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/).
+The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](../../snyk-platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/).
 
 #### Interpreting and actioning Code results
 
@@ -170,7 +170,7 @@ The Snyk Consultant will work with the Customer to configure IaC settings based 
 
 #### SCM Broker Installation
 
-The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/).
+The Snyk Consultant will work with the Customer to install the Snyk Broker in a pre-determined environment that follows the [Snyk Broker system requirements](../../snyk-platform-administration/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/).
 
 #### Single Pipeline CI/CD CLI configuration
 

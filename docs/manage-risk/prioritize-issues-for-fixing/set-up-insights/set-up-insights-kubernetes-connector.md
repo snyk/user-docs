@@ -18,7 +18,7 @@ The Kubernetes connector is the agent deployed in your Kubernetes clusters to co
 Before you can deploy the Kubernetes connector in your Kubernetes clusters, ensure you have the following:
 
 * A Snyk Organization to which the Kubernetes information collected will be sent to be stored. This could be a new Organization.
-* A Snyk service account created specifically to be used with the Kubernetes connector. For instructions on creating a service account, see [Service accounts](../../../implementation-and-setup/enterprise-setup/service-accounts/). For the roles and permissions, Snyk recommends:
+* A Snyk service account created specifically to be used with the Kubernetes connector. For instructions on creating a service account, see [Service accounts](../../../snyk-platform-administration/service-accounts/). For the roles and permissions, Snyk recommends:
   * Creating a new specific role for this service account
   * Taking a least privilege approach, granting the new specific role the sole permission required to **Publish Kubernetes Resources**.
 
@@ -46,7 +46,7 @@ Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** perm
 
 ### Create a service account and assign it to a role
 
-Next, create a new [service account](../../../implementation-and-setup/enterprise-setup/service-accounts/) for Kubernetes connector integration.
+Next, create a new [service account](../../../snyk-platform-administration/service-accounts/) for Kubernetes connector integration.
 
 {% hint style="info" %}
 Snyk recommends creating this service account for the Snyk Organization used or created for the Kubernetes agent.

@@ -10,7 +10,7 @@ At the Group level, you can set up and customize your Snyk Essentials integratio
 * [BitBucket](bitbucket-for-snyk-essentials.md)
 
 {% hint style="info" %}
-If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - Snyk Essentials](../../../implementation-and-setup/enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md).
+If your SCM instance is not publicly accessible, you must connect using Snyk Broker. For details, see [Snyk Broker - Snyk Essentials](../../../snyk-platform-administration/snyk-broker/using-snyk-essentials-with-snyk-broker.md).
 {% endhint %}
 
 The Integrations page at the Group-level shows all active integrations, including any data automatically synced from your existing Snyk Organizations, and provides access to the Integration Hub.
@@ -46,7 +46,7 @@ To configure a Group-level integration, you must be a Group Admin or have a cust
 The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.
 
 {% hint style="info" %}
-The wildcard integration applies to the GitHub integration and offers support when you set it up using [Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md).
+The wildcard integration applies to the GitHub integration and offers support when you set it up using [Snyk Broker](../../../snyk-platform-administration/snyk-broker/using-snyk-essentials-with-snyk-broker.md).
 {% endhint %}
 
 You can use the wildcards while setting up your integration using the **Integrations** page:

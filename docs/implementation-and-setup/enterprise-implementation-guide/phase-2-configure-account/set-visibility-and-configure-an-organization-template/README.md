@@ -1,6 +1,6 @@
 # Set visibility and configure an Organization template
 
-Whether you want to create a single Organization or build a template to create multiple Organizations, there are some initial settings you should configure.&#x20;
+Whether you want to create a single Organization or build a template to create multiple Organizations, there are some initial settings you should configure.
 
 {% hint style="info" %}
 For importing Projects, see the [Import Projects](../../phase-3-gain-visibility/import-projects.md) and [Rollout](../../phase-5-initial-rollout-to-team/) discussions
@@ -24,7 +24,7 @@ Templating functionality is also available if you are creating your Organization
 In your template Organization, configure a range of settings that you can choose to copy when creating your full Organization structure:
 
 * All relevant integrations, for example, GitHub Enterprise, Docker Hub.\
-  Note: If you have on-premise source code management tools, you must configure and run [Snyk Broker](../../../enterprise-setup/snyk-broker/) to enable the integration.
+  Note: If you have on-premise source code management tools, you must configure and run [Snyk Broker](../../../../snyk-platform-administration/snyk-broker/) to enable the integration.
 * Integration settings, for example, configuring whether you want Snyk to run tests on PRs.
   * The default settings for a new Git repository integration include Snyk running tests on newly raised PRs and the option to automatically raise PRs when new vulnerabilities are found. Snyk recommends disabling these settings initially and turning them on when you are ready to introduce these features in the [Prevention Stage](../../phase-6-rolling-out-the-prevention-stage/).
   * The following [Integrations](configure-integrations.md) section discusses integrations you may want to add to your templates before copying them.
@@ -36,8 +36,7 @@ In your template Organization, configure a range of settings that you can choose
   * Snyk suggests that you initially disable all Group and Organization email notifications so users do not receive a large number of notifications while Projects are imported.
   * To do this, disable Notifications at the Group level for new organizations, and at the Organization level for all existing Organizations.
 
-The following table shows what is copied from the template Organization to the new Organizations you create using the web interface or API\
-
+The following table shows what is copied from the template Organization to the new Organizations you create using the web interface or API\\
 
 <table><thead><tr><th width="466">All integrations and their settings WILL be copied</th><th>The following WILL NOT be copied</th></tr></thead><tbody><tr><td>Source control integrations</td><td>Snyk Service accounts</td></tr><tr><td>Container registry integrations</td><td>Members</td></tr><tr><td>Container orchestrators integrations (Kubernetes)</td><td>Projects</td></tr><tr><td>PaaS and Serverless integrations</td><td>Notification preferences</td></tr><tr><td>Notificiation integrations (Slack and Jira)</td><td></td></tr><tr><td>Policies</td><td></td></tr><tr><td>Ignore settings</td><td></td></tr><tr><td>Language settings</td><td></td></tr><tr><td>Infrastructure as code (IaC) settings</td><td></td></tr><tr><td>Snyk Code settings</td><td></td></tr></tbody></table>
 

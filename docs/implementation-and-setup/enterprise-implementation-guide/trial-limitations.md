@@ -16,13 +16,13 @@ If you consider purchasing the Team plan, remember that the trial offers feature
 
 The following Enterprise features are limited or unavailable during the trial:
 
-* [**Single Sign-On (SSO)**](../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/)**:** Not available.
-* [**Service Accounts**](../enterprise-setup/service-accounts/)**:** Not available.
+* [**Single Sign-On (SSO)**](../../snyk-platform-administration/single-sign-on-sso-for-authentication-to-snyk/)**:** Not available.
+* [**Service Accounts**](../../snyk-platform-administration/service-accounts/)**:** Not available.
 * [**Group / Multiple Orgs**](../../snyk-platform-administration/groups-and-organizations/)**:** Limited to one Group and one Organization
 * [**Custom Project Tags**](../../snyk-platform-administration/snyk-projects/project-tags.md)**:** Not available.
 * [**Custom User Roles**](../../snyk-platform-administration/user-roles/user-role-management.md): Not available.
 * [**Audit Logging**](../../snyk-platform-administration/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md): Not available.
-* [**Broker**](../enterprise-setup/snyk-broker/): Not available.
+* [**Broker**](../../snyk-platform-administration/snyk-broker/): Not available.
 * [**Self-hosted Git**](../../developer-tools/scm-integrations/organization-level-integrations/github-enterprise.md): Not available.
 * [**Private Registry Integrations**](../../scan-with-snyk/snyk-open-source/package-repository-integrations/): Not available.
 * [**Snyk Essentials Inventory**](../../manage-assets/manage-assets.md): Not available

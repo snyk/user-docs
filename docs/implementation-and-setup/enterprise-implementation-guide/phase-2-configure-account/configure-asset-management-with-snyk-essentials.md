@@ -56,7 +56,7 @@ Navigate to the [Group-level integrations](../../../developer-tools/scm-integrat
 
 ### Brokered SCM integration <a href="#brokered-scm-integration" id="brokered-scm-integration"></a>
 
-When setting up a Snyk Broker, there are some questions you need to ask regarding either standing up a new broker or updating an existing [Snyk broker connection](../../enterprise-setup/snyk-broker/):
+When setting up a Snyk Broker, there are some questions you need to ask regarding either standing up a new broker or updating an existing [Snyk broker connection](../../../snyk-platform-administration/snyk-broker/):
 
 * Are you hitting any API Rate Limit issues?
 * Do you need to update the SCM token to a user that has access to all relevant SCM repositories?
@@ -68,7 +68,7 @@ If you answered Yes to any of the above questions, then you need to deploy a new
 Snyk recommends creating a new Organization in Snyk specifically for the Snyk Essentials Broker.
 {% endhint %}
 
-Navigate to the [Snyk Broker](../../enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker.md) page for more details about installing and configuring Snyk Essentials using Snyk Broker.
+Navigate to the [Snyk Broker](../../../snyk-platform-administration/snyk-broker/using-snyk-essentials-with-snyk-broker.md) page for more details about installing and configuring Snyk Essentials using Snyk Broker.
 
 ### Application context for SCM Integrations
 
