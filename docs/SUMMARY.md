@@ -89,11 +89,8 @@
       * [Create Organizations](implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/create-organizations.md)
     * [Configure Asset management](implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/configure-asset-management-with-snyk-essentials.md)
     * [Apply security and license policies](implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/apply-security-and-license-policies.md)
-  * [Phase 3: Gain visibility](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/README.md)
-    * [Set up Asset Policies](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/set-up-snyk-apprisk-policies.md)
-    * [Import Projects](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/import-projects.md)
-    * [Add Project tags and attributes](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/add-project-tags-and-attributes.md)
-  * [Initial team rollout](implementation-and-setup/enterprise-implementation-guide/initial-team-rollout.md)
+  * [Gain visibility by importing repositories](implementation-and-setup/enterprise-implementation-guide/gain-visibility-by-importing-repositories.md)
+  * [Initial team rollout](implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/README.md)
   * [Automate prevention measures](implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/README.md)
   * [Manage and remediate issues](implementation-and-setup/enterprise-implementation-guide/phase-7-triages-ignores-and-fixes.md)
 

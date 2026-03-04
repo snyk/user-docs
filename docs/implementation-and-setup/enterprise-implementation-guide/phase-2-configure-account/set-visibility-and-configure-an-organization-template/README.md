@@ -3,7 +3,7 @@
 Whether you want to create a single Organization or build a template to create multiple Organizations, there are some initial settings you should configure.
 
 {% hint style="info" %}
-For importing Projects, see the [Import Projects](../../phase-3-gain-visibility/import-projects.md) and [Rollout](../../initial-team-rollout.md) discussions
+For importing Projects, see the [Import Projects](/broken/pages/YpTRV1cpF6a8v3so8VvI) and [Rollout](../../phase-5-initial-rollout-to-team/) discussions
 {% endhint %}
 
 ## Create your Organization structure using a template

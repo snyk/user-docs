@@ -4,10 +4,10 @@ Invite your stakeholders to explore Snyk features and integrate security into th
 
 Follow these steps to roll out Snyk to your teams:
 
-1. [Configure notifications:](initial-team-rollout.md#configure-notifications) Set up email alerts to ensure users receive relevant information without being overwhelmed.
-2. [Announce Snyk:](initial-team-rollout.md#announce-snyk-to-your-teams) Communicate the rollout to developers using standardized templates.
-3. [Provide training:](initial-team-rollout.md#provide-developer-training) Direct users to Snyk Learn for product and security education.
-4. [Deploy IDE plugins:](initial-team-rollout.md#engage-development-with-ide-plugins) Enable developers to find and fix issues locally before they commit code.
+1. [Configure notifications:](./#configure-notifications) Set up email alerts to ensure users receive relevant information without being overwhelmed.
+2. [Announce Snyk:](./#announce-snyk-to-your-teams) Communicate the rollout to developers using standardized templates.
+3. [Provide training:](./#provide-developer-training) Direct users to Snyk Learn for product and security education.
+4. [Deploy IDE plugins:](./#engage-development-with-ide-plugins) Enable developers to find and fix issues locally before they commit code.
 
 ## Configure notifications
 

@@ -343,7 +343,7 @@ A typical import starts with using the endpoint [Import targets](../reference/im
 
 Note that the `target.owner` is case-sensitive.
 
-For information on when and how you can use Import targets, see [Git integration on the Import Projects](../../implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/import-projects.md#git-integration) page in the Enterprise implementation guide.
+For information on when and how you can use Import targets, see [Git integration on the Import Projects](/broken/pages/YpTRV1cpF6a8v3so8VvI#git-integration) page in the Enterprise implementation guide.
 
 If a call to the Import targets endpoint fails, use [Get import job detail](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)s to help determine why. There are two types of failures:
 
