@@ -208,3 +208,6 @@ redirects:
   supported-languages/supported-languages-list/javascript/javascript-for-code-analysis: supported-languages/supported-languages-list/javascript/README.md
   supported-languages/supported-languages-list/javascript/javascript-for-open-source: supported-languages/supported-languages-list/javascript/README.md
   supported-languages/supported-languages-list/javascript/best-practices-for-javascript-and-node.js: supported-languages/supported-languages-list/javascript/README.md
+  implementation-and-setup/enterprise-implementation-guide/prerequisites: implementation-and-setup/enterprise-implementation-guide/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-1-discovery-and-planning: implementation-and-setup/enterprise-implementation-guide/README.md
+  implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account: implementation-and-setup/enterprise-implementation-guide/README.md
