@@ -2,7 +2,7 @@
 
 Add Snyk Studio to Google Antigravity to secure code generated with agentic workflows through a Large Language Model (LLM). This can be achieved in several ways. When you use it for the first time, Snyk Studio will ask for trust and trigger authentication if necessary.
 
-### Install Antigravity&#x20;
+### Install Antigravity
 
 Visit the [Google Antigravity](https://antigravity.google/) website to download the correct version of the IDE.
 
@@ -46,7 +46,7 @@ For new users, select the preferred sign up method and agree to the terms on the
 To use Snyk Studio, specifically Snyk's SAST scanning capabilities, you need to enable [Snyk Code](../../../scan-with-snyk/snyk-code/). Snyk Code analyzes your code for vulnerabilities and temporarily clones the repository and or uploads your code. Cloned or uploaded code is cached according to our [data retention policy](../../../snyk-data-and-governance/how-snyk-handles-your-data.md). With the Snyk Free Plan, Snyk Code offers unlimited scans for open source projects, and limited tests for 1st-party code. For more details, visit [Plans and Pricing](https://snyk.io/plans/).
 {% endhint %}
 
-For existing users, select the login method associated with your account. If you do not have access to Snyk Code, your LLM will prompt you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](../../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md).
+For existing users, select the login method associated with your account. If you do not have access to Snyk Code, your LLM will prompt you to enable it prior to your first scan. You can also [enable it directly in Snyk's Settings](/broken/pages/0dMWUuicl71g7r1ziVoJ).
 
 {% hint style="info" %}
 If you are enabling Snyk Code for the first time, you must import or re-import existing projects in order to properly scan them.
@@ -91,4 +91,3 @@ Rescan the code after fixing the issues to ensure that the issues were fixed and
 Repeat this process until no issues are found.
 ```
 {% endcode %}
-

@@ -487,7 +487,7 @@ Additional information: [Reachability](../../manage-risk/prioritize-issues-for-f
 
 ### [Create a new organization](../reference/organizations-v1.md#org)
 
-**More information:** [Set visibility and configure an Organization template](../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/) (Enterprise implementation guide Phase 2, Configure accounts);\
+**More information:** [Set visibility and configure an Organization template](/broken/pages/0vbVWhv5ftUyuJ0aFqWU) (Enterprise implementation guide Phase 2, Configure accounts);\
 [api-import: Creating organizations in Snyk](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md);\
 [Scenario: Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
@@ -721,7 +721,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ### [Enable/Disable the Snyk Code settings for an org](../reference/sastsettings.md#orgs-org_id-settings-sast)
 
-**More information:** [Enable Snyk Code](../../implementation-and-setup/enterprise-implementation-guide/phase-2-configure-account/set-visibility-and-configure-an-organization-template/enable-snyk-code.md) (Enterprise implementation guide, Phase 2)
+**More information:** [Enable Snyk Code](/broken/pages/0dMWUuicl71g7r1ziVoJ) (Enterprise implementation guide, Phase 2)
 
 ### [Retrieves the SAST settings for an org](../reference/sastsettings.md#orgs-org_id-settings-sast-1)
 
