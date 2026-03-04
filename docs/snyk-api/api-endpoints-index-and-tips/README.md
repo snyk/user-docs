@@ -343,7 +343,7 @@ A typical import starts with using the endpoint [Import targets](../reference/im
 
 Note that the `target.owner` is case-sensitive.
 
-For information on when and how you can use Import targets, see [Git integration on the Import Projects](/broken/pages/YpTRV1cpF6a8v3so8VvI#git-integration) page in the Enterprise implementation guide.
+For information on when and how you can use Import targets, see [Gain visibility by importing repositories](../../implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/) in the Enterprise implementation guide.
 
 If a call to the Import targets endpoint fails, use [Get import job detail](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)s to help determine why. There are two types of failures:
 
@@ -487,7 +487,7 @@ Additional information: [Reachability](../../manage-risk/prioritize-issues-for-f
 
 ### [Create a new organization](../reference/organizations-v1.md#org)
 
-**More information:** [Set visibility and configure an Organization template](/broken/pages/0vbVWhv5ftUyuJ0aFqWU) (Enterprise implementation guide Phase 2, Configure accounts);\
+**More information:** [Create a template Organization](../../implementation-and-setup/enterprise-implementation-guide/create-a-template-organization/)\
 [api-import: Creating organizations in Snyk](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md);\
 [Scenario: Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
@@ -721,7 +721,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ### [Enable/Disable the Snyk Code settings for an org](../reference/sastsettings.md#orgs-org_id-settings-sast)
 
-**More information:** [Enable Snyk Code](/broken/pages/0dMWUuicl71g7r1ziVoJ) (Enterprise implementation guide, Phase 2)
+**More information:** [Enable Snyk Code](../../implementation-and-setup/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools.md#enable-snyk-code)
 
 ### [Retrieves the SAST settings for an org](../reference/sastsettings.md#orgs-org_id-settings-sast-1)
 

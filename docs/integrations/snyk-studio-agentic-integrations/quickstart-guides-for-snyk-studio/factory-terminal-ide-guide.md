@@ -42,7 +42,7 @@ Snyk Code analyzes your code for vulnerabilities, temporarily clones the reposit
 With the Snyk Free Plan, Snyk Code offers unlimited scans for Open Source Projects, and limited tests for first-party code. To learn more about our available plans, visit [Plans and Pricing](https://snyk.io/plans/).
 {% endhint %}
 
-For existing user&#x73;_,_ select the login method associated with your account. If you do not already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also enable it directly in the Snyk settings. To learn more, visit [Enable Snyk Code](/broken/pages/0dMWUuicl71g7r1ziVoJ).
+For existing user&#x73;_,_ select the login method associated with your account. If you do not already have access to Snyk Code, your LLM prompts you to enable it prior to your first scan. You can also enable it directly in the Snyk settings. To learn more, visit [Enable Snyk Code](../../../implementation-and-setup/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools.md#enable-snyk-code).
 
 ### Run Snyk Studio
 
