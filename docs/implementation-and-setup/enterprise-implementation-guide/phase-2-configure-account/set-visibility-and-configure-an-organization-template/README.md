@@ -3,7 +3,7 @@
 Whether you want to create a single Organization or build a template to create multiple Organizations, there are some initial settings you should configure.
 
 {% hint style="info" %}
-For importing Projects, see the [Import Projects](../../phase-3-gain-visibility/import-projects.md) and [Rollout](../../phase-5-initial-rollout-to-team/) discussions
+For importing Projects, see the [Import Projects](../../phase-3-gain-visibility/import-projects.md) and [Rollout](../../initial-team-rollout.md) discussions
 {% endhint %}
 
 ## Create your Organization structure using a template
@@ -26,7 +26,7 @@ In your template Organization, configure a range of settings that you can choose
 * All relevant integrations, for example, GitHub Enterprise, Docker Hub.\
   Note: If you have on-premise source code management tools, you must configure and run [Snyk Broker](../../../enterprise-setup/snyk-broker/) to enable the integration.
 * Integration settings, for example, configuring whether you want Snyk to run tests on PRs.
-  * The default settings for a new Git repository integration include Snyk running tests on newly raised PRs and the option to automatically raise PRs when new vulnerabilities are found. Snyk recommends disabling these settings initially and turning them on when you are ready to introduce these features in the [Prevention Stage](../../phase-6-rolling-out-the-prevention-stage.md).
+  * The default settings for a new Git repository integration include Snyk running tests on newly raised PRs and the option to automatically raise PRs when new vulnerabilities are found. Snyk recommends disabling these settings initially and turning them on when you are ready to introduce these features in the [Prevention Stage](../../phase-6-rolling-out-the-prevention-stage/).
   * The following [Integrations](configure-integrations.md) section discusses integrations you may want to add to your templates before copying them.
 * Product settings, for example, enabling Snyk Code.
   * By default, Snyk Code is disabled for new Organizations.

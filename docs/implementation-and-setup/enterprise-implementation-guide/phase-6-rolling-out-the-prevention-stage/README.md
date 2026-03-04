@@ -4,12 +4,12 @@ Once you have visibility into your existing security posture, implement preventi
 
 Implementing prevention measures involves the following key stages:
 
-1. [Define prevention methods:](phase-6-rolling-out-the-prevention-stage.md#define-prevention-methods) Choose between Pull Request (PR) checks and CI/CD pipeline gating.
-2. [Establish exception processes:](phase-6-rolling-out-the-prevention-stage.md#establish-exception-processes) Create clear workflows for handling blocked builds or PRs.
-3. [Configure PR/MR checks:](phase-6-rolling-out-the-prevention-stage.md#configure-pr-mr-checks) Set up automated scanning for code changes in your source control manager (SCM).
-4. [Integrate with CI/CD pipelines:](phase-6-rolling-out-the-prevention-stage.md#integrate-with-ci-cd-pipelines) Add Snyk tests to your build process as a final gate.
-5. [Secure custom images and IaC:](phase-6-rolling-out-the-prevention-stage.md#secure-custom-images-and-iac) Apply prevention to containers and infrastructure as code.
-6. [Announce changes:](phase-6-rolling-out-the-prevention-stage.md#announce-prevention-measures) Use templates to inform developers about upcoming gating.
+1. [Define prevention methods:](./#define-prevention-methods) Choose between Pull Request (PR) checks and CI/CD pipeline gating.
+2. [Establish exception processes:](./#establish-exception-processes) Create clear workflows for handling blocked builds or PRs.
+3. [Configure PR/MR checks:](./#configure-pr-mr-checks) Set up automated scanning for code changes in your source control manager (SCM).
+4. [Integrate with CI/CD pipelines:](./#integrate-with-ci-cd-pipelines) Add Snyk tests to your build process as a final gate.
+5. [Secure custom images and IaC:](./#secure-custom-images-and-iac) Apply prevention to containers and infrastructure as code.
+6. [Announce changes:](./#announce-prevention-measures) Use templates to inform developers about upcoming gating.
 
 ## Define prevention methods
 

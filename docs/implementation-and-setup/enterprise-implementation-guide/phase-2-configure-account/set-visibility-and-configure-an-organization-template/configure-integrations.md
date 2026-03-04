@@ -3,7 +3,7 @@
 ## Configure your SDLC Integration Points (IDE, Git repo, CI/CD, Container Registry)
 
 {% hint style="info" %}
-For information about importing Projects, see [Import Projects](../../phase-3-gain-visibility/import-projects.md) and [Rollout](../../phase-5-initial-rollout-to-team/).
+For information about importing Projects, see [Import Projects](../../phase-3-gain-visibility/import-projects.md) and [Rollout](../../initial-team-rollout.md).
 {% endhint %}
 
 When you create your Organizations, you must decide where to add Snyk in your Software Development Lifecycle (SDLC).

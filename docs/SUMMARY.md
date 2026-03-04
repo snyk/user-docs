@@ -93,12 +93,8 @@
     * [Set up Asset Policies](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/set-up-snyk-apprisk-policies.md)
     * [Import Projects](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/import-projects.md)
     * [Add Project tags and attributes](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/add-project-tags-and-attributes.md)
-  * [Phase 5: Initial rollout to team](implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/README.md)
-    * [Notifying the team](implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/notifying-the-team.md)
-    * [Announcement templates for initial rollout](implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/announcement-templates-for-initial-rollout.md)
-    * [Developer training from Snyk](implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/developer-training-from-snyk.md)
-    * [Engage development with IDE plugins](implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/engage-development-with-ide-plugins.md)
-  * [Automate prevention measures](implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage.md)
+  * [Initial team rollout](implementation-and-setup/enterprise-implementation-guide/initial-team-rollout.md)
+  * [Automate prevention measures](implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/README.md)
   * [Manage and remediate issues](implementation-and-setup/enterprise-implementation-guide/phase-7-triages-ignores-and-fixes.md)
 
 ## Supported languages
