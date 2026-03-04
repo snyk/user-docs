@@ -4,10 +4,10 @@
 
 [Snyk Pull Request(PR)/Merge Request (MR) Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) allow you to prevent new security issues from entering your codebase, by automatically scanning code changes when you submit a pull request (PR). PR Checks are available for open-source vulnerabilities, license compliance issues, and your own code issues.
 
-If you import Projects through a source control integration, then Snyk Open Source and Snyk Code PR Checks is a good place to start introducing gating.&#x20;
+If you import Projects through a source control integration, then Snyk Open Source and Snyk Code PR Checks is a good place to start introducing gating.
 
 {% hint style="info" %}
-Snyk recommendes announcing the changes prior to rolling out the changes. See [Announcement Templates](../../enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/announcement-templates-for-prevention.md) for examples of how to message your developers.
+Snyk recommendes announcing the changes prior to rolling out the changes. See [Announcement Templates](/broken/pages/zWWFEhW6L2nkiqyvXr40) for examples of how to message your developers.
 {% endhint %}
 
 ### Implementing Open Source PR Checks
@@ -35,7 +35,7 @@ When you first enable this feature, Snyk suggests selecting **High** if an issue
 
 It is common to have a phased rollout of these features. Using PR checks as an example:
 
-* You may initially run Snyk tests and set, via your source control settings, as optional checks. The results are displayed, but the developer is not blocked from merging the PR.&#x20;
-* Over time, as developers adapt to seeing these results and begin addressing the high issues proactively, you can choose to start blocking PRs from being merged if there are any new highest severity issues or, in the case of Snyk Open Source, if a fix is available.&#x20;
+* You may initially run Snyk tests and set, via your source control settings, as optional checks. The results are displayed, but the developer is not blocked from merging the PR.
+* Over time, as developers adapt to seeing these results and begin addressing the high issues proactively, you can choose to start blocking PRs from being merged if there are any new highest severity issues or, in the case of Snyk Open Source, if a fix is available.
 
 This phased rollout helps to decrease friction between your security and development teams.

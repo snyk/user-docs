@@ -98,12 +98,7 @@
     * [Announcement templates for initial rollout](implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/announcement-templates-for-initial-rollout.md)
     * [Developer training from Snyk](implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/developer-training-from-snyk.md)
     * [Engage development with IDE plugins](implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/engage-development-with-ide-plugins.md)
-  * [Phase 6: Rolling out the prevention stage](implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/README.md)
-    * [Enable and configure Snyk on PRs](implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/enable-and-configure-snyk-on-prs.md)
-    * [Add and configure Snyk in your CI/CD pipeline](implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/add-and-configure-snyk-in-your-ci-cd-pipeline.md)
-    * [Custom base images](implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/custom-base-images.md)
-    * [Infrastructure as Code](implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/infrastructure-as-code.md)
-    * [Announcement templates for prevention](implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/announcement-templates-for-prevention.md)
+  * [Automate prevention measures](implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage.md)
   * [Manage and remediate issues](implementation-and-setup/enterprise-implementation-guide/phase-7-triages-ignores-and-fixes.md)
 
 ## Supported languages
