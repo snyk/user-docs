@@ -41,10 +41,10 @@ To learn more, visit [Authentication and access](authentication-and-access.md).
 {% hint style="success" %}
 **Key decisions:**&#x20;
 
-* **Architecture and connectivity:** Select your primary SCM platform and identify where your production container registries (e.g., Docker Hub, Amazon ECR) reside. Determine if you need to deploy Snyk Broker (via Docker or Kubernetes) to securely bypass firewalls, segment network traffic, or if you require custom proxy/CA configurations.
+* **Architecture and connectivity:** Select your primary SCM platform and identify where your production container registries (for example, Docker Hub, Amazon ECR) reside. Determine if you need to deploy Snyk Broker (using Docker or Kubernetes) to securely bypass firewalls, segment network traffic, or if you require custom proxy/CA configurations.
 * **Authentication and access management:** Commit to using dedicated, least-privilege service accounts rather than personal tokens (OAuth/PAT) to guarantee stable connections. Decide whether to use broad, centralized Group-level credentials for global asset discovery or require unique tokens at the Organization level. Verify you have the correct administrative roles to manage this inventory.
 * **Developer workflow & remediation:** Define your PR check behaviors and automated fix strategies to match specific team workflows. Establish a monitoring frequency that provides adequate security visibility without overwhelming your developers' capacity to remediate.
-* **Snyk Code enablement:** Decide whether to roll out Snyk Code globally or phase it in for high-priority teams. Crucial:You must enable Snyk Code _before_ importing your first projects. If managing at a massive scale, plan to use the Snyk API rather than the UI for this step.
+* **Snyk Code enablement:** Decide whether to roll out Snyk Code globally or phase it in for high-priority teams. It's crucial to enable Snyk Code before importing your first Projects. If managing at a massive scale, plan to use the Snyk API rather than the UI for this step.
 * **Project import strategy:** Choose the import method that provides the best dependency resolution for your specific programming languages to ensure accurate scanning.
 {% endhint %}
 
