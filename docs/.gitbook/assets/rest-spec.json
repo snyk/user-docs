@@ -14167,25 +14167,30 @@
           "author": {
             "description": "Author of the layer",
             "maxLength": 128,
+            "nullable": true,
             "type": "string"
           },
           "comment": {
             "description": "Comment for the layer",
             "maxLength": 4096,
+            "nullable": true,
             "type": "string"
           },
           "created_at": {
             "description": "When the layer was created",
             "format": "date-time",
+            "nullable": true,
             "type": "string"
           },
           "created_by": {
             "description": "Command that created the layer",
             "maxLength": 128,
+            "nullable": true,
             "type": "string"
           },
           "empty_layer": {
             "description": "Whether this is an empty layer (metadata-only)",
+            "nullable": true,
             "type": "boolean"
           }
         },
@@ -14272,6 +14277,7 @@
         "properties": {
           "args_escaped": {
             "description": "Whether args are escaped (Windows)",
+            "nullable": true,
             "type": "boolean"
           },
           "cmd": {
@@ -14281,6 +14287,7 @@
               "type": "string"
             },
             "maxItems": 500,
+            "nullable": true,
             "type": "array"
           },
           "entry_point": {
@@ -14290,6 +14297,7 @@
               "type": "string"
             },
             "maxItems": 500,
+            "nullable": true,
             "type": "array"
           },
           "env": {
@@ -14299,6 +14307,7 @@
               "type": "string"
             },
             "maxItems": 500,
+            "nullable": true,
             "type": "array"
           },
           "exposed_ports": {
@@ -14309,6 +14318,7 @@
               "type": "string"
             },
             "maxItems": 500,
+            "nullable": true,
             "type": "array"
           },
           "labels": {
@@ -14322,11 +14332,13 @@
           "stop_signal": {
             "description": "Signal to stop the container",
             "maxLength": 128,
+            "nullable": true,
             "type": "string"
           },
           "user": {
             "description": "User that runs the container",
             "maxLength": 1024,
+            "nullable": true,
             "type": "string"
           },
           "volumes": {
@@ -14336,11 +14348,13 @@
               "type": "string"
             },
             "maxItems": 500,
+            "nullable": true,
             "type": "array"
           },
           "working_dir": {
             "description": "Working directory",
             "maxLength": 1024,
+            "nullable": true,
             "type": "string"
           }
         },
