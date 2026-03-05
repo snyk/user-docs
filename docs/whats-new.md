@@ -7,6 +7,34 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## February 2026
+
+### **Snyk CLI**
+
+* [Container SBOM](developer-tools/snyk-cli/commands/container-sbom.md) has been updated with additional options.&#x20;
+* The Snyk CLI latest release version is [v1.1303.0](https://github.com/snyk/cli/releases/tag/v1.1303.1).&#x20;
+
+### **Snyk Open Source**
+
+* [Breakability risk levels](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/breakability-risk-levels.md) is now in Early Access.
+* Improved .NET scanning is now a General Availability feature. The [.NET (C# and VB.NET](supported-languages/supported-languages-list/.net/) section has been updated to reflect this change.
+
+### **Snyk supported languages**
+
+* [Python](supported-languages/supported-languages-list/python/) has been updated to include support for Python version 3.12 for Snyk Code.
+* Snyk Code now supports C# 14 and .NET 10, Kotlin and Java (including Spring WebFlux and JAX-RS), JavaScript and TypeScript (including Sequelize), Go (including Fiber), and Swift (including grpc-swift).
+* Ruby 4.0 is supported in Snyk Code, starting with core parser improvements and stronger handling of Ruby modules.&#x20;
+
+### **Snyk Studio**
+
+* A [`snyk_package_health_check` directive](integrations/snyk-studio-agentic-integrations/directives.md#secure-at-inception-package-health-check-experimental) has been added to assist you in evaluating open-source packages for security vulnerabilities, maintenance health, community engagement, and popularity. Snyk has provided a secure dependency health check skill with a sample script and an enforce security scan on new packages hook with a sample script to integrate the `snyk_package_health_check` into your workflow.
+* Additional guidance on [available MCP profile types](integrations/snyk-studio-agentic-integrations/getting-started-with-snyk-studio.md#configure-the-snyk-mcp-profile) and their applicable tools, with configuration instructions, has been added.
+
+### **Other updates**
+
+* Updated documentation references and rule mappings from OWASP Top 10 (2021) to the OWASP Top 10 (2025) revision. This keeps security-category labels and cross-references aligned with the  OWASP taxonomy.
+* [Broker Contexts](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/broker-context.md) was released for Universal Broker, including how contexts help segment and route Broker connections across environments and Organizations. This improves guidance for running multiple Broker deployments with clearer isolation.
+
 ## January 2026
 
 ### Snyk Code
