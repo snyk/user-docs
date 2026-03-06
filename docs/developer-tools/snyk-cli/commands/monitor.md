@@ -99,6 +99,8 @@ Default: false
 
 Print the dependency tree before sending it for analysis.
 
+The output includes Snyk-specific component properties for each dependency. For npm and Yarn projects, each dependency includes a `snyk:npm:scope` property (`prod`, `dev`, or `unknown`). For Maven projects, each dependency includes a `snyk:maven:build_scope` property (`compile`, `provided`, `runtime`, `test`, `system`, or `unknown`). For details, see [Snyk-specific SBOM component properties](sbom.md#snyk-specific-sbom-component-properties).
+
 ### `--remote-repo-url=<URL>`
 
 Set or override the remote URL for the repository.
