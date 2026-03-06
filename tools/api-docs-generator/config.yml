@@ -8,6 +8,11 @@ specs:
 - path: docs/.gitbook/assets/rest-spec.json
   docsHint: This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
 categoryContext:
+- name: organizations-v1
+  hint: |
+    {% hint style="info" %}
+    Code Consistent Ignores, used in org-level policies, are only available in the REST API.
+    {% endhint %}
 - name: dependencies-v1
   hint: |
     Dependencies are packages or modules that your Projects depend on.
