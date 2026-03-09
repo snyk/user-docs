@@ -1,12 +1,13 @@
 # Running your Universal Broker client
 
-Prerequisites:
-Ensure you have the following environment variables set before running the Broker Client:
-  - DEPLOYMENT_ID, CLIENT_ID, CLIENT_SECRET
-  - Any integration credentials required by your connections (e.g. GITHUB_TOKEN)
+{% hint style="info" %}
+Ensure you have all of the [prerequisites](prerequisites-for-universal-broker.md) before running the Broker Client:
+  - The DEPLOYMENT_ID, CLIENT_ID, CLIENT_SECRET for your Broker Deployment
+  - A credential reference associated with your deployment
+  - Valid integration credentials required by your connections (e.g. GITHUB_TOKEN)
+{% endhint %}
 
 If references are missing, the connection will not be established, and an error entry will be logged in the Broker client logs.
-
 
 Run your Broker deployment on your container engine (see example Docker Compose file below) or Kubernetes cluster.
 
@@ -16,32 +17,21 @@ If you are not using broker.snyk.io, target the Broker server for your region by
 
 ### Usage 
 
-1. Copy this file to docker-compose.yml
-2. Create a .env file with required and optional variables:
-
+1. Create a .env file with required and optional configuration variables:
+```bash
   DEPLOYMENT_ID=<your-deployment-id>
-
   CLIENT_ID=<your-client-id>
-
   CLIENT_SECRET=<your-client-secret>
-
   PORT=8000
-
-  Add any credentials your integrations need, for example:
-
-  GITHUB_TOKEN=<secret>
-
-  Optional: override for EU or other environments
-
+  # Add any credentials your integrations need, for example:
+  MY_GITHUB_TOKEN=<secret>
+  # Optional: override for EU or other environments
   BROKER_SERVER_URL=https://broker.eu.snyk.io
-
   BROKER_DISPATCHER_BASE_URL=https://api.eu.snyk.io
-
-3. Run: docker compose up -d
-
-### Example Docker Compose file
-
 ```
+2. Copy this example file to docker-compose.yaml
+
+```yaml
 services:
   snyk-broker-universal-1:
     image: snyk/broker:universal
@@ -50,7 +40,6 @@ services:
       CLIENT_ID: ${CLIENT_ID}
       CLIENT_SECRET: ${CLIENT_SECRET}
       PORT: ${PORT:-8000}
-      BROKER_HA_MODE_ENABLED: "true"
       BROKER_SERVER_URL: ${BROKER_SERVER_URL:-https://broker.snyk.io}
       BROKER_DISPATCHER_BASE_URL: ${BROKER_DISPATCHER_BASE_URL:-https://api.snyk.io}
       GITHUB_TOKEN: ${MY_GH_TOKEN}
@@ -69,7 +58,6 @@ services:
       CLIENT_ID: ${CLIENT_ID}
       CLIENT_SECRET: ${CLIENT_SECRET}
       PORT: ${PORT:-8000}
-      BROKER_HA_MODE_ENABLED: "true"
       BROKER_SERVER_URL: ${BROKER_SERVER_URL:-https://broker.snyk.io}
       BROKER_DISPATCHER_BASE_URL: ${BROKER_DISPATCHER_BASE_URL:-https://api.snyk.io}
       GITHUB_TOKEN: ${MY_GH_TOKEN}
@@ -79,6 +67,7 @@ services:
       - "${EXTERNAL_PORT_2:-8001}:${PORT:-8000}"
     restart: unless-stopped
 ```
+3. Run `docker compose up -d` to start the containers
 
 ## Helm
 
