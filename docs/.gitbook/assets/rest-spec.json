@@ -7647,7 +7647,7 @@
                     "type": "string"
                   },
                   "sort": {
-                    "description": "Comma-separated sort fields. Prefix with `-` for descending order.\nSupports: created_at, updated_at, type, asset_class, registry, name, url, scm\n",
+                    "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n",
                     "example": "-created_at",
                     "type": "string"
                   }
@@ -14184,7 +14184,7 @@
           },
           "created_by": {
             "description": "Command that created the layer",
-            "maxLength": 128,
+            "maxLength": 4096,
             "nullable": true,
             "type": "string"
           },
@@ -19238,7 +19238,7 @@
         "description": "Attributes of the project resource",
         "properties": {
           "is_canonical": {
-            "description": "Indicates whether this project is the canonical project for its target_file.\nProjects are grouped by target_file, and within each group, the project with the most\nrecent snapshot_created_at timestamp is marked as canonical. This canonical project\nis used for computing vulnerability counts for the asset.\n",
+            "description": "Indicates whether this project is the canonical project for its target_file.\nProjects are grouped by target_file, and within each group, the project with the most\nrecent snapshot_created_at timestamp is marked as canonical. This canonical project\nis used for computing vulnerability counts for the asset.\nWhen target_file is empty, each project is its own group (always canonical).\n",
             "type": "boolean"
           },
           "issues": {
@@ -26978,7 +26978,7 @@
         },
         "summary": "List or search all assets (synchronous) - Group scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -27066,7 +27066,7 @@
         },
         "summary": "Bulk update asset attributes - Group scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -27186,7 +27186,7 @@
         },
         "summary": "Get available filter fields - Group scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -27337,7 +27337,7 @@
         },
         "summary": "Get filter value suggestions (autocomplete) - Group scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -27456,7 +27456,7 @@
         },
         "summary": "Get available group fields - Group scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -27596,7 +27596,7 @@
         },
         "summary": "Get group value aggregation - Group scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -27702,7 +27702,7 @@
         },
         "summary": "Create an asset search (asynchronous) - Group scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -27821,7 +27821,7 @@
         },
         "summary": "Retrieve asset search results (asynchronous) - Group scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -27939,7 +27939,7 @@
         },
         "summary": "Get a single asset by ID - Group scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -28070,7 +28070,7 @@
         },
         "summary": "Update asset attributes - Group scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -28216,7 +28216,7 @@
         },
         "summary": "List projects for an asset (group scope) (Early Access)",
         "tags": [
-          "Asset Projects"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -28340,7 +28340,7 @@
         },
         "summary": "List targets for an asset (group scope) (Early Access)",
         "tags": [
-          "Asset Targets"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -43212,7 +43212,7 @@
         },
         "summary": "List or search all assets (synchronous) - Org scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -43300,7 +43300,7 @@
         },
         "summary": "Bulk update asset attributes - Org scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -43420,7 +43420,7 @@
         },
         "summary": "Get available filter fields - Org scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -43571,7 +43571,7 @@
         },
         "summary": "Get filter value suggestions (autocomplete) - Org scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -43690,7 +43690,7 @@
         },
         "summary": "Get available group fields - Org scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -43830,7 +43830,7 @@
         },
         "summary": "Get group value aggregation - Org scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -43936,7 +43936,7 @@
         },
         "summary": "Create an asset search (asynchronous) - Org scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -44055,7 +44055,7 @@
         },
         "summary": "Retrieve asset search results (asynchronous) - Org scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -44173,7 +44173,7 @@
         },
         "summary": "Get a single asset by ID - Org scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -44304,7 +44304,7 @@
         },
         "summary": "Update asset attributes - Org scope (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -44450,7 +44450,7 @@
         },
         "summary": "List projects for an asset (org scope) (Early Access)",
         "tags": [
-          "Asset Projects"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -44574,7 +44574,7 @@
         },
         "summary": "List targets for an asset (org scope) (Early Access)",
         "tags": [
-          "Asset Targets"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -85234,7 +85234,7 @@
             "$ref": "#/components/parameters/RsqlFilter"
           },
           {
-            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `registry` - Container image registry (container images only)\n- `name` - Container image name (container images only)\n\nAsset-specific fields will group results by type naturally.\n",
+            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n",
             "example": "-created_at",
             "in": "query",
             "name": "sort",
@@ -85324,7 +85324,7 @@
         },
         "summary": "List or search all assets (synchronous) (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -85412,7 +85412,7 @@
         },
         "summary": "Bulk update asset attributes (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -85532,7 +85532,7 @@
         },
         "summary": "Get available filter fields (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -85683,7 +85683,7 @@
         },
         "summary": "Get filter value suggestions (autocomplete) (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -85803,7 +85803,7 @@
         },
         "summary": "Get available group fields (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -85943,7 +85943,7 @@
         },
         "summary": "Get group value aggregation (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -86049,7 +86049,7 @@
         },
         "summary": "Create an asset search (asynchronous) (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -86090,7 +86090,7 @@
             }
           },
           {
-            "description": "Comma-separated sort fields (prefix with - for descending, e.g., -created_at,updated_at).\nSupports: created_at, updated_at, type, class, registry, name, url, scm\n",
+            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n",
             "in": "query",
             "name": "sort",
             "schema": {
@@ -86169,7 +86169,7 @@
         },
         "summary": "Retrieve asset search results (asynchronous) (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -86288,7 +86288,7 @@
         },
         "summary": "Get a single asset by ID (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -86419,7 +86419,7 @@
         },
         "summary": "Update asset attributes (Early Access)",
         "tags": [
-          "Assets V2"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -86565,7 +86565,7 @@
         },
         "summary": "List projects for an asset (Early Access)",
         "tags": [
-          "Asset Projects"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -86689,7 +86689,7 @@
         },
         "summary": "List targets for an asset (Early Access)",
         "tags": [
-          "Asset Targets"
+          "Inventory Assets"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
