@@ -35,6 +35,6 @@ In the Snyk API, an import request returns this error:
 
 ## What to do when you are near the maximum number of Projects
 
-This limit is in place to protect your experience with Snyk. There are no restrictions on the number of Organizations you can create.
+This limit is in place to protect your experience with Snyk. On the Enterprise plan, there are no restrictions on the number of Organizations you can create. On the Free and Team plans, you can create up to five Organizations in your Tenant.
 
-If you are getting close to these limits, you can create more Organizations and split your Projects across them.
+If you are getting close to these limits, consider creating additional Organizations and splitting your Projects across them.

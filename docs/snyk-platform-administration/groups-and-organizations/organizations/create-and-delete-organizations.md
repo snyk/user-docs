@@ -4,7 +4,7 @@ You can use Organization-level options to [create](create-and-delete-organizatio
 
 ## Create an Organization
 
-You can have an unlimited number of Organizations on Snyk. Your Organizations can be on different pricing plans.
+The number of Organizations you can create depends on your [pricing plan](https://snyk.io/plans/). On the Free and Team plans, you can create up to five Organizations in your Tenant. On the Enterprise plan, you can create an unlimited number of Organizations.
 
 {% hint style="info" %}
 When you are satisfied with the settings and integrations for an Organization, you can copy its settings and use them when you create additional Organizations.
