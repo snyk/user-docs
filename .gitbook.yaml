@@ -225,3 +225,4 @@ redirects:
   implementation-and-setup/enterprise-implementation-guide/phase-4-create-a-fix-strategy: implementation-and-setup/enterprise-implementation-guide/phase-7-triages-ignores-and-fixes.md
   supported-languages/supported-languages-list/.net/improved-.net-scanning: supported-languages/supported-languages-list/.net/README.md
   snyk-api/reference/assets-v2: snyk-api/reference/inventory-assets.md
+  manage-risk/reporting/available-snyk-reports: manage-risk/analytics/reports-tab/README.md
