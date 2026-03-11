@@ -96,9 +96,9 @@ Snyk resolves runtime dependencies (or meta-packages) more accurately when the h
 
 ### Dependency analysis using SCM integrations
 
-In the .NET ecosystem, there are multiple levels of dependencies, some of which are obvious and some are completely hidden to a developer. To correctly identify the vulnerabilities for a given .NET application, these dependencies must be resolved accurately.
+Snyk resolves dependencies to identify vulnerabilities in .NET applications. The .NET ecosystem includes multiple dependency levels, including those not visible to developers.
 
-Snyk excludes developer dependencies by default because they are rarely deployed to production. This reduces noise in your scan results.
+By default, Snyk excludes developer dependencies to reduce noise in scan results, since you rarely deploy them to production.
 
 To include developer dependencies in NuGet SCM imports, navigate to **Settings** > **Languages** > **.NET**.
 
