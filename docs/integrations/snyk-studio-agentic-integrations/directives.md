@@ -129,7 +129,7 @@ To use them:
 
 1. Clone or download the repository.
 2. Copy the skill or hook directory into your project's `.cursor/` configuration.
-3. Ensure the [Snyk MCP server](https://docs.snyk.io/integrations/snyk-studio-agentic-integrations/getting-started-with-snyk-studio) is configured, and you have an authenticated Snyk account.
+3. Ensure the [Snyk MCP server](getting-started-with-snyk-studio.md) is configured, and you have an authenticated Snyk account.
 
 </details>
 

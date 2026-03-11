@@ -55,7 +55,7 @@ The configuration settings apply to all Projects in that Organization. You can a
 PR Checks that are configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and, therefore, will not alert for projects in languages that do not support FixPR Checks.
 
 {% hint style="info" %}
-A PR test is configured to be optional or blocking within your source control management platform, such as GitHub’s branch protection rules. To learn more on issue prevention, visit [Phase 6: Rolling out the prevention stage](../../../implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/).
+A PR test is configured to be optional or blocking within your source control management platform, such as GitHub’s branch protection rules. To learn more on issue prevention, visit [Phase 6: Rolling out the prevention stage](../../../implementation-and-setup/enterprise-implementation-guide/automate-prevention-measures.md).
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/enable analyze code.png" alt="PR check settings to analyze code issues."><figcaption><p>PR check settings to analyze code issues</p></figcaption></figure>

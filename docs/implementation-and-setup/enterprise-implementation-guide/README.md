@@ -15,8 +15,8 @@ To have a successful Snyk rollout, you need to:
    3. [Connect your development tools](create-a-template-organization/connect-your-development-tools.md).
 4. [Create your Snyk structure](create-your-snyk-structure.md).
 5. [Gain issues visibility with Projects](phase-3-gain-visibility/).
-6. [Initial team rollout](phase-5-initial-rollout-to-team/).
-7. [Automate prevention measures](phase-6-rolling-out-the-prevention-stage/).
+6. [Initial team rollout](initial-team-rollout.md).
+7. [Automate prevention measures](automate-prevention-measures.md).
 
 By the end of this guide, you will have successfully configured a baseline template Org, used it to easily copy your global settings and integrations to provision new Organizations, and learned how to customize individual settings in those new environments to support specific team workflows.
 
@@ -116,7 +116,7 @@ Next, empower your developers with persona-specific training through Snyk Learn 
 
 Finally, reinforce a shift-left security strategy by deploying Snyk IDE plugins, equipping developers to find and fix vulnerabilities directly within their preferred coding environment before the code ever reaches the CI/CD pipeline.
 
-To learn more, visit [Initial team rollout](phase-5-initial-rollout-to-team/).
+To learn more, visit [Initial team rollout](initial-team-rollout.md).
 
 ## Automate prevention measures
 
@@ -124,4 +124,4 @@ Drive user adoption and secure coding practices by thoughtfully introducing Snyk
 
 By combining clear communication, tailored training through Snyk Learn, and the deployment of IDE plugins, you can empower your developers to actively find and fix vulnerabilities directly within their daily workflows.
 
-To learn more, visit [Automate prevention measures](phase-6-rolling-out-the-prevention-stage/).
+To learn more, visit [Automate prevention measures](automate-prevention-measures.md).

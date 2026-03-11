@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-Breakability analysis is in Early Access and available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
+Breakability analysis is in Early Access and available only with Enterprise plans. To enable the feature, see [Snyk Preview](../../../snyk-platform-administration/snyk-preview.md).
 {% endhint %}
 
 Snyk analyzes dependency upgrades to predict if a proposed change will break your build or application. Breakability analysis assigns a risk level to each upgrade to help you decide whether to auto-merge a fix or review it manually.

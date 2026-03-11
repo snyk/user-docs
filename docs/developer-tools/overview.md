@@ -43,5 +43,5 @@ This section covers:
 This section provides setup guidance, including authentication, proxy, workspace trust settings, and troubleshooting steps for each IDE.
 
 {% hint style="warning" %}
-Snyk IDE plugins and extensions rely on the [Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli) and the Snyk Vulnerability Database to perform many functions. Visit the individual IDE documentation for more information.
+Snyk IDE plugins and extensions rely on the [Snyk CLI](snyk-cli/) and the Snyk Vulnerability Database to perform many functions. Visit the individual IDE documentation for more information.
 {% endhint %}

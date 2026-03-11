@@ -79,9 +79,9 @@
     * [Connect your development tools](implementation-and-setup/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools.md)
   * [Create your Snyk structure](implementation-and-setup/enterprise-implementation-guide/create-your-snyk-structure.md)
   * [Gain visibility by importing repositories](implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/README.md)
-  * [Initial team rollout](implementation-and-setup/enterprise-implementation-guide/phase-5-initial-rollout-to-team/README.md)
-  * [Automate prevention measures](implementation-and-setup/enterprise-implementation-guide/phase-6-rolling-out-the-prevention-stage/README.md)
-  * [Manage and remediate issues](implementation-and-setup/enterprise-implementation-guide/phase-7-triages-ignores-and-fixes.md)
+  * [Initial team rollout](implementation-and-setup/enterprise-implementation-guide/initial-team-rollout.md)
+  * [Automate prevention measures](implementation-and-setup/enterprise-implementation-guide/automate-prevention-measures.md)
+  * [Manage and remediate issues](implementation-and-setup/enterprise-implementation-guide/manage-and-remediate-issues.md)
   * [Trial limitations](implementation-and-setup/enterprise-implementation-guide/trial-limitations.md)
 
 ## Supported languages

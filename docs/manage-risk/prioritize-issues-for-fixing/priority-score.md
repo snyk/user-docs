@@ -22,7 +22,7 @@ You can filter issues by Priority Score range in the left sidebar.
 
 ## View issues by Priority Score
 
-The **Issues** tab on the Project details allows you to filter issues by Priority Score. You can find more details on how to filter your issues on the [Manage and remediate issues](../../implementation-and-setup/enterprise-implementation-guide/phase-7-triages-ignores-and-fixes.md) page.
+The **Issues** tab on the Project details allows you to filter issues by Priority Score. You can find more details on how to filter your issues on the [Manage and remediate issues](../../implementation-and-setup/enterprise-implementation-guide/manage-and-remediate-issues.md) page.
 
 ## View Priority Score in the Snyk API
 

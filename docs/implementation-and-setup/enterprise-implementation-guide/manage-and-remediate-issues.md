@@ -4,10 +4,10 @@ After establishing visibility and prevention measures, focus on managing your ex
 
 To manage and remediate issues, follow these stages:
 
-1. [Define a fix strategy:](phase-7-triages-ignores-and-fixes.md#define-a-fix-strategy) Identify focus areas and group work by team responsibilities.
-2. [Apply prioritization filters:](phase-7-triages-ignores-and-fixes.md#prioritize-issues) Use Snyk metrics to identify the most critical issues.
-3. [Establish remediation workflows:](phase-7-triages-ignores-and-fixes.md#establish-remediation-workflows) Integrate with ticket systems like Jira and manage exceptions using the ignore feature.
-4. [Monitor adoption and progress:](phase-7-triages-ignores-and-fixes.md#monitor-adoption-and-progress) Use Snyk Reports to track resolution trends and team engagement.
+1. [Define a fix strategy:](manage-and-remediate-issues.md#define-a-fix-strategy) Identify focus areas and group work by team responsibilities.
+2. [Apply prioritization filters:](manage-and-remediate-issues.md#prioritize-issues) Use Snyk metrics to identify the most critical issues.
+3. [Establish remediation workflows:](manage-and-remediate-issues.md#establish-remediation-workflows) Integrate with ticket systems like Jira and manage exceptions using the ignore feature.
+4. [Monitor adoption and progress:](manage-and-remediate-issues.md#monitor-adoption-and-progress) Use Snyk Reports to track resolution trends and team engagement.
 
 ## Define a fix strategy
 

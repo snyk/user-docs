@@ -36,7 +36,7 @@ Select [**Issues**](../../../manage-risk/prioritize-issues-for-fixing/) to bette
 
 ### Group dependencies
 
-You can [view dependencies](../../../manage-risk/dependencies-and-licenses/view-dependencies.md) and [license information](https://docs.snyk.io/manage-risk/dependencies-and-licenses/view-licenses) for all Projects in your Group or Organization using the **Dependencies** option in your Group or Organization menu.
+You can [view dependencies](../../../manage-risk/dependencies-and-licenses/view-dependencies.md) and [license information](../../../manage-risk/dependencies-and-licenses/view-licenses.md) for all Projects in your Group or Organization using the **Dependencies** option in your Group or Organization menu.
 
 ### Group Policies
 
