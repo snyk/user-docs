@@ -16119,9 +16119,9 @@
         "description": "LocalPathLocator locates a test subject by local file paths, relative to the\nworking copy top-level directory of the source code.",
         "properties": {
           "paths": {
-            "description": "Local file paths.",
+            "description": "Local file paths. Limited to 256 characters.",
             "items": {
-              "type": "string"
+              "$ref": "#/components/schemas/String256"
             },
             "minItems": 1,
             "type": "array"
