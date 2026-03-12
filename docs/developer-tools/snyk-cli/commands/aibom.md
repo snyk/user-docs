@@ -51,6 +51,8 @@ MCP is an open standard that applications use to connect LLMs with external tool
 
 When you run `snyk aibom`, the output shows these dependencies clearly. For example, you can see a chain showing that your root application depends on an mcp-client, which depends on an mcp-server, which in turn provides a specific tool. This gives you full visibility into the services your AI application relies on.
 
+**Note:** AI-BOM scans are included for Snyk users using the Snyk CLI.
+
 ## Options
 
 ### `--experimental`
@@ -90,4 +92,3 @@ Default: `<ORG_ID>` that is the current preferred Organization in your [Account 
 ```bash
 snyk aibom --upload --repo https://github.com/[owner]/[repo]
 ```
-
