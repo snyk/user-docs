@@ -77,7 +77,7 @@ Applicable only for some package managers, for example, `devDependencies` in npm
 
 When `--dev` is used with the SPDX format, the development-only dependencies are included in the `DEV_DEPENDENCY_OF` relationship.
 
-When `--dev` is used with the CycloneDX format, development-only dependencies are not labeled differently from non-development dependencies.
+When `--dev` is used with the CycloneDX format, development-only dependencies are identified via the `snyk:npm:scope` component property with value `dev`. See [Snyk-specific SBOM component properties](sbom.md#snyk-specific-sbom-component-properties).
 
 **Note**: This option can be used with Maven, npm, and Yarn projects.
 
@@ -299,6 +299,72 @@ Use `0` (zero, the default) to disable archive extraction completely.
 Use a double dash (`--`) after the complete Snyk command to pass additional options (arguments, flags) that follow directly to the build tool, for example, Gradle or Maven.
 
 Example: `snyk sbom -- -s settings.xml`
+
+## Snyk-specific SBOM component properties
+
+Snyk enriches every component (CycloneDX) or package (SPDX) in the generated SBOM with custom properties that provide additional metadata about each dependency. These properties are present in all commands that produce SBOM output, including `snyk sbom`, `snyk test --print-deps --json`, and `snyk monitor --print-deps --json`.
+
+### CycloneDX format
+
+In CycloneDX SBOM documents, Snyk-specific properties appear in the `properties` array of each component. Example:
+
+```json
+{
+  "type": "library",
+  "name": "lodash",
+  "version": "4.17.21",
+  "purl": "pkg:npm/lodash@4.17.21",
+  "properties": [
+    {
+      "name": "snyk:npm:scope",
+      "value": "prod"
+    }
+  ]
+}
+```
+
+### SPDX format
+
+In SPDX v2.3 JSON SBOM documents, Snyk-specific properties appear as annotations on the corresponding package entry. Example:
+
+```json
+{
+  "SPDXID": "SPDXRef-lodash",
+  "name": "lodash",
+  "versionInfo": "4.17.21",
+  "annotations": [
+    {
+      "annotationType": "OTHER",
+      "annotator": "Tool: Snyk",
+      "annotationDate": "2024-01-01T00:00:00Z",
+      "comment": "snyk:npm:scope=prod"
+    }
+  ]
+}
+```
+
+### `snyk:npm:scope`
+
+For NPM, PNPM and Yarn projects, each component includes a `snyk:npm:scope` property indicating the dependency scope.
+
+| Value | Description |
+|---|---|
+| `prod` | Production dependency (`dependencies` in `package.json`) |
+| `dev` | Development-only dependency (`devDependencies` in `package.json`) |
+| `unknown` | Scope could not be determined |
+
+### `snyk:maven:build_scope`
+
+For Maven projects, each component includes a `snyk:maven:build_scope` property indicating the Maven dependency scope declared in `pom.xml`.
+
+| Value | Description |
+|---|---|
+| `compile` | Default scope; available on the classpath in all phases |
+| `provided` | Available at compile time; provided by the JDK or runtime container and not included in the final artifact |
+| `runtime` | Not required for compilation but required for execution |
+| `test` | Only required for test compilation and execution; not included in the final artifact |
+| `system` | Similar to `provided` but the dependency JAR is specified explicitly via a local path |
+| `unknown` | Scope could not be determined |
 
 ## Examples for the snyk sbom command
 
