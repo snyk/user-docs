@@ -1,30 +1,14 @@
 # High availability mode
 
-Snyk Broker can bring high availability capabilities to both servers and clients, thus increasing the scalability of the current Broker, initially to support the addition of the “git-clone-through-broker” flow for Snyk Code.
+The Snyk Broker client offers high availability capabilities by default for greater scalability of the Broker, initially to support the addition of the “git-clone-through-broker” flow for Snyk Code.
 
-High availability mode allows several Broker Clients to have separate connections, independent of one another. The Snyk platform will spread the requests it makes evenly across the connections to ease the load on each client and provide true redundancy if one is offline. High availability mode also avoids downtime in the fairly infrequent cases when Snyk upgrades the Broker server components.
+High availability mode allows you to run several Broker clients that work independently to one another. The Snyk platform will spread the requests it makes evenly across the connections to ease the load on each client and provide true redundancy if one is offline. High availability mode also avoids downtime in the fairly infrequent cases when Snyk upgrades the Broker server components.
 
 <figure><img src="../../../.gitbook/assets/snyk-broker-ha-mode.png" alt="Operation of multiple Broker clients in high availability"><figcaption><p>Operation of multiple Broker clients in high availability</p></figcaption></figure>
 
-To use high availability mode, deploy more than one replica, either by running more than one container or by increasing the replica count in your Kubernetes deployment. Each container must have the exact same parameters.
+To use high availability mode, we recommend using docker-compose to run multiple replicas (see example here) or by increasing the replica count in your Kubernetes deployment. Each container must have the exact same parameters.
 
-A maximum of four Broker Clients running concurrently in high availability mode is allowed. A fifth tunnel will attempt to connect indefinitely.
-
-## Settings to enable high availability (HA) mode
-
-High availability mode is disabled by default. To activate it, set the following environment variables as shown either in your container or deployment:
-
-```
-BROKER_HA_MODE_ENABLED=true
-```
-
-Helm chart deployments can set these values by enabling the mode using set arguments. Helm chart version 1.7.0 or later is required.
-
-```
---set highAvailabilityMode.enabled=true
-```
-
-Review the chart values file to adjust additional configurations such as increasing replica count, updating broker dispatcher base URL, and so on.
+A maximum of four Broker Clients can run concurrently in high availability mode. Running a fifth Broker Client will attempt to connect indefinitely.
 
 ## **Important notes about settings**
 
@@ -38,7 +22,7 @@ BROKER_DISPATCHER_BASE_URL=https://api.snyk.io
 
 Outbound connection to api.snyk.io or the corresponding api hostname must be allowed. Otherwise, preflight checks will indicate failure upon Broker client startup.
 
-`BROKER_CLIENT_URL` value must remain the same across all the Broker clients in the high availability set. The same BROKER\_TOKEN must also be used.\
+The `BROKER_CLIENT_URL` value must remain the same across all the Broker clients in the high availability set. The same BROKER\_TOKEN must also be used.\
 It is acceptable for this URL to resolve to a particular client.
 
 The multiple tunnels are primarily supporting Snyk=>You flow. The webhooks going You=>Snyk can take any tunnel as well.

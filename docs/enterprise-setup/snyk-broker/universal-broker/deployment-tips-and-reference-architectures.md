@@ -20,6 +20,6 @@ Contact your Snyk account team or [Snyk support](https://support.snyk.io/s/) if 
 
 ### High Availability Mode
 
-High Availability Mode for a Universal Broker deployment is enabled by default and can be disabled by by setting the `BROKER_HA_MODE_ENABLED=false` environment variable inside the container. When this mode is enabled, the Universal Broker deployment will support up to four Broker client replicas.
+High Availability Mode for a Universal Broker deployment is enabled by default, the Universal Broker deployment will support up to four Broker client replicas.
 
 For more information on High Availability Mode, please refer to the [HA mode documentation page.](../../../implementation-and-setup/enterprise-setup/snyk-broker/high-availability-mode.md)
