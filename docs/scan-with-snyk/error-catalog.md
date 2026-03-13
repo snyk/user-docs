@@ -440,7 +440,7 @@ An unexpected error occurred in the AIBOM request. Review the request while prov
 
 **Forbidden**
 
-You or your Organization do not have permission to use the AIBOM feature. Check your user permissions or contact Snyk support.
+You or your Organization do not have permission to use this AIBOM feature. Check your user permissions or contact Snyk support.
 
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
@@ -1396,6 +1396,16 @@ And try the operation again.
 **Unsupported platform**
 
 The specified platform is not supported.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+### [SNYK-OS-0012](#snyk-os-0012)
+<a id="#SNYK-OS-0012"></a>
+
+**Empty manifest file**
+
+Could not find any packages to analyze in the provided manifest file.
+Ensure the manifest file exists and includes valid dependency definitions.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -2552,6 +2562,26 @@ This often happens due to the large size of some of the Python dependencies and 
 **Help Links:**
 
 * [https://docs.snyk.io/supported-languages-package-managers-and-frameworks/python/git-repositories-and-python#pip-and-git-repositories](https://docs.snyk.io/supported-languages-package-managers-and-frameworks/python/git-repositories-and-python#pip-and-git-repositories)
+
+### [SNYK-OS-PYTHON-0013](#snyk-os-python-0013)
+<a id="#SNYK-OS-PYTHON-0013"></a>
+
+**Missing required packages**
+
+One or more required Python packages could not be resolved or were missing during dependency analysis.
+Verify that all required dependencies are declared in your manifest file and that they can be installed successfully using your package manager.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+### [SNYK-OS-PYTHON-0014](#snyk-os-python-0014)
+<a id="#SNYK-OS-PYTHON-0014"></a>
+
+**Failed to write temp files**
+
+The plugin failed to create or write temporary files required during dependency analysis.
+Ensure the process has permission to write to the system temporary directory and that sufficient disk space is available.
+
+**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 ### [SNYK-OS-RUBY-0001](#snyk-os-ruby-0001)
 <a id="#SNYK-OS-RUBY-0001"></a>
