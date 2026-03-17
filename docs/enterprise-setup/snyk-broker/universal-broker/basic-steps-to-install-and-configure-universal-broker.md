@@ -227,6 +227,7 @@ snyk/broker:universal
 When the Broker client has started, the connection is ready to use, in this case, to import repositories.
 
 * To verify that your connection is configured, check that the integration tile on your **Organization Settings** > **Integrations** page is marked **Configured**.
+* If your Snyk tenant is on a **non default Snyk environment** (anything other than SNYK-US-1) make sure to add the regional broker server url to the docker commands: -e BROKER_SERVER_URL=<[your_regional_url]([url](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency#broker-server-urls)))
 
 ## Integrate your connection with more Organizations
 
