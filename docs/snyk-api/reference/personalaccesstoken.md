@@ -8,6 +8,14 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/self/personal_access_tokens
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/self/personal_access_tokens/{personal_access_token_id}" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/self/personal_access_tokens/{personal_access_token_id} -X DELETE
+```

@@ -8,18 +8,40 @@ This document uses the v1 API, which will eventually be deprecated, as further S
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/org/{orgId}/project/{projectId}/ignores
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="put" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/org/{orgId}/project/{projectId}/ignore/{issueId} -X PUT \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/org/{orgId}/project/{projectId}/ignore/{issueId} -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/org/{orgId}/project/{projectId}/ignore/{issueId}
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/ignore/{issueId}" method="delete" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/org/{orgId}/project/{projectId}/ignore/{issueId} -X DELETE
+```

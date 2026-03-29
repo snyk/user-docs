@@ -8,22 +8,48 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/orgs/{org_id}/jobs/export/{export_id}
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/export" method="post" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/orgs/{org_id}/export -X POST \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/export/{export_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/orgs/{org_id}/export/{export_id}
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/jobs/export/{export_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/groups/{group_id}/jobs/export/{export_id}
+```
 
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/export" method="post" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/groups/{group_id}/export -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/export/{export_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/groups/{group_id}/export/{export_id}
+```

@@ -8,14 +8,32 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/orgs/{org_id}/settings/iac -X PATCH \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/settings/iac" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/orgs/{org_id}/settings/iac
+```
 
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/iac" method="patch" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/groups/{group_id}/settings/iac -X PATCH \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/iac" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/groups/{group_id}/settings/iac
+```

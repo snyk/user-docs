@@ -15,26 +15,61 @@ The rate limit is up to **70 requests per minute, per user**. All requests above
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/reporting/issues -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/issues/latest" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/reporting/issues/latest -X POST \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/tests" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/reporting/counts/tests -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/projects" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/reporting/counts/projects -X POST \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/projects/latest" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/reporting/counts/projects/latest -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/issues" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/reporting/counts/issues -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/counts/issues/latest" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/reporting/counts/issues/latest -X POST \
+  --input body.json
+```

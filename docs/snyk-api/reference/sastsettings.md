@@ -8,6 +8,15 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/orgs/{org_id}/settings/sast -X PATCH \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/settings/sast" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/orgs/{org_id}/settings/sast
+```

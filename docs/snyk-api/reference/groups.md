@@ -8,34 +8,72 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/groups
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/sso_connections" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/groups/{group_id}/sso_connections
+```
 
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/sso_connections/{sso_id}/users" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/groups/{group_id}/sso_connections/{sso_id}/users
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/sso_connections/{sso_id}/users/{user_id}" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/groups/{group_id}/sso_connections/{sso_id}/users/{user_id} -X DELETE
+```
 
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/org_memberships" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/groups/{group_id}/org_memberships
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/memberships" method="post" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/groups/{group_id}/memberships -X POST \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/memberships" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/groups/{group_id}/memberships
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/memberships/{membership_id}" method="patch" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/groups/{group_id}/memberships/{membership_id} -X PATCH \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/memberships/{membership_id}" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/groups/{group_id}/memberships/{membership_id} -X DELETE
+```

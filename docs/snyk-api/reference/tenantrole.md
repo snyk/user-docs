@@ -8,18 +8,40 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/tenants/{tenant_id}/roles -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/roles" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/tenants/{tenant_id}/roles
+```
 
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/roles/{role_id}" method="patch" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/tenants/{tenant_id}/roles/{role_id} -X PATCH \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/roles/{role_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/tenants/{tenant_id}/roles/{role_id}
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/tenants/{tenant_id}/roles/{role_id}" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/tenants/{tenant_id}/roles/{role_id} -X DELETE
+```

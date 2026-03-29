@@ -8,66 +8,145 @@ This document uses the v1 API, which will eventually be deprecated, as further S
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/test/yarn -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/sbt" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/test/sbt -X POST \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/sbt/{groupId}/{artifactId}/{version}" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/test/sbt/{groupId}/{artifactId}/{version}
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/rubygems" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/test/rubygems -X POST \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/rubygems/{gemName}/{version}" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/test/rubygems/{gemName}/{version}
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/pip" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/test/pip -X POST \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/pip/{packageName}/{version}" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/test/pip/{packageName}/{version}
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/npm" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/test/npm -X POST \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/npm/{packageName}/{version}" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/test/npm/{packageName}/{version}
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/maven" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/test/maven -X POST \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/maven/{groupId}/{artifactId}/{version}" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/test/maven/{groupId}/{artifactId}/{version}
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/gradle" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/test/gradle -X POST \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/gradle/{group}/{name}/{version}" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/test/gradle/{group}/{name}/{version}
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/govendor" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/test/govendor -X POST \
+  --input body.json
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/golangdep" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/test/golangdep -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/dep-graph" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/test/dep-graph -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/test/composer" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/test/composer -X POST \
+  --input body.json
+```

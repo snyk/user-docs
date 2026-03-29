@@ -10,6 +10,15 @@ You can use this API to import projects into Snyk. Projects imported can be Git 
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/org/{orgId}/integrations/{integrationId}/import -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/integrations/{integrationId}/import/{jobId}" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/org/{orgId}/integrations/{integrationId}/import/{jobId}
+```

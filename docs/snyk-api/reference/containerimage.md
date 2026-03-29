@@ -8,10 +8,22 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/orgs/{org_id}/container_images
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/container_images/{image_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/orgs/{org_id}/container_images/{image_id}
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/container_images/{image_id}/relationships/image_target_refs" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/orgs/{org_id}/container_images/{image_id}/relationships/image_target_refs
+```

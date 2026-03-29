@@ -8,6 +8,14 @@ This document uses the v1 API, which will eventually be deprecated, as further S
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/org/{orgId}/entitlements
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/entitlement/{entitlementKey}" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/org/{orgId}/entitlement/{entitlementKey}
+```

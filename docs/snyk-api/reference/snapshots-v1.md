@@ -8,10 +8,24 @@ This document uses the v1 API, which will eventually be deprecated, as further S
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/org/{orgId}/project/{projectId}/history -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/history/{snapshotId}/issue/{issueId}/paths" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/org/{orgId}/project/{projectId}/history/{snapshotId}/issue/{issueId}/paths
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/project/{projectId}/history/{snapshotId}/aggregated-issues" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/org/{orgId}/project/{projectId}/history/{snapshotId}/aggregated-issues -X POST \
+  --input body.json
+```

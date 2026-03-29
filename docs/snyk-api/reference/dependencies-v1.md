@@ -11,3 +11,8 @@ The rate limit is up to **150 requests per minute, per user**.
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/dependencies" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/org/{orgId}/dependencies -X POST \
+  --input body.json
+```

@@ -8,22 +8,48 @@ This document uses the v1 API, which will eventually be deprecated, as further S
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/user/{userId}
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/user/me" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/user/me
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/user/me/notification-settings/org/{orgId}" method="put" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/user/me/notification-settings/org/{orgId} -X PUT \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/user/me/notification-settings/org/{orgId}" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/user/me/notification-settings/org/{orgId}
+```
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/user/me/notification-settings/org/{orgId}/project/{projectId}" method="put" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
 
+```bash
+snyk api /v1/user/me/notification-settings/org/{orgId}/project/{projectId} -X PUT \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/user/me/notification-settings/org/{orgId}/project/{projectId}" method="get" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)
 {% endopenapi %}
+
+```bash
+snyk api /v1/user/me/notification-settings/org/{orgId}/project/{projectId}
+```

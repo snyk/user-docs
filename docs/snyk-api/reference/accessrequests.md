@@ -7,3 +7,7 @@ This document uses the REST API. For more details, see the [Authentication for A
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/self/access_requests" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/self/access_requests
+```

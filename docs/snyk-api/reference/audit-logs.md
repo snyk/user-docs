@@ -8,6 +8,14 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/orgs/{org_id}/audit_logs/search
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/audit_logs/search" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/groups/{group_id}/audit_logs/search
+```

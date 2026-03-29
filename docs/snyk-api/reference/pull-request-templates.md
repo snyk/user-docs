@@ -8,10 +8,23 @@ This document uses the REST API. For more details, see the [Authentication for A
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/groups/{group_id}/settings/pull_request_template -X POST \
+  --input body.json
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/pull_request_template" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
 
+```bash
+snyk api /rest/groups/{group_id}/settings/pull_request_template
+```
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/groups/{group_id}/settings/pull_request_template" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+```bash
+snyk api /rest/groups/{group_id}/settings/pull_request_template -X DELETE
+```

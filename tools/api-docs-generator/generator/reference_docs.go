@@ -227,8 +227,27 @@ func renderReferenceDocsPage(filePath, label, docsPath string, operation []opera
 		if err != nil {
 			return err
 		}
+
+		cmd := fmt.Sprintf("snyk api %s%s", snykAPIPrefix(op.specPath), op.pathURL)
+		if strings.ToUpper(op.method) != "GET" {
+			cmd += fmt.Sprintf(" -X %s", strings.ToUpper(op.method))
+		}
+		if op.operation.RequestBody != nil {
+			cmd += " \\\n  --input body.json"
+		}
+		_, err = fmt.Fprintf(docsFile, "\n```bash\n%s\n```\n", cmd)
+		if err != nil {
+			return err
+		}
 	}
 	return nil
+}
+
+func snykAPIPrefix(specPath string) string {
+	if strings.Contains(specPath, "v1") {
+		return "/v1"
+	}
+	return "/rest"
 }
 
 func labelToFileName(label string) string {
