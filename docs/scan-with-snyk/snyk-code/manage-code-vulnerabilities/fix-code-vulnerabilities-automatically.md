@@ -95,7 +95,7 @@ Opening the vulnerability gives us details on where the issue is and allows us t
 
 <figure><img src="../../../.gitbook/assets/image (24) (3).png" alt=""><figcaption><p>Opening the Snyk Code vulnerability panel</p></figcaption></figure>
 
-After you select Generate Fix using Snyk DeepCode AI, the system will analyze your code and generate up to five potential fixes. After you apply a fix, Snyk Agent Fix automatically retests the fix for quality using Snyk Code's engine.
+After you select **Generate AI fix**, the system will analyze your code and generate up to five potential fixes. After you apply a fix, Snyk Agent Fix automatically retests the fix for quality using Snyk Code's engine.
 
 The result, in this case, is five fixes, which you can navigate through to decide which one is best for you. The first fix is adding Helmet middleware package that disables the `X-Powered-By` header by default, preventing attackers from knowing that the app is running Express.
 

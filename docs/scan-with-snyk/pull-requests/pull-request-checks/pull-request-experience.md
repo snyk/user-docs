@@ -189,9 +189,9 @@ This can happen when a repository is imported into multiple Snyk Organisations a
 
 In some cases, commands in comment replies may fail to run in long or complex threads. This can happen because the thread's length or structure prevents us from handling the reply correctly. If you encounter this rare issue, please scroll to the first comment in the thread and reply to that with your command. This will allow us to process it successfully and always works as a fallback.
 
-### Why doesn’t applying an AI Fix work on some pull requests from forks in Bitbucket Cloud?
+### Why doesn’t applying Snyk Agent Fix work on some pull requests from forks in Bitbucket Cloud?
 
-AI Fix supports pull requests from repositories within the same workspace (e.g., `base_workspace/fork_repo` → `base_workspace/base_repo`), but it does not support pull requests from a fork located in a different workspace (e.g., `fork_workspace/fork_repo` → `base_workspace/base_repo`). This limitation is specific to the Bitbucket Cloud Connect app when the integration only has access to the base workspace. To enable AI Fix for these cross-workspace pull requests, you can switch to the Bitbucket Cloud PAT integration instead.
+Snyk Agent Fix supports pull requests from repositories within the same workspace (e.g., `base_workspace/fork_repo` → `base_workspace/base_repo`), but it does not support pull requests from a fork located in a different workspace (e.g., `fork_workspace/fork_repo` → `base_workspace/base_repo`). This limitation is specific to the Bitbucket Cloud Connect app when the integration only has access to the base workspace. To enable Snyk Agent Fix for these cross-workspace pull requests, you can switch to the Bitbucket Cloud PAT integration instead.
 
 ### I'm having trouble with the Snyk Agent Fix feature on Bitbucket Cloud. How can I debug it?
 
