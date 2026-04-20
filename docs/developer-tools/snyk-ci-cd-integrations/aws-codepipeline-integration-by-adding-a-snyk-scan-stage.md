@@ -22,7 +22,7 @@ The default Service role in AWS CodeBuild includes an IAM permission that allows
 {% endhint %}
 
 * Configure build commands:
-  * [Install the Snyk CLI](../snyk-cli/install-or-update-the-snyk-cli/) using the commands appropriate for your operating system.
+  * [Install the Snyk CLI](../snyk-cli/install-the-snyk-cli/) using the commands appropriate for your operating system.
   * Define a build command that executes the Snyk scan using the CLI.
   * Define a build command that sends a snapshot of the project to Snyk for continuous monitoring (optional).
 * Review the example `buildspec.yaml` that follows for more details:
@@ -107,4 +107,3 @@ By following these steps and considerations, you can successfully integrate Snyk
 Question: How do I store the Snyk token in AWS Secrets Manager and use it in AWS CodeBuild?
 
 If you use an AWS Secrets Manager environment variable, store your token in AWS Secrets Manager as plain text, and ensure that your AWS CodeBuild service role has the `secretsmanager:GetSecretValue` permission in IAM. Set the `value` of the environment variable in AWS CodeBuild to the `Secret name` in AWS Secrets Manager.
-

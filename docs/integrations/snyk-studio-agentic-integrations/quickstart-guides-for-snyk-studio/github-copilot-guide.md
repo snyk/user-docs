@@ -57,7 +57,7 @@ Free users are limited to a set number of scans. If you reach the allotment, Sny
 ## Prerequisites
 
 * [Install the code assistant extension](github-copilot-guide.md#install-github-copilot)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/)
 * [Install the Snyk MCP](github-copilot-guide.md#install-the-snyk-mcp-server-in-github-copilot)
 
 ### Install GitHub Copilot
@@ -127,7 +127,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/) page.
 
 The following example shows a Snyk MCP Server that was successfully configured and started.
 

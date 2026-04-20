@@ -2,6 +2,10 @@
 
 This guide section is designed to help you plan your Snyk account structure at the Organization-level to ensure efficient asset management, precise access control, and accurate reporting. This Organization will be the template you copy to create additional Organizations from which have standards settings for all your Orgs.
 
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1775661970/4._Creating_your_Template_Organization_vf1x0b.mp4" %}
+Create a template Organization video guide
+{% endembed %}
+
 Below is an outline of the key topics and decisions covered in this guide.
 
 ## Structure your account
@@ -39,7 +43,7 @@ To learn more, visit [Authentication and access](authentication-and-access.md).
 ## Connect your development tools
 
 {% hint style="success" %}
-**Key decisions:**&#x20;
+**Key decisions:**
 
 * **Architecture and connectivity:** Select your primary SCM platform and identify where your production container registries (for example, Docker Hub, Amazon ECR) reside. Determine if you need to deploy Snyk Broker (using Docker or Kubernetes) to securely bypass firewalls, segment network traffic, or if you require custom proxy/CA configurations.
 * **Authentication and access management:** Commit to using dedicated, least-privilege service accounts rather than personal tokens (OAuth/PAT) to guarantee stable connections. Decide whether to use broad, centralized Group-level credentials for global asset discovery or require unique tokens at the Organization level. Verify you have the correct administrative roles to manage this inventory.

@@ -10,6 +10,9 @@ See queries for the following use cases:
 * [Service Level Agreement (SLA) ](build-your-first-dashboard.md#sla)- verify that issue remediation meets with your compliance requirements.
 * [IDE & CLI test rates](build-your-first-dashboard.md#developers-ide-and-cli-test-usage-and-adoption) - measure the developer adoption of AppSec testing in the development stage.
 * [CI/CD Pipelines test rates](build-your-first-dashboard.md#ci-cd-pipelines-test-usage-and-adoption) - measure the adoption of AppSec testing in CI/CD pipelines.
+* [Repositories with highest rate of PRs with failed PR checks](build-your-first-dashboard.md#repositories-with-highest-rate-of-prs-with-failed-pr-checks) - analyze how often Snyk is surfacing new issues in PRs and how internal teams are interacting with these results.
+* [PR checks by status over time](build-your-first-dashboard.md#pr-checks-by-status-over-time) - analyze trends in PR check outcomes over time.
+* [Repository PR check adoption](build-your-first-dashboard.md#repository-pr-check-adoption) - track your repository PR check coverage and surface gaps.
 
 {% hint style="warning" %}
 You must update the database and schema names in the example queries provided before execution.
@@ -327,3 +330,273 @@ GROUP BY PRODUCT
 #### **Output format:**
 
 <figure><img src="../../../../.gitbook/assets/image (196).png" alt="Output format of SQL query for number of tested repositories, total tests, and the test % success rate per Snyk Product"><figcaption><p>Output format of SQL query for number of tested repositories, total tests, and the test % success rate per Snyk Product</p></figcaption></figure>
+
+## Repositories with highest rate of PRs with failed PR checks
+
+### Business value
+
+Understanding how internal teams are interacting with these PR checks helps AppSec teams assess the effectiveness of any shift-left strategy. Surfacing these patterns at the repository level enables targeted conversations with engineering teams to improve overall security posture.\
+\
+A high rate of failed PR checks may indicate emerging risk areas or configurations that need tuning.
+
+A high rate of overridden checks may signal that developers are bypassing security gates, which warrants investigation into whether the overrides are justified or represent a policy gap.&#x20;
+
+### Example query
+
+The query below returns the total number of pull requests, the count of PRs with at least one failed check, the count of PRs with at least one overridden check, the % of PRs with failed checks, and the % of PRs with overridden checks per target repository.
+
+The results are based on PR checks executed in the last 4 months and filtered to only include monitored and non-deleted projects.&#x20;
+
+You can also adapt this query to prioritize surfacing repositories that have a high rate of overridden checks.
+
+```sql
+SELECT
+    PRJ.TARGET_DISPLAY_NAME AS repository_name,
+    COUNT(DISTINCT PRCHK.PULL_DATA_REF) AS total_prs,
+    COUNT(DISTINCT IFF(PRCHK.PR_CHECK_GROUP_STATE IN ('failure'), PRCHK.PULL_DATA_REF, NULL)) AS total_prs_with_failures,
+    COUNT(DISTINCT IFF(PRCHK.MARKED_AS_SUCCESS = TRUE, PRCHK.PULL_DATA_REF, NULL)) AS total_prs_marked_as_success,
+    ROUND(DIV0(total_prs_with_failures, total_prs) * 100, 2) AS pct_prs_with_failed_checks,
+    ROUND(DIV0(total_prs_marked_as_success, total_prs) * 100, 2) AS pct_prs_with_overridden_checks
+FROM SNYK.SNYK.PR_CHECKS__V_1_0 AS PRCHK
+    INNER JOIN SNYK.SNYK.PROJECTS__V_1_0 AS PRJ
+        ON PRCHK.PROJECT_PUBLIC_ID = PRJ.PUBLIC_ID
+WHERE
+    PRJ.DELETED IS NULL                                                     -- exclude deleted projects
+    AND PRJ.IS_MONITORED = TRUE                                                 -- include only monitored projects
+    AND PRCHK.CHECK_GROUP_CREATED_AT::DATE >= (CURRENT_TIMESTAMP::DATE - 120)   -- filter to pr checks within the last 4 months
+GROUP BY 1
+ORDER BY pct_prs_with_failed_checks DESC, pct_prs_with_overridden_checks DESC
+```
+
+#### **Output format:**
+
+<figure><img src="../../../../.gitbook/assets/image (304).png" alt=""><figcaption><p>Output format of SQL query for % of PRs with failed PR checks and % of PRs with overridden PR checks by repository</p></figcaption></figure>
+
+## PR checks by status over time
+
+### Business value
+
+Tracking the volume of PR checks by their outcome over time can provide visibility into the overall health and trajectory of any shift-left strategy. By monitoring weekly trends in successful, failed, and errored checks, AppSec teams can detect and investigate spikes in failures and identify product configurations that need attention from error trends.\
+\
+An increasing success rate over time can demonstrate that developers are producing more secure code earlier in your software development life cycle.
+
+### Example query
+
+The query below returns weekly counts of PR check groups by if the status was success, failure, or error. The aggregation is done on the pr check group id and using the pr check group state.
+
+The results are based on PR check groups created in the last 6 months and filtered to only include monitored and non-deleted projects.&#x20;
+
+```sql
+SELECT
+    DATE_TRUNC('WEEK', PRCHK.CHECK_GROUP_CREATED_AT::DATE) AS week_starting,
+    COUNT(DISTINCT IFF(PRCHK.PR_CHECK_GROUP_STATE = 'success', PRCHK.PR_CHECK_GROUP_ID, NULL)) AS total_checks_success,
+    COUNT(DISTINCT IFF(PRCHK.PR_CHECK_GROUP_STATE = 'failure', PRCHK.PR_CHECK_GROUP_ID, NULL)) AS total_checks_failure,
+    COUNT(DISTINCT IFF(PRCHK.PR_CHECK_GROUP_STATE = 'error', PRCHK.PR_CHECK_GROUP_ID, NULL)) AS total_checks_error
+FROM SNYK.SNYK.PR_CHECKS__V_1_0 AS PRCHK
+    INNER JOIN SNYK.SNYK.PROJECTS__V_1_0 AS PRJ
+        ON PRCHK.PROJECT_PUBLIC_ID = PRJ.PUBLIC_ID
+WHERE
+    PRJ.DELETED IS NULL                                                     -- exclude deleted projects
+    AND PRJ.IS_MONITORED = TRUE                                                 -- include only monitored projects
+    AND PRCHK.CHECK_GROUP_CREATED_AT::DATE >= DATEADD('MONTH', -6, CURRENT_DATE) -- filter to the last 6 months
+GROUP BY 1
+ORDER BY week_starting ASC
+```
+
+#### **Output format:**
+
+<figure><img src="../../../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (306).png" alt=""><figcaption></figcaption></figure>
+
+## Repository PR check adoption
+
+### Business value
+
+Ensuring PR checks are enabled across your repositories is critical to preventing new security risks from reaching your production environments. Tracking PR check adoption at the repository level helps AppSec teams identify and tackle coverage gaps. Comparing current adoption against a previous period surfaces whether coverage is improving or regressing over time.
+
+### Example query
+
+The query below returns PR check enablement status per repository for the current 30-day period vs. the preceding 30-day period for both Snyk Code and Snyk Open Source.
+
+PR check enablement is resolved by combining project-level and integration-level settings. Project-level settings overrides take priority when they exist. Otherwise the integration settings apply. A repository is considered covered if at least one organization importing it has PR Checks enabled for all projects associated with that product type for at least one integration.
+
+Results will be N/A when a repository is new to Snyk or if the specific Snyk product does not apply.&#x20;
+
+```sql
+WITH
+    -- query latest integration data for the current period
+    integration_current AS (
+        SELECT ORG_SOURCE_PUBLIC_ID,
+               IS_PULL_REQUEST_TEST_OPEN_SOURCE_ENABLED,
+               IS_PULL_REQUEST_TEST_CODE_ENABLED
+        FROM SNYK.SNYK.PR_CHECKS_INTEGRATION_ADOPTION__V_1_0
+        WHERE
+          EFFECTIVE_AT::DATE <= CURRENT_DATE
+          AND (ENDS_AT IS NULL OR ENDS_AT::DATE >= DATEADD('DAY', -30, CURRENT_DATE))
+          AND ORG_SOURCE_DELETED IS NULL                            -- remove deleted integrations
+
+        QUALIFY ROW_NUMBER() OVER (
+            PARTITION BY ORG_SOURCE_PUBLIC_ID ORDER BY EFFECTIVE_AT DESC, ENDS_AT DESC
+        ) = 1
+    ),
+
+    -- query latest integration data for the previous period
+    integration_previous AS (
+        SELECT ORG_SOURCE_PUBLIC_ID,
+               IS_PULL_REQUEST_TEST_OPEN_SOURCE_ENABLED,
+               IS_PULL_REQUEST_TEST_CODE_ENABLED
+        FROM SNYK.SNYK.PR_CHECKS_INTEGRATION_ADOPTION__V_1_0
+        WHERE
+          EFFECTIVE_AT::DATE <= DATEADD('DAY', -31, CURRENT_DATE)
+          AND (ENDS_AT IS NULL OR ENDS_AT::DATE >= DATEADD('DAY', -61, CURRENT_DATE))
+          AND ORG_SOURCE_DELETED IS NULL                            -- remove deleted integrations
+
+        QUALIFY ROW_NUMBER() OVER (
+            PARTITION BY ORG_SOURCE_PUBLIC_ID ORDER BY EFFECTIVE_AT DESC, ENDS_AT DESC
+        ) = 1
+    ),
+
+    -- query latest project pr check setting data for the current period
+    project_adoption_current AS (
+        SELECT p.TARGET_DISPLAY_NAME AS repository_name,
+               prj.ORG_SOURCE_PUBLIC_ID,
+               prj.PRODUCT_NAME,
+               prj.TEST_PULL_REQUESTS
+        FROM SNYK.SNYK.PR_CHECKS_PROJECT_ADOPTION__V_1_0 AS prj
+            INNER JOIN SNYK.SNYK.PROJECTS__V_1_0 AS p
+                ON prj.PROJECT_PUBLIC_ID = p.PUBLIC_ID
+
+        WHERE
+          prj.EFFECTIVE_AT::DATE <= CURRENT_DATE
+          AND (prj.ENDS_AT IS NULL OR prj.ENDS_AT::DATE >= DATEADD('DAY', -30, CURRENT_DATE))
+          AND prj.PROJECT_DELETED IS NULL                                                       -- exclude deleted projects
+          AND p.IS_MONITORED = TRUE                                                             -- include only monitored projects
+
+        QUALIFY ROW_NUMBER() OVER (
+            PARTITION BY prj.PROJECT_PUBLIC_ID ORDER BY prj.EFFECTIVE_AT DESC, ENDS_AT DESC
+        ) = 1
+    ),
+
+    -- query latest project pr check setting data for the previous period
+    project_adoption_previous AS (
+        SELECT p.TARGET_DISPLAY_NAME AS repository_name,
+               prj.ORG_SOURCE_PUBLIC_ID,
+               prj.PRODUCT_NAME,
+               prj.TEST_PULL_REQUESTS
+        FROM SNYK.SNYK.PR_CHECKS_PROJECT_ADOPTION__V_1_0 AS prj
+            INNER JOIN SNYK.SNYK.PROJECTS__V_1_0 AS p
+                ON prj.PROJECT_PUBLIC_ID = p.PUBLIC_ID
+
+        WHERE
+          prj.EFFECTIVE_AT::DATE <= DATEADD('DAY', -31, CURRENT_DATE)
+          AND (prj.ENDS_AT IS NULL OR prj.ENDS_AT::DATE >= DATEADD('DAY', -61, CURRENT_DATE))
+          AND prj.PROJECT_DELETED IS NULL                                                       -- exclude deleted projects
+          AND p.IS_MONITORED = TRUE                                                             -- include only monitored projects
+
+        QUALIFY ROW_NUMBER() OVER (
+            PARTITION BY prj.PROJECT_PUBLIC_ID ORDER BY prj.EFFECTIVE_AT DESC, ENDS_AT DESC
+        ) = 1
+    ),
+
+    -- combine project and integration adoption data for current period
+    project_integration_pr_check_adoption_current AS (
+        SELECT repository_name,
+               prj.ORG_SOURCE_PUBLIC_ID,
+               prj.product_name,
+               -- project pr check settings override the integration settings if they exist
+               -- only consider enabled for a specific product if all projects for that product are enabled
+               MIN(
+               COALESCE(
+                   prj.test_pull_requests,
+                   CASE
+                       WHEN prj.PRODUCT_NAME = 'Snyk Open Source'
+                           THEN NVL(integ.IS_PULL_REQUEST_TEST_OPEN_SOURCE_ENABLED, TRUE)
+                       WHEN prj.PRODUCT_NAME = 'Snyk Code'
+                           THEN NVL(integ.IS_PULL_REQUEST_TEST_CODE_ENABLED, FALSE)
+                   END
+               ))::BOOLEAN AS pr_checks_enabled
+        FROM project_adoption_current AS prj
+            INNER JOIN integration_current AS integ
+                ON prj.ORG_SOURCE_PUBLIC_ID = integ.ORG_SOURCE_PUBLIC_ID
+
+        GROUP BY 1, 2, 3
+    ),
+
+    -- combine project and integration adoption data for previous period
+    project_integration_pr_check_adoption_previous AS (
+        SELECT repository_name,
+               prj.product_name,
+               prj.org_source_public_id,
+               -- project pr check settings override the integration settings if they exist
+               -- only consider enabled for a specific product if all projects for that product are enabled
+               MIN(
+               COALESCE(
+                   prj.test_pull_requests,
+                   CASE
+                       WHEN prj.PRODUCT_NAME = 'Snyk Open Source'
+                           THEN NVL(integ.IS_PULL_REQUEST_TEST_OPEN_SOURCE_ENABLED, TRUE)
+                       WHEN prj.PRODUCT_NAME = 'Snyk Code'
+                           THEN NVL(integ.IS_PULL_REQUEST_TEST_CODE_ENABLED, FALSE)
+                   END
+               ))::BOOLEAN AS pr_checks_enabled
+        FROM project_adoption_previous AS prj
+            INNER JOIN integration_previous AS integ
+                ON prj.ORG_SOURCE_PUBLIC_ID = integ.ORG_SOURCE_PUBLIC_ID
+
+        GROUP BY 1, 2, 3
+    ),
+
+    repository_pr_check_adoption_current AS (
+        SELECT repository_name,
+               -- consider enabled if the repository is enabled for any organizations or integrations
+               MAX(IFF(PRODUCT_NAME = 'Snyk Code', pr_checks_enabled::INT, NULL))::BOOLEAN
+                   AS snyk_code_enabled,
+               MAX(IFF(PRODUCT_NAME = 'Snyk Open Source', pr_checks_enabled::INT, NULL))::BOOLEAN
+                   AS snyk_open_source_enabled
+        FROM project_integration_pr_check_adoption_current
+        GROUP BY 1
+    ),
+
+    repository_pr_check_adoption_previous AS (
+        SELECT repository_name,
+               -- consider enabled if the repository is enabled for any organizations or integrations
+               MAX(IFF(PRODUCT_NAME = 'Snyk Code', pr_checks_enabled::INT, NULL))::BOOLEAN
+                    AS snyk_code_enabled,
+               MAX(IFF(PRODUCT_NAME = 'Snyk Open Source', pr_checks_enabled::INT, NULL))::BOOLEAN
+                   AS snyk_open_source_enabled
+        FROM project_integration_pr_check_adoption_previous
+        GROUP BY 1
+    )
+
+SELECT
+    c.repository_name,
+    CASE
+        WHEN c.snyk_code_enabled = true THEN 'Enabled'
+        WHEN c.snyk_code_enabled = false THEN 'Not Enabled'
+        ELSE 'N/A'
+    END AS snyk_code_pr_check_enabled_current,
+    CASE
+        WHEN p.snyk_code_enabled = true THEN 'Enabled'
+        WHEN p.snyk_code_enabled = false THEN 'Not Enabled'
+        ELSE 'N/A'
+    END AS snyk_code_pr_check_enabled_previous,
+    CASE
+        WHEN c.snyk_open_source_enabled = true THEN 'Enabled'
+        WHEN c.snyk_open_source_enabled = false THEN 'Not Enabled'
+        ELSE 'N/A'
+    END AS snyk_open_source_pr_check_enabled_current,
+    CASE
+        WHEN p.snyk_open_source_enabled = true THEN 'Enabled'
+        WHEN p.snyk_open_source_enabled = false THEN 'Not Enabled'
+        ELSE 'N/A'
+    END AS snyk_open_source_pr_check_enabled_previous
+FROM repository_pr_check_adoption_current AS c
+    LEFT JOIN repository_pr_check_adoption_previous AS p
+        ON c.repository_name = p.repository_name
+ORDER BY repository_name
+```
+
+#### **Output format:**
+
+<figure><img src="../../../../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>

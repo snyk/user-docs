@@ -8,6 +8,10 @@ There are several ways you can import Projects, depending on your tech stack and
 * **Snyk CLI:** Recommended for granular control in CI/CD pipelines.
 * **Snyk API:** Recommended for large-scale, programmatic automation.
 
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1775661957/6._Importing_Your_First_Projects_xn4ncf.mp4" %}
+Import your first Projects video guide
+{% endembed %}
+
 ## Import Projects using an SCM integration
 
 Use this method to connect repositories for automatic scanning. This is the preferred way for teams who prioritize ease of use.
@@ -59,11 +63,11 @@ Use the API to trigger scans and handle results programmatically across a large 
 
 ## Add Projects tags and attributes
 
-After importing Projects, use Project attributes and tags to categorize your data. This metadata allows you to filter and report on specific subsets of your Organization.&#x20;
+After importing Projects, use Project attributes and tags to categorize your data. This metadata allows you to filter and report on specific subsets of your Organization.
 
-For example, apply the `frontend` attribute and a `Team:Unicorn` tag to your Projects. You can then generate a report specifically for critical frontend vulnerabilities in production owned by Team Unicorn.&#x20;
+For example, apply the `frontend` attribute and a `Team:Unicorn` tag to your Projects. You can then generate a report specifically for critical frontend vulnerabilities in production owned by Team Unicorn.
 
 Attributes and tags also allow you to:
 
-* Group related Projects for easier management.&#x20;
+* Group related Projects for easier management.
 * Customize how you view and access Project data.

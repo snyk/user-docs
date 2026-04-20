@@ -74,7 +74,7 @@ The following code snippet extends the Secure at inception testing to include ch
 
 <details>
 
-<summary>Secure at inception: Package health check [Experimental]</summary>
+<summary>Secure at inception: Package health check </summary>
 
 The `snyk_package_health_check` directive evaluates open-source packages for security vulnerabilities, maintenance health, community engagement, and popularity. This reduces supply chain risk in agentic development workflows where AI agents autonomously select and install dependencies.
 

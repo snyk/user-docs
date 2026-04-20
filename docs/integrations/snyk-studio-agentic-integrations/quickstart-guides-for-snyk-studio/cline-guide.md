@@ -5,7 +5,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Cline to secure code
 ## Prerequisites
 
 * [Install Cline](cline-guide.md#install-cline)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/)
 * [Install the Snyk MCP](cline-guide.md#install-the-snyk-mcp-server-in-cline-using-npx)
 
 ### Install Cline

@@ -1,6 +1,6 @@
 # CI/CD adoption and deployment
 
-When deciding to use a Snyk integration, compare the advantages of source control management (SCM) integrations and CI/CD integrations.&#x20;
+When deciding to use a Snyk integration, compare the advantages of source control management (SCM) integrations and CI/CD integrations.
 
 ## Typical stages in adopting CI/CD Integration
 
@@ -52,7 +52,7 @@ Snyk native plugins are available for most common CI/CD tools. You can use these
 
 ### **Deploy the Snyk CLI using the npm method**
 
-Follow steps similar to those for [installing the CLI](../../snyk-cli/install-or-update-the-snyk-cli/) locally. You must be able to run an npm command in the pipeline script. This method has the advantage of completely aligning with the CLI experience so that you can easily troubleshoot and configure.
+Follow steps similar to those for [installing the CLI](../../snyk-cli/install-the-snyk-cli/) locally. You must be able to run an npm command in the pipeline script. This method has the advantage of completely aligning with the CLI experience so that you can easily troubleshoot and configure.
 
 ### **Deploy the Snyk CLI binary version**
 

@@ -32,7 +32,7 @@ Snyk updates the Snyk CLI and MCP Server regularly with features and fixes. You 
 <summary><strong>Yes</strong>, I would like to enable auto-updates for Snyk CLI/MCP versions.</summary>
 
 * If you are deploying alongside [Cursor](quickstart-guides-for-snyk-studio/cursor-guide.md), [Windsurf](quickstart-guides-for-snyk-studio/windsurf-guide.md), or [Copilot](quickstart-guides-for-snyk-studio/github-copilot-guide.md) in VS Code, you do not need to take any action as the default setting automatically upgrades dependencies when they are available.
-* If you are deploying Snyk Studio into any other coding assistant, you will need to keep the Snyk CLI on the latest version using MDM, which will depend on your [chosen installation method](../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/).
+* If you are deploying Snyk Studio into any other coding assistant, you will need to keep the Snyk CLI on the latest version using MDM, which will depend on your [chosen installation method](../../developer-tools/snyk-cli/install-the-snyk-cli/).
 
 </details>
 
@@ -40,10 +40,10 @@ Snyk updates the Snyk CLI and MCP Server regularly with features and fixes. You 
 
 <summary><strong>No</strong>, I want to manually update Snyk CLI/MCP versions after internal testing is complete.</summary>
 
-* If you are deploying alongside Cursor, Windsurf, or Copilot in VS Code, [install that specific CLI version](../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/#install-with-standalone-executables).
+* If you are deploying alongside Cursor, Windsurf, or Copilot in VS Code, [install that specific CLI version](../../developer-tools/snyk-cli/install-the-snyk-cli/#install-with-standalone-executables).
   * If you want to use the Snyk VS Code IDE extension to facilitate the MCP server configuration and Secure at inception directives, install the VS Code IDE extension and disable auto CLI updates (`snyk.advanced.automaticDependencyManagement`) and set the path to your CLI explicitly (`snyk.advanced.cliPath`).
-* If you are deploying alongside Claude Code or Gemini CLI, [install a specific CLI version](../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/#install-with-standalone-executables) and run `snyk mcp config --name=[ade_name]`.
-* If you are deploying alongside a coding assistant this guide does not cover or prefer fine-grained controls, [install a specific CLI version](../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/#install-with-standalone-executables), configure your ADE’s MCP server, and optionally write the rule files (varies by ADE).
+* If you are deploying alongside Claude Code or Gemini CLI, [install a specific CLI version](../../developer-tools/snyk-cli/install-the-snyk-cli/#install-with-standalone-executables) and run `snyk mcp config --name=[ade_name]`.
+* If you are deploying alongside a coding assistant this guide does not cover or prefer fine-grained controls, [install a specific CLI version](../../developer-tools/snyk-cli/install-the-snyk-cli/#install-with-standalone-executables), configure your ADE’s MCP server, and optionally write the rule files (varies by ADE).
 
 </details>
 

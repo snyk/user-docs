@@ -40,7 +40,7 @@ snyk redteam --experimental setup
 {% step %}
 ### Install the Snyk CLI
 
-Use one of the following methods to install the Snyk CLI. For more installation options and troubleshooting, visit [Install or update the Snyk CLI](../install-or-update-the-snyk-cli/).
+Use one of the following methods to install the Snyk CLI. For more installation options and troubleshooting, visit [Install or update the Snyk CLI](../install-the-snyk-cli/).
 
 {% tabs %}
 {% tab title="npm" %}

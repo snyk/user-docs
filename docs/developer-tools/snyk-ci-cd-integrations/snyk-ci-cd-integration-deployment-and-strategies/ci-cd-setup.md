@@ -13,7 +13,7 @@ If you do not define a target Organization, Snyk uses the default Organization f
 * For user accounts, this is the user's preferred Organization, configurable in the user's settings.
 * For Organization service accounts, this is the Organization in which the account was created.
 
-You can define the target Organization in the Snyk CLI by using the  `--org` CLI option and either the `orgslugname` or the Organization ID:
+You can define the target Organization in the Snyk CLI by using the `--org` CLI option and either the `orgslugname` or the Organization ID:
 
 * You can define the target Organization using its `orgslugname` as displayed in the address bar of the browser in the Snyk UI.
 * Alternatively, you can define the target Organization using its Organization ID, found on the Organization settings page.
@@ -36,7 +36,7 @@ Snyk supports the following approaches to add tests to a build pipeline:
 
 ## Setting up CI/CD using Snyk CLI
 
-The Snyk CLI is a NodeJS application that can be scripted directly by developers for easy integration into most CI/CD environments. The Snyk CLI is available as an npm application, pre-packaged binary, or container image. For more information, see [Install or update the Snyk CLI](../../snyk-cli/install-or-update-the-snyk-cli/).
+The Snyk CLI is a NodeJS application that can be scripted directly by developers for easy integration into most CI/CD environments. The Snyk CLI is available as an npm application, pre-packaged binary, or container image. For more information, see [Install or update the Snyk CLI](../../snyk-cli/install-the-snyk-cli/).
 
 The Snyk CLI can be configured to:
 

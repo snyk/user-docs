@@ -58,91 +58,128 @@ This report shows the test usage in the IDE, CLI, and Snyk Studio by developers.
 Snyk Pull request checks usage & performance report is in Generally Availability for Enterprise plan customers. For more information, visit [Plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Monitor the use and results of Snyk Pull Request Checks to verify that critical vulnerabilities are identified before merging.
+This report enables you to track and analyze the results and adoption of Snyk pull request checks.&#x20;
+
+By monitoring trends in successful, failed, and errored PR checks, AppSec teams can detect and investigate spikes in failures and identify source and target configurations that need attention. Comparing current adoption against a previous period also surfaces whether coverage is improving or regressing over time while identifying the coverage gaps that need to be addressed.
+
+### PR check performance & status
+
+High level metrics provide an overview of how often PR checks are passing along with how often checks are being marked as successful to override a failed status. The PR checks by status over time trend gives you a weekly view of PR check outcomes while additional views break these outcomes down by specific scan types.
+
+A high rate of failed PR checks may indicate emerging risk areas while a high rate of overridden checks may signal that developers are bypassing security gates and warrant further investigation. An increasing success rate over time can demonstrate that developers are producing more secure code earlier in your software development life cycle.
+
+<figure><img src="../../../.gitbook/assets/unknown (24).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/unknown (25).png" alt=""><figcaption></figcaption></figure>
+
+#### Error PR checks by error message
+
+This table surfaces recurring technical issues that may be preventing PR checks from completing, such as misconfigured integrations or unsupported project types. By surfacing these directly, the report helps teams identify recurring configuration issues, making it easier to prioritize fixes that most improve developer experience.
+
+<figure><img src="../../../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
+
+### Pull-request overview & adoption
+
+This section focuses on pull request outcomes and how broadly PR scanning is enabled across your repositories and organizations. You can quickly see your PR check coverage across all repositories for Snyk Code and Snyk Open Source and how often Snyk PR checks are surfacing vulnerabilities in PRs before they reach a production branch. Different tables allow you to drill down into PR scanning adoption and PR scanning performance by Group, Organization, and repository.
+
+<figure><img src="../../../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
+
+#### PR scanning by
+
+Viewing the **Last Commit** data when viewing by repository requires [SCM Group integration](../../../developer-tools/scm-integrations/group-level-integrations/).
+
+PR check enablement for all targets and projects imported through an integration is determined by the settings for that integration unless those settings are overridden at the project-level. A repository is considered enabled for PR checks for a specific Snyk product if at least one organization importing that repository has PR Checks enabled for all projects associated with that product type for at least one integration.
+
+**Integrations With PR Scan** under the Organization view captures the integrations with at least one PR check scan type enabled.
+
+**Integrations With Scan Enabled** under the Group view counts enablement by integration settings for all integrations that exist under all the organizations under that group.
+
+Repository status will be "N/A" under the repository view when a repository is new to Snyk or if the specific Snyk product does not apply (there are no projects for that product type imported for the target repository).
+
+<figure><img src="../../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
+
+#### PR scanning performance by
+
+The **% PRs With Failed Checks** indicates how often Snyk detected a vulnerability that violated the policy set under your PR check settings for at least one of the checks for that PR. This can help you understand the value in running these scans before your code is already merged for specific organizations and repositories.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (290).png" alt=""><figcaption></figcaption></figure>
 
 ## Repositories tested in CI/CD report
 
-To use this report, consider the following prerequisites:
+The Repositories tested in CI/CD report analyzes Snyk tests executed in your CI/CD pipelines using the Snyk CLI. Use this report to track testing adoption across your company, ensure Snyk tests your repositories, and prevent critical vulnerabilities and misconfigurations from reaching production.
 
-* Snyk CLI version 1.1292.1 or newer.
-* Viewing the last commit data requires SCM Group integration. For more details, navigate to [SCM integrations](../../../developer-tools/scm-integrations/organization-level-integrations/).
-* When testing containers, include the `.git` context as part of the `snyk container test` command.
-
-This report analyzes Snyk tests performed as part of CI/CD pipelines executed using Snyk CLI. It will inform you about the usage of your company and adoption of testing in CI/CD, ensuring repositories are tested as expected and preventing critical vulnerabilities and misconfigurations from being deployed and reaching the production environment.
-
-The report results are scoped by a date range filter that you can use to review specific periods. The filter is defaulted to the last 30 days.
-
-This report provides visibility into Snyk tests (`snyk test`, `snyk code test`, `snyk container test`, `snyk iac test`) executed within your CI pipeline (using CLI). Its primary goal is to help you evaluate test results and determine whether to pass or fail the build process based on these security checks.
+This report provides visibility into Snyk tests (`snyk test`, `snyk code test`, `snyk container test`, `snyk iac test`) executed in your CI pipeline. Use these results to evaluate security checks and determine whether to pass or fail the build process.
 
 {% hint style="info" %}
-&#x20;`snyk monitor` commands are **not** included in this report. While `snyk monitor` is crucial for ongoing security posture and identifying new vulnerabilities, this report specifically tracks tests that actively gate your CI/CD pipeline.
+The report does not include `snyk monitor` commands. While `snyk monitor` identifies new vulnerabilities and maintains your security posture, this report tracks only the tests that actively gate your CI/CD pipeline.
 {% endhint %}
 
-The numbers displayed on the main view of the report represent the number of repositories tested in the selected date range per Snyk product.
+### Prerequisites
 
-In addition, you can learn about the change in the number of tested repositories compared to the previous sequential period, so you can conclude whether the adoption of CI/CD tests across repositories improved.
+Before you use this report, ensure you meet the following requirements:
 
-A green upward arrow indicates that more repositories were tested compared to the previous sequential period, while a red downward arrow indicates the opposite. The absolute change value appears next to the arrow, and the perception of change appears right underneath to measure the degree of change.
+* Snyk CLI version 1.1292.1 or later.
+* SCM Group integration to view the last commit data. For more information, see SCM integrations.
+* Include the `.git` context in the `snyk container test` command when you test containers.
+
+### Report filters and metrics
+
+By default, the report filters results to the last 30 days. You can adjust the date range filter to review specific periods, filter the data by specific products or organizations, or extend the viewed period.
+
+The main view displays the number of repositories tested per Snyk product within the selected date range. You can also view the change in tested repositories compared to the previous sequential period to measure CI/CD testing adoption.
+
+A green upward arrow indicates an increase in tested repositories compared to the previous period, and a red downward arrow indicates a decrease. The absolute change value appears next to the arrow, with the percentage of change below it.
 
 {% hint style="info" %}
-A sequential period refers to a date range covering the last seven days. In this case, the period starts seven days ago and ends today. The previous sequential period spans from 14 days ago to seven days ago. As a result, both sequential periods are of the same duration.
+A sequential period is a date range covering the last seven days. The previous sequential period covers the seven days before that, ensuring both periods have the same duration.
 {% endhint %}
 
 #### Repository Test Adoption <a href="#repository-test-adoption" id="repository-test-adoption"></a>
 
-Review the Repository Test Adoption trend to learn more about ‌adoption over time.\
-Represented by the green line, you can see the weekly number of repositories that have been tested compared to the repositories that had commits in the last 30 days, represented by the purple line.
+The **Repository Test Adoption** trend shows testing adoption over time. A green line represents the weekly number of tested repositories. A purple line represents repositories with commits in the last 30 days.
 
-This comparison helps determine whether Snyk tests in CI/CD are being increasingly adopted over time and highlights the number of repositories that have received commits but have not been tested in CI/CD.
-
-{% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, visit the [SCM integrations](../../../developer-tools/scm-integrations/organization-level-integrations/) page.
-{% endhint %}
+Compare these lines to determine if CI/CD testing adoption is increasing and to identify repositories that received commits but lack CI/CD tests.
 
 You can filter by specific products or by specific organizations or extend the viewed period using the date range filter.
 
-#### Test Success Rate Trend <a href="#test-success-rate-trend" id="test-success-rate-trend"></a>
-
-The test success rate serves as an indicator of how well the engineering department or specific Snyk Organizations can adopt a "shift left" approach, which aims to identify and resolve issues before the code reaches the build process. This success rate is calculated by dividing the number of tests that passed by the total number of relevant tests conducted.
-
 {% hint style="info" %}
-An applicable test is a test that did not fail due to technical issues or a non-supported Project.
+You must configure SCM Group integration to view the last commit data. For more information, see [SCM integrations](../../../developer-tools/scm-integrations/group-level-integrations/).
 {% endhint %}
 
-Having a low success rate can indicate that:
+#### Test Success Rate Trend <a href="#test-success-rate-trend" id="test-success-rate-trend"></a>
 
-* Snyk tests are failing due to security issues that can be prevented in local development or in the PR Check stages. Snyk recommends testing with the [Snyk IDE](../../../developer-tools/snyk-ide-plugins-and-extensions/) plugin, using [Snyk PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) and enroll in a [Snyk Learn](../../../discover-snyk/snyk-learn/) program.
-* The test success criteria are too strict. To explore this option further, Snyk recommends reviewing the test definitions of the organizations with the lowest success rate, as shown by the Adoption by Organizations widget. For more details about defining test success criteria, navigate to the [Failing of builds in Snyk CLI](../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md) page.
+The test success rate indicates how well your engineering department or specific Snyk Organizations adopt a shift-left approach to resolve issues before the build process. Snyk calculates this rate by dividing the number of passed tests by the total number of applicable tests. An applicable test is one that did not fail due to technical issues or an unsupported Project.
+
+A low success rate can indicate the following:
+
+* Snyk tests fail due to security issues you can prevent in local development or pull request checks. Snyk recommends you test with the Snyk IDE plugin, use Snyk PR Checks, and enroll in a Snyk Learn program.
+* The test success criteria are too strict. Review the test definitions for organizations with the lowest success rates in the **Adoption by Organizations** widget. For more information about defining test success criteria, see [Failing of builds in Snyk CLI](../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md).
 
 #### Adoption by Organizations <a href="#adoption-by-organizations" id="adoption-by-organizations"></a>
 
-Launching an Application Security program to boost testing adoption in CI/CD pipelines can be challenging. This initiative requires collaboration between the AppSec and R\&D teams and will be implemented gradually, with regular progress monitoring.
+Launching an application security program to boost CI/CD testing adoption requires collaboration between AppSec and R\&D teams, gradual implementation, and regular progress monitoring.
 
-The Adoption by Organization table enables you to track and compare the Snyk Organizations adoption rates, helping you identify those that are struggling or lagging behind.
+Use the **Adoption by Organization** table to track and compare adoption rates across Snyk Organizations and identify those lagging behind. Review the **Success Rate** column to find organizations with lower success rates.
 
-In addition, you can examine the success rate column to surface organizations that have lower success rates.
+The table includes the following columns:
 
-**Columns descriptions:**
-
-* **Tested Repositories:** the number of repositories that were tested in the selected time range, with an indication of the percentage of change compared to the previous sequential period.
-* **Committed Repositories:** the number of repositories that had any commits in the last 30 days at any given time in the selected time range, with an indication of the percentage of change compared to the previous sequential period.
-* **Success Rate:** the portion of successful tests in CI/CD against all other tests that were executed.
+* **Tested Repositories**: The number of repositories tested in the selected time range, including the percentage of change compared to the previous sequential period.
+* **Committed Repositories**: The number of repositories with commits in the last 30 days during the selected time range, including the percentage of change compared to the previous sequential period.
+* **Success Rate**: The percentage of successful CI/CD tests compared to all executed tests.
 
 #### Repository Test Summary <a href="#repository-test-summary" id="repository-test-summary"></a>
 
-The repository test summary table shows the performed tests during the selected date range.
+The **Repository test summary** table displays the tests performed during the selected date range.
 
-The default sorting in the table surfaces repositories according to their last commit, allowing you to identify repositories that were expected to be tested in CI/CD pipelines and verify they were tested. Clicking a column name sorts the table to that column. You can sort the table by multiple columns at a time.
-
-{% hint style="info" %}
-Viewing the last commit data requires SCM Group integration. For more details, visit the [Group-level integrations](../../../developer-tools/scm-integrations/group-level-integrations/) page.
-{% endhint %}
-
-You can execute the test on a specific repository branch in the table. The `tested` indicator means that any branch of this repository was tested during the selected date range.
+By default, the table sorts repositories by their last commit. This helps you identify repositories expected to undergo CI/CD testing and verify Snyk tested them. Click a column name to sort the table by that column. You can sort by multiple columns simultaneously.
 
 {% hint style="info" %}
-Hovering over the TESTED tag reveals the last test performed during the selected date range
+You must configure SCM Group integration to view the last commit data. For more information, see [Group-level integrations](../../../developer-tools/scm-integrations/group-level-integrations/).
 {% endhint %}
+
+You can execute tests on a specific repository branch from the table. The **TESTED** indicator shows that Snyk tested at least one branch of this repository during the selected date range. Hover over the **TESTED** tag to view the last test performed during the selected date range.
 
 ## Snyk Generated Pull Requests report
 

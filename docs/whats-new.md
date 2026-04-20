@@ -76,7 +76,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Snyk CLI&#x20;
 
 * [SBOM test](developer-tools/snyk-cli/commands/sbom-test.md) command is now in Early Access.
-* The latest [Snyk CLI version](developer-tools/snyk-cli/install-or-update-the-snyk-cli/) available is v1.1302.1.
+* The latest [Snyk CLI version](developer-tools/snyk-cli/install-the-snyk-cli/) available is v1.1302.1.
 * The [debugging mode of the Snyk CLI](developer-tools/snyk-cli/debugging-the-snyk-cli.md) has been enhanced with error catalog codes and exit codes.
 
 ### Snyk IDE
@@ -145,7 +145,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### **Snyk CLI**
 
-* The latest [Snyk CLI version](developer-tools/snyk-cli/install-or-update-the-snyk-cli/) available is v1.1301.0.
+* The latest [Snyk CLI version](developer-tools/snyk-cli/install-the-snyk-cli/) available is v1.1301.0.
 * The [CLI help](manage-risk/prioritize-issues-for-fixing/reachability-analysis.md#using-reachability-analysis-with-snyk-cli) has been updated with commands for reachability analysis.
 
 ### Snyk IDE
@@ -177,7 +177,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### **Snyk CLI**
 
 * Snyk CLI now supports uploading files and folders for Snyk Code scanning. The command [`code-test`](developer-tools/snyk-cli/commands/code-test.md) has been updated with options reflecting these capabilities.
-* The latest [Snyk CLI version](developer-tools/snyk-cli/install-or-update-the-snyk-cli/) available is v1.1300.2.
+* The latest [Snyk CLI version](developer-tools/snyk-cli/install-the-snyk-cli/) available is v1.1300.2.
 
 ### **Snyk integrations**
 
@@ -491,7 +491,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 * The [CLI authentication page](developer-tools/snyk-cli/authenticate-to-use-the-cli.md) has been updated for the OAuth 2.0 protocol.
 * The page [Debugging the Snyk CLI](developer-tools/snyk-cli/debugging-the-snyk-cli.md) has been added.
-* [CLI standalone executables](developer-tools/snyk-cli/install-or-update-the-snyk-cli/#install-with-standalone-executables) have been updated to include Alpine Arm64.
+* [CLI standalone executables](developer-tools/snyk-cli/install-the-snyk-cli/#install-with-standalone-executables) have been updated to include Alpine Arm64.
 * IDE Eclipse[ plugin](developer-tools/snyk-ide-plugins-and-extensions/eclipse-plugin/) and [JetBrains plugin ](developer-tools/snyk-ide-plugins-and-extensions/jetbrains-plugin/)documentation pages have been updated.
 * [Authentication information](developer-tools/snyk-ide-plugins-and-extensions/) has been updated for all IDEs.
 

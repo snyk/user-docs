@@ -5,7 +5,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Qodo to secure code 
 ## Prerequisites
 
 * [Install the code assistant extension](qodo-guide.md#install-qodo)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/)
 * [Install the Snyk MCP](qodo-guide.md#install-the-snyk-mcp-server-in-qodo)
 
 ### Install Qodo
@@ -45,7 +45,7 @@ full path option:
 }
 ```
 
-For the full path option, if the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
+For the full path option, if the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/) page.
 
 The following example shows a Snyk MCP Server that was successfully configured.
 

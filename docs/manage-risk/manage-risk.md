@@ -1,33 +1,28 @@
 # Overview
 
-Snyk has several features to help you manage Application Security (AppSec) risk.
+Snyk helps you prioritize issues for fixing by distinguishing between insignificant alerts and actionable threats. Not all vulnerabilities pose the same level of danger.&#x20;
 
-## Snyk Essentials
+Snyk uses contextual signals, such as code reachability and deployment environments, and prioritization methods, including exploit maturity, severity levels, and holistic risk scoring.
 
-Snyk Essentials provides a powerful set of tools to enhance application security management, including thorough vulnerability detection, easy integration, and effective remediation processes for improved security throughout the development lifecycle. See the [Snyk Essentials ](../scan-with-snyk/snyk-essentials.md)page for more details.
+## Prioritize issues for fixing
 
-## Analytics
+* [Risk Score](prioritize-issues-for-fixing/risk-score.md) and [Priority Score](prioritize-issues-for-fixing/priority-score.md): Use Risk Score and Priority Score to rank issues for remediation. Learn how they differ in [Priority Score vs Risk Score](prioritize-issues-for-fixing/priority-score-vs-risk-score.md).
+* [Reachability Analysis](prioritize-issues-for-fixing/reachability-analysis.md): Snyk determines whether your application's code calls specific functions or modules that contain a vulnerability. This helps you prioritize fixes based on whether the threat is executable in your environment.
+* [Exploit maturity](prioritize-issues-for-fixing/view-exploits.md): Track and display real-world exploits of a vulnerability, including active attacks or proof-of-concept, and prioritize fixes based on proven, active threats.
+* [Malicious packages](prioritize-issues-for-fixing/malicious-packages.md): Malicious dependencies are an increasingly common method for executing software supply chain attacks.&#x20;
+* [Severity levels](prioritize-issues-for-fixing/severity-levels.md): Snyk categorizes vulnerabilities into Critical, High, Medium, or Low. These levels are based on industry-standard scoring frameworks (like CVSS and CCSS) to quickly communicate the potential impact and risk of an exploit.
+* [Application Context](../developer-tools/scm-integrations/application-context-for-scm-integrations/): Bring the application context with [Assets and risk factors](prioritize-issues-for-fixing/assets-and-risk-factors/), and [Set up Insights](prioritize-issues-for-fixing/set-up-insights/).
 
-[Analytics](analytics/) shows the performance of a company's Application Security program.
+## Snyk Policies
 
-Metrics are reported for the pillars: Exposure, Manage, Prevention, and Coverage. The breakdown of open issues over time is shown in these categories: Baseline, Preventable, Non-preventable, and Other new.
+Snyk [Policies](policies/) automate security and license governance. Define rules that automatically adjust issue severities or set compliance requirements across your Projects.
 
-Customers can find the most serious problems that they must resolve, address those, and look for opportunities to proactively improve in each pillar.
+## Snyk Analytics
 
-## Reports
+[Analytics](analytics/) provides a centralized reporting hub for Enterprise customers. Build custom dashboards and track security metrics across teams for high-level visibility into risk and remediation progress.
 
-Use Snyk [Reporting](analytics/reports-tab/) to track issues and their resolution.
+The [Reports tab](analytics/reports-tab/) organizes data into specific categories: **Exposure & coverage**, **Remediation**, **Prevention**, **Compliance**, and **Education**. Filter, save custom views, and export data (PDF/CSV) to facilitate conversations between security and development teams.
 
-The following reports are available:
+## Dependencies and licenses
 
-* Issues Detail
-* Issues Summary
-* Vulnerabilities Detail
-* Cloud Compliance Issues
-* Developer IDE and CLI usage
-
-For more information, see [the available Snyk Reports](analytics/reports-tab/).
-
-## Risk Score
-
-Snyk [Risk Score](prioritize-issues-for-fixing/risk-score.md) can help you prioritize your approach to security issues, by providing you with an accurate and holistic understanding of the risk posed by a given security issue.
+View [dependencies](dependencies-and-licenses/view-dependencies.md) and [license](dependencies-and-licenses/view-licenses.md) details for all Projects in your Group or Organization by selecting the **Dependencies** option in your Group or Organization menu.

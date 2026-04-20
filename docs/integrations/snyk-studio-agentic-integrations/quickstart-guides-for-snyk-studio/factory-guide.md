@@ -5,7 +5,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Factory to secure co
 ## Prerequisites
 
 * [Install Factory](factory-guide.md#install-factory)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/)
 * [Install the Snyk MCP](factory-guide.md#install-the-snyk-mcp-server-in-factory)
 
 ### Install Factory
@@ -36,7 +36,7 @@ Create or edit the MCP configuration file `~/Library/Application Support/Factory
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/) page.
 
 #### Install with Node.js and `npx`
 

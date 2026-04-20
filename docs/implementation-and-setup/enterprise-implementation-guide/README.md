@@ -21,7 +21,7 @@ To have a successful Snyk rollout, you need to:
 By the end of this guide, you will have successfully configured a baseline template Org, used it to easily copy your global settings and integrations to provision new Organizations, and learned how to customize individual settings in those new environments to support specific team workflows.
 
 {% hint style="info" %}
-To understand how AI is used at Snyk and how this may affect your implementation decisions, visit the [AI Data and Governance](../../snyk-data-and-governance/how-snyk-incorporates-generative-ai-into-the-platform.md) page.
+To understand how AI is used at Snyk and how this may affect your implementation decisions, visit [AI Data and Governance](../../snyk-data-and-governance/how-snyk-incorporates-generative-ai-into-the-platform.md).
 {% endhint %}
 
 ## Confirm points of contact
@@ -46,8 +46,8 @@ For example, identify people who can perform the following tasks:
 
 To identify priority applications, categorize them based on:
 
-* **Business impact**: Applications that handle sensitive data or generate high revenue.&#x20;
-* **Exposure**: Public-facing apps or those with high-risk network configurations.&#x20;
+* **Business impact**: Applications that handle sensitive data or generate high revenue.
+* **Exposure**: Public-facing apps or those with high-risk network configurations.
 * **Development activity**: Teams with active release cycles that can implement fixes quickly.
 
 ## Snyk hierarchy
@@ -83,11 +83,11 @@ To learn more, visit [Create a template Organization](create-a-template-organiza
 **Key decision**: Determine how you want to structure your Organizations. Do you want to reflect your business structure by having an Organization per team, per business unit, or by repository? This is important because your chosen Org structure defines how your teams work in Snyk, controls who sees what, and determines how policies and reporting are scoped.
 {% endhint %}
 
-You can use an existing Organization as a model to create a new Organization, and apply the settings and integrations.&#x20;
+You can use an existing Organization as a model to create a new Organization, and apply the settings and integrations.
 
 Use the API templating functionality to ensure consistent settings when creating Organizations at scale. There are two scenarios where you can apply this:
 
-* **Mirroring existing structures**: Use the `snyk-api-import` tool to replicate an existing source, for example, GitHub Organizations.&#x20;
+* **Mirroring existing structures**: Use the `snyk-api-import` tool to replicate an existing source, for example, GitHub Organizations.
 * **Direct API creation**: Use the `Create a new organization` endpoint and provide a `sourceOrgId` to apply the template.
 
 To learn more, visit [Create your Snyk structure](create-your-snyk-structure.md).
@@ -112,7 +112,7 @@ Successfully rolling out Snyk to your development team requires clear communicat
 
 Start by using customizable templates to announce the launch, tailoring your messaging and feature rollout to match your team's comfort level with security automation.
 
-Next, empower your developers with persona-specific training through Snyk Learn to build both foundational security knowledge and Snyk product expertise.&#x20;
+Next, empower your developers with persona-specific training through Snyk Learn to build both foundational security knowledge and Snyk product expertise.
 
 Finally, reinforce a shift-left security strategy by deploying Snyk IDE plugins, equipping developers to find and fix vulnerabilities directly within their preferred coding environment before the code ever reaches the CI/CD pipeline.
 

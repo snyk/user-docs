@@ -111,9 +111,9 @@ The following shows examples of high-level and low-level severity in a file:
 
 You can output the `snyk code test` results to JSON or SARIF format in the terminal instead of displaying the results in the Snyk CLI format.
 
-You can also [export the test results to a JSON or SARIF format file](view-snyk-code-cli-results.md#export-test-results). SARIF is an open standard for the output of static analysis tools. For more information, see the [SARIF site](https://sarifweb.azurewebsites.net/).&#x20;
+You can also [export the test results to a JSON or SARIF format file](view-snyk-code-cli-results.md#export-test-results). SARIF is an open standard for the output of static analysis tools. For more information, see the [SARIF site](https://sarifweb.azurewebsites.net/).
 
-The severity levels of the issues discovered by running `snyk code test` and reported in JSON and SARIF files are displayed differently from the results in the terminal.  For more information, see [Severity levels in the JSON and SARIF files](view-snyk-code-cli-results.md#severity-levels-in-json-and-sarif-files).
+The severity levels of the issues discovered by running `snyk code test` and reported in JSON and SARIF files are displayed differently from the results in the terminal. For more information, see [Severity levels in the JSON and SARIF files](view-snyk-code-cli-results.md#severity-levels-in-json-and-sarif-files).
 
 To output the test results to JSON format, enter the following:
 
@@ -145,15 +145,15 @@ You can export the `snyk code test` results to a JSON or SARIF format file. When
 
 You can also [output the test results to JSON or SARIF format in the terminal](view-snyk-code-cli-results.md#output-test-results).
 
-The severity levels of the issues discovered by running `snyk code test` and reported in JSON and SARIF files are displayed differently from the results in the terminal.  For more information, see [Severity levels in the JSON and SARIF files](view-snyk-code-cli-results.md#severity-levels-in-json-and-sarif-files).
+The severity levels of the issues discovered by running `snyk code test` and reported in JSON and SARIF files are displayed differently from the results in the terminal. For more information, see [Severity levels in the JSON and SARIF files](view-snyk-code-cli-results.md#severity-levels-in-json-and-sarif-files).
 
 You can use two methods to export the results to either a JSON or SARIF file. The following instructions show a JSON file, but you can also export a SARIF file.
 
 ### Export test results to a new file with a standard display of results in the terminal
 
-The `snyk code test --json-file-output=<path/to/new_file>` command is available in the Snyk CLI v. 1.910.0 and higher. To update your Snyk CLI version, see [Install or update the Snyk CLI](../../install-or-update-the-snyk-cli/).
+The `snyk code test --json-file-output=<path/to/new_file>` command is available in the Snyk CLI v. 1.910.0 and higher. To update your Snyk CLI version, see [Install or update the Snyk CLI](../../install-the-snyk-cli/).
 
-To export the results to a new JSON file, with a standard  display of results in the terminal, use the following command:
+To export the results to a new JSON file, with a standard display of results in the terminal, use the following command:
 
 ```
 snyk code test --json-file-output=<path/to/new_json_file>
@@ -194,4 +194,3 @@ To export the results to a SARIF file without displaying the results in the term
 ```
 snyk code test --sarif > <path/to/new_sarif_file>
 ```
-

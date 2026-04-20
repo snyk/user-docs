@@ -5,7 +5,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Gemini Code Assist t
 ## Prerequisites
 
 * [Install the code assistant extension](gemini-code-assist-guide.md#install-gemini-code-assist)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/)
 * [Install the Snyk MCP](gemini-code-assist-guide.md#install-the-snyk-mcp-server-in-gemini-code-assist)
 
 ### Install Gemini Code Assist
@@ -65,7 +65,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/) page.
 
 You might need to reload the IDE window for the changes to apply. In VS Code, do this by opening the Command Palette and choosing Developer: Reload Window.
 

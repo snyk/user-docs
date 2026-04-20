@@ -151,7 +151,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/) page.
 
 Run `/mcp list` to confirm the Snyk MCP Server is connected.
 

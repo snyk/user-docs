@@ -1,13 +1,13 @@
 # Import Projects
 
-Depending on the integrations you have configured, and the language / package managers in your tech stack, you can import Projects into Snyk using:&#x20;
+Depending on the integrations you have configured, and the language / package managers in your tech stack, you can import Projects into Snyk using:
 
 * A source control integration with your Git repositories
 * The Snyk CLI with CI/CD.
 
-The best import route varies based on the languages and package managers in your tech stack.&#x20;
+The best import route varies based on the languages and package managers in your tech stack.
 
-Here are some key points to determine the best starting point.&#x20;
+Here are some key points to determine the best starting point.
 
 ## Getting started with Snyk
 
@@ -36,13 +36,13 @@ For hundreds or thousands of repositories:
 
 * At scale, Snyk recommends using the API. APIs are available with the Snyk Enterprise plan.
   * Use the [Snyk API](../../../snyk-api/snyk-api.md) to import your Projects. This leverages an existing source control integration and can be used to automate processes.
-  * The  [API-import](../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. The source control structure will need to be mirrored.
+  * The [API-import](../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. The source control structure will need to be mirrored.
 
 ## Snyk CLI
 
 For details, see [Snyk CLI](../../../developer-tools/snyk-cli/).
 
-The CLI allows granular scanning of individual Projects.&#x20;
+The CLI allows granular scanning of individual Projects.
 
 {% hint style="info" %}
 A command must be formulated for each type of test to perform (open source, code, infrastructure as code, and container).
@@ -50,18 +50,18 @@ A command must be formulated for each type of test to perform (open source, code
 
 To use the Snyk CLI:
 
-1. [Install the CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) using one of the appropriate methods as part of the build script.
+1. [Install the CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/) using one of the appropriate methods as part of the build script.
 2. [Authenticate to use the CLI](../../../developer-tools/snyk-cli/authenticate-to-use-the-cli.md) by using the `snyk auth` command or an environment variable.
 3. In the script, navigate to the Project folder.
-4. Run the appropriate `snyk test` or `snyk monitor` commands and options for the type of scan you want to run. \
+4. Run the appropriate `snyk test` or `snyk monitor` commands and options for the type of scan you want to run.\
    \
-   Where to implement testing in your scripts is generally flexible but most commonly prior to deployment. Use the monitor command alone for Snyk Open Source and Snyk Container to passively report. When you are using gating through the `test` command, the purpose is to break the build if issues are found that meet particular criteria like `--severity-threshold` or any number of options in the CLI or the `snyk-filter` plugin. \
+   Where to implement testing in your scripts is generally flexible but most commonly prior to deployment. Use the monitor command alone for Snyk Open Source and Snyk Container to passively report. When you are using gating through the `test` command, the purpose is to break the build if issues are found that meet particular criteria like `--severity-threshold` or any number of options in the CLI or the `snyk-filter` plugin.\
    \
    In general, Snyk Open source is typically run in `test` and/or `monitor` after the dependencies are installed on the build system.\
    \
    A typical command can look as follows:
    * Code: `snyk code test --org=[org-id]`
-   * Open source:&#x20;
+   * Open source:
      * `snyk test --all-projects --org=[org-id]`
      * `snyk monitor --all-projects --org=[org-id]`\
        Replace `[org-id]` with the ID of your Organization.
@@ -69,4 +69,3 @@ To use the Snyk CLI:
 5. Review results either locally when running `snyk test`, or on the Snyk Web UI when using `monitor` or report.
 
 For demonstrations of various pipeline integrations, see [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples).
-

@@ -2,21 +2,21 @@
 
 ## Context for user-defined custom images for CLI
 
-Following Snyk announcements regarding [Snyk CLI Images](https://headwayapp.co/snyk-io-updates/deprecation-notice-for-snyk-cli-images-292562) and [Snyk Images](https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563), Snyk is providing instructions that customers will find useful in building their own custom images. You can visit the [Snyk Images build tool chain](https://github.com/snyk/snyk-images) on GitHub for a list of [currently supported images](https://github.com/snyk/snyk-images?tab=readme-ov-file#current-images).&#x20;
+Following Snyk announcements regarding [Snyk CLI Images](https://headwayapp.co/snyk-io-updates/deprecation-notice-for-snyk-cli-images-292562) and [Snyk Images](https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563), Snyk is providing instructions that customers will find useful in building their own custom images. You can visit the [Snyk Images build tool chain](https://github.com/snyk/snyk-images) on GitHub for a list of [currently supported images](https://github.com/snyk/snyk-images?tab=readme-ov-file#current-images).
 
 {% hint style="info" %}
 Snyk does not build or maintain images that contain end-of-life software by an upstream vendor. The list of unsupported images is available on the [GitHub repo](https://github.com/snyk/snyk-images?tab=readme-ov-file#vendor-unsupported-base-images).
 {% endhint %}
 
-Using custom images will allow you to extend environment support to any [environment](../snyk-cli/install-or-update-the-snyk-cli/) supported by the Snyk CLI.
+Using custom images will allow you to extend environment support to any [environment](../snyk-cli/install-the-snyk-cli/) supported by the Snyk CLI.
 
 ## Requirements for user-defined custom images for CLI
 
 For your custom image to be supported, it must:
 
-* Use an environment [supported](../snyk-cli/install-or-update-the-snyk-cli/) by the Snyk CLI.
+* Use an environment [supported](../snyk-cli/install-the-snyk-cli/) by the Snyk CLI.
 * Use a language and framework [supported](../../supported-languages/supported-languages-package-managers-and-frameworks.md) by Snyk.
-* Have Snyk CLI installed on the image; see [Install or update the Snyk CLI](../snyk-cli/install-or-update-the-snyk-cli/) for steps to install the CLI.
+* Have Snyk CLI installed on the image; see [Install or update the Snyk CLI](../snyk-cli/install-the-snyk-cli/) for steps to install the CLI.
 * Be publicly accessible; the integration will pull the image.
 
 ## Use of user-defined custom images for CLI
@@ -58,7 +58,7 @@ docker build <PATH-TO-DOCKERFILE> --tag foobar/snyk:node-lts
 docker push foobar/snyk:node-lts
 ```
 
-### Example: how to use a custom image in a BitBucket pipeline&#x20;
+### Example: how to use a custom image in a BitBucket pipeline
 
 Compatibility in the BitBucket Pipeline integration is limited to environments supported by the Docker container the integration runs in. Following the Snyk announcement [Decoupling Snyk Scan from Snyk CLI Docker Images](https://updates.snyk.io/decoupling-snyk-scan-from-snyk-cli-docker-images-277502), before v1.0.0, the experience was limited to environments supported by the Snyk CLI Docker Images.
 

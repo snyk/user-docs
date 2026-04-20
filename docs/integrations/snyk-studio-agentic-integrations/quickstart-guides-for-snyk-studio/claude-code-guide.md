@@ -125,7 +125,7 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/) page.
 
 </details>
 
@@ -147,7 +147,7 @@ claude mcp add --transport sse snyk http://127.0.0.1:7695/sse
 
 Watch this step-by-step [YouTube video](https://www.youtube.com/watch?v=qAcTPMXbfyU). showing how to configure the Snyk MCP Server with Claude Code CLI.
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/) page.
 
 The following examples shows a Snyk MCP Server that was successfully configured and started.
 

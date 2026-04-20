@@ -8,7 +8,11 @@ Snyk values the security community and believes that responsible disclosure of s
 
 If you believe you have found a security vulnerability in any Snyk services, please let Snyk know right away. Snyk will investigate all legitimate reports and strive to fix the problem quickly. Before reporting, though, please review the [Snyk Responsible Disclosure Policy](reporting-security-issues.md#snyk-responsible-disclosure-policy).
 
-Use the [Snyk Vulnerability Disclosure Program on Intigriti](https://app.intigriti.com/company/programs/snyk/snykvdp/detail) to report vulnerabilities affecting Snyk products. Please do not contact Snyk employees directly or through other channels about a security report.&#x20;
+Use the [Snyk Vulnerability Disclosure Program on Intigriti](https://app.intigriti.com/company/programs/snyk/snykvdp/detail) to report vulnerabilities affecting Snyk products. Please do not contact Snyk employees directly or through other channels about a security report.
+
+### Reporting a vulnerability without an Intigriti account
+
+Use this [form](https://embedded.intigriti.com/embedded-submission-form/7686dc1e-47fc-4713-8aca-8e92b1b0add6) to report a vulnerability without using an Intigriti account.
 
 ## Snyk responsible disclosure policy
 

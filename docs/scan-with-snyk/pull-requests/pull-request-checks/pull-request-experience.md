@@ -43,9 +43,12 @@ Ensure the following is complete:
 Additional to the general SCM and PR Checks prerequisites, certain features within the pull request experience have their own requirements:
 
 * To configure the inline comments feature, enable the **Code analysis** PR checks setting. This is located on the Organization level under **Settings** > **Integrations**.
-* Specify a dedicated GitHub account if you are using a GitHub integration. This helps Snyk identify the comments source on pull requests.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-11-27 at 14.14.35.png" alt=""><figcaption><p>Code analysis feature for pull request status checks</p></figcaption></figure>
+
+* If you are using the GitHub Integration, specify a dedicated GitHub account by supplying a **GitHub Personal Access Token (PAT)** in the integration settings. This is required to be able to add inline comments or Agent Fix
+
+<figure><img src="../../../.gitbook/assets/github_pr_settings.png" alt=""><figcaption></figcaption></figure>
 
 ### SCM permission and access scope requirements
 
@@ -156,6 +159,8 @@ Inline comments are available only for issues detected by Snyk Code PR Checks. T
 <figure><img src="../../../.gitbook/assets/enable_snyk_code.png" alt=""><figcaption><p>Configuration details to enable Snyk Code</p></figcaption></figure>
 
 2. **Code Analysis** is enabled in the Pull request status checks section for your integration.
+
+PR Comments can only be added for issues detected in a PR Check. If issues are of lower severity than your Fail Condition, the PR check will not detect them.
 
 <figure><img src="../../../.gitbook/assets/enable_code_analysis.png" alt=""><figcaption><p>Configuration details to enable Code Analysis</p></figcaption></figure>
 

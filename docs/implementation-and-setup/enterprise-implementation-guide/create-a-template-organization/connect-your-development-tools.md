@@ -26,11 +26,15 @@ The following table outlines the difference between these two implementation lev
 
 ### Configure SCM integrations for Groups
 
-Configure your source control manager (SCM) at the Group level to centralize authentication. This allows Snyk to access your repositories across multiple Organizations without requiring individual configuration for each one.
+Configure your Source Control Manager (SCM) at the Group level to centralize authentication. This allows Snyk to access your repositories across multiple Organizations without requiring individual configuration for each one.
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1775661962/3._Group-Level_Repository_Discovery_jvicn7.mp4" %}
+Group level repository discovery video guide
+{% endembed %}
 
 {% stepper %}
 {% step %}
-### Select your SCM platform
+#### Select your SCM platform
 
 {% hint style="success" %}
 **Key decision:** Choose the SCM platform that hosts your primary development work and determine if you require **Snyk Broker** for an on-premise connection.
@@ -43,7 +47,7 @@ If your SCM is behind a firewall, you must install and configure Snyk Broker to 
 {% endstep %}
 
 {% step %}
-### Authenticate the integration
+#### Authenticate the integration
 
 {% hint style="success" %}
 **Key decision:** Determine which service account or administrative user will provide the initial OAuth or Personal Access Token (PAT) to ensure the connection remains stable.
@@ -55,7 +59,7 @@ If your SCM is behind a firewall, you must install and configure Snyk Broker to 
 {% endstep %}
 
 {% step %}
-### Align with your Organization structure
+#### Align with your Organization structure
 
 {% hint style="success" %}
 **Key decision:** Decide if you will use a single Group-level integration or if specific Organizations require separate credentials based on your established hierarchy.
@@ -85,7 +89,7 @@ If you are using multiple SCMs, Snyk recommends using separate Organizations for
 
 {% stepper %}
 {% step %}
-### Establish granular authentication
+#### Establish granular authentication
 
 {% hint style="success" %}
 **Key decision:** Determine if this specific Organization requires a unique access token or a different service account than the one used at the Group level.
@@ -100,7 +104,7 @@ Set up your Org-level integrations by navigating in your Organization to the **I
 {% endstep %}
 
 {% step %}
-### Consider specific Snyk Broker tokens
+#### Consider specific Snyk Broker tokens
 
 {% hint style="success" %}
 **Key decision:** Identify if this Organization requires a dedicated Snyk Broker token to segment network traffic or satisfy distinct security requirements.
@@ -117,7 +121,7 @@ If you are using Azure Repos, Snyk recommends using Universal Broker to avoid Az
 {% endstep %}
 
 {% step %}
-### Define team-specific automation
+#### Define team-specific automation
 
 {% hint style="success" %}
 **Key decision:** Decide which PR check behaviors and fix strategies apply to this team’s specific development workflow.

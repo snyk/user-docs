@@ -10,11 +10,11 @@ Try various CLI options. Use the Snyk CLI to find and fix known vulnerabilities 
 
 ### Step 2: Get logs
 
-If you can replicate the issue using the Command Line Interface (CLI) and the problem still exists, consult the [Debugging the Snyk CLI ](../../snyk-cli/debugging-the-snyk-cli.md) troubleshooting guidelines for capturing logs in a debug mode.
+If you can replicate the issue using the Command Line Interface (CLI) and the problem still exists, consult the [Debugging the Snyk CLI ](../../snyk-cli/debugging-the-snyk-cli.md)troubleshooting guidelines for capturing logs in a debug mode.
 
 ### Step 3: Use the CLI instead of the plugin
 
-Try to replace the native plugin with the CLI by installing the CLI. See [Install the Snyk CLI ](../../snyk-cli/install-or-update-the-snyk-cli/)for instructions.
+Try to replace the native plugin with the CLI by installing the CLI. See [Install the Snyk CLI ](../../snyk-cli/install-the-snyk-cli/)for instructions.
 
 {% hint style="info" %}
 The following repository provides some examples of binary and npm integrations for various CI/CD tools: [GitHub CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples).

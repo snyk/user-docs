@@ -23,6 +23,6 @@ Your selected repositories are re-imported to Snyk. During the re-import process
 
 ## What's next?
 
-* [How importing repositories work](../project-repositories/#how-importing-repositories-works)
-* [Exclude directories and files from the import process](../project-repositories/exclude-directories-and-files-from-project-import.md)
-* [Remove imported repository](../project-repositories/remove-imported-repository-from-a-project.md)
+* [How importing repositories work](../import-project-repository/#how-importing-repositories-works)
+* [Exclude directories and files from the import process](../import-project-repository/exclude-directories-and-files-from-project-import.md)
+* [Remove imported repository](../import-project-repository/remove-imported-repository-from-a-project.md)

@@ -2,7 +2,11 @@
 
 To create your ideal Snyk structure, reflecting the way your business is structured, you need to clone the template Organization created in the previous phase of this guide. This enables you to create multiple Organizations that cover your critical business units.
 
-## Clone the template Org
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1775661958/5._Creating_your_Organization_Structure_pheaur.mp4" %}
+Create your Organization structure video guide
+{% endembed %}
+
+## Clone the template Organization
 
 {% hint style="success" %}
 **Key decision**: Choose between using the Snyk web UI for manual creation or the API for automated, bulk Organization provisioning.

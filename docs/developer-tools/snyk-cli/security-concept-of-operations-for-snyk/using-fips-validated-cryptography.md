@@ -40,7 +40,7 @@ On Windows, Snyk supports FIPS-validated cryptography through the Windows CNG AP
 
 To enable FIPS on Windows, [use the Windows FIPS policy](https://docs.microsoft.com/en-us/windows/security/threat-protection/fips-140-validation#step-3-enable-the-fips-security-policy).
 
-For testing, FIPS can be enabled using the following registry key   `HKLM\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy` by setting the value of `Enabled` to 1.
+For testing, FIPS can be enabled using the following registry key `HKLM\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy` by setting the value of `Enabled` to 1.
 
 #### Download FIPS-enabled binaries
 
@@ -50,7 +50,7 @@ Snyk binaries are available with and without FIPS support. They are all hosted o
 
 **Regular Base URL:** https://downloads.snyk.io/
 
-All instructions on [how to install and use Snyk](../install-or-update-the-snyk-cli/) remain the same. The only required change is using the appropriate Base URL.
+All instructions on [how to install and use Snyk](../install-the-snyk-cli/) remain the same. The only required change is using the appropriate Base URL.
 
 ### Example of downloading and running the FIPS-enabled Snyk CLI
 
@@ -119,4 +119,4 @@ FIPS in [CI/CD Integrations](../../snyk-ci-cd-integrations/) is available only b
 
 ## FIPS-validated cryptography support and use in Package Repositories
 
-The  [Artifactory Gatekeeper plugin](../../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin.md) uses the Snyk API and runs on a Java VM. To make use of FIPS-validated cryptography, configure the Java Runtime to use a FIPS-validated[ JCE (Java Cryptography Extension)](https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?SearchMode=Basic\&ModuleName=java\&CertificateStatus=Active\&ValidationYear=0).
+The [Artifactory Gatekeeper plugin](../../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin.md) uses the Snyk API and runs on a Java VM. To make use of FIPS-validated cryptography, configure the Java Runtime to use a FIPS-validated[ JCE (Java Cryptography Extension)](https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?SearchMode=Basic\&ModuleName=java\&CertificateStatus=Active\&ValidationYear=0).

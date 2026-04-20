@@ -5,7 +5,7 @@ You can access Snyk Studio, including Snyk's MCP server, in Codex CLI to secure 
 ## Prerequisites
 
 * [Install the Codex CLI](codex-cli-guide.md#install-codex-cli)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/)
 * [Install the Snyk MCP](codex-cli-guide.md#install-the-snyk-mcp-server-in-codex-cli-using-npx)
 
 ### Install Codex CLI

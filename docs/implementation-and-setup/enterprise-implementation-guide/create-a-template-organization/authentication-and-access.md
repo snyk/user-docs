@@ -4,7 +4,7 @@
 
 Determine if Snyk pre-defined roles meet your requirements or if you must create custom roles. Snyk uses role-based access control (RBAC) to manage permissions across the Organization level.
 
-### Review Organization-level roles
+## Review Organization-level roles
 
 {% hint style="success" %}
 **Key decision:** Determine if your team leads can operate with the fixed permissions of an Organization Admin or if they require a restricted custom role.
@@ -28,3 +28,7 @@ Your choice of roles depends on how you structured your Snyk Organizations in th
 | **Team-based**            | Assign **Organization Admin** to the specific Team Lead for that Organization.   |
 | **Product-based**         | Assign developers as **Collaborators** across multiple product Orgs.             |
 | **SCM integration-based** | Use custom roles and the Snyk API to automate role assignment during SCM import. |
+
+{% embed url="https://res.cloudinary.com/snyk/video/upload/v1775661961/2._Setting_Up_Roles_and_Permissions_h69yve.mp4" %}
+Setting up roles and permissions video guide
+{% endembed %}

@@ -83,10 +83,10 @@ A preview version is not recommended for production environments. It may contain
   * For fips, add `fips` to the base URL, for example, `https://downloads.snyk.io/fips/cli/stable/snyk-linux`
   * For experimental builds, add `experimental` to the base URL, for example, `https://downloads.snyk.io/experimental/cli/stable/snyk-linux`
 * Installation methods:
-  * [npm](install-or-update-the-snyk-cli/#install-the-snyk-cli-with-npm-or-yarn)
-  * [Homebrew](install-or-update-the-snyk-cli/#install-with-homebrew-macos-linux)
-  * [Scoop](install-or-update-the-snyk-cli/#install-with-scoop-windows)
-  * [Snyk-images](install-or-update-the-snyk-cli/#snyk-cli-in-a-docker-image)
+  * [npm](install-the-snyk-cli/#install-the-snyk-cli-with-npm-or-yarn)
+  * [Homebrew](install-the-snyk-cli/#install-with-homebrew-macos-linux)
+  * [Scoop](install-the-snyk-cli/#install-with-scoop-windows)
+  * [Snyk-images](install-the-snyk-cli/#snyk-cli-in-a-docker-image)
 
 Snyk recommends opting in to a stable channel for the following reasons:
 

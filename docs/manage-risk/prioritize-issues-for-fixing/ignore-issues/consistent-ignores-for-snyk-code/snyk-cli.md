@@ -4,7 +4,7 @@ Ignores are taken into account in the Snyk CLI when `snyk code test` is run.
 
 ## Minimum version required
 
-You must have at least Snyk CLI v1.1297.1 installed for Snyk Code Consistent Ignores. See [Install or update the Snyk CLI](../../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/).
+You must have at least Snyk CLI v1.1297.1 installed for Snyk Code Consistent Ignores. See [Install or update the Snyk CLI](../../../../developer-tools/snyk-cli/install-the-snyk-cli/).
 
 ## Setup
 

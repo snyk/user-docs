@@ -33,9 +33,12 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
 * Language support
   * [Snyk CLI pnpm support](../../supported-languages/supported-languages-list/javascript/#support-for-pnpm)
   * [Improved Gradle SCM scanning](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning)
+  * [CLI support for uv](../../supported-languages/supported-languages-list/python/cli-support-for-uv.md)
 * Reports
   * [Repositories tested in CI/CD report](../../manage-risk/analytics/reports-tab/prevention-reports.md#repositories-tested-in-ci-cd-report)
 * [Snyk 2.0 platform improvements](snyk-2.0-platform-improvements.md)
+
+
 
 ### Deprecated features
 

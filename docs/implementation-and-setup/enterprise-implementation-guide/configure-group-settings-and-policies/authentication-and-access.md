@@ -86,7 +86,7 @@ Features like Snyk Analytics are available only on Enterprise plans. You can swi
 
 Pre-defined roles at these levels have fixed permissions that cannot be modified.
 
-#### Group-level roles
+**Group-level roles**
 
 * **Group Admin**: Provides full permissions at the Group and Organization levels. Assign this role to Snyk administrators.
 * **Group Member**: Allows access to the Group but requires specific Organization-level permissions to interact with Projects.
@@ -94,7 +94,7 @@ Pre-defined roles at these levels have fixed permissions that cannot be modified
 {% endstep %}
 {% endstepper %}
 
-## Set custom roles
+### Set custom roles
 
 {% hint style="success" %}
 **Key decision**: Identify if you need a "middle-ground" role, such as a Senior Developer who can, for example, override checks but cannot delete Projects.

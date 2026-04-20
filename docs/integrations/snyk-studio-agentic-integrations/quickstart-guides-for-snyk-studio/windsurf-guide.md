@@ -55,7 +55,7 @@ Once authenticated, Snyk Studio should be triggered whenever new code is generat
 ## Prerequisites
 
 * [Install Windsurf](windsurf-guide.md#install-windsurf)
-* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/)
+* [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/)
 * [Install the Snyk MCP](windsurf-guide.md#install-the-snyk-mcp-server-in-windsurf)
 
 ### Install Windsurf
@@ -157,4 +157,4 @@ If you have the Snyk CLI installed and accessible on your system path, include t
 }
 ```
 
-If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) page.
+If the `snyk` command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/) page.

@@ -2,15 +2,15 @@
 
 The Export API, which Snyk Analytics supports, makes it easier to export data by allowing users to create and manage CSV files. These files are safely stored by Snyk. Designed for efficiency and security, the Export API helps users organize and scale the export of large datasets, which is useful for reporting and analytics tasks.
 
-You can use the Export API to export the Snyk **issues** and **usage** **events** datasets in the scope of `Snyk Organization` or `Snyk Group`. Navigate to the [available columns and filters](export-api-specifications-columns-and-filters.md#available-columns-and-filters) section to see the full lists.
+You can use the Export API to export the Snyk `issues`, `usage events`, `pr checks`, `pr checks project adoption`, and `pr checks integration adoption` datasets in the scope of `Snyk Organization` or `Snyk Group`. Navigate to the [available columns and filters](export-api-specifications-columns-and-filters.md#available-columns-and-filters) section to see the full lists.
 
 {% hint style="info" %}
 Before running the first export, ensure that all API requests include:
 
 * The API version parameter. The latest version is `2024-10-15`. You can also include the date of the current day for the version if you want to auto-upgrade when you use the API.
 * The authorization header. Use a user or a service account Snyk API Token.
-* The `dataset` parameter. The only valid values are `issues` or `usage`. This parameter is required to specify which dataset you want to export.
-* At least one date filter (`introduced` for the `issues` dataset or `updated` for either)
+* The `dataset` parameter. The only valid values are `issues`, `usage`, `pr_checks`, `pr_checks_project_adoption`, `pr_checks_integration_adoption`. This parameter is required to specify which dataset you want to export.
+* At least one date filter (`introduced` for the `issues` dataset or `updated` for any)
 {% endhint %}
 
 ## Data consumption process
@@ -279,3 +279,223 @@ At least one date filter (`introduced` for the `issues` dataset or `updated` for
 #### Snyk hierarchy
 
 <table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>group_public_id</code></td><td>A universally unique identifier for a Group, assigned in the source database of the record.</td></tr><tr><td><code>org_public_id</code></td><td>A universally unique identifier for an Organization, assigned in the source database of the record.</td></tr><tr><td><code>group_display_name</code></td><td>The display name set for this Group.</td></tr><tr><td><code>group_slug</code></td><td>The name of the Group within Snyk.</td></tr><tr><td><code>org_display_name</code></td><td>The display name set for this Organization.</td></tr><tr><td><code>org_slug</code></td><td>The name for the Organization within Snyk.</td></tr><tr><td><code>user_email</code></td><td>The email of the user who was authenticated during the interaction.</td></tr><tr><td><code>user_name</code></td><td>The name of the user who was authenticated during the interaction.</td></tr></tbody></table>
+
+### PR checks dataset columns
+
+#### Available columns
+
+<details>
+
+<summary>A list of all columns that can be easily copied to the request body</summary>
+
+{% code title="" overflow="wrap" expandable="true" %}
+```yaml
+"PUBLIC_ID",
+"PR_CHECK_GROUP_ID",
+"TEST_ID",
+"PROJECT_PUBLIC_ID",
+"ORG_PUBLIC_ID",
+"GROUP_PUBLIC_ID",
+"ASSET_ID",
+"PARENT_ASSET_ID",
+"PR_CHECK_CREATED_AT",
+"PR_CHECK_MODIFIED_AT",
+"CHECK_GROUP_CREATED_AT",
+"CHECK_GROUP_MODIFIED_AT",
+"PULL_REQUEST",
+"PULL_DATA_REF",
+"REPOSITORY_NAME",
+"PROJECT_ORIGIN",
+"PRODUCT_NAME",
+"PR_CHECK_STATE",
+"PR_CHECK_GROUP_STATE",
+"MARKED_AS_SUCCESS",
+"PR_CHECK_RESULT_DESCRIPTION",
+"OLD_VERSION_SHA",
+"NEW_VERSION_SHA",
+"MERGE_BASE_VERSION_SHA",
+"ERROR_MESSAGE",
+"ERROR_CODE",
+"ERROR_STATUS",
+"ERROR_CATALOG_URL",
+"ERROR_CLASSIFICATION",
+"SETTINGS_POLICY",
+"SETTINGS_SEVERITY_THRESHOLD",
+"IS_SETTINGS_FAIL_ONLY_FIXABLE",
+"ORG_DISPLAY_NAME",
+"ORG_SLUG",
+"GROUP_DISPLAY_NAME",
+"GROUP_SLUG",
+"ORG_DELETED_AT",
+"GROUP_DELETED_AT",
+"PROJECT_DELETED_AT",
+"IS_PROJECT_MONITORED",
+"PROJECT_TYPE",
+"PROJECT_TYPE_DISPLAY_NAME",
+"PROJECT_TARGET_REF",
+"PROJECT_TARGET_UPSTREAM_URL",
+"UPDATED_AT"
+```
+{% endcode %}
+
+
+
+</details>
+
+#### **PR check context**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>public_id</code></td><td>UUID for the pull request check.</td></tr><tr><td><code>pr_check_group_id</code></td><td>The identifier of the parent pull request check Group. A pull request check Group represents each time Snyk runs pull request checks on a specific pull request for a given product. A single Group contains multiple pull request checks if the target repository has multiple Projects associated with a specific Snyk product (for example, multiple language dependencies).</td></tr><tr><td><code>test_id</code></td><td>Identifier of the test results associated with the test-service.</td></tr><tr><td><code>product_name</code></td><td>The Snyk product associated with the check, for example, <code>Snyk Open Source</code> or <code>Snyk Code</code>.</td></tr><tr><td><code>pr_check_state</code></td><td>The status of the individual check for a specific product type, for example, <code>success</code>, <code>failure</code>, or <code>error</code>.</td></tr><tr><td><code>pr_check_group_state</code></td><td>The aggregate status of the parent check group across all product checks, for example, <code>success</code>, <code>failure</code>, or <code>error</code>.</td></tr><tr><td><code>marked_as_success</code></td><td>Indicates whether the check group was manually marked as successful by a user, overriding a failure state.</td></tr><tr><td><code>pr_check_result_description</code></td><td>Summary of the check results.</td></tr><tr><td><code>pr_check_created_at</code></td><td>Timestamp when the pull request check was created.</td></tr><tr><td><code>pr_check_modified_at</code></td><td>Timestamp when the pull request check was last updated.</td></tr><tr><td><code>check_group_created_at</code></td><td>Timestamp when the parent check group was created.</td></tr><tr><td><code>check_group_modified_at</code></td><td>Timestamp when the parent check group was last updated.</td></tr><tr><td><code>updated_at</code></td><td>When the PR check or any related context was last updated.</td></tr></tbody></table>
+
+#### **Pull request context**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>pull_request</code></td><td>The pull request that triggered the check.</td></tr><tr><td><code>pull_data_ref</code></td><td>Reference of the pull request that triggered the check.</td></tr><tr><td><code>repository_name</code></td><td>The display name of the repository (target) associated with the project.</td></tr><tr><td><code>old_version_sha</code></td><td>Commit SHA for the base revision used in the scan.</td></tr><tr><td><code>new_version_sha</code></td><td>Commit SHA for the head revision used in the scan.</td></tr><tr><td><code>merge_base_version_sha</code></td><td>Commit SHA for the merge base between the compared revisions.</td></tr></tbody></table>
+
+#### **Check settings**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>settings_policy</code></td><td>Description of the policy applied to the check run (for example, <code>only_new</code> or <code>all</code>).</td></tr><tr><td><code>settings_severity_threshold</code></td><td>The severity threshold at which the pull request check is configured to fail.</td></tr><tr><td><code>is_settings_fail_only_fixable</code></td><td>Indicates whether the check was configured to fail only on issues that have an available fix.</td></tr></tbody></table>
+
+#### **Error context**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>error_message</code></td><td>Human-readable error message when the check resulted in an error or skipped state.</td></tr><tr><td><code>error_code</code></td><td>Snyk error catalog code identifying the type of error, for example, <code>SNYK-PR-CHECK-0009</code>.</td></tr><tr><td><code>error_status</code></td><td>HTTP status code associated with the error.</td></tr><tr><td><code>error_catalog_url</code></td><td>URL to the Snyk error catalog documentation page for the specific error code.</td></tr><tr><td><code>error_classification</code></td><td><code>ACTIONABLE</code> indicates that the input is not in a format or state usable by Snyk, but there are steps you can take to resolve the issue. <code>UNSUPPORTED</code> indicates that Snyk cannot handle the data sent. For example, a project that uses a version of Python that is no longer supported.</td></tr></tbody></table>
+
+#### **Snyk hierarchy**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>group_public_id</code></td><td>A universally unique identifier for a Group, assigned in the source database of the record.</td></tr><tr><td><code>org_public_id</code></td><td>A universally unique identifier for an Organization, assigned in the source database of the record.</td></tr><tr><td><code>group_display_name</code></td><td>The display name set for this Group.</td></tr><tr><td><code>group_slug</code></td><td>The name of the Group within Snyk.</td></tr><tr><td><code>org_display_name</code></td><td>The display name set for this Organization.</td></tr><tr><td><code>org_slug</code></td><td>The name for the Organization within Snyk.</td></tr><tr><td><code>asset_id</code></td><td>Identifier of the asset linked to the Project.</td></tr><tr><td><code>parent_asset_id</code></td><td>Identifier of the repository parent asset linked to the project.</td></tr></tbody></table>
+
+#### **Project and Target context**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>project_public_id</code></td><td>A universally unique identifier for a Project, assigned in the source database of the record.</td></tr><tr><td><code>project_origin</code></td><td>The origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes.</td></tr><tr><td><code>project_type</code></td><td>The scanning method to use for a particular Project, such as Static Application Security Testing (SAST) for Snyk Code, or Maven for a Maven Project using Snyk Open Source.</td></tr><tr><td><code>project_type_display_name</code></td><td>A display name Snyk assigned to internal Project type values.</td></tr><tr><td><code>project_target_ref</code></td><td>A reference that differentiates this Project, for example, a branch name or version.</td></tr><tr><td><code>project_target_upstream_url</code></td><td>The URL that points to a Target's upstream source, such as a URL for a GitHub repository.</td></tr><tr><td><code>is_project_monitored</code></td><td>Indicates whether the Project is set to be actively monitored.</td></tr><tr><td><code>project_deleted_at</code></td><td>When the Project was deleted from Snyk.</td></tr><tr><td><code>org_deleted_at</code></td><td>When the Organization was deleted from Snyk.</td></tr><tr><td><code>group_deleted_at</code></td><td>When the Group was deleted from Snyk.</td></tr></tbody></table>
+
+### PR check project adoption columns
+
+#### Available columns
+
+<details>
+
+<summary>A list of all columns that can be easily copied to the request body</summary>
+
+{% code title="" overflow="wrap" expandable="true" %}
+```yaml
+"PR_CHECKS_PROJECT_ADOPTION_ID",
+"EFFECTIVE_AT",
+"ENDS_AT",
+"IS_CURRENT_SETTINGS",
+"PROJECT_PUBLIC_ID",
+"GROUP_PUBLIC_ID",
+"ORG_PUBLIC_ID",
+"ASSET_ID",
+"PARENT_ASSET_ID",
+"ORG_SOURCE_PUBLIC_ID",
+"SOURCE_INTEGRATION_TYPE",
+"PROJECT_CREATED",
+"PRODUCT_NAME",
+"PROJECT_DELETED",
+"TARGET_DELETED",
+"IS_PROJECT_MONITORED_HISTORICAL",
+"PROJECT_DELETED_HISTORICAL",
+"TEST_PULL_REQUESTS",
+"PULL_REQUESTS_POLICY",
+"PULL_REQUESTS_SEVERITY_THRESHOLD",
+"IS_PULL_REQUEST_FAIL_ONLY_FOR_ISSUES_WITH_FIX",
+"REPOSITORY_NAME",
+"ORG_DISPLAY_NAME",
+"ORG_SLUG",
+"GROUP_DISPLAY_NAME",
+"GROUP_SLUG",
+"ORG_DELETED_AT",
+"GROUP_DELETED_AT",
+"PROJECT_DELETED_AT",
+"IS_PROJECT_MONITORED",
+"PROJECT_TYPE",
+"PROJECT_TYPE_DISPLAY_NAME",
+"PROJECT_ORIGIN",
+"PROJECT_TARGET_REF",
+"PROJECT_TARGET_UPSTREAM_URL",
+"PROJECT_CRITICALITIES",
+"PROJECT_LIFECYCLES",
+"PROJECT_ENVIRONMENTS",
+"PROJECT_COLLECTIONS",
+"PROJECT_TAGS",
+"UPDATED_AT"
+```
+{% endcode %}
+
+
+
+</details>
+
+#### **Adoption history context**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>pr_checks_project_adoption_id</code></td><td>Key uniquely identifying this historical project PR checks adoption settings period.</td></tr><tr><td><code>effective_at</code></td><td>Timestamp when this project pr check configuration state became effective.</td></tr><tr><td><code>ends_at</code></td><td>Timestamp when this project pr check configuration state ended. No data if the configuration is currently active.</td></tr><tr><td><code>is_current_settings</code></td><td>Indicates whether this row represents the currently active configuration for the project.</td></tr><tr><td><code>updated_at</code></td><td>When the record or any related context was last updated.</td></tr></tbody></table>
+
+#### **PR check settings**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>test_pull_requests</code></td><td>Indicates whether PR testing is enabled at the project level. No data if the project inherits its setting from the integration.</td></tr><tr><td><code>pull_requests_policy</code></td><td>The policy applied to the check run, for example, <code>only_new</code> or <code>all</code>. No data if inheriting from the integration.</td></tr><tr><td><code>pull_requests_severity_threshold</code></td><td>The severity threshold at which PR checks are configured to fail. No data if inheriting from the integration.</td></tr><tr><td><code>is_pull_request_fail_only_for_issues_with_fix</code></td><td>Indicates whether PR checks are configured to fail only on issues that have an available fix. No data if inheriting from the integration.</td></tr><tr><td><code>product_name</code></td><td>The Snyk product associated with the project, for example, <code>Snyk Open Source</code> or <code>Snyk Code</code>.</td></tr></tbody></table>
+
+#### **Project and Target context**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>project_public_id</code></td><td>A universally unique identifier for a Project, assigned in the source database of the record.</td></tr><tr><td><code>repository_name</code></td><td>The display name of the repository (target) associated with the project.</td></tr><tr><td><code>org_source_public_id</code></td><td>UUID for the organization source (integration) linked to the project.</td></tr><tr><td><code>source_integration_type</code></td><td>Type of source integration, for example, <code>scm</code>.</td></tr><tr><td><code>project_created</code></td><td>Timestamp when the project was created.</td></tr><tr><td><code>project_deleted</code></td><td>Timestamp when the project was deleted, if applicable.</td></tr><tr><td><code>target_deleted</code></td><td>Timestamp when the target containing the project was deleted, if applicable.</td></tr><tr><td><code>is_project_monitored_historical</code></td><td>Indicates whether the project was monitored during this historical settings period.</td></tr><tr><td><code>project_deleted_historical</code></td><td>Indicates whether the project was marked as deleted during this historical settings period.</td></tr><tr><td><code>project_type</code></td><td>The scanning method to use for a particular Project, such as Static Application Security Testing (SAST) for Snyk Code, or Maven for a Maven Project using Snyk Open Source.</td></tr><tr><td><code>project_type_display_name</code></td><td>A display name Snyk assigned to internal Project type values.</td></tr><tr><td><code>project_origin</code></td><td>The origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes.</td></tr><tr><td><code>project_target_ref</code></td><td>A reference that differentiates this Project, for example, a branch name or version.</td></tr><tr><td><code>project_target_upstream_url</code></td><td>The URL that points to a Target's upstream source, such as a URL for a GitHub repository.</td></tr><tr><td><code>is_project_monitored</code></td><td>Indicates whether the Project is currently set to be actively monitored.</td></tr><tr><td><code>project_deleted_at</code></td><td>When the Project was deleted from Snyk.</td></tr><tr><td><code>project_criticalities</code></td><td>A Project attribute that indicates business criticality, for example, <code>low</code>, <code>medium</code>, <code>high</code>, <code>critical</code>.</td></tr><tr><td><code>project_lifecycles</code></td><td>A Project attribute, for example, <code>production</code>, <code>development</code>, <code>sandbox</code>.</td></tr><tr><td><code>project_environments</code></td><td>A Project attribute, for example, <code>frontend</code>, <code>backend</code>, <code>internal</code>, <code>external</code>, <code>mobile</code>, <code>saas</code>, <code>onprem</code>, <code>hosted</code>, <code>distributed</code>.</td></tr><tr><td><code>project_collections</code></td><td>All Project collections to which this Project has been added.</td></tr><tr><td><code>project_tags</code></td><td>All tags which have been assigned to this Project.</td></tr></tbody></table>
+
+#### **Snyk hierarchy**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>group_public_id</code></td><td>A universally unique identifier for a Group, assigned in the source database of the record.</td></tr><tr><td><code>org_public_id</code></td><td>A universally unique identifier for an Organization, assigned in the source database of the record.</td></tr><tr><td><code>group_display_name</code></td><td>The display name set for this Group.</td></tr><tr><td><code>group_slug</code></td><td>The name of the Group within Snyk.</td></tr><tr><td><code>org_display_name</code></td><td>The display name set for this Organization.</td></tr><tr><td><code>org_slug</code></td><td>The name for the Organization within Snyk.</td></tr><tr><td><code>org_deleted_at</code></td><td>When the Organization was deleted from Snyk.</td></tr><tr><td><code>group_deleted_at</code></td><td>When the Group was deleted from Snyk.</td></tr><tr><td><code>asset_id</code></td><td>Identifier of the asset linked to the project.</td></tr><tr><td><code>parent_asset_id</code></td><td>Identifier of the repository parent asset linked to the project.</td></tr></tbody></table>
+
+### PR check integration adoption columns
+
+#### Available columns
+
+<details>
+
+<summary>A list of all columns that can be easily copied to the request body</summary>
+
+{% code title="" overflow="wrap" expandable="true" %}
+```yaml
+"PR_CHECKS_INTEGRATION_ADOPTION_ID",
+"EFFECTIVE_AT",
+"ENDS_AT",
+"IS_CURRENT_SETTINGS",
+"ORG_SOURCE_PUBLIC_ID",
+"GROUP_PUBLIC_ID",
+"ORG_PUBLIC_ID",
+"SOURCE_TYPE",
+"SOURCE_INTEGRATION_TYPE",
+"ORG_SOURCE_CREATED",
+"ORG_SOURCE_DELETED",
+"ORG_SOURCE_DELETED_HISTORICAL",
+"IS_PULL_REQUEST_TEST_OPEN_SOURCE_ENABLED",
+"IS_PULL_REQUEST_CHECK_OPEN_SOURCE_FAIL_ON_ANY_VULNS",
+"IS_PULL_REQUEST_CHECK_OPEN_SOURCE_FAIL_ONLY_FOR_HIGH_OR_CRITICAL_SEVERITY",
+"IS_PULL_REQUEST_CHECK_OPEN_SOURCE_FAIL_ONLY_FOR_ISSUES_WITH_FIX",
+"IS_PULL_REQUEST_TEST_CODE_ENABLED",
+"PULL_REQUEST_CHECK_CODE_SEVERITY",
+"UPDATED_AT"
+```
+{% endcode %}
+
+
+
+</details>
+
+#### **Adoption history context**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>pr_checks_integration_adoption_id</code></td><td>Key uniquely identifying this historical integration PR checks adoption settings period.</td></tr><tr><td><code>effective_at</code></td><td>Timestamp when this integration pr check configuration state became effective.</td></tr><tr><td><code>ends_at</code></td><td>Timestamp when this integration pr check configuration state ended. No data if the configuration is currently active.</td></tr><tr><td><code>is_current_settings</code></td><td>Indicates whether this row represents the currently active configuration for the integration.</td></tr><tr><td><code>updated_at</code></td><td>When the record or any related context was last updated.</td></tr></tbody></table>
+
+#### **Integration context**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>org_source_public_id</code></td><td>UUID for the organization source (integration).</td></tr><tr><td><code>source_type</code></td><td>Type of the source, for example, <code>github</code>, <code>gitlab</code>, <code>bitbucket</code>.</td></tr><tr><td><code>source_integration_type</code></td><td>Type of source integration, for example, <code>scm</code>.</td></tr><tr><td><code>org_source_created</code></td><td>Timestamp when the integration for the organization was created.</td></tr><tr><td><code>org_source_deleted</code></td><td>Timestamp when the integration for the organization was deleted.</td></tr><tr><td><code>org_source_deleted_historical</code></td><td>Indicates whether the integration was marked as deleted during this historical settings period.</td></tr></tbody></table>
+
+#### **Snyk Open Source PR check settings**
+
+| `is_pull_request_test_open_source_enabled`                                  | Indicates whether Snyk Open Source PR checks are enabled for the integration.                                                |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `is_pull_request_check_open_source_fail_on_any_vulns`                       | Indicates whether Snyk Open Source PR checks are configured to fail on any open source vulnerabilities versus only new ones. |
+| `is_pull_request_check_open_source_fail_only_for_high_or_critical_severity` | Indicates whether Snyk Open Source PR checks are configured to fail only for high or critical severity open source issues.   |
+| `is_pull_request_check_open_source_fail_only_for_issues_with_fix`           | Indicates whether Snyk Open Source PR checks are configured to fail only for open source issues that have an available fix.  |
+
+#### **Snyk Code PR check settings**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>is_pull_request_test_code_enabled</code></td><td>Indicates whether Snyk Code PR checks are enabled for the integration.</td></tr><tr><td><code>pull_request_check_code_severity</code></td><td>The severity threshold at which Snyk Code PR checks are configured to fail.</td></tr></tbody></table>
+
+#### **Snyk hierarchy**
+
+<table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>group_public_id</code></td><td>A universally unique identifier for a Group, assigned in the source database of the record.</td></tr><tr><td><code>org_public_id</code></td><td>A universally unique identifier for an Organization, assigned in the source database of the record.</td></tr></tbody></table>

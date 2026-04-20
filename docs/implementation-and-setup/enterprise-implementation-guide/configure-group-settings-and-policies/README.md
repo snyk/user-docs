@@ -24,8 +24,8 @@ For example, identify people who can perform the following tasks:
 
 To identify priority applications, categorize them based on:
 
-* **Business impact**: Applications that handle sensitive data or generate high revenue.&#x20;
-* **Exposure**: Public-facing apps or those with high-risk network configurations.&#x20;
+* **Business impact**: Applications that handle sensitive data or generate high revenue.
+* **Exposure**: Public-facing apps or those with high-risk network configurations.
 * **Development activity**: Teams with active release cycles that can implement fixes quickly.
 
 ## Structure your account
@@ -44,7 +44,7 @@ Snyk uses a hierarchical structure to manage all assets and security policies. T
 
 To learn more, visit [Structure your account](structure-your-account.md).
 
-## Authentication and access: Set up SSO
+## Authentication and access: set up SSO
 
 Implement Single Sign-On (SSO) at the Group level before rolling Snyk out to your organization. While pilot teams often start with personal authentication, transitioning to SSO is required for broad adoption, consistent login access, and centralized control.
 
@@ -58,7 +58,7 @@ Choose a provisioning strategy that defines the user experience and access level
 
 To learn more, visit [Authentication and access](authentication-and-access.md).
 
-## Authentication and access: Role management
+## Authentication and access: role management
 
 {% hint style="success" %}
 **Key decisions:**

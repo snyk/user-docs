@@ -10,7 +10,7 @@ Before using the Snyk CLI for testing your source code with Snyk Code, verify yo
 * Repositories with code in [supported languages and frameworks](../../../../supported-languages/supported-languages-package-managers-and-frameworks.md).
 * The **Snyk Code** option [enabled in your Snyk Org settings](../../../../scan-with-snyk/snyk-code/configure-snyk-code.md).
 * The Snyk CLI installed and authenticated.
-  * For instructions, see [Install or update the Snyk CLI](../../install-or-update-the-snyk-cli/) and [Authenticate the Snyk CLI](../../authenticate-to-use-the-cli.md).
+  * For instructions, see [Install or update the Snyk CLI](../../install-the-snyk-cli/) and [Authenticate the Snyk CLI](../../authenticate-to-use-the-cli.md).
   * The minimum Snyk CLI version for Snyk Code, version 1.716.0. Snyk recommends using the latest version of the CLI.
 
 ## Using the Snyk CLI for Snyk Code tests
@@ -20,7 +20,7 @@ For more information, see [Scan source code with Snyk Code using the CLI](scan-s
 
 Before running Snyk Code tests with the CLI, you may want to do the following:
 
-* [Update your Snyk CLI version](../../install-or-update-the-snyk-cli/).
+* [Update your Snyk CLI version](../../install-the-snyk-cli/).
 * [Set the Organization for the CLI tests](set-the-snyk-organization-for-the-cli-tests.md).
 * [Exclude directories and files from the Snyk Code test](exclude-directories-and-files-from-snyk-code-cli-tests.md).
 
