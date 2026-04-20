@@ -9,11 +9,11 @@ Each rule includes the following information.
 
 | Rule Name                                                    | CWE(s)           | Security Categories    | Autofixable |
 | ------------------------------------------------------------ | ---------------- | ---------------------- | ----------- |
-| Android Debug Mode Enabled                                   | CWE-489          | None                   | No          |
-| Debug Features Enabled                                       | CWE-215          | None                   | No          |
-| Generation of Error Message Containing Sensitive Information | CWE-209          | OWASP:A04              | No          |
-| Improper Restriction of Rendered UI Layers or Frames         | CWE-1021         | OWASP:A04              | No          |
-| ASP SSL Disabled                                             | CWE-319          | OWASP:A02              | No          |
-| Use of Hardcoded Passwords                                   | CWE-798, CWE-259 | Sans Top 25, OWASP:A07 | No          |
-| Request Validation Disabled                                  | CWE-554          | None                   | No          |
-| Struts Development Mode Enabled                              | CWE-489          | None                   | No          |
+| Android Debug Mode Enabled                                   | CWE-489          | None                   | Yes          |
+| Debug Features Enabled                                       | CWE-215          | None                   | Yes          |
+| Generation of Error Message Containing Sensitive Information | CWE-209          | OWASP:A04              | Yes          |
+| Improper Restriction of Rendered UI Layers or Frames         | CWE-1021         | OWASP:A04              | Yes          |
+| ASP SSL Disabled                                             | CWE-319          | OWASP:A02              | Yes          |
+| Use of Hardcoded Passwords                                   | CWE-798, CWE-259 | Sans Top 25, OWASP:A07 | Yes          |
+| Request Validation Disabled                                  | CWE-554          | None                   | Yes         |
+| Struts Development Mode Enabled                              | CWE-489          | None                   | Yes         |
