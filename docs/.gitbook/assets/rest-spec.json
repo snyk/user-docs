@@ -23396,7 +23396,7 @@
         "type": "object"
       },
       "ScmResource": {
-        "description": "Resource representing a repository of source files located in\na Source Code Management tool (e.g. GitHub).\n\nScmResources provide Snyk with the requisite information to\nlocate and scan the source files located in the repository.\n\nCurrently supported scans utilizing ScmResources are:\n- SAST scans on (1) ScmResource that references a repo already\nimported into Snyk",
+        "description": "Resource representing a repository of source files located in\na Source Code Management tool (e.g. GitHub).\n\nScmResources provide Snyk with the requisite information to\nlocate and scan the source files located in the repository.\n\nCurrently supported scans utilizing ScmResources are:\n- SAST scans on (1) ScmResource that references a repo already\nimported into Snyk\n- Secrets scans on (1) ScmResource that references a repo already\nimported into Snyk",
         "example": {
           "commit": "8dbd1ea7201a0d49603467981075a633d91e40b9",
           "file_patterns": [],
