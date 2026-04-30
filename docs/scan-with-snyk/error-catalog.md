@@ -1105,9 +1105,9 @@ Snyk was unable to find supported files.
 ### [SNYK-CODE-0007](#snyk-code-0007)
 <a id="#SNYK-CODE-0007"></a>
 
-**SAST Rule extension already exists for the Group**
+**Rule Extension already exists for the Group**
 
-A published SAST Rule extension with the same fully qualified name already exists for the given Group.
+A published Rule Extension with the same fully qualified name already exists for the given Group.
 
 **HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
 
@@ -1116,7 +1116,7 @@ A published SAST Rule extension with the same fully qualified name already exist
 
 **Organization relationships must be unique**
 
-Each Org relationship to a Snyk SAST Rule extension must be unique.
+Each Org relationship to a Snyk Rule Extension must be unique.
 
 Make sure each Org in relationships has a different ID.
 
@@ -1127,7 +1127,7 @@ Make sure each Org in relationships has a different ID.
 
 **Group relationship must match the Group in the requested URL**
 
-You cannot associate a Snyk SAST Rule extension to any other Group.
+You cannot associate a Snyk Rule Extension to any other Group.
 
 Make sure the Group ID under relationships matches the Group ID in the request path.
 
@@ -1138,7 +1138,7 @@ Make sure the Group ID under relationships matches the Group ID in the request p
 
 **Organization outside of the administrating Group**
 
-You cannot use the SAST Rule extensions feature with an Org outside of the administrating Group.
+You cannot use the Rule Extensions feature with an Org outside of the administrating Group.
 
 Make sure each Org in the request is within the requested Group.
 
@@ -1147,23 +1147,23 @@ Make sure each Org in the request is within the requested Group.
 ### [SNYK-CODE-0011](#snyk-code-0011)
 <a id="#SNYK-CODE-0011"></a>
 
-**SAST Rule extension limit reached**
+**Rule Extension limit reached**
 
-You have hit the maximum number of published Snyk SAST Rule extensions allowed for a Group.
+You have hit the maximum number of published Snyk Rule Extensions allowed for a Group.
 
-To create a new SAST Rule extension you will have to remove an existing one.
+To create a new Rule Extension you will have to remove an existing one.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 ### [SNYK-CODE-0012](#snyk-code-0012)
 <a id="#SNYK-CODE-0012"></a>
 
-**SAST Rule Extension already published for the Group**
+**Rule Extension already published for the Group**
 
-The Rule Extension under test conflicts with an already published SAST Rule Extension.
+The Rule Extension under test conflicts with an already published Rule Extension.
 
-A test cannot be performed if a SAST Rule Extension with the same fully qualified name
-and type is already published for the Group. Either delete the already published SAST Rule Extension
+A test cannot be performed if a Rule Extension with the same fully qualified name
+and type is already published for the Group. Either delete the already published Rule Extension
 or perform a test with a different fully qualified name or type.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
@@ -1173,7 +1173,7 @@ or perform a test with a different fully qualified name or type.
 
 **Requested test ID not found**
 
-The requested Test ID for testing SAST Rule Extension was not found.
+The requested Test ID for testing a Rule Extension was not found.
 
 Make sure to provide a valid Test ID.
 
@@ -1184,7 +1184,7 @@ Make sure to provide a valid Test ID.
 
 **Test results have expired**
 
-The results for testing SAST Rule Extensions have expired and are no longer available.
+The results for testing Rule Extensions have expired and are no longer available.
 
 Please trigger a new test.
 
