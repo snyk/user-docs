@@ -4,6 +4,22 @@
 This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
 {% endhint %}
 
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/container_import/{integration_id}/policy" method="post" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/container_import/{integration_id}/policy" method="patch" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/container_import/{integration_id}/policy" method="get" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/container_import/{integration_id}/policy" method="delete" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
+
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/container_import/{integration_id}/policy/dry_run" method="post" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}

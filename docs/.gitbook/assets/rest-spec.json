@@ -8685,7 +8685,7 @@
         "description": "Dep Graph file contents, of the same format as Dep Graphs\nprovided to /v1/test-dep-graph endpoint.",
         "properties": {
           "dep_graph": {
-            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.DepGraph"
+            "$ref": "#/components/schemas/DepGraphRef"
           },
           "type": {
             "enum": [
@@ -8699,6 +8699,34 @@
           "dep_graph"
         ],
         "type": "object"
+      },
+      "DepGraphRef": {
+        "additionalProperties": {},
+        "properties": {
+          "graph": {
+            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.Graph"
+          },
+          "pkgManager": {
+            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.PackageManager"
+          },
+          "pkgs": {
+            "items": {
+              "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.Package"
+            },
+            "type": "array"
+          },
+          "schemaVersion": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "schemaVersion",
+          "pkgManager",
+          "pkgs",
+          "graph"
+        ],
+        "type": "object",
+        "x-go-type": "json.RawMessage"
       },
       "DepGraphSubject": {
         "description": "**Deprecated**\n\nProvide an InlineResource with the DepGraph contents\nand the SCA Scan Configuration instead.\n\nTest subject representing a Snyk dependency graph (a legacy SBOM format).",
@@ -8730,7 +8758,7 @@
           "dep_graph": {
             "allOf": [
               {
-                "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.DepGraph"
+                "$ref": "#/components/schemas/DepGraphRef"
               }
             ],
             "description": "When creating a test, provide the dep-graph contents inline to the request.\n\nThis attribute is only available when creating a new Test."
@@ -10651,6 +10679,14 @@
             "default": false,
             "description": "Did this finding cause the test outcome to fail?",
             "type": "boolean"
+          },
+          "component_key": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/String256"
+              }
+            ],
+            "description": "A test-scoped key referring to the component in which the Finding\noriginated.\n\nComponent keys are unique only within a Test."
           },
           "description": {
             "description": "A longer human-readable text description for this finding.",
@@ -15753,6 +15789,12 @@
           "attributes"
         ],
         "type": "object"
+      },
+      "IntegrationId": {
+        "description": "Container Registry Integration ID",
+        "example": "365764ee-8a87-491a-9c9f-ad816f1238df",
+        "format": "uuid",
+        "type": "string"
       },
       "IntegrationPatchRequestData": {
         "additionalProperties": false,
@@ -24774,6 +24816,14 @@
       "TestAttributes": {
         "description": "TestAttributes represents the attributes of a Test resource.",
         "properties": {
+          "components": {
+            "description": "Scanned Components of the tested content.\n\nUnique on a per-test basis, originating from a single Scan type\nthough a single Scan may identify multiple Components.",
+            "items": {
+              "$ref": "#/components/schemas/TestComponent"
+            },
+            "readOnly": true,
+            "type": "array"
+          },
           "config": {
             "allOf": [
               {
@@ -24981,6 +25031,48 @@
             "type": "string"
           }
         },
+        "type": "object"
+      },
+      "TestComponent": {
+        "description": "TestComponent represents a Test Component.",
+        "properties": {
+          "asset_id": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Uuid"
+              }
+            ],
+            "description": "ID of Asset associated with Component."
+          },
+          "key": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/String256"
+              }
+            ],
+            "description": "Key identifying the component within the Test."
+          },
+          "project_id": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Uuid"
+              }
+            ],
+            "description": "ID of Project associated with Component."
+          },
+          "scan_type": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FindingType"
+              }
+            ],
+            "description": "Type of Scanner producing Findings associated with this\nComponent."
+          }
+        },
+        "required": [
+          "key",
+          "scan_type"
+        ],
         "type": "object"
       },
       "TestConfiguration": {
@@ -26677,34 +26769,6 @@
           }
         },
         "type": "object"
-      },
-      "io.snyk.api.v1testdepgraph.request.DepGraph": {
-        "additionalProperties": {},
-        "properties": {
-          "graph": {
-            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.Graph"
-          },
-          "pkgManager": {
-            "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.PackageManager"
-          },
-          "pkgs": {
-            "items": {
-              "$ref": "#/components/schemas/io.snyk.api.v1testdepgraph.request.Package"
-            },
-            "type": "array"
-          },
-          "schemaVersion": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "schemaVersion",
-          "pkgManager",
-          "pkgs",
-          "graph"
-        ],
-        "type": "object",
-        "x-go-type": "json.RawMessage"
       },
       "io.snyk.api.v1testdepgraph.request.Graph": {
         "additionalProperties": {},
@@ -45510,6 +45574,525 @@
         "x-stability-level": "stable"
       }
     },
+    "/orgs/{org_id}/container_import/{integration_id}/policy": {
+      "delete": {
+        "description": "Delete a container registry import policy\n\n#### Required permissions\n\n- `Edit integrations (org.integration.edit)`",
+        "operationId": "deleteContainerRegistryImportPolicy",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Container Registry Integration ID",
+            "in": "path",
+            "name": "integration_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/204"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Delete a container registry import policy",
+        "tags": [
+          "ContainerRegistryImportPolicy"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2023-10-11~experimental",
+          "2025-09-17"
+        ],
+        "x-snyk-api-resource": "import_policy",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2025-09-17",
+        "x-stability-level": "stable"
+      },
+      "get": {
+        "description": "Get a container registry import policy\n\n#### Required permissions\n\n- `View integrations (org.integration.read)`",
+        "operationId": "getContainerRegistryImportPolicy",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Container Registry Integration ID",
+            "in": "path",
+            "name": "integration_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/StartingAfter"
+          },
+          {
+            "$ref": "#/components/parameters/EndingBefore"
+          },
+          {
+            "$ref": "#/components/parameters/Limit"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "attributes": {
+                          "$ref": "#/components/schemas/ContainerRegistryImportPolicyAttributes"
+                        },
+                        "id": {
+                          "$ref": "#/components/schemas/IntegrationId"
+                        },
+                        "type": {
+                          "enum": [
+                            "container_registry_import_policy"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/SelfLink"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Gets a container registry import policy successfully",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get a container registry import policy",
+        "tags": [
+          "ContainerRegistryImportPolicy"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2023-10-11~experimental",
+          "2025-09-17"
+        ],
+        "x-snyk-api-resource": "import_policy",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2025-09-17",
+        "x-stability-level": "stable"
+      },
+      "patch": {
+        "description": "Update a container registry import policy\n\n#### Required permissions\n\n- `Edit integrations (org.integration.edit)`",
+        "operationId": "updateContainerRegistryImportPolicy",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Container Registry Integration ID",
+            "in": "path",
+            "name": "integration_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "data": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "attributes": {
+                        "$ref": "#/components/schemas/ContainerRegistryImportPolicyAttributes"
+                      },
+                      "id": {
+                        "$ref": "#/components/schemas/IntegrationId"
+                      },
+                      "type": {
+                        "enum": [
+                          "container_registry_import_policy"
+                        ],
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "attributes"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "data"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "attributes": {
+                          "$ref": "#/components/schemas/ContainerRegistryImportPolicyAttributes"
+                        },
+                        "id": {
+                          "$ref": "#/components/schemas/IntegrationId"
+                        },
+                        "type": {
+                          "enum": [
+                            "container_registry_import_policy"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/SelfLink"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Updated a container registry import policy successfully",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "location": {
+                "$ref": "#/components/headers/LocationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Update a container registry import policy",
+        "tags": [
+          "ContainerRegistryImportPolicy"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2023-10-11~experimental",
+          "2025-09-17"
+        ],
+        "x-snyk-api-resource": "import_policy",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2025-09-17",
+        "x-stability-level": "stable"
+      },
+      "post": {
+        "description": "Create a container registry import policy\n\n#### Required permissions\n\n- `Edit integrations (org.integration.edit)`",
+        "operationId": "createContainerRegistryImportPolicy",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Container Registry Integration ID",
+            "in": "path",
+            "name": "integration_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "properties": {
+                  "data": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "attributes": {
+                        "$ref": "#/components/schemas/ContainerRegistryImportPolicyAttributes"
+                      },
+                      "type": {
+                        "enum": [
+                          "container_registry_import_policy"
+                        ],
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "attributes"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "data"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "additionalProperties": false,
+                      "description": "container registry import policy resource object",
+                      "properties": {
+                        "attributes": {
+                          "$ref": "#/components/schemas/ContainerRegistryImportPolicyAttributes"
+                        },
+                        "id": {
+                          "$ref": "#/components/schemas/IntegrationId"
+                        },
+                        "type": {
+                          "enum": [
+                            "container_registry_import_policy"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type"
+                      ],
+                      "type": "object"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/SelfLink"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Created a container registry import policy successfully",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "location": {
+                "$ref": "#/components/headers/LocationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "$ref": "#/components/responses/409"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Create a container registry import policy",
+        "tags": [
+          "ContainerRegistryImportPolicy"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2023-10-11~experimental",
+          "2025-09-17"
+        ],
+        "x-snyk-api-resource": "import_policy",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2025-09-17",
+        "x-stability-level": "stable"
+      }
+    },
     "/orgs/{org_id}/container_import/{integration_id}/policy/dry_run": {
       "post": {
         "description": "Creates an asynchronous dry run job to test a container registry import policy\n\n#### Required permissions\n\n- `Edit integrations (org.integration.edit)`",
@@ -45668,19 +46251,19 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Create a dry run job for a container registry import policy (Early Access)",
+        "summary": "Create a dry run job for a container registry import policy",
         "tags": [
           "ContainerRegistryImportPolicy"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
           "2024-10-15~beta",
-          "2025-09-17~beta"
+          "2025-09-17"
         ],
         "x-snyk-api-resource": "import_policy",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2025-09-17~beta",
-        "x-stability-level": "beta"
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2025-09-17",
+        "x-stability-level": "stable"
       }
     },
     "/orgs/{org_id}/container_import/{integration_id}/policy/dry_run/{job_id}": {
@@ -45804,18 +46387,18 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get a dry run job (Early Access)",
+        "summary": "Get a dry run job",
         "tags": [
           "ContainerRegistryImportPolicy"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
-          "2025-09-17~beta"
+          "2025-09-17"
         ],
         "x-snyk-api-resource": "import_policy",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2025-09-17~beta",
-        "x-stability-level": "beta"
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2025-09-17",
+        "x-stability-level": "stable"
       }
     },
     "/orgs/{org_id}/ecosystems/{ecosystem}/packages/{package_name}": {
