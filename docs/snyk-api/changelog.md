@@ -1,3 +1,9 @@
+## 2026-03-25 - Updated 2026-05-01
+
+### GET - `/tenants` - Updated
+- added the new optional `query` request parameter `name`
+
+
 ## 2026-03-25 - Updated 2026-04-30
 
 ### POST - `/orgs/{org_id}/container_import/{integration_id}/policy` - Added

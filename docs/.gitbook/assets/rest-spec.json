@@ -60330,6 +60330,14 @@
           },
           {
             "$ref": "#/components/parameters/Limit"
+          },
+          {
+            "description": "Only return tenants whose name contains this value.",
+            "in": "query",
+            "name": "name",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
