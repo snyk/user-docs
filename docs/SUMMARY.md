@@ -475,7 +475,7 @@
     * [Artifactory package repository connection setup](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/README.md)
       * [Artifactory registry for Maven](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md)
       * [Artifactory registry for npm](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-npm.md)
-      * [Artifactory repository manager for NuGet](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/nexus-repository-manager-for-npm.md)
+      * [Artifactory repository manager for NuGet](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-repository-manager-for-nuget.md)
     * [Nexus repository manager connection setup](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/README.md)
       * [Nexus repository manager for Maven](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven.md)
       * [Nexus repository manager for npm](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-npm.md)
