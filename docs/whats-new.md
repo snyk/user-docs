@@ -7,6 +7,33 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## April 2026
+
+### Snyk API&#x20;
+
+* Adding new API endpoints for container registry import policies
+* The [Container registry import policy](snyk-api/reference/containerregistryimportpolicy.md)  API was enhanced by refactoring schema names, adding test components, and full CRUD operations.
+
+### Snyk CLI
+
+* The [Install the Snyk CLI](developer-tools/snyk-cli/install-the-snyk-cli/) page and sub-pages have been updated to reflect configuration best practice, including easily copied code snippets.
+* The [Authenticate to use the Snyk CLI](developer-tools/snyk-cli/authenticate-to-use-the-cli.md) page has been updated to reflect best practice, including easily copied code snippets.
+
+### Snyk supported languages
+
+* [CLI support for uv](supported-languages/supported-languages-list/python/cli-support-for-uv.md) is now in Early Access.
+* Snyk now supports [interfile analysis for Ruby](supported-languages/supported-languages-list/ruby.md#ruby-for-snyk-code).
+
+### Other updates
+
+* The `snyk_package_health_check` directive is now available for the Full profile on the [Directives](integrations/snyk-studio-agentic-integrations/directives.md#secure-at-inception-package-health-check-experimental) page.
+* CISA KEV has been added to the list of filters available in [Issue vulnerability details](https://snyksec.atlassian.net/wiki/spaces/Docs/pages/4662558726/DRAFT+UX+copy+best+practices+Snyk+UI+handbook).
+* The [PR Checks Report](manage-risk/analytics/reports-tab/prevention-reports.md#pull-request-checks-usage-and-performance-report) is now General Available, with updates to Prevention Reports, Export API, and Snowflake Data Share.
+* The [Pull Request experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md#pull-request-experience-feature-requirements) documentation has been updated to reflect that if you are using inline comments or Agent Fix, you must now specify a dedicated GitHub account by providing a GitHub Personal Access Token (PAT) in your integration settings.
+* The [Enterprise implementation guide](implementation-and-setup/enterprise-implementation-guide/) now has embedded video tutorials to guide you in your Enterprise setup as a new user of Snyk.
+* The [High availability mode](implementation-and-setup/enterprise-setup/snyk-broker/high-availability-mode.md) from Snyk Broker is now enabled by default.
+* The [Container registry sync](scan-with-snyk/snyk-container/use-snyk-container/sync-your-container-registry.md) from Snyk Container is now Generally Available.&#x20;
+
 ## March 2026
 
 ### Evo by Snyk
