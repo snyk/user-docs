@@ -9,11 +9,6 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ## April 2026
 
-### Snyk API&#x20;
-
-* Adding new API endpoints for container registry import policies
-* The [Container registry import policy](snyk-api/reference/containerregistryimportpolicy.md)  API was enhanced by refactoring schema names, adding test components, and full CRUD operations.
-
 ### Snyk CLI
 
 * The [Install the Snyk CLI](developer-tools/snyk-cli/install-the-snyk-cli/) page and sub-pages have been updated to reflect configuration best practice, including easily copied code snippets.
@@ -33,6 +28,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * The [Enterprise implementation guide](implementation-and-setup/enterprise-implementation-guide/) now has embedded video tutorials to guide you in your Enterprise setup as a new user of Snyk.
 * The [High availability mode](implementation-and-setup/enterprise-setup/snyk-broker/high-availability-mode.md) from Snyk Broker is now enabled by default.
 * The [Container registry sync](scan-with-snyk/snyk-container/use-snyk-container/sync-your-container-registry.md) from Snyk Container is now Generally Available.&#x20;
+* The [Container registry import policy](snyk-api/reference/containerregistryimportpolicy.md) API was enhanced by refactoring schema names, adding test components, and full CRUD operations.
 
 ## March 2026
 
