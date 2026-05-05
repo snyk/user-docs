@@ -1,59 +1,104 @@
 # Overview tab
 
-Analytics provides executives, as well as Application Security (AppSec) leaders and practitioners, a view into the performance of their AppSec program. Snyk customers can understand at a glance the strengths and weaknesses of their program, identify where successful practices can be discerned, and uncover the largest opportunities for improvement that warrant investment.&#x20;
+The **Overview** tab in **Snyk Analytics** provides a centralized visualization of your organization's security posture across Snyk Code, Snyk Container, Snyk Infrastructure as Code (IaC), and Snyk Open Source. Use this dashboard to identify coverage gaps, monitor historical risk trends, and evaluate remediation efficiency without drilling down into individual projects.
 
-Analytics data is organized in multiple sections, allowing you to focus on specific metrics, from key performance indicators to coverage, exposure, remediation, or prevention. You can select and remove metrics from each section to customize your view.
+Dashboard data adjusts automatically based on your selected global filters and time range. The dashboard is divided into several data sections to help you focus on specific metrics.
 
-## Key Performance Indicators section
+## Dashboard widgets
 
-{% hint style="info" %}
-To customize the **Key Performance Indicators** section, click **Edit section** and select from the dropdown the indicators to display.
-{% endhint %}
+### Key Performance Indicators
 
-* **Open issues (Featured zero-day):** tracks open issues related to featured zero-day vulnerabilities to highlight exposure to critical emerging threats.
-* **Ignored issues**: tracks issues that your team has intentionally ignored or "muted' instead of fixing them.
-* **New issues**: represents the volume of freshly identified vulnerabilities or tickets discovered in the selected timeframe.
-* **Resolved Issues**: tracks the number of vulnerabilities or tickets that were successfully closed or fixed in the selected timeframe.
-* **Unique vulnerabilities:** shows the distinct count of unresolved vulnerabilities to highlight the breadth of different security problems.
-* **Tested repositories in CI/CD:** tracks the number of repositories tested in the continuous integration/continuous delivery (CI/CD) pipeline.
-* **Projects Monitored**: tracks the number of Projects that are continuously monitored for open-source vulnerabilities and license issues after using the `snyk monitor` CLI command.
+This section displays aggregate totals for the selected time range and calculates the percentage change compared to the previous equivalent period.
 
-## Coverage section
+The following widgets are enabled by default:
 
-* **Repository coverage by Snyk product**: Indicates the percentage of repositories covered by each Snyk product.
-* **Repository coverage percentage over time, by Snyk product**: Shows the trend of repository coverage by Snyk products over time.
-* **Assets discovered over time, by type**: Tracks the trend of assets discovered, categorized by their type.
+* **Open issues**: The total count of unresolved vulnerabilities.
+* **Ignored issues**: The total count of vulnerabilities suppressed by Snyk ignore policies.
+* **New issues**: The volume of vulnerabilities introduced during the selected timeframe.
+* **Resolved issues**: The total count of vulnerabilities fixed during the selected timeframe.
+* **Unique vulnerabilities**: The distinct count of individual vulnerability types, regardless of how many times they appear across your environments.
 
-## Exposure section
+Additionally, you can add the following widgets:
 
-{% hint style="info" %}
-To customize the **Exposure** section, click **Edit section** and select from the dropdown the indicators to display.
-{% endhint %}
+* **Tested repositories in CI/CD**: Number of repositories tested in the continuous integration and continuous delivery (CI/CD) pipeline.
+* **Projects Monitored**: Number of Snyk Projects continuously monitored for open-source vulnerabilities and license issues after using the `snyk monitor` CLI command.
+* **MCP Scans**: Number of Snyk Studio scans for the selected timeframe.
+* **Developers running agentic scans**:  Number of developers who run a Snyk Studio scan during the selected timeframe.
+* **Total PR checks**: Number of pull request (PR) checks for the selected timeframe.
+* **PR Check success rate**: Outcomes of PR checks. An increasing success rate over time demonstrates that developers produce more secure code earlier in the software development lifecycle.
 
-* **Organizations with the most open issues**: identifies high-risk areas to help you focus remediation resources.
-* **Open issues over time, by severity**: displays the trend of open issues by severity.
-* **Open issues by Snyk product**: lists open issues by the identified Snyk product.
-* **Open issues by severity**: categorizes open issues by severity level.
-* **Open issues by repository freshness**: identifies risks based on the last commit (freshness) to highlight blind spots. You can configure the definitions for:
-  * Active (default: less than 3 months)
-  * Inactive (default: 3–6 months)
-  * Dormant (default: over 6 months)
-  * N/A indicates that the Group SCM integration detected no commits
-* **Open issues (OWASP Top 10, 2021) by severity**: groups open issues by OWASP Top 10 (2021) category and severity.
-* **Open issues by asset class**: enables prioritization of remediation efforts based on the business criticality of different assets.
-* **SCA CVEs with the most open issues**: highlights high-impact open-source vulnerabilities (CVEs) with the most open issues identified through Software Composition Analysis (SCA).
+### Coverage
 
-## Remediation section&#x20;
+The Coverage section helps you identify blind spots in your security rollout and ensure your assets are actively monitored.
 
-* **Issues identified and resolved over time**: assesses your ability to address new vulnerabilities and reduce the security backlog. Use this metric to prioritize remediation.
-* **Resolved issues by MTTR duration**: displays typical resolution timeframes and indicates remediation efficiency. Mean time to resolution (MTTR) is the average time required to fix an issue.
-* **Organizations with the highest MTTR**: identifies Organizations with the longest average fix times. High MTTR values highlight teams that need improved processes or resources.
-* **Snyk-generated PRs merged vs. open**: compares the number of merged Snyk-generated pull requests to the number of open pull requests.
+The following widgets are enabled by default:
 
-## Prevention section
+* **Repository coverage by Snyk product**: Identifies unmonitored assets. Use the **Not Scanned** segments to pinpoint exactly where you need to deploy Snyk to achieve full visibility.
+* **Repository coverage percentage over time, by Snyk product**: Tracks your onboarding progress. Use this trend line to verify that you successfully integrate new repositories into Snyk over time.
+* **Assets discovered over time, by type**: Monitors your environment's growth. Use this to ensure Snyk successfully detects new repositories as your organization scales.
 
-* **Snyk IDE & CLI usage over time (developer count)**: shows the number of developers using Snyk IDE plugins and the CLI for local development.
-* **Organizations introducing most new SCA preventable issues**: identifies organizations with the highest rate of new preventable Software Composition Analysis (SCA) issues. Use this data to prioritize prevention efforts.
-* **New issues by introduction category**: identifies the primary sources of new vulnerabilities to help you strengthen prevention strategies.
-* **New SCA preventable issues introduced over time**: displays the number of new open-source vulnerabilities you could have avoided. This metric helps you assess the effectiveness of prevention strategies for open-source risks.
+Additionally, you can add the **Targets by Integration** widget, which displays the top five integrations (SCM, CLI, Container) by the number of associated targets.
 
+### Exposure
+
+The Exposure section helps you triage risk by isolating where vulnerabilities concentrate and prioritizing them by severity.
+
+The following widgets are enabled by default:
+
+* **Organizations with the most open issues**: Rank business units or teams by risk volume. Use this chart to determine which teams require the most immediate remediation support or intervention.
+* **Open issues over time, by severity**: Categorizes your risk backlog. Use this to verify that teams prioritize and resolve Critical and High severity issues faster than lower-severity issues.
+* **Open issues by Snyk product**: Illustrates risk distribution across your stack. Use this to determine if your primary vulnerabilities lie in your proprietary code, open-source libraries, containers, or infrastructure configurations.
+
+Additionally, you can add the following widgets:<br>
+
+* **Open issues by severity**: Categorizes open issues by severity level.
+* **Open issues by repository freshness**: Identifies risks based on the last commit (freshness) to highlight blind spots. You can configure the definitions for these statuses:
+
+| Status       | Definition                                    |
+| ------------ | --------------------------------------------- |
+| **Active**   | Less than 3 months                            |
+| **Inactive** | 3-6 months                                    |
+| **Dormant**  | Over 6 months                                 |
+| **N/A**      | The Group SCM integration detected no commits |
+
+* **Open issues (OWASP Top 10, 2021) by severity**: Group open issues by OWASP Top 10 (2021) category and severity.
+* **Open issues by asset class**: Enables prioritization of remediation efforts based on the business-criticality of different assets.
+* **SCA CVEs with the most open issues**: Highlights high-impact open-source vulnerabilities (CVEs) with the most open issues identified through software composition analysis (SCA).
+
+### Remediation
+
+The Remediation section measures your organization's efficiency in fixing security flaws and helps track compliance with Service Level Agreements (SLAs).
+
+The following widgets are enabled by default:
+
+* **Issues identified and resolved over time**: Compares issue creation against issue resolution. Use this chart to determine whether your teams fix vulnerabilities faster than they introduce them.
+* **Resolved issues by MTTR duration**: Groups your Mean Time to Resolution (MTTR) into time buckets. Use this to evaluate whether teams meet your organization's required security SLAs (for example, fixing critical issues in less than 15 days).
+* **Organizations with the highest MTTR**: Rank teams by how long they take to fix issues. Use this to identify organizations that struggle with complex fixes or require workflow improvements.
+
+Additionally, you can add the following widgets:
+
+* **Top 5 vulnerabilities approaching eradication by CVE:** Highlights specific known vulnerabilities that are closest to being completely resolved across your environment.
+* **Top 5 vulnerabilities approaching eradication by CWE:** Highlights broader categories of software weaknesses that your team is close to eliminating entirely.
+* **Snyk-generated PRs merged vs open:** Compares the number of merged Snyk-generated pull requests to the number of open pull requests.
+
+### Usage
+
+The Usage section tracks developer engagement and measures the success of your shift-left prevention strategies.
+
+The following widgets are enabled by default:
+
+* **Snyk IDE and CLI usage over time (developer count)**: Measures proactive tool adoption. Use this to verify that developers actively test code locally before pushing it to your repositories.
+* **Organizations introducing most new SCA preventable issues**: Pinpoints where known, avoidable open-source risks enter your codebase. Use this to target specific teams for training on secure coding practices or Snyk use.
+* **New issues by introduction category**: Classifies the avoidability of new vulnerabilities. Use the **Preventable Issue** segment to measure how many issues Snyk scans could have blocked earlier, helping you justify stricter PR checks.
+
+You can also add the **New SCA preventable issues introduced over time** widget. This widget classifies the avoidability of new vulnerabilities. Use the Preventable Issue segment to measure how many issues Snyk scans can block earlier to help you justify stricter pull request checks.
+
+## Customize the dashboard
+
+You can customize the layout to prioritize specific data:
+
+* Show or hide analytics sections: Click **Edit Page Layout**.
+* Reorder the pag&#x65;**:** Click and drag a section title.
+* Select or remove widget&#x73;**:** Click **Edit section**.
+* Move widget&#x73;**:** Use the hamburger menu.
+* Save your changes in a saved vie&#x77;**:** Click **Save**.
