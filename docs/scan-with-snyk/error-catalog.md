@@ -995,6 +995,21 @@ For additional troubleshooting, refer to Debugging the Snyk CLI.
 
 * [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
 
+### [SNYK-CLI-0026](#snyk-cli-0026)
+<a id="#SNYK-CLI-0026"></a>
+
+**Command timed out**
+
+The command timed out because it did not complete within the allowed time. This happens with large workloads, slow network connections, or heavy server load. 
+To resolve this issue, increase the timeout limit, divide your workload into smaller parts, or run the command again. 
+For details on Snyk CLI configuration, see Snyk CLI documentation.
+
+
+**Help Links:**
+
+* [https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli)
+* [https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli](https://docs.snyk.io/snyk-cli/debugging-the-snyk-cli)
+
 ### [SNYK-OS-7001](#snyk-os-7001)
 <a id="#SNYK-OS-7001"></a>
 
