@@ -20,12 +20,12 @@ The following widgets are enabled by default:
 
 Additionally, you can add the following widgets:
 
-* **Tested repositories in CI/CD**: Number of repositories tested in the continuous integration and continuous delivery (CI/CD) pipeline.
 * **Projects Monitored**: Number of Snyk Projects continuously monitored for open-source vulnerabilities and license issues after using the `snyk monitor` CLI command.
-* **MCP Scans**: Number of Snyk Studio scans for the selected timeframe.
-* **Developers running agentic scans**:  Number of developers who run a Snyk Studio scan during the selected timeframe.
-* **Total PR checks**: Number of pull request (PR) checks for the selected timeframe.
-* **PR Check success rate**: Outcomes of PR checks. An increasing success rate over time demonstrates that developers produce more secure code earlier in the software development lifecycle.
+* **Snyk Organizations**: Track Snyk rollout progress by viewing the total number of new Snyk Organizations created over time.
+* **Open issues (Featured zero-day)**: Use this centralized dashboard to assess immediate risk and track your response during a major zero-day security incident.
+* **Developers testing in the IDE/CLI**: Number of developers who run a Snyk Studio scan during the selected timeframe.
+* **SCA Preventable issues**: It shows the number of new open-source (SCA) vulnerabilities introduced into your codebase that you can block earlier, for example, during pull request checks.
+* **Tested repositories in CI/CD**: Number of repositories tested in the continuous integration and continuous delivery (CI/CD) pipeline.
 
 ### Coverage
 
@@ -36,8 +36,6 @@ The following widgets are enabled by default:
 * **Repository coverage by Snyk product**: Identifies unmonitored assets. Use the **Not Scanned** segments to pinpoint exactly where you need to deploy Snyk to achieve full visibility.
 * **Repository coverage percentage over time, by Snyk product**: Tracks your onboarding progress. Use this trend line to verify that you successfully integrate new repositories into Snyk over time.
 * **Assets discovered over time, by type**: Monitors your environment's growth. Use this to ensure Snyk successfully detects new repositories as your organization scales.
-
-Additionally, you can add the **Targets by Integration** widget, which displays the top five integrations (SCM, CLI, Container) by the number of associated targets.
 
 ### Exposure
 
