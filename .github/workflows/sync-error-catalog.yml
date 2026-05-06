@@ -51,7 +51,7 @@ jobs:
       - name: Checkout error-catalog repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.TEAM_CLI_BOT_GITHUB_PAT }}
+          token: ${{ secrets.TEAM_CLOUD_EX_GITHUB_TOKEN }}
           repository: snyk/error-catalog
           path: ${{ env.ERROR_CATALOG_LOCATION }}
 
@@ -100,7 +100,7 @@ jobs:
       - name: Create or update a pull request
         if: steps.check_changes.outputs.continue == 'true'
         env:
-          GITHUB_TOKEN: ${{ secrets.TEAM_CLI_BOT_GITHUB_PAT }}
+          GITHUB_TOKEN: ${{ secrets.TEAM_CLOUD_EX_GITHUB_TOKEN }}
         run: |
           PR_NUMBER=$(gh pr list \
             --head "${{ env.DESTINATION_BRANCH }}" \
