@@ -22,7 +22,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Other updates
 
 * The `snyk_package_health_check` directive is now available for the Full profile on the [Directives](integrations/snyk-studio-agentic-integrations/directives.md#secure-at-inception-package-health-check-experimental) page.
-* CISA KEV has been added to the list of filters available in [Issue vulnerability details](https://snyksec.atlassian.net/wiki/spaces/Docs/pages/4662558726/DRAFT+UX+copy+best+practices+Snyk+UI+handbook).
+* CISA KEV has been added to the list of filters available in [Issue vulnerability details](manage-risk/analytics/reports-tab/issue-columns-dictionary.md#issue-vulnerability-details).
 * The [PR Checks Report](manage-risk/analytics/reports-tab/prevention-reports.md#pull-request-checks-usage-and-performance-report) is now General Available, with updates to Prevention Reports, Export API, and Snowflake Data Share.
 * The [Pull Request experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md#pull-request-experience-feature-requirements) documentation has been updated to reflect that if you are using inline comments or Agent Fix, you must now specify a dedicated GitHub account by providing a GitHub Personal Access Token (PAT) in your integration settings.
 * The [Enterprise implementation guide](implementation-and-setup/enterprise-implementation-guide/) now has embedded video tutorials to guide you in your Enterprise setup as a new user of Snyk.
@@ -39,7 +39,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk Analytics
 
-* The [Analytics Overview](manage-risk/analytics/overview-tab.md) tab now includes the **Projects Monitored** widge&#x74;**.**
+* The [Analytics Overview](manage-risk/analytics/overview-tab.md) tab now includes the **Projects Monitored** widget.
 * The [Snyk Pull request checks usage & performance report](manage-risk/analytics/reports-tab/prevention-reports.md#pull-request-checks-usage-and-performance-report) is now in **General Availability** for Enterprise plan users.
 * Added the **Assessing active security incidents** option to the [Zero-Day report](manage-risk/analytics/reports-tab/remediation-reports.md#zero-day-report).
 

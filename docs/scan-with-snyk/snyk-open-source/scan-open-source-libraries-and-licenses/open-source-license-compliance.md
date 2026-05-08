@@ -37,7 +37,7 @@ If you notice a license with the wrong license type assigned to it, contact Snyk
 
 ## License updates
 
-Snyk updates the license list in alignment with the latest [SPDX License List](https://spdx.org/licenses/), an integral part of the System Package Data Exchange (SPDX) Specification. To view the full list of supported licenses, see the [License Policy results page](https://docs.snyk.io/manage-risk/policies/license-policies/license-policy-results).
+Snyk updates the license list in alignment with the latest [SPDX License List](https://spdx.org/licenses/), an integral part of the System Package Data Exchange (SPDX) Specification. To view the full list of supported licenses, see the [License Policy results page](../../../manage-risk/policies/license-policies/license-policy-results.md).
 
 ## Multiple licenses
 
