@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-Repository monitoring configuration is in Early Access and available only with Enterprise plans. To enable the feature, visit [Snyk Preview](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview).
+Repository monitoring configuration is in Early Access and available only with Enterprise plans. To enable the feature, visit [Snyk Preview](../snyk-platform-administration/snyk-preview.md).
 {% endhint %}
 
 ## Overview

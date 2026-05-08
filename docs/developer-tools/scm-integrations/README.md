@@ -1,6 +1,6 @@
 # SCMs
 
-Snyk supports SCM integrations that allow you to implement security at each point in your workflow: importing a Project, writing your code, and building and deployment. Snyk can also [automatically create pull requests (PRs)](/broken/pages/vhC8FBLDnIEkZWtpPBWi) on your behalf to upgrade your dependencies based on scan results, compatible with a variety of SCM integrations.
+Snyk supports SCM integrations that allow you to implement security at each point in your workflow: importing a Project, writing your code, and building and deployment. Snyk can also [automatically create pull requests (PRs)](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades.md) on your behalf to upgrade your dependencies based on scan results, compatible with a variety of SCM integrations.
 
 Snyk Source Control Manager (SCM) integrations allow you to:
 

@@ -5,7 +5,7 @@ The Snyk CLI can be installed across all major operating systems using several d
 * [Package managers](./#package-managers): Use tools like npm, Homebrew, or Scoop for a quick installation.
 * [Docker](./#docker): Run Snyk in a container for a consistent scanning environment.
 * [GitHub Actions and CI/CD](./#github-actions-and-ci-cd): Use pre-built integrations to automate scanning within your deployment pipelines.
-* [Direct binary download](./#standalone-executables): Download a standalone executable for Windows, MacOS, or Linux.
+* [Direct binary download](./#direct-binary-download): Download a standalone executable for Windows, MacOS, or Linux.
 
 After you install the CLI, authenticate your Snyk account to start scanning your Snyk Projects. For more information, visit [Authenticate to use the CLI](../authenticate-to-use-the-cli.md).
 
@@ -24,7 +24,7 @@ Regardless of your choice of tool, there are common steps to ensuring your insta
 To learn how to upgrade the Snyk CLI for your chosen tool, visit Upgrade the Snyk CLI.
 
 {% hint style="info" %}
-To use CLI releases before version 1.1230.0 on an Apple M1 or M2 machine (darwin/arm64), visit [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli/using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine).
+To use CLI releases before version 1.1230.0 on an Apple M1 or M2 machine (darwin/arm64), visit [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine.md).
 {% endhint %}
 
 ## Installation methods
@@ -36,7 +36,7 @@ To use CLI releases before version 1.1230.0 on an Apple M1 or M2 machine (darwin
 <summary>Install with Homebrew (MacOS and Linux)</summary>
 
 {% hint style="info" %}
-For Apple M1 or M2 (darwin/arm64), see: [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli/using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine).
+For Apple M1 or M2 (darwin/arm64), visit [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine.md).
 {% endhint %}
 
 1. Install and verify Homebrew using any method specified in their documentation. Visit [Install Homebrew](https://brew.sh/) for more information.
@@ -55,7 +55,7 @@ For Apple M1 or M2 (darwin/arm64), see: [Using CLI releases before version 1.123
     ```bash
     brew list snyk
     ```
-5. Authenticate. For more details, visit [Authentication for npm, Node.js, Yarn, Homebrew, and Scoop](./#authentication-for-npm-node.js-yarn-homebrew-and-scoop).
+5. Authenticate. For more details, visit [Authenticate locally](../authenticate-to-use-the-cli.md#authenticate-locally).
 
 </details>
 
@@ -73,7 +73,7 @@ Ensure you have permission to install global npm packages and network access to 
     ```bash
     npm install snyk -g
     ```
-3. Authenticate. For more details, visit [Authentication for npm, Node.js, Yarn, Homebrew, and Scoop](./#authentication-for-npm-node.js-yarn-homebrew-and-scoop).
+3. Authenticate. For more details, visit [Authenticate locally](../authenticate-to-use-the-cli.md#authenticate-locally).
 
 </details>
 
@@ -86,9 +86,7 @@ Ensure you have permission to install global npm packages and network access to 
     ```bash
     yarn global add snyk
     ```
-
-
-2. Authenticate. For more details, visit [Authentication for npm, Node.js, Yarn, Homebrew, and Scoop](./#authentication-for-npm-node.js-yarn-homebrew-and-scoop).
+2. Authenticate. For more details, visit [Authenticate locally](../authenticate-to-use-the-cli.md#authenticate-locally).
 
 </details>
 
@@ -111,7 +109,7 @@ Ensure you have permission to install global npm packages and network access to 
     ```powershell
     snyk --version
     ```
-4. Authenticate. For more details, visit [Authentication for npm, Node.js, Yarn, Homebrew, and Scoop](./#authentication-for-npm-node.js-yarn-homebrew-and-scoop).
+4. Authenticate. For more details, visit [Authenticate locally](../authenticate-to-use-the-cli.md#authenticate-locally).
 
 </details>
 

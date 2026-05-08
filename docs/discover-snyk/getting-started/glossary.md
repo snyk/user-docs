@@ -150,7 +150,7 @@ Common Weakness Enumeration. An online glossary that categorizes software and ha
 
 ### DAST
 
-Dynamic Application Security Testing. A security analysis technique that tests a running application from the outside to find security issues. See also[ IAST](glossary.md#iast) and [SAST](glossary.md#sast).
+Dynamic Application Security Testing. A security analysis technique that tests a running application from the outside to find security issues. See also [SAST](glossary.md#sast).
 
 ### Directive
 
@@ -443,7 +443,7 @@ Static Analysis Results Interchange Format. A standard, JSON-based format for th
 
 ### SAST
 
-Static Application Security Testing. A security analysis technique that examines static source code to identify potential vulnerabilities without running the application. See also [IAST](glossary.md#iast), [DAST](glossary.md#dast), [Snyk Code](glossary.md#snyk-code), and [Snyk Infrastructure as Code](glossary.md#snyk-infrastructure-as-code).
+Static Application Security Testing. A security analysis technique that examines static source code to identify potential vulnerabilities without running the application. See also [DAST](glossary.md#dast), [Snyk Code](glossary.md#snyk-code), and [Snyk Infrastructure as Code](glossary.md#snyk-infrastructure-as-code).
 
 ### SBOM
 

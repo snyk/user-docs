@@ -37,5 +37,5 @@ Continue by following the instructions in the other Eclipse extension docs:
 * [Authentication for the Eclipse plugin](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin)
 * [Eclipse plugin folder trust](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/folder-trust)
 * [Configuration of the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/configuration-of-the-eclipse-plugin)
-* [Environment variables for the Eclipse plugin](environment-variables-for-the-eclipse-plugin.md)
+* [Environment variables for the Eclipse plugin](https://docs.snyk.io/developer-tools/snyk-ide-plugins-and-extensions/eclipse-plugin/environment-variables-for-the-eclipse-plugin)
 * [Use the Snyk plugin to secure your Eclipse projects](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects)
