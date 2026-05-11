@@ -1,8 +1,14 @@
 # Codex CLI guide
 
-You can access Snyk Studio, including Snyk's MCP server, in Codex CLI to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+Access Snyk Studio in Codex CLI to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Codex CLI.
 
-## Prerequisites
+## Install Snyk Studio with hooks support
+
+For installation instructions, visit [Getting started with Snyk Studio](../getting-started-with-snyk-studio.md).
+
+## Install Snyk Studio (legacy rules-based approach)
+
+### Prerequisites
 
 * [Install the Codex CLI](codex-cli-guide.md#install-codex-cli)
 * [Install the Snyk CLI](../../../developer-tools/snyk-cli/install-the-snyk-cli/)
@@ -49,7 +55,7 @@ If you installed `snyk` using npm as a global module and you are using fnm to ma
 
 * Restart the Codex CLI
 
-## Setting up the Snyk MCP Server
+## Set up the Snyk MCP Server
 
 As a one-time setup, you may need to authenticate and trust the current Project directory. If required, the agentic workflow will likely manage this automatically.
 
@@ -85,9 +91,9 @@ Codex CLI will invoke Snyk scanning, provide output and insights based on the re
 
 <figure><img src="../../../.gitbook/assets/image (351).png" alt=""><figcaption></figcaption></figure>
 
-### "Secure at inception" rules
+### Secure at inception rules
 
-To practice s[#secure-at-inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception "mention"), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
+To practice [#secure-at-inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception "mention"), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
 The following is a suggested instruction for [Codex CLI's AGENTS.md context file](https://github.com/openai/codex?tab=readme-ov-file#memory--project-docs). Add the following contents to the `AGENTS.md` file in your root directory of your Project:
 

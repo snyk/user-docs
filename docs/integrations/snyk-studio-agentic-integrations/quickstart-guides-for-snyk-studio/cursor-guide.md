@@ -1,8 +1,14 @@
 # Cursor guide
 
-You can access Snyk Studio, including Snyk's MCP server, in Cursor to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. For most users, we recommend accessing Snyk Studio using the Snyk Security extension.
+Access Snyk Studio in Cursor to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Cursor.
 
-## Recommended: Access Snyk Studio using the Snyk Security Extension
+## Install Snyk Studio with hooks support
+
+For installation instructions, visit [Getting started with Snyk Studio](../getting-started-with-snyk-studio.md).
+
+## Install Snyk Studio (legacy rules-based approach)
+
+### Access Snyk Studio using the Snyk Security extension
 
 * Click [this link](cursor:extension/snyk-security.snyk-vulnerability-scanner) to open up the Snyk Security extension directly
 * Click `Install`
@@ -60,7 +66,7 @@ Search the [Cursor MCP Directory](https://cursor.com/docs/context/mcp/directory)
 
 <figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
-#### Install manually&#x20;
+#### Install manually
 
 Install the Snyk MCP Server using the method that best suits your operating system and local development environment. The Snyk MCP Server can be installed and run via `npx` or via the Snyk CLI.
 

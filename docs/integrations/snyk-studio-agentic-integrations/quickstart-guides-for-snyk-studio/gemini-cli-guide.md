@@ -1,28 +1,30 @@
 # Gemini CLI guide
 
-You can access Snyk Studio, including Snyk's MCP server, in Gemini CLI to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, Snyk Studio may ask for trust and trigger authentication.
+Access Snyk Studio in Gemini CLI to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Gemini CLI.
 
 ## Prerequisite
 
 Install Gemini CLI. For more details, visit the [official Gemini CLI readme file.](https://github.com/google-gemini/gemini-cli?tab=readme-ov-file)
 
-## Install Snyk Studio
+## Install Snyk Studio with hooks support
 
-Install Snyk Studio using the method that best suits your operating system and local development environment. Snyk recommends leveraging the ['single command install' using npx](gemini-cli-guide.md#install-with-npx). For other ways to install MCP servers in Gemini CLI, see Google's [official documentation](https://geminicli.com/docs/tools/mcp-server/).
+For installation instructions, visit [Getting started with Snyk Studio](../getting-started-with-snyk-studio.md).
+
+## Install Snyk Studio (legacy rules-based approach)
 
 ### Install with `npx`
 
 Open up a terminal window and paste the following command:
 
-`npx -y snyk@latest mcp configure --tool=gemini-cli`&#x20;
+`npx -y snyk@latest mcp configure --tool=gemini-cli`
 
 This command:
 
 * Downloads the latest version of Snyk's CLI.
-* Set sup Snyk Studio within Gemini CLI.
-* Configures Snyk Studio's Secure at inception directives within Gemini CLI's global rules file.
+* Set up Snyk Studio in Gemini CLI.
+* Configures Snyk Studio's Secure at inception directives in Gemini CLI's global rules file.
 
-To verify installation, use the `/mcp list` command within Gemini CLI.
+To verify installation, use the `/mcp list` command in Gemini CLI.
 
 The list of tools installed as a part of Snyk Studio are listed below. These tools can be found listed underneath `Snyk` on the `/mcp list` screen.
 
@@ -30,9 +32,9 @@ The list of tools installed as a part of Snyk Studio are listed below. These too
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `snyk_aibom`          | Generates an AI Bill of Materials (AI-BOM) for Python software projects in CycloneDX v1.6 JSON format. This experimental feature analyzes local Python projects to identify AI models, datasets, tools, and other AI-related components. Requires an active internet connection and access to the experimental feature (available on request). The command must be run within a Python project directory and requires the CLI from the preview release channel. |
 | `snyk_auth`           | Authenticates the user with Snyk.                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| `snyk_code_scan`      | <p>Performs Static Application Security Testing (SAST) directly from the Snyk MCP. This command analyzes an application's source code with a SAST scan to identify security vulnerabilities and weaknesses without executing the code. </p><p></p><p>Snyk supports: </p><p>Apex, C/C++, Dart and Flutter, Elixir, Go, Groovy, Java and Kotlin, Javascript, .NET, PHP, Python, Ruby, Rust, Scala, Swift and Objective-C, Typescript, VB.NET   </p>               |
+| `snyk_code_scan`      | <p>Performs Static Application Security Testing (SAST) directly from the Snyk MCP. This command analyzes an application's source code with a SAST scan to identify security vulnerabilities and weaknesses without executing the code.</p><p>Snyk supports:</p><p>Apex, C/C++, Dart and Flutter, Elixir, Go, Groovy, Java and Kotlin, Javascript, .NET, PHP, Python, Ruby, Rust, Scala, Swift and Objective-C, Typescript, VB.NET</p>                           |
 | `snyk_container_scan` | Scans container images for known vulnerabilities in OS packages and application dependencies.                                                                                                                                                                                                                                                                                                                                                                   |
-| `snyk_iac_scan`       | <p>Analyzes Infrastructure as Code (IaC) files for security misconfigurations. </p><p></p><p>Supports Terraform (.tf, .tf.json, plan files), Kubernetes (YAML, JSON), AWS CloudFormation (YAML, JSON), Azure Resource Manager (ARM JSON), and Serverless Framework.  </p>                                                                                                                                                                                       |
+| `snyk_iac_scan`       | <p>Analyzes Infrastructure as Code (IaC) files for security misconfigurations.</p><p>Supports Terraform (.tf, .tf.json, plan files), Kubernetes (YAML, JSON), AWS CloudFormation (YAML, JSON), Azure Resource Manager (ARM JSON), and Serverless Framework.</p>                                                                                                                                                                                                 |
 | `snyk_logout`         | Logs the Snyk MCP out of the current Snyk account by clearing the locally stored authentication token.                                                                                                                                                                                                                                                                                                                                                          |
 | `snyk_sbom_scan`      | Experimental command. Analyzes an existing SBOM file for known vulnerabilities in its open-source components. Requires components in SBOM to be identified using PackageURLs (purls).                                                                                                                                                                                                                                                                           |
 | `snyk_sca_scan`       | Analyzes projects for open-source vulnerabilities and license compliance issues by inspecting manifest files (e.g., package.json, pom.xml, requirements.txt) to understand dependencies and then queries the Snyk vulnerability database.                                                                                                                                                                                                                       |
@@ -42,7 +44,7 @@ The list of tools installed as a part of Snyk Studio are listed below. These too
 
 ### Optional: Adjust scan frequency
 
-Snyk recommends you use Snyk Studio with the Secure at inception directives, but also provides a smart scan option that allows the LLM to determine when to call Snyk Studio. This option results in lower overall token usage and faster iterating, but it increases the risk of insecure code being added to your codebase. Expand the options below for instructions on adjusting directives at installation or after installation.
+Snyk recommends you use Snyk Studio with the Secure at inception directives, but also provides a smart scan option that allows the LLM to determine when to call Snyk Studio. This option results in lower overall token use and faster iteration, but it increases the risk of insecure code being added to your codebase. Expand the options below for instructions on adjusting directives at installation or after installation.
 
 <details>
 
@@ -169,7 +171,7 @@ You will not be prompted to authenticate if you already authenticated with the S
 
 To practice [Secure at inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception), Snyk recommends adopting directives that align the LLM for secure code generation and workflows.
 
-Append one of the following contents to the context file at `~/.gemini/GEMINI.md`  &#x20;
+Append one of the following contents to the context file at `~/.gemini/GEMINI.md`
 
 {% code title="~/.gemini/GEMINI.md" overflow="wrap" %}
 ```

@@ -1,14 +1,16 @@
 # Claude Code guide
 
-You can access Snyk Studio in Claude Code to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.
+Access Snyk Studio in Claude Code to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Claude Code.
 
-## Prerequisite
+## Prerequisites
 
-Install Claude Code. For more details, visit the official [Claude Code - Quickstart](https://docs.anthropic.com/en/docs/claude-code/quickstart).
+Install Claude Code. For details, visit [Claude Code Quickstart](https://docs.anthropic.com/en/docs/claude-code/quickstart).
 
-## Install Snyk Studio
+## Install Snyk Studio with hooks support
 
-Install Snyk Studio using the method that best suits your operating system and local development environment. Snyk recommends leveraging the ['single command install' using `npx`](claude-code-guide.md#install-with-npx) . For different ways to install MCP servers into Claude Code, see Anthropic's [official documentation](https://docs.anthropic.com/en/docs/claude-code/mcp#installing-mcp-servers).
+For installation instructions, visit [Getting started with Snyk Studio](../getting-started-with-snyk-studio.md).
+
+## Install Snyk Studio (legacy rules-based approach)
 
 ### Install with `npx`
 
@@ -18,9 +20,9 @@ Open a terminal window and paste the following command:
 
 This command:
 
-* Downloads the latest version of Snyk's CLI.
-* Sets up Snyk Studio within Claude Code.
-* Configures Snyk Studio's Secure at inception directives within Claude Code's global rules file.
+* Downloads the latest version of Snyk CLI.
+* Sets up Snyk Studio in Claude Code.
+* Configures Snyk Studio's Secure at inception directives in Claude Code's global rules file.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-01-09 at 3.23.45 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -28,7 +30,7 @@ To verify installation, use the `/mcp` command within Claude:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-01-09 at 3.26.38 PM.png" alt=""><figcaption></figcaption></figure>
 
-Select **View Tools** to look at all of the commands and tooling Snyk utilizes as part of its execution The descriptions also include instructions specific for the LLM. These are capitalized to help you differentiate. These tools include:
+Select **View Tools** to look at all of the commands and tooling Snyk uses as part of its execution. The descriptions also include instructions specific for the LLM. These are capitalized to help you differentiate. These tools include:
 
 | Tool                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -173,7 +175,7 @@ To remove Snyk Studio and its associated ruleset from your environment, use:
 snyk mcp configure --rm --tool=claude-cli
 ```
 
-## Secure at inception directives
+## "Secure at inception" directives
 
 To practice [Secure at Inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception), Snyk recommends adopting rules that align the LLM for secure code generation and workflows.
 
