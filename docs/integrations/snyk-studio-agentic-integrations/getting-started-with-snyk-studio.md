@@ -47,7 +47,7 @@ For Windows:
 pwsh .\dist\snyk-studio-install.ps1 [options]
 ```
 
-For advanced options and additional information, visit the [studio-recipes repository](https://github.com/snyk/studio-recipes/tree/main/recipes/installer#options).
+For advanced options and additional information, visit the [studio-recipes repository](https://github.com/snyk/studio-recipes/tree/main/installer#options).
 
 ## Install Snyk Studio for ADEs without hooks support
 
