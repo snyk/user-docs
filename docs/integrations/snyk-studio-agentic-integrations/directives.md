@@ -6,6 +6,13 @@ They have varying names across different coding assistants. For example, rules, 
 
 Snyk categorizes anything that guides an agent to produce code a certain way under the term "Directives" and offers code examples that you can use as they are, or customized to meet your needs.
 
+You can implement directives in two ways:
+
+* Hooks: programmatic scripts that run at IDE lifecycle events.
+* Rules: natural language instructions in the AI context.
+
+For implementation details, navigate to [Snyk Studio Recipes repository](https://github.com/snyk/studio-recipes).
+
 Snyk categorizes directives into the following types:
 
 * [Guardrail directives](directives.md#guardrail-directives)
@@ -26,6 +33,21 @@ Non-determinism is a factor with LLM interactions and there can be scenarios whe
 {% endhint %}
 
 There are many guardrail directives that your company may choose to implement, some of which may relate to security.
+
+#### Implementation approaches
+
+| Consideration | Hooks                                         | Rules                           |
+| ------------- | --------------------------------------------- | ------------------------------- |
+| Enforcement   | Deterministic (always runs)                   | Non-deterministic (AI may skip) |
+| Complexity    | More complex (scripts + config)               | Simple (one file copy)          |
+| Setup         | Configure hooks + install scripts             | Copy to rules directory         |
+| Best for      | Enterprise compliance, guaranteed enforcement | Quick setup, real-time feedback |
+
+{% hint style="info" %}
+Snyk recommends using hooks for deterministic enforcement, if available. Combine hooks with rules for inline feedback in real time.&#x20;
+{% endhint %}
+
+For hook implementations, navigate to [Snyk Studio Recipes repository](https://github.com/snyk/studio-recipes).
 
 ### Secure at inception directives
 
