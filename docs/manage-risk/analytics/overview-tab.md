@@ -21,9 +21,13 @@ The following widgets are enabled by default:
 Additionally, you can add the following widgets:
 
 * **Projects Monitored**: Number of Snyk Projects continuously monitored for open-source vulnerabilities and license issues after using the `snyk monitor` CLI command.
+* **Agentic Scans**: Number of Snyk Studio scans for the selected timeframe.
+* **Developers running agentic scans: S**nyk Studio adoption rate.
+* **Total PR checks**: Number of pull request (PR) checks for the selected timeframe.
+* **PR check success rate**: Outcomes of PR checks. An increasing success rate over time demonstrates that developers produce more secure code earlier in the software development lifecycle.
 * **Snyk Organizations**: Track Snyk rollout progress by viewing the total number of new Snyk Organizations created over time.
-* **Open issues (Featured zero-day)**: Use this centralized dashboard to assess immediate risk and track your response during a major zero-day security incident.
-* **Developers testing in the IDE/CLI**: Number of developers who run a Snyk Studio scan during the selected timeframe.
+* **Zero-Day Open Issues**: Use this centralized dashboard to assess immediate risk and track your response during a major zero-day security incident.
+* **Developers testing in the IDE/CLI**:  Number of developers who run a Snyk scan during the selected timeframe.
 * **SCA Preventable issues**: It shows the number of new open-source (SCA) vulnerabilities introduced into your codebase that you can block earlier, for example, during pull request checks.
 * **Tested repositories in CI/CD**: Number of repositories tested in the continuous integration and continuous delivery (CI/CD) pipeline.
 
@@ -37,6 +41,8 @@ The following widgets are enabled by default:
 * **Repository coverage percentage over time, by Snyk product**: Tracks your onboarding progress. Use this trend line to verify that you successfully integrate new repositories into Snyk over time.
 * **Assets discovered over time, by type**: Monitors your environment's growth. Use this to ensure Snyk successfully detects new repositories as your organization scales.
 
+Additionally, you can add the **Targets by integration** widget to track the number of repositories each integration imports into Snyk.
+
 ### Exposure
 
 The Exposure section helps you triage risk by isolating where vulnerabilities concentrate and prioritizing them by severity.
@@ -47,10 +53,10 @@ The following widgets are enabled by default:
 * **Open issues over time, by severity**: Categorizes your risk backlog. Use this to verify that teams prioritize and resolve Critical and High severity issues faster than lower-severity issues.
 * **Open issues by Snyk product**: Illustrates risk distribution across your stack. Use this to determine if your primary vulnerabilities lie in your proprietary code, open-source libraries, containers, or infrastructure configurations.
 
-Additionally, you can add the following widgets:<br>
+Additionally, you can add the following widgets:
 
 * **Open issues by severity**: Categorizes open issues by severity level.
-* **Open issues by repository freshness**: Identifies risks based on the last commit (freshness) to highlight blind spots. You can configure the definitions for these statuses:
+* **New issues by repository freshness**: Identifies risks based on the last commit (freshness) to highlight blind spots. You can configure the definitions for these statuses:
 
 | Status       | Definition                                    |
 | ------------ | --------------------------------------------- |
@@ -59,8 +65,8 @@ Additionally, you can add the following widgets:<br>
 | **Dormant**  | Over 6 months                                 |
 | **N/A**      | The Group SCM integration detected no commits |
 
-* **Open issues (OWASP Top 10, 2021) by severity**: Group open issues by OWASP Top 10 (2021) category and severity.
-* **Open issues by asset class**: Enables prioritization of remediation efforts based on the business-criticality of different assets.
+* **New issues (OWASP Top 10, 2025) by severity**: Group open issues by OWASP Top 10 (2025) category and severity.
+* **New issues by asset class**: Enables prioritization of remediation efforts based on the business-criticality of different assets.
 * **SCA CVEs with the most open issues**: Highlights high-impact open-source vulnerabilities (CVEs) with the most open issues identified through software composition analysis (SCA).
 
 ### Remediation
