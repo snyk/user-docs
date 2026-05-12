@@ -46,7 +46,7 @@ A fine-grained PAT requires additional repository access scopes:
 
 The `Administration: Read-only` permission on the PAT is crucial for Snyk to identify and list the user's accessible GitHub organizations, a prerequisite for importing a new Project.
 
-Snyk uses PRs to tell [GitHub Enterprise](organization-level-integrations/github-enterprise.md) that a merge is to occur. To do this, change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
+Snyk uses PRs to tell [GitHub Enterprise](organization-level-integrations/github-enterprise.md) that a merge is to occur. To do this, the change content is pushed into a branch, which requires the `content: write` scope. A separate call is then made to create the fix PR, which requires the `pull request: write` scope. GitHub Enterprise is then instructed to create a PR, merging the change branch into the default branch.
 
 Snyk uses SCM webhooks to:
 
@@ -57,14 +57,14 @@ Snyk uses SCM webhooks to:
 
 The [Snyk GitHub Cloud App](organization-level-integrations/github-cloud-app.md) integration uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
 
-To set up the GitHub Cloud app integration you must be a:
+To set up the GitHub Cloud app integration, you must be a:
 
 * Snyk Organization Admin.
 * GitHub Organization Admin.
 * GitHub Repository Admin (if installing through the GitHub UI).
 
 {% hint style="info" %}
-While some permissions may be optional from GitHub’s perspective, they are necessary to support Snyk functions. These permissions cannot be customized for your individual needs because the app is registered under the Snyk Organization.&#x20;
+While some permissions may be optional from GitHub’s perspective, they are necessary to support Snyk functions. These permissions cannot be customized for your individual needs because the app is registered under the Snyk Organization.
 {% endhint %}
 
 The following table states the required GitHub App permissions and scopes:
@@ -93,41 +93,52 @@ You must have a self-hosted instance of GitHub.
 
 The [Snyk GitLab integration](organization-level-integrations/gitlab.md#gitlab-access-tokens) uses either a personal access token (PAT) or group access token (GAT), depending on the GitLab account tier you are on.
 
-To set up the Snyk GitLab integration you must be a:
+To set up the Snyk GitLab integration, you must be a:
 
 * Snyk Group or Organization Admin.
 * GitLab Owner or Maintainer
 
-A PAT is used for managing personal GitLab projects and requires the `api` scope. For Snyk Essentials to show all repositories from GitLab, the user generating the PAT should be part of the GitLab group where their GitLab permissions can be a minimum of Guest.
+Use a personal access token (PAT) to manage personal GitLab projects. The PAT requires the `api` scope.
 
-A GAT is used for managing multiple GitLab projects in a GitLab group and requires the `api` scope and maintainer role selected from the dropdown. You must be a GitLab Premium or Ultimate account tier holder to create a GAT.
+To display all GitLab repositories in Snyk Essentials, you must be part of the GitLab group and have at least Guest permissions when you generate the PAT.
+
+Use a group access token (GAT) to manage multiple GitLab projects in a GitLab group. The GAT requires the `api` scope and the **Maintainer** role selected from the dropdown. You must have a GitLab Premium or Ultimate account tier to create a GAT.
 
 ### Bitbucket permission requirements
 
 The Snyk Bitbucket integrations use different access control mechanisms to connect with Snyk:
 
-* [Snyk Bitbucket Cloud](user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires the creation of an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#api-tokens).
+* [Snyk Bitbucket Cloud](user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires creating an [API token](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#api-tokens).
 * [Snyk Bitbucket Cloud App](user-permissions-and-access-scopes.md#bitbucket-cloud-app-scopes) requires [Bitbucket workspace authorization](organization-level-integrations/bitbucket-cloud-app.md#setting-up-a-bitbucket-cloud-app) and related permissions.
 * [Snyk Bitbucket Data Center/Server](user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes) requires a [dedicated username and password](organization-level-integrations/bitbucket-data-center-server.md#how-to-set-up-a-bitbucket-dc-server-integration) or an API token.
 
 {% hint style="warning" %}
-To set up any Snyk Bitbucket integration, you must be a Bitbucket Workspace Admin.
+To set up any Snyk Bitbucket integration, you must be a Bitbucket **Workspace Admin**.
 {% endhint %}
 
 #### Bitbucket Cloud:
 
-| Action and purpose                                                                                                                                      |                                                                               API Token Scope Requirements                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <p><strong>Daily / weekly tests:</strong><br>Read manifest files in private repos.</p>                                                                  |                                                                                `read:repository:bitbucket`                                                                               |
-| <p><strong>Manual fix pull requests (triggered by the user):</strong><br>Create fix PRs in repos.</p>                                                   | <p><code>read:repository:bitbucket</code></p><p><code>write:repoistory:bitbucket</code></p><p><code>read:pullrequest:bitbucket</code></p><p><code>write:pullrequest:bitbucket</code></p> |
-| <p><strong>Automatic fix and upgrade pull requests:</strong><br>Create fix/upgrade PRs in repos.</p>                                                    | <p><code>read:repository:bitbucket</code></p><p><code>write:repoistory:bitbucket</code></p><p><code>read:pullrequest:bitbucket</code></p><p><code>write:pullrequest:bitbucket</code></p> |
-| <p><strong>Snyk tests on pull requests:</strong><br>Send PR status checks when a new PR is created or a PR is updated.</p>                              | <p><code>read:repository:bitbucket</code></p><p><code>write:repoistory:bitbucket</code></p><p><code>read:pullrequest:bitbucket</code></p><p><code>write:pullrequest:bitbucket</code></p> |
-| <p><strong>Snyk tests on pull requests (initial configuration):</strong><br>Add SCM webhooks to imported repos.</p>                                     |                                                   <p><code>read:webhook:bitbucket</code></p><p><code>write:webhook:bitbucket</code></p>                                                  |
-| <p><strong>Importing new projects to Snyk:</strong><br>Lists available repos in the Bitbucket instance in the <strong>Add Projects</strong> screen.</p> |               <p><code>read:project:bitbucket</code></p><p><code>read:workspace:bitbucket</code></p><p><code>read:account</code></p><p><code>read:user:bitbucket</code></p>              |
+Scope by Purpose
+
+| Action and purpose                                                                                                                                                |                                                                               API Token Scope Requirements                                                                               |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <p><strong>Daily / weekly tests:</strong><br>Read manifest files in private repos.</p>                                                                            |                                                                                `read:repository:bitbucket`                                                                               |
+| <p><strong>Manual fix pull requests (triggered by the user):</strong><br>Create fix PRs in repos.</p>                                                             | <p><code>read:repository:bitbucket</code></p><p><code>write:repository:bitbucket</code></p><p><code>read:pullrequest:bitbucket</code></p><p><code>write:pullrequest:bitbucket</code></p> |
+| <p><strong>Automatic fix and upgrade pull requests:</strong><br>Create fix/upgrade PRs in repos.</p>                                                              | <p><code>read:repository:bitbucket</code></p><p><code>write:repository:bitbucket</code></p><p><code>read:pullrequest:bitbucket</code></p><p><code>write:pullrequest:bitbucket</code></p> |
+| <p><strong>Snyk tests on pull requests:</strong><br>Send PR status checks when a new PR is created or a PR is updated.</p>                                        | <p><code>read:repository:bitbucket</code></p><p><code>write:repository:bitbucket</code></p><p><code>read:pullrequest:bitbucket</code></p><p><code>write:pullrequest:bitbucket</code></p> |
+| <p><strong>Snyk tests on pull requests (initial configuration):</strong><br>Add SCM webhooks to imported repos.</p>                                               |                                                   <p><code>read:webhook:bitbucket</code></p><p><code>write:webhook:bitbucket</code></p>                                                  |
+| <p><strong>Importing new projects to Snyk:</strong><br>Lists available repos in the Bitbucket instance in the <strong>Add Projects</strong> screen.</p>           |               <p><code>read:project:bitbucket</code></p><p><code>read:workspace:bitbucket</code></p><p><code>read:account</code></p><p><code>read:user:bitbucket</code></p>              |
+| <p><strong>Snyk Group Level Integrations:</strong><br>Required for Inventory and <a href="https://docs.snyk.io/scan-with-snyk/snyk-essentials">Essentials</a></p> |                               <p><code>read:repository:bitbucket</code></p><p><code>read:user:bitbucket</code><br><code>read:workspace:bitbucket</code></p>                              |
+
+When reviewing the token scopes, they are listed by access level. Please review to ensure that you have the correct scopes:
+
+| READ                                                                                                                                                                                                                                                                             | WRITE                                                                                                                              |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| <p><code>read:account</code><br><code>read:repository:bitbucket</code><br><code>read:pullrequest:bitbucket</code><br><code>read:webhook:bitbucket</code><br><code>read:project:bitbucket</code><br><code>read:workspace:bitbucket</code><br><code>read:user:bitbucket</code></p> | <p><code>write:repository:bitbucket</code><br><code>write:pullrequest:bitbucket</code><br><code>write:webhook:bitbucket</code></p> |
 
 #### Bitbucket Data Center/Server scopes
 
-The following table details the required permission scopes in Bitbucket Cloud and Bitbucket Data Center/Serve&#x72;**:**
+Bitbucket lists token scopes by access level. Verify you have the correct scopes:
 
 | Action and purpose                                                                                                    |                                             App password requirements                                             | Bitbucket permissions |
 | --------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------: | :-------------------: |
@@ -158,7 +169,7 @@ The following table details the permissions required for the Bitbucket Cloud App
 
 The [Snyk Azure Repositories (TFS) integration](organization-level-integrations/azure-repositories-tfs.md) uses an Azure DevOps personal access token (PAT). This token is configured with the specific permissions Snyk needs to access your Azure repositories.
 
-To set up the Snyk Azure Repositories (TFS) integration you must be:
+To set up the Snyk Azure Repositories (TFS) integration, you must be:
 
 * A [Snyk Organization Admin](../../snyk-platform-administration/user-roles/pre-defined-roles.md).
 * A member of the [Project Administrators group](https://learn.microsoft.com/en-us/azure/devops/organizations/security/change-project-level-permissions?view=azure-devops\&tabs=preview-page) in Azure. This ensures the PAT has the `edit subscriptions permissions` required to enable webhooks.

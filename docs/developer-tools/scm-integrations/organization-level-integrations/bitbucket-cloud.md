@@ -23,13 +23,7 @@ To ensure continued support and functionality, update your Bitbucket Cloud integ
    The newly created user must have **Admin** permissions to all the repositories you need to monitor with Snyk.
 2. In Snyk, go to the **Integrations** page, open the **Bitbucket Cloud** card, and configure the **Account credentials**.
 3. In BitBucket, under the Personal settings, select **Atlassian account settings** > **Security** > **Create and manage API tokens**.
-4.  Follow the Bitbucket procedure to set up an account with the following permissions:
-
-    * read:user:bitbucket
-    * read:workspace:bitbucket
-    * read:repository:bitbucket
-
-
+4.  Follow the Bitbucket procedure to set up an API Token with the scopes as defined in [Bitbucket permission requirements](../user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes).
 
     See the [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/)for more details about the procedure.
 5. Enter the email and the [API key for the Bitbucket account](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#api-tokens) you created, and **save** your changes.\
@@ -59,24 +53,14 @@ After the integration is in place, you will be able to use capabilities such as:
 
 Snyk produces advanced [remediation reports](../../../manage-risk/analytics/reports-tab/remediation-reports.md) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
-The example that follows shows a Project-level security report.
-
-<figure><img src="../../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt="An example of a Project-level security report"><figcaption><p>An example of a Project-level security report</p></figcaption></figure>
-
 #### Project monitoring and automatic fix Pull Requests
 
 Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](../../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-fix-prs.md) with fixes for your repositories.
 
-The example that follows shows a fix Pull Request opened by Snyk.
-
-<figure><img src="../../../.gitbook/assets/666.png" alt="Example of an automatic fix Pull Request opened by Snyk"><figcaption><p>Example of an automatic fix Pull Request opened by Snyk</p></figcaption></figure>
-
 To review and adjust the automatic fix pull request settings:
 
-1. In Snyk, go to **Organization settings** > **Integrations** > **Source control** > **Bitbucket Cloud**, and click **Edit Settings**.
+1. In Snyk, go to **Organization settings** > **Integrations** > **Bitbucket Cloud**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix PRs** section and configure the relevant options.
-
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-03 at 14.49.59.png" alt="Configure Automatic fix PRs"><figcaption><p>Configure Automatic fix PRs</p></figcaption></figure>
 
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
@@ -86,7 +70,7 @@ For more information, see [Snyk automated pull requests](../../../scan-with-snyk
 
 #### Pull request tests
 
-Snyk tests any newly-created pull request in your repositories for security vulnerabilities and sends a build check to Bitbucket Cloud. You can see directly from Bitbucket Cloud whether or not the pull request introduces new security issues.
+Snyk tests any newly created pull request in your repositories for security vulnerabilities and sends a build check to Bitbucket Cloud. You can see directly from Bitbucket Cloud whether or not the pull request introduces new security issues.
 
 The example that follows shows a Snyk pull request build check on the Bitbucket Cloud **Pull Request** page.
 
@@ -102,16 +86,18 @@ To review and adjust the pull request tests settings:
 ### Required permission scope for the Bitbucket Cloud integration
 
 {% hint style="warning" %}
-Bitbucket Cloud has replaced App Passwords with API tokens\
-Existing credentials will continue to work normally until completely deprecated by Bitbucket Cloud [details here](https://www.atlassian.com/blog/bitbucket/bitbucket-cloud-transitions-to-api-tokens-enhancing-security-with-app-password-deprecation).\
-New integrations will now use API tokens.
+Bitbucket Cloud replaces App Passwords with API tokens
+
+You must use API tokens for new integrations. Update your App Password-based integrations to use API tokens before the deprecation to prevent integration failures.
+
+If you have an App Password-based integration, a banner appears on the integration page prompting you to update. Existing credentials work until Bitbucket Cloud deprecates them. For more information, see the [Bitbucket Cloud deprecation](https://www.atlassian.com/blog/bitbucket/bitbucket-cloud-transitions-to-api-tokens-enhancing-security-with-app-password-deprecation) details.
 {% endhint %}
 
-All the operations, whether triggered manually or automatically, are performed for a Bitbucket Cloud [service account](../../../implementation-and-setup/enterprise-setup/service-accounts/) that has its token (API Token) configured in the **Integration settings**.
+The integrated Bitbucket Cloud account requires Admin permissions on imported repositories. This allows Snyk to perform required operations on monitored repositories, such as reading manifest files and opening fix or upgrade pull requests.
 
-For Snyk to perform the required operations on monitored repositories, such as reading manifest files on a frequent basis and opening fix or upgrade PRs, the integrated Bitbucket Cloud service account needs **Admin** permissions on the imported repositories.
+Snyk performs all manual and automatic operations using the Bitbucket Cloud user account API token configured in the **Integration settings**.
 
-For detailed information on the permission scopes required, see [Bitbucket permission requirements](../user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes).
+For more information on required permission scopes, see [Bitbucket permission requirements](../../../implementation-and-setup/team-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations.md).
 
 ### How to disconnect Snyk from Bitbucket Cloud
 
@@ -124,7 +110,7 @@ To disconnect this integration, in **Organization settings** > **Integrations:**
 
 1. In your list of integrations, select the Bitbucket integration you want to deactivate and click **Edit settings** to open a page with the current status of your integration.\
    \
-   The page includes sections that are specific to each integration, where you can manage your credentials, API key, Service Principal, or connection details.
+   The page includes sections specific to each integration, where you can manage your credentials, API key, Service Principal, and connection details.
 2. Scroll to the relevant section and click **Disconnect.**
 
 ### Migrate to the Bitbucket Cloud App
@@ -149,31 +135,29 @@ The migration process includes the following steps:
 3. Removing the first-party extension for the PAT integration in Bitbucket (optional). This step is explained in the [Disconnect the PAT integration](bitbucket-cloud.md#disconnect-the-pat-integration) section.
 4. [Connecting the Bitbucket Cloud App](bitbucket-cloud.md#set-up-the-bitbucket-cloud-app-integration) and importing Projects.
 
-#### Delete existing Projects
+### Delete existing Projects
 
-Delete all the existing Projects in Snyk that were previously imported from the Legacy integration. To use the bulk delete action on the Projects page, change the grouping filter to **Group by none**. You can now select multiple Projects in the list individually or by selecting the checkbox at the top to **Select all visible projects**. To delete a Project, select the trash icon, **Delete selected projects**.
+Delete all existing Snyk Projects previously imported from the Legacy integration:
 
-<figure><img src="../../../.gitbook/assets/2023-11-20_14-29-35.png" alt="Change the Projects filter to Group by none"><figcaption><p>Change the Projects filter to <strong>Group by none</strong></p></figcaption></figure>
+1. Navigate to the **Projects** page.
+2. Change the grouping filter to **Group by none** to enable the bulk delete action.
+3. Select multiple Projects individually, or select the **Select all visible projects** checkbox.
+4. Click the **Delete selected projects** trash icon.
 
-<figure><img src="../../../.gitbook/assets/2023-11-20_14-41-16.png" alt="Bulk delete the selected Projects" width="375"><figcaption><p>Bulk delete the selected Projects</p></figcaption></figure>
+### Disconnect the PAT integration
 
-#### Disconnect the PAT integration
+To disconnect the Bitbucket Cloud PAT integration, navigate to the Bitbucket Cloud integration settings and click **Disconnect**.
 
-To disconnect the Bitbucket Cloud PAT integration, navigate to the settings page of Bitbucket Cloud integration, scroll to the relevant section, and click **Disconnect.**
+The Bitbucket Cloud integration includes an optional first-party interface app. You can install this app on your Bitbucket Cloud workspace to add a Snyk tab to the PAT integration.
 
-Remove the Snyk tab for the PAT integration in Bitbucket Cloud (optional)
+If you use this app, remove it before you set up the **Snyk Bitbucket Cloud App**. The Snyk App integration includes this functionality.
 
-The Bitbucket Cloud integration has an optional first-party interface app.
+To remove the app:
 
-This app can be installed on your Bitbucket Cloud workspace to enrich the PAT integration with a first-party interface as the Snyk tab)
+1. Navigate to **Workspace settings** > **Manage installed apps** in Bitbucket.
+2. Expand the **Snyk Security for Bitbucket Cloud** app.
+3. Click **Remove**.
 
-If you have used this app, before setting up the Snyk Bitbucket Cloud App in the next step, remove the previous interface app in Bitbucket Cloud.\
-This functionality is supported out-of-the-box in the Snyk App integration.\
-\
-Go to your **Workspace settings** page in **Bitbucket.org** > **Manage installed apps**, expand the **Snyk Security for Bitbucket Cloud** app, and click **Remove.**
-
-<figure><img src="../../../.gitbook/assets/remove_snyk-security-bbc_11oct2022.png" alt="Remove the first-party Snyk Legacy interface app in Bitbucket"><figcaption><p>Remove the first-party Snyk Legacy interface app in Bitbucket</p></figcaption></figure>
-
-#### Set up the Bitbucket Cloud App integration
+### Set up the Bitbucket Cloud App integration
 
 See the [Bitbucket Cloud App integration](bitbucket-cloud-app.md) topic for instructions.
