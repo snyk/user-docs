@@ -31,7 +31,7 @@ For example, the critical vulnerability [SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720
 
 Learn more by using the [OWASP TOP 10 Learning path](https://learn.snyk.io/learning-paths/owasp-top-10/) on Snyk Learn.
 
-The report is based on the latest mapping released in 2021. The supported products are Snyk Open Source, Snyk Container, and Snyk Code.
+The report is based on the latest mapping released in 2025. The supported products are Snyk Open Source, Snyk Container, and Snyk Code.
 
 ## PCI-DSS v4.0.1 report
 
