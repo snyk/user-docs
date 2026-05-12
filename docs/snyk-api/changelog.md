@@ -1,3 +1,32 @@
+## 2026-03-25 - Updated 2026-05-12
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- the `data/items/attributes/coordinates/items/remedies/items/description` response property`s maxLength was increased from `4096` to `20480` for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the `data/items/attributes/description` response property`s maxLength was increased from `4096` to `20480` for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- the `data/attributes/coordinates/items/remedies/items/description` response property`s maxLength was increased from `4096` to `20480` for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the `data/attributes/description` response property`s maxLength was increased from `4096` to `20480` for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- the `data/items/attributes/coordinates/items/remedies/items/description` response property`s maxLength was increased from `4096` to `20480` for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the `data/items/attributes/description` response property`s maxLength was increased from `4096` to `20480` for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- the `data/attributes/coordinates/items/remedies/items/description` response property`s maxLength was increased from `4096` to `20480` for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the `data/attributes/description` response property`s maxLength was increased from `4096` to `20480` for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2026-03-25 - Updated 2026-05-01
 
 ### GET - `/tenants` - Updated

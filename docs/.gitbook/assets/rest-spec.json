@@ -16238,7 +16238,7 @@
                       },
                       "description": {
                         "description": "A markdown-formatted optional description of this remedy. Links are not permitted.",
-                        "maxLength": 4096,
+                        "maxLength": 20480,
                         "minLength": 1,
                         "type": "string"
                       },
@@ -16247,7 +16247,19 @@
                         "properties": {
                           "data": {
                             "additionalProperties": true,
-                            "description": "Metadata information related to apply a remedy. Limited in size to 100Kb when JSON serialized.",
+                            "description": "Metadata information related to apply a remedy. Limited in size to 100Kb when JSON serialized.\n\nFor open source issues, when schema_version is `package_vulnerability/v0`,\ndata will include `semver_vulnerable` (an array representing the range of vulnerable versions) and `fixed_in` (an array representing fixed versions).\n",
+                            "example": {
+                              "fixed_in": [
+                                "5.7.4",
+                                "6.4.1",
+                                "7.1.1"
+                              ],
+                              "semver_vulnerable": [
+                                "\u003e=5.5.0 \u003c5.7.4",
+                                "\u003e=6.0.0 \u003c6.4.1",
+                                "\u003e=7.0.0 \u003c7.1.1"
+                              ]
+                            },
                             "type": "object"
                           },
                           "schema_version": {
@@ -16563,7 +16575,7 @@
           "description": {
             "description": "A markdown-formatted optional description of this issue. Links are not permitted.",
             "example": "Affected versions of this package are vulnerable to Prototype Pollution.\nThe utilities function allow modification of the `Object` prototype.\nIf an attacker can control part of the structure passed to this function,\nthey could add or modify an existing property.\n",
-            "maxLength": 4096,
+            "maxLength": 20480,
             "minLength": 1,
             "type": "string"
           },
