@@ -7,12 +7,12 @@ Snyk detects vulnerable base images by scanning your Dockerfile when importing a
 Supported Git-based repository managers for Dockerfile fix PRs include:
 
 * GitHub
-* GitHub Enterprise
-* GitHub Cloud App
-* GitHub Server App
 * GitLab
 * Bitbucket Server
 * Bitbucket Cloud
+* GitHub Enterprise
+* GitHub Cloud App
+* GitHub Server
 * Azure Repos
 
 For any Dockerfile Project created in Snyk, if the base image is a [Docker Official image](https://docs.docker.com/docker-hub/official_images/), the results include a list of suitable base images that can be used instead of the existing, more vulnerable one. For more information, see [Analyze and fix container images](../use-snyk-container/analyze-and-fix-container-images.md).
