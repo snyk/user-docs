@@ -25098,6 +25098,10 @@
             ],
             "description": "Inline configured policy options for determining outcome of this specific test.\n\nIf centrally managed policies are in scope, inline policies are overridden\nby managed policies. Policy references explain which policies were\neffective for test evaluation."
           },
+          "monitor": {
+            "description": "Indicates whether the test result should be monitored with recurring tests.",
+            "type": "boolean"
+          },
           "project_business_criticality": {
             "maxLength": 256,
             "type": "string"
