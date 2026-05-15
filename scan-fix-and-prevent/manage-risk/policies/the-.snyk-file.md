@@ -87,7 +87,7 @@ When you include the `.snyk` file in your code repository and the `language-sett
 if the `.snyk` file was not present at the initial import of the Project into Snyk., you must re-import the Project.
 {% endhint %}
 
-For more information about Python version support, see [Python version support](../../supported-languages/supported-languages-list/python/#technical-specifications).
+For more information about Python version support, see [Python version support](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/python#technical-specifications).
 
 For more information about using the `.snyk` file with Open Source Projects, see the following:
 

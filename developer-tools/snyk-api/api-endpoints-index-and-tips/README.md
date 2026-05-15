@@ -220,7 +220,7 @@ The View Project History permission is needed to use this API.
 
 ### [Create a Custom Base Image from an existing container project](../reference/custom-base-images.md#custom_base_images)
 
-**More information:** [Use Custom Base Image Recommendations](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/), section [Mark the created Project as a custom base image](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/#mark-the-created-project-as-a-custom-base-image);\
+**More information:** [Use Custom Base Image Recommendations](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/), section [Mark the created Project as a custom base image](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations#mark-the-created-project-as-a-custom-base-image);\
 [Versioning schema for custom base images](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/versioning-schema-for-custom-base-images)
 
 ### [Get a custom base image collection](../reference/custom-base-images.md#custom_base_images-1)
@@ -335,7 +335,7 @@ The View Project History permission is needed to use this API.
 
 ## Import Projects (v1)
 
-Projects can be Git repositories, Docker images, containers, configuration files, and much more. For more information, see [Snyk Projects](../../snyk-platform-administration/snyk-projects/); the page includes the [Targets definition](../../snyk-platform-administration/snyk-projects/#target).
+Projects can be Git repositories, Docker images, containers, configuration files, and much more. For more information, see [Snyk Projects](../../snyk-platform-administration/snyk-projects/); the page includes the [Targets definition](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects#target).
 
 A typical import starts with using the endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to request a target to be processed. Then, use the endpoint [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) to poll the Import Job AP I for further details on completion and resulting Snyk Projects.
 
@@ -431,7 +431,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 [Rust](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/rust):\
 [Guidance for Snyk for C++ page, Alternate testing options section](/broken/pages/11FkFB7EPbsM1mTkFvJ0#alternate-testing-options);\
 [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/);\
-[Guidance for JavaScript and Node.js](../../supported-languages/supported-languages-list/javascript/#unmanaged-javascript);\
+[Guidance for JavaScript and Node.js](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#unmanaged-javascript);\
 [List issues for a package page](../using-specific-snyk-apis/issues-list-issues-for-a-package.md)
 
 ### [List issues for a given set of packages](../reference/issues.md#orgs-org_id-packages-issues) (not available to all customers)
@@ -826,7 +826,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ### [Get targets by org ID](../reference/targets.md#orgs-org_id-targets)
 
-**More information:** [Target definition on the Snyk Projects page](../../snyk-platform-administration/snyk-projects/#target);\
+**More information:** [Target definition on the Snyk Projects page](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects#target);\
 [Scenario: Identify and import new repositories only](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis);\
 [Scenario: Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis](scenarios-for-using-the-snyk-api.md#identify-and-import-new-repositories-only)
 
@@ -862,7 +862,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ### [Test for issues in a public package by name and version](../reference/test-v1.md#test-npm-packagename-version) (npm)
 
-**More information:** [Guidance for JavaScript and Node.js](../../supported-languages/supported-languages-list/javascript/#unmanaged-javascript)
+**More information:** [Guidance for JavaScript and Node.js](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#unmanaged-javascript)
 
 ### [Test maven file](../reference/test-v1.md#test-maven)
 
@@ -881,7 +881,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 ### [Test Dep Graph](../reference/test-v1.md#test-dep-graph)
 
 **More information:** [Dep Graph API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/snyk-for-bazel/dep-graph-api) (Bazel);\
-[Unmanaged JavaScript](../../supported-languages/supported-languages-list/javascript/#unmanaged-javascript);\
+[Unmanaged JavaScript](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#unmanaged-javascript);\
 [Start scanning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/scan-with-snyk/start-scanning)
 
 ### [Test composer.json & composer.lock file](../reference/test-v1.md#test-composer)

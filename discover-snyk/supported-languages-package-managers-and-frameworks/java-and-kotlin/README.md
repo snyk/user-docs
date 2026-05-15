@@ -240,7 +240,7 @@ For the previous examples, Snyk analyzes and treats the files as follows:
 If a BOM has direct dependencies outside `dependencyManagement`, then Snyk creates a Project for that BOM.
 {% endhint %}
 
-Snyk also offers fix advice, including recommendations for upgrading vulnerable packages with the [Fix PR feature](../../scan-with-snyk/pull-requests/#snyk-fix-prs).
+Snyk also offers fix advice, including recommendations for upgrading vulnerable packages with the [Fix PR feature](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests#snyk-fix-prs).
 
 Fix PRs can only be created for dependencies whose versions are managed in the POM file where the issue is reported.
 

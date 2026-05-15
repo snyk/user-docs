@@ -34,7 +34,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Evo by Snyk
 
-* Added the [`aibom test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/aibom-test) command under [Snyk CLI Help](developer-tools/snyk-cli/commands/#snyk-aibom-test).
+* Added the [`aibom test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/aibom-test) command under [Snyk CLI Help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands#snyk-aibom-test).
 * Updated [`redteam`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/redteam) with additional options, and also added [Snyk Agent Red Teaming](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-agent-red-teaming).
 
 ### Snyk Analytics
@@ -93,7 +93,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk Code
 
-* The [Snyk Code Security policies](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/#manage-ignores-at-the-group-level-through-snyk-code-security-policies) documentation has been updated to clarify that Snyk Code Security policies are different to Snyk Security Policies.
+* The [Snyk Code Security policies](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code#manage-ignores-at-the-group-level-through-snyk-code-security-policies) documentation has been updated to clarify that Snyk Code Security policies are different to Snyk Security Policies.
 * The [Enable Snyk Agent Fix](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically#enable-snyk-agent-fix) section has been enhanced with more details and clear configuration steps.
 
 ### Snyk CLI
@@ -152,7 +152,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### **Other updates**
 
-* GitHub Cloud App and GitHub Server App have been added to the list of [supported SCMs for Dockerfile analysis](scan-with-snyk/snyk-container/scan-your-dockerfile/#supported-scms-for-dockerfile-analysis).
+* GitHub Cloud App and GitHub Server App have been added to the list of [supported SCMs for Dockerfile analysis](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/scan-your-dockerfile#supported-scms-for-dockerfile-analysis).
 * The `snyk-scm-contributors-count` docs were updated with prerequisites and setup notes. See [snyk-scm-contributors-count](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/).
 * The Declining Balance documentation from the [Snyk Declining Balance of Hours Service Description](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/declining-balance) page was updated with service description and expiration details.
 * The IaC issue-reporting walkthrough from the 'Getting started with Snyk IaC' page was updated to remove outdated screenshots and copy.
@@ -235,7 +235,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * `Raise Support Community Cases` and `View Support Community Cases` Tenant level permissions have been added. To learn more about which Tenant roles these permissions apply to, visit Pre-defined roles, [Tenant-level permissions](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/pre-defined-roles#tenant-level-permissions).
 * The [Analytics](manage-risk/analytics/) menu now updates its data daily instead of hourly.
 * Learn how to resolve duplicated and unenriched assets discovered outside Group and Organization-level SCM integrations.
-* You can now [exclude specific values](manage-risk/analytics/reports-tab/#exclude-filters) when you filter your reports.
+* You can now [exclude specific values](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab#exclude-filters) when you filter your reports.
 
 ### August 2025
 
@@ -314,7 +314,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### **Snyk Broker**
 
-* Updated the Snyk Broker documentation to include distinct steps for setting up the [Container Registry Agent with Docker](implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent), whether using the Classic or Universal Broker.
+* Updated the Snyk Broker documentation to include distinct steps for setting up the [Container Registry Agent with Docker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent#configuring-and-running-the-container-registry-agent), whether using the Classic or Universal Broker.
 * Updated the [Using the API to set up Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#broker-client-urls).
 * Snyk Learn courses have been integrated into the [Universal Broker](enterprise-setup/snyk-broker/universal-broker/) pages.
 
@@ -417,8 +417,8 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 #### **Snyk CLI, CI/CD, IDE**
 
 * [Advanced use of Snyk Container CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/advanced-use-of-snyk-container-cli) now includes support for scanning Kaniko image archives.
-* The [support policy for the CI/CD plugins](developer-tools/snyk-ci-cd-integrations/#support-policy) was updated to align with the CLI support policy.
-* The Net new issues feature was added to the IDE documentation for [Eclipse](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects#net-new-issues-versus-all-issues), [JetBrains](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/jetbrains-plugin/run-an-analysis-with-the-jetbrains-plugin#net-new-issues-versus-all-issues), [Visual Studio](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/visual-studio-extension/view-analysis-results-from-visual-studio-extension#net-new-issues-versus-all-issues), and [Visual Studio Code](developer-tools/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension/#net-new-issues-versus-all-issues), and [troubleshooting information](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/troubleshooting-ides/net-new-issues-delta-scan-troubleshooting) was added.
+* The [support policy for the CI/CD plugins](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-ci-cd-integrations#support-policy) was updated to align with the CLI support policy.
+* The Net new issues feature was added to the IDE documentation for [Eclipse](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects#net-new-issues-versus-all-issues), [JetBrains](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/jetbrains-plugin/run-an-analysis-with-the-jetbrains-plugin#net-new-issues-versus-all-issues), [Visual Studio](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/visual-studio-extension/view-analysis-results-from-visual-studio-extension#net-new-issues-versus-all-issues), and [Visual Studio Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension#net-new-issues-versus-all-issues), and [troubleshooting information](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/troubleshooting-ides/net-new-issues-delta-scan-troubleshooting) was added.
 
 #### **Snyk Code**
 
@@ -429,7 +429,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 #### Snyk Essentials
 
-* A new feature is now available in Snyk Essentials, introducing a new type of [asset tag](manage-risk/policies/assets-policies/#asset-tagging) known as GitHub custom properties.
+* A new feature is now available in Snyk Essentials, introducing a new type of [asset tag](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/policies/assets-policies#asset-tagging) known as GitHub custom properties.
 * [Asset tags](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-assets/assets-inventory-components#tags) have been redefined and are now clearly separated into system tags and user-defined tags.
 
 #### **Snyk Integrations**
@@ -480,7 +480,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 #### **Other updates**
 
-* [Snyk Admin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/snyk-admin) pages have been updated to reflect the addition of [Tenants](snyk-platform-administration/groups-and-organizations/tenant/) in the Snyk hierarchy, including a new infographic to illustrate the Tenant position in the [hierarchy](snyk-platform-administration/groups-and-organizations/#the-snyk-hierarchy).
+* [Snyk Admin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/snyk-admin) pages have been updated to reflect the addition of [Tenants](snyk-platform-administration/groups-and-organizations/tenant/) in the Snyk hierarchy, including a new infographic to illustrate the Tenant position in the [hierarchy](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations#the-snyk-hierarchy).
 
 ### November 2024
 
@@ -510,7 +510,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 * The [CLI authentication page](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/authenticate-to-use-the-cli) has been updated for the OAuth 2.0 protocol.
 * The page [Debugging the Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/debugging-the-snyk-cli) has been added.
-* [CLI standalone executables](developer-tools/snyk-cli/install-the-snyk-cli/#install-with-standalone-executables) have been updated to include Alpine Arm64.
+* [CLI standalone executables](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli#install-with-standalone-executables) have been updated to include Alpine Arm64.
 * IDE Eclipse[ plugin](developer-tools/snyk-ide-plugins-and-extensions/eclipse-plugin/) and [JetBrains plugin ](developer-tools/snyk-ide-plugins-and-extensions/jetbrains-plugin/)documentation pages have been updated.
 * [Authentication information](developer-tools/snyk-ide-plugins-and-extensions/) has been updated for all IDEs.
 
@@ -589,14 +589,14 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 * [Asset inventory filtering](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-assets/assets-inventory-components#asset-tabs) describes the new, simplified view that provides an improved experience of filtering the assets.
 * The [Asset inventory layouts](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-assets/assets-inventory-layouts) have been renamed to better reflect their functionality.
 * Four new SCM integrations are now available for Snyk:
-  * [Atlassian Compass](developer-tools/scm-integrations/application-context-for-scm-integrations/#atlassian-compass)
-  * [Harness](developer-tools/scm-integrations/application-context-for-scm-integrations/#harness)
-  * [OpsLevel](developer-tools/scm-integrations/application-context-for-scm-integrations/#opslevel)
-  * [Datadog Service Catalog](developer-tools/scm-integrations/application-context-for-scm-integrations/#datadog-service-catalog)
+  * [Atlassian Compass](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations/application-context-for-scm-integrations#atlassian-compass)
+  * [Harness](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations/application-context-for-scm-integrations#harness)
+  * [OpsLevel](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations/application-context-for-scm-integrations#opslevel)
+  * [Datadog Service Catalog](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations/application-context-for-scm-integrations#datadog-service-catalog)
 
 #### Snyk Integrations
 
-* A comparison of the GitHub and GitHub Enterprise integrations functions now resides on the [SCM, IDE, and CI/CD integrations](developer-tools/scm-integrations/#github-vs-github-enterprise) page.
+* A comparison of the GitHub and GitHub Enterprise integrations functions now resides on the [SCM, IDE, and CI/CD integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations#github-vs-github-enterprise) page.
 * Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/github#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
 * The [Snyk SCM Integrations](developer-tools/scm-integrations/organization-level-integrations/) page now contains information critical to using these integrations successfully in your SDLC. This includes:
   * [Git repository cloning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/workspaces) details

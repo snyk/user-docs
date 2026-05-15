@@ -16,11 +16,11 @@ Snyk supports creating Fix PRs or MRs for the following languages:
 
 * [Maven](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle#maven)
 * [.NET (NuGet)](../../../supported-languages/supported-languages-list/.net/)
-* [npm](../../../supported-languages/supported-languages-list/javascript/#support-for-npm)
-* [pnpm](../../../supported-languages/supported-languages-list/javascript/#support-for-pnpm)
+* [npm](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-npm)
+* [pnpm](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-pnpm)
 * [Python](../../../supported-languages/supported-languages-list/python/)
 * [Ruby](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/ruby)
-* [Yarn](../../../supported-languages/supported-languages-list/javascript/#support-for-yarn)
+* [Yarn](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-yarn)
 
 ## Languages supported for Upgrade Pull Requests or Merge Requests
 
@@ -28,7 +28,7 @@ Snyk can generate Upgrade Pull Requests (Upgrade PRs) or Merge Requests (MRs) fo
 
 Snyk supports generating Upgrade PRs or MRs for the following languages:
 
-* [npm](../../../supported-languages/supported-languages-list/javascript/#support-for-npm)
-* [pnpm](../../../supported-languages/supported-languages-list/javascript/#scanning-pnpm-workspaces)
-* [Yarn](../../../supported-languages/supported-languages-list/javascript/#support-for-yarn)
+* [npm](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-npm)
+* [pnpm](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#scanning-pnpm-workspaces)
+* [Yarn](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-yarn)
 * [Maven](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle#maven)
