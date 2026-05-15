@@ -1,0 +1,70 @@
+# SBOM test
+
+**Feature availability:** This feature is available to customers on Snyk Enterprise plans.
+
+## Usage
+
+`snyk sbom test --file=<FILE_PATH> [<OPTIONS>]`
+
+## Description
+
+The `snyk sbom test` command checks SBOM files for vulnerabilities in open-source packages.
+
+## Exit codes
+
+Possible exit codes and their meaning:
+
+**0**: success (scan completed), no vulnerabilities found\
+**1**: action\_needed (scan completed), vulnerabilities found\
+**2**: failure, try to re-run the command
+
+## Configure the Snyk CLI
+
+You can use environment variables to configure the Snyk CLI and set variables for connecting with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli)
+
+## Debug
+
+Use the `-d` or `--debug` option to output the debug logs.
+
+## Options
+
+### `--file=<FILE_PATH>`
+
+Required. Specify the file path of the SBOM document.
+
+The `snyk sbom test` command accepts the following file formats:
+
+* CycloneDX: JSON version 1.4, 1.5, and 1.6
+* SPDX: JSON version 2.3
+
+Packages and components within the provided SBOM file must be identified by a PackageURL (purl).
+
+Supported purl types are: `apk`, `cargo`, `cocoapods`, `conan`, `composer`, `deb`, `gem`, `generic`, `golang`, `hex`, `maven`, `npm`, `nuget`, `pub`, `pypi`, `rpm`, `swift`.
+
+Example: `$ snyk sbom test --file=bom.cdx.json`
+
+### `--json`
+
+Print results on the console as a JSON data structure.
+
+Example: `$ snyk sbom test --file=bom.cdx.json --json`
+
+### `--reachability=<true|false>`
+
+Perform reachability analysis during the scan. This feature is currently in Snyk Preview. For more information, refer to [Reachability analysis](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/reachability-analysis)
+
+Default: `false`
+
+### `--source-dir=<PATH_TO_SOURCE_CODE>`
+
+Specify a directory of source code to be analyzed. Use with `--reachability`.
+
+### `--reachability-filter=<reachable|no-info|not-applicable>`
+
+Filter the findings to show only reachable or non-reachable (`no-info`) vulnerabilities, or vulnerabilities where reachability analysis could not be performed (`not-applicable`).
+
+Requires `--reachability=true`.
+
+### `--severity-threshold=<low|medium|high|critical>`
+
+Report only vulnerabilities at the specified level or higher.

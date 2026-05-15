@@ -1,27 +1,27 @@
 # Table of contents
 
-* [Overview](snyk-platform-administration/README.md)
+* [Overview](snyk-platform-administration/snyk-admin.md)
 
 ## Snyk hierarchy
 
 * [Tenant, Groups, and Organizations](snyk-platform-administration/groups-and-organizations/README.md)
-* [Tenants](snyk-platform-administration/tenants-groups-and-organizations/tenants/README.md)
-  * [Manage users in a Tenant](snyk-platform-administration/tenants-groups-and-organizations/tenants/manage-users-in-a-tenant.md)
-* [Groups](snyk-platform-administration/tenants-groups-and-organizations/groups/README.md)
-  * [Manage users in a Group](snyk-platform-administration/tenants-groups-and-organizations/groups/manage-users-in-a-group.md)
-  * [Configure session length for a Snyk Group](snyk-platform-administration/tenants-groups-and-organizations/groups/configure-session-length-for-a-snyk-group.md)
-  * [Group general settings](snyk-platform-administration/tenants-groups-and-organizations/groups/group-general-settings.md)
-* [Organizations](snyk-platform-administration/tenants-groups-and-organizations/organizations/README.md)
-  * [Create and delete Organizations](snyk-platform-administration/tenants-groups-and-organizations/organizations/create-and-delete-organizations.md)
-  * [Set your preferred Organization](snyk-platform-administration/tenants-groups-and-organizations/organizations/set-your-preferred-organization.md)
-  * [Manage users in Organizations](snyk-platform-administration/tenants-groups-and-organizations/organizations/manage-users-in-organizations.md)
-  * [Requests for access to an Organization](snyk-platform-administration/tenants-groups-and-organizations/organizations/requests-for-access-to-an-organization.md)
-  * [Organization general settings](snyk-platform-administration/tenants-groups-and-organizations/organizations/organization-general-settings.md)
-* [Group and Organization settings](snyk-platform-administration/tenants-groups-and-organizations/group-and-organization-settings.md)
-* [Switch between Groups and Organizations](snyk-platform-administration/tenants-groups-and-organizations/switch-between-groups-and-organizations.md)
+* [Tenants](snyk-platform-administration/groups-and-organizations/tenant/README.md)
+  * [Manage users in a Tenant](snyk-platform-administration/groups-and-organizations/tenant/manage-users-in-a-tenant.md)
+* [Groups](snyk-platform-administration/groups-and-organizations/groups/README.md)
+  * [Manage users in a Group](snyk-platform-administration/groups-and-organizations/groups/manage-users-in-a-group.md)
+  * [Configure session length for a Snyk Group](snyk-platform-administration/groups-and-organizations/groups/configure-session-length-for-a-snyk-group.md)
+  * [Group general settings](snyk-platform-administration/groups-and-organizations/groups/group-general-settings.md)
+* [Organizations](snyk-platform-administration/groups-and-organizations/organizations/README.md)
+  * [Create and delete Organizations](snyk-platform-administration/groups-and-organizations/organizations/create-and-delete-organizations.md)
+  * [Set your preferred Organization](snyk-platform-administration/groups-and-organizations/organizations/set-your-preferred-organization.md)
+  * [Manage users in Organizations](snyk-platform-administration/groups-and-organizations/organizations/manage-users-in-organizations.md)
+  * [Requests for access to an Organization](snyk-platform-administration/groups-and-organizations/organizations/requests-for-access-to-an-organization.md)
+  * [Organization general settings](snyk-platform-administration/groups-and-organizations/organizations/organization-general-settings.md)
+* [Group and Organization settings](snyk-platform-administration/groups-and-organizations/group-and-organization-settings.md)
+* [Switch between Groups and Organizations](snyk-platform-administration/groups-and-organizations/switch-between-groups-and-organizations.md)
 * [Snyk Preview](snyk-platform-administration/snyk-preview.md)
 * [Manage notifications](snyk-platform-administration/manage-notifications.md)
-* [Usage settings](snyk-platform-administration/tenants-groups-and-organizations/usage-settings.md)
+* [Usage settings](snyk-platform-administration/groups-and-organizations/usage-settings.md)
 
 ## User management
 

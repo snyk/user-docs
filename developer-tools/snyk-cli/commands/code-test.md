@@ -1,0 +1,124 @@
+# Code test
+
+## Usage
+
+`snyk code test [<OPTIONS>] [<PATH>]`
+
+## Description
+
+The `snyk code test` command tests source code for any known security issues (Static Application Security Testing).
+
+## Exit codes
+
+Possible exit codes and their meaning:
+
+**0**: success (scan completed), no vulnerabilities found\
+**1**: action\_needed (scan completed), vulnerabilities found\
+**2**: failure, try to re-run the command. Use `-d` to output the debug logs.\
+**3**: failure, no supported projects detected
+
+## Configure the Snyk CLI
+
+## Debug
+
+Use the `-d` option to output the debug logs.
+
+## Options
+
+### `--report`
+
+Share results with the Snyk Web UI.
+
+This creates a project in your Snyk account with a snapshot of the current issues or appends the snapshot to an existing project.
+
+After using this option, log in to the Snyk website and view your projects to see the snapshot.
+
+**Note:** When using `--report`, the service account or user token must have the **View Project Ignores** permission enabled. This permission is required to access ignore information when reporting results to the Snyk Web UI. If you receive a 403 Forbidden error, ensure your service account role includes this permission.
+
+Example: `$ snyk code test --report`
+
+### `--project-name=<PROJECT_NAME>`
+
+**Required** when using `--report`. Specify a custom Snyk project name.
+
+Example: `$ snyk code test --report --project-name=my-project`
+
+### `--target-name=<TARGET_NAME>`
+
+This can be used in combination with the `--report` option.
+
+Set or override the target name for the project.
+
+### `--target-reference=<TARGET_REFERENCE>`
+
+This can be used in combination with the `--report` option.
+
+Specify a reference that differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference.
+
+Example of setting to the current Git branch:
+
+`snyk code test --report --target-reference="$(git branch --show-current)"`
+
+Example of setting to the latest Git tag:
+
+`snyk code test --report --target-reference="$(git describe --tags --abbrev=0)"`
+
+### `--remote-repo-url=<URL>`
+
+Set or override the remote URL for the repository.
+
+Example: `--remote-repo-url=https://gitlab.com/example/project` will create a target for given URL and on the UI it would be visible as `/example/project/` .
+
+### `--org=<ORG_ID>`
+
+Specify the `<ORG_ID>`to run Snyk commands tied to a specific Snyk Organization. The `<ORG_ID>` influences private test limits.
+
+If you have multiple Organizations, you can set a default from the CLI using:
+
+`$ snyk config set org=<ORG_ID>`
+
+Set a default to ensure all newly tested projects are tested under your default Organization. If you need to override the default, use the `--org=<ORG_ID>` option.
+
+Default: `<ORG_ID>` that is the current preferred Organization in your [Account settings](https://app.snyk.io/account)
+
+**Note:** You can also use `--org=<orgslugname>.` The `ORG_ID` works in both the CLI and the API. The Organization slug name works in the CLI, but not in the API.
+
+`orgslugname` must match the slug name as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. The orgname does not work.
+
+For more information, see the article [How to select the Organization to use in the CLI](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli)
+
+### `--json`
+
+Print results on the console as a JSON data structure.
+
+Example: `$ snyk code test --json`
+
+### `--json-file-output=<OUTPUT_FILE_PATH>`
+
+Save test output as a JSON data structure directly to the specified file, regardless of whether or not you use the `--json` option.
+
+Use to display the human-readable test output using stdout and, at the same time, save the JSON data structure output to a file.
+
+For SAST, if no issues are found, Snyk does not create a `json` file. In contrast, for open source, Snyk creates a file whether or not issues are found.
+
+Example: `$ snyk code test --json-file-output=vuln.json`
+
+### `--sarif`
+
+Return results in SARIF format.
+
+Example: `$ snyk code test --sarif`
+
+### `--sarif-file-output=<OUTPUT_FILE_PATH>`
+
+Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, regardless of whether or not you use the `--sarif` option.&#x20;
+
+Use to display the human-readable test output using stdout and, at the same time, save the SARIF format output to a file.\
+\
+When running multiple scans, such as SCA and Code scans, the SARIF output includes data only from the most recently completed scan. If you run multiple scans sequentially and specify the same `--sarif-file-output` file path, each subsequent scan overwrites the previous SARIF file. To keep results separate, save each scan to a different SARIF output file.
+
+### `--severity-threshold=<low|medium|high>`
+
+Report only vulnerabilities at the specified level or higher.
+
+**Note**: The Snyk Code configuration issues do not use the `critical` severity level.
