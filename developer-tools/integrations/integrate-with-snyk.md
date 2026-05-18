@@ -30,9 +30,9 @@ This page identifies additional Snyk integrations and where to find them.
 Snyk provides plugins for repository gatekeepers and integrations to connect with package repositories:
 
 * [Artifactory Gatekeeper Plugin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin)
-* [Package repository integrations](../scan-with-snyk/snyk-open-source/package-repository-integrations/)
+* [Package repository integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations)
 
-There are integrations that support [Snyk Container](../scan-with-snyk/snyk-container/container-registry-integrations/).
+There are integrations that support [Snyk Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations).
 
 Integrations for [event forwarding](event-forwarding/) allow you to push Snyk platform events directly to certain products on other platforms, enabling you to set up custom alerting, build your own reporting, trigger automation, and more.
 
@@ -40,7 +40,7 @@ Integrations for [event forwarding](event-forwarding/) allow you to push Snyk pl
 
 Information is also provided on how Snyk can work with [vulnerability management tools](partner-integrations.md).
 
-Snyk provides alternative reporting tools. For more information, see [Reporting and BI integrations](../manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/).
+Snyk provides alternative reporting tools. For more information, see [Reporting and BI integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share).
 
 ## Integrations for Snyk Essentials
 

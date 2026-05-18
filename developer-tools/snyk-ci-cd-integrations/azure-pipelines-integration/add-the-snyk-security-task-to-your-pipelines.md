@@ -40,6 +40,6 @@ This extension requires that Node.js and npm be installed on the build agent. Th
 
 After the task is included in your pipeline, the task runs each time the pipeline runs, and the results appear in the Azure Pipelines output view:
 
-![Azure pipelines output view](../../../.gitbook/assets/uuid-d570e34b-3973-2044-598b-cb89c82a1db0-en.png)
+![Azure pipelines output view](../../.gitbook/assets/uuid-d570e34b-3973-2044-598b-cb89c82a1db0-en.png)
 
 If the Snyk task fails the build, an error message appears in the results indicating that the build failed due to `snyk test`.

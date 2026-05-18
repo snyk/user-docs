@@ -73,6 +73,6 @@ Snyk offers capabilities to address issues both reactively and proactively:
 
 ### Deployment and rollout recommendations
 
-Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams benefit from being agile and determining what works best for their workflow. For more details, see the [Team implementation guide](../implementation-and-setup/team-implementation-guide/).
+Startups, small teams, individuals, and open-source maintainers typically onboard their applications using Git, getting results in minutes and starting to address issues almost immediately. Small teams benefit from being agile and determining what works best for their workflow. For more details, see the [Team implementation guide](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/team-implementation-guide).
 
-With large organizations developing hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For more details, see the [Enterprise implementation guide](../implementation-and-setup/enterprise-implementation-guide/).
+With large organizations developing hundreds of applications, a slower approach is recommended to get developer buy-in and adoption and to ensure a positive rollout experience. For more details, see the [Enterprise implementation guide](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide).

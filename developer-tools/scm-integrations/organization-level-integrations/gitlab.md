@@ -5,7 +5,7 @@
 
 The GitLab integration is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
-[Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/) is required if you are integrating from a private network.
+[Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker) is required if you are integrating from a private network.
 {% endhint %}
 
 ### Prerequisites for GitLab integration

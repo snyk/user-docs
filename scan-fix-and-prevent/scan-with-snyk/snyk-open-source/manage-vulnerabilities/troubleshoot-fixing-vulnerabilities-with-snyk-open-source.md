@@ -15,10 +15,10 @@ Snyk can generate Fix Pull Requests (Fix PRs) or Merge Requests (MRs) for depend
 Snyk supports creating Fix PRs or MRs for the following languages:
 
 * [Maven](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle#maven)
-* [.NET (NuGet)](../../../supported-languages/supported-languages-list/.net/)
+* [.NET (NuGet)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/.net)
 * [npm](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-npm)
 * [pnpm](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-pnpm)
-* [Python](../../../supported-languages/supported-languages-list/python/)
+* [Python](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/python)
 * [Ruby](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/ruby)
 * [Yarn](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#support-for-yarn)
 

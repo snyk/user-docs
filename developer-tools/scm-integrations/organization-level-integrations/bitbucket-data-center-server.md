@@ -77,7 +77,7 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 The example that follows shows a Snyk pull request build check on the Bitbucket DC/Server **Pull Request** page.
 
-![BitBucket DC/Server Pull Request page showing new vulnerability](../../../.gitbook/assets/888.png)
+![BitBucket DC/Server Pull Request page showing new vulnerability](../../.gitbook/assets/888.png)
 
 To review and adjust the pull request tests settings:
 

@@ -13,7 +13,7 @@ This list identifies all the areas with differences in functionality in the Snyk
 * Snyk Code is available except:
   * Does not include Code Search
   * Does not include Snyk Agent Fix
-* Snyk Container is available except for [Kubernetes Integration](../scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/).
+* Snyk Container is available except for [Kubernetes Integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration).
 * Snyk Open Source is available except:
   * Does not include Unmanaged C++
   * Does not include the npm packages `@snyk/protect` and `@snyk/fix.`
@@ -28,13 +28,13 @@ In addition, the CLI must be used in OAuth mode, not with token-driven authentic
 
 ## Single Sign-On limitations on availability
 
-[Single Sign-On (SSO)](../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/) is available except for [Self-Serve Single Sign-On (SSO)](../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/). All SSO setups are managed by Snyk. Some setup steps for Single Sign-On are slightly different:
+[Single Sign-On (SSO)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk) is available except for [Self-Serve Single Sign-On (SSO)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso). All SSO setups are managed by Snyk. Some setup steps for Single Sign-On are slightly different:
 
 * The service provider is Okta rather than Auth0.
 * The ACS URL and Entity ID and certificate will be different per connection and thus will not match the Snyk Single Sign-On documentation.
 * To get the ACS Url, Entity ID, and cert, Snyk will need to part-provision the connection in Okta.
 
-See [Single Sign-On (SSO) for authentication to Snyk](../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/) for details.
+See [Single Sign-On (SSO) for authentication to Snyk](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk) for details.
 
 ## Integrations not available
 
@@ -42,7 +42,7 @@ See [Single Sign-On (SSO) for authentication to Snyk](../implementation-and-setu
 
 ## Reporting and data not available
 
-[Insights](../manage-risk/prioritize-issues-for-fixing/using-the-issues-ui/) are not available
+[Insights](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/using-the-issues-ui) are not available
 
 ## Platform features not available
 

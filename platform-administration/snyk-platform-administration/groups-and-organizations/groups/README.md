@@ -24,7 +24,7 @@ For a detailed breakdown of user roles and their associated access permissions, 
 
 ### Group reports
 
-Select [**Reports**](../../../manage-risk/analytics/reports-tab/) to view the vulnerability status of the Organizations in your Group in one place as a report.
+Select [**Reports**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab) to view the vulnerability status of the Organizations in your Group in one place as a report.
 
 ### Group inventory
 
@@ -32,7 +32,7 @@ Select [**Inventory**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7
 
 ### Group issues
 
-Select [**Issues**](../../../manage-risk/prioritize-issues-for-fixing/) to better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. **Issues** offer a centralized view of all the issues identified by Snyk with additional asset context.
+Select [**Issues**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing) to better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. **Issues** offer a centralized view of all the issues identified by Snyk with additional asset context.
 
 ### Group dependencies
 
