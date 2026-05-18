@@ -12,6 +12,7 @@ For an overview of the supported security rules, visit [Groovy rules](../../scan
 
 For Groovy, Snyk supports the following frameworks and libraries:
 
+* Apache Camel
 * groovy-cli-picollo
 * Groovy standard library
 * groovy-cli-commons
