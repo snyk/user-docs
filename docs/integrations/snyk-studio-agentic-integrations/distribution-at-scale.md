@@ -17,7 +17,14 @@ Snyk provides general guidelines for distributing at scale. You can adapt these 
 
 ### Which coding assistants are available to your developers?
 
-You determine which coding assistants developers use. Most assistants support the Model Context Protocol (MCP) and directives. While configuration management varies by assistant, Snyk Studio deployment works with any coding assistant.
+Snyk recommends using one of the following ADEs because they support the preferred hooks-based approach:
+
+* Claude Code
+* Codex CLI
+* Cursor
+* Gemini CLI
+
+Most other assistants support the Model Context Protocol (MCP) and directives. While configuration management varies by assistant, Snyk Studio deployment works with any coding assistant with MCP and directive capabilities.
 
 ### What MDM tools does your organization use?
 
@@ -25,14 +32,13 @@ The operating system (Windows or macOS) determines the mobile device management 
 
 ### Do you want to auto-update Snyk CLI or MCP versions?
 
-Snyk updates the Snyk CLI and MCP Server regularly with features and fixes. You can distribute specific versions to developers to allow time for internal vetting. Expand the relevant option for more information on what actions you need to take.&#x20;
+Snyk updates the Snyk CLI and MCP Server regularly with features and fixes. You can distribute specific versions to developers to allow time for internal vetting. Expand the relevant option for more information on what actions you need to take.
 
 <details>
 
 <summary><strong>Yes</strong>, I would like to enable auto-updates for Snyk CLI/MCP versions.</summary>
 
-* If you are deploying alongside [Cursor](quickstart-guides-for-snyk-studio/cursor-guide.md), [Windsurf](quickstart-guides-for-snyk-studio/windsurf-guide.md), or [Copilot](quickstart-guides-for-snyk-studio/github-copilot-guide.md) in VS Code, you do not need to take any action as the default setting automatically upgrades dependencies when they are available.
-* If you are deploying Snyk Studio into any other coding assistant, you will need to keep the Snyk CLI on the latest version using MDM, which will depend on your [chosen installation method](../../developer-tools/snyk-cli/install-the-snyk-cli/).
+You need to keep the Snyk CLI on the latest version using MDM, which will depend on your [chosen installation method](../../developer-tools/snyk-cli/install-the-snyk-cli/).
 
 </details>
 
@@ -40,24 +46,31 @@ Snyk updates the Snyk CLI and MCP Server regularly with features and fixes. You 
 
 <summary><strong>No</strong>, I want to manually update Snyk CLI/MCP versions after internal testing is complete.</summary>
 
-* If you are deploying alongside Cursor, Windsurf, or Copilot in VS Code, [install that specific CLI version](../../developer-tools/snyk-cli/install-the-snyk-cli/#install-with-standalone-executables).
-  * If you want to use the Snyk VS Code IDE extension to facilitate the MCP server configuration and Secure at inception directives, install the VS Code IDE extension and disable auto CLI updates (`snyk.advanced.automaticDependencyManagement`) and set the path to your CLI explicitly (`snyk.advanced.cliPath`).
-* If you are deploying alongside Claude Code or Gemini CLI, [install a specific CLI version](../../developer-tools/snyk-cli/install-the-snyk-cli/#install-with-standalone-executables) and run `snyk mcp config --name=[ade_name]`.
-* If you are deploying alongside a coding assistant this guide does not cover or prefer fine-grained controls, [install a specific CLI version](../../developer-tools/snyk-cli/install-the-snyk-cli/#install-with-standalone-executables), configure your ADE’s MCP server, and optionally write the rule files (varies by ADE).
+* If you are deploying alongside Cursor, Windsurf, Antigravity, VS Code, Gemini CLI, or Claude CLI, [install a specific CLI version](../../developer-tools/snyk-cli/install-the-snyk-cli/) and run `snyk mcp config --tool=[ade_name]` where `[ade_name]` is one of the following:
+  * `cursor`
+  * `windsurf`
+  * `antigravity`
+  * `visual studio code`
+  * `gemini-cli`
+  * `claude-cli`
+* This guide does not cover fine-grained controls for deploying alongside other coding assistants.\
+  \
+  To deploy, complete the following steps:<br>
+  1. [Install a specific CLI version](../../developer-tools/snyk-cli/install-the-snyk-cli/).
+  2. Configure the MCP server for your ADE.
+  3. Write the rule files. This step is optional and varies by ADE.
 
 </details>
 
 ### Do you want to enable Secure at inception directives?
 
-[Secure at inception directives](directives.md#secure-at-inception-directives) guide the coding assistant on how and when to scan generated code and automatically fix security issues. You can configure whether you use these rules, the content, and how strictly you want them enforced.
+[Secure at inception directives](directives.md#secure-at-inception-directives) guide the coding assistant on how and when to scan generated code and automatically fix security issues. You can configure whether you use these directives, the content, and how strictly you want them enforced.
 
 <details>
 
 <summary><strong>Yes</strong>, I want to enable Secure at inception directives.</summary>
 
-* If you use Cursor, Windsurf, or Copilot in VS Code, use the [Snyk VS Code extension](../../developer-tools/snyk-ide-plugins-and-extensions/visual-studio-code-extension/) to apply default Secure at inception directives. This automatically writes to individual directories and adds files to `.gitignore`. You can configure the following settings:
-  * `snyk.securityAtInception.autoConfigureSnykMcpServer`: Configures the Snyk MCP server.
-  * `snyk.securityAtInception.executionFrequency`: Sets the directive execution frequency.
+* If you use Claude Code, Codex CLI, Cursor, Gemini CLI, use the [Snyk Studio installer](getting-started-with-snyk-studio.md#install-snyk-studio-for-ades-with-hooks-support) to automatically configure the directives.
 * If you deploy Snyk Studio into any other coding assistant or want to customize the Secure at inception directives, write the directives to the appropriate directory for your assistant. You can apply directives at the user level or the repository level.
   * User level directives: These apply to all repositories. For Windsurf, add rules to the `global_rules.md` file. For MacOS or Linux, this file is located in the `~/.codeium/windsurf/directory`. For Windows, this file is located in the `%USERPROFILE%\.codeium\windsurf\` directory. Cursor does not support programmatic user level rules.
   * If you use administrative consoles to manage directives, they must remain in sync across your development environments.
@@ -75,13 +88,7 @@ No additional action is required beyond configuring the Snyk MCP server. You can
 
 ### Do you want to allow developers to modify directive settings?
 
-Developer workflows vary. If you use the Snyk VS Code extension to configure the Snyk MCP server and Secure at inception directives, developers can change the scan frequency:
-
-* **On Code Generation:** Guides the agent to scan every time it generates new code in a Snyk supported language.
-* **Smart Scan:** The agent model decides when to invoke Secure at Inception rules.
-* **Manual:** Disables Secure at inception rules but allows users to invoke scans through the agent using natural language. You can revert to **On Code Generation**, as needed.
-
-If you deploy Snyk Studio into any other coding assistant or customize the Secure at inception directives, you can modify directives by manually overwriting or deleting directive files.
+If you customize the Secure at inception directives, you can modify them by manually overwriting or deleting directive files.
 
 <details>
 
@@ -109,13 +116,13 @@ The following example details deployment steps for "Example Company":
 
 ### Decisions made by Example company
 
-* Cursor and Windsurf are available to developers to use internally.
+* Claude Code and Cursor are available to developers to use internally.
 * Jamf is used as a MDM tool.
 * Yes, I want to auto-update Snyk CLI/MCP versions.
 * Yes, I want to enable Secure at inception directives.
-* Yes, I want to allow developers to modify directive settings.
+* No, I don't want to allow developers to modify directive settings.
 
-This results in a straightforward deployment where the Snyk VS Code IDE extension can be used to distribute the CLI, handle automatic dependency updates, automate the configuration of the MCP server, and set the Secure at inception directives. Allowing developers to modify directive settings is handled with a helper file on developer machines as shown in the example script.
+This results in a straightforward deployment where the [Snyk Studio installer](getting-started-with-snyk-studio.md#install-snyk-studio-for-ades-with-hooks-support) can configure the hooks (guardrail directives), skills, MCP server, and commands. The configuration is enforced as frequently as the MDM script runs.
 
 ### Development and rollout steps
 
@@ -123,9 +130,9 @@ Example company drafted the script and followed these steps:
 
 <details>
 
-<summary>1. Execute the script locally</summary>
+<summary>1. Execute the installer script locally</summary>
 
-This demonstrates functionality and troubleshoots any issues, with the user testing the experience in all applicable coding assistants and multiple runs.
+Running the [installer script](getting-started-with-snyk-studio.md#install-snyk-studio-for-ades-with-hooks-support) locally demonstrates functionality and allows troubleshooting, with the user testing the experience in all applicable coding assistants and multiple runs.
 
 </details>
 
@@ -141,9 +148,7 @@ This demonstrates functionality and troubleshoots any issues, with the user test
     2. **Category**: Security
     3. **Priority**: After
 
-
-
-    <figure><img src="../../.gitbook/assets/2026-01-21_16-14-45.png" alt=""><figcaption><p>Script attributes configuration in Jamf </p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/2026-01-21_16-14-45.png" alt=""><figcaption><p>Script attributes configuration in Jamf</p></figcaption></figure>
 4. Navigate to the **Scripts** tab and paste in the script.
 5. Click **Save**.
 
@@ -161,7 +166,7 @@ This demonstrates functionality and troubleshoots any issues, with the user test
    3. **Trigger**: Recurring Check-in
    4. **Execution Frequency**: Ongoing
 4. Navigate to the **Options** > **Scripts**:
-   1.  Click **Configure.**&#x20;
+   1.  Click **Configure.**
 
        <figure><img src="../../.gitbook/assets/2026-01-21_16-21-18.png" alt=""><figcaption><p>Configure the Snyk Studio Deployment script</p></figcaption></figure>
    2. Select the **Snyk Studio Deployment** script.
@@ -211,603 +216,486 @@ Snyk provides a sample script modeled after the Example company for distributing
 {% code overflow="wrap" %}
 ```bash
 #!/bin/bash
+set -euo pipefail
+export LANG=C.UTF-8
+export LC_ALL=C.UTF-8
 
-# =============================================================================
-# Snyk Studio Setup Script
-# =============================================================================
-# This script automates the complete setup of Snyk Studio for supported IDEs
-# (Cursor, Windsurf). It performs two main tasks:
-#
-# 1. Extension Installation: Installs the Snyk security extension from the Open
-#    VSX Marketplace into each supported IDE.
-#
-# 2. Secure at inception Configuration: Configures the IDE settings.json to
-#    enable Snyk's "Secure at inception" feature, which integrates security
-#    scanning into AI code generation workflows.
-#
-# The script is designed to run in an MDM/Jamf context where commands execute
-# as root but need to install extensions and modify settings for the logged-in
-# console user.
-#
-# Marker files are used to ensure settings are only applied once per IDE,
-# preventing repeated modifications on subsequent MDM policy runs. This allows
-# developers to modify their settings without having them overwritten. These
-# future setting modifications can still be tracked by Snyk Studio.
-# =============================================================================
+# ============================================================
+# Evo MDM Generator - Snyk Studio Setup
+# Platform: jamf-macos
+# Distribution: GitHub Live Pull (recipes downloaded at runtime from main)
+# Generated against snyk/studio-recipes@195c76ac0cfd5e4901a58a9c9339755cc0f8814a (informational; runtime tracks main)
+# Profile: default
+# ADEs: Cursor, Claude
+# Generated: 2026-05-18
+# ============================================================
 
-set -u -o pipefail
+### CLIENT CONFIGURATION ###
+CONFIGURE_CURSOR=true
+CONFIGURE_CLAUDE=true
+CONFIGURE_WINDSURF=false
+DEPLOY_SAI_HOOKS=true
+DEPLOY_COMMANDS=true
+DEPLOY_FIX_COMMAND=true
+DEPLOY_BATCH_FIX_COMMAND=true
+DEPLOY_SKILLS=true
+DEPLOY_MCP=true
+DISABLE_UPGRADES=false
+ALLOW_DEV_MODS=false
+USE_MARKERS=false
+FORCE_REDEPLOY=false
+STUDIO_RECIPES_REF="main"
+STUDIO_RECIPES_REPO="snyk/studio-recipes"
+### CLIENT CONFIGURATION ###
 
-# =============================================================================
-# CONSTANTS
-# =============================================================================
+CERT_FILE=""
+MARKER_DIR="/tmp/evo-mdm"
+JQ_PATH=""
 
-# Cursor and Windsurf both use the Open VSX Marketplace for extensions.
-# https://open-vsx.org/extension/snyk-security/snyk-vulnerability-scanner
-readonly INSTALL_EXTENSION_ID="snyk-security.snyk-vulnerability-scanner"
+# --- User context helpers ---
+get_console_user() {
+    local user
+    user=$(stat -f%Su /dev/console 2>/dev/null || echo "")
+    if [[ -z "$user" || "$user" == "root" || "$user" == "loginwindow" ]]; then
+        echo ""
+        return 1
+    fi
+    echo "$user"
+}
 
-# Paths for temporary files
-readonly MARKER_FILE_DIR="/tmp/snyk-ide-mdm"
-
-# Global variable set by find_editor_cmd to store the resolved editor path
-EDITOR_CMD=""
-
-# =============================================================================
-# LOGGING FUNCTIONS
-# =============================================================================
-
-# Log an informational message to stdout
-log_info() { echo "[INFO] $1"; }
-
-# Log a warning message to stderr (non-fatal issues)
-log_warning() { echo "[WARNING] $1" >&2; }
-
-# Log an error message to stderr
-log_error() { echo "[ERROR] $1" >&2; }
-
-# =============================================================================
-# MDM/Jamf HELPERS
-# =============================================================================
-# These functions handle the complexity of running commands as the logged-in
-# GUI user rather than root. This is critical in MDM contexts where the script
-# runs as root, but extensions must be installed and settings must be written to
-# the user's home directory with proper ownership and permissions.
-# =============================================================================
-
-# Get the username of the currently logged-in console (GUI) user.
-# Uses /dev/console ownership to determine who owns the active GUI session.
-get_console_user() { stat -f%Su /dev/console; }
-
-# Get the home directory of the console user.
-# Uses launchctl to run in the user's context to correctly resolve $HOME,
-# which handles edge cases like mobile accounts or network home directories.
 get_console_home() {
-  local user
-  user="$(get_console_user)"
-  # Run in the user's launchd session to get their actual home directory
-  launchctl asuser "$(id -u "$user")" sudo -u "$user" /bin/sh -lc 'printf %s "$HOME"'
+    local user="$1"
+    local uid
+    uid=$(id -u "$user" 2>/dev/null) || return 1
+    local home
+    home=$(launchctl asuser "$uid" sudo -u "$user" /bin/zsh -c 'echo $HOME' 2>/dev/null) || return 1
+    echo "$home"
 }
 
-# Execute a command as the console user with their launchd environment.
-# This ensures commands run with proper user permissions and environment
-# rather than as root.
-# launchctl asuser ensures we're in the user's launchd domain (GUI session)
-# sudo -u ensures we drop privileges to run as that user
+# Run a command as the console user in a non-login zsh.
+# Pass --with-profile as the first argument when the command depends on the
+# user's PATH (e.g., nvm-managed npm). Sourcing ~/.zprofile is opt-in to keep
+# the common case fast and immune to user dotfile errors.
 run_as_user() {
-  local user uid
-  user="$(get_console_user)"
-  uid="$(id -u "$user")"
-  launchctl asuser "$uid" sudo -u "$user" "$@"
-}
-
-# =============================================================================
-# JQ BINARY MANAGEMENT
-# =============================================================================
-# The script requires jq for JSON manipulation. Since jq may not be installed
-# on managed macOS systems, we download a verified binary to a temporary
-# location. MD5 hashes ensure the binary hasn't been tampered with.
-# =============================================================================
-
-# jq version and integrity verification hashes
-readonly JQ_VERSION="1.8.1"
-readonly JQ_HASH_MACOS_ARM64="d1e04871ef93ffd2807a00d7edfa305b"
-readonly JQ_HASH_MACOS_AMD64="d91812b3fbcc20ae2e1f28a9b8141c67"
-readonly JQ_BINARY_PATH="/tmp/snyk-ide-mdm-jq-${JQ_VERSION}"
-
-# Detect system architecture and normalize to download URL format
-get_system_architecture() {
-  local arch
-  arch="$(uname -m)"
-  case "$arch" in
-    arm64|aarch64) echo "arm64" ;;   # Apple Silicon
-    x86_64|amd64) echo "amd64" ;;    # Intel
-    *)
-      log_error "Unsupported architecture: $arch"
-      return 1
-      ;;
-  esac
-}
-
-# Verify the downloaded jq binary matches the expected MD5 hash.
-# This prevents execution of tampered or corrupted binaries.
-verify_jq_hash() {
-  local jq_path="$1"
-  local arch="$2"
-
-  local expected_hash
-  case "$arch" in
-    arm64) expected_hash="$JQ_HASH_MACOS_ARM64" ;;
-    amd64) expected_hash="$JQ_HASH_MACOS_AMD64" ;;
-    *)
-      log_error "Unknown architecture for hash verification: $arch"
-      return 1
-      ;;
-  esac
-
-  local actual_hash
-  actual_hash="$(run_as_user /sbin/md5 -q "$jq_path" 2>/dev/null)"
-
-  if [[ "$actual_hash" != "$expected_hash" ]]; then
-    log_error "MD5 hash mismatch for jq binary. Expected: $expected_hash, Got: $actual_hash"
-    return 1
-  fi
-
-  log_info "jq binary hash verified successfully with hash: $actual_hash"
-  return 0
-}
-
-# Download jq binary if not already present. Downloads from official GitHub
-# release and verifies integrity before allowing use.
-download_jq_if_needed() {
-  # Skip download if binary already exists and is executable
-  if [[ -x "$JQ_BINARY_PATH" ]]; then
-    log_info "jq binary already exists at $JQ_BINARY_PATH"
-    return 0
-  fi
-
-  log_info "Downloading jq ${JQ_VERSION} binary..."
-
-  local arch
-  arch="$(get_system_architecture)" || return 1
-
-  # Construct download URL for the appropriate architecture
-  local download_url
-  case "$arch" in
-    arm64|amd64) download_url="https://github.com/jqlang/jq/releases/download/jq-${JQ_VERSION}/jq-macos-${arch}" ;;
-    *)
-      log_error "Unknown architecture: $arch"
-      return 1
-      ;;
-  esac
-
-  log_info "Downloading jq binary from: $download_url"
-
-  # Download binary with curl
-  if ! run_as_user /usr/bin/curl -L -f -s -o "$JQ_BINARY_PATH" "$download_url"; then
-    log_error "Failed to download jq binary from $download_url"
-    return 1
-  fi
-
-  # Make binary executable
-  if ! run_as_user /bin/chmod +x "$JQ_BINARY_PATH"; then
-    log_error "Failed to make jq binary executable"
-    return 1
-  fi
-
-  # Verify hash before allowing use; remove binary if verification fails
-  verify_jq_hash "$JQ_BINARY_PATH" "$arch" || {
-    log_error "Hash verification failed, removing binary"
-    run_as_user /bin/rm -f "$JQ_BINARY_PATH"
-    return 1
-  }
-
-  log_info "Successfully downloaded and configured jq binary"
-  return 0
-}
-
-# =============================================================================
-# PATH SETUP
-# =============================================================================
-# Functions to construct PATH and locate editor executables. IDEs may install
-# their CLI tools in various locations, so we check multiple paths including
-# app bundles and user-specific directories.
-# =============================================================================
-
-# Build a comprehensive PATH that includes editor-specific paths and common
-# locations for developer tools (Homebrew, system binaries, etc.)
-build_path() {
-  local editor_paths="$1"
-  # Combine editor-specific paths with standard system paths
-  echo "${editor_paths}:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-}
-
-# Locate the editor CLI executable by checking provided paths first,
-# then falling back to PATH resolution. Sets EDITOR_CMD on success.
-find_editor_cmd() {
-  local name="$1"
-  local paths="$2"
-
-  # First, check explicit paths directly (most reliable)
-  IFS=':' read -ra path_array <<< "$paths"
-  for path in "${path_array[@]}"; do
-    local candidate="${path}/$name"
-    # Verify the file exists and is executable by the target user
-    if run_as_user test -x "$candidate"; then
-      EDITOR_CMD="$candidate"
-      return 0
+    local user="$1"; shift
+    local source_profile="false"
+    if [[ "${1:-}" == "--with-profile" ]]; then
+        source_profile="true"
+        shift
     fi
-  done
-
-  # Fall back to PATH-based resolution using the user's shell environment
-  local user_path resolved
-  user_path="$(build_path "$paths")"
-
-  # Use command -v in a login shell to leverage the user's full environment
-  if resolved=$(run_as_user /bin/sh -lc "PATH='${user_path}':\"\$PATH\"; command -v $name 2>/dev/null || true"); then
-    if [[ -n "$resolved" ]]; then
-      EDITOR_CMD="$resolved"
-      return 0
+    local uid
+    uid=$(id -u "$user")
+    if [[ "$source_profile" == "true" ]]; then
+        launchctl asuser "$uid" sudo -u "$user" /bin/zsh -c "[ -f ~/.zprofile ] && . ~/.zprofile >/dev/null 2>&1; $*"
+    else
+        launchctl asuser "$uid" sudo -u "$user" /bin/zsh -c "$*"
     fi
-  fi
-
-  return 1
 }
 
-# =============================================================================
-# ZSCALER HELPER
-# =============================================================================
-# Corporate environments often use Zscaler or similar SSL inspection proxies.
-# These proxies present their own certificates which Node.js (used by VS Code
-# extensions) won't trust by default. This function extracts the Zscaler root
-# certificate and prepares it for use via NODE_EXTRA_CA_CERTS.
-# =============================================================================
+# --- Logging ---
+log_info() { echo "[INFO] [studio] $1"; }
+log_error() { echo "[ERROR] [studio] $1" >&2; }
+log_warn() { echo "[WARN] [studio] $1"; }
 
-# Check for Zscaler certificate in system keychain and return an environment
-# variable assignment string if found. Returns empty string if not found.
-get_zscaler_cert_env_var() {
-  local cert_file=""
-
-  # Inner function to find and export the Zscaler certificate
-  _find_zscaler_cert_file() {
-    # Search the system keychain for a Zscaler root certificate
+# --- Zscaler certificate fix ---
+fix_zscaler_cert_path() {
+    if [[ "$(uname -s)" != "Darwin" ]]; then return 0; fi
+    local cert_path="/tmp/zscaler-cert.pem"
+    if [[ -f "$cert_path" ]]; then
+        CERT_FILE="$cert_path"
+        return 0
+    fi
     local zscaler_certs
     if zscaler_certs=$(security find-certificate -c "Zscaler Root CA" -p /Library/Keychains/System.keychain 2>/dev/null); then
-      log_info "Zscaler certificate found in system keychain."
-
-      # Create a temporary PEM file to hold the certificate
-      # This file will be passed to Node.js via NODE_EXTRA_CA_CERTS
-      cert_file=$(run_as_user mktemp --tmpdir=/tmp zscaler-cert-XXXXXXXXXX.pem)
-      if ! run_as_user printf %s "${zscaler_certs}" > "$cert_file"; then
-        log_error "Failed to export Zscaler certificate to temporary file: $cert_file"
-        exit 1
-      fi
-
-      log_info "Exported certificate to temporary file: $cert_file"
-
-      # Register cleanup handler to remove the temp file when script exits
-      trap 'run_as_user rm -f "$cert_file"' EXIT
+        if ! printf "%s\n" "${zscaler_certs}" > "$cert_path" 2>/dev/null; then
+            log_warn "Failed to write Zscaler cert to $cert_path; downloads will proceed without proxy CA"
+            return 0
+        fi
+        CERT_FILE="$cert_path"
     fi
-  }
-
-  _find_zscaler_cert_file
-  unset -f _find_zscaler_cert_file
-
-  # Return the environment variable assignment string if certificate was found
-  if [[ -n "$cert_file" ]]; then
-    echo "NODE_EXTRA_CA_CERTS='$cert_file' "
-  fi
 }
 
-# =============================================================================
-# EXTENSION MANAGEMENT FUNCTIONS
-# =============================================================================
-# Core functions for checking IDE and extension installation status, and
-# performing the actual extension installation. These functions use the VS Code
-# CLI interface which is shared by compatible editors (Cursor, Windsurf, etc.)
-# =============================================================================
-
-# Check if the specified editor is installed and accessible.
-# Sets EDITOR_CMD as a side effect if the editor is found.
-editor_installed() {
-  local name="$1"
-  local paths="$2"
-
-  # Try to find the editor executable
-  if find_editor_cmd "$name" "$paths"; then
-    # Verify the editor actually runs by checking its version
-    if run_as_user "${EDITOR_CMD}" --version >/dev/null 2>&1; then
-      log_info "${name} installed (using: ${EDITOR_CMD})"
-      return 0
+# --- Download helper ---
+download_file() {
+    local url="$1" output="$2"
+    if command -v curl >/dev/null 2>&1; then
+        local curl_opts=(-fsSL -o "$output" --max-time 120 --connect-timeout 15)
+        [[ -n "$CERT_FILE" ]] && curl_opts+=(--cacert "$CERT_FILE")
+        curl "${curl_opts[@]}" "$url" || return 1
+    elif command -v wget >/dev/null 2>&1; then
+        local wget_opts=(-qO "$output" --timeout=120 --connect-timeout=15)
+        [[ -n "$CERT_FILE" ]] && wget_opts+=(--ca-certificate="$CERT_FILE")
+        wget "${wget_opts[@]}" "$url" || return 1
+    else
+        log_error "No download utility found"
+        return 1
     fi
-  fi
-
-  log_info "${name} not installed, skipping"
-  return 1
 }
 
-# Check if the Snyk extension is already installed in the editor.
-# Uses the --list-extensions CLI command to query installed extensions.
-extension_installed() {
-  local name="$1" extensions_output
+# --- jq management ---
+ensure_jq() {
+    if command -v jq >/dev/null 2>&1; then
+        JQ_PATH="jq"
+        return 0
+    fi
 
-  # Query the list of installed extensions from the editor
-  if ! extensions_output=$(run_as_user "${EDITOR_CMD}" --list-extensions 2>/dev/null); then
-    log_error "Failed to list extensions via ${EDITOR_CMD}"
-    return 1
-  fi
+    local jq_dir="/tmp/evo-mdm-tools"
+    local jq_bin="$jq_dir/jq"
 
-  # Check if the Snyk extension ID appears in the list (exact line match)
-  if echo "${extensions_output}" | grep -qx "${INSTALL_EXTENSION_ID}"; then
-    log_info "Snyk extension already installed in ${name}, skipping"
-    return 0
-  fi
+    if [[ -f "$jq_bin" && -x "$jq_bin" ]]; then
+        JQ_PATH="$jq_bin"
+        return 0
+    fi
 
-  log_info "Snyk extension not yet installed in ${name}"
-  return 1
+    mkdir -p "$jq_dir"
+
+    local arch
+    case "$(uname -m)" in
+        arm64|aarch64) arch="arm64" ;;
+        *) arch="amd64" ;;
+    esac
+
+    local jq_url="https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-macos-${arch}"
+    log_info "Downloading jq from $jq_url"
+    download_file "$jq_url" "$jq_bin" || { log_error "Failed to download jq"; return 1; }
+    chmod +x "$jq_bin"
+    JQ_PATH="$jq_bin"
 }
 
-# Install the Snyk extension into the specified editor.
-# Handles extensions directory creation, Zscaler certificate injection,
-# and runs the installation command as the console user.
-install_extension() {
-  local name="$1" paths="$2"
-  local user_home extdir output rc user_path
+# --- JSON merge helpers (using jq, no Python needed) ---
+merge_cursor_hooks() {
+    local user="$1" home="$2"
+    local target="$home/.cursor/hooks.json"
 
-  # Resolve user paths and create the extensions directory if needed
-  user_home="$(get_console_home)"
-  user_path="$(build_path "$paths")"
-  # Extensions are stored in ~/.${editor_name}/extensions by convention
-  extdir="${user_home}/.${name}/extensions"
-  run_as_user /bin/mkdir -p "${extdir}"
+    run_as_user "$user" "mkdir -p '$home/.cursor'"
 
-  log_info "Installing Snyk extension for ${name}"
+    local existing='{}'
+    if [[ -f "$target" ]]; then
+        existing=$(cat "$target")
+        cp "$target" "${target}.bak"
+    fi
 
-  # Get Zscaler certificate env var if applicable (for corporate proxies)
-  local cert_env_var
-  cert_env_var="$(get_zscaler_cert_env_var)"
+    local snyk_cmd='python3 "$HOME/.cursor/hooks/snyk_secure_at_inception.py"'
+    local merged
+    merged=$(echo "$existing" | "$JQ_PATH" --arg cmd "$snyk_cmd" '
+        .version = (.version // 1) |
+        .hooks = (.hooks // {}) |
+        .hooks.afterFileEdit = (
+            [(.hooks.afterFileEdit // [])[] | select(.command != $cmd)] +
+            [{"command": $cmd}]
+        ) |
+        .hooks.stop = (
+            [(.hooks.stop // [])[] | select(.command != $cmd)] +
+            [{"command": $cmd}]
+        )
+    ')
 
-  # Build the full installation command with all necessary environment setup
-  # - cert_env_var: Zscaler certificate for HTTPS (if present)
-  # - HOME: User's home directory for proper config resolution
-  # - PATH: Include editor-specific paths
-  # - --extensions-dir: Explicit extensions directory
-  # - --force: Overwrite if already partially installed
-  local install_cmd="${cert_env_var}HOME='${user_home}' PATH='${user_path}' '${EDITOR_CMD}' --extensions-dir '${extdir}' --install-extension '${INSTALL_EXTENSION_ID}' --force"
-
-  # Execute the installation in a login shell for proper environment
-  log_info "Running installation command: $install_cmd"
-  output=$(run_as_user /bin/sh -lc "$install_cmd" 2>&1) || rc=$?
-
-  # Check for success (exit code 0 or not set)
-  if [[ -z "${rc:-}" || "${rc}" -eq 0 ]]; then
-    log_info "Extension installed for ${name}"
-    return 0
-  fi
-
-  # Installation failed - log the error output
-  log_error "Install failed (exit ${rc}) for ${name}:"
-  printf '%s\n' "${output}" >&2
-  return 1
+    echo "$merged" > "$target.tmp" && mv "$target.tmp" "$target"
+    chown "$user" "$target"
+    log_info "Merged hooks into .cursor/hooks.json"
 }
 
-# =============================================================================
-# JSON CONFIGURATION MANAGEMENT
-# =============================================================================
-# Functions to safely read and modify IDE settings.json files. These files
-# control IDE behavior and extension settings. We use jq to ensure valid JSON
-# output. Note: jq doesn't support JSONC (comments, trailing commas) which
-# some IDEs may produce if manually edited.
-# =============================================================================
+merge_claude_settings() {
+    local user="$1" home="$2"
+    local target="$home/.claude/settings.json"
 
-# Update the settings.json file to enable Secure at Inception settings.
-# Creates the file with empty JSON object if it doesn't exist.
-update_json() {
-  local file_path="$1"
+    run_as_user "$user" "mkdir -p '$home/.claude'"
 
-  # Ensure parent directory exists
-  run_as_user /bin/mkdir -p "$(dirname "$file_path")"
+    local existing='{}'
+    if [[ -f "$target" ]]; then
+        existing=$(cat "$target")
+        cp "$target" "${target}.bak"
+    fi
 
-  # Create empty JSON file if it doesn't exist
-  if ! run_as_user test -f "$file_path"; then
-    log_warning "Config file missing; creating"
-    run_as_user /bin/sh -lc "printf '{}' > \"${file_path}\""
-  fi
+    local snyk_cmd='python3 "$HOME/.claude/hooks/snyk_secure_at_inception.py"'
+    local merged
+    merged=$(echo "$existing" | "$JQ_PATH" --arg cmd "$snyk_cmd" '
+        .hooks = (.hooks // {}) |
 
-  # Validate JSON before attempting modifications
-  # Note: jq doesn't support JSONC, so will fail on comments or trailing commas
-  local jq_error
-  if ! jq_error=$(run_as_user "$JQ_BINARY_PATH" '.' "$file_path" 2>&1 >/dev/null); then
-    log_error "Invalid JSON detected in $file_path: $jq_error"
-    return 1
-  fi
+        # PostToolUse: ensure Snyk Edit|Write matcher group exists
+        .hooks.PostToolUse = (
+            [(.hooks.PostToolUse // [])[] |
+                select(
+                    (.matcher // "") != "Edit|Write" or
+                    ([.hooks[]? | select(.command == $cmd)] | length) == 0
+                )
+            ] + [{
+                "matcher": "Edit|Write",
+                "hooks": [{
+                    "type": "command",
+                    "command": $cmd,
+                    "statusMessage": "Tracking code changes for security scan..."
+                }]
+            }]
+        ) |
 
-  # Capture original content to detect if changes are needed
-  local original_content
-  original_content=$(run_as_user "$JQ_BINARY_PATH" '.' "$file_path" 2>/dev/null)
+        # Stop: ensure Snyk hook exists
+        .hooks.Stop = (
+            [(.hooks.Stop // [])[] |
+                select(
+                    ([.hooks[]? | select(.command == $cmd)] | length) == 0
+                )
+            ] + [{
+                "hooks": [{
+                    "type": "command",
+                    "command": $cmd,
+                    "statusMessage": "Evaluating security scan results..."
+                }]
+            }]
+        )
+    ')
 
-  # jq filter to set Secure at Inception settings
-  # See extension options: https://github.com/snyk/vscode-extension/blob/50d2dacf41b9b884f510743e6a2d60b8e58e9694/package.json#L290-L294
-  local jq_filter='."snyk.securityAtInception.autoConfigureSnykMcpServer" = true | ."snyk.securityAtInception.executionFrequency" = "On Code Generation"'
-
-  # Apply the jq filter to update settings
-  local output
-  if ! output=$(run_as_user "$JQ_BINARY_PATH" "$jq_filter" "$file_path"); then
-    log_error "Failed to process settings in $file_path"
-    return 1
-  fi
-
-  # Skip write if settings are already correctly configured
-  if [[ "$original_content" == "$output" ]]; then
-    log_info "No updates written in setting file $file_path (settings already configured)"
-    return 0
-  fi
-
-  # Write the updated JSON back to the settings file
-  if ! run_as_user /bin/sh -c "printf '%s\n' \"\$0\" > \"$file_path\"" "$output"; then
-    log_error "Failed to write updated settings to $file_path"
-    return 1
-  fi
-
-  log_info "Successfully updated settings in $file_path"
-  return 0
+    echo "$merged" > "$target.tmp" && mv "$target.tmp" "$target"
+    chown "$user" "$target"
+    log_info "Merged hooks into .claude/settings.json"
 }
 
-# =============================================================================
-# MARKER FILE MANAGEMENT
-# =============================================================================
-# Marker files track which IDEs have already been configured. This prevents
-# the script from repeatedly modifying settings on every MDM policy run.
-# Markers are stored in /tmp/snyk-ide-mdm/ with timestamps.
-# If you'd rather enforce a particular scan setting (e.g. "On Code Generation")
-# on every run of this script, these functions can be skipped.
-# =============================================================================
+merge_mcp_config() {
+    local user="$1" home="$2"
+    local target="$home/.mcp.json"
 
-# Get the path to the marker file for a given IDE
-get_marker_file_path() {
-  local ide="$1"
-  echo "${MARKER_FILE_DIR}/${ide}"
+    local existing='{}'
+    if [[ -f "$target" ]]; then
+        existing=$(cat "$target")
+        cp "$target" "${target}.bak"
+    fi
+
+    local merged
+    merged=$(echo "$existing" | "$JQ_PATH" '
+        .mcpServers = (.mcpServers // {}) |
+        .mcpServers.Snyk = {
+            "command": "npx",
+            "args": ["-y", "snyk@latest", "mcp", "-t", "stdio"]
+        }
+    ')
+
+    echo "$merged" > "$target.tmp" && mv "$target.tmp" "$target"
+    chown "$user" "$target"
+    log_info "Merged Snyk MCP server into .mcp.json"
 }
 
-# Check if an IDE has already been configured by looking for its marker file
-is_already_updated() {
-  local marker_file="$1"
+# --- File deployment helpers (Live mode: download from GitHub at runtime) ---
+deploy_file_from_github() {
+    local repo="$1" ref="$2" src_path="$3" dest_path="$4" user="$5" executable="${6:-false}"
+    local url="https://raw.githubusercontent.com/${repo}/${ref}/${src_path}"
 
-  if run_as_user test -f "$marker_file"; then
-    return 0  # Already updated
-  fi
-
-  return 1  # Not updated yet
+    run_as_user "$user" "mkdir -p '$(dirname "$dest_path")'"
+    local tmpfile=$(mktemp)
+    download_file "$url" "$tmpfile" || { log_error "Failed to download $src_path"; rm -f "$tmpfile"; return 1; }
+    cp "$tmpfile" "$dest_path"
+    chown "$user" "$dest_path"
+    if [[ "$executable" == "true" ]]; then
+        chmod +x "$dest_path" 2>/dev/null || true
+    fi
+    rm -f "$tmpfile"
+    log_info "Deployed $src_path -> $dest_path"
 }
 
-# Create a marker file with a UTC timestamp to record when configuration was applied
-create_marker_file() {
-  local ide="$1"
-  local marker_file
-  marker_file="$(get_marker_file_path "$ide")"
-
-  # Ensure marker directory exists
-  run_as_user /bin/mkdir -p "$(dirname "$marker_file")"
-
-  # Write ISO 8601 timestamp to marker file
-  if ! run_as_user /bin/sh -c "printf '%s\n' \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\" > \"$marker_file\""; then
-    log_error "Failed to create marker file: $marker_file"
-    return 1
-  fi
-
-  log_info "Created marker file: $marker_file"
-  return 0
+# --- Snyk CLI check ---
+check_snyk_cli() {
+    local user="$1"
+    local npm_out
+    if run_as_user "$user" --with-profile "command -v snyk" >/dev/null 2>&1; then
+        local version
+        version=$(run_as_user "$user" --with-profile "snyk --version" 2>/dev/null || echo "unknown")
+        log_info "Snyk CLI found: v$version"
+        if [[ "$DISABLE_UPGRADES" != "true" ]]; then
+            if run_as_user "$user" --with-profile "command -v npm" >/dev/null 2>&1; then
+                log_info "Upgrading Snyk CLI..."
+                if npm_out=$(run_as_user "$user" --with-profile "npm install -g snyk@latest" 2>&1); then
+                    log_info "Snyk CLI upgraded via npm."
+                else
+                    log_warn "npm install -g snyk@latest failed (will fall back to npx at MCP startup):"
+                    log_warn "  $npm_out"
+                fi
+            fi
+        fi
+    else
+        log_info "Snyk CLI not found."
+        if [[ "$DISABLE_UPGRADES" != "true" ]]; then
+            if run_as_user "$user" --with-profile "command -v npm" >/dev/null 2>&1; then
+                log_info "Installing Snyk CLI via npm..."
+                if npm_out=$(run_as_user "$user" --with-profile "npm install -g snyk@latest" 2>&1); then
+                    log_info "Snyk CLI installed via npm."
+                else
+                    log_warn "npm install -g snyk@latest failed (will fall back to npx at MCP startup):"
+                    log_warn "  $npm_out"
+                fi
+            else
+                log_warn "npm not available. Snyk CLI will be installed on first MCP use via npx."
+            fi
+        fi
+    fi
 }
 
-# =============================================================================
-# CONFIG FILE PROCESSING
-# =============================================================================
-# Orchestrates the configuration update for a single IDE. Checks marker file,
-# updates settings if needed, and creates marker on success.
-# =============================================================================
+# --- Deploy recipes for a specific ADE (Live mode) ---
+deploy_recipes_for_ade() {
+    local ade="$1" user="$2" home="$3"
+    local base_dir
 
-# Process a single IDE's configuration file
-process_config_file() {
-  local ide="$1"
-  local config_file="$2"
-  log_info "Processing configuration file for ${ide}"
+    case "$ade" in
+        cursor)  base_dir="$home/.cursor" ;;
+        claude)  base_dir="$home/.claude" ;;
+        windsurf) base_dir="$home/.codeium/windsurf" ;;
+        *) log_error "Unknown ADE: $ade"; return 1 ;;
+    esac
 
-  # Check if this IDE was already configured (marker file exists)
-  local marker_file; marker_file="$(get_marker_file_path "$ide")"
-  if is_already_updated "$marker_file"; then
-    log_info "Skipping update for ${ide} - already configured (marker file exists at $marker_file)"
-    return 0
-  fi
+    log_info "Deploying recipes for $ade to $base_dir"
 
-  # Apply settings updates
-  if ! update_json "$config_file"; then
-    return 1
-  fi
+    # SAI Hooks
+    if [[ "$DEPLOY_SAI_HOOKS" == "true" ]]; then
+        local hooks_base="guardrail_directives/secure_at_inception/hooks_version"
 
-  # Create marker file to prevent future updates
-  if ! create_marker_file "$ide"; then
-    log_warning "Failed to create marker file for ${ide}, but config was updated"
-    # Don't fail the whole operation, but log warning
-  fi
+        if [[ "$ade" == "cursor" ]]; then
+            deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                "$hooks_base/cursor/async_cli_version/snyk_secure_at_inception.py" \
+                "$base_dir/hooks/snyk_secure_at_inception.py" "$user" "true"
+            deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                "$hooks_base/cursor/async_cli_version/lib/scan_runner.py" \
+                "$base_dir/hooks/lib/scan_runner.py" "$user" "true"
+            deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                "$hooks_base/cursor/async_cli_version/lib/scan_worker.py" \
+                "$base_dir/hooks/lib/scan_worker.py" "$user" "true"
+            deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                "$hooks_base/cursor/async_cli_version/lib/platform_utils.py" \
+                "$base_dir/hooks/lib/platform_utils.py" "$user" "true"
 
-  return 0
+            merge_cursor_hooks "$user" "$home"
+
+        elif [[ "$ade" == "claude" ]]; then
+            deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                "$hooks_base/claude/async_cli_version/snyk_secure_at_inception.py" \
+                "$base_dir/hooks/snyk_secure_at_inception.py" "$user" "true"
+            deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                "$hooks_base/claude/async_cli_version/lib/scan_runner.py" \
+                "$base_dir/hooks/lib/scan_runner.py" "$user" "true"
+            deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                "$hooks_base/claude/async_cli_version/lib/scan_worker.py" \
+                "$base_dir/hooks/lib/scan_worker.py" "$user" "true"
+            deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                "$hooks_base/claude/async_cli_version/lib/platform_utils.py" \
+                "$base_dir/hooks/lib/platform_utils.py" "$user" "true"
+
+            merge_claude_settings "$user" "$home"
+        fi
+    fi
+
+    # Commands
+    if [[ "$DEPLOY_COMMANDS" == "true" ]]; then
+        local cmd_base="command_directives/synchronous_remediation/command"
+        local cmd_dest
+
+        if [[ "$ade" == "cursor" || "$ade" == "claude" ]]; then
+            cmd_dest="$base_dir/commands"
+
+            if [[ "$DEPLOY_FIX_COMMAND" == "true" ]]; then
+                deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                    "$cmd_base/single_all_in_one_command/snyk-fix.md" \
+                    "$cmd_dest/snyk-fix.md" "$user"
+            fi
+
+            if [[ "$DEPLOY_BATCH_FIX_COMMAND" == "true" ]]; then
+                deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                    "$cmd_base/snyk-batch-fix.md" \
+                    "$cmd_dest/snyk-batch-fix.md" "$user"
+            fi
+        fi
+    fi
+
+    # Skills
+    if [[ "$DEPLOY_SKILLS" == "true" ]]; then
+        local skill_base="command_directives/synchronous_remediation/skills/secure-dependency-health-check"
+
+        if [[ "$ade" == "cursor" ]]; then
+            deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                "$skill_base/SKILL.md" \
+                "$base_dir/skills/snyk/secure-dependency-health-check/SKILL.md" "$user"
+            deploy_file_from_github "$STUDIO_RECIPES_REPO" "$STUDIO_RECIPES_REF" \
+                "$skill_base/references/package-evaluation-criteria.md" \
+                "$base_dir/skills/snyk/secure-dependency-health-check/references/package-evaluation-criteria.md" "$user"
+        elif [[ "$ade" == "claude" ]]; then
+            # Claude uses commands; transform by stripping YAML frontmatter at runtime.
+            local tmpskill=$(mktemp)
+            download_file "https://raw.githubusercontent.com/${STUDIO_RECIPES_REPO}/${STUDIO_RECIPES_REF}/$skill_base/SKILL.md" "$tmpskill" || true
+            if [[ -f "$tmpskill" ]]; then
+                sed '1{/^---$/!q;};1,/^---$/d' "$tmpskill" > "$tmpskill.stripped"
+                run_as_user "$user" "mkdir -p '$base_dir/commands'"
+                cp "$tmpskill.stripped" "$base_dir/commands/secure-dependency-health-check.md"
+                chown "$user" "$base_dir/commands/secure-dependency-health-check.md"
+                rm -f "$tmpskill" "$tmpskill.stripped"
+            fi
+        fi
+    fi
+
+    # MCP Config
+    if [[ "$DEPLOY_MCP" == "true" ]]; then
+        merge_mcp_config "$user" "$home"
+    fi
 }
 
-# =============================================================================
-# MAIN EXECUTION
-# =============================================================================
-# Entry point that iterates through supported IDEs to:
-# 1. Install the Snyk extension, if not already installed
-# 2. Configure Secure at Inception settings
-# =============================================================================
-
+# --- Main ---
 main() {
-  log_info "Starting Snyk Studio setup script"
+    log_info "Starting Snyk Studio deployment"
 
-  local user_home
-  user_home="$(get_console_home)"
+    local user home
+    user=$(get_console_user) || { log_error "No console user found"; exit 1; }
+    home=$(get_console_home "$user") || { log_error "Cannot resolve home for $user"; exit 1; }
 
-  # Define supported IDEs with their CLI paths and config file paths
-  # Format: "IDE_NAME|CLI_PATHS|CONFIG_FILE_PATH"
-  local ide_entries=(
-    "cursor|/Applications/Cursor.app/Contents/Resources/app/bin|${user_home}/Library/Application Support/Cursor/User/settings.json"
-    "windsurf|${user_home}/.codeium/windsurf/bin:/Applications/Windsurf.app/Contents/Resources/app/bin|${user_home}/Library/Application Support/Windsurf/User/settings.json"
-  )
+    log_info "Console user: $user, home: $home"
 
-  # Track if jq has been downloaded (only needed for config updates)
-  local jq_downloaded=false
-
-  # Track overall success/failure
-  local ok=0
-
-  # Process each IDE
-  for entry in "${ide_entries[@]}"; do
-    # Parse the IDE entry into name, paths, and config file
-    IFS='|' read -r name paths config_file <<< "$entry"
-
-    log_info "Processing ${name}..."
-
-    # Skip if this editor isn't installed on this machine
-    if ! editor_installed "$name" "$paths"; then
-      continue
+    # Check markers
+    if [[ "$USE_MARKERS" == "true" && "$FORCE_REDEPLOY" != "true" ]]; then
+        local marker="$MARKER_DIR/studio-deployed"
+        if [[ -f "$marker" ]]; then
+            log_info "Studio already deployed (marker exists at $marker). Skipping."
+            exit 0
+        fi
     fi
 
-    # Step 1: Install extension if not already installed
-    if ! extension_installed "$name"; then
-      if ! install_extension "$name" "$paths"; then
-        log_error "Failed to install extension for ${name}"
-        ok=1
-        continue
-      fi
+    fix_zscaler_cert_path
+    ensure_jq || { log_error "jq is required but could not be obtained"; exit 1; }
+
+    # Check/install Snyk CLI
+    check_snyk_cli "$user"
+
+    # Deploy to each ADE; track success across all selected ADEs so the marker
+    # is only written when every deployment succeeded (avoids "stuck" markers).
+    local all_ok="true"
+    if [[ "$CONFIGURE_CURSOR" == "true" ]]; then
+        if ! deploy_recipes_for_ade "cursor" "$user" "$home"; then
+            all_ok="false"
+            log_error "Cursor deployment failed"
+        fi
+    fi
+    if [[ "$CONFIGURE_CLAUDE" == "true" ]]; then
+        if ! deploy_recipes_for_ade "claude" "$user" "$home"; then
+            all_ok="false"
+            log_error "Claude deployment failed"
+        fi
+    fi
+    if [[ "$CONFIGURE_WINDSURF" == "true" ]]; then
+        if ! deploy_recipes_for_ade "windsurf" "$user" "$home"; then
+            all_ok="false"
+            log_error "Windsurf deployment failed"
+        fi
     fi
 
-    # Step 2: Configure Secure at Inception settings
-    # Download jq only once, when first needed
-    if [[ "$jq_downloaded" != "true" ]]; then
-      if ! download_jq_if_needed; then
-        log_error "Failed to download jq binary. Cannot configure settings."
-        ok=1
-        continue
-      fi
-      jq_downloaded=true
+    if [[ "$all_ok" != "true" ]]; then
+        log_error "One or more ADE deployments failed; marker NOT written."
+        exit 1
     fi
 
-    if ! process_config_file "$name" "$config_file"; then
-      log_error "Failed to configure settings for ${name}"
-      ok=1
+    if [[ "$USE_MARKERS" == "true" ]]; then
+        mkdir -p "$MARKER_DIR"
+        date > "$MARKER_DIR/studio-deployed"
+        log_info "Marker set at $MARKER_DIR/studio-deployed"
     fi
 
-    log_info "${name} processing complete"
-  done
-
-  if [[ $ok -eq 0 ]]; then
-    log_info "Snyk Studio setup script completed successfully"
-  else
-    log_error "Snyk Studio setup script completed with errors"
-  fi
-
-  exit $ok
+    log_info "Snyk Studio deployment complete."
 }
 
 main "$@"
+
 ```
 {% endcode %}
 
