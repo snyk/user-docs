@@ -45682,15 +45682,6 @@
               "format": "uuid",
               "type": "string"
             }
-          },
-          {
-            "$ref": "#/components/parameters/StartingAfter"
-          },
-          {
-            "$ref": "#/components/parameters/EndingBefore"
-          },
-          {
-            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {

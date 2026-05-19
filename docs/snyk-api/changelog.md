@@ -1,3 +1,13 @@
+## 2026-03-25 - Updated 2026-05-19
+
+### GET - `/orgs/{org_id}/container_import/{integration_id}/policy` - Updated
+- deleted the `query` request parameter `ending_before`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- deleted the `query` request parameter `limit`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- deleted the `query` request parameter `starting_after`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2026-03-25 - Updated 2026-05-12
 
 ### GET - `/orgs/{org_id}/issues` - Updated
