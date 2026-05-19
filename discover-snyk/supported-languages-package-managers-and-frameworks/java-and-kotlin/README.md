@@ -132,7 +132,7 @@ Available features:
 
 ## Validating, monitoring, alerting, and gating for Java and Kotlin
 
-For SCM integrations, Snyk allows you to [run PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis. You can see the results on the **Projects** page.
+For SCM integrations, Snyk allows you to [run PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis. You can see the results on the **Projects** page.
 
 For CI/CD integrations, Snyk can passively monitor and provide a QA gate by failing build checks during testing for policy violations.
 

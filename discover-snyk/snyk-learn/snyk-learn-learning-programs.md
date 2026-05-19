@@ -12,7 +12,7 @@ Learning programs allow Snyk administrators to curate specific paths of security
 
 ## Prerequisites
 
-To create and manage learning programs, you must must be a [Tenant Admin](../../snyk-platform-administration/groups-and-organizations/tenant/) or have a custom role with the `tenant.learning_program.edit` and `tenant.learning_program.read` permissions.
+To create and manage learning programs, you must must be a [Tenant Admin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/tenant) or have a custom role with the `tenant.learning_program.edit` and `tenant.learning_program.read` permissions.
 
 ### Example: Creating a custom role
 

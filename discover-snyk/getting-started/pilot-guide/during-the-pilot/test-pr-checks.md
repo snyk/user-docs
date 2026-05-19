@@ -51,7 +51,7 @@ Try fixing the vulnerability in a follow-up commit, push the commit, and verify 
 
 Additional Resources
 
-* [Snyk PR Checks](../../../../scan-with-snyk/pull-requests/pull-request-checks/)
+* [Snyk PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks)
 * [Product Training: Snyk PR Checks in your PR/MR](https://learn.snyk.io/lesson/checking-your-code-with-pr-checks/?ecosystem=general)
 {% endhint %}
 

@@ -56,7 +56,7 @@ To authenticate using the Personal Access Token, follow these steps:
 
     <figure><img src="../../../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
-4. Create your **Personal Access** **Token**. For details, see the [Authentication for API](../../../snyk-api/authentication-for-api/) page.&#x20;
+4. Create your **Personal Access** **Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.&#x20;
 5. Add the token in the **Token** field.
 6. Click **Apply and Close.**
 

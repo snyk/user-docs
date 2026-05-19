@@ -1,6 +1,6 @@
 # SCM integrations and Snyk Broker
 
-If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the [Snyk Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/) documentation, including [Using Snyk Essentials wtih Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker).
+If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker) documentation, including [Using Snyk Essentials wtih Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/using-snyk-essentials-with-snyk-broker).
 
 {% hint style="warning" %}
 Enable the Snyk Essentials flag in your Snyk Broker deployment environment before running the commands.
@@ -10,7 +10,7 @@ You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445
 
 ## Integrated SCM tokens for classic Broker
 
-An integrated SCM token is required for [Broker client setup](../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
+An integrated SCM token is required for [Broker client setup](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
 
 An integrated SCM token can be generated for the following SCM integrations:
 
@@ -88,14 +88,14 @@ If you choose to install the app only in specific repositories, the app works on
 
 ### Create the Universal Broker connection for your GitHub Cloud App
 
-Before the GitHub Cloud App can be used with the Universal Broker, you must create a connection of the `github-cloud-app` type using the `snyk-broker-config` tool. For more details, see the [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/) documentation. After the connection is created, it can be integrated with one or more Organizations of your choice.
+Before the GitHub Cloud App can be used with the Universal Broker, you must create a connection of the `github-cloud-app` type using the `snyk-broker-config` tool. For more details, see the [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/universal-broker) documentation. After the connection is created, it can be integrated with one or more Organizations of your choice.
 
 #### Prerequisites
 
 * Tenant Admin role
 * Your Tenant ID
 * The base API address for your Snyk region. Refer to the list of [API URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#api-urls) for Snyk regional hosting.
-* A valid [Snyk API token](../../snyk-api/authentication-for-api/#how-to-obtain-your-personal-token)
+* A valid [Snyk API token](../snyk-api/authentication-for-api/#how-to-obtain-your-personal-token)
 * `snyk-broker-config` tool installed
 * The `ClientId,` `AppId`, `InstallationID` and `.pem` file for your app
 * The Organization ID for the Organization you want to integrate the connection with
@@ -107,7 +107,7 @@ Before the GitHub Cloud App can be used with the Universal Broker, you must crea
 
 Visit the integrations page in Snyk to verify that the integration has been configured.
 
-See the [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/) documentation for more details.
+See the [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/universal-broker) documentation for more details.
 
 ## GitHub Server App for Universal Broker
 
@@ -158,12 +158,12 @@ If you choose to install the app only in specific repositories, the app works on
 
 ### Create the Universal Broker connection for your GitHub Server App
 
-Before the GitHub Server App can be used with the Universal Broker, you must create a connection of the `github-server-app` type using the `snyk-broker-config` tool. For more details, see the [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/) documentation. After the connection is created, it can be integrated with one or more Organization(s) of your choice.
+Before the GitHub Server App can be used with the Universal Broker, you must create a connection of the `github-server-app` type using the `snyk-broker-config` tool. For more details, see the [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/universal-broker) documentation. After the connection is created, it can be integrated with one or more Organization(s) of your choice.
 
 #### Prerequisites
 
 * The base API address for your Snyk region; refer to the list of [API URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#api-urls) for Snyk regional hosting.
-* A valid [Snyk API token](../../snyk-api/authentication-for-api/#how-to-obtain-your-personal-token)
+* A valid [Snyk API token](../snyk-api/authentication-for-api/#how-to-obtain-your-personal-token)
 * `snyk-broker-config` tool installed
 * Tenant Admin role
 * The `ClientId,` `AppId`, `InstallationID` and `.pem` file for your app
@@ -176,4 +176,4 @@ Before the GitHub Server App can be used with the Universal Broker, you must cre
 
 Visit the integrations page in Snyk to see that the integration has been configured.
 
-See the [Universal Broker](../../enterprise-setup/snyk-broker/universal-broker/) documentation for more details.
+See the [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/universal-broker) documentation for more details.

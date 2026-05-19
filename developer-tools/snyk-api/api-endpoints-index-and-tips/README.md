@@ -176,7 +176,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org_id-audi
 
 ### [List Resources](https://apidocs.snyk.io/?beta=\&version=2024-10-15#get-/orgs/-org_id-/cloud/resources)
 
-[Snyk IaC](../../scan-with-snyk/snyk-iac/) (Use: View an inventory of IaC and cloud resources generated from your IaC files)
+[Snyk IaC](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac) (Use: View an inventory of IaC and cloud resources generated from your IaC files)
 
 ### [List Scans](https://apidocs.snyk.io/?beta=\&version=2024-10-15#get-/orgs/-org_id-/cloud/scans)
 
@@ -188,7 +188,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org_id-audi
 
 The View Project History permission is needed to use this API.
 
-**More information:** [Project collections groupings](../../snyk-platform-administration/snyk-projects/project-collections-groupings/)
+**More information:** [Project collections groupings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-collections-groupings)
 
 ### [Create a collection](../reference/collection.md#orgs-org_id-collections)
 
@@ -216,11 +216,11 @@ The View Project History permission is needed to use this API.
 
 ## Custom Base Images
 
-**More information:** [Use Custom Base Image Recommendations](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/)
+**More information:** [Use Custom Base Image Recommendations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations)
 
 ### [Create a Custom Base Image from an existing container project](../reference/custom-base-images.md#custom_base_images)
 
-**More information:** [Use Custom Base Image Recommendations](../../scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/), section [Mark the created Project as a custom base image](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations#mark-the-created-project-as-a-custom-base-image);\
+**More information:** [Use Custom Base Image Recommendations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations), section [Mark the created Project as a custom base image](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations#mark-the-created-project-as-a-custom-base-image);\
 [Versioning schema for custom base images](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/use-snyk-container/use-custom-base-image-recommendations/versioning-schema-for-custom-base-images)
 
 ### [Get a custom base image collection](../reference/custom-base-images.md#custom_base_images-1)
@@ -335,7 +335,7 @@ The View Project History permission is needed to use this API.
 
 ## Import Projects (v1)
 
-Projects can be Git repositories, Docker images, containers, configuration files, and much more. For more information, see [Snyk Projects](../../snyk-platform-administration/snyk-projects/); the page includes the [Targets definition](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects#target).
+Projects can be Git repositories, Docker images, containers, configuration files, and much more. For more information, see [Snyk Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects); the page includes the [Targets definition](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects#target).
 
 A typical import starts with using the endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to request a target to be processed. Then, use the endpoint [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) to poll the Import Job AP I for further details on completion and resulting Snyk Projects.
 
@@ -343,7 +343,7 @@ A typical import starts with using the endpoint [Import targets](../reference/im
 
 Note that the `target.owner` is case-sensitive.
 
-For information on when and how you can use Import targets, see [Gain visibility by importing repositories](../../implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility/) in the Enterprise implementation guide.
+For information on when and how you can use Import targets, see [Gain visibility by importing repositories](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility) in the Enterprise implementation guide.
 
 If a call to the Import targets endpoint fails, use [Get import job detail](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)s to help determine why. There are two types of failures:
 
@@ -370,7 +370,7 @@ The poll results return a message per manifest processed, either `success: true`
 [Scenario: Detect and import new Projects in a repository into a target](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)\
 [Scenario: Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)\
 [Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images)\
-[Manage code vulnerabilities ](../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/)(Use: Automate importing multiple repositories)
+[Manage code vulnerabilities ](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/manage-code-vulnerabilities)(Use: Automate importing multiple repositories)
 
 **More information Get import job details:** [Scenario: Import fresh container images](scenarios-for-using-the-snyk-api.md#import-fresh-container-images);\
 [Tool: snyk-api-import](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/)\
@@ -401,7 +401,7 @@ The poll results return a message per manifest processed, either `success: true`
 
 ### [Clone an integration (with settings and credentials)](../reference/integrations-v1.md#org-orgid-integrations-integrationid-clone)
 
-**More information:** [Prepare Snyk Broker for deployment](../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/);\
+**More information:** [Prepare Snyk Broker for deployment](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment);\
 [Obtain the required tokens for setup](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker);\
 Scenario: [Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
@@ -430,7 +430,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 **More information:** [Dart and Flutter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/dart-and-flutter);\
 [Rust](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/rust):\
 [Guidance for Snyk for C++ page, Alternate testing options section](/broken/pages/11FkFB7EPbsM1mTkFvJ0#alternate-testing-options);\
-[Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/);\
+[Guidance for Java and Kotlin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin);\
 [Guidance for JavaScript and Node.js](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#unmanaged-javascript);\
 [List issues for a package page](../using-specific-snyk-apis/issues-list-issues-for-a-package.md)
 
@@ -487,7 +487,7 @@ Additional information: [Reachability](https://app.gitbook.com/o/-M4tdxG8qotLgGZ
 
 ### [Create a new organization](../reference/organizations-v1.md#org)
 
-**More information:** [Create a template Organization](../../implementation-and-setup/enterprise-implementation-guide/create-a-template-organization/)\
+**More information:** [Create a template Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide/create-a-template-organization)\
 [api-import: Creating organizations in Snyk](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md);\
 [Scenario: Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
@@ -635,7 +635,7 @@ The Snyk V1 API endpoint [List all aggregated issues](../reference/projects-v1.m
 The query-string parameter for types is optional. The endpoint does not enforce specific project types and will return `no matching projects` if you enter a string that does not match a requested project type. See [Project type responses from the AP](project-type-responses-from-the-api.md)I for a list of project types.
 
 **More information:** [Slack app (for Jira integration)](../../integrations/jira-and-slack-integrations/slack-app.md) (Use: Find your Project ID);\
-[Snyk Projects](../../snyk-platform-administration/snyk-projects/);\
+[Snyk Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects);\
 [Project information](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-information);\
 [Project attributes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-attributes);\
 [Scenario: Find all Projects affected by a vulnerability](scenarios-for-using-the-snyk-api.md#find-all-projects-affected-by-a-vulnerability);\
@@ -672,7 +672,7 @@ The V1 Reporting API underlies Snyk legacy reporting. Using the V1 Reporting API
 
 The rate limit is up to 70 requests per minute, per user. For all requests above the limit, the response will have the status code `429: Too many requests`, until requests stop for the duration of the rate-limiting interval (one minute). For more information see [Rate limiting for V1 API](../v1-api.md#rate-limiting).
 
-**More information:** [Dependencies and licenses](../../manage-risk/dependencies-and-licenses/)
+**More information:** [Dependencies and licenses](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/dependencies-and-licenses)
 
 ### [Get list of issues](../reference/reporting-api-v1.md#reporting-issues)
 
@@ -840,9 +840,9 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ## Test (v1)
 
-**More information:** [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/);\
+**More information:** [Guidance for Java and Kotlin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin);\
 [Start scanning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/scan-with-snyk/start-scanning);\
-[Scan open-source libraries and licenses](../../scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/)
+[Scan open-source libraries and licenses](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses)
 
 ### [Test package.json & yarn-lock file](../reference/test-v1.md#test-yarn)
 
@@ -868,7 +868,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ### [Test for issues in a public package by group id, artifact id and version](../reference/test-v1.md#test-maven-groupid-artifactid-version) (Maven)
 
-**More information:** [Guidance for Java and Kotlin](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/)
+**More information:** [Guidance for Java and Kotlin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin)
 
 ### [Test gradle file](../reference/test-v1.md#test-gradle)
 

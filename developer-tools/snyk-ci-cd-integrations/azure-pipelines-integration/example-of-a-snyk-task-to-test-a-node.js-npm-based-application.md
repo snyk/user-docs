@@ -8,4 +8,4 @@ The configuration panel appears as follows:
 
 Click **add** and the task is added to your pipeline as follows:
 
-![Snyk Security Scan task added to a pipeline](../../../.gitbook/assets/mceclip1-15-.png)
+![Snyk Security Scan task added to a pipeline](../../.gitbook/assets/mceclip1-15-.png)
