@@ -10,7 +10,7 @@ If references are missing, the connection will not be established, and an error 
 
 Run your Broker deployment on your container engine ([Docker Compose](#docker-compose-example) or [Kubernetes cluster](#helm)).
 
-If you are not using broker.snyk.io, target the Broker server for your region by using the command `-e BROKER_SERVER_URL=https://broker.region.snyk.io \` . For details, see [Broker URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#broker-server-urls).
+If you are not using broker.snyk.io, target the Broker server for your region by using the command `-e BROKER_SERVER_URL=https://broker.region.snyk.io \` . For details, see [Broker URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-server-urls).
 
 ## Docker Compose example
 

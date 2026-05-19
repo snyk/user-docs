@@ -57,15 +57,15 @@ Provisioning will also create a [Group](https://app.gitbook.com/o/-M4tdxG8qotLgG
 
 <div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/Screenshot 2025-01-29 at 16.54.30.png" alt="Available hosting regions" width="375"><figcaption><p>Available hosting regions</p></figcaption></figure></div>
 
-Snyk offers [regional hosting](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency) to comply with regional data protection laws and improve service performance. This ensures data residency requirements are met and reduces data latency.
+Snyk offers [regional hosting](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency) to comply with regional data protection laws and improve service performance. This ensures data residency requirements are met and reduces data latency.
 
-Provisioning is enabled for these [three regions](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#available-snyk-regions). Each of these regions is running at least one instance of the Snyk Platform:
+Provisioning is enabled for these [three regions](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#available-snyk-regions). Each of these regions is running at least one instance of the Snyk Platform:
 
 * :flag\_us: **United States**: SNYK-US-01, SNYK-US-02
 * :flag\_eu: **Europe**: SNYK-EU-01
 * :flag\_au: **Australia**: SNYK-AU-01
 
-In the case of [multiple instances](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#regional-multi-and-single-tenant-hosting) being available in a chosen region (United States), Snyk reserves the right to chose the specific instance where your account will be created. For more information see [Regional Hosting and data residency](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency).
+In the case of [multiple instances](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#regional-multi-and-single-tenant-hosting) being available in a chosen region (United States), Snyk reserves the right to chose the specific instance where your account will be created. For more information see [Regional Hosting and data residency](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency).
 
 {% hint style="warning" %}
 Automated provisioning is only possible for multi-tenant environments. For single-tenant availability (Snyk Private Cloud), reach out to your account team in advance of provisioning.
@@ -123,7 +123,7 @@ Clicking the sign-up link in your welcome email will take you to the log in page
 
 If you have a user account connected through a third-party provider, you will need to use SNYK-US-01
 
-You can find the links for all the regions in the [Login and Web UI URLs section](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#login-and-web-ui-urls).
+You can find the links for all the regions in the [Login and Web UI URLs section](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#login-and-web-ui-urls).
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-01-30 at 15.11.52.png" alt="Log in page on provision.snyk.io"><figcaption><p>Log in page on provision.snyk.io</p></figcaption></figure>
 

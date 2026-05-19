@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-The CrowdStrike Falcon Next-Gen SIEM integration is in [Early Access](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/discover-snyk/getting-started/snyk-release-process#early-access-features), and is available only with Snyk Enterprise plans. To learn more, visit [Plans and pricing](https://snyk.io/plans/).
+The CrowdStrike Falcon Next-Gen SIEM integration is in [Early Access](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/snyk-release-process#early-access-features), and is available only with Snyk Enterprise plans. To learn more, visit [Plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Integrate Snyk vulnerability data into the [CrowdStrike Falcon® platform](https://www.crowdstrike.com/en-us/platform/next-gen-siem/) for unified security visibility across application and endpoint domains. For example, you can detect when a critical vulnerability is introduced in a deployed container image due to a newly discovered CVE in an open-source dependency.

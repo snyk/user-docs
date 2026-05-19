@@ -8,7 +8,7 @@ This page explains using cloud scans in the Snyk Web UI. For information about u
 
 To start using cloud scans you must have the following:
 
-* A Snyk account. For details, see [Getting started](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started#create-or-log-in-to-a-snyk-account).
+* A Snyk account. For details, see [Getting started](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#create-or-log-in-to-a-snyk-account).
 * Snyk IaC on the enterprise plan.
 * An existing Terraform, CloudFormation, or Azure Resource Manager environment to work in, or deployed AWS, Azure, or Google Cloud account to onboard.
 

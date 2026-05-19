@@ -28,7 +28,7 @@ Select [**Reports**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB
 
 ### Group inventory
 
-Select [**Inventory**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-assets/manage-assets#inventory-menu) to view, filter, and manage your assets.
+Select [**Inventory**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets#inventory-menu) to view, filter, and manage your assets.
 
 ### Group issues
 

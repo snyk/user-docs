@@ -188,7 +188,7 @@ Use [Search Organization audit logs](../reference/audit-logs.md#orgs-org_id-audi
 
 The View Project History permission is needed to use this API.
 
-**More information:** [Project collections groupings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-collections-groupings)
+**More information:** [Project collections groupings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-collections-groupings)
 
 ### [Create a collection](../reference/collection.md#orgs-org_id-collections)
 
@@ -261,11 +261,11 @@ The View Project History permission is needed to use this API.
 
 ### [List all tags in a group](../reference/groups-v1.md#group-groupid-tags)
 
-**More information**: [Project tags](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-tags)
+**More information**: [Project tags](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-tags)
 
 ### [Delete tag from group](../reference/groups-v1.md#group-groupid-tags-delete)
 
-**More information:** [Project tags](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-tags)
+**More information:** [Project tags](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-tags)
 
 ### [Update group settings](../reference/groups-v1.md#group-groupid-settings)
 
@@ -274,7 +274,7 @@ The View Project History permission is needed to use this API.
 ### [List all roles in a group](../reference/groups-v1.md#group-groupid-roles)
 
 **More information:** [Update member roles using the API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-management-with-the-api/update-member-roles-using-the-api);\
-[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
@@ -335,7 +335,7 @@ The View Project History permission is needed to use this API.
 
 ## Import Projects (v1)
 
-Projects can be Git repositories, Docker images, containers, configuration files, and much more. For more information, see [Snyk Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects); the page includes the [Targets definition](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects#target).
+Projects can be Git repositories, Docker images, containers, configuration files, and much more. For more information, see [Snyk Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects); the page includes the [Targets definition](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects#target).
 
 A typical import starts with using the endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to request a target to be processed. Then, use the endpoint [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) to poll the Import Job AP I for further details on completion and resulting Snyk Projects.
 
@@ -401,7 +401,7 @@ The poll results return a message per manifest processed, either `success: true`
 
 ### [Clone an integration (with settings and credentials)](../reference/integrations-v1.md#org-orgid-integrations-integrationid-clone)
 
-**More information:** [Prepare Snyk Broker for deployment](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment);\
+**More information:** [Prepare Snyk Broker for deployment](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment);\
 [Obtain the required tokens for setup](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker);\
 Scenario: [Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
@@ -430,7 +430,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 **More information:** [Dart and Flutter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/dart-and-flutter);\
 [Rust](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/rust):\
 [Guidance for Snyk for C++ page, Alternate testing options section](/broken/pages/11FkFB7EPbsM1mTkFvJ0#alternate-testing-options);\
-[Guidance for Java and Kotlin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin);\
+[Guidance for Java and Kotlin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin);\
 [Guidance for JavaScript and Node.js](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#unmanaged-javascript);\
 [List issues for a package page](../using-specific-snyk-apis/issues-list-issues-for-a-package.md)
 
@@ -583,12 +583,12 @@ More information: [Project type responses from the API](project-type-responses-f
 
 ### [Add a tag to a project](../reference/projects-v1.md#org-orgid-project-projectid-tags)
 
-**More information:** [Project tags](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-tags); [Set up Insights: Associating Snyk Open Source, Code, and Container Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/set-up-insights/set-up-insights-associating-snyk-open-source-code-and-container-projects);\
+**More information:** [Project tags](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-tags); [Set up Insights: Associating Snyk Open Source, Code, and Container Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/set-up-insights/set-up-insights-associating-snyk-open-source-code-and-container-projects);\
 [Scenario: Rotate or change your Broker token for any reason](scenarios-for-using-the-snyk-api.md#rotate-or-change-your-broker-token-for-any-reason)
 
 ### [Remove a tag from a project](../reference/projects-v1.md#org-orgid-project-projectid-tags-remove)
 
-**More information:** [Project tags](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-tags)
+**More information:** [Project tags](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-tags)
 
 ### [Update project settings](../reference/projects-v1.md#org-orgid-project-projectid-settings)
 
@@ -618,7 +618,7 @@ By using the API endpoint Applying attributes, you can set attributes for Snyk P
 * Parse the project IDs from the `projectURL` field.
 * Use the endpoint [Applying attributes](../reference/projects-v1.md#org-orgid-project-projectid-attributes) to set the project attributes.
 
-**More information:** [Project attributes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-attributes)
+**More information:** [Project attributes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-attributes)
 
 ### [List all Aggregated (Project) issues](../reference/projects-v1.md#org-orgid-project-projectid-aggregated-issues)
 
@@ -635,9 +635,9 @@ The Snyk V1 API endpoint [List all aggregated issues](../reference/projects-v1.m
 The query-string parameter for types is optional. The endpoint does not enforce specific project types and will return `no matching projects` if you enter a string that does not match a requested project type. See [Project type responses from the AP](project-type-responses-from-the-api.md)I for a list of project types.
 
 **More information:** [Slack app (for Jira integration)](../../integrations/jira-and-slack-integrations/slack-app.md) (Use: Find your Project ID);\
-[Snyk Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects);\
-[Project information](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-information);\
-[Project attributes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-attributes);\
+[Snyk Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects);\
+[Project information](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-information);\
+[Project attributes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-attributes);\
 [Scenario: Find all Projects affected by a vulnerability](scenarios-for-using-the-snyk-api.md#find-all-projects-affected-by-a-vulnerability);\
 [Scenario: List all issues including Snyk Code issues in all the Projects in an Organization](scenarios-for-using-the-snyk-api.md#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization);\
 [Scenario: Bulk ignore issues](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues);\
@@ -647,7 +647,7 @@ The query-string parameter for types is optional. The endpoint does not enforce 
 
 ### [Updates project by project ID](../reference/projects.md#orgs-org_id-projects-project_id)
 
-**More information:** [View and edit Project settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/view-and-edit-project-settings);\
+**More information:** [View and edit Project settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/view-and-edit-project-settings);\
 [Start scanning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/scan-with-snyk/start-scanning) (Use: Set test frequency)
 
 ### [Get project by project ID](../reference/projects.md#orgs-org_id-projects-project_id-1)
@@ -658,7 +658,7 @@ The query-string parameter for types is optional. The endpoint does not enforce 
 
 ### [Create or update pull request template for group](../reference/pull-request-templates.md#groups-group_id-settings-pull_request_template)
 
-**More information:** [Create and manage a custom PR template using the API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template#create-and-manage-a-custom-pr-template-using-the-api)
+**More information:** [Create and manage a custom PR template using the API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template#create-and-manage-a-custom-pr-template-using-the-api)
 
 ### [Get pull request template for group](../reference/pull-request-templates.md#groups-group_id-settings-pull_request_template-1)
 
@@ -727,57 +727,57 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ## ServiceAccounts
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api); [Choose a service account type to use with Snyk APIs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api); [Choose a service account type to use with Snyk APIs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis)
 
 ### [Create a service account for an organization](../reference/serviceaccounts.md#orgs-org_id-service_accounts)
 
-**More information:** [Service accounts using OAuth 2.0](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0);\
-[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Service accounts using OAuth 2.0](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/service-accounts-using-oauth-2.0);\
+[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Get a list of organization service accounts](../reference/serviceaccounts.md#orgs-org_id-service_accounts-1)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Update an organization service account](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Get an organization service account](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id-1)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Delete a service account in an organization](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id-2)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Manage an organization service account’s client secret](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id-secrets)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Create a service account for a group](../reference/serviceaccounts.md#groups-group_id-service_accounts)
 
-**More information:** [Service accounts using OAuth 2.0](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0);\
-[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Service accounts using OAuth 2.0](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/service-accounts-using-oauth-2.0);\
+[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Get a list of group service accounts](../reference/serviceaccounts.md#groups-group_id-service_accounts-1)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Update a group service account](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Get a group service account](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id-1)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Delete a group service account](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Manage a group service account’s client secret](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id-secrets)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ## SlackSettings
 
@@ -826,7 +826,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ### [Get targets by org ID](../reference/targets.md#orgs-org_id-targets)
 
-**More information:** [Target definition on the Snyk Projects page](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects#target);\
+**More information:** [Target definition on the Snyk Projects page](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects#target);\
 [Scenario: Identify and import new repositories only](scenarios-for-using-the-snyk-api.md#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis);\
 [Scenario: Detect new Projects (files) in repositories and import them into a Target in Snyk on a regular basis](scenarios-for-using-the-snyk-api.md#identify-and-import-new-repositories-only)
 
@@ -840,7 +840,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ## Test (v1)
 
-**More information:** [Guidance for Java and Kotlin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin);\
+**More information:** [Guidance for Java and Kotlin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin);\
 [Start scanning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/scan-with-snyk/start-scanning);\
 [Scan open-source libraries and licenses](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses)
 
@@ -868,7 +868,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ### [Test for issues in a public package by group id, artifact id and version](../reference/test-v1.md#test-maven-groupid-artifactid-version) (Maven)
 
-**More information:** [Guidance for Java and Kotlin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin)
+**More information:** [Guidance for Java and Kotlin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin)
 
 ### [Test gradle file](../reference/test-v1.md#test-gradle)
 

@@ -109,7 +109,7 @@ The following example shows how Snyk pull request checks appear on the pull requ
 To review and adjust the pull request test settings:
 
 1. Navigate to Organization **Settings** > **Integrations** > **GitHub Enterprise**.
-2. Scroll to **Snyk PR status checks**; see [Configure PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks) for details.
+2. Scroll to **Snyk PR status checks**; see [Configure PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/configure-pull-request-checks) for details.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-28 at 15.43.34.png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
 

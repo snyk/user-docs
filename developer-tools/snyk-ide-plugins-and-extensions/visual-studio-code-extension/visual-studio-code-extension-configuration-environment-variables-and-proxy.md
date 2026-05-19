@@ -19,7 +19,7 @@ After the plugin is installed, you can set the following configurations for the 
 * **Snyk Code Security issues**: Enable a scanner for security vulnerabilities in your application code. Enabled by default
 * **Snyk IaC**: Enable a scanner for insecure configurations in Terraform and Kubernetes code. Enabled by default.
 * **Severity selection**: Filter issues by their severity, from Low to Critical.
-* **Issue View Options**: Filter issues by their [Code Consistent Ignores](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code) status. These filters do not apply if you disable **Code Consistent Ignores** for the Organization.
+* **Issue View Options**: Filter issues by their [Code Consistent Ignores](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code) status. These filters do not apply if you disable **Code Consistent Ignores** for the Organization.
 * **All issues vs Net new issues**: Specify whether to see all issues or only net new issues. The latter requires an SCM integration, where the extension compares findings with those in the base branch.
 *   **Additional parameters**: Set additional `snyk test` CLI options for Open Source scanning.
 

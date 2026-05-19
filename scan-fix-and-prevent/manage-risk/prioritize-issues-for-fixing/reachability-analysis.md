@@ -59,7 +59,7 @@ Reachability analysis is supported for the following languages and package manag
 
 | Language                                                                                                                                                     | Package manager     | Release status       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- | -------------------- |
-| [Java](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin)                                                                           | Maven, Gradle       | General Availability |
+| [Java](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin)                                                                           | Maven, Gradle       | General Availability |
 | [JavaScript](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript), [TypeScript](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/typescript) | npm, Yarn, pnpm     | General Availability |
 | [Python](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/python)                                                                                         | pip, poetry, pipenv | General Availability |
 | [C#](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/.net)                                                                                               | NuGet, paket        | Early Access         |
@@ -75,7 +75,7 @@ Reachability analysis is supported in the following integrations:
 | [Bitbucket Server](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server)                               | General Availability |
 | [GitLab](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/gitlab)                                                               | General Availability |
 | [Azure Repos](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs)                                          | General Availability |
-| [Brokered connections](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests)      | General Availability |
+| [Brokered connections](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests)      | General Availability |
 | [Snyk CLI](../../developer-tools/snyk-cli/)                                                                                                              | Early Access         |
 | [AWS CodePipeline integration with CodeBuild](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage) | Early Access         |
 | [Azure Pipelines](../../developer-tools/snyk-ci-cd-integrations/azure-pipelines-integration/)                                                            | Early Access         |
@@ -149,7 +149,7 @@ To enable or disable **Reachability in the Snyk CLI and CI/CD integrations** for
 
 ### **Enable reachability** analysis **for brokered connections**
 
-If you use a brokered connection to your SCM, configure [Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker) to provide access to your source files.
+If you use a brokered connection to your SCM, configure [Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker) to provide access to your source files.
 
 ## Use reachability analysis in the Snyk Web UI
 

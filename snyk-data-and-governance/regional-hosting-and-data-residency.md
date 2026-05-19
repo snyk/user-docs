@@ -181,7 +181,7 @@ For Broker deployed by Helm chart, use [https://github.com/snyk/snyk-broker-helm
 
 ### Broker with high availability (HA) mode URLs
 
-Follow the [High availability mode](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/high-availability-mode) instructions, BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
+Follow the [High availability mode](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/high-availability-mode) instructions, BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
 
 **SNYK-US-02**: `-e BROKER_DISPATCHER_BASE_URL=https://api.us.snyk.io`
 

@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-As part of the Pull Request experience, Snyk Agent fix in the PR is in [Early Access](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/discover-snyk/getting-started/snyk-release-process#early-access-features).
+As part of the Pull Request experience, Snyk Agent fix in the PR is in [Early Access](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/snyk-release-process#early-access-features).
 {% endhint %}
 
 The Pull Request experience is an enhancement of the foundational [Pull Request Checks](./) functionality. It streamlines the security review process by reducing the need to switch between different developer tools, and providing contextually relevant feedback within your Source Code Manager (SCM) interface.
@@ -102,7 +102,7 @@ For Brokered integrations, the Data Flow section in the inline comments is avail
 {% hint style="info" %}
 **Release status**
 
-Snyk Agent fix in the PR is in [Early Access](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/discover-snyk/getting-started/snyk-release-process#early-access-features).\
+Snyk Agent fix in the PR is in [Early Access](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/snyk-release-process#early-access-features).\
 Snyk Agent fix in the PR will work only on inline comments created after the feature is enabled.
 {% endhint %}
 

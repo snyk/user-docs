@@ -17,7 +17,7 @@ To ensure a smooth rollout of Snyk across your organization, Snyk provides a sug
 
 Snyk has Organization-level SCM integrations available, including GitHub, GitHub Enterprise, Bitbucket Cloud, and more.
 
-For details, see [Set up a Snyk integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#set-up-a-snyk-integration).
+For details, see [Set up a Snyk integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started#set-up-a-snyk-integration).
 
 Snyk has Group-level SCM integrations available for Snyk Essentials, including GitHub, GitLab, Azure DevOps, and Bitbucket.
 
@@ -51,7 +51,7 @@ Navigate to the **Projects** page in the Snyk UI, select **Add projects**, selec
 To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported Projects are indicated by a checkmark next to the repository name.
 {% endhint %}
 
-For details, see [Import a Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#import-a-project-to-scan-and-identify-issues).
+For details, see [Import a Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started#import-a-project-to-scan-and-identify-issues).
 
 ## Stage 3: Enable Snyk test on PRs
 
@@ -75,7 +75,7 @@ Click the **Details** link to display the status of the Snyk check. The status o
 
 An administrator can manage Snyk [PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks) settings for each SCM integration at the Organization level and then apply these settings, either to all the Projects for that integration or to selected specific Projects. You can configure whether this feature is on (enabled by default) and set fail conditions to define when Snyk should fail your PR checks.
 
-See [Configure PR Checks at the Integration level](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks#configure-pr-checks-at-the-integration-level) and [Configure PR Checks at the Project level](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks#configure-pr-checks-at-the-project-level) for details of this process.
+See [Configure PR Checks at the Integration level](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/configure-pull-request-checks#configure-pr-checks-at-the-integration-level) and [Configure PR Checks at the Project level](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/configure-pull-request-checks#configure-pr-checks-at-the-project-level) for details of this process.
 
 {% hint style="info" %}
 Use Snyk License policies to ensure that your Snyk PRs are free of licensing issues.\
@@ -112,7 +112,7 @@ To configure the automatic fix PR settings for all Projects in an Organization, 
 <div align="center"><figure><img src="../../.gitbook/assets/image (101).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure></div>
 
 {% hint style="info" %}
-Settings can also be configured per Project by selecting the specific Project in your Organization and navigating to the **Settings** tab. For more information, see [View and edit Project settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/view-and-edit-project-settings).
+Settings can also be configured per Project by selecting the specific Project in your Organization and navigating to the **Settings** tab. For more information, see [View and edit Project settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/view-and-edit-project-settings).
 {% endhint %}
 
 Snyk recommends that you exclude patches from the auto fix PRs if your developers are not familiar with how to use and execute them.
@@ -123,7 +123,7 @@ Ask your developers to consider the merge advice label that appears on the auto 
 Snyk auto fix PRs are generated only for new issues.
 {% endhint %}
 
-If your SCM is GitHub and you are not using Snyk Broker, then by default, Snyk rotates every Org user's credentials to open the auto fix PRs. You can change this if needed and set the user credentials to open the auto fix PRs. See [Opening fix and upgrade pull requests from a fixed GitHub account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account) for details.
+If your SCM is GitHub and you are not using Snyk Broker, then by default, Snyk rotates every Org user's credentials to open the auto fix PRs. You can change this if needed and set the user credentials to open the auto fix PRs. See [Opening fix and upgrade pull requests from a fixed GitHub account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account) for details.
 
 ## Stage 6: Dependency upgrade PRs
 
@@ -157,7 +157,7 @@ To set PR Settings on the Project level and override the PR settings configured 
 5. In the options that appear:
    1. Snyk creates PRs up to a maximum of ten open simultaneously per repo.\
       To limit this number further, select the maximum number of PRs from the dropdown list.\
-      For more information, see [Upgrading dependencies with automatic PRs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades).
+      For more information, see [Upgrading dependencies with automatic PRs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades).
    2. In the **Dependencies to ignore** field, enter the exact name of any dependencies that should _not_ be handled as part of the automatic functionality.\
       This field accepts only lowercase letters.
    3. After you click **Upgrade dependency settings**, each time Snyk scans this Project, Snyk automatically submits upgrade PRs based on the scan results.\

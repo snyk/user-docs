@@ -31,5 +31,5 @@ You can either follow the general API steps to understand the underlying process
 See the [Universal Broker APIs ](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/universal-broker)in the API Reference for more details. An example is provided: [Using the API to set up a GitHub connection](../../../../../enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/using-the-api-to-set-up-a-github-connection.md).
 
 {% hint style="info" %}
-Use the Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#broker-client-urls).
+Use the Snyk Broker App ID whenever you want to call the API. The Snyk Broker App ID differs for each [region](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-client-urls).
 {% endhint %}
