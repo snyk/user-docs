@@ -27,7 +27,7 @@ Repo content sync automatically manages your Projects based on changes in your r
 Push events trigger synchronization using webhooks. Snyk creates a webhook when you initially import a repository.
 
 * Manifest, Docker, and configuration files: adding, deleting, or renaming these files triggers an automatic update. You can view details of these actions in your Snyk import logs.
-* Exclusions: Snyk respects existing folder exclusions configured using the import flow or `.snyk` files.
+* Exclusions: Snyk respects existing folder exclusions configured using the import flow.
 
 ## Considerations for Early Access
 
