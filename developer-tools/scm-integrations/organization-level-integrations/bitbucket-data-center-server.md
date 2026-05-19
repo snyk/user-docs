@@ -88,7 +88,7 @@ To review and adjust the pull request tests settings:
 
 #### Required Builds
 
-The Snyk integration for Bitbucket Data Center/Server now supports the[ Required Builds](https://confluence.atlassian.com/bitbucketserver/checks-for-merging-pull-requests-776640039.html) feature for granular control over pull requests.
+The Snyk integration for Bitbucket Data Center/Server now supports the [Required Builds](https://confluence.atlassian.com/bitbucketserver/checks-for-merging-pull-requests-776640039.html) feature for granular control over pull requests.
 
 You can select which Snyk security checks must pass before a merge can occur. Snyk reports distinct build statuses for different scan types (security vulnerabilities, license compliance, and code analysis), so you can configure your Bitbucket Data Center/Server repository to enforce specific security gates.
 

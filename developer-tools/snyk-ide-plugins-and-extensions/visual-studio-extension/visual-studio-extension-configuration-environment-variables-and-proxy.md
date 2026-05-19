@@ -5,7 +5,7 @@ After the plugin is installed, you can set the following configurations for the 
 ## Account <a href="#snyk-account" id="snyk-account"></a>
 
 * **Authentication method:** Specify whether to authenticate with OAuth2 or with an API token. `OAuth2` is the default.
-* **Custom endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDE URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#ides-urls).\
+* **Custom endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDE URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).\
   Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 * **Ignore unknown CA**: Ignore unknown certificate authorities.
 * **Organization**: Specify the `ORG_ID` to run Snyk commands tied to a specific Organization. Snyk recommends using the `ORG_ID`. If you specify the `ORG_NAME`, that is, the Organization slug name, the value must match the URL slug as displayed in the URL of your Organization in the Snyk Web UI: `https://app.snyk.io/org/[orgslugname]`.\

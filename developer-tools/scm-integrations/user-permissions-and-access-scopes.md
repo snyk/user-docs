@@ -25,7 +25,7 @@ A PAT generated for the Group-level GitHub integration requires the following pe
 ### GitHub and GitHub Enterprise permissions requirements
 
 {% hint style="info" %}
-For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker) and [Integrated SCM tokens for Snyk Broker](scm-integrations-and-snyk-broker.md#integrated-scm-tokens-for-classic-broker).
+For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker) and [Integrated SCM tokens for Snyk Broker](scm-integrations-and-snyk-broker.md#integrated-scm-tokens-for-classic-broker).
 {% endhint %}
 
 The Snyk GitHub Enterprise integration is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub and the access defined for the Personal Access Token (PAT) on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
@@ -128,7 +128,7 @@ Scope by Purpose
 | <p><strong>Snyk tests on pull requests:</strong><br>Send PR status checks when a new PR is created or a PR is updated.</p>                                        | <p><code>read:repository:bitbucket</code></p><p><code>write:repository:bitbucket</code></p><p><code>read:pullrequest:bitbucket</code></p><p><code>write:pullrequest:bitbucket</code></p> |
 | <p><strong>Snyk tests on pull requests (initial configuration):</strong><br>Add SCM webhooks to imported repos.</p>                                               |                                                   <p><code>read:webhook:bitbucket</code></p><p><code>write:webhook:bitbucket</code></p>                                                  |
 | <p><strong>Importing new projects to Snyk:</strong><br>Lists available repos in the Bitbucket instance in the <strong>Add Projects</strong> screen.</p>           |               <p><code>read:project:bitbucket</code></p><p><code>read:workspace:bitbucket</code></p><p><code>read:account</code></p><p><code>read:user:bitbucket</code></p>              |
-| <p><strong>Snyk Group Level Integrations:</strong><br>Required for Inventory and <a href="https://docs.snyk.io/scan-with-snyk/snyk-essentials">Essentials</a></p> |                               <p><code>read:repository:bitbucket</code></p><p><code>read:user:bitbucket</code><br><code>read:workspace:bitbucket</code></p>                              |
+| <p><strong>Snyk Group Level Integrations:</strong><br>Required for Inventory and <a href="https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-essentials">Essentials</a></p> |                               <p><code>read:repository:bitbucket</code></p><p><code>read:user:bitbucket</code><br><code>read:workspace:bitbucket</code></p>                              |
 
 When reviewing the token scopes, they are listed by access level. Please review to ensure that you have the correct scopes:
 

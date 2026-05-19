@@ -57,7 +57,7 @@ To authenticate using the Personal Access token, follow these steps:
 
     <figure><img src="../../../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
-4. Create your **Personal Access** **Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.
+4. Create your **Personal Access Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.
 5. Paste or enter the token in the **Token** field.
 6. Click **Apply and Close.**
 
@@ -67,7 +67,7 @@ To authenticate using the Personal Access token, follow these steps:
 
 Follow these steps to authenticate:
 
-1. After the extension is installed, navigate to **Extensions > Snyk** > **Settings**:
+1. After the extension is installed, navigate to **Extensions** > **Snyk** > **Settings**:
 
 <figure><img src="../../../.gitbook/assets/SCR-20240822-lyzs.png" alt="" width="375"><figcaption><p>Snyk Settings navigation</p></figcaption></figure>
 
@@ -84,14 +84,14 @@ Follow these steps to authenticate:
 The analysis starts automatically.
 
 {% hint style="info" %}
-Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started#obtain-and-use-your-snyk-api-token).
+Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
 {% endhint %}
 
 ## How to switch accounts
 
 To re-authenticate with a different account, follow these steps:
 
-1. Navigate to **Extensions > Snyk > Settings.**
+1. Navigate to **Extensions** > **Snyk** > **Settings**.
 2. Clear the value of the **Token** field.
 3. Click **OK**.
 4. When you have logged out, start authentication again from the beginning.
