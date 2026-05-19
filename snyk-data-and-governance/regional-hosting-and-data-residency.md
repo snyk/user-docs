@@ -122,11 +122,11 @@ Use the base URLs for your region:
 
 Both the CLI and CI running CLI must be configured to run against your instance.
 
-To do this, for [CLI v1.1293.0](https://updates.snyk.io/announcing-snyk-cli-v1-1293-0-299452) and later versions, use the [snyk config environment command](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment), for example:
+To do this, for [CLI v1.1293.0](https://updates.snyk.io/announcing-snyk-cli-v1-1293-0-299452) and later versions, use the [snyk config environment command](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/config-environment), for example:
 
 `snyk config environment SNYK-US-02`
 
-The [Supported environment URL mappings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment#supported-environment-urls-mappings) are listed in the `snyk config environment` help.
+The [Supported environment URL mappings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/config-environment#supported-environment-urls-mappings) are listed in the `snyk config environment` help.
 
 ### IDEs URLs
 
@@ -181,7 +181,7 @@ For Broker deployed by Helm chart, use [https://github.com/snyk/snyk-broker-helm
 
 ### Broker with high availability (HA) mode URLs
 
-Follow the [High availability mode](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/high-availability-mode) instructions, BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
+Follow the [High availability mode](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/high-availability-mode) instructions, BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
 
 **SNYK-US-02**: `-e BROKER_DISPATCHER_BASE_URL=https://api.us.snyk.io`
 
