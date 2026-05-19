@@ -40,7 +40,8 @@ Snyk works directly with the security teams of the supported Linux distributions
 Some software components from upstream providers are not installed using a package manager but are downloaded as executables from third parties. Snyk uses file fingerprinting to detect versions of the following components:
 
 * Node.js
-* OpenJDK 8 binaries
+* OpenJDK 8 binaries&#x20;
+* OpenJDK binaries from Eclipse Temurin distributions&#x20;
 
 ## Recurring container image scans
 
