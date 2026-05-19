@@ -102,9 +102,9 @@ Check an SBOM for vulnerabilities in open-source packages.
 
 Generates an AI-BOM for a local software project that is written in Python, to help you understand what AI models, datasets, tools, and so on are used in that project.
 
-### [`snyk apps`](../../snyk-api/using-specific-snyk-apis/snyk-apps-apis/create-a-snyk-app-using-the-snyk-cli.md)
+### [`snyk apps`](../snyk-api/using-specific-snyk-apis/snyk-apps-apis/create-a-snyk-app-using-the-snyk-cli.md)
 
-Create a Snyk App using the Snyk CLI. For more information, see [Snyk Apps](../../snyk-api/using-specific-snyk-apis/snyk-apps-apis/).
+Create a Snyk App using the Snyk CLI. For more information, see [Snyk Apps](../snyk-api/using-specific-snyk-apis/snyk-apps-apis/).
 
 ## Subcommands of CLI commands
 

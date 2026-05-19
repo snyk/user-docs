@@ -13,28 +13,28 @@ This list identifies all the areas with differences in functionality in the Snyk
 * Snyk Code is available except:
   * Does not include Code Search
   * Does not include Snyk Agent Fix
-* Snyk Container is available except for [Kubernetes Integration](../scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/).
+* Snyk Container is available except for [Kubernetes Integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration).
 * Snyk Open Source is available except:
   * Does not include Unmanaged C++
-  * Does not include the npm packages `@snyk/protect` and `@snyk/fix.`
+  * Does not include the npm packages `@snyk/protect` and `@snyk/fix`.
 
 ## API keys not available
 
 API keys are not available.
 
-This means that attempts to create Service Accounts either through the UI or using the API with an `auth_type` of `api_key` are not accepted. You must ensure that the OAuth protocol is used instead for all scenarios where API keys would typically be used. See [Service accounts using OAuth 2.0](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0) for details. If you need help, contact [Snyk support](https://support.snyk.io).
+This means that attempts to create Service Accounts either through the UI or using the API with an `auth_type` of `api_key` are not accepted. You must ensure that the OAuth protocol is used instead for all scenarios where API keys would typically be used. See [Service accounts using OAuth 2.0](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts-using-oauth-2.0) for details. If you need help, contact [Snyk support](https://support.snyk.io).
 
 In addition, the CLI must be used in OAuth mode, not with token-driven authentication.
 
 ## Single Sign-On limitations on availability
 
-[Single Sign-On (SSO)](../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/) is available except for [Self-Serve Single Sign-On (SSO)](../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso/). All SSO setups are managed by Snyk. Some setup steps for Single Sign-On are slightly different:
+[Single Sign-On (SSO)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk) is available except for [Self-Serve Single Sign-On (SSO)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso). All SSO setups are managed by Snyk. Some setup steps for Single Sign-On are slightly different:
 
 * The service provider is Okta rather than Auth0.
 * The ACS URL and Entity ID and certificate will be different per connection and thus will not match the Snyk Single Sign-On documentation.
 * To get the ACS Url, Entity ID, and cert, Snyk will need to part-provision the connection in Okta.
 
-See [Single Sign-On (SSO) for authentication to Snyk](../implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/) for details.
+See [Single Sign-On (SSO) for authentication to Snyk](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk) for details.
 
 ## Integrations not available
 
@@ -42,11 +42,11 @@ See [Single Sign-On (SSO) for authentication to Snyk](../implementation-and-setu
 
 ## Reporting and data not available
 
-[Insights](../manage-risk/prioritize-issues-for-fixing/using-the-issues-ui/) are not available
+[Insights](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/using-the-issues-ui) are not available
 
 ## Platform features not available
 
-* [Bitbucket Cloud App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud-app). Note that [Bitbucket Data Center/Server](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server) integration is available.
+* [Bitbucket Cloud App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations/organization-level-integrations/bitbucket-cloud-app). Note that [Bitbucket Data Center/Server](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations/organization-level-integrations/bitbucket-data-center-server) integration is available.
 * [Slack App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/slack-app)
 * [Jira App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration). Note that [Jira Integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration) is available.
 * [Snyk Advisor](https://snyk.io/advisor/)
@@ -58,4 +58,4 @@ See [Single Sign-On (SSO) for authentication to Snyk](../implementation-and-setu
 * Session Concurrency is limited to three (3) sessions per user.
 * Session lockout: After sessions expire, the signed-in user loses access to all data present in existing session windows.
 * Session timeout: The default session timeout is shorter (15 minutes). See [Configure session length for a Snyk Group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/groups/configure-session-length-for-a-snyk-group) for details.
-* [Snyk CLI docker images](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli#snyk-cli-in-a-docker-image). These do not support FIPS-validated cryptography and should only be used when this can be accepted.
+* [Snyk CLI docker images](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli#docker). These do not support FIPS-validated cryptography and should only be used when this can be accepted.

@@ -24,9 +24,9 @@ The most recent updates include significant changes to the user docs, such as fe
 * The `snyk_package_health_check` directive is now available for the Full profile on the [Directives](integrations/snyk-studio-agentic-integrations/directives.md#secure-at-inception-package-health-check-experimental) page.
 * CISA KEV has been added to the list of filters available in [Issue vulnerability details](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/issue-columns-dictionary#issue-vulnerability-details).
 * The [PR Checks Report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/prevention-reports#pull-request-checks-usage-and-performance-report) is now General Available, with updates to Prevention Reports, Export API, and Snowflake Data Share.
-* The [Pull Request experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience#pull-request-experience-feature-requirements) documentation has been updated to reflect that if you are using inline comments or Agent Fix, you must now specify a dedicated GitHub account by providing a GitHub Personal Access Token (PAT) in your integration settings.
+* The [Pull Request experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience#pull-request-experience-feature-requirements) documentation has been updated to reflect that if you are using inline comments or Agent Fix, you must now specify a dedicated GitHub account by providing a GitHub Personal Access Token (PAT) in your integration settings.
 * The [Enterprise implementation guide](implementation-and-setup/enterprise-implementation-guide/) now has embedded video tutorials to guide you in your Enterprise setup as a new user of Snyk.
-* The [High availability mode](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/high-availability-mode) from Snyk Broker is now enabled by default.
+* The [High availability mode](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/high-availability-mode) from Snyk Broker is now enabled by default.
 * The [Container registry sync](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/use-snyk-container/sync-your-container-registry) from Snyk Container is now Generally Available.&#x20;
 * The [Container registry import policy](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/containerregistryimportpolicy) API was enhanced by refactoring schema names, adding test components, and full CRUD operations.
 
@@ -70,7 +70,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk Open Source
 
-* [Breakability risk levels](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/breakability-risk-levels) is now in Early Access.
+* [Breakability risk levels](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests/breakability-risk-levels) is now in Early Access.
 * Improved .NET scanning is now a General Availability feature. The [.NET (C# and VB.NET](supported-languages/supported-languages-list/.net/) section has been updated to reflect this change.
 
 ### Snyk supported languages
@@ -87,13 +87,13 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Other updates
 
 * Updated documentation references and rule mappings from OWASP Top 10 (2021) to the OWASP Top 10 (2025) revision. This keeps security-category labels and cross-references aligned with the OWASP taxonomy.
-* [Broker Contexts](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/broker-context) was released for Universal Broker, including how contexts help segment and route Broker connections across environments and Organizations. This improves guidance for running multiple Broker deployments with clearer isolation.
+* [Broker Contexts](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/universal-broker/broker-context) was released for Universal Broker, including how contexts help segment and route Broker connections across environments and Organizations. This improves guidance for running multiple Broker deployments with clearer isolation.
 
 ## January 2026
 
 ### Snyk Code
 
-* The [Snyk Code Security policies](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code#manage-ignores-at-the-group-level-through-snyk-code-security-policies) documentation has been updated to clarify that Snyk Code Security policies are different to Snyk Security Policies.
+* The [Snyk Code Security policies](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code#manage-ignores-at-the-group-level-through-snyk-code-security-policies) documentation has been updated to clarify that Snyk Code Security policies are different to Snyk Security Policies.
 * The [Enable Snyk Agent Fix](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically#enable-snyk-agent-fix) section has been enhanced with more details and clear configuration steps.
 
 ### Snyk CLI
@@ -156,7 +156,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * The `snyk-scm-contributors-count` docs were updated with prerequisites and setup notes. See [snyk-scm-contributors-count](developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/).
 * The Declining Balance documentation from the [Snyk Declining Balance of Hours Service Description](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/declining-balance) page was updated with service description and expiration details.
 * The IaC issue-reporting walkthrough from the 'Getting started with Snyk IaC' page was updated to remove outdated screenshots and copy.
-* PR template variables were updated on the [Variables list and description](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/variables-list-and-description) page with a new container base image `short name` values for cleaner PR titles and messages.
+* PR template variables were updated on the [Variables list and description](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/variables-list-and-description) page with a new container base image `short name` values for cleaner PR titles and messages.
 
 ### November 2025
 
@@ -181,7 +181,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * [Reachabilty analysis](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/reachability-analysis) has been updated with instructions on how it works and how to use it in both the Snyk Web UI and the Snyk CLI and clear support for specific languages and package managers.
 * The [Pre-defined roles](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/pre-defined-roles#role-types) documentation has been updated to communicate that the Organization Admin role and associated permissions supersede any Group Member role restrictions.
-* The [severity condition](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/policies/security-policies/security-policies-conditions) is now available in Group-level policies. Use this feature to create more granular policies for Snyk Code and Snyk Open Source findings, for example, ignoring a finding or changing its severity.
+* The [severity condition](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/security-policies/security-policies-conditions) is now available in Group-level policies. Use this feature to create more granular policies for Snyk Code and Snyk Open Source findings, for example, ignoring a finding or changing its severity.
 
 ### October 2025
 
@@ -193,7 +193,7 @@ The most recent updates include significant changes to the user docs, such as fe
 #### **Snyk Broker**
 
 * The [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/universal-broker) release status has transitioned to Generally Available.
-* The page [Upgrade an Organization from Classic Broker to Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker#migrating-multiple-organizations) has been updated with steps to migrate multiple Organizations at a time.
+* The page [Upgrade an Organization from Classic Broker to Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker#migrating-multiple-organizations) has been updated with steps to migrate multiple Organizations at a time.
 
 #### **Snyk CLI**
 
@@ -224,7 +224,7 @@ The most recent updates include significant changes to the user docs, such as fe
 #### **Snyk integrations**
 
 * The SCM integration for Bitbucket Data Center/Server now supports the Required Builds feature for granular control over pull requests. To learn more, visit [Required Builds](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server#required-builds).
-* [GitLab](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/analyze-pr-checks-results#gitlab) is supported for PR check results. This feature blocks merge requests with security issues when the "Pipelines must succeed" setting is enabled.
+* [GitLab](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/analyze-pr-checks-results#gitlab) is supported for PR check results. This feature blocks merge requests with security issues when the "Pipelines must succeed" setting is enabled.
 * The Snyk MCP quick guides list has been enriched with the following guides: [Claude Code](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/claude-code-guide.md), [Continue](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/continue-guide.md), [JetBrains AI Assistant](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/jetbrains-ai-assistant.md), [JetBrains Junie](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/jetbrains-junie.md)
 
 #### **Other updates**
@@ -259,7 +259,7 @@ The most recent updates include significant changes to the user docs, such as fe
 #### **Other updates**
 
 * A new [Risk exposure report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/exposure-and-coverage-reports#risk-exposure-report) has been released, providing you with a single, consolidated view of your security risks.
-* The rollout to General Availability has started for the [Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience).
+* The rollout to General Availability has started for the [Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience).
 * The [Operating system distributions supported by Snyk Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container) now includes Debian 14 - Forky.
 * Snyk now supports [Ruby versions](supported-languages/supported-languages-list/ruby.md#technical-specifications) 3.3 \[3.3.9] and 3.4 \[3.4.5]. If the Ruby version is not specified in the gemfile, it will default to version 3.1.
 
@@ -295,8 +295,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### **Snyk integrations**
 
-* [Snyk Agent Fix in the PR](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience#snyk-agent-fix-in-the-pr) has added support for Bitbucket integrations, still in Early Access.
-* The [minimum version](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks) of Bitbucket Server and Bitbucket Data Center required to use the integrations with PR checks has been updated to 7.4 and 8 respectively.
+* [Snyk Agent Fix in the PR](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience#snyk-agent-fix-in-the-pr) has added support for Bitbucket integrations, still in Early Access.
+* The [minimum version](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/configure-pull-request-checks) of Bitbucket Server and Bitbucket Data Center required to use the integrations with PR checks has been updated to 7.4 and 8 respectively.
 
 #### **Snyk Open Source**
 
@@ -314,8 +314,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### **Snyk Broker**
 
-* Updated the Snyk Broker documentation to include distinct steps for setting up the [Container Registry Agent with Docker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent#configuring-and-running-the-container-registry-agent), whether using the Classic or Universal Broker.
-* Updated the [Using the API to set up Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#broker-client-urls).
+* Updated the Snyk Broker documentation to include distinct steps for setting up the [Container Registry Agent with Docker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/snyk-broker-container-registry-agent#configuring-and-running-the-container-registry-agent), whether using the Classic or Universal Broker.
+* Updated the [Using the API to set up Universal Broker](implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-client-urls).
 * Snyk Learn courses have been integrated into the [Universal Broker](enterprise-setup/snyk-broker/universal-broker/) pages.
 
 #### **Other updates**
@@ -323,7 +323,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * [Usage settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/usage-settings) has been updated with the new **Billing and Usage** dashboard, available with the new Snyk Platform Access plan.
 * [Snyk Platform Access credits](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/snyk-platform-access-credits) has been added with brief information on the new Snyk Platform Access plan.
 * The troubleshooting sections for all [Snyk IDE plugins](developer-tools/snyk-ide-plugins-and-extensions/), have been updated to include clear steps for working with the Logs details, which are available across all plugins.
-* A new feature, the [Snyk Agent Fix in the PR](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience#snyk-agent-fix-in-the-pr), has been released, enabling the user to interact with inline comments by requesting an initial fix or a different suggestion, or by applying a specific fix by using the `@snyk /apply #` command.
+* A new feature, the [Snyk Agent Fix in the PR](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience#snyk-agent-fix-in-the-pr), has been released, enabling the user to interact with inline comments by requesting an initial fix or a different suggestion, or by applying a specific fix by using the `@snyk /apply #` command.
 * [Consistent Ignores](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/) for Snyk Code now fully supports CLI Upload.
 * The page on Docker Desktop Extension integration has been removed, due to the end of support.
 
@@ -341,7 +341,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### **Snyk Code**
 
-* Legacy ignores can be converted using [bulk ignore conversion](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/convert-project-scoped-ignores-to-asset-scoped-ignores#bulk-ignore-conversion).
+* Legacy ignores can be converted using [bulk ignore conversion](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/convert-project-scoped-ignores-to-asset-scoped-ignores#bulk-ignore-conversion).
 * DeepCode AI Fix has a new name: [Snyk Agent Fix](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically).
 
 #### **Snyk Container**
@@ -357,7 +357,7 @@ The [Bitbucket Cloud App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjS
 * For [SCM integrations with Python](supported-languages/supported-languages-list/python/scm-integrations-and-python.md), the list of dependencies that are not supported has been updated to include `pip` for Python 2.7 and 3.7.
 * [Python dependency filtering results](supported-languages/supported-languages-list/python/scm-integrations-and-python.md) have been updated to clarify the conditions in which certain packages and configurations are skipped by SCM scans.
 * The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages/supported-languages-list/c-c++.md), [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/sbom-test), [Test an SBOM document for vulnerabilities](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities).
-* [Instructions for upgrading an Organization integration from Classic Broker to Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker) were clarified.
+* [Instructions for upgrading an Organization integration from Classic Broker to Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker) were clarified.
 
 ### April 2025
 
@@ -423,8 +423,8 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 #### **Snyk Code**
 
 * The Generated Pull Requests report is now available in Early Access. This report provides an overview of how Fix, Backlog, and Upgrade PRs are used and highlights the efficiency of PR merges.
-* [The Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience) now supports GitLab and Azure Repos SCM integrations, with a few [limitations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience#inline-comments).
-* New Snyk Code filters and columns were added to [Snyk Reports](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/issue-columns-dictionary#issue-characteristics) and [Snowflake Data Share](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary): File Path, Code Region, and Asset Finding ID.
+* [The Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience) now supports GitLab and Azure Repos SCM integrations, with a few [limitations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience#inline-comments).
+* New Snyk Code filters and columns were added to [Snyk Reports](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/issue-columns-dictionary#issue-characteristics) and [Snowflake Data Share](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary): File Path, Code Region, and Asset Finding ID.
 * Snyk Code now supports [Rust](supported-languages/supported-languages-list/rust.md) and [Groovy](supported-languages/supported-languages-list/groovy.md) available in Early Access and accessible from Snyk Preview.
 
 #### Snyk Essentials
@@ -454,7 +454,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 #### Other updates
 
 * A new [Automated Provisioning guide](implementation-and-setup/enterprise-setup/auto-provisioning-guide.md) has been created for **Pilot** and **Enterprise** **users**, detailing the steps of the auto-provisioning process for new and existing user accounts.
-* [Snyk Code PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks#configure-for-code-analysis-click-to-expand) are in General Availability.
+* [Snyk Code PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/configure-pull-request-checks#configure-for-code-analysis-click-to-expand) are in General Availability.
 
 </details>
 
@@ -493,9 +493,9 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 #### **Other updates**
 
-* The Pull Request Checks section has been updated to include the new [Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience) for PR Checks.
+* The Pull Request Checks section has been updated to include the new [Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience) for PR Checks.
 * The [Supported languages](supported-languages/supported-languages-package-managers-and-frameworks.md) page has been reorganized to provide detailed information about language availability for each Snyk product. Additionally, it provides a list of package managers, frameworks, and features for each supported language.
-* A service account using OAuth 2.0 can now be [created through the Snyk Web UI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0#create-oauth-service-accounts-through-the-ui).
+* A service account using OAuth 2.0 can now be [created through the Snyk Web UI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/service-accounts-using-oauth-2.0#create-oauth-service-accounts-through-the-ui).
 * The [API index ](snyk-api/api-endpoints-index-and-tips/)now includes entries for each endpoint mentioned in the Snyk user docs.
 * The [Developer IDE and CLI usage report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/prevention-reports#developer-ide-and-cli-usage-report) has been enhanced with additional functionalities: **Developer email address** and **PDF export**.
 * The [Vulnerabilities Detail report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/remediation-reports#vulnerabilities-detail-report) has been enhanced with additional functionalities, such as **Target indication** and **Column picker**.
@@ -542,15 +542,15 @@ The Universal Broker feature is now available in Early Access. The Universal Bro
 
 * The [CLI commands and options summary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/cli-commands-and-options-summary) was updated.
 * [Authentication](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/authenticate-to-use-the-cli) has been updated.
-* Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/config) help, [`snyk config environment`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/config-environment) help.
+* Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/config) help, [`snyk config environment`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment) help.
 
 #### Snyk Integrations
 
-The Snowflake Data Share section has been updated to include a [Data Share Dictionary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary), designed to help you navigate and build your dataset.
+The Snowflake Data Share section has been updated to include a [Data Share Dictionary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary), designed to help you navigate and build your dataset.
 
 #### Other updates
 
-* The updated [Regional hosting and data residency](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency) page was published.
+* The updated [Regional hosting and data residency](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency) page was published.
 * [Glossary](discover-snyk/getting-started/glossary.md) terms were updated for SCA, SAST, DAST, and IAST as well as Software Composition Analysis.
 * [Early Access](discover-snyk/getting-started/snyk-release-process.md#early-access) release status notices were updated.
 
@@ -567,7 +567,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 * [`snyk auth`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/auth) command help updated to reflect OAuth default.
 * [CLI authentication](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/authenticate-to-use-the-cli) instructions updated for OAuth default and improved flow.
-* [`snyk config environment`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/config-environment) command help has been added.
+* [`snyk config environment`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment) command help has been added.
 * CLI [support for pnpm added](supported-languages/supported-languages-list/javascript/#support-for-pnpm).
 
 #### Snyk IDE
@@ -577,7 +577,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 #### **Snyk Integrations**
 
-* Git repository cloning has been renamed [Workspaces for SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/workspaces) to better reflect its functionality. Additional detail on [enablement](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/workspaces#manage-workspaces) has been added.
+* Git repository cloning has been renamed [Workspaces for SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces) to better reflect its functionality. Additional detail on [enablement](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces#manage-workspaces) has been added.
 * The [relationship](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/github-cloud-app#how-to-set-up-the-github-cloud-app) between GitHub organizations and Snyk Organizations when integrating with the GitHub Cloud App has been clarified.
 
 ### July 2024
@@ -599,7 +599,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 * A comparison of the GitHub and GitHub Enterprise integrations functions now resides on the [SCM, IDE, and CI/CD integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations#github-vs-github-enterprise) page.
 * Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/github#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
 * The [Snyk SCM Integrations](developer-tools/scm-integrations/organization-level-integrations/) page now contains information critical to using these integrations successfully in your SDLC. This includes:
-  * [Git repository cloning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/workspaces) details
+  * [Git repository cloning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces) details
   * [Deployment recommendations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/deployment-recommendations) for Enterprise customers
   * [User permissions and access scope requirements](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/user-permissions-and-access-scopes) for each SCM integration
   * Instructions on how to generate [integrated SCM tokens for Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/scm-integrations-and-snyk-broker#integrated-scm-tokens-for-classic-broker)

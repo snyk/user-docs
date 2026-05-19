@@ -8,4 +8,4 @@ When populated with the most common settings, the configuration panel in Azure l
 
 The following shows the same configuration once you have added it to your pipeline.
 
-![](../../../.gitbook/assets/mceclip3-1-.png)
+![](../../.gitbook/assets/mceclip3-1-.png)

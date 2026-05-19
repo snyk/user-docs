@@ -94,13 +94,13 @@ The following steps describe how to use Jira automation to automatically create 
 
 1. In Jira, in your project, navigate to **Project Settings** and then **Automation**.
 2. Click **Create Rule**.
-3.  Set **Vulnerability Found** as the Trigger. Choose a minimum ticket severity.\\
+3.  Set **Vulnerability Found** as the Trigger. Choose a minimum ticket severity.
 
     <figure><img src="../../.gitbook/assets/jira-ticket-creation-automation-one.png" alt=""><figcaption><p>Select vulnerability severity for the new rule</p></figcaption></figure>
-4.  Click **Add Component**, **Then,** and select **Create Issue**. Select a project and issue type.\\
+4.  Click **Add Component**, **Then,** and select **Create Issue**. Select a project and issue type.
 
     <figure><img src="../../.gitbook/assets/2024-12-13_10-19-14.png" alt=""><figcaption><p>Add an action and create issue for the new rule</p></figcaption></figure>
-5.  In the summary field add “Fix \{{vulnerability.displayName\}}”. In the **Description** put \{{vulnerability.description.wiki\}}.\\
+5.  In the summary field add `Fix {{vulnerability.displayName}}`. In the **Description** put `{{vulnerability.description.wiki\}}`.
 
     <figure><img src="../../.gitbook/assets/2024-12-13_10-19-31.png" alt=""><figcaption><p>Add summary field and description for the new rule</p></figcaption></figure>
 6. Click **Add Component**, **Then**, and select **Link vulnerability to issue** under Security.
@@ -150,11 +150,11 @@ These steps describe how to use Jira automation and JQL to automatically close o
 
 <figure><img src="../../.gitbook/assets/scheduled config.png" alt="Set up a scheduled JQL search"><figcaption><p>Set up a scheduled JQL search</p></figcaption></figure>
 
-5. Add a new component and choose **THEN: Add an action**_._ Select **Issue actions**`and`choose **Transition issue**.
+5. Add a new component and choose **THEN: Add an action**. Select **Issue actions** and choose **Transition issue**.
 
 <figure><img src="../../.gitbook/assets/transition issue.png" alt="Transition issue action"><figcaption><p>Transition issue action</p></figcaption></figure>
 
-5. Set the **Destination statu**_s_ to `Done` or another status depending on your workflow.
+5. Set the **Destination status** to `Done` or another status depending on your workflow.
 
 <figure><img src="../../.gitbook/assets/destination.png" alt="Set up the transition to Done status"><figcaption><p>Set up the transition to Done status</p></figcaption></figure>
 

@@ -3,13 +3,13 @@
 ### Prerequisites for GitHub integration
 
 * Internet-accessible repositories.\
-  If your repositories are not internet-accessible, you must use [Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/).
+  If your repositories are not internet-accessible, you must use [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker).
 * A public or private GitHub project.
 * The required PAT and GitHub repository access scope permissions. For more information, see [GitHub and GitHub Enterprise permissions requirements](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements).
 
 ### Known limitations of the GitHub integration
 
-You cannot use the GitHub integration with a Snyk [Service Account](../../../implementation-and-setup/enterprise-setup/service-accounts/), as the GitHub integration is associated with your user account, not with the Snyk Organization.
+You cannot use the GitHub integration with a Snyk [Service Account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts), as the GitHub integration is associated with your user account, not with the Snyk Organization.
 
 Use the [GitHub Enterprise integration](github-enterprise.md) to import public and private Projects using the API with a Snyk Service Account.
 
@@ -29,7 +29,7 @@ When you import a Snyk Project using your GitHub integration with the Snyk PR fu
 
 ### How to set up the GitHub integration
 
-To connect your GitHub repositories to Snyk for scanning, you need to set up the integration and then import Projects. For details, see [Getting started](../../../discover-snyk/getting-started/).
+To connect your GitHub repositories to Snyk for scanning, you need to set up the integration and then import Projects. For details, see [Getting started](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started).
 
 ### GitHub integration settings
 
@@ -39,16 +39,16 @@ You can then scroll down to the section required, and set the options accordingl
 
 * [General settings](github.md#general-github-integration-settings)
 * Pull requests:
-  * [Opening fix and upgrade pull requests from a fixed GitHub account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account)
+  * [Opening fix and upgrade pull requests from a fixed GitHub account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account)
   * [Automatic fix PRs](github.md#project-monitoring-and-automatic-fix-pull-requests)
-  * [Automatic dependency upgrade PRs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades)
+  * [Automatic dependency upgrade PRs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades)
   * [Pull request assignees](github.md#pr-assignment)
   * [Snyk vulnerability patches](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities)
-* Pull request status checks ([PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/))
-  * [Open Source security and licenses](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks#configure-pr-checks-at-the-integration-level)
-  * [Code analysis](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks#configure-pr-checks-at-the-integration-level)
+* Pull request status checks ([PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks))
+  * [Open Source security and licenses](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/configure-pull-request-checks#configure-pr-checks-at-the-integration-level)
+  * [Code analysis](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/configure-pull-request-checks#configure-pr-checks-at-the-integration-level)
 * Dockerfiles
-  * [Scan your Dockerfile](../../../scan-with-snyk/snyk-container/scan-your-dockerfile/)
+  * [Scan your Dockerfile](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/scan-your-dockerfile)
   * [Fix vulnerable base images in your Dockerfile](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/scan-your-dockerfile/fix-vulnerable-base-images-in-your-dockerfile)
 
 ### General GitHub integration settings
@@ -57,7 +57,7 @@ Select **General** to view general settings:
 
 <div align="center"><figure><img src="../../../.gitbook/assets/Github-integrations-general.png" alt="GitHub integration general settings" width="563"><figcaption><p>GitHub integration general settings</p></figcaption></figure></div>
 
-* **Integration ID**: The unique ID for this integration, needed if you use the [Snyk API](../../../snyk-api/snyk-api.md).
+* **Integration ID**: The unique ID for this integration, needed if you use the [Snyk API](../../snyk-api/snyk-api.md).
 * **Repository access**: Whether Snyk can access private repos (in addition to public repos). Changing this setting affects existing Projects.
 
 ### GitHub integration features
@@ -93,7 +93,7 @@ The example that follows shows a fix pull request opened by Snyk.
 
 To review and adjust the automatic fix pull request settings in the Snyk GitHub Integration settings page, navigate to Organization **Settings** > **Integrations** > **Source control** > **GitHub**.
 
-Scroll down to the **Automatic fix PRs** section and set the options. For definitions, see [Configure automatic fix PRs at the integration level](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-backlog-prs-for-previously-known-vulnerabilities#configure-automatic-fix-prs-at-the-integration-level).
+Scroll down to the **Automatic fix PRs** section and set the options. For definitions, see [Configure automatic fix PRs at the integration level](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests/enable-automatic-backlog-prs-for-previously-known-vulnerabilities#configure-automatic-fix-prs-at-the-integration-level).
 
 <div align="left"><figure><img src="../../../.gitbook/assets/Github-integrations-auto-fix-PRs.png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure></div>
 
@@ -102,14 +102,14 @@ Scroll down to the **Automatic fix PRs** section and set the options. For defini
 {% hint style="info" %}
 **Feature availability**
 
-For availability with Snyk Broker, see the [Commit signing](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-commit-signing) page in the Broker docs.
+For availability with Snyk Broker, see the [Commit signing](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/snyk-broker-commit-signing) page in the Broker docs.
 {% endhint %}
 
 All the commits in Snyk's pull requests are done by `snyk-bot@snyk.io` (a verified user on GitHub), and signed with a PGP key. All Snyk pull requests appear as verified on GitHub, thus providing your developers with the confidence that the fix and upgrade pull requests are generated by a trusted source.
 
 #### Pull request status checks
 
-The Snyk [PR Checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether or not the pull request introduces new security issues.
+The Snyk [PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether or not the pull request introduces new security issues.
 
 This example shows how Snyk PR checks appear on the GitHub pull request page.
 
@@ -130,14 +130,14 @@ Operations that are not triggered through the Snyk Web UI, such as daily and wee
 For public repositories that are non-brokered, some operations, such as creating the PR, may occasionally be performed by `snyk-bot@snyk.io`.
 
 {% hint style="info" %}
-A Snyk Organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account).
+A Snyk Organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account).
 
 Note that Snyk will continue to use a random Snyk Organization member's GitHub account to perform all the other operations. Therefore using this feature does not eliminate the need to connect users' GitHub accounts to Snyk.
 {% endhint %}
 
 ### **How to set up a GitHub account to open Snyk PRs** and enable the Pull Request Experience
 
-You can designate a specific GitHub account to open fix and upgrade pull requests, and enable the [Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience).
+You can designate a specific GitHub account to open fix and upgrade pull requests, and enable the [Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience).
 
 {% hint style="info" %}
 The configured account is only used for opening PRs and posting issue summary and inline comments. All other operations are still performed on behalf of a randomly selected Snyk Organization member who has connected their GitHub accounts to Snyk.

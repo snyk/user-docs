@@ -16,14 +16,14 @@ If you consider purchasing the Team plan, remember that the trial offers feature
 
 The following Enterprise features are limited or unavailable during the trial:
 
-* [**Single Sign-On (SSO)**](../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/)**:** Not available.
-* [**Service Accounts**](../enterprise-setup/service-accounts/)**:** Not available.
-* [**Group / Multiple Orgs**](../../snyk-platform-administration/groups-and-organizations/)**:** Limited to one Group and one Organization
-* [**Custom Project Tags**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-tags)**:** Not available.
+* [**Single Sign-On (SSO)**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk)**:** Not available.
+* [**Service Accounts**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts)**:** Not available.
+* [**Group / Multiple Orgs**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations)**:** Limited to one Group and one Organization
+* [**Custom Project Tags**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-tags)**:** Not available.
 * [**Custom User Roles**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/user-role-management): Not available.
 * [**Audit Logging**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group): Not available.
-* [**Broker**](../enterprise-setup/snyk-broker/): Not available.
+* [**Broker**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker): Not available.
 * [**Self-hosted Git**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/github-enterprise): Not available.
-* [**Private Registry Integrations**](../../scan-with-snyk/snyk-open-source/package-repository-integrations/): Not available.
+* [**Private Registry Integrations**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations): Not available.
 * [**Snyk Essentials Inventory**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-assets/manage-assets): Not available
 * [**Snyk Essentials Issue page**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/prioritization-for-snyk-essentials): Limited capabilities, the Funnel view, Risk factors, and evidence graph, will not be available.

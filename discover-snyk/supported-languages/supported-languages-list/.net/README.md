@@ -106,7 +106,7 @@ When scanning through an SCM integration, the methodology varies based on your P
 * Modern Projects (SDK-style): For modern `.csproj` formats, the scanner utilises the .NET SDK directly to resolve dependencies, resulting in higher accuracy. This also provides the capability of scanning any Project that can be successfully restored by the `dotnet` SDK itself including `Directory.Build.props` files, `global.json`, or Central Package Management (`Directory.Packages.props`).
 * Legacy Projects (Non-SDK style): For Projects relying on `packages.config`, `project.json`, or XML-style `*.csproj` , `*.vbproj` or `*.fproj` files. The scanner uses static analysis to approximate the dependency graph based on standard NuGet algorithms.
 
-To improve accuracy, migrate to the [Universal Broker](../../../enterprise-setup/snyk-broker/universal-broker/) and [enable](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker#enabling-the-universal-broker-for-enhanced-sca-scanning) it for Open Source Scanning.
+To improve accuracy, migrate to the [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) and [enable](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker#enabling-the-universal-broker-for-enhanced-sca-scanning) it for Open Source Scanning.
 
 ### .NET framework package pruning
 

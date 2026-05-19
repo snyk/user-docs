@@ -1,12 +1,12 @@
 # Legacy Success Offerings
 
-The following terms apply to legacy support and success offerings that have reached their end-of-sale date and are no longer available for new purchases or service expansions. For existing customers with an active contract for a legacy offering, the applicable terms remain in full effect for the duration of the agreement.&#x20;
+The following terms apply to legacy support and success offerings that have reached their end-of-sale date and are no longer available for new purchases or service expansions. For existing customers with an active contract for a legacy offering, the applicable terms remain in full effect for the duration of the agreement.
 
-For information on currently available support and success offerings, see [Snyk terms of support and services glossary](https://docs.snyk.io/snyk-data-and-governance/snyk-terms-of-support-and-services-glossary).
+For information on currently available support and success offerings, see [Snyk terms of support and services glossary](../snyk-terms-of-support-and-services-glossary).
 
-### **Silver Success offering**
+### Silver Success offering
 
-#### **Summary**&#x20;
+#### Summary
 
 | Offering                                                                                                                  | Silver Success                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |

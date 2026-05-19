@@ -107,4 +107,4 @@ If you maintain a custom `accept.json` configuration, ensure that it includes th
 
 If the rule is missing, Snyk generates the pull request and summary successfully, but fails to post the comment containing the breakability risk level and analysis.
 
-For configuration details, visit [Snyk Broker](../../../implementation-and-setup/enterprise-setup/snyk-broker/).
+For configuration details, visit [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker).

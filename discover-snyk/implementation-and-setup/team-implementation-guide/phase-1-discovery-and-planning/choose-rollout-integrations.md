@@ -35,7 +35,7 @@ For more details, see [Git repositories (SCMs)](../../../developer-tools/scm-int
 {% hint style="info" %}
 If you have a non-cloud-facing or your own instance of a Git SCM:
 
-* Consider deploying a [Snyk Broker](../../enterprise-setup/snyk-broker/) for Snyk to communicate with your repositories, which would also require a Snyk Enterprise Plan.
+* Consider deploying a [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker) for Snyk to communicate with your repositories, which would also require a Snyk Enterprise Plan.
 * Enterprise customers can enable and manage Snyk Broker using the API.
 
 [Paid services](../../../snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/) can be engaged to assist in Broker deployments.
@@ -77,4 +77,4 @@ For complex environments, modules, and highly templated implementations, utilizi
 
 ### CR (Container Registries)
 
-Snyk also integrates with various [Container Registries](../../../scan-with-snyk/snyk-container/container-registry-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.
+Snyk also integrates with various [Container Registries](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.

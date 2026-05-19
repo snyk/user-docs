@@ -24,7 +24,7 @@ A scan runs when you import a Snyk Project (see [Import a Project to scan and id
 
 The default scanning frequency and available frequencies vary depending on the type of Project. For more information, see [Usage settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/usage-settings).
 
-You can also set the frequency in the Project **Settings** (see [View and edit Project settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/view-and-edit-project-settings)) or use the API Endpont [Updates project by project ID](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects#orgs-org_id-projects-project_id).
+You can also set the frequency in the Project **Settings** (see [View and edit Project settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/view-and-edit-project-settings)) or use the API Endpont [Updates project by project ID](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects#orgs-org_id-projects-project_id).
 
 ## Scan using the API
 

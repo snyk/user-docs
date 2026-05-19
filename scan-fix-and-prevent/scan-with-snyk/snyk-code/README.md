@@ -50,7 +50,7 @@ Snyk Code analysis can be applied to every pull request you create in your Git r
 {% endhint %}
 
 * CLI and CI/CD: [Using the CLI](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/) helps you find and fix security flaws in your code on your local machine or in your CI/CD.
-* APIs and extensibility: Query Code Projects and issues using the Snyk [REST API](../../snyk-api/reference/).
+* APIs and extensibility: Query Code Projects and issues using the Snyk [REST API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference).
 * Notifications: [Integrate with Jira](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration) to export data to Jira issues.
 
 ## Supported languages
@@ -59,7 +59,7 @@ Snyk Code supports many [languages and frameworks](https://app.gitbook.com/o/-M4
 
 ## What's next?
 
-* [Create or log in to a Snyk account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started#create-or-log-in-to-a-snyk-account)
-* [Set up an integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started#set-up-a-snyk-integration)
-* [Import a Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started#import-a-project-to-scan-and-identify-issues)
+* [Create or log in to a Snyk account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started#create-or-log-in-to-a-snyk-account)
+* [Set up an integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started#set-up-a-snyk-integration)
+* [Import a Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started#import-a-project-to-scan-and-identify-issues)
 * [Configure Snyk Code in Snyk Web UI](configure-snyk-code.md)

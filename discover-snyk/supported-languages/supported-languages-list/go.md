@@ -157,7 +157,7 @@ Private module support in different SCMs varies depending on whether full source
 To use Snyk Broker with Go, you must disable [full source code analysis](go.md#enable-full-source-code-analysis).
 {% endhint %}
 
-Go Modules Projects imported using new [Snyk Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/) clients should work as expected.
+Go Modules Projects imported using new [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker) clients should work as expected.
 
 To add support to clients created before December 30, 2020, add `go.mod` and `go.sum` to your `accept.json` file, as per the changes in this [pull request](https://github.com/snyk/broker/pull/299/files).
 

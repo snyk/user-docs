@@ -10,9 +10,9 @@ Snyk's cloud-first deployment options offer ease of use and scalability while al
 
 Snyk deployment options are as follows:
 
-* **Multi-Tenant SaaS:** The simplest, most common, and most cost-effective way to use Snyk’s developer security platform.
-* **Single-Tenant SaaS:** Private Cloud - An isolated and fully managed instance of the Snyk developer security platform. For details, see [Snyk Deployment Options](https://snyk.io/platform/deployment-options/).
-* **Snyk Broker:** A client service installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi- or single-tenant) and your on-premise codebase. [Snyk Broker](../implementation-and-setup/enterprise-setup/snyk-broker/) is designed to securely handle inbound and outbound connections, encrypting data during transit and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
+* **Multi-Tenant SaaS**: The simplest, most common, and most cost-effective way to use Snyk’s developer security platform.
+* **Single-Tenant SaaS**: Private Cloud - An isolated and fully managed instance of the Snyk developer security platform. For details, see [Snyk Deployment Options](https://snyk.io/platform/deployment-options/).
+* **Snyk Broker**: A client service installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi- or single-tenant) and your on-premise codebase. [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker) is designed to securely handle inbound and outbound connections, encrypting data during transit and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
 
 ## Customer data within Snyk
 
@@ -20,13 +20,13 @@ Snyk provides a wide range of development tools and integration points, requirin
 
 ## Common data types
 
-* **Vulnerability data:** Snyk stores information on the vulnerabilities identified in customer applications and related fix context.
-* **Vulnerability source:** Snyk stores information on where the vulnerability was identified. Examples: source code repository or registry, file name and location, dependency tree, vulnerability path.
-* **Integration-related data:** Snyk stores information required to set up an integration with Snyk. Examples: tokens and API configurations.
-* `User data:` Snyk stores user information required to access and use the platform. Examples: user name, IDs (for example, GitHub user ID), email address, IP address.
-* **User list:** For purposes of accurate contributor counting, Snyk accesses commits from the last 90 days for repositories monitored. Upon request, an unhashed version of user emails is produced.
-* **Billing data:** Snyk stores information required for billing your Snyk account.
-* **User behavior analytics:** Snyk stores various types of information pertaining to usage patterns. Examples: platform navigation and executed CLI commands.
+* **Vulnerability data**: Snyk stores information on the vulnerabilities identified in customer applications and related fix context.
+* **Vulnerability source**: Snyk stores information on where the vulnerability was identified. Examples: source code repository or registry, file name and location, dependency tree, vulnerability path.
+* **Integration-related data**: Snyk stores information required to set up an integration with Snyk. Examples: tokens and API configurations.
+* **User data**: Snyk stores user information required to access and use the platform. Examples: user name, IDs (for example, GitHub user ID), email address, IP address.
+* **User list**: For purposes of accurate contributor counting, Snyk accesses commits from the last 90 days for repositories monitored. Upon request, an unhashed version of user emails is produced.
+* **Billing data**: Snyk stores information required for billing your Snyk account.
+* **User behavior analytics**: Snyk stores various types of information pertaining to usage patterns. Examples: platform navigation and executed CLI commands.
 
 {% hint style="info" %}
 All data is handled by Snyk in accordance with the SOC 2 standard. For more details, see [Snyk certifications](how-snyk-handles-your-data.md#snyk-certifications).
@@ -45,7 +45,7 @@ The following provides details regarding data handling by specific Snyk products
 
 ### **Snyk Open Source**
 
-<figure><img src="../.gitbook/assets/SnykOSS.svg" alt="Snyk Open Source logo"><figcaption><p>Snyk Open Source</p></figcaption></figure>
+<figure><img src=".gitbook/assets/SnykOSS.svg" alt="Snyk Open Source logo"><figcaption><p>Snyk Open Source</p></figcaption></figure>
 
 #### Snyk Open Source product
 
@@ -68,7 +68,7 @@ Your account is subject to contract terms that might restrict your ability to en
 
 ### **Snyk Code**
 
-<figure><img src="../.gitbook/assets/SnykCode.svg" alt="Snyk Code logo"><figcaption><p>Snyk Code</p></figcaption></figure>
+<figure><img src=".gitbook/assets/SnykCode.svg" alt="Snyk Code logo"><figcaption><p>Snyk Code</p></figcaption></figure>
 
 * Snyk stores repository-specific information, for example, the name of the Git repository and file names. Snyk accesses your repository code for a one-time analysis and caches the source code according to the Cloud provider's storage minimum policy. After this period, only the location (file path, line, and column) of the issues found, the issue ID, and explanations are maintained. Your code is removed and is not stored in the Snyk network or logs.
 * Results are stored in a database and used for analytic and monitoring purposes by Snyk.
@@ -80,7 +80,7 @@ Your account is subject to contract terms that might restrict your ability to en
 
 ### **Snyk Container**
 
-<figure><img src="../.gitbook/assets/image (201).png" alt="Snyk Container logo"><figcaption><p>Snyk Container</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (201).png" alt="Snyk Container logo"><figcaption><p>Snyk Container</p></figcaption></figure>
 
 * Snyk accesses and stores package versions, executable hashes and versions, operating system, container image metadata (for example, rootfs hashes, history), and image ID.
 * Snyk accesses and stores information pertaining to the parent image: name, version, and tag.
@@ -90,7 +90,7 @@ Your account is subject to contract terms that might restrict your ability to en
 
 ### **Snyk IaC**
 
-<figure><img src="../.gitbook/assets/SnykIaC.svg" alt="Snyk IaC logo"><figcaption><p>Snyk Infrastructure as Code</p></figcaption></figure>
+<figure><img src=".gitbook/assets/SnykIaC.svg" alt="Snyk IaC logo"><figcaption><p>Snyk Infrastructure as Code</p></figcaption></figure>
 
 #### Current IaC
 
@@ -111,7 +111,7 @@ Your account is subject to contract terms that might restrict your ability to en
 
 ### Snyk Learn
 
-<figure><img src="../.gitbook/assets/SnykLearn.png" alt=""><figcaption><p>Snyk Learn</p></figcaption></figure>
+<figure><img src=".gitbook/assets/SnykLearn.png" alt=""><figcaption><p>Snyk Learn</p></figcaption></figure>
 
 #### User data
 
@@ -121,13 +121,13 @@ Snyk Learn stores data related to users' progress and completion of lessons, lea
 
 Snyk maintains important safeguards regarding the data processed by Snyk Assist:
 
-* **Unintended code disclosure:** Snyk has implemented technical safeguards designed to check for code in user input; if found, code is not sent to the AI or stored by Snyk.
-* **Usage data:** Snyk stores anonymized user input and usage analytics for a reasonable period.
-* **Content filtering:** Measures are in place to handle inappropriate input, for your safety and that of Snyk.
+* **Unintended code disclosure**: Snyk has implemented technical safeguards designed to check for code in user input; if found, code is not sent to the AI or stored by Snyk.
+* **Usage data**: Snyk stores anonymized user input and usage analytics for a reasonable period.
+* **Content filtering**: Measures are in place to handle inappropriate input, for your safety and that of Snyk.
 
 ### Snyk API & Web
 
-<figure><img src="../.gitbook/assets/Api-Web.png" alt=""><figcaption><p>Snyk Web &#x26; API</p></figcaption></figure>
+<figure><img src=".gitbook/assets/Api-Web.png" alt=""><figcaption><p>Snyk Web &#x26; API</p></figcaption></figure>
 
 Snyk API & Web accesses and scans your web applications and APIs to identify security vulnerabilities through dynamic application security testing (DAST).
 
@@ -161,11 +161,11 @@ Snyk puts the following safeguards in place to ensure data is secure:
 
 ## Snyk certifications
 
-<figure><img src="../.gitbook/assets/Soc2.png" alt=""><figcaption><p>Soc 2 Type 2 AICPA Soc</p></figcaption></figure>
+<figure><img src=".gitbook/assets/Soc2.png" alt=""><figcaption><p>Soc 2 Type 2 AICPA Soc</p></figcaption></figure>
 
 Snyk is certified to ISO 27001:2022 with the additional objective controls of ISO 27017:2015.
 
-<figure><img src="../.gitbook/assets/schellman_iso27001_seal_blue_CMYK_300dpi_jpg.png" alt="" width="375"><figcaption><p>ISO 27001 Schellman certification</p></figcaption></figure>
+<figure><img src=".gitbook/assets/schellman_iso27001_seal_blue_CMYK_300dpi_jpg.png" alt="" width="375"><figcaption><p>ISO 27001 Schellman certification</p></figcaption></figure>
 
 ## Privacy compliance
 

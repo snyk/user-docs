@@ -36,7 +36,7 @@ For hundreds or thousands of repositories:
 
 * At scale, Snyk recommends using the API. APIs are available with the Snyk Enterprise plan.
   * Use the [Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/snyk-api) to import your Projects. This leverages an existing source control integration and can be used to automate processes.
-  * The [API-import](../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. The source control structure will need to be mirrored.
+  * The [API-import](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. The source control structure will need to be mirrored.
 
 ## Snyk CLI
 
@@ -65,7 +65,7 @@ To use the Snyk CLI:
      * `snyk test --all-projects --org=[org-id]`
      * `snyk monitor --all-projects --org=[org-id]`\
        Replace `[org-id]` with the ID of your Organization.
-   * For Container and Infrastructure as Code scans, see [Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/scan-container-images) and [Infrastructure as Code](../../../scan-with-snyk/snyk-iac/), as this will vary based on the type being scanned.
+   * For Container and Infrastructure as Code scans, see [Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/scan-container-images) and [Infrastructure as Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac), as this will vary based on the type being scanned.
 5. Review results either locally when running `snyk test`, or on the Snyk Web UI when using `monitor` or report.
 
 For demonstrations of various pipeline integrations, see [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples).
