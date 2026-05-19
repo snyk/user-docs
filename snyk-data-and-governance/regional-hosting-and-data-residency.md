@@ -8,7 +8,7 @@ Regional hosting and data residency are available only for Enterprise plans. For
 
 Data residency allows you to control the region in which Snyk hosts a selected subset of your data. For information about GDPR, see [Privacy compliance](how-snyk-handles-your-data.md#privacy-compliance).
 
-Data residency is available for [Snyk Open Source](../scan-with-snyk/snyk-open-source/), [Snyk Code](../scan-with-snyk/snyk-code/), [Snyk Container](../scan-with-snyk/snyk-container/), and [Snyk IaC](../scan-with-snyk/snyk-iac/). Snyk can host your data in a number of regions.
+Data residency is available for [Snyk Open Source](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source), [Snyk Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code), [Snyk Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container), and [Snyk IaC](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac). Snyk can host your data in a number of regions.
 
 This page provides information on:
 

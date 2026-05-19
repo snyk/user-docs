@@ -66,7 +66,7 @@ The parent image used to construct a container image, usually defined in the `FR
 
 ### Broker
 
-See [Snyk Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/).
+See [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker).
 
 ### Build system
 
@@ -80,7 +80,7 @@ Information related to the organization's objectives, priorities, and regulatory
 
 ### CI/CD
 
-Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](../../developer-tools/snyk-ci-cd-integrations/) for details of Snyk CI/CD integrations.
+Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-ci-cd-integrations) for details of Snyk CI/CD integrations.
 
 ### Class (Snyk Essentials)
 
@@ -267,7 +267,7 @@ Third-party products, applications, and platforms that Snyk works with, for exam
 
 ### Issue
 
-A license problem, vulnerability, or misconfiguration identified and listed by Snyk. See [Find and manage priority issues](../../manage-risk/prioritize-issues-for-fixing/).
+A license problem, vulnerability, or misconfiguration identified and listed by Snyk. See [Find and manage priority issues](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing).
 
 ### Issue (Snyk **Essentials**)
 
@@ -295,7 +295,7 @@ A specific type of package.
 
 ### License policy
 
-A set of criteria for evaluating open-source license issues. License policies enable you to set the severity level and define legal instructions for each license. See [License policies](../../manage-risk/policies/license-policies/).
+A set of criteria for evaluating open-source license issues. License policies enable you to set the severity level and define legal instructions for each license. See [License policies](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/policies/license-policies).
 
 ### LLM
 
@@ -341,11 +341,11 @@ Open Container Initiative. An independent body set up to facilitate collaboratio
 
 ### Organization
 
-An Organization in Snyk is a way to collect and organize your Projects. Members of Organizations have access to these Projects. See [Manage Groups and Organizations](../../snyk-platform-administration/groups-and-organizations/).
+An Organization in Snyk is a way to collect and organize your Projects. Members of Organizations have access to these Projects. See [Manage Groups and Organizations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations).
 
 ### Origin or source
 
-The identifier for the ecosystem that a Target exists in. Snyk can scan Projects from multiple integrations, including CLI, API, GitHub, Kubernetes, and others. See [Snyk Projects](../../snyk-platform-administration/snyk-projects/).
+The identifier for the ecosystem that a Target exists in. Snyk can scan Projects from multiple integrations, including CLI, API, GitHub, Kubernetes, and others. See [Snyk Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects).
 
 ## P
 
@@ -387,7 +387,7 @@ Pull Request. Allows a user to exchange changes made to source code and collabor
 
 ### PR Checks
 
-Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/).
+Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks).
 
 ### Priority Score
 
@@ -395,7 +395,7 @@ Snyk scores issues, including vulnerabilities and licenses for Open Source, to h
 
 ### Project
 
-An external item scanned by Snyk with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See also [Target](glossary.md#target). For details, see [Snyk Projects](../../snyk-platform-administration/snyk-projects/).
+An external item scanned by Snyk with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See also [Target](glossary.md#target). For details, see [Snyk Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects).
 
 ### Prompt
 
@@ -433,7 +433,7 @@ A value assigned to an issue, ranging from 0 to 1,000, representing the risk imp
 
 ### Rule
 
-A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/) and [IaC custom rules](../../scan-with-snyk/snyk-iac/current-iac-custom-rules/).
+A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules) and [IaC custom rules](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/current-iac-custom-rules).
 
 ## S
 
@@ -459,7 +459,7 @@ A scanned artifact in Snyk Essentials is an entity detected by Snyk that cannot 
 
 ### SCM
 
-Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../../developer-tools/scm-integrations/organization-level-integrations/).
+Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations/organization-level-integrations).
 
 ### SCM Repository freshness (Snyk **Essentials**)
 
@@ -475,7 +475,7 @@ A Secure at inception directive is a type of [Guardrail directive](../../integra
 
 ### Security policy
 
-A set of criteria for evaluating open-source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. See [Security policies](../../manage-risk/policies/security-policies/).
+A set of criteria for evaluating open-source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. See [Security policies](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/policies/security-policies).
 
 ### Service account
 
@@ -511,27 +511,27 @@ A Snyk tool that enables developers to integrate programmatically with Snyk. See
 
 ### Snyk Apps
 
-Snyk Apps are the modern and preferred way to build integrations with Snyk, exposing fine-grained scopes for accessing resources over the Snyk APIs, powered by OAuth 2.0 for a developer-friendly experience. See [Snyk Apps](../../snyk-api/using-specific-snyk-apis/snyk-apps-apis/).
+Snyk Apps are the modern and preferred way to build integrations with Snyk, exposing fine-grained scopes for accessing resources over the Snyk APIs, powered by OAuth 2.0 for a developer-friendly experience. See [Snyk Apps](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/using-specific-snyk-apis/snyk-apps-apis).
 
 ### Snyk Broker
 
-A client/server system that serves as an agent or proxy, allowing Snyk to scan private customer environments: Jira, code repositories, or container registries. Snyk Broker relays messages and allows users to filter which messages are allowed through, for example, allowing users to expose only some GitHub APIs to Snyk. See [Snyk Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/).
+A client/server system that serves as an agent or proxy, allowing Snyk to scan private customer environments: Jira, code repositories, or container registries. Snyk Broker relays messages and allows users to filter which messages are allowed through, for example, allowing users to expose only some GitHub APIs to Snyk. See [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker).
 
 ### Snyk CLI
 
-A Snyk platform tool that enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI](../../developer-tools/snyk-cli/).
+A Snyk platform tool that enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli).
 
 ### Snyk Code
 
-A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](../../scan-with-snyk/snyk-code/).
+A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code).
 
 ### Snyk Container
 
-A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container](../../scan-with-snyk/snyk-container/).
+A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container).
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in Kubernetes, Helm, and Terraform configuration files. See [Snyk IaC](../../scan-with-snyk/snyk-iac/).
+A Snyk product. Enables developers to find and fix vulnerabilities in Kubernetes, Helm, and Terraform configuration files. See [Snyk IaC](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac).
 
 ### Snyk Learn
 
@@ -543,7 +543,7 @@ A MCP server that enables easy integration with coding assistants, providing sec
 
 ### Snyk Open Source
 
-A Snyk product. Enables developers to find and fix open-source vulnerabilities. See [Snyk Open Source](../../scan-with-snyk/snyk-open-source/).
+A Snyk product. Enables developers to find and fix open-source vulnerabilities. See [Snyk Open Source](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source).
 
 ### Snyk plugin
 
@@ -594,7 +594,7 @@ A way to categorize assets. Helps you recognize or handle assets differently acc
 
 ### Tenant
 
-The top level of the Snyk hierarchy. It encompasses all your Groups and Organizations and all their corresponding Snyk work items. For more information, see [Tenants, Groups, and Organizations](../../snyk-platform-administration/groups-and-organizations/).
+The top level of the Snyk hierarchy. It encompasses all your Groups and Organizations and all their corresponding Snyk work items. For more information, see [Tenants, Groups, and Organizations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations).
 
 ## U
 
@@ -610,13 +610,13 @@ Vector database. A database that stores information as numerical representations
 
 ### Vulnerability
 
-A security vulnerability that was identified by Snyk. See [Manage vulnerabilities](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/).
+A security vulnerability that was identified by Snyk. See [Manage vulnerabilities](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities).
 
 ## W
 
 ### Webhook
 
-A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code. See [Snyk Webhooks](../../snyk-api/using-specific-snyk-apis/webhooks-apis/).
+A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code. See [Snyk Webhooks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/using-specific-snyk-apis/webhooks-apis).
 
 ### Web UI
 

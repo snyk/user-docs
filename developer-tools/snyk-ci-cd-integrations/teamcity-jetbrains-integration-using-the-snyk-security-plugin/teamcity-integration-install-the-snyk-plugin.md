@@ -10,6 +10,6 @@ Before you begin, sign up for a Snyk account.
 4. In response to the prompt, click **Install**.
 5. When the installation ends, and the **Administration Plugins List** loads with a notification that the plugin has been uploaded, ensure the plugin is enabled.
 
-![Install plugin from the JetBrains Plugins Repository](../../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png)
+![Install plugin from the JetBrains Plugins Repository](../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png)
 
 To configure the integration, see [TeamCity configuration parameters](teamcity-configuration-parameters.md). For information on how to configure your build with a Snyk step, see [Team City integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build.md).

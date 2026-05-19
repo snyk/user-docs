@@ -31,9 +31,9 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
   * [Breakability risk levels](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/breakability-risk-levels)
 * Universal Broker
 * Language support
-  * [Snyk CLI pnpm support](../../supported-languages/supported-languages-list/javascript/#support-for-pnpm)
-  * [Improved Gradle SCM scanning](../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning)
-  * [CLI support for uv](../../supported-languages/supported-languages-list/python/cli-support-for-uv.md)
+  * [Snyk CLI pnpm support](../supported-languages/supported-languages-list/javascript/#support-for-pnpm)
+  * [Improved Gradle SCM scanning](../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning)
+  * [CLI support for uv](../supported-languages/supported-languages-list/python/cli-support-for-uv.md)
 * Reports
   * [Repositories tested in CI/CD report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/prevention-reports#repositories-tested-in-ci-cd-report)
 * [Snyk 2.0 platform improvements](snyk-2.0-platform-improvements.md)
@@ -83,4 +83,4 @@ The documentation page will announce the transition of a feature to End of Suppo
 
 A feature can also be the subject of an end-of-life event, meaning that the feature or capability impacted by this process ceases to exist and is removed from the product and public documentation.
 
-API endpoints have a dedicated section for the end of life process and also provide details about the migration steps. Navigate to the [API End of Life process and migration guides](../../snyk-api/api-end-of-life-eol-process-and-migration-guides/) for more details.
+API endpoints have a dedicated section for the end of life process and also provide details about the migration steps. Navigate to the [API End of Life process and migration guides](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-end-of-life-eol-process-and-migration-guides) for more details.

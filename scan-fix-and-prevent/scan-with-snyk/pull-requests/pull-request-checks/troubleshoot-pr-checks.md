@@ -13,7 +13,7 @@ The following table lists general issues with PR checks and how to address them.
 
 ## Open-source and licensing checks
 
-PR checks that are configured to “Only fail when the issues found have a fix available” will not alert for projects in languages that do not support Fix PR checks. For more information, see [Supported languages](../../../supported-languages/supported-languages-list/) to check feature support.
+PR checks that are configured to “Only fail when the issues found have a fix available” will not alert for projects in languages that do not support Fix PR checks. For more information, see [Supported languages](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list) to check feature support.
 
 If you come across false positive or false negative results, you can take action to diagnose and report the issue.
 

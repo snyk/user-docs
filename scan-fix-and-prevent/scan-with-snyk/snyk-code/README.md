@@ -50,7 +50,7 @@ Snyk Code analysis can be applied to every pull request you create in your Git r
 {% endhint %}
 
 * CLI and CI/CD: [Using the CLI](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/) helps you find and fix security flaws in your code on your local machine or in your CI/CD.
-* APIs and extensibility: Query Code Projects and issues using the Snyk [REST API](../../snyk-api/reference/).
+* APIs and extensibility: Query Code Projects and issues using the Snyk [REST API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference).
 * Notifications: [Integrate with Jira](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration) to export data to Jira issues.
 
 ## Supported languages

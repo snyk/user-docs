@@ -121,7 +121,7 @@ When you install the Snyk Bitbucket Cloud App integration in your Bitbucket work
 <figure><img src="../../../.gitbook/assets/bbcloud-app_snyk-security_6oct2022.png" alt="Snyk Security tab in Bitbucket Cloud"><figcaption><p>Snyk Security tab in Bitbucket Cloud</p></figcaption></figure>
 
 {% hint style="warning" %}
-The first-party interface currently supports only the [Snyk Open Source](../../../scan-with-snyk/snyk-open-source/) and [Snyk Container](../../../scan-with-snyk/snyk-container/) products. Issues from other Snyk products do not show up on this page.
+The first-party interface currently supports only the [Snyk Open Source](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source) and [Snyk Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container) products. Issues from other Snyk products do not show up on this page.
 {% endhint %}
 
 You can **associate a first-party interface with a different Snyk account or Organization**.

@@ -56,11 +56,11 @@ If you are in a region other than `SNYK-US-01`, which uses the `https://api.snyk
 * Click **Add**.
 * Set the name to `SNYK_API` and the value to the custom endpoint.
 
-For more information, see [Configure Snyk CLI to connect to Snyk API](../../cli-ide-and-ci-cd-integrations/snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api.md).
+For more information, see [Configure Snyk CLI to connect to Snyk API](../cli-ide-and-ci-cd-integrations/snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api.md).
 
 ## Configure a Snyk PAT or API token credential
 
-* Get your [Snyk API Token or Snyk PAT](../../snyk-api/authentication-for-api/).
+* Get your [Snyk API Token or Snyk PAT](../snyk-api/authentication-for-api/).
 * Navigate to **Manage Jenkins** > **Credentials**.
 * Choose a **Store**.
 * Choose a **Domain**.

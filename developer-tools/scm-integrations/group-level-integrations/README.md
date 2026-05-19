@@ -35,7 +35,7 @@ Each connected integration enables you to:
 * Delete the integration
 * Check when the integration was last synced and when the next sync is scheduled.
 
-See the [Integration syncing time](../../../integrations/integrate-with-snyk.md#integrations-syncing-time) for more details about the time required to sync for each action.
+See the [Integration syncing time](../../integrations/integrate-with-snyk.md#integrations-syncing-time) for more details about the time required to sync for each action.
 
 ### Prerequisites
 
