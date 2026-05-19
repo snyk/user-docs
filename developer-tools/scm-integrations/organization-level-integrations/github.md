@@ -29,7 +29,7 @@ When you import a Snyk Project using your GitHub integration with the Snyk PR fu
 
 ### How to set up the GitHub integration
 
-To connect your GitHub repositories to Snyk for scanning, you need to set up the integration and then import Projects. For details, see [Getting started](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started).
+To connect your GitHub repositories to Snyk for scanning, you need to set up the integration and then import Projects. For details, see [Getting started](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started).
 
 ### GitHub integration settings
 

@@ -17,7 +17,7 @@ To ensure a smooth rollout of Snyk across your organization, Snyk provides a sug
 
 Snyk has Organization-level SCM integrations available, including GitHub, GitHub Enterprise, Bitbucket Cloud, and more.
 
-For details, see [Set up a Snyk integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started#set-up-a-snyk-integration).
+For details, see [Set up a Snyk integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started#set-up-a-snyk-integration).
 
 Snyk has Group-level SCM integrations available for Snyk Essentials, including GitHub, GitLab, Azure DevOps, and Bitbucket.
 
@@ -51,7 +51,7 @@ Navigate to the **Projects** page in the Snyk UI, select **Add projects**, selec
 To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported Projects are indicated by a checkmark next to the repository name.
 {% endhint %}
 
-For details, see [Import a Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started#import-a-project-to-scan-and-identify-issues).
+For details, see [Import a Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started#import-a-project-to-scan-and-identify-issues).
 
 ## Stage 3: Enable Snyk test on PRs
 

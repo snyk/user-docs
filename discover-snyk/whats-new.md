@@ -542,7 +542,7 @@ The Universal Broker feature is now available in Early Access. The Universal Bro
 
 * The [CLI commands and options summary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/cli-commands-and-options-summary) was updated.
 * [Authentication](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/authenticate-to-use-the-cli) has been updated.
-* Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/config) help, [`snyk config environment`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/config-environment) help.
+* Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/config) help, [`snyk config environment`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment) help.
 
 #### Snyk Integrations
 
@@ -567,7 +567,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 * [`snyk auth`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/auth) command help updated to reflect OAuth default.
 * [CLI authentication](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/authenticate-to-use-the-cli) instructions updated for OAuth default and improved flow.
-* [`snyk config environment`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/config-environment) command help has been added.
+* [`snyk config environment`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment) command help has been added.
 * CLI [support for pnpm added](supported-languages/supported-languages-list/javascript/#support-for-pnpm).
 
 #### Snyk IDE
@@ -577,7 +577,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 #### **Snyk Integrations**
 
-* Git repository cloning has been renamed [Workspaces for SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/workspaces) to better reflect its functionality. Additional detail on [enablement](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/workspaces#manage-workspaces) has been added.
+* Git repository cloning has been renamed [Workspaces for SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces) to better reflect its functionality. Additional detail on [enablement](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces#manage-workspaces) has been added.
 * The [relationship](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/github-cloud-app#how-to-set-up-the-github-cloud-app) between GitHub organizations and Snyk Organizations when integrating with the GitHub Cloud App has been clarified.
 
 ### July 2024
@@ -599,7 +599,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 * A comparison of the GitHub and GitHub Enterprise integrations functions now resides on the [SCM, IDE, and CI/CD integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations#github-vs-github-enterprise) page.
 * Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/github#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
 * The [Snyk SCM Integrations](developer-tools/scm-integrations/organization-level-integrations/) page now contains information critical to using these integrations successfully in your SDLC. This includes:
-  * [Git repository cloning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/workspaces) details
+  * [Git repository cloning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces) details
   * [Deployment recommendations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/deployment-recommendations) for Enterprise customers
   * [User permissions and access scope requirements](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/user-permissions-and-access-scopes) for each SCM integration
   * Instructions on how to generate [integrated SCM tokens for Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/scm-integrations-and-snyk-broker#integrated-scm-tokens-for-classic-broker)

@@ -626,4 +626,4 @@ See [Snyk Web UI](glossary.md#snyk-web-ui).
 
 A Snyk feature. This enables Snyk to ingest shallow copies of your Git repositories for scanning, resulting in precise and reliable vulnerability scans.
 
-See [Workspaces for SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/workspaces).
+See [Workspaces for SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces).

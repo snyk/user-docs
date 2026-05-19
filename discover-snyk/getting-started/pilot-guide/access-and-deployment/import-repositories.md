@@ -33,5 +33,5 @@ You can either continue monitoring the import by returning to the import logs or
 Additional resources
 
 * [Import Project repository](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/import-project-repository)
-* [API-driven imports](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scan-with-snyk/snyk-tools/tool-snyk-api-import)
+* [API-driven imports](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import)
 {% endhint %}

@@ -15,7 +15,7 @@ Create your Organization structure video guide
 After your template is ready, use it to build your structure:
 
 * **Through the web UI**: Select **Template** in the Copy settings from dropdown when you create a new Organization.
-* **Through the** [**API**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scan-with-snyk/snyk-tools/tool-snyk-api-import): Use the `sourceOrgId` parameter in the `Create a new organization` endpoint.
+* **Through the** [**API**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import): Use the `sourceOrgId` parameter in the `Create a new organization` endpoint.
 
 {% hint style="info" %}
 Snyk recommends using multiple template Orgs for different regions or business units that use the same SCM. This is because different teams or business units may have different risk profiles, legal requirements, and ways of working with the chosen SCM.

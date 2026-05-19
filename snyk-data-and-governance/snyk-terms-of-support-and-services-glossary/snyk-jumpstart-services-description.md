@@ -78,7 +78,7 @@ The Snyk Consultant will run a 60-minute training session for Customer’s Devel
 
 #### Repository import
 
-The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) through the UI import functionality, the [API Import tool](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scan-with-snyk/snyk-tools/tool-snyk-api-import), or the Snyk CLI.
+The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) through the UI import functionality, the [API Import tool](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import), or the Snyk CLI.
 
 #### SCM integration settings
 
@@ -110,7 +110,7 @@ The Snyk Consultant will educate the Customer on understanding Snyk Open Source 
 
 #### Repository import
 
-The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) either through the UI import functionality or through the [API Import tool](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scan-with-snyk/snyk-tools/tool-snyk-api-import).
+The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) either through the UI import functionality or through the [API Import tool](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import).
 
 #### SCM integration settings
 
@@ -162,7 +162,7 @@ The Snyk Consultant will educate the Customer on how to use the Snyk Custom Base
 
 #### Repository import
 
-The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) through the UI import functionality, the [API Import tool](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scan-with-snyk/snyk-tools/tool-snyk-api-import), or the Snyk CLI.
+The Snyk Consultant will work with the Customer to import their repositories into Snyk (up to 50 targets) through the UI import functionality, the [API Import tool](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import), or the Snyk CLI.
 
 #### IaC Settings
 
