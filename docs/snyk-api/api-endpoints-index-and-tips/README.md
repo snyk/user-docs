@@ -474,7 +474,7 @@ Additional information: [Reachability](../../manage-risk/prioritize-issues-for-f
 
 ### [Monitor Dep Graph](../reference/monitor-v1.md)
 
-**More information:** [Dep Graph API (Bazel)](../../scan-with-snyk/snyk-open-source/snyk-for-bazel/dep-graph-api.md)
+**More information:** [Dep Graph API (Bazel)](/broken/pages/ZuJRV7SJ3orSDvlu5vGX)
 
 ## Organizations (v1)
 
@@ -880,7 +880,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ### [Test Dep Graph](../reference/test-v1.md#test-dep-graph)
 
-**More information:** [Dep Graph API](../../scan-with-snyk/snyk-open-source/snyk-for-bazel/dep-graph-api.md) (Bazel);\
+**More information:** [Dep Graph API](/broken/pages/ZuJRV7SJ3orSDvlu5vGX) (Bazel);\
 [Unmanaged JavaScript](../../supported-languages/supported-languages-list/javascript/#unmanaged-javascript);\
 [Start scanning](../../scan-with-snyk/start-scanning.md)
 
