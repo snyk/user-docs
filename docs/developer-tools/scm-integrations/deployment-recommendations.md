@@ -15,17 +15,13 @@ To ensure a smooth rollout of Snyk across your organization, Snyk provides a sug
 
 ## Stage 1: Set up your Organization and Group-level SCM integrations
 
-Snyk has Organization-level SCM integrations available, including GitHub, GitHub Enterprise, Bitbucket Cloud, and more.
+Snyk has Organization-level SCM integrations available, including GitHub, GitHub Enterprise, Bitbucket Cloud, and more. For details, visit [Set up a Snyk integration](../../discover-snyk/getting-started/#set-up-a-snyk-integration).
 
-For details, see [Set up a Snyk integration](../../discover-snyk/getting-started/#set-up-a-snyk-integration).
-
-Snyk has Group-level SCM integrations available for Snyk Essentials, including GitHub, GitLab, Azure DevOps, and Bitbucket.
-
-See [Group level SCM integrations](group-level-integrations/) for details.
+Snyk has Group-level SCM integrations available for Snyk Essentials, including GitHub, GitLab, Azure DevOps, and Bitbucket. For details, visit [Group level SCM integrations](group-level-integrations/).
 
 ### SCM permissions on repositories
 
-Operations triggered using the Snyk UI, such as opening a Fix PR or retesting a Project, are performed for the acting user. Thus to perform these operations, you must connect your own SCM user or service account. This gives Snyk the required permissions for the repositories where you want to perform these operations.
+Operations triggered using the Snyk UI, such as opening a Fix PR or retesting a Project, are performed for the acting user. Thus, to perform these operations, you must connect your own SCM user or service account. This grants Snyk the required permissions to perform these operations on the repositories you want to use.
 
 For details on these permissions, see [User permissions and access scope requirements](user-permissions-and-access-scopes.md) for your chosen SCM integration.
 
@@ -43,7 +39,7 @@ Navigate to the **Projects** page in the Snyk UI, select **Add projects**, selec
 
 * Snyk starts scanning the selected repos for dependency files (for example, package.json) in the entire directory tree and imports these files as Projects.
 * Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
-* Snyk detects the manifest files (Projects), tests them, then displays the results.\
+* Snyk detects the manifest files (Projects), tests them, and then displays the results.\
   Imported Projects appear underneath the repository name.\
   After a Project is imported, it is continuously checked for vulnerabilities.
 
@@ -57,13 +53,13 @@ For details, see [Import a Project](../../discover-snyk/getting-started/#import-
 
 ### PR test settings and workflows
 
-By default, Snyk scans every pull request submitted on your monitored repositories and displays the results and recommendations grouped together in a single security check and a single license check.
+By default, Snyk scans every pull request submitted to your monitored repositories and displays the results and recommendations in a single security check and a single license check.
 
 ### Status details
 
 Click the **Details** link to display the status of the Snyk check. The status options are:
 
-* **Success**: no issues were identified and all checks passed
+* **Success**: no issues were identified, and all checks passed
 * **Processing**: this status is displayed until the Snyk test is completed
 * **Failure**: identified issues that must be fixed for the check to pass
 * **Error**: indicates that one of the following issues may have occurred:
@@ -95,9 +91,9 @@ When you first roll out your SCM integration, Snyk recommends that you start wit
 
 After you have embedded Snyk into your software development life cycle (SDLC), and have built good developer awareness, you can start to apply stricter policies to improve your overall security posture, for example:
 
-* Low priority Projects: you can fail the PR only for new high-severity issues that are fixable.
-* Medium priority Projects: fail the PR only for high-severity issues.
-* High priority Projects (PCI/GDPR compliance): fail the PR for any issue.
+* Low-priority Projects: you can fail the PR only for new high-severity issues that are fixable.
+* Medium-priority Projects: fail the PR only for high-severity issues.
+* High-priority Projects (PCI/GDPR compliance): fail the PR for any issue.
 
 {% hint style="info" %}
 To align vulnerability severity with your internal policy, use security policies to change the severity of issues and attach them to relevant Project attributes. See [Security policies](../../manage-risk/policies/security-policies/) for more details.

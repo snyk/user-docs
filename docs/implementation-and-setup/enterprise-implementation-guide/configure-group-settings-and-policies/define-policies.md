@@ -34,16 +34,16 @@ Configure policies to match your requirements.
 **Key decision:** Decide how to automate the governance, tracking, and remediation workflows for your assets to ensure continuous security visibility and compliance
 {% endhint %}
 
-Asset policies in Snyk Essentials automate business context and notification workflows. Use policies to identify coverage gaps and manage assets at scale.&#x20;
+Asset policies in Snyk Essentials automate business context and notification workflows. Use policies to identify coverage gaps and manage assets at scale.
 
-## About Policies
+## About policies
 
 ### Policy components
 
 A policy consists of the following elements:
 
 * Filters: Define criteria (for example tags or asset names) to group specific assets.
-* Actions: Define what happens to filtered assets, for example, assigning a classification or sending a Slack notification.&#x20;
+* Actions: Define what happens to filtered assets, for example, assigning a classification or sending a Slack notification.
 
 ### Key filter types
 

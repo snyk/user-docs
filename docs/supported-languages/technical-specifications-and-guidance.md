@@ -6,7 +6,7 @@ Both Snyk Code and Snyk Open Source accept source code files in UTF-8 encoding. 
 
 ## Snyk Open Source
 
-Snyk analyzes and builds the dependencies tree depending on the language and package manager for the Project, as well as the location of the Project.
+Snyk analyzes and builds the dependency tree depending on the language and package manager for the Project, as well as the location of the Project.
 
 ### How Snyk for Open Source and licensing works
 
@@ -14,7 +14,7 @@ Snyk analyzes and builds the dependencies tree depending on the language and pac
 Before testing your Open Source Project for vulnerabilities, with limited exceptions, you must build your Project. For details, see [Open Source Projects that must be built before testing with the Snyk CLI](../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md).
 {% endhint %}
 
-Snyk builds a dependency graph and (dependencies tree) and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.
+Snyk builds a dependency graph and (dependency tree) and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.
 
 ### Snyk policies in Open Source
 
@@ -41,7 +41,7 @@ Snyk Code automatically excludes the following files from analysis:
 
 The analysis is available only for files with names shorter than or equal to 255 characters. If the filename exceeds this limit, you receive an error. To ensure that all files are being analyzed, Snyk recommends shortening long filenames.
 
-### Framework support&#x20;
+### Framework support
 
 To support a specific framework, Snyk Code must both support the relevant language and be trained on Projects using the framework. The found patterns are then annotated by the security team and extended by curated content.
 
@@ -71,7 +71,7 @@ Snyk continuously expands its framework coverage and improves analysis accuracy.
 
 Snyk scans your codebase following this sequence:
 
-1. The source code is analyzed, generating an event graph. The event graph is similar to a code map that helps Snyk understand how different parts of the code are related. There are two node types, each node in the graph representing something that happens in the code. Some represent parts of the code, and others represent how the code is used.
+1. The source code is analyzed to generate an event graph. The event graph is similar to a code map, helping Snyk understand how different parts of the code are related. There are two node types, each node in the graph representing something that happens in the code. Some represent parts of the code, and others represent how the code is used.
 2. Rules are run against the event graph to find matches. The rules act as a checklist of known vulnerabilities that Snyk looks for in the event graph.
 3. If a match is found, Snyk looks for a vulnerability in the event graph, identifying where problems might be hiding in the code.
 
@@ -79,7 +79,7 @@ For more information, see [Snyk Code AI Engine](../scan-with-snyk/snyk-code/#ai-
 
 ## Language support and CLI, CI/CD, and SCM integrations
 
-Snyk supports a variety of programming languages, enabling seamless integration into your development workflow through CLI commands, CI/CD pipelines, and SCM integrations.&#x20;
+Snyk supports a variety of programming languages, enabling seamless integration into your development workflow through CLI commands, CI/CD pipelines, and SCM integrations.
 
 You can use these tools to automatically check your code for security issues as you develop your software. This ensures that strong security practices are part of your development process.
 

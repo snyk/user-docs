@@ -25,7 +25,7 @@ Snyk supports any AI agent and ADE that integrates with a local MCP server and o
 
 Snyk provides a general setup guide with instructions applicable to all coding assistants. To learn more, visit [Getting started with Snyk Studio](getting-started-with-snyk-studio.md).
 
-To learn about Snyk directives which govern agent behavior and are automatically injected into agent interactions, visit [Guardrail Directives](directives.md#guardrail-directives). To learn about Snyk directives which can be manually invoked by human developers or AI agents, visit [Command Directives](directives.md#command-directives).
+To learn about Snyk directives, which govern agent behavior and are automatically injected into agent interactions, visit [Guardrail Directives](directives.md#guardrail-directives). To learn about Snyk directives, which can be manually invoked by human developers or AI agents, visit [Command Directives](directives.md#command-directives).
 
 Snyk Studio supports large-scale distribution and centralized governance. For guidance on how to handle scaling across your organization, visit [Distribution at scale](distribution-at-scale.md).
 
