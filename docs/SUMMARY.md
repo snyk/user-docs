@@ -91,7 +91,7 @@
 * [Technical specifications and guidance](supported-languages/technical-specifications-and-guidance.md)
 * [Supported languages list](supported-languages/supported-languages-list/README.md)
   * [Apex](supported-languages-package-managers-and-frameworks/apex.md)
-  * [Bazel](supported-languages/supported-languages-list/bazel.md)
+  * [Bazel](scan-with-snyk/snyk-open-source/snyk-for-bazel/README.md)
   * [C/C++](supported-languages/supported-languages-list/c-c++.md)
   * [COBOL](supported-languages/supported-languages-list/cobol.md)
   * [Dart and Flutter](supported-languages/supported-languages-list/dart-and-flutter.md)

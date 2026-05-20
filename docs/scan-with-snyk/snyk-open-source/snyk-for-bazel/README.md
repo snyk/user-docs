@@ -28,14 +28,14 @@ The Dep Graph API requires specific permissions. If you do not have access, cont
 
 You can test Bazel dependencies across any supported ecosystem, except C++, which is not supported by these endpoints.
 
-Use the Snyk Dep Graph API endpoints [Test Dep Graph](../../snyk-api/reference/test-v1.md) and [Monitor Dep Graph](../../snyk-api/reference/monitor-v1.md) to test and monitor dependencies managed by Bazel. The monitor capability allows you to submit a tree for Snyk to monitor for vulnerabilities.
+Use the Snyk Dep Graph API endpoints [Test Dep Graph](../../../snyk-api/reference/test-v1.md) and [Monitor Dep Graph](../../../snyk-api/reference/monitor-v1.md) to test and monitor dependencies managed by Bazel. The monitor capability allows you to submit a tree for Snyk to monitor for vulnerabilities.
 
 ### Test and monitor dependencies
 
 To integrate Snyk into your Bazel workflow, follow these steps to manually generate and submit a dependency graph to the Snyk API:
 
 1. Create a [Dep Graph JSON object](https://github.com/snyk/dep-graph) listing all the dependency packages and versions for each type of dependency (for example, Maven or CocoaPods).
-2. Send the Dep Graph JSON object as a POST request to the Test Dep Graph endpoint, along with your [auth token](../../snyk-api/authentication-for-api/), as part of a Bazel test rule.
+2. Send the Dep Graph JSON object as a POST request to the Test Dep Graph endpoint, along with your [auth token](../../../snyk-api/authentication-for-api/), as part of a Bazel test rule.
 3. Check the API response for pass or fail status and any resulting vulnerabilities.
 
 For example:
