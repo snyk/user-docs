@@ -24,7 +24,7 @@ Before you can deploy the Kubernetes connector in your Kubernetes clusters, ensu
 
 ### Create a Snyk Organization
 
-If you create a separate Organization for the Kubernetes connector, follow the steps in the Snyk documentation to [create a Snyk Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/organizations/create-and-delete-organizations#create-an-organization). The new Snyk Organization must be in the same Snyk Group as your other Snyk Organization.
+If you create a separate Organization for the Kubernetes connector, follow the steps in the Snyk documentation to [create a Snyk Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations/create-and-delete-organizations#create-an-organization). The new Snyk Organization must be in the same Snyk Group as your other Snyk Organization.
 
 If you are not creating a separate Snyk Organization, continue with the next step.
 

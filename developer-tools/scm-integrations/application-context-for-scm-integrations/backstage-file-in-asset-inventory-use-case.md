@@ -19,7 +19,7 @@ The backstage data is dynamic and may change over time:
 * If the`catalog-info.yaml` file is removed from the repository, then Snyk Essentials deletes the asset attribute from that specific repository assets.
 
 {% hint style="info" %}
-You can use quotes (`""`) to escape keys that contain periods (`.`), for example`"`[`example.com`](http://example.com/)`".owner`.
+You can use quotes (`""`) to escape keys that contain periods (`.`), for example `"example.com".owner`.
 {% endhint %}
 
 ## Inventory menu and the backstage file

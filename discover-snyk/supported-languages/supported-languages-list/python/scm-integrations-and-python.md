@@ -25,7 +25,7 @@ The behavior of imports, re-tests, and PR checks for Projects with dependencies 
 * Python 2.7 or 3.7: scans will succeed, but the incompatible dependencies are omitted from the results.
 {% endhint %}
 
-To define which Python minor version Snyk uses to test your Pip Projects imported using SCM integrations, you can use Organization settings and [`.snyk` policy file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/policies/the-.snyk-file).
+To define which Python minor version Snyk uses to test your Pip Projects imported using SCM integrations, you can use Organization settings and [`.snyk` policy file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file).
 
 To define the Python version for all Projects in an Organization:
 

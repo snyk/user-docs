@@ -24,7 +24,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * The `snyk_package_health_check` directive is now available for the Full profile on the [Directives](integrations/snyk-studio-agentic-integrations/directives.md#secure-at-inception-package-health-check-experimental) page.
 * CISA KEV has been added to the list of filters available in [Issue vulnerability details](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/issue-columns-dictionary#issue-vulnerability-details).
 * The [PR Checks Report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/prevention-reports#pull-request-checks-usage-and-performance-report) is now General Available, with updates to Prevention Reports, Export API, and Snowflake Data Share.
-* The [Pull Request experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience#pull-request-experience-feature-requirements) documentation has been updated to reflect that if you are using inline comments or Agent Fix, you must now specify a dedicated GitHub account by providing a GitHub Personal Access Token (PAT) in your integration settings.
+* The [Pull Request experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/pull-request-experience#pull-request-experience-feature-requirements) documentation has been updated to reflect that if you are using inline comments or Agent Fix, you must now specify a dedicated GitHub account by providing a GitHub Personal Access Token (PAT) in your integration settings.
 * The [Enterprise implementation guide](implementation-and-setup/enterprise-implementation-guide/) now has embedded video tutorials to guide you in your Enterprise setup as a new user of Snyk.
 * The [High availability mode](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/high-availability-mode) from Snyk Broker is now enabled by default.
 * The [Container registry sync](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/use-snyk-container/sync-your-container-registry) from Snyk Container is now Generally Available.&#x20;
@@ -259,7 +259,7 @@ The most recent updates include significant changes to the user docs, such as fe
 #### **Other updates**
 
 * A new [Risk exposure report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/exposure-and-coverage-reports#risk-exposure-report) has been released, providing you with a single, consolidated view of your security risks.
-* The rollout to General Availability has started for the [Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience).
+* The rollout to General Availability has started for the [Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/pull-request-experience).
 * The [Operating system distributions supported by Snyk Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container) now includes Debian 14 - Forky.
 * Snyk now supports [Ruby versions](supported-languages/supported-languages-list/ruby.md#technical-specifications) 3.3 \[3.3.9] and 3.4 \[3.4.5]. If the Ruby version is not specified in the gemfile, it will default to version 3.1.
 
@@ -295,8 +295,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### **Snyk integrations**
 
-* [Snyk Agent Fix in the PR](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience#snyk-agent-fix-in-the-pr) has added support for Bitbucket integrations, still in Early Access.
-* The [minimum version](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/configure-pull-request-checks) of Bitbucket Server and Bitbucket Data Center required to use the integrations with PR checks has been updated to 7.4 and 8 respectively.
+* [Snyk Agent Fix in the PR](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/pull-request-experience#snyk-agent-fix-in-the-pr) has added support for Bitbucket integrations, still in Early Access.
+* The [minimum version](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/configure-pull-request-checks) of Bitbucket Server and Bitbucket Data Center required to use the integrations with PR checks has been updated to 7.4 and 8 respectively.
 
 #### **Snyk Open Source**
 
@@ -323,7 +323,7 @@ The most recent updates include significant changes to the user docs, such as fe
 * [Usage settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/usage-settings) has been updated with the new **Billing and Usage** dashboard, available with the new Snyk Platform Access plan.
 * [Snyk Platform Access credits](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/snyk-platform-access-credits) has been added with brief information on the new Snyk Platform Access plan.
 * The troubleshooting sections for all [Snyk IDE plugins](developer-tools/snyk-ide-plugins-and-extensions/), have been updated to include clear steps for working with the Logs details, which are available across all plugins.
-* A new feature, the [Snyk Agent Fix in the PR](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience#snyk-agent-fix-in-the-pr), has been released, enabling the user to interact with inline comments by requesting an initial fix or a different suggestion, or by applying a specific fix by using the `@snyk /apply #` command.
+* A new feature, the [Snyk Agent Fix in the PR](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/pull-request-experience#snyk-agent-fix-in-the-pr), has been released, enabling the user to interact with inline comments by requesting an initial fix or a different suggestion, or by applying a specific fix by using the `@snyk /apply #` command.
 * [Consistent Ignores](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/) for Snyk Code now fully supports CLI Upload.
 * The page on Docker Desktop Extension integration has been removed, due to the end of support.
 
@@ -423,13 +423,13 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 #### **Snyk Code**
 
 * The Generated Pull Requests report is now available in Early Access. This report provides an overview of how Fix, Backlog, and Upgrade PRs are used and highlights the efficiency of PR merges.
-* [The Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience) now supports GitLab and Azure Repos SCM integrations, with a few [limitations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience#inline-comments).
+* [The Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/pull-request-experience) now supports GitLab and Azure Repos SCM integrations, with a few [limitations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/pull-request-experience#inline-comments).
 * New Snyk Code filters and columns were added to [Snyk Reports](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/issue-columns-dictionary#issue-characteristics) and [Snowflake Data Share](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary): File Path, Code Region, and Asset Finding ID.
 * Snyk Code now supports [Rust](supported-languages/supported-languages-list/rust.md) and [Groovy](supported-languages/supported-languages-list/groovy.md) available in Early Access and accessible from Snyk Preview.
 
 #### Snyk Essentials
 
-* A new feature is now available in Snyk Essentials, introducing a new type of [asset tag](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/policies/assets-policies#asset-tagging) known as GitHub custom properties.
+* A new feature is now available in Snyk Essentials, introducing a new type of [asset tag](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/assets-policies#asset-tagging) known as GitHub custom properties.
 * [Asset tags](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-assets/assets-inventory-components#tags) have been redefined and are now clearly separated into system tags and user-defined tags.
 
 #### **Snyk Integrations**
@@ -449,12 +449,12 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 * The Integrations UI at the Group level has been enhanced to improve readability and actionability and provide inline instructions and inline profile helpers.
 * Group-level [Integrations documentation](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk#integrations-syncing-time) has been updated with new, more accurate sync times.
-* The [asset filter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/policies/assets-policies/create-policies) documentation has been consolidated into one section, and it now links to all relevant areas, such as Inventory and Asset Policy filters.
+* The [asset filter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/assets-policies/create-policies) documentation has been consolidated into one section, and it now links to all relevant areas, such as Inventory and Asset Policy filters.
 
 #### Other updates
 
 * A new [Automated Provisioning guide](implementation-and-setup/enterprise-setup/auto-provisioning-guide.md) has been created for **Pilot** and **Enterprise** **users**, detailing the steps of the auto-provisioning process for new and existing user accounts.
-* [Snyk Code PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/configure-pull-request-checks#configure-for-code-analysis-click-to-expand) are in General Availability.
+* [Snyk Code PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/configure-pull-request-checks#configure-for-code-analysis-click-to-expand) are in General Availability.
 
 </details>
 
@@ -493,9 +493,9 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 #### **Other updates**
 
-* The Pull Request Checks section has been updated to include the new [Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/pull-request-checks/pull-request-experience) for PR Checks.
+* The Pull Request Checks section has been updated to include the new [Pull Request Experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/pull-request-experience) for PR Checks.
 * The [Supported languages](supported-languages/supported-languages-package-managers-and-frameworks.md) page has been reorganized to provide detailed information about language availability for each Snyk product. Additionally, it provides a list of package managers, frameworks, and features for each supported language.
-* A service account using OAuth 2.0 can now be [created through the Snyk Web UI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/service-accounts-using-oauth-2.0#create-oauth-service-accounts-through-the-ui).
+* A service account using OAuth 2.0 can now be [created through the Snyk Web UI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts-using-oauth-2.0#create-oauth-service-accounts-through-the-ui).
 * The [API index ](snyk-api/api-endpoints-index-and-tips/)now includes entries for each endpoint mentioned in the Snyk user docs.
 * The [Developer IDE and CLI usage report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/prevention-reports#developer-ide-and-cli-usage-report) has been enhanced with additional functionalities: **Developer email address** and **PDF export**.
 * The [Vulnerabilities Detail report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/remediation-reports#vulnerabilities-detail-report) has been enhanced with additional functionalities, such as **Target indication** and **Column picker**.

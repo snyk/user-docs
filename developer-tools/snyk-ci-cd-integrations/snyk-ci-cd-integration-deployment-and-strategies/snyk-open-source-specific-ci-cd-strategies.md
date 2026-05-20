@@ -38,7 +38,7 @@ An example command follows to scan only the packages that belong to any discover
 snyk test --yarn-workspaces --detection-depth=6
 ```
 
-You can use a common [`.snyk` policy file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/policies/the-.snyk-file) if you maintain ignores and patches in one place to be applied for all detected workspaces by providing the policy path as follows:
+You can use a common [`.snyk` policy file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file) if you maintain ignores and patches in one place to be applied for all detected workspaces by providing the policy path as follows:
 
 ```
 snyk test --yarn-workspaces --policy-path=src/.snyk

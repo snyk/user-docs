@@ -51,7 +51,7 @@ The provisioning app is only accessible through a unique link, all other access 
 
 The company name you enter here will be used to create the [Tenant](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/tenant), the top-level instance you'll see in the Snyk Platform. It is a required field and has 60-character limit.
 
-Provisioning will also create a [Group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/groups) and a default [Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/organizations) using the same name.
+Provisioning will also create a [Group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups) and a default [Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations) using the same name.
 
 ### Step 2: Choose where to host the account
 

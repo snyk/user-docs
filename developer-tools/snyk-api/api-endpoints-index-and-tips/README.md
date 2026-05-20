@@ -274,7 +274,7 @@ The View Project History permission is needed to use this API.
 ### [List all roles in a group](../reference/groups-v1.md#group-groupid-roles)
 
 **More information:** [Update member roles using the API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-management-with-the-api/update-member-roles-using-the-api);\
-[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [List all organizations in a group](../reference/groups-v1.md#group-groupid-orgs)
 
@@ -319,7 +319,7 @@ The View Project History permission is needed to use this API.
 
 ## Ignores (v1)
 
-**More information:** [Snyk test and snyk monitor in CI/CD integration](../../developer-tools/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+**More information:** [Snyk test and snyk monitor in CI/CD integration](../../snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ### [List all ignores](../reference/ignores-v1.md#org-orgid-project-projectid-ignores)
 
@@ -343,7 +343,7 @@ A typical import starts with using the endpoint [Import targets](../reference/im
 
 Note that the `target.owner` is case-sensitive.
 
-For information on when and how you can use Import targets, see [Gain visibility by importing repositories](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide/phase-3-gain-visibility) in the Enterprise implementation guide.
+For information on when and how you can use Import targets, see [Gain visibility by importing repositories](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/phase-3-gain-visibility) in the Enterprise implementation guide.
 
 If a call to the Import targets endpoint fails, use [Get import job detail](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)s to help determine why. There are two types of failures:
 
@@ -401,7 +401,7 @@ The poll results return a message per manifest processed, either `success: true`
 
 ### [Clone an integration (with settings and credentials)](../reference/integrations-v1.md#org-orgid-integrations-integrationid-clone)
 
-**More information:** [Prepare Snyk Broker for deployment](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment);\
+**More information:** [Prepare Snyk Broker for deployment](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment);\
 [Obtain the required tokens for setup](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker);\
 Scenario: [Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
@@ -429,7 +429,7 @@ See also [Invite users](../reference/organizations-v1.md#org-orgid-invite).
 
 **More information:** [Dart and Flutter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/dart-and-flutter);\
 [Rust](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/rust):\
-[Guidance for Snyk for C++ page, Alternate testing options section](/broken/pages/11FkFB7EPbsM1mTkFvJ0#alternate-testing-options);\
+[Guidance for Snyk for C++ page, Alternate testing options section](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/c-c++#cli-options);\
 [Guidance for Java and Kotlin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin);\
 [Guidance for JavaScript and Node.js](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#unmanaged-javascript);\
 [List issues for a package page](../using-specific-snyk-apis/issues-list-issues-for-a-package.md)
@@ -459,12 +459,12 @@ Additional information: [Reachability](https://app.gitbook.com/o/-M4tdxG8qotLgGZ
 
 ### [List all jira issues](../reference/jira-v1.md#org-orgid-project-projectid-jira-issues)
 
-**More information:** [Jira integration](../../integrations/jira-and-slack-integrations/jira-integration.md); [Snyk test and snyk monitor in CI/CD integration](../../developer-tools/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+**More information:** [Jira integration](../../integrations/jira-and-slack-integrations/jira-integration.md); [Snyk test and snyk monitor in CI/CD integration](../../snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ### [Create jira issue](../reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issuev)
 
 **More information:** [Jira integration](../../integrations/jira-and-slack-integrations/jira-integration.md);\
-[Snyk test and snyk monitor in CI/CD integration](../../developer-tools/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+[Snyk test and snyk monitor in CI/CD integration](../../snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ## Licenses (v1)
 
@@ -487,7 +487,7 @@ Additional information: [Reachability](https://app.gitbook.com/o/-M4tdxG8qotLgGZ
 
 ### [Create a new organization](../reference/organizations-v1.md#org)
 
-**More information:** [Create a template Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide/create-a-template-organization)\
+**More information:** [Create a template Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/create-a-template-organization)\
 [api-import: Creating organizations in Snyk](../../scan-with-snyk/snyk-tools/tool-snyk-api-import/creating-organizations-in-snyk.md);\
 [Scenario: Create multiple new Organizations that all have the same settings in a given Group](scenarios-for-using-the-snyk-api.md#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
 
@@ -658,7 +658,7 @@ The query-string parameter for types is optional. The endpoint does not enforce 
 
 ### [Create or update pull request template for group](../reference/pull-request-templates.md#groups-group_id-settings-pull_request_template)
 
-**More information:** [Create and manage a custom PR template using the API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template#create-and-manage-a-custom-pr-template-using-the-api)
+**More information:** [Create and manage a custom PR template using the API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template#create-and-manage-a-custom-pr-template-using-the-api)
 
 ### [Get pull request template for group](../reference/pull-request-templates.md#groups-group_id-settings-pull_request_template-1)
 
@@ -672,7 +672,7 @@ The V1 Reporting API underlies Snyk legacy reporting. Using the V1 Reporting API
 
 The rate limit is up to 70 requests per minute, per user. For all requests above the limit, the response will have the status code `429: Too many requests`, until requests stop for the duration of the rate-limiting interval (one minute). For more information see [Rate limiting for V1 API](../v1-api.md#rate-limiting).
 
-**More information:** [Dependencies and licenses](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/dependencies-and-licenses)
+**More information:** [Dependencies and licenses](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/dependencies-and-licenses)
 
 ### [Get list of issues](../reference/reporting-api-v1.md#reporting-issues)
 
@@ -721,63 +721,63 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ### [Enable/Disable the Snyk Code settings for an org](../reference/sastsettings.md#orgs-org_id-settings-sast)
 
-**More information:** [Enable Snyk Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code)
+**More information:** [Enable Snyk Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/create-a-template-organization/connect-your-development-tools#enable-snyk-code)
 
 ### [Retrieves the SAST settings for an org](../reference/sastsettings.md#orgs-org_id-settings-sast-1)
 
 ## ServiceAccounts
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api); [Choose a service account type to use with Snyk APIs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api); [Choose a service account type to use with Snyk APIs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis)
 
 ### [Create a service account for an organization](../reference/serviceaccounts.md#orgs-org_id-service_accounts)
 
-**More information:** [Service accounts using OAuth 2.0](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/service-accounts-using-oauth-2.0);\
-[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Service accounts using OAuth 2.0](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts-using-oauth-2.0);\
+[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Get a list of organization service accounts](../reference/serviceaccounts.md#orgs-org_id-service_accounts-1)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Update an organization service account](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Get an organization service account](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id-1)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Delete a service account in an organization](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id-2)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Manage an organization service account’s client secret](../reference/serviceaccounts.md#orgs-org_id-service_accounts-serviceaccount_id-secrets)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Create a service account for a group](../reference/serviceaccounts.md#groups-group_id-service_accounts)
 
-**More information:** [Service accounts using OAuth 2.0](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/service-accounts-using-oauth-2.0);\
-[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Service accounts using OAuth 2.0](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts-using-oauth-2.0);\
+[Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Get a list of group service accounts](../reference/serviceaccounts.md#groups-group_id-service_accounts-1)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Update a group service account](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Get a group service account](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id-1)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Delete a group service account](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ### [Manage a group service account’s client secret](../reference/serviceaccounts.md#groups-group_id-service_accounts-serviceaccount_id-secrets)
 
-**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts/manage-service-accounts-using-the-snyk-api)
+**More information:** [Manage service accounts using the Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/manage-service-accounts-using-the-snyk-api)
 
 ## SlackSettings
 
@@ -930,4 +930,3 @@ Note: Use this endpoint to remove users from a group.
 
 ### [Ping a webhook](../reference/webhooks-v1.md#org-orgid-webhooks-webhookid-ping)
 
-\\

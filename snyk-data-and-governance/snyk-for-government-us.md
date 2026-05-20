@@ -57,5 +57,5 @@ See [Single Sign-On (SSO) for authentication to Snyk](https://app.gitbook.com/o/
 * Outbound webhooks
 * Session Concurrency is limited to three (3) sessions per user.
 * Session lockout: After sessions expire, the signed-in user loses access to all data present in existing session windows.
-* Session timeout: The default session timeout is shorter (15 minutes). See [Configure session length for a Snyk Group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/groups/configure-session-length-for-a-snyk-group) for details.
+* Session timeout: The default session timeout is shorter (15 minutes). See [Configure session length for a Snyk Group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups/configure-session-length-for-a-snyk-group) for details.
 * [Snyk CLI docker images](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli#docker). These do not support FIPS-validated cryptography and should only be used when this can be accepted.

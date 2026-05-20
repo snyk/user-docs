@@ -14,7 +14,7 @@ Enterprise users have [access to a personal access token under their profile](./
 
 * **Enterprise users should use a service account** to authenticate for any kind of automation. This includes, but is not limited to, CI/CD scanning with the CLI or build system plugins and any automation, including automation with the API. Using a service account ensures continuity when users change roles or close their personal Snyk accounts.
 * **Enterprise users should use the personal token** under their user profile for:
-  * Running the CLI locally on their machine; for details, see [Authenticate to use the CLI](../../developer-tools/snyk-cli/authenticate-to-use-the-cli.md).
+  * Running the CLI locally on their machine; for details, see [Authenticate to use the CLI](../../snyk-cli/authenticate-to-use-the-cli.md).
   * Authenticating with the IDE manually
   * Running API calls one time, for example, to test something
 
