@@ -15,7 +15,7 @@ The Snyk Consultant delivers the following Jumpstart Basic Services for remote S
 1. [Pre-engagement planning and preparation](snyk-jumpstart-basic-services-description.md#pre-engagement-planning-and-preparation)
    1. Review deliverables per product module
    2. Review prerequisites per product module
-   3. Confirm availability for Customer contacts based on [Customer prerequisites](snyk-jumpstart-customer-prerequisites)
+   3. Confirm availability for Customer contacts based on [Customer prerequisites](snyk-jumpstart-customer-prerequisites.md)
 2. [Snyk Platform configuration](snyk-jumpstart-basic-services-description.md#snyk-platform-configuration)
 3. [Snyk Open Source configuration](snyk-jumpstart-basic-services-description.md#snyk-open-source-configuration)
 4. [Snyk Code configuration](snyk-jumpstart-basic-services-description.md#snyk-code-configuration)
@@ -24,7 +24,7 @@ The Snyk Consultant delivers the following Jumpstart Basic Services for remote S
 
 ## Pre-engagement planning and preparation
 
-Review the [prerequisites](snyk-jumpstart-customer-prerequisites), including resources, availability, and deliverables for each product module, before starting your services. You are responsible for meeting these prerequisites. Snyk is not responsible for delays or undelivered Jumpstart Basic Services if you do not meet these prerequisites.
+Review the [prerequisites](snyk-jumpstart-customer-prerequisites.md), including resources, availability, and deliverables for each product module, before starting your services. You are responsible for meeting these prerequisites. Snyk is not responsible for delays or undelivered Jumpstart Basic Services if you do not meet these prerequisites.
 
 ## Snyk Platform configuration
 
@@ -82,7 +82,7 @@ A Snyk consultant educates you on understanding Snyk Open Source results through
 
 ### Target initiatives
 
-<table><thead><tr><th width="300">Snyk Open Source configuration</th><th width="306">Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrationss">supported SCM integration</a> (GitHub, Azure Repos, Bitbucket, GitLab) or Snyk CLI</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to your gating settings.</td></tr><tr><td>Single pipeline configuration (direct integration OR CLI)</td><td>Configure a pipeline to run <code>snyk test</code> and <code>snyk monitor</code>.</td></tr><tr><td>Interpreting and actioning Open Source results</td><td>View open-source results and manage issues in the Reports option.</td></tr></tbody></table>
+<table><thead><tr><th width="300">Snyk Open Source configuration</th><th width="306">Outcome</th></tr></thead><tbody><tr><td>Repository import (one SCM integration)</td><td>Import a maximum of 50 targets into Snyk using a <a href="https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations">supported SCM integration</a> (GitHub, Azure Repos, Bitbucket, GitLab) or Snyk CLI</td></tr><tr><td>SCM integration settings</td><td>Configure SCM integration settings to your gating settings.</td></tr><tr><td>Single pipeline configuration (direct integration OR CLI)</td><td>Configure a pipeline to run <code>snyk test</code> and <code>snyk monitor</code>.</td></tr><tr><td>Interpreting and actioning Open Source results</td><td>View open-source results and manage issues in the Reports option.</td></tr></tbody></table>
 
 ## Snyk Code configuration
 
