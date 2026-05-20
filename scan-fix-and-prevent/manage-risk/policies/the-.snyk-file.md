@@ -64,7 +64,7 @@ For details, see [Excluding directories and files from the import process](../..
 
 ## Use the `.snyk` file with Snyk IaC
 
-For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file). For more information, see [Ignore unmanaged resources](../../scan-with-snyk/snyk-iac/detect-manually-created-resources/ignore-unmanaged-resources.md).
+For IaC ignore rules, see [IaC ignores using the `.snyk` policy file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file). For more information, see [Ignore unmanaged resources](../../scan-with-snyk/snyk-iac/detect-manually-created-resources/ignore-unmanaged-resources.md).
 
 ## Use the `.snyk` file with Snyk Open Source
 
@@ -91,7 +91,7 @@ For more information about Python version support, see [Python version support](
 
 For more information about using the `.snyk` file with Open Source Projects, see the following:
 
-[Ignore vulnerabilities using the Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli)
+[Ignore vulnerabilities using the Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli)
 
 [Error message: Ignoring via the CLI is not enabled for this organization. Please ignore issues via our website](https://support.snyk.io/s/article/Error-message-Ignoring-via-the-CLI-is-not-enabled-for-this-organization-Please-ignore-issues-via-our-website)
 

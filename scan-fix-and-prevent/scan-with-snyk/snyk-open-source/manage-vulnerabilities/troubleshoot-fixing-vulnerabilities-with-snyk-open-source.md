@@ -1,6 +1,6 @@
 # Troubleshoot fixing vulnerabilities with Snyk Open Source
 
-When you find a vulnerability, you have the opportunity to report that vulnerability to Snyk. For details, see [Disclosure of a vulnerability in an open-source package](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/disclosure-of-a-vulnerability-in-an-open-source-package).
+When you find a vulnerability, you have the opportunity to report that vulnerability to Snyk. For details, see [Disclosure of a vulnerability in an open-source package](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/disclosure-of-a-vulnerability-in-an-open-source-package).
 
 ## Unable to open a pull request or merge request for issues found by Snyk
 

@@ -86,7 +86,7 @@ This section focuses on pull request outcomes and how broadly PR scanning is ena
 
 #### PR scanning by
 
-Viewing the **Last Commit** data when viewing by repository requires [SCM Group integration](../../../developer-tools/scm-integrations/group-level-integrations/).
+Viewing the **Last Commit** data when viewing by repository requires [SCM Group integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations).
 
 PR check enablement for all targets and projects imported through an integration is determined by the settings for that integration unless those settings are overridden at the project-level. A repository is considered enabled for PR checks for a specific Snyk product if at least one organization importing that repository has PR Checks enabled for all projects associated with that product type for at least one integration.
 
@@ -145,7 +145,7 @@ Compare these lines to determine if CI/CD testing adoption is increasing and to 
 You can filter by specific products or by specific organizations or extend the viewed period using the date range filter.
 
 {% hint style="info" %}
-You must configure SCM Group integration to view the last commit data. For more information, see [SCM integrations](../../../developer-tools/scm-integrations/group-level-integrations/).
+You must configure SCM Group integration to view the last commit data. For more information, see [SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations).
 {% endhint %}
 
 #### Test Success Rate Trend <a href="#test-success-rate-trend" id="test-success-rate-trend"></a>
@@ -155,7 +155,7 @@ The test success rate indicates how well your engineering department or specific
 A low success rate can indicate the following:
 
 * Snyk tests fail due to security issues you can prevent in local development or pull request checks. Snyk recommends you test with the Snyk IDE plugin, use Snyk PR Checks, and enroll in a Snyk Learn program.
-* The test success criteria are too strict. Review the test definitions for organizations with the lowest success rates in the **Adoption by Organizations** widget. For more information about defining test success criteria, see [Failing of builds in Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli).
+* The test success criteria are too strict. Review the test definitions for organizations with the lowest success rates in the **Adoption by Organizations** widget. For more information about defining test success criteria, see [Failing of builds in Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli).
 
 #### Adoption by Organizations <a href="#adoption-by-organizations" id="adoption-by-organizations"></a>
 
@@ -176,7 +176,7 @@ The **Repository test summary** table displays the tests performed during the se
 By default, the table sorts repositories by their last commit. This helps you identify repositories expected to undergo CI/CD testing and verify Snyk tested them. Click a column name to sort the table by that column. You can sort by multiple columns simultaneously.
 
 {% hint style="info" %}
-You must configure SCM Group integration to view the last commit data. For more information, see [Group-level integrations](../../../developer-tools/scm-integrations/group-level-integrations/).
+You must configure SCM Group integration to view the last commit data. For more information, see [Group-level integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations).
 {% endhint %}
 
 You can execute tests on a specific repository branch from the table. The **TESTED** indicator shows that Snyk tested at least one branch of this repository during the selected date range. Hover over the **TESTED** tag to view the last test performed during the selected date range.

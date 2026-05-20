@@ -54,7 +54,7 @@ Snyk provides a report for Enterprise customers that gives an overview of how [F
 
 ## Snyk SCM webhooks
 
-To track pull request events, Snyk adds webhooks to your imported repositories. For more information, see the [GitHub and Git repository integrations](../../../developer-tools/scm-integrations/organization-level-integrations/).
+To track pull request events, Snyk adds webhooks to your imported repositories. For more information, see the [GitHub and Git repository integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
 
 Snyk uses these webhooks to:
 

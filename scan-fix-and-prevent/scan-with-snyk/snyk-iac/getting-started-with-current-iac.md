@@ -1,6 +1,6 @@
 # Getting started with Snyk IaC
 
-You can use Snyk IaC (Infrastructure as Code) in the Snyk Web UI to find, view, and fix issues in configuration files. You can also use Snyk IaC in the Snyk CLI. For details, see [Snyk CLI for Infrastructure as Code](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/).
+You can use Snyk IaC (Infrastructure as Code) in the Snyk Web UI to find, view, and fix issues in configuration files. You can also use Snyk IaC in the Snyk CLI. For details, see [Snyk CLI for Infrastructure as Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac).
 
 On this page, you will find steps to find, view, and fix issues in configuration files for the supported environments: [Terraform](scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](scan-your-iac-source-code/scan-kubernetes-configuration-files/), including Helm, and [Azure Resource Manager (ARM)](scan-your-iac-source-code/scan-arm-configuration-files.md). These steps are specific to the current IaC.
 
@@ -8,9 +8,9 @@ On this page, you will find steps to find, view, and fix issues in configuration
 
 Before using Snyk IaC, be sure you have the prerequisites as follows:
 
-* A Snyk account. For details, see [Getting started](../../discover-snyk/getting-started/).
+* A Snyk account. For details, see [Getting started](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started).
 * An existing Terraform, CloudFormation, Kubernetes, or ARM environment to work in.
-* A Git repository you have integrated with Snyk in the same way as for other Snyk products. For details, see [Git repository (SCM)](../../developer-tools/scm-integrations/organization-level-integrations/).
+* A Git repository you have integrated with Snyk in the same way as for other Snyk products. For details, see [Git repository (SCM)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
 
 For more information about IaC and supported environments, see the following pages:
 

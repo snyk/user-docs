@@ -11,7 +11,7 @@ Snyk uses contextual signals, such as code reachability and deployment environme
 * [Exploit maturity](prioritize-issues-for-fixing/view-exploits.md): Track and display real-world exploits of a vulnerability, including active attacks or proof-of-concept, and prioritize fixes based on proven, active threats.
 * [Malicious packages](prioritize-issues-for-fixing/malicious-packages.md): Malicious dependencies are an increasingly common method for executing software supply chain attacks.&#x20;
 * [Severity levels](prioritize-issues-for-fixing/severity-levels.md): Snyk categorizes vulnerabilities into Critical, High, Medium, or Low. These levels are based on industry-standard scoring frameworks (like CVSS and CCSS) to quickly communicate the potential impact and risk of an exploit.
-* [Application Context](../developer-tools/scm-integrations/application-context-for-scm-integrations/): Bring the application context with [Assets and risk factors](prioritize-issues-for-fixing/assets-and-risk-factors/), and [Set up Insights](prioritize-issues-for-fixing/set-up-insights/).
+* [Application Context](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/application-context-for-scm-integrations): Bring the application context with [Assets and risk factors](prioritize-issues-for-fixing/assets-and-risk-factors/), and [Set up Insights](prioritize-issues-for-fixing/set-up-insights/).
 
 ## Snyk Policies
 

@@ -2,7 +2,7 @@
 
 ## Conditions
 
-To use Snyk Code in an [IDE](../../developer-tools/snyk-ide-plugins-and-extensions/), [Snyk CLI](../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/), and [Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/snyk-api), you must perform the following actions:
+To use Snyk Code in an [IDE](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions), [Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code), and [Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/snyk-api), you must perform the following actions:
 
 1. [Enable Snyk Code in Snyk Web UI](configure-snyk-code.md#enable-snyk-code-in-snyk-web-ui)
 2. [Integrate Git repository with Snyk](configure-snyk-code.md#integrate-git-repository-with-snyk)
@@ -14,7 +14,7 @@ Snyk Code only scans and tests new repositories that are imported to Snyk. If a 
 
 Before scanning your code with Snyk Code, ensure the following:
 
-* You have completed the steps to [Getting started](../../discover-snyk/getting-started/).
+* You have completed the steps to [Getting started](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started).
 * Your repositories contain code in a [supported language and platform](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
 
 ## Enable Snyk Code in Snyk Web UI
@@ -73,7 +73,7 @@ The **Source control** integrations display only SCMs that are supported by Snyk
 
 This grants Snyk access permissions for the integrated SCM.
 
-For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](../../developer-tools/scm-integrations/organization-level-integrations/).
+For more information on integrating Snyk with each of the available SCMs, see [Git repositories (SCMs)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
 
 After you have integrated the SCM with your Snyk account, you can import the repositories you want to scan using Snyk Code.
 

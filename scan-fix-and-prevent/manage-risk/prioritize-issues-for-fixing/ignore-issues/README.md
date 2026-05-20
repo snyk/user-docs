@@ -59,7 +59,7 @@ You can suppress issues through the CLI by using the `snyk ignore` command, for 
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
-For more information, see the [`ignore`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore) command help and [Ignore vulnerabilities using Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli).
+For more information, see the [`ignore`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore) command help and [Ignore vulnerabilities using Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli).
 
 When you use `snyk ignore` for Open Source, the `.snyk` policy file is updated with the path and reason given if one was provided. An example follows:
 
@@ -116,7 +116,7 @@ ignore:
 ```
 
 {% hint style="info" %}
-For more information, see [The .snyk file](../../policies/the-.snyk-file.md), including the section about [.snyk files in monorepos](../../policies/the-.snyk-file.md#use-the-.snyk-file-with-monorepos-and-complex-projects) and .[snyk files in different directories from manifest files](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file).
+For more information, see [The .snyk file](../../policies/the-.snyk-file.md), including the section about [.snyk files in monorepos](../../policies/the-.snyk-file.md#use-the-.snyk-file-with-monorepos-and-complex-projects) and .[snyk files in different directories from manifest files](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file).
 {% endhint %}
 
 ### Use policy actions to ignore issues
@@ -165,7 +165,7 @@ When scanning your IaC configuration files using `snyk iac test`, you can ignore
 
 Snyk recommends storing and versioning the `.snyk` file in the root of your working directory, where you store your IaC configuration files.
 
-For more information, see [IaC ignores using the .snyk policy file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file).
+For more information, see [IaC ignores using the .snyk policy file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file).
 
 ## Configure ignore settings
 

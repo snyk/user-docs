@@ -2,7 +2,7 @@
 
 Use Snyk IaC cloud scans to find, view, and fix issues in deployed cloud resource configurations for AWS, Azure, and Google Cloud.
 
-This page explains using cloud scans in the Snyk Web UI. For information about using cloud scans with the Snyk CLI, see [Test your IaC files](../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/test-your-iac-files/).
+This page explains using cloud scans in the Snyk Web UI. For information about using cloud scans with the Snyk CLI, see [Test your IaC files](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/test-your-iac-files).
 
 ## Prerequisites for cloud scans
 

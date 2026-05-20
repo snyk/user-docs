@@ -120,7 +120,7 @@ The Snyk Agent fix in the PR feature enables the user to request and apply fixes
 ### Exceptions
 
 * The `@snyk /fix` command can be used only for automatically fixable vulnerabilities, identified in the inline comments with a zap icon and command description. See [fix-code-vulnerabilities-automatically.md](../../snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md "mention") for supported languages and limitations.
-* Fixes expire after the time displayed in each suggestion, in accordance with the [#cache-retention-period-related-to-vulnerability-source-data](../../../snyk-data-and-governance/how-snyk-handles-your-data.md#cache-retention-period-related-to-vulnerability-source-data "mention"). After expiration, a new fix can be requested by using the `@snyk /fix` command.
+* Fixes expire after the time displayed in each suggestion, in accordance with the [#cache-retention-period-related-to-vulnerability-source-data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data#cache-retention-period-related-to-vulnerability-source-data "mention"). After expiration, a new fix can be requested by using the `@snyk /fix` command.
 * Snyk Agent fix in the PR is not supported for [Snyk Code Local Engine](../../snyk-code/snyk-code-local-engine.md).
 * The `@snyk /fix` and `@snyk /apply #` commands can be used only as replies to the Inline Comments created by Snyk, commands created on other comment threads will not be processed.
 
