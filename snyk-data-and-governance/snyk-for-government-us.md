@@ -46,7 +46,7 @@ See [Single Sign-On (SSO) for authentication to Snyk](https://app.gitbook.com/o/
 
 ## Platform features not available
 
-* [Bitbucket Cloud App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations/organization-level-integrations/bitbucket-cloud-app). Note that [Bitbucket Data Center/Server](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/scm-integrations/organization-level-integrations/bitbucket-data-center-server) integration is available.
+* [Bitbucket Cloud App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/bitbucket-cloud-app). Note that [Bitbucket Data Center/Server](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/bitbucket-data-center-server) integration is available.
 * [Slack App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/slack-app)
 * [Jira App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration). Note that [Jira Integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration) is available.
 * [Snyk Advisor](https://snyk.io/advisor/)

@@ -1,6 +1,6 @@
 # SCM integrations for JavaScript
 
-You can import JavaScript repositories from any SCM integration supported by Snyk. See [Organization level integrations](../../../developer-tools/scm-integrations/organization-level-integrations/). After the import, Snyk analyzes your Projects based on their supported manifest files.
+You can import JavaScript repositories from any SCM integration supported by Snyk. See [Organization level integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations). After the import, Snyk analyzes your Projects based on their supported manifest files.
 
 ## Configure language settings for Snyk with JavaScript
 

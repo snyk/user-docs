@@ -26,7 +26,7 @@ You should receive an email in your inbox containing links to start provisioning
 
 If you have not received this email, look into your spam folder or reach out to your account executive.
 
-This email contains two link&#x73;**:**
+This email contains two links:
 
 1. **Log in and activate your existing account** - To be used if you already have an account and wish to apply your plan to it.
 2. **Create and activate a new account** - To be used if you're entirely new to Snyk or want to start from scratch with a different user.
@@ -49,7 +49,7 @@ The provisioning app is only accessible through a unique link, all other access 
 
 ### Step 1: Enter the company name
 
-The company name you enter here will be used to create the [Tenant](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/tenant), the top-level instance you'll see in the Snyk Platform. It is a required field and has 60-character limit.
+The company name you enter here will be used to create the [Tenant](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant), the top-level instance you'll see in the Snyk Platform. It is a required field and has 60-character limit.
 
 Provisioning will also create a [Group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups) and a default [Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations) using the same name.
 
@@ -77,7 +77,7 @@ Automated provisioning is only possible for multi-tenant environments. For singl
 
 The available authentication methods are either Single sign-on (SSO) or Third-party authentication.
 
-1. **Single Sign-On** - use your company's existing identity management system, see [Single Sign-On (SSO) for authentication to Snyk](single-sign-on-sso-for-authentication-to-snyk/) for more details.
+1. **Single Sign-On** - use your company's existing identity management system, see [Single Sign-On (SSO) for authentication to Snyk](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk) for more details.
 2. **Third-party authentication** - Snyk supports a list of third-party identity providers, see [Authentication for third-party tools](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/implementation-and-setup/enterprise-setup/authentication-for-third-party-tools) for more details. This method is only available for the United States region.
 
 #### Which authentication methods are available for each region?
@@ -133,9 +133,9 @@ You can find the links for all the regions in the [Login and Web UI URLs section
 
 If you already have a Snyk User, you can choose how you activate your Enterprise plan or Pilot after logging in:
 
-* Linking the plan to an existing [Tenant](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/tenant).\
+* Linking the plan to an existing [Tenant](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant).\
   If your user is a member of multiple Tenants, you have the option to choose between them. Click the card of the Tenant you wish to select and then click "Confirm and activate".
-* Starting fresh with a new [Tenant](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/tenant) linked to your user.\
+* Starting fresh with a new [Tenant](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant) linked to your user.\
   Click "Create new Tenant account" and enter the company name. It's the same field as [#step-1-enter-the-company-name](auto-provisioning-guide.md#step-1-enter-the-company-name "mention") of signing up. You will be asked to confirm the name you entered before starting the provisioning process.
 
 ### **Step 3: Access the Snyk platform**

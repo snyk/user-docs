@@ -21,7 +21,7 @@ Snyk uses a hierarchical approach to managing assets, access, and rollup reporti
 
 All customers have a Group and at least one Organization. On the Free and Team plans, you can create up to five Organizations in your Tenant. On the Enterprise plan, you can create an unlimited number of Organizations.
 
-For more details, visit [Manage Groups and Organizations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations).
+For more details, visit [Manage Groups and Organizations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups-and-organizations).
 
 {% hint style="info" %}
 If you have hundreds or thousands of repositories, consider the Snyk Enterprise plan for access to additional organizations to restrict access, separate reporting, and manageable lists to interact with.

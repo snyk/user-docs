@@ -24,7 +24,7 @@ This page explains how to set up Nexus Container Registry integration in Snyk an
 * In the **Account credentials** section, enter your Nexus username and password login credentials. In the **container registry name** fiel&#x64;**,** fill in the full URL to the registry you want to integrate with.
 * To finish, click **Save**.
 
-If you are using a self-hosted Nexus registry, [contact Snyk Support](https://support.snyk.io) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker).
+If you are using a self-hosted Nexus registry, [contact Snyk Support](https://support.snyk.io) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker).
 
 Snyk tests the connection values, and the page reloads, now displaying Nexus integration information. The **Add your Nexus images to Snyk** button becomes available.
 

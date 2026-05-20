@@ -148,9 +148,9 @@ Gradle Error (short): > Could not resolve all dependencies for configuration ':c
 ```
 {% endcode %}
 
-The **compileOnly** configuration has been deprecate&#x64;**,** and even if your Project successfully generates a lockfile, the `compileOnly` state is not included because this configuration cannot be resolved.
+The **compileOnly** configuration has been deprecated, and even if your Project successfully generates a lockfile, the `compileOnly` state is not included because this configuration cannot be resolved.
 
-Only resolvable configurations compute a dependency graph. To solve this issue, Snyk suggests you update your `build.gradle` containing `dependencyLocking` logic with the following instructio&#x6E;**:**
+Only resolvable configurations compute a dependency graph. To solve this issue, Snyk suggests you update your `build.gradle` containing `dependencyLocking` logic with the following instruction:
 
 ```
 compileOnly {resolutionStrategy.deactivateDependencyLocking() }
@@ -218,7 +218,7 @@ snyk monitor --file=pom.xml
 
 ## Snyk CLI tips and tricks
 
-the [CLI commands and options summary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/cli-commands-and-options-summary) and the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/). Use the `--help` option in the CLI for details of Snyk CLI commands.
+the [CLI commands and options summary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/cli-commands-and-options-summary) and the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/). Use the `--help` option in the CLI for details of Snyk CLI commands.
 
 ### Testing your own code
 
@@ -255,11 +255,11 @@ specific configurations, [Snyk for Java and Kotlin](../../../supported-languages
 
 #### Unmanaged
 
-For more details on unmanaged Jars, [Scan all unmanaged JAR files](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/scan-all-unmanaged-jar-files).
+For more details on unmanaged Jars, [Scan all unmanaged JAR files](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/scan-all-unmanaged-jar-files).
 
 ### Testing containers
 
-Snyk automatically looks for application (such as open source, maven, and npm) vulnerabilities as part of a container scan. Snyk recommends integrating via CLI or Registry earlier in the pipeline and use this as an additional signal or insight into what is in production. [Snyk CLI for container security](../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/).
+Snyk automatically looks for application (such as open source, maven, and npm) vulnerabilities as part of a container scan. Snyk recommends integrating via CLI or Registry earlier in the pipeline and use this as an additional signal or insight into what is in production. [Snyk CLI for container security](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container).
 
 To test Infrastructure as Code, [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/).
 
@@ -267,8 +267,8 @@ To fix vulnerabilities, [Fixing vulnerabilities on Maven projects](https://snyk.
 
 ### Options and plugins
 
-To help generate reports locally or at build time, [snyk-to-html plugin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html).
+To help generate reports locally or at build time, [snyk-to-html plugin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html).
 
 See `--json` and `--sarif` options for generating output that can be programmatically accessed.
 
-For advanced filtering options, [snyk-filter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
+For advanced filtering options, [snyk-filter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
