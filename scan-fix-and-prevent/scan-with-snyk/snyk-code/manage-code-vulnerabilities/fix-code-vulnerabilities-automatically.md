@@ -48,7 +48,7 @@ The training data is regularly checked for quality to optimize the performance o
 
 Snyk does not use customer code submitted to Snyk Agent Fix for training purposes.
 
-For more information on how Snyk manages data, see [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-snyk-handles-your-data).
+For more information on how Snyk manages data, see [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).
 
 ## How Snyk Agent Fix works
 

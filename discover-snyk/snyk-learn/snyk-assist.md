@@ -65,4 +65,4 @@ After Snyk Assist is enabled, it is visible and accessible on Snyk Learn for the
 
 ## Data Handling and Safeguards
 
-See [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-snyk-handles-your-data#snyk-learn) for more information on this topic.
+See [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data#snyk-learn) for more information on this topic.

@@ -140,7 +140,7 @@ Lerna is partially supported.
 * Automatic and manual Fix PRs (for npm, pnpm, and Yarn)
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:npm`  PURLs, using [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandssbom-test) command.
+* Test your app's SBOM and packages using `pkg:npm`  PURLs, using [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command.
 
 ### Language and package manager considerations
 
@@ -384,4 +384,4 @@ To detect and scan all workspaces in your Yarn Project, use the CLI options iden
 
 For SCM integrations with a Snyk Enterprise plan only, Snyk can monitor container images and their open source or Linux-based packages being used in production using Kubernetes integration to notify customers of known vulnerabilities for applications in production.
 
-For all Snyk plans, where a production integration does not exist, use the [`snyk monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsmonitor) CLI command to take a snapshot and monitor what is being pushed to production.
+For all Snyk plans, where a production integration does not exist, use the [`snyk monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) CLI command to take a snapshot and monitor what is being pushed to production.

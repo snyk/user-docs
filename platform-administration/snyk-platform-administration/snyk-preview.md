@@ -10,7 +10,7 @@ Users with Admin permissions can use Snyk Preview at the Organization and Group 
 
 To enable a feature using Snyk Preview:
 
-1. At either the Group or Organization level, select **Settings** > **Snyk Preview.**
+1. At either the Group or Organization level, select **Settings** > **Snyk Preview**.
 2. Select **Enable feature preview** to enable or disable a feature.
 3. Click **Save changes**.
 

@@ -77,7 +77,7 @@ When using the IDE, you do not need additional options. The Snyk plugin displays
 
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:generic` or `pkg:conan` PURLs through [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandssbom-test) CLI command.
+* Test your app's SBOM and packages using `pkg:generic` or `pkg:conan` PURLs through [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
 
 {% hint style="info" %}
 The **Snyk FixPR** feature is not available for C/C++. This means that you will not be notified if the PR checks fail when the following conditions are met:
@@ -427,7 +427,7 @@ You can use the following command-line options with the `snyk test --unmanaged` 
 * `--target-reference=TARGET_REFERENCE` (`snyk monitor` only)
 * `--project-name=c-project` (`snyk monitor` only)
 
-For more information about command-line options, visit [Options for scanning with `snyk test --unmanaged`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandstest#unmanaged) or [`snyk monitor --unmanaged`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsmonitor#unmanaged).
+For more information about command-line options, visit [Options for scanning with `snyk test --unmanaged`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/test#unmanaged) or [`snyk monitor --unmanaged`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor#unmanaged).
 
 To import the test results (issues and dependencies) in the Snyk CLI, run the `snyk monitor --unmanaged` command:
 

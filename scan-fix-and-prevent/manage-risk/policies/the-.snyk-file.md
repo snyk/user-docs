@@ -16,14 +16,14 @@ Key considerations regarding how the `.snyk` file is used are as follows:
 
 ## How to create the `.snyk` file
 
-You can create the `.snyk` file by using the `snyk ignore` command. For details, see the [Ignore](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsignore) command CLI help.
+You can create the `.snyk` file by using the `snyk ignore` command. For details, see the [Ignore](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore) command CLI help.
 
 If you do not have an existing `.snyk` file, you can create one and populate it with the following code:\
 `# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities`\
 `version: v1.25.0`
 
 * You must set the `version` to `v1.25.0` as this is the current policy schema version.
-* The ignore block or blocks must follow the relevant syntax as shown in the [description of the `ignore` command](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsignore#usage-and-description) or the examples on this page.
+* The ignore block or blocks must follow the relevant syntax as shown in the [description of the `ignore` command](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore#usage-and-description) or the examples on this page.
 
 For more information, see [Syntax of the `.snyk` file](the-.snyk-file.md#syntax-of-the-.snyk-file).
 
@@ -115,7 +115,7 @@ For more information, see [Setting Python version in Git Projects](https://app.g
 {% hint style="warning" %}
 The `expires` field is optional. If you need a permanent ignore, omit the field.
 
-To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsignore#expiry-less-than-expiry-greater-than).
+To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore#expiry-less-than-expiry-greater-than).
 {% endhint %}
 
 Ignore a specific vulnerability for a given path:

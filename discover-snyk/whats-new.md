@@ -12,7 +12,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Snyk CLI
 
 * The [Install the Snyk CLI](developer-tools/snyk-cli/install-the-snyk-cli/) page and sub-pages have been updated to reflect configuration best practice, including easily copied code snippets.
-* The [Authenticate to use the Snyk CLI]https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) page has been updated to reflect best practice, including easily copied code snippets.
+* The [Authenticate to use the Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) page has been updated to reflect best practice, including easily copied code snippets.
 
 ### Snyk supported languages
 
@@ -34,8 +34,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Evo by Snyk
 
-* Added the [`aibom test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsaibom-test) command under [Snyk CLI Help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands#snyk-aibom-test).
-* Updated [`redteam`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsredteam) with additional options, and also added [Snyk Agent Red Teaming](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-agent-red-teaming).
+* Added the [`aibom test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/aibom-test) command under [Snyk CLI Help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands#snyk-aibom-test).
+* Updated [`redteam`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/redteam) with additional options, and also added [Snyk Agent Red Teaming](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-agent-red-teaming).
 
 ### Snyk Analytics
 
@@ -65,7 +65,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk CLI
 
-* [Container SBOM](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandscontainer-sbom) has been updated with additional options.
+* [Container SBOM](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-sbom) has been updated with additional options.
 * The Snyk CLI latest release version is [v1.1303.0](https://github.com/snyk/cli/releases/tag/v1.1303.1).
 
 ### Snyk Open Source
@@ -98,7 +98,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk CLI
 
-* [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandssbom-test) command is now in Early Access.
+* [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command is now in Early Access.
 * The latest [Snyk CLI version](developer-tools/snyk-cli/install-the-snyk-cli/) available is v1.1302.1.
 * The [debugging mode of the Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/debugging-the-snyk-cli) has been enhanced with error catalog codes and exit codes.
 
@@ -124,7 +124,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Other updates
 
-* [Container monitor](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandscontainer-monitor) has been updated to include a new CLI option `--prune-repeated-subdependencies` to prune depgraphs for large container scans.
+* [Container monitor](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-monitor) has been updated to include a new CLI option `--prune-repeated-subdependencies` to prune depgraphs for large container scans.
 * The [redesigned Snyk Analytics experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/overview-tab) is now in General Availability.
 * The [Bitbucket Cloud documentation](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud) has been updated to make it clear that scopeless API tokens are not supported for this integration.
 
@@ -197,7 +197,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### **Snyk CLI**
 
-* Snyk CLI now supports uploading files and folders for Snyk Code scanning. The command [`code-test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandscode-test) has been updated with options reflecting these capabilities.
+* Snyk CLI now supports uploading files and folders for Snyk Code scanning. The command [`code-test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/code-test) has been updated with options reflecting these capabilities.
 * The latest [Snyk CLI version](developer-tools/snyk-cli/install-the-snyk-cli/) available is v1.1300.2.
 
 #### **Snyk integrations**
@@ -247,7 +247,7 @@ The most recent updates include significant changes to the user docs, such as fe
 #### **Snyk CLI**
 
 * [Experimental builds ](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli#experimental-builds)information is now available for the CLI releases and channels.
-* The [AI-BOM](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsaibom) Snyk CLI command is now available with any stable CLI release.
+* The [AI-BOM](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/aibom) Snyk CLI command is now available with any stable CLI release.
 * A new Snyk CLI analytics page is now available, providing information about [Essential Operational Analytics](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/snyk-cli-analytics#essential-operational-analytics) and [Optional Usage Analytics](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/snyk-cli-analytics#optional-usage-analytics).
 
 #### **Snyk integrations**
@@ -277,7 +277,7 @@ The most recent updates include significant changes to the user docs, such as fe
   * Updated release status from experimental to [Early access](discover-snyk/getting-started/snyk-release-process.md#early-access-features) and removed the experimental flag.
   * Added [Cursor](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/cursor-guide.md) as a new supported agentic IDE for MCP.
 * PAT updates:
-  * Added PAT support for [Snyk CLI]https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli).
+  * Added PAT support for [Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli).
   * Added PAT support for Snyk CI/CD integrations ([CircleCI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb), [Jenkins](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk), [Maven](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk)).
 
 #### **Snyk Code**
@@ -331,7 +331,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### **Snyk CLI**
 
-* The `--platform` option was added to the [`container sbom`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandscontainer-sbom) command.
+* The `--platform` option was added to the [`container sbom`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-sbom) command.
 * The MCP information was expanded to [Developer guardrails for agentic workflows](integrations/snyk-studio-agentic-integrations/).
 
 #### **IDE plugins and extensions**
@@ -356,7 +356,7 @@ The [Bitbucket Cloud App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjS
 
 * For [SCM integrations with Python](supported-languages/supported-languages-list/python/scm-integrations-and-python.md), the list of dependencies that are not supported has been updated to include `pip` for Python 2.7 and 3.7.
 * [Python dependency filtering results](supported-languages/supported-languages-list/python/scm-integrations-and-python.md) have been updated to clarify the conditions in which certain packages and configurations are skipped by SCM scans.
-* The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages/supported-languages-list/c-c++.md), [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandssbom-test), [Test an SBOM document for vulnerabilities](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities).
+* The list of supported package managers has been updated to include `conan`. See [C/C++](supported-languages/supported-languages-list/c-c++.md), [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test), [Test an SBOM document for vulnerabilities](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/using-specific-snyk-apis/sbom-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities).
 * [Instructions for upgrading an Organization integration from Classic Broker to Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/universal-broker/upgrade-an-organization-integration-from-classic-broker-to-universal-broker) were clarified.
 
 ### April 2025
@@ -476,7 +476,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * [Visual Studio IDE](developer-tools/snyk-ide-plugins-and-extensions/visual-studio-extension/) major update
 * Region configuration update for [IDEs](developer-tools/snyk-ide-plugins-and-extensions/)
 * [Snyk images EOL policy updated](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ci-cd-integrations/snyk-images-and-eol-image-policy)
-* [`snyk container test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandscontainer-test) and [`snyk container monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandscontainer-monitor) option `--exclude-node-modules` added
+* [`snyk container test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-test) and [`snyk container monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-monitor) option `--exclude-node-modules` added
 
 #### **Other updates**
 
@@ -508,7 +508,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 #### **Snyk CLI and IDEs**
 
-* The [CLI authentication page]https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) has been updated for the OAuth 2.0 protocol.
+* The [CLI authentication page](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) has been updated for the OAuth 2.0 protocol.
 * The page [Debugging the Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/debugging-the-snyk-cli) has been added.
 * [CLI standalone executables](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli#install-with-standalone-executables) have been updated to include Alpine Arm64.
 * IDE Eclipse[ plugin](developer-tools/snyk-ide-plugins-and-extensions/eclipse-plugin/) and [JetBrains plugin ](developer-tools/snyk-ide-plugins-and-extensions/jetbrains-plugin/)documentation pages have been updated.
@@ -519,7 +519,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * [Snowflake Data Share](manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/) is now in [GA](discover-snyk/getting-started/snyk-release-process.md).
 * [Snyk SCM integrations](developer-tools/scm-integrations/organization-level-integrations/) has been updated with additional notices relating to repository retrieval and permission or scope modifications after initial configuration.
 * GitHub Cloud App has been added to feature support notices for Fix, Backlog, and Upgrade PRs.
-* Snyk SCM integrations has been updated to include a table detailing the [permissions and scopes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/user-permissions-and-access-scopes#github-cloud-app-permission-requirements) required for the GitHub Cloud App.
+* Snyk SCM integrations has been updated to include a table detailing the [permissions and scopes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/user-permissions-and-access-scopes#github-cloud-app-permission-requirements) required for the GitHub Cloud App.
 
 #### **Other updates**
 
@@ -530,7 +530,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 #### Snyk API
 
-* A prerequisites section has been added to the Group level of [GitHub integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/github-enterprise#prerequisites), and more details about the [Pull personal repositories](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/group-level-integrations/github-for-snyk-essentials) option have been added to the same documentation page.
+* A prerequisites section has been added to the Group level of [GitHub integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github-enterprise#prerequisites), and more details about the [Pull personal repositories](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/group-level-integrations/github-for-snyk-essentials) option have been added to the same documentation page.
 * The [Set up Insights](manage-risk/prioritize-issues-for-fixing/set-up-insights/) section was updated to emphasize the risk factors availability for each integration option.
 * The Snyk Runtime Sensor has been updated to reflect the importance of adopting it to achieve the most effective integration and to access its continuously expanded set of features.
 
@@ -541,8 +541,8 @@ The Universal Broker feature is now available in Early Access. The Universal Bro
 #### Snyk CLI
 
 * The [CLI commands and options summary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/cli-commands-and-options-summary) was updated.
-* [Authentication]https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) has been updated.
-* Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsconfig) help, [`snyk config environment`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment) help.
+* [Authentication](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) has been updated.
+* Configuration has been updated: Environment variables for Snyk CLI, [`snyk config`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config) help, [`snyk config environment`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment) help.
 
 #### Snyk Integrations
 
@@ -565,14 +565,14 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 #### Snyk CLI
 
-* [`snyk auth`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsauth) command help updated to reflect OAuth default.
-* [CLI authentication]https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) instructions updated for OAuth default and improved flow.
+* [`snyk auth`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/auth) command help updated to reflect OAuth default.
+* [CLI authentication](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) instructions updated for OAuth default and improved flow.
 * [`snyk config environment`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment) command help has been added.
 * CLI [support for pnpm added](supported-languages/supported-languages-list/javascript/#support-for-pnpm).
 
 #### Snyk IDE
 
-* [CLI authentication]https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) instructions updated for IDE.
+* [CLI authentication](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) instructions updated for IDE.
 * IDE authentication instructions updated: [Eclipse](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/eclipse-plugin/authentication-for-the-eclipse-plugin), [Jetbrains](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/jetbrains-plugin/authentication-for-the-jetbrains-plugins), [VS extension](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/visual-studio-extension/authentication-for-visual-studio-extension), [VS Code extension](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/visual-studio-code-extension/authentication-for-visual-studio-code-extension)
 
 #### **Snyk Integrations**
@@ -601,8 +601,8 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 * The [Snyk SCM Integrations](developer-tools/scm-integrations/organization-level-integrations/) page now contains information critical to using these integrations successfully in your SDLC. This includes:
   * [Git repository cloning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces) details
   * [Deployment recommendations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/deployment-recommendations) for Enterprise customers
-  * [User permissions and access scope requirements](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/user-permissions-and-access-scopes) for each SCM integration
-  * Instructions on how to generate [integrated SCM tokens for Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/scm-integrations-and-snyk-broker#integrated-scm-tokens-for-classic-broker)
+  * [User permissions and access scope requirements](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/user-permissions-and-access-scopes) for each SCM integration
+  * Instructions on how to generate [integrated SCM tokens for Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/scm-integrations-and-snyk-broker#integrated-scm-tokens-for-classic-broker)
 
 #### **Other updates**
 

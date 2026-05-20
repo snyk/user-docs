@@ -47,4 +47,4 @@ Snyk offers a trial of the platform, but this has imposed feature limitations. S
 
 ## What happens to my data?
 
-For details on Snyk handling, see [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-snyk-handles-your-data).
+For details on Snyk handling, see [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).

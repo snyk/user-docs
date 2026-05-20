@@ -82,7 +82,7 @@ If you initiate your scans using the CLI, you can encounter one of the following
 
 * If you have a `.git` folder available in the directory that the CLI is scanning, then the `git remoteurl` is picked up automatically for Snyk Open Source, Snyk Code, Snyk Container, and Snyk IaC.
 * If you do not have a `.git` folder available in the directory that the CLI is scanning, you can use different `test` or `monitor` commands to achieve the same result:
-  * [`snyk monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsmonitor#remote-repo-url-less-than-url-greater-than) - for Snyk Open Source with the `--remote-repo-url` command
-  * [`snyk iac test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsiac-test#remote-repo-url-less-than-url-greater-than) - also requires the `--report` and `--remote-repo-url` command
+  * [`snyk monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor#remote-repo-url-less-than-url-greater-than) - for Snyk Open Source with the `--remote-repo-url` command
+  * [`snyk iac test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/iac-test#remote-repo-url-less-than-url-greater-than) - also requires the `--report` and `--remote-repo-url` command
   * `snyk container monitor` - no options available
-  * [`snyk code test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandscode-test#remote-repo-url-less-than-url-greater-than) - requires the `--report` and `--remote-repo-url` command
+  * [`snyk code test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/code-test#remote-repo-url-less-than-url-greater-than) - requires the `--report` and `--remote-repo-url` command

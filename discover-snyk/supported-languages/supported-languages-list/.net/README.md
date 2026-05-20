@@ -75,7 +75,7 @@ For .NET with Snyk Open Source, the following features are available:
 * Fix PRs (only for NuGet)
 * License scanning
 * Reports
-* (Only for Paket) Test your app's SBOM and packages using `pkg:nuget` PURLs, using the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandssbom-test) command.
+* (Only for Paket) Test your app's SBOM and packages using `pkg:nuget` PURLs, using the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command.
 
 {% hint style="warning" %}
 Snyk does not support `PackageReference` entries without a version attribute. If your Project is missing this attribute, Snyk cannot open a pull request. Ensure you add versions to all `PackageReference` entries.

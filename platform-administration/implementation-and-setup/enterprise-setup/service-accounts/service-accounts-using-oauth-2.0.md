@@ -27,7 +27,7 @@ The `access_token` has a short time-to-live and must be refreshed once it expire
 
 ### Authenticate with the Snyk CLI
 
-You can also use the `client_secret` and the `client_id` to authenticate with the Snyk CLI. For details, see the [`snyk auth`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsauth) command help.
+You can also use the `client_secret` and the `client_id` to authenticate with the Snyk CLI. For details, see the [`snyk auth`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/auth) command help.
 
 ## Create OAuth service accounts through the UI
 

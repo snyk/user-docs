@@ -12,7 +12,7 @@ Reachability analysis can be used as an indicator to make decisions, or as part 
 
 Snyk uses a combination of static program analysis and various AI techniques to determine the reachability of a given vulnerability, with validation conducted by security research experts. These capabilities enable Snyk to quickly analyze the code without requiring the application to be built prior to the scan.
 
-To use this feature, Snyk must analyze your source code. To learn more, visit [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-snyk-handles-your-data).
+To use this feature, Snyk must analyze your source code. To learn more, visit [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).
 
 ## How reachable vulnerability analysis works
 
@@ -69,11 +69,11 @@ Reachability analysis is supported in the following integrations:
 | Integration                                                                                                                                              | Release status       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
 | [GitHub](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/github)                                                               | General Availability |
-| [GitHub Enterprise](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/github-enterprise)                                         | General Availability |
+| [GitHub Enterprise](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github-enterprise)                                         | General Availability |
 | [GitHub Cloud App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/github-cloud-app)                                           | General Availability |
 | [Bitbucket Cloud](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/bitbucket-cloud-app)                                         | General Availability |
 | [Bitbucket Server](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/bitbucket-data-center-server)                               | General Availability |
-| [GitLab](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/gitlab)                                                               | General Availability |
+| [GitLab](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/gitlab)                                                               | General Availability |
 | [Azure Repos](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs)                                          | General Availability |
 | [Brokered connections](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests)      | General Availability |
 | [Snyk CLI](../../developer-tools/snyk-cli/)                                                                                                              | Early Access         |
