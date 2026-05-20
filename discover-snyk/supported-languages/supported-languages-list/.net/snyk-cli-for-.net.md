@@ -9,7 +9,7 @@ To perform source code analysis, run `snyk code test` from the root of the Proje
 
 ## NuGet
 
-For NuGet-specific options, visit [Options for NuGet projects in the Test help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/test#options-for-nuget-projects) and [Options for NuGet projects in the Monitor help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/monitor#options-for-nuget-projects).
+For NuGet-specific options, visit [Options for NuGet projects in the Test help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandstest#options-for-nuget-projects) and [Options for NuGet projects in the Monitor help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandsmonitor#options-for-nuget-projects).
 
 Snyk scans NuGet Projects using the `project.assets.json` file. Snyk supports the following Project files that resolve into `project.assets.json`:
 

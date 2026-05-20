@@ -26,8 +26,8 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
 * [Automatically created Project collections](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/automatically-created-project-collections)
 * [Fix code vulnerabilities automatically](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically)
 * Risk Management
-  * [Risk Score](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/risk-score)
-  * [Reachability analysis](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/reachability-analysis)
+  * [Risk Score](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/risk-score)
+  * [Reachability analysis](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/reachability-analysis)
   * [Breakability risk levels](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests/breakability-risk-levels)
 * Universal Broker
 * Language support
@@ -35,7 +35,7 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
   * [Improved Gradle SCM scanning](../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning)
   * [CLI support for uv](../supported-languages/supported-languages-list/python/cli-support-for-uv.md)
 * Reports
-  * [Repositories tested in CI/CD report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/prevention-reports#repositories-tested-in-ci-cd-report)
+  * [Repositories tested in CI/CD report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/prevention-reports#repositories-tested-in-ci-cd-report)
 * [Snyk 2.0 platform improvements](snyk-2.0-platform-improvements.md)
 
 

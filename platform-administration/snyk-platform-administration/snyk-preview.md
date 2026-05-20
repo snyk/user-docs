@@ -1,7 +1,7 @@
 # Snyk Preview
 
 {% hint style="info" %}
-[Snyk IDE plugins](../developer-tools/snyk-ide-plugins-and-extensions/) also have preview features. These preview features are separate from Snyk Preview and can be found in the documentation for the IDE-specific plugin.
+[Snyk IDE plugins](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions) also have preview features. These preview features are separate from Snyk Preview and can be found in the documentation for the IDE-specific plugin.
 {% endhint %}
 
 Snyk Preview lets you enable new features that may not be available to all customers by default.

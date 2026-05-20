@@ -18,7 +18,7 @@ Enterprise users have [access to a personal access token under their profile](./
   * Authenticating with the IDE manually
   * Running API calls one time, for example, to test something
 
-Note that for free and team plan users, the personal token does not have access to the API and may be used for authenticating to IDE, CLI, and CI/CD integrations only. For details, see [Obtain and use your PAT token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
+Note that for free and team plan users, the personal token does not have access to the API and may be used for authenticating to IDE, CLI, and CI/CD integrations only. For details, see [Obtain and use your PAT token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
 
 For additional information, see [Snyk PAT token permissions users can control](snyk-api-token-permissions-users-can-control.md).
 

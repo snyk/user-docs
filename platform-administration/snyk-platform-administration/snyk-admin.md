@@ -9,7 +9,7 @@ Some functions, such as Custom roles, are available only on certain plans. For m
 Administration encompasses the following functions:
 
 * [Manage Tenants, Groups and Organizations](snyk-admin.md#manage-tenant-groups-and-organizations)
-* [Manage and use Snyk Projects](snyk-projects/)
+* [Manage and use Snyk Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects)
 * [Manage users in Organizations](groups-and-organizations/organizations/manage-users-in-organizations.md) and [Groups](groups-and-organizations/groups/manage-users-in-a-group.md)
 * [Manage user roles](user-roles/)
 * [Manage notifications](manage-notifications.md)

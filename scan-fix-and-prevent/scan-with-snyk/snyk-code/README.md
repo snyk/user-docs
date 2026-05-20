@@ -59,7 +59,7 @@ Snyk Code supports many [languages and frameworks](https://app.gitbook.com/o/-M4
 
 ## What's next?
 
-* [Create or log in to a Snyk account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started#create-or-log-in-to-a-snyk-account)
-* [Set up an integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started#set-up-a-snyk-integration)
-* [Import a Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started-guides/getting-started#import-a-project-to-scan-and-identify-issues)
+* [Create or log in to a Snyk account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#create-or-log-in-to-a-snyk-account)
+* [Set up an integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#set-up-a-snyk-integration)
+* [Import a Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#import-a-project-to-scan-and-identify-issues)
 * [Configure Snyk Code in Snyk Web UI](configure-snyk-code.md)

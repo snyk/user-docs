@@ -113,7 +113,7 @@ For more information, see [Snyk Essentials](https://app.gitbook.com/o/-M4tdxG8qo
 
 ## Review results and fix your issues
 
-After you have imported a Project, and Snyk has scanned that Project for issues, you can view the results of your scan and take action to fix issues. You can see the number of issues found, grouped by severity level (**C**ritical, **H**igh, **M**edium or **L**ow). For details, see [Severity levels](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/severity-levels).
+After you have imported a Project, and Snyk has scanned that Project for issues, you can view the results of your scan and take action to fix issues. You can see the number of issues found, grouped by severity level (**C**ritical, **H**igh, **M**edium or **L**ow). For details, see [Severity levels](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/severity-levels).
 
 The scan results and available actions depend on the type of Project you scan:
 

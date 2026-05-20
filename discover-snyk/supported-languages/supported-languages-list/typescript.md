@@ -50,7 +50,7 @@ Available features:
 
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:npm` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/sbom-test) CLI command
+* Test your app's SBOM and packages using `pkg:npm` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commandssbom-test) CLI command
 
 {% hint style="info" %}
 The **Snyk Fix PR** feature is not available for TypeScript. This means that you will not be notified if the PR checks fail when the following conditions are met:
