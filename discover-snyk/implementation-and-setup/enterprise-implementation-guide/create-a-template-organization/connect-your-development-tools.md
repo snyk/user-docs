@@ -84,12 +84,12 @@ Your integration approach should match the structure you selected during the pla
 Configure SCM integrations at the Organization level to establish granular connections for specific teams, products, or business units. While Group-level integrations provide a global baseline, Organization-level settings allow for isolated credentials and team-specific automation.
 
 {% hint style="info" %}
-If you are using multiple SCMs, Snyk recommends using separate Organizations for separate SCM integrations.
+If you are using multiple SCMs, Snyk recommends using separate Organizations for each SCM integration.
 {% endhint %}
 
 {% stepper %}
 {% step %}
-**Establish granular authentication**
+#### Establish granular authentication
 
 {% hint style="success" %}
 **Key decision:** Determine if this specific Organization requires a unique access token or a different service account than the one used at the Group level.
@@ -100,11 +100,11 @@ Unlike Group-level setup, Organization-level integrations allow you to:
 * **Isolate access:** Use a unique Personal Access Token (PAT) or OAuth connection that only has access to a specific team's repositories.
 * **Override Group defaults:** If a specific business unit uses a different SCM instance (for example, a separate GitHub Org or GitLab Group), you can configure it here without affecting the rest of the company.
 
-Set up your Org-level integrations by navigating in your Organization to the **Integrations** page and selecting the relevant SCM tile.
+Set up your Org-level integrations by navigating to your Organization **Integrations** page and selecting the relevant SCM tile.
 {% endstep %}
 
 {% step %}
-**Consider specific Snyk Broker tokens**
+#### Consider specific Snyk Broker tokens
 
 {% hint style="success" %}
 **Key decision:** Identify if this Organization requires a dedicated Snyk Broker token to segment network traffic or satisfy distinct security requirements.
@@ -121,7 +121,7 @@ If you are using Azure Repos, Snyk recommends using Universal Broker to avoid Az
 {% endstep %}
 
 {% step %}
-**Define team-specific automation**
+#### Define team-specific automation
 
 {% hint style="success" %}
 **Key decision:** Decide which PR check behaviors and fix strategies apply to this team’s specific development workflow.
