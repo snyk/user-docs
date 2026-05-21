@@ -1,5 +1,26 @@
 ## 2026-03-25 - Updated 2026-05-19
 
+### GET - `/orgs/{org_id}/issues` - Updated
+- added the new enum value `secrets` to the `query` request parameter `type`
+
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added the non-success response with the status `501`
+
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added the new enum value `secrets` to the `query` request parameter `type`
+
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added the non-success response with the status `501`
+
+
+## 2026-03-25 - Updated 2026-05-19
+
 ### GET - `/orgs/{org_id}/container_import/{integration_id}/policy` - Updated
 - deleted the `query` request parameter `ending_before`
 ![Badge](https://img.shields.io/badge/Breaking-yellow)

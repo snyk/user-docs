@@ -521,6 +521,16 @@
               ],
               "type": "string"
             },
+            "created_at": {
+              "default": "last",
+              "enum": [
+                "max",
+                "min",
+                "first",
+                "last"
+              ],
+              "type": "string"
+            },
             "issues": {
               "default": "last",
               "enum": [
@@ -1251,7 +1261,7 @@
         }
       },
       "MetaFieldsGroupValues": {
-        "description": "Meta fields to include in the response. Multiple fields can be specified.\n\nAvailable fields:\n  - `count` - Number of assets with this value\n  - `last_seen_at` - Aggregated last_seen_at timestamp (default aggregation: last)\n  - `updated_at` - Aggregated updated_at timestamp (default aggregation: last)\n  - `risk_score` - Aggregated risk score from discovery sources (default aggregation: last)\n  - `issues` - Aggregated issue counts (critical, high, medium, low, total) (default aggregation: last)\n  - `labels` - Labels across assets (default aggregation: last)\n  - `tags` - Tags across assets (default aggregation: last)\n  - `built_at` - Aggregated container image build timestamp (default aggregation: last)\n  - `all` - Include all available meta fields\n\nAll fields default to the `last` aggregation function, which returns the value\nfrom the asset with the most recent updated_at in the group. Use the `aggregate`\nparameter to override the aggregation function per field.\n\nIf not specified, the meta object is not included in the response.\n\nNote: Requesting meta fields may impact response time as aggregations\nrequire additional computation.\n",
+        "description": "Meta fields to include in the response. Multiple fields can be specified.\n\nAvailable fields:\n  - `count` - Number of assets with this value\n  - `created_at` - Aggregated asset creation timestamp (default aggregation: last)\n  - `last_seen_at` - Aggregated last_seen_at timestamp (default aggregation: last)\n  - `updated_at` - Aggregated updated_at timestamp (default aggregation: last)\n  - `risk_score` - Aggregated risk score from discovery sources (default aggregation: last)\n  - `issues` - Aggregated issue counts (critical, high, medium, low, total) (default aggregation: last)\n  - `labels` - Labels across assets (default aggregation: last)\n  - `tags` - Tags across assets (default aggregation: last)\n  - `built_at` - Aggregated container image build timestamp (default aggregation: last)\n  - `all` - Include all available meta fields\n\nAll fields default to the `last` aggregation function, which returns the value\nfrom the asset with the most recent updated_at in the group. Use the `aggregate`\nparameter to override the aggregation function per field.\n\nIf not specified, the meta object is not included in the response.\n\nNote: Requesting meta fields may impact response time as aggregations\nrequire additional computation.\n",
         "example": [
           "count",
           "risk_score",
@@ -1265,6 +1275,7 @@
           "items": {
             "enum": [
               "count",
+              "created_at",
               "last_seen_at",
               "updated_at",
               "risk_score",
@@ -1777,7 +1788,7 @@
         }
       },
       "SortGroupValues": {
-        "description": "Comma-separated sort fields for group values. Prefix with `-` for descending order.\nMultiple sort fields are supported (e.g., `-issues,count`).\nDefaults to `count` (ascending) when not specified.\nResults are always tie-broken by `value` for deterministic ordering.\n\nAvailable sort fields:\n  - `value` - Sort by the group value string (alphabetical)\n  - `count` - Sort by the number of assets in each group\n  - `last_seen_at` - Sort by the aggregated last_seen_at timestamp\n  - `updated_at` - Sort by the aggregated updated_at timestamp\n  - `risk_score` - Sort by the aggregated risk score\n  - `built_at` - Sort by the aggregated container image build timestamp\n  - `issues` - Sort by issue severity (critical → high → medium → low)\n",
+        "description": "Comma-separated sort fields for group values. Prefix with `-` for descending order.\nMultiple sort fields are supported (e.g., `-issues,count`).\nDefaults to `created_at` (ascending) when not specified.\nResults are always tie-broken by `value` for deterministic ordering.\n\nAvailable sort fields:\n  - `value` - Sort by the group value string (alphabetical)\n  - `count` - Sort by the number of assets in each group\n  - `created_at` - Sort by the aggregated created_at timestamp\n  - `last_seen_at` - Sort by the aggregated last_seen_at timestamp\n  - `updated_at` - Sort by the aggregated updated_at timestamp\n  - `risk_score` - Sort by the aggregated risk score\n  - `built_at` - Sort by the aggregated container image build timestamp\n  - `issues` - Sort by issue severity (critical → high → medium → low)\n",
         "example": "-count",
         "in": "query",
         "name": "sort",
@@ -1977,7 +1988,7 @@
         "in": "query",
         "name": "type",
         "schema": {
-          "$ref": "#/components/schemas/TypeDef"
+          "$ref": "#/components/schemas/IssueTypeFilter"
         },
         "style": "form"
       },
@@ -2560,6 +2571,149 @@
           },
           "sunset": {
             "$ref": "#/components/headers/SunsetHeader"
+          }
+        }
+      },
+      "501": {
+        "content": {
+          "application/vnd.api+json": {
+            "schema": {
+              "additionalProperties": false,
+              "example": {
+                "errors": [
+                  {
+                    "detail": "Permission denied for this resource",
+                    "status": "403"
+                  }
+                ],
+                "jsonapi": {
+                  "version": "1.0"
+                }
+              },
+              "properties": {
+                "errors": {
+                  "example": [
+                    {
+                      "detail": "Permission denied for this resource",
+                      "status": "403"
+                    }
+                  ],
+                  "items": {
+                    "additionalProperties": false,
+                    "example": {
+                      "detail": "Not Found",
+                      "status": "404"
+                    },
+                    "properties": {
+                      "code": {
+                        "description": "An application-specific error code, expressed as a string value.",
+                        "example": "entity-not-found",
+                        "type": "string"
+                      },
+                      "detail": {
+                        "description": "A human-readable explanation specific to this occurrence of the problem.",
+                        "example": "The request was missing these required fields: ...",
+                        "type": "string"
+                      },
+                      "id": {
+                        "description": "A unique identifier for this particular occurrence of the problem.",
+                        "example": "f16c31b5-6129-4571-add8-d589da9be524",
+                        "format": "uuid",
+                        "type": "string"
+                      },
+                      "meta": {
+                        "additionalProperties": true,
+                        "example": {
+                          "key": "value"
+                        },
+                        "type": "object"
+                      },
+                      "source": {
+                        "additionalProperties": false,
+                        "example": {
+                          "pointer": "/data/attributes"
+                        },
+                        "properties": {
+                          "parameter": {
+                            "description": "A string indicating which URI query parameter caused the error.",
+                            "example": "param1",
+                            "type": "string"
+                          },
+                          "pointer": {
+                            "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                            "example": "/data/attributes",
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "status": {
+                        "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+                        "example": "400",
+                        "pattern": "^[45]\\d\\d$",
+                        "type": "string"
+                      },
+                      "title": {
+                        "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+                        "example": "Bad request",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "status",
+                      "detail"
+                    ],
+                    "type": "object"
+                  },
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "jsonapi": {
+                  "additionalProperties": false,
+                  "example": {
+                    "version": "1.0"
+                  },
+                  "properties": {
+                    "version": {
+                      "description": "Version of the JSON API specification this server supports.",
+                      "example": "1.0",
+                      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "version"
+                  ],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "jsonapi",
+                "errors"
+              ],
+              "type": "object"
+            }
+          }
+        },
+        "description": "Not Implemented: The requested operation is not implemented",
+        "headers": {
+          "deprecation": {
+            "$ref": "#/components/headers/DeprecationHeader__0"
+          },
+          "snyk-request-id": {
+            "$ref": "#/components/headers/RequestIdResponseHeader__0"
+          },
+          "snyk-version-lifecycle-stage": {
+            "$ref": "#/components/headers/VersionStageResponseHeader__0"
+          },
+          "snyk-version-requested": {
+            "$ref": "#/components/headers/VersionRequestedResponseHeader__0"
+          },
+          "snyk-version-served": {
+            "$ref": "#/components/headers/VersionServedResponseHeader__0"
+          },
+          "sunset": {
+            "$ref": "#/components/headers/SunsetHeader__0"
           }
         }
       },
@@ -15112,6 +15266,11 @@
             "minimum": 0,
             "type": "integer"
           },
+          "created_at": {
+            "description": "Aggregated created_at timestamp across assets in this group.\nThe aggregation function is controlled by the `aggregate[created_at]` parameter (default: last).\nNull if no assets have a created_at value.\n",
+            "format": "date-time",
+            "type": "string"
+          },
           "issues": {
             "$ref": "#/components/schemas/GroupValueIssuesAggregation"
           },
@@ -16896,6 +17055,20 @@
           "issue"
         ],
         "example": "issue",
+        "type": "string"
+      },
+      "IssueTypeFilter": {
+        "description": "An issue type to filter issues by.",
+        "enum": [
+          "package_vulnerability",
+          "license",
+          "cloud",
+          "code",
+          "custom",
+          "config",
+          "secrets"
+        ],
+        "example": "cloud",
         "type": "string"
       },
       "IssuesCountAttributes": {
@@ -32927,6 +33100,9 @@
                 }
               }
             }
+          },
+          "501": {
+            "$ref": "#/components/responses/501"
           }
         },
         "summary": "Get an issue",
@@ -51295,6 +51471,9 @@
                 }
               }
             }
+          },
+          "501": {
+            "$ref": "#/components/responses/501"
           }
         },
         "summary": "Get an issue",
