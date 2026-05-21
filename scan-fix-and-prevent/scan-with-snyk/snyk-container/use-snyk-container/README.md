@@ -9,4 +9,4 @@ To use Snyk Container from the Web UI, see the pages in this section. Informatio
 * [Versioning Schema for custom base images](use-custom-base-image-recommendations/versioning-schema-for-custom-base-images.md)
 * [Custom Versioning Schema for custom base images](use-custom-base-image-recommendations/custom-versioning-schema-for-custom-base-images.md)
 
-For more information, see [How Snyk Container works](../../../scan-with-snyk/snyk-container/how-snyk-container-works/).
+For more information, see [How Snyk Container works](../how-snyk-container-works/).

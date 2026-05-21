@@ -10,11 +10,11 @@ With the Snyk pipe, you can quickly add Snyk scanning to your pipelines to test 
 
 From the build directory, Bitbucket Pipelines displays a list of available pipes customized for you, similar to the list in the following screen image:
 
-![Bitbucket Pipelines list of available pipes](../../../.gitbook/assets/uuid-6fff2668-6e2e-22ae-200f-124c8a240b02-en.png)
+![Bitbucket Pipelines list of available pipes](../../.gitbook/assets/uuid-6fff2668-6e2e-22ae-200f-124c8a240b02-en.png)
 
 On this list, find and click **Snyk** to view the pipe, examples, parameters, and values:
 
-![Snyk Scan pipe information](../../../.gitbook/assets/mceclip0-25-.png)
+![Snyk Scan pipe information](../../.gitbook/assets/mceclip0-25-.png)
 
 ## Setup and use details
 

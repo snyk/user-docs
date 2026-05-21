@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-As part of the Pull Request experience, Snyk Agent fix in the PR is in [Early Access](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/discover-snyk/getting-started/snyk-release-process#early-access-features).
+As part of the Pull Request experience, Snyk Agent fix in the PR is in [Early Access](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/snyk-release-process#early-access-features).
 {% endhint %}
 
 The Pull Request experience is an enhancement of the foundational [Pull Request Checks](./) functionality. It streamlines the security review process by reducing the need to switch between different developer tools, and providing contextually relevant feedback within your Source Code Manager (SCM) interface.
@@ -52,7 +52,7 @@ Additional to the general SCM and PR Checks prerequisites, certain features with
 
 ### SCM permission and access scope requirements
 
-The pull request experience integrates with various SCM platforms, each with specific requirements for a successful configuration with Snyk. Your existing SCM integration setup will work with the Pull Request experience out of the box, except for GitHub (OAuth) which requires an additional Fix PR token. For additional information, see [User permissions and access scopes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/user-permissions-and-access-scopes).
+The pull request experience integrates with various SCM platforms, each with specific requirements for a successful configuration with Snyk. Your existing SCM integration setup will work with the Pull Request experience out of the box, except for GitHub (OAuth) which requires an additional Fix PR token. For additional information, see [User permissions and access scopes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/user-permissions-and-access-scopes).
 
 {% hint style="info" %}
 For information on which SCM integrations are supported in each pull request experience feature, see the individual feature sections: [Issue Summary Comment](pull-request-experience.md#issue-summary-comment), [Inline Comments](pull-request-experience.md#inline-comments), and [Snyk Agent Fix in the PR](pull-request-experience.md#snyk-agent-fix-in-the-pr).
@@ -102,7 +102,7 @@ For Brokered integrations, the Data Flow section in the inline comments is avail
 {% hint style="info" %}
 **Release status**
 
-Snyk Agent fix in the PR is in [Early Access](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/discover-snyk/getting-started/snyk-release-process#early-access-features).\
+Snyk Agent fix in the PR is in [Early Access](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/snyk-release-process#early-access-features).\
 Snyk Agent fix in the PR will work only on inline comments created after the feature is enabled.
 {% endhint %}
 
@@ -120,7 +120,7 @@ The Snyk Agent fix in the PR feature enables the user to request and apply fixes
 ### Exceptions
 
 * The `@snyk /fix` command can be used only for automatically fixable vulnerabilities, identified in the inline comments with a zap icon and command description. See [fix-code-vulnerabilities-automatically.md](../../snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md "mention") for supported languages and limitations.
-* Fixes expire after the time displayed in each suggestion, in accordance with the [#cache-retention-period-related-to-vulnerability-source-data](../../../snyk-data-and-governance/how-snyk-handles-your-data.md#cache-retention-period-related-to-vulnerability-source-data "mention"). After expiration, a new fix can be requested by using the `@snyk /fix` command.
+* Fixes expire after the time displayed in each suggestion, in accordance with the [#cache-retention-period-related-to-vulnerability-source-data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data#cache-retention-period-related-to-vulnerability-source-data "mention"). After expiration, a new fix can be requested by using the `@snyk /fix` command.
 * Snyk Agent fix in the PR is not supported for [Snyk Code Local Engine](../../snyk-code/snyk-code-local-engine.md).
 * The `@snyk /fix` and `@snyk /apply #` commands can be used only as replies to the Inline Comments created by Snyk, commands created on other comment threads will not be processed.
 

@@ -30,7 +30,7 @@ The score associated with the dependency title is the maximum of all listed issu
 
 <div align="left"><figure><img src="../../.gitbook/assets/PR-checks-fix-dependencies-issue.png" alt="View issue details"><figcaption><p>View dependency details</p></figcaption></figure></div>
 
-* Click **Learn about this type of vulnerability** for [Snyk Learn](../../discover-snyk/snyk-learn/) training.
+* Click **Learn about this type of vulnerability** for [Snyk Learn](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/developer-education-with-snyk-learn/snyk-learn) training.
 * Click **Show more detail** to view detailed information about the vulnerability from the [Snyk Vulnerability database](https://snyk.io/product/vulnerability-database/):
 
 <div align="left"><figure><img src="../../.gitbook/assets/Projects-vuln-db-info.png" alt=""><figcaption><p>More information from the Snyk Vulnerability Database</p></figcaption></figure></div>

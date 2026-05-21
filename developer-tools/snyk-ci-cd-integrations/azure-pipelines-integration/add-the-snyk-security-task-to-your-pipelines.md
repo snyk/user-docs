@@ -15,10 +15,10 @@ This extension requires that Node.js and npm be installed on the build agent. Th
 
 1. Add the Snyk Security Scan task when you create your pipeline or while editing an existing one. See the [Azure Pipelines documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops).
 2. From Azure, access the pipeline that you want to scan for vulnerabilities. Open it for editing and check that the Build step is included just before the point at which you want to insert the Snyk task. Note that this is not required but is considered best practice for consistency across projects.
-3.  Open the **assistant**, search for the Snyk Security Scan task, and click it as shown in the screen image that follows. The configuration panel opens on top of the assistant.\
+3.  Open the **assistant**, search for the Snyk Security Scan task, and click it as shown in the screen image that follows. The configuration panel opens on top of the assistant.
 
 
-    <figure><img src="../../../.gitbook/assets/azure.png" alt=""><figcaption><p>Search for the Snyk Security Scan Task</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/azure.png" alt=""><figcaption><p>Search for the Snyk Security Scan Task</p></figcaption></figure>
 4. Complete the fields in the configuration.
    1. Find full details about the parameters on the page [Snyk Security Scan task parameters and values](snyk-security-scan-task-parameters-and-values.md).
    2. Note that if you check the **Fail build if Snyk finds issue** option, when the build fails the pipeline job is failed by the Snyk task.
@@ -40,6 +40,6 @@ This extension requires that Node.js and npm be installed on the build agent. Th
 
 After the task is included in your pipeline, the task runs each time the pipeline runs, and the results appear in the Azure Pipelines output view:
 
-![Azure pipelines output view](../../../.gitbook/assets/uuid-d570e34b-3973-2044-598b-cb89c82a1db0-en.png)
+![Azure pipelines output view](../../.gitbook/assets/uuid-d570e34b-3973-2044-598b-cb89c82a1db0-en.png)
 
 If the Snyk task fails the build, an error message appears in the results indicating that the build failed due to `snyk test`.

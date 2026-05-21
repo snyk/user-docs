@@ -4,7 +4,7 @@
 
 ## Configure the Snyk IDE
 
-To start scanning code in the IDE, navigate to your IDE plugin or extension marketplace and search for Snyk. This guide focuses on VS Code, but the [other supported IDEs](../../../../developer-tools/snyk-ide-plugins-and-extensions/) follow a very similar setup flow.
+To start scanning code in the IDE, navigate to your IDE plugin or extension marketplace and search for Snyk. This guide focuses on VS Code, but the [other supported IDEs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions) follow a very similar setup flow.
 
 * Open VS Code, Extensions and search for Snyk.
 * Install the Snyk extension.
@@ -61,6 +61,6 @@ The next step in the guide covers fixing issues.
 Additional Resources
 
 * [Product Training: Snyk in the IDE](https://learn.snyk.io/lesson/snyk-in-an-ide)
-* [Snyk Docs: Snyk IDE plugins and extensions](../../../../developer-tools/snyk-ide-plugins-and-extensions/)
-* [Troubleshooting](../../../../developer-tools/snyk-ide-plugins-and-extensions/troubleshooting-ides/)
+* [Snyk Docs: Snyk IDE plugins and extensions](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions)
+* [Troubleshooting](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides)
 {% endhint %}

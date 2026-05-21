@@ -193,5 +193,5 @@ env:
 
 Every Snyk account has this token. After you have created an account with Snyk, you can find the API token in one of two ways:
 
-1. In the UI, go to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained on the page [Revoke and regenerate a Snyk API token](../../../snyk-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token.md).
+1. In the UI, go to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained on the page [Revoke and regenerate a Snyk API token](../../snyk-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token.md).
 2. If you are using the [Snyk CLI](../../snyk-cli/getting-started-with-the-snyk-cli.md) locally, you can retrieve the API token by running `snyk config get api`.

@@ -118,7 +118,7 @@ Snyk supports the following package managers and versions:
 * pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`, `pnpm 10`
 * Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`, `Yarn 4`&#x20;
 
-Snyk's default package registry is [npmjs.org](https://www.npmjs.org/). Private package registries are supported. For more information, visit [Package repository integrations.](../../../scan-with-snyk/snyk-open-source/package-repository-integrations/)
+Snyk's default package registry is [npmjs.org](https://www.npmjs.org/). Private package registries are supported. For more information, visit [Package repository integrations.](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations)
 
 ### Available integrations
 
@@ -140,7 +140,7 @@ Lerna is partially supported.
 * Automatic and manual Fix PRs (for npm, pnpm, and Yarn)
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:npm`  PURLs, using [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/sbom-test) command.
+* Test your app's SBOM and packages using `pkg:npm`  PURLs, using [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command.
 
 ### Language and package manager considerations
 
@@ -313,7 +313,7 @@ ls packages | xargs -I PKG_NAME snyk monitor --file=packages/PKG_NAME/package.js
 
 ### Scanning using npm, pnpm and Yarn
 
-The following table lists the steps to start scanning your dependencies. It covers basic commands, such as `snyk test` and `snyk monitor`. For a full list of CLI commands, see the [CLI commands and options summary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/cli-commands-and-options-summary).
+The following table lists the steps to start scanning your dependencies. It covers basic commands, such as `snyk test` and `snyk monitor`. For a full list of CLI commands, see the [CLI commands and options summary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/cli-commands-and-options-summary).
 
 <table><thead><tr><th width="153.43489583333331">Package manager</th><th>Getting started</th><th>Description</th></tr></thead><tbody><tr><td>npm</td><td><ol><li>Install npm.</li><li>Ensure you are in a directory with npm Project files, that is, <code>package.json</code> and <code>package-lock.json</code>.</li><li>(Optional) Run <code>npm install</code>.</li><li>Run <a href="../../../developer-tools/snyk-cli/cli-commands-and-options-summary.md">Snyk commands</a>.</li><li>(Optional) Run command options for <a href="https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/test#options-for-npm-projects">snyk test</a> and <a href="https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/monitor#options-for-npm-projects">snyk monitor</a>.</li></ol></td><td><p>Snyk analyzes your <code>package-lock.json</code> files to build a dependency tree. </p><p></p><p>If the <code>package-lock.json</code> is missing, Snyk analyzes your <code>node_modules</code> folder. </p><p></p><p>Alternatively, run <code>npm install</code> to generate the lockfile first.</p></td></tr><tr><td>pnpm</td><td><ol><li>Install pnpm.</li><li>Ensure that you are in a directory with pnpm Project files, that is, <code>package.json</code> or <code>pnpm</code>and <code>pnpm-lock.yaml</code>.</li><li>(Optional)  Run <code>pnpm install</code>.</li><li>Run <a href="../../../developer-tools/snyk-cli/cli-commands-and-options-summary.md">Snyk commands</a>.</li><li>(Optional) Run command options for <a href="https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/test#options-for-npm-projects">snyk test</a> and <a href="https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/monitor#options-for-npm-projects">snyk monitor</a>.</li></ol></td><td>Snyk analyzes your<code>pnpm-lock.yaml</code> files to build a dependency tree. <br><br>If the <code>pnpm-lock.yaml</code> is missing, Snyk analyzes your <code>node_modules</code> folder. <br><br>Alternatively, run <code>pnpm install</code> to generate the lockfile first.</td></tr><tr><td>Yarn</td><td><ol><li>Install Yarn.</li><li>Ensure you are in a directory with Yarn Project files, that is, <code>package.json</code> and <code>yarn.lock</code>.</li><li>(Optional) Run <code>yarn install</code></li><li>Run <a href="../../../developer-tools/snyk-cli/cli-commands-and-options-summary.md">Snyk commands</a>.</li><li>(Optional) Run command options for <a href="https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/test#options-for-yarn-projects">snyk test</a> and <a href="https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/monitor#options-for-yarn-projects">snyk monitor</a>.</li></ol></td><td><p>Snyk analyzes your <code>yarn.lock</code> files to build a dependency tree. </p><p></p><p>If the <code>yarn.lock</code> is missing, Snyk analyzes your <code>node_modules</code> folder. </p><p></p><p>Alternatively, run <code>yarn install</code> to generate the lockfile first.</p></td></tr></tbody></table>
 
@@ -356,7 +356,7 @@ To scan all workspaces Projects in the current directory and five sub-directorie
 snyk test --all-projects --strict-out-of-sync=false --detection-depth=6 
 ```
 
-Use a common `.snyk` policy file, if you maintain ignores and patches in one place to be applied for all detected workspaces by using the policy path. See [The .snyk file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/policies/the-.snyk-file).
+Use a common `.snyk` policy file, if you maintain ignores and patches in one place to be applied for all detected workspaces by using the policy path. See [The .snyk file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file).
 
 ```bash
 snyk test --all-projects --strict-out-of-sync=false --policy-path=src/.snyk
@@ -384,4 +384,4 @@ To detect and scan all workspaces in your Yarn Project, use the CLI options iden
 
 For SCM integrations with a Snyk Enterprise plan only, Snyk can monitor container images and their open source or Linux-based packages being used in production using Kubernetes integration to notify customers of known vulnerabilities for applications in production.
 
-For all Snyk plans, where a production integration does not exist, use the [`snyk monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/monitor) CLI command to take a snapshot and monitor what is being pushed to production.
+For all Snyk plans, where a production integration does not exist, use the [`snyk monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) CLI command to take a snapshot and monitor what is being pushed to production.

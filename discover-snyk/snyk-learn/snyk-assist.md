@@ -19,7 +19,7 @@ Snyk Assist enhances your learning experience within the Snyk Learn platform by:
 Snyk Assist utilizes Generative AI to respond to questions based on information retrieved from trusted Snyk sources:
 
 * [Snyk Learn lessons](https://learn.snyk.io/catalog/?format=lesson)
-* [Snyk Documentation](../../)
+* [Snyk Documentation](../)
 
 Snyk Assist **does not** have access to your Snyk tenant data, such as issue and asset information, or Snyk Learn learning history. While interacting with Snyk Assist, we collect and process your queries and conversation history to provide responses and improve our service.
 
@@ -65,4 +65,4 @@ After Snyk Assist is enabled, it is visible and accessible on Snyk Learn for the
 
 ## Data Handling and Safeguards
 
-See [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-snyk-handles-your-data#snyk-learn) for more information on this topic.
+See [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data#snyk-learn) for more information on this topic.

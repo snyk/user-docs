@@ -9,7 +9,7 @@ The remaining pages address [Scanning Projects](./#scanning-projects), [Monitori
 
 ## Scanning Projects
 
-* [The .snyk file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/policies/the-.snyk-file)
+* [The .snyk file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file)
 * [A .snyk policy file in a different directory from the manifest file](a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md)
 * [Failing builds in Snyk CLI](failing-of-builds-in-snyk-cli.md)
 * [Ignore vulnerabilties using Snyk CLI](ignore-vulnerabilities-using-the-snyk-cli.md)

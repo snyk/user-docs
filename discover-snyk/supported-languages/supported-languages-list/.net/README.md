@@ -75,7 +75,7 @@ For .NET with Snyk Open Source, the following features are available:
 * Fix PRs (only for NuGet)
 * License scanning
 * Reports
-* (Only for Paket) Test your app's SBOM and packages using `pkg:nuget` PURLs, using the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/sbom-test) command.
+* (Only for Paket) Test your app's SBOM and packages using `pkg:nuget` PURLs, using the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command.
 
 {% hint style="warning" %}
 Snyk does not support `PackageReference` entries without a version attribute. If your Project is missing this attribute, Snyk cannot open a pull request. Ensure you add versions to all `PackageReference` entries.
@@ -106,7 +106,7 @@ When scanning through an SCM integration, the methodology varies based on your P
 * Modern Projects (SDK-style): For modern `.csproj` formats, the scanner utilises the .NET SDK directly to resolve dependencies, resulting in higher accuracy. This also provides the capability of scanning any Project that can be successfully restored by the `dotnet` SDK itself including `Directory.Build.props` files, `global.json`, or Central Package Management (`Directory.Packages.props`).
 * Legacy Projects (Non-SDK style): For Projects relying on `packages.config`, `project.json`, or XML-style `*.csproj` , `*.vbproj` or `*.fproj` files. The scanner uses static analysis to approximate the dependency graph based on standard NuGet algorithms.
 
-To improve accuracy, migrate to the [Universal Broker](../../../enterprise-setup/snyk-broker/universal-broker/) and [enable](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker#enabling-the-universal-broker-for-enhanced-sca-scanning) it for Open Source Scanning.
+To improve accuracy, migrate to the [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) and [enable](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker#enabling-the-universal-broker-for-enhanced-sca-scanning) it for Open Source Scanning.
 
 ### .NET framework package pruning
 

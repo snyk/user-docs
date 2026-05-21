@@ -87,7 +87,7 @@ As of Android Studio Koala (2024.1.1), JCEF (Java Chromium Embedded Framework) i
 2. Navigate to **Help** > **Find Action...**\
    (Or press `Ctrl+Shift+A` on Windows/Linux, or `Cmd+Shift+A` on macOS.)
 3. In the search box, type **Registry...** and select it.
-4. In the Registry dialog that appears, search for:`ide.browser.jcef.sandbox.enable`
+4. In the Registry dialog that appears, search for: `ide.browser.jcef.sandbox.enable`
 5. Uncheck the box next to it to disable the sandbox.
 
 #### Step 2: Choose a JCEF-Compatible Java Runtime
@@ -95,7 +95,7 @@ As of Android Studio Koala (2024.1.1), JCEF (Java Chromium Embedded Framework) i
 1. Again, navigate to **Help** > **Find Action...**\
    (Or press `Ctrl+Shift+A` on Windows/Linux, or `Cmd+Shift+A` on macOS.)
 2. Search for and select **Choose Boot Java Runtime for the IDE...**
-3. From the list, select a runtime labeled something like:**JetBrains Runtime with JCEF**
+3. From the list, select a runtime labeled something like: **JetBrains Runtime with JCEF**
 4. Click **OK** to apply the change.
 5. Restart Android Studio when prompted.
 

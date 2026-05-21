@@ -38,7 +38,7 @@ After the integration is in place, you can use capabilities such as:
 
 #### Project-level security reports
 
-Snyk produces advanced [remediation reports](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/remediation-reports) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository with the required upgrades or patches.
+Snyk produces advanced [remediation reports](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/remediation-reports) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository with the required upgrades or patches.
 
 The example that follows shows a Project-level security report.
 
@@ -64,7 +64,7 @@ Snyk pull requests are automatically assigned to the default reviewer set in you
 
 Unlike manual pull requests opened from the Bitbucket interface, for the Snyk Bitbucket Cloud integration, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
 
-For more information, see [Automated pull request creation for new fixes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-fix-prs).
+For more information, see [Automated pull request creation for new fixes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-fix-prs).
 {% endhint %}
 
 #### Pull request tests
@@ -77,7 +77,7 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 The example that follows shows a Snyk pull request build check on the Bitbucket DC/Server **Pull Request** page.
 
-![BitBucket DC/Server Pull Request page showing new vulnerability](../../../.gitbook/assets/888.png)
+![BitBucket DC/Server Pull Request page showing new vulnerability](../../.gitbook/assets/888.png)
 
 To review and adjust the pull request tests settings:
 
@@ -88,7 +88,7 @@ To review and adjust the pull request tests settings:
 
 #### Required Builds
 
-The Snyk integration for Bitbucket Data Center/Server now supports the[ Required Builds](https://confluence.atlassian.com/bitbucketserver/checks-for-merging-pull-requests-776640039.html) feature for granular control over pull requests.
+The Snyk integration for Bitbucket Data Center/Server now supports the [Required Builds](https://confluence.atlassian.com/bitbucketserver/checks-for-merging-pull-requests-776640039.html) feature for granular control over pull requests.
 
 You can select which Snyk security checks must pass before a merge can occur. Snyk reports distinct build statuses for different scan types (security vulnerabilities, license compliance, and code analysis), so you can configure your Bitbucket Data Center/Server repository to enforce specific security gates.
 

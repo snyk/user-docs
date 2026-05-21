@@ -71,7 +71,7 @@ The Exploit Prediction Scoring System (EPSS) is updated daily.
 
 Contextual likelihood factors then increase or decrease the likelihood subscore:
 
-* Reachability (for Snyk Open Source - visit [Supported languages list](../../supported-languages/supported-languages-list/))
+* Reachability (for Snyk Open Source - visit [Supported languages list](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list))
 * Transitive depth
 
 ## Risk factors drill down

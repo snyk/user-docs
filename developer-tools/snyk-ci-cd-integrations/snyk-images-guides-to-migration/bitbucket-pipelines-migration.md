@@ -129,6 +129,3 @@ pipelines:
           - snyk test --all-projects -d
 ```
 
-&#x20;
-
-\

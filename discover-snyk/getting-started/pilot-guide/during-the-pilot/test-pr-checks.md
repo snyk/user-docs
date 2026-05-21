@@ -19,7 +19,7 @@ Follow these steps to enable the PR Checks feature:
 
 * Navigate to the **Snyk PR Status Checks** option. Enable it for both Open Source and Code, and define fail conditions for each of them.&#x20;
 * Save the changes and apply them to all overridden Projects if you have already imported your repositories.&#x20;
-* Enable inline comments for a more integrated developer experience. See the [Pull Request experience ](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience)page for more details.&#x20;
+* Enable inline comments for a more integrated developer experience. See the [Pull Request experience ](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/pull-request-experience)page for more details.&#x20;
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfNXo0IULol0ix0VcJ34oOd87JGOdtq4g49PyoUx_pVFpqj5E1GSz0j8Atiu0Ehyk6APwTHfx6xNPqa5ye9-2w9YEMSUwiAhpw0yFEVaecvalkF4eXQz01inGYGPSGEPJvUuIaWDA?key=i_CNrr-DvB8PGUAzq09BT3pc" alt=""><figcaption></figcaption></figure>
 
@@ -51,7 +51,7 @@ Try fixing the vulnerability in a follow-up commit, push the commit, and verify 
 
 Additional Resources
 
-* [Snyk PR Checks](../../../../scan-with-snyk/pull-requests/pull-request-checks/)
+* [Snyk PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks)
 * [Product Training: Snyk PR Checks in your PR/MR](https://learn.snyk.io/lesson/checking-your-code-with-pr-checks/?ecosystem=general)
 {% endhint %}
 

@@ -16,5 +16,3 @@ Required manifest files must be generated before you can perform a scan analysis
 * Be prepared (compiled) into a different directory, that will be used as a reference folder for Snyk scan
 
 <figure><img src="../../../.gitbook/assets/image (263).png" alt=""><figcaption><p>Choose the reference branch or folder</p></figcaption></figure>
-
-\

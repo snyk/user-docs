@@ -84,7 +84,7 @@ The context columns help you understand the impact and risk for an issue based o
 * **PROJECT OWNER** - A user who is defined as the owner of the Project.
 * **PROJECT TAGS** - Tags that are associated with the Project. For details, see [Project tags](../../../snyk-platform-administration/snyk-projects/project-tags.md).
 * **PROJECT TARGET** - The Target name.
-* **PROJECT TARGET REFERENCE** - Specify a reference that differentiates this Project, for example, a branch name or version. For details, see [Group Projects by branch or version for monitoring](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring).
+* **PROJECT TARGET REFERENCE** - Specify a reference that differentiates this Project, for example, a branch name or version. For details, see [Group Projects by branch or version for monitoring](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring).
 * **PROJECT TYPE** - The package manager of the Project.
 
 ### Asset context
@@ -108,7 +108,7 @@ When filtering issues by assets context, issues of archived assets will be exclu
 
 ### Application context
 
-Navigate to the [Application context for SCM integrations](../../../developer-tools/scm-integrations/application-context-for-scm-integrations/) page for more details about enriching the application context data.
+Navigate to the [Application context for SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/application-context-for-scm-integrations) page for more details about enriching the application context data.
 
 {% hint style="info" %}
 When filtering issues by application context, issues of archived assets will be excluded from the results

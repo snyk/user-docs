@@ -6,7 +6,7 @@ See all releases in the [Maven Central Repository](https://search.maven.org/arti
 
 ## Installation of Maven plugin
 
-1. Get your [Snyk API token or Snyk PAT](../../snyk-api/authentication-for-api/).
+1. Get your [Snyk API token or Snyk PAT](../snyk-api/authentication-for-api/).
 2. Add the Snyk Maven Plugin to your `pom.xml` and configure it as needed.
 
 ```xml

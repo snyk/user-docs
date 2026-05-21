@@ -4,7 +4,7 @@
 
 Before managing vulnerabilities with Snyk Code, ensure the following:
 
-* You have completed the steps in [Getting started](../../../discover-snyk/getting-started/).
+* You have completed the steps in [Getting started](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started).
 * Your repositories contain code in a [supported language and platform](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
 * You have [configured Snyk Code](../configure-snyk-code.md).
 
@@ -26,7 +26,7 @@ The following provides an overview of the testing process in Snyk Code based on 
 
 ### Retesting code repository
 
-If you want to check for the most recent vulnerabilities in your repository, you can do a manual test by selecting the **Retest now** option. This will trigger Snyk Code to take a fresh snapshot of your repository and analyze its source code files. The results will then be displayed on the Code Analysis page. Take into consideration that Snyk counts a manual test as a new test. See [What counts as a test?](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/what-counts-as-a-test)
+If you want to check for the most recent vulnerabilities in your repository, you can do a manual test by selecting the **Retest now** option. This will trigger Snyk Code to take a fresh snapshot of your repository and analyze its source code files. The results will then be displayed on the Code Analysis page. Take into consideration that Snyk counts a manual test as a new test. See [What counts as a test?](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/what-counts-as-a-test)
 
 You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Exclude directories and files from Project import](../../import-project-repository/exclude-directories-and-files-from-project-import.md).
 
@@ -57,7 +57,7 @@ Sort vulnerability issues by displaying those with the highest severity levels f
 
 Filter discovered vulnerability issues according to different criteria shown in the following table.
 
-<table><thead><tr><th width="232">Vulnerability issue filter</th><th>Description</th></tr></thead><tbody><tr><td><a href="../../../manage-risk/prioritize-issues-for-fixing/severity-levels.md">Severity level</a></td><td>Show issues with a certain severity level. Snyk Code uses only <strong>High</strong>, <strong>Medium</strong>, and <strong>Low</strong> severity levels, without <strong>Critical</strong>.</td></tr><tr><td><a href="../../../manage-risk/prioritize-issues-for-fixing/priority-score.md#calculation-of-priority-score">Priority score</a></td><td>Show issues in a certain priority score range.</td></tr><tr><td>Status</td><td>Show <strong>Open</strong> issues or issues that were <strong>Ignored</strong>.</td></tr><tr><td><a href="../../../supported-languages/supported-languages-package-managers-and-frameworks.md">Languages</a></td><td>Show issues that were discovered in code files that were written in a specific language. Only programming languages discovered in the analyzed repository are displayed in the Filter pane.</td></tr><tr><td><a href="../snyk-code-security-rules/">Vulnerability types</a></td><td>Show issues with a certain Vulnerability Type. See <a href="../snyk-code-security-rules/">Snyk Code security rules</a>.</td></tr></tbody></table>
+<table><thead><tr><th width="232">Vulnerability issue filter</th><th>Description</th></tr></thead><tbody><tr><td><a href="../../../manage-risk/prioritize-issues-for-fixing/severity-levels.md">Severity level</a></td><td>Show issues with a certain severity level. Snyk Code uses only <strong>High</strong>, <strong>Medium</strong>, and <strong>Low</strong> severity levels, without <strong>Critical</strong>.</td></tr><tr><td><a href="../../../manage-risk/prioritize-issues-for-fixing/priority-score.md#calculation-of-priority-score">Priority score</a></td><td>Show issues in a certain priority score range.</td></tr><tr><td>Status</td><td>Show <strong>Open</strong> issues or issues that were <strong>Ignored</strong>.</td></tr><tr><td><a href="https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks">Languages</a></td><td>Show issues that were discovered in code files that were written in a specific language. Only programming languages discovered in the analyzed repository are displayed in the Filter pane.</td></tr><tr><td><a href="../snyk-code-security-rules/">Vulnerability types</a></td><td>Show issues with a certain Vulnerability Type. See <a href="../snyk-code-security-rules/">Snyk Code security rules</a>.</td></tr></tbody></table>
 
 <figure><img src="../../../.gitbook/assets/projects-vulnerability-filters.png" alt="Overview of vulnerability issue filtering, sorting, and grouping."><figcaption><p>Vulnerability issue filtering, sorting, and grouping</p></figcaption></figure>
 
@@ -67,7 +67,7 @@ To scan your repositories and manage code vulnerabilities, you can check the fol
 
 ### View vulnerabilities in a repository
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-platform-administration/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups-and-organizations).
 2. Navigate to the **Projects** and select the Target folder containing your repository's Projects.
 3. Open **Code analysis** Project to see all vulnerability issues detected by Snyk Code.
 
@@ -101,7 +101,7 @@ On the **History** page, only two distinct snapshots are displayed. A snapshot i
 
 To view Project history:
 
-1. Log in to the Snyk Web UI and select your [Group and Organization](../../../snyk-platform-administration/groups-and-organizations/).
+1. Log in to the Snyk Web UI and select your [Group and Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups-and-organizations).
 2. Navigate to the **Projects** and select the Target folder containing your repository's Projects.
 3. Open **Code analysis** Project and navigate to **History**.
 4. Select a test from the list to view the Project historical snapshot.

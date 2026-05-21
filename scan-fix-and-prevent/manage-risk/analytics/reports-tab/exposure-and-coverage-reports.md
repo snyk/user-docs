@@ -43,7 +43,7 @@ The available filters are:
 | Tags                 | The asset tags. For more details about tagging assets using a policy, see the [Tagging policy](../../policies/assets-policies/use-cases-for-policies/tagging-policy.md) page.                                                                                                                                                                                         |
 | \*Title              | The name of the component for which the application context catalog was configured.                                                                                                                                                                                                                                                                                   |
 
-**\***&#x41;ll filters marked with `*` are visible only if you configured the [application context](../../../developer-tools/scm-integrations/application-context-for-scm-integrations/) catalog for your SCM integrations.
+**\*** All filters marked with `*` are visible only if you configured the [application context](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/application-context-for-scm-integrations) catalog for your SCM integrations.
 
 ### Repository coverage widget
 

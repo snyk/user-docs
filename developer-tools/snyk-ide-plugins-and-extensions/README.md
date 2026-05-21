@@ -1,7 +1,7 @@
 # Snyk IDE plugins and extensions
 
 {% hint style="info" %}
-If Snyk is hosting your data in a region other than `SNYK US-01`, you may set the custom endpoint in the IDE. For more information, see [IDEs URLS](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#ides-urls) on the [Regional hosting and data residency](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency) page.\
+If Snyk is hosting your data in a region other than `SNYK US-01`, you may set the custom endpoint in the IDE. For more information, see [IDEs URLS](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls) on the [Regional hosting and data residency](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency) page.\
 Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 {% endhint %}
 

@@ -6,7 +6,7 @@ If you have several Organizations, one of these Organizations is set by default 
 
 * On the Snyk Web UI: The Organization that is displayed by default when you log in to your Snyk account.
 * In the Snyk CLI: The Organization that is used by default for the test count when you scan through the CLI. To change the Organization used for the test count in the CLI, use the\
-  `--org=<ORG_ID>` option. For more information, see the CLI help for the test commands: [Snyk test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/test), [Snyk Code test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/code-test), [Snyk Container test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/container-test), or [Snyk IaC test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/iac-test).
+  `--org=<ORG_ID>` option. For more information, see the CLI help for the test commands: [Snyk test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/test), [Snyk Code test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/code-test), [Snyk Container test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-test), or [Snyk IaC test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/iac-test).
 
 Follow these steps to change your Preferred Organization:
 

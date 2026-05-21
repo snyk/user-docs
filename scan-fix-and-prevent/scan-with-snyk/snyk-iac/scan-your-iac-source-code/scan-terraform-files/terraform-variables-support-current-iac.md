@@ -19,7 +19,7 @@ You can load an external variable definitions file by using the `--var-file` opt
 
 This loads the `vars.tf` definitions file from the `myproject` directory, dereferences any variables if they exist, and applies them to the context of the scanned path, `myproject/staging/networking` in this example.
 
-For more information, see the `IAC test` [help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/iac-test).
+For more information, see the `IAC test` [help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/iac-test).
 
 ## Supported Terraform expressions
 

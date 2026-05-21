@@ -48,7 +48,7 @@ The training data is regularly checked for quality to optimize the performance o
 
 Snyk does not use customer code submitted to Snyk Agent Fix for training purposes.
 
-For more information on how Snyk manages data, see [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-snyk-handles-your-data).
+For more information on how Snyk manages data, see [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).
 
 ## How Snyk Agent Fix works
 
@@ -59,7 +59,7 @@ A representation of information flow involved in fixing one issue is presented i
 ## Requirements for Snyk Agent Fix
 
 * [Snyk Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide/trial-limitations) enabled
-* Snyk IDE Plugin for [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview), [Visual Studio](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022), [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations), or [JetBrains IDEs](../../../developer-tools/snyk-ide-plugins-and-extensions/jetbrains-plugin/)
+* Snyk IDE Plugin for [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview), [Visual Studio](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022), [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations), or [JetBrains IDEs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin)
 
 ## Enable Snyk Agent Fix
 
@@ -78,8 +78,8 @@ If you have enabled the feature at the Group level and want to switch to an Orga
 {% hint style="info" %}
 **Before you begin**
 
-* Ensure you have automated fixes enabled in Snyk Preview to work with your [Snyk IDE plugin or extension](../../../developer-tools/snyk-ide-plugins-and-extensions/).
-* Save the files and [scan your code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli) to generate a fresh set of results.
+* Ensure you have automated fixes enabled in Snyk Preview to work with your [Snyk IDE plugin or extension](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions).
+* Save the files and [scan your code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli) to generate a fresh set of results.
 * You should see a zap icon next to all Snyk Code issues that can be automatically fixed.
 {% endhint %}
 

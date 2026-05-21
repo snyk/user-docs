@@ -20,8 +20,8 @@ Each inventory layout is presented in a table format, detailing the available ke
 
 Assets in Snyk Essentials are meaningful, real-world components in an application’s SDLC. The following asset types are available:
 
-* Repository assets [**`Billable`**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-does-snyk-count-assets#billable-assets)
-* Container images [**`Billable`**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-does-snyk-count-assets#billable-assets)
+* Repository assets [**`Billable`**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-does-snyk-count-assets#billable-assets)
+* Container images [**`Billable`**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-does-snyk-count-assets#billable-assets)
 * Packages
 * Scanned artifacts
 
@@ -302,4 +302,4 @@ The Actions column provides a workflow to set up the SCM integration at the Grou
 
 If a Group level integration has not been set up, repositories discovered at the Organization level display a **Set up integration** button under the **Actions** column. If you set up the integration at the Group level, this option becomes unavailable.
 
-To add context enrichment, find an asset and select **Set up integration**. For configuration details, see [Snyk SCM Integrations](../developer-tools/scm-integrations/organization-level-integrations/).
+To add context enrichment, find an asset and select **Set up integration**. For configuration details, see [Snyk SCM Integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).

@@ -24,19 +24,19 @@ For a detailed breakdown of user roles and their associated access permissions, 
 
 ### Group reports
 
-Select [**Reports**](../../../manage-risk/analytics/reports-tab/) to view the vulnerability status of the Organizations in your Group in one place as a report.
+Select [**Reports**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab) to view the vulnerability status of the Organizations in your Group in one place as a report.
 
 ### Group inventory
 
-Select [**Inventory**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-assets/manage-assets#inventory-menu) to view, filter, and manage your assets.
+Select [**Inventory**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets#inventory-menu) to view, filter, and manage your assets.
 
 ### Group issues
 
-Select [**Issues**](../../../manage-risk/prioritize-issues-for-fixing/) to better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. **Issues** offer a centralized view of all the issues identified by Snyk with additional asset context.
+Select [**Issues**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing) to better identify and prioritize your Container, Code, and Open Source issues based on the risk they pose to your application. **Issues** offer a centralized view of all the issues identified by Snyk with additional asset context.
 
 ### Group dependencies
 
-You can [view dependencies](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/dependencies-and-licenses/view-dependencies) and [license information](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/dependencies-and-licenses/view-licenses) for all Projects in your Group or Organization using the **Dependencies** option in your Group or Organization menu.
+You can [view dependencies](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/dependencies-and-licenses/view-dependencies) and [license information](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/dependencies-and-licenses/view-licenses) for all Projects in your Group or Organization using the **Dependencies** option in your Group or Organization menu.
 
 ### Group Policies
 
@@ -48,7 +48,7 @@ If your policy is set to run daily, then the policy is run 3 hours after the 24-
 
 ### Group integrations
 
-Select **Integrations** to view and configure the available integrations for [SCM integrations](../../../developer-tools/scm-integrations/group-level-integrations/).
+Select **Integrations** to view and configure the available integrations for [SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations).
 
 ### Group members
 
