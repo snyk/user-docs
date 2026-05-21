@@ -149,6 +149,8 @@
     * [Windsurf guide](integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/windsurf-guide.md)
   * [Troubleshooting](integrations/snyk-studio-agentic-integrations/troubleshooting.md)
   * [Usage analytics](integrations/snyk-studio-agentic-integrations/usage-analytics.md)
+* [Cloud AI platforms](integrations/cloud-ai-platforms/README.md)
+  * [Anthropic's Claude Enterprise](integrations/cloud-ai-platforms/anthropic-claude-enterprise.md)
 * [Jira and Slack integrations](integrations/jira-and-slack-integrations/README.md)
   * [Snyk Security in Jira Cloud integration](integrations/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration.md)
   * [Jira integration](integrations/jira-and-slack-integrations/jira-integration.md)
