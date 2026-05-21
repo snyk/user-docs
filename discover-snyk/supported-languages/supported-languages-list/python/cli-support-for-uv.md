@@ -10,7 +10,7 @@ CLI support for uv is in Early Access and available only with Enterprise plans. 
 
 Ensure you have `uv` version 0.9.29 or later installed.
 
-Snyk uses the `uv.lock` file to build the dependency graph for a `uv` application. This file must be present for Snyk to identify the Project, scan dependencies, and identify issues. Ensure you check this file into your repository and that it reflects your current `pyproject.toml`. That is, ensure you run `uv lock` after adding, removing, or updating dependencies.
+Snyk uses the `uv.lock` file to build the dependency graph for a `uv` application. Both `uv.lock` and `pyproject.toml` must be present for Snyk to identify the Project, scan dependencies, and identify issues. Ensure you check `uv.lock` into your repository and that it reflects your current `pyproject.toml`. That is, ensure you run `uv lock` after adding, removing, or updating dependencies.
 
 You do not need to run `uv sync` before you run the Snyk CLI.
 
