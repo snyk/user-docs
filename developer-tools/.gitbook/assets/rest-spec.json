@@ -16396,7 +16396,7 @@
                         "type": "string"
                       },
                       "description": {
-                        "description": "A markdown-formatted optional description of this remedy. Links are not permitted.",
+                        "description": "A markdown-formatted optional description of this remedy.",
                         "maxLength": 20480,
                         "minLength": 1,
                         "type": "string"
