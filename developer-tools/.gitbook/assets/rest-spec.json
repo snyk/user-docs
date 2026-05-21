@@ -27099,6 +27099,14 @@
         },
         "type": "object"
       },
+      "resolve_uv_options": {
+        "properties": {
+          "include_dev_dependencies": {
+            "type": "boolean"
+          }
+        },
+        "type": "object"
+      },
       "scm_credentials": {
         "additionalProperties": false,
         "description": "The encrypted SCM credentials object passed along from Registry",
