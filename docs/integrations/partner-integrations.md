@@ -176,7 +176,6 @@ To see the documentation for each integration, click on the integration name in 
 | [Cortex](https://docs.cortex.io/)                         | Cortex is the internal developer portal that cuts noise for developers with paved paths to production. Catalog, score, and drive action to improve software.                                                           |
 | [Mindflow](https://mindflow.io/integrations/snyk)         | Mindflow is a no-code, AI-driven enterprise orchestration and automation platform for Security, IT, and Cloud teams.                                                                                                   |
 | [Panther](https://panther.com/integrations/snyk)          | Panther is a SIEM platform that brings together your Snyk findings with the rest of your security data to provide greater insights, reporting, and alerting in one place.                                              |
-| [Phylum](https://docs.phylum.io/integrations/snyk)        | The Phylum App for Snyk augments Snyk SCA to alert users to zero-day vulnerabilities and software supply chain attacks, like malware, typosquats and dependency confusion.                                             |
 | [Slack](https://snyk.io/partners/slack/)                  | Snyk surfaces vulnerabilities found across your software projects and presents actionable notifications within relevant Slack channels, including recommended fixes and alternative mitigation advice where necessary. |
 
 ## Reporting and Analytics
