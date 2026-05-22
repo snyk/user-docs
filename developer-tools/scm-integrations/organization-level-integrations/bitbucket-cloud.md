@@ -27,7 +27,7 @@ To ensure continued support and functionality, update your Bitbucket Cloud integ
 
     See the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/) for more details about the procedure.
 5. Enter the email and the [API key for the Bitbucket account](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#api-tokens) you created, and **save** your changes.\
-   You can find your email under the Bitbucket **Personal settings.**\
+   You can find your email under the Bitbucket **Personal settings**.\
    Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the confirmation message **Bitbucket Cloud settings successfully updated** appears.
 
 ### How to add Bitbucket repositories to Snyk
@@ -74,14 +74,14 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 The example that follows shows a Snyk pull request build check on the Bitbucket Cloud **Pull Request** page.
 
-<figure><img src="../../../.gitbook/assets/888.png" alt="Example of a Snyk pull request build check on the Bitbucket Cloud Pull Request page"><figcaption><p>Example of a Snyk pull request build check on the Bitbucket Cloud <strong>Pull Request</strong> page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/888.png" alt="Example of a Snyk pull request build check on the Bitbucket Cloud Pull Request page"><figcaption><p>Example of a Snyk pull request build check on the Bitbucket Cloud <strong>Pull Request</strong> page</p></figcaption></figure>
 
 To review and adjust the pull request tests settings:
 
 1. In Snyk, go to **Organization settings** > **Integrations > Source control** > **Bitbucket Cloud**, and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests** > **Open Source Security & Licenses**, and configure the relevant options.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-03-16 at 10.07.50.png" alt="Configuring the options for pull request Open Source Security &#x26; Licenses"><figcaption><p>Configuring the options for pull request Open Source Security &#x26; Licenses</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-03-16 at 10.07.50.png" alt="Configuring the options for pull request Open Source Security &#x26; Licenses"><figcaption><p>Configuring the options for pull request Open Source Security Licenses</p></figcaption></figure>
 
 ### Required permission scope for the Bitbucket Cloud integration
 
@@ -106,12 +106,12 @@ When you disconnect Snyk from your repository Projects, your credentials are rem
 If you choose to re-enable this integration, you must re-enter your credentials and activate your Projects.
 {% endhint %}
 
-To disconnect this integration, in **Organization settings** > **Integrations:**
+To disconnect this integration, in **Organization settings** > **Integrations**:
 
 1. In your list of integrations, select the Bitbucket integration you want to deactivate and click **Edit settings** to open a page with the current status of your integration.\
    \
    The page includes sections specific to each integration, where you can manage your credentials, API key, Service Principal, and connection details.
-2. Scroll to the relevant section and click **Disconnect.**
+2. Scroll to the relevant section and click **Disconnect**.
 
 ### Migrate to the Bitbucket Cloud App
 

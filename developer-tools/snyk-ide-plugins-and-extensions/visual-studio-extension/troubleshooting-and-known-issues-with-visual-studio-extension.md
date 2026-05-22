@@ -27,9 +27,9 @@ Snyk plugins are not supported on any operating system that has reached End Of L
 When you enable `debug`, your code may be logged in the IDE log files, for example, the `snyk-extension.log` file.
 {% endhint %}
 
-To enable Snyk Language Server debug logs in Visual Studio, add `-d` parameter through the **Snyk** **Extension Settings** > **Solution Settings** > **Additional Parameters**.
+To enable Snyk Language Server debug logs in Visual Studio, add `-d` parameter through the **Snyk Extension Settings** > **Solution Settings** > **Additional Parameters**.
 
-<figure><img src="../../../.gitbook/assets/debug_logs.png" alt=""><figcaption><p>Adding the debug parameter</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/debug_logs.png" alt=""><figcaption><p>Adding the debug parameter</p></figcaption></figure>
 
 Press OK and restart the IDE after adding the parameter.
 
@@ -44,7 +44,7 @@ You can find logs in the user's AppData directory:
 * From the main menu, navigate to **View** > **Output**.
 * In the Output panel, select the Snyk language server from the dropdown list to see its logs.
 
-<figure><img src="../../../.gitbook/assets/image (167).png" alt=""><figcaption><p>Visual Studio Output window with the Snyk Language Server debug logs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (167).png" alt=""><figcaption><p>Visual Studio Output window with the Snyk Language Server debug logs</p></figcaption></figure>
 
 ### Visual Studio versions
 
@@ -52,7 +52,7 @@ You can find logs in the user's AppData directory:
 
 Navigate to **Help** > **About Microsoft Visual Studio** to open the window with information about the IDE, including the version.
 
-<figure><img src="../../../.gitbook/assets/image (177).png" alt="Visual Studio verson information"><figcaption><p>Visual Studio verson information</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (177).png" alt="Visual Studio verson information"><figcaption><p>Visual Studio verson information</p></figcaption></figure>
 
 If you are communicating with Snyk Support, provide the version number highlighted at the top left in the screen image. This is the VS version.
 

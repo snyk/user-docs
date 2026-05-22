@@ -4,23 +4,23 @@
 Visual Studio 2026 not supported.
 {% endhint %}
 
-## **Scan early, fix as you develop: elevate your security posture**
+## Scan early, fix as you develop: elevate your security posture
 
 Integrating security checks early in your development lifecycle helps you pass security reviews seamlessly and avoid expensive fixes down the line.
 
 The Snyk Visual Studio extension allows you to analyze your code, infrastructure configuration, and open-source dependencies. With actionable insights directly in your IDE, you can address issues as they arise.
 
-**Key features:**
+**Key features**:
 
-* **Comprehensive scanning:** The extension scans for a wide range of security issues, including:
-  * [**Open Source Security**](https://snyk.io/product/open-source-security-management/)**:** Detects vulnerabilities and license issues in both direct and transitive open-source dependencies. Automated fix suggestions simplify remediation. Explore more in the [Snyk Open Source documentation](https://docs.snyk.io/scan-using-snyk/snyk-open-source).
-  * [**Code Security**](https://snyk.io/product/snyk-code/)**:** Identifies security vulnerabilities in your custom code. Explore more in the [Snyk Code documentation](https://docs.snyk.io/scan-using-snyk/snyk-code).
-  * [**IaC Security**](https://snyk.io/product/infrastructure-as-code-security/)**:** Uncovers configuration issues in your Infrastructure as Code templates (Terraform, Kubernetes, CloudFormation, Azure Resource Manager). Explore more in the [IaC documentation](https://docs.snyk.io/scan-using-snyk/snyk-iac).
-* **Broad language and framework support:** Snyk Open Source and Snyk Code cover a wide array of package managers, programming languages, and frameworks, with ongoing updates to support the latest technologies. For the most up-to-date information on supported languages, package managers, and frameworks, see the [supported language technologies pages](https://docs.snyk.io/supported-languages-package-managers-and-frameworks).
+* **Comprehensive scanning**: The extension scans for a wide range of security issues, including:
+  * [**Open Source Security**](https://snyk.io/product/open-source-security-management/): Detects vulnerabilities and license issues in both direct and transitive open-source dependencies. Automated fix suggestions simplify remediation. Explore more in the [Snyk Open Source documentation](https://docs.snyk.io/scan-using-snyk/snyk-open-source).
+  * [**Code Security**](https://snyk.io/product/snyk-code/): Identifies security vulnerabilities in your custom code. Explore more in the [Snyk Code documentation](https://docs.snyk.io/scan-using-snyk/snyk-code).
+  * [**IaC Security**](https://snyk.io/product/infrastructure-as-code-security/): Uncovers configuration issues in your Infrastructure as Code templates (Terraform, Kubernetes, CloudFormation, Azure Resource Manager). Explore more in the [IaC documentation](https://docs.snyk.io/scan-using-snyk/snyk-iac).
+* **Broad language and framework support**: Snyk Open Source and Snyk Code cover a wide array of package managers, programming languages, and frameworks, with ongoing updates to support the latest technologies. For the most up-to-date information on supported languages, package managers, and frameworks, see the [supported language technologies pages](https://docs.snyk.io/supported-languages-package-managers-and-frameworks).
 
 ## How to install and set up the extension
 
-**Note:** For information about the versions of Visual Studio supported by the Visual Studio extension, see [Snyk IDE plugins and extensions](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions). Snyk recommends always using the latest version of the Visual Studio extension.
+**Note**: For information about the versions of Visual Studio supported by the Visual Studio extension, see [Snyk IDE plugins and extensions](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions). Snyk recommends always using the latest version of the Visual Studio extension.
 
 You can use the Snyk Visual Studio extension in the following environments:
 
@@ -31,9 +31,9 @@ Install the plugin at any time free of charge from the [Visual Studio marketplac
 
 After the extension is installed, use Snyk through the **Extensions > Snyk** menu.
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption><p>Snyk extensions menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption><p>Snyk extensions menu</p></figcaption></figure>
 
-You can also open the Snyk tool window using **View > Other Windows > Snyk**_._
+You can also open the Snyk tool window using **View** > **Other Windows** > **Snyk**.
 
 When the extension is installed, it automatically downloads the [Snyk CLI,](https://docs.snyk.io/snyk-cli) which includes the [Language Server](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server).
 

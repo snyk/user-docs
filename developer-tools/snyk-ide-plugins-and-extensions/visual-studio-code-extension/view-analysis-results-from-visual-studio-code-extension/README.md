@@ -6,15 +6,15 @@ Snyk analysis shows a list of security vulnerabilities and code issues in the ap
 
 The **Snyk analysis panel** on the left shows the time the analysis took and a list of issues with the suggestions found for those issues.
 
-<figure><img src="../../../../.gitbook/assets/SCR-20241024-rqfj.png" alt="Snyk Security extension with Snyk Code issue"><figcaption><p>Snyk Security extension with Snyk Code issue</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SCR-20241024-rqfj.png" alt="Snyk Security extension with Snyk Code issue"><figcaption><p>Snyk Security extension with Snyk Code issue</p></figcaption></figure>
 
 Each issue contains a severity icon that has the following meaning:
 
 | ![](<../../../../.gitbook/assets/image (50) (1).png>) Critical severity | May allow attackers access to sensitive data and to run code on your application.                                                            |
 | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../../../../.gitbook/assets/image (29).png>) High severity         | May allow attackers access to sensitive data on your application.                                                                            |
-| ![](<../../../../.gitbook/assets/image (62).png>) Medium severity       | May allow attackers under some conditions to have access to sensitive data on your application.                                              |
-| ![](<../../../../.gitbook/assets/image (37).png>) Low severity          | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+| ![](<../../../.gitbook/assets/image (29).png>) High severity         | May allow attackers access to sensitive data on your application.                                                                            |
+| ![](<../../../.gitbook/assets/image (62).png>) Medium severity       | May allow attackers under some conditions to have access to sensitive data on your application.                                              |
+| ![](<../../../.gitbook/assets/image (37).png>) Low severity          | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 ## Scan configuration
 
@@ -52,15 +52,15 @@ In Visual Studio Code version 2.21.0 and later, you can choose any folder as you
 
 To apply the filter and see only the new issues, use the **total** or **new** toggle in the summary panel.
 
-<figure><img src="../../../../.gitbook/assets/image (272).png" alt=""><figcaption><p>Summary panel with a toggle that shows the total number of issues, and the number of issues in the checked out branch or current folder</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (272).png" alt=""><figcaption><p>Summary panel with a toggle that shows the total number of issues, and the number of issues in the checked out branch or current folder</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (271).png" alt=""><figcaption><p>Net new issues filter enabled after the user clicks on the total/new issues toggle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (271).png" alt=""><figcaption><p>Net new issues filter enabled after the user clicks on the total/new issues toggle</p></figcaption></figure>
 
 You can also enable the net new issues feature in the [scan configuration](./#scan-configuration) settings for the extension.
 
 For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as shown in the screen image that follows:
 
-<figure><img src="../../../../.gitbook/assets/SCR-20241024-ruvq.png" alt="Successful state. No Net New issues found." width="304"><figcaption><p>Successful state. No net new issues found.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SCR-20241024-ruvq.png" alt="Successful state. No Net New issues found." width="304"><figcaption><p>Successful state. No net new issues found.</p></figcaption></figure>
 
 ### Changing the base branch
 

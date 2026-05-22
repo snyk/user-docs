@@ -85,7 +85,7 @@ When you first roll out your SCM integration, Snyk recommends that you start wit
 1. Decide to apply PR testing for your integrations at the Organization level, or for specific Projects.
 2. Set the Fail conditions as described in the section [Manage PR Check settings](deployment-recommendations.md#manage-pr-check-settings):
    * Select the fail condition **Only fail when the PR is adding a dependency with issues**.
-   * Check both **Only Fail for high or critical severity issues** and **Only** **fail when the issues found have a fix available**.
+   * Check both **Only Fail for high or critical severity issues** and **Only fail when the issues found have a fix available**.
 
 ## Stage 4: Enable Blocking PRs
 
@@ -103,9 +103,9 @@ To align vulnerability severity with your internal policy, use security policies
 
 Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk emails you and opens automated PRs with fixes for the repositories.
 
-To configure the automatic fix PR settings for all Projects in an Organization, select the relevant Organization and navigate to Organization **Settings** > **Integrations > Edit Settings.**
+To configure the automatic fix PR settings for all Projects in an Organization, select the relevant Organization and navigate to Organization **Settings** > **Integrations > Edit Settings**.
 
-<div align="center"><figure><img src="../../.gitbook/assets/image (101).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure></div>
+<div align="center"><figure><img src="../.gitbook/assets/image (101).png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure></div>
 
 {% hint style="info" %}
 Settings can also be configured per Project by selecting the specific Project in your Organization and navigating to the **Settings** tab. For more information, see [View and edit Project settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/view-and-edit-project-settings).
@@ -147,7 +147,7 @@ Snyk supports automatic upgrade PRs for npm, Yarn, and Maven-Central Projects th
 To set PR Settings on the Project level and override the PR settings configured at the Organization level:
 
 1. Open the Organization for which you would like to enable automatic upgrade PRs and go to the **Projects** tab.
-2. Select and expand the relevant Project, select the relevant Target, and using the cog icon, open the **Settings.**
+2. Select and expand the relevant Project, select the relevant Target, and using the cog icon, open the **Settings**.
 3. In the Settings area, in the left panel menu, click the Integration settings to apply unique settings for that specific Project.
 4. In settings that load, scroll to the **Automatic dependency upgrade pull requests** and click **Disabled**.
 5. In the options that appear:

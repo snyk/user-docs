@@ -34,7 +34,7 @@ GitLab account with `Maintainer` permission.
 ### Azure Repositories (TFS) SCM token
 
 * Format: `AZURE_REPOS_TOKEN=` - an Azure Repos personal access token.
-* Scopes: `Custom defined`, `Code:` `Read & write`_._
+* Scopes: `Custom defined`, `Code:` `Read & write`.
 
 ### Bitbucket Server/Data Center SCM token
 
@@ -52,7 +52,7 @@ The setup process for Universal Broker involves:
 
 ### Create a GitHub App for Universal Broker
 
-To use the GitHub Cloud App with Universal Broker, you must create your own GitHub App on your GitHub Cloud instance.&#x20;
+To use the GitHub Cloud App with Universal Broker, you must create your own GitHub App on your GitHub Cloud instance.
 
 1. Copy the following URL and paste it into a text editor.
 
@@ -81,7 +81,7 @@ https://github.com/settings/apps/new?name=Snyk&description=Snyk%20helps%20you%20
 If you choose to install the app only in specific repositories, the app works only in those repositories. You can return to this screen and edit where the app is installed if you want to add it to additional repositories.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (241).png" alt=""><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
 
 9. Copy the `InstallationID`. These are the numbers at the end of the page URL. You must enter it when you create the Universal Broker connection to your GitHub Cloud app. \
    For example, if the page URL is `https://github.com/settings/installations/12345678`, the `InstallationID` is `12345678`.
@@ -151,7 +151,7 @@ To use the GitHub Server App with Universal Broker you must create your own GitH
 If you choose to install the app only in specific repositories, the app works only in those repositories. You can return to this screen and edit where the app is installed if you want to add it to additional repositories.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (241).png" alt=""><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
 
 9. Copy the `InstallationID`. These are the numbers at the end of the page URL. You must enter it when you create the Universal Broker connection to your GitHub Server app. \
    For example, if the page URL is `https://github.com/settings/installations/12345678`, the `InstallationID` is `12345678`.

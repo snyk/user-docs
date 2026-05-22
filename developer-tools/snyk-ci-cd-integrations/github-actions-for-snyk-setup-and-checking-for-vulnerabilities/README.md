@@ -121,7 +121,7 @@ jobs:
 
 ## GitHub Code Scanning support
 
-Snyk GitHub Actions support integration with GitHub Code Scanning to show vulnerability information on the GitHub Security tab. The following applies to Snyk GitHub Actions for Open Source languages and package manager&#x73;**.** For information on specific languages, package managers, and processes see the pages listed in [GitHub Actions for Open Source languages and package managers](./#github-actions-for-open-source-languages-and-package-managers) and GitHub Actions for Snyk Container and Snyk Infrastructure as Code.
+Snyk GitHub Actions support integration with GitHub Code Scanning to show vulnerability information on the GitHub Security tab. The following applies to Snyk GitHub Actions for Open Source languages and package managers. For information on specific languages, package managers, and processes see the pages listed in [GitHub Actions for Open Source languages and package managers](./#github-actions-for-open-source-languages-and-package-managers) and GitHub Actions for Snyk Container and Snyk Infrastructure as Code.
 
 Using `--sarif-file-output` [Snyk CLI ](../../snyk-cli/cli-commands-and-options-summary.md)option and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
 
@@ -156,7 +156,7 @@ jobs:
 
 After you upload to GitHub Code Scanning support, you will see vulnerabilities on the GitHub Security tab as shown in the following screen image.
 
-<figure><img src="../../../.gitbook/assets/GitHub-showing-uploaded-vulnerabilty.png" alt="GitHub Security tab showing uploaded vulnerability"><figcaption><p>GitHub Security tab showing uploaded vulnerability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/GitHub-showing-uploaded-vulnerabilty.png" alt="GitHub Security tab showing uploaded vulnerability"><figcaption><p>GitHub Security tab showing uploaded vulnerability</p></figcaption></figure>
 
 ## Use your own development environment
 

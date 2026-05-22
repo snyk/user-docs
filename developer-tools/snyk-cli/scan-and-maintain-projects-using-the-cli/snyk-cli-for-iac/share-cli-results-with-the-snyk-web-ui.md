@@ -43,13 +43,13 @@ This sends a snapshot of your current configuration issues to your Snyk dashboar
 
 Log in to the Snyk Web UI and navigate to your Organization Project page to see the most recent snapshot of your scanned Project.
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt="Newly scanned Project listed on the Projects page"><figcaption><p>Newly scanned Project listed on the Projects page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt="Newly scanned Project listed on the Projects page"><figcaption><p>Newly scanned Project listed on the Projects page</p></figcaption></figure>
 
 You can also open the Project itself and see the Project details:
 
-<figure><img src="../../../../.gitbook/assets/image (395).png" alt="Project details for a Project"><figcaption><p>Project details for a Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (395).png" alt="Project details for a Project"><figcaption><p>Project details for a Project</p></figcaption></figure>
 
-## **Ignores**
+## Ignores
 
 You can ignore issues using the Snyk Web UI or by creating a `.snyk` policy file along with your Project when scanning. For more information, see [Iac Ignores using the .snyk policy file](iac-ignores-using-the-.snyk-policy-file.md).
 

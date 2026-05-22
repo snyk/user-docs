@@ -18,7 +18,7 @@ You can define the target Organization in the Snyk CLI by using the `--org` CLI 
 * You can define the target Organization using its `orgslugname` as displayed in the address bar of the browser in the Snyk UI.
 * Alternatively, you can define the target Organization using its Organization ID, found on the Organization settings page.
 
-<figure><img src="../../../.gitbook/assets/image1.png" alt=""><figcaption><p>Organization ID</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image1.png" alt=""><figcaption><p>Organization ID</p></figcaption></figure>
 
 For more information, see [How to select the Organization to use in the CLI.](../../snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md)
 
@@ -31,7 +31,7 @@ For instructions on authenticating with Snyk, see [Authenticate the CLI with you
 Snyk supports the following approaches to add tests to a build pipeline:
 
 * **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](../jenkins-plugin-integration-with-snyk.md), [Team City](../teamcity-jetbrains-integration-using-the-snyk-security-plugin/), [Bitbucket Pipelines](../bitbucket-pipelines-integration-using-a-snyk-pipe/), and [Azure Pipelines](../azure-pipelines-integration/).
-* **Snyk CLI:** Teams with more complex workflows or using a build system without a Snyk pre-built plugin, can use the Snyk CLI during CI/CD setups. For more informationm, see [Snyk test and snyk monitor in CI/CD integration](snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
+* **Snyk CLI**: Teams with more complex workflows or using a build system without a Snyk pre-built plugin, can use the Snyk CLI during CI/CD setups. For more informationm, see [Snyk test and snyk monitor in CI/CD integration](snyk-test-and-snyk-monitor-in-ci-cd-integration.md).
 * **Snyk API**: For teams with complex requirements, Snyk provides an API, which you can use to automate functions including initiating scans, onboarding new Projects, and testing arbitrary libraries. See the [Snyk API documentation](../../snyk-api/snyk-api.md) for details.
 
 ## Setting up CI/CD using Snyk CLI
