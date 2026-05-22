@@ -14,7 +14,7 @@ After the plugin is installed, you can set the following configurations for the 
   2. [General setting](visual-studio-extension-configuration-environment-variables-and-proxy.md#snyk-account) (if the project-specific setting is empty)
   3. Your [web account's](https://app.snyk.io/account) preferred Organization (if both general and Project-specific settings are empty).
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-11-24 at 17.24.39.png" alt=""><figcaption><p>VS Extension Account settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-11-24 at 17.24.39.png" alt=""><figcaption><p>VS Extension Account settings</p></figcaption></figure>
 
 ## Scan configuration <a href="#scan-configuration" id="scan-configuration"></a>
 
@@ -59,7 +59,7 @@ Settings on this page are scoped to the active solution
 * **Auto-select Organization:** When enabled, Snyk will automatically select the most appropriate Organization for your Project using context found in your repository and your authentication. If an Organization is configured manually, this feature is overridden. If an appropriate Organization cannot be identified automatically, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) is used as a fallback.
 * **Organization**: Specify the Organization (ID or name) for Snyk to run scans against for this specific IDE project. Retrieve the Organization ID from the Organization settings in the Snyk Web UI: `https://app.snyk.io/org/[ORG_NAME]/manage/settings` and copy the ID from the Organization ID section. If the Organization is provided manually, automatic Organization selection is overridden. If the Organization value is blank or invalid, the value from the global Organization field is used.
 
-<div data-full-width="false"><figure><img src="../../../.gitbook/assets/Screenshot 2025-11-24 at 17.58.07.png" alt=""><figcaption><p>VS Extension Solution settings</p></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/Screenshot 2025-11-24 at 17.58.07.png" alt=""><figcaption><p>VS Extension Solution settings</p></figcaption></figure></div>
 
 ## Environment variables
 

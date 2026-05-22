@@ -21,7 +21,7 @@ To manually trigger `snyk test` , as illustrated in the following screen image:
 2. Click the **Run (play)** button at the top of the plugin sidebar.
 3. If the play button is grayed out, there is a scan in progress. Wait for it to complete before starting another scan.
 
-<figure><img src="../../../.gitbook/assets/runAnalysis.png" alt="How to manually trigger a Snyk analysis"><figcaption><p>Manually triggering a Snyk analysis</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/runAnalysis.png" alt="How to manually trigger a Snyk analysis"><figcaption><p>Manually triggering a Snyk analysis</p></figcaption></figure>
 
 ## Scan configuration
 
@@ -38,11 +38,11 @@ By default, all levels are selected. You must select at least one.
 
 Snyk severity icons have the following meaning:
 
-| ![](<../../../.gitbook/assets/image (50) (1).png>) Critical severity | May allow attackers to access sensitive data and run code on your application.                                                               |
+| ![](<../../.gitbook/assets/image (50) (1).png>) Critical severity | May allow attackers to access sensitive data and run code on your application.                                                               |
 | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/image (29).png>) High severity         | May allow attackers to access sensitive data on your application.                                                                            |
-| ![](<../../../.gitbook/assets/image (62).png>) Medium severity       | May allow attackers under some conditions to access sensitive data on your application.                                                      |
-| ![](<../../../.gitbook/assets/image (37).png>) Low severity          | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+| ![](<../../.gitbook/assets/image (29).png>) High severity         | May allow attackers to access sensitive data on your application.                                                                            |
+| ![](<../../.gitbook/assets/image (62).png>) Medium severity       | May allow attackers under some conditions to access sensitive data on your application.                                                      |
+| ![](<../../.gitbook/assets/image (37).png>) Low severity          | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 ### Filter by issue type
 
@@ -65,7 +65,7 @@ There are two ways to show or hide specific issue types:
 
 By default, all issue types shown are selected.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-miah.png" alt="Show or hide specific issue types"><figcaption><p>Filter to show or hide specific issue types</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20241024-miah.png" alt="Show or hide specific issue types"><figcaption><p>Filter to show or hide specific issue types</p></figcaption></figure>
 
 ### Net new issues versus all issues
 
@@ -79,13 +79,13 @@ In plugin version 2.12.0 and later, you can choose any folder as your base for s
 
 To apply the filter and see only the new issues, use the toggle in the summary panel.
 
-<figure><img src="../../../.gitbook/assets/image (267).png" alt=""><figcaption><p>Summary panel toggle showing the the total number of issues and the number of issues in the checked out branch or current folder or new issues only</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (267).png" alt=""><figcaption><p>Summary panel toggle showing the the total number of issues and the number of issues in the checked out branch or current folder or new issues only</p></figcaption></figure>
 
 You can also enable the net new issues feature in the [scan configuration](run-an-analysis-with-the-jetbrains-plugin.md#scan-configuration) settings.\
 \
 For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as illustrated in the screen image that follows:
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-ngbm.png" alt="Successful state. No Net New issues found"><figcaption><p>Successful state, no net new issues found</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20241024-ngbm.png" alt="Successful state. No Net New issues found"><figcaption><p>Successful state, no net new issues found</p></figcaption></figure>
 
 ### Changing the base branch
 
@@ -98,7 +98,7 @@ You can change the base branch or base folder by following these steps, as illus
 3. Choose any branch.
 4. Click OK to save the selection.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-nfhj.png" alt="Change base branch for calculation Net New issues"><figcaption><p>Choosing the base branch or folder</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20241024-nfhj.png" alt="Change base branch for calculation Net New issues"><figcaption><p>Choosing the base branch or folder</p></figcaption></figure>
 
 ## Available Snyk issue types
 
@@ -112,19 +112,19 @@ Effective beginning on June 24, 2025, Snyk Code Quality issues will no longer be
 
 For more details and examples of fixes others used to fix the issue, select the security vulnerability or the code security issue.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-npba.png" alt=""><figcaption><p>Snyk Code issue details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20241024-npba.png" alt=""><figcaption><p>Snyk Code issue details</p></figcaption></figure>
 
 ### Snyk Open Source issues
 
 Snyk Open Source analysis shows a list of vulnerabilities and license issues found in all manifest files. To see more detailed information, select a vulnerability or license issue.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-nrsk.png" alt="Snyk Open Source issue details"><figcaption><p>Snyk Open Source issue details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20241024-nrsk.png" alt="Snyk Open Source issue details"><figcaption><p>Snyk Open Source issue details</p></figcaption></figure>
 
 ### Snyk Infrastructure as Code issues
 
 With every scan, Snyk IaC analysis shows issues in your Terraform, Kubernetes, AWS CloudFormation, and Azure Resource Manager (ARM) code. The scan is based on the Snyk CLI and is fast and friendly for local development. To see more detailed information, select an issue.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-ntcr.png" alt="Snyk IaC issue details"><figcaption><p>Snyk IaC issue details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20241024-ntcr.png" alt="Snyk IaC issue details"><figcaption><p>Snyk IaC issue details</p></figcaption></figure>
 
 ### Snyk Container issues
 

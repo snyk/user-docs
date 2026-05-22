@@ -156,7 +156,7 @@ jobs:
 
 After you upload to GitHub Code Scanning support, you will see vulnerabilities on the GitHub Security tab as shown in the following screen image.
 
-<figure><img src="../../../.gitbook/assets/GitHub-showing-uploaded-vulnerabilty.png" alt="GitHub Security tab showing uploaded vulnerability"><figcaption><p>GitHub Security tab showing uploaded vulnerability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/GitHub-showing-uploaded-vulnerabilty.png" alt="GitHub Security tab showing uploaded vulnerability"><figcaption><p>GitHub Security tab showing uploaded vulnerability</p></figcaption></figure>
 
 ## Use your own development environment
 

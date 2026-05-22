@@ -33,7 +33,7 @@ Follow the steps in each section of this document to use the Snyk Jenkins plugin
 
 The plugin can download the latest version of Snyk binaries and keep them up-to-date for you.
 
-<figure><img src="../../.gitbook/assets/snyk_config_auto-update_v2.png" alt=""><figcaption><p>Snyk Jenkins plugin automatic installation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/snyk_config_auto-update_v2.png" alt=""><figcaption><p>Snyk Jenkins plugin automatic installation</p></figcaption></figure>
 
 ### Manual installation
 
@@ -45,7 +45,7 @@ The plugin can download the latest version of Snyk binaries and keep them up-to-
   * Ensure you have the correct permissions to execute the binaries.
 * Provide the absolute path to the directory under **Installation directory**.
 
-<figure><img src="../../.gitbook/assets/snyk_config_manual_v2.png" alt=""><figcaption><p>Snyk Jenkins plugin manual installation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/snyk_config_manual_v2.png" alt=""><figcaption><p>Snyk Jenkins plugin manual installation</p></figcaption></figure>
 
 ### Custom API endpoints
 
@@ -69,7 +69,7 @@ For more information, see [Configure Snyk CLI to connect to Snyk API](../cli-ide
 * Configure the Credentials.
 * Remember the **ID** for use when configuring the build step.
 
-<figure><img src="../../.gitbook/assets/snyk_configuration_token_v2.png" alt=""><figcaption><p>Configure Snyk API token for Jenkins plugin</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/snyk_configuration_token_v2.png" alt=""><figcaption><p>Configure Snyk API token for Jenkins plugin</p></figcaption></figure>
 
 ## Add Snyk Security to your Project
 
@@ -82,7 +82,7 @@ This step depends on whether you are using Freestyle Projects or Pipeline Projec
 * Under **Build**, select **Add build step** and **Invoke Snyk Security Task**.
 * Configure as needed. Click the **?** icons for more information about each option.
 
-<figure><img src="../../.gitbook/assets/snyk_buildstep_freestyle.png" alt=""><figcaption><p>Configure for Freestyle Project</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/snyk_buildstep_freestyle.png" alt=""><figcaption><p>Configure for Freestyle Project</p></figcaption></figure>
 
 ### Pipeline Projects
 
@@ -167,7 +167,7 @@ See the [CLI commands and options summary](../snyk-cli/cli-commands-and-options-
 * Navigate to the build page.
 * Select **Snyk Security Report** in the sidebar to see the results.
 
-<figure><img src="../../.gitbook/assets/snyk_build_report.png" alt=""><figcaption><p>Snyk Security Report for Jenkins plugin</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/snyk_build_report.png" alt=""><figcaption><p>Snyk Security Report for Jenkins plugin</p></figcaption></figure>
 
 If there are any errors, you may not see the report. Refer to the troubleshooting section that follows.
 

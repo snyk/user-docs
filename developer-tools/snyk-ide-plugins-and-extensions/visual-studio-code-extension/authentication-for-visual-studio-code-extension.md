@@ -22,7 +22,7 @@ Follow these steps to authenticate:
 
 
 
-    <figure><img src="../../../.gitbook/assets/SCR-20240821-qmuv.png" alt="" width="359"><figcaption><p>Connect and trust workspace</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/SCR-20240821-qmuv.png" alt="" width="359"><figcaption><p>Connect and trust workspace</p></figcaption></figure>
 2. A new browser window opens, requiring you to log in to your Snyk account.
 3. In the next prompt, the Snyk IDE extension requests access to act on your behalf. Click **Grant app access**.
 4. When you have authenticated successfully, a confirmation message appears. Close the browser window and return to the IDE.
@@ -54,11 +54,11 @@ To authenticate using the Personal Access token, follow these steps:
 
 1.  Click the **Snyk Icon** in the navigation bar, then click the **Settings** icon, find **Authentication Method,** and change it to **Personal Access Token**.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
 2. Create your **Personal Access** **Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.&#x20;
 3.  Run the `Snyk: Set Token` command and paste the token in the text field.
 
-    <figure><img src="../../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
 
 ## Steps to authenticate using your Snyk API token
 
@@ -68,12 +68,12 @@ Follow these steps to authenticate:
 
 1. After the extension is installed, click the **Snyk Icon** in the navigation bar, then click the **Settings** icon, find **Authentication Method,** and change it to **Token authentication**:
 
-<figure><img src="../../../.gitbook/assets/SCR-20240821-tarb.png" alt=""><figcaption><p>Change authentication method </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20240821-tarb.png" alt=""><figcaption><p>Change authentication method </p></figcaption></figure>
 
 2. Press **Connect & Trust Workspace**.
 3.  Click **Authenticate** in the web browser window that opens.
 
-    <figure><img src="../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
 
 The analysis starts automatically.
 
@@ -81,7 +81,7 @@ The analysis starts automatically.
 Alternatively, run the `Snyk: Set Token` command and paste the token in the text field.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (80) (1).png" alt=""><figcaption><p>Set token manually</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (80) (1).png" alt=""><figcaption><p>Set token manually</p></figcaption></figure>
 
 ## How to switch accounts
 
@@ -89,7 +89,7 @@ To re-authenticate with a different account, follow these steps:
 
 1. Run the provided `Snyk: Log Out` command.
 
-<figure><img src="../../../.gitbook/assets/logging-out-command.png" alt=""><figcaption><p>Snyk: Log out</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/logging-out-command.png" alt=""><figcaption><p>Snyk: Log out</p></figcaption></figure>
 
 2. When you have logged out, start authentication again from the beginning.
 

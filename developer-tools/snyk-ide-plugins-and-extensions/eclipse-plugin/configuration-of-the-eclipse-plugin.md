@@ -6,7 +6,7 @@ You can configure both [Global settings](configuration-of-the-eclipse-plugin.md#
 
 You can set the following global configuration settings in the Snyk preferences.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-11-24 at 16.50.22.png" alt=""><figcaption><p>Snyk preferences</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-11-24 at 16.50.22.png" alt=""><figcaption><p>Snyk preferences</p></figcaption></figure>
 
 * **Custom Endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDEs URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).\
   Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
@@ -55,4 +55,4 @@ You can specify Project-specific scan settings on the **Snyk** page in the **Pro
 * **Auto-select Organization**: When enabled, Snyk automatically selects the most appropriate Organization for your Project using context found in your repository and your authentication. If an Organization is configured manually, this feature is overridden. If an appropriate Organization cannot be identified automatically, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) is used as a fallback.
 * **Project Organization**: Specify the Organization (ID or name) for Snyk to target when running scans in this particular IDE Project. Retrieve the Organization ID from the Organization settings in the Snyk Web UI: `https://app.snyk.io/org/[ORG_NAME]/manage/settings` and copy the ID from the Organization ID section. If the Organization is provided manually, automatic Organization selection is overridden. If the Organization value is blank or invalid, the value from the global Organization field is used.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-11-24 at 16.51.43.png" alt=""><figcaption><p>Snyk Project-specific properties page, allowing entry of scan parameters and specific organization settings for the Project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-11-24 at 16.51.43.png" alt=""><figcaption><p>Snyk Project-specific properties page, allowing entry of scan parameters and specific organization settings for the Project</p></figcaption></figure>

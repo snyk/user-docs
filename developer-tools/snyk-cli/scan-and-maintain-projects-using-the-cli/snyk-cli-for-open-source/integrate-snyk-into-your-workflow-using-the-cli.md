@@ -20,7 +20,7 @@ This page provides an example of integrating Snyk into your GitHub workflow usin
 
 Review the **package.json** manifest file in your cloned goof application, to see multiple direct dependencies listed:
 
-<figure><img src="../../../../.gitbook/assets/dependencies (2).png" alt="List of dependencies in the package.json file."><figcaption><p>List of dependencies in the package.json file</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dependencies (2).png" alt="List of dependencies in the package.json file."><figcaption><p>List of dependencies in the package.json file</p></figcaption></figure>
 
 {% hint style="info" %}
 These direct dependencies can also have additional transitive dependencies; libraries that they depend on.
@@ -79,13 +79,13 @@ GitHub has received your changes on your **add\_vulns** branch.
 
 * In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:
 
-<figure><img src="../../../../.gitbook/assets/click-compare.png" alt="Pull request information in GitHub"><figcaption><p>Pull request information in GItHub</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/click-compare.png" alt="Pull request information in GitHub"><figcaption><p>Pull request information in GItHub</p></figcaption></figure>
 
 ### Step 4: Use Snyk PR Checks
 
 Snyk can auto-scan your pull request (PR) for vulnerabilities and license issues in the merge process:
 
-<figure><img src="../../../../.gitbook/assets/snyk_vuln_lic_check.png" alt="Snyk pull request checks in GitHub"><figcaption><p>Snyk pull request checks in GitHub</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk_vuln_lic_check.png" alt="Snyk pull request checks in GitHub"><figcaption><p>Snyk pull request checks in GitHub</p></figcaption></figure>
 
 As the PR workflow is completed, Snyk validates the vulnerability and license policy set for the Project. Based on the policy, the checks either passed or failed; this is shown in GitHub.
 

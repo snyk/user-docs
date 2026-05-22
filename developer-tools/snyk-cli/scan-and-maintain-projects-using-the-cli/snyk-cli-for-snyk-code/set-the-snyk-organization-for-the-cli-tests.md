@@ -4,11 +4,11 @@ If you have several Organizations in your Snyk account, before you test your cod
 
 You can find your available CLI test count on the Organization **Settings** page > **Plan and billing** > **Usage** tab > **Test Usage** section > **Snyk Code** field:
 
-<figure><img src="../../../../.gitbook/assets/plan_and_billing_test_usage.png" alt=""><figcaption><p>Snyk Code test usage</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/plan_and_billing_test_usage.png" alt=""><figcaption><p>Snyk Code test usage</p></figcaption></figure>
 
 By default, the CLI runs tests under your **Preferred Organization**, as defined in your **Account settings:**
 
-<figure><img src="../../../../.gitbook/assets/set_snyk_org_CLI_tests_account_settings.png" alt=""><figcaption><p>Preferred Organization in Snyk Account settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/set_snyk_org_CLI_tests_account_settings.png" alt=""><figcaption><p>Preferred Organization in Snyk Account settings</p></figcaption></figure>
 
 You can [change your **Preferred Organization**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations/create-and-delete-organizations) or set another Organization for the CLI tests via the CLI.
 
@@ -25,7 +25,7 @@ Follow these steps to find an Organization ID and internal name:
 
 1\. On the Snyk Web UI, open the Organization whose details you want to find:
 
-<figure><img src="../../../../.gitbook/assets/snyk-org-switcher.png" alt="Open an Organization to find its details"><figcaption><p>Open an Organization to find its details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-org-switcher.png" alt="Open an Organization to find its details"><figcaption><p>Open an Organization to find its details</p></figcaption></figure>
 
 2\. Once the selected Organization is open, click the **Org Settings.**
 
@@ -37,7 +37,7 @@ Follow these steps to find an Organization ID and internal name:
   * When using the internal name for setting the Organization for the CLI tests, copy the name from the **Settings** page. The internal name is always written in lowercase letters.
 * **ID:** appears in the **Organization ID** section. You can use the **Copy** button to copy the ID to the CLI.
 
-<figure><img src="../../../../.gitbook/assets/settings_general_org_name_id.png" alt=""><figcaption><p>Organization name and ID</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings_general_org_name_id.png" alt=""><figcaption><p>Organization name and ID</p></figcaption></figure>
 
 ## Set the default Organization globally for CLI tests&#x20;
 
@@ -65,11 +65,11 @@ For example, to set the Snyk Demo Org as the default Organization for the CLI te
 snyk config set org=a7708807-3881-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-<figure><img src="../../../../.gitbook/assets/Snyk Code - CLI - Org - Setting global default.png" alt="Command to set Organization and confirmation"><figcaption><p>Command to set Organization and confirmation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk Code - CLI - Org - Setting global default.png" alt="Command to set Organization and confirmation"><figcaption><p>Command to set Organization and confirmation</p></figcaption></figure>
 
 From now on, all the CLI tests will run by default under the Snyk Demo Org Organization, and the Snyk Demo Org ID will appear in the test results:
 
-<figure><img src="../../../../.gitbook/assets/Snyk Code - CLI - Organization - Global Settings - Results - 2.png" alt="Snyk Demo Org ID in test results"><figcaption><p>Snyk Demo Org ID in test results</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk Code - CLI - Organization - Global Settings - Results - 2.png" alt="Snyk Demo Org ID in test results"><figcaption><p>Snyk Demo Org ID in test results</p></figcaption></figure>
 
 ## Set an Organization locally for a specific CLI test
 
@@ -89,4 +89,4 @@ snyk code test --org=snyk-xxxx-xxx
 
 The internal name of the Snyk Test Org Organization appears in the results of this test:
 
-![Organization internal name in test results](<../../../../.gitbook/assets/Snyk Code - CLI - Organization - Specific test Settings - Results - 2.png>)
+![Organization internal name in test results](<../../../.gitbook/assets/Snyk Code - CLI - Organization - Specific test Settings - Results - 2.png>)

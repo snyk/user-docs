@@ -42,7 +42,7 @@ Snyk produces advanced [remediation reports](https://app.gitbook.com/o/-M4tdxG8q
 
 The example that follows shows a Project-level security report.
 
-<figure><img src="../../../.gitbook/assets/project_lvl_security_rpt-18july2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project_lvl_security_rpt-18july2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
 #### Project monitoring and automatic fix pull requests
 
@@ -50,14 +50,14 @@ Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabi
 
 The example that follows shows a fix pull request opened by Snyk.
 
-<figure><img src="../../../.gitbook/assets/666.png" alt="Pull request opened by Snyk"><figcaption><p>Pull request opened by Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/666.png" alt="Pull request opened by Snyk"><figcaption><p>Pull request opened by Snyk</p></figcaption></figure>
 
 To review and adjust the automatic fix pull request settings:
 
 1. In Snyk, navigate to **Organization settings** > **Integrations** > **Source control** > **Bitbucket Server**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix PRs** section and configure the relevant options.
 
-<div align="center"><figure><img src="../../../.gitbook/assets/integ-settings-auto-fix-pr-bitbucket-server.png" alt="Automatic fix PR settings"><figcaption><p>Automatic fix PR settings</p></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/integ-settings-auto-fix-pr-bitbucket-server.png" alt="Automatic fix PR settings"><figcaption><p>Automatic fix PR settings</p></figcaption></figure></div>
 
 {% hint style="info" %}
 Snyk pull requests are automatically assigned to the default reviewer set in your Bitbucket Server/Data Center account.
@@ -84,7 +84,7 @@ To review and adjust the pull request tests settings:
 1. In Snyk, navigate to **Organization settings** > **Integrations** > **Source control** > **Bitbucket Server** and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests** > **Open Source Security & Licenses**, and configure the relevant options.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2023-05-02 at 11.21.53.png" alt="Configure PR Checks for your integration"><figcaption><p>Configure PR Checks for your integration</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.21.53.png" alt="Configure PR Checks for your integration"><figcaption><p>Configure PR Checks for your integration</p></figcaption></figure></div>
 
 #### Required Builds
 

@@ -20,9 +20,9 @@ To start using the Snyk task as part of your pipeline build, from the [Visual St
    1. In the Snyk Authentication service connection form, enter the **Snyk API Token or Snyk PAT**.
    2. Click **Save**, ensuring the new service connection appears in your list of service connections.
 
-<figure><img src="../../../.gitbook/assets/ap_-_search.jpg" alt="Create your first service connection"><figcaption><p>Create your first service connection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ap_-_search.jpg" alt="Create your first service connection"><figcaption><p>Create your first service connection</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Azure-authentication-connection-setup.png" alt="New Snyk authentication service connection" width="389"><figcaption><p>New Snyk authentication service connection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Azure-authentication-connection-setup.png" alt="New Snyk authentication service connection" width="389"><figcaption><p>New Snyk authentication service connection</p></figcaption></figure>
 
 
 
