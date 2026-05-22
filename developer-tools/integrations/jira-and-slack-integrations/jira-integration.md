@@ -21,6 +21,10 @@ If your Jira instance is private, use [the Snyk Broker deployment method](https:
 
 It is best practice to set up a new user in Jira for this integration, instead of using the credentials of an existing account.
 
+{% hint style="info" %}
+Jira Service Accounts cannot be used to authenticate the integration at this stage. You must use an individual user account with the appropriate permissions.
+{% endhint %}
+
 Cloud-hosted Jira implementations require a username and API token authentication. Jira API tokens are generated in [Atlassian API tokens](https://id.atlassian.com/manage/api-tokens). Self-hosted implementations can also authenticate with a username and password.
 
 Enter the Jira account credentials in the Snyk Web UI: **Organization Settings > Integrations** page: Base URL, Username/email, and API token.

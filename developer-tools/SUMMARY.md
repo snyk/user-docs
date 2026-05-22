@@ -165,7 +165,7 @@
   * [Jira integration](integrations/jira-and-slack-integrations/jira-integration.md)
   * [Slack app](integrations/jira-and-slack-integrations/slack-app.md)
   * [Slack integration](integrations/jira-and-slack-integrations/slack-integration.md)
-* [Event Forwarding](integrations/event-forwarding/README.md)
+* [Event forwarding](integrations/event-forwarding/README.md)
   * [Amazon EventBridge](integrations/event-forwarding/amazon-eventbridge.md)
   * [AWS CloudTrail Lake](integrations/event-forwarding/aws-cloudtrail-lake.md)
   * [AWS Security Hub](integrations/event-forwarding/aws-security-hub.md)

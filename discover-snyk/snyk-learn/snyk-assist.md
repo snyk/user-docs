@@ -14,7 +14,7 @@ Snyk Assist enhances your learning experience within the Snyk Learn platform by:
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-04-24 at 14.52.22.png" alt=""><figcaption><p>Snyk Assist on Snyk Learn</p></figcaption></figure>
 
-## How Snyk Assist Works
+## How Snyk Assist works
 
 Snyk Assist utilizes Generative AI to respond to questions based on information retrieved from trusted Snyk sources:
 

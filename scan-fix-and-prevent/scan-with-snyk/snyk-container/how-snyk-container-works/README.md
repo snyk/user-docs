@@ -41,6 +41,7 @@ Some software components from upstream providers are not installed using a packa
 
 * Node.js
 * OpenJDK 8 binaries
+* OpenJDK binaries from Eclipse Temurin distributions
 
 ## Recurring container image scans
 
