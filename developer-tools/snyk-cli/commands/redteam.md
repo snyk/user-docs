@@ -79,7 +79,7 @@ Default: `{"message": "{{prompt}}"}`
 
 JMESPath expression used to extract the AI response from the target's JSON response body. Overrides `target.settings.response_selector` from the config file.
 
-Default: `response`&#x20;
+Default: `response`
 
 For more information about the JMESPath expression syntax, visit [jmespath.org](https://jmespath.org/)
 
@@ -131,7 +131,7 @@ List all available attack strategies with descriptions and exit. Does not run a 
 
 Snyk tenant ID. Auto-discovered from your authenticated Snyk account if not provided. Only needed when your account belongs to multiple tenants.
 
-### Options for `snyk redteam setup`&#x20;
+### Options for `snyk redteam setup`
 
 #### `--experimental`
 
