@@ -29,6 +29,7 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 {% column %}
 * Amazon AWS SDK
 * Android Standard Library
+* Apache Camel
 * Apache Commons
 * Apache Tomcat
 * Apache XML

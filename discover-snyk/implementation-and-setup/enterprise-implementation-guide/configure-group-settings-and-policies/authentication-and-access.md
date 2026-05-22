@@ -4,7 +4,7 @@
 
 {% stepper %}
 {% step %}
-### Configure SSO settings at the Group level
+#### Configure SSO settings at the Group level
 
 {% hint style="success" %}
 **Key decision:** Choose between **Open to all** or **Require an invite** based on your security policy and license management needs.
@@ -22,7 +22,7 @@ Any identity provider is supported, including tools such as Entra ID, OKTA, and 
 {% endstep %}
 
 {% step %}
-### Manage user accounts
+#### Manage user accounts
 
 {% hint style="success" %}
 **Key decision**: Identify which administrators require Group Admin status and ensure they transition from personal accounts to SSO accounts before the general rollout.
@@ -40,7 +40,7 @@ Custom mapping requires Snyk professional services. Contact your account team fo
 {% endstep %}
 
 {% step %}
-### (Optional) Provision users with the API
+#### (Optional) Provision users with the API
 
 {% hint style="success" %}
 **Key decision**: Determine if you need to pre-allocate users to specific Organizations and roles before their first login to prevent broad default access.
@@ -60,7 +60,7 @@ Determine if Snyk pre-defined roles meet your requirements or if you must create
 
 {% stepper %}
 {% step %}
-### Review Tenant-level roles
+#### Review Tenant-level roles
 
 {% hint style="success" %}
 **Key decision:** Determine if you need centralized oversight across multiple Groups to manage analytics and global user membership.
@@ -78,7 +78,7 @@ Features like Snyk Analytics are available only on Enterprise plans. You can swi
 {% endstep %}
 
 {% step %}
-### Review Group-level roles
+#### Review Group-level roles
 
 {% hint style="success" %}
 **Key decision:** Determine if your team leads can operate with the fixed permissions of an Organization Admin or if they require a restricted custom role.
