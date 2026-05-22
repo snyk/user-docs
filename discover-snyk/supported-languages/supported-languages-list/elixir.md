@@ -16,7 +16,7 @@ Available integrations: CLI and IDE: test or monitor your app
 For Elixir, the following features are available:
 
 * Reports
-* Test your app's SBOM and packages using `pkg:hex` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command&#x20;
+* Test your app's SBOM and packages using `pkg:hex` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 {% hint style="info" %}
 The **Snyk Fix PR** feature is not available for Elixir. This means that you will not be notified if the PR checks fail when the following conditions are met:
@@ -31,7 +31,7 @@ The **Snyk Fix PR** feature is not available for Elixir. This means that you wil
 To scan your dependencies, you must first install Elixir and Mix. For details, [see the Elixir installation instructions](https://elixir-lang.org/install.html).
 {% endhint %}
 
-Snyk offers security scanning to test your Elixir Projects for vulnerabilities using the [CLI](../../developer-tools/snyk-cli/).
+Snyk offers security scanning to test your Elixir Projects for vulnerabilities using the [CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli).
 
 Mix is a build tool that compiles, tests, and creates Elixir projects. Mix manages dependencies by integrating with the Hex package manager.
 
