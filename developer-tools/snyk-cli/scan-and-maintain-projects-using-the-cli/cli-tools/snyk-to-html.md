@@ -70,7 +70,7 @@ Run the following to create a file called `results-container.html`:
 
 `snyk container test [image] --json | snyk-to-html -o results-container.html`
 
-#### **Snyk Code command**
+#### Snyk Code command
 
 Run the following to create a file called `results-code.html`:
 
@@ -107,12 +107,12 @@ Follow these steps to run `snyk test` and then convert the output file to HTML.
    `snyk-to-html -i results-iac.json -o results-iac.html`
 
 {% hint style="info" %}
-When you use a multi-step approach like `snyk test --json > result-opensource.json` and then pass the results to a plugin, the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) may stop or break the process on your build system before you get to the step of passing the output file to a tool like `snyk-to-html` or `snyk-filter`. You have several options, depending on the capabilities of your build tools:\
-\
-1\) Capture the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) in a parameter to prevent it from being returned to the process in addition to checking for an error state.\
-2\) Use `||true` or some form of logic to prevent the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) from terminating the process.\
+When you use a multi-step approach like `snyk test --json > result-opensource.json` and then pass the results to a plugin, the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) may stop or break the process on your build system before you get to the step of passing the output file to a tool like `snyk-to-html` or `snyk-filter`. You have several options, depending on the capabilities of your build tools:
+
+1. Capture the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) in a parameter to prevent it from being returned to the process in addition to checking for an error state.\
+2. Use `||true` or some form of logic to prevent the [exit code](../../cli-commands-and-options-summary.md#exit-codes-for-cli-commands) from terminating the process.\
 Note that when you do this, any return code is ignored, such as error codes signifying network or Snyk platform issues or another non-scan result issue. The next step in using the JSON is likely to fail. It is recommended that you review the exit code before you proceed to the next step in your script.\
-3\) Set the step to `continue on failure`, if such an option exists.
+3. Set the step to `continue on failure`, if such an option exists.
 {% endhint %}
 
 ### Use `snyk-to-html` command options
@@ -149,7 +149,7 @@ To view the HTML file, locate the output file in your repository and double-clic
 
 The test results report opens in the browser. The following example shows `snyk code test` results. You can view the **Data Flow** and **Fix Analysis** information for the issues discovered by clicking the corresponding buttons for each issue.
 
-<figure><img src="../../../../.gitbook/assets/Snyk-to-HTML - Example - HTML Report - Fix Analysis tab - 2.png" alt="Snyk Code Report highligghting Data Flow and Fix Analysis buttons for an issue"><figcaption><p>Snyk Code Report highlighting Data Flow and Fix Analysis buttons for an issue</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk-to-HTML - Example - HTML Report - Fix Analysis tab - 2.png" alt="Snyk Code Report highligghting Data Flow and Fix Analysis buttons for an issue"><figcaption><p>Snyk Code Report highlighting Data Flow and Fix Analysis buttons for an issue</p></figcaption></figure>
 
 ## License
 

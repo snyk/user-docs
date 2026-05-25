@@ -10,7 +10,7 @@ Snyk supports the following protocols for authentication:
 
 {% include "../../../.gitbook/includes/before-authenticating.md" %}
 
-<figure><img src="../../../.gitbook/assets/image (325).png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Eclipse</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (325).png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Eclipse</p></figcaption></figure>
 
 ## Steps to authenticate using the OAuth 2.0 protocol
 
@@ -22,11 +22,11 @@ After the plugin is installed, follow these steps to authenticate:
    \
    When you are finished with the settings on this page, click **Next**.
 
-<figure><img src="../../../.gitbook/assets/SCR-20240822-mgxw.png" alt="" width="563"><figcaption><p>Snyk endpoint configuration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20240822-mgxw.png" alt="" width="563"><figcaption><p>Snyk endpoint configuration</p></figcaption></figure>
 
 2. On the next page, follow the prompts, then click **Finish**.
 
-<figure><img src="../../../.gitbook/assets/SCR-20240822-mibb.png" alt="" width="563"><figcaption><p>Additional information and finish</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20240822-mibb.png" alt="" width="563"><figcaption><p>Additional information and finish</p></figcaption></figure>
 
 3. A new browser page opens, requiring you to log in to your Snyk account.
 4. In the next prompt, the Snyk IDE plugin requests access to act on your behalf. Click **Grant app access**.
@@ -54,11 +54,11 @@ To authenticate using the Personal Access Token, follow these steps:
    (On Windows/Linux navigate to **Window** > **Preferences** > **Snyk**)
 2.  Set the **Authentication Method** to **Use Personal Access Token**.
 
-    <figure><img src="../../../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
-4. Create your **Personal Access** **Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.
+4. Create your **Personal Access Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.
 5. Add the token in the **Token** field.
-6. Click **Apply and Close.**
+6. Click **Apply and Close**.
 
 The analysis starts automatically.
 
@@ -72,18 +72,18 @@ To authenticate using the API token, follow these steps:
    (On Windows/Linux navigate to **Window** > **Preferences** > **Snyk**)
 2.  Set the **Authentication Method** to **API token**.
 
-    <figure><img src="../../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4.  Click **Authenticate** in the web browser window that opens.
 
-    <figure><img src="../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
 5. The API token is automatically updated in the **API Token field**.
-6. Click **Apply and Close.**
+6. Click **Apply and Close**.
 
 The analysis starts automatically.
 
 {% hint style="info" %}
-Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field.  For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
+Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
 {% endhint %}
 
 ## How to switch accounts

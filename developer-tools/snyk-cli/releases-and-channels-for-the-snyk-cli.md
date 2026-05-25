@@ -26,7 +26,7 @@ Some examples of breaking changes are the following:
 
 Beginning with v.1.1291.0, Snyk is providing different channels to enable customers to opt in to a channel based on their needs and preferences.
 
-When you select a channel, you are selecting the stability level you want to use: **preview**, **rc,** or **stable**.
+When you select a channel, you are selecting the stability level you want to use: **preview**, **rc**, or **stable**.
 
 ### preview
 
@@ -172,4 +172,4 @@ To select a channel from the IDE, choose a CLI release channel using the dropdow
 
 However, Snyk also recommends the **stable** channel as the default for IDE users.
 
-<figure><img src="../../.gitbook/assets/Choose a CLI release channel.png" alt=""><figcaption><p>Choose a CLI release channel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Choose a CLI release channel.png" alt=""><figcaption><p>Choose a CLI release channel</p></figcaption></figure>
