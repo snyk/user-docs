@@ -20,7 +20,7 @@ snyk-{orgslug}-{role}
 
 * This role mapping assigns users with the specified role of Collaborator or Admin or Custom Role for the Snyk Organization specified in `orgslug`.
 * `orgslug` is the unique identifier of the Organization name in Snyk.
-  * How to find the `orgslug`: `https://app.snyk.io/org/{orgslug}` OR by using the endpoint [List all organizations in a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-orgs).
+  * How to find the `orgslug`: `https://app.snyk.io/org/{orgslug}` OR by using the endpoint [List all organizations in a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-orgs).
   * **Note**: The `orgslug` is the name of the Organization in most cases; however, there may be exceptions.
   * Note: `orgslug` can be a value of up to 60 characters.
 * **role**:

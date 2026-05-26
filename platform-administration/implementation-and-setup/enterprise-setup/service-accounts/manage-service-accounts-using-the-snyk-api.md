@@ -1,6 +1,6 @@
 # Manage service accounts using the Snyk API
 
-You can manage service accounts using the [Snyk REST API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts).
+You can manage service accounts using the [Snyk REST API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts).
 
 {% hint style="info" %}
 Specific permissions are required to perform all these tasks. For more information, visit [Service accounts-select a role](./#select-a-role).
@@ -19,7 +19,7 @@ Specific permissions are required to perform all these tasks. For more informati
 * `oauth_client_secret` - The service account uses an [OAuth 2.0 access token](service-accounts-using-oauth-2.0.md#oauth-2.0-with-client-secret), retrieved with a client secret.
 * `oauth_private_key_jwt` - The service account uses an [OAuth 2.0 access token](service-accounts-using-oauth-2.0.md#oauth-2.0-with-private-key-jwt), retrieved with a JWT signed with a private key.
 
-`role_id` - The role of the service account, which defines the permissions it has. Available roles can be found using the endpoint [List all roles in a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-roles).
+`role_id` - The role of the service account, which defines the permissions it has. Available roles can be found using the endpoint [List all roles in a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-roles).
 
 `access_token_expires_at` - The expiry date of the access token in ISO-8601 format, for example, `2025-08-16T00:00:00Z`. The maximum expiry is one year from creation time. Required only when `auth_type` is `access_token`.
 
@@ -33,23 +33,23 @@ Specific permissions are required to perform all these tasks. For more informati
 
 **Request**: `GET https://api.snyk.io/rest/groups/{groupId}/service_accounts`
 
-**API endpoint:** [Get a list of group service accounts](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts-1)
+**API endpoint:** [Get a list of group service accounts](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts-1)
 
-This [paginated](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/rest-api/about-the-rest-api#pagination) call returns an array of objects, each describing a service account.
+This [paginated](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/rest-api/about-the-rest-api#pagination) call returns an array of objects, each describing a service account.
 
 ### Create a service account for your Group
 
 **Request**: `POST https://api.snyk.io/rest/groups/{groupId}/service_accounts`
 
-**API endpoint:** [Create a service account for a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts)
+**API endpoint:** [Create a service account for a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts)
 
-This call creates a new service account. You pass a `role_id` in the JSON-formatted body of the request, which defines the permissions a service account can use. This role id can be found using the endpoint [List all roles in a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-roles). Roles can be re-used for multiple service accounts.
+This call creates a new service account. You pass a `role_id` in the JSON-formatted body of the request, which defines the permissions a service account can use. This role id can be found using the endpoint [List all roles in a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-roles). Roles can be re-used for multiple service accounts.
 
 ### Get a service account from your Group
 
 **Request**: `GET https://api.snyk.io/rest/groups/{groupId}/service_accounts/{serviceAccountId}`
 
-**API endpoint:** [Get a group service account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts-serviceaccount_id-1)
+**API endpoint:** [Get a group service account](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts-serviceaccount_id-1)
 
 This call returns details describing a specific service account.
 
@@ -57,7 +57,7 @@ This call returns details describing a specific service account.
 
 **Request**: `PATCH https://api.snyk.io/rest/groups/{groupId}/service_accounts/{serviceAccountId}`
 
-**API endpoint:** [Update a group service account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts-serviceaccount_id)
+**API endpoint:** [Update a group service account](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts-serviceaccount_id)
 
 This call updates the details of a specific service account, at this time, the name of the service account.
 
@@ -65,7 +65,7 @@ This call updates the details of a specific service account, at this time, the n
 
 **Request**: `DELETE https://api.snyk.io/rest/groups/{groupId}/service_accounts/{serviceAccountId}`
 
-**API endpoint:** [Delete a group service account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts-serviceaccount_id-secrets)
+**API endpoint:** [Delete a group service account](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts-serviceaccount_id-secrets)
 
 This call permanently deletes the specified service account and revokes its credentials.
 
@@ -73,7 +73,7 @@ This call permanently deletes the specified service account and revokes its cred
 
 **Request**: `POST https://api.snyk.io/rest/groups/{groupId}/service_accounts/{serviceAccountId}/secrets`
 
-**API endpoint:** [Manage a group service account’s client secret](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts-serviceaccount_id-secrets)
+**API endpoint:** [Manage a group service account’s client secret](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts-serviceaccount_id-secrets)
 
 This call allows you to manage the client secret for `oauth_client_secret` service accounts. You can perform the following operations:
 
@@ -87,23 +87,23 @@ This call allows you to manage the client secret for `oauth_client_secret` servi
 
 **Request**: `GET https://api.snyk.io/rest/orgs/{orgId}/service_accounts`
 
-**API endpoint:** [Get a list of organization service accounts](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts-1)
+**API endpoint:** [Get a list of organization service accounts](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts-1)
 
-This [paginated](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/rest-api/about-the-rest-api#pagination) call returns an array of objects, each describing a service account.
+This [paginated](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/rest-api/about-the-rest-api#pagination) call returns an array of objects, each describing a service account.
 
 ### Create a service account for your Organization
 
 **Request**: `POST https://api.snyk.io/rest/orgs/{orgId}/service_accounts`
 
-**API endpoint:** [Create a service account for an organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts)
+**API endpoint:** [Create a service account for an organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts)
 
-This call creates a new service account. You pass a `role_id` in the JSON-formatted body of the request, which defines the permissions a service account can use. This `role id` can be found using the endpoint [List all roles in a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-roles). Roles can be re-used for multiple service accounts.
+This call creates a new service account. You pass a `role_id` in the JSON-formatted body of the request, which defines the permissions a service account can use. This `role id` can be found using the endpoint [List all roles in a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-roles). Roles can be re-used for multiple service accounts.
 
 ### Get a service account from your Organization
 
 **Request**: `GET https://api.snyk.io/rest/orgs/{orgId}/service_accounts/{serviceAccountId}`
 
-**API endpoint:** [Get an organization service account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts-serviceaccount_id-1)
+**API endpoint:** [Get an organization service account](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts-serviceaccount_id-1)
 
 This call returns details describing a specific service account.
 
@@ -111,7 +111,7 @@ This call returns details describing a specific service account.
 
 **Request**: `PATCH https://api.snyk.io/rest/orgs/{orgId}/service_accounts/{serviceAccountId}`
 
-**API endpoint:** [Update an organization service account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#patch-orgs-org_id-service_accounts-serviceaccount_id)
+**API endpoint:** [Update an organization service account](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#patch-orgs-org_id-service_accounts-serviceaccount_id)
 
 This call can update the details of a specific service account. The name of the service account is updated.
 
@@ -119,7 +119,7 @@ This call can update the details of a specific service account. The name of the 
 
 **Request**: `DELETE https://api.snyk.io/rest/orgs/{orgId}/service_accounts/{serviceAccountId}`
 
-**API endpoint:** [Delete a service account in an organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts-serviceaccount_id-2)
+**API endpoint:** [Delete a service account in an organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts-serviceaccount_id-2)
 
 This call permanently deletes the specified service account.
 
@@ -127,7 +127,7 @@ This call permanently deletes the specified service account.
 
 **Request**: `POST https://api.snyk.io/rest/orgs/{orgId}/service_accounts/{serviceAccountId}/secrets`
 
-**API endpoint:** [Manage an organization's service account's client secret](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts-serviceaccount_id-secrets)
+**API endpoint:** [Manage an organization's service account's client secret](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts-serviceaccount_id-secrets)
 
 This call allows you to manage the client secret for `oauth_client_secret` service accounts. You can perform the following operations:
 

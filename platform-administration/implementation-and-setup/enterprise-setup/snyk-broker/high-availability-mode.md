@@ -10,7 +10,7 @@ A maximum of four Broker Clients can run concurrently in high availability mode.
 
 ## **Important notes about settings**
 
-The Dispatcher Base URL should be specific to your region if you are using a regional Snyk platform, for example, api.eu.snyk.io. See [Regional hosting and data residency](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency) for details.
+The Dispatcher Base URL should be specific to your region if you are using a regional Snyk platform, for example, api.eu.snyk.io. See [Regional hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency) for details.
 
 If you are using app.snyk.io, the following is not required. It is applicable only to regional Snyk platforms.
 
