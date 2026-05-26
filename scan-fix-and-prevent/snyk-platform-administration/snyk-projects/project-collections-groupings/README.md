@@ -5,7 +5,7 @@
 This feature is available only with Enterprise Plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-There are two ways to group your Projects: **Project views** and **Project collections**.&#x20;
+There are two ways to group your Projects: **Project views** and **Project collections**.
 
 **Project views** are flexible collections you can create based on the filters available on the Project listing page.
 
@@ -38,13 +38,13 @@ Project views can be created by any user in an Organization, while Project colle
 
 * Read
 * Create
-* Delete&#x20;
+* Delete
 * Edit
 
-For more information, see [Pre-defined roles](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/pre-defined-roles).
+For more information, see [Pre-defined roles](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles).
 {% endhint %}
 
-In the Snyk Web UI and [API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/collection), you can:&#x20;
+In the Snyk Web UI and [API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/collection), you can:
 
 * Create collections using filters and selecting Projects individually
 * View all of the collections that have been created on a collections listing page

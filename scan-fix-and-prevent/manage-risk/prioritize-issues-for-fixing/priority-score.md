@@ -22,11 +22,11 @@ You can filter issues by Priority Score range in the left sidebar.
 
 ## View issues by Priority Score
 
-The **Issues** tab on the Project details allows you to filter issues by Priority Score. You can find more details on how to filter your issues on the [Manage and remediate issues](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide/manage-and-remediate-issues) page.
+The **Issues** tab on the Project details allows you to filter issues by Priority Score. You can find more details on how to filter your issues on the [Manage and remediate issues](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/manage-and-remediate-issues) page.
 
 ## View Priority Score in the Snyk API
 
-The API endpoint [Get list of latest issues](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/reporting-api-v1#reporting-issues-latest) includes the Priority Score in the response and supports filtering by the score.
+The API endpoint [Get list of latest issues](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/reporting-api-v1#reporting-issues-latest) includes the Priority Score in the response and supports filtering by the score.
 
 ## Calculation of Priority Score
 

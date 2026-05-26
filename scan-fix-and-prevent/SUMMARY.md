@@ -2,7 +2,7 @@
 
 ## Scan with Snyk
 
-* [Overview](scan-with-snyk/overview.md)
+* [Overview](README.md)
 * [Snyk Projects](snyk-platform-administration/snyk-projects/README.md)
   * [Project information](snyk-platform-administration/snyk-projects/project-information.md)
   * [Import log](snyk-platform-administration/snyk-projects/import-log.md)
@@ -250,7 +250,7 @@
     * [Troubleshooting and limitations for custom PR templates](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/troubleshooting-and-limitations-for-custom-pr-templates.md)
     * [Examples and template validation](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/examples-and-template-validation.md)
   * [Opening fix and upgrade pull requests from a fixed GitHub account](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
-  * [Breakability risk levels](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/breakability-risk-levels.md) 
+  * [Breakability risk levels](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/breakability-risk-levels.md)
 * [Prioritize issues for fixing](manage-risk/prioritize-issues-for-fixing/README.md)
   * [Priority Score vs Risk Score](manage-risk/prioritize-issues-for-fixing/priority-score-vs-risk-score.md)
   * [Priority Score](manage-risk/prioritize-issues-for-fixing/priority-score.md)
@@ -334,5 +334,4 @@
 * [Dependencies and licenses](manage-risk/dependencies-and-licenses/README.md)
   * [View dependencies](manage-risk/dependencies-and-licenses/view-dependencies.md)
   * [View licenses](manage-risk/dependencies-and-licenses/view-licenses.md)
-
 * [Error Catalog](scan-with-snyk/error-catalog.md)

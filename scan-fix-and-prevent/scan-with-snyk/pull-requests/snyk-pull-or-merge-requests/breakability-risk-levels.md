@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-Breakability analysis is in Early Access and available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/snyk-preview).
+Breakability analysis is in Early Access and available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
 {% endhint %}
 
 Snyk analyzes dependency upgrades to predict if a proposed change will break your build or application. Breakability analysis assigns a risk level to each upgrade to help you decide whether to auto-merge a fix or review it manually.
@@ -107,4 +107,4 @@ If you maintain a custom `accept.json` configuration, ensure that it includes th
 
 If the rule is missing, Snyk generates the pull request and summary successfully, but fails to post the comment containing the breakability risk level and analysis.
 
-For configuration details, visit [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker).
+For configuration details, visit [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker).
