@@ -8,7 +8,7 @@ Snyk supports the following protocols for authentication:
 * Personal Access Token
 * API token (Legacy)
 
-{% include "../../../.gitbook/includes/before-authenticating.md" %}
+{% include "../../.gitbook/includes/before-authenticating.md" %}
 
 <figure><img src="../../.gitbook/assets/image (319).png" alt=""><figcaption><p>Authentication methods available in the Snyk extension in Visual Studio</p></figcaption></figure>
 
@@ -44,7 +44,7 @@ If you have problems, see [OAuth 2.0 authentication does not work](../troublesho
 
 ## Steps to authenticate using your Personal Access Token
 
-{% include "../../../.gitbook/includes/this-method-is-inferior-to-....md" %}
+{% include "../../.gitbook/includes/this-method-is-inferior-to-....md" %}
 
 {% hint style="warning" %}
 The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, please reach out to your Snyk account team.
@@ -63,7 +63,7 @@ To authenticate using the Personal Access token, follow these steps:
 
 ## Steps to authenticate using your Snyk API token
 
-{% include "../../../.gitbook/includes/this-method-is-inferior-to-....md" %}
+{% include "../../.gitbook/includes/this-method-is-inferior-to-....md" %}
 
 Follow these steps to authenticate:
 

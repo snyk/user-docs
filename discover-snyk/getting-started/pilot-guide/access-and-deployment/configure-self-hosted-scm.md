@@ -1,6 +1,6 @@
 # Configure self-hosted SCM
 
-{% include "../../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
 
 Use Snyk Broker to integrate with the SCMs that are hosted within a private network. The Snyk Broker is an open-source proxy that connects Snyk with source integrations, enabling snyk.io to scan your code and provide results.
 

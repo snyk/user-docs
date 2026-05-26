@@ -1,6 +1,6 @@
 # Review scan coverage
 
-{% include "../../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
 
 ## Check ‌the Group-level SCM integration
 

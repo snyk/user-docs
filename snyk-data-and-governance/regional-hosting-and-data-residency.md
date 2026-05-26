@@ -193,7 +193,7 @@ For Broker deployed by Helm chart, edit the `values.yaml` file to include the re
 
 ### Broker with Snyk Code Local Engine (SCLE)
 
-{% include "../.gitbook/includes/release-status-snyk-code-local-engine.md" %}
+{% include ".gitbook/includes/release-status-snyk-code-local-engine.md" %}
 
 Set up your `values-customer-settings.yml` with the correct Broker Server URL for your region based on the values found in the [Broker URLs](regional-hosting-and-data-residency.md#broker-server-urls) section.
 
