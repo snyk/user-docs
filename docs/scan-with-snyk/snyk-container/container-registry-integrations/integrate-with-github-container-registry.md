@@ -19,7 +19,7 @@ This page explains how to set up GitHub Container registry integration in Snyk a
 
 1. In your Snyk account, navigate to **Integrations**. Under the **Container** **registries** section, find the GitHub Container registry option and click it.
 2. Enter your GitHub Container registry username and password login credentials in the Account credentials section.
-3. In the **container registry name** fill in the full URL to the registry you want to integrate with. To finish, click **Save**.
+3. In the **container registry name**, enter the registry domain (e.g., `ghcr.io` or `my.example.com`). Do not include `https://` or a full URL path. To finish, click **Save**.
 
 If you are using a self-hosted GitHub Container registry, [contact Snyk Support](https://support.snyk.io) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md).
 
