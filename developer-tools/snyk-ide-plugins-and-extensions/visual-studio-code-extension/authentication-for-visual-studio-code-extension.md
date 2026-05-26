@@ -1,6 +1,6 @@
 # Authentication for Visual Studio Code extension
 
-To scan your Projects, you must authenticate with Snyk.&#x20;
+To scan your Projects, you must authenticate with Snyk.
 
 Snyk supports the following protocols for authentication:
 
@@ -11,7 +11,7 @@ Snyk supports the following protocols for authentication:
 For all authentication methods, Snyk uses the [Secret Storage API](https://code.visualstudio.com/api/references/vscode-api#SecretStorage) to store the token securely. This storage uses the keychain of the system to manage the token.
 
 {% hint style="warning" %}
-Before authenticating, ensure you have set your region properly. For details, see [IDEs URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).
+Before authenticating, ensure you have set your region properly. For details, see [IDEs URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).
 {% endhint %}
 
 ## Steps to authenticate using the OAuth 2.0 protocol
@@ -19,8 +19,6 @@ Before authenticating, ensure you have set your region properly. For details, se
 Follow these steps to authenticate:
 
 1.  After the extension is installed, click the **Snyk Icon** in the navigation bar, then click **Connect & Trust Workspace**:
-
-
 
     <figure><img src="../../.gitbook/assets/SCR-20240821-qmuv.png" alt="" width="359"><figcaption><p>Connect and trust workspace</p></figcaption></figure>
 2. A new browser window opens, requiring you to log in to your Snyk account.
@@ -38,16 +36,14 @@ If you have problems, see [OAuth 2.0 authentication does not work](../troublesho
 
 ## Steps to authenticate using your Personal Access Token
 
-{% include "../../../.gitbook/includes/this-method-is-inferior-to-....md" %}
-
 {% hint style="warning" %}
 The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, please reach out to your Snyk account team.
 {% endhint %}
 
-When using this feature,  ensure you generate and use a Personal Access Token (PAT). This feature is not compatible with Service Account tokens, and using them may result in unexpected behavior or errors.
+When using this feature, ensure you generate and use a Personal Access Token (PAT). This feature is not compatible with Service Account tokens, and using them may result in unexpected behavior or errors.
 
 {% hint style="info" %}
-Whenever you use this feature in your IDE, ensure to also retrieve the PAT details from the Snyk Web UI. Contact Snyk Support to enable the PAT feature within your Snyk Web UI Organization.&#x20;
+Whenever you use this feature in your IDE, ensure to also retrieve the PAT details from the Snyk Web UI. Contact Snyk Support to enable the PAT feature within your Snyk Web UI Organization.
 {% endhint %}
 
 To authenticate using the Personal Access token, follow these steps:
@@ -62,13 +58,11 @@ To authenticate using the Personal Access token, follow these steps:
 
 ## Steps to authenticate using your Snyk API token
 
-{% include "../../../.gitbook/includes/this-method-is-inferior-to-....md" %}
-
 Follow these steps to authenticate:
 
 1. After the extension is installed, click the **Snyk Icon** in the navigation bar, then click the **Settings** icon, find **Authentication Method**, and change it to **Token authentication**:
 
-<figure><img src="../../.gitbook/assets/SCR-20240821-tarb.png" alt=""><figcaption><p>Change authentication method </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SCR-20240821-tarb.png" alt=""><figcaption><p>Change authentication method</p></figcaption></figure>
 
 2. Press **Connect & Trust Workspace**.
 3.  Click **Authenticate** in the web browser window that opens.

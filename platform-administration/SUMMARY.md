@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Overview](snyk-platform-administration/snyk-admin.md)
+* [Overview](README.md)
 
 ## Snyk hierarchy
 
@@ -72,7 +72,6 @@
 * [Choose a service account type to use with Snyk APIs](implementation-and-setup/enterprise-setup/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis.md)
 * [Service accounts using OAuth 2.0](implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md)
 * [Manage service accounts using the Snyk API](implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
-
 
 ## Snyk Broker
 

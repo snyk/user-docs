@@ -29,7 +29,7 @@ In the Snyk 2.0 UI, you can navigate between different levels of your account (T
 
 Snyk 2.0 introduces UI enhancements to the platform navigation and is available in Early Access. This is being rolled out gradually, so not all users see the new navigation at the same time.
 
-If you are an existing user, you can switch between the new and classic navigation at any time using the toggle in your user profile menu. For more information, visit [Snyk 2.0 platform improvements](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/snyk-2.0-platform-improvements).
+If you are an existing user, you can switch between the new and classic navigation at any time using the toggle in your user profile menu. For more information, visit [Snyk 2.0 platform improvements](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/snyk-2.0-platform-improvements).
 {% endhint %}
 
 ## **Switch Organization in the CLI**
@@ -40,4 +40,4 @@ If you are an existing user, you can switch between the new and classic navigati
 
 The default `<ORG_ID>` is the currently preferred Organization in your [Account settings](https://app.snyk.io/account).
 
-See [How to select the Organization to use in the CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli) for more information.
+See [How to select the Organization to use in the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli) for more information.

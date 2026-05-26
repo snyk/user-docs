@@ -7,8 +7,8 @@ The [Snyk Command Line Interface](../../) (CLI) enables you to bring the functio
 Before using the Snyk CLI for testing your source code with Snyk Code, verify you have the following prerequisites:
 
 * A Snyk account.
-* Repositories with code in [supported languages and frameworks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
-* The **Snyk Code** option [enabled in your Snyk Org settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/configure-snyk-code).
+* Repositories with code in [supported languages and frameworks](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
+* The **Snyk Code** option [enabled in your Snyk Org settings](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/configure-snyk-code).
 * The Snyk CLI installed and authenticated.
   * For instructions, see [Install or update the Snyk CLI](../../install-the-snyk-cli/) and [Authenticate the Snyk CLI](../../authenticate-to-use-the-cli.md).
   * The minimum Snyk CLI version for Snyk Code, version 1.716.0. Snyk recommends using the latest version of the CLI.

@@ -76,13 +76,13 @@ After the integration is in place, you can use capabilities such as:
 
 #### Project-level security reports
 
-Snyk produces advanced [remediation reports](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/remediation-reports) that let you explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
+Snyk produces advanced [remediation reports](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/remediation-reports) that let you explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
 The example that follows shows a Project-level security report.
 
 <figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt="Project-level security report"><figcaption><p>Project-level security report</p></figcaption></figure>
 
-Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-fix-prs) with fixes for your repositories.
+Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-fix-prs) with fixes for your repositories.
 
 The example that follows shows a fix pull request opened by Snyk.
 
@@ -98,7 +98,7 @@ To review and adjust the automatic fix pull request settings:
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
 
-For more information, see [Automated pull request creation for new fixes](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-fix-prs).
+For more information, see [Automated pull request creation for new fixes](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-fix-prs).
 {% endhint %}
 
 #### Pull request tests
@@ -112,7 +112,7 @@ The example that follows shows a Snyk pull request build check on the Bitbucket 
 To review and adjust the pull request test settings, follow these steps:
 
 1. In Snyk, go to Organization settings > **Integrations** > **Source control** > **Bitbucket Cloud App**, and click **Edit Settings**.
-2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options. See [Configure PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/configure-pull-request-checks) for more details.
+2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options. See [Configure PR Checks](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/configure-pull-request-checks) for more details.
 
 #### First-party interface in Bitbucket Cloud
 
@@ -121,7 +121,7 @@ When you install the Snyk Bitbucket Cloud App integration in your Bitbucket work
 <figure><img src="../../.gitbook/assets/bbcloud-app_snyk-security_6oct2022.png" alt="Snyk Security tab in Bitbucket Cloud"><figcaption><p>Snyk Security tab in Bitbucket Cloud</p></figcaption></figure>
 
 {% hint style="warning" %}
-The first-party interface currently supports only the [Snyk Open Source](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source) and [Snyk Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container) products. Issues from other Snyk products do not show up on this page.
+The first-party interface currently supports only the [Snyk Open Source](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source) and [Snyk Container](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container) products. Issues from other Snyk products do not show up on this page.
 {% endhint %}
 
 You can **associate a first-party interface with a different Snyk account or Organization**.

@@ -9,7 +9,7 @@ You can create service accounts that authenticate with the [Auth 2.0 `client_cre
 
 ## OAuth 2.0 with client secret
 
-You can create an `oauth_client_secret` service account at either the Group or Organization level by calling the API endpoint [Create a service account for an organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts) or [Create a service account for a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts), or through the Snyk Web UI.
+You can create an `oauth_client_secret` service account at either the Group or Organization level by calling the API endpoint [Create a service account for an organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts) or [Create a service account for a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts), or through the Snyk Web UI.
 
 The response returns the `client_secret` and the `client_id`. You cannot view the `client_secret` again after the service account is created. If you have misplaced it, you can [rotate](manage-service-accounts-using-the-snyk-api.md#manage-a-service-account-client-secret-for-your-group) your `client_secret` and receive a new one.
 
@@ -19,7 +19,7 @@ Never share the `client_secret` publicly, as this is used to authenticate your s
 
 ### Retrieve an OAuth 2.0 access token
 
-After the service account is created, you can retrieve an `access_token` through the OAuth 2.0 endpoint [Request an access token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/oauth2-api#token) using the `client_secret`. The body format and `Content-Type` header must be form-urlencoded.
+After the service account is created, you can retrieve an `access_token` through the OAuth 2.0 endpoint [Request an access token](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/oauth2-api#token) using the `client_secret`. The body format and `Content-Type` header must be form-urlencoded.
 
 You can use an`access_token` the same way as you would use a Snyk API key, but with the `Authorization: bearer $access_token` header or the `SNYK_OAUTH_TOKEN` environment variable with the Snyk CLI.
 
@@ -27,7 +27,7 @@ The `access_token` has a short time-to-live and must be refreshed once it expire
 
 ### Authenticate with the Snyk CLI
 
-You can also use the `client_secret` and the `client_id` to authenticate with the Snyk CLI. For details, see the [`snyk auth`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/auth) command help.
+You can also use the `client_secret` and the `client_id` to authenticate with the Snyk CLI. For details, see the [`snyk auth`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/auth) command help.
 
 ## Create OAuth service accounts through the UI
 
@@ -88,11 +88,11 @@ The response includes the `client_id`, which is needed for the next step.
 
 Snyk recommends you prepare a tool or script to build a `private_key_jwt` with the proper claims and sign it with the private signing key you generated.
 
-The JWT should include the [claims](https://datatracker.ietf.org/doc/html/rfc7519#section-4) outlined in the [Snyk OAuth 2.0 access token endpoint](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/oauth2-api#token) for the `client_assertion` property. Note that the `aud` claim may vary based on the Snyk instance, for example, `api.snyk.io` or `api.eu.snyk.io`. For more information, see [Regional hosting and data residency](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency).
+The JWT should include the [claims](https://datatracker.ietf.org/doc/html/rfc7519#section-4) outlined in the [Snyk OAuth 2.0 access token endpoint](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/oauth2-api#token) for the `client_assertion` property. Note that the `aud` claim may vary based on the Snyk instance, for example, `api.snyk.io` or `api.eu.snyk.io`. For more information, see [Regional hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency).
 
 ### Retrieve a Private Key JWT access token
 
-After the service account is created and signed JWT is prepared, you can retrieve an `access_token` using the [Snyk OAuth 2.0 access token endpoint](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/oauth2-api#token). This access token can be used the same way as a Snyk API key would be used. The request body should include the following:
+After the service account is created and signed JWT is prepared, you can retrieve an `access_token` using the [Snyk OAuth 2.0 access token endpoint](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/oauth2-api#token). This access token can be used the same way as a Snyk API key would be used. The request body should include the following:
 
 * `grant_type: client_credentials`
 * `client_assertion_type: private_key_jwt`
