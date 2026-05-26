@@ -10,11 +10,11 @@ The **Snyk analysis panel** on the left shows the time the analysis took and a l
 
 Each issue contains a severity icon that has the following meaning:
 
-| ![](<../../../../.gitbook/assets/image (50) (1).png>) Critical severity | May allow attackers access to sensitive data and to run code on your application.                                                            |
-| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/image (29).png>) High severity         | May allow attackers access to sensitive data on your application.                                                                            |
-| ![](<../../../.gitbook/assets/image (62).png>) Medium severity       | May allow attackers under some conditions to have access to sensitive data on your application.                                              |
-| ![](<../../../.gitbook/assets/image (37).png>) Low severity          | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+|  Critical severity                                             | May allow attackers access to sensitive data and to run code on your application.                                                            |
+| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](<../../../.gitbook/assets/image (29).png>) High severity   | May allow attackers access to sensitive data on your application.                                                                            |
+| ![](<../../../.gitbook/assets/image (62).png>) Medium severity | May allow attackers under some conditions to have access to sensitive data on your application.                                              |
+| ![](<../../../.gitbook/assets/image (37).png>) Low severity    | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 ## Scan configuration
 

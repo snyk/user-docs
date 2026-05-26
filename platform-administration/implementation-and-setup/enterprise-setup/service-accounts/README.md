@@ -23,7 +23,7 @@ This includes, but is not limited to, scanning using a CI/CD or build system plu
 
 ### Use a service account for GitHub Enterprise integration
 
-If your team needs to set up a service account in GitHub, you must use [GitHub Enterprise](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github-enterprise), which is available only with Snyk Enterprise accounts.
+If your team needs to set up a service account in GitHub, you must use [GitHub Enterprise](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github-enterprise), which is available only with Snyk Enterprise accounts.
 
 Using a service account to authenticate with an integration rather than a Snyk user's token ensures continuity when users change roles or close their personal Snyk accounts.
 
@@ -84,7 +84,7 @@ From the **Role** dropdown list, select an appropriate role.
 
 For Group service accounts, choose from the following list of roles to configure the scope of the token; Snyk recommends selecting Viewer or Admin.
 
-* **Group Viewer** enables read-only access. Note that to set an API token to be read-only and unable to write to the platform, you must use a service account and set it to Group Viewer. See [Snyk API token permissions users can control](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api/snyk-api-token-permissions-users-can-control).
+* **Group Viewer** enables read-only access. Note that to set an API token to be read-only and unable to write to the platform, you must use a service account and set it to Group Viewer. See [Snyk API token permissions users can control](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api/snyk-api-token-permissions-users-can-control).
 * **Group Admin** enables full administrator access.
 * **Group Member** associates a service account with a group but does not grant any specific access.
 

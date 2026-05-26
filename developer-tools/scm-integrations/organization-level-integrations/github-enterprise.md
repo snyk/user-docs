@@ -11,9 +11,9 @@ If you are a Snyk Enterprise plan customer, Snyk recommends that you use the Git
 ### Prerequisites for GitHub Enterprise integration
 
 * Internet-accessible repositories.\
-  If your repositories are not internet-accessible, you must use [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker). This requires creating a startup script. For the script and instructions, visit [GitHub Enterprise - install and configure using Docker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker).
+  If your repositories are not internet-accessible, you must use [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker). This requires creating a startup script. For the script and instructions, visit [GitHub Enterprise - install and configure using Docker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker).
 * A public or private GitHub project.
-* A Snyk Organization Admin user role. To learn more, visit [Pre-defined roles](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/pre-defined-roles#organization-level-permissions).
+* A Snyk Organization Admin user role. To learn more, visit [Pre-defined roles](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles#organization-level-permissions).
 * The required [PAT](github-enterprise.md#generate-a-personal-access-token) and GitHub repository access scope permissions. To learn more, visit [GitHub and GitHub Enterprise permission requirements](../user-permissions-and-access-scopes.md#github-and-github-enterprise-permissions-requirements).
 
 {% hint style="info" %}
@@ -100,7 +100,7 @@ To review and update the automatic fix pull request settings:
 
 #### Test new pull requests
 
-The [PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks) feature enables Snyk to test any newly-created pull requests in your repositories for security vulnerabilities and sends a status check to GitHub. This allows you to see, directly from GitHub, whether the pull request introduces new security issues.
+The [PR Checks](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks) feature enables Snyk to test any newly-created pull requests in your repositories for security vulnerabilities and sends a status check to GitHub. This allows you to see, directly from GitHub, whether the pull request introduces new security issues.
 
 The following example shows how Snyk pull request checks appear on the pull requests page in GitHub.
 
@@ -109,7 +109,7 @@ The following example shows how Snyk pull request checks appear on the pull requ
 To review and adjust the pull request test settings:
 
 1. Navigate to Organization **Settings** > **Integrations** > **GitHub Enterprise**.
-2. Scroll to **Snyk PR status checks**; see [Configure PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/configure-pull-request-checks) for details.
+2. Scroll to **Snyk PR status checks**; see [Configure PR Checks](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/configure-pull-request-checks) for details.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 15.43.34.png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
 
@@ -169,7 +169,7 @@ After GitHub Enterprise is disconnected, imported Snyk Projects will be set to i
 You can re-connect anytime; however, re-initiating GitHub Enterprise projects for monitoring requires setting up the integration again.
 
 4. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk Broker.
-   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/enterprise-setup/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker) page.
+   * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker) page.
    * Copy and paste the Broker token on the integration setup menu from the Integration Hub.
 5. API URL (`mandatory`) - Input the API URL. The default URL is `https://api.github.com`.
 6. Pull personal repositories (`optional`): Enable the option if you only want to pull the repositories you own.

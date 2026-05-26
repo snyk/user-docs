@@ -19,7 +19,7 @@ The accuracy of results is improved in a number of ways through cloning. Since S
 When Workspaces is enabled, Snyk will ingest, through configured SCM integrations, a temporary and shallow clone of repository contents at a given commit and all commit metadata (including the commit message, authors, and timestamp).
 
 {% hint style="info" %}
-For more information on Snyk data processing and safeguards concerning Git repo cloning, see [Cache retention period related to vulnerability source data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data#cache-retention-period-related-to-vulnerability-source-data) and [Snyk integrations: workspaces](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data#snyk-integrations-workspaces).
+For more information on Snyk data processing and safeguards concerning Git repo cloning, see [Cache retention period related to vulnerability source data](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data#cache-retention-period-related-to-vulnerability-source-data) and [Snyk integrations: workspaces](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data#snyk-integrations-workspaces).
 {% endhint %}
 
 ## Git protocols used by Workspaces

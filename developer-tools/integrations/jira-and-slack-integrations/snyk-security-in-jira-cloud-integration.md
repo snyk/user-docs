@@ -18,7 +18,7 @@ To install and configure the Jira app, you must be a Jira Cloud administrator in
 For the Jira app to load successfully, the base URL of your Jira board must precisely match the [base URL configured in your Snyk Jira integration](jira-integration.md#how-to-set-up-your-jira-integration). If your Jira instance uses URL rewrites or redirects that alter the accessible board URL, the Jira app may fail to load.
 {% endhint %}
 
-To connect the Jira app to Snyk, you must be a [Snyk Organization administrator](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/pre-defined-roles).
+To connect the Jira app to Snyk, you must be a [Snyk Organization administrator](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles).
 
 To activate Security in Jira Cloud in Jira, navigate to **Project Settings > Features > Development > Security** and toggle **Security** **ON**.
 
