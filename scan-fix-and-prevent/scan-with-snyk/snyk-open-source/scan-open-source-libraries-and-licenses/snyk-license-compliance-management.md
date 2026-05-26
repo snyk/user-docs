@@ -15,7 +15,7 @@ The Snyk Default License Policy defines how Snyk identifies potential license is
 Before checking license compliance with Snyk License Compliance Management, ensure you:
 
 * Are part of a Snyk [paid plan](https://snyk.io/plans/).
-* Have integrated and imported your Projects. See [Getting started](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started).
+* Have integrated and imported your Projects. See [Getting started](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started).
 
 ## Define license policies
 
@@ -31,7 +31,7 @@ You can create and edit multiple license policies for Organizations. For details
 
 ## View compliance issues
 
-Snyk’s [Git-based integrations ](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab.
+Snyk’s [Git-based integrations ](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab.
 
 <div align="left"><figure><img src="../../../.gitbook/assets/OS-issues-overview-with-license-issues-filter.png" alt=""><figcaption><p>Issues overview with the "License issues" filter applied</p></figcaption></figure></div>
 

@@ -12,15 +12,15 @@ When using a brokered connection Snyk Broker version 5.4.9 and above is required
 
 To check for open-source and licensing issues and code security, ensure that you have established the following:
 
-* You have the Group Admin role so you have access to all integration settings. See [Member roles](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/user-role-management).
-* You have [set up a Git repository integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations). For help, see the Snyk Learn course [Source code manager configuration](https://learn.snyk.io/lesson/configure-snyk-scm/).
+* You have the Group Admin role so you have access to all integration settings. See [Member roles](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management).
+* You have [set up a Git repository integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations). For help, see the Snyk Learn course [Source code manager configuration](https://learn.snyk.io/lesson/configure-snyk-scm/).
 * Import a Project to have a working Git repository.
 * For code security (Snyk Code), meet all of the above conditions and then contact your Snyk representative to enable the feature for you.
 
 {% hint style="info" %}
 PR Checks rely on webhooks from the SCM. Integration scope must include the ability to create webhooks.
 
-A PR Check is counted as a test within your Organization's test count, including automatic checks of new commits in an open pull request. See[ What counts as a test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/what-counts-as-a-test). The number of tests allowed is determined by the [pricing plans](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide/trial-limitations).
+A PR Check is counted as a test within your Organization's test count, including automatic checks of new commits in an open pull request. See[ What counts as a test](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/what-counts-as-a-test). The number of tests allowed is determined by the [pricing plans](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/trial-limitations).
 {% endhint %}
 
 ## Types of Snyk scans supported
@@ -31,7 +31,7 @@ You can analyze the changed code with PR Checks as follows:
 * **Snyk Open Source**: Snyk analyzes dependency manifest or supported files for known security vulnerabilities that meet a threshold, such as exceeding severity, or checks to determine whether a fix is available.
 * **Open Source license check**: Snyk validates package licenses against the configured policy for license policy violations.
 
-PR Checks also support all programming languages and frameworks supported by the Snyk Code and Open Source engines. For more information, see [Supported languages, package managers, and frameworks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
+PR Checks also support all programming languages and frameworks supported by the Snyk Code and Open Source engines. For more information, see [Supported languages, package managers, and frameworks](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
 
 ## How configuration of PR Checks works
 
@@ -55,7 +55,7 @@ The configuration settings apply to all Projects in that Organization. You can a
 PR Checks that are configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and, therefore, will not alert for projects in languages that do not support FixPR Checks.
 
 {% hint style="info" %}
-A PR test is configured to be optional or blocking within your source control management platform, such as GitHub’s branch protection rules. To learn more on issue prevention, visit [Phase 6: Rolling out the prevention stage](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide/automate-prevention-measures).
+A PR test is configured to be optional or blocking within your source control management platform, such as GitHub’s branch protection rules. To learn more on issue prevention, visit [Phase 6: Rolling out the prevention stage](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/automate-prevention-measures).
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/enable analyze code.png" alt="PR check settings to analyze code issues."><figcaption><p>PR check settings to analyze code issues</p></figcaption></figure>

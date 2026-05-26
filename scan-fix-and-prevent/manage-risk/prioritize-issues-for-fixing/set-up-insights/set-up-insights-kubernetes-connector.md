@@ -18,19 +18,19 @@ The Kubernetes connector is the agent deployed in your Kubernetes clusters to co
 Before you can deploy the Kubernetes connector in your Kubernetes clusters, ensure you have the following:
 
 * A Snyk Organization to which the Kubernetes information collected will be sent to be stored. This could be a new Organization.
-* A Snyk service account created specifically to be used with the Kubernetes connector. For instructions on creating a service account, see [Service accounts](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts). For the roles and permissions, Snyk recommends:
+* A Snyk service account created specifically to be used with the Kubernetes connector. For instructions on creating a service account, see [Service accounts](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts). For the roles and permissions, Snyk recommends:
   * Creating a new specific role for this service account
   * Taking a least privilege approach, granting the new specific role the sole permission required to **Publish Kubernetes Resources**.
 
 ### Create a Snyk Organization
 
-If you create a separate Organization for the Kubernetes connector, follow the steps in the Snyk documentation to [create a Snyk Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations/create-and-delete-organizations#create-an-organization). The new Snyk Organization must be in the same Snyk Group as your other Snyk Organization.
+If you create a separate Organization for the Kubernetes connector, follow the steps in the Snyk documentation to [create a Snyk Organization](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations/create-and-delete-organizations#create-an-organization). The new Snyk Organization must be in the same Snyk Group as your other Snyk Organization.
 
 If you are not creating a separate Snyk Organization, continue with the next step.
 
 ### Create a new role
 
-To create a new role, see [create a new role](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/user-role-management#create-a-custom-role).
+To create a new role, see [create a new role](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management#create-a-custom-role).
 
 This example illustrates creating a new role called **Kubernetes connector**
 
@@ -38,7 +38,7 @@ This example illustrates creating a new role called **Kubernetes connector**
 
 ### Assign permissions to this role
 
-Navigate to the newly created role and [select edit](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/user-role-management#edit-a-custom-role); you will also be taken to this page immediately after creating the role.
+Navigate to the newly created role and [select edit](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management#edit-a-custom-role); you will also be taken to this page immediately after creating the role.
 
 Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** permission, and save the changes by clicking the **Update Role Permissions** button.
 
@@ -46,7 +46,7 @@ Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** perm
 
 ### Create a service account and assign it to a role
 
-Next, create a new [service account](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts) for Kubernetes connector integration.
+Next, create a new [service account](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts) for Kubernetes connector integration.
 
 {% hint style="info" %}
 Snyk recommends creating this service account for the Snyk Organization used or created for the Kubernetes agent.

@@ -22,7 +22,7 @@ Projects are held in a Target. A Target represents an external resource Snyk has
 
 Snyk creates a Target when you request to import a Project or scan using the CLI. If the import fails or finds nothing, the Target will be empty.
 
-When you select **Group by target**, Snyk Targets appear in the **Projects** listing. You can also find Targets using the endpoints [Get targets by org ID](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/targets#orgs-org_id-targets) and [List all Projects for an Org with the given Org ID](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects#orgs-org_id-projects).
+When you select **Group by target**, Snyk Targets appear in the **Projects** listing. You can also find Targets using the endpoints [Get targets by org ID](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/targets#orgs-org_id-targets) and [List all Projects for an Org with the given Org ID](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects#orgs-org_id-projects).
 
 Click the dots at the far right of each Target on the list to see the available actions, including deleting a target.
 
@@ -81,7 +81,7 @@ Possible Origin values are:
 
 A Snyk Project defines the items, such as manifest files, that Snyk scans for a given Target, with configuration information defining how to run that scan.
 
-Projects appear in the **Projects** listing. You can also find Projects using the endpoint [List all Projects for an Org with the given Org ID](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects#orgs-org_id-projects).
+Projects appear in the **Projects** listing. You can also find Projects using the endpoint [List all Projects for an Org with the given Org ID](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects#orgs-org_id-projects).
 
 Use **Group by none** (ungrouped) for better Project visibility and to apply [filtering attributes at the Project level](project-attributes.md).
 

@@ -235,7 +235,7 @@ Endpoints:
 
 {% stepper %}
 {% step %}
-#### Test your policy (optional)
+**Test your policy (optional)**
 
 ```json
 curl -X POST "https://api.snyk.io/rest/orgs/{org_id}/container_import/{integration_id}/policy/dry_run?version=2025-09-17" \
@@ -261,7 +261,7 @@ curl -X POST "https://api.snyk.io/rest/orgs/{org_id}/container_import/{integrati
 {% endstep %}
 
 {% step %}
-#### Configure the import policy
+**Configure the import policy**
 
 Configure the import policy. Use the `POST` or `PATCH` endpoints to apply the policy, depending on whether you have an existing policy for your container registry integration. The following example sets a policy to import all tags from a specific repository and run every 48 hours.
 
@@ -291,7 +291,7 @@ curl -X POST \
 {% endstep %}
 
 {% step %}
-#### Wait for the sync
+**Wait for the sync**
 
 Snyk schedules new policies to run immediately. Snyk executes subsequent runs based on the defined `schedule_frequency_hours`. Check the Snyk web UI for new targets and Projects based on your defined policy.
 {% endstep %}
