@@ -36,7 +36,7 @@ The Custom Base Image Recommendation feature supports Automatic fix PRs. If you 
 
 ## Special considerations
 
-The recommendations provided by the CBIR feature rely on versioned tags that comply with the versioning schema configured.&#x20;
+The recommendations provided by the CBIR feature rely on versioned tags that comply with the versioning schema configured.
 
 {% hint style="info" %}
 It is possible to add the "latest" tag to this pool as a single selection, or as part of a custom versioning scheme. However, Snyk does not recommend doing this, as it negates the benefits of the CBIR feature. The following information considers that the recommendations are not configured with the "latest" tag included in recommendations.
@@ -50,7 +50,7 @@ For any image that uses the "latest" tag, Snyk recommends moving to the current 
 
 ### **Recommendations for upgrading the base image**
 
-The **Recommendations for upgrading the base image** view does not show vulnerabilities for base images if they are not in the pool of CBIR tags. This is generally the case for images that have a "latest" image tag or other rolling tags, or other images that are not in the recommendation pool. This does not mean that the base image itself is free from vulnerabilities. To determine what vulnerabilities an image contains, view the scan results for that image.&#x20;
+The **Recommendations for upgrading the base image** view does not show vulnerabilities for base images if they are not in the pool of CBIR tags. This is generally the case for images that have a "latest" image tag or other rolling tags, or other images that are not in the recommendation pool. This does not mean that the base image itself is free from vulnerabilities. To determine what vulnerabilities an image contains, view the scan results for that image.
 
 ## Enable CBIR: configure an image as a custom base image
 
@@ -61,9 +61,9 @@ The following steps explain how to configure custom base images. The team that i
 1. Build a custom base image.
 2. Import the image to a Snyk Project using one of the following options:
    * The Snyk Web UI: Import an image into Snyk using a container registry.
-   * The CLI: Use the `snyk container monitor`  command.
+   * The CLI: Use the `snyk container monitor` command.
      * Set the `--project-name` flag (mandatory) to give the Project a unique name. Snyk recommends using the image name and tag without the repository. For example `base-python:3.9.2_2021110408`.
-     * Example of a Snyk CLI command: \
+     * Example of a Snyk CLI command:\
        `snyk container monitor somecompany/base-python:3.9.2_2021110408 --project-name=base-python:3.9.2_2021110408 --org=ORGANIZATION_ID/ORGANIZATION_NAME`
 
 ### Mark the created Project as a custom base image
@@ -74,7 +74,7 @@ The following steps explain how to configure custom base images. The team that i
 4. If you want Snyk to use this image as a source to determine the best upgrade path, enable **Include in recommendations**.
 
 {% hint style="info" %}
-You can also do this using the API endpoint [Create a Custom Base Image from an existing container Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/custom-base-images#custom_base_images).
+You can also do this using the API endpoint [Create a Custom Base Image from an existing container Project](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/custom-base-images#custom_base_images).
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/enable_CBIR.png" alt="Custom Base Image toggle enabled"><figcaption><p>Enable Custom Base Image</p></figcaption></figure>

@@ -1,6 +1,6 @@
 # Customize PR templates
 
-When you fix or upgrade Snyk Open Source and Snyk Container Projects imported using the [SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations), Snyk raises pull requests (PRs) against your repository.
+When you fix or upgrade Snyk Open Source and Snyk Container Projects imported using the [SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations), Snyk raises pull requests (PRs) against your repository.
 
 Snyk has default PR templates for the title, description, and commit message. These indicate what packages are being changed, which issues are being fixed, and many other details.
 
@@ -17,4 +17,4 @@ PR templates are opened with a custom template in the following order of precede
 
 * First, Snyk applies anything that is set for the specific repository, that is, the YAML upload.
 * If there is anything missing from that template or the Project does not have a YAML file, Snyk checks for your Group template uploaded and set using the API request.
-* If anything is missing in the Group template or no custom template is found, Snyk applies the default template.&#x20;
+* If anything is missing in the Group template or no custom template is found, Snyk applies the default template.

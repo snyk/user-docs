@@ -2,7 +2,7 @@
 
 ## Create and manage a custom PR template using the API
 
-You can create a custom PR template using the API endpoint [Create or update pull request template for Group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/pull-request-templates#post-groups-group_id-settings-pull_request_template). Send an API request that contains a JSON payload with the custom properties. This request configures a Group-level pull request template that will be used on any Organization or Project within that Group. The pull request template created using the Snyk API can be updated at any time, and all Projects in the Group are automatically updated with the latest changes.
+You can create a custom PR template using the API endpoint [Create or update pull request template for Group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/pull-request-templates#post-groups-group_id-settings-pull_request_template). Send an API request that contains a JSON payload with the custom properties. This request configures a Group-level pull request template that will be used on any Organization or Project within that Group. The pull request template created using the Snyk API can be updated at any time, and all Projects in the Group are automatically updated with the latest changes.
 
 API configuration of PR templates is available only at the Group level.
 
@@ -20,7 +20,7 @@ You cannot customize the branch name for your PRs. The branch name of your PRs w
 
 You can retrieve the custom PR template for your Group using the endpoint [Get pull request template for Group](https://apidocs.snyk.io/?#get-/groups/-group_id-/settings/pull_request_template). This is useful if you want to consider changing your template, and in troubleshooting.
 
-To delete the template, use the endpoint [Delete pull request template for group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/pull-request-templates#delete-groups-group_id-settings-pull_request_template).
+To delete the template, use the endpoint [Delete pull request template for group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/pull-request-templates#delete-groups-group_id-settings-pull_request_template).
 
 ## Customize using a YAML PR template file
 
@@ -71,7 +71,7 @@ If you want to use a custom template for multiple repositories, add the YAML cus
 
 ## Broker configuration for fetching custom PR templates
 
-If you use [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker), you must use a Broker at version 4.188.0 or higher and enable the Broker to fetch the custom PR templates using the `ACCEPT_CUSTOM_PR_TEMPLATES` environment variable.
+If you use [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker), you must use a Broker at version 4.188.0 or higher and enable the Broker to fetch the custom PR templates using the `ACCEPT_CUSTOM_PR_TEMPLATES` environment variable.
 
 To do this, you must remove `ACCEPT=/path/to/custom.json` and add the following environment variable to your Broker container or deployment:
 

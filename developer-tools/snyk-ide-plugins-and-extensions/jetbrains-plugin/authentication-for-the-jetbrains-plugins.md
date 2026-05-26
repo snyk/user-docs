@@ -9,7 +9,7 @@ Snyk supports the following protocols for authentication:
 * Snyk API token (Legacy)
 
 {% hint style="warning" %}
-Before authenticating, ensure your region is properly set. For more details, see [IDEs URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).
+Before authenticating, ensure your region is properly set. For more details, see [IDEs URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (326).png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Jetbrains IDEs</p></figcaption></figure>
@@ -36,8 +36,6 @@ If you have problems, see [OAuth 2.0 authentication does not work](../troublesho
 
 ## Steps to authenticate using your Personal Access Token
 
-{% include "../../../.gitbook/includes/this-method-is-inferior-to-....md" %}
-
 {% hint style="warning" %}
 The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, please reach out to your Snyk account team.
 {% endhint %}
@@ -55,8 +53,6 @@ To authenticate using the Personal Access token, follow these steps:
 
 ## Steps to authenticate using your Snyk API token
 
-{% include "../../../.gitbook/includes/this-method-is-inferior-to-....md" %}
-
 To authenticate, follow these steps:
 
 1. In the JetBrains plugin, navigate to **Settings** > **Tools** > **Snyk**.
@@ -73,7 +69,7 @@ To authenticate, follow these steps:
 The analysis starts automatically.
 
 {% hint style="info" %}
-Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
+Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
 {% endhint %}
 
 ## How to switch accounts

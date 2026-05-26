@@ -24,7 +24,7 @@ These are issues that can be fixed by upgrading a direct dependencies version. T
 
 * Which dependency to upgrade to resolve the issue
 * The issue type
-* The [severity rating](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/severity-levels) for the issue
+* The [severity rating](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/severity-levels) for the issue
 * A link to the related issue in the [Snyk Vulnerability Database](https://security.snyk.io/)
 * The dependency through which this vulnerability is introduced and its path
 
@@ -34,7 +34,7 @@ These are issues that cannot be resolved by upgrading a direct dependency. They 
 
 ### License Issues
 
-License issues are determined by the [license policy](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/license-policies) of your Snyk Organization. License issues contain the following information:
+License issues are determined by the [license policy](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/license-policies) of your Snyk Organization. License issues contain the following information:
 
 * Type of license
 * License severity as determined by the license policy of your Snyk Organization
@@ -51,5 +51,5 @@ The descriptive information about the test results includes the following detail
 * **Project Name**: The name of the directory in which this Project is located
 * **Open Source**: Information about whether or not this scan was performed on an Open Source Project.
 * **Project Path**: The path through which the target file is introduced
-* **Local Snyk Policy**: Information about whether this scan was performed on an Open Source Project. For more information, see [The .snyk file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file).
+* **Local Snyk Policy**: Information about whether this scan was performed on an Open Source Project. For more information, see [The .snyk file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file).
 * **Licenses**: Information about whether this Project was scanned for license issues

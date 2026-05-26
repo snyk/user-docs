@@ -65,7 +65,7 @@ You must configure your `main` branch under `Settings` -> `Branches`first, so th
 
 ## Snyk IaC GitHub Action
 
-Another way to test the rules is by testing the contract with the [Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli) by using the [Snyk IaC GitHub Action](https://github.com/snyk/actions/tree/master/iac), making sure the generated bundle can be read by the CLI.
+Another way to test the rules is by testing the contract with the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli) by using the [Snyk IaC GitHub Action](https://github.com/snyk/actions/tree/master/iac), making sure the generated bundle can be read by the CLI.
 
 To do this, you will need a step for installing the Snyk CLI and a `SNYK_TOKEN`, which can be found in your Snyk Account Settings.
 
@@ -176,7 +176,7 @@ Ensure that the OCI\_REGISTRY\_NAME configured in the GitHub Secrets does not al
 
 After publishing the custom rules to an OCI registry, you can configure a separate pipeline to use these rules.
 
-One way to do this is by using the API endpoint [Update the Infrastructure as Code settings for a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings#patch-groups-group_id-settings-iac).
+One way to do this is by using the API endpoint [Update the Infrastructure as Code settings for a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings#patch-groups-group_id-settings-iac).
 
 This means configuring the GitHub Action above with another job for updating Snyk to use the configured custom rules bundle:
 

@@ -8,7 +8,7 @@ To remove members from Groups and Organizations programmatically from user accou
 
 **Request**: `GET https://api.snyk.io/v1/org/{orgId}/members`
 
-**Endpoint**: [List members](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members)
+**Endpoint**: [List members](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members)
 
 This call returns an array of all non-admin members of the Organization. Save the `id` of each user who needs to be removed from the Organization.
 
@@ -16,7 +16,7 @@ This call returns an array of all non-admin members of the Organization. Save th
 
 **Request**: `DELETE https://api.snyk.io/v1/org/{orgId}/members/update/{userId}`
 
-**Endpoint**: [Remove a member from the organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members-userid-1)
+**Endpoint**: [Remove a member from the organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members-userid-1)
 
 For each user, call the endpoint to remove that member from the Organization using the user id you saved previously.
 
@@ -34,7 +34,7 @@ When a member is removed from an Organization, if the Organization is a part of 
 
 **Request**: `GET https://api.snyk.io/v1/group/groupId/members`
 
-**Endpoint**: [List all members in a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-members)
+**Endpoint**: [List all members in a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-members)
 
 This call returns an array of all members of the Group. Save the `id` of each user who needs to be removed from the Group.
 

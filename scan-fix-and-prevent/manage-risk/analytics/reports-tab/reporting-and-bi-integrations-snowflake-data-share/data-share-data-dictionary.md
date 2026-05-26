@@ -228,7 +228,7 @@ Querying the `USAGE_EVENTS` table allows you to measure:
 
 > Version in use: v1.0
 
-The `ISSUE_JIRA_ISSUES` table allows correlation between Snyk issues and assigned Jira issues. As Snyk enables more than one type of Jira integration, it is important to emphasize that the Jira issues that are available in the dataset originated from this [Jira integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration).
+The `ISSUE_JIRA_ISSUES` table allows correlation between Snyk issues and assigned Jira issues. As Snyk enables more than one type of Jira integration, it is important to emphasize that the Jira issues that are available in the dataset originated from this [Jira integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration).
 
 | Column name            | Data type      | Description                                                                                    |
 | ---------------------- | -------------- | ---------------------------------------------------------------------------------------------- |

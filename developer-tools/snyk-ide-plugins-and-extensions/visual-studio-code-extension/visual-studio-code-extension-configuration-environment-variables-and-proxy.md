@@ -7,7 +7,7 @@ After the plugin is installed, you can set the following configurations for the 
 ### Snyk account
 
 * **Authentication method:** Specify whether to authenticate with OAuth2 or with an API token. `OAuth2` is the default
-* **Custom Endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDE URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).\
+* **Custom Endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDE URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).\
   Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect does not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 * **Organization**: Sets the Organization to run `snyk test` against, similar to the `--org=` option in the CLI. Snyk recommends using the `ORG_ID`. If you specify an Organization slug name, the value must match the URL slug as displayed in the URL of your Organization in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. If the Organization value is blank or invalid, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) will be used. Setting the Organization at the Folder level is Experimental.
 * **Auto-select Organization**: When enabled, Snyk automatically selects the most appropriate Organization for your Project using context found in your repository and your authentication. If an Organization is configured manually, this feature is overridden. If an appropriate Organization cannot be identified automatically, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) is used as a fallback.
@@ -19,11 +19,11 @@ After the plugin is installed, you can set the following configurations for the 
 * **Snyk Code Security issues**: Enable a scanner for security vulnerabilities in your application code. Enabled by default
 * **Snyk IaC**: Enable a scanner for insecure configurations in Terraform and Kubernetes code. Enabled by default.
 * **Severity selection**: Filter issues by their severity, from Low to Critical.
-* **Issue View Options**: Filter issues by their [Code Consistent Ignores](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code) status. These filters do not apply if you disable **Code Consistent Ignores** for the Organization.
+* **Issue View Options**: Filter issues by their [Code Consistent Ignores](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code) status. These filters do not apply if you disable **Code Consistent Ignores** for the Organization.
 * **All issues vs Net new issues**: Specify whether to see all issues or only net new issues. The latter requires an SCM integration, where the extension compares findings with those in the base branch.
 *   **Additional parameters**: Set additional `snyk test` CLI options for Open Source scanning.
 
-    For unmanaged [C/C++](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/c-c++) scanning, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning. Additional parameters do not apply to Snyk Code or IaC.
+    For unmanaged [C/C++](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/c-c++) scanning, use the CLI option `--unmanaged` to find vulnerabilities in open-source packages. This option works only for unmanaged C/C++ scanning. Additional parameters do not apply to Snyk Code or IaC.
 
 ## User experience
 

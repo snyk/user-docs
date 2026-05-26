@@ -1,20 +1,20 @@
-# Event Forwarding
+# Event forwarding
 
-Snyk event forwarding integrations allow you to push Snyk platform events directly to certain products on other platforms, enabling you to set up custom alerting, build your own reporting, trigger automation, and more.&#x20;
+Snyk event forwarding integrations allow you to push Snyk platform events directly to certain products on other platforms, enabling you to set up custom alerting, build your own reporting, trigger automation, and more.
 
 ## Event types
 
 Snyk supports sending two different types of events:
 
-1. **Snyk issue events** - these events are sent when new issues are discovered in a Snyk Project, or when an issue is updated. Each event contains information about the vulnerability or other problem found, including whether a remediation is available.&#x20;
-2. **Snyk platform audit events** - these events are sent every time a Snyk user performs an action within the Snyk platform. For more information, see [Audit logs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group).&#x20;
+1. **Snyk issue events** - these events are sent when new issues are discovered in a Snyk Project, or when an issue is updated. Each event contains information about the vulnerability or other problem found, including whether a remediation is available.
+2. **Snyk platform audit events** - these events are sent every time a Snyk user performs an action within the Snyk platform. For more information, see [Audit logs](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group).
 
 {% hint style="info" %}
 The **Snyk issue** event type does not include Snyk Cloud issues.
 {% endhint %}
 
 {% hint style="info" %}
-The **Snyk platform audit** event type is available with Snyk Enterprise plans. See [Pricing plans](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide/trial-limitations) for details.
+The **Snyk platform audit** event type is available with Snyk Enterprise plans. See [Pricing plans](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/trial-limitations) for details.
 {% endhint %}
 
 ## Supported integrations

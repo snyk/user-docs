@@ -8,8 +8,6 @@ Snyk supports the following protocols for authentication:
 * Personal Access Token
 * API token (Legacy)
 
-{% include "../../../.gitbook/includes/before-authenticating.md" %}
-
 <figure><img src="../../.gitbook/assets/image (319).png" alt=""><figcaption><p>Authentication methods available in the Snyk extension in Visual Studio</p></figcaption></figure>
 
 ## Steps to authenticate using the OAuth 2.0 protocol
@@ -44,8 +42,6 @@ If you have problems, see [OAuth 2.0 authentication does not work](../troublesho
 
 ## Steps to authenticate using your Personal Access Token
 
-{% include "../../../.gitbook/includes/this-method-is-inferior-to-....md" %}
-
 {% hint style="warning" %}
 The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, please reach out to your Snyk account team.
 {% endhint %}
@@ -62,8 +58,6 @@ To authenticate using the Personal Access token, follow these steps:
 6. Click **Apply and Close**.
 
 ## Steps to authenticate using your Snyk API token
-
-{% include "../../../.gitbook/includes/this-method-is-inferior-to-....md" %}
 
 Follow these steps to authenticate:
 
@@ -84,7 +78,7 @@ Follow these steps to authenticate:
 The analysis starts automatically.
 
 {% hint style="info" %}
-Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
+Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
 {% endhint %}
 
 ## How to switch accounts

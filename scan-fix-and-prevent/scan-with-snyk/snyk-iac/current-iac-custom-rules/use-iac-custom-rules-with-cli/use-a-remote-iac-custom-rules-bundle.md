@@ -26,10 +26,10 @@ After you have completed this configuration, you can run a Snyk IaC scan. The CL
 snyk iac test <file>
 ```
 
-The resulting configuration scan issues will include issues from both the default Snyk rules and your custom rules. See also [Understanding the IaC CLI test results](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/understand-the-iac-cli-test-results).
+The resulting configuration scan issues will include issues from both the default Snyk rules and your custom rules. See also [Understanding the IaC CLI test results](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/understand-the-iac-cli-test-results).
 
 {% hint style="info" %}
-Only one method for defining the bundle's path should be defined at any given time. Make sure to disable the custom rules settings using the Snyk settings page or the [Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings). Alternatively, clear any previously stored settings using [`snyk config unset`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config#unset-less-than-key-greater-than).
+Only one method for defining the bundle's path should be defined at any given time. Make sure to disable the custom rules settings using the Snyk settings page or the [Snyk API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings). Alternatively, clear any previously stored settings using [`snyk config unset`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config#unset-less-than-key-greater-than).
 {% endhint %}
 
 ## Snyk settings and remote custom rules bundle
@@ -88,7 +88,7 @@ You can restore the inheritance of Group configurations at any time by using the
 
 If manually updating the settings through the Snyk Settings page is too time-consuming, you can use the Snyk API, which allows you to send any variation of the custom rules settings using an API call.
 
-* For example, in order to configure the custom rules bundle at the Group level, use the endpoint [Update the Infrastructure as Code settings for a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings#groups-group_id-settings-iac) by providing the following body:
+* For example, in order to configure the custom rules bundle at the Group level, use the endpoint [Update the Infrastructure as Code settings for a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings#groups-group_id-settings-iac) by providing the following body:
 
 ```
 {
@@ -153,9 +153,9 @@ The API replies with the Group settings so you can confirm the changes:
 
 You can override remote bundle configurations using the Snyk API.
 
-Similarly to the Settings page, the endpoint [Update the Infrastructure as Code settings for a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings#groups-group_id-settings-iac) allows you to apply the remote bundle to all the Organizations in the Group. An Organization can override the configurations for a Group and define its own bundle and tag by using an API call.
+Similarly to the Settings page, the endpoint [Update the Infrastructure as Code settings for a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings#groups-group_id-settings-iac) allows you to apply the remote bundle to all the Organizations in the Group. An Organization can override the configurations for a Group and define its own bundle and tag by using an API call.
 
-* To override the Group configurations, call the endpoint [Update the Infrastructure as Code settings for an org](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings#orgs-org_id-settings-iac) by providing a different custom rules bundle and tag in the request body:
+* To override the Group configurations, call the endpoint [Update the Infrastructure as Code settings for an org](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings#orgs-org_id-settings-iac) by providing a different custom rules bundle and tag in the request body:
 
 ```
 {

@@ -53,7 +53,7 @@ You can sort the issue cards in a Project based on their priority score or sever
 You can perform the following actions on the issue card by clicking the tri-dot menu associated with each vulnerability:
 
 * [Ignore the issue](../../manage-risk/prioritize-issues-for-fixing/ignore-issues/): if you do not need to take action on an issue, or it does not need to appear on your reports, you can ignore it.
-* [Create a Jira ticket](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration): if you have the Jira integration, you can link your issue boards to Snyk and create Jira tickets directly from the Project details page to fix vulnerabilities.
+* [Create a Jira ticket](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration): if you have the Jira integration, you can link your issue boards to Snyk and create Jira tickets directly from the Project details page to fix vulnerabilities.
 
 You can also open a PR if a fix is available by clicking the "**Upgrade to X.X.X"** button at the bottom of the card.
 

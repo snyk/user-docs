@@ -32,7 +32,7 @@ snyk test --debug
 
 ## Error Catalog
 
-The CLI implements error codes from the Snyk [Error Catalog](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/error-catalog) for many issues that can occur during CLI execution. These are designed to make issues during CLI execution clearer and, where possible, easier to address.
+The CLI implements error codes from the Snyk [Error Catalog](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/error-catalog) for many issues that can occur during CLI execution. These are designed to make issues during CLI execution clearer and, where possible, easier to address.
 
 For example, when using the CLI while unauthorized, it outputs the appropriate Error Catalog error.
 
