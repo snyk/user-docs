@@ -22,8 +22,8 @@ The following Snyk plugins and extensions are available.
 
 The Visual Studio Code extension is compatible with the following Visual Studio Code-based IDEs.
 
-* [Cursor](../../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/cursor-guide.md)&#x20;
-* [Windsurf](../../integrations/snyk-studio-agentic-integrations/quickstart-guides-for-snyk-studio/windsurf-guide.md)
+* [Cursor](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide)
+* [Windsurf](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/windsurf-guide)
 
 Snyk also offers a [Language Server](snyk-language-server/).
 
