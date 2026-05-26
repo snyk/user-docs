@@ -38,7 +38,7 @@ An example command follows to scan only the packages that belong to any discover
 snyk test --yarn-workspaces --detection-depth=6
 ```
 
-You can use a common [`.snyk` policy file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file) if you maintain ignores and patches in one place to be applied for all detected workspaces by providing the policy path as follows:
+You can use a common [`.snyk` policy file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file) if you maintain ignores and patches in one place to be applied for all detected workspaces by providing the policy path as follows:
 
 ```
 snyk test --yarn-workspaces --policy-path=src/.snyk
@@ -57,4 +57,4 @@ Some customers have complex Projects, with multiple languages, package managers,
 * For most Gradle Projects, using `--all-projects` works, as it invokes Gradle-specific options behind the scenes in the form of `snyk test --file=build.gradle --all-sub-projects` when it finds the build file as part of the `--all-projects` search.
 * Gradle may require additional configuration parameters. If so, target the other artifacts by using `--file=` for each manifest in the other languages and package managers. You must then use `--all-sub-projects` and potentially `--configuration-matching` to scan a complex Gradle Project.
 
-See [Java and Kotlin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin) for more information.
+See [Java and Kotlin](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin) for more information.

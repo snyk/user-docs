@@ -2,13 +2,13 @@
 
 The [Amazon EventBridge](https://aws.amazon.com/eventbridge/) integration sends Snyk platform events to EventBridge, allowing you to integrate Snyk events into your existing AWS environments. The integration can be configured to send two different types of events:
 
-* **Snyk issue events:** These events are sent when new issues are discovered in a Snyk Project, or when an issue is updated. Each event contains information about the vulnerability or other problem found, including whether a remediation is available.
-* **Snyk platform audit events:** These events are sent every time a Snyk user performs an action within the Snyk platform. For more information, see [Retrieve audit logs of user-initiated activity by API for an Org or Group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group). This event type is available with Snyk Enterprise plans. For more information, see this page about [trials](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-implementation-guide/trial-limitations) and [Plans and pricing](https://snyk.io/plans/).
+* **Snyk issue events**: These events are sent when new issues are discovered in a Snyk Project, or when an issue is updated. Each event contains information about the vulnerability or other problem found, including whether a remediation is available.
+* **Snyk platform audit events**: These events are sent every time a Snyk user performs an action within the Snyk platform. For more information, see [Retrieve audit logs of user-initiated activity by API for an Org or Group](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group). This event type is available with Snyk Enterprise plans. For more information, see this page about [trials](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/trial-limitations) and [Plans and pricing](https://snyk.io/plans/).
 
 To set up the integration, there are two steps:
 
 1. Configure an EventBridge integration in the Snyk dashboard. This will create a Snyk **Partner Event Source** in your AWS account, which you can see in the EventBridge dashboard.
-2. Configure the Snyk integration in Amazon EventBridge. This step involves associating the Snyk event source created in step one with an EventBridge **Event Bus**.&#x20;
+2. Configure the Snyk integration in Amazon EventBridge. This step involves associating the Snyk event source created in step one with an EventBridge **Event Bus**.
 
 After you complete these steps, Snyk immediately starts sending events to the configured event bus.
 
@@ -26,11 +26,11 @@ When the form is completed, click **Add integration**. After this step is done, 
 
 ## Snyk App authorization
 
-If this is the first time you have set up an Amazon EventBridge integration for your Organization, you will be prompted to complete the Snyk App authorization flow.&#x20;
+If this is the first time you have set up an Amazon EventBridge integration for your Organization, you will be prompted to complete the Snyk App authorization flow.
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-auth.png" alt="" width="375"><figcaption></figcaption></figure>
 
-After completing the authorization flow, you will be redirected to the settings page for the integration.&#x20;
+After completing the authorization flow, you will be redirected to the settings page for the integration.
 
 ## Configure the integration in Amazon EventBridge
 
@@ -72,7 +72,7 @@ This event type includes core data about Snyk issues, including:
 * Issue severity
 * Whether a remediation is available
 
-Events are JSON formatted using the [Open Cybersecurity Schema Framework _finding_](https://schema.ocsf.io/1.0.0-rc.2/classes/security_finding?extensions=) schema.&#x20;
+Events are JSON formatted using the [Open Cybersecurity Schema Framework _finding_](https://schema.ocsf.io/1.0.0-rc.2/classes/security_finding?extensions=) schema.
 
 {% hint style="info" %}
 Not all Snyk issue data is included in these events, though Snyk is continually working to provide more complete event data.

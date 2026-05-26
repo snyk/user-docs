@@ -2,7 +2,7 @@
 
 Snyk Apps are integrations that extend the functionality of the Snyk platform, allowing you to create a Snyk experience to suit your specific needs.
 
-For example, a Snyk App might automate Snyk [application security testing](https://snyk.io/learn/application-security/testing/) as part of a build tool. Another Snyk App might stream Snyk security testing results into an incident management tool.  You can create your own reporting, metrics, or even a user management App. You can move your automated Snyk API scripts and transform them into a Snyk App, which will add a better UX/UI experience for your Snyk Organization users.
+For example, a Snyk App might automate Snyk [application security testing](https://snyk.io/learn/application-security/testing/) as part of a build tool. Another Snyk App might stream Snyk security testing results into an incident management tool. You can create your own reporting, metrics, or even a user management App. You can move your automated Snyk API scripts and transform them into a Snyk App, which will add a better UX/UI experience for your Snyk Organization users.
 
 The easiest way to start building a new Snyk App is to clone the [Demo Snyk Apps ](https://github.com/snyk/snyk-apps-demo)GitHub repository. You can either modify the demo to suit your App design or use it as a base for creating your own Snyk App. See the [Snyk Apps blog post](https://snyk.io/blog/snyk-apps-beta-build-custom-apps-extend-snyk-security-into-workflows/) for more details.
 
@@ -26,7 +26,7 @@ Authorizing a Snyk App that has the `user` context grants the Snyk App access to
 
 ### Tenant context
 
-When a user authorizes a Snyk App that has the `tenant` context, the user selects the way to connect to either a Snyk Organization or a Group, with access to either all or one of the Organizations in the Group. The resulting connection is no longer tied to that specific user, so it is not bound by the user’s access or lifecycle but is linked to the lifecycle of the Organization. For more information, see [Organizations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations) and [Groups](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups).
+When a user authorizes a Snyk App that has the `tenant` context, the user selects the way to connect to either a Snyk Organization or a Group, with access to either all or one of the Organizations in the Group. The resulting connection is no longer tied to that specific user, so it is not bound by the user’s access or lifecycle but is linked to the lifecycle of the Organization. For more information, see [Organizations](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations) and [Groups](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups).
 
 The `scopes` of an App determine which actions an App can perform while connected to a Snyk account. The`scopes` are related to actions performed through Snyk Organizations, which determine the API endpoints that can be used in an App. Endpoints authorized through a Snyk Group are not supported. For more information about scopes, see [Scopes to request](scopes-to-request.md).
 

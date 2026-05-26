@@ -14,7 +14,7 @@ The Snyk CLI on its own does not have the capability natively to fail tests on m
 
 ## Combining security policies with --severity-threshold
 
-[Security policies](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies) provide the capability to change the severity of a vulnerability, when a Project is tested against an Organization using that policy and the severity matches specific criteria. You could, for example, change the severity of a vulnerability from high to low, and if you run `snyk test` with the option `--severity-threshold=medium|high`, this previously high severity vulnerability no longer fails the build.
+[Security policies](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies) provide the capability to change the severity of a vulnerability, when a Project is tested against an Organization using that policy and the severity matches specific criteria. You could, for example, change the severity of a vulnerability from high to low, and if you run `snyk test` with the option `--severity-threshold=medium|high`, this previously high severity vulnerability no longer fails the build.
 
 {% hint style="info" %}
 Security policies do not have all attributes available for criteria matching. Refer to the security policy configuration to see what is available.
@@ -30,7 +30,7 @@ The following example shows the`snyk test` command with the option `--severity-t
 
 ## Companion tools
 
-The CLI has companion tools for Open Source scanning  `snyk-delta` and `snyk-filter`.
+The CLI has companion tools for Open Source scanning `snyk-delta` and `snyk-filter`.
 
 `snyk-delta` finds the delta of vulnerabilities between the current test and a previously monitored snapshot. This tool is available from npmjs.org, and may be pulled into your CI/CD pipeline by running `npm install -g snyk-delta`.
 

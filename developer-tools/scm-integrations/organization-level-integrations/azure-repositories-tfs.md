@@ -9,7 +9,7 @@ Snyk supports only Git. Snyk does not currently support integration with Team Fo
 
 ### Prerequisites for Azure Repositories (TFS) integration
 
-* [Snyk Organization Admin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/pre-defined-roles) user role.
+* [Snyk Organization Admin](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles) user role.
 * An Azure project. If you do not have a project yet, create one in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) or set one up in an [on-premise Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops) instance.
 * The required Personal Access Token (PAT) access scopes. For details on the permissions required, see [Azure Repositories (TFS) permission requirements](../user-permissions-and-access-scopes.md#azure-repositories-tfs-permission-requirements).
 
@@ -62,7 +62,7 @@ If the connection to Azure fails, a notification will appear under the **Azure R
 
 ### Add Projects to Snyk for Azure Repos
 
-Snyk tests and monitors Azure Repos by evaluating root folders and custom file locations for the [languages that Snyk supports](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
+Snyk tests and monitors Azure Repos by evaluating root folders and custom file locations for the [languages that Snyk supports](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
 
 To add a default Project:
 
@@ -97,5 +97,5 @@ The optional **Exclude folders** field is case-sensitive. The pattern you enter 
 After repositories are imported, a confirmation appears in green at the top of the screen. The selected files are marked with a unique icon and named by Organization and repository. You can filter to view only those Projects by selecting the Azure Repos filter option.
 
 {% hint style="info" %}
-The Azure Repository integration works like the other [Snyk SCM integrations](./). To continue to monitor, fix, and manage your Projects, see the [Projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects) documentation.
+The Azure Repository integration works like the other [Snyk SCM integrations](./). To continue to monitor, fix, and manage your Projects, see the [Projects](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects) documentation.
 {% endhint %}

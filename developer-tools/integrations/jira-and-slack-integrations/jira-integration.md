@@ -1,7 +1,7 @@
 # Jira integration
 
 {% hint style="info" %}
-For Snyk Infrastructure as Code, see [Jira Integration for IaC](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/snyk-iac-integrations/jira-integration-for-iac).
+For Snyk Infrastructure as Code, see [Jira Integration for IaC](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/snyk-iac-integrations/jira-integration-for-iac).
 {% endhint %}
 
 ## Set up your Jira integration
@@ -9,7 +9,7 @@ For Snyk Infrastructure as Code, see [Jira Integration for IaC](https://app.gitb
 Snyk Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues. The Jira integration also includes the API endpoints [Create jira issue](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue) and [List all jira issues](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-jira-issues).
 
 {% hint style="info" %}
-If your Jira instance is private, use [the Snyk Broker deployment method](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-docker).
+If your Jira instance is private, use [the Snyk Broker deployment method](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-docker).
 {% endhint %}
 
 ## Prerequisites for Jira integration with Snyk
@@ -61,7 +61,7 @@ After you create a Jira issue, the Jira key with a link is displayed on the issu
 
 ## Integrate with Jira using Snyk Broker
 
-See [Set up Snyk Broker with Jira](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-docker).
+See [Set up Snyk Broker with Jira](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-docker).
 
 ## See also
 

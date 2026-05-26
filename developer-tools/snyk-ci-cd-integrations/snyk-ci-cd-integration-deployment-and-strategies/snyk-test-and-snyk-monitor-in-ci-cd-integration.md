@@ -58,7 +58,7 @@ You can also fail the build for any other parameter in the Snyk JSON output (suc
 By default, if issues are not ignored, or if you are not using [`snyk-delta`](https://github.com/snyk-tech-services/snyk-delta), a `snyk test` in your pipeline fails the build when issues are found. To allow builds to continue without resolving these issues, you can:
 
 * [Ignore issues using a .snyk policy file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md)
-* [Ignore issues from the Snyk UI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues#ignore-issues-in-the-snyk-web-ui)
+* [Ignore issues from the Snyk UI](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues#ignore-issues-in-the-snyk-web-ui)
 * [Ignore issues using the Ignores API](../../snyk-api/reference/ignores-v1.md)
 * Use the Snyk Python API for bulk ignores: see [pysnyk](https://github.com/snyk-labs/pysnyk) and the demo [bulk-ignore-vulns-by-issueIdList](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py).
 
