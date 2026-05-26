@@ -14,7 +14,7 @@ Snyk supports the following protocols for authentication:
 
 After the plugin is installed, follow these steps to authenticate:
 
-1. In the dialog that opens, set the Snyk API endpoint for a custom multi-tenant or single-tenant setup. For details, see [IDE URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).\
+1. In the dialog that opens, set the Snyk API endpoint for a custom multi-tenant or single-tenant setup. For details, see [IDE URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).\
    \
    Multi-tenant users who do not belong to the `SNYK-US-01` region ( `https://api.snyk.io`) will be automatically redirected to the correct domain for the email with which the user authenticated. This redirect will not happen if users are expected to use a custom URL, such as in single-tenant company configurations.\
    \
@@ -30,7 +30,7 @@ After the plugin is installed, follow these steps to authenticate:
 4. In the next prompt, the Snyk IDE plugin requests access to act on your behalf. Click **Grant app access**.
 5. After you have successfully authenticated, a confirmation message appears. Close the browser window and return to the IDE.
 
-The analysis starts automatically. The IDE reads and saves the authentication tokens on your local machine.&#x20;
+The analysis starts automatically. The IDE reads and saves the authentication tokens on your local machine.
 
 {% hint style="info" %}
 OAuth 2.0 tokens are not static and cannot be copied from the Snyk account page.
@@ -48,7 +48,7 @@ The Personal Access Token (PAT) authentication is progressively rolled out to al
 
 To authenticate using the Personal Access Token, follow these steps:
 
-1. Navigate to **Eclipse** > **Settings** > **Snyk**. \
+1. Navigate to **Eclipse** > **Settings** > **Snyk**.\
    (On Windows/Linux navigate to **Window** > **Preferences** > **Snyk**)
 2.  Set the **Authentication Method** to **Use Personal Access Token**.
 
@@ -81,7 +81,7 @@ To authenticate using the API token, follow these steps:
 The analysis starts automatically.
 
 {% hint style="info" %}
-Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
+Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
 {% endhint %}
 
 ## How to switch accounts

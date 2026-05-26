@@ -10,7 +10,7 @@ By default, the CLI runs tests under your **Preferred Organization**, as defined
 
 <figure><img src="../../../.gitbook/assets/set_snyk_org_CLI_tests_account_settings.png" alt=""><figcaption><p>Preferred Organization in Snyk Account settings</p></figcaption></figure>
 
-You can [change your **Preferred Organization**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations/create-and-delete-organizations) or set another Organization for the CLI tests via the CLI.
+You can [change your **Preferred Organization**](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations/create-and-delete-organizations) or set another Organization for the CLI tests via the CLI.
 
 When setting an Organization for the CLI tests, you have two options:
 
@@ -28,7 +28,6 @@ Follow these steps to find an Organization ID and internal name:
 <figure><img src="../../../.gitbook/assets/snyk-org-switcher.png" alt="Open an Organization to find its details"><figcaption><p>Open an Organization to find its details</p></figcaption></figure>
 
 2. Once the selected Organization is open, click the **Org Settings**.
-
 3. On the **Settings** page of the Organization, select the **General** tab to find the following:
 
 * **Internal name**: stated in the **Organization name** section.
@@ -41,7 +40,7 @@ Follow these steps to find an Organization ID and internal name:
 
 ## Set the default Organization globally for CLI tests
 
-You can set a default Organization globally for all CLI tests via the CLI. This default Organization will override the Organization set as the [preferred Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations/create-and-delete-organizations). When entering this command, you can use either the [ID or internal name](set-the-snyk-organization-for-the-cli-tests.md#find-snyk-id-and-internal-name-of-an-organization) of the new default Organization.
+You can set a default Organization globally for all CLI tests via the CLI. This default Organization will override the Organization set as the [preferred Organization](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations/create-and-delete-organizations). When entering this command, you can use either the [ID or internal name](set-the-snyk-organization-for-the-cli-tests.md#find-snyk-id-and-internal-name-of-an-organization) of the new default Organization.
 
 Regardless of the Organization you set as a global default, you can [run specific CLI tests under a different Organization](set-the-snyk-organization-for-the-cli-tests.md#set-an-organization-locally-for-a-specific-cli-test).
 

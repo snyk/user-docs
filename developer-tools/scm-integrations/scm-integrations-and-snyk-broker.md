@@ -1,6 +1,6 @@
 # SCM integrations and Snyk Broker
 
-If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the [Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker) documentation, including [Using Snyk Essentials wtih Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/using-snyk-essentials-with-snyk-broker).
+If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker) documentation, including [Using Snyk Essentials wtih Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/using-snyk-essentials-with-snyk-broker).
 
 {% hint style="warning" %}
 Enable the Snyk Essentials flag in your Snyk Broker deployment environment before running the commands.
@@ -10,7 +10,7 @@ You can find on [GitHub](https://github.com/snyk/broker/tree/565242baf003f06f445
 
 ## Integrated SCM tokens for classic Broker
 
-An integrated SCM token is required for [Broker client setup](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
+An integrated SCM token is required for [Broker client setup](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment). It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM. These meet certain permissions needed for the operation of Broker and Snyk Code.
 
 An integrated SCM token can be generated for the following SCM integrations:
 
@@ -63,16 +63,16 @@ https://github.com/settings/apps/new?name=Snyk&description=Snyk%20helps%20you%20
 2. Replace `{{SNYK-ENV}}` in the URL with the region for your Snyk account. This value needs to be URL encoded; the most common are listed below:
 
 * Snyk US-01: `https%3A%2F%2Fapp.snyk.io`
-* Snyk US-02: `https%3A%2F%2Fapp.us.snyk.io`&#x20;
+* Snyk US-02: `https%3A%2F%2Fapp.us.snyk.io`
 * Snyk EU: `https%3A%2F%2Fapp.eu.snyk.io`
 * Snyk AU: `https%3A%2F%2Fapp.au.snyk.io`
 
-3. After the value is replaced, navigate to that URL in your browser. \
-   This will take you to the app creation screen in your GitHub Cloud instance with all the required details pre-filled.&#x20;
+3. After the value is replaced, navigate to that URL in your browser.\
+   This will take you to the app creation screen in your GitHub Cloud instance with all the required details pre-filled.
 4. Scroll to the end of the page. Ensure that **Any account** is selected, and then click **Create GitHub App**.
 5. Make a note of the `ClientId` and `AppId`. Store these safely and treat them as secrets. You must enter these credentials when you create the Universal Broker connection to your GitHub Cloud app.
-6. Click the **generate a private key** link. \
-   This initiates the download of a `.pem` file. Store this file safely and treat it as a secret. You must enter the path to this file when you create the Universal Broker connection to your GitHub Cloud app. \
+6. Click the **generate a private key** link.\
+   This initiates the download of a `.pem` file. Store this file safely and treat it as a secret. You must enter the path to this file when you create the Universal Broker connection to your GitHub Cloud app.\
    Your GitHub Cloud App is now ready to be installed in repositories in your Snyk Organization.
 7. Scroll to the top of the page and click **Install App** on the navigation panel. Click the **Install** button for your app.
 8. Choose where you want to install the app in your GitHub organization. It can be installed in specific repositories or all of them.
@@ -83,18 +83,18 @@ If you choose to install the app only in specific repositories, the app works on
 
 <figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
 
-9. Copy the `InstallationID`. These are the numbers at the end of the page URL. You must enter it when you create the Universal Broker connection to your GitHub Cloud app. \
+9. Copy the `InstallationID`. These are the numbers at the end of the page URL. You must enter it when you create the Universal Broker connection to your GitHub Cloud app.\
    For example, if the page URL is `https://github.com/settings/installations/12345678`, the `InstallationID` is `12345678`.
 
 ### Create the Universal Broker connection for your GitHub Cloud App
 
-Before the GitHub Cloud App can be used with the Universal Broker, you must create a connection of the `github-cloud-app` type using the `snyk-broker-config` tool. For more details, see the [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) documentation. After the connection is created, it can be integrated with one or more Organizations of your choice.
+Before the GitHub Cloud App can be used with the Universal Broker, you must create a connection of the `github-cloud-app` type using the `snyk-broker-config` tool. For more details, see the [Universal Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) documentation. After the connection is created, it can be integrated with one or more Organizations of your choice.
 
 #### Prerequisites
 
 * Tenant Admin role
 * Your Tenant ID
-* The base API address for your Snyk region. Refer to the list of [API URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#api-urls) for Snyk regional hosting.
+* The base API address for your Snyk region. Refer to the list of [API URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#api-urls) for Snyk regional hosting.
 * A valid [Snyk API token](../snyk-api/authentication-for-api/#how-to-obtain-your-personal-token)
 * `snyk-broker-config` tool installed
 * The `ClientId,` `AppId`, `InstallationID` and `.pem` file for your app
@@ -107,7 +107,7 @@ Before the GitHub Cloud App can be used with the Universal Broker, you must crea
 
 Visit the integrations page in Snyk to verify that the integration has been configured.
 
-See the [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) documentation for more details.
+See the [Universal Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) documentation for more details.
 
 ## GitHub Server App for Universal Broker
 
@@ -120,7 +120,7 @@ The setup process for Universal Broker involves:
 
 ### Create a GitHub App for Universal Broker
 
-To use the GitHub Server App with Universal Broker you must create your own GitHub App on your GitHub Server instance.&#x20;
+To use the GitHub Server App with Universal Broker you must create your own GitHub App on your GitHub Server instance.
 
 1. Copy the following URL and paste it into a text editor.
 
@@ -137,12 +137,12 @@ To use the GitHub Server App with Universal Broker you must create your own GitH
   * Snyk AU: https%3A%2F%2Fapp.au.snyk.io
   * Snyk US-02: https%3A%2F%2Fapp.us.snyk.io
 
-3. After these values are replaced, navigate to that URL in your browser. \
-   This will take you to the app creation screen in your GitHub Server instance with all the required details pre-filled.&#x20;
+3. After these values are replaced, navigate to that URL in your browser.\
+   This will take you to the app creation screen in your GitHub Server instance with all the required details pre-filled.
 4. Scroll to the end of the page. Ensure that **Any account** is selected, and then click **Create GitHub App**.
 5. Make a note of the `ClientId` and `AppId`. Store these safely and treat them as secrets. You must enter these credentials when you create the Universal Broker connection to your GitHub Server app.
-6. Click the **generate a private key** link. \
-   This initiates the download of a `.pem` file. Store this file safely and treat it as a secret. You must enter the path to this file when you create the Universal Broker connection to your GitHub Server app. \
+6. Click the **generate a private key** link.\
+   This initiates the download of a `.pem` file. Store this file safely and treat it as a secret. You must enter the path to this file when you create the Universal Broker connection to your GitHub Server app.\
    Your GitHub Server App is now ready to be installed in repositories in your Snyk Organization.
 7. Scroll to the top of the page and click **Install App** on the navigation panel. Click the **Install** button for your app.
 8. Choose where you want to install the app in your GitHub organization. It can be installed in specific repositories or all of them.
@@ -153,16 +153,16 @@ If you choose to install the app only in specific repositories, the app works on
 
 <figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
 
-9. Copy the `InstallationID`. These are the numbers at the end of the page URL. You must enter it when you create the Universal Broker connection to your GitHub Server app. \
+9. Copy the `InstallationID`. These are the numbers at the end of the page URL. You must enter it when you create the Universal Broker connection to your GitHub Server app.\
    For example, if the page URL is `https://github.com/settings/installations/12345678`, the `InstallationID` is `12345678`.
 
 ### Create the Universal Broker connection for your GitHub Server App
 
-Before the GitHub Server App can be used with the Universal Broker, you must create a connection of the `github-server-app` type using the `snyk-broker-config` tool. For more details, see the [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) documentation. After the connection is created, it can be integrated with one or more Organization(s) of your choice.
+Before the GitHub Server App can be used with the Universal Broker, you must create a connection of the `github-server-app` type using the `snyk-broker-config` tool. For more details, see the [Universal Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) documentation. After the connection is created, it can be integrated with one or more Organization(s) of your choice.
 
 #### Prerequisites
 
-* The base API address for your Snyk region; refer to the list of [API URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#api-urls) for Snyk regional hosting.
+* The base API address for your Snyk region; refer to the list of [API URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#api-urls) for Snyk regional hosting.
 * A valid [Snyk API token](../snyk-api/authentication-for-api/#how-to-obtain-your-personal-token)
 * `snyk-broker-config` tool installed
 * Tenant Admin role
@@ -176,4 +176,4 @@ Before the GitHub Server App can be used with the Universal Broker, you must cre
 
 Visit the integrations page in Snyk to see that the integration has been configured.
 
-See the [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) documentation for more details.
+See the [Universal Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) documentation for more details.

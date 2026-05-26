@@ -1,12 +1,12 @@
 # Scan open-source libraries and licenses
 
-You can scan your open-source libraries using Snyk Open Source:&#x20;
+You can scan your open-source libraries using Snyk Open Source:
 
 * In the Snyk Web UI
-* With your [IDE](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions)
-* With a [CI/CD integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations)
-* Through the [Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source)
-* Through the [Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1)
+* With your [IDE](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions)
+* With a [CI/CD integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations)
+* Through the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source)
+* Through the [Snyk API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1)
 
 ## View vulnerabilities in your open-source libraries
 
@@ -14,7 +14,7 @@ You can view vulnerability results for imported Projects. The **Projects** page 
 
 You can expand a **Target** to see vulnerability information for Projects, including the number of issues found, grouped by severity level:
 
-Click a Project to open the issues page for that Project, where, for supported environments,  you can see the dependency cards, showing all of your dependencies, the versions where each associated issue was introduced, how to fix them, and more details about the individual vulnerabilities.
+Click a Project to open the issues page for that Project, where, for supported environments, you can see the dependency cards, showing all of your dependencies, the versions where each associated issue was introduced, how to fix them, and more details about the individual vulnerabilities.
 
 For unsupported environments, you can see a list of individual vulnerabilities. For more details, see [View Project information](../../../snyk-platform-administration/snyk-projects/project-information.md).
 

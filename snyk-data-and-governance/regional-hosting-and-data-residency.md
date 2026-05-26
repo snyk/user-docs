@@ -8,7 +8,7 @@ Regional hosting and data residency are available only for Enterprise plans. For
 
 Data residency allows you to control the region in which Snyk hosts a selected subset of your data. For information about GDPR, see [Privacy compliance](how-snyk-handles-your-data.md#privacy-compliance).
 
-Data residency is available for [Snyk Open Source](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source), [Snyk Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code), [Snyk Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container), and [Snyk IaC](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac). Snyk can host your data in a number of regions.
+Data residency is available for [Snyk Open Source](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source), [Snyk Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code), [Snyk Container](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container), and [Snyk IaC](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac). Snyk can host your data in a number of regions.
 
 This page provides information on:
 
@@ -50,7 +50,7 @@ After you select a region, the data in that region cannot be migrated to another
 
 During the initial onboarding of your system, you can work with your account team to select a multi-tenant hosting region. For single-tenant availability (Snyk Private Cloud), reach out to your account team in advance of onboarding. When using Snyk features, you will use specific URLs that differ from the SNYK-US-01 URL. See [Regional URLs](regional-hosting-and-data-residency.md#regional-urls) for the list of URLs.
 
-You must configure your environment to set your region before you authenticate. This does not apply when you are using the SNYK-US-01 URL. For details, see the [snyk config environment CLI help](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment).
+You must configure your environment to set your region before you authenticate. This does not apply when you are using the SNYK-US-01 URL. For details, see the [snyk config environment CLI help](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment).
 
 Snyk offers data residency for the following regions:
 
@@ -76,7 +76,7 @@ SNYK-US-02, EU, and AU data center Snyk accounts are available only with the pur
 
 Snyk offers almost all the same features, support, and performance in the regional multi- and single-tenant regions as in SNYK-US-01. For an up-to-date overview of feature parity across regions, contact your account team.
 
-[Automated provisioning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/enterprise-setup/auto-provisioning-guide) is only possible for multi-tenant environments and Pilot or Enterprise plan users.
+[Automated provisioning](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/auto-provisioning-guide) is only possible for multi-tenant environments and Pilot or Enterprise plan users.
 
 ## Integration considerations
 
@@ -122,11 +122,11 @@ Use the base URLs for your region:
 
 Both the CLI and CI running CLI must be configured to run against your instance.
 
-To do this, for [CLI v1.1293.0](https://updates.snyk.io/announcing-snyk-cli-v1-1293-0-299452) and later versions, use the [snyk config environment command](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment), for example:
+To do this, for [CLI v1.1293.0](https://updates.snyk.io/announcing-snyk-cli-v1-1293-0-299452) and later versions, use the [snyk config environment command](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment), for example:
 
 `snyk config environment SNYK-US-02`
 
-The [Supported environment URL mappings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment#supported-environment-urls-mappings) are listed in the `snyk config environment` help.
+The [Supported environment URL mappings](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment#supported-environment-urls-mappings) are listed in the `snyk config environment` help.
 
 ### IDEs URLs
 
@@ -181,7 +181,7 @@ For Broker deployed by Helm chart, use [https://github.com/snyk/snyk-broker-helm
 
 ### Broker with high availability (HA) mode URLs
 
-Follow the [High availability mode](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/high-availability-mode) instructions, BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
+Follow the [High availability mode](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/high-availability-mode) instructions, BUT use the following details for BROKER\_DISPATCHER\_BASE\_URL:
 
 **SNYK-US-02**: `-e BROKER_DISPATCHER_BASE_URL=https://api.us.snyk.io`
 
@@ -213,7 +213,7 @@ Then add an extra variable to the `values-customer-settings.yml`:
 
 ### Kubernetes Integration URLs
 
-Follow the instructions to install the [Snyk Controller with Helm](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/kubernetes-integration/install-the-snyk-controller/install-the-snyk-controller-with-helm-azure-and-google-cloud-platform) with an extra variable added to the `helm upgrade`command:
+Follow the instructions to install the [Snyk Controller with Helm](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/kubernetes-integration/install-the-snyk-controller/install-the-snyk-controller-with-helm-azure-and-google-cloud-platform) with an extra variable added to the `helm upgrade`command:
 
 **SNYK-US-01**: (no configuration required)
 

@@ -12,7 +12,7 @@ Reachability analysis can be used as an indicator to make decisions, or as part 
 
 Snyk uses a combination of static program analysis and various AI techniques to determine the reachability of a given vulnerability, with validation conducted by security research experts. These capabilities enable Snyk to quickly analyze the code without requiring the application to be built prior to the scan.
 
-To use this feature, Snyk must analyze your source code. To learn more, visit [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).
+To use this feature, Snyk must analyze your source code. To learn more, visit [How Snyk handles your data](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).
 
 ## How reachable vulnerability analysis works
 
@@ -50,40 +50,40 @@ Technical limitations:
 
 * Total file count: you can upload a maximum of 300,000 files
 * Total file size: the combined size of all uploaded files must not exceed 3 GB.
-* Individual file size: each individual file has a maximum size limit of 1 MB. For more information, visit [Technical specifications and guidance](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/technical-specifications-and-guidance#file-size-limit-for-snyk-code-analysis).
+* Individual file size: each individual file has a maximum size limit of 1 MB. For more information, visit [Technical specifications and guidance](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/technical-specifications-and-guidance#file-size-limit-for-snyk-code-analysis).
 * File name length: the length of file names cannot exceed 256 characters.
 
 ## Supported languages and integrations
 
 Reachability analysis is supported for the following languages and package managers:
 
-| Language                                                                                                                                                     | Package manager     | Release status       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- | -------------------- |
-| [Java](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin)                                                                           | Maven, Gradle       | General Availability |
-| [JavaScript](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript), [TypeScript](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/typescript) | npm, Yarn, pnpm     | General Availability |
-| [Python](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/python)                                                                                         | pip, poetry, pipenv | General Availability |
-| [C#](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/.net)                                                                                               | NuGet, paket        | Early Access         |
+| Language                                                                                                                                                                                                                                   | Package manager     | Release status       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- | -------------------- |
+| [Java](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin)                                                                                                                        | Maven, Gradle       | General Availability |
+| [JavaScript](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript), [TypeScript](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/typescript) | npm, Yarn, pnpm     | General Availability |
+| [Python](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/python)                                                                                                                               | pip, poetry, pipenv | General Availability |
+| [C#](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/.net)                                                                                                                                     | NuGet, paket        | Early Access         |
 
 Reachability analysis is supported in the following integrations:
 
-| Integration                                                                                                                                              | Release status       |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| [GitHub](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github)                                                               | General Availability |
-| [GitHub Enterprise](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github-enterprise)                                         | General Availability |
-| [GitHub Cloud App](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github-cloud-app)                                           | General Availability |
-| [Bitbucket Cloud](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/bitbucket-cloud-app)                                         | General Availability |
-| [Bitbucket Server](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/bitbucket-data-center-server)                               | General Availability |
-| [GitLab](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/gitlab)                                                               | General Availability |
-| [Azure Repos](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/azure-repositories-tfs)                                          | General Availability |
-| [Brokered connections](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests)      | General Availability |
-| [Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli)                                                                                                              | Early Access         |
-| [AWS CodePipeline integration with CodeBuild](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage) | Early Access         |
-| [Azure Pipelines](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/azure-pipelines-integration)                                                            | Early Access         |
-| [Bitbucket Pipelines](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/bitbucket-pipelines-integration-using-a-snyk-pipe)                                  | Early Access         |
-| [CircleCI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb)                                                       | Early Access         |
-| [GitHub Actions](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations//snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/)                          | Early Access         |
-| [Jenkins](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk)                                                         | Early Access         |
-| [Maven](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk)                                                             | Early Access         |
+| Integration                                                                                                                                                                                 | Release status       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| [GitHub](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github)                                                               | General Availability |
+| [GitHub Enterprise](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github-enterprise)                                         | General Availability |
+| [GitHub Cloud App](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github-cloud-app)                                           | General Availability |
+| [Bitbucket Cloud](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/bitbucket-cloud-app)                                         | General Availability |
+| [Bitbucket Server](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/bitbucket-data-center-server)                               | General Availability |
+| [GitLab](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/gitlab)                                                               | General Availability |
+| [Azure Repos](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/azure-repositories-tfs)                                          | General Availability |
+| [Brokered connections](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker/broker-inbound-and-outbound-connections-and-allowed-requests)          | General Availability |
+| [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli)                                                                                                                | Early Access         |
+| [AWS CodePipeline integration with CodeBuild](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage) | Early Access         |
+| [Azure Pipelines](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/azure-pipelines-integration)                                                          | Early Access         |
+| [Bitbucket Pipelines](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/bitbucket-pipelines-integration-using-a-snyk-pipe)                                | Early Access         |
+| [CircleCI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb)                                                       | Early Access         |
+| [GitHub Actions](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities)                        | Early Access         |
+| [Jenkins](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk)                                                         | Early Access         |
+| [Maven](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk)                                                             | Early Access         |
 
 ## Set up reachability analysis
 
@@ -106,7 +106,7 @@ You can set the reachability analysis as the default setting for multiple Organi
 After reachability analysis is enabled, Snyk performs the analysis as part of scanning Projects.
 
 {% hint style="info" %}
-You can apply the reachability analysis to existing Projects by triggering a [manual test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/scan-with-snyk/start-scanning).
+You can apply the reachability analysis to existing Projects by triggering a [manual test](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/start-scanning).
 {% endhint %}
 
 ### Enable reachability at the Organization level
@@ -120,7 +120,7 @@ To enable reachability analysis for your Organization and begin analyzing Projec
 After reachability analysis is enabled, the analysis is done as part of scanning Projects.
 
 {% hint style="info" %}
-You can apply the reachability analysis to existing Projects by triggering a [manual test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/scan-with-snyk/start-scanning).
+You can apply the reachability analysis to existing Projects by triggering a [manual test](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/start-scanning).
 {% endhint %}
 
 ### Enable reachability for all Organizations in a Group
@@ -149,7 +149,7 @@ To enable or disable **Reachability in the Snyk CLI and CI/CD integrations** for
 
 ### **Enable reachability** analysis **for brokered connections**
 
-If you use a brokered connection to your SCM, configure [Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker) to provide access to your source files.
+If you use a brokered connection to your SCM, configure [Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker) to provide access to your source files.
 
 ## Use reachability analysis in the Snyk Web UI
 
@@ -163,7 +163,7 @@ After it is identified, a vulnerability has one of the following reachability st
 A vulnerability with the status `NO PATH FOUND` it does not mean that the vulnerability is completely unreachable or unexploitable.
 {% endhint %}
 
-Reachability analysis status is available on the Project page, as part of the Risk Score, in the [Issues Detail report](../analytics/reports-tab/exposure-and-coverage-reports.md#issues-detail-report), and through the API endpoint [Get issues by Group ID](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/issues#groups-group_id-issues).
+Reachability analysis status is available on the Project page, as part of the Risk Score, in the [Issues Detail report](../analytics/reports-tab/exposure-and-coverage-reports.md#issues-detail-report), and through the API endpoint [Get issues by Group ID](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/issues#groups-group_id-issues).
 
 ### Reachability analysis as shown on the Project page
 
@@ -201,11 +201,11 @@ For a full list of supported options, see the CLI help docs for `test`, `monitor
 
 ### Human-readable output
 
-When the `--reachability=true`  option is used, Reachability results are returned in human readable format by default, with **Reachability** as a property of each finding.&#x20;
+When the `--reachability=true` option is used, Reachability results are returned in human readable format by default, with **Reachability** as a property of each finding.
 
 <figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
-If the `--reachability=true`  option is not used, the **Reachability** property does not appear in the command outpu&#x74;**.**
+If the `--reachability=true` option is not used, the **Reachability** property does not appear in the command outpu&#x74;**.**
 
 ### JSON output
 

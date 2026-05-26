@@ -4,7 +4,7 @@ With Snyk Infrastructure as Code, you can scan both your static configuration fi
 
 ## Terraform configuration files
 
-With Snyk IaC you can scan the configuration files, for example `main.tf`, using the CLI. External modules are not supported. For more information about variable processing, see [Terraform variables support](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/scan-your-iac-source-code/scan-terraform-files/terraform-variables-support-current-iac).
+With Snyk IaC you can scan the configuration files, for example `main.tf`, using the CLI. External modules are not supported. For more information about variable processing, see [Terraform variables support](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/scan-your-iac-source-code/scan-terraform-files/terraform-variables-support-current-iac).
 
 ## Scan configuration files
 

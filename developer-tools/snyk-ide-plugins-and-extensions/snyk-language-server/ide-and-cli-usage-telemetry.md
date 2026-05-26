@@ -12,6 +12,6 @@ The request body contains several categories of data:
 
 The API path contains a unique Snyk Organization ID. Thus, data is annotated with Organization information.
 
-Personally identifiable information (PII) for users is not part of the request. The Snyk internal analytics service API requires an authentication token to be present. Incoming event data is merged with user data inside the backend service, to allow Snyk to build a special report page: [Developer IDE and CLI usage](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/prevention-reports#developer-ide-and-cli-usage-report).
+Personally identifiable information (PII) for users is not part of the request. The Snyk internal analytics service API requires an authentication token to be present. Incoming event data is merged with user data inside the backend service, to allow Snyk to build a special report page: [Developer IDE and CLI usage](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/prevention-reports#developer-ide-and-cli-usage-report).
 
 You can see the open-source logic and examine it directly in the GitHub repository: [snyk/go-application-framework](https://github.com/snyk/go-application-framework/blob/main/internal/api/clients/analytics_v20240307.go). This is useful when a security audit is required.

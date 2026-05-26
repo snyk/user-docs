@@ -8,7 +8,7 @@ Automated Collections are in Early Access and available only with Enterprise pla
 
 See also [Limitations of Automated Collections](automatically-created-project-collections.md#limitations-of-automated-collections). You can enable Automated Collections in your Organization settings.
 
-Scanning a repository through an SCM integration and rescanning it using the Snyk CLI creates duplicate Targets within the Snyk Web UI with duplicate Projects and issues. These may not be exact duplicates.&#x20;
+Scanning a repository through an SCM integration and rescanning it using the Snyk CLI creates duplicate Targets within the Snyk Web UI with duplicate Projects and issues. These may not be exact duplicates.
 
 With the option to create Project collections automatically, Projects from these duplicate Targets will be detected and grouped automatically into a new collection. This helps identify duplicates and allows filtering and reporting on the issues of your preferred code-scanning method.
 
@@ -26,7 +26,7 @@ Automated Collections can be turned on under the **Organization settings** by us
 
 <figure><img src="../../.gitbook/assets/enable auto-collections.png" alt="Managing Automated Collections under Organization Settings"><figcaption><p>Managing Automated Collections under Organization Settings</p></figcaption></figure>
 
-After Automated Collections are enabled, all the Organization's Projects will be analyzed, and Projects with the same repository URL will be grouped automatically into a collection. All subsequent Project imports will also update the list of automatically created collections; there is no need to refresh the list manually.&#x20;
+After Automated Collections are enabled, all the Organization's Projects will be analyzed, and Projects with the same repository URL will be grouped automatically into a collection. All subsequent Project imports will also update the list of automatically created collections; there is no need to refresh the list manually.
 
 ## Turn off Automated Collections
 
@@ -47,6 +47,6 @@ Automatically created collections have no management options available:
 
 ## Limitations of Automated Collections
 
-* Automated Collections does not detect [SAST](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/glossary#sast) scans pushed to the Snyk Web UI using the `snyk code test --report --project-name="name"` command.
+* Automated Collections does not detect [SAST](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#sast) scans pushed to the Snyk Web UI using the `snyk code test --report --project-name="name"` command.
 * This feature supports only GitHub, GitHub Enterprise, GitLab, Bitbucket Cloud, and Azure integration scans.
 * This feature does not support Snyk Container.

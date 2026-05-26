@@ -2,4 +2,4 @@
 
 Snyk supports all TeamCity projects regardless of which Git repo is used.
 
-All languages supported by both [TeamCity](https://www.jetbrains.com/teamcity/features/languages/) and [Snyk](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks) can be scanned for vulnerabilities by this plugin.
+All languages supported by both [TeamCity](https://www.jetbrains.com/teamcity/features/languages/) and [Snyk](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks) can be scanned for vulnerabilities by this plugin.

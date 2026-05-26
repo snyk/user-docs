@@ -3,7 +3,7 @@
 In addition to providing fix advice, Snyk enables you create automatic or manual pull requests for supported package managers and ecosystems. To create PRs automatically in implementations with Snyk Broker, your administrator must upgrade to v4.55.0 or later.
 
 {% hint style="info" %}
-For the basic steps in fixing vulnerabilities, see [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To ensure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md#languages-supported-for-fix-pull-requests-or-merge-requests) and [Supported browsers](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#supported-browsers) pages.
+For the basic steps in fixing vulnerabilities, see [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To ensure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md#languages-supported-for-fix-pull-requests-or-merge-requests) and [Supported browsers](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#supported-browsers) pages.
 {% endhint %}
 
 {% hint style="info" %}
@@ -16,7 +16,7 @@ For specific supported languages, you can create pull requests to remediate issu
 
 You can start the process from any supported Project's open source vulnerability view.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-02-13 at 5.05.38 PM.png" alt=""><figcaption><p>Vulnerability view of an issue </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-02-13 at 5.05.38 PM.png" alt=""><figcaption><p>Vulnerability view of an issue</p></figcaption></figure>
 
 {% hint style="info" %}
 PRs use a branch naming convention based on the issues they fix. If a PR already exists for a specific change, Snyk does not create a new one, even if you closed the original PR.
@@ -28,7 +28,7 @@ If you try to create a duplicate fix PR, Snyk displays an error. To resolve this
 
 For Projects imported through an SCM integration, Snyk offers automatic pull request generation for vulnerability fixes, package upgrades, and backlog vulnerabilities. To learn more, visit:
 
-* [Enable Automatic Fix PRs](enable-automatic-fix-prs.md)&#x20;
+* [Enable Automatic Fix PRs](enable-automatic-fix-prs.md)
 * [Enable Automatic Backlog PRs](enable-automatic-backlog-prs-for-previously-known-vulnerabilities.md)
 * [Enable Automatic Upgrade PRs](enable-automatic-upgrade-prs-for-new-dependency-upgrades.md)
 
@@ -54,7 +54,7 @@ Snyk provides a report for Enterprise customers that gives an overview of how [F
 
 ## Snyk SCM webhooks
 
-To track pull request events, Snyk adds webhooks to your imported repositories. For more information, see the [GitHub and Git repository integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
+To track pull request events, Snyk adds webhooks to your imported repositories. For more information, see the [GitHub and Git repository integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
 
 Snyk uses these webhooks to:
 

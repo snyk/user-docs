@@ -6,7 +6,7 @@ In your Group or Organization, select **Settings** > **Usage** to view Snyk usag
 * **Contributing developers**: the number of developers contributing to Projects
 
 {% hint style="info" %}
-For more information about test frequency settings, see [Project actions](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects#project-actions-on-the-project-listing-page) on the Project Listings page, where bulk actions are also explained.
+For more information about test frequency settings, see [Project actions](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects#project-actions-on-the-project-listing-page) on the Project Listings page, where bulk actions are also explained.
 {% endhint %}
 
 ## Test usage
@@ -20,7 +20,7 @@ Test limits vary for Snyk products and plans.
 
 For the Free plan, the limits are: Open Source, 400 tests; Code, 100 tests; IaC, 300 tests; Container, 100 tests.
 
-See the [Plans and pricing page](https://snyk.io/plans/) for more details. See [What counts as a test?](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/what-counts-as-a-test) for details of how Snyk counts tests.
+See the [Plans and pricing page](https://snyk.io/plans/) for more details. See [What counts as a test?](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/what-counts-as-a-test) for details of how Snyk counts tests.
 {% endhint %}
 
 ## Contributing developers

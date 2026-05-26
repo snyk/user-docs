@@ -8,4 +8,4 @@ You can also use this filter on the **Issues** page to view your IaC issues acro
 
 ## API access to IaC issues
 
-You can set the **product\_name** filter for the [Export](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/export) API to `Snyk IaC` to retrieve a list of IaC issues on your Org or Group.
+You can set the **product\_name** filter for the [Export](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/export) API to `Snyk IaC` to retrieve a list of IaC issues on your Org or Group.

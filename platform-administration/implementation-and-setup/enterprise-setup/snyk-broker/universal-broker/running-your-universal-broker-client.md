@@ -2,19 +2,20 @@
 
 {% hint style="info" %}
 Ensure you have all of the [prerequisites](prerequisites-for-universal-broker.md) before running the Broker Client:
-  - The DEPLOYMENT_ID, CLIENT_ID, CLIENT_SECRET for your Broker Deployment
-  - A credential reference associated with your deployment
-  - Valid integration credentials required by your connections such as MY_GITHUB_TOKEN
-If references are missing, the connection will not be established, and an error entry will be logged in the Broker client logs.
+
+* The DEPLOYMENT\_ID, CLIENT\_ID, CLIENT\_SECRET for your Broker Deployment
+* A credential reference associated with your deployment
+* Valid integration credentials required by your connections such as MY\_GITHUB\_TOKEN If references are missing, the connection will not be established, and an error entry will be logged in the Broker client logs.
 {% endhint %}
 
-Run your Broker deployment on your container engine ([Docker Compose](#docker-compose-example) or [Kubernetes cluster](#helm)).
+Run your Broker deployment on your container engine ([Docker Compose](running-your-universal-broker-client.md#docker-compose-example) or [Kubernetes cluster](running-your-universal-broker-client.md#helm)).
 
-If you are not using broker.snyk.io, target the Broker server for your region by using the command `-e BROKER_SERVER_URL=https://broker.region.snyk.io \` . For details, see [Broker URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-server-urls).
+If you are not using `app.snyk.io` (for example, if you log into https://app.eu.snyk.io), you will need to target the Broker server for your region by using the following in your Docker run command `-e BROKER_SERVER_URL=https://broker.region.snyk.io \` .  For details, visit [Broker URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-server-urls).
 
 ## Docker Compose example
 
 1. Create a `.env` file with required and optional configuration variables:
+
 ```bash
   DEPLOYMENT_ID=<your-deployment-id>
   CLIENT_ID=<your-client-id>
@@ -26,6 +27,7 @@ If you are not using broker.snyk.io, target the Broker server for your region by
   BROKER_SERVER_URL=https://broker.eu.snyk.io
   BROKER_DISPATCHER_BASE_URL=https://api.eu.snyk.io
 ```
+
 2. Copy this example file to `docker-compose.yaml`
 
 ```yaml
@@ -64,6 +66,7 @@ services:
       - "${EXTERNAL_PORT_2:-8001}:${PORT:-8000}"
     restart: unless-stopped
 ```
+
 3. Run `docker compose up -d` to start the containers.
 
 ## Helm

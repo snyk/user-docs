@@ -82,7 +82,7 @@ Follow these steps to authenticate:
 The analysis starts automatically.
 
 {% hint style="info" %}
-Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
+Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
 {% endhint %}
 
 ## How to switch accounts

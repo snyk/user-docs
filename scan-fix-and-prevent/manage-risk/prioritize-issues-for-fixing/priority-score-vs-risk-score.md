@@ -87,7 +87,7 @@ Scan your source code and apply the following filters to your list of found vuln
 
 Let's assume that you are integrating a new third-party library into an existing application, and after a scan, you discover that the library has several vulnerabilities. Filter the vulnerabilities using the Risk score to determine which vulnerabilities pose the greatest threat.
 
-Remember that Risk score must first be enabled from the [Snyk Preview](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/snyk-preview) screen and can only be applied to Snyk Open Source and Snyk Container.
+Remember that Risk score must first be enabled from the [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview) screen and can only be applied to Snyk Open Source and Snyk Container.
 
 Scan your source code and apply the following filters to your list of found vulnerabilities to prioritize remediation efforts:
 
