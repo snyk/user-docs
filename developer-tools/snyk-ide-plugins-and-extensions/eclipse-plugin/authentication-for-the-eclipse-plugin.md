@@ -1,14 +1,12 @@
 # Authentication for the Eclipse plugin
 
-To scan your Projects, you must authenticate with Snyk.&#x20;
+To scan your Projects, you must authenticate with Snyk.
 
 Snyk supports the following protocols for authentication:
 
 * OAuth 2.0 (Recommended)
 * Personal Access Token
 * Snyk API token (Legacy)
-
-{% include "../../.gitbook/includes/before-authenticating.md" %}
 
 <figure><img src="../../.gitbook/assets/image (325).png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Eclipse</p></figcaption></figure>
 

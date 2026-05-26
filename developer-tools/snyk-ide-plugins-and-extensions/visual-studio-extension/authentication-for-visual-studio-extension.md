@@ -8,8 +8,6 @@ Snyk supports the following protocols for authentication:
 * Personal Access Token
 * API token (Legacy)
 
-{% include "../../.gitbook/includes/before-authenticating.md" %}
-
 <figure><img src="../../.gitbook/assets/image (319).png" alt=""><figcaption><p>Authentication methods available in the Snyk extension in Visual Studio</p></figcaption></figure>
 
 ## Steps to authenticate using the OAuth 2.0 protocol
