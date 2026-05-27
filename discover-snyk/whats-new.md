@@ -100,7 +100,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command is now in Early Access.
 * The latest [Snyk CLI version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli) available is v1.1302.1.
-* The [debugging mode of the Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/debugging-the-snyk-cli) has been enhanced with error catalog codes and exit codes.
+* The [debugging mode of the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/debugging-the-snyk-cli) has been enhanced with error catalog codes and exit codes.
 
 ### Snyk IDE
 
@@ -154,7 +154,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * GitHub Cloud App and GitHub Server App have been added to the list of [supported SCMs for Dockerfile analysis](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/scan-your-dockerfile#supported-scms-for-dockerfile-analysis).
 * The `snyk-scm-contributors-count` docs were updated with prerequisites and setup notes. See [snyk-scm-contributors-count](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count).
-* The Declining Balance documentation from the [Snyk Declining Balance of Hours Service Description](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/declining-balance) page was updated with service description and expiration details.
+* The Declining Balance documentation from the [Snyk Declining Balance of Hours Service Description](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/snyk-terms-of-support-and-services-glossary/declining-balance) page was updated with service description and expiration details.
 * The IaC issue-reporting walkthrough from the 'Getting started with Snyk IaC' page was updated to remove outdated screenshots and copy.
 * PR template variables were updated on the [Variables list and description](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/customize-pr-templates/variables-list-and-description) page with a new container base image `short name` values for cleaner PR titles and messages.
 
@@ -198,7 +198,7 @@ The most recent updates include significant changes to the user docs, such as fe
 #### Snyk CLI
 
 * Snyk CLI now supports uploading files and folders for Snyk Code scanning. The command [`code-test`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/code-test) has been updated with options reflecting these capabilities.
-* The latest [Snyk CLI version](https://app.gitbook.com/o/-m4tdxg8qotlggznlpfr/s/ieejsxqqu36y0vmfv8zf/snyk-cli/snyk-cli/install-the-snyk-cli) available is v1.1300.2.
+* The latest [Snyk CLI version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli) available is v1.1300.2.
 
 #### Snyk integrations
 
@@ -290,8 +290,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk IDE
 
-* Added PAT support for all [Snyk IDE](https://app.gitbook.com/o/-m4tdxg8qotlggznlpfr/s/ieejsxqqu36y0vmfv8zf/integrations/snyk-ide-plugins-and-extensions/) plugins and extensions.
-* Added an [IDE Plugin Compatibility Matrix](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/compatibility-matrix) for all supported versions.
+* Added PAT support for all [Snyk IDE](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions) plugins and extensions.
+* Added an [IDE Plugin Compatibility Matrix](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/compatibility-matrix) for all supported versions.
 
 #### Snyk integrations
 
@@ -315,14 +315,14 @@ The most recent updates include significant changes to the user docs, such as fe
 #### Snyk Broker
 
 * Updated the Snyk Broker documentation to include distinct steps for setting up the [Container Registry Agent with Docker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker-container-registry-agent#configuring-and-running-the-container-registry-agent), whether using the Classic or Universal Broker.
-* Updated the [Using the API to set up Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker/README.md) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-client-urls).
+* Updated the [Using the API to set up Universal Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker/using-the-api-to-set-up-universal-broker) documentation with a Prerequisites section and clarified that the Snyk Broker App ID differs for each [region](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-client-urls).
 * Snyk Learn courses have been integrated into the [Universal Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) pages.
 
 #### Other updates
 
 * [Usage settings](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/usage-settings) have been updated with the new **Billing and Usage** dashboard, available with the new Snyk Platform Access plan.
 * [Snyk Platform Access credits](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/snyk-platform-access-credits) have been added with brief information on the new Snyk Platform Access plan.
-* The troubleshooting sections for all [Snyk IDE plugins](https://app.gitbook.com/o/-m4tdxg8qotlggznlpfr/s/ieejsxqqu36y0vmfv8zf/integrations/snyk-ide-plugins-and-extensions/) have been updated to include clear steps for working with the Logs details, which are available across all plugins.
+* The troubleshooting sections for all [Snyk IDE plugins](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions) have been updated to include clear steps for working with the Logs details, which are available across all plugins.
 * A new feature, the [Snyk Agent Fix in the PR](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/pull-request-experience#snyk-agent-fix-in-the-pr), has been released, enabling the user to interact with inline comments by requesting an initial fix or a different suggestion, or by applying a specific fix by using the `@snyk /apply #` command.
 * [Consistent Ignores](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code) for Snyk Code now fully supports CLI Upload.
 * The page on Docker Desktop Extension integration has been removed due to the end of support.
@@ -337,7 +337,7 @@ The most recent updates include significant changes to the user docs, such as fe
 #### IDE plugins and extensions
 
 * Information was added to the [JetBrains plugin troubleshooting](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/troubleshooting-for-the-jetbrains-plugin).
-* Region information was updated on all [IDE pages](https://app.gitbook.com/o/-m4tdxg8qotlggznlpfr/s/ieejsxqqu36y0vmfv8zf/integrations/snyk-ide-plugins-and-extensions/).
+* Region information was updated on all [IDE pages](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions).
 
 #### Snyk Code
 
@@ -418,7 +418,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 * [Advanced use of Snyk Container CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/advanced-use-of-snyk-container-cli) now includes support for scanning Kaniko image archives.
 * The [support policy for the CI/CD plugins](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations#support-policy) was updated to align with the CLI support policy.
-* The Net new issues feature was added to the IDE documentation for [Eclipse](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/dintegrations/snyk-ide-plugins-and-extensions/eclipse-plugin/use-the-snyk-plugin-to-secure-your-eclipse-projects#net-new-issues-versus-all-issues), [JetBrains](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/run-an-analysis-with-the-jetbrains-plugin#net-new-issues-versus-all-issues), [Visual Studio](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/view-analysis-results-from-visual-studio-extension#net-new-issues-versus-all-issues), and [Visual Studio Code](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension#net-new-issues-versus-all-issues), and [troubleshooting information](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/net-new-issues-delta-scan-troubleshooting) was added.
+* The Net new issues feature was added to the IDE documentation for [Eclipse](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/eclipse-plugin), [JetBrains](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/run-an-analysis-with-the-jetbrains-plugin#net-new-issues-versus-all-issues), [Visual Studio](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/view-analysis-results-from-visual-studio-extension#net-new-issues-versus-all-issues), and [Visual Studio Code](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension#net-new-issues-versus-all-issues), and [troubleshooting information](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/net-new-issues-delta-scan-troubleshooting) was added.
 
 #### Snyk Code
 
@@ -472,10 +472,10 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 **Snyk CLI and IDEs**
 
-* [Eclipse IDE](https://app.gitbook.com/o/-m4tdxg8qotlggznlpfr/s/ieejsxqqu36y0vmfv8zf/integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/) major update
-* [Visual Studio IDE](https://app.gitbook.com/o/-m4tdxg8qotlggznlpfr/s/ieejsxqqu36y0vmfv8zf/integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/) major update
-* Region configuration update for [IDEs](https://app.gitbook.com/o/-m4tdxg8qotlggznlpfr/s/ieejsxqqu36y0vmfv8zf/integrations/snyk-ide-plugins-and-extensions/)
-* [Snyk images EOL policy updated](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ci-cd-integrations/snyk-images-and-eol-image-policy)
+* [Eclipse IDE](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/eclipse-plugin) major update
+* [Visual Studio IDE](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/visual-studio-extension) major update
+* Region configuration update for [IDEs](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions)
+* [Snyk images EOL policy updated](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/snyk-images-and-eol-image-policy)
 * [`snyk container test`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-test) and [`snyk container monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-monitor) option `--exclude-node-modules` added
 
 **Other updates**
@@ -509,8 +509,8 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 * The [CLI authentication page](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) has been updated for the OAuth 2.0 protocol.
 * The page [Debugging the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/debugging-the-snyk-cli) has been added.
 * [CLI standalone executables](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli#direct-binary-download) have been updated to include Alpine Arm64.
-* IDE Eclipse[ plugin](https://app.gitbook.com/o/-m4tdxg8qotlggznlpfr/s/ieejsxqqu36y0vmfv8zf/integrations/snyk-ide-plugins-and-extensions/eclipse-plugin/) and [JetBrains plugin](https://app.gitbook.com/o/-m4tdxg8qotlggznlpfr/s/ieejsxqqu36y0vmfv8zf/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/) documentation pages have been updated.
-* [Authentication information](https://app.gitbook.com/o/-m4tdxg8qotlggznlpfr/s/ieejsxqqu36y0vmfv8zf/integrations/snyk-ide-plugins-and-extensions/) has been updated for all IDEs.
+* IDE [Eclipse plugin](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/eclipse-plugin) and [JetBrains plugin](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin) documentation pages have been updated.
+* Authentication information has been updated for all [IDEs](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions).
 
 **Snyk Integrations**
 
@@ -593,7 +593,7 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 **Snyk Integrations**
 
 * A comparison of the GitHub and GitHub Enterprise integrations functions now resides on the [SCM, IDE, and CI/CD integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations#github-vs-github-enterprise) page.
-* Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/organization-level-integrations/github#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
+* Steps for [migrating from the GitHub integration to the GitHub Enterprise integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github#migrate-to-the-github-enterprise-integration) now reside on the GitHub integration page.
 * The [Snyk SCM Integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations) page now contains information critical to using these integrations successfully in your SDLC. This includes:
   * [Git repository cloning](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces) details
   * [Deployment recommendations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/deployment-recommendations) for Enterprise customers
