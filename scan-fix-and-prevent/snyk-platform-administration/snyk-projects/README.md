@@ -62,6 +62,7 @@ Possible Origin values are:
 * ecr
 * gcr
 * github
+* github-app
 * github-cr
 * github-enterprise
 * gitlab
