@@ -1,6 +1,6 @@
 # Local scanning with the IDE
 
-{% include "../../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
 
 ## Configure the Snyk IDE
 

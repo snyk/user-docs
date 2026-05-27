@@ -1,6 +1,6 @@
 # Test PR Checks
 
-{% include "../../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
 
 {% hint style="info" %}
 Enabling PR Checks blocks Pull Requests that introduce new vulnerabilities. Snyk recommends including developers in the decision to enable PR Checks on actively developed repositories.

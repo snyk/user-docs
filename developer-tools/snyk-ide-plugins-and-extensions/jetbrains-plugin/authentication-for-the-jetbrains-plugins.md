@@ -36,6 +36,8 @@ If you have problems, see [OAuth 2.0 authentication does not work](../troublesho
 
 ## Steps to authenticate using your Personal Access Token
 
+{% include "../../.gitbook/includes/this-method-is-inferior-to-....md" %}
+
 {% hint style="warning" %}
 The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, please reach out to your Snyk account team.
 {% endhint %}
@@ -52,6 +54,8 @@ To authenticate using the Personal Access token, follow these steps:
 6. Click **Apply and Close**.
 
 ## Steps to authenticate using your Snyk API token
+
+{% include "../../.gitbook/includes/this-method-is-inferior-to-....md" %}
 
 To authenticate, follow these steps:
 

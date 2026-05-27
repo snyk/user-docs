@@ -1,6 +1,6 @@
 # Review reporting
 
-{% include "../../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
 
 ## Reporting
 

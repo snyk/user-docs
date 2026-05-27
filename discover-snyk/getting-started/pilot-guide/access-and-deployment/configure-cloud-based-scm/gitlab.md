@@ -1,6 +1,6 @@
 # GitLab
 
-{% include "../../../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../../.gitbook/includes/pilot-guide-toc.md" %}
 
 Review the steps below to configure the GitLab integration with Snyk. For more details about setting up the GitHub integration, contact your Snyk account team.
 
