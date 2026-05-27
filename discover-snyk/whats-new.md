@@ -166,12 +166,12 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk CLI
 
-* The latest [Snyk CLI version](https://app.gitbook.com/o/-m4tdxg8qotlggznlpfr/s/ieejsxqqu36y0vmfv8zf/snyk-cli/snyk-cli/install-the-snyk-cli) available is v1.1301.0.
+* The latest [Snyk CLI version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli) available is v1.1301.0.
 * The [CLI help](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/reachability-analysis#using-reachability-analysis-with-snyk-cli) has been updated with commands for reachability analysis.
 
 #### Snyk IDE
 
-* The Automated Org Selection feature uses repository context to choose an Organization. Manual configuration overrides this automated selection. If the selection fails, Snyk defaults to your preferred Organization setting. The feature is available for the [Eclipse plugin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/eclipse-plugin/configuration-of-the-eclipse-plugin), the [JetBrains plugin](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy), the [Visual Studio extension](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-extension-configuration-environment-variables-and-proxy), and the [Visual Studio Code extension](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-configuration-environment-variables-and-proxy).
+* The Automated Org Selection feature uses repository context to choose an Organization. Manual configuration overrides this automated selection. If the selection fails, Snyk defaults to your preferred Organization setting. The feature is available for the [Eclipse plugin](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/eclipse-plugin), the [JetBrains plugin](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/jetbrains-plugin/configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy), the [Visual Studio extension](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/visual-studio-extension), and the [Visual Studio Code extension](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-configuration-environment-variables-and-proxy).
 
 #### Snyk integrations
 
