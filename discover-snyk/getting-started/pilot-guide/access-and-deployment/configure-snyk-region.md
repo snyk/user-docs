@@ -1,6 +1,6 @@
 # Configure Snyk region
 
-{% include "../../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
 
 Confirm with your Snyk account team the region where your Snyk account is located. The guide below shows the setup for SNYK-US-02, but the process is similar for [other regions](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#available-snyk-regions).
 

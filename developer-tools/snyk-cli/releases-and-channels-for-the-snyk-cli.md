@@ -99,25 +99,9 @@ However, customers who would like to receive code changes as soon as they are me
 Existing Snyk customers who are opted in to the previously known latest channel will be automatically opted in to the stable channel. Snyk is mirroring the latest channel and the stable channel to avoid disruption to existing customers. However, Snyk encourages you to switch to the new channels as shown above.
 {% endhint %}
 
-## Experimental builds
+### Linux static builds
 
-{% hint style="info" %}
-Experimental builds are exempt from the [12 month support policy](releases-and-channels-for-the-snyk-cli.md#support-policy), and are subject to change at any time.
-{% endhint %}
-
-Snyk deploys experimental builds across release channels for its binaries. Experimental builds are functionally the same as non-experimental builds, but can differ in their build process. This differentiation can impact runtime dependancies, for example.
-
-Experimental builds are available by adding `experimental` to the base download URL as outlined in the [Channels](releases-and-channels-for-the-snyk-cli.md#channels) section.
-
-### linuxstatic builds
-
-{% hint style="info" %}
-linuxstatic builds are experimental builds on the CLI side, which can be changed at any time without prior notice. We're exploring this type of build before confirming full support.
-{% endhint %}
-
-The Snyk CLI Linux binaries (`snyk-linux`, `snyk-linux-arm64`) come with a dynamically linked `nodejs` runtime. The main dependency for this runtime is the `glibc` library. This dependency is directly impacted by the customer environment and limits customers using the Snyk CLI in older Linux environments (as outlined in the [Runtime requirements](releases-and-channels-for-the-snyk-cli.md#runtime-requirements) section).
-
-linuxstatic builds, as opposed to the regular Linux builds, are Linux binaries compiled to be self-contained, including all necessary dependencies, so they don't rely on a user's system having those libraries installed.
+As of `v1.1305.0`, the Snyk CLI Linux binaries (`snyk-linux`, `snyk-linux-arm64`) are compiled to be self-contained, including all necessary dependencies, so they don't rely on a user's system having those libraries installed.
 
 ## Support policy
 
@@ -137,12 +121,12 @@ This section specifies the minimum requirements for the latest CLI, covering asp
 Snyk CLI is designed and expected to run on operating system environments that are actively supported by their vendors and have not reached their End of Support (EOS) or End of Life (EOL). Once an operating system environment reaches its end of support, Snyk will cease testing and providing support for Snyk CLI in that specific environment.
 {% endhint %}
 
-| OS\Architecture | amd64 (minimum requirements)                                                                  | arm64 (minimum requirements)                                                                                      |
-| --------------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| macOS           | 10.13                                                                                         | 10.13                                                                                                             |
-| Linux           | glibc ≥ 2.28 & OpenSSL ≥ 3.0 (Enterprise Linux 8, Ubuntu 20.04, Debian buster, other distros) | <p>glibc ≥ 2.31 &#x26; OpenSSL ≥ 3.0</p><p>(Enterprise Linux 9, Ubuntu 20.04, Debian bullseye, other distros)</p> |
-| Alpine          | musl libc >= 1.1.18 (3.7.3, other distros)                                                    | musl libc >= 1.1.18 (3.7.3, other distros)                                                                        |
-| Windows         | 8.1                                                                                           | -                                                                                                                 |
+| OS\Architecture | amd64 (minimum requirements)               | arm64 (minimum requirements)               |
+| --------------- | ------------------------------------------ | ------------------------------------------ |
+| macOS           | 10.13                                      | 10.13                                      |
+| Linux           | -                                          | -                                          |
+| Alpine          | musl libc >= 1.1.18 (3.7.3, other distros) | musl libc >= 1.1.18 (3.7.3, other distros) |
+| Windows         | 8.1                                        | -                                          |                                                                                                           |
 
 ## Install standalone executables from a channel
 

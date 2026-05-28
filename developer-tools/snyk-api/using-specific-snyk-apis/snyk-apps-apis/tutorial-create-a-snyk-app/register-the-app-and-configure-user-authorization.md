@@ -407,7 +407,7 @@ export class EncryptDecrypt {
 
 We've laid the groundwork; now it's time to start doing things.
 
-As discussed in a previous section, our app needs to send would-be authorizers to a specific token URL. We'll add an `/auth` route in our Snyk App and add some authentication middleware to Express. For this, we'll use the excellent [passportjs](https://www.passportjs.org), the [passport-oauth2](https/www.passportjs.org/packages/passport-oauth2) authentication strategy, along with Snyk's [@snyk/passport-snyk-oauth2](https://www.npmjs.com/package/@snyk/passport-snyk-oauth2). `passport` and its friends handle a large portion of what would otherwise be a lengthy and complicated authentication process.
+As discussed in a previous section, our app needs to send would-be authorizers to a specific token URL. We'll add an `/auth` route in our Snyk App and add some authentication middleware to Express. For this, we'll use the excellent [passportjs](https://www.passportjs.org), the [passport-oauth2](https://www.passportjs.org/packages/passport-oauth2/) authentication strategy, along with Snyk's [@snyk/passport-snyk-oauth2](https://www.npmjs.com/package/@snyk/passport-snyk-oauth2). `passport` and its friends handle a large portion of what would otherwise be a lengthy and complicated authentication process.
 
 Because `passport` takes its encapsulation philosophy seriously, we'll need to handle everything else about the auth process. We need to set up an instance of the passport strategy we'll be using. We'll put our database helpers from earlier to use here as well, adding an entry into our database when we receive successful authorization.
 

@@ -324,3 +324,274 @@ To ensure the security of the permission requirements:
 * Authentication failures: Ensure the credentials stored in your Snyk integration configuration for the container registry are valid. Confirm that your network policies or firewalls allow Snyk to reach the registry endpoints.
 * Policy does not match the expected images: Use the `dry run` endpoint to test your policy logic. Review your regex patterns for syntax errors and ensure they match your repository and tag naming conventions.
 * Images do not import after you manually delete them: If you manually delete a Snyk Project, Container Registry Sync does not automatically re-import them. If you need that Snyk Project again, you can manually import it.
+
+## Advanced policy scenarios
+
+This page provides registry sync policies for complex scenarios. Ensure you understand basic policy types before using these scenarios.
+
+### Multiple environments with different rigor
+
+In this scenario, the goal is to scan every shipped version in production, scan only the last three builds in staging, and exclude development environments.
+
+Example policy:
+
+```json
+{
+  "name": "Multi-environment - prod gets semver coverage, staging gets last 3, dev ignored",
+  "schedule_frequency_hours": 12,
+  "delete_images": true,
+  "import_policy": {
+    "name": "prod (all semver tags) OR staging (newest 3 per repo)",
+    "type": "Or",
+    "sub_policies": [
+      {
+        "name": "prod repos - every semver-tagged image",
+        "type": "Regex",
+        "policy": {
+          "repo": "^prod/.*",
+          "tag": "^v?[0-9]+\\.[0-9]+\\.[0-9]+$"
+        }
+      },
+      {
+        "name": "staging repos - newest 3 per repo",
+        "type": "And",
+        "sub_policies": [
+          {
+            "name": "staging repos",
+            "type": "Regex",
+            "policy": {
+              "repo": "^staging/.*",
+              "tag": ".*"
+            }
+          },
+          {
+            "name": "newest 3 per repo",
+            "type": "LastNObserved",
+            "policy": {
+              "limitNewestImages": 3
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+This single policy applies different rules to different parts of your registry using repository prefixes:
+
+* Repositories under `prod/`: Snyk imports every semantic version-tagged image, for example, `v1.2.3`.
+* Repositories under `staging/`: Snyk imports the three most recent images regardless of tag.
+* Repositories under `dev/` or other locations: Snyk ignores these repositories.
+
+When you set `delete_images` to `true`, staging Projects rotate as new staging builds replace older builds. Snyk retains production-tagged images as long as the tag matches.
+
+Required updates:
+
+* In `"repo": "^prod/.*"`, change `^prod/.*` to match your production repository pattern.
+* In `"repo": "^staging/.*"`, change `^staging/.*` to match your staging repository pattern.
+* Adjust `"limitNewestImages": 3` to set the staging window size for your environment.
+
+Auditors can read this policy and verify the scope. Production has a full release history, staging has three rolling tags, and other environments remain out of scope.
+
+### Multiple naming conventions
+
+In this scenario, the goal is to combine runtime, recency, and semantic versioning policies to eliminate coverage gaps. Single approaches can miss images. For example, runtime policies do not import images before deployment, recency policies miss long-lived images, and semantic versioning policies miss non-standard tags.
+
+Example policy:
+
+```json
+{
+  "name": "Running OR recently pushed OR tagged release",
+  "schedule_frequency_hours": 12,
+  "delete_images": false,
+  "import_policy": {
+    "name": "runtime OR recent OR semver releases",
+    "type": "Or",
+    "sub_policies": [
+      {
+        "name": "currently running in any cluster (last 24h)",
+        "type": "RuntimeIntegrations",
+        "policy": {
+          "providerName": "{PROVIDER_NAME}",
+          "intervalHours": 24
+        }
+      },
+      {
+        "name": "pushed to the registry in the last 14 days",
+        "type": "Recent",
+        "policy": {
+          "maxAgeDays": 14
+        }
+      },
+      {
+        "name": "newest 3 semver releases per repo",
+        "type": "And",
+        "sub_policies": [
+          {
+            "name": "semver tags",
+            "type": "Regex",
+            "policy": {
+              "repo": ".*",
+              "tag": "^v?[0-9]+\\.[0-9]+\\.[0-9]+$"
+            }
+          },
+          {
+            "name": "newest 3 per repo",
+            "type": "LastNObserved",
+            "policy": {
+              "limitNewestImages": 3
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+Using this combined policy, Snyk imports an image if any of the following conditions are met:
+
+* The image runs in Kubernetes through the runtime integration.
+* The registry received the image in the last 14 days.
+* The image is one of the three newest semantic version-tagged images in the repository.
+
+Set `delete_images` to `false` to ensure comprehensive coverage. This prevents Snyk from deleting Projects if a signal temporarily stops.
+
+Required updates:
+
+* Change `{PROVIDER_NAME}` to your runtime provider.
+* Adjust `maxAgeDays` to set your recency window.
+* Adjust `limitNewestImages` to set your semantic version retention depth.
+
+This policy ensures that Snyk scans all active and upcoming production images. The three independent criteria close coverage gaps.
+
+### Recent semantic version releases
+
+In this scenario, the goal is to scan only recent released versions and rotate Projects automatically.
+
+Example policy:
+
+```json
+{
+  "name": "Production: semver releases, last 5 per repo, prune as they age out",
+  "schedule_frequency_hours": 12,
+  "delete_images": true,
+  "import_policy": {
+    "name": "semver-tagged AND last 5 newest per repo",
+    "type": "And",
+    "sub_policies": [
+      {
+        "name": "semver tags only",
+        "type": "Regex",
+        "policy": {
+          "repo": ".*",
+          "tag": "^v?[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9A-Za-z.-]+)?$"
+        }
+      },
+      {
+        "name": "newest 5 per repo",
+        "type": "LastNObserved",
+        "policy": {
+          "limitNewestImages": 5
+        }
+      }
+    ]
+  }
+}
+```
+
+Snyk imports images that meet both of the following conditions:
+
+* The image tag uses semantic versioning.
+* The image is among the five newest images in the repository.
+
+When you set `delete_images` to `true` on a 12-hour schedule, Snyk stays in sync with production. Snyk removes old versions and imports new releases.
+
+Required updates: adjust `limitNewestImages` to change the number of retained releases.
+
+This policy provides a clear scope: Snyk scans the five most recent releases for every service.
+
+### Deployed and upcoming images
+
+In this scenario, the goal is to scan both currently running production images and the newest tagged release before deployment.
+
+Example policy:
+
+```json
+{
+  "name": "Anything running in prod OR the newest semver release per repo",
+  "schedule_frequency_hours": 12,
+  "delete_images": true,
+  "import_policy": {
+    "name": "runtime OR newest semver per repo",
+    "type": "Or",
+    "sub_policies": [
+      {
+        "name": "currently running in prod",
+        "type": "RuntimeIntegrations",
+        "policy": {
+          "providerName": "sysdig",
+          "intervalHours": 24
+        }
+      },
+      {
+        "name": "newest semver release per repo",
+        "type": "And",
+        "sub_policies": [
+          {
+            "name": "semver tags only",
+            "type": "Regex",
+            "policy": {
+              "repo": ".*",
+              "tag": "^v?[0-9]+\\.[0-9]+\\.[0-9]+$"
+            }
+          },
+          {
+            "name": "newest 1 per repo",
+            "type": "LastNObserved",
+            "policy": {
+              "limitNewestImages": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+With this policy, Snyk imports an image if it runs in Kubernetes or if it is the newest semantic version release in the repository. This process secures the transition period between creating a release and deploying it to the cluster.
+
+Required updates: change the runtime provider field to match your provider.
+
+This policy closes the timing gap where Snyk only scans an image after deployment.
+
+### Test policies using dry-run
+
+Before you apply a policy, especially with `delete_images` set to `true`, use the dry-run endpoint. The endpoint returns the list of images Snyk imports and Projects Snyk deletes, without making changes.
+
+Example policy:
+
+```bash
+curl -X POST "https://api.snyk.io/rest/orgs/${ORG_ID}/container_import/${INTEGRATION_ID}/policy/dry_run?version=2025-09-17" \
+  -H "Authorization: token ${SNYK_TOKEN}" \
+  -H "Content-Type: application/vnd.api+json" \
+  -d '{
+        "data": {
+          "type": "container_registry_import_policy",
+          "attributes": {
+            "policy": { /* paste the JSON policy from any scenario above */ }
+          }
+        }
+      }'
+```
+
+For the request and response schema, visit [Testing a policy with dry-run](sync-your-container-registry.md#test-policies-with-a-dry-run).
+
+### Common policy behaviors
+
+* Pattern matching is strict: The `repo` and `tag` fields use RE2 regular expressions. RE2 does not support backtracking, negative lookahead, or lookbehind. To exclude items, build an allowlist of items to include.
+* `ImportAllNew` uses the initial scan as a baseline: Snyk records all existing registry images as known when you create the policy. Snyk only imports images pushed after policy creation. This behavior prevents large import volumes when you onboard a historical registry.
+* `LastNObserved` and `Recent` require `delete_images` set to `true` to rotate: If you set `delete_images` to `false`, Snyk only adds images. Older Projects remain indefinitely even after they fall outside the specified window. This behavior is useful for comprehensive coverage (Multiple naming conventions scenario) but is not suitable for others.
+* Snyk limits runs to 1,000 images: If your policy matches more than 1,000 images during a scheduled run, Snyk processes the remaining images during the next run.

@@ -1,6 +1,6 @@
 # Invite team members
 
-{% include "../../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
 
 Invite members to the Organization you configured. Follow these steps to invite members:
 

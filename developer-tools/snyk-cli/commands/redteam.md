@@ -2,6 +2,8 @@
 
 **Warning:** `snyk redteam` is an experimental command. The `--experimental` flag is required. Behavior and options may change in future releases without notice.
 
+`snyk redteam` will be deprecated on May 31, 2026.
+
 Agent Red Teaming is potentially disruptive. Before running this command, ensure you:
 
 * Favor scanning dev or staging over production, so as to avoid disruption of live apps.
