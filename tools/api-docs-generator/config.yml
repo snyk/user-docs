@@ -1,11 +1,11 @@
 fetcher:
     source: https://api.snyk.io/rest/openapi
-    destination: docs/.gitbook/assets/rest-spec.json
+    destination: developer-tools/.gitbook/assets/rest-spec.json
 specs:
-- path: docs/.gitbook/assets/v1-api-spec.yaml
+- path: developer-tools/.gitbook/assets/v1-api-spec.yaml
   suffix: " (v1)"
   docsHint: This document uses the v1 API, which will eventually be deprecated, as further Snyk developments are now focused on the REST API. For more details, see the [v1 API](../v1-api.md).
-- path: docs/.gitbook/assets/rest-spec.json
+- path: developer-tools/.gitbook/assets/rest-spec.json
   docsHint: This document uses the REST API. For more details, see the [Authentication for API](../authentication-for-api/) page.
 categoryContext:
 - name: organizations-v1
@@ -20,7 +20,7 @@ categoryContext:
     The rate limit is up to **150 requests per minute, per user**.
 - name: import-projects-v1
   hint: |
-    You can use this API to import projects into Snyk. Projects imported can be Git repositories, Docker images, containers, configuration files, and much more. See the [Projects and Targets documentation](../../snyk-platform-administration/snyk-projects/#target) for more information. A typical import would start with requesting a target to be processed and then polling the Import Job API for more details on completion of an import and the resulting Snyk Projects.
+    You can use this API to import projects into Snyk. Projects imported can be Git repositories, Docker images, containers, configuration files, and much more. See the [Projects and Targets documentation](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects#target) for more information. A typical import would start with requesting a target to be processed and then polling the Import Job API for more details on completion of an import and the resulting Snyk Projects.
 - name: licenses-v1
   hint: |
     **Note:** When you import or update Projects, changes will be reflected in the endpoint results after a one-hour delay.
@@ -44,9 +44,9 @@ categoryContext:
   hint: |
     **Note:** For a list of Project types, see [Project type responses from the API](../api-endpoints-index-and-tips/project-type-responses-from-the-api.md).
 output:
-    summaryPath: docs/SUMMARY.md
-    apiReferencePath: docs/snyk-api/reference
+    summaryPath: developer-tools/SUMMARY.md
+    apiReferencePath: developer-tools/snyk-api/reference
 changelog:
     historicalVersionCutoff: "2024-05-24"
     syncStateFile:  tools/api-docs-generator/sync-state.yml
-    changelogFile:  docs/snyk-api/changelog.md
+    changelogFile:  developer-tools/snyk-api/changelog.md
