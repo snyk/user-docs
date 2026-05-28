@@ -11,7 +11,7 @@ Snyk supports the latest versions of the following web browsers:
 * [Chrome](https://www.google.com/chrome/)
 * [Edge](https://www.microsoft.com/en-us/edge?form=MA13FJ)
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-* [Safari](https://www.apple.com/safari/) (except for [Opening Fix PR](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests/snyk-pull-or-merge-requests))
+* [Safari](https://www.apple.com/safari/) (except for [Opening Fix PR](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests))
 
 {% hint style="warning" %}
 Snyk requires Javascript to be enabled on your browser.
@@ -35,7 +35,7 @@ When you log in to the Snyk Web UI, Snyk shows your preferred (default) Organiza
 
 ## Set up a Snyk integration
 
-For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations - [Organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk) or [Group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk). For information about available integrators, see [Snyk SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations) and [Integrate with Snyk](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk).
+For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations - [Organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk) or [Group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk). For information about available integrators, see [Snyk SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations) and [Integrate with Snyk](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk).
 
 To scan your code, you must first integrate Snyk with the repository holding that code.
 
@@ -47,7 +47,7 @@ Alternatively, if you want to scan your code without authenticating to your sour
 
 ### Manual process
 
-You can add an integration to Snyk manually at any point from the Snyk Web UI. To do this, navigate to **Integrations** > **Source Control**. For more information, see [Integrate with Snyk](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk).
+You can add an integration to Snyk manually at any point from the Snyk Web UI. To do this, navigate to **Integrations** > **Source Control**. For more information, see [Integrate with Snyk](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk).
 
 {% hint style="info" %}
 If an integration is already configured for your Organization, it is marked as **Configured**.
@@ -56,7 +56,7 @@ If an integration is already configured for your Organization, it is marked as *
 ## Obtain and use your Snyk API token
 
 {% hint style="warning" %}
-Before authenticating, be sure you have set your region properly. For details, see [Regional hosting and data residency](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency), which has the [list of regional URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#regional-urls).
+Before authenticating, be sure you have set your region properly. For details, see [Regional hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency), which has the [list of regional URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#regional-urls).
 {% endhint %}
 
 Your Snyk API token is a personal token available under your user profile. The Snyk API token is associated with your Snyk Account and not with a specific Organization.
@@ -73,7 +73,7 @@ To create your Snyk personal access token:
 4. Highlight and copy your personal access token.
 
 {% hint style="info" %}
-For more information, visit [Personal Access Tokens](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api/personal-access-tokens-pats).
+For more information, visit [Personal Access Tokens](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api/personal-access-tokens-pats).
 {% endhint %}
 
 #### Legacy API Tokens
@@ -87,7 +87,7 @@ To obtain your personal Snyk API token:
 If you want a new API token, select **Revoke & Regenerate**, but this will make the previous API token invalid.
 
 {% hint style="info" %}
-For information on when to use an API token and when to use a service account token, available to Enterprise plan users only, visit [Authentication for API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api).
+For information on when to use an API token and when to use a service account token, available to Enterprise plan users only, visit [Authentication for API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api).
 {% endhint %}
 
 ## Import a Project to scan and identify issues
@@ -98,8 +98,8 @@ When you import a Project, Snyk scans that imported Project, and displays the re
 
 Importing a Project also does the following:
 
-* Sets Snyk to run a regular scan on that Project for issues. See [Usage settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/usage-settings).
-* Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
+* Sets Snyk to run a regular scan on that Project for issues. See [Usage settings](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/usage-settings).
+* Initiates some automation, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
 
 ## Set up Snyk Essentials
 
@@ -109,15 +109,15 @@ Snyk Essentials is available only with Enterprise plans. For more information, s
 
 Snyk Essentials enables Application Security teams to implement, manage, and scale a modern, high-performing, developer security program. It covers use cases under Application Security Posture Management (ASPM).
 
-For more information, see [Snyk Essentials](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-essentials).
+For more information, see [Snyk Essentials](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-essentials).
 
 ## Review results and fix your issues
 
-After you have imported a Project, and Snyk has scanned that Project for issues, you can view the results of your scan and take action to fix issues. You can see the number of issues found, grouped by severity level (**C**ritical, **H**igh, **M**edium or **L**ow). For details, see [Severity levels](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/severity-levels).
+After you have imported a Project, and Snyk has scanned that Project for issues, you can view the results of your scan and take action to fix issues. You can see the number of issues found, grouped by severity level (**C**ritical, **H**igh, **M**edium or **L**ow). For details, see [Severity levels](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/severity-levels).
 
 The scan results and available actions depend on the type of Project you scan:
 
-* Open-source libraries: see [Snyk Open Source](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source).
-* Application code: see [Snyk Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code).
-* Container images: see [Snyk Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/scan-container-images).
-* Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files and cloud misconfigurations: see [Snyk IaC](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac).
+* Open-source libraries: see [Snyk Open Source](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source).
+* Application code: see [Snyk Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code).
+* Container images: see [Snyk Container](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/scan-container-images).
+* Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files and cloud misconfigurations: see [Snyk IaC](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac).
