@@ -100,7 +100,7 @@ A hierarchical list of all assets retrieved from the scanned repositories.
 
 ### Command directive
 
-A Command directive is a type of [Directive](glossary.md#directive) that is manually invoked by you or an AI agent to codify and standardize complex rulesets. For more information, visit [Command directives](../../integrations/snyk-studio-agentic-integrations/directives.md#command-directives).
+A Command directive is a type of [Directive](glossary.md#directive) that is manually invoked by you or an AI agent to codify and standardize complex rulesets. For more information, visit [Command directives](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#command-directives).
 
 ### Container
 
@@ -154,7 +154,7 @@ Dynamic Application Security Testing. A security analysis technique that tests a
 
 ### Directive
 
-A directive is a rule (also known as a command, instruction, and more) that guides an AI agent to produce code in the specified method. Snyk offers code examples for different directive types to implement in your organization and potentially distribute company-wide if you operate in an enterprise model. This is used in context with Snyk Studio. To learn more, visit [Directives](../../integrations/snyk-studio-agentic-integrations/directives.md).
+A directive is a rule (also known as a command, instruction, and more) that guides an AI agent to produce code in the specified method. Snyk offers code examples for different directive types to implement in your organization and potentially distribute company-wide if you operate in an enterprise model. This is used in context with Snyk Studio. To learn more, visit [Directives](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives).
 
 ### Dependency
 
@@ -227,7 +227,7 @@ In Snyk, a Group is the top-level entity used to manage multiple Organizations, 
 
 ### Guardrail directive
 
-A Guardrail directive is a type of [Directive](glossary.md#directive) that is automatically injected into AI agent interactions to govern AI agent behavior. For more information, visit [Guardrail directives](../../integrations/snyk-studio-agentic-integrations/directives.md#guardrail-directives).
+A Guardrail directive is a type of [Directive](glossary.md#directive) that is automatically injected into AI agent interactions to govern AI agent behavior. For more information, visit [Guardrail directives](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#guardrail-directives).
 
 ## H
 
@@ -313,7 +313,7 @@ A file containing metadata about other files in a package.
 
 ### MCP
 
-Model Context Protocol. An open standard that allows developers to create secure, bidirectional connections between AI-powered tools and their data sources. Visit [Agentic security with Snyk studio](../../integrations/snyk-studio-agentic-integrations/).
+Model Context Protocol. An open standard that allows developers to create secure, bidirectional connections between AI-powered tools and their data sources. Visit [Agentic security with Snyk studio](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio).
 
 ### Monitor
 
@@ -413,7 +413,7 @@ See [Container registry](glossary.md#container-registry) or [Package registry](g
 
 ### Remediation directive
 
-A Remediation directive is a type of [Command directive](glossary.md#command-directive) that triggers a full, end-to-end security remediation playbook that results in a secure pull request. For more information, visit [Remediation directives](../../integrations/snyk-studio-agentic-integrations/directives.md#remediation-directives).
+A Remediation directive is a type of [Command directive](glossary.md#command-directive) that triggers a full, end-to-end security remediation playbook that results in a secure pull request. For more information, visit [Remediation directives](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#remediation-directives).
 
 ### Repository
 
@@ -471,7 +471,7 @@ Software Development Lifecycle. A process followed by a development team, descri
 
 ### Secure at inception directive
 
-A Secure at inception directive is a type of [Guardrail directive](../../integrations/snyk-studio-agentic-integrations/directives.md#guardrail-directives), used with Snyk Studio and your coding assistant. For more information, visit [Secure at inception directives](../../integrations/snyk-studio-agentic-integrations/directives.md#secure-at-inception-directives).
+A Secure at inception directive is a type of [Guardrail directive](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#guardrail-directives), used with Snyk Studio and your coding assistant. For more information, visit [Secure at inception directives](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#secure-at-inception-directives).
 
 ### Security policy
 
@@ -539,7 +539,7 @@ An interactive education platform that provides developers with bite-sized lesso
 
 ### Snyk MCP Server
 
-An MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI. For more information, visit [Agentic security with Snyk Studio](../../integrations/snyk-studio-agentic-integrations/).
+An MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI. For more information, visit [Agentic security with Snyk Studio](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio).
 
 ### Snyk Open Source
 
