@@ -1,9 +1,11 @@
 # What counts as a test?
 
+
+
 {% hint style="info" %}
 The information on this page, including any reference to “test limits”, does not apply to capabilities for which customers are on a credit-based license. For the credit and usage policies applicable to these customers, see [Snyk Platform Access Plan](snyk-platform-access-credits.md) (for credit-based licenses purchased on or before 31 December 2025), or [Platform Credit Consumption Licensing ](https://snyk.io/policies/credit-based-billing/)(for credit-based licenses purchased on or after 1 January 2026).
 
-Capitalized terms used but not defined herein shall have the meaning as set forth in the Customer’s purchase agreement or other applicable documentation found on [snyk.docs.io](https://snyk.docs.io/).
+Capitalized terms used but not defined herein shall have the meaning as set forth in the Customer’s purchase agreement or other applicable documentation found on [Snyk user documentation](https://docs.snyk.io/).
 {% endhint %}
 
 The Snyk Open Source, Snyk Code, Snyk IaC, and Snyk Container capabilities entitle customers to run security tests on their code-based assets as applicable based on the functionality of each capability.
@@ -36,11 +38,11 @@ The following explains how Snyk determines the number of tests for each capabili
 
 Snyk maintains separate test counts and limits for each of the following products: Snyk Open Source, Snyk Code, Snyk Container, and Snyk IaC. For more details about the available Snyk plans and associated test limits, see [Plans and pricing](https://snyk.io/plans?_gl=1*1d4rb1a*_ga*NzI0Mjg1NDM2LjE2OTAzNzU5NDk.*_ga_X9SH3KP7B4*MTY5MzYxOTc2NC4xMzIuMS4xNjkzNjE5ODA1LjAuMC4w).
 
-The applicable test limits apply to private repositories only.&#x20;
+The applicable test limits apply to private repositories only.
 
-Plan specific considerations:&#x20;
+Plan specific considerations:
 
-* Free Snyk Plan: test limits apply to all products including Snyk Container and Snyk IaC.&#x20;
+* Free Snyk Plan: test limits apply to all products including Snyk Container and Snyk IaC.
 * Team and Enterprise Snyk Plans: test limits only apply to Snyk Code and Snyk Open Source. Tests executed via Snyk’s IDE plugin do not count towards test limits.
 
 If you reach your test limit or would like to increase your recurring test frequency, you can [upgrade your plan](https://snyk.io/plans?_gl=1*1d4rb1a*_ga*NzI0Mjg1NDM2LjE2OTAzNzU5NDk.*_ga_X9SH3KP7B4*MTY5MzYxOTc2NC4xMzIuMS4xNjkzNjE5ODA1LjAuMC4w).
