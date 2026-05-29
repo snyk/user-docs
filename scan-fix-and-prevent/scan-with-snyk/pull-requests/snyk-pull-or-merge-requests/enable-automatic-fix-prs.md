@@ -68,3 +68,114 @@ Enabling or disabling at the Project level overrides the pull request setting fo
    * Select **Customize for only this project**.
    * Enable **New vulnerabilities**.
    * Select **Save changes**.
+
+## Automatic closure of obsolete Fix PRs
+
+Snyk automatically closes Fix PRs when all vulnerabilities they target are resolved. This behavior keeps your PR backlog focused on active issues.
+
+{% hint style="info" %}
+Auto close of obsolete Fix and backlog PRs is enabled by default. You do not need extra configuration.
+{% endhint %}
+
+**Auto Close Pull Requests** is available on SCM providers that support Snyk Fix PRs, including GitHub, GitLab, Bitbucket, and Azure Repos.
+
+### How Auto Close Pull Requests works
+
+During each recurring test, Snyk evaluates open Fix PRs against the latest Project state:
+
+1. Snyk compares the issue IDs targeted by each open Fix PR with the issues in the latest Project scan.
+2. If all targeted issues are already resolved, Snyk marks the PR as obsolete. This can happen after a manual fix, a transitive dependency update, a dependency removal, or a vulnerability data change.
+3. Snyk closes the obsolete PR in your SCM and then posts a comment that lists the resolved issues.
+
+### Fix PR closure comments
+
+When Snyk closes an obsolete Fix PR, it adds a comment to the closed PR thread. The comment:
+
+* confirms that Snyk closed the PR because it no longer detects the targeted issues
+* explains how the issues were resolved, such as a manual update, a transitive dependency update, or a vulnerability database change
+* lists the resolved Snyk issue IDs and explains that you can reopen the PR if needed
+
+### Safeguards
+
+Snyk includes safeguards to avoid disruptive behavior:
+
+| Safeguard                | Description                                                                                                           |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| Limit per test execution | Snyk closes up to 10 obsolete PRs during each recurring test execution.                                               |
+| Comment after closure    | Snyk posts the closure comment only after it closes the PR successfully. This prevents orphaned comments on open PRs. |
+
+### Turn off Auto Close Pull Requests
+
+1. Navigate to **Settings** > **Integrations**.
+2. Turn off Automatic closure of obsolete Fix PRs.
+3. Snyk stops evaluating and closing obsolete Fix PRs in the next recurring test cycle.
+
+### How to enable the automatic upgrade PRs option for an Organization
+
+Project Settings inherit Organization Settings until they are explicitly changed on the Project Settings page. To force push Project Setting overrides at the Group level, they must be re-saved with the option "Apply changes to all overridden projects."
+
+To enable Automatic Upgrade PRs across an entire Organization, follow these steps:
+
+1. In the Snyk web UI, open the desired Organization.
+2. Navigate to **Settings** > **Organization settings**. Find and click your configured SCM in the **Integrations** sidebar.
+3. On the **Settings** page of the selected integration, navigate to the **Automatic dependency upgrade PRs** section.
+4. In this section, perform the following actions:
+   * Slider - change to **Enable**.
+   * **Maximum number of open upgrade PRs allowed** – define how many open Snyk PRs (fix, upgrade, and backlog) a Project can have to also receive a dependency upgrade PR; the maximum is ten. When the limit of the open PRs is reached, no new upgrade PRs are created.
+   * **Include major version in upgrade recommendation** – select whether to include major version upgrades in the recommendations. By default, only patches and minor versions are included in the upgrade recommendations.
+   * **Dependencies to ignore** – enter the exact name of the dependencies that should not be included in the **Automatic upgrade** operation. You can only enter lowercase letters.
+
+<figure><img src="../../../.gitbook/assets/image (163).png" alt="Enabling Automatic dependency upgrade PFs"><figcaption><p>Enabling Automatic dependency upgrade PFs</p></figcaption></figure>
+
+5. To save and apply your changes, click one of the following from the **Save** dropdown:
+   * **Save** – your changes are saved and will be applied to all the Projects in the Organization that are configured to inherit these Settings from the Organization. Projects that have Custom Settings will not be influenced by this change.
+   * **Save changes and apply to all overridden Projects** – your changes are saved and will be applied to all the Projects in the Organization. Projects that have Custom Settings will inherit these Organization Settings, and their Custom Settings will be overridden.
+
+From now on, every time Snyk scans any Project in the Organization, it automatically submits Upgrade PRs if the scan discovers that an upgrade is available.
+
+If a newer version is released for an existing Snyk Upgrade PR, or for an existing Fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
+
+### How to enable the automatic upgrade PRs option for a Project
+
+The Settings on the Project level typically override the Settings on the Organization level. If an Organization owner forces settings overrides, Project users need to reconfigure their settings. We recommend alignment between Project and Organization owners to avoid situations like this.
+
+Follow these steps to configure automatic upgrade PRs for a specific Project:
+
+1. From the Snyk web UI, open the Organization that includes the Project you want to configure.
+2. In the list of Projects, locate and expand the **Project** for which you want to enable automatic upgrade PRs.
+3. Click the **Project settings** at the end of the Project row.
+4. On the **Project** **Settings** page, select the integration you are using.
+5. On the **Integration** page, scroll to the **Automatic dependency upgrade pull requests** section and choose one of the following:
+   * **Inherit from Integration settings** – apply the Integration Settings of the Organization to the selected Project.\
+     If the **Automatic dependency upgrade PRs option is disabled for the Organization**, this option will also be disabled for the Project.
+   * **Customize for only this Project** – apply specific settings of the **Automatic dependency upgrade PRs** option on the Project. If you click this option:
+     * Change the slider to **Enabled**.
+     * In **Include major version in upgrade recommendation,** click one of the available options to define whether major version upgrades will be included in the recommendations.\
+       By default, only patches and minor versions are included in the upgrade recommendations.
+     * In **Limit Snyk to this many dependency upgrade PRs open simultaneously,** define how many open Snyk PRs a Project can have to also receive a dependency upgrade PR. You can set a number between 1 and 10.\
+       When the limit of the open PRs is reached, no new upgrade PRs are created.\
+       By default, to _also_ receive a dependency upgrade PR, a Project can have _up to four_ open PRs.
+     * In **Dependencies to ignore**, enter the exact name of the dependencies to _exclude_ from the **Automatic upgrade** operation.\
+       You can only enter lowercase letters.
+     * Click **Update dependency upgrade settings** to save your changes.
+
+After you have completed these steps, Snyk scans the Project and automatically submits Upgrade PRs if the scan discovers that an upgrade is available. If a newer version is released for an existing Snyk Upgrade PR or an existing Fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
+
+## Troubleshooting
+
+### What Snyk considers resolved
+
+Snyk considers an issue resolved when it no longer appears in the latest Project scan. This can happen when:
+
+* you manually update the vulnerable dependency
+* a transitive dependency update resolves the vulnerability
+* you remove the vulnerable dependency from the Project
+* Snyk updates the vulnerability data, for example, by withdrawing or reclassifying the issue
+
+### Can you reopen an automatically closed PR?
+
+Yes. If Snyk closes a PR in error, you can reopen it directly in your SCM. After you reopen the PR, Snyk does not close it again.
+
+### Will you receive notifications when Snyk closes a PR?
+
+Snyk posts a closure comment on each closed PR that lists the resolved issues. Depending on your SCM notification settings, you may also receive email or webhook notifications from your SCM provider.
