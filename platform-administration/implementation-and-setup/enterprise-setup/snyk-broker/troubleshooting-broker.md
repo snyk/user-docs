@@ -37,7 +37,7 @@ Broker exposes an endpoint at `/healthcheck`, which can be used to monitor the h
 
 In the case of the Broker Client, this endpoint also reports on the status of the Broker websocket connection. If the websocket connection is not open, this endpoint responds with status code `500 Internal Server Error` and `{ ok: false }` in the response body.
 
-This status can be tested by connecting to the Broker and running http://localhost:8000/healthcheck with the default settings.
+This status can be tested by connecting to the Broker and running `http://localhost:8000/healthcheck` with the default settings.
 
 To change the location of the healthcheck endpoint, you can specify an alternative path in an environment variable:
 
@@ -57,7 +57,7 @@ The Broker Client exposes an endpoint at `/systemcheck`, which can be used to va
 
 This endpoint responds with status code `200 OK` when the internal request is successful, and returns `{ ok: true }` in the response body, one object in the array per credential; see [Credential pooling](classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/credential-pooling-with-docker-and-helm.md). If the internal request fails, this endpoint responds with status code `500 Internal Server Error` and `{ ok: false }` in the response body.
 
-This status can be tested by connecting to the Broker and running [http://localhost:8000/systemcheck](http://localhost:8000/systemcheck) with the default settings.
+This status can be tested by connecting to the Broker and running `http://localhost:8000/systemcheck` with the default settings.
 
 Example that enables the `/systemcheck` capability to verify connectivity between broker and Nexus:\
 `-e BROKER_CLIENT_VALIDATION_URL=https://[username:password]@acme.com/service/rest/v1/status[/check] /`\
