@@ -29,7 +29,7 @@ Run `snyk-broker-config workflows <RESOURCE>` to list the available resources to
 Run the available workflows and follow the prompts to use the specific resources.
 
 ```
-> snyk-broker-config-workflows connections
+> snyk-broker-config workflows connections
 Universal Broker - Create Connection Workflow
 
 USAGE
