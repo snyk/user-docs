@@ -198,33 +198,49 @@ For instructions on how to verify the shasum of downloaded binaries and their GP
 
 <summary>Install for MacOS and Linux</summary>
 
+{% hint style="info" %}
+If you are unsure about which architecture you have, run `uname -m`. `arm64` or `aarch64` means ARM; `x86_64` or `amd64` means Intel or AMD.
+{% endhint %}
+
 Download the standalone binary for your operating system and CPU architecture, make it executable, then move it onto your `PATH`.
 
 1. Download the binary that matches your system:
 
+{% code overflow="wrap" %}
 ```bash
    curl --compressed https://downloads.snyk.io/cli/stable/snyk-macos-arm64 -o snyk
 ```
+{% endcode %}
 
+{% code overflow="wrap" %}
 ```bash
    curl --compressed https://downloads.snyk.io/cli/stable/snyk-macos -o snyk
 ```
+{% endcode %}
 
+{% code overflow="wrap" %}
 ```bash
    curl --compressed https://downloads.snyk.io/cli/stable/snyk-linux -o snyk
 ```
+{% endcode %}
 
+{% code overflow="wrap" %}
 ```bash
    curl --compressed https://downloads.snyk.io/cli/stable/snyk-linux-arm64 -o snyk
 ```
+{% endcode %}
 
+{% code overflow="wrap" %}
 ```bash
    curl --compressed https://downloads.snyk.io/cli/stable/snyk-alpine -o snyk
 ```
+{% endcode %}
 
+{% code overflow="wrap" %}
 ```bash
    curl --compressed https://downloads.snyk.io/cli/stable/snyk-alpine-arm64 -o snyk
 ```
+{% endcode %}
 
 2. Make the downloaded file executable:
 
@@ -237,10 +253,6 @@ Download the standalone binary for your operating system and CPU architecture, m
 ```bash
    sudo mv ./snyk /usr/local/bin/
 ```
-
-{% hint style="info" %}
-If you are unsure about which architecture you have, run `uname -m`. `arm64` or `aarch64` means ARM; `x86_64` or `amd64` means Intel or AMD.
-{% endhint %}
 
 </details>
 
