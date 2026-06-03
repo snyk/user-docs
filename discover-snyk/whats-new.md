@@ -7,6 +7,35 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## May 2026
+
+### Evo by Snyk
+
+* The [aibom test](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom-test) command now validates a generated AI-BOM against your tenant's Evo policies in a single step.
+* [redteam](https://docs.snyk.io/developer-tools/snyk-cli/commands/redteam) now documents the new exhaustive and eager scan modes, improved JSON output, and the vulnerability summary that appears in [Snyk Agent Red Teaming](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-agent-red-teaming) results.
+
+### Snyk Analytics
+
+* The [Pull request checks usage and performance report](https://docs.snyk.io/manage-risk/analytics/reports-tab/prevention-reports#pull-request-checks-usage-and-performance-report) is now in GA for all plans, and PR check data is now available through the [Export API](https://docs.snyk.io/snyk-api/reference/export).
+* The [Zero-Day report](https://docs.snyk.io/manage-risk/analytics/reports-tab/remediation-reports#zero-day-report) now documents the Active security incident assessment banner, which surfaces assets needing triage, assets cleared, and the affected open source packages during a high-severity zero-day event.
+
+### Snyk CLI
+
+* The latest Snyk CLI version is [v1.1304.0](https://github.com/snyk/cli/releases/tag/v1.1304.0).
+* Added a new page for [CLI support for uv](https://docs.snyk.io/supported-languages/supported-languages-list/python/cli-support-for-uv), documenting Early Access support for the uv Python package manager across snyk test, snyk monitor, and snyk sbom, and extending coverage to Snyk IDE extensions, the Snyk MCP server, and Snyk GitHub Actions.
+* The [snyk sbom](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom) command page now documents the --allow-incomplete-sbom flag, which generates an SBOM even when individual Projects fail to resolve.&#x20;
+* The [environment variables page](https://docs.snyk.io/developer-tools/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli) has been updated to include SNYK\_REQUEST\_CONCURRENCY, which controls parallel dependency requests in [container monitor](https://docs.snyk.io/developer-tools/snyk-cli/commands/container-monitor).
+
+#### Other updates
+
+* The [Snyk Code security rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules) section has been updated with new coverage for .NET: TLS protocol misconfiguration ([CWE-326](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules)) across common .NET HTTP and network stacks, and broader insecure cipher detection ([CWE-327](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules)) for C# and VB, including third-party support through BouncyCastle.&#x20;
+* [Snyk Container](https://docs.snyk.io/scan-with-snyk/snyk-container) now supports extended Java runtime binary scanning in container test and container monitor.
+* Added documentation for automatic closure of obsolete Fix PRs, now in Early Access through Snyk Preview. Snyk closes Fix PRs when the targeted vulnerabilities are no longer present in your Project, whether resolved by a manual fix, a removed dependency, or a transitive update. Snyk closes up to five PRs per Project each day. See [Snyk pull or merge requests](https://docs.snyk.io/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests).&#x20;
+* The [snyk\_package\_health\_check](https://docs.snyk.io/integrations/snyk-studio-agentic-integrations/getting-started-with-snyk-studio#configure-the-snyk-mcp-profile) directive is now in General Availability and is enabled by default in the Full MCP profile. The docs now reflect supported ecosystems: npm, PyPI, Maven, NuGet, and Go.
+* Snyk API & Web documentation now covers native GraphQL scanning, including schema ingestion through a URL, file upload, or introspection endpoint, and new GraphQL-specific authentication options.&#x20;
+* Snyk API & Web compliance reporting now supports the OWASP Top 10:2025 standard, in addition to OWASP Top 10:2021.&#x20;
+*
+
 ## April 2026
 
 ### Snyk CLI
@@ -21,10 +50,10 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Other updates
 
-* The `snyk_package_health_check` directive is now available for the Full profile on the [Directives](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#secure-at-inception-package-health-check-experimental) page.
-* CISA KEV has been added to the list of filters available in [Issue vulnerability details](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/issue-columns-dictionary#issue-vulnerability-details).
-* The [PR Checks Report](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/prevention-reports#pull-request-checks-usage-and-performance-report) is now General Available, with updates to Prevention Reports, Export API, and Snowflake Data Share.
-* The [Pull Request experience](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/pull-request-experience#pull-request-experience-feature-requirements) documentation has been updated to reflect that if you are using inline comments or Agent Fix, you must now specify a dedicated GitHub account by providing a GitHub Personal Access Token (PAT) in your integration settings.
+* The `snyk_package_health_check` directive is now available for the Full profile on the [Directives](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#secure-at-inception-package-health-check-experimental) page.
+* CISA KEV has been added to the list of filters available in [Issue vulnerability details](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/issue-columns-dictionary#issue-vulnerability-details).
+* The [PR Checks Report](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/prevention-reports#pull-request-checks-usage-and-performance-report) is now General Available, with updates to Prevention Reports, Export API, and Snowflake Data Share.
+* The [Pull Request experience](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/pull-request-experience#pull-request-experience-feature-requirements) documentation has been updated to reflect that if you are using inline comments or Agent Fix, you must now specify a dedicated GitHub account by providing a GitHub Personal Access Token (PAT) in your integration settings.
 * The [Enterprise implementation guide](implementation-and-setup/enterprise-implementation-guide/) now has embedded video tutorials to guide you in your Enterprise setup as a new user of Snyk.
 * The [High availability mode](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/high-availability-mode) from Snyk Broker is now enabled by default.
 * The [Container registry sync](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/use-snyk-container/sync-your-container-registry) from Snyk Container is now Generally Available.
@@ -50,9 +79,9 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Other updates
 
-* The [Open Source license compliance](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance#license-updates) page has been updated to clarify that the Snyk database of supported licenses is regularly updated to match new releases of the SPDX License List.
-* The `package-health-check` directive [sample script links](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#secure-at-inception-package-health-check-experimental) now point to the improved recipes repository in GitHub. Use the [skills](https://github.com/snyk/studio-recipes/tree/main/command_directives/synchronous_remediation/skills/secure-dependency-health-check) script or the [hook](https://github.com/snyk/studio-recipes/tree/main/guardrail_directives/package_enforcement/cursor/hooks) script.
-* For Snyk Container, the [Configure repository monitoring](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-assets/configure-repository-monitoring) feature is now in Early Access.
+* The [Open Source license compliance](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance#license-updates) page has been updated to clarify that the Snyk database of supported licenses is regularly updated to match new releases of the SPDX License List.
+* The `package-health-check` directive [sample script links](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#secure-at-inception-package-health-check-experimental) now point to the improved recipes repository in GitHub. Use the [skills](https://github.com/snyk/studio-recipes/tree/main/command_directives/synchronous_remediation/skills/secure-dependency-health-check) script or the [hook](https://github.com/snyk/studio-recipes/tree/main/guardrail_directives/package_enforcement/cursor/hooks) script.
+* For Snyk Container, the [Configure repository monitoring](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/configure-repository-monitoring) feature is now in Early Access.
 * [Snyk 2.0](getting-started/snyk-2.0-platform-improvements.md) introduces UI enhancements to the platform navigation and is available in Early Access. This is being rolled out gradually, so not all users see the new navigation at the same time. If you are an existing user, you can switch between the new and classic navigation at any time using the toggle in your user profile menu. What is different:
   * **Global scope selector:** the top bar serves as the primary tool to navigate between different levels of your account. Use the scope selector to switch between Tenant, Groups, and Organizations. When you select a scope, the side menu automatically displays the relevant tools and data for that area.
   * **Analytics** becomes the centralized location for all reporting, including overview reports, dependencies, and license information.
@@ -81,8 +110,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk Studio
 
-* A [`snyk_package_health_check` directive](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#secure-at-inception-package-health-check-experimental) has been added to assist you in evaluating open-source packages for security vulnerabilities, maintenance health, community engagement, and popularity. Snyk has provided a secure dependency health check skill with a sample script and an enforce security scan on new packages hook with a sample script to integrate the `snyk_package_health_check` into your workflow.
-* Additional guidance on [available MCP profile types](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/getting-started-with-snyk-studio#configure-the-snyk-mcp-profile) and their applicable tools, with configuration instructions, has been added.
+* A [`snyk_package_health_check` directive](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#secure-at-inception-package-health-check-experimental) has been added to assist you in evaluating open-source packages for security vulnerabilities, maintenance health, community engagement, and popularity. Snyk has provided a secure dependency health check skill with a sample script and an enforce security scan on new packages hook with a sample script to integrate the `snyk_package_health_check` into your workflow.
+* Additional guidance on [available MCP profile types](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/getting-started-with-snyk-studio#configure-the-snyk-mcp-profile) and their applicable tools, with configuration instructions, has been added.
 
 ### Other updates
 
@@ -109,9 +138,9 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk Studio
 
-* The [Agentic security with Snyk Studio](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio) documentation has been restructured to accurately reflect the workflow you would go through when using Snyk Studio for the first time, and using the available [Quickstart guides](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides).
-* The [Snyk Studio Adoption](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/usage-analytics) report is now available under [Redesigned analytics](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/overview-tab#snyk-studio-adoption).
-* The [supported tools list](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio#mcp-server-supported-tools) was updated to clarify that Snyk supports `snyk_send_feedback`.
+* The [Agentic security with Snyk Studio](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio) documentation has been restructured to accurately reflect the workflow you would go through when using Snyk Studio for the first time, and using the available [Quickstart guides](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides).
+* The [Snyk Studio Adoption](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/usage-analytics) report is now available under [Redesigned analytics](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/overview-tab#snyk-studio-adoption).
+* The [supported tools list](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio#mcp-server-supported-tools) was updated to clarify that Snyk supports `snyk_send_feedback`.
 
 ### Snyk supported languages
 
@@ -147,8 +176,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk Studio
 
-* The [Snyk Studio - Agentic integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio) documentation has been updated to provide a clearer explanation of MCP usage and the available Snyk Studio tools.
-* The [Quickstart guides for Snyk Studio](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides) were updated with new and refreshed setup guidance, including [Cursor](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide) and [Windsurf](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/windsurf-guide).
+* The [Snyk Studio - Agentic integrations](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio) documentation has been updated to provide a clearer explanation of MCP usage and the available Snyk Studio tools.
+* The [Quickstart guides for Snyk Studio](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides) were updated with new and refreshed setup guidance, including [Cursor](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide) and [Windsurf](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/windsurf-guide).
 
 #### Other updates
 
@@ -175,7 +204,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk integrations
 
-* The Amazon Q guide for Snyk Studio now includes [updated instructions](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/amazon-q-guide#install-the-snyk-mcp-server-in-the-amazon-q-ide-extension) for configuring the Snyk MCP Server in VS Code and JetBrains.
+* The Amazon Q guide for Snyk Studio now includes [updated instructions](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/amazon-q-guide#install-the-snyk-mcp-server-in-the-amazon-q-ide-extension) for configuring the Snyk MCP Server in VS Code and JetBrains.
 
 #### Other updates
 
@@ -202,8 +231,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk integrations
 
-* The list of Snyk MCP quick guides now includes [Devin guide](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/devin-guide), [Factory guide](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/factory-guide), [Factory terminal guide](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/factory-terminal-ide-guide).
-* The Snyk MCP Server has been rebranded as [Snyk Studio](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio).
+* The list of Snyk MCP quick guides now includes [Devin guide](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/devin-guide), [Factory guide](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/factory-guide), [Factory terminal guide](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/factory-terminal-ide-guide).
+* The Snyk MCP Server has been rebranded as [Snyk Studio](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio).
 * [SCM integration support for Python](supported-languages/supported-languages-list/python/scm-integrations-and-python.md) has been updated with support for Python 3.14.
 
 #### Other updates
@@ -223,9 +252,9 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk integrations
 
-* The SCM integration for Bitbucket Data Center/Server now supports the Required Builds feature for granular control over pull requests. To learn more, visit [Required Builds](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/bitbucket-data-center-server#required-builds).
-* [GitLab](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/analyze-pr-checks-results#gitlab) is supported for PR check results. This feature blocks merge requests with security issues when the "Pipelines must succeed" setting is enabled.
-* The Snyk MCP quick guides list has been enriched with the following guides: [Claude Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/claude-code-guide), [Continue](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/continue-guide), [JetBrains AI Assistant](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/jetbrains-ai-assistant), and [JetBrains Junie](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/jetbrains-junie)
+* The SCM integration for Bitbucket Data Center/Server now supports the Required Builds feature for granular control over pull requests. To learn more, visit [Required Builds](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/bitbucket-data-center-server#required-builds).
+* [GitLab](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks/analyze-pr-checks-results#gitlab) is supported for PR check results. This feature blocks merge requests with security issues when the "Pipelines must succeed" setting is enabled.
+* The Snyk MCP quick guides list has been enriched with the following guides: [Claude Code](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/claude-code-guide), [Continue](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/continue-guide), [JetBrains AI Assistant](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/jetbrains-ai-assistant), and [JetBrains Junie](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/jetbrains-junie)
 
 #### Other updates
 
@@ -252,9 +281,9 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk integrations
 
-* You can now add the Snyk MCP server to [Goose CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/goose-cli-guide) to secure code generated with agentic workflows through an LLM.
-* You can now integrate Akamai with the Snyk API & Web to discover and scan your API. See the [API Security](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/partner-integrations#api-security) section under the Partner integrations page for more details.
-* The [Jira Cloud documentation](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration) has been updated for parity with the current version.
+* You can now add the Snyk MCP server to [Goose CLI](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/goose-cli-guide) to secure code generated with agentic workflows through an LLM.
+* You can now integrate Akamai with the Snyk API & Web to discover and scan your API. See the [API Security](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/partner-integrations#api-security) section under the Partner integrations page for more details.
+* The [Jira Cloud documentation](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/snyk-security-in-jira-cloud-integration) has been updated for parity with the current version.
 
 #### Other updates
 
@@ -273,9 +302,9 @@ The most recent updates include significant changes to the user docs, such as fe
 #### Snyk CLI
 
 * MCP updates:
-  * [Updated the list of supported Snyk security tools into an AI system](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio#mcp-server-supported-tools).
+  * [Updated the list of supported Snyk security tools into an AI system](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio#mcp-server-supported-tools).
   * Updated release status from experimental to [Early access](getting-started/snyk-release-process.md#early-access-features) and removed the experimental flag.
-  * Added [Cursor](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide) as a new supported agentic IDE for MCP.
+  * Added [Cursor](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide) as a new supported agentic IDE for MCP.
 * PAT updates:
   * Added PAT support for [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli).
   * Added PAT support for Snyk CI/CD integrations ([CircleCI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/circleci-integration-using-a-snyk-orb), [Jenkins](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk), [Maven](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/maven-plugin-integration-with-snyk)).
@@ -331,8 +360,8 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk CLI
 
-* The `--platform` option was added to the [`container sbom`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-sbom) command.
-* The MCP information was expanded to [Developer guardrails for agentic workflows](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio).
+* The `--platform` option was added to the [`container sbom`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-sbom) command.
+* The MCP information was expanded to [Developer guardrails for agentic workflows](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio).
 
 #### IDE plugins and extensions
 
@@ -379,7 +408,7 @@ Additional updates have been made to the [Universal Broker](https://app.gitbook.
 
 #### Snyk CLI
 
-Information has been added about Snyk support for the Model Context Protocol (MCP) through the [`snyk mcp` experimental CLI command](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/usage-analytics).
+Information has been added about Snyk support for the Model Context Protocol (MCP) through the [`snyk mcp` experimental CLI command](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/usage-analytics).
 
 #### Snyk Code
 
@@ -480,7 +509,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 **Other updates**
 
-* [Snyk Admin](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/) pages have been updated to reflect the addition of [Tenants](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant) in the Snyk hierarchy, including a new infographic to illustrate the Tenant position in the [hierarchy](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups-and-organizations#the-snyk-hierarchy).
+* [Snyk Admin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/) pages have been updated to reflect the addition of [Tenants](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant) in the Snyk hierarchy, including a new infographic to illustrate the Tenant position in the [hierarchy](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups-and-organizations#the-snyk-hierarchy).
 
 #### November 2024
 
