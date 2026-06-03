@@ -3,6 +3,7 @@
 The Prevention reports section includes the following reports:
 
 * [Developer IDE and CLI usage](prevention-reports.md#developer-ide-and-cli-usage-report) report
+* [Prevention](prevention-reports.md#prevention-report) report
 * [Pull request checks usage & performance](prevention-reports.md#pull-request-checks-usage-and-performance-report) report
 * [Repositories tested in CI/CD](prevention-reports.md#repositories-tested-in-ci-cd-report) report
 * [Snyk Generated Pull Requests](prevention-reports.md#snyk-generated-pull-requests-report) report
@@ -49,6 +50,62 @@ This report shows the test usage in the IDE, CLI, and Snyk Studio by developers.
 * List of organizations and developers adopting Snyk locally
 
 <figure><img src="../../../.gitbook/assets/ide usage by developer.png" alt="List of Organizations where Snyk was adopted locally"><figcaption></figcaption></figure>
+
+## Prevention report
+
+{% hint style="info" %}
+Release status
+
+The Prevention report is in Early Access and is available only for Enterprise plans.&#x20;
+{% endhint %}
+
+The Prevention report measures the effectiveness of security adoption in the development lifecycle. This report tracks vulnerabilities remediated at the point of creation for Snyk Code before they ever reach a pull request or production environment, when using Snyk Studio (MCP), a Snyk IDE plugin or extension, or the Snyk CLI.
+
+The following prerequisites and data limits apply:
+
+* Snyk Code (SAST) and Secrets are the only scanners supported
+* The report can be viewed at the Tenant, Group, or Org level.
+* To generate data in this report, you must:
+  * Enable the [Code Consistent Ignores](../../prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/) feature
+  * Use a compatible IDE plugin version:
+    * [Visual Studio Code v2.29.0](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner\&ssr=false#version-history) or later
+    * [JetBrains v2.20.0](https://plugins.jetbrains.com/plugin/10972-snyk-security/versions/stable) or later
+    * [Eclipse v3.8.0](https://marketplace.eclipse.org/content/snyk-security) or later
+    * [Visual Studio v2.8.0](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022) or later
+  * Use CLI version [1.1303.0](https://docs.snyk.io/developer-tools/snyk-ide-plugins-and-extensions/compatibility-matrix) or later
+* Data is available for the following developer surfaces:
+  * Snyk Studio (MCP)
+  * IDE
+  * CLI
+* SARIF files greater than 500 KB will not be included in the report’s results.
+
+With this report, you get visibility into:
+
+* Total fixes and trend rate
+* Mean fix rate and trend rate
+  * The average number of fixes/findings for the selected scope (tenant, group, org)
+* Developer surface fixes
+  * How many fixes are made at each developer surface (Studio, IDE, CLI, PR Check)
+* Fix trends
+  * Fixes over time - Raw count on a month-over-month basis. This is displayed as a bar chart.
+  * Fix rate over time - Fixes/findings on a month-over-month basis. This is overlaid as a line graph.
+* Fix breakdown by table:
+  * Groups
+  * Organizations
+  * Repositories
+  * Vulnerabilities
+  * Developer
+
+A fix is generated when these conditions are met:
+
+* You scan a branch, using Snyk Studio, a Snyk IDE plugin or extension, or the Snyk CLI.
+* A security flaw, or finding, is detected.
+* The finding is remediated or removed from the branch.
+* A subsequent test indicates the finding is no longer on that branch.
+
+Severity overrides are applied, and custom severities are reflected in the report.
+
+Fixes and the fix rate can diverge. For example, if a developer or team gets numerous security findings that they do not fix, the fix rate may be lower than the total fixes. If a developer opens 5 branches, finds 5 issues, and fixes one of them, the fix rate is 20% and the total fixes are 1.
 
 ## Pull request checks usage & performance report
 
