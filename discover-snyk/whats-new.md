@@ -9,11 +9,6 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ## May 2026
 
-### Evo by Snyk
-
-* The [aibom test](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom-test) command now validates a generated AI-BOM against your tenant's Evo policies in a single step.
-* [redteam](https://docs.snyk.io/developer-tools/snyk-cli/commands/redteam) now documents the new exhaustive and eager scan modes, improved JSON output, and the vulnerability summary that appears in [Snyk Agent Red Teaming](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-agent-red-teaming) results.
-
 ### Snyk Analytics
 
 * The [Pull request checks usage and performance report](https://docs.snyk.io/manage-risk/analytics/reports-tab/prevention-reports#pull-request-checks-usage-and-performance-report) is now in GA for all plans, and PR check data is now available through the [Export API](https://docs.snyk.io/snyk-api/reference/export).
@@ -26,6 +21,11 @@ The most recent updates include significant changes to the user docs, such as fe
 * The [snyk sbom](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom) command page now documents the --allow-incomplete-sbom flag, which generates an SBOM even when individual Projects fail to resolve.&#x20;
 * The [environment variables page](https://docs.snyk.io/developer-tools/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli) has been updated to include SNYK\_REQUEST\_CONCURRENCY, which controls parallel dependency requests in [container monitor](https://docs.snyk.io/developer-tools/snyk-cli/commands/container-monitor).
 
+### Evo by Snyk
+
+* The [aibom test](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom-test) command now validates a generated AI-BOM against your tenant's Evo policies in a single step.
+* [redteam](https://docs.snyk.io/developer-tools/snyk-cli/commands/redteam) now documents the new exhaustive and eager scan modes, improved JSON output, and the vulnerability summary that appears in [Snyk Agent Red Teaming](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-agent-red-teaming) results.
+
 #### Other updates
 
 * The [Snyk Code security rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules) section has been updated with new coverage for .NET: TLS protocol misconfiguration ([CWE-326](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules)) across common .NET HTTP and network stacks, and broader insecure cipher detection ([CWE-327](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules)) for C# and VB, including third-party support through BouncyCastle.&#x20;
@@ -34,7 +34,6 @@ The most recent updates include significant changes to the user docs, such as fe
 * The [snyk\_package\_health\_check](https://docs.snyk.io/integrations/snyk-studio-agentic-integrations/getting-started-with-snyk-studio#configure-the-snyk-mcp-profile) directive is now in General Availability and is enabled by default in the Full MCP profile. The docs now reflect supported ecosystems: npm, PyPI, Maven, NuGet, and Go.
 * Snyk API & Web documentation now covers native GraphQL scanning, including schema ingestion through a URL, file upload, or introspection endpoint, and new GraphQL-specific authentication options.&#x20;
 * Snyk API & Web compliance reporting now supports the OWASP Top 10:2025 standard, in addition to OWASP Top 10:2021.&#x20;
-*
 
 ## April 2026
 
