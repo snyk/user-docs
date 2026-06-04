@@ -18,26 +18,24 @@ After manually setting up the languages in your Bitbucket project, Snyk can auto
 * Users
 * Repositories
 
-#### Prerequisites <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
+## Prerequisites <a href="#azure-devops-integrate-using-snyk-apprisk" id="azure-devops-integrate-using-snyk-apprisk"></a>
 
 To configure a Group-level integration, you must be a Group Admin or have a custom role that includes the `Edit Snyk Essentials` permissions under the [Group-level permissions](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles#group-level-permissions).
 
 ## Integrate using Snyk Essentials <a href="#bitbucket-integrate-using-snyk-apprisk" id="bitbucket-integrate-using-snyk-apprisk"></a>
 
-1. Profile name (`mandatory`): Input your integration profile name.
-2. Service type (`mandatory`): Select the service type, Cloud, or Server.
-3. User email (`mandatory`): Atlassian account email.
-4. API Token (`mandatory`) to create your BitBucket [API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/) from your BitBucket Organization, with the following permissions:
-   * `read:user:bitbucket`
-   * `read:workspace:bitbucket`
-   * `read:repository:bitbucket`
-5.  Broker Token (`mandatory`) to create and add your Broker token if you use Snyk Broker.
-
-    This step is only for BitBucket Server that are not reachable through the internet.
-
-    Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker) page. Copy and paste the Broker token on the integration setup menu from the Integration Hub.
-6. Add Backstage Catalog (`optional`). If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](../application-context-for-scm-integrations/) page.
+1. **Profile name** (mandatory): Enter a name for this integration profile.
+2. **Service type** (mandatory): Select **Cloud** or **Server**.
+3. **Authentication**: Enter the credentials for your selected service type. \
+   &#x20;     For **Bitbucket Cloud:**
+   1. **User email**: Your Atlassian account email.
+   2. **API Token**: Create a Bitbucket [API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/) in your Bitbucket Organization with the following permissions: `read:user:bitbucket`, `read:workspace:bitbucket`, and `read:repository:bitbucket`.\
+      For **Bitbucket Server**:
+   3. **Username**: Your Bitbucket Server username.
+   4. **App Password**: In your Bitbucket account, navigate to **Settings** > **Personal Bitbucket settings** > **App passwords** and create a password with these permissions: **Account: Read** and **Projects: Read**.
+4. **Broker Token** (mandatory for Bitbucket Server not reachable through the Internet): [Obtain your Broker token for Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker) and paste it here.
+5. **Backstage Catalog** (optional): To sync your catalog, visit the [Backstage file for SCM Integrations](../application-context-for-scm-integrations/)&#x20;
 
 ## API version <a href="#bitbucket-api-version" id="bitbucket-api-version"></a>
 
-You can use the [BitBucket REST API V2](https://developer.atlassian.com/bitbucket/api/2/reference/resource/) repository to access information about the API.
+To access information about the API, use the [Bitbucket REST API V2](https://developer.atlassian.com/bitbucket/api/2/reference/resource/).
