@@ -206,7 +206,6 @@
   * [Ignores (v1)](snyk-api/reference/ignores-v1.md)
   * [Import Projects (v1)](snyk-api/reference/import-projects-v1.md)
   * [Integrations (v1)](snyk-api/reference/integrations-v1.md)
-  * [Integrations](snyk-api/reference/integrations.md)
   * [Inventory Assets](snyk-api/reference/inventory-assets.md)
   * [Invites](snyk-api/reference/invites.md)
   * [Issues](snyk-api/reference/issues.md)

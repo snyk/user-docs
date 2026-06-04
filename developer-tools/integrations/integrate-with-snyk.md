@@ -8,10 +8,10 @@ Snyk offers security guardrails through Snyk Studio, including its integration w
 
 Snyk provides information about:
 
-* [Snyk Studio and Secure at inception](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/distribution-at-scale)
-* [Quickstart guides for several AI assistants](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides)
-* [Troubleshooting for the Snyk MCP Server](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/troubleshooting)
-* [Usage analytics](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/usage-analytics)
+* [Snyk Studio and Secure at inception](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/distribution-at-scale)
+* [Quickstart guides for several AI assistants](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides)
+* [Troubleshooting for the Snyk MCP Server](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/troubleshooting)
+* [Usage analytics](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/usage-analytics)
 
 {% hint style="info" %}
 **Feature availability**
