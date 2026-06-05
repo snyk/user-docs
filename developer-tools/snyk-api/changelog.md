@@ -1,3 +1,34 @@
+## 2026-03-25 - Updated 2026-06-05
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Updated
+- added `#/components/schemas/DockerHubAttributes, #/components/schemas/EcrAttributes, #/components/schemas/GcrAttributes` to the `data/attributes/configuration` request property `oneOf` list
+
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Updated
+- added `#/components/schemas/DockerHubAttributes, #/components/schemas/EcrAttributes, #/components/schemas/GcrAttributes` to the `data/attributes/configuration` request property `oneOf` list
+
+
+
+### PATCH - `/orgs/{org_id}/settings/opensource/{ecosystem}/private-registries` - Added
+- Updates the publicly-accessible private registry settings of a specific Open Source Ecosystem for an Organization.
+This endpoint has JSON-PATCH semantics: only provided integrations are updated.
+Provide an empty value for `urls` to remove an integration.
+
+#### Required permissions
+
+- `Edit Organization (org.edit)`
+
+
+### GET - `/orgs/{org_id}/settings/opensource/{ecosystem}/private-registries` - Added
+- Retrieves the publicly-accessible private registry settings of a specific Open Source Ecosystem for an Organization.
+These are registries (e.g. JFrog Artifactory, Sonatype Nexus) hosted on a public URL and reached directly with
+credentials, without the Snyk Broker.
+
+#### Required permissions
+
+- `View Organization (org.read)`
+
 ## 2026-03-25 - Updated 2026-05-19
 
 ### GET - `/orgs/{org_id}/issues` - Updated
