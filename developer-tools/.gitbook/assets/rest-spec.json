@@ -26786,6 +26786,31 @@
       "use_proxy": {
         "description": "Whether to use the isolated builds proxy. The proxy will decrypt credentials on the fly, to prevent the untrusted isolated builds\nenvironment from having access to the credentials themselves.\nThis feature is currently opt-in, but will become mandatory in the future for certain ecosystems.\n",
         "type": "boolean"
+      },
+      "uv_workspace": {
+        "additionalProperties": false,
+        "properties": {
+          "package_name": {
+            "description": "uv workspace member name, passed to `uv export --package`.",
+            "example": "foo",
+            "type": "string"
+          },
+          "pyproject_toml": {
+            "description": "Base64-encoded contents of the workspace member's pyproject.toml.",
+            "type": "string"
+          },
+          "relative_path": {
+            "description": "Path to the member's pyproject.toml (incl. filename) relative to uv.lock.",
+            "example": "packages/foo/pyproject.toml",
+            "type": "string"
+          }
+        },
+        "required": [
+          "pyproject_toml",
+          "relative_path",
+          "package_name"
+        ],
+        "type": "object"
       }
     },
     "securitySchemes": {
