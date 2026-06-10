@@ -1,6 +1,6 @@
 # Provision your account
 
-{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
 Provide your Snyk account team with the email of the desired Snyk tenant admin.
 

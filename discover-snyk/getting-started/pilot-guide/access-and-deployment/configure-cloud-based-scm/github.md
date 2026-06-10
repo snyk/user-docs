@@ -1,6 +1,6 @@
 # GitHub
 
-{% include "../../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
 ‌Review the steps below to configure the GitHub integration with Snyk. For more details about setting up the GitHub integration, contact your Snyk account team.
 
@@ -29,7 +29,7 @@ Configure the Group-level integration by following these steps:
 <figure><img src="../../../../.gitbook/assets/image (307).png" alt=""><figcaption></figcaption></figure>
 
 * Search and select the GitHub integration
-* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate GitHub using Snyk Essentials](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations/github-for-snyk-essentials#github-integrate-using-snyk-apprisk) page.
+* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate GitHub using Snyk Essentials](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations/github-for-snyk-essentials#github-integrate-using-snyk-apprisk) page.
 
 {% hint style="info" %}
 After the integration is configured, the Group-level integration shifts to a **Partially connected** status. During the next synchronization, it will transition to the connected state, and the Inventory view will be filled with data from the GitHub source.
@@ -43,9 +43,8 @@ Configure the Organization-level integration by following these steps:
 * Navigate to the Organization-level
 * Open **Integrations**
 * Search and select the GitHub integration
-* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [GitHub integration settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github#github-integration-settings) page.
+* Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [GitHub integration settings](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations/github#github-integration-settings) page.
 
 <figure><img src="../../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
 
 The Organization-level integration is immediately available to import repositories and begin scanning.
-

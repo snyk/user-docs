@@ -1,6 +1,6 @@
 # Assign a lesson in Snyk Learn
 
-{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
 The Snyk platform includes access to Snyk Learn, the Snyk security education platform. With resources on Snyk Learn, developers can learn how to stay secure through interactive lessons that explore vulnerabilities across various languages and ecosystems.
 

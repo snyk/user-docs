@@ -1,10 +1,10 @@
 # Local scanning with the IDE
 
-{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
 ## Configure the Snyk IDE
 
-To start scanning code in the IDE, navigate to your IDE plugin or extension marketplace and search for Snyk. This guide focuses on VS Code, but the [other supported IDEs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions) follow a very similar setup flow.
+To start scanning code in the IDE, navigate to your IDE plugin or extension marketplace and search for Snyk. This guide focuses on VS Code, but the [other supported IDEs](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions) follow a very similar setup flow.
 
 * Open VS Code, Extensions and search for Snyk.
 * Install the Snyk extension.
@@ -19,7 +19,7 @@ To start scanning code in the IDE, navigate to your IDE plugin or extension mark
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd9acXhko99qCN0uD5gaOu7N_sEDxHeQKn8GVdmfcMFLJ4IUs5Y0BVaYtHdPQcwqaJW63iEVEZ-37wl7DBrkUT_zsjUBv3Ar-loSvnhjm0tuV5ay9qF1_83iPDNV50pj3caXg22pg?key=i_CNrr-DvB8PGUAzq09BT3pc" alt=""><figcaption></figcaption></figure>
 
-* Return to your IDE, where you can start scanning immediately.&#x20;
+* Return to your IDE, where you can start scanning immediately.
 
 ## Use the Snyk IDE
 
@@ -56,11 +56,9 @@ For Snyk Code issues, you can see the Fix Analysis, Data Flow, and an Issue Over
 The next step in the guide covers fixing issues.
 
 {% hint style="info" %}
-
-
 Additional Resources
 
 * [Product Training: Snyk in the IDE](https://learn.snyk.io/lesson/snyk-in-an-ide)
-* [Snyk Docs: Snyk IDE plugins and extensions](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions)
-* [Troubleshooting](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides)
+* [Snyk Docs: Snyk IDE plugins and extensions](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions)
+* [Troubleshooting](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides)
 {% endhint %}

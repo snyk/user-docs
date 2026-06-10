@@ -1,6 +1,6 @@
 # Set up Snyk Essentials
 
-{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 # Import repositories
 
-{% include "../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
 After setting up your SCM integration, you are ready to import repositories to Snyk. If you have not imported any repos yet, click on the **Import projects** button to start.
 
@@ -32,6 +32,6 @@ You can either continue monitoring the import by returning to the import logs or
 {% hint style="info" %}
 Additional resources
 
-* [Import Project repository](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/import-project-repository)
-* [API-driven imports](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import)
+* [Import Project repository](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/import-project-repository)
+* [API-driven imports](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import)
 {% endhint %}
