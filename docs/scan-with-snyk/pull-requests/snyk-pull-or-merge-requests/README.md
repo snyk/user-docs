@@ -40,7 +40,7 @@ To quickly review the pull request, hover over it. You can see the recommended u
 
 <figure><img src="../../../.gitbook/assets/open-a-fix-pr-github.png" alt="Recommended upgrade"><figcaption><p>Recommended upgrade</p></figcaption></figure>
 
-Open the pull request to view in-depth details, including package release notes and vulnerabilities included in the recommended upgrade.
+Open the pull request to view in-depth details, including package release notes and vulnerabilities included in the recommended upgrade. For package upgrade pull requests, Snyk includes a breakability risk level in the PR description and posts a follow-up comment with a more detailed analysis. For risk level definitions and guidance, see [Breakability risk levels](breakability-risk-levels.md).
 
 <figure><img src="../../../.gitbook/assets/github-fix-pr-details.png" alt="Pull request details"><figcaption><p>Pull request details</p></figcaption></figure>
 

@@ -28,7 +28,6 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
 * Risk Management
   * [Risk Score](../../manage-risk/prioritize-issues-for-fixing/risk-score.md)
   * [Reachability analysis](../../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
-  * [Breakability risk levels](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/breakability-risk-levels.md)
 * Universal Broker
 * Language support
   * [Snyk CLI pnpm support](../../supported-languages/supported-languages-list/javascript/#support-for-pnpm)
