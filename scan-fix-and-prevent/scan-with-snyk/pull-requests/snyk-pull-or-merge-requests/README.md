@@ -48,6 +48,29 @@ Click the Issue link from the table to view all details for the specified vulner
 
 After you have reviewed the pull request, you can approve the merge.
 
+## Automatically closing resolved PRs
+
+To reduce noise and keep your backlog clean, Snyk automatically closes Fix PRs that are no longer needed. This prevents stale, already-resolved pull requests from accumulating in your repositories.
+
+Snyk evaluates open Fix PRs during its recurring test cycle. When it detects that the issues a PR was opened to fix are no longer present in the Project, Snyk closes the pull request through your SCM integration (such as GitHub) and posts a comment explaining why, including the list of resolved issues.
+
+Snyk closes a Fix PR when its targeted issues have been resolved by means such as:
+
+* A vulnerable dependency is completely removed from the Project.
+* The vulnerability is resolved by a different, already-merged PR.
+* A transitive dependency update resolves the issue without the specific Snyk PR.
+* A developer manually applies a fix.
+
+Things to know
+
+* All-or-nothing: A PR is closed only when all of its targeted issues are no longer present in the Project snapshot. If a PR is partially resolved and some issues remain, Snyk leaves it open.
+* Scope: This feature does not currently close superseded PRs (where a newer PR addresses the same issues) or abandoned PRs based on inactivity. Support for these cases is planned for a future iteration.
+* Daily limit: You can configure the maximum number of PRs Snyk auto-closes. By default, Snyk will close a maximum of 5 PRs per scan.
+
+Managing the setting:
+
+Automatic PR closing is enabled by default. Administrators and account owners can opt out, or adjust the daily limit, from the settings page.
+
 ## Generated Pull Requests report
 
 Snyk provides a report for Enterprise customers that gives an overview of how [Fix](enable-automatic-fix-prs.md), [Backlog](enable-automatic-backlog-prs-for-previously-known-vulnerabilities.md), and [Upgrade PRs](enable-automatic-upgrade-prs-for-new-dependency-upgrades.md) are used and highlights the efficiency of PR merges. For more information, see [Snyk Generated Pull Requests report](../../../manage-risk/analytics/reports-tab/prevention-reports.md#snyk-generated-pull-requests-report).
