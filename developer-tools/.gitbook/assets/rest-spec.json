@@ -184,8 +184,55 @@
           }
         }
       },
-      "GetBrokerSettingsResponseWithIntegrations": {
-        "summary": "Broker settings with some integrations configured",
+      "GetBrokerSettingsResponseWithIntegrationsGolang": {
+        "summary": "Broker settings for Golang with Go module proxy \u0026 Go direct (SCM) integrations configured",
+        "value": {
+          "data": {
+            "integrations": [
+              {
+                "created_at": "2026-04-15T10:00:00.000Z",
+                "id": "019e8800-72c3-7ae4-bb4e-40deea1820c0",
+                "integration_type": "artifactory",
+                "urls": [
+                  "https://artifactory.internal-domain.com/artifactory/api/go/team-go-modules"
+                ]
+              },
+              {
+                "created_at": "2026-04-16T10:00:00.000Z",
+                "id": "019e8800-90bd-7bc0-9666-775eee165cf0",
+                "integration_type": "nexus-private-repo",
+                "urls": [
+                  "https://nexus.internal-domain.com/repository/go-hosted/"
+                ]
+              },
+              {
+                "created_at": "2026-06-10T10:00:00.000Z",
+                "id": "019eb24a-1b01-727d-b051-972dd2fdb8e2",
+                "integration_type": "github",
+                "urls": [
+                  "https://github.com/go-modules-org"
+                ]
+              },
+              {
+                "created_at": "2026-06-10T10:00:00.000Z",
+                "id": "019eb24a-34e3-7a53-aad1-6cedb57427b5",
+                "integration_type": "bitbucket-cloud",
+                "urls": [
+                  "https://bitbucket.org/my-workspace"
+                ]
+              }
+            ]
+          },
+          "jsonapi": {
+            "version": "1.0"
+          },
+          "links": {
+            "self": "/orgs/db2557c3-ecb8-4d45-8e1e-894ae89a92a6/settings/opensource/Golang/broker?version=2024-10-15"
+          }
+        }
+      },
+      "GetBrokerSettingsResponseWithIntegrationsNuGet": {
+        "summary": "Broker settings for NuGet with some integrations configured",
         "value": {
           "data": {
             "integrations": [
@@ -329,7 +376,22 @@
           }
         }
       },
-      "PostBrokerSettingsRequestAddIntegration": {
+      "PostBrokerSettingsRequestAddIntegrationGolang": {
+        "summary": "Add a Go module proxy integration (Artifactory Go repository)",
+        "value": {
+          "data": {
+            "integrations": [
+              {
+                "integration_type": "artifactory",
+                "urls": [
+                  "https://artifactory.internal-domain.com/artifactory/api/go/team-go-modules"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "PostBrokerSettingsRequestAddIntegrationNuGet": {
         "summary": "Add an integration",
         "value": {
           "data": {
@@ -6215,7 +6277,15 @@
             "description": "The type of integration (e.g., 'artifactory', 'nexus-private-repo')",
             "enum": [
               "artifactory",
-              "nexus-private-repo"
+              "nexus-private-repo",
+              "github",
+              "github-cloud-app",
+              "github-enterprise",
+              "bitbucket-cloud",
+              "bitbucket-connect-app",
+              "bitbucket-server",
+              "gitlab",
+              "azure-repos"
             ],
             "example": "artifactory",
             "type": "string"
@@ -20537,7 +20607,15 @@
             "description": "The type of integration (e.g., 'artifactory', 'nexus-private-repo')",
             "enum": [
               "artifactory",
-              "nexus-private-repo"
+              "nexus-private-repo",
+              "github",
+              "github-cloud-app",
+              "github-enterprise",
+              "bitbucket-cloud",
+              "bitbucket-connect-app",
+              "bitbucket-server",
+              "gitlab",
+              "azure-repos"
             ],
             "example": "artifactory",
             "type": "string"
@@ -23155,7 +23233,7 @@
         "type": "object"
       },
       "ScmResource": {
-        "description": "Resource representing a repository of source files located in\na Source Code Management tool (e.g. GitHub).\n\nScmResources provide Snyk with the requisite information to\nlocate and scan the source files located in the repository.\n\nCurrently supported scans utilizing ScmResources are:\n- SAST scans on (1) ScmResource that references a repo already\nimported into Snyk\n- Secrets scans on (1) ScmResource that references a repo which\nmay not already be imported into Snyk\n- SCA scans on (1) ScmResource that references a repo already\nimported into Snyk",
+        "description": "Resource representing a repository of source files located in\na Source Code Management tool (e.g. GitHub).\n\nScmResources provide Snyk with the requisite information to\nlocate and scan the source files located in the repository.\n\nCurrently supported scans utilizing ScmResources are:\n- SAST scans on (1) ScmResource that references a repo already\nimported into Snyk\n- Secrets scans on (1) ScmResource that references a repo which\nmay not already be imported into Snyk",
         "example": {
           "commit": "8dbd1ea7201a0d49603467981075a633d91e40b9",
           "file_patterns": [],
@@ -23359,6 +23437,36 @@
           "nonce",
           "encrypted",
           "expires_at"
+        ],
+        "type": "object"
+      },
+      "SecretsEnablement": {
+        "additionalProperties": false,
+        "properties": {
+          "attributes": {
+            "additionalProperties": false,
+            "properties": {
+              "secrets_enabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "secrets_enabled"
+            ],
+            "type": "object"
+          },
+          "id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "id",
+          "attributes"
         ],
         "type": "object"
       },
@@ -23781,7 +23889,7 @@
         "type": "object"
       },
       "SnykReferenceResource": {
-        "description": "SnykReferenceResources contain references to source code,\ncontainers, SBOMs, and other testable content that has already\nbeen provided to Snyk to create a Project or Target.\n\nIf the intended content to test is already known to Snyk as a\nProject, Target, or otherwise, this SnykReferenceResource can\nbe used to initiate a Test with the appropriate ID.\n\nCurrently no scans are supported through the Test API for\nSnykReferenceResources.",
+        "description": "SnykReferenceResources contain references to source code,\ncontainers, SBOMs, and other testable content that has already\nbeen provided to Snyk to create a Project or Target.\n\nIf the intended content to test is already known to Snyk as a\nProject, Target, or otherwise, this SnykReferenceResource can\nbe used to initiate a Test with the appropriate ID.\n\nSupported scans:\n- SCA scan on one (1) SnykReferenceResource which contains a\nTarget ID in addition to at least one of CommitRef or Branch\nprovided on the SCM Context object.",
         "example": {
           "ref_id": "00000000-0000-0000-0000-000000000000",
           "reference_type": "project",
@@ -55533,8 +55641,11 @@
                   "Empty": {
                     "$ref": "#/components/examples/GetBrokerSettingsResponseEmpty"
                   },
-                  "WithIntegrations": {
-                    "$ref": "#/components/examples/GetBrokerSettingsResponseWithIntegrations"
+                  "WithIntegrationsForGolang": {
+                    "$ref": "#/components/examples/GetBrokerSettingsResponseWithIntegrationsGolang"
+                  },
+                  "WithIntegrationsForNuGet": {
+                    "$ref": "#/components/examples/GetBrokerSettingsResponseWithIntegrationsNuGet"
                   }
                 },
                 "schema": {
@@ -55637,8 +55748,11 @@
           "content": {
             "application/vnd.api+json": {
               "examples": {
-                "AddIntegration": {
-                  "$ref": "#/components/examples/PostBrokerSettingsRequestAddIntegration"
+                "AddGolangIntegration": {
+                  "$ref": "#/components/examples/PostBrokerSettingsRequestAddIntegrationGolang"
+                },
+                "AddNuGetIntegration": {
+                  "$ref": "#/components/examples/PostBrokerSettingsRequestAddIntegrationNuGet"
                 },
                 "EditIntegrations": {
                   "$ref": "#/components/examples/PostBrokerSettingsRequestEditIntegrations"
@@ -56222,6 +56336,245 @@
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2023-09-11",
         "x-stability-level": "stable"
+      }
+    },
+    "/orgs/{org_id}/settings/secrets": {
+      "get": {
+        "description": "Retrieves the Secrets settings for an org\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getSecretsSettings",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "The id of the org for which we want to retrieve the Secrets settings",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/SecretsEnablement"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/Links"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "data",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "The Secrets settings for the org are being retrieved",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Retrieves the Secrets settings for an org (Early Access)",
+        "tags": [
+          "SecretsSettings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "secrets_settings",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      },
+      "patch": {
+        "description": "Update the Secrets settings for an org\n\n#### Required permissions\n\n- `View Organization (org.read)`\n\n- `Edit Organization (org.edit)`",
+        "operationId": "updateOrgSecretsSettings",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "The id of the org for which we want to update the Secrets settings",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "data": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "attributes": {
+                        "additionalProperties": false,
+                        "properties": {
+                          "secrets_enabled": {
+                            "description": "The value of the updated setting for secretsEnabled",
+                            "type": "boolean"
+                          }
+                        },
+                        "required": [
+                          "secrets_enabled"
+                        ],
+                        "type": "object"
+                      },
+                      "id": {
+                        "format": "uuid",
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "type",
+                      "attributes"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "data"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/SecretsEnablement"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/Links"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "data",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "The Secrets settings for the org are being updated",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Update the Secrets settings for an org (Early Access)",
+        "tags": [
+          "SecretsSettings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "secrets_settings",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/slack_app/{bot_id}": {
