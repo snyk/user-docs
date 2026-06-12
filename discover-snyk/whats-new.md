@@ -24,7 +24,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Evo by Snyk
 
 * The [aibom test](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom-test) command now validates a generated AI-BOM against your tenant's Evo policies in a single step.
-* [redteam](https://docs.snyk.io/developer-tools/snyk-cli/commands/redteam) now documents the new exhaustive and eager scan modes, improved JSON output, and the vulnerability summary that appears in [Snyk Agent Red Teaming](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-agent-red-teaming) results.
+* redteam now documents the new exhaustive and eager scan modes, improved JSON output, and the vulnerability summary that appears in Snyk Agent Red Teaming results.
 
 #### Other updates
 
@@ -63,7 +63,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Evo by Snyk
 
 * Added the [`aibom test`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/aibom-test) command under [Snyk CLI Help](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands#snyk-aibom-test).
-* Updated [`redteam`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/redteam) with additional options, and also added [Snyk Agent Red Teaming](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-agent-red-teaming).
+* Updated `redteam` with additional options, and also added Snyk Agent Red Teaming.
 
 ### Snyk Analytics
 
