@@ -56,10 +56,6 @@ Generates an AIBOM for a local software project that is written in Python, to un
 
 Generates an AI-BOM and tests it against your tenant's policies, returning all resulting issues.
 
-### [`snyk redteam`](/broken/pages/qAiwhB9PfK75vzoGJJtA)
-
-Runs a red teaming scan against AI targets and reports vulnerabilities.
-
 ### [`snyk log4shell`](log4shell.md)
 
 Find Log4Shell vulnerability.
