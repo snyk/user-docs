@@ -318,6 +318,7 @@
     * [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](snyk-cli/install-the-snyk-cli/prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md)
     * [Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine](snyk-cli/install-the-snyk-cli/using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine.md)
   * [Authenticate to use the CLI](snyk-cli/authenticate-to-use-the-cli.md)
+  * [Upgrade the Snyk CLI](snyk-cli/snyk-cli/upgrade-the-snyk-cli.md)
   * [Configure the Snyk CLI](snyk-cli/configure-the-snyk-cli/README.md)
     * [Environment variables for Snyk CLI](snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli.md)
     * [Configure Snyk CLI to connect to Snyk API](cli-ide-and-ci-cd-integrations/snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api.md)
