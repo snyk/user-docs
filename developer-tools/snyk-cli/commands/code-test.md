@@ -43,6 +43,18 @@ Example: `$ snyk code test --report`
 
 Example: `$ snyk code test --report --project-name=my-project`
 
+### `--project-tags=<TAG>[,<TAG>...]`
+
+Use this option with the `--report` option.
+
+Set one or more project tags for your project. Specify tags as comma-separated `key=value` pairs.
+
+Example: `--project-tags=department=finance,team=alpha`
+
+To clear all project tags, set `--project-tags=`.
+
+For more information about valid characters, visit [Project tags](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-tags).
+
 ### `--target-name=<TARGET_NAME>`
 
 This can be used in combination with the `--report` option.
@@ -111,7 +123,7 @@ Example: `$ snyk code test --sarif`
 
 ### `--sarif-file-output=<OUTPUT_FILE_PATH>`
 
-Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, regardless of whether or not you use the `--sarif` option.&#x20;
+Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, regardless of whether or not you use the `--sarif` option.
 
 Use to display the human-readable test output using stdout and, at the same time, save the SARIF format output to a file.\
 \
