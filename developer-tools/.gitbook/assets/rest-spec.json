@@ -827,6 +827,15 @@
           "$ref": "#/components/schemas/AssignableByMe"
         }
       },
+      "BestMatch": {
+        "description": "When true, match identifier filters in order `rules`, `cves`, `cwes` and\nreturn lessons from the first non-empty bucket (V1 lookup-for-cta\nbehaviour). `ecosystem` still applies. When false (default), AND all\nidentifier filters. Ignored when `cwes`, `cves`, and `rules` are all\nomitted.\n",
+        "in": "query",
+        "name": "best_match",
+        "schema": {
+          "default": false,
+          "type": "boolean"
+        }
+      },
       "BotId": {
         "description": "Bot ID",
         "in": "path",
@@ -843,6 +852,34 @@
         "schema": {
           "type": "boolean"
         }
+      },
+      "CatalogCves": {
+        "description": "Filter lessons tagged with at least one listed CVE.\nExample: `?cves=CVE-2021-44228` or `?cves=CVE-2021-44228,CVE-2021-45046`.\n",
+        "example": [
+          "CVE-2021-44228",
+          "CVE-2021-45046"
+        ],
+        "explode": false,
+        "in": "query",
+        "name": "cves",
+        "schema": {
+          "$ref": "#/components/schemas/CatalogCves"
+        },
+        "style": "form"
+      },
+      "CatalogCwes": {
+        "description": "Filter lessons tagged with at least one listed CWE.\nExample: `?cwes=CWE-79` or `?cwes=CWE-79,CWE-89`.\n",
+        "example": [
+          "CWE-79",
+          "CWE-89"
+        ],
+        "explode": false,
+        "in": "query",
+        "name": "cwes",
+        "schema": {
+          "$ref": "#/components/schemas/Cwes"
+        },
+        "style": "form"
       },
       "ChannelId": {
         "description": "Slack Channel ID",
@@ -1372,6 +1409,14 @@
           "$ref": "#/components/schemas/EnvironmentKind"
         }
       },
+      "LessonEcosystem": {
+        "description": "Filter lessons by ecosystem. `all` has no effect. `npm` matches\n`javascript`. Values not in the enum (e.g. `maven`) are rejected.\n",
+        "in": "query",
+        "name": "ecosystem",
+        "schema": {
+          "$ref": "#/components/schemas/LessonEcosystem"
+        }
+      },
       "Limit": {
         "description": "Number of results to return per page",
         "example": 10,
@@ -1850,6 +1895,20 @@
         "schema": {
           "$ref": "#/components/schemas/RsqlFilterString"
         }
+      },
+      "Rules": {
+        "description": "Filter lessons tagged with at least one listed Snyk rule (`snyk_vuln_id`).\nExample: `?rules=SNYK-JS-AXIOS-16298058` or comma-separated for several.\n",
+        "example": [
+          "SNYK-JS-AXIOS-16298058",
+          "SNYK-JAVA-COMSQUAREUPOKHTTP3-1038737"
+        ],
+        "explode": false,
+        "in": "query",
+        "name": "rules",
+        "schema": {
+          "$ref": "#/components/schemas/Rules"
+        },
+        "style": "form"
       },
       "ScanId": {
         "description": "Scan ID",
@@ -6280,6 +6339,7 @@
               "nexus-private-repo",
               "github",
               "github-cloud-app",
+              "github-server-app",
               "github-enterprise",
               "bitbucket-cloud",
               "bitbucket-connect-app",
@@ -6511,6 +6571,20 @@
           "modification_time"
         ],
         "type": "object"
+      },
+      "CatalogCves": {
+        "description": "CVE identifiers (e.g. CVE-2021-44228). Up to 50 unique values.",
+        "example": [
+          "CVE-2021-44228"
+        ],
+        "items": {
+          "pattern": "^CVE-\\d+-\\d+$",
+          "type": "string"
+        },
+        "maxItems": 50,
+        "minItems": 1,
+        "type": "array",
+        "uniqueItems": true
       },
       "CatalogProgress": {
         "properties": {
@@ -8738,6 +8812,11 @@
         "uniqueItems": true
       },
       "Cwes": {
+        "description": "CWE identifiers (e.g. CWE-79). Up to 50 unique values.",
+        "example": [
+          "CWE-79",
+          "CWE-89"
+        ],
         "items": {
           "pattern": "^CWE-\\d+$",
           "type": "string"
@@ -17264,6 +17343,28 @@
           }
         ]
       },
+      "LessonEcosystem": {
+        "description": "Lesson language or platform. `all` skips ecosystem filtering.\n`npm` is treated as `javascript`.\n",
+        "enum": [
+          "all",
+          "general",
+          "java",
+          "javascript",
+          "python",
+          "golang",
+          "php",
+          "cpp",
+          "csharp",
+          "kubernetes",
+          "docker",
+          "npm",
+          "aiml",
+          "rust",
+          "ruby",
+          "swift"
+        ],
+        "type": "string"
+      },
       "LinkProperty": {
         "example": "https://example.com/api/resource",
         "oneOf": [
@@ -22703,6 +22804,21 @@
         "description": "RSQL filter expression for filtering results.\n\n**Supported operators:**\n- `==` (equal), `!=` (not equal)\n- `\u003c` or `=lt=` (less than), `\u003e` or `=gt=` (greater than)\n- `\u003c=` or `=le=` (less than or equal), `\u003e=` or `=ge=` (greater than or equal)\n- `=in=(val1,val2)` (IN list), `=out=(val1,val2)` (NOT IN list)\n- `;` or ` and ` (logical AND), `,` or ` or ` (logical OR) - word operators are case-insensitive\n\n**Wildcard pattern matching:**\nUse `*` (asterisk) for flexible string matching with `==` and `!=` operators:\n- `*value*` - Contains (e.g., `registry==*docker*` matches \"docker.io\")\n- `value*` - Starts with (e.g., `registry==docker*` matches \"docker.io\")\n- `*value` - Ends with (e.g., `name==*nginx` matches \"library/nginx\")\n- `!=*value*` - Does not contain (e.g., `class!=*test*`)\n\nNote: Special SQL characters (%, _) are automatically escaped for security.\n\n**Quoted values:**\nValues can optionally be wrapped in single quotes (`'...'`) or double quotes (`\"...\"`).\nQuotes are stripped before comparison, so `registry=='docker.io'` is equivalent to `registry==docker.io`.\nEscaped quotes inside quoted values are supported (e.g., `name==\"O\\\"Reilly\"`).\nQuoting is required when filtering for empty values (see below).\n\n**Filtering for empty values:**\nUse empty quotes (`''` or `\"\"`) with `==` or `!=` to filter by empty fields:\n- `registry==''` - Matches assets where registry is empty\n- `registry!=''` - Matches assets where registry has a value\n\n**Multi-field substring search:**\nUse the special `q` field to search across multiple fields simultaneously using case-insensitive substring matching:\n- `q==\u003csearch_term\u003e` - Searches across all searchable string fields (labels, tags, registry, repository, name, config_digest, manifest_digest, index_digest, image_tag)\n- Only supports the `==` operator (no wildcards needed - automatically searches for substring matches)\n- Uses case-insensitive pattern matching (PostgreSQL ILIKE)\n- Does not support linguistic features like stemming or ranking\n- Special characters are automatically escaped for security\n- Can be combined with other filters: `q==nginx;type==container_images`\n\n**Supported fields:**\n\nCommon fields (apply to all asset types):\n- `q` (string) - Multi-field substring search (see above)\n- `id` (UUID) - Asset ID\n- `type` (string) - Type of asset. Allowed values: `container_images`\n- `class` (string) - Class of asset (e.g., A, B)\n- `created_at` (timestamp) - Asset creation timestamp (ISO 8601 format)\n- `updated_at` (timestamp) - Asset last update timestamp (ISO 8601 format)\n- `labels` (string array) - Asset labels\n- `tags` (object) - Asset tags. Requires a sub-field (e.g., `tags.env==production`)\n\nContainer image fields (apply when type is `container_images`):\n- `registry` (string) - Container image registry (e.g., docker.io)\n- `repository` (string) - Container image repository path\n- `name` (string) - Container image name\n- `config_digest` (string) - Image config digest\n- `manifest_digest` (string) - Distribution manifest digest\n- `index_digest` (string) - Distribution index digest\n- `image_tag` (string) - Image tag from discovery source\n- `image_labels` (object) - OCI image config labels. Requires a sub-field (e.g., `image_labels.vendor==nginx`)\n\n**Examples:**\n- `q==nginx` - Multi-field substring search for \"nginx\"\n- `q==docker.io;type==container_images` - Search \"docker.io\" substring in container images only\n- `type==container_images` - Exact match on asset type\n- `registry==*docker*` - Registry contains \"docker\" (wildcard)\n- `created_at\u003e2024-01-01` or `created_at=gt=2024-01-01` - Date comparison\n- `class==A;created_at=ge=2024-01-01` - AND combination\n- `labels=in=(production,staging)` - Labels IN list\n- `tags.env==production` - Tag sub-field filter\n- `image_labels.vendor==nginx` - Image label sub-field filter\n- `registry=='docker.io'` - Quoted value (equivalent to `registry==docker.io`)\n- `registry==''` - Assets where registry is empty\n- `registry!=''` - Assets where registry has a value\n",
         "example": "type==container_images;created_at\u003e2024-01-01",
         "type": "string"
+      },
+      "Rules": {
+        "description": "Snyk rule identifiers (SNYK-LANG-...). Up to 50 unique values.",
+        "example": [
+          "SNYK-JS-AXIOS-16298058",
+          "SNYK-JAVA-COMSQUAREUPOKHTTP3-1038737"
+        ],
+        "items": {
+          "pattern": "^SNYK-[A-Z]+-.+$",
+          "type": "string"
+        },
+        "maxItems": 50,
+        "minItems": 1,
+        "type": "array",
+        "uniqueItems": true
       },
       "SSOConnection": {
         "additionalProperties": false,
@@ -35937,7 +36053,7 @@
     },
     "/learn/catalog": {
       "get": {
-        "description": "List Snyk Learn's catalog resources",
+        "description": "Returns lessons and learning paths. Optional filters narrow lessons by\nCWE, CVE, Snyk rule, and/or ecosystem.\n\nMultiple identifier params are ANDed by default. Set `best_match=true` for\npriority match: `rules`, then `cves`, then `cwes` (first bucket with\nhits wins). `ecosystem` is applied after identifier matching.\n\nWith filters active, a learning path is returned only if it contains a\nmatching lesson; `attributes.lesson_ids` lists those lessons only.\n\nFor `cwes`, `cves`, and `rules`, pass multiple values comma-separated in\none parameter (e.g. `?cwes=CWE-79,CWE-89`). Repeated parameters\n(e.g. `?cwes=CWE-79\u0026cwes=CWE-89`) are not accepted.\n",
         "operationId": "listLearnCatalog",
         "parameters": [
           {
@@ -35948,6 +36064,21 @@
           },
           {
             "$ref": "#/components/parameters/Source"
+          },
+          {
+            "$ref": "#/components/parameters/CatalogCwes"
+          },
+          {
+            "$ref": "#/components/parameters/CatalogCves"
+          },
+          {
+            "$ref": "#/components/parameters/Rules"
+          },
+          {
+            "$ref": "#/components/parameters/LessonEcosystem"
+          },
+          {
+            "$ref": "#/components/parameters/BestMatch"
           },
           {
             "$ref": "#/components/parameters/Limit"
@@ -35987,7 +36118,7 @@
                 }
               }
             },
-            "description": "Returns a list of catalog resources",
+            "description": "Catalog resources for this request. Filtered responses may omit\nlessons and trim learning-path `lesson_ids`.\n",
             "headers": {
               "deprecation": {
                 "$ref": "#/components/headers/DeprecationHeader"
@@ -36019,7 +36150,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "List Snyk Learn's resources (Early Access)",
+        "summary": "List and filter Snyk Learn catalog resources (Early Access)",
         "tags": [
           "Catalog Resource"
         ],
