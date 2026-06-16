@@ -17,7 +17,7 @@ With breakability analysis, Snyk sends package information to a Large Language M
 Ensure to review AI-generated content for accuracy before use.
 {% endhint %}
 
-## ## View breakability in pull requests
+## View breakability in pull requests
 
 Snyk displays breakability analysis in two locations within pull requests for dependency upgrades:
 
