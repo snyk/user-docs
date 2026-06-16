@@ -27,6 +27,7 @@ This script fixes all three: it proposes a descriptive name **derived from each 
 - **Section-scoped reference rewriting** — the same generic name (`1.png`) can exist in several sections with different meanings; rewrites are scoped per section so a reference is never pointed at the wrong section's file.
 - **Robust reference parsing** — handles GitBook's angle-bracket link form `![alt](<…/assets/image (1).png>)` and references in non-Markdown files (`.yaml`, `.json`, `.html`).
 - **Caption-relevance check** — flags any proposed name that doesn't actually reflect its captions, so you can correct it before applying.
+- **Spell-sanity check** — flags proposed names containing a likely-misspelled word (typos are often carried over from the caption, e.g. `attribue`). Heuristic: uses the system word list plus a product/tech allow-list, and skips words that appear capitalized in the caption (product names). Reported for review; never auto-corrected.
 
 ## Requirements
 

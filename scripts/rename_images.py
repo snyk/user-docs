@@ -248,6 +248,85 @@ def caption_relevance(name: str, contexts: list[str]):
     return len(shared) / len(name_words), shared
 
 
+# --- spell-sanity (best-effort) -------------------------------------------------
+# Names mirror their captions, so a typo in a caption ("attribue") becomes a typo
+# in the file name. This flags likely-misspelled words for manual review. It's a
+# heuristic: it uses the system word list (if present) plus a small allow-list of
+# product/tech terms, and tolerates common plural/verb inflections.
+_DICT_PATHS = ("/usr/share/dict/words", "/usr/share/dict/web2")
+_dictionary_cache = None
+
+SPELL_ALLOW = {
+    "snyk", "sast", "sca", "iac", "sbom", "cli", "api", "apis", "sso", "saml",
+    "oauth", "idp", "mfa", "scm", "repo", "repos", "github", "gitlab", "bitbucket",
+    "jira", "jenkins", "npm", "pypi", "maven", "gradle", "nuget", "dotnet", "golang",
+    "javascript", "typescript", "dropdown", "config", "configs", "url", "urls",
+    "devops", "webhook", "webhooks", "jetbrains", "vscode", "cwe", "cwes", "cve",
+    "cves", "readme", "json", "yaml", "sdk", "sdks", "gcr", "ecr", "acr", "aws",
+    "gcp", "azure", "ide", "ides", "cicd", "toml", "nexus", "artifactory",
+    "kubernetes", "docker", "onboarding", "analytics", "dashboard", "auth", "login",
+    "logout", "backend", "frontend", "runtime", "namespace", "unignore",
+    "reprioritize", "prioritization", "integrations", "checkbox", "tooltip",
+    # common modern words missing from the archaic system word list
+    "email", "emails", "download", "downloads", "downloading", "upload", "uploads",
+    "uploading", "workspace", "workspaces", "plugin", "plugins", "app", "apps",
+    "mapping", "mappings", "dataset", "datasets", "signup", "walkthrough",
+    "changelog", "dashboards", "filename", "filenames", "username", "usernames",
+    "timestamp", "metadata", "subgroup", "subgroups", "tooltips", "wildcard",
+    "workflow", "workflows", "ranking", "rankings", "gitbook", "filtering",
+}
+
+
+def _load_dictionary() -> set:
+    global _dictionary_cache
+    if _dictionary_cache is None:
+        _dictionary_cache = set()
+        for p in _DICT_PATHS:
+            fp = Path(p)
+            if fp.exists():
+                try:
+                    _dictionary_cache = {
+                        w.strip().lower()
+                        for w in fp.read_text(encoding="utf-8", errors="ignore").splitlines()
+                    }
+                    break
+                except OSError:
+                    pass
+    return _dictionary_cache
+
+
+def _known(word: str, words: set) -> bool:
+    if word in words or word in SPELL_ALLOW:
+        return True
+    for suf, repl in (("s", ""), ("es", ""), ("ies", "y"), ("ing", ""),
+                      ("ing", "e"), ("ed", ""), ("ed", "e"), ("d", "")):
+        if word.endswith(suf):
+            stem = word[:-len(suf)] + repl
+            if stem in words or stem in SPELL_ALLOW:
+                return True
+    return False
+
+
+def suspect_words(name: str, contexts: list[str] = ()) -> list:
+    """Words in a proposed name that look misspelled (empty if no dictionary).
+
+    Words that appear Capitalized in the captions are treated as proper nouns /
+    product names (Okta, Google, CircleCI) and skipped — that's where most false
+    positives come from, since the system word list is an archaic dictionary.
+    """
+    words = _load_dictionary()
+    if not words:
+        return []
+    proper = set()
+    for c in contexts:
+        if c:
+            proper |= {m.lower() for m in re.findall(r"[A-Z][A-Za-z]+", c)}
+    stem = os.path.splitext(name)[0]
+    return [t for t in stem.split("-")
+            if len(t) >= 4 and t.isalpha()
+            and t not in proper and not _known(t, words)]
+
+
 def dedupe(suggestions: dict) -> None:
     """Ensure suggested names are unique within a section (mutates in place)."""
     by_section_name: dict = defaultdict(list)
@@ -477,8 +556,11 @@ def write_report(records: dict, report_path: Path = REPORT_MD):
     for r in rows:
         score, shared = caption_relevance(r["suggested"], r["contexts"])
         r["relevance"], r["relevance_shared"] = score, shared
+        # only check names that will actually be applied (orphans get deleted)
+        r["suspect_words"] = suspect_words(r["suggested"], r["contexts"]) if r["locations"] else []
     low = [r for r in rows
            if r["relevance"] is not None and r["relevance"] < RELEVANCE_THRESHOLD]
+    misspelled = [r for r in rows if r["suspect_words"]]
 
     with report_path.open("w", encoding="utf-8") as f:
         f.write("# Image rename report\n\n")
@@ -486,9 +568,18 @@ def write_report(records: dict, report_path: Path = REPORT_MD):
         unused = [r for r in rows if r["uses"] == 0]
         f.write(f"- Referenced at least once: **{len(rows) - len(unused)}**\n")
         f.write(f"- Never referenced (orphans): **{len(unused)}**\n")
-        f.write(f"- Names with weak caption relevance (review these): **{len(low)}**\n\n")
+        f.write(f"- Names with weak caption relevance (review these): **{len(low)}**\n")
+        f.write(f"- Names with a possibly-misspelled word (review these): **{len(misspelled)}**\n\n")
         f.write("Review the suggested names, edit `image-rename-mapping.csv`, "
                 "then run `python3 scripts/rename_images.py --apply`.\n\n")
+
+        if misspelled:
+            f.write("## ⚠ Proposed names with a possible misspelling\n\n")
+            f.write("Heuristic spell-check (often a typo carried over from the caption) — "
+                    "fix `proposed_name` in the CSV if needed.\n\n")
+            for r in misspelled:
+                f.write(f"- `{r['suggested']}` — suspect: {', '.join(r['suspect_words'])}\n")
+            f.write("\n")
 
         if low:
             f.write("## ⚠ Proposed names to double-check (low caption overlap)\n\n")
@@ -507,6 +598,8 @@ def write_report(records: dict, report_path: Path = REPORT_MD):
             if r["relevance"] is not None:
                 flag = " ⚠ review" if r["relevance"] < RELEVANCE_THRESHOLD else ""
                 f.write(f"- **Caption relevance:** {r['relevance']:.0%}{flag}\n")
+            if r["suspect_words"]:
+                f.write(f"- **Possible misspelling:** {', '.join(r['suspect_words'])} ⚠ review\n")
             if r["locations"]:
                 f.write("- **Appears in:**\n")
                 for loc in r["locations"]:
@@ -522,7 +615,7 @@ def write_report(records: dict, report_path: Path = REPORT_MD):
                 f.write(f"- **Depicts (from image analysis):** \"{r['vision_description']}\"\n")
             f.write("\n")
     print(f"  report  -> {report_path}")
-    return low
+    return low, misspelled
 
 
 def write_csv(records: dict, csv_path: Path = MAPPING_CSV):
@@ -718,11 +811,14 @@ def main():
     csv_path = Path(args.csv)
     # keep the default report name, but for a custom --csv put the report beside it
     report_path = REPORT_MD if csv_path == MAPPING_CSV else csv_path.with_name(csv_path.stem + "-report.md")
-    low = write_report(records, report_path)
+    low, misspelled = write_report(records, report_path)
     write_csv(records, csv_path)
     if low:
         print(f"{len(low)} proposed name(s) have weak caption relevance — "
               f"see the '⚠ Proposed names to double-check' section of the report.")
+    if misspelled:
+        print(f"{len(misspelled)} proposed name(s) have a possible misspelling — "
+              f"see the '⚠ Proposed names with a possible misspelling' section of the report.")
     print("\nReview the report/CSV, then run:"
           "\n  python3 scripts/rename_images.py --apply --delete-orphans")
 
