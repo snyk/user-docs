@@ -74,7 +74,7 @@ python3 scripts/rename_images.py --apply --delete-orphans
 | `current_name` | Its current filename. |
 | `proposed_name` | Suggested descriptive name (**edit this** to override). |
 | `used_on_n_pages` | Number of distinct pages that reference it (`0` = orphan). |
-| `source_captions` | The captions/alt text the name was derived from. |
+| `source_captions` | The caption/alt text the name was derived from (the dominant one, for readability). |
 
 To **keep** an image the report wants to rename or delete, edit its `proposed_name` (or delete its row) before `--apply`.
 

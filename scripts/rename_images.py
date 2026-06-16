@@ -536,15 +536,21 @@ def write_csv(records: dict, csv_path: Path = MAPPING_CSV):
             "used_on_n_pages", "source_captions",
         ])
         for r in rows:
-            captions = list(dict.fromkeys(c for c in r["contexts"] if c))  # unique, ordered
-            if not captions and r.get("vision_description"):
-                captions = [f"(image analysis) {r['vision_description']}"]
+            # Keep it concise: show the single caption the name was derived from
+            # (the most common one), not every caption the image ever had.
+            present = [c for c in r["contexts"] if c]
+            if present:
+                source_caption = Counter(present).most_common(1)[0][0]
+            elif r.get("vision_description"):
+                source_caption = f"(image analysis) {r['vision_description']}"
+            else:
+                source_caption = ""
             w.writerow([
                 str(r["path"].relative_to(REPO_ROOT)),
                 r["old_name"],
                 r["suggested"],
                 len(r["locations"]),
-                " | ".join(captions),
+                source_caption,
             ])
     print(f"  mapping -> {csv_path}")
 
