@@ -124,9 +124,6 @@ To enable Automatic Upgrade PRs across an entire Organization, follow these step
    * **Maximum number of open upgrade PRs allowed** – define how many open Snyk PRs (fix, upgrade, and backlog) a Project can have to also receive a dependency upgrade PR; the maximum is ten. When the limit of the open PRs is reached, no new upgrade PRs are created.
    * **Include major version in upgrade recommendation** – select whether to include major version upgrades in the recommendations. By default, only patches and minor versions are included in the upgrade recommendations.
    * **Dependencies to ignore** – enter the exact name of the dependencies that should not be included in the **Automatic upgrade** operation. You can only enter lowercase letters.
-
-<figure><img src="../../../.gitbook/assets/image (163).png" alt="Enabling Automatic dependency upgrade PFs"><figcaption><p>Enabling Automatic dependency upgrade PFs</p></figcaption></figure>
-
 5. To save and apply your changes, click one of the following from the **Save** dropdown:
    * **Save** – your changes are saved and will be applied to all the Projects in the Organization that are configured to inherit these Settings from the Organization. Projects that have Custom Settings will not be influenced by this change.
    * **Save changes and apply to all overridden Projects** – your changes are saved and will be applied to all the Projects in the Organization. Projects that have Custom Settings will inherit these Organization Settings, and their Custom Settings will be overridden.
