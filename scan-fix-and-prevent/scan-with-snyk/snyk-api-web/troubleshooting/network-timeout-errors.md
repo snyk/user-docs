@@ -16,7 +16,7 @@ There are several reasons why this might be happening:
 
 ## Resolution
 
-The best solution to fix this issue is to allow the outbound IP addresses of Snyk API & Web to freely access your target by adding them to your infrastructure allowlists. All updated addresses are available in [Scanner outgoing IP addresses](../../../snyk-api-web/configure-targets/scanner-outgoing-ip-addresses.md). Some allowlisting examples are provided in [Configure Snyk API & Web IPs in WAFs](../../../snyk-api-web/troubleshooting/configure-snyk-api-web-ips-in-wafs.md).
+The best solution to fix this issue is to allow the outbound IP addresses of Snyk API & Web to freely access your target by adding them to your infrastructure allowlists. All updated addresses are available in [Scanner outgoing IP addresses](../start-scanning/overview-scan-access-and-connectivity/scanner-ip-address.md). Some allowlisting examples are provided in [Configure Snyk API & Web IPs in WAFs](../start-scanning/overview-scan-access-and-connectivity/configure-ips-in-wafs.md).
 
 If you have any geo-location restriction in place, allow Ireland (possibly the EU) since it is where the servers are located.
 

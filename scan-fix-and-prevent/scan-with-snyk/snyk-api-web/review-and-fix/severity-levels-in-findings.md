@@ -23,4 +23,4 @@ The following table describes the different severity levels.
 
 ## Related information
 
-Visit [Interpret target scan results](../../../snyk-api-web/start-scanning/interpret-target-scan-results.md) for more information about findings.
+Visit [Interpret target scan results](interpret-target-scan-results.md) for more information about findings.

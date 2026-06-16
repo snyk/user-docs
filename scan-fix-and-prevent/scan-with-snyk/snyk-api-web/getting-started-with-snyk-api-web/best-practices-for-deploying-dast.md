@@ -48,7 +48,7 @@ Many applications restrict access to authenticated users only. Configuring authe
 
 Use dedicated test credentials to prevent mixing test activities with real user data.
 
-To learn more about authentication configuration, see [Configure authentication](../../../snyk-api-web/configure-targets/configure-authentication.md).
+To learn more about authentication configuration, see [Configure authentication](../configure-targets/configure-authentication/README.md).
 
 ## Exclude features that trigger external actions
 
