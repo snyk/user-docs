@@ -35,7 +35,7 @@ After creating your account, Snyk API & Web displays [best practices for deployi
    * **Target name**: Enter a descriptive name (for example, "Example")
    * **Target URL**: Enter the URL to scan (for example, `https://example.com`)
 5. When you add a target, Snyk API & Web verifies that you own the domain. Snyk API & Web performs extensive security tests that can appear as malicious attacks. Domain verification proves that you own the domain and are authorized to run security tests.
-   1. The onboarding flow automatically verifies ownership when possible. If automatic verification is not available, you must prove ownership manually through the guided process. Alternatively, you can install a scanning agent to reach internal targets. For more information, see how to [verify domain ownership](../configure-targets/verify-domain-ownership/) and [how to install a scanning agent](../../../snyk-api-web/start-scanning/how-to-install-a-scanning-agent.md).
+   1. The onboarding flow automatically verifies ownership when possible. If automatic verification is not available, you must prove ownership manually through the guided process. Alternatively, you can install a scanning agent to reach internal targets. For more information, see how to [verify domain ownership](../configure-targets/verify-domain-ownership/README.md) and [how to install a scanning agent](../start-scanning/overview-scanning-agent/install-scanning-agent.md).
 6. Click **Next** after configuring domain verification or the scanning agent.
 7. Click **Scan** to start scanning your target.
 8. A success page confirms that your scan has started.

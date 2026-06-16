@@ -27,4 +27,4 @@ In Snyk API & Web, you can configure custom headers at the **Target** level. Thi
    * Choose whether to test this header during the scan. When unchecked (default), the header is sent as-is with every request but is not tested for vulnerabilities. When checked, the scanner also treats the header value as an attack surface and runs security checks against it.
 5. Click **Add** to save the custom header.
 
-You can also set up static custom headers for authentication purposes. Visit the [authentication documentation](../../../../snyk-api-web/configure-targets/configure-authentication.md) for more details.
+You can also set up static custom headers for authentication purposes. Visit the [authentication documentation](../../configure-targets/configure-authentication/README.md) for more details.

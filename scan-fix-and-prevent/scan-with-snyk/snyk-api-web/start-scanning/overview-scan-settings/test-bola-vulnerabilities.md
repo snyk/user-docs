@@ -45,5 +45,5 @@ Ideally, the first user has multiple and varied private resources, so attempts b
 
 ## Related content
 
-* [Configure OpenAPI authentication](../../../../snyk-api-web/start-scanning/scan-settings/configure-openapi-authentication.md)
+* [Configure OpenAPI authentication](../../configure-targets/configure-authentication/configure-openapi-authentication.md)
 * [Configure GraphQL authentication](../../configure-targets/configure-authentication/configure-graphql-authentication.md)
