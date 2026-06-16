@@ -14,7 +14,7 @@ Keeping dependencies up-to-date is crucial for security, performance, and compat
 
 If you use Snyk to update your open source and private dependencies, you can keep your Projects up to date with minimal manual intervention, reduce the risk of security vulnerabilities, and improve the overall quality of the software. More than that, you'll always be aware of newer versions for the packages you use and make progressive effort to use the latest ones, in advance to when such upgrades become a non negotiable.
 
-Snyk includes breakability risk levels in the pull request description and posts a follow-up comment with a more detailed analysis to help you assess whether an upgrade is safe to merge. For risk level definitions, feedback, and broker configuration, see [Breakability risk levels](breakability-risk-levels.md).
+Snyk includes breakability risk levels in the pull request description and posts a detailed analysis in a follow-up comment. This helps you assess if an upgrade is safe to merge. For risk level definitions, feedback, and broker configuration, visit [Breakability risk levels](breakability-risk-levels.md).
 
 ## Defining automatic upgrade PRs
 
