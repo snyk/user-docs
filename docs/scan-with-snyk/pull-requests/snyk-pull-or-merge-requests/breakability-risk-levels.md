@@ -17,16 +17,14 @@ With breakability analysis, Snyk sends package information to a Large Language M
 Ensure to review AI-generated content for accuracy before use.
 {% endhint %}
 
-## How breakability appears in pull requests
+## ## View breakability in pull requests
 
-When Snyk opens a pull request for a dependency upgrade, breakability analysis is surfaced in two places:
+Snyk displays breakability analysis in two locations within pull requests for dependency upgrades:
 
-* **Pull request description**: the PR description includes the breakability risk level so you can assess the upgrade at a glance.
-* **Pull request comment**: Snyk also posts a comment on the newly opened PR with the risk level and a more detailed summary. This comment may appear shortly after the PR is created. The summary explains relevant details about the risk, such as which breaking changes may be introduced by the upgrade.
+*   Pull request description: View the breakability risk level for a quick upgrade assessment.
+*   Pull request comment: Snyk posts a comment on the new PR with the risk level and a detailed summary of potential breaking changes. This comment appears shortly after PR creation.
 
-## Provide feedback on breakability analysis
-
-You can help improve breakability analysis by reacting to the breakability comment on your pull request. Add a 👍 or 👎 reaction to indicate whether the assessment was helpful. Snyk uses this feedback to improve the quality of future breakability analysis.
+Improve breakability analysis by reacting to the breakability comment on your pull request. Add a reaction to indicate if the assessment is helpful. Snyk uses this feedback to improve future breakability analysis.
 
 ## Risk level definitions and actions
 
