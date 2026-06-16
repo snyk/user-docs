@@ -1,3 +1,16 @@
+## 2026-03-25 - Updated 2026-06-16
+
+### PATCH - `/orgs/{org_id}/settings/opensource/{ecosystem}/broker` - Updated
+- added the new `github-server-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github-server-app` enum value to the request property `data/integrations/items/integration_type`
+
+
+
+### GET - `/orgs/{org_id}/settings/opensource/{ecosystem}/broker` - Updated
+- added the new `github-server-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2026-03-25 - Updated 2026-06-12
 
 ### PATCH - `/orgs/{org_id}/settings/opensource/{ecosystem}/private-registries` - Updated
