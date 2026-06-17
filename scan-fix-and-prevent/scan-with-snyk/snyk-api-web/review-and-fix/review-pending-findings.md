@@ -1,3 +1,8 @@
+---
+hidden: true
+noIndex: true
+---
+
 # Review pending findings
 
 The self-review feature in Snyk API & Web gives you visibility and control over findings that are in a Pending Review state. This feature allows you to view and act on pending findings immediately, helping you speed up your security reviews and development workflows.
