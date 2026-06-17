@@ -2,9 +2,9 @@
 
 Configure basic authentication to scan targets protected by HTTP Basic Access Authentication.
 
-Basic authentication is a simple authentication scheme built into the HTTP protocol. When you access a protected resource, the browser prompts you with a dialog to sign in.
+Basic authentication is an authentication scheme built into the HTTP protocol. When you access a protected resource, the browser prompts you with a dialog to log in.
 
-This authentication process differs from your application's own authentication system and form-based authentication methods. Basic authentication sends credentials in the HTTP header rather than through form submission.
+This authentication process differs from your application's own authentication system and from form-based authentication methods. Basic authentication sends credentials in the HTTP header rather than through form submission.
 
 ## Set up basic authentication
 
@@ -14,6 +14,6 @@ This authentication process differs from your application's own authentication s
 4. Enter your credentials (username and password).
 5. Click **Save and enable**.
 
-The credentials are saved and basic authentication is enabled. Snyk API & Web will use these credentials to access and scan your protected application.
+Snyk API & Web saves the credentials and enables basic authentication. Snyk uses these credentials to access and scan your protected application.
 
 You can disable or enable basic authentication anytime using the **Off/On** toggle button, or delete the configuration using the **Delete** button.

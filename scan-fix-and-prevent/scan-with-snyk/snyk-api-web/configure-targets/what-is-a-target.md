@@ -12,7 +12,7 @@ Targets define what Snyk API & Web scans. Examples of targets include:
 
 The target URL sets the boundaries for scanning. The scanner only tests URLs that begin with the target base URL and never scans outside this scope.
 
-For example, if the target is `https://example.com`, the scanner will not test `https://www.example.com` or any other hosts. Only URLs prefixed by `example.com` are included in the scan.
+For example, if the target is `https://example.com`, the scanner does not test `https://www.example.com` or any other hosts. The scan includes only URLs prefixed by `example.com`.
 
 ## Organize applications with targets
 
@@ -29,11 +29,11 @@ Snyk API & Web supports two types of targets:
 
 ### Web targets
 
-Web targets enable full security scans of web applications, including single-page applications and web applications that interact with APIs. Choose this option to assess the security of user-facing web interfaces.
+Web targets provide full security scans of web applications, including single-page applications and web applications that interact with APIs. Choose this option to assess the security of user-facing web interfaces.
 
 ### API targets
 
-API targets enable detailed security assessments of standalone APIs without a supporting web application. Choose this option to test REST APIs, GraphQL endpoints, or other API implementations.
+API targets provide detailed security assessments of standalone APIs without a supporting web application. Choose this option to test REST APIs, GraphQL endpoints, or other API implementations.
 
 To scan an API, Snyk API & Web needs the API specification (schema). Define the schema with a URL pointing to the schema file, upload it directly, or use schema introspection for GraphQL. When you select URL or introspection, Snyk API & Web fetches the schema before every scan, ensuring the most up-to-date version.
 

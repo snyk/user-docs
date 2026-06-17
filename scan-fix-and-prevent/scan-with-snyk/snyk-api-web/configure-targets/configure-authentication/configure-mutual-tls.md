@@ -2,7 +2,7 @@
 
 Configure mutual TLS (mTLS) authentication for targets that require client-side certificates.
 
-Unlike standard TLS which only authenticates the server, mutual TLS is an enhanced security protocol where both the client and server authenticate using digital certificates.
+Unlike standard TLS, which authenticates only the server, mutual TLS is an enhanced security protocol where both the client and server authenticate using digital certificates.
 
 ## Prerequisites
 
@@ -22,11 +22,11 @@ Unlike standard TLS which only authenticates the server, mutual TLS is an enhanc
 
 ## Verify the configuration
 
-After saving the configuration, mutual TLS authentication is enabled. The next scan against this target automatically uses the configured mTLS certificates.
+After you save the configuration, mutual TLS authentication is enabled. The next scan against this target automatically uses the configured mTLS certificates.
 
 <figure><img src="../../../../.gitbook/assets/configure-mutual-tls-enabled.png" alt="Mutual TLS authentication enabled state"><figcaption></figcaption></figure>
 
-**Important**: For your security, all sensitive fields (certificates and passwords) are obfuscated after saving and cannot be viewed or retrieved again.
+Important: For your security, Snyk obfuscates all sensitive fields (certificates and passwords) after saving. You cannot view or retrieve them again.
 
 ## Manage the configuration
 

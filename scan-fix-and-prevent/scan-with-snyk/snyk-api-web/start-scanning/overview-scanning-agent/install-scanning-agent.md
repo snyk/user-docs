@@ -2,7 +2,7 @@
 
 Install a Scanning Agent to scan your internal applications with minimal changes to network and security configurations.
 
-The Scanning Agent allows you to scan internal applications without exposing them to the internet. For more information about how the Scanning Agent works, see [Scan internal applications with a Scanning Agent](scan-internal-applications.md).
+The Scanning Agent lets you scan internal applications without exposing them to the internet. For more information about how the Scanning Agent works, visit [Scan internal applications with a Scanning Agent](scan-internal-applications.md).
 
 Installing the Scanning Agent involves the following steps:
 
@@ -11,10 +11,10 @@ Installing the Scanning Agent involves the following steps:
 
 ## Prerequisites
 
-Before you begin, ensure you have the following:
+Ensure you have the following before you begin:
 
 * An active Snyk API & Web account with permissions to create Scanning Agents.
-* The minimal system resources and specific network requirements as listed in the [Farcaster Agent GitHub Repository README](https://github.com/Probely/farcaster-onprem-agent/blob/main/README.md).
+* The minimal system resources and specific network requirements listed in the [Farcaster Agent GitHub Repository README](https://github.com/Probely/farcaster-onprem-agent/blob/main/README.md).
 
 ## Create the Scanning Agent Token
 
@@ -23,14 +23,14 @@ To create the Scanning Agent Token in your Snyk API & Web account:
 1. Open the **Settings** dropdown menu in the bottom-left corner of the navigation bar and select **Scanning Agents**. If you cannot see this option, contact your account owner.
 2. Click **Add Agent**.
    1. Type the name of the Scanning Agent.
-   2. If the Scanning Agent is restricted to targets of some teams, select the checkbox and choose those teams from the dropdown.
+   2. If the Scanning Agent is restricted to targets of some teams, select the check box and choose those teams from the dropdown.
 3. Click **Generate**.
 
 <figure><img src="../../../../.gitbook/assets/install-scanning-agent-add-agent-dialog.png" alt="Add Scanning Agent dialog showing agent token and installation options"><figcaption></figcaption></figure>
 
-1. A pop-up window displays important information that, for security reasons, will not appear again. Make sure you do the following:
+1. A pop-up window displays important information that, for security reasons, does not appear again. Do the following:
    * Under **AGENT TOKEN**, copy and save the token securely.
-   * Under **Installation**, go to the tabs for the way you want to install the agent:
+   * Under **Installation**, navigate to the tabs for the way you want to install the agent:
      * **DOCKER** - To use Docker, copy and save securely the following:
        1. The Docker command to install the agent.
        2. The Docker command to check the agent logs.
@@ -50,7 +50,7 @@ You can install the agent using Docker, Docker-Compose, Kubernetes, Windows, or 
 
 ### Example: Install the agent using Docker on Linux
 
-Before installing the agent container on a Linux system, you can check that your host can run it by executing the following command:
+Before installing the agent container on a Linux system, you can check that your host can run it by running the following command:
 
 ```bash
 curl -LO https://raw.githubusercontent.com/Probely/farcaster-onprem-agent/main/farconn/host-check.sh
@@ -67,13 +67,13 @@ Launching test container...                                     [ok]
 
 1. Use the Docker command from the token creation step to install the agent.
    1. Depending on your network configuration, you might need to set additional environment variables. See the list of [configuration options](https://github.com/Probely/farcaster-onprem-agent/blob/main/README.md#configuration-options) in the GitHub repository.
-2. After starting the Agent, it should connect to Snyk API & Web. Run the command you saved from the token creation step to check that the Agent connected successfully:
+2. After starting the agent, it connects to Snyk API & Web. Run the command you saved from the token creation step to check that the agent connected successfully:
 
 ```bash
 docker logs -f probely-agent
 ```
 
-If everything is running correctly, you should see output similar to:
+If everything is running correctly, you see output similar to:
 
 ```
 Downloading agent configuration ... done
@@ -87,7 +87,7 @@ Starting WireGuard gateway      ... done
 Running...
 ```
 
-Once up and running, you can set the Scanning Agent in your targets as described in [Scan internal applications with a Scanning Agent](scan-internal-applications.md), and run scans on those targets to scan your internal applications.
+After the agent is up and running, you can set the Scanning Agent in your targets as described in [Scan internal applications with a Scanning Agent](scan-internal-applications.md), and run scans on those targets to scan your internal applications.
 
 ## Troubleshooting
 

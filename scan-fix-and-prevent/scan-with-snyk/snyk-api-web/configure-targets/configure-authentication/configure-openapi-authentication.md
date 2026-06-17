@@ -2,7 +2,7 @@
 
 Configure authentication to scan an API using an OpenAPI schema.
 
-If you have an OpenAPI schema for an API with authentication, Snyk API & Web can be configured to run authenticated requests and scan the API endpoints.
+If you have an OpenAPI schema for an API with authentication, you can configure Snyk API & Web to run authenticated requests and scan the API endpoints.
 
 After adding an API target, configure authentication using one of these scenarios:
 
@@ -27,10 +27,10 @@ This authentication pattern is common on APIs that support web applications: the
       * `application/x-www-form-urlencoded`: Key-value pairs separated by ampersands (for example, `username=admin&password=pass123`)
    2. **LOGIN URL**: Enter the authentication URL.
    3. **AUTHENTICATION PAYLOAD**: Enter the authentication content to send in the POST request payload to the login URL.
-4. Click **Fetch** to authenticate. The **TOKEN SELECTOR** field populates with fields obtained from the authentication response. If authentication fails, an error is displayed.
+4. Click **Fetch** to authenticate. The **TOKEN SELECTOR** field populates with fields from the authentication response. If authentication fails, Snyk displays an error.
 5. In the **TOKEN SELECTOR**, choose the field that contains the authentication token.
 6. In **PLACE TOKEN IN**, choose where to place the token in API requests (usually **header**, but **cookie** is also available).
-7. In **FIELD NAME**, enter the name of the field in the header or cookie that will hold the token.
+7. In **FIELD NAME**, enter the name of the field in the header or cookie that holds the token.
 8. (Optional) Set a **VALUE PREFIX** for the token value. This is often needed for JWTs. For example, if your API requires a header like `Authorization: JWT <token>`, configure:
    * **FIELD NAME**: `Authorization`
    * **VALUE PREFIX**: `JWT`

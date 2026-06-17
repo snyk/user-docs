@@ -2,33 +2,33 @@
 
 Automate the extraction of one-time passwords (OTPs) from email and send them to Snyk API & Web for two-factor authentication.
 
-When using alternative OTP for two-factor authentication, you need to send the OTP code to Snyk API & Web during scans. You can automate this process by creating scripts that monitor your email, extract the OTP, and submit it via the Snyk API & Web API.
+When using alternative OTP for two-factor authentication, you must send the OTP code to Snyk during scans. You can automate this process by creating scripts that monitor your email, extract the OTP, and submit it using the Snyk API.
 
 This article provides examples for automating OTP extraction using:
 
 * Google Apps Script (for Gmail)
 * Microsoft Power Automate (for Outlook)
 
-## Before you begin
+## Prerequisites
 
-Ensure you have configured alternative OTP two-factor authentication for your target. Visit [Configure two-factor authentication (2FA)](configure-two-factor-authentication.md) for setup instructions.
+Configure alternative OTP two-factor authentication for your target before proceeding. Visit [Configure two-factor authentication (2FA)](configure-two-factor-authentication.md) for setup instructions.
 
-You will need the **UNIQUE 2FA CONFIGURATION URL** from your target's Authentication settings.
+You need the **UNIQUE 2FA CONFIGURATION URL** from the Authentication settings of your target.
 
 ## Automate OTP extraction from Gmail
 
 Use Google Apps Script to automate OTP extraction from Gmail accounts.
 
-The script polls emails from the Gmail account, extracts the OTP using a regular expression, and sends it to Snyk API & Web via the API endpoint.
+The script polls emails from the Gmail account, extracts the OTP using a regular expression, and sends it to Snyk through the API endpoint.
 
 ### Create the Google Apps Script
 
-1. Navigate to [https://script.google.com](https://script.google.com) and sign in with the Gmail account that receives OTP emails.
+1. Navigate to [https://script.google.com](https://script.google.com) and log in with the Gmail account that receives OTP emails.
 2. Select **My Projects** and click **CREATE APPS SCRIPT**.
 
 <figure><img src="../../../../.gitbook/assets/configure-two-factor-authentication-otp-gmail-create.png" alt="Create Apps Script in Google Script"><figcaption></figcaption></figure>
 
-3. Click on the project name "Untitled Project" at the top and enter a meaningful name (for example, "Extract OTPs from Email").
+3. Click the project name "Untitled Project" at the top and enter a meaningful name (for example, "Extract OTPs from Email").
 
 <figure><img src="../../../../.gitbook/assets/configure-two-factor-authentication-otp-gmail-name.png" alt="Name the Google Apps Script project"><figcaption></figcaption></figure>
 
@@ -119,7 +119,7 @@ Customize the **runTask** function with your specific configuration:
 
 **API\_ENDPOINT**
 
-Replace `<UNIQUE 2FA CONFIGURATION URL>` with the URL provided by Snyk API & Web in your target's Authentication settings.
+Replace `<UNIQUE 2FA CONFIGURATION URL>` with the URL that Snyk provides in the Authentication settings of your target.
 
 **SUBJECT\_MATCH**
 
@@ -188,15 +188,13 @@ The trigger executes the **extractOTPFunction** every minute, which runs the **r
 
 Use Microsoft Power Automate to automate OTP extraction from Outlook email accounts.
 
-This flow retrieves an OTP from an email and sends it to Snyk API & Web via the API endpoint.
+This flow retrieves an OTP from an email and sends it to Snyk through the API endpoint.
 
 ### Prerequisites
 
-Before you begin:
-
 * Access to Power Automate (Premium license required for HTTP POST calls)
 * An email account configured in Power Automate that receives OTP emails
-* The **UNIQUE 2FA CONFIGURATION URL** from your target's Authentication settings (see [Configure two-factor authentication (2FA)](configure-two-factor-authentication.md))
+* The **UNIQUE 2FA CONFIGURATION URL** from the Authentication settings of your target. Visit [Configure two-factor authentication (2FA)](configure-two-factor-authentication.md).
 
 ### Create a new automated cloud flow
 
@@ -250,7 +248,7 @@ Configure an HTTP action to send the extracted OTP to Snyk API & Web:
 3. Configure the HTTP action:
 
 * **Method**: Select **POST**
-* **URI**: Enter the **UNIQUE 2FA CONFIGURATION URL** from your target's Authentication settings
+* **URI**: Enter the **UNIQUE 2FA CONFIGURATION URL** from the Authentication settings of your target
 * **Headers**: Add a header with:
   * Name: `Content-Type`
   * Value: `application/json`
@@ -274,9 +272,9 @@ Configure an HTTP action to send the extracted OTP to Snyk API & Web:
 
 ### Troubleshooting
 
-**Email filtering**: Double-check your subject filters and email criteria to ensure the flow is triggered by the correct emails.
+Email filtering: Double-check your subject filters and email criteria to ensure the correct emails trigger the flow.
 
-**OTP extraction**: Use the "Test Flow" feature in Power Automate with actual email content to debug your OTP extraction expression. Inspect the outputs of each step to see what data is being processed.
+OTP extraction: Use the "Test Flow" feature in Power Automate with actual email content to debug your OTP extraction expression. Inspect the outputs of each step to see which data Power Automate processes.
 
 ## Related content
 

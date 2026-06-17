@@ -1,14 +1,14 @@
 # Custom headers
 
-When performing a dynamic application security testing (DAST) scan, your scanner acts like an automated user, navigating your site and testing for vulnerabilities. However, modern security infrastructures (like Web Application Firewalls) or complex authentication requirements can often block these automated requests unless they are properly identified.
+When performing a dynamic application security testing (DAST) scan, your scanner acts like an automated user, navigating your site and testing for vulnerabilities. However, modern security infrastructures (such as Web Application Firewalls) or complex authentication requirements can block these automated requests unless they are properly identified.
 
-This guide explains why you need custom headers and how to set them up in Snyk API & Web.
+This page explains why you need custom headers and how to set them up in Snyk API & Web.
 
 ## What are custom headers used for?
 
 In a DAST scan, custom headers serve three primary purposes:
 
-1. **Identifying requests** - Because all requests include the defined custom headers, this can be used for many things, such as bypassing Web Application Firewalls. By adding a unique custom header (for example, `X-SnykApiWeb-Scan: true`), you can tell your Web Application Firewall to allow the scanner's traffic while still protecting the site from actual malicious bots.
+1. **Identifying requests** - Because all requests include the defined custom headers, you can use them for many purposes, such as bypassing Web Application Firewalls. By adding a unique custom header (for example, `X-SnykApiWeb-Scan: true`), you can tell your Web Application Firewall to allow the scanner's traffic while still protecting the site from malicious bots.
 2. **Authentication and authorization** - Some APIs require specific headers for every request to prove identity, such as `Authorization: Bearer <token>` or custom API keys.
 3. **Environment signaling** - You can use headers to trigger specific behaviors in your application during a scan, such as disabling certain checks like CAPTCHAs or preventing the app from sending real emails during the test.
 
@@ -24,7 +24,7 @@ In Snyk API & Web, you can configure custom headers at the **Target** level. Thi
 4. Locate the **CUSTOM HEADERS** module:
    * Enter the custom header name (for example, `X-Scan-Origin`).
    * Enter the corresponding value (for example, `Snyk-DAST-Scanner`).
-   * Choose whether to test this header during the scan. When unchecked (default), the header is sent as-is with every request but is not tested for vulnerabilities. When checked, the scanner also treats the header value as an attack surface and runs security checks against it.
+   * Choose whether to test this header during the scan. When the check box is clear (default), the scanner sends the header as-is with every request but does not test it for vulnerabilities. When the check box is selected, the scanner also treats the header value as an attack surface and runs security checks against it.
 5. Click **Add** to save the custom header.
 
 You can also set up static custom headers for authentication purposes. Visit the [authentication documentation](../../configure-targets/configure-authentication/README.md) for more details.

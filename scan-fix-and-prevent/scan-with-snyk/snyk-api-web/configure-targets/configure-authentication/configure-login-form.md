@@ -2,9 +2,9 @@
 
 Configure login form authentication to scan protected areas of your web application that require a username and password login.
 
-Websites and applications can have restricted areas available only to authenticated users. Configuring authentication allows Snyk API & Web to access these protected areas and identify vulnerabilities within the full scope of your target.
+Websites and applications can have restricted areas available only to authenticated users. Configuring authentication lets Snyk API & Web access these protected areas and identify vulnerabilities within the full scope of your target.
 
-Create a dedicated user account for testing rather than using a real user account. Snyk API & Web submits forms and clicks buttons during scans, which might create unwanted data in the account.
+Create a dedicated user account for testing rather than using a real user account. Snyk submits forms and clicks buttons during scans, which can create unwanted data in the account.
 
 ## Prerequisites
 
@@ -67,7 +67,7 @@ If your login form requires additional fields beyond username and password, repe
 
 ## Add submit button (optional)
 
-In most cases, Snyk API & Web automatically detects and clicks the correct submit button. However, you may need to specify the submit button if:
+In most cases, Snyk automatically detects and clicks the correct submit button. However, you might need to specify the submit button if:
 
 * The submit button is outside the `<form>` tag
 * The login inputs are not inside a `<form>` tag

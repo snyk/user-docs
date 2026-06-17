@@ -37,7 +37,7 @@ DNS records can take time to propagate across all DNS servers. If verification f
 
 ### CNAME limitations
 
-If your domain FQDN is a CNAME record, this verification method will not work due to DNS limitations. CNAMEs cannot have TXT records.
+If your domain FQDN is a CNAME record, this verification method does not work because of DNS limitations. CNAMEs cannot have TXT records.
 
 Use one of these alternative methods instead:
 - [TXT file verification](verify-with-txt-file.md)

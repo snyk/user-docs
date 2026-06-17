@@ -6,7 +6,7 @@ A login sequence handles authentication processes that cannot be managed by simp
 
 Snyk API & Web replays the recorded sequence during scans to authenticate successfully and access protected areas of your application.
 
-Create a dedicated user account for testing rather than using a real user account. Snyk API & Web submits forms and clicks buttons during scans, which might create unwanted data in the account.
+Create a dedicated user account for testing rather than using a real user account. Snyk submits forms and clicks buttons during scans, which can create unwanted data in the account.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ Create a dedicated user account for testing rather than using a real user accoun
 1. From the **Targets** page, locate your target in the list.
 2. Click the **gear icon** to access the target settings.
 3. Select the **Authentication** tab.
-4. Click the **Login Sequence** radio button to display the configuration form.
+4. Select the **Login Sequence** radio button to display the configuration form.
 5. In the configuration form, click **Add Login Sequence**.
 6. Enter a name for the sequence.
 7. Provide the recorded login sequence using one of these methods:
@@ -39,14 +39,14 @@ If you have not recorded a login sequence yet, follow these steps using the Snyk
 5. Perform all steps to reach the login page:
    * If the target automatically redirects you to the login page, wait for the redirect
    * If you need to navigate to the login page, perform those navigation steps
-6. Once on the login page, complete the login process:
+6. After you reach the login page, complete the login process:
    * Enter all credentials manually (do not use browser-saved values)
    * Click all necessary buttons to complete the login
 7. Stop recording.
 8. Copy or download the login sequence.
 9. Use the sequence in the target configuration.
 
-**Important:** While recording, use your mouse and keyboard to perform all actions. Type all values manually so the plugin correctly records each action.
+Important: While recording, use your mouse and keyboard to perform all actions. Type all values manually so the plugin correctly records each action.
 
 ## Save and enable
 

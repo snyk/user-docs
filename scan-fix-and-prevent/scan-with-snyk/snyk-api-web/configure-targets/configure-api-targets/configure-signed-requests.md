@@ -18,7 +18,7 @@ Additional requirements:
 
 If your target requires requests to be signed, configure the signature in the target Signature settings.
 
-1. In Snyk API & Web, navigate to the **Targets** page.
+1. In Snyk, navigate to the **Targets** page.
 2. Identify the target you want to configure and click the **gear** icon to access the target settings.
 3. Click the **Signature** tab and identify the **SIGNATURE** module.
 4. Select the **Signature** you want to use and complete the form accordingly.
@@ -28,7 +28,7 @@ If your target requires requests to be signed, configure the signature in the ta
 
 ## Verify signed requests
 
-After you save the configuration, signed requests are enabled. The next time you run a scan against this target, Snyk API & Web automatically uses the configured signature.
+After you save the configuration, signed requests are enabled. The next time you run a scan against this target, Snyk automatically uses the configured signature.
 
 {% hint style="info" %}
 For your security, all sensitive fields (such as certificates and shared secrets) are obfuscated after they are saved and cannot be viewed or retrieved again.
