@@ -12,7 +12,7 @@ Snyk supports scanning methods that correspond to Snyk products. Choose the righ
   For more information, see [Exploring the advanced technologies behind Snyk Code](https://snyk.io/blog/advanced-technologies-behind-snyk-code/).
 * [Snyk Container](scan-with-snyk/snyk-container/): scan for container image and workload vulnerabilities.
 * [Snyk Infrastructure as Code: ](scan-with-snyk/snyk-iac/)scan for issues in your cloud infrastructure configurations, before and after deployment.
-* [Snyk API & Web](https://snyk.io/product/dast-api-web/): discover and test the security of all your APIs and web apps, including those AI-generated. See [Snyk API & Web Help Center](https://help.probely.com/en/) and [Snyk API & Web Developers documentation](https://developers.probely.com/).
+* [Snyk API & Web](https://snyk.io/product/dast-api-web/): discover and test the security of all your APIs and web apps, including those AI-generated. See [Snyk API & Web Docs](./scan-with-snyk/snyk-api-web/README.md) and [Snyk API & Web Developers documentation](https://developers.probely.com/).
 
 ## Run pull request checks
 
