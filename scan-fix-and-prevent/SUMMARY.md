@@ -230,7 +230,6 @@
     * [Ignore unmanaged resources](scan-with-snyk/snyk-iac/detect-manually-created-resources/ignore-unmanaged-resources.md)
     * [IAC sources usage](scan-with-snyk/snyk-iac/detect-manually-created-resources/iac-sources-usage.md)
 * [Snyk Essentials](scan-with-snyk/snyk-essentials.md)
-* [Snyk API & Web](https://help.probely.com/en/)
 * [Snyk API & Web](scan-with-snyk/snyk-api-web/README.md)
   * [Getting started with Snyk API & Web](scan-with-snyk/snyk-api-web/getting-started-with-snyk-api-web/README.md)
     * [Best practices for deploying DAST](scan-with-snyk/snyk-api-web/getting-started-with-snyk-api-web/best-practices-for-deploying-dast.md)

@@ -1,8 +1,3 @@
----
-if: visitor.claims.unsigned['mVN8RgcD'] === 'FQvidlGq'
-noIndex: true
----
-
 # Snyk API & Web
 
 Snyk API & Web is a cloud-based dynamic application security testing (DAST) solution that identifies security vulnerabilities in your running web applications and APIs. Snyk API & Web simulates real-world attacks against your deployed applications to discover security issues before attackers can exploit them.
