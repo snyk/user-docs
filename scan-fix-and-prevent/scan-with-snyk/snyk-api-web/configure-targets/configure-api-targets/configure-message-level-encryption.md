@@ -1,8 +1,3 @@
----
-hidden: true
-noIndex: true
----
-
 # Configure message level encryption
 
 Configure message level encryption to provide enhanced end-to-end security for API targets in Snyk API & Web.

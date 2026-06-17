@@ -298,7 +298,6 @@
     * [Finding states](scan-with-snyk/snyk-api-web/review-and-fix/finding-states.md)
     * [Manage findings](scan-with-snyk/snyk-api-web/review-and-fix/manage-findings.md)
     * [Invalid findings and false positives](scan-with-snyk/snyk-api-web/review-and-fix/invalid-findings-and-false-positives.md)
-    * [Review pending findings](scan-with-snyk/snyk-api-web/review-and-fix/review-pending-findings.md)
     * [Assign vulnerabilities to team member](scan-with-snyk/snyk-api-web/review-and-fix/assign-vulnerabilities-to-team-member.md)
     * [Review scan login attempts](scan-with-snyk/snyk-api-web/review-and-fix/review-scan-login-attempts.md)
     * [Reports](scan-with-snyk/snyk-api-web/review-and-fix/overview-reports/README.md)
