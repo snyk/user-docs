@@ -354,6 +354,7 @@
       * [Troubleshoot login failed with login sequence](scan-with-snyk/snyk-api-web/troubleshooting/authentication/troubleshooting-login-failed-with-login-sequence.md)
   * [Managing account](scan-with-snyk/snyk-api-web/managing-account/README.md)
     * [Log in to Snyk API & Web](scan-with-snyk/snyk-api-web/managing-account/log-in-to-snyk-api-web.md)
+    * [Add users](scan-with-snyk/snyk-api-web/managing-account/add-users.md)
     * [Get started with teams](scan-with-snyk/snyk-api-web/managing-account/get-started-with-teams.md)
     * [Roles and permissions](scan-with-snyk/snyk-api-web/managing-account/roles-and-permissions.md)
     * [Understanding permissions](scan-with-snyk/snyk-api-web/managing-account/understanding-permissions.md)
