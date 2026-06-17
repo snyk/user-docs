@@ -4,21 +4,21 @@ Include additional domains in the scan scope when your web application uses mult
 
 ## What are extra hosts?
 
-When you add a target, Snyk API & Web only scans pages under that target URL. The scanner does not scan pages from different hostnames unless you explicitly add them as extra hosts.
+When you add a target, Snyk API & Web scans only pages under that target URL. The scanner does not scan pages from different hostnames unless you add them as extra hosts.
 
-This default behavior can present challenges for Single-Page Applications (SPAs) where the front-end is built with JavaScript and the server-side functionality is invoked via an API. In SPAs, APIs are typically hosted under a different subdomain (such as `api.example.com`) while the front-end resides on `app.example.com`. In some cases, the API can be an entirely separate domain.
+This default behavior can present challenges for single-page applications (SPAs) where the front-end is built with JavaScript and the server-side functionality is invoked using an API. In SPAs, APIs are typically hosted under a different subdomain (such as `api.example.com`) while the front-end resides on `app.example.com`. In some cases, the API can be an entirely separate domain.
 
-**Technical behavior:** When you configure extra hosts, Snyk API & Web follows and scans any `XMLHttpRequest` performed to the specified hostnames. If a hostname is in the extra hosts list, the scanner regards it as within the scanning scope and analyzes the API responses for vulnerabilities.
+When you configure extra hosts, Snyk follows and scans any `XMLHttpRequest` performed to the specified hostnames. If a hostname is in the extra hosts list, the scanner regards it as within the scanning scope and analyzes the API responses for vulnerabilities.
 
 ## When to use extra hosts
 
 Use extra hosts when your web application architecture includes:
 
-* **Separate API domains**: Front-end on `app.example.com` accessing an API on `api.example.com`.
-* **Multiple subdomains**: Different subdomains serving various application functions.
-* **Content delivery networks**: Assets served from different domains that need security testing.
+* Separate API domains: front-end on `app.example.com` accessing an API on `api.example.com`.
+* Multiple subdomains: different subdomains serving various application functions.
+* Content delivery networks: assets served from different domains that need security testing.
 
-If Snyk API & Web only scans the front-end domain, it might miss critical security tests in the API that drives much of your application's functionality. Adding extra hosts ensures complete coverage of your application's security surface.
+If Snyk scans only the front-end domain, it can miss critical security tests in the API that drives much of your application's functionality. Adding extra hosts ensures complete coverage of your application's security surface.
 
 ## Add extra hosts
 

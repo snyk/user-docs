@@ -1,23 +1,23 @@
 # Network timeout errors
 
-A very important factor in running successful scans using Snyk API & Web is providing clear access to your target.
+Providing clear access to your target is an important factor in running successful scans using Snyk API & Web.
 
-Having restrictions without allowing the public IP addresses of Snyk API & Web might lead to failed scans, simply because the scanner gets timed out.
+Restrictions that do not allow the public IP addresses of Snyk can lead to failed scans because the scanner times out.
 
 ## Reasons for network timeout errors
 
-There are several reasons why this might be happening:
+This can happen for several reasons:
 
-* Since the outbound IP addresses are from a Cloud provider, and traffic produced by humans is not supposed to come from a Cloud provider, they might be blocked by default on your firewall or WAF.
-* As a result of the intrusive testing during a scan, your WAF might believe it is an attack and block the IP address.
-* You have a plugin (like Jetpack, Sucuri, Fail2Ban, and so on) that can actively filter and block requests.
-* The request load (which can spread to multiple threads, making multiple requests per second) caused your firewall to block the IP to prevent spamming, or the requests could be slowing down your website because of all those requests.
-* A rule configured in your infrastructure might cause the IP to be blocked.
+* The outbound IP addresses come from a cloud provider, and traffic produced by humans is not supposed to come from a cloud provider, so your firewall or WAF can block them by default.
+* During the intrusive testing in a scan, your WAF can interpret the traffic as an attack and block the IP address.
+* You have a plugin (such as Jetpack, Sucuri, or Fail2Ban) that actively filters and blocks requests.
+* The request load can spread across multiple threads, making multiple requests per second. This load can cause your firewall to block the IP to prevent spamming, or it can slow down your website.
+* A rule configured in your infrastructure can cause the IP to be blocked.
 
 ## Resolution
 
-The best solution to fix this issue is to allow the outbound IP addresses of Snyk API & Web to freely access your target by adding them to your infrastructure allowlists. All updated addresses are available in [Scanner outgoing IP addresses](../start-scanning/overview-scan-access-and-connectivity/scanner-ip-address.md). Some allowlisting examples are provided in [Configure Snyk API & Web IPs in WAFs](../start-scanning/overview-scan-access-and-connectivity/configure-ips-in-wafs.md).
+To fix this issue, allow the outbound IP addresses of Snyk to access your target by adding them to your infrastructure allowlists. All updated addresses are available in [Scanner outgoing IP addresses](../start-scanning/overview-scan-access-and-connectivity/scanner-ip-address.md). For allowlisting examples, visit [Configure Snyk API & Web IPs in WAFs](../start-scanning/overview-scan-access-and-connectivity/configure-ips-in-wafs.md).
 
-If you have any geo-location restriction in place, allow Ireland (possibly the EU) since it is where the servers are located.
+If you have any geo-location restriction in place, allow Ireland and the EU, because the servers are located there.
 
-If you believe that the scans are critically detrimental to your website's performance, reach out to Snyk support, and the scanner load will be fine-tuned to accommodate your needs.
+If the scans are critically detrimental to the performance of your website, contact Snyk support to fine-tune the scanner load to your needs.

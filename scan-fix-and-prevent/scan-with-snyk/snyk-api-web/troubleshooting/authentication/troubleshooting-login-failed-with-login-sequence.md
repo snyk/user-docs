@@ -8,7 +8,7 @@ When running scans on a target that uses a login sequence to complete a complex 
 
 ## Troubleshoot the problem
 
-Go through the following step to identify possible causes and solutions.
+Work through the following step to identify possible causes and solutions.
 
 ### Check the login sequence
 
@@ -37,6 +37,6 @@ Check the following causes and solutions:
 | Input fields in the login sequence have incorrect attributes or CSS selectors. | Record a new login sequence and update it in target authentication. Visit [Login sequence](../../configure-targets/configure-authentication/configure-login-sequence.md).                                |
 | Input fields in the login sequence have incorrect values.                      | Record a new login sequence with correct credential values and update it in target authentication. Visit [Login sequence](../../configure-targets/configure-authentication/configure-login-sequence.md). |
 
-After following these steps and applying the solutions, Snyk API & Web should be able to log in to your target.
+After following these steps and applying the solutions, Snyk can log in to your target.
 
 For more information, visit [Configure authentication](../../configure-targets/configure-authentication/).

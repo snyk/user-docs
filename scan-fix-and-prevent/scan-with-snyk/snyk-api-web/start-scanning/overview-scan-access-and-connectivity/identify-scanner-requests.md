@@ -16,4 +16,4 @@ Use this string to identify Snyk API & Web requests. Do not rely on any other in
 
 ## Related information
 
-Another alternative to identify Snyk API & Web requests is through the scanner IP address. For more information, see [Scanner IP address](scanner-ip-address.md).
+You can also identify Snyk requests through the scanner IP address. For more information, visit [Scanner IP address](scanner-ip-address.md).

@@ -18,8 +18,8 @@ In Snyk API & Web, add a domain for asset discovery:
 
 ## Verify the domain
 
-After adding a domain, you must verify it by following the instructions on the screen so the scan is complete. For more information, visit [Verify domain ownership](../configure-targets/verify-domain-ownership/README.md).
+After adding a domain, you must verify it by following the instructions on the screen to complete the scan. For more information, visit [Verify domain ownership](../configure-targets/verify-domain-ownership/README.md).
 
-Once the domain is added and verified, Snyk API & Web starts running regular discovery scans automatically on your account.
+After the domain is added and verified, Snyk API & Web starts running regular discovery scans automatically on your account.
 
-In Snyk API & Web, check the **Discovery** page. Once the asset discovery is finished, all newly found assets are added to the list. At the top of the page, information about the number of newly found assets is displayed. Click on it to filter the list.
+In Snyk, check the **Discovery** page. After the asset discovery finishes, Snyk adds all newly found assets to the list. At the top of the page, Snyk displays information about the number of newly found assets. Click it to filter the list.

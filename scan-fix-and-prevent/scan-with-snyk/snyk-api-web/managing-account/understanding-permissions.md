@@ -2,7 +2,7 @@
 
 Learn what actions each permission grants to better configure your custom roles.
 
-This article provides a detailed breakdown of the high-level permissions within Snyk API & Web, explaining what actions each permission grants. Permissions are then grouped into roles (either built-in or custom) and, along with a scope, dictate the actions a user can perform.
+This article provides a detailed breakdown of the high-level permissions in Snyk API & Web, explaining what actions each permission grants. Snyk groups permissions into roles, either built-in or custom. The role, along with a scope, dictates the actions a user can perform.
 
 ## Role and scope structure
 

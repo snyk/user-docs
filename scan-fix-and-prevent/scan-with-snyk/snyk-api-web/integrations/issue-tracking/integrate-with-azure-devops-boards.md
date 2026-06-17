@@ -2,33 +2,33 @@
 
 By connecting Snyk API & Web to Microsoft Azure DevOps Boards, you can synchronize target scan results with an Azure Boards organization and project of your choice.
 
-The synchronization is bi-directional, meaning that a finding reported by Snyk API & Web is sent to your Azure Boards, and as soon as it is set as Done, Snyk API & Web triggers a retest. If the finding is fixed, the Azure Boards work item remains closed. Otherwise, it is reopened.
+The synchronization is bi-directional. Snyk sends a reported finding to your Azure Boards, and as soon as the finding is set to **Done**, Snyk triggers a retest. If the finding is fixed, the Azure Boards work item remains closed. Otherwise, Snyk reopens it.
 
-If Snyk API & Web detects a change, it updates the Azure Boards work item. For instance, if the underlying vulnerability was fixed, Snyk API & Web detects it, sets the finding as fixed, and updates the Azure Boards work item to fixed as well.
+If Snyk detects a change, it updates the Azure Boards work item. For example, if the underlying vulnerability is fixed, Snyk detects it, sets the finding as fixed, and updates the Azure Boards work item to fixed as well.
 
-Comments are also synchronized in both directions to ensure you always have all the information about that finding in both places.
+Snyk synchronizes comments in both directions so that you always have all the information about a finding in both places.
 
-The Azure DevOps service connection is enabled at the account level and then enabled on demand for each target. Configurations such as which product and work item to use are set in the target settings.
+You enable the Azure DevOps service connection at the account level and then on demand for each target. You set configurations such as which product and work item to use in the target settings.
 
 ## Authorize Snyk API & Web to access your Azure DevOps account
 
-To start, go to the Snyk API & Web Integrations page at `https://plus.probely.app/integrations` and find the Azure DevOps section.
+To start, navigate to the Snyk Integrations page at `https://plus.probely.app/integrations` and find the Azure DevOps section.
 
-Snyk API & Web needs permission to connect to your Azure DevOps account to synchronize findings. Snyk API & Web asks for the minimum set of permissions that allow it to list organizations and projects and create work items from Snyk API & Web findings.
+Snyk needs permission to connect to your Azure DevOps account to synchronize findings. Snyk asks for the minimum set of permissions that let it list organizations and projects and create work items from Snyk findings.
 
-Click the link to begin. A browser tab opens at Azure, where you are asked to log in if you are not already authenticated. Then you are asked to accept the permissions Snyk API & Web is requesting.
+Click the link to begin. A browser tab opens at Azure, where you log in if you are not already authenticated. You then accept the permissions Snyk requests.
 
 Click **Accept** to continue.
 
-If you already have an organization and at least one project created at Azure DevOps, you are redirected to Snyk API & Web right away. If that is not the case, Azure asks you to create an organization and a project, both required for this integration to work.
+If you already have an organization and at least one project created at Azure DevOps, Azure redirects you to Snyk right away. Otherwise, Azure asks you to create an organization and a project, both required for this integration to work.
 
 Choose the organization you want to use and click **Save**.
 
-You may need to update your organization settings at Azure. Access your **Organization**, go to **Organization Settings**, and under **Security**, click the **Policies** entry. There you need to make sure that the "Third-party application access via OAuth" is set to On.
+You might need to update your organization settings at Azure. Access your **Organization**, navigate to **Organization Settings**, and under **Security**, click **Policies**. Make sure that **Third-party application access via OAuth** is set to **On**.
 
 ## Choose your synchronization settings
 
-Back at Snyk API & Web, you need to choose which targets to synchronize and how. To configure a target to use Azure DevOps Boards, go to the **Integrations** tab from that target's **Settings** and locate the **Azure DevOps Boards** module.
+Back at Snyk, choose which targets to synchronize and how. To configure a target to use Azure DevOps Boards, navigate to the **Integrations** tab from that target's **Settings** and locate the **Azure DevOps Boards** module.
 
 You see the following screen:
 
@@ -38,28 +38,28 @@ Choose which project to sync with.
 
 ### Work Item Type
 
-Choose which work item type to sync with. This depends on the project selected. Only two types of work items are currently supported: **Issue** or **Task**.
+Choose which work item type to sync with. This depends on the selected project. Snyk supports only two types of work items: **Issue** or **Task**.
 
 ### Automatically sync all findings
 
-If checked, all findings that are not fixed are synced to Azure, as well as any new findings.
+If selected, Snyk syncs all findings that are not fixed to Azure, as well as any new findings.
 
-Alternatively, you can enable per-finding synchronization. To do so, check **Sync finding** in the details of the finding, as shown here:
+Alternatively, you can enable per-finding synchronization. To do so, select **Sync finding** in the details of the finding, as shown here:
 
 ### Delete
 
-Removes the configuration for this target. Findings already synchronized are kept at Azure.
+Removes the configuration for this target. Azure keeps findings that are already synchronized.
 
-To finish the configuration, select the project and work item and click **Save**. If the **Automatically sync all findings** box is checked, synchronization starts immediately and takes just a few seconds.
+To finish the configuration, select the project and work item and click **Save**. If the **Automatically sync all findings** box is selected, synchronization starts immediately and takes a few seconds.
 
-Snyk API & Web adds two tags to each work item created at Azure:
+Snyk adds two tags to each work item created at Azure:
 
 * One indicating the severity, with the following values: `Low severity`, `Medium severity`, or `High severity`.
-* One with `Probely`, identifying which work items are being synced. It also gives you a way to easily filter those coming from Snyk API & Web. **Do not remove this tag**. Otherwise, the synchronization stops working for that work item.
+* One with `Probely`, identifying which work items are synced. It also gives you a way to filter those coming from Snyk. **Do not remove this tag**. Otherwise, the synchronization stops working for that work item.
 
 ## Integrate with Azure DevOps CI/CD pipelines
 
-To foster automation between systems, integrate with Azure DevOps to execute operations in Snyk API & Web triggered from Azure pipelines using the Snyk API & Web API.
+To foster automation between systems, integrate with Azure DevOps to run operations in Snyk triggered from Azure pipelines using the Snyk API.
 
 The integration involves two steps:
 
@@ -68,19 +68,19 @@ The integration involves two steps:
 
 ### Get integration information from Snyk API & Web
 
-Before configuring the integration in Azure, get the necessary information from Snyk API & Web:
+Before configuring the integration in Azure, get the necessary information from Snyk:
 
 1. Get the **Target Identifier** (Target ID):
-   1. Go to the **Targets** list in the Snyk API & Web application.
+   1. Navigate to the **Targets** list in the Snyk application.
    2. Click the target and obtain the target ID from the URL.
-2. Generate the **API Key** and save it so Azure is able to perform actions in Snyk API & Web. Learn how to generate an API key in the Snyk API & Web documentation.
+2. Generate the **API Key** and save it so Azure can perform actions in Snyk. Learn how to generate an API key in the Snyk documentation.
 
 ### Configure Azure to integrate with Snyk API & Web
 
-With the information from Snyk API & Web, it is time to do the configuration in Azure:
+With the information from Snyk, do the configuration in Azure:
 
-1. Log in to the Azure DevOps account at `https://dev.azure.com` and go to **Pipelines**.
-2. Click the pipeline to select it and then click the **Edit** button on the top-right corner of the screen.
+1. Log in to the Azure DevOps account at `https://dev.azure.com` and navigate to **Pipelines**.
+2. Click the pipeline to select it and then click **Edit** in the top-right corner of the screen.
 3. In the list of Agent Jobs, click the plus (**+**) button to add a new task.
 4. Select **Command Line** from the list and click **Add**.
 5. Select the newly added Command Line Script.
@@ -94,11 +94,11 @@ curl -k -X POST 'https://api.probely.com/targets/<TARGET_ID>/scan_now/' -H 'Auth
 
 **Notes:**
 
-1. In this example, the command triggers a target scan using the Snyk API & Web API endpoint. Explore the API for other operations to trigger from your Azure pipelines.
+1. In this example, the command triggers a target scan using the Snyk API endpoint. Explore the API for other operations to trigger from your Azure pipelines.
 2. In the curl command:
    1. Replace `<TARGET_ID>` and `<API_KEY>` with the corresponding values obtained in the previous step.
-   2. There is also a parameter defining the scan profile to be used in the scan: `-d '{"scan_profile": "normal"}'`. You can remove it, and the scan profile will be the one defined in the target settings.
+   2. A parameter also defines the scan profile to use in the scan: `-d '{"scan_profile": "normal"}'`. You can remove it, and the scan profile is the one defined in the target settings.
 3. Click the **Save & queue** dropdown menu and select **Save & queue** from the list.
-4. A **Run pipeline** dialog is displayed. Click **Save and run** to manually run the pipeline and test the integration.
+4. A **Run pipeline** dialog appears. Click **Save and run** to run the pipeline manually and test the integration.
 
-From now on, every time this Azure pipeline runs, it triggers the scan of the target in Snyk API & Web.
+From now on, every time this Azure pipeline runs, it triggers the scan of the target in Snyk.

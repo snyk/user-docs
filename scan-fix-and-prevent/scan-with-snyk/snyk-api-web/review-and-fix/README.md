@@ -4,7 +4,7 @@ After scanning your targets, use Snyk API & Web to review findings, assess their
 
 ## Key features
 
-Snyk API & Web provides several capabilities to help you manage findings:
+Snyk provides several capabilities to help you manage findings:
 
 * **Severity classification**: Understand the risk level of each finding based on exploitability and impact.
 * **Self-review**: Review and approve or reject low-confidence findings without waiting for manual verification.
@@ -18,23 +18,23 @@ Snyk API & Web provides several capabilities to help you manage findings:
 
 After running a scan, you can view detailed results showing scan progress, discovered vulnerabilities, and generated reports. The scan results page provides insights into the scanner components (fingerprinter, crawler, and scanner), HTTP response codes, and the overall risk assessment of your target.
 
-Visit [Interpret target scan results](interpret-target-scan-results.md) to learn how to understand and analyze scan results. For specific information about HTTP response codes, visit [HTTP status codes in target scans](http-status-codes-in-target-scans.md).
+Visit [Interpret target scan results](interpret-target-scan-results.md) to learn how to understand and analyze scan results. For information about HTTP response codes, visit [HTTP status codes in target scans](http-status-codes-in-target-scans.md).
 
 ### Review findings severity
 
 Each finding includes a severity level (Critical, High, Medium, Low) to help you prioritize remediation efforts. The severity considers the likelihood of exploitation, required skills to exploit, and potential impact.
 
-Visit [Severity levels in findings](severity-levels-in-findings.md) for detailed information about how Snyk API & Web assigns severity levels.
+Visit [Severity levels in findings](severity-levels-in-findings.md) for detailed information about how Snyk assigns severity levels.
 
 ### Review pending findings
 
-Snyk API & Web allows you to review findings that are in a Pending Review state without waiting for manual verification by the Snyk team. This feature gives you immediate access to low-confidence findings so you can speed up your security reviews.
+Snyk lets you review findings in a **Pending Review** state without waiting for manual verification by the Snyk team. This feature gives you immediate access to low-confidence findings so you can speed up your security reviews.
 
 Visit [Review pending findings](review-pending-findings.md) for step-by-step instructions on enabling and using the self-review feature.
 
 ### Assign vulnerabilities to team members
 
-You can assign findings to team members for tracking and remediation. Assignments can be made individually or in bulk from the Target page, Scan Results page, or Finding Details page.
+You can assign findings to team members for tracking and remediation. Assign findings individually or in bulk from the **Target** page, **Scan Results** page, or **Finding Details** page.
 
 Visit [Assign vulnerabilities to a team member](assign-vulnerabilities-to-team-member.md) for instructions on assigning findings.
 
@@ -46,7 +46,7 @@ Visit [Review scan login attempts](review-scan-login-attempts.md) for details on
 
 ## SAST/DAST integration
 
-The SAST/DAST integration connects dynamic scan findings from Snyk API & Web with static analysis results from Snyk Code. This correlation links DAST findings directly to the vulnerable location in your source code, helping developers fix issues faster.
+The SAST/DAST integration connects dynamic scan findings from Snyk with static analysis results from Snyk Code. This correlation links DAST findings directly to the vulnerable location in your source code, helping developers fix vulnerabilities faster.
 
 When a DAST finding correlates with SAST results, you see:
 
@@ -66,20 +66,20 @@ To connect your dynamic and static scan results, do the following.
 
 #### Connect your Snyk accounts
 
-1. In Snyk API & Web, navigate to **Settings > Integrations**.
+1. In Snyk, navigate to **Settings > Integrations**.
 2. Locate the **Snyk** module.
 3. Follow the link to **Snyk group** to start the authentication and authorization process.
 
 #### Map a target to your Snyk projects
 
 1. Navigate to the **Targets** page and identify the target you want to integrate.
-2. Go to that target **Settings** and click the **Integrations** tab.
+2. Navigate to that target **Settings** and click the **Integrations** tab.
 3. In the **Snyk** module, click **Select projects** to open a new modal.
-4. Map the current Snyk API & Web target to the corresponding code analysis project(s) from Snyk and click **Save**.
+4. Map the current target to the corresponding code analysis projects from Snyk and click **Save**.
 
 #### Run a DAST scan
 
-Run a new scan on the configured target. Snyk API & Web now correlates the DAST findings from this scan with the SAST findings from your mapped Snyk projects.
+Run a new scan on the configured target. Snyk now correlates the DAST findings from this scan with the SAST findings from your mapped Snyk projects.
 
 #### Analyze correlated findings
 

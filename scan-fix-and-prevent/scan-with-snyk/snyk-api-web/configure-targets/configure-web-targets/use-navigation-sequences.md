@@ -10,7 +10,7 @@ For example, if your application has a shopping cart flow, admin panels, or dyna
 
 ## Record a navigation sequence
 
-Before configuring a navigation sequence in Snyk API & Web, you need to record it using the Snyk API & Web Sequence Recorder browser plugin.
+Before configuring a navigation sequence in Snyk API & Web, you must record it using the Snyk API & Web Sequence Recorder browser plugin.
 
 Visit the [Use sequence recorder](use-sequence-recorder.md) article for detailed instructions on installing the plugin and recording sequences.
 
@@ -37,4 +37,4 @@ After adding a navigation sequence, Snyk API & Web displays it in the Navigation
 
 <figure><img src="../../../../.gitbook/assets/use-navigation-sequences-list.png" alt="Navigation sequences list showing configured sequences"><figcaption></figcaption></figure>
 
-Run a scan to verify the navigation sequence works correctly and allows the scanner to reach the intended areas of your application.
+Run a scan to verify the navigation sequence works correctly and the scanner reaches the intended areas of your application.

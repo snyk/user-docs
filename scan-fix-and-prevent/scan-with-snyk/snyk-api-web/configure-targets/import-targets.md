@@ -32,7 +32,7 @@ Availability of these settings varies depending on the target type. For complete
 
 ## Import targets
 
-1. Log in to Snyk API & Web.
+1. Log in to Snyk.
 2. On the **Targets** list, click the vertical ellipsis next to **Add**.
 3. Select **Import** from the menu.
 4. Upload your file containing the target information.

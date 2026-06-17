@@ -1,6 +1,6 @@
 # Troubleshoot low coverage in a scan
 
-Scans should cover as much of the target scope as possible to identify the maximum number of vulnerabilities. If your scan shows low coverage, follow these troubleshooting steps to identify and resolve the issue.
+A scan must cover as much of the target scope as possible to identify the maximum number of vulnerabilities. If your scan shows low coverage, follow these troubleshooting steps to identify and resolve the issue.
 
 For more information about coverage reports, visit [Coverage report](../../review-and-fix/overview-reports/coverage-report.md) and [Generate CSV coverage report](../../review-and-fix/overview-reports/generate-csv-coverage-report.md).
 
@@ -10,11 +10,11 @@ When running a scan on a target, the coverage is low.
 
 ## Troubleshoot the problem
 
-Go through the following steps to identify possible causes and solutions.
+Work through the following steps to identify possible causes and solutions.
 
 ### Step 1: Check for target authentication
 
-If the target has authentication, verify the scanner was able to log in.
+If the target has authentication, verify the scanner logged in.
 
 1. Navigate to the **Targets** page.
 2. Click the target name to see its details.
@@ -46,7 +46,7 @@ If the backing API has a URL different from the SPA, Snyk API & Web needs to kno
 
 ### Step 3: Check for a blocking WAF
 
-Check if scan requests are being blocked by a Web Application Firewall (WAF) after the scan has started.
+Check if a Web Application Firewall (WAF) is blocking scan requests after the scan has started.
 
 1. Navigate to the **Targets** page.
 2. Click the target name to see its details.
@@ -64,7 +64,7 @@ If a WAF blocks access to URLs, Snyk API & Web cannot scan them.
 
 ### Step 4: Check for blocking WordPress plugin
 
-If the target is WordPress, check if scan requests are being blocked by a WordPress security plugin (for example, WordFence).
+If the target is WordPress, check if a WordPress security plugin (for example, WordFence) is blocking scan requests.
 
 1. Navigate to the **Targets** page.
 2. Click the target name to see its details.
@@ -80,4 +80,4 @@ If a WordPress plugin is blocking access to URLs, Snyk API & Web cannot scan the
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | A WordPress plugin (for example, WordFence) is blocking access to URLs. | Configure the WordPress plugin to allow requests from Snyk API & Web IPs. Visit [Scanner IP address](../../start-scanning/overview-scan-access-and-connectivity/scanner-ip-address.md) for the scanner's outgoing IP address. |
 
-After following these steps and applying the solutions, scans should achieve the expected coverage for your targets.
+After following these steps and applying the solutions, scans achieve the expected coverage for your targets.

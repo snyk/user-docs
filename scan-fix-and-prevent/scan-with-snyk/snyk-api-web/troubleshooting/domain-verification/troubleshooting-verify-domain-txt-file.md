@@ -1,6 +1,6 @@
 # Troubleshoot domain verification with TXT file
 
-To run full-fledged scans, you must verify domain ownership. Visit [Verify domain ownership](../../configure-targets/verify-domain-ownership/) to learn why verification is required.
+To run full scans, you must verify domain ownership. Visit [Verify domain ownership](../../configure-targets/verify-domain-ownership/) to learn why verification is required.
 
 ## The problem
 
@@ -8,7 +8,7 @@ Domain verification using a TXT file fails with the error: `Token file not found
 
 ## Troubleshoot the problem
 
-Go through the following steps to identify possible causes and solutions.
+Work through the following steps to identify possible causes and solutions.
 
 ### Step 1: Test direct access
 
@@ -75,7 +75,7 @@ Check the following cause and solution:
 
 | Cause                                        | Solution                                                                                                                                     |
 | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| The file's URL is redirected to another URL. | Create a target with the domain of the redirected URL. In the example above, create a target for `www.example.com` instead of `example.com`. |
+| The file's URL is redirected to another URL. | Create a target with the domain of the redirected URL. In the preceding example, create a target for `www.example.com` instead of `example.com`. |
 
 ### Step 3: Test blockers
 
@@ -97,6 +97,6 @@ Check the following causes and solutions:
 | A human check is blocking access to the file. | Remove the human check when accessing the TXT file.                                                                                                                |
 | A WAF is blocking access to the file.         | Add Snyk API & Web IPs to the WAF's allowlist. Visit [Configure IPs in WAFs](../../start-scanning/overview-scan-access-and-connectivity/configure-ips-in-wafs.md). |
 
-After following these steps and applying the solutions, you should be able to verify the domain using a TXT file.
+After following these steps and applying the solutions, you can verify the domain using a TXT file.
 
 For more information, visit [Verify with TXT file](../../configure-targets/verify-domain-ownership/verify-with-txt-file.md).

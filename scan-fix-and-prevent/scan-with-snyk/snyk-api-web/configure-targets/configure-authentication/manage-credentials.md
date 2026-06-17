@@ -14,8 +14,8 @@ Using the Credentials Manager simplifies the password rotation process and impro
 
 2. Click **Add Credential**.
 3. Configure the credential:
-   * **Sensitive**: Enable this option to permanently hide credential values from all users. Sensitive credential values can be updated but never viewed after saving.
-   * **Scope**: Choose whether the credential is available account-wide or restricted to specific teams. Account-wide credentials can be used by everyone in the account.
+   * **Sensitive**: Select this option to permanently hide credential values from all users. You can update sensitive credential values but never view them after saving.
+   * **Scope**: Choose whether the credential is available account-wide or restricted to specific teams. Everyone in the account can use account-wide credentials.
    * **Description** (optional): Add relevant information to help your team understand when to use this credential.
 4. Click **Save**.
 
@@ -58,16 +58,16 @@ You can securely store sensitive information in several areas across Snyk API & 
 
 Access to Credentials depends on your user role and assigned permissions:
 
-* **Update Target Configuration**: Users with this permission can create credentials and use them within their specific targets.
-* **Manage Credentials**: Users with this permission can create, view, update, and delete credentials across the account or team, even if the credential was created by someone else.
-* **Scoped Credentials**: Credentials can be scoped to the entire account or restricted to users from specific teams.
+* Update Target Configuration: Users with this permission can create credentials and use them within their specific targets.
+* Manage Credentials: Users with this permission can create, view, update, and delete credentials across the account or team, even if someone else created the credential.
+* Scoped Credentials: You can scope credentials to the entire account or restrict them to users from specific teams.
 
-For more information about permissions, see the Snyk API & Web permissions documentation.
+For more information about permissions, visit the Snyk API & Web permissions documentation.
 
 ## Transitioning from obfuscated values
 
 The Credentials Manager replaces the Secret Obfuscation feature:
 
-* **Obfuscation Toggle**: The option to turn obfuscation on or off for account owners is hidden. Centralized management through the Credentials Manager is now the standard for sensitive data.
-* **Existing Configurations**: All existing configurations continue to work. You can keep them or replace them with Credentials Manager credentials (recommended).
-* **Obfuscated Values**: Previously obfuscated values cannot be retrieved. To create new obfuscated values, use Sensitive Credentials in the Credentials Manager.
+* Obfuscation toggle: The option to turn obfuscation on or off for account owners is hidden. Centralized management through the Credentials Manager is now the standard for sensitive data.
+* Existing configurations: All existing configurations continue to work. You can keep them or replace them with Credentials Manager credentials. Snyk recommends replacing them.
+* Obfuscated values: You cannot retrieve previously obfuscated values. To create new obfuscated values, use Sensitive Credentials in the Credentials Manager.
