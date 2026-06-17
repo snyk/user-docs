@@ -196,19 +196,19 @@ The Snyk Consultant will educate the Customer on understanding Snyk IaC results 
 
 #### Web Target configuration, including authenticated scans
 
-The Snyk Consultant will work with the Customer to configure [Web Targets](https://help.probely.com/en/articles/3292779-how-to-set-up-target-authentication-with-a-login-form?q=Web+Target+configuration) (up to three web applications) to be scanned by Snyk API & Web. This includes configuring the authentication for each Target where necessary, such as using a login form or recorded login sequence. Snyk will also help to set up a single navigation sequence for each web application.
+The Snyk Consultant will work with the Customer to configure [Web Targets](../../scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-web-targets/README.md) (up to three web applications) to be scanned by Snyk API & Web. This includes configuring the authentication for each Target where necessary, such as using a login form or recorded login sequence. Snyk will also help to set up a single navigation sequence for each web application.
 
 #### API Target configuration
 
-The Snyk Consultant will work with the Customer to [configure API collections](https://help.probely.com/en/articles/8178059-how-to-configure-an-api-target-postman-collection) (maximum of one collection) to be scanned by Snyk API & Web, using a Postman Collection or OpenAPI definition.
+The Snyk Consultant will work with the Customer to [configure API collections](../../scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-api-targets/README.md) (maximum of one collection) to be scanned by Snyk API & Web, using a Postman Collection or OpenAPI definition.
 
 #### Domain Ownership Verification
 
-The Snyk Consultant will work with the Customer to complete [Domain Ownership Verification](https://help.probely.com/en/articles/3289281-how-to-verify-the-ownership-of-a-domain-using-a-txt-file) for one domain. This can be achieved by a .txt file, a TXT record, a CNAME record, or a meta tag.
+The Snyk Consultant will work with the Customer to complete [Domain Ownership Verification](../../scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/verify-domain-ownership/README.md) for one domain. This can be achieved by a .txt file, a TXT record, a CNAME record, or a meta tag.
 
 #### Scanning Agent configuration
 
-The Snyk Consultant will work with the Customer to configure the [Scanning Agent](https://help.probely.com/en/articles/4615595-how-to-scan-internal-applications-with-a-scanning-agent) using Docker, Docker-Compose, or Kubernetes. This is required only if there are Targets to be scanned that are not internet-accessible, and there is a maximum of one agent to be configured.
+The Snyk Consultant will work with the Customer to configure the [Scanning Agent](../../scan-fix-and-prevent/scan-with-snyk/snyk-api-web/start-scanning/overview-scanning-agent/README.md) using Docker, Docker-Compose, or Kubernetes. This is required only if there are Targets to be scanned that are not internet-accessible, and there is a maximum of one agent to be configured.
 
 #### Target scanning in CI/CD configuration
 
@@ -220,7 +220,7 @@ The Snyk Consultant will work with the Customer to configure a single issue tick
 
 #### Review of Target Scan Results
 
-The Snyk Consultant will educate the Customer on understanding [DAST scan results](https://help.probely.com/en/articles/6843262-how-to-interpret-target-scan-results) for Web and API Targets in the Snyk API & Web UI, including the different reporting functionality that is available in the tool.
+The Snyk Consultant will educate the Customer on understanding [DAST scan results](../../scan-fix-and-prevent/scan-with-snyk/snyk-api-web/review-and-fix/README.md) for Web and API Targets in the Snyk API & Web UI, including the different reporting functionality that is available in the tool.
 
 ### Target initiatives - Snyk API & Web configuration
 
