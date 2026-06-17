@@ -359,6 +359,7 @@
     * [Roles and permissions](scan-with-snyk/snyk-api-web/managing-account/roles-and-permissions.md)
     * [Understanding permissions](scan-with-snyk/snyk-api-web/managing-account/understanding-permissions.md)
     * [Roles and scopes by plan](scan-with-snyk/snyk-api-web/managing-account/roles-and-scopes-by-plan.md)
+    * [Set up two-factor authentication](scan-with-snyk/snyk-api-web/managing-account/set-up-2fa.md)
     * [Enforce 2FA for all users](scan-with-snyk/snyk-api-web/managing-account/enforce-2fa-for-all-users.md)
     * [Set up single sign-on (SSO)](scan-with-snyk/snyk-api-web/managing-account/set-up-single-sign-on-sso-in-snyk-api-web.md)
     * [Generate and use audit log reports](scan-with-snyk/snyk-api-web/managing-account/generate-and-use-audit-log-reports.md)
