@@ -18,4 +18,4 @@ Invite members to the Organization you configured. Follow these steps to invite 
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfZakhAyTXXqEigvhHYY0bH3jZ__Zx9kIbt8Dwa9erputbh1_4ZennUPqXzXFfvZBdHzlO6OOLJjUFzo35uDHUSvo5C1HV7HXK4EZ3wAT5zM6PhQWuutwH-DsDmyWVH4JlkGSj1?key=i_CNrr-DvB8PGUAzq09BT3pc)
 
-Alternatively, you can configure SSO as self-serve in the Group settings. For more details, see [Configure Self-Serve Single Sign-On (SSO)](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk).
+Alternatively, you can configure SSO as self-serve in the Group settings. For more details, visit [Configure Self-Serve Single Sign-On (SSO)](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk).
