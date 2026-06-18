@@ -1,6 +1,6 @@
 # Working with Snyk
 
-Snyk is dedicated to the secure and responsible handling of user data, with a strong emphasis on privacy and compliance. Below are key aspects of Snyk's operations and offerings related to data handling, hosting, vulnerability disclosure, and support:
+Snyk is dedicated to the secure and responsible handling of user data, with a strong emphasis on privacy and compliance. The following are key aspects of Snyk operations and offerings related to data handling, hosting, vulnerability disclosure, and support:
 
 *   [**How Snyk handles your data**](how-snyk-handles-your-data.md)
 

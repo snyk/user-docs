@@ -6,11 +6,11 @@ The data that Snyk handles varies depending on the product you are using, how yo
 
 ## Flexible deployment options
 
-Snyk's cloud-first deployment options offer ease of use and scalability while also including standard data protection measures. Snyk supports multi- and single-tenant options in the US, EU, and AU regions.
+The cloud-first deployment options in Snyk offer ease of use and scalability while also including standard data protection measures. Snyk supports multi- and single-tenant options in the US, EU, and AU regions.
 
 Snyk deployment options are as follows:
 
-* **Multi-Tenant SaaS**: The simplest, most common, and most cost-effective way to use Snyk’s developer security platform.
+* **Multi-Tenant SaaS**: The simplest, most common, and most cost-effective way to use the Snyk developer security platform.
 * **Single-Tenant SaaS**: Private Cloud - An isolated and fully managed instance of the Snyk developer security platform. For details, see [Snyk Deployment Options](https://snyk.io/platform/deployment-options/).
 * **Snyk Broker**: A client service installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi- or single-tenant) and your on-premise codebase. [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker) is designed to securely handle inbound and outbound connections, encrypting data during transit and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
 
@@ -51,7 +51,7 @@ The following provides details regarding data handling by specific Snyk products
 
 * Snyk accesses manifest files, lock files, and related configuration files to identify your open-source dependencies.
 * Snyk accesses your source code under these scenarios:
-  * When [Workspaces for SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces) is enabled, Snyk ingests a short-lived, shallow clone of a [Git reference](https://git-scm.com/book/en/v2/Git-Internals-Git-References) and scans manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
+  * When [Workspaces for SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces) is enabled, Snyk ingests a short-lived, shallow clone of a [Git reference](https://git-scm.com/book/en/v2/Git-Internals-Git-References) and scans manifest files, lock files, and related configuration files to identify your open-source dependencies.
   * When CLI scans use the `--unmanaged` option, Snyk accesses your source code files to convert them to file signatures (hashes) and stores the file signatures and file names.
 * Snyk accesses and stores the names and version numbers of your dependencies.
 * Snyk stores the names of associated licenses, including copyright and attribution information.
@@ -62,9 +62,9 @@ The following provides details regarding data handling by specific Snyk products
 
 Your account is subject to contract terms that might restrict your ability to enable these features. By enabling these features, you agree on behalf of your company to changes to your contract terms to allow these features, and you will be responsible for the use of these features based on your own circumstances.
 
-* For the Go Modules full source code analysis feature, Snyk will access and store the contents of your Git repository to facilitate the building of an accurate dependency graph. After the Snyk analysis is complete, your code is deleted from the Snyk system.
-* For the improved .NET scanning feature, Snyk will access and store the contents of your Git repository to facilitate the building of an accurate dependency graph. After the Snyk analysis is complete, your code is deleted from the Snyk system.
-* For the Reachable Vulnerabilities feature, Snyk will access and store the contents of your Git repository to facilitate the building of a call graph. When the analysis completes, your code is deleted from the Snyk system. Only the call graph and function names are maintained.
+* For the Go Modules full source code analysis feature, Snyk accesses and stores the contents of your Git repository to facilitate the building of an accurate dependency graph. After the Snyk analysis is complete, your code is deleted from the Snyk system.
+* For the improved .NET scanning feature, Snyk accesses and stores the contents of your Git repository to facilitate the building of an accurate dependency graph. After the Snyk analysis is complete, your code is deleted from the Snyk system.
+* For the Reachable Vulnerabilities feature, Snyk accesses and stores the contents of your Git repository to facilitate the building of a call graph. When the analysis completes, your code is deleted from the Snyk system. Only the call graph and function names are maintained.
 
 ### Snyk Code
 
@@ -153,7 +153,7 @@ For more information on Workspaces enablement and use, see [Workspaces for SCM i
 
 Snyk puts the following safeguards in place to ensure data is secure:
 
-* Snyk will perform a clone only when an SCM integration flow requires it, for example, PR check, import, and test.
+* Snyk performs a clone only when an SCM integration flow requires it, for example, PR check, import, and test.
 * Communication between the cloning service and the cache is encrypted with TLS.
 * Cloned assets are deleted from the file system immediately after populating the cache.
 * Snyk handles all data in accordance with the SOC 2 standard. For more details, see [Snyk certifications](how-snyk-handles-your-data.md#snyk-certifications).

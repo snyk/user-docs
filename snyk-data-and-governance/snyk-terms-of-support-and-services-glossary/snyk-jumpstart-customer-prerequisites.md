@@ -2,11 +2,11 @@
 
 ## Overview of Snyk Jumpstart Customer Prerequisites
 
-A Snyk Implementation Consultant will provide services to help the Customer accelerate integration of Snyk through assisted account configuration. The engagement will consist of knowledge transfer and paired configuration.
+A Snyk Implementation Consultant provides services to help the Customer accelerate integration of Snyk through assisted account configuration. The engagement consists of knowledge transfer and paired configuration.
 
-Before engagement starts, prerequisites must be met for each product module.
+Before the engagement starts, the Customer must meet the prerequisites for each product module.
 
-## What is excluded from Jumpstart?
+## What is excluded from Jumpstart
 
 * Snyk Code Local Engine
 * Snyk Code Custom Rules

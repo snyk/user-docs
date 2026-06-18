@@ -1,10 +1,10 @@
 # Snyk for Government (US)
 
-[Snyk for Government (US)](https://snyk.io/government-security-solution/) enables US federal agencies to develop fast and securely. By integrating with tools and workflows that developers already use, Snyk for Government (US) allows these agencies to shift left in their Software Development Lifecycle, enabling secure development from the start.
+[Snyk for Government (US)](https://snyk.io/government-security-solution/) lets US federal agencies develop fast and securely. By integrating with tools and workflows that developers already use, Snyk for Government (US) lets these agencies shift left in their Software Development Lifecycle, enabling secure development from the start.
 
 Because Snyk for Government (US) adheres to the [FedRAMP](https://www.fedramp.gov/) and [NIST](https://www.nist.gov/) security control requirements, federal agencies can be assured that the product complies with the security standards set forth by the US Government.
 
-Snyk for Government (US) has differences from standard Snyk products that allow Snyk to be deployed to the US federal government. Adhering to FedRAMP and NIST control requirements means that some aspects of standard Snyk products are not supported in the FedRAMP environment.
+Snyk for Government (US) has differences from standard Snyk products that let Snyk be deployed to the US federal government. Adhering to FedRAMP and NIST control requirements means that some aspects of standard Snyk products are not supported in the FedRAMP environment.
 
 This list identifies all the areas with differences in functionality in the Snyk for Government (US) product.
 
@@ -22,17 +22,17 @@ This list identifies all the areas with differences in functionality in the Snyk
 
 API keys are not available.
 
-This means that attempts to create Service Accounts either through the UI or using the API with an `auth_type` of `api_key` are not accepted. You must ensure that the OAuth protocol is used instead for all scenarios where API keys would typically be used. See [Service accounts using OAuth 2.0](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts-using-oauth-2.0) for details. If you need help, contact [Snyk support](https://support.snyk.io).
+This means that attempts to create Service Accounts either through the UI or using the API with an `auth_type` of `api_key` are not accepted. Use the OAuth protocol instead for all scenarios where API keys would typically be used. See [Service accounts using OAuth 2.0](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts-using-oauth-2.0) for details. If you need help, contact [Snyk support](https://support.snyk.io).
 
-In addition, the CLI must be used in OAuth mode, not with token-driven authentication.
+In addition, use the CLI in OAuth mode, not with token-driven authentication.
 
 ## Single Sign-On limitations on availability
 
-[Single Sign-On (SSO)](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk) is available except for [Self-Serve Single Sign-On (SSO)](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso). All SSO setups are managed by Snyk. Some setup steps for Single Sign-On are slightly different:
+[Single Sign-On (SSO)](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk) is available except for [Self-Serve Single Sign-On (SSO)](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk/configure-self-serve-single-sign-on-sso). Snyk manages all SSO setups. Some setup steps for Single Sign-On are slightly different:
 
 * The service provider is Okta rather than Auth0.
-* The ACS URL and Entity ID and certificate will be different per connection and thus will not match the Snyk Single Sign-On documentation.
-* To get the ACS Url, Entity ID, and cert, Snyk will need to part-provision the connection in Okta.
+* The ACS URL, Entity ID, and certificate differ per connection and thus do not match the Snyk Single Sign-On documentation.
+* To get the ACS URL, Entity ID, and certificate, Snyk must part-provision the connection in Okta.
 
 See [Single Sign-On (SSO) for authentication to Snyk](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk) for details.
 
@@ -58,4 +58,4 @@ See [Single Sign-On (SSO) for authentication to Snyk](https://app.gitbook.com/s/
 * Session Concurrency is limited to three (3) sessions per user.
 * Session lockout: After sessions expire, the signed-in user loses access to all data present in existing session windows.
 * Session timeout: The default session timeout is shorter (15 minutes). See [Configure session length for a Snyk Group](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups/configure-session-length-for-a-snyk-group) for details.
-* [Snyk CLI docker images](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli#docker). These do not support FIPS-validated cryptography and should only be used when this can be accepted.
+* [Snyk CLI docker images](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli#docker). These do not support FIPS-validated cryptography and you should use them only when this can be accepted.

@@ -161,7 +161,7 @@ The Gold Success plan includes Gold Support.
 
 The Platinum Success Plan includes Platinum Support.
 
-The Platinum add-on provides extended, in-depth, and skilled expertise to help you maximize your investment with Snyk. by aligning a **Technical Support Engineer** to your account who will have the relevant level of depth in your environment, deployment, and use cases that will help to expedite resolution time and offer best practices.
+The Platinum add-on provides extended, in-depth, and skilled expertise to help you maximize your investment with Snyk by aligning a **Technical Support Engineer** to your account who has the relevant level of depth in your environment, deployment, and use cases to help expedite resolution time and offer best practices.
 
 **Technical Support Engineer:** The Technical Support Engineer (TSE) assigned to the Customer's account has familiarity with the Customer's environment and deployment, helps with resolving support tickets, and serves as the Customer's point of escalation. The aligned TSE will also partner with the Customer for incident management.
 
@@ -169,9 +169,9 @@ The Platinum add-on provides extended, in-depth, and skilled expertise to help y
 
 **Prioritized support ticket routing:** Tickets raised by Platinum Success Customers are automatically routed to Snyk Technical Support Engineers and prioritized ahead of non-Platinum ticket traffic.
 
-## Implementation, support and/or professional services
+## Implementation, support, and professional services
 
-The Customer acknowledges that the implementation, support and/or professional service options listed below may be performed either by Snyk personnel or by a Snyk certified partner under the direction and supervision of Snyk. In either event, Snyk remains fully responsible and liable for the performance of these services and its partner's compliance with the terms of the underlying Agreement between Snyk and the Customer, including obligations of confidentiality and data security.
+The Customer acknowledges that the implementation, support, and professional service options listed below may be performed either by Snyk personnel or by a Snyk certified partner under the direction and supervision of Snyk. In either event, Snyk remains fully responsible and liable for the performance of these services and its partner's compliance with the terms of the underlying Agreement between Snyk and the Customer, including obligations of confidentiality and data security.
 
 See the service descriptions on each of the following pages.
 

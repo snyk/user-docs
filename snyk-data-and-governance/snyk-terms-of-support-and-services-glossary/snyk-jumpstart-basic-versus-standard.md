@@ -25,5 +25,5 @@ Both packages cover the foundational setup for Open Source, Code, Container, and
 ## Success criteria
 
 * **Dedicated SME**: Appoint a single point of contact for the duration of the engagement.
-* **Timeline**: Services expire if not use within the allotted time (60 days for Basic, 120 days for Standard).
+* **Timeline**: Services expire if not used in the allotted time (60 days for Basic, 120 days for Standard).
 * **Delivery**: Snyk delivers all sessions remotely and consecutively during normal business hours.

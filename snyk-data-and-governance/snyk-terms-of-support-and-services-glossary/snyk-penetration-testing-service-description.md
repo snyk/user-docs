@@ -4,7 +4,7 @@
 
 The Snyk Penetration Testing service delivers an expert-driven, end-to-end security evaluation of your web applications. We go beyond automated scans to identify real-world vulnerabilities and potential business impact. Our methodology encompasses scoping, threat modeling, design review, custom test plan development, rigorous hands-on testing, and continuous reporting, culminating in clear remediation advice and a validation retest. Our testing is primarily focused on identifying the OWASP Top 10 list of most common web application vulnerabilities.
 
-For customers with AI and Large Language Model-powered applications, **AI/LLM Penetration Testing is available as an optional, separately scoped subset of this service**. This specialized testing assesses model behavior, LLM APIs and orchestration, integration layers (like function calling and RAG), data privacy controls, and the surrounding SDLC/infrastructure. AI/LLM Penetration Testing is focused on the OWASP LLM Top 10.
+For customers with AI and Large Language Model-powered applications, **AI/LLM Penetration Testing is available as an optional, separately scoped subset of this service**. This testing assesses model behavior, LLM APIs and orchestration, integration layers (such as function calling and RAG), data privacy controls, and the surrounding SDLC/infrastructure. AI/LLM Penetration Testing is focused on the OWASP LLM Top 10.
 
 ### Key benefits
 
@@ -29,7 +29,7 @@ Our comprehensive methodology ensures a thorough evaluation of your web applicat
   * **Insecure Design**: Evaluating for logical flaws, lack of business logic defenses.
   * **Vulnerable and Outdated Components**: Identifying known vulnerabilities in libraries, frameworks, and other components.
   * **Identification and Authentication Failures**: Assessing for weak authentication mechanisms, session management flaws.
-  * **Software and Data Integrity Failure**s: Examining for insecure deserialization, insecure updates.
+  * **Software and Data Integrity Failures**: Examining for insecure deserialization, insecure updates.
   * **Server-Side Request Forgery (SSRF)**: Detecting vulnerabilities allowing server-side requests to unauthorized locations.
 * **Fieldwork for Penetration Testing focused on AI/LLM implementations** includes testing of five key layers:
   * **Model Behavior**: Assessing for jailbreaks, data leakage, guardrail bypass, extraction, and model-level vulnerabilities.

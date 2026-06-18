@@ -6,7 +6,7 @@
 Regional hosting and data residency are available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 {% endhint %}
 
-Data residency allows you to control the region in which Snyk hosts a selected subset of your data. For information about GDPR, see [Privacy compliance](how-snyk-handles-your-data.md#privacy-compliance).
+Data residency lets you control the region in which Snyk hosts a selected subset of your data. For information about GDPR, see [Privacy compliance](how-snyk-handles-your-data.md#privacy-compliance).
 
 Data residency is available for [Snyk Open Source](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source), [Snyk Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code), [Snyk Container](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container), and [Snyk IaC](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac). Snyk can host your data in a number of regions.
 
@@ -48,7 +48,7 @@ See [How Snyk handles your data](how-snyk-handles-your-data.md) for product-spec
 After you select a region, the data in that region cannot be migrated to another region. Moving to a new region requires a complete re-onboarding.
 {% endhint %}
 
-During the initial onboarding of your system, you can work with your account team to select a multi-tenant hosting region. For single-tenant availability (Snyk Private Cloud), reach out to your account team in advance of onboarding. When using Snyk features, you will use specific URLs that differ from the SNYK-US-01 URL. See [Regional URLs](regional-hosting-and-data-residency.md#regional-urls) for the list of URLs.
+During the initial onboarding of your system, you can work with your account team to select a multi-tenant hosting region. For single-tenant availability (Snyk Private Cloud), reach out to your account team before onboarding. When using Snyk features, you use specific URLs that differ from the SNYK-US-01 URL. See [Regional URLs](regional-hosting-and-data-residency.md#regional-urls) for the list of URLs.
 
 You must configure your environment to set your region before you authenticate. This does not apply when you are using the SNYK-US-01 URL. For details, see the [snyk config environment CLI help](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config-environment).
 
@@ -147,7 +147,7 @@ Snyk IDE extensions have modifiable options similar to the CLI and must be confi
 
 **SNYK-AU-01 :** `https://api.au.snyk.io`
 
-Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
+Multi-tenant users who do not belong to the `SNYK-US-01` region are automatically redirected to the correct domain for the email with which the user authenticated. The redirect does not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 
 ### Broker client URLs
 

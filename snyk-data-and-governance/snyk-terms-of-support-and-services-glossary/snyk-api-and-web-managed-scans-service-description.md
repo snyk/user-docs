@@ -1,32 +1,32 @@
-# Snyk API & Web Managed Scans Service Description
+# Snyk API and Web Managed Scans Service Description
 
 ## Overview
 
-Snyk API & Web Managed Scans is an optional add-on service, designed for organizations seeking to maximize their dynamic application security testing effectiveness without the burden of extensive in-house expertise. This service empowers you to offload the complexities of API & Web management to seasoned security professionals, ensuring comprehensive vulnerability identification and remediation guidance. We handle the intricate aspects of API & Web scanning, allowing your team to focus on core development and business operations.
+Snyk API and Web Managed Scans is an optional add-on service, designed for organizations seeking to maximize their dynamic application security testing effectiveness without the burden of extensive in-house expertise. This service lets you offload the complexities of API and Web management to security professionals, ensuring comprehensive vulnerability identification and remediation guidance. Snyk handles the API and Web scanning so your team can focus on core development and business operations.
 
 ## Key benefits
 
-* Expert API & Web Management: Leverage Snyk's deep expertise to optimize your security testing strategy.
-* Reduced Operational Overhead: Free up your internal resources by outsourcing management of API & Web scanning.
-* Enhanced Security Posture: Proactive vulnerability identification and remediation minimize your risk exposure.
-* Tailored Testing Approach: Customized scan profiles and vulnerability curation ensure accurate and relevant results.
-* Accelerated Remediation: Clear and actionable remediation guidance enables swift vulnerability resolution.
-* Continuous Security Monitoring: Maintain ongoing security vigilance with proactive scan management and coverage optimization.
+* Expert API and Web management: Use the deep Snyk expertise to optimize your security testing strategy.
+* Reduced operational overhead: Free up your internal resources by outsourcing management of API and Web scanning.
+* Enhanced security posture: Proactive vulnerability identification and remediation minimize your risk exposure.
+* Tailored testing approach: Customized scan profiles and vulnerability curation ensure accurate and relevant results.
+* Accelerated remediation: Clear and actionable remediation guidance enables swift vulnerability resolution.
+* Continuous security monitoring: Maintain ongoing security vigilance with proactive scan management and coverage optimization.
 
-## Managed Web & API activities
+## Managed Web and API activities
 
-Snyk API & Web Managed Scans encompass a comprehensive suite of activities designed to ensure thorough and effective security testing:
+Snyk API and Web Managed Scans encompass a comprehensive suite of activities designed to ensure thorough and effective security testing:
 
 Target setup and configuration
 
 * Precise addition and configuration of target applications, based on detailed customer specifications.
 * Configuration of authentication settings, including complex login flows and session management.
 * Definition of target scope and exclusions to optimize scan efficiency and accuracy.
-* Configuration of API testing in the API & Web scans.
+* Configuration of API testing in the API and Web scans.
 
 Dynamic application scanning
 
-* Initiation and scheduling of API & Web scans, tailored to your application's architecture and complexity.
+* Initiation and scheduling of API and Web scans, tailored to your application's architecture and complexity.
 * Continuous monitoring of scan progress and performance, with real-time adjustments as needed.
 * Automated and manual verification of scan results to ensure accuracy and completeness.
 * Implementation of advanced crawling techniques to find hidden endpoints.
@@ -36,13 +36,13 @@ Comprehensive scan coverage optimization
 * Detailed analysis of scan coverage to identify and address gaps in testing.
 * Dynamic adjustment of scan settings, including crawling patterns and authentication parameters, to maximize coverage.
 * Validation of application state and behavior during scanning to ensure accurate results.
-* Testing of Single Page Applications (SPA's) and complex web applications.
+* Testing of Single Page Applications (SPAs) and complex web applications.
 
 Customized scan profile development
 
 * Creation of tailored scan profiles to meet specific testing requirements, including maximum scan duration, user flow recording, and crawling patterns.
 * Configuration of targeted vulnerability checks, focusing on critical areas of concern.
-* Enforcement of scanning speed and resource utilization to minimize impact on application performance.
+* Enforcement of scanning speed and resource use to minimize impact on application performance.
 * API scan profile creation.
 
 Vulnerability triage and curation
@@ -59,11 +59,11 @@ Detailed scan result analysis and remediation guidance
 
 API scripting and automation
 
-* Development of scripts to automate routine API & Web tasks and bulk changes.
+* Development of scripts to automate routine API and Web tasks and bulk changes.
 
 Expert security advisory
 
-* Ongoing consultation on API & Web best practices and security testing strategies.
+* Ongoing consultation on API and Web best practices and security testing strategies.
 * Assistance with integration setup and configuration.
 * Proactive recommendations for improving application security posture.
 * If high findings are discovered, Snyk will manually validate and communicate these findings, along with any recommended mitigation actions, to the customer-designated point-of-contact within 24 business hours of validation.
@@ -71,7 +71,7 @@ Expert security advisory
 
 ## Service requests
 
-Snyk API & Web Managed Scans are delivered through:
+Snyk API and Web Managed Scans are delivered through:
 
 ### Proactive services
 
@@ -80,12 +80,12 @@ Snyk API & Web Managed Scans are delivered through:
 
 ### Customer-initiated requests
 
-* On-demand support for all activities outlined in the 'Managed Web & API activities' Section above, submitted via a private Slack channel or email. Other methods of secure communication are available.
+* On-demand support for all activities outlined in the Managed Web and API activities section, submitted through a private Slack channel or email. Other methods of secure communication are available.
 * Required information for each request includes: Account Name, Target Name, Target URL, and the specific service requested.
 
 ## Plans and plan hours
 
-Snyk API & Web Managed Scans are offered in four tiers, each with a defined maximum monthly service hour limit:
+Snyk API and Web Managed Scans are offered in four tiers, each with a defined maximum monthly service hour limit:
 
 | Plan tier | Typical target range | Monthly hour limit                                      |
 | --------- | -------------------- | ------------------------------------------------------- |
@@ -96,7 +96,7 @@ Snyk API & Web Managed Scans are offered in four tiers, each with a defined maxi
 
 ## How service hours work
 
-* Each Managed API & Web plan includes a defined number of service hours per month.
+* Each Managed API and Web plan includes a defined number of service hours per month.
 * Service time is deducted from the monthly allowance, with a minimum charge of 30 minutes per request, rounded to the nearest 30-minute increment.
 * We prioritize efficient service delivery and group requests whenever possible to maximize your available hours.
 * A detailed quarterly time report is provided, outlining all services performed.
@@ -115,11 +115,11 @@ Snyk API & Web Managed Scans are offered in four tiers, each with a defined maxi
 * Monthly scheduled readout call to review the report, scheduled scans, and to provide remediation guidance
 * Quarterly report of hours, customer requests, and all activities performed.
 
-Snyk API & Web Managed Scans are designed to be adaptable to a customer's evolving needs, offering support when and if it's needed over the term of the subscription. The monthly maximum hours allowable under the plan type are determined by the plan you purchase. The maximum hours represent the maximum number of hours per month of Snyk services performed throughout the term of the subscription and do not roll over or accumulate from month to month.
+Snyk API and Web Managed Scans are designed to be adaptable to a customer's evolving needs, offering support when and if it's needed over the term of the subscription. The monthly maximum hours allowable under the plan type are determined by the plan you purchase. The maximum hours represent the maximum number of hours per month of Snyk services performed throughout the term of the subscription and do not roll over or accumulate from month to month.
 
 ## Key assumptions
 
-This section outlines the key assumptions underlying Snyk API & Web Managed Scans. These assumptions are critical for ensuring effective service delivery and client satisfaction.
+This section outlines the key assumptions underlying Snyk API and Web Managed Scans. These assumptions are critical for ensuring effective service delivery and client satisfaction.
 
 Failure to meet such assumptions may necessitate additional troubleshooting, reconfiguration, or remediation work. This additional work will be charged against your monthly service hour allocation. In addition, while Snyk commits to a 1-business-day response time, resolution timeframes may be extended if certain assumptions are not met.
 
