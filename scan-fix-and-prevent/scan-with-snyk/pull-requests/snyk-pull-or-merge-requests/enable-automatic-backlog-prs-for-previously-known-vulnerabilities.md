@@ -11,10 +11,10 @@ When Snyk creates automatic PRs for vulnerabilities, the following rules are app
 
 * If you select **Retest now** for the Project, a scan is run manually, and the 24-hour window is marked as having had a scan run. No automatic PR is created until the next automated scan runs.
 * One pull request is created per Project with a [priority score](../../../manage-risk/prioritize-issues-for-fixing/priority-score.md) of 700 and above.
-* Fixing a vulnerability by upgrading a package may sometimes introduce a new vulnerability. Snyk will only automatically create such a pull request if the fixed vulnerabilities are a higher severity than any new ones introduced.
+* Fixing a vulnerability by upgrading a package can sometimes introduce a new vulnerability. Snyk automatically creates such a pull request only if the fixed vulnerabilities are a higher severity than any new ones introduced.
 * Pull requests are created based on the **Test & Automated Pull Request Frequency** settings.
   * To update the **Test & Automated Pull Request Frequency**, navigate to **Projects** and select your Open Source Project.
-  * Navigate to **Settings** and select an option from the pulldown list.
+  * Navigate to **Settings** and select an option from the dropdown list.
 
 To determine when your last 24-hour window began, check the Project issue card for **Snapshot taken by recurring test**.
 
@@ -42,7 +42,7 @@ The configuration settings apply to all Projects in that Organization. You can a
    This retrieves previously declared vulnerabilities from the Project's backlog.
 4. Select the **Fix Strategy** for your Backlog PRs.
 
-* By default, the fix strategy will be a single PR at the vulnerability level. Snyk opens one PR each day for issues in your backlog, fixing the top vulnerability it finds.
+* By default, the fix strategy is a single PR at the vulnerability level. Snyk opens one PR each day for issues in your backlog, fixing the top vulnerability it finds.
 * You can check **Fix all vulnerabilities for the same dependency in a single PR**. This selects the vulnerability with the highest priority and a fix to resolve it, as well as fixes for other vulnerabilities in the same dependency.
 
 5. Click **Save**.

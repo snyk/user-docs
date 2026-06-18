@@ -21,7 +21,7 @@ The dependency card provides a [Header section](issue-card-information.md#header
 
 * [Severity level](../../manage-risk/prioritize-issues-for-fixing/severity-levels.md): for example, **High**. For dependencies with multiple severity levels, the severity shown in the header is the maximum of all listed issues under that dependency.
 * Dependency name: for example, **jsonwebtoken** or **libxmljs2**.
-* **Score**: [Risk Score](../../manage-risk/prioritize-issues-for-fixing/risk-score.md) or [Priority score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md): 0 to 1,000. For dependencies with multiple scores, the score shown in the header is the maximum of all listed issues under that dependency. This will show as Priority score unless you are opted-in to the Early Access for Risk score.
+* **Score**: [Risk Score](../../manage-risk/prioritize-issues-for-fixing/risk-score.md) or [Priority score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md): 0 to 1,000. For dependencies with multiple scores, the score shown in the header is the maximum of all listed issues under that dependency. This shows as Priority score unless you are opted in to the Early Access for Risk score.
 * Tabs separating out the fixable issues, issues with no supported fix, and vulnerable dependencies.
 
 ### Expanded vulnerability section
@@ -32,7 +32,7 @@ The dependency card provides a [Header section](issue-card-information.md#header
 * Type: **VULNERABILITY** or LICENSE ISSUE
 * Links to [CWE](https://cwe.mitre.org/index.html) (Common Weakness Enumeration), [CVSS](https://www.first.org/cvss/calculator/3.1) (Common Vulnerability Scoring System), and [Snyk Vulnerability Database](https://snyk.io/vuln) information for the issue. You can use these links to view more information about the CWE, CVE, and CVSS scores or navigate to the Snyk Vulnerability Database information for a specific vulnerability from its issue card.
 * [**Exploit maturity**](../../manage-risk/prioritize-issues-for-fixing/view-exploits.md): for example, **Mature** or **Proof Of Concept**, which indicates how well known the implementation of this exploit is.
-* The exploit's **reachability**, for example, **Reachable**. This indicates whether a path from your first party code to the vulnerable code element exists, For information and an example, see [Reachable vulnerabilities](../../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md).
+* The exploit's **reachability**, for example, **Reachable**. This indicates whether a path from your first-party code to the vulnerable code element exists. For information and an example, see [Reachable vulnerabilities](../../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md).
 * **Fixed in:** The file the vulnerability is fixed in
 * **Social Trends**: Snyk occasionally shows a [Trending](../../manage-risk/prioritize-issues-for-fixing/vulnerabilities-with-social-trends.md) banner for issues that are being actively discussed on X (formerly known as Twitter).
 

@@ -19,36 +19,36 @@ Reports are organized into multiple categories:
 
 Snyk reports provide the visibility and analytics needed to drive data-based conversations between development and security.
 
-Security professionals can easily access, analyze, and share Snyk security data to track developer adoption and success, identify where the greatest amount of risk lies to prioritize remediation effectively, and understand the overall risk posture across the Organization's application portfolio.
+Security professionals can access, analyze, and share Snyk security data to track developer adoption and success, identify where the greatest amount of risk lies to prioritize remediation effectively, and understand the overall risk posture across the Organization's application portfolio.
 
 Snyk Reports offer analytics across all of your Projects, displaying detailed and aggregated data about Projects and issues. Data displayed in each report is scoped to the Snyk Organization or Group in which you are working.
 
-Snyk Reports are highly flexible, enabling you to display specifically selected data in the appropriate view to answer key security questions.
+Snyk Reports are highly flexible and let you display specifically selected data in the appropriate view to answer key security questions.
 
 {% hint style="info" %}
-Deactivated Projects and their respective results will not appear in the Reports area.
+Deactivated Projects and their respective results do not appear in the Reports area.
 {% endhint %}
 
 You can view dependencies and license information for all Projects in your Group or Organization. For more details, navigate to the [Dependencies and licenses](../../dependencies-and-licenses/) page.
 
 Navigate to **Analytics** > **Reports** to see all available reports.
 
-After you selected a specific report, you can switch to a different report from the dropdown in the upper left corner.
+After you select a specific report, you can switch to a different report from the dropdown in the upper left corner.
 
 ## Snyk reporting filters
 
-All reports are filterable by a number of attributes, enabling users to create the appropriate horizontal or vertical slice of the business for their use case. You can see the available filters in the dropdown furthest right at the top.
+You can filter all reports by a number of attributes to create the appropriate horizontal or vertical slice of the business for your use case. You can see the available filters in the dropdown furthest right at the top.
 
 If you do not select or enter any values for a particular key, the filter is not applied.
 
 ### Exclude filters
 
-In addition to selecting values to include, you can exclude specific values using the `is not` option available across many report filters. This allows you to:
+In addition to selecting values to include, you can exclude specific values using the `is not` option available across many report filters. You can:
 
 * **Remove unwanted results** (for example, exclude certain Organizations, Project types, or asset names).
 * **Spot gaps more easily** (for example, find Projects not in a collection, or assets missing specific tags).
 
-To use an exclude filter, first select the filter, then select the drop-down menu next to the filter name, and select `is Not` . Select the items you'd like to exclude.
+To use an exclude filter, first select the filter, then select the dropdown menu next to the filter name, and select `is Not` . Select the items you'd like to exclude.
 
 The resulting filter shows "{filterName} is not: {excluded items}"
 
@@ -60,7 +60,7 @@ A specific filter type can only be used once - it is not possible to have both a
 
 In a given filter, all values selected are separated by an OR operator. For example, if you select the values `Critical` and `High` for the `Issue Severity` filter, Snyk displays issues that have a severity of either `Critical` or `High`.
 
-With exclude filters, if you select `Is not Critical` in the Issue Severity filter, Snyk will display issues of all other severities except Critical.
+With exclude filters, if you select `Is not Critical` in the Issue Severity filter, Snyk displays issues of all other severities except Critical.
 
 Filters are separated by an AND operator. For example, if you select the `Critical` value for the `Issue Severity` filter and the `Resolved` value for the `Issue Status` filter, Snyk displays issues that are both `critical` severity and `resolved`.
 
@@ -68,7 +68,7 @@ This same logic applies when using exclusions. For example, if you exclude `Crit
 
 ### Stateful URLs for filtered views
 
-Every time a filter value is applied, the app.snyk.io URL is updated to persist the state of the page. You can bookmark and copy the URL, and share it with anyone who has the appropriate Snyk Organization or Group access. For easy sharing, use the **Copy URL** button in the upper-right corner of the report list.
+Every time you apply a filter value, Snyk updates the app.snyk.io URL to persist the state of the page. You can bookmark and copy the URL, and share it with anyone who has the appropriate Snyk Organization or Group access. For easy sharing, click **Copy URL** in the upper-right corner of the report list.
 
 Exclude filter selections are also saved in the URL, so your "not equal to" filters persist when you share or bookmark a view.
 
@@ -89,41 +89,41 @@ Click **Export to PDF** to download a PDF of the report content and its context.
 * Viewed scope (Snyk Organization or Group)
 * Applied filters
 
-Exporting a PDF enables you to share a report with users who do not log in to the Snyk Web UI, for example, an executive or external auditor. The PDF export offers point-in-time attestation with the necessary context.
+Exporting a PDF lets you share a report with users who do not log in to the Snyk Web UI, for example, an executive or external auditor. The PDF export offers point-in-time attestation with the necessary context.
 
 For tabular data on reports, the PDF export shows only the first 50 results. The PDF export includes links to view the report in the browser.
 
 ### Download a Snyk report to a CSV file
 
-You can use the **Download CSV** button on the right in the report to download data presented in tables to CSV. This information can be used, for example, for prioritization or for a one-time analysis in a spreadsheet.
+Click **Download CSV** in the report to download data presented in tables to CSV. You can use this information, for example, for prioritization or for a one-time analysis in a spreadsheet.
 
 All columns displayed in the UI are included in the CSV output. In addition, any columns that contain hyperlinks in the UI are split into two columns: one containing the text and the other containing the linked URL.
 
 There is no row limit, but there is a 5GB file size limit.
 
-The **Download CSV** button is disabled if there are no vulnerabilities in the report, either because the Organization has no vulnerable Projects or because the applied filters remove all vulnerabilities. In this case, the report can still be exported to PDF if proof of zero vulnerabilities is required.
+**Download CSV** is disabled if there are no vulnerabilities in the report, either because the Organization has no vulnerable Projects or because the applied filters remove all vulnerabilities. In this case, you can still export the report to PDF if you need proof of zero vulnerabilities.
 
 ## Column sorting
 
 Sort columns in tables by clicking the arrows next to the column header. Click once to sort in ascending order, twice to sort in descending order, and three times to remove the sort from that column. Multi-column sorting is supported.
 
-When columns are sorted, the app.snyk.io URL is updated to persist the state of the page, allowing for bookmarking, copying, and sharing.
+When you sort columns, Snyk updates the app.snyk.io URL to persist the state of the page, allowing for bookmarking, copying, and sharing.
 
 ## Modify Snyk report columns
 
-In some reports, tables may include an option to modify columns. When this option is available, you can use it to select the columns to display in the UI. The export features (PDF and CSV) respect the selected columns.
+In some reports, tables include an option to modify columns. When this option is available, you can use it to select the columns to display in the UI. The export features (PDF and CSV) respect the selected columns.
 
-When columns are modified, the app.snyk.io URL is updated to persist the state of the page, allowing for bookmarking, copying, and sharing.
+When you modify columns, Snyk updates the app.snyk.io URL to persist the state of the page, allowing for bookmarking, copying, and sharing.
 
 ## Saved views
 
-The Saved Views feature enables collaboration based on shared, consistent, and customizable reports. This feature is available at Organization and Group level, in the **Analytics** menu, under the **Reports** tab. It allows you to customize and save filter settings for your reports, which you can then reuse.
+The Saved Views feature enables collaboration based on shared, consistent, and customizable reports. This feature is available at Organization and Group level, in the **Analytics** menu, under the **Reports** tab. It lets you customize and save filter settings for your reports, which you can then reuse.
 
-To make it easier to share the view outside of the Snyk platform, the URL of a saved view remains the same after it is created, regardless of any changes you make to it.
+To make it easier to share the view outside of the Snyk platform, the URL of a saved view remains the same after you create it, regardless of any changes you make to it.
 
 ### Prerequisites
 
-To create, edit, and remove a saved view, you must have **Edit reports** permission. Saved views are not private. After being created, Saved Views are visible to all users with **View reports** permission. Only Organization and Group Admins can assign these permissions. For more information, see [User role management](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management).
+To create, edit, and remove a saved view, you must have **Edit reports** permission. Saved views are not private. After you create them, Saved Views are visible to all users with **View reports** permission. Only Organization and Group Admins can assign these permissions. For more information, see [User role management](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management).
 
 To assign report permissions:
 
@@ -154,7 +154,7 @@ To update a saved view:
 2. Navigate to the **Analytics** menu > **Reports** tab and select the report that contains the saved view you want to update.
 3. From the **Standard view** filter, select and load the view you want to update.
 4. Make any necessary changes to the report view.
-5. Save the changes by clicking **Save** next to the Saved Views dropdown. This overwrites the existing view.
+5. Click **Save** next to the Saved Views dropdown to save the changes. This overwrites the existing view.
 
 ### Rename, delete, or copy the URL of a view
 

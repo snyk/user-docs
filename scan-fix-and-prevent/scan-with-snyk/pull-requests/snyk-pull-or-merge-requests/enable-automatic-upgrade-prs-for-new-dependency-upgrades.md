@@ -6,7 +6,7 @@
 This feature is supported for the following SCM integrations: GitHub, GitHub Enterprise, GitHub Cloud App, Bitbucket Server, Bitbucket Cloud, Bitbucket Connect, GitLab, and Azure Repos.
 {% endhint %}
 
-Keeping dependencies up-to-date is crucial for security, performance, and compatibility. Snyk simplifies the process by scanning Projects for outdated dependencies and proposing updates through automated pull requests. This allows teams to:
+Keeping dependencies up-to-date is crucial for security, performance, and compatibility. Snyk simplifies the process by scanning Projects for outdated dependencies and proposing updates through automated pull requests. This lets teams:
 
 * Review and merge changes in a controlled way.
 * Keep Projects aligned with the latest package versions.
@@ -37,7 +37,7 @@ You can also use this feature with Snyk Broker. To use this feature, you must up
 
 After importing a Git repository, Snyk continuously monitors for vulnerabilities, license, and dependency health issues. In addition to fix advice through the web UI, Snyk can automatically create pull requests (PRs) to solve for a variety of vulnerability types according to your configuration settings.
 
-You can configure Snyk to regularly check your dependency health, recommend dependency upgrades, and automatically submit PRs for upgrades for either an entire Organization or a specific Project. After configuration, Snyk will automatically create PRs for all applicable dependencies as upgrades become available for scanned Projects.
+You can configure Snyk to regularly check your dependency health, recommend dependency upgrades, and automatically submit PRs for upgrades for either an entire Organization or a specific Project. After configuration, Snyk automatically creates PRs for all applicable dependencies as upgrades become available for scanned Projects.
 
 {% hint style="info" %}
 Automatic dependency upgrade PRs are available only for the following SCM integrations: GitHub, GitHub Enterprise, and Bitbucket Cloud.

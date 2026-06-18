@@ -1,10 +1,10 @@
 # Automatically link your Dockerfile with container images using labels
 
-Snyk allows you to link manually or automatically from a Dockerfile to all container images built from it. You can use this to understand the security impact on your running applications and understand which images can be better secured or need to be rebuilt when you take action and update the Dockerfile base image.
+Snyk lets you link manually or automatically from a Dockerfile to all container images built from it. You can use this to understand the security impact on your running applications and understand which images you can secure better or must rebuild when you take action and update the Dockerfile base image.
 
 ## How linked images work
 
-When it is imported or rescanned, the image is analyzed and scanned for vulnerabilities. Image labels are also retrieved from the image manifest. Snyk then checks that:
+When you import or rescan the image, Snyk analyzes and scans it for vulnerabilities. Snyk also retrieves image labels from the image manifest. Snyk then checks that:
 
 * Image labels defining the Dockerfile location exist:
   * (Mandatory) `org.opencontainers.image.source` - URL to the Project repository, for example, `org.opencontainers.image.source="https://github.com/example/test"`
@@ -25,9 +25,9 @@ Using container registry integration, you can get automatic links between import
 
 ## Automatically update and remove links
 
-Links are automatically updated if the Dockerfile labels are updated and are targeting a new location. This can happen during a re-scan or during a recurring scan.
+Snyk automatically updates links if the Dockerfile labels are updated and target a new location. This can happen during a rescan or during a recurring scan.
 
-Links are removed if:
+Snyk removes links if:
 
 * The image Project or Dockerfile Project is deleted.
 * The Dockerfile labels are updated so that they target the Dockerfile location without an existing Project in Snyk or

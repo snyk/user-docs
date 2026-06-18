@@ -15,7 +15,7 @@ You can add configuration to tell Snyk where your private Artifactory Node.js pa
 ## JavaScript language settings
 
 1. Navigate to **Settings** > **Languages** > **JavaScript** and either the npm or Yarn settings, depending on your Project type.
-2. If you have not previously connected to Artifactory, you will be asked to configure an integration first; see [Artifactory Package Repository connection setup](./).
+2. If you have not previously connected to Artifactory, Snyk asks you to configure an integration first; see [Artifactory Package Repository connection setup](./).
 3. Select **Add registry configuration**.
    1. Select **Artifactory** as the Package source.
    2. If you want to configure this registry as the default registry url, leave the scope blank.

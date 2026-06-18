@@ -2,7 +2,7 @@
 
 Any deployed code increases the risk of exploitation of your application and business.
 
-Understanding what code is deployed and where enables you to adopt a remediation strategy that reduces your risk surface area from running code.
+Understanding what code is deployed and where lets you adopt a remediation strategy that reduces your risk surface area from running code.
 
 ## Types of integration
 
@@ -12,11 +12,11 @@ The Deployed risk factor works with the Kubernetes Connector and third-party int
 
 Snyk determines that a container image is deployed by looking for a match between the running images on the Kubernetes cluster and the created Snyk Container Projects.
 
-Snyk uses Kubernetes state information to extract Docker image identifiers that are being executed. The status of a Kubernetes container has image names that are being run by the Kubernetes runtime. A search is performed on the database of known Docker images to find matching names. When the image names are matched, Snyk can display this information in a graph. The graph shows the relationship between the image and the container. \\
+Snyk uses Kubernetes state information to extract Docker image identifiers that are being executed. The status of a Kubernetes container has image names that the Kubernetes runtime runs. Snyk searches the database of known Docker images to find matching names. When the image names match, Snyk can display this information in a graph. The graph shows the relationship between the image and the container. \\
 
 <figure><img src="https://lh6.googleusercontent.com/BoYMeFGbzjUmNmXbmtrklBcl9LLm9S94mwJWkrFA_5E5WIO07BsS3Zv-fbGBlXkNAx4oGnbBtzFijWTxUQbsnlzJI2QqprUJWPevpwBybhmwtzQayYnmW6_Qvhddgz1_vdy-NDZgQKUQhmxnY54xkrI" alt="A vulnerability in a deployed image"><figcaption><p>A vulnerability in a deployed image</p></figcaption></figure>
 
-Kubernetes is very [specific](https://kubernetes.io/docs/concepts/containers/images/#image-names) about how images are managed. Snyk uses the same logic to map the images Snyk knows about. Whenever you scan an Image with Snyk Container, Snyk collects information about the image name and image ID. Snyk uses this information to map images against information from Kubernetes.
+Kubernetes is [specific](https://kubernetes.io/docs/concepts/containers/images/#image-names) about how images are managed. Snyk uses the same logic to map the images Snyk knows about. Whenever you scan an Image with Snyk Container, Snyk collects information about the image name and image ID. Snyk uses this information to map images against information from Kubernetes.
 
 {% hint style="info" %}
 Snyk adheres to the defined naming standards as documented for [Kubernetes](https://kubernetes.io/docs/concepts/containers/images/#image-names) and Docker [images](https://docs.docker.com/engine/reference/commandline/images/) to ensure consistency with Kubernetes.
@@ -42,7 +42,7 @@ Result: Image successfully matched, and risk factor applied
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-07-12 at 02.04.31.png" alt="Image matecjed"><figcaption><p>Image matched</p></figcaption></figure>
 
-The container image is scanned using the Snyk Container CLI only, referencing the full name of the image, including the registry. Snyk recommends doing this after the image is built and before it is deployed to your cluster.
+Scan the container image using the Snyk Container CLI only, referencing the full name of the image, including the registry. Snyk recommends doing this after you build the image and before you deploy it to your cluster.
 
 An example scan follows:
 
@@ -66,13 +66,13 @@ Result: Image successfully matched, and risk factor applied
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-07-12 at 02.05.31.png" alt="Matching of names"><figcaption><p>Matching of names</p></figcaption></figure>
 
-The container image is scanned referencing a partial name, omitting the container registry.
+Scan the container image referencing a partial name, omitting the container registry.
 
 An example scan follows:
 
 `$ snyk container monitor my-app:lates`t
 
-Insights is not able to match this Project as the names do not match.
+Insights cannot match this Project because the names do not match.
 
 The image is deployed to your Kubernetes cluster with this example manifest.
 
@@ -100,7 +100,7 @@ Snyk recommends always specifying the full name of the image in your CLI command
 
 ### Third-party integrations
 
-The Deployed risk factor is extended to third-party integrations through real-time monitoring of Kubernetes clusters, along with data from external sources. This enables a comprehensive assessment of deployed risks across diverse environments. By integrating with third-party tools, Snyk can cross-reference vulnerabilities from various sources, ensuring that the deployed risk factor reflects the most accurate and current threat landscape. This holistic approach allows Snyk to provide actionable insights and maintain robust security postures across all integrated platforms.
+Snyk extends the Deployed risk factor to third-party integrations through real-time monitoring of Kubernetes clusters, along with data from external sources. This supports the assessment of deployed risks across environments. By integrating with third-party tools, Snyk can cross-reference vulnerabilities from various sources, so the Deployed risk factor reflects current threats. This lets Snyk provide actionable insights and maintain security across all integrated platforms.
 
 ## Technical details for Snyk Insights Deployed risk factor
 

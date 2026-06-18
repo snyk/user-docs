@@ -2,7 +2,7 @@
 
 You can use the **Set Coverage Control** action from the Policies view to identify your application assets, monitor them, and prioritize the risks. You can select one or multiple security products and also specify a timeframe for when the last scan should have taken place.
 
-Identifying and setting coverage policies allows your team to define where certain security controls are expected to be in place.
+Identifying and setting coverage policies lets your team define where certain security controls are expected to be in place.
 
 The following example filters out assets that should have Snyk Open Source and Snyk Code security controls in place and then sets the coverage policies.
 

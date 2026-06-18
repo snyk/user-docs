@@ -20,7 +20,7 @@ If authentication is required for access to your custom registry, you must confi
 
 After the integration is set up, you can configure Maven settings by navigating to **Settings** > **Languages** > **Java**.
 
-You can choose whether to use Artifactory as a mirror or as an additional repository where your artifacts will reside. These settings will be very similar to what you have in `~/.m2/settings.xml`.
+You can choose whether to use Artifactory as a mirror or as an additional repository where your artifacts reside. These settings are very similar to what you have in `~/.m2/settings.xml`.
 
 ## Mirrors
 
@@ -40,7 +40,7 @@ For example, if the URL is `http://artifactory.company.io/artifactory/libs-relea
 
 ## Additional repositories
 
-Alternatively, you can configure repositories that will be used as additional locations to check for artifacts.
+Alternatively, you can configure repositories to use as additional locations to check for artifacts.
 
 Repositories are configured in the same way as [Mirrors](artifactory-registry-for-maven.md#mirrors), but do not require **Mirror Of**.
 

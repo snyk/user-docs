@@ -11,9 +11,9 @@ To create and scan a Cloud Environment for Google, you must provide the Google s
    For example, `snyk-cloud-mt-us-abcd1234@my-project.iam.gserviceaccount.com`
 2. Enter the identity provider in the **Identity provider** field. This must be a full URL including workload identity pool ID, identity provider ID, and project ID.\
    For example, `https://iam.googleapis.com/projects/12345567/locations/global/workloadIdentityPools/workload-identity-123456/providers/identity-provider-123456`
-3. Optionally, enter an environment name. If one is not provided, Snyk will use your Google Project name.
+3. Optionally, enter an environment name. If one is not provided, Snyk uses your Google Project name.
 4. Select **Approve and begin scan**.
-5. You will see a confirmation message: **Google Cloud environment successfully added**.\
+5. You see a confirmation message: **Google Cloud environment successfully added**.\
    Select **Add another environment** to return to the **Add Google Cloud Environment** modal and onboard a new account, or select **Go to settings** if you are finished:
 
 <figure><img src="../../../../../.gitbook/assets/snyk-cloud-onboard-google-ui-success.png" alt=""><figcaption><p>Success message after adding a Google Cloud environment in the Snyk Web UI</p></figcaption></figure>

@@ -2,7 +2,7 @@
 
 ## Access to reporting
 
-If reporting is not loading in the Snyk UI, follow these troubleshooting steps that may help resolve the issue.
+If reporting is not loading in the Snyk Web UI, follow these troubleshooting steps to help resolve the issue.
 
 {% hint style="info" %}
 Allowlisting may be necessary due to some firewall settings. If allowlisting snyk.io was required for the initial implementation, additional allowlisting may be needed for new reporting access. Contact your account team for more information.
@@ -16,17 +16,17 @@ Resolved issues are issues detected in the previous scan snapshot that no longer
 \
 Changes in the Snyk code **resolved** column between snapshots may occur for any of the following reasons:
 
-* The issue was fixed between the two scans and is therefore marked as resolved.
-* The engine rules were improved, which may change the scan results.\
-  This may add new issues or resolve previously detected issues.
-* The code changed in a way that caused the issue to be defined differently, thus changing the issue ID.\
+* The issue was fixed between the two scans and is marked as resolved.
+* The engine rules were improved, which can change the scan results.\
+  This can add new issues or resolve previously detected issues.
+* The code changed in a way that caused the issue to be defined differently, changing the issue ID.\
   In this situation, the original issue ID is marked as **resolved,** and a new issue ID is created.
 
 ## Data freshness
 
-Data is available in reporting approximately one hour after a scan occurs. Data refreshes hourly and should, therefore, always be updated within two hours. Note the exception for ignores that follows.
+Data is available in reporting approximately one hour after a scan occurs. Data refreshes hourly and so is always updated in two hours. Note the exception for ignores that follows.
 
-When you navigate to **Inventory** > **All Assets** and other inventory views from a filter in the **Asset Dashboard** report or **Inventory Overview**, you may see a notification indicating that data is still being processed and temporary inconsistencies may occur. The data source for the Inventory pages differs from that of the Reporting pages, leading to temporary discrepancies.
+When you navigate to **Inventory** > **All Assets** and other inventory views from a filter in the **Asset Dashboard** report or **Inventory Overview**, you might see a notification indicating that data is still being processed and temporary inconsistencies can occur. The data source for the Inventory pages differs from that of the Reporting pages, leading to temporary discrepancies.
 
 ## Ignores in reporting
 
@@ -40,14 +40,14 @@ Tables in PDF exports are limited to 50 results. A link is available at the bott
 
 Session data is shared between browser tabs. Snyk recommends you have reporting tabs for one Group or one Organization open in the browser at any one time because having tabs open for different Groups or Organizations can result in unexpected behavior.
 
-Customers may experience an error if hundreds of filter values are applied on a page. This is the result of the [stateful URLs for filtered views](./#stateful-urls-for-filtered-views) capability and a URL length limit. If you experience an error with many filter values applied, consider alternate filter mechanisms such as [Project collections](../../../snyk-platform-administration/snyk-projects/project-collections-groupings/project-collections.md).
+You might experience an error if you apply hundreds of filter values on a page. This is the result of the [stateful URLs for filtered views](./#stateful-urls-for-filtered-views) capability and a URL length limit. If you experience an error with many filter values applied, consider alternate filter mechanisms such as [Project collections](../../../snyk-platform-administration/snyk-projects/project-collections-groupings/project-collections.md).
 
 ## Filtered views
 
-The way filtered views are managed in the URL may change over time.
+The way filtered views are managed in the URL can change over time.
 
 If the view changes, you can generate a new filtered URL in the Snyk Web UI and save it as a bookmark or share it with others.
 
 ## Deactivated Projects
 
-Deactivated Projects and their respective results will not appear in the Reports area.
+Deactivated Projects and their respective results do not appear in the Reports area.

@@ -1,6 +1,6 @@
 # Custom versioning schema for custom base images
 
-The Custom Versioning Schema (CVS) is a way for Snyk to understand your company’s container image tag versioning schema. It enables Snyk to give more accurate base image upgrade recommendations.
+The Custom Versioning Schema (CVS) is a way for Snyk to understand your company’s container image tag versioning schema. It helps Snyk give more accurate base image upgrade recommendations.
 
 ## Prerequisites for Snyk CVS
 
@@ -8,7 +8,7 @@ CVS is part of the Snyk Container Custom Base Images feature. For more informati
 
 ## When to use CVS
 
-If your container image's tags follow a versioning schema other than [Semantic Versioning](https://semver.org/) (SemVer), it is highly recommended that you select the Custom Versioning Schema for your image repositories.
+If your container image's tags follow a versioning schema other than [Semantic Versioning](https://semver.org/) (SemVer), Snyk recommends that you select the Custom Versioning Schema for your image repositories.
 
 ## CVS expression guide
 
@@ -24,17 +24,17 @@ snyk/example:1.2_V4
 snyk/example:1.3_V1
 ```
 
-Because this repository’s image tags do not follow the semantic versioning standard, it is necessary to describe the tags using a custom versioning schema.
+Because this repository’s image tags do not follow the semantic versioning standard, you must describe the tags using a custom versioning schema.
 
 The  `snyk/example` tag schema is defined by the following elements, in this order:
 
 1. A number whose value has the highest significance (MAJOR part)
 2. A period
-3. Another number, whose significance is less than the first number number (MINOR part)
+3. Another number, whose significance is less than the first number (MINOR part)
 4. An underscore followed by the letter "V" (version)
 5. A number whose value is the least significant.
 
-For Snyk to understand the different parts and their role, it is necessary to define a schema. In this regular expression, named groups represent the significant variables.
+For Snyk to understand the different parts and their role, you must define a schema. In this regular expression, named groups represent the significant variables.
 
 The schema below is a translated version of the above example and its elements.
 
@@ -179,7 +179,7 @@ Since `1.3` and `1.3.5` have the same issue as `1.2` and `1.2.4`, the recommenda
 
 * CVS uses a subset of the ECMAScript regex. See the [guide on ECMAScript regex syntax by MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 * Backreferences and lookahead assertions are not supported. Internally, Snyk uses the RE2 library. For a full list of unsupported features, see [Syntax on re2 GitHub](https://github.com/google/re2/wiki/Syntax).
-* Note that the regular expression string is parsed as an ECMAScript regex and then internally converted to RE2 syntax. For example, use the `(?<name>re)` syntax for grouping. `(?P<name>re)` will not parse correctly.
+* Note that the regular expression string is parsed as an ECMAScript regex and then internally converted to RE2 syntax. For example, use the `(?<name>re)` syntax for grouping. `(?P<name>re)` does not parse correctly.
 * In the list of [supported features](https://github.com/google/re2/wiki/Syntax), take into consideration only the featur&#x65;**,** not the syntax.
 
 ### Size limitations
@@ -194,7 +194,7 @@ The maximum length of the expression is 1,000 characters, with up to 100 COMPARE
 
 ### Compare logic
 
-* If a compare group is an unsigned integer, compare its numeric value. Else, it will be treated as a string.
+* If a compare group is an unsigned integer, compare its numeric value. Otherwise, Snyk treats it as a string.
 * Comparison of non-numeric characters is done by comparing their sequences of UTF-16 code unit values. For more information, see [ECMAScript® 2023 Language Specification, 7.2.13 IsLessThan](https://tc39.es/ecma262/#sec-abstract-relational-comparison).
 
 ### Matcher logic

@@ -1,6 +1,6 @@
 # Scan your Dockerfile
 
-Snyk Container allows you to analyze your Dockerfile and scan base images from the Dockerfile.
+Snyk Container lets you analyze your Dockerfile and scan base images from the Dockerfile.
 
 ## Prerequisites for Dockerfile analysis
 

@@ -1,6 +1,6 @@
 # Security policy results
 
-A newly-assigned policy, or changes to a policy, apply when the Project is re-scanned. This is what Project collaborators see when an action is applied to a vulnerability:
+A newly assigned policy, or changes to a policy, apply when the Project is re-scanned. This is what Project collaborators see when an action is applied to a vulnerability:
 
 <table data-header-hidden><thead><tr><th width="246">Action</th><th>What Project collaborators see</th></tr></thead><tbody><tr><td>Change severity to…</td><td>The new severity, as well as the originally assigned severity</td></tr><tr><td>Ignore current and future instances</td><td>An ignored issue looking like a manual ignore but labeled <strong>ignored by Security Policy</strong>.</td></tr></tbody></table>
 

@@ -1,6 +1,6 @@
 # Google Cloud integration
 
-Snyk integrations with your [Google Cloud](https://cloud.google.com/) Projects to find issues in your cloud configurations and generate cloud context to help you prioritize your vulnerabilities.
+Snyk integrates with your [Google Cloud](https://cloud.google.com/) Projects to find issues in your cloud configurations and generate cloud context to help you prioritize your vulnerabilities.
 
 You can onboard a Google Cloud account to Snyk using the following methods:
 

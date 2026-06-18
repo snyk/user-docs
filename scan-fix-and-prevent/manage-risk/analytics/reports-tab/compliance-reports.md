@@ -9,7 +9,7 @@ The Compliance reports section includes the following reports:
 
 ## CWE Top 10 KEV report
 
-The [CWE Top 10 KEV Weaknesses](https://cwe.mitre.org/top25/archive/2023/2023_kev_list.html) list identifies the top ten CWEs in the Cybersecurity and Infrastructure Security Agency’s (CISA) [Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (KEV) Catalog, a database of security flaws in software applications and weaknesses that have been exposed and leveraged by attackers.
+The [CWE Top 10 KEV Weaknesses](https://cwe.mitre.org/top25/archive/2023/2023_kev_list.html) list identifies the top ten CWEs in the Cybersecurity and Infrastructure Security Agency’s (CISA) [Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (KEV) Catalog, a database of security flaws in software applications and weaknesses that attackers have exposed and exploited.
 
 The report is based on the version released in 2023 by Mitre. The supported products are Snyk Open Source, Snyk Container, and Snyk Code.
 
@@ -27,7 +27,7 @@ Each control in the list (A1, A2, and so on) is based on a list of Common Weakne
 
 The CWEs are mapped to Snyk-IDs (), which are mapped to issues.
 
-For example, the critical vulnerability [SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720) is classified as [CWE-94](https://cwe.mitre.org/data/definitions/94.html), which is part of the OWASP TOP 10 [A03:2025 - Injection](https://owasp.org/Top10/2025/A05_2025-Injection/). All the issues related to this vulnerability will be under the A03 category.
+For example, the critical vulnerability [SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720) is classified as [CWE-94](https://cwe.mitre.org/data/definitions/94.html), which is part of the OWASP TOP 10 [A03:2025 - Injection](https://owasp.org/Top10/2025/A05_2025-Injection/). All the issues related to this vulnerability appear under the A03 category.
 
 Learn more by using the [OWASP TOP 10 Learning path](https://learn.snyk.io/learning-paths/owasp-top-10/) on Snyk Learn.
 
@@ -56,7 +56,7 @@ The report identifies PCI-DSS risks and violations based on the following PCI-DS
 1. **Requirement 6.2.4:** Engineers use various techniques to prevent or mitigate common software attacks and related vulnerabilities in bespoke and custom software. This includes but is not limited to the following methods:
    * Injection attacks, including SQL, LDAP, XPath, or other command, parameter, object, fault, or injection-type flaws.
    * Attacks on data and data structures, including attempts to manipulate buffers, pointers, input data, or shared data.
-   * Attacks on cryptography usage, including attempts to exploit weak, insecure, or inappropriate cryptographic implementations, algorithms, cipher suites, or modes of operation.
+   * Attacks on cryptography use, including attempts to exploit weak, insecure, or inappropriate cryptographic implementations, algorithms, cipher suites, or modes of operation.
    * Attacks on business logic, including attempts to abuse or bypass application features and functionalities through the manipulation of APIs, communication protocols and channels, client-side functionality, or other system or application functions and resources. This includes cross-site scripting (XSS) and cross-site request forgery (CSRF).
    * Attacks on access control mechanisms, including attempts to bypass or abuse identification, authentication, or authorization mechanisms or attempts to exploit weaknesses in the implementation of such mechanisms.
    * Attacks using any “high-risk” vulnerabilities identified in the vulnerability identification process, as defined in Requirement 6.3.1.
@@ -141,9 +141,9 @@ The breakdown table helps identify the number of vulnerabilities by attack categ
 Use the table to pinpoint major attack categories or Snyk Organizations that lead to PCI-DSS violations. You can click on the figures to explore the specific issues in more detail.
 
 {% hint style="info" %}
-After you investigate and see the actual issues behind the figures, you may proceed by:
+After you investigate and see the actual issues behind the figures, you can proceed by:
 
-* Vulnerability triage and prioritization.
-* Conclude the prevalent CWEs and CVEs by sorting on the CWE/CVE column and filtering those CWEs/CVEs in the [Vulnerabilities Detail Report](compliance-reports.md#vulnerabilities-detail-report) to surface all the vulnerability occurrences across targets and Projects.
-* Run a vulnerability eradication campaign or assign Snyk Learn training to relevant engineering teams.
+* Triaging and prioritizing vulnerabilities
+* Determining the prevalent CWEs and CVEs by sorting on the CWE/CVE column and filtering those CWEs/CVEs in the [Vulnerabilities Detail Report](compliance-reports.md#vulnerabilities-detail-report) to surface all the vulnerability occurrences across targets and Projects
+* Running a vulnerability eradication campaign or assigning Snyk Learn training to relevant engineering teams
 {% endhint %}

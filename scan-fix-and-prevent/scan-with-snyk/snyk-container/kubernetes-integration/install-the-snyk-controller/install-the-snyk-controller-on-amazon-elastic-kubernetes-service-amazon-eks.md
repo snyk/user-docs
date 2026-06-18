@@ -8,13 +8,13 @@ Ensure you have reviewed the [prerequisites for installing the Snyk Controller](
 The installation steps work best for EKS and ECR with the same AWS account. If you have a different setup, contact [Snyk support](https://support.snyk.io).
 {% endhint %}
 
-Installing the Snyk Controller enables you to import and test your running EKS workloads and identify vulnerabilities in their associated images and configurations that can make the workloads less secure. After the workload is imported, Snyk continues to monitor the workload, identifying additional security issues, as new images are deployed and the workload configuration changes.
+Installing the Snyk Controller lets you import and test your running EKS workloads and identify vulnerabilities in their associated images and configurations that can make the workloads less secure. After the workload is imported, Snyk continues to monitor the workload, identifying additional security issues, as new images are deployed and the workload configuration changes.
 
 The steps described below provide instructions for configuring the Snyk Controller to pull and scan private images from ECR.
 
 To install Amazon EKS:
 
-1\. Access your Kubernetes environment. Run the following command in order to add the Snyk Charts repository to Helm:
+1\. Access your Kubernetes environment. Run the following command to add the Snyk Charts repository to Helm:
 
 ```
 helm repo add snyk-charts https://snyk.github.io/kubernetes-monitor --force-update
@@ -51,18 +51,18 @@ kubectl create secret generic snyk-monitor \
         --from-literal=serviceAccountApiToken=bdca4123-dbca-4343-bbaa-1313cbad4231
 ```
 
-5\. Attach policies or roles for nodes. You can do this using one of the below options:
+5\. Attach policies or roles for nodes. You can do this using one of the following options:
 
 #### Attach policies for worker nodes
 
 1. Attach the `NodeInstanceRole` policy. See [Using Amazon ECR Images with Amazon EKS](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.html).
 2. Attach the `AmazonEC2ContainerRegistryReadOnly` policy to your EKS worker nodes.\
-   The Snyk Controller is now able to pull private images when running on those worker nodes.
+   The Snyk Controller can now pull private images when running on those worker nodes.
 
 #### Create an EKS node role for your Node Group and add the Trust Relationship for the IAM Role
 
 1. Follow the instructions on [Amazon EKS node IAM role](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html) and check your existing node role. Ensure you have attached the policy `AmazonEC2ContainerRegistryReadOnly`**.**
-2. For the Snyk Controller to successfully assume the IAM role and pull images from ECR, the role's trust policy must be configured to trust your EKS cluster's OIDC provider. Create the trust policy document in JSON format and apply this trust policy document to the IAM role that the Snyk Controller will use.
+2. For the Snyk Controller to successfully assume the IAM role and pull images from ECR, the role's trust policy must be configured to trust your EKS cluster's OIDC provider. Create the trust policy document in JSON format and apply this trust policy document to the IAM role that the Snyk Controller uses.
 
 ```
 {

@@ -4,7 +4,7 @@ Before you can create a Cloud Environment, you must download an infrastructure a
 
 The template also enables a set of [Google service APIs](https://cloud.google.com/service-usage/docs/enabled-service) for your Google Cloud Project. This ensures that Snyk can use the necessary APIs to scan your Project's resources.
 
-You will use this IaC template to provision the role in [Step 2: Create the Google service account (API)](step-2-create-the-google-service-account-api.md).
+You use this IaC template to provision the role in [Step 2: Create the Google service account (API)](step-2-create-the-google-service-account-api.md).
 
 ## Retrieve the IaC template
 
@@ -54,7 +54,7 @@ The response is a JSON document like the one that follows (trimmed for length):
 
 The `data.attributes.data` field in the preceding output is an escaped JSON string containing the Terraform template with the Google service account.
 
-Before you can use the template to provision the resources, you must unescape the JSON. This can be accomplished in either of the following ways:
+Before you can use the template to provision the resources, you must unescape the JSON. You can do this in either of the following ways:
 
 * [Use `jq`](step-1-download-service-account-iac-template-api.md#use-jq)
 * [Transform the content manually](step-1-download-service-account-iac-template-api.md#transform-the-content-manually)
@@ -68,7 +68,7 @@ Before you can use the template to provision the resources, you must unescape th
 | jq -r .data.attributes.data > snyk_google_iac_template.tf
 ```
 
-This will place the properly-formatted template into the file `snyk_google_iac_template.tf` in your current working directory.
+This places the properly-formatted template into the file `snyk_google_iac_template.tf` in your current working directory.
 
 ### Transform the content manually
 

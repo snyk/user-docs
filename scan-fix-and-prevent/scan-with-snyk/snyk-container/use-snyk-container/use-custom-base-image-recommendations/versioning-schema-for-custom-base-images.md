@@ -6,7 +6,7 @@ You can manage the versioning schema for images imported to Projects for a repos
 
 Snyk recommends updating a custom base image to the latest available version from the pool of images imported as Projects, marked as custom base images, and enabled for recommendations. For more information, see [Enable CBIR](./#enable-cbir).
 
-To determine which is the latest version, Snyk uses a versioning schema that allows comparing image tags.
+To determine which is the latest version, Snyk uses a versioning schema that lets you compare image tags.
 
 Snyk supports the following versioning schemas.
 
@@ -30,10 +30,10 @@ The following commonly used examples are not supported SemVer tags:
 
 ## Single Selection
 
-This versioning schema allows you to manually set a single image as a recommendation.
+This versioning schema lets you set a single image as a recommendation.
 
-When selecting an image, any other previously selected images are automatically unselected.
+When you select an image, Snyk automatically unselects any other previously selected images.
 
 ## Custom versioning schema
 
-If none of the above schemas match your requirements, you may create a custom versioning schema. For more information, see [Custom Versioning Schema for custom base images](custom-versioning-schema-for-custom-base-images.md).
+If none of the preceding schemas match your requirements, you can create a custom versioning schema. For more information, see [Custom Versioning Schema for custom base images](custom-versioning-schema-for-custom-base-images.md).

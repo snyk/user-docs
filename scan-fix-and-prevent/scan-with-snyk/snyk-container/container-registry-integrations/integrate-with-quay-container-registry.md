@@ -1,6 +1,6 @@
 # Integrate with Quay Container Registry
 
-Snyk integrates with Quay Container Registry to enable you to import your container images and monitor them for vulnerabilities.
+Snyk integrates with Quay Container Registry so you can import your container images and monitor them for vulnerabilities.
 
 Snyk tests the images you have imported (Projects) for any known security vulnerabilities, testing them at a frequency you control, and alerts you when new issues are detected.
 
@@ -28,7 +28,7 @@ Snyk tests the connection values, and the page reloads, displaying Quay integrat
 
 When the connection succeeds, you can use Snyk to scan your images from Quay.
 
-Snyk tests and monitors your Quay container images by evaluating the tags in your repositories. After import to Snyk, your image vulnerabilities are identified and can be triaged easily.
+Snyk tests and monitors your Quay container images by evaluating the tags in your repositories. After import to Snyk, Snyk identifies your image vulnerabilities so you can triage them.
 
 ## Scan container images from Quay in Snyk
 
@@ -47,8 +47,8 @@ Snyk tests and monitors your Quay container images by evaluating the tags in you
 5. Select single or multiple images to be imported to Snyk.\
    You can select by choosing a specific image or by selecting an entire repository.\
    You can also search by image name to find specific images to import.
-6. To finish, click **Add selected repositories** at the top right.\
-   A status bar appears at the top of the page as the images are imported; you can continue working in the meantime.
+6. To finish, click **Add selected repositories**.\
+   A status bar appears at the top of the page as Snyk imports the images. You can continue working in the meantime.
 7. When the import ends:
    1. You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page; Images are grouped by repository and linked individually to a detailed **Project** page.\
       An **import log** becomes available; you can reach it at the top of the Projects list.
@@ -57,5 +57,5 @@ Snyk tests and monitors your Quay container images by evaluating the tags in you
 Quay imports are designated with a unique icon. You can filter to view only Quay Projects.
 
 {% hint style="info" %}
-For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
+For application vulnerabilities in container images, a manual or recurring retest does not reflect any changes to the application. You must re-import the image. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}

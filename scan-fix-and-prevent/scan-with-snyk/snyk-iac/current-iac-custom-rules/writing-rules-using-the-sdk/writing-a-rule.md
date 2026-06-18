@@ -75,9 +75,9 @@ You must follow this format of the **msg** property to ensure the output is disp
 The attributes are:
 
 * **publicId:** a naming convention unique to your team, such as COMPANY-001. This should not contain/start with “SNYK-” to differentiate it from the internal Snyk rules.
-* **title:** a short title that should summarise the issue.
+* **title:** a short title that summarizes the issue.
 * **severity:** this can be one of low/medium/high/critical.
-* **msg:** Snyk recommends changing only the resource name and property, for example,`input.aws_s3_bucket[%s].tags` to match your example. The function `sprintf` is provided by Rego and enables Snyk to provide a dynamic error message explaining exactly where the issue was found.
+* **msg:** Snyk recommends changing only the resource name and property, for example,`input.aws_s3_bucket[%s].tags` to match your example. Rego provides the `sprintf` function, which lets Snyk provide a dynamic error message explaining exactly where the issue was found.
 
 The following attributes are optional but can be used to enhance the scan results in the Snyk CLI:
 

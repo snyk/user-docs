@@ -13,7 +13,7 @@ The cloud environments table displays the following information for each environ
 
 ## Add a cloud environment
 
-To add a cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../../cloud-platform-integrations/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../../cloud-platform-integrations/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../../cloud-platform-integrations/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment.&#x20;
+To add a cloud environment, select the **Add environment** dropdown and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../../cloud-platform-integrations/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../../cloud-platform-integrations/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../../cloud-platform-integrations/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-environments-page-add-env.png" alt=""><figcaption></figcaption></figure>
 

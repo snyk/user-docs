@@ -4,11 +4,11 @@
 
 When viewing a pull request (PR) check from Snyk in your integrated SCM, ignored findings do not contribute to the PR check outcome. A PR check does not fail due to an ignored finding. Additionally, the Snyk PR experience includes the count of active (unignored) findings in the summary comment and displays each finding as an inline comment within the PR.
 
-If a finding is ignored after a PR check has already been completed, the PR check must be retriggered by committing again to the PR. Upon retriggering, the PR check the following changes occur:
+If you ignore a finding after a PR check has already completed, you must retrigger the PR check by committing again to the PR. Upon retriggering, the following changes occur:
 
-• The ignored finding is no longer counted in the summary table.
+• Snyk no longer counts the ignored finding in the summary table.
 
-• The inline comment for the ignored finding is collapsed by default and marked as resolved.
+• Snyk collapses the inline comment for the ignored finding by default and marks it as resolved.
 
 Ignores are respected in[ Snyk Code Pull Request Checks](../../../../scan-with-snyk/pull-requests/pull-request-checks/) regardless of whether they are created through [policy](./#manage-ignores-at-the-group-level-through-snyk-code-security-policies) or for an [individual `snyk/assets/finding/v1` value](./#manage-ignores-in-snyk-projects).
 

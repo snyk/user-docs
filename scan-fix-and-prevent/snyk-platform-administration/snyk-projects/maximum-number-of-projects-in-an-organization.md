@@ -12,7 +12,7 @@ When you reach the limit for your pricing plan, Snyk stops importing Projects in
 
 ## **Notification of reaching the limit**
 
-You will know you have reached the limit when you see the following warnings.
+You know you have reached the limit when you see the following warnings.
 
 In the Snyk Web UI, this warning banner appears:
 

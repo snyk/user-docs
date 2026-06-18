@@ -8,11 +8,11 @@ Risk Score is in Early Access and available for Snyk Open Source and Snyk Contai
 Use [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview) to replace the Priority Score with the new Risk Score for Snyk Open Source and Snyk Container issues.
 {% endhint %}
 
-The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for all vulnerability-type issues. License issues are not supported. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and enables a risk-based prioritization approach.
+The Snyk Risk Score is a single value assigned to an issue, applied by automatic risk analysis for all vulnerability-type issues. License issues are not supported. Risk Score is based on the potential impact and likelihood of exploitability. Ranging from 0 to 1,000, the score represents the risk imposed on your environment and supports a risk-based prioritization approach.
 
-Risk score remains the same over time if the contributing factors do not change. However, some contributing factors, such as the Exploit Prediction Scoring System (EPSS), can potentially change frequently. The number of days since the vulnerability was first published is also a factor and causes the score to change once, when the number of days becomes more than one year, and the likelihood subscore decreases.
+Risk score remains the same over time if the contributing factors do not change. However, some contributing factors, such as the Exploit Prediction Scoring System (EPSS), can potentially change frequently. The number of days since the vulnerability was first published is also a factor and causes the score to change one time, when the number of days becomes more than one year, and the likelihood subscore decreases.
 
-Since real risk is scarce, you should expect a significant drift in the distribution of scores, as can be seen in this example of Project score distributions:
+Since real risk is scarce, expect a significant drift in the distribution of scores, as shown in this example of Project score distributions:
 
 <div data-full-width="false"><figure><img src="../../.gitbook/assets/image (15).png" alt="Example Project scores distribution"><figcaption><p>Example Project scores distribution</p></figcaption></figure></div>
 
@@ -50,11 +50,11 @@ The Risk model results from extensive research conducted by the Snyk Security Da
 
 Objective impact factors are the CVSS impact metrics, Availability, Confidentiality, Integrity, and Scope, calculated based on the CVSS impact subscore. For Container issues, Provider Urgency is also taken into account.
 
-The business criticality Project attribute will be taken into account as a contextual impact factor, increasing or decreasing the impact subscore. For more information, see [Project attributes](../../snyk-platform-administration/snyk-projects/project-attributes.md).
+Snyk takes the business criticality Project attribute into account as a contextual impact factor, increasing or decreasing the impact subscore. For more information, see [Project attributes](../../snyk-platform-administration/snyk-projects/project-attributes.md).
 
 ### Likelihood subscore
 
-Objective likelihood factors are taken into account:
+Snyk takes objective likelihood factors into account:
 
 * Exploit Maturity
 * Exploit Prediction Scoring System (EPSS)
@@ -133,7 +133,7 @@ User-defined Project attribute representing the subjective business impact of th
 | `Low`                | Impact subscore decreases significantly. |
 
 {% hint style="info" %}
-When you apply a business criticality attribute to a Project, a retest is required for the Risk Scores to incorporate the new data. When no Business Criticality is assigned, the Impact subscore will not be affected.
+When you apply a business criticality attribute to a Project, you must retest the Project for the Risk Scores to incorporate the new data. When no Business Criticality is assigned, the Impact subscore is not affected.
 {% endhint %}
 
 When the business criticality for a Project is not configured, the `high` default value is used so that the subscore remains unaffected.
@@ -269,7 +269,7 @@ Building on [past studies](https://arxiv.org/pdf/2301.07972.pdf), Snyk research 
 
 Snyk static code analysis determines whether the vulnerable method is being called. This is supported for Java and JavaScript. For more details, navigate to the [Reachability analysis](reachability-analysis.md) page.
 
-When Reachability is not enabled, the Likelihood subscore will not change, and the factor will not show up.
+When Reachability is not enabled, the Likelihood subscore does not change, and the factor does not show up.
 
 | Possible input values | Score impact                                                           |
 | --------------------- | ---------------------------------------------------------------------- |

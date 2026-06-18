@@ -40,9 +40,9 @@ For example, if you have a policy applied to `Critical`, `External`, and `Fronte
 
 An example policy follows. It is applied to an attribute in the **Business Criticality** section, `Critical`, and to attributes in the **Environment** section, `Frontend` and `External`. The policy also has two Project tags. The first tag has the key `PCI`, with the value of `Compliant`. The second tag has the key `owner`, with the value of `fred`.
 
-The following Project has the attributes `Frontend`, `External`, and `Critical`, and has at least one matching tag, `PCI:Compliant`. Thus the Project will inherit the policy, that is, the policy is assigned to this Project.
+The following Project has the attributes `Frontend`, `External`, and `Critical`, and has at least one matching tag, `PCI:Compliant`. So the Project inherits the policy, that is, the policy is assigned to this Project.
 
-The following Project will not inherit the policy, because the Project lacks the `External` environment attribute.
+The following Project does not inherit the policy, because the Project lacks the `External` environment attribute.
 
 ## Assign multiple policies to a Project
 

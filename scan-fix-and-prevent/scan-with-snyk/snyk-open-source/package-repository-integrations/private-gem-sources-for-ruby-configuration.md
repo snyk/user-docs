@@ -9,7 +9,7 @@ This guide is relevant for Snyk UI integrations only. The CLI supports Ruby Proj
 
 You can add a configuration to tell Snyk where your private gems are hosted. This is the same information you would normally add as a Bundler environment variable.
 
-After you have added this configuration, Snyk uses the information to access private dependencies when creating Pull/Merge Requests, by allowing Bundler to reach those dependencies in order to regenerate the lockfile.
+After you have added this configuration, Snyk uses the information to access private dependencies when creating Pull/Merge Requests, by allowing Bundler to reach those dependencies to regenerate the lockfile.
 
 ## Configuration of private gem sources for Ruby
 

@@ -6,7 +6,7 @@
 You can find a full example of this guide in [this OPA Playground](https://play.openpolicyagent.org/p/SCYndBjWxh) and the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository.
 {% endhint %}
 
-Assume you have generated a new rule, `CUSTOM-RULE-1` using the SDK , that is, `snyk-iac-rules template --rule CUSTOM-RULE-1` and have a very simple fixture file containing a Terraform resource:
+Assume you have generated a new rule, `CUSTOM-RULE-1` using the SDK, that is, `snyk-iac-rules template --rule CUSTOM-RULE-1` and have a fixture file containing a Terraform resource:
 
 {% code title="rules/CUSTOM-RULE-1/fixtures/denied.tf" %}
 ```
@@ -22,8 +22,8 @@ resource "aws_redshift_cluster" "denied" {
 Now, modify the generated Rego to enforce resources tagged with an owner:
 
 1. Create a variable `[name]` to enumerate across all of the `aws_redshift_cluster` resources. This variable can be named anything you like, for example, `i`, `j`, `name`, and so on.
-2. Store this into the resource variable by assigning the value to it with a walrus operator `:=`; e.g. `resource := input.resource.aws_redshift_cluster[name]`
-3. Check whether the owner tag exists for each resource; to do that, check if the path `resource.tags.owner` is defined. If it is undefined, it will evaluate as undefined. So, use the `NOT` keyword in front of it, which will evaluate to `TRUE`; for example,`not resource.tags.owner`
+2. Store this into the resource variable by assigning the value to it with a walrus operator `:=`. For example, `resource := input.resource.aws_redshift_cluster[name]`
+3. Check whether the owner tag exists for each resource. To do that, check if the path `resource.tags.owner` is defined. If it is undefined, it evaluates as undefined. So, use the `NOT` keyword in front of it, which evaluates to `TRUE`. For example,`not resource.tags.owner`
 
 The modified Rego is:
 
@@ -50,7 +50,7 @@ deny[msg] {
 {% endcode %}
 
 {% hint style="info" %}
-To understand how the Rego code evaluates the Terraform file provided earlier, have a look at how the SDK is able to [parse a fixture file](parsing-an-input-file.md) into JSON.
+To understand how the Rego code evaluates the Terraform file provided earlier, have a look at how the SDK can [parse a fixture file](parsing-an-input-file.md) into JSON.
 {% endhint %}
 
 {% hint style="info" %}
@@ -240,7 +240,7 @@ deny[msg] {
 ```
 {% endcode %}
 
-This will successfully return all the rules that deny.
+This successfully returns all the rules that deny.
 
 {% hint style="info" %}
 Snyk recommends always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
@@ -446,7 +446,7 @@ You can also iterate over many resources by adding them to an array of resources
 ]
 ```
 
-One way to leverage this is to implement denylist rules.
+One way to use this is to implement denylist rules.
 
 For example, you may want to ensure that if someone defines a Kubernetes ConfigMap, then they cannot use it to store sensitive information such as passwords, secret keys, and access tokens.
 

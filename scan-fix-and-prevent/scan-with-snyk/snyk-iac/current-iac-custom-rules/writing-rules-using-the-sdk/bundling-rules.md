@@ -20,7 +20,7 @@ Finally, you can check the contents of the bundle without extracting it by runni
 tar -tf bundle.tar.gz
 ```
 
-The output will be all the files included in the bundle:
+The output is all the files included in the bundle:
 
 ```
 /data.json

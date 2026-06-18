@@ -50,16 +50,16 @@ To add images from GAR:&#x20;
    * Type the name of a single image for import in the **Image Name** field.
    * Select any of the repositories for which you want to import all of the associated images.
    * Expand and collapse repositories to select multiple images across multiple repositories.
-4. Click **Add selected repositories**. As the images are imported, a status bar appears at the top of the page. You can continue working while Snyk imports the images.
+4. Click **Add selected repositories**. As Snyk imports the images, a status bar appears at the top of the page. You can continue working while Snyk imports the images.
 
 When the import ends, a notification of success or failure appears at the top of the page. Click **Refresh** to view the **Projects** page with the newly imported images. The images are grouped by repository and linked individually to a detailed **Projects** page.
 
-You can now connect your Git repo to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Adding your Dockerfile and testing your base image](../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
+You can now connect your Git repository to this Project to use your Dockerfile for enriched fix advice. For more information, see [Adding your Dockerfile and testing your base image](../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
 GAR files are indicated with a unique icon. You can now filter to view only those Projects.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-31 at 18.06.20.png" alt=""><figcaption><p>Examples of GAR Projects</p></figcaption></figure>
 
 {% hint style="info" %}
-For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. You must re-import the image. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
+For application vulnerabilities in container images, a manual or recurring retest does not reflect any changes to the application. You must re-import the image. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}

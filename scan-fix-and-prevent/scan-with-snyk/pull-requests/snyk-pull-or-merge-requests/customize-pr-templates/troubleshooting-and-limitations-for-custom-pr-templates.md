@@ -24,9 +24,9 @@ You can add Jira tickets to your PR, but Snyk is limited to those created using 
 
 ### Failure to open PR
 
-If a PR cannot be opened, Snyk cannot identify errors when a PR cannot be opened.&#x20;
+If a PR cannot be opened, Snyk cannot identify the errors that prevented it.&#x20;
 
 ### No line between variables
 
-When you are customizing the YAML file, it is possible that a new line will not be added between variables when two lines start with a variable `{{}}`.
+When you are customizing the YAML file, a new line might not be added between variables when two lines start with a variable `{{}}`.
 

@@ -1,6 +1,6 @@
 # Implement policies
 
-All policies that you add to a project help you to better monitor your assets and automate the business context by always receiving notifications about occurring changes.
+All policies that you add to a Project help you to better monitor your assets and automate the business context by always receiving notifications about occurring changes.
 
 ## Policy functionalities
 
@@ -13,7 +13,7 @@ Access the main view of the Policy function to see a list of all your policies a
 You can hover over a policy to gain access to extra details:
 
 * **Go to flow** - Opens the policy.
-* **Edit name and description** - Allows you to edit the name and description of the policy.
+* **Edit name and description** - Lets you edit the name and description of the policy.
 * **Clone** - Duplicates the policy.
 * **Delete** - Removes the policy.
 
@@ -27,13 +27,13 @@ You can run a simulation to get an overview of how the policy is working. A numb
 
 ### Run the policy
 
-All policies are automatically run in a maximum of 3 hours after creation, then every 3 hours. You can manually run a policy by clicking Run to apply the policy to your assets. Changes are applied automatically to your assets by implementing the actions you set on the policy.
+All policies are automatically run in a maximum of three hours after creation, then every three hours. You can manually run a policy by clicking **Run** to apply the policy to your assets. Changes are applied automatically to your assets by implementing the actions you set on the policy.
 
 You can also add an **AND** **Send email** or **Send Slack notification** action to be notified after the policy is successfully run.
 
 ### Edit a policy
 
-Click Edit to change the settings of your policies. You can change, add, or remove information from both the Filters and Actions fields.
+Click **Edit** to change the settings of your policies. You can change, add, or remove information from both the Filters and Actions fields.
 
 {% hint style="info" %}
 You cannot revert changes to a policy to its initial state.

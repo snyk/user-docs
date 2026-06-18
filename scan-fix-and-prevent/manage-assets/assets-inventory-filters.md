@@ -11,7 +11,7 @@ Quick filters are predefined filters that you can apply to assets. Available qui
 * **Assets with Repository freshness** **`ACTIVE` and `COVERAGE GAP`**: displays only the assets from active repositories and with a coverage gap for the selected Snyk products.
 * **Assets with Asset Class `A` and `COVERAGE GAP`**: displays only Class A assets that have a coverage gap for the selected Snyk products.
 
-You can change or add additional filters by clicking **Advanced Filters**.
+To change or add filters, click **Advanced Filters**.
 
 ## Advanced filters
 
@@ -23,7 +23,7 @@ When you select advanced filters, you can specify one or more sets of criteria:
 * **Condition:** depends on the asset selected (such as `contains` or `does not contain` for `asset name`).
 * **Value:** depends on the **Property** and **Condition**.
 
-You can add as many filters as needed by clicking **Add Filter**.
+To add as many filters as needed, click **Add Filter**.
 
 {% hint style="info" %}
 If you are using Snyk Essentials for the first time, Snyk recommends starting with the **Coverage** filter to determine where Snyk is already implemented.
@@ -86,7 +86,7 @@ You can filter unenriched repositories directly from the banner by selecting the
 
 #### Unenriched assets with Group SCM integration
 
-If you use a Group-level integration, the banner shows assets not discovered through that integration. Although the integration is in place, some assets are not being pulled in. Possible reasons for unrenriched assets:
+If you use a Group-level integration, the banner shows assets not discovered through that integration. Although the integration is in place, some assets are not being pulled in. Possible reasons for unenriched assets:
 
 * Organization-level integration has broader permissions than the Group-level integration.
 * A repository previously tested by Snyk was deleted in the SCM before the Group-level integration was set up.
@@ -96,7 +96,7 @@ If you use a Group-level integration, the banner shows assets not discovered thr
 
 ## Troubleshooting
 
-### The assets are not discovered by Group or Organization-level integrations.
+### The assets are not discovered by Group or Organization-level integrations
 
 The assets are not discovered by Group or Organization-level integrations, but are discovered only through Snyk targets (for example, CLI Projects or old deleted repositories).
 
@@ -128,4 +128,4 @@ If your profile includes the Organization, check the token permissions and ensur
 
 For GitLab and BitBucket, ensure that the Group-level tokens have access and the right permissions for the Organization.
 
-If the source of the asset is another vendor, ensure the repository URLs match in order to avoid creating duplicate assets.
+If the source of the asset is another vendor, ensure the repository URLs match to avoid creating duplicate assets.

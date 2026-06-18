@@ -1,10 +1,10 @@
 # Overview
 
-You can use Snyk to scan and secure your codebase and cloud infrastructure configurations, taking advantage of the Snyk capabilities in Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST), Software Composition Analysis (SCA), and Infrastructure as Code (IaC) analysis.
+You can use Snyk to scan and secure your codebase and cloud infrastructure configurations, using the Snyk capabilities in Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST), Software Composition Analysis (SCA), and Infrastructure as Code (IaC) analysis.
 
 ## Select scanning methods
 
-Snyk supports scanning methods that correspond to Snyk products. Choose the right scanning method for the job you want to do, to find and fix issues not only early in the Software Development Life Cycle, but also after your web application or API is live.
+Snyk supports scanning methods that correspond to Snyk products. Choose the right scanning method for the job you want to do, to find and fix issues not only early in the software development lifecycle, but also after your web application or API is live.
 
 * [Snyk Open Source](scan-with-snyk/snyk-open-source/): scan your open-source libraries for vulnerabilities and license issues.\
   For more information, see [Open Source Security Explained](https://snyk.io/series/open-source-security/).
@@ -28,7 +28,7 @@ Scans may be limited on your account, depending on your[ Pricing Plan](https://a
 
 ## The scanning process
 
-Snyk takes a developer-first approach to secure your development work by integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. This approach allows you to:
+Snyk takes a developer-first approach to secure your development work by integrating directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit. With this approach, you can:
 
 * Use Snyk to focus on early enablement, not later enforcement.
 * Run scans while working on a Project, before you commit any code. This minimizes rework by finding issues that require changes early on.

@@ -1,6 +1,6 @@
 # Integrate with GitLab Container Registry
 
-Snyk integrates with GitLab Container Registry to enable you to import your container images and monitor them for vulnerabilities.
+Snyk integrates with GitLab Container Registry so you can import your container images and monitor them for vulnerabilities.
 
 Snyk tests the images you have imported (Projects) for any known security vulnerabilities, testing them at a frequency you control, and alerts you when new issues are detected.
 
@@ -32,9 +32,9 @@ When the connection is successful, you can use Snyk to scan your images from Git
 
 ## Scan images from GitLab Container Registry in Snyk
 
-Snyk tests and monitors your GitLab container images by evaluating the image tags in your repositories. After you have imported images to Snyk, your image vulnerabilities are identified and can be triaged easily.
+Snyk tests and monitors your GitLab container images by evaluating the image tags in your repositories. After you have imported images to Snyk, Snyk identifies your image vulnerabilities so you can triage them.
 
-The steps follow for adding images from GitLab Container Registry to Snyk.
+Follow these steps to add images from GitLab Container Registry to Snyk.
 
 ## **Prerequisites for GitLab container image scanning**
 
@@ -51,8 +51,8 @@ The steps follow for adding images from GitLab Container Registry to Snyk.
    Note that GitLab Container Registry does not follow Docker v2 API. Therefore, it is not possible to list images in a repository, and you must manually specify the images you wish to scan.
 5. Select single or multiple images to be imported to Snyk.\
    You can select by choosing a specific image or selecting an entire repository. You can also search by image name to find specific images to import.
-6. To finish, click **Add selected repositories** on the top right.\
-   A status bar appears at the top of the page as the images are imported; you can continue working in the meantime.
+6. To finish, click **Add selected repositories**.\
+   A status bar appears at the top of the page as Snyk imports the images. You can continue working in the meantime.
 7. When the import ends:
    * You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
    * An import log becomes available; you can reach it at the top of the Projects list.
@@ -63,5 +63,5 @@ GitLab Container Registry imports are designated with a unique icon. You can fil
 <figure><img src="../../../.gitbook/assets/container_registry_integrations_gitlab.png" alt=""><figcaption><p>Example of a GitLab Project</p></figcaption></figure>
 
 {% hint style="info" %}
-For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
+For application vulnerabilities in container images, a manual or recurring retest does not reflect any changes to the application. You must re-import the image. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}

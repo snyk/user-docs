@@ -13,7 +13,7 @@ Snyk Essentials identifies GitHub and GitLab topics as asset labels.
 
 Use the classification policy to give business context to your application. When you set up a classification policy, all your assets are automatically classified.
 
-If you just started using the classification policy, the recommendation is to focus first on the Class D assets, since they are the least important.
+If you are new to the classification policy, the recommendation is to focus first on the Class D assets, since they are the least important.
 
 The following example filters the assets that contain `sandbox`, `test`, and `to-delete` in their names. In Snyk Essentials, GitHub and GitLab topics are pulled in from the SCM integration and applied to repository assets, so if topics like `PCI-Compliance` have been added to repos in the SCM, Snyk can take those tags in Snyk Essentials and classify those assets as Class A.
 

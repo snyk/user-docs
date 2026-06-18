@@ -2,7 +2,7 @@
 
 Snyk Data Share is a comprehensive dataset encompassing various data pillars that support a wide range of use cases. You can use this dataset to present key security metrics such as issue backlog, aging, MTTR, SLA compliance, and test coverage, as well as to prioritize issues based on different factors, such as risk score, severity, CVSS, EPSS, and many more.
 
-This dictionary is designed to help you navigate the dataset efficiently. It provides clear explanations of the purpose of each table and the specific data contained in each column, enabling you to leverage the dataset to meet your data reporting needs.
+This dictionary is designed to help you navigate the dataset efficiently. It provides clear explanations of the purpose of each table and the specific data contained in each column, so you can use the dataset to meet your data reporting needs.
 
 ## Data Share Tables
 
@@ -29,7 +29,7 @@ The diagram above represents the objects listed in the data dictionary as a data
 
 > Version in use: v1.0
 
-The `GROUPS` table contains the main attributes of Snyk Groups. This data can be utilized to perform aggregations on the Group level or zoom into the scope of specific groups.
+The `GROUPS` table contains the main attributes of Snyk Groups. You can use this data to perform aggregations on the Group level or zoom into the scope of specific Groups.
 
 | Column name    | Data type      | Description                                                                           |
 | -------------- | -------------- | ------------------------------------------------------------------------------------- |
@@ -45,10 +45,10 @@ The `GROUPS` table contains the main attributes of Snyk Groups. This data can be
 
 > Version in use: v1.0
 
-The `ORGS` table contains the main attributes of Snyk Organizations. This data can be utilized to perform aggregations on the organizational level or to zoom into the scope of specific organizations.
+The `ORGS` table contains the main attributes of Snyk Organizations. You can use this data to perform aggregations on the organizational level or to zoom into the scope of specific Organizations.
 
 {% hint style="info" %}
-The `group_public_id` column allows you to query organizations in specific groups.
+The `group_public_id` column lets you query Organizations in specific Groups.
 {% endhint %}
 
 | Column name       | Data type      | Description                                                                                   |
@@ -66,10 +66,10 @@ The `group_public_id` column allows you to query organizations in specific group
 
 > Version in use: v1.0
 
-ProjectThe `PROJECTS` table contains the main attributes of Snyk Projects and the related target. Its data can be utilized for performing aggregations of filters on the Project or target levels, including based on Project collections, Project tags, or specific repo branches (using `target_ref`).
+The `PROJECTS` table contains the main attributes of Snyk Projects and the related target. You can use its data to perform aggregations of filters on the Project or target levels, including based on Project collections, Project tags, or specific repo branches (using `target_ref`).
 
 {% hint style="info" %}
-Snyk Reports only presents monitored projects that were not deleted. To match your results with Snyk Reports, filter your query with `IS_MONITORED = TRUE` and `DELETE IS NULL.`
+Snyk Reports only presents monitored Projects that were not deleted. To match your results with Snyk Reports, filter your query with `IS_MONITORED = TRUE` and `DELETE IS NULL.`
 {% endhint %}
 
 | Column name                        | Data type      | Description                                                                                                                                                                                                                                |
@@ -107,12 +107,12 @@ Snyk Reports only presents monitored projects that were not deleted. To match yo
 
 > Version in use: v1.0
 
-The `ISSUES` table contains various attributes of Snyk Issues. Issues can be easily correlated with their originating Project, target, Organization or Group, utilizing the corresponding ID columns. On top of the issue's basic attributes, such as its introduction date, type, severity, score, there are columns that elaborate on the vulnerability attributes, such as the CVSS score, EPSS Score, NVD Score.
+The `ISSUES` table contains various attributes of Snyk Issues. You can correlate issues with their originating Project, target, Organization, or Group using the corresponding ID columns. On top of the issue's basic attributes, such as its introduction date, type, severity, and score, there are columns that elaborate on the vulnerability attributes, such as the CVSS score, EPSS Score, and NVD Score.
 
-Querying the issues table allows:
+Querying the issues table lets you:
 
-* Concluding various metrics and KPIs, among issue backlog, aging, MTTR and SLA compliance.
-* Visualizing trends of identified, ignored, and resolved issues over time
+* Conclude various metrics and KPIs, among them issue backlog, aging, MTTR, and SLA compliance
+* Visualize trends of identified, ignored, and resolved issues over time
 * Prioritize issues based on multiple factors and considerations
 
 {% hint style="info" %}
@@ -173,7 +173,7 @@ If you would like to match your results with Snyk Reports:
 
 > Version in use: v1.0
 
-The `Dependencies` table allows you to identify issues based on their availability in direct dependencies.
+The `Dependencies` table lets you identify issues based on their availability in direct dependencies.
 
 | Column name                   | Data type | Description                                                                                                                       |
 | ----------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -188,13 +188,13 @@ The `Dependencies` table allows you to identify issues based on their availabili
 
 > Version in use: v1.0
 
-The `USAGE_EVENTS` table contains CLI interaction data that is collected from Snyk's CLI interfaces (CLI, IDE plugins, CI/CD pipeline tools). The CLI interaction events can be correlated with the execution context, such as their target, Organization, or Group, utilizing the corresponding ID columns.
+The `USAGE_EVENTS` table contains CLI interaction data collected from the Snyk CLI interfaces (CLI, IDE plugins, CI/CD pipeline tools). You can correlate the CLI interaction events with the execution context, such as their target, Organization, or Group, using the corresponding ID columns.
 
-Querying the `USAGE_EVENTS` table allows you to measure:
+Querying the `USAGE_EVENTS` table lets you measure:
 
-* Developers' usage and adoption of Snyk IDE plugins
+* Developers' use and adoption of Snyk IDE plugins
 * Snyk tests in CI/CD pipelines
-* Snyk CLI utilization per the different commands: test, monitor, SBOM, etc.
+* Snyk CLI use per the different commands: test, monitor, SBOM, and so on
 
 | Column name                               | Data type      | Description                                                                                                                                                                                                                                                                                                                          |
 | ----------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -204,7 +204,7 @@ Querying the `USAGE_EVENTS` table allows you to measure:
 | `product_display_name`                    | varchar        | The Snyk product used during this interaction, for example, Snyk Open Source, Snyk IaC, Snyk Code, Snyk Container.                                                                                                                                                                                                                   |
 | `runtime_application_name`                | varchar        | The application used to execute a snyk interaction, for example, PyCharm, Visual Studio, snyk-ls, snyk-cli.                                                                                                                                                                                                                          |
 | `runtime_application_version`             | varchar        | The version of the integration.                                                                                                                                                                                                                                                                                                      |
-| `runtime_application_data_schema_version` | varchar        | The data schema version of Snyk's runtime interactions. The current version (v2) was released in Q2 2024. Prior versions' data may behave differently.                                                                                                                                                                               |
+| `runtime_application_data_schema_version` | varchar        | The data schema version of the Snyk runtime interactions. The current version (v2) was released in Q2 2024. Data from earlier versions may behave differently.                                                                                                                                                                               |
 | `interaction_type`                        | varchar        | The type of interaction, could be **Scan done**. **Scan Done** indicates that a test was run no matter if the CLI or IDE ran it, other types can be freely chosen types.                                                                                                                                                             |
 | `interaction_categories`                  | array          | The category vector used to describe the interaction in detail, for example, **oss**,**test**.                                                                                                                                                                                                                                       |
 | `interaction_timestamp`                   | array          | When the interaction was started in UTC.                                                                                                                                                                                                                                                                                             |
@@ -228,7 +228,7 @@ Querying the `USAGE_EVENTS` table allows you to measure:
 
 > Version in use: v1.0
 
-The `ISSUE_JIRA_ISSUES` table allows correlation between Snyk issues and assigned Jira issues. As Snyk enables more than one type of Jira integration, it is important to emphasize that the Jira issues that are available in the dataset originated from this [Jira integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration).
+The `ISSUE_JIRA_ISSUES` table lets you correlate Snyk issues with assigned Jira issues. Because Snyk supports more than one type of Jira integration, note that the Jira issues available in the dataset originated from this [Jira integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration).
 
 | Column name            | Data type      | Description                                                                                    |
 | ---------------------- | -------------- | ---------------------------------------------------------------------------------------------- |
@@ -263,7 +263,7 @@ If you would like to match your results with Snyk Reports:
 * Aggregate results based on the `pr_check_group_id` and the `pr_check_group_state`
 {% endhint %}
 
-<table><thead><tr><th width="278.2109375">Column name</th><th width="243.078125">Data type</th><th>Description</th></tr></thead><tbody><tr><td><code>public_id</code></td><td>varchar</td><td>A universally unique identifier for a PR Check, assigned in the records source database.</td></tr><tr><td><code>pr_check_group_id</code></td><td>varchar</td><td>Identifier of the parent pull request check group.</td></tr><tr><td><code>test_id</code></td><td>varchar</td><td>Identifier of the test results associated with the test-service.</td></tr><tr><td><code>project_public_id</code></td><td>varchar</td><td>A universally unique identifier for a project, assigned in the record's source database.</td></tr><tr><td><code>org_public_id</code></td><td>varchar</td><td>A universally unique identifier for an organization, assigned in the record's source database.</td></tr><tr><td><code>group_public_id</code></td><td>varchar</td><td>A universally unique identifier for a group, assigned in the record's source database.</td></tr><tr><td><code>asset_id</code></td><td>varchar</td><td>Identifier of the asset linked to the project.</td></tr><tr><td><code>parent_asset_id</code></td><td>varchar</td><td>Identifier of the repository parent asset linked to the project.</td></tr><tr><td><code>pr_check_created_at</code></td><td>timestamp_ntz</td><td>Timestamp when the pull request check was created.</td></tr><tr><td><code>pr_check_modified_at</code></td><td>timestamp_ntz</td><td>Timestamp when the pull request check was last updated.</td></tr><tr><td><code>check_group_created_at</code></td><td>timestamp_ntz</td><td>Timestamp when the parent check group was created.</td></tr><tr><td><code>check_group_modified_at</code></td><td>timestamp_ntz</td><td>Timestamp when the parent check group was last updated.</td></tr><tr><td><code>product_name</code></td><td>varchar</td><td>The Snyk Product associated with the check (for example, Snyk Open Source, Snyk Code).</td></tr><tr><td><code>pr_check_state</code></td><td>varchar</td><td>The check status for the particular product type. The status will be <strong>success</strong> if the check passed under the policy settings in force and <strong>failure</strong> if an issue violating the policy was found. An <strong>error</strong> status indicates there was a problem running the check.</td></tr><tr><td><code>pr_check_group_state</code></td><td>varchar</td><td>The status for the parent check group.</td></tr><tr><td><code>marked_as_success</code></td><td>boolean</td><td>True if the check failed due to a policy violation but the result was manually overridden by a user. This allows PRs to be merged despite security findings.</td></tr><tr><td><code>pr_check_result_description</code></td><td>varchar</td><td>Summary of the check results.</td></tr><tr><td><code>settings_policy</code></td><td>varchar</td><td>Description of the policy applied to the check run (e.g. <code>only_new</code> vs <code>all</code>).</td></tr><tr><td><code>settings_severity_threshold</code></td><td>varchar</td><td>Settings for the severity threshold at which the pull request check fails.</td></tr><tr><td><code>is_settings_fail_only_fixable</code></td><td>boolean</td><td>Flag indicating if the check was configured to fail only on fixable issues.</td></tr><tr><td><code>old_version_sha</code></td><td>varchar</td><td>Commit SHA for the base revision used in the scan.</td></tr><tr><td><code>new_version_sha</code></td><td>varchar</td><td>Commit SHA for the head revision used in the scan.</td></tr><tr><td><code>merge_base_version_sha</code></td><td>varchar</td><td>Commit SHA for the merge base between the compared revisions.</td></tr><tr><td><code>pull_data_ref</code></td><td>varchar</td><td>Reference of the pull request that triggered the check.</td></tr><tr><td><code>error_message</code></td><td>varchar</td><td>Human-readable error message when the check resulted in an error state.</td></tr><tr><td><code>error_code</code></td><td>varchar</td><td>Snyk error catalog code identifying the type of error (for example, SNYK-PR-CHECK-0009).</td></tr><tr><td><code>error_status</code></td><td>varchar</td><td>HTTP status code associated with the error.</td></tr><tr><td><code>error_catalog_url</code></td><td>varchar</td><td>URL to the Snyk error catalog documentation page for the specific error code.</td></tr><tr><td><code>error_classification</code></td><td>varchar</td><td><code>ACTIONABLE</code> indicates that the input is not in a format or state usable by Snyk, but there are steps you can take to resolve the issue. <code>UNSUPPORTED</code> indicates that Snyk cannot handle the data sent. For example, a project that uses a version of Python that is no longer supported.</td></tr><tr><td><code>__updated_at</code></td><td>timestamp_ntz</td><td>When the data share data transformation last updated this record.</td></tr></tbody></table>
+<table><thead><tr><th width="278.2109375">Column name</th><th width="243.078125">Data type</th><th>Description</th></tr></thead><tbody><tr><td><code>public_id</code></td><td>varchar</td><td>A universally unique identifier for a PR Check, assigned in the records source database.</td></tr><tr><td><code>pr_check_group_id</code></td><td>varchar</td><td>Identifier of the parent pull request check group.</td></tr><tr><td><code>test_id</code></td><td>varchar</td><td>Identifier of the test results associated with the test-service.</td></tr><tr><td><code>project_public_id</code></td><td>varchar</td><td>A universally unique identifier for a project, assigned in the record's source database.</td></tr><tr><td><code>org_public_id</code></td><td>varchar</td><td>A universally unique identifier for an organization, assigned in the record's source database.</td></tr><tr><td><code>group_public_id</code></td><td>varchar</td><td>A universally unique identifier for a group, assigned in the record's source database.</td></tr><tr><td><code>asset_id</code></td><td>varchar</td><td>Identifier of the asset linked to the project.</td></tr><tr><td><code>parent_asset_id</code></td><td>varchar</td><td>Identifier of the repository parent asset linked to the project.</td></tr><tr><td><code>pr_check_created_at</code></td><td>timestamp_ntz</td><td>Timestamp when the pull request check was created.</td></tr><tr><td><code>pr_check_modified_at</code></td><td>timestamp_ntz</td><td>Timestamp when the pull request check was last updated.</td></tr><tr><td><code>check_group_created_at</code></td><td>timestamp_ntz</td><td>Timestamp when the parent check group was created.</td></tr><tr><td><code>check_group_modified_at</code></td><td>timestamp_ntz</td><td>Timestamp when the parent check group was last updated.</td></tr><tr><td><code>product_name</code></td><td>varchar</td><td>The Snyk Product associated with the check (for example, Snyk Open Source, Snyk Code).</td></tr><tr><td><code>pr_check_state</code></td><td>varchar</td><td>The check status for the particular product type. The status is <strong>success</strong> if the check passed under the policy settings in force and <strong>failure</strong> if an issue violating the policy was found. An <strong>error</strong> status indicates there was a problem running the check.</td></tr><tr><td><code>pr_check_group_state</code></td><td>varchar</td><td>The status for the parent check group.</td></tr><tr><td><code>marked_as_success</code></td><td>boolean</td><td>True if the check failed due to a policy violation but a user manually overrode the result. This lets users merge PRs despite security findings.</td></tr><tr><td><code>pr_check_result_description</code></td><td>varchar</td><td>Summary of the check results.</td></tr><tr><td><code>settings_policy</code></td><td>varchar</td><td>Description of the policy applied to the check run (for example, <code>only_new</code> vs <code>all</code>).</td></tr><tr><td><code>settings_severity_threshold</code></td><td>varchar</td><td>Settings for the severity threshold at which the pull request check fails.</td></tr><tr><td><code>is_settings_fail_only_fixable</code></td><td>boolean</td><td>Flag indicating if the check was configured to fail only on fixable issues.</td></tr><tr><td><code>old_version_sha</code></td><td>varchar</td><td>Commit SHA for the base revision used in the scan.</td></tr><tr><td><code>new_version_sha</code></td><td>varchar</td><td>Commit SHA for the head revision used in the scan.</td></tr><tr><td><code>merge_base_version_sha</code></td><td>varchar</td><td>Commit SHA for the merge base between the compared revisions.</td></tr><tr><td><code>pull_data_ref</code></td><td>varchar</td><td>Reference of the pull request that triggered the check.</td></tr><tr><td><code>error_message</code></td><td>varchar</td><td>Human-readable error message when the check resulted in an error state.</td></tr><tr><td><code>error_code</code></td><td>varchar</td><td>Snyk error catalog code identifying the type of error (for example, SNYK-PR-CHECK-0009).</td></tr><tr><td><code>error_status</code></td><td>varchar</td><td>HTTP status code associated with the error.</td></tr><tr><td><code>error_catalog_url</code></td><td>varchar</td><td>URL to the Snyk error catalog documentation page for the specific error code.</td></tr><tr><td><code>error_classification</code></td><td>varchar</td><td><code>ACTIONABLE</code> indicates that the input is not in a format or state usable by Snyk, but there are steps you can take to resolve the issue. <code>UNSUPPORTED</code> indicates that Snyk cannot handle the data sent. For example, a project that uses a version of Python that is no longer supported.</td></tr><tr><td><code>__updated_at</code></td><td>timestamp_ntz</td><td>When the data share data transformation last updated this record.</td></tr></tbody></table>
 
 ### PR Checks Integration Adoption
 
@@ -334,8 +334,8 @@ The `PR_CHECK_PROJECT_ADOPTION` table tracks pull request (PR) check configurati
 | `target_deleted`                                | timestamp\_ntz | Timestamp when the target containing the project was deleted, if applicable.                                                                         |
 | `is_project_monitored_historical`               | boolean        | Historical flag indicating if the project was monitored during this historical period.                                                               |
 | `project_deleted_historical`                    | boolean        | Historical flag from registry indicating if the project was deleted during this period.                                                              |
-| `test_pull_requests`                            | boolean        | Flag indicating if PR testing is enabled for the project, will be null if inheriting from integration settings.                                      |
-| `pull_requests_policy`                          | varchar        | Policy for PR checks setting (for example, only\_new, all), will be null if inheriting from integration settings.                                    |
-| `pull_requests_severity_threshold`              | varchar        | Severity threshold at which PR checks are set to fail, will be null if inheriting from integration settings.                                         |
-| `is_pull_request_fail_only_for_issues_with_fix` | boolean        | Flag indicating if open-source PR checks are only set to fail for issues with available fixes, will be null if inheriting from integration settings. |
+| `test_pull_requests`                            | boolean        | Flag indicating if PR testing is enabled for the project, null if inheriting from integration settings.                                      |
+| `pull_requests_policy`                          | varchar        | Policy for PR checks setting (for example, only\_new, all), null if inheriting from integration settings.                                    |
+| `pull_requests_severity_threshold`              | varchar        | Severity threshold at which PR checks are set to fail, null if inheriting from integration settings.                                         |
+| `is_pull_request_fail_only_for_issues_with_fix` | boolean        | Flag indicating if open-source PR checks are only set to fail for issues with available fixes, null if inheriting from integration settings. |
 | `__updated_at`                                  | timestamp\_ntz | When the data share data transformation last updated this record.                                                                                    |

@@ -25,7 +25,7 @@ To automatically link Jira to the relevant pull requests, include a list of asso
 
 **Output**
 
-The commit message of your PR will be:
+The commit message of your PR is:
 
 ```json
 This pull request is from Snyk and relates to JIRA-1,JIRA-2,JIRA-3
@@ -53,7 +53,7 @@ This is the Snyk Project URL and can be used to link to the Snyk Project page.
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 To find more details, see the Snyk project https://app.snyk.io/org/my-org/project/xx-xxx-xx-xx
@@ -81,7 +81,7 @@ This is the Snyk Project name. You can add the Snyk Project name to your descrip
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Fix applied to project my-org/project:filename
@@ -107,7 +107,7 @@ This is the Snyk Organization name. You can add the Snyk Organization name to yo
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Fix applied by my-org
@@ -115,7 +115,7 @@ Fix applied by my-org
 
 <mark style="color:purple;">**`package_name: string`**</mark>
 
-This is the name of the package being fixed or upgraded. When more than one package is changed, this variable will default to the first one.
+This is the name of the package being fixed or upgraded. When more than one package is changed, this variable defaults to the first one.
 
 Follow this example to display in the description the package name of the first dependency being fixed in the PR.
 
@@ -135,7 +135,7 @@ Follow this example to display in the description the package name of the first 
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Fixes adm-zip
@@ -143,7 +143,7 @@ Fixes adm-zip
 
 <mark style="color:purple;">**`package_from: string`**</mark>
 
-This is the version of the package that is being fixed or upgraded. In cases where more than one package is changed, this variable will default to the `from` version of the first one.
+This is the version of the package that is being fixed or upgraded. In cases where more than one package is changed, this variable defaults to the `from` version of the first one.
 
 **Input**
 
@@ -161,7 +161,7 @@ This is the version of the package that is being fixed or upgraded. In cases whe
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Fix is applied by moving from 0.4.7
@@ -169,7 +169,7 @@ Fix is applied by moving from 0.4.7
 
 <mark style="color:purple;">**`package_to: string`**</mark>
 
-The package is transitioning to this particular version. In cases where more than one package is changed, this variable will default to the `to` version of the first one.
+The package is transitioning to this particular version. In cases where more than one package is changed, this variable defaults to the `to` version of the first one.
 
 **Input**
 
@@ -187,7 +187,7 @@ The package is transitioning to this particular version. In cases where more tha
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Fix is applied by moving to 0.5.2
@@ -212,7 +212,7 @@ This is the number of issues in your Project or repository that are covered by t
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 The PR will fix 98 issues.
@@ -394,7 +394,7 @@ This variable is for container projects only. It can be used to display the name
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```
 We recommend upgrading to node:xx.xx.x
@@ -420,7 +420,7 @@ This variable is for container projects only. It can be used to display the curr
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```
 The current base image is: node:xx.xx.x
@@ -448,7 +448,7 @@ For example, `docker.io/library/node:18-alpine` becomes `node:18-alpine`.
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```
 Upgrade to node:18-alpine
@@ -476,7 +476,7 @@ For example, `docker.io/library/node:16` becomes `node:16`.
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```
 Upgrading from node:16
@@ -527,7 +527,7 @@ commitMessage: |
 
 **Output**
 
-The commit message of your PR will be:
+The commit message of your PR is:
 
 ```yaml
 This pull request is from Snyk and relates to JIRA-1,JIRA-2,JIRA-3
@@ -548,7 +548,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 To find more details, see the Snyk project https://app.snyk.io/org/my-org/project/xx-xxx-xx-xx
@@ -569,7 +569,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Fix applied to project my-org/project:filename
@@ -588,7 +588,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Fix applied by my-org
@@ -596,7 +596,7 @@ Fix applied by my-org
 
 <mark style="color:purple;">**`package_name: string`**</mark>
 
-This is the name of the package being fixed or upgraded. When more than one package is changed, this variable will default to the first one.
+This is the name of the package being fixed or upgraded. When more than one package is changed, this variable defaults to the first one.
 
 Follow this example to display in the description the package name of the first dependency being fixed in the PR.
 
@@ -609,7 +609,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Fixes adm-zip
@@ -617,7 +617,7 @@ Fixes adm-zip
 
 <mark style="color:purple;">**`package_from: string`**</mark>
 
-This is the version of the package that is being fixed or upgraded. In cases where more than one package is changed, this variable will default to the `from` version of the first one.
+This is the version of the package that is being fixed or upgraded. In cases where more than one package is changed, this variable defaults to the `from` version of the first one.
 
 **Input**
 
@@ -629,7 +629,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Fix is applied by moving from 0.4.7
@@ -637,7 +637,7 @@ Fix is applied by moving from 0.4.7
 
 <mark style="color:purple;">**`package_to: string`**</mark>
 
-The package is transitioning to this particular version. In cases where more than one package is changed, this variable will default to the `to` version of the first one.
+The package is transitioning to this particular version. In cases where more than one package is changed, this variable defaults to the `to` version of the first one.
 
 **Input**
 
@@ -649,7 +649,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Fix is applied by moving to 0.5.2
@@ -668,7 +668,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 The PR will fix 98 issues.
@@ -677,7 +677,7 @@ The PR will fix 98 issues.
 
 <mark style="color:purple;">**`product_is_container: boolean`**</mark>
 
-This variable can be used to customize attributes based on whether the PR is a Container product. Currently there are two different product types at Snyk which can open PRs (Open Source PRs and Container Prs). Using this variable will help you customise your template to differentiate between the two.
+This variable can be used to customize attributes based on whether the PR is a Container product. Currently there are two different product types at Snyk which can open PRs (Open Source PRs and Container Prs). Using this variable will help you customize your template to differentiate between the two.
 
 **Input**
 
@@ -702,7 +702,7 @@ If your project is a Container project, the description will be:
 
 <mark style="color:purple;">**`product_is_open_source: boolean`**</mark>
 
-This variable can be used to customize attributes based on whether the PR is an Open Source product. Currently there are two different product types at Snyk which can open PRs (Open Source PRs and Container Prs). Using this variable will help you customise your template to differentiate between the two.
+This variable can be used to customize attributes based on whether the PR is an Open Source product. Currently there are two different product types at Snyk which can open PRs (Open Source PRs and Container Prs). Using this variable will help you customize your template to differentiate between the two.
 
 **Input**
 
@@ -739,7 +739,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Is this a fix pr? true
@@ -758,7 +758,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Is this a backlog pr? false
@@ -777,7 +777,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Is this an upgrade pr? false
@@ -829,7 +829,7 @@ This variable is for container projects only. It can be used to display the name
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```
 We recommend upgrading to node:xx.xx.x
@@ -855,7 +855,7 @@ This variable is for container projects only. It can be used to display the curr
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```
 The current base image is: node:xx.xx.x
@@ -876,7 +876,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Upgrade to node:18-alpine
@@ -897,7 +897,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 Upgrading from node:16
@@ -916,7 +916,7 @@ description: |
 
 **Output**
 
-The description of your PR will be:
+The description of your PR is:
 
 ```yaml
 This is a fix pull request

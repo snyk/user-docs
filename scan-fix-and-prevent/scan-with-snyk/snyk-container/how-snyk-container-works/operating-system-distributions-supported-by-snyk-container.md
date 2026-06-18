@@ -2,7 +2,7 @@
 
 Snyk detects vulnerabilities in images based on operating systems listed on this page along with the specific versions that are supported. For the latest updates, see [Snyk updates](https://updates.snyk.io).
 
-If you use an unsupported distribution, for example, one that has reached its end of life (EOL) and is no longer being maintained, Snyk displays a message to tell you the distribution is unsupported. Due to a lack of security updates for unsupported distributions, it is possible that you will not receive notifications about vulnerabilities. However, it does not mean that your image is secure.
+If you use an unsupported distribution, for example, one that has reached its end of life (EOL) and is no longer being maintained, Snyk displays a message to tell you the distribution is unsupported. Due to a lack of security updates for unsupported distributions, you might not receive notifications about vulnerabilities. However, this does not mean that your image is secure.
 
 {% hint style="info" %}
 Snyk also supports images using packages from these distributions, but without the associated package manager, such as Distroless images.

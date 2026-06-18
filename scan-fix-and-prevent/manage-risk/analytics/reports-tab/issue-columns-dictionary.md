@@ -1,6 +1,6 @@
 # Issue columns dictionary
 
-Snyk reporting includes many filters and columns, allowing users to develop refined views of the data and obtain the required insights with ease. Reaching accurate conclusions requires understanding the columns used and the meaning of the filters. This dictionary explains the meaning of the issue columns in Snyk Issues Detail report.
+Snyk reporting includes many filters and columns, letting you develop refined views of the data and obtain the required insights. Reaching accurate conclusions requires understanding the columns used and the meaning of the filters. This dictionary explains the meaning of the issue columns in Snyk Issues Detail report.
 
 {% hint style="info" %}
 Each inner list is sorted alphabetically
@@ -33,10 +33,10 @@ Describes the main attributes of the issue.
 * **PRODUCT NAME** - Snyk product name.
 * **SEVERITY** - Indicates the issue severity according to the analysis by a specific Snyk product.
 * **SCORE** - A score based on an analysis model. Priority score is released in General Availability, while Risk Score is in Early Access. For details, see [Priority Score vs Risk Score](../../prioritize-issues-for-fixing/priority-score-vs-risk-score.md).
-* **REACHABILITY** - The reachability of the issue indicates whether the issue is related to a code element (function, module, class, etc) that are being called by the application and thus has a greater risk of exploitability. Allowed values:
+* **REACHABILITY** - The reachability of the issue indicates whether the issue is related to a code element (function, module, class, and so on) that the application calls and thus has a greater risk of exploitability. Allowed values:
   * **Reachable** - A direct or indirect path was found from your application to the vulnerable code.
   * **No path found** - No path found from your application to the vulnerable code. Note that this value might change over time.
-  * **Not applicable** - Reachability is not relevant to the specific issue. This value will appear for languages that are not yet supported and for issues that are not Snyk Open Source vulnerabilities.
+  * **Not applicable** - Reachability is not relevant to the specific issue. This value appears for languages that are not yet supported and for issues that are not Snyk Open Source vulnerabilities.
 
 ## Issue vulnerability details <a href="#issue-vulnerability-details" id="issue-vulnerability-details"></a>
 
@@ -62,7 +62,7 @@ The vulnerability details refer to various issue attributes that are being defin
 * **PROBLEM ID** - Snyk Vuln DB ID that uniquely identifies the vulnerability.
 * **PROBLEM TITLE** - The vulnerability name as described by Snyk.
 * **SEMVER VULNERABLE RANGE** - The vulnerable range of package versions (based on semantic versioning).
-* **SNYK CVSS SCORE -** Snyk's CVSS (Common Vulnerability Scoring System) score.
+* **SNYK CVSS SCORE -** The Snyk CVSS (Common Vulnerability Scoring System) score.
 * **VULNERABILITY PUBLICATION DATE** - Timestamp indicating when the vulnerability was published by Snyk.
 
 ## Issue context columns <a href="#issue-context-columns" id="issue-context-columns"></a>
@@ -90,7 +90,7 @@ The context columns help you understand the impact and risk for an issue based o
 ### Asset context
 
 {% hint style="info" %}
-When filtering issues by assets context, issues of archived assets will be excluded from the results
+When filtering issues by assets context, Snyk excludes issues of archived assets from the results
 {% endhint %}
 
 * **ASSET CLASS**- specifies the business criticality of the asset (A, most critical - D, least critical).
@@ -111,7 +111,7 @@ When filtering issues by assets context, issues of archived assets will be exclu
 Navigate to the [Application context for SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/application-context-for-scm-integrations) page for more details about enriching the application context data.
 
 {% hint style="info" %}
-When filtering issues by application context, issues of archived assets will be excluded from the results
+When filtering issues by application context, Snyk excludes issues of archived assets from the results
 {% endhint %}
 
 * **APPLICATION** - represents the application or service that the asset is associated with.
