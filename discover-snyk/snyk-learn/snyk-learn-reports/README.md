@@ -5,7 +5,7 @@
 
 Snyk Learn organization reports are available only with Enterprise plans. Snyk Learn assignment reports and program reports are available only in the Learning Management add-on offering.
 
-For more information, see [plans and pricing](https://snyk.io/plans/).
+For more information, visit [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk Learn offers reports to help you track learning progress across your Snyk tenant.
