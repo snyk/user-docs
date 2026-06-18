@@ -24,7 +24,7 @@ Snyk displays breakability analysis in two locations within pull requests for de
 *   Pull request description: View the breakability risk level for a quick upgrade assessment.
 *   Pull request comment: Snyk posts a comment on the new PR with the risk level and a detailed summary of potential breaking changes. This comment appears shortly after PR creation.
 
-Improve breakability analysis by reacting to the breakability comment on your pull request. Add a reaction to indicate if the assessment is helpful. Snyk uses this feedback to improve future breakability analysis.
+Improve breakability analysis by reacting with a thumbs up or thumbs down to the breakability comment on your pull request. Add a reaction to indicate if the assessment is helpful. Snyk uses this feedback to improve future breakability analysis.
 
 ## Risk level definitions and actions
 
