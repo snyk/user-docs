@@ -1,16 +1,16 @@
 # High availability mode
 
-High availability mode allows you to run several Broker clients that work independently to one another. The Snyk platform will spread the requests it makes evenly across the connections to ease the load on each client and provide redundancy. High availability mode also avoids downtime during Snyk server upgrade events.
+High availability mode lets you run several Broker clients that work independently of one another. The Snyk platform spreads the requests it makes evenly across the connections to ease the load on each client and provide redundancy. High availability mode also avoids downtime during Snyk server upgrade events.
 
 <figure><img src="../../../.gitbook/assets/snyk-broker-ha-mode.png" alt="Operation of multiple Broker clients in high availability"><figcaption><p>Operation of multiple Broker clients in high availability</p></figcaption></figure>
 
 For high availability mode, use Docker Compose to run multiple replicas (see [Docker Compose example](universal-broker/running-your-universal-broker-client.md#docker-compose-example)) or by increasing the replica count in your Kubernetes deployment. Each container must have the exact same configuration parameters.
 
-A maximum of four Broker Clients can run concurrently in high availability mode. Running a fifth Broker Client will attempt to connect indefinitely.
+A maximum of four Broker Clients can run concurrently in high availability mode. A fifth Broker Client attempts to connect indefinitely.
 
 ## **Important notes about settings**
 
-The Dispatcher Base URL should be specific to your region if you are using a regional Snyk platform, for example, api.eu.snyk.io. See [Regional hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency) for details.
+The Dispatcher Base URL must be specific to your region if you are using a regional Snyk platform, for example, api.eu.snyk.io. See [Regional hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency) for details.
 
 If you are using app.snyk.io, the following is not required. It is applicable only to regional Snyk platforms.
 
@@ -18,7 +18,7 @@ If you are using app.snyk.io, the following is not required. It is applicable on
 BROKER_DISPATCHER_BASE_URL=https://api.snyk.io
 ```
 
-Outbound connection to api.snyk.io or the corresponding api hostname must be allowed. Otherwise, preflight checks will indicate failure upon Broker client startup.
+Outbound connection to api.snyk.io or the corresponding api hostname must be allowed. Otherwise, preflight checks indicate failure upon Broker client startup.
 
 The `BROKER_CLIENT_URL` value must remain the same across all the Broker clients in the high availability set. The same `BROKER_TOKEN` must also be used.\
 It is acceptable for this URL to resolve to a particular client.

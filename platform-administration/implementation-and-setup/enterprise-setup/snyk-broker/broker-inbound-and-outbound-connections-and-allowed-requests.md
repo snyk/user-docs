@@ -26,7 +26,7 @@ Thus you do not need to allow inbound connections to the Broker Client from Snyk
 
 ### Approved data list for Snyk Broker
 
-The Broker Client maintains an approved data list for inbound and outbound requests. Only data on this approved list may be requested. This narrows the access permissions to the absolute minimum required for Snyk to monitor a repository.
+The Broker Client maintains an approved data list for inbound and outbound requests. You can request only data on this approved list. This narrows the access permissions to the minimum required for Snyk to monitor a repository.
 
 ### Inbound requests allowed
 
@@ -48,4 +48,4 @@ Webhook notifications are delivered to Snyk through the Broker Client only for e
 
 ### Default approved data list and `accept.json` file
 
-On occasion, you may need to [add and configure an `accept.json`](classic-broker/snyk-broker-infrastructure-as-code-detection.md) file in your Broker deployment. Doing this will remove the ability to apply ACCEPT rules when starting the Broker.
+On occasion, you might need to [add and configure an `accept.json`](classic-broker/snyk-broker-infrastructure-as-code-detection.md) file in your Broker deployment. Doing this removes the ability to apply ACCEPT rules when starting the Broker.

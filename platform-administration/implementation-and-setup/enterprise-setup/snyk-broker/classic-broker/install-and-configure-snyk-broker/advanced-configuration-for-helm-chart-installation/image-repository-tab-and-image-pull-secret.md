@@ -4,4 +4,4 @@ You can choose to use your own container registry and tag instead of the public 
 
 If your container registry requires an image pull secret, you can specify an image secret.
 
-Note that the Image Pull Secret is NOT created by the chart; rather, the image Pull Secret is expected to be present on your cluster.
+Note that the chart does not create the Image Pull Secret. The Image Pull Secret must already be present on your cluster.

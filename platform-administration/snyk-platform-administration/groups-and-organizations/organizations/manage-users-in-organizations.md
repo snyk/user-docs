@@ -3,7 +3,7 @@
 In the **Organization** where you want to manage users, select the **Members** menu option.
 
 {% hint style="info" %}
-You must have the permissions required to perform these tasks. For details, see [Pre-defined user roles](../../user-roles/pre-defined-roles.md) for a list of permissions.
+You must have the required permissions to perform these tasks. For a list of permissions, see [Pre-defined user roles](../../user-roles/pre-defined-roles.md).
 {% endhint %}
 
 ## Add users
@@ -17,7 +17,7 @@ You can do the following on the **Add members** screen:
 * Select **Invite new members** to send an email invitation to a new user. Enter the email addresses of users to invite, separated by commas, and click **Send invite**.
 * Select **Add existing members** to add existing members of your Group to the Organization. Select the users when prompted and click **Invite members.**
 * For Free plan users only:\
-  Select **Invite by link** to send a link; click **Copy link** and send the link yourself. Note that an invite link expires after 48 hours.
+  Select **Invite by link** to send a link. Click **Copy link** and send the link yourself. Note that an invite link expires after 48 hours.
 * Use the **New members join as** dropdown to define the default role of a user when joining, such as **Org admin**. For details, see [Manage permissions](../../user-roles/pre-defined-roles.md).
 
 For a demonstration of adding users, view this video:
@@ -43,7 +43,7 @@ To change the role of a user, click on the **Role** entry for the member and use
 <figure><img src="../../../.gitbook/assets/org-member-change-role.png" alt=""><figcaption><p>Select new role</p></figcaption></figure>
 
 {% hint style="warning" %}
-For Enterprise plan customers who create custom roles, Snyk prevents users from assigning roles to other users who have more privileges. If you try to update a role, invite a new user, or add an existing user with a role that has more privileges than you have, you will see the error **Cannot assign higher privilege role**.
+For Enterprise plan customers who create custom roles, Snyk prevents users from assigning roles to other users who have more privileges. If you try to update a role, invite a new user, or add an existing user with a role that has more privileges than you have, you see the error **Cannot assign higher privilege role**.
 {% endhint %}
 
 ## Delete Organization members

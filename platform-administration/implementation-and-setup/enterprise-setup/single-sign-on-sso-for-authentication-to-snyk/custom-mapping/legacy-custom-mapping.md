@@ -5,7 +5,7 @@ To configure this option, send the `roles` array within the SAML attributes or O
 snyk-groupadmin
 
 * This role mapping assigns users with the Group Admin role.
-* **groupadmin** configures all users with this role as a Group Admin all Group(s) that the user is assigned to, which grants Organization Admin permissions to all Organizations that fall under the Group(s).
+* **groupadmin** configures all users with this role as a Group Admin in all Groups that the user is assigned to, which grants Organization Admin permissions to all Organizations that fall under the Groups.
 
 snyk-groupviewer
 
@@ -13,8 +13,8 @@ snyk-groupviewer
 
 snyk-{groupID}
 
-* This role mapping assigns users with the Org Collaborator roles for all Organizations underneath the specified Group(s).
-* **groupID** is the ID string for a group in Snyk. This can be found in the snyk URL at the Group level: `https://app.snyk.io/group/<Group ID>` or **Group dropdown -> Settings -> General -> Group ID**.
+* This role mapping assigns users with the Org Collaborator roles for all Organizations underneath the specified Groups.
+* **groupID** is the ID string for a Group in Snyk. You can find it in the Snyk URL at the Group level: `https://app.snyk.io/group/<Group ID>` or **Group dropdown -> Settings -> General -> Group ID**.
 
 snyk-{orgslug}-{role}
 
@@ -34,12 +34,12 @@ Users must only have one role mapped per Organization. Mapping multiple roles fo
 ### Tenant-level role assertions
 
 {% hint style="info" %}
-With the introduction of Tenants, Snyk has added new possible role assertions at a Tenant level, enabling customers to assign Tenant-level roles.
+With the introduction of Tenants, Snyk has added new possible role assertions at a Tenant level, letting customers assign Tenant-level roles.
 {% endhint %}
 
 The following role mappings assign users a tenant role.
 
-Only one Tenant-Level assertion may be provided for each user. If no Tenant-level assertion is provided, the user will be granted the **Tenant Member** role if they do not already have a Tenant-level membership.
+You can provide only one Tenant-level assertion for each user. If you provide no Tenant-level assertion, the user receives the **Tenant Member** role if they do not already have a Tenant-level membership.
 
 snyk-tenantadmin
 
@@ -132,7 +132,7 @@ The following example shows how to assign roles to Snyk users under the mapping 
   * The Business Development team needs access to the ABC group and only the Partner-Plugins Organization as Org Admin.
   * Engineering needs access to the ABC Group, the Application-SecurityScanner1 Organization as Org Admin, Partner-Plugins Organization as Org Admin, and Application-Payments as Org Collaborator.
   * Security needs access to the ABC group as Group Admin and all three organizations as Org Admin.
-  * The Product team needs access to the ABC group and all three organizations as Org Collaborator,
+  * The Product team needs access to the ABC group and all three organizations as Org Collaborator.
 
 For the Business Development Team, Snyk uses the snyk-{orgslug}-{role} mapping:
 
@@ -166,7 +166,7 @@ For the Security Team, Snyk uses the snyk-groupadmin mapping:
 }
 ```
 
-For the Product Team, Snyk uses the snyk-{groupID} mapping, where the value of groupID must be inserted;
+For the Product Team, Snyk uses the snyk-{groupID} mapping, where you must insert the value of groupID:
 
 ```
 {

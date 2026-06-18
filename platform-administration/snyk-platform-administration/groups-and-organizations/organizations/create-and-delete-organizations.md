@@ -19,7 +19,7 @@ Follow these steps to create an Organization:
 2\. Enter a name for the new Organization. Consider using a structured naming convention to identify your Organizations.
 
 {% hint style="info" %}
-It is highly recommended to enter a unique name for the new Organization.
+Snyk recommends that you enter a unique name for the new Organization.
 {% endhint %}
 
 3\. From the dropdown list, select an Organization from which to copy all settings and integrations.
@@ -44,7 +44,7 @@ Follow these steps to delete an Organization:
 
 2\. After the selected Organization appears, click **Org Settings** on the Group menu.
 
-3\. On the **Settings** page, select **Genera**l on the menu.
+3\. On the **Settings** page, select **General** on the menu.
 
 4\. Scroll down to the **Delete organization** section and click **Delete organization**:
 

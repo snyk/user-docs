@@ -6,9 +6,9 @@
 Snyk Broker Container Registry Agent is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-The Snyk Broker Container Registry Agent enables you to connect with network-restricted container registries so you can scan these registries using the Snyk service.
+The Snyk Broker Container Registry Agent lets you connect with network-restricted container registries so you can scan these registries using the Snyk service.
 
-When you use the Container Registry Agent, Snyk can integrate with private container registries that you host, and help you to better secure container images in those registries. Integration with private container registries allows you to:
+When you use the Container Registry Agent, Snyk can integrate with private container registries that you host, and help you to better secure container images in those registries. Integration with private container registries lets you:
 
 * Keep sensitive data such as your access tokens inside your private network, never sharing that information with Snyk.
 * Provide controlled access to the network for Snyk, limiting Snyk access and the actions that Snyk can perform.
@@ -79,12 +79,12 @@ With the listed configuration of 1 vCPU and 2GB RAM, scanning capacity would be 
 
 ### Configuring and running the Container Registry Agent
 
-Snyk recommends deploying the Container Registry Agent first as both Universal and Classic Broker requires configuration input from that deployment, namely the Container Registry Agent URL. You can pull the Container Registry Agent image from Docker Hub using the link provided in the [prerequisites](./#prerequisites-for-container-registry-agent).
+Snyk recommends deploying the Container Registry Agent first, as both Universal and Classic Broker require configuration input from that deployment, namely the Container Registry Agent URL. You can pull the Container Registry Agent image from Docker Hub using the link provided in the [prerequisites](./#prerequisites-for-container-registry-agent).
 
 To configure the Container Registry Agent, the following environment variables are available:
 
 * `SNYK_PORT` - the local port at which the Container Registry Agent accepts connections (default value: 17500).
-* `SNYK_MAX_IMAGE_SIZE_IN_BYTES` - the maximum size of an image that Snyk is able to scan (optional, default value: 2147483648).
+* `SNYK_MAX_IMAGE_SIZE_IN_BYTES` - the maximum size of an image that Snyk can scan (optional, default value: 2147483648).
 
 Run the Container Registry Agent container with the relevant configuration:
 
@@ -161,7 +161,7 @@ The following container registries require specific environment variables, setup
 
 ### **GCR and Google Artifact Registry**
 
-All the preceding information applies to setting up the Broker Client for these container registries. The `CR_USERNAME` value is permanent and should be `_json_key`, and the `CR_PASSWORD` value should be the JSON key used to authenticate to Google.
+All the preceding information applies to setting up the Broker Client for these container registries. The `CR_USERNAME` value is permanent and must be `_json_key`, and the `CR_PASSWORD` value must be the JSON key used to authenticate to Google.
 
 ### **JFrog Container Registry (Artifactory)**
 

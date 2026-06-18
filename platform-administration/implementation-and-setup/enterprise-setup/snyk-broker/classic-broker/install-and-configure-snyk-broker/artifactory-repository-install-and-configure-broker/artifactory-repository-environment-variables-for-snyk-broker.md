@@ -14,7 +14,7 @@ The following fields are optional:
 * `Basic auth`: Omit if no basic auth required.\
   URL encode both username and password info to avoid errors that may prevent authentication.
 * `Protocol`: Defaults to `https://`\
-  This should only be specified when no certificate is present and `http://` is required instead for your instance.
+  Specify this only when no certificate is present and your instance requires `http://` instead.
 
 `ARTIFACTORY_URL` format with optional fields:\
 `[http://][username:password@]hostname[:port]/artifactory`\

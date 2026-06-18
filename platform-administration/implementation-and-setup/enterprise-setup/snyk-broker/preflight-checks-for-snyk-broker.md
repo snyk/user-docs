@@ -10,7 +10,7 @@ If it is not specified, BROKER\_SERVER\_URL is [https://broker.snyk.io](https://
 
 ## `rest-api-status`
 
-The REST API Healthcheck validates the connectivity to the Snyk REST API by performing a GET request to `{API_BASE_URL}/rest/openapi`. This check is conditional and will be executed only if high availability mode is enabled.
+The REST API Healthcheck validates the connectivity to the Snyk REST API by performing a GET request to `{API_BASE_URL}/rest/openapi`. This check is conditional and runs only if high availability mode is enabled.
 
 If it is not specified, the `API_BASE_URL` is [https://api.snyk.io](https://api.snyk.io/). For additional URLs, see [Regional hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency).
 
@@ -23,5 +23,5 @@ If you are using TLS termination and you do not require a certificate+key in the
 There is no default.
 
 {% hint style="info" %}
-You can use the environment variable PREFLIGHT\_CHECKS\_ENABLED=false to disable the Preflight Checks feature, so no checks will be executed when the Broker Client starts.
+You can use the environment variable PREFLIGHT\_CHECKS\_ENABLED=false to disable the Preflight Checks feature, so no checks run when the Broker Client starts.
 {% endhint %}

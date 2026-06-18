@@ -40,7 +40,7 @@ You can [view dependencies](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/preve
 
 ### Group Policies
 
-With Policies, you can easily automate the process of adding business context and receiving notifications.
+With Policies, you can automate the process of adding business context and receiving notifications.
 
 After a policy is created, it is run in a maximum of 3 hours after creation, then once every 3 hours.
 

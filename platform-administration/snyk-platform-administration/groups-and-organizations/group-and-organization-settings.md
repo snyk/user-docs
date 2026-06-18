@@ -24,7 +24,7 @@ At the Organization level, select **Settings** to manage Organization settings a
 * **Integrations**: Set up integrations and see a list of those configured for your Organization; click the name of the configured integration to see the details. See [Integrate with Snyk](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk) for information about available Snyk integrations.
 * **Snyk Open Source**: Enable Reachable vulnerabilities analysis and edit language settings; see [Snyk Open Source - supported languages and package managers](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks) for details.
 * **Snyk Code**: Enable Snyk Code; see the [Snyk Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code) documentation for details.
-* **Snyk IaC:** Enable Snyk Iac, detecting configuration files, and rules. Select severity levels for configurations scanned. See the [IaC ](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/scan-your-iac-source-code)documentation for details.
+* **Snyk IaC:** Enable Snyk IaC, detecting configuration files, and rules. Select severity levels for configurations scanned. See the [IaC ](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/scan-your-iac-source-code)documentation for details.
 * **Usage**: See the [Usage settings](usage-settings.md) page for details.
 * **Notifications**: See the [Manage notifications](../manage-notifications.md) page for details.
 * **Snyk Preview**: See the [Snyk Preview page](../snyk-preview.md) for details.

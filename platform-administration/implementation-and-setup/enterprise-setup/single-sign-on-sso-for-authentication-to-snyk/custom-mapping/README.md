@@ -1,6 +1,6 @@
 # Custom mapping
 
-Custom mapping allows you to dynamically assign users to your Snyk Groups and Organizations based on data provided by your Identity Provider (IdP), in order to implement a scaled user provisioning and access model.
+Custom mapping lets you dynamically assign users to your Snyk Groups and Organizations based on data provided by your Identity Provider (IdP), to implement a scaled user provisioning and access model.
 
 {% hint style="warning" %}
 Contact your Snyk account team or Snyk Support to turn on custom mapping once you have completed the setup steps.
@@ -38,8 +38,8 @@ Role assertions should be provided to Snyk in the following format:
 Where:
 
 * `snyk` is a fixed prefix for role mapping. **Required**.
-* `scope` can be one of `org`, `group`, or `tenant`. **Required**; if a role mapping does not contain a valid scope, it will be ignored.
-* `target` can be a slug of an `org`, `group`, or `tenant` where the role will be granted. See [slugs](./#slugs) for more information.
+* `scope` can be one of `org`, `group`, or `tenant`. **Required**; if a role mapping does not contain a valid scope, Snyk ignores it.
+* `target` can be a slug of an `org`, `group`, or `tenant` where the role is granted. See [slugs](./#slugs) for more information.
   * **Optional**; may be an asterisk `*` or empty string `::`to apply as a [wildcard](./#wildcards) for all resources within the defined `scope` that are associated with the SSO connection.
   * **Optional**; an asterisk ( `*`) or an empty string can be used to apply to all resources **t**hat are associated with the SSO connection.
 * `role` is the normalized name of the required role. **Required**; if no role is present, the role mapping is ignored. See [Role normalized name](./#role-normalized-name) to find this information.
@@ -54,20 +54,20 @@ Users must only have one role mapped per Organization, Group or Tenant. Mapping 
 
 All users with any memberships within a Tenant must have a Tenant membership. If a user has a membership of an Organization, they must also have a Group Membership.
 
-If only an Organization-level role assertion is provided for a given user, for example, then the user will automatically be assigned the **Tenant Member** and **Group Member** roles. These automatic assignments can be overridden by providing role assertions at the Group or Tenant level.
+If only an Organization-level role assertion is provided for a given user, for example, then Snyk automatically assigns the user the **Tenant Member** and **Group Member** roles. You can override these automatic assignments by providing role assertions at the Group or Tenant level.
 
 Snyk recommends providing explicit Tenant level and Group level role assertions where needed, to ensure that users have the correct role on login.
 
 {% hint style="info" %}
-An SSO connection may only be associated with one Tenant, and all users with any memberships within a tenant must also have a Tenant Membership.
+An SSO connection can only be associated with one Tenant, and all users with any memberships in a tenant must also have a Tenant Membership.
 
-Therefore, it may be easier to assign Tenant-level roles by using the wildcard syntax (see example below), since the SSO is only linked to the one Tenant.
+Therefore, it may be easier to assign Tenant-level roles by using the wildcard syntax, since the SSO is only linked to the one Tenant.
 {% endhint %}
 
 ### Example role assertions
 
-* `snyk:group:*:group_admin` Assigns the user the Group admin role for all groups associated with the SSO connection.
-* `snyk:group::custom:sysadmin` Assigns the user the custom Group-level role `Sys Admin` for all groups associated with the SSO connection.
+* `snyk:group:*:group_admin` Assigns the user the Group admin role for all Groups associated with the SSO connection.
+* `snyk:group::custom:sysadmin` Assigns the user the custom Group-level role `Sys Admin` for all Groups associated with the SSO connection.
   * Note that `::` here indicates an empty string for the target, and so is treated as a wildcard in the preceding example.
   * Note that this Group-level custom role must be created manually before it can be assigned.
 * `snyk:org:my-default-org:org_admin` Assigns the user the **Organization Admin** Organization-level role for the Organization `my-default-org`.
@@ -97,9 +97,9 @@ snyk:org:test-org-N58YhztauHcaMiNfvi5fbL:custom:developer_readonly"
 ```
 {% endhint %}
 
-These assertions will assign the user:
+These assertions assign the user:
 
-* The pre-defined Group-level role **Group Viewer** for all groups in the SSO. See [pre-defined roles](../../../../snyk-platform-administration/user-roles/pre-defined-roles.md) for the permission this grants
+* The pre-defined Group-level role **Group Viewer** for all Groups in the SSO. See [pre-defined roles](../../../../snyk-platform-administration/user-roles/pre-defined-roles.md) for the permission this grants
 * The pre-defined Organization-level role **Organization Admin** for the Organization with the name **Development**.
 * The custom Organization-level role **Developer ReadOnly** for the Organization with the name **Test Org**, which has the slug `test-org-N58YhztauHcaMiNfvi5fbL`.
 
@@ -116,11 +116,11 @@ roles: [
     ]
 ```
 
-These role assertions will:
+These role assertions:
 
 * Grant the user the pre-defined Organization-level role **Organization Admin** in the **Development** Organization.
-* Grant the user the custom Organization-level role **Developer ReadOnly** on all other organizations within the SSO connection.
-* Grant the user the pre-defined Group-level role **Group Member** on all groups in the SSO connection. For more details, see the note that follows.
+* Grant the user the custom Organization-level role **Developer ReadOnly** on all other Organizations in the SSO connection.
+* Grant the user the pre-defined Group-level role **Group Member** on all Groups in the SSO connection. For more details, see the note that follows.
 
 {% hint style="info" %}
 Any user that is granted a role in an Organization within the SSO without an explicit Group-level role in the role assertion, will also be implicitly assigned the **Group Member** Group-level role for that Group. This is the pre-defined Group-level role with the fewest permissions and ensures that the user becomes a member of the Group.

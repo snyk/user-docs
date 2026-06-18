@@ -1,4 +1,4 @@
-# OneLogin SAML Application setup
+# OneLogin SAML application setup
 
 This example shows setting up a SAML application in OneLogin and connecting this to Snyk to facilitate SSO. To configure your OneLogin to use SSO with Snyk, start by obtaining an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.
 
@@ -14,7 +14,7 @@ This example shows setting up a SAML application in OneLogin and connecting this
 
 4\. Filter by “saml” and select the **SAML Custom Connector (Advanced)** app.
 
-<figure><img src="https://lh5.googleusercontent.com/NcVS2ScxD3_3l464zhgBhVuxC6hpJLyJy7y5c5uyoYv0cfyY5izIiMnmYQIlrerUusud7bbIpFJjQeSHnDHH7v5CbnVhzBwm8qpoO9ryfpCC8WGo4sw3OpDU1SwZWXHaPtSR1-sGX103CoaugXPEI1w" alt="Select SAML Cusotm Connector (Advanced) app"><figcaption><p>Select SAML Cusotm Connector (Advanced) app</p></figcaption></figure>
+<figure><img src="https://lh5.googleusercontent.com/NcVS2ScxD3_3l464zhgBhVuxC6hpJLyJy7y5c5uyoYv0cfyY5izIiMnmYQIlrerUusud7bbIpFJjQeSHnDHH7v5CbnVhzBwm8qpoO9ryfpCC8WGo4sw3OpDU1SwZWXHaPtSR1-sGX103CoaugXPEI1w" alt="Select SAML Custom Connector (Advanced) app"><figcaption><p>Select SAML Cusotm Connector (Advanced) app</p></figcaption></figure>
 
 5\. Enter a **Display Name** for the app, for example, Snyk. Optionally, pick an icon. You can find the Snyk logo on Snyk’s [press kit](https://snyk.io/press-kit/) page.
 
@@ -34,7 +34,7 @@ For the **Field name**, use **email**. Make sure the checkbox **Include in SAML 
 
 On the next screen, select **Email** in the **Value** dropdown list. **Save**.
 
-<figure><img src="https://lh5.googleusercontent.com/IgUtsnagxiK8GIFB-FomTnlNWoymq-PWpRnsKqeHJebcjiOi9pK6mAdmW7JG-DRQSuzu2-oxjy90SQVJnDLjFE0nZ9Fo0x_lNLsVwceArXqzK2QlRBrTw9xzVsx7URFHeiw4jAzIYqzq9mK0HcIfReY" alt="Select Email form the value dropdown"><figcaption><p>Select Email form the value dropdown</p></figcaption></figure>
+<figure><img src="https://lh5.googleusercontent.com/IgUtsnagxiK8GIFB-FomTnlNWoymq-PWpRnsKqeHJebcjiOi9pK6mAdmW7JG-DRQSuzu2-oxjy90SQVJnDLjFE0nZ9Fo0x_lNLsVwceArXqzK2QlRBrTw9xzVsx7URFHeiw4jAzIYqzq9mK0HcIfReY" alt="Select Email from the value dropdown"><figcaption><p>Select Email form the value dropdown</p></figcaption></figure>
 
 Repeat the same steps for the **name** attribute.
 

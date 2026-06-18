@@ -7,7 +7,7 @@ Service accounts are available only for Enterprise plans. For more information, 
 Free and Team plan users and Trial users have access to a Snyk user's token under their profile and can use this token to authenticate with a CI/CD, to run the CLI locally or on a build machine, and to authenticate with an IDE manually.
 {% endhint %}
 
-Service accounts are a special type of system user. Creating a service account generates an API token that is the only token associated with the service account and takes the place of standard user credentials. Snyk needs authentication in order to initiate Snyk processes.
+Service accounts are a special type of system user. Creating a service account generates an API token that is the only token associated with the service account and takes the place of standard user credentials. Snyk needs authentication to initiate Snyk processes.
 
 You can set up a service account to use for automation rather than using a Snyk user's token and to help manage integrations.
 
@@ -48,7 +48,7 @@ Generate single or multiple tokens on the Group or Organization levels to manage
 ### Prerequisites to set up a service account
 
 {% hint style="info" %}
-Group viewers are not able to create service accounts, regardless of their Org role.
+Group viewers cannot create service accounts, regardless of their Org role.
 {% endhint %}
 
 To create a Group service accoun&#x74;**,** you must be a Group admin. To create an Organization service account, you must be either a Group member and Org Admin, or a Group admin.
@@ -84,7 +84,7 @@ From the **Role** dropdown list, select an appropriate role.
 
 For Group service accounts, choose from the following list of roles to configure the scope of the token; Snyk recommends selecting Viewer or Admin.
 
-* **Group Viewer** enables read-only access. Note that to set an API token to be read-only and unable to write to the platform, you must use a service account and set it to Group Viewer. See [Snyk API token permissions users can control](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api/snyk-api-token-permissions-users-can-control).
+* **Group Viewer** enables read-only access. To set an API token to be read-only and unable to write to the platform, you must use a service account and set it to Group Viewer. See [Snyk API token permissions users can control](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api/snyk-api-token-permissions-users-can-control).
 * **Group Admin** enables full administrator access.
 * **Group Member** associates a service account with a group but does not grant any specific access.
 
@@ -93,14 +93,14 @@ For **Organization service accounts**, choose from the standard roles, **Org Adm
 ### Create the service account
 
 {% hint style="warning" %}
-To align with security best practice, a service account token is only generated once. If you lose this token you will need to create a new service account and safely store that newly generated token.
+To align with security best practice, a service account token is only generated once. If you lose this token, you must create a new service account and safely store that newly generated token.
 {% endhint %}
 
 Click **Create**.
 
 The token is generated and displayed.
 
-Ensure that you copy this token, as you will not see it again. You can click **Close and Hide** once you have copied the token; whether you do or not, when you navigate away from this page, the token will no longer be visible. This is a standard security practice to keep your tokens safe.
+Ensure that you copy this token, as you cannot see it again. You can click **Close and Hide** after you have copied the token. Whether you do or not, when you navigate away from this page, the token is no longer visible. This is a standard security practice to keep your tokens safe.
 
 #### How the token is associated with a Group and Organizations
 
@@ -165,7 +165,7 @@ When you open a role that is assigned to a service account, the system displays 
 <figure><img src="../../../.gitbook/assets/Screenshot 2022-06-23 at 15.49.49.png" alt="Warning that you are about to change a role assigned to a service account"><figcaption><p>Warning that you are about to change a role assigned to a service account</p></figcaption></figure>
 
 {% hint style="warning" %}
-Snyk prevents users from creating Organization service accounts with a role that has more privileges than those the user creating the service account has. If you try to create a service account with a role that has more privileges than you have, you will see the error **Cannot create a service account with a higher privilege role than yours**.
+Snyk prevents users from creating Organization service accounts with a role that has more privileges than those the user creating the service account has. If you try to create a service account with a role that has more privileges than you have, you see the error **Cannot create a service account with a higher privilege role than yours**.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2022-08-01 at 15.59.52.png" alt="User cannot assign a more privileged role to a service account"><figcaption><p>User cannot assign a more privileged role to a service account</p></figcaption></figure>

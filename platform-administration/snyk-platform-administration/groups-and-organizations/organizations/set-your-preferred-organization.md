@@ -18,6 +18,6 @@ Follow these steps to change your Preferred Organization:
 
 <figure><img src="../../../.gitbook/assets/account-settings-preferred-org.png" alt=""><figcaption><p>Change your Preferred Organization</p></figcaption></figure>
 
-3\. Click the **Update Preferred Org** button to save your new setting.
+3\. Click **Update Preferred Org** to save your new setting.
 
 The Organization you selected as your **Preferred Organization** is displayed when you log in to your Snyk account and used by default for the test count when you scan using the CLI.

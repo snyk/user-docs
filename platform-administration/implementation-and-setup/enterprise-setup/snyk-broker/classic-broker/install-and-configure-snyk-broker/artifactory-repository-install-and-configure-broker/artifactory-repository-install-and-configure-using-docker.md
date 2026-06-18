@@ -10,11 +10,11 @@ Before installing, review the [prerequisites](./) and the general instructions f
 
 This integration is useful to ensure a secure connection with your on-premise Artifactory Repository deployment.
 
-For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup). For information about brokered integration with Artifactory Container Registry see [Snyk Broker -Container Registry Agent](../../../snyk-broker-container-registry-agent/).
+For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup). For information about brokered integration with Artifactory Container Registry see [Snyk Broker - Container Registry Agent](../../../snyk-broker-container-registry-agent/).
 
 ## Configure Broker to be used for Artifactory Registry
 
-To use the Broker client with an Artifactory Registry deployment, **run** `docker pull snyk/broker:artifactory`. Refer to [Artifactory Repository - environment variables for Snyk Broker](artifactory-repository-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
+To use the Broker client with an Artifactory Registry deployment, run `docker pull snyk/broker:artifactory`. Refer to [Artifactory Repository - environment variables for Snyk Broker](artifactory-repository-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
 
 ## Docker run commands to set up a Broker Client for Artifactory Repository
 

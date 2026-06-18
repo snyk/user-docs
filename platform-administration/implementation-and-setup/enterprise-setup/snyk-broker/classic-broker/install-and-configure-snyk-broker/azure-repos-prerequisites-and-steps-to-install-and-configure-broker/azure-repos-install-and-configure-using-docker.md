@@ -14,7 +14,7 @@ This integration is useful to ensure a secure connection with your on-premise or
 
 To use the Broker Client with [Azure](https://azure.microsoft.com/en-us/services/devops/), run `docker pull snyk/broker:azure-repos`. Refer to [Azure Repos - environment variables for Snyk Broker](azure-repos-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
 
-If necessary, go to the [Advanced configuration page](../advanced-configuration-for-snyk-broker-docker-installation/) and make any configuration changes needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Azure Repos instance is using a private certificate, and setting up [proxy support](../advanced-configuration-for-snyk-broker-docker-installation/proxy-support-with-docker.md).
+If necessary, navigate to the [Advanced configuration page](../advanced-configuration-for-snyk-broker-docker-installation/) and make any configuration changes needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Azure Repos instance is using a private certificate, and setting up [proxy support](../advanced-configuration-for-snyk-broker-docker-installation/proxy-support-with-docker.md).
 
 ## Docker run command to set up a Broker Client for Azure Repos
 
@@ -47,10 +47,10 @@ docker run --restart=always \
 
 Paste the Broker Client configuration to start the Broker Client container.
 
-Once the container is up, the Azure Repos Integrations page shows the connection to Azure Repos and you can `Add Projects.`
+After the container is up, the Azure Repos Integrations page shows the connection to Azure Repos and you can `Add Projects.`
 
 ## Basic troubleshooting for Broker with Azure Repos
 
 * Run `docker logs <container id>` to look for any errors, where `container id` is the Azure Repos Broker container ID.
 * Ensure relevant ports are exposed to Azure Repos.
-* Make sure that file permissions for the local path to the `accept.json` file, as well as the `accept.json` file itself, are correct and accessible.
+* Ensure that file permissions for the local path to the `accept.json` file, as well as the `accept.json` file itself, are correct and accessible.

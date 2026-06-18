@@ -17,7 +17,7 @@ For convenience, instructions to obtain or generate the Broker token follow. Whe
 
 ## Obtain Broker token for Nexus integration
 
-1. Go to **Settings** > **Integrations** > **Package Repositories** > **Nexus**
+1. Navigate to **Settings** > **Integrations** > **Package Repositories** > **Nexus**.
 2. Verify that you see the screen to configure Nexus.
 
 <figure><img src="../../../../../../.gitbook/assets/Screenshot 2022-07-15 at 15.15.11.png" alt="Configure Nexus"><figcaption><p>Configure Nexus</p></figcaption></figure>

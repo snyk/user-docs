@@ -24,7 +24,7 @@ The process of establishing trust between your identity provider (IdP) and Snyk 
 {% hint style="info" %}
 After SSO is configured both from Snyk and your company's network, a trust relationship is established with Snyk, Auth0 (on behalf of Snyk), and your network. Any sensitive data is encrypted and stored in Auth0 only for the purposes of enabling user logins.
 
-Although not all the examples following this page cover verifying the Snyk signature, it is recommended that you improve the trust relationship and ensure integrity even further. Follow your respective IdP's documentation to add SP signature verification where possible.
+Although not all the examples following this page cover verifying the Snyk signature, Snyk recommends that you improve the trust relationship and ensure integrity even further. Follow your respective IdP's documentation to add SP signature verification where possible.
 {% endhint %}
 
 ## **User login**
@@ -42,7 +42,7 @@ Users are [provisioned ](../choose-a-provisioning-option.md)to Snyk when they lo
 
 ### **Configuring Snyk**
 
-1. In Step 2 of the SSO settings page in the Snyk web UI, enter the details collected from the IdP by providing the sign in URL, sign out URL if available and desired, the IdP signing certificate and domains and subdomains that will be served over the SSO connection.
+1. In Step 2 of the SSO settings page in the Snyk web UI, enter the details collected from the IdP by providing the sign in URL, sign out URL if available and desired, the IdP signing certificate and domains and subdomains that are served over the SSO connection.
 2. In case the connection requires HTTP-Redirect protocol binding, change that option from the default HTTP-POST.
 3. Finally, verify if an IdP-initiated workflow should be enabled and then select **Create Connection** or **Save changes** if you are modifying an existing connectio&#x6E;**.**
 

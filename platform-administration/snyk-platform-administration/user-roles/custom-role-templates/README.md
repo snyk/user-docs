@@ -20,5 +20,5 @@ You can use these templates to create your own custom roles that fit into and re
 * [Snyk Learn - Learning Admin](snyk-learn-learning-admin.md)
 
 {% hint style="warning" %}
-If you create a Group level custom role that enables creation of new Organizations, you must include the **Add Organizations** and **View Groups** permissions. When enabled, the user with that custom role will be able to see the **Create organization** button when switching Organizations in the Web UI.
+If you create a Group level custom role that enables creation of new Organizations, you must include the **Add Organizations** and **View Groups** permissions. When enabled, the user with that custom role can see **Create organization** when switching Organizations in the Web UI.
 {% endhint %}

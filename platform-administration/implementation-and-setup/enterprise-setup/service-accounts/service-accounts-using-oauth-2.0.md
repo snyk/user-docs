@@ -5,7 +5,7 @@
 Service accounts using OAuth 2.0 are available only with Enterprise plans through the Snyk API. For more information, see [Manage service accounts using the Snyk API](manage-service-accounts-using-the-snyk-api.md).
 {% endhint %}
 
-You can create service accounts that authenticate with the [Auth 2.0 `client_credentials` grant flow](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4). OAuth 2.0 access tokens are used the same way another Snyk token is used, but they have added security of a short time-to-live (TTL) and can be automatically refreshed.
+You can create service accounts that authenticate with the [OAuth 2.0 `client_credentials` grant flow](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4). OAuth 2.0 access tokens are used the same way another Snyk token is used, but they have added security of a short time-to-live (TTL) and can be automatically refreshed.
 
 ## OAuth 2.0 with client secret
 
@@ -23,7 +23,7 @@ After the service account is created, you can retrieve an `access_token` through
 
 You can use an`access_token` the same way as you would use a Snyk API key, but with the `Authorization: bearer $access_token` header or the `SNYK_OAUTH_TOKEN` environment variable with the Snyk CLI.
 
-The `access_token` has a short time-to-live and must be refreshed once it expires. There are many OAuth 2.0 libraries available that greatly simplify this process.
+The `access_token` has a short time-to-live and must be refreshed after it expires. Many OAuth 2.0 libraries are available that greatly simplify this process.
 
 ### Authenticate with the Snyk CLI
 
@@ -34,7 +34,7 @@ You can also use the `client_secret` and the `client_id` to authenticate with th
 In addition to creating and managing OAuth service accounts through the API, you can create OAuth-based service accounts through the Web UI. The steps follow.
 
 {% hint style="info" %}
-Note: you cannot modify the lifetime of an OAuth service account through the UI, but you can perform this action through the API.
+You cannot modify the lifetime of an OAuth service account through the UI, but you can perform this action through the API.
 {% endhint %}
 
 1. In the Group settings section, select **Service Accounts**.
@@ -45,10 +45,10 @@ Note: you cannot modify the lifetime of an OAuth service account through the UI,
 3.  Select the **OAuth 2.0 client credentials** radio button and click the **Create service account** button.
 
     <figure><img src="../../../.gitbook/assets/oath2-client-credentials.png" alt=""><figcaption><p>OAuth 2.0 client credentials</p></figcaption></figure>
-4. A window opens, showing your **Client ID** and **Client secret**. Note these credentials and copy them, as you will not be able to retrieve them in the future. After you have copied the credentials to a safe location, click **Close window**.
-5.  Your service account will be listed in the service accounts in your Group.
+4. A window opens, showing your **Client ID** and **Client secret**. Note these credentials and copy them, as you cannot retrieve them in the future. After you have copied the credentials to a safe location, click **Close window**.
+5.  Your service account is listed in the service accounts in your Group.
 
-    <figure><img src="../../../.gitbook/assets/service-accounts-for-group.jpg" alt=""><figcaption><p>Service account listed for your Gorup</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/service-accounts-for-group.jpg" alt=""><figcaption><p>Service account listed for your Group</p></figcaption></figure>
 
 ## Delete an OAuth-based service account through the UI
 
@@ -59,9 +59,9 @@ Note: you cannot modify the lifetime of an OAuth service account through the UI,
 
 3.  A window opens with the prompt **Are you sure you want to delete this service account?** To delete the service account, click the **Delete service account** button.
 
-    <figure><img src="../../../.gitbook/assets/delete-service-account-confirmation.png" alt=""><figcaption><p>Confirmation screen to keep service account or delete sevice account</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/delete-service-account-confirmation.png" alt=""><figcaption><p>Confirmation screen to keep service account or delete service account</p></figcaption></figure>
 
-Your service account has been deleted.
+Your service account is deleted.
 
 ## OAuth 2.0 with Private Key JWT
 
@@ -92,10 +92,10 @@ The JWT should include the [claims](https://datatracker.ietf.org/doc/html/rfc751
 
 ### Retrieve a Private Key JWT access token
 
-After the service account is created and signed JWT is prepared, you can retrieve an `access_token` using the [Snyk OAuth 2.0 access token endpoint](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/oauth2-api#token). This access token can be used the same way as a Snyk API key would be used. The request body should include the following:
+After the service account is created and signed JWT is prepared, you can retrieve an `access_token` using the [Snyk OAuth 2.0 access token endpoint](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/oauth2-api#token). You can use this access token the same way as a Snyk API key. The request body should include the following:
 
 * `grant_type: client_credentials`
 * `client_assertion_type: private_key_jwt`
 * `client_assertion:` `<signed JWT>`
 
-The `access_token` has a short time to live and must be refreshed once it expires. Many OAuth 2.0 libraries are available that will greatly simplify this process.
+The `access_token` has a short time to live and must be refreshed after it expires. Many OAuth 2.0 libraries are available that greatly simplify this process.

@@ -2,9 +2,9 @@
 
 Beginning with version 4.169.1, all Broker container images are signed using Cosign.
 
-Cosign is the tool for signing and verifying containers. Cosign Includes storage in an Open Container Initiative (OCI) registry.
+Cosign is the tool for signing and verifying containers. Cosign includes storage in an Open Container Initiative (OCI) registry.
 
-Cosign is designed to enhance the security of container images by providing a simple and efficient way to sign and verify them. It leverages the concept of digital signatures, with which you sign the container image with your private key, and the recipient can verify your signature using the corresponding public key.
+Cosign is designed to enhance the security of container images by providing a simple and efficient way to sign and verify them. It uses the concept of digital signatures, with which you sign the container image with your private key, and the recipient can verify your signature using the corresponding public key.
 
 ## Prerequisite for verifying Broker image signatures
 
@@ -14,7 +14,7 @@ You must [install Cosign](https://docs.sigstore.dev/system_config/installation/)
 
 To verify the signed image, you must use the built-in `cosign verify` command.
 
-It is not necessary to pull the Broker container image to perform the verification step
+It is not necessary to pull the Broker container image to perform the verification step.
 
 ```
 $ cosign verify --key cosign.pub snyk/broker:4.169.1-github-com
