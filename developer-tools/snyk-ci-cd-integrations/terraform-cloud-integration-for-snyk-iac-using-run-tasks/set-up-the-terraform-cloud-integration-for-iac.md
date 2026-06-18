@@ -13,7 +13,7 @@ In the Snyk Web UI, go to the Terraform Cloud integration settings page for your
 
 ## Create the Snyk Run Task for Terraform Cloud
 
-Now navigate to [Terraform Cloud](https://app.terraform.io) in the organization global settings:
+Navigate to [Terraform Cloud](https://app.terraform.io) in the organization global settings:
 
 ![Terraform Cloud Settings](<../../.gitbook/assets/image (99).png>)
 
@@ -25,7 +25,7 @@ Now navigate to [Terraform Cloud](https://app.terraform.io) in the organization 
 ## Associate the Run Task with your Terraform Cloud Workspace
 
 1. Navigate to your Terraform Cloud Workspace, enter the **Settings** \_\_ menu, and choose **Run Tasks**.
-2. Find the run task you created under **Available Run Tasks**; click on **+** to associate it.
+2. Find the run task you created under **Available Run Tasks**, then click **+** to associate it.
 3. Choose the enforcement level (**Advisory** or **Mandatory**) and click **Create**.
 
 After your integration is set up, Snyk scans Terraform plans for each run triggered in your workspace.

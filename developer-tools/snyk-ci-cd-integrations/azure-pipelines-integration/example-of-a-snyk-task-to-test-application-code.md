@@ -6,6 +6,6 @@ The configuration panel appears as follows:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-11-15 at 3.44.39 PM.png" alt="Snyk Security Scan configuration panel"><figcaption><p>Snyk Security Scan configuration panel</p></figcaption></figure>
 
-The following shows the same configuration once you have added it to your pipeline.
+The following shows the same configuration after you have added it to your pipeline.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-11-15 at 4.24.35 PM.png" alt=""><figcaption></figcaption></figure>

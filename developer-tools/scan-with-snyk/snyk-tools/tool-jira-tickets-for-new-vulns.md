@@ -1,6 +1,6 @@
 # Tool: jira-tickets-for-new-vulns
 
-`jira-tickets-for-new-vulns` provides the means to sync your Snyk-monitored projects and automatically open Jira tickets for new issues and existing issue(s) without ticket(s) already created.
+`jira-tickets-for-new-vulns` provides the means to sync your Snyk-monitored Projects and automatically open Jira tickets for new issues and existing issues without tickets already created.
 
 Cron it every X minutes/hours and fix the issues. This tool is aimed to be executed at regular intervals or with a trigger of your choice (webhooks).
 
@@ -45,7 +45,7 @@ Use the binaries from [the release page](https://github.com/snyk-tech-services/j
 
 ## Restrictions
 
-The tool does not support infrastructure as code projects. It opens an issue only for code and open source projects and ignores all other project types.
+The tool does not support infrastructure as code Projects. It opens an issue only for code and open source Projects and ignores all other Project types.
 
 **Priority is severity**
 
@@ -70,7 +70,7 @@ git clone the repo, build:
 
 > `go run main.go jira.go jira_utils.go vulns.go snyk.go snyk_utils.go`
 
-Please report issues.
+Report issues.
 
 ## Dependencies
 
@@ -143,4 +143,4 @@ jira:
 * The token is not expected to be present in the config file.
 * Command line arguments override the config file. Example: Using the config file above, running `./snyk-jira-sync-macOs --Org=1234 --configFile=./path/to/folder --token=123` the org ID used by the tool will be 1234 and not a1b2c3de-99b1-4f3f-bfdb-6ee4b4990513.
 * See 'Extended options' for default values.
-* Ensure you use the same issue type that is configured in your Jira. Default is Bug. Verify the type is use (or default) exists in your Jira configuration.
+* Ensure you use the same issue type that is configured in your Jira. Default is Bug. Verify the type in use (or default) exists in your Jira configuration.

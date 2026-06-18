@@ -19,7 +19,7 @@ The supported format is CycloneDX v1.6 (JSON).
 
 In the JSON file, you can see the following AI dependencies and components:
 
-- **Models:** You can see your usage of foundational models (such as GPT-4) and open-source models (such as Llama-4). Where possible, the information surfaced also refers to model card, license, and other information.
+- **Models:** You can see your use of foundational models (such as GPT-4) and open-source models (such as Llama-4). Where possible, the information surfaced also refers to model card, license, and other information.
 - **Agents:** Identified based on popular AI agent libraries.
 - **Tools:** Identified based on popular patterns of tool calling.
 - **MCPs:** Identified based on the official MCP SDK, in addition to other popular ways of building MCPs.
@@ -70,17 +70,17 @@ Default: `<ORG_ID>` that is the current preferred Organization in your [Account 
 
 ### `--html`
 
-**Optional**. Embed the AIBOM into an HTML visualization of the AIBOM components and their relationships.
+**Optional**. Embed the AI-BOM into an HTML visualization of the AI-BOM components and their relationships.
 
 ### `[--json-file-output]`
 
-**Optional**. Save the AIBOM output as a JSON data structure directly to the specified file.
+**Optional**. Save the AI-BOM output as a JSON data structure directly to the specified file.
 
 #### Available in 1.1303.0
 
 ### `--upload`
 
-**Optional**. Persist the AIBOM into your Snyk Organization. This flag requires the [`--repo`](aibom.md#repo) flag. It enables you to view your AI-BOM for the repository in the Evo web interface.
+**Optional**. Persist the AI-BOM into your Snyk Organization. This flag requires the [`--repo`](aibom.md#repo) flag. It lets you view your AI-BOM for the repository in the Evo web interface.
 
 ### `--repo`
 

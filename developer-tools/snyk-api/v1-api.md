@@ -7,10 +7,10 @@ The Snyk API is available only for Enterprise plans.
 
 For more information, see [Plans and pricing](https://snyk.io/plans).
 
-The V1 API will be deprecated eventually, as further Snyk developments are now focused on the REST API.
+The V1 API will be deprecated eventually, as Snyk now focuses further development on the REST API.
 {% endhint %}
 
-The V1 API enables you to test a package for issues as they are defined by Snyk, and to automate Snyk processes to accomplish your specific workflows. Customers and partners can perform functions including:
+The V1 API lets you test a package for issues as Snyk defines them, and automate Snyk processes to accomplish your specific workflows. Customers and partners can perform functions including:
 
 * Accessing vulnerability data
 * Scanning Projects and applications
@@ -26,7 +26,7 @@ Snyk is hosted in the following regions. Each region has its own base URL.
 <table><thead><tr><th width="189">Region</th><th>Base URL</th></tr></thead><tbody><tr><td>SNYK-US-01</td><td><code>https://api.snyk.io/v1/</code></td></tr><tr><td>SNYK-US-02</td><td><code>https://api.us.snyk.io/v1/</code></td></tr><tr><td>SNYK-EU-01 </td><td><code>https://api.eu.snyk.io/v1/</code> </td></tr><tr><td>SNYK-AU-01</td><td><code>https://api.au.snyk.io/v1/</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-This API is available only over HTTPS. Calling the API over HTTP will yield a 404 for all requests.
+This API is available only over HTTPS. Calling the API over HTTP yields a 404 for all requests.
 {% endhint %}
 
 ## Authorization
@@ -39,7 +39,7 @@ Provide the token in an `Authorization` header with the token, preceded by `toke
 Authorization: token API_KEY
 ```
 
-Otherwise, a 401 "Unauthorized" response will be returned.
+Otherwise, the API returns a 401 "Unauthorized" response.
 
 ```
 HTTP/1.1 401 Unauthorized
@@ -57,7 +57,7 @@ Snyk limits the requests to the V1 API to help provide a stable experience for c
 
 The V1 API has a default rate limit of **2,000 requests per minute**, but some specific endpoints have lower limits. Refer to the reference docs for each endpoint to see the rate limits.
 
-If you exceed the rate limit, you will receive a `429` error response.
+If you exceed the rate limit, you receive a `429` error response.
 
 ## Errors
 

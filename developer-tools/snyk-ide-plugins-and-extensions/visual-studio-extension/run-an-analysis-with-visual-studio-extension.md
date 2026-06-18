@@ -11,7 +11,7 @@ The extension provides two kinds of results:
 
 ## Open Source vulnerabilities
 
-Note that your solution must be built successfully in order to allow the CLI to pick up the dependencies and find the vulnerabilities.
+Note that your solution must be built successfully to allow the CLI to pick up the dependencies and find the vulnerabilities.
 
 If you see only npm vulnerabilities or vulnerabilities that are not related to your C#/.NET Projects, your Project may not have been built successfully and thus not detected by the CLI. If you have difficulty or questions, submit a request to [Snyk Support](https://support.snyk.io).
 

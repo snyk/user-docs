@@ -126,7 +126,7 @@ The Snyk Setup action installs the CLI directly from a binary. By default, this 
 ```
 {% endcode %}
 
-Unlike Docker-based actions, the Snyk Setup action allows you to pin a specific CLI version to prevent automatic updates. Use the `version` input to specify the version:
+Unlike Docker-based actions, the Snyk Setup action lets you pin a specific CLI version to prevent automatic updates. Use the `version` input to specify the version:
 
 {% code overflow="wrap" expandable="true" %}
 ```yaml

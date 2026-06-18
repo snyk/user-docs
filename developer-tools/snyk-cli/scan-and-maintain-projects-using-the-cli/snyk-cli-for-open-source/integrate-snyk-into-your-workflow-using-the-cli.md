@@ -9,7 +9,7 @@ This page provides an example of integrating Snyk into your GitHub workflow usin
     ```
        git clone https://github.com/snyk/goof.git
     ```
-2.  Create a new branch, add vulnerabilities on this branch, then merge changes back to GitHub as a Pull Request:
+2.  Create a new branch, add vulnerabilities on this branch, then merge changes back to GitHub as a pull request:
 
     ```
        git branch add_vulns
@@ -89,4 +89,4 @@ Snyk can auto-scan your pull request (PR) for vulnerabilities and license issues
 
 As the PR workflow is completed, Snyk validates the vulnerability and license policy set for the Project. Based on the policy, the checks either passed or failed; this is shown in GitHub.
 
-This allows you to establish a security gate and prevent pull requests from adding new vulnerabilities, or new open-source libraries that do not meet your license policy, to the source code baseline.
+This lets you establish a security gate and prevent pull requests from adding new vulnerabilities, or new open-source libraries that do not meet your license policy, to the source code baseline.

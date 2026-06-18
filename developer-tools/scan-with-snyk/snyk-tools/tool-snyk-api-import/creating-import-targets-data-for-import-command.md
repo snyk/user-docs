@@ -34,7 +34,7 @@ You need the organizations data in JSON as an input to this command to help map 
 }
 ```
 
-Note: the `"name`" of the GitHub or GitHub Enterprise Organization is required in order to list all repos belonging to that Organization using the GitHub API. The Snyk-specific data accompanying that Organization name will be used as the information to generate import data, assuming all repos in that Organization will be imported into a given Snyk Organization. This utility is opinionated. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
+Note: the `"name`" of the GitHub or GitHub Enterprise Organization is required to list all repos belonging to that Organization using the GitHub API. Snyk uses the Snyk-specific data accompanying that Organization name to generate import data, assuming all repos in that Organization are imported into a given Snyk Organization. This utility is opinionated. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
 
 * You can list GitHub and GitHub Enterprise organizations using the GitHub [/orgs API](https://docs.github.com/en/free-pro-team@latest/rest/reference/orgs).
 * You can list integrations using the Snyk API endpoint [List](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-1) (integrations).
@@ -68,7 +68,7 @@ You need the organization's data in JSON as an input to this command to help map
 }
 ```
 
-Note: the "name" of the GitLab Group is required in order to list all projects belonging to that group using the GitLab API. The Snyk-specific data accompanying that Group name will be used as the information to generate import data assuming all projects in that group will be imported into a given Snyk Organization. This utility is opinionated. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
+Note: the "name" of the GitLab Group is required to list all projects belonging to that group using the GitLab API. Snyk uses the Snyk-specific data accompanying that Group name to generate import data, assuming all projects in that group are imported into a given Snyk Organization. This utility is opinionated. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
 
 * GitLab Groups can be listed using the GitLab  [/groups API](https://docs.gitlab.com/ee/api/groups.html)
 * You can list integrations using the Snyk API endpoint [List](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-1) (integrations).
@@ -104,7 +104,7 @@ You need the organizations data in JSON as an input to this command to help map 
 }
 ```
 
-Note: the "name" of the Azure organization is required in order to list all projects and repos belonging to that organization using the Azure API. The Snyk-specific data accompanying that organization name will be used as the information to generate import data assuming all projects in that organization will be imported into a given Snyk Organization. This utility is opinionated. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
+Note: the "name" of the Azure organization is required to list all projects and repos belonging to that organization using the Azure API. Snyk uses the Snyk-specific data accompanying that organization name to generate import data, assuming all projects in that organization are imported into a given Snyk Organization. This utility is opinionated. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
 
 * Your Org name in Azure is listed on the left pane in the [Azure-Devops-site](https://dev.azure.com/)
 * You can list integrations using the Snyk API endpoint [List](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-1) (integrations).
@@ -140,7 +140,7 @@ You need the organizations data in JSON as an input to this command to help map 
 }
 ```
 
-Note: the "name" of the Bitbucket server project is required in order to list all repos belonging to that project using the Bitbucket server API. The Snyk-specific data accompanying that project name will be used as the information to generate import data, assuming all repos in that project will be imported into a given Snyk Organization. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
+Note: the "name" of the Bitbucket server project is required to list all repos belonging to that project using the Bitbucket server API. Snyk uses the Snyk-specific data accompanying that project name to generate import data, assuming all repos in that project are imported into a given Snyk Organization. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
 
 * Bitbucket Server Projects can be listed using the BitBucket [/projects API](https://docs.atlassian.com/bitbucket-server/rest/7.19.2/bitbucket-rest.html).
 * You can list integrations using the Snyk API endpoint [List](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-1) (integrations).
@@ -175,7 +175,7 @@ You need the organizations data in JSON as an input to this command to help map 
 }
 ```
 
-Note: the "name" of the Bitbucket Cloud workspace is required in order to list all repositories belonging to that workspace using the Bitbucket Cloud API. The Snyk-specific data accompanying that workspace name will be used as the information to generate import data assuming all repositories in that workspace will be imported into a given Snyk Organization. This utility is opinionated. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
+Note: the "name" of the Bitbucket Cloud workspace is required to list all repositories belonging to that workspace using the Bitbucket Cloud API. Snyk uses the Snyk-specific data accompanying that workspace name to generate import data, assuming all repositories in that workspace are imported into a given Snyk Organization. This utility is opinionated. If you want to customize the import data, create it manually as described on [Kicking off an import](kicking-off-an-import.md).
 
 * Bitbucket Cloud workspaces can be listed using the BItBucket [/workspaces API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-workspaces/#api-group-workspaces).
 * You can list integrations using the Snyk API endpoint [List](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-1) (integrations).

@@ -11,7 +11,7 @@ This page applies to the following V1  API endpoints:
 * [Get list of latest issues](../../reference/reporting-api-v1.md#post-reporting-issues-latest) (`POST /reporting/issues/latest`) - not available for customers or partners in the `Snyk-US-02`, `Snyk-EU-01`, and `Snyk-AU-01` regions.
 * [List all aggregated issues](../../reference/projects-v1.md#post-org-orgid-project-projectid-aggregated-issues) (`POST /org/{orgId}/project/{projectId}/aggregated-issues`)
 
-These APIs are subject to deprecation, and migrating to the REST Issues API immediately is highly recommended. The REST Issues API accommodates multiple regions.
+These APIs are subject to deprecation, and Snyk highly recommends migrating to the REST Issues API immediately. The REST Issues API accommodates multiple regions.
 {% endhint %}
 
 ## Key benefits of the REST Issues API
@@ -30,7 +30,7 @@ The REST Issues API provides:
 * Flexibility through new filters for tailored API responses.
 * Enhanced usability through better pagination and response handling, streamlining API interactions.
 
-This migration guide is intended to facilitate a seamless transition by providing step-by-step instructions, code examples, and best practices to help you smoothly integrate with the new API.
+This migration guide is intended to facilitate the transition by providing step-by-step instructions, code examples, and best practices to help you integrate with the new API.
 
 If you are using the V1 Issues endpoints, Snyk recommends that you migrate all your automation, API-based reporting, and integrations accordingly, by using the guidance provided here.
 

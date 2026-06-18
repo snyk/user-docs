@@ -67,7 +67,7 @@ If you are facing issues installing Eclipse plugins, it might be due to the inco
 6. Launch the Eclipse IDE by the usual method.
 7. After Eclipse is launched, navigate to **Window** > **Preferences** > **Java** > **Installed JREs**.
 8. Click on **Add** and select the **path to JDK 17 or higher version** installed on your system.
-9. Click **OK** and close the Preferences dialogue box.
+9. Click **OK** and close the Preferences dialog box.
 
 You are now ready to install any Eclipse plugin of your choice.
 
@@ -79,20 +79,20 @@ Ensure you replace `C:\\\\Program Files\\\\Java\\\\jdk-17.0.1\\\\bin` with the a
 
 ## Application development and JDK version <a href="#application-development" id="application-development"></a>
 
-While running Eclipse with JDK 17 or a higher version can resolve issues related to plugin installation, it is important to note that it may not be compatible with all versions of Java used for developing applications. Depending on the specific requirements of your application, you may need to use a different version of Java, such as JDK 8 or 11, for development purposes. Be sure to consult the documentation and requirements for your application before making any changes to your Java environment.
+While running Eclipse with JDK 17 or a higher version can resolve issues related to plugin installation, it might not be compatible with all versions of Java used for developing applications. Depending on the specific requirements of your application, you may need to use a different version of Java, such as JDK 8 or 11, for development purposes. Be sure to consult the documentation and requirements for your application before making any changes to your Java environment.
 
 Note also that while you can install multiple versions of JDK on your system, you can use only one version at a time. If you need to switch between different versions of JDK for different Projects, you must update the Eclipse configuration accordingly.
 
-To change the JDK version used by Eclipse for a specificProject, follow these steps:
+To change the JDK version used by Eclipse for a specific Project, follow these steps:
 
 1. Open the Project in Eclipse.
 2. Right-click on the Project and select **Properties**.
-3. In the Properties dialogue box, navigate to **Java Build Path** > **Libraries**.
+3. In the Properties dialog box, navigate to **Java Build Path** > **Libraries**.
 4. Locate the **JRE System Library** and click on it to expand the options.
 5. Click on **Edit** and select the desired JDK version from the list of installed JREs.
 6. Click **Finish** to save the changes.
 
-By following these steps, you can easily switch between different JDK versions for different Projects in Eclipse. Ensure that you are using the correct version of JDK for each Project, as this can impact the compatibility and functionality of your application.
+By following these steps, you can switch between different JDK versions for different Projects in Eclipse. Ensure that you are using the correct version of JDK for each Project, as this can impact the compatibility and functionality of your application.
 
 ## Windows Defender warns of running a binary
 

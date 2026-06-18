@@ -1,6 +1,6 @@
 # Authenticate to use the CLI
 
-Once you have [installed the Snyk CLI](install-the-snyk-cli/) using your chosen tool or operating system (OS), you need to authenticate with your Snyk account.
+After you [install the Snyk CLI](install-the-snyk-cli/) using your chosen tool or operating system (OS), you need to authenticate with your Snyk account.
 
 ## Supported authentication methods
 
@@ -30,7 +30,7 @@ snyk config environment SNYK-EU-01
 ```
 {% endcode %}
 
-Once the environment has been configured, authenticate using your preferred method.
+After you configure the environment, authenticate using your preferred method.
 
 ## Authenticate locally
 
@@ -47,8 +47,8 @@ This applies to: Homebrew, npm, Yarn, Scoop (Windows), and Direct binary downloa
     ```bash
     snyk auth
     ```
-* A browser window will open on a Snyk address. Click **Authenticate**.
-* Return to your terminal. You should see the message `Your account has been authenticated`.
+* A browser window opens on a Snyk address. Click **Authenticate**.
+* Return to your terminal. You see the message `Your account has been authenticated`.
 
 For local service account testing, use the command:
 

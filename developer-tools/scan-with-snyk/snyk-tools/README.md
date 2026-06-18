@@ -2,7 +2,7 @@
 
 ## Scope of Snyk Tools
 
-Snyk Tools help with specific pain points that may not be addressed by Snyk product functionality, regardless of whether you use Snyk through the Web UI, CLI, API, or an integration. Snyk Tools extend the functions of the Snyk API and the Snyk CLI.
+Snyk Tools help with specific pain points that Snyk product functionality might not address, regardless of whether you use Snyk through the Web UI, CLI, API, or an integration. Snyk Tools extend the functions of the Snyk API and the Snyk CLI.
 
 {% hint style="info" %}
 You must have a [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support_docs_page) with populated Projects to use Snyk Tools.
@@ -32,7 +32,7 @@ Refer to the repositories for instructions on how to use the following additiona
 * [snyk-user-sync-tool](https://github.com/snyk-tech-services/snyk-user-sync-tool): Add, remove, and sync user memberships.
 * [snyk-licenses-texts](https://github.com/snyk-tech-services/snyk-licenses-texts): Provides Organization-level licenses used, copyrights (until January 8, 2024), and dependencies data.
 * [snyk-request-manager](https://github.com/snyk-tech-services/snyk-request-manager): Rate-controlled and retry-enabled request manager to interact with Snyk APIs.
-* [snyk-repo-issue-tracker](https://github.com/snyk-tech-services/snyk-repo-issue-tracker): A python script/module that allows for generating a changeset of issues between runs against the Snyk Project issues API.
+* [snyk-repo-issue-tracker](https://github.com/snyk-tech-services/snyk-repo-issue-tracker): A python script/module that generates a changeset of issues between runs against the Snyk Project issues API.
 *   [snyk-repo-diff:](https://github.com/snyk-tech-services/snyk-repo-diff) Helps determine which repositories are not monitored by Snyk.
 
     This works by retrieving a list of all Projects in a given Snyk Group, that is, all Projects in all Organizations belonging to the same Snyk Group, and associating them with a list of repositories found in a given GitHub Organization.

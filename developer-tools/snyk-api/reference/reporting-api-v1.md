@@ -9,7 +9,7 @@ The endpoints in this category support only Snyk legacy reporting, not the lates
 {% endhint %}
 Using the Reporting API, you can find answers to questions like how many issues your Organization has, or how many tests have been conducted in a given time period.
 
-The rate limit is up to **70 requests per minute, per user**. All requests above the limit will get a response with the status code `429 - Too many requests` until requests stop for the duration of the rate-limiting interval (one minute).
+The rate limit is up to **70 requests per minute, per user**. Requests above the limit receive a response with the status code `429 - Too many requests` until requests stop for the duration of the rate-limiting interval (one minute).
 
 {% openapi src="../../.gitbook/assets/v1-api-spec.yaml" path="/reporting/issues" method="post" %}
 [v1-api-spec.yaml](../../.gitbook/assets/v1-api-spec.yaml)

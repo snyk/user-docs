@@ -1,8 +1,8 @@
 # SCMs
 
-Snyk supports SCM integrations that allow you to implement security at each point in your workflow: importing a Project, writing your code, and building and deployment. Snyk can also [automatically create pull requests (PRs)](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades) on your behalf to upgrade your dependencies based on scan results, compatible with a variety of SCM integrations.
+Snyk supports SCM integrations that let you implement security at each point in your workflow: importing a Project, writing your code, and building and deployment. Snyk can also [automatically create pull requests (PRs)](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades) on your behalf to upgrade your dependencies based on scan results, compatible with a variety of SCM integrations.
 
-Snyk Source Control Manager (SCM) integrations allow you to:
+Snyk Source Control Manager (SCM) integrations let you:
 
 * Continuously perform security scanning across all integrated repositories
 * Detect vulnerabilities in your open-source components
@@ -25,7 +25,7 @@ If you have added the GitHub integration at Organizational and/or Group levels a
 This feature is available for GitHub, GitHub Enterprise, GitHub Cloud App, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy), and Azure Repos (TFS) integrations.
 {% endhint %}
 
-The Workspaces feature enables Snyk to ingest a temporary snapshot of repository contents, and all commit metadata through your configured SCM integrations.
+The Workspaces feature enables Snyk to ingest a temporary snapshot of repository contents and all commit metadata through your configured SCM integrations.
 
 For detailed information on this feature, including enablement steps, see [Workspaces for SCM integrations](workspaces.md).
 
@@ -35,7 +35,7 @@ If you are an Enterprise customer, see [Choose rollout integrations](https://app
 
 ### GitHub vs GitHub Enterprise
 
-As an Enterprise plan user, Snyk recommends using the GitHub Enterprise integration as it enables you to use a single GitHub service account personal access token (PAT) across your Snyk Organization rather than depending on a PAT for an individual user account. You can use this integration whether or not you have a GitHub Enterprise (GHE) license or subscription.
+As an Enterprise plan user, Snyk recommends using the GitHub Enterprise integration as it lets you use a single GitHub service account personal access token (PAT) across your Snyk Organization rather than depending on a PAT for an individual user account. You can use this integration whether or not you have a GitHub Enterprise (GHE) license or subscription.
 
 Another benefit to using the GitHub Enterprise integration is that you can choose to clone integration settings when you are creating new Snyk Organizations. This means you can use one GitHub Enterprise integration for all Organizations in your Snyk Group.
 
@@ -55,9 +55,9 @@ See [Migrate to the Snyk Bitbucket Cloud App](organization-level-integrations/bi
 
 #### Main capabilities unlocked by the new app integration
 
-* Allows using Snyk with Bitbucket's [allowlisting IP addresses](https://support.atlassian.com/bitbucket-cloud/docs/control-access-to-your-private-content/) premium tier feature.
+* Lets you use Snyk with the [allowlisting IP addresses](https://support.atlassian.com/bitbucket-cloud/docs/control-access-to-your-private-content/) premium tier feature in Bitbucket.
 * Helps handle rate-limiting issues for companies who spread their repos across multiple workspaces in Bitbucket Cloud.
-* Supports the first-party interface in Bitbucket Cloud (Snyk's Security tab) out-of-the-box, meaning you need not install and maintain the first-party extension app to consume Snyk's security insights from Bitbucket Cloud.
+* Supports the first-party interface in Bitbucket Cloud (the Security tab in Snyk) out-of-the-box, meaning you need not install and maintain the first-party extension app to consume Snyk security insights from Bitbucket Cloud.
 
 #### Limitations of the new app integration
 
@@ -67,6 +67,6 @@ See [Migrate to the Snyk Bitbucket Cloud App](organization-level-integrations/bi
 
 #### Are there any plans for end-of-life for the Personal Access Token (PAT) integration?
 
-To improve security, the use of app passwords in Bitbucket Cloud is transitioning to API tokens. Existing integrations that use app passwords will continue to function temporarily until 9 June, 2026:
+To improve security, the use of app passwords in Bitbucket Cloud is transitioning to API tokens. Existing integrations that use app passwords continue to function temporarily until 9 June 2026.
 
 To ensure continued support and functionality, update your Bitbucket Cloud integration in Snyk to use an API token.

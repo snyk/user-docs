@@ -16,17 +16,17 @@ The `snyk-scm-contributors-count` tool applies a strict limit of a maximum of 1,
 
 On Bitbucket Server, the system admin has full control of the API rate limiting as described in this [guide](https://confluence.atlassian.com/bitbucketserver/improving-instance-stability-with-rate-limiting-976171954.html).
 
-The `snyk-scm-contributors-count` tool applies a moderate limit of a max 1000 calls per hour and additional regulating mechanism to deal with 429 responses ("too many calls")
+The `snyk-scm-contributors-count` tool applies a moderate limit of a maximum of 1,000 calls per hour and an additional regulating mechanism to deal with 429 responses ("too many calls").
 
 ## GitHub
 
-On GithHub, the API rate limit is 5,000 calls per hour for authenticated users as described in this [guide](https://docs.github.com/en/developers/apps/building-github-apps/rate-limits-for-github-apps).
+On GitHub, the API rate limit is 5,000 calls per hour for authenticated users as described in this [guide](https://docs.github.com/en/developers/apps/building-github-apps/rate-limits-for-github-apps).
 
 The `snyk-scm-contributors-count` tool applies a strict limit of a maximum of 4,500 calls per hour to deal with the rate limit and an additional regulating mechanism to deal with 429 responses ("too many calls").
 
 ## GitHub Enterprise
 
-On Github Enterprise, the API rate limit is 5,000 calls per hour for authenticated users as described in this [guide](https://docs.github.com/en/developers/apps/building-github-apps/rate-limits-for-github-apps).
+On GitHub Enterprise, the API rate limit is 5,000 calls per hour for authenticated users as described in this [guide](https://docs.github.com/en/developers/apps/building-github-apps/rate-limits-for-github-apps).
 
 The `snyk-scm-contributors-count` tool applies a strict limit of a maximum of 3 calls per second which amounts to 10,800 calls per hour, to deal with the rate limit and an additional regulating mechanism to deal with 429 responses ("too many calls").
 

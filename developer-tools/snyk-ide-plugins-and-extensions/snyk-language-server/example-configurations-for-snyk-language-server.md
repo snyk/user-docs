@@ -32,7 +32,7 @@
 }
 ```
 
-After opening a supported file, the Language Server should be started by Sublime Text and findings will be highlighted.
+After you open a supported file, Sublime Text starts the Language Server and highlights findings.
 
 ![Snyk Open Source findings displayed in Sublime Text](<../../.gitbook/assets/image (109).png>)
 
@@ -44,7 +44,7 @@ After opening a supported file, the Language Server should be started by Sublime
 If the project root directory cannot be obtained from Git information, this script tries to set the root directory to your home directory by `vim.loop.os_homedir().` Depending on the contents of your home directory, this may consume a large amount of memory. If this happens, set an alternative root directory for your environment.
 {% endhint %}
 
-The set up is as follows:
+The setup is as follows:
 
 ```
 mkdir -p ~/.config/nvim

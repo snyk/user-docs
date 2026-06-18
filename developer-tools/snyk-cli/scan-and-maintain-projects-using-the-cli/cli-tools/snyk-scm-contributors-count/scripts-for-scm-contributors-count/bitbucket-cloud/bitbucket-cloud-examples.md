@@ -23,7 +23,7 @@ The following options are available for the `snyk-scm-contributors-count bitbuck
 ## Before running the command
 
 1. Export SNYK\_TOKEN (if you want to get the contributors only for repos that are already monitored by Snyk):
-   * Make sure that your token has Group level access or use a service account's token that has Group level access. To learn more about how to create a service account, refer to [Service accounts](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts).
+   * Ensure that your token has Group level access or use a service account token that has Group level access. To learn more about how to create a service account, refer to [Service accounts](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts).
    * Copy the token value.
    *   Export the token in your environment:
 
@@ -32,7 +32,7 @@ The following options are available for the `snyk-scm-contributors-count bitbuck
        ```
 2.  Get your Bitbucket Cloud username (**not email**) and [app password](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#authentication)
 
-    **Note**: Make sure your credentials have read access to the repos.
+    **Note**: Ensure your credentials have read access to the repos.
 
 ## Running the command
 
@@ -64,7 +64,7 @@ Consider the following levels of usage and options:
     ```
     snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --skipSnykMonitoredRepos
     ```
-*   To exclude some contributors from being counted in the commits , add an exclusion file with the emails to ignore (separated by a new line),and apply the `--exclusionFilePath` with the path to that file:
+*   To exclude some contributors from being counted in the commits, add an exclusion file with the emails to ignore (separated by a new line), and apply the `--exclusionFilePath` with the path to that file:
 
     ```
     snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --workspaces Workspace1,Workspace2 --exclusionFilePath PATH_TO_FILE

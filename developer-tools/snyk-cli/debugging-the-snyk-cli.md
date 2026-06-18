@@ -1,6 +1,6 @@
 # Debugging the Snyk CLI
 
-When working with the CLI on your Projects, it is possible that you encounter unexpected behavior that requires investigation. Such behavior can be caused by configuration, environment, or bugs.
+When working with the CLI on your Projects, you might encounter unexpected behavior that requires investigation. Configuration, environment, or bugs can cause such behavior.
 
 ## Debug mode
 

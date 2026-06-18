@@ -12,7 +12,7 @@ To scan each JAR file individually, use the following command:
 
 `snyk test --scan-unmanaged --file=/path/to/file`
 
-When you test each JAR file individually, the name of the JAR file that was scanned appears on the Snyk web UI.
+When you test each JAR file individually, the name of the scanned JAR file appears in the Snyk Web UI.
 
 **WAR file support**: You can scan individual WAR files that are published in Maven Central. To scan open-source dependency JARs directly, you must extract (unzip) all other WAR files or JAR files containing other JARs.
 
@@ -111,6 +111,6 @@ SET REMOTE_REPO_URL=%2
 for /R %WORKSPACE% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remote-repo-url=%REMOTE_REPO_URL% --file=%%f --project-name=%%f
 ```
 
-An example follows of the result shown in the Snyk UI after you use these scripts with `REMOTE_REPO_URL` set to "econnect".
+An example follows of the result shown in the Snyk Web UI after you use these scripts with `REMOTE_REPO_URL` set to "econnect".
 
 <figure><img src="../../.gitbook/assets/untitled.png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>

@@ -14,6 +14,6 @@ Snyk integration for Terraform Enterprise relies on network connectivity between
 
 * To check whether a connection from your Terraform Enterprise instance to the Snyk API can be established:
   * Log on to your Terraform Enterprise server.
-  * Make an HTTP request to a Snyk API endpoint; for example, you could use curl to initiate an HTTP request.
-  * Even if you receive a 401/Unauthorized response from a Snyk API endpoint, that is an acceptable response; you are checking only basic network connectivity.
+  * Make an HTTP request to a Snyk API endpoint. For example, you could use curl to initiate an HTTP request.
+  * Even if you receive a 401/Unauthorized response from a Snyk API endpoint, that is an acceptable response. You are checking only basic network connectivity.
 * You must also verify that Snyk servers can reach your Terraform Enterprise instance. Ensure that your network configuration (firewalls and so on) allows receiving network traffic from the Snyk platform.

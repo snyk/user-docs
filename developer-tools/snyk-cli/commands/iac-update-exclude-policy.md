@@ -17,7 +17,7 @@ For more information, see [Ignore resources](https://docs.snyk.io/scan-with-snyk
 Possible exit codes and their meaning:
 
 **0**: success, exclude rules generated successfully\
-**1**: error, something wrong happened during exclude rules generation
+**1**: error, something went wrong during exclude rules generation
 
 ## Configure the Snyk CLI
 

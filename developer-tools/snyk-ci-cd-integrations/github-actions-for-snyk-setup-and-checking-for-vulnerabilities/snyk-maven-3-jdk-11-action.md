@@ -20,7 +20,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```
 
-You can use the Snyk Snyk Maven (3-jdk-11) action to check for only high severity vulnerabilities as follows:
+You can use the Snyk Maven (3-jdk-11) action to check for only high severity vulnerabilities as follows:
 
 ```yaml
 name: Example workflow for Maven (3-jdk-11) using Snyk

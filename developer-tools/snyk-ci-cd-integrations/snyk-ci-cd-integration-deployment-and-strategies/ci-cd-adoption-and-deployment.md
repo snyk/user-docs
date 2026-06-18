@@ -16,7 +16,7 @@ A typical approach is to use Snyk results to expose vulnerabilities during the d
 
 When you first implement Snyk in your pipeline, Snyk recommends using only the `snyk monitor` command. If you use one of the Snyk CI plugins, Snyk recommends that you configure the plugin to NOT fail the build.
 
-This is because all Projects have vulnerabilities, and after you set Snyk to fail the build, every build fails because of Snyk. This may cause problems with your team being quickly overwhelmed with failure messages.
+This is because all Projects have vulnerabilities, and after you set Snyk to fail the build, every build fails because of Snyk. This can overwhelm your team with failure messages.
 
 Using `snyk monitor` to expose results provides information without disrupting processes.
 
@@ -52,7 +52,7 @@ Snyk native plugins are available for most common CI/CD tools. You can use these
 
 ### **Deploy the Snyk CLI using the npm method**
 
-Follow steps similar to those for [installing the CLI](../../snyk-cli/install-the-snyk-cli/) locally. You must be able to run an npm command in the pipeline script. This method has the advantage of completely aligning with the CLI experience so that you can easily troubleshoot and configure.
+Follow steps similar to those for [installing the CLI](../../snyk-cli/install-the-snyk-cli/) locally. You must be able to run an npm command in the pipeline script. This method has the advantage of completely aligning with the CLI experience so that you can troubleshoot and configure.
 
 ### **Deploy the Snyk CLI binary version**
 
@@ -64,7 +64,7 @@ Snyk has Linux, Windows, and other versions.
 
 ### **Deploy a Snyk container**
 
-You may also deploy Snyk in your pipeline using one of the Snyk images in [Docker Hub](https://hub.docker.com/r/snyk/snyk).
+You can also deploy Snyk in your pipeline using one of the Snyk images in [Docker Hub](https://hub.docker.com/r/snyk/snyk).
 
 ## Examples of Snyk CI/CD Integrations
 

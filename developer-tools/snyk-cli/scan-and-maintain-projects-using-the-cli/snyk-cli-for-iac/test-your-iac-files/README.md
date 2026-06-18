@@ -135,7 +135,7 @@ You can also set the `org` flag in `snyk config`, so you do not need to use the 
 snyk config set org=infrastructure
 ```
 
-## Example Test Output
+## Example test output
 
 ```
 Snyk Infrastructure as Code

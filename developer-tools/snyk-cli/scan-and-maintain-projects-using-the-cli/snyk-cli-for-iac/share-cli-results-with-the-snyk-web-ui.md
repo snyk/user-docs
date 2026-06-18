@@ -7,9 +7,9 @@ To see these issues displayed in the Snyk Web UI, run the following CLI command:
 `snyk iac test myproject --report`
 
 {% hint style="info" %}
-Using [Custom rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/current-iac-custom-rules) and the Share Results functionality together is not currently supported.
+Using [Custom rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/current-iac-custom-rules) and the Share Results functionality together is not supported.
 
-Snyk does not share any file contents over the network, only the required metadata for the configuration issues that were just scanned.
+Snyk does not share any file contents over the network, only the required metadata for the configuration issues that were scanned.
 {% endhint %}
 
 ## `snyk iac test --report` example output
@@ -54,7 +54,7 @@ You can also open the Project itself and see the Project details:
 You can ignore issues using the Snyk Web UI or by creating a `.snyk` policy file along with your Project when scanning. For more information, see [Iac Ignores using the .snyk policy file](iac-ignores-using-the-.snyk-policy-file.md).
 
 {% hint style="info" %}
-Issues that are ignored by using the `.snyk` policy file can not be unignored in the Snyk web UI.
+Issues that are ignored by using the `.snyk` policy file cannot be unignored in the Snyk Web UI.
 {% endhint %}
 
 ## Project tags

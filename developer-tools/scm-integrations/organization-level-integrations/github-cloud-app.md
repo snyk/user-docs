@@ -29,7 +29,7 @@ The GitHub Cloud App improves on many features as compared to the current GitHub
 
 * RBAC (Role-Based Access Control) Compliance: With the GitHub Cloud App, the access control mechanism is decoupled from individual user accounts. Instead, it is associated with the app entity itself. This separation allows for better management and enforcement of RBAC policies, as access control is handled at the application level rather than being tied to individual user accounts.
 * Granular access control: The GitHub Cloud App allows for fine-grained control over access permissions at the repository level.
-* Increased API rate limit: The GitHub Cloud App provides higher rate limits, allowing Snyk to make a larger number of API requests. This increased limit will assist in handling large-scale use cases, such as monorepos with a large number of Projects, GitHub organizations with a large number of repositories, and more.
+* Increased API rate limit: The GitHub Cloud App provides higher rate limits, allowing Snyk to make a larger number of API requests. This increased limit helps handle large-scale use cases, such as monorepos with a large number of Projects, GitHub organizations with a large number of repositories, and more.
 * Enabler for an enhanced developer experience:
   * Pull request checks: The Checks tab experience in GitHub is exclusively accessible through the GitHub Cloud App, enabling an SCM native experience as part of potential future PR check workflow improvements.
   * Fix and upgrade pull requests: Pull requests initiated by Snyk are performed directly by the GitHub App rather than a service account.
@@ -70,7 +70,7 @@ Specify whether you wish to install the app in all of the repositories belonging
 <figure><img src="../../.gitbook/assets/permissions-install-authorize-github-cloud-app.png" alt="Install and Authorize settings for the GitHub organization you are installing the GitHub Cloud App into" width="375"><figcaption><p>Install and authorize settings for the GitHub organization you are installing the GitHub Cloud App into</p></figcaption></figure>
 
 {% hint style="warning" %}
-The GitHub Cloud App will lose access to Snyk if it is uninstalled from the GitHub organization or if the repositories to which the app instance has access are edited.
+The GitHub Cloud App loses access to Snyk if it is uninstalled from the GitHub organization or if the repositories to which the app instance has access are edited.
 {% endhint %}
 
 ## How to migrate to the GitHub Cloud App

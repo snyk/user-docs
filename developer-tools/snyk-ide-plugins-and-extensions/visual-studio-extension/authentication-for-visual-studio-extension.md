@@ -14,7 +14,7 @@ Snyk supports the following protocols for authentication:
 
 Follow the next steps to authenticate:
 
-1. After the extension is installed, navigate to **Extensions** > **Snyk** > **Windows**, and then **Snyk** to open the Snyk panel.
+1. After you install the extension, navigate to **Extensions** > **Snyk** > **Windows**, and then **Snyk** to open the Snyk panel.
 
 <figure><img src="../../.gitbook/assets/SCR-20240822-llxy.png" alt="" width="563"><figcaption><p>Snyk extension navigation</p></figcaption></figure>
 
@@ -29,7 +29,7 @@ Follow the next steps to authenticate:
 The analysis starts automatically. The IDE reads and saves the authentication on your local machine.
 
 {% hint style="info" %}
-You might encounter the browser redirecting to 127.0.0.1:8080. This is normal, and you would need to retry the steps above.<br>
+You might encounter the browser redirecting to 127.0.0.1:8080. This is normal; retry the authentication steps.<br>
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
@@ -45,7 +45,7 @@ If you have problems, see [OAuth 2.0 authentication does not work](../troublesho
 {% include "../../.gitbook/includes/this-method-is-inferior-to-....md" %}
 
 {% hint style="warning" %}
-The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, please reach out to your Snyk account team.
+Snyk is progressively rolling out Personal Access Token (PAT) authentication to all Enterprise customers. To check whether this feature is available for your Organization at this time, contact your Snyk account team.
 {% endhint %}
 
 To authenticate using the Personal Access token, follow these steps:
@@ -65,7 +65,7 @@ To authenticate using the Personal Access token, follow these steps:
 
 Follow these steps to authenticate:
 
-1. After the extension is installed, navigate to **Extensions** > **Snyk** > **Settings**:
+1. After you install the extension, navigate to **Extensions** > **Snyk** > **Settings**:
 
 <figure><img src="../../.gitbook/assets/SCR-20240822-lyzs.png" alt="" width="375"><figcaption><p>Snyk Settings navigation</p></figcaption></figure>
 

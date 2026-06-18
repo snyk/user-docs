@@ -1,6 +1,6 @@
 # Export API: Specifications, columns, and filters
 
-The Export API, which Snyk Analytics supports, makes it easier to export data by allowing users to create and manage CSV files. These files are safely stored by Snyk. Designed for efficiency and security, the Export API helps users organize and scale the export of large datasets, which is useful for reporting and analytics tasks.
+The Export API, which Snyk Analytics supports, makes it easier to export data by letting users create and manage CSV files. Snyk stores these files safely. Designed for efficiency and security, the Export API helps users organize and scale the export of large datasets, which is useful for reporting and analytics tasks.
 
 You can use the Export API to export the Snyk `issues`, `usage events`, `pr checks`, `pr checks project adoption`, and `pr checks integration adoption` datasets in the scope of `Snyk Organization` or `Snyk Group`. Navigate to the [available columns and filters](export-api-specifications-columns-and-filters.md#available-columns-and-filters) section to see the full lists.
 
@@ -48,7 +48,7 @@ GET /groups/{group_id}/export/{export_id}
 
 ### Data freshness
 
-The data provided by the Export API service updates approximately every two hours. Given the data freshness, cyclic exports should not be scheduled more frequently than once every two hours.
+The data provided by the Export API service updates approximately every two hours. Given the data freshness, do not schedule cyclic exports more frequently than once every two hours.
 
 ### Rate limits
 
@@ -57,12 +57,12 @@ The API is limited by:
 * The export `POST` endpoint allows up to 20 export requests per hour, while the status checks and results retrieval are unlimited.
 
 {% hint style="info" %}
-Given that the data is typically refreshed every two hours, Snyk anticipates that the applied rate limits will allow comfortable consumption. Snyk recommends requesting an export per relevant Group once in a few hours or on a daily basis.
+Given that the data is typically refreshed every two hours, Snyk anticipates that the applied rate limits allow comfortable consumption. Snyk recommends requesting an export per relevant Group once in a few hours or on a daily basis.
 {% endhint %}
 
 ### Data retention
 
-The exported CSV files will remain available for a period of three days.
+The exported CSV files remain available for a period of three days.
 
 {% hint style="danger" %}
 While the files are accessible for three days, the self-signed link to retrieve the export results is available only for 60 minutes after its creation by default. Users can limit the link expiration by passing a value between 0 and 3600 to the `url_expiration_seconds` attribute.

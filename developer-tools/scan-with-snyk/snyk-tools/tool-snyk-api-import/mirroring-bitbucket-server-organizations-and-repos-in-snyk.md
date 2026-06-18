@@ -1,6 +1,6 @@
 # Mirroring Bitbucket Server organizations and repos in Snyk
 
-You can use four commands in the available utils to import the entirety of Bitbucket Server repos into Snyk. You must configure both the both the Bitbucket Server token and Snyk token as environment variables to proceed.
+You can use four commands in the available utils to import the entirety of Bitbucket Server repos into Snyk. You must configure both the Bitbucket Server token and Snyk token as environment variables to proceed.
 
 ## General steps to import Bitbucket Server repos
 
@@ -14,7 +14,7 @@ Refer to individual documentation pages for detailed information. The general st
 
 ## Re-importing new repos and Orgs only while mirroring
 
-Once initial import is complete you can periodically check for new repos and make sure they are added into Snyk by following these steps, which are similar to the preceding steps to import repos.
+After the initial import is complete, you can periodically check for new repos and ensure they are added to Snyk by following these steps, which are similar to the preceding steps to import repos.
 
 1. `export BITBUCKET_SERVER_TOKEN=***` and `export SNYK_TOKEN=***`
 2. Generate organization data in Snyk and skip any that do not have any repos by using `--skipEmptyOrg` `snyk-api-import orgs:data --source=bitbucket-server --groupId=<snyk_group_id> --skipEmptyOrg` Full instructions: [Creating organizations in Snyk](creating-organizations-in-snyk.md)

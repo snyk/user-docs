@@ -21,7 +21,7 @@ The fundamental things to understand are:
 
 * Environment variables are inherited by a process’s children at the time they are forked.
 * The root process is a `launchd` instance, and there is also a separate `launchd` instance per user session.
-* `launchd` allows you to change its current environment variables using `launchctl`; the updated variables are then inherited by all new processes it forks from then on.
+* `launchd` lets you change its current environment variables using `launchctl`. All new processes it forks from then on inherit the updated variables.
 
 You can verify if IntelliJ runs using this environment variable using `ps eww -o command <PID> | tr ' ' '\\n'` command.
 

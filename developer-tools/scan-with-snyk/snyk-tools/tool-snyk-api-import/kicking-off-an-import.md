@@ -1,8 +1,8 @@
 # Kicking off an import
 
-`snyk-api-import` supports the same Project sources that you can import using the Snyk API: Git repositories, Docker images, containers, configuration files and much more. You can configure integrations using the Integrations settings on your Snyk Organization settings page. For more information, see the definition of [Target](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects#target) on the Snyk Projects documentation page.
+`snyk-api-import` supports the same Project sources that you can import using the Snyk API: Git repositories, Docker images, containers, configuration files, and much more. You can configure integrations using the Integrations settings on your Snyk Organization settings page. For more information, see the definition of [Target](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects#target) on the Snyk Projects documentation page.
 
-Note that any logs will be generated at `SNYK_LOG_PATH` directory.
+Note that Snyk generates any logs in the `SNYK_LOG_PATH` directory.
 
 The steps to start an import follow.
 
@@ -40,9 +40,9 @@ Each **import target** has the following keys:
   * `exclusionGlobs` - Comma-separated list of up to ten folder names to exclude from scanning (each folder name must not exceed 100 characters). If not specified, defaults to "fixtures, tests, tests, node\_modules". If an empty string is provided, no folders will be excluded.
   * `files` - An object array. Each path must be the full relative path to the file from the root of the Target. Only those files found at that location will be imported.
 
-Note that for a repository that may have 200+ manifest files, Snyk recommends that you split the import into multiple imports by targeting specific files. Importing hundreds of files at once from one repository can cause the import to result in some errors or failures.
+Note that for a repository that has 200+ manifest files, Snyk recommends that you split the import into multiple imports by targeting specific files. Importing hundreds of files at once from one repository can cause the import to result in some errors or failures.
 
-Splitting the import to import some files or some folders only will benefit from the re-tries and produce a smaller load on the source control management system being used. Populate the `files` property to accomplish this in the import JSON.
+Splitting the import to import some files or some folders only benefits from the re-tries and produces a smaller load on the source control management system being used. Populate the `files` property to accomplish this in the import JSON.
 
 If you have any tests or fixtures that should be ignored, set the `exclusionGLobs` property:
 
@@ -168,20 +168,20 @@ Download a binary from the [releases page](https://github.com/snyk/snyk-api-impo
 
 ### **Skip all previously imported targets**
 
-This utility can be used to skip previously imported Targets (repos), so only remaining Targets will be imported.
+You can use this utility to skip previously imported Targets (repos), so Snyk imports only the remaining Targets.
 
-The utility helps generate the `imported-targets.log` file by analyzing the Projects already in a given Snyk Group. When present in the logging path, this file is used to look up Targets that should be skipped during the import.
+The utility helps generate the `imported-targets.log` file by analyzing the Projects already in a given Snyk Group. When present in the logging path, this file looks up Targets to skip during the import.
 
 ### Example
 
-* All GitHub repositories have been imported into Snyk into their respective Organizations during initial onboarding.
+* All GitHub repositories are imported into Snyk into their respective Organizations during initial onboarding.
 * New GitHub repositories have since been added and now need to be added to Snyk.
 * To avoid importing everything again, you can use this utility and run `import` again to import only "new" GitHub repositories. This is much faster and removes unnecessary calls to Snyk and GitHub to fetch files and do the import for everything again.
 
 ### Importing the same Target
 
-* The same Target imported into a different Organization can be imported.
-* The same Target from a different source can be imported; for example, the same repository that is present in GitHub can now be imported through GitHub Enterprise into the same Organization.
+* You can import the same Target into a different Organization.
+* You can import the same Target from a different source. For example, you can now import the same repository that is present in GitHub through GitHub Enterprise into the same Organization.
 
 ### Command to run
 

@@ -22,7 +22,7 @@ This page provides information about [Snyk settings](teamcity-configuration-para
 ### Organization
 
 * Optional
-* The ID of the Snyk Organization to which this Project will be associated when imported to the UI.
+* The ID of the Snyk Organization to associate this Project with when you import it to the UI.
 * Copy the Organization ID from the Snyk UI in the Settings area.
 
 ### Project name
@@ -45,10 +45,10 @@ This page provides information about [Snyk settings](teamcity-configuration-para
 ### Snyk version
 
 * Default: the most recent version
-* If you would like an older Snyk CLI version to support the plugin, select the plugin version to use in your build.
+* To support the plugin with an older Snyk CLI version, select the plugin version to use in your build.
 * Snyk recommends configuring automatic upgrades and using the most recent version.
 
-### Use custom build tool path:
+### Use custom build tool path
 
 * Specify which tool instance in your local environment Snyk is to use for this build.
 * Without a specified tool, Snyk auto-detects the tool and locates it in your environment based on the Project type.

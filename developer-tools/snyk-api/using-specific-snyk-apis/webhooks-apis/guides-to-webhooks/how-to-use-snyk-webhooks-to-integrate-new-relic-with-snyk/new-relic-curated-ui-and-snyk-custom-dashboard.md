@@ -1,6 +1,6 @@
 # New Relic Curated UI and Snyk Custom Dashboard
 
-Once the Azure Function and the Snyk Webhook are created, you see data coming in for Snyk projects with the configured retest frequency, or projects that you scan manually and where Snyk identifies new issues.
+After the Azure Function and the Snyk Webhook are created, you see data coming in for Snyk Projects with the configured retest frequency, or Projects that you scan manually and where Snyk identifies new issues.
 
 ## Vulnerability event type
 
@@ -10,7 +10,7 @@ You can look into the Vulnerability event type to validate that data flows into 
 
 ## New Relic Vulnerability Management
 
-In addition New Relic provides a curated UI, a New Relic app named Vulnerability Management, that you can use to visualize all the issues being sent.
+In addition, New Relic provides a curated UI, a New Relic app named Vulnerability Management, that you can use to visualize all the issues being sent.
 
 <figure><img src="../../../../../.gitbook/assets/new-relic-vulnerability-management-app.png" alt="Vulnerability management app"><figcaption><p>Vulnerability management app</p></figcaption></figure>
 

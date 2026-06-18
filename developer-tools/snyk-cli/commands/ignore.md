@@ -14,7 +14,7 @@ The `snyk ignore` command modifies the `.snyk` policy file to ignore a specified
 
 `snyk ignore [--expiry=] [--reason=] [--policy-path=<PATH_TO_POLICY_FILE>] [--file-path=<PATH_TO_RESOURCE>] [OPTIONS]`
 
-You can exclude directories or files from scanning using the `--file-path` option. This option is available only for Snyk Code (SAST) tests or Open Source `--unmanaged` tests; it will not work for other test types.
+You can exclude directories or files from scanning using the `--file-path` option. This option is available only for Snyk Code (SAST) tests or Open Source `--unmanaged` tests; it does not work for other test types.
 
 ## Examples of updates to the `.snyk` file
 
@@ -55,7 +55,7 @@ exclude:
 
 **Note**: Ignoring issues or vulnerabilities using the `.snyk` file is not supported for Snyk Code.
 
-The `--file-path` option excludes directories or files from scanning and is available only for Snyk Code (SAST) tests or Open Source `--unmanaged` tests; it will not work for other test types.
+The `--file-path` option excludes directories or files from scanning and is available only for Snyk Code (SAST) tests or Open Source `--unmanaged` tests; it does not work for other test types.
 
 ## Debug
 
@@ -79,9 +79,9 @@ Supported formats:
 
 Default: 30 days or none if used with `--file-path`
 
-Note: The `expiry` field is not required, it will use the default if omitted. If you need a permanent ignore, set the expiry to a date far in the future (for example, `9999-01-01`).
+Note: The `expiry` field is not required; Snyk uses the default if you omit it. If you need a permanent ignore, set the expiry to a date far in the future (for example, `9999-01-01`).
 
-To ensure that expiration dates are enforced for ignores, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely.
+To ensure that expiration dates are enforced for ignores, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:mm:ss.fffZ. If the specified expiration date does not adhere to this format, Snyk respects the ignore and persists it indefinitely.
 
 ### `--reason=<REASON>`
 

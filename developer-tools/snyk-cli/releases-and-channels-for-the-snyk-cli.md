@@ -14,7 +14,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 
 Additional labels are added for CLI releases as needed based on the standard.
 
-In the Snyk CLI context, Snyk defines a breaking change as a change that could break automated workflows and cause failures in your existing working setup, such as CI/CD integrations. Breaking changes will be indicated by incrementing MAJOR and also mentioned in the release notes.
+In the Snyk CLI context, Snyk defines a breaking change as a change that could break automated workflows and cause failures in your existing working setup, such as CI/CD integrations. Snyk indicates breaking changes by incrementing MAJOR and also mentions them in the release notes.
 
 Some examples of breaking changes are the following:
 
@@ -31,10 +31,10 @@ When you select a channel, you are selecting the stability level you want to use
 ### preview
 
 {% hint style="info" %}
-Snyk offers a preview channel for those who want to test _in-progress_ features. However, keep in mind that this channel may contain bugs and is not officially supported.
+Snyk offers a preview channel for those who want to test _in-progress_ features. However, keep in mind that this channel might contain bugs and is not officially supported.
 {% endhint %}
 
-A preview version is not recommended for production environments. It may contain bugs and is best tested in a local environment. For instructions on installing a preview version, see [Install standalone executables from a channel.](releases-and-channels-for-the-snyk-cli.md#install-standalone-executables-from-a-channel)
+A preview version is not recommended for production environments. It might contain bugs and is best tested in a local environment. For instructions on installing a preview version, see [Install standalone executables from a channel.](releases-and-channels-for-the-snyk-cli.md#install-standalone-executables-from-a-channel)
 
 * Preview: pre-release builds are deployed regularly up to multiple times a day and contain the latest changes.
 * Version Pattern: v{MAJOR}.{MINOR}.{PATCH}-preview
@@ -96,7 +96,7 @@ Snyk recommends opting in to a stable channel for the following reasons:
 However, customers who would like to receive code changes as soon as they are merged can opt in to the preview channel. Note that Snyk does not offer support for the preview channel and expects known issues to be present in this channel.
 
 {% hint style="info" %}
-Existing Snyk customers who are opted in to the previously known latest channel will be automatically opted in to the stable channel. Snyk is mirroring the latest channel and the stable channel to avoid disruption to existing customers. However, Snyk encourages you to switch to the new channels as shown above.
+Snyk automatically opts existing customers who are opted in to the previously known latest channel into the stable channel. Snyk is mirroring the latest channel and the stable channel to avoid disruption to existing customers. However, Snyk encourages you to switch to the new channels as shown above.
 {% endhint %}
 
 ### Linux static builds
@@ -105,7 +105,7 @@ As of `v1.1305.0`, the Snyk CLI Linux binaries (`snyk-linux`, `snyk-linux-arm64`
 
 ## Support policy
 
-Snyk supports the latest 12 months of CLI versions in the stable channel, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or support for troubleshooting.
+Snyk supports the latest 12 months of CLI versions in the stable channel, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and do not receive bug fixes or support for troubleshooting.
 
 Snyk provides fixes only in new versions and cannot fix older versions. Customers must upgrade to benefit from improvements.
 
@@ -118,7 +118,7 @@ If you need help, submit a [request](https://support.snyk.io) to Snyk Support.
 This section specifies the minimum requirements for the latest CLI, covering aspects such as the operating system, dynamically linked libraries, and runtimes.
 
 {% hint style="warning" %}
-Snyk CLI is designed and expected to run on operating system environments that are actively supported by their vendors and have not reached their End of Support (EOS) or End of Life (EOL). Once an operating system environment reaches its end of support, Snyk will cease testing and providing support for Snyk CLI in that specific environment.
+Snyk CLI is designed and expected to run on operating system environments that are actively supported by their vendors and have not reached their End of Support (EOS) or End of Life (EOL). After an operating system environment reaches its end of support, Snyk ceases testing and providing support for Snyk CLI in that specific environment.
 {% endhint %}
 
 | OS\Architecture | amd64 (minimum requirements)               | arm64 (minimum requirements)               |

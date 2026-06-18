@@ -18,7 +18,7 @@ Before authenticating, ensure you have set your region properly. For details, se
 
 Follow these steps to authenticate:
 
-1.  After the extension is installed, click the **Snyk Icon** in the navigation bar, then click **Connect & Trust Workspace**:
+1.  After you install the extension, click the **Snyk Icon** in the navigation bar, then click **Connect & Trust Workspace**:
 
     <figure><img src="../../.gitbook/assets/SCR-20240821-qmuv.png" alt="" width="359"><figcaption><p>Connect and trust workspace</p></figcaption></figure>
 2. A new browser window opens, requiring you to log in to your Snyk account.
@@ -39,13 +39,13 @@ If you have problems, see [OAuth 2.0 authentication does not work](../troublesho
 {% include "../../.gitbook/includes/this-method-is-inferior-to-....md" %}
 
 {% hint style="warning" %}
-The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, please reach out to your Snyk account team.
+Snyk is progressively rolling out Personal Access Token (PAT) authentication to all Enterprise customers. To check whether this feature is available for your Organization at this time, contact your Snyk account team.
 {% endhint %}
 
 When using this feature, ensure you generate and use a Personal Access Token (PAT). This feature is not compatible with Service Account tokens, and using them may result in unexpected behavior or errors.
 
 {% hint style="info" %}
-Whenever you use this feature in your IDE, ensure to also retrieve the PAT details from the Snyk Web UI. Contact Snyk Support to enable the PAT feature within your Snyk Web UI Organization.
+Whenever you use this feature in your IDE, also retrieve the PAT details from the Snyk Web UI. Contact Snyk Support to enable the PAT feature in your Snyk Web UI Organization.
 {% endhint %}
 
 To authenticate using the Personal Access token, follow these steps:
@@ -64,7 +64,7 @@ To authenticate using the Personal Access token, follow these steps:
 
 Follow these steps to authenticate:
 
-1. After the extension is installed, click the **Snyk Icon** in the navigation bar, then click the **Settings** icon, find **Authentication Method**, and change it to **Token authentication**:
+1. After you install the extension, click the **Snyk Icon** in the navigation bar, then click the **Settings** icon, find **Authentication Method**, and change it to **Token authentication**:
 
 <figure><img src="../../.gitbook/assets/SCR-20240821-tarb.png" alt=""><figcaption><p>Change authentication method</p></figcaption></figure>
 

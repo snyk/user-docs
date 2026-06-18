@@ -68,15 +68,15 @@ You can publish Snyk Code results to a Snyk Project with or without using an int
 
 You do not need to connect to an SCM integration such as GitHub or GitLab for this to work. It works directly with the results you upload from Snyk CLI.
 
-* Sync with Snyk Web UI: After creating a Project from the CLI, you can manage it in the Snyk web interface. If you mark an issue as **Ignored** in the UI, future CLI scans for that Project are not being reported again.
+* Sync with Snyk Web UI: After creating a Project from the CLI, you can manage it in the Snyk web interface. If you mark an issue as **Ignored** in the UI, future CLI scans for that Project do not report it again.
 * If the Project does not exist, Snyk automatically creates a new CLI Project for you with the value provided in the `--project-name` option.
-* If the Project already exists, Snyk adds your latest scan as a new snapshot to that same Project. This allows you to track its security history over time.
+* If the Project already exists, Snyk adds your latest scan as a new snapshot to that same Project. This lets you track its security history over time.
 
 ## Publishing CLI results to a Snyk Code Project <a href="#publish-cli-results-to-a-snyk-code-project" id="publish-cli-results-to-a-snyk-code-project"></a>
 
-Using Snyk Code through the CLI allows you to publish test results of local code to a Snyk Project in Snyk Web UI. Future CLI tests of this Project will respect issues that were ignored in the Web UI.
+Using Snyk Code through the CLI lets you publish test results of local code to a Snyk Project in Snyk Web UI. Future CLI tests of this Project respect issues that were ignored in the Web UI.
 
-This allows using Snyk Code as a blocking CI/CD gate to test and block builds at the main branch level and then have developers review the results in the Web UI, fix any newly introduced vulnerabilities, or ignore irrelevant ones.
+This lets you use Snyk Code as a blocking CI/CD gate to test and block builds at the main branch level and then have developers review the results in the Web UI, fix any newly introduced vulnerabilities, or ignore irrelevant ones.
 
 In the terminal, enter the following command:
 
@@ -94,7 +94,7 @@ Running the `snyk code test` command with the `--report` option, as shown, retur
 
 If a Snyk Code Project created with the CLI does not yet exist for the provided value in the option, the Snyk CLI creates a new Project. If a Project created using the CLI already exists, a new snapshot is made under the same Project.
 
-To make the Project easier to interpret in Snyk Web UI, you can use additional commands to specify a target name and also target references, such as Git branches. The following command will create or upload an existing Project named `<PROJECT_NAME>` under a target named `<TARGET_NAME>`.
+To make the Project easier to interpret in Snyk Web UI, you can use additional commands to specify a target name and also target references, such as Git branches. The following command creates or uploads an existing Project named `<PROJECT_NAME>` under a target named `<TARGET_NAME>`.
 
 ```
 snyk code test --report --project-name="<PROJECT_NAME>" --target-name="<TARGET_NAME>"
@@ -120,9 +120,9 @@ Snyk uses the `--project-name` or `--target-name` you provided in the command to
 
 You do not need to connect to an SCM integration such as GitHub or GitLab for this to work. It works directly with the results you upload from Snyk CLI.
 
-* Sync with Snyk Web UI: After creating a Project from the CLI, you can manage it in the Snyk web interface. If you mark an issue as **Ignored** in the UI, it will be suppressed in all future Project scans.
+* Sync with Snyk Web UI: After creating a Project from the CLI, you can manage it in the Snyk web interface. If you mark an issue as **Ignored** in the UI, Snyk suppresses it in all future Project scans.
 * If the Project is new, Snyk automatically creates a new CLI Project for you with the value provided in the `--project-name` option.
-* If the Project already exists, Snyk adds your latest scan as a new snapshot to that same Project. This allows you to track its security history over time.
+* If the Project already exists, Snyk adds your latest scan as a new snapshot to that same Project. This lets you track its security history over time.
 
 ### Troubleshooting published Snyk Code CLI results <a href="#troubleshooting-publication-of-snyk-code-cli-results" id="troubleshooting-publication-of-snyk-code-cli-results"></a>
 

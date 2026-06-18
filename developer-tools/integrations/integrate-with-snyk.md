@@ -4,7 +4,7 @@
 
 Agentic workflows transform software development by using AI assistants to automate tasks and write code, boosting productivity. But this speed poses security risks, as AI-generated code may have vulnerabilities.
 
-Snyk offers security guardrails through Snyk Studio, including its integration with the Model Context Protocol (MCP), an open standard enabling AI tools to communicate with the Snyk security platform. This allows AI assistants to run scans and check for vulnerabilities during code generation, embedding security early in AI-powered development for both human and AI-generated code.
+Snyk offers security guardrails through Snyk Studio, including its integration with the Model Context Protocol (MCP), an open standard enabling AI tools to communicate with the Snyk security platform. This lets AI assistants run scans and check for vulnerabilities during code generation, embedding security early in AI-powered development for both human and AI-generated code.
 
 Snyk provides information about:
 
@@ -23,7 +23,7 @@ The Snyk MCP Server is designed as a local MCP server, running on your system us
 
 ## Integrations for Snyk
 
-Many integrations are available for using third-party functionality within Snyk and using Snyk with other tools. See [SCM, IDE, and CI/CD workflow and integrations](../scm-integrations/) for information on integrations and other methods of accomplishing that workflow.
+Many integrations are available for using third-party functionality in Snyk and using Snyk with other tools. See [SCM, IDE, and CI/CD workflow and integrations](../scm-integrations/) for information on integrations and other methods of accomplishing that workflow.
 
 This page identifies additional Snyk integrations and where to find them.
 
@@ -34,7 +34,7 @@ Snyk provides plugins for repository gatekeepers and integrations to connect wit
 
 There are integrations that support [Snyk Container](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations).
 
-Integrations for [event forwarding](event-forwarding/) allow you to push Snyk platform events directly to certain products on other platforms, enabling you to set up custom alerting, build your own reporting, trigger automation, and more.
+Integrations for [event forwarding](event-forwarding/) let you push Snyk platform events directly to certain products on other platforms, so you can set up custom alerting, build your own reporting, trigger automation, and more.
 
 [Notification and ticketing systems integrations](jira-and-slack-integrations/) help you work with Snyk in Jira and Slack.
 
@@ -48,7 +48,7 @@ The **Integrations** page shows all active integrations, including any data auto
 
 The following supported Snyk data are automatically synced: Snyk Open Source, Snyk Code, Snyk IaC, Snyk Container.
 
-Each connected integration enables you to pause data syncing, modify integration profiles and configurations, delete the integration, or check when the integration was last synced and when the next sync is scheduled.
+Each connected integration lets you pause data syncing, modify integration profiles and configurations, delete the integration, or check when the integration was last synced and when the next sync is scheduled.
 
 ### Integrations syncing time
 
@@ -67,9 +67,9 @@ After you finish setting up an integration, you can see the following connection
 * Setup in progress
 * Connected
 * Connection failed
-* x profile(s) connected
-* x/y profile(s) connected
-* x profile(s) failed
+* x profiles connected
+* x/y profiles connected
+* x profiles failed
 
 If you encounter any of the failed statuses, check the Connection failure details list available on the integration card.
 
@@ -115,7 +115,7 @@ You can add an integration by following these steps:
 
 See the [Group-level integrations](../scm-integrations/group-level-integrations/) page for step-by-step details about how to set up an integration.
 
-After the integration is validated, a card is displayed on the Integrations page, allowing you to enable or disable the connection, edit the settings, or remove the connection from your configuration.
+After the integration is validated, a card is displayed on the Integrations page, so you can enable or disable the connection, edit the settings, or remove the connection from your configuration.
 
 ### Using Snyk Broker
 

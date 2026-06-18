@@ -50,7 +50,7 @@ Generate or test an SBOM document in ecosystems supported by Snyk.
 
 ### [`snyk aibom`](aibom.md)
 
-Generates an AIBOM for a local software project that is written in Python, to understand what AI models, datasets, tools, and so on are used in that project.
+Generates an AI-BOM for a local software project that is written in Python, to understand which AI models, datasets, tools, and so on the project uses.
 
 ### [`snyk aibom test`](aibom-test.md)
 

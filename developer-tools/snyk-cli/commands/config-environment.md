@@ -1,6 +1,6 @@
 # Config environment
 
-**Note:** This command will be available as of CLI version 1.1293.0.
+**Note:** This command is available as of CLI version 1.1293.0.
 
 If you are not in the system default environment, `SNYK-US-01`, use the `snyk config environment` command to set your environment before you run `snyk auth`.
 
@@ -10,7 +10,7 @@ If you are not in the system default environment, `SNYK-US-01`, use the `snyk co
 
 ## Description
 
-The `snyk config environment` command is provided for your convenience to make changing the endpoint used in the CLI easier and safer.
+The `snyk config environment` command makes changing the endpoint used in the CLI safer.
 
 The outcome is almost the same as `snyk config set endpoint=<URL>` but in addition, the `snyk config environment` command does the following:
 

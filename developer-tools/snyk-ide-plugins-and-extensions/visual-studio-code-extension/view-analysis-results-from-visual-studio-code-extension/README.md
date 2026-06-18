@@ -2,7 +2,7 @@
 
 ## Overview of results
 
-Snyk analysis shows a list of security vulnerabilities and code issues in the application code. Select a security vulnerability or a code security issue to view more details and examples of how others fixed the issue. The **Issue details panel** appears in a tab on the right side of the screen, as shown in following screen image.
+Snyk analysis shows a list of security vulnerabilities and code issues in the application code. Select a security vulnerability or a code security issue to view more details and examples of how others fixed the issue. The **Issue details panel** appears in a tab beside the code, as shown in the following screen image.
 
 The **Snyk analysis panel** on the left shows the time the analysis took and a list of issues with the suggestions found for those issues.
 
@@ -35,7 +35,7 @@ Snyk reports the following types of issues:
 * Infrastructure as Code issues: Found in infrastructure as code files; For more details, see [Snyk IaC Analysis results: Snyk IaC Configuration](analysis-results-snyk-iac-configuration.md).
 
 {% hint style="info" %}
-The exact capabilities and available scanners depend on your Snyk plan. Be sure your Organization's admin enabled all Snyk products prior to configuring any of them in the IDE plugin.
+The exact capabilities and available scanners depend on your Snyk plan. Ensure your Organization admin enabled all Snyk products before configuring any of them in the IDE plugin.
 {% endhint %}
 
 You can set the issue types to be shown in the Scan configuration settings. By default, all issue types shown are selected.
@@ -44,7 +44,7 @@ You can set the issue types to be shown in the Scan configuration settings. By d
 
 Starting with Visual Studio Code extension version 2.19.0, it is possible to see only newly introduced issues.
 
-This functionality reduces noise and allows you to focus only on current changes. This helps prevent issues early, thus unblocking your CI/CD pipeline and speeding up your deliveries.
+This functionality reduces noise and lets you focus only on current changes. This helps prevent issues early, unblocking your CI/CD pipeline and speeding up your deliveries.
 
 The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
@@ -58,7 +58,7 @@ To apply the filter and see only the new issues, use the **total** or **new** to
 
 You can also enable the net new issues feature in the [scan configuration](./#scan-configuration) settings for the extension.
 
-For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as shown in the screen image that follows:
+For newly created feature branches, Snyk reports no issues. That is an intended state that developers aim for, as shown in the screen image that follows:
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-ruvq.png" alt="Successful state. No Net New issues found." width="304"><figcaption><p>Successful state. No net new issues found.</p></figcaption></figure>
 

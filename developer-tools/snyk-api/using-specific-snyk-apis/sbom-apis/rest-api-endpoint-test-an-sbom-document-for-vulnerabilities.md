@@ -5,7 +5,7 @@
 
 The Snyk REST API is available only for Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans).
 
-These endpoints are beta API versions. Some of the functionality may change. For more information, see the [Versioning](../../rest-api/about-the-rest-api.md#versioning) information for the REST API.
+These endpoints are beta API versions. Some of the functionality can change. For more information, see the [Versioning](../../rest-api/about-the-rest-api.md#versioning) information for the REST API.
 {% endhint %}
 
 Snyk offers a [collection of API endpoints](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests) to asynchronously test a software bill of materials (SBOM) document. You can use these endpoints to learn more about the vulnerabilities impacting your SBOM and its packages.
@@ -89,7 +89,7 @@ curl --request POST \
 You can check the status of the test at any time after the initial request.
 
 1. Using the `job_id` returned from the initial request to the endpoint [Create an SBOM test run](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests), make a request to the endpoint [Gets an SBOM test run status](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#get-/orgs/-org_id-/sbom_tests/-job_id-).
-2. A successful request to this endpoint returns the status of your test, which can either be `processing` or `finished`. If the call is not successful, an error will be returned.
+2. A successful request to this endpoint returns the status of your test, which can either be `processing` or `finished`. If the call is not successful, Snyk returns an error.
 
 ```bash
   curl --get \
@@ -116,9 +116,9 @@ The following response code indicates success.
 
 **201 Created**
 
-The SBOM test run was successfully created. The response body contains the job ID of the test run.
+Snyk successfully created the SBOM test run. The response body contains the job ID of the test run.
 
-The following are error states that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solutions Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io).
+The following are error states that you can receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solutions Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io).
 
 **400 Bad Request**
 
@@ -134,7 +134,7 @@ You do not have the permissions required to make the request. This can happen if
 
 **429 Too Many Requests**
 
-Since the Snyk API is rate-limited, an excessive number of requests will eventually start to be rejected. You need to wait before making any further requests.
+Since the Snyk API is rate-limited, an excessive number of requests eventually starts to be rejected. You need to wait before making any further requests.
 
 **500 Internal Server Error**
 

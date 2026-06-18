@@ -6,7 +6,7 @@ description: This page explains how to transition away from affected images.
 
 You can [create your own custom images](../user-defined-custom-images-for-cli.md) to use. This option is available for any user affected by the removal of the Snyk Images listed on this page.
 
-Creating a custom image is the preferred solution, as it should guarantee compatibility with your system. However, if you cannot create a custom image, you can use an available alternative image.
+Creating a custom image is the preferred solution, as it guarantees compatibility with your system. However, if you cannot create a custom image, you can use an available alternative image.
 
 {% hint style="info" %}
 Snyk recommends using a pinned version of a software package unless stated otherwise.
@@ -14,7 +14,7 @@ Snyk recommends using a pinned version of a software package unless stated other
 
 ## snyk/snyk:docker-\* <a href="#snyk-snyk-docker" id="snyk-snyk-docker"></a>
 
-See the following table for the `snyk/snyk:docker-*` images to be removed
+See the following table for the `snyk/snyk:docker-*` images Snyk will remove.
 
 | Image                  | Based on     |
 | ---------------------- | ------------ |
@@ -32,7 +32,7 @@ Users affected by the removal of these images can update to the following images
 
 ## snyk/snyk:golang-\* <a href="#snyk-snyk-golang" id="snyk-snyk-golang"></a>
 
-See the following table for the `snyk/snyk:golang-*` images to be removed.
+See the following table for the `snyk/snyk:golang-*` images Snyk will remove.
 
 | Image                 | Based on    |
 | --------------------- | ----------- |
@@ -53,12 +53,12 @@ Users affected by the removal of these images can update to the following images
 * `snyk/snyk:golang-1.22`
 
 {% hint style="info" %}
-It is recommended to use a pinned Golang version such as `snyk/snyk:golang-1.22` instead of `snyk/snyk:golang,` which is based on Golang latest.
+Snyk recommends using a pinned Golang version such as `snyk/snyk:golang-1.22` instead of `snyk/snyk:golang,` which is based on Golang latest.
 {% endhint %}
 
 ## snyk/snyk:gradle-\* <a href="#snyk-snyk-gradle" id="snyk-snyk-gradle"></a>
 
-See the following table for the `snyk/snyk:gradle-*` images to be removed.
+See the following table for the `snyk/snyk:gradle-*` images Snyk will remove.
 
 | Image                      | Based on         |
 | -------------------------- | ---------------- |
@@ -89,7 +89,7 @@ Users affected by the removal of these images can update to the following images
 
 ## snyk/snyk:maven-3-jdk-19 <a href="#snyk-snyk-maven-3-jdk-19" id="snyk-snyk-maven-3-jdk-19"></a>
 
-`snyk/snyk:maven-3-jdk-19` will be removed from Docker. Users affected by this removal can update to the following images:
+Snyk will remove `snyk/snyk:maven-3-jdk-19` from Docker. Users affected by this removal can update to the following images:
 
 * `snyk/snyk:maven`
 * `snyk/snyk:maven-3-jdk-11`
@@ -105,7 +105,7 @@ Users affected by the removal of these images can update to the following images
 
 ## snyk/snyk:dotnet-\* <a href="#snyk-snyk-dotnet" id="snyk-snyk-dotnet"></a>
 
-See the following table for the `snyk/snyk:dotnet-*` images to be removed.
+See the following table for the `snyk/snyk:dotnet-*` images Snyk will remove.
 
 | Image                | Based on                              |
 | -------------------- | ------------------------------------- |
@@ -120,12 +120,12 @@ Users affected by the removal of these images can update to the following images
 * `snyk/snyk:dotnet-8.0`
 
 {% hint style="info" %}
-It is recommended to use the pinned version `snyk/snyk:dotnet-8.0,` which is based on the active LTS version of .NET, 8.0 at the time of publication.
+Snyk recommends using the pinned version `snyk/snyk:dotnet-8.0,` which is based on the active LTS version of .NET, 8.0 at the time of publication.
 {% endhint %}
 
 ## snyk/snyk:node-\* <a href="#snyk-snyk-node" id="snyk-snyk-node"></a>
 
-See the following table for the `snyk/snyk:node-*` images to be removed.
+See the following table for the `snyk/snyk:node-*` images Snyk will remove.
 
 | Image             | Based on |
 | ----------------- | -------- |
@@ -145,12 +145,12 @@ Users affected by the removal of these images can update to the following images
 * `snyk/snyk:node-22`
 
 {% hint style="info" %}
-It is recommend to use a pinned version such as `snyk/snyk:node-22`, which uses LTS version 22.
+Snyk recommends using a pinned version such as `snyk/snyk:node-22`, which uses LTS version 22.
 {% endhint %}
 
 ## snyk/snyk:python-\* <a href="#snyk-snyk-python" id="snyk-snyk-python"></a>
 
-See the following table for the `snyk/snyk:python-*` images to be removed.
+See the following table for the `snyk/snyk:python-*` images Snyk will remove.
 
 | Image                | Based on   |
 | -------------------- | ---------- |
@@ -168,12 +168,12 @@ Users affected by the removal of these images can update to the following images
 * `snyk/snyk:python-3.11`
 
 {% hint style="info" %}
-It is recommend to use a pinned version such as `snyk/snyk:python-3.11`, which uses LTS version 3.11.
+Snyk recommends using a pinned version such as `snyk/snyk:python-3.11`, which uses LTS version 3.11.
 {% endhint %}
 
 ## snyk/snyk:ruby-\* <a href="#snyk-snyk-ruby" id="snyk-snyk-ruby"></a>
 
-See the following table for the `snyk/snyk:ruby-*` images to be removed.
+See the following table for the `snyk/snyk:ruby-*` images Snyk will remove.
 
 | Image              | Based on |
 | ------------------ | -------- |
@@ -189,12 +189,12 @@ Users affected by the removal of these images can update to the following images
 * `snyk/snyk:ruby-3.3`
 
 {% hint style="info" %}
-It is recommended to use the pinned version `snyk/snyk:ruby-3.3`, which is based on Ruby 3.3
+Snyk recommends using the pinned version `snyk/snyk:ruby-3.3`, which is based on Ruby 3.3
 {% endhint %}
 
 ## snyk/snyk:sbt & snyk/snyk:scala <a href="#snyk-snyk-sbt-and-snyk-snyk-scala" id="snyk-snyk-sbt-and-snyk-snyk-scala"></a>
 
-See the following table for the `snyk/snyk:sbt` and `snyk/snyk:scala` images to be removed.
+See the following table for the `snyk/snyk:sbt` and `snyk/snyk:scala` images Snyk will remove.
 
 | Image           | Based on                                  |
 | --------------- | ----------------------------------------- |
@@ -208,5 +208,5 @@ Users affected by the removal of these images can update to the following images
 * `snyk/snyk:ruby-3.3`
 
 {% hint style="info" %}
-It is recommended to use the pinned version snyk/snyk:sbt1.10.0-scala3.4.2, which is based on Scala:3.4.2-sbt:1.10.0
+Snyk recommends using the pinned version snyk/snyk:sbt1.10.0-scala3.4.2, which is based on Scala:3.4.2-sbt:1.10.0
 {% endhint %}

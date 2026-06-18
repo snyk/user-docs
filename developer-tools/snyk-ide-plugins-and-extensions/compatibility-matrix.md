@@ -1,4 +1,4 @@
-# IDE Plugin Compatibility Matrix
+# IDE plugin compatibility matrix
 
 This matrix shows the compatible CLI version range for each IDE plugin version released in the past 12 months.
 

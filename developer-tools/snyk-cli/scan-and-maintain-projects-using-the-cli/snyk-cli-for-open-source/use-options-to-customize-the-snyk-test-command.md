@@ -1,6 +1,6 @@
 # Use options to customize the snyk test command
 
-The Snyk CLI has many commands that enable you to perform various tasks and many options that enable you to customize the commands. For details, see the [CLI help](../../commands/). This page explains how to customize snyk test to accomplish tasks you may want to do in testing Open Source Projects.
+The Snyk CLI has many commands that you can use to perform various tasks and many options that you can use to customize the commands. For details, see the [CLI help](../../commands/). This page explains how to customize snyk test to accomplish tasks you want to do in testing Open Source Projects.
 
 ## Scan multiple manifest files
 
@@ -20,6 +20,6 @@ If your manifest files are from a supported language but have a custom name, you
 
 ## **Test dev dependencies**
 
-Many package managers allow for separately calling out dependencies that are to be used only in a development or test context, that is, not eventually shipped to production. By default, Snyk does not scan these dependencies. If you want your `dev` dependencies to be included in the scan, use the `--dev` option:
+Many package managers let you separately call out dependencies that are to be used only in a development or test context, that is, not eventually shipped to production. By default, Snyk does not scan these dependencies. If you want your `dev` dependencies to be included in the scan, use the `--dev` option:
 
 `$ snyk test --dev`

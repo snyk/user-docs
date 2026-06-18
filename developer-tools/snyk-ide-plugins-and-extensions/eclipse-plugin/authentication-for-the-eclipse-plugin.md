@@ -16,7 +16,7 @@ After the plugin is installed, follow these steps to authenticate:
 
 1. In the dialog that opens, set the Snyk API endpoint for a custom multi-tenant or single-tenant setup. For details, see [IDE URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).\
    \
-   Multi-tenant users who do not belong to the `SNYK-US-01` region ( `https://api.snyk.io`) will be automatically redirected to the correct domain for the email with which the user authenticated. This redirect will not happen if users are expected to use a custom URL, such as in single-tenant company configurations.\
+   Snyk automatically redirects multi-tenant users who do not belong to the `SNYK-US-01` region ( `https://api.snyk.io`) to the correct domain for the email with which the user authenticated. This redirect does not happen if users are expected to use a custom URL, such as in single-tenant company configurations.\
    \
    When you are finished with the settings on this page, click **Next**.
 
@@ -43,7 +43,7 @@ If you have problems, see [OAuth 2.0 authentication does not work](../troublesho
 {% include "../../.gitbook/includes/this-method-is-inferior-to-....md" %}
 
 {% hint style="warning" %}
-The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, please reach out to your Snyk account team.
+The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, contact your Snyk account team.
 {% endhint %}
 
 To authenticate using the Personal Access Token, follow these steps:
@@ -53,7 +53,7 @@ To authenticate using the Personal Access Token, follow these steps:
 2.  Set the **Authentication Method** to **Use Personal Access Token**.
 
     <figure><img src="../../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
-3. Click the **Connect IDE to Snyk** button.
+3. Click **Connect IDE to Snyk**.
 4. Create your **Personal Access Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.
 5. Add the token in the **Token** field.
 6. Click **Apply and Close**.
@@ -71,7 +71,7 @@ To authenticate using the API token, follow these steps:
 2.  Set the **Authentication Method** to **API token**.
 
     <figure><img src="../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
-3. Click the **Connect IDE to Snyk** button.
+3. Click **Connect IDE to Snyk**.
 4.  Click **Authenticate** in the web browser window that opens.
 
     <figure><img src="../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>

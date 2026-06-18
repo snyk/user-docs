@@ -50,7 +50,7 @@ See [GitHub and GitHub Enterprise permissions requirements](../user-permissions-
 1. In Snyk, navigate to the **Integrations** page and click the **GitHub Enterprise** card.
 2. Enter your GitHub Enterprise URL and the personal access token (PAT) for the service account you created, and **Save** your changes. After Snyk has successfully connected to the GitHub instance, the list of available repositories displays for your selection.
 3. If your GitHub Enterprise organization enforces SAML/SSO, select **Configure SSO** next to the PAT in GitHub after the PAT has been created.\
-   Occasionally, SSO is enforced in your GitHub Enterprise organizations after a PAT and Integration are configured. If this happens, any Projects that have already been imported show in Snyk, but retests, PR Checks, and so on, will not be performed. To fix this, check the **Configure SSO** settings to ensure the GitHub Enterprise organization is **Authorized**.\
+   Occasionally, SSO is enforced in your GitHub Enterprise organizations after a PAT and Integration are configured. If this happens, any Projects that have already been imported show in Snyk, but Snyk does not perform retests, PR Checks, and so on. To fix this, check the **Configure SSO** settings to ensure the GitHub Enterprise organization is **Authorized**.\
    If the organization is showing as **Authorized**, but the issue still persists, try de-authorizing the organization and then re-authorizing.
 
 {% hint style="info" %}
@@ -60,7 +60,7 @@ Ensure that there are no trailing characters such as `/` following the url. An i
 {% endhint %}
 
 {% hint style="warning" %}
-If the PAT token changes or expires in GitHub, the integration with Snyk will not function. To resolve this, update the token in the Snyk **GitHub Enterprise Integration settings**.
+If the PAT token changes or expires in GitHub, the integration with Snyk does not function. To resolve this, update the token in the Snyk **GitHub Enterprise Integration settings**.
 {% endhint %}
 
 #### How to import GitHub repositories
@@ -123,7 +123,7 @@ The Auto-assign PRs feature is supported only for private repositories.
 
 Snyk can automatically assign the pull requests it creates to ensure that they are handled by the right team members.
 
-Auto-assign for PRs can be enabled for the GitHub and GitHub Enterprise integration and all Projects imported via GitHub, or on a per-Project basis.
+Auto-assign for PRs can be enabled for the GitHub and GitHub Enterprise integration and all Projects imported through GitHub, or on a per-Project basis.
 
 Users can either be manually specified, and all will be assigned, or automatically selected based on the last commit user account.
 
@@ -164,9 +164,9 @@ Disconnecting the Snyk GitHub Enterprise integration halts all scans for importe
 
     <figure><img src="../../.gitbook/assets/2023-11-09_17-38-28.png" alt="Confirm disconnecting from GitHub Enterprise" width="375"><figcaption><p>Confirm disconnecting from GitHub Enterprise</p></figcaption></figure>
 
-After GitHub Enterprise is disconnected, imported Snyk Projects will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on pull requests.
+After GitHub Enterprise is disconnected, Snyk sets imported Projects to inactive, and you no longer get alerts, pull requests, or Snyk tests on pull requests.
 
-You can re-connect anytime; however, re-initiating GitHub Enterprise projects for monitoring requires setting up the integration again.
+You can re-connect anytime. However, re-initiating GitHub Enterprise Projects for monitoring requires setting up the integration again.
 
 4. Broker Token (`mandatory`): Create and add your Broker token if you use Snyk Broker.
    * Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/prepare-snyk-broker-for-deployment/obtain-the-tokens-required-to-set-up-snyk-broker) page.

@@ -4,9 +4,9 @@ This page explains how to transition away from affected jobs.
 
 ## Updating snyk orb and using `iac test`
 
-Customers using the `scan-iac` job will need to switch to using `snyk/scan` with the `iac test` command. For an example, see the [IaC scanning examples](https://github.com/snyk/snyk-orb/blob/v2.0.0/src/examples/quickstart-iac-scanning.yml) in the snyk-orb repository.
+Customers using the `scan-iac` job must switch to using `snyk/scan` with the `iac test` command. For an example, see the [IaC scanning examples](https://github.com/snyk/snyk-orb/blob/v2.0.0/src/examples/quickstart-iac-scanning.yml) in the snyk-orb repository.
 
-It is important to update the version of the snyk orb used to the latest version by updating the circleci config files. Currently, the latest Snyk orb is `snyk/snyk@2.1.0` .
+It is important to update the version of the snyk orb used to the latest version by updating the circleci config files. The latest Snyk orb is `snyk/snyk@2.1.0` .
 
 ## Use the Snyk orb to only install the Snyk CLI, and then run the Snyk CLI commands in your own steps <a href="#use-the-snyk-orb-to-only-install-the-snyk-cli-and-then-run-the-snyk-cli-commands-in-your-own-steps" id="use-the-snyk-orb-to-only-install-the-snyk-cli-and-then-run-the-snyk-cli-commands-in-your-own-steps"></a>
 

@@ -59,7 +59,7 @@ Examples follow of using a Snyk GitHub Action to test and monitor a Snyk Open So
 
 You can find examples specific to each language, package manager, and process on the pages listed in [GitHub Actions for Open Source languages and package managers](./#github-actions-for-open-source-languages-and-package-managers) and [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](./#github-actions-for-snyk-container-and-snyk-infrastructure-as-code).
 
-Note that GitHub Actions will not pass on secrets set in the repository to forks being used in pull requests; thus, the Snyk Actions that require the token will fail to run from a forked repository.
+Note that GitHub Actions does not pass on secrets set in the repository to forks used in pull requests; as a result, the Snyk Actions that require the token fail to run from a forked repository.
 
 ### Snyk test example
 
@@ -154,7 +154,7 @@ jobs:
           sarif_file: snyk.sarif
 ```
 
-After you upload to GitHub Code Scanning support, you will see vulnerabilities on the GitHub Security tab as shown in the following screen image.
+After you upload to GitHub Code Scanning support, you see vulnerabilities on the GitHub Security tab as shown in the following screen image.
 
 <figure><img src="../../.gitbook/assets/GitHub-showing-uploaded-vulnerabilty.png" alt="GitHub Security tab showing uploaded vulnerability"><figcaption><p>GitHub Security tab showing uploaded vulnerability</p></figcaption></figure>
 
@@ -193,5 +193,5 @@ env:
 
 Every Snyk account has this token. After you have created an account with Snyk, you can find the API token in one of two ways:
 
-1. In the UI, go to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained on the page [Revoke and regenerate a Snyk API token](../../snyk-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token.md).
+1. In the UI, navigate to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained on the page [Revoke and regenerate a Snyk API token](../../snyk-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token.md).
 2. If you are using the [Snyk CLI](../../snyk-cli/getting-started-with-the-snyk-cli.md) locally, you can retrieve the API token by running `snyk config get api`.

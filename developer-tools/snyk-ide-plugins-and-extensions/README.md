@@ -1,13 +1,13 @@
 # Snyk IDE plugins and extensions
 
 {% hint style="info" %}
-If Snyk is hosting your data in a region other than `SNYK US-01`, you may set the custom endpoint in the IDE. For more information, see [IDEs URLS](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls) on the [Regional hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency) page.\
-Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
+If Snyk is hosting your data in a region other than `SNYK US-01`, you can set the custom endpoint in the IDE. For more information, see [IDEs URLS](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls) on the [Regional hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency) page.\
+Snyk automatically redirects multi-tenant users who do not belong to the `SNYK-US-01` region to the correct domain for the email with which the user authenticated. The redirect does not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 {% endhint %}
 
 Snyk Security plugins and extensions find and fix security vulnerabilities and issues in Snyk Projects. This helps individual developers, open source contributors, and code maintainers to pass security reviews, avoid costly fixes later in development, and reduce time to develop and deliver secure code.
 
-The results of a vulnerability scan show issues with context, impact, and fix guidance in your IDE, where the fix for the vulnerability can be done right in the IDE itself.
+The results of a vulnerability scan show issues with context, impact, and fix guidance in your IDE, where you can fix the vulnerability directly.
 
 The Snyk IDE plugins and extensions rely on the [Snyk CLI](../snyk-cli/) to perform many functions. For details, refer to the documentation for each IDE. When you are troubleshooting, it is always helpful to run the CLI for the same action with the debug option, `-d`.
 

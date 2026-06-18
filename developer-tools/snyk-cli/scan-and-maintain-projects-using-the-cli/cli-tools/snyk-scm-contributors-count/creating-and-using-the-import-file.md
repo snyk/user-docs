@@ -8,16 +8,16 @@ description: How to generate the import file and use it with the snyk-api-import
 
 This feature only works with Bitbucket and Azure.
 
-When the `snyk-scm-contributors-count` tool connects both to your Snyk account and your SCM account, the tools finds out which repos/projects are monitored by Snyk and which are not.
+When the `snyk-scm-contributors-count` tool connects both to your Snyk account and your SCM account, the tool finds out which repos/projects Snyk monitors and which it does not.
 
 When you apply the `importConfDir` and `importFileRepoType` flags to the command, the tool generates an import file populated with the unmonitored repo data, to be used with the [**snyk-api-import** ](creating-and-using-the-import-file.md#using-the-snyk-api-import-tool)tool to import the missing repos to your Snyk account.
 
-* If the Snyk token was exported and the related Snyk account has an integration set for the specific SCM that is being scanned by the tool, the tool will try to find and match the OrgID and IntegrationID from Snyk as needed by the `snyk-api-import` tool and automatically add it to the import file.
-* If a Snyk token was not exported or the user has no Snyk account yet, this feature can be used to map all repos in the SCM and create the import file to be later used by the `snyk-api-import` tool. In this case or if the tool can not find an OrgID or IntegrationID, the tool prompts the user to supply these IDs (once) and automatically adds them to the import file.
+* If the Snyk token was exported and the related Snyk account has an integration set for the specific SCM that the tool scans, the tool tries to find and match the OrgID and IntegrationID from Snyk as needed by the `snyk-api-import` tool and automatically adds it to the import file.
+* If a Snyk token was not exported or the user has no Snyk account yet, you can use this feature to map all repos in the SCM and create the import file to use later with the `snyk-api-import` tool. In this case, or if the tool cannot find an OrgID or IntegrationID, the tool prompts the user to supply these IDs once and automatically adds them to the import file.
 
 ## The import flags
 
-`importConfDir` - This flag indicates that a query for unmonitored repos should be made and expects a path to a folder (with write privileges) in which to create the json import files, for example :
+`importConfDir` - This flag indicates that the tool should query for unmonitored repos and expects a path to a folder (with write privileges) in which to create the json import files, for example:
 
 ```
 snyk-scm-contributors-count <command> --token TOKEN -- importConfDir /snyk/import/
@@ -32,11 +32,11 @@ snyk-scm-contributors-count <command> --token TOKEN -- importConfDir /snyk/impor
 ```
 
 {% hint style="info" %}
-The import file requires an OrgID and IntegrationID from the user in order to import them to the right organization and integration at Snyk.
+The import file requires an OrgID and IntegrationID from the user to import them to the right organization and integration at Snyk.
 
-The tool will try to find these two values from Snyk (provided that a SNYK\_TOKEN was exported and that the org mapping at Snyk is mirrored to that of the SCM) and if the tool can not find those values, the user will be prompted to supply them in the command line.
+The tool tries to find these two values from Snyk (provided that a SNYK\_TOKEN was exported and that the org mapping at Snyk is mirrored to that of the SCM), and if the tool cannot find those values, it prompts the user to supply them in the command line.
 
-Once the user has stated the values for OrgID and IntegrationID once, these values will be set for ALL the entries in the import file (meaning that all the imported repos will be under the same org in Snyk).
+After the user states the values for OrgID and IntegrationID once, the tool sets these values for ALL the entries in the import file (meaning that all the imported repos are under the same org in Snyk).
 {% endhint %}
 
 ## Using the snyk-api-import tool

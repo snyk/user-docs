@@ -8,6 +8,6 @@ For more information, see [CLI for Snyk Code](https://docs.snyk.io/snyk-cli/scan
 
 ## `snyk code` command and the help docs
 
-The  single`snyk code` command is identified here with the help options:
+The single `snyk code` command is listed here with the help options:
 
 [`code test`](code-test.md); `code test --help`: Test source code for any known security issues (Static Application Security Testing).

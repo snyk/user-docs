@@ -21,7 +21,7 @@ Available options:
 
 Get your GitHub token or create a new one with this [guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
-**Note:** Make sure your token has read access to the repos.
+**Note:** Ensure your token has read access to the repos.
 
 ## Running the command
 
@@ -34,12 +34,12 @@ Consider the following levels of usage and options:
     ```
     snyk-scm-contributors-count github --token TOKEN
     ```
-*   To get commits for some Orgs and their repos in GitHub:, provide the GitHub token and the org names, separated by a comma:
+*   To get commits for some Orgs and their repos in GitHub, provide the GitHub token and the org names, separated by a comma:
 
     ```
     snyk-scm-contributors-count github --token TOKEN --orgs ORG_ONE,ORG_TWO,ORG_THREE
     ```
-*   To get commits for only one repo in GitHub, provide the GitHub token, one org name ,and one repo name:
+*   To get commits for only one repo in GitHub, provide the GitHub token, one org name, and one repo name:
 
     ```
     snyk-scm-contributors-count github --token TOKEN --orgs ORG --repo REPO
@@ -47,13 +47,13 @@ Consider the following levels of usage and options:
 
 ### Options
 
-* To exclude some contributors from being counted in the commits , add an exclusion file with the emails to ignore(separated by a new line) and apply the `--exclusionFilePath` with the path to that file:
+* To exclude some contributors from being counted in the commits, add an exclusion file with the emails to ignore (separated by a new line) and apply the `--exclusionFilePath` with the path to that file:
 
 ```
 snyk-scm-contributors-count github --token TOKEN --orgs ORG_ONE,ORG_TWO --exclusionFilePath PATH_TO_FILE
 ```
 
-*   To set the output to json format, dd the `--json` flag:
+*   To set the output to json format, add the `--json` flag:
 
     ```
     snyk-scm-contributors-count github --token TOKEN --json

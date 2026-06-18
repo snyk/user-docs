@@ -1,6 +1,6 @@
 # Maven plugin integration with Snyk
 
-Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin) based on the [Snyk CLI](../snyk-cli/). This plugin allows you to scan and monitor your Maven dependencies for vulnerabilities.
+Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin) based on the [Snyk CLI](../snyk-cli/). This plugin lets you scan and monitor your Maven dependencies for vulnerabilities.
 
 See all releases in the [Maven Central Repository](https://search.maven.org/artifact/io.snyk/snyk-maven-plugin).
 
@@ -84,7 +84,7 @@ Scan your Project's dependencies and provide a list of vulnerabilities if any ar
 
 Default Phase: `install`
 
-Take a snapshot of your Project's dependency tree and monitor it on [snyk.io](https://snyk.io). You wil be alerted when new relevant vulnerabilities, updates, or patches are disclosed.
+Take a snapshot of your Project's dependency tree and monitor it on [snyk.io](https://snyk.io). Snyk alerts you when new relevant vulnerabilities, updates, or patches are disclosed.
 
 ## Configuration for the Maven plugin
 
@@ -112,7 +112,7 @@ When you are running `mvn`, you can also use `-Dsnyk.skip` to enable this behavi
 
 Default: `true`
 
-When this variable is set to `true`, if the Snyk CLI tool indicates that action is required to remedy a security issue, the Maven build will be considered failed. When this variable is set to `false` , the build will continue even if action is required.
+When this variable is set to `true`, if the Snyk CLI tool indicates that action is required to remedy a security issue, the Maven build fails. When this variable is set to `false`, the build continues even if action is required.
 
 ### `args` \[array\<string>]
 

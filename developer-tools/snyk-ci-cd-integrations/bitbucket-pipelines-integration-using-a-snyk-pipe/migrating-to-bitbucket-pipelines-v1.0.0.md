@@ -48,10 +48,10 @@ script:
 The table that follows lists the Snyk CLI Docker images used in Bitbucket Pipelines < 1.0.0 and the equivalent Snyk images that can be used in Bitbucket Pipelines > 1.0.0.
 
 {% hint style="info" %}
-Node.js 14 is installed in all Snyk CLI Docker images for installing the CLI. In comparison, NodeJS is installed only in Snyk images containing the `node` tag.
+Node.js 14 is installed in all Snyk CLI Docker images for installing the CLI. In comparison, Node.js is installed only in Snyk images containing the `node` tag.
 {% endhint %}
 
-Note that the images will not be exactly like-for-like. Properties, including the base image, the installed Snyk CLI version, and others, will be different.
+Note that the images are not exactly like-for-like. Properties, including the base image, the installed Snyk CLI version, and others, differ.
 
 However, for the purpose of Bitbucket Pipelines, they are functionally equivalent.
 
