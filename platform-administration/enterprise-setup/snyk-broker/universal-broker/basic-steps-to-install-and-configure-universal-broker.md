@@ -46,7 +46,7 @@ A typical workflow for adding a new Broker connection using the CLI involves the
     snyk-broker-config workflows connections create
     ```
 
-    The CLI will then guide you through the process, prompting for:
+    The CLI then guides you through the process, prompting for:
 
     * Your Snyk API Token, required for authentication if you did not already export it as an environment variable.
     * The Snyk Organization ID where the Broker connection is used.
@@ -95,7 +95,7 @@ You will need them to run your Broker Client.
     Have you saved these credentials? (Y/N)
 ```
 
-The tool displays the credentials for the Broker App just installed. Be sure to store these safely like any other credentials. This is the only time the client secret will be displayed. If you lose these credentials, you must either delete and recreate the Snyk Broker Admin Organization and start over, or use the API to reinstall Universal Broker manually.
+The tool displays the credentials for the Broker App just installed. Be sure to store these safely like any other credentials. This is the only time the client secret is displayed. If you lose these credentials, you must either delete and recreate the Snyk Broker Admin Organization and start over, or use the API to reinstall Universal Broker manually.
 
 * When you have saved your credentials, type Y and press Enter.
 

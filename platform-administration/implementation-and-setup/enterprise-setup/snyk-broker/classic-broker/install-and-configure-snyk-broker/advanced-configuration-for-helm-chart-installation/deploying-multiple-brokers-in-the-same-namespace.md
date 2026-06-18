@@ -2,15 +2,15 @@
 
 ## Helm chart versions 2.x.x
 
-Helm chart versions 2.x.x automatically adds a suffix to all object name based on the release name. Simply use different release name for each broker you want to add into the same namespace.
+Helm chart versions 2.x.x automatically add a suffix to all object names based on the release name. Use a different release name for each Broker you want to add to the same namespace.
 
 {% hint style="info" %}
-For backward compatibility, 2.1.0 introduces a disableSuffixes flag to revert to the 1.x.x behavior listed below, by simply adding --set disableSuffixes=true or disableSuffixes=true in your values file.
+For backward compatibility, 2.1.0 introduces a disableSuffixes flag to revert to the 1.x.x behavior listed in the following section. Add --set disableSuffixes=true or disableSuffixes=true in your values file.
 {% endhint %}
 
 ## Helm chart versions 1.x.x
 
-To deploy an additional Broker into the same namespace as an existing broker, follow these examples.
+To deploy an additional Broker into the same namespace as an existing Broker, follow these examples.
 
 ### Deploy with existing service account
 

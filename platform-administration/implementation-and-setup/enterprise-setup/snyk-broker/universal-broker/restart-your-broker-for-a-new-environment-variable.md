@@ -16,10 +16,10 @@ docker run --restart=always \
 snyk/broker:universal
 ```
 
-At this point, the Broker will display a message like the following:
+At this point, the Broker displays a message like the following:
 
 ```
 {"name":"my github connection","hostname":"ae7d64e0edac","pid":1,"level":30,"id":"12345678-1234-1234-1234-123456789012","msg":"Connection (my github connection) not in use by any orgs. Will check periodically and create connection when in use.","time":"2024-06-18T20:21:24.382Z","v":0}
 ```
 
-In Kubernetes deployments with hot-loaded secrets, when you edit a secret, typically using a vault system or something similar, the values in the secrets are automatically updated into the mounted secret file. This allows the Broker to trigger a reloading while running, hot-loading the new value without needing to restart the container.
+In Kubernetes deployments with hot-loaded secrets, when you edit a secret, typically using a vault system or something similar, the values in the secrets are automatically updated into the mounted secret file. This lets the Broker trigger a reloading while running, hot-loading the new value without needing to restart the container.

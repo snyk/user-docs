@@ -25,7 +25,7 @@ Specific permissions are required to perform all these tasks. For more informati
 
 `jwks_url` - A JWKs URL hosting your public keys used to verify signed JWT requests. This must be `https`. Required only when `auth_type` is `oauth_private_key_jwt`.
 
-`access_token_ttl_seconds` - The time, in seconds, that a generated access token will be valid for. Defaults to one hour if unset. Required only when `auth_type` is `oauth_client_secret` or `oauth_private_key_jwt`.
+`access_token_ttl_seconds` - The time, in seconds, that a generated access token is valid for. Defaults to one hour if unset. Required only when `auth_type` is `oauth_client_secret` or `oauth_private_key_jwt`.
 
 ## Manage Group-level service accounts
 
@@ -75,7 +75,7 @@ This call permanently deletes the specified service account and revokes its cred
 
 **API endpoint:** [Manage a group service account’s client secret](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#groups-group_id-service_accounts-serviceaccount_id-secrets)
 
-This call allows you to manage the client secret for `oauth_client_secret` service accounts. You can perform the following operations:
+This call lets you manage the client secret for `oauth_client_secret` service accounts. You can perform the following operations:
 
 * `create` - generate a new client secret. A service account can have a maximum of two active secrets at a time.
 * `delete` - delete an existing client secret. This requires putting `client_secret` in the request body. Deleting an existing client secret would render it invalid. A service account must have at least one active secret; calling delete with your last secret will fail.
@@ -129,7 +129,7 @@ This call permanently deletes the specified service account.
 
 **API endpoint:** [Manage an organization's service account's client secret](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts#orgs-org_id-service_accounts-serviceaccount_id-secrets)
 
-This call allows you to manage the client secret for `oauth_client_secret` service accounts. You can perform the following operations:
+This call lets you manage the client secret for `oauth_client_secret` service accounts. You can perform the following operations:
 
 * `create` - generate a new client secret. A service account can have a maximum of two active secrets at a time.
 * `delete` - delete an existing client secret. This requires putting `client_secret` in the request body. Deleting an existing client secret would render it invalid. A service account must have at least one active secret; calling delete with your last secret will fail.

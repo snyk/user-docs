@@ -1,6 +1,6 @@
 # Switch between Groups and Organizations
 
-Snyk shows your preferred Organization by default when you log into the Snyk Web UI. Snyk also uses the settings for your preferred Organization when you test a Project using the CLI. For more information, see [Manage Organizations](organizations/create-and-delete-organizations.md).
+Snyk shows your preferred Organization by default when you log in to the Snyk Web UI. Snyk also uses the settings for your preferred Organization when you test a Project using the CLI. For more information, see [Manage Organizations](organizations/create-and-delete-organizations.md).
 
 ## Switch Group
 
@@ -13,7 +13,7 @@ To view or add to your personal Organizations, select **Ungrouped**.
 ## Switch Organization in the Web UI
 
 {% hint style="warning" %}
-If your SSO email is provided by Google, then logging in with that email through the Google social provider is not the same as logging in using SSO. Using the Google social option creates a separate free account with the standard free user privileges. You can not switch between Organizations that are in different accounts.
+If your SSO email is provided by Google, then logging in with that email through the Google social provider is not the same as logging in using SSO. Using the Google social option creates a separate free account with the standard free user privileges. You cannot switch between Organizations that are in different accounts.
 {% endhint %}
 
 You must also be aware of the Organization you are viewing. Organizations contain different Projects.

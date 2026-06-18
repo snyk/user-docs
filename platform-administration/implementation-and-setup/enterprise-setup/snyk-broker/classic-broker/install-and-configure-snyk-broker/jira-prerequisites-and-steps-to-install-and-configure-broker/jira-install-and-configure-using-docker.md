@@ -36,7 +36,7 @@ If necessary, navigate to [Advanced configuration for Snyk Broker Docker install
 
 When SSO is enabled, JIRA usually prohibits the use of a username and password and requires the use of a personal access token (PAT).
 
-When SSO is enabled, you must use a specific Jira version that will instead use the authorization header with the bearer token. To use this version, provide the following configuration:
+When SSO is enabled, you must use a specific Jira version that instead uses the authorization header with the bearer token. To use this version, provide the following configuration:
 
 ```
 docker run --restart=always \
@@ -53,9 +53,9 @@ docker run --restart=always \
 
 Paste the Broker Client configuration to start the Broker Client container.
 
-After the container is set up, and the Jira Integrations page shows the connection to Jira, under Projects, you can create Jira tickets
+After the container is set up, and the Jira Integrations page shows the connection to Jira, under Projects, you can create Jira tickets.
 
-## **Basic troubleshooting for Broker with Jira**
+## Basic troubleshooting for Broker with Jira
 
 * Run `docker logs <container id>` to look for any errors, where `container id` is the Jira Broker container ID.
 * Ensure relevant ports are exposed to Jira.

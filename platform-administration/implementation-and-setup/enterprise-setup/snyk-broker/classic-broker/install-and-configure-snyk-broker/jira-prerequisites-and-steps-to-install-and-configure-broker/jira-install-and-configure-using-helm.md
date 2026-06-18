@@ -37,7 +37,7 @@ You can verify that the Broker is running by looking at the settings for your br
 
 When SSO is enabled, JIRA usually prohibits the use of a username and password and requires the use of a personal access token (PAT).
 
-When SSO is enabled, you must use a specific Jira version that will instead use the authorization header with the bearer token. To use this version, provide the following configuration:
+When SSO is enabled, you must use a specific Jira version that instead uses the authorization header with the bearer token. To use this version, provide the following configuration:
 
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \

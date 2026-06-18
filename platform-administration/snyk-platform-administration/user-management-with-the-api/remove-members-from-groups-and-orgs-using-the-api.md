@@ -22,7 +22,7 @@ For each user, call the endpoint to remove that member from the Organization usi
 
 For a successful request, the response is `200 OK`.
 
-Look at the Organization members page to verify that the member has been removed.
+Look at the Organization members page to verify that Snyk removed the member.
 
 {% hint style="info" %}
 When a member is removed from an Organization, if the Organization is a part of a Group, the user continues to exist in the Group as a Group Member. To completely remove the user from the Group, follow the steps in the next section.
@@ -62,7 +62,7 @@ For each user, to remove that member from the Group, call the endpoint using the
 
 For a successful request, the response is `200 OK`.
 
-Look at the Group members page to verify the user has been removed.
+Look at the Group members page to verify that Snyk removed the user.
 
 {% hint style="info" %}
 When a member is removed from a Group, the user continues to exist in Snyk. To completely delete all data associated with the user, follow the step in the next section.
@@ -82,5 +82,5 @@ You can find the `{sso_id}` on the Snyk Web UI; navigate to **Group** > **Settin
 
 For a successful request, the response is `200 OK`.
 
-Use the following request to verify the member has been deleted.\
+Use the following request to verify that Snyk deleted the member.\
 `GET https://api.snyk.io/v1/user/userId`

@@ -4,14 +4,14 @@ This example shows how to configure user roles after you have [configured OneLog
 
 OneLogin has the concept of groups and roles. However, OneLogin does not support the assignment of multiple groups to a user.
 
-Therefore, roles will be assigned to users directly instead of indirectly through groups.
+Therefore, assign roles to users directly instead of indirectly through groups.
 
-1. In OneLogin, go to the **Users** and then to the **Roles** section and create the roles following the naming convention outlined for [custom mapping](../). Each role should have the Snyk SAML app enabled as the role app.\
+1. In OneLogin, navigate to **Users** and then to the **Roles** section and create the roles following the naming convention outlined for [custom mapping](../). Each role must have the Snyk SAML app enabled as the role app.\
    Assign the users to their roles as needed.
 
 <figure><img src="../../../../../.gitbook/assets/image (156).png" alt="OneLogin Roles section"><figcaption><p>OneLogin Roles section</p></figcaption></figure>
 
-2. To transfer the user roles in the SAML assertion to Snyk, go to **Applications**, select the Snyk SAML app, and select the **Parameters** section on the left.\\
+2. To transfer the user roles in the SAML assertion to Snyk, navigate to **Applications**, select the Snyk SAML app, and select the **Parameters** section.\\
 
 <figure><img src="https://lh6.googleusercontent.com/zseB83vGEsQBiQ2_Rc6zOgkKHkv_KN6S-uLHbZc9k_US_aEzFX1AJUJkEgJpucRtdWYgx0mpUhpHiAhCVTsp3xj2o8hVEB0ArnuMmAVYQ9mw44zULICe57XRZDYxkKHpvpnk6o-TXrqYQHN3MuYMyjA" alt="OneLogin Applications Parameters"><figcaption><p>OneLogin Applications Parameters</p></figcaption></figure>
 

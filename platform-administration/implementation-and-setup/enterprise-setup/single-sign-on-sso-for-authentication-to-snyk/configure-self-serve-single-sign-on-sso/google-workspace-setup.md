@@ -1,6 +1,6 @@
 # Google Workspace setup
 
-This example shows setting up an Google Workspace SAML application and connecting it to Snyk to facilitate SSO.
+This example shows setting up a Google Workspace SAML application and connecting it to Snyk to facilitate SSO.
 
 For details in addition to the information provided on this page, see [Set up your own custom SAML app](https://support.google.com/a/answer/6087519).
 
@@ -18,11 +18,11 @@ Start by logging into the Google Workspace [admin area](https://admin.google.com
 4.  Download the certificate and open it in your preferred text editor.
 
     <figure><img src="../../../../.gitbook/assets/4.png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
-5.  Navigate to the Snyk portal, login and from the drop down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
+5.  Navigate to the Snyk portal, log in, and from the dropdown at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
 
     <figure><img src="../../../../.gitbook/assets/1.png" alt="Open group view in Snyk"><figcaption><p>Open group view in Snyk</p></figcaption></figure>
 6.  Click on **SSO**, scroll down to step 2, and paste the Google SSO URL from step 4 into **Sign in URL** and the certificate in your text editor into **X509 signing certificate**.\
-    Add the domain name(s) you are configuring this connection for in **Email domains and subdomains that need SSO access**.\
+    Add the domain names you are configuring this connection for in **Email domains and subdomains that need SSO access**.\
     Verify if an **IdP-initiated workflow** should be enabled and then save your modifications
 
     <figure><img src="../../../../.gitbook/assets/6.png" alt="Enter details from Google Workspace"><figcaption><p>Enter details from Google Workspace</p></figcaption></figure>

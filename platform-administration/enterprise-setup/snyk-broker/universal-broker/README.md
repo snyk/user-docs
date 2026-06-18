@@ -8,7 +8,7 @@ A deployment can support multiple connections of any type, as shown in the diagr
 
 <figure><img src="../../../.gitbook/assets/image 5 (6).png" alt=""><figcaption><p>Universal Broker deployment example</p></figcaption></figure>
 
-Connections are integrated with Organizations to provide access to your private resources for the appropriate Snyk Organization(s). These Organizations can be in the same or different Snyk Groups.
+Connections are integrated with Organizations to provide access to your private resources for the appropriate Snyk Organizations. These Organizations can be in the same or different Snyk Groups.
 
 In the diagram, Group 1 includes Organizations A through D, and Group 2 includes Organizations E and F.
 

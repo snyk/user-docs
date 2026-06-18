@@ -4,13 +4,13 @@ Before installing, review the [prerequisites](./) and the general instructions f
 
 This integration is useful to ensure a secure connection with your on-premise Bitbucket deployment.
 
-This page describes two distinct authentication schemes: using [Basic Auth](bitbucket-server-data-center-install-and-configure-using-docker.md#configure-broker-to-be-used-with-bitbucket-using-basic-auth) and [using an API token](bitbucket-server-data-center-install-and-configure-using-docker.md#configure-broker-to-be-used-with-bitbucket-using-an-api-token). Your Bitbucket Server settings might preclude Basic Auth usage, in which case Bearer Auth is preferred.
+This page describes two distinct authentication schemes: using [Basic Auth](bitbucket-server-data-center-install-and-configure-using-docker.md#configure-broker-to-be-used-with-bitbucket-using-basic-auth) and [using an API token](bitbucket-server-data-center-install-and-configure-using-docker.md#configure-broker-to-be-used-with-bitbucket-using-an-api-token). Your Bitbucket Server settings might preclude use of Basic Auth, in which case Bearer Auth is preferred.
 
 ## Configure Broker to be used with Bitbucket using Basic Auth
 
 The following explains how to configure Snyk Broker to use the Broker Client with a Bitbucket Server deployment.
 
-To use the Snyk Broker Client with BitBucket, run `docker pull snyk/broker:bitbucket-server`. Refer to [BitBucket Server/Data Center - environment variables](../../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker-basic-auth.md) for Snyk Broker for definitions of the environment variables.
+To use the Snyk Broker Client with Bitbucket, run `docker pull snyk/broker:bitbucket-server`. Refer to [BitBucket Server/Data Center - environment variables](../../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker-basic-auth.md) for Snyk Broker for definitions of the environment variables.
 
 If necessary, navigate to the [Advanced configuration page](../../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/) and make any configuration changes needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Bitbucket instance is using a private certificate, and setting up [proxy support](../../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/proxy-support-with-docker.md).
 
@@ -48,7 +48,7 @@ Snyk Essentials is set by default to **`false`**. Enable it by setting the flag 
 
 The following explains how to configure Snyk Broker to use the Broker Client with a Bitbucket Server deployment using an API token.
 
-To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:bitbucket-server-bearer-auth`. For definitions of the environment variables, refer to [Bitbucket Server/Data Center - environment variables for Snyk Broker Basic Auth](../../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker-basic-auth.md) and [Bitbucket Server/Data Center - environment variables for Snyk Broker Personal Access Token (PAT)](../../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker-personal-access-token-pat.md).
+To use the Snyk Broker Client with Bitbucket, **run** `docker pull snyk/broker:bitbucket-server-bearer-auth`. For definitions of the environment variables, refer to [Bitbucket Server/Data Center - environment variables for Snyk Broker Basic Auth](../../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker-basic-auth.md) and [Bitbucket Server/Data Center - environment variables for Snyk Broker Personal Access Token (PAT)](../../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/bitbucket-server-data-center-environment-variables-for-snyk-broker-personal-access-token-pat.md).
 
 If necessary, go to the [Advanced configuration page](../../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/) and make any configuration changes needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Bitbucket instance is using a private certificate, and setting up [proxy support](../../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/proxy-support-with-docker.md).
 
@@ -79,9 +79,9 @@ Snyk Essentials is set by default to `false`. Enable it by setting the flag to `
 
 Paste the Broker Client configuration to start the Broker Client container.
 
-Once the container is up, the Bitbucket Integrations page shows the connection to Bitbucket, and you can `Add Projects`
+After the container is up, the Bitbucket Integrations page shows the connection to Bitbucket, and you can `Add Projects`.
 
-## Basic troubleshooting for Broker with BitBucket
+## Basic troubleshooting for Broker with Bitbucket
 
 * Run `docker logs <container id>` to look for any errors, where `container id` is the Bitbucket Broker container ID.
 * Ensure relevant ports are exposed to Bitbucket.

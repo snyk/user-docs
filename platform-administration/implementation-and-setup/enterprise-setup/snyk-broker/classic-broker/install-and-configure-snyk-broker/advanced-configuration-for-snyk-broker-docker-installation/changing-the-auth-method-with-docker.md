@@ -28,7 +28,7 @@ For Artifactory, the auth method is configured in the `.env` file by default:
 ARTIFACTORY_URL=<username>:<password>@<yourdomain.artifactory.com>/artifactory
 ```
 
-For GitHub, the auth meth is part of the `origin` field in the `accept.json` file:
+For GitHub, the auth method is part of the `origin` field in the `accept.json` file:
 
 ```json
 {
@@ -42,7 +42,7 @@ For GitHub, the auth meth is part of the `origin` field in the `accept.json` fil
 }
 ```
 
-You can override the authentication method. Valid values for `scheme` are `bearer`, `token`, and `basic`, which set the Authorization header to `Bearer`, `Token`, and `Basic` respectively. If a bearer token is preferred, the `accept.json` file can be configured as such:
+You can override the authentication method. Valid values for `scheme` are `bearer`, `token`, and `basic`, which set the Authorization header to `Bearer`, `Token`, and `Basic` respectively. If you prefer a bearer token, configure the `accept.json` file as follows:
 
 ```json
 {

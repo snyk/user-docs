@@ -25,7 +25,7 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
 7.  Scroll further down and copy the **Single Signon Service** details.
 
     <figure><img src="../../../../.gitbook/assets/5 (6).png" alt="Copy the Single Signon Service details"><figcaption><p>Copy the Single Signon Service details</p></figcaption></figure>
-8.  Return to the the Snyk portal and paste the single sign-in URL copied at step 2 into the **Sign in URL** field. \\
+8.  Return to the Snyk portal and paste the single sign-in URL copied at step 2 into the **Sign in URL** field. \\
 
     <figure><img src="../../../../.gitbook/assets/single-sign-on-URL-field.png" alt="Paste Sign in URL"><figcaption><p>Paste Sign in URL</p></figcaption></figure>
 9.  Open the downloaded certificate in your preferred text editor, copy the text and paste it into the Snyk **X509 signing certificate** field, and add the relevant domains that are supported by this SSO connection.\
@@ -34,7 +34,7 @@ Before configuring your Ping Identity Application to use SSO with Snyk, obtain a
     <figure><img src="../../../../.gitbook/assets/Screenshot 2023-09-05 at 11.01.53 AM.png" alt="Enter the Ping Identity details"><figcaption><p>Enter the Ping Identity details</p></figcaption></figure>
 10. In Ping Identity, select **Attribute mappings** and click the pencil to edit.
 
-    <figure><img src="../../../../.gitbook/assets/6 (4).png" alt="Edit attribue mappings"><figcaption><p>Edit attribue mappings</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/6 (4).png" alt="Edit attribute mappings"><figcaption><p>Edit attribue mappings</p></figcaption></figure>
 11. Click the cog icon and add the following attributes:
 
     **email**: Email Address\

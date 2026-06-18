@@ -14,4 +14,4 @@ You can share credentials references across connections by selecting a credentia
 
 After the connection is created, run `snyk-broker-config workflows connections integrate` and select the desired deployment and connection. Then enter the Organization ID for the Organization with which you want to integrate. For details, see [Integrate a connection with an Organization](../../../implementation-and-setup/enterprise-setup/snyk-broker/universal-broker/setting-up-and-integrating-your-universal-broker-connections.md#integrate-a-connection-with-an-organization).
 
-If you integrate a connection already integrated with an Organization, the previous integration will be lost in favor of the new one. Be sure to paste the correct Organization ID.
+If you integrate a connection already integrated with an Organization, the previous integration is lost in favor of the new one. Be sure to paste the correct Organization ID.

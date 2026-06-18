@@ -1,10 +1,10 @@
 # Set up Snyk Single Sign-On (SSO)
 
-Set up Single Sign-On (SSO) to allow your developers and teams easy access to Snyk through your existing SSO provider.
+Set up Single Sign-On (SSO) to give your developers and teams access to Snyk through your existing SSO provider.
 
 The information you need to establish trust between Snyk and the identity provider depends on which type of SSO you are using.
 
-Ensure you have at least one Group and Organization to indicate where new users will be assigned. For details, see [Manage Groups and Organizations](../../../snyk-platform-administration/groups-and-organizations/).
+Ensure you have at least one Group and Organization to indicate where Snyk assigns new users. For details, see [Manage Groups and Organizations](../../../snyk-platform-administration/groups-and-organizations/).
 
 {% hint style="info" %}
 After you gather the needed information identified in the following sections, create a support ticket to request SSO setup.
@@ -22,7 +22,7 @@ The process of establishing trust between your identity provider (IdP) and Snyk 
 * Use the link provided by Snyk to generate a payload.
 * After Snyk finalizes the connection, confirm the login process is working correctly.
 
-Users are provisioned to Snyk when they log in. If an invitation is required, users may only see a list of your Organizations until the admin adds them to the appropriate Organizations.
+Snyk provisions users when they log in. If an invitation is required, users see only a list of your Organizations until the admin adds them to the appropriate Organizations.
 
 After SSO is configured both from Snyk and your company's network, a trust relationship is established with Snyk, Auth0 (on behalf of Snyk), and your network. Any sensitive data is encrypted and stored in Auth0 only for the purposes of enabling user logins.
 
@@ -172,7 +172,7 @@ To complete your login:
 
 ## Resources for SSO setup
 
-These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on. Please make sure you replace any Snyk URL with the correct regional environment per the tables above.
+These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on. Ensure you replace any Snyk URL with the correct regional environment per the preceding tables.
 
 {% file src="../../../.gitbook/assets/SSO Azure Worksheet (3).pdf" %}
 

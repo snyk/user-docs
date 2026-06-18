@@ -2,7 +2,7 @@
 
 This page provides an example of using the API to set up a GitHub connection with the Universal Broker. Repeat connecting your Organization for as many integrations as needed.
 
-Using the `snyk-broker-config` CLI tool is recommended for an easier experience. The API allows for automation and more control, and also requires a clear understanding of Broker deployments, credentials, connections, and integrations.
+Snyk recommends using the `snyk-broker-config` CLI tool for an easier experience. The API allows for automation and more control, and also requires a clear understanding of Broker deployments, credentials, connections, and integrations.
 
 {% hint style="info" %}
 In any of the calls that follow, replace `api.snyk.io` with your regional equivalent if necessary, for example, `api.eu.snyk.io`. For a list of URLs, see [API URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#api-urls).
@@ -121,7 +121,7 @@ Use the `CLIENT_ID` and `CLIENT_SECRET` values returned when you installed the B
 snyk/broker:universal
 </code></pre></td></tr></tbody></table>
 
-When the command is running, you should get the following message in the output:
+When the command is running, you get the following message in the output:
 
 <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>{"name":"snyk-broker","hostname":"c918a4e1535a","pid":1,"level":30,"msg":"Found deployment 12345678-1234-1234-1234-123456789012. Waiting for connections. (polling)","time":"2024-06-18T20:15:20.572Z","v":0}
 </code></pre></td></tr></tbody></table>

@@ -4,7 +4,7 @@ Beginning with version `2.8.0` of the Snyk Broker Helm Chart, external secrets a
 
 To enable this functionality, set `useExternalSecrets` to `true` in `values.yaml` or `--set externalSecrets=true`.
 
-To obtain a list of required secrets, perform a dry run of a Helm installation. This will not make any changes to your Kubernetes environment, but does require the following:
+To obtain a list of required secrets, perform a dry run of a Helm installation. This does not make any changes to your Kubernetes environment, but does require the following:
 
 ```
 helm install snyk-broker-chart \
@@ -14,7 +14,7 @@ helm install snyk-broker-chart \
   --dry-run=client
 ```
 
-A list of secrets with their expected names and values will be generated. The following example uses `scmType=nexus` :
+Snyk generates a list of secrets with their expected names and values. The following example uses `scmType=nexus`:
 
 ```
 ### Secret Creation Disabled ###
@@ -28,7 +28,7 @@ Ensure secrets are present on your cluster in the default namespace:
 -> nexus-broker-client-validation-url-snyk-broker-chart:nexus-broker-client-validation-url <BROKER_CLIENT_VALIDATION_URL>
 ```
 
-In this example, four secrets must exist within the same namespace to which the Broker will be installed, each containing one key-value pair. Any values that are shown in `<>` characters are indicators to add your own secret data.
+In this example, four secrets must exist in the same namespace to which the Broker is installed, each containing one key-value pair. Any values shown in `<>` characters are indicators to add your own secret data.
 
 ## Renaming secrets and keys
 
@@ -64,16 +64,16 @@ brokerTokenSecret:
   key: org-x-broker-token
 ```
 
-The Helm Chart will reference the contents under the `org-x-broker-token` key in Secret `snyk-broker-secrets` for the Broker token.
+The Helm Chart references the contents under the `org-x-broker-token` key in Secret `snyk-broker-secrets` for the Broker token.
 
 ## Partial external secrets
 
-When `useExternalSecrets` is true, the Broker Helm Chart will check whether a value is provided for a secret (for example, `brokerToken=<your-broker-token>`)
+When `useExternalSecrets` is true, the Broker Helm Chart checks whether you provide a value for a secret (for example, `brokerToken=<your-broker-token>`)
 
 * If a value exists, create a secret as usual.
 * If no value exists, look for an external secret.
 
-By this means, some secrets may be controlled by the Broker Helm chart, and others controlled externally:
+By this means, the Broker Helm chart can control some secrets, and you can control others externally:
 
 ```
 scmType: github-com
@@ -82,12 +82,12 @@ useExternalSecrets: true
 githubToken: ""
 ```
 
-This set of values will:
+This set of values does the following:
 
-* Create a secret for the provided Broker token
-* Reference an external secret for the required GitHub token
+* Creates a secret for the provided Broker token
+* References an external secret for the required GitHub token
 
-Performing a dry run of a Helm installation will provide the required secret names and keys:
+Performing a dry run of a Helm installation provides the required secret names and keys:
 
 ```
 ### Secret Creation Disabled ###
@@ -102,7 +102,7 @@ Note the Broker token secret is excluded from this list as a value is directly p
 
 ## Using a single external secret with multiple keys
 
-A single Kubernetes secret may contain all required credentials for the Snyk Broker to operate. Using a Broker of type `nexus` as an example, assume this secret is present in Kubernetes:
+A single Kubernetes secret can contain all required credentials for the Snyk Broker to operate. Using a Broker of type `nexus` as an example, assume this secret is present in Kubernetes:
 
 ```
 apiVersion: v1

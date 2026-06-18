@@ -57,4 +57,4 @@ If you wish to add signature verification of the incoming Snyk request:
 1. Download the **Signing certificate** at step 1 of the Snyk SSO settings.
 2. Use the following openssl command to convert it to .cer-format `openssl x509 -outform DER -in snyk.pem -out snyk.cer`
 3. At the bottom of the **SAML Certificates** settings of your SSO app in Active Directory, click **Edit** next to **Verification certificates.**
-4. Check **Require verification certificates** and upload the certificate from the output of the above openssl command and click **Save**.
+4. Check **Require verification certificates** and upload the certificate from the output of the preceding openssl command and click **Save**.

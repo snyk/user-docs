@@ -58,7 +58,7 @@ Complex example: `https://alice:mypassword@acme.com: 8000`
 The URL that points to the base of your repositories within Nexus. By default, the broker assumes `BASE_NEXUS_URL`/nexus/content/ as the value.
 
 `RES_BODY_URL_SUB`\
-The URL of the Nexus instance, including `https://` and `/nexus/content` without basic auth credentials. Required for npm and Yarn integrations onl&#x79;**.** Must not end with a forward slash.
+The URL of the Nexus instance, including `https://` and `/nexus/content` without basic auth credentials. Required for npm and Yarn integrations only. Must not end with a forward slash.
 
 Examples:\
 `https://acme.com/nexus/content/groups`\
