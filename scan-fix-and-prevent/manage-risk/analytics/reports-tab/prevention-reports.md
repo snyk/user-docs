@@ -21,7 +21,7 @@ To use this report, you must ensure you have installed the following prerequisit
 * Visual Studio 2019, 2022 and Snyk Security Plugin 1.1.47 or newer
 * Eclipse 2023.12 or newer and Snyk Security plugin 2.1.0 or newer
 
-This report shows the adoption of Snyk testing in local development through the IDE plugins, using the CLI locally or incorporating Snyk Studio into agentic workflows. The report is available under the Change Report dropdown at the Group and Organization levels.
+This report shows the adoption of Snyk testing in local development through the IDE plugins, using the CLI locally or incorporating Snyk Studio into agentic workflows. The report is available under the **Change Report** dropdown at the Group and Organization levels.
 
 {% hint style="info" %}
 This report focuses on the local developer experience and does not include the use of CI/CD. In addition, it does not show Organizations or developers that have never used the CLI, IDE, or Snyk Studio (through MCP).
@@ -77,7 +77,7 @@ The following prerequisites and data limits apply:
   * Snyk Studio (MCP)
   * IDE
   * CLI
-* SARIF files greater than 500 KB will not be included in the report’s results.
+* SARIF files greater than 500 KB are not included in the report results.
 
 With this report, you get visibility into:
 
@@ -105,7 +105,7 @@ A fix is generated when these conditions are met:
 
 Severity overrides are applied, and custom severities are reflected in the report.
 
-Fixes and the fix rate can diverge. For example, if a developer or team gets numerous security findings that they do not fix, the fix rate may be lower than the total fixes. If a developer opens 5 branches, finds 5 issues, and fixes one of them, the fix rate is 20% and the total fixes are 1.
+Fixes and the fix rate can diverge. For example, if a developer or team gets numerous security findings that they do not fix, the fix rate may be lower than the total fixes. If a developer opens five branches, finds five issues, and fixes one of them, the fix rate is 20% and the total fixes are one.
 
 ## Pull request checks usage & performance report
 
@@ -115,7 +115,7 @@ Fixes and the fix rate can diverge. For example, if a developer or team gets num
 Snyk Pull request checks usage & performance report is in Generally Availability for Enterprise plan customers. For more information, visit [Plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-This report enables you to track and analyze the results and adoption of Snyk pull request checks.
+This report lets you track and analyze the results and adoption of Snyk pull request checks.
 
 By monitoring trends in successful, failed, and errored PR checks, AppSec teams can detect and investigate spikes in failures and identify source and target configurations that need attention. Comparing current adoption against a previous period also surfaces whether coverage is improving or regressing over time while identifying the coverage gaps that need to be addressed.
 
@@ -123,7 +123,7 @@ By monitoring trends in successful, failed, and errored PR checks, AppSec teams 
 
 High level metrics provide an overview of how often PR checks are passing along with how often checks are being marked as successful to override a failed status. The PR checks by status over time trend gives you a weekly view of PR check outcomes while additional views break these outcomes down by specific scan types.
 
-A high rate of failed PR checks may indicate emerging risk areas while a high rate of overridden checks may signal that developers are bypassing security gates and warrant further investigation. An increasing success rate over time can demonstrate that developers are producing more secure code earlier in your software development life cycle.
+A high rate of failed PR checks may indicate emerging risk areas while a high rate of overridden checks may signal that developers are bypassing security gates and warrant further investigation. An increasing success rate over time can demonstrate that developers are producing more secure code earlier in your software development lifecycle.
 
 <figure><img src="../../../.gitbook/assets/unknown (24).png" alt=""><figcaption></figcaption></figure>
 
@@ -151,7 +151,7 @@ PR check enablement for all targets and projects imported through an integration
 
 **Integrations With Scan Enabled** under the Group view counts enablement by integration settings for all integrations that exist under all the organizations under that group.
 
-Repository status will be "N/A" under the repository view when a repository is new to Snyk or if the specific Snyk product does not apply (there are no projects for that product type imported for the target repository).
+Repository status is "N/A" under the repository view when a repository is new to Snyk or if the specific Snyk product does not apply (there are no projects for that product type imported for the target repository).
 
 <figure><img src="../../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
 
@@ -248,7 +248,7 @@ Snyk Generated Pull Requests report is available only for Enterprise plan custom
 
 ### Access the report
 
-The Generated Pull Requests report can be accessed at both Group and Organization level from the **Change Report** drop down in the Reports menu.
+You can access the Generated Pull Requests report at both Group and Organization level from the **Change Report** dropdown in the Reports menu.
 
 This report type provides an overview of how [Fix](../../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-fix-prs.md), [Backlog](../../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-backlog-prs-for-previously-known-vulnerabilities.md), and [Upgrade PRs](../../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades.md) are used and highlights the efficiency of PR merges.
 
@@ -262,7 +262,7 @@ The analytics report covers the following:
 * Visibility of issues.
 * Breakdown by repository for PR status.
 
-The report summary enables you to check the total number of Snyk PRs created, the total pull requests merged, and the mean time to merge for those pull requests.
+The report summary lets you check the total number of Snyk PRs created, the total pull requests merged, and the mean time to merge for those pull requests.
 
 ### Report features
 
@@ -284,4 +284,4 @@ The **Projects/Org/Repository** table displays the number of Total, Open, Merged
 
 Select a repository name to open a modal containing additional metrics for that specific repository.
 
-The repository breakdown details the number of PRs segmented by PR type and PR status. Merge rate is presented as a percentage for each row. It also lists the Projects within that repository, with the number of issues categorised by severity.
+The repository breakdown details the number of PRs segmented by PR type and PR status. Merge rate is presented as a percentage for each row. It also lists the Projects in that repository, with the number of issues categorized by severity.

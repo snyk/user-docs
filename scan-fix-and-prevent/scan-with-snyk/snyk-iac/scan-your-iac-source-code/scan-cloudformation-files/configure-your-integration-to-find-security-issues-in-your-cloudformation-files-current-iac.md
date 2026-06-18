@@ -1,6 +1,6 @@
 # Configure your integration to find security issues in your CloudFormation files
 
-Snyk tests and monitors CloudFormation files from source code repositories. It gives advice on how to better secure cloud environments by catching misconfigurations before they are pushed to production, along with assistance on how best to fix them.
+Snyk tests and monitors CloudFormation files from source code repositories. It gives advice on how to better secure cloud environments by catching misconfigurations before you push them to production, along with assistance on how best to fix them.
 
 ## Supported Git repositories and CloudFormation file formats
 
@@ -13,7 +13,7 @@ Scanning CloudFormation provides security feedback on everything that is statica
 ### Prerequisites for scanning CloudFormation files
 
 * You must be an administrator for the Organization you are configuring in Snyk.
-* Ensure you have already integrated your Git repository, For details, see [Git repository (SCM) integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
+* Ensure you have already integrated your Git repository. For details, see [Git repository (SCM) integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
 
 ### Configure Snyk to scan CloudFormation files
 

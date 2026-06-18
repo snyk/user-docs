@@ -15,21 +15,21 @@ The Education reports section includes the following reports:
 Learn Engagement report is available only in the Learning Management add-on offering. For more information, contact your Snyk account team.
 {% endhint %}
 
-The goal of the engagement report is to provide insights into your security education and training programs overall progress, and give you insights into which parts of your Organization are engaging with Snyk Learn content. You can use the data and insights to better optimise your program, find security champions, generate reports for compliance and show progress to your executive sponsors.
+The goal of the engagement report is to provide insights into your security education and training programs overall progress, and give you insights into which parts of your Organization are engaging with Snyk Learn content. You can use the data and insights to better optimize your program, find security champions, generate reports for compliance, and show progress to your executive sponsors.
 
 ### Access the report
 
-The Learn Engagement report can be accessed at the Group level from the **Change Report** dropdown in the Reports menu.
+You can access the Learn Engagement report at the Group level from the **Change Report** dropdown in the Reports menu.
 
 ### Report features
 
-The report allows you to track:
+The report lets you track:
 
 * Learn engagement snapshot analytics
 * Assignment Progress
 * Adoption rankings
 * Content usage breakdown
-* Filtering: custom time periods, users, organizations, organization role, and Lesson titles.
+* Filtering: custom time periods, users, organizations, organization role, and Lesson titles
 
 {% hint style="info" %}
 [Learning Programs](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/developer-education-with-snyk-learn/snyk-learn/snyk-learn-learning-programs) are not included in the Engagement Report
@@ -43,7 +43,7 @@ The first section of the report focuses on showing key engagement statistics and
 
 ### Adoption rankings
 
-The adoption ranking section shows your organization and individual user engagement with Snyk Learn. This is ranked by "Lessons complete" and also has the estimated duration the org/user has spent on Snyk Learn lessons. Estimated duration calculated using the estimated duration presented at the start of each lesson, and includes estimated time from any progress on "in-progress" lessons in the selected period.
+The adoption ranking section shows your organization and individual user engagement with Snyk Learn. This is ranked by "Lessons complete" and also has the estimated duration the org/user has spent on Snyk Learn lessons. Snyk calculates the estimated duration using the estimated duration presented at the start of each lesson, and includes estimated time from any progress on "in-progress" lessons in the selected period.
 
 {% hint style="info" %}
 The user level adoption ranking is a great way to identify potential security champions who are proactively engaging in security education and training.
@@ -67,17 +67,17 @@ The goal of the impact and opportunities report is to provide insights into the 
 
 ### Access the report
 
-The Learning Impact & Opportunities report can be accessed at the Group level from the **Change Report** dropdown in the Reports menu.
+You can access the Learning Impact and Opportunities report at the Group level from the **Change Report** dropdown in the Reports menu.
 
 ### Report features
 
-The report allows you to track:
+The report lets you track:
 
 * Impact of education and training on code issue remediation
 * Impact of education and training on code issue prevention
 * Recommendations for further training opportunities
-* Coverage rates of users trained in identified training opportunities.
-* Filtering: custom time periods, users, organizations, lesson title, CWE, issue severity.
+* Coverage rates of users trained in identified training opportunities
+* Filtering: custom time periods, users, organizations, lesson title, CWE, issue severity
 
 ### Learning impact snapshot
 
@@ -91,12 +91,12 @@ The "Learning Impact on Issue Prevention" chart measures the relationship betwee
 
 ### Top 10 CWEs - open issues / issues introduced in the period
 
-This section of the report shows recommendation for training for your top open code issues, and most frequently introduced issues, by volume. Note issues are only included when Snyk Learn has a related lesson for the CWE category.
+This section of the report shows recommendations for training for your top open code issues, and most frequently introduced issues, by volume. Note that Snyk includes issues only when Snyk Learn has a related lesson for the CWE category.
 
-You will see coverage for all users within organisation scope of the report filters. This shows you how many people have ever completed a related Snyk Learn lesson on the topic.
+You see coverage for all users in organization scope of the report filters. This shows you how many people have ever completed a related Snyk Learn lesson on the topic.
 
 <div><figure><img src="../../../.gitbook/assets/Screenshot 2025-10-23 at 14.12.24.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/Screenshot 2025-10-23 at 14.12.18.png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
-The recommendations in this section allow you to focus on the most impactful training opportunities. Use the filters to further customise the recommendations based on issue severity or for specific Organizations.
+The recommendations in this section let you focus on the most impactful training opportunities. Use the filters to further customize the recommendations based on issue severity or for specific Organizations.
 {% endhint %}

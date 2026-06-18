@@ -2,7 +2,7 @@
 
 Snyk defines an asset as a meaningful, real-world component in an application’s SDLC, where meaningful means either carries a risk or aggregates risk of other components (for example, repositories that contain packages), and real-world means that the concept exists outside of Snyk, for example, repository (which is a generally applicable term). In most cases, assets carry a risk or aggregate risk of other components, such as repositories that contain packages.
 
-Snyk Essentials inventory tabs are organizing your repository assets in meaningful ways, enabling you to:
+Snyk Essentials inventory tabs organize your repository assets in meaningful ways, letting you:
 
 * Gain full repository asset visibility from your SCM tools, including details about configured teams and repository code committers.
 * Track controls coverage for Snyk products.
@@ -15,7 +15,7 @@ Each line in the inventory represents an asset.
 
 ## Inventory tabs <a href="#inventory-layouts" id="inventory-layouts"></a>
 
-To get better context and clarity over your asset inventory, Snyk Essentials allows flexible structuring with inventory tabs. Snyk Essentials includes five inventory tabs and groups assets by different contexts. You can find all inventory tabs under the Inventory menu option at the Group level:
+To get better context and clarity over your asset inventory, Snyk Essentials lets you structure assets flexibly with inventory tabs. Snyk Essentials includes five inventory tabs and groups assets by different contexts. You can find all inventory tabs under the Inventory menu option at the Group level:
 
 * **Overview:** Provides quick insights into discovered repositories, enabling AppSec teams to effectively operationalize their program using Snyk.
 * **All Assets:** All the discovered assets are grouped by their type.
@@ -31,7 +31,7 @@ You can filter the information for all the inventory tabs and use any of the ava
 
 The Overview tab in Snyk Inventory provides insights into the discovered repositories, highlighting key features and characteristics such as the total number of discovered repositories and the distribution of tested and not tested repositories, the number of dormant repositories or coverage details based on the asset policies.
 
-Provides quick insights into discovered repositories, enabling AppSec teams to effectively operationalize their program using Snyk. This helps reduce coverage gaps, organize and leverage asset context, and ensure compliance with coverage policies.
+Provides quick insights into discovered repositories, enabling AppSec teams to effectively operationalize their program using Snyk. This helps reduce coverage gaps, organize and use asset context, and ensure compliance with coverage policies.
 
 #### Repositories tested
 
@@ -43,7 +43,7 @@ Use this widget to get a clear overview of all discovered repositories and see h
 
 Follow the next steps to remediate the coverage gaps:
 
-1. Click "Coverage gap" to see all affected repositories.
+1. Click **Coverage gap** to see all affected repositories.
 2. Determine the reasons for the policy non-compliance.
 3. Remediate and bring repositories into compliance.
 4. Set up an asset policy.
@@ -54,17 +54,17 @@ Use this widget to see all dormant repositories with critical and high-risk issu
 
 #### Languages with most issues
 
-Use this widget to identify the programming languages that often present issues within your codebase. If you hover over any of the listed languages, you can see and access the Snyk Learn training focused on setting up, integrating, and customizing the selected language.
+Use this widget to identify the programming languages that often present issues in your codebase. If you hover over any of the listed languages, you can see and access the Snyk Learn training focused on setting up, integrating, and customizing the selected language.
 
 #### Class A repositories with most high and critical issues
 
-Use this widget to see a maximum of top ten high-risk Class A repositories with the biggest impact on the business (class A). This tool helps your development team identify and prioritize remediation efforts with asset context. By addressing high-risk areas promptly, you improve the stability and security of your Project, ultimately enhancing software quality.
+Use this widget to see a maximum of the top 10 high-risk Class A repositories with the biggest impact on the business. This tool helps your development team identify and prioritize remediation efforts with asset context. By addressing high-risk areas promptly, you improve the stability and security of your Project, ultimately enhancing software quality.
 
 ### All Assets
 
 The **All Assets** tab under the Inventory menu provides a central view of all your assets, offering a comprehensive overview of your security posture. You can access a list of your assets and customize the view to meet your needs. Select the columns that you want to be visible, use filters to refine the information, and export the details to share them with others.
 
-This unified view allows you to efficiently monitor assets and prioritize remediation for stronger application security.
+This unified view lets you efficiently monitor assets and prioritize remediation for stronger application security.
 
 ### Asset Hierarchy
 
@@ -73,17 +73,17 @@ Assets are sorted by issue counts, and where applicable, package assets are list
 
 The **Asset Hierarchy** is visible only when no filters are applied, allowing you to see a clear, unfiltered view of your assets and their relationships.
 
-This layout helps in understanding the relationship between different assets and their associated issues, providing a comprehensive view of the asset landscape within your Organization.
+This layout helps in understanding the relationship between different assets and their associated issues, providing a comprehensive view of the asset landscape in your Organization.
 
 ### Teams
 
-The **Teams** tab in Snyk **Inventory** organizes assets from SCM repositories by team. Assets are grouped here according to the teams assigned to them within the SCM organizations.
+The **Teams** tab in Snyk **Inventory** organizes assets from SCM repositories by team. Assets are grouped here according to the teams assigned to them in the SCM organizations.
 
-Only SCM organizations that have teams and repositories assigned to a team will appear in this layout. This helps in visualizing and managing repository assets according to team structures, making it easier to track and prioritize security efforts based on team responsibilities.
+Only SCM organizations that have teams and repositories assigned to a team appear in this layout. This helps in visualizing and managing repository assets according to team structures, making it easier to track and prioritize security efforts based on team responsibilities.
 
 ### Technology
 
-The **Technology** tab in Snyk **Inventory** groups SCM repository assets by the technology they use, such as programming languages and frameworks. This categorization is detected and tagged by Snyk Essentials, allowing you to easily identify and manage assets based on the used technologies.
+The **Technology** tab in Snyk **Inventory** groups SCM repository assets by the technology they use, such as programming languages and frameworks. Snyk Essentials detects and tags this categorization, letting you identify and manage assets based on the used technologies.
 
 This feature helps in understanding the technological landscape of your repositories and can be useful for prioritizing security efforts and managing risks associated with different technologies.
 
@@ -96,7 +96,7 @@ Assets in the inventory are presented with key attributes in the following colum
 * **Asset** - The name of the repository asset, scanned artifact, and the Git remote URL, if available. Scanned artifacts are missing Git remote URLs.
 * **Issue** - The number of issue counts on open assets aggregated across all relevant tools of the same severity of the asset itself and its child assets or packages. The severity level is classified into **C** (critical), **H** (high), **M** (medium), and **L** (low).
 * **Controls** - A report detailing all products detected by the Snyk Essentials on a specific repository asset and all products that should be but are not covered by Snyk Essentials.
-* **Tags** - You will be able to add a unique key-value tag to provide a more powerful and granular context for your assets. This attribute lets you attach specific, unique metadata to your assets, which enables precise filtering, robust policy creation, and alignment with your internal systems.
+* **Tags** - Add a unique key-value tag to provide a more powerful and granular context for your assets. This attribute lets you attach specific, unique metadata to your assets, which enables precise filtering, robust policy creation, and alignment with your internal systems.
 * **Labels** - Snyk Essentials automatically labels repository assets with information about the used technologies (Python, Terraform, and so on) in the repository, and repository latest updates. You can also use policies to label repository assets.
 * **Developers** - Includes the SCM profile details for code committers to the repository asset.
 * **Class** - Reflects the business criticality of the asset from A (most critical) to D (least critical), as defined by the user in the Policies view. You can manually change the class or automatically change it by applying a policy. You can lock the value you have manually set for a Class to prevent policies from overriding it.
@@ -109,7 +109,7 @@ Assets in the inventory are presented with key attributes in the following colum
 * **Actions** - Provides a workflow to set up an SCM integration, enriching the asset context with information such as labels, developers, and repository freshness. This use case is available when a Group-level integration is not configured.
 
 {% hint style="info" %}
-The Clusters column is hidden by default. To enable it, click Columns, select Clusters from the dropdown list, then click Apply to save the changes.
+The Clusters column is hidden by default. To enable it, click **Columns**, select **Clusters** from the dropdown list, then click **Apply** to save the changes.
 {% endhint %}
 
 ### **Asset Sources, Types, and Scanned Artifacts**
@@ -138,4 +138,4 @@ You can see the scanned artifacts in the Inventory Type view. The scanned artifa
 
 Packages are defined as software or libraries that are managed by package management systems.
 
-Package assets are created when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This enables Snyk Essentials to identify and analyze the security vulnerabilities of the packages used within a Project, offering insights into possible risk exposures and providing recommendations for mitigation.
+Snyk creates package assets when you scan the dependencies of a Project through package management systems or by using the Snyk CLI. This lets Snyk Essentials identify and analyze the security vulnerabilities of the packages used in a Project, offering insights into possible risk exposures and providing recommendations for mitigation.

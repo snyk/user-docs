@@ -11,7 +11,7 @@ This FAQ section addresses common concerns about the Snyk Code Consistent Identi
 
 Ignores only work within the Organization where they're defined. You need to run tests in the Organization where you stored an ignore for it to be taken into account. This is also valid for Snyk IDE and CLI environments where developers work in repositories that span multiple Snyk organizations.
 
-Depending on feedback during the Early Access period, we may offer a broader scope for ignores beyond an individual Organization.
+Depending on feedback during the Early Access period, we might offer a broader scope for ignores beyond an individual Organization.
 
 ## Existing DeepCode inline ignores (legacy) are not supported or migrated
 
@@ -23,7 +23,7 @@ Recreate these ignores using the new Snyk Code Consistent Ignore process, either
 
 ## Repository renames may result in ignores being lost
 
-Snyk may fail to complete testing after you rename a repository, depending on whether the underlying SCM supports redirects. If Snyk successfully runs subsequent tests (e.g., GitHub), ignores may not be applied.
+Snyk might fail to complete testing after you rename a repository, depending on whether the underlying SCM supports redirects. If Snyk successfully runs subsequent tests (for example, GitHub), ignores might not be applied.
 
 ### Recommendation
 
@@ -36,7 +36,7 @@ Snyk may fail to complete testing after you rename a repository, depending on wh
 1. Delete all targets associated with that repository.
 2. Reimport the newly renamed repository.
 
-Previous Consistent Ignores are applied to the newly named repository. New clones in IDEs/CLI that reference the new name take into account the ignores, even with the old git URL, in case some developers haven't updated their remote repositories.
+Previous Consistent Ignores are applied to the newly named repository. New clones in IDEs/CLI that reference the new name take into account the ignores, even with the old git URL, in case some developers have not updated their remote repositories.
 
 ## Granular ignores
 
@@ -46,8 +46,8 @@ If you have specific use cases that require this functionality, reach out to you
 
 ## Project attribute policies
 
-Policies defined against Project attributes will continue to work within Snyk Projects where the attributes match. The policies are not applied across the repository to other Projects or in Snyk IDE, CLI, or PR checks flows. To apply policies across Projects and branches for the same repository, define them against Organizations.
+Policies defined against Project attributes continue to work within Snyk Projects where the attributes match. The policies are not applied across the repository to other Projects or in Snyk IDE, CLI, or PR checks flows. To apply policies across Projects and branches for the same repository, define them against Organizations.
 
 ## CI/CD support for snyk test --code
 
-Most native Snyk CI/CD plugins (e.g., Jenkins, AWS Pipelines) do not support Snyk Code. As a workaround, some users have been applying the `--code` flag to the standard `snyk test` command to invoke a Snyk Code scan instead of a Snyk Open Source scan. Snyk Code Consistent Ignores does not support this workflow.
+Most native Snyk CI/CD plugins (for example, Jenkins, AWS Pipelines) do not support Snyk Code. As a workaround, some users have been applying the `--code` flag to the standard `snyk test` command to invoke a Snyk Code scan instead of a Snyk Open Source scan. Snyk Code Consistent Ignores does not support this workflow.

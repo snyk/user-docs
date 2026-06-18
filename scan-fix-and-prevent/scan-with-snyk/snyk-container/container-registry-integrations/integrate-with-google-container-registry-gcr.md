@@ -1,7 +1,7 @@
 # Integrate with Google Container Registry (GCR)
 
 {% hint style="warning" %}
-Google Container Registry (GCR) has been [officially deprecated](https://cloud.google.com/container-registry/docs/release-notes#May_15_2023) by Google and is no longer supported. Google has replaced GCR with the new Google Artifact Registry (GAR). All Snyk customers should **immediately** migrate to the [Snyk GAR integration](integrate-with-google-artifact-registry-gar.md). \
+Google Container Registry (GCR) has been [officially deprecated](https://cloud.google.com/container-registry/docs/release-notes#May_15_2023) by Google and is no longer supported. Google has replaced GCR with the new Google Artifact Registry (GAR). All Snyk customers must **immediately** migrate to the [Snyk GAR integration](integrate-with-google-artifact-registry-gar.md). \
 \
 Note that Google currently redirects `gcr.io` paths to GAR. Your legacy Snyk GCR integration may continue to work if  the credentials provided to Snyk also have the `roles/artifactregistry.reader`  and `roles/resourcemanager.projects.list` roles authorized for them. However, this redirect may stop functioning in the future. We strongly recommend that you migrate to the [Snyk GAR integration](integrate-with-google-artifact-registry-gar.md) at the earliest to avoid any unwanted service interruptions.&#x20;
 {% endhint %}
@@ -16,7 +16,7 @@ From the relevant project in Google, ensure you have created a service account f
 
 To enable GCR permissions:
 
-1. Go to the Google Cloud Platform Console [Credentials](https://console.cloud.google.com/apis/credentials) page, select the Project that you want to integrate with, and then select setting up a new service account key.
+1. Navigate to the Google Cloud Platform Console [Credentials](https://console.cloud.google.com/apis/credentials) page, select the Project that you want to integrate with, and then select setting up a new service account key.
 2. From the view that opens choose the service account from the dropdown list that you created for this integration and configure a new key for that account with these values:
    * **Service account name** - assign a unique name for the account to help you remember its uses later on.
    * **Role** - Storage Object Viewer (roles/storage.objectViewer)
@@ -46,7 +46,7 @@ You must be onboarded to your Organization by an administrator and have configur
 
 Snyk tests and monitors Google Container Registry (GCR) container images by evaluating root folders and custom file locations.
 
-To add images from GAR:&#x20;
+To add images from GCR:&#x20;
 
 1. In the Snyk Web UI, navigate to the Organization you want to manage.
 2. Navigate to **Projects** > **Add Projects**. The list of integrations already configured in your account opens. The view displays all of the available images for the registry to which you connected, grouped by each of your repositories.
@@ -58,12 +58,12 @@ To add images from GAR:&#x20;
 
 When the import ends, a notification of success or failure appears at the top of the page. Click **Refresh** to view the **Projects** page with the newly imported images. The images are grouped by repository and linked individually to a detailed **Projects** page.
 
-You can now connect your Git repo to this Project in order to use your Dockerfile for enriched fix advice. For more information, see [Adding your Dockerfile and testing your base image](../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
+You can now connect your Git repository to this Project to use your Dockerfile for enriched fix advice. For more information, see [Adding your Dockerfile and testing your base image](../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md).
 
 GCR files are indicated with a unique icon. You can now filter to view only those Projects.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-31 at 18.06.20.png" alt=""><figcaption><p>Examples of GCR Projects</p></figcaption></figure>
 
 {% hint style="info" %}
-For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. You must re-import the image. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
+For application vulnerabilities in container images, a manual or recurring retest does not reflect any changes to the application. You must re-import the image. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}

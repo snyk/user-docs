@@ -1,6 +1,6 @@
 # View licenses
 
-The **Licenses** tab displays all licenses detected for your Projects, with summaries of all dependencies in your Projects and all of your Projects using the license. This allows you to see which Projects and dependencies have a license.&#x20;
+The **Licenses** tab displays all licenses detected for your Projects, with summaries of all dependencies in your Projects and all of your Projects using the license. This lets you see which Projects and dependencies have a license.&#x20;
 
 ## **Field details**
 
@@ -10,5 +10,5 @@ The **Licenses** tab displays all licenses detected for your Projects, with summ
 
 The actions appear at the top of the tab.
 
-* **Search for Licenses**: Enter free text and begins searching with the first character you type. You can also select multiple packages from the dropdown list that opens when you click the field. You can also click the **Select All** or **Deselect All** links that appear dynamically in the dropdown list.
+* **Search for Licenses**: Enter free text. Searching begins with the first character you type. You can also select multiple packages from the dropdown list that opens when you click the field. You can also click the **Select All** or **Deselect All** links that appear dynamically in the dropdown list.
 * **Export as CSV**: Export issue data in CSV file format.

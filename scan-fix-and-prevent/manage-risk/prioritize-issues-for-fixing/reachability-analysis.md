@@ -6,11 +6,11 @@
 Reachability analysis is in General Availability (GA) for specific [integrations and programming languages](reachability-analysis.md#supported-languages-and-integrations).
 {% endhint %}
 
-Snyk reachability analysis allows you to analyze risk by identifying whether your application is calling a code element (for example, functions, classes, modules, and more) related to the vulnerability, thus raising the chances of that vulnerability being exploited in the context of your application.
+Snyk reachability analysis lets you analyze risk by identifying whether your application is calling a code element (for example, functions, classes, modules, and more) related to the vulnerability, raising the chances of that vulnerability being exploited in the context of your application.
 
-Reachability analysis can be used as an indicator to make decisions, or as part of a broader risk-based prioritization approach using the Snyk Risk Score.
+You can use reachability analysis as an indicator to make decisions, or as part of a broader risk-based prioritization approach using the Snyk Risk Score.
 
-Snyk uses a combination of static program analysis and various AI techniques to determine the reachability of a given vulnerability, with validation conducted by security research experts. These capabilities enable Snyk to quickly analyze the code without requiring the application to be built prior to the scan.
+Snyk uses a combination of static program analysis and various AI techniques to determine the reachability of a given vulnerability, with validation conducted by security research experts. These capabilities enable Snyk to quickly analyze the code without requiring the application to be built before the scan.
 
 To use this feature, Snyk must analyze your source code. To learn more, visit [How Snyk handles your data](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).
 
@@ -21,8 +21,8 @@ Snyk uses a combination of security expert analysis, program analysis, and vario
 * Enriching vulnerabilities with the patches applied to fix them - as part of the Snyk vulnerability curation process, Snyk references the fix commit that the maintainer applied.
 * Related elements analysis - Based on the commit fix, Snyk uses DeepCode AI program analysis to analyze the code elements and other parameters related to the vulnerability.
 * Root Cause analysis - Snyk uses DeepCode AI and Natural Language Processing (NLP) techniques to automatically rank the related code elements by their chances of being the root cause of the vulnerability.
-* Reachability analysis - As issues are found in your application by a Snyk scan, the DeepCode program analysis engine is used to analyze the call graph of your application in relation to the call graph between the open-source dependencies used. A path between your application and a code element ranked as a root cause will yield a “Reachable” vulnerability.
-* Security experts supervision - Snyk security experts will manually verify and mark elements as root causes in order to make the entire analysis more accurate over time
+* Reachability analysis - As a Snyk scan finds issues in your application, the DeepCode program analysis engine analyzes the call graph of your application in relation to the call graph between the open-source dependencies used. A path between your application and a code element ranked as a root cause yields a “Reachable” vulnerability.
+* Security experts supervision - Snyk security experts manually verify and mark elements as root causes to make the entire analysis more accurate over time
 
 The following considerations related to false positives and false negatives apply to Reachable vulnerability analysis.
 
@@ -30,7 +30,7 @@ Program analysis requires a trade-off between accurate results, minimizing false
 
 To facilitate this trade-off, Snyk DeepCode analysis applies real-time decision-making to determine whether to under-approximate the set of reachable elements based on analysis of the likelihood that a reachable path will be found in a specific environment.
 
-For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. The agentic capability of Snyk analysis optimizes in order to retrieve the most accurate and complete result possible for a given code structure.
+For example, it is not always possible to give a precise answer when reflection programming is used. In such a case, neither returning a large set of false positives nor returning “Not reachable” will suffice. The agentic capability of Snyk analysis optimizes to retrieve the most accurate and complete result possible for a given code structure.
 
 {% hint style="info" %}
 Changes in the first-party code, in the vulnerability analysis, and enhancements in the SAST engine can impact the results. Therefore, vulnerabilities labeled as **Not path found** can change to **Reachable** over time.
@@ -160,7 +160,7 @@ After it is identified, a vulnerability has one of the following reachability st
 * `NOT APPLICABLE` - Reachability is not supported for this vulnerability.
 
 {% hint style="info" %}
-A vulnerability with the status `NO PATH FOUND` it does not mean that the vulnerability is completely unreachable or unexploitable.
+A vulnerability with the status `NO PATH FOUND` does not mean that the vulnerability is completely unreachable or unexploitable.
 {% endhint %}
 
 Reachability analysis status is available on the Project page, as part of the Risk Score, in the [Issues Detail report](../analytics/reports-tab/exposure-and-coverage-reports.md#issues-detail-report), and through the API endpoint [Get issues by Group ID](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/issues#groups-group_id-issues).
@@ -177,7 +177,7 @@ For Projects that have been imported through a CLI monitor, the Reachability sta
 
 ### Reachability analysis as part of the Risk Score
 
-[Risk Score](risk-score.md) helps you apply holistic risk-based prioritization that combines multiple factors, associated with either the vulnerability or the context of your application. Reachability analysis is such a contextual factor that will significantly increase the overall score.
+[Risk Score](risk-score.md) helps you apply holistic risk-based prioritization that combines multiple factors, associated with either the vulnerability or the context of your application. Reachability analysis is such a contextual factor that significantly increases the overall score.
 
 Risk Score is available on the Projects page and through the API and Reports.
 
@@ -190,7 +190,7 @@ Risk Score is available on the Projects page and through the API and Reports.
 Snyk supports Reachability CLI version `1.1301.0` and greater. To perform Reachability analysis, use the `--reachability=true` option.
 
 {% hint style="info" %}
-When using `--reachability`, Snyk returns a new findings schema. Some legacy fields may not be available in this schema. Before using, please first check your usage to ensure automations do not fail.
+When using `--reachability`, Snyk returns a new findings schema. Some legacy fields might not be available in this schema. Before using, first check your usage to ensure automations do not fail.
 {% endhint %}
 
 By default, Snyk uploads source code from the current working directory for Reachability analysis. To specify source files for analysis in a separate directory, use the `--source-dir` option.

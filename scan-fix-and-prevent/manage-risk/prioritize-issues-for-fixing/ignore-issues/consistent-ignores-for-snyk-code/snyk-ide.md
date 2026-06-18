@@ -1,6 +1,6 @@
 # Consistent Ignores for Snyk Code IDE
 
-When you run tests in any of the [supported Snyk IDE plugins](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions), the plugins will take into account your ignores.
+When you run tests in any of the [supported Snyk IDE plugins](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions), the plugins take into account your ignores.
 
 ## Minimum version required
 

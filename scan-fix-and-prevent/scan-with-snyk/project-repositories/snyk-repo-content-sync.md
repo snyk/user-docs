@@ -31,6 +31,6 @@ Push events trigger synchronization using webhooks. Snyk creates a webhook when 
 
 ## Considerations for Early Access
 
-* Ignore history: For file renames, path changes, or .Net Framework upgrades, Snyk treats the change as a delete and create action. Snyk does not carry over the Project history and previous ignores to the new Project.
+* Ignore history: For file renames, path changes, or .NET Framework upgrades, Snyk treats the change as a delete and create action. Snyk does not carry over the Project history and previous ignores to the new Project.
 * Manual deactivations: When you enable this feature, previously deactivated Projects remain inactive. To reactivate a Project, navigate to the relevant Snyk Project and click **Activate**.
 * PR checks: Snyk detects new Projects only when you merge them into the monitored branch. Snyk does not detect them during pull request checks.

@@ -12,16 +12,16 @@ Ignores are applied at the Organization level.
 
 ## Ignoring an issue <a href="#docs-internal-guid-328370e3-7fff-a6c7-193a-31d26381f4e0" id="docs-internal-guid-328370e3-7fff-a6c7-193a-31d26381f4e0"></a>
 
-To ignore an issue via the Snyk Web UI:
+To ignore an issue using the Snyk Web UI:
 
 1. Navigate to your Organization's Cloud tab.
 2. Select the issue you want to ignore.
-3.  Select the **Ignore** button.\
+3.  Select **Ignore**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/snyk-cloud-ignore-button.png" alt="The Ignore button in a cloud issue in the Snyk Web UI"><figcaption><p>The Ignore button in a coud issue in the Snyk Web UI</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/snyk-cloud-ignore-button.png" alt="The Ignore button in a cloud issue in the Snyk Web UI"><figcaption><p>The Ignore button in a cloud issue in the Snyk Web UI</p></figcaption></figure>
 4. Add a comment about why this issue is ignored.
-5.  From the **Ignore for** drop-down menu, set how long the issue should be ignored. You can permanently ignore an issue by selecting **Does not expire**, or you can ignore the issue for 14, 30, 60, or 90 days, or a custom time period.\
+5.  From the **Ignore for** dropdown menu, set how long to ignore the issue. You can permanently ignore an issue by selecting **Does not expire**, or you can ignore the issue for 14, 30, 60, or 90 days, or a custom time period.\
 
 
     <figure><img src="../../../../.gitbook/assets/snyk-cloud-ignore-settings.png" alt="Setting ignore details for a cloud issue in the Snyk Web UI"><figcaption><p>Setting ignore details for a cloud issue in the Snyk Web UI</p></figcaption></figure>
@@ -47,10 +47,10 @@ After an issue is ignored, you can unignore it or edit the ignore.
 
 ## Unignoring an issue
 
-To unignore an issue via the Snyk Web UI:
+To unignore an issue using the Snyk Web UI:
 
 1. Select the ignored issue from your Organization's Cloud tab.
-2. Select the **Unignore** button.
+2. Select **Unignore**.
 3. The message "Issue successfully unignored and will be applied on next scan" appears.\
    In addition, the unignore pending state is shown in the issue panel: The ignore applied to this issue has been deleted and will be removed on the next scan.\
    ![Unignore pending state in the issue panel](<../../../../.gitbook/assets/image (98).png>)
@@ -60,10 +60,10 @@ To unignore an issue via the Snyk Web UI:
 
 ## Editing an ignore
 
-To edit an ignore via the Snyk Web UI:
+To edit an ignore using the Snyk Web UI:
 
 1. Select the ignored issue from your Organization's Cloud tab.
-2. In the side panel, select the **Edit ignore** button.
+2. In the side panel, select **Edit ignore**.
 3. Edit the comment, the ignore expiration date, or both.
 4. Select **Confirm**.\
    The message "Ignore successfully edited and will be applied on next scan" appears.

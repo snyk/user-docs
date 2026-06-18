@@ -1,6 +1,6 @@
 # Consistent Ignores for Snyk Code CLI
 
-Ignores are taken into account in the Snyk CLI when `snyk code test` is run.
+The Snyk CLI takes ignores into account when you run `snyk code test`.
 
 ## Minimum version required
 
@@ -12,7 +12,7 @@ To take ignores into account, specify the Organization where the ignores reside.
 
 [Group-level policies also cascade down to all Organizations](./#manage-ignores-at-the-group-level-through-snyk-code-security-policies). See [How to select the Organization to use in the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli).
 
-Repository context is required for asset-scoped ignores to take effect. Policy-based ignores such as those based on CWE or Snyk Code Rule ID are still being applied regardless of repository context.
+Repository context is required for asset-scoped ignores to take effect. Snyk still applies policy-based ignores such as those based on CWE or Snyk Code Rule ID regardless of repository context.
 
 `snyk code test` automatically detects the repository context if a .git directory is present. If not, you can explicitly specify it using the `--remote-repo-url` option. To verify the Git URL, run `git remote -v`.
 
@@ -42,7 +42,7 @@ You can use this identifier to [create new ignores using API calls](api.md).
 
 ## Ignores in CI/CD pipelines
 
-As ignores are taken into account in Snyk CLI, the same applies when Snyk CLI is integrated into CI/CD pipelines. For example, if a pipeline uses the command `snyk code test –severity-threshold=high` and there are no unignored high-severity results, Snyk CLI will exit with a `0` (success) status code and the build will succeed.
+Because the Snyk CLI takes ignores into account, the same applies when you integrate the Snyk CLI into CI/CD pipelines. For example, if a pipeline uses the command `snyk code test –severity-threshold=high` and there are no unignored high-severity results, the Snyk CLI exits with a `0` (success) status code and the build succeeds.
 
 The following example shows how Snyk Code detected high-severity hardcoded secrets, causing a GitHub Action workflow to fail with the exit code `1`.
 

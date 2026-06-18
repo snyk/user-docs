@@ -3,9 +3,9 @@
 After you install the Snyk Controller in your Kubernetes cluster, it pulls images from your container registries:
 
 1. The Snyk Controller has read-only access to the Kubernetes workloads and container registries.
-2. The Snyk Controller pulls images to disk, scans them, and then deletes the images once the scanning completes.
-3. The Snyk Controller collects only the minimum relevant information in order to perform vulnerability analysis, specifically the list of dependencies in the image and the workload metadata.
-4. The data that the Snyk Controller collects is stored in Snyk's backend, but it is deleted after eight days. Below is the data that Snyk Controller collects:
+2. The Snyk Controller pulls images to disk, scans them, and then deletes the images after the scanning completes.
+3. The Snyk Controller collects only the minimum relevant information to perform vulnerability analysis, specifically the list of dependencies in the image and the workload metadata.
+4. The data that the Snyk Controller collects is stored in the Snyk backend, but it is deleted after eight days. The Snyk Controller collects the following data:
    * Workload metadata (Kubernetes configuration):
      * Labels, annotations
      * PodSpec

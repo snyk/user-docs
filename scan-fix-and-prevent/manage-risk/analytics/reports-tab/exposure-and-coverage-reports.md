@@ -12,7 +12,7 @@ The Asset Dashboard provides a comprehensive overview of your application and se
 
 The Asset Dashboard is a central hub for managing and reviewing assets, making tracking inventory size easier over time and understanding the interaction between different asset types.
 
-While Snyk Inventory enables the discovery and management of your assets that should be secured, the Snyk Asset Dashboard allows you to go beyond the details and better understand the main building blocks of your inventory.\
+While Snyk Inventory enables the discovery and management of your assets that should be secured, the Snyk Asset Dashboard lets you go beyond the details and better understand the main building blocks of your inventory.\
 \
 The Asset Dashboard shows all the asset data that is available in your inventory and helps you answer various questions, such as:
 
@@ -55,31 +55,31 @@ Hover over any column to see how the coverage percentage is calculated.
 
 ### Asset class breakdown
 
-The asset class breakdown widget surfaces the distribution of repositories and container images by [asset class](../../../manage-assets/assets-inventory-components.md#class). Reviewing this widget allows you to determine the percentage of business-critical assets in your inventory and drill down to see the actual assets.
+The asset class breakdown widget surfaces the distribution of repositories and container images by [asset class](../../../manage-assets/assets-inventory-components.md#class). Reviewing this widget lets you determine the percentage of business-critical assets in your inventory and drill down to see the actual assets.
 
 {% hint style="info" %}
 **Tips**
 
 * Having the context of the asset class is crucial for prioritizing assets. It is recommended to categorize your inventory by implementing [classification policies](../../policies/assets-policies/use-cases-for-policies/classification-policy.md) to proactively classify existing and newly introduced assets.
-* Using the filters enables narrowing down the asset class distribution within specific applications or code owners, as well as focusing on active repositories or a set of assets based on the asset tags.
+* Using the filters enables narrowing down the asset class distribution in specific applications or code owners, as well as focusing on active repositories or a set of assets based on the asset tags.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (203).png" alt=""><figcaption><p>Asset Class Breakdown</p></figcaption></figure>
 
 ### Top 10 technologies breakdown
 
-The top 10 technologies widget identifies the leading programming languages and frameworks used in repositories. Using the available filters enables you to determine the most commonly used technologies in active or business-critical repositories. Moreover, you can investigate specific applications or code owners.
+The top 10 technologies widget identifies the leading programming languages and frameworks used in repositories. Using the available filters lets you determine the most commonly used technologies in active or business-critical repositories. You can also investigate specific applications or code owners.
 
 {% hint style="info" %}
 **Tips**
 
 * The technology data is available in the [asset tags](../../../manage-assets/assets-inventory-components.md#tags).
-* Click a presented technology to open the inventory page in a new browser tab. This will allow you to review the related repositories in detail.
+* Click a presented technology to open the inventory page in a new browser tab. This lets you review the related repositories in detail.
 {% endhint %}
 
 ### Top 10 package managers breakdown
 
-The top 10 package managers widget allows you to identify the leading package managers in your inventory. The quantities represent assets of package type. A [package asset](../../../manage-assets/assets-inventory-layouts.md#packages) is defined as software or library that is managed by package management systems.
+The top 10 package managers widget lets you identify the leading package managers in your inventory. The quantities represent assets of package type. A [package asset](../../../manage-assets/assets-inventory-layouts.md#packages) is software or a library that package management systems manage.
 
 ### Repository freshness
 
@@ -102,7 +102,7 @@ You can use the asset class filter to identify business-critical assets that are
 
 ### Application context availability
 
-The application context availability widget allows you to discover gaps in the context of assets. The available columns include:
+The application context availability widget lets you discover gaps in the context of assets. The available columns include:
 
 * **Application Context** - displays the analyzed context attribute.
 * **Unique Values** - shows how many unique instances exist for an attribute. For example, you can check how many unique applications or code owners are available for any of the listed attributes.
@@ -113,9 +113,9 @@ The application context availability widget allows you to discover gaps in the c
 
 * Before reviewing this widget, ensure that the results are cleaned up by filtering out the "dummy" attribute values, such as "unknown", "-", and so on.\
   You can clean up the values by selecting only the relevant values.
-* Filtering by asset class allows you to identify business-critical repositories without a known code owner or associated application.
-* Filtering by the "active" value of the repository freshness filter allows you to discover context gaps in repositories that are actively being developed.
-* Reviewing the unique values allows you to spot gaps in context. For example, you may realize that the number of unique code owners does not match the number of teams.
+* Filtering by asset class lets you identify business-critical repositories without a known code owner or associated application.
+* Filtering by the "active" value of the repository freshness filter lets you discover context gaps in repositories that are actively being developed.
+* Reviewing the unique values lets you spot gaps in context. For example, you may realize that the number of unique code owners does not match the number of teams.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (199).png" alt=""><figcaption><p>Application Context Availability</p></figcaption></figure>
@@ -127,15 +127,15 @@ The asset source breakdown widget visualizes the quantities of detected assets f
 {% hint style="info" %}
 **Tips**
 
-* The widget displays the net quantities of detected assets for each source. If an asset is detected in more than one source, it will be counted once for each detected source.
-* When asset inventory quantities seem incomplete or exceed expectations, this widget will help you discover which integrations should be examined and potentially configured differently.
+* The widget displays the net quantities of detected assets for each source. If Snyk detects an asset in more than one source, it counts the asset once for each detected source.
+* When asset inventory quantities seem incomplete or exceed expectations, this widget helps you discover which integrations to examine and potentially configure differently.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (200).png" alt=""><figcaption><p>Asset source breakdown</p></figcaption></figure>
 
 ## Issues Detail report
 
-The Issues Detail report displays all known issues in all of your Projects that are being monitored by Snyk. The report provides issue details and which of your Projects are affected, providing links to fix information.
+The Issues Detail report displays all known issues in all of your Projects that Snyk monitors. The report provides issue details and which of your Projects are affected, providing links to fix information.
 
 The Issues Detail report displays the number of issues as well as the number of unique vulnerabilities that make up the issues.
 
@@ -147,9 +147,9 @@ For a table of only the unique vulnerabilities, use **Change Report** to switch 
 
 ## Risk exposure report
 
-This report gives you a single, consolidated view of your security risks. It allows you to quickly understand your risk exposure, track your progress in reducing it, and pinpoint high-risk areas.
+This report gives you a single, consolidated view of your security risks. It lets you quickly understand your risk exposure, track your progress in reducing it, and pinpoint high-risk areas.
 
-The Risk Exposure Report helps AppSec teams make quicker, more informed decisions. Rather than reviewing multiple reports, it provides a clear overview of the security landscape, allowing you to:
+The Risk Exposure Report helps AppSec teams make quicker, more informed decisions. Rather than reviewing multiple reports, it provides a clear overview of the security landscape, letting you:
 
 * Make faster decisions by quickly identifying your biggest security challenges and where to focus your attention.
 * Prioritize effectively by using data to guide your mitigation efforts toward the areas that contribute the most risk.
@@ -161,9 +161,9 @@ The Risk Exposure Report helps AppSec teams make quicker, more informed decision
 
 Choose your preferred severity source and automatically update selected severity throughout the report:
 
-* **Snyk**: utilizing Snyk proprietary CVSS calculations and other factors, including the relative importance of the Linux distributor.
-* **NVD CVSS**: leveraging severity scores from the National Vulnerability Database (NVD).
-* **Non-SCA Severities:** For non-SCA issues (for example, Code, IaC), Snyk severity calculates High, Medium, and Low levels for specific code vulnerabilities and makes use of the Common Configuration Scoring System (CCSS) for IaC severity determinations
+* **Snyk**: uses Snyk proprietary CVSS calculations and other factors, including the relative importance of the Linux distributor.
+* **NVD CVSS**: uses severity scores from the National Vulnerability Database (NVD).
+* **Non-SCA Severities:** For non-SCA issues (for example, Code, IaC), Snyk severity calculates High, Medium, and Low levels for specific code vulnerabilities and uses the Common Configuration Scoring System (CCSS) for IaC severity determinations
 
 The report includes two main sections to provide a comprehensive view of your risk landscape:
 

@@ -1,6 +1,6 @@
 # Fix your vulnerabilities
 
-Snyk helps you to fix vulnerabilities by upgrading the direct dependencies to a more secure version or by patching the vulnerability. After Snyk scans your Projects, the scan results allow you to resolve issues in your code with the help of clear suggestions and explanations.
+Snyk helps you to fix vulnerabilities by upgrading the direct dependencies to a more secure version or by patching the vulnerability. After Snyk scans your Projects, the scan results let you resolve issues in your code with the help of clear suggestions and explanations.
 
 Using Snyk Open Source, you can do the following:
 
@@ -17,7 +17,7 @@ For Snyk Open Source, on the **Issues** tab, the results are displayed as follow
 * Different versions are listed and can be expanded to show the full list of vulnerabilities remediated in that specific version.
 * All vulnerabilities contain contextual information to help you prioritize the issues and start fixing them.
 
-<figure><img src="../../../.gitbook/assets/OS-fix-vulns-issues-in-project.png" alt=""><figcaption><p>Example of issues diplayed on the Issues tab for a Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/OS-fix-vulns-issues-in-project.png" alt=""><figcaption><p>Example of issues displayed on the Issues tab for a Project</p></figcaption></figure>
 
 ## View fix advice
 
@@ -25,7 +25,7 @@ The **Fixes** tab also appears on the Project details page. On this page, Snyk o
 
 * An upgrade to the original package.
 * Pinning a package, installing a package as a top-level dependency; that is, a specific version of an indirect dependency. This avoids having a direct dependency pull in a vulnerable version.
-* A Snyk precision patch to fix the issue. If an upgrade to fix any of the vulnerabilities in the package is not currently available, Snyk offers patches to fix the issues
+* A Snyk precision patch to fix the issue. If no upgrade is available to fix the vulnerabilities in the package, Snyk offers patches to fix the issues.
 
 The summary area groups advice by package, and is displayed based on the best available fix. Advice in these summary lists includes these details for each package:
 
@@ -36,8 +36,8 @@ The summary area groups advice by package, and is displayed based on the best av
 
 You can also find additional advice and details further down on the Project details page:
 
-* From the **Issues**, tab, a full description per vulnerability
-* From the **Dependencies** tab, the entire tree of your Project dependencies, enabling you to clearly visualize affected paths
+* From the **Issues** tab, a full description per vulnerability
+* From the **Dependencies** tab, the entire tree of your Project dependencies, so you can clearly visualize affected paths
 
 ## Fixing vulnerabilities based on scan results using Snyk CLI
 

@@ -12,7 +12,7 @@ By default, Snyk displays open issues across all cloud environments in an Organi
 
 Issues are grouped by rule by default.
 
-If you have grouped them by resource instead, you can group them by rule again by selecting the **Group by Resource** drop-down menu next to the search bar and selecting **Rule**:
+If you have grouped them by resource instead, you can group them by rule again by selecting the **Group by Resource** dropdown menu next to the search bar and selecting **Rule**:
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-how-to-group-by-rule-3.png" alt=""><figcaption><p>Group by rule</p></figcaption></figure>
 
@@ -46,7 +46,7 @@ By default, when you expand a rule you see all the resources with an open issue 
 
 ## Group issues by resource
 
-If issues are currently grouped by rule, you can group them by resource instead by selecting the **Group by Rule** drop-down menu next to the search bar and selecting **Resource**:
+If issues are currently grouped by rule, you can group them by resource instead by selecting the **Group by Rule** dropdown menu next to the search bar and selecting **Resource**:
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-how-to-group-by-resource-3.png" alt=""><figcaption><p>Group by resource</p></figcaption></figure>
 
@@ -117,7 +117,7 @@ Select the **Resource** tab to view the scanned resource's attributes:
 
 To filter which cloud issues are shown:
 
-1. Select the **Filter** drop-down menu. The name of the menu shows how many filters are selected, for example, "1 Filter".
+1. Select the **Filter** dropdown menu. The name of the menu shows how many filters are selected, for example, "1 Filter".
 2. Select the parameter you want to filter by, for example "Severity".
 3. Check the box for the values you want to show, for example "High".
 
@@ -129,7 +129,7 @@ You can also filter issues by compliance control, resource type, environment nam
 
 ## Search issues
 
-As you select filters from the **Filters** drop-down menu, the search bar is populated with key-value pairs.
+As you select filters from the **Filters** dropdown menu, the search bar is populated with key-value pairs.
 
 To search cloud issues by key-value pair:
 

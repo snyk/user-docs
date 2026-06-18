@@ -1,6 +1,6 @@
 # Parsing an input file
 
-It can be difficult to understand the internal representation of your input files as you write your Rego code. As you will see when you learn [how to write a rule](writing-a-rule.md), the input value is a JSON-like object, but the input files could also be YAML, Terraform, or [Terraform Plan JSON Output](https://www.terraform.io/docs/internals/json-format.html). To help you understand how these are translated into JSON, Snyk provides a `parse` command.
+It can be difficult to understand the internal representation of your input files as you write your Rego code. As you see when you learn [how to write a rule](writing-a-rule.md), the input value is a JSON-like object, but the input files could also be YAML, Terraform, or [Terraform Plan JSON Output](https://www.terraform.io/docs/internals/json-format.html). To help you understand how these are translated into JSON, Snyk provides a `parse` command.
 
 You will need an IaC file to use as an input file. This input file can also be used when [testing the rules](testing-a-rule.md), which parses your files into JSON by default.
 

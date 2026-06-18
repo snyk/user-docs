@@ -77,13 +77,13 @@ The mandatory configuration format you want to define your rule for. This genera
 
 `--severity`=`low`|`medium`|`high`|`critical`
 
-The severity of the rule, which will show up when running the Snyk Infrastructure as Code CLI.
+The severity of the rule, which shows up when running the Snyk Infrastructure as Code CLI.
 
 Default: `low`
 
 `--title`=`TITLE`
 
-The title of the rule, which will show up when running the Snyk Infrastructure as Code CLI.
+The title of the rule, which shows up when running the Snyk Infrastructure as Code CLI.
 
 ### Parse options
 

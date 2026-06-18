@@ -6,7 +6,7 @@
 Breakability analysis is in Early Access and available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
 {% endhint %}
 
-Snyk analyzes dependency upgrades to predict if a proposed change will break your build or application. Breakability analysis assigns a risk level to each upgrade to help you decide whether to auto-merge a fix or review it manually.
+Snyk analyzes dependency upgrades to predict whether a proposed change breaks your build or application. Breakability analysis assigns a risk level to each upgrade to help you decide whether to auto-merge a fix or review it manually.
 
 Snyk assesses the practical impact of a change rather than relying only on version numbers. For example, a major version update (v2.0) can appear risky based on the version number, even if the code change is trivial.
 
@@ -20,7 +20,7 @@ Snyk classifies risk based on two factors:
 {% hint style="info" %}
 With breakability analysis, Snyk sends package information to a Large Language Model (LLM). This information includes the current and proposed upgrade versions. Snyk does not transmit application data. Future features involving application context require you to enable them separately.
 
-Ensure to review AI-generated content for accuracy before use.
+Review AI-generated content for accuracy before use.
 {% endhint %}
 
 ## Risk level definitions and actions
@@ -87,7 +87,7 @@ The following use cases show how the logic applies.
 | ---------------------- | ----------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | Security patch         | From `1.4.4` to `1.4.5` | Low                  | The changelog confirms only security fixes and no behavioral changes.                                                                |
 | Ancient runtime drop   | From `3.0` to `4.0`     | Low                  | The upgrade is a major version, but the only change is dropping Node.js v4 (EOL 2018). There is no practical impact.                 |
-| Missing documentation  | From `2.1` to `2.2`     | Medium               | The upgrade is a minor version, but there is no changelog. Snyk cannot detemine if it is safe, so it flags it for review.            |
+| Missing documentation  | From `2.1` to `2.2`     | Medium               | The upgrade is a minor version, but there is no changelog. Snyk cannot determine if it is safe, so it flags it for review.            |
 | API removal            | From `3.0` to `4.0`     | High                 | The changelog confirms that `_.pluck` was removed and must be replaced with `_.map`. Code changes are required.                      |
 | Long term support drop | From `5.0` to `6.0`     | High                 | The upgrade drops support for Java 17, which is an active LTS. This upgrade breaks builds that are running on standard environments. |
 |                        |                         |                      |                                                                                                                                      |

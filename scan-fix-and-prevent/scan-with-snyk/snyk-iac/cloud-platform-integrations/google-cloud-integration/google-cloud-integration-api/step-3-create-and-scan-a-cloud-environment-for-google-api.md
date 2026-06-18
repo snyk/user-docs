@@ -9,7 +9,7 @@ To send a request to the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%
 
 ## Send the Snyk API request
 
-Send a request to the Snyk API in the format below to create the Cloud Environment:
+Send a request to the Snyk API in the following format to create the Cloud Environment:
 
 ```
 curl -X POST \

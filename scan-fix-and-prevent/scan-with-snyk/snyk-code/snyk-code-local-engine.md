@@ -1,6 +1,6 @@
 # Snyk Code Local Engine
 
-Snyk Code Local Engine (SCLE) is a fully contained version of the Snyk Code Engine that allows you to avoid uploading your code to the internet. When you use the Local Engine, only the scan is performed locally. Your scan results are uploaded to Snyk so you can view them on the Snyk Web UI.
+Snyk Code Local Engine (SCLE) is a fully contained version of the Snyk Code Engine that lets you avoid uploading your code to the internet. When you use the Local Engine, only the scan runs locally. Snyk uploads your scan results so you can view them on the Snyk Web UI.
 
 This high-level architecture diagram shows the components and their interactions. Snyk scans a request for a Git repository through the Snyk Code Local Engine, which returns the results to Snyk.
 
@@ -29,13 +29,13 @@ The core requirements to deploy the Snyk Code Local Engine are:
 
 The Snyk Code Local Engine is modular and can be customized to run specific integrations or everything at once. It can also scale as you prefer, with one or multiple nodes.
 
-Each of the Kubernetes nodes will require at least the following free resources to run it:
+Each of the Kubernetes nodes requires at least the following free resources to run it:
 
 * 55 GB RAM
 * 14 Core CPU
 * 50GB Ephemeral Storage
 
-The size of the minimum node will depend on what your environment requires, but these are the minimum free resources required.
+The size of the minimum node depends on what your environment requires, but these are the minimum free resources required.
 
 The total required resources for each flavor of the Snyk Code Local Engine are identified in the following list. Actual memory and storage consumption depend on the usage and the size of repositories scanned. The minimum total required resources can then be divided into multiple nodes.
 

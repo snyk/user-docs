@@ -15,7 +15,7 @@ The following rules are applied to the creation of automatic PRs for vulnerabili
 * One pull request is created per Project.
 * A new vulnerability is a vulnerability in the current recurring scan that was not present in the previous scan of the same Project.
 * If either the vulnerability is new and has a fix available or the fix is new and is not ignored, a Fix PR can be created.
-* Fixing a vulnerability by upgrading a package may sometimes introduce a new vulnerability. Snyk will only automatically create a pull request if the fixed vulnerabilities are of a higher severity than any new ones introduced.
+* Fixing a vulnerability by upgrading a package can sometimes introduce a new vulnerability. Snyk automatically creates a pull request only if the fixed vulnerabilities are of a higher severity than any new ones introduced.
 
 For known vulnerabilities, visit [Configure Automatic Backlog PRs.](enable-automatic-backlog-prs-for-previously-known-vulnerabilities.md)
 
@@ -40,7 +40,7 @@ If you check **Fix all vulnerabilities for the same dependency in a single PR**,
 
 ## Set creation thresholds for score and severity
 
-For every new actionable vulnerability found on each recurring test, Snyk raises a Fix PR. This may not be ideal depending on the velocity you are looking for in your Organization, so setting up specific criteria to match your needs can be achieved by setting thresholds.
+For every new actionable vulnerability found on each recurring test, Snyk raises a Fix PR. This might not be ideal depending on the velocity you are looking for in your Organization, so you can set thresholds to match your needs.
 
 To decide which automatic Fix PRs are visible to you, you can set a custom threshold for **Score** or **Severity**. Depending on your Organization's configuration, the dropdown contains either the **Risk Score** or the **Priority Score**.
 

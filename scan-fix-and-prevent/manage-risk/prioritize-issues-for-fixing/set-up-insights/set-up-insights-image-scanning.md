@@ -2,9 +2,9 @@
 
 To determine the risk factors and prioritize your Code, Open Source, and Container issues, you must scan your container images using [Snyk Container](../../../scan-with-snyk/snyk-container/).
 
-The container image is at the center of the application model that powers Snyk Enterprise. A container image includes your source code and dependencies, and it is deployed to your running environment, enabling Snyk to use the container image to bridge the development and deployment states.\
+The container image is at the center of the application model that powers Snyk Enterprise. A container image includes your source code and dependencies, and it is deployed to your running environment, so Snyk can use the container image to bridge the development and deployment states.\
 \
-Snyk will identify any deployed container images using the [Kubernetes Connector](set-up-insights-kubernetes-connector.md) and compare the deployed container images to the list of scanned images you have scanned using [Snyk Container](../../../scan-with-snyk/snyk-container/).
+Snyk identifies any deployed container images using the [Kubernetes Connector](set-up-insights-kubernetes-connector.md) and compares the deployed container images to the list of scanned images you scanned using [Snyk Container](../../../scan-with-snyk/snyk-container/).
 
 {% hint style="info" %}
 Snyk recommends that you scan each image using at least one of the Snyk Container integrations.
@@ -22,13 +22,13 @@ For details, see [Snyk CLI for container security](https://app.gitbook.com/s/IEE
 
 ## Snyk Container registry scanning
 
-The names will match if you are importing images to Snyk from the same container registry that you are referencing in your Kubernetes deployments.
+The names match if you are importing images to Snyk from the same container registry that you are referencing in your Kubernetes deployments.
 
 For details, see [Snyk Container - Integrations](../../../scan-with-snyk/snyk-container/container-registry-integrations/).
 
 ## Snyk Container scanning with Kubernetes integration
 
-The names of the container images will match because the deployed image is scanned by Snyk and created as a Project.
+The names of the container images match because Snyk scans the deployed image and creates it as a Project.
 
 {% hint style="info" %}
 To ensure you have set up your Kubernetes Connector properly, navigate to the **Set up Insights** tab on the **Issues** page and check the **Image coverage** section to view the data Insights has access to.

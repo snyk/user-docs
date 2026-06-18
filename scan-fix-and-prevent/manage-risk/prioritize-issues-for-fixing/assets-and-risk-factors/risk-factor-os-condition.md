@@ -10,7 +10,7 @@ If the vulnerability condition matches the operating system used by the runtime 
 | ------------------ | --------------- | ---------------------- |
 | Any OS             | Unknown         | No risk factor         |
 | Linux              | Unknown         | No risk factor         |
-| Windows            | Unkown          | No risk factor         |
+| Windows            | Unknown         | No risk factor         |
 | Any OS             | Linux           | Risk factor identified |
 | Linux              | Linux           | Risk factor identified |
 | Windows            | Linux           | No risk factor         |
@@ -24,12 +24,12 @@ When an image is scanned by Snyk Container, the information about which operatin
 
 The OS condition risk factor works with your [Kubernetes Connector](../set-up-insights/set-up-insights-kubernetes-connector.md) integrations.
 
-The Kubernetes Connector leverages the OS condition risk factors to enhance the identification of vulnerabilities within containerized applications. It continuously checks and compares the operating systems of running containers with the known risk factors from the Snyk database. This integration helps to detect potentially vulnerable packages or images in real-time based on the operating system conditions. It allows proactive security measures within Kubernetes environments.
+The Kubernetes Connector uses the OS condition risk factors to enhance the identification of vulnerabilities in containerized applications. It continuously checks and compares the operating systems of running containers with the known risk factors from the Snyk database. This integration helps to detect potentially vulnerable packages or images in real time based on the operating system conditions. It supports proactive security measures in Kubernetes environments.
 
 ## Technical details for OS condition risk factor
 
 Every hour, the data pipeline takes a snapshot of all Snyk Projects and data sources and extrapolates packages and images. This snapshot determines which images and packages are known to Snyk for any customer.
 
-Snyk Project tags are used to enable the customer to relate image assets to packages. This information is extracted from the hourly data snapshot, and a basic composition graph is generated between images and packages.
+Snyk Project tags let the customer relate image assets to packages. Snyk extracts this information from the hourly data snapshot and generates a basic composition graph between images and packages.
 
 The data pipeline examines all the issues reported for the package and image and attempts to map the vulnerability condition between them.

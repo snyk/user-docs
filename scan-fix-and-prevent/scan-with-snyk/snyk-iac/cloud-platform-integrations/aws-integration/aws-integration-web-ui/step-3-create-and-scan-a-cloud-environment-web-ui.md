@@ -51,9 +51,9 @@ arn:aws:iam::123412341234:role/snyk-cloud-role
 ## Create and scan the AWS Environment
 
 1. In the Snyk Web UI **Add AWS Environment** modal where you downloaded the IAM role template, enter your role ARN in the **IAM role ARN** field.
-2. Optionally, enter an environment name. If one is not provided, Snyk will use your AWS account alias.
+2. Optionally, enter an environment name. If one is not provided, Snyk uses your AWS account alias.
 3. Select **Approve and begin scan**.
-4. You will  see a confirmation message: "AWS environment successfully added." Select **Add another environment** to return to the **Add AWS Environment** modal and onboard a new account, or select **Go to settings** if you are finished:
+4. You see a confirmation message: "AWS environment successfully added." Select **Add another environment** to return to the **Add AWS Environment** modal and onboard a new account, or select **Go to settings** if you are finished:
 
 <figure><img src="../../../../../.gitbook/assets/snyk-cloud-onboard-aws-ui-success.png" alt=""><figcaption><p>Success message after adding an AWS environment in the Snyk Web UI</p></figcaption></figure>
 

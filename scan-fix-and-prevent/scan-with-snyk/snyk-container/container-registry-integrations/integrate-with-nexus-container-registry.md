@@ -5,7 +5,7 @@
 This feature is available only with Enterprise plans. For more information, see [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk integrates with Nexus Container Registry to enable you to import your container images and monitor them for vulnerabilities.
+Snyk integrates with Nexus Container Registry so you can import your container images and monitor them for vulnerabilities.
 
 Snyk tests the images you have imported (Projects) for any known security vulnerabilities, testing them at a frequency you control, and alerts you when new issues are detected.
 
@@ -34,7 +34,7 @@ If the connection to Nexus fails, a notification appears under the **Connected t
 
 When the connection is successful, you can use Snyk to scan your images from Nexus.
 
-Snyk tests and monitors your Nexus container images by evaluating the image tags in your repositories. After you have imported images to Snyk, the image vulnerabilities are identified and can be triaged easily.
+Snyk tests and monitors your Nexus container images by evaluating the image tags in your repositories. After you have imported images to Snyk, Snyk identifies the image vulnerabilities so you can triage them.
 
 Follow these steps to add images from Nexus to Snyk.
 
@@ -52,8 +52,8 @@ Follow these steps to add images from Nexus to Snyk.
    The view **Which images do you want to test?** view opens, displaying all available images for your connected registry, grouped by each of your repositories.
 4. Select single or multiple images to be imported to Snyk.\
    You can choose a specific image or select an entire repository. You can also search by image name to find specific images to import.
-5. To finish, click **Add selected repositories** on the top-right.\
-   A status bar appears at the top of the page as the images are imported; you can continue working in the meantime.
+5. To finish, click **Add selected repositories**.\
+   A status bar appears at the top of the page as Snyk imports the images. You can continue working in the meantime.
 6. When the import ends:
    1. You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
    2. An **import log** becomes available; you can reach it at the top of the Projects list.
@@ -64,5 +64,5 @@ Nexus imports are indicated with a unique icon. You can also filter to view only
 <figure><img src="../../../.gitbook/assets/container_registry_integrations_nexus.png" alt="Nexus Project in Projets listing"><figcaption><p>Example of a Nexus Project</p></figcaption></figure>
 
 {% hint style="info" %}
-For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
+For application vulnerabilities in container images, a manual or recurring retest does not reflect any changes to the application. You must re-import the image. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}

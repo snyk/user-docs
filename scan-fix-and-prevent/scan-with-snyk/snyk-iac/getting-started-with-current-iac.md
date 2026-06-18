@@ -2,7 +2,7 @@
 
 You can use Snyk IaC (Infrastructure as Code) in the Snyk Web UI to find, view, and fix issues in configuration files. You can also use Snyk IaC in the Snyk CLI. For details, see [Snyk CLI for Infrastructure as Code](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac).
 
-On this page, you will find steps to find, view, and fix issues in configuration files for the supported environments: [Terraform](scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](scan-your-iac-source-code/scan-kubernetes-configuration-files/), including Helm, and [Azure Resource Manager (ARM)](scan-your-iac-source-code/scan-arm-configuration-files.md). These steps are specific to the current IaC.
+On this page, you find steps to find, view, and fix issues in configuration files for the supported environments: [Terraform](scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](scan-your-iac-source-code/scan-kubernetes-configuration-files/), including Helm, and [Azure Resource Manager (ARM)](scan-your-iac-source-code/scan-arm-configuration-files.md). These steps are specific to the current IaC.
 
 ## **Prerequisites for Snyk IaC**
 
@@ -24,7 +24,7 @@ You must use the Snyk CLI to scan ARM configuration files. See [Scan ARM configu
 
 ## Import IaC Projects
 
-You will start by importing [Projects](../../snyk-platform-administration/snyk-projects/) you want to scan with Snyk. In these steps, you choose repositories for Snyk to test and re-test:
+Start by importing the [Projects](../../snyk-platform-administration/snyk-projects/) you want to scan with Snyk. In these steps, you choose repositories for Snyk to test and re-test:
 
 1. Log in to Snyk and on your dashboard, select **Projects** from the navigation.
 2. On the Projects page, from the **Add projects** dropdown, select the SCM where the repositories and projects that you want to scan are; for example, select GitHub.
@@ -36,7 +36,7 @@ You will start by importing [Projects](../../snyk-platform-administration/snyk-p
    The import completes and the Projects page displays the Snyk Project imported.
 
 {% hint style="info" %}
-After you have imported an IaC Project, Snyk re-tests your Project once a week by default. You can de-activate recurring tests on the **Settings** tab of the Projects page; Set **Test & Automated Pull Request Frequency** to **Test never**.
+After you have imported an IaC Project, Snyk re-tests your Project once a week by default. You can deactivate recurring tests on the **Settings** tab of the Projects page. Set **Test & Automated Pull Request Frequency** to **Test never**.
 {% endhint %}
 
 ## View configuration file issues in IaC
@@ -103,7 +103,7 @@ Terraform Cloud and Helm do not show a code snippet, only the path details. Ther
 
 ### Example showing the code preview is not available
 
-If Snyk can not identify the exact line of the vulnerable path in the file, Snyk does not show a code snippet, only a message and the path details. If possible, Snyk shows the **Full details** button so you can see a preview of the full code.
+If Snyk cannot identify the exact line of the vulnerable path in the file, Snyk does not show a code snippet, only a message and the path details. If possible, Snyk shows the **Full details** button so you can see a preview of the full code.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07.png" alt="Issue card without code snippet"><figcaption><p>Issue card without code snippet</p></figcaption></figure>
 

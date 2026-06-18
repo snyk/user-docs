@@ -13,7 +13,7 @@ This section displays aggregate totals for the selected time range and calculate
 The following widgets are enabled by default:
 
 * **Open issues**: The total count of unresolved vulnerabilities.
-* **Ignored issues**: The total count of vulnerabilities suppressed by Snyk ignore policies.
+* **Ignored issues**: The total count of vulnerabilities that Snyk ignore policies suppress.
 * **New issues**: The volume of vulnerabilities introduced during the selected timeframe.
 * **Resolved issues**: The total count of vulnerabilities fixed during the selected timeframe.
 * **Unique vulnerabilities**: The distinct count of individual vulnerability types, regardless of how many times they appear across your environments.
@@ -22,13 +22,13 @@ Additionally, you can add the following widgets:
 
 * **Projects Monitored**: Number of Snyk Projects continuously monitored for open-source vulnerabilities and license issues after using the `snyk monitor` CLI command.
 * **Agentic Scans**: Number of Snyk Studio scans for the selected timeframe.
-* **Developers running agentic scans: S**nyk Studio adoption rate.
+* **Developers running agentic scans:** Snyk Studio adoption rate.
 * **Total PR checks**: Number of pull request (PR) checks for the selected timeframe.
 * **PR check success rate**: Outcomes of PR checks. An increasing success rate over time demonstrates that developers produce more secure code earlier in the software development lifecycle.
 * **Snyk Organizations**: Track Snyk rollout progress by viewing the total number of new Snyk Organizations created over time.
 * **Zero-Day Open Issues**: Use this centralized dashboard to assess immediate risk and track your response during a major zero-day security incident.
 * **Developers testing in the IDE/CLI**:  Number of developers who run a Snyk scan during the selected timeframe.
-* **SCA Preventable issues**: It shows the number of new open-source (SCA) vulnerabilities introduced into your codebase that you can block earlier, for example, during pull request checks.
+* **SCA Preventable issues**: Shows the number of new open-source (SCA) vulnerabilities introduced into your codebase that you can block earlier, for example, during pull request checks.
 * **Tested repositories in CI/CD**: Number of repositories tested in the continuous integration and continuous delivery (CI/CD) pipeline.
 
 ### Coverage
@@ -95,7 +95,7 @@ The following widgets are enabled by default:
 * **Organizations introducing most new SCA preventable issues**: Pinpoints where known, avoidable open-source risks enter your codebase. Use this to target specific teams for training on secure coding practices or Snyk use.
 * **New issues by introduction category**: Classifies the avoidability of new vulnerabilities. Use the **Preventable Issue** segment to measure how many issues Snyk scans could have blocked earlier, helping you justify stricter PR checks.
 
-You can also add the **New SCA preventable issues introduced over time** widget. This widget classifies the avoidability of new vulnerabilities. Use the Preventable Issue segment to measure how many issues Snyk scans can block earlier to help you justify stricter pull request checks.
+You can also add the **New SCA preventable issues introduced over time** widget. This widget classifies the avoidability of new vulnerabilities. Use the **Preventable Issue** segment to measure how many issues Snyk scans can block earlier to help you justify stricter pull request checks.
 
 ## Customize the dashboard
 

@@ -1,6 +1,6 @@
 # Ignore issues
 
-You can ignore a vulnerability or open-source license issue if you do not need to fix it and want to avoid seeing the issue in scan results. You can ignore issues temporarily or permanently and set ignores individually or as actions. By using Snyk ignores you can display results only for issues you need to fix
+You can ignore a vulnerability or open-source license issue if you do not need to fix it and want to avoid seeing the issue in scan results. You can ignore issues temporarily or permanently and set ignores individually or as actions. By using Snyk ignores you can display results only for issues you need to fix.
 
 For Open Source details, see [How to set ignores](./#how-to-set-ignores). This information provides a useful background for using ignores with other Snyk scanning methods. For more information, see the following sections on this page:
 
@@ -10,7 +10,7 @@ For Open Source details, see [How to set ignores](./#how-to-set-ignores). This i
 
 ## Decisions to ignore issues
 
-Optimally, it allows you to fix or patch vulnerabilities or remove vulnerable dependencies. However, you may want to suppress an issue for any of the following reasons:
+Optimally, you fix or patch vulnerabilities or remove vulnerable dependencies. However, you might want to suppress an issue for any of the following reasons:
 
 * There is no fix.
 * The issue is not relevant to the Project. One example is a distributed denial-of-service (DDoS) attack for an internal service.
@@ -35,16 +35,16 @@ Each issue card has an **Ignore** button that opens a dialog where you can selec
 
 You can select **Not vulnerable** for any issue that is not exploitable at the time you create the ignore.
 
-If you select **Ignore temporarily,** then you can check the **Until fix is available** checkbox:
+If you select **Ignore temporarily,** then you can select the **Until fix is available** check box:
 
 <figure><img src="../../../.gitbook/assets/image (185).png" alt="Ignore temporarily"><figcaption><p>Ignore temporarily</p></figcaption></figure>
 
-This is checked by default if no fix is available for the issue. The vulnerability resurfaces as soon as Snyk has a fix for it, and optionally you can provide additional details on why you are ignoring the issue.
+This check box is selected by default if no fix is available for the issue. The vulnerability resurfaces as soon as Snyk has a fix for it, and you can optionally provide additional details on why you are ignoring the issue.
 
 {% hint style="info" %}
 An issue is ignored until either of these conditions occurs: the ignore period expires, or the vulnerability becomes fixable.
 
-An issue ignored in an Open Source or Code Project in the Snyk web UI will be reflected and not flagged in any subsequent [PR checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) across all branches of the Project.
+An issue ignored in an Open Source or Code Project in the Snyk Web UI is reflected and not flagged in any subsequent [PR checks](../../../scan-with-snyk/pull-requests/pull-request-checks/) across all branches of the Project.
 {% endhint %}
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allows you to edit the ignore or unignore the issue.

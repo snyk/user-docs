@@ -37,7 +37,7 @@ exclude:
 ```
 {% endcode %}
 
-The `.snyk` policy file also supports the negation of rules. This allows you to ignore everything except certain types. In this example, only S3 buckets will not be ignored:
+The `.snyk` policy file also supports the negation of rules. This lets you ignore everything except certain types. In this example, only S3 buckets are not ignored:
 
 {% code title=".snyk" %}
 ```yaml
@@ -91,7 +91,7 @@ You can use the means to ignore resources explained on this page in combination 
 
 For details, run `snyk iac update-exclude-policy --help` .
 
-This command helps to generate a `.snyk` policy file, adding all the detected drifts to it in order to ignore them all.
+This command helps to generate a `.snyk` policy file, adding all the detected drifts to it to ignore them all.
 
 For example, to ignore all the unmanaged resources at once, run the following command:
 

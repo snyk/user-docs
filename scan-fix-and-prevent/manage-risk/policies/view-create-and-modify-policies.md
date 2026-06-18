@@ -22,13 +22,13 @@ When you expand a category, the screen shows the policies applied to **Project a
 
 Each policy category has a default policy. Default policies can be applied only to Organizations, not Project attributes.
 
-When you create a new Organization, it will automatically be added to the default policy unless you have copied the settings of an existing Organization. You can assign an Organization to a different policy if desired.
+When you create a new Organization, Snyk automatically adds it to the default policy unless you have copied the settings of an existing Organization. You can assign an Organization to a different policy if desired.
 
-The default policy cannot be deleted; however, the default policy name, description, and rules can be edited to match your preferences. A default policy can also contain no rules if you'd prefer.
+You cannot delete the default policy. However, you can edit the default policy name, description, and rules to match your preferences. A default policy can also contain no rules if you prefer.
 
 See [Assign a policy to an Organization](assign-a-policy-to-an-organization.md) for details.
 
-The Policy Manager allows you to [create](view-create-and-modify-policies.md#create-a-policy), [edit](view-create-and-modify-policies.md#edit-a-policy), and [duplicate or delete a policy](view-create-and-modify-policies.md#duplicate-or-delete-a-policy).
+The Policy Manager lets you [create](view-create-and-modify-policies.md#create-a-policy), [edit](view-create-and-modify-policies.md#edit-a-policy), and [duplicate or delete a policy](view-create-and-modify-policies.md#duplicate-or-delete-a-policy).
 
 ## Create a policy
 
@@ -53,5 +53,5 @@ To duplicate or delete a policy, click the three dots on the right-hand side:
 Duplicating a policy copies the rules of a policy but not the assigned Organizations or Projects. The new policy is automatically called **Copy of (Policy Name)…** and can be edited as [explained in Edit a policy](view-create-and-modify-policies.md#edit-a-policy).
 
 {% hint style="info" %}
-Deleting a policy cannot be undone. If you delete a policy with Organizations assigned to it, those Organizations will return to the default policy.
+Deleting a policy cannot be undone. If you delete a policy with Organizations assigned to it, those Organizations return to the default policy.
 {% endhint %}

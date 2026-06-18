@@ -7,7 +7,7 @@ To enhance its capabilities when detecting workload information, Snyk has partne
 For a successful integration with Sysdig, the Snyk Controller requires an extra Sysdig Secret in the `snyk-monitor` namespace. The Sysdig Secret name is `snyk-sysdig-secret`.
 
 {% hint style="info" %}
-Execute the commands below after installing Sysdig, in order to allow the Snyk Controller to detect Sysdig in the cluster.
+Run the following commands after installing Sysdig, to allow the Snyk Controller to detect Sysdig in the cluster.
 {% endhint %}
 
 Create the `snyk-sysdig-secret` in the `snyk-monitor` namespace:
@@ -38,7 +38,7 @@ Your Snyk Controller now collects data from Sysdig every 30 minutes.
 
 ## Enrich Snyk vulnerability data and priority score
 
-To enrich the priority score of vulnerabilities it detects, Snyk uses packages executed at runtime. This allows Snyk to better prioritize which vulnerabilities to fix first. The priority score is available on both the **Project** page and in the [Snyk public API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid-aggregated-issues).
+To enrich the priority score of vulnerabilities it detects, Snyk uses packages executed at runtime. This lets Snyk better prioritize which vulnerabilities to fix first. The priority score is available on both the **Project** page and in the [Snyk public API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid-aggregated-issues).
 
 ![Packages executed at runtime](<../../../.gitbook/assets/image (13).png>)
 
@@ -51,7 +51,7 @@ After enabling the Sysdig integration, allow 30 minutes before manually importin
 
 ## Application support
 
-For application vulnerabilities, Snyk currently provides support for the following languages:
+For application vulnerabilities, Snyk provides support for the following languages:
 
 * Java
 * JavaScript

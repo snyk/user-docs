@@ -27,7 +27,7 @@ You can see the history of all the repositories and container registry images im
 
 To see vulnerability information for that Project, select an imported Project from the target list.
 
-Click on a Project entry to see details of the vulnerabilities found, including where it was introduced, how to fix it, and other details about the vulnerability.
+Click a Project entry to see details of the vulnerabilities found, including where it was introduced, how to fix it, and other details about the vulnerability.
 
 ## Fix vulnerabilities in your container images
 

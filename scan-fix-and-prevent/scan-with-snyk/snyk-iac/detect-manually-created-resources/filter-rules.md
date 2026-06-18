@@ -2,7 +2,7 @@
 
 You can use filter rules to describe resources and ignore resources. You can use both inclusion and exclusion logic.
 
-Filter rules allow you to build a complex include and exclude expression to include and exclude a set of resources in your workflow. This capability is powered by the expression language [JMESPath](https://jmespath.org).
+Filter rules let you build a complex include and exclude expression to include and exclude a set of resources in your workflow. The expression language [JMESPath](https://jmespath.org) powers this capability.
 
 Filters are applied on a normalized `struct` that contains the following fields:
 

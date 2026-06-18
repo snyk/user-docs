@@ -2,7 +2,7 @@
 
 ## Overview
 
-Snyk Code is a developer-first static application security testing (SAST) solution. By scanning code in real-time and providing actionable insights directly in the developer workflow across IDEs, repositories, and CI/CD pipelines, you can identify and address vulnerabilities early on. The AI-based engine results in fewer false positives for your developers, improving code quality and security. You can scan your code using the following options:
+Snyk Code is a developer-first static application security testing (SAST) solution. By scanning code in real time and providing actionable insights directly in the developer workflow across IDEs, repositories, and CI/CD pipelines, you can identify and address vulnerabilities early on. The AI-based engine results in fewer false positives for your developers, improving code quality and security. You can scan your code using the following options:
 
 * Snyk web UI (including [PR checks](../pull-requests/pull-request-checks/))
 * [Snyk IDE](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions)
@@ -25,7 +25,7 @@ The following table shows the Snyk Code features, including analysis, managing s
 
 Snyk Code is powered by a semantic, AI-based analysis engine and can analyze the following in your code:
 
-* API usage: Identifies multiple potential issues, including API misuses, null dereferences, and type mismatches, by modeling the use of memory in variables and references. This mechanism can also identify the use of insecure functions.
+* API use: Identifies multiple potential issues, including API misuses, null dereferences, and type mismatches, by modeling the use of memory in variables and references. This mechanism can also identify the use of insecure functions.
 * Coding issues: Finds problems such as dead code, branches that are predefined, and branches having the same code on each side.
 * Control flow: Identifies null dereference or race conditions by modeling each possible control flow in the application.
 * Data flow: Follows the flow of data within the application from the source to the sink. Combined with AI-based learning of external insecure data sources, data sinks, and sanitation functions, this enables a strong taint analysis.

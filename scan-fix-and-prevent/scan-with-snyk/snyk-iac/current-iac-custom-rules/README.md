@@ -6,7 +6,7 @@
 IaC custom rules are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk IaC includes a comprehensive list of security rules, covering AWS, Azure, GCP, and Kubernetes. These rules are based on security research, best practices, recognized standards, and benchmarks. They are actively maintained by Snyk’s security engineering team, and new rules are released on a regular basis.
+Snyk IaC includes a comprehensive list of security rules, covering AWS, Azure, GCP, and Kubernetes. These rules are based on security research, best practices, recognized standards, and benchmarks. The Snyk security engineering team actively maintains them, and releases new rules on a regular basis.
 
 These rules are intended to meet most of your needs on your first scan, but you may need to enforce additional security rules for your system, such as tagging standards.
 
@@ -35,6 +35,6 @@ Summary:
 * Snyk IaC custom rules: generate issues
 {% endhint %}
 
-The Snyk platform allows you to create your own [policies](../../../manage-risk/policies/) to manage how you prioritize and triage the issues Snyk identifies during scanning. For example, you can define policies to change the priority of an issue from medium to high if it has specific attributes, or to bulk ignore issues if they meet certain criteria.
+The Snyk platform lets you create your own [policies](../../../manage-risk/policies/) to manage how you prioritize and triage the issues Snyk identifies during scanning. For example, you can define policies to change the priority of an issue from medium to high if it has specific attributes, or to bulk ignore issues if they meet certain criteria.
 
-The Snyk IaC custom rules functionality enables you to define your own rules for misconfiguration checks that you would like to enforce. The result of a custom rule failing on a configuration file is generating an issue.
+The Snyk IaC custom rules functionality lets you define your own rules for misconfiguration checks that you want to enforce. The result of a custom rule failing on a configuration file is generating an issue.

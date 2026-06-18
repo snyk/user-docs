@@ -12,12 +12,12 @@ After the plugin is installed, it runs in the background and can do the followin
 * Add vulnerability and license issue counts from Snyk as properties in an artifact
 * Block developers from downloading packages with vulnerability and license issues according to a configured threshold
 
-By scanning artifacts as part of your workflow and then displaying those test results directly from the Artifactory UI, the Snyk Artifactory Gatekeeper Plugin enables you to track and identify issues that are risks to your application security more quickly and to avoid using those artifacts in your Projects.
+By scanning artifacts as part of your workflow and then displaying those test results directly from the Artifactory UI, the Snyk Artifactory Gatekeeper Plugin lets you track and identify issues that are risks to your application security more quickly and avoid using those artifacts in your Projects.
 
 {% hint style="info" %}
 This page refers to the Artifactory Plugin, an independent piece of software that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance.
 
-This plugin is separate from the [Artifactory Registry for Maven](../package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md), a Snyk integration that allows configuring SCM scans to use custom package registries.
+This plugin is separate from the [Artifactory Registry for Maven](../package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md), a Snyk integration that lets you configure SCM scans to use custom package registries.
 {% endhint %}
 
 ## Package managers supported by the Artifactory Plugin
@@ -40,7 +40,7 @@ This plugin is separate from the [Artifactory Registry for Maven](../package-rep
 
 Artifactory transmits the package name and version to the test endpoint at the Snyk API instance. In the header, the authorization token is transmitted.
 
-If the Artifactory installation is configured to use a proxy, Snyk will automatically use it too. Potentially, there could be an issue if the proxy is an authenticated or Kerberos proxy, but a standard, unauthenticated, forwarding proxy should work if the Artifactory installation and its underlying JVM are configured correctly with a proxy.
+If the Artifactory installation is configured to use a proxy, Snyk uses it too. Potentially, there could be an issue if the proxy is an authenticated or Kerberos proxy, but a standard, unauthenticated, forwarding proxy should work if the Artifactory installation and its underlying JVM are configured correctly with a proxy.
 
 Snyk calls [`https://api.snyk.io/v1/test`](https://api.snyk.io/v1/test) for the right packager manager with the right name and version.
 
@@ -80,7 +80,7 @@ To view details about the download status, open the **System Logs**.
 
 If a scan finds issues, based on your configuration, the download request can be blocked with an HTTP status code "403 Forbidden".
 
-You can find the results of a scan under the artifact properties, where you can decide to ignore the issues and allow downloads. To find the artifact, use the Artifactory search bar or navigate the **t**ree view.
+You can find the results of a scan under the artifact properties, where you can decide to ignore the issues and allow downloads. To find the artifact, use the Artifactory search bar or navigate the tree view.
 
 <figure><img src="../../../.gitbook/assets/Screen Shot 2022-02-02 at 9.47.46 AM.png" alt="Results of a scan"><figcaption><p>Results of a scan</p></figcaption></figure>
 
@@ -96,7 +96,7 @@ For a full list of properties, [view the properties file on GitHub](https://gith
 
 These are the properties set by the plugin on scanned artifacts. Artifact access is allowed or forbidden depending on the values of these properties.
 
-<table data-header-hidden><thead><tr><th width="444"></th><th></th></tr></thead><tbody><tr><td><strong>Property</strong></td><td><strong>Description</strong></td></tr><tr><td><code>snyk.test.timestamp</code></td><td>Date and time when the artifact wast last scanned by Snyk.</td></tr><tr><td><code>snyk.issue.url</code></td><td>This is the URL to the Snyk database and explanation of the vulnerability, including specific details about vulnerable versions, available upgrades, and Snyk patches.</td></tr><tr><td><code>snyk.issue.vulnerabilities</code></td><td>Regardless of the thresholds configured, this row displays vulnerability summary scan results.</td></tr><tr><td><code>snyk.issue.vulnerabilities.forceDownload</code></td><td>When <code>true</code>, allows downloads for this artifact even when there are vulnerabilities.</td></tr><tr><td><code>snyk.issue.vulnerabilities.forceDownload.info</code></td><td>Use this field to provide additional information about why the forceDownload is enabled.</td></tr><tr><td><code>snyk.issue.licenses</code></td><td>Regardless of the thresholds configured, this row displays license summary scan results.</td></tr><tr><td><code>snyk.issue.licenses.forceDownload</code></td><td>When <code>true</code>, allows downloads for this artifact even when there are license issues.</td></tr><tr><td><code>snyk.issue.licenses.forceDownload.info</code></td><td>Use this field to provide additional information about why the forceDownload is enabled.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="444"></th><th></th></tr></thead><tbody><tr><td><strong>Property</strong></td><td><strong>Description</strong></td></tr><tr><td><code>snyk.test.timestamp</code></td><td>Date and time when Snyk last scanned the artifact.</td></tr><tr><td><code>snyk.issue.url</code></td><td>This is the URL to the Snyk database and explanation of the vulnerability, including specific details about vulnerable versions, available upgrades, and Snyk patches.</td></tr><tr><td><code>snyk.issue.vulnerabilities</code></td><td>Regardless of the thresholds configured, this row displays vulnerability summary scan results.</td></tr><tr><td><code>snyk.issue.vulnerabilities.forceDownload</code></td><td>When <code>true</code>, allows downloads for this artifact even when there are vulnerabilities.</td></tr><tr><td><code>snyk.issue.vulnerabilities.forceDownload.info</code></td><td>Use this field to provide additional information about why the forceDownload is enabled.</td></tr><tr><td><code>snyk.issue.licenses</code></td><td>Regardless of the thresholds configured, this row displays license summary scan results.</td></tr><tr><td><code>snyk.issue.licenses.forceDownload</code></td><td>When <code>true</code>, allows downloads for this artifact even when there are license issues.</td></tr><tr><td><code>snyk.issue.licenses.forceDownload.info</code></td><td>Use this field to provide additional information about why the forceDownload is enabled.</td></tr></tbody></table>
 
 ## Troubleshooting for the Artifactory Gatekeeper Plugin
 

@@ -2,9 +2,9 @@
 
 ## Step 1: Configure AWS authentication for your environment
 
-The [`snyk iac describe`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/iac-describe) command requires authentication to your cloud provider in order to run properly. It requires only the lowest read-only access rights possible. You can use use the built-in AWS `ReadOnlyAccess` IAM policy for an IAM user as the default to get started.
+The [`snyk iac describe`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/iac-describe) command requires authentication to your cloud provider to run properly. It requires only the lowest read-only access rights possible. You can use the built-in AWS `ReadOnlyAccess` IAM policy for an IAM user as the default to get started.
 
-`snyk iac describe` can reuse standard authentication methods for AWS, such as the `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` [environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-list). When those are set, the Snyk CLI will automatically pick them up to authenticate on AWS.
+`snyk iac describe` can reuse standard authentication methods for AWS, such as the `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` [environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-list). When those are set, the Snyk CLI automatically picks them up to authenticate on AWS.
 
 Alternatively, you can configure the [AWS profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) in `~/.aws/credentials` and use the `AWS_PROFILE` environment variable.
 

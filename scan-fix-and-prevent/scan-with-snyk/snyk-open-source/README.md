@@ -4,11 +4,11 @@
 To start scanning, see [Scan open-source libraries and licenses](scan-open-source-libraries-and-licenses/).
 {% endhint %}
 
-Snyk Open Source is a developer-first software composition analysis (SCA) solution. Snyk Open Source allows you to find and fix vulnerabilities in the open-source libraries used by your applications. You can also find and address licensing issues in or caused by these open-source libraries.
+Snyk Open Source is a developer-first software composition analysis (SCA) solution. Snyk Open Source lets you find and fix vulnerabilities in the open-source libraries used by your applications. You can also find and address licensing issues in or caused by these open-source libraries.
 
 Developers worldwide use open-source code because it enables fast development. The vast majority of the code making up modern applications is open source. This growing reliance exposes organizations to security vulnerabilities and license issues.
 
-Sometimes, these issues are rooted deep in the code. Open-source packages often reference other packages, and many vulnerabilities are found in these indirect dependencies. Developers may not realize which packages are being called. By using Snyk Open Source, you can reduce the risks introduced by open-source components. Snyk Open Source can help you find, prioritize, and fix security vulnerabilities and license risks in open-source dependencies throughout the SDLC.
+Sometimes, these issues are rooted deep in the code. Open-source packages often reference other packages, and many vulnerabilities are found in these indirect dependencies. Developers may not realize which packages are being called. By using Snyk Open Source, you can reduce the risks that open-source components introduce. Snyk Open Source can help you find, prioritize, and fix security vulnerabilities and license risks in open-source dependencies throughout the SDLC.
 
 Snyk Open Source is available in many common languages and platforms. See [Supported languages and package managers](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
 

@@ -1,18 +1,18 @@
 # Snyk Pull or Merge Requests
 
-In addition to providing fix advice, Snyk enables you create automatic or manual pull requests for supported package managers and ecosystems. To create PRs automatically in implementations with Snyk Broker, your administrator must upgrade to v4.55.0 or later.
+In addition to providing fix advice, Snyk lets you create automatic or manual pull requests for supported package managers and ecosystems. To create PRs automatically in implementations with Snyk Broker, your administrator must upgrade to v4.55.0 or later.
 
 {% hint style="info" %}
 For the basic steps in fixing vulnerabilities, see [Fix your vulnerabilities](../../snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md). To ensure your language is supported, see [Languages supported for Fix Pull Requests or Merge Requests](../../snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md#languages-supported-for-fix-pull-requests-or-merge-requests) and [Supported browsers](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#supported-browsers) pages.
 {% endhint %}
 
 {% hint style="info" %}
-Administrators and account owners can manage the settings for Snyk upgrade pull requests from the Snyk Web UI at both the Organization and Project levels. You can configure whether the feature is enabled (the default) and specify the conditions under which Snyk should submit upgrade pull requests, if at all.
+Administrators and account owners can manage the settings for Snyk upgrade pull requests from the Snyk Web UI at both the Organization and Project levels. You can configure whether the feature is enabled (the default) and specify the conditions under which Snyk submits upgrade pull requests, if at all.
 {% endhint %}
 
 ## Manual Fix PRs
 
-For specific supported languages, you can create pull requests to remediate issues using the Snyk web UI. These combine Snyk fix advice with the list of remediated vulnerabilities to create a pull request that developers can review and merge into their repo's main branch.
+For specific supported languages, you can create pull requests to remediate issues using the Snyk Web UI. These combine Snyk fix advice with the list of remediated vulnerabilities to create a pull request that developers can review and merge into their repository's main branch.
 
 You can start the process from any supported Project's open source vulnerability view.
 

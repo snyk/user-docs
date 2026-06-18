@@ -11,16 +11,16 @@ Snyk can use custom npm Teams and npm Enterprise repositories with npm and Yarn 
 
 This enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
 
-After configuration, Snyk will also use this information to access private dependencies when creating Pull/Merge Requests, by allowing npm and yarn to reach those dependencies in order to regenerate the lockfile.
+After configuration, Snyk also uses this information to access private dependencies when creating Pull/Merge Requests, by allowing npm and Yarn to reach those dependencies to regenerate the lockfile.
 
-You can add configuration to tell Snyk where your private npm Teams and npm Enterprise Node.js packages are hosted and under what scope..
+You can add configuration to tell Snyk where your private npm Teams and npm Enterprise Node.js packages are hosted and under what scope.
 
 This is the same information you would normally add in your `.yarnrc` or `.npmrc`
 
 ## JavaScript language settings
 
 1. Navigate to **Settings** > **Languages** > **JavaScript** and either the npm or Yarn settings, depending on your Project type. Yarn is shown in the screenshot.
-2. If you have not previously connected to npm Teams or npm Enterprise, you will be asked to configure an integration first. See [npm Teams and npm Enterprise registry settings](npm-teams-and-npm-enterprise-integration.md#npm-teams-and-npm-enterprise-registry-settings).
+2. If you have not previously connected to npm Teams or npm Enterprise, Snyk asks you to configure an integration first. See [npm Teams and npm Enterprise registry settings](npm-teams-and-npm-enterprise-integration.md#npm-teams-and-npm-enterprise-registry-settings).
 3. After you have set up the integration, select **Add registry configuration.**
    1. Select **npm** as the **Package source**.
    2. If you want to configure this registry as the default registry url, leave the scope blank.

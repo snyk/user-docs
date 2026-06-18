@@ -12,7 +12,7 @@ Check the status of the PR Checks results in the integrated SCM to identify secu
 
 The following status indicators can appear for your Snyk PR checks in the integrated SCM:
 
-<table><thead><tr><th width="212">Result status</th><th>Description</th></tr></thead><tbody><tr><td><strong>Success/Passed</strong></td><td>No issues were discovered and the manifest file was not changed.</td></tr><tr><td><strong>Pending</strong></td><td>The PR Checks are still running.</td></tr><tr><td><strong>Failed/Issues found</strong></td><td>Security issues were identified in the pull request. In this scenario, you need to manually set the result status to <strong>Passed</strong>.</td></tr><tr><td><strong>Error</strong></td><td>Out-of-sync package.json and package.lock files, failure to find or to read the manifest file.</td></tr><tr><td><strong>Canceled</strong></td><td>The test limit has been reached.</td></tr></tbody></table>
+<table><thead><tr><th width="212">Result status</th><th>Description</th></tr></thead><tbody><tr><td><strong>Success/Passed</strong></td><td>Snyk discovered no issues and the manifest file did not change.</td></tr><tr><td><strong>Pending</strong></td><td>The PR Checks are still running.</td></tr><tr><td><strong>Failed/Issues found</strong></td><td>Snyk identified security issues in the pull request. In this scenario, you must manually set the result status to <strong>Passed</strong>.</td></tr><tr><td><strong>Error</strong></td><td>Out-of-sync package.json and package.lock files, failure to find or to read the manifest file.</td></tr><tr><td><strong>Canceled</strong></td><td>The test reached the test limit.</td></tr></tbody></table>
 
 {% hint style="info" %}
 For false positive or false negative results, see [Troubleshooting PR Checks](troubleshoot-pr-checks.md).
@@ -54,15 +54,15 @@ Confirm your selected issue and click **Open a Fix PR** to open a pull request i
 2. Find the conversation card showing the PR Checks results. For this example, the result is set to **Failed** and is manually changed to **Passed**.
 
 {% hint style="info" %}
-Issues that have previously been ignored via the Snyk Web UI in the associated Open Source or code analysis Project are not flagged in these checks. This reflects [ignored issues](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) across feature branch PRs.
+Issues that you have previously ignored through the Snyk Web UI in the associated Open Source or code analysis Project are not flagged in these checks. This reflects [ignored issues](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) across feature branch PRs.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/github-pr-checks-card.png" alt="PR Checks card in the Conversations tab, GitHub."><figcaption><p>PR Checks card in the Conversations tab, GitHub</p></figcaption></figure>
 
-3. Expand list of files that have been checked for this issue.
+3. Expand the list of files that Snyk checked for this issue.
 4. (Optional) Click **View test page** to examine the issue details.\
    \
-   You can get a complete picture of the vulnerability by clicking **Show more detail** for technical security information and remediation options.\
+   To get a complete picture of the vulnerability, click **Show more detail** for technical security information and remediation options.\
    \
    To return to the main issue page, click **Project**.
 
@@ -73,7 +73,7 @@ Issues that have previously been ignored via the Snyk Web UI in the associated O
 <figure><img src="../../../.gitbook/assets/github-mark-result-successful.png" alt="Marking PR Checks result as successful."><figcaption><p>Marking PR Checks result as successful</p></figcaption></figure>
 
 {% hint style="warning" %}
-Marking a vulnerability as successful does not ignore the issue but only allows the security checks for the PR to pass in this current branch. If the issue is not fixed, it shows up in future commits and PR Checks after you merge it with the target branch.
+Marking a vulnerability as successful does not ignore the issue but only lets the security checks for the PR pass in this current branch. If you do not fix the issue, it shows up in future commits and PR Checks after you merge it with the target branch.
 {% endhint %}
 
 The issue is marked as **Passed** and shows up as **Skipped** in the PR Checks card in GitHub.

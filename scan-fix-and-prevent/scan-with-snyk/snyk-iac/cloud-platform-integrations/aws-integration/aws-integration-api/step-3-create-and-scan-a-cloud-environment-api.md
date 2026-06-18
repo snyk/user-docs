@@ -80,7 +80,7 @@ The response is a JSON document containing details about your newly created Clou
 }
 ```
 
-Snyk automatically triggers a scan when an environment is created.
+Snyk automatically triggers a scan when you create an environment.
 
 {% hint style="info" %}
 The `data.attributes.status` field in the JSON output is set to `in_progress`. This means that Snyk has created your environment and has started scanning it.
@@ -88,7 +88,7 @@ The `data.attributes.status` field in the JSON output is set to `in_progress`. T
 
 ## Check to see if the scan is finished
 
-If you wish, see if the scan is finished by sending another API request in the format that follows to get environment details. You can find the environment ID in the `data.id` field of the JSON output when you create the environment.
+To see if the scan is finished, send another API request in the format that follows to get environment details. You can find the environment ID in the `data.id` field of the JSON output when you create the environment.
 
 ```
 curl -X GET \

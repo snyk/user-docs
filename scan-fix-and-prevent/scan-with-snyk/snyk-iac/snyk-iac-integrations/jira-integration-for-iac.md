@@ -1,8 +1,8 @@
 # Jira integration for Snyk IaC
 
-Snyk Infrastructure as Code allows users to raise Jira issues for misconfigurations found in their IaC resources.
+Snyk Infrastructure as Code lets you raise Jira issues for misconfigurations found in your IaC resources.
 
-This integration is available via the Snyk Web UI only; API support is not provided.
+This integration is available through the Snyk Web UI only. Snyk does not provide API support.
 
 To learn more about setting up and using the integration, see [Jira integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration).
 

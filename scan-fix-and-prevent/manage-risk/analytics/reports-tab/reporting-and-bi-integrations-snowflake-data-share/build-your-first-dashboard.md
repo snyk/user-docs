@@ -148,7 +148,7 @@ ORDER BY open_issues_aging DESC;          -- Update based on the desired order
 
 The MTTR (Mean Time to Resolve) metric tracks the average time it takes to resolve a security issue. It is calculated based on issues that have already been resolved and is measured over a predefined period (typically monthly, quarterly, or annually) according to their last resolution date.
 
-Analyzing the MTTR results provides insight into the the remediation velocity of engineering teams. However, it is important to always measure both MTTR and Aging, as issues that remain open for long periods won’t show up in the MTTR results until they are remediated.
+Analyzing the MTTR results provides insight into the remediation velocity of engineering teams. However, it is important to always measure both MTTR and Aging, as issues that remain open for long periods do not show up in the MTTR results until they are remediated.
 
 ### Example query
 
@@ -192,13 +192,13 @@ ORDER BY organization_display_name ASC;         -- Update based on the desired o
 
 ### Business value
 
-Remediating vulnerabilities is a crucial practice, however it slows down product development that drives companies' business. Due to this simple fact, engineering teams may neglect open vulnerabilities in favor of product development tasks.
+Remediating vulnerabilities is a crucial practice. However, it slows down the product development that drives companies' business. As a result, engineering teams may neglect open vulnerabilities in favor of product development tasks.
 
-Establishing a service-level agreement (SLA) for vulnerability remediation helps maintaining that fine balance and ensure that while moving forward with product development, evolving security risks are being addressed according to a clear and transparent policy.
+Establishing a service-level agreement (SLA) for vulnerability remediation helps maintain that balance and ensures that while moving forward with product development, you address evolving security risks according to a clear and transparent policy.
 
 SLA targets define the acceptable exposure window for a vulnerability based on factors such as severity, business criticality of the asset, code ownership, or other risk factors.
 
-Snyk issues data enables AppSec teams to track issue aging and identify which vulnerabilities have exceeded SLA targets.
+Snyk issues data lets AppSec teams track issue aging and identify which vulnerabilities have exceeded SLA targets.
 
 ### Example query
 
@@ -268,7 +268,7 @@ The example query can be extended to support various SLA use-cases, such as defi
 
 ### Business value
 
-This section demonstrate how you can discover the adoption of Snyk IDE & CLI tests by your developers. Implementing AppSec testing during the development phase is regarded as one of the most cost-effective methods for preventing new security risks from reaching production. It is more efficient because developers are already in the right context to address issues before the code progresses further in the SDLC. Detecting issues in later stages requires developers to switch context and revisit the problem, which can be less efficient and more time-consuming.
+This section demonstrates how you can discover the adoption of Snyk IDE and CLI tests by your developers. Implementing AppSec testing during the development phase is regarded as one of the most cost-effective methods for preventing new security risks from reaching production. It is more efficient because developers are already in the right context to address issues before the code progresses further in the SDLC. Detecting issues in later stages requires developers to switch context and revisit the problem, which can be less efficient and more time-consuming.
 
 ### Example query
 
@@ -302,15 +302,15 @@ GROUP BY IDE, PRODUCT
 
 ### Business value
 
-Preventing vulnerabilities from reaching production involves placing security gates throughout the software development lifecycle (SDLC). One of the most common gates is within the CI/CD pipeline, ensuring that any vulnerabilities missed in earlier stages are caught and blocked during the build process.
+Preventing vulnerabilities from reaching production involves placing security gates throughout the software development lifecycle (SDLC). One of the most common gates is in the CI/CD pipeline, ensuring that any vulnerabilities missed in earlier stages are caught and blocked during the build process.
 
-Leveraging Snyk Data Share enables you to assess the current adoption of tests and security gates within your CI/CD pipelines.
+Using Snyk Data Share lets you assess the current adoption of tests and security gates in your CI/CD pipelines.
 
 ### Example query
 
 The query below returns the number of tested repositories, total tests, and the test % success rate per Snyk Product.
 
-The results are based on tests executed in the CI/CD stage in the last 3 months.
+The results are based on tests executed in the CI/CD stage in the last three months.
 
 ```sql
 SELECT
@@ -345,7 +345,7 @@ A high rate of overridden checks may signal that developers are bypassing securi
 
 The query below returns the total number of pull requests, the count of PRs with at least one failed check, the count of PRs with at least one overridden check, the % of PRs with failed checks, and the % of PRs with overridden checks per target repository.
 
-The results are based on PR checks executed in the last 4 months and filtered to only include monitored and non-deleted projects.&#x20;
+The results are based on PR checks executed in the last four months and filtered to only include monitored and non-deleted projects.&#x20;
 
 You can also adapt this query to prioritize surfacing repositories that have a high rate of overridden checks.
 
@@ -378,13 +378,13 @@ ORDER BY pct_prs_with_failed_checks DESC, pct_prs_with_overridden_checks DESC
 
 Tracking the volume of PR checks by their outcome over time can provide visibility into the overall health and trajectory of any shift-left strategy. By monitoring weekly trends in successful, failed, and errored checks, AppSec teams can detect and investigate spikes in failures and identify product configurations that need attention from error trends.\
 \
-An increasing success rate over time can demonstrate that developers are producing more secure code earlier in your software development life cycle.
+An increasing success rate over time can demonstrate that developers are producing more secure code earlier in your software development lifecycle.
 
 ### Example query
 
 The query below returns weekly counts of PR check groups by if the status was success, failure, or error. The aggregation is done on the pr check group id and using the pr check group state.
 
-The results are based on PR check groups created in the last 6 months and filtered to only include monitored and non-deleted projects.&#x20;
+The results are based on PR check groups created in the last six months and filtered to only include monitored and non-deleted projects.&#x20;
 
 ```sql
 SELECT
@@ -419,9 +419,9 @@ Ensuring PR checks are enabled across your repositories is critical to preventin
 
 The query below returns PR check enablement status per repository for the current 30-day period vs. the preceding 30-day period for both Snyk Code and Snyk Open Source.
 
-PR check enablement is resolved by combining project-level and integration-level settings. Project-level settings overrides take priority when they exist. Otherwise the integration settings apply. A repository is considered covered if at least one organization importing it has PR Checks enabled for all projects associated with that product type for at least one integration.
+Snyk resolves PR check enablement by combining project-level and integration-level settings. Project-level setting overrides take priority when they exist. Otherwise, the integration settings apply. A repository is considered covered if at least one organization importing it has PR Checks enabled for all projects associated with that product type for at least one integration.
 
-Results will be N/A when a repository is new to Snyk or if the specific Snyk product does not apply.&#x20;
+Results are N/A when a repository is new to Snyk or if the specific Snyk product does not apply.&#x20;
 
 ```sql
 WITH

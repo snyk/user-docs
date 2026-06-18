@@ -29,11 +29,11 @@ curl -X POST \
 }"
 </code></pre>
 
-Because `jq -r '.data[0].id` returns the ID of the first environment shown in the Snyk API [List environments](https://apidocs.snyk.io/#get-/orgs/-org_id-/cloud/environments) output, this technique is especially useful if your Organization has a single environment. You can also change the `0` to another number to scan a different environment; for example, `jq -r '.data[1].id` will return the ID of the second environment in the output.
+Because `jq -r '.data[0].id` returns the ID of the first environment shown in the Snyk API [List environments](https://apidocs.snyk.io/#get-/orgs/-org_id-/cloud/environments) output, this technique is especially useful if your Organization has a single environment. You can also change the `0` to another number to scan a different environment. For example, `jq -r '.data[1].id` returns the ID of the second environment in the output.
 
 ## Without `jq`
 
-If you so not have [jq](https://stedolan.github.io/jq/download/) installed, you can send a request to the Snyk API to return all your environment IDs, look for the ID of the environment you want to scan, and send another request to manually trigger the scan.
+If you do not have [jq](https://stedolan.github.io/jq/download/) installed, you can send a request to the Snyk API to return all your environment IDs, look for the ID of the environment you want to scan, and send another request to manually trigger the scan.
 
 ### Find the environment ID
 

@@ -8,7 +8,7 @@ If you are new to Snyk or using Snyk Code Projects, you can skip this step, as t
 
 Conversion provides you with control over which ignores Snyk converts. For example, if you monitor multiple branches for a given repository, you can decide what ignore metadata Snyk converts and uses as the single source of truth going forward.
 
-The following scenario assumes that you have ignored issues in your Snyk Code Project prior to enabling Snyk Code Consistent Ignores.
+The following scenario assumes that you have ignored issues in your Snyk Code Project before enabling Snyk Code Consistent Ignores.
 
 If the **Ignore** button is inactive after you enable the **Snyk Code Consistent Ignores** feature, retest the Project.
 
@@ -41,9 +41,9 @@ To convert all legacy ignores from a Project page, navigate to your **Organizati
 
 ### Convert ignores using Snyk API
 
-For Snyk Code Projects with over 200 legacy Project-scoped ignores, or in scenarios where you want more control over the values applied for ignore attributes, consider using the Snyk API instead. This allows you to programmatically convert Project-scoped ignores to asset-scoped ignores.
+For Snyk Code Projects with over 200 legacy Project-scoped ignores, or in scenarios where you want more control over the values applied for ignore attributes, consider using the Snyk API instead. This lets you programmatically convert Project-scoped ignores to asset-scoped ignores.
 
-The following sequence of API calls allows you to build a custom script tailored to your Organization's needs for this conversion. It does not provide a prescriptive approach, but provides information on the most likely endpoints to consider.
+The following sequence of API calls lets you build a custom script tailored to your Organization needs for this conversion. It does not provide a prescriptive approach, but provides information on the most likely endpoints to consider.
 
 Steps to follow:
 
@@ -61,14 +61,14 @@ Steps to follow:
 * Filter: Use the query parameter `&types=sast` to list only Snyk Code Projects.
 
 {% hint style="info" %}
-The response contains details about each Project, including its ID (`project_id`), origin (e.g., GitHub, CLI), and target repository or branch information. This helps you select the correct Projects, especially if the same repository is imported multiple times, such as through different SCM integrations or using the custom branch feature.
+The response contains details about each Project, including its ID (`project_id`), origin (for example, GitHub, CLI), and target repository or branch information. This helps you select the correct Projects, especially if the same repository is imported multiple times, such as through different SCM integrations or using the custom branch feature.
 {% endhint %}
 
 #### Retrieve existing Project-scoped ignores for a Project
 
 * Goal: For a specific Project identified in step 1, get the details of all its current project-scoped ignores.
 * [API Endpoint](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/ignores-v1): `GET /v1/org/{org_id}/project/{project_id}/ignores`
-* Response format: The response is an object where each key is a project-scoped finding ID (`snyk/org/project/finding/v1`) that has an ignore applied. The value is an array containing details about the ignore(s) for that finding.
+* Response format: The response is an object where each key is a project-scoped finding ID (`snyk/org/project/finding/v1`) that has an ignore applied. The value is an array containing details about the ignores for that finding.
 
 ```javascript
 {
@@ -89,7 +89,7 @@ The response contains details about each Project, including its ID (`project_id`
 ```
 
 {% hint style="info" %}
-Note down the Project-scoped finding ID (e.g., `1ddad474-...`), the `reason`, and the `reasonType` for each ignore you intend to convert.
+Note down the Project-scoped finding ID (for example, `1ddad474-...`), the `reason`, and the `reasonType` for each ignore you intend to convert.
 {% endhint %}
 
 #### Map Project-scoped findings to asset-scoped findings
@@ -116,7 +116,7 @@ Note down the Project-scoped finding ID (e.g., `1ddad474-...`), the `reason`, an
 ```
 
 {% hint style="info" %}
-For each Project-scoped finding ID (`key`) from step 2, find the matching issue in this response and extract its corresponding asset-scoped finding ID (`key_asset`). You will need this `key_asset` value to create the new ignore policy.
+For each Project-scoped finding ID (`key`) from step 2, find the matching issue in this response and extract its corresponding asset-scoped finding ID (`key_asset`). You need this `key_asset` value to create the new ignore policy.
 {% endhint %}
 
 #### Create the new asset-scoped ignore policy
@@ -157,7 +157,7 @@ For each Project-scoped finding ID (`key`) from step 2, find the matching issue 
 
 * Goal: Remove the legacy Project-scoped ignore now that an equivalent asset-scoped policy exists.
 * [API Endpoint:](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/ignores-v1) `DELETE /v1/org/{org_id}/project/{project_id}/ignore/{project_scoped_id}`
-* Key Information: Use the project\_id from step 1 and the `{project_scoped_id}` which is the key from step 2 response (e.g., `1ddad474-39f1-4ac4-b9c6-f2f79a65fd88`).
+* Key Information: Use the project\_id from step 1 and the `{project_scoped_id}` which is the key from step 2 response (for example, `1ddad474-39f1-4ac4-b9c6-f2f79a65fd88`).
 
 #### Verify the changes
 

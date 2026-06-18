@@ -17,11 +17,11 @@ This is the same information you would normally add in your `.yarnrc` or `.npmrc
 
 ## JavaScript language settings
 
-Go to **Settings** > **Languages** > **JavaScript** and either the npm or Yarn settings, depending on your Project type.
+Navigate to **Settings** > **Languages** > **JavaScript** and either the npm or Yarn settings, depending on your Project type.
 
-If you have not previously connected to Nexus Repository Manager you will be asked to configure an integration first; see [Nexus Repository Manager connection setup](./).
+If you have not previously connected to Nexus Repository Manager, Snyk asks you to configure an integration first; see [Nexus Repository Manager connection setup](./).
 
-Follow the steps on the tabs below, according to your version of Nexus.
+Follow the steps on the tab for your version of Nexus.
 
 <figure><img src="../../../../.gitbook/assets/image (246).png" alt=""><figcaption><p>Configure Nexus registry</p></figcaption></figure>
 

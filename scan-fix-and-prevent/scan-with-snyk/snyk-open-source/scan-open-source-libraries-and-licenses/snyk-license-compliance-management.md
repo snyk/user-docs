@@ -31,11 +31,11 @@ You can create and edit multiple license policies for Organizations. For details
 
 ## View compliance issues
 
-Snyk’s [Git-based integrations ](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab.
+The [Git-based integrations ](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations)in Snyk support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab.
 
 <div align="left"><figure><img src="../../../.gitbook/assets/OS-issues-overview-with-license-issues-filter.png" alt=""><figcaption><p>Issues overview with the "License issues" filter applied</p></figcaption></figure></div>
 
-The example below shows a high-severity issue under the GPL-2.0 license, with accompanying instructions as defined in the license's policies.
+The following example shows a high-severity issue under the GPL-2.0 license, with accompanying instructions as defined in the license's policies.
 
 You can also view license issues using the Snyk CLI tool after running `snyk test`:
 
@@ -57,8 +57,8 @@ Click the tree icon to view a full dependency tree. This shows the dependency th
 
 ## Resolve license issues
 
-You can now take action to resolve the license issues identified during the scan, to help you build and deploy your application without outstanding licensing issues.
+You can take action to resolve the license issues identified during the scan, to help you build and deploy your application without outstanding licensing issues.
 
 The actions you take depend on the license conditions and on your policies. For example, if a license violation has surfaced, this issue can be mitigated by either approaching your legal team or by replacing the dependency that added the violation.
 
-Alternatively, you may want to ignore the issue. For details, see [ignore issues](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/).
+Alternatively, you can ignore the issue. For details, see [ignore issues](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/).

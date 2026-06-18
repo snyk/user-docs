@@ -84,7 +84,7 @@ When you include the `.snyk` file in your code repository and the `language-sett
 * By including a `.snyk` file in your code repository with the `language settings:` value set to one of the available UI language settings options, you can override the Organization level settings for SCM scans of that repository to use any Python version that is available in the UI options.
 
 {% hint style="info" %}
-if the `.snyk` file was not present at the initial import of the Project into Snyk., you must re-import the Project.
+If the `.snyk` file was not present at the initial import of the Project into Snyk, you must re-import the Project.
 {% endhint %}
 
 For more information about Python version support, see [Python version support](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/python#technical-specifications).

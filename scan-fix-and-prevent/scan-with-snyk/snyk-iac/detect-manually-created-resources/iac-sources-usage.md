@@ -1,4 +1,4 @@
-# IAC sources usage
+# IaC sources usage
 
 ## **Supported IaC sources**
 

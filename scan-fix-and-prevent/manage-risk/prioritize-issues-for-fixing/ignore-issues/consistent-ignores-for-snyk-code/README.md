@@ -10,11 +10,11 @@ Enable Snyk Code Consistent Ignores for your Group or Organization in the Snyk W
 
 ## Disable Snyk Code Consistent Ignores
 
-Any ignores created or converted with the feature enabled will not be automatically converted back to Project-based ignores. You can recreate them manually after disabling the feature.
+Snyk does not automatically convert ignores created or converted with the feature enabled back to Project-based ignores. You can recreate them manually after disabling the feature.
 
 ## User roles
 
-To create, edit and remove ignores, you need to have a user role assigned with Ignore management permissions. Only Group Admins can set these permissions (see [User role management](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management)).
+To create, edit, and remove ignores, you must have a user role assigned with Ignore management permissions. Only Group Admins can set these permissions (see [User role management](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management)).
 
 1. Log in to the Snyk Web UI and navigate to your Group and Organization.
 2. Navigate to **Members** > **Manage Roles** and select one or more permissions.
@@ -24,7 +24,7 @@ To create, edit and remove ignores, you need to have a user role assigned with I
 ## Manage ignores at the Group level through Snyk Code Security policies
 
 {% hint style="info" %}
-This feature is available to Enterprise customers only. It must be enabled by Snyk before it is accessible.
+This feature is available to Enterprise customers only. Snyk must enable it before it is accessible.
 {% endhint %}
 
 You can manage ignores proactively using Group-level Snyk Code Security policies. As a general rule, you can apply ignore policies when you identify a recurring need to apply similar individual ignores.
@@ -32,12 +32,12 @@ You can manage ignores proactively using Group-level Snyk Code Security policies
 To manage the ignores through security policies, Snyk Code Consistent Ignores need to be enabled at the Group level. You do not require [conversion](convert-project-scoped-ignores-to-asset-scoped-ignores.md) for any previously applied Group level policy ignores. If you want to activate Snyk Code Security policies at the Group level, contact your Snyk account team or Snyk Support.
 
 {% hint style="info" %}
-[**Snyk Security Policies**](https://docs.snyk.io/manage-risk/policies/security-policies) are a separate feature, available at the Group level to all Enterprise customers. That feature is applicable to Open Source and Container, and will not work for Snyk Code. For Group level policy Ignores to apply to Snyk Code, you must use the Snyk Code Security policies feature.
+[**Snyk Security Policies**](https://docs.snyk.io/manage-risk/policies/security-policies) are a separate feature, available at the Group level to all Enterprise customers. That feature is applicable to Open Source and Container, and does not work for Snyk Code. For Group level policy Ignores to apply to Snyk Code, you must use the Snyk Code Security policies feature.
 {% endhint %}
 
 Policies configured to ignore based on Project attributes do not result in ignores being applied in Snyk CLI and IDE settings where a Snyk Project is not available.
 
-To configure a Snyk Code Security policy, select the organization/s or project attributes that the policy should apply to, give it a name, and add rules containing at least one of the following criteria:
+To configure a Snyk Code Security policy, select the Organizations or Project attributes that the policy applies to, give it a name, and add rules containing at least one of the following criteria:
 
 | Criteria | Description                                                                                                                                                                                                                                                      |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -51,7 +51,7 @@ You can take action from Project issues, but Snyk will apply any ignores to the 
 
 When you create, modify, or delete an ignore, you must [retest the Project](../../../../scan-with-snyk/snyk-code/manage-code-vulnerabilities/#retesting-code-repository) to update the issue status.
 
-An indicator at the top of the Project page will notify you if a retest is needed to capture policy or ignore updates.
+An indicator at the top of the Project page notifies you if a retest is needed to capture policy or ignore updates.
 
 Project retests typically occur on a nightly or weekly basis, but you can also retest manually.
 
@@ -60,9 +60,9 @@ Project retests typically occur on a nightly or weekly basis, but you can also r
 1. Log in to the Snyk Web UI and navigate to your Group and Organization.
 2. Open a Project and find an issue card.
 3. Select **Ignore** on an issue card to create an ignore.
-4. Fill in the ignore information and confirm its creation. The issue will be updated and moved from **Open** to **Ignored**.\
+4. Fill in the ignore information and confirm its creation. Snyk updates the issue and moves it from **Open** to **Ignored**.\
    \
-   If anyone loads the page before a retest, an indicator will appear and encourage retesting to capture policy or ignore changes.
+   If anyone loads the page before a retest, an indicator appears and encourages retesting to capture policy or ignore changes.
 
 ### Modify ignore
 

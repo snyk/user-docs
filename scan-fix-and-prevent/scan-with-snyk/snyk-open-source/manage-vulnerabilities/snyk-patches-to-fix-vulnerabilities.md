@@ -4,10 +4,10 @@
 
 Sometimes there is no direct upgrade that can address the vulnerability, or an upgrade is not possible due to functional reasons, for example, the upgrade is a major breaking change.
 
-In such cases, Snyk can help you [protect your code with patches](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-protect-package). This option will make minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when you use [@snyk/protect](https://github.com/snyk/cli/tree/master/packages/snyk-protect).
+In such cases, Snyk can help you [protect your code with patches](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-protect-package). This option makes minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It also updates the policy to patch this issue when you use [@snyk/protect](https://github.com/snyk/cli/tree/master/packages/snyk-protect).
 
 {% hint style="info" %}
-Patching is currently supported for Node.js Projects only.
+Patching is supported for Node.js Projects only.
 {% endhint %}
 
 Patches are applicable in the following scenarios:
@@ -40,7 +40,7 @@ After the patch is created by a Snyk Security Engineer, it is reviewed by two ot
 
 All patches are available for download and review by the community, and Snyk welcomes any feedback.
 
-For unmaintained packages, Snyk will create a patch and open a pull request to the Project for the patch to be merged.
+For unmaintained packages, Snyk creates a patch and opens a pull request to the Project for the patch to be merged.
 
 ## How patches work when you are using the Snyk CLI
 
