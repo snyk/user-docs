@@ -55,7 +55,7 @@ Available features for Go Projects with dependencies managed by Go Modules and d
 * Test your app's SBOM and packages using `pkg:golang` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command.
 
 {% hint style="info" %}
-If the **Snyk Fix PR** feature is enabled, this means that you will be notified if the PR checks fail when the following conditions are met:
+If the **Snyk Fix PR** feature is enabled, this means Snyk notifies you if the PR checks fail when the following conditions are met:
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**
@@ -63,12 +63,12 @@ If the **Snyk Fix PR** feature is enabled, this means that you will be notified 
 
 Snyk supports all versions of Go, including the latest stable version listed on the Go [All releases](https://go.dev/dl/) page.
 
-Snyk tracks only official releases. Snyk does not identify commits, including those in the default branch, unless they are included in an official release or tag. For Projects with a package manager, Snyk requires a release to the package manager. For Go and unamanaged scans (C/C++), Snyk requires an official release or tag in the GitHub repository.
+Snyk tracks only official releases. Snyk does not identify commits, including those in the default branch, unless they are included in an official release or tag. For Projects with a package manager, Snyk requires a release to the package manager. For Go and unmanaged scans (C/C++), Snyk requires an official release or tag in the GitHub repository.
 
 {% hint style="warning" %}
 Since January 1, 2023, Snyk has not supported govendor Projects. As a general security best practice, Snyk recommends using tools that are consistently maintained and up-to-date.
 
-Since Snyk no longer supports scanning of govendor Projects, a warning is issued and no results are provided.
+Because Snyk no longer supports scanning of govendor Projects, Snyk issues a warning and provides no results.
 {% endhint %}
 
 ### Go Modules and dep support
@@ -141,7 +141,7 @@ For more details on levels of access to your repository required by different Sn
 
 Go modules Projects that rely on modules from private SCM repositories are supported if those repositories are in the same SCM organization as the main project repository.
 
-If you have private modules in repositories from other SCM organizations, it is possible that your Project imports do not work properly. The same is true if your code uses SCM submodules from another organization.
+If you have private modules in repositories from other SCM organizations, your Project imports might not work properly. The same is true if your code uses SCM submodules from another organization.
 
 If your private modules have other private modules from another SCM organization, your Project imports do not work. All private modules, including the ones within other modules, need to be part of the same SCM organization as the main project repository.
 

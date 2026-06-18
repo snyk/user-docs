@@ -27,7 +27,7 @@ Use the following table to understand which configurations transfer to the new O
 | ------------------------------------------------------ | --------------------------------------------------- |
 | All integrations and settings                          | Members and Service Accounts                        |
 | SCM and Container settings                             | Existing Projects                                   |
-| Notification integrations (for example Slack, or Jira) | Custom policies and ignore settings                 |
+| Notification integrations (for example, Slack or Jira) | Custom policies and ignore settings                 |
 | PaaS and serverless integrations                       | Infrastructure as Code (IaC) and Snyk Code settings |
 
 ## Configure scan and notification behavior

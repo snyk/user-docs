@@ -116,7 +116,7 @@ Snyk supports the following package managers and versions:
 * pnpm: `pnpm 7`, `pnpm 8`, `pnpm 9`, `pnpm 10`
 * Yarn: `Yarn 1`, `Yarn 2`, `Yarn 3`, `Yarn 4`
 
-Snyk's default package registry is [npmjs.org](https://www.npmjs.org/). Private package registries are supported. For more information, visit [Package repository integrations.](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations)
+The default package registry in Snyk is [npmjs.org](https://www.npmjs.org/). Snyk supports private package registries. For more information, visit [Package repository integrations.](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations)
 
 ### Available integrations
 
@@ -143,9 +143,9 @@ Lerna is partially supported.
 ### Language and package manager considerations
 
 {% hint style="info" %}
-Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.
+Snyk tracks only official releases. Snyk does not identify commits, including those into the default branch, unless they are included in an official release or tag.
 
-In the case of JavaScript packages this means a release to the npmjs.org package registry.
+For JavaScript packages, this means a release to the npmjs.org package registry.
 {% endhint %}
 
 #### devDependencies analysis
@@ -161,7 +161,7 @@ optionalDependencies are included by default for CLI and CI/CD, as well as SCM i
 
 #### Unmanaged JavaScript
 
-If you are on the Enterprise plan and thus have access to the Snyk API, can use the API to get a full list of dependencies and their transitive dependencies.
+If you are on the Enterprise plan and have access to the Snyk API, you can use the API to get a full list of dependencies and their transitive dependencies.
 
 To test for vulnerabilities, you can use the following API endpoints:
 
@@ -171,7 +171,7 @@ To test for vulnerabilities, you can use the following API endpoints:
 
 #### Out of sync lockfiles
 
-Control behavior when the lockfile and package file are in sync can be done using:
+Control the behavior for when the lockfile and package file are in sync using:
 
 * CLI additional values: `--strict-out-of-sync`, `--fail-on`
 * Web UI for SCM scans: **Settings** > **Language** > **JavaScript**
@@ -188,7 +188,7 @@ For all supported lockfile versions, the following features are available:
 Snyk can build a dependency tree with or without a lockfile. If a lockfile is present, Snyk uses it as follows:
 
 * Locally and with CI/CD: if a lockfile is not present and the scan is performed with the CLI or an IDE, Snyk looks at `node_modules` to determine what is installed.
-* With SCM integrations: if a lockfile is not present, Snyk approximates what the tree will look like at build time. This is highly valuable for getting insights into Projects in development or what the next build will look like when there is no lockfile present
+* With SCM integrations: if a lockfile is not present, Snyk approximates what the tree looks like at build time. This is valuable for getting insights into Projects in development or what the next build looks like when no lockfile is present.
 
 As a user of npm, even though npm-audit is at hand anytime you are working with your dependencies, Snyk provides the following capabilities. These are designed for both individuals and companies:
 
@@ -273,7 +273,7 @@ Snyk uses the Yarn lockfile (`yarn.lock`) to generate a representation of Projec
 
 The files Snyk relies on to scan a Project may change on version upgrades of the package manager. Snyk lists only versions verified internally as supported.
 
-If you are using a newer version of Yarn than is not listed on this page, it is possible that Snyk performs as expected because Yarn is using a lockfile version that is already supported. That version of Yarn has likely not been evaluated and, thus not added to this page.
+If you are using a newer version of Yarn that is not listed on this page, Snyk might perform as expected because Yarn is using a lockfile version that is already supported. That version of Yarn has likely not been evaluated and so was not added to this page.
 
 For all supported Yarn versions, the following features are available:
 
@@ -283,7 +283,7 @@ For all supported Yarn versions, the following features are available:
 * Automatic and Manual Fix PRs
 
 {% hint style="info" %}
-Because different versions of Yarn have different feature sets, there are differences in Snyk support in order to match how the package manager works.
+Because different versions of Yarn have different feature sets, Snyk support differs to match how the package manager works.
 
 Resolutions are supported in Yarn v2 and above. Yarn v1 resolutions are not supported.
 {% endhint %}
@@ -341,11 +341,11 @@ Pnpm workspaces must have the `package.json`, `pnpm-lock.yaml` and `pnpm-workspa
 
 Pnpm [workspace protocol](https://pnpm.io/workspaces#workspace-protocol-workspace) is not supported for SCM scans.
 
-Dependencies should be defined explicitly with specific versions, or versions using standard semver. (eg `"foo": "^1.1.0"` )
+Define dependencies explicitly with specific versions, or versions using standard semver (for example, `"foo": "^1.1.0"`).
 
-Dependencies that are defined using workspace protocol for the version (eg `"foo" : "workspace:*"` ) will be listed in SCM scans as undefined version.
+Dependencies that you define using workspace protocol for the version (for example, `"foo" : "workspace:*"`) appear in SCM scans as undefined version.
 
-For all workspaces, Fix PRs and Upgrade PRs do not support workspaces lockfile updates. PRs for these Projects will update the `package.json` only.
+For all workspaces, Fix PRs and Upgrade PRs do not support workspaces lockfile updates. PRs for these Projects update the `package.json` only.
 
 #### CLI scanning considerations
 
@@ -386,7 +386,7 @@ pnpm workspaces must have the `package.json`, `pnpm-lock.yaml` and `pnpm-workspa
 
 To detect and scan all workspaces in your Yarn Project, use the CLI options identified for monorepos and workspaces, as well as this Yarn-specific option.
 
-`--yarn-workspaces` : Uses instead of `--all-projects` to detect and scan only Yarn workspaces Projects when a lockfile is present in the root. Other ecosystems will be ignored.
+`--yarn-workspaces` : Use instead of `--all-projects` to detect and scan only Yarn workspaces Projects when a lockfile is present in the root. Snyk ignores other ecosystems.
 
 ## Validating, monitoring, alerting, and gating for JavaScript
 

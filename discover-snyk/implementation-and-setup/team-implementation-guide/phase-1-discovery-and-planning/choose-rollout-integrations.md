@@ -2,7 +2,7 @@
 
 ## **SDLC integration points**
 
-Snyk offers many integrations that seamlessly integrate into every stage of the SDLC.
+Snyk offers many integrations across every stage of the SDLC.
 
 Many businesses typically roll out automated solutions first, then slowly introduce tools to enable the developers. In addition, gating features are gradually turned on over a period of time to minimize disruption.
 
@@ -16,7 +16,7 @@ Below are typical early integrations.
 
 ### Source Code Management (SCM) integrations
 
-Integrations with popular version control platforms like GitHub, GitLab, Azure Repos, and Bitbucket seamlessly integrate Snyk security checks into the code review process. This ensures that potential vulnerabilities are identified and addressed before the code is merged into the main branch. Important features include:
+Integrations with popular version control platforms like GitHub, GitLab, Azure Repos, and Bitbucket integrate Snyk security checks into the code review process. This ensures that Snyk identifies and addresses potential vulnerabilities before the code is merged into the main branch. Important features include:
 
 * Daily testing/monitoring of a specified branch (typically "development" branch),
 * (optional) Pull Request/Merge Request checks against any branch of the repository.
@@ -43,7 +43,7 @@ If you have a non-cloud-facing or your own instance of a Git SCM:
 
 ### Continuous Integration/Continuous Deployment (CI/CD) pipeline integrations
 
-Integrating Snyk into CI/CD pipelines, such as Jenkins, Travis CI, or CircleCI, automates security checks during the build and deployment process. This ensures that vulnerabilities are detected early in the software development lifecycle and prevents their propagation into production. Typical features include:
+Integrating Snyk into CI/CD pipelines, such as Jenkins, Travis CI, or CircleCI, automates security checks during the build and deployment process. This ensures that Snyk detects vulnerabilities early in the software development lifecycle and prevents their propagation into production. Typical features include:
 
 * (Optional) Ability to passively monitor results during build and view results in Snyk
 * (Optional) Ability to test and potentially break the build based on criteria you specified
@@ -59,13 +59,13 @@ For more details, see [Snyk CI/CD integrations](https://app.gitbook.com/o/-M4tdx
 
 ### Integrated Development Environment (IDE) integrations
 
-IDE integrations like Visual Studio Code, IntelliJ IDEA, and Eclipse allow developers to access Snyk's security features directly within their coding environment. This enables real-time scanning and issue remediation as developers write code at the earliest possible stages.
+IDE integrations like Visual Studio Code, IntelliJ IDEA, and Eclipse let developers access the security features in Snyk directly within their coding environment. This enables real-time scanning and issue remediation as developers write code at the earliest possible stages.
 
 For more details, see [Use Snyk in your IDE](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions).
 
 ## Considerations for import strategies
 
-<table><thead><tr><th width="200">Project Import Strategy</th><th>Considerations</th><th>Advantages</th><th>Disadvantages</th></tr></thead><tbody><tr><td>CLI (automated CI/CD)</td><td>Must be configured for each application within CI/CD.</td><td><ul><li>Can select what to test and when (i.e. which package managers, where in the process, which language to analyze.</li><li>May need development effort for integration.</li></ul></td><td>It requires configuration per application.</td></tr><tr><td>CLI (Run locally by user)</td><td>User can use CLI to perform testing locally while working on an application, very configurable per scan type.</td><td>Local use case</td><td>Not meant for visibility or automation. Can require buildable code or dependencies to be installed (For example Gradle without Lockfile, Scala).</td></tr><tr><td>Git Code Repository Integration</td><td>Onboarding and daily monitoring: rapid vulnerability assessment across application portfolio.</td><td><ul><li>Continuous monitoring of repositories (even when you are not working on it).</li><li>Centralized visibility for teams.</li><li>Monitors specified branch</li><li>Code does not need to be built.</li></ul></td><td><ul><li>Can be initiated via UI</li><li>Some languages/package managers have better resolution utilizing the CLI (Gradle without lockfile, Scala).</li></ul></td></tr><tr><td></td><td>Pull request (PR)/merge request (MR) scanning</td><td>Immediate feedback on introduced issues on the PR/MR against any branch on repository.</td><td>Configurable rules for pass/fail</td></tr></tbody></table>
+<table><thead><tr><th width="200">Project Import Strategy</th><th>Considerations</th><th>Advantages</th><th>Disadvantages</th></tr></thead><tbody><tr><td>CLI (automated CI/CD)</td><td>Must be configured for each application within CI/CD.</td><td><ul><li>Can select what to test and when (that is, which package managers, where in the process, which language to analyze).</li><li>May need development effort for integration.</li></ul></td><td>It requires configuration per application.</td></tr><tr><td>CLI (Run locally by user)</td><td>User can use CLI to perform testing locally while working on an application, configurable per scan type.</td><td>Local use case</td><td>Not meant for visibility or automation. Can require buildable code or dependencies to be installed (For example Gradle without Lockfile, Scala).</td></tr><tr><td>Git Code Repository Integration</td><td>Onboarding and daily monitoring: rapid vulnerability assessment across application portfolio.</td><td><ul><li>Continuous monitoring of repositories (even when you are not working on it).</li><li>Centralized visibility for teams.</li><li>Monitors specified branch</li><li>Code does not need to be built.</li></ul></td><td><ul><li>Can be initiated through the UI</li><li>Some languages/package managers have better resolution using the CLI (Gradle without lockfile, Scala).</li></ul></td></tr><tr><td></td><td>Pull request (PR)/merge request (MR) scanning</td><td>Immediate feedback on introduced issues on the PR/MR against any branch on repository.</td><td>Configurable rules for pass/fail</td></tr></tbody></table>
 
 ## Additional considerations
 
@@ -73,8 +73,8 @@ For more details, see [Use Snyk in your IDE](https://app.gitbook.com/o/-M4tdxG8q
 
 For Snyk Infrastructure as Code, it is common that your Terraform or YAML configuration files are held in your SCM, but they may be in a separate area or repository. As a result, consider if there are other areas you need to import. You may also want to integrate with Terraform Cloud (if applicable) to enable Snyk tests as part of your "Terraform run" processes.
 
-For complex environments, modules, and highly templated implementations, utilizing the CLI on your Terraform Plan file may provide the best results.
+For complex environments, modules, and highly templated implementations, using the CLI on your Terraform Plan file can provide the best results.
 
 ### CR (Container Registries)
 
-Snyk also integrates with various [Container Registries](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.
+Snyk also integrates with various [Container Registries](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations) so you can import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.

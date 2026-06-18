@@ -5,8 +5,8 @@ Implementing a developer security tool like Snyk is critical to ensuring the sec
 Here is a brief overview of the process:
 
 1. **Assessment**: Evaluate your current security practices and identify areas for improvement.
-2. **Planning**: use the provided Project plans to outline your goals, timelines, and necessary resources.
-3. **Configuration**: Follow configuration guidance to tailor the security platform to your needs, ensuring it integrates seamlessly with your existing tools and workflows.
+2. **Planning**: Use the provided Project plans to outline your goals, timelines, and necessary resources.
+3. **Configuration**: Follow configuration guidance to tailor the security platform to your needs, ensuring it integrates with your existing tools and workflows.
 4. **Rollout**: Implement the platform across your development teams, following the specific guidance for small teams or enterprise environments.
 5. **Training**: Educate your developers on the importance of security and how to use the platform effectively.
 6. **Monitoring and iteration**: Continuously monitor the health and performance of your applications and make adjustments as needed to maintain optimal security.

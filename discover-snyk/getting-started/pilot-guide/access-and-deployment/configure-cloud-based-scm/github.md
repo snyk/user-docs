@@ -2,7 +2,7 @@
 
 {% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
-‌Review the steps below to configure the GitHub integration with Snyk. For more details about setting up the GitHub integration, contact your Snyk account team.
+‌Review the following steps to configure the GitHub integration with Snyk. For more details about setting up the integration, contact your Snyk account team.
 
 ## Generate a GitHub PAT
 
@@ -32,7 +32,7 @@ Configure the Group-level integration by following these steps:
 * Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate GitHub using Snyk Essentials](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations/github-for-snyk-essentials#github-integrate-using-snyk-apprisk) page.
 
 {% hint style="info" %}
-After the integration is configured, the Group-level integration shifts to a **Partially connected** status. During the next synchronization, it will transition to the connected state, and the Inventory view will be filled with data from the GitHub source.
+After the integration is configured, the Group-level integration shifts to a **Partially connected** status. During the next synchronization, it transitions to the connected state, and the Inventory view fills with data from the GitHub source.
 {% endhint %}
 
 ## Configure the Organization-level integration

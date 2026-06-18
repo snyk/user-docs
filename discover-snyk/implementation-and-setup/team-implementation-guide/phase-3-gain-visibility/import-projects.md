@@ -1,6 +1,6 @@
 # Import Projects
 
-Depending on the integrations you have configured, and the language / package managers in your tech stack, you can import Projects into Snyk using:
+Depending on the integrations you have configured, and the languages and package managers in your tech stack, you can import Projects into Snyk using:
 
 * A source control integration with your Git repositories
 * The Snyk CLI with CI/CD.
@@ -35,14 +35,14 @@ For a small number of applications, typically under a hundred:
 For hundreds or thousands of repositories:
 
 * At scale, Snyk recommends using the API. APIs are available with the Snyk Enterprise plan.
-  * Use the [Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/snyk-api) to import your Projects. This leverages an existing source control integration and can be used to automate processes.
-  * The [API-import](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. The source control structure will need to be mirrored.
+  * Use the [Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/snyk-api) to import your Projects. This uses an existing source control integration and can automate processes.
+  * The [API-import](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import) tool uses the API to manage onboarding at scale for large enterprises and is the suggested tool to use at scale. You must mirror the source control structure.
 
 ## Snyk CLI
 
 For details, see [Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli).
 
-The CLI allows granular scanning of individual Projects.
+The CLI lets you scan individual Projects granularly.
 
 {% hint style="info" %}
 A command must be formulated for each type of test to perform (open source, code, infrastructure as code, and container).
@@ -55,9 +55,9 @@ To use the Snyk CLI:
 3. In the script, navigate to the Project folder.
 4. Run the appropriate `snyk test` or `snyk monitor` commands and options for the type of scan you want to run.\
    \
-   Where to implement testing in your scripts is generally flexible but most commonly prior to deployment. Use the monitor command alone for Snyk Open Source and Snyk Container to passively report. When you are using gating through the `test` command, the purpose is to break the build if issues are found that meet particular criteria like `--severity-threshold` or any number of options in the CLI or the `snyk-filter` plugin.\
+   Where to implement testing in your scripts is generally flexible but most commonly before deployment. Use the monitor command alone for Snyk Open Source and Snyk Container to passively report. When you are using gating through the `test` command, the purpose is to break the build if issues are found that meet particular criteria like `--severity-threshold` or any number of options in the CLI or the `snyk-filter` plugin.\
    \
-   In general, Snyk Open source is typically run in `test` and/or `monitor` after the dependencies are installed on the build system.\
+   In general, Snyk Open Source is typically run in `test` and `monitor` after the dependencies are installed on the build system.\
    \
    A typical command can look as follows:
    * Code: `snyk code test --org=[org-id]`
@@ -65,7 +65,7 @@ To use the Snyk CLI:
      * `snyk test --all-projects --org=[org-id]`
      * `snyk monitor --all-projects --org=[org-id]`\
        Replace `[org-id]` with the ID of your Organization.
-   * For Container and Infrastructure as Code scans, see [Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/scan-container-images) and [Infrastructure as Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac), as this will vary based on the type being scanned.
+   * For Container and Infrastructure as Code scans, see [Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/scan-container-images) and [Infrastructure as Code](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac), as this varies based on the type being scanned.
 5. Review results either locally when running `snyk test`, or on the Snyk Web UI when using `monitor` or report.
 
 For demonstrations of various pipeline integrations, see [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples).

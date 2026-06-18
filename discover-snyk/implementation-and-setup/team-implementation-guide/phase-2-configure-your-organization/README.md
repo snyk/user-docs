@@ -2,15 +2,15 @@
 
 ## Name your Organization
 
-This step is easiest performed prior to purchasing the license. If you did not, Snyk support can assist you.
+This step is easiest performed before purchasing the license. If you did not, Snyk support can assist you.
 
-### Changing the name prior to purchase
+### Changing the name before purchase
 
 Click the arrows next to your Organization name, click **Create New Organization**. From the **Settings-Plans and Billing** page, purchase a team plan.
 
 ### Changing the name after purchase
 
-After determining the name of your Organization in phase 1, navigate to **Settings** in the Snyk web UI and update your **Organization** **name**.&#x20;
+After determining the name of your Organization in phase 1, navigate to **Settings** in the Snyk Web UI and update your **Organization** **name**.&#x20;
 
 {% hint style="info" %}
 You must contact Snyk support and submit a ticket to update the url slug. This can impact any existing CI/CD scripts that your team has previously created, so this step should be performed as early as possible and be communicated to your team if CLI has been in use for a while.

@@ -1,6 +1,6 @@
 # Automate prevention measures
 
-Once you have visibility into your existing security posture, implement prevention and gating systems to stop new vulnerabilities from entering your applications. By automating these checks, you empower developers to take responsibility for the security of their specific changes without manually triaging every issue.
+After you have visibility into your existing security posture, implement prevention and gating systems to stop new vulnerabilities from entering your applications. By automating these checks, you empower developers to take responsibility for the security of their specific changes without manually triaging every issue.
 
 Implementing prevention measures involves the following key stages:
 
@@ -19,13 +19,13 @@ Implementing prevention measures involves the following key stages:
 
 You can prevent new issues using two main functions:
 
-* **PR/MR checks**: Available for Snyk Open Source and Snyk Code. These test code changes are immediately upon submission.
+* **PR/MR checks**: Available for Snyk Open Source and Snyk Code. These test code changes immediately upon submission.
 * **CI/CD pipelines**: Integrate Snyk into your build pipeline to gate Open Source, Code, IaC, and Container vulnerabilities.
 
 ## Establish exception processes
 
 {% hint style="success" %}
-**Key decision**: Define who can override security gates. Clear authority prevents development bottlenecks during urgent releases.:&#x20;
+**Key decision**: Define who can override security gates. Clear authority prevents development bottlenecks during urgent releases.&#x20;
 {% endhint %}
 
 Ensure teams understand how to address blocked PRs or failed builds:
@@ -52,7 +52,7 @@ PR checks prevent issues from entering the codebase.
 
 Adding Snyk to your pipeline acts as a gatekeeper:
 
-* **No import is required**: Unlike PR checks, pipeline tests do not require repositories to be imported via SCM integration.
+* **No import is required**: Unlike PR checks, pipeline tests do not require repositories to be imported through SCM integration.
 * **Use CLI tools**: Use `snyk-delta` to identify only the new vulnerabilities introduced in a specific build.
 
 ## Secure custom images and IaC

@@ -97,7 +97,7 @@ Snyk requires both files to be present to correctly test, monitor, and fix Ruby 
 
 If your Gemfile needs access to private Gem sources, see [Private gem sources for Ruby configuration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/private-gem-sources-for-ruby-configuration).
 
-Using private Gem sources should work normally when you are using the Snyk CLI.
+Using private Gem sources works normally when you use the Snyk CLI.
 
 When creating Fix PRs for Ruby Projects using private Gem sources, Snyk may need access to the service hosting the Gems to update the file correctly.
 

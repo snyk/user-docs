@@ -18,13 +18,13 @@ The **All Assets** page shows a complete list of all repositories, including the
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcmljy-ooiInsutXG8MAz5nwwTDGFlODl6YGUnbdx942g-RUiuVDMExkkAXG0cCPkcbsh6uT-eJdURlItkQSUZfxGHbYUhLlxqNMI0IFDIX2paJE45ywN6kX3zB2SMlZ_rg4cqb?key=i_CNrr-DvB8PGUAzq09BT3pc" alt=""><figcaption></figcaption></figure>
 
-Click on the 'Not tested' section of the first pie chart on the overview page, or use coverage filters on the 'All Assets' page to view all repositories that the selected Snyk product has not tested.
+Click the 'Not tested' section of the first pie chart on the overview page, or use coverage filters on the 'All Assets' page to view all repositories that the selected Snyk product has not tested.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdlF4lPPJwbjSsf6AuZGzPERNXWKLi6gUWCF7JO0jOiYCgNYtHsqkvzxCIkx6-Ea5Kl9pF1VItX100Eo-ZN8MquDnUNfzUC2_C6f2p29TIv_5zOLNBfPumkBg0BrSf3bmCLDk2tXQ?key=i_CNrr-DvB8PGUAzq09BT3pc" alt=""><figcaption></figcaption></figure>
 
-## Classifying Assets
+## Classifying assets
 
-The Class column is available for each repository. This class is meant to reflect the business criticality of the asset from A (most critical) to D (least critical). Try setting a few of your most important repos manually to Class A. This attribute can be used in reporting to help focus on issues from your company’s most important repositories.
+The Class column is available for each repository. This class reflects the business criticality of the asset from A (most critical) to D (least critical). Try setting a few of your most important repos manually to Class A. You can use this attribute in reporting to help focus on issues from your company’s most important repositories.
 
 \\
 
@@ -34,7 +34,7 @@ In the following example, the policy filters on all repositories where there is 
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcC7X0ZTEwCAix3-FOwBYV5pKnyCTGigFGmVLy0VNgkPcW4JZpgzdEB3YtuyJWZ6I_f1VSWXlQfIoKnGw1Em3u3Wqnf1-LVSYhL1Im189lpjZLpJi1kTFf7zw9Fn03x3BC0xZbVSg?key=i_CNrr-DvB8PGUAzq09BT3pc" alt=""><figcaption></figcaption></figure>
 
-The asset class is a great way to filter on the most critical repositories in your organization, and help take a risk-based approach to prioritization by accounting for business impact. The asset class can be used when reviewing scan coverage and in all available Snyk reports.
+The asset class lets you filter on the most critical repositories in your organization and helps you take a risk-based approach to prioritization by accounting for business impact. You can use the asset class when reviewing scan coverage and in all available Snyk reports.
 
 {% hint style="info" %}
 Additional Resources

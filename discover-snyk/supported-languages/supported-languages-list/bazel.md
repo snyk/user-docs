@@ -28,7 +28,7 @@ The Dep Graph API requires specific permissions. If you do not have access, cont
 
 You can test Bazel dependencies across any supported ecosystem, except C++, which is not supported by these endpoints.
 
-Use the Snyk Dep Graph API endpoints [Test Dep Graph](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1) and [Monitor Dep Graph](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/monitor-v1) to test and monitor dependencies managed by Bazel. The monitor capability allows you to submit a tree for Snyk to monitor for vulnerabilities.
+Use the Snyk Dep Graph API endpoints [Test Dep Graph](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1) and [Monitor Dep Graph](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/monitor-v1) to test and monitor dependencies managed by Bazel. The monitor capability lets you submit a tree for Snyk to monitor for vulnerabilities.
 
 ### Test and monitor dependencies
 

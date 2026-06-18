@@ -21,8 +21,8 @@ By default, Snyk tests Pip Projects using Python 3.7.
 {% hint style="warning" %}
 The behavior of imports, re-tests, and PR checks for Projects with dependencies requiring a higher version of Python varies according to the version specified:
 
-* Python 3.8 or above: scans will fail with an [error](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/error-catalog) message that includes details of the first failed package, the Python version it requires, and the Python version used.
-* Python 2.7 or 3.7: scans will succeed, but the incompatible dependencies are omitted from the results.
+* Python 3.8 or above: scans fail with an [error](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/error-catalog) message that includes details of the first failed package, the Python version it requires, and the Python version used.
+* Python 2.7 or 3.7: scans succeed, but the incompatible dependencies are omitted from the results.
 {% endhint %}
 
 To define which Python minor version Snyk uses to test your Pip Projects imported using SCM integrations, you can use Organization settings and [`.snyk` policy file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file).
@@ -45,7 +45,7 @@ language-settings:
 
 The `.snyk` file must be in the same directory as the Project manifest file.
 
-Snyk will select which Python version to use according to the `major`, `minor` and `patch` versions specified in the `.snyk` file.
+Snyk selects which Python version to use according to the `major`, `minor` and `patch` versions specified in the `.snyk` file.
 
 * `Major` version only (for example, 2 or 3): scanned with default `minor` versions - 2.7 or 3.7
 * `Major` and `minor` version (for example, 3.7, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13, 3.14): scanned with 3.7, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13, or 3.14
@@ -67,7 +67,7 @@ The following dependencies are not supported and are removed before the file is 
 
 To scan Pip Projects, Snyk analyzes your `requirements.txt` files using native `pip` tooling in an isolated Linux environment.
 
-Pip Projects scanned using the SCM integration will be given the same name as the directory where they are located.
+Pip Projects scanned using the SCM integration are given the same name as the directory where they are located.
 
 Snyk imports any file that follows the `**/*req*.txt` pattern. This can help if you have renamed the `requirements.txt` files, for example, to `requirements-dev.txt`.
 
@@ -106,7 +106,7 @@ Poetry scans fail with an unparsable manifest / unable to parse `pyproject.toml`
 
 Under `[tool.poetry]`, Poetry allows `include` to mix plain path strings and `{ path = "...", format = [...] }` inline tables in one array. That is valid TOML 1.0 and a valid Poetry configuration.
 
-Snyk’s Poetry analysis parses `pyproject.toml` with a TOML implementation that does not accept mixed-type inline arrays. Parsing stops at that array, so the file is treated as invalid before dependency logic runs.
+The Poetry analysis in Snyk parses `pyproject.toml` with a TOML implementation that does not accept mixed-type inline arrays. Parsing stops at that array, so Snyk treats the file as invalid before running the dependency logic.
 
 Example of a failing configuration:
 
@@ -129,7 +129,7 @@ include = [
 ## SCM repositories and Pipenv
 
 {% hint style="warning" %}
-Private PyPI mirrors are not supported. `Pipfiles` specifying a private mirror as their only source will not be imported.
+Private PyPI mirrors are not supported. `Pipfiles` specifying a private mirror as their only source are not imported.
 {% endhint %}
 
 To scan Pipenv Projects, Snyk analyzes your `Pipfile` and `Pipfile.lock` files using native `pipenv` tooling in an isolated Linux environment.

@@ -1,6 +1,6 @@
 # Configure Group settings and policies
 
-This page is designed to help you plan your Snyk account structure and policies at Group-level to ensure efficient asset management, precise access control, and accurate reporting.
+This page helps you plan your Snyk account structure and policies at Group level to ensure efficient asset management, precise access control, and accurate reporting.
 
 ## Confirm points of contact
 
@@ -37,7 +37,7 @@ To identify priority applications, categorize them based on:
 * Define who can provision users and grant Snyk access to external platforms, such as Git repositories.
 {% endhint %}
 
-Snyk uses a hierarchical structure to manage all assets and security policies. This section will help you map your business to the Snyk architecture.
+Snyk uses a hierarchical structure to manage all assets and security policies. This section helps you map your business to the Snyk architecture.
 
 * **Understanding the hierarchy:** Learn the purpose of the Tenant, Group, Organization, and Project levels.
 * **Group structure:** Decide how many top-level Group accounts your company requires.
@@ -46,7 +46,7 @@ To learn more, visit [Structure your account](structure-your-account.md).
 
 ## Authentication and access: set up SSO
 
-Implement Single Sign-On (SSO) at the Group level before rolling Snyk out to your organization. While pilot teams often start with personal authentication, transitioning to SSO is required for broad adoption, consistent login access, and centralized control.
+Implement Single Sign-On (SSO) at the Group level before rolling Snyk out to your organization. While pilot teams often start with personal authentication, you must transition to SSO for broad adoption, consistent login access, and centralized control.
 
 Choose a provisioning strategy that defines the user experience and access level for new users.
 
@@ -88,7 +88,7 @@ To learn more, visit [Authentication and access.](authentication-and-access.md)
 * Decide how to automate the governance, tracking, and remediation workflows for your assets to ensure continuous security visibility and compliance
 {% endhint %}
 
-Policies allow you to automate business context, compliance checks, and notification workflows.
+Policies let you automate business context, compliance checks, and notification workflows.
 
 * **License policies:** Decide which specific license types to explicitly allow or disallow to match your specific legal and compliance requirements.
 * **License severity:** Understand and configure how Snyk assigns High or Medium severity to problematic commercial licenses.

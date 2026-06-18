@@ -1,8 +1,8 @@
 # Connect your development tools
 
-To roll out Snyk efficiently at scale, your first major milestone is configuring a Template Organization. Rather than setting up every new team from scratch, this template acts as your master blueprint. By configuring your core tools, source control integrations, and default security behaviors here first, you establish a standardized baseline that can be easily cloned, either manually or using the API, across your entire business.
+To roll out Snyk efficiently at scale, your first major milestone is configuring a Template Organization. Rather than setting up every new team from scratch, this template acts as your master blueprint. By configuring your core tools, source control integrations, and default security behaviors here first, you establish a standardized baseline that you can clone, either manually or using the API, across your entire business.
 
-As you work through this page, you will:
+As you work through this page, you complete these tasks:
 
 1. [Configure SCM integrations for Groups.](connect-your-development-tools.md#configure-scm-integrations-for-groups)
 2. [Configure SCM integrations for Organizations.](connect-your-development-tools.md#configure-scm-integrations-for-organizations)
@@ -26,7 +26,7 @@ The following table outlines the difference between these two implementation lev
 
 ### Configure SCM integrations for Groups
 
-Configure your Source Control Manager (SCM) at the Group level to centralize authentication. This allows Snyk to access your repositories across multiple Organizations without requiring individual configuration for each one.
+Configure your Source Control Manager (SCM) at the Group level to centralize authentication. This lets Snyk access your repositories across multiple Organizations without requiring individual configuration for each one.
 
 {% embed url="https://res.cloudinary.com/snyk/video/upload/v1775661962/3._Group-Level_Repository_Discovery_jvicn7.mp4" %}
 Group level repository discovery video guide
@@ -69,7 +69,7 @@ Your integration approach should match the structure you selected during the pla
 
 * **SCM organization-based structure**: If you have 10+ SCM organizations and are using the `snyk-api-import` tool, ensure your Group-level integration has the scope to access all relevant repositories.
 * **Team-based structure**: Use Group-level authentication to ensure consistency across different developer teams while maintaining isolated Organizations.
-* **Product-based structure**: Centralizing at the Group level allows developers to seamlessly access Projects across multiple product Organizations.
+* **Product-based structure**: Centralizing at the Group level lets developers access Projects across multiple product Organizations.
 
 | Structure type    | Integration strategy                                                        |
 | ----------------- | --------------------------------------------------------------------------- |
@@ -95,7 +95,7 @@ If you are using multiple SCMs, Snyk recommends using separate Organizations for
 **Key decision:** Determine if this specific Organization requires a unique access token or a different service account than the one used at the Group level.
 {% endhint %}
 
-Unlike Group-level setup, Organization-level integrations allow you to:
+Unlike Group-level setup, Organization-level integrations let you:
 
 * **Isolate access:** Use a unique Personal Access Token (PAT) or OAuth connection that only has access to a specific team's repositories.
 * **Override Group defaults:** If a specific business unit uses a different SCM instance (for example, a separate GitHub Org or GitLab Group), you can configure it here without affecting the rest of the company.
@@ -113,7 +113,7 @@ Set up your Org-level integrations by navigating to your Organization **Integrat
 When configuring at the Organization level, consider:
 
 * **Token segmentation:** You can assign a unique Broker token to an Organization. This is useful if different teams operate in different VPCs or data centers.
-* **Granular troubleshooting:** Dedicated tokens allow you to monitor and troubleshoot connectivity issues for a specific team without impacting the entire Group.
+* **Granular troubleshooting:** Dedicated tokens let you monitor and troubleshoot connectivity issues for a specific team without impacting the entire Group.
 
 {% hint style="info" %}
 If you are using Azure Repos, Snyk recommends using Universal Broker to avoid Azure limitations on organization mapping.
@@ -136,7 +136,7 @@ While the Group integration provides the connection, the Organization level is w
 | ------------------- | ---------------------------------------------------------------------- |
 | Access control      | Limits repository visibility to only the members of that Organization. |
 | Snyk Broker mapping | Maps specific SCM instances to specific internal network segments.     |
-| Customized rollout  | Allows for different "prevention" settings (PR checks) per team.       |
+| Customized rollout  | Allows different "prevention" settings (PR checks) per team.       |
 {% endstep %}
 {% endstepper %}
 
@@ -180,7 +180,7 @@ For Amazon ECR, Snyk recommends using Cross-Account Role authentication for enha
 **Key decision:** Decide on a monitoring frequency that balances security visibility with your team's remediation capacity.
 {% endhint %}
 
-Once integrated, Snyk allows you to manage how often images are re-tested:
+After integration, Snyk lets you manage how often images are re-tested:
 
 * **Continuous monitoring**: Snyk automatically rescans imported images daily to detect new vulnerabilities.
 * **Avoid duplication**: If you already scan images in your CI/CD pipeline using the Snyk CLI, decide if you also need registry-level monitoring. Registry integration provides a last line of defense for images currently in storage.
@@ -199,9 +199,9 @@ As with SCM integrations, ensure email notifications are disabled at the Organiz
 
 Snyk strongly recommends integrating your container registry if your organization fits any of the following profiles:
 
-* **Empowering AppSec autonomy**: This solution enables Application Security (AppSec) teams to manage and scan container images independently. It allows security teams to maintain oversight without bottlenecking developers or requiring them to change existing workflows.
+* **Empowering AppSec autonomy**: This solution lets Application Security (AppSec) teams manage and scan container images independently. It lets security teams maintain oversight without bottlenecking developers or requiring them to change existing workflows.
 * **Scanning legacy and offline images:** If you have a large number of older images or multiple legacy tags that no longer have an active build pipeline, registry integration is the most efficient way to ensure they are still scanned for vulnerabilities.
-* **Small-scale repositories:** Direct integration and UI management work best for smaller volumes of images (under 1,000). A smaller inventory makes the import process seamless and keeps the user interface fast and responsive.
+* **Small-scale repositories:** Direct integration and UI management work best for smaller volumes of images (under 1,000). A smaller inventory simplifies the import process and keeps the user interface responsive.
 * **Limited developer bandwidth:** If your development team lacks the availability to update build pipelines or integrate new security tools into their current processes, direct registry scanning provides a frictionless alternative.
 
 ### Use cases for CI/CD or CLI
@@ -251,7 +251,7 @@ This configuration is specific to asset management and is separate from the Orga
 **Key decision**: Choose which metadata (tags) and application structures are most critical for your risk assessment and reporting.
 {% endhint %}
 
-Once assets are imported, use the following features to organize your inventory:
+After you import assets, use the following features to organize your inventory:
 
 * **Automatic tags**: Snyk automatically adds tags for detected technologies (for example, Python, Terraform).
 
@@ -303,7 +303,7 @@ Before installation, verify your environment:
 1. Install the setup CLI tool: `npm install -g snyk-broker-config`
 2. Start the interactive creation workflow: `snyk-broker-config workflows connections create`
 3. Follow the on-screen prompts to input your Snyk Token, Tenant or Org ID, and select the specific integration type you want to connect (for example, GitHub Enterprise, GitLab, or Artifactory).
-4. The CLI will generate your `DEPLOYMENT_ID`, `CLIENT_ID`, and `CLIENT_SECRET`. It will also prompt you to create a credential reference name (for example, `MY_GITHUB_TOKEN`) that maps to your actual secret. Keep these values secure for the next step.
+4. The CLI generates your `DEPLOYMENT_ID`, `CLIENT_ID`, and `CLIENT_SECRET`. It also prompts you to create a credential reference name (for example, `MY_GITHUB_TOKEN`) that maps to your actual secret. Keep these values secure for the next step.
 
 {% hint style="info" %}
 If you are setting up Snyk Essentials for asset management with over 1,000 repositories, Snyk recommends a dedicated Broker and Organization.

@@ -4,11 +4,11 @@ After you gain visibility on your security issues, you can now start to implemen
 
 ## Common prevention methods
 
-Below are the two common areas that allow you to "prevent new issues":&#x20;
+The two common areas that let you "prevent new issues" are:&#x20;
 
-* Snyk tests on pull request (PR)/merge checks (MR),  currently available for Open Source.&#x20;
+* Snyk tests on pull request (PR)/merge checks (MR), available for Open Source.&#x20;
 * Adding "Snyk test" to your CI/CD pipelines (you may have already implemented "Snyk monitor" to import your Projects as part of the pipeline).&#x20;
-  * Additionally, open source, code, infrastructure as code, and container vulnerabilities can all be gated.
+  * Additionally, Snyk can gate open source, code, infrastructure as code, and container vulnerabilities.
 
 In either case, Snyk suggests that you communicate these changes clearly to your developers before implementing any form of gating.
 
@@ -24,7 +24,7 @@ To block new issues, you can use PR checks. For details, see [Run PR Checks](htt
 
 ### Communicate exception processes
 
-It is important to ensure the teams know the exception processes and how to address if a PR is blocked or a build fails.&#x20;
+Ensure the teams know the exception processes and how to respond if a PR is blocked or a build fails.&#x20;
 
 For example:
 

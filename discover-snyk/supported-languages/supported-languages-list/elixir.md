@@ -19,7 +19,7 @@ For Elixir, the following features are available:
 * Test your app's SBOM and packages using `pkg:hex` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 {% hint style="info" %}
-The **Snyk Fix PR** feature is not available for Elixir. This means that you will not be notified if the PR checks fail when the following conditions are met:
+The **Snyk Fix PR** feature is not available for Elixir. This means Snyk does not notify you if the PR checks fail when the following conditions are met:
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**

@@ -1,6 +1,6 @@
 # Enterprise implementation guide
 
-Rolling out a developer security platform across a large organization requires a consistent, repeatable approach to account configuration. In this guide, you will learn how to streamline your enterprise rollout in Snyk by creating a dedicated template Organization and altering settings for each individual Organization created from that original template.
+Rolling out a developer security platform across a large organization requires a consistent, repeatable approach to account configuration. This guide shows you how to streamline your enterprise rollout in Snyk by creating a dedicated template Organization and altering settings for each individual Organization created from that original template.
 
 To have a successful Snyk rollout, you need to:
 
@@ -18,7 +18,7 @@ To have a successful Snyk rollout, you need to:
 6. [Initial team rollout](initial-team-rollout.md).
 7. [Automate prevention measures](automate-prevention-measures.md).
 
-By the end of this guide, you will have successfully configured a baseline template Org, used it to easily copy your global settings and integrations to provision new Organizations, and learned how to customize individual settings in those new environments to support specific team workflows.
+By the end of this guide, you will have configured a baseline template Org, used it to copy your global settings and integrations to provision new Organizations, and learned how to customize individual settings in those new environments to support specific team workflows.
 
 {% hint style="info" %}
 To understand how AI is used at Snyk and how this may affect your implementation decisions, visit [AI Data and Governance](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-incorporates-generative-ai-into-the-platform).
@@ -102,13 +102,13 @@ Depending on your tech stack and workflows, you can choose from three primary im
 * Snyk CLI for granular control within your CI/CD pipelines
 * Snyk API for large-scale programmatic automation
 
-Once you import your Projects, you can apply specific tags and attributes to easily categorize, filter, and generate targeted reports across your entire portfolio.
+After you import your Projects, you can apply specific tags and attributes to categorize, filter, and generate targeted reports across your entire portfolio.
 
 To learn more, visit [Gain visibility by importing repositories](phase-3-gain-visibility/).
 
 ## Initial team rollout
 
-Successfully rolling out Snyk to your development team requires clear communication, targeted education, and seamless workflow integration.
+Successfully rolling out Snyk to your development team requires clear communication, targeted education, and smooth workflow integration.
 
 Start by using customizable templates to announce the launch, tailoring your messaging and feature rollout to match your team's comfort level with security automation.
 

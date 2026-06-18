@@ -14,8 +14,8 @@ Invite members to the Organization you configured. Follow these steps to invite 
 * Add the emails of all team members in the text box
 * Select their role from the dropdown menu.
 * Select **Send invite**
-* New members will receive a welcome email from Snyk with a link to sign up and join your organization.
+* New members receive a welcome email from Snyk with a link to sign up and join your Organization.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfZakhAyTXXqEigvhHYY0bH3jZ__Zx9kIbt8Dwa9erputbh1_4ZennUPqXzXFfvZBdHzlO6OOLJjUFzo35uDHUSvo5C1HV7HXK4EZ3wAT5zM6PhQWuutwH-DsDmyWVH4JlkGSj1?key=i_CNrr-DvB8PGUAzq09BT3pc)
 
-Alternatively, SSO can be configured as self-serve in the Group settings. More details on that can be found on the [Configure Self-Serve Single Sign-On (SSO)](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk) page.
+Alternatively, you can configure SSO as self-serve in the Group settings. For more details, see [Configure Self-Serve Single Sign-On (SSO)](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk).

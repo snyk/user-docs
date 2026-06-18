@@ -18,7 +18,7 @@ Follow these steps to roll out Snyk to your teams:
 Managing notifications ensures that developers only see high-priority issues that require action.
 
 * Instruct administrators to manually enable the critical alerts through their personal settings if they need to monitor progress.
-* Once the environment is stable, enable notifications in bulk for **High** and **Critical** severities only.
+* After the environment is stable, enable notifications in bulk for **High** and **Critical** severities only.
 * Disable all email notifications for new Organizations.
 
 Navigate to **Group** > **Settings** to view the notification defaults overview.
@@ -58,7 +58,7 @@ Use these templates to introduce Snyk. Replace the bracketed text with your spec
 **Key decision**: Evaluate the maturity of your AppSec program. For new programs, introduce plugins as a tool to validate fixes for prioritized issues. For mature programs, provide immediate access to prevent new issues from entering the codebase.
 {% endhint %}
 
-Snyk IDE plugins allow developers to find and fix vulnerabilities before they reach the CI/CD pipeline. This shift-left approach reduces the time spent on security reviews.
+Snyk IDE plugins let developers find and fix vulnerabilities before they reach the CI/CD pipeline. This shift-left approach reduces the time spent on security reviews.
 
 1. Identify the primary IDEs used by your teams (VS Code, JetBrains, Visual Studio, or Eclipse).
 2. Provide installation guides for the relevant Snyk IDE extension.

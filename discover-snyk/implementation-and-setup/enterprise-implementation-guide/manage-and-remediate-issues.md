@@ -1,6 +1,6 @@
 # Manage and remediate issues
 
-After establishing visibility and prevention measures, focus on managing your existing vulnerability backlog. This stage involves defining a fix strategy, prioritizing issues based on risk, and operationalizing the remediation process in your development teams. Effective management ensures that your security posture improves over time rather than just maintaining the status quo.
+After establishing visibility and prevention measures, focus on managing your existing vulnerability backlog. This stage involves defining a fix strategy, prioritizing issues based on risk, and operationalizing the remediation process in your development teams. Effective management ensures that your security posture improves over time rather than maintaining the status quo.
 
 To manage and remediate issues, follow these stages:
 
@@ -30,7 +30,7 @@ Key decision: Choose a primary metric for triage. Use **Priority Score** (900+) 
 Use Snyk filters iteratively to build your plan:
 
 * **Risk and priority scores**: Start with scores of 900–1000 and work downward.
-* **Severity**: filter for **Critical** and **High** issues.
+* **Severity**: Filter for **Critical** and **High** issues.
 
 {% hint style="info" %}
 For Snyk Open Source, prioritize critical issues with a **Fixable** filter to identify quick wins.
@@ -51,7 +51,7 @@ Operationalize the fix process using:
 * **Ignore policy**: Use the **Ignore** feature for issues that cannot be fixed immediately due to environmental context or breaking changes.
 
 {% hint style="info" %}
-Ensure to always include a detailed reason and always set an expiration date (monthly or quarterly) for review.
+Always include a detailed reason and set an expiration date (monthly or quarterly) for review.
 {% endhint %}
 
 * **Permissions**: Restrict ignore permissions to Organization admins in the general settings to maintain oversight.

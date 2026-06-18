@@ -2,7 +2,7 @@
 
 [Snyk Learn](https://learn.snyk.io) offers lessons for developer [security education](./#security-education) and Snyk [product training](./#product-training) with short and interactive content. Snyk Learn also has[ learning paths](https://learn.snyk.io/catalog/?format=learning_path\&type=security-education) for learners to take a predefined set of lessons following a structured flow. These lessons and learning plans are designed to help you start using Snyk, implement a [DevSecOps](../getting-started/glossary.md#devsecops) framework, and also to help you implement an ongoing security education and training program.
 
-Snyk Learn is one component of learning available for users and customers. The Snyk [customer resource page](https://snyk.io/customer-resources/) will help you learn the best practices for implementing Snyk in your Organization.
+Snyk Learn is one component of learning available for users and customers. The Snyk [customer resource page](https://snyk.io/customer-resources/) helps you learn the best practices for implementing Snyk in your Organization.
 
 Snyk Learn is integrated into the Snyk Platform, giving learners the ability to [track their progress](your-learning/) and Organizations the ability to manage users through Snyk.
 
@@ -14,13 +14,13 @@ The following table shows the features available for each plan. For more informa
 
 ### Learning Management add-on
 
-The Snyk Learning Management add-on allows AppSec and compliance teams to easily [assign](snyk-learn-assignments.md) lessons, track progress, and download reports for proof of completion. These capabilities are also supported through the [Snyk Learn API](snyk-learn-api.md).
+The Snyk Learning Management add-on lets AppSec and compliance teams [assign](snyk-learn-assignments.md) lessons, track progress, and download reports for proof of completion. The [Snyk Learn API](snyk-learn-api.md) also supports these capabilities.
 
 For more information and to add this capability to your Snyk plan, contact your Snyk account team.
 
 ## Regional hosting
 
-Snyk Learn also allows for regional hosting and data residency. Multi-tenant support enables seamless operation across multiple deployment environments, specifically tailored to meet the needs of Snyk users in the US, AU, and EU.
+Snyk Learn also supports regional hosting and data residency. Multi-tenant support enables operation across multiple deployment environments, specifically tailored to meet the needs of Snyk users in the US, AU, and EU.
 
 Snyk customers have access to Snyk Learn resources according to their region in the Snyk application. There is no need to create an additional user. For more information, see [Regional hosting and data residency](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency).
 
@@ -44,6 +44,6 @@ Snyk[ product training](https://learn.snyk.io/catalog/?type=product-training) pr
 * How to configure and manage Snyk organizations
 * How to use Snyk to find and fix issues
 
-The platform provides an easy way for teams to get an introduction to Snyk tools and user best practices. Most courses take between three and ten minutes.
+The platform provides a way for teams to get an introduction to Snyk tools and user best practices. Most courses take between 3 and 10 minutes.
 
 Snyk offers product training[ learning paths](https://learn.snyk.io/catalog/?type=product-training\&format=learning_path), including Implementing Snyk, Managing application security with Snyk, and Developing using Snyk.

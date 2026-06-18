@@ -2,7 +2,7 @@
 
 {% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
-Review the steps below to configure the Azure DevOps integration with Snyk. For more details about setting up the GitHub integration, contact your Snyk account team.
+Review the following steps to configure the Azure DevOps integration with Snyk. For more details about setting up the integration, contact your Snyk account team.
 
 ## Generate an Azure DevOps PAT
 
@@ -34,7 +34,7 @@ Configure the Group-level integration by following these steps:
 * If relevant, you can also include the Backstage catalog. See the [Backstage file for SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/application-context-for-scm-integrations#backstage-file-for-scm-integrations) page for more details.
 
 {% hint style="info" %}
-After the integration is configured, the Group-level integration shifts to a **Partially connected** status. During the next synchronization, it will transition to the connected state, and the Inventory view will be filled with data from the GitHub source.
+After the integration is configured, the Group-level integration shifts to a **Partially connected** status. During the next synchronization, it transitions to the connected state, and the Inventory view fills with data from the Azure DevOps source.
 {% endhint %}
 
 ## Configure the Organization-level integration

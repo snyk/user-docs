@@ -4,7 +4,7 @@ Every business is different. If your teams have already used security tools and 
 
 ## Suggested onboarding approach
 
-When you are introducing Snyk to your business, Snyk suggests the following phased rollout after  configuring integrations.
+When you are introducing Snyk to your business, Snyk suggests the following phased rollout after configuring integrations.
 
 ### 1. Kick off with a pilot team
 
@@ -14,14 +14,14 @@ Start by selecting a small group of engaged pilot users from:
 * Project teams building new applications
 * Developers of business-critical applications.
 
-This allows you to:
+This lets you:
 
 * Thoroughly onboard initial users
 * Gather feedback to refine processes
 * Identify issues before the broader rollout
 * Build success stories to promote Snyk.
 
-Typically, importing everything using a repository integration for visibility and working through the rollout with a small pilot team allows you to identify the best processes and ways to implement Snyk within your environment.
+Typically, importing everything using a repository integration for visibility and working through the rollout with a small pilot team lets you identify the best processes and ways to implement Snyk in your environment.
 
 ### 2. Gain visibility with Git repository integration
 
@@ -51,7 +51,7 @@ The key advantages of using this process are:
 
 With priorities addressed and processes refined, start expanding access more broadly across teams.
 
-This phased approach allows thoughtful onboarding while rapidly gaining visibility and control.
+This phased approach supports thoughtful onboarding while rapidly gaining visibility and control.
 
 ### 5. Turn on gating
 
@@ -60,7 +60,7 @@ After the first month, gradually turn on gating measures.
 * Pull Request/Merge Request Checks using criteria such as `severity` and `is fixable`.
 * Fail builds based on criteria such as `High` or `Critical`, `CVSS`, `Mature Exploit` for Open Source and other criteria using the [Snyk Filter](https://github.com/snyk-labs/snyk-filter) plugin.
 
-It's recommended to start with a few applications, especially during the pilot team phase, work through the processes then roll out more widely.
+Snyk recommends starting with a few applications, especially during the pilot team phase, working through the processes, then rolling out more widely.
 
 ## Exception handling
 
