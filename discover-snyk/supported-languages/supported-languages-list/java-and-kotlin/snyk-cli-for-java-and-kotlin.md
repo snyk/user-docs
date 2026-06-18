@@ -136,7 +136,7 @@ By default, Snyk passes `gradle build --no-daemon` in the background when runnin
 
 If you see `snyk test` or `snyk monitor` fail on other operating systems because of daemon-related issues, try adding the `--no-daemon` flag to the Snyk command or set `GRADLE_OPTS: '-Dorg.gradle.daemon=false'`.
 
-For tips on disabling the daemon, see the [Gradle documentation](https://docs.gradle.org/current/userguide/gradle_daemon.html#sec:disabling_the_daemon).
+For tips on disabling the daemon, visit the [Gradle documentation](https://docs.gradle.org/current/userguide/gradle_daemon.html#sec:disabling_the_daemon).
 
 ### Lockfiles
 
