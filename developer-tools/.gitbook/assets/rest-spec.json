@@ -25061,6 +25061,10 @@
       "TestConfiguration": {
         "description": "Test configuration.",
         "properties": {
+          "asset_name": {
+            "maxLength": 256,
+            "type": "string"
+          },
           "local_policy": {
             "allOf": [
               {
@@ -26904,108 +26908,6 @@
           }
         },
         "type": "object"
-      },
-      "scm_credentials": {
-        "additionalProperties": false,
-        "description": "The encrypted SCM credentials object passed along from Registry",
-        "items": {
-          "properties": {
-            "auth": {
-              "properties": {
-                "agent": {
-                  "type": "object"
-                },
-                "brokerUrl": {
-                  "type": "string"
-                },
-                "hashedBrokerToken": {
-                  "type": "string"
-                },
-                "iv": {
-                  "format": "password",
-                  "type": "string"
-                },
-                "password": {
-                  "format": "password",
-                  "type": "string"
-                },
-                "sshToken": {
-                  "format": "password",
-                  "type": "string"
-                },
-                "token": {
-                  "format": "password",
-                  "type": "string"
-                },
-                "username": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "iv"
-              ],
-              "type": "object"
-            },
-            "authorizedSources": {
-              "items": {
-                "additionalProperties": true,
-                "properties": {
-                  "owner": {
-                    "type": "string"
-                  },
-                  "repository": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "owner"
-                ],
-                "type": "object"
-              },
-              "type": "array"
-            },
-            "privateRegistryTokens": {
-              "items": {
-                "additionalProperties": false,
-                "properties": {
-                  "hashedBrokerToken": {
-                    "type": "string"
-                  },
-                  "integrationType": {
-                    "type": "string"
-                  },
-                  "token": {
-                    "type": "string"
-                  },
-                  "type": {
-                    "type": "string"
-                  },
-                  "url": {
-                    "type": "string"
-                  },
-                  "username": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "type"
-                ],
-                "type": "object"
-              },
-              "type": "array"
-            },
-            "version": {
-              "type": "number"
-            }
-          },
-          "type": "object"
-        },
-        "required": [
-          "auth",
-          "version",
-          "authorizedSources"
-        ],
-        "type": "array"
       },
       "use_proxy": {
         "description": "Whether to use the isolated builds proxy. The proxy will decrypt credentials on the fly, to prevent the untrusted isolated builds\nenvironment from having access to the credentials themselves.\nThis feature is currently opt-in, but will become mandatory in the future for certain ecosystems.\n",
