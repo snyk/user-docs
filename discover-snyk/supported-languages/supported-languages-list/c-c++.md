@@ -17,7 +17,7 @@ For C/C++, the following frameworks and libraries are supported:
 * argparse parser
 * Asio Library
 * Boost Library
-* Botan LIbrary
+* Botan Library
 * C Standard Library
 * C++ Standard Library
 * Curl library
@@ -36,7 +36,7 @@ For C/C++, the following frameworks and libraries are supported:
 {% column %}
 * MySQL framework
 * OpenSSL framework
-* POSIX LIbrary
+* POSIX Library
 * pugixml library
 * SQLite library
 * WinHTTP framework
@@ -61,13 +61,13 @@ For C/C++ with Snyk Code, Snyk supports the following file formats: `.c`, `.cc`,
 * SCM import
 * Support for interfile analysis
 
-If you use macros, it is possible that your results include false positives and false negatives.
+If you use macros, your results can include false positives and false negatives.
 
 For C/C++ Projects:
 
 * Snyk does not require compilation or a build to perform analysis.
 * Snyk Code analyzes the source code directly.
-* If you have precompile components, ensure the source code is available during the scan.
+* If you have precompiled components, ensure the source code is available during the scan.
 
 When using the IDE, you do not need additional options. The Snyk plugin displays results in the IDE views.
 
@@ -80,7 +80,7 @@ When using the IDE, you do not need additional options. The Snyk plugin displays
 * Test your app's SBOM and packages using `pkg:generic` or `pkg:conan` PURLs through [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
 
 {% hint style="info" %}
-The **Snyk FixPR** feature is not available for C/C++. This means that you will not be notified if the PR checks fail when the following conditions are met:
+The **Snyk FixPR** feature is not available for C/C++. This means Snyk does not notify you if the PR checks fail when the following conditions are met:
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**
@@ -103,7 +103,7 @@ To scan for C/C++ Open Source dependencies using the IDE, add the `--unmanaged` 
 
 ### Troubleshooting
 
-Your Snyk Open Source code is not sent to Snyk severs. Snyk converts the files to a list of hashes before sending them for scanning.
+Snyk does not send your Snyk Open Source code to Snyk servers. Snyk converts the files to a list of hashes before sending them for scanning.
 
 Snyk matches your code against a database of official open-source releases. If a scan returns no results, check these common causes:
 
@@ -152,7 +152,7 @@ To monitor and share reports, run the following command:
 snyk monitor --unmanaged --org=*org-id*
 ```
 
-Find your org-id under **Organization settings** in the Snyk web UI. Although the Organization ID is optional, Snyk recommends using it. You can use the `snyk-to-html` plugin to generate reports.
+Find your org-id under **Organization settings** in the Snyk Web UI. Although the Organization ID is optional, Snyk recommends using it. You can use the `snyk-to-html` plugin to generate reports.
 
 For individual scans, use the CLI or IDE and run `snyk monitor --unmanaged` to upload results. This displays license and policy information.
 
@@ -440,7 +440,7 @@ Explore this snapshot at https://app.snyk.io/org/example-org/project/8ac0e233-d0
 Notifications about newly disclosed issues related to these dependencies will be emailed to you.
 ```
 
-Snyk creates a snapshot of dependencies and vulnerabilities and imports them into the Snyk web UI. You can review the issues and view them in your reports.
+Snyk creates a snapshot of dependencies and vulnerabilities and imports them into the Snyk Web UI. You can review the issues and view them in your reports.
 
 Importing a Snyk Project with unmanaged dependencies creates a new Snyk Project on the **Projects** page:
 

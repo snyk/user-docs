@@ -8,25 +8,25 @@ The Snyk platform has a variety of [available reports](https://app.gitbook.com/s
 
 ## Issues Detail
 
-The Issues Detail report displays all known issues in all of your Projects that Snyk is monitoring. It is a great place to review and prioritize issues across all of your repositories.
+The Issues Detail report displays all known issues in all of your Projects that Snyk is monitoring. Use it to review and prioritize issues across all of your repositories.
 
-Applying filters such as fixability, exploit maturity, asset class, and severity are a great way to focus on the most important issues that affect your Organization.
+Apply filters such as fixability, exploit maturity, asset class, and severity to focus on the most important issues that affect your Organization.
 
 ## SLA Management
 
-The SLA Management report allows you to stay on top of any SLAs your company is required to adhere to. The SLA time can be adjusted for each severity and then saved as a new view to monitor in the future.
+The SLA Management report lets you stay on top of any SLAs your company must adhere to. You can adjust the SLA time for each severity and then save it as a new view to monitor in the future.
 
 ## Analytics
 
 [Analytics](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics) can be accessed at the Group or Organization level. This view breaks down the total issue count into baseline, preventable, and non-preventable issues. The most important thing to know is that:
 
 * Baseline issues are the issues identified during the first import of the repository.
-* Preventable issues are known issues that could have been identified earlier on in the SDLC. In other words, the issue could have been caught by a Snyk PR check.
-* Non-preventable issues are the result of an external factor, such as a new vulnerability being published or a new security rule being created, in contrast to developers not shifting left. for example, a new zero-day vulnerability is identified.
+* Preventable issues are known issues that Snyk could have identified earlier in the SDLC. That is, a Snyk PR check could have caught the issue.
+* Non-preventable issues are the result of an external factor, such as a new vulnerability being published or a new security rule being created, in contrast to developers not shifting left. For example, Snyk identifies a new zero-day vulnerability.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXco8q4gfqWC3QdLqOY8N15kchfGb9_FKm28rXonSWmSbOnrTDIQpvQMluxOoiOBWQStylL_LKasaU7VhjbjkRzv0UIQ60UqKtX3yTwTO-XO1gz7tgiWQc2COU-frmYkUXl5FQAM?key=i_CNrr-DvB8PGUAzq09BT3pc" alt=""><figcaption></figcaption></figure>
 
-This is a small taste of what reporting has to offer. Check out more of the Snyk reports, available at both the Organization and Group levels by clicking “Change Report”:\
+This is a small taste of what reporting has to offer. To see more of the Snyk reports, available at both the Organization and Group levels, click **Change Report**:\
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfS5UzFsGMM5_N5fK6iFLN16rFFfSmj3W9BXkmDnZOvvOBoUjCIQD6j1afOaN9PySsB-MI4TNLtKdgFbVk1OMe5u1uCYDSKv1pjhkaUSqhGspmGqOggsPx5XCK7IZGVv7QQmN5NqQ?key=i_CNrr-DvB8PGUAzq09BT3pc)
 
 {% hint style="info" %}

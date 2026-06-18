@@ -69,11 +69,11 @@ The following file formats are supported: `.dart`
 ### Available features
 
 * Test your app's SBOM and packages using `pkg:pub` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command
-* Test & monitor your Flutter apps native platform dependencies using [`snyk test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/test) and [`snyk monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) commands
+* Test and monitor your Flutter apps native platform dependencies using [`snyk test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/test) and [`snyk monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) commands
 
 ### Testing a Dart applications pub dependency tree
 
-Activate the pub [`sbom`](https://pub.dev/packages/sbom) package & create a minimal `sbom.yaml` file in the root folder of the repository:
+Activate the pub [`sbom`](https://pub.dev/packages/sbom) package and create a minimal `sbom.yaml` file in the root folder of the repository:
 
 ```
 dart pub global activate sbom
@@ -84,7 +84,7 @@ spdx:
 EOF
 ```
 
-Use the dart `sbom` command to create a SBOM file & test it using the [`sbom test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command:
+Use the dart `sbom` command to create a SBOM file and test it using the [`sbom test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command:
 
 ```
 dart pub global run sbom
@@ -95,7 +95,7 @@ snyk sbom test --experimental --file sbom-pub.json
 
 Flutter applications rely on native platform dependencies to handle lower-level tasks, such as analytics, hardware access, or integrating existing functionality. These dependencies can be added through pub packages to extend functionality or integrated directly into build systems like Gradle or Cocoapods.
 
-Snyk’s regular open-source support can scan these packages; however, a complete app build is necessary to make them available in the repository and accessible to CLI tools.
+The regular open-source support in Snyk can scan these packages. However, a complete app build is necessary to make them available in the repository and accessible to CLI tools.
 
 You can start by building the application for all relevant platforms. This ensures that `pub` fetches all required packages, and the Flutter build system establishes the necessary links for the native build systems.
 
@@ -113,6 +113,6 @@ snyk monitor --all-projects --exclude=example,.symlinks
 
 The `--exclude` parameter removes duplicates and ignores example applications, which are part of the plugin source code but not included in regular application builds.
 
-You are now able to view in the Snyk Web UI all native dependencies, including those introduced by third-party plugins.
+You can now view in the Snyk Web UI all native dependencies, including those introduced by third-party plugins.
 
 <figure><img src="../../.gitbook/assets/image (197).png" alt=""><figcaption><p>Snyk Project page showing dependencies in Flutter apps</p></figcaption></figure>

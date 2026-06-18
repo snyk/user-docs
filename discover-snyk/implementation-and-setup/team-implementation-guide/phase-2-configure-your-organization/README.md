@@ -2,9 +2,9 @@
 
 ## Name your Organization
 
-This step is easiest performed prior to purchasing the license. If you did not, Snyk support can assist you.
+This step is easiest performed before purchasing the license. If you did not, Snyk support can assist you.
 
-### Changing the name prior to purchase
+### Changing the name before purchase
 
 Click the arrows next to your Organization name, click **Create New Organization**. From the **Settings-Plans and Billing** page, purchase a team plan.
 

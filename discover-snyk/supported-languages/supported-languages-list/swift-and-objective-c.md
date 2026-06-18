@@ -77,7 +77,7 @@ For Objective-C, Snyk supports `.m` files, and implicitly supports `.h` files.
 
 ## Swift and Objective-C for Snyk Open Source
 
-For Swift with Snyk Open Source, Snyk supports Swifts versions from 3.0 up to 6.2.x.
+For Swift with Snyk Open Source, Snyk supports Swift versions from 3.0 up to 6.2.x.
 
 ### Supported package managers and registries
 
@@ -98,7 +98,7 @@ For Swift and Objective-C with Snyk Open Source, Snyk provides support for packa
 * For Swift Package Manager: CLI support
 
 {% hint style="info" %}
-The **Snyk Fix PR** feature is not available for Swift and Objective-C. This means that you will not be notified if the PR checks fail when the following conditions are met:
+The **Snyk Fix PR** feature is not available for Swift and Objective-C. This means that Snyk does not notify you if the PR checks fail when the following conditions are met:
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available**.
 * **"Fixed in" available** is set to **Yes**.
@@ -110,9 +110,9 @@ The **Snyk Fix PR** feature is not available for Swift and Objective-C. This mea
 Snyk supports only Projects using Swift 3.0 or higher.
 {% endhint %}
 
-In order for Snyk to discover a Project, a `Package.swift` file must be present. Also, Snyk uses the `swift package show-dependencies` command to build the dependency graph.
+For Snyk to discover a Project, a `Package.swift` file must be present. Also, Snyk uses the `swift package show-dependencies` command to build the dependency graph.
 
-When the .build folder of your Project is not present - in a pipeline, for example, it is possible that Snyk takes longer to scan your Swift Projects. When the CLI runs the command `swift package show-dependencies`, Swift must resolve the dependencies as part of this process, which can add to the overall time it takes Snyk to complete the scan. Therefore, ensuring that you have your Projects built first and that the .build folder is present can speed up the CLI processing time.
+When the .build folder of your Project is not present — in a pipeline, for example — Snyk can take longer to scan your Swift Projects. When the CLI runs the command `swift package show-dependencies`, Swift must resolve the dependencies as part of this process, which can add to the overall time it takes Snyk to complete the scan. Therefore, ensuring that you have your Projects built first and that the .build folder is present can speed up the CLI processing time.
 
 Swift Package Manager supports pre-processing and post-processing. For post-processing, custom commands can add extra dependencies. Detecting such dependencies is not supported.
 

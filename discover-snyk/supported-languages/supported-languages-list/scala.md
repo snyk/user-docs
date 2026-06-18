@@ -43,7 +43,7 @@ Available features:
 * Interfile analysis
 
 {% hint style="info" %}
-The **Snyk Fix PR** feature is not available for Swift and Objective-C. This means that you will not be notified if the PR checks fail when the following conditions are met:
+The **Snyk Fix PR** feature is not available for Swift and Objective-C. This means that Snyk does not notify you if the PR checks fail when the following conditions are met:
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**

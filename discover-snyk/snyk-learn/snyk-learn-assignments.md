@@ -6,7 +6,7 @@
 Assignments are available in the Snyk Learning Management add-on offering. For more information, contact your Snyk account team.
 {% endhint %}
 
-Assignments streamline training management by empowering admins to assign, track, and manage learning efficiently. The Assignments feature enhances accountability by allowing customers to set due dates for completion and seamlessly integrate with organizational goals, for example, compliance timelines, ensuring alignment across training initiatives.
+Assignments streamline training management by empowering admins to assign, track, and manage learning efficiently. The Assignments feature enhances accountability by letting you set due dates for completion and integrate with organizational goals, for example, compliance timelines, ensuring alignment across training initiatives.
 
 Using Assignments, your company can gain:
 
@@ -17,7 +17,7 @@ Using Assignments, your company can gain:
 * Compliance: Get help with meeting regulatory requirements through the timely completion of mandatory training.
 
 {% hint style="info" %}
-Snyk Learn Assignments support Organizations with up to 5000 members.
+Snyk Learn Assignments support Organizations with up to 5,000 members.
 {% endhint %}
 
 ## Use cases for assignments
@@ -66,7 +66,7 @@ By default, only Snyk Org or Group admins can create assignments. Group admins c
 
 <figure><img src="../.gitbook/assets/image (250).png" alt=""><figcaption><p>Creating new assignments button on the Assignments Dashboard page</p></figcaption></figure>
 
-The **New Assignments** page opens, which allows you to create assignments for Snyk Organization users. On the **New Assignments** page:
+The **New Assignments** page opens, where you can create assignments for Snyk Organization users. On the **New Assignments** page:
 
 1. Verify that the selected Organization is correct.
 
@@ -88,7 +88,7 @@ The **New Assignments** page opens, which allows you to create assignments for S
 
 <figure><img src="../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>
 
-6. Optionally reset user learning progress. If selected this forces users to retake lessons that have already been completed.
+6. Optionally reset user learning progress. If selected, this forces users to retake lessons that have already been completed.
 
 <figure><img src="../.gitbook/assets/image (257).png" alt=""><figcaption><p>Optionally reset user learning progress</p></figcaption></figure>
 

@@ -133,7 +133,7 @@ Available features:
 
 ## Validating, monitoring, alerting, and gating for Java and Kotlin
 
-For SCM integrations, Snyk allows you to [run PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis. You can see the results on the **Projects** page.
+For SCM integrations, Snyk lets you [run PR Checks](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis. You can see the results on the **Projects** page.
 
 For CI/CD integrations, Snyk can passively monitor and provide a QA gate by failing build checks during testing for policy violations.
 
@@ -150,7 +150,7 @@ Snyk provides flexible capabilities, including:
 
 Snyk can monitor container images and their open source or Linux based packages being used in production using Kubernetes integration, to notify customers of known vulnerabilities for applications in production. This feature is available for Enterprise plans only.
 
-Where a production integration does not exist, use the [snyk monitor](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) CLI command to take a snapshot and monitor what is being pushed to production (available for all plans).
+Where a production integration does not exist, use the [snyk monitor](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) CLI command to take a snapshot and monitor what you push to production (available for all plans).
 
 ## Java support for BOM
 
@@ -198,7 +198,7 @@ Example of a BOM file:
 
 The `dependencyManagement` section contains dependency elements. Each dependency is a lookup reference for Maven to determine the version to select for transitive (and direct) dependencies.
 
-Defining a dependency in the `dependencyManagement` section ia used only for lookup reference, it does not add it to the dependency tree of the Project.
+Defining a dependency in the `dependencyManagement` section is used only for lookup reference. It does not add the dependency to the dependency tree of the Project.
 
 You can run `mvn dependency:tree` on the previous BOM example to show that Maven does not treat the contents as dependencies of the file itself.
 

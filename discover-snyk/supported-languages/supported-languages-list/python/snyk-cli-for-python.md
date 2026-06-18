@@ -34,7 +34,7 @@ Poetry v1 and v2 are supported.
 
 To build the dependency tree for a Poetry application, Snyk uses `pyproject.toml` and `poetry.lock` files. Both files must be present for Snyk to scan Poetry dependencies and identify issues.
 
-If no `poetry.lock` file is present; you should run `poetry lock` to generate one before scanning.
+If no `poetry.lock` file is present, run `poetry lock` to generate one before scanning.
 
 For Poetry, it is possible to get mixed `include` entries in `pyproject.toml`
 
@@ -74,7 +74,7 @@ Run `pipenv install` to ensure the CLI can build an up-to-date, accurate depende
 
 To build the dependency tree, Snyk analyzes the `setup.py` file, and detects packages listed in the `install_requires` key.
 
-This file will not be discovered automatically by the CLI. It must be specified manually using the `--file` option, for example:
+The CLI does not discover this file automatically. You must specify it manually using the `--file` option, for example:
 
 ```python
 snyk test --file=setup.py

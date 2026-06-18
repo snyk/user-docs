@@ -36,10 +36,7 @@ Snyk supports `packages.config` files. To scan these Projects:
 
 1. Run `nuget install -OutputDirectory packages` to install dependencies into the `packages` folder.
 2. Ensure the command created the `packages` directory.
-3. Run `snyk test` as follows:
-   1. Install the dependencies into the packages folder by running `nuget install -OutputDirectory packages`
-   2. Ensure that the packages directory has been created by the previous command.
-   3. Run `snyk test`.
+3. Run `snyk test`.
 
 ## Paket
 

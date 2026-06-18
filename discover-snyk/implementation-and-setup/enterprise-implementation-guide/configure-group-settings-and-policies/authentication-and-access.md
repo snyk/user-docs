@@ -46,7 +46,7 @@ Custom mapping requires Snyk professional services. Contact your account team fo
 **Key decision**: Determine if you need to pre-allocate users to specific Organizations and roles before their first login to prevent broad default access.
 {% endhint %}
 
-If you need to define specific permissions before users first log in, use the Snyk API. This allows you to:
+If you need to define specific permissions before users first log in, use the Snyk API. This lets you:
 
 * Assign a specific role to each user.
 * Grant access to specific Organizations automatically.
@@ -70,7 +70,7 @@ The Tenant is the highest level of the Snyk hierarchy, and it encompasses all Gr
 
 * **Tenant Admin:** Can manage users across the entire Tenant, assign roles, and remove members.
 * **Tenant Viewer:** Provides read-only access to Tenant-level features like Snyk Analytics.
-* **Tenant Member**: Allows access to the Tenant level but requires specific Group or Organization permissions to take action.
+* **Tenant Member**: Provides access to the Tenant level but requires specific Group or Organization permissions to take action.
 
 {% hint style="info" %}
 Features like Snyk Analytics are available only on Enterprise plans. You can switch between Tenants by selecting the Tenant name in the navigation menu.
@@ -89,7 +89,7 @@ Pre-defined roles at these levels have fixed permissions that cannot be modified
 **Group-level roles**
 
 * **Group Admin**: Provides full permissions at the Group and Organization levels. Assign this role to Snyk administrators.
-* **Group Member**: Allows access to the Group but requires specific Organization-level permissions to interact with Projects.
+* **Group Member**: Provides access to the Group but requires specific Organization-level permissions to interact with Projects.
 * **Group Viewer**: Provides read-only access to the Group level. Use this to audit Group settings without making changes.
 {% endstep %}
 {% endstepper %}

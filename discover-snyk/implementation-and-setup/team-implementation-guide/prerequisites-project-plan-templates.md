@@ -4,7 +4,7 @@ The templates provided below are the basis of the following sections of this gui
 You can download and use these templates in your project management system.
 
 {% hint style="info" %}
-The suggested timelines are typically for individual teams and small companies, which may involve a small team or company. Adjust accordingly for what makes sense for your company.
+The suggested timelines are typically for individual teams and small companies. Adjust accordingly for what makes sense for your company.
 {% endhint %}
 
 You can download or import these plans:

@@ -9,6 +9,6 @@
 
 ## Configuration steps
 
-Verify that Snyk Essentials is configured by navigating to the Group level > Integrations. If not set up yet, follow the in-product instructions for your SCM(s).
+Verify that Snyk Essentials is configured. Navigate to the Group level and select **Integrations**. If you have not set up Snyk Essentials yet, follow the in-product instructions for your SCMs.
 
 <figure><img src="../../../.gitbook/assets/image (305).png" alt=""><figcaption></figcaption></figure>

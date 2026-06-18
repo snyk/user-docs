@@ -79,9 +79,9 @@ For Python, the following frameworks and libraries are supported:
 
 ### Directory layout
 
-Snyk Code relies on Python projects to follow a standard directory layout for accurate analysis. Specifically, Snyk Code expects Projects to be compatible with [`setuptools` automatic discovery](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#auto-discovery), which identifies packages and modules automatically based on the directory structure. This includes support for `init.py` files to ensure that symbols defined in package initialization files are imported correctly, leading to a more accurate and deeper analysis.
+Snyk Code relies on Python Projects to follow a standard directory layout for accurate analysis. Specifically, Snyk Code expects Projects to be compatible with [`setuptools` automatic discovery](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#auto-discovery), which identifies packages and modules automatically based on the directory structure. This includes support for `init.py` files to ensure that symbols defined in package initialization files are imported correctly, leading to a more accurate and deeper analysis.
 
-Both `src-layout` and `flat-layout` are supported. Proper adherence to these conventions allows the scanner to trace code effectively and provide accurate results.
+Both `src-layout` and `flat-layout` are supported. Proper adherence to these conventions lets the scanner trace code effectively and provide accurate results.
 
 ## Python for Snyk Open Source
 
@@ -155,5 +155,5 @@ If you have manifest files in other directories within the root of the Project, 
 In your Snyk integration settings, locate the **Additional Options** field. Enable a recursive search and add the `--all-projects` option in the **Additional Options** field.
 
 {% hint style="warning" %}
-If each directory needs a different virtual environment, it is possible that the Snyk scan fails because it uses a single virtual environment for dependency detection. In such cases, Snyk recommends using the CLI or SCM integration instead of an IDE , in order to gather vulnerability details for all dependencies in each Project directory.
+If each directory needs a different virtual environment, it is possible that the Snyk scan fails because it uses a single virtual environment for dependency detection. In such cases, Snyk recommends using the CLI or SCM integration instead of an IDE, to gather vulnerability details for all dependencies in each Project directory.
 {% endhint %}

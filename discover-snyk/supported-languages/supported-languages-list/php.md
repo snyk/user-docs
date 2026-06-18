@@ -55,7 +55,7 @@ For PHP with Snyk Open Source, the following file formats are supported: `compos
 * Test your app's SBOM and packages using `pkg:composer` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
 
 {% hint style="info" %}
-The **Snyk Fix PR** feature is not available for PHP. This means that you will not be notified if the PR checks fail when the following conditions are met:
+The **Snyk Fix PR** feature is not available for PHP. This means that Snyk does not notify you if the PR checks fail when the following conditions are met:
 
 * The **PR checks** feature is enabled and configured to **Only fail when the issues found have a fix available.**
 * "**Fixed in" available** is set to **Yes.**
@@ -74,7 +74,7 @@ After you select a Project for import, Snyk builds the dependency tree based on 
 * `composer.json`
 * `composer.lock`
 
-If the `composer.lock` file is not present in the repository, the import will not process the `composer.json` manifest.
+If the `composer.lock` file is not present in the repository, the import does not process the `composer.json` manifest.
 
 By default, Snyk scans your production dependencies. Using the Snyk Web UI, you can configure whether or not to include your development dependencies, such as `require_dev` \[...] in the scan for vulnerabilities.
 
@@ -82,7 +82,7 @@ To update language preferences:
 
 1. Log in to your account and navigate to the relevant Group and Organization that you want to manage.
 2. Select **Settings** > **Languages**.
-3. Select **Edit settings** for PHP and select **Scan dev dependencies** to set your PHP projects in the specific Organization to include both development and production dependencies.
+3. Select **Edit settings** for PHP and select **Scan dev dependencies** to set your PHP Projects in the specific Organization to include both development and production dependencies.
 4. Select **Update settings**.
 
 These settings are applied to all newly imported Projects and to all existing Projects when they are re-tested.

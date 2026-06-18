@@ -79,7 +79,7 @@ For more information, see [Snyk Code AI Engine](https://app.gitbook.com/o/-M4tdx
 
 ## Language support and CLI, CI/CD, and SCM integrations
 
-Snyk supports a variety of programming languages, enabling seamless integration into your development workflow through CLI commands, CI/CD pipelines, and SCM integrations.
+Snyk supports a variety of programming languages, enabling integration into your development workflow through CLI commands, CI/CD pipelines, and SCM integrations.
 
 You can use these tools to automatically check your code for security issues as you develop your software. This ensures that strong security practices are part of your development process.
 

@@ -12,7 +12,7 @@ Determine if Snyk pre-defined roles meet your requirements or if you must create
 
 Pre-defined roles at these levels have fixed permissions that cannot be modified.
 
-* **Organization Admin**: Allows users to add or delete Projects, override Snyk checks, and provision users. Assign this role to Team Leads.
+* **Organization Admin**: Lets users add or delete Projects, override Snyk checks, and provision users. Assign this role to Team Leads.
 * **Organization Collaborator**: Grants standard developer access. Use this for small teams or a developer-first rollout.
 
 ## Align roles with your Organization structure
