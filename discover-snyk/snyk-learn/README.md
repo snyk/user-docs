@@ -44,6 +44,6 @@ Snyk[ product training](https://learn.snyk.io/catalog/?type=product-training) pr
 * How to configure and manage Snyk organizations
 * How to use Snyk to find and fix issues
 
-The platform provides a way for teams to get an introduction to Snyk tools and user best practices. Most courses take between 3 and 10 minutes.
+The platform provides a way for teams to get an introduction to Snyk tools and user best practices. Most courses take between three and 10 minutes.
 
 Snyk offers product training[ learning paths](https://learn.snyk.io/catalog/?type=product-training\&format=learning_path), including Implementing Snyk, Managing application security with Snyk, and Developing using Snyk.
