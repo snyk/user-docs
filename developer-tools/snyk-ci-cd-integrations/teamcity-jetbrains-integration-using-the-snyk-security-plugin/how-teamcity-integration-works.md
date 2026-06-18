@@ -18,9 +18,9 @@ The steps in the process follow:
     1. Snyk displays all vulnerability results and details on the **Snyk Security Report tab** in TeamCity.
     2. If you specified the severity threshold for a severity assigned to any vulnerability identified in your Project, TeamCity breaks the build. Otherwise, TeamCity continues to run the build to completion (success or failure), and Snyk activity ends.
 12. If you configured the **Monitor project on build** option, Snyk now runs the `snyk monitor` command and proceeds with the remainder of the steps as described here.
-    1. Snyk takes a snapshot of the Project, analyzes the manifest file of your Project to find its direct and transitive dependencies, and tests your Project against the Snyk vulnerability database for known vulnerabilities.
+    1. Snyk takes a snapshot of the Project, analyzes the manifest file of your Project to find its direct and transitive dependencies, and tests your Project against the Snyk Vulnerability Database for known vulnerabilities.
     2. Snyk pushes the snapshot to the Snyk UI. The snapshot displays the Project details and the dependency hierarchy, as well as vulnerability results and fix advice.
     3. If you specified the severity threshold for a severity that is assigned to any vulnerability in your Project, TeamCity breaks the build.
     4. After the snapshot is pushed to the Snyk UI, Snyk continues to monitor your Project as new vulnerabilities are disclosed. Based on your configuration, if vulnerabilities are found, Snyk notifies you by email or Slack so that you can take immediate fix action.
 
-For information on how to configure your build with a Snyk step, see [Team City integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build.md).
+For information on how to configure your build with a Snyk step, see [TeamCity integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build.md).

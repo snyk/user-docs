@@ -1,13 +1,13 @@
 # Amazon EventBridge
 
-The [Amazon EventBridge](https://aws.amazon.com/eventbridge/) integration sends Snyk platform events to EventBridge, allowing you to integrate Snyk events into your existing AWS environments. The integration can be configured to send two different types of events:
+The [Amazon EventBridge](https://aws.amazon.com/eventbridge/) integration sends Snyk platform events to EventBridge, so you can integrate Snyk events into your existing AWS environments. You can configure the integration to send two different types of events:
 
 * **Snyk issue events**: These events are sent when new issues are discovered in a Snyk Project, or when an issue is updated. Each event contains information about the vulnerability or other problem found, including whether a remediation is available.
-* **Snyk platform audit events**: These events are sent every time a Snyk user performs an action within the Snyk platform. For more information, see [Retrieve audit logs of user-initiated activity by API for an Org or Group](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group). This event type is available with Snyk Enterprise plans. For more information, see this page about [trials](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/trial-limitations) and [Plans and pricing](https://snyk.io/plans/).
+* **Snyk platform audit events**: These events are sent every time a Snyk user performs an action in the Snyk platform. For more information, see [Retrieve audit logs of user-initiated activity by API for an Org or Group](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group). This event type is available with Snyk Enterprise plans. For more information, see this page about [trials](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/trial-limitations) and [Plans and pricing](https://snyk.io/plans/).
 
 To set up the integration, there are two steps:
 
-1. Configure an EventBridge integration in the Snyk dashboard. This will create a Snyk **Partner Event Source** in your AWS account, which you can see in the EventBridge dashboard.
+1. Configure an EventBridge integration in the Snyk dashboard. This creates a Snyk **Partner Event Source** in your AWS account, which you can see in the EventBridge dashboard.
 2. Configure the Snyk integration in Amazon EventBridge. This step involves associating the Snyk event source created in step one with an EventBridge **Event Bus**.
 
 After you complete these steps, Snyk immediately starts sending events to the configured event bus.
@@ -26,19 +26,19 @@ When the form is completed, click **Add integration**. After this step is done, 
 
 ## Snyk App authorization
 
-If this is the first time you have set up an Amazon EventBridge integration for your Organization, you will be prompted to complete the Snyk App authorization flow.
+If this is the first time you have set up an Amazon EventBridge integration for your Organization, Snyk prompts you to complete the Snyk App authorization flow.
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-auth.png" alt="" width="375"><figcaption></figcaption></figure>
 
-After completing the authorization flow, you will be redirected to the settings page for the integration.
+After completing the authorization flow, Snyk redirects you to the settings page for the integration.
 
 ## Configure the integration in Amazon EventBridge
 
-After configuring the EventBridge integration on the Snyk side, you should see a new **Partner Event Source** in the EventBridge console. Navigate to the EventBridge console and navigate to the **Partner event sources** page under the **Integration** section.
+After configuring the EventBridge integration on the Snyk side, a new **Partner Event Source** appears in the EventBridge console. Navigate to the EventBridge console and navigate to the **Partner event sources** page under the **Integration** section.
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-eventsource.png" alt="Partner event sources"><figcaption><p>Partner event sources</p></figcaption></figure>
 
-Snyk-generated event sources will have a naming pattern like this:
+Snyk-generated event sources have a naming pattern like this:
 
 `aws.partner/snyk.io/org_<SNYK_ORG_ID>/<EVENT_TYPE>`\
 \
@@ -53,14 +53,14 @@ Navigate to the [EventBridge integration settings page](https://app.snyk.io/mana
 Clicking on the name of the integration opens the integration settings page, which displays configuration information for the integration.
 
 {% hint style="info" %}
-Because EventBridge integrations create an external resource that depends on the configured AWS Account ID, Region, and event type, it is not possible to edit these configuration fields. If you need to change one of these fields, delete the integration and create a new one. This deletes the existing **partner event source** in AWS and creates a new one, which you will need to associate with an **event bus** as described above.
+Because EventBridge integrations create an external resource that depends on the configured AWS Account ID, Region, and event type, it is not possible to edit these configuration fields. If you need to change one of these fields, delete the integration and create a new one. This deletes the existing **partner event source** in AWS and creates a new one, which you must associate with an **event bus** as described in the preceding steps.
 {% endhint %}
 
-To delete an integration, scroll to the bottom of the page and click the **Remove integration** button, then confirm the deletion.
+To delete an integration, scroll to the bottom of the page and click **Remove integration**, then confirm the deletion.
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-delete.png" alt="Remove integration"><figcaption><p>Remove integration</p></figcaption></figure>
 
-This deletes the integration configuration on the Snyk side and the **Partner Event Source** associated with this integration in AWS. You can verify that the event source has been deleted in the EventBridge console.
+This deletes the integration configuration on the Snyk side and the **Partner Event Source** associated with this integration in AWS. You can verify that Snyk deleted the event source in the EventBridge console.
 
 ## Understanding event data
 

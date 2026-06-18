@@ -13,7 +13,7 @@ Support for use of FIPS-validated cryptography is limited to the Windows and Lin
 
 ## FIPS-validated cryptography support and use in the Snyk CLI and Snyk Language Server
 
-To optimize the developer experience, Snyk is combining the [Snyk Language Server](../../snyk-ide-plugins-and-extensions/snyk-language-server/) and the [Snyk CLI](../getting-started-with-the-snyk-cli.md). As a first step, Snyk is bringing FIPS binaries under one application. Later also non-FIPS CLI binaries will be used for Snyk Language Server.
+To optimize the developer experience, Snyk is combining the [Snyk Language Server](../../snyk-ide-plugins-and-extensions/snyk-language-server/) and the [Snyk CLI](../getting-started-with-the-snyk-cli.md). As a first step, Snyk is bringing FIPS binaries under one application. Later, Snyk Language Server also uses non-FIPS CLI binaries.
 
 The Snyk Language Server can now be executed as a CLI command.
 
@@ -40,7 +40,7 @@ On Windows, Snyk supports FIPS-validated cryptography through the Windows CNG AP
 
 To enable FIPS on Windows, [use the Windows FIPS policy](https://docs.microsoft.com/en-us/windows/security/threat-protection/fips-140-validation#step-3-enable-the-fips-security-policy).
 
-For testing, FIPS can be enabled using the following registry key `HKLM\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy` by setting the value of `Enabled` to 1.
+For testing, enable FIPS using the registry key `HKLM\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy` by setting the value of `Enabled` to 1.
 
 #### Download FIPS-enabled binaries
 
@@ -71,13 +71,13 @@ docker run -it mcr.microsoft.com/cbl-mariner/base/core:2.0 bash
 
 ### Troubleshooting FIPS-cryptography in the Snyk CLI
 
-`not in FIPS mode` errors indicate that the underlying cryptography library is not in FIPS mode. To solve these issues ensure that the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met.
+`not in FIPS mode` errors indicate that the underlying cryptography library is not in FIPS mode. To solve these issues, ensure that the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met.
 
 ## FIPS-validated cryptography support and use in IDE Integrations
 
 ### Visual Studio Code
 
-To make use of FIPS-validated cryptography in the [Snyk Visual Studio Code integration](../../snyk-ide-plugins-and-extensions/visual-studio-code-extension/), do the following:
+To use FIPS-validated cryptography in the [Snyk Visual Studio Code integration](../../snyk-ide-plugins-and-extensions/visual-studio-code-extension/), do the following:
 
 * Ensure the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met.
 * [Download the appropriate FIPS-enabled binaries](using-fips-validated-cryptography.md#download-fips-enabled-binaries).
@@ -86,7 +86,7 @@ To make use of FIPS-validated cryptography in the [Snyk Visual Studio Code integ
 
 ### Eclipse
 
-To make use of FIPS-validated cryptography in the [Snyk Eclipse integration](../../snyk-ide-plugins-and-extensions/eclipse-plugin/), do the following:
+To use FIPS-validated cryptography in the [Snyk Eclipse integration](../../snyk-ide-plugins-and-extensions/eclipse-plugin/), do the following:
 
 * Ensure the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met
 * [Download the appropriate FIPS-enabled binaries.](using-fips-validated-cryptography.md#download-fips-enabled-binaries)
@@ -96,7 +96,7 @@ To make use of FIPS-validated cryptography in the [Snyk Eclipse integration](../
 
 ### JetBrains
 
-To make use of FIPS-validated cryptography in the [Snyk JetBrains integration](../../snyk-ide-plugins-and-extensions/jetbrains-plugin/), do the following:
+To use FIPS-validated cryptography in the [Snyk JetBrains integration](../../snyk-ide-plugins-and-extensions/jetbrains-plugin/), do the following:
 
 * Ensure the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met.
 * [Download the appropriate FIPS-enabled binaries](using-fips-validated-cryptography.md#download-fips-enabled-binaries).
@@ -106,7 +106,7 @@ To make use of FIPS-validated cryptography in the [Snyk JetBrains integration](.
 
 ### Visual Studio
 
-To make use of FIPS-validated cryptography in the [Snyk Visual Studio integration](../../snyk-ide-plugins-and-extensions/visual-studio-extension/) do the following:
+To use FIPS-validated cryptography in the [Snyk Visual Studio integration](../../snyk-ide-plugins-and-extensions/visual-studio-extension/) do the following:
 
 * Ensure the [prerequisites](using-fips-validated-cryptography.md#prerequisites-for-fips-cryptography-in-the-cli-and-snyk-language-server) are met.
 * [Download the appropriate FIPS-enabled binaries](using-fips-validated-cryptography.md#download-fips-enabled-binaries).
@@ -119,4 +119,4 @@ FIPS in [CI/CD Integrations](../../snyk-ci-cd-integrations/) is available only b
 
 ## FIPS-validated cryptography support and use in Package Repositories
 
-The [Artifactory Gatekeeper plugin](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin) uses the Snyk API and runs on a Java VM. To make use of FIPS-validated cryptography, configure the Java Runtime to use a FIPS-validated[ JCE (Java Cryptography Extension)](https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?SearchMode=Basic\&ModuleName=java\&CertificateStatus=Active\&ValidationYear=0).
+The [Artifactory Gatekeeper plugin](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin) uses the Snyk API and runs on a Java VM. To use FIPS-validated cryptography, configure the Java Runtime to use a FIPS-validated[ JCE (Java Cryptography Extension)](https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?SearchMode=Basic\&ModuleName=java\&CertificateStatus=Active\&ValidationYear=0).

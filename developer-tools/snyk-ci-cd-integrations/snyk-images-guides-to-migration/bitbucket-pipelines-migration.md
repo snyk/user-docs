@@ -2,7 +2,7 @@
 
 ## For users of `snyk/snyk-scan` < v1.0.0 <a href="#users-using-snyk-snyk-scan-less-than-v1.0.0" id="users-using-snyk-snyk-scan-less-than-v1.0.0"></a>
 
-`snyk/snyk-scan` \<v1.0.0 uses Snyk CLI Images. As all Snyk CLI Images will be removed, `snyk/snyk-scan` < v1.0.0 will stop working also.
+`snyk/snyk-scan` \<v1.0.0 uses Snyk CLI Images. As Snyk removes all Snyk CLI Images, `snyk/snyk-scan` < v1.0.0 also stops working.
 
 See the [upgrade guide in Snyk Docs](../bitbucket-pipelines-integration-using-a-snyk-pipe/migrating-to-bitbucket-pipelines-v1.0.0.md) to upgrade to `snyk/snyk-scan` >= v1.0.0
 
@@ -12,19 +12,19 @@ See the [upgrade guide in Snyk Docs](../bitbucket-pipelines-integration-using-a-
 
 Users can create their own custom images to use. This option is available for `snyk/snyk-scan` >= v1.0.0 only. For details, see [User-defined custom images for CLI.](../user-defined-custom-images-for-cli.md)
 
-Creating a custom image should guarantee compatibility with your system. However, there are alternative images to which you can upgrade if creating a custom image is not possible.
+Creating a custom image guarantees compatibility with your system. However, there are alternative images to which you can upgrade if creating a custom image is not possible.
 
 ### Upgrade to a supported Snyk Image <a href="#upgrade-to-a-supported-snyk-image" id="upgrade-to-a-supported-snyk-image"></a>
 
-After you have validated that you are using a Snyk Image that will be removed, as outlined [for users of `snyk/snyk-scan` < v1.0.0](bitbucket-pipelines-migration.md#users-using-snyk-snyk-scan-less-than-v1.0.0), refer to the [Snyk images migration](snyk-images-migration.md) guidelines to view upgrade paths for your configuration.
+After you have validated that you are using a Snyk Image that Snyk will remove, as outlined [for users of `snyk/snyk-scan` < v1.0.0](bitbucket-pipelines-migration.md#users-using-snyk-snyk-scan-less-than-v1.0.0), refer to the [Snyk Images migration](snyk-images-migration.md) guidelines to view upgrade paths for your configuration.
 
 {% hint style="info" %}
-Remember to use pinned versions where available for better stability. for example, `snyk/snyk:dotnet-8.0` is preferable to `snyk/snyk:dotnet`
+Remember to use pinned versions where available for better stability. For example, `snyk/snyk:dotnet-8.0` is preferable to `snyk/snyk:dotnet`
 {% endhint %}
 
 An example follows of upgrading to a supported Snyk Image.
 
-In the example `bitbucket-pipeline.yml` configuration that follows, a Snyk image is configured that will be removed on 12 Aug 2024:
+The following example `bitbucket-pipeline.yml` configuration uses a Snyk image that Snyk will remove on 12 Aug 2024:
 
 ```yaml
 #  Example bitbucket-pipelines.yml using `snyk/snyk:node-16` Snyk Image
@@ -55,7 +55,7 @@ pipelines:
                   DEBUG: "true" # Optional
 ```
 
-Following the [Snyk images migration](snyk-images-migration.md) guidelines, you can upgrade to a supported Snyk Image as shown here:
+Following the [Snyk Images migration](snyk-images-migration.md) guidelines, you can upgrade to a supported Snyk Image as shown here:
 
 ```yaml
 #  Upgrading to supported Snyk Image `snyk/snyk:node-22`
@@ -91,7 +91,7 @@ pipelines:
 If you do not want to use the Bitbucket `snyk/snyk-scan` integration, you have the option to install and use the Snyk CLI directly.
 
 {% hint style="info" %}
-If you use this option, you will be unable to use integration features such as Code Insight Results
+If you use this option, you cannot use integration features such as Code Insight Results
 {% endhint %}
 
 The following example shows using the CLI directly.

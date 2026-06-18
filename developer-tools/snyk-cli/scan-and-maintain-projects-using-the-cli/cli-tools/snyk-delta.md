@@ -9,7 +9,7 @@ This tool provides the means to get the delta between two Snyk Open Source snaps
 * Dependency delta between the two snapshots:
   * Direct dependencies added and removed
   * Indirect dependencies added and removed
-  * Flag path(s) carrying new vulnerabilities
+  * Flag paths carrying new vulnerabilities
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ You can use this tool inline or as a standalone command.
 
 Use `snyk test --json --print-deps | snyk-delta`
 
-* You may point to a specific snapshot by specifying org+project coordinates:\
+* You can point to a specific snapshot by specifying org+project coordinates:\
   `snyk test --json --print-deps | snyk-delta --baselineOrg xxx --baselineProject xxx`
 * Use `--setPassIfNoBaseline` if used with `snyk-prevent_commit_status` and the Project is not monitored. This prevents`snyk-prevent_commit_status` from failing:\
   `setPassIfNoBaseline` default to false\
@@ -61,10 +61,10 @@ const result = await getDelta(jsonResultsFromSnykTest);
 **The result** is a number:
 
 * 0: no new issue
-* 1: new issue(s) or when using StrictMode and the unmonitored Project has issues (See more details in [StrictMode](snyk-delta.md#strictmode).)
+* 1: new issues or when using StrictMode and the unmonitored Project has issues (See more details in [StrictMode](snyk-delta.md#strictmode).)
 * 2: for errors like invalid auth
 
-Details for issues will be listed on stdout.
+Details for issues are listed on stdout.
 
 ## Help for snyk-delta
 

@@ -1,6 +1,6 @@
 # View Snyk Code CLI results
 
-The Snyk CLI enables you to perform the following actions on the results of the `snyk code test` command:
+The Snyk CLI lets you perform the following actions on the results of the `snyk code test` command:
 
 * [Analyze Snyk Code CLI results](view-snyk-code-cli-results.md#analyze-snyk-code-cli-results): View test results and analyze vulnerabilities.
 * [Filter results by severity level](view-snyk-code-cli-results.md#filter-results-by-severity-level): Filter the `snyk code test` results shown in the terminal to display only issues with a specific severity level and higher.
@@ -19,7 +19,7 @@ After you run the `snyk code test` command in the CLI, the results of the test a
 
 <figure><img src="../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results Details - 2.png" alt="Snyk Code test restuls from the CLI"><figcaption><p>Snyk Code test restuls from the CLI</p></figcaption></figure>
 
-Note that if you ignored issues on the Snyk Web UI, these issues would still appear in the CLI results. Each section on this page explains one section of the displayed results.
+Note that if you ignored issues on the Snyk Web UI, these issues still appear in the CLI results. Each section on this page explains one section of the displayed results.
 
 ### List of vulnerability issues detected by Snyk Code
 
@@ -44,7 +44,7 @@ The general information about the test results includes the following details:
 <figure><img src="../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Test summary - 2.png" alt="Details in general information about the CLI test results"><figcaption><p>Detals in general information about the CLI test results</p></figcaption></figure>
 
 * Test success: Whether the test was completed or not.
-* Organization: The Snyk ID or internal name of the Organization under which the test run. For more information, see [Set the Snyk Organization for the CLI tests](set-the-snyk-organization-for-the-cli-tests.md).
+* Organization: The Snyk ID or internal name of the Organization under which the test ran. For more information, see [Set the Snyk Organization for the CLI tests](set-the-snyk-organization-for-the-cli-tests.md).
 * Test type: The type of test command that generated the results. For Snyk Code, it is always `Static code analysis`.
 * Project path: The path of the tested repository.
 
@@ -73,7 +73,7 @@ To display only issues above a specific severity level, enter the following:
 snyk code test <path/to/folder> --severity-threshold=<low|medium|high>
 ```
 
-The results will include only issues with the specified severity level and issues with a higher severity level.
+The results include only issues with the specified severity level and issues with a higher severity level.
 
 For example, in the `snyk-goof-master` folder, eight issues were found, four with a High severity level and four with Medium:
 

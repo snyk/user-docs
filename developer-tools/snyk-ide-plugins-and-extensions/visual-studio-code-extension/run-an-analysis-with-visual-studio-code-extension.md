@@ -9,7 +9,7 @@ You can trigger `snyk test` by using one of these methods:
 * automatic (default)
 * manual
 
-Snyk Code and IaC configuration scans are triggered automatically when you open your Project and when you save any supported files. This behavior can be turned off in [user experience configuration](visual-studio-code-extension-configuration-environment-variables-and-proxy.md#user-experience).
+Snyk Code and IaC configuration scans run automatically when you open your Project and when you save any supported files. You can turn off this behavior in the [user experience configuration](visual-studio-code-extension-configuration-environment-variables-and-proxy.md#user-experience).
 
 Snyk Open Source, by default, does not automatically run on save, but you can enable auto-scan in the configuration settings.
 

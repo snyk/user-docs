@@ -1,6 +1,6 @@
 # User permissions and access scopes
 
-Snyk SCM integrations may require different permission requirements based on the connection method.
+Snyk SCM integrations can require different permissions based on the connection method.
 
 See the following for detailed permission requirements:
 
@@ -28,7 +28,7 @@ A PAT generated for the Group-level GitHub integration requires the following pe
 For information about token permissions in a brokered integration, see [GitHub - prerequisites and steps to install and configure Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker) and [Integrated SCM tokens for Snyk Broker](scm-integrations-and-snyk-broker.md#integrated-scm-tokens-for-classic-broker).
 {% endhint %}
 
-The Snyk GitHub Enterprise integration is bound to a single user, preferably a GitHub service account. The level of access for the integration is defined by the combination of the user's permissions in GitHub and the access defined for the Personal Access Token (PAT) on that user's account. If the PAT is defined with more permission than the user's GitHub account, the integration will not be able to use that permission.
+The Snyk GitHub Enterprise integration is bound to a single user, preferably a GitHub service account. The combination of the user's permissions in GitHub and the access defined for the Personal Access Token (PAT) on that user's account defines the level of access for the integration. If the PAT has more permission than the user's GitHub account, the integration cannot use that permission.
 
 The following table details the access scopes required in GitHub and GitHub Enterprise for Personal Access Tokens (PAT) and the scopes required for Snyk to perform the required operations on monitored repositories, such as reading manifest files on a frequent basis and opening fix or upgrade PRs. GitHub custom roles are not supported.
 
@@ -55,7 +55,7 @@ Snyk uses SCM webhooks to:
 
 ### GitHub Cloud App permission requirements
 
-The [Snyk GitHub Cloud App](organization-level-integrations/github-cloud-app.md) integration uses role-based access control, meaning access control is not dependent on individual users or their role, it is instead tied to the app entity.
+The [Snyk GitHub Cloud App](organization-level-integrations/github-cloud-app.md) integration uses role-based access control. Access control does not depend on individual users or their role; instead, it is tied to the app entity.
 
 To set up the GitHub Cloud app integration, you must be a:
 
@@ -64,7 +64,7 @@ To set up the GitHub Cloud app integration, you must be a:
 * GitHub Repository Admin (if installing through the GitHub UI).
 
 {% hint style="info" %}
-While some permissions may be optional from GitHub’s perspective, they are necessary to support Snyk functions. These permissions cannot be customized for your individual needs because the app is registered under the Snyk Organization.
+While some permissions are optional from GitHub’s perspective, they are necessary to support Snyk functions. You cannot customize these permissions for your individual needs because the app is registered under the Snyk Organization.
 {% endhint %}
 
 The following table states the required GitHub App permissions and scopes:
@@ -130,7 +130,7 @@ Scope by Purpose
 | <p><strong>Importing new projects to Snyk:</strong><br>Lists available repos in the Bitbucket instance in the <strong>Add Projects</strong> screen.</p>                                     |               <p><code>read:project:bitbucket</code></p><p><code>read:workspace:bitbucket</code></p><p><code>read:account</code></p><p><code>read:user:bitbucket</code></p>              |
 | <p><strong>Snyk Group Level Integrations:</strong><br>Required for Inventory and <a href="https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-essentials">Essentials</a></p> |                               <p><code>read:repository:bitbucket</code></p><p><code>read:user:bitbucket</code><br><code>read:workspace:bitbucket</code></p>                              |
 
-When reviewing the token scopes, they are listed by access level. Please review to ensure that you have the correct scopes:
+Bitbucket lists the token scopes by access level. Review them to ensure that you have the correct scopes:
 
 | READ                                                                                                                                                                                                                                                                             | WRITE                                                                                                                              |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |

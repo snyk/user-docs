@@ -20,7 +20,7 @@ Users can configure the Snyk extension using the **Solution settings** in the **
 
 For Projects using Git repositories or when you specify a reference folder, Snyk can filter the displayed issues to show only issues introduced in the working branch.
 
-This functionality reduces noise and allows you to focus only on current changes. This helps prevent issues early, thus unblocking your CI/CD pipeline and speeding up your deliveries.
+This functionality reduces noise and lets you focus only on current changes. This helps prevent issues early, unblocking your CI/CD pipeline and speeding up your deliveries.
 
 The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
@@ -32,7 +32,7 @@ To apply the filter and only see the new issues, use the **total/new** toggle in
 
 You can also enable net new issues feature in the [scan settings](visual-studio-extension-configuration-environment-variables-and-proxy.md#scan-configuration) for the Visual Studio extension.&#x20;
 
-For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as shown in the screen image that follows:
+For newly created feature branches, Snyk reports no issues. That is an intended state that developers aim for, as shown in the screen image that follows:
 
 <figure><img src="../../.gitbook/assets/image (265).png" alt="" width="481"><figcaption><p>Successful state, no net new issiues found</p></figcaption></figure>
 

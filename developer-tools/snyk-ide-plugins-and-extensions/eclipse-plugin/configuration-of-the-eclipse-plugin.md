@@ -9,10 +9,10 @@ You can set the following global configuration settings in the Snyk preferences.
 <figure><img src="../../.gitbook/assets/Screenshot 2025-11-24 at 16.50.22.png" alt=""><figcaption><p>Snyk preferences</p></figcaption></figure>
 
 * **Custom Endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDEs URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).\
-  Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
+  Snyk automatically redirects multi-tenant users who do not belong to the `SNYK-US-01` region to the correct domain for the email with which the user authenticated. The redirect does not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
 * **Allow unknown certificate authorities**: Disable certificate checks for SSL connections.
-* **Authentication Method**: Select to override the default OAuth2 authentication in order to use a Snyk API token. Snyk recommends keeping this setting off because the default OAuth2 authentication is more secure.
-* **Connect to Snyk**: Launch the web-browser to authenticate. In case of Personal Access Tokens, it will redirect to the correct website where the token can be generated and copied from.
+* **Authentication Method**: Select to override the default OAuth2 authentication to use a Snyk API token. Snyk recommends keeping this setting off because the default OAuth2 authentication is more secure.
+* **Connect to Snyk**: Launch the web browser to authenticate. For Personal Access Tokens, it redirects to the correct website where you can generate and copy the token.
 * **API Token or Personal Access Token**: Set the authentication token for Snyk.
 * **Snyk Open Source enabled**: Enable or disable Snyk Open Source Dependency Scans through the Language Server. Default: `Enabled`.
 * **Snyk Code Security enabled**: Enable or disable Snyk Code Security Issues through the Language Server. Default: `Disabled`.

@@ -6,7 +6,7 @@
 The Google Cloud Security Command Center integration is in [Early Access](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/snyk-release-process#early-access-features), and is available only with Snyk Enterprise plans. For more information, see [Plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-The Google Cloud Security Command Center (SCC) integration sends Snyk issues to SCC, enabling you to view and manage Snyk issues alongside cloud security findings from Google Cloud in a single viewpoint. Snyk issues are represented in SCC as code security findings. When Snyk issues are updated, corresponding SCC findings are automatically updated as well. All details are available at the Organization level in the Google Cloud Security Command Center (SCC) integration.
+The Google Cloud Security Command Center (SCC) integration sends Snyk issues to SCC, so you can view and manage Snyk issues alongside cloud security findings from Google Cloud in a single viewpoint. Snyk issues are represented in SCC as code security findings. When Snyk issues are updated, corresponding SCC findings are automatically updated as well. All details are available at the Organization level in the Google Cloud Security Command Center (SCC) integration.
 
 Use the following instructions to set up the integration:
 
@@ -28,12 +28,12 @@ Service Accounts are not available at the Organization level in Google Cloud IAM
 ## Create the findings source using the Google Cloud SCC console
 
 * In the SCC console, navigate to **Marketplace** and search for Snyk. Alternatively, navigate directly to the [Snyk for SCC marketplace listing](https://console.cloud.google.com/marketplace/product/snyk-marketplace/snyk-google-scc).
-* Click **SIGN UP WITH PARTNER** to install the Snyk for SCC integration. During this process, you will create a **Findings Source** for Snyk and a **Service Account** with [Security Center Findings Editor](https://cloud.google.com/security-command-center/docs/access-control-org#securitycenter.findingsEditor) permissions.
+* Click **SIGN UP WITH PARTNER** to install the Snyk for SCC integration. During this process, you create a **Findings Source** for Snyk and a **Service Account** with [Security Center Findings Editor](https://cloud.google.com/security-command-center/docs/access-control-org#securitycenter.findingsEditor) permissions.
 
 {% hint style="warning" %}
 **Important Identity and Access Management (IAM) Configuration for Security Command Center**
 
-The setup process will grant the Snyk Service Account the `Security Center Findings Editor` role on the Project you select. However, how you use Security Command Center determines if an additional step is needed.
+The setup process grants the Snyk Service Account the `Security Center Findings Editor` role on the Project you select. However, how you use Security Command Center determines if an additional step is needed.
 
 * **If you use Google SCC at the Organization level** (most common for businesses):
   * You must also add an IAM policy binding at the Organization level.
@@ -42,7 +42,7 @@ The setup process will grant the Snyk Service Account the `Security Center Findi
 {% endhint %}
 
 * Navigate to Google Cloud IAM and locate the **Service Accoun**t you created in the previous step, then [create a service account key](https://cloud.google.com/iam/docs/keys-create-delete#creating) in JSON format.
-* Make a note of the **Source ID** (Findings Source name) and the **Service Account Key**, as you will need to provide them to the Snyk Web UI.
+* Make a note of the **Source ID** (Findings Source name) and the **Service Account Key**, as you must provide them to the Snyk Web UI.
 
 You can then set up the integration in Snyk using the Snyk Web UI.
 
@@ -60,7 +60,7 @@ You can then set up the integration in Snyk using the Snyk Web UI.
 3. Enter the following information:
 
 * Profile name for the integration
-* The **Org ID** for the for the Google Cloud project that holds the Kubernetes cluster
+* The **Org ID** for the Google Cloud project that holds the Kubernetes cluster
 * The JSON Service Account Key File
 * The **Source ID** (Findings Source Name)
 

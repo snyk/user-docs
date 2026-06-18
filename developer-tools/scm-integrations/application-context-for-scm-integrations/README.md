@@ -4,7 +4,7 @@
 
 The application context for SCM integrations provides a comprehensive and interconnected overview of application assets. This context is crucial for assessing security risks and their potential implications, as it outlines the entire structure and components of the applications involved.
 
-Use Application Context to integrate with Internal Developer Portals (IDPs) and service catalogs such as ServiceNow CMDB, Atlassian Compass, and others. These platforms allow Snyk to automate the collection of essential context, including asset type, ownership, and lifecycle.
+Use Application Context to integrate with Internal Developer Portals (IDPs) and service catalogs such as ServiceNow CMDB, Atlassian Compass, and others. These platforms let Snyk automate the collection of essential context, including asset type, ownership, and lifecycle.
 
 The application context provides broader access to resources and services in an application. You can use it to:
 
@@ -12,7 +12,7 @@ The application context provides broader access to resources and services in an 
 * Gather relevant information to effectively assess and manage application security vulnerabilities and identify potential risks.
 * Create a streamlined data flow by working cohesively with assets identified through Snyk Essentials SCM integrations
 
-By leveraging Application context, you can achieve a deeper understanding of your application's security posture. After the integration is set, use the application context that can be leveraged across Snyk to classify repositories, set Asset policies, or filter reports.
+By using Application context, you can achieve a deeper understanding of your application's security posture. After the integration is set, use the application context across Snyk to classify repositories, set Asset policies, or filter reports.
 
 These are the available integrations that you can set up for the application context:
 
@@ -24,7 +24,7 @@ These are the available integrations that you can set up for the application con
 * [Datadog Service Catalog](./#datadog-service-catalog)
 
 {% hint style="info" %}
-The Application Context integrations on this page work in conjunction with assets found through Snyk Essentials SCM integrations. If there is no Snyk Essentials SCM integration configured at the Group level on the Integrations page, then data will not populate from these integrations.
+The Application Context integrations on this page work in conjunction with assets found through Snyk Essentials SCM integrations. If there is no Snyk Essentials SCM integration configured at the Group level on the Integrations page, then data does not populate from these integrations.
 {% endhint %}
 
 ## Backstage file for SCM integrations
@@ -32,10 +32,10 @@ The Application Context integrations on this page work in conjunction with asset
 {% hint style="info" %}
 **Release status**
 
-The ackstage file integration is in Early Access and available with Snyk Enterprise plans.
+The Backstage file integration is in Early Access and available with Snyk Enterprise plans.
 {% endhint %}
 
-Backstage is a service catalog that allows users to add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can leverage your SCM integration to pull metadata associated with backstage catalog files into Snyk Essentials.
+Backstage is a service catalog that lets users add metadata or annotations to their repositories, helping to organize and categorize the available resources for easier navigation and understanding. You can use your SCM integration to pull metadata associated with backstage catalog files into Snyk Essentials.
 
 You can use the backstage catalog file for GitHub, GitLab, Azure DevOps, BitBucket Cloud, and BitBucket on-prem SCM integrations.
 
@@ -88,7 +88,7 @@ The ServiceNow CMDB integration is in Early Access and available with Snyk Enter
 5. Add the **CMDB field to map Repo URL** - Add the URL of the repository.
 
 {% hint style="info" %}
-* The data gathered by Snyk from ServiceNow CMDB will be correlated with the Repository Assets.
+* Snyk correlates the data gathered from ServiceNow CMDB with the Repository Assets.
 * The ServiceNow CMDB integration uses basic authentication and suggests enabling the "Web service access only" option for Service Accounts.
 {% endhint %}
 
@@ -106,7 +106,7 @@ The ServiceNow CMDB integration is in Early Access and available with Snyk Enter
   * Category: application\_type
   * Owner: business\_unit
 * Click **Done**.
-* When the connection is established, the status of the ServiceNow CMDB integration is changed to **Connected**.
+* When the connection is established, the status of the ServiceNow CMDB integration changes to **Connected**.
 
 {% hint style="warning" %}
 When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration setup.
@@ -138,7 +138,7 @@ The Atlassian Compass integration is in Early Access and available with Snyk Ent
 4. Add your Atlassian Compass instance **Token**. Navigate to the [Manage API tokens for your Atlassian account](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) page for more details about creating an Atlassian API token.
 
 {% hint style="info" %}
-The gathered data from Atlassian Compass will be correlated with the Repository Assets.
+Snyk correlates the gathered data from Atlassian Compass with the Repository Assets.
 
 This feature is available only for the integration with Atlassian Compass.
 {% endhint %}
@@ -159,7 +159,7 @@ This feature is available only for the integration with Atlassian Compass.
    * **Owner** - the `ownerId` (finding owner name from ownerId).
    * **Application** - the `typeId` (all component types, Application, Service, Library, and so on receive an ID).
 9. Click **Done**.
-10. When the connection is established, the status of the Atlassian Compass integration is changed to **Connected**, and Snyk Essentials will start enriching repository assets with the data found in Atlassian Compass.
+10. When the connection is established, the status of the Atlassian Compass integration changes to **Connected**, and Snyk Essentials starts enriching repository assets with the data found in Atlassian Compass.
 
 {% hint style="warning" %}
 When you set up the catalog attributes, you must use the specific service-level attributes, for example `attribute.name.`
@@ -199,7 +199,7 @@ This integration is focused on [Harness’s](https://developer.harness.io/docs/i
    * Owner - If you select this metadata, it is mandatory to add the **Owner key**.
    * Application - If you select this metadata, it is mandatory to add the **Application key**.
 8. Click **Done**.
-9. When the connection is established, the status of the Harness integration is changed to **Connected**, and Snyk Essentials will start enriching repository assets with the data found in Harness.
+9. When the connection is established, the status of the Harness integration changes to **Connected**, and Snyk Essentials starts enriching repository assets with the data found in Harness.
 
 {% hint style="warning" %}
 When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration setup.
@@ -234,7 +234,7 @@ The OpsLevel integration is in Early Access and available with Snyk Enterprise p
    * Owner - Identified with `owner.name` in OpsLevel.
    * Application - Identified with `product` in OpsLevel.
 8. Click **Done**.
-9. When the connection is established, the status of the OpsLevel integration is changed to **Connected**, and Snyk Essentials will start enriching repository assets with the data found in OpsLevel.
+9. When the connection is established, the status of the OpsLevel integration changes to **Connected**, and Snyk Essentials starts enriching repository assets with the data found in OpsLevel.
 
 {% hint style="warning" %}
 When you set up the catalog attributes, you must use the specific service-level attributes, for example `attribute.name.`
@@ -271,7 +271,7 @@ The Datadog Service Catalog integration is in Early Access and available with Sn
    * Owner - If you select this metadata, it is mandatory to add the **Owner key**.
    * Application - If you select this metadata, it is mandatory to add the **Application key**.
 9. Click **Done**.
-10. When the connection is established, the status of the Datadog Service Catalog integration is changed to **Connected**, and Snyk Essentials will start enriching repository assets collected by a Snyk Essentials SCM Integration with the data found in Datadog Service Catalog.
+10. When the connection is established, the status of the Datadog Service Catalog integration changes to **Connected**, and Snyk Essentials starts enriching repository assets collected by a Snyk Essentials SCM Integration with the data found in Datadog Service Catalog.
 
 {% hint style="warning" %}
 When you set up the catalog attributes, you can customize the name of the attribute but must ensure that the same name is used in the catalog and in the Integration setup.

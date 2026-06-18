@@ -102,7 +102,7 @@ Fail only when there are vulnerabilities that can be fixed.
 
 To fail on any Snyk discoverable vulnerability (the default behavior), do not use the `--fail-on` option. If vulnerabilities do not have a Snyk-computed fix and this option is being used, tests pass.
 
-**Note**: If you test code constrained by metadata that Snyk cannot respect with `snyk test`, Snyk will not propose a fix, in order to avoid breaking your code. You may be able to identify and apply a fix manually.
+**Note**: If you test code constrained by metadata that Snyk cannot respect with `snyk test`, Snyk does not propose a fix, to avoid breaking your code. You can identify and apply a fix manually.
 
 ### `--app-vulns`
 
@@ -124,7 +124,7 @@ Allow disabling the scan of `node_modules` directories inside node.js container 
 
 In CLI versions v1.1292.0 and higher, `node_modules` scanning is enabled by default.
 
-When `node_modules` scaning is disabled, Snyk reports vulnerabilities for npm Projects sourced from application file pairs: `[package.json, package-lock.json], [package.json, yarn.lock]`.
+When `node_modules` scanning is disabled, Snyk reports vulnerabilities for npm Projects sourced from application file pairs: `[package.json, package-lock.json], [package.json, yarn.lock]`.
 
 ### `--nested-jars-depth`
 

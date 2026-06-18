@@ -21,8 +21,8 @@ grant_type=authorization_code
 
 The response includes details necessary for your app to communicate with the Snyk APIs: `access_token` and `refresh_token`, as well as their expiry.
 
-Both tokens must be stored in a secured data store. It is highly recommended to encrypt the values before storing them.
+Both tokens must be stored in a secured data store. Snyk highly recommends that you encrypt the values before storing them.
 
-The `access_token` will be used for future API calls on behalf of the user and Organization. The access-token has a much shorter lifespan than the `refresh_token`.
+The `access_token` is used for future API calls on behalf of the user and Organization. The access-token has a much shorter lifespan than the `refresh_token`.
 
-The `refresh_token` can be used a single time to get a new `access_token` when it expires. In other words, the `refresh_token` will no longer be usable if its own expiry time passes or if it is used to refresh the `access_token`.
+The `refresh_token` can be used a single time to get a new `access_token` when it expires. In other words, the `refresh_token` is no longer usable if its own expiry time passes or if it is used to refresh the `access_token`.

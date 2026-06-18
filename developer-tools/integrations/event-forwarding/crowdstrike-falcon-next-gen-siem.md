@@ -24,21 +24,21 @@ The process for setting up this integration consists of:
 
 To use the CrowdStrike NG-SIEM destination, you need to set up a Snyk Data Connector in your CrowdStrike NG-SIEM environment. To learn more, visit the [Snyk](https://falcon.us-2.crowdstrike.com/documentation/page/c7182a06/snyk) page in the CrowdStrike documentation. Select the **snyk-platform (Snyk Platform)** parser while configuring the data connector.
 
-When setting up the data connector, you receive an API key and URL, which you will use later to configure the Snyk Issue Forwarder.
+When setting up the data connector, you receive an API key and URL, which you use later to configure the Snyk Issue Forwarder.
 
 ## Configure Snyk Issue Forwarder
 
-This section configures Snyk to send issue data to the CrowdStrike connector you just created.
+This section configures Snyk to send issue data to the CrowdStrike connector you created.
 
 * Open the **Integrations** menu.
-* Select the **Add integration** option.
+* Select **Add integration**.
 * Select the **Issue Forwardin**g tag and search for CrowdStrike Issue Forwarding.
-* Click the **Add** button.
+* Click **Add**.
 * Add the profile name for this integration.
 * Add the **API URL** you copied earlier from your CrowdStrike Issue Forwarding account.
 * Add the **API key** you copied earlier from your CrowdStrike Issue Forwarding account.
-* Click the **Done** button.
-* When the connection is established, the status of the CrowdStrike Issue Forwarding integration is changed to **Connected**.
+* Click **Done**.
+* When the connection is established, the status of the CrowdStrike Issue Forwarding integration changes to **Connected**.
 
 ## Verify the integration connection
 

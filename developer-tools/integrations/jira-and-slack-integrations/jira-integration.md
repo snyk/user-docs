@@ -6,7 +6,7 @@ For Snyk Infrastructure as Code, see [Jira Integration for IaC](https://app.gitb
 
 ## Set up your Jira integration
 
-Snyk Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues. The Jira integration also includes the API endpoints [Create jira issue](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue) and [List all jira issues](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-jira-issues).
+The Snyk Jira integration lets you manually raise Jira issues in the Snyk UI for vulnerabilities or license issues. The Jira integration also includes the API endpoints [Create jira issue](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue) and [List all jira issues](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-jira-issues).
 
 {% hint style="info" %}
 If your Jira instance is private, use [the Snyk Broker deployment method](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker/install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-docker).
@@ -15,7 +15,7 @@ If your Jira instance is private, use [the Snyk Broker deployment method](https:
 ## Prerequisites for Jira integration with Snyk
 
 * Snyk supports Jira from version 5 to version 10.
-* The following [Jira permissions](https://confluence.atlassian.com/adminjiraserver073/managing-project-permissions-861253293.html) are required: **Browse Projects** and **Create Issues.**
+* You need the following [Jira permissions](https://confluence.atlassian.com/adminjiraserver073/managing-project-permissions-861253293.html): **Browse Projects** and **Create Issues.**
 
 ## How to set up your Jira integration
 
@@ -35,17 +35,17 @@ After entering the details into the integration, click **Save and continue**.
 If the connection is not successful, check that the Base URL starts with exactly `https://` It must not have capitals or be http.
 {% endhint %}
 
-If the connection is successful, you will see the connection details in orange at the top of the page.
+If the connection is successful, the connection details appear at the top of the page.
 
 Fill in the following fields:
 
 * Default Project (required) - Select a Jira Project from the list.
 * Default Issue Type (required) - Select an issue type from the list. The list is populated from available issue types in your Project.
-* Ignored Fields (optional) - Specified fields will be excluded from the prompt users see when creating Jira issues in Snyk. For custom fields, use the [custom field id](https://confluence.atlassian.com/jirakb/find-my-custom-field-id-number-in-jira-744522503.html) in the format `customfield_XXXXXX`.
+* Ignored Fields (optional) - Snyk excludes the specified fields from the prompt users see when creating Jira issues in Snyk. For custom fields, use the [custom field id](https://confluence.atlassian.com/jirakb/find-my-custom-field-id-number-in-jira-744522503.html) in the format `customfield_XXXXXX`.
 
 ## Create a Jira issue
 
-After you set up the Jira integration connection, open one of your Snyk Projects in the Snyk Web UI. A new button, **Create an issue**, appears at the bottom of each vulnerability and license issue card. This button allows you to create a Jira issue.
+After you set up the Jira integration connection, open one of your Snyk Projects in the Snyk Web UI. A new button, **Create an issue**, appears at the bottom of each vulnerability and license issue card. This button lets you create a Jira issue.
 
 <figure><img src="../../.gitbook/assets/Jira - new button.png" alt="Create an issue button"><figcaption><p>Create an issue button</p></figcaption></figure>
 
@@ -53,9 +53,9 @@ If the **Create an issue** button is not visible in the UI, ensure that **Group 
 
 When you select **Create an issue**, a Jira issue creation form appears. This form includes the Snyk issue details, which are copied into the associated fields. You can review and edit this form before creating the issue.
 
-Select the Jira project to which you want to send the issue. The fields in the example that follows are based on the fields that the specific Project has, so switching between Projects may show different options.
+Select the Jira project to which you want to send the issue. The fields in the example that follows are based on the fields that the specific Project has, so switching between Projects might show different options.
 
-<figure><img src="../../.gitbook/assets/uuid-67202f8e-7f70-1e84-6044-f65ec36138b3-en.png" alt="Crate a Jira issue"><figcaption><p>Create a Jira issue</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-67202f8e-7f70-1e84-6044-f65ec36138b3-en.png" alt="Create a Jira issue"><figcaption><p>Create a Jira issue</p></figcaption></figure>
 
 After you create a Jira issue, the Jira key with a link is displayed on the issue card. If you are using the Jira API, you can generate multiple Jira issues for the same issue in Snyk.
 

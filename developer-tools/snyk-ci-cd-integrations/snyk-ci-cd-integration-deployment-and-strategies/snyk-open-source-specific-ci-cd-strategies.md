@@ -26,7 +26,7 @@ snyk test --file=sln/.sln
 
 ## Yarn
 
-For Yarn workspaces, use the `--yarn-workspaces` option to `test` and `monitor` your packages. The root lockfile will be referenced for scans of all the packages. Use the `--detection-depth` option to find sub-folders that are not auto-discovered by default.
+For Yarn workspaces, use the `--yarn-workspaces` option to `test` and `monitor` your packages. Snyk references the root lockfile for scans of all the packages. Use the `--detection-depth` option to find sub-folders that are not auto-discovered by default.
 
 {% hint style="info" %}
 Support for Yarn workspaces is available for the `snyk test` and `snyk monitor` commands only.
@@ -53,7 +53,7 @@ Some customers have complex Projects, with multiple languages, package managers,
     ```
     snyk test --file=package.json
     ```
-* After you install the dependencies of each Project, make a similar call pointing to the specific artifact, such as `pom.xml`. This is fast and efficient, but can be difficult to scale, especially if you are not familiar with the Project.
+* After you install the dependencies of each Project, make a similar call pointing to the specific artifact, such as `pom.xml`. This is efficient, but can be difficult to scale, especially if you are not familiar with the Project.
 * For most Gradle Projects, using `--all-projects` works, as it invokes Gradle-specific options behind the scenes in the form of `snyk test --file=build.gradle --all-sub-projects` when it finds the build file as part of the `--all-projects` search.
 * Gradle may require additional configuration parameters. If so, target the other artifacts by using `--file=` for each manifest in the other languages and package managers. You must then use `--all-sub-projects` and potentially `--configuration-matching` to scan a complex Gradle Project.
 

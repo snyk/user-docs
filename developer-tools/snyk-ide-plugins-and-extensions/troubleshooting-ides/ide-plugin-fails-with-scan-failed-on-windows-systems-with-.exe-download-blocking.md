@@ -18,7 +18,7 @@ To determine if this is the case, navigate to the location for the CLI or Langua
 
 The preferred solution for this is to allowlist `downloads.snyk.io` and `static.snyk.io` in the baseline policy for `.exe` files, so that downloads from this location are exempt from `.exe` popup approvals for all users.&#x20;
 
-You can use the following temporary solutions in the interim if the preferred solution will take time to approve.&#x20;
+You can use the following temporary solutions in the interim if the preferred solution takes time to approve.&#x20;
 
 * Manually download the relevant `.exe` file directly from either [Snyk CLI Releases](https://github.com/snyk/cli/releases) or [Snyk Language Server Releases](https://github.com/snyk/snyk-ls/releases), and place it in the location listed in your plugin settings. Ensure that you turn off the option to **Automatically Manage Dependencies**.
 

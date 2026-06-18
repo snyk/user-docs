@@ -2,6 +2,6 @@
 
 Check the endpoint URL and the authentication information.
 
-Most likely the API URL or the token is not ok. They need to use [https://api.snyk.io](https://api.snyk.io) without `/api` . For other tenants, the situation is similar: the path `/api` is not supported on the `api` subdomain.
+Most likely the API URL or the token is incorrect. They need to use [https://api.snyk.io](https://api.snyk.io) without `/api` . For other tenants, the situation is similar: the path `/api` is not supported on the `api` subdomain.
 
-Even if the URL may have worked before, the URL is invalid and must be changed.
+Even if the URL worked before, the URL is invalid and you must change it.

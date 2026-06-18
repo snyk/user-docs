@@ -38,23 +38,23 @@ To enable the Snyk app for Slack, you must do the following:
 
 1. Authorize the app with Snyk to get new issues data that can be forwarded to your Slack workspace.
 2. Authorize the app with your Slack workspace to allow Snyk to send notifications to your channels in the workspace.
-3. Configure the default notification settings in Snyk for all Projects in your Organization and add [Project-level notification overrides](slack-app.md#manage-project-level-notification-overrides) if you would like.
+3. Configure the default notification settings in Snyk for all Projects in your Organization and add [Project-level notification overrides](slack-app.md#manage-project-level-notification-overrides) if you want.
 
 ## Configure the Snyk app for Slack
 
 Ensure the user performing this installation has the permission **Snyk Apps Management - Install Apps** before continuing. See [documentation for member roles](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management).
 
 1. Open the [Snyk integrations page](https://app.snyk.io/integrations), navigate to **Notifications**, and click the **Slack App** tile.
-2. You must give authorization for Snyk to access data from Slack by selecting **Authorize with Snyk**.
-3. Additional authorization is requested for Snyk to access the Snyk Slack workspace. This involves content and info about channels and conversations, as well as enabling Snyk to perform action in those channels and conversations. To proceed, select **Allow**.
+2. Authorize Snyk to access data from Slack by selecting **Authorize with Snyk**.
+3. Snyk requests additional authorization to access the Snyk Slack workspace. This involves content and info about channels and conversations, as well as enabling Snyk to perform actions in those channels and conversations. To proceed, select **Allow**.
 
 {% hint style="info" %}
-If multiple Slack workspaces are available, a dropdown will be visible at the top right of the page. Select the desired Slack workspace.
+If multiple Slack workspaces are available, a dropdown appears at the top right of the page. Select the desired Slack workspace.
 {% endhint %}
 
 You can configure the integration to provide a Slack channel ID for the channel where issue notifications for the Organization are sent, and also filter by severity level.
 
-To find the channel ID of a Slack Channel, open Slack, right-click on the channel name, select **View channel details**, then scroll down to the bottom of the window where you will see the channel ID, for example, C2TB2222N.
+To find the channel ID of a Slack Channel, open Slack, right-click on the channel name, select **View channel details**, then scroll down to the bottom of the window where the channel ID appears, for example, C2TB2222N.
 
 To add the Snyk for Slack app to a private channel, you must first add the app manually to the channel from within Slack and then select the channel within the Snyk integration. In the Private channel, select **Channel settings - Integrations**, and then **Add an app**. Search for **Snyk for Slack** and select **add**. After you have done this, the channel is displayed on the **Settings** page for the integration.
 
@@ -62,8 +62,8 @@ If you are a Slack Admin, you can manually add the Snyk for Slack app to a priva
 
 ## Issue notifications
 
-After the Slack app has been configured, new issue notifications are forwarded to the selected Slack channel according to the desired severity level threshold.\
-New issue notifications may take up to an hour to start propagating to your Slack workspace after it is configured.
+After you configure the Slack app, new issue notifications are forwarded to the selected Slack channel according to the desired severity level threshold.\
+New issue notifications can take up to an hour to start propagating to your Slack workspace after it is configured.
 
 <figure><img src="../../.gitbook/assets/image (116).png" alt="Example of a new critical vulnerability notification received in Slack"><figcaption><p>Example of a new critical vulnerability notification received in Slack</p></figcaption></figure>
 
@@ -114,7 +114,7 @@ To interact with the Project-level notification customization endpoints, you mus
 `GET /orgs/{org_id}/app_bots`
 
 {% hint style="info" %}
-Ensure you apply the `expand=app` query string on your request. This enables you to find the Bot for the related Snyk App named **Slack App**.
+Ensure you apply the `expand=app` query string on your request. This lets you find the Bot for the related Snyk App named **Slack App**.
 {% endhint %}
 
 #### Find your Project ID
@@ -145,6 +145,6 @@ After retrieving the `org_id`, `bot_id`, and `project_id` values, you can use th
 
 ## Remove the Snyk app for Slack
 
-To remove the Snyk app for Slack, navigate to the settings page, locate **Remove Slack Snyk app** at the bottom of the page, and click the **Disconnect Slack** button:
+To remove the Snyk app for Slack, navigate to the settings page, locate **Remove Slack Snyk app** at the bottom of the page, and click **Disconnect Slack**:
 
 <figure><img src="../../.gitbook/assets/slack-app5.png" alt="Remove Slack App integration"><figcaption><p>Remove Slack App integration</p></figcaption></figure>

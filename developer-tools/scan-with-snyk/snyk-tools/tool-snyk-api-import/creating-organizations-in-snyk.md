@@ -13,13 +13,13 @@ This page has instructions for creating Organizations (Orgs) in Snyk:
   * [Using the `orgs:create` utility](creating-organizations-in-snyk.md#using-the-orgs-create-utility)
 * [Recommendations](creating-organizations-in-snyk.md#recommendations)
 
-Before an import can begin you must set up Snyk with the Organizations you will populate with Projects.
+Before an import can begin, you must set up Snyk with the Organizations you populate with Projects.
 
-Snyk recommends that you have as many Organizations in Snyk as you have in the source you are importing from. For GitHub, this means mirroring the GitHub organizations in Snyk. The `snyk-api-import` tool provides a utility to use to make this simpler when using Groups and Organizations in Snyk.
+Snyk recommends that you have as many Organizations in Snyk as you have in the source you are importing from. For GitHub, this means mirroring the GitHub organizations in Snyk. The `snyk-api-import` tool provides a utility to make this simpler when using Groups and Organizations in Snyk.
 
 ## Generating the data required to create Organizations in Snyk with the `orgs:data` utility
 
-This utility helps generate data needed to mirror the GitHub.com, GitHub Enterprise, GitLab, Bitbucket Server, or Bitbucket Cloud organization structure in Snyk. This opinionated utility will assume every organization in GitHub.com, GitHub Enterprise, GitLab, Bitbucket Server, or Bitbucket Cloud should become an Organization in Snyk. If this is not what you are looking for, consider using the API endpoint [Create a new organization](../../../snyk-api/reference/organizations-v1.md#org) directly to create the structure you need.
+This utility helps generate data needed to mirror the GitHub.com, GitHub Enterprise, GitLab, Bitbucket Server, or Bitbucket Cloud organization structure in Snyk. This opinionated utility assumes every organization in GitHub.com, GitHub Enterprise, GitLab, Bitbucket Server, or Bitbucket Cloud should become an Organization in Snyk. If this is not what you are looking for, consider using the API endpoint [Create a new organization](../../../snyk-api/reference/organizations-v1.md#org) directly to create the structure you need.
 
 ### Options
 

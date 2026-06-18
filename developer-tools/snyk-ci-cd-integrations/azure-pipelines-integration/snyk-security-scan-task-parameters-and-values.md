@@ -9,7 +9,7 @@ The following describes the Snyk task configuration fields on the configuration 
 **Default**: none\
 **Type**: String / Azure Service Connection Endpoint of type SnykAuth / Snyk Authentication
 
-**Description**: The Azure DevOps service connection endpoint where your Snyk API token is defined. Your admin defines this within your Azure DevOps project settings, assigning it using a unique string in order to differentiate between different connections.
+**Description**: The Azure DevOps service connection endpoint where your Snyk API token is defined. Your admin defines this within your Azure DevOps project settings, assigning it using a unique string to differentiate between different connections.
 
 The configuration panel displays all available Snyk service connections from a dropdown list like the following:
 
@@ -26,9 +26,9 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 **Description**: Determines the type of testing to perform, which also selects the dynamic fields to display as described on the rest of this page.
 
-* Specifying `app` will perform analysis of your application's open-source dependencies (SCA)
-* Specifying `container` will analyze container packages and detected application open-source packages (SCA)
-* Specifying `code` will perform static analysis (SAST) on source code.
+* Specifying `app` analyzes your application's open-source dependencies (SCA)
+* Specifying `container` analyzes container packages and detected application open-source packages (SCA)
+* Specifying `code` performs static analysis (SAST) on source code
 
 ## Field: Container Image Name
 
@@ -55,7 +55,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default**: none\
 **Type**: string
 
-**Description**: Applicable to application-type tests only. The path to the manifest file to be used by Snyk. Should be provided only if non-standard. This dynamic field appears when **What do you want to test** is set to **Application**.
+**Description**: Applicable to application-type tests only. The path to the manifest file for Snyk to use. Provide it only if non-standard. This dynamic field appears when **What do you want to test** is set to **Application**.
 
 ## Field: Testing severity threshold
 
@@ -91,7 +91,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 **Default**: true\
 **Type**: Boolean
 
-**Description**: Specifies whether pipeline jobs should be failed or continued based on issues found by Snyk.
+**Description**: Specifies whether to fail or continue pipeline jobs based on issues found by Snyk.
 
 ## Field: Project name in Snyk
 

@@ -2,7 +2,7 @@
 description: The list of options and some examples
 ---
 
-# Github Enterprise - Examples
+# GitHub Enterprise - Examples
 
 The following options are available for the `snyk-scm-contributors-count github-enterprise` command:
 
@@ -25,7 +25,7 @@ The following options are available for the `snyk-scm-contributors-count github-
 
 Get your GitHub Enterprise token or create a new one with this [guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
-**Note:** Make sure your token has read access to the repos.
+**Note:** Ensure your token has read access to the repos.
 
 ## Running the command
 
@@ -57,12 +57,12 @@ Consider the following levels of usage and options:
 snyk-scm-contributors-count github-enterprise --token TOKEN --url HOST_URL --fetchAllOrgs
 ```
 
-*   To exclude some contributors from being counted in the commits, add an exclusion file with the emails to ignore(separated by a new line) and apply the `--exclusionFilePath` with the path to that file:
+*   To exclude some contributors from being counted in the commits, add an exclusion file with the emails to ignore (separated by a new line) and apply the `--exclusionFilePath` with the path to that file:
 
     ```
     snyk-scm-contributors-count github-enterprise --token TOKEN --url HOST_URL --orgs ORG_ONE,ORG_TWO --exclusionFilePath PATH_TO_FILE
     ```
-*   To set the output to json format, dd the `--json` flag:
+*   To set the output to json format, add the `--json` flag:
 
     ```
     snyk-scm-contributors-count github-enterprise --token TOKEN --url HOST_URL --json

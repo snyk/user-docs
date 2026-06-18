@@ -9,7 +9,7 @@ You can trigger `snyk test` using one of these methods:
 * automatic (default)
 * manual
 
-A Snyk scan is triggered automatically when you open your Project and when you save any supported files. This behavior can be turned off in [user experience configuration](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#user-experience).
+Snyk triggers a scan automatically when you open your Project and when you save any supported files. You can turn off this behavior in the [user experience configuration](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#user-experience).
 
 {% hint style="info" %}
 Ensure your files are saved before manually running an analysis.
@@ -25,7 +25,7 @@ To manually trigger `snyk test` , as illustrated in the following screen image:
 
 ## Scan configuration
 
-You may customize your scan behavior to reflect the security policy of your company or to focus on certain areas.
+You can customize your scan behavior to reflect the security policy of your company or to focus on certain areas.
 
 ### Severity filter
 
@@ -55,7 +55,7 @@ Snyk reports the following types of issues:
 * Container issues: found in images sourced from Kubernetes workload files. For details, see the section [Snyk Container issues](run-an-analysis-with-the-jetbrains-plugin.md#snyk-container-issues).
 
 {% hint style="info" %}
-The exact capabilities and available scanners depend on your plan. Be sure your Organization's admin has enabled all Snyk products prior to configuring any of them in the IDE plugin.
+The exact capabilities and available scanners depend on your plan. Ensure your Organization admin has enabled all Snyk products before you configure any of them in the IDE plugin.
 {% endhint %}
 
 There are two ways to show or hide specific issue types:
@@ -71,7 +71,7 @@ By default, all issue types shown are selected.
 
 Beginning with plugin version [2.10.0](https://plugins.jetbrains.com/plugin/10972-snyk-security/versions/stable/623034), it is possible to see only newly introduced issues.
 
-This functionality reduces noise and allows you to focus only on current changes. This will prevent issues early, thus unblocking your CI/CD pipeline and speeding up your deliveries.
+This functionality reduces noise and lets you focus only on current changes. It prevents issues early, so it unblocks your CI/CD pipeline and speeds up your deliveries.
 
 The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
@@ -79,11 +79,11 @@ In plugin version 2.12.0 and later, you can choose any folder as your base for s
 
 To apply the filter and see only the new issues, use the toggle in the summary panel.
 
-<figure><img src="../../.gitbook/assets/image (267).png" alt=""><figcaption><p>Summary panel toggle showing the the total number of issues and the number of issues in the checked out branch or current folder or new issues only</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (267).png" alt=""><figcaption><p>Summary panel toggle showing the total number of issues and the number of issues in the checked out branch or current folder or new issues only</p></figcaption></figure>
 
 You can also enable the net new issues feature in the [scan configuration](run-an-analysis-with-the-jetbrains-plugin.md#scan-configuration) settings.\
 \
-For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as illustrated in the screen image that follows:
+For newly created feature branches, there are no reported issues. That is an intended state that developers would aim for, as illustrated in the screen image that follows:
 
 <figure><img src="../../.gitbook/assets/SCR-20241024-ngbm.png" alt="Successful state. No net new issues found"><figcaption><p>Successful state, no net new issues found</p></figcaption></figure>
 
@@ -96,7 +96,7 @@ You can change the base branch or base folder by following these steps, as illus
 1. Click on the top-level node in the issues tree.
 2. Use the dropdown selection.
 3. Choose any branch.
-4. Click OK to save the selection.
+4. Click **OK** to save the selection.
 
 <figure><img src="../../.gitbook/assets/SCR-20241024-nfhj.png" alt="Change base branch for calculation Net New issues"><figcaption><p>Choosing the base branch or folder</p></figcaption></figure>
 
@@ -107,7 +107,7 @@ You can change the base branch or base folder by following these steps, as illus
 Snyk Code analysis shows a list of security vulnerabilities and code quality issues found in your application code.
 
 {% hint style="info" %}
-Effective beginning on June 24, 2025, Snyk Code Quality issues will no longer be provided.
+Effective beginning on June 24, 2025, Snyk no longer provides Snyk Code Quality issues.
 {% endhint %}
 
 For more details and examples of fixes others used to fix the issue, select the security vulnerability or the code security issue.

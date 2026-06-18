@@ -6,9 +6,9 @@ Visual Studio 2026 not supported.
 
 ## Scan early, fix as you develop: elevate your security posture
 
-Integrating security checks early in your development lifecycle helps you pass security reviews seamlessly and avoid expensive fixes down the line.
+Integrating security checks early in your development lifecycle helps you pass security reviews and avoid expensive fixes down the line.
 
-The Snyk Visual Studio extension allows you to analyze your code, infrastructure configuration, and open-source dependencies. With actionable insights directly in your IDE, you can address issues as they arise.
+The Snyk Visual Studio extension lets you analyze your code, infrastructure configuration, and open-source dependencies. With actionable insights directly in your IDE, you can address issues as they arise.
 
 **Key features**:
 
@@ -25,7 +25,7 @@ The Snyk Visual Studio extension allows you to analyze your code, infrastructure
 You can use the Snyk Visual Studio extension in the following environments:
 
 * Windows: 386, AMD64, and ARM64
-* MacOS: Visual Studio Windows plugin in a Windows virtual machine inside a Mac with an ARM64 processor
+* macOS: Visual Studio Windows plugin in a Windows virtual machine inside a Mac with an ARM64 processor
 
 Install the plugin at any time free of charge from the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022) and use it with any Snyk account, including the Free plan. For more information, see the [VS extension installation guide](https://learn.microsoft.com/en-us/visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2022#find-and-install-extensions).
 
@@ -35,7 +35,7 @@ After the extension is installed, use Snyk through the **Extensions > Snyk** men
 
 You can also open the Snyk tool window using **View** > **Other Windows** > **Snyk**.
 
-When the extension is installed, it automatically downloads the [Snyk CLI,](https://docs.snyk.io/snyk-cli) which includes the [Language Server](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server).
+When you install the extension, it automatically downloads the [Snyk CLI,](https://docs.snyk.io/snyk-cli) which includes the [Language Server](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server).
 
 Continue by following the instructions in the other Visual Studio extension docs:
 

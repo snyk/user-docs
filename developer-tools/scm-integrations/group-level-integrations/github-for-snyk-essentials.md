@@ -43,17 +43,17 @@ If you want to pull data from both organization and personal repositories, then 
 
 ## Generate a Personal access token from your GitHub settings
 
-1. Open GitHub and click the Settings menu for your profile.
-2. Select Developer settings from the left sidebar.
-3. Select Personal access tokens and then Tokens (classic).
-4. Click Generate new token and, from the dropdown, select Generate new token (classic).
-5. Add a description for your token in the Note field.
+1. Open GitHub and click the **Settings** menu for your profile.
+2. Select **Developer settings**.
+3. Select **Personal access tokens** and then **Tokens (classic)**.
+4. Click **Generate new token** and, from the dropdown, select **Generate new token (classic)**.
+5. Add a description for your token in the **Note** field.
 6. Select the required permissions:
    * `repo`
    * `read:org`
    * `read:user`
    * `user:email`.
-7. Click Generate token.
+7. Click **Generate token**.
 8. Copy and store the displayed key.
 
 {% hint style="info" %}
@@ -66,4 +66,4 @@ You can use the[ GitHub REST API](https://docs.github.com/en/rest?apiVersion=202
 
 You can use as the host Address the IP/URL of the GitHub server. The default URL is [`https://api.github.com`](https://api.github.com).
 
-The user associated with the token needs to have write permissions on relevant repositories to collect a breakdown of scan issues.
+The user associated with the token must have write permissions on relevant repositories to collect a breakdown of scan issues.

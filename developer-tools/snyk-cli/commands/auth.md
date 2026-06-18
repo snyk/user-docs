@@ -24,13 +24,13 @@ The Snyk API token can still be used as a fallback option. You must explicitly a
 
 ### `--auth-type=<TYPE>`
 
-Specify the \<TYPE> of authentication to use. Supported types are `oauth` (the default beginning with  version 1.1293.0) AND `token`.
+Specify the \<TYPE> of authentication to use. Supported types are `oauth` (the default beginning with version 1.1293.0) and `token`.
 
 ### `--client-secret=<SECRET>` and `--client-id=<ID>`
 
-You can set the client secret, and the id can be set in order to use the OAuth2 Client Credentials Grant.
+Set the client secret and the ID to use the OAuth2 Client Credentials Grant.
 
-Both values must be provided together. They are only valid together with `--auth-type=oauth;`otherwise they will be ignored.&#x20;
+You must provide both values together. They are valid only with `--auth-type=oauth;` otherwise Snyk ignores them.&#x20;
 
 For information about how to get the `<SECRET>` and the `<ID>`, see [Service accounts using OAuth 2.0](https://docs.snyk.io/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0#oauth-2.0-with-client-secret)
 

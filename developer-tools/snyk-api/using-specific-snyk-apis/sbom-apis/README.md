@@ -1,6 +1,6 @@
 # SBOM APIs
 
-Information about how to use the following API endpoints is provided:
+This section describes how to use the following API endpoints:
 
 * [Get a project’s SBOM document](rest-api-get-a-projects-sbom-document.md)
 * [Test an SBOM document for vulnerabilities](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)

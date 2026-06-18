@@ -24,8 +24,8 @@ Use the latest Git tag.
 snyk monitor --target-reference="$(git describe --tags --abbrev=0)"
 ```
 
-You can adjust the option for the developer tools used in your project. Any valid Git target can be used.
+You can adjust the option for the developer tools used in your project. You can use any valid Git target.
 
-`--target-reference` allows you to create sub-groupings on the Projects page.
+`--target-reference` lets you create sub-groupings on the Projects page.
 
 <figure><img src="../../.gitbook/assets/project-grouping-with-sub-groups.png" alt="A Project page with sub-groups"><figcaption><p>A Project page with sub-groups.</p></figcaption></figure>

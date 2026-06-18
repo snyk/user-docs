@@ -2,7 +2,7 @@
 
 This page provides instructions for and examples of using the Snyk GitHub Action for [Docker](https://github.com/snyk/actions/tree/master/docker). For general instructions and information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
 
-In order to use the Docker Action, you must have a Snyk API token. See [Getting your Snyk token](./#getting-your-snyk-token), or you can [sign up for free](https://snyk.io/login).
+To use the Docker Action, you must have a Snyk API token. See [Getting your Snyk token](./#getting-your-snyk-token), or you can [sign up for free](https://snyk.io/login).
 
 ## Using the Snyk Docker Action to check for vulnerabilities
 
@@ -55,7 +55,7 @@ jobs:
 
 ## Uploading Snyk scan results to GitHub Code Scanning using the Snyk Docker Action
 
-The Docker Action also supports integrating with GitHub Code Scanning and can show issues in the GitHub Security tab. As long as you reference a Dockerfile with `--file=Dockerfile` in the `args`, a `snyk.sarif` file will be generated, which can be uploaded to GitHub Code Scanning.
+The Docker Action also supports integrating with GitHub Code Scanning and can show issues in the GitHub Security tab. As long as you reference a Dockerfile with `--file=Dockerfile` in the `args`, Snyk generates a `snyk.sarif` file, which you can upload to GitHub Code Scanning.
 
 ```yaml
 name: Snyk Container

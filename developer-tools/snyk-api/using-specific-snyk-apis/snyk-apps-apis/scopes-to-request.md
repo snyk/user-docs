@@ -2,12 +2,12 @@
 
 Scopes define the permissions your Snyk App has to perform actions in a user’s account. When a user authorizes your Snyk App to access their Snyk account, they see the list of scopes the App is requesting and then decide whether or not they approve the connection.
 
-When deciding which scopes your Snyk App will request, consider the actions your App will be performing. It may seem better to request every available scope, but users may refuse to install an App that asks for more permissions than needed. Also, a user installing your App will not be able to complete the authorization process if they do not have all the permissions matching the scopes the App is requesting.
+When deciding which scopes your Snyk App requests, consider the actions your App performs. It can seem better to request every available scope, but users can refuse to install an App that asks for more permissions than needed. Also, a user installing your App cannot complete the authorization process if they do not have all the permissions matching the scopes the App is requesting.
 
 The following lists the **available scopes**.
 
 {% hint style="info" %}
-`org.read` is a mandatory scope and should always be included.
+`org.read` is a mandatory scope and must always be included.
 {% endhint %}
 
 | Scope                           | Description                                                                                     |
@@ -26,7 +26,7 @@ The following lists the **available scopes**.
 | `org.project.ignore.edit`       | Configure Project ignores                                                                       |
 | `org.project.ignore.delete`     | Permanently remove Project ignores                                                              |
 | `org.project.attributes.edit`   | Apply and remove project attributes                                                             |
-| `org.project.tag.edit`          | Create, apply and remove Project tags                                                           |
+| `org.project.tag.edit`          | Create, apply, and remove Project tags                                                          |
 | `org.project.pr.create`         | Create fix pull requests for Projects                                                           |
 | `org.project.pr.skip`           | Skip failed security tests on pull requests by marking checks as successful                     |
 | `org.project.jira.issue.read`   | View Jira issue information                                                                     |

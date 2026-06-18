@@ -4,7 +4,7 @@
 
 All transports sent to your webhooks have a `X-Hub-Signature` header, which contains the hash signature for the transport. The signature is a HMAC hexdigest of the request body, generated using sha256 and your `secret` as the HMAC key.
 
-You could use a function in Node.JS such as the following to validate these signatures on incoming requests from Snyk:
+You can use a function in Node.js such as the following to validate these signatures on incoming requests from Snyk:
 
 ```
 import * as crypto from 'crypto';
@@ -27,6 +27,6 @@ Payloads may evolve over time, and so are versioned. Payload versions are suppli
 Version numbers only increment when a breaking change is made, for example, removing a field that used to exist, or changing the name of a field. Version numbers do not increment when making an additive change, such as adding a new field that never existed before.
 
 {% hint style="warning" %}
-During the BETA phase, the structure of webhook payloads may change at any time, so Snyk  recommends that you check the payload version.
+During the BETA phase, the structure of webhook payloads can change at any time, so Snyk recommends that you check the payload version.
 {% endhint %}
 

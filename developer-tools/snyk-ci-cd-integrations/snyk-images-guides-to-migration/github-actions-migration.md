@@ -1,6 +1,6 @@
 # GitHub actions migration
 
-This page explains how to transition away from affected GitHub actions
+This page explains how to transition away from affected GitHub Actions.
 
 Snyk recommends that you update the affected workflows to use a newer action that is not slated for removal.
 
@@ -97,11 +97,11 @@ jobs:
 
 ## Alternative (b) create your own custom actions <a href="#b.-you-can-roll-your-own-custom-actions" id="b.-you-can-roll-your-own-custom-actions"></a>
 
-Snyk customers who prefer to move away from pre-built actions provided by Snyk can create custom actions tailored to their specific needs. This approach allows for greater customization and control over the actions used in their workflows.
+Snyk customers who prefer to move away from pre-built actions provided by Snyk can create custom actions tailored to their specific needs. This approach gives you greater customization and control over the actions used in their workflows.
 
 By creating your own actions, you can avoid the effects of future cleanup and removal events when images and actions lose vendor support.
 
-### Leveraging the [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup) <a href="#b.1-leveraging-the-snyk-setup-action" id="b.1-leveraging-the-snyk-setup-action"></a>
+### Use the [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup) <a href="#b.1-leveraging-the-snyk-setup-action" id="b.1-leveraging-the-snyk-setup-action"></a>
 
 This [action](../github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-setup-action.md) offers a versatile method of incorporating Snyk into your workflows effectively.
 
@@ -113,7 +113,7 @@ Consider using this action when:
 
 ### Direct CLI Installation <a href="#b.2-direct-cli-installation" id="b.2-direct-cli-installation"></a>
 
-Another option is to install and use the Snyk CLI directly in your GitHub Actions workflow. This method allows you to skip the requirement of dedicated GitHub Actions integration.
+Another option is to install and use the Snyk CLI directly in your GitHub Actions workflow. This method lets you skip the requirement of dedicated GitHub Actions integration.
 
 ```yaml
 name: Example workflow using Snyk

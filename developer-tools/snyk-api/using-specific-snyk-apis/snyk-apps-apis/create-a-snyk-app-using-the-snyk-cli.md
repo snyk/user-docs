@@ -48,11 +48,11 @@ A comma-separated list of scopes required by your Snyk App. This forms a list of
 
 `--context=<CONTEXT>`
 
-The `context` your Snyk App will use when installed.
+The `context` your Snyk App uses when installed.
 
-Can be either `tenant` or `user`. The default is `tenant` if `context` is not specified.
+Can be either `tenant` or `user`. The default is `tenant` if you do not specify `context`.
 
-A Snyk App that has the `tenant` context will act as a bot user so it is not tied to any individual user and thus will persist even if the installing user leaves the Snyk Organization. In contrast, a Snyk App that has the `user` context will perform actions as the installing user. Specify the `user` context only if your Snyk App is performing operations that are specific to individual users. If there is any doubt, use `tenant`.
+A Snyk App that has the `tenant` context acts as a bot user, so it is not tied to any individual user and persists even if the installing user leaves the Snyk Organization. In contrast, a Snyk App that has the `user` context performs actions as the installing user. Specify the `user` context only if your Snyk App is performing operations that are specific to individual users. If there is any doubt, use `tenant`.
 
 ## Sub-commands of `snyk apps`
 

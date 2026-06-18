@@ -47,7 +47,7 @@ jobs:
 ```
 
 {% hint style="info" %}
-It is required to restore the dependencies using `dotnet restore` or `nuget restore` before running the Snyk action
+You must restore the dependencies using `dotnet restore` or `nuget restore` before running the Snyk action
 {% endhint %}
 
 ## Using the Snyk dotNET action to run snyk monitor

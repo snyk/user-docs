@@ -14,7 +14,7 @@ The Python image checks and installs dependencies only if the manifest files are
 * If pipenv is present on the current path, and Snyk finds a `Pipfile` without a `Pipfile.lock`, then Snyk runs `pipenv update`.
 * If `pyproject.toml` is present in the current path and Snyk does not find `poetry.lock` then Snyk runs `pip install poetry`.
 
-If manifest files are present under any location other than the root, then they must be installed prior to running Snyk.
+If manifest files are present under any location other than the root, you must install them before running Snyk.
 
 You can use the Snyk Python action to check for vulnerabilities as follows:
 
@@ -32,7 +32,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```
 
-You can use the Snyk CocoaPods action to check for only high severity vulnerabilities as follows:
+You can use the Snyk Python action to check for only high severity vulnerabilities as follows:
 
 ```yaml
 name: Example workflow for Python using Snyk

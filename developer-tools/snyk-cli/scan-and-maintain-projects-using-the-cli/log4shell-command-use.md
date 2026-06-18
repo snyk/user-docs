@@ -24,7 +24,7 @@ Use `snyk log4shell` to scan a Java project, to see if the project includes:
 ## How to run
 
 1. Install the latest version of the Snyk CLI - see [Install the Snyk CLI](../install-the-snyk-cli/).
-2. Make sure you have built the project.
+2. Ensure you have built the project.
 3. Navigate to the project directory to scan.
 4. Enter `snyk log4shell`.\
    **Note**: this command does not require (nor support) any additional arguments.

@@ -10,14 +10,14 @@ You can use `snyk-to-html` (the Snyk JSON to HTML Mapper) to:
 This page explains how to [install `snyk-to-html`](snyk-to-html.md#install-snyk-to-html), [use the `snyk-to-html` tool](snyk-to-html.md#use-the-snyk-to-html-tool) to export the test results in JSON or SARIF format to an HTML file, and [view the test results in a browser](snyk-to-html.md#view-test-results-in-html-format).
 
 {% hint style="warning" %}
-Note, only `json` output is supported for Open Source (SCA) scans. `sarif` output will return no results from the `snyk-to-html` process for Open Source tests.
+Note that Snyk supports only `json` output for Open Source (SCA) scans. `sarif` output returns no results from the `snyk-to-html` process for Open Source tests.
 {% endhint %}
 
 ## Install `snyk-to-html`
 
 To install `snyk-to-html`, you must have the required permissions on your machine. If the installation fails, contact your IT administrator to request the required permissions.
 
-You can install `snyk-to-html`using npm:
+You can install `snyk-to-html` using npm:
 
 ```
 npm install snyk-to-html -g
@@ -43,7 +43,7 @@ When you run the `snyk-to-html` command, you can customize it with the following
 
 The `snyk-to-html` command does not generate the standard exit codes.
 
-To display the help for `snyk-to-html`Use the command `snyk-to-html --help` or `--h`.
+To display the help for `snyk-to-html`, use the command `snyk-to-html --help` or `--h`.
 
 If you want to use the `snyk-to-html` command in a CI/CD pipeline, see the [Snyk CI/CD integration examples](https://github.com/snyk-labs/snyk-cicd-integration-examples/blob/master/AzurePipelines/AzurePipelines-npm-generic-html.yml) for an example of a workaround for Azure Pipelines.
 
@@ -84,7 +84,7 @@ Navigate to the subfolder with the related files and run the following line to c
 
 ### Convert a JSON or SARIF file to HTML to view in a browser
 
-For automation purposes, you may be creating a JSON file for programmatic access to the results or already have one from a previous scan. You can send this JSON output to `snyk-to-html` to generate an HTML file.
+For automation purposes, you might create a JSON file for programmatic access to the results or already have one from a previous scan. You can send this JSON output to `snyk-to-html` to generate an HTML file.
 
 Follow these steps to run `snyk test` and then convert the output file to HTML.
 
@@ -117,7 +117,7 @@ Note that when you do this, any return code is ignored, such as error codes sign
 
 ### Use `snyk-to-html` command options
 
-The following examples show the snyk test command; however, they will also work with the `snyk test` commands for container, code, and IaC.
+The following examples show the `snyk test` command; they also work with the `snyk test` commands for container, code, and IaC.
 
 #### Show a simple version of the report
 

@@ -45,8 +45,8 @@ The use of these variables follows the MIT Kerberos implementation:
 
 * [KRB5\_CONFIG](https://web.mit.edu/kerberos/krb5-devel/doc/admin/conf_files/krb5_conf.html) - Kerberos configuration file
 * [KRB5CCNAME](https://web.mit.edu/kerberos/krb5-1.12/doc/basic/ccache_def.html) - Kerberos credential cache
-  * Currently, the only supported credential cache type (`ccache` types) is **FILE.**
-  * It is important to note that the cache file cannot be updated by the CLI. This means that the cache file must be updated externally, for example, by running [kinit](https://web.mit.edu/kerberos/krb5-1.12/doc/user/user_commands/kinit.html).,
+  * The only supported credential cache type (`ccache` types) is **FILE.**
+  * The CLI cannot update the cache file. You must update the cache file externally, for example, by running [kinit](https://web.mit.edu/kerberos/krb5-1.12/doc/user/user_commands/kinit.html).
 
 ## Disable proxy authentication
 

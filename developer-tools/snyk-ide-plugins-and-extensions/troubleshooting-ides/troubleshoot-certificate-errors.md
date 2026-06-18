@@ -23,8 +23,8 @@ See [Import the Certificate as a Trusted Certificate (The Java™ Tutorials > Se
 <figure><img src="../../.gitbook/assets/image (173).png" alt="Allow unknown certificate authorities"><figcaption><p>Allow unknown certificate authorities</p></figcaption></figure>
 
 * Update the JDK used by Snyk scans to add unknown certificates.
-* Update to the latest CLI and pugin version.
-* CLI download can be re-triggered by deleting the CLI. The path is shown in the Snyk Preferences.
+* Update to the latest CLI and plugin version.
+* To re-trigger the CLI download, delete the CLI. The path is shown in the Snyk Preferences.
 
 ### IntelliJ <a href="#intellij" id="intellij"></a>
 

@@ -59,7 +59,7 @@ For more information see the article [How to select the Organization to use in t
 
 ### `--ignore-policy`
 
-Ignore all set policies, the current policy in the `.snyk` file, rg level ignores, and the project policy on snyk.io.
+Ignore all set policies, the current policy in the `.snyk` file, org level ignores, and the project policy on snyk.io.
 
 ### `--policy-path=<PATH_TO_POLICY_FILE>`
 
@@ -139,7 +139,7 @@ For more information including allowable characters see [Project tags](https://d
 
 Set or override the remote URL for the repository.
 
-Example: `--remote-repo-url=https://gitlab.com/example/project` will create a target for given URL and on the UI it would be visible as `/example/project/` .
+Example: `--remote-repo-url=https://gitlab.com/example/project` creates a target for the given URL, which is visible in the UI as `/example/project/`.
 
 Can be used in combination with the `--report` option.
 

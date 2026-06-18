@@ -2,13 +2,13 @@
 
 ## Context for user-defined custom images for CLI
 
-Following Snyk announcements regarding [Snyk CLI Images](https://updates.snyk.io/deprecation-notice-for-snyk-cli-images-292562) and [Snyk Images](https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563), Snyk is providing instructions that customers will find useful in building their own custom images. You can visit the [Snyk Images build tool chain](https://github.com/snyk/snyk-images) on GitHub for a list of [currently supported images](https://github.com/snyk/snyk-images?tab=readme-ov-file#current-images).
+Following Snyk announcements regarding [Snyk CLI Images](https://updates.snyk.io/deprecation-notice-for-snyk-cli-images-292562) and [Snyk Images](https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563), Snyk provides instructions to help customers build their own custom images. You can visit the [Snyk Images build tool chain](https://github.com/snyk/snyk-images) on GitHub for a list of [currently supported images](https://github.com/snyk/snyk-images?tab=readme-ov-file#current-images).
 
 {% hint style="info" %}
 Snyk does not build or maintain images that contain end-of-life software by an upstream vendor. The list of unsupported images is available on the [GitHub repo](https://github.com/snyk/snyk-images?tab=readme-ov-file#vendor-unsupported-base-images).
 {% endhint %}
 
-Using custom images will allow you to extend environment support to any [environment](../snyk-cli/install-the-snyk-cli/) supported by the Snyk CLI.
+Using custom images lets you extend environment support to any [environment](../snyk-cli/install-the-snyk-cli/) supported by the Snyk CLI.
 
 ## Requirements for user-defined custom images for CLI
 
@@ -17,7 +17,7 @@ For your custom image to be supported, it must:
 * Use an environment [supported](../snyk-cli/install-the-snyk-cli/) by the Snyk CLI.
 * Use a language and framework [supported](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks) by Snyk.
 * Have Snyk CLI installed on the image; see [Install or update the Snyk CLI](../snyk-cli/install-the-snyk-cli/) for steps to install the CLI.
-* Be publicly accessible; the integration will pull the image.
+* Be publicly accessible, so the integration can pull the image.
 
 ## Use of user-defined custom images for CLI
 
@@ -58,9 +58,9 @@ docker build <PATH-TO-DOCKERFILE> --tag foobar/snyk:node-lts
 docker push foobar/snyk:node-lts
 ```
 
-### Example: how to use a custom image in a BitBucket pipeline
+### Example: how to use a custom image in a Bitbucket pipeline
 
-Compatibility in the BitBucket Pipeline integration is limited to environments supported by the Docker container the integration runs in. Following the Snyk announcement [Decoupling Snyk Scan from Snyk CLI Docker Images](https://updates.snyk.io/decoupling-snyk-scan-from-snyk-cli-docker-images-277502), before v1.0.0, the experience was limited to environments supported by the Snyk CLI Docker Images.
+Compatibility in the Bitbucket Pipeline integration is limited to environments supported by the Docker container the integration runs in. Following the Snyk announcement [Decoupling Snyk Scan from Snyk CLI Docker Images](https://updates.snyk.io/decoupling-snyk-scan-from-snyk-cli-docker-images-277502), before v1.0.0, the experience was limited to environments supported by the Snyk CLI Docker Images.
 
 With the release of v1.0.0, users can define custom images. If the list of environments provided by the [LANGUAGE](bitbucket-pipelines-integration-using-a-snyk-pipe/snyk-pipe-parameters-and-values-bitbucket-cloud.md#snyk-pipe-variables) variable does not support your particular build environment, you can define your own build environment in the form of a custom Docker image.
 

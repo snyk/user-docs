@@ -34,7 +34,7 @@ The `.snyk` file is created as a hidden file. If you do not see it in your root 
 snyk ignore --file-path=<directory1_or_file1> && snyk ignore --file-path=<directory2_or_file2> && snyk ignore --file-path=<directory3_or_file3>
 ```
 
-From now on, when you run the `snyk code test` command from the selected folder, the specified directories or files will be excluded from the test.
+From now on, when you run the `snyk code test` command from the selected folder, Snyk excludes the specified directories or files from the test.
 
 ## Re-include excluded files in the CLI test
 

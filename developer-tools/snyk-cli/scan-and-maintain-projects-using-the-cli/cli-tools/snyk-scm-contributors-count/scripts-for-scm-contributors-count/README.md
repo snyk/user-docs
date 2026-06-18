@@ -6,7 +6,7 @@ description: A detailed guide to the specific SCM-Contributor-Count scripts
 
 The following scripts are provided:
 
-* [Azure Devops](azure-devops/)
+* [Azure DevOps](azure-devops/)
 * [Bitbucket Cloud](bitbucket-cloud/)
 * [Bitbucket Server](bitbucket-server/)
 * [GitHub](github/)

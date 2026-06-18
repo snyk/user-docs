@@ -1,6 +1,6 @@
 # Bitbucket Data Center/Server
 
-The Bitbucket Data Center/Server integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open-source components, and use automated fixing. This integration supports Bitbucket Data Center/Server versions 4.0 and above.
+The Bitbucket Data Center/Server integration lets you continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open-source components, and use automated fixing. This integration supports Bitbucket Data Center/Server versions 4.0 and above.
 
 For a quick reference, see the [Snyk and Bitbucket best practices cheat sheet](https://snyk.io/blog/snyk-bitbucket-best-practices-cheat-sheet/) on the Snyk blog.
 
@@ -8,7 +8,7 @@ For a quick reference, see the [Snyk and Bitbucket best practices cheat sheet](h
 
 1. To give Snyk access to your Bitbucket DC/Server account, set up a dedicated service account in Bitbucket DC/Server with admin permissions.\
    Visit [Bitbucket Server documentation ](https://confluence.atlassian.com/bitbucketserver/users-and-groups-776640439.html#Usersandgroups-Creatingauser)to learn more about creating users.\
-   Ensure the newly-created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
+   Ensure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
 2. In Snyk, navigate to the **Integrations** page and click on the **Bitbucket Server** card.
 3. Enter your Bitbucket DC/Server URL and the username and password for the service account you created. Alternatively, you can create a [personal access token](https://confluence.atlassian.com/bitbucketserver075/personal-access-tokens-1018784848.html) and use it instead of a password.
    1. If your Bitbucket DC/Server instance has Basic Auth disabled, you must use a personal access token.
@@ -24,7 +24,7 @@ To select the repositories for Snyk to monitor:
 1. Click **Add your Bitbucket Server repositories to Snyk** to start importing repositories to Snyk.
 2. When prompted, select the repositories to import to Snyk and click **Add selected repositories**.
 
-After they are added, Snyk scans the selected repositories for dependency files in the entire directory tree, (that is, `package.json`, `pom.xml`, and so on) and imports them to Snyk as projects.\
+After they are added, Snyk scans the selected repositories for dependency files in the entire directory tree, (that is, `package.json`, `pom.xml`, and so on) and imports them to Snyk as Projects.\
 \
 The imported Projects appear on your Snyk **Projects** page and are continuously checked for vulnerabilities.
 
@@ -106,15 +106,15 @@ Snyk performs all the Bitbucket DC/Server operations on behalf of the integrated
 
 For Snyk to perform the required operations on monitored repositories, such as reading manifest files on a frequent basis and opening fix or upgrade PRs, the integrated Bitbucket DC/Server service account needs **Admin** permissions on the imported repositories.
 
-**Admin** permissions are also needed to set secure webhooks. Snyk relies on webhooks to perform a variety of tasks, from PR checks, to commit tests upon merge events, and upcoming auto imports. To ensure the events come from your system and your system only, with no tampering or spoofing, we secure the webhooks using the recommended method shared by the systems we are connecting to. For Bitbucket Server, please see [this link](https://confluence.atlassian.com/bitbucketserver/manage-webhooks-938025878.html#Managewebhooks-webhooksecretsSecuringyourwebhook).\
-To do this, a secret token is generated for each secure webhook we create. Snyk setting the webhooks resolves scalability constraints, eliminates token leakage, and reduces the integration workload for you.
+**Admin** permissions are also needed to set secure webhooks. Snyk relies on webhooks to perform a variety of tasks, from PR checks, to commit tests upon merge events, and upcoming auto imports. To ensure the events come from your system and your system only, with no tampering or spoofing, Snyk secures the webhooks using the recommended method shared by the systems Snyk connects to. For Bitbucket Server, see the [Manage webhooks](https://confluence.atlassian.com/bitbucketserver/manage-webhooks-938025878.html#Managewebhooks-webhooksecretsSecuringyourwebhook) documentation.\
+To do this, Snyk generates a secret token for each secure webhook it creates. Snyk setting the webhooks resolves scalability constraints, eliminates token leakage, and reduces the integration workload for you.
 
 For detailed information on the permission scopes required, see [Bitbucket permission requirements](../user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes).
 
 ### How to disconnect the Bitbucket Data Center/Server integration
 
 {% hint style="warning" %}
-When you disconnect Snyk from your Bitbucket repository projects, your credentials are removed from Snyk, and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
+When you disconnect Snyk from your Bitbucket repository Projects, your credentials are removed from Snyk, and any integration-specific Projects that Snyk is monitoring are deactivated in Snyk.\
 To re-enable this integration later, you must re-enter your credentials and activate your Projects.
 {% endhint %}
 

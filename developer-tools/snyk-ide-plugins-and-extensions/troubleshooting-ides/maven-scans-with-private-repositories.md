@@ -2,7 +2,7 @@
 
 ## Problem <a href="#problem" id="problem"></a>
 
-Maven fails due to dependencies that reference private repositories in Ithe IDE plugin or CI/CD pipeline.
+Maven fails due to dependencies that reference private repositories in the IDE plugin or CI/CD pipeline.
 
 ## Investigation <a href="#investigation" id="investigation"></a>
 
@@ -16,4 +16,4 @@ Dependencies need to be downloaded from a private repository and the Snyk CLI sh
 
 You can establish Maven settings or a profile containing the connection information, for example, with `-- -s your-home-directory/.m2/settings.xml` or `-- -Dprofile=my-profile`.
 
-These parameters can be passed on to the CLI using the `Additional Parameters` plugin setting in IDE. For CI/CDs. this should be passed as a pipeline argument if the Snyk CLI used directly, or a correct path mapping should be provided, if run in Docker image.
+You can pass these parameters on to the CLI using the `Additional Parameters` plugin setting in the IDE. For CI/CD, pass them as a pipeline argument if you use the Snyk CLI directly, or provide a correct path mapping if you run it in a Docker image.

@@ -1,13 +1,13 @@
 # Bitbucket Cloud App
 
-The Bitbucket Cloud App is positioned to be the default Bitbucket Cloud integration
+The Bitbucket Cloud App is the default Bitbucket Cloud integration.
 
-The Bitbucket Cloud App integration lets you connect your Snyk Organization to a Bitbucket Cloud Workspace and get all Snyk's core SCM integration features:
+The Bitbucket Cloud App integration lets you connect your Snyk Organization to a Bitbucket Cloud Workspace and get all the core SCM integration features in Snyk:
 
 * Continuously perform security scanning across all the integrated repositories
 * Detect vulnerabilities in your Open Source components
 * Provide automated fixes and upgrades
-* Provides developer teams with first-party visibility for security issues directly in the Bitbucket interface
+* Provide developer teams with first-party visibility for security issues directly in the Bitbucket interface
 
 {% hint style="info" %}
 Snyk recommends using the Bitbucket Cloud App integration for smoother integration and to ensure long-term support.
@@ -17,7 +17,7 @@ If you are using the [Bitbucket Cloud API token integration](bitbucket-cloud.md)
 
 ### Setting up a Bitbucket Cloud App
 
-To give Snyk access to your Bitbucket account, you need to install the Snyk App on your Bitbucket Cloud workspace.
+To give Snyk access to your Bitbucket account, you must install the Snyk App on your Bitbucket Cloud workspace.
 
 {% hint style="info" %}
 To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin** permissions for the Workspace in Bitbucket.
@@ -126,7 +126,7 @@ The first-party interface currently supports only the [Snyk Open Source](https:/
 
 You can **associate a first-party interface with a different Snyk account or Organization**.
 
-During the first-time Bitbucket Cloud App onboarding process, the first-party interface is associated with a specific Snyk Organization. This is the Snyk Organization to which Bitbucket users will import repositories and for which they will view Snyk issues.
+During the first-time Bitbucket Cloud App onboarding process, the first-party interface is associated with a specific Snyk Organization. This is the Snyk Organization to which Bitbucket users import repositories and for which they view Snyk issues.
 
 To change the Snyk Organization after onboarding, go to the workspace settings > **Security for Bitbucket Cloud** > **Integration Settings** and click **Connect via a different Snyk user/organization**.
 
@@ -154,5 +154,5 @@ To disable this integration, in **Organization settings** > **Integrations** > *
 2. Scroll to the **Disconnect** section and click **Remove** to remove the integration.
 
 {% hint style="info" %}
-Disconnecting the integration from the Snyk side does not uninstall the app from your workspace in Bitbucket Cloud. To uninstall the Bitbucket app, navigate to your workspace settings in Bitbucket.org --> Installed Apps and remove the Snyk Security for Bitbucket Cloud app.
+Disconnecting the integration from the Snyk side does not uninstall the app from your workspace in Bitbucket Cloud. To uninstall the Bitbucket app, navigate to your workspace settings in Bitbucket.org > **Installed Apps** and remove the Snyk Security for Bitbucket Cloud app.
 {% endhint %}

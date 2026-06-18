@@ -1,8 +1,8 @@
 # Issues: List issues for a package
 
-The Snyk REST API endpoint [List issues for a package](../reference/issues.md#orgs-org_id-packages-purl-issues) can be used to get all direct (non-transitive) vulnerabilities for a package using its `purl`, which is a uniform way of identifying software packages across ecosystems as defined in the [package URL specification](https://github.com/package-url/purl-spec).
+Use the Snyk REST API endpoint [List issues for a package](../reference/issues.md#orgs-org_id-packages-purl-issues) to get all direct (non-transitive) vulnerabilities for a package using its `purl`, which is a uniform way of identifying software packages across ecosystems as defined in the [package URL specification](https://github.com/package-url/purl-spec).
 
-When you pass a `purl` to the endpoint, Snyk will find any known vulnerabilities for that package and return them as part of the response body.
+When you pass a `purl` to the endpoint, Snyk finds any known vulnerabilities for that package and returns them as part of the response body.
 
 The API is useful when you have a list of packages and want to retrieve a list of vulnerabilities for a package version.
 
@@ -12,7 +12,7 @@ The examples on this page use [HTTPie](https://httpie.io/), but you can use any 
 
 ## Supported purl types
 
-The current release supports the following `purl` types: `apk`, `cargo`, `cocoapods`, `conan`, `composer`, `deb`, `gem`, `generic`, `golang`, `hex`, `npm`, `nuget`, `pub`, `pypi`, `rpm`, `swift` and `maven`.
+The current release supports the following `purl` types: `apk`, `cargo`, `cocoapods`, `conan`, `composer`, `deb`, `gem`, `generic`, `golang`, `hex`, `npm`, `nuget`, `pub`, `pypi`, `rpm`, `swift`, and `maven`.
 
 If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io).
 
@@ -38,7 +38,7 @@ $ http \
   version==2024-06-26
 ```
 
-For operating system packages, a vendor must be specified in the namespace portion, and a `distro` qualifier must be specified. Supported vendors include: `debian`, `alpine`, `rhel`, `ubuntu`, `amzn`, `centos`, `oracle`, `rocky`, `sles`.
+For operating system packages, you must specify a vendor in the namespace portion and a `distro` qualifier. Supported vendors include `debian`, `alpine`, `rhel`, `ubuntu`, `amzn`, `centos`, `oracle`, `rocky`, and `sles`.
 
 An example using a valid url-encoded operating system purl follows:
 
@@ -240,7 +240,7 @@ Where applicable, **pagination links for the results** are included as follows:
 
 ## Troubleshooting for the List issues for a package endpoint
 
-The following are **error states** that you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solution Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io).
+The following are **error states** that you can receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solution Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io).
 
 **Invalid PURL**\
 400\
@@ -264,7 +264,7 @@ To get access, contact your Solutions Engineer or Technical Success Manager, or 
 
 **Rate limit exceeded**\
 429\
-180 requests per minute per user are permitted on this API endpoint. If you exceed this volume, you will receive a 429 error response code.
+180 requests per minute per user are permitted on this API endpoint. If you exceed this volume, you receive a 429 error response code.
 
 **Invalid pagination parameters**\
 400\

@@ -27,4 +27,4 @@ helm template ./helm > output.yaml
 snyk iac test output.yaml
 ```
 
-The Snyk CLI cannot read from standard input at this time; Snyk is working on this feature.
+The Snyk CLI cannot read from standard input. Snyk is working on this feature.

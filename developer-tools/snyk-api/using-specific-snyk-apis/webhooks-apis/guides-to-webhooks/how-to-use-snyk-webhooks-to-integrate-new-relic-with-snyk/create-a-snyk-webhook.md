@@ -27,7 +27,7 @@ The response is like this:
 }
 ```
 
-You can then use the [Ping a webhook API](../../../../reference/webhooks-v1.md#org-orgid-webhooks-webhookid-ping) to pro-actively trigger the Snyk Webhook in order to test your integration:
+You can then use the [Ping a webhook API](../../../../reference/webhooks-v1.md#org-orgid-webhooks-webhookid-ping) to proactively trigger the Snyk Webhook to test your integration:
 
 ```http
 POST https://api.snyk.io/v1/org/{SNYK-ORG-ID}/webhooks/{SNYK-WEBHOOK-ID}/ping HTTP/2

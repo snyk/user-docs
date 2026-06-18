@@ -37,7 +37,7 @@ See also subsequent sections for options for specific build environments, packag
 
 ### `--reachability=<true|false>`
 
-Perform reachability analysis during the scan. This feature is currently in Snyk Preview. For more information, refer to [Reachability analysis](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/reachability-analysis)
+Perform reachability analysis during the scan. This feature is in Snyk Preview. For more information, refer to [Reachability analysis](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/reachability-analysis)
 
 Default: `false`
 
@@ -73,7 +73,7 @@ Can be used with `--all-projects` and `--yarn-workspaces` to indicate directory 
 
 Example: `$ snyk test --all-projects --exclude=dir1,file2`
 
-This will exclude any directories and files named `dir1` and `file2` when scanning for project manifest files such as: `./dir1`, `./src/dir1`, `./file2`, `./src/file2` and so on.
+This excludes any directories and files named `dir1` and `file2` when scanning for project manifest files such as: `./dir1`, `./src/dir1`, `./file2`, `./src/file2` and so on.
 
 **Note**: `--exclude=dir1` will find both `./dir1`, and `./src/dir1`.\
 However, `--exclude=./src/dir1` will result in an error because it includes a path.
@@ -96,7 +96,7 @@ Print the dependency tree before sending it for analysis.
 
 Set or override the remote URL for the repository.
 
-Example: `--remote-repo-url=https://gitlab.com/example/project` will create a target for given URL and on the UI it would be visible as `/example/project/` .
+Example: `--remote-repo-url=https://gitlab.com/example/project` creates a target for the given URL, and it is visible in the UI as `/example/project/` .
 
 ### `--dev`
 
@@ -230,7 +230,7 @@ Fail only when there are vulnerabilities that can be fixed. Use one of the value
 
 To fail on any Snyk-discoverable vulnerability (the default behavior), do not use the `--fail-on` option. If vulnerabilities do not have a Snyk-computed fix and this option is being used, tests pass.
 
-**Note**: If you test code constrained by metadata that Snyk cannot respect with `snyk test`, Snyk will not propose a fix, in order to avoid breaking your code. You may be able to identify and apply a fix manually.
+**Note**: If you test code constrained by metadata that Snyk cannot respect with `snyk test`, Snyk does not propose a fix, to avoid breaking your code. You can identify and apply a fix manually.
 
 ### `--reachability-filter=<reachable|no-info|not-applicable>`
 
@@ -256,9 +256,9 @@ Snyk reports the test results per individual `pom.xml` file within the aggregate
 
 ### `--maven-skip-wrapper`
 
-Forces the use of a globally installed `mvn` command, even when a Maven wrapper (i.e. `mvnw` or `mvnw.cmd`) is present in the project.
+Forces the use of a globally installed `mvn` command, even when a Maven wrapper (that is, `mvnw` or `mvnw.cmd`) is present in the project.
 
-Some projects include a Maven wrapper but users may prefer (or be required by their CI environment) to use a globally installed `mvn` instead. This option gives an explicit escape hatch without having to remove the wrapper from the project.
+Some projects include a Maven wrapper, but you might prefer, or your CI environment might require, a globally installed `mvn` instead. This option gives an explicit escape hatch without having to remove the wrapper from the project.
 
 ### `--scan-unmanaged`
 
@@ -372,7 +372,7 @@ This is useful when you have multiple projects with the same name in other `.sln
 
 ### `--dotnet-target-framework`
 
-Optional. You may use this option if your solution contains multiple `<TargetFramework>` directives. If you do not specify the option `--dotnet-target-framework`, all supported Target Frameworks will be scanned.
+Optional. You may use this option if your solution contains multiple `<TargetFramework>` directives. If you do not specify the option `--dotnet-target-framework`, Snyk scans all supported Target Frameworks.
 
 The Target Framework specified with this option should be defined following the standard [naming convention](https://learn.microsoft.com/en-us/dotnet/standard/frameworks#supported-target-frameworks)
 
@@ -444,7 +444,7 @@ You can specify how many sub-directories to search using `--detection-depth.`
 
 You can exclude directories and files using `--exclude`.
 
-Default: `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.
+Default: `--all-projects` automatically detects and scans Yarn Workspaces with other projects.
 
 ## Option for CocoaPods projects
 
@@ -460,7 +460,7 @@ Default: false
 
 Indicate which specific Python commands to use based on the Python version.
 
-Snyk uses Python in order to scan and find your dependencies. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
+Snyk uses Python to scan and find your dependencies. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
 
 Default: `python` This executes your default python version. Run `python -V` to find out what your default version is.
 

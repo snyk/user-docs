@@ -1,10 +1,10 @@
 # Register the App and configure user authorization
 
-In the previous sections of this tutorial, we set up our TypeScript project, added an Express server, and configured some basic routing. We'll be building on top of the project we created in the previous sections. It is highly recommended that you complete the previous portions of this tutorial before continuing if you have not done so already.
+In the previous sections of this tutorial, we set up our TypeScript project, added an Express server, and configured some basic routing. We'll be building on top of the project we created in the previous sections. Snyk recommends that you complete the previous portions of this tutorial before continuing if you have not done so already.
 
 ## Creating and registering a Snyk App
 
-We've made some good progress with our TypeScript application so far, but at the moment, that's all it is - a TypeScript application. To turn it into a bonafide Snyk App, we'll need to register our project as a new App using Snyk's API
+We've made good progress with our TypeScript application so far, but at the moment, that's all it is - a TypeScript application. To turn it into a bonafide Snyk App, we'll need to register our project as a new App using the Snyk API.
 
 ### Prerequisites
 
@@ -14,7 +14,7 @@ We've made some good progress with our TypeScript application so far, but at the
 
 ### Obtaining an `orgid`
 
-There are two methods for retrieving an `orgid`. The first is to log in to your Snyk account and visit the Organization settings page of the Organization for which you wish to retrieve the ID. The path to the Organization settings page is:
+There are two methods for retrieving an `orgid`. The first is to log in to your Snyk account and visit the Organization settings page of the Organization for which you want to retrieve the ID. The path to the Organization settings page is:
 
 ```
 https://app.snyk.io/org/{your-org-name}/manage/settings
@@ -28,21 +28,21 @@ Snyk Apps have first-class access to the API, regardless of whether users instal
 
 ### Registering our app with Snyk
 
-Registration of a new Snyk App is performed through a simple POST request to Snyk's API. While we could configure the App we've been building throughout this tutorial to perform the request, we'll instead make the request directly using `curl` to avoid creating a function that can only be run a single time.
+You register a new Snyk App through a POST request to the Snyk API. While we could configure the App we've been building throughout this tutorial to perform the request, we'll instead make the request directly using `curl` to avoid creating a function that can only be run a single time.
 
 The body of the request requires the following details:
 
 * `name`: The name of the Snyk App
-* `redirectUris`: The accepted callback location(s) during end-user authentication
-* `scopes`: The account permissions the Snyk App will ask a user to grant
+* `redirectUris`: The accepted callback locations during end-user authentication
+* `scopes`: The account permissions the Snyk App asks a user to grant
 
-A note on scopes: Once registered, Snyk Apps scopes cannot currently be changed. The only recourse is deleting the Snyk App using the [Delete App](../../../reference/apps.md#orgs-org_id-apps-creations-app_id-2) API endpoint and registering the app again as a new Snyk App.
+A note on scopes: after registration, Snyk Apps scopes cannot be changed. The only recourse is deleting the Snyk App using the [Delete App](../../../reference/apps.md#orgs-org_id-apps-creations-app_id-2) API endpoint and registering the app again as a new Snyk App.
 
-At the time of this writing, **Snyk Apps is still in beta**. At the moment, t**here is only one available scope: `apps:beta`**. This scope **allows** the App to test and monitor existing projects, as well as read information about Snyk Organizations, existing Projects, issues, and reports.
+At the time of this writing, **Snyk Apps is still in beta**. There is only one available scope: **`apps:beta`**. This scope **lets** the App test and monitor existing Projects, as well as read information about Snyk Organizations, existing Projects, issues, and reports.
 
-One of the **limitations of the Snyk Apps beta** is that **a Snyk App may be authorized only by users who have administrator access to the Organization to which the Snyk App is registered**.
+One of the **limitations of the Snyk Apps beta** is that **only users who have administrator access to the Organization to which the Snyk App is registered can authorize a Snyk App**.
 
-With your API token and `orgid` in hand, perform the following command in your terminal, substituting the values as necessary. For this tutorial, use `http://localhost:3000/callback` for the `redirectUris` value.
+With your API token and `orgid` in hand, run the following command in your terminal, substituting the values as necessary. For this tutorial, use `http://localhost:3000/callback` for the `redirectUris` value.
 
 {% hint style="info" %}
 You can avoid inputting your API Token and other secrets directly into your shell by adding them as export statements in a file and sourcing the file to set them as environment variables.
@@ -63,13 +63,13 @@ curl --include \
 
 The response from Snyk contains two important values needed to complete our Snyk App's integration: `clientId` and `clientSecret`. Store these values somewhere safe. This is the only time you will see your `clientSecret` from Snyk. As a warning, **never share your `clientSecret` publicly**. This is used to authenticate your App with Snyk.
 
-Now that we've registered the app as a Snyk App, we can start adjusting our TypeScript project to allow users to authorize it.
+Now that we've registered the app as a Snyk App, we can start adjusting our TypeScript project to let users authorize it.
 
 ## User authorization with a Snyk App
 
-User authentication for Snyk Apps is done by way of a webpage URL containing query parameters that match up with our Snyk App's data. We'll need to replace the query parameter values in this URL and send users to the final link in a web browser. From there they can grant account access to the Snyk App.
+User authentication for Snyk Apps works by way of a webpage URL containing query parameters that match up with the data for our Snyk App. We'll need to replace the query parameter values in this URL and send users to the final link in a web browser. From there they can grant account access to the Snyk App.
 
-After access has been provisioned, the user will be kicked back to our app's registered `callbackURL`, which we defined as `http://localhost:3000/callback`.
+After access is provisioned, the user returns to our app's registered `callbackURL`, which we defined as `http://localhost:3000/callback`.
 
 Essentially, our app needs to generate a link like the following and then send the user to it when it's time to authorize:
 
@@ -77,13 +77,13 @@ Essentially, our app needs to generate a link like the following and then send t
 https://app.snyk.io/oauth2/authorize?response_type=code&client_id={clientId}&redirect_uri={redirectURI}&state={state}&code_challenge={codeChallenge}&code_challenge_method=S256
 ```
 
-Though some of the query parameters may be somewhat obvious, we will go over them. We're going to modify our Snyk App to generate this URL for our users.
+Though some of the query parameters may be obvious, we will go over them. We're going to modify our Snyk App to generate this URL for our users.
 
-* `redirect_uri`: Optional values must match one of the values sent with our registration command from [Registering our app with Snyk](register-the-app-and-configure-user-authorization.md#registering-our-app-with-snyk). If not passed then the first value on the Snyk App is assumed.
-* `state`: This is used to carry any App-specific state from this `/authorize` call to the callback on the `redirect_uri` (such as a user's ID). It must be verified in our callback to [prevent CSRF attacks](https://datatracker.ietf.org/doc/html/rfc6749#section-10.12).
+* `redirect_uri`: Optional values must match one of the values sent with our registration command from [Registering our app with Snyk](register-the-app-and-configure-user-authorization.md#registering-our-app-with-snyk). If not passed, the first value on the Snyk App is assumed.
+* `state`: This carries any App-specific state from this `/authorize` call to the callback on the `redirect_uri` (such as a user's ID). You must verify it in our callback to [prevent CSRF attacks](https://datatracker.ietf.org/doc/html/rfc6749#section-10.12).
 * `code_challenge`: A URL-safe base64-encodes string of the SHA256 hash of a code verifier. The code verifier is a highly randomized string stored alongside the app side before calling `/authorize`, then sent when exchanging the returned authorization code for a token pair. This is part of Proof Key for Code Exchange (PKCE) which helps prevent authorization code interception attacks.
 
-Once a connection is complete, the user is redirected to the provided redirect URI (our `/callback` route in this case) with query string parameters `code` and `state` added on, which are necessary for the next steps of authorization.
+After a connection is complete, the user is redirected to the provided redirect URI (our `/callback` route in this case) with query string parameters `code` and `state` added on, which are necessary for the next steps of authorization.
 
 That next step involves taking the authorization code received as a query parameter in the response of the previous step and turning it into an _access token_. To do this, a Snyk App makes a POST request to the token endpoint: `https://api.snyk.io/oauth2/token`. That POST request needs some specific data in its request body, including the _authorization code_, `client id`, `client secret`, `code_verifier` and so on.
 
@@ -106,9 +106,9 @@ Based on the preceding information, our Snyk App has some new requirements. We w
 5. Refresh those authorization tokens.
 6. Handle errors and inform users of authorization success or failure.
 
-From here on, we'll be doing a lot of refactoring in our Snyk App and we'll be jumping into a number of different files. To help make the process easier to follow, this tutorial uses the convention of adding a commented filepath to the first line of code snippets, describing where they belong. In your own code; these comments aren't necessary.
+From here on, we'll be doing a lot of refactoring in our Snyk App and we'll be jumping into a number of different files. To help make the process easier to follow, this tutorial uses the convention of adding a commented filepath to the first line of code snippets, describing where they belong. In your own code, these comments aren't necessary.
 
-We'll also add a number of new packages to help address our new requirements. For convenience, go ahead and run the following in the root of your Project:
+We'll also add a number of new packages to help address our new requirements. For convenience, run the following in the root of your Project:
 
 ```bash
 npm install --save passport \
@@ -138,7 +138,7 @@ npm install --save-dev @types/cryptr \
 
 #### Application configuration
 
-Application config (for example, client secrets, api tokens, other config, and so on) should generally be stored securely and kept outside of the App itself. However, for brevity, this tutorial adds the configuration info as exportable constants in the `App.ts` file and leaves the actual implementation details to you. These are values that the Snyk App references in many different places.
+Application config (for example, client secrets, api tokens, and other config) should generally be stored securely and kept outside of the App itself. However, for brevity, this tutorial adds the configuration info as exportable constants in the `App.ts` file and leaves the implementation details to you. These are values that the Snyk App references in many different places.
 
 ```typescript
 // ./src/app.ts
@@ -294,11 +294,11 @@ export async function updateDb(
 
 ### Prepare for API calls
 
-Earlier, we installed the popular `axios` package to handle API calls. We know that we'll need to make some repetitive calls to the same API, so we abstract some helper functions to make our code easily re-usable across the project. Create an `APIHelpers.ts` file in the `util` directory.
+Earlier, we installed the popular `axios` package to handle API calls. We know that we'll need to make some repetitive calls to the same API, so we abstract some helper functions to make our code reusable across the project. Create an `APIHelpers.ts` file in the `util` directory.
 
-Before we fill that out, take note that while we are consistently hitting Snyk's API, we'll likely need to make requests against multiple versions of the API, depending on the endpoint's status in the migration from Snyk API v1 to Snyk REST API. One way we can handle this is by defining a TypeScript Enum and within our functions, swapping any necessary query parameters by comparing an argument to the enum's possible values.
+Before we fill that out, take note that while we are consistently hitting the Snyk API, we'll likely need to make requests against multiple versions of the API, depending on the endpoint's status in the migration from Snyk API v1 to Snyk REST API. One way we can handle this is by defining a TypeScript Enum and, within our functions, swapping any necessary query parameters by comparing an argument to the enum's possible values.
 
-Add the following content to a new file, or to `APIHelpers.ts` if you prefer; just make sure to export it for later use.
+Add the following content to a new file, or to `APIHelpers.ts` if you prefer. Make sure to export it for later use.
 
 ```typescript
 // ./interfaces/API.ts
@@ -333,7 +333,7 @@ export function callSnykApi(tokenType: string, token: string, version: APIVersio
 }
 ```
 
-Because this function is an `AxiosInstance`, we can easily talk to the API's different endpoints by calling `.get()`, `.post()`, or any other methods usually available to such an object.
+Because this function is an `AxiosInstance`, we can talk to the API's different endpoints by calling `.get()`, `.post()`, or any other methods usually available to such an object.
 
 We will see it in action by defining a second async function to retrieve our Snyk Apps' Organization ID:
 
@@ -407,7 +407,7 @@ export class EncryptDecrypt {
 
 We've laid the groundwork; now it's time to start doing things.
 
-As discussed in a previous section, our app needs to send would-be authorizers to a specific token URL. We'll add an `/auth` route in our Snyk App and add some authentication middleware to Express. For this, we'll use the excellent [passportjs](https://www.passportjs.org), the [passport-oauth2](https://www.passportjs.org/packages/passport-oauth2/) authentication strategy, along with Snyk's [@snyk/passport-snyk-oauth2](https://www.npmjs.com/package/@snyk/passport-snyk-oauth2). `passport` and its friends handle a large portion of what would otherwise be a lengthy and complicated authentication process.
+As discussed in a previous section, our app needs to send would-be authorizers to a specific token URL. We'll add an `/auth` route in our Snyk App and add some authentication middleware to Express. For this, we'll use [passportjs](https://www.passportjs.org), the [passport-oauth2](https://www.passportjs.org/packages/passport-oauth2/) authentication strategy, along with the Snyk package [@snyk/passport-snyk-oauth2](https://www.npmjs.com/package/@snyk/passport-snyk-oauth2). `passport` and its friends handle a large portion of what would otherwise be a lengthy and complicated authentication process.
 
 Because `passport` takes its encapsulation philosophy seriously, we'll need to handle everything else about the auth process. We need to set up an instance of the passport strategy we'll be using. We'll put our database helpers from earlier to use here as well, adding an entry into our database when we receive successful authorization.
 
@@ -571,7 +571,7 @@ touch ./src/routes/callback/callbackController.ts
 
 The `AuthController` handles authentication of the App via the previously described authorization flow. This is the third step of `passport` setup. Every controller class implements the controller interface which has two members: the path and the router.
 
-This controller handles the `/auth` route, which is what we'll use to send users (via `passport`) to the Snyk website for authorization approval.
+This controller handles the `/auth` route, which is what we'll use to send users (through `passport`) to the Snyk website for authorization approval.
 
 ```typescript
 // ./src/routes/auth/authController.ts
@@ -602,7 +602,7 @@ class AuthController implements Controller {
 export default AuthController;
 ```
 
-Once a user approves authorization to our Snyk App via the Snyk website, the user is kicked back to our callback URI, `/callback`. We'll handle this route similarly, invoking passport again. This is the final step of user authorization.
+After a user approves authorization to our Snyk App through the Snyk website, the user returns to our callback URI, `/callback`. We'll handle this route similarly, invoking passport again. This is the final step of user authorization.
 
 The `CallbackController` accepts requests on `/callback`, but also creates two sub-routes, `/callback/success` and `/callback/failure`, to handle the different possible outcomes it might receive from Snyk.
 
@@ -670,7 +670,7 @@ new App([
 
 ### Refresh token management
 
-If we build and run our Snyk App at this point, hitting the `/auth` route will successfully jump us out to the Snyk authorization portal and, provided we confirm the authorization, we'll get kicked back to our local app's callback route at `/callback`. If we had a very simplistic, one-off use case, we could end things here. But there's one more piece of the puzzle we should figure out if we're going to keep our user's authorization fresh; that is token expiry.
+If we build and run our Snyk App at this point, hitting the `/auth` route jumps us out to the Snyk authorization portal and, after we confirm the authorization, we return to our local app's callback route at `/callback`. If we had a simplistic, one-off use case, we could end things here. But there's one more piece of the puzzle we should figure out if we're going to keep our user's authorization fresh, that is token expiry.
 
 If you ran the app to test things, take a look at database entries. If you've been following along, you should see something like this:
 
@@ -695,7 +695,7 @@ That `expires_in` value will continue to count down until 0. If it does, the use
 
 To keep our access token from going stale, we need to make a POST request using our `refresh_token` to get an updated `access_token`. See [Set up the refresh token exchange](../set-up-a-snyk-app-using-the-oauth2-api/set-up-the-refresh-token-exchange.md).
 
-We can automate this process in our Snyk App by utilizing [Axios interceptors](https://axios-http.com/docs/interceptors) to _intercept_ the requests we make and ensure we have an up-to-date `access_token`.
+We can automate this process in our Snyk App by using [Axios interceptors](https://axios-http.com/docs/interceptors) to _intercept_ the requests we make and ensure we have an up-to-date `access_token`.
 
 Create the file `./src/util/interceptors.ts`, importing all the packages, classes, and so on that we'll need at the top:
 
@@ -802,7 +802,7 @@ async function refreshAndUpdateDb(data: AuthData): Promise<string> {
 }
 ```
 
-With our interceptors defined, the only thing we need to do is update our `callSnykApi` function to utilize them. Interceptors are methods of the `axiosInstance` object, so we'll add them after the `axios.create()` call and before the function's `return`.
+With our interceptors defined, the only thing we need to do is update our `callSnykApi` function to use them. Interceptors are methods of the `axiosInstance` object, so we'll add them after the `axios.create()` call and before the function's `return`.
 
 ```typescript
 // ./src/util/APIHelpers.ts
@@ -837,6 +837,6 @@ export function callSnykApi(tokenType: string, token: string, version: APIVersio
 
 ## Wrap-up
 
-If you've made it this far, congratulations! You've learned how to register a Snyk App with Snyk, configure the authorization flow, keep the `auth_token` from getting stale, and set up a great starting point using TypeScript.
+You've now learned how to register a Snyk App with Snyk, configure the authorization flow, keep the `auth_token` from getting stale, and set up a starting point using TypeScript.
 
-In the next module of this tutorial, we'll add a template system and configure our app to show users all of their projects from Snyk in our App.
+In the next module of this tutorial, we'll add a template system and configure our app to show users all of their Projects from Snyk in our App.

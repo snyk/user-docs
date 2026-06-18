@@ -16,7 +16,7 @@ On the **Problems** tab of the Visual Studio Code results screen, you can see al
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 13.41.55.png" alt="Visual Studio Code Problems tab"><figcaption><p>Visual Studio Code Problems tab</p></figcaption></figure>
 
-Snyk also includes a feedback mechanism to report false positives so others do not see the same issue (bottom left).
+Snyk also includes a feedback mechanism to report false positives so others do not see the same issue.
 
 ## Snyk Code editor window
 

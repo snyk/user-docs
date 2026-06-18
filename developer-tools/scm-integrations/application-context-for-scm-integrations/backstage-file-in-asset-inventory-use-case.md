@@ -13,7 +13,7 @@ Components have several attributes and most of them are optional:
 * `Metadata.name` (mandatory) - represents the name of the component.
 * `Metadata.title` (optional) - represents the name of the component.
 
-The backstage data is dynamic and may change over time:
+The backstage data is dynamic and can change over time:
 
 * If new commits or updates are made to the `catalog-info.yaml` file, then Snyk Essentials updates the asset attribute for that specific repository asset.
 * If the`catalog-info.yaml` file is removed from the repository, then Snyk Essentials deletes the asset attribute from that specific repository assets.

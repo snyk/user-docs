@@ -126,6 +126,6 @@ async function messageSlack(message,snykProjectUrl,snykProjectName,snykIssuePack
 }
 ```
 
-Snyk used Slack’s built-in block builder to design the payload in the desired format. With the block builder you can configure the JSON of the payload to display more information like the CWE, add more interactions, and even use the ignore API from Snyk to create an ignore button.
+Snyk used the built-in block builder in Slack to design the payload in the desired format. With the block builder you can configure the JSON of the payload to display more information like the CWE, add more interactions, and even use the ignore API from Snyk to create an ignore button.
 
 You can find more information about the block builder ([Block Kit](https://api.slack.com/block-kit)) on the Slack website.

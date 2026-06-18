@@ -12,7 +12,7 @@ The remaining pages address [Scanning Projects](./#scanning-projects), [Monitori
 * [The .snyk file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file)
 * [A .snyk policy file in a different directory from the manifest file](a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md)
 * [Failing builds in Snyk CLI](failing-of-builds-in-snyk-cli.md)
-* [Ignore vulnerabilties using Snyk CLI](ignore-vulnerabilities-using-the-snyk-cli.md)
+* [Ignore vulnerabilities using Snyk CLI](ignore-vulnerabilities-using-the-snyk-cli.md)
 * [Invalid string length error when scanning projects](invalid-string-length-error-when-scanning-projects.md)
 * [Scan all unmanaged JAR files](scan-all-unmanaged-jar-files.md)
 * [How to select the organization to use in the CLI](how-to-select-the-organization-to-use-in-the-cli.md)

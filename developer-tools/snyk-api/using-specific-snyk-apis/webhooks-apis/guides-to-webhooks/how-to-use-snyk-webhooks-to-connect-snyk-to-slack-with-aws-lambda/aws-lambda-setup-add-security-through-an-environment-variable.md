@@ -4,7 +4,7 @@ For security reasons the script that you created uses an environment variable: `
 
 Follow these steps to add security through an environment variable:
 
-1. Go to the **Configuration** tab in the AWS Lambda function.
+1. Navigate to the **Configuration** tab in the AWS Lambda function.
 2. Click **Environment variables**.
 3. Add the new environment variable.
 4. Use `hmac_verification` as your key.

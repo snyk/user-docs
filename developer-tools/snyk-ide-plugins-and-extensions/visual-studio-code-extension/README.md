@@ -2,9 +2,9 @@
 
 ## **Scan early, fix as you develop: elevate your security posture**
 
-Integrating security checks early in your development lifecycle helps you pass security reviews seamlessly and avoid expensive fixes down the line.
+Integrating security checks early in your development lifecycle helps you pass security reviews and avoid expensive fixes down the line.
 
-The Snyk Visual Studio Code extension allows you to analyze your code, open-source dependencies, and Infrastructure as Code (IaC) configurations. With actionable insights directly in your IDE, you can address issues as they arise.
+The Snyk Visual Studio Code extension lets you analyze your code, open-source dependencies, and Infrastructure as Code (IaC) configurations. With actionable insights directly in your IDE, you can address issues as they arise.
 
 {% hint style="info" %}
 The extension also works for other VSCode-based IDEs such as Windsurf, Cursor, and Eclipse Theia.
@@ -12,7 +12,7 @@ The extension also works for other VSCode-based IDEs such as Windsurf, Cursor, a
 
 **Key features:**
 
-* **In-line issue highlighting:** Security issues are flagged directly within your code, categorized by type and severity for quick identification and resolution.
+* **In-line issue highlighting:** Snyk flags security issues directly within your code, categorized by type and severity for quick identification and resolution.
 * **Comprehensive scanning:** The extension scans for a wide range of security issues, including:
   * [**Open Source Security**](https://snyk.io/product/open-source-security-management/)**:** Detects vulnerabilities and license issues in both direct and transitive open-source dependencies. Automated fix suggestions simplify remediation. Explore more in the [Snyk Open Source documentation](https://docs.snyk.io/scan-using-snyk/snyk-open-source).
   * [**Code Security**](https://snyk.io/product/snyk-code/)**:** Identifies security vulnerabilities in your custom code. Explore more in the [Snyk Code documentation](https://docs.snyk.io/scan-using-snyk/snyk-code).
@@ -41,7 +41,7 @@ Snyk Visual Studio Code extension does not support remote and containerized envi
 
 Install the plugin at any time free of charge from the [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner) and use it with any Snyk account, including a Free account. For more information, see the [VS Code extension installation guide](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-an-extension).
 
-When the extension is installed, it automatically downloads the [Snyk CLI,](https://docs.snyk.io/snyk-cli) which includes the [Language Server](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server).
+When you install the extension, it automatically downloads the [Snyk CLI,](https://docs.snyk.io/snyk-cli) which includes the [Language Server](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server).
 
 Continue by following the instructions in the other Visual Studio Code extension docs:
 
@@ -52,7 +52,7 @@ Continue by following the instructions in the other Visual Studio Code extension
 * [Run an analysis with Visual Studio Code extension](https://docs.snyk.io/integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension)
 * [View analysis results from Visual Studio Code extension](https://docs.snyk.io/integrate-with-snyk/use-snyk-in-your-ide/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension)
 
-When the VS Code extension is installed for the first time, a modal will pop up asking users if they want to enable Secure at Inception capabilities via Snyk Studio. With Secure at Inception enabled, a file such as snyk\_rules.mdc may be written to the directory.
+When you install the VS Code extension for the first time, a modal asks whether you want to enable Secure at Inception capabilities through Snyk Studio. With Secure at Inception enabled, Snyk may write a file such as snyk\_rules.mdc to the directory.
 
 For more information, see the Snyk Studio quickstart guides for [Cursor](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide), [Windsurf](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/windsurf-guide), and [Copilot](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/github-copilot-guide).
 
