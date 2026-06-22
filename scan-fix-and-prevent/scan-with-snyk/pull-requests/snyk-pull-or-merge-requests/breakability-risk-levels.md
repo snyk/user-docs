@@ -1,7 +1,7 @@
 # Breakability risk levels
 
 {% hint style="info" %}
-**Release status**
+**Feature availability**
 
 Breakability analysis is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
