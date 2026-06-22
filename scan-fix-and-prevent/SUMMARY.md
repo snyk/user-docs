@@ -20,7 +20,7 @@
   * [Project repositories](scan-with-snyk/import-project-repository/README.md)
     * [Exclude directories and files from Project import](scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md)
     * [Remove imported repository from a Project](scan-with-snyk/import-project-repository/remove-imported-repository-from-a-project.md)
-    * [Snyk repo content sync](scan-with-snyk/project-repositories/snyk-repo-content-sync.md)
+    * [Snyk Repo Content Sync](scan-with-snyk/project-repositories/snyk-repo-content-sync.md)
 * [Snyk Open Source](scan-with-snyk/snyk-open-source/README.md)
   * [Scan open-source libraries and licenses](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/README.md)
     * [Open-source license compliance](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md)
