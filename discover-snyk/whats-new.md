@@ -7,6 +7,12 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## June 2026
+
+### Snyk Open Source
+
+* [Breakability risk levels](https://docs.snyk.io/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/breakability-risk-levels) is now in General Availability for Enterprise plan users.
+
 ## May 2026
 
 ### Snyk Analytics
