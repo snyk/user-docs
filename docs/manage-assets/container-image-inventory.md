@@ -13,14 +13,11 @@ Instead of navigating a fragmented set of per-scan Projects, you get one authori
 | **Base image fix recommendations** | View base image upgrade recommendations with impact analysis |
 | **Related Projects** | See all Snyk Projects linked to a single container image asset in one place |
 
-## What the container image inventory solves
+## How it works
 
-| Area | Current challenge | What changes |
-| :--- | :--- | :--- |
-| **Asset duplication** | Scanning the same image from CLI, a registry, and Kubernetes creates separate, disconnected Projects | All scans of the same image (same Registry + Repository + Config Digest) are merged into one asset |
-| **Inflated issue counts** | The same vulnerability appears multiple times across duplicate Projects, making it hard to gauge real risk | Issues are deduplicated across scan sources — you see one count per unique issue |
-| **Image understanding** | Images are displayed as flat vulnerability lists with little meaningful container-specific metadata | Assets surface key metadata: tags, risk score, inferred base image, test surface, and last scan date |
-| **Version history** | No way to compare image versions or track security posture over time | Images are grouped by repository, so you can see all versions in one place (with their build dates, issue counts, risk scores, and so on) and spot regressions across digests |
+Container image inventory identifies each unique image by its **Registry + Repository + Config Digest**. Because this identity is based on the immutable config digest rather than a mutable tag, one image scanned from the CLI, a container registry, and a Kubernetes workload appears as a single asset — not three separate Projects.
+
+Issues from all scan sources are merged and deduplicated, so you see one count per unique vulnerability rather than inflated totals from overlapping scans. Images are grouped by repository, giving you a version history view where you can compare build dates, risk scores, and issue counts across digests and spot regressions over time. Each asset also surfaces key metadata — tags, inferred base image, test surface, and last scan date — in one place.
 
 ## What you need to do
 
