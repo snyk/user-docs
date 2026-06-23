@@ -494,7 +494,7 @@ At least one date filter (`introduced` for the `issues` dataset or `updated` for
 
 <table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>group_public_id</code></td><td>A universally unique identifier for a Group, assigned in the source database of the record.</td></tr><tr><td><code>org_public_id</code></td><td>A universally unique identifier for an Organization, assigned in the source database of the record.</td></tr></tbody></table>
 
-#### Prevention Events dataset
+### Prevention Events dataset
 
 #### Available columns
 
