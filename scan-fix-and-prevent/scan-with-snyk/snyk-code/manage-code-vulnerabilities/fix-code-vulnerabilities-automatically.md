@@ -59,6 +59,6 @@ To generate a fix:
 The agentic architecture reduces errors through the retry loop, but the following considerations apply:
 
 * Human review required: Review suggestions to ensure they align with the broader application architecture.
-* Complex inter-file logic: Snyk Agent Fix focuses on local-file fixes. It does not automatically fix complex vulnerabilities that span multiple files.
-* Latency: The agentic retry loop takes time. Fix requests take up to two minutes if the initial responses need correction.
+* Inter-file fixes: Snyk Agent Fix focuses on single-file fixes. It does not automatically fix vulnerabilities that span multiple files.
+* Latency: The agentic retry loop takes time. The median fix time is under 8 seconds. When the initial response needs correction, some requests take up to 2 minutes for large files with multiple retries.
 * Filtering: Snyk does not show a suggestion if the agentic loop cannot produce a fix that meets security and functional benchmarks.
