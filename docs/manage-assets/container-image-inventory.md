@@ -46,13 +46,13 @@ Select **Inventory** in the left-hand navigation to access container image inven
 
 **At the Group level**, the existing Asset Inventory remains the default view. A banner at the top of the page invites you to try the new container image experience. Click **Try it now** to switch. You can switch back and forth between the existing Asset Inventory and the new container image inventory at any time — both views remain available. Over time, Snyk expects to add more asset types to the new view, and the older experience will eventually be deprecated.
 
-![The Group-level Asset Inventory with a banner linking to the new container image experience.](../../.gitbook/assets/container-inventory-group-banner.png)
+![The Group-level Asset Inventory with a banner linking to the new container image experience.](../.gitbook/assets/container-inventory-group-banner.png)
 
 ### Grouped view (default)
 
 By default, the inventory groups assets by **Image repository** (Registry + Repository). Each group row shows the repository name, the number of images within the group, and aggregated metadata from the most recent image in that group (by build date), including risk score and issue counts broken down by severity.
 
-![The default grouped inventory view. Each repository row shows the number of images, latest build date, risk score, and issue severity breakdown.](../../.gitbook/assets/container-inventory-grouped-view.png)
+![The default grouped inventory view. Each repository row shows the number of images, latest build date, risk score, and issue severity breakdown.](../.gitbook/assets/container-inventory-grouped-view.png)
 
 Groups are sorted alphabetically by image name by default. You can expand any group to reveal the individual image assets within it. Each asset row within the group displays:
 
@@ -69,13 +69,13 @@ Groups are sorted alphabetically by image name by default. You can expand any gr
 
 Within an expanded group, assets are sorted by build date so you can easily identify the most recent version. Pagination controls (Previous / Next) appear when a group contains more assets than fit on one page.
 
-![An expanded repository group for "alpine-base" showing 4 image versions with pagination controls.](../../.gitbook/assets/container-inventory-expanded-group.png)
+![An expanded repository group for "alpine-base" showing 4 image versions with pagination controls.](../.gitbook/assets/container-inventory-expanded-group.png)
 
 ### Flat (ungrouped) view
 
 To see all assets in a single flat list instead of grouped by repository, click **Group by** and select **None**. This displays every individual image asset as its own row, with the full set of columns visible.
 
-![The ungrouped flat view showing individual assets with all columns.](../../.gitbook/assets/container-inventory-flat-view.png)
+![The ungrouped flat view showing individual assets with all columns.](../.gitbook/assets/container-inventory-flat-view.png)
 
 You can sort the flat view by build date, score, issue count, last scan, class, discovered, or updated — in ascending or descending order — using the sort control in the top-right corner.
 
@@ -98,7 +98,7 @@ Click **Add filter** to open the filter panel. Filters are additive (combined wi
 | **Tags** | Filter by Snyk asset tags |
 | **Type** | Filter by asset type |
 
-![The filter panel showing all available filter dimensions.](../../.gitbook/assets/container-inventory-filter-panel.png)
+![The filter panel showing all available filter dimensions.](../.gitbook/assets/container-inventory-filter-panel.png)
 
 A **search bar** is also available in the top-right corner. Search matches across asset name, image tags, registry, repository, and digests.
 
@@ -140,7 +140,7 @@ The Overview tab is split into two sections.
 
 A **Security testing and coverage** section at the bottom shows which scan engines have tested this asset and when.
 
-![The Overview tab showing asset information, container image details, and security testing coverage.](../../.gitbook/assets/container-inventory-overview-tab.png)
+![The Overview tab showing asset information, container image details, and security testing coverage.](../.gitbook/assets/container-inventory-overview-tab.png)
 
 #### Issues tab
 
@@ -163,7 +163,7 @@ Below the summary, a table lists each issue with the following columns:
 | **Fixable** | Whether the issue can be fixed through an upgrade |
 | **Test surface** | Which scan sources identified this issue |
 
-![The Issues tab showing total issues with severity breakdown and vulnerability details.](../../.gitbook/assets/container-inventory-issues-tab.png)
+![The Issues tab showing total issues with severity breakdown and vulnerability details.](../.gitbook/assets/container-inventory-issues-tab.png)
 
 #### Fix recommendations tab
 
@@ -174,7 +174,7 @@ The Fix Recommendations tab displays base image upgrade recommendations. Each re
 - **Side-by-side comparison** — The current base image and suggested base image with their respective issue counts and severity breakdowns
 - **Recommend button** — Which option is recommended by Snyk
 
-![The Fix Recommendations tab showing an upgrade path with a side-by-side comparison of issue counts.](../../.gitbook/assets/container-inventory-fix-recommendations-tab.png)
+![The Fix Recommendations tab showing an upgrade path with a side-by-side comparison of issue counts.](../.gitbook/assets/container-inventory-fix-recommendations-tab.png)
 
 #### Related Projects tab
 
@@ -191,7 +191,7 @@ The Related Projects tab lists all Snyk Projects that are linked to this asset a
 
 You can sort the list by highest date last tested, and use **Modify columns** to customize which columns are displayed.
 
-![The Related Projects tab showing linked Snyk Projects with metadata and actions.](../../.gitbook/assets/container-inventory-related-projects-tab.png)
+![The Related Projects tab showing linked Snyk Projects with metadata and actions.](../.gitbook/assets/container-inventory-related-projects-tab.png)
 
 ## How it impacts your workflow
 
