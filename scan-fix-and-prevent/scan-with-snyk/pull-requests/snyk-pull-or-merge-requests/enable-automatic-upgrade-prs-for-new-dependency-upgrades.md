@@ -14,6 +14,8 @@ Keeping dependencies up-to-date is crucial for security, performance, and compat
 
 If you use Snyk to update open-source and private dependencies, you reduce manual work and lower security risk. You also keep your PR backlog focused, because Snyk closes obsolete Fix PRs automatically by default when their targeted issues are already resolved.
 
+Snyk includes breakability risk levels in the pull request description and posts a detailed analysis in a follow-up comment. This helps you assess if an upgrade is safe to merge. For risk level definitions, feedback, and broker configuration, visit [Breakability risk levels](breakability-risk-levels.md).
+
 ## Defining automatic upgrade PRs
 
 Automatic dependency or upgrade PRs work as follows.

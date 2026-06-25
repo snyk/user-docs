@@ -1,9 +1,9 @@
 # Breakability risk levels
 
 {% hint style="info" %}
-**Release status**
+**Feature availability**
 
-Breakability analysis is in Early Access and available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
+Breakability analysis is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk analyzes dependency upgrades to predict if a proposed change will break your build or application. Breakability analysis assigns a risk level to each upgrade to help you decide whether to auto-merge a fix or review it manually.
@@ -22,6 +22,17 @@ With breakability analysis, Snyk sends package information to a Large Language M
 
 Ensure to review AI-generated content for accuracy before use.
 {% endhint %}
+
+## How breakability appears in pull requests
+
+When Snyk opens a pull request for a dependency upgrade, breakability analysis is surfaced in two places:
+
+* **Pull request description**: the PR description includes the breakability risk level so you can assess the upgrade at a glance.
+* **Pull request comment**: Snyk also posts a comment on the newly opened PR with the risk level and a more detailed summary. This comment may appear shortly after the PR is created. The summary explains relevant details about the risk, such as which breaking changes may be included in the upgrade.
+
+## Provide feedback on breakability analysis
+
+You can help improve breakability analysis by reacting to the breakability comment on your pull request. Add a 👍 or 👎 reaction to indicate whether the assessment was helpful. Snyk uses this feedback to improve the quality of future breakability analysis.
 
 ## Risk level definitions and actions
 
@@ -94,7 +105,7 @@ The following use cases show how the logic applies.
 
 ## Using breakability risk with Snyk Broker
 
-To use breakability comments, your broker configuration must include the rule for creating pull request comments.
+The breakability risk level in the pull request description does not require additional broker configuration. To receive the detailed breakability comment, your broker configuration must include the rule for creating pull request comments.
 
 If you use the [official broker templates](https://github.com/snyk/broker/tree/master/client-templates), this rule is already included. Ensure your `accept.json` is up-to-date with the latest template for your SCM platform.
 
@@ -105,6 +116,6 @@ If you maintain a custom `accept.json` configuration, ensure that it includes th
 * Azure Repos: `POST /:owner/_apis/git/repositories/:repo/pullRequests/:pullRef/threads`
 * Bitbucket Server: `POST /rest/api/1.0/projects/:project/repos/:repo/pull-requests/:pullRequestId/comments`
 
-If the rule is missing, Snyk generates the pull request and summary successfully, but fails to post the comment containing the breakability risk level and analysis.
+If the rule is missing, Snyk still opens the pull request with the breakability risk level in the description, but fails to post the comment containing the detailed breakability analysis.
 
 For configuration details, visit [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker).
