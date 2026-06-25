@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Plan and billing
 
 ## Your Plan
