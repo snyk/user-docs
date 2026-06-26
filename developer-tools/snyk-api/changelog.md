@@ -1,3 +1,40 @@
+## 2026-03-25 - Updated 2026-06-26
+
+### POST - `/orgs/{org_id}/policies` - Updated
+- added the optional property `data/attributes/created_by/actor_source` to the response with the `201` status
+
+- added the optional property `data/attributes/created_by/external_id` to the response with the `201` status
+
+- added the optional property `data/attributes/created_by/origin` to the response with the `201` status
+
+
+
+### GET - `/orgs/{org_id}/policies` - Updated
+- added the optional property `data/items/attributes/created_by/actor_source` to the response with the `200` status
+
+- added the optional property `data/items/attributes/created_by/external_id` to the response with the `200` status
+
+- added the optional property `data/items/attributes/created_by/origin` to the response with the `200` status
+
+
+
+### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
+- added the optional property `data/attributes/created_by/actor_source` to the response with the `200` status
+
+- added the optional property `data/attributes/created_by/external_id` to the response with the `200` status
+
+- added the optional property `data/attributes/created_by/origin` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/policies/{policy_id}` - Updated
+- added the optional property `data/attributes/created_by/actor_source` to the response with the `200` status
+
+- added the optional property `data/attributes/created_by/external_id` to the response with the `200` status
+
+- added the optional property `data/attributes/created_by/origin` to the response with the `200` status
+
+
 ## 2026-03-25 - Updated 2026-06-16
 
 ### PATCH - `/orgs/{org_id}/settings/opensource/{ecosystem}/broker` - Updated

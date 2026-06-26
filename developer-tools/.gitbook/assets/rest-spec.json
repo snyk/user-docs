@@ -5116,7 +5116,9 @@
           "type": {
             "description": "The JSON:API resource type",
             "enum": [
-              "container_images"
+              "container_images",
+              "sboms",
+              "repositories"
             ],
             "type": "string"
           }
@@ -7260,6 +7262,69 @@
           "has_funding_file",
           "has_readme_file",
           "stargazers_count"
+        ],
+        "type": "object"
+      },
+      "Component": {
+        "description": "A component in software, such as a library or package dependency",
+        "properties": {
+          "declared_license_expression": {
+            "description": "See https://spdx.github.io/spdx-spec/v3.0.1/annexes/spdx-license-expressions/",
+            "maxLength": 2048,
+            "nullable": true,
+            "type": "string"
+          },
+          "description": {
+            "description": "Free form text description of this component",
+            "maxLength": 4096,
+            "nullable": true,
+            "type": "string"
+          },
+          "licenses": {
+            "description": "Human readable license strings",
+            "items": {
+              "maxLength": 128,
+              "type": "string"
+            },
+            "maxLength": 32,
+            "type": "array"
+          },
+          "name": {
+            "description": "The name of the component",
+            "maxLength": 255,
+            "type": "string"
+          },
+          "purl": {
+            "description": "Package URL",
+            "maxLength": 4096,
+            "nullable": true,
+            "type": "string"
+          },
+          "supplier": {
+            "$ref": "#/components/schemas/Party"
+          },
+          "type": {
+            "description": "The type of this component",
+            "maxLength": 64,
+            "nullable": true,
+            "type": "string"
+          },
+          "vcs_references": {
+            "description": "Relevant VCS for this component",
+            "items": {
+              "$ref": "#/components/schemas/VcsReference"
+            },
+            "type": "array"
+          },
+          "version": {
+            "description": "The version of the component, e.x. 0.2.0",
+            "maxLength": 255,
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
         ],
         "type": "object"
       },
@@ -10723,7 +10788,9 @@
             "description": "List of asset types this field applies to",
             "items": {
               "enum": [
-                "container_images"
+                "container_images",
+                "sboms",
+                "repositories"
               ],
               "type": "string"
             },
@@ -18346,6 +18413,48 @@
         ],
         "type": "object"
       },
+      "OrgContext": {
+        "description": "Service catalog enrichment from org-context connectors",
+        "properties": {
+          "application": {
+            "description": "Parent application this service belongs to",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "catalog_name": {
+            "description": "Identifier for this service in the catalog system",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "category": {
+            "description": "Service category (e.g., \"backend\", \"data-pipeline\", \"frontend\")",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "lifecycle": {
+            "description": "Lifecycle stage of the service (e.g., \"production\", \"deprecated\")",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "owner": {
+            "description": "Owning team or person as recorded in the service catalog",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "title": {
+            "description": "Human-readable display title of the service",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "OrgFilters": {
         "properties": {
           "cve": {
@@ -19607,6 +19716,42 @@
         },
         "type": "object"
       },
+      "Party": {
+        "description": "A group / team / individual, such as an author of a piece of software",
+        "properties": {
+          "email": {
+            "description": "An email which can be used to contact this party",
+            "format": "email",
+            "maxLength": 320,
+            "nullable": true,
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "person",
+              "organization",
+              "unknown"
+            ]
+          },
+          "name": {
+            "description": "Name of the party",
+            "maxLength": 255,
+            "type": "string"
+          },
+          "uri": {
+            "description": "URL or URI referring to the party, if available",
+            "format": "uri",
+            "maxLength": 2048,
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "name"
+        ],
+        "type": "object"
+      },
       "PassFail": {
         "description": "Indicate whether a Test passes or fails.",
         "enum": [
@@ -20511,9 +20656,15 @@
         "description": "JSON:API data for any asset type (polymorphic)",
         "properties": {
           "attributes": {
-            "oneOf": [
+            "anyOf": [
               {
                 "$ref": "#/components/schemas/ContainerImageAttributesResponse"
+              },
+              {
+                "$ref": "#/components/schemas/SbomAttributesResponse"
+              },
+              {
+                "$ref": "#/components/schemas/RepositoryAttributesResponse"
               }
             ]
           },
@@ -20575,7 +20726,9 @@
           "type": {
             "description": "The JSON:API resource type",
             "enum": [
-              "container_images"
+              "container_images",
+              "sboms",
+              "repositories"
             ],
             "type": "string"
           }
@@ -20631,7 +20784,19 @@
       },
       "Principal": {
         "properties": {
+          "actor_source": {
+            "description": "The kind of actor that created the policy. \"snyk_user\" is a Snyk identity; \"external_user\" indicates an external (e.g. SCM) actor.",
+            "enum": [
+              "snyk_user",
+              "external_user"
+            ],
+            "type": "string"
+          },
           "email": {
+            "type": "string"
+          },
+          "external_id": {
+            "description": "The identifier of the actor within the external provider. Present only when the policy was created by an external actor; absent for Snyk users.",
             "type": "string"
           },
           "id": {
@@ -20641,6 +20806,21 @@
           },
           "name": {
             "description": "Name of the user or service account that created the policy",
+            "type": "string"
+          },
+          "origin": {
+            "description": "The external provider through which the actor created the policy. Present only when the policy was created by an external actor; absent for Snyk users.",
+            "enum": [
+              "bitbucket_cloud",
+              "bitbucket_connect_app",
+              "bitbucket_server",
+              "gitlab",
+              "github",
+              "github_enterprise",
+              "github_cloud_app",
+              "github_server_app",
+              "azure_repos"
+            ],
             "type": "string"
           }
         },
@@ -22407,6 +22587,124 @@
         ],
         "type": "object"
       },
+      "RepositoryAttributesResponse": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/AssetBaseAttributes"
+          },
+          {
+            "$ref": "#/components/schemas/RepositoryCommonFields"
+          }
+        ]
+      },
+      "RepositoryCommonFields": {
+        "description": "Attributes specific to repository assets.",
+        "properties": {
+          "archived": {
+            "description": "Whether the repository is archived",
+            "nullable": true,
+            "type": "boolean"
+          },
+          "default_branch_name": {
+            "description": "Default branch name",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "description": {
+            "description": "Optional repository description",
+            "maxLength": 1024,
+            "nullable": true,
+            "type": "string"
+          },
+          "fork": {
+            "description": "Whether the repository is a fork",
+            "nullable": true,
+            "type": "boolean"
+          },
+          "is_empty": {
+            "description": "Whether the repository is empty",
+            "nullable": true,
+            "type": "boolean"
+          },
+          "is_personal": {
+            "description": "Whether the repository is a personal repository",
+            "nullable": true,
+            "type": "boolean"
+          },
+          "languages": {
+            "description": "Programming languages detected in the repository",
+            "items": {
+              "$ref": "#/components/schemas/RepositoryLanguage"
+            },
+            "maxItems": 50,
+            "type": "array"
+          },
+          "last_sync": {
+            "description": "When the repository was last synced from the SCM",
+            "format": "date-time",
+            "nullable": true,
+            "type": "string"
+          },
+          "name": {
+            "description": "Repository name from SCM",
+            "maxLength": 256,
+            "type": "string"
+          },
+          "org_context": {
+            "$ref": "#/components/schemas/OrgContext"
+          },
+          "pushed_at": {
+            "description": "When code was last pushed to the repository",
+            "format": "date-time",
+            "nullable": true,
+            "type": "string"
+          },
+          "scm_id": {
+            "description": "SCM-specific identifier (GitHub numeric ID, GitLab project ID, etc.)",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "scm_organization": {
+            "description": "SCM organization name",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "scm_project": {
+            "description": "SCM project name",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "topics": {
+            "description": "Repository topics/tags",
+            "items": {
+              "maxLength": 64,
+              "type": "string"
+            },
+            "maxItems": 50,
+            "type": "array"
+          },
+          "url": {
+            "description": "Web browse URL of the repository (natural key, unique per tenant)",
+            "maxLength": 1000,
+            "type": "string"
+          },
+          "visibility": {
+            "description": "Repository visibility",
+            "enum": [
+              "public",
+              "private",
+              "internal"
+            ],
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "RepositoryGroup": {
         "description": "A repository with its matching tags grouped together",
         "properties": {
@@ -22425,6 +22723,22 @@
           "repository",
           "tags"
         ],
+        "type": "object"
+      },
+      "RepositoryLanguage": {
+        "description": "Programming language detected in a repository",
+        "properties": {
+          "byte_count": {
+            "description": "Number of bytes of code in this language",
+            "format": "int64",
+            "type": "integer"
+          },
+          "name": {
+            "description": "Language name",
+            "maxLength": 256,
+            "type": "string"
+          }
+        },
         "type": "object"
       },
       "Resolution": {
@@ -22894,6 +23208,96 @@
       "SastScanConfiguration": {
         "description": "Scan configuration parameters for the SAST scanner.",
         "type": "object"
+      },
+      "SbomAttributesResponse": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/AssetBaseAttributes"
+          },
+          {
+            "description": "Attributes specific to sbom.",
+            "properties": {
+              "authors": {
+                "items": {
+                  "$ref": "#/components/schemas/Party"
+                },
+                "maxItems": 32,
+                "type": "array"
+              },
+              "component": {
+                "$ref": "#/components/schemas/Component"
+              },
+              "document_uid": {
+                "description": "Document UID (CycloneDX serialNumber, SPDX documentNamespace)",
+                "maxLength": 2048,
+                "type": "string"
+              },
+              "document_version": {
+                "description": "CycloneDX `version`, null for SPDX",
+                "format": "int32",
+                "nullable": true,
+                "type": "number"
+              },
+              "lifecycles": {
+                "description": "Lifecycles, e.x. one of cyclonedx.model.lifecycle.LifecyclePhase ('design', 'pre-build', etc)",
+                "items": {
+                  "maxLength": 64,
+                  "type": "string"
+                },
+                "maxItems": 16,
+                "type": "array"
+              },
+              "name": {
+                "description": "Sbom name",
+                "maxLength": 256,
+                "type": "string"
+              },
+              "sbom_created_at": {
+                "description": "When the SBOM was generated, ISO 8601 format. Can be distinct from created_at",
+                "format": "date-time",
+                "nullable": true,
+                "type": "string"
+              },
+              "sbom_standard": {
+                "description": "SBOM standard / format used to generate this asset",
+                "enum": [
+                  "cyclonedx",
+                  "spdx"
+                ],
+                "type": "string"
+              },
+              "serialization": {
+                "description": "Serialization format used to encode this asset",
+                "enum": [
+                  "json",
+                  "xml",
+                  "yaml"
+                ],
+                "type": "string"
+              },
+              "spec_version": {
+                "description": "SBOM spec version as provided, for example 1.6, 2.3, 3.0.1.",
+                "maxLength": 32,
+                "type": "string"
+              },
+              "tools": {
+                "items": {
+                  "$ref": "#/components/schemas/Tool"
+                },
+                "maxItems": 32,
+                "type": "array"
+              }
+            },
+            "required": [
+              "name",
+              "sbom_standard",
+              "spec_version",
+              "serialization",
+              "document_uid"
+            ],
+            "type": "object"
+          }
+        ]
       },
       "SbomDocument": {
         "additionalProperties": true,
@@ -25455,6 +25859,28 @@
         "minItems": 1,
         "type": "array"
       },
+      "Tool": {
+        "description": "A tool (piece of software, etc)",
+        "properties": {
+          "name": {
+            "description": "Name of the tool",
+            "maxLength": 255,
+            "type": "string"
+          },
+          "supplier": {
+            "$ref": "#/components/schemas/Party"
+          },
+          "version": {
+            "description": "The version of this tool",
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "type": "object"
+      },
       "Type": {
         "type": "string"
       },
@@ -26467,6 +26893,39 @@
       "Uuid": {
         "format": "uuid",
         "type": "string"
+      },
+      "VcsReference": {
+        "description": "A reference to a version control system, with optional branch, tag, or revision information",
+        "properties": {
+          "branch": {
+            "description": "The VCS branch",
+            "maxLength": 255,
+            "nullable": true,
+            "type": "string"
+          },
+          "revision": {
+            "description": "Commit SHA or revision",
+            "maxLength": 2048,
+            "nullable": true,
+            "type": "string"
+          },
+          "tag": {
+            "description": "The VCS tag, if applicable",
+            "maxLength": 2048,
+            "nullable": true,
+            "type": "string"
+          },
+          "url": {
+            "description": "A link to the VCS repository",
+            "format": "uri",
+            "maxLength": 2048,
+            "type": "string"
+          }
+        },
+        "required": [
+          "url"
+        ],
+        "type": "object"
       },
       "VersioningSchema": {
         "allOf": [
