@@ -1,6 +1,6 @@
 # SCM integrations for JavaScript
 
-You can import JavaScript repositories from any SCM integration supported by Snyk. See [Organization level integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations). After the import, Snyk analyzes your Projects based on their supported manifest files.
+You can import JavaScript repositories from any SCM integration supported by Snyk. See [Organization level integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations). After the import, Snyk analyzes your Projects based on their supported manifest files.
 
 ## Configure language settings for Snyk with JavaScript
 
@@ -11,7 +11,7 @@ You can configure language settings for open source and licensing at the Organiz
 3. Configure the settings based on your package manager - npm, pnpm, or Yarn.
    * **Scan and fix dev dependencies**: if you check this option, Snyk reads the `devDependencies` property on the `package.json` and reports and fixes any vulnerabilities accordingly.
    * **Require package.json and package-lock.json/yarn.lock files to be in sync**: when this is checked if the `package.json` and `package-lock.json`/`yarn.lock/pnpm-lock.yaml` files are out-of-sync, Snyk fails the import.
-   * **Exclude package-lock.json from being generated when fixing vulnerabilities**: if you are using private mirrors or registries, it is possible that a Snyk-generated lockfile is not appropriate for you because Snyk uses the npm registry to update the lockfile. Enterprise customers can use [package repository integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations) to ensure lockfiles are updated correctly. Alternatively, this setting allows you to opt out of getting lockfiles generated for you in Snyk fix pull requests and merge requests.
+   * **Exclude package-lock.json from being generated when fixing vulnerabilities**: if you are using private mirrors or registries, it is possible that a Snyk-generated lockfile is not appropriate for you because Snyk uses the npm registry to update the lockfile. Enterprise customers can use [package repository integrations](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations) to ensure lockfiles are updated correctly. Alternatively, this setting allows you to opt out of getting lockfiles generated for you in Snyk fix pull requests and merge requests.
 4. Click **Update Settings** to save changes.
 
 ## Package registry integrations (Artifactory/Nexus)
@@ -28,14 +28,14 @@ If your Projects reference private dependencies in these repositories but you ar
 
 For more information, see the following external resources:
 
-* Package registry integrations: [npm Teams and npm Enterprise](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/npm-teams-and-npm-enterprise-integration), [Artifactory Registry setup](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup) and [Nexus Repository Manager setup](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup).
-* Gatekeeper plugins: [Artifactory Gatekeeper plugin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin)
+* Package registry integrations: [npm Teams and npm Enterprise](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/npm-teams-and-npm-enterprise-integration), [Artifactory Registry setup](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup) and [Nexus Repository Manager setup](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup).
+* Gatekeeper plugins: [Artifactory Gatekeeper plugin](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/artifactory-gatekeeper-plugin)
 
 ## Fix PRs and npm save-prefix
 
 When creating a fix for vulnerabilities using npm v7+ Projects, Snyk uses the default npm `save-prefix` rather than inferring it from your Project.
 
-This means that if you have dependencies using a range format other than the caret range (`^`), it is possible that you see additional changes to the `version` fields in the `package-lock.json` file.&#x20;
+This means that if you have dependencies using a range format other than the caret range (`^`), it is possible that you see additional changes to the `version` fields in the `package-lock.json` file.
 
 These changes do not affect day-to-day functionality, as the ranges will be read from the `package.json`.
 

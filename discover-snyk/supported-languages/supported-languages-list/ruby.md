@@ -76,7 +76,7 @@ Available features:
 
 * Fix PRs
 * License scanning
-* Test your app's SBOM and packages using `pkg:gem` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
+* Test your app's SBOM and packages using `pkg:gem` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
 
 ### Bundler support
 
@@ -95,7 +95,7 @@ Snyk requires both files to be present to correctly test, monitor, and fix Ruby 
 
 ### Private Gem sources
 
-If your Gemfile needs access to private Gem sources, see [Private gem sources for Ruby configuration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/private-gem-sources-for-ruby-configuration).
+If your Gemfile needs access to private Gem sources, see [Private gem sources for Ruby configuration](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/private-gem-sources-for-ruby-configuration).
 
 Using private Gem sources should work normally when you are using the Snyk CLI.
 

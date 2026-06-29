@@ -21,7 +21,7 @@ To have a successful Snyk rollout, you need to:
 By the end of this guide, you will have successfully configured a baseline template Org, used it to easily copy your global settings and integrations to provision new Organizations, and learned how to customize individual settings in those new environments to support specific team workflows.
 
 {% hint style="info" %}
-To understand how AI is used at Snyk and how this may affect your implementation decisions, visit [AI Data and Governance](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/how-snyk-incorporates-generative-ai-into-the-platform).
+To understand how AI is used at Snyk and how this may affect your implementation decisions, visit [AI Data and Governance](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-incorporates-generative-ai-into-the-platform).
 {% endhint %}
 
 ## Confirm points of contact

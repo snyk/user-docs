@@ -24,7 +24,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * The latest Snyk CLI version is [v1.1304.0](https://github.com/snyk/cli/releases/tag/v1.1304.0).
 * Added a new page for [CLI support for uv](https://docs.snyk.io/supported-languages/supported-languages-list/python/cli-support-for-uv), documenting Early Access support for the uv Python package manager across snyk test, snyk monitor, and snyk sbom, and extending coverage to Snyk IDE extensions, the Snyk MCP server, and Snyk GitHub Actions.
-* The [snyk sbom](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom) command page now documents the --allow-incomplete-sbom flag, which generates an SBOM even when individual Projects fail to resolve.&#x20;
+* The [snyk sbom](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom) command page now documents the --allow-incomplete-sbom flag, which generates an SBOM even when individual Projects fail to resolve.
 * The [environment variables page](https://docs.snyk.io/developer-tools/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli) has been updated to include SNYK\_REQUEST\_CONCURRENCY, which controls parallel dependency requests in [container monitor](https://docs.snyk.io/developer-tools/snyk-cli/commands/container-monitor).
 
 ### Evo by Snyk
@@ -34,12 +34,12 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Other updates
 
-* The [Snyk Code security rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules) section has been updated with new coverage for .NET: TLS protocol misconfiguration ([CWE-326](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules)) across common .NET HTTP and network stacks, and broader insecure cipher detection ([CWE-327](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules)) for C# and VB, including third-party support through BouncyCastle.&#x20;
+* The [Snyk Code security rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules) section has been updated with new coverage for .NET: TLS protocol misconfiguration ([CWE-326](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules)) across common .NET HTTP and network stacks, and broader insecure cipher detection ([CWE-327](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules)) for C# and VB, including third-party support through BouncyCastle.
 * [Snyk Container](https://docs.snyk.io/scan-with-snyk/snyk-container) now supports extended Java runtime binary scanning in container test and container monitor.
-* Added documentation for automatic closure of obsolete Fix PRs, now in Early Access through Snyk Preview. Snyk closes Fix PRs when the targeted vulnerabilities are no longer present in your Project, whether resolved by a manual fix, a removed dependency, or a transitive update. Snyk closes up to five PRs per Project each day. See [Snyk pull or merge requests](https://docs.snyk.io/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests).&#x20;
+* Added documentation for automatic closure of obsolete Fix PRs, now in Early Access through Snyk Preview. Snyk closes Fix PRs when the targeted vulnerabilities are no longer present in your Project, whether resolved by a manual fix, a removed dependency, or a transitive update. Snyk closes up to five PRs per Project each day. See [Snyk pull or merge requests](https://docs.snyk.io/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests).
 * The [snyk\_package\_health\_check](https://docs.snyk.io/integrations/snyk-studio-agentic-integrations/getting-started-with-snyk-studio#configure-the-snyk-mcp-profile) directive is now in General Availability and is enabled by default in the Full MCP profile. The docs now reflect supported ecosystems: npm, PyPI, Maven, NuGet, and Go.
-* Snyk API & Web documentation now covers native GraphQL scanning, including schema ingestion through a URL, file upload, or introspection endpoint, and new GraphQL-specific authentication options.&#x20;
-* Snyk API & Web compliance reporting now supports the OWASP Top 10:2025 standard, in addition to OWASP Top 10:2021.&#x20;
+* Snyk API & Web documentation now covers native GraphQL scanning, including schema ingestion through a URL, file upload, or introspection endpoint, and new GraphQL-specific authentication options.
+* Snyk API & Web compliance reporting now supports the OWASP Top 10:2025 standard, in addition to OWASP Top 10:2021.
 
 ## April 2026
 
@@ -50,7 +50,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk supported languages
 
-* [CLI support for uv](supported-languages/supported-languages-list/python/cli-support-for-uv.md) is now in Early Access.
+* [CLI support for uv](supported-languages/supported-languages-list/python/support-for-uv.md) is now in Early Access.
 * Snyk now supports [interfile analysis for Ruby](supported-languages/supported-languages-list/ruby.md#ruby-for-snyk-code).
 
 ### Other updates

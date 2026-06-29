@@ -4,9 +4,9 @@
 
 Snyk offers support for various languages, customized depending on the Snyk product you are using. These pages focus on Snyk Open Source and Snyk Code.
 
-For information about language support for Snyk Container, see [Supported workloads, container registries, languages, and operating systems](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/supported-workloads-container-registries-languages-and-operating-systems) and [Operating system distributions supported by Snyk Container](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container).
+For information about language support for Snyk Container, see [Supported workloads, container registries, languages, and operating systems](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/supported-workloads-container-registries-languages-and-operating-systems) and [Operating system distributions supported by Snyk Container](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container).
 
-For IaC language support, see [Supported IaC languages, cloud providers, and cloud resources](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources).
+For IaC language support, see [Supported IaC languages, cloud providers, and cloud resources](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources).
 
 {% hint style="info" %}
 Check the language availability before you import, test, or monitor it as an application using the Snyk products.

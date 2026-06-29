@@ -1,10 +1,10 @@
 # CLI support for JavaScript
 
-To help generate reports locally or at build time, see the [snyk-to-html plugin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html).
+To help generate reports locally or at build time, see the [snyk-to-html plugin](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html).
 
 See `--json` and `--sarif` options for generating output that can be programmatically accessed.
 
-For advanced filtering options, see[ snyk-filter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
+For advanced filtering options, see[ snyk-filter](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
 
 ## Open Source libraries
 
@@ -26,7 +26,7 @@ If you are using a package manager that requires options, it is suggested to tar
 
 * Snyk will automatically look for application (open source) vulnerabilities as part of a container scan. Consider having Snyk integrated through CLI earlier in the pipeline and utilize this for an additional signal of and insight into what is in production.
 * If you ship your Node.JS application in a container, be aware that you might also be bundling insecure packages (Linux, open source), alongside your application in addition to what is brought in by the container base image. The Snyk Container CLI can help you identify a base image that minimizes the attack surface of your application.
-* For more information on how you can filter to the layer you wish to work on, such as identifying a secure base image to build off of, the layers you are responsible for, or application (OS) vulnerabilities, see [Snyk CLI for container security](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container)
+* For more information on how you can filter to the layer you wish to work on, such as identifying a secure base image to build off of, the layers you are responsible for, or application (OS) vulnerabilities, see [Snyk CLI for container security](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container)
 
 ### Infrastructure as Code
 
@@ -34,4 +34,4 @@ See [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-
 
 ## Resources
 
-See the [CLI commands and options summary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/cli-commands-and-options-summary) and the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/). Use the `--help` option in the CLI for details of Snyk CLI commands.
+See the [CLI commands and options summary](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/cli-commands-and-options-summary) and the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/). Use the `--help` option in the CLI for details of Snyk CLI commands.

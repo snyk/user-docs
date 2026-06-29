@@ -12,11 +12,11 @@ Learning programs allow Snyk administrators to curate specific paths of security
 
 ## Prerequisites
 
-To create and manage learning programs, you must must be a [Tenant Admin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant) or have a custom role with the `tenant.learning_program.edit` and `tenant.learning_program.read` permissions.
+To create and manage learning programs, you must must be a [Tenant Admin](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant) or have a custom role with the `tenant.learning_program.edit` and `tenant.learning_program.read` permissions.
 
 ### Example: Creating a custom role
 
-Use the following API call to create a role called Tenant Training Manager specifically for managing learning programs. Replace `{tenant_id}` with your tenant ID from the Snyk app (`https://app.snyk.io/tenant/{tenant_id}`) and `{snyk_api_token}` with your [API token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api/snyk-api-token-permissions-users-can-control). Also, update the Snyk API URL to your correct [regional API URL](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#api-urls).
+Use the following API call to create a role called Tenant Training Manager specifically for managing learning programs. Replace `{tenant_id}` with your tenant ID from the Snyk app (`https://app.snyk.io/tenant/{tenant_id}`) and `{snyk_api_token}` with your [API token](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api/snyk-api-token-permissions-users-can-control). Also, update the Snyk API URL to your correct [regional API URL](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#api-urls).
 
 ```bash
 curl --location --globoff --request POST "https://api.snyk.io/rest/tenants/{tenant_id}/roles?version=2024-10-15" \
@@ -97,6 +97,6 @@ The progress state for each user is displayed:
 
 ## Completing a learning program
 
-Learning programs complete automatically once the scheduled end date is reached.&#x20;
+Learning programs complete automatically once the scheduled end date is reached.
 
 If needed, you can click **Mark as Completed** on the program details page to end the program early.

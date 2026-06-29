@@ -33,4 +33,4 @@ In **Settings-General** it's common to limit access to who can ignore an issue a
 
 By default, the **Organization Collaborator** role has permission to ignore issues, but this can be controlled per Organization in the **Settings** page (that is, restricted to **Organization admins** only).
 
-See [Ignore issues](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues) for more details.
+See [Ignore issues](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues) for more details.

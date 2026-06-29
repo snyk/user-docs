@@ -77,7 +77,7 @@ When using the IDE, you do not need additional options. The Snyk plugin displays
 
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:generic` or `pkg:conan` PURLs through [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
+* Test your app's SBOM and packages using `pkg:generic` or `pkg:conan` PURLs through [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
 
 {% hint style="info" %}
 The **Snyk FixPR** feature is not available for C/C++. This means that you will not be notified if the PR checks fail when the following conditions are met:
@@ -88,7 +88,7 @@ The **Snyk FixPR** feature is not available for C/C++. This means that you will 
 
 ### Dependency management and license compliance
 
-To check compliance for open source licenses, visit [Snyk License Compliance Management.](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management)
+To check compliance for open source licenses, visit [Snyk License Compliance Management.](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management)
 
 For information about managing dependencies and licenses from your developer workflows through policy, visit the following resources:
 
@@ -118,7 +118,7 @@ If none of the above apply, contact Snyk Support.
 
 ## CLI support for C/C++
 
-To explore C/C++ vulnerabilities, you can search the [Snyk Vulnerability Database](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database). Snyk tests your code against this database. Snyk updates the database periodically with the latest source code from online sources.
+To explore C/C++ vulnerabilities, you can search the [Snyk Vulnerability Database](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database). Snyk tests your code against this database. Snyk updates the database periodically with the latest source code from online sources.
 
 For codebase scanning, Snyk analyzes your source code without requiring a build. To test your code, open the source code directory in the terminal and run the following command:
 
@@ -126,9 +126,9 @@ For codebase scanning, Snyk analyzes your source code without requiring a build.
 snyk code test
 ```
 
-Use the `snyk-to-html` plugin to generate reports. To access results programmatically, export them to JSON or SARIF using the `--json` or `--sarif` options. For more information, visit [Exporting the test results to a JSON or SARIF file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results#export-test-results).
+Use the `snyk-to-html` plugin to generate reports. To access results programmatically, export them to JSON or SARIF using the `--json` or `--sarif` options. For more information, visit [Exporting the test results to a JSON or SARIF file](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results#export-test-results).
 
-For advanced filtering options, see[ snyk-filter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
+For advanced filtering options, see[ snyk-filter](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
 
 To scan an Open Source Project, Snyk requires the dependencies to be available as source code in the scanned directory. If the dependencies reside in a different location, you must scan that location.
 
@@ -427,7 +427,7 @@ You can use the following command-line options with the `snyk test --unmanaged` 
 * `--target-reference=TARGET_REFERENCE` (`snyk monitor` only)
 * `--project-name=c-project` (`snyk monitor` only)
 
-For more information about command-line options, visit [Options for scanning with `snyk test --unmanaged`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/test#unmanaged) or [`snyk monitor --unmanaged`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor#unmanaged).
+For more information about command-line options, visit [Options for scanning with `snyk test --unmanaged`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/test#unmanaged) or [`snyk monitor --unmanaged`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor#unmanaged).
 
 To import the test results (issues and dependencies) in the Snyk CLI, run the `snyk monitor --unmanaged` command:
 
@@ -448,4 +448,4 @@ Importing a Snyk Project with unmanaged dependencies creates a new Snyk Project 
 
 Use Snyk test APIs if you develop advanced dependency management strategies instead of using standard package managers.
 
-For C++, if you know the open-source packages and versions included in the application but lack the source code, use the [List issues for a package](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/issues#orgs-org_id-packages-purl-issues) endpoint to analyze the application.
+For C++, if you know the open-source packages and versions included in the application but lack the source code, use the [List issues for a package](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/issues#orgs-org_id-packages-purl-issues) endpoint to analyze the application.
