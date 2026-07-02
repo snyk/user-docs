@@ -21505,9 +21505,9 @@
           "type": {
             "description": "The JSON:API resource type",
             "enum": [
-              "project"
+              "projects"
             ],
-            "example": "project",
+            "example": "projects",
             "type": "string"
           }
         },
