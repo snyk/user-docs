@@ -13,18 +13,18 @@ Each rule includes the following information.
 
 | Rule Name                                                   | CWE(s)           | Security Categories    | Autofixable |
 | ----------------------------------------------------------- | ---------------- | ---------------------- | ----------- |
-| Command Injection                                           | CWE-78           | Sans Top 25, OWASP:A03 | No          |
-| Cross-site Scripting (XSS)                                  | CWE-79           | Sans Top 25, OWASP:A03 | No          |
-| Hardcoded Secret                                            | CWE-547          | OWASP:A05              | No          |
-| Inadequate Padding for Public Key Encryption                | CWE-326          | OWASP:A02              | No          |
-| Insecure File Permissions                                   | CWE-732          | OWASP:A05              | No          |
-| Observable Timing Discrepancy                               | CWE-208          | OWASP:A02              | No          |
-| Open Redirect                                               | CWE-601          | OWASP:A01              | No          |
-| Origin Validation Error                                     | CWE-346, CWE-942 | OWASP:A05              | No          |
-| Path Traversal                                              | CWE-23           | OWASP:A01              | No          |
-| SQL Injection                                               | CWE-89           | Sans Top 25, OWASP:A03 | No          |
-| Server-Side Request Forgery (SSRF)                          | CWE-918          | Sans Top 25, OWASP:A10 | No          |
-| Use of Hardcoded Passwords                                  | CWE-259, CWE-798 | Sans Top 25, OWASP:A07 | No          |
-| Use of Insufficiently Random Values                         | CWE-330          | OWASP:A02              | No          |
-| Use of Password Hash With Insufficient Computational Effort | CWE-916          | OWASP:A02              | No          |
-| Use of a Broken or Risky Cryptographic Algorithm            | CWE-327          | OWASP:A02              | No          |
+| Command Injection                                           | CWE-78           | Sans Top 25, OWASP:A03 | Yes         |
+| Cross-site Scripting (XSS)                                  | CWE-79           | Sans Top 25, OWASP:A03 | Yes         |
+| Hardcoded Secret                                            | CWE-547          | OWASP:A05              | Yes         |
+| Inadequate Padding for Public Key Encryption                | CWE-326          | OWASP:A02              | Yes         |
+| Insecure File Permissions                                   | CWE-732          | OWASP:A05              | Yes         |
+| Observable Timing Discrepancy                               | CWE-208          | OWASP:A02              | Yes         |
+| Open Redirect                                               | CWE-601          | OWASP:A01              | Yes         |
+| Origin Validation Error                                     | CWE-346, CWE-942 | OWASP:A05              | Yes         |
+| Path Traversal                                              | CWE-23           | OWASP:A01              | Yes         |
+| SQL Injection                                               | CWE-89           | Sans Top 25, OWASP:A03 | Yes         |
+| Server-Side Request Forgery (SSRF)                          | CWE-918          | Sans Top 25, OWASP:A10 | Yes         |
+| Use of Hardcoded Passwords                                  | CWE-259, CWE-798 | Sans Top 25, OWASP:A07 | Yes         |
+| Use of Insufficiently Random Values                         | CWE-330          | OWASP:A02              | Yes         |
+| Use of Password Hash With Insufficient Computational Effort | CWE-916          | OWASP:A02              | Yes         |
+| Use of a Broken or Risky Cryptographic Algorithm            | CWE-327          | OWASP:A02              | Yes         |

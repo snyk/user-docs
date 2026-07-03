@@ -11,44 +11,44 @@ Each rule includes the following information.
 | -------------------------------------------------------------------------- | ---------------- | ---------------------- | ----------- |
 | Authentication over HTTP                                                   | CWE-319          | OWASP:A02              | Yes         |
 | Binding to all network interfaces may open service to unintended traffic   | CWE-284          | OWASP:A01              | Yes         |
-| Broken User Authentication                                                 | CWE-287          | Sans Top 25, OWASP:A07 | No          |
+| Broken User Authentication                                                 | CWE-287          | Sans Top 25, OWASP:A07 | Yes         |
 | Code Injection                                                             | CWE-94           | Sans Top 25, OWASP:A03 | Yes         |
 | Command Injection                                                          | CWE-78           | Sans Top 25, OWASP:A03 | Yes         |
 | Deserialization of Untrusted Data                                          | CWE-502          | Sans Top 25, OWASP:A08 | Yes         |
 | Cross-Site Request Forgery (CSRF)                                          | CWE-352          | Sans Top 25, OWASP:A01 | Yes         |
-| Password Requirements Not Enforced in Django Application                   | CWE-521          | OWASP:A07              | No          |
-| Use of Hardcoded Cryptographic Initialization Value                        | CWE-329          | OWASP:A02              | No          |
-| Use of Hardcoded Cryptographic Key                                         | CWE-321          | OWASP:A02              | No          |
+| Password Requirements Not Enforced in Django Application                   | CWE-521          | OWASP:A07              | Yes         |
+| Use of Hardcoded Cryptographic Initialization Value                        | CWE-329          | OWASP:A02              | Yes         |
+| Use of Hardcoded Cryptographic Key                                         | CWE-321          | OWASP:A02              | Yes         |
 | Hardcoded Secret                                                           | CWE-547          | OWASP:A05              | Yes         |
-| Use of a Broken or Risky Cryptographic Algorithm                           | CWE-327          | OWASP:A02              | No          |
-| Insecure default value                                                     | CWE-453          | None                   | No          |
+| Use of a Broken or Risky Cryptographic Algorithm                           | CWE-327          | OWASP:A02              | Yes         |
+| Insecure default value                                                     | CWE-453          | None                   | Yes         |
 | Insecure File Permissions                                                  | CWE-732          | None                   | Yes         |
 | Use of Password Hash With Insufficient Computational Effort                | CWE-916          | OWASP:A02              | Yes         |
 | Insecure Temporary File                                                    | CWE-377          | OWASP:A01              | Yes         |
-| Insecure Xml Parser                                                        | CWE-611          | OWASP:A05              | No          |
+| Insecure Xml Parser                                                        | CWE-611          | OWASP:A05              | Yes         |
 | Jinja auto-escape is set to false.                                         | CWE-79           | Sans Top 25, OWASP:A03 | Yes         |
-| LDAP Injection                                                             | CWE-90           | OWASP:A03              | No          |
-| Improper Handling of Insufficient Permissions or Privileges                | CWE-280          | OWASP:A04              | No          |
-| Use of Hardcoded Credentials                                               | CWE-798          | Sans Top 25, OWASP:A07 | No          |
-| Use of Hardcoded Passwords                                                 | CWE-798, CWE-259 | Sans Top 25, OWASP:A07 | No          |
-| NoSQL Injection                                                            | CWE-943          | None                   | No          |
-| Open Redirect                                                              | CWE-601          | OWASP:A01              | No          |
+| LDAP Injection                                                             | CWE-90           | OWASP:A03              | Yes         |
+| Improper Handling of Insufficient Permissions or Privileges                | CWE-280          | OWASP:A04              | Yes         |
+| Use of Hardcoded Credentials                                               | CWE-798          | Sans Top 25, OWASP:A07 | Yes         |
+| Use of Hardcoded Passwords                                                 | CWE-798, CWE-259 | Sans Top 25, OWASP:A07 | Yes         |
+| NoSQL Injection                                                            | CWE-943          | None                   | Yes         |
+| Open Redirect                                                              | CWE-601          | OWASP:A01              | Yes         |
 | Path Traversal                                                             | CWE-23           | OWASP:A01              | Yes         |
 | Debug Mode Enabled                                                         | CWE-489          | None                   | Yes         |
-| Improper Certificate Validation                                            | CWE-295          | OWASP:A07              | No          |
-| Server Information Exposure                                                | CWE-209          | OWASP:A04              | No          |
+| Improper Certificate Validation                                            | CWE-295          | OWASP:A07              | Yes         |
+| Server Information Exposure                                                | CWE-209          | OWASP:A04              | Yes         |
 | SQL Injection                                                              | CWE-89           | Sans Top 25, OWASP:A03 | Yes         |
-| Server-Side Request Forgery (SSRF)                                         | CWE-918          | Sans Top 25, OWASP:A10 | No          |
-| Improper Neutralization of Directives in Statically Saved Code             | CWE-96           | OWASP:A03              | No          |
+| Server-Side Request Forgery (SSRF)                                         | CWE-918          | Sans Top 25, OWASP:A10 | Yes         |
+| Improper Neutralization of Directives in Statically Saved Code             | CWE-96           | OWASP:A03              | Yes         |
 | Inadequate Encryption Strength                                             | CWE-326          | OWASP:A02              | Yes         |
-| Arbitrary File Write via Archive Extraction (Tar Slip)                     | CWE-22           | Sans Top 25, OWASP:A01 | No          |
-| Origin Validation Error                                                    | CWE-942, CWE-346 | OWASP:A05, OWASP:A07   | No          |
-| Cryptographic Issues                                                       | CWE-310          | OWASP:A02              | No          |
-| Use of Insufficiently Random Values                                        | CWE-330          | OWASP:A02              | No          |
-| Python 2 source code                                                       | CWE-1104         | OWASP:A06              | No          |
-| Selection of Less-Secure Algorithm During Negotiation (SSL instead of TLS) | CWE-757          | OWASP:A02              | No          |
+| Arbitrary File Write via Archive Extraction (Tar Slip)                     | CWE-22           | Sans Top 25, OWASP:A01 | Yes         |
+| Origin Validation Error                                                    | CWE-942, CWE-346 | OWASP:A05, OWASP:A07   | Yes         |
+| Cryptographic Issues                                                       | CWE-310          | OWASP:A02              | Yes         |
+| Use of Insufficiently Random Values                                        | CWE-330          | OWASP:A02              | Yes         |
+| Python 2 source code                                                       | CWE-1104         | OWASP:A06              | Yes         |
+| Selection of Less-Secure Algorithm During Negotiation (SSL instead of TLS) | CWE-757          | OWASP:A02              | Yes         |
 | Sensitive Cookie Without 'HttpOnly' Flag                                   | CWE-1004         | OWASP:A05              | Yes         |
 | Sensitive Cookie in HTTPS Session Without 'Secure' Attribute               | CWE-614          | OWASP:A05              | Yes         |
 | Cross-site Scripting (XSS)                                                 | CWE-79           | Sans Top 25, OWASP:A03 | Yes         |
-| XPath Injection                                                            | CWE-643          | OWASP:A03              | No          |
-| Regular Expression Denial of Service (ReDoS)                               | CWE-400          | None                   | No          |
+| XPath Injection                                                            | CWE-643          | OWASP:A03              | Yes         |
+| Regular Expression Denial of Service (ReDoS)                               | CWE-400          | None                   | Yes         |
