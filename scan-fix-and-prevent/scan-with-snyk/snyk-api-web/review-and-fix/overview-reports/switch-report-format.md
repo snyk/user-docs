@@ -1,7 +1,5 @@
 # Switch report format
 
-Depending on your account plan, you can download reports either in DOCX or PDF formats. To choose which one to use, access the **Reports** tab of your target settings and select the desired option in the **Report format** section.
+Depending on your account plan, you can download reports in either DOCX or PDF format. To choose which one to use, access the **Reports** tab of your target settings and select the option you want in the **Report format** section. Click **Save** to confirm your changes.
 
-Once you do, click **Save** to confirm your changes.
-
-Afterwards, you can download your reports. Visit [Generate a scan report](generate-scan-report.md) to learn how to do this.
+You can then download your reports. Visit [Generate a scan report](generate-scan-report.md) to learn how.

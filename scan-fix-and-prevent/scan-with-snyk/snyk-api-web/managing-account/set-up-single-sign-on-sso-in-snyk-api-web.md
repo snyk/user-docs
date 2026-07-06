@@ -8,30 +8,30 @@ When you do this, users from your account can choose the following option from t
 
 Note:
 
-* If you already use SSO to log in to Snyk, you can log in to Snyk API & Web with your existing Snyk account, using the "Log in with Snyk" button:
+* If you already use SSO to log in to Snyk, you can log in to Snyk API & Web with your existing Snyk account, using the **Log in with Snyk** button:
 * If you already have a Snyk account but you do not use SSO, you can [set up SSO with Snyk](https://docs.snyk.io/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk).
 
-Learn more about [Log in to Snyk API & Web](log-in-to-snyk-api-web.md).
+Learn more in [Log in to Snyk API & Web](log-in-to-snyk-api-web.md).
 
 ***
 
-This configuration of Snyk API & Web's specific SSO involves two steps:
+The configuration of the SSO specific to Snyk API & Web involves two steps:
 
 1. Configure Snyk API & Web in your Identity Provider.
 2. Configure SSO in Snyk API & Web.
 
 This article describes these steps in detail.
 
-Once you complete this set up, you can choose the following option from the login screen to access your account:
+After you complete this setup, you can choose the following option from the login screen to access your account:
 
 ## Step 1: Configure Snyk API & Web in your Identity Provider
 
-In this first step, go to your Identity Provider and create an entry for Snyk API & Web using the following information:
+In this first step, navigate to your Identity Provider and create an entry for Snyk API & Web using the following information:
 
 * **Entity Identifier** - The URL that identifies Snyk API & Web as the issuer of SAML requests, responses, or assertions: `https://probely.com`.
 * **Assertion Consumer Service** - The Snyk API & Web endpoint to do the SAML authentication and authorization: `https://sso.plus.probely.app/sso/<organization-id>/complete/`
 
-In the endpoint, replace `<organization-id>` with a string that identifies your organization (with lowercase letters and hyphens only). For example, the company name, but if you need any help, we can suggest it for you.
+In the endpoint, replace `<organization-id>` with a string that identifies your organization, using lowercase letters and hyphens only. For example, use the company name. If you need help, Snyk can suggest it for you.
 
 * **Certificate** - The SAML certificate for Snyk API & Web:
 
@@ -41,7 +41,7 @@ MIIFjzCCA3egAwIBAgIUBjrMlHlE8dKutYm0cz0JXFIjMMQwDQYJKoZIhvcNAQELBQAwVzELMAkGA1UE
 
 ## Step 2: Configure SSO in Snyk API & Web
 
-With Snyk API & Web configured in your Identity Provider, the second part of the SSO configuration is on the Snyk API & Web side. For that, you need to provide the following information:
+With Snyk API & Web configured in your Identity Provider, the second part of the SSO configuration is on the Snyk API & Web side. For that, you must provide the following information:
 
 * Your Entity Identifier.
 * Your Certificate.
@@ -60,8 +60,8 @@ You can also map your SAML Groups to [Snyk API & Web Roles](roles-and-permission
 | teamX\_developers  | Developer           | Team X               |
 | portal\_developers | Developer           | Portal Target        |
 
-This mapping would produce the following results:
+This mapping produces the following results:
 
-* Users belonging to **probely\_admin** would be given **Admin** permissions to the whole Snyk API & Web account (global scope). They could view and take action on any target of your account.
-* Users belonging to groups **teamX\_admin** and **teamX\_developers** would only perform actions on targets of **Team X**, with permissions to do what the respective **Admin** and **Developer** roles allow.
-* Users belonging to **portal\_developers** would have the permissions given by the **Developer** role and would only perform actions on a single target: the **Portal Target**.
+* Users belonging to **probely\_admin** receive **Admin** permissions to the whole Snyk API & Web account (global scope). They can view and take action on any target of your account.
+* Users belonging to the groups **teamX\_admin** and **teamX\_developers** only perform actions on targets of **Team X**, with permissions to do what the respective **Admin** and **Developer** roles allow.
+* Users belonging to **portal\_developers** receive the permissions given by the **Developer** role and only perform actions on a single target: the **Portal Target**.

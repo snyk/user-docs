@@ -4,7 +4,7 @@ Snyk API & Web can scan for the 2021 and 2025 Open Web Application Security Proj
 
 ## Generate OWASP Top 10 reports
 
-After the target scan, you can generate a target scan report for OWASP Top 10, which includes a table indicating which areas of the Top 10 were **TESTED** and which ones **PASSED** or not.
+After the target scan, you can generate a target scan report for OWASP Top 10. The report includes a table indicating which areas of the Top 10 Snyk tested and which ones passed.
 
 Visit [Types of target scan reports you can generate with Snyk API & Web](../review-and-fix/overview-reports/report-types.md) for more information about generating reports.
 

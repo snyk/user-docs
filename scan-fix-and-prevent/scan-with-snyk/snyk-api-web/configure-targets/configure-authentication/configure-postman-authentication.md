@@ -2,7 +2,7 @@
 
 Configure authentication to scan an API using a Postman collection.
 
-You can configure Snyk API & Web to run authenticated requests that use dynamically generated tokens (via script). For scans that can take longer and your token expires, you can also configure Snyk API & Web to detect the logout and generate a new token.
+You can configure Snyk API & Web to run authenticated requests that use dynamically generated tokens through a script. For longer scans where your token expires, you can also configure Snyk to detect the logout and generate a new token.
 
 ## Example scenario
 
@@ -13,7 +13,7 @@ This guide uses a Postman Collection example with the following requests:
 3. **Get user details** - requires the authentication token in the request header and the user identifier as a parameter.
 4. **Check token** - requires the authentication token in the request header to check if it is still valid.
 
-For configuring 1,2 and 3 please follow the example in [Configure Postman Collection targets](../configure-api-targets/configure-postman-collection-targets.md).
+To configure requests one, two, and three, follow the example in [Configure Postman Collection targets](../configure-api-targets/configure-postman-collection-targets.md).
 
 ## Configure your Postman collection for authentication
 
@@ -23,7 +23,7 @@ Create two top-level folders in your Postman Collection, one for authentication 
 
     <figure><img src="../../../../.gitbook/assets/configure-postman-authentication-folder-auth.png" alt="Postman collection showing authentication folder, and the result of the test."><figcaption></figcaption></figure>
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Snyk API &#x26; WEB will use the result of this test to notify you that the login failed and instruct the scanner to run the logout detection request.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Snyk API &#x26; Web uses the result of this test to notify you that the login failed and to instruct the scanner to run the logout detection request.</p></div>
 2.  Add the check token request to the `logout-detection` folder. Then navigate to the **Scripts** tab of the request and add the following test in the **Post-response** to validate that your token is still valid:
 
     ```javascript
@@ -64,14 +64,14 @@ After configuring the Postman environment values, configure your target's authen
    4. **FIELD NAME**: Enter the name of the header or cookie field (for example, `Authorization`).
    5. **VALUE PREFIX**: Enter an optional prefix added before the variable value (for example, `Bearer`).
 4. Click **Add Variable**. You can add multiple variables as needed.
-5. Optionally you can select the checkbox: **When login fails, fail the scan immediately and notify me**.
+5. Optionally, select the **When login fails, fail the scan immediately and notify me** checkbox.
 6. Click **Save** and ensure the authentication toggle is set to **On**.
 
 ## Configure Postman logout detection (optional)
 
-Adding logout detection, will help Snyk API & Web determine if the session ended, and try to authenticate again to proceed with the scan:
+Logout detection helps Snyk determine if the session ended and authenticate again to continue the scan:
 
 1. Locate the **LOGOUT DETECTION** section.
-2. Select the folder from the schema file that contains the logout request. For our example scenario, you should select the `logout-detection` folder.
+2. Select the folder from the schema file that contains the logout request. For this example scenario, select the `logout-detection` folder.
 
 You can turn both the authentication and logout detection on or off anytime using the **Off/On** toggle button, or delete the configuration using the **Delete** button.

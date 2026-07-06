@@ -28,16 +28,16 @@ TOTP uses an authenticator app on your phone to generate random codes that chang
 
 ### Obtain the 2FA seed or secret
 
-The seed or secret is obtained when the QR Code is displayed during 2FA setup.
+Snyk obtains the seed or secret when the QR Code displays during 2FA setup.
 
 Obtain the secret in one of these ways:
 
 * The secret is available on the page together with the QR Code (for example, GitHub has a link to show the secret)
-* Use a QR Code scanner app on your phone to scan the QR Code. The QR Code link contains the secret in it.
+* Use a QR Code scanner app on your phone to scan the QR Code. The QR Code link contains the secret.
 
 Example: `otpauth://totp/Example:joe@example.com?secret=JBSWY3DPEHPK3PXP&issuer=Example`
 
-After scanning the QR Code with your authenticator app, it will start providing TOTP codes, allowing you to complete the 2FA configuration for the website or application.
+After you scan the QR Code with your authenticator app, the app starts providing TOTP codes, which lets you complete the 2FA configuration for the website or application.
 
 ### Configure TOTP with Login Form
 
@@ -100,7 +100,7 @@ Then configure 2FA in Snyk API & Web as follows:
 
 1. Navigate to the **Authentication** tab of the target settings.
 2. Scroll down to the **Two-Factor Authentication (2FA)** section.
-3. Enable the **My target requires Two-Factor Authentication (2FA)** checkbox.
+3. Select the **My target requires Two-Factor Authentication (2FA)** checkbox.
 4. Leave the default **Time-based One-Time Password (TOTP)** selected.
 5. Enter the **Seed / Secret** obtained from the 2FA configuration.
 6. Enter the two **CSS Selectors**:
@@ -112,13 +112,13 @@ Then configure 2FA in Snyk API & Web as follows:
 
 ### Configure TOTP with Login Sequence
 
-To use the TOTP code in a login sequence, record a new login sequence with 2FA and update the target login sequence. Visit [Configure login sequence authentication](configure-login-sequence.md) for instructions. During the recording, take note of the TOTP code that you used because you will need it for the configuration.
+To use the TOTP code in a login sequence, record a new login sequence with 2FA and update the target login sequence. Visit [Configure login sequence authentication](configure-login-sequence.md) for instructions. During the recording, take note of the TOTP code that you used because you need it for the configuration.
 
-Then configure configure 2FA in Snyk API & Web as follows:
+Then configure 2FA in Snyk as follows:
 
 1. Navigate to the **Authentication** tab of the target settings.
 2. Scroll down to the **Two-Factor Authentication (2FA)** section.
-3. Enable the **My target requires Two-Factor Authentication (2FA)** checkbox.
+3. Select the **My target requires Two-Factor Authentication (2FA)** checkbox.
 4. Leave the default **Time-based One-Time Password (TOTP)** selected.
 5. Enter the **Seed / Secret** obtained from the 2FA configuration.
 6. Enter the **OTP Code** (the code saved while recording the login sequence).
@@ -128,7 +128,7 @@ Then configure configure 2FA in Snyk API & Web as follows:
 
 ## Configure alternative OTP
 
-Alternative OTP sends a random code through a communication channel like email or text message. This code is entered during the login process to complete authentication.
+Alternative OTP sends a random code through a communication channel like email or text message. You enter this code during the login process to complete authentication.
 
 ### Configure OTP with Login Form
 
@@ -137,11 +137,11 @@ When the 2FA form requests the OTP code, obtain the following:
 1. **CSS selector for the OTP input field**: This selector depends on whether your site uses a single input field or multiple fields for the authenticator code.
 2. **CSS selector for the submit button**: For example, `.2fa-submit-button`.
 
-Then configure configure 2FA in Snyk API & Web as follows:
+Then configure 2FA in Snyk as follows:
 
 1. Navigate to the **Authentication** tab of the target settings.
 2. Scroll down to the **Two-Factor Authentication (2FA)** section.
-3. Enable the **My target requires Two-Factor Authentication (2FA)** checkbox.
+3. Select the **My target requires Two-Factor Authentication (2FA)** checkbox.
 4. Select **Other OTP**.
 5. Enter the two **CSS Selectors**:
    * CSS selector for the OTP input field
@@ -152,13 +152,13 @@ Then configure configure 2FA in Snyk API & Web as follows:
 
 ### Configure OTP with Login Sequence
 
-To use the OTP code in a login sequence, record a new login sequence with 2FA and update the target login sequence. Visit [Configure login sequence authentication](configure-login-sequence.md) for instructions. During the recording, take note of the OTP code that you used because you will need it for the configuration.
+To use the OTP code in a login sequence, record a new login sequence with 2FA and update the target login sequence. Visit [Configure login sequence authentication](configure-login-sequence.md) for instructions. During the recording, take note of the OTP code that you used because you need it for the configuration.
 
 Then configure 2FA in Snyk API & Web as follows:
 
 1. Navigate to the **Authentication** tab of the target settings.
 2. Scroll down to the **Two-Factor Authentication (2FA)** section.
-3. Enable the **My target requires Two-Factor Authentication (2FA)** checkbox.
+3. Select the **My target requires Two-Factor Authentication (2FA)** checkbox.
 4. Select **Other OTP**.
 5. Enter the **OTP Code** (the code saved while recording the login sequence).
 6. Click **Save and enable**.
@@ -167,7 +167,7 @@ Then configure 2FA in Snyk API & Web as follows:
 
 ### Communicate OTP to Snyk API & Web
 
-With 2FA configured on the target settings, you need to implement communication of the OTP to Snyk API & Web when your 2FA requests it. Send the OTP by calling an endpoint from the Snyk API & Web API where you send the OTP in the request body.
+With 2FA configured on the target settings, you must communicate the OTP to Snyk when your 2FA requests it. Send the OTP by calling an endpoint from the Snyk API where you send the OTP in the request body.
 
 Curl example:
 
@@ -187,7 +187,7 @@ Where:
 
 ### Automate OTP extraction
 
-For automated OTP extraction and submission, see [Automate OTP extraction](automate-otp-extraction.md) for examples using:
+For automated OTP extraction and submission, visit [Automate OTP extraction](automate-otp-extraction.md) for examples using:
 
 * Google Apps Script
 * Microsoft Power Automate

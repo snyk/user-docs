@@ -1,8 +1,8 @@
 # Change report type
 
-Snyk API & Web allows you to generate reports for target scans that are already finished. You can use these reports to showcase your security to auditors, clients, consultants, and management. You can also use these reports to achieve HIPAA, PCI-DSS, or ISO 27001 compliance.
+With Snyk API & Web, you can generate reports for target scans that are already finished. Use these reports to showcase your security to auditors, clients, consultants, and management. You can also use these reports to achieve HIPAA, PCI-DSS, or ISO 27001 compliance.
 
-When generating a target scan report, click the **Scan report** button, select the desired type, and the report is generated and downloaded.
+To generate a target scan report, click **Scan report** and select the type you want. Snyk generates and downloads the report.
 
 Visit [Report types](report-types.md) to learn more about all the report types.
 

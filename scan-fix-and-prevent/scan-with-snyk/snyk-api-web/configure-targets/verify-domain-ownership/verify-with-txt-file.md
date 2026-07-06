@@ -29,7 +29,7 @@ After successful verification, you can remove the `.txt` file from your website.
 
 ### File not accessible
 
-Snyk API & Web might not be able to access the file if it is:
+Snyk cannot access the file if it is:
 - In the wrong location (must be in root directory)
 - Protected by authentication or access restrictions
 - Blocked by firewall rules

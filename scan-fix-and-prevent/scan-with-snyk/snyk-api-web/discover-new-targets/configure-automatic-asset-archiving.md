@@ -6,18 +6,18 @@ This guide explains how to configure the automatic archiving settings for your a
 
 ## Prerequisites
 
-To access this feature, your Snyk API & Web plan must include the Asset Discovery entitlement.
+To access this feature, your Snyk plan must include the Asset Discovery entitlement.
 
 ## Configure automatic archiving
 
 1. In your Snyk API & Web account, navigate to **Settings** > **Scan Settings** and locate the **Archive discovered assets** module.
-2. Use the toggle to enable or disable the automatic archiving feature. By default, this feature is enabled.
-3. In the input field, enter the number of days (from one to 365) an asset should be undetected before it is automatically archived. The default is 30 days.
+2. Use the toggle to turn the automatic archiving feature on or off. By default, this feature is on.
+3. In the input field, enter the number of days (from one to 365) an asset can be undetected before Snyk automatically archives it. The default is 30 days.
 4. Click **Save** to apply your changes.
 
 ## Verify the outcome
 
-Once configured, Snyk API & Web automatically moves any asset to an **Archived** state if it is not detected in any discovery scan for the number of days you specified.
+After you configure the feature, Snyk automatically moves any asset to an **Archived** state if it is not detected in any discovery scan for the number of days you specified.
 
 You can view your archived assets at any time:
 
@@ -27,4 +27,4 @@ You can view your archived assets at any time:
 
 ## Manage archived assets
 
-You do not need to manually reactivate assets. If a previously archived asset is detected again in a new discovery scan, Snyk API & Web automatically returns it to the **Active** state.
+You do not need to manually reactivate assets. If a discovery scan detects a previously archived asset again, Snyk automatically returns it to the **Active** state.

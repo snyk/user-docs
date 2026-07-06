@@ -2,53 +2,53 @@
 
 By connecting Snyk API & Web to your DefectDojo server, you can synchronize target scan results with a DefectDojo product of your choice.
 
-The synchronization is uni-directional, meaning that a finding reported by Snyk API & Web is sent to DefectDojo, but if its state changes at DefectDojo, the matching finding at Snyk API & Web will not have its state updated.
+The synchronization is unidirectional. Snyk sends a finding it reports to DefectDojo, but if the state of that finding changes in DefectDojo, Snyk does not update the state of the matching finding.
 
-If Snyk API & Web detects a change, it updates the DefectDojo finding. For instance, if the underlying vulnerability is fixed, Snyk API & Web detects it, sets the finding as fixed, and updates the DefectDojo finding to fixed as well.
+When Snyk detects a change, it updates the DefectDojo finding. For example, when the underlying vulnerability is fixed, Snyk detects this, sets the finding as fixed, and updates the DefectDojo finding to fixed.
 
-The DefectDojo instance is set at the account level and enabled on demand for each target. Configurations such as which product and engagement to use are set in the target settings.
+You set the DefectDojo instance at the account level and enable it on demand for each target. You set configurations such as which product and engagement to use in the target settings.
 
 This integration supports DefectDojo versions 1.5.X and 1.6.X.
 
 ## Configure DefectDojo API key
 
-Snyk API & Web needs the URL of your DefectDojo server and an API v2 Key to authenticate itself. The API key must belong to a staff user.
+Snyk needs the URL of your DefectDojo server and an API v2 Key to authenticate. The API key must belong to a staff user.
 
-You can find your API v2 Key at `<your DefectDojo>/api/key-v2` or by clicking in the top right dropdown and click **API v2 Key**.
+You can find your API v2 Key at `<your DefectDojo>/api/key-v2` or by clicking the top-right dropdown and selecting **API v2 Key**.
 
 Copy the API key value.
 
-Go to `https://plus.probely.app/integrations` and enter your DefectDojo URL and the copied API key. It looks like this:
+Navigate to `https://plus.probely.app/integrations` and enter your DefectDojo URL and the copied API key. It looks like this:
 
 Click **Save**.
 
-Snyk API & Web tries to connect and authenticate to DefectDojo, and a success message appears. Done.
+Snyk connects and authenticates to DefectDojo, and a success message appears.
 
-If the Snyk API & Web servers cannot connect or the API key is incorrect, an error is displayed. Review your configuration and ensure your server can receive connections from Snyk API & Web IPs.
+If the Snyk servers cannot connect or the API key is incorrect, an error appears. Review your configuration and ensure your server can receive connections from Snyk IPs.
 
 ## Choose your synchronization settings
 
-You need to choose which targets to synchronize and how. To configure a target to use DefectDojo go to its settings at **Settings > Integrations** and then **DefectDojo**.
+Choose which targets to synchronize and how. To configure a target to use DefectDojo, navigate to its settings at **Settings > Integrations** and then **DefectDojo**.
 
 You see the following screen:
 
 ### Product
 
-Choose which DefectDojo product to sync with.
+Select which DefectDojo product to synchronize with.
 
 ### Engagement
 
-Choose which engagement to sync with. The list only shows engagements for the selected product.
+Select which engagement to synchronize with. The list shows only engagements for the selected product.
 
 ### Test
 
-An optional name to identify Snyk API & Web scans. If empty, the target scans can be identified by the test type **Snyk API & Web Scan**. The test type is created automatically when the integration is configured.
+An optional name to identify Snyk scans. If empty, the test type **Snyk API & Web Scan** identifies the target scans. Snyk creates the test type automatically when you configure the integration.
 
 ### Set findings to active/verified
 
-Sets the findings reported by Snyk API & Web to active/verified.
+Sets the findings that Snyk reports to active/verified.
 
-These are enabled by default to ensure findings get adequate visibility at DefectDojo. Non-active and non-verified findings might not be visible in the DefectDojo dashboards.
+These are enabled by default to ensure findings get adequate visibility in DefectDojo. Non-active and non-verified findings can be hidden in the DefectDojo dashboards.
 
 ### Delete
 

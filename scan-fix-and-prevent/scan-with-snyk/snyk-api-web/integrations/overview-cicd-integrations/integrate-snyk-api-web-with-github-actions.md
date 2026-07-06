@@ -9,37 +9,37 @@ To foster automation between systems, you can trigger target scans directly from
 Two integration methods are offered:
 
 * **Snyk API & Web Action:** A simple way to quickly add a scan to your workflow.
-* **Snyk API & Web CLI:** A more flexible and powerful method that gives you full control over complex scenarios like blocking builds and scanning ephemeral applications.
+* **Snyk CLI:** A more flexible and powerful method that gives you full control over complex scenarios like blocking builds and scanning ephemeral applications.
 
 ## Prerequisites
 
-Before you begin, you must configure your scan targets and credentials in the Snyk API & Web application.
+Configure your scan targets and credentials in the Snyk application before you begin.
 
-### Create a target in Snyk API & Web
+### Create a target in Snyk
 
-In the Snyk API & Web app, go to the Targets menu and click **Add**. Fill out the form and click **Add** to create the new target.
+In the Snyk app, navigate to the **Targets** menu and click **Add**. Fill out the form and click **Add** to create the new target.
 
 {% hint style="info" %}
-During this process, connectivity is checked. If your target is internal or not yet deployed, you can bypass any warnings and add the target regardless. For more details, visit How to add a Target.
+During this process, Snyk checks connectivity. If your target is internal or not yet deployed, you can bypass any warnings and add the target. For more details, visit How to add a Target.
 {% endhint %}
 
-Before configuring the integration in GitHub Actions, make sure to retrieve the unique target ID from Snyk API & Web.
+Before you configure the integration in GitHub Actions, retrieve the unique target ID from Snyk.
 
-1. In your Snyk API & Web dashboard, select **Targets**.
+1. In your Snyk dashboard, select **Targets**.
 2. From the target list, select the target you want to integrate.
 3. In your browser's address bar, copy the target ID. This is the string of characters immediately following /target/ in the URL.
 
 {% hint style="info" %}
-After creating a target, it is mandatory to verify your target's domain. Otherwise, your scans are only limited to lightning scans. To learn more, see the importance of domain ownership verification.
+After you create a target, you must verify the target's domain. Otherwise, your scans are limited to lightning scans. To learn more, visit the importance of domain ownership verification.
 {% endhint %}
 
-### Create a Snyk API & Web API key
+### Create a Snyk API key
 
 You need an API key with permissions to start a scan on your target. For instructions, visit How to generate an API key.
 
 ## Step 1: Add your API key and target ID to GitHub
 
-To allow GitHub Actions to communicate with Snyk API & Web, you must store your credentials as secure repository secrets.
+To allow GitHub Actions to communicate with Snyk, you must store your credentials as secure repository secrets.
 
 1. In your GitHub repository, navigate to the **Settings** tab.
 2. In the side menu, expand **Secrets and variables** and click **Actions**.
@@ -73,25 +73,25 @@ jobs:
           region: "eu"
 ```
 
-Depending on the region where your Snyk API & Web instance is located, you need to specify a region value. The options are: `eu`, `us`, `au`.
+Depending on the region where your Snyk instance is located, you must specify a region value. The options are `eu`, `us`, and `au`.
 
-Remember to replace `<TARGET_ID>` with the target ID you copied in the Prerequisites step.
+Replace `<TARGET_ID>` with the target ID you copied in the Prerequisites step.
 
-### Option 2: Use the Snyk API & Web CLI
+### Option 2: Use the Snyk CLI
 
-For more control over the pipeline, such as blocking builds or scanning ephemeral applications, you can use the Snyk API & Web CLI directly.
+For more control over the pipeline, such as blocking builds or scanning ephemeral applications, you can use the Snyk CLI directly.
 
 Create a `probely.yml` file at the root of your repository, under the `.github/workflows/` directory, and add one of the following code examples based on your use case. You can also find all of them in the Snyk API & Web CI/CD examples repository on GitHub.
 
 #### Important note on these examples
 
-The YAML configurations below are scanning steps designed to be incorporated into your existing `probely.yml` file.
+The following YAML configurations are scanning steps to incorporate into your existing `probely.yml` file.
 
-For example, your pipeline might already have steps to build your code, deploy to a QA environment, and run automated tests. You can add the Snyk API & Web scan as another step at any point that makes sense for your workflow, such as after you deploy to QA or staging.
+For example, your pipeline might already have steps to build your code, deploy to a QA environment, and run automated tests. You can add the Snyk scan as another step at any point that makes sense for your workflow, such as after you deploy to QA or staging.
 
 #### Run a scan on a target in non-blocking mode
 
-This workflow installs the CLI and starts a scan, but does not wait for the results, allowing your pipeline to complete quickly.
+This workflow installs the CLI and starts a scan, but does not wait for the results, so your pipeline completes quickly.
 
 ```yaml
 # github-remote-app-non-blocking-mode.yaml
@@ -225,14 +225,14 @@ jobs:
 
 #### Run a scan on an ephemeral (dynamic) target in blocking mode
 
-This is a more advanced configuration for building, deploying, and scanning an application in a temporary environment that is created for a specific purpose and then automatically destroyed during the pipeline run.
+This is a more advanced configuration for building, deploying, and scanning an application in a temporary environment. The pipeline creates the environment for a specific purpose and then automatically destroys it during the run.
 
-Using ephemeral environments requires agent token, target hostname, and target URL. Store them as variables for better security.
+Ephemeral environments require an agent token, target hostname, and target URL. Store them as variables for better security.
 
-You also need to create a scanning agent in Snyk API & Web and configure your target to use it. This process requires the `scanning-agent/farcasterd-linux-amd64-0.4.3` file. For detailed instructions, visit How to install a Scanning Agent and How to scan internal applications.
+You also need to create a scanning agent in Snyk and configure your target to use it. This process requires the `scanning-agent/farcasterd-linux-amd64-0.4.3` file. For detailed instructions, visit How to install a Scanning Agent and How to scan internal applications.
 
 {% hint style="info" %}
-In this code example, Docker is used to create ephemeral environments. However, you can use any other solution to create your environment.
+This code example uses Docker to create ephemeral environments. However, you can use any other solution to create your environment.
 {% endhint %}
 
 ```yaml
@@ -283,10 +283,10 @@ jobs:
 
 ## Step 3: Run the pipeline and view the results
 
-After committing your workflow file, the scan is triggered automatically on a push to the main branch. You can also run the workflow manually.
+After you commit your workflow file, Snyk triggers the scan automatically on a push to the main branch. You can also run the workflow manually.
 
-1. In your GitHub repository, go to the **Actions** tab.
+1. In your GitHub repository, navigate to the **Actions** tab.
 2. Under **All workflows**, find and select your scan workflow.
 3. Click the **Run workflow** dropdown, then click **Run workflow** to trigger a new scan.
 
-Once the scan is complete, you can view the detailed findings in your Snyk API & Web dashboard.
+After the scan completes, you can view the detailed findings in your Snyk dashboard.
