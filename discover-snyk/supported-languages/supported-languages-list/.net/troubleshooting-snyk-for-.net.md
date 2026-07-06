@@ -11,19 +11,19 @@ To improve accuracy, migrate to the Universal Broker.
 
 ### Static analysis limitations
 
-The following functionality is not supported when using static analysis:
+Static analysis does not support the following functionality:
 
 * Private dependencies: Snyk cannot access private dependencies, including brokered and non-brokered. Transitive dependencies are not resolved.
 * Build configuration: Snyk ignores `Directory.Build.props`, `Directory.Build.targets`, and `global.json` files.
-* Runtime precision: Snyk cannot reliably identify the specific runtime, which may increase false positives
+* Runtime precision: Snyk cannot reliably identify the specific runtime, which can increase false positives.
 
 ### Handle runtime false positives
 
-Static analysis may flag vulnerabilities already patched in your environment because it may not detect your specific runtime patch version.
+Static analysis can flag vulnerabilities already patched in your environment because it might not detect your specific runtime patch version.
 
 #### Vulnerabilities in SCM
 
-If your application runs on a system updated with the latest Microsoft patches, a flagged vulnerability may not be relevant. You can ignore these vulnerabilities in the Snyk Web UI.
+If your application runs on a system updated with the latest Microsoft patches, a flagged vulnerability might not be relevant. You can ignore these vulnerabilities in the Snyk Web UI.
 
 #### Vulnerabilities in CLI
 

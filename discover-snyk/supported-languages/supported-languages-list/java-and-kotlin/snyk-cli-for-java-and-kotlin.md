@@ -52,7 +52,7 @@ snyk test -- -Dpkg_version=1.4
 
 ## CLI help for Gradle Projects
 
-Gradle build can consist of several sub-projects, where each sub-project has its own build.gradle, while the root Project is the only one that also includes a `settings.gradle` file. Sub-projects depend on the root ProjectProjects but can be configured otherwise.
+Gradle build can consist of several sub-projects, where each sub-project has its own build.gradle, while the root Project is the only one that also includes a `settings.gradle` file. Sub-projects depend on the root Project but you can configure them otherwise.
 
 By default, Snyk CLI scans only the current Project, the Project in the root of the current folder, or the Project that is specified by `--file=path/to/build.gradle`).
 
@@ -62,7 +62,7 @@ To scan all Projects at once (recommended), use the `--all-sub-projects` option:
 snyk test --all-sub-projects
 ```
 
-Each of the individual sub-projects appears as a separate Snyk Project in the eb UI.
+Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
 
 To scan a specific Project (for example, "myapp"), use the following command:
 
@@ -136,7 +136,7 @@ By default, Snyk passes `gradle build --no-daemon` in the background when runnin
 
 If you see `snyk test` or `snyk monitor` fail on other operating systems because of daemon-related issues, try adding the `--no-daemon` flag to the Snyk command or set `GRADLE_OPTS: '-Dorg.gradle.daemon=false'`.
 
-For tips on disabling the daemon, the [Gradle documentation](https://docs.gradle.org/current/userguide/gradle_daemon.html#sec:disabling_the_daemon).
+For tips on disabling the daemon, visit the [Gradle documentation](https://docs.gradle.org/current/userguide/gradle_daemon.html#sec:disabling_the_daemon).
 
 ### Lockfiles
 
@@ -190,7 +190,7 @@ Such a dependency file is typically evaluated using an `ant` task defined in `bu
 </target>
 ```
 
-Using the command `ant resolve-dependencies`, dependencies will be downloaded from Maven Central, just like regular Maven dependencies.
+Using the command `ant resolve-dependencies`, Maven Central downloads the dependencies, like regular Maven dependencies.
 
 To let Snyk know about the dependency tree, you must first convert to the Maven POM format. Start by configuring a new `makepom` task in `build.xml`
 
@@ -210,7 +210,7 @@ ant makepom
 snyk test --file=pom.xml
 ```
 
-The `pom.xml` file does not need to be checked in and can be deleted after a test is done using `snyk`. Additionally, the dependency tree can be monitored using:
+You do not need to check in the `pom.xml` file, and you can delete it after a test using `snyk`. You can also monitor the dependency tree using:
 
 ```
 snyk monitor --file=pom.xml
@@ -218,7 +218,7 @@ snyk monitor --file=pom.xml
 
 ## Snyk CLI tips and tricks
 
-the [CLI commands and options summary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/cli-commands-and-options-summary) and the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/). Use the `--help` option in the CLI for details of Snyk CLI commands.
+See the [CLI commands and options summary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/cli-commands-and-options-summary) and the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/). Use the `--help` option in the CLI for details of Snyk CLI commands.
 
 ### Testing your own code
 
@@ -248,27 +248,27 @@ By default, Snyk CLI scans only the current project (the project in the root of 
 `--all-projects` can be used across all package managers, which also includes the behaviors of `--all-sub-projects`, mentioned below.
 
 * To scan all projects at once (recommended), use the `--all-sub-projects` option:\
-  (that is, `snyk test --all-sub-projects`). Each of the individual sub-projects appears as a separate Snyk Project in the eb UI.
+  (that is, `snyk test --all-sub-projects`). Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
 * To scan a specific project (for example, myapp), use `--sub-project=` (that is, `snyk test --sub-project=myapp`).
 
-specific configurations, [Snyk for Java and Kotlin](../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/).
+For specific configurations, see [Snyk for Java and Kotlin](../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/).
 
 #### Unmanaged
 
-For more details on unmanaged Jars, [Scan all unmanaged JAR files](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/scan-all-unmanaged-jar-files).
+For more details on unmanaged Jars, see [Scan all unmanaged JAR files](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/scan-all-unmanaged-jar-files).
 
 ### Testing containers
 
-Snyk automatically looks for application (such as open source, maven, and npm) vulnerabilities as part of a container scan. Snyk recommends integrating via CLI or Registry earlier in the pipeline and use this as an additional signal or insight into what is in production. [Snyk CLI for container security](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container).
+Snyk automatically looks for application (such as open source, maven, and npm) vulnerabilities as part of a container scan. Snyk recommends integrating through the CLI or Registry earlier in the pipeline and using this as an additional signal or insight into what is in production. See [Snyk CLI for container security](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container).
 
-To test Infrastructure as Code, [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/).
+To test Infrastructure as Code, see [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/).
 
-To fix vulnerabilities, [Fixing vulnerabilities on Maven projects](https://snyk.io/blog/fixing-vulnerabilities-in-maven-projects/).
+To fix vulnerabilities, see [Fixing vulnerabilities on Maven projects](https://snyk.io/blog/fixing-vulnerabilities-in-maven-projects/).
 
 ### Options and plugins
 
-To help generate reports locally or at build time, [snyk-to-html plugin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html).
+To help generate reports locally or at build time, see the [snyk-to-html plugin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html).
 
-See `--json` and `--sarif` options for generating output that can be programmatically accessed.
+Use the `--json` and `--sarif` options to generate output that you can access programmatically.
 
-For advanced filtering options, [snyk-filter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
+For advanced filtering options, see [snyk-filter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).

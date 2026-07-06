@@ -40,7 +40,7 @@ If you are using Maven or Gradle with a gradle.lockfile, the Git code repository
 
 Typically you can instrument testing as part of a build system or adopt a lockfile as part of their process.
 
-* It is quite common for large organizations to monitor applications via Git integration, to begin with, daily monitoring, turning on PR checks for only key applications at the start.
+* It is quite common for large organizations to monitor applications through Git integration, to begin with, daily monitoring, turning on PR checks for only key applications at the start.
 * As developers become familiar with Snyk capabilities, they widen the scope of applications with PR checks for gating.
 * Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commands](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration).
 
@@ -81,12 +81,12 @@ Improved Gradle SCM scanning is in Early Access. You can enable the feature by u
 The following Gradle features are not supported:
 
 * Custom configuration in [buildSrc](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources) directories
-* Dependencies introduced via [plugins](https://docs.gradle.org/current/userguide/plugins.html).
+* Dependencies introduced through [plugins](https://docs.gradle.org/current/userguide/plugins.html).
 
 ### Enable improved Gradle SCM scanning
 
 {% hint style="warning" %}
-Improved Gradle SCM scanning supports importing a maximum limit of 5,000 `build.gradle(.kts)` files per SCM repository. Attempts to import repos with more than 5,000 Gradle build files will fail.
+Improved Gradle SCM scanning supports importing a maximum limit of 5,000 `build.gradle(.kts)` files per SCM repository. Attempts to import repos with more than 5,000 Gradle build files fail.
 {% endhint %}
 
 To enable this feature, follow these steps for your Snyk Organization:
@@ -104,7 +104,7 @@ After Improved Gradle SCM scanning is enabled:
 
 If your application build uses private package repositories, you must configure the relevant Snyk integration to get the most accurate results.
 
-To use package repository integrations with the Improved Gradle scanning feature, use the configuration instructions and settings for Maven. These will be detected and used in improved Gradle scans.
+To use package repository integrations with the Improved Gradle scanning feature, use the configuration instructions and settings for Maven. Snyk detects and uses these in improved Gradle scans.
 
 In the Java language settings, you can integrate Snyk with your private package repositories (for example, Artifactory or Nexus). This enables Snyk to build a complete dependency tree when scanning Maven or Gradle Projects that reference private packages.
 
@@ -145,4 +145,4 @@ You can configure language settings for your open source libraries and licensing
 
 Customers develop advanced dependency management strategies and can choose not to use the standard and frequently used package managers.
 
-For on-time testing using the Snyk API, you can use the [Test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1) endpoints. Examples include [Test for issues in a (Maven) public package by group id, artifact id and version](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1#test-maven-groupid-artifactid-version) and [List issues for a package](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/issues#orgs-org_id-packages-purl-issues).
+For one-time testing using the Snyk API, you can use the [Test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1) endpoints. Examples include [Test for issues in a (Maven) public package by group id, artifact id and version](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1#test-maven-groupid-artifactid-version) and [List issues for a package](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/issues#orgs-org_id-packages-purl-issues).

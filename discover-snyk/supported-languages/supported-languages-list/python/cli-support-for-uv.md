@@ -6,7 +6,7 @@
 CLI support for uv is in Early Access and available only with Enterprise plans. To enable the feature, visit [Snyk Preview](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/snyk-preview).
 {% endhint %}
 
-## Prerequites
+## Prerequisites
 
 Ensure you have `uv` version 0.9.29 or later installed.
 

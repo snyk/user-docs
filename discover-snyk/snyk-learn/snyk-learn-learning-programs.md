@@ -8,11 +8,11 @@ This feature is available in Early Access as part of the Snyk Learning Managemen
 Send feedback to your Snyk account team, or email [support@snyk.io](mailto:support@snyk.io).
 {% endhint %}
 
-Learning programs allow Snyk administrators to curate specific paths of security education and Snyk product training, and assign them to groups of developers or Snyk users. By grouping lessons into programs and setting deadlines, organizations can automate security onboarding, meet compliance requirements, and drive targeted remediation.
+Learning programs let Snyk administrators curate specific paths of security education and Snyk product training, and assign them to groups of developers or Snyk users. By grouping lessons into programs and setting deadlines, organizations can automate security onboarding, meet compliance requirements, and drive targeted remediation.
 
 ## Prerequisites
 
-To create and manage learning programs, you must must be a [Tenant Admin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant) or have a custom role with the `tenant.learning_program.edit` and `tenant.learning_program.read` permissions.
+To create and manage learning programs, you must be a [Tenant Admin](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant) or have a custom role with the `tenant.learning_program.edit` and `tenant.learning_program.read` permissions.
 
 ### Example: Creating a custom role
 
@@ -52,7 +52,7 @@ curl --location --globoff --request POST "https://api.snyk.io/rest/tenants/{tena
 ## Creating a new learning program
 
 {% hint style="info" %}
-Programs cannot be edited once they have started. Ensure your lesson list and participant list are final before the start date of the program.
+Programs cannot be edited after they have started. Ensure your lesson list and participant list are final before the start date of the program.
 
 During Early Access, there is a limit to 300 participants per program.
 {% endhint %}
@@ -61,7 +61,7 @@ Follow these steps to build and launch a new training initiative:
 
 1. Navigate to [Learning Programs](https://learn.snyk.io/admin/management/).
 2. Click **Create new learning program**. Enter a unique name (for example, `New Joiners 2026`) and a description.
-3. Browse the available Snyk Learn catalog and select the modules you wish to include in the learning program.
+3. Browse the available Snyk Learn catalog and select the modules you want to include in the learning program.
 4. Download the participants `.csv` template provided in the UI, add the email addresses of your learners, and upload the file.
 5. Set the start date and duration for your learning program, and choose whether to send reminders to your users.
 6. If needed, you can reset progress for lessons to have your users retake those lessons.
@@ -97,6 +97,6 @@ The progress state for each user is displayed:
 
 ## Completing a learning program
 
-Learning programs complete automatically once the scheduled end date is reached.&#x20;
+Learning programs complete automatically after the scheduled end date is reached.&#x20;
 
 If needed, you can click **Mark as Completed** on the program details page to end the program early.

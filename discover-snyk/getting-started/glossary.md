@@ -4,7 +4,7 @@
 
 ### ADE
 
-An Agentic Development Environment (ADE), also known as an Agentic IDE, is a engineering workspace where AI agents execute defined tasks.
+An Agentic Development Environment (ADE), also known as an Agentic IDE, is an engineering workspace where AI agents execute defined tasks.
 
 ### Advisor
 
@@ -104,7 +104,7 @@ A Command directive is a type of [Directive](glossary.md#directive) that is manu
 
 ### Container
 
-Containers allow you to package applications and their dependencies together to be deployed as a single runnable unit. A container is an abstraction provided by the operating system kernel that allows a process to be isolated from other processes running on the system. See also [Snyk Container.](glossary.md#snyk-container)
+Containers let you package applications and their dependencies together to be deployed as a single runnable unit. A container is an abstraction provided by the operating system kernel that allows a process to be isolated from other processes running on the system. See also [Snyk Container.](glossary.md#snyk-container)
 
 ### Container engine
 
@@ -128,7 +128,7 @@ The security controls associated with the asset. Navigate to the Snyk Essentials
 
 ### Coverage (Snyk Essentials)
 
-An assessment of whether applicable assets are scanned and tested by security tools (like Snyk Open Source, for instance), as it relates to an application security program. A type of policy that allows you to specify what controls should be applied and, optionally, how often it needs to be run.
+An assessment of whether applicable assets are scanned and tested by security tools (like Snyk Open Source, for instance), as it relates to an application security program. A type of policy that lets you specify what controls to apply and, optionally, how often it needs to be run.
 
 ### Coverage gap (Snyk **Essentials**)
 
@@ -136,7 +136,7 @@ An assessment of all assets that fall "out of policy" and do not satisfy the cov
 
 ### CVE
 
-Common Vulnerabilities and Exposures. A widely-used identifier for a well-known vulnerability.
+Common Vulnerabilities and Exposures. A widely used identifier for a well-known vulnerability.
 
 ### CVSS
 
@@ -177,7 +177,7 @@ A set of cultural philosophies, practices, and tools that combine software devel
 
 ### DevSecOps
 
-Integrate security seamlessly and transparently into emerging agile IT and DevOps development.
+Integrate security transparently into emerging agile IT and DevOps development.
 
 ### Docker
 
@@ -209,7 +209,7 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 
 ### Fixable / Partially fixable
 
-A measure of whether a vulnerability can be fixed by Sny by applying a patch, upgrade, or pin. See [Vulnerability fix types](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types).
+A measure of whether Snyk can fix a vulnerability by applying a patch, upgrade, or pin. See [Vulnerability fix types](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types).
 
 ### Fix PR
 
@@ -327,7 +327,7 @@ Natural Language Processing.The technology that enables computers to understand,
 
 ### NPX
 
-`npx` (Node Package Execute) is a command-line tool bundled with `npm` that allows you to run `Node.js` packages without requiring installation.
+`npx` (Node Package Execute) is a command-line tool bundled with `npm` that lets you run `Node.js` packages without requiring installation.
 
 ## O
 
@@ -503,7 +503,7 @@ A platform providing Cloud Native Application Security (CNAS) solutions, allowin
 
 ### Snyk Advisor
 
-A free web application that allows you to compare software packages across open-source ecosystems. It provides insights into the overall health of a particular package by combining community and security data into a single unified view. See [Snyk Advisor](https://snyk.io/advisor/).
+A free web application that lets you compare software packages across open-source ecosystems. It provides insights into the overall health of a particular package by combining community and security data into a single unified view. See [Snyk Advisor](https://snyk.io/advisor/).
 
 ### Snyk API
 
@@ -551,14 +551,14 @@ A library used by the Snyk CLI to scan a certain language or build system.
 
 ### Snyk Studio
 
-Snyk Studio embeds Snyk's AI security platform capabilities into any AI-native workflow. Snyk Studio is built on two core use cases: '[Secure at Inception](glossary.md#secure-at-inception),' which proactively prevents new, AI-generated vulnerabilities using configurable directives, and 'Intelligent Remediation,' which clears existing security backlogs at scale.
+Snyk Studio embeds the AI security platform capabilities of Snyk into any AI-native workflow. Snyk Studio is built on two core use cases: '[Secure at Inception](glossary.md#secure-at-inception),' which proactively prevents new, AI-generated vulnerabilities using configurable directives, and 'Intelligent Remediation,' which clears existing security backlogs at scale.
 
 ### Snyk Security Intelligence
 
 A component powering the Snyk cloud-native application security platform.\
 Incorporates the Snyk Intel Vulnerability DB: the Snyk database of vulnerabilities, providing detailed information and fix advice for known vulnerabilities. See [Vulnerability DB](https://snyk.io/vuln).
 
-### Snyk web UI
+### Snyk Web UI
 
 The browser-based environment that provides users access to Snyk functions.
 

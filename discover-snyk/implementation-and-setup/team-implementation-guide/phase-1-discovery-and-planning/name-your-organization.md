@@ -24,5 +24,5 @@ All customers have a Group and at least one Organization. On the Free and Team p
 For more details, visit [Manage Groups and Organizations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups-and-organizations).
 
 {% hint style="info" %}
-If you have hundreds or thousands of repositories, consider the Snyk Enterprise plan for access to additional organizations to restrict access, separate reporting, and manageable lists to interact with.
+If you have hundreds or thousands of repositories, consider the Snyk Enterprise plan for access to additional Organizations to restrict access, separate reporting, and manageable lists to interact with.
 {% endhint %}

@@ -25,17 +25,17 @@ To create a free account or sign up for a pricing plan, navigate to [snyk.io](ht
 
 If your company has an existing Snyk account and uses single sign-on (SSO), use the SSO link provided by your administrators.
 
-If your company requires an invitation to use Snyk, when you log in for the first time, you may see a list of Organizations, which in Snyk control access to Projects. To request access to an Organization, select the name of an Organization Admin in order to request access.
+If your company requires an invitation to use Snyk, when you log in for the first time, you see a list of Organizations, which in Snyk control access to Projects. To request access to an Organization, select the name of an Organization Admin.
 
 {% hint style="info" %}
-If you log in with a different authentication provider from the one your company uses for the Snyk account, you create a new account. You will not be logged in to the correct Organization for your company.
+If you log in with a different authentication provider from the one your company uses for the Snyk account, you create a new account. You are not logged in to the correct Organization for your company.
 {% endhint %}
 
 When you log in to the Snyk Web UI, Snyk shows your preferred (default) Organization. Snyk also uses the settings for your preferred Organization when you test a Project locally using the CLI.
 
 ## Set up a Snyk integration
 
-For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations - [Organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk) or [Group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk). For information about available integrators, see [Snyk SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations) and [Integrate with Snyk](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk).
+For Snyk to know where to scan, you must provide it with access to your environment. The type of integration you need depends on what systems you use, what you want to scan, and where you want to add the integrations — [Organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk) or [Group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk). For information about available integrators, see [Snyk SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations) and [Integrate with Snyk](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk).
 
 To scan your code, you must first integrate Snyk with the repository holding that code.
 
@@ -43,7 +43,7 @@ To scan your code, you must first integrate Snyk with the repository holding tha
 
 After creating a Snyk account, you can follow the optional getting-started walkthrough prompts to provide information and help Snyk guide your experience. This includes choosing an integration method, setting access permissions, configuring automation settings, and authenticating that integration.
 
-Alternatively, if you want to scan your code without authenticating to your source code repository, you can select the CLI integration. This allows you to run scans from your local machine and upload results to your Organization in Snyk.
+Alternatively, if you want to scan your code without authenticating to your source code repository, you can select the CLI integration. This lets you run scans from your local machine and upload results to your Organization in Snyk.
 
 ### Manual process
 
@@ -61,7 +61,7 @@ Before authenticating, be sure you have set your region properly. For details, s
 
 Your Snyk API token is a personal token available under your user profile. The Snyk API token is associated with your Snyk Account and not with a specific Organization.
 
-Free and Team plan and trial users have access only to tokens under the user profile. Your personal tokens can be used to authenticate with the Snyk CLI running on a local or a build machine and an IDE when you are setting a token manually. Use a personal token with caution if you are authenticating for CI/CD or with the API, which is available for Enterprise plan users only.
+Free and Team plan and trial users have access only to tokens under the user profile. You can use your personal tokens to authenticate with the Snyk CLI running on a local or a build machine and an IDE when you are setting a token manually. Use a personal token with caution if you are authenticating for CI/CD or with the API, which is available for Enterprise plan users only.
 
 #### Personal Access Tokens (recommended)
 
@@ -84,7 +84,7 @@ To obtain your personal Snyk API token:
 2. In your **General** settings, under API Token, select **click to show**.
 3. Highlight and copy your API key.
 
-If you want a new API token, select **Revoke & Regenerate**, but this will make the previous API token invalid.
+If you want a new API token, select **Revoke & Regenerate**, but this makes the previous API token invalid.
 
 {% hint style="info" %}
 For information on when to use an API token and when to use a service account token, available to Enterprise plan users only, visit [Authentication for API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api).
@@ -107,7 +107,7 @@ Importing a Project also does the following:
 Snyk Essentials is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk Essentials enables Application Security teams to implement, manage, and scale a modern, high-performing, developer security program. It covers use cases under Application Security Posture Management (ASPM).
+Snyk Essentials lets Application Security teams implement, manage, and scale a modern, high-performing, developer security program. It covers use cases under Application Security Posture Management (ASPM).
 
 For more information, see [Snyk Essentials](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-essentials).
 

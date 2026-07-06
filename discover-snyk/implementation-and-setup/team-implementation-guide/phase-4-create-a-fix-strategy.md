@@ -9,7 +9,7 @@ Before diving into specific vulnerabilities, consider your Organizations and rep
 In your Organization, you can then consider the repositories that make up the application's different parts. Areas that handle sensitive data or are public-facing may be more important to secure, so this could be another way to narrow down your initial list of Projects to review.
 
 {% hint style="info" %}
-If you have used **Attributes** to add metadata to your Projects, these can be a great way to filter down the number of Projects that you are considering.
+If you have used **Attributes** to add metadata to your Projects, these can help you filter down the number of Projects that you are considering.
 {% endhint %}
 
 ## Group work by development teams
@@ -20,17 +20,17 @@ After you have your reduced set of Projects to prioritize, you may want to split
 
 Filters are available to help prioritize what issues need to be fixed more urgently. The following search criteria are most commonly used when building a prioritization plan and can be used iteratively or in combination as you analyze results.&#x20;
 
-* Severity (Start with **High** and **Critical**). It is common to filter by critical severity. However, Snyk Code, Snyk code only goes up to High, so if you are using Snyk Code, start there for Code Analysis results.
-* [Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/) (Issues with **Mature** or **Proof of Concept** are more exploitable). By choosing this filter, you implicitly only filter the results to Open Source.
-* Fixable (if there’s a fix available by upgrading a package, it’s much faster to fix).  &#x20;
+* Severity (Start with **High** and **Critical**). It is common to filter by critical severity. However, Snyk Code only goes up to High, so if you are using Snyk Code, start there for Code Analysis results.
+* [Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/) (Issues with **Mature** or **Proof of Concept** are more exploitable). By choosing this filter, you implicitly filter the results to Open Source only.
+* Fixable (if there’s a fix available by upgrading a package, it’s much faster to fix)
 * CVSS Score for Open Source Vulnerabilities
-* [Priority Score](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/priority-score) (The above values are used to calculate this score). One strategy is to eliminate the vulnerabilities with a score of 900-1000, and then move to vulnerabilities with a score of 800-900, and so on.
+* [Priority Score](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/priority-score) (Snyk uses the preceding values to calculate this score). One strategy is to eliminate the vulnerabilities with a score of 900-1000, and then move to vulnerabilities with a score of 800-900, and so on.
 
-Decide which metrics will be used when planning your fix strategy, and get specific with your timeline. If you choose to fix by severity, for example, estimate the time it will take to resolve a vulnerability per severity. It’s recommended to be specific with your fix strategy.&#x20;
+Decide which metrics to use when planning your fix strategy, and get specific with your timeline. If you choose to fix by severity, for example, estimate the time it takes to resolve a vulnerability per severity. Snyk recommends being specific with your fix strategy.&#x20;
 
 **Example**
 
-If there are fifty critical-severity issues and one hundred high-severity issues,  you may plan on two weeks to fix critical vulnerabilities and then four weeks to fix high-severity, based on the size of your team and workload.&#x20;
+If there are 50 critical-severity issues and 100 high-severity issues, you may plan on two weeks to fix critical vulnerabilities and then four weeks to fix high-severity, based on the size of your team and workload.&#x20;
 
 Alternatively, you can fix by issue type.
 
@@ -62,8 +62,8 @@ DevSecOps-led implementation, focusing on securing your custom images and enviro
 
 ## Targeted Vulnerabilities Campaigns
 
-As you operationalize security testing in your development process, another option for your fix strategy is to have campaigns to eliminate vulnerability types, for example, SQL injection. Using CWE in your search filters can be very useful in reporting to identify and log issues.
+As you operationalize security testing in your development process, another option for your fix strategy is to have campaigns to eliminate vulnerability types, for example, SQL injection. Using CWE in your search filters can be useful in reporting to identify and log issues.
 
 ## Update your timeline
 
-Once you have created your fix strategy, update the timeline for Phase 7.
+After you have created your fix strategy, update the timeline for Phase 7.

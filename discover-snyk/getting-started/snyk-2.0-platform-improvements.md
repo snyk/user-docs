@@ -2,7 +2,7 @@
 
 ## What is Snyk 2.0?
 
-Snyk 2.0 is a series of platform improvements rolling out gradually from April 2026 throughout the year to address navigation complexity, asset visibility, and triage inefficiency. As Snyk completes each component, users will gradually see Snyk platform interface updates. During the transition period, users can toggle between the new and classic interfaces.
+Snyk 2.0 is a series of platform improvements rolling out gradually from April 2026 throughout the year to address navigation complexity, asset visibility, and triage inefficiency. As Snyk completes each component, you gradually see Snyk platform interface updates. During the transition period, you can toggle between the new and classic interfaces.
 
 | Improvement      | Description                                                                                                                                                      | Availability              |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
@@ -10,7 +10,7 @@ Snyk 2.0 is a series of platform improvements rolling out gradually from April 2
 | Dark mode        | Full dark mode across the platform.                                                                                                                              | In development            |
 | Asset management | View all repositories, containers, configurations, and AI models in a single inventory.                                                                          | In development            |
 | Issue triage     | <p>Snyk prioritizes issues based on exploitability, reachability, and business impact.</p><p>Use bulk actions to fix similar issues across Snyk Projects.</p>    | In development            |
-| Day2Operations   | Snyk 2.0 rduces operational friction between finding a vulnerability and acting on it, through grouped navigation, issue deduplication, and bulk triage actions. | In development            |
+| Day2Operations   | Snyk 2.0 reduces operational friction between finding a vulnerability and acting on it, through grouped navigation, issue deduplication, and bulk triage actions. | In development            |
 
 ## What is Snyk 2.0 trying to solve?
 

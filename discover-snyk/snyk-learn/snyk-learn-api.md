@@ -6,7 +6,7 @@
 The Snyk Learn API endpoints are [Beta](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/rest-api/about-the-rest-api#versioning) endpoints.
 {% endhint %}
 
-The Snyk Learn API endpoints are part of the [Snyk REST API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/rest-api/about-the-rest-api) and allow for programmatic interaction with Snyk Learn.
+The Snyk Learn API endpoints are part of the [Snyk REST API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/rest-api/about-the-rest-api) and let you interact programmatically with Snyk Learn.
 
 The Snyk REST API requires authentication. For information about authentication, see [Authentication for API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api).
 

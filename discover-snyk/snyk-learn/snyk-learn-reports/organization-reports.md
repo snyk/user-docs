@@ -9,7 +9,7 @@ Snyk Learn organization reports are available only with Enterprise plans. For mo
 By default, only Snyk Org or Group admins can view and export reports. Group admins can create custom roles by using the standard Snyk workflow. Learn more about the access controls for reports at [Snyk Learn Access Controls](../snyk-learn-access-controls.md).
 
 {% hint style="info" %}
-Snyk Learn organization reports support Organizations with up to 5000 members.
+Snyk Learn organization reports support Organizations with up to 5,000 members.
 {% endhint %}
 
 ## Organization Overview report

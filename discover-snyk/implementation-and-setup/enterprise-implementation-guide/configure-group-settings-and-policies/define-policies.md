@@ -1,6 +1,6 @@
 # Define policies
 
-Policies define how Snyk behaves when identifying issues. Policies give you a quick and automated way to identify, prioritize, and triage issues. This saves valuable development time and allows developers to take more responsibility and ownership for security, reducing the “noise” level.
+Policies define how Snyk behaves when identifying issues. Policies give you an automated way to identify, prioritize, and triage issues. This saves development time and lets developers take more responsibility and ownership for security, reducing the “noise” level.
 
 ## Security policies
 
@@ -8,10 +8,10 @@ Policies define how Snyk behaves when identifying issues. Policies give you a qu
 **Key decision:** Decide which conditions automatically increase or decrease the priority or severity of an issue to match your risk appetite, and which specific issues or types of issues are automatically ignored to reduce "noise" and save development time.
 {% endhint %}
 
-Group administrators can define security policies, thus providing an automated way to identify certain issues or types of issues, and apply actions like changing the severity or ignoring the issue based on your conditions.
+Group administrators can define security policies, providing an automated way to identify certain issues or types of issues, and apply actions like changing the severity or ignoring the issue based on your conditions.
 
 * Configure policies to increase priority or decrease it as needed.
-* Create ignores where needed
+* Create ignores where needed.
 
 ## License policies <a href="#license-policies" id="license-policies"></a>
 
@@ -24,14 +24,14 @@ Group administrators can set license policies to define Snyk behavior for treati
 By default, Snyk determines the severity of licenses as follows:
 
 * **High severity**: licenses that definitely present issues for commercial software.
-* **Medium severity**: licenses that have clauses that may be of concern and should be reviewed.
+* **Medium severity**: licenses that have clauses that may be of concern and that you should review.
 
 Configure policies to match your requirements.
 
 ## Asset policies <a href="#asset-policies" id="asset-policies"></a>
 
 {% hint style="success" %}
-**Key decision:** Decide how to automate the governance, tracking, and remediation workflows for your assets to ensure continuous security visibility and compliance
+**Key decision:** Decide how to automate the governance, tracking, and remediation workflows for your assets to ensure continuous security visibility and compliance.
 {% endhint %}
 
 Asset policies in Snyk Essentials automate business context and notification workflows. Use policies to identify coverage gaps and manage assets at scale.
@@ -42,7 +42,7 @@ Asset policies in Snyk Essentials automate business context and notification wor
 
 A policy consists of the following elements:
 
-* Filters: Define criteria (for example tags or asset names) to group specific assets.
+* Filters: Define criteria (for example, tags or asset names) to group specific assets.
 * Actions: Define what happens to filtered assets, for example, assigning a classification or sending a Slack notification.
 
 ### Key filter types

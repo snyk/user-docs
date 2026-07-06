@@ -1,6 +1,6 @@
 # Gain visibility by importing repositories
 
-Gaining visibility over your Organization security begins with importing Projects. This process allows Snyk to monitor your code, dependencies, containers, and infrastructure.
+Gaining visibility over your Organization security begins with importing Projects. This process lets Snyk monitor your code, dependencies, containers, and infrastructure.
 
 There are several ways you can import Projects, depending on your tech stack and package managers:
 
@@ -63,11 +63,11 @@ Use the API to trigger scans and handle results programmatically across a large 
 
 ## Add Projects tags and attributes
 
-After importing Projects, use Project attributes and tags to categorize your data. This metadata allows you to filter and report on specific subsets of your Organization.
+After importing Projects, use Project attributes and tags to categorize your data. This metadata lets you filter and report on specific subsets of your Organization.
 
 For example, apply the `frontend` attribute and a `Team:Unicorn` tag to your Projects. You can then generate a report specifically for critical frontend vulnerabilities in production owned by Team Unicorn.
 
-Attributes and tags also allow you to:
+Attributes and tags also let you:
 
 * Group related Projects for easier management.
 * Customize how you view and access Project data.

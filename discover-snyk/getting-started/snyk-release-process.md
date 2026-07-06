@@ -40,7 +40,7 @@ Brownouts occur when Snyk temporarily suspends an API endpoint or a feature, mak
 
 ### Deprecated features
 
-Deprecated features are outdated and will be removed in the future. The documentation page will announce the transition of a feature to Deprecated six months before its start date.
+Deprecated features are outdated and Snyk removes them in the future. The documentation page announces the transition of a feature to Deprecated six months before its start date.
 
 * Snyk Code Quality is deprecated.
 * Snyk Code Local Engine is deprecated.
@@ -73,9 +73,9 @@ Deprecated features are outdated and will be removed in the future. The document
 
 ### End of support features
 
-When a feature transitions to end-of-support, both development and support work are terminated.
+When a feature transitions to end-of-support, Snyk terminates both development and support work.
 
-The documentation page will announce the transition of a feature to End of Support six months before its start date.
+The documentation page announces the transition of a feature to End of Support six months before its start date.
 
 ### End of Life features
 

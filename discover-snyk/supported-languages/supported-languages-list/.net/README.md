@@ -31,7 +31,7 @@ For .NET with Snyk Code, the following frameworks and libraries are supported:
 
 ### Supported file formats
 
-* For C#, Snyk supports the `.aspx` & `.cs` file formats.
+* For C#, Snyk supports the `.aspx` and `.cs` file formats.
 * For VB.NET, Snyk supports the `.vb` file format.
 
 ### Available features
@@ -103,7 +103,7 @@ To include developer dependencies in NuGet SCM imports, navigate to **Settings**
 
 When scanning through an SCM integration, the methodology varies based on your Project format:
 
-* Modern Projects (SDK-style): For modern `.csproj` formats, the scanner utilises the .NET SDK directly to resolve dependencies, resulting in higher accuracy. This also provides the capability of scanning any Project that can be successfully restored by the `dotnet` SDK itself including `Directory.Build.props` files, `global.json`, or Central Package Management (`Directory.Packages.props`).
+* Modern Projects (SDK-style): For modern `.csproj` formats, the scanner uses the .NET SDK directly to resolve dependencies, resulting in higher accuracy. This also provides the capability of scanning any Project that can be successfully restored by the `dotnet` SDK itself including `Directory.Build.props` files, `global.json`, or Central Package Management (`Directory.Packages.props`).
 * Legacy Projects (Non-SDK style): For Projects relying on `packages.config`, `project.json`, or XML-style `*.csproj` , `*.vbproj` or `*.fproj` files. The scanner uses static analysis to approximate the dependency graph based on standard NuGet algorithms.
 
 To improve accuracy, migrate to the [Universal Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker) and [enable](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/universal-broker/basic-steps-to-install-and-configure-universal-broker#enabling-the-universal-broker-for-enhanced-sca-scanning) it for Open Source Scanning.
@@ -116,7 +116,7 @@ By default, Microsoft enables the `RestoreEnablePackagePruning` property for the
 
 Snyk respects your Project configuration. If you set `RestoreEnablePackagePruning` to `false` in your Project file or `Directory.Build.props`, Snyk does not prune these references during the scan.
 
-For Projects targeting .NET 10.0 and later, Snyk SCM and CLI scanners align with the default Microsoft build behaviour.
+For Projects targeting .NET 10.0 and later, Snyk SCM and CLI scanners align with the default Microsoft build behavior.
 
 By default, Microsoft enables the `RestoreEnablePackagePruning` property for these target frameworks. This setting prunes framework-provided package references during the restore operation.
 

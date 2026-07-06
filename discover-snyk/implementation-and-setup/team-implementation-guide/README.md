@@ -9,7 +9,7 @@ We start with the awareness that most businesses:
 
 ## **Typical timelines**
 
-Once your Snyk Organization is set up, you can immediately start gaining visibility into your code by integrating your code repositories (with PR checks disabled), CI/CD pipelines, or container registries.
+After you set up your Snyk Organization, you can immediately start gaining visibility into your code by integrating your code repositories (with PR checks disabled), CI/CD pipelines, or container registries.
 
 To minimize disruption, Snyk recommends a gradual rollout of your "shift left" security strategy, focusing on backlog remediation and prevention. Key recommendations include providing developers with access to the IDE and piloting on a single Project before expanding best practices to the wider team.
 
@@ -35,15 +35,15 @@ This visibility helps build trust while rolling out Snyk. With the Team plan, th
 
 ### Achieve prevention and drive developer adoption
 
-Next is the prevention stage. You should stop new security issues from being added to your applications. During this stage, you can put controls in place to allow developers to see issues in their pipelines using Pull Request (PR)/Merge Request (MR) checks, and checks in the pipeline that may block.
+Next is the prevention stage. Stop new security issues from being added to your applications. During this stage, you can put controls in place to let developers see issues in their pipelines using Pull Request (PR)/Merge Request (MR) checks, and checks in the pipeline that can block.
 
-As part of this, developers may use IDE plugins and other tools like [Snyk Advisor](https://snyk.io/advisor) to select secure packages and [Snyk Learn](https://learn.snyk.io/) to educate on secure coding, security, and the product. It's quite common to see developers download and use IDE plugins. Provide guides indicating the settings they should use and guidelines on what they should fix to start often Criticals and Highs, where fixes are available.
+As part of this, developers can use IDE plugins and other tools like [Snyk Advisor](https://snyk.io/advisor) to select secure packages and [Snyk Learn](https://learn.snyk.io/) to educate on secure coding, security, and the product. Developers commonly download and use IDE plugins. Provide guides indicating the settings they should use and guidelines on what to fix to start, often Criticals and Highs, where fixes are available.
 
 ### Fix the backlog and triage issues
 
 Finally, you can focus on fixing your backlog of security issues. This can take several forms:
 
-* As part of the initial rollout, security or initial stakeholder may triage the initial results for the existing portfolio, create tickets for priority items to investigate or address, or have the teams do that for their applications as part of the weekly triage process.
+* As part of the initial rollout, security or initial stakeholders can triage the initial results for the existing portfolio, create tickets for priority items to investigate or address, or have the teams do that for their applications as part of the weekly triage process.
 * After gaining visibility and achieving prevention, you can review your backlog of issues. For example, a weekly triage process with the key stakeholders can guide the teams on what to address.
 
 ## Use enhanced resources with Snyk

@@ -6,7 +6,7 @@ After your teams understand the vulnerabilities in their applications and develo
 
 ## No import requirement
 
-A benefit of adding tests to your pipeline is that you do not need to import the repository to Snyk using the source control integration (which is required for Snyk PR Checks). It can also be used as an additional gate, even if you are testing PRs, to further decrease the chance of new vulnerabilities entering your production builds.
+A benefit of adding tests to your pipeline is that you do not need to import the repository to Snyk using the source control integration (which Snyk PR Checks require). You can also use it as an additional gate, even if you are testing PRs, to further decrease the chance of new vulnerabilities entering your production builds.
 
 ## Pipeline options
 
@@ -15,7 +15,7 @@ When adding Snyk to a build pipeline, there are common options:
 * Using the specific [pipeline integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations) for your tool.
 * Using the [Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli) and running the specific commands directly.
 
-Each option has benefits - using an existing pipeline integration may be faster and easier to configure, but using the Snyk CLI will give you a greater range of options and flexibility in your "fail" criteria.
+Each option has benefits — using an existing pipeline integration may be faster to configure, but using the Snyk CLI gives you a greater range of options and flexibility in your "fail" criteria.
 
 ## Pipeline test filters
 
@@ -23,7 +23,7 @@ When running a test in your pipeline, there are filters available to determine w
 
 ## CLI supporting tools
 
-If you use the Snyk CLI in your pipeline, a range of supporting [Snyk Tools](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/snyk-tools) provide additional functionality, including [`snyk-filter`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter), which can be used for more complex "fail" criteria, such as “fail if more than three High severity vulnerabilities are found”.
+If you use the Snyk CLI in your pipeline, a range of supporting [Snyk Tools](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/snyk-tools) provide additional functionality, including [`snyk-filter`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter), which you can use for more complex "fail" criteria, such as “fail if more than three High severity vulnerabilities are found”.
 
 ## Also see
 

@@ -1,12 +1,12 @@
 # Trial limitations
 
-You can try out Snyk functionalities in several ways:
+You can try out Snyk functionality in several ways:
 
 * Using the limited Free plan
 * Using a self-serve 14-day trial
-* By piloting the full product with the Enterprise plan
+* Piloting the full product with the Enterprise plan
 
-The Snyk 14-day trial offers a sample of the features available in the paid Enterprise plan. However, certain features will have limited functionality or be entirely unavailable in order to provide a seamless experience when the trial concludes.
+The Snyk 14-day trial offers a sample of the features available in the paid Enterprise plan. However, certain features have limited functionality or are entirely unavailable to provide a smooth experience when the trial concludes.
 
 {% hint style="info" %}
 After implementing Snyk Essentials, you must access the Inventory page to ensure it is populated with all the necessary information. Depending on the number of repositories you have imported, the update may take up to several hours.

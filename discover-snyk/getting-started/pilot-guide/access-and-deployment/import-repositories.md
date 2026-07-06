@@ -2,7 +2,7 @@
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
-After setting up your SCM integration, you are ready to import repositories to Snyk. If you have not imported any repos yet, click on the **Import projects** button to start.
+After setting up your SCM integration, you are ready to import repositories to Snyk. If you have not imported any repos yet, click **Import projects** to start.
 
 * Open the Snyk Web UI
 * Navigate to the Organization-level
