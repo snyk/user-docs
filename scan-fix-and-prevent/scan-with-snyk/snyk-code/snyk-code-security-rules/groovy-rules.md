@@ -13,18 +13,18 @@ Each rule includes the following information.
 
 | Rule name                                                   | CWE(s)           | Security categories    | Autofixable |
 | ----------------------------------------------------------- | ---------------- | ---------------------- | ----------- |
-| Code Injection                                              | CWE-94           | OWASP:A03              | No          |
-| Command Injection                                           | CWE-78           | Sans Top 25, OWASP:A03 | No          |
-| Deserialization of Untrusted Data                           | CWE-502          | OWASP:A08              | No          |
-| Hardcoded Secret                                            | CWE-547          | OWASP:A05              | No          |
-| Open Redirect                                               | CWE-601          | OWASP:A01              | No          |
-| Path Traversal                                              | CWE-23           | OWASP:A01              | No          |
-| SQL Injection                                               | CWE-89           | Sans Top 25, OWASP:A03 | No          |
-| Server-Side Request Forgery (SSRF)                          | CWE-918          | Sans Top 25, OWASP:A10 | No          |
-| Use of Hardcoded Passwords                                  | CWE-798, CWE-259 | Sans Top 25, OWASP:A07 | No          |
-| Use of Hardcoded, Security-relevant Constants               | CWE-547          | OWASP:A05              | No          |
-| XML External Entity (XXE) Injection                         | CWE-611          | OWASP:A05              | No          |
-| Inadequate Padding for AES encryption                       | CWE-326          | OWASP:A02              | No          |
-| Use of a Broken or Risky Cryptographic Algorithm            | CWE-327          | OWASP:A02              | No          |
-| Use of Password Hash With Insufficient Computational Effort | CWE-916          | OWASP:A02              | No          |
-| Improper Certificate Validation                             | CWE-295          | OWASP:A07              | No          |
+| Code Injection                                              | CWE-94           | OWASP:A03              | Yes         |
+| Command Injection                                           | CWE-78           | Sans Top 25, OWASP:A03 | Yes         |
+| Deserialization of Untrusted Data                           | CWE-502          | OWASP:A08              | Yes         |
+| Hardcoded Secret                                            | CWE-547          | OWASP:A05              | Yes         |
+| Open Redirect                                               | CWE-601          | OWASP:A01              | Yes         |
+| Path Traversal                                              | CWE-23           | OWASP:A01              | Yes         |
+| SQL Injection                                               | CWE-89           | Sans Top 25, OWASP:A03 | Yes         |
+| Server-Side Request Forgery (SSRF)                          | CWE-918          | Sans Top 25, OWASP:A10 | Yes         |
+| Use of Hardcoded Passwords                                  | CWE-798, CWE-259 | Sans Top 25, OWASP:A07 | Yes         |
+| Use of Hardcoded, Security-relevant Constants               | CWE-547          | OWASP:A05              | Yes         |
+| XML External Entity (XXE) Injection                         | CWE-611          | OWASP:A05              | Yes         |
+| Inadequate Padding for AES encryption                       | CWE-326          | OWASP:A02              | Yes         |
+| Use of a Broken or Risky Cryptographic Algorithm            | CWE-327          | OWASP:A02              | Yes         |
+| Use of Password Hash With Insufficient Computational Effort | CWE-916          | OWASP:A02              | Yes         |
+| Improper Certificate Validation                             | CWE-295          | OWASP:A07              | Yes         |
