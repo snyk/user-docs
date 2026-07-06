@@ -1,6 +1,6 @@
 # Snyk Language Server
 
-Snyk offers IDE integrations that allow you to use the functionality of Snyk in your Integrated Development Environment or Editor. This page describes the Snyk Language Server that can provide diagnostics for any IDE or Editor that supports the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/). For information about all of the IDE plugins and extensions and their use, see [Snyk IDE plugins and extensions](../).
+Snyk offers IDE integrations that let you use the functionality of Snyk in your Integrated Development Environment or Editor. This page describes the Snyk Language Server that can provide diagnostics for any IDE or Editor that supports the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/). For information about all of the IDE plugins and extensions and their use, see [Snyk IDE plugins and extensions](../).
 
 The Snyk Language Server scans for vulnerabilities, open-source license issues, and infrastructure misconfigurations and returns results with security issues categorized by issue type and severity.
 
@@ -31,9 +31,9 @@ You can use the Language Server in the following environments:
 
 ## Where you can download the Language Server (Snyk CLI)
 
-Snyk Language Server is nowadays included in the Snyk CLI. The CLI is automatically downloaded only when you use the Snyk IDE plugins.
+Snyk Language Server is now included in the Snyk CLI. Snyk downloads the CLI automatically only when you use the Snyk IDE plugins.
 
-Please refer to [snyk-cli](../../snyk-cli/ "mention") for installation and manual download instructions.
+Refer to [snyk-cli](../../snyk-cli/ "mention") for installation and manual download instructions.
 
 ## Usage of Snyk Language Server
 
@@ -91,7 +91,7 @@ For all .NET Projects, Snyk recommends adding the `--all-projects` additional pa
 
 ## **Authentication for Snyk Language Server**
 
-When Snyk Language Server starts, it checks for a token in the initializationOption `token`. If a token is not there, Snyk Language Server tries to retrieve and authenticate.. If the CLI is not authenticated either, Snyk Language Server opens a browser window to authenticate. After successful authentication in the web browser, Snyk Language Server, in case of OAuth2 or API token authentication methods, automatically retrieves the Snyk authentication token from the CLI, but only for the session.
+When Snyk Language Server starts, it checks for a token in the initializationOption `token`. If a token is not there, Snyk Language Server tries to retrieve and authenticate. If the CLI is not authenticated either, Snyk Language Server opens a browser window to authenticate. After successful authentication in the web browser, Snyk Language Server, in case of OAuth2 or API token authentication methods, automatically retrieves the Snyk authentication token from the CLI, but only for the session.
 
 ## **Environment variables for Snyk Language Server**
 
@@ -112,14 +112,14 @@ given config file via -c flag
 $HOME/.snyk.env
 ```
 
-Any lines that contain an environment variable in the format `VARIABLENAME=VARIABLEVALUE` are added automatically to the environment if not already there. This adheres to the `dotenv` format. In the case of `.profile`, `.zshrc`and so on, if a variable is directly exported, for example, via `export VARIABLENAME=VARIABLEVALUE`, it is not loaded. The export would need to be split of and be in its own line, for example
+Any lines that contain an environment variable in the format `VARIABLENAME=VARIABLEVALUE` are added automatically to the environment if not already there. This adheres to the `dotenv` format. In the case of `.profile`, `.zshrc`and so on, if a variable is directly exported, for example, via `export VARIABLENAME=VARIABLEVALUE`, it is not loaded. The export would need to be split off and be in its own line, for example
 
 ```bash
 VARIABLENAME=VARIABLEVALUE
 export VARIABLENAME
 ```
 
-The PATH variable is treated differently frrom all other variables, as it is an aggregate of all PATH variables found in the files and in the environment. Also, the current working directory `.` is automatically added to the path, so a download of the Snyk CLI into the current working directory by an LSP client would yield a found Snyk CLI for the Language Server.
+The PATH variable is treated differently from all other variables, as it is an aggregate of all PATH variables found in the files and in the environment. Also, the current working directory `.` is automatically added to the path, so a download of the Snyk CLI into the current working directory by an LSP client would yield a found Snyk CLI for the Language Server.
 
 In addition to configuring variables via config files, Snyk Language Server adds the following directories to the path on Linux and macOS:
 
@@ -150,7 +150,7 @@ The trust feature is enabled by default. When a folder is trusted, all sub-folde
 
 Trust dialogs can be disabled by setting `enableTrustedFoldersFeature` to `false` in the initialization options. This disables all trust prompts and checks.
 
-An initial set of trusted folders can be provided by setting `trustedFolders` to an array of paths in the `initializationOptions`. These folders will be trusted on startup and will not prompt the user to trust them.
+You can provide an initial set of trusted folders by setting `trustedFolders` to an array of paths in the `initializationOptions`. Snyk trusts these folders on startup and does not prompt the user to trust them.
 
 ## Telemetry
 
@@ -158,10 +158,8 @@ Snyk collects telemetry from IDE plugins and CLI. For details, see [IDE and CLI 
 
 ## Support policy for Snyk Language Server
 
-Snyk supports the latest 12 months of LS versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or troubleshooting.
+Snyk supports the latest 12 months of LS versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and do not receive bug fixes or troubleshooting.
 
 Snyk only provides fixes in new versions and cannot fix older versions. Customers must upgrade to benefit from improvements.
-
-This policy fosters innovation while optimizing resources.
 
 If you need help, submit a [request](https://support.snyk.io) to Snyk Support.

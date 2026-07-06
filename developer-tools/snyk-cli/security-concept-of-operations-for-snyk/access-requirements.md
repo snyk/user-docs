@@ -4,7 +4,7 @@ When you are using Snyk applications like the [CLI ](../getting-started-with-the
 
 ## Local filesystem
 
-The required filesystem access may vary by product.
+The required filesystem access varies by product.
 
 * CACHE\_PATH (Read,Write,Execute)
   * Windows: `C:\\Users\\<USERNAME>\\AppData\\Local\\snyk`
@@ -23,7 +23,7 @@ The required filesystem access may vary by product.
 * app.\<SNYK\_INSTANCE>.io:443
 * 127.0.0.1:\<EPHEMERAL\_PORT\_RANGE>
   * required for Inter Process Communication
-  * [Ephemeral Port Range](https://www.rfc-editor.org/rfc/rfc6335.html#section-6) might vary by Operating System and Settings
+  * the [Ephemeral Port Range](https://www.rfc-editor.org/rfc/rfc6335.html#section-6) can vary by operating system and settings
 
 ### Optional
 

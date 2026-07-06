@@ -10,7 +10,7 @@ The Snyk CLI can be installed across all major operating systems using several d
 After you install the CLI, authenticate your Snyk account to start scanning your Snyk Projects. For more information, visit [Authenticate to use the CLI](../authenticate-to-use-the-cli.md).
 
 {% hint style="warning" %}
-The Snyk CLI does not natively support Windows Subsystem for Linux (WSL). You can install and use the CLI in a WSL environment, but Snyk does not guarantee compatability. Consequently, Snyk integrations that rely on the CLI, such as IDE extensions and CI/CD plugins, do not natively support WSL.
+The Snyk CLI does not natively support Windows Subsystem for Linux (WSL). You can install and use the CLI in a WSL environment, but Snyk does not guarantee compatibility. Consequently, Snyk integrations that rely on the CLI, such as IDE extensions and CI/CD plugins, do not natively support WSL.
 {% endhint %}
 
 ## Common installation steps
@@ -146,7 +146,7 @@ Authenticate the connection. For more details, visit Authentication in Docker.
 
 <summary>GitHub actions</summary>
 
-1. In your Snyk account, navigate to **Account Settings** and copy your Auth token. Use a Service Account Token if you are an Enterprise plan user, to protect your pipeline from breaking if you as an individual leave the comapny.
+1. In your Snyk account, navigate to **Account Settings** and copy your Auth token. Use a Service Account Token if you are an Enterprise plan user, to protect your pipeline from breaking if you as an individual leave the company.
 2. Navigate to **Settings** > **Secrets and variables** > **Actions**, and create a **New repository secret** in the format:
    1. **Name**: `SNYK_TOKEN`
    2. **Secret**: Your Snyk Auth token or Service Account Token
@@ -263,11 +263,11 @@ Download the standalone binary for your operating system and CPU architecture, m
 For Windows, download the `.exe` and manually add its location to your system variables.
 
 1. Download [snyk-win.exe](https://static.snyk.io/cli/latest/snyk-win.exe)
-2. Rename the file from `snyk-win.exe` to just `snyk.exe`.
+2. Rename the file from `snyk-win.exe` to `snyk.exe`.
 3. Move it to a permanent folder (for example, `C:\tools\snyk\`).
 4. Add to `PATH`:
    1. Search for **Environment Variables** in your Start Menu.
    2. Under **System Variables**, find **Path** and click **Edit**.
-   3. Add the path to the folder where you saved the `.exe` (e.g., `C:\tools\snyk\`).
+   3. Add the path to the folder where you saved the `.exe` (for example, `C:\tools\snyk\`).
 
 </details>

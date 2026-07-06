@@ -1,14 +1,14 @@
 # Eclipse plugin
 
-## **Scan early, fix as you develop: elevate your security posture**
+## **Scan early, fix as you develop**
 
-Integrating security checks early in your development lifecycle helps you pass security reviews seamlessly and avoid expensive fixes down the line.
+Integrating security checks early in your development lifecycle helps you pass security reviews and avoid expensive fixes later.
 
-The Snyk Eclipse extension allows you to analyze your code, open-source dependencies, and Infrastructure as Code (IaC) configurations. With actionable insights directly in your IDE, you can address issues as they arise.
+The Snyk Eclipse extension lets you analyze your code, open-source dependencies, and Infrastructure as Code (IaC) configurations. With actionable insights directly in your IDE, you can address issues as they arise.
 
 Key features:
 
-* In-line issue highlighting: Security issues are flagged directly within your code, categorized by type and severity for quick identification and resolution.
+* In-line issue highlighting: Snyk flags security issues directly within your code, categorized by type and severity for quick identification and resolution.
 * Comprehensive scanning: The extension scans for a wide range of security issues, including:
   * [Open Source Security](https://snyk.io/product/open-source-security-management/): Detects vulnerabilities and license issues in both direct and transitive open-source dependencies. Automated fix suggestions simplify remediation. Explore more in the [Snyk Open Source documentation](https://docs.snyk.io/scan-using-snyk/snyk-open-source).
   * [Code Security](https://snyk.io/product/snyk-code/): Identifies security vulnerabilities in your custom code. Explore more in the [Snyk Code documentation](https://docs.snyk.io/scan-using-snyk/snyk-code).

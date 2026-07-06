@@ -79,7 +79,7 @@ Example of setting to the latest Git tag:
 
 Set or override the remote URL for the repository.
 
-Example: `--remote-repo-url=https://gitlab.com/example/project` will create a target for given URL and on the UI it would be visible as `/example/project/` .
+Example: `--remote-repo-url=https://gitlab.com/example/project` creates a target for the given URL, which is visible in the UI as `/example/project/`.
 
 ### `--org=<ORG_ID>`
 

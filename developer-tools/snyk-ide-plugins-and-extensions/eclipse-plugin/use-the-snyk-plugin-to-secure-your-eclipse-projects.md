@@ -1,6 +1,6 @@
 # Use the Snyk plugin to secure your Eclipse projects
 
-After the Eclipse plugin is downloaded and authentication is complete, the plugin starts the workspace scan. You may notice a confirmation that a workspace scan is starting. Alternatively, you can trigger a workspace scan from the context menu of your Project, or from the Snyk View.
+After the Eclipse plugin is downloaded and authentication is complete, the plugin starts the workspace scan. You might notice a confirmation that a workspace scan is starting. Alternatively, you can trigger a workspace scan from the context menu of your Project, or from the Snyk View.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-10-19 at 09.02.25.png" alt=""><figcaption><p>Starting workspace scan</p></figcaption></figure>
 
@@ -22,7 +22,7 @@ To hide low-severity issues, navigate to **View** > **Severity** and clear **Low
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-12-22 at 15.55.35.png" alt=""><figcaption><p>Severity filters in the View menu</p></figcaption></figure>
 
-## Issue View Options
+## Issue view options
 
 [Code Consistent Ignores](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code) filters issues to help teams focus on critical tasks. After you create an ignore, Snyk applies it to all tests and branches.
 
@@ -36,7 +36,7 @@ These filters do not apply if you disable **Code Consistent Ignores** for the Or
 
 Starting with version 3.1.0, it is possible to see only newly introduced issues.
 
-This functionality reduces noise and allows you to focus only on current changes. This helps prevent issues early, thus unblocking your CI/CD pipeline and speeding up your deliveries.
+This functionality reduces noise and lets you focus only on current changes. This helps prevent issues early, so it unblocks your CI/CD pipeline and speeds up your deliveries.
 
 The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
@@ -46,13 +46,13 @@ To apply the filter and see only the new issues, use the **total**/**new** toggl
 
 <figure><img src="../../.gitbook/assets/image (234).png" alt=""><figcaption><p>Activate Net new issues in the dot menu of the Snyk View</p></figcaption></figure>
 
-For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as illustrated in the screen image that follows:
+For newly created feature branches, there are no reported issues. That is an intended state that developers aim for, as illustrated in the screen image that follows:
 
 <figure><img src="../../.gitbook/assets/image (269).png" alt=""><figcaption><p>No new issues introduced in a newly created branch</p></figcaption></figure>
 
 The base branch is usually automatically determined for each Git repository.
 
-You may change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
+You can change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
 
 1. Toggle the **total**/**new** filter in the summary panel.
 2. Click on the top-level node in the Issues tree to change the branch or directory.

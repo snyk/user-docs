@@ -1,8 +1,8 @@
 # CircleCI integration using a Snyk Orb
 
-Snyk integrates with [CircleCI](https://circleci.com) using a Snyk Orb, seamlessly scanning your application dependencies and Docker images for open-source security vulnerabilities as part of the CI/CD workflow.
+Snyk integrates with [CircleCI](https://circleci.com) using a Snyk Orb, scanning your application dependencies and Docker images for open-source security vulnerabilities as part of the CI/CD workflow.
 
-CircleCI enables users to easily create CI/CD workflows using a group of ready-to-use commands ([Orbs](https://circleci.com/orbs/)) that can be added to your configuration file.
+CircleCI lets you create CI/CD workflows using a group of ready-to-use commands ([Orbs](https://circleci.com/orbs/)) that you can add to your configuration file.
 
 With the Snyk Orb, you can quickly add Snyk scanning to your CI/CD to test and monitor for open-source vulnerabilities based on your configurations. Results are then displayed on the CircleCI output view and can also be monitored on [snyk.io](http://app.snyk.io).
 
@@ -32,7 +32,7 @@ Optionally, if the build completes successfully and **MONITOR** is set to **True
 
 1. Create a Snyk account and retrieve the **Snyk API token** from your **Account settings**.
 2. Import the relevant repository into CircleCI.
-3. Go to `Settings -> Security -> Orb security settings` and ensure you allow `opt-in to third party Orbs`.
+3. Navigate to `Settings -> Security -> Orb security settings` and ensure you allow `opt-in to third party Orbs`.
 4. Ensure your configuration (`config.yml`) file follows version 2.1.
 5. Add the required environment variables to CircleCI, including the Snyk PAT or API token as `SNYK_TOKEN`.
 

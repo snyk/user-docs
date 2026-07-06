@@ -1,12 +1,12 @@
 # IaC ignores using the .snyk policy file
 
-When you scan IaC configuration files using the Snyk CLI `iac test` command, you can ignore issues that are not relevant to you by using the [`.snyk` policy file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file). Snyk recommends that you store and version the `.snyk` file in the root of the working directory where you store your IaC configuration files. This file can be created with the `snyk ignore` command. For details see [Ignore vulnerabilities using Snyk CLI](../ignore-vulnerabilities-using-the-snyk-cli.md).
+When you scan IaC configuration files using the Snyk CLI `iac test` command, you can ignore issues that are not relevant to you by using the [`.snyk` policy file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file). Snyk recommends that you store and version the `.snyk` file in the root of the working directory where you store your IaC configuration files. You can create this file with the `snyk ignore` command. For details see [Ignore vulnerabilities using Snyk CLI](../ignore-vulnerabilities-using-the-snyk-cli.md).
 
 ## Ignore paths
 
 For tests run using the Snyk CLI, only issues defined in the `.snyk` file are ignored.
 
-For tests run from imported Git repositories, issues can be ignored in the Snyk UI. Note that these ignores apply only to scans done using the Snyk UI.
+For tests run from imported Git repositories, you can ignore issues in the Snyk Web UI. Note that these ignores apply only to scans done using the Snyk Web UI.
 
 {% hint style="warning" %}
 Ignores in the `.snyk` file and ignores created in the Snyk UI are not synchronized.
@@ -73,7 +73,7 @@ For more information about the Snyk CLI ignore command, see [Ignore vulnerabilit
 
 ## Ignore instances of a vulnerability
 
-Individual instances of a vulnerability within a file can be ignored. To do this, take the “resource path” from the output of `snyk iac test`, and add it to the file path.
+You can ignore individual instances of a vulnerability within a file. To do this, take the “resource path” from the output of `snyk iac test`, and add it to the file path.
 
 For example, from the following output snippet (line break added for ease of reading):
 
@@ -113,6 +113,6 @@ When you run `snyk iac test`, the CLI loads `$PWD/.snyk`. One common pattern is 
 
 The CLI accepts an option, `--policy-path=...`, which overrides the location of `.snyk` policy files. The path can either be a directory containing a file named `.snyk` or the path to a file named `.snyk`. The name of the policy file must be `.snyk`.
 
-Policies are not loaded automatically when the argument to `snyk iac test` is a file rather than a directory. In this case, `--policy-path` must be specified in order to load policies.
+Policies are not loaded automatically when the argument to `snyk iac test` is a file rather than a directory. In this case, you must specify `--policy-path` to load policies.
 
 The CLI accepts the option `--ignore-policy`, which causes any `.snyk` policy files that are found to be ignored.

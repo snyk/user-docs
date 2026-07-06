@@ -1,7 +1,7 @@
 # Snyk Python-3.6 action
 
 {% hint style="warning" %}
-This image has been removed on 12 Aug 2024. It is highly recommended that users consider migrating to a newer action to ensure continued support and up-to-date functionality. If you are currently using this image, plan an upgrade as soon as possible to avoid any disruptions in your workflow post this date.
+This image was removed on 12 Aug 2024. Migrate to a newer action to ensure continued support and up-to-date functionality. If you are using this image, plan an upgrade as soon as possible to avoid disruptions in your workflow after this date.
 {% endhint %}
 
 This page provides examples of using the Snyk GitHub action for [Python (3.6)](https://github.com/snyk/actions/tree/master/python-3.6). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
@@ -18,7 +18,7 @@ The Python image checks and installs dependencies only if the manifest files are
 * If pipenv is present on the current path, and Snyk finds a `Pipfile` without a `Pipfile.lock`, then Snyk runs `pipenv update`.
 * If `pyproject.toml` is present in the current path and Snyk does not find `poetry.lock` then Snyk runs `pip install poetry`.
 
-If manifest files are present under any location other root then they must be installed prior to running Snyk.
+If manifest files are present under any location other than the root, you must install them before running Snyk.
 
 You can use the Snyk Python (3.6) action to check for vulnerabilities as follows:
 

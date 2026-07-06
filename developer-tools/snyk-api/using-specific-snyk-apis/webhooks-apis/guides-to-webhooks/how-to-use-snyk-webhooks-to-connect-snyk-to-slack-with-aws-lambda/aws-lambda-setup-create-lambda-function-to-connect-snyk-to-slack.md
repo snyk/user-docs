@@ -1,8 +1,8 @@
 # AWS Lambda setup: create Lambda function to connect Snyk to Slack
 
-AWS Lambda functions are used to connect Snyk to Slack because these functions are an inexpensive and efficient way of running code triggered by events, for example when there is a new Snyk vulnerability.
+AWS Lambda functions connect Snyk to Slack because these functions are an inexpensive and efficient way of running code triggered by events, for example when there is a new Snyk vulnerability.
 
-**Note:** If publishing the Lambda function through API Gateway, both must be configured in the same region. You can check this on the top right of the AWS Console.
+**Note:** If publishing the Lambda function through API Gateway, you must configure both in the same region. You can check this in the AWS Console.
 
 Start by creating a zip file containing the code for the function and the necessary dependencies.
 
@@ -194,7 +194,7 @@ Start by creating a zip file containing the code for the function and the necess
 
 To create an AWS Lambda function, follow these steps:
 
-1. Go to the AWS Console.
+1. Navigate to the AWS Console.
 2. Navigate to Lambda.
 3. Click **Create function**.
 4. Choose **Node.js 16.x** for the **Runtime**.
@@ -208,4 +208,4 @@ To create an AWS Lambda function, follow these steps:
 
     <figure><img src="https://lh3.googleusercontent.com/97qnO6V9xBXaf6dyO0hg41Y2vmeB1-0aPK-qskqTI-L2WII3d75zb4XsK6Mg5ljJUEdS7AGYJ5sQ5IoDHvzofkfK_gPId9e-XuBqEGkuWNxlIyL4IHu7-S8hrbGKnuyOehU2fjScDi0jazvuhWkADyFDGkkdAdzQGSEfWO30YGPJ9x4ocfwFXS5LfQ" alt=""><figcaption><p>AWS code source display</p></figcaption></figure>
 10. In the code, modify the `slackWebhookUrl` to match your Slack webhook URL.
-11. For more information on the script you have pasted, go to [Configure the AWS Lambda Script](configure-the-aws-lambda-script.md).
+11. For more information about the script you have pasted, see [Configure the AWS Lambda Script](configure-the-aws-lambda-script.md).

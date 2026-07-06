@@ -5,14 +5,14 @@ Snyk recommends using the [CLI ](../snyk-cli/)for CI/CD integrations for the fol
 
 * You have the flexibility to test in-progress features of the CLI by using the [preview channel](../snyk-cli/releases-and-channels-for-the-snyk-cli.md#preview).
 * The CLI provides feature-rich [stable releases](../snyk-cli/releases-and-channels-for-the-snyk-cli.md#stable) at a regular cadence.
-* With the CLI, you have options to [extend use cases](../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/) as you deploy Snyk at scale
+* With the CLI, you have options to [extend use cases](../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/) as you deploy Snyk at scale.
 
 For more information, see the  [Snyk CLI repository](https://github.com/snyk/cli).
 {% endhint %}
 
 ## Adopting a CI/CD integration
 
-When you decide to use a CI/CD integration, you typically adopt the integration in stages, initially selecting a deployment method and the implementing strategies for the code you are scanning. For details, see [Snyk CI/CD Integration deployment and strategies](snyk-ci-cd-integration-deployment-and-strategies/).
+When you decide to use a CI/CD integration, you typically adopt the integration in stages, initially selecting a deployment method and implementing strategies for the code you are scanning. For details, see [Snyk CI/CD Integration deployment and strategies](snyk-ci-cd-integration-deployment-and-strategies/).
 
 For detailed information, see the pages for the integration you are using:
 
@@ -33,7 +33,7 @@ For additional examples of binary and npm integrations for CI/CD, see [GitHub CI
 
 ## Support policy <a href="#support-policy" id="support-policy"></a>
 
-Snyk supports the latest 12 months of CI/CD plugin versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and will not receive bug fixes or troubleshooting.
+Snyk supports the latest 12 months of CI/CD plugin versions, ensuring functionality and performance. Older versions are considered End-of-Support (EOS) and do not receive bug fixes or troubleshooting.
 
 Snyk provides fixes only in new versions and cannot fix older versions. Customers must upgrade to benefit from improvements.
 

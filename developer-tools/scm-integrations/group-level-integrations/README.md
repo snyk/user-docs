@@ -1,6 +1,6 @@
 # Group-level integrations
 
-Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and, or metadata, for example, information on developers, commits, and so on.
+Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and metadata, for example, information on developers, commits, and so on.
 
 At the Group level, you can set up and customize your Snyk Essentials integrations from the **Integrations** page, where the following SCMs are available:
 
@@ -18,7 +18,7 @@ The Integrations page at the Group-level shows all active integrations, includin
 {% hint style="warning" %}
 The SCM integrations use an incremental approach to retrieve repositories. This means that when a sync is initiated, it checks the last update time of the repository and only transfers the repositories that have been modified since then.
 
-If there have been changes to the scope of the user or PAT used for the integration, any repositories that are newly within scope will only be identified after either a change to trigger the incremental collection or a change to the integration configuration itself.
+If there have been changes to the scope of the user or PAT used for the integration, Snyk identifies any repositories that are newly in scope only after either a change to trigger the incremental collection or a change to the integration configuration itself.
 {% endhint %}
 
 The following supported Snyk data are automatically synced:
@@ -28,12 +28,12 @@ The following supported Snyk data are automatically synced:
 * Snyk IaC
 * Snyk Container
 
-Each connected integration enables you to:
+Each connected integration lets you:
 
 * Pause data syncing
 * Modify integration profiles and configurations
 * Delete the integration
-* Check when the integration was last synced and when the next sync is scheduled.
+* Check when the integration was last synced and when the next sync is scheduled
 
 See the [Integration syncing time](../../integrations/integrate-with-snyk.md#integrations-syncing-time) for more details about the time required to sync for each action.
 
@@ -43,7 +43,7 @@ To configure a Group-level integration, you must be a Group Admin or have a cust
 
 ### Wildcard SCM integration
 
-The wildcard integration allows you to use a special character to detect and integrate multiple SCM organizations simultaneously.
+The wildcard integration lets you use a special character to detect and integrate multiple SCM organizations simultaneously.
 
 {% hint style="info" %}
 The wildcard integration applies to the GitHub integration and offers support when you set it up using [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/using-snyk-essentials-with-snyk-broker).
@@ -53,12 +53,12 @@ You can use the wildcards while setting up your integration using the **Integrat
 
 * Navigate to **Integrations**.
 * Select the **SCM** tag and search for GitHub or Azure DevOps.
-* Click the **Add** button.
+* Click **Add**.
 * In the **Organizations** field, add the Organization details by using the `*` symbol. For example, using `*snyk` integrates all SCM Organizations that have Snyk in their name.
-* All the Organizations that match with the wildcard, `*` symbol will be added.
+* Snyk adds all the Organizations that match the wildcard `*` symbol.
 
 {% hint style="info" %}
-The wildcard, `*` symbol is considered a living command and will be applied every time you are rescanning your repositories.
+The wildcard `*` symbol is considered a living command and applies every time you rescan your repositories.
 {% endhint %}
 
 ### Snyk Essentials integrations ecosystem

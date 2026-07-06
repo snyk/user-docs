@@ -29,7 +29,7 @@ The following PAT token permissions requirements are for Snyk Essentials integra
 ## Generate a Personal access token from your Azure DevOps settings
 
 {% hint style="warning" %}
-The user account that owns the PAT needs `Basic` access level on the Azure organisation.
+The user account that owns the PAT needs `Basic` access level on the Azure organization.
 {% endhint %}
 
 1. Open Azure DevOps and click the **Settings** menu for your profile.

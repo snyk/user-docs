@@ -1,12 +1,12 @@
 # Render content for users
 
-In the previous module, we covered registering our Snyk App, setting up the authorization flow, and handling user authorization within our App. All of those topics are integral to the functionality of every Snyk App, but they're all what you might call "behind the scenes" topics.
+In the previous module, we covered registering our Snyk App, setting up the authorization flow, and handling user authorization in our App. All of those topics are integral to the functionality of every Snyk App, but they're all what you might call "behind the scenes" topics.
 
-In this module, we'll switch gears to focus on displaying content to the users who have authorized with our Snyk App. Specifically, we want to show unauthorized users a big button they can click to authorize and authorized users a list of their projects from Snyk.
+In this module, we'll focus on displaying content to the users who have authorized with our Snyk App. Specifically, we want to show unauthorized users a button they can click to authorize and authorized users a list of their Projects from Snyk.
 
 ## Add a template engine to the Snyk App
 
-While Express is perfectly capable of printing content to the screen and even rendering HTML server-side, life is much easier when using a template engine. For this tutorial we are using [EJS](https://ejs.co).
+While Express is capable of printing content to the screen and even rendering HTML server-side, life is much easier when using a template engine. For this tutorial we are using [EJS](https://ejs.co).
 
 First, install the node packages needed in this part of the tutorial:
 
@@ -50,7 +50,7 @@ class App {
 }
 ```
 
-For each route that we'll provide a template for, we'll need to modify the corresponding controller and ensure that we're using `res.render("<template name>")` rather than something more simplistic like `res.send()`.
+For each route that we'll provide a template for, we'll need to modify the corresponding controller and ensure that we're using `res.render("<template name>")` rather than something simpler like `res.send()`.
 
 Example:
 
@@ -67,8 +67,6 @@ private indexPage(req: Request, res: Response, next: NextFunction) {
 
 ...
 ```
-
-That's all there is to it.
 
 EJS templates support the concept of partial inclusion. While not strictly necessary, it makes sense to add a subdirectory to our `./src/views` to differentiate partial templates like headers and footers from route templates. For the tutorial, we'll use `./src/views/partials` to store such templates.
 
@@ -140,13 +138,13 @@ This `index.ejs` template will cover our basic `/` route.
 
 These templates should be enough to get you started adding your own templates to any new routes you create. If you intend to continue using EJS, refer to the documentation for information about the features offered.
 
-Rendering content for your Snyk App can be as simple or complex as you'd like it to be. Because we're dealing with JavaScript, the options are very flexible!
+Rendering content for your Snyk App can be as simple or complex as you'd like it to be. Because we're dealing with JavaScript, the options are flexible.
 
 ## Showing users a list of projects
 
-Now that we have some basic templates, take a look at how we can add some functionality to our Snyk App using a User's Snyk data. For this tutorial, we set up our app to allow users to view all of their projects within Snyk from within our app.
+Now that we have some basic templates, take a look at how we can add some functionality to our Snyk App using a user's Snyk data. For this tutorial, we set up our app to let users view all of their Projects in Snyk from within our app.
 
-This is a basic and easily extendable feature.
+This is a basic and extendable feature.
 
 We need to create:
 
@@ -154,7 +152,7 @@ We need to create:
 * A function (or functions) to pull the project data
 * An EJS template for showing the projects
 
-We start with the API work, using the `callSnykApi()` function we created in the previous module. Since this directly relates to a particular route, we'll store this file with its controller. Following the pattern we've used throughout these tutorial modules, we'll create both files at `./src/routes/projects/`.
+We start with the API work, using the `callSnykApi()` function we created in the previous module. Since this directly relates to a particular route, we'll store this file with its controller. Following the pattern we've used throughout these tutorial modules, we'll create both files in `./src/routes/projects/`.
 
 ```typescript
 // ./src/routes/projects/projectsHandler.ts
@@ -269,4 +267,4 @@ new App([
 
 Using the project's API handler and controller we created in this module, you should have all you need to create your own custom code and make your Snyk App do whatever you'd like it to do.
 
-We used the v1 API but keep an eye on Snyk's REST API. As additional features are added, you may find new or more efficient endpoints to use in your Snyk App.
+We used the v1 API, but keep an eye on the Snyk REST API. As Snyk adds features, you may find new or more efficient endpoints to use in your Snyk App.

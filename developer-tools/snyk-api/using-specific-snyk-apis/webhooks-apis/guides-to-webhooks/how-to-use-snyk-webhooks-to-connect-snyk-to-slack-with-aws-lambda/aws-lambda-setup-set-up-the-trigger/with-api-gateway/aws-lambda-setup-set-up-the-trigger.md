@@ -1,4 +1,4 @@
-# AWS API Gateway: Setting up a trigger
+# AWS API Gateway: set up a trigger
 
 Follow these steps to add the AWS API Gateway to the function:
 

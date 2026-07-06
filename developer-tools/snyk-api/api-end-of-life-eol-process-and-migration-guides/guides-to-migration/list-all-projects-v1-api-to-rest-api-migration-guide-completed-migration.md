@@ -17,7 +17,7 @@ Based on OpenAPI specifications, the Snyk REST API is designed to provide a cons
 
 The Projects REST API introduces improved data architecture to facilitate enhanced performance and separation of domains.
 
-Snyk understands that migrating to a new API can be a significant undertaking and wants to support you throughout the process. This comprehensive migration guide is intended to facilitate a seamless transition by providing step-by-step instructions, code examples, and best practices to help you smoothly integrate with the new API.
+Snyk understands that migrating to a new API can be a significant undertaking and wants to support you throughout the process. This comprehensive migration guide is intended to facilitate the transition by providing step-by-step instructions, code examples, and best practices to help you integrate with the new API.
 
 If you are using the deprecated endpoint, Snyk encourages you to review this migration guide and move all your automations over before Friday, December 22, 2023.
 
@@ -32,7 +32,7 @@ If you are using the deprecated endpoint, Snyk encourages you to review this mig
 | List all projects v1 API documentation removal                                                                                                                                                                        | September 22, 2023 | No action needed                                                                                                                                                                          |
 | End-of-life: All access to List all projects v1 API will result in a 410 Gone response.                                                                                                                               | December 22, 2023  | Ensure migration has been completed by this time to avoid disruption to automated workflows                                                                                               |
 
-The following Snyk Tools that use the List all projects v1 API have been updated to use the [REST List all projects API](https://apidocs.snyk.io/?version=2023-05-29#get-/orgs/-org_id-/projects) instead:
+The following Snyk Tools that use the List all projects v1 API are updated to use the [REST List all projects API](https://apidocs.snyk.io/?version=2023-05-29#get-/orgs/-org_id-/projects) instead:
 
 * [snyk-jira-tickets-for-new-vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns): version 5.0.0 or newer
 * [snyk-api-ts-client](https://github.com/snyk-labs/snyk-api-ts-client): version 1.11.1 or newer

@@ -30,7 +30,7 @@ The `app_id` path parameter is the `id` in the response to a [`GET` request to t
 
 For details, see the endpoint [Delete an app by its App ID](../../reference/apps.md#orgs-org_id-apps-client_id-2).
 
-Deleting an App revokes your App credentials and removes all of your App's installations. If you have active users, they will no longer be able to connect to Snyk through the App.
+Deleting an App revokes your App credentials and removes all of your App's installations. If you have active users, they can no longer connect to Snyk through the App.
 
 ## Rotate App clientSecret
 
@@ -62,18 +62,18 @@ Snyk recommends you adopt the following procedure when rotating your secrets:
 
 ### Create a clientSecret
 
-It is recommended that in normal operation you periodically rotate your client secrets. To start the process, send the request body `{"mode": "create"}` to the endpoint which will create a new secret. The returned value of this call will be your app with the newly generated secret. Both the new secret and any existing secrets will be valid until they are manually replaced or deleted. You can also immediately replace a client secret.
+In normal operation, Snyk recommends that you periodically rotate your client secrets. To start the process, send the request body `{"mode": "create"}` to the endpoint, which creates a new secret. The returned value of this call is your app with the newly generated secret. Both the new secret and any existing secrets are valid until they are manually replaced or deleted. You can also immediately replace a client secret.
 
 An App can have a maximum of two active secrets at any time. This endpoint fails with the error  `cannot update secrets` if you try to call `create` when you already have the maximum number of secrets active.
 
 ### Replace a clientSecret
 
-In the event that your App's `clientSecret` is leaked, you can generate a new one by using `{"mode": "replace"}`.
+If your App's `clientSecret` is leaked, you can generate a new one by using `{"mode": "replace"}`.
 
-When you replace your `clientSecret`, your current secret is immediately invalid. Your App will not be able to connect to Snyk until you update the App's configuration with the new secret.
+When you replace your `clientSecret`, your current secret is immediately invalid. Your App cannot connect to Snyk until you update the App's configuration with the new secret.
 
 ### Delete a clientSecret
 
 To clean up any unused secrets, call the endpoint with `{"mode": "delete", "secret": "{clientSecret}"}` where `{clientSecret}` is your client secret that you want to delete. This action invalidates the secret immediately so it can no longer be used.
 
-An App must have at least one active secret; calling delete with your last secret will fail.
+An App must have at least one active secret. Calling delete with your last secret fails.

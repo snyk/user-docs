@@ -8,7 +8,7 @@
 
 The `snyk container monitor` command captures the container image layers and dependencies in a project and monitors that snapshot for vulnerabilities, sending the results to [snyk.io](https://snyk.io)
 
-Use the `container monitor` command before integrating your code into production, to take a snapshot of the code to be monitored in order to avoid pushing vulnerabilities into production. Choose a test frequency in your Settings if you want to change the frequency from the default, which is daily.
+Use the `container monitor` command before integrating your code into production, to take a snapshot of the code to be monitored and avoid pushing vulnerabilities into production. Choose a test frequency in your Settings if you want to change the frequency from the default, which is daily.
 
 If you make changes to your code, you must run the `container monitor` command again.
 
@@ -38,7 +38,7 @@ Use the `-d` option to output the debug logs.
 
 Specify the `<ORG_ID>` to run Snyk commands tied to a specific Snyk Organization. The `<ORG_ID>` influences some features availability and private test limits.
 
-If you have multiple organizations, you can set a default from the CLI using:
+If you have multiple Organizations, you can set a default from the CLI using:
 
 `$ snyk config set org=<ORG_ID>`
 

@@ -8,10 +8,10 @@ The Snyk API Project importer, `snyk-api-import`, is a script intended to help i
 
 If you need to adjust concurrency, you can stop the script, change the concurrency variable, and start again. The tool skips previous repositories (Targets) that have been requested for import.
 
-To use `snyk-api-import` you must do the following in advance:
+To use `snyk-api-import` you must do the following first:
 
 * Set up your Snyk Organizations (Orgs) before running an import.
-* Configure your Snyk Organizations with some connection to an SCM (GitHub, GitLab, Bitbucket, other) as you will need the `integrationId` to generate the import files.
+* Configure your Snyk Organizations with some connection to an SCM (GitHub, GitLab, Bitbucket, other) as you need the `integrationId` to generate the import files.
 * Use the [Set notification settings](../../../snyk-api/reference/organizations-v1.md#org-orgid-notification-settings) API endpoint to disable notifications for emails and so on, to avoid receiving import notifications (recommended).
 * Use the [Update](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-integrationid-settings) (integration settings) endpoint to disable the fix PRs and PR checks until import is complete to avoid sending extra requests to SCMs (GitHub, GitLab, Bitbucket, and so on).
 
@@ -39,7 +39,7 @@ yarn global add snyk-api-import
 
 ## Usage
 
-By default the `import` command will run if no command is specified.
+By default the `import` command runs if no command is specified.
 
 * `import` - kick off an API-powered import of repos (Targets) into existing Snyk Organizations defined in the import configuration file. All support available for all Project types is provided through the [Import](../../../snyk-api/reference/import-projects-v1.md) API endpoints, [Import targets](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) and [Get Import job details](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid).&#x20;
 * `help` - show help and all available commands and their options.
@@ -70,9 +70,9 @@ The logs can be explored using the [Bunyan CLI](http://trentm.com/node-bunyan/bu
 
 <summary><code>Error: ENFILE: file table overflow, open</code> or <code>Error: EMFILE, too many open files</code></summary>
 
-If you see these errors, you may need to bump **ulimit** to allow more open file operations. In order to keep the operations performing well, the tool logs as soon as it is convenient rather than waiting until the very end of a loop and logging a huge data structure. This means that depending on the number of concurrent imports set, the tool may exceed the system default **ulimit**.
+If you see these errors, you might need to bump **ulimit** to allow more open file operations. To keep the operations performing well, the tool logs as soon as it is convenient rather than waiting until the end of a loop and logging a huge data structure. This means that depending on the number of concurrent imports set, the tool might exceed the system default **ulimit**.
 
-Some of these resources may help you bump the **ulimit**:
+Some of these resources can help you bump the **ulimit**:
 
 * [ss64.com](https://ss64.com/bash/ulimit.html)
 * [StackOverflow](https://stackoverflow.com/questions/45004352/error-enfile-file-table-overflow-scandir-while-run-reaction-on-mac)
@@ -94,7 +94,7 @@ If your GitHub, GitLab, Bitbucket, or Azure instance is using a self-signed cert
 
 <summary>Does this work with brokered integrations?</summary>
 
-Yes. Because Snyk reuses the existing integration with your SCM (Git) repository to perform the imports, the brokered connection will be used when configured.
+Yes. Because Snyk reuses the existing integration with your SCM (Git) repository to perform the imports, the brokered connection is used when configured.
 
 </details>
 

@@ -4,10 +4,10 @@
 Snyk recommends that all customers use the [Slack App](slack-app.md), as the Slack integration is outdated.
 {% endhint %}
 
-You can set up Slack to receive Snyk’s alerts about new vulnerabilities that affect your Projects and new upgrades or patches that have become available.
+You can set up Slack to receive Snyk alerts about new vulnerabilities that affect your Projects and new upgrades or patches that have become available.
 
 {% hint style="info" %}
-Vulnerabilities detected on initial import of projects are not sent to Slack immediately.
+Vulnerabilities detected on initial import of Projects are not sent to Slack immediately.
 {% endhint %}
 
 ## Slack notification types
@@ -22,9 +22,9 @@ A new upgrade or patch is available for a vulnerability that you previously igno
 
 ## Set up the Slack integration
 
-To set up the integration, you must generate a Slack webhook. You can do this either via the [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
+To set up the integration, you must generate a Slack webhook. You can do this either using the [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
 
-Once you have generated your Slack Webhook URL, go to your **Manage Organization** settings and enter the URL.
+After you generate your Slack Webhook URL, navigate to your **Manage Organization** settings and enter the URL.
 
 <figure><img src="../../.gitbook/assets/image (24) (1).png" alt="Enter URL of the Slack webhook"><figcaption><p>Enter URL of the Slack webhook</p></figcaption></figure>
 

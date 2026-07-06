@@ -2,7 +2,7 @@
 
 This page provides instructions for and examples of using the Snyk GitHub Action for [Infrastructure as Code](https://github.com/snyk/actions/tree/master/iac). For general instructions and information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
 
-In order to use the Snyk Infrastructure as Code Test Action, you must have a Snyk API token. See [Getting your Snyk token](./#getting-your-snyk-token), or you can [sign up for free](https://snyk.io/login).
+To use the Snyk Infrastructure as Code Test Action, you must have a Snyk API token. See [Getting your Snyk token](./#getting-your-snyk-token), or you can [sign up for free](https://snyk.io/login).
 
 ## Using the Snyk Infrastructure as Code Action to check for vulnerabilities
 
@@ -24,7 +24,7 @@ jobs:
 
 ## Snyk Infrastructure as Code Action properties
 
-The Snyk Infrastructure as Code Action has properties thatwhich are passed to the underlying image. These are passed to the action using `with`:
+The Snyk Infrastructure as Code Action has properties that are passed to the underlying image. These are passed to the action using `with`:
 
 | Property  | Default  | Description                                                       |
 | --------- | -------- | ----------------------------------------------------------------- |

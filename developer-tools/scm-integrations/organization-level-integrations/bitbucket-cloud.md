@@ -13,7 +13,7 @@ The Bitbucket Cloud API token integration lets you:
 ### How to set up the Bitbucket Cloud Integration
 
 {% hint style="info" %}
-Admin permissions are required; however, Snyk's access is ultimately limited by the [permissions assigned to the API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/).\
+Admin permissions are required. However, Snyk access is ultimately limited by the [permissions assigned to the API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/).\
 \
 To improve security, the use of app passwords in Bitbucket Cloud is transitioning to API tokens. Existing integrations that use app passwords will continue to function temporarily until 9 June 2026.\
 To ensure continued support and functionality, update your Bitbucket Cloud integration in Snyk to use an API token.
@@ -38,11 +38,11 @@ After you connect Snyk to your Bitbucket Cloud account, you can select repositor
 
 After you add the selected repositories, Snyk scans them for dependency files in the entire directory tree, that is, `package.json`, `pom.xml`, and so on, and imports them to Snyk as Projects.
 
-The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
+The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
 ### Bitbucket integration features
 
-After the integration is in place, you will be able to use capabilities such as:
+After the integration is in place, you can use capabilities such as:
 
 * [Project-level security reports](bitbucket-cloud.md#project-level-security-reports)
 * [Project monitoring and automatic fix pull requests](bitbucket-cloud.md#project-monitoring-and-automatic-fix-pull-requests)

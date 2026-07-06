@@ -4,7 +4,7 @@
 **Feature availability**\
 Integration with Azure DevOps Server 2020 and above, also known as TFS, is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
-Snyk supports only Git. Snyk does not currently support integration with Team Foundation Version Control (TFVC).
+Snyk supports only Git. Snyk does not support integration with Team Foundation Version Control (TFVC).
 {% endhint %}
 
 ### Prerequisites for Azure Repositories (TFS) integration
@@ -46,7 +46,7 @@ Generate and copy a unique PAT to use for Snyk. For more information on the PAT 
 
 1. Log in to [your Snyk account](https://app.snyk.io) and navigate to **Integrations**.
 2. On the **Azure Repos** tile, click the settings icon to open **Organization Settings** > **Integrations** > **Azure Repos** > **Account credentials**.
-3. Pay special attention to the instructions given on the **Account Credentials** page. Depending on your plan, you may need to enter just the Azure DevOps Organization, or you may need to enter the entire URL.
+3. Pay special attention to the instructions given on the **Account Credentials** page. Depending on your plan, you may need to enter only the Azure DevOps Organization, or you may need to enter the entire URL.
    * **Set your organization**: Enter the slug for your Organization only.\
      For example, enter `your-azure-devops-org`
    * **Set your host**: enter the entire url.\
@@ -57,7 +57,7 @@ Generate and copy a unique PAT to use for Snyk. For more information on the PAT 
    Snyk tests the connection values and the page reloads, displaying the Azure Repos integration information. A message to confirm that the details were updated appears at the top of the screen.
 
 {% hint style="info" %}
-If the connection to Azure fails, a notification will appear under the **Azure Repos** card title.
+If the connection to Azure fails, a notification appears under the **Azure Repos** card title.
 {% endhint %}
 
 ### Add Projects to Snyk for Azure Repos

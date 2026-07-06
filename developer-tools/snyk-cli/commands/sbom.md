@@ -4,7 +4,7 @@
 
 **Feature availability:** This feature is available only to customers on Snyk Enterprise plans.
 
-**Note:** In order to use the SBOM generation feature, you must use the minimum CLI version 1.1071.0.
+**Note:** To use the SBOM generation feature, you must use the minimum CLI version 1.1071.0.
 
 The `snyk sbom` feature requires an internet connection.
 
@@ -45,7 +45,7 @@ Specify the `<ORG_ID>` (name or UUID) to run Snyk commands tied to a specific Sn
 
 Use this option when your default Organization does not have API entitlement.
 
-If this option is omitted, the default Organization for your account will be used.
+If you omit this option, Snyk uses the default Organization for your account.
 
 This is the `<ORG_ID>` that is the current preferred Organization in your [Account settings](https://app.snyk.io/account)
 
@@ -149,7 +149,7 @@ Be sure to run the scan in the same directory as the root pom.xml file.
 
 ### `--maven-skip-wrapper`
 
-Forces the use of a globally installed `mvn` command, even when a Maven wrapper (i.e. `mvnw` or `mvnw.cmd`) is present in the project.
+Forces the use of a globally installed `mvn` command, even when a Maven wrapper (that is, `mvnw` or `mvnw.cmd`) is present in the project.
 
 Some projects include a Maven wrapper but users may prefer (or be required by their CI environment) to use a globally installed `mvn` instead. This option gives an explicit escape hatch without having to remove the wrapper from the project.
 
@@ -267,7 +267,7 @@ Default: `--all-projects` automatically detects and scans Yarn Workspaces with o
 
 Indicate which specific Python commands to use based on the Python version.
 
-Snyk uses Python in order to scan and find your dependencies. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
+Snyk uses Python to scan and find your dependencies. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
 
 Default: `python` This executes your default python version. Run `python -V` to find out what your default version is.
 

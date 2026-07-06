@@ -31,10 +31,10 @@ curl -L \
   }'
 ```
 
-The request body should contain the details for your new App, including the `name`, `context`, `redirect_uris`, and [`scopes`](scopes-to-request.md).
+The request body must contain the details for your new App, including the `name`, `context`, `redirect_uris`, and [`scopes`](scopes-to-request.md).
 
 The response includes details necessary to complete the integration: `client_id` and `client_secret`. Use these values with Snyk API endpoints within your App; consider storing them as part of the configuration of your App.
 
 {% hint style="info" %}
-Never share the `client_secret` publicly, as it is used to authenticate your App. This is the only time you will see the `client_secret`, so keep it secure and private. If you lose it or if the secret is leaked, you can [rotate your App's clientSecret](manage-app-details.md#rotate-app-clientsecret).
+Never share the `client_secret` publicly, as it is used to authenticate your App. This is the only time you see the `client_secret`, so keep it secure and private. If you lose it or if the secret is leaked, you can [rotate your App's clientSecret](manage-app-details.md#rotate-app-clientsecret).
 {% endhint %}

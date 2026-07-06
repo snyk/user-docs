@@ -31,7 +31,7 @@ To enable Snyk Language Server debug logs in Visual Studio, add `-d` parameter t
 
 <figure><img src="../../.gitbook/assets/debug_logs.png" alt=""><figcaption><p>Adding the debug parameter</p></figcaption></figure>
 
-Press OK and restart the IDE after adding the parameter.
+Click **OK** and restart the IDE after adding the parameter.
 
 #### View Log file
 
@@ -82,7 +82,7 @@ If a user has a bug with the Snyk plugin, especially bugs where the plugin fails
 
 ### Snyk Code ignores
 
-Snyk Code allows developers to ignore files in their codebase. This is done through the use of Snyk Code Ignores. However, in Visual Studio, the `.snyk` file cannot be used to manage Snyk Code Ignores for C# Projects. Instead, developers must use `.dcignore` or `.gitignore` files to manage Code Ignores for C# Projects in Visual Studio.
+Snyk Code lets developers ignore files in their codebase using Snyk Code Ignores. However, in Visual Studio, you cannot use the `.snyk` file to manage Snyk Code Ignores for C# Projects. Instead, developers must use `.dcignore` or `.gitignore` files to manage Code Ignores for C# Projects in Visual Studio.
 
 ### Settings storage
 

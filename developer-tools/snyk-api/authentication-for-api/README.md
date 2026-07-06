@@ -18,7 +18,7 @@ Enterprise users have [access to a personal access token under their profile](./
   * Authenticating with the IDE manually
   * Running API calls one time, for example, to test something
 
-Note that for free and team plan users, the personal token does not have access to the API and may be used for authenticating to IDE, CLI, and CI/CD integrations only. For details, see [Obtain and use your PAT token](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
+Note that for free and team plan users, the personal token does not have access to the API and can be used for authenticating to IDE, CLI, and CI/CD integrations only. For details, see [Obtain and use your PAT token](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
 
 For additional information, see [Snyk PAT token permissions users can control](snyk-api-token-permissions-users-can-control.md).
 
@@ -30,11 +30,11 @@ You can create a personal access token through your [account settings](https://a
 
 You can find your personal API token in your personal [account settings](https://app.snyk.io/account) after you register with Snyk and log in. In the **key** field, **Click to show**. Then highlight and copy the API key.
 
-If you want a new API token, select **Revoke & Regenerate.** This will make the previous API token invalid. For details, see [Revoke and regenerate a Snyk API token](revoke-and-regenerate-a-snyk-api-token.md).
+If you want a new API token, select **Revoke & Regenerate.** This makes the previous API token invalid. For details, see [Revoke and regenerate a Snyk API token](revoke-and-regenerate-a-snyk-api-token.md).
 
 ## Authenticating with a personal API token
 
-When using the API directly, provide the API token in an `Authorization: token` header, as in the following example request, replacing `API_TOKEN` with your token
+When using the API directly, provide the API token in an `Authorization: token` header, as in the following example request, replacing `API_TOKEN` with your token.
 
 ```bash
 curl --request GET \
@@ -54,4 +54,4 @@ curl --request GET \
 --header "Authorization: bearer API_TOKEN"
 ```
 
-Otherwise, a `401 Unauthorized` error will be returned.
+Otherwise, Snyk returns a `401 Unauthorized` error.

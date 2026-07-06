@@ -76,7 +76,7 @@ The Snyk Open Source scan must be in the same CodeBuild action as the build proc
 Using the [Snyk CLI](../snyk-cli/commands/) in CodeBuild gives you full access to its functionality and options. To get started with basic result handling, you can follow these tips:
 
 * The `snyk test` command produces a non-zero exit code when vulnerabilities are found. Consider adding `|| true` to the end of the command to circumvent this behavior.
-* The [snyk-to-html](https://github.com/snyk/snyk-to-html) tool can be used to produce an HTML report of scan results by running a command similar to `snyk test --json | snyk-to-html -o snyk-results.html` . For more information, see the [`snyk-to-html`](../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) documentation.
+* You can use the [snyk-to-html](https://github.com/snyk/snyk-to-html) tool to produce an HTML report of scan results by running a command similar to `snyk test --json | snyk-to-html -o snyk-results.html` . For more information, see the [`snyk-to-html`](../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) documentation.
 * Consider the following CLI options for common usage patterns:
   * [--org=\<ORG\_ID>](../snyk-cli/commands/test.md#org-less-than-org_id-greater-than) - Specify the \<ORG\_ID> to run Snyk commands tied to a specific Snyk Organization.
   * [--severity-threshold=\<low|medium|high|critical>](../snyk-cli/commands/test.md#severity-threshold-less-than-low-or-medium-or-high-or-critical-greater-than) - Report vulnerabilities only at the specified level or higher.
@@ -94,7 +94,7 @@ Using the [Snyk CLI](../snyk-cli/commands/) in CodeBuild gives you full access t
 * When testing is complete, consider deploying the updated CodePipeline.
 * Monitor your pipeline for successful Snyk scan execution and address any integration issues.
 
-### Next Steps
+### Next steps
 
 Refer to the [Snyk CLI](../snyk-cli/) documentation to incorporate additional security scans into your CI/CD pipeline.
 

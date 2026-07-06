@@ -23,7 +23,7 @@ The following options are available for the `snyk-scm-contributors-count gitlab`
 
 Get your GitLab token or create a new one with this [guide](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html).
 
-**Note:** Make sure your token has read access to the repos.
+**Note:** Ensure your token has read access to the repos.
 
 ## Running the command
 
@@ -54,7 +54,7 @@ Note that for nested groups, you need to provide the lowest level group name, fo
 
 ### Options
 
-* To exclude some contributors from being counted in the commits, add an exclusion file with the emails to ignore(separated by a new line) and apply the `--exclusionFilePath` with the path to that file:
+* To exclude some contributors from being counted in the commits, add an exclusion file with the emails to ignore (separated by a new line) and apply the `--exclusionFilePath` with the path to that file:
 
 ```
 snyk-scm-contributors-count gitlab --token TOKEN --projectKeys ID1,ID2,Path1/Namespace1 --exclusionFilePath PATH_TO_FILE

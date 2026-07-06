@@ -19,7 +19,7 @@ snyk iac test .
 
 Terraform plan is the step run between writing your configuration files and deploying those changes.
 
-`$ terraform plan` identifies the changes that need to be made to your target environment in order to match your desired state.
+`$ terraform plan` identifies the changes that need to be made to your target environment to match your desired state.
 
 As part of this planning stage, all variables and Terraform modules that are used in your targeted Terraform deployment are taken into consideration.
 
@@ -37,7 +37,7 @@ Provide the path to your Terraform plan output which must be stored as a valid J
 snyk iac test tf-plan.json
 ```
 
-By default, Snyk scans the changes that will be made to your infrastructure, not the full infrastructure.
+By default, Snyk scans the changes made to your infrastructure, not the full infrastructure.
 
 You can change this behavior by using the `--scan=` option.
 
@@ -53,7 +53,7 @@ terraform show -json tfplan.binary > tf-plan.json
 
 You can name the `tf-plan.json` file according to your needs.
 
-These files are considered sensitive, and it is not recommended to commit them to source control.
+These files are sensitive, so Snyk recommends that you do not commit them to source control.
 
 ## Troubleshooting Terraform scans
 
@@ -65,6 +65,6 @@ The option `--experimental` is no longer required for testing your Terraform Pro
 
 * **Variables** - Terraform plan output considers the values stored in variables.
 * **Terraform modules** - Terraform plan output includes any configuration issues found from Terraform modules that you may be using.
-* **Delta** - By default, scanning the Terraform plan output scans only for configuration issues on the changes that will be made, not the whole deployment. In contrast, the static scan looks at all of the files. Try re-running the scan with the `--scan=planned-values` option.
+* **Delta** - By default, scanning the Terraform plan output scans only for configuration issues on the changes to be made, not the whole deployment. In contrast, the static scan looks at all of the files. Try re-running the scan with the `--scan=planned-values` option.
 
 If you have found a discrepancy that you cannot explain based on this information, submit a [request](https://support.snyk.io) to Support.

@@ -1,10 +1,10 @@
 # Tutorial: create a Snyk App
 
-In this tutorial, we'll create a simple Snyk App using TypeScript to show users a list of their projects within Snyk.
+In this tutorial, we'll create a Snyk App using TypeScript to show users a list of their Projects in Snyk.
 
 ## Prerequisites
 
-* NodeJS
+* Node.js
 * A Snyk account
 
 ## Configure the basics
@@ -19,7 +19,7 @@ Now that we have a place to save dependency information, use `npm` to install Ty
 npm install typescript --save-dev
 ```
 
-At this point, TypeScript has been installed, but we'll need a configuration file to provide compilation options to the `tsc` binary. Create a TypeScript configuration file called `tsconfig.json` in the root of the project. Use the template that follows:
+At this point, TypeScript is installed, but we'll need a configuration file to provide compilation options to the `tsc` binary. Create a TypeScript configuration file called `tsconfig.json` in the root of the project. Use the template that follows:
 
 ```json
 {
@@ -53,7 +53,7 @@ mkdir ./src
 
 ## Test it out
 
-Now that we have the basic parameters in place, we'll create a simple Hello World by creating the file `./src/index.ts`.
+Now that we have the basic parameters in place, we'll create a Hello World by creating the file `./src/index.ts`.
 
 ```
 const world = 'world';

@@ -2,7 +2,7 @@
 
 The following provides information in addition to the information in the API Reference for the endpoints [List all project issue paths](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-paths) and [List all project snapshot issue paths](../reference/snapshots-v1.md#org-orgid-project-projectid-history-snapshotid-issue-issueid-paths).
 
-The `paths` endpoints provide details of the paths through which an issue has been introduced.
+The `paths` endpoints provide details of the paths through which an issue is introduced.
 
 **Requests** to the `paths` endpoint are `GET` requests. The endpoints are available at the following URLs:
 
@@ -51,4 +51,4 @@ In this example, an issue is introduced through two different versions of the `l
 
 The shortest path is provided first. If an issue applies to the Project itself, it appears as the only element in the path. For issues that apply to dependencies, each path starts with a direct dependency.
 
-The `fixVersion` attribute is provided on the first element of each path when that path is upgradable. If the `version` attribute and `fixVersion` attributes are the same, then the upgrade will only involve re-locking transitive dependencies.
+The `fixVersion` attribute is provided on the first element of each path when that path is upgradable. If the `version` attribute and `fixVersion` attributes are the same, then the upgrade involves only re-locking transitive dependencies.

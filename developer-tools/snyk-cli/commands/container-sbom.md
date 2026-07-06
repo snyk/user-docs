@@ -2,9 +2,9 @@
 
 ## Prerequisites
 
-**Feature availability:** This feature is currently in Early Access and is available to customers on Snyk Enterprise plans.
+**Feature availability:** This feature is in Early Access and is available to customers on Snyk Enterprise plans.
 
-**Note:** In order to use the SBOM generation feature, you must use a minimum of CLI version 1.1226.0.
+**Note:** To use the SBOM generation feature, you must use a minimum of CLI version 1.1226.0.
 
 The `snyk container sbom` feature requires an internet connection.
 
@@ -45,13 +45,13 @@ Specify the `<ORG_ID>` (name or UUID) to run Snyk commands tied to a specific Sn
 
 Use this option when your default Organization does not have API entitlement.
 
-If this option is omitted, the default Organization for your account will be used.
+If you omit this option, Snyk uses the default Organization for your account.
 
 This is the `<ORG_ID>` that is the current preferred Organization in your [Account settings](https://app.snyk.io/account)
 
 Set a default to ensure all newly tested projects are tested under your default Organization. If you need to override the default, use the `--org=<ORG_ID>` option.
 
-If you have multiple organizations, you can set a default from the CLI using:
+If you have multiple Organizations, you can set a default from the CLI using:
 
 `$ snyk config set org=<ORG_ID>`
 
@@ -95,7 +95,7 @@ Specify a password to use when connecting to a container registry. This is ignor
 
 ### `<IMAGE>`
 
-Required. The image for which you will generate an SBOM document.
+Required. The image for which you generate an SBOM document.
 
 **Note:** The image should be specified in the format of `repo:tag`.
 

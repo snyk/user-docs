@@ -43,7 +43,7 @@ Look at the `test` command report in your terminal. The report shows the vulnera
 
 Before using the Snyk CLI to test your Open Source Project for vulnerabilities, with limited exceptions, you must build your Project. For details, see [Open Source Projects that must be built before testing](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli).
 
-In addition, depending on the language of your open-source Project, you may need to set up your language environment before using the Snyk CLI. For details, refer to [Supported languages, package managers, and frameworks](https://docs.snyk.io/supported-languages-package-managers-and-frameworks).
+In addition, depending on the language of your open-source Project, you might need to set up your language environment before using the Snyk CLI. For details, refer to [Supported languages, package managers, and frameworks](https://docs.snyk.io/supported-languages-package-managers-and-frameworks).
 
 After you have installed the CLI and authenticated your machine, to **scan an open-source Project**, use `cd /my/project/` to change the current directory to a folder containing a supported package manifest file, such as `package.json`, `pom.xml`, or `composer.lock`. Then run `snyk test`. All vulnerabilities identified are listed, including their path and fix guidance.
 
@@ -103,7 +103,7 @@ See the course [Introduction to the Snyk CLI](https://learn.snyk.io/lesson/snyk-
 
 Snyk also provides a [cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1664236143/cheat-sheets/cheat-sheet-snyk-cli-v3.pdf) ([blog post](https://snyk.io/blog/snyk-cli-cheat-sheet/)).
 
-In particular, see the information about the following options that you may find useful:
+In particular, see the information about the following useful options:
 
 * `--severity-threshold=low|medium|high|critical`: Report only vulnerabilities of the specified level or higher.
 * `--json`: Print results in JSON format.
@@ -121,7 +121,7 @@ Effective July 22, 2024, Snyk CLI no longer accepts external contributions.
 
 Due to the CLI's extensive usage and intricate nature, even minor modifications can have unforeseen consequences. Since introducing [release channels](https://docs.snyk.io/snyk-cli/releases-and-channels-for-the-snyk-cli) to the CLI code in April 2024, Snyk's focus has been on stabilizing releases. Snyk believes this open-source, closed-contribution model best serves this goal.
 
-In the spirit of transparency to Snyk customers and CLI users, Snyk will continue working in public. However, going forward, Snyk CLI is closed to contributions.
+In the spirit of transparency to Snyk customers and CLI users, Snyk continues working in public. However, going forward, Snyk CLI is closed to contributions.
 
 Snyk appreciates and extends gratitude to the Snyk community.
 

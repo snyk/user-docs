@@ -18,4 +18,4 @@ Content-Type: application/json
 }
 ```
 
-With this request done, your connection from Snyk to Slack will be completed. Every time there is a new vulnerability, you will get a new notification.
+With this request done, your connection from Snyk to Slack is complete. Each time there is a new vulnerability, you get a new notification.

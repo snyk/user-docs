@@ -5,7 +5,7 @@
 The AWS CloudTrail Lake integration is available only with Snyk Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-The AWS CloudTrail Lake integration allows you to forward [Snyk audit logs](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group) to AWS CloudTrail Lake, which lets you run SQL-based queries on your logs and retain them for up to seven (7) years.
+The AWS CloudTrail Lake integration lets you forward [Snyk audit logs](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group) to AWS CloudTrail Lake, which lets you run SQL-based queries on your logs and retain them for up to seven years.
 
 This integration can be configured to forward audit logs for a single Snyk Organization, or for a Snyk Group and all of its child Organizations. In either case, there are two steps required to set up the integration:
 
@@ -20,18 +20,18 @@ This integration sends logs beginning when you enable it. Logs generated before 
 
 Audit logs are captured when Snyk users perform actions on the Snyk platform, such as making changes to settings, adding other users, or accessing protected APIs. When you are setting up this integration, it is important to understand how audit logs are captured, based on how a customer's Snyk account is set up:
 
-* For customers using Snyk with a single Snyk Organization (or with multiple disconnected Organizations), all audit logs are captured within the scope of the single Organization.
+* For customers using Snyk with a single Snyk Organization (or with multiple disconnected Organizations), all audit logs are captured in the scope of the single Organization.
 * For customers who have a Snyk Group with child Organizations, actions such as adding new Organizations to the group or adding users to the group are audited at the Group level, and are not typically associated with an Organization.
 
 This integration supports both use cases:
 
 1. Integrate CloudTrail Lake with a single Snyk Organization
-   1. All audit logs associated directly with that Organization will be sent to CloudTrail Lake.
+   1. All audit logs associated directly with that Organization are sent to CloudTrail Lake.
    2. If the Organization has a parent Group, actions taken on that Group **a**re not sent to CloudTrail Lake.
-   3. If the Organization has members who are also members of other Organizations and Groups, actions taken by those members will only be sent to CloudTrail Lake if they are directly associated with the Organization.
+   3. If the Organization has members who are also members of other Organizations and Groups, actions taken by those members are sent to CloudTrail Lake only if they are directly associated with the Organization.
 2. Integrate CloudTrail Lake with a Snyk Group and all of its child Organizations
-   1. All audit logs associated with the Group or any of its child Organizations will be sent to CloudTrail Lake.
-   2. When new Organizations are added to the Group, audit logs for those Organizations will be sent automatically to CloudTrail Lake.
+   1. All audit logs associated with the Group or any of its child Organizations are sent to CloudTrail Lake.
+   2. When new Organizations are added to the Group, audit logs for those Organizations are sent automatically to CloudTrail Lake.
 
 ## Add a Snyk integration in AWS CloudTrail Lake
 
@@ -43,7 +43,7 @@ During the setup, you must supply an **External ID** for the integration. The va
 
 ### External ID for a Single Snyk Organization
 
-If you are creating this integration for a single Snyk Organization, you will use your Snyk **Organization ID** as the **External ID.** You can find your Organization ID under Snyk **Organization Settings**.
+If you are creating this integration for a single Snyk Organization, use your Snyk **Organization ID** as the **External ID.** You can find your Organization ID under Snyk **Organization Settings**.
 
 <div align="left"><figure><img src="../../.gitbook/assets/event_forwarding_aws_cloudtrail_lake_org_id.png" alt="Organization ID on Snyk Organization Settings page"><figcaption><p>Organization ID on Snyk Organization settings page</p></figcaption></figure></div>
 
@@ -51,7 +51,7 @@ Copy the value in the **Organization ID** field to the **External ID** field in 
 
 ### External ID for a Snyk group
 
-If you are setting up this Organization for a Snyk Group, which will automatically include all child organizations, you will use your **Snyk Group ID** as the **External ID**. You can find your Group ID by clicking on the name of your Snyk group in the Snyk dashboard, and then navigating to the **Settings** page.
+If you are setting up this Organization for a Snyk Group, which automatically includes all child Organizations, use your **Snyk Group ID** as the **External ID**. You can find your Group ID by clicking on the name of your Snyk group in the Snyk dashboard, and then navigating to the **Settings** page.
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-groupid.png" alt="Group settings page"><figcaption><p>Group settings page</p></figcaption></figure>
 
@@ -59,7 +59,7 @@ Copy the value in the **Group ID** field to the **External ID** field in the AWS
 
 ### CloudTrail Lake Channel ARN
 
-When you are finished creating the Snyk integration in AWS CloudTrail Lake, copy the **Channel ARN** that is displayed on the integration page. You will need this for the next step.
+When you are finished creating the Snyk integration in AWS CloudTrail Lake, copy the **Channel ARN** displayed on the integration page. You need this for the next step.
 
 ## Configure the integration in Snyk (single Organization)
 
@@ -77,11 +77,11 @@ After this step is complete, Snyk immediately begins forwarding audit logs to AW
 
 ## Snyk App authorization
 
-If this is the first time you have set up an AWS CloudTrail Lake integration for your Organization, you will be prompted to complete the Snyk App authorization flow.
+If this is the first time you have set up an AWS CloudTrail Lake integration for your Organization, Snyk prompts you to complete the Snyk App authorization flow.
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-cloudtrail-auth.png" alt="Snyk App authorization" width="375"><figcaption><p>Snyk App authorization</p></figcaption></figure>
 
-After completing the authorization flow you will be redirected to the settings page for the integration.
+After completing the authorization flow, Snyk redirects you to the settings page for the integration.
 
 ## Configure the integration in Snyk (Snyk Group and child Organizations)
 
@@ -132,7 +132,7 @@ Select **Remove integration** and confirm that you want to remove the integratio
 
 <figure><img src="../../.gitbook/assets/aws-ctl-6.png" alt="Remove integration button"><figcaption><p>Remove integration button</p></figcaption></figure>
 
-This action removes Snyk’s configuration for this integration, which will prevent any further audit logs from being sent to AWS CloudTrail Lake. This does not remove the Snyk integration in AWS CloudTrail Lake. To do this, navigate to AWS CloudTrail Lake and delete the Snyk integration from the **Integration** list.
+This action removes the Snyk configuration for this integration, which prevents any further audit logs from being sent to AWS CloudTrail Lake. This does not remove the Snyk integration in AWS CloudTrail Lake. To do this, navigate to AWS CloudTrail Lake and delete the Snyk integration from the **Integration** list.
 
 ## Remove an AWS CloudTrail Lake integration (Snyk Group and child Organizations)
 
@@ -161,7 +161,7 @@ Replace `<EVENT-DATA-STORE-ID>` with the ID of the event data store that is asso
 
 ## Understanding the log data
 
-There are three (3) key fields to note when using the Snyk audit log data in AWS CloudTrail Lake.
+There are three key fields to note when using the Snyk audit log data in AWS CloudTrail Lake.
 
 `eventdata.useridentity`
 
@@ -173,4 +173,4 @@ This represents the type of audit event, for example, `api.access` or `org.cloud
 
 `eventdata.additionaleventdata`
 
-This field contains a raw JSON payload with more detailed information about the audit event. The content of the payload depends on the type of the event. For example, an API access event will include the accessed URL, while a settings change event will include before and after values for the changed setting.
+This field contains a raw JSON payload with more detailed information about the audit event. The content of the payload depends on the type of the event. For example, an API access event includes the accessed URL, while a settings change event includes before and after values for the changed setting.

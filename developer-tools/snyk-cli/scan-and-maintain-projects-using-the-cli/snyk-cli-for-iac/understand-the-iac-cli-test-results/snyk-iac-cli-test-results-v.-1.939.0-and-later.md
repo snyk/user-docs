@@ -6,7 +6,7 @@ The instructions in this section apply to any file format supported by Snyk Infr
 
 Snyk CLI analyzes your configuration file for issues and provides information and advice on how to resolve the issues discovered.
 
-For example, when scanning a Terraform file,  run the following command:
+For example, when scanning a Terraform file, run the following command:
 
 ```
 snyk iac test aws_api_gateway_stage_logging.tf

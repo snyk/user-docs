@@ -34,7 +34,7 @@ Among the most common options used in a CI/CD integration are the following:
 
 `-p`: Prune dependency trees, removing duplicate sub-dependencies. Continues to find all vulnerabilities, but may not find all of the vulnerable paths.
 
-\--org=\<ORG\_ID>: Specify the `ORG_ID` to run Snyk commands for a specific Organization. This influences where new Projects are created after running the `monitor` command, some availabilty of features, and private test limits. If you have multiple Organizations, you can set a default from the CLI using:
+\--org=\<ORG\_ID>: Specify the `ORG_ID` to run Snyk commands for a specific Organization. This influences where new Projects are created after running the `monitor` command, some availability of features, and private test limits. If you have multiple Organizations, you can set a default from the CLI using:
 
 ```
 $ snyk config set org=<ORG_ID>
@@ -68,6 +68,6 @@ You can use JSON output from Snyk commands to create custom test reports as buil
 
 ## Creating work items for new vulnerabilities
 
-Snyk allows you to automatically create new work items in JIRA; for details, see the [Jira integration ](../../integrations/jira-and-slack-integrations/jira-integration.md)documentation. You can customize this code for your specific requirements or adapt it to work with other work management systems.
+Snyk lets you automatically create new work items in Jira. For details, see the [Jira integration ](../../integrations/jira-and-slack-integrations/jira-integration.md)documentation. You can customize this code for your specific requirements or adapt it to work with other work management systems.
 
 See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started. You can also use the API endpoints [Create jira issue](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue) and [List all jira issues](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-jira-issues).

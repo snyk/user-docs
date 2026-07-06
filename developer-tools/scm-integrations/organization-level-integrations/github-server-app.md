@@ -20,11 +20,11 @@ This feature supports self-hosted instances of GitHub and Snyk [Universal Broker
 The Snyk GitHub Server App improves on many features compared to the Snyk GitHub Enterprise integration, including role-based granular access control, increased API rate limits, and the creation of an entry point for expanded and enhanced developer experiences.
 
 * RBAC (Role-Based Access Control) Compliance:
-  * With the GitHub Server App, the access control mechanism is decoupled from individual user accounts. Instead, it is associated with the app entity itself. This separation allows for better management and enforcement of RBAC policies, as access control is handled at the application level rather than being tied to individual user accounts.
+  * With the GitHub Server App, the access control mechanism is decoupled from individual user accounts. Instead, it is associated with the app entity itself. This separation allows better management and enforcement of RBAC policies, because access control is handled at the application level rather than being tied to individual user accounts.
 * Granular access control:
-  * The GitHub Server App allows for fine-grained control over access permissions at the repository level.
+  * The GitHub Server App provides fine-grained control over access permissions at the repository level.
 * Increased API rate limit:
-  * The GitHub Server App provides higher rate limits, allowing Snyk to make a larger number of API requests. This increased limit will assist in handling large-scale use cases, such as monorepos with a large number of Projects, GitHub organizations with a large number of repositories, and more.
+  * The GitHub Server App provides higher rate limits, letting Snyk make a larger number of API requests. This increased limit helps in handling large-scale use cases, such as monorepos with a large number of Projects, GitHub organizations with a large number of repositories, and more.
 * Enabler for an enhanced developer experience:
   * Pull request checks: The Checks tab experience in GitHub is exclusively accessible through the GitHub Cloud App, enabling an SCM native experience as part of potential future PR check workflow improvements.
   * Fix and upgrade pull requests: Pull requests initiated by Snyk are performed directly by the GitHub App rather than a service account.
@@ -38,11 +38,11 @@ When setting up the GitHub Server App, you can implement only one of the followi
 * One GitHub organization connected to multiple Snyk Organizations
 {% endhint %}
 
-In the Snyk UI navigate to the integrations page and select the **GitHub Server App** tile.
+In the Snyk Web UI, navigate to the integrations page and select the **GitHub Server App** tile.
 
 <figure><img src="../../.gitbook/assets/image (211).png" alt=""><figcaption><p>GitHub Server App tile highlighted in the Snyk UI</p></figcaption></figure>
 
-Clicking on the tile opens a modal that allows you to enter the URL of your GitHub Server. Entering the URL of your GitHub Server instance will redirect you to your GitHub instance, where you will be able to create the app.
+Clicking the tile opens a modal where you can enter the URL of your GitHub Server. Entering the URL of your GitHub Server instance redirects you to your GitHub instance, where you can create the app.
 
 <figure><img src="../../.gitbook/assets/image (212).png" alt=""><figcaption><p>Integration model prompting you for your GitHub Server's URL</p></figcaption></figure>
 
@@ -65,7 +65,7 @@ Specify whether you wish to install the app in all or a select number of the rep
 <figure><img src="../../.gitbook/assets/image (240).png" alt=""><figcaption><p>Install and authorize settings for the GitHub organization you are installing the GitHub Cloud App into</p></figcaption></figure>
 
 {% hint style="danger" %}
-The GitHub Server App will lose access to Snyk if it is uninstalled from the GitHub organization. If this happens, you can create a fresh integration in Snyk to regain access.
+The GitHub Server App loses access to Snyk if it is uninstalled from the GitHub organization. If this happens, you can create a fresh integration in Snyk to regain access.
 {% endhint %}
 
 ### Migrate from an existing GitHub Enterprise integration
@@ -75,7 +75,7 @@ If you are an Enterprise plan customer, you can migrate Snyk Targets to the GitH
 ### How to disconnect a non-brokered GitHub Server App integration
 
 {% hint style="warning" %}
-Disconnecting the Snyk GitHub Server App integration halts all scans for imported repositories. PR checks cannot be executed and Projects are deactivated in the Snyk Web UI.
+Disconnecting the Snyk GitHub Server App integration halts all scans for imported repositories. Snyk cannot run PR checks, and Projects are deactivated in the Snyk Web UI.
 
 Note that the GitHub App will remain listed on your GitHub organization until removed manually.
 {% endhint %}
@@ -86,20 +86,20 @@ Note that the GitHub App will remain listed on your GitHub organization until re
 
 <figure><img src="../../.gitbook/assets/image (262).png" alt="" width="375"><figcaption><p>Confirm disconnecting from GitHub Server App</p></figcaption></figure>
 
-After the integration is disconnected, imported Snyk Projects will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on pull requests.
+After the integration is disconnected, imported Snyk Projects are set to inactive, and you no longer get alerts, pull requests, or Snyk tests on pull requests.
 
-You can re-connect anytime; however, re-initiating the Snyk Projects for monitoring requires setting up the integration again.
+You can re-connect anytime. However, re-initiating the Snyk Projects for monitoring requires setting up the integration again.
 
 ### How to disconnect a brokered GitHub Server App integration
 
 {% hint style="warning" %}
-Disconnecting the Snyk GitHub Server App integration halts all scans for imported repositories. PR checks cannot be executed and Projects are deactivated in the Snyk Web UI.
+Disconnecting the Snyk GitHub Server App integration halts all scans for imported repositories. Snyk cannot run PR checks, and Projects are deactivated in the Snyk Web UI.
 
 Note that the GitHub App will remain listed on your GitHub organization until the app is removed manually.
 {% endhint %}
 
 Run `snyk-broker-config workflows connections disconnect` and select the connection you want to disconnect.
 
-After the integration is disconnected, imported Snyk Projects will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on pull requests.
+After the integration is disconnected, imported Snyk Projects are set to inactive, and you no longer get alerts, pull requests, or Snyk tests on pull requests.
 
-You can re-connect anytime; however, re-initiating the Snyk Projects for monitoring requires setting up the integration again.
+You can re-connect anytime. However, re-initiating the Snyk Projects for monitoring requires setting up the integration again.

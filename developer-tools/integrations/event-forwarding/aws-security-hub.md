@@ -1,6 +1,6 @@
 # AWS Security Hub
 
-The [AWS Security Hub](https://aws.amazon.com/security-hub/) integration sends Snyk issues to Security Hub, allowing you to centralize your security reporting, build custom alerting, and trigger automation. After it is configured, the integration automatically uploads Snyk issues to Security Hub as security findings. When issues are updated or new remediations become available, the corresponding Security Hub findings are automatically updated.
+The [AWS Security Hub](https://aws.amazon.com/security-hub/) integration sends Snyk issues to Security Hub, so you can centralize your security reporting, build custom alerting, and trigger automation. After it is configured, the integration automatically uploads Snyk issues to Security Hub as security findings. When issues are updated or new remediations become available, the corresponding Security Hub findings are automatically updated.
 
 There are two steps required to configure the integration:
 
@@ -28,16 +28,16 @@ Enter a **name** for the integration, along with the **AWS Account ID** and **AW
 After this step is complete, Snyk begins sending new issue events to Security Hub.
 
 {% hint style="info" %}
-Issues on existing Projects will not be sent to Security Hub unless those issues are updated. To backfill issues from existing projects, you can delete and re-import them.
+Issues on existing Projects are not sent to Security Hub unless those issues are updated. To backfill issues from existing Projects, you can delete and re-import them.
 {% endhint %}
 
 ## Snyk App authorization
 
-If this is the first time you have set up an AWS Security Hub integration for your Organization, you will be prompted to complete the Snyk App authorization flow.
+If this is the first time you have set up an AWS Security Hub integration for your Organization, Snyk prompts you to complete the Snyk App authorization flow.
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-securityhub-auth.png" alt="Snyk App authorization" width="375"><figcaption><p>Snyk App authorization</p></figcaption></figure>
 
-After completing the authorization flow you will be redirected to the settings page for the integration.&#x20;
+After completing the authorization flow, Snyk redirects you to the settings page for the integration.&#x20;
 
 ## Managing and deleting a Security Hub integration
 
@@ -47,8 +47,8 @@ Navigate to the [Security Hub integration settings page](https://app.snyk.io/man
 
 Clicking on the name of an integration opens the settings page for that integration, where you can view and update configuration information for the integration.
 
-To delete an integration, scroll to the bottom of the integration settings page and click the **Remove integration** button.
+To delete an integration, scroll to the bottom of the integration settings page and click **Remove integration**.
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-securityhub-delete.png" alt="Remove integration"><figcaption><p>Remove integration</p></figcaption></figure>
 
-After the integration is deleted, Snyk will no longer send issues to Security Hub. Issues that have already been sent to Security Hub will remain there until they are archived.
+After the integration is deleted, Snyk no longer sends issues to Security Hub. Issues already sent to Security Hub remain there until they are archived.

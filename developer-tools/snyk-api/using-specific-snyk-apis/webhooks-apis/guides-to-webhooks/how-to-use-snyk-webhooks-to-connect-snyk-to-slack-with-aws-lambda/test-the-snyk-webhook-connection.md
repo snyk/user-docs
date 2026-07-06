@@ -1,10 +1,10 @@
 # Test the Snyk webhook connection
 
-The Snyk Webhook only updates when there is a new vulnerability found, but you can test your implementation using Postman.
+The Snyk Webhook only updates when a new vulnerability is found, but you can test your implementation using Postman.
 
 If you don’t have Postman you can [install](https://www.postman.com/downloads/) it for free.
 
-To test, you will send a POST request to the AWS API Gateway with a sample payload that is secured with your API token.
+To test, send a POST request to the AWS API Gateway with a sample payload that is secured with your API token.
 
 Follow these steps to test the connection:
 
@@ -23,8 +23,8 @@ Follow these steps to test the connection:
 5.  Change the method to **POST** and add your API Gateway URL or Function URL. Refer to [AWS API Gateway: add the POST method to connect Snyk to Slack](aws-lambda-setup-set-up-the-trigger/with-api-gateway/aws-api-gateway-add-the-post-method-to-connect-snyk-to-slack.md) for instructions on finding the URL.
 
     <figure><img src="https://lh4.googleusercontent.com/5QxR-05QtK6FNpoyuPW06L_vyVAl6cCxMnph7euIKafc-YyGIgjaiA74KSNO93uTMGFGxNQnzwyfiZ5Oi3e1y0GA0P2INodvIbamhe6lpwwf1Kc7bCajYUPG0RcfedUOKMqI0l4mmuq1jECRHUiUtnsel7PiBxiIvddcCnplxwVDY9r0FDcYNKZPag" alt=""><figcaption><p>Postman POST method add AWS API Gateway URL</p></figcaption></figure>
-6.  Configure your pre-request script to look like the following code. This script get your API token and secures it so when Snyk sends it with the payload the Lambda function can decrypt the payload.\
-    The code follows; remember to change enter your API token for '`your-secret-string-here'`.\
+6.  Configure your pre-request script to look like the following code. This script gets your API token and secures it so that when Snyk sends it with the payload, the Lambda function can decrypt the payload.\
+    The code follows. Remember to enter your API token for '`your-secret-string-here'`.\
     \
     `postman.setEnvironmentVariable('x-hub-signature', CryptoJS.HmacSHA256(request.data, 'your-secret-string-here').toString(CryptoJS.digest)); postman.setEnvironmentVariable('x-hub-signature', 'sha256='+ postman.getEnvironmentVariable('x-hub-signature'));`\
 

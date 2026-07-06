@@ -26,7 +26,7 @@ Scenario: [assign-users-to-all-orgs](https://github.com/snyk-playground/cx-tools
 
 ### Add users to organizations at scale ahead of the first login
 
-Scenario: [Provision users to Orgs via API](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-management-with-the-api/provision-users-to-organizations-using-the-api)
+Scenario: [Provision users to Orgs using the API](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-management-with-the-api/provision-users-to-organizations-using-the-api)
 
 **Endpoint used:**\
 [Provision a user to the organization](../reference/organizations-v1.md#org-orgid-provision)
@@ -93,7 +93,7 @@ Scenario: [Broker-token-rotation](https://github.com/snyk-playground/cx-tools/bl
 [Add new integration](../reference/integrations-v1.md#org-orgid-integrations)\
 [Update existing integration](../reference/integrations-v1.md#org-orgid-integrations-integrationid) (to enable Broker)
 
-### For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the code base (source control management repository)
+### For a specific event or time, disable all interactions (pull requests, tests) from Snyk to the codebase (source control management repository)
 
 Scenario: [disable-all-interaction-from-snyk](https://github.com/snyk-playground/cx-tools/blob/main/scripts/disable-all-interaction-from-snyk.md) (complete procedure)
 

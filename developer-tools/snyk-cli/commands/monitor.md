@@ -8,7 +8,7 @@
 
 The `snyk monitor` command creates a project in your Snyk account to be continuously monitored for open-source vulnerabilities and license issues, sending the results to [snyk.io](https://snyk.io)
 
-Use the `monitor` command before integrating a project into production, to take a snapshot of the code to be monitored in order to avoid pushing vulnerabilities into production. Choose a test frequency in your Settings if you want to change the frequency from the default, which is daily.
+Use the `monitor` command before integrating a project into production, to take a snapshot of the code to be monitored and avoid pushing vulnerabilities into production. Choose a test frequency in your Settings if you want to change the frequency from the default, which is daily.
 
 After running the `snyk monitor` command, log in to the Snyk website and view your projects to see the monitor.
 
@@ -46,7 +46,7 @@ See also subsequent sections for options for specific build environments, packag
 
 ### `--reachability=<true|false>`
 
-Perform reachability analysis during the scan. This feature is currently in Snyk Preview. For more information, refer to [Reachability analysis](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/reachability-analysis)
+Perform reachability analysis during the scan. This feature is in Snyk Preview. For more information, refer to [Reachability analysis](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/reachability-analysis)
 
 Default: `false`
 
@@ -243,7 +243,7 @@ Snyk reports the test results per individual `pom.xml` file within the aggregate
 
 ### `--maven-skip-wrapper`
 
-Forces the use of a globally installed `mvn` command, even when a Maven wrapper (i.e. `mvnw` or `mvnw.cmd`) is present in the project.
+Forces the use of a globally installed `mvn` command, even when a Maven wrapper (that is, `mvnw` or `mvnw.cmd`) is present in the project.
 
 Some projects include a Maven wrapper but users may prefer (or be required by their CI environment) to use a globally installed `mvn` instead. This option gives an explicit escape hatch without having to remove the wrapper from the project.
 
@@ -335,7 +335,7 @@ This is useful when you have multiple projects with the same name in other `.sln
 
 ### `--dotnet-runtime-resolution`
 
-**Note:** This option in in Early Access and may change until it is released.
+**Note:** This option is in Early Access and may change until it is released.
 
 Required. You must use this option when you test .NET projects using Runtime Resolution Scanning.
 
@@ -343,9 +343,9 @@ Example: `snyk test --dotnet-runtime-resolution`
 
 ### `--dotnet-target-framework`
 
-**Note:** This option in in Early Access and may change until it is released.
+**Note:** This option is in Early Access and may change until it is released.
 
-Optional. You may use this option if your solution contains multiple `<TargetFramework>` directives. If you do not specify the option `--dotnet-target-framework`, all supported Target Frameworks will be scanned.
+Optional. You may use this option if your solution contains multiple `<TargetFramework>` directives. If you do not specify the option `--dotnet-target-framework`, Snyk scans all supported Target Frameworks.
 
 The Target Framework specified with this option should be defined following the standard [naming convention](https://learn.microsoft.com/en-us/dotnet/standard/frameworks#supported-target-frameworks)
 
@@ -405,7 +405,7 @@ You can specify how many sub-directories to search using `--detection-depth`.
 
 You can exclude directories and files using `--exclude`.
 
-Default:`--all-projects` automatically detects and scans Yarn Workspaces.with other projects.
+Default: `--all-projects` automatically detects and scans Yarn Workspaces with other projects.
 
 ## Option for CocoaPods projects
 
@@ -421,7 +421,7 @@ Default: false
 
 Indicate which specific Python commands to use based on the Python version.
 
-Snyk uses Python in order to scan and find your dependencies. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
+Snyk uses Python to scan and find your dependencies. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
 
 Default: `python` This executes your default python version. Run `python -V` to find out what your default version is.
 

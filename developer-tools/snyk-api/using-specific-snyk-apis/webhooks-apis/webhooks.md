@@ -10,7 +10,7 @@ Webhooks are delivered with a `Content-Type` of `application/json`, with the eve
 
 After your server is configured to receive payloads, it listens for any payload sent to the endpoint you configured. For security reasons, you should limit requests to those coming from Snyk.
 
-While consuming a webhook event, `X-Snyk-Event` header must be checked, as an end-point may receive multiple event types as described.
+While consuming a webhook event, you must check the `X-Snyk-Event` header, as an endpoint can receive multiple event types as described.
 
 ## **ping**
 
@@ -34,7 +34,7 @@ Content-Type: application/json
 
 ## **project\_snapshot**
 
-This event is triggered every time an existing project is tested and a new snapshot is created. It is triggered on every test of a project, whether or not there are new issues. This event is not triggered when a new project is created or imported. Currently supported targets/scan types are Open Source and container.
+This event is triggered every time an existing Project is tested and a new snapshot is created. It is triggered on every test of a Project, whether or not there are new issues. This event is not triggered when a new Project is created or imported. Supported targets and scan types are Open Source and container.
 
 ```sh
 POST /webhook-handler/snyk123 HTTP/1.1

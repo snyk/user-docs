@@ -2,7 +2,7 @@
 
 By using the `test` command and the `@snyk/protect` [package](https://github.com/snyk/snyk/tree/master/packages/snyk-protect) (replaced the snyk `protect` command), you are well set up to address known vulnerabilities. To address new vulnerabilities, which are constantly disclosed, use <kbd>snyk monitor</kbd>.
 
-Just before you deploy, run `snyk monitor` in your project directory:
+Before you deploy, run `snyk monitor` in your project directory:
 
 `cd ~/projects/myproject/`\
 `snyk monitor`

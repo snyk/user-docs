@@ -19,7 +19,7 @@ See also the following sections on specific APIs:
 
 For additional information, see the [API support articles](https://support.snyk.io/s/topic/0TOPU00000BgWMv4AN/snyk-api).
 
-This index includes the categories and names of REST GA and beta and V1 API endpoints, with the URL in the reference docs for each endpoint, and links to related information where available. REST is the default, and GA is the status unless beta is noted. V1 API is specified where applicable. This index is a work in progress; additional information is being added continually.
+This index includes the categories and names of REST GA and beta and V1 API endpoints, with the URL in the reference docs for each endpoint, and links to related information where available. REST is the default, and GA is the status unless beta is noted. V1 API is specified where applicable. This index is a work in progress; Snyk adds additional information continually.
 
 ## AccessRequests (beta)
 
@@ -337,7 +337,7 @@ The View Project History permission is needed to use this API.
 
 Projects can be Git repositories, Docker images, containers, configuration files, and much more. For more information, see [Snyk Projects](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects); the page includes the [Targets definition](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects#target).
 
-A typical import starts with using the endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to request a target to be processed. Then, use the endpoint [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) to poll the Import Job AP I for further details on completion and resulting Snyk Projects.
+A typical import starts with using the endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) to request a target to be processed. Then, use the endpoint [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) to poll the Import Job API for further details on completion and resulting Snyk Projects.
 
 ### [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) and [Get import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)
 
@@ -347,10 +347,10 @@ For information on when and how you can use Import targets, see [Gain visibility
 
 If a call to the Import targets endpoint fails, use [Get import job detail](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)s to help determine why. There are two types of failures:
 
-* The repository was rejected for processing, that is, HTTP status code 201 was not returned. This happens if there is an issue Snyk can see quickly for example:
+* The repository was rejected for processing, that is, HTTP status code 201 was not returned. This happens if there is an issue Snyk can see quickly, for example:
   * The repository does not exist.
   * The repository is unreachable by Snyk because the token is invalid or does not have sufficient permissions; there is no default branch.
-* The repository was accepted for processing, that is, the user got back HTTP status code 201 and a url to poll, but no projects were detected or some failed. This may occur because:
+* The repository was accepted for processing, that is, the user got back HTTP status code 201 and a url to poll, but no projects were detected or some failed. This can occur because:
   * There are no Snyk-supported manifests in this repository.
   * The repository is archived and the Snyk API calls to fetch files fail.
   * The individual project or manifest had issues during processing. In this case Snyk returns success: false with a message in the log.
@@ -610,11 +610,11 @@ More information: [Project type responses from the API](project-type-responses-f
 
 ### [Applying (project) attributes](../reference/projects-v1.md#org-orgid-project-projectid-attributes)
 
-By using the API endpoint Applying attributes, you can set attributes for Snyk Projects including business criticality, lifecycle stage, and environment once the project has been created . To do so:
+By using the API endpoint Applying attributes, you can set attributes for Snyk Projects including business criticality, lifecycle stage, and environment after the project is created. To do so:
 
 * Import the project using the API endpoint [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import).
 * Get the status API ID from [Import targets](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import).
-* Poll using the endpoint [Import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) until all imports have completed.
+* Poll using the endpoint [Import job details](../reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid) until all imports are completed.
 * Parse the project IDs from the `projectURL` field.
 * Use the endpoint [Applying attributes](../reference/projects-v1.md#org-orgid-project-projectid-attributes) to set the project attributes.
 
@@ -632,7 +632,7 @@ The Snyk V1 API endpoint [List all aggregated issues](../reference/projects-v1.m
 
 ### [List all Projects for an Org with the given Org ID](../reference/projects.md#orgs-org_id-projects)
 
-The query-string parameter for types is optional. The endpoint does not enforce specific project types and will return `no matching projects` if you enter a string that does not match a requested project type. See [Project type responses from the AP](project-type-responses-from-the-api.md)I for a list of project types.
+The query-string parameter for types is optional. The endpoint does not enforce specific project types and returns `no matching projects` if you enter a string that does not match a requested project type. See [Project type responses from the API](project-type-responses-from-the-api.md) for a list of project types.
 
 **More information:** [Slack app (for Jira integration)](../../integrations/jira-and-slack-integrations/slack-app.md) (Use: Find your Project ID);\
 [Snyk Projects](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects);\
@@ -670,7 +670,7 @@ The V1 Reporting endpoints support only Snyk legacy reporting, not the latest re
 
 The V1 Reporting API underlies Snyk legacy reporting. Using the V1 Reporting API, you can find answers to questions like how many issues your Organization has, or how many tests have been conducted in a given time period.
 
-The rate limit is up to 70 requests per minute, per user. For all requests above the limit, the response will have the status code `429: Too many requests`, until requests stop for the duration of the rate-limiting interval (one minute). For more information see [Rate limiting for V1 API](../v1-api.md#rate-limiting).
+The rate limit is up to 70 requests per minute, per user. For all requests above the limit, the response has the status code `429: Too many requests`, until requests stop for the duration of the rate-limiting interval (one minute). For more information, see [Rate limiting for V1 API](../v1-api.md#rate-limiting).
 
 **More information:** [Dependencies and licenses](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/dependencies-and-licenses)
 
@@ -832,7 +832,7 @@ To get a list of issues that have been fixed, use the endpoint [Get list of late
 
 ### [Get target by target ID](../reference/targets.md#orgs-org_id-targets-target_id)
 
-This endpoint retrieves a list of Snyk Targets, which is used if you want to delete Targets by target ID.
+This endpoint retrieves a list of Snyk Targets, which you use if you want to delete Targets by target ID.
 
 ### [Delete target by target ID](../reference/targets.md#orgs-org_id-targets-target_id-1)
 

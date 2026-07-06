@@ -29,13 +29,13 @@ If you use a Dockerfile to build your image, you can specify this when running `
 snyk container test <repository>:<tag> --file=Dockerfile
 ```
 
-Specifying a Dockerfile provides more context and allows Snyk to provide clear recommendations on how to fix discovered vulnerabilities.
+Specifying a Dockerfile provides more context and lets Snyk provide clear recommendations on how to fix discovered vulnerabilities.
 
-Snyk currently detects application vulnerabilities in your image by default.
+Snyk detects application vulnerabilities in your image by default.
 
 ## Monitor an image
 
-Snyk Container also allows you to monitor images. This provides the following advantages:
+Snyk Container also lets you monitor images. This provides the following advantages:
 
 * Snyk alerts you if new vulnerabilities that affect your image are disclosed without having to retest your image locally.
 * Snyk interactively filters the results and explores the list of vulnerabilities in your web browser.

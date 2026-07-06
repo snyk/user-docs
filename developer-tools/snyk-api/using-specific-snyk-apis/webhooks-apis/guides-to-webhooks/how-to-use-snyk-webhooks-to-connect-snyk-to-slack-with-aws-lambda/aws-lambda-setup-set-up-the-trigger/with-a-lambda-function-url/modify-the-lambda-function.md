@@ -1,6 +1,6 @@
 # Modify the Lambda function
 
-1. Open your Lambda function and click on **Configuration**.
+1. Open your Lambda function and click **Configuration**.
 2.  Select **Function URL** and then **Create function URL**.
 
     <figure><img src="../../../../../../../.gitbook/assets/Screenshot 2022-10-24 at 10.38.03 AM.png" alt=""><figcaption></figcaption></figure>

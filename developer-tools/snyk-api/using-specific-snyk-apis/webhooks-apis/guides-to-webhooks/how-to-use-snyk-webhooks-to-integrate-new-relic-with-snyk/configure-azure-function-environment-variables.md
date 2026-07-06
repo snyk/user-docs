@@ -7,7 +7,7 @@ Navigate to your Azure Function App Configuration and add the following new appl
 * **NEW\_RELIC\_SECURITY\_URL**: URL for the New Relic Security API, that is, https://security-api.newrelic.com/security/v1
 * **NEW\_RELIC\_LICENSE\_KEY**: New Relic License Key
 
-If you are using Azure DevOps Repos in your Snyk account, you may also want to configure the following application setting:
+If you are using Azure DevOps Repos in your Snyk account, you can also configure the following application setting:
 
 * **AZURE\_DEVOPS\_ORG**: the name of your Azure DevOps organization
 

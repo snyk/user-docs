@@ -7,11 +7,11 @@ Based on OpenAPI specifications, the Snyk REST API is designed to provide a cons
 * Consistent versioning
 * Improved performance
 
-The Search Audit Logs REST API deprecates offset-based pagination in favour of more performant and consistent cursor-based pagination. Our v1 APIs get slower the higher your page offset becomes and will eventually time out at very high page counts. We’ve improved this considerably in our REST API by using a cursor-based approach that consistently returns results at greater speeds regardless of page count.
+The Search Audit Logs REST API deprecates offset-based pagination in favor of more performant and consistent cursor-based pagination. Our v1 APIs get slower the higher your page offset becomes and eventually time out at high page counts. We’ve improved this considerably in our REST API by using a cursor-based approach that consistently returns results at greater speeds regardless of page count.
 
-As well as performance improvements we have also improved filtering capabilities, allowing users to provide multiple include or exclude events for finer-tuned filtering. In a addition to this, the API was only capable of searching for logs within a minimum time-frame of 24 hours, we’ve improved this with higher granularity time stamps [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339), which allows users to search within windows of minutes on a given day.
+As well as performance improvements, we have also improved filtering capabilities, letting users provide multiple include or exclude events for finer-tuned filtering. In addition to this, the API was only capable of searching for logs in a minimum time-frame of 24 hours; we’ve improved this with higher granularity time stamps [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339), which lets users search in windows of minutes on a given day.
 
-`` `api.access` `` logs are now excluded by default on all search queries unless explicitly provided as part of the \`events\` parameter. These are typically high-volume low-information logs that are superseded by our explicit action logs, e.g. group.create. Explicit action logs will contain richer contextual information for an action and should be favoured in all cases.
+`` `api.access` `` logs are now excluded by default on all search queries unless explicitly provided as part of the \`events\` parameter. These are typically high-volume low-information logs that are superseded by our explicit action logs, for example, group.create. Explicit action logs contain richer contextual information for an action and you should favor them in all cases.
 
 Here is what you could use in the v1 endpoints, and their GA REST equivalents:
 
@@ -19,7 +19,7 @@ Here is what you could use in the v1 endpoints, and their GA REST equivalents:
 
 ## Response
 
-Audit log event payloads have not changed as part of the REST migration, however, the structure of the response is different to conform to our standardised JSON API responses.
+Audit log event payloads have not changed as part of the REST migration; however, the structure of the response is different to conform to our standardized JSON API responses.
 
 The V1 response is returned as an array, e.g.
 
@@ -63,7 +63,7 @@ The V1 response is returned as an array, e.g.
 
 ` ``` `
 
-The REST response will contain the same event payload information, however, it will be in the following format:
+The REST response contains the same event payload information; however, it is in the following format:
 
 ` ``` `
 

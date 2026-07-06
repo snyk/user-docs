@@ -4,11 +4,11 @@ This page outlines the Snyk end-of-life (EOL) policy for images provided by the 
 
 ## Summary of EOL image policy
 
-As part of Snyk's commitment to helping customers ship secure code, Snyk will provide images that contain software supported by its upstream vendor as a convenience.
+As part of the Snyk commitment to helping customers ship secure code, Snyk provides images that contain software supported by its upstream vendor as a convenience.
 
 ### Image maintenance
 
-As a general practice, Snyk does not remove images once they are published. However, Snyk will not build, maintain, or ship images based on EOL software.
+As a general practice, Snyk does not remove images after they are published. However, Snyk does not build, maintain, or ship images based on EOL software.
 
 ### User responsibility
 
@@ -16,17 +16,17 @@ To ensure you are using the most current and secure images, monitor the software
 
 ### Example of an EOL image
 
-For example, Snyk stopped building images based on Python 3.7, which is not actively supported and does not receive security updates from Python. Thus users should migrate to Python 3.8 or higher.
+For example, Snyk stopped building images based on Python 3.7, which is not actively supported and does not receive security updates from Python. Migrate to Python 3.8 or higher.
 
 ## Snyk Images lifecycle
 
 ### Annual review
 
-Snyk conducts an annual review of images. Images containing software that has reached its end-of-life (EOL) status will not be rebuilt or updated. This means the CLI and base image will no longer receive updates, bug fixes, or security patches.
+Snyk conducts an annual review of images. Snyk does not rebuild or update images containing software that has reached its end-of-life (EOL) status. This means the CLI and base image no longer receive updates, bug fixes, or security patches.
 
 ### Image availability
 
-Snyk does not remove images from Docker Hub once the images are published. Users should check the [endoflife.date](https://endoflife.date/) website to ensure their build pipelines are not using EOL software.  Snyk will not issue warnings about an image becoming EOL.
+Snyk does not remove images from Docker Hub after the images are published. Check the [endoflife.date](https://endoflife.date/) website to ensure your build pipelines are not using EOL software. Snyk does not issue warnings about an image becoming EOL.
 
 Snyk follows a phased approach to building, maintaining, and discontinuing maintenance of an image. The phases are [Creation](snyk-images-and-eol-image-policy.md#creation-phase), [Active support and maintenance](snyk-images-and-eol-image-policy.md#active-support-and-maintenance-phase), and [End of Life (EOL)](snyk-images-and-eol-image-policy.md#end-of-life-eol-phase).
 
@@ -65,8 +65,8 @@ As long as the vendor supports the base image, the Snyk image will include the l
 
 ### End of Life (EOL) phase
 
-After the vendor software reaches EOL, that is, stops receiving active support and security updates, Snyk will also stop building and maintaining the impacted image.
+After the vendor software reaches EOL, that is, stops receiving active support and security updates, Snyk also stops building and maintaining the impacted image.
 
-Snyk will update the `snyk-images` repository and user documentation to remove the EOL images from the list of supported images.
+Snyk updates the `snyk-images` repository and user documentation to remove the EOL images from the list of supported images.
 
 For more information, see the lists of [currently supported](https://github.com/snyk/snyk-images?tab=readme-ov-file#current-images) and [unsupported ](https://github.com/snyk/snyk-images?tab=readme-ov-file#vendor-unsupported-base-images)images in the [`snyk-images` repository](https://github.com/snyk/snyk-images).

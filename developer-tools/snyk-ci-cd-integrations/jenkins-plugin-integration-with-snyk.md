@@ -51,7 +51,7 @@ The plugin can download the latest version of Snyk binaries and keep them up-to-
 
 If you are in a region other than `SNYK-US-01`, which uses the `https://api.snyk.io` endpoint, configure Snyk to use a different endpoint by changing the `SNYK_API` environment variable:
 
-* Go to **Manage Jenkins** > **System**.
+* Navigate to **Manage Jenkins** > **System**.
 * Under **Global Properties**, check the **Environment** variables option.
 * Click **Add**.
 * Set the name to `SNYK_API` and the value to the custom endpoint.

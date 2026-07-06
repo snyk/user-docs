@@ -32,7 +32,7 @@ These are issues that can be fixed by upgrading a direct dependencies version. T
 
 These are issues that cannot be resolved by upgrading a direct dependency. They contain the same information as the issues to fix by upgrading, with versions in which the vulnerability could be fixed if the dependency were upgradeable.
 
-### License Issues
+### License issues
 
 License issues are determined by the [license policy](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/license-policies) of your Snyk Organization. License issues contain the following information:
 
@@ -49,7 +49,7 @@ The descriptive information about the test results includes the following detail
 * **Package manager**: The package manager associated with this Open Source scan
 * **Target File**: The target file which was scanned for Open Source vulnerabilities
 * **Project Name**: The name of the directory in which this Project is located
-* **Open Source**: Information about whether or not this scan was performed on an Open Source Project.
+* **Open Source**: Information about whether this scan was performed on an Open Source Project.
 * **Project Path**: The path through which the target file is introduced
 * **Local Snyk Policy**: Information about whether this scan was performed on an Open Source Project. For more information, see [The .snyk file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file).
 * **Licenses**: Information about whether this Project was scanned for license issues
