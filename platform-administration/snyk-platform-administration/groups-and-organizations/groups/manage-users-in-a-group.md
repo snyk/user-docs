@@ -42,7 +42,7 @@ A Group Member can have different roles in different Organizations. You can filt
 
 <figure><img src="../../../.gitbook/assets/group-member-details.png" alt=""><figcaption><p>Group member details</p></figcaption></figure>
 
-Users with the Group Admin role have access to all Organizations in that Group, with the same access level as the Organization Admin role in these Organizations. You cannot change the role of a Group admin in a specific Organization, or delete a Group admin from one or more Organizations. However, you can remove a Group Admin from the Group using the **Remove from group** option
+Users with the Group Admin role have access to all Organizations in that Group, with the same access level as the Organization Admin role in these Organizations. You cannot change the role of a Group admin in a specific Organization, or delete a Group admin from one or more Organizations. However, you can remove a Group Admin from the Group using the **Remove from group** option.
 
 ## Promote a Group Member to a Group Admin
 

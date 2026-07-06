@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**
 
-The Snyk free subscription plan allows you to send up to 200 pending invitations every seven days and has only administrator roles.
+The Snyk free subscription plan lets you send up to 200 pending invitations every seven days and has only administrator roles.
 
 Enterprise plans have administrators, viewers, collaborators, and custom roles.
 

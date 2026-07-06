@@ -10,7 +10,7 @@ The permissions granted to a service account depend on the user role type it is 
 
 #### Access tokens
 
-Service accounts use Snyk [access tokens](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api/personal-access-tokens-pats) to secure your workflow. You control when the service account is created and can se the expiry date. The maximum expiry for an access token service account is one year, and on expiration you must create a new service account to continue using this authentication method.
+Service accounts use Snyk [access tokens](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api/personal-access-tokens-pats) to secure your workflow. You control when the service account is created and can set the expiry date. The maximum expiry for an access token service account is one year, and on expiration you must create a new service account to continue using this authentication method.
 
 Use an [OAuth 2.0 service account](service-accounts-using-oauth-2.0.md) instead of an access token service account, to prevent downtime when a token expires if you are using automation, for example, CI/CD pipeline.
 
@@ -24,4 +24,4 @@ For more details on implementing this type of service account, visit [Service ac
 
 #### API key (legacy)
 
-The service account has a Snyk API key associated with it. API keys are quick to implement in a workflow and do not expire. Due to the risk of a token which does not expire, this option is not recommended.
+The service account has a Snyk API key associated with it. API keys are quick to implement in a workflow and do not expire. Due to the risk of a token that does not expire, Snyk does not recommend this option.

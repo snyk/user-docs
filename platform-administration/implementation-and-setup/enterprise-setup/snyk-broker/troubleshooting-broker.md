@@ -25,7 +25,7 @@ By default, the log level of the Broker is set to INFO. All SCM responses, regar
 
 To keep the logs concise in normal operation, Snyk produces minimal information on the INFO level, tracking the requests coming from Snyk into the client as well as the downstream request made to the targeted system, Github, Gitlab, JIRA, and so on, and logging the url hit and the response code received.\\
 
-When you set `LOG_INFO_VERBOSE="true"`, the environment variable will add the headers in these log lines without requiring that you use debug.
+When you set `LOG_INFO_VERBOSE="true"`, the environment variable adds the headers in these log lines without requiring that you use debug.
 
 {% hint style="warning" %}
 If you override the default logging, some logs may be provided by other processes such as API requests, and may list credentials. Before you send any Broker logs with increased logging enabled, check for any passwords or tokens and redact them in bulk.
@@ -49,7 +49,7 @@ ENV BROKER_HEALTHCHECK_PATH /path/to/healthcheck
 
 The Broker Client exposes an endpoint at `/systemcheck`, which can be used to validate the connectivity and credentials of the brokered service, Git or another SCM, or the brokered container registry . This endpoint causes the Broker Client to make a request to a preconfigured URL and report on the success of the request. The supported configuration is:
 
-* `BROKER_CLIENT_VALIDATION_URL` - the URL to which the request will be made.
+* `BROKER_CLIENT_VALIDATION_URL` - the URL to which the request is made.
 * `BROKER_CLIENT_VALIDATION_AUTHORIZATION_HEADER` - \[optional] the `Authorization` header value of the request. Mutually exclusive with `BROKER_CLIENT_VALIDATION_BASIC_AUTH`.
 * `BROKER_CLIENT_VALIDATION_BASIC_AUTH` - \[optional] the basic auth credentials (`username:password`) to be base64 encoded and placed in the `Authorization` header value of the request. Mutually exclusive with `BROKER_CLIENT_VALIDATION_AUTHORIZATION_HEADER`.
 * `BROKER_CLIENT_VALIDATION_METHOD` - \[optional] the HTTP method of the request (default is `GET`).
@@ -83,7 +83,7 @@ If after running the Broker there is still an error connecting to the on-premise
 
 ### Common problems with Standalone Broker
 
-* If there is no log after performing the preceding steps, ensure that the customer has the correct Broker token. If so, ensure that the websocket has been established. Some firewalls will block this
+* If there is no log after performing the preceding steps, ensure that the customer has the correct Broker token. If so, ensure that the websocket is established. Some firewalls block this
 * Review the HTTP code in the request to the on-premise Git.
   * 404 - Not found - Ensure correct information in the Docker run command.
   * 401/403 - Check credentials.

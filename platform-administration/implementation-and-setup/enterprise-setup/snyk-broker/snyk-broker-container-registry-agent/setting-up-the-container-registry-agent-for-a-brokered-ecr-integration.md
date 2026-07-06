@@ -6,7 +6,7 @@ In Elastic Container Registries the brokered communication is the same as in oth
 
 The Container Registry Agent IAM Role or IAM User is an IAM Role or IAM User is used by the Container Registry Agent to assume a role with access to ECR.
 
-The Snyk ECR Service Role is an IAM Role with access to ECR and assumed by the Container Registry Agent IAM Role or IAM User to gain read-only access to ECR. The Snyk ECR Service Role ARN is provided to the Broker Client together with the region the ECR runs in, and is passed to the Container Registry Agent that will assume it.
+The Snyk ECR Service Role is an IAM Role with access to ECR and assumed by the Container Registry Agent IAM Role or IAM User to gain read-only access to ECR. The Snyk ECR Service Role ARN is provided to the Broker Client together with the region the ECR runs in, and is passed to the Container Registry Agent that assumes it.
 
 If there are multiple ECRs in multiple accounts that need to communicate with the Container Registry Agent, you must set up a Broker Client for each ECR.
 
@@ -25,7 +25,7 @@ Follow these steps to set up a single Container Registry Agent instance with acc
 
 ## **Step 1: Run the Container Registry Agent with a IAM User or IAM Role**
 
-In this step, create an IAM Role or an IAM User for use by the Container Registry Agent. The IAM Role or IAM User could be provided to the Container Registry Agent via the methods described in the [AWS docs](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
+In this step, create an IAM Role or an IAM User for use by the Container Registry Agent. The IAM Role or IAM User could be provided to the Container Registry Agent using the methods described in the [AWS docs](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
 
 The following examples explain how to provide the IAM Role or IAM User using one of the following methods. You can also provide a dedicated role in Amazon ECS tasks. For more information, see the [AWS docs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html).
 
@@ -51,7 +51,7 @@ The following examples explain how to provide the IAM Role or IAM User using one
 1. In the newly created role page, in the **Permissions** tab, create an **Inline policy**.
 2. In **Service** choose **STS**.
 3. In **Actions** choose **Write** > **AssumeRole**.
-4. In **Resources** choose **All resources** (you will harden the resources in a later step).
+4. In **Resources** choose **All resources** (you harden the resources in a later step).
 5.  In the **JSON** tab verify that the policy contains the following:
 
     ```
@@ -90,7 +90,7 @@ When you are running the Container Registry Agent image on the EC2 machine, the 
 4. Select **Programmatic access** as the **Access type**.
 5. Choose to go next with permission and tags.
 6. Review and create the user.
-7. Once the user is created, save its credentials (Access Key ID and Secret Access Key) for later use.
+7. After the user is created, save its credentials (Access Key ID and Secret Access Key) for later use.
 8. From the user's **Summary** page, copy the **User ARN** for later use.\
    Example: `arn:aws:iam::aws-account:user` or `SnykCraUser`
 
@@ -98,8 +98,8 @@ When you are running the Container Registry Agent image on the EC2 machine, the 
 
 1. In the newly created user page, in the **Permissions** tab create an **Inline policy**.
 2. In **Service** choose **STS**.
-3. In **Actions** choose **Write** >**AssumeRole**.
-4. In **Resources** choose **All resources** (you will harden the resources in a later step).
+3. In **Actions** choose **Write** > **AssumeRole**.
+4. In **Resources** choose **All resources** (you harden the resources in a later step).
 5.  In the **JSON** tab verify that the policy contains the following statement:
 
     ```
@@ -127,7 +127,7 @@ When you are running the Container Registry Agent image, the credentials could b
 
 ## Step 2: Create Snyk ECR Service Role and enable cross-account access to ECR
 
-In this step, you will create a Role in the account in which your ECR repositories reside. This Role will allow read-only access to your repositories and could be assumed by the Role created in the previous step.
+In this step, you create a Role in the account in which your ECR repositories reside. This Role allows read-only access to your repositories and could be assumed by the Role created in the previous step.
 
 ### **1. Create a read-only ECR policy to be used by the Snyk ECR Service Role**
 
@@ -209,7 +209,7 @@ This step hardens the usability of the Snyk ECR Service Role so that it can be a
     * In **Statement.Principal.AWS** enter the IAM Role or IAM User created in the Step 1 .\
       Example: `arn:aws:iam::aws-account:user` or `SnykCraEc2Role`\
       OR `arn:aws:iam::aws-account:role` or `SnykCraUser`, respectively
-    * In **Condition.StringEquals.sts:ExternalId** you may use an external ID of your choice, which will be used when the credentials object is provided to the Broker Client.
+    * In **Condition.StringEquals.sts:ExternalId** you can use an external ID of your choice, which is used when the credentials object is provided to the Broker Client.
     * To support multiple external IDs, enter a list of IDs in a square brackets.\
       Example: `sts:ExternalId: [ 11111111-1111-1111-1111-111111111111, 22222222-2222-2222-2222-222222222222 ]`
 5. Update the trust policy.
@@ -253,7 +253,7 @@ If the Container Registry Agent needs to access multiple ECR registries found in
 
 ## **Step 4: Provide** Snyk ECR Service Role **ARN and external ID to the Broker Client**
 
-In this step, the Role ARN of the SnykEcrServiceRole \_\*\*\_will be used by providing it to the Broker Client. The broker client will pass it to the Container Registry Agent, which will assume it to connect to ECR.
+In this step, you use the Role ARN of the SnykEcrServiceRole \_\*\*\_by providing it to the Broker Client. The Broker Client passes it to the Container Registry Agent, which assumes it to connect to ECR.
 
 1. Copy the **Role ARN** key that appears at the top of the **Summary** section of the[ SnykEcrServiceRole](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole).
 2. When running the Broker Client, provide the following environment variables to allow the Container Registry Agent to access your ECR account. No username and password are needed.

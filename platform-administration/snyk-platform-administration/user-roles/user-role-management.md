@@ -6,7 +6,7 @@
 Managing user roles is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk Manage roles functionality enables you to manage pre-defined and custom roles, allowing you to create and enforce set permissions for roles that reflect the users and functions in your Organization.
+The Manage roles functionality in Snyk lets you manage pre-defined and custom roles, so you can create and enforce set permissions for roles that reflect the users and functions in your Organization.
 
 Under **Manage roles**, you can:
 
@@ -35,7 +35,7 @@ For more information, see [User management with the API](../user-management-with
 
 You can create, edit, duplicate, and delete custom roles, granting your users the exact permissions they need to do their jobs across the Snyk platform. This ensures the right people have the right access to the right resources at the right time, maximizing transparency and reducing risk.
 
-You will find [pre-defined roles](pre-defined-roles.md) such as **Organization Admin** and **Organization Collaborator** listed under your Group. These roles can be selected to view their associated permissions, but permissions cannot be added, edited, or removed. Pre-defined role permissions can be duplicated to act as a starting point for any custom role creation.
+You can find [pre-defined roles](pre-defined-roles.md) such as **Organization Admin** and **Organization Collaborator** listed under your Group. You can select these roles to view their associated permissions, but you cannot add, edit, or remove permissions. Pre-defined role permissions can be duplicated to act as a starting point for any custom role creation.
 
 ## Create a custom role
 
@@ -45,7 +45,7 @@ Click the **Create new role** button and enter the **New role name**, **Role Typ
 
 <figure><img src="../../.gitbook/assets/2024-02-13_10-17-49.png" alt="" width="375"><figcaption><p>Create a custom Organization-level role</p></figcaption></figure>
 
-If you would like to continue, you can click the **Create role** button. Basic details about the role are visible in the top section of the **Role details** screen.
+To continue, click **Create role**. Basic details about the role are visible in the top section of the **Role details** screen.
 
 <figure><img src="../../.gitbook/assets/2024-02-13_10-25-17.png" alt="" width="563"><figcaption><p>Role Details for a custom role</p></figcaption></figure>
 
@@ -85,7 +85,7 @@ To copy a role, use the **Duplicate** button next to each role in the Member Rol
 
 <figure><img src="../../.gitbook/assets/2024-02-13_10-46-59.png" alt=""><figcaption><p>Duplicate a role using the Duplicate role button under Role Details</p></figcaption></figure>
 
-A Duplicate role pop-up will appear, prompting you to enter a unique name and description. You can select the option to use the description from the role you copied from, but this can be edited later. Click the **Duplicate Role** button to proceed with creation. A **Group Admin** or a custom role with **Role management** permissions can edit this role to assign new permissions to it or remove any permissions already assigned.
+A Duplicate role pop-up appears, prompting you to enter a unique name and description. You can select the option to use the description from the role you copied from, but this can be edited later. Click the **Duplicate Role** button to proceed with creation. A **Group Admin** or a custom role with **Role management** permissions can edit this role to assign new permissions to it or remove any permissions already assigned.
 
 <figure><img src="../../.gitbook/assets/2024-02-13_10-50-04.png" alt="" width="375"><figcaption><p>Duplicate role creation</p></figcaption></figure>
 
@@ -127,7 +127,7 @@ Click **Add members** > **Invite new members** and select the role to assign fro
 Click the **Add members** button > **Add existing members** to promote current Group Members to an Organization-specific role.
 
 {% hint style="warning" %}
-Snyk prevents users from assigning roles to others with more privileges than those the user who is assigning roles already has. If you try to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than you have, you will see the error **Cannot assign higher privilege role**.
+Snyk prevents users from assigning roles to others with more privileges than those the user who is assigning roles already has. If you try to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than you have, you see the error **Cannot assign higher privilege role**.
 {% endhint %}
 
 ### Assign roles to service accounts

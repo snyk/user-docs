@@ -60,7 +60,7 @@ You can manage users and permissions in your Groups. For details, see [Manage us
 
 ### Manage Tenant, Groups, and Organizations
 
-Snyk groups and organizations help to maintain collaboration across teams. For details, see [Tenant, Groups, and Organizations](snyk-platform-administration/groups-and-organizations/).
+Snyk Groups and Organizations help to maintain collaboration across teams. For details, see [Tenant, Groups, and Organizations](snyk-platform-administration/groups-and-organizations/).
 
 ### Define notifications
 

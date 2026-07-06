@@ -12,7 +12,7 @@ After you have installed the `snyk-broker-config` CLI tool:
 
 * Run `snyk-broker-config workflows connections create`.
 * Create a deployment if none exists, or select a deployment if more than one exists.\
-  A single deployment setup will be selected automatically.
+  Snyk selects a single deployment setup automatically.
 
 If you want to create a new deployment:
 
@@ -30,7 +30,7 @@ When you see the messages `Connection created` and `Ready to configure integrati
 
 Note that you can start the Broker client before the connection is integrated with any Organization. The Organization integration steps can be done in parallel with the Broker client container running.
 
-If you are adding a connection to a running Broker deployment, the Broker client might take up to two minutes to pick up the new connection.
+If you are adding a connection to a running Broker deployment, the Broker client can take up to two minutes to pick up the new connection.
 
 {% hint style="info" %}
 You can learn more about importing a code repository from an SCM into Snyk and creating connections, and more, with the [Universal Broker Snyk Learn ](https://learn.snyk.io/lesson/universal-broker/#3f799f7f-58a9-4225-53fb-9cc5b6913920)course.

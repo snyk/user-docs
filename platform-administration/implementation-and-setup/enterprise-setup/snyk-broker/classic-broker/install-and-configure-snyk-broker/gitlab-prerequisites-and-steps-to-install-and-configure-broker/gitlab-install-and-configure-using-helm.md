@@ -14,7 +14,7 @@ For the `gitlab` value, do not include `https://.`
 
 `ACCEPT_CODE` is [set to true by default](https://github.com/snyk/snyk-broker-helm/blob/465d4ef279755fa5c9507975a88348bab04c2264/charts/snyk-broker/templates/broker_deployment.yaml#L383) in the chart, as is [ACCEPT\_IAC](https://github.com/snyk/snyk-broker-helm/blob/465d4ef279755fa5c9507975a88348bab04c2264/charts/snyk-broker/templates/broker_deployment.yaml#L386C23-L386C43). You can disable them if needed using `disableAutoAcceptRules=true`, but otherwise, these are enabled.
 
-Use the environment variable `REMOVE_X_FORWARDED_HEADERS=true` to remove the `XFF` headers from the requests made by the Broker client to GitLab. This allows the Broker to work properly.
+Use the environment variable `REMOVE_X_FORWARDED_HEADERS=true` to remove the `XFF` headers from the requests made by the Broker client to GitLab. This lets the Broker work properly.
 
 Snyk Essentials is set by default to `false`. Enable it by setting the flag to `true`.
 
@@ -37,4 +37,4 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 
 You can pass any environment variable of your choice in the Helm command. For details, see [Custom additional options for Broker Helm Chart](../advanced-configuration-for-helm-chart-installation/custom-additional-options-for-broker-helm-chart-installation.md). Follow the instructions for [Advanced configuration for Helm Chart installation](../advanced-configuration-for-helm-chart-installation/) to make configuration changes as needed.
 
-You can verify that the Broker is running by looking at the settings for your brokered integration in the Snyk Web UI to see a confirmation message that you are connected. You can start importing Projects once you are connected.
+You can verify that the Broker is running by looking at the settings for your brokered integration in the Snyk Web UI to see a confirmation message that you are connected. You can start importing Projects after you are connected.

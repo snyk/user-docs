@@ -20,7 +20,7 @@ For code repository (SCM) integrations, you can generate a Broker token by using
 1. Use the endpoint [Update Existing Integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/integrations-v1#org-orgid-integrations-type) to enable Snyk Broker for a specific Organization and a specific SCM. Follow the example under "Set up a broker for an existing integration." This generates a Broker token in the UI.
 2. To generate a Broker token programmatically after enabling Snyk Broker, use the endpoint [Provision new Broker token](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/integrations-v1#org-orgid-integrations-integrationid-authentication-provision-token) to generate a Broker token.\
    You can see the generated Broker token in the API response body and on the Web UI.
-3. Verify the Broker token is generated in the Snyk Web UI under the specified SCM integration. by selecting **Settings** > **Integrations** for that specific integration to see the Broker token.
+3. Verify the Broker token is generated in the Snyk Web UI under the specified SCM integration by selecting **Settings** > **Integrations** for that specific integration to see the Broker token.
 4. After generating the Broker token, copy and save it and store it in a secure location for future use, or obtain it later using the Web UI.
 
 ## **Generate a Broker token in the Web UI**

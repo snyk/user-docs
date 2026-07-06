@@ -1,6 +1,6 @@
 # Example: setting up custom mapping for Entra ID
 
-The following information shows how to configure the custom mapping of roles for Entra ID (formerly Azure AD).
+This page shows how to configure the custom mapping of roles for Entra ID (formerly Azure AD).
 
 {% hint style="info" %}
 See the [Entra ID Enterprise Application example](../../configure-self-serve-single-sign-on-sso/azure-ad-enterprise-application-setup.md) for guidance setting up the initial Enterprise application.
@@ -14,7 +14,7 @@ The following are the prerequisites for configuring app roles:
 * If you select SAML, there is a requirement to add a custom claim; the step to do that is in these instructions.
 * You must have an existing Azure Enterprise application and app registration connected to that SSO configuration.
 
-The **steps** in **configuring App role**s follow.
+To configure app roles, follow these steps.
 
 1.  In your App registration menu, select the name of your Enterprise Application.
 
@@ -39,9 +39,9 @@ The **steps** in **configuring App role**s follow.
 6.  Select **Users and groups**; from the dropdown, select a role and select **Assign**.\\
 
     <figure><img src="../../../../../.gitbook/assets/image (158).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
-7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.\\
+7.  Repeat for all required groups and roles. Then verify that the list looks similar to this.\\
 
-    Note that it is also possible to add multiple Snyk roles to one App role, as the payload can be interpreted as a comma-separated string. However, this can not be used in conjunction with multiple App roles, as only one syntax will be respected (string or array).
+    You can also add multiple Snyk roles to one App role, as the payload can be interpreted as a comma-separated string. However, you cannot use this with multiple App roles, as Snyk respects only one syntax (string or array).
 
     <figure><img src="../../../../../.gitbook/assets/image (159).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
 8. If you have configured a SAML connection, add a custom claim to pass the roles array in the SAML payload to Snyk. Select **Single sign-on** in the left-hand menu.
@@ -59,4 +59,4 @@ Ensure you add the claim correctly. If you do not add it or you do it incorrectl
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2023-03-10 at 2.55.05 PM.png" alt="Custom claim"><figcaption><p>Custom claim</p></figcaption></figure>
 
-When you have completed these steps, reach out to your Snyk point of contact to have the configuration completed.
+After you complete these steps, contact your Snyk point of contact to complete the configuration.

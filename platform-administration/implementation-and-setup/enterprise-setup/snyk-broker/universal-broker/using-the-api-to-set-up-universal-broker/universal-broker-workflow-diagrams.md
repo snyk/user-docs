@@ -18,4 +18,4 @@ You start the workflow and select a deployment. You create a new connection for 
 
 You start the workflow and select a deployment. You select an existing connection to integrate with an Organization and enter the Org ID for that Organization. The connection is then integrated with the Organization by Org ID. The connection is ready.
 
-<figure><img src="../../../../../.gitbook/assets/Integrate-connection-workflow.png" alt="" width="375"><figcaption><p>Integrate a connection with an Organizaton</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Integrate-connection-workflow.png" alt="" width="375"><figcaption><p>Integrate a connection with an Organization</p></figcaption></figure>

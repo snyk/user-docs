@@ -1,6 +1,6 @@
 # Examples: setting up custom mapping for IdPs
 
-The following examples of how to set up a custom mapping for various identify providers are available here:
+The following examples show how to set up a custom mapping for various identity providers:
 
 * [Example: Setting up custom mapping for Okta](example-setting-up-custom-mapping-for-okta.md)
 * [Example: Setting up custom mapping for Entra ID](example-setting-up-custom-mapping-for-entra-id.md)

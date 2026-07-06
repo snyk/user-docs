@@ -1,7 +1,7 @@
 # Install and configure Broker using Helm
 
 {% hint style="info" %}
-[Broker version 4.205.1](https://github.com/snyk/broker/blob/cb4f89e05eb42605f076321b952cdb7e57bf4111/config.default.json#L8) has been [released](https://updates.snyk.io). In this version, all `ACCEPT` rule flags will be enabled by default. This reduces needed configuration. If you do not want a specific `ACCEPT` rule flag to be enabled, you can opt out of the default `ACCEPT` all behavior by adding `ACCEPT_=false` to your Broker client configuration.
+[Broker version 4.205.1](https://github.com/snyk/broker/blob/cb4f89e05eb42605f076321b952cdb7e57bf4111/config.default.json#L8) has been [released](https://updates.snyk.io). In this version, all `ACCEPT` rule flags are enabled by default. This reduces needed configuration. If you do not want a specific `ACCEPT` rule flag to be enabled, you can opt out of the default `ACCEPT` all behavior by adding `ACCEPT_=false` to your Broker client configuration.
 {% endhint %}
 
 {% hint style="info" %}
@@ -22,7 +22,7 @@ When you set up Snyk Broker for use in regions other than the default, additiona
 
 ## Install using the Snyk Broker Helm Chart
 
-The Helm chart does not manage connectivity, and thus, you will be responsible for managing [ingress](../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/ingress-options-with-snyk-broker-helm-installation.md) in the Kubernetes cluster.
+The Helm chart does not manage connectivity, so you are responsible for managing [ingress](../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/advanced-configuration-for-helm-chart-installation/ingress-options-with-snyk-broker-helm-installation.md) in the Kubernetes cluster.
 
 To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
 
@@ -48,7 +48,7 @@ Beginning with version 2.0.0, all created objects have a suffix based on the rel
 
 Additional commands are available to install [Snyk Broker - Container Registry Agent](../../../../implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/), needed to connect to Container Registries; `scmType`: `container-registry-agent`\\
 
-You can verify that the Broker is running by looking at the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a confirmation message that you are connected. You can start importing Projects once you are connected.
+You can verify that the Broker is running by looking at the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a confirmation message that you are connected. You can start importing Projects after you are connected.
 
 ## Advanced configuration using Helm
 
