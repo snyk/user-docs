@@ -2,7 +2,7 @@
 
 {% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
-‌Review the following steps to configure the Bitbucket integration with Snyk. For more details about setting up the integration, contact your Snyk account team.\\
+‌Review the following steps to configure the Bitbucket integration with Snyk. For more details about setting up the integration, contact your Snyk account team.
 
 ## Generate a BitBucket PAT
 
