@@ -1,3 +1,23 @@
+## 2026-03-25 - Updated 2026-07-06
+
+### POST - `/groups/{group_id}/export` - Updated
+- added the new optional request property `data/attributes/filters/effective_severity`
+
+- added the new optional request property `data/attributes/filters/event`
+
+- added the new optional request property `data/attributes/filters/event_type`
+
+- added the new optional request property `data/attributes/filters/git_branch`
+
+- added the new optional request property `data/attributes/filters/git_repo`
+
+- added the new optional request property `data/attributes/filters/is_suppressed`
+
+- added the new optional request property `data/attributes/filters/sdlc_stage`
+
+- added the new optional request property `data/attributes/filters/test_user_email`
+
+
 ## 2026-03-25 - Updated 2026-06-26
 
 ### POST - `/orgs/{org_id}/policies` - Updated
