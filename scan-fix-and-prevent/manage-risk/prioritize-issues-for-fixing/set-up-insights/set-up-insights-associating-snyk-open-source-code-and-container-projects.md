@@ -26,7 +26,7 @@ The container image is the build artifact that is deployed and running on your K
 
 ## Use Project tags to link Projects
 
-Add Snyk [Project tags](../../../snyk-platform-administration/snyk-projects/project-tags.md) to all the Projects used by your application to link these Projects together and allow Snyk to represent the whole application that you are testing.
+Add Snyk [Project tags](../../../snyk-platform-administration/snyk-projects/project-tags.md) to all the Projects used by your application to link these Projects together and let Snyk represent the whole application that you are testing.
 
 To associate two Projects together, add the exact same tag to both Projects. For example, add the same tag to your Snyk Open Source Projects and Snyk Container Project if they are related to each other.
 
@@ -34,9 +34,9 @@ See the examples at the end of this section.
 
 ## Requirements for Project tags
 
-* The same tag must be applied to the container image and Code or Open Source Projects,
-* The tag must follow the specified format,
-* The Projects do not have to be in the same Snyk Organization to be mapped but must be in the same Snyk Group,
+* The same tag must be applied to the container image and Code or Open Source Projects
+* The tag must follow the specified format
+* The Projects do not have to be in the same Snyk Organization to be mapped but must be in the same Snyk Group
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-06-06 at 23.29.29.png" alt="Project tags"><figcaption><p>Project tags</p></figcaption></figure>
 
@@ -83,7 +83,7 @@ Project Tags can be applied as follows:
 <table><thead><tr><th width="185.33333333333331">Product</th><th width="197">Method</th><th>Project Source</th></tr></thead><tbody><tr><td>Snyk Code</td><td><ul><li>API</li><li>UI</li></ul></td><td><p>For projects created by</p><ul><li>Git Import</li></ul></td></tr><tr><td>Snyk Open Source</td><td><ul><li>API</li><li>UI</li><li>CLI</li></ul></td><td><p>For projects created by</p><ul><li>Git Import</li><li>CLI Monitor</li></ul></td></tr><tr><td>Snyk Container</td><td><ul><li>API</li><li>UI</li><li>CLI</li></ul></td><td><p>For projects created by</p><ul><li>Git Import</li><li>CLI Monitor</li><li>Container Registry Integration</li></ul></td></tr></tbody></table>
 
 {% hint style="info" %}
-Snyk recommends applying the tags through the API in order to automate the process. For more information, see the endpoint [Add a tag to a project](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid-tags).
+Snyk recommends applying the tags through the API to automate the process. For more information, see the endpoint [Add a tag to a project](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid-tags).
 {% endhint %}
 
 ## UI example for Project tags

@@ -4,7 +4,7 @@ Snyk Issues operates at the Group level and provides a holistic view of all the 
 
 ## Funnel view
 
-The funnel view is a visual representation of your application's issues and risk factors. It allows you to filter the list of issues by specific risk factors or a combination of them. The **Deployed** and **Public facing** risk factors are clickable filters.
+The funnel view is a visual representation of your application's issues and risk factors. It lets you filter the list of issues by specific risk factors or a combination of them. The **Deployed** and **Public facing** risk factors are clickable filters.
 
 {% hint style="info" %}
 The OS Condition risk factor is now available only in the table view of the Issues UI.
@@ -21,7 +21,7 @@ By using the filters above the table view, you can filter your issues by the fol
 * **Source code** - view only issues related to specific source code.
 * **Issue severity** - view only critical, high, medium, or low-severity issues.
 * **"Fixed in" Available** - filter issues based on the "Fixed in" version availability.
-* **Project name** - filter issues based on the name(s) of selected Project(s).
+* **Project name** - filter issues based on the names of selected Projects.
 * **Snyk Product** - view only issues scanned by specific Snyk products.
 * **Add filter** - filter issues based on additional options. Click the **Show all project filters** option to view all available filters, organized by General, Assets, Issues, Projects.
 

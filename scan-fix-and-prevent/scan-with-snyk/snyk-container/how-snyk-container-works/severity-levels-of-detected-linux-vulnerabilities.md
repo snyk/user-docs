@@ -10,7 +10,7 @@ In certain cases, NVD assigns a different CVSS vector and severity score from th
 
 ## Relative importance feature
 
-Relative importance asserts a common severity for a vulnerability and shows the underlying detailed information for that severity based on multiple sources. This allows developers and analysts to view a common level of importance and exposes the underlying information that contributed to the asserted severity.&#x20;
+Relative importance asserts a common severity for a vulnerability and shows the underlying detailed information for that severity based on multiple sources. This lets developers and analysts view a common level of importance and exposes the underlying information that contributed to the asserted severity.&#x20;
 
 Snyk supports relative importance in Ubuntu, Debian, Red Hat Enterprise Linux (RHEL), CentOS, Amazon Linux, Oracle Linux, and SUSE Linux Enterprise Server (SLES).
 

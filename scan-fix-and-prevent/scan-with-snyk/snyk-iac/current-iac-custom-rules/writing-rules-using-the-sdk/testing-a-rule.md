@@ -43,7 +43,7 @@ resource "aws_redshift_cluster" "allowed" {
 ```
 {% endcode %}
 
-In the `want_msgs` field of the test case, you should add the msg fields of the resources that you expect your deny rule will evaluate and return, for example,`["input.resource.aws_redshift_cluster[denied].tags"]`.
+In the `want_msgs` field of the test case, add the msg fields of the resources that you expect your deny rule to evaluate and return, for example,`["input.resource.aws_redshift_cluster[denied].tags"]`.
 
 {% hint style="info" %}
 The `want_msgs` field should be an array containing hardcoded values corresponding to the computed `msg` field in the appropriate Rego rule.
@@ -79,20 +79,20 @@ To run all tests, run the following command:
  snyk-iac-rules test
 ```
 
-If your tests pass successfully, you will see an output like the following, assuming you have three different rules in your `rules/` folder:
+If your tests pass successfully, you see an output like the following, assuming you have three different rules in your `rules/` folder:
 
 ```
 PASS: 3/3
 ```
 
-However, if any of them fail, you will see an output like this:
+However, if any of them fail, you see an output like this:
 
 ```
 data.rules.test_MY_RULE: FAIL (1.12234ms)
 FAIL: 2/3
 ```
 
-If you have more than one rule in your `rule/`, folder you can target a specific test by running the following command:
+If you have more than one rule in your `rule/` folder, you can target a specific test by running the following command:
 
 ```
 snyk-iac-rules test --run test_MY_RULE

@@ -19,7 +19,7 @@ Configure the URL where your private Nexus Repository Manager hosts NuGet packag
 
 To do this:
 
-1. In the Snyk web UI, navigate to **Settings** > **Languages** > **.NET** > **Brokered package registries**.&#x20;
+1. In the Snyk Web UI, navigate to **Settings** > **Languages** > **.NET** > **Brokered package registries**.&#x20;
 
 If you use a brokered connection and have not configured the Universal Broker, follow the Universal Broker instructions to set it up.
 

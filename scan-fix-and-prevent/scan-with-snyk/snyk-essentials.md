@@ -4,7 +4,7 @@ Snyk Essentials helps AppSec teams better operationalize and scale the use of Sn
 
 ## Overview
 
-Snyk Essentials enables:
+Snyk Essentials provides:
 
 * Automated app asset discovery: Continually discover application assets and classify them by business context, ensuring security is in sync with development.
 * Tailored security controls: Define and manage appropriate security and compliance requirements, and verify that the correct controls are in place.
@@ -31,7 +31,7 @@ Snyk Essentials includes the following features:
 * You have the necessary permissions to onboard cloud-based SCM tools (Azure DevOps, GitHub, GitLab, and so on) to Snyk Essentials for repository asset discovery.
 
 {% hint style="info" %}
-When you integrate a Git code repository with Snyk Essentials, you should use a secondary token with a broad, complete view of the code repository, not only of what you imported into Snyk.
+When you integrate a Git code repository with Snyk Essentials, use a secondary token with a broad, complete view of the code repository, not only of what you imported into Snyk.
 
 Use a secondary token to countercheck everything onboarded using Snyk.
 
@@ -60,7 +60,7 @@ The security controls associated with the asset. Navigate to the [Coverage contr
 
 ### Coverage
 
-An assessment of whether applicable assets are scanned and tested by security tools (for example, Snyk Open Source), as it relates to an application security program. It represents a type of policy that allows you to specify what controls should be applied and, optionally, how often it needs to be run.
+An assessment of whether applicable assets are scanned and tested by security tools (for example, Snyk Open Source), as it relates to an application security program. It represents a type of policy that lets you specify which controls to apply and, optionally, how often to run them.
 
 ### Tags
 

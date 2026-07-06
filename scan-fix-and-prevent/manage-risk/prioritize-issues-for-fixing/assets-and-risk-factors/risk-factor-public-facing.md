@@ -20,7 +20,7 @@ Kubernetes Connector checks the images for ingress configuration. If not detecte
 
 The Public facing risk factor can be applied to your [Kubernetes Connector](../set-up-insights/set-up-insights-kubernetes-connector.md) integrations.
 
-The Public facing risk factor has significant implications for Kubernetes Connector integration. It affects how vulnerabilities and potential attack vectors are prioritized and managed within the Kubernetes environment. The continuous monitoring of Kubernetes events by the Kubernetes Connector ensures that any changes or potential risks are instantly evaluated and relayed to the Snyk platform. This real-time data allows for the dynamic adjustment of security policies and proactive risk mitigation, ensuring the integrity and security of the cloud-native infrastructure.
+The Public facing risk factor has significant implications for Kubernetes Connector integration. It affects how Snyk prioritizes and manages vulnerabilities and potential attack vectors in the Kubernetes environment. The continuous monitoring of Kubernetes events by the Kubernetes Connector ensures that Snyk evaluates any changes or potential risks and relays them to the Snyk platform. This real-time data supports the dynamic adjustment of security policies and proactive risk mitigation, ensuring the integrity and security of the cloud-native infrastructure.
 
 ## Technical details for the public-facing risk factor
 

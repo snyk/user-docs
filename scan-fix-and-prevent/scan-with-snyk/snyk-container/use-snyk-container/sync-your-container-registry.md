@@ -12,8 +12,8 @@ The sync process runs on a schedule you define and performs the following action
 * Lists tags: Snyk enumerates all available image tags for each repository.
 * Applies policy: Snyk evaluates the images against your import policy to determine which images to import or delete.
 * Creates output:
-  * For each matching repository, Snyk creates a target (e.g., `mycompany/web-app`). The target naming follows the pattern: `{repository_name}`
-  * For each matching image tag, Snyk creates a Project under that target (e.g., `mycompany/web-app:latest`), which contains the vulnerability scan results. The Project naming follows the pattern: `{repository_name}:{tag}`
+  * For each matching repository, Snyk creates a target (for example, `mycompany/web-app`). The target naming follows the pattern: `{repository_name}`
+  * For each matching image tag, Snyk creates a Project under that target (for example, `mycompany/web-app:latest`), which contains the vulnerability scan results. The Project naming follows the pattern: `{repository_name}:{tag}`
 
 ## Policy configuration
 

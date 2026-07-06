@@ -4,7 +4,7 @@ Before you can create a Cloud Environment, you must download an infrastructure a
 
 The template also enables a set of [Google service APIs](https://cloud.google.com/service-usage/docs/enabled-service) for your Google Cloud Project. This ensures that Snyk can use the necessary APIs to scan your Project's resources.
 
-You will use this IaC template to provision the role in [Step 2: Create the Google service account](step-2-create-the-google-service-account-web-ui.md).
+You use this IaC template to provision the role in [Step 2: Create the Google service account](step-2-create-the-google-service-account-web-ui.md).
 
 ## Download the IaC template
 

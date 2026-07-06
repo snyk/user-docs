@@ -1,13 +1,13 @@
 # Exclude files and ignore issues FAQs
 
-There are many considerations in determining how excluding files and ignoring issues will work, depending on several factors:
+There are many considerations in determining how excluding files and ignoring issues works, depending on several factors:
 
 * How the Project was imported: through an SCM integration, or through the CLI or an IDE
 * The scanning method being used: Open Source, Code, Container, or IaC
 * How the test is being done, in the UI, or through the CLI or an IDE
 * How the exclude or ignore was set: in a policy, through the UI or the API, or in the `.snyk` file
 
-This document collects questions the support team receives frequenty and provides the answers.
+This document collects questions the support team receives frequently and provides the answers.
 
 ## Questions related to scanning methods
 
@@ -15,7 +15,7 @@ This document collects questions the support team receives frequenty and provide
 
 * To ignore a code vulnerability, import the Project into the Snyk UI, and use the ignore button.
 * You cannot use the `.snyk` file to ignore issues in Code scans.
-* The `snyk-to-html` tool will display all issues for Code scans whether the issues are ignored or not.
+* The `snyk-to-html` tool displays all issues for Code scans whether the issues are ignored or not.
 
 ### How do I avoid scanning certain files for Open Source scans?
 
@@ -28,12 +28,12 @@ This document collects questions the support team receives frequenty and provide
 ### How do I avoid scanning certain files for Code scans?
 
 * Use an exclude in a `.snyk` file to omit all scanning of certain files or folders from a Snyk Code scan. For details, see the [`--file-path` option for the `snyk ignore` command](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore#file-path-less-than-path_to_resource-greater-than), [Ignore files or folders using glob expression - Snyk Code and `unmanaged`only](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore#ignore-files-or-folders-using-glob-expression-snyk-code-and-unmanaged-only), and [Exclude directories and files from Snyk Code CLI tests](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests).
-* When you import a repository to test using Snyk Code, use an `exclude:` statement in the `.snyk` file to omit certain directories and files from the import. For details see For details see [Exclude directories and files from Snyk Code CLI tests](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests).
-* A `.snyk` file with file or folder exclusions and contained in the root directory of your repository or SCM will exclude those files and folders from being scanned when you import using an SCM.
+* When you import a repository to test using Snyk Code, use an `exclude:` statement in the `.snyk` file to omit certain directories and files from the import. For details, see [Exclude directories and files from Snyk Code CLI tests](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests).
+* A `.snyk` file with file or folder exclusions, contained in the root directory of your repository or SCM, excludes those files and folders from being scanned when you import using an SCM.
 * The CLI `--exclude` option used with `snyk test` and `snyk monitor` does not apply for Code scans.
 * The Exclude Folders option in the import windows in the Web UI does not apply for Code scans.
 * The `.snyk` file does not apply for excluding files and directories from IDE scanning of Code.
-* For Code and Container scans only., you can use exclusion globs in API import, including an import with the `snyk-api-import` tool. This exclusion works the same way as an SCM integration exclusion.
+* For Code and Container scans only, you can use exclusion globs in API import, including an import with the `snyk-api-import` tool. This exclusion works the same way as an SCM integration exclusion.
 
 ### How do I avoid scanning certain files for Container scans?
 

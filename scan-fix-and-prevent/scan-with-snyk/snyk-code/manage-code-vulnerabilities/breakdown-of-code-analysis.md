@@ -6,7 +6,7 @@ When you import repositories, Snyk Code automatically tests for vulnerabilities 
 
 ## Code analysis components
 
-This table summarises the elements of a Code analysis Project.
+This table summarizes the elements of a Code analysis Project.
 
 <table><thead><tr><th width="160">Component</th><th>Description</th></tr></thead><tbody><tr><td>Header</td><td>Includes the details of the imported repository with a link to the repository in the Git repository, the Project name, and the Projects tabs: <strong>Overview</strong>, <strong>History</strong>, and <strong>Settings</strong>.</td></tr><tr><td>The Project Summary Information area</td><td>Includes the dates of the repository import and the last test of the repository, the Retest now option for an on-demand test, the name of the user who imported the repository, the name of the Project owner, and the number of code files that were analyzed and not analyzed. See <a href="./#retesting-code-repository">Retesting code repository</a></td></tr><tr><td><a href="../../../snyk-platform-administration/snyk-projects/project-information.md">Project filters</a></td><td>Includes a set of pre-defined criteria for filtering the displayed issues.</td></tr><tr><td>Vulnerability issues</td><td>Includes the vulnerability issues that Snyk Code discovered in the imported repository.</td></tr><tr><td><a href="breakdown-of-code-analysis.md#data-flow">Data flow</a></td><td>Displays the taint flow of the issue in the code.</td></tr><tr><td><a href="breakdown-of-code-analysis.md#fix-analysis">Fix analysis</a></td><td>Provides additional details about the discovered vulnerability type, best practices for preventing this issue, and code examples of fixes.</td></tr><tr><td>CWE</td><td>The CWE (Common Weakness Enumeration) ID of the specific vulnerability type and a link to the CWE website, where this vulnerability type is described. See <a href="breakdown-of-code-analysis.md#example-cwe-22-path-traversal">Example: CWE-22: Path Traversal</a>.</td></tr><tr><td><a href="./#open-repository-external-link">Open repository external link</a></td><td>Quick access to the integrated Git repository for immediate remediation.</td></tr><tr><td>Imported by</td><td>The Git repository username who imported the analyzed repository.</td></tr><tr><td><a href="../../../snyk-platform-administration/snyk-projects/project-information.md">Project owner</a></td><td>Identifies the lead for the Project in your Organization for administrative purposes only; it does not impact the Snyk Project itself. This is not a required field and is left blank by default.</td></tr><tr><td><a href="../../../snyk-platform-administration/snyk-projects/project-attributes.md">Environment</a></td><td>The Environment attribute describes the software's context, ranging from client-side (Frontend) to server-side (Backend), private (Internal) to public (External), across platforms like Mobile, Cloud (SaaS), On-Premises, Hosted services, and Distributed systems.</td></tr><tr><td><a href="../../../snyk-platform-administration/snyk-projects/project-attributes.md">Business criticality</a></td><td>When the Risk Score feature is enabled, the Business Criticality attribute automatically influences the score, scaling it to the most significant attribute level. See <a href="../../../manage-risk/prioritize-issues-for-fixing/risk-score.md">Risk Score</a>.</td></tr><tr><td><a href="../../../snyk-platform-administration/snyk-projects/project-attributes.md">Lifecycle</a></td><td>The Lifecycle attribute categorizes a Pro, Development, or Sandbox.</td></tr><tr><td><a href="../../../snyk-platform-administration/snyk-projects/project-tags.md">Tags</a></td><td>The Snyk Project tags feature enables the addition, removal, and use of custom metadata tags to organize and filter Projects, simplifying Project management and navigation.</td></tr><tr><td>Analysis summary</td><td>The number of code files analyzed in the repository and the percentage of the analyzed files out of the total repository code files.</td></tr><tr><td>Repo breakdown</td><td><ul><li><strong>Analyzed Files</strong>: Includes files that have been reviewed by Snyk Code, encompassing recognized extensions and programming languages.</li><li><strong>Unanalyzed Files:</strong> Consists of text files yet to be analyzed because of unsupported languages or extensions.</li><li><strong>Unknown</strong>: Files without recognized extensions, potentially including multimedia content (such as pictures and videos), binaries, proprietary format files, or any other formats that fall outside Snyk Code's scope of interest.</li></ul></td></tr></tbody></table>
 
@@ -14,11 +14,11 @@ This table summarises the elements of a Code analysis Project.
 
 Data flow shows the location of the discovered issue in your source code and how it flows throughout your application. It shows the taint flow of the issue in the code, with a step-by-step visualization from the source to the sink, presenting the code lines of all the steps in the flow.
 
-The source is the input point of the potential problem. This is a point in the application where a user or an external device can enter data, which will potentially violate the security of the application. For example, in an SQL Injection issue, the source will be a form or any other data input area filled by a user.
+The source is the input point of the potential problem. This is a point in the application where a user or an external device can enter data that can potentially violate the security of the application. For example, in an SQL Injection issue, the source is a form or any other data input area filled by a user.
 
-The sink is the operation in the code where the application executes the problem. This point must receive clean input, or it can be exploited. For example, in an SQL Injection issue, the sink will be the internal operation that instructs the DB to perform certain actions according to the received input.
+The sink is the operation in the code where the application executes the problem. This point must receive clean input, or an attacker can exploit it. For example, in an SQL Injection issue, the sink is the internal operation that instructs the DB to perform certain actions according to the received input.
 
-Every issue discovered by Snyk Code has a data flow. If an issue has only one step, for example, in the case of hardcoded secrets, the source of the issue will be displayed on the Data flow page.
+Every issue discovered by Snyk Code has a data flow. If an issue has only one step, for example, in the case of hardcoded secrets, the source of the issue appears on the Data flow page.
 
 ### View Data flow
 
@@ -41,7 +41,7 @@ In the following Path Traversal issue, the developer has not sanitized the input
 
 ### Open Data flow external link
 
-To open the displayed source code on the Git repository, select the file name above the right panel. In this example, the file name is "routes/profileImageUrlUpload.ts".
+To open the displayed source code on the Git repository, select the file name. In this example, the file name is "routes/profileImageUrlUpload.ts".
 
 The source code appears in the integrated Git repository, showing you exactly where to fix the vulnerability. You can make the required fix to address the vulnerability in your code.
 
@@ -55,7 +55,7 @@ To explore in-depth details about the specific vulnerability identified, you can
 
 Some vulnerabilities contain links to interactive lessons on understanding, fixing, and preventing vulnerability. See [Snyk Learn](https://learn.snyk.io/).
 
-<figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis.png" alt="Fis analysis page for Path Traversal vulnerability"><figcaption><p>Fix analysis page for Path Traversal vulnerability</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis.png" alt="Fix analysis page for Path Traversal vulnerability"><figcaption><p>Fix analysis page for Path Traversal vulnerability</p></figcaption></figure>
 
 ### View Fix analysis
 
@@ -75,7 +75,7 @@ The **Fix analysis** page enables you to do the following:
 
 ### **Open Fix analysis external link**
 
-To open the code fix for the vulnerability on the Git repository, select the Git repository above the right panel. This will show you the differences in the Git repository code that address the issue. In this example, the Git repository name is "eclipse-vertx/vert.x".
+To open the code fix for the vulnerability on the Git repository, select the Git repository name. This shows you the differences in the Git repository code that address the issue. In this example, the Git repository name is "eclipse-vertx/vert.x".
 
 <figure><img src="../../../.gitbook/assets/vulnerability-fix-analysis-example.png" alt="Data flow of a Path Traversal vulnerability issue."><figcaption><p>Fix analysis of a Path Traversal vulnerability issue</p></figcaption></figure>
 
@@ -124,6 +124,6 @@ For CWE-22 Path Traversal, if the vulnerability occurs in a test, it is Low seve
 
 ## Example: CWE-601: Open Redirect
 
-For CWE-2601 Open Redirect, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is Medium severity.
+For CWE-601 Open Redirect, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is Medium severity.
 
 <figure><img src="../../../.gitbook/assets/image (75).png" alt="Decision flow chart for Priority Score CWE-601 Open Redirect"><figcaption><p>Decision flow chart for Priority Score CWE-601 Open Redirect</p></figcaption></figure>

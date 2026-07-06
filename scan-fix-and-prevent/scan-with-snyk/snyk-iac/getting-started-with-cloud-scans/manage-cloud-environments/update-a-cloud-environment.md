@@ -82,7 +82,7 @@ curl -X PATCH \
 
 #### Google
 
-`data.attributes.options.service_account_email` is required. You can choose to specify the Project ID explicitly with a `data.attributes.options.project_id` field, but it cannot be different from the current ProjectProject ID.
+`data.attributes.options.service_account_email` is required. You can choose to specify the Project ID explicitly with a `data.attributes.options.project_id` field, but it cannot be different from the current Project ID.
 
 ```
 curl -X PATCH \

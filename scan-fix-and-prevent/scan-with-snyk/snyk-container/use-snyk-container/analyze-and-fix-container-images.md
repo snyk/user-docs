@@ -67,7 +67,7 @@ When providing public base image recommendations, Snyk bases its logic on the or
 The Snyk recommendations for upgrading the base image refer to:
 
 * **Minor upgrades**: the safest and best minor upgrade available
-* **Major upgrades**: an option for a major upgrade that will reduce more vulnerabilities but with greater risk
+* **Major upgrades**: an option for a major upgrade that reduces more vulnerabilities but with greater risk
 * **Alternative upgrades**: viable image options for replacing your current base image with possible different base images that provide the least amount of vulnerabilities.
 * Recommendation to rebuild your base image if it is outdated.
 

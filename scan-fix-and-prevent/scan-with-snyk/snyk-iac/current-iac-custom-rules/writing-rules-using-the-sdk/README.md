@@ -1,6 +1,6 @@
 # Writing rules using the SDK
 
-To get you started with the SDK, you will learn how to:
+To get you started with the SDK, you learn how to:
 
 1. [Parse a fixture file](parsing-an-input-file.md), to help you understand how to write a rule.
 2. [​Write a rule with the SDK](writing-a-rule.md) using Rego.

@@ -1,6 +1,6 @@
 # Assets and risk factors
 
-The capabilities of the SnykWeb UI Issues menu rely on understanding your application context to help you better prioritize your security issues. It does that by understanding how your application is configured and relying on that information to provide you with triage and prioritization of your assets and issues for the Snyk Essentials plan, and it also adds specific [risk factors](./#risk-factors) and [evidence graph](../using-the-issues-ui/evidence-graph.md) information.
+The capabilities of the Snyk Web UI Issues menu rely on understanding your application context to help you better prioritize your security issues. Snyk does this by understanding how your application is configured and using that information to provide triage and prioritization of your assets and issues for the Snyk Essentials plan. It also adds specific [risk factors](./#risk-factors) and [evidence graph](../using-the-issues-ui/evidence-graph.md) information.
 
 * [Assets](./#assets) are analyzed using Snyk Issues, focusing on images, Kubernetes resources, and packages to understand how they all interact with each other.
 * [Risk factors](./#risk-factors) are analyzed using Snyk Issues and grouped into four main categories:
@@ -26,11 +26,11 @@ Kubernetes resources do not map to the Snyk Projects. These are internal entitie
 
 Packages are assets that represent a software package. Snyk Open Source and Snyk Code products perform security scans on files. These files represent the package manager declaration and the source code of a software package, respectively. A package is a representation of that software package.
 
-Packages can be mapped one to one with the Snyk Projects created by the scans performed by Snyk Open Source and Snyk Code. All the issues identified by these products and attributed to these Projects will be mapped to the package entity.
+Packages can be mapped one to one with the Snyk Projects created by the scans performed by Snyk Open Source and Snyk Code. Snyk maps all the issues identified by these products and attributed to these Projects to the package entity.
 
-The term Package is a very coarse abstraction. It does not have versions. It is a representation of the current state of the software package at a point in time. The point in time is determined by the time when the Snyk processing pipeline is completed and the state of Snyk Projects at that time.
+The term Package is a coarse abstraction. It does not have versions. It is a representation of the current state of the software package at a point in time. The point in time is determined by the time when the Snyk processing pipeline is completed and the state of Snyk Projects at that time.
 
-Snyk Open Source uses the word package to refer to the third-party dependencies declared in the package dependency manifest. Snyk does not currently expose the granularity of the third-party dependencies. However, from the prioritization data model point of view, there is no distinction between third-party and first-party packages. These would be represented as a package object at that point in time.
+Snyk Open Source uses the word package to refer to the third-party dependencies declared in the package dependency manifest. Snyk does not expose the granularity of the third-party dependencies. However, from the prioritization data model point of view, there is no distinction between third-party and first-party packages. Snyk represents these as a package object at that point in time.
 
 ## Risk factors
 
@@ -40,7 +40,7 @@ By understanding your images, packages, and Kubernetes resources as "application
 * [OS condition](risk-factor-os-condition.md)
 * [Public facing](risk-factor-public-facing.md)
 
-You can enable and disable all of these "application context" risk factors through the Group **Settings**, on the **Issues** tab. If you choose to disable a risk factor, a provider selection, or the Kubernetes cluster mapping, Snyk will no longer compute them.
+You can enable and disable all of these "application context" risk factors through the Group **Settings**, on the **Issues** tab. If you choose to disable a risk factor, a provider selection, or the Kubernetes cluster mapping, Snyk no longer computes them.
 
 Depending on the integration options enabled for your application, risk factors are applied differently. You can [prioritize your integrations](../set-up-insights/#prioritize-your-integrations) by customizing the available Insights options from the Group settings.
 

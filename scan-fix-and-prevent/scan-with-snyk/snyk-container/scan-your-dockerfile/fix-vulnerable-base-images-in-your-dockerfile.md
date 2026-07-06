@@ -2,7 +2,7 @@
 
 ## Automatic Pull Requests (PRs)
 
-Snyk detects vulnerable base images by scanning your Dockerfile when importing a Git repository and helps you fix them using automatic pull requests. This allows you to examine security issues before you build the image and fix them before they land in your registry or in production.
+Snyk detects vulnerable base images by scanning your Dockerfile when importing a Git repository and helps you fix them using automatic pull requests. This lets you examine security issues before you build the image and fix them before they land in your registry or in production.
 
 Supported Git-based repository managers for Dockerfile fix PRs include:
 
@@ -15,7 +15,7 @@ Supported Git-based repository managers for Dockerfile fix PRs include:
 * GitHub Server
 * Azure Repos
 
-For any Dockerfile Project created in Snyk, if the base image is a [Docker Official image](https://docs.docker.com/docker-hub/official_images/), the results include a list of suitable base images that can be used instead of the existing, more vulnerable one. For more information, see [Analyze and fix container images](../use-snyk-container/analyze-and-fix-container-images.md).
+For any Dockerfile Project created in Snyk, if the base image is a [Docker Official image](https://docs.docker.com/docker-hub/official_images/), the results include a list of suitable base images you can use instead of the existing, more vulnerable one. For more information, see [Analyze and fix container images](../use-snyk-container/analyze-and-fix-container-images.md).
 
 Snyk then automatically issues a fix pull request against your Dockerfile to upgrade to the latest minor version available.
 
@@ -35,7 +35,7 @@ To enable automatic update PRs, navigate to **Settings** > **Integrations** and 
 
 ## Open a fix PR manually
 
-Alternatively, you can open a fix PR manually from the Project page by clicking **Open a Fix PR** for the base image version you wish to upgrade to.
+Alternatively, you can open a fix PR manually from the Project page by clicking **Open a Fix PR** for the base image version you want to upgrade to.
 
 <figure><img src="../../../.gitbook/assets/open_fix_PR.png" alt="Open a fix PR to upgrade the base image"><figcaption><p>Open a fix PR</p></figcaption></figure>
 

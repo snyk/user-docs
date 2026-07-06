@@ -5,10 +5,10 @@
 
 Policies are available only with Snyk Enterprise plans and apply only to Snyk Open Source scans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
-The `.snyk` file is a policy file that Snyk uses to define specific analysis behaviors for Open Source, Snyk Code, and Snyk IaC. and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](the-.snyk-file.md) for details.
+The `.snyk` file is a policy file that Snyk uses to define specific analysis behaviors for Open Source, Snyk Code, and Snyk IaC, and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](the-.snyk-file.md) for details.
 {% endhint %}
 
-Snyk policies contain rules to define how Snyk behaves when encountering specific types of Open Source issues. With policies, you can identify types of issues based on conditions, such as `no exploit available`, and then apply actions to these issues, such as changing the severity. Thus by using customizable Snyk policies, you can define actions for specific types of issues encountered in scanning.
+Snyk policies contain rules to define how Snyk behaves when encountering specific types of Open Source issues. With policies, you can identify types of issues based on conditions, such as `no exploit available`, and then apply actions to these issues, such as changing the severity. Using customizable Snyk policies, you can define actions for specific types of issues encountered in scanning.
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Snyk Policy manager"><figcaption><p>Snyk Policy manager</p></figcaption></figure></div>
 
@@ -16,7 +16,7 @@ Using the Snyk Policy Manager, you can view, create, and edit policies. For deta
 
 ## Benefits of Snyk policies
 
-Policies give you a quick and automated way to identify and triage issues that are irrelevant to or unimportant in your application development. This reduces the noise level, saving valuable development time and allowing developers to take more responsibility for and ownership of security.
+Policies give you a quick and automated way to identify and triage issues that are irrelevant to or unimportant in your application development. This reduces the noise level, saving valuable development time and letting developers take more responsibility for and ownership of security.
 
 Policies help prioritize issues to address and can ensure vulnerable or non-compliant components do not escape notice. Policies are part of the governance framework of your company.
 

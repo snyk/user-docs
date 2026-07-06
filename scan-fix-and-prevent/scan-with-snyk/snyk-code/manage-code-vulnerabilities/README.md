@@ -26,7 +26,7 @@ The following provides an overview of the testing process in Snyk Code based on 
 
 ### Retesting code repository
 
-If you want to check for the most recent vulnerabilities in your repository, you can do a manual test by selecting the **Retest now** option. This will trigger Snyk Code to take a fresh snapshot of your repository and analyze its source code files. The results will then be displayed on the Code Analysis page. Take into consideration that Snyk counts a manual test as a new test. See [What counts as a test?](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/what-counts-as-a-test)
+If you want to check for the most recent vulnerabilities in your repository, you can do a manual test by selecting the **Retest now** option. This triggers Snyk Code to take a fresh snapshot of your repository and analyze its source code files. The results then appear on the Code Analysis page. Take into consideration that Snyk counts a manual test as a new test. See [What counts as a test?](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/what-counts-as-a-test)
 
 You can also use the **Retest now** option to apply the exclusion rules of the `.snyk` file to an imported repository. See [Exclude directories and files from Project import](../../import-project-repository/exclude-directories-and-files-from-project-import.md).
 
@@ -97,7 +97,7 @@ To access the repository on the integrated Git repository platform, navigate to 
 
 The result history is shown on the **History** page of the **Code Analysis** Project. This page displays the snapshots taken when a test was performed. You can review Snyk Code test results for all the testing phases. See [Code testing from import to retest](./#code-testing-from-import-to-retest).
 
-On the **History** page, only two distinct snapshots are displayed. A snapshot is deemed unique if either the repository or its associated vulnerability findings have altered since the last assessment, resulting in a snapshot that showcases these changes. If there have been no changes in the repository or the vulnerability results since the last test, the new snapshot will replicate the prior one. Consequently, this will be listed as an additional test run on the **History** page. This means while the page may present multiple test entries, only up to two will feature distinct results.
+The **History** page displays only two distinct snapshots. A snapshot is unique if either the repository or its associated vulnerability findings have changed since the last assessment, resulting in a snapshot that shows these changes. If there have been no changes in the repository or the vulnerability results since the last test, the new snapshot replicates the prior one. As a result, the page lists this as an additional test run. This means that while the page can present multiple test entries, only up to two feature distinct results.
 
 To view Project history:
 
@@ -122,8 +122,7 @@ Manage Project settings as follows:
 
 Snyk Code goes beyond simple static analysis by tracking vulnerabilities across multiple scans, even as your codebase evolves. This ensures consistent and accurate vulnerability management, regardless of code refactoring, file renaming, or positional changes.\
 \
-Consider a scenario where a vulnerability exists in `file1.js` on line 45. After a code refactor, the vulnerability persists but is now located in a different file and line. To effectively address such scenarios, Snyk Code employs a sophisticated issue-tracking system. To tracks vulnerabilities\
-Snyk Code performs the following:
+Consider a scenario where a vulnerability exists in `file1.js` on line 45. After a code refactor, the vulnerability persists but is now located in a different file and line. To address such scenarios, Snyk Code uses an issue-tracking system. To track vulnerabilities, Snyk Code performs the following:
 
 1. Fingerprint matching:
    * Generates a min-hash of the code's syntax tree for each vulnerability.

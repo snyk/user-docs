@@ -1,10 +1,10 @@
 # Configure integration to find security issues in Kubernetes configuration files
 
-Snyk tests and monitors Kubernetes configurations stored in your source code repositories and provides information, tips, and tricks to better [secure a Kubernetes environment](https://snyk.io/learn/kubernetes-security/). This helps to catch misconfigurations before they are pushed to production, as well as provide fixes for vulnerabilities.
+Snyk tests and monitors Kubernetes configurations stored in your source code repositories and provides information, tips, and tricks to better [secure a Kubernetes environment](https://snyk.io/learn/kubernetes-security/). This helps to catch misconfigurations before you push them to production, as well as provide fixes for vulnerabilities.
 
 ## Supported Git repositories and Kubernetes file formats
 
-Snyk scans your Kubernetes configuration files in JSON and YAML format when they are imported from your integrated Git repository.
+Snyk scans your Kubernetes configuration files in JSON and YAML format when you import them from your integrated Git repository.
 
 ## Configure Snyk to scan Kubernetes configuration files
 

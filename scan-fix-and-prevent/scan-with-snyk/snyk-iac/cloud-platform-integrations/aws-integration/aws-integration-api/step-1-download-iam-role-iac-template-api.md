@@ -2,7 +2,7 @@
 
 Before you can create a Cloud Environment, you must download an Infrastructure as Code (IaC) template declaring a read-only Identity and Access Management (IAM) role that Snyk can assume to scan the configuration of resources in your Amazon Web Services (AWS) account.
 
-You will use this IaC template to provision the role in [Step 2: Create the Snyk IAM role](step-2-create-the-snyk-iam-role-api.md).
+Use this IaC template to provision the role in [Step 2: Create the Snyk IAM role](step-2-create-the-snyk-iam-role-api.md).
 
 You can choose the template format, either [Terraform HCL](https://www.terraform.io/language/syntax/configuration) or [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html). The IAM permissions are identical in both, so pick the format you are most comfortable working with.
 
@@ -76,7 +76,7 @@ Example response with CloudFormation template:
 
 The `data.attributes.data` field in the preceding output is an escaped JSON string containing the Terraform or CloudFormation template with the IAM role and policy.
 
-Before you can use the template to provision the resources, you need to unescape the JSON. This can be accomplished in the following ways:
+Before you can use the template to provision the resources, you need to unescape the JSON. You can do this in the following ways:
 
 * [Use jq](step-1-download-iam-role-iac-template-api.md#use-jq)
 * [Transform the content manually](step-1-download-iam-role-iac-template-api.md#transform-the-content-manually)
@@ -90,7 +90,7 @@ Before you can use the template to provision the resources, you need to unescape
     | jq -r .data.attributes.data > snyk_iac_template
     ```
 
-    This will place the properly-formatted template into the file `snyk_iac_template` in your current working directory.
+    This places the properly formatted template into the file `snyk_iac_template` in your current working directory.
 3. Rename the file with a `.tf` extension (Terraform) or `.yaml` (CloudFormation).
 
 ### Transform the content manually
@@ -101,7 +101,7 @@ Before you can use the template to provision the resources, you need to unescape
 
 ## Optional: Change IAM role name
 
-By default, the name of the Snyk IAM role is `snyk-cloud-role`. If your Organization has specific role naming requirements, you have the option to change this name in the Terraform or CloudFormation template.
+By default, the name of the Snyk IAM role is `snyk-cloud-role`. If your Organization has specific role naming requirements, you can change this name in the Terraform or CloudFormation template.
 
 In **Terraform**, the role name is on line 19:
 

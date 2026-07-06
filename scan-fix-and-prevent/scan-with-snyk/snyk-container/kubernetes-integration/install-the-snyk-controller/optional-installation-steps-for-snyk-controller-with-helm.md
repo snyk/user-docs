@@ -118,7 +118,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 
 By default, Snyk ignores scanning certain namespaces believed to be internal to Kubernetes. For the full list, see [Configuring excluded namespaces](https://github.com/snyk/kubernetes-monitor/tree/master/snyk-monitor#configuring-excluded-namespaces).\
 \
-You can change the default, as Snyk allows you to configure the excluded namespaces.
+You can change the default, as Snyk lets you configure the excluded namespaces.
 
 When you add your own list of namespaces to exclude with the `excludedNamespaces` setting, Snyk overrides the default settings and uses the list of namespaces you provide.
 
@@ -151,7 +151,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 
 ## Configure Snyk Controller CPU
 
-If more or less CPU is required in order to deploy the controller, configure the HelmChart default value for requests (X) and limits (Y) with the `--set` flag.
+If more or less CPU is required to deploy the controller, configure the HelmChart default value for requests (X) and limits (Y) with the `--set` flag.
 
 ```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \

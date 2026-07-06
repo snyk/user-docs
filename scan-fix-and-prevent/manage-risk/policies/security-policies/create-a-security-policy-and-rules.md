@@ -22,12 +22,12 @@ Select the conditions and actions to complete a rule. See [Security policy condi
 * To delete or duplicate a rule, click the three dots at the top right of the rule box.
 
 {% hint style="info" %}
-The order of the rules you create determines the order they will be applied. If multiple rules with the same action type match the same issue, the rule closest to the top takes precedence over any subsequent rules.
+The order of the rules you create determines the order they are applied. If multiple rules with the same action type match the same issue, the rule closest to the top takes precedence over any subsequent rules.
 
 **Example:**
 
 * Rule 1: Sets severity to HIGH for issues with mature exploit maturity.
 * Rule 2: Sets severity to LOW for issue ID "CVE-2025-0001".
 
-If an issue with "CVE-2025-0001" also has mature exploit maturity, both rules apply. Because Rule 1 is listed first, the final severity will be HIGH.
+If an issue with "CVE-2025-0001" also has mature exploit maturity, both rules apply. Because Rule 1 is listed first, the final severity is HIGH.
 {% endhint %}

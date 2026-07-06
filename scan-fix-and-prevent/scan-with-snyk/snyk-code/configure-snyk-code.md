@@ -8,7 +8,7 @@ To use Snyk Code in an [IDE](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/inte
 2. [Integrate Git repository with Snyk](configure-snyk-code.md#integrate-git-repository-with-snyk)
 3. [Import repositories to scan with Snyk Code](configure-snyk-code.md#import-repositories-to-scan-with-snyk-code)
 
-Snyk Code only scans and tests new repositories that are imported to Snyk. If a repository has already been imported, Snyk Code analysis will not be applied. To analyze repositories that have already been imported, you will need to [re-import them](import-project-with-snyk-code.md#re-import-repository-to-snyk).
+Snyk Code only scans and tests new repositories that are imported to Snyk. If you have already imported a repository, Snyk Code analysis does not apply to it. To analyze repositories that you have already imported, [re-import them](import-project-with-snyk-code.md#re-import-repository-to-snyk).
 
 ## Prerequisites for using Snyk Code in Snyk Web UI
 

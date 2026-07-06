@@ -5,7 +5,7 @@ Snyk Essentials includes a powerful policy editor for creating and modifying pol
 There are two steps to building policies:
 
 1. [Define filters](create-policies.md#define-filters) - Set filter conditions on asset properties.
-2. [Set actions](create-policies.md#set-actions) - Define actions to be taken on filtered assets.
+2. [Set actions](create-policies.md#set-actions) - Define actions to take on filtered assets.
 
 ## New policy
 
@@ -13,19 +13,19 @@ You can create a new policy using the **Start from scratch** option or choose on
 
 ### Start from scratch - policy creation
 
-To create a new policy, you have to click the **New Policy** option from the Policies/Assets view and select the **Start from scratch** option.
+To create a new policy, click the **New Policy** option from the Policies/Assets view and select the **Start from scratch** option.
 
-You must name your policy and, optionally, provide a description of the policy. After you complete these steps you have to [define the filters ](create-policies.md#define-filters)and [set the actions](create-policies.md#set-actions) of your policy.
+You must name your policy and, optionally, provide a description of the policy. After you complete these steps, [define the filters ](create-policies.md#define-filters)and [set the actions](create-policies.md#set-actions) of your policy.
 
 ### Use a template - policy creation
 
-You can create a new policy by using one of the available templates. To select one of the policy templates, you have to click the **New Policy** option from the Policies/Assets view and select the **Use a template** option. You can select one of the templates from the templates library by clicking the **Use template** button from the policy template card.
+You can create a new policy by using one of the available templates. To select one of the policy templates, click the **New Policy** option from the Policies/Assets view and select the **Use a template** option. You can select one of the templates from the templates library by clicking the **Use template** button from the policy template card.
 
 Each policy template has a name, a description, and displays the graphic connections between filters and actions.
 
 You can customize the filters and actions or use the template as is. After finishing all the template changes, click the **Save** button to create the new policy.
 
-## Define Filters
+## Define filters
 
 {% hint style="info" %}
 **Release status**
@@ -41,12 +41,12 @@ You can specify more than one filter component with an **And** or **Or** operato
 
 ## Set actions
 
-After defining filter components, you need to define the actions that the policy has to perform on the filtered assets. Asset policies support the following actions:
+After defining filter components, you need to define the actions that the policy must perform on the filtered assets. Asset policies support the following actions:
 
 * **Send Email** - Receive an email every time there are asset updates. You can choose between daily emails or scheduling the checks. You can include a link to the relevant assets. Each notification lists all impacted assets. You can view them individually or see the aggregated view by clicking **Click Here**. The list of assets displayed in the email notification is automatically generated.
 * **Send Slack Message** - Receive a Slack notification every time there are asset updates. You need to add your [Slack webhook URL](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/slack-integration), then you can choose between daily emails or scheduling the checks. You can include a link to the relevant assets. Each notification lists all impacted assets. You can view them individually or see the aggregated view by clicking **Click Here**. The list of assets displayed in the email notification is automatically generated.
-* **Set Asset Class** - Sets the class on the matched assets. Removing the policy or turning in off does not retroactively change the asset class back to default.
-* **Set Asset Tag** - Sets a tag on the matched assets. Removing the policy or turning in off will remove the tags of this policy from the relevant assets.
-* **Set Coverage Control Policy** - Sets a control on filtered assets that checks whether selected security products are scanning assets, optionally within a given timeframe. Assets that fail this control will be marked accordingly on inventory pages. This control applies the OR logic across products.
+* **Set Asset Class** - Sets the class on the matched assets. Removing the policy or turning it off does not retroactively change the asset class back to default.
+* **Set Asset Tag** - Sets a tag on the matched assets. Removing the policy or turning it off removes the tags of this policy from the relevant assets.
+* **Set Coverage Control Policy** - Sets a control on filtered assets that checks whether selected security products are scanning assets, optionally in a given timeframe. Assets that fail this control are marked accordingly on inventory pages. This control applies the OR logic across products.
 
 The editor supports multiple flows for the same policy. The flows can be independent or intersect.

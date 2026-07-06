@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available only with Enterprise Plans. For more information, see [plans and pricing](https://snyk.io/plans/).
+This feature is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
 There are two ways to group your Projects: **Project views** and **Project collections**.

@@ -2,19 +2,19 @@
 
 In one scan, Snyk can detect the vulnerabilities in your application dependencies from container images, as well as from the operating system.
 
-Detecting application vulnerabilities is intended for scanning third-party images. This feature was not designed for detecting issues in code developed in-house, where the user has access to the source code and can shift left and detect Issues earlier in the SDLC by using Snyk Code and Snyk Open Source.
+Detecting application vulnerabilities is intended for scanning third-party images. This feature is not designed for detecting issues in code developed in-house, where the user has access to the source code and can shift left and detect issues earlier in the SDLC by using Snyk Code and Snyk Open Source.
 
 Detecting application vulnerabilities in container images for Container Registry integration is supported for Node, Ruby, PHP, Python, Go binaries, and Java. For the CLI and Kubernetes, this feature is supported for Node, PHP, Python, Go binaries, and Java.
 
 After you integrate with a container registry and import your Projects, Snyk scans your image for vulnerabilities.
 
-For application Projects created from images that are imported from container registry integrations, the applications are not re-imported during recurring scans or manual rescans.
+For application Projects created from images that are imported from container registry integrations, Snyk does not re-import the applications during recurring scans or manual rescans.
 
-Instead, the application dependencies that are found during the initial image import are scanned for new vulnerabilities.
+Instead, Snyk scans the application dependencies found during the initial image import for new vulnerabilities.
 
-If new dependencies are introduced in an application within an image, they will not be detected by recurring scans or manual rescans. To detect new or updated applications within images from container registries, you must re-import the image to Snyk.
+If new dependencies are introduced in an application within an image, recurring scans or manual rescans do not detect them. To detect new or updated applications within images from container registries, you must re-import the image to Snyk.
 
-For applications found in images imported from the Kubernetes integration, existing applications will be re-imported, but new apps added to the image will not be imported during recurring scans. To detect new applications within images from Kubernetes, you must re-import the image to Snyk.
+For applications found in images imported from the Kubernetes integration, Snyk re-imports existing applications, but does not import new apps added to the image during recurring scans. To detect new applications within images from Kubernetes, you must re-import the image to Snyk.
 
 ## Enable container registries vulnerability scan
 
@@ -47,7 +47,7 @@ Snyk Container CLI supports scanning Java applications embedded in container ima
 
 ### Nested jars depth option
 
-When `--app-vulns` is enabled, you can also use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk will unpack. The implicit default is 1. When you specify 2, it means that Snyk unzips jars in jars; 3 means Snyk unzips jars in jars in jars, and so on.
+When `--app-vulns` is enabled, you can also use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk unpacks. The implicit default is 1. When you specify 2, it means that Snyk unzips jars in jars; 3 means Snyk unzips jars in jars in jars, and so on.
 
 To opt out of any scans you feel are unnecessary, use `--nested-jar-depth=0` .
 
@@ -57,7 +57,7 @@ Snyk Container CLI could report Maven packages suffixed with a version of @unkno
 
 ## View application vulnerabilities and licensing issues
 
-When the **Detect application vulnerabilities** feature is enabled, it allows you to see:
+When the **Detect application vulnerabilities** feature is enabled, you can see:
 
 * Dependency vulnerabilities and licensing issues of manifest files detected in your container image
 * Vulnerabilities detected in operating system packages.

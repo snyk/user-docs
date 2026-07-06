@@ -18,13 +18,13 @@ The following explains how to set up custom Maven package registries
 
 If authentication is required to access your Nexus registry, you must first configure the Nexus Repository Manager integration. See [Nexus Repository Manager setup](./).
 
-You can choose to use Nexus as a mirror or as an additional repository where your artifacts will reside.
+You can choose to use Nexus as a mirror or as an additional repository where your artifacts reside.
 
 These settings are very similar to what you have in `~/.m2/settings.xml`.
 
 <figure><img src="../../../../.gitbook/assets/image (245).png" alt=""><figcaption><p>Set up for Mirrors</p></figcaption></figure>
 
-Choose a value for the Type, either **Direct** or, if you are using using authentication, **Integration**.
+Choose a value for the Type, either **Direct** or, if you are using authentication, **Integration**.
 
 If you are using **Direct,** you must complete the **URL**, **Repository Name** and what it is a **Mirror Of**.
 
@@ -50,6 +50,6 @@ If the URL is `http://nexus.company.io/nexus/content/repositories/releases`, Rep
 {% endtab %}
 {% endtabs %}
 
-Alternatively, you can configure repositories will be used as additional locations to check for artifacts.
+Alternatively, you can configure repositories to use as additional locations to check for artifacts.
 
 Repositories are configured in the same way as Mirrors, but do not require **Mirror Of**.

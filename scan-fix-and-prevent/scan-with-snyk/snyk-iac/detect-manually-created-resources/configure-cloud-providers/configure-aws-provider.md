@@ -199,7 +199,7 @@ When the stack is deployed, attach the following policy to your IAM user. This a
 }
 ```
 
-There is no automatic way to update the CloudFormation template from the Snyk side because you launched this template from your AWS account. Therefore you must update the template yourself to use the most recent Snyk role.
+There is no automatic way to update the CloudFormation template from the Snyk side because you launched this template from your AWS account. So you must update the template yourself to use the most recent Snyk role.
 
 ### Update the CloudFormation template using the AWS console
 
@@ -207,7 +207,7 @@ There is no automatic way to update the CloudFormation template from the Snyk si
 * In the stack details pane, choose **Update**.
 * Select **Replace current template** and specify the Snyk **Amazon S3 URL** `https://driftctl-cfn-templates.s3.eu-west-3.amazonaws.com/driftctl-role.yml`; click **Next.**
 * On the **Specify stack details** and the **Configure stack options** pages, click **Next**.
-* In the **Change set preview** section, check that AWS CloudFormation will make the changes.
+* In the **Change set preview** section, check that AWS CloudFormation makes the changes.
 * Because the Snyk template contains one IAM resource, select **I acknowledge that this template may create IAM resources**.
 * To finish, click **Update stack**.
 

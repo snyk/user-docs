@@ -8,7 +8,7 @@ After successfully pushing your custom rules bundle, you can enforce the use of 
 * [Snyk API](use-a-remote-iac-custom-rules-bundle.md#snyk-api-and-remote-custom-rules-bundle)
 * [Environment variables](use-a-remote-iac-custom-rules-bundle.md#environment-variables-and-remote-custom-rules-bundle)
 
-Finally, after you have enforced your custom rules using one of these options, configure the Snyk Snyk CLI with your username and password to allow Snyk to authorize a pull from your OCI registry:
+After you have enforced your custom rules using one of these options, configure the Snyk CLI with your username and password to let Snyk authorize a pull from your OCI registry:
 
 ```
 snyk config set oci-registry-username=<org registry username>
@@ -20,13 +20,13 @@ This sets the following Snyk environment variables:
 * `SNYK_CFG_OCI_REGISTRY_USERNAME`
 * `SNYK_CFG_OCI_REGISTRY_PASSWORD`
 
-After you have completed this configuration, you can run a Snyk IaC scan. The CLI will pull the bundle pushed to the configured container registry in the background.
+After you have completed this configuration, you can run a Snyk IaC scan. The CLI pulls the bundle pushed to the configured container registry in the background.
 
 ```
 snyk iac test <file>
 ```
 
-The resulting configuration scan issues will include issues from both the default Snyk rules and your custom rules. See also [Understanding the IaC CLI test results](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/understand-the-iac-cli-test-results).
+The resulting configuration scan issues include issues from both the default Snyk rules and your custom rules. See also [Understanding the IaC CLI test results](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/understand-the-iac-cli-test-results).
 
 {% hint style="info" %}
 Only one method for defining the bundle's path should be defined at any given time. Make sure to disable the custom rules settings using the Snyk settings page or the [Snyk API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings). Alternatively, clear any previously stored settings using [`snyk config unset`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/config#unset-less-than-key-greater-than).
@@ -34,10 +34,10 @@ Only one method for defining the bundle's path should be defined at any given ti
 
 ## Snyk settings and remote custom rules bundle
 
-Snyk recommends you use the Snyk settings page to configure custom rules settings. This is a simple way to update the custom rules bundle's URL and tag whenever these are modified.
+Snyk recommends you use the Snyk settings page to configure custom rules settings. This is a way to update the custom rules bundle URL and tag whenever these are modified.
 
 {% hint style="info" %}
-Tags are helpful for versioning your custom rules bundles. Configuring your updated bundle can be easily accomplished by setting the new version tag.
+Tags are helpful for versioning your custom rules bundles. To configure your updated bundle, set the new version tag.
 {% endhint %}
 
 You can configure these remote bundles on both the Organization and Group levels. Configuring a remote bundle for a Group applies the remote bundle to all the Organizations in the Group.
@@ -62,13 +62,13 @@ You can configure remote custom rules bundles on the Group level by navigating t
 
 <figure><img src="../../../../.gitbook/assets/image (16).png" alt="Registry URL and tag configured"><figcaption><p>Registry URL and tag configured</p></figcaption></figure>
 
-Your remote bundle of custom rules is now configured and will be used when testing IaC files.
+Your remote bundle of custom rules is now configured and is used when testing IaC files.
 
 You can override remote bundle configurations for a Group using Snyk Settings.
 
-By default, configuring a remote bundle for a Group applies the remote bundle to all the Organizations in the Group. Thus if the Group configurations are updated, these changes apply to all of its Organizations.
+By default, configuring a remote bundle for a Group applies the remote bundle to all the Organizations in the Group. So if the Group configurations are updated, these changes apply to all of its Organizations.
 
-However, an Organization can still override the Group configurations and define its own bundle and tag. These will not change when the Group updates its configurations.
+However, an Organization can still override the Group configurations and define its own bundle and tag. These do not change when the Group updates its configurations.
 
 To override the Group configurations, go to the Organization's `Rules` section in the Infrastructure as Code Settings.
 
@@ -80,15 +80,15 @@ To override the Group configurations, go to the Organization's `Rules` section i
 
 <figure><img src="../../../../.gitbook/assets/image (112).png" alt="Organization rules configuration updated"><figcaption><p>Organization rules configuration updated</p></figcaption></figure>
 
-* Now, configurations on the Group level will not override these customized settings for your Organization.
+* Now, configurations on the Group level do not override these customized settings for your Organization.
 
 You can restore the inheritance of Group configurations at any time by using the **Reset to group default** button.
 
 ## Snyk API and remote custom rules bundle
 
-If manually updating the settings through the Snyk Settings page is too time-consuming, you can use the Snyk API, which allows you to send any variation of the custom rules settings using an API call.
+If manually updating the settings through the Snyk Settings page is too time-consuming, you can use the Snyk API, which lets you send any variation of the custom rules settings using an API call.
 
-* For example, in order to configure the custom rules bundle at the Group level, use the endpoint [Update the Infrastructure as Code settings for a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings#groups-group_id-settings-iac) by providing the following body:
+* For example, to configure the custom rules bundle at the Group level, use the endpoint [Update the Infrastructure as Code settings for a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/iacsettings#groups-group_id-settings-iac) by providing the following body:
 
 ```
 {

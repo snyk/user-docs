@@ -4,13 +4,13 @@ When you find a vulnerability, you have the opportunity to report that vulnerabi
 
 ## Unable to open a pull request or merge request for issues found by Snyk
 
-When you import a Project, either through integration or by using the CLI, both CLI and SCM projects receive fix advice, while SCM projects additionally offer the option to open a Fix PR.
+When you import a Project, either through integration or by using the CLI, both CLI and SCM Projects receive fix advice, while SCM Projects additionally offer the option to open a Fix PR.
 
 Snyk does not open PRs for transitive dependencies. For more information, see [Fixing transitive dependencies](vulnerability-fix-types.md#fixing-transitive-dependencies).
 
 ## Languages supported for Fix and Backlog Pull Requests or Merge Requests
 
-Snyk can generate Fix Pull Requests (Fix PRs) or Merge Requests (MRs) for dependencies that may have a patch or an upgrade that will fix a vulnerability.
+Snyk can generate Fix Pull Requests (Fix PRs) or Merge Requests (MRs) for dependencies that may have a patch or an upgrade that fixes a vulnerability.
 
 Snyk supports creating Fix PRs or MRs for the following languages:
 

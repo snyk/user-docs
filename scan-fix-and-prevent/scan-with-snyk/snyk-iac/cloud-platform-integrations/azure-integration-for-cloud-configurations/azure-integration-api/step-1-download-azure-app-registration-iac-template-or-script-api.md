@@ -8,7 +8,7 @@ Before you can create a Cloud Environment for an Azure subscription, you must **
 
 This infrastructure gives Snyk read-only permission to scan the configuration of resources in your subscription.
 
-You will use the IaC template or Bash script you downloaded to **provision** the infrastructure in [Step 2: Create the Entra ID app registration (API)](step-2-create-the-entra-id-app-registration-api.md).
+You use the IaC template or Bash script you downloaded to **provision** the infrastructure in [Step 2: Create the Entra ID app registration (API)](step-2-create-the-entra-id-app-registration-api.md).
 
 Both methods create the same infrastructure, so pick the method you are most comfortable working with.
 
@@ -44,7 +44,7 @@ curl -X POST \
 The preceding example is [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
 {% endhint %}
 
-If you plan to use the [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) to execute the Bash script instead of running the Azure CLI locally, execute the curl command above in the Cloud Shell.
+If you plan to use the [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) to execute the Bash script instead of running the Azure CLI locally, execute the preceding curl command in the Cloud Shell.
 
 ## Understand the API response
 
@@ -90,7 +90,7 @@ Example response with Bash script:
 
 The `data.attributes.data` field in the preceding output is an escaped JSON string containing the Terraform template or Bash script with the Entra ID app registration, federated identity credential, and service principal.
 
-Before you can use the template to provision the resources, you need to unescape the JSON. This can be accomplished in the following ways:
+Before you can use the template to provision the resources, you need to unescape the JSON. You can do this in the following ways:
 
 * [Use jq](step-1-download-azure-app-registration-iac-template-or-script-api.md#use-jq)
 * [Transform the content manually](step-1-download-azure-app-registration-iac-template-or-script-api.md#transform-the-content-manually)
@@ -100,7 +100,7 @@ Before you can use the template to provision the resources, you need to unescape
 1. Download and install [jq](https://stedolan.github.io/jq/download/).
 2. When you are submitting the API request during template retrieval, append the following to the end of the command:\
    `| jq -r .data.attributes.data > snyk_azure_permissions`\
-   This will place the properly-formatted template into the file `snyk_azure_permissions` in your current working directory.
+   This places the properly-formatted template into the file `snyk_azure_permissions` in your current working directory.
 3. Rename the file with a `.tf` (Terraform) or `.sh` (Bash) extension.
 
 ### Transform the content manually

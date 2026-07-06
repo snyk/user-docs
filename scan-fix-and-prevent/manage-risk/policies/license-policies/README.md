@@ -6,7 +6,7 @@ You can [create a license policy and rules](create-a-license-policy-and-rules.md
 
 An initial policy is created automatically and set as the default to help you get started quickly with license policy management.
 
-This default policy is a baseline to meet the requirements of multiple types of applications, such as SaaS, distributed, and so on, and may be used as a starting point to calibrate additional license policies.
+This default policy is a baseline to meet the requirements of multiple types of applications, such as SaaS, distributed, and so on, and you can use it as a starting point to calibrate additional license policies.
 
 The default license policy contains the standard Snyk Default License Policy, but you can edit the rules to suit your preferences.
 

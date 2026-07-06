@@ -14,7 +14,7 @@ From the Terraform documentation: "To help distribute the management of S3 bucke
 
 To migrate to Terraform v4.0.0, you must refactor and re-import your S3 service definitions. Depending on how you choose to do this, it may limit your coverage of security findings.
 
-See the [Terraform V4 upgrade guide from Hashicorp](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/version-4-upgrade) for more details
+See the [Terraform V4 upgrade guide from Hashicorp](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/version-4-upgrade) for more details.
 
 ## Example of Terraform AWS Provider support
 
@@ -29,7 +29,7 @@ resource "aws_s3_bucket" "example" {
 ```
 {% endcode %}
 
-The definition of the S3 bucket is in one resource block. If you scanned this file using `snyk iac test s3.tf` you would get a security finding for the permissive ACL settings.
+The definition of the S3 bucket is in one resource block. If you scan this file using `snyk iac test s3.tf`, you get a security finding for the permissive ACL settings.
 
 With v4.0.0 of the Provider, certain S3 bucket properties are now defined in their own resources. Continuing the previous example, the ACL property has moved to its own resource, so the refactored Terraform looks like this.
 
@@ -46,7 +46,7 @@ resource "aws_s3_bucket_acl" "example" {
 ```
 {% endcode %}
 
-If you scan this file using `snyk iac test s3.tf` you will get the same results as before for the permissive ACL settings.
+If you scan this file using `snyk iac test s3.tf`, you get the same results as before for the permissive ACL settings.
 
 ## Limitations of support for Terraform AWS Provider
 
@@ -69,7 +69,7 @@ resource "aws_s3_bucket_acl" "example" {
 ```
 {% endcode %}
 
-If you scan these files, you will either not receive a security issue or receive a false positive for the permissive ACL. This is because Snyk cannot currently link the two resources together.
+If you scan these files, you either do not receive a security issue or receive a false positive for the permissive ACL. This is because Snyk cannot link the two resources together.
 
 Snyk is working on adding support for this additional use case to the product.
 

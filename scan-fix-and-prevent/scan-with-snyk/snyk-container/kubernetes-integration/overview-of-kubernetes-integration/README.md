@@ -5,7 +5,7 @@
 Kubernetes integration is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk is able to integrate with Kubernetes, enabling you to import and scan your running workloads. This helps you identify vulnerabilities in their associated images and configurations that can make those workloads less secure. After workloads are imported, Snyk continues to monitor them and to identify additional security issues as new images are deployed and the workload configuration changes.
+Snyk integrates with Kubernetes, letting you import and scan your running workloads. This helps you identify vulnerabilities in their associated images and configurations that can make those workloads less secure. After workloads are imported, Snyk continues to monitor them and to identify additional security issues as new images are deployed and the workload configuration changes.
 
 ## **How Kubernetes integration works**
 
@@ -46,7 +46,7 @@ Snyk Container Kubernetes integration uses Red Hat UBI (Universal Base Image).
 
 Before downloading or using this application, you must agree to the Red Hat subscription agreement located on the [Red Hat website](https://www.redhat.com/en/about/agreements). If you do not agree with these terms, do not download or use the application.
 
-If you have an existing Red Hat Enterprise Agreement (or other negotiated agreement with Red Hat) with terms that govern subscription services associated with Containers, then your existing agreement will be the controlling agreement.
+If you have an existing Red Hat Enterprise Agreement (or other negotiated agreement with Red Hat) with terms that govern subscription services associated with Containers, then your existing agreement is the controlling agreement.
 
 ## Kubernetes integration troubleshooting
 

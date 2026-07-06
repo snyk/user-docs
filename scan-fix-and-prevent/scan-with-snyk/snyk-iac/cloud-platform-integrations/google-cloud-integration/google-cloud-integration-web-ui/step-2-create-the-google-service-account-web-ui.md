@@ -7,7 +7,7 @@ You have downloaded the Terraform template declaring the [Google service account
 
 The process to create the Google service account is the same whether you are using the [Snyk Web UI](step-1-download-service-account-iac-template-web-ui.md) or [Snyk API](../google-cloud-integration-api/step-1-download-service-account-iac-template-api.md) to onboard your Google Project.
 
-To scan a Google Cloud Project, Snyk takes the permissions of a tightly-scoped Google service account that allows Snyk to scan the configuration of your Project resources.
+To scan a Google Cloud Project, Snyk takes the permissions of a tightly-scoped Google service account that lets Snyk scan the configuration of your Project resources.
 
 The service account you create is granted the following read-only Identity and Access Management (IAM) roles:
 
@@ -28,7 +28,7 @@ Snyk scans the Google Cloud Project specified by the `project_id` [variable](htt
 default = "your-project-id"
 ```
 
-* Set the `project_id` variable when you apply the Terraform. In the following section, [Apply  Terraform](step-2-create-the-google-service-account-web-ui.md#apply-terraform), you will apply Terraform to create the Google service account. At that time, you can use Terraform's [-var](https://www.terraform.io/language/values/variables#variables-on-the-command-line) option to set the `project_id` variable to your Project ID:
+* Set the `project_id` variable when you apply the Terraform. In the following section, [Apply  Terraform](step-2-create-the-google-service-account-web-ui.md#apply-terraform), you apply Terraform to create the Google service account. At that time, you can use Terraform's [-var](https://www.terraform.io/language/values/variables#variables-on-the-command-line) option to set the `project_id` variable to your Project ID:
 
 ```
 terraform apply -var="project_id=your-project-id"
@@ -59,7 +59,7 @@ terraform apply
 
 4\. Enter `yes` when Terraform asks if you want to perform the actions.
 
-Terraform then creates the Google service account. When it is finished, you will see the following output:
+Terraform then creates the Google service account. When it is finished, you see the following output:
 
 ```
 Apply complete! Resources: 22 added, 0 changed, 0 destroyed.

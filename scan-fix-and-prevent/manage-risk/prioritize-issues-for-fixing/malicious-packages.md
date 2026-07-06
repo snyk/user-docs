@@ -83,7 +83,7 @@ More details about this type of attack are described in the [malicious versions 
 
 ## Verifying the provenance of packages
 
-At present, Snyk Open Source and Snyk Container scanners are unable to differentiate between internal and external packages, meaning that they cannot determine if a package has been imported from a public or a private registry. This capability will be added in the future. Meanwhile, you might see inaccurate alerts related to packages imported from a private registry.
+At present, Snyk Open Source and Snyk Container scanners cannot differentiate between internal and external packages, meaning that they cannot determine if a package has been imported from a public or a private registry. Snyk plans to add this capability in the future. Meanwhile, you might see inaccurate alerts related to packages imported from a private registry.
 
 A Snyk alert is a warning that an attack has targeted the organization, not an implication that the organization published the malware.
 
@@ -147,13 +147,13 @@ If you do not have an `.npmrc` file or it does not specify a registry, npm uses 
 
 If you use npm, you can host your private packages on the npm registry.
 
-If your company is using this [service](https://docs.npmjs.com/about-private-packages), then the public registry will be https://registry.npmjs.org.&#x20;
+If your company is using this [service](https://docs.npmjs.com/about-private-packages), then the public registry is https://registry.npmjs.org.&#x20;
 
-In this case, you will need to verify that the packages used are private, by logging in to the npm website.&#x20;
+In this case, you must verify that the packages used are private, by logging in to the npm website.&#x20;
 
 ## Remediation of malicious package findings
 
-If you find evidence that a malicious package was installed in your environment, you should do the following:
+If you find evidence that a malicious package was installed in your environment, do the following:
 
 * &#x20;Immediately remove it from the local drive, both the local folder `node_modules` and global package manager cache.&#x20;
 * Remove it from the package registry proxy cache and database if it exists.

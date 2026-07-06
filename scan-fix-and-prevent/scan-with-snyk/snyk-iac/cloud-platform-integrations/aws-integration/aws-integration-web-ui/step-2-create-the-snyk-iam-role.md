@@ -7,7 +7,7 @@ You have downloaded the Terraform or Amazon Web Services (AWS) CloudFormation te
 
 The process to create the Snyk IAM role is the same whether you are using the [Snyk Web UI](step-1-download-iam-role-iac-template-web-ui.md) or [Snyk API](../aws-integration-api/step-1-download-iam-role-iac-template-api.md) to onboard your AWS account.
 
-The IAM role you will provision has the following policies attached to it:
+The IAM role you provision has the following policies attached to it:
 
 * The AWS-managed [SecurityAudit](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_security-auditor) read-only policy.
 * A supplemental inline policy granting required read permissions not covered by SecurityAudit.
@@ -42,7 +42,7 @@ terraform apply
 
 4\. Enter `yes` when Terraform asks if you want to perform the actions.
 
-Terraform then creates the IAM role. When the role has been created, you will see the following output:
+Terraform then creates the IAM role. When the role has been created, you see the following output:
 
 ```
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
@@ -78,15 +78,15 @@ If the output says `"CREATE_COMPLETE"`, AWS has finished creating your role.
 
 1. Log in to the [AWS Management Console](https://console.aws.amazon.com).
 2. Navigate to [CloudFormation](https://console.aws.amazon.com/cloudformation).
-3. Select the **Create stack** button:
+3. Select **Create stack**:
 
 <figure><img src="../../../../../.gitbook/assets/snyk-cloud-cloudformation-create-stacks.png" alt="Select the Create stack button in the AWS Management Console"><figcaption><p>Select the Create stack button in the AWS Management Console</p></figcaption></figure>
 
-4\. Select **With new resources (standard)** from the drop-down menu.
+4\. Select **With new resources (standard)** from the dropdown menu.
 
-5\. On the **Create stack** page, in the **Specify template** section and select **Upload a template file**.
+5\. On the **Create stack** page, in the **Specify template** section, select **Upload a template file**.
 
-6\. Click the **Choose file** button that appears and select your CloudFormation file containing the Snyk IAM role.
+6\. Click **Choose file** and select your CloudFormation file containing the Snyk IAM role.
 
 7\. Select **Next**.
 
@@ -102,7 +102,7 @@ If the output says `"CREATE_COMPLETE"`, AWS has finished creating your role.
 
 13\. Select **Create stack**.
 
-14\. AWS launches the stack, and you'll see a page with stack details. You can select the **Refresh** button to refresh its status:
+14\. AWS launches the stack, and you see a page with stack details. Select **Refresh** to refresh its status:
 
 <figure><img src="../../../../../.gitbook/assets/snyk-cloud-stack-status.png" alt=""><figcaption><p>Select the Refresh button to refresh the stack status in the AWS Management Console</p></figcaption></figure>
 

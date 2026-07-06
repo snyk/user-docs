@@ -8,7 +8,7 @@ Before you can create a Cloud Environment for an Azure subscription, you must **
 
 This infrastructure gives Snyk read-only permission to scan the configuration of resources in your subscription.
 
-You will use the IaC template or Bash script you downloaded to provision the infrastructure in [Step 2: Create the Entra ID application](step-2-create-the-entra-id-app-registration.md).
+You use the IaC template or Bash script you downloaded to provision the infrastructure in [Step 2: Create the Entra ID application](step-2-create-the-entra-id-app-registration.md).
 
 Both methods create the same infrastructure, so pick the method you are most comfortable working with.
 

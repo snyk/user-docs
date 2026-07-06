@@ -9,7 +9,7 @@ You can find prioritization within Snyk under several names and with different c
 
 You can focus solely on one type of prioritization, or you can combine them for a more complex and targeted focus on the issues that require your immediate attention. You can use prioritization for your vulnerabilities, your security program, and your coverage (from a security perspective), or you can use it in the Reporting section of your Projects.\
 \
-For example, if you only prioritize the Projects from your repositories, then the list of issues is more general. However, if you choose to use prioritization with Issues, available for Snyk Essentials, the analyzed issues are filtered through several other factors (risk factors, assets) all contributing to the creation of an issues priority list based on more complex and targeted filters, allowing you to customize the prioritization based on your needs.
+For example, if you only prioritize the Projects from your repositories, then the list of issues is more general. However, if you choose to use prioritization with Issues, available for Snyk Essentials, Snyk filters the analyzed issues through several other factors (risk factors, assets) that all contribute to the creation of an issue priority list based on more complex and targeted filters, letting you customize the prioritization based on your needs.
 
 ## Prioritization at the Project level
 
@@ -148,7 +148,7 @@ You can [ignore issues](ignore-issues/) and [triage issues](vulnerable-condition
 
 Consider [Malicious packages](malicious-packages.md) and how to address them in your Projects.
 
-You can set up [reachable vulnerability analysis ](reachability-analysis.md)to identify vulnerabilities with a path to your code. This helps you asse are calculated as part of the priority score.
+You can set up [reachable vulnerability analysis ](reachability-analysis.md)to identify vulnerabilities with a path to your code. This helps you assess them as part of the Priority Score.
 
 [Vulnerabilities with Social Trends](vulnerabilities-with-social-trends.md) are calculated as part of the Priority Score.
 

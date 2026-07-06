@@ -26,7 +26,7 @@ Snyk Essentials includes a default asset policy to highlight potential coverage 
 
 Identifying coverage gaps using this policy is SCM integration dependent, meaning that it does not flag coverage gaps when there are no language tags found.
 
-You can use this policy as a template, edit, update and delete it.
+You can use this policy as a template, edit, update, and delete it.
 
 ### Exclude all products
 

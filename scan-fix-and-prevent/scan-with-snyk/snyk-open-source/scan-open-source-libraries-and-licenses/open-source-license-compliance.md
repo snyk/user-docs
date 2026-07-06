@@ -6,12 +6,12 @@ Every time you test your code in the Snyk web UI, the Snyk CLI, or using PR Chec
 
 ### Default license policy
 
-To enable customers to get started with license compliance faster, Snyk created a default license policy. The default policy is a baseline that tries to meet the requirements of multiple types of applications, SaaS, distributed, and so on. It may be used as a starting point to calibrate additional license policies. The default policy does not endorse or criticize any license.
+To help customers get started with license compliance faster, Snyk created a default license policy. The default policy is a baseline that tries to meet the requirements of multiple types of applications, SaaS, distributed, and so on. You can use it as a starting point to calibrate additional license policies. The default policy does not endorse or criticize any license.
 
 By default, Snyk determines the severity of a license issue in the following way:
 
-* High severity - licenses that definitely present issues for commercial software
-* Medium severity - licenses with clauses that may be of concern and should be reviewed.
+* High severity - licenses that present issues for commercial software
+* Medium severity - licenses with clauses that you should review
 
 For more information, visit [License policies](../../../manage-risk/policies/license-policies/) and [Open Source Licenses: Types and Comparison](https://snyk.io/learn/open-source-licenses/).
 
@@ -31,7 +31,7 @@ You can view an inventory of all of your licenses across all your Projects. For 
 
 Different customers may have different needs and tolerance levels for different license types. Snyk encourages you to ensure you have made the needed changes or created new policies that fit your company's specific requirements.
 
-New licenses added by Snyk default to a severity of **None** and do not inherit the **Unknown** license severity. Unless you explicitly configure a severity for the newly supported license, it will not appear in Snyk test results.
+New licenses added by Snyk default to a severity of **None** and do not inherit the **Unknown** license severity. Unless you explicitly configure a severity for the newly supported license, it does not appear in Snyk test results.
 
 If you notice a license with the wrong license type assigned to it, contact Snyk support.
 

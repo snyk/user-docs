@@ -12,7 +12,7 @@ The Project details page displays Issue cards on the **Issues** tab. The informa
 
 <figure><img src="../../.gitbook/assets/OS-fix-vulns-issues-in-project.png" alt="Project details Issues tab and filters"><figcaption><p>Project details Issues tab and filters in environments with Fix advice available</p></figcaption></figure>
 
-Use the filters in the panel to the left to narrow the search for issues. Select the checkboxes to filter issues by **Issue type**, **Severity**, **Fixability**, **Exploit Maturity**, and **Status**. You can also edit the **Priority Score** slider to change the range displayed; the default is 0 to 1000.
+Use the filters in the **Filters** panel to narrow the search for issues. Select the checkboxes to filter issues by **Issue type**, **Severity**, **Fixability**, **Exploit Maturity**, and **Status**. You can also edit the **Priority Score** slider to change the range displayed. The default is 0 to 1,000.
 
 Issue details are shown on issue cards in the main area, sorted by priority score. See [Issue card information](issue-card-information.md) for more details.
 
@@ -26,7 +26,7 @@ Scroll to a dependency and the listed issues to view details, including the max 
 
 The Severity icon in front of the dependency title shows the maximum severity associated with the dependency. In this example, there are listed issues with medium or high severity, so the maximum severity for the dependency is high.
 
-The score associated with the dependency title is the maximum of all listed issues under that dependency. This will show as either [Risk Score](../../manage-risk/prioritize-issues-for-fixing/risk-score.md) if you are opted-in to the Early Access feature, or [Priority Score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md).
+The score associated with the dependency title is the maximum of all listed issues under that dependency. This shows as either [Risk Score](../../manage-risk/prioritize-issues-for-fixing/risk-score.md) if you are opted in to the Early Access feature, or [Priority Score](../../manage-risk/prioritize-issues-for-fixing/priority-score.md).
 
 <div align="left"><figure><img src="../../.gitbook/assets/PR-checks-fix-dependencies-issue.png" alt="View issue details"><figcaption><p>View dependency details</p></figcaption></figure></div>
 

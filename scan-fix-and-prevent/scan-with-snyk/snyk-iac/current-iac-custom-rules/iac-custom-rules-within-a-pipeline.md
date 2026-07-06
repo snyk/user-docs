@@ -14,16 +14,16 @@ Snyk uses the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-e
 
 Aims: Configure our pipeline to:
 
-* Verify that new rules or changes to the existing rules do nor break existing functionality.
+* Verify that new rules or changes to the existing rules do not break existing functionality.
 * Publish the rules in `main` to an OCI registry.
 * Enforce the use of custom rules in other pipelines.
 * Optionally: Configure the custom rules using environment variables.
 
 ## Adding PR checks using GitHub Action
 
-An example of a PR check can be seen in [https://github.com/snyk/custom-rules-example/pull/5](https://github.com/snyk/custom-rules-example/pull/5) where there is an attempt to add a new rule called `my_rule`. This is the same rule shown for [learning how to write a rule](writing-rules-using-the-sdk/writing-a-rule.md).
+You can see an example of a PR check in [https://github.com/snyk/custom-rules-example/pull/5](https://github.com/snyk/custom-rules-example/pull/5), where there is an attempt to add a new rule called `my_rule`. This is the same rule shown for [learning how to write a rule](writing-rules-using-the-sdk/writing-a-rule.md).
 
-To verify that this rule works as expected, unit tests were implemented. To run the unit tests as part of PR checks, a GitHub Action was configured previously under `.github/workflows` called `test.yml`:
+To verify that this rule works as expected, this example implements unit tests. To run the unit tests as part of PR checks, a GitHub Action was configured previously under `.github/workflows` called `test.yml`:
 
 {% code title=".github/workflows/test.yml" %}
 ```
@@ -56,8 +56,8 @@ jobs:
 A few things to note about this workflow:
 
 * It was configured to run on all non-`main` branches, so that it runs when PRs are open.
-* Steps were added steps to set up a Node.js environment to enable installing the `snyk-iac-rules` SDK using [npm](install-the-sdk.md#install-the-sdk-with-npm).
-* A step was added to run `snyk-iac-rules test`, which will cause the PR check to fail if any of the tests fail.
+* Steps were added to set up a Node.js environment to enable installing the `snyk-iac-rules` SDK using [npm](install-the-sdk.md#install-the-sdk-with-npm).
+* A step was added to run `snyk-iac-rules test`, which causes the PR check to fail if any of the tests fail.
 
 {% hint style="info" %}
 You must configure your `main` branch under `Settings` -> `Branches`first, so that no one can push directly to `main`.
@@ -67,7 +67,7 @@ You must configure your `main` branch under `Settings` -> `Branches`first, so th
 
 Another way to test the rules is by testing the contract with the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli) by using the [Snyk IaC GitHub Action](https://github.com/snyk/actions/tree/master/iac), making sure the generated bundle can be read by the CLI.
 
-To do this, you will need a step for installing the Snyk CLI and a `SNYK_TOKEN`, which can be found in your Snyk Account Settings.
+To do this, you need a step for installing the Snyk CLI and a `SNYK_TOKEN`, which you can find in your Snyk Account Settings.
 
 {% code title=".github/workflows/test.yml" %}
 ```
@@ -101,7 +101,7 @@ You can also expand these tests to use [Shellspec](https://github.com/shellspec/
 
 ## Publishing the custom rules
 
-Once a PR passes its checks from the previous section and gets merged into the `main` branch, you can publish the Snyk rules to an OCI registry. This allows you to configure a separate pipeline, download the custom rules bundle from this location, and run the custom rules in order to catch misconfigurations.
+After a PR passes its checks from the previous section and gets merged into the `main` branch, you can publish the Snyk rules to an OCI registry. This lets you configure a separate pipeline, download the custom rules bundle from this location, and run the custom rules to catch misconfigurations.
 
 For this, add another workflow under `.github/workflows` called `publish.yml`:
 
@@ -147,7 +147,7 @@ It looks like the previous workflow, but there are a few things to note about th
 
 * It was configured to run only on `main` branches, so that it runs when PRs are merged.
 * A step was added to authenticate with Docker Hub, our chosen OCI registry. For a list of supported registries, read about [pushing bundles](writing-rules-using-the-sdk/pushing-a-bundle.md). Use the [docker/login-action](https://github.com/docker/login-action) GitHub Action to do that and be sure to configure the GitHub secrets under `Settings` -> `Secrets`.
-* A step was added to run `snyk-iac-rules build` followed by `snyk-iac-rules push`, which will publish the generated custom rules bundle to an OCI registry.
+* A step was added to run `snyk-iac-rules build` followed by `snyk-iac-rules push`, which publishes the generated custom rules bundle to an OCI registry.
 
 ## Versioning rules
 
@@ -200,7 +200,7 @@ This means configuring the GitHub Action above with another job for updating Sny
           }'
 ```
 
-This API call will update the chosen Snyk Group and all the Organizations underneath it to use the configured custom rules bundle.
+This API call updates the chosen Snyk Group and all the Organizations underneath it to use the configured custom rules bundle.
 
 {% hint style="info" %}
 To configure an Organization to use a different bundle, such as the `v2-beta` one, use the Snyk Settings page. You can either configure a new bundle or disable custom rules to allow using environment variables in the CI/CD pipeline to run the custom rules.
@@ -227,7 +227,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```
 
-The result is that the GitHub action will fail until the generated misconfigurations have been resolved:
+The result is that the GitHub action fails until the generated misconfigurations have been resolved:
 
 ```
 Testing example.tf...

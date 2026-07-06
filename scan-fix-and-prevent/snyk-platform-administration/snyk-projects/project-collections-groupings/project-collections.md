@@ -1,6 +1,6 @@
 # Project collections
 
-On this page you will find information about how to create and use Project collections:
+This page describes how to create and use Project collections:
 
 * [Select all filtered Projects that are visible to create a Project collection](project-collections.md#select-all-filtered-projects-that-are-visible-to-create-a-project-collection)
 * [Add Projects to an existing Project collection using filters](project-collections.md#add-projects-to-an-existing-project-collection-using-filters)
@@ -10,7 +10,7 @@ On this page you will find information about how to create and use Project colle
 * [View your Project collections on the collection listing page](project-collections.md#view-your-project-collections-on-the-collection-listing-page)
 
 {% hint style="info" %}
-If you move a Project between Organizations, the Project will also be removed from any Project collections it is part of.
+If you move a Project between Organizations, Snyk also removes the Project from any Project collections it is part of.
 {% endhint %}
 
 ## Select all filtered Projects that are visible to create a Project collection
@@ -58,7 +58,7 @@ If you move a Project between Organizations, the Project will also be removed fr
 2. You can perform the following actions:
    1. Activate selected Projects.
    2. Deactivate selected Projects.
-   3. Add the selected Projects to a collection. In this case, the action will add the selected Projects to another collection that you have created.
+   3. Add the selected Projects to a collection. In this case, the action adds the selected Projects to another collection that you have created.
    4. Remove selected Projects from a collection.&#x20;
    5. Delete selected Projects.
 

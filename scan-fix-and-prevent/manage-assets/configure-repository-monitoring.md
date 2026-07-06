@@ -19,7 +19,7 @@ Repository monitoring configuration provides the following capabilities:
 * Centralized asset monitoring: view monitoring status for all products, identify health status, and see required actions (such as enabling Snyk Code or resolving SCM integration issues) in one view.
 * Bulk import: import repositories directly from the Group **Inventory** page into specific Snyk Organizations.
 * On-demand retesting: trigger a retest for specific repositories directly from **Inventory**.
-* Actionable error resolution: clear guidance ia available when testing fails due to integration issues or entitlements. After the underlying issue is resolved, testing resumes automatically.
+* Actionable error resolution: clear guidance is available when testing fails due to integration issues or entitlements. After you resolve the underlying issue, testing resumes automatically.
 
 ## Configure settings for repository monitoring
 
@@ -58,7 +58,7 @@ It is not possible to manage these settings at Organization level for assets tra
 * **Testing exclusions (optional)**: manage file exclusions for Snyk Open Source and Snyk Container Projects. Exclusions apply at the asset level. You cannot exclude specific files for the same repository in different Snyk Organizations.
 
 {% hint style="info" %}
-For Snyk Code, you can manage exclusions using the `.snyk` files, in order to maintain developer-first workflows.
+For Snyk Code, you can manage exclusions using the `.snyk` files to maintain developer-first workflows.
 {% endhint %}
 
 Click **Continue**.

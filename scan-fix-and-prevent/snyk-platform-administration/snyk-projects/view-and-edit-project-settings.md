@@ -17,8 +17,8 @@ To deactivate a Project, select **Deactivate project** on the Project settings p
 * Remove the webhook from the SCM repository.
 * Disable pull request tests for new vulnerabilities.
 * Disable a Fix pull request from being opened for newly disclosed vulnerabilities.
-* Disable recurring tests; email alerts about newly disclosed vulnerabilities will be turned off.
-* Remove any vulnerabilities in the Project from reporting and dashboard views
+* Disable recurring tests and turn off email alerts about newly disclosed vulnerabilities.
+* Remove any vulnerabilities in the Project from reporting and dashboard views.
 
 To delete a Project, select **Delete project** on the Project settings page. By deleting a Project, you do the following:
 

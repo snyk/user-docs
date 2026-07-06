@@ -5,7 +5,7 @@
 
 PR Checks for **Bitbucket Server** integrations require Bitbucket Server version 7.4 and above, or Bitbucket Data Center version 8 or above.\
 \
-When using a brokered connection Snyk Broker version 5.4.9 and above is required.
+When using a brokered connection, you must use Snyk Broker version 5.4.9 and above.
 {% endhint %}
 
 ## Prerequisites for automated PR Checks
@@ -52,7 +52,7 @@ The configuration settings apply to all Projects in that Organization. You can a
 * [ ] **Code Analysis**: Enable this option to fail the PR on new vulnerabilities detected in your Git repository. If the severity is higher than your threshold, the PR is not merged into the main branch.
 * [ ] **Fail conditions**: Select the severity threshold at which the PR fails. For example, if you select **Medium**, the PR fails on issues found at this level or higher, while it is merged for **Low** severity issues.
 
-PR Checks that are configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and, therefore, will not alert for projects in languages that do not support FixPR Checks.
+PR Checks that are configured to “Only fail when the issues found have a fix available” rely on Snyk FixPR support and so do not alert for projects in languages that do not support FixPR Checks.
 
 {% hint style="info" %}
 A PR test is configured to be optional or blocking within your source control management platform, such as GitHub’s branch protection rules. To learn more on issue prevention, visit [Phase 6: Rolling out the prevention stage](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/automate-prevention-measures).
@@ -71,13 +71,13 @@ If you cannot see the **Code Analysis** section, ensure that your user has the G
   * [ ] **Only fail when the PR is adding a dependency with issues**: Set this condition to fail PR when there is at least one dependency with security issues.
   * [ ] **Fail if the repo has any issues**: Set this condition to fail a PR for any security issues found in the Git repository.
 * [ ] **Only fail for high or critical severity issues**: Select additional failure conditions based on the severity threshold.
-* [ ] **Only fail when the issues found have a fix available**: Set this condition on for the PR check to fail when the PR introduces new vulnerabilities that are fixable by Snyk. PR checks don't fail on newly introduced vulnerabilities if Snyk is unable to fix them.
+* [ ] **Only fail when the issues found have a fix available**: Set this condition on for the PR check to fail when the PR introduces new vulnerabilities that are fixable by Snyk. PR checks don't fail on newly introduced vulnerabilities if Snyk cannot fix them.
 
-When switched on, this will cause the PR check to fail when the PR introduces new vulnerabilities that are fixable by Snyk. PR checks will not fail on newly introduced vulnerabilities if Snyk is unable to fix them.
+When switched on, this causes the PR check to fail when the PR introduces new vulnerabilities that are fixable by Snyk. PR checks do not fail on newly introduced vulnerabilities if Snyk cannot fix them.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-28 at 12.06.13.png" alt="Pull request check settings to analyze open-source and licensing issues." width="563"><figcaption><p>PR check settings to analyze open-source and licensing issues</p></figcaption></figure>
 
-4. Either click **Save** to save the changes, select the Save dropdown and click **Apply changes to all overridden Projects** to extend the current configuration to Projects with custom settings. For more information, see [Configure PR Checks at the Project level](configure-pull-request-checks.md#configure-pr-checks-at-the-project-level).
+4. Either click **Save** to save the changes, or select the **Save** dropdown and click **Apply changes to all overridden Projects** to extend the current configuration to Projects with custom settings. For more information, see [Configure PR Checks at the Project level](configure-pull-request-checks.md#configure-pr-checks-at-the-project-level).
 
 ## Configure PR checks at the Project level
 

@@ -1,8 +1,8 @@
 # Priority Score
 
-The Snyk Priority Score is a single value assigned to an issue, to help you quickly and easily decide which issues are most important to fix. Scores range from 0 to 1,000; the higher the score, the more important it is to fix that issue.
+The Snyk Priority Score is a single value assigned to an issue, to help you quickly decide which issues are most important to fix. Scores range from 0 to 1,000. The higher the score, the more important it is to fix that issue.
 
-The Snyk Priority Score is determined based on a number of industry-standard criteria, including CVSS score, trending vulnerabilities, reachability, availability of exploits, and other factors. These factors yield scores with a high degree of granularity. This granularity avoids having many issues with the same score, allowing you to determine the importance of an issue quickly and accurately.
+The Snyk Priority Score is determined based on a number of industry-standard criteria, including CVSS score, trending vulnerabilities, reachability, availability of exploits, and other factors. These factors yield scores with a high degree of granularity. This granularity avoids having many issues with the same score, letting you determine the importance of an issue quickly and accurately.
 
 {% hint style="info" %}
 Snyk does not use the CVSS score alone to determine priority; other factors are also considered.
@@ -22,7 +22,7 @@ You can filter issues by Priority Score range in the left sidebar.
 
 ## View issues by Priority Score
 
-The **Issues** tab on the Project details allows you to filter issues by Priority Score. You can find more details on how to filter your issues on the [Manage and remediate issues](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/manage-and-remediate-issues) page.
+The **Issues** tab on the Project details lets you filter issues by Priority Score. You can find more details on how to filter your issues on the [Manage and remediate issues](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/enterprise-implementation-guide/manage-and-remediate-issues) page.
 
 ## View Priority Score in the Snyk API
 

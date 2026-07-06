@@ -1,6 +1,6 @@
 # Integrate with GitHub Container registry
 
-Snyk integrates with the GitHub Container registry to enable you to import your container images and monitor them for vulnerabilities.
+Snyk integrates with the GitHub Container registry so you can import your container images and monitor them for vulnerabilities.
 
 Snyk tests the images you have imported (Projects) for any known security vulnerabilities, testing them at a frequency you control, and alerts you when new issues are detected.
 
@@ -33,7 +33,7 @@ See the Snyk blog to learn more about [container registry security and security 
 
 ## Scan images from GitHub Container registry in Snyk
 
-Snyk tests and monitors your GitHub container images by evaluating their tags in your repositories. After you have imported images to Snyk, image vulnerabilities are identified and can be triaged efficiently.
+Snyk tests and monitors your GitHub container images by evaluating their tags in your repositories. After you have imported images to Snyk, Snyk identifies image vulnerabilities so you can triage them.
 
 Follow these steps to add images from the GitHub container registry to Snyk.
 
@@ -52,8 +52,8 @@ Follow these steps to add images from the GitHub container registry to Snyk.
    Note that GitHub Container Registry does not follow docker v2 API. Therefore, it is not possible to list images in repositories. Therefore you must specify the images you wish to scan manually.
 5. Select single or multiple images to be imported to Snyk.\
    You can choose a specific image or an entire repository. You can also search by image name to find specific images to import.
-6. To finish, click **Add selected repositories** on the top-right.\
-   A status bar appears at the top of the page as the images are imported; you can continue working in the meantime.
+6. To finish, click **Add selected repositories**.\
+   A status bar appears at the top of the page as Snyk imports the images. You can continue working in the meantime.
 7. When the import ends:
    * You can view the newly imported image, marked with a **NEW** tag, on the **Projects** page. Images are grouped by repository and are each linked individually to a detailed **Project** page.
    * An import log becomes available; you can reach it at the top of the Projects list.
@@ -64,5 +64,5 @@ GitHub container registry imports are designated with a unique icon. You can fil
 <figure><img src="../../../.gitbook/assets/container_registry_integrations_github.png" alt=""><figcaption><p>Example of a GitHub Project</p></figcaption></figure>
 
 {% hint style="info" %}
-For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
+For application vulnerabilities in container images, a manual or recurring retest does not reflect any changes to the application. You must re-import the image. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).
 {% endhint %}
