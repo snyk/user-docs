@@ -2,13 +2,13 @@
 
 Test your target configuration before running a scan to avoid common issues that lead to failed scans or incomplete results.
 
-Testing configuration allows you to:
+Test the configuration to:
 
 * Confirm Snyk API & Web can access your target.
 * Verify login credentials work as expected.
-* Identify if a web application firewall (WAF) or other security measures block traffic.
+* Identify whether a web application firewall (WAF) or other security measures block traffic.
 * Verify the validity of your API schema or collection.
-* Discover extra hosts that might need to be added to your target.
+* Discover extra hosts that you need to add to your target.
 
 ## Prerequisites
 
@@ -36,10 +36,10 @@ After starting the test, a side panel opens to display test progress in real tim
 Snyk API & Web provides feedback on these areas:
 
 * **Connectivity**: Confirms Snyk API & Web can reach the URL
-* **WAF Detection**: Alerts if a firewall might interfere with the DAST scan
+* **WAF Detection**: Alerts you if a firewall can interfere with the DAST scan
 * **Authentication**: Validates that credentials successfully grant access to the target
 * **Schema Validity**: Verifies the schema provided for API targets
-* **Extra Hosts**: Identifies additional domains the web application relies on that might need to be added to target settings
+* **Extra Hosts**: Identifies additional domains the web application relies on that you need to add to the target settings
 
 If a check fails or requires further configuration, the side panel provides a call to action to help resolve the issue. You can also review connectivity details and, if applicable, a video of the login attempt.
 

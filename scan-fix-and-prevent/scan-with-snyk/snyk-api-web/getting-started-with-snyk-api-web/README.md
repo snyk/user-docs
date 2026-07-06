@@ -24,7 +24,7 @@ Create your account in Snyk API & Web to start scanning:
 
 ## Complete the onboarding flow
 
-After creating your account, Snyk API & Web displays [best practices for deploying dynamic application security testing (DAST)](best-practices-for-deploying-dast.md) and guides you through the initial setup:
+After creating your account, Snyk displays [best practices for deploying dynamic application security testing (DAST)](best-practices-for-deploying-dast.md) and guides you through the initial setup:
 
 1.  Click **Next** to begin.
 
@@ -34,11 +34,11 @@ After creating your account, Snyk API & Web displays [best practices for deployi
 4. Add your first target:
    * **Target name**: Enter a descriptive name (for example, "Example")
    * **Target URL**: Enter the URL to scan (for example, `https://example.com`)
-5. When you add a target, Snyk API & Web verifies that you own the domain. Snyk API & Web performs extensive security tests that can appear as malicious attacks. Domain verification proves that you own the domain and are authorized to run security tests.
+5. When you add a target, Snyk verifies that you own the domain. Snyk performs extensive security tests that can appear as malicious attacks. Domain verification proves that you own the domain and are authorized to run security tests.
    1. The onboarding flow automatically verifies ownership when possible. If automatic verification is not available, you must prove ownership manually through the guided process. Alternatively, you can install a scanning agent to reach internal targets. For more information, see how to [verify domain ownership](../configure-targets/verify-domain-ownership/README.md) and [how to install a scanning agent](../start-scanning/overview-scanning-agent/install-scanning-agent.md).
 6. Click **Next** after configuring domain verification or the scanning agent.
 7. Click **Scan** to start scanning your target.
-8. A success page confirms that your scan has started.
+8. A success page confirms that your scan started.
 
 ## Review scan coverage
 
@@ -60,11 +60,11 @@ The **Scan Findings** page displays all security vulnerabilities identified duri
 
 <figure><img src="../../../.gitbook/assets/getting-started-with-snyk-api-web-findings-list.png" alt="Findings list showing discovered vulnerabilities"><figcaption></figcaption></figure>
 
-Click on a finding in the findings list to view its CVSS score, vulnerability description, remediation guidance, and additional context.
+Click a finding in the findings list to view its CVSS score, vulnerability description, remediation guidance, and additional context.
 
 <figure><img src="../../../.gitbook/assets/getting-started-with-snyk-api-web-vulnerability-details.png" alt="Detailed vulnerability view with CVSS score and remediation steps"><figcaption></figcaption></figure>
 
-This information helps you understand the severity and impact of each vulnerability, enabling you to prioritize and plan remediation work.
+This information helps you understand the severity and impact of each vulnerability so you can prioritize and plan remediation work.
 
 ## Next steps
 

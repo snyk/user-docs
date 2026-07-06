@@ -1,36 +1,36 @@
 # Coverage report
 
-Coverage is a fundamental aspect of a scan, as it may be the difference between a useful, successful scan and an uninformative scan.
+Coverage is a fundamental aspect of a scan. It can be the difference between a useful, successful scan and an uninformative one.
 
-As soon as your scan starts, you can download a provisional coverage report to get some sense of what is happening during your scan. Bear in mind, however, that this report might be subject to change until the scan is finished.
+As soon as your scan starts, you can download a provisional coverage report to understand what is happening during your scan. This report is subject to change until the scan is finished.
 
-Once the scan completes, you can export the detailed coverage report, where scanned URLs are listed along with the ones that were not scanned.
+After the scan completes, you can export the detailed coverage report, which lists scanned URLs along with the ones that were not scanned.
 
-This acts as a tool for you to check if the scanner is reaching every endpoint possible and filtering them successfully.
+Use this report to check whether the scanner is reaching every possible endpoint and filtering them successfully.
 
 ## How coverage works
 
-Before and while doing tests, the crawler navigates your website to find every endpoint possible while testing every input it might find. Then those URLs are sent to the scanner to be tested for any vulnerabilities.
+Before and during tests, the crawler navigates your website to find every possible endpoint while testing every input it finds. The crawler then sends those URLs to the scanner to test for vulnerabilities.
 
 ## Finding your report
 
 You can find your scan's coverage next to the scan's report and download it for further analysis.
 
-By default, only the accepted endpoints are shown on the report. To include rejected endpoints on the report, go to your **Target Settings** and change the **Coverage Detail** under **Scanner**.
+By default, the report shows only the accepted endpoints. To include rejected endpoints, navigate to your **Target Settings** and change the **Coverage Detail** under **Scanner**.
 
 Visit [Generate a CSV coverage report](generate-csv-coverage-report.md) to learn how to download your coverage report.
 
 ## Reading the CSV file
 
-A Comma Separated Values (CSV) file is a plain text file that contains a list of data. A CSV file has a fairly simple structure. It is a list of data separated by commas.
+A CSV file is a plain text file that contains a list of data separated by commas.
 
 After downloading the file, you can open it in your terminal, text editor, or spreadsheet application.
 
-The first column is about the type of request the crawler made (HTTP requests such as GET, POST, PUT, DELETE, PATCH, and so on).
+The first column shows the type of request the crawler made (HTTP requests such as GET, POST, PUT, DELETE, PATCH, and so on).
 
-The second column regards the found or targeted URL. Check this column to verify if all the endpoints possible for your website are being reached.
+The second column shows the found or targeted URL. Check this column to verify that all possible endpoints for your website are being reached.
 
-The third and fourth columns are the request's response and its meaning. The most frequent responses are:
+The third and fourth columns show the request's response and its meaning. The most frequent responses are:
 
 * 200 - OK.
 * 301 - Moved Permanently.
@@ -46,19 +46,19 @@ The third and fourth columns are the request's response and its meaning. The mos
 These requests are then accepted or rejected by the engine's standards. If the engine rejects an endpoint, it provides a reason, such as:
 
 * `is on keyword reject list`
-  * Meaning: Was rejected because the URL contains a keyword that is on the internal keyword reject list.
+  * Meaning: Rejected because the URL contains a keyword that is on the internal keyword reject list.
   * Words like "logout", "logoff", or "signout" are blocked to ensure that the crawler does not lose its session.
 * `file extension ignored`
-  * Meaning: Was rejected because the URL file extension is on the internal reject list.
+  * Meaning: Rejected because the URL file extension is on the internal reject list.
   * Extensions such as .exe, .zip, and .tgz get rejected by the crawler.
 * `is on user reject list`
-  * Meaning: Was rejected because the URL matches an item that is on the user's reject list.
+  * Meaning: Rejected because the URL matches an item that is on the user's reject list.
 * `deduplicated (simhash)`
   * Meaning: The content structure of the endpoint's simhash was the same as another endpoint's, so it was rejected.
 * `path limit reached`
   * Meaning: The base URL (without fragments and query strings) reached the visit limit.
 * `query string limit reached`
-  * Meaning: The base URL with the same query string parameters (values excluded) reached the visit limit. The default limit is currently set as 2.
+  * Meaning: The base URL with the same query string parameters (values excluded) reached the visit limit. The default limit is 2.
 * `fragment limit reached`
   * Meaning: The same base URL with fragments or hashes reached the visit limit.
 * `auto pattern limit reached`
@@ -85,4 +85,4 @@ Here are a few examples to help you understand your coverage report:
 
     A GET request to http://example.com/showimage.php?file=./pictures/5.jpg was rejected by the scanner because the base URL with the query string reached the visit limit.
 
-With this knowledge, you are now able to fully read your coverage feedback and identify any blind spots or misconfigurations of your target.
+With this knowledge, you can read your coverage feedback and identify any blind spots or misconfigurations of your target.

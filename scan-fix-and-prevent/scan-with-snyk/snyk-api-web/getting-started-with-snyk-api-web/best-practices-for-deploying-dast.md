@@ -4,7 +4,7 @@ Learn how to optimize your dynamic application security testing (DAST) deploymen
 
 ## Overview
 
-DAST simulates real-world attacks on your web applications and APIs to identify security vulnerabilities. While DAST provides valuable security insights, it performs invasive scans that can affect application performance and behavior.
+DAST simulates real-world attacks on your web applications and APIs to identify security vulnerabilities. DAST provides valuable security insights, but it performs invasive scans that can affect application performance and behavior.
 
 During a scan, Snyk API & Web:
 
@@ -25,10 +25,10 @@ Avoid scanning production back offices where administrators manage content, user
 * Inject test data that becomes visible to users and potential attackers
 
 {% hint style="warning" %}
-When testing for Cross-site Scripting or SQL Injection vulnerabilities, the scanner attempts to inject data into your application. If a vulnerability exists, this test data can appear in your production environment.
+When testing for cross-site scripting or SQL injection vulnerabilities, the scanner attempts to inject data into your application. If a vulnerability exists, this test data can appear in your production environment.
 {% endhint %}
 
-Use production-like test environments that include web servers and databases that can be easily restored if needed.
+Use production-like test environments that include web servers and databases you can restore if needed.
 
 ## Use test data that replicates real application behavior
 
@@ -40,19 +40,19 @@ Using production data in test environments can:
 * Violate data privacy regulations
 * Create data leakage risks
 
-Create dedicated test data in a controlled, isolated environment using a separate test organization or user account. This approach enables thorough testing without putting sensitive information at risk.
+Create dedicated test data in a controlled, isolated environment using a separate test organization or user account. This approach supports thorough testing without putting sensitive information at risk.
 
 ## Configure authentication with test accounts
 
-Many applications restrict access to authenticated users only. Configuring authentication allows Snyk API & Web to scan deeper into your application scope and identify more vulnerabilities.
+Many applications restrict access to authenticated users only. Configure authentication so Snyk can scan deeper into your application scope and identify more vulnerabilities.
 
 Use dedicated test credentials to prevent mixing test activities with real user data.
 
-To learn more about authentication configuration, see [Configure authentication](../configure-targets/configure-authentication/README.md).
+To learn more about authentication configuration, visit [Configure authentication](../configure-targets/configure-authentication/README.md).
 
 ## Exclude features that trigger external actions
 
-During scans, Snyk API & Web interacts with every discovered element, including forms and buttons. These interactions can:
+During scans, Snyk interacts with every discovered element, including forms and buttons. These interactions can:
 
 * Send email messages
 * Create support tickets
@@ -66,4 +66,4 @@ Configure your reject list to exclude URLs and features that trigger unwanted ac
 * Payment processing endpoints
 * External API calls
 
-For more information, see [Use seeds and reject lists](../configure-targets/use-seeds-and-reject-lists.md).
+For more information, visit [Use seeds and reject lists](../configure-targets/use-seeds-and-reject-lists.md).

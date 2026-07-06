@@ -4,45 +4,45 @@ This guide provides step-by-step instructions for integrating Snyk API & Web int
 
 ## Overview
 
-This guide focuses on using the Snyk API & Web CLI to run scans. The examples below cover the complete end-to-end journey, from configuring your targets to running scans in different scenarios.
+This guide focuses on using the Snyk CLI to run scans. The following examples cover the complete end-to-end journey, from configuring your targets to running scans in different scenarios.
 
 ## Prerequisites
 
-Before you begin, you must configure your scan targets and credentials in the Snyk API & Web application.
+Configure your scan targets and credentials in the Snyk application before you begin.
 
-### Create a target in Snyk API & Web
+### Create a target in Snyk
 
-In the Snyk API & Web app, go to the **Targets** menu and click **Add**. Fill out the form and click **Add** to create the new target.
+In the Snyk app, navigate to the **Targets** menu and click **Add**. Fill out the form and click **Add** to create the new target.
 
 {% hint style="info" %}
-During this process, connectivity is checked. If your target is internal or not yet deployed, you can bypass any warnings and add the target regardless. For more details, visit How to add a Target.
+During this process, Snyk checks connectivity. If your target is internal or not yet deployed, you can bypass any warnings and add the target. For more details, visit How to add a Target.
 {% endhint %}
 
-Before configuring the integration in GitLab, make sure to retrieve the unique **target ID** from Snyk API & Web.
+Before you configure the integration in GitLab, retrieve the unique **target ID** from Snyk.
 
-1. In your Snyk API & Web dashboard, select **Targets**.
+1. In your Snyk dashboard, select **Targets**.
 2. From the target list, select the target you want to integrate.
 3. In your browser's address bar, copy the **target ID**. This is the string of characters immediately following /target/ in the URL.
 
 {% hint style="info" %}
-After creating a target, it is mandatory to verify your target's domain. Otherwise, your scans are only limited to lightning scans. To learn more, see the importance of domain ownership verification.
+After you create a target, you must verify the target's domain. Otherwise, your scans are limited to lightning scans. To learn more, visit the importance of domain ownership verification.
 {% endhint %}
 
-### Create a Snyk API & Web API Key
+### Create a Snyk API key
 
 You need an API key with permissions to start a scan on your target. For instructions, visit How to generate an API key.
 
-## Step 1: Add your API Key and target ID to GitLab
+## Step 1: Add your API key and target ID to GitLab
 
-To run a scan, your pipeline needs to authenticate with Snyk API & Web and know which target to scan. You must configure your Snyk API & Web **API Key** and the specific **target ID** as secure CI/CD variables in your GitLab project.
+To run a scan, your pipeline must authenticate with Snyk and know which target to scan. Configure your Snyk API key and the specific target ID as secure CI/CD variables in your GitLab project.
 
 1. From your GitLab project side menu, navigate to **Settings > CI/CD**.
 2. Find the **Variables** section and expand it.
-3. Click **Add variable** and create an entry for your Snyk API & Web **API Key** (for example, **PROBELY\_API\_KEY**).
-4. Click **Add variable** again to create a second entry for your **target ID** (for example, **TARGET\_ID**).
+3. Click **Add variable** and create an entry for your Snyk API key (for example, **PROBELY\_API\_KEY**).
+4. Click **Add variable** again to create a second entry for your target ID (for example, **TARGET\_ID**).
 
 {% hint style="warning" %}
-For enhanced security, always store sensitive values as GitLab CI/CD variables. Storing variables directly in your `.gitlab-ci.yml` file is not recommended, as they are saved in plain text and visible to anyone who can view the file.
+For enhanced security, always store sensitive values as GitLab CI/CD variables. Do not store variables directly in your `.gitlab-ci.yml` file, because they are saved in plain text and visible to anyone who can view the file.
 {% endhint %}
 
 ## Step 2: Configure your pipeline
@@ -51,9 +51,9 @@ Create a `.gitlab-ci.yml` file at the root of your repository and add one of the
 
 ### Important note on these examples
 
-The YAML configurations below are scanning steps designed to be incorporated into your existing `.gitlab-ci.yml` file.
+The following YAML configurations are scanning steps to incorporate into your existing `.gitlab-ci.yml` file.
 
-For example, your pipeline might already have steps to build your code, deploy to a QA environment, and run automated tests. You can add the Snyk API & Web scan as another step at any point that makes sense for your workflow, such as after you deploy to QA or staging.
+For example, your pipeline might already have steps to build your code, deploy to a QA environment, and run automated tests. You can add the Snyk scan as another step at any point that makes sense for your workflow, such as after you deploy to QA or staging.
 
 ### Run a scan on a target in non-blocking mode
 
@@ -153,14 +153,14 @@ scan:
 
 ### Run a scan on an ephemeral (dynamic) target in blocking mode
 
-This is a more advanced configuration for building, deploying, and scanning an application in a temporary environment that is created for a specific purpose and then automatically destroyed during the pipeline run.
+This is a more advanced configuration for building, deploying, and scanning an application in a temporary environment. The pipeline creates the environment for a specific purpose and then automatically destroys it during the run.
 
-Using ephemeral environments requires agent token, target hostname, and target URL. Store them as variables for better security.
+Ephemeral environments require an agent token, target hostname, and target URL. Store them as variables for better security.
 
-You also need to create a scanning agent in Snyk API & Web and configure your target to use it. This process requires the `scanning-agent/farcasterd-linux-amd64-0.4.3` file. For detailed instructions, visit How to install a Scanning Agent and How to scan internal applications.
+You also need to create a scanning agent in Snyk and configure your target to use it. This process requires the `scanning-agent/farcasterd-linux-amd64-0.4.3` file. For detailed instructions, visit How to install a Scanning Agent and How to scan internal applications.
 
 {% hint style="info" %}
-In this code example, Docker is used to create ephemeral environments. However, you can use any other solution to create your environment.
+This code example uses Docker to create ephemeral environments. However, you can use any other solution to create your environment.
 {% endhint %}
 
 ```yaml
@@ -278,6 +278,6 @@ build-and-test:
 
 ## Step 3: Run the pipeline and view the results
 
-After committing your `.gitlab-ci.yml` file, you can run the pipeline in GitLab to test the integration.
+After you commit your `.gitlab-ci.yml` file, you can run the pipeline in GitLab to test the integration.
 
-Once the scan is complete, you can view the detailed findings in your Snyk API & Web dashboard.
+After the scan completes, you can view the detailed findings in your Snyk dashboard.

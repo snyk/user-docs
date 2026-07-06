@@ -38,6 +38,6 @@ In these applications:
 - Data added or changed by users is visible only to users from the same entity
 - Test accounts can be isolated from real user data
 
-For example, in a customer relationship management (CRM) application where each organization has multiple users, create a testing organization and a testing user account specifically for the Snyk API and Web. This isolates test data and minimizes risk.
+For example, in a customer relationship management (CRM) application where each organization has multiple users, create a testing organization and a testing user account specifically for Snyk. This isolates test data and minimizes risk.
 
 Even in low-risk scenarios, use dedicated test accounts and configure authentication to ensure scans stay within isolated test environments. Visit [Best practices for deploying DAST](best-practices-for-deploying-dast.md) for additional guidance.

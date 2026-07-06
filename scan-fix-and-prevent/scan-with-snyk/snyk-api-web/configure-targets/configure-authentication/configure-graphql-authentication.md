@@ -2,9 +2,9 @@
 
 Configure authentication to scan an API using a GraphQL schema.
 
-If your GraphQL API requires authentication, Snyk API & Web can be configured to run authenticated requests and scan the API endpoints.
+If your GraphQL API requires authentication, you can configure Snyk API & Web to run authenticated requests and scan the API endpoints.
 
-After adding an API target, configure authentication before starting the scan. Setting authentication before starting the scan is especially important when you select the introspection option for your schema, as it is best practice to allow introspection only to authenticated requests.
+After adding an API target, configure authentication before starting the scan. This is especially important when you select the introspection option for your schema, because best practice is to allow introspection only for authenticated requests.
 
 {% hint style="warning" %}
 GraphQL Introspection enabled is considered a Low Severity vulnerability. When enabled, restrict access to your GraphQL API using authentication.
@@ -20,7 +20,7 @@ The authentication scenarios described in [Configure OpenAPI authentication](con
 
 ## Use application/graphql media type
 
-GraphQL also supports `application/graphql` as the authentication media type. This format is supported by GraphQL servers.
+GraphQL also supports `application/graphql` as the authentication media type. GraphQL servers support this format.
 
 When using `application/graphql` as the authentication media type, the request body contains only the raw GraphQL query or mutation string.
 
@@ -34,11 +34,11 @@ When using `application/graphql` as the authentication media type, the request b
 1. Configure the authentication:
    1. **AUTHENTICATION MEDIA TYPE**: Select `application/graphql`.
    2. **LOGIN URL**: Enter the authentication URL.
-   3. **AUTHENTICATION PAYLOAD**: Enter the GraphQL mutation to be sent in the body of the POST request to the login URL.
-2. Click **Fetch** to authenticate. The **TOKEN SELECTOR** field populates with fields obtained from the authentication response. If authentication fails, an error is displayed.
+   3. **AUTHENTICATION PAYLOAD**: Enter the GraphQL mutation to send in the body of the POST request to the login URL.
+2. Click **Fetch** to authenticate. The **TOKEN SELECTOR** field populates with fields from the authentication response. If authentication fails, Snyk displays an error.
 3. In the **TOKEN SELECTOR**, choose the field that contains the authentication token.
 4. In **PLACE TOKEN IN**, choose where to place the token in API requests (usually **header**, but **cookie** is also available).
-5. In **FIELD NAME**, enter the name of the field in the header or cookie that will hold the token.
+5. In **FIELD NAME**, enter the name of the field in the header or cookie that holds the token.
 6.  (Optional) Set a **VALUE PREFIX** for the token value.
 
     This is often needed for JWTs. For example, if your API requires a header like `Authorization: JWT <token>`, configure:

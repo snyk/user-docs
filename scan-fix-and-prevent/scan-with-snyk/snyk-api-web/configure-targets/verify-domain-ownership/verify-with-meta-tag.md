@@ -33,9 +33,9 @@ This verification method is quick and straightforward for websites where you can
 
 1. Confirm the meta tag is visible in your website's source code by viewing the page source in a browser.
 1. Return to the verification dialog in Snyk API & Web.
-1. Click **VERIFY**.
+1. Click **Verify**.
 
-After successful verification, you can remove the meta tag if desired, though it's harmless to leave it in place.
+After successful verification, you can remove the meta tag if desired, though it is harmless to leave it in place.
 
 ## Troubleshooting
 

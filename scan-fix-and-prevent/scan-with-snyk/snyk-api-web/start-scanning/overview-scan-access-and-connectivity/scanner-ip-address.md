@@ -32,19 +32,19 @@ All other customers:
 
 * **52.16.191.244** (AWS IP)
 
-If you are unsure where your account is hosted, consider checking all IP addresses or contact the support team for assistance.
+If you are unsure where your account is hosted, check all IP addresses or contact the support team for assistance.
 
-If you have your own single tenant or dedicated infrastructure, reach out to the support team.
+If you have your own single tenant or dedicated infrastructure, contact the support team.
 
 ## Deprecated IP addresses
 
-The following IP addresses are deprecated, and no traffic should originate from them:
+The following IP addresses are deprecated. No traffic originates from them:
 
 * 35.190.194.212 (GCP IP)
 * 35.187.52.245 (GCP IP)
 
 ## Related information
 
-Another alternative to identify Snyk API & Web requests is through the user-agent header. For more information, see [Identify scanner requests](identify-scanner-requests.md).
+You can also identify Snyk requests through the user-agent header. For more information, visit [Identify scanner requests](identify-scanner-requests.md).
 
-If you are using a Web Application Firewall (WAF) in front of your target, it can block scan requests from Snyk API & Web IP addresses and cause the scan to fail. To avoid that, see [Configure IPs in WAFs](configure-ips-in-wafs.md).
+If you use a Web Application Firewall (WAF) in front of your target, it can block scan requests from Snyk IP addresses and cause the scan to fail. To avoid that, visit [Configure IPs in WAFs](configure-ips-in-wafs.md).

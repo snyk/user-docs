@@ -8,7 +8,7 @@ When running scans on a target with a login form, Snyk API & Web fails to log in
 
 ## Troubleshoot the problem
 
-Go through the following steps to identify possible causes and solutions.
+Work through the following steps to identify possible causes and solutions.
 
 ### Step 1: Test the current credentials
 
@@ -73,6 +73,6 @@ If a WAF blocks access to the authentication page, Snyk API & Web cannot authent
 | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | A WAF is blocking access to the authentication page with the login form. | Add Snyk API & Web IPs to the WAF's allowlist. Visit [Configure IPs in WAFs](../../start-scanning/overview-scan-access-and-connectivity/configure-ips-in-wafs.md). |
 
-After following these steps and applying the solutions, scans should be able to log in to your target.
+After following these steps and applying the solutions, scans can log in to your target.
 
 For more information, visit [Configure authentication](../../configure-targets/configure-authentication/).

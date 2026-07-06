@@ -11,15 +11,15 @@ Scanning an AWS Route 53 connection for asset discovery involves two steps:
 
 To add an AWS Route 53 connection, you need an AWS access key and secret access key. To obtain them, follow these steps:
 
-1. Sign in to the **AWS Management Console** with your credentials.
+1. Log in to the **AWS Management Console** with your credentials.
 2. Navigate to the **Identity and Access Management** (IAM) service:
    1. Type **iam** in the search box.
    2. Select the **IAM** service.
 3. In the **Users** section, click **Create User**.
 4. Type the **User name** (in this example, it is `test-user`) and click **Next**.
-5.  Select **Attach policies directly**, choose the desired policies to apply to the user, and click **Next**.
+5.  Select **Attach policies directly**, select the desired policies to apply to the user, and click **Next**.
 
-    If you have not created the policy yet, click **Create policy** and use the example below to configure a policy to allow listing zones and resources from Route 53. After that, refresh the **Permissions policies** list.
+    If you have not created the policy yet, click **Create policy** and use the following example to configure a policy to allow listing zones and resources from Route 53. After that, refresh the **Permissions policies** list.
 
     ```json
     {
@@ -52,4 +52,4 @@ In Snyk API & Web, add the AWS connection for asset discovery:
 3. Select **Connect with AWS Route 53** and click **Next**.
 4. On the next screen, enter the **AWS access key** and **AWS secret access key** with the values obtained in the previous step and click **Connect**.
 
-After successfully connecting with AWS, Snyk API & Web starts running regular discovery scans automatically on your account. In Snyk API & Web, check the **Discovery** page. Once the asset discovery is finished, all newly found assets are added to the list. At the top of the page, information about the number of newly found assets is displayed. Click on it to filter the list.
+After successfully connecting with AWS, Snyk starts running regular discovery scans automatically on your account. In Snyk, check the **Discovery** page. After the asset discovery finishes, Snyk adds all newly found assets to the list. At the top of the page, Snyk displays information about the number of newly found assets. Click it to filter the list.

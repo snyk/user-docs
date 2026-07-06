@@ -4,7 +4,7 @@ Learn how to generate API keys to integrate with Snyk API & Web.
 
 ## Overview
 
-Snyk API & Web provides API keys for authentication purposes in the integration with third-party systems (for example, Slack, Jira, Azure Boards, Azure DevOps, or Jenkins), as well as the integration of your own applications with Snyk API & Web using the Snyk API & Web API.
+Snyk API & Web provides API keys for authentication when you integrate with third-party systems, such as Slack, Jira, Azure Boards, Azure DevOps, or Jenkins. You also use API keys to integrate your own applications with Snyk using the Snyk API & Web API.
 
 Generating an API key has two steps:
 
@@ -15,10 +15,10 @@ This article describes these steps in detail.
 
 ## Step 1: Access the API key configuration
 
-Start by accessing the API key configuration as follows:
+Access the API key configuration as follows:
 
-1. Go to the Snyk API & Web application.
-2. Go to the **Settings** dropdown menu at the bottom-left corner of the navigation bar and click **API Keys**.
+1. Open the Snyk API & Web application.
+2. Navigate to the **Settings** dropdown menu in the bottom-left corner of the navigation bar and select **API Keys**.
 3. Click **Add API key** to open the configuration form.
 
 ## Step 2: Configure, generate, and save the API key
@@ -26,13 +26,13 @@ Start by accessing the API key configuration as follows:
 In the configuration form, fill out the following fields:
 
 1. **Name**: Type a meaningful name for the API key (for example, "Azure DevOps Integration" or "My App Integration with Snyk API & Web").
-2. **Role / Scope**: Choose the roles that can use the API key and at which level (scope) (for example, "Admin" / "Global (account)"). Click the plus (**+**) button to add the pairs of roles and scopes.
-3. (Optional) **Labels**: Tag the API key with meaningful labels for filtering purposes.
+2. **Role / Scope**: Select the roles that can use the API key and at which level (scope), for example, "Admin" / "Global (account)". Click the plus (**+**) button to add the pairs of roles and scopes.
+3. (Optional) **Labels**: Tag the API key with meaningful labels for filtering.
 
 Click **Generate key** and copy and save the API key.
 
 {% hint style="warning" %}
-This is the only time the API key is displayed. Make sure you copy and save it in a secure place.
+Snyk displays the API key only this one time. Ensure you copy and save it in a secure place.
 {% endhint %}
 
-With the API key saved, proceed to the integration with third-party tools or the integration of your own applications with Snyk API & Web using the Snyk API & Web API.
+After you save the API key, proceed to integrate with third-party tools or integrate your own applications with Snyk using the Snyk API & Web API.

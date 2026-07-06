@@ -18,20 +18,20 @@ Additional requirements:
 
 If your target requires requests to be encrypted, configure message level encryption in the Encryption tab.
 
-1. In Snyk API & Web, navigate to the **Targets** page.
+1. In Snyk, navigate to the **Targets** page.
 2. Identify the target you want to configure and click the **gear** icon to access the target settings.
 3. Click the **Encryption** tab and configure all fields:
    * Upload a certificate with the server public key
    * Upload a certificate with the client private key
    * Enter the Key ID (KID) to be placed in the JWE header
-   * (Optional) Limit the set of URLs that should be encrypted
+   * (Optional) Limit the set of URLs to encrypt
 4. Click **Save**.
 
 <figure><img src="../../../../.gitbook/assets/configure-message-level-encryption-settings.png" alt="Encryption settings page showing certificate upload fields and configuration options"><figcaption></figcaption></figure>
 
 ## Verify encryption
 
-After you save the configuration, encryption is enabled. The next time you run a scan against this target, Snyk API & Web automatically uses the configured encryption for all requests.
+After you save the configuration, encryption is enabled. The next time you run a scan against this target, Snyk automatically uses the configured encryption for all requests.
 
 {% hint style="info" %}
 For your security, all sensitive fields (such as certificates and shared secrets) are obfuscated after they are saved and cannot be viewed or retrieved again.
