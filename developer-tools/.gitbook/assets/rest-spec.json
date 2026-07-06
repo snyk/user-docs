@@ -5664,17 +5664,7 @@
             "type": "array"
           },
           "introduced": {
-            "properties": {
-              "from": {
-                "format": "date-time",
-                "type": "string"
-              },
-              "to": {
-                "format": "date-time",
-                "type": "string"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/FilterDateRange"
           },
           "issue_status": {
             "items": {
@@ -5743,17 +5733,7 @@
             "type": "array"
           },
           "updated": {
-            "properties": {
-              "from": {
-                "format": "date-time",
-                "type": "string"
-              },
-              "to": {
-                "format": "date-time",
-                "type": "string"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/FilterDateRange"
           }
         },
         "type": "object"
@@ -10781,6 +10761,19 @@
         ],
         "type": "object"
       },
+      "FilterDateRange": {
+        "properties": {
+          "from": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "to": {
+            "format": "date-time",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "FilterFieldAttributes": {
         "additionalProperties": false,
         "properties": {
@@ -13954,9 +13947,68 @@
           },
           {
             "properties": {
+              "effective_severity": {
+                "items": {
+                  "enum": [
+                    "CRITICAL",
+                    "HIGH",
+                    "MEDIUM",
+                    "LOW"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "event": {
+                "$ref": "#/components/schemas/FilterDateRange"
+              },
+              "event_type": {
+                "items": {
+                  "enum": [
+                    "new",
+                    "persisting",
+                    "prevented"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "git_branch": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "git_repo": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "is_suppressed": {
+                "type": "boolean"
+              },
               "orgs": {
                 "items": {
                   "format": "uuid",
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "sdlc_stage": {
+                "items": {
+                  "enum": [
+                    "IDE",
+                    "CLI",
+                    "MCP",
+                    "OTHER"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "test_user_email": {
+                "items": {
                   "type": "string"
                 },
                 "type": "array"
@@ -18479,17 +18531,7 @@
             "type": "array"
           },
           "introduced": {
-            "properties": {
-              "from": {
-                "format": "date-time",
-                "type": "string"
-              },
-              "to": {
-                "format": "date-time",
-                "type": "string"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/FilterDateRange"
           },
           "issue_status": {
             "items": {
@@ -18558,17 +18600,7 @@
             "type": "array"
           },
           "updated": {
-            "properties": {
-              "from": {
-                "format": "date-time",
-                "type": "string"
-              },
-              "to": {
-                "format": "date-time",
-                "type": "string"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/FilterDateRange"
           }
         },
         "type": "object"
@@ -21505,9 +21537,9 @@
           "type": {
             "description": "The JSON:API resource type",
             "enum": [
-              "project"
+              "projects"
             ],
-            "example": "project",
+            "example": "projects",
             "type": "string"
           }
         },
