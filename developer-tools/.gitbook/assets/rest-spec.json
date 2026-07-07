@@ -184,8 +184,55 @@
           }
         }
       },
-      "GetBrokerSettingsResponseWithIntegrations": {
-        "summary": "Broker settings with some integrations configured",
+      "GetBrokerSettingsResponseWithIntegrationsGolang": {
+        "summary": "Broker settings for Golang with Go module proxy \u0026 Go direct (SCM) integrations configured",
+        "value": {
+          "data": {
+            "integrations": [
+              {
+                "created_at": "2026-04-15T10:00:00.000Z",
+                "id": "019e8800-72c3-7ae4-bb4e-40deea1820c0",
+                "integration_type": "artifactory",
+                "urls": [
+                  "https://artifactory.internal-domain.com/artifactory/api/go/team-go-modules"
+                ]
+              },
+              {
+                "created_at": "2026-04-16T10:00:00.000Z",
+                "id": "019e8800-90bd-7bc0-9666-775eee165cf0",
+                "integration_type": "nexus-private-repo",
+                "urls": [
+                  "https://nexus.internal-domain.com/repository/go-hosted/"
+                ]
+              },
+              {
+                "created_at": "2026-06-10T10:00:00.000Z",
+                "id": "019eb24a-1b01-727d-b051-972dd2fdb8e2",
+                "integration_type": "github",
+                "urls": [
+                  "https://github.com/go-modules-org"
+                ]
+              },
+              {
+                "created_at": "2026-06-10T10:00:00.000Z",
+                "id": "019eb24a-34e3-7a53-aad1-6cedb57427b5",
+                "integration_type": "bitbucket-cloud",
+                "urls": [
+                  "https://bitbucket.org/my-workspace"
+                ]
+              }
+            ]
+          },
+          "jsonapi": {
+            "version": "1.0"
+          },
+          "links": {
+            "self": "/orgs/db2557c3-ecb8-4d45-8e1e-894ae89a92a6/settings/opensource/Golang/broker?version=2024-10-15"
+          }
+        }
+      },
+      "GetBrokerSettingsResponseWithIntegrationsNuGet": {
+        "summary": "Broker settings for NuGet with some integrations configured",
         "value": {
           "data": {
             "integrations": [
@@ -213,6 +260,43 @@
           },
           "links": {
             "self": "/orgs/db2557c3-ecb8-4d45-8e1e-894ae89a92a6/settings/opensource/Dotnet/broker?version=2024-10-15"
+          }
+        }
+      },
+      "GetPrivateRegistrySettingsResponseEmpty": {
+        "summary": "No integrations configured",
+        "value": {
+          "data": {
+            "integrations": []
+          },
+          "jsonapi": {
+            "version": "1.0"
+          },
+          "links": {
+            "self": "/orgs/82b3efbb-4b32-4f96-8005-9444eceacec8/settings/opensource/Golang/private-registries?version=2024-10-15"
+          }
+        }
+      },
+      "GetPrivateRegistrySettingsResponseWithIntegrations": {
+        "summary": "Private registry settings with Golang integrations configured",
+        "value": {
+          "data": {
+            "integrations": [
+              {
+                "created_at": "2026-04-15T10:00:00.000Z",
+                "id": "019e8801-72c3-7ae4-bb4e-40deea1820c0",
+                "integration_type": "artifactory",
+                "urls": [
+                  "https://artifactory.example.com/artifactory/api/go/team-go-modules"
+                ]
+              }
+            ]
+          },
+          "jsonapi": {
+            "version": "1.0"
+          },
+          "links": {
+            "self": "/orgs/db2557c3-ecb8-4d45-8e1e-894ae89a92a6/settings/opensource/Golang/private-registries?version=2024-10-15"
           }
         }
       },
@@ -292,7 +376,22 @@
           }
         }
       },
-      "PostBrokerSettingsRequestAddIntegration": {
+      "PostBrokerSettingsRequestAddIntegrationGolang": {
+        "summary": "Add a Go module proxy integration (Artifactory Go repository)",
+        "value": {
+          "data": {
+            "integrations": [
+              {
+                "integration_type": "artifactory",
+                "urls": [
+                  "https://artifactory.internal-domain.com/artifactory/api/go/team-go-modules"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "PostBrokerSettingsRequestAddIntegrationNuGet": {
         "summary": "Add an integration",
         "value": {
           "data": {
@@ -360,6 +459,77 @@
           },
           "links": {
             "self": "/orgs/4f4fbf18-b2cd-4bf3-9b7e-323b8be249ea/settings/opensource/Dotnet/broker?version=2024-10-15"
+          }
+        }
+      },
+      "PostPrivateRegistrySettingsRequestAddIntegration": {
+        "summary": "Add a Go module proxy integration",
+        "value": {
+          "data": {
+            "integrations": [
+              {
+                "integration_type": "artifactory",
+                "urls": [
+                  "https://artifactory.example.com/artifactory/api/go/team-go-modules"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "PostPrivateRegistrySettingsRequestEditIntegrations": {
+        "summary": "Edit multiple integrations at once",
+        "value": {
+          "data": {
+            "integrations": [
+              {
+                "integration_type": "artifactory",
+                "urls": [
+                  "https://artifactory.example.com/artifactory/api/go/team-go-modules",
+                  "https://artifactory.example.com/artifactory/api/go/sandbox-go-modules"
+                ]
+              },
+              {
+                "integration_type": "nexus-private-repo",
+                "urls": []
+              }
+            ]
+          }
+        }
+      },
+      "PostPrivateRegistrySettingsRequestRemoveIntegration": {
+        "summary": "Remove an integration by setting empty urls",
+        "value": {
+          "data": {
+            "integrations": [
+              {
+                "integration_type": "nexus-private-repo",
+                "urls": []
+              }
+            ]
+          }
+        }
+      },
+      "PostPrivateRegistrySettingsResponse": {
+        "summary": "Response after updating private registry settings",
+        "value": {
+          "data": {
+            "integrations": [
+              {
+                "created_at": "2026-04-15T10:00:00.000Z",
+                "id": "019e8802-d843-7b9f-a1dd-bd5c0bac373d",
+                "integration_type": "artifactory",
+                "urls": [
+                  "https://artifactory.example.com/artifactory/api/go/team-go-modules"
+                ]
+              }
+            ]
+          },
+          "jsonapi": {
+            "version": "1.0"
+          },
+          "links": {
+            "self": "/orgs/4f4fbf18-b2cd-4bf3-9b7e-323b8be249ea/settings/opensource/Golang/private-registries?version=2024-10-15"
           }
         }
       }
@@ -521,6 +691,16 @@
               ],
               "type": "string"
             },
+            "created_at": {
+              "default": "last",
+              "enum": [
+                "max",
+                "min",
+                "first",
+                "last"
+              ],
+              "type": "string"
+            },
             "issues": {
               "default": "last",
               "enum": [
@@ -647,6 +827,15 @@
           "$ref": "#/components/schemas/AssignableByMe"
         }
       },
+      "BestMatch": {
+        "description": "When true, match identifier filters in order `rules`, `cves`, `cwes` and\nreturn lessons from the first non-empty bucket (V1 lookup-for-cta\nbehaviour). `ecosystem` still applies. When false (default), AND all\nidentifier filters. Ignored when `cwes`, `cves`, and `rules` are all\nomitted.\n",
+        "in": "query",
+        "name": "best_match",
+        "schema": {
+          "default": false,
+          "type": "boolean"
+        }
+      },
       "BotId": {
         "description": "Bot ID",
         "in": "path",
@@ -663,6 +852,34 @@
         "schema": {
           "type": "boolean"
         }
+      },
+      "CatalogCves": {
+        "description": "Filter lessons tagged with at least one listed CVE.\nExample: `?cves=CVE-2021-44228` or `?cves=CVE-2021-44228,CVE-2021-45046`.\n",
+        "example": [
+          "CVE-2021-44228",
+          "CVE-2021-45046"
+        ],
+        "explode": false,
+        "in": "query",
+        "name": "cves",
+        "schema": {
+          "$ref": "#/components/schemas/CatalogCves"
+        },
+        "style": "form"
+      },
+      "CatalogCwes": {
+        "description": "Filter lessons tagged with at least one listed CWE.\nExample: `?cwes=CWE-79` or `?cwes=CWE-79,CWE-89`.\n",
+        "example": [
+          "CWE-79",
+          "CWE-89"
+        ],
+        "explode": false,
+        "in": "query",
+        "name": "cwes",
+        "schema": {
+          "$ref": "#/components/schemas/Cwes"
+        },
+        "style": "form"
       },
       "ChannelId": {
         "description": "Slack Channel ID",
@@ -1192,6 +1409,14 @@
           "$ref": "#/components/schemas/EnvironmentKind"
         }
       },
+      "LessonEcosystem": {
+        "description": "Filter lessons by ecosystem. `all` has no effect. `npm` matches\n`javascript`. Values not in the enum (e.g. `maven`) are rejected.\n",
+        "in": "query",
+        "name": "ecosystem",
+        "schema": {
+          "$ref": "#/components/schemas/LessonEcosystem"
+        }
+      },
       "Limit": {
         "description": "Number of results to return per page",
         "example": 10,
@@ -1251,7 +1476,7 @@
         }
       },
       "MetaFieldsGroupValues": {
-        "description": "Meta fields to include in the response. Multiple fields can be specified.\n\nAvailable fields:\n  - `count` - Number of assets with this value\n  - `last_seen_at` - Aggregated last_seen_at timestamp (default aggregation: last)\n  - `updated_at` - Aggregated updated_at timestamp (default aggregation: last)\n  - `risk_score` - Aggregated risk score from discovery sources (default aggregation: last)\n  - `issues` - Aggregated issue counts (critical, high, medium, low, total) (default aggregation: last)\n  - `labels` - Labels across assets (default aggregation: last)\n  - `tags` - Tags across assets (default aggregation: last)\n  - `built_at` - Aggregated container image build timestamp (default aggregation: last)\n  - `all` - Include all available meta fields\n\nAll fields default to the `last` aggregation function, which returns the value\nfrom the asset with the most recent updated_at in the group. Use the `aggregate`\nparameter to override the aggregation function per field.\n\nIf not specified, the meta object is not included in the response.\n\nNote: Requesting meta fields may impact response time as aggregations\nrequire additional computation.\n",
+        "description": "Meta fields to include in the response. Multiple fields can be specified.\n\nAvailable fields:\n  - `count` - Number of assets with this value\n  - `created_at` - Aggregated asset creation timestamp (default aggregation: last)\n  - `last_seen_at` - Aggregated last_seen_at timestamp (default aggregation: last)\n  - `updated_at` - Aggregated updated_at timestamp (default aggregation: last)\n  - `risk_score` - Aggregated risk score from discovery sources (default aggregation: last)\n  - `issues` - Aggregated issue counts (critical, high, medium, low, total) (default aggregation: last)\n  - `labels` - Labels across assets (default aggregation: last)\n  - `tags` - Tags across assets (default aggregation: last)\n  - `built_at` - Aggregated container image build timestamp (default aggregation: last)\n  - `all` - Include all available meta fields\n\nAll fields default to the `last` aggregation function, which returns the value\nfrom the asset with the most recent updated_at in the group. Use the `aggregate`\nparameter to override the aggregation function per field.\n\nIf not specified, the meta object is not included in the response.\n\nNote: Requesting meta fields may impact response time as aggregations\nrequire additional computation.\n",
         "example": [
           "count",
           "risk_score",
@@ -1265,6 +1490,7 @@
           "items": {
             "enum": [
               "count",
+              "created_at",
               "last_seen_at",
               "updated_at",
               "risk_score",
@@ -1670,6 +1896,20 @@
           "$ref": "#/components/schemas/RsqlFilterString"
         }
       },
+      "Rules": {
+        "description": "Filter lessons tagged with at least one listed Snyk rule (`snyk_vuln_id`).\nExample: `?rules=SNYK-JS-AXIOS-16298058` or comma-separated for several.\n",
+        "example": [
+          "SNYK-JS-AXIOS-16298058",
+          "SNYK-JAVA-COMSQUAREUPOKHTTP3-1038737"
+        ],
+        "explode": false,
+        "in": "query",
+        "name": "rules",
+        "schema": {
+          "$ref": "#/components/schemas/Rules"
+        },
+        "style": "form"
+      },
       "ScanId": {
         "description": "Scan ID",
         "example": "56465b1d-8764-458c-1234-0987abcd6543",
@@ -1777,7 +2017,7 @@
         }
       },
       "SortGroupValues": {
-        "description": "Comma-separated sort fields for group values. Prefix with `-` for descending order.\nMultiple sort fields are supported (e.g., `-issues,count`).\nDefaults to `count` (ascending) when not specified.\nResults are always tie-broken by `value` for deterministic ordering.\n\nAvailable sort fields:\n  - `value` - Sort by the group value string (alphabetical)\n  - `count` - Sort by the number of assets in each group\n  - `last_seen_at` - Sort by the aggregated last_seen_at timestamp\n  - `updated_at` - Sort by the aggregated updated_at timestamp\n  - `risk_score` - Sort by the aggregated risk score\n  - `built_at` - Sort by the aggregated container image build timestamp\n  - `issues` - Sort by issue severity (critical → high → medium → low)\n",
+        "description": "Comma-separated sort fields for group values. Prefix with `-` for descending order.\nMultiple sort fields are supported (e.g., `-issues,count`).\nDefaults to `created_at` (ascending) when not specified.\nResults are always tie-broken by `value` for deterministic ordering.\n\nAvailable sort fields:\n  - `value` - Sort by the group value string (alphabetical)\n  - `count` - Sort by the number of assets in each group\n  - `created_at` - Sort by the aggregated created_at timestamp\n  - `last_seen_at` - Sort by the aggregated last_seen_at timestamp\n  - `updated_at` - Sort by the aggregated updated_at timestamp\n  - `risk_score` - Sort by the aggregated risk score\n  - `built_at` - Sort by the aggregated container image build timestamp\n  - `issues` - Sort by issue severity (critical → high → medium → low)\n",
         "example": "-count",
         "in": "query",
         "name": "sort",
@@ -1812,6 +2052,16 @@
           ],
           "type": "string"
         }
+      },
+      "Source": {
+        "description": "Optional caller-attribution string for Snyk-internal telemetry. When\nthe value is on Snyk's internal allowlist, it is echoed back into each\nreturned resource URL as `?source=\u003cvalue\u003e`; otherwise the value is\nsilently dropped. Third-party consumers can omit this parameter.\n",
+        "in": "query",
+        "name": "source",
+        "schema": {
+          "maxLength": 64,
+          "type": "string"
+        },
+        "x-snyk-internal": true
       },
       "SparseFieldsets": {
         "description": "Sparse fieldsets allow clients to request only specific fields for a given resource type.\nUse the format `fields[\u003ctype\u003e]=field1,field2` where `\u003ctype\u003e` is the JSON:API resource type.\n\n**Container image fields** (use with `fields[container_images]`):\n- `class` - Classification of the asset\n- `registry` - Container registry hostname\n- `repository` - Repository path\n- `config_digest` - Image config digest\n- `distribution_digests` - Distribution digests (manifest/index pairs)\n- `image_tags` - Distinct image tags across all discovery sources\n- `built_at` - When the image was built\n- `size_bytes` - Size of the image in bytes\n- `author` - Image author\n- `architecture` - CPU architecture\n- `os` - Operating system\n- `variant` - CPU architecture variant\n- `os_version` - Operating system version\n- `os_features` - OS features\n- `config` - Image runtime configuration (OCI config)\n- `root_fs` - Root filesystem information\n- `history` - Image build history\n- `inferred_base_images` - Inferred base images\n- `teams` - Teams associated with the asset\n- `labels` - Labels associated with the asset\n- `tags` - Key-value tags for the asset\n- `risk_score` - Risk score for the asset\n- `test_surfaces` - Test surfaces for the asset\n- `issues` - Issue counts by severity\n- `created_at` - When the asset was created\n- `updated_at` - When the asset was last updated\n- `last_scan` - When the asset was last scanned\n- `scan_engines` - Scan engines applied to the asset\n\nNote: `type` and `id` are always included regardless of field selection.\n",
@@ -1977,7 +2227,7 @@
         "in": "query",
         "name": "type",
         "schema": {
-          "$ref": "#/components/schemas/TypeDef"
+          "$ref": "#/components/schemas/IssueTypeFilter"
         },
         "style": "form"
       },
@@ -2560,6 +2810,149 @@
           },
           "sunset": {
             "$ref": "#/components/headers/SunsetHeader"
+          }
+        }
+      },
+      "501": {
+        "content": {
+          "application/vnd.api+json": {
+            "schema": {
+              "additionalProperties": false,
+              "example": {
+                "errors": [
+                  {
+                    "detail": "Permission denied for this resource",
+                    "status": "403"
+                  }
+                ],
+                "jsonapi": {
+                  "version": "1.0"
+                }
+              },
+              "properties": {
+                "errors": {
+                  "example": [
+                    {
+                      "detail": "Permission denied for this resource",
+                      "status": "403"
+                    }
+                  ],
+                  "items": {
+                    "additionalProperties": false,
+                    "example": {
+                      "detail": "Not Found",
+                      "status": "404"
+                    },
+                    "properties": {
+                      "code": {
+                        "description": "An application-specific error code, expressed as a string value.",
+                        "example": "entity-not-found",
+                        "type": "string"
+                      },
+                      "detail": {
+                        "description": "A human-readable explanation specific to this occurrence of the problem.",
+                        "example": "The request was missing these required fields: ...",
+                        "type": "string"
+                      },
+                      "id": {
+                        "description": "A unique identifier for this particular occurrence of the problem.",
+                        "example": "f16c31b5-6129-4571-add8-d589da9be524",
+                        "format": "uuid",
+                        "type": "string"
+                      },
+                      "meta": {
+                        "additionalProperties": true,
+                        "example": {
+                          "key": "value"
+                        },
+                        "type": "object"
+                      },
+                      "source": {
+                        "additionalProperties": false,
+                        "example": {
+                          "pointer": "/data/attributes"
+                        },
+                        "properties": {
+                          "parameter": {
+                            "description": "A string indicating which URI query parameter caused the error.",
+                            "example": "param1",
+                            "type": "string"
+                          },
+                          "pointer": {
+                            "description": "A JSON Pointer [RFC6901] to the associated entity in the request document.",
+                            "example": "/data/attributes",
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "status": {
+                        "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+                        "example": "400",
+                        "pattern": "^[45]\\d\\d$",
+                        "type": "string"
+                      },
+                      "title": {
+                        "description": "A short, human-readable summary of the problem that SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.",
+                        "example": "Bad request",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "status",
+                      "detail"
+                    ],
+                    "type": "object"
+                  },
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "jsonapi": {
+                  "additionalProperties": false,
+                  "example": {
+                    "version": "1.0"
+                  },
+                  "properties": {
+                    "version": {
+                      "description": "Version of the JSON API specification this server supports.",
+                      "example": "1.0",
+                      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "version"
+                  ],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "jsonapi",
+                "errors"
+              ],
+              "type": "object"
+            }
+          }
+        },
+        "description": "Not Implemented: The requested operation is not implemented",
+        "headers": {
+          "deprecation": {
+            "$ref": "#/components/headers/DeprecationHeader__0"
+          },
+          "snyk-request-id": {
+            "$ref": "#/components/headers/RequestIdResponseHeader__0"
+          },
+          "snyk-version-lifecycle-stage": {
+            "$ref": "#/components/headers/VersionStageResponseHeader__0"
+          },
+          "snyk-version-requested": {
+            "$ref": "#/components/headers/VersionRequestedResponseHeader__0"
+          },
+          "snyk-version-served": {
+            "$ref": "#/components/headers/VersionServedResponseHeader__0"
+          },
+          "sunset": {
+            "$ref": "#/components/headers/SunsetHeader__0"
           }
         }
       },
@@ -4723,7 +5116,9 @@
           "type": {
             "description": "The JSON:API resource type",
             "enum": [
-              "container_images"
+              "container_images",
+              "sboms",
+              "repositories"
             ],
             "type": "string"
           }
@@ -5269,17 +5664,7 @@
             "type": "array"
           },
           "introduced": {
-            "properties": {
-              "from": {
-                "format": "date-time",
-                "type": "string"
-              },
-              "to": {
-                "format": "date-time",
-                "type": "string"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/FilterDateRange"
           },
           "issue_status": {
             "items": {
@@ -5348,17 +5733,7 @@
             "type": "array"
           },
           "updated": {
-            "properties": {
-              "from": {
-                "format": "date-time",
-                "type": "string"
-              },
-              "to": {
-                "format": "date-time",
-                "type": "string"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/FilterDateRange"
           }
         },
         "type": "object"
@@ -5943,7 +6318,16 @@
             "description": "The type of integration (e.g., 'artifactory', 'nexus-private-repo')",
             "enum": [
               "artifactory",
-              "nexus-private-repo"
+              "nexus-private-repo",
+              "github",
+              "github-cloud-app",
+              "github-server-app",
+              "github-enterprise",
+              "bitbucket-cloud",
+              "bitbucket-connect-app",
+              "bitbucket-server",
+              "gitlab",
+              "azure-repos"
             ],
             "example": "artifactory",
             "type": "string"
@@ -6169,6 +6553,20 @@
           "modification_time"
         ],
         "type": "object"
+      },
+      "CatalogCves": {
+        "description": "CVE identifiers (e.g. CVE-2021-44228). Up to 50 unique values.",
+        "example": [
+          "CVE-2021-44228"
+        ],
+        "items": {
+          "pattern": "^CVE-\\d+-\\d+$",
+          "type": "string"
+        },
+        "maxItems": 50,
+        "minItems": 1,
+        "type": "array",
+        "uniqueItems": true
       },
       "CatalogProgress": {
         "properties": {
@@ -6847,6 +7245,69 @@
         ],
         "type": "object"
       },
+      "Component": {
+        "description": "A component in software, such as a library or package dependency",
+        "properties": {
+          "declared_license_expression": {
+            "description": "See https://spdx.github.io/spdx-spec/v3.0.1/annexes/spdx-license-expressions/",
+            "maxLength": 2048,
+            "nullable": true,
+            "type": "string"
+          },
+          "description": {
+            "description": "Free form text description of this component",
+            "maxLength": 4096,
+            "nullable": true,
+            "type": "string"
+          },
+          "licenses": {
+            "description": "Human readable license strings",
+            "items": {
+              "maxLength": 128,
+              "type": "string"
+            },
+            "maxLength": 32,
+            "type": "array"
+          },
+          "name": {
+            "description": "The name of the component",
+            "maxLength": 255,
+            "type": "string"
+          },
+          "purl": {
+            "description": "Package URL",
+            "maxLength": 4096,
+            "nullable": true,
+            "type": "string"
+          },
+          "supplier": {
+            "$ref": "#/components/schemas/Party"
+          },
+          "type": {
+            "description": "The type of this component",
+            "maxLength": 64,
+            "nullable": true,
+            "type": "string"
+          },
+          "vcs_references": {
+            "description": "Relevant VCS for this component",
+            "items": {
+              "$ref": "#/components/schemas/VcsReference"
+            },
+            "type": "array"
+          },
+          "version": {
+            "description": "The version of the component, e.x. 0.2.0",
+            "maxLength": 255,
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "type": "object"
+      },
       "ComposerSettings": {
         "additionalProperties": false,
         "properties": {
@@ -6871,6 +7332,9 @@
                 "azure-repos": "#/components/schemas/AzureReposAttributes",
                 "bitbucket-server": "#/components/schemas/BitbucketServerAttributes",
                 "digitalocean-cr": "#/components/schemas/DigitalOceanCrAttributes",
+                "docker-hub": "#/components/schemas/DockerHubAttributes",
+                "ecr": "#/components/schemas/EcrAttributes",
+                "gcr": "#/components/schemas/GcrAttributes",
                 "github": "#/components/schemas/GitHubAttributes",
                 "github-cloud-app": "#/components/schemas/GitHubCloudAppAttributes",
                 "github-cr": "#/components/schemas/GithubCrAttributes",
@@ -6932,160 +7396,13 @@
                 "$ref": "#/components/schemas/DigitalOceanCrAttributes"
               },
               {
-                "properties": {
-                  "required": {
-                    "properties": {
-                      "broker_client_url": {
-                        "example": "https://\u003cbroker.client.hostname\u003e:\u003cport\u003e",
-                        "type": "string"
-                      },
-                      "cr_agent_url": {
-                        "example": "https://\u003cagent-host\u003e:\u003cagent-port\u003e",
-                        "type": "string"
-                      },
-                      "cr_base": {
-                        "type": "string"
-                      },
-                      "cr_password": {
-                        "format": "uuid",
-                        "type": "string"
-                      },
-                      "cr_username": {
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "cr_base",
-                      "cr_username",
-                      "cr_password",
-                      "broker_client_url",
-                      "cr_agent_url"
-                    ],
-                    "type": "object"
-                  },
-                  "type": {
-                    "enum": [
-                      "docker-hub"
-                    ],
-                    "type": "string"
-                  },
-                  "validations": {
-                    "items": {
-                      "type": "object"
-                    },
-                    "type": "array"
-                  }
-                },
-                "required": [
-                  "type",
-                  "required"
-                ],
-                "type": "object"
+                "$ref": "#/components/schemas/DockerHubAttributes"
               },
               {
-                "properties": {
-                  "required": {
-                    "properties": {
-                      "broker_client_url": {
-                        "example": "https://\u003cbroker.client.hostname\u003e:\u003cport\u003e",
-                        "type": "string"
-                      },
-                      "cr_agent_url": {
-                        "example": "https://\u003cagent-host\u003e:\u003cagent-port\u003e",
-                        "type": "string"
-                      },
-                      "cr_base": {
-                        "type": "string"
-                      },
-                      "cr_external_id": {
-                        "type": "string"
-                      },
-                      "cr_region": {
-                        "type": "string"
-                      },
-                      "cr_role_arn": {
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "broker_client_url",
-                      "cr_agent_url",
-                      "cr_base",
-                      "cr_role_arn",
-                      "cr_region",
-                      "cr_external_id"
-                    ],
-                    "type": "object"
-                  },
-                  "type": {
-                    "enum": [
-                      "ecr"
-                    ],
-                    "type": "string"
-                  },
-                  "validations": {
-                    "items": {
-                      "type": "object"
-                    },
-                    "type": "array"
-                  }
-                },
-                "required": [
-                  "type",
-                  "required"
-                ],
-                "type": "object"
+                "$ref": "#/components/schemas/EcrAttributes"
               },
               {
-                "properties": {
-                  "required": {
-                    "properties": {
-                      "broker_client_url": {
-                        "example": "https://\u003cbroker.client.hostname\u003e:\u003cport\u003e",
-                        "type": "string"
-                      },
-                      "cr_agent_url": {
-                        "example": "https://\u003cagent-host\u003e:\u003cagent-port\u003e",
-                        "type": "string"
-                      },
-                      "cr_base": {
-                        "type": "string"
-                      },
-                      "cr_password": {
-                        "format": "uuid",
-                        "type": "string"
-                      },
-                      "cr_username": {
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "cr_base",
-                      "cr_username",
-                      "cr_password",
-                      "broker_client_url",
-                      "cr_agent_url"
-                    ],
-                    "type": "object"
-                  },
-                  "type": {
-                    "enum": [
-                      "gcr"
-                    ],
-                    "type": "string"
-                  },
-                  "validations": {
-                    "items": {
-                      "type": "object"
-                    },
-                    "type": "array"
-                  }
-                },
-                "required": [
-                  "type",
-                  "required"
-                ],
-                "type": "object"
+                "$ref": "#/components/schemas/GcrAttributes"
               },
               {
                 "$ref": "#/components/schemas/GithubCrAttributes"
@@ -8540,6 +8857,11 @@
         "uniqueItems": true
       },
       "Cwes": {
+        "description": "CWE identifiers (e.g. CWE-79). Up to 50 unique values.",
+        "example": [
+          "CWE-79",
+          "CWE-89"
+        ],
         "items": {
           "pattern": "^CWE-\\d+$",
           "type": "string"
@@ -9092,34 +9414,6 @@
         ],
         "type": "object"
       },
-      "DigitalOceanAttributes": {
-        "additionalProperties": false,
-        "properties": {
-          "credentials": {
-            "$ref": "#/components/schemas/DigitalOceanCredentials"
-          },
-          "integration_type": {
-            "enum": [
-              "digitalocean-cr"
-            ],
-            "type": "string"
-          },
-          "profile_name": {
-            "description": "User-defined name to identify this integration. Allows alphanumeric characters, spaces, hyphens, underscores, and dots.",
-            "example": "my-aws-prod-account",
-            "maxLength": 255,
-            "minLength": 1,
-            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9 _.-]*$",
-            "type": "string"
-          }
-        },
-        "required": [
-          "integration_type",
-          "profile_name",
-          "credentials"
-        ],
-        "type": "object"
-      },
       "DigitalOceanCrAttributes": {
         "properties": {
           "required": {
@@ -9164,24 +9458,6 @@
         "required": [
           "type",
           "required"
-        ],
-        "type": "object"
-      },
-      "DigitalOceanCredentials": {
-        "additionalProperties": false,
-        "description": "Credentials for DigitalOcean Container Registry",
-        "properties": {
-          "token": {
-            "description": "DigitalOcean API token with read/write access to container registry",
-            "example": "dop_v1_1234567890abcdef1234567890abcdef1234567890abcdef1234567890ab",
-            "maxLength": 500,
-            "minLength": 1,
-            "pattern": "^[a-zA-Z0-9_-]+$",
-            "type": "string"
-          }
-        },
-        "required": [
-          "token"
         ],
         "type": "object"
       },
@@ -9235,55 +9511,53 @@
         "type": "object"
       },
       "DockerHubAttributes": {
-        "additionalProperties": false,
         "properties": {
-          "credentials": {
-            "$ref": "#/components/schemas/DockerHubCredentials"
+          "required": {
+            "properties": {
+              "broker_client_url": {
+                "example": "https://\u003cbroker.client.hostname\u003e:\u003cport\u003e",
+                "type": "string"
+              },
+              "cr_agent_url": {
+                "example": "https://\u003cagent-host\u003e:\u003cagent-port\u003e",
+                "type": "string"
+              },
+              "cr_base": {
+                "type": "string"
+              },
+              "cr_password": {
+                "format": "uuid",
+                "type": "string"
+              },
+              "cr_username": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "cr_base",
+              "cr_username",
+              "cr_password",
+              "broker_client_url",
+              "cr_agent_url"
+            ],
+            "type": "object"
           },
-          "integration_type": {
+          "type": {
             "enum": [
               "docker-hub"
             ],
             "type": "string"
           },
-          "profile_name": {
-            "description": "User-defined name to identify this integration. Allows alphanumeric characters, spaces, hyphens, underscores, and dots.",
-            "example": "my-aws-prod-account",
-            "maxLength": 255,
-            "minLength": 1,
-            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9 _.-]*$",
-            "type": "string"
+          "validations": {
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
           }
         },
         "required": [
-          "integration_type",
-          "profile_name",
-          "credentials"
-        ],
-        "type": "object"
-      },
-      "DockerHubCredentials": {
-        "additionalProperties": false,
-        "description": "Credentials for Docker Hub container registry",
-        "properties": {
-          "password": {
-            "description": "Docker Hub password or access token",
-            "example": "dckr_pat_1234567890abcdef",
-            "format": "password",
-            "minLength": 1,
-            "type": "string"
-          },
-          "username": {
-            "description": "Docker Hub username",
-            "example": "myusername",
-            "maxLength": 255,
-            "minLength": 1,
-            "type": "string"
-          }
-        },
-        "required": [
-          "username",
-          "password"
+          "type",
+          "required"
         ],
         "type": "object"
       },
@@ -9385,55 +9659,56 @@
         "type": "object"
       },
       "EcrAttributes": {
-        "additionalProperties": false,
         "properties": {
-          "credentials": {
-            "$ref": "#/components/schemas/EcrCredentials"
+          "required": {
+            "properties": {
+              "broker_client_url": {
+                "example": "https://\u003cbroker.client.hostname\u003e:\u003cport\u003e",
+                "type": "string"
+              },
+              "cr_agent_url": {
+                "example": "https://\u003cagent-host\u003e:\u003cagent-port\u003e",
+                "type": "string"
+              },
+              "cr_base": {
+                "type": "string"
+              },
+              "cr_external_id": {
+                "type": "string"
+              },
+              "cr_region": {
+                "type": "string"
+              },
+              "cr_role_arn": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "broker_client_url",
+              "cr_agent_url",
+              "cr_base",
+              "cr_role_arn",
+              "cr_region",
+              "cr_external_id"
+            ],
+            "type": "object"
           },
-          "integration_type": {
+          "type": {
             "enum": [
               "ecr"
             ],
             "type": "string"
           },
-          "profile_name": {
-            "description": "User-defined name to identify this integration. Allows alphanumeric characters, spaces, hyphens, underscores, and dots.",
-            "example": "my-aws-prod-account",
-            "maxLength": 255,
-            "minLength": 1,
-            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9 _.-]*$",
-            "type": "string"
+          "validations": {
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
           }
         },
         "required": [
-          "integration_type",
-          "profile_name",
-          "credentials"
-        ],
-        "type": "object"
-      },
-      "EcrCredentials": {
-        "additionalProperties": false,
-        "description": "Credentials for AWS Elastic Container Registry (ECR) integration",
-        "properties": {
-          "region": {
-            "description": "AWS region where the ECR registry is located",
-            "example": "us-east-1",
-            "pattern": "^[a-z]{2}-[a-z]+-\\d{1}$",
-            "type": "string"
-          },
-          "role_arn": {
-            "description": "AWS IAM role ARN for cross-account access to ECR",
-            "example": "arn:aws:iam::123456789012:role/SnykEcrRole",
-            "maxLength": 2048,
-            "minLength": 20,
-            "pattern": "^arn:aws:iam::\\d{12}:role/.+$",
-            "type": "string"
-          }
-        },
-        "required": [
-          "region",
-          "role_arn"
+          "type",
+          "required"
         ],
         "type": "object"
       },
@@ -10486,6 +10761,19 @@
         ],
         "type": "object"
       },
+      "FilterDateRange": {
+        "properties": {
+          "from": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "to": {
+            "format": "date-time",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "FilterFieldAttributes": {
         "additionalProperties": false,
         "properties": {
@@ -10493,7 +10781,9 @@
             "description": "List of asset types this field applies to",
             "items": {
               "enum": [
-                "container_images"
+                "container_images",
+                "sboms",
+                "repositories"
               ],
               "type": "string"
             },
@@ -12645,92 +12935,53 @@
         "type": "boolean"
       },
       "GcrAttributes": {
-        "additionalProperties": false,
         "properties": {
-          "credentials": {
-            "$ref": "#/components/schemas/GcrCredentials"
+          "required": {
+            "properties": {
+              "broker_client_url": {
+                "example": "https://\u003cbroker.client.hostname\u003e:\u003cport\u003e",
+                "type": "string"
+              },
+              "cr_agent_url": {
+                "example": "https://\u003cagent-host\u003e:\u003cagent-port\u003e",
+                "type": "string"
+              },
+              "cr_base": {
+                "type": "string"
+              },
+              "cr_password": {
+                "format": "uuid",
+                "type": "string"
+              },
+              "cr_username": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "cr_base",
+              "cr_username",
+              "cr_password",
+              "broker_client_url",
+              "cr_agent_url"
+            ],
+            "type": "object"
           },
-          "integration_type": {
+          "type": {
             "enum": [
-              "gcr",
-              "google-artifact-cr"
+              "gcr"
             ],
             "type": "string"
           },
-          "profile_name": {
-            "description": "User-defined name to identify this integration. Allows alphanumeric characters, spaces, hyphens, underscores, and dots.",
-            "example": "my-aws-prod-account",
-            "maxLength": 255,
-            "minLength": 1,
-            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9 _.-]*$",
-            "type": "string"
+          "validations": {
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
           }
         },
         "required": [
-          "integration_type",
-          "profile_name",
-          "credentials"
-        ],
-        "type": "object"
-      },
-      "GcrCredentials": {
-        "additionalProperties": false,
-        "description": "Credentials for Google Container Registry (GCR) and Google Artifact Registry (GAR)",
-        "properties": {
-          "password": {
-            "description": "JSON key file content for Google Cloud service account (as a string)",
-            "example": "{\"type\":\"service_account\",\"project_id\":\"my-project\",...}",
-            "format": "password",
-            "minLength": 1,
-            "type": "string"
-          },
-          "registry_base": {
-            "description": "Registry base URL for GCR or GAR (e.g., gcr.io, us.gcr.io, eu.gcr.io, asia.gcr.io, us-docker.pkg.dev, europe-docker.pkg.dev)",
-            "example": "gcr.io",
-            "format": "hostname",
-            "maxLength": 255,
-            "minLength": 1,
-            "pattern": "^[a-zA-Z0-9]([a-zA-Z0-9\\-]{0,61}[a-zA-Z0-9])?(\\.[a-zA-Z0-9]([a-zA-Z0-9\\-]{0,61}[a-zA-Z0-9])?)*$",
-            "type": "string"
-          }
-        },
-        "required": [
-          "password",
-          "registry_base"
-        ],
-        "type": "object"
-      },
-      "GenericAttributes": {
-        "additionalProperties": false,
-        "properties": {
-          "credentials": {
-            "$ref": "#/components/schemas/GenericContainerRegistryCredentials"
-          },
-          "integration_type": {
-            "enum": [
-              "acr",
-              "artifactory-cr",
-              "github-cr",
-              "gitlab-cr",
-              "harbor-cr",
-              "nexus-cr",
-              "quay-cr"
-            ],
-            "type": "string"
-          },
-          "profile_name": {
-            "description": "User-defined name to identify this integration. Allows alphanumeric characters, spaces, hyphens, underscores, and dots.",
-            "example": "my-aws-prod-account",
-            "maxLength": 255,
-            "minLength": 1,
-            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9 _.-]*$",
-            "type": "string"
-          }
-        },
-        "required": [
-          "integration_type",
-          "profile_name",
-          "credentials"
+          "type",
+          "required"
         ],
         "type": "object"
       },
@@ -12763,41 +13014,6 @@
         },
         "required": [
           "configuration"
-        ],
-        "type": "object"
-      },
-      "GenericContainerRegistryCredentials": {
-        "additionalProperties": false,
-        "description": "Credentials for generic container registries (ACR, Artifactory, Harbor, Quay, etc.)",
-        "properties": {
-          "password": {
-            "description": "Registry password or access token",
-            "example": "mypassword123",
-            "format": "password",
-            "minLength": 1,
-            "type": "string"
-          },
-          "registry_base": {
-            "description": "Registry base URL - hostname only, no protocol (e.g., myregistry.azurecr.io, artifactory.company.com, harbor.example.com, quay.io)",
-            "example": "myregistry.azurecr.io",
-            "format": "hostname",
-            "maxLength": 255,
-            "minLength": 1,
-            "pattern": "^[a-zA-Z0-9]([a-zA-Z0-9\\-]{0,61}[a-zA-Z0-9])?(\\.[a-zA-Z0-9]([a-zA-Z0-9\\-]{0,61}[a-zA-Z0-9])?)*$",
-            "type": "string"
-          },
-          "username": {
-            "description": "Registry username",
-            "example": "admin",
-            "maxLength": 255,
-            "minLength": 1,
-            "type": "string"
-          }
-        },
-        "required": [
-          "username",
-          "password",
-          "registry_base"
         ],
         "type": "object"
       },
@@ -13731,9 +13947,68 @@
           },
           {
             "properties": {
+              "effective_severity": {
+                "items": {
+                  "enum": [
+                    "CRITICAL",
+                    "HIGH",
+                    "MEDIUM",
+                    "LOW"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "event": {
+                "$ref": "#/components/schemas/FilterDateRange"
+              },
+              "event_type": {
+                "items": {
+                  "enum": [
+                    "new",
+                    "persisting",
+                    "prevented"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "git_branch": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "git_repo": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "is_suppressed": {
+                "type": "boolean"
+              },
               "orgs": {
                 "items": {
                   "format": "uuid",
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "sdlc_stage": {
+                "items": {
+                  "enum": [
+                    "IDE",
+                    "CLI",
+                    "MCP",
+                    "OTHER"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "test_user_email": {
+                "items": {
                   "type": "string"
                 },
                 "type": "array"
@@ -15112,6 +15387,11 @@
             "minimum": 0,
             "type": "integer"
           },
+          "created_at": {
+            "description": "Aggregated created_at timestamp across assets in this group.\nThe aggregation function is controlled by the `aggregate[created_at]` parameter (default: last).\nNull if no assets have a created_at value.\n",
+            "format": "date-time",
+            "type": "string"
+          },
           "issues": {
             "$ref": "#/components/schemas/GroupValueIssuesAggregation"
           },
@@ -15691,171 +15971,11 @@
         "format": "date-time",
         "type": "string"
       },
-      "Integration": {
-        "additionalProperties": false,
-        "description": "Integration resource returned in API responses",
-        "properties": {
-          "attributes": {
-            "additionalProperties": false,
-            "properties": {
-              "created_at": {
-                "description": "When the integration was created",
-                "example": "2025-10-31T10:30:00Z",
-                "format": "date-time",
-                "type": "string"
-              },
-              "has_broker": {
-                "description": "Whether this integration uses Snyk Broker",
-                "example": false,
-                "type": "boolean"
-              },
-              "integration_type": {
-                "$ref": "#/components/schemas/IntegrationType"
-              },
-              "profile_name": {
-                "description": "User-defined name for the integration. Null for integrations created via V1 API.",
-                "example": "my-aws-prod-account",
-                "nullable": true,
-                "type": "string"
-              },
-              "updated_at": {
-                "description": "When the integration was last updated",
-                "example": "2025-10-31T10:30:00Z",
-                "format": "date-time",
-                "nullable": true,
-                "type": "string"
-              }
-            },
-            "required": [
-              "integration_type",
-              "profile_name",
-              "created_at"
-            ],
-            "type": "object"
-          },
-          "id": {
-            "description": "The unique identifier for the integration",
-            "example": "9a3e5d90-b782-468a-a042-9a2073736f0b",
-            "format": "uuid",
-            "type": "string"
-          },
-          "relationships": {
-            "additionalProperties": false,
-            "properties": {
-              "org": {
-                "additionalProperties": false,
-                "properties": {
-                  "data": {
-                    "additionalProperties": false,
-                    "properties": {
-                      "id": {
-                        "example": "331ede0a-de94-468a-a042-9a2073736f0b",
-                        "format": "uuid",
-                        "type": "string"
-                      },
-                      "type": {
-                        "enum": [
-                          "org"
-                        ],
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "type",
-                      "id"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "required": [
-                  "data"
-                ],
-                "type": "object"
-              }
-            },
-            "type": "object"
-          },
-          "type": {
-            "description": "Resource type",
-            "enum": [
-              "integration"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "id",
-          "attributes"
-        ],
-        "type": "object"
-      },
       "IntegrationId": {
         "description": "Container Registry Integration ID",
         "example": "365764ee-8a87-491a-9c9f-ad816f1238df",
         "format": "uuid",
         "type": "string"
-      },
-      "IntegrationPatchRequestData": {
-        "additionalProperties": false,
-        "description": "Request body for updating an integration (partial update supported)",
-        "properties": {
-          "data": {
-            "additionalProperties": false,
-            "description": "The integration data",
-            "properties": {
-              "attributes": {
-                "additionalProperties": false,
-                "description": "Integration attributes to update. Only include fields you want to modify.\nNote: integration_type cannot be changed after creation.\n",
-                "properties": {
-                  "credentials": {
-                    "description": "Integration credentials (structure varies by integration_type).\nOnly include fields you want to update.\n\nCredential types:\n- ECR: role_arn + region\n- Docker Hub: username + password\n- Generic (ACR, Artifactory, Harbor, etc.): username + password + registry_base\n- DigitalOcean: token\n- GCR/GAR: password (JSON key) + registry_base\n",
-                    "oneOf": [
-                      {
-                        "$ref": "#/components/schemas/EcrCredentials"
-                      },
-                      {
-                        "$ref": "#/components/schemas/DockerHubCredentials"
-                      },
-                      {
-                        "$ref": "#/components/schemas/GenericContainerRegistryCredentials"
-                      },
-                      {
-                        "$ref": "#/components/schemas/DigitalOceanCredentials"
-                      },
-                      {
-                        "$ref": "#/components/schemas/GcrCredentials"
-                      }
-                    ]
-                  },
-                  "profile_name": {
-                    "description": "User-defined name to identify this integration. Allows alphanumeric characters, spaces, hyphens, underscores, and dots.",
-                    "example": "my-aws-prod-account",
-                    "maxLength": 255,
-                    "minLength": 1,
-                    "pattern": "^[a-zA-Z0-9][a-zA-Z0-9 _.-]*$",
-                    "type": "string"
-                  }
-                },
-                "type": "object"
-              },
-              "id": {
-                "description": "The integration ID",
-                "format": "uuid",
-                "type": "string"
-              },
-              "type": {
-                "description": "Resource type (must be 'integration')",
-                "enum": [
-                  "integration"
-                ],
-                "type": "string"
-              }
-            },
-            "type": "object"
-          }
-        },
-        "type": "object"
       },
       "IntegrationRelationship": {
         "additionalProperties": false,
@@ -15910,71 +16030,6 @@
         ],
         "type": "object"
       },
-      "IntegrationRequestData": {
-        "additionalProperties": false,
-        "description": "Request body for creating an integration",
-        "properties": {
-          "data": {
-            "additionalProperties": false,
-            "description": "The integration data",
-            "properties": {
-              "attributes": {
-                "description": "Integration attributes including type, profile name, and credentials.\nThe credentials structure varies by integration_type:\n- ECR: role_arn + region\n- Docker Hub: username + password\n- Generic (ACR, Artifactory, Harbor, etc.): username + password + registry_base\n- DigitalOcean: token\n- GCR/GAR: password (JSON key) + registry_base\n",
-                "discriminator": {
-                  "mapping": {
-                    "acr": "#/components/schemas/GenericAttributes",
-                    "artifactory-cr": "#/components/schemas/GenericAttributes",
-                    "digitalocean-cr": "#/components/schemas/DigitalOceanAttributes",
-                    "docker-hub": "#/components/schemas/DockerHubAttributes",
-                    "ecr": "#/components/schemas/EcrAttributes",
-                    "gcr": "#/components/schemas/GcrAttributes",
-                    "github-cr": "#/components/schemas/GenericAttributes",
-                    "gitlab-cr": "#/components/schemas/GenericAttributes",
-                    "google-artifact-cr": "#/components/schemas/GcrAttributes",
-                    "harbor-cr": "#/components/schemas/GenericAttributes",
-                    "nexus-cr": "#/components/schemas/GenericAttributes",
-                    "quay-cr": "#/components/schemas/GenericAttributes"
-                  },
-                  "propertyName": "integration_type"
-                },
-                "oneOf": [
-                  {
-                    "$ref": "#/components/schemas/EcrAttributes"
-                  },
-                  {
-                    "$ref": "#/components/schemas/DockerHubAttributes"
-                  },
-                  {
-                    "$ref": "#/components/schemas/GenericAttributes"
-                  },
-                  {
-                    "$ref": "#/components/schemas/GcrAttributes"
-                  },
-                  {
-                    "$ref": "#/components/schemas/DigitalOceanAttributes"
-                  }
-                ]
-              },
-              "type": {
-                "description": "Resource type (must be 'integration')",
-                "enum": [
-                  "integration"
-                ],
-                "type": "string"
-              }
-            },
-            "required": [
-              "type",
-              "attributes"
-            ],
-            "type": "object"
-          }
-        },
-        "required": [
-          "data"
-        ],
-        "type": "object"
-      },
       "IntegrationResource": {
         "additionalProperties": false,
         "properties": {
@@ -15992,117 +16047,6 @@
           "type"
         ],
         "type": "object"
-      },
-      "IntegrationSettings": {
-        "additionalProperties": false,
-        "description": "Integration settings resource",
-        "properties": {
-          "attributes": {
-            "additionalProperties": false,
-            "description": "For container registry integrations, includes `container_app_scan_enabled` (defaults to true when unset in storage). For other integration types the object is empty because this setting does not apply.\n",
-            "properties": {
-              "container_app_scan_enabled": {
-                "description": "Whether container application scanning is enabled. Only present for container registry integrations; defaults to true when unset in storage.",
-                "example": true,
-                "type": "boolean"
-              }
-            },
-            "type": "object"
-          },
-          "id": {
-            "description": "The integration ID this settings resource belongs to",
-            "example": "9a3e5d90-b782-468a-a042-9a2073736f0b",
-            "format": "uuid",
-            "type": "string"
-          },
-          "type": {
-            "description": "Resource type",
-            "enum": [
-              "integration_settings"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "id",
-          "attributes"
-        ],
-        "type": "object"
-      },
-      "IntegrationSettingsPatchRequestData": {
-        "additionalProperties": false,
-        "description": "Request body for updating integration settings",
-        "properties": {
-          "data": {
-            "additionalProperties": false,
-            "properties": {
-              "attributes": {
-                "additionalProperties": false,
-                "description": "Settings to update. Only include fields you want to modify.",
-                "properties": {
-                  "container_app_scan_enabled": {
-                    "description": "Whether container application scanning is enabled for this integration",
-                    "type": "boolean"
-                  }
-                },
-                "type": "object"
-              },
-              "id": {
-                "description": "The integration ID (must match `integration_id` in the path)",
-                "example": "9a3e5d90-b782-468a-a042-9a2073736f0b",
-                "format": "uuid",
-                "type": "string"
-              },
-              "type": {
-                "description": "Resource type (must be 'integration_settings')",
-                "enum": [
-                  "integration_settings"
-                ],
-                "type": "string"
-              }
-            },
-            "required": [
-              "type",
-              "id",
-              "attributes"
-            ],
-            "type": "object"
-          }
-        },
-        "required": [
-          "data"
-        ],
-        "type": "object"
-      },
-      "IntegrationType": {
-        "description": "Integration type identifier.\n\nContainer registry types (V3 CREATE/UPDATE supported):\n- acr (Azure Container Registry)\n- artifactory-cr (Artifactory Container Registry)\n- digitalocean-cr (DigitalOcean Container Registry)\n- docker-hub (Docker Hub)\n- ecr (AWS Elastic Container Registry)\n- gcr (Google Container Registry)\n- github-cr (GitHub Container Registry)\n- gitlab-cr (GitLab Container Registry)\n- google-artifact-cr (Google Artifact Registry)\n- harbor-cr (Harbor)\n- nexus-cr (Nexus Container Registry)\n- quay-cr (Quay Container Registry)\n\nSCM (Source Control Management) types (V3 GET/LIST only, create via V1):\n- azure-repos (Azure Repos)\n- bitbucket-cloud (Bitbucket Cloud)\n- bitbucket-connect-app (Bitbucket Connect App)\n- bitbucket-server (Bitbucket Server/Data Center)\n- github (GitHub.com)\n- github-cloud-app (GitHub Cloud App)\n- github-enterprise (GitHub Enterprise Server)\n- github-server-app (GitHub Server App)\n- gitlab (GitLab)\n\nOther integration types (V3 GET/LIST only, create via V1):\n- kubernetes (Kubernetes)\n- terraform-cloud (Terraform Cloud)\n",
-        "enum": [
-          "acr",
-          "artifactory-cr",
-          "digitalocean-cr",
-          "docker-hub",
-          "ecr",
-          "gcr",
-          "github-cr",
-          "gitlab-cr",
-          "google-artifact-cr",
-          "harbor-cr",
-          "nexus-cr",
-          "quay-cr",
-          "azure-repos",
-          "bitbucket-cloud",
-          "bitbucket-connect-app",
-          "bitbucket-server",
-          "github",
-          "github-cloud-app",
-          "github-enterprise",
-          "github-server-app",
-          "gitlab",
-          "kubernetes",
-          "terraform-cloud"
-        ],
-        "type": "string"
       },
       "IsActive": {
         "description": "Current status of the project settings.",
@@ -16237,7 +16181,7 @@
                         "type": "string"
                       },
                       "description": {
-                        "description": "A markdown-formatted optional description of this remedy. Links are not permitted.",
+                        "description": "A markdown-formatted optional description of this remedy.",
                         "maxLength": 20480,
                         "minLength": 1,
                         "type": "string"
@@ -16898,6 +16842,20 @@
         "example": "issue",
         "type": "string"
       },
+      "IssueTypeFilter": {
+        "description": "An issue type to filter issues by.",
+        "enum": [
+          "package_vulnerability",
+          "license",
+          "cloud",
+          "code",
+          "custom",
+          "config",
+          "secrets"
+        ],
+        "example": "cloud",
+        "type": "string"
+      },
       "IssuesCountAttributes": {
         "example": {
           "critical": 5,
@@ -17503,6 +17461,28 @@
             "type": "object"
           }
         ]
+      },
+      "LessonEcosystem": {
+        "description": "Lesson language or platform. `all` skips ecosystem filtering.\n`npm` is treated as `javascript`.\n",
+        "enum": [
+          "all",
+          "general",
+          "java",
+          "javascript",
+          "python",
+          "golang",
+          "php",
+          "cpp",
+          "csharp",
+          "kubernetes",
+          "docker",
+          "npm",
+          "aiml",
+          "rust",
+          "ruby",
+          "swift"
+        ],
+        "type": "string"
       },
       "LinkProperty": {
         "example": "https://example.com/api/resource",
@@ -18485,6 +18465,48 @@
         ],
         "type": "object"
       },
+      "OrgContext": {
+        "description": "Service catalog enrichment from org-context connectors",
+        "properties": {
+          "application": {
+            "description": "Parent application this service belongs to",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "catalog_name": {
+            "description": "Identifier for this service in the catalog system",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "category": {
+            "description": "Service category (e.g., \"backend\", \"data-pipeline\", \"frontend\")",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "lifecycle": {
+            "description": "Lifecycle stage of the service (e.g., \"production\", \"deprecated\")",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "owner": {
+            "description": "Owning team or person as recorded in the service catalog",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "title": {
+            "description": "Human-readable display title of the service",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "OrgFilters": {
         "properties": {
           "cve": {
@@ -18509,17 +18531,7 @@
             "type": "array"
           },
           "introduced": {
-            "properties": {
-              "from": {
-                "format": "date-time",
-                "type": "string"
-              },
-              "to": {
-                "format": "date-time",
-                "type": "string"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/FilterDateRange"
           },
           "issue_status": {
             "items": {
@@ -18588,17 +18600,7 @@
             "type": "array"
           },
           "updated": {
-            "properties": {
-              "from": {
-                "format": "date-time",
-                "type": "string"
-              },
-              "to": {
-                "format": "date-time",
-                "type": "string"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/FilterDateRange"
           }
         },
         "type": "object"
@@ -19746,6 +19748,42 @@
         },
         "type": "object"
       },
+      "Party": {
+        "description": "A group / team / individual, such as an author of a piece of software",
+        "properties": {
+          "email": {
+            "description": "An email which can be used to contact this party",
+            "format": "email",
+            "maxLength": 320,
+            "nullable": true,
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "person",
+              "organization",
+              "unknown"
+            ]
+          },
+          "name": {
+            "description": "Name of the party",
+            "maxLength": 255,
+            "type": "string"
+          },
+          "uri": {
+            "description": "URL or URI referring to the party, if available",
+            "format": "uri",
+            "maxLength": 2048,
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "name"
+        ],
+        "type": "object"
+      },
       "PassFail": {
         "description": "Indicate whether a Test passes or fails.",
         "enum": [
@@ -20650,9 +20688,15 @@
         "description": "JSON:API data for any asset type (polymorphic)",
         "properties": {
           "attributes": {
-            "oneOf": [
+            "anyOf": [
               {
                 "$ref": "#/components/schemas/ContainerImageAttributesResponse"
+              },
+              {
+                "$ref": "#/components/schemas/SbomAttributesResponse"
+              },
+              {
+                "$ref": "#/components/schemas/RepositoryAttributesResponse"
               }
             ]
           },
@@ -20714,7 +20758,9 @@
           "type": {
             "description": "The JSON:API resource type",
             "enum": [
-              "container_images"
+              "container_images",
+              "sboms",
+              "repositories"
             ],
             "type": "string"
           }
@@ -20770,7 +20816,19 @@
       },
       "Principal": {
         "properties": {
+          "actor_source": {
+            "description": "The kind of actor that created the policy. \"snyk_user\" is a Snyk identity; \"external_user\" indicates an external (e.g. SCM) actor.",
+            "enum": [
+              "snyk_user",
+              "external_user"
+            ],
+            "type": "string"
+          },
           "email": {
+            "type": "string"
+          },
+          "external_id": {
+            "description": "The identifier of the actor within the external provider. Present only when the policy was created by an external actor; absent for Snyk users.",
             "type": "string"
           },
           "id": {
@@ -20780,6 +20838,21 @@
           },
           "name": {
             "description": "Name of the user or service account that created the policy",
+            "type": "string"
+          },
+          "origin": {
+            "description": "The external provider through which the actor created the policy. Present only when the policy was created by an external actor; absent for Snyk users.",
+            "enum": [
+              "bitbucket_cloud",
+              "bitbucket_connect_app",
+              "bitbucket_server",
+              "gitlab",
+              "github",
+              "github_enterprise",
+              "github_cloud_app",
+              "github_server_app",
+              "azure_repos"
+            ],
             "type": "string"
           }
         },
@@ -20825,6 +20898,71 @@
           "type",
           "id",
           "attributes"
+        ],
+        "type": "object"
+      },
+      "PrivateRegistryIntegration": {
+        "additionalProperties": false,
+        "properties": {
+          "created_at": {
+            "description": "When this integration was created",
+            "format": "date-time",
+            "readOnly": true,
+            "type": "string"
+          },
+          "id": {
+            "description": "The unique identifier for the ecosystem integration",
+            "format": "uuid",
+            "readOnly": true,
+            "type": "string"
+          },
+          "integration_type": {
+            "description": "The type of integration (e.g., 'artifactory', 'nexus-private-repo')",
+            "enum": [
+              "artifactory",
+              "nexus-private-repo",
+              "github",
+              "github-cloud-app",
+              "github-enterprise",
+              "bitbucket-cloud",
+              "bitbucket-connect-app",
+              "bitbucket-server",
+              "gitlab",
+              "azure-repos"
+            ],
+            "example": "artifactory",
+            "type": "string"
+          },
+          "urls": {
+            "description": "Array of full, publicly-accessible URLs (e.g. Go module proxy URLs) for this integration. Set this field to undefined, an empty array, or omit it to delete the integration.",
+            "example": [
+              "https://artifactory.example.com/artifactory/api/go/my-go-modules"
+            ],
+            "items": {
+              "format": "uri",
+              "maxLength": 2048,
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "integration_type"
+        ],
+        "type": "object"
+      },
+      "PrivateRegistrySettings": {
+        "additionalProperties": false,
+        "properties": {
+          "integrations": {
+            "items": {
+              "$ref": "#/components/schemas/PrivateRegistryIntegration"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "integrations"
         ],
         "type": "object"
       },
@@ -21399,9 +21537,9 @@
           "type": {
             "description": "The JSON:API resource type",
             "enum": [
-              "project"
+              "projects"
             ],
-            "example": "project",
+            "example": "projects",
             "type": "string"
           }
         },
@@ -22481,6 +22619,124 @@
         ],
         "type": "object"
       },
+      "RepositoryAttributesResponse": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/AssetBaseAttributes"
+          },
+          {
+            "$ref": "#/components/schemas/RepositoryCommonFields"
+          }
+        ]
+      },
+      "RepositoryCommonFields": {
+        "description": "Attributes specific to repository assets.",
+        "properties": {
+          "archived": {
+            "description": "Whether the repository is archived",
+            "nullable": true,
+            "type": "boolean"
+          },
+          "default_branch_name": {
+            "description": "Default branch name",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "description": {
+            "description": "Optional repository description",
+            "maxLength": 1024,
+            "nullable": true,
+            "type": "string"
+          },
+          "fork": {
+            "description": "Whether the repository is a fork",
+            "nullable": true,
+            "type": "boolean"
+          },
+          "is_empty": {
+            "description": "Whether the repository is empty",
+            "nullable": true,
+            "type": "boolean"
+          },
+          "is_personal": {
+            "description": "Whether the repository is a personal repository",
+            "nullable": true,
+            "type": "boolean"
+          },
+          "languages": {
+            "description": "Programming languages detected in the repository",
+            "items": {
+              "$ref": "#/components/schemas/RepositoryLanguage"
+            },
+            "maxItems": 50,
+            "type": "array"
+          },
+          "last_sync": {
+            "description": "When the repository was last synced from the SCM",
+            "format": "date-time",
+            "nullable": true,
+            "type": "string"
+          },
+          "name": {
+            "description": "Repository name from SCM",
+            "maxLength": 256,
+            "type": "string"
+          },
+          "org_context": {
+            "$ref": "#/components/schemas/OrgContext"
+          },
+          "pushed_at": {
+            "description": "When code was last pushed to the repository",
+            "format": "date-time",
+            "nullable": true,
+            "type": "string"
+          },
+          "scm_id": {
+            "description": "SCM-specific identifier (GitHub numeric ID, GitLab project ID, etc.)",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "scm_organization": {
+            "description": "SCM organization name",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "scm_project": {
+            "description": "SCM project name",
+            "maxLength": 256,
+            "nullable": true,
+            "type": "string"
+          },
+          "topics": {
+            "description": "Repository topics/tags",
+            "items": {
+              "maxLength": 64,
+              "type": "string"
+            },
+            "maxItems": 50,
+            "type": "array"
+          },
+          "url": {
+            "description": "Web browse URL of the repository (natural key, unique per tenant)",
+            "maxLength": 1000,
+            "type": "string"
+          },
+          "visibility": {
+            "description": "Repository visibility",
+            "enum": [
+              "public",
+              "private",
+              "internal"
+            ],
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "RepositoryGroup": {
         "description": "A repository with its matching tags grouped together",
         "properties": {
@@ -22499,6 +22755,22 @@
           "repository",
           "tags"
         ],
+        "type": "object"
+      },
+      "RepositoryLanguage": {
+        "description": "Programming language detected in a repository",
+        "properties": {
+          "byte_count": {
+            "description": "Number of bytes of code in this language",
+            "format": "int64",
+            "type": "integer"
+          },
+          "name": {
+            "description": "Language name",
+            "maxLength": 256,
+            "type": "string"
+          }
+        },
         "type": "object"
       },
       "Resolution": {
@@ -22879,6 +23151,21 @@
         "example": "type==container_images;created_at\u003e2024-01-01",
         "type": "string"
       },
+      "Rules": {
+        "description": "Snyk rule identifiers (SNYK-LANG-...). Up to 50 unique values.",
+        "example": [
+          "SNYK-JS-AXIOS-16298058",
+          "SNYK-JAVA-COMSQUAREUPOKHTTP3-1038737"
+        ],
+        "items": {
+          "pattern": "^SNYK-[A-Z]+-.+$",
+          "type": "string"
+        },
+        "maxItems": 50,
+        "minItems": 1,
+        "type": "array",
+        "uniqueItems": true
+      },
       "SSOConnection": {
         "additionalProperties": false,
         "properties": {
@@ -22953,6 +23240,96 @@
       "SastScanConfiguration": {
         "description": "Scan configuration parameters for the SAST scanner.",
         "type": "object"
+      },
+      "SbomAttributesResponse": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/AssetBaseAttributes"
+          },
+          {
+            "description": "Attributes specific to sbom.",
+            "properties": {
+              "authors": {
+                "items": {
+                  "$ref": "#/components/schemas/Party"
+                },
+                "maxItems": 32,
+                "type": "array"
+              },
+              "component": {
+                "$ref": "#/components/schemas/Component"
+              },
+              "document_uid": {
+                "description": "Document UID (CycloneDX serialNumber, SPDX documentNamespace)",
+                "maxLength": 2048,
+                "type": "string"
+              },
+              "document_version": {
+                "description": "CycloneDX `version`, null for SPDX",
+                "format": "int32",
+                "nullable": true,
+                "type": "number"
+              },
+              "lifecycles": {
+                "description": "Lifecycles, e.x. one of cyclonedx.model.lifecycle.LifecyclePhase ('design', 'pre-build', etc)",
+                "items": {
+                  "maxLength": 64,
+                  "type": "string"
+                },
+                "maxItems": 16,
+                "type": "array"
+              },
+              "name": {
+                "description": "Sbom name",
+                "maxLength": 256,
+                "type": "string"
+              },
+              "sbom_created_at": {
+                "description": "When the SBOM was generated, ISO 8601 format. Can be distinct from created_at",
+                "format": "date-time",
+                "nullable": true,
+                "type": "string"
+              },
+              "sbom_standard": {
+                "description": "SBOM standard / format used to generate this asset",
+                "enum": [
+                  "cyclonedx",
+                  "spdx"
+                ],
+                "type": "string"
+              },
+              "serialization": {
+                "description": "Serialization format used to encode this asset",
+                "enum": [
+                  "json",
+                  "xml",
+                  "yaml"
+                ],
+                "type": "string"
+              },
+              "spec_version": {
+                "description": "SBOM spec version as provided, for example 1.6, 2.3, 3.0.1.",
+                "maxLength": 32,
+                "type": "string"
+              },
+              "tools": {
+                "items": {
+                  "$ref": "#/components/schemas/Tool"
+                },
+                "maxItems": 32,
+                "type": "array"
+              }
+            },
+            "required": [
+              "name",
+              "sbom_standard",
+              "spec_version",
+              "serialization",
+              "document_uid"
+            ],
+            "type": "object"
+          }
+        ]
       },
       "SbomDocument": {
         "additionalProperties": true,
@@ -23408,7 +23785,7 @@
         "type": "object"
       },
       "ScmResource": {
-        "description": "Resource representing a repository of source files located in\na Source Code Management tool (e.g. GitHub).\n\nScmResources provide Snyk with the requisite information to\nlocate and scan the source files located in the repository.\n\nCurrently supported scans utilizing ScmResources are:\n- SAST scans on (1) ScmResource that references a repo already\nimported into Snyk\n- Secrets scans on (1) ScmResource that references a repo already\nimported into Snyk",
+        "description": "Resource representing a repository of source files located in\na Source Code Management tool (e.g. GitHub).\n\nScmResources provide Snyk with the requisite information to\nlocate and scan the source files located in the repository.\n\nCurrently supported scans utilizing ScmResources are:\n- SAST scans on (1) ScmResource that references a repo already\nimported into Snyk\n- Secrets scans on (1) ScmResource that references a repo which\nmay not already be imported into Snyk",
         "example": {
           "commit": "8dbd1ea7201a0d49603467981075a633d91e40b9",
           "file_patterns": [],
@@ -23612,6 +23989,36 @@
           "nonce",
           "encrypted",
           "expires_at"
+        ],
+        "type": "object"
+      },
+      "SecretsEnablement": {
+        "additionalProperties": false,
+        "properties": {
+          "attributes": {
+            "additionalProperties": false,
+            "properties": {
+              "secrets_enabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "secrets_enabled"
+            ],
+            "type": "object"
+          },
+          "id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "id",
+          "attributes"
         ],
         "type": "object"
       },
@@ -24034,7 +24441,7 @@
         "type": "object"
       },
       "SnykReferenceResource": {
-        "description": "SnykReferenceResources contain references to source code,\ncontainers, SBOMs, and other testable content that has already\nbeen provided to Snyk to create a Project or Target.\n\nIf the intended content to test is already known to Snyk as a\nProject, Target, or otherwise, this SnykReferenceResource can\nbe used to initiate a Test with the appropriate ID.\n\nCurrently no scans are supported through the Test API for\nSnykReferenceResources.",
+        "description": "SnykReferenceResources contain references to source code,\ncontainers, SBOMs, and other testable content that has already\nbeen provided to Snyk to create a Project or Target.\n\nIf the intended content to test is already known to Snyk as a\nProject, Target, or otherwise, this SnykReferenceResource can\nbe used to initiate a Test with the appropriate ID.\n\nSupported scans:\n- SCA scan on one (1) SnykReferenceResource which contains a\nTarget ID in addition to at least one of CommitRef or Branch\nprovided on the SCM Context object.",
         "example": {
           "ref_id": "00000000-0000-0000-0000-000000000000",
           "reference_type": "project",
@@ -25090,6 +25497,10 @@
       "TestConfiguration": {
         "description": "Test configuration.",
         "properties": {
+          "asset_name": {
+            "maxLength": 256,
+            "type": "string"
+          },
           "local_policy": {
             "allOf": [
               {
@@ -25097,6 +25508,10 @@
               }
             ],
             "description": "Inline configured policy options for determining outcome of this specific test.\n\nIf centrally managed policies are in scope, inline policies are overridden\nby managed policies. Policy references explain which policies were\neffective for test evaluation."
+          },
+          "monitor": {
+            "description": "Indicates whether the test result should be monitored with recurring tests.",
+            "type": "boolean"
           },
           "project_business_criticality": {
             "maxLength": 256,
@@ -25475,6 +25890,28 @@
         "maxItems": 50,
         "minItems": 1,
         "type": "array"
+      },
+      "Tool": {
+        "description": "A tool (piece of software, etc)",
+        "properties": {
+          "name": {
+            "description": "Name of the tool",
+            "maxLength": 255,
+            "type": "string"
+          },
+          "supplier": {
+            "$ref": "#/components/schemas/Party"
+          },
+          "version": {
+            "description": "The version of this tool",
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "type": "object"
       },
       "Type": {
         "type": "string"
@@ -26489,6 +26926,39 @@
         "format": "uuid",
         "type": "string"
       },
+      "VcsReference": {
+        "description": "A reference to a version control system, with optional branch, tag, or revision information",
+        "properties": {
+          "branch": {
+            "description": "The VCS branch",
+            "maxLength": 255,
+            "nullable": true,
+            "type": "string"
+          },
+          "revision": {
+            "description": "Commit SHA or revision",
+            "maxLength": 2048,
+            "nullable": true,
+            "type": "string"
+          },
+          "tag": {
+            "description": "The VCS tag, if applicable",
+            "maxLength": 2048,
+            "nullable": true,
+            "type": "string"
+          },
+          "url": {
+            "description": "A link to the VCS repository",
+            "format": "uri",
+            "maxLength": 2048,
+            "type": "string"
+          }
+        },
+        "required": [
+          "url"
+        ],
+        "type": "object"
+      },
       "VersioningSchema": {
         "allOf": [
           {
@@ -26922,111 +27392,42 @@
         },
         "type": "object"
       },
-      "scm_credentials": {
-        "additionalProperties": false,
-        "description": "The encrypted SCM credentials object passed along from Registry",
-        "items": {
-          "properties": {
-            "auth": {
-              "properties": {
-                "agent": {
-                  "type": "object"
-                },
-                "brokerUrl": {
-                  "type": "string"
-                },
-                "hashedBrokerToken": {
-                  "type": "string"
-                },
-                "iv": {
-                  "format": "password",
-                  "type": "string"
-                },
-                "password": {
-                  "format": "password",
-                  "type": "string"
-                },
-                "sshToken": {
-                  "format": "password",
-                  "type": "string"
-                },
-                "token": {
-                  "format": "password",
-                  "type": "string"
-                },
-                "username": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "iv"
-              ],
-              "type": "object"
-            },
-            "authorizedSources": {
-              "items": {
-                "additionalProperties": true,
-                "properties": {
-                  "owner": {
-                    "type": "string"
-                  },
-                  "repository": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "owner"
-                ],
-                "type": "object"
-              },
-              "type": "array"
-            },
-            "privateRegistryTokens": {
-              "items": {
-                "additionalProperties": false,
-                "properties": {
-                  "hashedBrokerToken": {
-                    "type": "string"
-                  },
-                  "integrationType": {
-                    "type": "string"
-                  },
-                  "token": {
-                    "type": "string"
-                  },
-                  "type": {
-                    "type": "string"
-                  },
-                  "url": {
-                    "type": "string"
-                  },
-                  "username": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "type"
-                ],
-                "type": "object"
-              },
-              "type": "array"
-            },
-            "version": {
-              "type": "number"
-            }
-          },
-          "type": "object"
+      "resolve_uv_options": {
+        "properties": {
+          "include_dev_dependencies": {
+            "type": "boolean"
+          }
         },
-        "required": [
-          "auth",
-          "version",
-          "authorizedSources"
-        ],
-        "type": "array"
+        "type": "object"
       },
       "use_proxy": {
         "description": "Whether to use the isolated builds proxy. The proxy will decrypt credentials on the fly, to prevent the untrusted isolated builds\nenvironment from having access to the credentials themselves.\nThis feature is currently opt-in, but will become mandatory in the future for certain ecosystems.\n",
         "type": "boolean"
+      },
+      "uv_workspace": {
+        "additionalProperties": false,
+        "properties": {
+          "package_name": {
+            "description": "uv workspace member name, passed to `uv export --package`.",
+            "example": "foo",
+            "type": "string"
+          },
+          "pyproject_toml": {
+            "description": "Base64-encoded contents of the workspace member's pyproject.toml.",
+            "type": "string"
+          },
+          "relative_path": {
+            "description": "Path to the member's pyproject.toml (incl. filename) relative to uv.lock.",
+            "example": "packages/foo/pyproject.toml",
+            "type": "string"
+          }
+        },
+        "required": [
+          "pyproject_toml",
+          "relative_path",
+          "package_name"
+        ],
+        "type": "object"
       }
     },
     "securitySchemes": {
@@ -32923,6 +33324,9 @@
                 }
               }
             }
+          },
+          "501": {
+            "$ref": "#/components/responses/501"
           }
         },
         "summary": "Get an issue",
@@ -36042,7 +36446,7 @@
     },
     "/learn/catalog": {
       "get": {
-        "description": "List Snyk Learn's catalog resources",
+        "description": "Returns lessons and learning paths. Optional filters narrow lessons by\nCWE, CVE, Snyk rule, and/or ecosystem.\n\nMultiple identifier params are ANDed by default. Set `best_match=true` for\npriority match: `rules`, then `cves`, then `cwes` (first bucket with\nhits wins). `ecosystem` is applied after identifier matching.\n\nWith filters active, a learning path is returned only if it contains a\nmatching lesson; `attributes.lesson_ids` lists those lessons only.\n\nFor `cwes`, `cves`, and `rules`, pass multiple values comma-separated in\none parameter (e.g. `?cwes=CWE-79,CWE-89`). Repeated parameters\n(e.g. `?cwes=CWE-79\u0026cwes=CWE-89`) are not accepted.\n",
         "operationId": "listLearnCatalog",
         "parameters": [
           {
@@ -36050,6 +36454,24 @@
           },
           {
             "$ref": "#/components/parameters/ContentSource"
+          },
+          {
+            "$ref": "#/components/parameters/Source"
+          },
+          {
+            "$ref": "#/components/parameters/CatalogCwes"
+          },
+          {
+            "$ref": "#/components/parameters/CatalogCves"
+          },
+          {
+            "$ref": "#/components/parameters/Rules"
+          },
+          {
+            "$ref": "#/components/parameters/LessonEcosystem"
+          },
+          {
+            "$ref": "#/components/parameters/BestMatch"
           },
           {
             "$ref": "#/components/parameters/Limit"
@@ -36089,7 +36511,7 @@
                 }
               }
             },
-            "description": "Returns a list of catalog resources",
+            "description": "Catalog resources for this request. Filtered responses may omit\nlessons and trim learning-path `lesson_ids`.\n",
             "headers": {
               "deprecation": {
                 "$ref": "#/components/headers/DeprecationHeader"
@@ -36111,6 +36533,9 @@
               }
             }
           },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
           "404": {
             "$ref": "#/components/responses/404"
           },
@@ -36118,7 +36543,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "List Snyk Learn's resources (Early Access)",
+        "summary": "List and filter Snyk Learn catalog resources (Early Access)",
         "tags": [
           "Catalog Resource"
         ],
@@ -45678,15 +46103,6 @@
               "format": "uuid",
               "type": "string"
             }
-          },
-          {
-            "$ref": "#/components/parameters/StartingAfter"
-          },
-          {
-            "$ref": "#/components/parameters/EndingBefore"
-          },
-          {
-            "$ref": "#/components/parameters/Limit"
           }
         ],
         "responses": {
@@ -46805,758 +47221,6 @@
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-10-15",
         "x-stability-level": "stable"
-      }
-    },
-    "/orgs/{org_id}/integrations": {
-      "get": {
-        "description": "Get all integrations for an organization with cursor-based pagination\n\n#### Required permissions\n\n- `View integrations (org.integration.read)`",
-        "operationId": "listIntegrations",
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "$ref": "#/components/parameters/StartingAfter"
-          },
-          {
-            "$ref": "#/components/parameters/EndingBefore"
-          },
-          {
-            "$ref": "#/components/parameters/Limit"
-          },
-          {
-            "description": "The organization public ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "application/vnd.api+json": {
-                "schema": {
-                  "additionalProperties": false,
-                  "properties": {
-                    "data": {
-                      "items": {
-                        "$ref": "#/components/schemas/Integration"
-                      },
-                      "type": "array"
-                    },
-                    "jsonapi": {
-                      "$ref": "#/components/schemas/JsonApi"
-                    },
-                    "links": {
-                      "$ref": "#/components/schemas/PaginatedLinks"
-                    }
-                  },
-                  "required": [
-                    "jsonapi",
-                    "data",
-                    "links"
-                  ],
-                  "type": "object"
-                }
-              }
-            },
-            "description": "List of integrations successfully retrieved",
-            "headers": {
-              "deprecation": {
-                "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "snyk-request-id": {
-                "$ref": "#/components/headers/RequestIdResponseHeader"
-              },
-              "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
-              },
-              "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
-              },
-              "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
-              },
-              "sunset": {
-                "$ref": "#/components/headers/SunsetHeader"
-              }
-            }
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "summary": "List all integrations for an organization (Early Access)",
-        "tags": [
-          "Integrations"
-        ],
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "integrations",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
-      },
-      "post": {
-        "description": "Create a new integration with specified credentials and profile name\n\n#### Required permissions\n\n- `Edit integrations (org.integration.edit)`",
-        "operationId": "createIntegration",
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "description": "The organization public ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/vnd.api+json": {
-              "schema": {
-                "$ref": "#/components/schemas/IntegrationRequestData"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "201": {
-            "content": {
-              "application/vnd.api+json": {
-                "schema": {
-                  "additionalProperties": false,
-                  "properties": {
-                    "data": {
-                      "$ref": "#/components/schemas/Integration"
-                    },
-                    "jsonapi": {
-                      "$ref": "#/components/schemas/JsonApi"
-                    },
-                    "links": {
-                      "$ref": "#/components/schemas/SelfLink"
-                    }
-                  },
-                  "required": [
-                    "jsonapi",
-                    "data"
-                  ],
-                  "type": "object"
-                }
-              }
-            },
-            "description": "Integration successfully created",
-            "headers": {
-              "deprecation": {
-                "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "location": {
-                "$ref": "#/components/headers/LocationHeader"
-              },
-              "snyk-request-id": {
-                "$ref": "#/components/headers/RequestIdResponseHeader"
-              },
-              "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
-              },
-              "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
-              },
-              "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
-              },
-              "sunset": {
-                "$ref": "#/components/headers/SunsetHeader"
-              }
-            }
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "409": {
-            "$ref": "#/components/responses/409"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "summary": "Create an integration for an organization (Early Access)",
-        "tags": [
-          "Integrations"
-        ],
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "integrations",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
-      }
-    },
-    "/orgs/{org_id}/integrations/{integration_id}": {
-      "delete": {
-        "description": "Permanently delete a container registry integration from an organization.\nBrokered integrations must have broker mode disabled via the V1 API first.\nNOTE: This endpoint performs a hard delete of the integration. The integration\nwill be permanently removed from the database and all associated targets and\nprojects will be orphaned and need to be manually removed.\n\n#### Required permissions\n\n- `Edit integrations (org.integration.edit)`",
-        "operationId": "deleteIntegration",
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "description": "The organization public ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          },
-          {
-            "description": "The unique identifier for the integration",
-            "in": "path",
-            "name": "integration_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "Integration successfully deleted. No content is returned.",
-            "headers": {
-              "deprecation": {
-                "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "snyk-request-id": {
-                "$ref": "#/components/headers/RequestIdResponseHeader"
-              },
-              "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
-              },
-              "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
-              },
-              "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
-              },
-              "sunset": {
-                "$ref": "#/components/headers/SunsetHeader"
-              }
-            }
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "summary": "Delete an integration (Early Access)",
-        "tags": [
-          "Integrations"
-        ],
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "integrations",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
-      },
-      "get": {
-        "description": "Retrieve details for a single integration by its ID\n\n#### Required permissions\n\n- `View integrations (org.integration.read)`",
-        "operationId": "getIntegration",
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "description": "The organization public ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          },
-          {
-            "description": "The unique identifier for the integration",
-            "in": "path",
-            "name": "integration_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "application/vnd.api+json": {
-                "schema": {
-                  "additionalProperties": false,
-                  "properties": {
-                    "data": {
-                      "$ref": "#/components/schemas/Integration"
-                    },
-                    "jsonapi": {
-                      "$ref": "#/components/schemas/JsonApi"
-                    },
-                    "links": {
-                      "$ref": "#/components/schemas/SelfLink"
-                    }
-                  },
-                  "required": [
-                    "jsonapi",
-                    "data"
-                  ],
-                  "type": "object"
-                }
-              }
-            },
-            "description": "Integration successfully retrieved",
-            "headers": {
-              "deprecation": {
-                "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "snyk-request-id": {
-                "$ref": "#/components/headers/RequestIdResponseHeader"
-              },
-              "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
-              },
-              "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
-              },
-              "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
-              },
-              "sunset": {
-                "$ref": "#/components/headers/SunsetHeader"
-              }
-            }
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "summary": "Get a specific integration (Early Access)",
-        "tags": [
-          "Integrations"
-        ],
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "integrations",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
-      },
-      "patch": {
-        "description": "Update attributes of an integration. Supports partial updates - only provided fields will be modified.\n\n**Updateable fields:**\n- `profile_name`: Change the user-defined name for the integration\n- `credentials`: Update AWS region, IAM role ARN, or both\n\n**Immutable fields:**\n- `integration_type`: Cannot be changed after creation\n\nOnly include fields you want to update in the request body. Omitted fields remain unchanged.\n\n#### Required permissions\n\n- `Edit integrations (org.integration.edit)`",
-        "operationId": "updateIntegration",
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "description": "The organization public ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          },
-          {
-            "description": "The unique identifier for the integration",
-            "in": "path",
-            "name": "integration_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/vnd.api+json": {
-              "schema": {
-                "$ref": "#/components/schemas/IntegrationPatchRequestData"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "content": {
-              "application/vnd.api+json": {
-                "schema": {
-                  "additionalProperties": false,
-                  "properties": {
-                    "data": {
-                      "$ref": "#/components/schemas/Integration"
-                    },
-                    "jsonapi": {
-                      "$ref": "#/components/schemas/JsonApi"
-                    },
-                    "links": {
-                      "$ref": "#/components/schemas/SelfLink"
-                    }
-                  },
-                  "required": [
-                    "jsonapi",
-                    "data"
-                  ],
-                  "type": "object"
-                }
-              }
-            },
-            "description": "Integration successfully updated",
-            "headers": {
-              "deprecation": {
-                "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "snyk-request-id": {
-                "$ref": "#/components/headers/RequestIdResponseHeader"
-              },
-              "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
-              },
-              "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
-              },
-              "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
-              },
-              "sunset": {
-                "$ref": "#/components/headers/SunsetHeader"
-              }
-            }
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "409": {
-            "$ref": "#/components/responses/409"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "summary": "Update an existing integration (Early Access)",
-        "tags": [
-          "Integrations"
-        ],
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "integrations",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
-      }
-    },
-    "/orgs/{org_id}/integrations/{integration_id}/settings": {
-      "get": {
-        "description": "Get the settings for a specific integration.\n\n#### Required permissions\n\n- `View integrations (org.integration.read)`",
-        "operationId": "getIntegrationSettings",
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "$ref": "#/components/parameters/StartingAfter"
-          },
-          {
-            "$ref": "#/components/parameters/EndingBefore"
-          },
-          {
-            "$ref": "#/components/parameters/Limit"
-          },
-          {
-            "description": "The organization public ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          },
-          {
-            "description": "The unique identifier for the integration",
-            "in": "path",
-            "name": "integration_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "application/vnd.api+json": {
-                "schema": {
-                  "additionalProperties": false,
-                  "properties": {
-                    "data": {
-                      "$ref": "#/components/schemas/IntegrationSettings"
-                    },
-                    "jsonapi": {
-                      "$ref": "#/components/schemas/JsonApi"
-                    },
-                    "links": {
-                      "$ref": "#/components/schemas/SelfLink"
-                    }
-                  },
-                  "required": [
-                    "jsonapi",
-                    "data"
-                  ],
-                  "type": "object"
-                }
-              }
-            },
-            "description": "Integration settings successfully retrieved",
-            "headers": {
-              "deprecation": {
-                "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "snyk-request-id": {
-                "$ref": "#/components/headers/RequestIdResponseHeader"
-              },
-              "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
-              },
-              "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
-              },
-              "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
-              },
-              "sunset": {
-                "$ref": "#/components/headers/SunsetHeader"
-              }
-            }
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "summary": "Get integration settings (Early Access)",
-        "tags": [
-          "Integrations"
-        ],
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "integrations",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
-      },
-      "patch": {
-        "description": "Update the settings for a specific integration. Supports partial updates.\n\n**Updateable fields:**\n- `container_app_scan_enabled`: Enable or disable container application scanning (only applicable to container registry integrations)\n\n#### Required permissions\n\n- `Edit integrations (org.integration.edit)`",
-        "operationId": "updateIntegrationSettings",
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "description": "The organization public ID",
-            "in": "path",
-            "name": "org_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          },
-          {
-            "description": "The unique identifier for the integration",
-            "in": "path",
-            "name": "integration_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/vnd.api+json": {
-              "schema": {
-                "$ref": "#/components/schemas/IntegrationSettingsPatchRequestData"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "content": {
-              "application/vnd.api+json": {
-                "schema": {
-                  "additionalProperties": false,
-                  "properties": {
-                    "data": {
-                      "$ref": "#/components/schemas/IntegrationSettings"
-                    },
-                    "jsonapi": {
-                      "$ref": "#/components/schemas/JsonApi"
-                    },
-                    "links": {
-                      "$ref": "#/components/schemas/SelfLink"
-                    }
-                  },
-                  "required": [
-                    "jsonapi",
-                    "data"
-                  ],
-                  "type": "object"
-                }
-              }
-            },
-            "description": "Integration settings successfully updated",
-            "headers": {
-              "deprecation": {
-                "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "snyk-request-id": {
-                "$ref": "#/components/headers/RequestIdResponseHeader"
-              },
-              "snyk-version-lifecycle-stage": {
-                "$ref": "#/components/headers/VersionStageResponseHeader"
-              },
-              "snyk-version-requested": {
-                "$ref": "#/components/headers/VersionRequestedResponseHeader"
-              },
-              "snyk-version-served": {
-                "$ref": "#/components/headers/VersionServedResponseHeader"
-              },
-              "sunset": {
-                "$ref": "#/components/headers/SunsetHeader"
-              }
-            }
-          },
-          "400": {
-            "$ref": "#/components/responses/400"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "404": {
-            "$ref": "#/components/responses/404"
-          },
-          "500": {
-            "$ref": "#/components/responses/500"
-          }
-        },
-        "summary": "Update integration settings (Early Access)",
-        "tags": [
-          "Integrations"
-        ],
-        "x-snyk-api-lifecycle": "released",
-        "x-snyk-api-releases": [
-          "2024-10-15~beta"
-        ],
-        "x-snyk-api-resource": "integrations",
-        "x-snyk-api-stability": "beta",
-        "x-snyk-api-version": "2024-10-15~beta",
-        "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/inventory/assets": {
@@ -51300,6 +50964,9 @@
                 }
               }
             }
+          },
+          "501": {
+            "$ref": "#/components/responses/501"
           }
         },
         "summary": "Get an issue",
@@ -56498,8 +56165,11 @@
                   "Empty": {
                     "$ref": "#/components/examples/GetBrokerSettingsResponseEmpty"
                   },
-                  "WithIntegrations": {
-                    "$ref": "#/components/examples/GetBrokerSettingsResponseWithIntegrations"
+                  "WithIntegrationsForGolang": {
+                    "$ref": "#/components/examples/GetBrokerSettingsResponseWithIntegrationsGolang"
+                  },
+                  "WithIntegrationsForNuGet": {
+                    "$ref": "#/components/examples/GetBrokerSettingsResponseWithIntegrationsNuGet"
                   }
                 },
                 "schema": {
@@ -56602,8 +56272,11 @@
           "content": {
             "application/vnd.api+json": {
               "examples": {
-                "AddIntegration": {
-                  "$ref": "#/components/examples/PostBrokerSettingsRequestAddIntegration"
+                "AddGolangIntegration": {
+                  "$ref": "#/components/examples/PostBrokerSettingsRequestAddIntegrationGolang"
+                },
+                "AddNuGetIntegration": {
+                  "$ref": "#/components/examples/PostBrokerSettingsRequestAddIntegrationNuGet"
                 },
                 "EditIntegrations": {
                   "$ref": "#/components/examples/PostBrokerSettingsRequestEditIntegrations"
@@ -56691,6 +56364,251 @@
           }
         },
         "summary": "Update opensource broker settings of ecosystem for organization",
+        "tags": [
+          "OpensourceSettings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15"
+        ],
+        "x-snyk-api-resource": "opensourceSettings",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
+        "x-stability-level": "stable"
+      }
+    },
+    "/orgs/{org_id}/settings/opensource/{ecosystem}/private-registries": {
+      "get": {
+        "description": "Retrieves the publicly-accessible private registry settings of a specific Open Source Ecosystem for an Organization.\nThese are registries (e.g. JFrog Artifactory, Sonatype Nexus) hosted on a public URL and reached directly with\ncredentials, without the Snyk Broker.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getOpensourcePrivateRegistryEcosystemSettingsForOrg",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "The ecosystem identifier",
+            "in": "path",
+            "name": "ecosystem",
+            "required": true,
+            "schema": {
+              "enum": [
+                "Dotnet",
+                "Golang"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "examples": {
+                  "Empty": {
+                    "$ref": "#/components/examples/GetPrivateRegistrySettingsResponseEmpty"
+                  },
+                  "WithIntegrations": {
+                    "$ref": "#/components/examples/GetPrivateRegistrySettingsResponseWithIntegrations"
+                  }
+                },
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/PrivateRegistrySettings"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/PaginatedLinks"
+                    }
+                  }
+                }
+              }
+            },
+            "description": "Successfully retrieved private registry settings",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Get opensource private registry settings of ecosystem for organization",
+        "tags": [
+          "OpensourceSettings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15"
+        ],
+        "x-snyk-api-resource": "opensourceSettings",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
+        "x-stability-level": "stable"
+      },
+      "patch": {
+        "description": "Updates the publicly-accessible private registry settings of a specific Open Source Ecosystem for an Organization.\nThis endpoint has JSON-PATCH semantics: only provided integrations are updated.\nProvide an empty value for `urls` to remove an integration.\n\n#### Required permissions\n\n- `Edit Organization (org.edit)`",
+        "operationId": "updateOpensourcePrivateRegistryEcosystemSettingsForOrg",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "Org ID",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "The ecosystem identifier",
+            "in": "path",
+            "name": "ecosystem",
+            "required": true,
+            "schema": {
+              "enum": [
+                "Dotnet",
+                "Golang"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "examples": {
+                "AddIntegration": {
+                  "$ref": "#/components/examples/PostPrivateRegistrySettingsRequestAddIntegration"
+                },
+                "EditIntegrations": {
+                  "$ref": "#/components/examples/PostPrivateRegistrySettingsRequestEditIntegrations"
+                },
+                "RemoveIntegration": {
+                  "$ref": "#/components/examples/PostPrivateRegistrySettingsRequestRemoveIntegration"
+                }
+              },
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "data": {
+                    "$ref": "#/components/schemas/PrivateRegistrySettings"
+                  }
+                },
+                "required": [
+                  "data"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "examples": {
+                  "WithIntegrations": {
+                    "$ref": "#/components/examples/PostPrivateRegistrySettingsResponse"
+                  }
+                },
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/PrivateRegistrySettings"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/PaginatedLinks"
+                    }
+                  }
+                }
+              }
+            },
+            "description": "Successfully updated private registry settings",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Update opensource private registry settings of ecosystem for organization",
         "tags": [
           "OpensourceSettings"
         ],
@@ -56942,6 +56860,245 @@
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2023-09-11",
         "x-stability-level": "stable"
+      }
+    },
+    "/orgs/{org_id}/settings/secrets": {
+      "get": {
+        "description": "Retrieves the Secrets settings for an org\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "operationId": "getSecretsSettings",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "The id of the org for which we want to retrieve the Secrets settings",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/SecretsEnablement"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/Links"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "data",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "The Secrets settings for the org are being retrieved",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Retrieves the Secrets settings for an org (Early Access)",
+        "tags": [
+          "SecretsSettings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "secrets_settings",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
+      },
+      "patch": {
+        "description": "Update the Secrets settings for an org\n\n#### Required permissions\n\n- `View Organization (org.read)`\n\n- `Edit Organization (org.edit)`",
+        "operationId": "updateOrgSecretsSettings",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          },
+          {
+            "description": "The id of the org for which we want to update the Secrets settings",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "data": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "attributes": {
+                        "additionalProperties": false,
+                        "properties": {
+                          "secrets_enabled": {
+                            "description": "The value of the updated setting for secretsEnabled",
+                            "type": "boolean"
+                          }
+                        },
+                        "required": [
+                          "secrets_enabled"
+                        ],
+                        "type": "object"
+                      },
+                      "id": {
+                        "format": "uuid",
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "type",
+                      "attributes"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "data"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/SecretsEnablement"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/Links"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "data",
+                    "links"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "The Secrets settings for the org are being updated",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Update the Secrets settings for an org (Early Access)",
+        "tags": [
+          "SecretsSettings"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15~beta"
+        ],
+        "x-snyk-api-resource": "secrets_settings",
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2024-10-15~beta",
+        "x-stability-level": "beta"
       }
     },
     "/orgs/{org_id}/slack_app/{bot_id}": {

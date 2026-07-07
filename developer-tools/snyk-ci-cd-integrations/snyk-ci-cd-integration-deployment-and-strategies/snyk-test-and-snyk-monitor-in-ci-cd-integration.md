@@ -58,8 +58,8 @@ You can also fail the build for any other parameter in the Snyk JSON output (suc
 By default, if issues are not ignored, or if you are not using [`snyk-delta`](https://github.com/snyk-tech-services/snyk-delta), a `snyk test` in your pipeline fails the build when issues are found. To allow builds to continue without resolving these issues, you can:
 
 * [Ignore issues using a .snyk policy file](../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md)
-* [Ignore issues from the Snyk UI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/ignore-issues#ignore-issues-in-the-snyk-web-ui)
-* [Ignore issues using the Ignores API](../../../snyk-api/reference/ignores-v1.md)
+* [Ignore issues from the Snyk UI](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/ignore-issues#ignore-issues-in-the-snyk-web-ui)
+* [Ignore issues using the Ignores API](../../snyk-api/reference/ignores-v1.md)
 * Use the Snyk Python API for bulk ignores: see [pysnyk](https://github.com/snyk-labs/pysnyk) and the demo [bulk-ignore-vulns-by-issueIdList](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py).
 
 ## Creating custom build artifacts
@@ -68,6 +68,6 @@ You can use JSON output from Snyk commands to create custom test reports as buil
 
 ## Creating work items for new vulnerabilities
 
-Snyk allows you to automatically create new work items in JIRA; for details, see the [Jira integration ](../../../integrations/jira-and-slack-integrations/jira-integration.md)documentation. You can customize this code for your specific requirements or adapt it to work with other work management systems.
+Snyk allows you to automatically create new work items in JIRA; for details, see the [Jira integration ](../../integrations/jira-and-slack-integrations/jira-integration.md)documentation. You can customize this code for your specific requirements or adapt it to work with other work management systems.
 
-See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started. You can also use the API endpoints [Create jira issue](../../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue) and [List all jira issues](../../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-jira-issues).
+See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started. You can also use the API endpoints [Create jira issue](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue) and [List all jira issues](../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-jira-issues).

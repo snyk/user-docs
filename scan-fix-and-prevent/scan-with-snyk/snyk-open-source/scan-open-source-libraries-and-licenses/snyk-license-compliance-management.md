@@ -10,14 +10,14 @@ You can check compliance for open-source licenses in your code using Snyk Licens
 
 The Snyk Default License Policy defines how Snyk identifies potential license issues in the open-source packages your Projects are using. This policy applies to all Organizations created in your Group.
 
-## **Prerequisites for using Snyk License Compliance Management**
+## Prerequisites for using Snyk License Compliance Management
 
 Before checking license compliance with Snyk License Compliance Management, ensure you:
 
 * Are part of a Snyk [paid plan](https://snyk.io/plans/).
-* Have integrated and imported your Projects. See [Getting started](../../../discover-snyk/getting-started/).
+* Have integrated and imported your Projects. See [Getting started](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started).
 
-## **Define license policies**
+## Define license policies
 
 To take effective action based on license issues, you need to define policies that specify these actions for each license type. Policies provide a way to capture different requirements within an Organization based on factors such as line of business. Work with your legal team to create policies tailored to your company.
 
@@ -31,7 +31,7 @@ You can create and edit multiple license policies for Organizations. For details
 
 ## View compliance issues
 
-Snyk’s [Git-based integrations ](../../../developer-tools/scm-integrations/organization-level-integrations/)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab.
+Snyk’s [Git-based integrations ](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab.
 
 <div align="left"><figure><img src="../../../.gitbook/assets/OS-issues-overview-with-license-issues-filter.png" alt=""><figcaption><p>Issues overview with the "License issues" filter applied</p></figcaption></figure></div>
 
@@ -41,11 +41,11 @@ You can also view license issues using the Snyk CLI tool after running `snyk tes
 
 <figure><img src="../../../.gitbook/assets/image2-1-.png" alt="License issue overview in Snyk CLI."><figcaption><p>License issue overview in Snyk CLI</p></figcaption></figure>
 
-### **View all license information**
+### View all license information
 
 You can view and share detailed lists of licenses being used by all Projects in your Organization and see a report that lists all the open-source components and licenses.
 
-### **View license dependencies**
+### View license dependencies
 
 Snyk shows license issues in both your direct and transitive dependencies in the **Dependencies** tab:
 
@@ -55,7 +55,7 @@ Click the tree icon to view a full dependency tree. This shows the dependency th
 
 <div align="left"><figure><img src="../../../.gitbook/assets/project_dependencies_dependency_tree.png" alt="Dependencies overview - tree view"><figcaption><p>Dependencies overview - tree view</p></figcaption></figure></div>
 
-## **Resolve license issues**
+## Resolve license issues
 
 You can now take action to resolve the license issues identified during the scan, to help you build and deploy your application without outstanding licensing issues.
 

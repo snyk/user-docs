@@ -57,13 +57,13 @@ Available features:
 
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:maven` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/sbom-test) CLI command
+* Test your app's SBOM and packages using `pkg:maven` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 For sbt, Snyk provides: CLI support, SCM support, and license scanning.
 
 ### CLI support for Scala
 
-The [Snyk CLI](../../developer-tools/snyk-cli/) uses the [`sbt-dependency-graph`](https://github.com/sbt/sbt-dependency-graph) plugin, which has been [included](https://www.scala-sbt.org/1.x/docs/Combined+Pages.html#sbt-dependency-graph+is+in-sourced) in `sbt` as a built-in plugin since `sbt` 1.4.
+The [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli) uses the [`sbt-dependency-graph`](https://github.com/sbt/sbt-dependency-graph) plugin, which has been [included](https://www.scala-sbt.org/1.x/docs/Combined+Pages.html#sbt-dependency-graph+is+in-sourced) in `sbt` as a built-in plugin since `sbt` 1.4.
 
 However, the recommended method of calling the plugin in sbt 1.4+ is not compatible with Snyk. Use the legacy method, `addSbtPlugin()` instead. Snyk recommends installing the `sbt-dependency-graph` as a [global plugin](https://www.scala-sbt.org/1.x/docs/Using-Plugins.html#Global+plugins) so you can use it in any `sbt` project.
 
@@ -83,7 +83,7 @@ For more information on installing `sbt-dependency-graph` for use with the Snyk 
 
 ### SCM integration support for Scala
 
-You can import Scala `sbt` Projects from any of the supported Git repositories. For more information, see [Organization-level integrations](../../developer-tools/scm-integrations/organization-level-integrations/).
+You can import Scala `sbt` Projects from any of the supported Git repositories. For more information, see [Organization-level integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
 
 To test your Scala Projects using `sbt` as a package manager, Snyk analyzes your `build.sbt` file.\
 To ensure that this works properly, you must have this file in your repository before importing your Projects.
@@ -102,4 +102,4 @@ You can use a version declared in a variable if the variable is in the `build.sb
   ) 
 ```
 
-For more information, see [Differences in Open Source vulnerability counts across environments](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments).
+For more information, see [Differences in Open Source vulnerability counts across environments](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments).

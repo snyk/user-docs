@@ -42,14 +42,14 @@ Typically you can instrument testing as part of a build system or adopt a lockfi
 
 * It is quite common for large organizations to monitor applications via Git integration, to begin with, daily monitoring, turning on PR checks for only key applications at the start.
 * As developers become familiar with Snyk capabilities, they widen the scope of applications with PR checks for gating.
-* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commands](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration).
+* Use CI/CD to passively monitor and then turn on gating by using the [snyk \[product\] test and monitor commands](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration).
 
 ## Gradle Projects without a lock file
 
 If you're using Gradle without a Gradle.lockfile, it is possible that the full dependency tree is not apparent or artifacts are pulled in from external resources. Snyk recommends to:
 
 * Use the CLI/IDE workflow for local scans
-* Use CI/CD to passively monitor and then turn on gating by using the [`snyk [product] test` and `monitor` commands](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration).
+* Use CI/CD to passively monitor and then turn on gating by using the [`snyk [product] test` and `monitor` commands](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration).
 * Start with turning on gating and failing the build on one Project, so developers get familiar with the process and then use passive monitoring for the remainder of the portfolio.
 
 ## Improved Gradle SCM scanning
@@ -57,7 +57,7 @@ If you're using Gradle without a Gradle.lockfile, it is possible that the full d
 {% hint style="info" %}
 **Release status**
 
-Improved Gradle SCM scanning is in Early Access. You can enable the feature by using [Snyk Preview](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/snyk-preview).
+Improved Gradle SCM scanning is in Early Access. You can enable the feature by using [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
 {% endhint %}
 
 ### Supported Gradle features
@@ -91,8 +91,8 @@ Improved Gradle SCM scanning supports importing a maximum limit of 5,000 `build.
 
 To enable this feature, follow these steps for your Snyk Organization:
 
-1. Configure [package repository integrations](../../scan-with-snyk/snyk-open-source/package-repository-integrations/) (if you use Artifactory or Nexus, see [below](git-repositories-with-maven-and-gradle.md#package-repository-integrations)).
-2. Enable [Workspaces for SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/workspaces).
+1. Configure [package repository integrations](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations) (if you use Artifactory or Nexus, see [below](git-repositories-with-maven-and-gradle.md#package-repository-integrations)).
+2. Enable [Workspaces for SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces).
 3. Enable **Improved Gradle scanning** in Snyk Preview.
 
 After Improved Gradle SCM scanning is enabled:
@@ -118,7 +118,7 @@ Snyk Open Source uses Artifactory or Nexus to resolve transitive dependencies th
 
 Snyk can be connected to a publicly available instance using username and password or a private server on your network using the Snyk Broker.
 
-Snyk Open Source provides integrations with Artifactory and Nexus, both as local gatekeepers and interacting with the registry for security testing. See [Nexus Repository Manager setup](../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/).
+Snyk Open Source provides integrations with Artifactory and Nexus, both as local gatekeepers and interacting with the registry for security testing. See [Nexus Repository Manager setup](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup) and [Artifactory Registry setup](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup).
 
 {% hint style="info" %}
 For users who do not have a Snyk Enterprise integration with Artifactory or Nexus, Snyk recommends using the CLI, as it works with the dependencies that your build system makes available locally.
@@ -126,10 +126,10 @@ For users who do not have a Snyk Enterprise integration with Artifactory or Nexu
 
 For more information on package registry integrations, including Maven, see the following external resources:
 
-* Package registry integrations: [Nexus Repository Manager setup](../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) and [Artifactory Registry setup](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/)
-* [Artifactory Registry for Maven](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven)
-* [Nexus Registry for Maven](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven)
-* Nexus Container Registry: [Container security with Nexus integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-nexus-container-registry)
+* Package registry integrations: [Nexus Repository Manager setup](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup) and [Artifactory Registry setup](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup)
+* [Artifactory Registry for Maven](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven)
+* [Nexus Registry for Maven](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven)
+* Nexus Container Registry: [Container security with Nexus integration](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-nexus-container-registry)
 * Gatekeeper plugins: Artifactory Gatekeeper plugin
 
 ## Configure language settings for Snyk for Java
@@ -145,4 +145,4 @@ You can configure language settings for your open source libraries and licensing
 
 Customers develop advanced dependency management strategies and can choose not to use the standard and frequently used package managers.
 
-For on-time testing using the Snyk API, you can use the [Test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1) endpoints. Examples include [Test for issues in a (Maven) public package by group id, artifact id and version](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1#test-maven-groupid-artifactid-version) and [List issues for a package](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/issues#orgs-org_id-packages-purl-issues).
+For on-time testing using the Snyk API, you can use the [Test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1) endpoints. Examples include [Test for issues in a (Maven) public package by group id, artifact id and version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/test-v1#test-maven-groupid-artifactid-version) and [List issues for a package](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/issues#orgs-org_id-packages-purl-issues).

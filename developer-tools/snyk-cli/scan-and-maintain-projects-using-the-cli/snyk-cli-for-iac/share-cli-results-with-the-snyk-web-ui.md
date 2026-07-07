@@ -7,7 +7,7 @@ To see these issues displayed in the Snyk Web UI, run the following CLI command:
 `snyk iac test myproject --report`
 
 {% hint style="info" %}
-Using [Custom rules](../../../../scan-with-snyk/snyk-iac/current-iac-custom-rules/) and the Share Results functionality together is not currently supported.
+Using [Custom rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/current-iac-custom-rules) and the Share Results functionality together is not currently supported.
 
 Snyk does not share any file contents over the network, only the required metadata for the configuration issues that were just scanned.
 {% endhint %}
@@ -43,13 +43,13 @@ This sends a snapshot of your current configuration issues to your Snyk dashboar
 
 Log in to the Snyk Web UI and navigate to your Organization Project page to see the most recent snapshot of your scanned Project.
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt="Newly scanned Project listed on the Projects page"><figcaption><p>Newly scanned Project listed on the Projects page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt="Newly scanned Project listed on the Projects page"><figcaption><p>Newly scanned Project listed on the Projects page</p></figcaption></figure>
 
 You can also open the Project itself and see the Project details:
 
-<figure><img src="../../../../.gitbook/assets/image (395).png" alt="Project details for a Project"><figcaption><p>Project details for a Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (395).png" alt="Project details for a Project"><figcaption><p>Project details for a Project</p></figcaption></figure>
 
-## **Ignores**
+## Ignores
 
 You can ignore issues using the Snyk Web UI or by creating a `.snyk` policy file along with your Project when scanning. For more information, see [Iac Ignores using the .snyk policy file](iac-ignores-using-the-.snyk-policy-file.md).
 

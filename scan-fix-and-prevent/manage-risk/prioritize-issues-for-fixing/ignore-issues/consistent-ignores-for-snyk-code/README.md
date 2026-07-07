@@ -14,7 +14,7 @@ Any ignores created or converted with the feature enabled will not be automatica
 
 ## User roles
 
-To create, edit and remove ignores, you need to have a user role assigned with Ignore management permissions. Only Group Admins can set these permissions (see [User role management](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/user-role-management)).
+To create, edit and remove ignores, you need to have a user role assigned with Ignore management permissions. Only Group Admins can set these permissions (see [User role management](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management)).
 
 1. Log in to the Snyk Web UI and navigate to your Group and Organization.
 2. Navigate to **Members** > **Manage Roles** and select one or more permissions.
@@ -24,7 +24,7 @@ To create, edit and remove ignores, you need to have a user role assigned with I
 ## Manage ignores at the Group level through Snyk Code Security policies
 
 {% hint style="info" %}
-This feature is available to Enterprise customers only. It must be enabled by Snyk before it is accessible.&#x20;
+This feature is available to Enterprise customers only. It must be enabled by Snyk before it is accessible.
 {% endhint %}
 
 You can manage ignores proactively using Group-level Snyk Code Security policies. As a general rule, you can apply ignore policies when you identify a recurring need to apply similar individual ignores.
@@ -42,7 +42,7 @@ To configure a Snyk Code Security policy, select the organization/s or project a
 | Criteria | Description                                                                                                                                                                                                                                                      |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | CWE      | You can provide any CWE value. Snyk Code will ignore any subsequent tests that find associated findings or issues. You can find valid CWEs on [MITRE’s website](https://cwe.mitre.org/data/published/cwe_latest.pdf) or anywhere you can view Snyk Code results. |
-| Rule IDs | You can provide any Snyk Code rule ID. You can find Snyk Code rule IDs as part of the SARIF output that you exported using [Snyk CLI](../../../../developer-tools/snyk-cli/).                                                                                    |
+| Rule IDs | You can provide any Snyk Code rule ID. You can find Snyk Code rule IDs as part of the SARIF output that you exported using [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli).                                                         |
 | Severity | Matches all issues that contain a specified severity level. When multiple values are selected, the condition applies to all issues containing any of the selected severity levels (for example, High, Medium, Low).                                              |
 
 ## Manage ignores in Snyk Projects

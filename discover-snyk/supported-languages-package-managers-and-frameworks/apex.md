@@ -16,7 +16,7 @@ For Apex, Snyk supports the following features:
 * Reports
 * Interfile analysis
 * SCM import
-* CLI and IDE: test or monitor your app. For more information, see [Snyk CLI for Snyk Code](../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/).
+* CLI and IDE: test or monitor your app. For more information, see [Snyk CLI for Snyk Code](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code).
 
 {% hint style="info" %}
 The **Snyk fix PR** feature is not available for Apex. This means that you will not be notified if the PR checks fail when the following conditions are met:

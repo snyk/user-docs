@@ -20,8 +20,8 @@ Each inventory layout is presented in a table format, detailing the available ke
 
 Assets in Snyk Essentials are meaningful, real-world components in an application’s SDLC. The following asset types are available:
 
-* Repository assets [**`Billable`**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-does-snyk-count-assets#billable-assets)
-* Container images [**`Billable`**](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-does-snyk-count-assets#billable-assets)
+* Repository assets [**`Billable`**](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-does-snyk-count-assets#billable-assets)
+* Container images [**`Billable`**](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-does-snyk-count-assets#billable-assets)
 * Packages
 * Scanned artifacts
 
@@ -78,7 +78,7 @@ The Summary tab is a concentrated view of asset properties. The Summary screen p
   * SCM Repository freshness - provides the current status of your repositories, including the date of the last commit.
 * **Organization** - specifies the Organizations associated with the asset.
 * **Labels** - provides the list of all labels available for that asset.
-* **Tags -** provides a key-value pair that allows you to attach structured metadata to your assets.
+* **Tags** - provides a key-value pair that allows you to attach structured metadata to your assets.
 * **Issues** - categorizes the identified types of open issues.
 * **App Context**\* - asset metadata from App Context integrations, such as Backstage catalog or ServiceNow CMDB, can include the following attributes: catalog name, category, application, owner, and so on.
 
@@ -147,7 +147,7 @@ Click a Controls logo to see **Last test** details and the **Issues** count, spl
 
 Provides a key-value tagging capability that allows you to attach specific, structured metadata to your assets. Use this feature lets you granular filtering, robust policy creation, and better alignment with your internal systems.
 
-**Example:** A structured tag provides both a key and a value, such as `platform:aws` or `region:eu-central-1`.
+**Example**: A structured tag provides both a key and a value, such as `platform:aws` or `region:eu-central-1`.
 
 ## How to filter assets by tags <a href="#how-to-filter-the-projects-listing-by-tags" id="how-to-filter-the-projects-listing-by-tags"></a>
 
@@ -302,4 +302,4 @@ The Actions column provides a workflow to set up the SCM integration at the Grou
 
 If a Group level integration has not been set up, repositories discovered at the Organization level display a **Set up integration** button under the **Actions** column. If you set up the integration at the Group level, this option becomes unavailable.
 
-To add context enrichment, find an asset and select **Set up integration**. For configuration details, see [Snyk SCM Integrations](../developer-tools/scm-integrations/organization-level-integrations/).
+To add context enrichment, find an asset and select **Set up integration**. For configuration details, see [Snyk SCM Integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).

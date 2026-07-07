@@ -1,14 +1,14 @@
 # Snyk Learn API
 
 {% hint style="info" %}
-**Release status**&#x20;
+**Release status**
 
-The Snyk Learn API endpoints are [Beta](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/rest-api/about-the-rest-api#versioning) endpoints.
+The Snyk Learn API endpoints are [Beta](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/rest-api/about-the-rest-api#versioning) endpoints.
 {% endhint %}
 
-The Snyk Learn API endpoints are part of the [Snyk REST API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/rest-api/about-the-rest-api) and allow for programmatic interaction with Snyk Learn.
+The Snyk Learn API endpoints are part of the [Snyk REST API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/rest-api/about-the-rest-api) and allow for programmatic interaction with Snyk Learn.
 
-The Snyk REST API requires authentication. For information about authentication, see [Authentication for API](../../snyk-api/authentication-for-api/).
+The Snyk REST API requires authentication. For information about authentication, see [Authentication for API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/authentication-for-api).
 
 The following table shows the Snyk Learn API endpoints available for each plan. For more information about plans, see [Plans and pricing](https://snyk.io/plans/).
 

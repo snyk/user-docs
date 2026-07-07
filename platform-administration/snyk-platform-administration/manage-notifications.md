@@ -7,7 +7,7 @@ Snyk notifies you automatically when new issues are found in the Projects you ar
 Snyk can send notifications in the following ways:
 
 * By email, if you have configured [email notifications in your account settings](https://app.snyk.io/account/notifications).
-* By Slack, if you have set up [Slack integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/slack-integration).
+* By Slack, if you have set up [Slack integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/slack-integration).
 
 Snyk also sends you a weekly update summarizing the security status across all of your Organizations.
 
@@ -36,7 +36,7 @@ Snyk provides controls to manage your own notifications. Administrators can mana
 Weekly notification emails are sent only to Organization users, so Group Admins must add themselves as an Organization member for Organizations where they need to receive the emails.
 {% endhint %}
 
-You can also send notifications for an Organization to a designated Slack channel. For details, see  [Slack integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/slack-integration).
+You can also send notifications for an Organization to a designated Slack channel. For details, see [Slack integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/slack-integration).
 
 ### Define Group notification defaults
 
@@ -75,7 +75,7 @@ To set the defaults for weekly report emails:
 * To change the defaults for individual Organizations, clear or check the box next to the Organization name. The defaults will apply for new Organizations created in this Group.
 
 {% hint style="info" %}
-Individual Projects cannot be excluded from Weekly reports. They can be excluded only from Issue Alert emails, and new vulnerabilities or remediations.&#x20;
+Individual Projects cannot be excluded from Weekly reports. They can be excluded only from Issue Alert emails, and new vulnerabilities or remediations.
 {% endhint %}
 
 #### Group defaults for usage alerts

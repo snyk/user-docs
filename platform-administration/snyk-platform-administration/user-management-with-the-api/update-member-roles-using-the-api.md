@@ -8,7 +8,7 @@ Snyk recommends running these updates with bounded concurrency in batches so as 
 
 **Request**: `GET https://api.snyk.io/v1/group/{groupId}/roles`
 
-**Endpoint:** [List all roles in a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-roles)
+**Endpoint:** [List all roles in a group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-roles)
 
 This call returns an array of objects, each describing custom and non-custom (for example, default) roles. Default roles are indicated by the `customRole: false` property. Save the`publicId` of each role you want to assign to a user.
 
@@ -16,7 +16,7 @@ This call returns an array of objects, each describing custom and non-custom (fo
 
 **Request**: `GET https://api.snyk.io/v1/org/{orgId}/members`
 
-**Endpoint**: [List members](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members)
+**Endpoint**: [List members](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members)
 
 This call returns an array of all non-admin members of the Organization. Save the `id` of each user who should have a new role.
 
@@ -29,7 +29,7 @@ Service accounts are not returned by the List members endpoint. You must get the
 
 **Request**: `PUT https://api.snyk.io/v1/org/{orgId}/members/update/{userId}`
 
-**Endpoint**: [Update a member's role in the organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members-update-userid)
+**Endpoint**: [Update a member's role in the organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members-update-userid)
 
 For each user, call the endpoint Update a member's role in the organization to set the member's new role, using the user id and role id you collected previously.
 

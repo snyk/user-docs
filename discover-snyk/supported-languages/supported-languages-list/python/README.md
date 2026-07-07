@@ -125,7 +125,7 @@ For Poetry Projects, you do not need to specify the Python version. Poetry files
 * Automatic and manual Fix PRs (supported only for pip)
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:pypi` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/sbom-test) CLI command
+* Test your app's SBOM and packages using `pkg:pypi` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 {% hint style="info" %}
 Depending on your plan, some features may not be available. For more information, see [plans and pricing](https://snyk.io/plans/).

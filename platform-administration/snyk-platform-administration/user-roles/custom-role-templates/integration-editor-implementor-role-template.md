@@ -37,7 +37,7 @@ To create this role, enable the following permissions in the relevant categories
 
 ### Organization management
 
-<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Organization</td><td>true</td></tr><tr><td>Edit Organization</td><td>false</td></tr><tr><td>Remove Organization</td><td>false</td></tr></tbody></table>
+<table><thead><tr><th>Permission</th><th data-type="checkbox">Enabled?</th></tr></thead><tbody><tr><td>View Organization</td><td>true</td></tr><tr><td>Edit Organization</td><td>true</td></tr><tr><td>Remove Organization</td><td>false</td></tr></tbody></table>
 
 ### Integration management
 

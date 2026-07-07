@@ -30,15 +30,15 @@ Advantages:
 * Onboarding of repositories can be configured using the UI
 * Supports Cloud Repositories on the Team plan
 
-For more details, see [Git repositories (SCMs)](../../../developer-tools/scm-integrations/organization-level-integrations/).
+For more details, see [Git repositories (SCMs)](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
 
 {% hint style="info" %}
 If you have a non-cloud-facing or your own instance of a Git SCM:
 
-* Consider deploying a [Snyk Broker](../../enterprise-setup/snyk-broker/) for Snyk to communicate with your repositories, which would also require a Snyk Enterprise Plan.
+* Consider deploying a [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker) for Snyk to communicate with your repositories, which would also require a Snyk Enterprise Plan.
 * Enterprise customers can enable and manage Snyk Broker using the API.
 
-[Paid services](../../../snyk-data-and-governance/snyk-terms-of-support-and-services-glossary/) can be engaged to assist in Broker deployments.
+[Paid services](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/snyk-terms-of-support-and-services-glossary) can be engaged to assist in Broker deployments.
 {% endhint %}
 
 ### Continuous Integration/Continuous Deployment (CI/CD) pipeline integrations
@@ -55,13 +55,13 @@ Advantages:
 * Full control over testing (which tests to run, where in the build script)
 * Can automate using CI/CD
 
-For more details, see [Snyk CI/CD integrations](../../../developer-tools/snyk-ci-cd-integrations/).
+For more details, see [Snyk CI/CD integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations).
 
 ### Integrated Development Environment (IDE) integrations
 
 IDE integrations like Visual Studio Code, IntelliJ IDEA, and Eclipse allow developers to access Snyk's security features directly within their coding environment. This enables real-time scanning and issue remediation as developers write code at the earliest possible stages.
 
-For more details, see [Use Snyk in your IDE](../../../developer-tools/snyk-ide-plugins-and-extensions/).
+For more details, see [Use Snyk in your IDE](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions).
 
 ## Considerations for import strategies
 
@@ -77,4 +77,4 @@ For complex environments, modules, and highly templated implementations, utilizi
 
 ### CR (Container Registries)
 
-Snyk also integrates with various [Container Registries](../../../scan-with-snyk/snyk-container/container-registry-integrations/) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.
+Snyk also integrates with various [Container Registries](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations) to enable you to import and monitor your containers for vulnerabilities. Snyk tests the containers you have imported for any known security vulnerabilities found at a frequency you control.

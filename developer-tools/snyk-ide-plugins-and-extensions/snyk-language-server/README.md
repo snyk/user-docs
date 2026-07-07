@@ -8,9 +8,9 @@ For open source, you receive automated, algorithm-based fix suggestions for both
 
 Snyk Language Server scans for the following types of issues:
 
-* [**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both the direct and indirect (transitive) open-source dependencies pulled into the Snyk Project. See also the [Open Source documentation](../../../scan-with-snyk/snyk-open-source/).
-* [**Code Security**](https://snyk.io/product/snyk-code/) - security vulnerabilities in your code. See also the [Snyk Code documentation](../../../scan-with-snyk/snyk-code/).
-* [**Infrastructure as Code (IaC) Security**](https://snyk.io/product/infrastructure-as-code-security/) - configuration issues in your IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager. See also the [Snyk Infrastructure as Code documentation](../../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/).
+* [**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both the direct and indirect (transitive) open-source dependencies pulled into the Snyk Project. See also the [Open Source documentation](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source).
+* [**Code Security**](https://snyk.io/product/snyk-code/) - security vulnerabilities in your code. See also the [Snyk Code documentation](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code).
+* [**Infrastructure as Code (IaC) Security**](https://snyk.io/product/infrastructure-as-code-security/) - configuration issues in your IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager. See also the [Snyk Infrastructure as Code documentation](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/scan-your-iac-source-code).
 
 After you have installed and configured the Language Server, every time you run it, open a file, or save, Snyk scans the manifest files, proprietary code, and configuration files in your Project. Snyk delivers actionable vulnerability, license, or misconfiguration issue details and displays the results natively within the LSP supporting Editor or IDE.
 
@@ -31,7 +31,7 @@ You can use the Language Server in the following environments:
 
 ## Where you can download the Language Server (Snyk CLI)
 
-Snyk Language Server is nowadays included in the Snyk CLI. The CLI is automatically downloaded only when you use the Snyk IDE plugins.&#x20;
+Snyk Language Server is nowadays included in the Snyk CLI. The CLI is automatically downloaded only when you use the Snyk IDE plugins.
 
 Please refer to [snyk-cli](../../snyk-cli/ "mention") for installation and manual download instructions.
 
@@ -52,7 +52,7 @@ SNYK_LOG_LEVEL=trace snyk language-server
 
 ### Snyk LSP command line flags
 
-`-d`  output debug level logs
+`-d` output debug level logs
 
 `-c <FILE>` allows specifying a config file to load before all others.
 
@@ -100,7 +100,7 @@ Snyk Language Server and Snyk CLI support and need certain environment variables
 1. `HTTP_PROXY`, `HTTPS_PROXY` and `NO_PROXY` to define the http proxy to be used
 2. `JAVA_HOME` to analyze Java JVM-based projects via Snyk CLI
 3. `PATH` to find `maven` when analyzing Maven projects, to find `python` and so on
-4. `SNYK_LOG_LEVEL`  force a log-level (trace, debug, info, warn, error), default is info level
+4. `SNYK_LOG_LEVEL` force a log-level (trace, debug, info, warn, error), default is info level
 
 ## **Auto-configuration of environment variables for Snyk Language Server**
 

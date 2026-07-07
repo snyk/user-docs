@@ -14,7 +14,7 @@ SBOM documents can be generated in [CycloneDX](https://cyclonedx.org/) v1.4, v1.
 ## How to generate the SBOM for a Project
 
 1. On the Snyk Web UI, retrieve your `organization ID` (UUID format), `project ID` (UUID), and API key.\
-   If you need help in finding these values, see [Switch between Groups and Organizations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/groups-and-organizations/switch-between-groups-and-organizations), [View and edit Project settings](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/view-and-edit-project-settings), and [Authentication for API](../../authentication-for-api/).
+   If you need help in finding these values, see [Switch between Groups and Organizations](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/switch-between-groups-and-organizations), [View and edit Project settings](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/view-and-edit-project-settings), and [Authentication for API](../../authentication-for-api/).
 2. Determine the format you want for the SBOM you will generate.\
    Available options are CycloneDX 1.4 JSON (`cyclonedx1.4+json`), CycloneDX 1.4 XML (`cyclonedx1.4+xml`), CycloneDX 1.5 JSON (`cyclonedx1.5+json`), CycloneDX 1.5 XML (`cyclonedx1.5+xml`), CycloneDX 1.6 JSON (`cyclonedx1.6+json`), CycloneDX 1.6 XML (`cyclonedx1.6+xml`) or SPDX v2.3 JSON (`spdx2.3+json`).
 3. Using any HTTP client, for example, Postman or `curl`, make a request to the endpoint, specifying the latest stable version.\

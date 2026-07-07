@@ -1,6 +1,6 @@
 # Fix vulnerabilities using the Snyk CLI
 
-The Snyk CLI provides support for fixing vulnerabilities found by using the `snyk test` command. For information about fixes in the Web UI, see [Fix your vulnerabilities](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities). For general information about patches, see [Snyk patches to fix vulnerabilities](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities).
+The Snyk CLI provides support for fixing vulnerabilities found by using the `snyk test` command. For information about fixes in the Web UI, see [Fix your vulnerabilities](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities). For general information about patches, see [Snyk patches to fix vulnerabilities](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities).
 
 If you are using `snyk container test`, see [Understanding Snyk Container CLI results](snyk-cli-for-snyk-container/understand-snyk-container-cli-results.md) for information about resolving vulnerabilities found in a scan. If you are using `snyk code test`, see [View Snyk Code CLI results](snyk-cli-for-snyk-code/view-snyk-code-cli-results.md). If you are using `snyk iac test`, see [Understanding the IaC CLI test results](snyk-cli-for-iac/understand-the-iac-cli-test-results/).
 
@@ -13,11 +13,11 @@ From the CLI, for each list (upgrade and patch), results are displayed in groups
 
 Upgrade and patch results appear similar to the following:
 
-<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt="Upgrade results in the CLI"><figcaption><p>Upgrade results in the CLI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt="Upgrade results in the CLI"><figcaption><p>Upgrade results in the CLI</p></figcaption></figure>
 
 Patch recommendations appear similar to the following:
 
-<figure><img src="../../../.gitbook/assets/uuid-1afca091-a9a5-d42c-40b6-f48aa0e72584-en.png" alt="Patch results in the CLI"><figcaption><p>Patch results in the CLI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-1afca091-a9a5-d42c-40b6-f48aa0e72584-en.png" alt="Patch results in the CLI"><figcaption><p>Patch results in the CLI</p></figcaption></figure>
 
 ## Snyk patches to fix vulnerabilities using the CLI
 

@@ -17,12 +17,12 @@ The Project tags feature allows you to add custom metadata to Snyk Projects. You
 
 You can perform these actions in the Snyk Web UI, as shown on this page.
 
-You can also perform these actions using the API endpoints [Add a tag to a Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid-tags), [Remove a tag from a Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid-tags-remove), and  [List all tags in a Group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-tags).
+You can also perform these actions using the API endpoints [Add a tag to a Project](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid-tags), [Remove a tag from a Project](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid-tags-remove), and [List all tags in a Group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-tags).
 
-You can set values for a tag applied to a Project and clear the Project tags using the Snyk CLI option `--project-tags`. See the [CLI commands and options summary](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/cli-commands-and-options-summary) for the commands that support this option.
+You can set values for a tag applied to a Project and clear the Project tags using the Snyk CLI option `--project-tags`. See the [CLI commands and options summary](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/cli-commands-and-options-summary) for the commands that support this option.
 
 {% hint style="info" %}
-If a Project tag is no longer assigned to a Project, the tag will no longer exist.&#x20;
+If a Project tag is no longer assigned to a Project, the tag will no longer exist.
 {% endhint %}
 
 ### Tag conditions
@@ -31,8 +31,8 @@ The following conditions apply to Project tags:
 
 * Keys are limited to 30 characters.
 * Values are limited to 256 characters.
-* Keys allow only alphanumerics and the following characters **`-`**, **`_`**
-* Values allow these characters plus **`/`**, **`:`**, **`?`**, **`#`**, **`@`**, **`&`**, **`+`**, **`=`**, **`%`**, **`~`**
+* Keys allow only alphanumerics and the following characters `-`, `_`
+* Values allow these characters plus `.`, `/`, `:`, `?`, `#`, `@`, `&`, `+`, `=`, `%`, `~`&#x20;
 * Reusing a key and value combination does not add to the count.
 
 ## **How to create tags**
@@ -53,9 +53,9 @@ After you create a tag, it can be applied to other Projects in the Snyk Group.
 
 ## How to delete tags
 
-To delete a Project tag from the Group, use the API endpoint [Delete a tag from a Group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-tags).
+To delete a Project tag from the Group, use the API endpoint [Delete a tag from a Group](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/groups-v1#group-groupid-tags).
 
-This endpoint has the option in the Body to specify `"force": false` or `"force": true`_._ If you specify `"force": true`, the tag will be removed from any Projects to which it is applied, and it will then be deleted. If you specify `"force": false` and the tag is still applied to any Projects, error 403 “the tag has entities” occurs. Otherwise, tag deletion should succeed.&#x20;
+This endpoint has the option in the Body to specify `"force": false` or `"force": true`_._ If you specify `"force": true`, the tag will be removed from any Projects to which it is applied, and it will then be deleted. If you specify `"force": false` and the tag is still applied to any Projects, error 403 “the tag has entities” occurs. Otherwise, tag deletion should succeed.
 
 {% hint style="info" %}
 A tag will only exist if it has been created and applied to one or more Projects. If a tag is

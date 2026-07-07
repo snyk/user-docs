@@ -9,7 +9,7 @@ By obtaining the tokens required to set up Snyk Broker, you generate the credent
 To set up Snyk Broker, you must have the following tokens:
 
 * Broker token - This token is required for the Broker client setup. It is used in the `-e BROKER_TOKEN` parameter. The Broker token is associated with a specific Organization by default and with a specific integrated SCM and enables Snyk Broker deployment for this Organization and SCM. A different Broker token is required for each SCM. Details are on this page.
-* Integrated SCM token - This token is required for the Broker Client setup. It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM with certain permissions needed for the operation of the Broker and Snyk Code. For details, see [Integrated SCM tokens for Snyk Broker](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/scm-integrations-and-snyk-broker#integrated-scm-tokens-for-classic-broker).
+* Integrated SCM token - This token is required for the Broker Client setup. It is used in the `-e <SCM>_TOKEN` parameter, for example, `-e GITHUB_TOKEN=xxx…`, to enable access to the SCM with certain permissions needed for the operation of the Broker and Snyk Code. For details, see [Integrated SCM tokens for Snyk Broker](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/scm-integrations-and-snyk-broker#integrated-scm-tokens-for-classic-broker).
 
 After you have obtained the required tokens, save them in a safe and accessible place for use in setting up the Broker Client.
 
@@ -17,15 +17,15 @@ After you have obtained the required tokens, save them in a safe and accessible 
 
 For code repository (SCM) integrations, you can generate a Broker token by using the API or by contacting [Snyk support](https://support.snyk.io).
 
-1. Use the endpoint [Update Existing Integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/integrations-v1#org-orgid-integrations-type) to enable Snyk Broker for a specific Organization and a specific SCM. Follow the example under "Set up a broker for an existing integration." This generates a Broker token in the UI.
-2. To generate a Broker token programmatically after enabling Snyk Broker, use the endpoint [Provision new Broker token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/integrations-v1#org-orgid-integrations-integrationid-authentication-provision-token) to generate a Broker token.\
+1. Use the endpoint [Update Existing Integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/integrations-v1#org-orgid-integrations-type) to enable Snyk Broker for a specific Organization and a specific SCM. Follow the example under "Set up a broker for an existing integration." This generates a Broker token in the UI.
+2. To generate a Broker token programmatically after enabling Snyk Broker, use the endpoint [Provision new Broker token](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/integrations-v1#org-orgid-integrations-integrationid-authentication-provision-token) to generate a Broker token.\
    You can see the generated Broker token in the API response body and on the Web UI.
 3. Verify the Broker token is generated in the Snyk Web UI under the specified SCM integration. by selecting **Settings** > **Integrations** for that specific integration to see the Broker token.
 4. After generating the Broker token, copy and save it and store it in a secure location for future use, or obtain it later using the Web UI.
 
 ## **Generate a Broker token in the Web UI**
 
-For [Artifactory Repository](../../../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/) and [Nexus Repository Manager](../../../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) brokered instances or [Jira](../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-docker.md) integration, you can obtain a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io). The steps to generate a Broker token in the Web UI follow:
+For [Artifactory Repository](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup) and [Nexus Repository Manager](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup) brokered instances or [Jira](../../../../implementation-and-setup/enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/jira-install-and-configure-using-docker.md) integration, you can obtain a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io). The steps to generate a Broker token in the Web UI follow:
 
 1. Select **Settings** > **Integrations** for that specific integration to generate the Broker token.
 2. After the Broker token is generated, under the integration, the notification from this screen correctly displays **Could not connect to…**, as you have not yet installed and configured the client.

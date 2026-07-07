@@ -15,7 +15,7 @@ When you use the Container Registry Agent, Snyk can integrate with private conta
 
 This page explains how to use the Container Registry Agent to integrate through Broker with supported open-source container registries as [listed](./#supported-container-registries) on this page. This method of integration is designed for users who require images to be scanned in their own environment instead of inside the Snyk service.
 
-If you do not require that images be scanned in your own environment, you do not need to use the Container Registry Agent. You can integrate with the supported container registries from the integrations page in your account. For details, see [Snyk Container security integrations](../../../../scan-with-snyk/snyk-container/container-registry-integrations/).
+If you do not require that images be scanned in your own environment, you do not need to use the Container Registry Agent. You can integrate with the supported container registries from the integrations page in your account. For details, see [Snyk Container security integrations](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations).
 
 ## Components of the network-restricted container registries solution
 
@@ -38,7 +38,7 @@ Using the Snyk Broker Container Registry Agent you can integrate Snyk with the f
 * Google Cloud Container Registry (GCR) (type: gcr)
 * Amazon Elastic Container Registry (ECR) (type: ecr)
 * Google Artifact Registry (type: google-artifact-cr)
-* Docker Hub registry (type: docker-hub). Note: Snyk Broker is unable to connect to a self-hosted instance of OCI Distribution, that is, [`docker.io/registry`](http://docker.io/registry).
+* Docker Hub registry (type: docker-hub). Note: Snyk Broker is unable to connect to a self-hosted instance of OCI Distribution, that is, `docker.io/registry`.
 * RedHat Quay container registry (type: quay-cr)
 * Nexus registry (type: nexus-cr)
 * GitHub Container registry (type: github-cr)
@@ -169,7 +169,7 @@ If you are using `Repository path` as your Docker access method, set the contain
 
 The catalog endpoint `/artifactory/api/docker/<artifactory-repository>/v2/_catalog` is not required for importing a Project in Artifactory. The catalog endpoint is used for listing the image repositories.
 
-See [Configuring your JFrog Artifactory container registry integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-jfrog-artifactory/configuring-your-jfrog-artifactory-container-registry-integration) for more details.
+See [Configuring your JFrog Artifactory container registry integration](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/container-registry-integrations/integrate-with-jfrog-artifactory/configuring-your-jfrog-artifactory-container-registry-integration) for more details.
 
 ### **Elastic Container Registry (ECR)**
 

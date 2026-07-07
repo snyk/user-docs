@@ -14,17 +14,17 @@ To enable Snyk Language Server debug logs in the JetBrains IDEs, change the log 
 
 Press the Shift key twice quickly and select the **Actions** tab. Then search for **Debug**. Alternatively, select the Debug Log Settings in the menu (not available in JetBrains Rider).
 
-<figure><img src="../../../.gitbook/assets/image (179).png" alt="Actions tab"><figcaption><p>Use Actions tab to open Debug Log Settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (179).png" alt="Actions tab"><figcaption><p>Use Actions tab to open Debug Log Settings</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (180).png" alt="Search for action"><figcaption><p>Go to Custom Debug Log Configuration from Debug Log Settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (180).png" alt="Search for action"><figcaption><p>Go to Custom Debug Log Configuration from Debug Log Settings</p></figcaption></figure>
 
 Entering `Snyk Language Server` on its own line will enable debug logging of the Language Server. Restart the IDE to reload the Snyk Language Server with the new debug level logging enabled.
 
-<figure><img src="../../../.gitbook/assets/image (181).png" alt="Snyk Language Server configuration"><figcaption><p>Snyk Language Server configuration set to Debug Mode in the Custom Debug Log Configuration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (181).png" alt="Snyk Language Server configuration"><figcaption><p>Snyk Language Server configuration set to Debug Mode in the Custom Debug Log Configuration</p></figcaption></figure>
 
 To view the debug logs, navigate to **Help** > **Show Log** in the Finder (Mac) or **Show Log** in the Explorer (Windows). Then open the files idea.log, idea.1.log, and so on, in the folder.
 
-<figure><img src="../../../.gitbook/assets/image (178).png" alt="Show log in Finder" width="323"><figcaption><p>Opens the Intellij logs folder</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (178).png" alt="Show log in Finder" width="323"><figcaption><p>Opens the Intellij logs folder</p></figcaption></figure>
 
 ## Trusted root certificates issues
 
@@ -35,7 +35,7 @@ See the [JetBrains documentation](https://www.jetbrains.com/help/idea/ssl-certif
 Sometimes the checkboxes for Snyk Code in the JetBrains plugin are disabled. Some possible reasons follow:
 
 * Network or proxy settings: If the network or proxy settings are not configured correctly, the checkboxes may be disabled. Check to see if there is an MITM proxy with certificate substitution. Also, verify whether connections to the endpoint API and deeproxy can be established using other tools, for example, the CLI or cURL.
-* Incorrect endpoint addres&#x73;**:** If the endpoint address in the Snyk Code plugin configuration is incorrect, the checkboxes will be disabled. To fix this, refer to the instructions and check that the endpoint address is correct. Restart the plugin afterwards.
+* Incorrect endpoint address. If the endpoint address in the Snyk Code plugin configuration is incorrect, the checkboxes will be disabled. To fix this, refer to the instructions and check that the endpoint address is correct. Restart the plugin afterwards.
 * Snyk Code is disabled server-side: If Snyk Code is disabled in the Snyk Organisation's settings, the checkboxes will be disabled. To fix this, follow the instructions shown in the IntelliJ settings. Restart your IDE.
 * Have a look at the JetBrains logs: For additional information, see [Locating IDE log files](https://intellij-support.jetbrains.com/hc/en-us/articles/207241085-Locating-IDE-log-files).
 
@@ -87,7 +87,7 @@ As of Android Studio Koala (2024.1.1), JCEF (Java Chromium Embedded Framework) i
 2. Navigate to **Help** > **Find Action...**\
    (Or press `Ctrl+Shift+A` on Windows/Linux, or `Cmd+Shift+A` on macOS.)
 3. In the search box, type **Registry...** and select it.
-4. In the Registry dialog that appears, search for:`ide.browser.jcef.sandbox.enable`
+4. In the Registry dialog that appears, search for: `ide.browser.jcef.sandbox.enable`
 5. Uncheck the box next to it to disable the sandbox.
 
 #### Step 2: Choose a JCEF-Compatible Java Runtime
@@ -95,7 +95,7 @@ As of Android Studio Koala (2024.1.1), JCEF (Java Chromium Embedded Framework) i
 1. Again, navigate to **Help** > **Find Action...**\
    (Or press `Ctrl+Shift+A` on Windows/Linux, or `Cmd+Shift+A` on macOS.)
 2. Search for and select **Choose Boot Java Runtime for the IDE...**
-3. From the list, select a runtime labeled something like:**JetBrains Runtime with JCEF**
+3. From the list, select a runtime labeled something like: **JetBrains Runtime with JCEF**
 4. Click **OK** to apply the change.
 5. Restart Android Studio when prompted.
 

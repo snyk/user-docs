@@ -198,72 +198,60 @@ For instructions on how to verify the shasum of downloaded binaries and their GP
 
 <summary>Install for MacOS and Linux</summary>
 
-Use `curl` to download the binary, make it executable, and move it to your system path in one go.
+{% hint style="info" %}
+If you are unsure about which architecture you have, run `uname -m`. `arm64` or `aarch64` means ARM; `x86_64` or `amd64` means Intel or AMD.
+{% endhint %}
 
-For Intel/AMD (x86\_64) use the following commands:
+Download the standalone binary for your operating system and CPU architecture, make it executable, then move it onto your `PATH`.
+
+1. Download the binary that matches your system:
+
+{% code overflow="wrap" %}
+```bash
+   curl --compressed https://downloads.snyk.io/cli/stable/snyk-macos-arm64 -o snyk
+```
+{% endcode %}
+
+{% code overflow="wrap" %}
+```bash
+   curl --compressed https://downloads.snyk.io/cli/stable/snyk-macos -o snyk
+```
+{% endcode %}
+
+{% code overflow="wrap" %}
+```bash
+   curl --compressed https://downloads.snyk.io/cli/stable/snyk-linux -o snyk
+```
+{% endcode %}
+
+{% code overflow="wrap" %}
+```bash
+   curl --compressed https://downloads.snyk.io/cli/stable/snyk-linux-arm64 -o snyk
+```
+{% endcode %}
+
+{% code overflow="wrap" %}
+```bash
+   curl --compressed https://downloads.snyk.io/cli/stable/snyk-alpine -o snyk
+```
+{% endcode %}
+
+{% code overflow="wrap" %}
+```bash
+   curl --compressed https://downloads.snyk.io/cli/stable/snyk-alpine-arm64 -o snyk
+```
+{% endcode %}
+
+2. Make the downloaded file executable:
 
 ```bash
-# Download
-curl --compressed https://downloads.snyk.io/cli/latest/snyk-linux -o snyk
-
-# Make the file executable
-chmod +x ./snyk
-
-# Move to a folder in your PATH
-sudo mv ./snyk /usr/local/bin/
+   chmod +x ./snyk
 ```
 
-For Apple Silicon (M1/M2/M3) use the following commands:
+3. Move it to a folder in your `PATH`:
 
 ```bash
-# Download
-curl --compressed https://downloads.snyk.io/cli/latest/snyk-macos-arm64 -o snyk
-
-# Make the file executable
-chmod +x ./snyk
-
-# Move to a folder in your PATH
-sudo mv ./snyk /usr/local/bin/
-```
-
-</details>
-
-<details>
-
-<summary>Install for Alpine</summary>
-
-Use `curl` to download the binary, make it executable, and move it to your system path in one go.
-
-For Intel/AMD (x86\_64) use the following commands:
-
-```bash
-# Download
-
-curl --compressed https://downloads.snyk.io/cli/stable/snyk-alpine -o snyk
-
-# Make the file executable
-
-chmod +x ./snyk
-
-# Move to a folder in your PATH. May require sudo.
-
-mv ./snyk /usr/local/bin/
-```
-
-For ARM64 use the following commands:
-
-```bash
-# Download
-
-curl --compressed https://downloads.snyk.io/cli/stable/snyk-alpine-arm64 -o snyk
-
-# Make the file executable
-
-chmod +x ./snyk
-
-# Move to a folder in your PATH. May require sudo.
-
-mv ./snyk /usr/local/bin/
+   sudo mv ./snyk /usr/local/bin/
 ```
 
 </details>

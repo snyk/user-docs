@@ -1,12 +1,13 @@
 # Table of contents
 
-* [Overview](snyk-platform-administration/snyk-admin.md)
+* [Overview](README.md)
 
 ## Snyk hierarchy
 
 * [Tenant, Groups, and Organizations](snyk-platform-administration/groups-and-organizations/README.md)
 * [Tenants](snyk-platform-administration/groups-and-organizations/tenant/README.md)
   * [Manage users in a Tenant](snyk-platform-administration/groups-and-organizations/tenant/manage-users-in-a-tenant.md)
+  * [Plan and billing](snyk-hierarchy/tenant/plan-and-billing.md)
 * [Groups](snyk-platform-administration/groups-and-organizations/groups/README.md)
   * [Manage users in a Group](snyk-platform-administration/groups-and-organizations/groups/manage-users-in-a-group.md)
   * [Configure session length for a Snyk Group](snyk-platform-administration/groups-and-organizations/groups/configure-session-length-for-a-snyk-group.md)
@@ -72,7 +73,6 @@
 * [Choose a service account type to use with Snyk APIs](implementation-and-setup/enterprise-setup/service-accounts/choose-a-service-account-type-to-use-with-snyk-apis.md)
 * [Service accounts using OAuth 2.0](implementation-and-setup/enterprise-setup/service-accounts/service-accounts-using-oauth-2.0.md)
 * [Manage service accounts using the Snyk API](implementation-and-setup/enterprise-setup/service-accounts/manage-service-accounts-using-the-snyk-api.md)
-
 
 ## Snyk Broker
 

@@ -1,12 +1,12 @@
-# Snyk repo content sync
+# Snyk Repo Content Sync
 
 {% hint style="info" %}
 **Release status**
 
-Snyk repo content sync is in Early Access and available only with Enterprise plans. To enable the feature, visit [Snyk Preview](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/snyk-preview).
+Snyk Repo Content Sync is in Early Access and available only with Enterprise plans. To enable the feature, visit [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
 {% endhint %}
 
-Repo content sync provides native, automatic synchronization between the Org-level SCM Projects and Snyk. This feature ensures that your Snyk Projects accurately reflect the current security posture of your repositories without the need for manual re-imports.
+Repo Content Sync provides native, automatic synchronization between the Org-level SCM Projects and Snyk. This feature ensures that your Snyk Projects accurately reflect the current security posture of your repositories without the need for manual re-imports.
 
 ## Supported environments
 
@@ -16,18 +16,20 @@ Repo content sync provides native, automatic synchronization between the Org-lev
 
 ## Key capabilities
 
-Repo content sync automatically manages your Projects based on changes in your repositories that have been scanned by Snyk:
+Repo Content Sync automatically manages your Projects based on changes in your repositories that have been scanned by Snyk:
 
 * Automatic Project creation: Snyk automatically creates and monitors new Projects when you add new manifest, Docker, or configuration files to your scanned repos.
-* Automatic deactivation: Snyk automatically deactivates Projects when you delete or archive their associated manifest, Docker, or configuration files in the scanned repos.
+* Automatic deactivation: Snyk automatically deactivates Projects when you delete their associated manifest, Docker, or configuration files in the scanned repos.
 * File renames and path changes: If you rename a file or change its path, Snyk creates a new Project for the new location and deactivates the old Project.
 
 ## How synchronization works
 
 Push events trigger synchronization using webhooks. Snyk creates a webhook when you initially import a repository.
 
-* Manifest, Docker, and configuration files: adding, deleting, or renaming these files triggers an automatic update. You can view details of these actions in your Snyk import logs.
-* Exclusions: Snyk respects existing folder exclusions configured using the import flow or `.snyk` files.
+* Manifest, Docker, and IaC configuration files: adding, deleting, or renaming these files triggers an automatic update. You can view details of these actions in your Snyk import logs.
+* Exclusions: Snyk respects folder and file exclusions as follows:
+  * Snyk Open Source, Container, and IaC: Use the Exclude Folders field in the Organization level repository import window, or configure exclusions using Repo Monitor Configuration in the Inventory. Repo Content Sync will respect these settings on each subsequent sync.
+  * Snyk Code: Use a `.snyk` file in the root of your repository to exclude specific directories or files from import. For details, visit [Exclude directories and files from Project import](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/import-project-repository/exclude-directories-and-files-from-project-import).
 
 ## Considerations for Early Access
 

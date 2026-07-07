@@ -5,7 +5,7 @@
 Package repository integrations are available with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 **Supported projects**\
-The Nexus Repository Manager integration supports [Node.js](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#supported-package-managers-and-package-registries) (npm and Yarn) and [Maven](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin#supported-package-managers-and-package-registries) Projects. For [Improved Gradle SCM scanning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle#improved-gradle-scm-scanning), use the Maven settings.
+The Nexus Repository Manager integration supports [Node.js](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#supported-package-managers-and-package-registries) (npm and Yarn) and [Maven](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin#supported-package-managers-and-package-registries) Projects. For [Improved Gradle SCM scanning](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle#improved-gradle-scm-scanning), use the Maven settings.
 {% endhint %}
 
 Snyk can use Nexus Repository Manager with Maven Projects.

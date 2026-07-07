@@ -4,14 +4,14 @@
 You can add a single Dockerfile to each image that you have imported.
 {% endhint %}
 
-## **Prerequisites for adding a Dockerfile**
+## Prerequisites for adding a Dockerfile
 
 To receive base image fix advice, including major, minor, and alternative upgrades, as well as advice when you need to rebuild your image, ensure you:
 
 * Have configured your preferred Git repository
 * Have imported the repository that contains the relevant Dockerfile.
 
-## **Add a Dockerfile**
+## Add a Dockerfile
 
 To add a Dockerfile for additional fix advice:
 
@@ -42,7 +42,7 @@ Snyk detects vulnerable base images by scanning your Dockerfile when you import 
 When scanning Dockerfiles, Snyk can provide vulnerability information and base image recommendations for supported base images. If you need help, contact [Snyk Support](https://support.snyk.io).
 {% endhint %}
 
-After you [integrate your Git repository with Snyk](../../../developer-tools/scm-integrations/organization-level-integrations/), any Dockerfiles in that repository are automatically identified and shown in the Web UI as Projects.
+After you [integrate your Git repository with Snyk](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations), any Dockerfiles in that repository are automatically identified and shown in the Web UI as Projects.
 
 <figure><img src="../../../.gitbook/assets/dockerfiles_projects.png" alt=""><figcaption><p>Dockerfiles displayed in the Project list</p></figcaption></figure>
 

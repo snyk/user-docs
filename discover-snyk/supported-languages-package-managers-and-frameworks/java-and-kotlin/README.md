@@ -29,6 +29,7 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 {% column %}
 * Amazon AWS SDK
 * Android Standard Library
+* Apache Camel
 * Apache Commons
 * Apache Tomcat
 * Apache XML
@@ -128,11 +129,11 @@ Available features:
 * Reports
 * License scanning
 * Fix PRs (for Gradle only Fix advice is available)
-* Test your app's SBOM and packages using `pkg:maven` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/sbom-test) CLI command
+* Test your app's SBOM and packages using `pkg:maven` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 ## Validating, monitoring, alerting, and gating for Java and Kotlin
 
-For SCM integrations, Snyk allows you to [run PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis. You can see the results on the **Projects** page.
+For SCM integrations, Snyk allows you to [run PR Checks](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks) to validate submitted changes to code and open source packages before merging. Snyk can also retest and alert on the default branch on a scheduled basis. You can see the results on the **Projects** page.
 
 For CI/CD integrations, Snyk can passively monitor and provide a QA gate by failing build checks during testing for policy violations.
 
@@ -143,13 +144,13 @@ Snyk provides flexible capabilities, including:
 * Dedicated plugins for Jenkins, Circle CI, and others (see relevant marketplaces)
 * Using [Github Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/)
 * The Snyk CLI can be used in most CI/CD systems (see [examples](https://github.com/snyk-labs/snyk-cicd-integration-examples))
-  * Fail the build based on criteria using options or the [snyk-filter](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter) tool
+  * Fail the build based on criteria using options or the [snyk-filter](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter) tool
   * There are [containerized](https://hub.docker.com/r/snyk/snyk) versions available
 * With Partner Platforms: Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk. For Java, Snyk suggests using the SCM integration with Bitbucket Cloud or using the CLI instead of the prepackaged Bitbucket Pipe.
 
 Snyk can monitor container images and their open source or Linux based packages being used in production using Kubernetes integration, to notify customers of known vulnerabilities for applications in production. This feature is available for Enterprise plans only.
 
-Where a production integration does not exist, use the [snyk monitor](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/monitor) CLI command to take a snapshot and monitor what is being pushed to production (available for all plans).
+Where a production integration does not exist, use the [snyk monitor](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) CLI command to take a snapshot and monitor what is being pushed to production (available for all plans).
 
 ## Java support for BOM
 
@@ -240,7 +241,7 @@ For the previous examples, Snyk analyzes and treats the files as follows:
 If a BOM has direct dependencies outside `dependencyManagement`, then Snyk creates a Project for that BOM.
 {% endhint %}
 
-Snyk also offers fix advice, including recommendations for upgrading vulnerable packages with the [Fix PR feature](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests#snyk-fix-prs).
+Snyk also offers fix advice, including recommendations for upgrading vulnerable packages with the [Fix PR feature](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests#snyk-fix-prs).
 
 Fix PRs can only be created for dependencies whose versions are managed in the POM file where the issue is reported.
 

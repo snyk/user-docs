@@ -1,6 +1,6 @@
 # Review scan coverage
 
-{% include "../../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
 ## Check ‌the Group-level SCM integration
 
@@ -10,7 +10,7 @@ Ensure that the Group-level SCM integration is configured. Navigate to the Group
 
 ## Review the Inventory
 
-The first page of the Inventory provides an overview of your most important repositories and identifies coverage gaps, showing which repos have been tested with Snyk and which have not. See the [Inventory menu](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-assets/manage-assets) page for more details.
+The first page of the Inventory provides an overview of your most important repositories and identifies coverage gaps, showing which repos have been tested with Snyk and which have not. See the [Inventory menu](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets) page for more details.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe9jbqqPfkZH6PvNz2pBcNtNKgfphy1GayWURCQnmGxFvQG5cw4vcYcsOpPF78ztH8xjcJKkRWKty4lNlC63bN0S8qP-qcU_EOpvbnbBEaPIgadfRnnVilbYlvR8Uk7U6n6fWyhRw?key=i_CNrr-DvB8PGUAzq09BT3pc" alt=""><figcaption></figcaption></figure>
 
@@ -18,7 +18,7 @@ The **All Assets** page shows a complete list of all repositories, including the
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcmljy-ooiInsutXG8MAz5nwwTDGFlODl6YGUnbdx942g-RUiuVDMExkkAXG0cCPkcbsh6uT-eJdURlItkQSUZfxGHbYUhLlxqNMI0IFDIX2paJE45ywN6kX3zB2SMlZ_rg4cqb?key=i_CNrr-DvB8PGUAzq09BT3pc" alt=""><figcaption></figcaption></figure>
 
-Click on the 'Not tested' section of the first pie chart on the overview page, or use coverage filters on the 'All Assets' page to view all repositories that the selected Snyk product has not tested.&#x20;
+Click on the 'Not tested' section of the first pie chart on the overview page, or use coverage filters on the 'All Assets' page to view all repositories that the selected Snyk product has not tested.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdlF4lPPJwbjSsf6AuZGzPERNXWKLi6gUWCF7JO0jOiYCgNYtHsqkvzxCIkx6-Ea5Kl9pF1VItX100Eo-ZN8MquDnUNfzUC2_C6f2p29TIv_5zOLNBfPumkBg0BrSf3bmCLDk2tXQ?key=i_CNrr-DvB8PGUAzq09BT3pc" alt=""><figcaption></figcaption></figure>
 
@@ -26,8 +26,7 @@ Click on the 'Not tested' section of the first pie chart on the overview page, o
 
 The Class column is available for each repository. This class is meant to reflect the business criticality of the asset from A (most critical) to D (least critical). Try setting a few of your most important repos manually to Class A. This attribute can be used in reporting to help focus on issues from your company’s most important repositories.
 
-![](<../../../../.gitbook/assets/image (314).png>)\
-
+\\
 
 While you can set the class manually, you can also create a policy to automatically classify the repository. For example, Snyk ingests metadata like GitHub Topics and Custom Properties that can be used in a policy.
 
@@ -40,6 +39,6 @@ The asset class is a great way to filter on the most critical repositories in yo
 {% hint style="info" %}
 Additional Resources
 
-* [Manage assets](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-assets/manage-assets)
+* [Manage assets](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets)
 * [Product Training: Snyk Essentials](https://learn.snyk.io/catalog/?type=product-training\&topics=Snyk+Essentials)
 {% endhint %}

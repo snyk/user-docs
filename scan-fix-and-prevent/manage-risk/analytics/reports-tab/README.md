@@ -5,7 +5,7 @@
 Snyk Reporting is available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-Use Snyk reports to manage and improve your application security posture. You can access the following reports at the Tenant level.&#x20;
+Use Snyk reports to manage and improve your application security posture. You can access the following reports at the Tenant level.
 
 ## Overview
 
@@ -31,7 +31,7 @@ Deactivated Projects and their respective results will not appear in the Reports
 
 You can view dependencies and license information for all Projects in your Group or Organization. For more details, navigate to the [Dependencies and licenses](../../dependencies-and-licenses/) page.
 
-Navigate to **Analytics** > **Reports** to see all available reports.&#x20;
+Navigate to **Analytics** > **Reports** to see all available reports.
 
 After you selected a specific report, you can switch to a different report from the dropdown in the upper left corner.
 
@@ -41,19 +41,19 @@ All reports are filterable by a number of attributes, enabling users to create t
 
 If you do not select or enter any values for a particular key, the filter is not applied.
 
-### Exclude Filters
+### Exclude filters
 
 In addition to selecting values to include, you can exclude specific values using the `is not` option available across many report filters. This allows you to:
 
-* **Remove unwanted results** (for example, exclude certain Organizations, project types, or asset names).
-* **Spot gaps more easily** (for example, find projects not in a collection, or assets missing specific tags).
+* **Remove unwanted results** (for example, exclude certain Organizations, Project types, or asset names).
+* **Spot gaps more easily** (for example, find Projects not in a collection, or assets missing specific tags).
 
-To use an exclude filter, first select the filter, then select the drop-down menu next to the filter name, and select `is Not` . Select the items you'd like to exclude.&#x20;
+To use an exclude filter, first select the filter, then select the drop-down menu next to the filter name, and select `is Not` . Select the items you'd like to exclude.
 
-The resulting filter shows "{filterName} is not: {excluded items}"&#x20;
+The resulting filter shows "{filterName} is not: {excluded items}"
 
 {% hint style="info" %}
-A specific filter type can only be used once - it is not possible to have both an include ("is")  and an exclude ("is not" filter for the same item.&#x20;
+A specific filter type can only be used once - it is not possible to have both an include ("is") and an exclude ("is not") filter for the same item.
 {% endhint %}
 
 ### Snyk reporting filter logic
@@ -72,19 +72,28 @@ Every time a filter value is applied, the app.snyk.io URL is updated to persist 
 
 Exclude filter selections are also saved in the URL, so your "not equal to" filters persist when you share or bookmark a view.
 
-## Exporting Snyk reports
+## Export Snyk reports
 
 You can export reports to PDF and download tabular data in a report to CSV.
 
-### Export Snyk reports to PDF
+### Export a Snyk report to PDF
 
-Use the **Export to PDF** button at the top right to download a PDF of not only the report content, but also its context, including who ran the report, when it was exported, the scope being viewed (Snyk Organization or Group), and any filters applied.
+{% hint style="info" %}
+Rate limits prevent you from downloading more than five PDFs in one minute. Wait one minute before you download more.
+{% endhint %}
 
-Exporting a PDF allows sharing a report with a user who will not or should not authenticate into the Snyk Web UI, such as an executive or external auditor. **Export to PDF** offers point-in-time attestation with the necessary context.
+Click **Export to PDF** to download a PDF of the report content and its context. This context includes:
 
-In tabular data on reports, only the first 50 results are shown in the PDF export. Links are provided in the PDF export to view the report in the browser.
+* The user who ran the report
+* Export date and time
+* Viewed scope (Snyk Organization or Group)
+* Applied filters
 
-### Download Snyk report to a CSV file
+Exporting a PDF enables you to share a report with users who do not log in to the Snyk Web UI, for example, an executive or external auditor. The PDF export offers point-in-time attestation with the necessary context.
+
+For tabular data on reports, the PDF export shows only the first 50 results. The PDF export includes links to view the report in the browser.
+
+### Download a Snyk report to a CSV file
 
 You can use the **Download CSV** button on the right in the report to download data presented in tables to CSV. This information can be used, for example, for prioritization or for a one-time analysis in a spreadsheet.
 
@@ -96,11 +105,11 @@ The **Download CSV** button is disabled if there are no vulnerabilities in the r
 
 ## Column sorting
 
-Sort columns in tables by clicking the arrows next to the column header. Click once to sort in ascending order, twice to sort in descending order and three times to remove sort from that column. Multi-column sorting is supported.
+Sort columns in tables by clicking the arrows next to the column header. Click once to sort in ascending order, twice to sort in descending order, and three times to remove the sort from that column. Multi-column sorting is supported.
 
 When columns are sorted, the app.snyk.io URL is updated to persist the state of the page, allowing for bookmarking, copying, and sharing.
 
-## Modifying Snyk report columns
+## Modify Snyk report columns
 
 In some reports, tables may include an option to modify columns. When this option is available, you can use it to select the columns to display in the UI. The export features (PDF and CSV) respect the selected columns.
 
@@ -114,7 +123,7 @@ To make it easier to share the view outside of the Snyk platform, the URL of a s
 
 ### Prerequisites
 
-To create, edit, and remove a saved view, you must have **Edit reports** permission. Saved views are not private. After being created, Saved Views are visible to all users with **View reports** permission. Only Organization and Group Admins can assign these permissions. For more information, see [User role management](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/user-role-management).
+To create, edit, and remove a saved view, you must have **Edit reports** permission. Saved views are not private. After being created, Saved Views are visible to all users with **View reports** permission. Only Organization and Group Admins can assign these permissions. For more information, see [User role management](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management).
 
 To assign report permissions:
 

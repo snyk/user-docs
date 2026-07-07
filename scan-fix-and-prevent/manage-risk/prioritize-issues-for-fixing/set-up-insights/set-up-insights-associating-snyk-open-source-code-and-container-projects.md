@@ -83,7 +83,7 @@ Project Tags can be applied as follows:
 <table><thead><tr><th width="185.33333333333331">Product</th><th width="197">Method</th><th>Project Source</th></tr></thead><tbody><tr><td>Snyk Code</td><td><ul><li>API</li><li>UI</li></ul></td><td><p>For projects created by</p><ul><li>Git Import</li></ul></td></tr><tr><td>Snyk Open Source</td><td><ul><li>API</li><li>UI</li><li>CLI</li></ul></td><td><p>For projects created by</p><ul><li>Git Import</li><li>CLI Monitor</li></ul></td></tr><tr><td>Snyk Container</td><td><ul><li>API</li><li>UI</li><li>CLI</li></ul></td><td><p>For projects created by</p><ul><li>Git Import</li><li>CLI Monitor</li><li>Container Registry Integration</li></ul></td></tr></tbody></table>
 
 {% hint style="info" %}
-Snyk recommends applying the tags through the API in order to automate the process. For more information, see the endpoint [Add a tag to a project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid-tags).
+Snyk recommends applying the tags through the API in order to automate the process. For more information, see the endpoint [Add a tag to a project](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid-tags).
 {% endhint %}
 
 ## UI example for Project tags
@@ -96,7 +96,7 @@ Snyk recommends applying the tags through the API in order to automate the proce
 
 ### API Example
 
-See the [Project Update documentation](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid).
+See the [Project Update documentation](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/projects-v1#org-orgid-project-projectid).
 
 Example:
 

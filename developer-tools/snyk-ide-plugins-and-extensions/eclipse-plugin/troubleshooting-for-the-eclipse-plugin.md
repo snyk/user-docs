@@ -16,7 +16,7 @@ When you enable `debug`, your code may be logged in the IDE log files, for examp
 
 To enable Snyk Language Server debug logs in Eclipse, navigate to the Snyk Preferences, set the **Additional Environment** preference to `SNYK_LOG_LEVEL=debug` and restart Eclipse.
 
-<figure><img src="../../../.gitbook/assets/image (165).png" alt=""><figcaption><p>Snyk Preferences, Eclipse</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (165).png" alt=""><figcaption><p>Snyk Preferences, Eclipse</p></figcaption></figure>
 
 To view Snyk plugin logs, open the **Error Log** view:
 
@@ -28,7 +28,7 @@ To get the **Snyk Language Server log file**, click on the **Open Log** button i
 
 Notice that **\[Info]** lines contain **INF**, **WRN**, and **DBG** log rows if the SNYK\_LOG\_LEVEL is set to debug.
 
-<figure><img src="../../../.gitbook/assets/image (166).png" alt=""><figcaption><p>Error Log view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (166).png" alt=""><figcaption><p>Error Log view</p></figcaption></figure>
 
 ## Proxy settings
 
@@ -39,7 +39,7 @@ Ensure that you read the Snyk [Eclipse documentation](./).
 * Determine whether the issue occurs on the CLI terminal, outside of the IDE.
 * Preferably, use the latest Snyk CLI version.
 * Use the debug option to obtain the user's `snyk test` and `snyk monitor` output.
-* Set the proxy variable in the command line: s`et http_proxy=<http….>`
+* Set the proxy variable in the command line: `set http_proxy=<http….>`
 
 ### Proxy setting confirmation
 
@@ -87,7 +87,7 @@ To change the JDK version used by Eclipse for a specificProject, follow these st
 
 1. Open the Project in Eclipse.
 2. Right-click on the Project and select **Properties**.
-3. In the Properties dialogue box, navigate to J**ava Build Path** > **Libraries**.
+3. In the Properties dialogue box, navigate to **Java Build Path** > **Libraries**.
 4. Locate the **JRE System Library** and click on it to expand the options.
 5. Click on **Edit** and select the desired JDK version from the list of installed JREs.
 6. Click **Finish** to save the changes.
@@ -104,8 +104,8 @@ To resolve this issue, you can try the following solutions:
 * Disable Windows Defender temporarily: If adding an exclusion does not solve the problem, you can temporarily disable Windows Defender while running the Go binary. However, exercise caution when disabling antivirus software and ensure that you have other security measures in place.
 * Submit the binary to Microsoft: If you believe the detection is a false positive, you can report it to Microsoft. They have a process for submitting files to be reviewed, and if confirmed as a false positive, the detection may be updated in future antivirus definitions.
 
-## **Signing information for Jars**
+## Signing information for Jars
 
 If you want to verify the correct provenance of your plugin, verify the signing details from the Eclipse dialog using this data.
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt="The signing key details to verify the integrity and origin of the download plugin"><figcaption><p>The signing key details to verify the integrity and origin of the downloaded plugin</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt="The signing key details to verify the integrity and origin of the download plugin"><figcaption><p>The signing key details to verify the integrity and origin of the downloaded plugin</p></figcaption></figure>

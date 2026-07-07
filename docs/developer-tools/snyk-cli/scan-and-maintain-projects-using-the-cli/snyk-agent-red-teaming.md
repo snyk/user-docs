@@ -4,6 +4,10 @@
 **Experimental Feature**: Snyk Agent Red Teaming is an experimental feature subject to breaking changes without notice. It is provided "as is" without warranties or guarantees. Use at your own risk.
 {% endhint %}
 
+{% hint style="warning" %}
+**Deprecated:** `snyk redteam` will be deprecated on May 31, 2026.
+{% endhint %}
+
 {% hint style="danger" %}
 **Testing environment only**: This tool actively sends adversarial inputs to your AI application. Only run scans against staging or development environments using test data and test credentials. **Do not target production systems or environments containing real user data.** Snyk is not responsible for any unintended side effects, data loss, or disruptions caused by running scans against your applications.
 {% endhint %}
@@ -38,7 +42,7 @@ snyk redteam --experimental setup
 
 {% stepper %}
 {% step %}
-#### Install the Snyk CLI
+**Install the Snyk CLI**
 
 Use one of the following methods to install the Snyk CLI. For more installation options and troubleshooting, visit [Install or update the Snyk CLI](../install-the-snyk-cli/).
 
@@ -72,7 +76,7 @@ scoop install snyk
 {% endstep %}
 
 {% step %}
-#### Authenticate
+**Authenticate**
 
 To authenticate, run:
 
@@ -98,7 +102,7 @@ You can create the configuration file manually, or generate one with the `setup`
 
 {% stepper %}
 {% step %}
-#### Run the `setup` subcommand
+**Run the `setup` subcommand**
 
 ```bash
 snyk redteam --experimental setup

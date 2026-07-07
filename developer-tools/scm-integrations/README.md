@@ -1,6 +1,6 @@
 # SCMs
 
-Snyk supports SCM integrations that allow you to implement security at each point in your workflow: importing a Project, writing your code, and building and deployment. Snyk can also [automatically create pull requests (PRs)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades) on your behalf to upgrade your dependencies based on scan results, compatible with a variety of SCM integrations.
+Snyk supports SCM integrations that allow you to implement security at each point in your workflow: importing a Project, writing your code, and building and deployment. Snyk can also [automatically create pull requests (PRs)](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades) on your behalf to upgrade your dependencies based on scan results, compatible with a variety of SCM integrations.
 
 Snyk Source Control Manager (SCM) integrations allow you to:
 
@@ -31,7 +31,7 @@ For detailed information on this feature, including enablement steps, see [Works
 
 ## Choose an Integration
 
-If you are an Enterprise customer, see [Choose rollout integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/team-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations) in the Enterprise implementation guide for tips and considerations on import strategies, as well as context for which integrations suit your SDLC.
+If you are an Enterprise customer, see [Choose rollout integrations](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/team-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations) in the Enterprise implementation guide for tips and considerations on import strategies, as well as context for which integrations suit your SDLC.
 
 ### GitHub vs GitHub Enterprise
 

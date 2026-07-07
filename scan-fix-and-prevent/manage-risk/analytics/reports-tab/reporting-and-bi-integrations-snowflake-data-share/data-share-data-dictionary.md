@@ -18,6 +18,7 @@ The diagram above represents the objects listed in the data dictionary as a data
 * [PR Checks](data-share-data-dictionary.md#pr-checks)
 * [PR Checks Integration Adoption](data-share-data-dictionary.md#pr-checks-integration-adoption)
 * [PR Checks Project Adoption](data-share-data-dictionary.md#pr-checks-project-adoption)
+* [Prevention Events](data-share-data-dictionary.md#prevention-events)
 
 <figure><img src="../../../../.gitbook/assets/image (287).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to issues</p></figcaption></figure>
 
@@ -228,7 +229,7 @@ Querying the `USAGE_EVENTS` table allows you to measure:
 
 > Version in use: v1.0
 
-The `ISSUE_JIRA_ISSUES` table allows correlation between Snyk issues and assigned Jira issues. As Snyk enables more than one type of Jira integration, it is important to emphasize that the Jira issues that are available in the dataset originated from this [Jira integration](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration).
+The `ISSUE_JIRA_ISSUES` table allows correlation between Snyk issues and assigned Jira issues. As Snyk enables more than one type of Jira integration, it is important to emphasize that the Jira issues that are available in the dataset originated from this [Jira integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/jira-and-slack-integrations/jira-integration).
 
 | Column name            | Data type      | Description                                                                                    |
 | ---------------------- | -------------- | ---------------------------------------------------------------------------------------------- |
@@ -339,3 +340,36 @@ The `PR_CHECK_PROJECT_ADOPTION` table tracks pull request (PR) check configurati
 | `pull_requests_severity_threshold`              | varchar        | Severity threshold at which PR checks are set to fail, will be null if inheriting from integration settings.                                         |
 | `is_pull_request_fail_only_for_issues_with_fix` | boolean        | Flag indicating if open-source PR checks are only set to fail for issues with available fixes, will be null if inheriting from integration settings. |
 | `__updated_at`                                  | timestamp\_ntz | When the data share data transformation last updated this record.                                                                                    |
+
+### Prevention Events
+
+> Version in use: v1.0
+
+The `PREVENTION_EVENTS` table contains data for finding events captured by Snyk during developer scans at the IDE, CLI, and MCP stages.&#x20;
+
+Each row represents a single finding event, along with its severity, product, and repository context. The finding might be newly introduced, persisting from a previous scan, or actively prevented.
+
+Use this data to measure security outcomes, track suppression trends, and understand which teams or repositories are generating or preventing findings before they reach your repository.&#x20;
+
+| `finding_event_id`   | varchar        | Primary key. Unique identifier for the prevention event.                                                                                         |
+| -------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `group_public_id`    | varchar        | UUID of the Snyk Group that owns this event.                                                                                                     |
+| `org_public_id`      | varchar        | UUID of the Snyk Organization under which the scan was run.                                                                                      |
+| `git_repo`           | varchar        | Name of the Git repository where the scan occurred.                                                                                              |
+| `git_branch`         | varchar        | Branch that was scanned.                                                                                                                         |
+| `finding_title`      | varchar        | Human-readable title of the finding.                                                                                                             |
+| `event_type`         | varchar        | Type of event: `new` (first occurrence), `persisting` (seen in a previous scan), or `fixed` (finding was caught before reaching the repository). |
+| `event_timestamp`    | timestamp\_ntz | UTC timestamp when the prevention event was recorded.                                                                                            |
+| `effective_severity` | varchar        | Computed severity of the finding: `CRITICAL`, `HIGH`, `MEDIUM`, or `LOW`.                                                                        |
+| `product_name`       | varchar        | Snyk product that detected the finding (for example, `Snyk Open Source` or `Snyk Code`).                                                         |
+| `sdlc_stage`         | varchar        | Stage of the developer workflow where the event was captured: `IDE`, `CLI`, `MCP`, or `OTHER`.                                                   |
+| `is_suppressed`      | boolean        | `true` if the finding was suppressed (ignored) at the time of the event.                                                                         |
+| `problem_id`         | varchar        | Snyk vulnerability or rule identifier (for example, `SNYK-JS-LODASH-567746`).                                                                    |
+| `problem_title`      | varchar        | Title of the underlying vulnerability or code rule.                                                                                              |
+| `cve`                | varchar        | CVE identifier associated with the vulnerability, if applicable.                                                                                 |
+| `cwe`                | varchar        | CWE identifier associated with the vulnerability, if applicable.                                                                                 |
+| `test_user_name`     | varchar        | Display name of the developer who triggered the scan.                                                                                            |
+| `test_user_email`    | varchar        | Email address of the developer who triggered the scan.                                                                                           |
+| `__updated_at`       | timestamp\_ntz | When the data share data transformation last updated this record.                                                                                |
+
+<br>

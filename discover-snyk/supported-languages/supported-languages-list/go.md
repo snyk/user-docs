@@ -35,7 +35,7 @@ For Go, Snyk supports [Go Modules](https://go.dev/ref/mod) and [dep](https://git
 
 For Go with Snyk Code, Snyk supports:
 
-* Go Standard Library comprehensive as a library&#x20;
+* Go Standard Library comprehensive as a library
 * .`go` as a file format
 
 Available features:
@@ -52,7 +52,7 @@ Available features for Go Projects with dependencies managed by Go Modules and d
 * PR checks
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:golang` PURLs through the [SBOM test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/sbom-test) command.
+* Test your app's SBOM and packages using `pkg:golang` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command.
 
 {% hint style="info" %}
 If the **Snyk Fix PR** feature is enabled, this means that you will be notified if the PR checks fail when the following conditions are met:
@@ -71,14 +71,14 @@ Since January 1, 2023, Snyk has not supported govendor Projects. As a general se
 Since Snyk no longer supports scanning of govendor Projects, a warning is issued and no results are provided.
 {% endhint %}
 
-### Go Modules and dep support
+### Support for Go Modules
 
 {% hint style="info" %}
 **Feature availability**\
-Some features may not be available, depending on your plan. For more information, see [Plans and pricing.](https://snyk.io/plans/)
+Some features may not be available, depending on your plan. For more information, visit [Plans and pricing.](https://snyk.io/plans/)
 {% endhint %}
 
-#### **Go Modules and the CLI**
+#### CLI support for Go Modules
 
 Snyk scans Go Modules Projects in the CLI at the package level rather than the module level, as Snyk has full access to your local source code.
 
@@ -100,31 +100,22 @@ When you test Go Modules Projects using the CLI, Snyk does not require that thei
 
 Different versions of Go generate different results for the `go list -json -deps` command. This can affect the dependency tree and the vulnerabilities that the Snyk CLI finds.
 
-#### **Dep and the CLI**
+#### SCM integrations for Go Modules
 
-To build the dependency tree, Snyk analyzes your `Gopkg.lock` files.
+The source code management (SCM) integration resolves dependencies using one of two scopes, depending on your configuration:
 
-When you test dep Projects using the CLI, Snyk requires installation of dependencies. Run `dep ensure` to achieve this.
+* Standard SCM scan (default): resolves dependencies at the module level. Snyk parses the `go.mod` file using the `go mod graph` command, which maps the entire dependency tree regardless of whether the application code imports specific packages.
+* Full source code analysis scan: resolves dependencies at the package level. When you enable this feature, Snyk clones the repository and runs the `go list -json -deps ./...` command. This forces the SCM integration to analyze active package imports and generate a dependency tree that aligns with the package-level baseline.
 
-#### **Dep and SCM integrations**
+Because the default SCM integration evaluates the entire module graph using the `go mod graph` command, it reports a higher number of dependencies and vulnerabilities than the package-level baseline. This introduces vulnerabilities from unused or unimported packages within a module, resulting in findings that do not affect the compiled binary.
 
-To build the dependency tree, Snyk analyzes the `Gopkg.lock` files in your SCM repository.
-
-#### **Go Modules and SCM integrations**
-
-Snyk resolves dependencies for Go Modules Projects imported using an SCM integration at the module level. In contrast, the CLI resolves dependencies at the package level.
-
-Because of this difference, SCM integrations report more dependencies and issues than the CLI, including false positives.
-
-To obtain the best possible resolution, enable [full source code analysis](go.md#enable-full-source-code-analysis).
-
-When full source code analysis is enabled, Snyk uses the `go list -json -deps ./...` command to build the dependency tree the same way the CLI test does. Otherwise, it uses `go mod graph` .
+Enabling full source code analysis aligns the SCM integration with CLI resolution and eliminates findings from unimported code.
 
 #### Enable full source code analysis
 
-To build the most accurate dependency tree for Go Modules Projects imported from SCM integrations, Snyk needs to access all the files in your repository.
+To build the most accurate dependency tree for Go modules Projects imported from SCM integrations, Snyk must access all files in your repository.
 
-This enables Snyk to see the `import` statements in your `.go` source files, and determine which specific packages are used in your application. Without this access, Snyk includes all packages from the modules listed in your `go.mod` file.
+This allows Snyk to see the import statements in your `.go` source files and determine which specific packages your application uses. Without this access, Snyk includes all packages from the modules listed in your `go.mod` file.
 
 To enable full source code analysis, adjust your settings as follows:
 
@@ -135,30 +126,52 @@ To enable full source code analysis, adjust your settings as follows:
 
 <figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption><p>Enable full source code analysis</p></figcaption></figure>
 
-For more details on levels of access to your repository required by different Snyk features, see [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-snyk-handles-your-data).
+For more details on levels of access to your repository required by different Snyk features, see [How Snyk handles your data](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).
 
-#### **Private modules**
+**Private modules**
 
-Go modules Projects that rely on modules from private SCM repositories are supported if those repositories are in the same SCM organization as the main project repository.
+Snyk supports Go modules Projects that rely on modules from private SCM repositories if those repositories are in the same SCM organization as the main Project repository.
 
-If you have private modules in repositories from other SCM organizations, it is possible that your Project imports do not work properly. The same is true if your code uses SCM submodules from another organization.
-
-If your private modules have other private modules from another SCM organization, your Project imports do not work. All private modules, including the ones within other modules, need to be part of the same SCM organization as the main project repository.
-
-Private module support in different SCMs varies depending on whether full source code analysis is enabled or disabled.
+Private module support for different SCMs varies based on whether you enable or disable full source code analysis.
 
 | Full source code analysis enabled                                                                                                      | Full source code analysis disabled                                         |
 | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | <ul><li>Azure Repos</li><li>Bitbucket Cloud</li><li>Bitbucket Server</li><li>GitHub</li><li>GitLab</li><li>GitHub Enterprise</li></ul> | <ul><li>Bitbucket Cloud</li><li>GitHub</li><li>GitHub Enterprise</li></ul> |
 
-#### **Snyk Broker support for Go**
+**Private and Brokered package sources**
 
-{% hint style="warning" %}
-To use Snyk Broker with Go, you must disable [full source code analysis](go.md#enable-full-source-code-analysis).
-{% endhint %}
+To give Snyk access to privately hosted Go modules, configure your private module sources in **Settings > Open Source > Go**. Configure them under one of the following:
 
-Go Modules Projects imported using new [Snyk Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/) clients should work as expected.
+* Brokered package sources: for Universal Broker connections that have been enabled for Open Source.
+* Private package registries: for direct access.
 
-To add support to clients created before December 30, 2020, add `go.mod` and `go.sum` to your `accept.json` file, as per the changes in this [pull request](https://github.com/snyk/broker/pull/299/files).
+#### Source requirements and routing
 
-If you are using private Go Modules integrated through the Broker, each private module must have a `go.mod` file defined.
+Snyk handles configuration requirements differently based on the source type and how Snyk accesses it.
+
+For package registries or proxies (Artifactory, Nexus), Snyk always requires an explicit registry URL for both brokered and non-brokered setups. Snyk appends the URL to the `GOPROXY` chain so Go can resolve and fetch packages from your private registry. For example: `https://artifactory.example.com/artifactory/api/go/team-go`
+
+For source control private dependencies, (GitHub and GitHub Enterprise, Bitbucket, GitLab, Azure Repos):
+
+* Snyk only requires an explicit URL if you use a brokered connection. For non-brokered setups, Snyk relies natively on your existing SCM Organization permissions, and you do not need to configure a URL here.
+* When you provide a URL for a brokered SCM, Snyk adds the host to `GONOSUMDB` so Go correctly tunnels traffic and skips the public checksum database. For example: `https://github.snyk-customer.com/owner/internal-shared-lib`&#x20;
+
+#### Configuration rules
+
+The **Registry type** or **Source type** dropdowns only display options that have an active integration configured in your Organization and valid Universal Broker connections to SCM and package registries. The SCM integration must have permission to access the repositories containing the private Go modules.
+
+Do not include credentials or authentication tokens within the URLs. You must configure credentials directly on the underlying SCM integration or the Universal Broker Client.
+
+You can also view and configure these settings programmatically using the Snyk API, for both [brokered](https://apidocs.snyk.io/?version=2026-03-25#get-/orgs/-org_id-/settings/opensource/-ecosystem-/broker) and [direct](https://apidocs.snyk.io/?version=2026-03-25#get-/orgs/-org_id-/settings/opensource/-ecosystem-/private-registries) connections.
+
+### Support for dep
+
+#### CLI support for dep
+
+To build the dependency tree, Snyk analyzes your `Gopkg.lock` files.
+
+When you test dep Projects using the CLI, Snyk requires installation of dependencies. Run `dep ensure` to achieve this.
+
+#### SCM integrations for dep&#x20;
+
+To build the dependency tree, Snyk analyzes the `Gopkg.lock` files in your SCM repository.

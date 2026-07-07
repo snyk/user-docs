@@ -24,11 +24,11 @@ The process of measuring an AI system’s performance, quality, and safety again
 
 ### Agentic
 
-The ability of an AI system to plan, reason, and act independently toward a goal without explicit human instruction. Following multiple instructions, it can determine next steps by itself, without direction.
+The ability of an AI system to plan, reason, and act independently toward a goal without explicit human instruction. Following multiple instructions, it can determine the next steps by itself, without direction.
 
 ### AI observability
 
-The ability to monitor and trace the internal behavior, performance, and decision-making processes of AI systems in real time. It’s critical for traceability especially in the context of complex, distributed, or agentic systems.
+The ability to monitor and trace the internal behavior, performance, and decision-making processes of AI systems in real time. It’s critical for traceability, especially in the context of complex, distributed, or agentic systems.
 
 ### AI orchestration
 
@@ -154,7 +154,7 @@ Dynamic Application Security Testing. A security analysis technique that tests a
 
 ### Directive
 
-A directive is a rule (also known as a command, instruction, and more) which guides an AI agent to produce code in the specified method. Snyk offers code examples for different directive types to implement in your organisation and potentially distribute company wide if you operate in an enterprise model. This is used in context with Snyk Studio. To learn more, visit [Directives](../../integrations/snyk-studio-agentic-integrations/directives.md).
+A directive is a rule (also known as a command, instruction, and more) that guides an AI agent to produce code in the specified method. Snyk offers code examples for different directive types to implement in your organization and potentially distribute company-wide if you operate in an enterprise model. This is used in context with Snyk Studio. To learn more, visit [Directives](../../integrations/snyk-studio-agentic-integrations/directives.md).
 
 ### Dependency
 
@@ -169,15 +169,15 @@ Also known as Dependency path. A hierarchical graph showing the dependencies of 
 
 ### Development context
 
-Information and requirements surrounding the development of applications within an organization, such as ownership, development tools, environments, teams, workflows, and processes.
+Application development information and requirements in an Organization include ownership, development tools, environments, teams, workflows, and processes.
 
 ### DevOps
 
-A set of cultural philosophies, practices, and tools that combines software development and IT operations to shorten the systems development lifecycle.
+A set of cultural philosophies, practices, and tools that combine software development and IT operations to shorten the systems development lifecycle.
 
 ### DevSecOps
 
-The integration of security into emerging agile IT and DevOps development as seamlessly and as transparently as possible.
+Integrate security seamlessly and transparently into emerging agile IT and DevOps development.
 
 ### Docker
 
@@ -227,7 +227,7 @@ In Snyk, a Group is the top-level entity used to manage multiple Organizations, 
 
 ### Guardrail directive
 
-A Guardrail directive is a type of [Directive](glossary.md#directive) that is automatically injected into AI agent interactions to govern AI agent behaviour. For more information, visit [Guardrail directives](../../integrations/snyk-studio-agentic-integrations/directives.md#guardrail-directives).
+A Guardrail directive is a type of [Directive](glossary.md#directive) that is automatically injected into AI agent interactions to govern AI agent behavior. For more information, visit [Guardrail directives](../../integrations/snyk-studio-agentic-integrations/directives.md#guardrail-directives).
 
 ## H
 
@@ -271,7 +271,7 @@ A license problem, vulnerability, or misconfiguration identified and listed by S
 
 ### Issue (Snyk **Essentials**)
 
-An issue is a security problem identified by a Snyk security product when testing an asset, that AppSec teams need to remediate.
+An issue is a security problem identified by a Snyk security product when testing an asset that AppSec teams need to remediate.
 
 ### Issues prioritization (Snyk **Essentials**)
 
@@ -279,7 +279,7 @@ Provides a centralized view of all the issues identified by Snyk with additional
 
 ### Issue context (Snyk **Essentials**)
 
-Information surrounding a particular security issue that serves as objective risk factors such as issue severity level, availability of a fix, exploit maturity.
+Information surrounding a particular security issue that serves as objective risk factors, such as issue severity level, availability of a fix, and exploit maturity.
 
 ## K
 
@@ -327,7 +327,7 @@ Natural Language Processing.The technology that enables computers to understand,
 
 ### NPX
 
-`npx` (Node Package Execute) is a command-line tool bundled with `npm` that allows you to run `Node.js` packages wihout requiring install.
+`npx` (Node Package Execute) is a command-line tool bundled with `npm` that allows you to run `Node.js` packages without requiring installation.
 
 ## O
 
@@ -371,7 +371,7 @@ A Personal Access Token (PAT) is a unique string used as an alternative to a pas
 
 ### Pinnable
 
-A fix type. Define and "pin" a specific version of an indirect dependency, to avoid a direct dependency pulling in a vulnerable version.
+A fix type. Define and "pin" a specific version of an indirect dependency to avoid a direct dependency pulling in a vulnerable version.
 
 ### Policy
 
@@ -379,11 +379,11 @@ See [license policy](glossary.md#license-policy), [security policy](glossary.md#
 
 ### **Policy (Snyk Essentials)**
 
-A way to automate actions in certain conditions, like classifying and tagging assets with business context. You can also use a policy to configure actions like sending a message or setting the coverage gap control using a Policy builder UI.
+A way to automate actions in certain conditions, like classifying and tagging assets with business context. You can also use a policy to configure actions, such as sending a message or setting the coverage gap control, using a Policy builder UI.
 
 ### PR
 
-Pull Request. Allows a user to exchange changes made to source code and collaborate with others on the same branch.
+Pull Request. Allows a user to exchange changes made to the source code and collaborate with others on the same branch.
 
 ### PR Checks
 
@@ -421,7 +421,7 @@ A storage area that contains all elements necessary for the distribution of an a
 
 ### Repository assets (Snyk **Essentials**)
 
-A repository asset is created by discovering the repositories directly in the SCM, when such integration is configured. Alternatively, a repository asset can be created by scanning a repository, (by Snyk or third-party tools) as long as the scanned code is identified with a specific repository.
+A repository asset is created by discovering the repositories directly in the SCM when such integration is configured. Alternatively, a repository asset can be created by scanning a repository (by Snyk or third-party tools) as long as the scanned code is identified with a specific repository.
 
 ### Resource
 
@@ -487,11 +487,11 @@ A severity level is applied to a vulnerability or a license issue, to indicate t
 
 ### Skill (Snyk Studio)
 
-Skills are packaged instructions (containing specialised procedures and knowledge) loaded on demand to guide agent actions. They can be triggered by [Hooks](glossary.md#hook-snyk-studio).
+Skills are packaged instructions (containing specialized procedures and knowledge) loaded on demand to guide agent actions. They can be triggered by [Hooks](glossary.md#hook-snyk-studio).
 
 ### Snapshot
 
-An individual report within the test history of a Project. Includes a tree of dependencies and a list of vulnerabilities that was accurate at the time the test was conducted.
+An individual report within the test history of a Project. Includes a tree of dependencies and a list of vulnerabilities that were accurate at the time the test was conducted.
 
 ### `.snyk` policy
 
@@ -539,7 +539,7 @@ An interactive education platform that provides developers with bite-sized lesso
 
 ### Snyk MCP Server
 
-A MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI. For more information, visit [Agentic security with Snyk Studio](../../integrations/snyk-studio-agentic-integrations/).
+An MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI. For more information, visit [Agentic security with Snyk Studio](../../integrations/snyk-studio-agentic-integrations/).
 
 ### Snyk Open Source
 
@@ -580,7 +580,7 @@ An authentication method that allows users to access multiple, independent softw
 
 ### Static Code Analysis
 
-A technique for examining source code to identify issues related to code quality, structure, or performance, such as determining code reachability or spotting potential inefficiencies. While this technique may touch on security concerns, its primary focus is often broader, covering various aspects of code health. In contrast, Static Application Security Testing ([SAST](glossary.md#sast)) specifically targets the identification of security vulnerabilities within the code, such as coding flaws that could lead to security risks.
+A technique for examining source code to identify issues related to code quality, structure, or performance, such as determining code reachability or spotting potential inefficiencies. While this technique may address security concerns, its primary focus is often broader, covering various aspects of code health. In contrast, Static Application Security Testing ([SAST](glossary.md#sast)) specifically targets the identification of security vulnerabilities within the code, such as coding flaws that could lead to security risks.
 
 ## T
 
@@ -590,7 +590,7 @@ Representation of an external resource Snyk has scanned. All [Snyk Projects](glo
 
 ### **Tags (Snyk Essentials)**
 
-A way to categorize assets. Helps you recognize or handle assets differently according to mutual properties. Assets can be filtered by their tags in the inventory or when creating policy rules. A tag can be automatically assigned to an asset, or the asset can be tagged by a policy you created. GitHub and GitLab topics are treated as asset tags and you can use them for creating policies.
+A way to categorize assets. Helps you recognize or handle assets differently according to mutual properties. Assets can be filtered by their tags in the inventory or when creating policy rules. A tag can be automatically assigned to an asset, or the asset can be tagged by a policy you created. GitHub and GitLab topics are treated as asset tags, and you can use them for creating policies.
 
 ### Tenant
 

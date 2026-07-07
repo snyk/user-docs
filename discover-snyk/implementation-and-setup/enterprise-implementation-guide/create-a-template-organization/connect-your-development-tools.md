@@ -34,7 +34,7 @@ Group level repository discovery video guide
 
 {% stepper %}
 {% step %}
-#### Select your SCM platform
+**Select your SCM platform**
 
 {% hint style="success" %}
 **Key decision:** Choose the SCM platform that hosts your primary development work and determine if you require **Snyk Broker** for an on-premise connection.
@@ -47,7 +47,7 @@ If your SCM is behind a firewall, you must install and configure Snyk Broker to 
 {% endstep %}
 
 {% step %}
-#### Authenticate the integration
+**Authenticate the integration**
 
 {% hint style="success" %}
 **Key decision:** Determine which service account or administrative user will provide the initial OAuth or Personal Access Token (PAT) to ensure the connection remains stable.
@@ -59,7 +59,7 @@ If your SCM is behind a firewall, you must install and configure Snyk Broker to 
 {% endstep %}
 
 {% step %}
-#### Align with your Organization structure
+**Align with your Organization structure**
 
 {% hint style="success" %}
 **Key decision:** Decide if you will use a single Group-level integration or if specific Organizations require separate credentials based on your established hierarchy.
@@ -84,7 +84,7 @@ Your integration approach should match the structure you selected during the pla
 Configure SCM integrations at the Organization level to establish granular connections for specific teams, products, or business units. While Group-level integrations provide a global baseline, Organization-level settings allow for isolated credentials and team-specific automation.
 
 {% hint style="info" %}
-If you are using multiple SCMs, Snyk recommends using separate Organizations for separate SCM integrations.
+If you are using multiple SCMs, Snyk recommends using separate Organizations for each SCM integration.
 {% endhint %}
 
 {% stepper %}
@@ -100,7 +100,7 @@ Unlike Group-level setup, Organization-level integrations allow you to:
 * **Isolate access:** Use a unique Personal Access Token (PAT) or OAuth connection that only has access to a specific team's repositories.
 * **Override Group defaults:** If a specific business unit uses a different SCM instance (for example, a separate GitHub Org or GitLab Group), you can configure it here without affecting the rest of the company.
 
-Set up your Org-level integrations by navigating in your Organization to the **Integrations** page and selecting the relevant SCM tile.
+Set up your Org-level integrations by navigating to your Organization **Integrations** page and selecting the relevant SCM tile.
 {% endstep %}
 
 {% step %}
@@ -146,7 +146,7 @@ Integrate Snyk with your container registries to import and monitor images for k
 
 {% stepper %}
 {% step %}
-### Select your registry provider
+#### Select your registry provider
 
 {% hint style="success" %}
 **Key decision:** Identify which container registries (for example, Docker Hub, Amazon ECR, Google Artifact Registry) host your production-ready images and determine if they reside behind a firewall.
@@ -159,7 +159,7 @@ If your registry is on-premise or behind a firewall, you must use Snyk Broker to
 {% endstep %}
 
 {% step %}
-### Authenticate and authorize
+#### Authenticate and authorize
 
 {% hint style="success" %}
 **Key decision:** Use a dedicated service account with read-only permissions to the registry to maintain a stable connection and follow the principle of least privilege.
@@ -174,7 +174,7 @@ For Amazon ECR, Snyk recommends using Cross-Account Role authentication for enha
 {% endstep %}
 
 {% step %}
-### Configure scan frequency and visibility
+#### Configure scan frequency and visibility
 
 {% hint style="success" %}
 **Key decision:** Decide on a monitoring frequency that balances security visibility with your team's remediation capacity.
@@ -217,7 +217,7 @@ Configure additional integrations to build a complete inventory of your code-bas
 
 {% stepper %}
 {% step %}
-### Access the inventory
+#### Access the inventory
 
 {% hint style="success" %}
 **Key decision**: Determine if you have the necessary Group Administrator or **Edit Essentials** permissions to manage the global asset inventory.
@@ -231,7 +231,7 @@ To start building your inventory:
 {% endstep %}
 
 {% step %}
-### Configure SCM integrations for asset discovery
+#### Configure SCM integrations for asset discovery
 
 {% hint style="success" %}
 **Key decision**: Decide whether to use a broad-access service account token to ensure Snyk can discover all repositories across your development teams.
@@ -245,7 +245,7 @@ This configuration is specific to asset management and is separate from the Orga
 {% endstep %}
 
 {% step %}
-### Define application context and tags
+#### Define application context and tags
 
 {% hint style="success" %}
 **Key decision**: Choose which metadata (tags) and application structures are most critical for your risk assessment and reporting.
@@ -275,12 +275,12 @@ Bitbucket users must add language tags manually.
 Snyk Universal Broker improves the management of Broker deployments by supporting multiple connections of any type with a single running client (or replica group). Credentials remain in your network and are securely referenced without being transmitted to Snyk. Use Universal Broker to enable Snyk to scan repositories, container registries, or other assets hosted behind your firewall without exposing your internal network.
 
 {% hint style="info" %}
-If you prefer to use helm charts for Broker configuration or are configuring a CR agent, Snyk recommends you use [Classic Broker](../../enterprise-setup/snyk-broker/classic-broker/).
+If you prefer to use helm charts for Broker configuration or are configuring a CR agent, Snyk recommends you use [Classic Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/classic-broker).
 {% endhint %}
 
 {% stepper %}
 {% step %}
-### Determine deployment requirements
+#### Determine deployment requirements
 
 {% hint style="success" %}
 **Key decision**: Determine your redundancy strategy. While a single Universal Broker instance can manage multiple integrations, Snyk recommends configuring at least two replicas of the client for high availability.
@@ -294,7 +294,7 @@ Before installation, verify your environment:
 {% endstep %}
 
 {% step %}
-### Configure the Universal Broker connection
+#### Configure the Universal Broker connection
 
 {% hint style="success" %}
 **Key decision**: Choose whether to link the Broker token to the Group level for broad asset discovery or to a specific Organization for isolated team access. Universal Broker uses a CLI tool to dynamically configure connections rather than generating a static Broker token in the UI.
@@ -311,13 +311,13 @@ If you are setting up Snyk Essentials for asset management with over 1,000 repos
 {% endstep %}
 
 {% step %}
-### Deploy the Broker instance
+#### Deploy the Broker instance
 
 {% hint style="success" %}
 **Key decision**: Decide on the deployment method (Docker or Kubernetes) that best fits your internal DevOps standards.
 {% endhint %}
 
-#### Docker deployment
+**Docker deployment**
 
 Run the Docker command using the unified `snyk/broker:universal` image and your specific environment variables:
 
@@ -332,7 +332,7 @@ docker run --restart always \
   snyk/broker:universal
 ```
 
-#### Kubernetes deployment
+**Kubernetes deployment**
 
 Deploy using the official Snyk Universal Broker Helm chart. Ensure your secrets are stored securely as Kubernetes secrets.
 
@@ -347,7 +347,7 @@ helm pull oci://registry-1.docker.io/snyk/snyk-universal-broker helm install my-
 {% endstep %}
 
 {% step %}
-### Verify the connection
+#### Verify the connection
 
 {% hint style="success" %}
 **Key decision**: Determine if you need to configure additional environment variables for a proxy server (`HTTPS_PROXY`) or a custom certificate authority (`NODE_EXTRA_CA_CERTS`) to establish the connection out to Snyk.
@@ -376,7 +376,7 @@ Enable Snyk Code to activate static application security testing (SAST) for your
 
 {% stepper %}
 {% step %}
-### Verify Snyk Code availability
+#### Verify Snyk Code availability
 
 {% hint style="success" %}
 **Key decision**: Determine if Snyk Code should be enabled globally for all Organizations or phased in for specific high-priority development teams.
@@ -386,7 +386,7 @@ Before enabling Snyk Code, ensure your Snyk license includes SAST capabilities. 
 {% endstep %}
 
 {% step %}
-### Enable Snyk Code in Settings
+#### Enable Snyk Code in Settings
 
 {% hint style="success" %}
 **Key decision**: You must enable Snyk Code before importing your first Projects to ensure Snyk performs a code analysis scan during the initial onboarding.
@@ -400,7 +400,7 @@ Snyk Code is disabled by default in new Organizations. If you enable it after yo
 {% endstep %}
 
 {% step %}
-### (Optional) Enable Snyk Code at scale using the API
+#### (Optional) Enable Snyk Code at scale using the API
 
 {% hint style="success" %}
 **Key decision**: If you are managing dozens or hundreds of Organizations, use the Snyk API to enable Snyk Code programmatically rather than using the web UI.
@@ -413,7 +413,7 @@ To enable Snyk Code for multiple Organizations:
 {% endstep %}
 
 {% step %}
-### Align with your import strategy
+#### Align with your import strategy
 
 {% hint style="success" %}
 **Key decision**: Choose the import method that provides the best resolution for your specific programming languages.

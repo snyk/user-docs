@@ -43,7 +43,7 @@ Describes the main attributes of the issue.
 The vulnerability details refer to various issue attributes that are being defined by Snyk, Mitre, NVD, or any other trusted security organization.
 
 * **ATTACK VECTOR -** Represents the context by which vulnerability exploitation is possible. For more details about the attack vector and its values (Network, Adjacent, Local, Physical), see the [specification document](https://www.first.org/cvss/specification-document).
-* **CISA KEV -** Indicates whether the CVE is included in CISA's catalog of known exploited vulnerabilities.&#x20;
+* **CISA KEV -** Indicates whether the CVE is included in CISA's catalog of known exploited vulnerabilities.
 * **CVE** - Mitre CVE ID
 * **CWE** - Mitre CWE ID
 * **EPSS SCORE** - The probability of exploitation in the wild in the next 30 days.
@@ -84,7 +84,7 @@ The context columns help you understand the impact and risk for an issue based o
 * **PROJECT OWNER** - A user who is defined as the owner of the Project.
 * **PROJECT TAGS** - Tags that are associated with the Project. For details, see [Project tags](../../../snyk-platform-administration/snyk-projects/project-tags.md).
 * **PROJECT TARGET** - The Target name.
-* **PROJECT TARGET REFERENCE** - Specify a reference that differentiates this Project, for example, a branch name or version. For details, see [Group Projects by branch or version for monitoring](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring).
+* **PROJECT TARGET REFERENCE** - Specify a reference that differentiates this Project, for example, a branch name or version. For details, see [Group Projects by branch or version for monitoring](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring).
 * **PROJECT TYPE** - The package manager of the Project.
 
 ### Asset context
@@ -108,7 +108,7 @@ When filtering issues by assets context, issues of archived assets will be exclu
 
 ### Application context
 
-Navigate to the [Application context for SCM integrations](../../../developer-tools/scm-integrations/application-context-for-scm-integrations/) page for more details about enriching the application context data.
+Navigate to the [Application context for SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/application-context-for-scm-integrations) page for more details about enriching the application context data.
 
 {% hint style="info" %}
 When filtering issues by application context, issues of archived assets will be excluded from the results

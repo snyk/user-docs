@@ -3,6 +3,7 @@
 The Prevention reports section includes the following reports:
 
 * [Developer IDE and CLI usage](prevention-reports.md#developer-ide-and-cli-usage-report) report
+* [Prevention](prevention-reports.md#prevention-report) report
 * [Pull request checks usage & performance](prevention-reports.md#pull-request-checks-usage-and-performance-report) report
 * [Repositories tested in CI/CD](prevention-reports.md#repositories-tested-in-ci-cd-report) report
 * [Snyk Generated Pull Requests](prevention-reports.md#snyk-generated-pull-requests-report) report
@@ -48,7 +49,63 @@ This report shows the test usage in the IDE, CLI, and Snyk Studio by developers.
 
 * List of organizations and developers adopting Snyk locally
 
-<figure><img src="../../../.gitbook/assets/ide usage by developer.png" alt="List of Organizations where Snyk was adopted locally "><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ide usage by developer.png" alt="List of Organizations where Snyk was adopted locally"><figcaption></figcaption></figure>
+
+## Prevention report
+
+{% hint style="info" %}
+Release status
+
+The Prevention report is in Early Access and is available only for Enterprise plans.&#x20;
+{% endhint %}
+
+The Prevention report measures the effectiveness of security adoption in the development lifecycle. This report tracks vulnerabilities remediated at the point of creation for Snyk Code before they ever reach a pull request or production environment, when using Snyk Studio (MCP), a Snyk IDE plugin or extension, or the Snyk CLI.
+
+The following prerequisites and data limits apply:
+
+* Snyk Code (SAST) and Secrets are the only scanners supported
+* The report can be viewed at the Tenant, Group, or Org level.
+* To generate data in this report, you must:
+  * Enable the [Code Consistent Ignores](../../prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/) feature
+  * Use a compatible IDE plugin version:
+    * [Visual Studio Code v2.29.0](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner\&ssr=false#version-history) or later
+    * [JetBrains v2.20.0](https://plugins.jetbrains.com/plugin/10972-snyk-security/versions/stable) or later
+    * [Eclipse v3.8.0](https://marketplace.eclipse.org/content/snyk-security) or later
+    * [Visual Studio v2.8.0](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs-2022) or later
+  * Use CLI version [1.1303.0](https://docs.snyk.io/developer-tools/snyk-ide-plugins-and-extensions/compatibility-matrix) or later
+* Data is available for the following developer surfaces:
+  * Snyk Studio (MCP)
+  * IDE
+  * CLI
+* SARIF files greater than 500 KB will not be included in the report’s results.
+
+With this report, you get visibility into:
+
+* Total fixes and trend rate
+* Mean fix rate and trend rate
+  * The average number of fixes/findings for the selected scope (tenant, group, org)
+* Developer surface fixes
+  * How many fixes are made at each developer surface (Studio, IDE, CLI, PR Check)
+* Fix trends
+  * Fixes over time - Raw count on a month-over-month basis. This is displayed as a bar chart.
+  * Fix rate over time - Fixes/findings on a month-over-month basis. This is overlaid as a line graph.
+* Fix breakdown by table:
+  * Groups
+  * Organizations
+  * Repositories
+  * Vulnerabilities
+  * Developer
+
+A fix is generated when these conditions are met:
+
+* You scan a branch, using Snyk Studio, a Snyk IDE plugin or extension, or the Snyk CLI.
+* A security flaw, or finding, is detected.
+* The finding is remediated or removed from the branch.
+* A subsequent test indicates the finding is no longer on that branch.
+
+Severity overrides are applied, and custom severities are reflected in the report.
+
+Fixes and the fix rate can diverge. For example, if a developer or team gets numerous security findings that they do not fix, the fix rate may be lower than the total fixes. If a developer opens 5 branches, finds 5 issues, and fixes one of them, the fix rate is 20% and the total fixes are 1.
 
 ## Pull request checks usage & performance report
 
@@ -58,7 +115,7 @@ This report shows the test usage in the IDE, CLI, and Snyk Studio by developers.
 Snyk Pull request checks usage & performance report is in Generally Availability for Enterprise plan customers. For more information, visit [Plans and pricing](https://snyk.io/plans/).
 {% endhint %}
 
-This report enables you to track and analyze the results and adoption of Snyk pull request checks.&#x20;
+This report enables you to track and analyze the results and adoption of Snyk pull request checks.
 
 By monitoring trends in successful, failed, and errored PR checks, AppSec teams can detect and investigate spikes in failures and identify source and target configurations that need attention. Comparing current adoption against a previous period also surfaces whether coverage is improving or regressing over time while identifying the coverage gaps that need to be addressed.
 
@@ -86,7 +143,7 @@ This section focuses on pull request outcomes and how broadly PR scanning is ena
 
 #### PR scanning by
 
-Viewing the **Last Commit** data when viewing by repository requires [SCM Group integration](../../../developer-tools/scm-integrations/group-level-integrations/).
+Viewing the **Last Commit** data when viewing by repository requires [SCM Group integration](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations).
 
 PR check enablement for all targets and projects imported through an integration is determined by the settings for that integration unless those settings are overridden at the project-level. A repository is considered enabled for PR checks for a specific Snyk product if at least one organization importing that repository has PR Checks enabled for all projects associated with that product type for at least one integration.
 
@@ -102,7 +159,7 @@ Repository status will be "N/A" under the repository view when a repository is n
 
 #### PR scanning performance by
 
-The **% PRs With Failed Checks** indicates how often Snyk detected a vulnerability that violated the policy set under your PR check settings for at least one of the checks for that PR. This can help you understand the value in running these scans before your code is already merged for specific organizations and repositories.&#x20;
+The **% PRs With Failed Checks** indicates how often Snyk detected a vulnerability that violated the policy set under your PR check settings for at least one of the checks for that PR. This can help you understand the value in running these scans before your code is already merged for specific organizations and repositories.
 
 <figure><img src="../../../.gitbook/assets/image (290).png" alt=""><figcaption></figcaption></figure>
 
@@ -145,7 +202,7 @@ Compare these lines to determine if CI/CD testing adoption is increasing and to 
 You can filter by specific products or by specific organizations or extend the viewed period using the date range filter.
 
 {% hint style="info" %}
-You must configure SCM Group integration to view the last commit data. For more information, see [SCM integrations](../../../developer-tools/scm-integrations/group-level-integrations/).
+You must configure SCM Group integration to view the last commit data. For more information, see [SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations).
 {% endhint %}
 
 #### Test Success Rate Trend <a href="#test-success-rate-trend" id="test-success-rate-trend"></a>
@@ -155,7 +212,7 @@ The test success rate indicates how well your engineering department or specific
 A low success rate can indicate the following:
 
 * Snyk tests fail due to security issues you can prevent in local development or pull request checks. Snyk recommends you test with the Snyk IDE plugin, use Snyk PR Checks, and enroll in a Snyk Learn program.
-* The test success criteria are too strict. Review the test definitions for organizations with the lowest success rates in the **Adoption by Organizations** widget. For more information about defining test success criteria, see [Failing of builds in Snyk CLI](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli).
+* The test success criteria are too strict. Review the test definitions for organizations with the lowest success rates in the **Adoption by Organizations** widget. For more information about defining test success criteria, see [Failing of builds in Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli).
 
 #### Adoption by Organizations <a href="#adoption-by-organizations" id="adoption-by-organizations"></a>
 
@@ -176,7 +233,7 @@ The **Repository test summary** table displays the tests performed during the se
 By default, the table sorts repositories by their last commit. This helps you identify repositories expected to undergo CI/CD testing and verify Snyk tested them. Click a column name to sort the table by that column. You can sort by multiple columns simultaneously.
 
 {% hint style="info" %}
-You must configure SCM Group integration to view the last commit data. For more information, see [Group-level integrations](../../../developer-tools/scm-integrations/group-level-integrations/).
+You must configure SCM Group integration to view the last commit data. For more information, see [Group-level integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations).
 {% endhint %}
 
 You can execute tests on a specific repository branch from the table. The **TESTED** indicator shows that Snyk tested at least one branch of this repository during the selected date range. Hover over the **TESTED** tag to view the last test performed during the selected date range.

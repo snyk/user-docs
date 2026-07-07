@@ -12,7 +12,7 @@ env:
   COMMIT_MESSAGE: 'fix: synchronize Error Catalog documentation'
   ERROR_CATALOG_LOCATION: 'error-catalog'
   ERROR_CATALOG_DOCS_FILE_LOCAL: 'error-catalog/packages/error-catalog-docs/docs/README.md'
-  ERROR_CATALOG_DOCS_FILE_REMOTE: 'docs/scan-with-snyk/error-catalog.md'
+  ERROR_CATALOG_DOCS_FILE_REMOTE: 'scan-fix-and-prevent/scan-with-snyk/error-catalog.md'
 
 jobs:
   synchronize-variants:

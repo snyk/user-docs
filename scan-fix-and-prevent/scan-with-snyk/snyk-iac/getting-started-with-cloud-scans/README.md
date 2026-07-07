@@ -2,13 +2,13 @@
 
 Use Snyk IaC cloud scans to find, view, and fix issues in deployed cloud resource configurations for AWS, Azure, and Google Cloud.
 
-This page explains using cloud scans in the Snyk Web UI. For information about using cloud scans with the Snyk CLI, see [Test your IaC files](../../../developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/test-your-iac-files/).
+This page explains using cloud scans in the Snyk Web UI. For information about using cloud scans with the Snyk CLI, see [Test your IaC files](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/test-your-iac-files).
 
 ## Prerequisites for cloud scans
 
 To start using cloud scans you must have the following:
 
-* A Snyk account. For details, see [Getting started](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started#create-or-log-in-to-a-snyk-account).
+* A Snyk account. For details, see [Getting started](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#create-or-log-in-to-a-snyk-account).
 * Snyk IaC on the enterprise plan.
 * An existing Terraform, CloudFormation, or Azure Resource Manager environment to work in, or deployed AWS, Azure, or Google Cloud account to onboard.
 
@@ -16,7 +16,7 @@ To start using cloud scans you must have the following:
 
 Navigate to your **Organization** **Settings** > **Cloud environments**.
 
-To add a cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../cloud-platform-integrations/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../cloud-platform-integrations/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../cloud-platform-integrations/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment.&#x20;
+To add a cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [AWS Integration: Web UI](../cloud-platform-integrations/aws-integration/aws-integration-web-ui/), [Google Cloud Integration: Web UI](../cloud-platform-integrations/google-cloud-integration/google-cloud-integration-web-ui/), or [Azure Integration: Web UI](../cloud-platform-integrations/azure-integration-for-cloud-configurations/azure-integration-web-ui/) to create the environment.
 
 You can also add an environment using the Snyk API:
 

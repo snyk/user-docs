@@ -106,7 +106,7 @@ Pre-defined roles cannot be deleted from your Group.
 ### Assign roles to users
 
 {% hint style="info" %}
-You can use the API to update the role assigned to a user in an Organization. For details, see the endpoint [Update a member's role in the organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members-update-userid).
+You can use the API to update the role assigned to a user in an Organization. For details, see the endpoint [Update a member's role in the organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members-update-userid).
 {% endhint %}
 
 Users with **Role management** permissions can assign roles to users across all Organizations in the Group.
@@ -134,7 +134,7 @@ Snyk prevents users from assigning roles to others with more privileges than tho
 
 {% hint style="info" %}
 **Feature availability**\
-Service accounts are available only with Enterprise plans. Free and Team users have access to [personal tokens](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/authenticate-to-use-the-cli) only. Personal tokens are recommended for use with IDEs and the local CLI.
+Service accounts are available only with Enterprise plans. Free and Team users have access to [personal tokens](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) only. Personal tokens are recommended for use with IDEs and the local CLI.
 
 For more information, see [plans and pricing](https://snyk.io/plans/).
 {% endhint %}
@@ -152,7 +152,7 @@ Follow these steps to change the role of a Group or Organization user:
 3. Find the member to update.
 4. Update the role for that member using the dropdown next to the user.
 
-Alternatively, use the endpoints [Update a member in the organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members-userid) and [Remove a member from the organization](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members-userid-1) to update the role of members in your Organization. This API call does not support updating the role of Group Members.
+Alternatively, use the endpoints [Update a member in the organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members-userid) and [Remove a member from the organization](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-members-userid-1) to update the role of members in your Organization. This API call does not support updating the role of Group Members.
 
 If the user is not already a part of your Group, you must first add that user as a member of at least one Organization; see [Add members on the Manage users in Organizations page](../groups-and-organizations/organizations/manage-users-in-organizations.md#add-users). The user then appears on the **Group > Members** page with the role **Group Member**, allowing you to change the role to Group Admin or Group Viewer.
 
@@ -168,6 +168,6 @@ If you already have Custom SSO set up, or are planning to create Member roles af
 
 ## Permissions required to edit Project attributes from the Snyk CLI
 
-The **Organization Collaborator** role lacks permission to edit Project attributes, including using the CLI [`snyk monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/monitor) command with arguments such as `--project-environment`. Attempting to use these arguments without the proper permission causes the `snyk monitor` command to fail.
+The **Organization Collaborator** role lacks permission to edit Project attributes, including using the CLI [`snyk monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) command with arguments such as `--project-environment`. Attempting to use these arguments without the proper permission causes the `snyk monitor` command to fail.
 
 Users or service accounts requiring the ability to edit Project attributes must be an **Organization Admin** or have a custom role with the **Edit Project Attributes** permission assigned. A user who does not have this permission must remove any arguments that edit the Project attributes to use the `snyk monitor` command.

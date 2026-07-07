@@ -16,13 +16,15 @@ When Snyk creates automatic PRs for vulnerabilities, the following rules are app
   * To update the **Test & Automated Pull Request Frequency**, navigate to **Projects** and select your Open Source Project.
   * Navigate to **Settings** and select an option from the pulldown list.
 
-<figure><img src="../../../.gitbook/assets/project-settings-test-pull-request-frequency.png" alt="Project test and automated PR Checks frequency setting"><figcaption><p>Project test and automated PR Checks frequency setting</p></figcaption></figure>
-
 To determine when your last 24-hour window began, check the Project issue card for **Snapshot taken by recurring test**.
 
-<figure><img src="../../../.gitbook/assets/project-snapshot-taken.png" alt="Snapshot taken by recurrint test 13 hours ago"><figcaption><p>Snapshot taken by recurring test 13 hours ago</p></figcaption></figure>
-
 For specific scan results, you can also check your inbox for an email titled **\[snyk] Vulnerability alert**.
+
+{% hint style="info" %}
+Snyk automatically closes backlog PRs (and other Fix PRs) after all targeted\
+vulnerabilities are resolved. For details on how this works and how to turn it off, visit [Automatic\
+closure of obsolete Fix PRs](enable-automatic-fix-prs.md#automatic-closure-of-obsolete-fix-prs) on the Enable automatic Fix PRs page.
+{% endhint %}
 
 ## Configure Automatic Fix PRs at the integration level
 
@@ -38,9 +40,6 @@ The configuration settings apply to all Projects in that Organization. You can a
 2. Select a Git repository integration (SCM). For this example, GitHub is configured.
 3. Under **Automatic Fix PRs,** enable **Known vulnerabilities (backlog)**.\
    This retrieves previously declared vulnerabilities from the Project's backlog.
-
-<figure><img src="../../../.gitbook/assets/project-settings-github-automatic-fix-prs.png" alt="Automatic fix PRs settings for Git integration."><figcaption><p>Automatic Fix PRs settings for Git integration</p></figcaption></figure>
-
 4. Select the **Fix Strategy** for your Backlog PRs.
 
 * By default, the fix strategy will be a single PR at the vulnerability level. Snyk opens one PR each day for issues in your backlog, fixing the top vulnerability it finds.
@@ -61,5 +60,3 @@ You can configure Automatic fix PRs to work only for specific Projects rather th
    * Enable **Known vulnerabilities (backlog)**
 4. Select the **Fix Strategy** for your Backlog PRs as described in the [Fix strategy step of configuring for integrations](enable-automatic-backlog-prs-for-previously-known-vulnerabilities.md#configure-automatic-fix-prs-at-the-integration-level).
 5. Click **Save changes**.
-
-<figure><img src="../../../.gitbook/assets/project-settings-github-integration-automatic-fix-pull-requests.png" alt="Automatic fix PRs settings at the Project level."><figcaption><p>Automatic Fix PRs settings at the Project level</p></figcaption></figure>

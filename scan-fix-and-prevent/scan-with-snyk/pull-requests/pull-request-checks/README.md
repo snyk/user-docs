@@ -16,16 +16,16 @@ For developers, change-related flaws are relevant and easy to fix, and fixing ch
 
 ## **Testing “before” and “after”**
 
-The Snyk PR Checks feature runs live tests of the “before and after” branch with the PR and fails only if the new branch has more issues. This allows you to address problems that have been introduced since the last scan, for example, new vulnerabilities introduced externally. Snyk PR Checks are triggered by a change in your code, and find issues across the entire repository. Thus,  a PR check finds issues in your code as well as other issues introduced since the last Snyk scan.Use the Snyk PR Checks feature to prevent new security issues from entering your codebase by automatically scanning code changes in real time as soon as you submit a pull request (PR) in your source code manager (SCM).
+The Snyk PR Checks feature runs live tests of the “before and after” branch with the PR and fails only if the new branch has more issues. This allows you to address problems that have been introduced since the last scan, for example, new vulnerabilities introduced externally. Snyk PR Checks are triggered by a change in your code and find issues across the entire repository. Thus, a PR check finds issues in your code as well as other issues introduced since the last Snyk scan. Use the Snyk PR Checks feature to prevent new security issues from entering your codebase by automatically scanning code changes in real time as soon as you submit a pull request (PR) in your source code manager (SCM).
 
 ## Why use PR Checks
 
-| Benefits                                      | Details                                                                                                                                                                                                                                                     |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Automatically scanned pull request            | Scan code changes in real-time as soon as a pull request is submitted, to catch potential issues before they go into production.                                                                                                                            |
-| Results displayed in your source code manager | Make use of security reviews and notes left by Snyk on your pull requests.                                                                                                                                                                                  |
-| Code change testing for security issues       | Test changes to your codebase for any security issues, ensuring that your code stays secure over time.                                                                                                                                                      |
-| Branch testing                                | <p>Test branches before and after implementing changes to fail only if the new branch has introduced issues. Prevent merging pull requests with failed security issues. <br>Note that Snyk monitors all pull requests made to the monitored repository.</p> |
+| Benefits                                      | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Automatically scanned pull request            | Scan code changes in real-time as soon as a pull request is submitted, to catch potential issues before they go into production.                                                                                                                                                                                                                                                                                                                                             |
+| Results displayed in your source code manager | Make use of security reviews and notes left by Snyk on your pull requests.                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Code change testing for security issues       | Test changes to your codebase for any security issues, ensuring that your code stays secure over time.                                                                                                                                                                                                                                                                                                                                                                       |
+| Branch testing                                | <p>Test branches before and after implementing changes to fail only if the new branch has introduced issues, and optionally block merging of PRs with failed checks using your SCM's branch protection rules. For more details, visit <a href="https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/automate-prevention-measures">Automate prevention measures</a>.<br>Note that Snyk monitors all pull requests made to the monitored repository.</p> |
 
 ## What to test for
 
@@ -33,20 +33,26 @@ You can analyze PR Checks results in your SCM to test for dependency and licensi
 
 ## How PR checks work
 
-The following diagram explains how Snyk Checks PRs in your development workflow.
+The following diagram explains how Snyk checks PRs in your development workflow.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2022-09-20 at 11.27.44.png" alt="Where Snyk checks for pull requests in the development workflow."><figcaption><p>Where Snyk checks for pull requests in the development workflow</p></figcaption></figure>
 
 PR checks proceed as follows:
 
 1. A developer creates a pull request (PR) in an SCM integrated with Snyk.
-2. A webhook is triggered from the SCM to Snyk
+2. The SCM triggers a webhook to Snyk
 3. Snyk automatically scans the code changes in the PR for issues.
 4. Snyk leaves security reviews and notes on the PR.
-5. The developer can view the PR Checks results and fix identified issues before merging the code.
-6. The PR Checks results appear as **Passed** or **Failed** directly in the SCM, preventing PRs from being merged with security issues.
+5. The developer reviews the PR Checks results and fixes any identified issues before merging.
 
-For more information on working with PR Checks, see the following pages:
+Snyk displays the result as a **Passed** or **Failed** status in your SCM. Whether that status blocks merging depends on your SCM branch protection settings:
+
+* With branch protection enabled, a **Failed** status prevents the PR from merging.
+* Without branch protection, the status is informational only: Snyk still shows **Passed** or **Failed**, but merging is permitted regardless.
+
+To configure how Snyk enforces these results, visit [Automate prevention measures](https://docs.snyk.io/implementation-guides/enterprise-implementation-guide/automate-prevention-measures).
+
+For more information on working with PR Checks, visit the following related pages:
 
 * [Configure PR Checks](configure-pull-request-checks.md)
 * [Pull Request Experience](pull-request-experience.md)

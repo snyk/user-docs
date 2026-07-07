@@ -9,10 +9,10 @@ Snyk supports the following protocols for authentication:
 * Snyk API token (Legacy)
 
 {% hint style="warning" %}
-Before authenticating, ensure your region is properly set. For more details, see [IDEs URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#ides-urls).
+Before authenticating, ensure your region is properly set. For more details, see [IDEs URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (326).png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Jetbrains IDEs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (326).png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Jetbrains IDEs</p></figcaption></figure>
 
 ## Steps to authenticate using the OAuth 2.0 protocol
 
@@ -20,7 +20,7 @@ Follow the next steps to authenticate:
 
 1. After the extension is installed, click the Snyk icon in the navigation bar, then click **Trust project and scan**.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-06-03 at 11.17.13 AM.png" alt=""><figcaption><p>Snyk icon and connect and trust</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-06-03 at 11.17.13 AM.png" alt=""><figcaption><p>Snyk icon and connect and trust</p></figcaption></figure>
 
 2. A new browser window opens, requiring you to log in to your Snyk account.
 3. In the next prompt, the Snyk IDE plugin requests access to act on your behalf. Click **Grant app access**.
@@ -36,7 +36,7 @@ If you have problems, see [OAuth 2.0 authentication does not work](../troublesho
 
 ## Steps to authenticate using your Personal Access Token
 
-{% include "../../../.gitbook/includes/this-method-is-inferior-to-....md" %}
+{% include "../../.gitbook/includes/this-method-is-inferior-to-....md" %}
 
 {% hint style="warning" %}
 The Personal Access Token (PAT) authentication is progressively rolled out to all Enterprise customers. To check if this feature is available for your Organization at this time, please reach out to your Snyk account team.
@@ -47,33 +47,33 @@ To authenticate using the Personal Access token, follow these steps:
 1. Navigate to **Settings** > **Tools** > **Snyk**.
 2.  Set the **Authentication Method** to **Use Personal Access Token**.
 
-    <figure><img src="../../../.gitbook/assets/image (326).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (326).png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
-4. Create your **Personal Access** **Token**. For details, see the [Authentication for API](../../../snyk-api/authentication-for-api/) page.
+4. Create your **Personal Access Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.
 5. Add the token in the **Token** field.
-6. Click **Apply and Close.**
+6. Click **Apply and Close**.
 
 ## Steps to authenticate using your Snyk API token
 
-{% include "../../../.gitbook/includes/this-method-is-inferior-to-....md" %}
+{% include "../../.gitbook/includes/this-method-is-inferior-to-....md" %}
 
 To authenticate, follow these steps:
 
 1. In the JetBrains plugin, navigate to **Settings** > **Tools** > **Snyk**.
 2.  Set the **Authentication Method** to **API token**.
 
-    <figure><img src="../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4.  Click **Authenticate** in the web browser window that opens.
 
-    <figure><img src="../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
 5. The API token is automatically updated in the **API Token field**.
-6. Click **Apply** or **OK.**
+6. Click **Apply** or **OK**.
 
 The analysis starts automatically.
 
 {% hint style="info" %}
-Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/getting-started#obtain-and-use-your-snyk-api-token).
+Alternatively, copy the personal API token from your Snyk Web UI instance (default is [https://app.snyk.io](https://app.snyk.io/)). Paste the token in the **API Token** field. For details, see [Obtain and use your Snyk API token](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#obtain-and-use-your-snyk-api-token).
 {% endhint %}
 
 ## How to switch accounts

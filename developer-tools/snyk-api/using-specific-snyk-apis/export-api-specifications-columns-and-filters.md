@@ -2,7 +2,7 @@
 
 The Export API, which Snyk Analytics supports, makes it easier to export data by allowing users to create and manage CSV files. These files are safely stored by Snyk. Designed for efficiency and security, the Export API helps users organize and scale the export of large datasets, which is useful for reporting and analytics tasks.
 
-You can use the Export API to export the Snyk `issues`, `usage events`, `pr checks`, `pr checks project adoption`, and `pr checks integration adoption` datasets in the scope of `Snyk Organization` or `Snyk Group`. Navigate to the [available columns and filters](export-api-specifications-columns-and-filters.md#available-columns-and-filters) section to see the full lists.
+You can use the Export API to export the Snyk `issues`, `usage events`, `pr checks`, `pr checks project adoption`, `pr checks integration adoption` , and `prevention events` datasets in the scope of `Snyk Organization` or `Snyk Group`. Navigate to the [available columns and filters](export-api-specifications-columns-and-filters.md#available-columns-and-filters) section to see the full lists.
 
 {% hint style="info" %}
 Before running the first export, ensure that all API requests include:
@@ -493,3 +493,58 @@ At least one date filter (`introduced` for the `issues` dataset or `updated` for
 #### **Snyk hierarchy**
 
 <table><thead><tr><th width="318">Column name</th><th>Description</th></tr></thead><tbody><tr><td><code>group_public_id</code></td><td>A universally unique identifier for a Group, assigned in the source database of the record.</td></tr><tr><td><code>org_public_id</code></td><td>A universally unique identifier for an Organization, assigned in the source database of the record.</td></tr></tbody></table>
+
+### Prevention Events dataset
+
+#### Available columns
+
+<details>
+
+<summary>A list of all columns that can be easily copied to the request body</summary>
+
+<pre class="language-yaml" data-title="" data-overflow="wrap" data-expandable="true"><code class="lang-yaml">"FINDING_EVENT_ID", 
+"GROUP_PUBLIC_ID", 
+"ORG_PUBLIC_ID",
+<strong>"GIT_REPO", 
+</strong>"GIT_BRANCH",
+"FINDING_TITLE", 
+"EVENT_TYPE", 
+"EVENT_TIMESTAMP",
+"EFFECTIVE_SEVERITY", 
+"PRODUCT_NAME", 
+"SDLC_STAGE",
+"IS_SUPPRESSED",
+"PROBLEM_ID", 
+"PROBLEM_TITLE", 
+"CVE", 
+"CWE",
+"TEST_USER_NAME", 
+"TEST_USER_EMAIL",
+"UPDATED_AT"
+</code></pre>
+
+</details>
+
+#### **Findings Context**
+
+| Column name          | Description                                                                             |
+| -------------------- | --------------------------------------------------------------------------------------- |
+| `FINDING_EVENT_ID`   | Unique identifier for the prevention event                                              |
+| `GROUP_PUBLIC_ID`    | UUID of the Snyk Group                                                                  |
+| `ORG_PUBLIC_ID`      | UUID of the Snyk Organization                                                           |
+| `GIT_REPO`           | Name of the Git repository where the scan was run                                       |
+| `GIT_BRANCH`         | Branch scanned                                                                          |
+| `FINDING_TITLE`      | Display title of the finding                                                            |
+| `EVENT_TYPE`         | One of `new`, `persisting`, or `fixed`                                                  |
+| `EVENT_TIMESTAMP`    | Timestamp when the prevention event occurred                                            |
+| `EFFECTIVE_SEVERITY` | Computed severity: `CRITICAL`, `HIGH`, `MEDIUM`, or `LOW`                               |
+| `PRODUCT_NAME`       | The Snyk product that detected the finding (e.g., `Snyk Code`)                          |
+| `SDLC_STAGE`         | Where in the developer workflow the event was detected: `IDE`, `CLI`, `MCP`, or `OTHER` |
+| `IS_SUPPRESSED`      | `true` if the finding was suppressed at the time of the event                           |
+| `PROBLEM_ID`         | Snyk Vulnerability Database ID that uniquely identifies the vulnerability.              |
+| `PROBLEM_TITLE`      | Name of the Snyk discovered vulnerability.                                              |
+| `CVE`                | CVE identifier, if applicable                                                           |
+| `CWE`                | CWE identifier, if applicable                                                           |
+| `TEST_USER_NAME`     | Display name of the user who triggered the scan                                         |
+| `TEST_USER_EMAIL`    | Email of the user who triggered the scan                                                |
+| `UPDATED_AT`         | Timestamp when this record was last updated in the data pipeline                        |

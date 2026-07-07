@@ -10,7 +10,7 @@ Click the arrows next to your Organization name, click **Create New Organization
 
 ### Changing the name after purchase
 
-After determining the name of your Organization in phase 1, navigate to **Settings** in the Snyk web UI and update your **Organization** **name**.&#x20;
+After determining the name of your Organization in phase 1, navigate to **Settings** in the Snyk web UI and update your **Organization** **name**.
 
 {% hint style="info" %}
 You must contact Snyk support and submit a ticket to update the url slug. This can impact any existing CI/CD scripts that your team has previously created, so this step should be performed as early as possible and be communicated to your team if CLI has been in use for a while.
@@ -35,4 +35,4 @@ By default, Snyk determines the severity of licenses as follows:
 
 Configure policies to match your requirements.
 
-For details, see [Getting Started with Snyk License Compliance Management](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management).
+For details, see [Getting Started with Snyk License Compliance Management](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management).

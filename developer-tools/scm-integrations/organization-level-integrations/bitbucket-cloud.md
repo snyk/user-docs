@@ -19,15 +19,14 @@ To improve security, the use of app passwords in Bitbucket Cloud is transitionin
 To ensure continued support and functionality, update your Bitbucket Cloud integration in Snyk to use an API token.
 {% endhint %}
 
-1. To give Snyk access to your Bitbucket account, set up a dedicated service account in Bitbucket with admin permissions. See the [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about adding users to a workspace.\
-   The newly created user must have **Admin** permissions to all the repositories you need to monitor with Snyk.
+1. To give Snyk access to your Bitbucket account, set up a dedicated service account in Bitbucket with admin permissions. See the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/) to learn more about adding users to a workspace. The newly created user must have **Admin** permissions to all the repositories you need to monitor with Snyk.
 2. In Snyk, go to the **Integrations** page, open the **Bitbucket Cloud** card, and configure the **Account credentials**.
 3. In BitBucket, under the Personal settings, select **Atlassian account settings** > **Security** > **Create and manage API tokens**.
 4.  Follow the Bitbucket procedure to set up an API Token with the scopes as defined in [Bitbucket permission requirements](../user-permissions-and-access-scopes.md#bitbucket-cloud-and-bitbucket-data-center-server-scopes).
 
-    See the [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/)for more details about the procedure.
+    See the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/) for more details about the procedure.
 5. Enter the email and the [API key for the Bitbucket account](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#api-tokens) you created, and **save** your changes.\
-   You can find your email under the Bitbucket **Personal settings.**\
+   You can find your email under the Bitbucket **Personal settings**.\
    Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the confirmation message **Bitbucket Cloud settings successfully updated** appears.
 
 ### How to add Bitbucket repositories to Snyk
@@ -51,11 +50,11 @@ After the integration is in place, you will be able to use capabilities such as:
 
 #### Project-level security reports
 
-Snyk produces advanced [remediation reports](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/analytics/reports-tab/remediation-reports) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
+Snyk produces advanced [remediation reports](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/remediation-reports) that let you explore the vulnerabilities found in your repositories and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
 #### Project monitoring and automatic fix Pull Requests
 
-Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-fix-prs) with fixes for your repositories.
+Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-fix-prs) with fixes for your repositories.
 
 To review and adjust the automatic fix pull request settings:
 
@@ -65,7 +64,7 @@ To review and adjust the automatic fix pull request settings:
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
 
-For more information, see [Snyk automated pull requests](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-fix-prs).
+For more information, see [Snyk automated pull requests](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-fix-prs).
 {% endhint %}
 
 #### Pull request tests
@@ -74,14 +73,14 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 The example that follows shows a Snyk pull request build check on the Bitbucket Cloud **Pull Request** page.
 
-<figure><img src="../../../.gitbook/assets/888.png" alt="Example of a Snyk pull request build check on the Bitbucket Cloud Pull Request page"><figcaption><p>Example of a Snyk pull request build check on the Bitbucket Cloud <strong>Pull Request</strong> page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/888.png" alt="Example of a Snyk pull request build check on the Bitbucket Cloud Pull Request page"><figcaption><p>Example of a Snyk pull request build check on the Bitbucket Cloud <strong>Pull Request</strong> page</p></figcaption></figure>
 
 To review and adjust the pull request tests settings:
 
 1. In Snyk, go to **Organization settings** > **Integrations > Source control** > **Bitbucket Cloud**, and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests** > **Open Source Security & Licenses**, and configure the relevant options.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-03-16 at 10.07.50.png" alt="Configuring the options for pull request Open Source Security &#x26; Licenses"><figcaption><p>Configuring the options for pull request Open Source Security &#x26; Licenses</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-03-16 at 10.07.50.png" alt="Configuring the options for pull request Open Source Security &#x26; Licenses"><figcaption><p>Configuring the options for pull request Open Source Security Licenses</p></figcaption></figure>
 
 ### Required permission scope for the Bitbucket Cloud integration
 
@@ -97,7 +96,7 @@ The integrated Bitbucket Cloud account requires Admin permissions on imported re
 
 Snyk performs all manual and automatic operations using the Bitbucket Cloud user account API token configured in the **Integration settings**.
 
-For more information on required permission scopes, see [Bitbucket permission requirements](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/implementation-and-setup/team-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations).
+For more information on required permission scopes, see [Bitbucket permission requirements](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/implementation-guides/team-implementation-guide/phase-1-discovery-and-planning/choose-rollout-integrations).
 
 ### How to disconnect Snyk from Bitbucket Cloud
 
@@ -106,12 +105,12 @@ When you disconnect Snyk from your repository Projects, your credentials are rem
 If you choose to re-enable this integration, you must re-enter your credentials and activate your Projects.
 {% endhint %}
 
-To disconnect this integration, in **Organization settings** > **Integrations:**
+To disconnect this integration, in **Organization settings** > **Integrations**:
 
 1. In your list of integrations, select the Bitbucket integration you want to deactivate and click **Edit settings** to open a page with the current status of your integration.\
    \
    The page includes sections specific to each integration, where you can manage your credentials, API key, Service Principal, and connection details.
-2. Scroll to the relevant section and click **Disconnect.**
+2. Scroll to the relevant section and click **Disconnect**.
 
 ### Migrate to the Bitbucket Cloud App
 

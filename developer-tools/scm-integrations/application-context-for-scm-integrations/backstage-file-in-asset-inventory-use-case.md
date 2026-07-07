@@ -1,8 +1,8 @@
 # Backstage file in Asset Inventory - use case
 
-After you finish configuring the [Backstage catalog](./#backstage-file-for-scm-integrations), Snyk Essentials starts enriching your repository assets (the [All Assets](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-assets/manage-assets#inventory-menu) tab from the Inventory layout) with the data found in the backstage `catalog-info.yaml` file.
+After you finish configuring the [Backstage catalog](./#backstage-file-for-scm-integrations), Snyk Essentials starts enriching your repository assets (the [All Assets](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets#inventory-menu) tab from the Inventory layout) with the data found in the backstage `catalog-info.yaml` file.
 
-Use the backstage catalog to enrich the repository assets and to define the component entity. For this type of situation, a component is defined as a software component, like a service, repository, website, library, and so on.&#x20;
+Use the backstage catalog to enrich the repository assets and to define the component entity. For this type of situation, a component is defined as a software component, like a service, repository, website, library, and so on.
 
 Components have several attributes and most of them are optional:
 
@@ -19,7 +19,7 @@ The backstage data is dynamic and may change over time:
 * If the`catalog-info.yaml` file is removed from the repository, then Snyk Essentials deletes the asset attribute from that specific repository assets.
 
 {% hint style="info" %}
-You can use quotes (`""`) to escape keys that contain periods (`.`), for example`"`[`example.com`](http://example.com/)`".owner`.
+You can use quotes (`""`) to escape keys that contain periods (`.`), for example `"example.com".owner`.
 {% endhint %}
 
 ## Inventory menu and the backstage file

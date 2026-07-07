@@ -20,7 +20,7 @@ Snyk Essentials core capabilities overview
 
 Snyk Essentials includes the following features:
 
-* [Integrations](../developer-tools/scm-integrations/group-level-integrations/) to support ingesting data from SCM tools for asset discovery, Snyk Application Security Testing products for security controls coverage, and ticketing or notification tools for policy actions. Use the Integration page to add and set up new integrations.
+* [Integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/group-level-integrations) to support ingesting data from SCM tools for asset discovery, Snyk Application Security Testing products for security controls coverage, and ticketing or notification tools for policy actions. Use the Integration page to add and set up new integrations.
 * [Policies](../manage-risk/policies/assets-policies/) to classify and tag assets with business context and configure actions using a Policy Builder UI.
 * [Inventory](../manage-assets/manage-assets.md) layouts for managing assets and viewing Snyk coverage.
 * A dashboard to view, add, and customize widgets.
@@ -42,7 +42,7 @@ The first import synchronization can take up to 24 hours to complete.
 
 ## Permissions
 
-Snyk Essentials is included in the Snyk Enterprise plan. For more information on default user roles and permissions, see [Default user roles](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/pre-defined-roles).
+Snyk Essentials is included in the Snyk Enterprise plan. For more information on default user roles and permissions, see [Default user roles](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles).
 
 ## Login and authentication
 
@@ -76,13 +76,13 @@ A way to automate actions in certain conditions, like classifying and tagging as
 
 ## Scanning methods
 
-You can initiate a scan from the Web UI, the CLI, the API, or with PR Checks. See [Start scanning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/scan-with-snyk/start-scanning) for more details.
+You can initiate a scan from the Web UI, the CLI, the API, or with PR Checks. See [Start scanning](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/start-scanning) for more details.
 
 If you initiate your scans using the CLI, you can encounter one of the following situations:
 
 * If you have a `.git` folder available in the directory that the CLI is scanning, then the `git remoteurl` is picked up automatically for Snyk Open Source, Snyk Code, Snyk Container, and Snyk IaC.
 * If you do not have a `.git` folder available in the directory that the CLI is scanning, you can use different `test` or `monitor` commands to achieve the same result:
-  * [`snyk monitor`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/monitor#remote-repo-url-less-than-url-greater-than) - for Snyk Open Source with the `--remote-repo-url` command
-  * [`snyk iac test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/iac-test#remote-repo-url-less-than-url-greater-than) - also requires the `--report` and `--remote-repo-url` command
+  * [`snyk monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor#remote-repo-url-less-than-url-greater-than) - for Snyk Open Source with the `--remote-repo-url` command
+  * [`snyk iac test`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/iac-test#remote-repo-url-less-than-url-greater-than) - also requires the `--report` and `--remote-repo-url` command
   * `snyk container monitor` - no options available
-  * [`snyk code test`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/code-test#remote-repo-url-less-than-url-greater-than) - requires the `--report` and `--remote-repo-url` command
+  * [`snyk code test`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/code-test#remote-repo-url-less-than-url-greater-than) - requires the `--report` and `--remote-repo-url` command

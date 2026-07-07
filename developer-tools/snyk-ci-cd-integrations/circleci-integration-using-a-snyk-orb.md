@@ -24,11 +24,11 @@ After you add a Project to CircleCI and add the Snyk Orb to the configuration fi
    * Fails the build.
    * Lets the build complete.
 
-### **Monitor**
+### Monitor
 
 Optionally, if the build completes successfully and **MONITOR** is set to **True** in the Snyk step, then Snyk saves a snapshot of the Project dependencies from the Snyk Web UI. From the Snyk Web UI you can view the dependency tree displaying all of the issues, and you can receive alerts for new issues found in the existing app version.
 
-## **Prerequisites for implementing CircleCI integration**
+## Prerequisites for implementing CircleCI integration
 
 1. Create a Snyk account and retrieve the **Snyk API token** from your **Account settings**.
 2. Import the relevant repository into CircleCI.
@@ -40,7 +40,7 @@ Optionally, if the build completes successfully and **MONITOR** is set to **True
 
 On the [Orbs registry](https://circleci.com/orbs/registry/), CircleCI displays a list of available Orbs customized for you directly, similar to the list in the image that follows.
 
-<figure><img src="../../.gitbook/assets/download-Snyk-orb.png" alt="Snyk Orb for CircleCI"><figcaption><p>Snyk Orb for CircleCI</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/download-Snyk-orb.png" alt="Snyk Orb for CircleCI"><figcaption><p>Snyk Orb for CircleCI</p></figcaption></figure>
 
 In this list, find and click the relevant **Snyk** line to view the Snyk Orb information with examples, parameters, and values:
 
@@ -48,4 +48,4 @@ In this list, find and click the relevant **Snyk** line to view the Snyk Orb inf
 Be sure to use the latest version of the Snyk orb from the list.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Select-Circle-CI-guide.png" alt="Snyk Orb information"><figcaption><p>Snyk Orb information</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Select-Circle-CI-guide.png" alt="Snyk Orb information"><figcaption><p>Snyk Orb information</p></figcaption></figure>

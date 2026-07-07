@@ -10,12 +10,12 @@ Developers worldwide use open-source code because it enables fast development. T
 
 Sometimes, these issues are rooted deep in the code. Open-source packages often reference other packages, and many vulnerabilities are found in these indirect dependencies. Developers may not realize which packages are being called. By using Snyk Open Source, you can reduce the risks introduced by open-source components. Snyk Open Source can help you find, prioritize, and fix security vulnerabilities and license risks in open-source dependencies throughout the SDLC.
 
-Snyk Open Source is available in many common languages and platforms. See [Supported languages and package managers](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
+Snyk Open Source is available in many common languages and platforms. See [Supported languages and package managers](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
 
 {% hint style="info" %}
-Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.&#x20;
+Only official releases are tracked. Commits, including into the default branch, are not identified unless included in an official release or tag.
 
-In the case of Projects that have a package manager, this means a release of the package manager.&#x20;
+In the case of Projects that have a package manager, this means a release of the package manager.
 
 In the case of Go and Unmanaged scans (C/C++), this requires an official release or tag on the GitHub repository.
 {% endhint %}

@@ -121,7 +121,7 @@ jobs:
 
 ## GitHub Code Scanning support
 
-Snyk GitHub Actions support integration with GitHub Code Scanning to show vulnerability information on the GitHub Security tab. The following applies to Snyk GitHub Actions for Open Source languages and package manager&#x73;**.** For information on specific languages, package managers, and processes see the pages listed in [GitHub Actions for Open Source languages and package managers](./#github-actions-for-open-source-languages-and-package-managers) and GitHub Actions for Snyk Container and Snyk Infrastructure as Code.
+Snyk GitHub Actions support integration with GitHub Code Scanning to show vulnerability information on the GitHub Security tab. The following applies to Snyk GitHub Actions for Open Source languages and package managers. For information on specific languages, package managers, and processes see the pages listed in [GitHub Actions for Open Source languages and package managers](./#github-actions-for-open-source-languages-and-package-managers) and GitHub Actions for Snyk Container and Snyk Infrastructure as Code.
 
 Using `--sarif-file-output` [Snyk CLI ](../../snyk-cli/cli-commands-and-options-summary.md)option and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
 
@@ -156,7 +156,7 @@ jobs:
 
 After you upload to GitHub Code Scanning support, you will see vulnerabilities on the GitHub Security tab as shown in the following screen image.
 
-<figure><img src="../../../.gitbook/assets/GitHub-showing-uploaded-vulnerabilty.png" alt="GitHub Security tab showing uploaded vulnerability"><figcaption><p>GitHub Security tab showing uploaded vulnerability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/GitHub-showing-uploaded-vulnerabilty.png" alt="GitHub Security tab showing uploaded vulnerability"><figcaption><p>GitHub Security tab showing uploaded vulnerability</p></figcaption></figure>
 
 ## Use your own development environment
 
@@ -193,5 +193,5 @@ env:
 
 Every Snyk account has this token. After you have created an account with Snyk, you can find the API token in one of two ways:
 
-1. In the UI, go to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained on the page [Revoke and regenerate a Snyk API token](../../../snyk-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token.md).
+1. In the UI, go to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained on the page [Revoke and regenerate a Snyk API token](../../snyk-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token.md).
 2. If you are using the [Snyk CLI](../../snyk-cli/getting-started-with-the-snyk-cli.md) locally, you can retrieve the API token by running `snyk config get api`.

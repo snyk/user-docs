@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Overview](overview.md)
+* [Overview](README.md)
 * [Working with Snyk](working-with-snyk.md)
 * [How Snyk handles your data](how-snyk-handles-your-data.md)
 * [How Snyk incorporates generative AI into the platform](how-snyk-incorporates-generative-ai-into-the-platform.md)

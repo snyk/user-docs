@@ -1,3 +1,244 @@
+## 2026-03-25 - Updated 2026-07-06
+
+### POST - `/groups/{group_id}/export` - Updated
+- added the new optional request property `data/attributes/filters/effective_severity`
+
+- added the new optional request property `data/attributes/filters/event`
+
+- added the new optional request property `data/attributes/filters/event_type`
+
+- added the new optional request property `data/attributes/filters/git_branch`
+
+- added the new optional request property `data/attributes/filters/git_repo`
+
+- added the new optional request property `data/attributes/filters/is_suppressed`
+
+- added the new optional request property `data/attributes/filters/sdlc_stage`
+
+- added the new optional request property `data/attributes/filters/test_user_email`
+
+
+## 2026-03-25 - Updated 2026-06-26
+
+### POST - `/orgs/{org_id}/policies` - Updated
+- added the optional property `data/attributes/created_by/actor_source` to the response with the `201` status
+
+- added the optional property `data/attributes/created_by/external_id` to the response with the `201` status
+
+- added the optional property `data/attributes/created_by/origin` to the response with the `201` status
+
+
+
+### GET - `/orgs/{org_id}/policies` - Updated
+- added the optional property `data/items/attributes/created_by/actor_source` to the response with the `200` status
+
+- added the optional property `data/items/attributes/created_by/external_id` to the response with the `200` status
+
+- added the optional property `data/items/attributes/created_by/origin` to the response with the `200` status
+
+
+
+### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Updated
+- added the optional property `data/attributes/created_by/actor_source` to the response with the `200` status
+
+- added the optional property `data/attributes/created_by/external_id` to the response with the `200` status
+
+- added the optional property `data/attributes/created_by/origin` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/policies/{policy_id}` - Updated
+- added the optional property `data/attributes/created_by/actor_source` to the response with the `200` status
+
+- added the optional property `data/attributes/created_by/external_id` to the response with the `200` status
+
+- added the optional property `data/attributes/created_by/origin` to the response with the `200` status
+
+
+## 2026-03-25 - Updated 2026-06-16
+
+### PATCH - `/orgs/{org_id}/settings/opensource/{ecosystem}/broker` - Updated
+- added the new `github-server-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github-server-app` enum value to the request property `data/integrations/items/integration_type`
+
+
+
+### GET - `/orgs/{org_id}/settings/opensource/{ecosystem}/broker` - Updated
+- added the new `github-server-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+## 2026-03-25 - Updated 2026-06-12
+
+### PATCH - `/orgs/{org_id}/settings/opensource/{ecosystem}/private-registries` - Updated
+- added the new `azure-repos` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-cloud` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-connect-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-server` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github-cloud-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github-enterprise` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `gitlab` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `azure-repos` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `bitbucket-cloud` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `bitbucket-connect-app` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `bitbucket-server` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `github` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `github-cloud-app` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `github-enterprise` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `gitlab` enum value to the request property `data/integrations/items/integration_type`
+
+
+
+### GET - `/orgs/{org_id}/settings/opensource/{ecosystem}/private-registries` - Updated
+- added the new `azure-repos` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-cloud` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-connect-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-server` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github-cloud-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github-enterprise` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `gitlab` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### PATCH - `/orgs/{org_id}/settings/opensource/{ecosystem}/broker` - Updated
+- added the new `azure-repos` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-cloud` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-connect-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-server` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github-cloud-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github-enterprise` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `gitlab` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `azure-repos` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `bitbucket-cloud` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `bitbucket-connect-app` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `bitbucket-server` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `github` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `github-cloud-app` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `github-enterprise` enum value to the request property `data/integrations/items/integration_type`
+
+- added the new `gitlab` enum value to the request property `data/integrations/items/integration_type`
+
+
+
+### GET - `/orgs/{org_id}/settings/opensource/{ecosystem}/broker` - Updated
+- added the new `azure-repos` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-cloud` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-connect-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `bitbucket-server` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github-cloud-app` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `github-enterprise` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new `gitlab` enum value to the `data/integrations/items/integration_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+## 2026-03-25 - Updated 2026-06-05
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Updated
+- added `#/components/schemas/DockerHubAttributes, #/components/schemas/EcrAttributes, #/components/schemas/GcrAttributes` to the `data/attributes/configuration` request property `oneOf` list
+
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Updated
+- added `#/components/schemas/DockerHubAttributes, #/components/schemas/EcrAttributes, #/components/schemas/GcrAttributes` to the `data/attributes/configuration` request property `oneOf` list
+
+
+
+### PATCH - `/orgs/{org_id}/settings/opensource/{ecosystem}/private-registries` - Added
+- Updates the publicly-accessible private registry settings of a specific Open Source Ecosystem for an Organization.
+This endpoint has JSON-PATCH semantics: only provided integrations are updated.
+Provide an empty value for `urls` to remove an integration.
+
+#### Required permissions
+
+- `Edit Organization (org.edit)`
+
+
+### GET - `/orgs/{org_id}/settings/opensource/{ecosystem}/private-registries` - Added
+- Retrieves the publicly-accessible private registry settings of a specific Open Source Ecosystem for an Organization.
+These are registries (e.g. JFrog Artifactory, Sonatype Nexus) hosted on a public URL and reached directly with
+credentials, without the Snyk Broker.
+
+#### Required permissions
+
+- `View Organization (org.read)`
+
+## 2026-03-25 - Updated 2026-05-19
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- added the new enum value `secrets` to the `query` request parameter `type`
+
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added the non-success response with the status `501`
+
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added the new enum value `secrets` to the `query` request parameter `type`
+
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added the non-success response with the status `501`
+
+
+## 2026-03-25 - Updated 2026-05-19
+
+### GET - `/orgs/{org_id}/container_import/{integration_id}/policy` - Updated
+- deleted the `query` request parameter `ending_before`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- deleted the `query` request parameter `limit`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- deleted the `query` request parameter `starting_after`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ## 2026-03-25 - Updated 2026-05-12
 
 ### GET - `/orgs/{org_id}/issues` - Updated

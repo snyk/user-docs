@@ -22,7 +22,7 @@ For more information and to add this capability to your Snyk plan, contact your 
 
 Snyk Learn also allows for regional hosting and data residency. Multi-tenant support enables seamless operation across multiple deployment environments, specifically tailored to meet the needs of Snyk users in the US, AU, and EU.
 
-Snyk customers have access to Snyk Learn resources according to their region in the Snyk application. There is no need to create an additional user. For more information, see [Regional hosting and data residency](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency).
+Snyk customers have access to Snyk Learn resources according to their region in the Snyk application. There is no need to create an additional user. For more information, see [Regional hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency).
 
 ## Security education
 

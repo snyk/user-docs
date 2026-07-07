@@ -1,6 +1,6 @@
 # Import repositories
 
-{% include "../../../../.gitbook/includes/pilot-guide-toc.md" %}
+{% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
 
 After setting up your SCM integration, you are ready to import repositories to Snyk. If you have not imported any repos yet, click on the **Import projects** button to start.
 
@@ -9,15 +9,15 @@ After setting up your SCM integration, you are ready to import repositories to S
 * Open **Dashboard**
 * Select **Import projects**
 
-<figure><img src="../../../../.gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
 
 Alternatively, you can start the import from the Integrations tab and select the integration that you just configured:
 
-<figure><img src="../../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
 
 * Select the repositories that you want to import and click **Add selected repositories**
 
-<figure><img src="../../../../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>
 
 * The import begins immediately, which can be monitored in the Import Log:
 
@@ -32,6 +32,6 @@ You can either continue monitoring the import by returning to the import logs or
 {% hint style="info" %}
 Additional resources
 
-* [Import Project repository](../../../../scan-with-snyk/import-project-repository/)
-* [API-driven imports](../../../../scan-with-snyk/snyk-tools/tool-snyk-api-import/)
+* [Import Project repository](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/import-project-repository)
+* [API-driven imports](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/tool-snyk-api-import)
 {% endhint %}

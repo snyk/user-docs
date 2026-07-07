@@ -24,11 +24,11 @@ The process of measuring an AI system’s performance, quality, and safety again
 
 ### Agentic
 
-The ability of an AI system to plan, reason, and act independently toward a goal without explicit human instruction. Following multiple instructions, it can determine next steps by itself, without direction.
+The ability of an AI system to plan, reason, and act independently toward a goal without explicit human instruction. Following multiple instructions, it can determine the next steps by itself, without direction.
 
 ### AI observability
 
-The ability to monitor and trace the internal behavior, performance, and decision-making processes of AI systems in real time. It’s critical for traceability especially in the context of complex, distributed, or agentic systems.
+The ability to monitor and trace the internal behavior, performance, and decision-making processes of AI systems in real time. It’s critical for traceability, especially in the context of complex, distributed, or agentic systems.
 
 ### AI orchestration
 
@@ -66,7 +66,7 @@ The parent image used to construct a container image, usually defined in the `FR
 
 ### Broker
 
-See [Snyk Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/).
+See [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker).
 
 ### Build system
 
@@ -80,7 +80,7 @@ Information related to the organization's objectives, priorities, and regulatory
 
 ### CI/CD
 
-Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](../../developer-tools/snyk-ci-cd-integrations/) for details of Snyk CI/CD integrations.
+Continuous integration (CI), continuous delivery (CD), and continuous deployment (CD) together comprise a Software Development Lifecycle (SDLC) model, guiding developers to automate the development and delivery of small, frequent changes. This ensures all team members have access to the latest codebase and can ensure the compatibility of committed code during development. See [Snyk CI/CD](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations) for details of Snyk CI/CD integrations.
 
 ### Class (Snyk Essentials)
 
@@ -100,7 +100,7 @@ A hierarchical list of all assets retrieved from the scanned repositories.
 
 ### Command directive
 
-A Command directive is a type of [Directive](glossary.md#directive) that is manually invoked by you or an AI agent to codify and standardize complex rulesets. For more information, visit [Command directives](../../integrations/snyk-studio-agentic-integrations/directives.md#command-directives).
+A Command directive is a type of [Directive](glossary.md#directive) that is manually invoked by you or an AI agent to codify and standardize complex rulesets. For more information, visit [Command directives](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#command-directives).
 
 ### Container
 
@@ -154,7 +154,7 @@ Dynamic Application Security Testing. A security analysis technique that tests a
 
 ### Directive
 
-A directive is a rule (also known as a command, instruction, and more) which guides an AI agent to produce code in the specified method. Snyk offers code examples for different directive types to implement in your organisation and potentially distribute company wide if you operate in an enterprise model. This is used in context with Snyk Studio. To learn more, visit [Directives](../../integrations/snyk-studio-agentic-integrations/directives.md).
+A directive is a rule (also known as a command, instruction, and more) that guides an AI agent to produce code in the specified method. Snyk offers code examples for different directive types to implement in your organization and potentially distribute company-wide if you operate in an enterprise model. This is used in context with Snyk Studio. To learn more, visit [Directives](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives).
 
 ### Dependency
 
@@ -169,15 +169,15 @@ Also known as Dependency path. A hierarchical graph showing the dependencies of 
 
 ### Development context
 
-Information and requirements surrounding the development of applications within an organization, such as ownership, development tools, environments, teams, workflows, and processes.
+Application development information and requirements in an Organization include ownership, development tools, environments, teams, workflows, and processes.
 
 ### DevOps
 
-A set of cultural philosophies, practices, and tools that combines software development and IT operations to shorten the systems development lifecycle.
+A set of cultural philosophies, practices, and tools that combine software development and IT operations to shorten the systems development lifecycle.
 
 ### DevSecOps
 
-The integration of security into emerging agile IT and DevOps development as seamlessly and as transparently as possible.
+Integrate security seamlessly and transparently into emerging agile IT and DevOps development.
 
 ### Docker
 
@@ -195,11 +195,11 @@ An AI assistant built directly into an existing software application or workflow
 
 ### Environment
 
-Can refer to a cloud environment, a [Project attribute](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/snyk-platform-administration/snyk-projects/project-attributes), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
+Can refer to a cloud environment, a [Project attribute](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-attributes), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
 
 ### Exploit
 
-A demonstration of how a vulnerability can be taken advantage of. When an exploit is widely published, it is commonly referred to as an exploit "in the wild". See [View exploits](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/view-exploits).
+A demonstration of how a vulnerability can be taken advantage of. When an exploit is widely published, it is commonly referred to as an exploit "in the wild". See [View exploits](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/view-exploits).
 
 ### Exploit Maturity
 
@@ -209,11 +209,11 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 
 ### Fixable / Partially fixable
 
-A measure of whether a vulnerability can be fixed by Sny by applying a patch, upgrade, or pin. See [Vulnerability fix types](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types).
+A measure of whether a vulnerability can be fixed by Sny by applying a patch, upgrade, or pin. See [Vulnerability fix types](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types).
 
 ### Fix PR
 
-A pull request with an automatic fix for discovered vulnerabilities that Snyk can offer the user. See [Automated fix PRs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/enable-automatic-backlog-prs-for-previously-known-vulnerabilities).
+A pull request with an automatic fix for discovered vulnerabilities that Snyk can offer the user. See [Automated fix PRs](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-backlog-prs-for-previously-known-vulnerabilities).
 
 ## G
 
@@ -227,7 +227,7 @@ In Snyk, a Group is the top-level entity used to manage multiple Organizations, 
 
 ### Guardrail directive
 
-A Guardrail directive is a type of [Directive](glossary.md#directive) that is automatically injected into AI agent interactions to govern AI agent behaviour. For more information, visit [Guardrail directives](../../integrations/snyk-studio-agentic-integrations/directives.md#guardrail-directives).
+A Guardrail directive is a type of [Directive](glossary.md#directive) that is automatically injected into AI agent interactions to govern AI agent behavior. For more information, visit [Guardrail directives](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#guardrail-directives).
 
 ## H
 
@@ -263,15 +263,15 @@ The real-time process of using a trained AI model to generate an output from new
 
 ### Integrations
 
-Third-party products, applications, and platforms that Snyk works with, for example, SCM systems such as GitHub. See [Integrate with Snyk](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk).
+Third-party products, applications, and platforms that Snyk works with, for example, SCM systems such as GitHub. See [Integrate with Snyk](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/integrate-with-snyk).
 
 ### Issue
 
-A license problem, vulnerability, or misconfiguration identified and listed by Snyk. See [Find and manage priority issues](../../manage-risk/prioritize-issues-for-fixing/).
+A license problem, vulnerability, or misconfiguration identified and listed by Snyk. See [Find and manage priority issues](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing).
 
 ### Issue (Snyk **Essentials**)
 
-An issue is a security problem identified by a Snyk security product when testing an asset, that AppSec teams need to remediate.
+An issue is a security problem identified by a Snyk security product when testing an asset that AppSec teams need to remediate.
 
 ### Issues prioritization (Snyk **Essentials**)
 
@@ -279,7 +279,7 @@ Provides a centralized view of all the issues identified by Snyk with additional
 
 ### Issue context (Snyk **Essentials**)
 
-Information surrounding a particular security issue that serves as objective risk factors such as issue severity level, availability of a fix, exploit maturity.
+Information surrounding a particular security issue that serves as objective risk factors, such as issue severity level, availability of a fix, and exploit maturity.
 
 ## K
 
@@ -295,7 +295,7 @@ A specific type of package.
 
 ### License policy
 
-A set of criteria for evaluating open-source license issues. License policies enable you to set the severity level and define legal instructions for each license. See [License policies](../../manage-risk/policies/license-policies/).
+A set of criteria for evaluating open-source license issues. License policies enable you to set the severity level and define legal instructions for each license. See [License policies](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/license-policies).
 
 ### LLM
 
@@ -313,11 +313,11 @@ A file containing metadata about other files in a package.
 
 ### MCP
 
-Model Context Protocol. An open standard that allows developers to create secure, bidirectional connections between AI-powered tools and their data sources. Visit [Agentic security with Snyk studio](../../integrations/snyk-studio-agentic-integrations/).
+Model Context Protocol. An open standard that allows developers to create secure, bidirectional connections between AI-powered tools and their data sources. Visit [Agentic security with Snyk studio](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio).
 
 ### Monitor
 
-The `snyk monitor` command tests a Project and uploads the results to Snyk. See the CLI help for [Monitor](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/monitor).
+The `snyk monitor` command tests a Project and uploads the results to Snyk. See the CLI help for [Monitor](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor).
 
 ## N
 
@@ -327,7 +327,7 @@ Natural Language Processing.The technology that enables computers to understand,
 
 ### NPX
 
-`npx` (Node Package Execute) is a command-line tool bundled with `npm` that allows you to run `Node.js` packages wihout requiring install.
+`npx` (Node Package Execute) is a command-line tool bundled with `npm` that allows you to run `Node.js` packages without requiring installation.
 
 ## O
 
@@ -341,11 +341,11 @@ Open Container Initiative. An independent body set up to facilitate collaboratio
 
 ### Organization
 
-An Organization in Snyk is a way to collect and organize your Projects. Members of Organizations have access to these Projects. See [Manage Groups and Organizations](../../snyk-platform-administration/groups-and-organizations/).
+An Organization in Snyk is a way to collect and organize your Projects. Members of Organizations have access to these Projects. See [Manage Groups and Organizations](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups-and-organizations).
 
 ### Origin or source
 
-The identifier for the ecosystem that a Target exists in. Snyk can scan Projects from multiple integrations, including CLI, API, GitHub, Kubernetes, and others. See [Snyk Projects](../../snyk-platform-administration/snyk-projects/).
+The identifier for the ecosystem that a Target exists in. Snyk can scan Projects from multiple integrations, including CLI, API, GitHub, Kubernetes, and others. See [Snyk Projects](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects).
 
 ## P
 
@@ -371,7 +371,7 @@ A Personal Access Token (PAT) is a unique string used as an alternative to a pas
 
 ### Pinnable
 
-A fix type. Define and "pin" a specific version of an indirect dependency, to avoid a direct dependency pulling in a vulnerable version.
+A fix type. Define and "pin" a specific version of an indirect dependency to avoid a direct dependency pulling in a vulnerable version.
 
 ### Policy
 
@@ -379,23 +379,23 @@ See [license policy](glossary.md#license-policy), [security policy](glossary.md#
 
 ### **Policy (Snyk Essentials)**
 
-A way to automate actions in certain conditions, like classifying and tagging assets with business context. You can also use a policy to configure actions like sending a message or setting the coverage gap control using a Policy builder UI.
+A way to automate actions in certain conditions, like classifying and tagging assets with business context. You can also use a policy to configure actions, such as sending a message or setting the coverage gap control, using a Policy builder UI.
 
 ### PR
 
-Pull Request. Allows a user to exchange changes made to source code and collaborate with others on the same branch.
+Pull Request. Allows a user to exchange changes made to the source code and collaborate with others on the same branch.
 
 ### PR Checks
 
-Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/).
+Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM). See [Run PR Checks](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/pull-request-checks).
 
 ### Priority Score
 
-Snyk scores issues, including vulnerabilities and licenses for Open Source, to help prioritize the treatment of each one. Scores are based on multiple factors, including the CVSS score, and range from 0 (low) to 1000 (high). See [Priority Score](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/priority-score).
+Snyk scores issues, including vulnerabilities and licenses for Open Source, to help prioritize the treatment of each one. Scores are based on multiple factors, including the CVSS score, and range from 0 (low) to 1000 (high). See [Priority Score](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/priority-score).
 
 ### Project
 
-An external item scanned by Snyk with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See also [Target](glossary.md#target). For details, see [Snyk Projects](../../snyk-platform-administration/snyk-projects/).
+An external item scanned by Snyk with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See also [Target](glossary.md#target). For details, see [Snyk Projects](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects).
 
 ### Prompt
 
@@ -405,7 +405,7 @@ The input or set of instructions provided to an AI model that defines what task 
 
 ### Reachability
 
-Whether an application contains code that will hit a vulnerable code path during execution. See [Reachable vulnerabilities](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/reachability-analysis).
+Whether an application contains code that will hit a vulnerable code path during execution. See [Reachable vulnerabilities](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/reachability-analysis).
 
 ### Registry
 
@@ -413,7 +413,7 @@ See [Container registry](glossary.md#container-registry) or [Package registry](g
 
 ### Remediation directive
 
-A Remediation directive is a type of [Command directive](glossary.md#command-directive) that triggers a full, end-to-end security remediation playbook that results in a secure pull request. For more information, visit [Remediation directives](../../integrations/snyk-studio-agentic-integrations/directives.md#remediation-directives).
+A Remediation directive is a type of [Command directive](glossary.md#command-directive) that triggers a full, end-to-end security remediation playbook that results in a secure pull request. For more information, visit [Remediation directives](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#remediation-directives).
 
 ### Repository
 
@@ -421,7 +421,7 @@ A storage area that contains all elements necessary for the distribution of an a
 
 ### Repository assets (Snyk **Essentials**)
 
-A repository asset is created by discovering the repositories directly in the SCM, when such integration is configured. Alternatively, a repository asset can be created by scanning a repository, (by Snyk or third-party tools) as long as the scanned code is identified with a specific repository.
+A repository asset is created by discovering the repositories directly in the SCM when such integration is configured. Alternatively, a repository asset can be created by scanning a repository (by Snyk or third-party tools) as long as the scanned code is identified with a specific repository.
 
 ### Resource
 
@@ -433,7 +433,7 @@ A value assigned to an issue, ranging from 0 to 1,000, representing the risk imp
 
 ### Rule
 
-A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](../../scan-with-snyk/snyk-code/snyk-code-security-rules/) and [IaC custom rules](../../scan-with-snyk/snyk-iac/current-iac-custom-rules/).
+A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules) and [IaC custom rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac/current-iac-custom-rules).
 
 ## S
 
@@ -459,7 +459,7 @@ A scanned artifact in Snyk Essentials is an entity detected by Snyk that cannot 
 
 ### SCM
 
-Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](../../developer-tools/scm-integrations/organization-level-integrations/).
+Source Code Management. Also known as a code repository (repo) or version control system. The method used by developers to store their source code and track changes to code. SCM helps resolve conflicts when merging updates from multiple contributors. GitHub is an example of a common SCM system. See [Git repositories (SCMs)](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations).
 
 ### SCM Repository freshness (Snyk **Essentials**)
 
@@ -471,11 +471,11 @@ Software Development Lifecycle. A process followed by a development team, descri
 
 ### Secure at inception directive
 
-A Secure at inception directive is a type of [Guardrail directive](../../integrations/snyk-studio-agentic-integrations/directives.md#guardrail-directives), used with Snyk Studio and your coding assistant. For more information, visit [Secure at inception directives](../../integrations/snyk-studio-agentic-integrations/directives.md#secure-at-inception-directives).
+A Secure at inception directive is a type of [Guardrail directive](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#guardrail-directives), used with Snyk Studio and your coding assistant. For more information, visit [Secure at inception directives](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#secure-at-inception-directives).
 
 ### Security policy
 
-A set of criteria for evaluating open-source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. See [Security policies](../../manage-risk/policies/security-policies/).
+A set of criteria for evaluating open-source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. See [Security policies](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/security-policies).
 
 ### Service account
 
@@ -483,19 +483,19 @@ A non-human identity used to authenticate automated processes, such as CI/CD pip
 
 ### Severity
 
-A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/severity-levels).
+A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/severity-levels).
 
 ### Skill (Snyk Studio)
 
-Skills are packaged instructions (containing specialised procedures and knowledge) loaded on demand to guide agent actions. They can be triggered by [Hooks](glossary.md#hook-snyk-studio).
+Skills are packaged instructions (containing specialized procedures and knowledge) loaded on demand to guide agent actions. They can be triggered by [Hooks](glossary.md#hook-snyk-studio).
 
 ### Snapshot
 
-An individual report within the test history of a Project. Includes a tree of dependencies and a list of vulnerabilities that was accurate at the time the test was conducted.
+An individual report within the test history of a Project. Includes a tree of dependencies and a list of vulnerabilities that were accurate at the time the test was conducted.
 
 ### `.snyk` policy
 
-A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/policies/the-.snyk-file).
+A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file).
 
 ### Snyk
 
@@ -507,31 +507,31 @@ A free web application that allows you to compare software packages across open-
 
 ### Snyk API
 
-A Snyk tool that enables developers to integrate programmatically with Snyk. See [Snyk API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/snyk-api/snyk-api).
+A Snyk tool that enables developers to integrate programmatically with Snyk. See [Snyk API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/snyk-api).
 
 ### Snyk Apps
 
-Snyk Apps are the modern and preferred way to build integrations with Snyk, exposing fine-grained scopes for accessing resources over the Snyk APIs, powered by OAuth 2.0 for a developer-friendly experience. See [Snyk Apps](../../snyk-api/using-specific-snyk-apis/snyk-apps-apis/).
+Snyk Apps are the modern and preferred way to build integrations with Snyk, exposing fine-grained scopes for accessing resources over the Snyk APIs, powered by OAuth 2.0 for a developer-friendly experience. See [Snyk Apps](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/using-specific-snyk-apis/snyk-apps-apis).
 
 ### Snyk Broker
 
-A client/server system that serves as an agent or proxy, allowing Snyk to scan private customer environments: Jira, code repositories, or container registries. Snyk Broker relays messages and allows users to filter which messages are allowed through, for example, allowing users to expose only some GitHub APIs to Snyk. See [Snyk Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/).
+A client/server system that serves as an agent or proxy, allowing Snyk to scan private customer environments: Jira, code repositories, or container registries. Snyk Broker relays messages and allows users to filter which messages are allowed through, for example, allowing users to expose only some GitHub APIs to Snyk. See [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker).
 
 ### Snyk CLI
 
-A Snyk platform tool that enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI](../../developer-tools/snyk-cli/).
+A Snyk platform tool that enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli).
 
 ### Snyk Code
 
-A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](../../scan-with-snyk/snyk-code/).
+A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code).
 
 ### Snyk Container
 
-A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container](../../scan-with-snyk/snyk-container/).
+A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container).
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in Kubernetes, Helm, and Terraform configuration files. See [Snyk IaC](../../scan-with-snyk/snyk-iac/).
+A Snyk product. Enables developers to find and fix vulnerabilities in Kubernetes, Helm, and Terraform configuration files. See [Snyk IaC](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-iac).
 
 ### Snyk Learn
 
@@ -539,11 +539,11 @@ An interactive education platform that provides developers with bite-sized lesso
 
 ### Snyk MCP Server
 
-A MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI. For more information, visit [Agentic security with Snyk Studio](../../integrations/snyk-studio-agentic-integrations/).
+An MCP server that enables easy integration with coding assistants, providing security context to AI agents. This runs locally using the Snyk CLI. For more information, visit [Agentic security with Snyk Studio](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio).
 
 ### Snyk Open Source
 
-A Snyk product. Enables developers to find and fix open-source vulnerabilities. See [Snyk Open Source](../../scan-with-snyk/snyk-open-source/).
+A Snyk product. Enables developers to find and fix open-source vulnerabilities. See [Snyk Open Source](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source).
 
 ### Snyk plugin
 
@@ -564,7 +564,7 @@ The browser-based environment that provides users access to Snyk functions.
 
 ### Social Trends
 
-Snyk shows a Trending banner on issues that are being actively discussed on X (formerly known as Twitter). See [Vulnerabilities with Social Trends](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/BJO0IZx7zB6bOkotxQP2/manage-risk/prioritize-issues-for-fixing/vulnerabilities-with-social-trends).
+Snyk shows a Trending banner on issues that are being actively discussed on X (formerly known as Twitter). See [Vulnerabilities with Social Trends](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/prioritize-issues-for-fixing/vulnerabilities-with-social-trends).
 
 ### Source
 
@@ -580,7 +580,7 @@ An authentication method that allows users to access multiple, independent softw
 
 ### Static Code Analysis
 
-A technique for examining source code to identify issues related to code quality, structure, or performance, such as determining code reachability or spotting potential inefficiencies. While this technique may touch on security concerns, its primary focus is often broader, covering various aspects of code health. In contrast, Static Application Security Testing ([SAST](glossary.md#sast)) specifically targets the identification of security vulnerabilities within the code, such as coding flaws that could lead to security risks.
+A technique for examining source code to identify issues related to code quality, structure, or performance, such as determining code reachability or spotting potential inefficiencies. While this technique may address security concerns, its primary focus is often broader, covering various aspects of code health. In contrast, Static Application Security Testing ([SAST](glossary.md#sast)) specifically targets the identification of security vulnerabilities within the code, such as coding flaws that could lead to security risks.
 
 ## T
 
@@ -590,11 +590,11 @@ Representation of an external resource Snyk has scanned. All [Snyk Projects](glo
 
 ### **Tags (Snyk Essentials)**
 
-A way to categorize assets. Helps you recognize or handle assets differently according to mutual properties. Assets can be filtered by their tags in the inventory or when creating policy rules. A tag can be automatically assigned to an asset, or the asset can be tagged by a policy you created. GitHub and GitLab topics are treated as asset tags and you can use them for creating policies.
+A way to categorize assets. Helps you recognize or handle assets differently according to mutual properties. Assets can be filtered by their tags in the inventory or when creating policy rules. A tag can be automatically assigned to an asset, or the asset can be tagged by a policy you created. GitHub and GitLab topics are treated as asset tags, and you can use them for creating policies.
 
 ### Tenant
 
-The top level of the Snyk hierarchy. It encompasses all your Groups and Organizations and all their corresponding Snyk work items. For more information, see [Tenants, Groups, and Organizations](../../snyk-platform-administration/groups-and-organizations/).
+The top level of the Snyk hierarchy. It encompasses all your Groups and Organizations and all their corresponding Snyk work items. For more information, see [Tenants, Groups, and Organizations](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups-and-organizations).
 
 ## U
 
@@ -610,13 +610,13 @@ Vector database. A database that stores information as numerical representations
 
 ### Vulnerability
 
-A security vulnerability that was identified by Snyk. See [Manage vulnerabilities](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/).
+A security vulnerability that was identified by Snyk. See [Manage vulnerabilities](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities).
 
 ## W
 
 ### Webhook
 
-A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code. See [Snyk Webhooks](../../snyk-api/using-specific-snyk-apis/webhooks-apis/).
+A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code. See [Snyk Webhooks](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/using-specific-snyk-apis/webhooks-apis).
 
 ### Web UI
 
@@ -626,4 +626,4 @@ See [Snyk Web UI](glossary.md#snyk-web-ui).
 
 A Snyk feature. This enables Snyk to ingest shallow copies of your Git repositories for scanning, resulting in precise and reliable vulnerability scans.
 
-See [Workspaces for SCM integrations](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/workspaces).
+See [Workspaces for SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/workspaces).

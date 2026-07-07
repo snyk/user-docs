@@ -5,7 +5,7 @@
 Package repository integrations are available only with Enterprise plans. For more information, see [plans and pricing](https://snyk.io/plans/).
 
 **Supported projects**\
-The Artifactory Package Repository integration supports [Node.js](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#supported-package-managers-and-package-registries) (npm and Yarn) and [Maven](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin#supported-package-managers-and-package-registries) Projects. For [Improved Gradle SCM scanning](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle#improved-gradle-scm-scanning), use the Maven settings on this page.
+The Artifactory Package Repository integration supports [Node.js](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#supported-package-managers-and-package-registries) (npm and Yarn) and [Maven](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin#supported-package-managers-and-package-registries) Projects. For [Improved Gradle SCM scanning](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin/git-repositories-with-maven-and-gradle#improved-gradle-scm-scanning), use the Maven settings on this page.
 {% endhint %}
 
 Snyk can use custom Artifactory Package Repositories with Maven Projects.
@@ -14,7 +14,7 @@ This enables Snyk to resolve all direct and transitive dependencies of packages 
 
 Maven Projects can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.
 
-## **Set up custom Maven package registries**
+## Set up custom Maven package registries
 
 If authentication is required for access to your custom registry, you must configure the Artifactory package repository integration; see [Artifactory Package Repository connection setup](./).
 
@@ -38,8 +38,14 @@ Set the **Repository Name** as whatever comes after `artifactory/` in the intern
 
 For example, if the URL is `http://artifactory.company.io/artifactory/libs-release` **Repository Name** should be set as `libs-release`.
 
-## **Additional repositories**
+## Additional repositories
 
 Alternatively, you can configure repositories that will be used as additional locations to check for artifacts.
 
-Repositories are configured in the same way as [Mirrors](artifactory-registry-for-maven.md#mirrors) but do not require **Mirror Of**.
+Repositories are configured in the same way as [Mirrors](artifactory-registry-for-maven.md#mirrors), but do not require **Mirror Of**.
+
+## Test the integration <a href="#test-the-integration" id="test-the-integration"></a>
+
+Retest a Project with private dependencies hosted in Artifactory. Ensure the dependencies appear in the Project's Dependencies tab and Snyk identifies relevant vulnerabilities.
+
+<figure><img src="../../../../.gitbook/assets/testing-the-artifactory-for-maven-integration-in-the-dependencies-tab.png" alt=""><figcaption><p>The Dependencies tree view of a manifest file</p></figcaption></figure>

@@ -38,7 +38,7 @@ For Snyk Open Source, the following requests are allowed:
 
 Snyk Code needs access to the entire repository.
 
-See [How Snyk handles your data](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/how-snyk-handles-your-data) for more details.
+See [How Snyk handles your data](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data) for more details.
 
 ### Outbound requests allowed
 

@@ -32,7 +32,7 @@ If you are using Snyk Essentials for the first time, Snyk recommends starting wi
 You can filter the information for all inventory layouts using the available filters in the **Advanced Filters** section.
 
 {% hint style="info" %}
-The filters **Application**, **Catalog name**, **Category**, **Lifecycle**, **Owner**, **Title** are visible only if you have configured the [application context](../developer-tools/scm-integrations/application-context-for-scm-integrations/) catalog for your SCM integrations.
+The filters **Application**, **Catalog name**, **Category**, **Lifecycle**, **Owner**, **Title** are visible only if you have configured the [application context](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/application-context-for-scm-integrations) catalog for your SCM integrations.
 {% endhint %}
 
 * **Application**: the applications for which you have configured the application context catalog in Snyk Essentials.

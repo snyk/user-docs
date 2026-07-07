@@ -32,7 +32,7 @@ The report allows you to track:
 * Filtering: custom time periods, users, organizations, organization role, and Lesson titles.
 
 {% hint style="info" %}
-[Learning Programs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/discover-snyk/snyk-learn/snyk-learn-learning-programs) are not included in the Engagement Report
+[Learning Programs](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/developer-education-with-snyk-learn/snyk-learn/snyk-learn-learning-programs) are not included in the Engagement Report
 {% endhint %}
 
 ### Learn engagement snapshot and assignment progress

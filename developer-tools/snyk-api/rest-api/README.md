@@ -1,6 +1,6 @@
 # REST API
 
-This section provides an [introduction to the REST API](about-the-rest-api.md) and a resource to help you [get started](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/snyk-api/rest-api/getting-started-with-the-rest-api).
+This section provides an [introduction to the REST API](about-the-rest-api.md) and a resource to help you [get started](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-with-the-rest-api).
 
 For more information, see [Authentication for API](../authentication-for-api/) and the [Changelog](../changelog.md) of updates to the [Reference](../reference/).
 
@@ -11,4 +11,3 @@ Note that the date updated in the changelog is not a valid version number. The v
 For more information about changes in the APIs, see [API End of Life (EOL) process and migration guides](../api-end-of-life-eol-process-and-migration-guides/).
 
 For help finding information about how to use the Snyk API, see [API endpoints index and notes](../api-endpoints-index-and-tips/).
-

@@ -1,7 +1,7 @@
 # Troubleshooting for Visual Studio Code extension
 
 {% hint style="warning" %}
-Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.&#x20;
+Snyk plugins are not supported on any operating system that has reached End Of Life (EOL) with the distributor.
 {% endhint %}
 
 ## Failing CLI download
@@ -34,13 +34,13 @@ To enable the debug log level, start Visual Studio Code from the terminal like t
 
 Alternatively, you can add `-d` to additional parameters in the Snyk extension settings and restart the IDE.
 
-You can obtain the logs by navigating to **View** > **Output.** From the list displayed, select the **Snyk Security** channel and then the **Snyk Language Server** channel to see the debugging information.
+You can obtain the logs by navigating to **View** > **Output**. From the list displayed, select the **Snyk Security** channel and then the **Snyk Language Server** channel to see the debugging information.
 
 The **Snyk Security** channel has information on the extension itself. The **Snyk Language Server** channel receives the Language Server logs, displaying everything that is going on inside the Language Server and the CLI when you are using the extension.
 
 
 
-<figure><img src="../../../.gitbook/assets/2024-12-06-Ts-VS-Code-ext-obt-more-fin-.png" alt="" width="375"><figcaption><p>Logs to use to obtain more information</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-12-06-Ts-VS-Code-ext-obt-more-fin-.png" alt="" width="375"><figcaption><p>Logs to use to obtain more information</p></figcaption></figure>
 
 ## Command not found (getActiveUser, LoginCommand, and so on)
 

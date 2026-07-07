@@ -62,7 +62,7 @@ From macOS and Linux environments, you can use Homebrew to install the Snyk SDK.
 ### **Prerequisites for installing the SDK with Homebrew**
 
 * You must have a macOS or Linux environment.
-*   Ensure [Homebrew](https://brew.sh/index_he) has already been installed:
+*   Ensure [Homebrew](https://brew.sh/) has already been installed:
 
     ```
     brew tap snyk/tap
@@ -78,7 +78,7 @@ brew install snyk-iac-rules
 
 ## Install the SDK with the Windows Scoop package manager
 
-From Windows environments, you can use Scoop to install the  `snyk-iac-rules` SDK. The repository for installation is stored in the [Snyk GitHub](https://github.com/snyk/scoop-snyk).
+From Windows environments, you can use Scoop to install the `snyk-iac-rules` SDK. The repository for installation is stored in the [Snyk GitHub](https://github.com/snyk/scoop-snyk).
 
 ### **Prerequisites for installing the SDK with the Windows Scoop package manager**
 

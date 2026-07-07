@@ -2,7 +2,7 @@
 
 To use the Helm chart in different multi-tenant regions, set the `brokerServerUrl` for the region you are using.
 
-See [Broker URLs](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/ELvljsaLKPkSpffOkmsQ/snyk-data-and-governance/regional-hosting-and-data-residency#broker-server-urls) for the list of regional URLs.
+See [Broker URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#broker-server-urls) for the list of regional URLs.
 
 Use the following command:
 

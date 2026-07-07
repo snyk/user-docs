@@ -13,23 +13,22 @@ This document collects questions the support team receives frequenty and provide
 
 ### How do I ignore issues and vulnerabilities in Code (SAST) scans?
 
-* To ignore a code vulnerability, import the Project into the Snyk UI, and use the ignore button.&#x20;
+* To ignore a code vulnerability, import the Project into the Snyk UI, and use the ignore button.
 * You cannot use the `.snyk` file to ignore issues in Code scans.
 * The `snyk-to-html` tool will display all issues for Code scans whether the issues are ignored or not.
 
 ### How do I avoid scanning certain files for Open Source scans?
 
-* Use the --`exclude` option when scanning with the CLI to omit scanning directories or files but not paths. This option excludes all directories or all files with specified names. For details, see [the --exclude option](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/test#exclude-less-than-name-greater-than-less-than-name-greater-than-...greater-than) in the CLI `test` command help.
-*   If you import a Project through an SCM integration, add the exclusions, folders only, to the bottom of the import window; see [Stage 2: Import Project](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/scm-integrations/deployment-recommendations#stage-2-import-projects) in Git repositories deployment recommendations.\
-
+* Use the --`exclude` option when scanning with the CLI to omit scanning directories or files but not paths. This option excludes all directories or all files with specified names. For details, see [the --exclude option](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/test#exclude-less-than-name-greater-than-less-than-name-greater-than-...greater-than) in the CLI `test` command help.
+*   If you import a Project through an SCM integration, add the exclusions, folders only, to the bottom of the import window; see [Stage 2: Import Project](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/deployment-recommendations#stage-2-import-projects) in Git repositories deployment recommendations.\\
 
     <figure><img src="https://lh7-us.googleusercontent.com/stHVnzk1ZuP6oUm0zAImt0zROcajuZMm5iB4qX7vTbHkjPWklSgD9NxUdZ6UGgT1kV-dBjrcLyOp0SP1CqFzbNuq9S7qgl4cOD6T9UwuWlEk5SWVHUiHRlO-KfAyq_UppnGNvE67p7ZsSwuWok0_2RM" alt="Exclude folders"><figcaption><p>Exclude folders</p></figcaption></figure>
-* You cannot use an `exclude` block in a `.snyk` file for Open Source scans except for unmanaged scans. For details, see [Ignore files or folders using glob expression - Snyk Code and `unmanaged`only](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/ignore#ignore-files-or-folders-using-glob-expression-snyk-code-and-unmanaged-only).
+* You cannot use an `exclude` block in a `.snyk` file for Open Source scans except for unmanaged scans. For details, see [Ignore files or folders using glob expression - Snyk Code and `unmanaged`only](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore#ignore-files-or-folders-using-glob-expression-snyk-code-and-unmanaged-only).
 
 ### How do I avoid scanning certain files for Code scans?
 
-* Use an exclude in a `.snyk` file to omit all scanning of certain files or folders from a Snyk Code scan. For details, see the [`--file-path` option for the `snyk ignore` command](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/ignore#file-path-less-than-path_to_resource-greater-than), [Ignore files or folders using glob expression - Snyk Code and `unmanaged`only](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/ignore#ignore-files-or-folders-using-glob-expression-snyk-code-and-unmanaged-only), and [Exclude directories and files from Snyk Code CLI tests](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests).
-* When you import a repository to test using Snyk Code, use an `exclude:` statement in the `.snyk` file to omit certain directories and files from the import. For details see For details see [Exclude directories and files from Snyk Code CLI tests](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests).
+* Use an exclude in a `.snyk` file to omit all scanning of certain files or folders from a Snyk Code scan. For details, see the [`--file-path` option for the `snyk ignore` command](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore#file-path-less-than-path_to_resource-greater-than), [Ignore files or folders using glob expression - Snyk Code and `unmanaged`only](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore#ignore-files-or-folders-using-glob-expression-snyk-code-and-unmanaged-only), and [Exclude directories and files from Snyk Code CLI tests](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests).
+* When you import a repository to test using Snyk Code, use an `exclude:` statement in the `.snyk` file to omit certain directories and files from the import. For details see For details see [Exclude directories and files from Snyk Code CLI tests](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests).
 * A `.snyk` file with file or folder exclusions and contained in the root directory of your repository or SCM will exclude those files and folders from being scanned when you import using an SCM.
 * The CLI `--exclude` option used with `snyk test` and `snyk monitor` does not apply for Code scans.
 * The Exclude Folders option in the import windows in the Web UI does not apply for Code scans.
@@ -38,11 +37,11 @@ This document collects questions the support team receives frequenty and provide
 
 ### How do I avoid scanning certain files for Container scans?
 
-See the last bullet in the previous section and the [`--exclude-app-vulns`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/container-test#exclude-app-vulns), [`--exclude-base-image-vulns`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/container-test#exclude-base-image-vulns), and [`--exclude-node-modules`](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/commands/container-test#exclude-node-modules)options in the `snyk container test` help.
+See the last bullet in the previous section and the [`--exclude-app-vulns`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-test#exclude-app-vulns), [`--exclude-base-image-vulns`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-test#exclude-base-image-vulns), and [`--exclude-node-modules`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-test#exclude-node-modules)options in the `snyk container test` help.
 
 ### How do I avoid scanning certain files for IaC scans?
 
-See [IaC exclusions using the command line](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IEEjSXQQu36y0vmFV8zf/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-exclusions-using-the-command-line).
+See [IaC exclusions using the command line](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/iac-exclusions-using-the-command-line).
 
 ## Question related to ways excludes and ignores are set
 

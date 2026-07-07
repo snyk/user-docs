@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Release status**
 
-Repository monitoring configuration is in Early Access and available only with Enterprise plans. To enable the feature, visit [Snyk Preview](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/snyk-preview).
+Repository monitoring configuration is in Early Access and available only with Enterprise plans. To enable the feature, visit [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
 {% endhint %}
 
 ## Overview
@@ -27,13 +27,13 @@ You can configure repository monitoring settings for your Projects across multip
 
 {% stepper %}
 {% step %}
-#### Select the repositories to update
+**Select the repositories to update**
 
 Select the repositories you want to update, then click **Configure monitoring.**
 {% endstep %}
 
 {% step %}
-#### Select the configuration type
+**Select the configuration type**
 
 Select one of the following:
 
@@ -44,7 +44,7 @@ Click **Continue**.
 {% endstep %}
 
 {% step %}
-#### Configure settings
+**Configure settings**
 
 On the configuration page, the following configurations are available:
 
@@ -65,7 +65,7 @@ Click **Continue**.
 {% endstep %}
 
 {% step %}
-#### Enable monitoring
+**Enable monitoring**
 
 Review your configuration settings and click **Enable monitoring**.
 {% endstep %}

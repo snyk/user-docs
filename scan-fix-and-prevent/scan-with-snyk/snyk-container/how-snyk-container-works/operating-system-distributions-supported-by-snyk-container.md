@@ -18,6 +18,7 @@ This is the list of supported operating systems and distributions:
 
 ## [Alpine Linux](https://www.alpinelinux.org/)
 
+* Alpine Linux 3.24
 * Alpine Linux 3.23
 * Alpine Linux 3.22
 * Alpine Linux 3.21
@@ -119,6 +120,7 @@ This is the list of supported operating systems and distributions:
 
 ## [Ubuntu](https://ubuntu.com/)
 
+* Ubuntu 26.04 - Resolute Raccoon
 * Ubuntu 25.10 - Questing Quokka
 * Ubuntu 25.04 - Plucky Puffin
 * Ubuntu 24.10 - Oracular Oriole

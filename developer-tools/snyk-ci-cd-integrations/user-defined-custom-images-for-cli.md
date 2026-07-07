@@ -2,7 +2,7 @@
 
 ## Context for user-defined custom images for CLI
 
-Following Snyk announcements regarding [Snyk CLI Images](https://headwayapp.co/snyk-io-updates/deprecation-notice-for-snyk-cli-images-292562) and [Snyk Images](https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563), Snyk is providing instructions that customers will find useful in building their own custom images. You can visit the [Snyk Images build tool chain](https://github.com/snyk/snyk-images) on GitHub for a list of [currently supported images](https://github.com/snyk/snyk-images?tab=readme-ov-file#current-images).
+Following Snyk announcements regarding [Snyk CLI Images](https://updates.snyk.io/deprecation-notice-for-snyk-cli-images-292562) and [Snyk Images](https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563), Snyk is providing instructions that customers will find useful in building their own custom images. You can visit the [Snyk Images build tool chain](https://github.com/snyk/snyk-images) on GitHub for a list of [currently supported images](https://github.com/snyk/snyk-images?tab=readme-ov-file#current-images).
 
 {% hint style="info" %}
 Snyk does not build or maintain images that contain end-of-life software by an upstream vendor. The list of unsupported images is available on the [GitHub repo](https://github.com/snyk/snyk-images?tab=readme-ov-file#vendor-unsupported-base-images).
@@ -15,7 +15,7 @@ Using custom images will allow you to extend environment support to any [environ
 For your custom image to be supported, it must:
 
 * Use an environment [supported](../snyk-cli/install-the-snyk-cli/) by the Snyk CLI.
-* Use a language and framework [supported](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks) by Snyk.
+* Use a language and framework [supported](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks) by Snyk.
 * Have Snyk CLI installed on the image; see [Install or update the Snyk CLI](../snyk-cli/install-the-snyk-cli/) for steps to install the CLI.
 * Be publicly accessible; the integration will pull the image.
 

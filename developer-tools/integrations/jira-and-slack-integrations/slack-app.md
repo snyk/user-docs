@@ -42,7 +42,7 @@ To enable the Snyk app for Slack, you must do the following:
 
 ## Configure the Snyk app for Slack
 
-Ensure the user performing this installation has the permission **Snyk Apps Management - Install Apps** before continuing. See [documentation for member roles](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/snyk-platform-administration/user-roles/user-role-management).
+Ensure the user performing this installation has the permission **Snyk Apps Management - Install Apps** before continuing. See [documentation for member roles](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/user-role-management).
 
 1. Open the [Snyk integrations page](https://app.snyk.io/integrations), navigate to **Notifications**, and click the **Slack App** tile.
 2. You must give authorization for Snyk to access data from Slack by selecting **Authorize with Snyk**.
@@ -103,7 +103,7 @@ After a notification customization has been created, you can edit its configurat
 
 To override Slack notification settings on a per-Project basis, you can use the API [Slack settings ](../../snyk-api/reference/slacksettings.md)endpoints.
 
-Before attempting to use these endpoints, ensure that you have retrieved your authentication token and Organization ID (`org_id`) as outlined in the steps of the [guide for getting started using Snyk REST API.](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/snyk-api/rest-api/getting-started-with-the-rest-api)
+Before attempting to use these endpoints, ensure that you have retrieved your authentication token and Organization ID (`org_id`) as outlined in the steps of the [guide for getting started using Snyk REST API.](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-with-the-rest-api)
 
 ### P**rerequisites** for managing Project-level notification overrides
 

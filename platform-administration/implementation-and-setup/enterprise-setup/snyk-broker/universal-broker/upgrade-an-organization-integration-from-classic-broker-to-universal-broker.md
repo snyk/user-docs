@@ -1,10 +1,12 @@
 # Upgrade an Organization integration from Classic Broker to Universal Broker
 
 {% hint style="info" %}
-Universal Broker operators declare their desired deployment model before running any Broker client, specifying what Broker connections to support. Thus the Classic Broker approach of `org->integrations->broker connections` is evolving to be `broker connections -> integration/org`.
+Before running a Broker client, Universal Broker operators declare their desired deployment model to specify which Broker connections to support. This changes the Classic Broker approach from `organization > integrations > broker connections` to `broker connections > integration/organization`.
+
+You do not need to re-import repositories. The migration acts as a token rotation, and Snyk preserves your existing targets and data if your connection settings remain unchanged.
 {% endhint %}
 
-## Migrating a single Organization
+## Migrate a single Organization
 
 To upgrade existing Classic Broker integrations to Universal Broker for one Organization at a time:
 
@@ -25,7 +27,7 @@ If you run into issues, you can roll back to the Classic Broker client as long a
 2. If any other Classic Broker Organization is left with the same Broker token, after you disconnect the Universal Broker token, use the API endpoint Clone an integration (with settings and credentials) to copy the integration settings from another Organization and reuse the previously used Classic Broker token through the API.
 3. If there are no Classic Broker Organizations left with the old Broker token, then after you disconnect the Universal Broker connection, set up a new Classic Brokered connection. Copy the Broker token from the new Brokered connection as a parameter and restart the Broker container.
 
-## Migrating multiple Organizations
+## Migrate multiple Organizations
 
 The bulk migration workflow allows you to migrate multiple Organizations at the same time. To do this:
 

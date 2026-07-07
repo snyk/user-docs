@@ -22,7 +22,7 @@ This page explains how to set up GitLab Container Registry integration in Snyk a
 3. In the **Container registry name** fill in the full URL to the registry you want to integrate with.
 4. To finish, click **Save**.
 
-If you are using a self-hosted GitLab Container Registry, [contact Snyk Support](https://support.snyk.io/) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/IgtgtomLQ2TUgSKOMSAm/implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker).
+If you are using a self-hosted GitLab Container Registry, [contact Snyk Support](https://support.snyk.io/) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker).
 
 Snyk tests the connection values, and the page reloads, now displaying GitLab Container Registry integration information. The **Add your GitLab container registry images to Snyk** button becomes available.
 

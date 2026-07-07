@@ -58,4 +58,4 @@ This command:
 3. Sends the bill of materials to the Snyk service.
 4. Returns a link to the Snyk service, where you can see the results.
 
-<figure><img src="../../../../.gitbook/assets/monitor (1).png" alt="Recommendatios for upgrading the base image"><figcaption><p>Recommendatios for upgrading the base image</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/monitor (1).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
