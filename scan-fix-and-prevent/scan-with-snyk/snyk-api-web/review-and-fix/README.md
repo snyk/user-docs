@@ -30,7 +30,7 @@ Visit [Severity levels in findings](severity-levels-in-findings.md) for detailed
 
 Snyk lets you review findings in a **Pending Review** state without waiting for manual verification by the Snyk team. This feature gives you immediate access to low-confidence findings so you can speed up your security reviews.
 
-Visit [Review pending findings](review-pending-findings.md) for step-by-step instructions on enabling and using the self-review feature.
+Visit [Review pending findings](https://github.com/snyk/user-docs/blob/main/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/review-and-fix/review-pending-findings.md) for step-by-step instructions on enabling and using the self-review feature.
 
 ### Assign vulnerabilities to team members
 
