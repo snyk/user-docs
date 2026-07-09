@@ -1,3 +1,7 @@
+---
+description: Customer prerequisites for a Snyk Jumpstart consultant-led implementation engagement
+---
+
 # Snyk Jumpstart Customer Prerequisites
 
 ## Overview of Snyk Jumpstart Customer Prerequisites

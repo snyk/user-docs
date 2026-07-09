@@ -1,3 +1,7 @@
+---
+description: Overview of Snyk data handling and governance resources, including data security, hosting, AI, and support and services terms
+---
+
 # Overview
 
 To assist you with operational and governance decisions when using Snyk in your production environment, Snyk provides the following resources:

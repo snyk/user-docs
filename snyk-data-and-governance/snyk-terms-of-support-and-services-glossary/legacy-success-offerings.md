@@ -1,3 +1,7 @@
+---
+description: Terms for legacy Snyk support and success offerings that have reached end-of-sale
+---
+
 # Legacy Success Offerings
 
 The following terms apply to legacy support and success offerings that have reached their end-of-sale date and are no longer available for new purchases or service expansions. For existing customers with an active contract for a legacy offering, the applicable terms remain in full effect for the duration of the agreement.
