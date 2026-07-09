@@ -1,11 +1,5 @@
 # Configure an API target with a Bruno Collection
 
-{% hint style="info" %}
-**Release status**
-
-You can import a Bruno Collection only if you have the feature flag enabled.
-{% endhint %}
-
 Use Bruno Collections to define API endpoints for scanning with Snyk API & Web.
 
 {% hint style="info" %}

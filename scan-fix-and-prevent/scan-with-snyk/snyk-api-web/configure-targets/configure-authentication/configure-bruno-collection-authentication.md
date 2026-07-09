@@ -1,11 +1,5 @@
 # Configure Bruno Collection Authentication
 
-{% hint style="info" %}
-**Release status**
-
-You can import a Bruno Collection only if you have the feature flag enabled.
-{% endhint %}
-
 Configure authentication to scan an API using a Bruno collection.
 
 Configure Snyk API & Web to run authenticated requests that use dynamically generated tokens (through a script). If scans take longer and your token expires, configure Snyk API & Web to detect logout and generate a new token.
@@ -19,7 +13,7 @@ This guide uses a Bruno Collection example with the following requests:
 3. **Get user details:** Requires the authentication token in the request header and the user identifier as a parameter.
 4. **Check token:** Requires the authentication token in the request header to validate the token
 
-For configuring 1, 2 and 3, follow the example in [Configure an API target with a Bruno Collection](configure-an-api-target-with-a-bruno-collection.md).
+For configuring 1, 2 and 3, follow the example in [Configure an API target with a Bruno Collection](../configure-api-targets/configure-an-api-target-with-a-bruno-collection.md).
 
 ### Configure your Bruno collection for authentication
 
