@@ -48,7 +48,7 @@ You can view all imported variables in the interface. Enter values for secret va
 If you want to run authenticated scans for your API, you can use several methods:
 
 * If your collection has static authentication defined, Snyk API & Web uses it. Supported methods are Basic Auth, Bearer Token, and API Key. Define authentication at the collection level. Snyk API & Web does not support folder-level or request-level authentication.
-* If you dynamically generate your authentication token, configure authentication with scripts. See [Configure Bruno authentication](https://app.gitbook.com/s/QTiGglVLHTj5smrGKzeI/snyk-api-and-web-bruno-collection/configure-bruno-collection-authentication).
+* If you dynamically generate your authentication token, configure authentication with scripts. See [Configure Bruno Collection Authentication.](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-bruno-collection-authentication)
 
 ## Verify the configuration
 

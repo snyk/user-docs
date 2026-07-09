@@ -13,7 +13,7 @@ This guide uses a Bruno Collection example with the following requests:
 3. **Get user details:** Requires the authentication token in the request header and the user identifier as a parameter.
 4. **Check token:** Requires the authentication token in the request header to validate the token
 
-For configuring 1, 2 and 3, follow the example in [Configure an API target with a Bruno Collection](../configure-api-targets/configure-an-api-target-with-a-bruno-collection.md).
+For configuring 1, 2 and 3, follow the example in [Configure an API target with a Bruno Collection](configure-an-api-target-with-a-bruno-collection.md).
 
 ### Configure your Bruno collection for authentication
 

@@ -247,7 +247,7 @@
       * [Configure RAML targets](scan-with-snyk/snyk-api-web/configure-targets/configure-api-targets/configure-raml-targets.md)
       * [Configure signed requests](scan-with-snyk/snyk-api-web/configure-targets/configure-api-targets/configure-signed-requests.md)
       * [Configure message level encryption](scan-with-snyk/snyk-api-web/configure-targets/configure-api-targets/configure-message-level-encryption.md)
-      * [Configure an API target with a Bruno Collection](scan-with-snyk/snyk-api-web/configure-targets/configure-api-targets/configure-an-api-target-with-a-bruno-collection.md)
+      * [Configure an API target with a Bruno Collection](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-an-api-target-with-a-bruno-collection.md)
     * [Web targets](scan-with-snyk/snyk-api-web/configure-targets/configure-web-targets/README.md)
       * [Use navigation sequences](scan-with-snyk/snyk-api-web/configure-targets/configure-web-targets/use-navigation-sequences.md)
       * [Use sequence recorder](scan-with-snyk/snyk-api-web/configure-targets/configure-web-targets/use-sequence-recorder.md)
