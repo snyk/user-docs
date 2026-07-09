@@ -1,3 +1,7 @@
+---
+description: Snyk Organizations, which represent teams, products, or environments and contain the Projects you scan
+---
+
 # Organizations
 
 Organizations represent business areas such as teams, products, or environments. An Organization contains [Snyk Projects](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects) that contain the code team members are scanning.

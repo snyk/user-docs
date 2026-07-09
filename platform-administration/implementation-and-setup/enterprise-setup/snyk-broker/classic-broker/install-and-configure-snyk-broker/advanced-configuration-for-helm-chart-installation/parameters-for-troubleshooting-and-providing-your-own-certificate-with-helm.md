@@ -1,3 +1,7 @@
+---
+description: Helm parameters for troubleshooting SSL inspection and providing your own certificate for Snyk Broker
+---
+
 # Parameters for troubleshooting and providing your own certificate with Helm
 
 To troubleshoot SSL inspection issues, you can set the `tlsRejectUnauthorized` parameter to `disable`.

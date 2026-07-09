@@ -1,3 +1,7 @@
+---
+description: How to use an existing Kubernetes service account with the Snyk Broker Helm chart
+---
+
 # Service accounts for Helm Chart installation
 
 To use an existing service account, add the following parameters to the install command:

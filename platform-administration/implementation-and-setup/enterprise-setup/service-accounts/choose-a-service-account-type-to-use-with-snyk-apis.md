@@ -1,3 +1,7 @@
+---
+description: How to choose a Snyk service account type and level, based on the permissions your API automation needs
+---
+
 # Choose a service account type to use with Snyk APIs
 
 ## Group level or Organization level

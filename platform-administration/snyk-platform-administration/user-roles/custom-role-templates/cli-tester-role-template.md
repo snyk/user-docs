@@ -1,3 +1,7 @@
+---
+description: Custom role template for a CLI Tester, an Organization-level role that lets CI/CD service accounts run Snyk CLI tests
+---
+
 # CLI Tester role template
 
 This Organization-level role allows service accounts in CI/CD pipelines to run basic Snyk CLI commands. The role grants permissions to run `snyk test` to check Projects for vulnerabilities and `snyk monitor` to send snapshots to the Snyk UI.

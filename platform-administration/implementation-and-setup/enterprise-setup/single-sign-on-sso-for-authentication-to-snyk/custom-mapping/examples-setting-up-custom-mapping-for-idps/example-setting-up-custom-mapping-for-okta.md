@@ -1,3 +1,7 @@
+---
+description: Example of setting up Snyk custom mapping for Okta roles using legacy custom mapping
+---
+
 # Example: setting up custom mapping for Okta
 
 The following shows two different options for custom mapping of Okta roles, using [Legacy custom mapping](../legacy-custom-mapping.md).

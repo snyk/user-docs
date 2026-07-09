@@ -1,3 +1,7 @@
+---
+description: How to install and configure Snyk Broker for GitHub Enterprise using Docker
+---
+
 # GitHub Enterprise - install and configure using Docker
 
 Before installing, review the [prerequisites ](./)and the general instructions for installation using [Docker](../install-and-configure-broker-using-docker.md).

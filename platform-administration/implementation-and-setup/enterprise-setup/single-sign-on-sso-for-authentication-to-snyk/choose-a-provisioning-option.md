@@ -1,3 +1,7 @@
+---
+description: How to choose a Snyk SSO provisioning option that controls how new users in your company gain access
+---
+
 # Choose a provisioning option
 
 {% hint style="warning" %}

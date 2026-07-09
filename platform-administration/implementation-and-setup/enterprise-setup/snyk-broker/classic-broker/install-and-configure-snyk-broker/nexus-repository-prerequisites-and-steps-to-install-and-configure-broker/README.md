@@ -1,3 +1,7 @@
+---
+description: Prerequisites and steps to install and configure Snyk Broker for Nexus Repository Manager, on Enterprise plans
+---
+
 # Nexus Repository - prerequisites and steps to install and configure Broker
 
 {% hint style="info" %}

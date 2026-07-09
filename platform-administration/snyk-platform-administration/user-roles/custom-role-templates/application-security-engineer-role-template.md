@@ -1,3 +1,7 @@
+---
+description: Custom role template for an Application Security Engineer, an Organization-level role to manage Projects, ignores, and PR checks
+---
+
 # Application Security Engineer role template
 
 This Organization-level role can add, move, and remove Projects and ignores, and can mark PR checks as successful.

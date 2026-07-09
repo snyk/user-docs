@@ -1,3 +1,7 @@
+---
+description: How to provision SSO users to Snyk Organizations and grant permissions before they log in, using the API
+---
+
 # Provision users to Organizations using the API
 
 The Provision user endpoints allow you to organize and grant permissions to your single sign-on users before the users log in to the Snyk platform. The endpoints are [Provision a user to the organizaton](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-provision), [List pending user provisions](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-provision-1), and [Delete pending user provision](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/organizations-v1#org-orgid-provision-2).

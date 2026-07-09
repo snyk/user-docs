@@ -1,3 +1,7 @@
+---
+description: How to manage members of a Snyk Group, available on Enterprise plans
+---
+
 # Manage users in a Group
 
 {% hint style="info" %}

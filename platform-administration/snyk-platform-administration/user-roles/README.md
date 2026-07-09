@@ -1,3 +1,7 @@
+---
+description: Snyk user roles and how they differ by plan, from administrator-only on Free to multiple roles on Enterprise
+---
+
 # User roles
 
 {% hint style="info" %}

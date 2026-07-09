@@ -1,3 +1,7 @@
+---
+description: How to set your preferred Snyk Organization, which Snyk uses by default in the web UI and CLI
+---
+
 # Set your preferred Organization
 
 ## Set your preferred Organization

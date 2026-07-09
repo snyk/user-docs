@@ -1,3 +1,7 @@
+---
+description: How Group admins configure the inactivity session length before Snyk logs users out, by default 24 hours
+---
+
 # Configure session length for a Snyk Group
 
 By default, inactive logged-in users are automatically logged out after 24 hours to protect any account from being exposed inadvertently through user inactivity.

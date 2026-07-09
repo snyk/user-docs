@@ -1,3 +1,7 @@
+---
+description: The inbound and outbound connections between Snyk and the Broker client, and the requests Snyk allows
+---
+
 # Broker inbound and outbound connections and allowed requests
 
 This page provides details about the connections between Snyk and the Broker Client and allowed requests.

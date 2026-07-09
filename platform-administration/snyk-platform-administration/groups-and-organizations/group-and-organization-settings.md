@@ -1,3 +1,7 @@
+---
+description: Overview of Snyk settings at the Group and Organization levels, including general, SSO, and related options
+---
+
 # Group and Organization settings
 
 ## Group settings

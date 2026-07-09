@@ -1,3 +1,7 @@
+---
+description: Snyk service accounts for non-interactive API access, available on Enterprise plans
+---
+
 # Service accounts
 
 {% hint style="info" %}

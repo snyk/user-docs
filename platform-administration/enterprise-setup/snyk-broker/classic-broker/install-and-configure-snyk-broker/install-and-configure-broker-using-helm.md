@@ -1,3 +1,7 @@
+---
+description: How to install and configure the Classic Snyk Broker using Helm
+---
+
 # Install and configure Broker using Helm
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: How to view and modify Snyk Organization general settings from the Settings menu
+---
+
 # Organization general settings
 
 To view and modify settings for your Organization, be sure you are in your Organization and navigate to **Settings** > **General**:

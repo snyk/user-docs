@@ -1,3 +1,7 @@
+---
+description: Example of using the Snyk API to set up a GitHub connection with the Universal Broker
+---
+
 # Using the API to set up a GitHub connection
 
 This page provides an example of using the API to set up a GitHub connection with the Universal Broker. Repeat connecting your Organization for as many integrations as needed.

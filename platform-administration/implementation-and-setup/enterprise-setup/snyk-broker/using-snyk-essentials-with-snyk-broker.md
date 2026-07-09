@@ -1,3 +1,7 @@
+---
+description: How to use Snyk Essentials with Snyk Broker to scan repositories on an SCM that is not publicly accessible
+---
+
 # Using Snyk Essentials with Snyk Broker
 
 If your SCM instance is not publicly accessible, you must use Snyk Broker to scan your repositories.

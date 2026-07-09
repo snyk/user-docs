@@ -1,3 +1,7 @@
+---
+description: How to manage Snyk notifications that alert you to new vulnerabilities found in the Projects you monitor
+---
+
 # Manage notifications
 
 Snyk notifies you automatically when new issues are found in the Projects you are monitoring to alert you to new possible new risks in these Projects.

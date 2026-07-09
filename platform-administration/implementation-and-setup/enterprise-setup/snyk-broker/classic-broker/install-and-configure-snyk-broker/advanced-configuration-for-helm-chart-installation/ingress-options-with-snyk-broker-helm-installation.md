@@ -1,3 +1,7 @@
+---
+description: How to configure the brokerClientUrl and ingress options for a Snyk Broker Helm installation
+---
+
 # Ingress options with Snyk Broker Helm installation
 
 When you are setting up the Broker using Helm, you may need to configure the `brokerClientUrl` parameter. This parameter enables PR Checks if you are connecting to an SCM and enables connecting to Container Registries.

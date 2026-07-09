@@ -1,3 +1,7 @@
+---
+description: How to configure Snyk legacy custom mapping using role patterns in SAML attributes or OIDC claims
+---
+
 # Legacy custom mapping
 
 To configure this option, send the `roles` array within the SAML attributes or OIDC claims to adhere to **one** of the following patterns:

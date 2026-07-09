@@ -1,3 +1,7 @@
+---
+description: Custom role template for an Auditor, a Group-level read-only role for viewing scan results and reports
+---
+
 # Auditor role template
 
 This is a Group-level read-only role, meaning an Auditor can only view certain areas and functions in Snyk and cannot create PRs, Projects, and more.

@@ -1,3 +1,7 @@
+---
+description: Custom role template for a Team Lead, an Organization Admin who can also customize permissions for other users
+---
+
 # Team Lead role template
 
 A Team Lead is equivalent to the default [**Organization Admin**](../pre-defined-roles.md) rol&#x65;**,** providing additional capabilities to customize or change user permissions for other users.\

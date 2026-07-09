@@ -1,3 +1,7 @@
+---
+description: How to migrate Snyk SSO from a legacy identity provider to a new one by submitting new IdP metadata
+---
+
 # Identity Provider (IdP) migration
 
 When migrating from a legacy IdP to a new IdP, you must submit new IdP metadata information to Snyk.

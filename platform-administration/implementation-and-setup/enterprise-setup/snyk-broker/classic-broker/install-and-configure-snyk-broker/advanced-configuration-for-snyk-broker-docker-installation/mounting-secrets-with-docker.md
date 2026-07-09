@@ -1,3 +1,7 @@
+---
+description: How to load Snyk Broker secrets such as tokens from files instead of environment variables with Docker
+---
+
 # Mounting secrets with Docker
 
 Sometimes it is required to load sensitive configurations, the GitHub or Snyk token, from a file instead of from environment variables. Broker is using [dotenv](https://www.npmjs.com/package/dotenv) to load the config, so the process is relatively simple:

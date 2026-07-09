@@ -1,5 +1,5 @@
 ---
-description: Usage of this mode is discouraged.
+description: How to use insecure downstream HTTP mode for a Snyk Broker Helm chart installation
 ---
 
 # Insecure Downstream Mode

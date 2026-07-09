@@ -1,3 +1,7 @@
+---
+description: Environment variables required to configure the Snyk Broker client for GitHub Enterprise
+---
+
 # GitHub Enterprise - environment variables for Snyk Broker
 
 The following environment variables are required to configure the Broker Client: for GitHub Enterprise:

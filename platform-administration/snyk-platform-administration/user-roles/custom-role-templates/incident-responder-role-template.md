@@ -1,3 +1,7 @@
+---
+description: Custom role template for an Incident Responder, an Organization-level role for quickly finding and addressing vulnerabilities
+---
+
 # Incident Responder role template
 
 This Organization-level role needs quick access to core functionality in Snyk to find issues of a particular type and make changes.

@@ -1,3 +1,7 @@
+---
+description: Common questions about Snyk Broker, including update frequency and how it works
+---
+
 # Common questions about Broker
 
 ## How often is Snyk Broker updated?

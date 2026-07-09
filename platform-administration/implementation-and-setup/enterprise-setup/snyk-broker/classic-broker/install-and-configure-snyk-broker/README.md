@@ -1,3 +1,7 @@
+---
+description: How to install and configure the Classic Snyk Broker proxy between Snyk and your integrations
+---
+
 # Install and configure Snyk Broker
 
 ## How to use Snyk Broker
