@@ -1,3 +1,7 @@
+---
+description: How to test serverless files with Snyk IaC using the CLI
+---
+
 # Serverless files
 
 With Snyk Infrastructure as Code, you can test your configuration files using the CLI.

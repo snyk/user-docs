@@ -1,3 +1,7 @@
+---
+description: How Snyk scans Terraform plans on each run through the Terraform Cloud integration
+---
+
 # How to use the Terraform Cloud integration for IaC
 
 After your integration is set up, Snyk scans Terraform plans for each run triggered in your workspace.

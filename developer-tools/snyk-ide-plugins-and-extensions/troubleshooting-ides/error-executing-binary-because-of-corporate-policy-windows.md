@@ -1,3 +1,7 @@
+---
+description: How to resolve Snyk binary execution errors from AppData restrictions on Windows
+---
+
 # Error executing binary because of corporate policy (Windows)
 
 ## **Problem**

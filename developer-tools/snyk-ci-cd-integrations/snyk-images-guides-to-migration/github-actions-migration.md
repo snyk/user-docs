@@ -1,3 +1,7 @@
+---
+description: How to migrate GitHub Actions away from affected Snyk actions
+---
+
 # GitHub actions migration
 
 This page explains how to transition away from affected GitHub actions

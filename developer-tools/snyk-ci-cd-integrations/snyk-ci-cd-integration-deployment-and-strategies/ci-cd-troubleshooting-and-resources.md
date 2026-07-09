@@ -1,3 +1,7 @@
+---
+description: Tips and resources for troubleshooting and scaling Snyk CI/CD integrations
+---
+
 # CI/CD troubleshooting and resources
 
 This page provides a few tips to help troubleshoot or scale CI/CD integrations.

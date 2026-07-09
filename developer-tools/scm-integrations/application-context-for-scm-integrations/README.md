@@ -1,3 +1,7 @@
+---
+description: How application context enriches Snyk SCM integrations with interconnected asset information
+---
+
 # Application context for SCM integrations
 
 ## What is application context?

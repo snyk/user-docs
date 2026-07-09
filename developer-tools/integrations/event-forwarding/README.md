@@ -1,3 +1,7 @@
+---
+description: How Snyk event forwarding pushes platform events to other products
+---
+
 # Event forwarding
 
 Snyk event forwarding integrations allow you to push Snyk platform events directly to certain products on other platforms, enabling you to set up custom alerting, build your own reporting, trigger automation, and more.

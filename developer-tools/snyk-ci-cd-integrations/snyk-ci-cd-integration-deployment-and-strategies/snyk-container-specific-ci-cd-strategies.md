@@ -1,3 +1,7 @@
+---
+description: CI/CD strategies for running Snyk Container after the container image is built
+---
+
 # Snyk Container-specific CI/CD strategies
 
 The best time to implement Snyk Container in your pipeline is after the container image is built, that is, after running the equivalent of `docker build`, and before your image is either pushed into your registry (`docker push`) or deployed to your running infrastructure (`helm install`, `kubectl apply`, and so on).

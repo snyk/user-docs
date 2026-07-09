@@ -1,3 +1,7 @@
+---
+description: How to customize the snyk test command with options for Snyk Open Source
+---
+
 # Use options to customize the snyk test command
 
 The Snyk CLI has many commands that enable you to perform various tasks and many options that enable you to customize the commands. For details, see the [CLI help](../../commands/). This page explains how to customize snyk test to accomplish tasks you may want to do in testing Open Source Projects.

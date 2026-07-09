@@ -1,3 +1,7 @@
+---
+description: The Snyk Language Server that powers Snyk functionality across supported IDEs
+---
+
 # Snyk Language Server
 
 Snyk offers IDE integrations that allow you to use the functionality of Snyk in your Integrated Development Environment or Editor. This page describes the Snyk Language Server that can provide diagnostics for any IDE or Editor that supports the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/). For information about all of the IDE plugins and extensions and their use, see [Snyk IDE plugins and extensions](../).

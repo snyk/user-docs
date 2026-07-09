@@ -1,3 +1,7 @@
+---
+description: How to test Terraform files with Snyk IaC using the CLI
+---
+
 # Terraform files
 
 With Snyk Infrastructure as Code, you can scan both your static configuration files and Terraform plan output using the CLI.

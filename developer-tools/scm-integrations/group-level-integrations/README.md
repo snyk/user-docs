@@ -1,3 +1,7 @@
+---
+description: How Group-level SCM integrations give broader visibility into all application assets for a customer
+---
+
 # Group-level integrations
 
 Group-level SCM integrations provide broader visibility into all the application assets for a given customer and pull in the additional application context and, or metadata, for example, information on developers, commits, and so on.

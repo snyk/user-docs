@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for exporting data
+---
+
 # Export
 
 {% hint style="info" %}

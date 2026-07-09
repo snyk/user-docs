@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for collections
+---
+
 # Collection
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: How to control API rate limits for the scm-contributors-count tool
+---
+
 # API rate limit control for scm-contributors-count
 
 ## Azure DevOps

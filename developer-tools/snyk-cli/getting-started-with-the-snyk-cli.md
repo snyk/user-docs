@@ -1,3 +1,7 @@
+---
+description: How to get started with the Snyk CLI, from installation to your first scan
+---
+
 # Getting started with the Snyk CLI
 
 ## Introduction to the Snyk CLI

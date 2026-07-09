@@ -1,3 +1,7 @@
+---
+description: How the Snyk Security Scan task runs on each Azure Pipelines build
+---
+
 # How the Snyk Security Scan task works
 
 After the Snyk Security Scan task is added to a pipeline, each time the pipeline runs, the Snyk task performs the following actions:

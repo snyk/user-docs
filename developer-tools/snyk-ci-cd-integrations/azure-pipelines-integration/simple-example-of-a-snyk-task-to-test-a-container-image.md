@@ -1,3 +1,7 @@
+---
+description: A simple example of a Snyk task to test a container image in Azure Pipelines
+---
+
 # Simple example of a Snyk task to test a container image
 
 The following is a simple example of a Snyk task to test a container image.

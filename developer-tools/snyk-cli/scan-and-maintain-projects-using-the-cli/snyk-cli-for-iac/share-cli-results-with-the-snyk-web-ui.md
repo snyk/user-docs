@@ -1,3 +1,7 @@
+---
+description: How to share Snyk IaC CLI results with the Snyk Web UI
+---
+
 # Share CLI results with the Snyk Web UI
 
 You can use the [CLI](../../) `snyk iac test` command to address known configuration issues.

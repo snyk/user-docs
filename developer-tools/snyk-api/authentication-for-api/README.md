@@ -1,3 +1,7 @@
+---
+description: How to authenticate to the Snyk API using a token, for Enterprise plan customers
+---
+
 # Authentication for API
 
 {% hint style="info" %}

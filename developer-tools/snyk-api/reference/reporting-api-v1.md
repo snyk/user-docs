@@ -1,3 +1,7 @@
+---
+description: Snyk V1 API endpoints for reporting
+---
+
 # Reporting API (v1)
 
 {% hint style="info" %}

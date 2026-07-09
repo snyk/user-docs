@@ -1,3 +1,7 @@
+---
+description: How to configure the Snyk Security Scan task to use a regional Snyk API endpoint in Azure Pipelines
+---
+
 # Regional API endpoints
 
 By default, the task uses the [https://api.snyk.io](https://api.snyk.io) endpoint. To configure Snyk to use a different endpoint set a `SNYK_API` environment variable in the pipeline, for example, `https://api.eu.snyk.io`.

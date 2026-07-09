@@ -1,3 +1,7 @@
+---
+description: About the Snyk REST API, based on the JSON:API standard and defined in OpenAPI 3.0.3
+---
+
 # About the REST API
 
 The Snyk REST API is based on the [JSON:API standard](https://jsonapi.org/), defined in [OpenAPI 3.0.3](https://spec.openapis.org/oas/v3.0.3.html), and represents an evolutionary approach to API development, with each endpoint versioned. For more information, see the [Versioning](about-the-rest-api.md#versioning) section on this page.

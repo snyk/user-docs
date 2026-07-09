@@ -1,3 +1,7 @@
+---
+description: Snyk API endpoints that are candidates for upcoming end-of-life cadences
+---
+
 # Candidates for upcoming API end-of-life cadences
 
 This page contains the list of V1, non-GA REST, and older versions of GA REST endpoints that are potential candidates for future end-of-life cadences. To see which endpoints are end-of-life'd, see [API EOL endpoints and key dates](api-eol-endpoints-and-key-dates.md).

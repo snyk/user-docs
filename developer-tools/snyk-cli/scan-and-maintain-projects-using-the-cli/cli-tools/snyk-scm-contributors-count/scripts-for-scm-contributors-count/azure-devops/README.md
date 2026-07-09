@@ -1,5 +1,5 @@
 ---
-description: Flow and Tech for Azure DevOps
+description: Flow, technology, and examples for the Azure DevOps scm-contributors-count script
 ---
 
 # Azure DevOps

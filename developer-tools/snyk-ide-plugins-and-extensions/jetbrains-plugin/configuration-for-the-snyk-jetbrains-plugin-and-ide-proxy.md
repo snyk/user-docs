@@ -1,3 +1,7 @@
+---
+description: How to configure the Snyk JetBrains plugin, including IDE proxy settings
+---
+
 # Configuration for the Snyk JetBrains plugin and IDE proxy
 
 {% hint style="info" %}

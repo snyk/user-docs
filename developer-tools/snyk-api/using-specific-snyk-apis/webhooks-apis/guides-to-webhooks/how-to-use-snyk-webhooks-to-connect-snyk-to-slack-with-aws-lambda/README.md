@@ -1,3 +1,7 @@
+---
+description: How to connect Snyk to Slack using webhooks and AWS Lambda
+---
+
 # Using Snyk Webhooks to connect Snyk to Slack with AWS Lambda
 
 You can use Snyk Webhooks alongside a Lambda function to receive and filter new vulnerabilities discovered by Snyk in your Slack.

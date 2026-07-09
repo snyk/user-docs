@@ -1,3 +1,7 @@
+---
+description: How to revoke and regenerate a Snyk API token, and the effect on integrations
+---
+
 # Revoke and regenerate a Snyk API token
 
 {% hint style="warning" %}

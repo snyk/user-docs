@@ -1,3 +1,7 @@
+---
+description: How to use snyk test and snyk monitor in a CI/CD pipeline for Snyk Open Source Projects
+---
+
 # Snyk test and snyk monitor in CI/CD integration
 
 Depending on your approach and goals for your Snyk Open Source Project, you may need to use both the `snyk monitor` and `snyk test` commands in your pipeline. Examples and details follow.

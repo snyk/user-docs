@@ -1,3 +1,7 @@
+---
+description: Migration guide from the experimental REST Issues API to the GA API
+---
+
 # REST Issues experimental API to GA API migration guide
 
 {% hint style="info" %}

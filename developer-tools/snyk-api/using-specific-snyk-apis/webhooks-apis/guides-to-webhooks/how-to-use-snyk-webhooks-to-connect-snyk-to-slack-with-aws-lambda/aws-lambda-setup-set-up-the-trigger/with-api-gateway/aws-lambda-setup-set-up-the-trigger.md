@@ -1,3 +1,7 @@
+---
+description: How to set up an AWS API Gateway trigger for the Snyk to Slack Lambda function
+---
+
 # AWS API Gateway: Setting up a trigger
 
 Follow these steps to add the AWS API Gateway to the function:

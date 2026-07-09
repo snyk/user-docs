@@ -1,3 +1,7 @@
+---
+description: How to resolve certificate path errors in Snyk IDE plugins
+---
+
 # Troubleshoot certificate errors
 
 ## Problem <a href="#problem" id="problem"></a>

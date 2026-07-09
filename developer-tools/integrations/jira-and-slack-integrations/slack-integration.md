@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk Slack integration, with the Slack App recommended
+---
+
 # Slack integration
 
 {% hint style="warning" %}

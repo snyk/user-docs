@@ -1,3 +1,7 @@
+---
+description: How to install the Snyk CLI across major operating systems
+---
+
 # Install the Snyk CLI
 
 The Snyk CLI can be installed across all major operating systems using several different methods, depending on your existing toolset:

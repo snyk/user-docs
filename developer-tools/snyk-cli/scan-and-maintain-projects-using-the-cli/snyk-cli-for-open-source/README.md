@@ -1,3 +1,7 @@
+---
+description: How to use the Snyk CLI for Snyk Open Source to scan manifests
+---
+
 # Snyk CLI for Open Source
 
 Snyk Open Source scans your manifest files. Based on the scan, Snyk creates a hierarchical tree of the structure represented in the manifest file: both its direct and indirect (transitive) dependencies and the points at which the different packages are introduced.

@@ -1,3 +1,7 @@
+---
+description: Overview of the Snyk API, mostly available on Enterprise plans, including the REST and V1 APIs
+---
+
 # Overview
 
 {% hint style="info" %}

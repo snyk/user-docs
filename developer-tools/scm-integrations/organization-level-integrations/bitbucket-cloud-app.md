@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk Bitbucket Cloud App, the default Bitbucket Cloud integration
+---
+
 # Bitbucket Cloud App
 
 The Bitbucket Cloud App is positioned to be the default Bitbucket Cloud integration

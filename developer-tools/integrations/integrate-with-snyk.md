@@ -1,3 +1,7 @@
+---
+description: Overview of Snyk integrations across agentic workflows, SCMs, IDEs, CI/CD pipelines, and more
+---
+
 # Overview
 
 ## Snyk Studio - Agentic integrations

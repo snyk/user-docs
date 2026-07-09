@@ -1,3 +1,7 @@
+---
+description: How the Snyk Eclipse plugin uses folder trust before scanning new folders
+---
+
 # Eclipse plugin folder trust
 
 The Snyk plugin asks for folder trust before allowing scans to be run against new folders.

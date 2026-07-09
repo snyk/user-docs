@@ -1,3 +1,7 @@
+---
+description: How to authenticate the Snyk Visual Studio Code extension, including the supported protocols
+---
+
 # Authentication for Visual Studio Code extension
 
 To scan your Projects, you must authenticate with Snyk.

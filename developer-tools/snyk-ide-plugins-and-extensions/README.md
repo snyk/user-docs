@@ -1,3 +1,7 @@
+---
+description: Snyk IDE plugins and extensions for scanning as you develop, including custom endpoint configuration
+---
+
 # Snyk IDE plugins and extensions
 
 {% hint style="info" %}

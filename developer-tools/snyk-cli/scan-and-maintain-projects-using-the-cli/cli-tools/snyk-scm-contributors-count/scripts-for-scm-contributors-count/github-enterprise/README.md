@@ -1,5 +1,5 @@
 ---
-description: Flow and Tech for GitHub Enterprise
+description: Flow, technology, and examples for the GitHub Enterprise scm-contributors-count script
 ---
 
 # GitHub Enterprise

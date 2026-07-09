@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for findings
+---
+
 # Findings
 
 {% hint style="info" %}

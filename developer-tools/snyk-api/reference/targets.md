@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for targets
+---
+
 # Targets
 
 {% hint style="info" %}

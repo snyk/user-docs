@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot the Snyk Eclipse plugin, including unsupported end-of-life operating systems
+---
+
 # Troubleshooting for the Eclipse plugin
 
 {% hint style="warning" %}

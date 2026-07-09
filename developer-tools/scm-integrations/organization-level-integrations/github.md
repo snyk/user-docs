@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk GitHub SCM integration, including prerequisites and Broker for private repositories
+---
+
 # GitHub
 
 ### Prerequisites for GitHub integration

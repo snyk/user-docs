@@ -1,3 +1,7 @@
+---
+description: Examples of using the Snyk GitHub Action for Ruby
+---
+
 # Snyk Ruby action
 
 This page provides examples of using the Snyk GitHub Action for [Ruby](https://github.com/snyk/actions/tree/master/ruby). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).

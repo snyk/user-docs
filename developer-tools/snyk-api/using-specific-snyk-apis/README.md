@@ -1,3 +1,7 @@
+---
+description: How to use specific Snyk API endpoints for common tasks
+---
+
 # Using specific Snyk APIs
 
 This section provides information on how to use specific Snyk APIs.

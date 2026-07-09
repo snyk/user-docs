@@ -1,3 +1,7 @@
+---
+description: How to view Snyk IaC configuration results for Terraform, Kubernetes, and CloudFormation in VS Code
+---
+
 # Analysis results: Snyk IaC configuration
 
 Snyk IaC configuration analysis shows issues in your Terraform, Kubernetes, AWS CloudFormation, and Azure Resource Manager (ARM) code with every scan. Based on the Snyk CLI, the scan is fast and friendly for local development. The scan runs in the background and is enabled by default.

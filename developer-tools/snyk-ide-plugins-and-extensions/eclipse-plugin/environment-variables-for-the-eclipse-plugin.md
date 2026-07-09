@@ -1,3 +1,7 @@
+---
+description: Environment variables the Snyk Eclipse plugin passes to the Snyk CLI for open source and IaC scans
+---
+
 # Environment variables for the Eclipse plugin
 
 To analyze open-source dependencies and IAC template files, the plugin uses the Snyk CLI. The CLI needs the following environment variables:

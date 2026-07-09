@@ -1,3 +1,7 @@
+---
+description: How to refresh an expiring access token in a Snyk App
+---
+
 # Set up the refresh token exchange
 
 As the `access_token` will expire in a short time, the App will need to frequently request a new one using the `refresh_token`. This must be done while the `refresh_token` itself is still valid.

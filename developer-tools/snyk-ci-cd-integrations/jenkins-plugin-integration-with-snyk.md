@@ -1,3 +1,7 @@
+---
+description: How to use the native Snyk Jenkins plugin, based on the Snyk CLI, to test and monitor Projects
+---
+
 # Jenkins plugin integration with Snyk
 
 Snyk offers a native plugin for Jenkins that is based on the [Snyk CLI](../snyk-cli/), to test and monitor Projects for vulnerabilities in your pipelines.

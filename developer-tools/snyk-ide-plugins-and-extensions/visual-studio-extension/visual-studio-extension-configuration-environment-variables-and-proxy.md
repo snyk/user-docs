@@ -1,3 +1,7 @@
+---
+description: How to configure the Snyk Visual Studio extension, including environment variables and proxy settings
+---
+
 # Visual Studio extension configuration, environment variables, and proxy
 
 After the plugin is installed, you can set the following configurations for the extension.

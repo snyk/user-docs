@@ -1,3 +1,7 @@
+---
+description: The jira-tickets-for-new-vulns tool that opens Jira tickets for new vulnerabilities in Snyk-monitored Projects
+---
+
 # Tool: jira-tickets-for-new-vulns
 
 `jira-tickets-for-new-vulns` provides the means to sync your Snyk-monitored projects and automatically open Jira tickets for new issues and existing issue(s) without ticket(s) already created.

@@ -1,3 +1,7 @@
+---
+description: Examples of using the Snyk GitHub Action for Go
+---
+
 # Snyk Golang action
 
 This page provides examples of using the Snyk GitHub Action for [Golang](https://github.com/snyk/actions/tree/master/golang). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).

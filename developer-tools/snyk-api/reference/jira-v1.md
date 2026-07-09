@@ -1,3 +1,7 @@
+---
+description: Snyk V1 API endpoints for the Jira integration
+---
+
 # Jira (v1)
 
 {% hint style="info" %}

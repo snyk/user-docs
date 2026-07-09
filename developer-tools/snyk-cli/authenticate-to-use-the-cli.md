@@ -1,3 +1,7 @@
+---
+description: How to authenticate the Snyk CLI after installation
+---
+
 # Authenticate to use the CLI
 
 Once you have [installed the Snyk CLI](install-the-snyk-cli/) using your chosen tool or operating system (OS), you need to authenticate with your Snyk account.

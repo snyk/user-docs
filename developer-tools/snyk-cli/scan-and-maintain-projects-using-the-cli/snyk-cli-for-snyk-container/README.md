@@ -1,3 +1,7 @@
+---
+description: How to use the Snyk CLI for Snyk Container image scanning
+---
+
 # Snyk CLI for Snyk Container
 
 {% hint style="info" %}

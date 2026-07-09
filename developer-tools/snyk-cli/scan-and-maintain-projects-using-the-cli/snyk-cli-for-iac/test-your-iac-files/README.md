@@ -1,3 +1,7 @@
+---
+description: How to test infrastructure as code files with the Snyk CLI
+---
+
 # Test your IaC files
 
 {% hint style="info" %}

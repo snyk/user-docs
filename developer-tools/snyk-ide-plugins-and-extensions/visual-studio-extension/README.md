@@ -1,3 +1,7 @@
+---
+description: The Snyk Visual Studio extension for scanning and fixing vulnerabilities as you develop
+---
+
 # Visual Studio extension
 
 {% hint style="info" %}

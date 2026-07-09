@@ -1,3 +1,7 @@
+---
+description: How to configure how the Snyk CLI connects to the Snyk API, including the platform URL and region
+---
+
 # Configure Snyk CLI to connect to Snyk API
 
 ## Configure the Snyk platform URL

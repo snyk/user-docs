@@ -1,3 +1,7 @@
+---
+description: Examples of using the Snyk GitHub Action for Gradle with JDK 14
+---
+
 # Snyk Gradle-jdk14 action
 
 This page provides examples of using the Snyk GitHub action for [Gradle (jdk14)](https://github.com/snyk/actions/tree/master/gradle-jdk14). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).

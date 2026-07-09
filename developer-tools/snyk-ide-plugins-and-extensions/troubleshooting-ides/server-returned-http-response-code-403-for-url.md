@@ -1,3 +1,7 @@
+---
+description: How to resolve an HTTP 403 error by checking the Snyk endpoint URL and token
+---
+
 # Server returned HTTP response code 403 for URL
 
 Check the endpoint URL and the authentication information.

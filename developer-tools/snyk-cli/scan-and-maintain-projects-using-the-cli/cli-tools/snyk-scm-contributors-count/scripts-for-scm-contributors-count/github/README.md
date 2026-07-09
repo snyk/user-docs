@@ -1,5 +1,5 @@
 ---
-description: Flow and Tech for GitHub
+description: Flow, technology, and examples for the GitHub scm-contributors-count script
 ---
 
 # GitHub

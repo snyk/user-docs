@@ -1,3 +1,7 @@
+---
+description: Prerequisites for the Snyk CLI and Jenkins plugin on Alpine Linux
+---
+
 # Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system
 
 Before running Snyk CLI and Snyk Jenkins plugin on the Alpine Linux operating system, follow these steps to establish the prerequisites:

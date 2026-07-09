@@ -1,3 +1,7 @@
+---
+description: Guides for integrating with Snyk webhooks
+---
+
 # Guides to webhooks
 
 This section includes the following guides:

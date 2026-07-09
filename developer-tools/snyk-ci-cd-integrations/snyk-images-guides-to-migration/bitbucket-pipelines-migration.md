@@ -1,3 +1,7 @@
+---
+description: How to migrate Bitbucket Pipelines away from affected Snyk scan images
+---
+
 # BitBucket Pipelines migration
 
 ## For users of `snyk/snyk-scan` < v1.0.0 <a href="#users-using-snyk-snyk-scan-less-than-v1.0.0" id="users-using-snyk-snyk-scan-less-than-v1.0.0"></a>

@@ -1,3 +1,7 @@
+---
+description: Open Source Projects that must be built before testing with the Snyk CLI
+---
+
 # Open Source Projects that must be built before testing with the Snyk CLI
 
 For some types of Open Source Projects, you must build the Project before testing it with the [Snyk CLI.](../../)

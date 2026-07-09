@@ -1,3 +1,7 @@
+---
+description: How to test Helm charts with Snyk IaC using the CLI
+---
+
 # Helm charts
 
 You scan a Helm chart by rendering the Helm templates into Kubernetes manifest files and then scanning these using the Snyk CLI `snyk iac` command.

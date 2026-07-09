@@ -1,3 +1,7 @@
+---
+description: How to debug the Snyk CLI when working with your Projects
+---
+
 # Debugging the Snyk CLI
 
 When working with the CLI on your Projects, it is possible that you encounter unexpected behavior that requires investigation. Such behavior can be caused by configuration, environment, or bugs.

@@ -1,3 +1,7 @@
+---
+description: How to authenticate to Snyk from third-party developer tools using an API token from a personal or service account
+---
+
 # Authentication for third-party tools
 
 When you work with Snyk from within any third-party tool, Snyk requires authentication in order to initiate its processes.

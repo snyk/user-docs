@@ -1,3 +1,7 @@
+---
+description: How to use a .snyk policy file in a different directory from the manifest file
+---
+
 # A .snyk policy file in a different directory from the manifest file
 
 When you scan a project with the CLI, the `.snyk` policy file may be in a different directory from the manifest file, either because of the structure of the project or because the project has multiple manifest files using the same policy file.

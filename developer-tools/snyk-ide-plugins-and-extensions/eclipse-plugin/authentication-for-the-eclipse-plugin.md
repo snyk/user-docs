@@ -1,3 +1,7 @@
+---
+description: How to authenticate the Snyk Eclipse plugin, including the supported protocols
+---
+
 # Authentication for the Eclipse plugin
 
 To scan your Projects, you must authenticate with Snyk.

@@ -1,5 +1,5 @@
 ---
-description: Flow and Tech for Bitbucket Cloud
+description: Flow, technology, and examples for the Bitbucket Cloud scm-contributors-count script
 ---
 
 # Bitbucket Cloud

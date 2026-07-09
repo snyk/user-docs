@@ -1,3 +1,7 @@
+---
+description: What Snyk Apps are and how they extend Snyk functionality through integrations
+---
+
 # About Snyk Apps
 
 Snyk Apps are integrations that extend the functionality of the Snyk platform, allowing you to create a Snyk experience to suit your specific needs.

@@ -1,3 +1,7 @@
+---
+description: How to get the SBOM document for a Project with the Snyk REST API
+---
+
 # Get a Project’s SBOM document
 
 {% hint style="info" %}

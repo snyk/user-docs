@@ -1,3 +1,7 @@
+---
+description: How to retrieve the Organization IDs a user connected to a Snyk App
+---
+
 # Retrieve the App Org IDs
 
 Users may connect with a single Organization or a single Group. Most of the Snyk API endpoints require an `orgid` in the path, which is used for authorizing the action being performed.

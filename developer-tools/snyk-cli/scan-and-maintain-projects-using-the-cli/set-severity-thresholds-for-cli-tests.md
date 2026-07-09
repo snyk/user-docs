@@ -1,3 +1,7 @@
+---
+description: How to set severity thresholds for Snyk CLI tests
+---
+
 # Severity thresholds for CLI tests
 
 To improve control over your tests, you can use the `--severity-threshold` option for the `snyk test` command with one of the supported levels: `low|medium|high|critical`. With this option, only vulnerabilities of **the specified level or higher** are reported.

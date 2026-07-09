@@ -1,3 +1,7 @@
+---
+description: How to use FIPS-validated cryptography with the Snyk CLI
+---
+
 # Using FIPS-validated cryptography
 
 ## Availability of FIPS-validated cryptography in Snyk

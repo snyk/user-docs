@@ -1,3 +1,7 @@
+---
+description: Snyk webhook events and their payload formats
+---
+
 # Webhook events and payloads
 
 Webhooks are delivered with a `Content-Type` of `application/json`, with the event payload as JSON in the request body. We also send the following headers:

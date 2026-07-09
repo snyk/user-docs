@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk IaC with Terraform Cloud using run tasks
+---
+
 # Terraform Cloud integration for Snyk IaC using Run Tasks
 
 {% hint style="info" %}

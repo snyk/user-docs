@@ -1,3 +1,7 @@
+---
+description: How Snyk CLI analytics work and how to control them
+---
+
 # Snyk CLI analytics
 
 To provide a reliable and feature-rich experience, our command-line interface (CLI) utilizes two types of analytics: [Essential Operational Analytics](snyk-cli-analytics.md#essential-operational-analytics) and [Optional Usage Analytics](snyk-cli-analytics.md#optional-usage-analytics). We believe in transparency, and this document explains what data is collected, why it's necessary, and the controls you have.

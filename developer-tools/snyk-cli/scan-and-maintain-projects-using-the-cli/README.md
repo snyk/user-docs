@@ -1,3 +1,7 @@
+---
+description: How to scan and maintain Projects with the Snyk CLI
+---
+
 # Scan and maintain Projects using the CLI
 
 This group of pages provides detailed "how-to" information for the Snyk CLI.

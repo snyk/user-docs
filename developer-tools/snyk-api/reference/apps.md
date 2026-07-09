@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for Snyk Apps
+---
+
 # Apps
 
 {% hint style="info" %}

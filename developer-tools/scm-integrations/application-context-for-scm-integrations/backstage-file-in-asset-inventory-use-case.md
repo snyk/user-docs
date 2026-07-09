@@ -1,3 +1,7 @@
+---
+description: How a Backstage catalog file enriches repository assets in Snyk Essentials Asset Inventory
+---
+
 # Backstage file in Asset Inventory - use case
 
 After you finish configuring the [Backstage catalog](./#backstage-file-for-scm-integrations), Snyk Essentials starts enriching your repository assets (the [All Assets](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets#inventory-menu) tab from the Inventory layout) with the data found in the backstage `catalog-info.yaml` file.

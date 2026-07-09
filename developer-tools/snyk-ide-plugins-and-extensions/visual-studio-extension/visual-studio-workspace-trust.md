@@ -1,3 +1,7 @@
+---
+description: How the Snyk Visual Studio extension uses workspace trust before scanning
+---
+
 # Visual Studio workspace trust
 
 As part of examining the codebase for vulnerabilities, Snyk may automatically execute code on your computer to obtain additional data for analysis. This includes invoking the package manager, for example, pip, Gradle, Maven, Yarn, npm, and so on, to get dependency information. Invoking these programs on untrusted code that has malicious configurations may expose your system to malicious code execution and exploits.

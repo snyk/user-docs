@@ -1,3 +1,7 @@
+---
+description: How to add the POST method in AWS API Gateway to connect Snyk to Slack
+---
+
 # AWS API Gateway: add the POST method to connect Snyk to Slack
 
 The payload Slack will receive will have a message, so create a POST method that will receive the message, verify it is a valid message, and then send on to the AWS Lambda function.

@@ -1,3 +1,7 @@
+---
+description: Snyk integrations for Jira and Slack
+---
+
 # Jira and Slack integrations
 
 This section includes the following documentation of Snyk integrations:
