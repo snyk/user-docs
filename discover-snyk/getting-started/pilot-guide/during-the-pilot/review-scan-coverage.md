@@ -1,3 +1,7 @@
+---
+description: How to review Snyk scan coverage, including the Group-level SCM integration and the Inventory
+---
+
 # Review scan coverage
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

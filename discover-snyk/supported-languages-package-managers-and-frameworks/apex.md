@@ -1,3 +1,7 @@
+---
+description: Snyk support for Apex with Snyk Code, including supported file formats, interfile analysis, and SCM, CLI, and IDE features
+---
+
 # Apex
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Snyk support for Rust, with full Snyk Code coverage in Early Access on Enterprise plans and limited Snyk Open Source support
+---
+
 # Rust
 
 {% hint style="info" %}

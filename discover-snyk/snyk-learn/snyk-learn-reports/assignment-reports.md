@@ -1,3 +1,7 @@
+---
+description: How to track training progress with Snyk Learn assignment reports, available in the Learning Management add-on
+---
+
 # Assignment reports
 
 {% hint style="info" %}

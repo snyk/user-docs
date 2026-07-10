@@ -1,3 +1,7 @@
+---
+description: How to add Project Attributes as metadata to filter and report on subsets of your Organization
+---
+
 # Add project attributes
 
 After importing your projects, you can add metadata to your Projects using [Project Attributes](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/project-attributes). This allows you to filter and report on specific subsets of your Organization.

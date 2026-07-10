@@ -1,3 +1,7 @@
+---
+description: How to import Projects into Snyk using an SCM integration or the Snyk CLI with CI/CD
+---
+
 # Import Projects
 
 Depending on the integrations you have configured, and the language / package managers in your tech stack, you can import Projects into Snyk using:

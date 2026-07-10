@@ -1,3 +1,7 @@
+---
+description: How to plan your Snyk Group structure, the highest administrative level, for enterprise account management
+---
+
 # Structure your account
 
 ## Plan your Group structure

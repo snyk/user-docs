@@ -1,3 +1,7 @@
+---
+description: How to import repositories into Snyk from your SCM integration to start scanning your Projects
+---
+
 # Import repositories
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

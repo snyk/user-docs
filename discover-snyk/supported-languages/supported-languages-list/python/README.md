@@ -1,3 +1,7 @@
+---
+description: Snyk support for Python with Snyk Code and Snyk Open Source, including SCM import, CLI and IDE testing, and supported versions
+---
+
 # Python
 
 ## Applicability and integration

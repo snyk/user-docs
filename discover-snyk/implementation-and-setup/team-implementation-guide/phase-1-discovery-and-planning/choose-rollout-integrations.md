@@ -1,3 +1,7 @@
+---
+description: How to choose which Snyk integrations to roll out across the SDLC, from automated scans to developer tools
+---
+
 # Choose rollout integrations
 
 ## **SDLC integration points**

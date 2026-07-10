@@ -1,3 +1,7 @@
+---
+description: Technical requirements for Snyk Code and Snyk Open Source, including file encoding and how Snyk builds the dependency tree
+---
+
 # Technical specifications and guidance
 
 ## Unicode character encoding

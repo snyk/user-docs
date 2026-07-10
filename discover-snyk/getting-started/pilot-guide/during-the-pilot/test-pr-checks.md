@@ -1,3 +1,7 @@
+---
+description: How to enable and test Snyk PR Checks, which block pull requests that introduce new vulnerabilities
+---
+
 # Test PR Checks
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

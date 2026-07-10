@@ -1,3 +1,7 @@
+---
+description: How to assign interactive Snyk Learn lessons so developers can learn to fix vulnerabilities across languages
+---
+
 # Assign a lesson in Snyk Learn
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

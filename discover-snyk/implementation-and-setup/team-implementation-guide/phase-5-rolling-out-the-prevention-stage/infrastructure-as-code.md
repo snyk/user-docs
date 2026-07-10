@@ -1,3 +1,7 @@
+---
+description: How to roll out Snyk IaC, including Terraform Cloud runs and scanning Terraform and YAML in your repositories
+---
+
 # Infrastructure as code
 
 For Snyk IaC, you may choose to integrate with [Terraform Cloud](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations/terraform-cloud-integration-for-snyk-iac-using-run-tasks/how-to-use-the-terraform-cloud-integration-for-iac) to run snyk iac test as part of a ‘run’ workflow, in addition to scanning Terraform and YAML files that are included as part of your source control repositories.

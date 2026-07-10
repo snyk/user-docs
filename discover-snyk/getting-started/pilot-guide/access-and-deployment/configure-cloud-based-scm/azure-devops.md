@@ -1,3 +1,7 @@
+---
+description: How to configure the Azure DevOps integration with Snyk, including generating a personal access token with the required permissions
+---
+
 # Azure DevOps
 
 {% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}

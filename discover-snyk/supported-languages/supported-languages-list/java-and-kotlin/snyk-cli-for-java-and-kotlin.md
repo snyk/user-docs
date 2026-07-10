@@ -1,3 +1,7 @@
+---
+description: How to test Maven and Gradle Projects for Java and Kotlin with the Snyk CLI, including supported manifest files
+---
+
 # CLI support for Java and Kotlin
 
 To test Maven and Gradle Projects, use the `snyk test` command as follows:

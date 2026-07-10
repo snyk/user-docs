@@ -1,3 +1,7 @@
+---
+description: How to set up Snyk Essentials to discover repository assets, including prerequisites and cloud-based SCM onboarding
+---
+
 # Set up Snyk Essentials
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

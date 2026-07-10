@@ -1,3 +1,7 @@
+---
+description: How to confirm your Snyk region and sign in, using SNYK-US-02 as the example setup
+---
+
 # Configure Snyk region
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

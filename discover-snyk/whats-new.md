@@ -1,6 +1,7 @@
 ---
 cover: .gitbook/assets/docs-banner-nov25.webp
 coverY: 0
+description: Recent updates to Snyk products and documentation, including new features, changes, and knowledge base improvements
 ---
 
 # What's new?

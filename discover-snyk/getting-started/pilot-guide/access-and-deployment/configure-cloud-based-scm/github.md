@@ -1,3 +1,7 @@
+---
+description: How to configure the GitHub integration with Snyk, including generating a personal access token with the required permissions
+---
+
 # GitHub
 
 {% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}

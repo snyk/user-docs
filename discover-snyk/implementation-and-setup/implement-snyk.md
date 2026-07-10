@@ -1,3 +1,7 @@
+---
+description: Overview of implementing Snyk across your organization, from development through deployment, to fix vulnerabilities and build a security culture
+---
+
 # Overview
 
 Implementing a developer security tool like Snyk is critical to ensuring the security of your applications, from development through deployment. Whatever the size of your team, the goals are to fix vulnerabilities and foster a culture of security awareness and responsibility across your entire business.

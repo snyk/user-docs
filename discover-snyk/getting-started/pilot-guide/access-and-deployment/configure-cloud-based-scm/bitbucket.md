@@ -1,3 +1,7 @@
+---
+description: How to configure the Bitbucket integration with Snyk, including generating a personal access token with the required permissions
+---
+
 # BitBucket
 
 {% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}

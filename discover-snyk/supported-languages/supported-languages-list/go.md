@@ -1,3 +1,7 @@
+---
+description: Snyk support for Go with Snyk Open Source and Snyk Code, including SCM import, CLI and IDE testing, and supported frameworks
+---
+
 # Go
 
 ## Applicability and integration

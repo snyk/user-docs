@@ -1,3 +1,7 @@
+---
+description: How Snyk Learn assignments let admins assign, track, and manage developer training in the Learning Management add-on
+---
+
 # Snyk Learn assignments
 
 {% hint style="info" %}

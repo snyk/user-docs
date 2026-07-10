@@ -1,3 +1,7 @@
+---
+description: Snyk support for Dart and Flutter with Snyk Code and Snyk Open Source, including Early Access code analysis on Enterprise plans
+---
+
 # Dart and Flutter
 
 {% hint style="info" %}

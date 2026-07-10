@@ -1,3 +1,7 @@
+---
+description: Snyk trial and Free plan limitations, including the 14-day trial and full Enterprise pilot options
+---
+
 # Trial limitations
 
 You can try out Snyk functionalities in several ways:

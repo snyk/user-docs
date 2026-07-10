@@ -1,3 +1,7 @@
+---
+description: How to choose Snyk user roles for your team, including the fixed default roles and permissions on the Team plan
+---
+
 # Determine user roles
 
 ## Default roles

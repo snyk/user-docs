@@ -1,3 +1,7 @@
+---
+description: How to gain insights into your security training program with Snyk Learn program reporting in the Learning Management add-on
+---
+
 # Program reporting
 
 {% hint style="info" %}

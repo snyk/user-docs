@@ -1,3 +1,7 @@
+---
+description: 'Phase 4 of the Snyk team implementation: prioritize your vulnerability backlog and define focus areas for fixes'
+---
+
 # Phase 4: Create a fix strategy
 
 After setting up your integrations, creating your Organization, and importing your Projects, you now have visibility into your business's current vulnerability backlog.

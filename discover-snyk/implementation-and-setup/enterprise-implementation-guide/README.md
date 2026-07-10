@@ -1,3 +1,7 @@
+---
+description: Guide to rolling out Snyk across a large organization with a consistent, repeatable account configuration
+---
+
 # Enterprise implementation guide
 
 Rolling out a developer security platform across a large organization requires a consistent, repeatable approach to account configuration. In this guide, you will learn how to streamline your enterprise rollout in Snyk by creating a dedicated template Organization and altering settings for each individual Organization created from that original template.

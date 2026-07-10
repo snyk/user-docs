@@ -1,3 +1,7 @@
+---
+description: How to create a template Snyk Organization to standardize account structure, access control, and reporting
+---
+
 # Create a template Organization
 
 This guide section is designed to help you plan your Snyk account structure at the Organization-level to ensure efficient asset management, precise access control, and accurate reporting. This Organization will be the template you copy to create additional Organizations from which have standards settings for all your Orgs.

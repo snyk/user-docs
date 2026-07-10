@@ -1,3 +1,7 @@
+---
+description: Snyk support for COBOL with Snyk Code, available in Early Access on Enterprise plans, including CICS frameworks and supported dialects
+---
+
 # COBOL
 
 {% hint style="info" %}

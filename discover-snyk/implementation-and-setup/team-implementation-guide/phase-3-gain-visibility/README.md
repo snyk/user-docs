@@ -1,3 +1,7 @@
+---
+description: 'Phase 3 of the Snyk team implementation: import repositories to create Projects and gain visibility into your applications'
+---
+
 # Phase 3: Gain visibility
 
 After the [Account configuration](../phase-2-configure-your-organization/) phase is complete, you can import your repositories to scan your applications.

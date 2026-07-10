@@ -1,3 +1,7 @@
+---
+description: How to manage and remediate your Snyk vulnerability backlog by prioritizing on risk and operationalizing fixes
+---
+
 # Manage and remediate issues
 
 After establishing visibility and prevention measures, focus on managing your existing vulnerability backlog. This stage involves defining a fix strategy, prioritizing issues based on risk, and operationalizing the remediation process in your development teams. Effective management ensures that your security posture improves over time rather than just maintaining the status quo.
