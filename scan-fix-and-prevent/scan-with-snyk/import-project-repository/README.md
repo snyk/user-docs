@@ -1,3 +1,7 @@
+---
+description: How to import Project repositories into Snyk for scanning
+---
+
 # Project repositories
 
 ## Importing Project repositories

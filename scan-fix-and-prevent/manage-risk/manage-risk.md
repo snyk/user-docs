@@ -1,3 +1,7 @@
+---
+description: How Snyk helps you prioritize, manage, and reduce security risk
+---
+
 # Overview
 
 Snyk helps you prioritize issues for fixing by distinguishing between insignificant alerts and actionable threats. Not all vulnerabilities pose the same level of danger.

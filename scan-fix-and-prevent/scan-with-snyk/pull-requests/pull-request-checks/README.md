@@ -1,3 +1,7 @@
+---
+description: How Snyk Pull Request checks block new vulnerabilities in pull requests
+---
+
 # Pull Request checks
 
 ## Introduction to automated security scans with PR checks

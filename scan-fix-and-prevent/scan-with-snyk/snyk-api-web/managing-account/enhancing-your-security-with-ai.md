@@ -1,3 +1,7 @@
+---
+description: How Snyk API and Web uses AI and machine learning to enhance security scanning
+---
+
 # Enhancing your security with AI
 
 Leveraging advanced machine learning to improve your application security posture.

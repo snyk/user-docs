@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot Snyk Pull Request checks
+---
+
 # Troubleshoot PR checks
 
 ## General troubleshooting for PR checks

@@ -1,3 +1,7 @@
+---
+description: How to create and apply a custom Snyk PR template
+---
+
 # Apply a custom PR template
 
 ## Create and manage a custom PR template using the API

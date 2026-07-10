@@ -1,3 +1,7 @@
+---
+description: Overview of Snyk API and Web CI/CD integrations
+---
+
 # CI/CD integrations overview
 
 This guide provides everything you need to start integrating dynamic application security testing (DAST) into your CI/CD pipeline.

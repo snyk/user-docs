@@ -1,3 +1,7 @@
+---
+description: How to review scan login attempts in Snyk API and Web
+---
+
 # Review scan login attempts
 
 When you configure authentication on your target and run a scan, you can verify that the crawler successfully logged in to your application. Besides reviewing the crawling report for each scan and the endpoints visited during the scan, you can also watch a video of the login attempt.

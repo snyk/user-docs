@@ -1,3 +1,7 @@
+---
+description: How the deployed risk factor affects Snyk issue prioritization
+---
+
 # Risk factor: deployed
 
 Any deployed code increases the risk of exploitation of your application and business.

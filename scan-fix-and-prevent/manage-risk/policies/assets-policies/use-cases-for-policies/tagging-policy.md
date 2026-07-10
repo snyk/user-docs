@@ -1,3 +1,7 @@
+---
+description: How to use a labeling policy to categorize assets in Snyk Essentials
+---
+
 # Labeling policy
 
 ## Labeling policy

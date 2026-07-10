@@ -1,3 +1,7 @@
+---
+description: How Snyk Container integrates with container registries
+---
+
 # Container registry integrations
 
 ## Overview of Snyk Container integrations

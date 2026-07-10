@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk Google Cloud integration in the Web UI
+---
+
 # Google Cloud Integration: Web UI
 
 The steps follow to onboard a Google Cloud Project to Snyk via the Web UI:

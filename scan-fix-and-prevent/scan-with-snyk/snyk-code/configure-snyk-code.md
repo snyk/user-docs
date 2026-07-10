@@ -1,3 +1,7 @@
+---
+description: How to configure Snyk Code for your Organization
+---
+
 # Configure Snyk Code
 
 ## Conditions

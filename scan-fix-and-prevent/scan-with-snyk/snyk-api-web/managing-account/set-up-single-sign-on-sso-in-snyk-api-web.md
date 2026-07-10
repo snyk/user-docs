@@ -1,3 +1,7 @@
+---
+description: How to set up single sign-on (SSO) in Snyk API and Web
+---
+
 # Set up single sign-on (SSO)
 
 Learn how to configure your company's Single Sign-On to log in to the Snyk API & Web app.

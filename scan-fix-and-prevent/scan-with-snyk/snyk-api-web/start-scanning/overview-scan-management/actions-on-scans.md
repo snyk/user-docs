@@ -1,3 +1,7 @@
+---
+description: The actions you can take on Snyk API and Web scans
+---
+
 # Actions on scans
 
 The **Targets** section provides a set of actions to manage scans in Snyk API & Web.

@@ -1,3 +1,7 @@
+---
+description: Use cases for Snyk Essentials asset policies
+---
+
 # Use cases for policies
 
 Gain a better understanding of the policies you can use by going through the following use cases. These are only examples of some situations where policies can be applied. You can customize your policies as needed. The **Send Email** and **Send Slack Message** actions are both notifications and are treated as a single use case.&#x20;

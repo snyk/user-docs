@@ -1,3 +1,7 @@
+---
+description: How to manage Snyk API and Web findings
+---
+
 # Manage findings
 
 During a scan, Snyk API & Web finds vulnerabilities within the target URLs. When Snyk finds a vulnerability, it creates a finding. Snyk registers these findings, and you can perform the following actions:

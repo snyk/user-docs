@@ -1,3 +1,7 @@
+---
+description: How to automate OTP extraction for Snyk API and Web authentication
+---
+
 # Automate OTP extraction
 
 Automate the extraction of one-time passwords (OTPs) from email and send them to Snyk API & Web for two-factor authentication.

@@ -1,3 +1,7 @@
+---
+description: How Snyk security policy results apply to issues
+---
+
 # Security policy results
 
 A newly-assigned policy, or changes to a policy, apply when the Project is re-scanned. This is what Project collaborators see when an action is applied to a vulnerability:

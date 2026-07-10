@@ -1,3 +1,7 @@
+---
+description: How to fix code vulnerabilities automatically with Snyk Code fixes
+---
+
 # Fix code vulnerabilities automatically
 
 {% hint style="info" %}

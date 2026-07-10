@@ -1,3 +1,7 @@
+---
+description: How to view the history of a Project
+---
+
 # View Project history
 
 Select the **History** tab on the Project details page to view the Project history, which shows results of previous scans. Under normal circumstances, Snyk retains at least two snapshots: a historic snapshot and a current snapshot of the latest scan. More entries may be shown when the found issues between scans have not changed, but the entries in the list point to the same snapshot. If numerous scans are executed within 24 hours, all of the scans are displayed, distinct issues or not, after which they are purged from the list.

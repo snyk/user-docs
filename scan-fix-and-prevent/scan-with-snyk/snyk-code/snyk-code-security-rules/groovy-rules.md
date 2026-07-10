@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for Groovy
+---
+
 # Groovy rules
 
 {% hint style="info" %}

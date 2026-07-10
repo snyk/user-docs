@@ -1,3 +1,7 @@
+---
+description: The states a Snyk API and Web finding can have
+---
+
 # Finding states
 
 During a target scan, the scanner identifies vulnerabilities within the target's URLs. When the scanner discovers a vulnerability, Snyk creates a finding. The state of a finding can change either automatically (by the scanner, as a result of a target scan or re-test) or manually (by user actions).

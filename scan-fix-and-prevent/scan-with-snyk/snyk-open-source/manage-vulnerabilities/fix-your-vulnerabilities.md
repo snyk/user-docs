@@ -1,3 +1,7 @@
+---
+description: How Snyk helps you fix vulnerabilities in open source dependencies
+---
+
 # Fix your vulnerabilities
 
 Snyk helps you to fix vulnerabilities by upgrading the direct dependencies to a more secure version or by patching the vulnerability. After Snyk scans your Projects, the scan results allow you to resolve issues in your code with the help of clear suggestions and explanations.

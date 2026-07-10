@@ -1,3 +1,7 @@
+---
+description: The compliance reports in Snyk Analytics
+---
+
 # Compliance reports
 
 The Compliance reports section includes the following reports:

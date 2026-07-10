@@ -1,3 +1,7 @@
+---
+description: How to use Snyk Custom Base Image Recommendations to reduce vulnerabilities
+---
+
 # Use Custom Base Image Recommendations
 
 {% hint style="info" %}

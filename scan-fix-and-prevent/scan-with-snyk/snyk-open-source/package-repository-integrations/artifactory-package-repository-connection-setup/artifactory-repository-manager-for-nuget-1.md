@@ -1,3 +1,7 @@
+---
+description: How to connect Snyk to an Artifactory repository manager for Go
+---
+
 # Artifactory repository manager for Go
 
 {% hint style="info" %}

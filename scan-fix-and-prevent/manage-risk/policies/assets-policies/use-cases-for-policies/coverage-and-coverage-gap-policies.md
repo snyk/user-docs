@@ -1,3 +1,7 @@
+---
+description: How to use coverage and coverage gap policies in Snyk Essentials
+---
+
 # Coverage and coverage gap policies
 
 You can use the Coverage filter to verify if an asset has ever been tested by the product and the Coverage gap filter to verify if the asset meets the coverage requirements set in a Set coverage control policy.

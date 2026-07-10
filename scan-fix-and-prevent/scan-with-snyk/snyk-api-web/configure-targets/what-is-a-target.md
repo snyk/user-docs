@@ -1,3 +1,7 @@
+---
+description: What a target is in Snyk API and Web scanning
+---
+
 # What is a target?
 
 A target is the URL of a web application, website, or API that defines the scope of a security scan.

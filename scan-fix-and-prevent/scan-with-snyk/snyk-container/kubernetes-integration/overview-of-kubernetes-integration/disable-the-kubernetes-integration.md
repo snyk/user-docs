@@ -1,3 +1,7 @@
+---
+description: How to disable the Snyk Kubernetes integration
+---
+
 # Disable the Kubernetes integration
 
 To disable the Kubernetes integration:

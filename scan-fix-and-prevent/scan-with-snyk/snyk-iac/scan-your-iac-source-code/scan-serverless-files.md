@@ -1,3 +1,7 @@
+---
+description: How to scan serverless files with Snyk IaC
+---
+
 # Scan Serverless files
 
 Snyk IaC supports the scanning of Serverless configuration files only through the CLI.

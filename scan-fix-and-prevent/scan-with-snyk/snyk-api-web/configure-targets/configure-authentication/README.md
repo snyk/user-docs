@@ -1,3 +1,7 @@
+---
+description: How to configure authentication for Snyk API and Web targets
+---
+
 # Configure authentication
 
 Configure authentication to scan protected areas of your web application or API.

@@ -1,3 +1,7 @@
+---
+description: How to install the Snyk Controller with Helm on Azure and Google Cloud
+---
+
 # Install the Snyk Controller with Helm (Azure and Google Cloud Platform)
 
 {% hint style="info" %}

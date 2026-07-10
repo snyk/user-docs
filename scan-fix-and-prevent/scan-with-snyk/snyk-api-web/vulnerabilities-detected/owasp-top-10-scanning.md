@@ -1,3 +1,7 @@
+---
+description: How Snyk API and Web scans for the OWASP Top 10
+---
+
 # OWASP Top 10 scanning
 
 Snyk API & Web can scan for the 2021 and 2025 Open Web Application Security Project (OWASP) Top 10, searching for a wide range of vulnerabilities that belong to the different OWASP Top 10 categories.

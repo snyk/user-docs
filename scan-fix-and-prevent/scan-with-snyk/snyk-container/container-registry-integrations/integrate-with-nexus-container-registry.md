@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk Container with the Nexus Container Registry
+---
+
 # Integrate with Nexus Container Registry
 
 {% hint style="info" %}

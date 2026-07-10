@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for Kotlin
+---
+
 # Kotlin rules
 
 Each rule includes the following information.

@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk API and Web with Jenkins
+---
+
 # Integrate with Jenkins
 
 Configure a Jenkins CI/CD pipeline to scan your application for vulnerabilities.

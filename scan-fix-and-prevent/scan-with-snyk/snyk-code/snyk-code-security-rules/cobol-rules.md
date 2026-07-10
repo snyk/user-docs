@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for COBOL
+---
+
 # COBOL rules
 
 {% hint style="info" %}

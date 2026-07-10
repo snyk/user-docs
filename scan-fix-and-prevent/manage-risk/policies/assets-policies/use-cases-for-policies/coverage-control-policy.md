@@ -1,3 +1,7 @@
+---
+description: How to use a coverage control policy in Snyk Essentials
+---
+
 # Coverage control policy
 
 You can use the **Set Coverage Control** action from the Policies view to identify your application assets, monitor them, and prioritize the risks. You can select one or multiple security products and also specify a timeframe for when the last scan should have taken place.

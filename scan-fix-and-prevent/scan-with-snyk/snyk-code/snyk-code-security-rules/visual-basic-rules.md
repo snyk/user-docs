@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for Visual Basic
+---
+
 # Visual Basic rules
 
 Each rule includes the following information.

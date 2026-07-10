@@ -1,3 +1,7 @@
+---
+description: How to install a Snyk API and Web scanning agent
+---
+
 # Install a scanning agent
 
 Install a Scanning Agent to scan your internal applications with minimal changes to network and security configurations.

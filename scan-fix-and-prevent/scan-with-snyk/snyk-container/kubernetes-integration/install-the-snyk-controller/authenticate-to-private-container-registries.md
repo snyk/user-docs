@@ -1,3 +1,7 @@
+---
+description: How to authenticate the Snyk Controller to private container registries
+---
+
 # Authenticate to private container registries
 
 If you are using private container registries, you must create a `dockercfg.json` file that contains the credentials to the registry. Then you must create a secret, which must be called `snyk-monitor`.

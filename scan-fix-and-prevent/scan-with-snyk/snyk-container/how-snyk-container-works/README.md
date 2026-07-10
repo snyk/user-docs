@@ -1,3 +1,7 @@
+---
+description: How Snyk Container scans container images and their base images
+---
+
 # How Snyk Container works
 
 ## Container images

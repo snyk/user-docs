@@ -1,3 +1,7 @@
+---
+description: The operating system distributions Snyk Container supports
+---
+
 # Operating system distributions supported by Snyk Container
 
 Snyk detects vulnerabilities in images based on operating systems listed on this page along with the specific versions that are supported. For the latest updates, see [Snyk updates](https://updates.snyk.io).

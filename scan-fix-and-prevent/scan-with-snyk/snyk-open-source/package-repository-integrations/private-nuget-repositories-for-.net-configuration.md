@@ -1,3 +1,7 @@
+---
+description: How to configure private NuGet repositories for .NET with Snyk
+---
+
 # Private NuGet repositories for .NET configuration
 
 {% hint style="info" %}

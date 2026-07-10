@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for Rust
+---
+
 # Rust rules
 
 {% hint style="info" %}

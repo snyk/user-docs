@@ -1,3 +1,7 @@
+---
+description: How to enable Snyk permissions to access Amazon ECR for the first time
+---
+
 # Enable Snyk permissions to access Amazon Elastic Container Registry (ECR) for the first time
 
 {% hint style="warning" %}

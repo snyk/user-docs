@@ -1,3 +1,7 @@
+---
+description: How to add Docker Hub Projects and images to Snyk
+---
+
 # Docker Hub - add Projects and images to the Snyk UI
 
 Snyk tests and monitors Docker Hub repositories and images by evaluating root folders. This page explains how to add repositories to Snyk.

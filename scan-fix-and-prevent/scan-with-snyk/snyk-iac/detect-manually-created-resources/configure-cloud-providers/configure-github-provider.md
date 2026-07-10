@@ -1,3 +1,7 @@
+---
+description: How to configure the GitHub provider for Snyk IaC drift detection
+---
+
 # Configure GitHub provider
 
 ## Authentication for GitHub provider

@@ -1,3 +1,7 @@
+---
+description: How to add Amazon ECR images to Snyk
+---
+
 # Amazon Elastic Container Registry (ECR) - add images to Snyk
 
 Snyk scans and monitors your Amazon ECR container images by evaluating the tags as they are in your ECR repositories.

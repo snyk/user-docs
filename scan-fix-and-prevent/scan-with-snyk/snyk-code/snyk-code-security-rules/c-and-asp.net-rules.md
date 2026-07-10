@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for C# and ASP.NET
+---
+
 # C# and ASP.NET rules
 
 Each rule includes the following information.

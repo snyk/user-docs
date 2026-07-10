@@ -1,3 +1,7 @@
+---
+description: 'Step 1: download the service account IaC template for the Google Cloud integration using the API'
+---
+
 # Step 1: Download service account IaC template (API)
 
 Before you can create a Cloud Environment, you must download an infrastructure as code (IaC) template declaring a tightly-scoped Google service account that gives Snyk permission to scan the configuration of resources in your Google Project.

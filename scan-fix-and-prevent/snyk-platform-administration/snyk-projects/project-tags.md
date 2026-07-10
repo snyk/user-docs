@@ -1,3 +1,7 @@
+---
+description: How to use Project tags to organize and filter Projects
+---
+
 # Project tags
 
 {% hint style="info" %}

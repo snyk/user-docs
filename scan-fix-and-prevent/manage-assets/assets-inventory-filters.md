@@ -1,3 +1,7 @@
+---
+description: How to filter the Snyk assets inventory
+---
+
 # Assets inventory filters
 
 From the **Inventory** > **All Assets** tab, you can use the search bar to look for specific keywords across assets. Results can include the asset name and data retrieved from the **Attributes** tab of an asset.

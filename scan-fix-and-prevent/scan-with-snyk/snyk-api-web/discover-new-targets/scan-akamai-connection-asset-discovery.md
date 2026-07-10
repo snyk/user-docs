@@ -1,3 +1,7 @@
+---
+description: How to scan an Akamai connection for asset discovery in Snyk API and Web
+---
+
 # Scan an Akamai connection for asset discovery
 
 APIs often operate without the direct oversight of security teams, making them difficult to track and protect. To run a security scan on an API, you first need its specification file (schema), but finding the correct, up-to-date schema for every API in your organization can be a significant challenge.

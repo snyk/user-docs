@@ -1,3 +1,7 @@
+---
+description: How to manage Consistent Ignores for Snyk Code with the API
+---
+
 # Consistent Ignores for Snyk Code API
 
 You can manage ignores individually through the [Snyk Policies API (REST)](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/policies).

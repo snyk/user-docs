@@ -1,3 +1,7 @@
+---
+description: How to create asset policies in Snyk Essentials
+---
+
 # Create policies
 
 Snyk Essentials includes a powerful policy editor for creating and modifying policies.

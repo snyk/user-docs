@@ -1,3 +1,7 @@
+---
+description: How to view dependencies and licenses for your Snyk Projects
+---
+
 # Dependencies and licenses
 
 You can [view dependencies](view-dependencies.md) and [license information](view-licenses.md) for all Projects in your Group or Organization using the **Dependencies** option in your Group or Organization menu.

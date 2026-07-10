@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for C and C++
+---
+
 # C++ rules
 
 Each rule includes the following information.

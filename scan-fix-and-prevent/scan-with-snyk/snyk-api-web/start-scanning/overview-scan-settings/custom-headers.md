@@ -1,3 +1,7 @@
+---
+description: How to configure custom headers for Snyk API and Web scans
+---
+
 # Custom headers
 
 When performing a dynamic application security testing (DAST) scan, your scanner acts like an automated user, navigating your site and testing for vulnerabilities. However, modern security infrastructures (such as Web Application Firewalls) or complex authentication requirements can block these automated requests unless they are properly identified.

@@ -1,3 +1,7 @@
+---
+description: How the public-facing risk factor affects Snyk issue prioritization
+---
+
 # Risk factor: public facing
 
 Knowing that code is deployed tells you that there is a possibility that someone can exploit a flaw you are concerned about. That someone may be a well-trusted person within your Organization or a completely unknown external entity. Snyk can further narrow down the possibilities by determining if the package or Image is configured to be exposed to external traffic.

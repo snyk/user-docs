@@ -1,3 +1,7 @@
+---
+description: How Snyk API and Web performs dynamic application security testing (DAST)
+---
+
 # Snyk API & Web
 
 Snyk API & Web is a cloud-based dynamic application security testing (DAST) solution that identifies security vulnerabilities in your running web applications and APIs. Snyk simulates real-world attacks against your deployed applications to discover security vulnerabilities before attackers can exploit them.

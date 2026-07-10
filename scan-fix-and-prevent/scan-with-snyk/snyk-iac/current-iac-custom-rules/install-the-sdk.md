@@ -1,3 +1,7 @@
+---
+description: How to install the SDK for writing Snyk IaC custom rules
+---
+
 # Install the SDK
 
 ​Install the SDK using one of these options:

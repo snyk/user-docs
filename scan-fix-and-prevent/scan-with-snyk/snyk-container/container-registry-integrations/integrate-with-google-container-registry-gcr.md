@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk Container with Google Container Registry (GCR)
+---
+
 # Integrate with Google Container Registry (GCR)
 
 {% hint style="warning" %}

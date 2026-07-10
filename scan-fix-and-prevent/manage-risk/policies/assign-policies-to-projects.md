@@ -1,3 +1,7 @@
+---
+description: How to assign Snyk policies to Projects
+---
+
 # Assign policies to Projects
 
 After you apply [Project attributes](../../snyk-platform-administration/snyk-projects/project-attributes.md) to your Projects, you can create policies that apply to those attributes. Projects and policies are linked based on the attributes that have the policy applied.

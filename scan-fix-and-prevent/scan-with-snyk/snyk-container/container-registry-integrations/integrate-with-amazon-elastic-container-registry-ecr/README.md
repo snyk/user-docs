@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk Container with Amazon Elastic Container Registry (ECR)
+---
+
 # Integrate with Amazon Elastic Container Registry (ECR)
 
 Snyk integrates with Amazon Elastic Container Registry (ECR) to enable you to import your Projects and monitor your containers for vulnerabilities. Snyk tests the Projects you have imported for any known security vulnerabilities found at a frequency you control.

@@ -1,3 +1,7 @@
+---
+description: How to install the Snyk Controller for the Kubernetes integration
+---
+
 # Install the Snyk Controller
 
 ## Prerequisites for installing the Snyk Controller

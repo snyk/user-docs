@@ -1,3 +1,7 @@
+---
+description: The workloads, container registries, languages, and operating systems the Kubernetes integration supports
+---
+
 # Supported workloads, container registries, languages, and operating systems
 
 ## Supported workloads

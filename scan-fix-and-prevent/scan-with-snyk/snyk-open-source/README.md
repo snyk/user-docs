@@ -1,3 +1,7 @@
+---
+description: How Snyk Open Source scans your dependencies for vulnerabilities and license issues
+---
+
 # Snyk Open Source
 
 {% hint style="info" %}

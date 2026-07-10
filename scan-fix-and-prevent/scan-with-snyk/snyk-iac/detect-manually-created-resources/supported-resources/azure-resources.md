@@ -1,3 +1,7 @@
+---
+description: The Azure resources Snyk IaC supports for drift detection
+---
+
 # Azure resources
 
 Snyk IaC unmanaged resource scanning supports the following resources for Azure:

@@ -1,3 +1,7 @@
+---
+description: How Snyk Container scans your Dockerfile
+---
+
 # Scan your Dockerfile
 
 Snyk Container allows you to analyze your Dockerfile and scan base images from the Dockerfile.

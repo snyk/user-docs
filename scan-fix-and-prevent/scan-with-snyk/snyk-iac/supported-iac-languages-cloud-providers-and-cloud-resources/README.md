@@ -1,3 +1,7 @@
+---
+description: The IaC languages, cloud providers, and cloud resources Snyk IaC supports
+---
+
 # Supported IaC languages, cloud providers, and cloud resources
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: How to configure extra hosts for Snyk API and Web web targets
+---
+
 # Configure extra hosts
 
 Include additional domains in the scan scope when your web application uses multiple hostnames, such as separate domains for front-end and back-end APIs.

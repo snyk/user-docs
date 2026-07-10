@@ -1,3 +1,7 @@
+---
+description: How to set up image scanning for Snyk Insights
+---
+
 # Set up Insights: image scanning
 
 To determine the risk factors and prioritize your Code, Open Source, and Container issues, you must scan your container images using [Snyk Container](../../../scan-with-snyk/snyk-container/).

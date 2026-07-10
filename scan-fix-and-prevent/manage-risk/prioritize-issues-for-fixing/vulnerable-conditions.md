@@ -1,3 +1,7 @@
+---
+description: How Snyk uses vulnerable conditions to refine prioritization
+---
+
 # Vulnerable conditions
 
 Vulnerabilities that are not exploitable are unlikely to pose a security threat to your application and can therefore be de-prioritized for fixing.

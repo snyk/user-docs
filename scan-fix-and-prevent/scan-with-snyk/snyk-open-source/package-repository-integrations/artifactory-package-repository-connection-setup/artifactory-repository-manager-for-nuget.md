@@ -1,3 +1,7 @@
+---
+description: How to connect Snyk to an Artifactory repository manager for NuGet
+---
+
 # Artifactory repository manager for NuGet
 
 {% hint style="info" %}

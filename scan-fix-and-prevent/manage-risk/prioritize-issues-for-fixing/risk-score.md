@@ -1,3 +1,7 @@
+---
+description: How the Snyk Risk Score prioritizes issues, in Early Access
+---
+
 # Risk Score
 
 {% hint style="info" %}

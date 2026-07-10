@@ -1,3 +1,7 @@
+---
+description: The conditions available for Snyk security policies
+---
+
 # Security policy conditions
 
 A condition is a variable on which to set a rule.

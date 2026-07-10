@@ -1,3 +1,7 @@
+---
+description: How Snyk patches fix vulnerabilities when no upgrade is available
+---
+
 # Snyk patches to fix vulnerabilities
 
 ## Introduction to patches

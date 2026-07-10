@@ -1,3 +1,7 @@
+---
+description: How to create custom rules for Snyk IaC
+---
+
 # IaC custom rules
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Examples of the snyk iac describe command for drift detection
+---
+
 # IaC describe command examples
 
 For a full list of `snyk iac describe` options, see [`snyk iac describe`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/iac-describe) command help or display the help by running:

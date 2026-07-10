@@ -1,3 +1,7 @@
+---
+description: How to enable the Snyk Kubernetes integration
+---
+
 # Enable the Kubernetes integration
 
 {% hint style="info" %}

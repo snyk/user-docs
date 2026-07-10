@@ -1,3 +1,7 @@
+---
+description: Frequently asked questions about Snyk API and Web CI/CD integrations
+---
+
 # CI/CD integrations FAQ
 
 Find answers to the most common questions about integrating Snyk API & Web into your CI/CD pipeline, all at a glance.

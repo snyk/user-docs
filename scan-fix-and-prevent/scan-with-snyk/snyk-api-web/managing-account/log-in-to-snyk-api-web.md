@@ -1,3 +1,7 @@
+---
+description: How to log in to Snyk API and Web
+---
+
 # Log in to Snyk API & Web
 
 Learn how you can access your Snyk API & Web account.

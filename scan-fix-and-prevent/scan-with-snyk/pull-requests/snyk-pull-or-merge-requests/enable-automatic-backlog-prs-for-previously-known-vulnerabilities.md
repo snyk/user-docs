@@ -1,3 +1,7 @@
+---
+description: How to enable automatic backlog PRs for previously known vulnerabilities
+---
+
 # Enable automatic backlog PRs for previously known vulnerabilities
 
 {% hint style="info" %}

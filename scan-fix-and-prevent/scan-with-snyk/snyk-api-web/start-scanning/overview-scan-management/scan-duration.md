@@ -1,3 +1,7 @@
+---
+description: How scan duration works for Snyk API and Web scans
+---
+
 # Scan duration
 
 The duration of a scan depends on several factors and is not easy to estimate beforehand. It depends on:

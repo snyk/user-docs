@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk with AWS to scan cloud configurations
+---
+
 # AWS integration
 
 Snyk integrates with your [Amazon Web Services (AWS)](https://aws.amazon.com/) account to find issues in your cloud configurations and to generate cloud context to help you prioritize your vulnerabilities.

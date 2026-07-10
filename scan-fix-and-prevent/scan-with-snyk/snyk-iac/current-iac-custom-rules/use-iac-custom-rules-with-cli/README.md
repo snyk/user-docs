@@ -1,3 +1,7 @@
+---
+description: How to use Snyk IaC custom rules with the CLI
+---
+
 # Use IaC custom rules with CLI
 
 {% hint style="info" %}

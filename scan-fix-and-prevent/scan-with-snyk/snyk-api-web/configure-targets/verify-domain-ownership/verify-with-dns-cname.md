@@ -1,3 +1,7 @@
+---
+description: How to verify domain ownership with a DNS CNAME record for Snyk API and Web
+---
+
 # Verify domain with DNS CNAME record
 
 Verify domain ownership by adding a CNAME record to your DNS configuration.

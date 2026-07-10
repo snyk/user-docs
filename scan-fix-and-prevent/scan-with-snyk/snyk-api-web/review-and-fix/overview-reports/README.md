@@ -1,3 +1,7 @@
+---
+description: Overview of Snyk API and Web reports
+---
+
 # Overview of reports
 
 With Snyk API & Web, you can generate reports to showcase your security to auditors or customers, achieve compliance, perform internal assessments, and more.

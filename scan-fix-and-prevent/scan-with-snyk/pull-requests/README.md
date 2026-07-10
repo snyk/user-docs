@@ -1,3 +1,7 @@
+---
+description: How Snyk uses pull requests to fix and prevent vulnerabilities
+---
+
 # Pull Requests
 
 ## Snyk Fix PRs

@@ -1,3 +1,7 @@
+---
+description: The built-in Snyk API and Web scan profiles and their differences
+---
+
 # Built-in scan profiles and their differences
 
 Snyk API & Web has four different built-in scan profiles:

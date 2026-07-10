@@ -1,3 +1,7 @@
+---
+description: How the import log provides a history of Project imports
+---
+
 # Import log
 
 The Import log feature provides a history of all the Git repositories and container registry images imported into an Organization through an Integration, allowing all manual and automated changes to be reviewed and any errors troubleshooted. This log makes it easier to see if any errors have occurred and how to resolve them.

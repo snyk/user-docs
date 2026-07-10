@@ -1,3 +1,7 @@
+---
+description: How to manage Snyk API and Web scans
+---
+
 # Scan management
 
 Control when and how scans run across your targets:

@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk Container with the Harbor Container Registry
+---
+
 # Integrate with Harbor Container Registry
 
 {% hint style="info" %}

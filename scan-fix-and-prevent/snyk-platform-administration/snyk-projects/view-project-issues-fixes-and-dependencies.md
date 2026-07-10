@@ -1,3 +1,7 @@
+---
+description: How to view Project issues, fixes, and dependencies
+---
+
 # View Project issues, fixes, and dependencies
 
 The following Project information is available on the Snyk Web UI:

@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk Container with the GitHub Container registry
+---
+
 # Integrate with GitHub Container registry
 
 Snyk integrates with the GitHub Container registry to enable you to import your container images and monitor them for vulnerabilities.

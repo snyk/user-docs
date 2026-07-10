@@ -1,3 +1,7 @@
+---
+description: How to write Snyk IaC custom rules using the SDK
+---
+
 # Writing rules using the SDK
 
 To get you started with the SDK, you will learn how to:

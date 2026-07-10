@@ -1,3 +1,7 @@
+---
+description: How to connect Snyk to a Nexus Repository Manager
+---
+
 # Nexus repository manager connection setup
 
 {% hint style="info" %}

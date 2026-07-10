@@ -1,3 +1,7 @@
+---
+description: How the Snyk Priority Score and Risk Score differ
+---
+
 # Priority Score vs Risk Score
 
 The Snyk Risk score and Priority score are keys to security management. Both types of score help Organizations handle current threats and prepare for future vulnerabilities, leading to a more robust security framework.

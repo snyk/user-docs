@@ -1,3 +1,7 @@
+---
+description: How to view cloud issues in the Snyk Web UI
+---
+
 # View cloud issues in the Snyk Web UI
 
 You can view cloud issues for an Organization through the Snyk Web UI.

@@ -1,3 +1,7 @@
+---
+description: How Snyk automatically creates Project collections
+---
+
 # Automatically created Project collections
 
 {% hint style="info" %}

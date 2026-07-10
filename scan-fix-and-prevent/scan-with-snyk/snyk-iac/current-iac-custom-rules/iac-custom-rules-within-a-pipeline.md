@@ -1,3 +1,7 @@
+---
+description: How to use Snyk IaC custom rules within a CI/CD pipeline
+---
+
 # IaC custom rules within a pipeline
 
 Using a CI/CD such as [GitHub Actions](https://github.com/features/actions) is ideal for managing, distributing, and enforcing your custom rules.

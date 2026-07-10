@@ -1,3 +1,7 @@
+---
+description: 'Step 3: create and scan a cloud environment for Azure in the Web UI'
+---
+
 # Step 3: Create and scan a Cloud Environment for Azure (Web UI)
 
 {% hint style="info" %}

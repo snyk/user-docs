@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for Ruby
+---
+
 # Ruby rules
 
 Each rule includes the following information.

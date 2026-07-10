@@ -1,3 +1,7 @@
+---
+description: How to configure logout detection for Snyk API and Web targets
+---
+
 # Logout detection
 
 Configure logout detection to help the scanner maintain authenticated sessions throughout the scan.

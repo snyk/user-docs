@@ -1,3 +1,7 @@
+---
+description: How to view, create, and modify Snyk policies
+---
+
 # View, create, and modify policies
 
 ## View policies

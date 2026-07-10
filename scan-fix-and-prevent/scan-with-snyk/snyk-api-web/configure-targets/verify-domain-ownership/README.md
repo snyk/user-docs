@@ -1,3 +1,7 @@
+---
+description: How to verify domain ownership for Snyk API and Web targets
+---
+
 # Verify domain ownership
 
 Verify domain ownership to authorize security testing on your domain.

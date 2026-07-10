@@ -1,3 +1,7 @@
+---
+description: How the Snyk Priority Score ranks issues for fixing
+---
+
 # Priority Score
 
 The Snyk Priority Score is a single value assigned to an issue, to help you quickly and easily decide which issues are most important to fix. Scores range from 0 to 1,000; the higher the score, the more important it is to fix that issue.

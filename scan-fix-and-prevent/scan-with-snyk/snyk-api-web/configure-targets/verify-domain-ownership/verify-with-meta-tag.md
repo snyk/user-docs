@@ -1,3 +1,7 @@
+---
+description: How to verify domain ownership with a meta tag for Snyk API and Web
+---
+
 # Verify domain with meta tag
 
 Verify domain ownership by adding a meta tag to your website's HTML.

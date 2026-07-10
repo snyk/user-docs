@@ -1,3 +1,7 @@
+---
+description: How the Snyk Controller handles your data in the Kubernetes integration
+---
+
 # How the Snyk Controller handles your data
 
 After you install the Snyk Controller in your Kubernetes cluster, it pulls images from your container registries:

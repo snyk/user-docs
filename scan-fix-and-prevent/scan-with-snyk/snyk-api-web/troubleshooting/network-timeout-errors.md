@@ -1,3 +1,7 @@
+---
+description: How to resolve network timeout errors in Snyk API and Web
+---
+
 # Network timeout errors
 
 Providing clear access to your target is an important factor in running successful scans using Snyk API & Web.

@@ -1,3 +1,7 @@
+---
+description: How to scan open source libraries and licenses with Snyk Open Source
+---
+
 # Scan open-source libraries and licenses
 
 You can scan your open-source libraries using Snyk Open Source:

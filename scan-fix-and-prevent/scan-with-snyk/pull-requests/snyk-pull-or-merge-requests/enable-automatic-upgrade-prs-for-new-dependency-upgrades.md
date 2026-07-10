@@ -1,3 +1,7 @@
+---
+description: How to enable automatic upgrade PRs for new dependency upgrades
+---
+
 # Enable automatic upgrade PRs for new dependency upgrades
 
 {% hint style="info" %}

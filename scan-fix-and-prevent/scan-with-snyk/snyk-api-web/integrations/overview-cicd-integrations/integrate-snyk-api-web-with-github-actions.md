@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk API and Web with GitHub Actions
+---
+
 # Integrate with GitHub Actions
 
 This guide provides step-by-step instructions for integrating Snyk API & Web into your GitHub Actions pipelines.

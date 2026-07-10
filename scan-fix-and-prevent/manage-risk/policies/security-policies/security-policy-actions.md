@@ -1,3 +1,7 @@
+---
+description: The actions available for Snyk security policies
+---
+
 # Security policy actions
 
 An action defines what you want to happen when the [security policy conditions](security-policies-conditions.md) are matched.

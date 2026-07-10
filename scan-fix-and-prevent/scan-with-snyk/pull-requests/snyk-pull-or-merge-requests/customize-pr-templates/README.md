@@ -1,3 +1,7 @@
+---
+description: How to customize Snyk pull request templates
+---
+
 # Customize PR templates
 
 When you fix or upgrade Snyk Open Source and Snyk Container Projects imported using the [SCM integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/organization-level-integrations), Snyk raises pull requests (PRs) against your repository.

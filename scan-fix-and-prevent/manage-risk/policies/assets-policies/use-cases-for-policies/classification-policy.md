@@ -1,3 +1,7 @@
+---
+description: How to use an asset classification policy in Snyk Essentials
+---
+
 # Classification policy
 
 You can use the **Set Asset Class** action from the Policies view to classify the assets based on importance, where class A is the most important and class D is the least important.

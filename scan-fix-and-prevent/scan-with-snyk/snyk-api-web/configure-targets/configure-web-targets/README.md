@@ -1,3 +1,7 @@
+---
+description: How to configure web targets for Snyk API and Web scanning
+---
+
 # Web targets
 
 Web targets provide configuration options to help the scanner thoroughly test your web application:

@@ -1,3 +1,7 @@
+---
+description: How to connect Snyk to an Artifactory registry for npm
+---
+
 # Artifactory Registry for npm
 
 {% hint style="info" %}

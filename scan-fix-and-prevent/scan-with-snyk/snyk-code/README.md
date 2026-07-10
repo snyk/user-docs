@@ -1,3 +1,7 @@
+---
+description: How Snyk Code finds and fixes security vulnerabilities in your source code
+---
+
 # Snyk Code
 
 ## Overview

@@ -1,3 +1,7 @@
+---
+description: How Snyk Container finds and fixes vulnerabilities in container images
+---
+
 # Snyk Container
 
 {% hint style="info" %}

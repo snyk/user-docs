@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot a failed login with a login sequence in Snyk API and Web
+---
+
 # Troubleshoot login failed with login sequence
 
 In targets with authentication, Snyk API & Web must log in to reach areas reserved for authenticated users. If scans fail to log in using a login sequence for complex authentication flows, follow these troubleshooting steps.

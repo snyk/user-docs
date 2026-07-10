@@ -1,3 +1,7 @@
+---
+description: The education reports in Snyk Analytics
+---
+
 # Education reports
 
 {% hint style="info" %}

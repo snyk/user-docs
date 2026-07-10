@@ -1,3 +1,7 @@
+---
+description: How to manage code vulnerabilities found by Snyk Code
+---
+
 # Manage code vulnerabilities
 
 ## Prerequisites for managing code vulnerabilities in Snyk Web UI

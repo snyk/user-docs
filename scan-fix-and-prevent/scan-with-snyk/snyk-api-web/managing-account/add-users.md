@@ -1,3 +1,7 @@
+---
+description: How to add users to Snyk API and Web
+---
+
 # Add users
 
 Learn how to add team members to your Snyk API & Web account.

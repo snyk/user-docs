@@ -1,3 +1,7 @@
+---
+description: How to get started with Snyk IaC describe to detect drift on AWS
+---
+
 # Get started with Snyk IaC Describe on AWS
 
 ## Step 1: Configure AWS authentication for your environment

@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for Scala
+---
+
 # Scala rules
 
 Each rule includes the following information.

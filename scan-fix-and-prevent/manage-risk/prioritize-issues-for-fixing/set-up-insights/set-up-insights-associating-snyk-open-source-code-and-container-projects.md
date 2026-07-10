@@ -1,3 +1,7 @@
+---
+description: How to associate Snyk Open Source, Code, and Container Projects for Insights
+---
+
 # Set up Insights: associating Snyk Open Source, Code, and Container Projects
 
 After you have set up insights, Snyk can set up the required linking for the chosen application.

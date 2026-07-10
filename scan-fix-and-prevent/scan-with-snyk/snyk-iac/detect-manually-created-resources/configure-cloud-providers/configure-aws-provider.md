@@ -1,3 +1,7 @@
+---
+description: How to configure the AWS provider for Snyk IaC drift detection
+---
+
 # Configure AWS provider
 
 ## Authentication for AWS provider

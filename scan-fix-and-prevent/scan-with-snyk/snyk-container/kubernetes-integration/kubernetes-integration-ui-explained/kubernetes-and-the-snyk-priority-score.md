@@ -1,3 +1,7 @@
+---
+description: How the Snyk Priority Score applies to Kubernetes workloads
+---
+
 # Kubernetes and the Snyk Priority Score
 
 {% hint style="info" %}

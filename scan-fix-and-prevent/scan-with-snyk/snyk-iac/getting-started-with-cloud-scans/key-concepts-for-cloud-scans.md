@@ -1,3 +1,7 @@
+---
+description: Key concepts for Snyk cloud scans
+---
+
 # Key concepts for cloud scans
 
 Cloud scans have a number of unique concepts that are different from Snyk core concepts, such as [Environments](key-concepts-for-cloud-scans.md#environments) and [Resources](key-concepts-for-cloud-scans.md#resources).

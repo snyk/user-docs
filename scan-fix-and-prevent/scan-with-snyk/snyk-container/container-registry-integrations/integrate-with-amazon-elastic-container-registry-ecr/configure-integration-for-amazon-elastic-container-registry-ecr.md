@@ -1,3 +1,7 @@
+---
+description: How to configure the Snyk integration for Amazon ECR
+---
+
 # Configure integration for Amazon Elastic Container Registry (ECR)
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: The remediation reports in Snyk Analytics
+---
+
 # Remediation reports
 
 The Remediation reports section includes the following reports:
