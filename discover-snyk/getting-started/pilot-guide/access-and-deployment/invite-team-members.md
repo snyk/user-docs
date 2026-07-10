@@ -1,3 +1,7 @@
+---
+description: How to invite members to your Snyk Organization and assign their roles from the web UI
+---
+
 # Invite team members
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

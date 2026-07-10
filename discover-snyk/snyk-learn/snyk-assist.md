@@ -1,3 +1,7 @@
+---
+description: Snyk Assist for Learn, an AI-powered assistant that answers Snyk product and security questions in the Learning Management add-on
+---
+
 # Snyk Assist for Learn
 
 {% hint style="info" %}

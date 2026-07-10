@@ -1,3 +1,7 @@
+---
+description: How to configure the GitLab integration with Snyk, including generating a personal access token with the required permissions
+---
+
 # GitLab
 
 {% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}

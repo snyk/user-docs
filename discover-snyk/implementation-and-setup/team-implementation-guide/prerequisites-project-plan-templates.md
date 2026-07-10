@@ -1,3 +1,7 @@
+---
+description: Downloadable project plan templates and suggested timelines to guide your Snyk team implementation
+---
+
 # Prerequisites: project plan templates
 
 The templates provided below are the basis of the following sections of this guide. \

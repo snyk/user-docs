@@ -1,3 +1,7 @@
+---
+description: How to gain visibility by importing Projects so Snyk monitors your code, dependencies, containers, and infrastructure
+---
+
 # Gain visibility by importing repositories
 
 Gaining visibility over your Organization security begins with importing Projects. This process allows Snyk to monitor your code, dependencies, containers, and infrastructure.

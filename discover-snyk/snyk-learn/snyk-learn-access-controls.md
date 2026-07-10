@@ -1,7 +1,6 @@
 ---
 description: >-
-  This page provides a step-by-step guide on how to manage Snyk Learn access
-  control.
+  How to manage Snyk Learn access controls for assignment and report permissions across your Organization
 ---
 
 # Snyk Learn access controls

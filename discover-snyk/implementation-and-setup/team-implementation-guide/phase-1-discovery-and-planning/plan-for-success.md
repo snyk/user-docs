@@ -1,3 +1,7 @@
+---
+description: How to define success metrics and KPIs to measure the impact of your Snyk implementation
+---
+
 # Plan for success
 
 ## Determine success metrics with Snyk

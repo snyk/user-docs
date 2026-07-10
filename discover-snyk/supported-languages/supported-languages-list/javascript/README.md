@@ -1,3 +1,7 @@
+---
+description: Snyk support for JavaScript with Snyk Code and Snyk Open Source, including supported frameworks, libraries, and package managers
+---
+
 # JavaScript
 
 {% hint style="info" %}

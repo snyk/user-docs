@@ -1,3 +1,7 @@
+---
+description: How Snyk releases features through stages from alpha to general availability, and what each stage means for access and documentation.
+---
+
 # Snyk release process
 
 {% hint style="info" %}

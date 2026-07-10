@@ -1,7 +1,6 @@
 ---
 description: >-
-  This page explains how to claim CPE credits when completing Snyk Learn lessons
-  and learning paths.
+  How to claim Continuing Professional Education (CPE) credits for completing Snyk Learn lessons and learning paths
 ---
 
 # Claiming CPE Credits with Snyk Learn

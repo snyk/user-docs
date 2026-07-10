@@ -1,3 +1,7 @@
+---
+description: How to test .NET Projects with the Snyk CLI, including open source analysis with solution and project files and source code scanning
+---
+
 # CLI support for .NET
 
 To analyze Open Source libraries, install your dependencies, then run `snyk test` using one of the following options:

@@ -1,3 +1,7 @@
+---
+description: How to make your first Snyk REST API call with curl, including finding your Organization ID and authentication token
+---
+
 # Getting started with the REST API
 
 Follow these steps to make a simple call to the REST API using `curl` in the command line.

@@ -1,3 +1,7 @@
+---
+description: Snyk support for PHP with Snyk Code and Snyk Open Source, including supported versions, frameworks, and interfile analysis
+---
+
 # PHP
 
 {% hint style="info" %}

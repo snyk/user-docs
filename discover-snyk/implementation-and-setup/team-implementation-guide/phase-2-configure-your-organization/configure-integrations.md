@@ -1,3 +1,7 @@
+---
+description: How to configure Snyk SCM and CI/CD integrations for your Organization, including recommended settings
+---
+
 # Configure integrations
 
 Integrate Git or CI/CD integrations as identified in the previous phase.

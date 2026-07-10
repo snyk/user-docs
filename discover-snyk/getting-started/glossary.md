@@ -1,3 +1,7 @@
+---
+description: Definitions of Snyk platform terms and security concepts used throughout the Snyk documentation
+---
+
 # Glossary
 
 ## A
