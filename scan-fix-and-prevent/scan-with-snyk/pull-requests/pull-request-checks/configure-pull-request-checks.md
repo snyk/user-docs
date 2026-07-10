@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Configure Pull Request checks
 
 {% hint style="info" %}

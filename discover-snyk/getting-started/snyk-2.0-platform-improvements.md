@@ -1,3 +1,7 @@
+---
+nav_context: new
+---
+
 # Snyk 2.0 platform improvements
 
 ## What is Snyk 2.0?
