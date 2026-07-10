@@ -1,3 +1,7 @@
+---
+description: How to read Snyk CLI test results after running snyk test
+---
+
 # CLI test results
 
 After you run `snyk test,` a list of vulnerabilities and license issues is displayed directly from the CLI. The list includes:

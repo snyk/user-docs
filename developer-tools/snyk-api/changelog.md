@@ -1,3 +1,7 @@
+---
+description: Changelog of updates to the Snyk API
+---
+
 ## 2026-03-25 - Updated 2026-07-06
 
 ### POST - `/groups/{group_id}/export` - Updated

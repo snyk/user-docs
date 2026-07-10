@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk Jira integration to create tickets from vulnerabilities
+---
+
 # Jira integration
 
 {% hint style="info" %}

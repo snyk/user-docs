@@ -1,3 +1,7 @@
+---
+description: How to set up Snyk in a CI/CD pipeline, including the configuration inputs you need
+---
+
 # CI/CD setup
 
 ## Prerequisites for CI/CD

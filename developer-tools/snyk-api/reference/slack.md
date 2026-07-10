@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for the Slack integration
+---
+
 # Slack
 
 {% hint style="info" %}

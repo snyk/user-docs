@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for assets
+---
+
 # Asset
 
 {% hint style="info" %}

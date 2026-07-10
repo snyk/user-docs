@@ -1,3 +1,7 @@
+---
+description: How to import all GitHub.com and GitHub Enterprise organizations and repositories into Snyk with snyk-api-import
+---
+
 # Mirroring GitHub.com and GitHub Enterprise organizations and repos in Snyk
 
 You can use four commands in the available utilities to import the entirety of GitHub and GitHub Enterprise repositories into Snyk. You must configure both the GitHub token and the Snyk token as environment variables to proceed.

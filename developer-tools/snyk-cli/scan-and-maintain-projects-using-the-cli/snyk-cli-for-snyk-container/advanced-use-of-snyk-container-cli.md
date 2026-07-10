@@ -1,3 +1,7 @@
+---
+description: Advanced Snyk Container CLI usage, including scanning archives
+---
+
 # Advanced use of Snyk Container CLI
 
 ## Scan archives

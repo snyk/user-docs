@@ -1,3 +1,7 @@
+---
+description: How to test Kubernetes files with Snyk IaC using the CLI
+---
+
 # Kubernetes files
 
 With Snyk Infrastructure as Code, you can test your configuration files with the CLI. Snyk Infrastructure as Code for Kubernetes supports the following:

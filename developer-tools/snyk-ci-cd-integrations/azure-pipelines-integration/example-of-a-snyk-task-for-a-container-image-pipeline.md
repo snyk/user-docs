@@ -1,3 +1,7 @@
+---
+description: Example Snyk Security Scan task for testing a container image in an Azure Pipelines script
+---
+
 # Example of a Snyk task for a container image pipeline
 
 The following is an example of the Snyk Security Scan task within the script for a container image pipeline.

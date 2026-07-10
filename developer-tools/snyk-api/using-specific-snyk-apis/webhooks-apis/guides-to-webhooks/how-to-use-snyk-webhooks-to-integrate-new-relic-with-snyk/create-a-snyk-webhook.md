@@ -1,3 +1,7 @@
+---
+description: How to create a Snyk webhook for the New Relic integration
+---
+
 # Create a Snyk Webhook
 
 Create the Snyk Webhook using the [Create a webhook API](../../../../reference/webhooks-v1.md#org-orgid-webhooks).

@@ -1,3 +1,7 @@
+---
+description: How Snyk provides Organization-level SCM integrations with GitHub, GitLab, Bitbucket, and more
+---
+
 # Organization-level integrations
 
 Snyk provides seamless integrations with various source control management systems such as GitHub, GitLab, Bitbucket, and Azure Repos at the Organizational level. These integrations enable you to automatically scan for vulnerabilities and receive actionable insights to enhance the security of your repositories. By integrating at this level, you can ensure comprehensive protection for all your Projects within the Organization.

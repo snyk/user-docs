@@ -1,3 +1,7 @@
+---
+description: The release and support policy for Snyk IDE plugins, including build channels
+---
+
 # Release and support policy for Snyk IDE plugins
 
 This page details the release policy for Snyk IDE plugins.

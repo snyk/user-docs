@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for the Universal Broker
+---
+
 # Universal Broker
 
 {% hint style="info" %}

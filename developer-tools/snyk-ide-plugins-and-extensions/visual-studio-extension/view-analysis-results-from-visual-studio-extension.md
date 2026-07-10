@@ -1,3 +1,7 @@
+---
+description: How to view and filter Snyk vulnerabilities in the Visual Studio extension
+---
+
 # View analysis results from Visual Studio extension
 
 ## Issues display in the Visual Studio extension

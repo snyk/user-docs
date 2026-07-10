@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot the Snyk JetBrains plugin, including unsupported end-of-life operating systems
+---
+
 # Troubleshooting for the JetBrains plugin
 
 {% hint style="warning" %}

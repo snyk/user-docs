@@ -1,3 +1,7 @@
+---
+description: The Snyk pipe parameters and values for Bitbucket Cloud pipelines
+---
+
 # Snyk pipe parameters and values (Bitbucket Cloud)
 
 ## Configure the Snyk pipe

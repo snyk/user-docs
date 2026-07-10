@@ -1,3 +1,7 @@
+---
+description: The snyk-api-import tool for importing Projects and monitoring dependencies at scale, in CI and ad hoc
+---
+
 # Tool: snyk-api-import
 
 Snyk helps you find, fix, and monitor for known vulnerabilities in your dependencies, both on an ad hoc basis and as part of your Continuous Integration (CI) (build) system.

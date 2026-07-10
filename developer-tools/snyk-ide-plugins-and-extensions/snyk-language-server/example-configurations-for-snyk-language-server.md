@@ -1,3 +1,7 @@
+---
+description: Example Snyk Language Server configurations for editors such as Sublime Text
+---
+
 # Example configurations for Snyk Language Server
 
 ## Example configuration for Sublime Text

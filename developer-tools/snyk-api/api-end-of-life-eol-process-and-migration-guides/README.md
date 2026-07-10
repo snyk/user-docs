@@ -1,3 +1,7 @@
+---
+description: The Snyk API end-of-life process and migration guides
+---
+
 # API End of Life (EOL) process and migration guides
 
 This page explains the process, key dates, and milestones associated with the end-of-life (EOL) cycle for all API endpoints. In this documentation, you will also find detailed information about [key dates](api-eol-endpoints-and-key-dates.md) and [migration guides](guides-to-migration/) for API endpoints that are in the end-of-life process.

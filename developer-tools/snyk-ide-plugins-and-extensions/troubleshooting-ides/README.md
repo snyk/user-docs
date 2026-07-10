@@ -1,3 +1,7 @@
+---
+description: Troubleshooting articles for Snyk IDE plugins and extensions
+---
+
 # Troubleshooting IDEs
 
 This section provides the following articles to help in using Snyk IDE plugins and extensions:

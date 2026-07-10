@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for Tenant roles
+---
+
 # TenantRole
 
 {% hint style="info" %}

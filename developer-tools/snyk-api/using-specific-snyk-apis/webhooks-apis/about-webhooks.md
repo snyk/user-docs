@@ -1,3 +1,7 @@
+---
+description: About Snyk webhooks, in beta
+---
+
 # About webhooks
 
 {% hint style="warning" %}

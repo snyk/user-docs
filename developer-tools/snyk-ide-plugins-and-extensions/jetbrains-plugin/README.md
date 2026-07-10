@@ -1,3 +1,7 @@
+---
+description: The Snyk JetBrains plugin for scanning and fixing vulnerabilities as you develop
+---
+
 # JetBrains plugin
 
 ## **Scan early, fix as you develop: elevate your security posture**

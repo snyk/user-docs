@@ -1,3 +1,7 @@
+---
+description: Snyk V1 API endpoints for entitlements
+---
+
 # Entitlements (v1)
 
 {% hint style="info" %}

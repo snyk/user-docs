@@ -1,3 +1,7 @@
+---
+description: Common scenarios and processes for using the Snyk API
+---
+
 # Scenarios for using the Snyk API
 
 The Snyk API scenarios identify procedures you can use to accomplish tasks with Snyk applications using the API. The scenarios listed on this page are grouped in Snyk processes and provided in a [repository](https://github.com/snyk-playground/cx-tools/tree/main/scripts) or on the user docs site. Links are included.

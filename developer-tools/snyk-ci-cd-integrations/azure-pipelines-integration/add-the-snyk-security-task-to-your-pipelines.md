@@ -1,3 +1,7 @@
+---
+description: How to add the Snyk Security task to your Azure Pipelines, including prerequisites
+---
+
 # Add the Snyk Security Task to your pipelines
 
 ## **Prerequisites to add Snyk Security Task to your pipelines**

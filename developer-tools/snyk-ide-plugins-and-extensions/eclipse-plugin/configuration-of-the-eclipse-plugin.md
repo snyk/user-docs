@@ -1,3 +1,7 @@
+---
+description: How to configure global and Project-specific settings for the Snyk Eclipse plugin
+---
+
 # Configuration of the Eclipse plugin
 
 You can configure both [Global settings](configuration-of-the-eclipse-plugin.md#general-settings) and [Project-specific properties](configuration-of-the-eclipse-plugin.md#project-specific-properties).

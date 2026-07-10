@@ -1,3 +1,7 @@
+---
+description: The Snyk settings and configuration parameters for the TeamCity integration
+---
+
 # TeamCity configuration parameters
 
 This page provides information about [Snyk settings](teamcity-configuration-parameters.md#snyk-settings), [Additional parameters](teamcity-configuration-parameters.md#additional-parameters), and [Snyk tool settings](teamcity-configuration-parameters.md#snyk-tool-settings).

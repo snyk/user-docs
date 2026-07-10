@@ -1,3 +1,7 @@
+---
+description: How to resolve the invalid string length error when scanning Projects with the CLI
+---
+
 # Invalid string length error when scanning projects
 
 The invalid string length error can occur in the following situations:

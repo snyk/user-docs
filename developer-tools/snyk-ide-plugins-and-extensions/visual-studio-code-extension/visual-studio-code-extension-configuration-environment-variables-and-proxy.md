@@ -1,3 +1,7 @@
+---
+description: How to configure the Snyk Visual Studio Code extension, including environment variables and proxy settings
+---
+
 # Visual Studio Code extension configuration, environment variables, and proxy
 
 ## Configuration of the Visual Studio Code extension

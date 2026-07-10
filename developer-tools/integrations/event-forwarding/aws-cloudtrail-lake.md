@@ -1,3 +1,7 @@
+---
+description: How to forward Snyk platform events to AWS CloudTrail Lake, available on Enterprise plans
+---
+
 # AWS CloudTrail Lake
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: How to deploy the POST method in AWS API Gateway for the Snyk to Slack integration
+---
+
 # AWS API Gateway: deploy the POST method
 
 Deploy with configured POST method so the AWS Lambda function can start receiving the information.

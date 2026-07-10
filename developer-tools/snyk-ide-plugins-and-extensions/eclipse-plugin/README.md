@@ -1,3 +1,7 @@
+---
+description: The Snyk Eclipse plugin for scanning and fixing vulnerabilities as you develop
+---
+
 # Eclipse plugin
 
 ## **Scan early, fix as you develop: elevate your security posture**

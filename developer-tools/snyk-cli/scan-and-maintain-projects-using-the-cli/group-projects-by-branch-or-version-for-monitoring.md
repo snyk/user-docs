@@ -1,3 +1,7 @@
+---
+description: How to group Projects by branch or version when monitoring with the CLI
+---
+
 # Group Projects by branch or version for monitoring
 
 {% hint style="info" %}

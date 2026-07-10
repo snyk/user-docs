@@ -1,3 +1,7 @@
+---
+description: Snyk Tools that address specific needs beyond core product functionality, across the Web UI, CLI, and API
+---
+
 # Snyk Tools
 
 ## Scope of Snyk Tools

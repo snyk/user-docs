@@ -1,3 +1,7 @@
+---
+description: How to use Snyk Broker with SCM integrations when your SCM instance is not publicly accessible
+---
+
 # SCM integrations and Snyk Broker
 
 If your SCM instance is not publicly accessible, you need Snyk Broker. You can install and configure your Snyk Broker using Docker or Helm. For more information about Snyk Broker, see the [Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/snyk-broker) documentation, including [Using Snyk Essentials wtih Snyk Broker](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-broker/using-snyk-essentials-with-snyk-broker).

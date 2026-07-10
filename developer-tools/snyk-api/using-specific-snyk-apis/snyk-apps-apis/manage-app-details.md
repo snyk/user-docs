@@ -1,3 +1,7 @@
+---
+description: How to list and manage Snyk Apps created by an Organization
+---
+
 # Manage App details
 
 ## List Apps created by an Organization

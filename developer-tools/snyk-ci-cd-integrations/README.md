@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk into CI/CD pipelines, with the Snyk CLI recommended for flexibility
+---
+
 # Snyk CI/CDs
 
 {% hint style="info" %}

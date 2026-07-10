@@ -1,3 +1,7 @@
+---
+description: How to read Snyk IaC CLI test results in version 1.938.0 and earlier
+---
+
 # Snyk IaC CLI test results (v. 1.938.0 and earlier)
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Snyk V1 API endpoints for ignores
+---
+
 # Ignores (v1)
 
 {% hint style="info" %}

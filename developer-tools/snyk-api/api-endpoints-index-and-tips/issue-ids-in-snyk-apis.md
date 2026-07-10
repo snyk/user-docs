@@ -1,3 +1,7 @@
+---
+description: How issue IDs work across the Snyk V1 and REST APIs
+---
+
 # Issue IDs in Snyk APIs
 
 The `issueid` in the V1 API is the issue identifier from the Snyk Vulnerability Database, for example, SNYK-JS-LODASH-6139239.

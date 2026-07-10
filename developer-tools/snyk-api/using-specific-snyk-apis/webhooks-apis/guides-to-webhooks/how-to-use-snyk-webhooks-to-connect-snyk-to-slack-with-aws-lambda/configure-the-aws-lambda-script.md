@@ -1,3 +1,7 @@
+---
+description: How to configure the example AWS Lambda script for the Snyk to Slack integration
+---
+
 # Configure the AWS Lambda script
 
 You can configure the example code provided in multiple ways to get the information you want into Slack.

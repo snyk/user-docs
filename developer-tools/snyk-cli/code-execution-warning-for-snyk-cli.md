@@ -1,3 +1,7 @@
+---
+description: Why the Snyk CLI may execute code from your Project during analysis
+---
+
 # Code execution warning for Snyk CLI
 
 {% hint style="warning" %}

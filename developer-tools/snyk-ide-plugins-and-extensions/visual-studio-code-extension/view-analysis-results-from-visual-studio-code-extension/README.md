@@ -1,3 +1,7 @@
+---
+description: How to view Snyk security vulnerabilities and code quality results in the Visual Studio Code extension
+---
+
 # View analysis results from Visual Studio Code extension
 
 ## Overview of results

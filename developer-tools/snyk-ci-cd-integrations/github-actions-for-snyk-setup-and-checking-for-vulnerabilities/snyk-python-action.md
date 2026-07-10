@@ -1,3 +1,7 @@
+---
+description: Examples of using the Snyk GitHub Action for Python
+---
+
 # Snyk Python action
 
 This page provides examples of using the Snyk GitHub action for [Python](https://github.com/snyk/actions/tree/master/python). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).

@@ -1,3 +1,7 @@
+---
+description: Recommendations for rolling out Snyk SCM integration features gradually to avoid developer friction
+---
+
 # Deployment recommendations
 
 If you try to implement all the SCM integration features at the same time, you risk causing friction in your software development life cycle ([SDLC](https://snyk.io/learn/secure-sdlc/)), which in turn leads to a poor developer experience.

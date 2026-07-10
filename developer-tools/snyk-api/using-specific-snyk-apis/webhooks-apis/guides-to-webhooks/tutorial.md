@@ -1,3 +1,7 @@
+---
+description: How to use Snyk webhooks with Zapier
+---
+
 # How to use Snyk webhooks with Zapier
 
 {% hint style="info" %}

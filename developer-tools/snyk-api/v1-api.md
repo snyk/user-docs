@@ -1,3 +1,7 @@
+---
+description: About the Snyk V1 API, available on Enterprise plans
+---
+
 # V1 API
 
 ## About the V1 API

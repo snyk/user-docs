@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for member invitations
+---
+
 # Invites
 
 {% hint style="info" %}

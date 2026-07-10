@@ -1,5 +1,5 @@
 ---
-description: SCM-Contributors-Count Modes and Levels
+description: Modes and levels for the scm-contributors-count tool
 ---
 
 # Usage

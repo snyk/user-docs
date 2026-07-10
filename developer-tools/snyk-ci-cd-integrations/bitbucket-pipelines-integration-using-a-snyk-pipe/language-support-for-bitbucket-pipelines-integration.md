@@ -1,3 +1,7 @@
+---
+description: The languages supported by the Snyk Bitbucket Pipelines pipe integration
+---
+
 # Language support for Bitbucket Pipelines integration
 
 Snyk integration with Bitbucket pipes is supported for the following languages:

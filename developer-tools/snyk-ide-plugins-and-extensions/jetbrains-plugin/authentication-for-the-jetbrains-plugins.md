@@ -1,3 +1,7 @@
+---
+description: How to authenticate the Snyk JetBrains plugin, including the supported protocols
+---
+
 # Authentication for the JetBrains plugin
 
 To scan your Projects, you must authenticate with Snyk.

@@ -1,3 +1,7 @@
+---
+description: The Snyk Visual Studio Code extension for scanning and fixing vulnerabilities as you develop
+---
+
 # Visual Studio Code extension
 
 ## **Scan early, fix as you develop: elevate your security posture**

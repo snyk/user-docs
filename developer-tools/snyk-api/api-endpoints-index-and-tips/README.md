@@ -1,3 +1,7 @@
+---
+description: Index of Snyk API endpoints with tips, including how to find your Organization ID
+---
+
 # API endpoints index and tips
 
 {% hint style="info" %}

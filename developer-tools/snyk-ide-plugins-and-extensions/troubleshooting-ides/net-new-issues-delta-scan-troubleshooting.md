@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot Snyk net new issues delta scans that fail on npm reference scans
+---
+
 # Net new issues (delta) scan troubleshooting
 
 ## Problem

@@ -1,3 +1,7 @@
+---
+description: How to run an import with snyk-api-import, covering the same Project sources as the Snyk API
+---
+
 # Kicking off an import
 
 `snyk-api-import` supports the same Project sources that you can import using the Snyk API: Git repositories, Docker images, containers, configuration files and much more. You can configure integrations using the Integrations settings on your Snyk Organization settings page. For more information, see the definition of [Target](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects#target) on the Snyk Projects documentation page.

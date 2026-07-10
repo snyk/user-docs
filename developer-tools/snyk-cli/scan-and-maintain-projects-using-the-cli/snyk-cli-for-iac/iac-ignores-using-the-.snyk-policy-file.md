@@ -1,3 +1,7 @@
+---
+description: How to ignore Snyk IaC issues using the .snyk policy file
+---
+
 # IaC ignores using the .snyk policy file
 
 When you scan IaC configuration files using the Snyk CLI `iac test` command, you can ignore issues that are not relevant to you by using the [`.snyk` policy file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/the-.snyk-file). Snyk recommends that you store and version the `.snyk` file in the root of the working directory where you store your IaC configuration files. This file can be created with the `snyk ignore` command. For details see [Ignore vulnerabilities using Snyk CLI](../ignore-vulnerabilities-using-the-snyk-cli.md).

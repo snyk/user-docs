@@ -1,3 +1,7 @@
+---
+description: The snyk-scm-contributors-count tool that counts contributing developers in your SCM
+---
+
 # snyk-scm-contributors-count
 
 ## What does this tool do?

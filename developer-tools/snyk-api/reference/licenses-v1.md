@@ -1,3 +1,7 @@
+---
+description: Snyk V1 API endpoints for licenses
+---
+
 # Licenses (v1)
 
 {% hint style="info" %}

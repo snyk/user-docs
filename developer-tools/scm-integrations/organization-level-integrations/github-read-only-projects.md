@@ -1,3 +1,7 @@
+---
+description: How Snyk GitHub Read-only Projects monitor public GitHub repositories without write access
+---
+
 # GitHub Read-only Projects
 
 ### How GitHub Read-only Projects work

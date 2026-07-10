@@ -1,3 +1,7 @@
+---
+description: Migration guide from the V1 Reporting APIs to the Export API
+---
+
 # V1 Reporting APIs to Export API migration guide
 
 {% hint style="warning" %}

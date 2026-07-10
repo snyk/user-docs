@@ -1,3 +1,7 @@
+---
+description: How Snyk GitHub Actions set up Snyk and check for vulnerabilities in your pipeline
+---
+
 # GitHub actions for Snyk setup and checking for vulnerabilities
 
 ## Overview of GitHub Actions Integration

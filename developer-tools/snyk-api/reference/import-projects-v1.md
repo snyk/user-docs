@@ -1,3 +1,7 @@
+---
+description: Snyk V1 API endpoints for importing Projects
+---
+
 # Import Projects (v1)
 
 {% hint style="info" %}

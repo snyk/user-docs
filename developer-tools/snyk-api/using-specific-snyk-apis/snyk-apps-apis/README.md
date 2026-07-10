@@ -1,3 +1,7 @@
+---
+description: How to use the Snyk Apps APIs to build integrations
+---
+
 # How to use Snyk Apps APIs
 
 This section provides an introduction to Snyk Apps and instructions for using the API and the CLI to create an App, for using the OAuth2 API to set up a Snyk App, and for using the API to manage Snyk Apps.

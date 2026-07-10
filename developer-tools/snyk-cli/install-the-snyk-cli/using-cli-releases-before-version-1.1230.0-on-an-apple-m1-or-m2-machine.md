@@ -1,3 +1,7 @@
+---
+description: How to run Snyk CLI releases before 1.1230.0 on Apple M1 or M2 machines
+---
+
 # Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine
 
 **Beginning with version 1.1230.0**, the Snyk CLI supports Apple silicon, including M1 and M2 machines, so **you no longer need the Rosetta 2 software, as suggested on this page**. Snyk recommends always keeping your CLI installation updated to the latest version. You can check which version of the Snyk CLI you have installed by running `snyk --version`.

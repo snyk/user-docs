@@ -1,3 +1,7 @@
+---
+description: The environment variables you can use to configure the Snyk CLI
+---
+
 # Environment variables for Snyk CLI
 
 This page identifies environment variables that you can use to configure specific settings for the CLI.

@@ -1,3 +1,7 @@
+---
+description: How to exclude directories and files from Snyk Code CLI tests
+---
+
 # Exclude directories and files from Snyk Code CLI tests
 
 When you test a Snyk Code repository using the CLI, you can exclude certain directories and files from the CLI test by using the `snyk ignore --file-path` command. When you run this command, the `.snyk` file is created automatically in your repository, containing the name of the directory or file you specified for exclusion.

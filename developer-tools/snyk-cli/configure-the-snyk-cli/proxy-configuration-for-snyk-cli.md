@@ -1,3 +1,7 @@
+---
+description: How to configure a proxy for the Snyk CLI
+---
+
 # Proxy configuration for Snyk CLI
 
 ## General proxy configuration

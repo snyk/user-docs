@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for container registry import policies
+---
+
 # ContainerRegistryImportPolicy
 
 {% hint style="info" %}

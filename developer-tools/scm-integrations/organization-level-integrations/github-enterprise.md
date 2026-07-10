@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk GitHub Enterprise SCM integration, available on Enterprise plans
+---
+
 # GitHub Enterprise
 
 {% hint style="info" %}

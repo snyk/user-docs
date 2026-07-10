@@ -1,3 +1,7 @@
+---
+description: How to configure Express.js to serve a Snyk App in the tutorial
+---
+
 # Configuring Express.js
 
 ## Set up Express to serve the application

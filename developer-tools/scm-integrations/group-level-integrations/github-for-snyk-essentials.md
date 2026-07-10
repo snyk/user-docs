@@ -1,3 +1,7 @@
+---
+description: How to configure the GitHub integration for Snyk Essentials at the Group level
+---
+
 # GitHub for Snyk Essentials
 
 {% hint style="info" %}

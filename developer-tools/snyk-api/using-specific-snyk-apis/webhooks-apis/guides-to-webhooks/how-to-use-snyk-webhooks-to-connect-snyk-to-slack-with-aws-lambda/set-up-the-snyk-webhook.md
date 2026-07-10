@@ -1,3 +1,7 @@
+---
+description: How to create the Snyk webhook for the Slack and AWS Lambda integration
+---
+
 # Set up the Snyk webhook
 
 Create the Snyk Webhook using the [Create a webhook API](../../../../reference/webhooks-v1.md#org-orgid-webhooks).

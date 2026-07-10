@@ -1,3 +1,7 @@
+---
+description: The languages supported by the Snyk TeamCity integration
+---
+
 # Language support for TeamCity integration
 
 Snyk supports all TeamCity projects regardless of which Git repo is used.

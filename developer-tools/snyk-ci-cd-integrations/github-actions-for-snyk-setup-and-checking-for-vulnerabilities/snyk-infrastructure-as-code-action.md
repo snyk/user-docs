@@ -1,3 +1,7 @@
+---
+description: Examples of using the Snyk GitHub Action for infrastructure as code (IaC)
+---
+
 # Snyk Infrastructure as Code action
 
 This page provides instructions for and examples of using the Snyk GitHub Action for [Infrastructure as Code](https://github.com/snyk/actions/tree/master/iac). For general instructions and information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).

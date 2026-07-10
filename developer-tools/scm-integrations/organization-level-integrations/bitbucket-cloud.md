@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk Bitbucket Cloud SCM integration, with the Bitbucket Cloud App recommended
+---
+
 # Bitbucket Cloud
 
 {% hint style="info" %}

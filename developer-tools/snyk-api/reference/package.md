@@ -1,3 +1,7 @@
+---
+description: Snyk REST API endpoints for packages
+---
+
 # Package
 
 {% hint style="info" %}

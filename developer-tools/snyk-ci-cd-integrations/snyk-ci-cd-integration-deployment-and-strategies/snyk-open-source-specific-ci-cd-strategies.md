@@ -1,3 +1,7 @@
+---
+description: CI/CD strategies for Snyk Open Source software composition analysis testing
+---
+
 # Snyk Open Source-specific CI/CD strategies
 
 These strategies are useful to teams using the Snyk SCA ([Software Composition Analysis](https://snyk.io/blog/what-is-software-composition-analysis-sca-and-does-my-company-need-it/)) testing features.

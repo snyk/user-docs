@@ -1,3 +1,7 @@
+---
+description: How to view Snyk IaC misconfiguration scanning results in the Eclipse plugin
+---
+
 # Misconfiguration scanning results (Snyk Infrastructure as Code)
 
 In the Eclipse plugin version 2.0.0 and later, Snyk has enhanced integrations with the native flows of Eclipse: inline code highlights with displays of information about the issue on hover, and Eclipse Problems integrations. The following illustrates all of these for a high-severity security vulnerability found in a `js` file:

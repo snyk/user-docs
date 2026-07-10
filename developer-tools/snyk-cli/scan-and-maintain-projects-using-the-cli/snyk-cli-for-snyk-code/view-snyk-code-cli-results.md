@@ -1,3 +1,7 @@
+---
+description: How to view Snyk Code results from the CLI
+---
+
 # View Snyk Code CLI results
 
 The Snyk CLI enables you to perform the following actions on the results of the `snyk code test` command:

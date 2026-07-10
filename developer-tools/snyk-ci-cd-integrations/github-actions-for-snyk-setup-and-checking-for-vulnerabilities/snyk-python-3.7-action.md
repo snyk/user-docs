@@ -1,3 +1,7 @@
+---
+description: The removed Snyk GitHub Action for Python 3.7, with migration guidance
+---
+
 # Snyk Python-3.7 action
 
 {% hint style="warning" %}

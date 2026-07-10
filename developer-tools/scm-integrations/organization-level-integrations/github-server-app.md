@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk GitHub Server App integration for self-hosted instances, on Enterprise plans
+---
+
 # GitHub Server App
 
 {% hint style="info" %}

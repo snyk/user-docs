@@ -1,3 +1,7 @@
+---
+description: How the Snyk CLI secures its configuration data at rest
+---
+
 # Securing data at rest
 
 The Snyk CLI stores its configuration in a JSON file in the local file system in a user-related path. Because the configuration file might include secrets like tokens, it is recommended that you secure the stored file.

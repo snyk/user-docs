@@ -1,3 +1,7 @@
+---
+description: Examples of using the Snyk GitHub Action for Gradle with JDK 11
+---
+
 # Snyk Gradle-jdk11 action
 
 This page provides examples of using the Snyk GitHub Action for [Gradle (jdk11)](https://github.com/snyk/actions/tree/master/gradle-jdk11). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).

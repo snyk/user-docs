@@ -1,3 +1,7 @@
+---
+description: How to test Azure ARM files with Snyk IaC using the CLI
+---
+
 # ARM files
 
 With Snyk Infrastructure as Code, you can test your configuration files using the CLI.

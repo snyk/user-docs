@@ -1,3 +1,7 @@
+---
+description: How to set a Snyk API token to read-only permissions
+---
+
 # Snyk API token permissions users can control
 
 To set an API token to have read-only permissions so the user is unable to write to the platform, use a service account and set it to Group Viewer.

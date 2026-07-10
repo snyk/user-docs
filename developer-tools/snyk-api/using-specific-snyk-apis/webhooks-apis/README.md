@@ -1,3 +1,7 @@
+---
+description: How to use the Snyk Webhooks APIs
+---
+
 # Webhooks APIs
 
 This section includes the following:

@@ -1,3 +1,7 @@
+---
+description: How the scm-contributors-count tool counts Bitbucket Server contributors
+---
+
 # Bitbucket Server - Flow and Tech
 
 ## Flow <a href="#flow" id="flow"></a>

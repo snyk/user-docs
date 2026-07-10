@@ -1,3 +1,7 @@
+---
+description: Examples of using the Snyk GitHub Action for Docker container images
+---
+
 # Snyk Docker action
 
 This page provides instructions for and examples of using the Snyk GitHub Action for [Docker](https://github.com/snyk/actions/tree/master/docker). For general instructions and information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).

@@ -1,3 +1,7 @@
+---
+description: How to test the Snyk webhook connection for the Slack and AWS Lambda integration
+---
+
 # Test the Snyk webhook connection
 
 The Snyk Webhook only updates when there is a new vulnerability found, but you can test your implementation using Postman.

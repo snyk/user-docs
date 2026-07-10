@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk with TeamCity using the Snyk Security plugin
+---
+
 # TeamCity (JetBrains) integration using the Snyk security plugin
 
 Integrate the Snyk Security plugin with the JetBrains continuous integration (CI) tool, TeamCity, to embed open-source vulnerability scanning directly into your automated build chain.

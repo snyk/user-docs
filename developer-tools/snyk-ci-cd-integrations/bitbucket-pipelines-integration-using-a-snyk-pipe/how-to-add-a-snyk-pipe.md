@@ -1,3 +1,7 @@
+---
+description: How to add a Snyk pipe to a Bitbucket Pipelines pipeline
+---
+
 # How to add a Snyk pipe
 
 Follow these steps to add a Snyk pipe:

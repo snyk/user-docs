@@ -1,5 +1,5 @@
 ---
-description: Get a list of apps installed for an organization
+description: How to set up the Snyk Slack app, the recommended replacement for the Slack integration
 ---
 
 # Slack app
