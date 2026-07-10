@@ -1,3 +1,7 @@
+---
+description: Examples of setting up Snyk custom mapping for identity providers such as Okta, Entra ID, and Google Workspace
+---
+
 # Examples: setting up custom mapping for IdPs
 
 The following examples of how to set up a custom mapping for various identify providers are available here:

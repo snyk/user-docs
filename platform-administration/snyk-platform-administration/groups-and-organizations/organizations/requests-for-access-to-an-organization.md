@@ -1,3 +1,7 @@
+---
+description: How users request access to a Snyk Organization and how administrators review those requests
+---
+
 # Requests for access to an Organization
 
 Users who are not members of a Snyk Organization can request access.

@@ -1,3 +1,7 @@
+---
+description: Prerequisites and steps to install and configure Snyk Broker for GitHub Enterprise with Docker or Helm
+---
+
 # GitHub Enterprise - prerequisites and steps to install and configure Broker
 
 \

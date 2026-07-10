@@ -1,3 +1,7 @@
+---
+description: How to use one Snyk Broker token across multiple Organizations with the same SCM
+---
+
 # Enabling Broker across multiple Organizations
 
 You can use the same Git service across multiple Organizations in Snyk with the same Broker token.

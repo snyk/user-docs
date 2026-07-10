@@ -1,3 +1,7 @@
+---
+description: The Snyk Broker Container Registry Agent for scanning private container registries, available on Enterprise plans
+---
+
 # Snyk Broker - Container Registry Agent
 
 {% hint style="info" %}

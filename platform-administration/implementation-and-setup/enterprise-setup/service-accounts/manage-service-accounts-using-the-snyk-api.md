@@ -1,3 +1,7 @@
+---
+description: How to create and manage Snyk service accounts through the Snyk REST API, including the required permissions
+---
+
 # Manage service accounts using the Snyk API
 
 You can manage service accounts using the [Snyk REST API](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/reference/serviceaccounts).

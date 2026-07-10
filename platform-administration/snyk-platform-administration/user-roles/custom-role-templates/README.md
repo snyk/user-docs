@@ -1,3 +1,7 @@
+---
+description: Templates for Snyk custom roles, with titles and permissions mapped to responsibilities across the development lifecycle
+---
+
 # Custom role templates
 
 This section provides templates for custom roles, with their titles and corresponding permissions reflecting the key responsibilities of users throughout the development lifecycle while using Snyk.

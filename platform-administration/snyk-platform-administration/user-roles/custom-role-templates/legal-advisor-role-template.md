@@ -1,3 +1,7 @@
+---
+description: Custom role template for a Legal Advisor, an Organization-level role to manage security and license policies and export reports
+---
+
 # Legal Advisor role template
 
 This Organization-level role can manage security and license policies for the Group and view and export reports, but not manage the Group or Organizations or view individual Projects.

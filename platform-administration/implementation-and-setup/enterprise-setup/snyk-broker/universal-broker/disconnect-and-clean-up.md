@@ -1,3 +1,7 @@
+---
+description: How to remove Universal Broker resources with the snyk-broker-config delete command, with safeguards for connection states
+---
+
 # Disconnect and clean up
 
 The `snyk-broker-config workflows <RESOURCE> delete` command allows you to remove resources.

@@ -1,3 +1,7 @@
+---
+description: How Snyk Broker detects infrastructure as code (IaC) files, enabled by default from Broker v4.205.2
+---
+
 # Snyk Broker - Infrastructure as Code detection
 
 Beginning with Snyk Broker v4.205.2, the Infrastructure-as-Code (IaC) detection is enabled by default.

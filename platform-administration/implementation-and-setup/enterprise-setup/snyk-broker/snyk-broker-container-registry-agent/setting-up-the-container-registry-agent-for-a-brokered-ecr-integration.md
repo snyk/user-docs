@@ -1,3 +1,7 @@
+---
+description: How to set up the Container Registry Agent for a brokered Amazon ECR integration with Snyk
+---
+
 # Setting up the Container Registry Agent for a brokered ECR integration
 
 ## Terminology and diagram for brokered ECR integration

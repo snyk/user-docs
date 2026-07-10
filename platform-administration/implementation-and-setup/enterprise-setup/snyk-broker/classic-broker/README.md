@@ -1,3 +1,7 @@
+---
+description: The Classic Broker, including connections, deployment preparation, installation, and configuration
+---
+
 # Classic Broker
 
 This section provides information about the classic Snyk Broker:

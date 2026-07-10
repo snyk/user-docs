@@ -1,3 +1,7 @@
+---
+description: How to enable early Snyk Preview features, separate from IDE plugin preview features
+---
+
 # Snyk Preview
 
 {% hint style="info" %}

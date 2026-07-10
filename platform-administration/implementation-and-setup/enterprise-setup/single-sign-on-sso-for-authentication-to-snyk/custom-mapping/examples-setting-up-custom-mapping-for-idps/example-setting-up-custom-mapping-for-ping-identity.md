@@ -1,3 +1,7 @@
+---
+description: Example of configuring Snyk custom mapping of roles for Ping Identity using legacy custom mapping
+---
+
 # Example: setting up custom mapping for Ping Identity
 
 This page explains how to configure the custom mapping of roles for Ping Identity using [Legacy custom mapping](../legacy-custom-mapping.md).

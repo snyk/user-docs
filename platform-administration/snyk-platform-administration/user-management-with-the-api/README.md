@@ -1,3 +1,7 @@
+---
+description: How to manage Snyk users through the Snyk API, available on Enterprise plans
+---
+
 # User management with the API
 
 {% hint style="info" %}

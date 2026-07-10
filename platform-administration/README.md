@@ -1,3 +1,7 @@
+---
+description: Overview of Snyk platform administration, including managing Tenants, Groups, Organizations, users, roles, and Snyk Broker
+---
+
 # Overview
 
 {% hint style="info" %}

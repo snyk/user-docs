@@ -1,3 +1,7 @@
+---
+description: How to install and configure Snyk Broker for Jira using Helm
+---
+
 # Jira - install and configure using Helm
 
 Before installing, review the [prerequisites](./) and the general instructions for installation using [Helm](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md).

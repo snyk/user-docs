@@ -1,3 +1,7 @@
+---
+description: Prerequisites for deploying the Universal Broker, including supported platforms and the snyk-broker-config CLI tool
+---
+
 # Prerequisites for Universal Broker
 
 {% hint style="info" %}

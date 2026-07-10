@@ -1,3 +1,7 @@
+---
+description: Deployment tips and reference architectures for running Universal Broker clients at scale
+---
+
 # Deployment tips and reference architectures
 
 {% hint style="info" %}

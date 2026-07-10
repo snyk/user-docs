@@ -1,3 +1,7 @@
+---
+description: The Tenant, the top level of the Snyk hierarchy, and the features it manages on Enterprise plans
+---
+
 # Tenants
 
 {% hint style="info" %}

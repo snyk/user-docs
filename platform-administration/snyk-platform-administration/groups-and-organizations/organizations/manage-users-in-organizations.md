@@ -1,3 +1,7 @@
+---
+description: How to manage members of a Snyk Organization from the Members settings, based on your role permissions
+---
+
 # Manage users in Organizations
 
 In the **Organization** where you want to manage users, select the **Members** menu option.

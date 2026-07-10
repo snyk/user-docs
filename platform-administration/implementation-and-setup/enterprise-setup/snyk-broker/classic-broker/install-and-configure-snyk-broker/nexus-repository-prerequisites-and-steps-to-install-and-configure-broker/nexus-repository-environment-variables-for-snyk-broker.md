@@ -1,3 +1,7 @@
+---
+description: Environment variables to configure the Snyk Broker client for Nexus Repository
+---
+
 # Nexus Repository - environment variables for Snyk Broker
 
 ## Environment variables for Nexus 3 configuration

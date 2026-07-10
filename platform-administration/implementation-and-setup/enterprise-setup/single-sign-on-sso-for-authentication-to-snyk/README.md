@@ -1,3 +1,7 @@
+---
+description: How Snyk supports Single Sign-On (SSO) authentication through your company identity provider, available on Enterprise plans
+---
+
 # Single Sign-On (SSO) for authentication to Snyk
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Snyk standard pre-defined user roles, which cannot be customized, and how to assign them
+---
+
 # Pre-defined roles
 
 Snyk provides a set of standard user roles that can be assigned and managed using the Snyk Web UI or the [Snyk API](../user-management-with-the-api/). The permission sets for pre-defined roles cannot be customized. Instead, Snyk recommends creating a custom role under Manage role in the Snyk Web UI.

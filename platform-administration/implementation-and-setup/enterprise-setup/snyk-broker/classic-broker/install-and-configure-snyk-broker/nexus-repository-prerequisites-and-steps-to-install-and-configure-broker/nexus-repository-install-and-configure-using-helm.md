@@ -1,3 +1,7 @@
+---
+description: How to install and configure Snyk Broker for Nexus Repository using Helm
+---
+
 # Nexus Repository - install and configure using Helm
 
 {% hint style="info" %}

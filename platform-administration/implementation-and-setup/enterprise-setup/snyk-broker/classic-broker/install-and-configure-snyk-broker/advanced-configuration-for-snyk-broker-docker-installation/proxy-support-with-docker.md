@@ -1,3 +1,7 @@
+---
+description: How to configure proxy support, including authentication, for a Snyk Broker Docker installation
+---
+
 # Proxy support with Docker
 
 For proxy configuration, see [Configure Docker to use a proxy server](https://docs.docker.com/network/proxy/).

@@ -1,3 +1,7 @@
+---
+description: How to configure the Snyk Broker client to use an internal certificate for backend HTTPS connections with Docker
+---
+
 # Backend requests with an internal certificate for Docker
 
 By default, the Broker Client establishes HTTPS connections to the backend system: GitHub, BitBucket, Jira, or other. If your backend system is serving an internal certificate (signed by your own certificate authority (CA)), you can provide the CA certificate to the Broker Client.

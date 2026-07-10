@@ -1,3 +1,7 @@
+---
+description: Environment variables to configure the Snyk Broker client for Bitbucket Server and Data Center with a personal access token
+---
+
 # Bitbucket Server/Data Center - environment variables for Snyk Broker Personal Access Token (PAT)
 
 The following environment variables are required to configure the Broker client:

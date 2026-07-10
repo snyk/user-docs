@@ -1,3 +1,7 @@
+---
+description: How to install and configure Snyk Broker for Artifactory Repository using Docker
+---
+
 # Artifactory Repository - install and configure using Docker
 
 {% hint style="info" %}

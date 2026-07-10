@@ -1,3 +1,7 @@
+---
+description: Example of configuring Snyk custom mapping of roles for Entra ID (formerly Azure AD)
+---
+
 # Example: setting up custom mapping for Entra ID
 
 The following information shows how to configure the custom mapping of roles for Entra ID (formerly Azure AD).

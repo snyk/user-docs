@@ -1,3 +1,7 @@
+---
+description: The basic steps to install and configure the Universal Broker, from prerequisites through your first connection
+---
+
 # Basic steps to install and configure Universal Broker
 
 {% hint style="info" %}

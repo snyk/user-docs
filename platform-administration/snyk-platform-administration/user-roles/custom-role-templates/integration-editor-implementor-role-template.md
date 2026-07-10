@@ -1,3 +1,7 @@
+---
+description: Custom role template for an Integration Editor or Implementor, a Group-level role for managing third-party tool integrations
+---
+
 # Integration Editor/Implementor role template
 
 This is a Group-level role with integration-related permissions to enable and process the integration of multiple third-party tools.

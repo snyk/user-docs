@@ -1,3 +1,7 @@
+---
+description: How Snyk Broker high availability mode runs several independent Broker clients to spread requests
+---
+
 # High availability mode
 
 High availability mode allows you to run several Broker clients that work independently to one another. The Snyk platform will spread the requests it makes evenly across the connections to ease the load on each client and provide redundancy. High availability mode also avoids downtime during Snyk server upgrade events.
