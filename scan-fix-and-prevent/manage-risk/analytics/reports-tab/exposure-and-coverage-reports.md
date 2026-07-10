@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Exposure and coverage reports
 
 The Exposure and coverage reports section includes the following reports:
