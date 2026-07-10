@@ -1,3 +1,7 @@
+---
+description: How to generate an API key for Snyk API and Web
+---
+
 # Generate API key
 
 Learn how to generate API keys to integrate with Snyk API & Web.

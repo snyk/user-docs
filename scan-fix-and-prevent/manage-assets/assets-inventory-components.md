@@ -1,3 +1,7 @@
+---
+description: The components of each Snyk assets inventory layout
+---
+
 # Assets inventory components
 
 Each inventory layout is presented in a table format, detailing the available key attributes:

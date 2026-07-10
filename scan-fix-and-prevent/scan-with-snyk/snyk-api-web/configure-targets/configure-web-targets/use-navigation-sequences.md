@@ -1,3 +1,7 @@
+---
+description: How to use navigation sequences for Snyk API and Web web targets
+---
+
 # Use navigation sequences
 
 Guide the scanner to specific application states and complex areas of your web application using navigation sequences.

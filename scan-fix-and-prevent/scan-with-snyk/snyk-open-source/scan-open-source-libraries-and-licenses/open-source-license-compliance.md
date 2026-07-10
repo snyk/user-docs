@@ -1,3 +1,7 @@
+---
+description: How Snyk manages open source license compliance
+---
+
 # Open-source license compliance
 
 ## Overview of licenses

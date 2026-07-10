@@ -1,3 +1,7 @@
+---
+description: How to ignore cloud issues in Snyk
+---
+
 # Ignoring cloud issues
 
 You can ignore a cloud [issue](./) from the Snyk Web UI.

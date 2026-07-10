@@ -1,3 +1,7 @@
+---
+description: How the Snyk Artifactory Gatekeeper Plugin blocks vulnerable packages
+---
+
 # Artifactory Gatekeeper Plugin
 
 {% hint style="info" %}

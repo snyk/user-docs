@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot domain verification with a TXT file in Snyk API and Web
+---
+
 # Troubleshoot domain verification with TXT file
 
 To run full scans, you must verify domain ownership. Visit [Verify domain ownership](../../configure-targets/verify-domain-ownership/) to learn why verification is required.

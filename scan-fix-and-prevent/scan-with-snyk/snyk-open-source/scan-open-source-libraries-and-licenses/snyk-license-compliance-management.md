@@ -1,3 +1,7 @@
+---
+description: How Snyk License Compliance Management governs open source license risk
+---
+
 # Snyk License Compliance Management
 
 {% hint style="info" %}

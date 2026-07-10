@@ -1,3 +1,7 @@
+---
+description: How to use seeds and reject lists to control Snyk API and Web crawling
+---
+
 # Use seeds and reject lists
 
 Control scan behavior by including or excluding specific areas of your target using seeds and reject lists.

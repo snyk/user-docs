@@ -1,3 +1,7 @@
+---
+description: How versioning schemas work for custom base image recommendations
+---
+
 # Versioning schemas for custom base images
 
 You must set a versioning schema for the first Project you mark as a custom base image in the image's repository. You can edit the **Custom base Image settings** for Projects that you have already marked as custom base images. For more information, see [Mark the created Project as a custom base image](./#mark-the-created-project-as-a-custom-base-image).

@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk API and Web with Slack
+---
+
 # Integrate with Slack
 
 By connecting Snyk API & Web with Slack, you receive notifications about the activity of your targets in your Slack channels. For example, when target scans start or finish, when logins fail, or when Snyk finds or fixes vulnerabilities.

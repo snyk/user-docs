@@ -1,3 +1,7 @@
+---
+description: How to manage vulnerabilities found by Snyk Open Source
+---
+
 # Manage vulnerabilities
 
 The documentation in this section explains how to fix vulnerabilities and license issues in your Projects.

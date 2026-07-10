@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot fixing vulnerabilities with Snyk Open Source
+---
+
 # Troubleshoot fixing vulnerabilities with Snyk Open Source
 
 When you find a vulnerability, you have the opportunity to report that vulnerability to Snyk. For details, see [Disclosure of a vulnerability in an open-source package](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/disclosure-of-a-vulnerability-in-an-open-source-package).

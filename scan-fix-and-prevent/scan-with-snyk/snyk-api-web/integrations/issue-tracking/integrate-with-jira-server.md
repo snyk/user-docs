@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk API and Web with Jira Server
+---
+
 # Integrate with Jira Server
 
 By connecting Snyk API & Web to your Jira Server, you can synchronize target scan results with a Jira project of your choice. Snyk can do this synchronization automatically or manually, finding by finding.

@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk API and Web with Shortcut
+---
+
 # Integrate with Shortcut
 
 You can synchronize findings with your Shortcut storyboard by connecting Snyk API & Web to Shortcut. Snyk can do this synchronization automatically or manually, finding by finding.

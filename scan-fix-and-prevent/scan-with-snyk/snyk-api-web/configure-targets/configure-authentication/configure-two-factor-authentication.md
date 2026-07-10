@@ -1,3 +1,7 @@
+---
+description: How to configure two-factor authentication for Snyk API and Web targets
+---
+
 # Two-factor authentication
 
 Configure two-factor authentication (2FA) to scan targets with an additional security layer beyond username and password.

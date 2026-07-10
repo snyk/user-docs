@@ -1,3 +1,7 @@
+---
+description: How to use Project collections to group related Projects
+---
+
 # Project collections
 
 On this page you will find information about how to create and use Project collections:

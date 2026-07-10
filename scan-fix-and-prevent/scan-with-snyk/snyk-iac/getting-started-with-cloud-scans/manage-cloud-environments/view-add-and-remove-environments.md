@@ -1,3 +1,7 @@
+---
+description: How to view, add, and remove Snyk cloud environments
+---
+
 # View, add, and remove environments
 
 To view all Snyk environments in an Organization, navigate to your Organization **Settings** > **Cloud environments**.

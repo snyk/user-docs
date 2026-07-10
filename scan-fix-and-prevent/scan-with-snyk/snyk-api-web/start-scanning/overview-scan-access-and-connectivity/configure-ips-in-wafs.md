@@ -1,3 +1,7 @@
+---
+description: How to allow Snyk API and Web scanner IPs in your WAF
+---
+
 # Configure IPs in WAFs
 
 Snyk API & Web uses specific public IP addresses to scan your targets. If you use a Web Application Firewall (WAF) in front of your target, it can block scan requests and cause the scan to fail. To avoid that, configure the WAF to allow Snyk IP addresses.

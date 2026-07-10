@@ -1,3 +1,7 @@
+---
+description: How to configure repository monitoring in Snyk
+---
+
 # Configure repository monitoring
 
 {% hint style="info" %}

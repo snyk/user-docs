@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot access and data in Snyk reports
+---
+
 # Troubleshooting Snyk reports
 
 ## Access to reporting

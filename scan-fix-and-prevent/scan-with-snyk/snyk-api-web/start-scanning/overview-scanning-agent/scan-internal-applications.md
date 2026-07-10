@@ -1,3 +1,7 @@
+---
+description: How to scan internal applications with a Snyk API and Web scanning agent
+---
+
 # Scan internal applications
 
 Scan your internal applications with the Snyk API & Web Scanning Agent, a secure, clean, and straightforward solution to scan non-public applications.

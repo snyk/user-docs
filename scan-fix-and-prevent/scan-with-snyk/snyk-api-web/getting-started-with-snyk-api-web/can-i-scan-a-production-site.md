@@ -1,3 +1,7 @@
+---
+description: Whether you can scan a production site with Snyk API and Web
+---
+
 # Can I scan a production site?
 
 Snyk cannot recommend or assume liability for any damage to your site resulting from a target scan. However, the risk varies significantly depending on your application type and configuration.

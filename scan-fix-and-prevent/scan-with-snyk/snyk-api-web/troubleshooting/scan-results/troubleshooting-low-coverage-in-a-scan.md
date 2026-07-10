@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot low coverage in a Snyk API and Web scan
+---
+
 # Troubleshoot low coverage in a scan
 
 A scan must cover as much of the target scope as possible to identify the maximum number of vulnerabilities. If your scan shows low coverage, follow these troubleshooting steps to identify and resolve the issue.

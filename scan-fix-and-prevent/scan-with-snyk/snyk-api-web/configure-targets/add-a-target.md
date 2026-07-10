@@ -1,3 +1,7 @@
+---
+description: How to add a target for Snyk API and Web scanning
+---
+
 # Add a target
 
 Add a target to define the scope and behavior of security scans for your web application, website, or API.

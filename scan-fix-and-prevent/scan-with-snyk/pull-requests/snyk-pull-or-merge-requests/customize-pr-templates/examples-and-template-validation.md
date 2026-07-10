@@ -1,3 +1,7 @@
+---
+description: Examples and validation for Snyk custom PR templates
+---
+
 # Examples and template validation
 
 ## Examples of custom PR templates

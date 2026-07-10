@@ -1,7 +1,6 @@
 ---
 description: >-
-  The following information is provided to help you scan Kubernetes
-  configuration files:
+  How to scan Kubernetes configuration files with Snyk IaC
 ---
 
 # Scan Kubernetes configuration files

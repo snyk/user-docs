@@ -1,3 +1,7 @@
+---
+description: How to configure your integration to find security issues in Kubernetes configuration files
+---
+
 # Configure integration to find security issues in Kubernetes configuration files
 
 Snyk tests and monitors Kubernetes configurations stored in your source code repositories and provides information, tips, and tricks to better [secure a Kubernetes environment](https://snyk.io/learn/kubernetes-security/). This helps to catch misconfigurations before they are pushed to production, as well as provide fixes for vulnerabilities.

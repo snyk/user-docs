@@ -1,3 +1,7 @@
+---
+description: How to update a Snyk cloud environment
+---
+
 # Update a cloud environment
 
 You can update the following attributes for a [cloud environment](../key-concepts-for-cloud-scans.md#environments):

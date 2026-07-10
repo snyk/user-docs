@@ -1,3 +1,7 @@
+---
+description: How to configure the Google Cloud provider for Snyk IaC drift detection
+---
+
 # Configure Google provider
 
 ## Authentication for Google provider

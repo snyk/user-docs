@@ -1,3 +1,7 @@
+---
+description: How to configure RAML API targets for Snyk API and Web
+---
+
 # Configure RAML targets
 
 Convert RESTful API Modeling Language (RAML) definitions to work with Snyk API & Web for API scanning.

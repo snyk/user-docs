@@ -1,3 +1,7 @@
+---
+description: How to connect Snyk to an Artifactory package repository
+---
+
 # Artifactory package repository connection setup
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: How to configure the Snyk integration for Azure Container Registry (ACR)
+---
+
 # Configure integration for ACR
 
 This page explains how to enable integration between a Microsoft Azure Container Registry (ACR) registry and a Snyk Organization and start managing your vulnerabilities. To integrate with multiple registries, create a unique Organization for each one.

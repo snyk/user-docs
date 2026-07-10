@@ -1,3 +1,7 @@
+---
+description: How to generate and use audit log reports in Snyk API and Web
+---
+
 # Generate and use audit log reports
 
 Generate audit log reports and understand their content.

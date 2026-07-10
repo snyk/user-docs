@@ -1,3 +1,7 @@
+---
+description: The AWS resources Snyk IaC supports for cloud context
+---
+
 # Supported AWS resources for cloud context
 
 Snyk cloud context works with the following Amazon Web Services resource types:

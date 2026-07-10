@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for XML
+---
+
 # XML rules
 
 Each rule includes the following information.

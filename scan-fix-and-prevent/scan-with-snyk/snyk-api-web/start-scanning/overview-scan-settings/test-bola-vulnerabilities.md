@@ -1,3 +1,7 @@
+---
+description: How to test for BOLA vulnerabilities with Snyk API and Web
+---
+
 # Test BOLA vulnerabilities
 
 Learn how to set up your target to be tested against Broken Object Level Authorization vulnerabilities.

@@ -1,3 +1,7 @@
+---
+description: How to get started with teams in Snyk API and Web
+---
+
 # Get started with teams
 
 Plan and manage target scans between different teams in your organization.

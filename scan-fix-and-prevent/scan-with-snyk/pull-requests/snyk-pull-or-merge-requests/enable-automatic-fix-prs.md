@@ -1,3 +1,7 @@
+---
+description: How to enable automatic Snyk Fix PRs
+---
+
 # Enable automatic Fix PRs
 
 {% hint style="info" %}

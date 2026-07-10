@@ -1,3 +1,7 @@
+---
+description: How to create a Snyk license policy and its rules
+---
+
 # Create a license policy and rules
 
 {% hint style="info" %}

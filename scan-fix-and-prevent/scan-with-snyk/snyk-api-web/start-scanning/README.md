@@ -1,3 +1,7 @@
+---
+description: How to start scanning targets with Snyk API and Web
+---
+
 # Start scanning
 
 After you configure your targets in Snyk API & Web, you can start scanning to identify security vulnerabilities. This section covers running, managing, and optimizing scans:

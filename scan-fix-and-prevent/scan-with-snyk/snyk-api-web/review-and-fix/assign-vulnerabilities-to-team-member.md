@@ -1,3 +1,7 @@
+---
+description: How to assign Snyk API and Web vulnerabilities to a team member
+---
+
 # Assign vulnerabilities to team member
 
 You can assign a vulnerability to one of your team members from several places: the **Target** page, **Scan Results** page, or **Finding Details** page. Assigning vulnerabilities helps track responsibility and ensures that the appropriate team member addresses each vulnerability.

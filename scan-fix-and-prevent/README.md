@@ -1,3 +1,7 @@
+---
+description: How to use Snyk to scan and secure your code, dependencies, containers, and infrastructure as code
+---
+
 # Overview
 
 You can use Snyk to scan and secure your codebase and cloud infrastructure configurations, taking advantage of the Snyk capabilities in Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST), Software Composition Analysis (SCA), and Infrastructure as Code (IaC) analysis.

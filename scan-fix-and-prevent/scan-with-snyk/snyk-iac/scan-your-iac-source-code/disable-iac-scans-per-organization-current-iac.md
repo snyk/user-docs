@@ -1,3 +1,7 @@
+---
+description: How to disable Snyk IaC scans for an Organization
+---
+
 # Disable IaC scans per Organization
 
 {% hint style="info" %}

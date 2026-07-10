@@ -1,3 +1,7 @@
+---
+description: The scanner IP addresses used by Snyk API and Web
+---
+
 # Scanner IP address
 
 Snyk API & Web uses the following IP addresses to make requests.

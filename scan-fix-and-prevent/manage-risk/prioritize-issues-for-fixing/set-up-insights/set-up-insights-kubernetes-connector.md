@@ -1,3 +1,7 @@
+---
+description: How to set up the Kubernetes connector for Snyk Insights
+---
+
 # Set up Insights: Kubernetes connector
 
 ## What is Kubernetes connector?

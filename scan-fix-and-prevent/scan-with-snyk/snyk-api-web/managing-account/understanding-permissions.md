@@ -1,3 +1,7 @@
+---
+description: How permissions work in Snyk API and Web
+---
+
 # Understanding permissions
 
 Learn what actions each permission grants to better configure your custom roles.

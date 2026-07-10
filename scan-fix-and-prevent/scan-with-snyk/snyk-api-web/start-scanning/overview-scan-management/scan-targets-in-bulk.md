@@ -1,3 +1,7 @@
+---
+description: How to scan Snyk API and Web targets in bulk
+---
+
 # Scan targets in bulk
 
 When managing scans, you can run scan actions for multiple targets in bulk instead of individually.

@@ -1,3 +1,7 @@
+---
+description: How Snyk IaC finds and fixes misconfigurations in infrastructure as code
+---
+
 # Snyk IaC
 
 With Snyk Infrastructure as Code (IaC), you can secure cloud infrastructure configurations before and after deployment.&#x20;

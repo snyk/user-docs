@@ -1,3 +1,7 @@
+---
+description: How to configure private gem sources for Ruby with Snyk
+---
+
 # Private gem sources for Ruby configuration
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk API and Web with Bitbucket Pipelines
+---
+
 # Integrate with Bitbucket Pipelines
 
 This guide provides step-by-step instructions for integrating Snyk API & Web into your Bitbucket Pipelines.

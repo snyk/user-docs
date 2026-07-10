@@ -1,3 +1,7 @@
+---
+description: Best practices for deploying Snyk API and Web DAST scanning
+---
+
 # Best practices for deploying DAST
 
 Learn how to optimize your dynamic application security testing (DAST) deployment and avoid common pitfalls.

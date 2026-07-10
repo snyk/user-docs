@@ -1,3 +1,7 @@
+---
+description: How to scan Terraform files with Snyk IaC
+---
+
 # Scan Terraform files
 
 The following information is provided to help you scan Terraform files:

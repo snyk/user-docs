@@ -1,3 +1,7 @@
+---
+description: The vulnerabilities Snyk API and Web detects
+---
+
 # Vulnerabilities detected
 
 Snyk API & Web detects a comprehensive range of vulnerabilities across web applications and APIs, including support for OWASP Top 10 scanning and continuous updates to the vulnerability knowledge base.

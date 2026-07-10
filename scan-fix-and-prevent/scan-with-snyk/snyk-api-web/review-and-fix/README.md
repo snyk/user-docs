@@ -1,3 +1,7 @@
+---
+description: How to review and fix findings from Snyk API and Web scans
+---
+
 # Review and fix
 
 After scanning your targets, use Snyk API & Web to review findings, assess their severity, and assign them to team members for remediation. The review and fix workflow helps you prioritize and manage vulnerabilities efficiently.

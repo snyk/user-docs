@@ -1,3 +1,7 @@
+---
+description: How Snyk policies automate triage, prioritization, and governance
+---
+
 # Policies
 
 {% hint style="info" %}

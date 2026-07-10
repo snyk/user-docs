@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk with Sysdig to prioritize running container vulnerabilities
+---
+
 # Integrate with Sysdig
 
 To enhance its capabilities when detecting workload information, Snyk has partnered with Sysdig. The integration enriches the workload issues that Snyk detects with the runtime data provided by Sysdig.

@@ -1,3 +1,7 @@
+---
+description: How to configure message-level encryption for Snyk API and Web targets
+---
+
 # Configure message level encryption
 
 Configure message level encryption to provide enhanced end-to-end security for API targets in Snyk API & Web.

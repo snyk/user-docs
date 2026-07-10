@@ -1,3 +1,7 @@
+---
+description: How to use the Issues UI with Snyk AppRisk
+---
+
 # Using the Issues UI with Snyk AppRisk
 
 The following pages provide information and instructions on how to use the Issues UI.

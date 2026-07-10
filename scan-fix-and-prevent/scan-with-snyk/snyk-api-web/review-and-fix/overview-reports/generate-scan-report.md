@@ -1,3 +1,7 @@
+---
+description: How to generate a Snyk API and Web scan report
+---
+
 # Generate a scan report
 
 With Snyk API & Web, you are one click away from generating reports to showcase your security to auditors or customers, achieve compliance, perform internal assessments, and more.

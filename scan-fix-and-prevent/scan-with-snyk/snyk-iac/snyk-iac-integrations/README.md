@@ -1,3 +1,7 @@
+---
+description: How Snyk IaC integrates with SCMs, pipelines, and other tools
+---
+
 # Snyk IaC integrations
 
 This section provides information about the following:

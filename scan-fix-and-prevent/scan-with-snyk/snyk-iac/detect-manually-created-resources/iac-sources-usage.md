@@ -1,3 +1,7 @@
+---
+description: How to use IaC sources with Snyk drift detection
+---
+
 # IAC sources usage
 
 ## **Supported IaC sources**

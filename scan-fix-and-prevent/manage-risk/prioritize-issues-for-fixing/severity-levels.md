@@ -1,3 +1,7 @@
+---
+description: How Snyk severity levels help you prioritize issues
+---
+
 # Severity levels
 
 Use severity levels to help you with [vulnerability assessment](https://snyk.io/learn/vulnerability-assessment/) for your applications. Severity levels indicate the assessed level of risk, as **C**ritical, **H**igh, **M**edium, or **L**ow. Snyk reports the number of vulnerabilities at each level of severity in many places in the Snyk application.

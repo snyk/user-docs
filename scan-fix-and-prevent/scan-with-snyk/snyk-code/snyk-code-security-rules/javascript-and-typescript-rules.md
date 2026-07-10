@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for JavaScript and TypeScript
+---
+
 # JavaScript and TypeScript rules
 
 Each rule includes the following information.

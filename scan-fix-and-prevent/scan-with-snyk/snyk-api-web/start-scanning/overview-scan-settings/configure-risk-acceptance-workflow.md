@@ -1,3 +1,7 @@
+---
+description: How to configure the risk acceptance workflow for Snyk API and Web
+---
+
 # Configure risk acceptance workflow
 
 Customize the risk acceptance workflow in Snyk API & Web to align with your organization's internal security and compliance processes.

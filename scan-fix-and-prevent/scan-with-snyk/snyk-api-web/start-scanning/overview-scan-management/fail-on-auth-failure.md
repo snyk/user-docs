@@ -1,3 +1,7 @@
+---
+description: How to fail a Snyk API and Web scan on authentication failure
+---
+
 # Fail on authentication failure
 
 In Snyk API & Web, you can force your scans to fail if authentication is unsuccessful.

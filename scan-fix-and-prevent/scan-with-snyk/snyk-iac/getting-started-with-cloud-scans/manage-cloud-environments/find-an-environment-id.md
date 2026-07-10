@@ -1,3 +1,7 @@
+---
+description: How to find a Snyk cloud environment ID
+---
+
 # Find an environment ID
 
 Certain actions, such as updating or deleting an environment using the Snyk API, require the environment ID.

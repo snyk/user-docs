@@ -1,3 +1,7 @@
+---
+description: How Snyk uses assets and risk factors to prioritize issues
+---
+
 # Assets and risk factors
 
 The capabilities of the SnykWeb UI Issues menu rely on understanding your application context to help you better prioritize your security issues. It does that by understanding how your application is configured and relying on that information to provide you with triage and prioritization of your assets and issues for the Snyk Essentials plan, and it also adds specific [risk factors](./#risk-factors) and [evidence graph](../using-the-issues-ui/evidence-graph.md) information.

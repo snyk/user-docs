@@ -1,3 +1,7 @@
+---
+description: 'Step 2: create the Entra ID app registration for the Snyk Azure integration'
+---
+
 # Step 2: Create the Entra ID app registration
 
 {% hint style="info" %}

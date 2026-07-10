@@ -1,3 +1,7 @@
+---
+description: The information shown on Snyk issue cards
+---
+
 # Issue card information
 
 Issue cards appear on the details page for a Project. You can use available options to do the following:

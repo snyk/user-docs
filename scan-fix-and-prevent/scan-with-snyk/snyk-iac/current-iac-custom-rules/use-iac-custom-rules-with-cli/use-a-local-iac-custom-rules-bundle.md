@@ -1,3 +1,7 @@
+---
+description: How to use a local Snyk IaC custom rules bundle with the CLI
+---
+
 # Use a local IaC custom rules bundle
 
 {% hint style="info" %}

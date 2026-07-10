@@ -1,3 +1,7 @@
+---
+description: How Snyk license policy results apply to issues
+---
+
 # License policy results
 
 A newly assigned policy, or modifications to a policy, will apply after the next scheduled test runs for all of the licenses in the Organization.

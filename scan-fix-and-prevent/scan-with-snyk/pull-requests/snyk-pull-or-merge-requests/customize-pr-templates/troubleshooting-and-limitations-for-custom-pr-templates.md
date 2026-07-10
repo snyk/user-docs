@@ -1,3 +1,7 @@
+---
+description: Troubleshooting and limitations for Snyk custom PR templates
+---
+
 # Troubleshooting and limitations for custom PR templates
 
 ## Troubleshooting custom PR templates

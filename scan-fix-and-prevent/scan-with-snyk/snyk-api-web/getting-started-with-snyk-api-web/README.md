@@ -1,3 +1,7 @@
+---
+description: How to get started with Snyk API and Web dynamic application security testing
+---
+
 # Getting started with Snyk API & Web
 
 Learn how to start scanning web applications for security vulnerabilities using Snyk API & Web.

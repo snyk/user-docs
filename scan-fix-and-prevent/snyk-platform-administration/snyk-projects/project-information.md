@@ -1,3 +1,7 @@
+---
+description: How to view imported Project information on the Projects page
+---
+
 # Project information
 
 The **Projects** page lists imported Projects and information about the Projects, such as vulnerabilities and license issues. On this page, you can group, filter, and sort your Projects and activate, deactivate, change test frequency, or delete them.

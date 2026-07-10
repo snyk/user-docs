@@ -1,3 +1,7 @@
+---
+description: How to configure Postman authentication for Snyk API and Web targets
+---
+
 # Postman authentication
 
 Configure authentication to scan an API using a Postman collection.

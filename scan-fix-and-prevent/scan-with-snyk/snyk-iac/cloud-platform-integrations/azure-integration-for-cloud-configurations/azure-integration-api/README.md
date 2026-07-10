@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk Azure integration using the API
+---
+
 # Azure Integration: API
 
 To onboard an Azure subscription to Snyk via the API:

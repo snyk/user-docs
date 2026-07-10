@@ -1,3 +1,7 @@
+---
+description: The prevention reports in Snyk Analytics
+---
+
 # Prevention reports
 
 The Prevention reports section includes the following reports:

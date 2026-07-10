@@ -1,3 +1,7 @@
+---
+description: How to detect vulnerable base images from your Dockerfile
+---
+
 # Detect vulnerable base images from your Dockerfile
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: How to set up two-factor authentication in Snyk API and Web
+---
+
 # Set up two-factor authentication
 
 Learn how to set up two-factor authentication (2FA) for your profile and recover access if you lose your device.

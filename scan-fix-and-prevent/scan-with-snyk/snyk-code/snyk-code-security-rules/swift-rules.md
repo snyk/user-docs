@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for Swift
+---
+
 # Swift rules
 
 Each rule includes the following information.

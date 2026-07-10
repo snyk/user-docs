@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for Dart and Flutter
+---
+
 # Dart and Flutter rules
 
 {% hint style="info" %}

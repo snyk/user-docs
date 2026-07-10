@@ -1,3 +1,7 @@
+---
+description: How to generate a CSV coverage report in Snyk API and Web
+---
+
 # Generate CSV coverage report
 
 To verify that your target was scanned in full and that the scan covered all URLs, Snyk API & Web lets you download a CSV coverage or crawling report. This report shows a list of all the URLs that Snyk visited while the scan was running.

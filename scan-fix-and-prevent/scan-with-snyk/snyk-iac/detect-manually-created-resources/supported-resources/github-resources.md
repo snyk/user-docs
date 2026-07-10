@@ -1,3 +1,7 @@
+---
+description: The GitHub resources Snyk IaC supports for drift detection
+---
+
 # GitHub resources
 
 Snyk IaC unmanaged resource scanning supports the following resources for GitHub:

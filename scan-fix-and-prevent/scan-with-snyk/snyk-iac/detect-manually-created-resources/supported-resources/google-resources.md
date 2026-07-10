@@ -1,3 +1,7 @@
+---
+description: The Google Cloud resources Snyk IaC supports for drift detection
+---
+
 # Google resources
 
 Snyk IaC unmanaged resource scanning supports the following resources for Google:

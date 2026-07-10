@@ -1,3 +1,7 @@
+---
+description: How to upgrade package versions to fix vulnerabilities with Snyk
+---
+
 # Upgrade package versions to fix vulnerabilities
 
 Snyk will always recommend the smallest upgrade of a dependency to resolve a vulnerability.

@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk reporting with a Snowflake Data Share
+---
+
 # Reporting and BI integrations: Snowflake Data Share
 
 With the new Snowflake Data Share integration, your data science, BI, and AppSec teams can securely access the underlying curated datasets available in Snyk Reporting in your own Snowflake account, unlocking powerful new analytical tools to better understand and visualize Snyk data.

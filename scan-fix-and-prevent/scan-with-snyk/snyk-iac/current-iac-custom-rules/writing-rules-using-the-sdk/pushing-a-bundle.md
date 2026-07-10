@@ -1,3 +1,7 @@
+---
+description: How to push a Snyk IaC custom rule bundle
+---
+
 # Pushing a bundle
 
 Optionally, once you have generated your custom rules bundle, you can distribute it automatically to one of our supported OCI registries by using the `push` command:

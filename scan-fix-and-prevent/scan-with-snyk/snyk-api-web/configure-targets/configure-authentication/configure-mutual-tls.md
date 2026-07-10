@@ -1,3 +1,7 @@
+---
+description: How to configure mutual TLS for Snyk API and Web targets
+---
+
 # Mutual TLS
 
 Configure mutual TLS (mTLS) authentication for targets that require client-side certificates.

@@ -1,3 +1,7 @@
+---
+description: How to use filter rules with Snyk IaC drift detection
+---
+
 # Filter rules
 
 You can use filter rules to describe resources and ignore resources. You can use both inclusion and exclusion logic.

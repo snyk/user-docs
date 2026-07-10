@@ -1,3 +1,7 @@
+---
+description: How to configure GraphQL authentication for Snyk API and Web targets
+---
+
 # GraphQL authentication
 
 Configure authentication to scan an API using a GraphQL schema.

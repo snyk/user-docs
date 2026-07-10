@@ -1,3 +1,7 @@
+---
+description: How Snyk Open Source integrates with private package repositories
+---
+
 # Package repository integrations
 
 This section provides documentation for the following integrations:

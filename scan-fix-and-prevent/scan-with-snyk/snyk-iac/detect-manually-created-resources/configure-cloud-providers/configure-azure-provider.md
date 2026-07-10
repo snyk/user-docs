@@ -1,3 +1,7 @@
+---
+description: How to configure the Azure provider for Snyk IaC drift detection
+---
+
 # Configure Azure provider
 
 ## Authentication of Azure provider

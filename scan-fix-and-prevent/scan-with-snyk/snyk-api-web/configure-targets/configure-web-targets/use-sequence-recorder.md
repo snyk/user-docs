@@ -1,3 +1,7 @@
+---
+description: How to use the sequence recorder for Snyk API and Web web targets
+---
+
 # Use sequence recorder
 
 Record login and navigation sequences with the Snyk API & Web Sequence Recorder browser plugin to help the scanner test authenticated and complex areas of your web application.

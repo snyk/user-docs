@@ -1,3 +1,7 @@
+---
+description: Snyk Code security rules for Objective-C
+---
+
 # Objective-C rules
 
 {% hint style="info" %}

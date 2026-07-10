@@ -1,3 +1,7 @@
+---
+description: How to use the Reports tab in Snyk Analytics
+---
+
 # Reports tab
 
 {% hint style="info" %}

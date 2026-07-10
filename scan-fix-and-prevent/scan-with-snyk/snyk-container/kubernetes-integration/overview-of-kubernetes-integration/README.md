@@ -1,3 +1,7 @@
+---
+description: Overview of the Snyk Kubernetes integration
+---
+
 # Overview of Kubernetes integration
 
 {% hint style="info" %}

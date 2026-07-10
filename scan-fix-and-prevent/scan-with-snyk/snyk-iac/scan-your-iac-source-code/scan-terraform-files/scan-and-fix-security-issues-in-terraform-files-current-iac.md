@@ -1,3 +1,7 @@
+---
+description: How to scan and fix security issues in Terraform files with Snyk IaC
+---
+
 # Scan and fix security issues in Terraform files
 
 Snyk scans your Terraform code for misconfigurations and security issues as well. After scanning configuration files, Snyk reports on any misconfigurations based on the settings your administrator implemented, and makes recommendations for fixing accordingly.

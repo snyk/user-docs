@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk AWS integration using the API
+---
+
 # AWS Integration: API
 
 Before you can onboard an AWS account to Snyk via the API, you need access to the AWS account and associated credentials with permissions to create a read-only Identity and Access Management (IAM) role. See the prerequisites on the [AWS integration](../) page.

@@ -1,3 +1,7 @@
+---
+description: How to bundle Snyk IaC custom rules
+---
+
 # Bundling rules
 
 When you are ready, you can **build a custom rules bundle** by running the following command:

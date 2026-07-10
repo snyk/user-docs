@@ -1,3 +1,7 @@
+---
+description: How to convert Project-scoped ignores to asset-scoped ignores for Snyk Code
+---
+
 # Convert Project-scoped ignores to asset-scoped ignores
 
 ## Conversion setup

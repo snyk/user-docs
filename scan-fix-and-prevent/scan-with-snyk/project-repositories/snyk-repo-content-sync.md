@@ -1,3 +1,7 @@
+---
+description: How Snyk Repo Content Sync keeps repository content current
+---
+
 # Snyk Repo Content Sync
 
 {% hint style="info" %}

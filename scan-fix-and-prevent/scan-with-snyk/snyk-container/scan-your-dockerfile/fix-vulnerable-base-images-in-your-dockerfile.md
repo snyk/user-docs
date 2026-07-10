@@ -1,3 +1,7 @@
+---
+description: How to fix vulnerable base images in your Dockerfile
+---
+
 # Fix vulnerable base images in your Dockerfile
 
 ## Automatic Pull Requests (PRs)

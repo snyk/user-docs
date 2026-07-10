@@ -1,3 +1,7 @@
+---
+description: How to configure basic authentication for Snyk API and Web targets
+---
+
 # Configure basic authentication
 
 Configure basic authentication to scan targets protected by HTTP Basic Access Authentication.

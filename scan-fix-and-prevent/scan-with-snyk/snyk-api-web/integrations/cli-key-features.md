@@ -1,3 +1,7 @@
+---
+description: The key CLI features for Snyk API and Web
+---
+
 # CLI key features for Snyk API & Web
 
 Learn about the CLI key features of Snyk API & Web.

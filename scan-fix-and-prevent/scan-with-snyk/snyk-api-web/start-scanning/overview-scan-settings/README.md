@@ -1,3 +1,7 @@
+---
+description: How to configure scan settings for Snyk API and Web
+---
+
 # Scan settings
 
 Configure how Snyk API & Web scans your targets to optimize security testing for your applications:

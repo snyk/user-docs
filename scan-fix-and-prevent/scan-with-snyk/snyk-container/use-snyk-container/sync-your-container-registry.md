@@ -1,3 +1,7 @@
+---
+description: How to sync your container registry with Snyk
+---
+
 # Sync your container registry
 
 {% hint style="info" %}

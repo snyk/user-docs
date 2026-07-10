@@ -1,3 +1,7 @@
+---
+description: How to configure Postman Collection targets for Snyk API and Web
+---
+
 # Configure Postman Collection targets
 
 Use Postman Collections to define API endpoints for scanning with Snyk API & Web.

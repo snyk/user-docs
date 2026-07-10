@@ -1,3 +1,7 @@
+---
+description: The roles and permissions in Snyk API and Web
+---
+
 # Roles and permissions
 
 Roles and permissions overview.

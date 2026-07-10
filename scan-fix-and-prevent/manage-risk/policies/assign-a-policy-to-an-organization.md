@@ -1,3 +1,7 @@
+---
+description: How to assign a Snyk policy to an Organization
+---
+
 # Assign a policy to an Organization
 
 When you create a policy, you can apply it to one Organization. You cannot directly apply an Organization to or remove an Organization from the default policy using the Policy Manager.
