@@ -1,3 +1,7 @@
+---
+description: Service description for Snyk Jumpstart Standard, consultant-led assisted account configuration
+---
+
 # Snyk Jumpstart Standard Services Description
 
 ## Overview of Snyk Jumpstart Standard

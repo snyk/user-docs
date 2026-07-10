@@ -1,3 +1,7 @@
+---
+description: How the Snyk Jumpstart Basic and Standard consultant-led onboarding packages differ
+---
+
 # Snyk Jumpstart: Basic versus Standard
 
 Snyk Jumpstart services accelerate Snyk product configuration through remote, consultant-led engagements. Both packages provide a Template Organization to ensure a consistent, scalable account structure.

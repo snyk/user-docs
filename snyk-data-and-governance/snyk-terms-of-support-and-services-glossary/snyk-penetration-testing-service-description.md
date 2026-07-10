@@ -1,3 +1,7 @@
+---
+description: Service description for Snyk Penetration Testing, an expert-driven security evaluation of your web applications
+---
+
 # Snyk Penetration Testing service description
 
 ## Overview
