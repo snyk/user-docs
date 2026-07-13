@@ -56,13 +56,13 @@ In your **Projects** listing, select the Project to open to display detailed inf
 
 Each Project detail page has a snapshot showing when the Project was last tested, the name of the user who imported the Project, and, on the **Issues** tab, the number of critical, high, medium, and low-severity issues found and issue cards for each scanned configuration file. You can also select the **Overview**, **History,** and **Settings** options. Choose **History** to see previous snapshots of the Project.
 
-<figure><img src="../../.gitbook/assets/image (88).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-project-issue-card.png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
 
 ## Issue card details for Snyk IaC
 
 Each issue card shows information about the resource and the path by which it was introduced.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.14.png" alt="Issue card details"><figcaption><p>Issue card details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/issue-card-details.png" alt="Issue card details"><figcaption><p>Issue card details</p></figcaption></figure>
 
 The information on the issue cards includes the following:
 
@@ -78,7 +78,7 @@ The information on the issue cards includes the following:
 
 Click **Full details** to see a preview of the full code:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.20.png" alt="Preview of the full code"><figcaption><p>Preview of the full code</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/preview-full-code.png" alt="Preview of the full code"><figcaption><p>Preview of the full code</p></figcaption></figure>
 
 Click **Ignore** to ignore this vulnerability. For details, see [Ignore Issues](../../manage-risk/prioritize-issues-for-fixing/ignore-issues/).
 
@@ -101,14 +101,14 @@ Examples follow of results displayed for current IaC.
 
 Terraform Cloud and Helm do not show a code snippet, only the path details. There is no **Full details** button to show the preview of the full code.
 
-<figure><img src="../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Details for Helm"><figcaption><p>Details for Helm</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/details-helm.png" alt="Details for Helm"><figcaption><p>Details for Helm</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (78).png" alt="Details for Terraform Cloud"><figcaption><p>Details for Terraform Cloud</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/details-terraform-cloud.png" alt="Details for Terraform Cloud"><figcaption><p>Details for Terraform Cloud</p></figcaption></figure>
 
 ### Example showing the code preview is not available
 
 If Snyk can not identify the exact line of the vulnerable path in the file, Snyk does not show a code snippet, only a message and the path details. If possible, Snyk shows the **Full details** button so you can see a preview of the full code.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07.png" alt="Issue card without code snippet"><figcaption><p>Issue card without code snippet</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/issue-card-without-code-snippet.png" alt="Issue card without code snippet"><figcaption><p>Issue card without code snippet</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17.png" alt="Full code display"><figcaption><p>Full code display</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/full-code-display.png" alt="Full code display"><figcaption><p>Full code display</p></figcaption></figure>
