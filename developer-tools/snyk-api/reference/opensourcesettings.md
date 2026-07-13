@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for Snyk Open Source settings
----
-
 # OpenSourceSettings
 
 {% hint style="info" %}
