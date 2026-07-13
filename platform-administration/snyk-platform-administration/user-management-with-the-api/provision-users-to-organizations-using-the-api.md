@@ -20,7 +20,7 @@ The API does not support using service accounts as the inviting user or provisio
 * Both the inviting user and the provisioned user must log in using SSO.
 * The inviting user should have the permission `Provision Users` to invoke these calls. All Group and Org Admins, by default, have this permission.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-09-09 at 09.57.17.png" alt="Enable Provision Users permission"><figcaption><p>Enable Provision Users permission</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/enable-provision-users-permission.png" alt="Enable Provision Users permission"><figcaption><p>Enable Provision Users permission</p></figcaption></figure>
 
 ## How to use the Provision user API
 
