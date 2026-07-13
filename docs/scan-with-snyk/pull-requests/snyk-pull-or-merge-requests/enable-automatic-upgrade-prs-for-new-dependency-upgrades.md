@@ -65,7 +65,7 @@ To enable Automatic Upgrade PRs across an entire Organization, follow these step
    * **Include major version in upgrade recommendation** – select whether to include major version upgrades in the recommendations. By default, only patches and minor versions are included in the upgrade recommendations.
    * **Dependencies to ignore** – enter the exact name of the dependencies that should NOT be included in the **Automatic upgrade** operation. You can only enter lowercase letters.
 
-<figure><img src="../../../.gitbook/assets/image (163).png" alt="Enabling Automatic dependency upgrade PFs"><figcaption><p>Enabling Automatic dependency upgrade PFs</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/enabling-automatic-dependency-upgrade-pfs.png" alt="Enabling Automatic dependency upgrade PFs"><figcaption><p>Enabling Automatic dependency upgrade PFs</p></figcaption></figure>
 
 5. To save and apply your changes, select one of the following from the **Save** dropdown:
    * **Save** – your changes are saved and will be applied to all the Projects in the Organization that are configured to inherit these Settings from the Organization. Projects that have Custom Settings will not be influenced by this change.

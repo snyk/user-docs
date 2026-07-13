@@ -38,11 +38,11 @@ By default, all levels are selected. You must select at least one.
 
 Snyk severity icons have the following meaning:
 
-| ![](<../../../.gitbook/assets/image (50) (1).png>) Critical severity | May allow attackers to access sensitive data and run code on your application.                                                               |
+| ![](<../../../.gitbook/assets/severity-filter-2.png>) Critical severity | May allow attackers to access sensitive data and run code on your application.                                                               |
 | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/image (29).png>) High severity         | May allow attackers to access sensitive data on your application.                                                                            |
-| ![](<../../../.gitbook/assets/image (62).png>) Medium severity       | May allow attackers under some conditions to access sensitive data on your application.                                                      |
-| ![](<../../../.gitbook/assets/image (37).png>) Low severity          | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+| ![](<../../../.gitbook/assets/severity-filter.png>) High severity         | May allow attackers to access sensitive data on your application.                                                                            |
+| ![](<../../../.gitbook/assets/severity-filter-3.png>) Medium severity       | May allow attackers under some conditions to access sensitive data on your application.                                                      |
+| ![](<../../../.gitbook/assets/overview-results.png>) Low severity          | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 ### Filter by issue type
 
@@ -79,7 +79,7 @@ In plugin version 2.12.0 and later, you can choose any folder as your base for s
 
 To apply the filter and see only the new issues, use the toggle in the summary panel.
 
-<figure><img src="../../../.gitbook/assets/image (267).png" alt=""><figcaption><p>Summary panel toggle showing the the total number of issues and the number of issues in the checked out branch or current folder or new issues only</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/summary-panel-toggle-showing-total-number-issues-number.png" alt=""><figcaption><p>Summary panel toggle showing the the total number of issues and the number of issues in the checked out branch or current folder or new issues only</p></figcaption></figure>
 
 You can also enable the net new issues feature in the [scan configuration](run-an-analysis-with-the-jetbrains-plugin.md#scan-configuration) settings.\
 \

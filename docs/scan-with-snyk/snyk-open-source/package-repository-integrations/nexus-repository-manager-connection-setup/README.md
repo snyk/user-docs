@@ -29,7 +29,7 @@ These instructions apply to configuring publicly accessible instances. For instr
 1. Navigate to **Settings** > **Integrations** > **Package Repositories** > **Nexus**
 2. Verify that you see the screen to configure Nexus.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2022-07-15 at 15.15.11.png" alt="Configure Nexus"><figcaption><p>Configure Nexus</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/configure-nexus.png" alt="Configure Nexus"><figcaption><p>Configure Nexus</p></figcaption></figure>
 
 On the page to configure Nexus, enter the information for the version you are using.
 

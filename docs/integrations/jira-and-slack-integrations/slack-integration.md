@@ -16,7 +16,7 @@ You can get the following alerts in Slack:
 
 A newly disclosed vulnerability:
 
-<figure><img src="../../.gitbook/assets/image (23) (1).png" alt="Newly disclosed vulnerability notification"><figcaption><p>Newly disclosed vulnerability notification</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/newly-disclosed-vulnerability-notification.png" alt="Newly disclosed vulnerability notification"><figcaption><p>Newly disclosed vulnerability notification</p></figcaption></figure>
 
 A new upgrade or patch is available for a vulnerability that you previously ignored or patched.
 
@@ -26,7 +26,7 @@ To set up the integration, you must generate a Slack webhook. You can do this ei
 
 Once you have generated your Slack Webhook URL, go to your **Manage Organization** settings and enter the URL.
 
-<figure><img src="../../.gitbook/assets/image (24) (1).png" alt="Enter URL of the Slack webhook"><figcaption><p>Enter URL of the Slack webhook</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/enter-url-slack-webhook.png" alt="Enter URL of the Slack webhook"><figcaption><p>Enter URL of the Slack webhook</p></figcaption></figure>
 
 {% hint style="info" %}
 Only webhooks created with Slack Apps are supported; webhooks created with Slack Workflows are not supported.

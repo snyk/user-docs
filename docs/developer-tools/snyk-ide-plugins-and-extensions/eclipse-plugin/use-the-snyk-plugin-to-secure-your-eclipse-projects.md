@@ -2,17 +2,17 @@
 
 After the Eclipse plugin is downloaded and authentication is complete, the plugin starts the workspace scan. You may notice a confirmation that a workspace scan is starting. Alternatively, you can trigger a workspace scan from the context menu of your Project, or from the Snyk View.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-10-19 at 09.02.25.png" alt=""><figcaption><p>Starting workspace scan</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/starting-workspace-scan.png" alt=""><figcaption><p>Starting workspace scan</p></figcaption></figure>
 
 ## Issues are displayed in the Eclipse plugin
 
 All of the issues found by Snyk are now integrated natively with Eclipse flows. Issues are shown in the **Problems** tab, as illustrated in the following screen image. There is a squiggly line indicating the issue while you code, along with gutter icons to indicate where the issue is.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-05-13 at 12.20.26.png" alt=""><figcaption><p>Eclipse Problems tab</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/eclipse-problems-tab.png" alt=""><figcaption><p>Eclipse Problems tab</p></figcaption></figure>
 
 In addition, starting with version 3+, Snyk provides a custom UI in the Snyk Tab, that displays issue details:
 
-<figure><img src="../../../.gitbook/assets/image (231).png" alt=""><figcaption><p>Issue details in Eclipse plugin</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/issue-details-eclipse-plugin.png" alt=""><figcaption><p>Issue details in Eclipse plugin</p></figcaption></figure>
 
 ## Severity filtering
 
@@ -20,7 +20,7 @@ Filter issues by severity level to reduce noise and focus on high-severity issue
 
 To hide low-severity issues, navigate to **View > Severity** and clear **Low Severity**. Select **Show All Severities** to enable or disable all severity filters.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-12-22 at 15.55.35.png" alt=""><figcaption><p>Severity filters in the View menu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/severity-filters-view-menu.png" alt=""><figcaption><p>Severity filters in the View menu</p></figcaption></figure>
 
 ## Issue View Options
 
@@ -30,7 +30,7 @@ To hide low-severity issues, navigate to **View > Severity** and clear **Low Sev
 These filters do not apply if you disable **Code Consistent Ignores** for the Organization.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-12-22 at 15.58.46.png" alt=""><figcaption><p>Issue View Options alongside the Net New filter in the View menu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/issue-view-options-alongside-net-new-filter-view-menu.png" alt=""><figcaption><p>Issue View Options alongside the Net New filter in the View menu</p></figcaption></figure>
 
 ## Net new issues versus all issues
 
@@ -42,13 +42,13 @@ The logic uses your local Git repository or any folder to compare the current fi
 
 To apply the filter and see only the new issues, use the **total**/**new** toggle in the summary panel, or apply the **Show only Net New Issues filter** from the **View** menu (under **Issues Status**).
 
-<figure><img src="../../../.gitbook/assets/image (268).png" alt=""><figcaption><p>Net new issues filter enabled after clicking on the total/new issues toggle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/net-new-issues-filter-enabled-after-clicking-total-new.png" alt=""><figcaption><p>Net new issues filter enabled after clicking on the total/new issues toggle</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (234).png" alt=""><figcaption><p>Activate Net new issues in the dot menu of the Snyk View</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/activate-net-new-issues-dot-menu-snyk-view.png" alt=""><figcaption><p>Activate Net new issues in the dot menu of the Snyk View</p></figcaption></figure>
 
 For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as illustrated in the screen image that follows:
 
-<figure><img src="../../../.gitbook/assets/image (269).png" alt=""><figcaption><p>No new issues introduced in a newly created branch</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/new-issues-introduced-newly-created-branch.png" alt=""><figcaption><p>No new issues introduced in a newly created branch</p></figcaption></figure>
 
 The base branch is usually automatically determined for each Git repository.
 
@@ -58,7 +58,7 @@ You may change the base branch or base folder by following these steps, as illus
 2. Click on the top-level node in the Issues tree to change the branch or directory.
 3. Use the dropdown selection to choose any branch or reference folder.
 
-<figure><img src="../../../.gitbook/assets/image (270).png" alt=""><figcaption><p>Changing reference branch or reference directory for calculation net new issues</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/changing-reference-branch-reference-directory-calculation.png" alt=""><figcaption><p>Changing reference branch or reference directory for calculation net new issues</p></figcaption></figure>
 
 \
 Continue by following the instructions on the page for the type of scan you are doing:

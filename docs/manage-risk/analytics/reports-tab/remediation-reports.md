@@ -54,7 +54,7 @@ The SLA status of an issue can be:
 
 You can control the SLA targets and the transition of issues to the “At Risk” status by editing the **SLA target** and setting the **At risk duration before breach (days)** field.
 
-<figure><img src="../../../.gitbook/assets/image (229).png" alt=""><figcaption><p>SLA Management Report - Edit SLA targets</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/sla-management-report-edit-sla-targets.png" alt=""><figcaption><p>SLA Management Report - Edit SLA targets</p></figcaption></figure>
 
 The SLA report includes additional filters under the SLA category, allowing for better identification of the age of issues in relation to the SLA target:
 

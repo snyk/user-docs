@@ -40,29 +40,29 @@ When setting up the GitHub Server App, you can implement only one of the followi
 
 In the Snyk UI navigate to the integrations page and select the **GitHub Server App** tile.
 
-<figure><img src="../../../.gitbook/assets/image (211).png" alt=""><figcaption><p>GitHub Server App tile highlighted in the Snyk UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/github-server-app-tile-highlighted-snyk-ui.png" alt=""><figcaption><p>GitHub Server App tile highlighted in the Snyk UI</p></figcaption></figure>
 
 Clicking on the tile opens a modal that allows you to enter the URL of your GitHub Server. Entering the URL of your GitHub Server instance will redirect you to your GitHub instance, where you will be able to create the app.
 
-<figure><img src="../../../.gitbook/assets/image (212).png" alt=""><figcaption><p>Integration model prompting you for your GitHub Server's URL</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/integration-model-prompting-github-server-url.png" alt=""><figcaption><p>Integration model prompting you for your GitHub Server's URL</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (214).png" alt=""><figcaption><p>Registration of the app on your GitHub instance</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/registration-app-github-instance.png" alt=""><figcaption><p>Registration of the app on your GitHub instance</p></figcaption></figure>
 
 You are then asked to authorize the app to act on your users' behalf. The app uses this information to check which GitHub organizations you are authorized to install the app in.
 
-<figure><img src="../../../.gitbook/assets/image (215).png" alt=""><figcaption><p>User authorization for the app</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/user-authorization-app-2.png" alt=""><figcaption><p>User authorization for the app</p></figcaption></figure>
 
 When the install screen in GitHub opens, you can select the GitHub organization where you wish to install the app.
 
-<figure><img src="../../../.gitbook/assets/image (216).png" alt=""><figcaption><p>Selection of the GitHub organization to install the app into</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/selection-github-organization-install-app-2.png" alt=""><figcaption><p>Selection of the GitHub organization to install the app into</p></figcaption></figure>
 
 If the GitHub Server App is already installed in a GitHub organization on your GitHub instance, you can select that same GitHub organization during the integration process for a different Snyk Organization.
 
-<figure><img src="../../../.gitbook/assets/image (217).png" alt=""><figcaption><p>Connect another GitHub organization into a Snyk Organization</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/connect-another-github-organization-snyk-organization-2.png" alt=""><figcaption><p>Connect another GitHub organization into a Snyk Organization</p></figcaption></figure>
 
 Specify whether you wish to install the app in all or a select number of the repositories belonging to the selected GitHub organization, then click **Install & Authorize**.
 
-<figure><img src="../../../.gitbook/assets/image (240).png" alt=""><figcaption><p>Install and authorize settings for the GitHub organization you are installing the GitHub Cloud App into</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/install-authorize-settings-github-organization-installing.png" alt=""><figcaption><p>Install and authorize settings for the GitHub organization you are installing the GitHub Cloud App into</p></figcaption></figure>
 
 {% hint style="danger" %}
 The GitHub Server App will lose access to Snyk if it is uninstalled from the GitHub organization. If this happens, you can create a fresh integration in Snyk to regain access.
@@ -84,7 +84,7 @@ Note that the GitHub App will remain listed on your GitHub organization until re
 2. At the bottom of the page, select **Remove GitHub Server App.**
 3. When the confirmation modal opens, select **Disconnect GitHub Server App**.
 
-<figure><img src="../../../.gitbook/assets/image (262).png" alt="" width="375"><figcaption><p>Confirm disconnecting from GitHub Server App</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/confirm-disconnecting-github-server-app.png" alt="" width="375"><figcaption><p>Confirm disconnecting from GitHub Server App</p></figcaption></figure>
 
 After the integration is disconnected, imported Snyk Projects will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on pull requests.
 

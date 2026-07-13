@@ -30,7 +30,7 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
     * Read and modify your repositories and their pull requests
     * Read and modify your repositories' webhooks
 
-    <figure><img src="../../../.gitbook/assets/image (14).png" alt="Allow access for Snyk to Bitbucket Cloud" width="563"><figcaption><p>Allow access for Snyk to Bitbucket Cloud</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/allow-access-snyk-bitbucket-cloud.png" alt="Allow access for Snyk to Bitbucket Cloud" width="563"><figcaption><p>Allow access for Snyk to Bitbucket Cloud</p></figcaption></figure>
 3.  Grant access to your Snyk Organization when you're prompted.
 
     <figure><img src="../../../.gitbook/assets/bitbucket-cloud-permissions_10nov2022.png" alt="Allow Bitbucket Cloud access to your Snyk Organization" width="365"><figcaption><p>Allow Bitbucket Cloud access to your Snyk Organization<br></p></figcaption></figure>
@@ -93,7 +93,7 @@ To review and adjust the automatic fix pull request settings:
 1. In Snyk, go to **Organization settings** > **Integrations** > **Source control** > **Bitbucket Cloud App**, and click **Edit Settings**.
 2.  Scroll to the **Automatic fix PRs** section and configure the relevant options.
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2023-05-02 at 11.19.09.png" alt="Automatic fix PR settings"><figcaption><p>Automatic fix PR settings</p></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/automatic-fix-pr-settings.png" alt="Automatic fix PR settings"><figcaption><p>Automatic fix PR settings</p></figcaption></figure></div>
 
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
@@ -107,7 +107,7 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 The example that follows shows a Snyk pull request build check on the Bitbucket Cloud **Pull Request** page.
 
-<figure><img src="../../../.gitbook/assets/888.png" alt="BitBucket Cloud pull request page showing Snyk pull request"><figcaption><p>BitBucket Cloud pull request page showing Snyk pull request</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/example-snyk-pull-request-build-check-bitbucket-cloud-pull.png" alt="BitBucket Cloud pull request page showing Snyk pull request"><figcaption><p>BitBucket Cloud pull request page showing Snyk pull request</p></figcaption></figure>
 
 To review and adjust the pull request test settings, follow these steps:
 

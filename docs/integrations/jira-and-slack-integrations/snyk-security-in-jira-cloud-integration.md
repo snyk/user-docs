@@ -62,10 +62,10 @@ Typically research and development engineering managers do this task because the
 2. Click the **Connect security containers** button.
 3.  Click on the Snyk application and then select **Connect security containers**.
 
-    <figure><img src="../../.gitbook/assets/image (366).png" alt="Connect security containers in Jira via the Security tab and panels"><figcaption><p>Connect security containers in Jira via the Security tab and panels</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/connect-security-containers-jira-via-security-tab-panels.png" alt="Connect security containers in Jira via the Security tab and panels"><figcaption><p>Connect security containers in Jira via the Security tab and panels</p></figcaption></figure>
 4. Select your Snyk Organization from the list, and choose the Snyk Targets to connect to Jira.
 
-<figure><img src="../../.gitbook/assets/image (365).png" alt="Connect a security container in Jira via the Security panel" width="351"><figcaption><p>Connect a security container in Jira via the Security panel</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect-security-container-jira-via-security-panel.png" alt="Connect a security container in Jira via the Security panel" width="351"><figcaption><p>Connect a security container in Jira via the Security panel</p></figcaption></figure>
 
 Developers can now use the security feature to view recent vulnerabilities found in the linked code repositories and start [creating Jira issues](snyk-security-in-jira-cloud-integration.md#create-a-jira-issue-from-a-vulnerability) from those vulnerabilities or [linking them to existing Jira issues](snyk-security-in-jira-cloud-integration.md#link-an-existing-jira-issue-to-a-vulnerability).
 
@@ -86,7 +86,7 @@ To delete a target or repository from Snyk that you have connected to Jira, you 
 3. Click on the Snyk application
 4. Select the security container you want to remove from the list using the **Remove connection** option
 
-<figure><img src="../../.gitbook/assets/image (367).png" alt="Remove connected security containers in the Jira Security panel" width="349"><figcaption><p>Remove connected security containers in the Jira Security panel</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/remove-connected-security-containers-jira-security-panel.png" alt="Remove connected security containers in the Jira Security panel" width="349"><figcaption><p>Remove connected security containers in the Jira Security panel</p></figcaption></figure>
 
 ## Automate ticket creation in Jira
 
@@ -99,10 +99,10 @@ The following steps describe how to use Jira automation to automatically create 
     <figure><img src="../../.gitbook/assets/jira-ticket-creation-automation-one.png" alt=""><figcaption><p>Select vulnerability severity for the new rule</p></figcaption></figure>
 4.  Click **Add Component**, **Then,** and select **Create Issue**. Select a project and issue type.\\
 
-    <figure><img src="../../.gitbook/assets/2024-12-13_10-19-14.png" alt=""><figcaption><p>Add an action and create issue for the new rule</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/add-action-create-issue-new-rule.png" alt=""><figcaption><p>Add an action and create issue for the new rule</p></figcaption></figure>
 5.  In the summary field add “Fix \{{vulnerability.displayName\}}”. In the **Description** put \{{vulnerability.description.wiki\}}.\\
 
-    <figure><img src="../../.gitbook/assets/2024-12-13_10-19-31.png" alt=""><figcaption><p>Add summary field and description for the new rule</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/add-summary-field-description-new-rule.png" alt=""><figcaption><p>Add summary field and description for the new rule</p></figcaption></figure>
 6. Click **Add Component**, **Then**, and select **Link vulnerability to issue** under Security.
 7. Select **Turn on rule**.
 

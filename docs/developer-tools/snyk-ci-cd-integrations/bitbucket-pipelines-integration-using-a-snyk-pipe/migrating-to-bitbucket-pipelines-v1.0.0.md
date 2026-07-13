@@ -5,7 +5,7 @@ When you are upgrading from < 1.0.0 to 1.0.0+, make the following changes in you
 * Use tags supported by [Snyk images](https://hub.docker.com/r/snyk/snyk/tags) for the `LANGUAGE` variable instead of tags supported by [Snyk CLI Docker images](https://hub.docker.com/r/snyk/snyk-cli/tags).
 * Alternatively, you can provide your own [custom image](../user-defined-custom-images-for-cli.md) using the new `SNYK_BASE_IMAGE` variable
 
-<figure><img src="../../../.gitbook/assets/Untitled.jpg" alt="Users can now define custom images in v1.0.0"><figcaption><p>Users can now define custom images in v1.0.0</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/users-now-define-custom-images-v1.jpg" alt="Users can now define custom images in v1.0.0"><figcaption><p>Users can now define custom images in v1.0.0</p></figcaption></figure>
 
 ## Basic app dependencies scan example <a href="#markdown-header-basic-app-dependencies-scan-example" id="markdown-header-basic-app-dependencies-scan-example"></a>
 

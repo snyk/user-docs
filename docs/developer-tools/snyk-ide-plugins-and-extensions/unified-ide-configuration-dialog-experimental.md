@@ -2,7 +2,7 @@
 
 You can use only one IDE configuration dialog to configure all your IDEs.
 
-<figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unified-ide-configuration-dialog-experimental.png" alt=""><figcaption></figcaption></figure>
 
 ## Enabling/Disabling
 
@@ -11,15 +11,15 @@ You can use only one IDE configuration dialog to configure all your IDEs.
 1. Add `"htmlSettings": true` to the `snyk.features.preview` object.
 2. Click **Settings** in the Snyk extension panel to open the settings page.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-01-14 at 11.45.20.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/visual-studio-code.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-01-14 at 11.47.24.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/visual-studio-code-2.png" alt=""><figcaption></figcaption></figure>
 
 ### JetBrains
 
 The configuration dialog is disabled by default. To enable the dialog, set the `snyk.useNewConfigDialog` feature flag to `true` in the JetBrains IDE built-in registry.
 
-<figure><img src="../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/jetbrains.png" alt=""><figcaption></figcaption></figure>
 
 ### Eclipse
 
@@ -29,7 +29,7 @@ Set the `SNYK_USE_NEW_CONFIG_DIALOG` environment variable globally, or launch th
 
 In the **Experimental** Snyk settings, click **Open settings v2 page**.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-01-14 at 11.52.50.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/visual-studio.png" alt=""><figcaption></figcaption></figure>
 
 ### Disabling the new settings page
 

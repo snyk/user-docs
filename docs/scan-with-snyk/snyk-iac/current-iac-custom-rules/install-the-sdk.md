@@ -40,7 +40,7 @@ snyk-iac-rules --help
 
 You can download and use the SDK's prebuilt binaries. To download the prebuilt binary, visit the [**Releases tab**](https://github.com/snyk/snyk-iac-rules/releases) on the SDK repository page in GitHub:
 
-<figure><img src="../../../.gitbook/assets/screenshot-2021-09-24-at-13.44.36.png" alt="Releases tab on the SDK repository page"><figcaption><p>Releases tab on the SDK repository page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/releases-tab-sdk-repository-page.png" alt="Releases tab on the SDK repository page"><figcaption><p>Releases tab on the SDK repository page</p></figcaption></figure>
 
 After you have downloaded the desired binary archive, open a terminal and run the following commands. Note that these commands assume you are running on an Intel-based macOS and downloading version `0.0.5` of the SDK.
 

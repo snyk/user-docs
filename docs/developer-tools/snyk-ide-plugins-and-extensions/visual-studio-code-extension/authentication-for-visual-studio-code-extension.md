@@ -73,7 +73,7 @@ Follow these steps to authenticate:
 2. Press **Connect & Trust Workspace**.
 3.  Click **Authenticate** in the web browser window that opens.
 
-    <figure><img src="../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/steps-authenticate-using-snyk-api-token.png" alt=""><figcaption></figcaption></figure>
 
 The analysis starts automatically.
 
@@ -81,7 +81,7 @@ The analysis starts automatically.
 Alternatively, run the `Snyk: Set Token` command and paste the token in the text field.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (80) (1).png" alt=""><figcaption><p>Set token manually</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/set-token-manually.png" alt=""><figcaption><p>Set token manually</p></figcaption></figure>
 
 ## How to switch accounts
 

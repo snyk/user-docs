@@ -70,11 +70,11 @@ Scan this directory for code security & dependency vulnerabilities and security 
 ```
 {% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (55).png" alt=""><figcaption><p>Droid prompt to scan code for SAS and SCA issues</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/droid-prompt-scan-code-sas-sca-issues.png" alt=""><figcaption><p>Droid prompt to scan code for SAS and SCA issues</p></figcaption></figure>
 
 Factory indicates that this request is related to security vulnerability scanning and calls the Snyk MCP Server for various scans.
 
-<figure><img src="../../../.gitbook/assets/image (64).png" alt=""><figcaption><p>Factory call to Snyk MCP Server</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/factory-call-snyk-mcp-server.png" alt=""><figcaption><p>Factory call to Snyk MCP Server</p></figcaption></figure>
 
 Factory is then able to gather all the security scanning results, both code (SAST) and dependencies (SCA), and based on recommendations and contextual information provided by the Snyk MCP Server, it is now able to provide code changes that address some or all of the security vulnerabilities that were found.
 

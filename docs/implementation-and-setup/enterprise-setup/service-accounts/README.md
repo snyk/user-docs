@@ -64,11 +64,11 @@ This process describes all options. Repeat the steps to create multiple tokens f
 
 Note that while creating a **Group service account**, you can choose a Group-level role.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-07-06 at 12.01.28.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/group-settings-2.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure>
 
 In contrast, while creating an **Organization service account,** you can choose Organization-level roles, including [custom roles](../../../snyk-platform-administration/user-roles/user-role-management.md#create-a-custom-role) that you have set up for your Organizations.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-07-06 at 12.06.35.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/organization-settings.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
 
 #### Enter a service account name
 
@@ -80,7 +80,7 @@ In the **Service Account** name field, enter a unique name for this token. Remem
 
 From the **Role** dropdown list, select an appropriate role.
 
-<figure><img src="../../../.gitbook/assets/image (1) (4).png" alt="Roles"><figcaption><p>Roles</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/roles.png" alt="Roles"><figcaption><p>Roles</p></figcaption></figure>
 
 For Group service accounts, choose from the following list of roles to configure the scope of the token; Snyk recommends selecting Viewer or Admin.
 
@@ -162,10 +162,10 @@ Select an Organization and navigate to **Settings** > **Service Accounts**. Prov
 
 When you open a role that is assigned to a service account, the system displays a warning message. Consider the possible impact when you update the permissions associated with or delete a role that would lead to reassigning the service accounts and users to a new role.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-06-23 at 15.49.49.png" alt="Warning that you are about to change a role assigned to a service account"><figcaption><p>Warning that you are about to change a role assigned to a service account</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/warning-about-change-role-assigned-service-account.png" alt="Warning that you are about to change a role assigned to a service account"><figcaption><p>Warning that you are about to change a role assigned to a service account</p></figcaption></figure>
 
 {% hint style="warning" %}
 Snyk prevents users from creating Organization service accounts with a role that has more privileges than those the user creating the service account has. If you try to create a service account with a role that has more privileges than you have, you will see the error **Cannot create a service account with a higher privilege role than yours**.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-01 at 15.59.52.png" alt="User cannot assign a more privileged role to a service account"><figcaption><p>User cannot assign a more privileged role to a service account</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/user-cannot-assign-more-privileged-role-service-account.png" alt="User cannot assign a more privileged role to a service account"><figcaption><p>User cannot assign a more privileged role to a service account</p></figcaption></figure>

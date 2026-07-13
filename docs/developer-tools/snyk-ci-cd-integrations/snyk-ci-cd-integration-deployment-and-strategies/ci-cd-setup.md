@@ -18,7 +18,7 @@ You can define the target Organization in the Snyk CLI by using the `--org` CLI 
 * You can define the target Organization using its `orgslugname` as displayed in the address bar of the browser in the Snyk UI.
 * Alternatively, you can define the target Organization using its Organization ID, found on the Organization settings page.
 
-<figure><img src="../../../.gitbook/assets/image1.png" alt=""><figcaption><p>Organization ID</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/organization-id.png" alt=""><figcaption><p>Organization ID</p></figcaption></figure>
 
 For more information, see [How to select the Organization to use in the CLI.](../../snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli.md)
 

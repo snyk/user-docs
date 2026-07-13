@@ -23,7 +23,7 @@ If you have not previously connected to Nexus Repository Manager you will be ask
 
 Follow the steps on the tabs below, according to your version of Nexus.
 
-<figure><img src="../../../../.gitbook/assets/image (246).png" alt=""><figcaption><p>Configure Nexus registry</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/configure-nexus-registry.png" alt=""><figcaption><p>Configure Nexus registry</p></figcaption></figure>
 
 {% tabs %}
 {% tab title="Nexus 3" %}
@@ -54,4 +54,4 @@ Follow the steps on the tabs below, according to your version of Nexus.
 
 Open a Pull/Merge Request on a Project that contains private dependencies that are hosted in Nexus to see a lockfile updated and included in the Snyk Fix Pull Request with the correct URL to your repository.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2022-07-15 at 14.22.59.png" alt="Pull request to test Nexus integration"><figcaption><p>Pull request to test Nexus integration</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pull-request-test-nexus-integration.png" alt="Pull request to test Nexus integration"><figcaption><p>Pull request to test Nexus integration</p></figcaption></figure>

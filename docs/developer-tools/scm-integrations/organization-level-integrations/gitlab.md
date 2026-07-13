@@ -108,7 +108,7 @@ The Projects will be set to inactive, and you will no longer get alerts, pull re
 2. At the bottom of the page, select **Remove GitLab**.
 3.  A confirmation screen opens. To proceed, select **Disconnect GitLab**.
 
-    <figure><img src="../../../.gitbook/assets/2023-08-15_16-36-28.png" alt="Confirm diconnecting from GitLab" width="375"><figcaption><p>Confirm disconnecting from GitLab</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/confirm-disconnecting-gitlab.png" alt="Confirm diconnecting from GitLab" width="375"><figcaption><p>Confirm disconnecting from GitLab</p></figcaption></figure>
 
 After GitLab is disconnected, Snyk Projects imported from GitLab will be set to inactive, and you will no longer get alerts, pull requests, or Snyk tests on pull requests. The webhook that enables the integration for this repository will be removed.
 
@@ -120,6 +120,6 @@ You can re-connect anytime; however, re-initiating GitLab projects for monitorin
 
 When you are adding the environment URL and access token to set up the integration, the following message may appear:
 
-<figure><img src="../../../.gitbook/assets/2023-09-05_15-25-06.png" alt="Could not connect to GitLab integration error message" width="563"><figcaption><p>Could not connect to GitLab integration error message</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/could-connect-gitlab-integration-error-message.png" alt="Could not connect to GitLab integration error message" width="563"><figcaption><p>Could not connect to GitLab integration error message</p></figcaption></figure>
 
 This is a permissions issue unless [Snyk Broker](https://support.snyk.io/s/article/Gitlab-Broker-is-not-working) is involved. In the PAT settings in GitLab, ensure you have selected the api scope and the **Maintainer** role.

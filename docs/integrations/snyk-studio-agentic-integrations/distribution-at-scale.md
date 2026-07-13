@@ -148,7 +148,7 @@ Running the [installer script](getting-started-with-snyk-studio.md#install-snyk-
     2. **Category**: Security
     3. **Priority**: After
 
-    <figure><img src="../../.gitbook/assets/2026-01-21_16-14-45.png" alt=""><figcaption><p>Script attributes configuration in Jamf</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/script-attributes-configuration-jamf.png" alt=""><figcaption><p>Script attributes configuration in Jamf</p></figcaption></figure>
 4. Navigate to the **Scripts** tab and paste in the script.
 5. Click **Save**.
 
@@ -168,14 +168,14 @@ Running the [installer script](getting-started-with-snyk-studio.md#install-snyk-
 4. Navigate to the **Options** > **Scripts**:
    1.  Click **Configure.**
 
-       <figure><img src="../../.gitbook/assets/2026-01-21_16-21-18.png" alt=""><figcaption><p>Configure the Snyk Studio Deployment script</p></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/configure-snyk-studio-deployment-script.png" alt=""><figcaption><p>Configure the Snyk Studio Deployment script</p></figcaption></figure>
    2. Select the **Snyk Studio Deployment** script.
 5. Navigate to the **Scope** tab. Configure the scope by setting the following value:
    1. **Targets**: Select one group for initial testing.
 6. Click **Save**.
 7. Optionally: Navigate to the **Self Service** tab and make the policy available:
 
-<figure><img src="../../.gitbook/assets/2026-01-21_20-17-39.png" alt=""><figcaption><p>Optional Self Service setting in Jamf</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/optional-self-service-setting-jamf.png" alt=""><figcaption><p>Optional Self Service setting in Jamf</p></figcaption></figure>
 
 </details>
 

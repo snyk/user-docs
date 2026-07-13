@@ -56,7 +56,7 @@ Snyk provides tools to manage Groups, Organizations, user roles and permissions,
 
 You can manage users and permissions in your Groups. For details, see [Manage users and permissions](user-roles/user-role-management.md).
 
-<figure><img src="../.gitbook/assets/image (245) (1).png" alt="Manage members interface"><figcaption><p>Manage members interface</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/manage-members-interface.png" alt="Manage members interface"><figcaption><p>Manage members interface</p></figcaption></figure>
 
 ### Manage Tenant, Groups, and Organizations
 
@@ -66,7 +66,7 @@ Snyk groups and organizations help to maintain collaboration across teams. For d
 
 You can manage email notifications for yourself and your Organization. For details, see [Manage notifications](manage-notifications.md).
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt="Manage email notifications interface"><figcaption><p>Manage email notifications interface</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/manage-email-notifications-interface.png" alt="Manage email notifications interface"><figcaption><p>Manage email notifications interface</p></figcaption></figure>
 
 ### Manage settings
 

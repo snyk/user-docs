@@ -16,16 +16,16 @@ You can see the name, created date and expiry for each token of a PAT (but not t
 
 1. In your account settings area, select the **Personal access tokens** tab.
 
-<figure><img src="../../.gitbook/assets/unknown (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/generating-new-token-ui-only.png" alt=""><figcaption></figcaption></figure>
 
 2. In the Name field, enter the name that you would like to provide your PAT. The names are solely there to help you distinguish between your PATs, and provide no other purpose.
 3. To set an expiry date, select the Expiry drop-down and select a date for your PAT to expire. The maximum date you can pick is 90 days ahead. No PAT can be created with a longer expiry.
 
-<figure><img src="../../.gitbook/assets/unknown (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/generating-new-token-ui-only-2.png" alt=""><figcaption></figcaption></figure>
 
 4. Click **Generate new token**. You have generated your PAT and will see a window appear with your token. Click **Copy** to copy your token. This is the only time the Snyk Platform will share this token with you. You must store it in a secure and accessible location as you cannot retrieve it later.
 
-<figure><img src="../../.gitbook/assets/unknown (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/generating-new-token-ui-only-3.png" alt=""><figcaption></figcaption></figure>
 
 5. If you have three PATs already, you will not be able to create another one. You must revoke one of them before being able to create any more.
 
@@ -34,4 +34,4 @@ You can see the name, created date and expiry for each token of a PAT (but not t
 1. In your account settings area, select the **Personal access tokens** tab.
 2. Next to the token that you would like to revoke, click Revoke. This results in your token being revoked. Token revocation cannot be reverted.
 
-<figure><img src="../../.gitbook/assets/unknown (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/revoking-token-x20.png" alt=""><figcaption></figcaption></figure>
