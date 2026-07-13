@@ -18,14 +18,14 @@ snyk iac test aws_api_gateway_stage_logging.tf
 
 The results from running this command follow:
 
-<figure><img src="../../../../.gitbook/assets/screenshot-2021-09-28-at-19.58.22.png" alt="snyk iac test output"><figcaption><p>snyk iac test output</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/snyk-iac-test-output.png" alt="snyk iac test output"><figcaption><p>snyk iac test output</p></figcaption></figure>
 
 The results include a list of issues sorted by severity, where each issue reported includes the following details:
 
 * **Heading** - the issue that was detected, the severity of that issue, and the Snyk Policy ID for that particular issue.
 * **Location** - the property path within the configuration file where the issue was identified. See the example that follows for more details.
 
-<figure><img src="../../../../.gitbook/assets/screenshot-2021-09-28-at-20.00.36.png" alt="Example of property path"><figcaption><p>Example of property path</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/example-property-path.png" alt="Example of property path"><figcaption><p>Example of property path</p></figcaption></figure>
 
 The path of this issue is specified as follows:
 
