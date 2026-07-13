@@ -94,7 +94,7 @@ After using this option, log in to Snyk and view your Projects to see the snapsh
 
 Running the `snyk code test` command with the `--report` option, as shown, returns the results to the terminal window, along with a URL to the Snyk Code Project where the results have been published. Refer to the following screenshot.
 
-<figure><img src="../../../.gitbook/assets/image (2) (6).png" alt=""><figcaption><p>Snyk code test results with --report option</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-code-test-results-report-option.png" alt=""><figcaption><p>Snyk code test results with --report option</p></figcaption></figure>
 
 If a Snyk Code Project created with the CLI does not yet exist for the provided value in the option, the Snyk CLI creates a new Project. If a Project created using the CLI already exists, a new snapshot is made under the same Project.
 
@@ -110,7 +110,7 @@ The following command creates or uploads an existing Project named `<PROJECT_NAM
 snyk code test --report --project-name="<PROJECT_NAME>" --target-name="<TARGET_NAME>" --target-reference="$(git branch --show-current)"
 ```
 
-<figure><img src="../../../.gitbook/assets/image (4) (4).png" alt=""><figcaption><p>Code analysis Projects grouped by branch</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/code-analysis-projects-grouped-branch.png" alt=""><figcaption><p>Code analysis Projects grouped by branch</p></figcaption></figure>
 
 You can use the `--help` flag with the `snyk code test` command to view inline documentation directly in your terminal.
 
@@ -144,7 +144,7 @@ This error indicates that the contents of the scanned Project exceed the limit. 
 
 You can ignore issues in Snyk Web UI. The ignores will be used to [publish CLI results to a Snyk Code Project](scan-source-code-with-snyk-code-using-the-cli.md#publish-cli-results-to-a-snyk-code-project).
 
-<figure><img src="../../../.gitbook/assets/image (1) (7) (1).png" alt=""><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ignoring-issues-web-ui.png" alt=""><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
 
 [snyk-to-html](https://github.com/snyk/snyk-to-html) does not respect the ignored issues. Anything that is ignored in Snyk Web UI is not ignored in the report that `snyk-to-html` generates.
 
