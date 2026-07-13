@@ -17,11 +17,11 @@ Snyk Studio provides Amazon Kiro users with a unique, customized power to bypass
 
 Navigate to the Powers panel in your Kiro agentic development environment.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="View of the Powers panel in Kiro"><figcaption><p>View of the Powers panel in Kiro</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/view-powers-panel-kiro.png" alt="View of the Powers panel in Kiro"><figcaption><p>View of the Powers panel in Kiro</p></figcaption></figure>
 
 Click **Add Custom Power**. When the pop-up appears, select **Import Power from GitHub**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p>Add a Custom Power in Kiro by importing from GitHub</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/add-custom-power-kiro-importing-github.png" alt=""><figcaption><p>Add a Custom Power in Kiro by importing from GitHub</p></figcaption></figure>
 
 When prompted, copy and paste the following URL path into the window:
 
@@ -31,11 +31,11 @@ https://github.com/snyk/kiro-power-snyk/tree/main/snyk-power
 
 You should now see the Snyk Studio custom **Snyk Secure at Inception** power in the list of installed powers on the left hand side of your window.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt="View of the Secure at Inception Power in the Installed Powers list"><figcaption><p>View of the Secure at Inception Power in the Installed Powers list</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/view-secure-inception-power-installed-powers-list.png" alt="View of the Secure at Inception Power in the Installed Powers list"><figcaption><p>View of the Secure at Inception Power in the Installed Powers list</p></figcaption></figure>
 
 To verify that the Snyk Studio MCP server is running, click the ghost icon above the Kiro powers icon. You should see the Snyk MCP server in the bottom left list of MCP servers with a checkmark, indicating it is properly installed and functioning.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt="Verification that the Secure at Inception Power is installed and functioning"><figcaption><p>Verification that the Secure at Inception Power is installed and functioning</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/verification-secure-inception-power-installed-functioning.png" alt="Verification that the Secure at Inception Power is installed and functioning"><figcaption><p>Verification that the Secure at Inception Power is installed and functioning</p></figcaption></figure>
 
 ## Alternative manual installation
 
@@ -79,7 +79,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 The following example shows a Snyk MCP Server that was successfully configured and started:
 
-<figure><img src="../../../.gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/following-example-shows-snyk-mcp-server-successfully-2.png" alt=""><figcaption></figcaption></figure>
 
 ## Authenticate and trust the Project directory
 
@@ -87,7 +87,7 @@ As a one-time setup, you may need to authenticate and trust the current Project 
 
 These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
 
-<figure><img src="../../../.gitbook/assets/image (398).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/authenticate-trust-project-directory.png" alt=""><figcaption></figcaption></figure>
 
 If you need to authenticate and trust the current directory, then proceed and complete the process.
 

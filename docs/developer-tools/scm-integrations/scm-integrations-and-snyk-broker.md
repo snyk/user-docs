@@ -81,7 +81,7 @@ https://github.com/settings/apps/new?name=Snyk&description=Snyk%20helps%20you%20
 If you choose to install the app only in specific repositories, the app works only in those repositories. You can return to this screen and edit where the app is installed if you want to add it to additional repositories.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (241).png" alt=""><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/install-github-app-selected-repositories.png" alt=""><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
 
 9. Copy the `InstallationID`. These are the numbers at the end of the page URL. You must enter it when you create the Universal Broker connection to your GitHub Cloud app. \
    For example, if the page URL is `https://github.com/settings/installations/12345678`, the `InstallationID` is `12345678`.
@@ -151,7 +151,7 @@ To use the GitHub Server App with Universal Broker you must create your own GitH
 If you choose to install the app only in specific repositories, the app works only in those repositories. You can return to this screen and edit where the app is installed if you want to add it to additional repositories.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (241).png" alt=""><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/install-github-app-selected-repositories.png" alt=""><figcaption><p>Install the GitHub App in your selected repositories</p></figcaption></figure>
 
 9. Copy the `InstallationID`. These are the numbers at the end of the page URL. You must enter it when you create the Universal Broker connection to your GitHub Server app. \
    For example, if the page URL is `https://github.com/settings/installations/12345678`, the `InstallationID` is `12345678`.

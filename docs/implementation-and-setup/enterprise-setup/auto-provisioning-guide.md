@@ -45,7 +45,7 @@ Clicking the sign-up link in your welcome email will take you to the sign-up pag
 The provisioning app is only accessible through a unique link, all other access is disabled and will show an error page.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-29 at 13.39.40.png" alt="Sign up page on provision.snyk.io"><figcaption><p>Sign up page on provision.snyk.io</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sign-page-provision-snyk-io.png" alt="Sign up page on provision.snyk.io"><figcaption><p>Sign up page on provision.snyk.io</p></figcaption></figure>
 
 ### Step 1: Enter the company name
 
@@ -55,7 +55,7 @@ Provisioning will also create a [Group](../../snyk-platform-administration/group
 
 ### Step 2: Choose where to host the account
 
-<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/Screenshot 2025-01-29 at 16.54.30.png" alt="Available hosting regions" width="375"><figcaption><p>Available hosting regions</p></figcaption></figure></div>
+<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/available-hosting-regions.png" alt="Available hosting regions" width="375"><figcaption><p>Available hosting regions</p></figcaption></figure></div>
 
 Snyk offers [regional hosting](../../snyk-data-and-governance/regional-hosting-and-data-residency.md) to comply with regional data protection laws and improve service performance. This ensures data residency requirements are met and reduces data latency.
 
@@ -73,7 +73,7 @@ Automated provisioning is only possible for multi-tenant environments. For singl
 
 ### Step 3: Select an authentication method
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-29 at 17.23.59.png" alt="Available authentication methods" width="363"><figcaption><p>Available authentication methods</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/available-authentication-methods.png" alt="Available authentication methods" width="363"><figcaption><p>Available authentication methods</p></figcaption></figure>
 
 The available authentication methods are either Single sign-on (SSO) or Third-party authentication.
 
@@ -90,7 +90,7 @@ The available authentication methods are either Single sign-on (SSO) or Third-pa
 
 Snyk recommends selecting SSO since it is best supported across all environments. Selecting this option will then prompt you to enter a valid, work-issued email address, used to create an initial Snyk Admin user. No extra configuration for SSO is required at this point.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-30 at 11.58.02.png" alt="Email address input" width="375"><figcaption><p>Email address input</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/email-address-input.png" alt="Email address input" width="375"><figcaption><p>Email address input</p></figcaption></figure>
 
 ### Step 4: Confirm details and start provisioning
 
@@ -107,7 +107,7 @@ If you have selected SSO as the authentication method, once plan activation is d
 \
 Once clicked, a login code will be sent to the email address previously entered. This is known as a Passwordless Login. Enter the code where prompted and you are ready to start using Snyk!
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-30 at 14.14.27.png" alt="Successful provisioning for SSO" width="375"><figcaption><p>Successful provisioning for SSO</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/successful-provisioning-sso.png" alt="Successful provisioning for SSO" width="375"><figcaption><p>Successful provisioning for SSO</p></figcaption></figure>
 
 If you have selected **Third-party authentication**, once plan activation is done you are all set! You can click "Continue to your account" and start using the platform.
 
@@ -125,11 +125,11 @@ If you have a user account connected through a third-party provider, you will ne
 
 You can find the links for all the regions in the [Login and Web UI URLs section](../../snyk-data-and-governance/regional-hosting-and-data-residency.md#login-and-web-ui-urls).
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-30 at 15.11.52.png" alt="Log in page on provision.snyk.io"><figcaption><p>Log in page on provision.snyk.io</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/log-page-provision-snyk-io.png" alt="Log in page on provision.snyk.io"><figcaption><p>Log in page on provision.snyk.io</p></figcaption></figure>
 
 ### Step 2: Select an existing Tenant or start fresh
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-30 at 15.20.27.png" alt="Linking to an existing Tenant or creating a new one" width="375"><figcaption><p>Linking to an existing Tenant or creating a new one</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/linking-existing-tenant-creating-new-one.png" alt="Linking to an existing Tenant or creating a new one" width="375"><figcaption><p>Linking to an existing Tenant or creating a new one</p></figcaption></figure>
 
 If you already have a Snyk User, you can choose how you activate your Enterprise plan or Pilot after logging in:
 
@@ -154,14 +154,14 @@ When creating a new Tenant or User Snyk checks for duplicates and surfaces any i
 
 * **The business name provided is already in use.** - Use a different name or reach out to your account executive if you want to link your plan to that existing Tenant but you are not a member of it.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-02-04 at 17.18.14.png" alt="Business name already in use error" width="375"><figcaption><p>Business name already in use error</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/business-name-already-use-error.png" alt="Business name already in use error" width="375"><figcaption><p>Business name already in use error</p></figcaption></figure>
 
 * **An account with this email already exists.** - In this scenario you can use a different work email address or you can login ([#logging-in-provision-using-an-existing-user-account](auto-provisioning-guide.md#logging-in-provision-using-an-existing-user-account "mention")), then create the new Tenant.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-02-04 at 17.18.48.png" alt="User with the same email address already exists error" width="375"><figcaption><p>User with the same email address already exists error</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-same-email-address-already-exists-error.png" alt="User with the same email address already exists error" width="375"><figcaption><p>User with the same email address already exists error</p></figcaption></figure>
 
 ### Plan Activation errors
 
 Snyk is doing its best to ensure that you never see this screen, but in case you do, save the **reference ID** and send it to your account executive or reach out to support with the reference ID and the steps taken.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-02-04 at 17.03.37.png" alt="Plan activation error" width="375"><figcaption><p>Plan activation error</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/plan-activation-error.png" alt="Plan activation error" width="375"><figcaption><p>Plan activation error</p></figcaption></figure>

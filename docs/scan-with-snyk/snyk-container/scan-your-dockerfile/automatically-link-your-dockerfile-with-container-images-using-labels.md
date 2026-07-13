@@ -39,6 +39,6 @@ To create a link, Snyk must be able to map the Dockerfile repository URL to the 
 
 To create automatic links between container images to Dockerfiles stored in brokered SCMs, enter the URL in the integration settings page.
 
-<figure><img src="../../../.gitbook/assets/mceclip0-4-.png" alt="Integration page settings with integration URL"><figcaption><p>Integration settings page with integration URL</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/integration-settings-page-integration-url.png" alt="Integration page settings with integration URL"><figcaption><p>Integration settings page with integration URL</p></figcaption></figure>
 
 When the URL is available, Snyk can use it to generate links.

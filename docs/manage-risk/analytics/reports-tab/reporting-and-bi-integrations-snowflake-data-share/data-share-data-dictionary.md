@@ -19,11 +19,11 @@ The diagram above represents the objects listed in the data dictionary as a data
 * [PR Checks Integration Adoption](data-share-data-dictionary.md#pr-checks-integration-adoption)
 * [PR Checks Project Adoption](data-share-data-dictionary.md#pr-checks-project-adoption)
 
-<figure><img src="../../../../.gitbook/assets/image (287).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to issues</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/database-diagram-defining-objects-listed-data-dictionary-3.png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to issues</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (238).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to PR checks</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/database-diagram-defining-objects-listed-data-dictionary.png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to PR checks</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (248).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to PR check adoption</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/database-diagram-defining-objects-listed-data-dictionary-2.png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to PR check adoption</p></figcaption></figure>
 
 ### Groups
 
@@ -278,7 +278,7 @@ Each row represents an effective period defined by the `effective_at` and `ends_
 * Snyk creates a new row whenever settings change.
 * Rows where `ends_at` is `null` represent the current configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (309).png" alt=""><figcaption><p>PR check settings tracked in the <code>PR_CHECK_INTEGRATION_ADOPTION</code> table</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pr-check-settings-tracked-pr-check-integration-adoption.png" alt=""><figcaption><p>PR check settings tracked in the <code>PR_CHECK_INTEGRATION_ADOPTION</code> table</p></figcaption></figure>
 
 | Column name                                                                 | Data type      | Description                                                                                                  |
 | --------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -314,7 +314,7 @@ The `PR_CHECK_PROJECT_ADOPTION` table tracks pull request (PR) check configurati
 * Rows with a null `ends_at` value represent the current configuration.
 * If `test_pull_requests` is null, no project-level overrides exist. The integration determines the settings.
 
-<figure><img src="../../../../.gitbook/assets/image (310).png" alt=""><figcaption><p>PR check settings tracked in the <code>PR_CHECK_PROJECT_ADOPTION</code> table</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pr-check-settings-tracked-pr-check-project-adoption-table.png" alt=""><figcaption><p>PR check settings tracked in the <code>PR_CHECK_PROJECT_ADOPTION</code> table</p></figcaption></figure>
 
 | Column name                                     | Data type      | Description                                                                                                                                          |
 | ----------------------------------------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |

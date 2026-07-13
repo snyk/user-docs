@@ -34,7 +34,7 @@ To create a new role, see [create a new role](../../../snyk-platform-administrat
 
 This example illustrates creating a new role called **Kubernetes connector**
 
-<figure><img src="../../../.gitbook/assets/image (94).png" alt="Create the Kubernetes connector for Insights role"><figcaption><p>Create the Kubernetes connector for role</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/create-kubernetes-connector-role.png" alt="Create the Kubernetes connector for Insights role"><figcaption><p>Create the Kubernetes connector for role</p></figcaption></figure>
 
 ### Assign permissions to this role
 
@@ -42,7 +42,7 @@ Navigate to the newly created role and [select edit](../../../snyk-platform-admi
 
 Scroll to the bottom of the page, tick the **Publish Kubernetes Resources** permission, and save the changes by clicking the **Update Role Permissions** button.
 
-<figure><img src="../../../.gitbook/assets/image (35).png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/publish-kubernetes-resources-permission.png" alt="Publish Kubernetes Resources permission"><figcaption><p>Publish Kubernetes Resources permission</p></figcaption></figure>
 
 ### Create a service account and assign it to a role
 
@@ -56,7 +56,7 @@ Navigate to that **Snyk Organization** > **Settings** > **Service Account.**
 
 Create a new service account with your chosen name, and from the dropdown, select the role you created in the previous step.
 
-<figure><img src="../../../.gitbook/assets/image (32).png" alt="Select the Insights Kubernetes Agent role"><figcaption><p>Select the Kubernetes Agent role</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/select-kubernetes-agent-role.png" alt="Select the Insights Kubernetes Agent role"><figcaption><p>Select the Kubernetes Agent role</p></figcaption></figure>
 
 After the service account is created, you will see the API token. Copy the API token and save it somewhere safe; you will need this to configure the agent in the Helm chart.
 

@@ -63,7 +63,7 @@ ORDER BY fixable_critical_issues DESC, fixable_high_issues DESC,
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/image (190).png" alt="Output of SQL query for SCA issues backlog counters"><figcaption><p>Output of SQL query for SCA issues backlog counters</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-sql-query-sca-issues-backlog-counters.png" alt="Output of SQL query for SCA issues backlog counters"><figcaption><p>Output of SQL query for SCA issues backlog counters</p></figcaption></figure>
 
 ### Example query - Code
 
@@ -96,7 +96,7 @@ ORDER BY high_issues DESC,
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/image (191).png" alt="Output format of SQL query for open Snyk Code issues backlog counters"><figcaption><p>Output format of SQL query for open Snyk Code issues backlog counters</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-sql-query-open-snyk-code-issues-backlog.png" alt="Output format of SQL query for open Snyk Code issues backlog counters"><figcaption><p>Output format of SQL query for open Snyk Code issues backlog counters</p></figcaption></figure>
 
 ## Aging
 
@@ -140,7 +140,7 @@ ORDER BY open_issues_aging DESC;          -- Update based on the desired order
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/image (192).png" alt="Output format of SQL query for average aging of critical issues"><figcaption><p>Output format of SQL query for average aging of critical issues</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-sql-query-average-aging-critical-issues.png" alt="Output format of SQL query for average aging of critical issues"><figcaption><p>Output format of SQL query for average aging of critical issues</p></figcaption></figure>
 
 ## MTTR
 
@@ -186,7 +186,7 @@ ORDER BY organization_display_name ASC;         -- Update based on the desired o
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/image (193).png" alt="Output format of SQL query for MTTR per issue severity"><figcaption><p>Output format of SQL query for MTTR per issue severity</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-sql-query-mttr-per-issue-severity.png" alt="Output format of SQL query for MTTR per issue severity"><figcaption><p>Output format of SQL query for MTTR per issue severity</p></figcaption></figure>
 
 ## SLA
 
@@ -262,7 +262,7 @@ The example query can be extended to support various SLA use-cases, such as defi
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/image (194).png" alt="Output format of SQL query for open issues counter per SLA status"><figcaption><p>Output format of SQL query for open issues counter per SLA status</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-sql-query-open-issues-counter-per-sla-status.png" alt="Output format of SQL query for open issues counter per SLA status"><figcaption><p>Output format of SQL query for open issues counter per SLA status</p></figcaption></figure>
 
 ## Developers IDE & CLI test usage and adoption
 
@@ -296,7 +296,7 @@ GROUP BY IDE, PRODUCT
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/image (195).png" alt="Output format of SQL query for number of scans per Snyk environment"><figcaption><p>Output format of SQL query for number of scans per Snyk environment</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-sql-query-number-scans-per-snyk-environment.png" alt="Output format of SQL query for number of scans per Snyk environment"><figcaption><p>Output format of SQL query for number of scans per Snyk environment</p></figcaption></figure>
 
 ## CI/CD pipelines test usage and adoption
 
@@ -329,7 +329,7 @@ GROUP BY PRODUCT
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/image (196).png" alt="Output format of SQL query for number of tested repositories, total tests, and the test % success rate per Snyk Product"><figcaption><p>Output format of SQL query for number of tested repositories, total tests, and the test % success rate per Snyk Product</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-sql-query-number-tested-repositories-total.png" alt="Output format of SQL query for number of tested repositories, total tests, and the test % success rate per Snyk Product"><figcaption><p>Output format of SQL query for number of tested repositories, total tests, and the test % success rate per Snyk Product</p></figcaption></figure>
 
 ## Repositories with highest rate of PRs with failed PR checks
 
@@ -370,7 +370,7 @@ ORDER BY pct_prs_with_failed_checks DESC, pct_prs_with_overridden_checks DESC
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/image (304).png" alt=""><figcaption><p>Output format of SQL query for % of PRs with failed PR checks and % of PRs with overridden PR checks by repository</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-sql-query-prs-failed-pr-checks-prs-overridden.png" alt=""><figcaption><p>Output format of SQL query for % of PRs with failed PR checks and % of PRs with overridden PR checks by repository</p></figcaption></figure>
 
 ## PR checks by status over time
 
@@ -405,9 +405,9 @@ ORDER BY week_starting ASC
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-3.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (306).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format-2.png" alt=""><figcaption></figcaption></figure>
 
 ## Repository PR check adoption
 
@@ -599,4 +599,4 @@ ORDER BY repository_name
 
 #### **Output format:**
 
-<figure><img src="../../../../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/output-format.png" alt=""><figcaption></figcaption></figure>

@@ -43,11 +43,11 @@ Role management for Groups takes place in **Settings** > **Member roles**. This 
 
 Click the **Create new role** button and enter the **New role name**, **Role Type**, and **Description**. Role names should be unique, reflecting the user's purpose in Snyk and can contain alphanumeric characters plus spaces. The **Role Type** reflects the permission sets the user can have, Organization-level only or Group and Organization-level.
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-17-49.png" alt="" width="375"><figcaption><p>Create a custom Organization-level role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/create-custom-organization-level-role.png" alt="" width="375"><figcaption><p>Create a custom Organization-level role</p></figcaption></figure>
 
 If you would like to continue, you can click the **Create role** button. Basic details about the role are visible in the top section of the **Role details** screen.
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-25-17.png" alt="" width="563"><figcaption><p>Role Details for a custom role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/role-details-custom-role.png" alt="" width="563"><figcaption><p>Role Details for a custom role</p></figcaption></figure>
 
 The bottom section lists all the permissions available at the level you specified under **Role Type**, at the Organization or Group level. For more information about the available permissions, see [Pre-defined roles](pre-defined-roles.md).
 
@@ -59,13 +59,13 @@ Choose the required permissions and click the update button at the bottom of the
 
 You can enable or disable all permissions in a set quickly by using the **Enable all** or **Disable all** button in the relevant permissions section. Be sure to update the permissions using the button at the bottom of the section.
 
-<figure><img src="../../.gitbook/assets/image (149).png" alt=""><figcaption><p>Organization-level permissions section</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/organization-level-permissions-section.png" alt=""><figcaption><p>Organization-level permissions section</p></figcaption></figure>
 
 Permissions are grouped under categories. This is done so you can understand what functions assigning a permission might enable, and because some permissions require similar permissions to function fully. For example, for a user to move Projects (**Move Project** permission) in an Organization, the user must also be able to add Projects (**Add Project** permission) to that Organization, as these permissions work in tandem.
 
 When the process of creating a role is completed, a confirmation message appears.
 
-<figure><img src="../../.gitbook/assets/image (82).png" alt=""><figcaption><p>Role update confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/role-update-confirmation-message.png" alt=""><figcaption><p>Role update confirmation message</p></figcaption></figure>
 
 ### Edit a custom role
 
@@ -81,13 +81,13 @@ When the process of updating a role completes, a confirmation message appears.
 
 To copy a role, use the **Duplicate** button next to each role in the Member Roles list, or select a role from the Member Roles list page, and when the Role details page opens, click the **Duplicate Role** button.
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-44-43.png" alt=""><figcaption><p>Duplicate a role using the copy icon on the Member Roles page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/duplicate-role-using-copy-icon-member-roles-page.png" alt=""><figcaption><p>Duplicate a role using the copy icon on the Member Roles page</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-46-59.png" alt=""><figcaption><p>Duplicate a role using the Duplicate role button under Role Details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/duplicate-role-using-duplicate-role-button-under-role.png" alt=""><figcaption><p>Duplicate a role using the Duplicate role button under Role Details</p></figcaption></figure>
 
 A Duplicate role pop-up will appear, prompting you to enter a unique name and description. You can select the option to use the description from the role you copied from, but this can be edited later. Click the **Duplicate Role** button to proceed with creation. A **Group Admin** or a custom role with **Role management** permissions can edit this role to assign new permissions to it or remove any permissions already assigned.
 
-<figure><img src="../../.gitbook/assets/2024-02-13_10-50-04.png" alt="" width="375"><figcaption><p>Duplicate role creation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/duplicate-role-creation.png" alt="" width="375"><figcaption><p>Duplicate role creation</p></figcaption></figure>
 
 ### Delete a custom role
 
@@ -99,7 +99,7 @@ When the current role is deleted, all its existing members, including service ac
 
 Pre-defined roles cannot be deleted from your Group.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-05-17 at 09.59.27.png" alt=""><figcaption><p>Prompt to delete a role and reassign members</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prompt-delete-role-reassign-members.png" alt=""><figcaption><p>Prompt to delete a role and reassign members</p></figcaption></figure>
 
 ## Assign roles
 
@@ -122,7 +122,7 @@ You can invite new members to the Organization with an assigned role.
 
 Click **Add members** > **Invite new members** and select the role to assign from the **New Members join as** dropdown.
 
-<div align="left"><figure><img src="../../.gitbook/assets/Screen Shot 2022-02-24 at 12.51.45 PM.png" alt=""><figcaption><p>Add members to your Organization</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/add-members-organization.png" alt=""><figcaption><p>Add members to your Organization</p></figcaption></figure></div>
 
 Click the **Add members** button > **Add existing members** to promote current Group Members to an Organization-specific role.
 

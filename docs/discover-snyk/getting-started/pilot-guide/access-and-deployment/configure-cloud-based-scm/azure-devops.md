@@ -27,7 +27,7 @@ Configure the Group-level integration by following these steps:
 * Navigate to the Group-level
 * Open **Integrations**, then **Add integration**
 
-<figure><img src="../../../../../.gitbook/assets/image (307).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/configure-group-level-integration.png" alt=""><figcaption></figcaption></figure>
 
 * Search and select the Azure DevOps integration
 * Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Integrate Azure DevOps using Snyk Essentials](../../../../../developer-tools/scm-integrations/group-level-integrations/azure-devops-for-snyk-essentials.md#azure-devops-integrate-using-snyk-apprisk) page.
@@ -47,6 +47,6 @@ Configure the Organization-level integration by following these steps:
 * Search and select the Azure DevOps integration
 * Configure the integration and populate all mandatory fields, including the PAT details. For more details, see the [Azure DevOps integration settings](../../../../../developer-tools/scm-integrations/organization-level-integrations/azure-repositories-tfs.md#integrate-using-the-snyk-web-ui) page.
 
-<figure><img src="../../../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/configure-organization-level-integration.png" alt=""><figcaption></figcaption></figure>
 
 The Organization-level integration is immediately available to import repositories and begin scanning.

@@ -145,7 +145,7 @@ To enable or disable **Reachability in the Snyk CLI and CI/CD integrations** for
 2. Under **Reachability for Snyk CLI and CI/CD integrations**, toggle **Enable Reachability for Snyk CLI and CI/CD integrations** on or off.
 3. Confirm the selection to save changes.
 
-<figure><img src="../../.gitbook/assets/image (45) (1).png" alt="Enable Reachability for Snyk CLI and CI/CD integrations in Snyk Preview"><figcaption><p>Enable Reachability for Snyk CLI and CI/CD integrations in Snyk Preview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/enable-reachability-snyk-cli-ci-cd-integrations-snyk-preview.png" alt="Enable Reachability for Snyk CLI and CI/CD integrations in Snyk Preview"><figcaption><p>Enable Reachability for Snyk CLI and CI/CD integrations in Snyk Preview</p></figcaption></figure>
 
 ### **Enable reachability** analysis **for brokered connections**
 
@@ -203,7 +203,7 @@ For a full list of supported options, see the CLI help docs for `test`, `monitor
 
 When the `--reachability=true`  option is used, Reachability results are returned in human readable format by default, with **Reachability** as a property of each finding.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/human-readable-output.png" alt=""><figcaption></figcaption></figure>
 
 If the `--reachability=true`  option is not used, the **Reachability** property does not appear in the command outpu&#x74;**.**
 

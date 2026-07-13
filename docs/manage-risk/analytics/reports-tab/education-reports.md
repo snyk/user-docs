@@ -39,7 +39,7 @@ The report allows you to track:
 
 The first section of the report focuses on showing key engagement statistics and the progress of any assignments. Tool tips provide more details on the definitions of the metrics.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-29 at 19.30.57.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/learn-engagement-snapshot-assignment-progress.png" alt=""><figcaption></figcaption></figure>
 
 ### Adoption rankings
 
@@ -49,13 +49,13 @@ The adoption ranking section shows your organization and individual user engagem
 The user level adoption ranking is a great way to identify potential security champions who are proactively engaging in security education and training.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-29 at 19.34.12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/adoption-rankings.png" alt=""><figcaption></figcaption></figure>
 
 ### Learning breakdown
 
 The breakdown shows the different types of Learn content the users are engaging with, using lesson completions as the measure. You can see if users are engaging with product training or security education, along with the most popular lessons and insights into which CWE categories users are studying the most.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-29 at 19.34.22.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/learning-breakdown.png" alt=""><figcaption></figcaption></figure>
 
 ## Learning Impact & Opportunities
 
@@ -87,7 +87,7 @@ The "Learning Impact on Issue Resolution" chart measures the relationship betwee
 
 The "Learning Impact on Issue Prevention" chart measures the relationship between lesson completion and the prevention code security issues. Introduced issues are counted when a related lesson was completed within the selected period. Issues introduced on the day a Project was imported are not counted. Use the filters to drill into specific lessons or CWE categories.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-10-23 at 15.00.57.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/learning-impact-snapshot.png" alt=""><figcaption></figcaption></figure>
 
 ### Top 10 CWEs - open issues / issues introduced in the period
 
@@ -95,7 +95,7 @@ This section of the report shows recommendation for training for your top open c
 
 You will see coverage for all users within organisation scope of the report filters. This shows you how many people have ever completed a related Snyk Learn lesson on the topic.
 
-<div><figure><img src="../../../.gitbook/assets/Screenshot 2025-10-23 at 14.12.24.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/Screenshot 2025-10-23 at 14.12.18.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/top-10-cwes-open-issues-issues-introduced-period-2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/top-10-cwes-open-issues-issues-introduced-period.png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 The recommendations in this section allow you to focus on the most impactful training opportunities. Use the filters to further customise the recommendations based on issue severity or for specific Organizations.

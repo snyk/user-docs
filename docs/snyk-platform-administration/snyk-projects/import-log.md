@@ -20,7 +20,7 @@ The Import Log timeline will go back as far as the **most recent** applicable co
 
 For example, if the Organization was created before January 25th, 2023, Snyk cannot retrieve any logs before that date.
 
-<figure><img src="../../.gitbook/assets/2024-04-29_15-38-51.png" alt=""><figcaption><p>The Import Log timeline</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/import-log-timeline.png" alt=""><figcaption><p>The Import Log timeline</p></figcaption></figure>
 
 The Import Log shows all imported targets listed in reverse chronological order, with the most recent import at the top of the page. Each import can be expanded using the dropdown, listing all the imported Projects created in Snyk at the time of import.
 
@@ -38,7 +38,7 @@ The error messages that can be displayed are:
 * Project could not be created.
 * Project failed to import.
 
-<figure><img src="../../.gitbook/assets/2024-04-29_15-49-19.png" alt="A detailed error message for Project created with errors"><figcaption><p>A detailed error message for Project created with errors</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/detailed-error-message-project-created-errors.png" alt="A detailed error message for Project created with errors"><figcaption><p>A detailed error message for Project created with errors</p></figcaption></figure>
 
 {% hint style="info" %}
 Snyk displays detailed error messages for `golang-deps`, `npm-deps`, `dotnet-deps`, `maven-deps` and `pip-deps` ecosystems.

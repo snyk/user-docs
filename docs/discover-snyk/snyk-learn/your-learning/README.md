@@ -16,7 +16,7 @@ You can specify categories of learning on your profile to improve learning recom
 
 In your profile, you can set your learning preferences, including the preferred language.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-11-26 at 11.23.36.png" alt=""><figcaption><p>Snyk Learn My Profile</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-learn-my-profile.png" alt=""><figcaption><p>Snyk Learn My Profile</p></figcaption></figure>
 
 ## In progress learning
 
@@ -40,7 +40,7 @@ For each matching project, you can see:
 
 This requires active Snyk Code projects in your preferred Organization.
 
-<figure><img src="../../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/requires-active-snyk-code-projects-preferred-organization.png" alt=""><figcaption></figcaption></figure>
 
 ## Assigned learning
 

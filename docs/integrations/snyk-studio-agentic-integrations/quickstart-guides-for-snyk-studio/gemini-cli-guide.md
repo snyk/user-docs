@@ -88,7 +88,7 @@ Use the Gemini extension to install Snyk Studio. In your terminal, run:
 gemini extensions install https://github.com/snyk/agentic-integration-wrappers
 ```
 
-<figure><img src="../../../.gitbook/assets/image (425).png" alt="Gemini extensions install in the CLI"><figcaption><p>Example of using the Gemini install command in your terminal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/example-using-gemini-install-command-terminal.png" alt="Gemini extensions install in the CLI"><figcaption><p>Example of using the Gemini install command in your terminal</p></figcaption></figure>
 
 To confirm the extension was installed, run the following command in the Gemini CLI:
 
@@ -96,7 +96,7 @@ To confirm the extension was installed, run the following command in the Gemini 
 /extensions list
 ```
 
-<figure><img src="../../../.gitbook/assets/image (382).png" alt=""><figcaption><p>Result of the /extensions list terminal command</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/result-extensions-list-terminal-command.png" alt=""><figcaption><p>Result of the /extensions list terminal command</p></figcaption></figure>
 
 To install Snyk Studio manually, use the method that best suits your operating system and local development environment.
 
@@ -157,7 +157,7 @@ If the `snyk` command is not available, add it by following the instructions on 
 
 Run `/mcp list` to confirm the Snyk MCP Server is connected.
 
-<figure><img src="../../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/run-mcp-list-confirm-snyk-mcp-server-connected.png" alt=""><figcaption></figcaption></figure>
 
 </details>
 

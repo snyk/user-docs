@@ -82,7 +82,7 @@ If a scan finds issues, based on your configuration, the download request can be
 
 You can find the results of a scan under the artifact properties, where you can decide to ignore the issues and allow downloads. To find the artifact, use the Artifactory search bar or navigate the **t**ree view.
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-02-02 at 9.47.46 AM.png" alt="Results of a scan"><figcaption><p>Results of a scan</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/results-scan.png" alt="Results of a scan"><figcaption><p>Results of a scan</p></figcaption></figure>
 
 ## Plugin configuration
 

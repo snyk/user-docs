@@ -12,7 +12,7 @@ Follow these steps to add a Snyk pipe:
 
 Results appear in the Bitbucket Pipelines output interface, similar to the following:
 
-![Bitbucket Pipelines output interface - here the pipeline fails due to Snyk finding vulnerabilities](<../../../.gitbook/assets/Screenshot 2023-10-03 at 13.08.45.png>)
+![Bitbucket Pipelines output interface - here the pipeline fails due to Snyk finding vulnerabilities](<../../../.gitbook/assets/bitbucket-pipelines-output-interface-here-pipeline-fails.png>)
 
 {% hint style="info" %}
 If the build fails, even if **MONITOR** is set to **True**, Snyk does not continue to the monitor stage because no Projects are deployed until the build succeeds. To enable monitoring on snyk.io of Projects with vulnerabilities, set **DONT\_BREAK\_BUILD** to **True**. You can use **SEVERITY\_THRESHOLD** to tell the pipe the severity threshold for failing the pipe at the scanning stage. For more information, see [Snyk pipe parameters and values](snyk-pipe-parameters-and-values-bitbucket-cloud.md).

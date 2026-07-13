@@ -16,7 +16,7 @@ For specific supported languages, you can create pull requests to remediate issu
 
 You can start the process from any supported Project's open source vulnerability view.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-02-13 at 5.05.38 PM.png" alt=""><figcaption><p>Vulnerability view of an issue </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-view-issue.png" alt=""><figcaption><p>Vulnerability view of an issue </p></figcaption></figure>
 
 {% hint style="info" %}
 PRs use a branch naming convention based on the issues they fix. If a PR already exists for a specific change, Snyk does not create a new one, even if you closed the original PR.

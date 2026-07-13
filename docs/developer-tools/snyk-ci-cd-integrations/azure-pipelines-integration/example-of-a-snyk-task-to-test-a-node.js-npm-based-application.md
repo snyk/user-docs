@@ -4,8 +4,8 @@ The following shows examples of Snyk Security Scan task configurations and param
 
 The configuration panel appears as follows:
 
-<figure><img src="../../../.gitbook/assets/mceclip0-24-.png" alt="Snyk Security Scan configuration panel" width="375"><figcaption><p>Snyk Security Scan configuration panel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-security-scan-configuration-panel-2.png" alt="Snyk Security Scan configuration panel" width="375"><figcaption><p>Snyk Security Scan configuration panel</p></figcaption></figure>
 
 Click **add** and the task is added to your pipeline as follows:
 
-![Snyk Security Scan task added to a pipeline](../../../.gitbook/assets/mceclip1-15-.png)
+![Snyk Security Scan task added to a pipeline](../../../.gitbook/assets/snyk-security-scan-task-added-pipeline.png)

@@ -18,11 +18,11 @@ This installation instruction assumes you have a Node.js local development envir
 
 Open the MCP Server configuration in Cline. Click the **Manage MCP Servers** icon at the bottom panel, then click the setup wheel icon at the top right.
 
-<figure><img src="../../../.gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/install-snyk-mcp-server-cline-using-npx.png" alt=""><figcaption></figcaption></figure>
 
 Click the **Configure MCP Servers** button from the **MCP Servers** tab:
 
-<figure><img src="../../../.gitbook/assets/image (353).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/install-snyk-mcp-server-cline-using-npx-2.png" alt=""><figcaption></figcaption></figure>
 
 To install the Snyk MCP Server, add the following `mcpServers` configuration block to the Cline MCP Servers configuration file:
 
@@ -62,7 +62,7 @@ If you installed `snyk` using npm as a global module and you are using fnm to ma
 
 After saving the MCP Servers configuration, confirm the Snyk MCP Server is successfully installed and listed in the Cline UI.
 
-<figure><img src="../../../.gitbook/assets/image (354).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/after-saving-mcp-servers-configuration-confirm-snyk-mcp.png" alt=""><figcaption></figcaption></figure>
 
 ## Setting up the Snyk MCP Server
 
@@ -70,7 +70,7 @@ As a one-time setup, you may need to authenticate and trust the current Project 
 
 These workflows are mostly automatically executed by the underlying model and the agentic code assistant, and you will need to approve them using a browser confirmation dialog. The process should look similar to this:
 
-<figure><img src="../../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/set-snyk-mcp-server.png" alt=""><figcaption></figcaption></figure>
 
 You can explicitly prompt to authenticate your account as follows:
 
@@ -78,11 +78,11 @@ You can explicitly prompt to authenticate your account as follows:
 Authenticate my Snyk account
 ```
 
-<figure><img src="../../../.gitbook/assets/image (355).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/setting-snyk-mcp-server-6.png" alt=""><figcaption></figcaption></figure>
 
 After enabling Act mode and approving the request, the agent opens a browser for you to authenticate to the Snyk Web UI, then continues the session.
 
-<figure><img src="../../../.gitbook/assets/image (348).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/authenticated-prompt-opens-browser-authenticate-snyk-web-ui.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Examples
 
@@ -98,7 +98,7 @@ Scan this directory for code security & dependency vulnerabilities and security 
 
 Cline will invoke Snyk scanning, provide output and insights based on the results that Snyk returned:
 
-<figure><img src="../../../.gitbook/assets/image (357).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/scanning-security-vulnerabilities-5.png" alt=""><figcaption></figcaption></figure>
 
 ### "Secure at inception" rules
 
@@ -106,7 +106,7 @@ To practice [Secure at Inception](../../../discover-snyk/getting-started/glossar
 
 The following is a suggested instruction for [Cline rules](https://docs.cline.bot/features/cline-rules). Open the Rules and Workflows menu using the bottom chat navigation from Cline.
 
-<figure><img src="../../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/secure-inception-rules-2.png" alt=""><figcaption></figcaption></figure>
 
 Add the following contents as a global rule:
 

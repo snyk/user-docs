@@ -30,7 +30,7 @@ There are two standard roles available at the Group level, **Group Member** and 
 Group Admins have all Snyk permissions; see [Pre-defined user roles](../../user-roles/pre-defined-roles.md). However, being a Group Member does not directly grant the user any rights. To have rights, users must be added as Organization members or promoted to Group Admin.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/2024-04-02_09-41-48.png" alt=""><figcaption><p>View Group members</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/members-view-group-users.png" alt=""><figcaption><p>View Group members</p></figcaption></figure>
 
 ## View individual members
 

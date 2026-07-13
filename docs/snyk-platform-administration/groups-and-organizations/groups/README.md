@@ -56,7 +56,7 @@ Select **Members** to view users in the Group.
 
 Group members are users who have access to all Organizations in the Group. Users of the Organizations are managed in the Settings of each Organization.
 
-<figure><img src="../../../.gitbook/assets/2024-04-02_09-41-48.png" alt=""><figcaption><p>Members view for Group users</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/members-view-group-users.png" alt=""><figcaption><p>Members view for Group users</p></figcaption></figure>
 
 {% hint style="info" %}
 See [Manage users in a Group](manage-users-in-a-group.md) for details.

@@ -21,7 +21,7 @@ This page explains how to set up DigitalOcean integration in Snyk and start mana
 2. In the **Account credentials** section, enter your DigitalOcean personal access token as the login credential. You can find detailed instructions for creating the access token on the integration page.
 3. To finish, click **Save**.
 
-<figure><img src="../../../.gitbook/assets/mceclip0-10-.png" alt="Account credentials for DigitalOcean"><figcaption><p>DigitalOcean account credentials</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/digitalocean-account-credentials.png" alt="Account credentials for DigitalOcean"><figcaption><p>DigitalOcean account credentials</p></figcaption></figure>
 
 If you are using self-hosted DigitalOcean, contact [Snyk Support](https://support.snyk.io) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../../implementation-and-setup/enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md).
 
@@ -62,7 +62,7 @@ The steps follow to add images from DigitalOcean to Snyk.
 
 DigitalOcean imports are indicated with a unique icon. You can filter the integration in the **Projects** view to see DigitalOcean Projects only:
 
-<figure><img src="../../../.gitbook/assets/mceclip0-11-.png" alt="Example of DigitalOcean Projects"><figcaption><p>DigitalOcean Projects in Projects listing</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/digitalocean-projects-projects-listing.png" alt="Example of DigitalOcean Projects"><figcaption><p>DigitalOcean Projects in Projects listing</p></figcaption></figure>
 
 {% hint style="info" %}
 For application vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md).

@@ -98,7 +98,7 @@ Poetry dev dependencies are not included in scans by default. To change this, mo
 3. Select **Edit settings** for **Python**.
 4. Enable or disable the **Scan Poetry dev dependencies** option under the **Poetry dev dependencies** settings.
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt="Poetry dev dependency settings"><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/poetry-dev-dependency-settings.png" alt="Poetry dev dependency settings"><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
 
 A known limitation for Poetry is mixed `include` entries in `pyproject.toml`
 
@@ -149,4 +149,4 @@ Pipenv dev dependencies are not included in scans by default. To change this, mo
 3. Select **Edit settings** for **Python**.
 4. Enable or disable the **Scan Pipenv dev dependencies** option under the **Pipenv** settings.
 
-<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt="Pipenv dev dependency settings"><figcaption><p>Pipenv dev dependency settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pipenv-dev-dependency-settings.png" alt="Pipenv dev dependency settings"><figcaption><p>Pipenv dev dependency settings</p></figcaption></figure>

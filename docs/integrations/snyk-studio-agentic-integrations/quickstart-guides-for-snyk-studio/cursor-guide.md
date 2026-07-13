@@ -13,13 +13,13 @@ For installation instructions, visit [Getting started with Snyk Studio](../getti
 * Click [this link](cursor:extension/snyk-security.snyk-vulnerability-scanner) to open up the Snyk Security extension directly
 * Click `Install`
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-10-13 at 2.19.30 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/install-snyk-security-plugin-visual-studio-code.png" alt=""><figcaption></figcaption></figure>
 
 ### Enable Secure At Inception
 
 Once installation completes, a modal window will appear prompting an opt-in to Snyk Studio's "Secure at Inception." This will automatically configure the necessary rules to scan any new AI generated code. Additional variations are available within the plugin's Settings page.
 
-<figure><img src="../../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/enable-secure-inception-2.png" alt=""><figcaption></figcaption></figure>
 
 Choosing **Yes** activates `Auto Configure Snyk Mcp Server` and sets the `Secure at Inception: Execution Frequency` to **On Code Generation**. These settings handle the configuration of the Snyk MCP Server and the creation of the snyk\_rules.mdc file within the directory.
 
@@ -27,7 +27,7 @@ Choosing **Yes** activates `Auto Configure Snyk Mcp Server` and sets the `Secure
 
 Users who previously installed the VS Code IDE extensions and did not enable Secure at Inception using the modal window can enable them after the fact through the IDE extension settings. Users can also update Secure at Inception settings or disable them by setting the `Execution Frequency` to "Manual."
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/updating-secure-inception-setting.png" alt=""><figcaption></figcaption></figure>
 
 ### Authenticate
 
@@ -58,13 +58,13 @@ Free users are limited to a set number of scans. If you reach the allotment, we 
 
 Click [this link](cursor://anysphere.cursor-deeplink/mcp/install?name=snyk\&config=eyJjb21tYW5kIjoibnB4IC15IHNueWtAbGF0ZXN0IG1jcCAtdCBzdGRpbyJ9) to directly add the Snyk MCP Server to Cursor. Confirm the installation by clicking `Install` in the Cursor settings.
 
-<figure><img src="../../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/install-using-cursor-link.png" alt=""><figcaption></figcaption></figure>
 
 #### Install using the Cursor MCP Directory
 
 Search the [Cursor MCP Directory](https://cursor.com/docs/context/mcp/directory) for `Snyk`. Then install by clicking the `Add to Cursor` button. Confirm the installation by clicking `Install` in the Cursor settings.
 
-<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/install-using-cursor-mcp-directory.png" alt=""><figcaption></figcaption></figure>
 
 #### Install manually
 

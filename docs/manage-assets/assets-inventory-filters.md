@@ -104,7 +104,7 @@ To resolve this issue, select the unenriched repositories that are not being dis
 
 Example:
 
-<figure><img src="../.gitbook/assets/image (416).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/assets-discovered-group-organization-level-integrations.png" alt=""><figcaption></figcaption></figure>
 
 Check if the repository still exists in the SCM. If it was deleted, remove the asset by deleting its Snyk target.
 

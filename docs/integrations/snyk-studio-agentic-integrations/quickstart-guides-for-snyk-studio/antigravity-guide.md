@@ -17,7 +17,7 @@ The Snyk MCP server cannot be manually installed. Use the Snyk Security plugin i
 
 If asked to trust the publisher, select **Trust Publisher & Install.**
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-11-24 at 12.08.02 PM.png" alt="Popup in Snyk Security plugin asking for trust verification" width="410"><figcaption><p>Popup in Snyk Security plugin asking for trust verification</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/popup-snyk-security-plugin-asking-trust-verification.png" alt="Popup in Snyk Security plugin asking for trust verification" width="410"><figcaption><p>Popup in Snyk Security plugin asking for trust verification</p></figcaption></figure>
 
 ## Set up Snyk Studio
 
@@ -29,7 +29,7 @@ As a one-time setup, you may need to authenticate and trust the current Project 
 
 On installation completion, a modal prompts you to opt in to Snyk Studio's "[Secure at inception](../../../discover-snyk/getting-started/glossary.md#secure-at-inception)." This action automatically configures the necessary rules to scan any new AI generated code. Additional options are available on the **Settings** page for the plugin.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-11-24 at 12.08.20 PM.png" alt="Modal prompting you to opt in to Secure at inception" width="404"><figcaption><p>Modal prompting you to opt in to Secure at inception</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/modal-prompting-opt-secure-inception.png" alt="Modal prompting you to opt in to Secure at inception" width="404"><figcaption><p>Modal prompting you to opt in to Secure at inception</p></figcaption></figure>
 
 ### Authenticate
 
