@@ -10,7 +10,7 @@ A newly-assigned policy, or changes to a policy, apply when the Project is re-sc
 
 Examples follow for an issue on a Project page that has been ignored by a security policy:
 
-<figure><img src="../../../.gitbook/assets/screenshot_2021-07-28_at_12.50.46.png" alt="Issue ignored by security policy"><figcaption><p>Issue ignored by security policy</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/issue-ignored-security-policy.png" alt="Issue ignored by security policy"><figcaption><p>Issue ignored by security policy</p></figcaption></figure>
 
 ## **Custom and original severity in the CLI**
 
@@ -26,4 +26,4 @@ Examples follow for an issue on a Project page that has been ignored by a securi
 
 ## **Custom and original severity in reports**
 
-<div align="left"><figure><img src="../../../.gitbook/assets/screenshot_2020-10-21_at_9.30.03_am.png" alt="Custom and original severity in Reports"><figcaption><p>Custom and original severity in reports</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/custom-original-severity-reports.png" alt="Custom and original severity in Reports"><figcaption><p>Custom and original severity in reports</p></figcaption></figure></div>
