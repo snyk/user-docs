@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for IaC settings
----
-
 # IacSettings
 
 {% hint style="info" %}

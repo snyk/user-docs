@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for Tenants
----
-
 # Tenants
 
 {% hint style="info" %}

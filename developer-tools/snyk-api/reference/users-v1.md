@@ -1,7 +1,3 @@
----
-description: Snyk V1 API endpoints for users
----
-
 # Users (v1)
 
 {% hint style="info" %}

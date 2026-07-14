@@ -1,7 +1,3 @@
----
-description: Snyk V1 API endpoints for monitoring Projects
----
-
 # Monitor (v1)
 
 {% hint style="info" %}

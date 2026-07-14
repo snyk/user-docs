@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for issues
----
-
 # Issues
 
 {% hint style="info" %}

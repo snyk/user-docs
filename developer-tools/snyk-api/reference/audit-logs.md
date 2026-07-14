@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for audit logs
----
-
 # Audit Logs
 
 {% hint style="info" %}

@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for policies
----
-
 # Policies
 
 {% hint style="info" %}

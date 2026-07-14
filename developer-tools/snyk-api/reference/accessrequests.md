@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for access requests
----
-
 # AccessRequests
 
 {% hint style="info" %}

@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for service accounts
----
-
 # ServiceAccounts
 
 {% hint style="info" %}

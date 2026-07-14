@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for Snyk Cloud
----
-
 # Cloud
 
 {% hint style="info" %}

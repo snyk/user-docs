@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for pull request templates
----
-
 # Pull Request Templates
 
 {% hint style="info" %}

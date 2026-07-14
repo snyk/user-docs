@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for Snyk Learn
----
-
 # learn
 
 {% hint style="info" %}

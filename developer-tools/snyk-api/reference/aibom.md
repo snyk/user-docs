@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for the AI bill of materials (AI-BOM)
----
-
 # AiBom
 
 {% hint style="info" %}
