@@ -49,6 +49,13 @@ The rate limits are 1 request per second, 10 requests per minute, and 100 reques
 
 Rules extensions support most of the same languages as Snyk Code tests. The [Supported rules](supported-rules.md) page shows detailed support for combinations of rules, languages, and rule extensions. For more information on Snyk Code language support, refer to the [documentation](https://docs.snyk.io/supported-languages-package-managers-and-frameworks). For information about the roadmap, reach out to your account team.
 
+## Migrating from the closed beta
+
+If you used Rule Extensions during the closed beta, complete these steps for general availability:
+
+* **Move to the GA API endpoints.** The closed-beta API endpoints will be retired 30 days after general availability. The GA endpoints are available now — see the [API reference](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions).
+* **Update your custom-role permissions.** Grant your roles the `rule_extension.*` permissions they need, including **View Groups** and **View Organizations**. See [Required permissions](#required-permissions).
+
 ## Rule extensions
 
 ### How do I know if a rule extension is working, or the impact it is having?
