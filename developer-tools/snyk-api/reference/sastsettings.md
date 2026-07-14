@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for Snyk Code (SAST) settings
----
-
 # SastSettings
 
 {% hint style="info" %}

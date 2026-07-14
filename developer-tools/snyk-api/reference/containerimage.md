@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for container images
----
-
 # ContainerImage
 
 {% hint style="info" %}

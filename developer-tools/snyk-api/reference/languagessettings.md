@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for language settings
----
-
 # LanguagesSettings
 
 {% hint style="info" %}

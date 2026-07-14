@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for a Group
----
-
 # Group
 
 {% hint style="info" %}

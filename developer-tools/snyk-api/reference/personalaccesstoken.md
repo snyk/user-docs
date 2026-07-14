@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for personal access tokens
----
-
 # PersonalAccessToken
 
 {% hint style="info" %}

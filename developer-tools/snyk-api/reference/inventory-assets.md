@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for inventory assets
----
-
 # Inventory Assets
 
 {% hint style="info" %}

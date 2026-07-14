@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for Organizations
----
-
 # Orgs
 
 {% hint style="info" %}

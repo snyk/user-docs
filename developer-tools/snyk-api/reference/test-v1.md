@@ -1,7 +1,3 @@
----
-description: Snyk V1 API endpoints for testing Projects
----
-
 # Test (v1)
 
 {% hint style="info" %}

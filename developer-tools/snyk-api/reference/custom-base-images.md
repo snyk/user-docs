@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for custom base images
----
-
 # Custom Base Images
 
 {% hint style="info" %}

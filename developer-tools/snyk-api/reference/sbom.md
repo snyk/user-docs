@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for SBOM generation
----
-
 # SBOM
 
 {% hint style="info" %}

@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for tests
----
-
 # Tests
 
 {% hint style="info" %}

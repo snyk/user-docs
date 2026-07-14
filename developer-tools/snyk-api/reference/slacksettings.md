@@ -1,7 +1,3 @@
----
-description: Snyk REST API endpoints for Slack settings
----
-
 # SlackSettings
 
 {% hint style="info" %}
