@@ -7,7 +7,7 @@ The Impact Testing API lets you understand how a proposed rule extension would c
 * Select the smallest relevant Project for your first test so you can evaluate changes quickly. Rate limits are one request per second, 10 per minute, and 100 per hour.
 {% endhint %}
 
-For request and response schemas, see the [Impact Testing API reference](https://docs.snyk.io/snyk-api/reference).
+For request and response schemas, see the [Impact Testing API reference](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests).
 
 {% stepper %}
 {% step %}
