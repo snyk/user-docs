@@ -34,13 +34,13 @@ If you move a Project between Organizations, the Project will also be removed fr
 2. Using the **Filters** drop-down, apply the filters corresponding to the Projects you would like to add to a newly created Collection.&#x20;
 3.  Select all of your filtered Projects that are visible on the page using the **Select All** button beneath the Projects count, and then click **Add selected projects to a Collection**
 
-    <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 12.06.26.png" alt="Select all filtered Projects that are visible"><figcaption><p>Select all filtered Projects that are visible</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/select-all-filtered-projects-visible.png" alt="Select all filtered Projects that are visible"><figcaption><p>Select all filtered Projects that are visible</p></figcaption></figure>
 4.  Enter the name of the collection you would like to add your selected Projects to and click **Add to collection**.
 
-    <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 12.07.14.png" alt="Enter a name for your collection"><figcaption><p>Enter a name for your collection</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/enter-name-collection.png" alt="Enter a name for your collection"><figcaption><p>Enter a name for your collection</p></figcaption></figure>
 5.  Your Projects are now in the collection that you created previously.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 12.07.51.png" alt="View your Projects in the previously created collection"><figcaption><p>View your Projects in the previously created collection</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/view-projects-previously-created-collection.png" alt="View your Projects in the previously created collection"><figcaption><p>View your Projects in the previously created collection</p></figcaption></figure>
 
 ## Add individually selected Projects to an existing Project collection
 
@@ -54,7 +54,7 @@ If you move a Project between Organizations, the Project will also be removed fr
 2. For the collection you want to manage, select the three dots next to the collection.
 3.  Choose the option to rename or delete the collection.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-14 at 12.12.58.png" alt="Click the three dots next to the collection you want to configure and either rename or delete the collection"><figcaption><p>Click the three dots next to the collection you want to configure and either rename or delete the collection</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/click-three-dots-next-collection-want-configure-either.png" alt="Click the three dots next to the collection you want to configure and either rename or delete the collection"><figcaption><p>Click the three dots next to the collection you want to configure and either rename or delete the collection</p></figcaption></figure>
 
 ## Perform actions on Projects within a collection&#x20;
 
