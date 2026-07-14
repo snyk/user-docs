@@ -83,7 +83,7 @@
     * [Net new issues (delta) scan troubleshooting](snyk-ide-plugins-and-extensions/troubleshooting-ides/net-new-issues-delta-scan-troubleshooting.md)
     * [IDE plugin scan fails on Windows systems with .exe download blocking](snyk-ide-plugins-and-extensions/troubleshooting-ides/ide-plugin-fails-with-scan-failed-on-windows-systems-with-.exe-download-blocking.md)
   * [IDE Plugin Compatibility Matrix](snyk-ide-plugins-and-extensions/compatibility-matrix.md)
-  * [Unified IDE Configuration Dialog (experimental)](snyk-ide-plugins-and-extensions/unified-ide-configuration-dialog-experimental.md)
+  * [Unified IDE Configuration Dialog](integrations/snyk-ide-plugins-and-extensions/unified-ide-configuration-dialog.md)
 * [Snyk CI/CDs](snyk-ci-cd-integrations/README.md)
   * [Snyk Code in the CI/CD pipeline](snyk-ci-cd-integrations/use-snyk-code-in-the-ci-cd-pipeline.md)
   * [Snyk CI/CD Integration deployment and strategies](snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/README.md)

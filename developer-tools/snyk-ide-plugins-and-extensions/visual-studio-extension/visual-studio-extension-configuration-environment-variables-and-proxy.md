@@ -1,8 +1,8 @@
----
-description: How to configure the Snyk Visual Studio extension, including environment variables and proxy settings
----
-
 # Visual Studio extension configuration, environment variables, and proxy
+
+{% hint style="info" %}
+Snyk now configures all IDEs through the [new unified configuration dialog](../../integrations/snyk-ide-plugins-and-extensions/unified-ide-configuration-dialog.md). This page describes the earlier settings and remains available for older versions of the plugin.
+{% endhint %}
 
 After the plugin is installed, you can set the following configurations for the extension.
 

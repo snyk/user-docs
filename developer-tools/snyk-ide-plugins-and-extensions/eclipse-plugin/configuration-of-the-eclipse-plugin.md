@@ -1,8 +1,8 @@
----
-description: How to configure global and Project-specific settings for the Snyk Eclipse plugin
----
-
 # Configuration of the Eclipse plugin
+
+{% hint style="info" %}
+Snyk now configures all IDEs through the [new unified configuration dialog](../../integrations/snyk-ide-plugins-and-extensions/unified-ide-configuration-dialog.md). This page describes the earlier settings and remains available for older versions of the plugin.
+{% endhint %}
 
 You can configure both [Global settings](configuration-of-the-eclipse-plugin.md#general-settings) and [Project-specific properties](configuration-of-the-eclipse-plugin.md#project-specific-properties).
 
@@ -13,10 +13,10 @@ You can set the following global configuration settings in the Snyk preferences.
 <figure><img src="../../.gitbook/assets/snyk-preferences.png" alt=""><figcaption><p>Snyk preferences</p></figcaption></figure>
 
 * **Custom Endpoint**: Specify the Snyk API endpoint for a custom multi-tenant or single-tenant setup. If you are using `https://api.snyk.io`, no configuration is required. For details, see the list of [IDEs URLs](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#ides-urls).\
-  Multi-tenant users who do not belong to the `SNYK-US-01` region will be automatically redirected to the correct domain for the email with which the user authenticated. The redirect will not occur for cases where the users are expected to use a custom URL, such as companies with single-tenant setups.
+  Snyk automatically redirects multi-tenant users who do not belong to the `SNYK-US-01` region to the correct domain, using their authentication email. Snyk does not redirect users who must use a custom URL, such as companies with single-tenant setups.
 * **Allow unknown certificate authorities**: Disable certificate checks for SSL connections.
 * **Authentication Method**: Select to override the default OAuth2 authentication in order to use a Snyk API token. Snyk recommends keeping this setting off because the default OAuth2 authentication is more secure.
-* **Connect to Snyk**: Launch the web-browser to authenticate. In case of Personal Access Tokens, it will redirect to the correct website where the token can be generated and copied from.
+* **Connect to Snyk**: Launch the web browser to authenticate. For Personal Access Tokens, it will redirect to the correct website where the token can be generated and copied from.
 * **API Token or Personal Access Token**: Set the authentication token for Snyk.
 * **Snyk Open Source enabled**: Enable or disable Snyk Open Source Dependency Scans through the Language Server. Default: `Enabled`.
 * **Snyk Code Security enabled**: Enable or disable Snyk Code Security Issues through the Language Server. Default: `Disabled`.
@@ -32,8 +32,8 @@ You can set the following global configuration settings in the Snyk preferences.
 * **Additional Parameters**: Specify additional parameters to pass to the CLI, for example, `--file=pom.xml` or `--debug.`\
   Note: When you enable `debug`, your code may be logged in the IDE log files, for example, the `io.snyk.languageserver.log` file.
 * **Additional Environment**: Add environment variables to the Language Server; multiple variables can be separated by `;`. Example: `JAVA_HOME=/Library/JDK/bin;GOPATH=/usr/local/bin`
-* **Path**: Specify your additions to the path to find needed third-party tools such as Gradle or Maven.
-* **Update and install Snyk binaries automatically**: If **disabled**, the CLI binary is not downloaded automatically, and updates must be performed manually. Snyk recommends always using the most recent stable version of the CLI with the most recent stable Eclipse plugin version to maintain compatibility between CLI and plugin. Ensure that the location for the CLI points to an existing current binary.
+* **Path**: Specify your additions to the path to find the third-party tools you need, such as Gradle or Maven.
+* **Update and install Snyk binaries automatically**: If **disabled**, the CLI binary is not automatically downloaded, and updates must be applied manually. Snyk recommends always using the most recent stable version of the CLI with the most recent stable Eclipse plugin version to maintain compatibility between the CLI and plugin. Ensure that the location for the CLI points to an existing current binary.
 * **Base URL for CLI download**: Specify an alternative download host for the CLI, for example, `https://downloads.snyk.io/fips`. This must provide the CLI and necessary files as the default `https://downloads.snyk.io` does, that is, the following files. See also GitHub[ releases](https://github.com/snyk/cli/releases).
   * %Base URL%/cli/v%VERSION%/%CLI-BINARY-NAME%
   * %Base URL%/cli/v%VERSION%/%CLI-BINARY-NAME%.sha256
@@ -56,7 +56,7 @@ You can set the following global configuration settings in the Snyk preferences.
 You can specify Project-specific scan settings on the **Snyk** page in the **Project Properties**. To open the **Project Properties** page, right-click the root folder of your Project in either the **Package Explorer** or **Project Explorer** view, then select **Properties** from the context menu.
 
 * **Additional Parameters**: Overrides the value defined in [Global settings](configuration-of-the-eclipse-plugin.md#general-settings).
-* **Auto-select Organization**: When enabled, Snyk automatically selects the most appropriate Organization for your Project using context found in your repository and your authentication. If an Organization is configured manually, this feature is overridden. If an appropriate Organization cannot be identified automatically, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) is used as a fallback.
-* **Project Organization**: Specify the Organization (ID or name) for Snyk to target when running scans in this particular IDE Project. Retrieve the Organization ID from the Organization settings in the Snyk Web UI: `https://app.snyk.io/org/[ORG_NAME]/manage/settings` and copy the ID from the Organization ID section. If the Organization is provided manually, automatic Organization selection is overridden. If the Organization value is blank or invalid, the value from the global Organization field is used.
+* **Auto-select Organization**: When enabled, Snyk automatically selects the most appropriate Organization for your Project based on context in your repository and your authentication. If an Organization is configured manually, this feature is overridden. If no appropriate Organization can be automatically identified, the preferred Organization defined in your [web account settings](https://app.snyk.io/account) is used as a fallback.
+* **Project Organization**: Specify the Organization (ID or name) for Snyk to target when running scans in this particular IDE Project. Retrieve the Organization ID from the Organization settings in the Snyk Web UI: `https://app.snyk.io/org/[ORG_NAME]/manage/settings` and copy the ID from the Organization ID section. If the Organization is provided manually, automatic Organization selection is overridden. If the Organization value is blank or invalid, the global Organization field value is used.
 
 <figure><img src="../../.gitbook/assets/snyk-project-specific-properties-page-allowing-entry-scan.png" alt=""><figcaption><p>Snyk Project-specific properties page, allowing entry of scan parameters and specific organization settings for the Project</p></figcaption></figure>
