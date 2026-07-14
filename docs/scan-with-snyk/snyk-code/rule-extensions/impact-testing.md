@@ -15,7 +15,7 @@ For request and response schemas, see the [Impact Testing API reference](https:/
 
 Before you start, gather the `project_id`, `org_id`, `fully_qualified_name`, `rule_keys`, and `extension_type` values for the rule extension you want to test.
 
-Send a `POST` request to `/groups/{group_id}/sast/rule_extensions/tests` with the following required attributes:
+Send a `POST` request to `/rest/groups/{group_id}/sast/rule_extensions/tests` with the following required attributes:
 
 | Attribute              | Type      | Required | Description                                                                                                                      |
 | ---------------------- | --------- | :------: | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ A successful request returns `202 Accepted` with a `test_id` and a status of `ST
 {% step %}
 **Poll for completion**
 
-Send a `GET` request to `/groups/{group_id}/sast/rule_extensions/tests/{test_id}` to check the test status.
+Send a `GET` request to `/rest/groups/{group_id}/sast/rule_extensions/tests/{test_id}` to check the test status.
 
 Possible status values:
 
@@ -62,7 +62,7 @@ Possible status values:
 {% step %}
 **Retrieve and review results**
 
-After the status reaches `COMPLETED`, send a `GET` request to `/groups/{group_id}/sast/rule_extensions/tests/{test_id}/results`.
+After the status reaches `COMPLETED`, send a `GET` request to `/rest/groups/{group_id}/sast/rule_extensions/tests/{test_id}/results`.
 
 The response contains:
 
