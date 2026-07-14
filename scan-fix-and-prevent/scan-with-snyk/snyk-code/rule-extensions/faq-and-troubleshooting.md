@@ -60,9 +60,7 @@ If you used Rule Extensions during the closed beta, complete these steps for gen
 
 ### How do I know if a rule extension is working, or the impact it is having?
 
-The best way to understand the impact of a rule extension is by using the [impact testing API](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests). Use the smallest practical project for the test.
-
-Snyk will be introducing **UI** functionality that allows you to test rule extension changes to a Project for the General Availability milestone.
+You can preview the impact of a rule extension in the Snyk Web UI or with the [impact testing API](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests). Use the smallest practical project for the test.
 
 ### What is the delay between publishing a rule extension and being able to see the results in a Code scan?
 
