@@ -794,11 +794,11 @@ The way your sanitizer is called affects FQN resolution:
 
 After identifying your FQN:
 
-1. Create a draft rule extension with your identified FQN.
+1. Create a draft Rule Extension with your identified FQN.
 2. Run an [Impact Testing API](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests) test on a
    project that uses your sanitizer. This is the recommended way to confirm
-   the FQN resolves correctly and reduces the expected findings before you
-   publish the rule extension.
+   the FQN resolves correctly and to check the expected reduction in findings before you
+   publish the Rule Extension.
 3. Verify that false positives are reduced in the impact test results.
 4. If issues persist, review the troubleshooting section below.
 
@@ -821,7 +821,7 @@ For more information on permissions and usage, see
 | PHP                   | `Namespace\ClassName\methodName` or `methodName`                    | `App\Security\Sanitizer\sanitizeInput`               |
 | Python                | `module.function_name` or `module.ClassName.method_name`            | `project.security.text.remove_bad_chars`             |
 | Ruby                  | `Module::Class.method_name`                                         | `MyApp::Security::InputSanitizer.clean`              |
-| Rust                  | `crate::module::function_name` or `crate::module::Struct::method` | `my_app::security::sanitize::sanitize_string`        |
+| Rust                  | `crate::module::function_name` or `crate::module::StructName::method_name` | `my_app::security::sanitize::sanitize_string`        |
 | Scala                 | `package.ClassName.methodName`                                      | `com.bank.security.XSSFilter.stripTags`              |
 | Swift                 | `ModuleName.ClassName.methodName`                                   | `MyApp.InputSanitizer.clean`                          |
 | VB.NET                | `global::Namespace.Class.Method`                                    | `global::MyCorp.Security.InputSanitizer.Clean`       |
@@ -860,4 +860,4 @@ Once you've identified your FQN:
 
 1. Read about [sanitization types](custom-sanitizers.md#types-of-sanitizers) to determine which type matches your function's behavior
 2. Review the [supported rules](supported-rules.md) to select which rules your sanitizer applies to
-3. Follow the [configuration guide](configure-rule-extensions.md) to create your rule extension
+3. Follow the [configuration guide](configure-rule-extensions.md) to create your Rule Extension

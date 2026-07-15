@@ -2,7 +2,7 @@
 
 Taint flow analysis can miss your application's unique security controls. Defining custom sanitizers helps you get more accurate results by teaching the scanner about your specific data cleaning and validation methods, reducing false positives.
 
-Here's when to use them:
+Use custom sanitizers in the following cases:
 
 * In-house libraries: For your organization's own `Sanitize.clean()` functions.
 * Third-party libraries: When a library you use safely handles data.
@@ -159,7 +159,7 @@ _API `extension_type`: `any_usage_sanitizer`_
 
 Arguments to these sanitizers are considered sanitized after the execution of the sanitizer. This form of sanitizer is either expected to mutate data that a reference is passing, or throw exceptions if non-sanitized data is passed.
 
-If it was used as the wrong kind for the sanitization, it could lead to false negatives and hide incorrect usage of sanitizer functions in the code.
+Using the wrong sanitizer type can cause false negatives and hide incorrect usage of sanitizer functions in your code.
 
 {% tabs %}
 {% tab title="Java" %}

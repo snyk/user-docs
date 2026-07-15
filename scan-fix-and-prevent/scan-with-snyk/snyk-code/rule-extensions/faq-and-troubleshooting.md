@@ -6,44 +6,44 @@ This page provides answers to common questions about using Rule Extensions, alon
 
 ### What entitlements and permissions do I need to use this feature?
 
-You must be an Enterprise customer with API entitlement, and you need the appropriate permissions on a [custom role](https://docs.snyk.io/snyk-platform-administration/user-roles/user-role-management). The exact set depends on whether you access Rule Extensions through the API or the in-product UI — see [Rule Extensions permissions](rule-extensions-permissions.md) for the full breakdown.
+You must be an Enterprise customer, and you need the appropriate permissions on a [custom role](https://docs.snyk.io/snyk-platform-administration/user-roles/user-role-management). The exact set depends on whether you access Rule Extensions through the API or the in-product UI — see [Rule Extensions permissions](rule-extensions-permissions.md) for the full breakdown.
 
 ### What are the API rate limits?
 
 Impact test requests — creating a test and retrieving its results — use a lower rate-limit bucket: **5 requests per second, 50 per minute, and 500 per hour**. All other Rule Extensions API endpoints use the standard Snyk REST API limits, which are considerably higher (currently 160 per second and 1,620 per minute). Exceeding a limit returns `429 Too Many Requests`.
 
-### Which languages are supported by rules extensions?
+### Which languages are supported by Rule Extensions?
 
-Rules extensions support most of the same languages as Snyk Code tests. The [Supported rules](supported-rules.md) page shows detailed support for combinations of rules, languages, and rule extensions. For more information on Snyk Code language support, refer to the [documentation](https://docs.snyk.io/supported-languages-package-managers-and-frameworks). For information about the roadmap, reach out to your account team.
+Rule Extensions support most of the same languages as Snyk Code tests. The [Supported rules](supported-rules.md) page shows detailed support for combinations of rules, languages, and Rule Extensions. For more information on Snyk Code language support, refer to the [documentation](https://docs.snyk.io/supported-languages-package-managers-and-frameworks). For information about the roadmap, reach out to your account team.
 
 ## Migrating from the closed beta
 
 If you used Rule Extensions during the closed beta, complete these steps for general availability:
 
 * **Move to the GA API endpoints.** The closed-beta API endpoints will be retired 30 days after general availability. The GA endpoints are available now — see the [API reference](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions).
-* **Update your custom-role permissions.** Grant your roles the `rule_extension.*` permissions they need, including **View Groups** and **View Organizations**. See [Required permissions](#required-permissions).
+* **Update your custom-role permissions.** Grant your roles the `rule_extension.*` permissions they need, including **View Groups** and **View Organizations**. See [Rule Extensions permissions](rule-extensions-permissions.md).
 
-## Rule extensions
+## Rule Extensions
 
-### How do I know if a rule extension is working, or the impact it is having?
+### How do I know if a Rule Extension is working, or the impact it is having?
 
-You can preview the impact of a rule extension in the Snyk Web UI or with the [impact testing API](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests). Use the smallest practical project for the test.
+You can preview the impact of a Rule Extension in the Snyk Web UI or with the [impact testing API](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests). Use the smallest practical project for the test.
 
-### What is the delay between publishing a rule extension and being able to see the results in a Code scan?
+### What is the delay between publishing a Rule Extension and being able to see the results in a Code scan?
 
 The maximum delay is nine (9) hours.
 
 {% hint style="warning" %}
-A delay of up to 9 hours can occur before a rule extension is recognized when Snyk scans an existing commit hash. To force the change to be picked up sooner, push a new commit to the repository.
+A delay of up to 9 hours can occur before a Rule Extension is recognized when Snyk scans an existing commit hash. To force the change to be picked up sooner, push a new commit to the repository.
 {% endhint %}
 
-### Can I apply the rule extension to a Group or an Organization?
+### Can I apply the Rule Extension to a Group or an Organization?
 
-A rule extension only affects scans where it is published and has an assignment to that scope. Use the [Assignments API](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments) to assign a published extension to the whole Group or to specific Organizations under the Group.
+A Rule Extension only affects scans where it is published and has an assignment to that scope. Use the [Assignments API](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments) to assign a published extension to the whole Group or to specific Organizations under the Group.
 
-### Is there a limit to the number of rule extensions I can create?
+### Is there a limit to the number of Rule Extensions I can create?
 
-You can create a maximum of 1,000 published rule extensions for a Group.
+You can create a maximum of 1,000 published Rule Extensions for a Group.
 
 ### Can I update multiple extensions at the same time?
 
@@ -51,11 +51,11 @@ This functionality is not currently available.
 
 ### Can I delete multiple extensions?
 
-You delete one rule extension at a time. Published extensions can only be deleted after all assignments are removed (see the [Assignments API](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments)).
+You delete one Rule Extension at a time. Published extensions can only be deleted after all assignments are removed (see the [Assignments API](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments)).
 
 ### What corner cases can stop a sanitizer from being recognized?
 
-A rule extension only takes effect when Snyk Code can resolve your function to its FQN in the data flow. The most common reasons it doesn't:
+A Rule Extension only takes effect when Snyk Code can resolve your function to its FQN in the data flow. The most common reasons it doesn't:
 
 * **Wildcard imports** (Java, Kotlin, Scala, C#) — `import pkg.*` prevents resolution. Use explicit imports.
 * **Relative imports** (JavaScript/TypeScript) — `import { clean } from '../utils'` does not resolve. Use an absolute module path or the npm package name.
@@ -74,35 +74,35 @@ Match the type to how your function behaves — Flow Through (the return value i
 
 ## Rule management
 
-### What is the difference between `published` and `draft` for rule extensions?
+### What is the difference between `published` and `draft` for Rule Extensions?
 
 * **Published** means the extension can be assigned and applied to Snyk Code scans (together with [assignments](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments)).
 * **Draft** keeps the configuration saved but it is not applied to scans until you publish it.
 
-### Can published rule extensions be changed to draft?
+### Can published Rule Extensions be changed to draft?
 
-Published rule extensions cannot be changed to draft rule extensions. Create a new rule extension and delete the one that is no longer required.
+Published Rule Extensions cannot be changed to draft. Create a new Rule Extension and delete the one that's no longer needed.
 
-### How do I publish my draft rule extensions?
+### How do I publish my draft Rule Extensions?
 
-They can be created as published using the [Create a rule extension](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions) endpoint, or created as `draft` and later published with the [Update a rule extension by rule extension ID](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#patch-groups-group_id-sast-rule_extensions-rule_extension_id) endpoint by setting `attributes.status` to `published`.
+They can be created as published using the [Create a Rule Extension](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions) endpoint, or created as `draft` and later published with the [Update a Rule Extension by Rule Extension ID](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#patch-groups-group_id-sast-rule_extensions-rule_extension_id) endpoint by setting `attributes.status` to `published`.
 
 ### What data can I update for a rule?
 
-The [Update a rule extension by rule extension ID](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#patch-groups-group_id-sast-rule_extensions-rule_extension_id) endpoint supports partial updates to `description`, `configuration` (sanitization `type` and `rule_keys`), and `status`. For **draft** extensions, you can also update `signature` (including `fully_qualified_name`). For **published** extensions, you **cannot** update `signature`.
+The [Update a Rule Extension by Rule Extension ID](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#patch-groups-group_id-sast-rule_extensions-rule_extension_id) endpoint supports partial updates to `description`, `configuration` (sanitization `type` and `rule_keys`), and `status`. For **draft** extensions, you can also update `signature` (including `fully_qualified_name`). For **published** extensions, you **cannot** update `signature`.
 
 ### What do the different sanitizer types mean?
 
 Sanitizer type refers to the way the input data is being sanitized. Snyk has identified four major types that are supported in Snyk scans, covering the different usage patterns. See [Custom sanitizers](custom-sanitizers.md).
 
-### Can Snyk recover deleted rule extensions?
+### Can Snyk recover deleted Rule Extensions?
 
-Deleted rule extensions cannot be recovered. If a rule extension is deleted, you must create a new rule extension.
+Deleted Rule Extensions cannot be recovered. If a Rule Extension is deleted, you must create a new Rule Extension.
 
 ### Can I change the fully qualified function name?
 
-* For draft extensions, you can use the [Update a rule extension by rule extension ID](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#patch-groups-group_id-sast-rule_extensions-rule_extension_id) endpoint `signature` attribute to specify a new FQN.
-* For published extensions, the signature cannot be updated. Create a new rule extension with the desired FQN and remove the old one when it is no longer needed.
+* For draft extensions, you can use the [Update a Rule Extension by Rule Extension ID](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#patch-groups-group_id-sast-rule_extensions-rule_extension_id) endpoint `signature` attribute to specify a new FQN.
+* For published extensions, the signature cannot be updated. Create a new Rule Extension with the desired FQN and remove the old one when it is no longer needed.
 
 ### Best practices for custom sanitizers
 
@@ -187,7 +187,7 @@ if (Sanitizer.PathIsSafe(fullPath)) {
 
 Snyk plans to revisit access and custom roles in the future.
 
-### Will the rule extension scope be expanded to tenants in the future? That is, will we be able to create rule extensions across groups?
+### Will Rule Extensions be available across Groups (tenants) in the future?
 
 This is a future consideration and is not currently supported.
 
@@ -199,7 +199,7 @@ Try running the test again, and if the issue persists, contact your account team
 
 ### I accidentally deleted my rule; can I get it back?
 
-Deleted rule extensions cannot be recovered. You must create a new one.
+Deleted Rule Extensions cannot be recovered. You must create a new one.
 
 ### I added a custom sanitizer but the false positives still show up; what should I do?
 
@@ -211,9 +211,9 @@ For further assistance, contact your account team or refer to the [Snyk document
 
 | Term                  | Definition                                                                                                                     |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **FQN**               | Fully Qualified Name - the complete identifier for a function including namespace, class, and method name.                     |
+| **FQN**               | Fully Qualified Name — the complete identifier for a function including namespace, class, and method name.                     |
 | **Rule Key**          | The unique identifier of a Snyk Code rule that the extension applies to — the value used in the `rule_keys` API field. See [Supported rules](supported-rules.md). |
 | **Sanitizer**         | Name of the sanitizing function being added to Snyk Code rules.                                                                |
 | **Sanitization Type** | Specifies the expected behavior of the sanitizing function. See [Custom sanitizers](custom-sanitizers.md) for details.         |
 | **Scope**             | Where a published extension applies, as defined by [assignments](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments) to the Group or Organizations. |
-| **Status**            | Specifies whether the rule extension has been saved as a draft or published for test execution.                                |
+| **Status**            | Specifies whether the Rule Extension has been saved as a draft or published for test execution.                                |

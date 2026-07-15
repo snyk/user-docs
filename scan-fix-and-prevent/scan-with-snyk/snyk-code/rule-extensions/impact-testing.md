@@ -1,9 +1,9 @@
 # Impact testing
 
-Impact testing lets you understand how a proposed rule extension would change findings for a Snyk Code Project before you publish it. It runs your extension against the Project and returns the findings that would be added or removed. Impact testing is available both in the Snyk Web UI and through the API; this page covers the API workflow.
+Impact testing lets you understand how a proposed Rule Extension would change findings for a Snyk Code Project before you publish it. It runs your extension against the Project and returns the findings that would be added or removed. Impact testing is available both in the Snyk Web UI and through the API; this page covers the API workflow.
 
 {% hint style="info" %}
-* Impact testing is for proposed changes only. You cannot run an impact test against a rule extension that already exists.
+* Impact testing is for proposed changes only. You cannot run an impact test against a Rule Extension that already exists.
 * Select the smallest relevant Project for your first test so you can evaluate changes quickly. Impact test requests are rate-limited to 5 per second, 50 per minute, and 500 per hour.
 {% endhint %}
 
@@ -13,7 +13,7 @@ For request and response schemas, see the [Impact Testing API reference](https:/
 {% step %}
 **Prepare and trigger an impact test**
 
-Before you start, gather the `project_id`, `org_id`, `fully_qualified_name`, `rule_keys`, and `extension_type` values for the rule extension you want to test.
+Before you start, gather the `project_id`, `org_id`, `fully_qualified_name`, `rule_keys`, and `extension_type` values for the Rule Extension you want to test.
 
 Send a `POST` request to `/rest/groups/{group_id}/sast/rule_extensions/tests` with the following required attributes:
 
@@ -54,9 +54,9 @@ Send a `GET` request to `/rest/groups/{group_id}/sast/rule_extensions/tests/{tes
 
 Possible status values:
 
-* `STARTED` - the test is still running (`200 OK`)
-* `COMPLETED` - results are ready; the response returns a `303` redirect to the results endpoint
-* `ERRORED` - the test failed (`200 OK`); the response includes an error code and description
+* `STARTED` — the test is still running (`200 OK`)
+* `COMPLETED` — results are ready; the response returns a `303` redirect to the results endpoint
+* `ERRORED` — the test failed (`200 OK`); the response includes an error code and description
 {% endstep %}
 
 {% step %}
@@ -66,11 +66,11 @@ After the status reaches `COMPLETED`, send a `GET` request to `/rest/groups/{gro
 
 The response contains:
 
-* **`removed_findings`** - findings that no longer appear because the sanitizer addresses them.
-* **`added_findings`** - findings introduced as a side effect of the extension.
-* **`findings` entries** - each entry includes `count` and `changes`. Each change includes `rule_id`, `rule_name`, `location`, `severity`, `file_path`, and `priority_score`.
-* **`total_count`** - the combined count of added and removed findings. A `total_count` of `0` means the extension has no effect on the tested Project.
+* **`removed_findings`** — findings that no longer appear because the sanitizer addresses them.
+* **`added_findings`** — findings introduced as a side effect of the extension.
+* **`findings` entries** — each entry includes `count` and `changes`. Each change includes `rule_id`, `rule_name`, `location`, `severity`, `file_path`, and `priority_score`.
+* **`total_count`** — the combined count of added and removed findings. A `total_count` of `0` means the extension has no effect on the tested Project.
 
-Review the results to confirm that the removed findings match your expectations and that no unexpected findings were added. If the results are acceptable, create and publish the rule extension.
+Review the results to confirm that the removed findings match your expectations and that no unexpected findings were added. If the results are acceptable, create and publish the Rule Extension.
 {% endstep %}
 {% endstepper %}
