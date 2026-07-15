@@ -6,44 +6,11 @@ This page provides answers to common questions about using Rule Extensions, alon
 
 ### What entitlements and permissions do I need to use this feature?
 
-You must be an Enterprise customer with API entitlement and have the appropriate permissions configured through a custom role.
-
-#### Required permissions
-
-Rule Extensions are **managed at the Group level** and **tested at the Organization level**. Access is granted through a [custom role](https://docs.snyk.io/snyk-platform-administration/user-roles/custom-role-templates): create or edit a role and add only the permissions for the actions that the role needs to perform.
-
-You do **not** need every permission listed below. Grant only what the role requires:
-
-* A read-only reviewer needs **View Rule Extensions**, **View Groups**, and **View Organizations**.
-* A user who manages extensions also needs the **Create**, **Edit**, and/or **Delete** permissions.
-* A user who runs impact tests needs the Organization-level **Test Rule Extensions** permission.
-
-When you configure the custom role in the Snyk Web UI, the Group-level permissions appear under the **Rule Extensions Management** permission group.
-
-**Group-level permissions**
-
-These permissions control who can manage rule extensions for the Group. **View Rule Extensions** is the base permission: the Create, Edit, and Delete permissions each also require it.
-
-| Permission name        | Permission key                | Grants                                                                                                                            |
-| ---------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| View Rule Extensions   | `group.rule_extension.read`   | View the rule extensions in the Group. Required by all of the permissions below.                                                  |
-| Create Rule Extensions | `group.rule_extension.create` | Create new rule extensions in the Group.                                                                                          |
-| Edit Rule Extensions   | `group.rule_extension.edit`   | Update existing rule extensions in the Group.                                                                                     |
-| Delete Rule Extensions | `group.rule_extension.delete` | Permanently delete rule extensions from the Group.                                                                                |
-| View Groups            | `group.read`                  | View the Group that a rule extension belongs to. Required to manage Group-scoped rule extensions.                                 |
-| View Organizations     | `group.org.list`              | See the Organizations a rule extension applies to. Required because rule extensions are scoped to Organizations within the Group. |
-
-**Organization-level permission**
-
-This permission is only needed to use the impact testing API, which runs a rule extension against a Project to preview its results.
-
-| Permission name           | Permission key                          | Grants                                                                       |
-| ------------------------- | --------------------------------------- | ----------------------------------------------------------------------------- |
-| Test Rule Extensions | `org.rule_extension.project.test` | Run the impact test for a rule extension on a Project in the Organization. |
+You must be an Enterprise customer with API entitlement, and you need the appropriate permissions on a [custom role](https://docs.snyk.io/snyk-platform-administration/user-roles/user-role-management). The exact set depends on whether you access Rule Extensions through the API or the in-product UI — see [Rule Extensions permissions](rule-extensions-permissions.md) for the full breakdown.
 
 ### What are the API rate limits?
 
-The rate limits are 1 request per second, 10 requests per minute, and 100 requests per hour.
+Impact test requests — creating a test and retrieving its results — use a lower rate-limit bucket: **5 requests per second, 50 per minute, and 500 per hour**. All other Rule Extensions API endpoints use the standard Snyk REST API limits, which are considerably higher (currently 160 per second and 1,620 per minute). Exceeding a limit returns `429 Too Many Requests`.
 
 ### Which languages are supported by rules extensions?
 
@@ -85,6 +52,25 @@ This functionality is not currently available.
 ### Can I delete multiple extensions?
 
 You delete one rule extension at a time. Published extensions can only be deleted after all assignments are removed (see the [Assignments API](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments)).
+
+### What corner cases can stop a sanitizer from being recognized?
+
+A rule extension only takes effect when Snyk Code can resolve your function to its FQN in the data flow. The most common reasons it doesn't:
+
+* **Wildcard imports** (Java, Kotlin, Scala, C#) — `import pkg.*` prevents resolution. Use explicit imports.
+* **Relative imports** (JavaScript/TypeScript) — `import { clean } from '../utils'` does not resolve. Use an absolute module path or the npm package name.
+* **Implicit typing** — with type inference (for example, `val v = Validator()`), the engine cannot bind an instance method. Use an explicit type.
+* **Missing `global::` prefix** (C#, VB.NET) — the FQN must start with `global::`.
+* **Python decorators** — a function applied as a decorator (`@my_sanitizer`) cannot be used as a sanitizer.
+* **Go factory or interface returns** — methods on structs returned by interface factories often fail to resolve. Instantiate the struct directly.
+* **Chained or dynamic calls** (PHP, Ruby) — the FQN may resolve to the method name alone. Confirm with an impact test.
+* **Non-public functions** — sanitizers must be public or exported.
+
+See [Identify your sanitizer's FQN](identify-your-sanitizers-fqn.md) for per-language detail, and validate any uncertain case with [impact testing](impact-testing.md).
+
+### How do I choose the right sanitizer type?
+
+Match the type to how your function behaves — Flow Through (the return value is always clean), If True / If False (checked in a condition), or Any Usage (mutates in place or throws). Choosing **Any Usage** for a function that does not sanitize on every path can create **false negatives** by hiding a real vulnerability. When in doubt, run an impact test before publishing. See [Custom sanitizers](custom-sanitizers.md#types-of-sanitizers).
 
 ## Rule management
 
@@ -226,7 +212,7 @@ For further assistance, contact your account team or refer to the [Snyk document
 | Term                  | Definition                                                                                                                     |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | **FQN**               | Fully Qualified Name - the complete identifier for a function including namespace, class, and method name.                     |
-| **Rule Name**         | Lists all rules that the extension applies to.                                                                                 |
+| **Rule Key**          | The unique identifier of a Snyk Code rule that the extension applies to — the value used in the `rule_keys` API field. See [Supported rules](supported-rules.md). |
 | **Sanitizer**         | Name of the sanitizing function being added to Snyk Code rules.                                                                |
 | **Sanitization Type** | Specifies the expected behavior of the sanitizing function. See [Custom sanitizers](custom-sanitizers.md) for details.         |
 | **Scope**             | Where a published extension applies, as defined by [assignments](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments) to the Group or Organizations. |
