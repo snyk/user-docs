@@ -49,13 +49,18 @@ The rate limits are 1 request per second, 10 requests per minute, and 100 reques
 
 Rules extensions support most of the same languages as Snyk Code tests. The [Supported rules](supported-rules.md) page shows detailed support for combinations of rules, languages, and rule extensions. For more information on Snyk Code language support, refer to the [documentation](https://docs.snyk.io/supported-languages-package-managers-and-frameworks). For information about the roadmap, reach out to your account team.
 
+## Migrating from the closed beta
+
+If you used Rule Extensions during the closed beta, complete these steps for general availability:
+
+* **Move to the GA API endpoints.** The closed-beta API endpoints will be retired 30 days after general availability. The GA endpoints are available now — see the [API reference](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions).
+* **Update your custom-role permissions.** Grant your roles the `rule_extension.*` permissions they need, including **View Groups** and **View Organizations**. See [Required permissions](#required-permissions).
+
 ## Rule extensions
 
 ### How do I know if a rule extension is working, or the impact it is having?
 
-The best way to understand the impact of a rule extension is by using the [impact testing API](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests). Use the smallest practical project for the test.
-
-Snyk will be introducing **UI** functionality that allows you to test rule extension changes to a Project for the General Availability milestone.
+You can preview the impact of a rule extension in the Snyk Web UI or with the [impact testing API](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests). Use the smallest practical project for the test.
 
 ### What is the delay between publishing a rule extension and being able to see the results in a Code scan?
 
