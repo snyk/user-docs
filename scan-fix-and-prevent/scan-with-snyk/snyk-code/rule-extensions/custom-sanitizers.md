@@ -10,11 +10,13 @@ Here's when to use them:
 
 ### How custom sanitizers work
 
-Snyk automatically sanitizes discrete parameters to ensure security. Method inlining removes addressable functions, while ensuring that every argument is still sanitized.
+When you register a function as a custom sanitizer, Snyk Code treats the data it cleans or validates as safe. A taint flow that reaches a sink only after passing through your sanitizer is no longer reported, which removes the corresponding false positive. You tell Snyk Code *which* function to trust by its [fully qualified name (FQN)](identify-your-sanitizers-fqn.md), and *how* it cleans data by choosing a sanitizer type.
 
 ## Types of sanitizers
 
-### **Flow Through**
+### Flow Through
+
+_API `extension_type`: `flows_through_sanitizer`_
 
 Sanitize all the data that flows through the function. The return value of the function is always sanitized, even if the input parameters are not sanitized. These sanitizers turn unsanitized data into sanitized data.
 
@@ -56,7 +58,9 @@ public class CommentServlet extends HttpServlet {
 {% endtab %}
 {% endtabs %}
 
-### **If True**
+### If True
+
+_API `extension_type`: `if_true_sanitizer`_
 
 Arguments to these sanitizers are considered sanitized on ‌branches where the return value of the sanitizer is checked for trueness. These sanitizers are expected to be used in a condition.
 
@@ -102,7 +106,9 @@ public class ProfileServlet extends HttpServlet {
 {% endtab %}
 {% endtabs %}
 
-### **If False**
+### If False
+
+_API `extension_type`: `if_false_sanitizer`_
 
 Arguments to these sanitizers are considered sanitized on ‌branches where the return value of the sanitizer is checked for falseness. These sanitizers are expected to be used in a condition.
 
@@ -147,7 +153,9 @@ public class RedirectServlet extends HttpServlet {
 {% endtab %}
 {% endtabs %}
 
-### **Any Usage**
+### Any Usage
+
+_API `extension_type`: `any_usage_sanitizer`_
 
 Arguments to these sanitizers are considered sanitized after the execution of the sanitizer. This form of sanitizer is either expected to mutate data that a reference is passing, or throw exceptions if non-sanitized data is passed.
 

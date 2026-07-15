@@ -1,15 +1,19 @@
 # Configure Rule Extensions
 
+Rule Extensions are managed at the **Group** level in the Snyk Web UI, under **Group settings → Snyk Code**. You need the [UI access permissions](rule-extensions-permissions.md#permissions-for-ui-access) to reach these screens.
+
+<figure><img src="../../../.gitbook/assets/rule_extensions_shine_group_settings.png" alt="Rule Extensions under Group settings, Snyk Code in the Snyk Web UI"><figcaption>Rule Extensions in Group settings → Snyk Code</figcaption></figure>
+
 ## Create rule extension
 
 Add a custom sanitizer to an existing Snyk Code rule.
 
 1. Log in to the Snyk Web UI and select your [Group](https://docs.snyk.io/snyk-admin/groups-and-organizations).
-2. Navigate to **Rule extensions**.
+2. Navigate to **Group settings → Snyk Code → Rule extensions**.
 3.  Select **Create sanitizer** and define functional attributes:
 
     1. **Sanitizer**: Provide the fully qualified name (FQN). Need help identifying your FQN? See the [FQN identification guide](identify-your-sanitizers-fqn.md).
-    2. **Rule name**: Select one or more rules you want this extension to apply to. This is a Rule key as specified in the [Supported rules](supported-rules.md) page.
+    2. **Rule key**: Select one or more rules you want this extension to apply to. This is a Rule key as specified in the [Supported rules](supported-rules.md) page.
     3. **Sanitization type**: Select one of the four ways your function sanitizes data. For more details, see [Custom sanitizers](custom-sanitizers.md).
 
     <figure><img src="../../../.gitbook/assets/rule_extensions_add_sanitizer.png" alt="Add sanitizer as a rule extension in Snyk Code" width="378"><figcaption><p>Add sanitizer as a rule extension in Snyk Code</p></figcaption></figure>

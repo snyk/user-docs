@@ -1,10 +1,10 @@
-# Impact Testing
+# Impact testing
 
-The Impact Testing API lets you understand how a proposed rule extension would change findings for a Snyk Code Project before you publish it. The test runs your extension against the Project and returns a list of findings that would be added or removed.
+Impact testing lets you understand how a proposed rule extension would change findings for a Snyk Code Project before you publish it. It runs your extension against the Project and returns the findings that would be added or removed. Impact testing is available both in the Snyk Web UI and through the API; this page covers the API workflow.
 
 {% hint style="info" %}
 * Impact testing is for proposed changes only. You cannot run an impact test against a rule extension that already exists.
-* Select the smallest relevant Project for your first test so you can evaluate changes quickly. Rate limits are one request per second, 10 per minute, and 100 per hour.
+* Select the smallest relevant Project for your first test so you can evaluate changes quickly. Impact test requests are rate-limited to 5 per second, 50 per minute, and 500 per hour.
 {% endhint %}
 
 For request and response schemas, see the [Impact Testing API reference](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests).
