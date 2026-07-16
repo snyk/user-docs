@@ -8,6 +8,14 @@ description: Recent updates to Snyk products and documentation, including new fe
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## July 2026
+
+### Snyk CLI
+
+We are pleased to announce the latest stable Snyk CLI release, v1.1306.0.
+
+We are introducing the following key improvements in this version. To learn more about bug fixes and additional enhancements beyond what is highlighted below, please reference the full release notes.
+
 ## June 2026
 
 ### Snyk CLI
