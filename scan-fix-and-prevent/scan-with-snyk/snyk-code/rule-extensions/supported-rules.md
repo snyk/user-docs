@@ -4,7 +4,7 @@ Select your language to see the rules that support custom sanitizers.
 
 {% tabs %}
 {% tab title="Apex" %}
-| Rule ID               | Rule name                                        |
+| Rule Key              | Rule name                                        |
 | --------------------- | ------------------------------------------------ |
 | CommandInjection      | Command Injection                                |
 | EmailContentInjection | Improper Access Control: Email Content Injection |
@@ -19,7 +19,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="C/C++" %}
-| Rule ID                    | Rule name                                                         |
+| Rule Key                   | Rule name                                                         |
 | -------------------------- | ----------------------------------------------------------------- |
 | ClientSideRequestForgery   | Client-Side Request Forgery                                       |
 | CodeInjection              | Code Injection                                                    |
@@ -39,7 +39,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="C#" %}
-| Rule ID                    | Rule name                                                         |
+| Rule Key                   | Rule name                                                         |
 | -------------------------- | ----------------------------------------------------------------- |
 | CleartextCookieStorage     | Cleartext Storage of Sensitive Information in a Cookie            |
 | CodeInjection              | Code Injection                                                    |
@@ -63,15 +63,15 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="Dart" %}
-| Rule ID | Rule name                                              |
-| ------- | ------------------------------------------------------ |
-| OR      | Open Redirect                                          |
-| PT      | Path Traversal                                         |
-| ZipSlip | Arbitrary File Write via Archive Extraction (Zip Slip) |
+| Rule Key | Rule name                                              |
+| -------- | ------------------------------------------------------ |
+| OR       | Open Redirect                                          |
+| PT       | Path Traversal                                         |
+| ZipSlip  | Arbitrary File Write via Archive Extraction (Zip Slip) |
 {% endtab %}
 
 {% tab title="Go" %}
-| Rule ID               | Rule name                                                      |
+| Rule Key              | Rule name                                                      |
 | --------------------- | -------------------------------------------------------------- |
 | ClearTextLogging      | Clear Text Logging                                             |
 | CommandInjection      | Command Injection                                              |
@@ -87,7 +87,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="Groovy" %}
-| Rule ID                  | Rule name                          |
+| Rule Key                 | Rule name                          |
 | ------------------------ | ---------------------------------- |
 | CodeInjection            | Code Injection                     |
 | CommandInjection         | Command Injection                  |
@@ -100,7 +100,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="Java" %}
-| Rule ID                    | Rule name                                                  |
+| Rule Key                   | Rule name                                                  |
 | -------------------------- | ---------------------------------------------------------- |
 | CodeInjection              | Code Injection                                             |
 | CommandInjection           | Command Injection                                          |
@@ -131,7 +131,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="JavaScript" %}
-| Rule ID                  | Rule name                                                      |
+| Rule Key                 | Rule name                                                      |
 | ------------------------ | -------------------------------------------------------------- |
 | CodeInjection            | Code Injection                                                 |
 | CommandInjection         | Command Injection                                              |
@@ -159,7 +159,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="Kotlin" %}
-| Rule ID                    | Rule name                                                  |
+| Rule Key                   | Rule name                                                  |
 | -------------------------- | ---------------------------------------------------------- |
 | CodeInjection              | Code Injection                                             |
 | CommandInjection           | Command Injection                                          |
@@ -188,7 +188,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="PHP" %}
-| Rule ID               | Rule name                                              |
+| Rule Key              | Rule name                                              |
 | --------------------- | ------------------------------------------------------ |
 | CodeInjection         | Code Injection                                         |
 | CommandInjection      | Command Injection                                      |
@@ -209,7 +209,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="Python" %}
-| Rule ID                   | Rule name                                                      |
+| Rule Key                  | Rule name                                                      |
 | ------------------------- | -------------------------------------------------------------- |
 | BrokenUserAuthentication  | Broken User Authentication                                     |
 | CodeInjection             | Code Injection                                                 |
@@ -231,7 +231,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="Ruby" %}
-| Rule ID             | Rule name                                                      |
+| Rule Key            | Rule name                                                      |
 | ------------------- | -------------------------------------------------------------- |
 | CommandInjection    | Command Injection                                              |
 | Deserialization     | Deserialization of Untrusted Data                              |
@@ -247,7 +247,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="Rust" %}
-| Rule ID          | Rule name                          |
+| Rule Key         | Rule name                          |
 | ---------------- | ---------------------------------- |
 | CommandInjection | Command Injection                  |
 | OR               | Open Redirect                      |
@@ -258,7 +258,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="Scala" %}
-| Rule ID                    | Rule name                                                  |
+| Rule Key                   | Rule name                                                  |
 | -------------------------- | ---------------------------------------------------------- |
 | CodeInjection              | Code Injection                                             |
 | CommandInjection           | Command Injection                                          |
@@ -283,7 +283,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="Swift" %}
-| Rule ID          | Rule name                           |
+| Rule Key         | Rule name                           |
 | ---------------- | ----------------------------------- |
 | CodeInjection    | Code Injection                      |
 | CommandInjection | Command Injection                   |
@@ -296,7 +296,7 @@ Select your language to see the rules that support custom sanitizers.
 {% endtab %}
 
 {% tab title="VB.NET" %}
-| Rule ID               | Rule name                                                 |
+| Rule Key              | Rule name                                                 |
 | --------------------- | --------------------------------------------------------- |
 | CodeInjection         | Code Injection                                            |
 | CommandInjection      | Command Injection                                         |

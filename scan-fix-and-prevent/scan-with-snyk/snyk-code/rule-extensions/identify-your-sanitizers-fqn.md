@@ -482,7 +482,7 @@ class XSSFilter {
 
 For some call patterns—especially chained instance method calls—the engine
 may resolve the sanitizer to the method name alone. Validate the FQN with
-the [Impact Testing API](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests).
+the [Impact Testing API](https://apidocs.snyk.io/?version=2026-03-25#post-/groups/-group_id-/sast/rule_extensions/tests).
 
 **Example 1: Static call on a namespaced class**
 
@@ -840,7 +840,7 @@ For more information on permissions and usage, see
 5. **PHP namespace separators**: Use backslashes (`\`), not dots, in PHP FQNs
 6. **Chained or dynamic calls (PHP, Ruby)**: The engine may resolve to the
    method name only—validate with the
-   [Impact Testing API](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests)
+   [Impact Testing API](https://apidocs.snyk.io/?version=2026-03-25#post-/groups/-group_id-/sast/rule_extensions/tests)
 
 ### Still having issues?
 
@@ -850,7 +850,7 @@ If your sanitizer meets all requirements but still isn't recognized:
 2. Check that the function name matches exactly (case-sensitive)
 3. Ensure the function is called with explicit types (where applicable)
 4. Review the language-specific limitations in the tabs above
-5. Run an [Impact Testing API](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests) test to
+5. Run an [Impact Testing API](https://apidocs.snyk.io/?version=2026-03-25#post-/groups/-group_id-/sast/rule_extensions/tests) test to
    confirm the FQN and sanitization type
 6. Contact your Snyk account team or [Snyk support](https://support.snyk.io/s/) for assistance
 
