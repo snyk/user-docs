@@ -12,9 +12,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk CLI
 
-We are pleased to announce the latest stable Snyk CLI release, v1.1306.0.
-
-We are introducing the following key improvements in this version. To learn more about bug fixes and additional enhancements beyond what is highlighted below, please reference the full release notes.
+The latest stable Snyk CLI release is v1.1306.0. This version introduces the following improvements. For bug fixes and other enhancements, see the [release notes](https://github.com/snyk/cli/releases/tag/v1.1306.0)>).
 
 ## June 2026
 
