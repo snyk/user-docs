@@ -20,14 +20,14 @@ Rule Extensions support most of the same languages as Snyk Code tests. The [Supp
 
 If you used Rule Extensions during the closed beta, complete these steps for general availability:
 
-* **Move to the GA API endpoints.** The closed-beta API endpoints will be retired 30 days after general availability. The GA endpoints are available now — see the [API reference](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions).
+* **Move to the GA API endpoints.** The closed-beta API endpoints will be retired 30 days after general availability. The GA endpoints are available now — see the [API reference](https://apidocs.snyk.io/?version=2026-03-25#get-/groups/-group_id-/sast/rule_extensions).
 * **Update your custom-role permissions.** Grant your roles the `rule_extension.*` permissions they need, including **View Groups** and **View Organizations**. See [Rule Extensions permissions](rule-extensions-permissions.md).
 
 ## Rule Extensions
 
 ### How do I know if a Rule Extension is working, or the impact it is having?
 
-You can preview the impact of a Rule Extension in the Snyk Web UI or with the [impact testing API](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions-tests). Use the smallest practical project for the test.
+You can preview the impact of a Rule Extension in the Snyk Web UI or with the [impact testing API](impact-testing.md). Use the smallest practical project for the test.
 
 ### What is the delay between publishing a Rule Extension and being able to see the results in a Code scan?
 
@@ -39,7 +39,7 @@ A delay of up to 9 hours can occur before a Rule Extension is recognized when Sn
 
 ### Can I apply the Rule Extension to a Group or an Organization?
 
-A Rule Extension only affects scans where it is published and has an assignment to that scope. Use the [Assignments API](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments) to assign a published extension to the whole Group or to specific Organizations under the Group.
+A Rule Extension only affects scans where it is published and has an assignment to that scope. Use the [Assignments API](https://apidocs.snyk.io/?version=2026-03-25#post-/groups/-group_id-/rule_extensions/assignments) to assign a published extension to the whole Group or to specific Organizations under the Group.
 
 ### Is there a limit to the number of Rule Extensions I can create?
 
@@ -51,7 +51,7 @@ This functionality is not currently available.
 
 ### Can I delete multiple extensions?
 
-You delete one Rule Extension at a time. Published extensions can only be deleted after all assignments are removed (see the [Assignments API](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments)).
+You delete one Rule Extension at a time. Published extensions can only be deleted after all assignments are removed (see the [Assignments API](https://apidocs.snyk.io/?version=2026-03-25#post-/groups/-group_id-/rule_extensions/assignments)).
 
 ### What corner cases can stop a sanitizer from being recognized?
 
@@ -76,7 +76,7 @@ Match the type to how your function behaves — Flow Through (the return value i
 
 ### What is the difference between `published` and `draft` for Rule Extensions?
 
-* **Published** means the extension can be assigned and applied to Snyk Code scans (together with [assignments](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments)).
+* **Published** means the extension can be assigned and applied to Snyk Code scans (together with [assignments](https://apidocs.snyk.io/?version=2026-03-25#post-/groups/-group_id-/rule_extensions/assignments)).
 * **Draft** keeps the configuration saved but it is not applied to scans until you publish it.
 
 ### Can published Rule Extensions be changed to draft?
@@ -85,11 +85,11 @@ Published Rule Extensions cannot be changed to draft. Create a new Rule Extensio
 
 ### How do I publish my draft Rule Extensions?
 
-They can be created as published using the [Create a Rule Extension](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#post-groups-group_id-sast-rule_extensions) endpoint, or created as `draft` and later published with the [Update a Rule Extension by Rule Extension ID](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#patch-groups-group_id-sast-rule_extensions-rule_extension_id) endpoint by setting `attributes.status` to `published`.
+They can be created as published using the [Create a Rule Extension](https://apidocs.snyk.io/?version=2026-03-25#post-/groups/-group_id-/sast/rule_extensions) endpoint, or created as `draft` and later published with the [Update a Rule Extension by Rule Extension ID](https://apidocs.snyk.io/?version=2026-03-25#patch-/groups/-group_id-/sast/rule_extensions/-rule_extension_id-) endpoint by setting `attributes.status` to `published`.
 
 ### What data can I update for a rule?
 
-The [Update a Rule Extension by Rule Extension ID](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#patch-groups-group_id-sast-rule_extensions-rule_extension_id) endpoint supports partial updates to `description`, `configuration` (sanitization `type` and `rule_keys`), and `status`. For **draft** extensions, you can also update `signature` (including `fully_qualified_name`). For **published** extensions, you **cannot** update `signature`.
+The [Update a Rule Extension by Rule Extension ID](https://apidocs.snyk.io/?version=2026-03-25#patch-/groups/-group_id-/sast/rule_extensions/-rule_extension_id-) endpoint supports partial updates to `description`, `configuration` (sanitization `type` and `rule_keys`), and `status`. For **draft** extensions, you can also update `signature` (including `fully_qualified_name`). For **published** extensions, you **cannot** update `signature`.
 
 ### What do the different sanitizer types mean?
 
@@ -101,7 +101,7 @@ Deleted Rule Extensions cannot be recovered. If a Rule Extension is deleted, you
 
 ### Can I change the fully qualified function name?
 
-* For draft extensions, you can use the [Update a Rule Extension by Rule Extension ID](https://docs.snyk.io/developer-tools/snyk-api/reference/sastruleextensions#patch-groups-group_id-sast-rule_extensions-rule_extension_id) endpoint `signature` attribute to specify a new FQN.
+* For draft extensions, you can use the [Update a Rule Extension by Rule Extension ID](https://apidocs.snyk.io/?version=2026-03-25#patch-/groups/-group_id-/sast/rule_extensions/-rule_extension_id-) endpoint `signature` attribute to specify a new FQN.
 * For published extensions, the signature cannot be updated. Create a new Rule Extension with the desired FQN and remove the old one when it is no longer needed.
 
 ### Best practices for custom sanitizers
@@ -215,5 +215,5 @@ For further assistance, contact your account team or refer to the [Snyk document
 | **Rule Key**          | The unique identifier of a Snyk Code rule that the extension applies to — the value used in the `rule_keys` API field. See [Supported rules](supported-rules.md). |
 | **Sanitizer**         | Name of the sanitizing function being added to Snyk Code rules.                                                                |
 | **Sanitization Type** | Specifies the expected behavior of the sanitizing function. See [Custom sanitizers](custom-sanitizers.md) for details.         |
-| **Scope**             | Where a published extension applies, as defined by [assignments](https://docs.snyk.io/developer-tools/snyk-api/reference/assignments) to the Group or Organizations. |
+| **Scope**             | Where a published extension applies, as defined by [assignments](https://apidocs.snyk.io/?version=2026-03-25#post-/groups/-group_id-/rule_extensions/assignments) to the Group or Organizations. |
 | **Status**            | Specifies whether the Rule Extension has been saved as a draft or published for test execution.                                |
