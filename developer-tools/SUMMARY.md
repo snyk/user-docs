@@ -6,6 +6,8 @@
 ## Integrations
 
 * [Overview](integrations/integrate-with-snyk.md)
+* [Snyk Remote MCP](integrations/snyk-remote-mcp/README.md)
+  * [Snyk Remote MCP tools](integrations/snyk-remote-mcp/available-tools.md)
 * [SCMs](scm-integrations/README.md)
   * [Deployment recommendations](scm-integrations/deployment-recommendations.md)
   * [Workspaces](scm-integrations/workspaces.md)

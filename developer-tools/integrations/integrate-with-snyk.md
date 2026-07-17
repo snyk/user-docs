@@ -18,12 +18,14 @@ Snyk provides information about:
 * [Usage analytics](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/usage-analytics)
 
 {% hint style="info" %}
-**Feature availability**
-
-Snyk does not offer a hosted, remote version of its MCP server.
-
-The Snyk MCP Server is designed as a local MCP server, running on your system using the Snyk CLI to ensure local file access
+The Snyk MCP Server provided by Snyk Studio runs locally through the Snyk CLI. It can access local files and run Snyk scans during development.
 {% endhint %}
+
+## Snyk Remote MCP
+
+[Snyk Remote MCP](snyk-remote-mcp/) is a hosted, read-only MCP server for querying data that is already available in Snyk. It allows compatible AI assistants to explore Organizations, Projects, issues, dependencies, SBOMs, and security reports without installing the Snyk CLI or providing access to local source code.
+
+Use Snyk Studio when you want an AI assistant to scan a local workspace. Use Snyk Remote MCP when you want an AI assistant to investigate existing Snyk data.
 
 ## Integrations for Snyk
 
