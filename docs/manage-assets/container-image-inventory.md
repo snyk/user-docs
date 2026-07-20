@@ -9,7 +9,8 @@ Instead of navigating a fragmented set of per-scan Projects, you get one authori
 | **Unified asset list** | View all unique container images across your Organization or Group in one place |
 | **Deduplicated issue counts** | Issues from multiple scan sources are merged — no more inflated counts |
 | **Version grouping** | Group images by repository to explore the full version history of an image |
-| **Search and filter** | Filter by registry, image repository, tag, image labels, digest, class, and more |
+| **Filter** | Filter by registry, image repository, tag, image labels, digest, class, and more |
+| **Search** | Quickly find an image by matching against the beginning of the asset name |
 | **Base image fix recommendations** | View base image upgrade recommendations with impact analysis |
 | **Related Projects** | See all Snyk Projects linked to a single container image asset in one place |
 
@@ -17,14 +18,14 @@ Instead of navigating a fragmented set of per-scan Projects, you get one authori
 
 Container image inventory identifies each unique image by its **Registry + Repository + Config Digest**. Because this identity is based on the immutable config digest rather than a mutable tag, one image scanned from the CLI, a container registry, and a Kubernetes workload appears as a single asset — not three separate Projects.
 
-Issues from all scan sources are merged and deduplicated, so you see one count per unique vulnerability rather than inflated totals from overlapping scans. Images are grouped by repository, giving you a version history view where you can compare build dates, risk scores, and issue counts across digests and spot regressions over time. Each asset also surfaces key metadata — tags, inferred base image, test surface, and last scan date — in one place.
+Issues from all scan sources are merged and deduplicated, so you see one count per unique vulnerability rather than inflated totals from overlapping scans. Images are grouped by image repository (registry and repository), giving you a version history view where you can compare build dates, risk scores, and issue counts across digests and spot regressions over time. Each asset also surfaces key metadata — tags, inferred base image, test surface, and last scan date — in one place.
 
 ## What you need to do
 
 Depending on how you scan containers, you may need to take the following steps to ensure your images appear in the inventory:
 
-- **CLI users** — Upgrade to the latest Snyk CLI (which bundles an updated snyk-docker-plugin) and re-run `snyk container monitor` for your images.
-- **Container Registry integrations** — Newly imported images automatically populate the inventory. For existing Projects, assets appear when a new image digest is pushed to a monitored tag.
+- **CLI users** — Upgrade to Snyk CLI version 1.1303.0 or later (which bundles an updated snyk-docker-plugin) and re-run `snyk container monitor` for your images.
+- **Container Registry integrations** — Newly imported images automatically populate the inventory. Existing Projects appear in the inventory when they are retested, either manually from the UI or on a recurring test schedule.
 - **Kubernetes (`snyk-monitor`)** — Upgrade `snyk-monitor` in your cluster to a version bundled with the updated snyk-docker-plugin, then redeploy your application to the cluster.
 
 {% hint style="warning" %}
@@ -74,7 +75,7 @@ To see all assets in a single flat list instead of grouped by repository, click 
 
 ![The ungrouped flat view showing individual assets with all columns.](../.gitbook/assets/container-inventory-flat-view.png)
 
-You can sort the flat view by build date, score, issue count, last scan, class, discovered, or updated — in ascending or descending order — using the sort control in the top-right corner.
+You can sort the flat view by build date, score, issue count, last scan, class, discovered, or updated — in ascending or descending order — using the sort control in the top-right corner. Sorting currently applies to the flat view; support for sorting the grouped view is planned for a future release.
 
 ### Filter and search
 
@@ -88,19 +89,17 @@ Click **Add filter** to open the filter panel. Filters are additive (combined wi
 | **Image labels** | Filter by image label key/value pairs |
 | **Image tag** | Filter by image tags |
 | **Index digest** | Filter by index digest |
-| **Labels** | Filter by Snyk asset labels |
 | **Manifest digest** | Filter by manifest digest |
 | **Registry** | Filter by container registry hostname |
 | **Repository** | Filter by image repository |
-| **Tags** | Filter by Snyk asset tags |
 | **Type** | Filter by asset type |
 
 ![The filter panel showing all available filter dimensions.](../.gitbook/assets/container-inventory-filter-panel.png)
 
-A **search bar** is also available in the top-right corner. Search matches across asset name, image tags, registry, repository, and digests.
+A **search bar** is also available in the top-right corner. Search uses prefix matching against the asset name field: it matches only from the beginning of the string, so entering text that appears in the middle of an asset name will not return a match.
 
 {% hint style="info" %}
-The search bar matches from the beginning of the asset name field. If you cannot find a specific image, try using the **Repository** or **Image tag** filters instead.
+Because the search bar matches from the beginning of the asset name field, searching for a partial name or tag from the middle of a string will not find it. If you cannot find a specific image, try using the **Repository** or **Image tag** filters instead.
 {% endhint %}
 
 ### Asset details
@@ -120,8 +119,6 @@ The Overview tab is split into two sections.
 - **Last seen** — When Snyk last confirmed the asset exists in your environment
 - **Last tested** — When Snyk last scanned the asset
 - **Source** — The origin of the asset
-- **Tags** — Snyk asset tags
-- **Labels** — Snyk asset labels
 
 **Container Image Details** (right side) displays image-specific metadata:
 
@@ -227,7 +224,7 @@ The existing Projects view for containers remains unchanged.
 | :--- | :--- |
 | **Search scope** | The search bar matches from the beginning of the asset name field. Searching for a partial image name or tag within a longer string may not return expected results. Use the **Repository** or **Image tag** filters for more precise lookups. |
 | **CLI scans without a registry hostname** | Images scanned directly from a tar file (`snyk container test image.tar`) may not associate with their registry counterpart because the registry field is null. |
-| **Mutable asset fields** | Fields such as class, tags, labels, and owner cannot be edited directly in the UI in this milestone. Editing is planned for a future release. |
+| **Mutable asset fields** | Fields such as class and owner cannot be edited directly in the UI in this milestone. Editing is planned for a future release. |
 | **Tag staleness** | Because tags are scoped per discovery source, two assets in the same repository could temporarily show the same tag if a discovery source has not yet been refreshed. This can cause the inventory to show images that no longer carry the `latest` tag in your Projects view. |
 | **Backfilling existing Projects** | Not all existing Projects have the metadata required to compute the new asset identity. CLI and Kubernetes users must upgrade to the latest Snyk CLI or `snyk-monitor` and re-scan to populate the inventory for existing images. |
 | **Base image inference** | Base image detection is heuristic-based (parsing the Dockerfile if present, or matching layer hashes against a known image index). Results may vary across Projects that scanned the same image differently (for example, with or without the Dockerfile). |
