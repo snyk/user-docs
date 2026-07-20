@@ -88,7 +88,7 @@ Replace the URL with the endpoint for your Snyk region.
 
 On first use, the MCP client opens an authorization page in your browser.
 
-1. Sign in to the Snyk Web UI for the same region as the configured MCP endpoint.
+1. Log in to the Snyk Web UI for the same region as the configured MCP endpoint.
 2. Review the requested Snyk App permissions.
 3. Approve the app.
 4. Return to the MCP client and use a Snyk Remote MCP tool.
@@ -105,15 +105,15 @@ The service requests the following read scopes:
 | `org.collection.read`       | Project collections                                     |
 | `org.container_image.read`  | Container image inventory                               |
 
-The service validates the Snyk access token before every MCP request and uses that token for calls to the Snyk API. A read scope does not override Snyk roles, plan entitlements, or Early Access requirements. For example, Group data, audit logs, and batch package testing may not be available to every authorizing identity.
+The service validates the Snyk access token before every MCP request and uses that token for calls to the Snyk API. A read scope does not override Snyk roles, plan entitlements, or Early Access requirements. For example, Group data, audit logs, and batch package testing are not available to every authorizing identity.
 
-To review or revoke access, navigate to your personal **Account Settings** and select **Authorized Snyk Apps**. For more information, see [Managing Snyk Apps from the UI](../../snyk-api/using-specific-snyk-apis/snyk-apps-apis/about-snyk-apps.md#managing-snyk-apps-from-the-ui).
+To review or revoke access, navigate to your personal **Account Settings** and select **Authorized Snyk Apps**. Visit [Managing Snyk Apps from the UI](../../snyk-api/using-specific-snyk-apis/snyk-apps-apis/about-snyk-apps.md#managing-snyk-apps-from-the-ui) for more information.
 
 ## Available tools
 
 Snyk Remote MCP advertises 25 tools. These include discovery and raw-data tools, as well as reporting tools that combine Snyk API data into prioritized Markdown and structured results.
 
-For the complete catalog and current limits, see [Snyk Remote MCP tools](available-tools.md).
+Visit [Snyk Remote MCP tools](available-tools.md) for the complete catalog and current limits.
 
 ## Work with tool results
 

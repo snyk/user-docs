@@ -566,7 +566,7 @@ A Snyk product. Enables developers to find hardcoded credentials in repositories
 
 ### Snyk Remote MCP
 
-A hosted, read-only MCP server that allows compatible AI assistants to query existing Snyk data, including Organizations, Projects, issues, dependencies, and security reports. It does not require the Snyk CLI or access to local source code. See [Snyk Remote MCP](https://docs.snyk.io/developer-tools/integrations/snyk-remote-mcp).
+A hosted, read-only MCP server that allows compatible AI assistants to query existing Snyk data, including Organizations, Projects, issues, dependencies, and security reports. It does not require the Snyk CLI or access to local source code. Visit [Snyk Remote MCP](https://docs.snyk.io/developer-tools/integrations/snyk-remote-mcp) for more information.
 
 ### Snyk Studio
 
