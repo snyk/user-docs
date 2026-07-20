@@ -8,6 +8,12 @@ description: Recent updates to Snyk products and documentation, including new fe
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## August 2026
+
+### Snyk supported languages
+
+* COBOL is now in General Availability. Code analysis support for COBOL with Snyk Code is available on all plans, across SCM integrations and Snyk CLI, IDE, and CI/CD. Visit [COBOL](https://docs.snyk.io/supported-languages/supported-languages-list/cobol) and [COBOL rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules/cobol-rules) for more details.
+
 ## June 2026
 
 ### Snyk CLI

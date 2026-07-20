@@ -4,10 +4,6 @@ description: Snyk Code security rules for COBOL
 
 # COBOL rules
 
-{% hint style="info" %}
-Code analysis support for COBOL is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
-{% endhint %}
-
 Each rule includes the following information.
 
 * **Rule Name**: The Snyk name of the rule.
