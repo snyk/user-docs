@@ -4,7 +4,7 @@ coverY: 0
 description: Recent updates to Snyk products and documentation, including new features, changes, and knowledge base improvements
 ---
 
-# What's new?
+# What's new
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
