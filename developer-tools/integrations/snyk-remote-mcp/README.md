@@ -4,7 +4,7 @@ description: Use Snyk Remote MCP to query existing Snyk data from AI assistants 
 
 # Snyk Remote MCP
 
-Snyk Remote MCP is a hosted [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server. It connects compatible AI assistants to read-only Snyk tools for exploring Organizations, Projects, issues, dependencies, software bills of materials (SBOMs), and other data that is already available in Snyk.
+Snyk Remote MCP is a hosted [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server. It connects compatible AI assistants to read-only Snyk tools for exploring Organizations, Projects, issues, dependencies, software bills of materials (SBOMs), security reports, and remediation workflows that use data already available in Snyk.
 
 Snyk Remote MCP uses Snyk Apps OAuth 2.0 with Proof Key for Code Exchange (PKCE). You authorize access in the Snyk Web UI instead of copying a Snyk API token into the MCP client.
 
@@ -30,8 +30,10 @@ Use Snyk Remote MCP to ask questions such as:
 * Which issues have a concrete remediation?
 * How does issue-instance risk compare across Organizations in a Group?
 * Which Projects, targets, collections, or container images are available?
-* What dependencies or SBOM components were captured in the latest monitored Project snapshot?
+* Which components in an existing Project SBOM have open package vulnerabilities or fixes?
 * Is a specific package version affected by known vulnerabilities?
+* What evidence is available to hand an issue off to Snyk Studio for local remediation?
+* Has Snyk observed an issue as resolved after updated scan results reached Snyk?
 
 Use the [Snyk MCP Server and Snyk Studio](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio) when you want an AI assistant to scan files in a local workspace. You can configure both MCP servers in the same client.
 
@@ -111,21 +113,27 @@ To review or revoke access, navigate to your personal **Account Settings** and s
 
 ## Available tools
 
-Snyk Remote MCP advertises 25 tools. These include discovery and raw-data tools, as well as reporting tools that combine Snyk API data into prioritized Markdown and structured results.
+Snyk Remote MCP advertises 28 tools. These include discovery and raw-data tools, as well as reporting and workflow tools that combine Snyk API data into prioritized Markdown and structured results.
 
 Visit [Snyk Remote MCP tools](available-tools.md) for the complete catalog and current limits.
 
 ## Work with tool results
 
-List tools return one bounded page and include `has_more` and `next_cursor` when more data is available. The default page size is 50. A custom page size must be between 10 and 100 and a multiple of 10. This page-size constraint does not limit the total number of issues that can be retrieved.
+Paginated tools return one bounded page and include `has_more` and `next_cursor` when more data is available. The default page size is 50. A custom page size must be between 10 and 100 and a multiple of 10. This page-size constraint does not limit the total number of records that can be retrieved.
 
-List tools use `view: "summary"` by default to reduce the amount of data sent to the AI assistant. Use `view: "full"` only when you need the complete Snyk API resource.
+Paginated tools use `view: "summary"` by default to reduce the amount of data sent to the AI assistant. Use `view: "full"` only when you need the complete Snyk API resource.
 
-Each tool returns stable MCP `structuredContent` and a JSON text representation for compatibility with different clients. Reporting tools also return a concise `markdown` field. When pagination, result limits, permissions, or failed enrichment can affect a conclusion, results include fields such as `coverage`, `truncated`, `has_more`, and `warnings`.
+Each tool returns stable MCP `structuredContent` and a JSON text representation for compatibility with different clients. Reporting and workflow tools also return a concise `markdown` field. When pagination, result limits, permissions, or failed enrichment can affect a conclusion, results include fields such as `coverage`, `truncated`, `has_more`, and `warnings`.
 
 {% hint style="warning" %}
 Issue reports count issue instances. One vulnerability or rule can produce multiple issue instances when it affects multiple Projects or scan items.
 {% endhint %}
+
+The remediation verification workflow reports only the current state observed in Snyk. It cannot prove that a local Snyk Studio scan ran, and an issue that is not observable is not reported as resolved.
+
+## Understand investigation boundaries
+
+Snyk Remote MCP provides audit logs, cloud issue filters, container inventory, and risk reports as separate evidence. It does not expose a unified attack-path or runtime graph and does not infer deployment causality or blast radius. If an MCP client correlates external SIEM or ticketing data, conclusions must preserve source attribution and distinguish external evidence from Snyk observations.
 
 ## Troubleshooting
 
