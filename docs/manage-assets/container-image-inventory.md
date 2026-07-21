@@ -52,14 +52,19 @@ By default, the inventory groups assets by **Image repository** (Registry + Repo
 
 ![The default grouped inventory view. Each repository row shows the number of images, latest build date, risk score, and issue severity breakdown.](../.gitbook/assets/container-inventory-grouped-view.png)
 
-Groups are sorted alphabetically by image name by default. You can expand any group to reveal the individual image assets within it. Each asset row within the group displays:
+{% hint style="info" %}
+Risk score is shown in both the asset table and the issues table only if your Group or Organization has enabled **Risk score** under **Snyk Preview** settings and your Projects have been re-scanned since it was enabled. If risk score is not enabled, the score columns will not be populated.
+{% endhint %}
+
+Groups are sorted by most recent build date by default. You can expand any group to reveal the individual image assets within it. Each asset row within the group displays:
 
 | Column | Description |
 | :--- | :--- |
 | **Asset name** | Registry, repository, and a short config digest identifier (for example, `alpine-base@a23a90a4`) |
+| **Class** | The asset classification (A through E). Class is configurable. |
 | **Image tags** | The distinct set of tags seen across all discovery sources for this asset |
 | **Build date** | The date the image was built |
-| **Score** | The maximum risk/priority score across all related Snyk Project discovery sources |
+| **Score** | The maximum risk score across all related Snyk Project discovery sources |
 | **Issues** | The summed issue counts across discovery sources, broken down by severity (critical, high, medium, low) |
 | **Coverage** | Security testing and scan engine coverage |
 | **Test surface** | The distinct set of test surfaces (for example, CLI, container registry, Kubernetes) |
@@ -92,14 +97,13 @@ Click **Add filter** to open the filter panel. Filters are additive (combined wi
 | **Manifest digest** | Filter by manifest digest |
 | **Registry** | Filter by container registry hostname |
 | **Repository** | Filter by image repository |
-| **Type** | Filter by asset type |
 
 ![The filter panel showing all available filter dimensions.](../.gitbook/assets/container-inventory-filter-panel.png)
 
-A **search bar** is also available in the top-right corner. Search uses prefix matching against the asset name field: it matches only from the beginning of the string, so entering text that appears in the middle of an asset name will not return a match.
+A **search bar** is also available in the top-right corner. Search uses prefix matching against the asset name field: it matches only from the beginning of the string, so entering text that appears in the middle of an asset name will not return a match. The asset name field includes the registry and repository (where present), so you must search from the start of that prefix — for example, `docker.io/snyk/kubernetes` matches the `kubernetes-monitor` asset, but `kubernetes` on its own does not.
 
 {% hint style="info" %}
-Because the search bar matches from the beginning of the asset name field, searching for a partial name or tag from the middle of a string will not find it. If you cannot find a specific image, try using the **Repository** or **Image tag** filters instead.
+Because the search bar matches from the beginning of the asset name field (including the registry and repository prefix), searching for a partial name or tag from the middle of a string will not find it. If you cannot find a specific image, try using the **Repository** or **Image tag** filters instead.
 {% endhint %}
 
 ### Asset details
@@ -119,6 +123,7 @@ The Overview tab is split into two sections.
 - **Last seen** — When Snyk last confirmed the asset exists in your environment
 - **Last tested** — When Snyk last scanned the asset
 - **Source** — The origin of the asset
+- **Test surface** — The distinct set of test surfaces for this asset (for example, CLI, container registry, Kubernetes)
 
 **Container Image Details** (right side) displays image-specific metadata:
 
@@ -150,7 +155,7 @@ Below the summary, a table lists each issue with the following columns:
 | Column | Description |
 | :--- | :--- |
 | **Severity** | The severity level (critical, high, medium, low) |
-| **Score** | The risk/priority score for this specific issue |
+| **Score** | The risk score for this specific issue |
 | **Issue** | The vulnerability name and CVE identifier |
 | **Affected package** | The package introducing the vulnerability |
 | **Exploitable** | Whether the issue has a known exploit |
@@ -183,7 +188,7 @@ The Related Projects tab lists all Snyk Projects that are linked to this asset a
 | **Target Reference** | The target reference associated with the Project |
 | **Actions** | Links to the Project details page |
 
-You can sort the list by highest date last tested, and use **Modify columns** to customize which columns are displayed.
+You can sort the list by date last tested or issue count, and use **Modify columns** to customize which columns are displayed.
 
 ![The Related Projects tab showing linked Snyk Projects with metadata and actions.](../.gitbook/assets/container-inventory-related-projects-tab.png)
 
@@ -251,6 +256,6 @@ Yes. Container image inventory is available at both Organization and Group scope
 
 Issue counts are summed across the latest scan snapshot of each unique Project target file associated with the asset, then broken down by severity. This deduplication ensures that the same vulnerability found by multiple scan sources is not double-counted.
 
-**How is the risk/priority score calculated?**
+**How is the risk score calculated?**
 
-The score is the maximum score across the latest scan snapshots of all related Snyk Project discovery sources.
+The score is the maximum score across the latest scan snapshots of all related Snyk Project discovery sources. Risk score is available only when it has been enabled under **Snyk Preview** settings for your Group or Organization and your Projects have been re-scanned.
