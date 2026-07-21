@@ -2,7 +2,7 @@
 
 ## Agentic security with Snyk studio
 
-* [Agentic security with Snyk Studio](README.md)
+* [Overview](README.md)
 * [Getting started with Snyk Studio](agentic-security-with-snyk-studio/getting-started-with-snyk-studio.md)
 * [Directives](agentic-security-with-snyk-studio/directives.md)
 * [Distribution at scale](agentic-security-with-snyk-studio/distribution-at-scale.md)
@@ -32,12 +32,12 @@
 
 ## Cloud AI platforms
 
-* [Cloud AI platforms](cloud-ai-platforms/cloud-ai-platforms/README.md)
-  * [Anthropic's Claude Enterprise](cloud-ai-platforms/cloud-ai-platforms/anthropics-claude-enterprise.md)
+* [Overview](cloud-ai-platforms/overview.md)
+* [Anthropic's Claude Enterprise](cloud-ai-platforms/anthropics-claude-enterprise.md)
 
 ## Evo by Snyk
 
-* [Evo by Snyk](evo-by-snyk/evo-by-snyk.md)
+* [Overview](evo-by-snyk/overview.md)
 * [Access and authentication](evo-by-snyk/access-and-authentication.md)
 * [Platform surfaces](evo-by-snyk/platform-surfaces/README.md)
   * [Inventory](evo-by-snyk/platform-surfaces/inventory.md)

@@ -1,4 +1,4 @@
-# Cloud AI platforms
+# Overview
 
 ## Cloud AI platforms
 
@@ -8,6 +8,6 @@ Snyk Evo integrates with cloud AI platforms to find AI assets deployed outside y
 * Organization-approved MCP servers
 * Tool-level permission restrictions your admins set
 
-### Supported integrations
+## Supported integrations
 
 * [Anthropic's Claude Enterprise](anthropics-claude-enterprise.md)
