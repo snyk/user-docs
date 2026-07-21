@@ -6,7 +6,7 @@ description: Recent updates to Snyk products and documentation, including new fe
 
 # What's new?
 
-The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
+The recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
 ## June 2026
 
