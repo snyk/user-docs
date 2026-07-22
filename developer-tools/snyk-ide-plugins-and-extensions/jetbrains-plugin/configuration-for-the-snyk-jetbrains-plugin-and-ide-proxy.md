@@ -1,5 +1,6 @@
 ---
 nav_context: classic
+description: Legacy configuration for the Snyk JetBrains plugin and IDE proxy, kept available for versions before the unified IDE configuration dialog
 ---
 
 # Configuration for the Snyk JetBrains plugin and IDE proxy

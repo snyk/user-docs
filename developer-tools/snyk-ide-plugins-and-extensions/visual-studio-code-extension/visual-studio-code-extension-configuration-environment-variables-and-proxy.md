@@ -1,5 +1,6 @@
 ---
 nav_context: classic
+description: Legacy configuration, environment variables, and proxy settings for the Snyk Visual Studio Code extension
 ---
 
 # Visual Studio Code extension configuration, environment variables, and proxy
