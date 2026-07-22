@@ -1,3 +1,7 @@
+---
+description: Legacy configuration for the Snyk Eclipse plugin, kept available for versions before the unified IDE configuration dialog
+---
+
 # Configuration of the Eclipse plugin
 
 {% hint style="info" %}

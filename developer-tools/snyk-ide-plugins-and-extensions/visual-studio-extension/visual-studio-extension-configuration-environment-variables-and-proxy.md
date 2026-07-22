@@ -1,3 +1,7 @@
+---
+description: Legacy configuration, environment variables, and proxy settings for the Snyk Visual Studio extension
+---
+
 # Visual Studio extension configuration, environment variables, and proxy
 
 {% hint style="info" %}
