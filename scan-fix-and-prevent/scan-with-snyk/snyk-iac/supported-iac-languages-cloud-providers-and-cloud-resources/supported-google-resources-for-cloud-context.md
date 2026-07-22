@@ -1,5 +1,6 @@
 ---
 description: The Google Cloud resources Snyk IaC supports for cloud context
+nav_context: agnostic
 ---
 
 # Supported Google resources for cloud context

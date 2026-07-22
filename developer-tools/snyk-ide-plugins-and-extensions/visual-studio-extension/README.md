@@ -1,5 +1,6 @@
 ---
 description: The Snyk Visual Studio extension for scanning and fixing vulnerabilities as you develop
+nav_context: classic
 ---
 
 # Visual Studio extension

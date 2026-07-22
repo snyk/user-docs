@@ -1,5 +1,6 @@
 ---
 description: How to troubleshoot domain verification with a meta tag in Snyk API and Web
+nav_context: classic
 ---
 
 # Troubleshoot domain verification with meta tag

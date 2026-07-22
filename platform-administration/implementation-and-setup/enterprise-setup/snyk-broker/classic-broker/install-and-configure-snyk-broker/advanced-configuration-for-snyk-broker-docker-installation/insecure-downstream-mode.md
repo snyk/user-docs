@@ -1,5 +1,6 @@
 ---
 description: How to use insecure downstream HTTP mode for a Snyk Broker Docker installation
+nav_context: agnostic
 ---
 
 # Insecure downstream mode

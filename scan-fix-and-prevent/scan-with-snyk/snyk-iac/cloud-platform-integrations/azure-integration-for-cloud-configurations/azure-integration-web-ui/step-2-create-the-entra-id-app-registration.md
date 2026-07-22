@@ -1,5 +1,6 @@
 ---
 description: 'Step 2: create the Entra ID app registration for the Snyk Azure integration'
+nav_context: classic
 ---
 
 # Step 2: Create the Entra ID app registration

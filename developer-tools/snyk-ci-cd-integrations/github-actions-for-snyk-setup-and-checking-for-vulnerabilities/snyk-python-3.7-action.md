@@ -1,5 +1,6 @@
 ---
 description: The removed Snyk GitHub Action for Python 3.7, with migration guidance
+nav_context: agnostic
 ---
 
 # Snyk Python-3.7 action

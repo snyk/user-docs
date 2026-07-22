@@ -1,6 +1,7 @@
 ---
 hidden: true
 description: Migration guide from the V1 Issues APIs to the REST Issues API
+nav_context: agnostic
 ---
 
 # V1 Issues APIs to REST Issues API migration guide

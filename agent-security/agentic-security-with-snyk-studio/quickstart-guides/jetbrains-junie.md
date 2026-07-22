@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # JetBrains Junie
 
 You can access Snyk Studio, including Snyk's MCP server, in JetBrains Junie to secure code gener\`ated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.

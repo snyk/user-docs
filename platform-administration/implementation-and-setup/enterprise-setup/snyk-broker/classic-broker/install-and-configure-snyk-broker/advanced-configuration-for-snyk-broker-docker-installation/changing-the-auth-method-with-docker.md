@@ -1,5 +1,6 @@
 ---
 description: How to change the Snyk Broker authentication method for an integration in a Docker installation
+nav_context: agnostic
 ---
 
 # Changing the auth method with Docker

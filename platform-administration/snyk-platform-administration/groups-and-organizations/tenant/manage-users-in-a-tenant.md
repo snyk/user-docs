@@ -1,5 +1,6 @@
 ---
 description: How to manage members of a Snyk Tenant, available on Enterprise plans
+nav_context: classic
 ---
 
 # Manage users in a Tenant

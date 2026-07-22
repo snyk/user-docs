@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Activation and deployment
 
 You configure and deploy Agentic Development Security (ADS) from **Settings** in Evo. Choose which products to roll out, then install on a single machine or across your company through your mobile device management (MDM) tool.

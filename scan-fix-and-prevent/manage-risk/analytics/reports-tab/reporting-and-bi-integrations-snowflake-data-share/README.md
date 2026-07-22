@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk reporting with a Snowflake Data Share
+nav_context: agnostic
 ---
 
 # Reporting and BI integrations: Snowflake Data Share

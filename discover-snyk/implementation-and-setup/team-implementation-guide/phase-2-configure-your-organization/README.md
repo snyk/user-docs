@@ -1,5 +1,6 @@
 ---
 description: 'Phase 2 of the Snyk team implementation: name and configure your Organization and its integrations'
+nav_context: classic
 ---
 
 # Phase 2: Configure your Organization

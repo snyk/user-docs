@@ -1,5 +1,6 @@
 ---
 description: How to configure the Snyk integration for Amazon ECR
+nav_context: classic
 ---
 
 # Configure integration for Amazon Elastic Container Registry (ECR)

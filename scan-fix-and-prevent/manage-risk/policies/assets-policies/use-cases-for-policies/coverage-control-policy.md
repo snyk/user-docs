@@ -1,5 +1,6 @@
 ---
 description: How to use a coverage control policy in Snyk Essentials
+nav_context: classic
 ---
 
 # Coverage control policy

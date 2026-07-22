@@ -1,5 +1,6 @@
 ---
 description: How to test infrastructure as code files with the Snyk CLI
+nav_context: agnostic
 ---
 
 # Test your IaC files

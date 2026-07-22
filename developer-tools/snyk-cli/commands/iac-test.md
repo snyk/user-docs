@@ -1,5 +1,6 @@
 ---
 description: The snyk iac test command that tests infrastructure as code files for misconfigurations
+nav_context: agnostic
 ---
 
 # IaC test

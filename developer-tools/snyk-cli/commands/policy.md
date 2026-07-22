@@ -1,5 +1,6 @@
 ---
 description: The snyk policy command that displays the .snyk policy for a Project
+nav_context: agnostic
 ---
 
 # Policy

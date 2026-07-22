@@ -1,5 +1,6 @@
 ---
 description: How to configure the Azure DevOps integration for Snyk Essentials at the Group level
+nav_context: classic
 ---
 
 # Azure DevOps for Snyk Essentials

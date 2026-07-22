@@ -1,5 +1,6 @@
 ---
 description: How Snyk helps you fix vulnerabilities in open source dependencies
+nav_context: classic
 ---
 
 # Fix your vulnerabilities

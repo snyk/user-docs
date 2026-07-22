@@ -1,5 +1,6 @@
 ---
 description: The snyk iac update-exclude-policy command for managing IaC exclusions
+nav_context: agnostic
 ---
 
 # IaC update-exclude-policy

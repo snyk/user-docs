@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 ## 2026-03-25 - Updated 2026-07-14
 
 ### POST - `/groups/{group_id}/secrets/rule_extensions` - Added

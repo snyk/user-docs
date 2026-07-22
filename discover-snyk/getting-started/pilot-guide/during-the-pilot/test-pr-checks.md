@@ -1,5 +1,6 @@
 ---
 description: How to enable and test Snyk PR Checks, which block pull requests that introduce new vulnerabilities
+nav_context: classic
 ---
 
 # Test PR Checks

@@ -1,5 +1,6 @@
 ---
 description: The Snyk error codes and their meanings
+nav_context: classic
 ---
 
 # Error Catalog

@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Gemini CLI guide
 
 Access Snyk Studio in Gemini CLI to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Gemini CLI.

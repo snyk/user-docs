@@ -1,5 +1,6 @@
 ---
 description: How to configure the risk acceptance workflow for Snyk API and Web
+nav_context: classic
 ---
 
 # Configure risk acceptance workflow

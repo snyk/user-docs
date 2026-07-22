@@ -1,5 +1,6 @@
 ---
 description: How to configure Azure Function environment variables for the Snyk to New Relic integration
+nav_context: classic
 ---
 
 # Configure Azure Function environment variables

@@ -1,5 +1,6 @@
 ---
 description: Migration guide from the V1 List all Projects endpoint to the REST API
+nav_context: agnostic
 ---
 
 # List all Projects V1 API to REST API migration guide (completed migration)

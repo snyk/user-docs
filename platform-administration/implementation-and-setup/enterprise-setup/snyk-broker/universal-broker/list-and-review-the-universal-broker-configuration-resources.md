@@ -1,5 +1,6 @@
 ---
 description: How to list and review Universal Broker configuration resources with the snyk-broker-config CLI tool
+nav_context: agnostic
 ---
 
 # List and review the Universal Broker configuration resources

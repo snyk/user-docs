@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Configure Bruno Collection Authentication
 
 Configure authentication to scan an API using a Bruno collection.

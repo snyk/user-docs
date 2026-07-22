@@ -1,5 +1,6 @@
 ---
 description: How to run a Snyk scan with the Visual Studio Code extension once configured and trusted
+nav_context: classic
 ---
 
 # Run an analysis with Visual Studio Code extension

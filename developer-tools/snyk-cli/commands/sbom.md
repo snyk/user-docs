@@ -1,5 +1,6 @@
 ---
 description: The snyk sbom command that generates an SBOM for a Project
+nav_context: agnostic
 ---
 
 # SBOM

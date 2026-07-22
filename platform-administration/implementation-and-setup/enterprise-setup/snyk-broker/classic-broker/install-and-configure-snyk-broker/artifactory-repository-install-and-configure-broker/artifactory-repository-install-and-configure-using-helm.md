@@ -1,5 +1,6 @@
 ---
 description: How to install and configure Snyk Broker for Artifactory Repository using Helm
+nav_context: agnostic
 ---
 
 # Artifactory Repository - install and configure using Helm

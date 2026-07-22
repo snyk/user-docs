@@ -1,5 +1,6 @@
 ---
 description: How to view and modify Snyk Organization general settings from the Settings menu
+nav_context: classic
 ---
 
 # Organization general settings

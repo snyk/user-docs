@@ -1,5 +1,6 @@
 ---
 description: The snyk test command that tests a Project for vulnerabilities
+nav_context: agnostic
 ---
 
 # Test

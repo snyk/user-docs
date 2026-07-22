@@ -1,5 +1,6 @@
 ---
 description: The snyk aibom command that generates an AI bill of materials
+nav_context: agnostic
 ---
 
 # AI-BOM

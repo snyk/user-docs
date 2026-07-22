@@ -1,5 +1,6 @@
 ---
 description: The components of each Snyk assets inventory layout
+nav_context: classic
 ---
 
 # Assets inventory components

@@ -1,5 +1,6 @@
 ---
 description: A summary of Snyk CLI commands and options
+nav_context: agnostic
 ---
 
 # CLI commands and options summary

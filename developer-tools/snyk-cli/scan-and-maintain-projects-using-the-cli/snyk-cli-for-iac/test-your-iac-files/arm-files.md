@@ -1,5 +1,6 @@
 ---
 description: How to test Azure ARM files with Snyk IaC using the CLI
+nav_context: agnostic
 ---
 
 # ARM files

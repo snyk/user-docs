@@ -1,5 +1,6 @@
 ---
 description: The snyk aibom test command that tests an AI bill of materials
+nav_context: agnostic
 ---
 
 # AI-BOM test

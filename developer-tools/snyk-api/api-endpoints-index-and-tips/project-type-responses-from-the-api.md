@@ -1,5 +1,6 @@
 ---
 description: The Snyk Project type values returned by the API
+nav_context: agnostic
 ---
 
 # Project type responses from the API

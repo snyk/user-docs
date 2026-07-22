@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Configure an API target with a Bruno Collection
 
 Use Bruno Collections to define API endpoints for scanning with Snyk API & Web.

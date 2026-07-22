@@ -1,5 +1,6 @@
 ---
 description: The snyk code test command that runs a Snyk Code static analysis test
+nav_context: agnostic
 ---
 
 # Code test

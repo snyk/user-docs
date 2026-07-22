@@ -5,6 +5,7 @@ description: >-
 icon: house
 cover: .gitbook/assets/user-docs-homepage.png
 coverY: 0
+nav_context: classic
 ---
 
 # Homepage

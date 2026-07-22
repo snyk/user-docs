@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Unified IDE Configuration Dialog
 
 You can use only one IDE configuration dialog to configure all your IDEs.

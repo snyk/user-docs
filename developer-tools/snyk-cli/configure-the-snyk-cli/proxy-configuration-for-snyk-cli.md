@@ -1,5 +1,6 @@
 ---
 description: How to configure a proxy for the Snyk CLI
+nav_context: agnostic
 ---
 
 # Proxy configuration for Snyk CLI

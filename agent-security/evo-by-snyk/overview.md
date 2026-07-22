@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Evo by Snyk
 
 The Evo platform provides a shared set of surfaces that present discovered AI assets and associated risk, manage policy, and report on your security posture.

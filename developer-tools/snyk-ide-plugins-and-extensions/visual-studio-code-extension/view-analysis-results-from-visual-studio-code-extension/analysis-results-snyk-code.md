@@ -1,5 +1,6 @@
 ---
 description: How to view Snyk Code security and quality results in the Visual Studio Code extension
+nav_context: classic
 ---
 
 # Analysis results: Snyk Code

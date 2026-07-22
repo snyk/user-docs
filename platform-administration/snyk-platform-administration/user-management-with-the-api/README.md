@@ -1,5 +1,6 @@
 ---
 description: How to manage Snyk users through the Snyk API, available on Enterprise plans
+nav_context: agnostic
 ---
 
 # User management with the API

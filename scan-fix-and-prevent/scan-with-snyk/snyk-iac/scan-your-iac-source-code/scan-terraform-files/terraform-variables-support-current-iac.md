@@ -1,5 +1,6 @@
 ---
 description: How Snyk IaC supports Terraform variables during scanning
+nav_context: agnostic
 ---
 
 # Terraform variables support

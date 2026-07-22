@@ -1,5 +1,6 @@
 ---
 description: The Snyk API and Web coverage report
+nav_context: classic
 ---
 
 # Coverage report

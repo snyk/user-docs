@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Custom sanitizers
 
 Taint flow analysis can miss your application's unique security controls. Defining custom sanitizers helps you get more accurate results by teaching the scanner about your specific data cleaning and validation methods, reducing false positives.

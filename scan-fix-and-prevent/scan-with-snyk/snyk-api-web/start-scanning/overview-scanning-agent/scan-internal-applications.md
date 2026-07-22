@@ -1,5 +1,6 @@
 ---
 description: How to scan internal applications with a Snyk API and Web scanning agent
+nav_context: classic
 ---
 
 # Scan internal applications

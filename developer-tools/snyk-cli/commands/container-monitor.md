@@ -1,5 +1,6 @@
 ---
 description: The snyk container monitor command that monitors a container image
+nav_context: agnostic
 ---
 
 # Container monitor

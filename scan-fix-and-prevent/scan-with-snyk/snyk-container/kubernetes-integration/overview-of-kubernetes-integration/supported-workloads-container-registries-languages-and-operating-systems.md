@@ -1,5 +1,6 @@
 ---
 description: The workloads, container registries, languages, and operating systems the Kubernetes integration supports
+nav_context: agnostic
 ---
 
 # Supported workloads, container registries, languages, and operating systems

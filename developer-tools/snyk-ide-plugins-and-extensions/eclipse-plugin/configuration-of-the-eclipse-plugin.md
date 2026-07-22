@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Configuration of the Eclipse plugin
 
 {% hint style="info" %}

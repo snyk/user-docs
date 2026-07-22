@@ -1,5 +1,6 @@
 ---
 description: How to automate Snyk prevention and gating to stop new vulnerabilities from entering your applications
+nav_context: classic
 ---
 
 # Automate prevention measures

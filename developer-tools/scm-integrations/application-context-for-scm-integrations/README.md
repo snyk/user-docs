@@ -1,5 +1,6 @@
 ---
 description: How application context enriches Snyk SCM integrations with interconnected asset information
+nav_context: classic
 ---
 
 # Application context for SCM integrations

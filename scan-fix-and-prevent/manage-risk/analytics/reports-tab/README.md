@@ -1,5 +1,6 @@
 ---
 description: How to use the Reports tab in Snyk Analytics
+nav_context: classic
 ---
 
 # Reports tab

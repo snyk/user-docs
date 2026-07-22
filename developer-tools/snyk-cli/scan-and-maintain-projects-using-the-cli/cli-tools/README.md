@@ -1,5 +1,6 @@
 ---
 description: CLI tools that extend the Snyk CLI with additional capabilities
+nav_context: agnostic
 ---
 
 # CLI tools

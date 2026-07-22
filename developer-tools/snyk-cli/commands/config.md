@@ -1,5 +1,6 @@
 ---
 description: The snyk config command that manages Snyk CLI configuration
+nav_context: agnostic
 ---
 
 # Config

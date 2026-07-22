@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # FAQ & troubleshooting
 
 This page provides answers to common questions about using Rule Extensions, along with troubleshooting guidance and permission requirements.

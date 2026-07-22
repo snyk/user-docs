@@ -1,5 +1,6 @@
 ---
 description: How to select the Snyk Organization to use in the CLI
+nav_context: agnostic
 ---
 
 # How to select the Organization to use in the CLI

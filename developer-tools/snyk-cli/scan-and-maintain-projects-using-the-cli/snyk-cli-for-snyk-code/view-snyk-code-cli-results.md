@@ -1,5 +1,6 @@
 ---
 description: How to view Snyk Code results from the CLI
+nav_context: classic
 ---
 
 # View Snyk Code CLI results

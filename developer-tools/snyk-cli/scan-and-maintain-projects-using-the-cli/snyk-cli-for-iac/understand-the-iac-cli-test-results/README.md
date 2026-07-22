@@ -1,5 +1,6 @@
 ---
 description: How to understand Snyk IaC CLI test results
+nav_context: agnostic
 ---
 
 # Understand the IaC CLI test results

@@ -1,5 +1,6 @@
 ---
 description: How to set up a Snyk App using the OAuth2 API
+nav_context: agnostic
 ---
 
 # Set up a Snyk App using the OAuth2 API

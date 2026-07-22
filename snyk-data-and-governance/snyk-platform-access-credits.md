@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Credits plan consolidates capabilities into flexible, usage-based credits
+nav_context: agnostic
 ---
 
 # Snyk Platform credits

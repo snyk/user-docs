@@ -1,5 +1,6 @@
 ---
 description: The snyk config environment command for setting the Snyk API environment
+nav_context: agnostic
 ---
 
 # Config environment

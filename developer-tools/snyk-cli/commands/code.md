@@ -1,5 +1,6 @@
 ---
 description: The snyk code command for finding security issues with Snyk Code
+nav_context: agnostic
 ---
 
 # Code

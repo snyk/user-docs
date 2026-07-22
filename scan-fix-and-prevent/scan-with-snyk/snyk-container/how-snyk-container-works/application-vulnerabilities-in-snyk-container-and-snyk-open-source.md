@@ -1,5 +1,6 @@
 ---
 description: How Snyk Container and Snyk Open Source detect application vulnerabilities in images
+nav_context: agnostic
 ---
 
 # Application vulnerabilities in Snyk Container and Snyk Open Source

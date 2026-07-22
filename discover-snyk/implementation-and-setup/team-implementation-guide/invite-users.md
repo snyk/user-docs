@@ -1,5 +1,6 @@
 ---
 description: How to invite members to your Snyk Organization and apply the roles planned in Phase 1
+nav_context: classic
 ---
 
 # Invite Users

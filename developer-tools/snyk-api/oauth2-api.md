@@ -1,5 +1,6 @@
 ---
 description: The Snyk OAuth2 API for Snyk Apps, compliant with RFC 6749
+nav_context: agnostic
 ---
 
 # OAuth2 API

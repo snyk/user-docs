@@ -1,5 +1,6 @@
 ---
 description: How to add Snyk to a TeamCity build to scan your code
+nav_context: classic
 ---
 
 # TeamCity integration: use Snyk in your build

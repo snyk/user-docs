@@ -1,5 +1,6 @@
 ---
 description: The snyk monitor command that snapshots and monitors a Project
+nav_context: agnostic
 ---
 
 # Monitor

@@ -1,5 +1,6 @@
 ---
 description: How to use the Snyk CLI for Snyk Open Source to scan manifests
+nav_context: agnostic
 ---
 
 # Snyk CLI for Open Source

@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Dart and Flutter
+nav_context: agnostic
 ---
 
 # Dart and Flutter rules

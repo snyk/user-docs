@@ -1,5 +1,6 @@
 ---
 description: 'Step 2: create the Google service account for the Snyk integration in the Web UI'
+nav_context: classic
 ---
 
 # Step 2: Create the Google service account (Web UI)

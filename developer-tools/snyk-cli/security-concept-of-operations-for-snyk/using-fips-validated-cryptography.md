@@ -1,5 +1,6 @@
 ---
 description: How to use FIPS-validated cryptography with the Snyk CLI
+nav_context: agnostic
 ---
 
 # Using FIPS-validated cryptography

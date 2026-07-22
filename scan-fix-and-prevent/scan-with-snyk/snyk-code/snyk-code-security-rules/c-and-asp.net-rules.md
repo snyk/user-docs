@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for C# and ASP.NET
+nav_context: agnostic
 ---
 
 # C# and ASP.NET rules

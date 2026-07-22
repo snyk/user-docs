@@ -1,5 +1,6 @@
 ---
 description: How to manage scan access and connectivity for Snyk API and Web
+nav_context: agnostic
 ---
 
 # Scan access and connectivity

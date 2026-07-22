@@ -1,5 +1,6 @@
 ---
 description: How to troubleshoot the Snyk Visual Studio Code extension, including unsupported end-of-life systems
+nav_context: classic
 ---
 
 # Troubleshooting for Visual Studio Code extension

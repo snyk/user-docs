@@ -1,5 +1,6 @@
 ---
 description: How Snyk security policy results apply to issues
+nav_context: classic
 ---
 
 # Security policy results

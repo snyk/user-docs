@@ -1,5 +1,6 @@
 ---
 description: How to exclude directories and files when importing a Project
+nav_context: classic
 ---
 
 # Exclude directories and files from Project import

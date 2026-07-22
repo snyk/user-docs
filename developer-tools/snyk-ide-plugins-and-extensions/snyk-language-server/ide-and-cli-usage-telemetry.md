@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Language Server collects usage telemetry after each successful test
+nav_context: agnostic
 ---
 
 # IDE and CLI usage telemetry

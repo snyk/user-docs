@@ -1,5 +1,6 @@
 ---
 description: How to configure login form authentication for Snyk API and Web targets
+nav_context: classic
 ---
 
 # Login form

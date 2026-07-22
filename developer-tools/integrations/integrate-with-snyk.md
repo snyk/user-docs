@@ -1,5 +1,6 @@
 ---
 description: Overview of Snyk integrations across agentic workflows, SCMs, IDEs, CI/CD pipelines, and more
+nav_context: classic
 ---
 
 # Overview

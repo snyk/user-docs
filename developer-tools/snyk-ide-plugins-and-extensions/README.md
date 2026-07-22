@@ -1,5 +1,6 @@
 ---
 description: Snyk IDE plugins and extensions for scanning as you develop, including custom endpoint configuration
+nav_context: agnostic
 ---
 
 # Snyk IDE plugins and extensions

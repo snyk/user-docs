@@ -1,5 +1,6 @@
 ---
 description: How to create a .dcignore file to exclude files and directories from Snyk Code scans
+nav_context: agnostic
 ---
 
 # Create a .dcignore file

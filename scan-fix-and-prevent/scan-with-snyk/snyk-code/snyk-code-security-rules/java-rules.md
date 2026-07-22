@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Java
+nav_context: agnostic
 ---
 
 # Java rules

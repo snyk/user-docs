@@ -1,5 +1,6 @@
 ---
 description: How to troubleshoot Snyk Broker, including multi-tenant region server URL settings
+nav_context: agnostic
 ---
 
 # Troubleshooting Broker

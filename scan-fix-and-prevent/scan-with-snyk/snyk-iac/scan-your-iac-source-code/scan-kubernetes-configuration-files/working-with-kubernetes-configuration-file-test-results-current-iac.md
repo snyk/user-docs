@@ -1,5 +1,6 @@
 ---
 description: How to work with Kubernetes configuration file test results in Snyk IaC
+nav_context: classic
 ---
 
 # Working with Kubernetes configuration file test results

@@ -1,5 +1,6 @@
 ---
 description: How to send Snyk issues to AWS Security Hub to centralize your security reporting
+nav_context: classic
 ---
 
 # AWS Security Hub

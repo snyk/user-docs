@@ -1,5 +1,6 @@
 ---
 description: How to debug the Snyk CLI when working with your Projects
+nav_context: agnostic
 ---
 
 # Debugging the Snyk CLI

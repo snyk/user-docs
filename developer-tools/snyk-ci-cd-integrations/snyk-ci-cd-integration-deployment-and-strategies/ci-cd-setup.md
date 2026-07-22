@@ -1,5 +1,6 @@
 ---
 description: How to set up Snyk in a CI/CD pipeline, including the configuration inputs you need
+nav_context: classic
 ---
 
 # CI/CD setup

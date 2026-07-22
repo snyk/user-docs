@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Rust
+nav_context: agnostic
 ---
 
 # Rust rules

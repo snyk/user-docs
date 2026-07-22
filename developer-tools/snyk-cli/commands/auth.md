@@ -1,5 +1,6 @@
 ---
 description: The snyk auth command that authenticates the CLI with your Snyk account
+nav_context: agnostic
 ---
 
 # Auth

@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk Container with DigitalOcean Container Registry
+nav_context: classic
 ---
 
 # Integrate with DigitalOcean

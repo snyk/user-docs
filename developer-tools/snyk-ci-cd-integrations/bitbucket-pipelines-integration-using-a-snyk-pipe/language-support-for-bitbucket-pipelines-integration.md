@@ -1,5 +1,6 @@
 ---
 description: The languages supported by the Snyk Bitbucket Pipelines pipe integration
+nav_context: agnostic
 ---
 
 # Language support for Bitbucket Pipelines integration

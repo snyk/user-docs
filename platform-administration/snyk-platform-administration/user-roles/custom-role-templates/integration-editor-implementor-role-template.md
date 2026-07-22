@@ -1,5 +1,6 @@
 ---
 description: Custom role template for an Integration Editor or Implementor, a Group-level role for managing third-party tool integrations
+nav_context: agnostic
 ---
 
 # Integration Editor/Implementor role template

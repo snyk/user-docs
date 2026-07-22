@@ -1,5 +1,5 @@
 ---
-nav_context: agnostic
+nav_context: classic
 ---
 
 # Exposure and coverage reports

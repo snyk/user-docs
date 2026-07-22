@@ -1,5 +1,6 @@
 ---
 description: The snyk sbom test command that tests an SBOM for vulnerabilities
+nav_context: agnostic
 ---
 
 # SBOM test

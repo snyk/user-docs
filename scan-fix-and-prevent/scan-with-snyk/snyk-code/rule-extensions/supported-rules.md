@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Supported rules
 
 Select your language to see the rules that support custom sanitizers.

@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Rule Extensions
 
 You can extend Snyk Code's security rules to fit your Project's unique context. Rule Extensions add custom functions to existing security rules, which helps the engine understand your code's specific logic and provides more accurate findings.

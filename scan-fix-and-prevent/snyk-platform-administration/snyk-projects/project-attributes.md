@@ -1,5 +1,6 @@
 ---
 description: How to use static Project attributes to organize and filter Projects
+nav_context: classic
 ---
 
 # Project attributes

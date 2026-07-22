@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # AI asset visibility
 
 The **Discovery agent** maps the AI assets in your code so you have a complete view of your AI usage. It runs an AI Bill of Materials (AI-BOM) scan to detect AI components in your source code.

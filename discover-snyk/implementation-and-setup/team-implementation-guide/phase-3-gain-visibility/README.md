@@ -1,5 +1,6 @@
 ---
 description: 'Phase 3 of the Snyk team implementation: import repositories to create Projects and gain visibility into your applications'
+nav_context: agnostic
 ---
 
 # Phase 3: Gain visibility

@@ -1,5 +1,6 @@
 ---
 description: Help reference for the Snyk CLI commands
+nav_context: agnostic
 ---
 
 # CLI help

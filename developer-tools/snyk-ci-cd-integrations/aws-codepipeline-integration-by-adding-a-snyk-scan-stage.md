@@ -1,5 +1,6 @@
 ---
 description: How to add a Snyk Open Source scan stage to AWS CodePipeline with CodeBuild
+nav_context: agnostic
 ---
 
 # AWS CodePipeline integration with CodeBuild

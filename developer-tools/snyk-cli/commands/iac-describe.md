@@ -1,5 +1,6 @@
 ---
 description: The snyk iac describe command that detects drift in infrastructure as code
+nav_context: agnostic
 ---
 
 # IaC describe

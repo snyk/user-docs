@@ -1,5 +1,6 @@
 ---
 description: Technical requirements for Snyk Code and Snyk Open Source, including file encoding and how Snyk builds the dependency tree
+nav_context: agnostic
 ---
 
 # Technical specifications and guidance

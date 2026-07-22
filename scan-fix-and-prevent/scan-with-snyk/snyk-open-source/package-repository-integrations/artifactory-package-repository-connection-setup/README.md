@@ -1,5 +1,6 @@
 ---
 description: How to connect Snyk to an Artifactory package repository
+nav_context: classic
 ---
 
 # Artifactory package repository connection setup

@@ -1,5 +1,6 @@
 ---
 description: Snyk support for Elixir with Snyk Open Source, including CLI and IDE testing, the Mix and Hex package managers, and SBOM testing
+nav_context: agnostic
 ---
 
 # Elixir

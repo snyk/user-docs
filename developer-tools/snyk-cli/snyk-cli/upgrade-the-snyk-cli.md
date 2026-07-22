@@ -1,5 +1,6 @@
 ---
 description: How to upgrade the Snyk CLI to stay secure and current
+nav_context: agnostic
 ---
 
 # Upgrade the Snyk CLI

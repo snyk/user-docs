@@ -1,5 +1,6 @@
 ---
 description: The Snyk Eclipse plugin for scanning and fixing vulnerabilities as you develop
+nav_context: agnostic
 ---
 
 # Eclipse plugin

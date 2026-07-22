@@ -1,5 +1,6 @@
 ---
 description: The snyk ignore command that ignores a specified issue
+nav_context: agnostic
 ---
 
 # Ignore

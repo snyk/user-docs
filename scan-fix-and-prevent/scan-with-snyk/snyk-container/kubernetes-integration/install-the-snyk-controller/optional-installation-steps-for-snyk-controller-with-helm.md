@@ -1,5 +1,6 @@
 ---
 description: Optional installation steps for the Snyk Controller with Helm
+nav_context: agnostic
 ---
 
 # Optional installation steps for the Snyk Controller with Helm

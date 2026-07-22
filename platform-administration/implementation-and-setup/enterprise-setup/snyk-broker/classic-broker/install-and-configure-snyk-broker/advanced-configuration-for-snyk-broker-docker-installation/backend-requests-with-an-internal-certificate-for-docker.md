@@ -1,5 +1,6 @@
 ---
 description: How to configure the Snyk Broker client to use an internal certificate for backend HTTPS connections with Docker
+nav_context: agnostic
 ---
 
 # Backend requests with an internal certificate for Docker

@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk with Sysdig to prioritize running container vulnerabilities
+nav_context: classic
 ---
 
 # Integrate with Sysdig

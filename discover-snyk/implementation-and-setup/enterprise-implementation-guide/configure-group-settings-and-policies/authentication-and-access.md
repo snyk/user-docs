@@ -1,5 +1,6 @@
 ---
 description: How to configure SSO and access at the Snyk Group level, including Self-Serve Single Sign-On options
+nav_context: classic
 ---
 
 # Authentication and access

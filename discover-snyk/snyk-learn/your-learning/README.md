@@ -1,5 +1,6 @@
 ---
 description: How to find and take Snyk Learn lessons and learning paths from the catalog based on your interests and needs
+nav_context: classic
 ---
 
 # Your learning

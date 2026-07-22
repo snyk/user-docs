@@ -1,5 +1,6 @@
 ---
 description: How to use the native Snyk Jenkins plugin, based on the Snyk CLI, to test and monitor Projects
+nav_context: classic
 ---
 
 # Jenkins plugin integration with Snyk

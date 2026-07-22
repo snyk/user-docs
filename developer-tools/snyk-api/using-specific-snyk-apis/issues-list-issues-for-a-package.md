@@ -1,5 +1,6 @@
 ---
 description: How to use the Snyk REST API endpoint to list issues for a package
+nav_context: agnostic
 ---
 
 # Issues: List issues for a package

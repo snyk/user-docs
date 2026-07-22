@@ -1,5 +1,6 @@
 ---
 description: How to use the Snyk CLI for Snyk Code static analysis
+nav_context: agnostic
 ---
 
 # Snyk CLI for Snyk Code

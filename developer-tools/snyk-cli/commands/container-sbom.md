@@ -1,5 +1,6 @@
 ---
 description: The snyk container sbom command that generates an SBOM for a container image
+nav_context: agnostic
 ---
 
 # Container SBOM

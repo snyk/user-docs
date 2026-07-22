@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Claude Code guide
 
 Access Snyk Studio in Claude Code to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Claude Code.

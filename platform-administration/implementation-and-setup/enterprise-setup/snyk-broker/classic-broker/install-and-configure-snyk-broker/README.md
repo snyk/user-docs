@@ -1,5 +1,6 @@
 ---
 description: How to install and configure the Classic Snyk Broker proxy between Snyk and your integrations
+nav_context: agnostic
 ---
 
 # Install and configure Snyk Broker

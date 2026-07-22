@@ -1,5 +1,6 @@
 ---
 description: How to configure the GitHub integration for Snyk Essentials at the Group level
+nav_context: classic
 ---
 
 # GitHub for Snyk Essentials
