@@ -1,8 +1,8 @@
-# Agentic security with Snyk Studio
+# Overview
 
 Agentic workflows accelerate software development and innovation but introduce security risks, for example, AI-generated vulnerabilities or providing insecure practice suggestions. To address these risks, Snyk Studio embeds directives directly into AI-assisted development workflows to guide the agent towards secure software development.
 
-Snyk Studio connects the Snyk platform, your development environment, and your AI tools, in interconnected layers:
+Snyk Studio connects the Snyk platform, your development environment, and your AI tools in interconnected layers:
 
 * A [default, hooks-based approach](agentic-security-with-snyk-studio/getting-started-with-snyk-studio.md) to ensure agents generate secure code.
 * AI agents or [ADEs](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/glossary#ade): Agentic development environments that enable developers to interact with coding agents, which can integrate with Snyk Studio to drive security.
