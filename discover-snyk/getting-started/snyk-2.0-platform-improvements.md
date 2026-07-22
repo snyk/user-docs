@@ -1,5 +1,6 @@
 ---
 nav_context: new
+description: Snyk 2.0 platform improvements rolling out through 2026 to address navigation, asset visibility, and issue triage
 ---
 
 # Snyk 2.0 platform improvements
