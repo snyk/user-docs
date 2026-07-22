@@ -1,3 +1,7 @@
+---
+description: How to configure a Snyk API and Web target using a Bruno Collection in OpenCollection format
+---
+
 # Configure an API target with a Bruno Collection
 
 Use Bruno Collections to define API endpoints for scanning with Snyk API & Web.

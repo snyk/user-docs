@@ -1,3 +1,7 @@
+---
+description: How to run an impact test through the API to see how a proposed Snyk Code Rule Extension would change Project findings
+---
+
 # Impact testing
 
 Impact testing lets you understand how a proposed Rule Extension would change findings for a Snyk Code Project before you publish it. It runs your extension against the Project and returns the findings that would be added or removed. Impact testing is available both in the Snyk Web UI and through the API; this page covers the API workflow.

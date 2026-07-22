@@ -1,3 +1,7 @@
+---
+description: How to define custom sanitizers as Snyk Code Rule Extensions to reduce false positives in taint flow analysis
+---
+
 # Custom sanitizers
 
 Taint flow analysis can miss your application's unique security controls. Defining custom sanitizers helps you get more accurate results by teaching the scanner about your specific data cleaning and validation methods, reducing false positives.

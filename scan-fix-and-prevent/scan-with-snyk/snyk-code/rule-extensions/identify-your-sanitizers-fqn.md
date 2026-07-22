@@ -1,3 +1,7 @@
+---
+description: How to identify the fully qualified name (FQN) of a sanitizer function for a Snyk Code Rule Extension
+---
+
 # Identify your sanitizer's FQN
 
 When creating a custom sanitizer, you must provide its Fully Qualified Name (FQN). The FQN is how Snyk Code's security engine identifies your function across your codebase. This guide walks you through identifying the correct FQN format for your sanitizer function.

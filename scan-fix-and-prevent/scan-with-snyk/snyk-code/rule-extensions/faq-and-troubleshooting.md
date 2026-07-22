@@ -1,3 +1,7 @@
+---
+description: FAQ and troubleshooting guidance for Snyk Code Rule Extensions, including permissions and API rate limits
+---
+
 # FAQ & troubleshooting
 
 This page provides answers to common questions about using Rule Extensions, along with troubleshooting guidance and permission requirements.

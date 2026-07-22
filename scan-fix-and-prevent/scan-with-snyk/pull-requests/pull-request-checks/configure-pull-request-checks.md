@@ -1,5 +1,6 @@
 ---
 nav_context: classic
+description: How to configure Snyk Pull Request checks, including prerequisites, supported integrations, and the scans they run
 ---
 
 # Configure Pull Request checks
