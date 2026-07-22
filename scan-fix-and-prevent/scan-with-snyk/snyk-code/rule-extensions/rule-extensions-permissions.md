@@ -1,3 +1,7 @@
+---
+description: The custom-role permissions required to manage and test Snyk Code Rule Extensions through the API and the Snyk Web UI
+---
+
 # Rule Extensions permissions
 
 Rule Extensions are available to Enterprise customers. Access is granted through a [custom role](https://docs.snyk.io/snyk-platform-administration/user-roles/user-role-management). Rule Extensions are **managed at the Group level** and **tested at the Organization level**, so a role combines Group-level and Organization-level permissions.

@@ -1,5 +1,6 @@
 ---
 nav_context: agnostic
+description: The Exposure and coverage reports in Snyk Analytics, including the Asset Dashboard, Issues Detail, and Risk Exposure reports
 ---
 
 # Exposure and coverage reports

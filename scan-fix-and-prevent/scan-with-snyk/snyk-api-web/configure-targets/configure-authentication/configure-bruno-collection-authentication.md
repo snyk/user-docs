@@ -1,3 +1,7 @@
+---
+description: How to configure authentication for a Snyk API and Web scan that uses a Bruno Collection, including dynamic token generation
+---
+
 # Configure Bruno Collection Authentication
 
 Configure authentication to scan an API using a Bruno collection.
