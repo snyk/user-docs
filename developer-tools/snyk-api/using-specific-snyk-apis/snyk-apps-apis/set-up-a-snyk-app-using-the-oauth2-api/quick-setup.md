@@ -1,5 +1,6 @@
 ---
 description: Quick setup for a Snyk App using OAuth2 with PKCE
+nav_context: agnostic
 ---
 
 # Quick setup

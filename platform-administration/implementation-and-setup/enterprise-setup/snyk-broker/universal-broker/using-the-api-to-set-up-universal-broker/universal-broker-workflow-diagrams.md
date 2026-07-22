@@ -1,5 +1,6 @@
 ---
 description: Workflow diagrams showing the steps the snyk-broker-config tool automates for the Universal Broker
+nav_context: classic
 ---
 
 # Universal Broker workflow diagrams

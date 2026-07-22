@@ -1,5 +1,6 @@
 ---
 description: Deployment approaches and strategies for adopting Snyk CI/CD integrations
+nav_context: agnostic
 ---
 
 # Snyk CI/CD Integration deployment and strategies

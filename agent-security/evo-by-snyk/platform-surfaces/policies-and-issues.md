@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Policies & issues
 
 Policies govern how AI is used across your environment. When an asset violates a policy, Evo raises an issue that you triage and resolve in your standard security workflow.

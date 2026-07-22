@@ -1,5 +1,6 @@
 ---
 description: How to connect development tools in a Snyk template Organization to roll out consistently at scale
+nav_context: classic
 ---
 
 # Connect your development tools

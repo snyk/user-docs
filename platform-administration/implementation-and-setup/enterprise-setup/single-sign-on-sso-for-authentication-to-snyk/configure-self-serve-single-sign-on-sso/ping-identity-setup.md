@@ -1,5 +1,6 @@
 ---
 description: How to set up a Ping Identity application and connect it to Snyk for SSO
+nav_context: classic
 ---
 
 # Ping Identity setup

@@ -1,5 +1,6 @@
 ---
 description: How to import targets for Snyk API and Web scanning
+nav_context: classic
 ---
 
 # Import targets

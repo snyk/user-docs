@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for XML
+nav_context: agnostic
 ---
 
 # XML rules

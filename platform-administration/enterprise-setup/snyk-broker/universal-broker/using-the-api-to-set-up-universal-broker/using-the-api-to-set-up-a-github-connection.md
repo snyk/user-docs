@@ -1,5 +1,6 @@
 ---
 description: Example of using the Snyk API to set up a GitHub connection with the Universal Broker
+nav_context: agnostic
 ---
 
 # Using the API to set up a GitHub connection

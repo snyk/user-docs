@@ -1,5 +1,6 @@
 ---
 description: Snyk Groups, which contain Organizations and let teams manage collaborators and Projects together
+nav_context: classic
 ---
 
 # Groups

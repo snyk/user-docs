@@ -1,5 +1,6 @@
 ---
 description: How to manage Snyk notifications that alert you to new vulnerabilities found in the Projects you monitor
+nav_context: classic
 ---
 
 # Manage notifications

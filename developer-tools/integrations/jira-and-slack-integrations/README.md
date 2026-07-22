@@ -1,5 +1,6 @@
 ---
 description: Snyk integrations for Jira and Slack
+nav_context: agnostic
 ---
 
 # Jira and Slack integrations

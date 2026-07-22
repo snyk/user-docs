@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Apex
+nav_context: agnostic
 ---
 
 # Apex rules

@@ -1,5 +1,6 @@
 ---
 description: Example of configuring Snyk user roles after setting up OneLogin SSO
+nav_context: classic
 ---
 
 # Example: setting up custom mapping for OneLogin

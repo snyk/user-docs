@@ -1,5 +1,6 @@
 ---
 description: How HTTP status codes appear in Snyk API and Web target scans
+nav_context: classic
 ---
 
 # HTTP status codes in target scans

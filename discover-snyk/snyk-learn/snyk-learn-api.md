@@ -1,5 +1,6 @@
 ---
 description: How to interact with Snyk Learn programmatically through the Beta Snyk Learn API endpoints in the Snyk REST API
+nav_context: agnostic
 ---
 
 # Snyk Learn API

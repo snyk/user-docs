@@ -1,5 +1,6 @@
 ---
 description: How to set up image scanning for Snyk Insights
+nav_context: classic
 ---
 
 # Set up Insights: image scanning

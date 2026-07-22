@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Visual Studio extension configuration, environment variables, and proxy
 
 {% hint style="info" %}

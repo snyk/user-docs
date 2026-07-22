@@ -1,5 +1,6 @@
 ---
 description: How to test serverless files with Snyk IaC using the CLI
+nav_context: agnostic
 ---
 
 # Serverless files

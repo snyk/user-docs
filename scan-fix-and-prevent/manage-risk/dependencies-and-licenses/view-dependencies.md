@@ -1,5 +1,6 @@
 ---
 description: How to view the dependencies of a Snyk Project as a bill of materials
+nav_context: classic
 ---
 
 # View dependencies

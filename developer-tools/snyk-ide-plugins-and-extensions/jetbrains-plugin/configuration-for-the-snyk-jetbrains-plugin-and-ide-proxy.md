@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Configuration for the Snyk JetBrains plugin and IDE proxy
 
 {% hint style="info" %}

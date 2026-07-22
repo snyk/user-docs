@@ -1,5 +1,6 @@
 ---
 description: How to test for BOLA vulnerabilities with Snyk API and Web
+nav_context: agnostic
 ---
 
 # Test BOLA vulnerabilities

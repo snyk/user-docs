@@ -1,5 +1,6 @@
 ---
 description: How the deployed risk factor affects Snyk issue prioritization
+nav_context: classic
 ---
 
 # Risk factor: deployed

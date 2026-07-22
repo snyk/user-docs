@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Python
+nav_context: agnostic
 ---
 
 # Python rules

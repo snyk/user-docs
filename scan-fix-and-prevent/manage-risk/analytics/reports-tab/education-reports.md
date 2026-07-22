@@ -1,5 +1,6 @@
 ---
 description: The education reports in Snyk Analytics
+nav_context: classic
 ---
 
 # Education reports

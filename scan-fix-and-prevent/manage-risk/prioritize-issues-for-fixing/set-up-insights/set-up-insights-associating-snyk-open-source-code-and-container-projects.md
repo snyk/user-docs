@@ -1,5 +1,6 @@
 ---
 description: How to associate Snyk Open Source, Code, and Container Projects for Insights
+nav_context: classic
 ---
 
 # Set up Insights: associating Snyk Open Source, Code, and Container Projects

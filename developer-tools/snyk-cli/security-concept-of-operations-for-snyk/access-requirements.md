@@ -1,5 +1,6 @@
 ---
 description: The access requirements for using Snyk applications such as the CLI
+nav_context: agnostic
 ---
 
 # Access requirements

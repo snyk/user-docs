@@ -1,5 +1,6 @@
 ---
 description: How to troubleshoot a failed login with a login form in Snyk API and Web
+nav_context: classic
 ---
 
 # Troubleshoot login failed with login form

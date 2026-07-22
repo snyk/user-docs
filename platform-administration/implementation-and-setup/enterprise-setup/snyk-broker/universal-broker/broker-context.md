@@ -1,5 +1,6 @@
 ---
 description: How to use a Broker Context to override the configuration of a Broker connection for an integration
+nav_context: agnostic
 ---
 
 # Configuring Broker Contexts

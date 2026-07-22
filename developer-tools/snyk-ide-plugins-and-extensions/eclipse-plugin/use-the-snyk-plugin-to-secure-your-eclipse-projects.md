@@ -1,5 +1,6 @@
 ---
 description: How to scan and fix vulnerabilities in your Eclipse Projects with the Snyk plugin
+nav_context: classic
 ---
 
 # Use the Snyk plugin to secure your Eclipse projects

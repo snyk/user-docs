@@ -1,5 +1,6 @@
 ---
 description: How to configure the Bitbucket integration for Snyk Essentials at the Group level
+nav_context: classic
 ---
 
 # Bitbucket for Snyk Essentials

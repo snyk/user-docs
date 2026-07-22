@@ -1,5 +1,6 @@
 ---
 description: How the Snyk pipe runs on each Bitbucket Pipelines execution
+nav_context: agnostic
 ---
 
 # Bitbucket Pipelines integration: how it works

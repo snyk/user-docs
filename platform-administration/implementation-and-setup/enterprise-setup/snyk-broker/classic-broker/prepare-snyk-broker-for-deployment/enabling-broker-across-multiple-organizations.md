@@ -1,5 +1,6 @@
 ---
 description: How to use one Snyk Broker token across multiple Organizations with the same SCM
+nav_context: agnostic
 ---
 
 # Enabling Broker across multiple Organizations

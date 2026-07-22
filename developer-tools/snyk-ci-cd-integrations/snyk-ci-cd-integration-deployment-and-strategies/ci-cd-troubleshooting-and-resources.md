@@ -1,5 +1,6 @@
 ---
 description: Tips and resources for troubleshooting and scaling Snyk CI/CD integrations
+nav_context: agnostic
 ---
 
 # CI/CD troubleshooting and resources

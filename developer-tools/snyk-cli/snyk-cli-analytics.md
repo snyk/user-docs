@@ -1,5 +1,6 @@
 ---
 description: How Snyk CLI analytics work and how to control them
+nav_context: agnostic
 ---
 
 # Snyk CLI analytics

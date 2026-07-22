@@ -1,5 +1,6 @@
 ---
 description: How to use a .snyk policy file in a different directory from the manifest file
+nav_context: agnostic
 ---
 
 # A .snyk policy file in a different directory from the manifest file

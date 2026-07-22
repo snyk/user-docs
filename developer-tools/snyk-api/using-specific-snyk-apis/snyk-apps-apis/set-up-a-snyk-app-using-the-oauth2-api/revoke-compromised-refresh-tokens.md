@@ -1,5 +1,6 @@
 ---
 description: How to revoke compromised Snyk App refresh tokens
+nav_context: agnostic
 ---
 
 # Revoke compromised refresh tokens

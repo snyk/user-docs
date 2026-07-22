@@ -1,5 +1,6 @@
 ---
 description: Downloadable project plan templates and suggested timelines to guide your Snyk team implementation
+nav_context: agnostic
 ---
 
 # Prerequisites: project plan templates

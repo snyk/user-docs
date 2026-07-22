@@ -1,5 +1,6 @@
 ---
 description: Examples of setting up Snyk custom mapping for identity providers such as Okta, Entra ID, and Google Workspace
+nav_context: agnostic
 ---
 
 # Examples: setting up custom mapping for IdPs

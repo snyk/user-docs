@@ -1,5 +1,6 @@
 ---
 description: How to test JavaScript Projects with the Snyk CLI, including report generation, output formats, and dependency filtering
+nav_context: agnostic
 ---
 
 # CLI support for JavaScript

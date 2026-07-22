@@ -1,5 +1,6 @@
 ---
 description: How to set up and integrate Universal Broker connections, including installing the Snyk Broker App
+nav_context: classic
 ---
 
 # Setting up and integrating your Universal Broker connections

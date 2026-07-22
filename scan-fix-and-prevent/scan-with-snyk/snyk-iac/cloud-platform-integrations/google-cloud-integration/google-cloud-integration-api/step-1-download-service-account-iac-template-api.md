@@ -1,5 +1,6 @@
 ---
 description: 'Step 1: download the service account IaC template for the Google Cloud integration using the API'
+nav_context: classic
 ---
 
 # Step 1: Download service account IaC template (API)

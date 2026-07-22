@@ -1,5 +1,6 @@
 ---
 description: How to use Snyk Custom Base Image Recommendations to reduce vulnerabilities
+nav_context: classic
 ---
 
 # Use Custom Base Image Recommendations

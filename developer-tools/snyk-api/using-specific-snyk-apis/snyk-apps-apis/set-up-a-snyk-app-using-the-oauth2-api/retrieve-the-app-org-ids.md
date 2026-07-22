@@ -1,5 +1,6 @@
 ---
 description: How to retrieve the Organization IDs a user connected to a Snyk App
+nav_context: agnostic
 ---
 
 # Retrieve the App Org IDs

@@ -1,5 +1,6 @@
 ---
 description: How Snyk Essentials gives visibility into your application assets and their risk
+nav_context: classic
 ---
 
 # Snyk Essentials

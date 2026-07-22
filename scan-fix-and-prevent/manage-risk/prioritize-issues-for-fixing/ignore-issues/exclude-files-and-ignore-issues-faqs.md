@@ -1,5 +1,6 @@
 ---
 description: Frequently asked questions about excluding files and ignoring issues in Snyk
+nav_context: agnostic
 ---
 
 # Exclude files and ignore issues FAQs

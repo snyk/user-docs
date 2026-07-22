@@ -1,5 +1,6 @@
 ---
 description: Overview of Snyk data handling and governance resources, including data security, hosting, AI, and support and services terms
+nav_context: agnostic
 ---
 
 # Overview

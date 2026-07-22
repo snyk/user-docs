@@ -1,5 +1,6 @@
 ---
 description: How to install Snyk Broker for the Container Registry Agent using Helm
+nav_context: agnostic
 ---
 
 # Install Broker for Container Registry Agent using Helm

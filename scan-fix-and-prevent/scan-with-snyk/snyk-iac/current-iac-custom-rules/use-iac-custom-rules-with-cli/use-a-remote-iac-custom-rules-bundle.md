@@ -1,5 +1,6 @@
 ---
 description: How to use a remote Snyk IaC custom rules bundle with the CLI
+nav_context: classic
 ---
 
 # Use a remote IaC custom rules bundle

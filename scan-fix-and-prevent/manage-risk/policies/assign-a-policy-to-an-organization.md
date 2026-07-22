@@ -1,5 +1,6 @@
 ---
 description: How to assign a Snyk policy to an Organization
+nav_context: agnostic
 ---
 
 # Assign a policy to an Organization

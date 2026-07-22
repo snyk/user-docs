@@ -1,5 +1,6 @@
 ---
 description: Example Snyk Security Scan task for testing a container image in an Azure Pipelines script
+nav_context: classic
 ---
 
 # Example of a Snyk task for a container image pipeline

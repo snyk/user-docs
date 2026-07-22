@@ -1,5 +1,6 @@
 ---
 description: How to run Snyk CLI releases before 1.1230.0 on Apple M1 or M2 machines
+nav_context: agnostic
 ---
 
 # Using CLI releases before version 1.1230.0 on an Apple M1 or M2 machine

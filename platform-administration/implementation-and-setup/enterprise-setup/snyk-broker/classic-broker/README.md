@@ -1,5 +1,6 @@
 ---
 description: The Classic Broker, including connections, deployment preparation, installation, and configuration
+nav_context: agnostic
 ---
 
 # Classic Broker

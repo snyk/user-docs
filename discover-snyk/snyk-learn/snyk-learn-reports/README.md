@@ -1,5 +1,6 @@
 ---
 description: Overview of Snyk Learn reporting, including organization, assignment, and program reports and their plan requirements
+nav_context: agnostic
 ---
 
 # Snyk Learn reporting

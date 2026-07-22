@@ -1,5 +1,6 @@
 ---
 description: How Group administrators define Snyk security policies
+nav_context: agnostic
 ---
 
 # Security policies

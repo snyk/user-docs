@@ -1,5 +1,6 @@
 ---
 description: Custom role template for an Incident Responder, an Organization-level role for quickly finding and addressing vulnerabilities
+nav_context: agnostic
 ---
 
 # Incident Responder role template

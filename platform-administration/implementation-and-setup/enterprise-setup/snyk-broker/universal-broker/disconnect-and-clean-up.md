@@ -1,5 +1,6 @@
 ---
 description: How to remove Universal Broker resources with the snyk-broker-config delete command, with safeguards for connection states
+nav_context: classic
 ---
 
 # Disconnect and clean up

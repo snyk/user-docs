@@ -1,5 +1,6 @@
 ---
 description: Example of mapping Snyk roles for a Google Workspace custom SAML connection
+nav_context: classic
 ---
 
 # Example: setting up custom mapping for Google Workspace

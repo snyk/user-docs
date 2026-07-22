@@ -1,5 +1,6 @@
 ---
 description: How to define success metrics and KPIs to measure the impact of your Snyk implementation
+nav_context: agnostic
 ---
 
 # Plan for success

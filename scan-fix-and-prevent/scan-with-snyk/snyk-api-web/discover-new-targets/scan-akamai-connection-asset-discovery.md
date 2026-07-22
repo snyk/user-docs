@@ -1,5 +1,6 @@
 ---
 description: How to scan an Akamai connection for asset discovery in Snyk API and Web
+nav_context: classic
 ---
 
 # Scan an Akamai connection for asset discovery

@@ -1,5 +1,6 @@
 ---
 description: How to install a Snyk API and Web scanning agent
+nav_context: classic
 ---
 
 # Install a scanning agent

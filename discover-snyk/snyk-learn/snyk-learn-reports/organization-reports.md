@@ -1,5 +1,6 @@
 ---
 description: How to view and export Snyk Learn organization reports, available on Enterprise plans to Org and Group admins
+nav_context: classic
 ---
 
 # Organization reports

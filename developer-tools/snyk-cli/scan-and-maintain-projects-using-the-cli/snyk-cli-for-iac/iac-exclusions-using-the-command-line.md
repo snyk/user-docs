@@ -1,5 +1,6 @@
 ---
 description: How to exclude Snyk IaC issues using the command line
+nav_context: agnostic
 ---
 
 # IaC exclusions using the command line

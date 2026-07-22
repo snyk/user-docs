@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Groovy
+nav_context: agnostic
 ---
 
 # Groovy rules

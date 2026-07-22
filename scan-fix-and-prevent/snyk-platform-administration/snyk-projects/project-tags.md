@@ -1,5 +1,6 @@
 ---
 description: How to use Project tags to organize and filter Projects
+nav_context: classic
 ---
 
 # Project tags

@@ -1,5 +1,6 @@
 ---
 description: How to ignore Snyk IaC issues using the .snyk policy file
+nav_context: agnostic
 ---
 
 # IaC ignores using the .snyk policy file

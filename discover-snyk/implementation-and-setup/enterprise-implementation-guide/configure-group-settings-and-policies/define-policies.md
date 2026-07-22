@@ -1,5 +1,6 @@
 ---
 description: How Snyk policies automate identifying, prioritizing, and triaging findings to save development time
+nav_context: classic
 ---
 
 # Define policies

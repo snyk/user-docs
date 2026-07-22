@@ -1,5 +1,6 @@
 ---
 description: Guide to rolling out Snyk across a large organization with a consistent, repeatable account configuration
+nav_context: agnostic
 ---
 
 # Enterprise implementation guide

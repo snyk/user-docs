@@ -1,5 +1,6 @@
 ---
 description: How to scan and fix security issues in CloudFormation files with Snyk IaC
+nav_context: classic
 ---
 
 # Scan and fix security issues in your CloudFormation files

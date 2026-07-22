@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for JavaScript and TypeScript
+nav_context: agnostic
 ---
 
 # JavaScript and TypeScript rules

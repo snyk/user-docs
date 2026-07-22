@@ -1,5 +1,6 @@
 ---
 description: How to manage code vulnerabilities found by Snyk Code
+nav_context: classic
 ---
 
 # Manage code vulnerabilities

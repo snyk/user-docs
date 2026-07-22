@@ -1,5 +1,6 @@
 ---
 description: How to handle invalid findings and false positives in Snyk API and Web
+nav_context: agnostic
 ---
 
 # Invalid findings and false positives

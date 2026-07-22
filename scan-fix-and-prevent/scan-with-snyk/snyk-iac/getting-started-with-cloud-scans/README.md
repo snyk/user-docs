@@ -1,5 +1,6 @@
 ---
 description: How to get started with Snyk cloud scans
+nav_context: classic
 ---
 
 # Getting started with cloud scans

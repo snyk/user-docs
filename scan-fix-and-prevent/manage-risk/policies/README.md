@@ -1,5 +1,6 @@
 ---
 description: How Snyk policies automate triage, prioritization, and governance
+nav_context: classic
 ---
 
 # Policies

@@ -1,5 +1,6 @@
 ---
 description: How Snyk integrates with CircleCI using a Snyk Orb to scan application dependencies
+nav_context: classic
 ---
 
 # CircleCI integration using a Snyk Orb

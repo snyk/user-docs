@@ -1,5 +1,6 @@
 ---
 description: How to create and delete Snyk Organizations and set your preferred Organization, within your plan limits
+nav_context: classic
 ---
 
 # Create and delete Organizations

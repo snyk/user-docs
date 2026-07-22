@@ -1,5 +1,6 @@
 ---
 description: The snyk-to-html tool that converts Snyk CLI output to HTML
+nav_context: classic
 ---
 
 # snyk-to-html

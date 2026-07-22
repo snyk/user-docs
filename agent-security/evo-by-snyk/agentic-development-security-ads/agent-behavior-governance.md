@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Agent Behavior Governance
 
 {% hint style="info" %}

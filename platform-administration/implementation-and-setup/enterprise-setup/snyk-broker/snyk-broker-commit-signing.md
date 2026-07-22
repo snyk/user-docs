@@ -1,5 +1,6 @@
 ---
 description: How Snyk Broker signs commits for fixes and upgrades, available on Enterprise plans
+nav_context: agnostic
 ---
 
 # Snyk Broker - commit signing

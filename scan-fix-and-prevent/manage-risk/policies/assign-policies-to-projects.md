@@ -1,5 +1,6 @@
 ---
 description: How to assign Snyk policies to Projects
+nav_context: classic
 ---
 
 # Assign policies to Projects

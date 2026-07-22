@@ -1,5 +1,6 @@
 ---
 description: How to set up Snyk Insights to customize risk prioritization
+nav_context: classic
 ---
 
 # Set up Insights

@@ -1,5 +1,6 @@
 ---
 description: How to scan open source libraries and licenses with Snyk Open Source
+nav_context: classic
 ---
 
 # Scan open-source libraries and licenses

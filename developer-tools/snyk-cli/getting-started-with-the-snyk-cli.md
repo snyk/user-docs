@@ -1,5 +1,6 @@
 ---
 description: How to get started with the Snyk CLI, from installation to your first scan
+nav_context: classic
 ---
 
 # Getting started with the Snyk CLI

@@ -1,5 +1,6 @@
 ---
 description: How to use the snyk log4shell command to scan for the Log4Shell vulnerability
+nav_context: agnostic
 ---
 
 # Log4shell command use

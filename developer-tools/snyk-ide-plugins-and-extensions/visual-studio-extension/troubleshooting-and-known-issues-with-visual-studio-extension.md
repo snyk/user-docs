@@ -1,5 +1,6 @@
 ---
 description: How to troubleshoot the Snyk Visual Studio extension, including known issues and unsupported systems
+nav_context: classic
 ---
 
 # Troubleshooting and known issues with Visual Studio extension

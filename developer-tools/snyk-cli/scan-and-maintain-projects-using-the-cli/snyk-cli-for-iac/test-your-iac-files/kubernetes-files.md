@@ -1,5 +1,6 @@
 ---
 description: How to test Kubernetes files with Snyk IaC using the CLI
+nav_context: agnostic
 ---
 
 # Kubernetes files

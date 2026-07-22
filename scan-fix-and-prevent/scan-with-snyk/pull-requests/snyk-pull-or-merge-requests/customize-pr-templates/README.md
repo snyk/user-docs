@@ -1,5 +1,6 @@
 ---
 description: How to customize Snyk pull request templates
+nav_context: agnostic
 ---
 
 # Customize PR templates

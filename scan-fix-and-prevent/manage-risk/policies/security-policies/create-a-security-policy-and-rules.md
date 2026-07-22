@@ -1,5 +1,6 @@
 ---
 description: How to create a Snyk security policy and its rules
+nav_context: classic
 ---
 
 # Create a security policy and rules

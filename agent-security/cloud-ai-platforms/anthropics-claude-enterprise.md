@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Anthropic's Claude Enterprise
 
 {% hint style="info" %}

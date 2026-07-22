@@ -1,5 +1,6 @@
 ---
 description: How Snyk Open Source integrates with private package repositories
+nav_context: agnostic
 ---
 
 # Package repository integrations

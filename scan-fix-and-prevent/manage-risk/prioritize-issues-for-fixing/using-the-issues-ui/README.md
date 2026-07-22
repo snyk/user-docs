@@ -1,5 +1,6 @@
 ---
 description: How to use the Issues UI with Snyk AppRisk
+nav_context: agnostic
 ---
 
 # Using the Issues UI with Snyk AppRisk

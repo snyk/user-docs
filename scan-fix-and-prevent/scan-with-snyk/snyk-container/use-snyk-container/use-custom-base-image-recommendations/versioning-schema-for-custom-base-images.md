@@ -1,5 +1,6 @@
 ---
 description: How versioning schemas work for custom base image recommendations
+nav_context: agnostic
 ---
 
 # Versioning schemas for custom base images

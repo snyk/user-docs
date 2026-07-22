@@ -1,5 +1,6 @@
 ---
 description: How Snyk Repo Content Sync keeps repository content current
+nav_context: classic
 ---
 
 # Snyk Repo Content Sync

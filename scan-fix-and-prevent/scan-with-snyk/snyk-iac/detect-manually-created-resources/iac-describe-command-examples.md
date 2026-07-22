@@ -1,5 +1,6 @@
 ---
 description: Examples of the snyk iac describe command for drift detection
+nav_context: classic
 ---
 
 # IaC describe command examples

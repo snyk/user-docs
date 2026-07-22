@@ -1,5 +1,6 @@
 ---
 description: How to use Snyk IaC custom rules within a CI/CD pipeline
+nav_context: classic
 ---
 
 # IaC custom rules within a pipeline

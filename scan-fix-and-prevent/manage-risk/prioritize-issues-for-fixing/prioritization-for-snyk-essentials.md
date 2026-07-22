@@ -1,5 +1,6 @@
 ---
 description: How Snyk Essentials prioritizes issues using holistic risk
+nav_context: agnostic
 ---
 
 # Prioritization for Snyk Essentials

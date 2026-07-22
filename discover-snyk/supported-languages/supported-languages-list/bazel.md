@@ -1,5 +1,6 @@
 ---
 description: Snyk support for Bazel with Snyk Open Source, including testing Bazel v7 Projects through the Dep Graph API
+nav_context: agnostic
 ---
 
 # Bazel

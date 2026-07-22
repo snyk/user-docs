@@ -1,5 +1,6 @@
 ---
 description: What Snyk Apps are and how they extend Snyk functionality through integrations
+nav_context: classic
 ---
 
 # About Snyk Apps

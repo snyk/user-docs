@@ -1,5 +1,6 @@
 ---
 description: How to configure repository monitoring in Snyk
+nav_context: classic
 ---
 
 # Configure repository monitoring

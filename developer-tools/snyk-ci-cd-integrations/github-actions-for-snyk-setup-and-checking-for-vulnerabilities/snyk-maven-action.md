@@ -1,5 +1,6 @@
 ---
 description: Examples of using the Snyk GitHub Action for Maven
+nav_context: agnostic
 ---
 
 # Snyk Maven action

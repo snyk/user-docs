@@ -1,5 +1,6 @@
 ---
 description: Customer prerequisites for a Snyk Jumpstart consultant-led implementation engagement
+nav_context: agnostic
 ---
 
 # Snyk Jumpstart Customer Prerequisites

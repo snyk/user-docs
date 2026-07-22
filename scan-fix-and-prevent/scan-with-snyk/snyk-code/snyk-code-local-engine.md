@@ -1,5 +1,6 @@
 ---
 description: How Snyk Code Local Engine runs Snyk Code analysis within your network
+nav_context: classic
 ---
 
 # Snyk Code Local Engine

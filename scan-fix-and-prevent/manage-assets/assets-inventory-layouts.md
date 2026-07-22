@@ -1,5 +1,6 @@
 ---
 description: The tabs in the Snyk assets inventory
+nav_context: classic
 ---
 
 # Assets inventory tabs

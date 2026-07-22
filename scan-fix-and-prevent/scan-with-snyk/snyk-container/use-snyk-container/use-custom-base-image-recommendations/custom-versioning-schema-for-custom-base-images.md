@@ -1,5 +1,6 @@
 ---
 description: How to define a custom versioning schema for custom base images
+nav_context: agnostic
 ---
 
 # Custom versioning schema for custom base images

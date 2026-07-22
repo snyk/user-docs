@@ -1,5 +1,6 @@
 ---
 description: Common scenarios and processes for using the Snyk API
+nav_context: agnostic
 ---
 
 # Scenarios for using the Snyk API

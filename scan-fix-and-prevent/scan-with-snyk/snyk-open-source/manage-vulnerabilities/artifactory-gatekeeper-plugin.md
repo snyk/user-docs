@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Artifactory Gatekeeper Plugin blocks vulnerable packages
+nav_context: classic
 ---
 
 # Artifactory Gatekeeper Plugin
