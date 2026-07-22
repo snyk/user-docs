@@ -1,5 +1,6 @@
 ---
 description: The built-in Snyk API and Web scan profiles and their differences
+nav_context: agnostic
 ---
 
 # Built-in scan profiles and their differences

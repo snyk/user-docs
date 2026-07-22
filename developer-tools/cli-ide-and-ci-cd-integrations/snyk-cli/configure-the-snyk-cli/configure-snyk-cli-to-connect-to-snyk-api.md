@@ -1,5 +1,6 @@
 ---
 description: How to configure how the Snyk CLI connects to the Snyk API, including the platform URL and region
+nav_context: agnostic
 ---
 
 # Configure Snyk CLI to connect to Snyk API

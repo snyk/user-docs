@@ -1,5 +1,6 @@
 ---
 description: How the scm-contributors-count tool counts GitLab contributors
+nav_context: agnostic
 ---
 
 # GitLab - Flow and Tech

@@ -1,5 +1,6 @@
 ---
 description: How Snyk uses vulnerable conditions to refine prioritization
+nav_context: agnostic
 ---
 
 # Vulnerable conditions

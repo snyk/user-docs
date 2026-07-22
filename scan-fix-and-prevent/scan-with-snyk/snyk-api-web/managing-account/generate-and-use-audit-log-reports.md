@@ -1,5 +1,6 @@
 ---
 description: How to generate and use audit log reports in Snyk API and Web
+nav_context: classic
 ---
 
 # Generate and use audit log reports

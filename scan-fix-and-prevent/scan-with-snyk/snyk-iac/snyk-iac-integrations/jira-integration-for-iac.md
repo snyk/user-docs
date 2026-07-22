@@ -1,5 +1,6 @@
 ---
 description: How to use the Jira integration with Snyk IaC
+nav_context: agnostic
 ---
 
 # Jira integration for Snyk IaC

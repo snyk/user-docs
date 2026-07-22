@@ -1,5 +1,6 @@
 ---
 description: How to remove a Snyk cloud environment
+nav_context: agnostic
 ---
 
 # Remove a cloud environment

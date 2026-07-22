@@ -1,5 +1,6 @@
 ---
 description: How the OS condition risk factor affects Snyk issue prioritization
+nav_context: agnostic
 ---
 
 # Risk factor: OS condition

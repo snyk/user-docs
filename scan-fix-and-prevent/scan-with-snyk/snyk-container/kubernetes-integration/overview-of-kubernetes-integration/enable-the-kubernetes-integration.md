@@ -1,5 +1,6 @@
 ---
 description: How to enable the Snyk Kubernetes integration
+nav_context: classic
 ---
 
 # Enable the Kubernetes integration

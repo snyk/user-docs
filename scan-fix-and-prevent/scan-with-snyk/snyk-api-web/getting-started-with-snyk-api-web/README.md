@@ -1,5 +1,6 @@
 ---
 description: How to get started with Snyk API and Web dynamic application security testing
+nav_context: classic
 ---
 
 # Getting started with Snyk API & Web

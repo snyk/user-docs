@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Ruby
+nav_context: agnostic
 ---
 
 # Ruby rules

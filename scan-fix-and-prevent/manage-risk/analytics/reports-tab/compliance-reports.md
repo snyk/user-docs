@@ -1,5 +1,6 @@
 ---
 description: The compliance reports in Snyk Analytics
+nav_context: classic
 ---
 
 # Compliance reports

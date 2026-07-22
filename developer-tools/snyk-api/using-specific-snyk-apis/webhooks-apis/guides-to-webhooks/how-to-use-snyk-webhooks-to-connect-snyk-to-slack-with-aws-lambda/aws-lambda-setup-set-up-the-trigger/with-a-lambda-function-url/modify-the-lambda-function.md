@@ -1,5 +1,6 @@
 ---
 description: How to modify the AWS Lambda function for the Snyk to Slack integration
+nav_context: classic
 ---
 
 # Modify the Lambda function

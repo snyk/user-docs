@@ -1,5 +1,6 @@
 ---
 description: How to use your own container registry, tag, and image pull secret for the Snyk Broker Helm chart
+nav_context: agnostic
 ---
 
 # Image repository, tab, and Image Pull Secret

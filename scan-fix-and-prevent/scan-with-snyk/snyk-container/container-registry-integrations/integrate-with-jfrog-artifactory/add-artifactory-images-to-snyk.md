@@ -1,5 +1,6 @@
 ---
 description: How to add JFrog Artifactory images to Snyk
+nav_context: classic
 ---
 
 # Add Artifactory images to Snyk

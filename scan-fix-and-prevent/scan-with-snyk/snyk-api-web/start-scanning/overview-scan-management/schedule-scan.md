@@ -1,5 +1,6 @@
 ---
 description: How to schedule a Snyk API and Web scan
+nav_context: classic
 ---
 
 # Schedule scan

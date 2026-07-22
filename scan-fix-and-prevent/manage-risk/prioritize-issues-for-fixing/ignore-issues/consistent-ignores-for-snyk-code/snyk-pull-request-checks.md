@@ -1,5 +1,6 @@
 ---
 description: How Consistent Ignores for Snyk Code work in pull request checks
+nav_context: agnostic
 ---
 
 # Consistent Ignores for Snyk Code Pull Request Checks

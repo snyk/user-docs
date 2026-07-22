@@ -1,5 +1,6 @@
 ---
 description: How Snyk Projects organize the code and artifacts you scan and monitor
+nav_context: classic
 ---
 
 # Snyk Projects

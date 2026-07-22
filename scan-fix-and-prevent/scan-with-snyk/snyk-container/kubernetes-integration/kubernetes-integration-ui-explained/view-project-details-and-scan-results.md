@@ -1,5 +1,6 @@
 ---
 description: How to view Kubernetes Project details and scan results
+nav_context: classic
 ---
 
 # View Project details and scan results

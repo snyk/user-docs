@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Getting started with Snyk Studio
 
 Snyk Studio supports a default hooks-based approach for some agentic development environments (ADEs) to ensure code written by AI coding assistants is secure at inception (SAI):

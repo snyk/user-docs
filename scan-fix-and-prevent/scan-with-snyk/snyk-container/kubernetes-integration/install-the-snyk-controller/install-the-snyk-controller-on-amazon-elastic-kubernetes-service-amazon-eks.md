@@ -1,5 +1,6 @@
 ---
 description: How to install the Snyk Controller on Amazon EKS
+nav_context: classic
 ---
 
 # Install the Snyk Controller on Amazon Elastic Kubernetes Service (Amazon EKS)

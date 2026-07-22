@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Security Scan task runs on each Azure Pipelines build
+nav_context: agnostic
 ---
 
 # How the Snyk Security Scan task works

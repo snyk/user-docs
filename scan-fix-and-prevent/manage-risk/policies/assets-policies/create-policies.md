@@ -1,5 +1,6 @@
 ---
 description: How to create asset policies in Snyk Essentials
+nav_context: classic
 ---
 
 # Create policies

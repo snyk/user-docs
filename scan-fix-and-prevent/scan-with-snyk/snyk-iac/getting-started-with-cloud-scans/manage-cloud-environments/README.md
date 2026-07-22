@@ -1,5 +1,6 @@
 ---
 description: How to manage cloud environments in Snyk
+nav_context: agnostic
 ---
 
 # Manage cloud environments

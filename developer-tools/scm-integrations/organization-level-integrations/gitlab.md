@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk GitLab SCM integration, available on Enterprise plans and with Snyk Broker
+nav_context: classic
 ---
 
 # GitLab

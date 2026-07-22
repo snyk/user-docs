@@ -1,5 +1,6 @@
 ---
 description: How to troubleshoot the Snyk Eclipse plugin, including unsupported end-of-life operating systems
+nav_context: classic
 ---
 
 # Troubleshooting for the Eclipse plugin

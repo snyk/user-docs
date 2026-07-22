@@ -1,5 +1,6 @@
 ---
 description: How to identify the fully qualified name (FQN) of a sanitizer function for a Snyk Code Rule Extension
+nav_context: agnostic
 ---
 
 # Identify your sanitizer's FQN

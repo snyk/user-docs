@@ -1,5 +1,6 @@
 ---
 description: How to import and scan JavaScript repositories through Snyk SCM integrations, including Organization-level language settings
+nav_context: agnostic
 ---
 
 # SCM integrations for JavaScript

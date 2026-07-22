@@ -1,5 +1,6 @@
 ---
 description: What happens during a Snyk API and Web scan
+nav_context: agnostic
 ---
 
 # What happens during a scan

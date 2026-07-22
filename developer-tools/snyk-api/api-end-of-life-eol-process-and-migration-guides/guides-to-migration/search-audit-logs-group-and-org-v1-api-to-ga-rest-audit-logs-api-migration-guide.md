@@ -1,5 +1,6 @@
 ---
 description: Migration guide from the V1 Search Audit Logs API to the GA REST Audit Logs API
+nav_context: agnostic
 ---
 
 # Search Audit Logs (Group and Org) v1 API to GA REST Audit logs API migration guide

@@ -1,5 +1,6 @@
 ---
 description: How to generate an API key for Snyk API and Web
+nav_context: classic
 ---
 
 # Generate API key

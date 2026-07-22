@@ -1,5 +1,6 @@
 ---
 description: How Snyk Code analysis breaks down results after importing a repository
+nav_context: classic
 ---
 
 # Breakdown of Code analysis

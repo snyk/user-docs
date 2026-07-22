@@ -1,5 +1,6 @@
 ---
 description: How to fix code vulnerabilities automatically with Snyk Code fixes
+nav_context: classic
 ---
 
 # Fix code vulnerabilities automatically

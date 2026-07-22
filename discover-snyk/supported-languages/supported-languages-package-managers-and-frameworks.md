@@ -1,5 +1,6 @@
 ---
 description: Language, package manager, and framework support across Snyk Open Source and Snyk Code, with pointers to Snyk Container coverage
+nav_context: agnostic
 ---
 
 # Supported languages, package managers, and frameworks

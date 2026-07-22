@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk Open Source into your workflow using the CLI
+nav_context: classic
 ---
 
 # Integrate Snyk into your workflow using the CLI

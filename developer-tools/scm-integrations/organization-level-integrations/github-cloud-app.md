@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk GitHub Cloud App integration, including use with Universal Broker
+nav_context: classic
 ---
 
 # GitHub Cloud App

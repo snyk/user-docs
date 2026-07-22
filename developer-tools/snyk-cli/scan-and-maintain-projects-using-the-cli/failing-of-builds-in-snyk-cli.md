@@ -1,5 +1,6 @@
 ---
 description: How the snyk test command fails builds based on vulnerabilities found
+nav_context: classic
 ---
 
 # Failing of builds in Snyk CLI

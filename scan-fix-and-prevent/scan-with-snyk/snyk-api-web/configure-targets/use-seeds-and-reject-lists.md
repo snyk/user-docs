@@ -1,5 +1,6 @@
 ---
 description: How to use seeds and reject lists to control Snyk API and Web crawling
+nav_context: classic
 ---
 
 # Use seeds and reject lists

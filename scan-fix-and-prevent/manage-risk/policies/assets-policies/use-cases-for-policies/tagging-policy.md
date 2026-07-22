@@ -1,5 +1,6 @@
 ---
 description: How to use a labeling policy to categorize assets in Snyk Essentials
+nav_context: agnostic
 ---
 
 # Labeling policy

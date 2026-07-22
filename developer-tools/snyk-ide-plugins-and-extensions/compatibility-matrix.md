@@ -1,4 +1,5 @@
 ---
+nav_context: agnostic
 description: The Snyk IDE plugin and Snyk CLI compatibility matrix for versions released in the past 12 months
 ---
 

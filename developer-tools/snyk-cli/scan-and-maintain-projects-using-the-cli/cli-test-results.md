@@ -1,5 +1,6 @@
 ---
 description: How to read Snyk CLI test results after running snyk test
+nav_context: agnostic
 ---
 
 # CLI test results

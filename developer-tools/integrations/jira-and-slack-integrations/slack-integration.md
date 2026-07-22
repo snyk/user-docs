@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk Slack integration, with the Slack App recommended
+nav_context: classic
 ---
 
 # Slack integration

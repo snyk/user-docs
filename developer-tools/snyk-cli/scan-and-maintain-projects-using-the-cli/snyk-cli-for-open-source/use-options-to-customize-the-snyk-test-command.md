@@ -1,5 +1,6 @@
 ---
 description: How to customize the snyk test command with options for Snyk Open Source
+nav_context: agnostic
 ---
 
 # Use options to customize the snyk test command

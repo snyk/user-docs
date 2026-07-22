@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Go
+nav_context: agnostic
 ---
 
 # Go rules

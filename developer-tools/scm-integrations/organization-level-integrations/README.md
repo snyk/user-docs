@@ -1,5 +1,6 @@
 ---
 description: How Snyk provides Organization-level SCM integrations with GitHub, GitLab, Bitbucket, and more
+nav_context: agnostic
 ---
 
 # Organization-level integrations

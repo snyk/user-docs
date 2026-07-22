@@ -1,5 +1,6 @@
 ---
 description: About Snyk webhooks, in beta
+nav_context: agnostic
 ---
 
 # About webhooks

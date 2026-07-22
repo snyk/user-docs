@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Evo chat
 
 ## What is Evo chat?

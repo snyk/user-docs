@@ -1,5 +1,6 @@
 ---
 description: The GitHub resources Snyk IaC supports for drift detection
+nav_context: agnostic
 ---
 
 # GitHub resources

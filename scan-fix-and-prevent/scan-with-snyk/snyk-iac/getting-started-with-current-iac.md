@@ -1,5 +1,6 @@
 ---
 description: How to get started with Snyk IaC
+nav_context: classic
 ---
 
 # Getting started with Snyk IaC

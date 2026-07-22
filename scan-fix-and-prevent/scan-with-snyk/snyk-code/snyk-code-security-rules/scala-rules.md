@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Scala
+nav_context: agnostic
 ---
 
 # Scala rules

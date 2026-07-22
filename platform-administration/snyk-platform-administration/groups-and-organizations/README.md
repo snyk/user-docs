@@ -1,5 +1,6 @@
 ---
 description: The Snyk hierarchy of Tenant, Groups, and Organizations, and how it controls access to Snyk scanning and features
+nav_context: classic
 ---
 
 # Tenant, Groups, and Organizations

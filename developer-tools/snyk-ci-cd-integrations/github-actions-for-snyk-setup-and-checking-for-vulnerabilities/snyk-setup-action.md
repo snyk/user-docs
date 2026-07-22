@@ -1,5 +1,6 @@
 ---
 description: The Snyk Setup GitHub Action for installing the Snyk CLI to check for vulnerabilities
+nav_context: agnostic
 ---
 
 # Snyk Setup action

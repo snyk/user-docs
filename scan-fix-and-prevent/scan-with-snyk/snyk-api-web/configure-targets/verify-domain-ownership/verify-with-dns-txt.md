@@ -1,5 +1,6 @@
 ---
 description: How to verify domain ownership with a DNS TXT record for Snyk API and Web
+nav_context: classic
 ---
 
 # Verify domain with DNS TXT record

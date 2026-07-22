@@ -1,5 +1,6 @@
 ---
 description: A dictionary of the issue columns in Snyk reporting
+nav_context: classic
 ---
 
 # Issue columns dictionary

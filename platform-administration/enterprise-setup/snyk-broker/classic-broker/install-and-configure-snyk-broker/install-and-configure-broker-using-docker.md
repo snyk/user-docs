@@ -1,5 +1,6 @@
 ---
 description: How to install and configure the Classic Snyk Broker using Docker
+nav_context: agnostic
 ---
 
 # Install and configure Broker using Docker

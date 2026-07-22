@@ -1,5 +1,6 @@
 ---
 description: The removed Snyk GitHub Action for Scala, with migration guidance
+nav_context: agnostic
 ---
 
 # Snyk Scala action

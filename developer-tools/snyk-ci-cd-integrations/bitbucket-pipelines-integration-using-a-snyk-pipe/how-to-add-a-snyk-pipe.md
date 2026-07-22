@@ -1,5 +1,6 @@
 ---
 description: How to add a Snyk pipe to a Bitbucket Pipelines pipeline
+nav_context: classic
 ---
 
 # How to add a Snyk pipe

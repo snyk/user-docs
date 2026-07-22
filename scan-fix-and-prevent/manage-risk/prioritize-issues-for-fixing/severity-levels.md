@@ -1,5 +1,6 @@
 ---
 description: How Snyk severity levels help you prioritize issues
+nav_context: classic
 ---
 
 # Severity levels

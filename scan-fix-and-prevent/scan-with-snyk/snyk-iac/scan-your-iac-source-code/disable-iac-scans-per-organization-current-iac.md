@@ -1,5 +1,6 @@
 ---
 description: How to disable Snyk IaC scans for an Organization
+nav_context: classic
 ---
 
 # Disable IaC scans per Organization

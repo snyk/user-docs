@@ -1,5 +1,6 @@
 ---
 description: How to enable early Snyk Preview features, separate from IDE plugin preview features
+nav_context: classic
 ---
 
 # Snyk Preview

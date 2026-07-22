@@ -1,5 +1,6 @@
 ---
 description: Example of setting up Snyk custom mapping for Okta roles using legacy custom mapping
+nav_context: classic
 ---
 
 # Example: setting up custom mapping for Okta

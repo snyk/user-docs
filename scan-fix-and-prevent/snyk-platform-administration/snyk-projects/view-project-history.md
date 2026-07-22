@@ -1,5 +1,6 @@
 ---
 description: How to view the history of a Project
+nav_context: classic
 ---
 
 # View Project history

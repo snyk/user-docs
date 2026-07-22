@@ -1,5 +1,6 @@
 ---
 description: How to set up the Universal Broker with the public REST API that the snyk-broker-config CLI tool is built on
+nav_context: agnostic
 ---
 
 # Using the API to set up Universal Broker

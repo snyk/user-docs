@@ -1,5 +1,6 @@
 ---
 description: How Snyk uses generative AI across its platform, including the third-party models that power its AI features
+nav_context: agnostic
 ---
 
 # How Snyk incorporates generative AI into the platform

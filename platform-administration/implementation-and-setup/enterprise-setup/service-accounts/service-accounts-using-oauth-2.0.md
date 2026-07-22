@@ -1,5 +1,6 @@
 ---
 description: How to create and use Snyk service accounts with OAuth 2.0, available on Enterprise plans through the Snyk API
+nav_context: classic
 ---
 
 # Service accounts using OAuth 2.0

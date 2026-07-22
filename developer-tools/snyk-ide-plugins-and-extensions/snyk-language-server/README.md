@@ -1,5 +1,6 @@
 ---
 description: The Snyk Language Server that powers Snyk functionality across supported IDEs
+nav_context: agnostic
 ---
 
 # Snyk Language Server

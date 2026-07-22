@@ -1,5 +1,6 @@
 ---
 description: Custom role template for a Legal Advisor, an Organization-level role to manage security and license policies and export reports
+nav_context: agnostic
 ---
 
 # Legal Advisor role template

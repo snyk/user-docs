@@ -1,5 +1,6 @@
 ---
 description: How to add Project Attributes as metadata to filter and report on subsets of your Organization
+nav_context: agnostic
 ---
 
 # Add project attributes

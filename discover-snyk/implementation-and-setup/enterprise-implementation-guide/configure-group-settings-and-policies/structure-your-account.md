@@ -1,5 +1,6 @@
 ---
 description: How to plan your Snyk Group structure, the highest administrative level, for enterprise account management
+nav_context: agnostic
 ---
 
 # Structure your account

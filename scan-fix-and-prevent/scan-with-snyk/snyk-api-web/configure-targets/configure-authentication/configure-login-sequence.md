@@ -1,5 +1,6 @@
 ---
 description: How to configure a login sequence for Snyk API and Web targets
+nav_context: classic
 ---
 
 # Login sequence

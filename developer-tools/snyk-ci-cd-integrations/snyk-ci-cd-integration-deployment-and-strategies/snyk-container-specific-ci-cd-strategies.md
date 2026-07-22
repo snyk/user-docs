@@ -1,5 +1,6 @@
 ---
 description: CI/CD strategies for running Snyk Container after the container image is built
+nav_context: agnostic
 ---
 
 # Snyk Container-specific CI/CD strategies

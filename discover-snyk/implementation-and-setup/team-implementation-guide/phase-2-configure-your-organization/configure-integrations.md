@@ -1,5 +1,6 @@
 ---
 description: How to configure Snyk SCM and CI/CD integrations for your Organization, including recommended settings
+nav_context: agnostic
 ---
 
 # Configure integrations

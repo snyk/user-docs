@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # AI-SPM
 
 AI Security Posture Management (AI-SPM) gives you visibility, governance, and security oversight of the AI assets in your code. It maps your assets, scores their risk, and helps you enforce governance, so you can maintain compliance and make informed decisions about your AI infrastructure.

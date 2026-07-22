@@ -1,5 +1,6 @@
 ---
 description: Why the Snyk CLI may execute code from your Project during analysis
+nav_context: agnostic
 ---
 
 # Code execution warning for Snyk CLI

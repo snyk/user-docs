@@ -1,5 +1,6 @@
 ---
 description: Snyk support for the uv package manager with Python, available in Early Access on Enterprise plans through the CLI and SCM
+nav_context: agnostic
 ---
 
 # Support for uv

@@ -1,5 +1,6 @@
 ---
 description: Snyk service accounts for non-interactive API access, available on Enterprise plans
+nav_context: classic
 ---
 
 # Service accounts

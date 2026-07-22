@@ -1,5 +1,6 @@
 ---
 description: How to integrate and test container security with Microsoft Azure Container Registry (ACR)
+nav_context: agnostic
 ---
 
 # Container security with ACR: integrate and test

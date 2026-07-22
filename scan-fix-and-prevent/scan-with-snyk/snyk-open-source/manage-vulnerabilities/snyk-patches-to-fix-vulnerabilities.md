@@ -1,5 +1,6 @@
 ---
 description: How Snyk patches fix vulnerabilities when no upgrade is available
+nav_context: classic
 ---
 
 # Snyk patches to fix vulnerabilities

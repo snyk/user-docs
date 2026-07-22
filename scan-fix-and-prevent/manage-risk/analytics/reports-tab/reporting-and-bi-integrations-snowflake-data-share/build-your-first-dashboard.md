@@ -1,5 +1,6 @@
 ---
 description: How to build your first dashboard with the Snyk Data Share
+nav_context: classic
 ---
 
 # Build your first dashboard

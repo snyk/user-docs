@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Swift
+nav_context: agnostic
 ---
 
 # Swift rules

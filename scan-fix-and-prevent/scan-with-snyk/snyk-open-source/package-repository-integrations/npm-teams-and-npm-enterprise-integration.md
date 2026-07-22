@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk with npm Teams and npm Enterprise
+nav_context: classic
 ---
 
 # npm Teams and npm Enterprise integration

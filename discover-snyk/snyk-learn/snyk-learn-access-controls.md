@@ -1,6 +1,7 @@
 ---
 description: >-
   How to manage Snyk Learn access controls for assignment and report permissions across your Organization
+nav_context: agnostic
 ---
 
 # Snyk Learn access controls

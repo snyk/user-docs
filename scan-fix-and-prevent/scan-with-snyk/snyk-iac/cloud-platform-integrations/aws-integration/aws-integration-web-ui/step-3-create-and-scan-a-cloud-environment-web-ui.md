@@ -1,5 +1,6 @@
 ---
 description: 'Step 3: create and scan a cloud environment for AWS in the Web UI'
+nav_context: classic
 ---
 
 # Step 3: Create and scan a Cloud Environment (Web UI)

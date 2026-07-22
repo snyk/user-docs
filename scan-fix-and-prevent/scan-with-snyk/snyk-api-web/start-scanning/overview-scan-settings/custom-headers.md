@@ -1,5 +1,6 @@
 ---
 description: How to configure custom headers for Snyk API and Web scans
+nav_context: classic
 ---
 
 # Custom headers

@@ -1,5 +1,6 @@
 ---
 description: About the Snyk V1 API, available on Enterprise plans
+nav_context: agnostic
 ---
 
 # V1 API

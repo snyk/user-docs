@@ -1,5 +1,6 @@
 ---
 description: How to apply Snyk policies across the software development lifecycle
+nav_context: agnostic
 ---
 
 # Use policies in the SDLC

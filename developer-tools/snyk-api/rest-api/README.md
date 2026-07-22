@@ -1,5 +1,6 @@
 ---
 description: Introduction to the Snyk REST API and resources to help you get started
+nav_context: agnostic
 ---
 
 # REST API

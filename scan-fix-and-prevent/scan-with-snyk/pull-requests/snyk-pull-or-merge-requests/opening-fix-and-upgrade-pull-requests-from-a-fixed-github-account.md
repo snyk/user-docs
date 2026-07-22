@@ -1,5 +1,6 @@
 ---
 description: How to open Snyk fix and upgrade pull requests from a fixed GitHub account
+nav_context: classic
 ---
 
 # Opening fix and upgrade pull requests from a fixed GitHub account

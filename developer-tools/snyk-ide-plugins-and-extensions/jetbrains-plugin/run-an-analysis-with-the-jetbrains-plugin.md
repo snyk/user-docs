@@ -1,5 +1,6 @@
 ---
 description: How to run a Snyk scan in the JetBrains plugin once it is configured, authenticated, and trusted
+nav_context: classic
 ---
 
 # Run an analysis with the JetBrains plugin

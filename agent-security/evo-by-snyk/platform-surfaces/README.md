@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Platform surfaces
 
 Evo organizes the product into four main surfaces:

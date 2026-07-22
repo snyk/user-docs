@@ -1,5 +1,6 @@
 ---
 description: Prerequisites for the Snyk CLI and Jenkins plugin on Alpine Linux
+nav_context: agnostic
 ---
 
 # Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system

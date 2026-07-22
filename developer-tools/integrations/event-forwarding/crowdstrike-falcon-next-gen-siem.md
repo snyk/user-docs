@@ -1,5 +1,6 @@
 ---
 description: How to forward Snyk events to CrowdStrike Falcon Next-Gen SIEM, in Early Access on Enterprise plans
+nav_context: classic
 ---
 
 # CrowdStrike Falcon Next-Gen SIEM

@@ -1,5 +1,6 @@
 ---
 description: How to view Snyk IaC configuration results for Terraform, Kubernetes, and CloudFormation in VS Code
+nav_context: classic
 ---
 
 # Analysis results: Snyk IaC configuration
