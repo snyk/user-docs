@@ -1,3 +1,7 @@
+---
+description: How to understand Snyk Container results from the CLI
+---
+
 # Understand Snyk Container CLI results
 
 ## Vulnerability information

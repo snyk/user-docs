@@ -1,3 +1,7 @@
+---
+description: How to install and configure Snyk Broker for Azure Repos using Helm
+---
+
 # Azure Repos - install and configure and configure using Helm
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: How the Snyk Credits plan consolidates capabilities into flexible, usage-based credits
+---
+
 # Snyk Platform credits
 
 ### Credits for the Snyk Credits plan

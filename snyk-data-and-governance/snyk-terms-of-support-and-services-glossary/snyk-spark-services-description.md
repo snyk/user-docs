@@ -1,6 +1,7 @@
 ---
 hidden: true
 noIndex: true
+description: Service description for Snyk Spark, a program that helps customers adopt and expand their use of Snyk
 ---
 
 # Snyk Spark Services Description

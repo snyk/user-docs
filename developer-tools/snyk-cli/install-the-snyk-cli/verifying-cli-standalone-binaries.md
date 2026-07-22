@@ -1,3 +1,7 @@
+---
+description: How to verify the shasum and signature of Snyk CLI standalone binaries
+---
+
 # Verifying CLI standalone binaries
 
 You can verify both the shasum of downloaded binaries and their GPG signatures.

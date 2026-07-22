@@ -1,3 +1,7 @@
+---
+description: How to identify Snyk API and Web scanner requests
+---
+
 # Identify scanner requests
 
 When running target scans, you can use the information in the user-agent header to identify HTTP requests from Snyk API & Web.

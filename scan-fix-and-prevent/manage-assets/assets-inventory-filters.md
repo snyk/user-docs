@@ -1,3 +1,7 @@
+---
+description: How to filter the Snyk assets inventory
+---
+
 # Assets inventory filters
 
 From the **Inventory** > **All Assets** tab, you can use the search bar to look for specific keywords across assets. Results can include the asset name and data retrieved from the **Attributes** tab of an asset.
@@ -104,7 +108,7 @@ To resolve this issue, select the unenriched repositories that are not being dis
 
 Example:
 
-<figure><img src="../.gitbook/assets/image (416).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/assets-discovered-group-organization-level-integrations.png" alt=""><figcaption></figcaption></figure>
 
 Check if the repository still exists in the SCM. If it was deleted, remove the asset by deleting its Snyk target.
 

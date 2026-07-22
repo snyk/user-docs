@@ -1,3 +1,7 @@
+---
+description: The maximum number of Projects allowed in an Organization
+---
+
 # Maximum number of Projects in an Organization
 
 The number of Projects you can have in a single Snyk Organization depends on your Snyk [pricing plan](https://snyk.io/plans/).

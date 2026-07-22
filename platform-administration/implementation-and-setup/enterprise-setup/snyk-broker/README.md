@@ -1,3 +1,7 @@
+---
+description: Snyk Broker, an open-source proxy that securely connects Snyk to on-premises and private-network systems, on Enterprise plans
+---
+
 # Snyk Broker
 
 {% hint style="info" %}

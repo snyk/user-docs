@@ -1,3 +1,7 @@
+---
+description: How to analyze Snyk Pull Request check results
+---
+
 # Analyze PR checks results
 
 ## PR checks results

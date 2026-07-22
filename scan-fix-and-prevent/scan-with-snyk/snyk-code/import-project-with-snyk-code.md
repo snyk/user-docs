@@ -1,3 +1,7 @@
+---
+description: How to import a Project to scan with Snyk Code
+---
+
 # Import Project with Snyk Code
 
 Imported Projects are organized under Target folders on the Projects page, named after the Git repository account and specific repository. See [Import a Project to scan and identify issues](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started#import-a-project-to-scan-and-identify-issues).

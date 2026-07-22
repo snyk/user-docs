@@ -1,3 +1,7 @@
+---
+description: How to resolve Snyk OAuth 2.0 authentication problems in IDE plugins
+---
+
 # OAuth 2.0 authentication does not work
 
 ## A new browser tab does not open automatically  <a href="#windows" id="windows"></a>

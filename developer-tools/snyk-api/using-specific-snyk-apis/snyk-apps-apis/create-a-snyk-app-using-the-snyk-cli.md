@@ -1,3 +1,7 @@
+---
+description: How to create a Snyk App using the Snyk CLI
+---
+
 # Create a Snyk App using the Snyk CLI
 
 {% hint style="warning" %}

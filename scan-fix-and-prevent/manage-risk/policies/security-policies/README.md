@@ -1,3 +1,7 @@
+---
+description: How Group administrators define Snyk security policies
+---
+
 # Security policies
 
 Group administrators can define Open Source and Container security policies, providing an automated way to identify certain issues or types of issues and apply actions like changing the severity of or ignoring an issue based on specified conditions.

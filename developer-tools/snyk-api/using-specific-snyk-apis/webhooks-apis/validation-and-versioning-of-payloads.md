@@ -1,3 +1,7 @@
+---
+description: How to validate Snyk webhook payloads and handle payload versioning
+---
+
 # Validation and versioning of payloads
 
 ## Validating payloads

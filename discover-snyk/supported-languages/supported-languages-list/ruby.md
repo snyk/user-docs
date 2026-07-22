@@ -1,3 +1,7 @@
+---
+description: Snyk support for Ruby with Snyk Code and Snyk Open Source, including SCM import, CLI and IDE testing, and supported versions
+---
+
 # Ruby
 
 ## Applicability and integration

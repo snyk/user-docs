@@ -1,3 +1,7 @@
+---
+description: Advanced configuration options for a Snyk Broker Docker installation, including multi-tenant region settings
+---
+
 # Advanced configuration for Snyk Broker Docker installation
 
 {% hint style="info" %}

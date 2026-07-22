@@ -1,3 +1,7 @@
+---
+description: How to configure signed requests for Snyk API and Web targets
+---
+
 # Configure signed requests
 
 Configure signed requests to ensure data integrity and authenticity for your API targets in Snyk API & Web.

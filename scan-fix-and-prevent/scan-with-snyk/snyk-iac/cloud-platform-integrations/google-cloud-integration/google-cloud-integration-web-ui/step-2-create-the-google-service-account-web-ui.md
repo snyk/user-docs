@@ -1,3 +1,7 @@
+---
+description: 'Step 2: create the Google service account for the Snyk integration in the Web UI'
+---
+
 # Step 2: Create the Google service account (Web UI)
 
 {% hint style="info" %}

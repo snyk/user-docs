@@ -1,14 +1,18 @@
+---
+description: How to review Snyk Open Source results from the CLI
+---
+
 # Review the Snyk Open Source CLI results
 
 After you run the `snyk test` command in the CLI, the Snyk Open Source test results are displayed. The report of results includes a summary of the test findings, a list of vulnerability issues detected, and descriptive information about the Snyk Project tested.
 
-<figure><img src="../../../.gitbook/assets/image (40).png" alt="Snyk Open Source CLI test results."><figcaption><p>Snyk Open Source CLI test results</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-open-source-cli-test-results.png" alt="Snyk Open Source CLI test results."><figcaption><p>Snyk Open Source CLI test results</p></figcaption></figure>
 
 ## Summary of test findings
 
 The summary of the test findings at the beginning of the report of results shows the following:
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt="Snyk Open Source CLI dependencies tested, issues and vulnerabilities found."><figcaption><p>Snyk Open Source CLI dependencies tested, issues and vulnerabilities found</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-open-source-cli-dependencies-tested-issues.png" alt="Snyk Open Source CLI dependencies tested, issues and vulnerabilities found."><figcaption><p>Snyk Open Source CLI dependencies tested, issues and vulnerabilities found</p></figcaption></figure>
 
 * The number of direct and transitive dependencies scanned
 * Total number of issues found across one or more paths

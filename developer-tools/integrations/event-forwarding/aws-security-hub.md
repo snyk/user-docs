@@ -1,3 +1,7 @@
+---
+description: How to send Snyk issues to AWS Security Hub to centralize your security reporting
+---
+
 # AWS Security Hub
 
 The [AWS Security Hub](https://aws.amazon.com/security-hub/) integration sends Snyk issues to Security Hub, allowing you to centralize your security reporting, build custom alerting, and trigger automation. After it is configured, the integration automatically uploads Snyk issues to Security Hub as security findings. When issues are updated or new remediations become available, the corresponding Security Hub findings are automatically updated.

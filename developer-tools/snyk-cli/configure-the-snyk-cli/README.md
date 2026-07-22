@@ -1,3 +1,7 @@
+---
+description: How to configure the Snyk CLI using environment variables
+---
+
 # Configure the Snyk CLI
 
 You can use [environment variables](environment-variables-for-snyk-cli.md) to configure the Snyk CLI.

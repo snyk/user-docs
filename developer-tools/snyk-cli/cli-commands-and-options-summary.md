@@ -1,3 +1,7 @@
+---
+description: A summary of Snyk CLI commands and options
+---
+
 # CLI commands and options summary
 
 {% hint style="info" %}

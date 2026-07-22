@@ -1,3 +1,7 @@
+---
+description: How to use Project views to filter and organize Projects
+---
+
 # Project views
 
 On this page you will find information about how to create and use Project views:

@@ -1,3 +1,7 @@
+---
+description: How to resolve Snyk Code appearing disabled in an IDE plugin
+---
+
 # Snyk Code appears disabled
 
 ## **Problem**

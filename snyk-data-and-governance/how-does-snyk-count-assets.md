@@ -1,3 +1,7 @@
+---
+description: How Snyk counts billable assets managed through Snyk Essentials
+---
+
 # How Snyk counts assets
 
 ## Billable assets <a href="#billable-assets" id="billable-assets"></a>

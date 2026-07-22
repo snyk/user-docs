@@ -1,3 +1,7 @@
+---
+description: How to scan a cloud environment with Snyk
+---
+
 # Scan a cloud environment
 
 Snyk automatically runs a scan when a [cloud environment](../key-concepts-for-cloud-scans.md#environments) is created. After that, Snyk scans the environment once every 24 hours. You can also manually trigger a new scan at any time by using the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/scans).

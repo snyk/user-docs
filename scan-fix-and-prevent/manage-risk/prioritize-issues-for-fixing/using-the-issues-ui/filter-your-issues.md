@@ -1,3 +1,7 @@
+---
+description: How to filter your issues in the Snyk Issues UI
+---
+
 # Filter your issues
 
 Snyk Issues operates at the Group level and provides a holistic view of all the issues within that Group. Those issues are also tied to specific Organizations. Use the top-level filter to choose which Organizations are relevant to you and see only the issues in those Organizations.

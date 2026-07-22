@@ -1,3 +1,7 @@
+---
+description: How to set up cloud-based SCM integrations and Snyk Essentials for GitHub, GitLab, Azure DevOps, and Bitbucket
+---
+
 # Configure cloud-based SCM
 
 {% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}

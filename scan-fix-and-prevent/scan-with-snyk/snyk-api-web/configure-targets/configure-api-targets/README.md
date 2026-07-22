@@ -1,3 +1,7 @@
+---
+description: How to configure API targets for Snyk API and Web scanning
+---
+
 # API targets
 
 API targets scan endpoints defined in your API schema (OpenAPI, Postman Collection, or GraphQL). The scanner tests all endpoints from the schema, ensuring complete coverage of your API surface:

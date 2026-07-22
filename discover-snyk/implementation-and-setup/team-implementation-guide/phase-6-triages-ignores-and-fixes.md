@@ -1,3 +1,7 @@
+---
+description: 'Phase 6 of the Snyk team implementation: triage, prioritize, ignore, and fix vulnerabilities in your backlog'
+---
+
 # Phase 6: triages, ignores and fixes
 
 ## Tips for deciding on prioritization

@@ -1,3 +1,7 @@
+---
+description: How to add JFrog Artifactory images to Snyk
+---
+
 # Add Artifactory images to Snyk
 
 Snyk tests and monitors your Artifactory container images by evaluating the tags in your repositories.

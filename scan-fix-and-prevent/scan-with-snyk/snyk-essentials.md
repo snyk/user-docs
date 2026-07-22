@@ -1,3 +1,7 @@
+---
+description: How Snyk Essentials gives visibility into your application assets and their risk
+---
+
 # Snyk Essentials
 
 Snyk Essentials helps AppSec teams better operationalize and scale the use of Snyk with broad application visibility and security coverage management.

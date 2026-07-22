@@ -1,3 +1,7 @@
+---
+description: How to enable and configure Snyk PR and MR Checks to block new vulnerabilities in code changes
+---
+
 # Enable and configure Snyk on PRs
 
 ## Use PR Checks to introduce gating

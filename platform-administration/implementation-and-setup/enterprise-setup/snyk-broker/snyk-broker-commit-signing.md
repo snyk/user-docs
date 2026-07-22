@@ -1,3 +1,7 @@
+---
+description: How Snyk Broker signs commits for fixes and upgrades, available on Enterprise plans
+---
+
 # Snyk Broker - commit signing
 
 {% hint style="info" %}

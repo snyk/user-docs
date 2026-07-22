@@ -1,3 +1,7 @@
+---
+description: How to review Snyk reports at the Organization and Group level for insights into vulnerabilities across Projects
+---
+
 # Review reporting
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

@@ -1,3 +1,7 @@
+---
+description: How to gain insights into your security training program with Snyk Learn program reporting in the Learning Management add-on
+---
+
 # Program reporting
 
 {% hint style="info" %}
@@ -16,7 +20,7 @@ Read more about this report [here](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP
 [Learning Programs](../snyk-learn-learning-programs.md) are not included in the Engagement Report
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-09-29 at 19.30.57.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/learn-engagement-report.png" alt=""><figcaption></figcaption></figure>
 
 ## Learning Impact & Opportunities report
 
@@ -28,6 +32,6 @@ The goal of the Impact and Opportunities report is to provide insights into the 
 
 Read more about this report [here](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/reports-tab/education-reports#learning-impact-and-opportunities).
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-10-23 at 15.00.57.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/learning-impact-opportunities-report-3.png" alt=""><figcaption></figcaption></figure>
 
-<div><figure><img src="../../.gitbook/assets/Screenshot 2025-10-23 at 14.12.24.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-10-23 at 14.12.18.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/learning-impact-opportunities-report-2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/learning-impact-opportunities-report.png" alt=""><figcaption></figcaption></figure></div>

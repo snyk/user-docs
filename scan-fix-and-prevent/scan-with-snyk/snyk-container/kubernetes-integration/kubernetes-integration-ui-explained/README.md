@@ -1,3 +1,7 @@
+---
+description: How to navigate the Snyk Kubernetes integration UI
+---
+
 # Navigate the Kubernetes integration UI
 
 This section provides information on how to view and manage Kubernetes Projects details and scan results, as well as on the vulnerability Priority Score for Kubernetes Projects. See:

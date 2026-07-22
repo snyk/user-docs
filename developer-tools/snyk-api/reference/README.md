@@ -1,3 +1,7 @@
+---
+description: Snyk API reference, including the V1 and REST OpenAPI specifications
+---
+
 # Reference
 
 V1 API OpenAPI specification

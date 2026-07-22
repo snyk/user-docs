@@ -1,3 +1,7 @@
+---
+description: How Snyk Projects organize the code and artifacts you scan and monitor
+---
+
 # Snyk Projects
 
 Snyk Project information appears in the **Projects** listing, which you can display from the menu on the Snyk dashboard. The filters you can add depend on the **Group by** option you choose from the pulldown on the right. To filter by Origin or source, use an Integrations filter.
@@ -36,7 +40,7 @@ Snyk provides both pagination to improve the page loading time for Projects page
 
 Use **Sort by** (pull down on the far right) to sort the **Projects** listing by severity, by how recently the Projects were imported, or in alphabetical order.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="Sorting attributes available when grouping by Target"><figcaption><p>Sorting attributes available when grouping by Target</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sorting-attributes-available-grouping-target.png" alt="Sorting attributes available when grouping by Target"><figcaption><p>Sorting attributes available when grouping by Target</p></figcaption></figure>
 
 ## Origin or source
 
@@ -85,7 +89,7 @@ Projects appear in the **Projects** listing. You can also find Projects using th
 
 Use **Group by none** (ungrouped) for better Project visibility and to apply [filtering attributes at the Project level](project-attributes.md).
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46.png" alt="Filtering attributes applied at the Project level"><figcaption><p>Filtering attributes applied at the Project level</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/filtering-attributes-applied-project-level.png" alt="Filtering attributes applied at the Project level"><figcaption><p>Filtering attributes applied at the Project level</p></figcaption></figure>
 
 ## Targetfile
 
@@ -120,7 +124,7 @@ You can set the frequency of testing for each Project.
 
 For each entry, you can select the frequency of testing for that Project (`never`, `daily`, or `weekly`) as applicable to the type of Project, Open Source, Code analysis, Container, or IaC:
 
-<div align="center"><figure><img src="../../.gitbook/assets/Screenshot 2023-11-15 at 10.42.46.png" alt="Select test frequency" width="310"><figcaption><p>Select test frequency</p></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/select-test-frequency.png" alt="Select test frequency" width="310"><figcaption><p>Select test frequency</p></figcaption></figure></div>
 
 {% hint style="info" %}
 The default test frequency and limitations are as follows:

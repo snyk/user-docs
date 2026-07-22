@@ -1,3 +1,7 @@
+---
+description: Custom role template for a Developer, an Organization-level role to review scan results, fix vulnerabilities, and run tests
+---
+
 # Developer role template
 
 This Organization-level role enables review of scan results, fixing issues, and initiating Project tests. Users with this role can view Organizations and Projects.

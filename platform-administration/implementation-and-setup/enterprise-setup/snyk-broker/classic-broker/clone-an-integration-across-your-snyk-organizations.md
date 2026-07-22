@@ -1,3 +1,7 @@
+---
+description: How to reuse a brokered SCM integration across multiple Snyk Organizations by cloning it
+---
+
 # Clone an integration across your Snyk Organizations
 
 You can choose to use the same brokered Git integration across multiple Organizations in Snyk by copying and duplicating the Organization you have already configured.

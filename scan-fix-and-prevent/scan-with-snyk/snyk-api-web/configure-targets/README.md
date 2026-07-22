@@ -1,3 +1,7 @@
+---
+description: How to configure targets for Snyk API and Web scanning
+---
+
 # Configure targets
 
 Configure your web applications and APIs as targets in Snyk API & Web to prepare them for security scanning:

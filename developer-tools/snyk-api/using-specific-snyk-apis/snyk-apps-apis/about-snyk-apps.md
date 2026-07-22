@@ -1,3 +1,7 @@
+---
+description: What Snyk Apps are and how they extend Snyk functionality through integrations
+---
+
 # About Snyk Apps
 
 Snyk Apps are integrations that extend the functionality of the Snyk platform, allowing you to create a Snyk experience to suit your specific needs.
@@ -44,7 +48,7 @@ Navigate to your personal **Account Settings** and select the **Authorized Snyk 
 
 You can also navigate directly to the [Authorized Snyk Apps page](https://app.snyk.io/account/manage/authorized-apps) or open the page from your Organization **Settings**.
 
-<figure><img src="../../../.gitbook/assets/image (171).png" alt="Snyk Apps management UI"><figcaption><p>Snyk Apps management UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-apps-management-ui.png" alt="Snyk Apps management UI"><figcaption><p>Snyk Apps management UI</p></figcaption></figure>
 
 ### Revoking a Snyk App from the management UI
 

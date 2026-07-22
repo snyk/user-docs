@@ -1,3 +1,7 @@
+---
+description: How to test an SBOM document for vulnerabilities with the Snyk REST API
+---
+
 # Test an SBOM document for vulnerabilities
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: How to run an initial Snyk team rollout, inviting stakeholders and integrating security into their workflows
+---
+
 # Initial team rollout
 
 Invite your stakeholders to explore Snyk features and integrate security into their workflows. After this step, your teams can fix issues, monitor pipelines, and manage vulnerabilities using integrations like Jira.

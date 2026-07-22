@@ -1,3 +1,7 @@
+---
+description: How to configure HTTPS for the Snyk Broker client with Docker across SCM integrations
+---
+
 # HTTPS for Broker Client with Docker
 
 {% hint style="info" %}

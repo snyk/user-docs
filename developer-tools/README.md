@@ -1,3 +1,7 @@
+---
+description: Run Snyk locally, in repositories, and in pipelines, and choose the developer tool integration that matches your workflow
+---
+
 # Overview
 
 You can run Snyk locally, in repositories, and in pipelines to scan your code. Select the integration that matches your workflow and permissions.

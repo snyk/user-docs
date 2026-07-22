@@ -1,3 +1,7 @@
+---
+description: How to list and review Universal Broker configuration resources with the snyk-broker-config CLI tool
+---
+
 # List and review the Universal Broker configuration resources
 
 The `snyk-broker-config` CLI tool provides resources to guide you in configuring your Universal Broker. The following types of resources are available:

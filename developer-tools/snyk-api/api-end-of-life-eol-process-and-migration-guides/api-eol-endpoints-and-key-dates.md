@@ -1,3 +1,7 @@
+---
+description: Snyk API endpoints at end-of-life and their key dates
+---
+
 # API EOL endpoints and key dates
 
 ## APIs at EOL

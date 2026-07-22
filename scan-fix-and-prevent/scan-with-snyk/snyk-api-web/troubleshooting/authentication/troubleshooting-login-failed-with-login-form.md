@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot a failed login with a login form in Snyk API and Web
+---
+
 # Troubleshoot login failed with login form
 
 In targets with authentication, Snyk API & Web must log in to reach areas reserved for authenticated users. If scans fail to log in using a login form, follow these troubleshooting steps.

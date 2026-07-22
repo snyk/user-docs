@@ -1,3 +1,7 @@
+---
+description: How the snyk test command fails builds based on vulnerabilities found
+---
+
 # Failing of builds in Snyk CLI
 
 The `snyk test` command has the following options for failing your builds:

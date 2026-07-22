@@ -1,3 +1,7 @@
+---
+description: How to use the Snyk CLI for Snyk IaC scanning
+---
+
 # Snyk CLI for IaC
 
 ## Overview

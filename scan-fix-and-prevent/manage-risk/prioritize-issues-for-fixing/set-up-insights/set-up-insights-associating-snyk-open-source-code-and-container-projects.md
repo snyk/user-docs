@@ -1,3 +1,7 @@
+---
+description: How to associate Snyk Open Source, Code, and Container Projects for Insights
+---
+
 # Set up Insights: associating Snyk Open Source, Code, and Container Projects
 
 After you have set up insights, Snyk can set up the required linking for the chosen application.
@@ -38,7 +42,7 @@ See the examples at the end of this section.
 * The tag must follow the specified format,
 * The Projects do not have to be in the same Snyk Organization to be mapped but must be in the same Snyk Group,
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-06-06 at 23.29.29.png" alt="Project tags"><figcaption><p>Project tags</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/project-tags.png" alt="Project tags"><figcaption><p>Project tags</p></figcaption></figure>
 
 ## Examples of Project tags
 

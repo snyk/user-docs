@@ -1,3 +1,7 @@
+---
+description: How CAPTCHAs affect Snyk API and Web scans
+---
+
 # CAPTCHAs impact
 
 A CAPTCHA, short for "Completely Automated Public Turing test to tell Computers and Humans Apart," is a challenge-response test used to confirm whether the user is human.

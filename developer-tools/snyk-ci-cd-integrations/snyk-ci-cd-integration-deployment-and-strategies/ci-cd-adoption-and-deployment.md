@@ -1,3 +1,7 @@
+---
+description: How to compare SCM and CI/CD integrations when adopting Snyk in your pipeline
+---
+
 # CI/CD adoption and deployment
 
 When deciding to use a Snyk integration, compare the advantages of source control management (SCM) integrations and CI/CD integrations.

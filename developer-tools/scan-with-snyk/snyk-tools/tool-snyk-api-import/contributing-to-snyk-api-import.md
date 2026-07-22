@@ -1,3 +1,7 @@
+---
+description: How to contribute to the snyk-api-import project, including the Snyk contributor agreement
+---
+
 # Contributing to snyk-api-import
 
 ## Contributor Agreement

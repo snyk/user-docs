@@ -1,3 +1,7 @@
+---
+description: Overview of Snyk Learn reporting, including organization, assignment, and program reports and their plan requirements
+---
+
 # Snyk Learn reporting
 
 {% hint style="info" %}

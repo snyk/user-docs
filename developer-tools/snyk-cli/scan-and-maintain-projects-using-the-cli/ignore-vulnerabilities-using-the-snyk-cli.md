@@ -1,3 +1,7 @@
+---
+description: How to ignore vulnerabilities using the Snyk CLI
+---
+
 # Ignore vulnerabilities using the Snyk CLI
 
 {% hint style="info" %}

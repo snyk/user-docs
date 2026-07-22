@@ -1,3 +1,7 @@
+---
+description: How to set up Snyk Essentials to discover repository assets, including prerequisites and cloud-based SCM onboarding
+---
+
 # Set up Snyk Essentials
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
@@ -11,4 +15,4 @@
 
 Verify that Snyk Essentials is configured by navigating to the Group level > Integrations. If not set up yet, follow the in-product instructions for your SCM(s).
 
-<figure><img src="../../../.gitbook/assets/image (305).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/configuration-steps.png" alt=""><figcaption></figcaption></figure>

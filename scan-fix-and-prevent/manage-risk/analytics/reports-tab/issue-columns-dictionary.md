@@ -1,3 +1,7 @@
+---
+description: A dictionary of the issue columns in Snyk reporting
+---
+
 # Issue columns dictionary
 
 Snyk reporting includes many filters and columns, allowing users to develop refined views of the data and obtain the required insights with ease. Reaching accurate conclusions requires understanding the columns used and the meaning of the filters. This dictionary explains the meaning of the issue columns in Snyk Issues Detail report.

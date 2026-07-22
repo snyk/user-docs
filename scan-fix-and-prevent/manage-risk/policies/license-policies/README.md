@@ -1,3 +1,7 @@
+---
+description: How Group administrators set Snyk license policies
+---
+
 # License policies
 
 Group administrators can set license policies to define Snyk behavior for handling license issues. For example, you can allow or disallow packages with certain license types to avoid using packages containing incompatible licenses.

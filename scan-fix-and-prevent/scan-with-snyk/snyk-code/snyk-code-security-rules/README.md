@@ -1,3 +1,7 @@
+---
+description: How Snyk Code security rules work and how they are updated
+---
+
 # Snyk Code security rules
 
 {% hint style="info" %}

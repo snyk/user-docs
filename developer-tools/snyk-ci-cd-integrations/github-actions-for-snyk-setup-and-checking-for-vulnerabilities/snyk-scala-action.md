@@ -1,3 +1,7 @@
+---
+description: The removed Snyk GitHub Action for Scala, with migration guidance
+---
+
 # Snyk Scala action
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: How to interpret target scan results in Snyk API and Web
+---
+
 # Interpret target scan results
 
 After setting up your target at Snyk API & Web, you can start a scan and access the scan details to visualize the progress and results with real-time updates.

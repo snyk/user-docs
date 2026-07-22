@@ -1,3 +1,7 @@
+---
+description: How to discover new targets with Snyk API and Web
+---
+
 # Discover new targets
 
 Organizations often lack visibility into all their assets (web applications and APIs), which can lead to overlooked vulnerabilities and inadvertent security exposure. With Snyk API & Web asset discovery, you can identify your organization's assets and protect them before they become a liability.

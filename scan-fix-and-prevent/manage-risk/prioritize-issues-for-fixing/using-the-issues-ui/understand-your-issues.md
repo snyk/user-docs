@@ -1,3 +1,7 @@
+---
+description: How to understand your issues in the Snyk Issues UI
+---
+
 # Understand your issues
 
 Snyk Issues works by understanding your vulnerabilities within the context of your application. You can see all the gathered context in the list view of your issues. In the table view, you can see the following details:

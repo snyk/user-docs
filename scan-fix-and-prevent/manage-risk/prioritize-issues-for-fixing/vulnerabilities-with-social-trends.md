@@ -1,3 +1,7 @@
+---
+description: How Snyk Social Trends surface vulnerabilities gaining attention
+---
+
 # Vulnerabilities with Social Trends
 
 Snyk Social Trends shows a **Trending** notification for issues that are being actively discussed on X (formerly known as Twitter).

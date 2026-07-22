@@ -1,3 +1,7 @@
+---
+description: How Snyk detects and prioritizes malicious packages
+---
+
 # Malicious packages
 
 Malicious packages are a popular and growing method of carrying out software supply chain attacks. This page explains what malicious packages are, how Snyk identifies them, and what customers should do if they have malicious packages in their Projects.

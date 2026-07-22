@@ -1,3 +1,7 @@
+---
+description: Snyk-maintained scripts and solutions for specific Snyk API use cases
+---
+
 # Solutions for specific use cases
 
 Snyk maintains a [repository](https://github.com/snyk-playground/cx-tools) of scripts and tools to solve specific use cases raised by customers.

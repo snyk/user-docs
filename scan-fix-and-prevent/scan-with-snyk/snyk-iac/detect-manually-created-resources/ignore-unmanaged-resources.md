@@ -1,3 +1,7 @@
+---
+description: How to ignore unmanaged resources in Snyk IaC drift detection
+---
+
 # Ignore unmanaged resources
 
 The `.snyk` policy file can be used to exclude unmanaged resources from being detected by `snyk iac describe`. See [the `.snyk` policy file doc](../../../manage-risk/policies/the-.snyk-file.md) for general information.

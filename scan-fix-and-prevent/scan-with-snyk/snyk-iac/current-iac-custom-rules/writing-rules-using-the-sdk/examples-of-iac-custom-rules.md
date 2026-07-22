@@ -1,3 +1,7 @@
+---
+description: Examples of Snyk IaC custom rules
+---
+
 # Examples of IaC custom rules
 
 ## Example of a simple boolean rule

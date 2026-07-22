@@ -1,3 +1,7 @@
+---
+description: How to plan Snyk account structure and policies at the Group level for asset management, access control, and reporting
+---
+
 # Configure Group settings and policies
 
 This page is designed to help you plan your Snyk account structure and policies at Group-level to ensure efficient asset management, precise access control, and accurate reporting.

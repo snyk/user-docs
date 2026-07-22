@@ -1,3 +1,7 @@
+---
+description: How to fix vulnerabilities using the Snyk CLI
+---
+
 # Fix vulnerabilities using the Snyk CLI
 
 The Snyk CLI provides support for fixing vulnerabilities found by using the `snyk test` command. For information about fixes in the Web UI, see [Fix your vulnerabilities](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities). For general information about patches, see [Snyk patches to fix vulnerabilities](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities).
@@ -13,7 +17,7 @@ From the CLI, for each list (upgrade and patch), results are displayed in groups
 
 Upgrade and patch results appear similar to the following:
 
-<figure><img src="../../.gitbook/assets/image (17) (1).png" alt="Upgrade results in the CLI"><figcaption><p>Upgrade results in the CLI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/upgrade-results-cli.png" alt="Upgrade results in the CLI"><figcaption><p>Upgrade results in the CLI</p></figcaption></figure>
 
 Patch recommendations appear similar to the following:
 

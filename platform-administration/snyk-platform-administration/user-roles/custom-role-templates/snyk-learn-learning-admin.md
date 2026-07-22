@@ -1,3 +1,7 @@
+---
+description: Custom role template for a Snyk Learn Learning Admin, which requires the Learning Management add-on
+---
+
 # Snyk Learn - Learning Admin
 
 {% hint style="info" %}

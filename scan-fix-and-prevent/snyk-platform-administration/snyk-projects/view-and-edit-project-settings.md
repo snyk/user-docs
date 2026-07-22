@@ -1,3 +1,7 @@
+---
+description: How to view and edit Project settings
+---
+
 # View and edit Project settings
 
 Select the **Settings** tab on the Project listing or details page to view and edit Project settings:

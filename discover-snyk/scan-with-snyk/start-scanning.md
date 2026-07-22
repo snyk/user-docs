@@ -1,3 +1,7 @@
+---
+description: How to scan your code with Snyk manually and automatically using the Snyk CLI, web UI, API, and PR Checks
+---
+
 # Start scanning
 
 You can use Snyk to scan your code manually and automatically using the [Snyk CLI](start-scanning.md#scan-using-the-cli), the [Snyk web UI](start-scanning.md#scan-using-the-web-ui), the [Snyk API](start-scanning.md#scan-using-the-api), and by running [PR Checks](start-scanning.md#using-pr-checks).

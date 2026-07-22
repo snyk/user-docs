@@ -1,3 +1,7 @@
+---
+description: How Snyk regional hosting and data residency let you control your data region, available on Enterprise plans
+---
+
 # Regional hosting and data residency
 
 {% hint style="info" %}
@@ -61,6 +65,10 @@ Snyk offers data residency for the following regions:
 |     SNYK-EU-01 (Germany, Frankfurt)    | https://app.eu.snyk.io |
 |         SNYK-AU-01 (Australia)         | https://app.au.snyk.io |
 | SNYK-GOV-01 (Snyk for Government (US)) | https://app.snykgov.io |
+
+{% hint style="info" %}
+New Enterprise and Pilot accounts provisioned in the United States using Automated Provisioning are hosted on SNYK-US-02 (https://app.us.snyk.io). If you are unsure which US instance your account is on, please check your organization’s URL or contact your account team.
+{% endhint %}
 
 Single-tenant deployments may support more regions than the ones listed here, subject to validation of architectural service supportability by Snyk engineering.
 
@@ -213,7 +221,7 @@ Then add an extra variable to the `values-customer-settings.yml`:
 
 ### Kubernetes Integration URLs
 
-Follow the instructions to install the [Snyk Controller with Helm](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/kubernetes-integration/install-the-snyk-controller/install-the-snyk-controller-with-helm-azure-and-google-cloud-platform) with an extra variable added to the `helm upgrade`command:
+Follow the instructions to install the [Snyk Controller with Helm](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-container/kubernetes-integration/install-the-snyk-controller/install-the-snyk-controller-with-helm-azure-and-google-cloud-platform), with an extra variable added to the `helm upgrade`command:
 
 **SNYK-US-01**: (no configuration required)
 

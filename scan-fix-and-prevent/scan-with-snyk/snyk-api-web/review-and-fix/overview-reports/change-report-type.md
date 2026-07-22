@@ -1,3 +1,7 @@
+---
+description: How to change the report type in Snyk API and Web
+---
+
 # Change report type
 
 With Snyk API & Web, you can generate reports for target scans that are already finished. Use these reports to showcase your security to auditors, clients, consultants, and management. You can also use these reports to achieve HIPAA, PCI-DSS, or ISO 27001 compliance.

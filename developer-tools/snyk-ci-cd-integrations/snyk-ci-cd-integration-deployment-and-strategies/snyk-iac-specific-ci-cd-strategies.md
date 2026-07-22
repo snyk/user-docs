@@ -1,3 +1,7 @@
+---
+description: CI/CD strategies for running Snyk IaC as part of your pipeline stages
+---
+
 # Snyk IaC-specific CI/CD strategies
 
 The best way to implement Snyk Infrastructure as Code in your pipeline is as part of the stages, but after the SCA and the Containers stage.

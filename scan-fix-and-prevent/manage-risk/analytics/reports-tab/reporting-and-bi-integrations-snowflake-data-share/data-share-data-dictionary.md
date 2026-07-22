@@ -1,3 +1,7 @@
+---
+description: A data dictionary for the Snyk Data Share Snowflake integration
+---
+
 # Data Share data dictionary
 
 Snyk Data Share is a comprehensive dataset encompassing various data pillars that support a wide range of use cases. You can use this dataset to present key security metrics such as issue backlog, aging, MTTR, SLA compliance, and test coverage, as well as to prioritize issues based on different factors, such as risk score, severity, CVSS, EPSS, and many more.
@@ -20,11 +24,11 @@ The diagram above represents the objects listed in the data dictionary as a data
 * [PR Checks Project Adoption](data-share-data-dictionary.md#pr-checks-project-adoption)
 * [Prevention Events](data-share-data-dictionary.md#prevention-events)
 
-<figure><img src="../../../../.gitbook/assets/image (287).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to issues</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/database-diagram-defining-objects-listed-data-dictionary-3.png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to issues</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (238).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to PR checks</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/database-diagram-defining-objects-listed-data-dictionary.png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to PR checks</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (248).png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to PR check adoption</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/database-diagram-defining-objects-listed-data-dictionary-2.png" alt=""><figcaption><p>A database diagram defining the objects listed in the data dictionary related to PR check adoption</p></figcaption></figure>
 
 ### Groups
 
@@ -208,8 +212,8 @@ Querying the `USAGE_EVENTS` table allows you to measure:
 | `runtime_application_data_schema_version` | varchar        | The data schema version of Snyk's runtime interactions. The current version (v2) was released in Q2 2024. Prior versions' data may behave differently.                                                                                                                                                                               |
 | `interaction_type`                        | varchar        | The type of interaction, could be **Scan done**. **Scan Done** indicates that a test was run no matter if the CLI or IDE ran it, other types can be freely chosen types.                                                                                                                                                             |
 | `interaction_categories`                  | array          | The category vector used to describe the interaction in detail, for example, **oss**,**test**.                                                                                                                                                                                                                                       |
-| `interaction_timestamp`                   | array          | When the interaction was started in UTC.                                                                                                                                                                                                                                                                                             |
-| `interaction_status`                      | timestamp\_ntz | Status would be **success** or **failure**, where **success** means the action was executed, while **failure** means it didn't run.                                                                                                                                                                                                  |
+| `interaction_timestamp`                   | timestamp\_ntz | When the interaction was started in UTC.                                                                                                                                                                                                                                                                                             |
+| `interaction_status`                      | varchar        | Status would be **success** or **failure**, where **success** means the action was executed, while **failure** means it didn't run.                                                                                                                                                                                                  |
 | `interaction_stage`                       | varchar        | The stage of the SDLC where the interaction occurred, such as "dev"\|"cicd"\|"prchecks"\|"unknown".                                                                                                                                                                                                                                  |
 | `interaction_exit_code`                   | integer        | The interaction's exit code as returned by the running process. More info about the exit codes and their meaning is available in Snyk Docs per a given interaction (test, monitor, etc.)                                                                                                                                             |
 | `interaction_target_id`                   | varchar        | A purl is a URL composed of seven components. scheme:type/namespace/name@version?qualifiers#subpath The purl specification is available here: `https://github.com/package-url/purl-spec` Some purl examples `pkg:github/package-url/purl-spec@244fd47e07d1004f0aed9c` `pkg:npm/%40angular/animation@12.3.1` `pkg:pypi/django@1.11.1` |
@@ -279,7 +283,7 @@ Each row represents an effective period defined by the `effective_at` and `ends_
 * Snyk creates a new row whenever settings change.
 * Rows where `ends_at` is `null` represent the current configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (309).png" alt=""><figcaption><p>PR check settings tracked in the <code>PR_CHECK_INTEGRATION_ADOPTION</code> table</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pr-check-settings-tracked-pr-check-integration-adoption.png" alt=""><figcaption><p>PR check settings tracked in the <code>PR_CHECK_INTEGRATION_ADOPTION</code> table</p></figcaption></figure>
 
 | Column name                                                                 | Data type      | Description                                                                                                  |
 | --------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -315,7 +319,7 @@ The `PR_CHECK_PROJECT_ADOPTION` table tracks pull request (PR) check configurati
 * Rows with a null `ends_at` value represent the current configuration.
 * If `test_pull_requests` is null, no project-level overrides exist. The integration determines the settings.
 
-<figure><img src="../../../../.gitbook/assets/image (310).png" alt=""><figcaption><p>PR check settings tracked in the <code>PR_CHECK_PROJECT_ADOPTION</code> table</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pr-check-settings-tracked-pr-check-project-adoption-table.png" alt=""><figcaption><p>PR check settings tracked in the <code>PR_CHECK_PROJECT_ADOPTION</code> table</p></figcaption></figure>
 
 | Column name                                     | Data type      | Description                                                                                                                                          |
 | ----------------------------------------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -345,11 +349,11 @@ The `PR_CHECK_PROJECT_ADOPTION` table tracks pull request (PR) check configurati
 
 > Version in use: v1.0
 
-The `PREVENTION_EVENTS` table contains data for finding events captured by Snyk during developer scans at the IDE, CLI, and MCP stages.&#x20;
+The `PREVENTION_EVENTS` table contains data for finding events captured by Snyk during developer scans at the IDE, CLI, and MCP stages.
 
 Each row represents a single finding event, along with its severity, product, and repository context. The finding might be newly introduced, persisting from a previous scan, or actively prevented.
 
-Use this data to measure security outcomes, track suppression trends, and understand which teams or repositories are generating or preventing findings before they reach your repository.&#x20;
+Use this data to measure security outcomes, track suppression trends, and understand which teams or repositories are generating or preventing findings before they reach your repository.
 
 | `finding_event_id`   | varchar        | Primary key. Unique identifier for the prevention event.                                                                                         |
 | -------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

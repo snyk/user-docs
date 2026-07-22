@@ -1,5 +1,5 @@
 ---
-description: Usage of this mode is discouraged.
+description: How to use insecure downstream HTTP mode for a Snyk Broker Docker installation
 ---
 
 # Insecure downstream mode

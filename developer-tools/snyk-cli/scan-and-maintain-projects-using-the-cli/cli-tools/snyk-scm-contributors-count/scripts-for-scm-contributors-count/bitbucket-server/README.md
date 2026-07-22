@@ -1,5 +1,5 @@
 ---
-description: Flow and Tech for Bitbucket Server
+description: Flow, technology, and examples for the Bitbucket Server scm-contributors-count script
 ---
 
 # Bitbucket Server

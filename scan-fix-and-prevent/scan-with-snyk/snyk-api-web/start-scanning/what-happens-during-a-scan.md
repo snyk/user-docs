@@ -1,3 +1,7 @@
+---
+description: What happens during a Snyk API and Web scan
+---
+
 # What happens during a scan
 
 During a target scan, Snyk API & Web goes through the target's URLs and interacts with every element found, filling out forms and clicking buttons, among other actions, to perform extensive tests on your target and identify as many vulnerabilities as possible.

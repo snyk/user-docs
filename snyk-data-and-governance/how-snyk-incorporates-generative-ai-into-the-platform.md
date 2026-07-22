@@ -1,3 +1,7 @@
+---
+description: How Snyk uses generative AI across its platform, including the third-party models that power its AI features
+---
+
 # How Snyk incorporates generative AI into the platform
 
 Snyk’s AI Security Platform uses generative AI to enhance automation, efficiency, and innovation for developers and security teams. Snyk’s generative AI features are powered by third-party large language models (LLMs) from established AI providers.

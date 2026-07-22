@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk Google Cloud integration using the API
+---
+
 # Google Cloud Integration: API
 
 To onboard a Google Cloud Project to Snyk via the API:

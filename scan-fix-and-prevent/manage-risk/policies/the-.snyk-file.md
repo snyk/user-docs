@@ -1,3 +1,7 @@
+---
+description: How the .snyk file stores Snyk policy configuration for a Project
+---
+
 # The .snyk file
 
 The `.snyk` file is a capability of Snyk that all users can employ locally or as part of their workflow to control Snyk ignores of issues, to exclude files from scanning, to set the Python version at the Project level, and to specify patches for the CLI and CI/CD plugins.

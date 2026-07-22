@@ -1,3 +1,7 @@
+---
+description: The Snyk CLI for scanning and monitoring your Projects from the command line
+---
+
 # Snyk CLI
 
 This documentation provides guidance and information for using the Snyk CLI to bring the functionality of Snyk into your development workflow. Here you will find:

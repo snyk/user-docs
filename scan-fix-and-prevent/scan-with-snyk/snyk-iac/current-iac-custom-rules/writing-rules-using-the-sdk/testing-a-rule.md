@@ -1,3 +1,7 @@
+---
+description: How to test a Snyk IaC custom rule
+---
+
 # Testing a rule
 
 If you have generated the rules using the `template` command, as shown in [Writing a rule](writing-a-rule.md), then you can also benefit from using the testing functionality that comes with the SDK and the generated rules.

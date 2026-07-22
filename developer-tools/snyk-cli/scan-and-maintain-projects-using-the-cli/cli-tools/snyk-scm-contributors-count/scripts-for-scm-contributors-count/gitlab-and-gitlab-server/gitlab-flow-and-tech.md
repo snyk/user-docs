@@ -1,3 +1,7 @@
+---
+description: How the scm-contributors-count tool counts GitLab contributors
+---
+
 # GitLab - Flow and Tech
 
 ## Flow <a href="#flow" id="flow"></a>

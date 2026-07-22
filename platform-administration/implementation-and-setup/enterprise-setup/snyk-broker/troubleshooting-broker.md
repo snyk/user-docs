@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot Snyk Broker, including multi-tenant region server URL settings
+---
+
 # Troubleshooting Broker
 
 {% hint style="info" %}

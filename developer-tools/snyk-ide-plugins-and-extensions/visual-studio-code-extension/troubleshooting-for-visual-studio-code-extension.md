@@ -1,3 +1,7 @@
+---
+description: How to troubleshoot the Snyk Visual Studio Code extension, including unsupported end-of-life systems
+---
+
 # Troubleshooting for Visual Studio Code extension
 
 {% hint style="warning" %}
@@ -40,7 +44,7 @@ The **Snyk Security** channel has information on the extension itself. The **Sny
 
 
 
-<figure><img src="../../.gitbook/assets/2024-12-06-Ts-VS-Code-ext-obt-more-fin-.png" alt="" width="375"><figcaption><p>Logs to use to obtain more information</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/logs-use-obtain-more-information.png" alt="" width="375"><figcaption><p>Logs to use to obtain more information</p></figcaption></figure>
 
 ## Command not found (getActiveUser, LoginCommand, and so on)
 

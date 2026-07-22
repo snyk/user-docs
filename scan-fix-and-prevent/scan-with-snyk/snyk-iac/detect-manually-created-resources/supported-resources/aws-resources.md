@@ -1,3 +1,7 @@
+---
+description: The AWS resources Snyk IaC supports for drift detection
+---
+
 # AWS resources
 
 Snyk IaC unmanaged resource scanning supports the following resources for AWS:

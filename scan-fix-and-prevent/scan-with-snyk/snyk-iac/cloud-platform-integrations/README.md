@@ -1,3 +1,7 @@
+---
+description: How Snyk integrates with cloud platforms to scan cloud configurations
+---
+
 # Cloud platform integrations
 
 The following pages provide information and instructions for cloud platform integrations:

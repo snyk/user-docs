@@ -1,3 +1,7 @@
+---
+description: How the Snyk Language Server collects usage telemetry after each successful test
+---
+
 # IDE and CLI usage telemetry
 
 Snyk Language Server collects usage telemetry after each successful test, through the Snyk proprietary Analytics service. Data does not pass through any third-party services.

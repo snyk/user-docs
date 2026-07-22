@@ -1,3 +1,7 @@
+---
+description: How to test JavaScript Projects with the Snyk CLI, including report generation, output formats, and dependency filtering
+---
+
 # CLI support for JavaScript
 
 To help generate reports locally or at build time, see the [snyk-to-html plugin](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html).

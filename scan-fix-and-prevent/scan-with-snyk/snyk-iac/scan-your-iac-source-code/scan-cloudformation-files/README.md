@@ -1,3 +1,7 @@
+---
+description: How to scan AWS CloudFormation files with Snyk IaC
+---
+
 # Scan CloudFormation files
 
 The following information is provided to help you scan CloudFormation files:

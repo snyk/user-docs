@@ -1,3 +1,7 @@
+---
+description: How to authenticate the Snyk Eclipse plugin, including the supported protocols
+---
+
 # Authentication for the Eclipse plugin
 
 To scan your Projects, you must authenticate with Snyk.
@@ -8,7 +12,7 @@ Snyk supports the following protocols for authentication:
 * Personal Access Token
 * Snyk API token (Legacy)
 
-<figure><img src="../../.gitbook/assets/image (325).png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Eclipse</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/authentication-methods-available-snyk-plugin-eclipse.png" alt=""><figcaption><p>Authentication methods available in the Snyk plugin in Eclipse</p></figcaption></figure>
 
 ## Steps to authenticate using the OAuth 2.0 protocol
 
@@ -52,7 +56,7 @@ To authenticate using the Personal Access Token, follow these steps:
    (On Windows/Linux navigate to **Window** > **Preferences** > **Snyk**)
 2.  Set the **Authentication Method** to **Use Personal Access Token**.
 
-    <figure><img src="../../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/steps-authenticate-using-personal-access-token-2.png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4. Create your **Personal Access Token**. For details, see the [Authentication for API](../../snyk-api/authentication-for-api/) page.
 5. Add the token in the **Token** field.
@@ -70,11 +74,11 @@ To authenticate using the API token, follow these steps:
    (On Windows/Linux navigate to **Window** > **Preferences** > **Snyk**)
 2.  Set the **Authentication Method** to **API token**.
 
-    <figure><img src="../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token-2.png" alt=""><figcaption></figcaption></figure>
 3. Click the **Connect IDE to Snyk** button.
 4.  Click **Authenticate** in the web browser window that opens.
 
-    <figure><img src="../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/steps-authenticate-using-snyk-api-token.png" alt=""><figcaption></figcaption></figure>
 5. The API token is automatically updated in the **API Token field**.
 6. Click **Apply and Close**.
 

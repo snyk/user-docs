@@ -1,3 +1,7 @@
+---
+description: How to configure a login sequence for Snyk API and Web targets
+---
+
 # Login sequence
 
 Configure login sequence authentication to scan web applications with complex or multi-step login flows.

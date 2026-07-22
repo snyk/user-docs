@@ -1,3 +1,7 @@
+---
+description: How to set up the Snyk Azure integration in the Web UI
+---
+
 # Azure Integration: Web UI
 
 The steps follow to onboard an Azure subscription to Snyk via the API:

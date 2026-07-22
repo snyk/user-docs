@@ -1,3 +1,7 @@
+---
+description: Snyk support for Groovy with Snyk Code, available in Early Access on Enterprise plans, including supported frameworks and libraries
+---
+
 # Groovy
 
 ## Groovy for Snyk Code

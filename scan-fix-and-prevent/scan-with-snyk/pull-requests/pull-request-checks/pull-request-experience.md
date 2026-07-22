@@ -1,3 +1,7 @@
+---
+description: The Snyk Pull Request check experience for developers
+---
+
 # Pull Request experience
 
 {% hint style="info" %}
@@ -97,9 +101,9 @@ The Snyk Agent fix in the PR feature enables the user to request and apply fixes
 
 * Request an initial fix by replying to an inline comment using the `@snyk /fix` command.
 
-<figure><img src="../../../.gitbook/assets/image (299).png" alt=""><figcaption><p>Inline Comments with Snyk Agent Fix enabled</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/inline-comments-snyk-agent-fix-enabled.png" alt=""><figcaption><p>Inline Comments with Snyk Agent Fix enabled</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (300).png" alt=""><figcaption><p>Request a fix by replying to the inline comment</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/request-fix-replying-inline-comment.png" alt=""><figcaption><p>Request a fix by replying to the inline comment</p></figcaption></figure>
 
 * Request a different suggestion by replying with the `@snyk /fix` command to a previously generated fix. Snyk Agent fix can generate up to five potential fixes, depending on the issue type.
 * Apply a specific fix by using the `@snyk /apply #` command, where # is the number of the suggestion the user wishes to apply. A commit is created by Snyk on the PR branch, containing the selected fix.

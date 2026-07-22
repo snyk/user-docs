@@ -1,3 +1,7 @@
+---
+description: How Snyk accesses, transfers, and stores your data as a developer security platform
+---
+
 # How Snyk handles your data
 
 Snyk is a developer security platform designed to place the utmost importance on data security. This document aims to provide you with transparency as to how and what data is accessed, transferred, and stored by Snyk in connection with our services.
@@ -80,7 +84,7 @@ Your account is subject to contract terms that might restrict your ability to en
 
 ### Snyk Container
 
-<figure><img src=".gitbook/assets/image (201).png" alt="Snyk Container logo"><figcaption><p>Snyk Container</p></figcaption></figure>
+<figure><img src=".gitbook/assets/snyk-container.png" alt="Snyk Container logo"><figcaption><p>Snyk Container</p></figcaption></figure>
 
 * Snyk accesses and stores package versions, executable hashes and versions, operating system, container image metadata (for example, rootfs hashes, history), and image ID.
 * Snyk accesses and stores information pertaining to the parent image: name, version, and tag.

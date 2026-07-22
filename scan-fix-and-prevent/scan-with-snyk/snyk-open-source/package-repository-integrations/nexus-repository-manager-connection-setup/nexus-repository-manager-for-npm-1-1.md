@@ -1,3 +1,7 @@
+---
+description: How to connect Snyk to a Nexus Repository Manager for Go
+---
+
 # Nexus repository manager for Go
 
 

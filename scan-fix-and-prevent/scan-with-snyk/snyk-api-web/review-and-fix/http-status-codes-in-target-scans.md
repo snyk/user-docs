@@ -1,3 +1,7 @@
+---
+description: How HTTP status codes appear in Snyk API and Web target scans
+---
+
 # HTTP status codes in target scans
 
 When analyzing your [target scan results](interpret-target-scan-results.md), you can find details about the crawler and the scanner, including a list of HTTP response status codes.

@@ -1,3 +1,7 @@
+---
+description: How to configure your integration to find security issues in Kubernetes configuration files
+---
+
 # Configure integration to find security issues in Kubernetes configuration files
 
 Snyk tests and monitors Kubernetes configurations stored in your source code repositories and provides information, tips, and tricks to better [secure a Kubernetes environment](https://snyk.io/learn/kubernetes-security/). This helps to catch misconfigurations before they are pushed to production, as well as provide fixes for vulnerabilities.
@@ -22,6 +26,6 @@ Snyk scans your Kubernetes configuration files in JSON and YAML format when they
 * If needed, review and adjust the **Infrastructure as code** **Severity settings** on the Kubernetes tab in the example.\
   Check to select the file types to scan, CloudFormation, Terraform, or both, and from the pulldown selection, choose the severity level for each Deployment.
 
-<figure><img src="../../../../.gitbook/assets/image (67).png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/select-severity-settings-iac-scans-3.png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>
 
 The number of tests you can run per product is based on your account plan. For details, see the [plans and pricing](https://snyk.io/plans/) page.

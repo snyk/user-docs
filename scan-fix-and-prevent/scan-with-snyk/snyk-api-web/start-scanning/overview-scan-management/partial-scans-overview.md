@@ -1,3 +1,7 @@
+---
+description: How to run partial Snyk API and Web scans
+---
+
 # Run partial scans
 
 To test only a subset of your Web target, run partial scans in Snyk API & Web.

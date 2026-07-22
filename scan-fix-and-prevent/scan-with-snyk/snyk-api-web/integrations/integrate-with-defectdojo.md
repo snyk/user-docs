@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk API and Web with DefectDojo
+---
+
 # Integrate with DefectDojo
 
 By connecting Snyk API & Web to your DefectDojo server, you can synchronize target scan results with a DefectDojo product of your choice.

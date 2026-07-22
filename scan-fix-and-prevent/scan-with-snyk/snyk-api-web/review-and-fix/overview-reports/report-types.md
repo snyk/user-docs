@@ -1,3 +1,7 @@
+---
+description: The report types available in Snyk API and Web
+---
+
 # Report types
 
 Snyk API & Web offers several types of target scan reports, available in PDF or DOCX format:

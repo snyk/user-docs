@@ -1,3 +1,7 @@
+---
+description: Language, package manager, and framework support across Snyk Open Source and Snyk Code, with pointers to Snyk Container coverage
+---
+
 # Supported languages, package managers, and frameworks
 
 ## Overview

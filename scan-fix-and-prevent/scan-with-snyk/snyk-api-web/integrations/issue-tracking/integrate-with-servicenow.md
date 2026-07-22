@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk API and Web with ServiceNow
+---
+
 # Integrate with ServiceNow
 
 This integration periodically fetches data, such as targets and findings, from the Snyk API & Web platform and includes it in your ServiceNow Application Vulnerability Response (AVR) tables. This lets you manage Snyk vulnerabilities in your ServiceNow workflow.

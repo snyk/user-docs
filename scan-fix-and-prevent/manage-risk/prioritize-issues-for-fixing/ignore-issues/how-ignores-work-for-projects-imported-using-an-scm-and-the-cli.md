@@ -1,3 +1,7 @@
+---
+description: How ignores work for Projects imported through an SCM and the CLI
+---
+
 # How ignores work for Projects imported using an SCM and the CLI
 
 When you ignore an issue, you must consider the following factors:

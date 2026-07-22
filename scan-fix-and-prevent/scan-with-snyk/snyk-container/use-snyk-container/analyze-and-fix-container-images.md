@@ -1,3 +1,7 @@
+---
+description: How to analyze and fix vulnerabilities in container images with Snyk
+---
+
 # Analyze and fix container images
 
 You can import container Projects into Snyk using the CLI command [`snyk container monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-monitor). Alternatively, you can import Projects directly from a supported container registry using the Snyk Web UI.
@@ -32,7 +36,7 @@ If the Project is imported from a registry integration, on the **Projects** page
 
 When you open a container Project, the analysis and fix advice appear for that Project.
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt="Project page displaying analysis and fix advice for a container Project"><figcaption><p>Analysis and fix advice for a container Project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/analysis-fix-advice-container-project.png" alt="Project page displaying analysis and fix advice for a container Project"><figcaption><p>Analysis and fix advice for a container Project</p></figcaption></figure>
 
 The following information is displayed:
 
@@ -77,4 +81,4 @@ Recommendations for upgrading the base image include:
 * The number of vulnerabilities that exist in the recommended upgrade
 * A summary of the vulnerability severities.
 
-<figure><img src="../../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/recommendations-upgrading-base.png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>

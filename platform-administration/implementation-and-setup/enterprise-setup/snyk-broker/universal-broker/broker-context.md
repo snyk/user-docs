@@ -1,3 +1,7 @@
+---
+description: How to use a Broker Context to override the configuration of a Broker connection for an integration
+---
+
 # Configuring Broker Contexts
 
 Use a Broker Context to override the configuration of a Broker Connection. When you apply a Context to a Broker Integration, the Integration uses the override parameters instead of the default values.

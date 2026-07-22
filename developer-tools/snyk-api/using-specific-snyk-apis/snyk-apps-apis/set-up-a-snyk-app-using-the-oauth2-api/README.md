@@ -1,3 +1,7 @@
+---
+description: How to set up a Snyk App using the OAuth2 API
+---
+
 # Set up a Snyk App using the OAuth2 API
 
 The following pages explain how to:

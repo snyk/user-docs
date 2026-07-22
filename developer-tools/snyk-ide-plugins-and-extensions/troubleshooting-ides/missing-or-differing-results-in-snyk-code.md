@@ -1,3 +1,7 @@
+---
+description: How to resolve missing or differing Snyk Code results caused by ignore files
+---
+
 # Missing or differing results in Snyk Code
 
 ## .gitignore and .dcignore files <a href="#gitignore-and-.dcignore-files" id="gitignore-and-.dcignore-files"></a>

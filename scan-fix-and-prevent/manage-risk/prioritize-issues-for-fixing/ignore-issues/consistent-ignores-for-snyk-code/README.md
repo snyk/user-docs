@@ -1,3 +1,7 @@
+---
+description: How Consistent Ignores work for Snyk Code
+---
+
 # Consistent Ignores for Snyk Code
 
 Snyk Code Consistent Ignores helps your teams focus on important tasks by filtering out distractions. It ensures that once an ignore is created, it is consistently respected regardless of how and where the test is run and what branch is being tested.

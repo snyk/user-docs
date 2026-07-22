@@ -1,3 +1,7 @@
+---
+description: Prerequisites for setting up the Snyk Bitbucket Pipelines pipe integration
+---
+
 # Prerequisites for Bitbucket Pipelines integration
 
 The following are prerequisites for Bitbucket Pipelines integration:

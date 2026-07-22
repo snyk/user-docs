@@ -1,3 +1,7 @@
+---
+description: How to scan all unmanaged JAR files with the Snyk CLI
+---
+
 # Scan all unmanaged JAR files
 
 The Snyk CLI can scan unmanaged JAR files in [Java applications](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin) to identify which open-source package they contain.
@@ -113,4 +117,4 @@ for /R %WORKSPACE% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remo
 
 An example follows of the result shown in the Snyk UI after you use these scripts with `REMOTE_REPO_URL` set to "econnect".
 
-<figure><img src="../../.gitbook/assets/untitled.png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/result-scanning-unmanaged-jar-files.png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>

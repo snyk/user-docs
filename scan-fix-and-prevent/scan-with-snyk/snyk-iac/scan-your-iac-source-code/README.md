@@ -1,3 +1,7 @@
+---
+description: How to scan your infrastructure as code source code with Snyk IaC
+---
+
 # Scan your IaC source code
 
 Using Snyk IaC, you can:

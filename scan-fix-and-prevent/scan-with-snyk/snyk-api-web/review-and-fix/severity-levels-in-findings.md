@@ -1,3 +1,7 @@
+---
+description: The severity levels of Snyk API and Web findings
+---
+
 # Severity levels in findings
 
 Snyk API & Web assigns a severity level to each finding to summarize its overall risk based on the following factors:

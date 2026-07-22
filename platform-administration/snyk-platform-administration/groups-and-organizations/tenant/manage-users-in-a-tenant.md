@@ -1,3 +1,7 @@
+---
+description: How to manage members of a Snyk Tenant, available on Enterprise plans
+---
+
 # Manage users in a Tenant
 
 {% hint style="info" %}

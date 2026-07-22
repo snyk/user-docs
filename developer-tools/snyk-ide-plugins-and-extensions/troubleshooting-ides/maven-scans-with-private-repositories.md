@@ -1,3 +1,7 @@
+---
+description: How to resolve Maven scan failures caused by private repository dependencies in IDE plugins
+---
+
 # Maven scans with private repositories
 
 ## Problem <a href="#problem" id="problem"></a>

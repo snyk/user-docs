@@ -1,3 +1,7 @@
+---
+description: How to test a target configuration in Snyk API and Web
+---
+
 # Test target configuration
 
 Test your target configuration before running a scan to avoid common issues that lead to failed scans or incomplete results.

@@ -1,3 +1,7 @@
+---
+description: How to scan and fix security issues in Helm charts with Snyk IaC
+---
+
 # Scan and fix security issues in Helm Charts
 
 In addition to scanning Kubernetes configuration files for misconfigurations and security issues, Snyk has support for templating Helm charts and scanning the resultant manifests. This templating functionality is only available when you import repositories using the Snyk UI. See the following sections for prerequisites and guidance on how to scan templated Helm charts using the Snyk CLI. After Helm charts are scanned, Snyk creates Projects for each template and dependency template, generates reports on any misconfigurations, and makes recommendations for fixing them.
@@ -23,7 +27,7 @@ If you re-imported the repository in order to import the configuration files, th
 * Click the Project link you are interested in to view the scan results and to correct your configuration files accordingly.\
   Projects that were created from external dependencies will also be scanned, and issues will be shown.
 
-<figure><img src="../../../../.gitbook/assets/image (114).png" alt="Helm Charts Project detail"><figcaption><p>Helm Charts Project detail</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/helm-charts-project-detail.png" alt="Helm Charts Project detail"><figcaption><p>Helm Charts Project detail</p></figcaption></figure>
 
 ## Templating charts and scanning Kubernetes manifests
 

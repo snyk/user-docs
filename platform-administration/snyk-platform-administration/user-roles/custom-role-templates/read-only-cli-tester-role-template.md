@@ -1,3 +1,7 @@
+---
+description: Custom role template for a Read-only CLI Tester, an Organization-level role that runs snyk test but blocks snyk monitor
+---
+
 # Read-only CLI Tester role template
 
 This Organization-level role blocks the use of `snyk monitor`.

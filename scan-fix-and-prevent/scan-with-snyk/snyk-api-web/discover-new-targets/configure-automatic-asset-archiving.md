@@ -1,3 +1,7 @@
+---
+description: How to configure automatic asset archiving in Snyk API and Web
+---
+
 # Configure automatic asset archiving
 
 To keep your asset list current, Snyk API & Web automatically archives assets that are no longer detected in discovery scans.

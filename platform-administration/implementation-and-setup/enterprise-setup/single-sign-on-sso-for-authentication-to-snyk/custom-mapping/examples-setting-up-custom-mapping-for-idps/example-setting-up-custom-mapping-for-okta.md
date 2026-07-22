@@ -1,3 +1,7 @@
+---
+description: Example of setting up Snyk custom mapping for Okta roles using legacy custom mapping
+---
+
 # Example: setting up custom mapping for Okta
 
 The following shows two different options for custom mapping of Okta roles, using [Legacy custom mapping](../legacy-custom-mapping.md).
@@ -74,7 +78,7 @@ Note: The Snyk SSO application must be assigned at the group level, not the user
 When you look at a user's Application assignment it should look similar to the image that follows, with set by **Snyk-Roles group** following **Add Another** grayed out.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/endhint.png" alt=""><figcaption></figcaption></figure>
 
 ### Create an app attribute that contains the names of your relevant Snyk Organizations
 

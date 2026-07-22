@@ -1,5 +1,5 @@
 ---
-description: This page explains how to transition away from affected images.
+description: How to migrate to custom images after the removal of the Snyk Images library
 ---
 
 # Snyk Images migration

@@ -1,3 +1,7 @@
+---
+description: How to use static Project attributes to organize and filter Projects
+---
+
 # Project attributes
 
 Project attributes are static and non-configurable fields that allow you to apply attribute values to a Project by selecting from a predefined list of values. After you have applied attributes, you can remove them from a Project as needed.
@@ -8,7 +12,7 @@ Use attributes to group, prioritize, and filter Projects. Use attributes such as
 
 On the **Projects** listing, use **Group by none** (ungrouped) for optimal Project visibility and to apply [tags](project-tags.md) and filtering attributes at the Project level.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46.png" alt="Project level filtering attributes"><figcaption><p>Project level filtering attributes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/filtering-attributes-applied-project-level.png" alt="Project level filtering attributes"><figcaption><p>Project level filtering attributes</p></figcaption></figure>
 
 The available Project attributes are summarized in the following table.
 

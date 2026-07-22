@@ -1,3 +1,7 @@
+---
+description: Snyk support for Dart and Flutter with Snyk Code and Snyk Open Source, including Early Access code analysis on Enterprise plans
+---
+
 # Dart and Flutter
 
 {% hint style="info" %}
@@ -115,4 +119,4 @@ The `--exclude` parameter removes duplicates and ignores example applications, w
 
 You are now able to view in the Snyk Web UI all native dependencies, including those introduced by third-party plugins.
 
-<figure><img src="../../.gitbook/assets/image (197).png" alt=""><figcaption><p>Snyk Project page showing dependencies in Flutter apps</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-project-page-showing-dependencies-flutter-apps.png" alt=""><figcaption><p>Snyk Project page showing dependencies in Flutter apps</p></figcaption></figure>

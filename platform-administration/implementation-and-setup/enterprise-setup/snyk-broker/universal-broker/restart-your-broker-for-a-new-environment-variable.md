@@ -1,3 +1,7 @@
+---
+description: How to restart the Broker to apply a new environment variable, and the exception for Kubernetes deployments
+---
+
 # Restart your Broker for a new environment variable
 
 If you change an environment variable, you must restart your Broker, except in Kubernetes deployments.

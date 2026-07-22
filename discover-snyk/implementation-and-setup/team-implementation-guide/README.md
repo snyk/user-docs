@@ -1,3 +1,7 @@
+---
+description: Guide to implementing Snyk for a team on the Team plan, covering discovery, configuration, visibility, and a fix strategy
+---
+
 # Team implementation guide
 
 Accelerate your team performance by using Snyk. This guide aims to help you implement Snyk for your team. The team plan applies to teams of up to 10 members.

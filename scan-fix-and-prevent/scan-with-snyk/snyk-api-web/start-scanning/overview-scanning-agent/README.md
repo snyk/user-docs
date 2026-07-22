@@ -1,3 +1,7 @@
+---
+description: How the Snyk API and Web scanning agent works
+---
+
 # Scanning agent
 
 The scanning agent is a lightweight component that you install in your network to enable scanning of internal targets. It creates a secure connection between Snyk API & Web and your internal infrastructure, so you can scan applications behind firewalls, VPNs, or in private networks:

@@ -1,3 +1,7 @@
+---
+description: Prerequisites and steps to install and configure Snyk Broker for Nexus Repository Manager, on Enterprise plans
+---
+
 # Nexus Repository - prerequisites and steps to install and configure Broker
 
 {% hint style="info" %}
@@ -20,7 +24,7 @@ For convenience, instructions to obtain or generate the Broker token follow. Whe
 1. Go to **Settings** > **Integrations** > **Package Repositories** > **Nexus**
 2. Verify that you see the screen to configure Nexus.
 
-<figure><img src="../../../../../../.gitbook/assets/Screenshot 2022-07-15 at 15.15.11.png" alt="Configure Nexus"><figcaption><p>Configure Nexus</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/configure-nexus.png" alt="Configure Nexus"><figcaption><p>Configure Nexus</p></figcaption></figure>
 
 {% hint style="info" %}
 If you do not see the Snyk Broker switch, you do not have the necessary permissions and can only add a publicly accessible instance.

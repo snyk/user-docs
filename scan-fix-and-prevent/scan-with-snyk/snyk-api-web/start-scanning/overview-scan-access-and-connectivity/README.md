@@ -1,3 +1,7 @@
+---
+description: How to manage scan access and connectivity for Snyk API and Web
+---
+
 # Scan access and connectivity
 
 Configure network access and connectivity for Snyk API & Web scanning:

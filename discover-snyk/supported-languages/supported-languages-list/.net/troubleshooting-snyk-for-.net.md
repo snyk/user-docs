@@ -1,3 +1,7 @@
+---
+description: How to resolve common Snyk problems for .NET, including static dependency resolution for legacy Project files and Legacy Broker setups
+---
+
 # Troubleshooting Snyk for .NET
 
 ### .NET SDK resolution limitations

@@ -1,3 +1,7 @@
+---
+description: How to use the Snyk SBOM API endpoints
+---
+
 # SBOM APIs
 
 Information about how to use the following API endpoints is provided:

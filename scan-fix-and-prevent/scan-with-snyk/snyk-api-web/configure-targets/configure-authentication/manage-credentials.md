@@ -1,3 +1,7 @@
+---
+description: How to manage credentials for Snyk API and Web targets
+---
+
 # Manage credentials
 
 Manage and rotate authentication credentials securely across your Snyk API & Web targets.

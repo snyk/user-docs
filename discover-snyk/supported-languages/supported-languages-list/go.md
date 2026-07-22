@@ -1,3 +1,7 @@
+---
+description: Snyk support for Go with Snyk Open Source and Snyk Code, including SCM import, CLI and IDE testing, and supported frameworks
+---
+
 # Go
 
 ## Applicability and integration
@@ -124,7 +128,7 @@ To enable full source code analysis, adjust your settings as follows:
 3. Select **Edit settings** for **Go**.
 4. Toggle **Enable full source code analysis** on or off.
 
-<figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption><p>Enable full source code analysis</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/enable-full-source-code-analysis.png" alt=""><figcaption><p>Enable full source code analysis</p></figcaption></figure>
 
 For more details on levels of access to your repository required by different Snyk features, see [How Snyk handles your data](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/how-snyk-handles-your-data).
 

@@ -1,3 +1,7 @@
+---
+description: How to manage members of a Snyk Organization from the Members settings, based on your role permissions
+---
+
 # Manage users in Organizations
 
 In the **Organization** where you want to manage users, select the **Members** menu option.
@@ -10,7 +14,7 @@ You must have the permissions required to perform these tasks. For details, see 
 
 To add new users to your Organization, click **Add members**:
 
-<div align="left"><figure><img src="../../../.gitbook/assets/Screen Shot 2022-02-24 at 12.51.45 PM.png" alt=""><figcaption><p>Add members to your Organization</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/add-members-organization.png" alt=""><figcaption><p>Add members to your Organization</p></figcaption></figure></div>
 
 You can do the following on the **Add members** screen:
 

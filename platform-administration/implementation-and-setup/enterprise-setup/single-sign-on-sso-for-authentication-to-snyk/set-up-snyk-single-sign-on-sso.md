@@ -1,3 +1,7 @@
+---
+description: How to set up Snyk SSO with your existing identity provider, including the information needed to establish trust
+---
+
 # Set up Snyk Single Sign-On (SSO)
 
 Set up Single Sign-On (SSO) to allow your developers and teams easy access to Snyk through your existing SSO provider.

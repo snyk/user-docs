@@ -1,3 +1,7 @@
+---
+description: How to pause Snyk API and Web scans
+---
+
 # Pause scans
 
 You can pause and resume scans on demand and automatically using blackout periods.

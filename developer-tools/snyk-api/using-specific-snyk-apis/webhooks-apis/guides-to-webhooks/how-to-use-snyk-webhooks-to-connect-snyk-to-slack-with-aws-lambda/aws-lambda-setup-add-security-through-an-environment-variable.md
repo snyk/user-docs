@@ -1,3 +1,7 @@
+---
+description: How to secure the AWS Lambda function with an environment variable
+---
+
 # AWS Lambda setup: add security through an environment variable
 
 For security reasons the script that you created uses an environment variable: `hmac_verification` with a shared secret to validate the payload is coming from Snyk and has not been tampered with.

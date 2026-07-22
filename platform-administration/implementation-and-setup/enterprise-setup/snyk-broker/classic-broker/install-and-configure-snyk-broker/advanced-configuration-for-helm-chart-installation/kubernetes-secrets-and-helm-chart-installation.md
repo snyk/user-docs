@@ -1,3 +1,7 @@
+---
+description: How to use external Kubernetes secrets with the Snyk Broker Helm chart, from version 2.8.0
+---
+
 # Kubernetes secrets and Helm Chart installation
 
 Beginning with version `2.8.0` of the Snyk Broker Helm Chart, external secrets are supported.

@@ -1,3 +1,7 @@
+---
+description: The Google Cloud resources Snyk IaC supports for cloud context
+---
+
 # Supported Google resources for cloud context
 
 Snyk cloud context works with the following Google Cloud resource types:

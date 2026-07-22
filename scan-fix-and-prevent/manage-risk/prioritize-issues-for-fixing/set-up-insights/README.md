@@ -1,3 +1,7 @@
+---
+description: How to set up Snyk Insights to customize risk prioritization
+---
+
 # Set up Insights
 
 ## Prerequisites

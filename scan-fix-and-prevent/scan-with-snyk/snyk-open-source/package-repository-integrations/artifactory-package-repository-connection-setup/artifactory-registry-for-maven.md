@@ -1,3 +1,7 @@
+---
+description: How to connect Snyk to an Artifactory registry for Maven
+---
+
 # Artifactory registry for Maven
 
 {% hint style="info" %}
@@ -24,7 +28,7 @@ You can choose whether to use Artifactory as a mirror or as an additional reposi
 
 ## Mirrors
 
-<figure><img src="../../../../.gitbook/assets/image (244).png" alt=""><figcaption><p>Maven settings, choose Type</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/maven-settings-choose-type.png" alt=""><figcaption><p>Maven settings, choose Type</p></figcaption></figure>
 
 Choose a value for the Type, either **Direct** or, if you are using authentication, **Integration.**
 

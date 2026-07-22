@@ -1,3 +1,140 @@
+## 2026-03-25 - Updated 2026-07-14
+
+### POST - `/groups/{group_id}/secrets/rule_extensions` - Added
+- Secrets rule extensions adapt Snyk Secret analysis, making Snyk Secret Rules more suitable for your code. Only published secrets rule extensions with assignment would be applied to Snyk scans.
+
+#### Required permissions
+
+- `group.rule_extension.create`
+
+
+### GET - `/groups/{group_id}/secrets/rule_extensions` - Added
+- Get a list of all secrets rule extensions for the requested Group ID and its child Org(s).
+
+#### Required permissions
+
+- `group.rule_extension.read`
+
+
+### PATCH - `/groups/{group_id}/secrets/rule_extensions/{rule_extension_id}` - Added
+- Update the secrets rule extension for the requested rule extension ID.
+
+#### Required permissions
+
+- `group.rule_extension.edit`
+
+
+### GET - `/groups/{group_id}/secrets/rule_extensions/{rule_extension_id}` - Added
+- Get the secrets rule extension for the requested rule extension ID.
+
+#### Required permissions
+
+- `group.rule_extension.read`
+
+
+### DELETE - `/groups/{group_id}/secrets/rule_extensions/{rule_extension_id}` - Added
+- Delete the secrets rule extension for the requested rule extension ID. Draft rule extensions can be deleted unconditionally. Published rule extensions can only be deleted if they have no assignments.
+
+#### Required permissions
+
+- `group.rule_extension.delete`
+
+
+### POST - `/groups/{group_id}/sast/rule_extensions` - Added
+- SAST rule extensions adapt Snyk SAST analysis, making Snyk Code Rules more suitable for your code. You must associate SAST rule extensions with particular Snyk Code Rule Keys. Only published SAST rule extensions with assignment would be applied to Snyk SAST scans.
+
+#### Required permissions
+
+- `group.rule_extension.create`
+
+
+### GET - `/groups/{group_id}/sast/rule_extensions` - Added
+- Get a list of all the SAST rule extensions for the requested Group ID and its child Org(s).
+
+#### Required permissions
+
+- `group.rule_extension.read`
+
+
+### PATCH - `/groups/{group_id}/sast/rule_extensions/{rule_extension_id}` - Added
+- Update the SAST rule extension for the requested SAST rule extension ID
+
+#### Required permissions
+
+- `group.rule_extension.edit`
+
+
+### GET - `/groups/{group_id}/sast/rule_extensions/{rule_extension_id}` - Added
+- Get the SAST rule extension for the requested SAST rule extension ID
+
+#### Required permissions
+
+- `group.rule_extension.read`
+
+
+### DELETE - `/groups/{group_id}/sast/rule_extensions/{rule_extension_id}` - Added
+- Delete the SAST rule extension for the requested SAST rule extension ID. Draft rule extensions can be deleted unconditionally. Published rule extensions can only be deleted if they have no assignments. All assignments must be removed before a published rule extension can be deleted.
+
+#### Required permissions
+
+- `group.rule_extension.delete`
+
+
+### POST - `/groups/{group_id}/sast/rule_extensions/tests` - Added
+- Create a test on a Snyk Code project to understand the impact of the input SAST Rule Extension.
+
+#### Required permissions
+
+- `group.rule_extension.read`
+
+
+### GET - `/groups/{group_id}/sast/rule_extensions/tests/{test_id}` - Added
+- Get the SAST rule extension test status for a requested Snyk Code project.
+
+#### Required permissions
+
+- `group.rule_extension.read`
+
+
+### GET - `/groups/{group_id}/sast/rule_extensions/tests/{test_id}/results` - Added
+- Get the test result of a Snyk Code project to understand the impact of the input SAST Rule Extension.
+
+#### Required permissions
+
+- `group.rule_extension.read`
+
+
+### POST - `/groups/{group_id}/rule_extensions/assignments` - Added
+- Assign published rule extensions with Group or Organization scope.
+
+#### Required permissions
+
+- `group.rule_extension.edit`
+
+
+### GET - `/groups/{group_id}/rule_extensions/assignments` - Added
+- Returns a paginated list of all rule extension assignments for the requested group.
+
+**Pagination:** The `starting_after` and `ending_before` query parameters are mutually exclusive. Providing both will result in a 400 Bad Request response.
+
+**Filtering:** The `org_id` and `group_id` query parameters are mutually exclusive. Providing both will result in a 400 Bad Request response.
+
+#### Required permissions
+
+- `group.rule_extension.read`
+
+
+### DELETE - `/groups/{group_id}/rule_extensions/assignments` - Added
+- Delete assignments for rule extensions with Group or Organization scope.
+
+#### Required permissions
+
+- `group.rule_extension.edit`
+
+---
+description: Changelog of updates to the Snyk API
+---
+
 ## 2026-03-25 - Updated 2026-07-06
 
 ### POST - `/groups/{group_id}/export` - Updated

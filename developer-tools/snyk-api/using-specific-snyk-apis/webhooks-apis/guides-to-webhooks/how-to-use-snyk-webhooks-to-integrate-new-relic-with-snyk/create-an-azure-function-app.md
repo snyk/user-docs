@@ -1,3 +1,7 @@
+---
+description: How to create an Azure Function App for the Snyk to New Relic webhook integration
+---
+
 # Create an Azure Function App
 
 Follow the regular process to create and configure an Azure Function App. For more information see the [Microsoft Azure Functions documentation](https://learn.microsoft.com/en-us/azure/azure-functions/).

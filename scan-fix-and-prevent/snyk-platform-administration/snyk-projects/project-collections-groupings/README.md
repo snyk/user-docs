@@ -1,3 +1,7 @@
+---
+description: How to group Projects using collections and views
+---
+
 # Project collections groupings
 
 {% hint style="info" %}

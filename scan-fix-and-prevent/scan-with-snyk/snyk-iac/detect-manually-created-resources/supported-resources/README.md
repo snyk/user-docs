@@ -1,3 +1,7 @@
+---
+description: The resources Snyk IaC supports for drift detection
+---
+
 # Supported resources
 
 Snyk IaC unmanaged resource scanning supports the resources listed on each page for these cloud providers:

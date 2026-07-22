@@ -1,3 +1,7 @@
+---
+description: How to configure login form authentication for Snyk API and Web targets
+---
+
 # Login form
 
 Configure login form authentication to scan protected areas of your web application that require a username and password login.

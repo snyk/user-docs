@@ -1,3 +1,7 @@
+---
+description: Snyk support for TypeScript with Snyk Open Source and Snyk Code, including SCM import, CLI and IDE testing, and JavaScript frameworks
+---
+
 # TypeScript
 
 ## Applicability and integration

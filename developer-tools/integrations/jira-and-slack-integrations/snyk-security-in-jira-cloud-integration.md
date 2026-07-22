@@ -1,3 +1,7 @@
+---
+description: How the Snyk Security app for Jira Cloud surfaces vulnerabilities in your Jira projects
+---
+
 # Snyk Security in Jira Cloud integration
 
 {% hint style="info" %}
@@ -6,170 +10,95 @@ Jira Server and Jira Data Center are not supported.
 
 Snyk Security in Jira Cloud helps developers identify, prioritize, and triage security vulnerabilities related to their code repositories directly from the Jira interface.
 
-The Snyk Security in Jira Cloud integration mirrors your Snyk scan results from the Snyk platform to Jira. You can view Snyk results in your native Jira environment and create Jira issues for your results as needed. You can see which Snyk Organizations are connected and which Snyk Targets are associated with your Jira projects.
+The Snyk Security in Jira Cloud integration mirrors your Snyk scan results from the Snyk platform to Jira. You can view Snyk results in your native Jira environment and create Jira work items for your results as needed. You can see which Snyk Organizations are connected and which Snyk Targets are associated with your Jira spaces.
 
-## Prerequisites for installation of Snyk Security in Jira Cloud
+## Prerequisites for the installation of Snyk Security in Jira Cloud
 
-Snyk Security in Jira Cloud is a Jira app.
+* Snyk Security in Jira Cloud is a Jira app. To install and configure it, you must be a Jira Cloud administrator (in the site-admins, administrators, or jira-administrators group). Contact your IT team if you need help installing it.
+* To connect the app to Snyk, you must be a Snyk Organization administrator.
+* To add containers, you must have Space admin permissions in Jira.
+* The Security feature must be enabled in Jira. In your Space, enable it under Space settings (Features > Development > Security). For the exact steps, see Atlassian's documentation.
+* For the app to load, the base URL of your Jira instance must match the base URL configured in your Snyk Jira integration. If your Jira instance uses URL rewrites or redirects that change the accessible URL, the app may fail to load.
+* Ensure you have the following permission scopes in Jira, which are required for the integration to operate:&#x20;
 
-To install and configure the Jira app, you must be a Jira Cloud administrator in the site-admins, administrators, or jira-administrators group. Contact your IT team to support your effort in installing the Snyk Security in Jira Cloud app.
-
-{% hint style="warning" %}
-For the Jira app to load successfully, the base URL of your Jira board must precisely match the [base URL configured in your Snyk Jira integration](jira-integration.md#how-to-set-up-your-jira-integration). If your Jira instance uses URL rewrites or redirects that alter the accessible board URL, the Jira app may fail to load.
-{% endhint %}
-
-To connect the Jira app to Snyk, you must be a [Snyk Organization administrator](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/pre-defined-roles).
-
-To activate Security in Jira Cloud in Jira, navigate to **Project Settings > Features > Development > Security** and toggle **Security** **ON**.
-
-Ensure you have the following permission scopes in Jira, which are required for the integration to operate.
-
-<table><thead><tr><th width="344.5">Required scope in Jira</th><th>Purpose</th></tr></thead><tbody><tr><td>Write data to the host application</td><td>Synchronize vulnerabilities in Snyk with Jira so they appear in the Security tab in Jira.</td></tr><tr><td>Read data from the host application</td><td>Read vulnerabilities from Jira to optimize the issues synchronization process.</td></tr><tr><td>Delete data from the host application</td><td>Remove vulnerabilities from Jira when a Snyk Organization is removed from Jira.</td></tr></tbody></table>
-
-{% hint style="warning" %}
-To add containers, you must have the **project admin** Jira permissions.
-{% endhint %}
+<table><thead><tr><th width="344.5">Required scope in Jira</th><th>Purpose</th></tr></thead><tbody><tr><td>Write data to the host application</td><td>Synchronize vulnerabilities in Snyk with Jira so they appear in the Security tab in Jira.</td></tr><tr><td>Read data from the host application</td><td>Read Jira vulnerabilities to optimize the synchronization process.</td></tr><tr><td>Delete data from the host application</td><td>Remove vulnerabilities from Jira when a Snyk Organization is removed from Jira.</td></tr></tbody></table>
 
 ## Install Snyk Security in Jira Cloud
 
-Follow these steps to install [**Snyk Security in Jira Cloud**](https://marketplace.atlassian.com/apps/1230482/snyk-security-in-jira-cloud) from the Atlassian Marketplace.
+Install the app from the Atlassian Marketplace: search for **Snyk Security in Jira Cloud** and follow Atlassian's [instructions for installing a Marketplace app](https://support.atlassian.com/organization-administration/docs/installing-and-managing-app-access/).
 
-1. In Jira, navigate to **Apps** > **Find new apps.**
-2. Search for **Snyk Security in Jira Cloud**.\
-   If you are installing Jira for [EU](https://marketplace.atlassian.com/apps/1232502/snyk-security-in-jira-cloud-eu?hosting=cloud\&tab=overview) or [AU](https://marketplace.atlassian.com/apps/1232503/snyk-security-in-jira-cloud-au?hosting=cloud\&tab=overview) you must install the dedicated EU or AU app from the Atlassian app marketplace.\
-   If you are installing Jira and are using SNYK-US-02 ([https://app.us.snyk.io/](https://app.us.snyk.io/)) you must install the [SNYK-US-02](https://marketplace.atlassian.com/apps/1232598/snyk-security-in-jira-cloud-snyk-us-02?hosting=cloud\&tab=overview) app from the Atlassian app marketplace.
-3. Click the app and then select **Get it now.**
-4. Review the information about the app, and select **Get it now**.
-5. Follow the instructions to install the app.
+Install the app that matches your Snyk region:
+
+* For the EU or AU regions, install the dedicated EU or AU app.
+* If you use SNYK-US-02 ([https://app.us.snyk.io/](https://app.us.snyk.io/)), install the SNYK-US-02 app.
+* Otherwise, install the standard Snyk Security in Jira Cloud app.
 
 ## Configure the Snyk Security in Jira Cloud app
 
-1. Go to **Apps** > **Manage apps.**
-2. In the left menu, select **Snyk Security in Jira**.
-3. Log in to your Snyk account, or sign up for a new Snyk account.
-4. In Snyk, select **Grant access** to allow Snyk to read your Jira Software account information.
-5. Select the specific Snyk Organizations to connect to your Jira site, and select **Grant app access**.
+After installing the app, connect it to Snyk:
 
-## Link code repositories to Jira projects
+1. In Jira, open the manage apps area and select **Snyk Security in Jira**.
+2. Log in to your Snyk account, or sign up for a new Snyk account.
+3. In Snyk, select **Grant access** to allow Snyk to read your Jira account information.
+4. Select the Snyk Organizations to connect to your Jira site, then select **Grant app access**.
 
-When you have completed the following steps to connect Snyk to Jira, you can start triaging security issues in Jira.
+## Link code repositories to Jira spaces
 
-{% hint style="info" %}
-Typically research and development engineering managers do this task because they own the Jira projects and know their team's code repositories.
-{% endhint %}
+After connecting Snyk to Jira, link your repositories so you can triage vulnerabilities in Jira. Typically, R\&D engineering managers do this because they own the Jira spaces and know their team's repositories.
 
-1. In Jira, navigate to your **Project** and select the **Security** tab.
-2. Click the **Connect security containers** button.
-3.  Click on the Snyk application and then select **Connect security containers**.
+1. In Jira, open your Space and select the Security tab.
+2. Select **Connect security containers**.
+3. Select the Snyk application, then select **Connect security containers** again.
+4. Select your Snyk Organization, then choose the Snyk Targets to connect to Jira.
 
-    <figure><img src="../../.gitbook/assets/image (366).png" alt="Connect security containers in Jira via the Security tab and panels"><figcaption><p>Connect security containers in Jira via the Security tab and panels</p></figcaption></figure>
-4. Select your Snyk Organization from the list, and choose the Snyk Targets to connect to Jira.
-
-<figure><img src="../../.gitbook/assets/image (365).png" alt="Connect a security container in Jira via the Security panel" width="351"><figcaption><p>Connect a security container in Jira via the Security panel</p></figcaption></figure>
-
-Developers can now use the security feature to view recent vulnerabilities found in the linked code repositories and start [creating Jira issues](snyk-security-in-jira-cloud-integration.md#create-a-jira-issue-from-a-vulnerability) from those vulnerabilities or [linking them to existing Jira issues](snyk-security-in-jira-cloud-integration.md#link-an-existing-jira-issue-to-a-vulnerability).
+After linking, developers can view recent vulnerabilities in the linked repositories and create Jira work items from them, or link them to existing work items.
 
 {% hint style="info" %}
-Issue syncing between Snyk and Jira happens asynchronously, meaning there may be a delay before issues appear in Jira.
-{% endhint %}
-
-{% hint style="info" %}
-Only **security vulnerabilities** will be shown on the Jira Security tab.
+Syncing between Snyk and Jira is not immediate, so work items may take a short time to appear in Jira. Only security vulnerabilities appear on the Security tab.
 {% endhint %}
 
 ### Deleting a target or repository
 
-To delete a target or repository from Snyk that you have connected to Jira, you must first delete the container code repository in Jira, through the **Security** panel in each Jira Project. Then you can remove the target or repository from Snyk:
+To remove a target or repository from Snyk that is connected to Jira, first remove it in Jira, then remove it in Snyk:
 
-1. In Jira, navigate to your **Project** and select the **Security** tab.
-2. Click on the **Connect security containers** button.
-3. Click on the Snyk application
-4. Select the security container you want to remove from the list using the **Remove connection** option
+1. In Jira, open your Space and select the Security tab.
+2. Select **Connect security containers**, then select the Snyk application.
+3. Select the security container to remove, then select **Remove connection**.
 
-<figure><img src="../../.gitbook/assets/image (367).png" alt="Remove connected security containers in the Jira Security panel" width="349"><figcaption><p>Remove connected security containers in the Jira Security panel</p></figcaption></figure>
+## Automate work item creation in Jira
 
-## Automate ticket creation in Jira
+Use a Jira automation rule to create work items automatically for Snyk vulnerabilities. For how to build and enable a rule, see Atlassian's documentation on [creating Jira automation rules](https://support.atlassian.com/cloud-automation/docs/create-and-edit-jira-automation-rules/). Configure the rule with these Snyk-specific values:
 
-The following steps describe how to use Jira automation to automatically create tickets for Snyk Vulnerabilities:
-
-1. In Jira, in your project, navigate to **Project Settings** and then **Automation**.
-2. Click **Create Rule**.
-3.  Set **Vulnerability Found** as the Trigger. Choose a minimum ticket severity.
-
-    <figure><img src="../../.gitbook/assets/jira-ticket-creation-automation-one.png" alt=""><figcaption><p>Select vulnerability severity for the new rule</p></figcaption></figure>
-4.  Click **Add Component**, **Then,** and select **Create Issue**. Select a project and issue type.
-
-    <figure><img src="../../.gitbook/assets/2024-12-13_10-19-14.png" alt=""><figcaption><p>Add an action and create issue for the new rule</p></figcaption></figure>
-5.  In the summary field add `Fix {{vulnerability.displayName}}`. In the **Description** put `{{vulnerability.description.wiki\}}`.
-
-    <figure><img src="../../.gitbook/assets/2024-12-13_10-19-31.png" alt=""><figcaption><p>Add summary field and description for the new rule</p></figcaption></figure>
-6. Click **Add Component**, **Then**, and select **Link vulnerability to issue** under Security.
-7. Select **Turn on rule**.
+* **Trigger:** Vulnerability Found. Set a minimum vulnerability severity so the rule runs only for vulnerabilities at or above that level.
+* **Action — create the work item:** set the Summary to `Fix {{vulnerability.displayName}}` and the Description to `{{vulnerability.description.wiki}}`.
+* **Action — link the vulnerability:** add the Snyk **Link vulnerability to work item** action so the new work item is linked back to the vulnerability.
 
 ## Manage security vulnerabilities in Jira
 
-After installing and configuring the Snyk Security in Jira Cloud app, you can view vulnerabilities on the security tab on the Jira project page.
-
-<figure><img src="../../.gitbook/assets/Secuirity-Jira-Cloud-tab.png" alt="Snyk Security in Jira Cloud tab."><figcaption><p>Snyk Security in Jira Cloud tab</p></figcaption></figure>
-
-To find vulnerabilities, navigate to the **Vulnerabilities** section. Snyk shows the severity, status, and identifiers. Click the title to see the details in Snyk Web UI.
+After installing and configuring the app, view vulnerabilities on the Security tab of the Jira Space page. In the Vulnerabilities section, Snyk shows each vulnerability's severity, status, and identifiers. Select a vulnerability's title to see its details in the Snyk Web UI.
 
 ### Search, filter, and sort vulnerabilities
 
-Use the search bar and filters in the **Vulnerabilities** section to customize the list of vulnerabilities to show those relevant to your Organization.
+Use the search bar and filters in the Vulnerabilities section to narrow the list to the vulnerabilities relevant to your Organization. Ignored and closed vulnerabilities are hidden by default; to show them, use the **Vuln. status** filter. To sort the list, select a column title to order all vulnerabilities by that attribute.
 
-Ignored and closed vulnerabilities are not shown in the **Vulnerabilities** section by default, but you can view them using the **Vuln. status filter**.
+### Create a Jira work item from a vulnerability
 
-Select the title of a column in the table to sort all vulnerabilities by that attribute.
+When triaging vulnerabilities, create a Jira work item so the remediation work is planned and tracked in your sprint or backlog. On the Security tab, find the vulnerability and select **Create work item**.
 
-### Create a Jira issue from a vulnerability
+### Link an existing Jira work item to a vulnerability
 
-When triaging issues, you can add a Jira issue to the sprint or backlog to ensure the required work for resolving the vulnerability is planned and tracked.
+If the vulnerability already has a Jira work item, you can link the vulnerability to the existing Jira work item by selecting the three dots in the Actions column and selecting **Link work item.**
 
-Snyk provides vulnerability information to Jira, enabling users to have comprehensive data for resolving issues.
+### Auto-close resolved vulnerabilities in Jira
 
-To add a Jira issue, navigate to the Snyk Security tab, find a vulnerability, and click **Create issue**.
+Use a scheduled Jira automation rule with a JQL search to transition work items whose vulnerabilities are now resolved. For how to build and schedule a rule, see Atlassian's documentation on [creating Jira automation rules](https://support.atlassian.com/cloud-automation/docs/create-and-edit-jira-automation-rules/). Configure the rule with these Snyk-specific values:
 
-<figure><img src="../../.gitbook/assets/Security-Jira-Cloud-create-issue.png" alt="Jira issue created from a vulnerability found by Snyk"><figcaption><p>Jira issue created from a vulnerability found by Snyk</p></figcaption></figure>
+* **Schedule:** run the rule on a schedule that suits your workflow.
+* **JQL search:** `status != Done AND vulnerability[status] = CLOSED`
+* **Action:** transition the matching work items to **Done**, or another status that fits your workflow.
 
-### Link an existing Jira issue to a vulnerability
-
-If the vulnerability already has a Jira issue, you can link the vulnerability to the existing Jira issue by clicking the three dots in the Actions column and selecting **Link issue.**
-
-### Auto-close resolved vulnerabilities in security in Jira
-
-These steps describe how to use Jira automation and JQL to automatically close or change the status of tickets for vulnerabilities that are now in a closed state.
-
-1. In Jira on your Project, navigate to **Project Settings** and then **Automation.**
-2. Click he **Create Rule** button.
-3. Click **Scheduled** and then **Scheduled**.
-
-<figure><img src="../../.gitbook/assets/Scheduled View.png" alt="Add Scheduled trigger"><figcaption><p>Add Scheduled trigger</p></figcaption></figure>
-
-4. Select the checkbox that says **`Run a JQL search`** and enter `status != Done AND vulnerability[status] = CLOSED` in the field. Then click **Next**.
-
-<figure><img src="../../.gitbook/assets/scheduled config.png" alt="Set up a scheduled JQL search"><figcaption><p>Set up a scheduled JQL search</p></figcaption></figure>
-
-5. Add a new component and choose **THEN: Add an action**. Select **Issue actions** and choose **Transition issue**.
-
-<figure><img src="../../.gitbook/assets/transition issue.png" alt="Transition issue action"><figcaption><p>Transition issue action</p></figcaption></figure>
-
-5. Set the **Destination status** to `Done` or another status depending on your workflow.
-
-<figure><img src="../../.gitbook/assets/destination.png" alt="Set up the transition to Done status"><figcaption><p>Set up the transition to Done status</p></figcaption></figure>
-
-6. Now that the setup is complete, give it a name and click on **Turn on rule.**
-
-Now, according to your schedule, Jira will search for any issues for which the vulnerability is closed, but the issues are not closed, and close each Jira issue.
+According to your schedule, Jira searches for open items with closed vulnerabilities and closes each item.
 
 ## Uninstall Snyk Security in Jira Cloud
 
-{% hint style="warning" %}
-Uninstalling Snyk Security in Jira Cloud will disconnect Snyk vulnerabilities from their associated Jira issues.\
-\
-To uninstall a Jira app, you must be an administrator in the site-admins, administrators, or jira-administrators groups.
-{% endhint %}
-
-1. In Jira, navigate to **Apps** in the main menu and select **Manage your apps.**
-2. Select **Snyk Security in Jira.**
-3. Click the **Uninstall** button.
+Uninstalling Snyk Security in Jira Cloud disconnects Snyk vulnerabilities from their associated Jira work items. To uninstall the app, follow Atlassian's [instructions for managing and removing apps](https://support.atlassian.com/organization-administration/docs/installing-and-managing-app-access/).

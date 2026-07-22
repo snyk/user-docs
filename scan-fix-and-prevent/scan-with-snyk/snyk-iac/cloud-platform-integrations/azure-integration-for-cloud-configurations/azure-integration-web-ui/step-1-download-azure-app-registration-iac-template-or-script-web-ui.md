@@ -1,3 +1,7 @@
+---
+description: 'Step 1: download the Azure app registration IaC template or script in the Web UI'
+---
+
 # Step 1: Download Azure app registration IaC template or script (Web UI)
 
 Before you can create a Cloud Environment for an Azure subscription, you must **download** a Terraform infrastructure as code (IaC) template or Azure CLI Bash script declaring the following resources:

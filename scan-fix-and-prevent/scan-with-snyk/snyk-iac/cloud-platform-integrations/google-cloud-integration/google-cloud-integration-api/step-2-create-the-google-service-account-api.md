@@ -1,3 +1,7 @@
+---
+description: 'Step 2: create the Google service account for the Snyk integration using the API'
+---
+
 # Step 2: Create the Google service account (API)
 
 {% hint style="info" %}

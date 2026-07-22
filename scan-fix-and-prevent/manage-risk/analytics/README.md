@@ -1,3 +1,7 @@
+---
+description: How Snyk Analytics reports on your security posture and program
+---
+
 # Analytics
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: How Snyk scans Maven and Gradle applications through SCM integrations, including dependency trees and supported scopes
+---
+
 # SCM integrations with Maven and Gradle
 
 ## Available SCM integrations

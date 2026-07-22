@@ -1,3 +1,7 @@
+---
+description: How to change the Snyk Broker authentication method for an integration in a Docker installation
+---
+
 # Changing the auth method with Docker
 
 Each integration has an auth method set by default, with the exact method varying by service.

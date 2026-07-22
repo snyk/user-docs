@@ -1,3 +1,7 @@
+---
+description: How to set up a OneLogin SAML application and connect it to Snyk for SSO
+---
+
 # OneLogin SAML Application setup
 
 This example shows setting up a SAML application in OneLogin and connecting this to Snyk to facilitate SSO. To configure your OneLogin to use SSO with Snyk, start by obtaining an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.

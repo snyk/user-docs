@@ -1,3 +1,7 @@
+---
+description: Snyk support for C and C++ with Snyk Code and Snyk Open Source, including CLI and IDE testing and supported frameworks and libraries
+---
+
 # C/C++
 
 {% hint style="info" %}
@@ -444,7 +448,7 @@ Snyk creates a snapshot of dependencies and vulnerabilities and imports them int
 
 Importing a Snyk Project with unmanaged dependencies creates a new Snyk Project on the **Projects** page:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-08-04 at 11.18.10.png" alt="Project with unmanaged dependencies"><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project-unmanaged-dependencies.png" alt="Project with unmanaged dependencies"><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>
 
 Use Snyk test APIs if you develop advanced dependency management strategies instead of using standard package managers.
 

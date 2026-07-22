@@ -1,3 +1,7 @@
+---
+description: How Snyk manages open source license compliance
+---
+
 # Open-source license compliance
 
 ## Overview of licenses
@@ -23,7 +27,7 @@ After the license policy is updated, when Snyk detects a license violation, it i
 
 Example:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-02-15 at 14.08.12.png" alt="License issue Card - Snyk web UI"><figcaption><p>License issue card in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/license-issue-card-snyk-web-ui.png" alt="License issue Card - Snyk web UI"><figcaption><p>License issue card in the Snyk Web UI</p></figcaption></figure>
 
 ## View and manage license policies
 
@@ -47,11 +51,11 @@ There are two types of dual or multiple licenses:
 
 * OR **-** If Snyk recognizes two licenses marked with `OR`being used in a package, this means the customer can comply with either of the licenses.
 
-<figure><img src="../../../.gitbook/assets/image (172).png" alt="" width="184"><figcaption><p>Example of an OR license in npm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/example-license-npm.png" alt="" width="184"><figcaption><p>Example of an OR license in npm</p></figcaption></figure>
 
 * AND **-** If the license explicitly has `AND`, customers must comply with all (dual or multiple) licenses.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt="" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/example-license-npm-2.png" alt="" width="185"><figcaption><p>Example of an AND license in npm</p></figcaption></figure>
 
 In both of these cases, Snyk displays the severity of the license with the highest severity when displaying issues, where all licenses have a severity.
 

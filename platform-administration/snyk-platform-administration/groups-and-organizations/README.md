@@ -1,3 +1,7 @@
+---
+description: The Snyk hierarchy of Tenant, Groups, and Organizations, and how it controls access to Snyk scanning and features
+---
+
 # Tenant, Groups, and Organizations
 
 ## The Snyk hierarchy

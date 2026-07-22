@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk Container with JFrog Artifactory
+---
+
 # Integrate with JFrog Artifactory
 
 {% hint style="info" %}

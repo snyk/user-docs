@@ -1,3 +1,7 @@
+---
+description: How Consistent Ignores for Snyk Code work in pull request checks
+---
+
 # Consistent Ignores for Snyk Code Pull Request Checks
 
 ## Pull Request Check default ignore behavior

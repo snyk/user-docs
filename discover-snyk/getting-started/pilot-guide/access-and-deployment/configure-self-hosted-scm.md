@@ -1,3 +1,7 @@
+---
+description: How to connect self-hosted SCMs to Snyk through Snyk Broker for source code hosted in a private network
+---
+
 # Configure self-hosted SCM
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

@@ -1,3 +1,7 @@
+---
+description: Frequently asked questions about excluding files and ignoring issues in Snyk
+---
+
 # Exclude files and ignore issues FAQs
 
 There are many considerations in determining how excluding files and ignoring issues will work, depending on several factors:

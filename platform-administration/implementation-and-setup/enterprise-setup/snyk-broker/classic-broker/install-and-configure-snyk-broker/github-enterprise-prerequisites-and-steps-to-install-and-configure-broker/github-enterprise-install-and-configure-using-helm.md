@@ -1,3 +1,7 @@
+---
+description: How to install and configure Snyk Broker for GitHub Enterprise using Helm
+---
+
 # GitHub Enterprise - install and configure using Helm
 
 Before installing, review the [prerequisites](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/) and the general instructions for installation using [Helm](../../../../../../enterprise-setup/snyk-broker/classic-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md).

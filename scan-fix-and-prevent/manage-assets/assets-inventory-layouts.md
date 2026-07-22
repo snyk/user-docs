@@ -1,3 +1,7 @@
+---
+description: The tabs in the Snyk assets inventory
+---
+
 # Assets inventory tabs
 
 Snyk defines an asset as a meaningful, real-world component in an application’s SDLC, where meaningful means either carries a risk or aggregates risk of other components (for example, repositories that contain packages), and real-world means that the concept exists outside of Snyk, for example, repository (which is a generally applicable term). In most cases, assets carry a risk or aggregate risk of other components, such as repositories that contain packages.

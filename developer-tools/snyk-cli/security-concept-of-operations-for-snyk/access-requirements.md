@@ -1,3 +1,7 @@
+---
+description: The access requirements for using Snyk applications such as the CLI
+---
+
 # Access requirements
 
 When you are using Snyk applications like the [CLI ](../getting-started-with-the-snyk-cli.md)or [IDE integrations](../../snyk-ide-plugins-and-extensions/), certain local and remote resources must be accessible. This documentation explains how to harden your system without affecting Snyk functionality.

@@ -1,3 +1,7 @@
+---
+description: Custom role template for a Team Lead, an Organization Admin who can also customize permissions for other users
+---
+
 # Team Lead role template
 
 A Team Lead is equivalent to the default [**Organization Admin**](../pre-defined-roles.md) rol&#x65;**,** providing additional capabilities to customize or change user permissions for other users.\
@@ -45,4 +49,4 @@ This role should have all Organization-level permissions enabled.
 
 You can set this quickly using the **Enable all** button in the Organization-level permissions section. Be sure to update the permissions using the button at the bottom of the section.
 
-<figure><img src="../../../.gitbook/assets/image (150).png" alt=""><figcaption><p>Organization-level permissions section</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/organization-level-permissions-section-2.png" alt=""><figcaption><p>Organization-level permissions section</p></figcaption></figure>

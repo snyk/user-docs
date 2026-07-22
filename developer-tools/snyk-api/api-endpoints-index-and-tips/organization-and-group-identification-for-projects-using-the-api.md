@@ -1,3 +1,7 @@
+---
+description: How to identify the Organization and Group for Projects using the Snyk API
+---
+
 # Organization and Group identification for Projects using the API
 
 Using the API, you can do the following:

@@ -1,3 +1,7 @@
+---
+description: How to configure Snyk legacy custom mapping using role patterns in SAML attributes or OIDC claims
+---
+
 # Legacy custom mapping
 
 To configure this option, send the `roles` array within the SAML attributes or OIDC claims to adhere to **one** of the following patterns:
@@ -178,4 +182,4 @@ For the Product Team, Snyk uses the snyk-{groupID} mapping, where the value of g
 
 ## Summary diagram of roles under custom mapping
 
-<figure><img src="../../../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/summary-diagram-roles-under-custom-mapping.png" alt=""><figcaption></figcaption></figure>

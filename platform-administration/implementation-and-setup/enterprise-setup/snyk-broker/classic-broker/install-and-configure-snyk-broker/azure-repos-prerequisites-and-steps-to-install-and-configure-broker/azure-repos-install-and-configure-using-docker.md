@@ -1,3 +1,7 @@
+---
+description: How to install and configure Snyk Broker for Azure Repos using Docker
+---
+
 # Azure Repos - install and configure using Docker
 
 {% hint style="info" %}

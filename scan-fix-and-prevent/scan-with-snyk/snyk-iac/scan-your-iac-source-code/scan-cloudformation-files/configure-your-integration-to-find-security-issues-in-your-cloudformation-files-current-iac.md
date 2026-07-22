@@ -1,3 +1,7 @@
+---
+description: How to configure your integration to find security issues in CloudFormation files
+---
+
 # Configure your integration to find security issues in your CloudFormation files
 
 Snyk tests and monitors CloudFormation files from source code repositories. It gives advice on how to better secure cloud environments by catching misconfigurations before they are pushed to production, along with assistance on how best to fix them.
@@ -26,4 +30,4 @@ Scanning CloudFormation provides security feedback on everything that is statica
 * If needed, review and adjust the **Infrastructure as code** **Severity settings** on the AWS tab in the example.\
   Check to select the file types to scan, CloudFormation, Terraform, or both, and from the pulldown selection, choose the severity level for each API Gateway.
 
-<figure><img src="../../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/select-severity-settings-iac-scans.png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>

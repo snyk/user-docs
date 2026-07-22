@@ -1,3 +1,7 @@
+---
+description: The Snyk OAuth2 API for Snyk Apps, compliant with RFC 6749
+---
+
 # OAuth2 API
 
 Snyk provides an OAuth2 API, primarily for use with [Snyk Apps](using-specific-snyk-apis/snyk-apps-apis/). It complies with RFC 6749.

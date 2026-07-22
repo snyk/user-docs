@@ -1,3 +1,7 @@
+---
+description: How to add Snyk to your CI/CD pipeline as a gatekeeper that fails builds on new vulnerabilities
+---
+
 # Add and configure Snyk to your CI/CD pipeline
 
 Using Snyk as a gatekeeper in your build pipeline prevents the introduction of new vulnerabilities, based on the "fail" criteria you set.

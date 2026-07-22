@@ -1,3 +1,7 @@
+---
+description: How Snyk auto-provisions accounts for Pilot and Enterprise plans, including the setup questions you answer first
+---
+
 # Auto-provisioning guide
 
 {% hint style="info" %}
@@ -10,8 +14,8 @@ Provisioning is the first interaction you have with Snyk before getting access. 
 
 * What is the name of your business?
 * Where do you want your data to be hosted?
-* What is the authentication method your users will access Snyk with?
-* Do you already have a Snyk account you want to use (a previously completed Pilot) or do you want to start from scratch?
+* What is the authentication method your users will use to access Snyk?
+* Do you already have a Snyk account you want to use (a previously completed Pilot), or do you want to start from scratch?
 
 This guide covers the following aspects of automated provisioning:
 
@@ -32,7 +36,7 @@ This email contains two links:
 2. **Create and activate a new account** - To be used if you're entirely new to Snyk or want to start from scratch with a different user.
 
 {% hint style="warning" %}
-Once provisioning is complete, these links will become invalid and you will see an "Access denied" error page.
+Once provisioning is complete, these links will become invalid, and you will see an "Access denied" error page.
 
 If you have not completed provisioning but still see this error, make sure someone else in your organization has not already completed the flow themselves, in case the welcome email has more recipients.
 {% endhint %}
@@ -42,20 +46,20 @@ If you have not completed provisioning but still see this error, make sure someo
 Clicking the sign-up link in your welcome email will take you to the sign-up page in the provisioning app.
 
 {% hint style="warning" %}
-The provisioning app is only accessible through a unique link, all other access is disabled and will show an error page.
+The provisioning app is only accessible through a unique link; all other access is disabled and will show an error page.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-29 at 13.39.40.png" alt="Sign up page on provision.snyk.io"><figcaption><p>Sign up page on provision.snyk.io</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sign-page-provision-snyk-io.png" alt="Sign up page on provision.snyk.io"><figcaption><p>Sign up page on provision.snyk.io</p></figcaption></figure>
 
 ### Step 1: Enter the company name
 
-The company name you enter here will be used to create the [Tenant](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant), the top-level instance you'll see in the Snyk Platform. It is a required field and has 60-character limit.
+The company name you enter here will be used to create the [Tenant](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/tenant), the top-level instance you'll see in the Snyk Platform. It is a required field and has a 60-character limit.
 
 Provisioning will also create a [Group](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/groups) and a default [Organization](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/organizations) using the same name.
 
 ### Step 2: Choose where to host the account
 
-<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/Screenshot 2025-01-29 at 16.54.30.png" alt="Available hosting regions" width="375"><figcaption><p>Available hosting regions</p></figcaption></figure></div>
+<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/available-hosting-regions.png" alt="Available hosting regions" width="375"><figcaption><p>Available hosting regions</p></figcaption></figure></div>
 
 Snyk offers [regional hosting](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency) to comply with regional data protection laws and improve service performance. This ensures data residency requirements are met and reduces data latency.
 
@@ -65,7 +69,9 @@ Provisioning is enabled for these [three regions](https://app.gitbook.com/s/ELvl
 * :flag\_eu: **Europe**: SNYK-EU-01
 * :flag\_au: **Australia**: SNYK-AU-01
 
-In the case of [multiple instances](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#regional-multi-and-single-tenant-hosting) being available in a chosen region (United States), Snyk reserves the right to chose the specific instance where your account will be created. For more information see [Regional Hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency).
+In the case of [multiple instances](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#regional-multi-and-single-tenant-hosting) being available in a chosen region (United States), Snyk reserves the right to choose the specific instance where your account will be created. For more information, see [Regional Hosting and data residency](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency).
+
+If you select the United States region and use SSO for authentication, your account is provisioned on SNYK-US-02. Use https://app.us.snyk.io to access Snyk and https://api.us.snyk.io for CLI and IDE integrations. See[ Regional hosting and data residency](https://docs.snyk.io/snyk-data-and-governance/regional-hosting-and-data-residency) for the full list of regional endpoints.
 
 {% hint style="warning" %}
 Automated provisioning is only possible for multi-tenant environments. For single-tenant availability (Snyk Private Cloud), reach out to your account team in advance of provisioning.
@@ -73,12 +79,12 @@ Automated provisioning is only possible for multi-tenant environments. For singl
 
 ### Step 3: Select an authentication method
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-29 at 17.23.59.png" alt="Available authentication methods" width="363"><figcaption><p>Available authentication methods</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/available-authentication-methods.png" alt="Available authentication methods" width="363"><figcaption><p>Available authentication methods</p></figcaption></figure>
 
-The available authentication methods are either Single sign-on (SSO) or Third-party authentication.
+The available authentication methods are either Single Sign-On (SSO) or Third-party authentication.
 
 1. **Single Sign-On** - use your company's existing identity management system, see [Single Sign-On (SSO) for authentication to Snyk](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/user-management/single-sign-on-sso-for-authentication-to-snyk) for more details.
-2. **Third-party authentication** - Snyk supports a list of third-party identity providers, see [Authentication for third-party tools](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/authentication-for-third-party-tools) for more details. This method is only available for the United States region.
+2. **Third-party authentication** - Snyk supports a list of third-party identity providers; see [Authentication for third-party tools](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/authentication-for-third-party-tools) for more details. This method is only available for the United States region.
 
 #### Which authentication methods are available for each region?
 
@@ -90,26 +96,26 @@ The available authentication methods are either Single sign-on (SSO) or Third-pa
 
 Snyk recommends selecting SSO since it is best supported across all environments. Selecting this option will then prompt you to enter a valid, work-issued email address, used to create an initial Snyk Admin user. No extra configuration for SSO is required at this point.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-30 at 11.58.02.png" alt="Email address input" width="375"><figcaption><p>Email address input</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/email-address-input.png" alt="Email address input" width="375"><figcaption><p>Email address input</p></figcaption></figure>
 
 ### Step 4: Confirm details and start provisioning
 
-As a final step, you must confirm the details entered are correct.
+As a final step, you must confirm that the details entered are correct.
 
 * If you have selected SSO as the authentication method, clicking "Sign up" will then show a loading page while Snyk does the background work.
-* If you have selected Third-party authentication, clicking "Continue to sign up options" will redirect you to the Snyk Login page where you can choose your identity provider (Github, Google, and so on.). Once you have completed signing up you will be redirected back to the provisioning application where the loading page will indicate in-progress background work.
+* If you have selected Third-party authentication, clicking "Continue to sign up options" will redirect you to the Snyk Login page, where you can choose your identity provider (GitHub, Google, and so on). Once you have completed signing up, you will be redirected back to the provisioning application, where the loading page will indicate in-progress background work.
 
-Snyk advises you to not close the page, otherwise you risk not seeing the process complete successfully.
+Snyk advises you not to close the page; otherwise, you risk not seeing the process complete successfully.
 
 ### Step 5: Access the Snyk platform
 
-If you have selected SSO as the authentication method, once plan activation is done, you will see a success message and a verification button. Snyk also sends an email to indicate a successful provisioning containing the same login verification link. This link does not expire and it can be used for multiple authentications if needed.\
+If you have selected SSO as the authentication method, once plan activation is done, you will see a success message and a verification button. Snyk also sends an email to indicate a successful provisioning containing the same login verification link. This link does not expire, and it can be used for multiple authentications if needed.\
 \
-Once clicked, a login code will be sent to the email address previously entered. This is known as a Passwordless Login. Enter the code where prompted and you are ready to start using Snyk!
+Once clicked, a login code will be sent to the previously entered email address. This is known as a Passwordless Login. Enter the code where prompted, and you are ready to start using Snyk!
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-30 at 14.14.27.png" alt="Successful provisioning for SSO" width="375"><figcaption><p>Successful provisioning for SSO</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/successful-provisioning-sso.png" alt="Successful provisioning for SSO" width="375"><figcaption><p>Successful provisioning for SSO</p></figcaption></figure>
 
-If you have selected **Third-party authentication**, once plan activation is done you are all set! You can click "Continue to your account" and start using the platform.
+If you have selected **Third-party authentication**, once plan activation is done, you are all set! You can click "Continue to your account" and start using the platform.
 
 {% hint style="info" %}
 Your plan might not have all the features enabled if your contract's start date is in the future. You will gain full access to all features when the start date is met.
@@ -117,7 +123,7 @@ Your plan might not have all the features enabled if your contract's start date 
 
 ## Logging in - provision using an existing user account
 
-Clicking the sign-up link in your welcome email will take you to the log in page in the provisioning app.
+Clicking the sign-up link in your welcome email will take you to the login page in the provisioning app.
 
 ### Step 1: Logging in
 
@@ -125,11 +131,11 @@ If you have a user account connected through a third-party provider, you will ne
 
 You can find the links for all the regions in the [Login and Web UI URLs section](https://app.gitbook.com/s/ELvljsaLKPkSpffOkmsQ/regional-hosting-and-data-residency#login-and-web-ui-urls).
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-30 at 15.11.52.png" alt="Log in page on provision.snyk.io"><figcaption><p>Log in page on provision.snyk.io</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/log-page-provision-snyk-io.png" alt="Log in page on provision.snyk.io"><figcaption><p>Log in page on provision.snyk.io</p></figcaption></figure>
 
 ### Step 2: Select an existing Tenant or start fresh
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-30 at 15.20.27.png" alt="Linking to an existing Tenant or creating a new one" width="375"><figcaption><p>Linking to an existing Tenant or creating a new one</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/linking-existing-tenant-creating-new-one.png" alt="Linking to an existing Tenant or creating a new one" width="375"><figcaption><p>Linking to an existing Tenant or creating a new one</p></figcaption></figure>
 
 If you already have a Snyk User, you can choose how you activate your Enterprise plan or Pilot after logging in:
 
@@ -140,7 +146,7 @@ If you already have a Snyk User, you can choose how you activate your Enterprise
 
 ### **Step 3: Access the Snyk platform**
 
-This step is the same as [#step-5-access-the-snyk-platform](auto-provisioning-guide.md#step-5-access-the-snyk-platform "mention") when signing up. Once the process is done you can "Continue to your account" and begin using Snyk.
+This step is the same as [#step-5-access-the-snyk-platform](auto-provisioning-guide.md#step-5-access-the-snyk-platform "mention") when signing up. Once the process is done, you can "Continue to your account" and begin using Snyk.
 
 {% hint style="info" %}
 Your plan might not have all the features enabled if your contract's start date is in the future. You will gain full access to all features when the start date is met.
@@ -150,18 +156,18 @@ Your plan might not have all the features enabled if your contract's start date 
 
 ### Validation errors
 
-When creating a new Tenant or User Snyk checks for duplicates and surfaces any issues.
+When creating a new Tenant or User, Snyk checks for duplicates and surfaces any issues.
 
-* **The business name provided is already in use.** - Use a different name or reach out to your account executive if you want to link your plan to that existing Tenant but you are not a member of it.
+* **The business name provided is already in use.** - Use a different name or reach out to your account executive if you want to link your plan to that existing Tenant, but you are not a member of it.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-02-04 at 17.18.14.png" alt="Business name already in use error" width="375"><figcaption><p>Business name already in use error</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/business-name-already-use-error.png" alt="Business name already in use error" width="375"><figcaption><p>Business name already in use error</p></figcaption></figure>
 
 * **An account with this email already exists.** - In this scenario you can use a different work email address or you can login ([#logging-in-provision-using-an-existing-user-account](auto-provisioning-guide.md#logging-in-provision-using-an-existing-user-account "mention")), then create the new Tenant.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-02-04 at 17.18.48.png" alt="User with the same email address already exists error" width="375"><figcaption><p>User with the same email address already exists error</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-same-email-address-already-exists-error.png" alt="User with the same email address already exists error" width="375"><figcaption><p>User with the same email address already exists error</p></figcaption></figure>
 
 ### Plan Activation errors
 
 Snyk is doing its best to ensure that you never see this screen, but in case you do, save the **reference ID** and send it to your account executive or reach out to support with the reference ID and the steps taken.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-02-04 at 17.03.37.png" alt="Plan activation error" width="375"><figcaption><p>Plan activation error</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/plan-activation-error.png" alt="Plan activation error" width="375"><figcaption><p>Plan activation error</p></figcaption></figure>

@@ -1,3 +1,7 @@
+---
+description: Custom role template for a Remediator, an Organization-level role that helps developers assess and fix vulnerabilities
+---
+
 # Remediator role template
 
 This is an Organization-level role, meaning a Remediator can only view certain areas and functions in Snyk and cannot create PRs, Projects, and more.

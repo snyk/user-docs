@@ -1,3 +1,7 @@
+---
+description: How Snyk custom mapping dynamically assigns users to Groups and Organizations based on identity provider data
+---
+
 # Custom mapping
 
 Custom mapping allows you to dynamically assign users to your Snyk Groups and Organizations based on data provided by your Identity Provider (IdP), in order to implement a scaled user provisioning and access model.
@@ -135,7 +139,7 @@ To find an Organization slug, navigate to the **Settings** page for the Organiza
 
 To find the slug of a Group, navigate to the Group Settings, and find the Group slug under General Settings, which you can copy.
 
-<figure><img src="../../../../.gitbook/assets/image (153).png" alt="Group general settings page, showing the Group slug"><figcaption><p>Group general settings page, showing the Group slug</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/group-general-settings-page-showing-group-slug.png" alt="Group general settings page, showing the Group slug"><figcaption><p>Group general settings page, showing the Group slug</p></figcaption></figure>
 
 ## Role normalized name
 
@@ -145,7 +149,7 @@ This will open the role details page that shows which permissions are enabled fo
 
 For more details on roles, and specifically, custom roles, see [user role management](../../../../snyk-platform-administration/user-roles/user-role-management.md).
 
-<figure><img src="../../../../.gitbook/assets/image (154).png" alt="Role details page for Organization Admin role"><figcaption><p>Role details page for Organization Admin role</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/role-details-page-organization-admin-role.png" alt="Role details page for Organization Admin role"><figcaption><p>Role details page for Organization Admin role</p></figcaption></figure>
 
 ## Pre-defined role slugs
 

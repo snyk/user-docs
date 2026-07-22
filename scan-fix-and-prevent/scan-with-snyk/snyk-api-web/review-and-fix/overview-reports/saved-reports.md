@@ -1,3 +1,7 @@
+---
+description: How to use saved reports in Snyk API and Web
+---
+
 # Saved reports
 
 With Snyk API & Web, you can download reports of specific scans (scan reports), or reports based on search criteria you define, that can comprise multiple targets (saved reports).

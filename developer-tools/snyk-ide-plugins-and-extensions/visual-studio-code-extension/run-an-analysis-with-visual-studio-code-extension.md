@@ -1,3 +1,7 @@
+---
+description: How to run a Snyk scan with the Visual Studio Code extension once configured and trusted
+---
+
 # Run an analysis with Visual Studio Code extension
 
 {% hint style="info" %}
@@ -19,7 +23,7 @@ Snyk Open Source requires the Snyk CLI, so it is downloaded in the background.
 
 Snyk Code analysis runs quickly without the CLI, so results may be available quickly. If there is a delay, you see in-progress messages for each type of scan while Snyk scans your workspace for vulnerabilities and issues:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-06-04 at 9.46.14 AM.png" alt=""><figcaption><p>Snyk scan in progress</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-scan-progress.png" alt=""><figcaption><p>Snyk scan in progress</p></figcaption></figure>
 
 {% hint style="info" %}
 Ensure your files are saved before manually running an analysis.

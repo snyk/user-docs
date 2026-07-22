@@ -1,3 +1,7 @@
+---
+description: How to configure your integration to find security issues in Terraform files
+---
+
 # Configure your integration to find security issues in your Terraform files
 
 Snyk tests and monitors your Terraform files from your source code repositories, guiding you with advice on how you can better secure your cloud environment--catching misconfigurations before you push to production and helping you to fix them.
@@ -28,4 +32,4 @@ See the Snyk blog post about the ability to interpolate variables: [Snyk IaC pub
 * If needed, review and adjust the **Infrastructure as code** **Severity settings** on the AWS tab in the example.\
   Check to select the file types to scan, CloudFormation, Terraform, or both, and from the pulldown selection, choose the severity level for each API Gateway.
 
-<figure><img src="../../../../.gitbook/assets/image (59).png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/select-severity-settings-iac-scans-2.png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>

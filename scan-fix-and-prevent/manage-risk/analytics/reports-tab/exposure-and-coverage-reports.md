@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Exposure and coverage reports
 
 The Exposure and coverage reports section includes the following reports:
@@ -51,7 +55,7 @@ The repository coverage widget provides an overview of the percentage of scanned
 
 Hover over any column to see how the coverage percentage is calculated.
 
-<figure><img src="../../../.gitbook/assets/image (204).png" alt=""><figcaption><p>Repository Coverage</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/repository-coverage.png" alt=""><figcaption><p>Repository Coverage</p></figcaption></figure>
 
 ### Asset class breakdown
 
@@ -64,7 +68,7 @@ The asset class breakdown widget surfaces the distribution of repositories and c
 * Using the filters enables narrowing down the asset class distribution within specific applications or code owners, as well as focusing on active repositories or a set of assets based on the asset tags.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (203).png" alt=""><figcaption><p>Asset Class Breakdown</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/asset-class-breakdown.png" alt=""><figcaption><p>Asset Class Breakdown</p></figcaption></figure>
 
 ### Top 10 technologies breakdown
 
@@ -98,7 +102,7 @@ You can use this widget to surface the quantity of repositories that are more or
 You can use the asset class filter to identify business-critical assets that are not being maintained. Click a specific slice to open the inventory page in a new browser tab where you can browse and learn more about those assets.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (202).png" alt=""><figcaption><p>Repository freshness</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/repository-freshness.png" alt=""><figcaption><p>Repository freshness</p></figcaption></figure>
 
 ### Application context availability
 
@@ -118,7 +122,7 @@ The application context availability widget allows you to discover gaps in the c
 * Reviewing the unique values allows you to spot gaps in context. For example, you may realize that the number of unique code owners does not match the number of teams.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (199).png" alt=""><figcaption><p>Application Context Availability</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/application-context-availability.png" alt=""><figcaption><p>Application Context Availability</p></figcaption></figure>
 
 ### Asset source breakdown
 
@@ -131,7 +135,7 @@ The asset source breakdown widget visualizes the quantities of detected assets f
 * When asset inventory quantities seem incomplete or exceed expectations, this widget will help you discover which integrations should be examined and potentially configured differently.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (200).png" alt=""><figcaption><p>Asset source breakdown</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/asset-source-breakdown.png" alt=""><figcaption><p>Asset source breakdown</p></figcaption></figure>
 
 ## Issues Detail report
 

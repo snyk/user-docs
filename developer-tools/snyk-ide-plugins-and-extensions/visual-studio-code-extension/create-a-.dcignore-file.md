@@ -1,3 +1,7 @@
+---
+description: How to create a .dcignore file to exclude files and directories from Snyk Code scans
+---
+
 # Create a .dcignore file
 
 To ignore certain files and directories, for example, `node_modules`, create a `.dcignore` file. You can create it in any directory on any level, starting from the directory where your Project resides. The file syntax is identical to `.gitignore`.

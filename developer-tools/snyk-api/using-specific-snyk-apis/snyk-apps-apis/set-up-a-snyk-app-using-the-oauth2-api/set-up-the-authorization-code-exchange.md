@@ -1,3 +1,7 @@
+---
+description: How to exchange an authorization code for a token in a Snyk App
+---
+
 # Set up the authorization code exchange
 
 After you receive an authorization **code**, you must exchange it for an access token.

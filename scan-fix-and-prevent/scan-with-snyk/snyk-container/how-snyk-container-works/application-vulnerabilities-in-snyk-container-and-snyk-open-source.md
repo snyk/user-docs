@@ -1,3 +1,7 @@
+---
+description: How Snyk Container and Snyk Open Source detect application vulnerabilities in images
+---
+
 # Application vulnerabilities in Snyk Container and Snyk Open Source
 
 Snyk Container detects application vulnerabilities in your containers and overlaps Snyk Open Source capabilities.\

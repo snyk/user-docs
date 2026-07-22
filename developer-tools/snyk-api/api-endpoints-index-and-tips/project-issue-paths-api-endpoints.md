@@ -1,3 +1,7 @@
+---
+description: Snyk API endpoints for Project issue paths
+---
+
 # Project issue paths API endpoints
 
 The following provides information in addition to the information in the API Reference for the endpoints [List all project issue paths](../reference/projects-v1.md#org-orgid-project-projectid-issue-issueid-paths) and [List all project snapshot issue paths](../reference/snapshots-v1.md#org-orgid-project-projectid-history-snapshotid-issue-issueid-paths).

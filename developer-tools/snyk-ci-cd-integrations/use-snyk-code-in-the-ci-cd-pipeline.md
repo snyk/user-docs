@@ -1,3 +1,7 @@
+---
+description: How to run Snyk Code in a CI/CD pipeline to catch vulnerabilities in code changes
+---
+
 # Snyk Code in the CI/CD pipeline
 
 You can use CI/CD integration to test your code for vulnerabilities and ensure your changes do not introduce new vulnerabilities, keeping your applications secure.

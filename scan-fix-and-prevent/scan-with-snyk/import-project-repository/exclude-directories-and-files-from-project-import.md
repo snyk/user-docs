@@ -1,3 +1,7 @@
+---
+description: How to exclude directories and files when importing a Project
+---
+
 # Exclude directories and files from Project import
 
 If you import a Project through an SCM integration, add the folders to exclude in the **Exclude folders** field of the import window.
@@ -116,4 +120,4 @@ Now you want to exclude the `app.js` and `db.js` files from the Snyk Code analys
 
 The `app.js` and `db.js` files are excluded from the retest. They are not tested by Snyk Code and do not appear in the Code Analysis results. Now, only five vulnerability issues are detected.
 
-<figure><img src="../../.gitbook/assets/image (545).png" alt="Example of issues detected in files after excluding"><figcaption><p>Detected issues after files have been excluded</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/detected-issues-after-files-have-excluded.png" alt="Example of issues detected in files after excluding"><figcaption><p>Detected issues after files have been excluded</p></figcaption></figure>

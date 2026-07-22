@@ -1,3 +1,7 @@
+---
+description: How to structure a Snyk Organization by team, product, or SCM to manage policies, reporting, and access
+---
+
 # Structure your account
 
 ## Plan your Organization structure

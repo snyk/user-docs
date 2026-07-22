@@ -1,3 +1,7 @@
+---
+description: Explore Snyk Partner integration solutions across 17 categories
+---
+
 # Partner integrations
 
 Explore our 17 integration categories for Snyk Partner solutions below. Click on a category to view specific partner offerings.

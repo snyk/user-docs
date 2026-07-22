@@ -1,3 +1,7 @@
+---
+description: How Snyk integrates with Bitbucket Pipelines using a Snyk pipe to scan your code
+---
+
 # Bitbucket Pipelines integration using a Snyk pipe
 
 Snyk integrates with Bitbucket Pipelines using a Snyk pipe, seamlessly scanning your application dependencies and Docker images for security vulnerabilities as part of the continuous integration/continuous delivery (CI/CD) workflow.
@@ -14,7 +18,7 @@ From the build directory, Bitbucket Pipelines displays a list of available pipes
 
 On this list, find and click **Snyk** to view the pipe, examples, parameters, and values:
 
-![Snyk Scan pipe information](../../.gitbook/assets/mceclip0-25-.png)
+![Snyk Scan pipe information](../../.gitbook/assets/snyk-scan-pipe-information.png)
 
 ## Setup and use details
 

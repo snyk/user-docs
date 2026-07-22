@@ -1,3 +1,7 @@
+---
+description: The variables available for Snyk custom PR templates
+---
+
 # Variables list and description
 
 {% tabs %}

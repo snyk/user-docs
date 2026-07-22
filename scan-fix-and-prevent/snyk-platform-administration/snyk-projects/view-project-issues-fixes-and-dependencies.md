@@ -1,3 +1,7 @@
+---
+description: How to view Project issues, fixes, and dependencies
+---
+
 # View Project issues, fixes, and dependencies
 
 The following Project information is available on the Snyk Web UI:
@@ -39,7 +43,7 @@ The score associated with the dependency title is the maximum of all listed issu
 
 Snyk knowledge of the transitive dependencies in your Project makes it possible for Snyk to provide additional fix advice on the **Fixes** tab:
 
-<div align="center"><figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png" alt="Issue details Fixes tab"><figcaption><p>Project details Fixes tab</p></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/project-details-fixes-tab.png" alt="Issue details Fixes tab"><figcaption><p>Project details Fixes tab</p></figcaption></figure></div>
 
 See [Fix your vulnerabilities](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md) for details.
 
@@ -49,4 +53,4 @@ Snyk uses the package manager for your application to build the dependency tree 
 
 An example follows:
 
-<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-06-13 at 08.57.23.png" alt="Issues detail page dependencies tab"><figcaption><p>Issues detail page dependencies tab</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/issues-detail-page-dependencies-tab.png" alt="Issues detail page dependencies tab"><figcaption><p>Issues detail page dependencies tab</p></figcaption></figure></div>

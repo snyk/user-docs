@@ -1,3 +1,9 @@
+---
+description: >-
+  Index of Snyk API endpoints with tips, including how to find your Organization
+  ID
+---
+
 # API endpoints index and tips
 
 {% hint style="info" %}
@@ -474,7 +480,7 @@ Additional information: [Reachability](https://app.gitbook.com/s/BJO0IZx7zB6bOko
 
 ### [Monitor Dep Graph](../reference/monitor-v1.md)
 
-**More information:** [Dep Graph API (Bazel)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/bazel#dep-graph-api)
+**More information:** [Dep Graph API (Bazel)](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/bazel#dep-graph-api)
 
 ## Organizations (v1)
 
@@ -880,7 +886,7 @@ This endpoint deletes the specified Targets and also deletes all the Projects in
 
 ### [Test Dep Graph](../reference/test-v1.md#test-dep-graph)
 
-**More information:** [Dep Graph API](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/bazel#dep-graph-api) (Bazel);\
+**More information:** [Dep Graph API](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/bazel#dep-graph-api) (Bazel);\
 [Unmanaged JavaScript](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/javascript#unmanaged-javascript);\
 [Start scanning](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/start-scanning)
 

@@ -1,3 +1,7 @@
+---
+description: How to view and modify Snyk Group general settings, including the Group name and related options
+---
+
 # Group general settings
 
 To view and modify settings for your Group, navigate to **Settings** > **General**.

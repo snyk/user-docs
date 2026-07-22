@@ -1,3 +1,7 @@
+---
+description: The Azure resources Snyk IaC supports for cloud context
+---
+
 # Supported Azure resources for cloud context
 
 Snyk cloud context works with the following Azure resource types:

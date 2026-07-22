@@ -1,3 +1,7 @@
+---
+description: How to upgrade the Snyk CLI to stay secure and current
+---
+
 # Upgrade the Snyk CLI
 
 Upgrade the Snyk CLI regularly to maintain a secure environment. Snyk releases frequent updates to provide the latest vulnerability definitions, introduce new features, and ensure compatibility with package managers. Outdated versions can limit scanning capabilities, trigger false positives, or cause inaccurate results.

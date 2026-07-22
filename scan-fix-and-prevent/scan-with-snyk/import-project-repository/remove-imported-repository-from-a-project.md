@@ -1,3 +1,7 @@
+---
+description: How to remove an imported repository from a Project
+---
+
 # Remove imported repository from a Project
 
 If you do not want Snyk to continue testing one or more of your imported repositories, you can do one of the following:

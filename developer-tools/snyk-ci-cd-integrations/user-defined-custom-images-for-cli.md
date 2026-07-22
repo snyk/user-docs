@@ -1,3 +1,7 @@
+---
+description: How to build user-defined custom images for the Snyk CLI
+---
+
 # User-defined custom images for CLI
 
 ## Context for user-defined custom images for CLI

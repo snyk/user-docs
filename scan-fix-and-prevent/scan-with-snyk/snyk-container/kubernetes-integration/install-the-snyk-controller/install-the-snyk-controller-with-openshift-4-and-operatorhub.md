@@ -1,3 +1,7 @@
+---
+description: How to install the Snyk Controller with OpenShift 4 and OperatorHub
+---
+
 # Install the Snyk Controller with OpenShift 4 and OperatorHub
 
 The Snyk Controller V2 is currently not available in the OpenShift Marketplace nor available as a community version.

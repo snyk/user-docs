@@ -1,3 +1,7 @@
+---
+description: How to set up the Terraform Cloud run task integration for Snyk IaC
+---
+
 # Set up the Terraform Cloud integration for IaC
 
 {% hint style="warning" %}
@@ -15,7 +19,7 @@ In the Snyk Web UI, go to the Terraform Cloud integration settings page for your
 
 Now navigate to [Terraform Cloud](https://app.terraform.io) in the organization global settings:
 
-![Terraform Cloud Settings](<../../.gitbook/assets/image (99).png>)
+![Terraform Cloud Settings](<../../.gitbook/assets/terraform-cloud-settings.png>)
 
 1. Go to the run tasks settings for your TFC organization:\
    `https://app.terraform.io/app/{YOUR_TFC_ORG}/settings/tasks`

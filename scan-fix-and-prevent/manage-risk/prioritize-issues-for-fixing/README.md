@@ -1,3 +1,7 @@
+---
+description: How to prioritize issues for fixing in Snyk
+---
+
 # Prioritize issues for fixing
 
 You can find prioritization within Snyk under several names and with different customizations depending on your Snyk plan. The following list presents an overview of all the places where you can find and use prioritization. The outputs can vary depending on the type of priority you choose to use.

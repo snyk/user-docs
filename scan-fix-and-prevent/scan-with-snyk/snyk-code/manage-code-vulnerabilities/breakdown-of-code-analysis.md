@@ -1,3 +1,7 @@
+---
+description: How Snyk Code analysis breaks down results after importing a repository
+---
+
 # Breakdown of Code analysis
 
 When you import repositories, Snyk Code automatically tests for vulnerabilities within the imported code. The vulnerabilities detected across all files in a single repository are compiled into a Snyk Project, labeled as Code Analysis. Code Analysis presents the test outcome for a specific repository, listing all discovered vulnerabilities in the repository's source code.
@@ -120,10 +124,10 @@ You can filter issues in the Code analysis Project by Priority Score using the *
 
 For CWE-22 Path Traversal, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is High severity. Otherwise, it is Low severity.
 
-<figure><img src="../../../.gitbook/assets/image (97).png" alt="Decision flow chart for Priority Score CWE-22 Path Traversal"><figcaption><p>Decision flow chart for Priority Score CWE-22 Path Traversal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/decision-flow-chart-priority-score-cwe-22-path-traversal.png" alt="Decision flow chart for Priority Score CWE-22 Path Traversal"><figcaption><p>Decision flow chart for Priority Score CWE-22 Path Traversal</p></figcaption></figure>
 
 ## Example: CWE-601: Open Redirect
 
 For CWE-2601 Open Redirect, if the vulnerability occurs in a test, it is Low severity. If not, and it comes from a direct source, it is Medium severity.
 
-<figure><img src="../../../.gitbook/assets/image (75).png" alt="Decision flow chart for Priority Score CWE-601 Open Redirect"><figcaption><p>Decision flow chart for Priority Score CWE-601 Open Redirect</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/decision-flow-chart-priority-score-cwe-601-open-redirect.png" alt="Decision flow chart for Priority Score CWE-601 Open Redirect"><figcaption><p>Decision flow chart for Priority Score CWE-601 Open Redirect</p></figcaption></figure>

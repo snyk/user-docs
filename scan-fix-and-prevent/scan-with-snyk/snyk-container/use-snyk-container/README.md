@@ -1,3 +1,7 @@
+---
+description: How to use Snyk Container to scan and monitor images
+---
+
 # Use Snyk Container
 
 To use Snyk Container from the Web UI, see the pages in this section. Information about using Snyk Container with the CLI is included as noted.

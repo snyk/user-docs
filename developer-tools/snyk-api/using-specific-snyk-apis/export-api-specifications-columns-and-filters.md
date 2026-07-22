@@ -1,3 +1,7 @@
+---
+description: The Snyk Export API specifications, columns, and filters
+---
+
 # Export API: Specifications, columns, and filters
 
 The Export API, which Snyk Analytics supports, makes it easier to export data by allowing users to create and manage CSV files. These files are safely stored by Snyk. Designed for efficiency and security, the Export API helps users organize and scale the export of large datasets, which is useful for reporting and analytics tasks.

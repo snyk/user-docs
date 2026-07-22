@@ -1,3 +1,7 @@
+---
+description: How to configure cloud providers for Snyk IaC drift detection
+---
+
 # Configure cloud providers
 
 To use the unmanaged resource detection feature in Snyk IaC, you need authentication for your cloud provider.

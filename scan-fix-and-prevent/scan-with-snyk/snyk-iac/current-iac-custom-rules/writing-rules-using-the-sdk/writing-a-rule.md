@@ -1,3 +1,7 @@
+---
+description: How to write a Snyk IaC custom rule with the SDK
+---
+
 # Writing a rule
 
 ## Rules in Rego

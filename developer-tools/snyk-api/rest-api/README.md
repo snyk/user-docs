@@ -1,3 +1,7 @@
+---
+description: Introduction to the Snyk REST API and resources to help you get started
+---
+
 # REST API
 
 This section provides an [introduction to the REST API](about-the-rest-api.md) and a resource to help you [get started](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/getting-started-guides/getting-started-with-the-rest-api).

@@ -1,3 +1,7 @@
+---
+description: Examples of using the Snyk GitHub Action for Gradle
+---
+
 # Snyk Gradle action
 
 This page provides examples of using the Snyk GitHub action for [Gradle](https://github.com/snyk/actions/tree/master/gradle). For instructions on using the action and further information, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).

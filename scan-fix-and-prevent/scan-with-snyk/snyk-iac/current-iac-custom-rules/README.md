@@ -1,3 +1,7 @@
+---
+description: How to create custom rules for Snyk IaC
+---
+
 # IaC custom rules
 
 {% hint style="info" %}
@@ -24,7 +28,7 @@ This section provides initial instructions to help you use the Snyk Infrastructu
 * [Integrating custom rules within a pipeline](iac-custom-rules-within-a-pipeline.md)
 * [SDK reference](sdk-reference.md)
 
-<figure><img src="../../../.gitbook/assets/image (96).png" alt="End to end flow of writing your own custom rules, distributing them, and using them to scan files with the Snyk CLI"><figcaption><p>End to end flow of writing your own custom rules, distributing them, and using them to scan files with the Snyk CLI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/end-end-flow-writing-own-custom-rules-distributing-them.png" alt="End to end flow of writing your own custom rules, distributing them, and using them to scan files with the Snyk CLI"><figcaption><p>End to end flow of writing your own custom rules, distributing them, and using them to scan files with the Snyk CLI</p></figcaption></figure>
 
 ## Snyk platform policies and Snyk IaC custom rules
 

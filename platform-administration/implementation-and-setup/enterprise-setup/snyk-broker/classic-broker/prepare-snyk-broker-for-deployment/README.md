@@ -1,3 +1,7 @@
+---
+description: How to prepare Snyk Broker for deployment, including prerequisites and supported platforms
+---
+
 # Prepare Snyk Broker for deployment
 
 {% hint style="info" %}

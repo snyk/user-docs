@@ -1,3 +1,7 @@
+---
+description: How to use the Jira integration with Snyk IaC
+---
+
 # Jira integration for Snyk IaC
 
 Snyk Infrastructure as Code allows users to raise Jira issues for misconfigurations found in their IaC resources.

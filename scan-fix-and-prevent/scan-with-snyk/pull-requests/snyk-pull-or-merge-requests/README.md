@@ -1,3 +1,7 @@
+---
+description: How Snyk pull and merge requests fix and upgrade dependencies
+---
+
 # Snyk Pull or Merge Requests
 
 In addition to providing fix advice, Snyk enables you create automatic or manual pull requests for supported package managers and ecosystems. To create PRs automatically in implementations with Snyk Broker, your administrator must upgrade to v4.55.0 or later.
@@ -16,7 +20,7 @@ For specific supported languages, you can create pull requests to remediate issu
 
 You can start the process from any supported Project's open source vulnerability view.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-02-13 at 5.05.38 PM.png" alt=""><figcaption><p>Vulnerability view of an issue</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vulnerability-view-issue.png" alt=""><figcaption><p>Vulnerability view of an issue</p></figcaption></figure>
 
 {% hint style="info" %}
 PRs use a branch naming convention based on the issues they fix. If a PR already exists for a specific change, Snyk does not create a new one, even if you closed the original PR.

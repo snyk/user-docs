@@ -1,3 +1,7 @@
+---
+description: How to handle invalid findings and false positives in Snyk API and Web
+---
+
 # Invalid findings and false positives
 
 In security scans, Snyk API & Web avoids false positives because they bring a costly overhead of manual analysis and resolution of vulnerabilities.

@@ -1,3 +1,7 @@
+---
+description: How Snyk breakability risk levels indicate upgrade risk in fix PRs
+---
+
 # Breakability risk levels
 
 {% hint style="info" %}

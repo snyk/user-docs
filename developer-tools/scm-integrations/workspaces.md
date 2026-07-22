@@ -1,3 +1,7 @@
+---
+description: How Snyk Workspaces improve the accuracy and reliability of SCM integration results in large enterprises
+---
+
 # Workspaces
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: How to switch the Snyk API and Web scan profile
+---
+
 # Switch the scan profile
 
 Switch between different scan profiles for your targets.

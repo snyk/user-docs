@@ -1,3 +1,7 @@
+---
+description: The Snyk API and Web roles and scopes by plan
+---
+
 # Roles and scopes by plan
 
 Learn what type of roles and scopes you can set up for your users and API keys.

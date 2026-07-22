@@ -1,3 +1,7 @@
+---
+description: How Snyk Essentials asset policies automate asset governance
+---
+
 # Assets policies
 
 ## Overview

@@ -1,3 +1,7 @@
+---
+description: How to integrate Snyk Open Source into your workflow using the CLI
+---
+
 # Integrate Snyk into your workflow using the CLI
 
 This page provides an example of integrating Snyk into your GitHub workflow using the [Snyk CLI](../../).

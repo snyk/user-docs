@@ -1,3 +1,7 @@
+---
+description: How to use the Snyk CLI for Snyk Code static analysis
+---
+
 # Snyk CLI for Snyk Code
 
 The [Snyk Command Line Interface](../../) (CLI) enables you to bring the functionality of Snyk Code into your development workflow. Using the Snyk CLI, you can run Snyk Code tests locally or incorporate them into your CI/CD pipeline to scan your source code for security vulnerabilities.

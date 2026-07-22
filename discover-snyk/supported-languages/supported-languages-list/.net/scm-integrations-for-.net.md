@@ -1,3 +1,7 @@
+---
+description: How Snyk scans .NET repositories through SCM integrations, including NuGet support and Universal Broker requirements
+---
+
 # SCM integrations for .NET
 
 {% hint style="info" %}

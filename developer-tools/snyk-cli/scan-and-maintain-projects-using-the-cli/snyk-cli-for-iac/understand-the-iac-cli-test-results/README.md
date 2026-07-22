@@ -1,3 +1,7 @@
+---
+description: How to understand Snyk IaC CLI test results
+---
+
 # Understand the IaC CLI test results
 
 {% hint style="info" %}

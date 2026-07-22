@@ -1,3 +1,7 @@
+---
+description: How to use a coverage control policy in Snyk Essentials
+---
+
 # Coverage control policy
 
 You can use the **Set Coverage Control** action from the Policies view to identify your application assets, monitor them, and prioritize the risks. You can select one or multiple security products and also specify a timeframe for when the last scan should have taken place.
@@ -6,7 +10,7 @@ Identifying and setting coverage policies allows your team to define where certa
 
 The following example filters out assets that should have Snyk Open Source and Snyk Code security controls in place and then sets the coverage policies.
 
-<figure><img src="../../../../.gitbook/assets/image (126).png" alt="AppRisk - Setting up a Coverage Control policy"><figcaption><p>Assets Policy - Setting up a Coverage Control policy</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/assets-policy-setting-coverage-control-policy.png" alt="AppRisk - Setting up a Coverage Control policy"><figcaption><p>Assets Policy - Setting up a Coverage Control policy</p></figcaption></figure>
 
 To follow the example, these are the filters you need to apply:
 
