@@ -17,6 +17,9 @@ Available integrations:
 
 ## Python for Snyk Code
 
+For an overview of the supported security rules, visit [Python rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/python-rules).
+
+
 For Python with Snyk Code, Python versions up to `3.12` are supported. Language features introduced in newer versions are not supported.
 
 For Python with Snyk Code, the following file format is supported: `.py`

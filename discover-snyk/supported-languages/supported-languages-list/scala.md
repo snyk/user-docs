@@ -39,6 +39,9 @@ For Scala, the following frameworks and libraries are supported:
 
 ## Scala for Snyk Code
 
+For an overview of the supported security rules, visit [Scala rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/scala-rules).
+
+
 For Scala with Snyk Code, the following file format is supported: `.scala`
 
 Available features:
