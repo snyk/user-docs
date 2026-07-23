@@ -9,6 +9,12 @@ nav_context: new
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## August 2026
+
+### Snyk CLI
+
+* AI-BOM enrichment from the CLI: the `snyk aibom` and `snyk aibom test` commands document the new `--enriched` option. When enabled, it runs additional slower enrichment steps on the AI-BOM. Visit [snyk aibom](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom) and [snyk aibom test](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom-test) for more details.
+
 ## July 2026
 
 ### Evo by Snyk
@@ -37,7 +43,6 @@ The most recent updates include significant changes to the user docs, such as fe
 * Snyk Container now reports vulnerabilities in the Go standard library, identified from the Go version recorded in the binary. Visit [Application vulnerabilities in Snyk Container and Snyk Open Source](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works/application-vulnerabilities-in-snyk-container-and-snyk-open-source) for more details.
 * Notification emails for new vulnerabilities are now off by default, and a new section documents notification precedence rules. Visit [Manage notifications](https://docs.snyk.io/platform-administration/snyk-platform-administration/manage-notifications) for more details.
 * Snowflake Data Share added two fields to the prevention events dataset, `finding_branch_key` and `finding_asset_key`. Visit [Data share data dictionary](https://docs.snyk.io/manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary) for more details.
-
 
 ## June 2026
 
