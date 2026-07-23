@@ -110,6 +110,9 @@ Kotlin only:
 
 ## Java and Kotlin for Snyk Code
 
+For an overview of the supported security rules, visit [Java rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/java-rules) and [Kotlin rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/kotlin-rules).
+
+
 For Java and Kotlin with Snyk Code, the following file formats are supported:
 
 * For Java: `.java`, `.jsp`, `.jspx`

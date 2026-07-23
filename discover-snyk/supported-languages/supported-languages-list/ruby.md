@@ -59,6 +59,9 @@ As a package registry, [rubygems.org](https://rubygems.org/) is supported.
 
 ## Ruby for Snyk Code
 
+For an overview of the supported security rules, visit [Ruby rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/ruby-rules).
+
+
 For Ruby with Snyk Code, the following file formats are supported: `.erb`, `.haml`, `.rb`, `.rhtml`, `.slm`
 
 Available features:

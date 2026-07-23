@@ -37,6 +37,9 @@ For Go, Snyk supports [Go Modules](https://go.dev/ref/mod) and [dep](https://git
 
 ## Go for Snyk Code
 
+For an overview of the supported security rules, visit [Go rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/go-rules).
+
+
 For Go with Snyk Code, Snyk supports:
 
 * Go Standard Library comprehensive as a library
