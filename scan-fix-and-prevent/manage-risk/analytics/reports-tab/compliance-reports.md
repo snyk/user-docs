@@ -31,7 +31,7 @@ Each control in the list (A1, A2, and so on) is based on a list of Common Weakne
 
 The CWEs are mapped to Snyk-IDs (), which are mapped to issues.
 
-For example, the critical vulnerability [SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720) is classified as [CWE-94](https://cwe.mitre.org/data/definitions/94.html), which is part of the OWASP TOP 10 [A03:2025 - Injection](https://owasp.org/Top10/2025/A05_2025-Injection/). All the issues related to this vulnerability will be under the A03 category.
+For example, the critical vulnerability [SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720) is classified as [CWE-94](https://cwe.mitre.org/data/definitions/94.html), which is part of the OWASP TOP 10 [A05:2025 - Injection](https://owasp.org/Top10/2025/A05_2025-Injection/). All the issues related to this vulnerability will be under the A05 category.
 
 Learn more by using the [OWASP TOP 10 Learning path](https://learn.snyk.io/learning-paths/owasp-top-10/) on Snyk Learn.
 
