@@ -553,6 +553,10 @@ A Snyk product. Enables developers to find and fix open-source vulnerabilities. 
 
 A library used by the Snyk CLI to scan a certain language or build system.
 
+### Snyk Remote MCP
+
+A hosted, read-only MCP server that allows compatible AI assistants to query existing Snyk data, including Organizations, Projects, issues, dependencies, and security reports. It does not require the Snyk CLI or access to local source code. Visit [Snyk Remote MCP](https://docs.snyk.io/developer-tools/integrations/snyk-remote-mcp) for more information.
+
 ### Snyk Studio
 
 Snyk Studio embeds Snyk's AI security platform capabilities into any AI-native workflow. Snyk Studio is built on two core use cases: '[Secure at Inception](glossary.md#secure-at-inception),' which proactively prevents new, AI-generated vulnerabilities using configurable directives, and 'Intelligent Remediation,' which clears existing security backlogs at scale.
