@@ -1,5 +1,5 @@
 ---
-description: Snyk support for COBOL with Snyk Code, available in Early Access on Enterprise plans, including CICS frameworks and supported dialects
+description: Snyk support for COBOL with Snyk Code, including CICS frameworks and supported dialects
 ---
 
 # COBOL
@@ -9,10 +9,6 @@ COBOL is supported only for Snyk Code.
 {% endhint %}
 
 ## COBOL for Snyk Code
-
-{% hint style="info" %}
-Code analysis support for COBOL is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
-{% endhint %}
 
 For an overview of the supported security rules, visit [COBOL rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/cobol-rules).
 
