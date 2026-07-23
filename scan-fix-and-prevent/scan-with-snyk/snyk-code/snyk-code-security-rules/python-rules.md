@@ -8,7 +8,7 @@ Each rule includes the following information.
 
 * **Rule Name**: The Snyk name of the rule.
 * **CWE(s):** The [CWE numbers](https://cwe.mitre.org/) that are covered by this rule.
-* **Security Categories**: The [OWASP Top 10 ](https://owasp.org/Top10/2025/)(2025 edition) category to which the rule belongs to, if any, and if it is included in [CWE Top 25](https://cwe.mitre.org/top25/), plus any applicable [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0x11-t10/) (2023) and [OWASP Mobile Top 10](https://owasp.org/www-project-mobile-top-10/) (2024) categories.
+* **Security categories**: The [OWASP Top 10](https://owasp.org/Top10/2025/) (2025 edition) category the rule maps to, when applicable. This column also notes whether the rule appears in the [CWE Top 25](https://cwe.mitre.org/top25/), and any applicable [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0x11-t10/) (2023) or [OWASP Mobile Top 10](https://owasp.org/www-project-mobile-top-10/) (2024) categories.
 * **Autofixable**: Security rules that are autofixable by Snyk Agent Fix. This information is included only for the supported programming languages.
 
 | Rule Name                                                                  | CWE(s)           | Security Categories                                       | Autofixable |
