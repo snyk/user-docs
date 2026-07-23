@@ -8,6 +8,12 @@ description: Recent updates to Snyk products and documentation, including new fe
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## July 2026
+
+### Snyk CLI
+
+* AI-BOM enrichment from the CLI: the `snyk aibom` and `snyk aibom test` commands document the new `--enriched` option. When enabled, it runs additional slower enrichment steps on the AI-BOM. Visit [snyk aibom](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom) and [snyk aibom test](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom-test) for more details.
+
 ## June 2026
 
 ### Snyk CLI

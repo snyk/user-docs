@@ -86,6 +86,15 @@ Default: `<ORG_ID>` that is the current preferred Organization in your [Account 
 
 **Optional**. Persist the AIBOM into your Snyk Organization. This flag requires the [`--repo`](aibom.md#repo) flag. It enables you to view your AI-BOM for the repository in the Evo web interface.
 
+### `--enriched`
+
+**Optional**. When enabled, runs additional slower enrichment steps on the AI-BOM.
+
+```bash
+snyk aibom --enriched
+snyk aibom --enriched --upload --repo https://github.com/[owner]/[repo]
+```
+
 ### `--repo`
 
 **Optional**. Specify the repository to use when persisting the AI-BOM. Required when you use the [`--upload`](aibom.md#upload) flag.

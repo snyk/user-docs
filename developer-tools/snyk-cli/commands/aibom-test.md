@@ -74,6 +74,12 @@ This generates an AI-BOM for the current directory, runs the policy test for the
 
 Example: `$ snyk aibom test --json-file-output=results.json`
 
+### `--enriched`
+
+**Optional**. When enabled, runs additional slower enrichment steps on the AI-BOM before the policy test.
+
+Example: `$ snyk aibom test --enriched`
+
 ### `--severity-threshold=<low|medium|high|critical>`
 
 **Optional**. Minimum severity that triggers `action_needed` (exit code 1). Only issues at or above this level cause the command to exit with 1. Default: `low`.
