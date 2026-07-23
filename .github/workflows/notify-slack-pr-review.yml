@@ -1,0 +1,37 @@
+name: Notify Slack on PR ready for review
+
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  notify:
+    if: >-
+      github.event.pull_request.draft == false &&
+      contains(fromJSON(vars.TEAMMATE_HANDLES), github.event.pull_request.user.login)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post to Slack
+        uses: slackapi/slack-github-action@v1.27.0
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+        with:
+          payload: |
+            {
+              "text": ":memo: New PR ready for review: ${{ github.event.pull_request.title }}",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": ":memo: *<${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>*\nNew PR from *${{ github.event.pull_request.user.login }}* — ready for review."
+                  }
+                }
+              ]
+            }
