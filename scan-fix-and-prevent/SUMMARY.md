@@ -273,6 +273,7 @@
       * [Manage credentials](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/manage-credentials.md)
       * [Automate OTP extraction](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/automate-otp-extraction.md)
       * [Configure Bruno Collection Authentication](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-bruno-collection-authentication.md)
+      * [Automate authentication configuration](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/automate-authentication-configuration.md)
     * [Verify domain ownership](scan-with-snyk/snyk-api-web/configure-targets/verify-domain-ownership/README.md)
       * [Verify with TXT file](scan-with-snyk/snyk-api-web/configure-targets/verify-domain-ownership/verify-with-txt-file.md)
       * [Verify with DNS TXT record](scan-with-snyk/snyk-api-web/configure-targets/verify-domain-ownership/verify-with-dns-txt.md)
