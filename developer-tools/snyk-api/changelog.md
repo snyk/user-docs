@@ -1,3 +1,32 @@
+## 2026-03-25 - Updated 2026-07-24
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Updated
+- added the required property `data/attributes/created_at` to the response with the `201` status
+
+- added the required property `data/attributes/updated_at` to the response with the `201` status
+
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Updated
+- added the required property `data/items/attributes/created_at` to the response with the `200` status
+
+- added the required property `data/items/attributes/updated_at` to the response with the `200` status
+
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}` - Updated
+- added the required property `data/attributes/created_at` to the response with the `200` status
+
+- added the required property `data/attributes/updated_at` to the response with the `200` status
+
+
+
+### GET - `/tenants/{tenant_id}/brokers/deployments` - Updated
+- added the required property `data/items/attributes/created_at` to the response with the `200` status
+
+- added the required property `data/items/attributes/updated_at` to the response with the `200` status
+
+
 ## 2026-03-25 - Updated 2026-07-14
 
 ### POST - `/groups/{group_id}/secrets/rule_extensions` - Added
