@@ -2114,6 +2114,8 @@ paths:
               autoDepUpgradeMinAge: 21
               pullRequestTestCodeEnabled: true
               pullRequestTestCodeSeverity: high
+              pullRequestTestSecretsEnabled: true
+              pullRequestTestSecretsSeverity: high
               pullRequestTestEnabled: true
               pullRequestFailOnAnyVulns: false
               pullRequestFailOnlyForHighSeverity: true
@@ -2142,6 +2144,8 @@ paths:
                 autoDepUpgradeMinAge: 21
                 pullRequestTestCodeEnabled: true
                 pullRequestTestCodeSeverity: high
+                pullRequestTestSecretsEnabled: true
+                pullRequestTestSecretsSeverity: high
                 pullRequestTestEnabled: true
                 pullRequestFailOnAnyVulns: false
                 pullRequestFailOnlyForHighSeverity: true
@@ -11610,6 +11614,12 @@ components:
         pullRequestTestCodeSeverity:
           type: string
           description: 'Snyk severity for this issue. One of: `low`, `medium`, `high`, or `null`.'
+        pullRequestTestSecretsEnabled:
+          type: boolean
+          description: If opened PRs should be tested with Snyk Secrets
+        pullRequestTestSecretsSeverity:
+          type: string
+          description: 'Snyk severity for this issue. One of: `low`, `medium`, or `high`'
         pullRequestTestEnabled:
           type: boolean
           description: If opened PRs should be tested
