@@ -7142,6 +7142,45 @@
             "format": "uuid",
             "type": "string"
           },
+          "created_at": {
+            "description": "Deployment creation time in UTC",
+            "format": "date-time",
+            "readOnly": true,
+            "type": "string"
+          },
+          "install_id": {
+            "description": "Associated Install ID",
+            "format": "uuid",
+            "readOnly": true,
+            "type": "string"
+          },
+          "metadata": {
+            "description": "Metadata information such user/org id or metrics",
+            "type": "object"
+          },
+          "updated_at": {
+            "description": "Deployment last update time in UTC",
+            "format": "date-time",
+            "readOnly": true,
+            "type": "string"
+          }
+        },
+        "required": [
+          "broker_app_installed_in_org_id",
+          "metadata",
+          "created_at",
+          "updated_at"
+        ],
+        "type": "object"
+      },
+      "BrokerDeploymentCreateAttributes": {
+        "additionalProperties": false,
+        "properties": {
+          "broker_app_installed_in_org_id": {
+            "description": "Org Id in which the Broker App is installed",
+            "format": "uuid",
+            "type": "string"
+          },
           "install_id": {
             "description": "Associated Install ID",
             "format": "uuid",
@@ -7156,6 +7195,25 @@
         "required": [
           "broker_app_installed_in_org_id",
           "metadata"
+        ],
+        "type": "object"
+      },
+      "BrokerDeploymentCreateResource": {
+        "additionalProperties": false,
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/BrokerDeploymentCreateAttributes"
+          },
+          "type": {
+            "enum": [
+              "broker_deployment"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "attributes",
+          "type"
         ],
         "type": "object"
       },
@@ -8182,6 +8240,12 @@
       "Component": {
         "description": "A component in software, such as a library or package dependency",
         "properties": {
+          "count": {
+            "description": "Number of components in the SBOM",
+            "format": "int32",
+            "minimum": 0,
+            "type": "integer"
+          },
           "declared_license_expression": {
             "description": "See https://spdx.github.io/spdx-spec/v3.0.1/annexes/spdx-license-expressions/",
             "maxLength": 2048,
@@ -8599,6 +8663,14 @@
                 "description": "Operating system version",
                 "maxLength": 256,
                 "type": "string"
+              },
+              "provenance_attestations": {
+                "description": "Provenance attestations describing how the image was built",
+                "items": {
+                  "$ref": "#/components/schemas/ProvenanceAttestation"
+                },
+                "maxItems": 100,
+                "type": "array"
               },
               "registry": {
                 "description": "Container registry hostname",
@@ -9083,26 +9155,7 @@
         "additionalProperties": false,
         "properties": {
           "data": {
-            "properties": {
-              "attributes": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/BrokerDeploymentAttributes"
-                  }
-                ]
-              },
-              "type": {
-                "enum": [
-                  "broker_deployment"
-                ],
-                "type": "string"
-              }
-            },
-            "required": [
-              "attributes",
-              "type"
-            ],
-            "type": "object"
+            "$ref": "#/components/schemas/BrokerDeploymentCreateResource"
           }
         },
         "required": [
@@ -10559,6 +10612,21 @@
           "type",
           "required"
         ],
+        "type": "object"
+      },
+      "DockerfileMetadata": {
+        "description": "Dockerfile metadata extracted from a BuildKit provenance attestation",
+        "properties": {
+          "dockerfile_contents": {
+            "description": "Base64-encoded contents of the Dockerfile",
+            "type": "string"
+          },
+          "dockerfile_name": {
+            "description": "Name of the Dockerfile used for the build",
+            "maxLength": 256,
+            "type": "string"
+          }
+        },
         "type": "object"
       },
       "DotnetSettings": {
@@ -22553,9 +22621,9 @@
           "type": {
             "description": "The JSON:API resource type",
             "enum": [
-              "projects"
+              "project"
             ],
-            "example": "projects",
+            "example": "project",
             "type": "string"
           }
         },
@@ -22809,6 +22877,50 @@
               "$ref": "#/components/schemas/ImageInfo"
             },
             "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "ProvenanceAttestation": {
+        "description": "A provenance attestation describing how a container image manifest was built",
+        "properties": {
+          "build_config_commit": {
+            "description": "Git commit of the build config that produced the image",
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "build_started_at": {
+            "description": "When the build started",
+            "format": "date-time",
+            "type": "string"
+          },
+          "build_type": {
+            "description": "Build type URI identifying the build definition format",
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "builder_id": {
+            "description": "Identity of the builder that produced the attestation",
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "dockerfile_metadata": {
+            "$ref": "#/components/schemas/DockerfileMetadata"
+          },
+          "manifest_digest": {
+            "description": "Manifest digest of the image this attestation attests",
+            "maxLength": 256,
+            "type": "string"
+          },
+          "repository_uri": {
+            "description": "URI of the repository hosting the build config",
+            "maxLength": 1024,
+            "type": "string"
+          },
+          "source_attestation_digest": {
+            "description": "Digest of the attestation manifest descriptor itself",
+            "maxLength": 256,
+            "type": "string"
           }
         },
         "type": "object"
@@ -25030,6 +25142,16 @@
                 "format": "int32",
                 "nullable": true,
                 "type": "number"
+              },
+              "file_path": {
+                "description": "SBOM file path",
+                "maxLength": 2048,
+                "type": "string"
+              },
+              "integrity_hash": {
+                "description": "Integrity hash of the SBOM document",
+                "maxLength": 256,
+                "type": "string"
               },
               "lifecycles": {
                 "description": "Lifecycles, e.x. one of cyclonedx.model.lifecycle.LifecyclePhase ('design', 'pre-build', etc)",
