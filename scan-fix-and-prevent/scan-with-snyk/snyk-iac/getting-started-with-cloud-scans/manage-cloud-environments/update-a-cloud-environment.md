@@ -1,5 +1,6 @@
 ---
 description: How to update a Snyk cloud environment
+nav_context: classic
 ---
 
 # Update a cloud environment

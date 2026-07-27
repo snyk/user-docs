@@ -1,5 +1,6 @@
 ---
 description: How to get started with teams in Snyk API and Web
+nav_context: classic
 ---
 
 # Get started with teams

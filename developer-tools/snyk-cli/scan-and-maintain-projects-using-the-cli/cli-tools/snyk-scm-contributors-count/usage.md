@@ -1,5 +1,6 @@
 ---
 description: Modes and levels for the scm-contributors-count tool
+nav_context: agnostic
 ---
 
 # Usage

@@ -1,5 +1,6 @@
 ---
 description: How to create a Snyk App using the Snyk CLI
+nav_context: agnostic
 ---
 
 # Create a Snyk App using the Snyk CLI

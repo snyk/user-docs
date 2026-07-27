@@ -1,5 +1,6 @@
 ---
 description: How to disable the Snyk Kubernetes integration
+nav_context: classic
 ---
 
 # Disable the Kubernetes integration

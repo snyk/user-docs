@@ -1,5 +1,6 @@
 ---
 description: How to authenticate the Snyk Controller to private container registries
+nav_context: agnostic
 ---
 
 # Authenticate to private container registries

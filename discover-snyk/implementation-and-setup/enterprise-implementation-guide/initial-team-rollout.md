@@ -1,5 +1,6 @@
 ---
 description: How to run an initial Snyk team rollout, inviting stakeholders and integrating security into their workflows
+nav_context: classic
 ---
 
 # Initial team rollout

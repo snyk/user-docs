@@ -1,5 +1,6 @@
 ---
 description: How to prepare Snyk Broker for deployment, including prerequisites and supported platforms
+nav_context: agnostic
 ---
 
 # Prepare Snyk Broker for deployment

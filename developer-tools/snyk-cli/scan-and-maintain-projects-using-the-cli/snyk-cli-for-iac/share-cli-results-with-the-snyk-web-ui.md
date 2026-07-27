@@ -1,5 +1,6 @@
 ---
 description: How to share Snyk IaC CLI results with the Snyk Web UI
+nav_context: classic
 ---
 
 # Share CLI results with the Snyk Web UI

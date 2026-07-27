@@ -1,5 +1,6 @@
 ---
 description: How to add Snyk to your CI/CD pipeline as a gatekeeper that fails builds on new vulnerabilities
+nav_context: agnostic
 ---
 
 # Add and configure Snyk to your CI/CD pipeline

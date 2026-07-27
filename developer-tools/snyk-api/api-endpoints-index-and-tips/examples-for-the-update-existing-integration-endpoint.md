@@ -1,5 +1,6 @@
 ---
 description: Examples for the Snyk API Update existing integration endpoint
+nav_context: agnostic
 ---
 
 # Examples for the Update existing integration endpoint

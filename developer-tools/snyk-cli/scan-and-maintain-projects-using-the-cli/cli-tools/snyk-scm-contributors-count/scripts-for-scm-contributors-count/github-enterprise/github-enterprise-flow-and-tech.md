@@ -1,5 +1,6 @@
 ---
 description: How the scm-contributors-count tool counts GitHub Enterprise contributors
+nav_context: agnostic
 ---
 
 # GitHub Enterprise - Flow and Tech

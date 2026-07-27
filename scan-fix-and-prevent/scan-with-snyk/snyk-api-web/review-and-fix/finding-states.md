@@ -1,5 +1,6 @@
 ---
 description: The states a Snyk API and Web finding can have
+nav_context: agnostic
 ---
 
 # Finding states

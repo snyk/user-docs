@@ -1,5 +1,6 @@
 ---
 description: The resources Snyk IaC supports for drift detection
+nav_context: agnostic
 ---
 
 # Supported resources

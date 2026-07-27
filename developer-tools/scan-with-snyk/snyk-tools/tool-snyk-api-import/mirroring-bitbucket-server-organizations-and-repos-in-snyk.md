@@ -1,5 +1,6 @@
 ---
 description: How to import all Bitbucket Server organizations and repositories into Snyk with snyk-api-import
+nav_context: agnostic
 ---
 
 # Mirroring Bitbucket Server organizations and repos in Snyk

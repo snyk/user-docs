@@ -1,5 +1,6 @@
 ---
 description: The Snyk Pull Request check experience for developers
+nav_context: classic
 ---
 
 # Pull Request experience

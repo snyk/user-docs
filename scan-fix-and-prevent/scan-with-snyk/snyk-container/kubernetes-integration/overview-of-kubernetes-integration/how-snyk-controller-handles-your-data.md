@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Controller handles your data in the Kubernetes integration
+nav_context: agnostic
 ---
 
 # How the Snyk Controller handles your data

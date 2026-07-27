@@ -1,5 +1,6 @@
 ---
 description: How to configure the GitLab integration with Snyk, including generating a personal access token with the required permissions
+nav_context: classic
 ---
 
 # GitLab

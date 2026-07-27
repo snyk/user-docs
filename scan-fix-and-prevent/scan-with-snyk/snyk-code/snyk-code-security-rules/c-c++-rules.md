@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for C and C++
+nav_context: agnostic
 ---
 
 # C++ rules

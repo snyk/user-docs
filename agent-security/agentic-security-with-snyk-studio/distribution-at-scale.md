@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Distribution at scale
 
 Distribute Snyk Studio as a managed utility to automate local security testing and integrate it into your software development life cycle (SDLC).

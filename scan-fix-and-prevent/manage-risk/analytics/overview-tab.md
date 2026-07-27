@@ -1,5 +1,6 @@
 ---
 description: What the Overview tab shows in Snyk Analytics
+nav_context: classic
 ---
 
 # Overview tab

@@ -1,5 +1,6 @@
 ---
 description: How to get started with Snyk IaC describe to detect drift on AWS
+nav_context: agnostic
 ---
 
 # Get started with Snyk IaC Describe on AWS

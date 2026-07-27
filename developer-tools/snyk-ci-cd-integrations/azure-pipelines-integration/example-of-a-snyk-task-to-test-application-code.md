@@ -1,5 +1,6 @@
 ---
 description: Example Snyk Security Scan task configuration to test application code in Azure Pipelines
+nav_context: classic
 ---
 
 # Example of a Snyk task to test application code

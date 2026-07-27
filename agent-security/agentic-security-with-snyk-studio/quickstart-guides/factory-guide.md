@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Factory guide
 
 You can access Snyk Studio, including Snyk's MCP server, in Factory to secure code generated with agentic workflows through an LLM. This can be achieved in several ways. When you use it for the first time, the MCP server will ask for trust and trigger authentication if necessary.

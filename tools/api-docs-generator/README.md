@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # API Docs Generator
 
 This utility generates API documentation from the openapi specification files. See `config.yml` for the configuration options.

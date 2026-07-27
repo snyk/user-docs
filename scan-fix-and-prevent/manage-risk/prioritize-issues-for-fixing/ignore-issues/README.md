@@ -1,5 +1,6 @@
 ---
 description: How to ignore vulnerabilities and license issues in Snyk
+nav_context: classic
 ---
 
 # Ignore issues

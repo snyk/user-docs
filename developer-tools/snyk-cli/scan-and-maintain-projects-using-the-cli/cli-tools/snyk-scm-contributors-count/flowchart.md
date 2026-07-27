@@ -1,5 +1,6 @@
 ---
 description: Flowchart of the SCM-Contributors-Count tool
+nav_context: classic
 ---
 
 # Flowchart

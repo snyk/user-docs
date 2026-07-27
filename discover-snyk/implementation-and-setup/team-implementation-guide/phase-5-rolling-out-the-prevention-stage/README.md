@@ -1,5 +1,6 @@
 ---
 description: 'Phase 5 of the Snyk team implementation: roll out prevention and gating to stop new vulnerabilities entering your applications'
+nav_context: agnostic
 ---
 
 # Phase 5: Rolling out the prevention stage

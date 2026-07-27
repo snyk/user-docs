@@ -1,5 +1,6 @@
 ---
 description: How to use filter rules with Snyk IaC drift detection
+nav_context: agnostic
 ---
 
 # Filter rules

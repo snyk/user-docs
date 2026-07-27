@@ -1,5 +1,6 @@
 ---
 description: Snyk trial and Free plan limitations, including the 14-day trial and full Enterprise pilot options
+nav_context: agnostic
 ---
 
 # Trial limitations

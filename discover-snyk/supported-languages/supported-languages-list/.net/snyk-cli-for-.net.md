@@ -1,5 +1,6 @@
 ---
 description: How to test .NET Projects with the Snyk CLI, including open source analysis with solution and project files and source code scanning
+nav_context: agnostic
 ---
 
 # CLI support for .NET

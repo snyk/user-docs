@@ -1,5 +1,6 @@
 ---
 description: How to prioritize issues for fixing in Snyk
+nav_context: classic
 ---
 
 # Prioritize issues for fixing

@@ -1,5 +1,6 @@
 ---
 description: How to install and configure Snyk Broker for Jira using Docker
+nav_context: classic
 ---
 
 # Jira - install and configure using Docker

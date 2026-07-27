@@ -1,5 +1,6 @@
 ---
 description: How Snyk Container integrates with container registries
+nav_context: agnostic
 ---
 
 # Container registry integrations

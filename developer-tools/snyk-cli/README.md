@@ -1,5 +1,6 @@
 ---
 description: The Snyk CLI for scanning and monitoring your Projects from the command line
+nav_context: agnostic
 ---
 
 # Snyk CLI

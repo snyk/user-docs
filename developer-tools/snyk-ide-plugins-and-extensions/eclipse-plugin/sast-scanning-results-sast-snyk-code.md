@@ -1,5 +1,6 @@
 ---
 description: How to view Snyk Code SAST scanning results in the Eclipse plugin
+nav_context: classic
 ---
 
 # SAST scanning results (SAST, Snyk Code)

@@ -1,5 +1,6 @@
 ---
 description: How to install or upgrade the Snyk Security plugin in TeamCity
+nav_context: classic
 ---
 
 # TeamCity integration: install the Snyk plugin

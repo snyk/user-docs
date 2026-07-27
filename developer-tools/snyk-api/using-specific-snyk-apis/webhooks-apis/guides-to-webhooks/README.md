@@ -1,5 +1,6 @@
 ---
 description: Guides for integrating with Snyk webhooks
+nav_context: agnostic
 ---
 
 # Guides to webhooks

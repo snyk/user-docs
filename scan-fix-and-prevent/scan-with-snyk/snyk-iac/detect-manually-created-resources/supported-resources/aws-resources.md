@@ -1,5 +1,6 @@
 ---
 description: The AWS resources Snyk IaC supports for drift detection
+nav_context: agnostic
 ---
 
 # AWS resources

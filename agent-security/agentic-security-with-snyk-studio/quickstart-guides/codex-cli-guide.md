@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Codex CLI guide
 
 Access Snyk Studio in Codex CLI to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Codex CLI.

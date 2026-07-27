@@ -1,5 +1,6 @@
 ---
 description: How to create a Snyk license policy and its rules
+nav_context: classic
 ---
 
 # Create a license policy and rules

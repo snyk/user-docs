@@ -1,5 +1,6 @@
 ---
 description: Run Snyk locally, in repositories, and in pipelines, and choose the developer tool integration that matches your workflow
+nav_context: agnostic
 ---
 
 # Overview

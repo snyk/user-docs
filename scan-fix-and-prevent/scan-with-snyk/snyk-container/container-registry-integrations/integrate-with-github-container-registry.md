@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk Container with the GitHub Container registry
+nav_context: classic
 ---
 
 # Integrate with GitHub Container registry

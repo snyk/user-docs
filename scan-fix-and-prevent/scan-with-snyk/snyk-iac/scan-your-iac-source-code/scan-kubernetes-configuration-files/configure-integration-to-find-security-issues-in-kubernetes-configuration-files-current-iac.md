@@ -1,5 +1,6 @@
 ---
 description: How to configure your integration to find security issues in Kubernetes configuration files
+nav_context: classic
 ---
 
 # Configure integration to find security issues in Kubernetes configuration files

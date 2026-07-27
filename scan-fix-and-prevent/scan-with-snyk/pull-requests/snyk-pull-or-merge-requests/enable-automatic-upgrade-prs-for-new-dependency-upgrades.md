@@ -1,5 +1,6 @@
 ---
 description: How to enable automatic upgrade PRs for new dependency upgrades
+nav_context: agnostic
 ---
 
 # Enable automatic upgrade PRs for new dependency upgrades

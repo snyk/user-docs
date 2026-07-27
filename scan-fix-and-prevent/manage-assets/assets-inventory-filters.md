@@ -1,5 +1,6 @@
 ---
 description: How to filter the Snyk assets inventory
+nav_context: classic
 ---
 
 # Assets inventory filters

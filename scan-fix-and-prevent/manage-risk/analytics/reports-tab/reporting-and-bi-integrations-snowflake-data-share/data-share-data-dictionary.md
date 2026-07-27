@@ -1,5 +1,6 @@
 ---
 description: A data dictionary for the Snyk Data Share Snowflake integration
+nav_context: classic
 ---
 
 # Data Share data dictionary

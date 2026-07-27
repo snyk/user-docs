@@ -1,5 +1,6 @@
 ---
 description: How to install the Snyk extension for Azure Pipelines from the Visual Studio Marketplace
+nav_context: classic
 ---
 
 # Install the Snyk extension for your Azure pipelines

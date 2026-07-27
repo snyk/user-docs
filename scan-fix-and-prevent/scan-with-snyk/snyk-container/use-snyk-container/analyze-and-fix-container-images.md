@@ -1,5 +1,6 @@
 ---
 description: How to analyze and fix vulnerabilities in container images with Snyk
+nav_context: classic
 ---
 
 # Analyze and fix container images

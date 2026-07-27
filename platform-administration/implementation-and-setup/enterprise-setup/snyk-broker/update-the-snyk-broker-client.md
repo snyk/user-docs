@@ -1,5 +1,6 @@
 ---
 description: How to update the Snyk Broker client to get new features and fixes from Snyk releases
+nav_context: agnostic
 ---
 
 # Update the Snyk Broker client

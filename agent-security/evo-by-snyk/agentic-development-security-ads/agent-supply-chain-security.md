@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Agent Supply Chain Security
 
 Agent Supply Chain Security secures the components your agents use. AI agents connect to Model Context Protocol (MCP) servers, run skills, and call external tools. These components enter your environment without the review that first-party code receives, and they can introduce security issues into your development workflows. Agent Supply Chain Security discovers these components and assesses each one for risk.

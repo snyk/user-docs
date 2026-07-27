@@ -1,5 +1,6 @@
 ---
 description: How to disable certificate verification for a Snyk Broker Docker installation, for self-signed certificates
+nav_context: agnostic
 ---
 
 # Disable certificate verification with Docker

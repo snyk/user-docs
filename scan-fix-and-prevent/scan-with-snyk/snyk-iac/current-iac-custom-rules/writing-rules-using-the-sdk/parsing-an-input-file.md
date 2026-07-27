@@ -1,5 +1,6 @@
 ---
 description: How to parse an input file when writing a Snyk IaC custom rule
+nav_context: agnostic
 ---
 
 # Parsing an input file

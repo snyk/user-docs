@@ -1,5 +1,6 @@
 ---
 description: How Snyk license policy results apply to issues
+nav_context: agnostic
 ---
 
 # License policy results

@@ -1,5 +1,6 @@
 ---
 description: How Snyk Code security rules work and how they are updated
+nav_context: agnostic
 ---
 
 # Snyk Code security rules

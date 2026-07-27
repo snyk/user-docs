@@ -1,5 +1,6 @@
 ---
 description: How OAuth scopes define the permissions a Snyk App requests
+nav_context: agnostic
 ---
 
 # Scopes to request

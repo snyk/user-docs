@@ -1,5 +1,6 @@
 ---
 description: What Personal Access Tokens (PATs) are and how they authenticate Snyk API, CLI, and IDE access
+nav_context: classic
 ---
 
 # Personal Access Tokens (PATs)

@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk Azure integration in the Web UI
+nav_context: agnostic
 ---
 
 # Azure Integration: Web UI

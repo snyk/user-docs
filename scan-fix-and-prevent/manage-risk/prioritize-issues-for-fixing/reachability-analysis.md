@@ -1,5 +1,6 @@
 ---
 description: How Snyk reachability analysis prioritizes vulnerabilities in called code, in Early Access
+nav_context: classic
 ---
 
 # Reachability analysis

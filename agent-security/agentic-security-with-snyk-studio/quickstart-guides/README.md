@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Quickstart guides
 
 This section lists quickstart guides for common AI agents. Snyk supports any AI agent and ADE that integrates with a local MCP server.

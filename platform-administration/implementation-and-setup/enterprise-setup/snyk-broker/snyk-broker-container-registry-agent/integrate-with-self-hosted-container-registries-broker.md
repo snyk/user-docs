@@ -1,5 +1,6 @@
 ---
 description: How to integrate self-hosted container registries with Snyk Broker, available on Enterprise plans
+nav_context: classic
 ---
 
 # Integrate with self-hosted container registries

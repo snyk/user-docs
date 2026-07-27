@@ -1,5 +1,6 @@
 ---
 description: How to obtain the API tokens and credentials required to set up Snyk Broker, with 90-day rotation recommended
+nav_context: classic
 ---
 
 # Obtain the tokens required to set up Snyk Broker

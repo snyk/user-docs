@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Priority Score ranks issues for fixing
+nav_context: agnostic
 ---
 
 # Priority Score

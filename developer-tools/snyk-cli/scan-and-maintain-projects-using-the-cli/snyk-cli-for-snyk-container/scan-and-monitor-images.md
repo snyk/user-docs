@@ -1,5 +1,6 @@
 ---
 description: How to scan and monitor container images with the Snyk CLI
+nav_context: classic
 ---
 
 # Scan and monitor images

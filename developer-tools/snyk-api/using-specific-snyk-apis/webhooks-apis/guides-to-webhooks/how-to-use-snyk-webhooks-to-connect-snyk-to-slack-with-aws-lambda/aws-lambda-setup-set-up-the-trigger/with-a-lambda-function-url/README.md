@@ -1,5 +1,6 @@
 ---
 description: How to use a Lambda Function URL to trigger the function for Snyk webhooks
+nav_context: agnostic
 ---
 
 # With a Lambda Function URL

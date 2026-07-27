@@ -1,5 +1,6 @@
 ---
 description: How to use specific Snyk API endpoints for common tasks
+nav_context: agnostic
 ---
 
 # Using specific Snyk APIs

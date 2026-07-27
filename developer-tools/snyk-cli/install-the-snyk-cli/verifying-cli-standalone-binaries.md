@@ -1,5 +1,6 @@
 ---
 description: How to verify the shasum and signature of Snyk CLI standalone binaries
+nav_context: agnostic
 ---
 
 # Verifying CLI standalone binaries

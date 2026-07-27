@@ -1,5 +1,6 @@
 ---
 description: How to test a target configuration in Snyk API and Web
+nav_context: classic
 ---
 
 # Test target configuration

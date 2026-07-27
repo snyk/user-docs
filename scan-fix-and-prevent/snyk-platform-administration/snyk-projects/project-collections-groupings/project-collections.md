@@ -1,5 +1,6 @@
 ---
 description: How to use Project collections to group related Projects
+nav_context: classic
 ---
 
 # Project collections

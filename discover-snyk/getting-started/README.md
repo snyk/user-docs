@@ -1,5 +1,6 @@
 ---
 description: How to start using Snyk, including supported browsers, prerequisites, and your first scanning and remediation tasks
+nav_context: classic
 ---
 
 # Getting started

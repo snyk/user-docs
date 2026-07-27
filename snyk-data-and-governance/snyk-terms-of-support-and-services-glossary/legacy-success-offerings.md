@@ -1,5 +1,6 @@
 ---
 description: Terms for legacy Snyk support and success offerings that have reached end-of-sale
+nav_context: agnostic
 ---
 
 # Legacy Success Offerings

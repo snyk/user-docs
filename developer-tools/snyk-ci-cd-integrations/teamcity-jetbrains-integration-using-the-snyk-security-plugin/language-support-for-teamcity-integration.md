@@ -1,5 +1,6 @@
 ---
 description: The languages supported by the Snyk TeamCity integration
+nav_context: agnostic
 ---
 
 # Language support for TeamCity integration

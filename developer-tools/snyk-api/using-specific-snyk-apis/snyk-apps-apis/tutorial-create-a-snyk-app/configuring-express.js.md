@@ -1,5 +1,6 @@
 ---
 description: How to configure Express.js to serve a Snyk App in the tutorial
+nav_context: agnostic
 ---
 
 # Configuring Express.js

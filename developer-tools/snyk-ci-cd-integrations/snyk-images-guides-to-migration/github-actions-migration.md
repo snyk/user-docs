@@ -1,5 +1,6 @@
 ---
 description: How to migrate GitHub Actions away from affected Snyk actions
+nav_context: agnostic
 ---
 
 # GitHub actions migration

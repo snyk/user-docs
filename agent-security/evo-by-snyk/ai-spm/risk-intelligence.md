@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Risk intelligence
 
 The **Risk intelligence agent** scores the AI models in your inventory so you can judge their risk. Snyk tests each model independently across five security categories using hundreds of test suites, rather than relying on self-reported vendor claims.

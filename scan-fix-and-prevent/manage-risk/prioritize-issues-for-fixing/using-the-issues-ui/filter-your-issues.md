@@ -1,5 +1,6 @@
 ---
 description: How to filter your issues in the Snyk Issues UI
+nav_context: classic
 ---
 
 # Filter your issues

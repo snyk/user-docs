@@ -1,5 +1,6 @@
 ---
 description: How to load Snyk Broker secrets such as tokens from files instead of environment variables with Docker
+nav_context: agnostic
 ---
 
 # Mounting secrets with Docker

@@ -1,5 +1,6 @@
 ---
 description: How to install and configure Snyk Broker for GitHub Enterprise using Docker
+nav_context: agnostic
 ---
 
 # GitHub Enterprise - install and configure using Docker

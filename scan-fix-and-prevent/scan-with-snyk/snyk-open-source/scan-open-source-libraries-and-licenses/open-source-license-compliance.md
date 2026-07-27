@@ -1,5 +1,6 @@
 ---
 description: How Snyk manages open source license compliance
+nav_context: classic
 ---
 
 # Open-source license compliance

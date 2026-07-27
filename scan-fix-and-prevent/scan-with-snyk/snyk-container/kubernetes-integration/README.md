@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Kubernetes integration monitors workloads for vulnerabilities
+nav_context: agnostic
 ---
 
 # Kubernetes integration

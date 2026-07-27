@@ -1,5 +1,6 @@
 ---
 description: How to push a Snyk IaC custom rule bundle
+nav_context: agnostic
 ---
 
 # Pushing a bundle

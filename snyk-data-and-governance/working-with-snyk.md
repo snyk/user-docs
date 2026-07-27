@@ -1,5 +1,6 @@
 ---
 description: How Snyk handles user data responsibly, covering privacy, compliance, hosting, and vulnerability data
+nav_context: agnostic
 ---
 
 # Working with Snyk

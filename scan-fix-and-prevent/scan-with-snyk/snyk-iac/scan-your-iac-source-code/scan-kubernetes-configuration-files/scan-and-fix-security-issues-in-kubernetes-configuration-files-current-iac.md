@@ -1,5 +1,6 @@
 ---
 description: How to scan and fix security issues in Kubernetes configuration files with Snyk IaC
+nav_context: classic
 ---
 
 # Scan and fix security issues in Kubernetes configuration files

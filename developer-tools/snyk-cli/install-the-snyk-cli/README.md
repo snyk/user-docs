@@ -1,5 +1,6 @@
 ---
 description: How to install the Snyk CLI across major operating systems
+nav_context: agnostic
 ---
 
 # Install the Snyk CLI

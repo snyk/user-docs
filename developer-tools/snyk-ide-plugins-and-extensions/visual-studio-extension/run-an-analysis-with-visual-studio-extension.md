@@ -1,5 +1,6 @@
 ---
 description: How to run a Snyk scan on your solution with the Visual Studio extension
+nav_context: classic
 ---
 
 # Run an analysis with Visual Studio extension

@@ -1,5 +1,6 @@
 ---
 description: How to test public npm packages with the Snyk CLI before using them
+nav_context: agnostic
 ---
 
 # Test public npm packages before use

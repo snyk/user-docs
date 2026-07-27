@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk Container with Docker Hub
+nav_context: agnostic
 ---
 
 # Integrate with Docker Hub

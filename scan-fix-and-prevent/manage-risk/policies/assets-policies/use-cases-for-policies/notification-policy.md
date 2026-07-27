@@ -1,5 +1,6 @@
 ---
 description: How to use a notification policy in Snyk Essentials
+nav_context: classic
 ---
 
 # Notification policy

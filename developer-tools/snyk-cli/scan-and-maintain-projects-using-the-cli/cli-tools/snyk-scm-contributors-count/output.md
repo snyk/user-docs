@@ -1,5 +1,6 @@
 ---
 description: The output result of running the SCM-Contributors-Count tool
+nav_context: agnostic
 ---
 
 # Output

@@ -1,5 +1,6 @@
 ---
 description: The jira-tickets-for-new-vulns tool that opens Jira tickets for new vulnerabilities in Snyk-monitored Projects
+nav_context: agnostic
 ---
 
 # Tool: jira-tickets-for-new-vulns

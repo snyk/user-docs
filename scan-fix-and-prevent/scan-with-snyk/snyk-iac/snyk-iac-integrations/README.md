@@ -1,5 +1,6 @@
 ---
 description: How Snyk IaC integrates with SCMs, pipelines, and other tools
+nav_context: agnostic
 ---
 
 # Snyk IaC integrations

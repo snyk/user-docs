@@ -1,5 +1,6 @@
 ---
 description: How to implement asset policies in Snyk Essentials
+nav_context: classic
 ---
 
 # Implement policies

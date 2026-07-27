@@ -1,5 +1,6 @@
 ---
 description: How to manage Snyk pre-defined and custom user roles, available on Enterprise plans
+nav_context: classic
 ---
 
 # User role management

@@ -1,5 +1,6 @@
 ---
 description: How to structure a Snyk Organization by team, product, or SCM to manage policies, reporting, and access
+nav_context: agnostic
 ---
 
 # Structure your account

@@ -1,5 +1,6 @@
 ---
 description: How to add security scanning to Azure Pipelines with the Snyk Security Scan task
+nav_context: agnostic
 ---
 
 # Azure Pipelines integration using the Snyk Security Scan task

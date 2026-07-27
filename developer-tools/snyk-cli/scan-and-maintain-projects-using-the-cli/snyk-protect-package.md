@@ -1,5 +1,6 @@
 ---
 description: The @snyk/protect package for applying patches to vulnerabilities
+nav_context: agnostic
 ---
 
 # @snyk/protect package

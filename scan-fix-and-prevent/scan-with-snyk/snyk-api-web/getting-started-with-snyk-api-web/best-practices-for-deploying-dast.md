@@ -1,5 +1,6 @@
 ---
 description: Best practices for deploying Snyk API and Web DAST scanning
+nav_context: agnostic
 ---
 
 # Best practices for deploying DAST

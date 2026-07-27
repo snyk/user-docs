@@ -1,5 +1,6 @@
 ---
 description: How to migrate Bitbucket Pipelines away from affected Snyk scan images
+nav_context: agnostic
 ---
 
 # BitBucket Pipelines migration

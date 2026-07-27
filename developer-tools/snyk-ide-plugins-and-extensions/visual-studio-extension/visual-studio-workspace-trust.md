@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Visual Studio extension uses workspace trust before scanning
+nav_context: agnostic
 ---
 
 # Visual Studio workspace trust

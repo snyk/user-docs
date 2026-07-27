@@ -1,5 +1,6 @@
 ---
 description: Examples and validation for Snyk custom PR templates
+nav_context: agnostic
 ---
 
 # Examples and template validation

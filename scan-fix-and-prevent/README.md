@@ -1,5 +1,6 @@
 ---
 description: How to use Snyk to scan and secure your code, dependencies, containers, and infrastructure as code
+nav_context: agnostic
 ---
 
 # Overview

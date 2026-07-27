@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk Container with the GitLab Container Registry
+nav_context: classic
 ---
 
 # Integrate with GitLab Container Registry

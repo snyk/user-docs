@@ -1,5 +1,6 @@
 ---
 description: How to forward Snyk platform events to Amazon EventBridge
+nav_context: classic
 ---
 
 # Amazon EventBridge

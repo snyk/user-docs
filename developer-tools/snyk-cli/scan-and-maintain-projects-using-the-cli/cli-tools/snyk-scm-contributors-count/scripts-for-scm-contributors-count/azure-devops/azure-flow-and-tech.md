@@ -1,5 +1,6 @@
 ---
 description: How the scm-contributors-count tool counts Azure DevOps contributors
+nav_context: agnostic
 ---
 
 # Azure - Flow and Tech

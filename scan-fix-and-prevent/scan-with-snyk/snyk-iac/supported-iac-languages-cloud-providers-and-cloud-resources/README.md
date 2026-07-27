@@ -1,5 +1,6 @@
 ---
 description: The IaC languages, cloud providers, and cloud resources Snyk IaC supports
+nav_context: agnostic
 ---
 
 # Supported IaC languages, cloud providers, and cloud resources

@@ -1,5 +1,6 @@
 ---
 description: How to view, create, and modify Snyk policies
+nav_context: classic
 ---
 
 # View, create, and modify policies

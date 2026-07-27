@@ -1,5 +1,6 @@
 ---
 description: How to set your preferred Snyk Organization, which Snyk uses by default in the web UI and CLI
+nav_context: classic
 ---
 
 # Set your preferred Organization

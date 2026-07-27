@@ -1,5 +1,6 @@
 ---
 description: How to install the SDK for writing Snyk IaC custom rules
+nav_context: classic
 ---
 
 # Install the SDK

@@ -1,5 +1,6 @@
 ---
 description: Examples of using the Snyk GitHub Action for Gradle with JDK 14
+nav_context: agnostic
 ---
 
 # Snyk Gradle-jdk14 action

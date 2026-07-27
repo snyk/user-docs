@@ -1,5 +1,6 @@
 ---
 description: How to configure Snyk legacy custom mapping using role patterns in SAML attributes or OIDC claims
+nav_context: classic
 ---
 
 # Legacy custom mapping

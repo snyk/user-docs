@@ -1,5 +1,6 @@
 ---
 description: 'Phase 4 of the Snyk team implementation: prioritize your vulnerability backlog and define focus areas for fixes'
+nav_context: agnostic
 ---
 
 # Phase 4: Create a fix strategy

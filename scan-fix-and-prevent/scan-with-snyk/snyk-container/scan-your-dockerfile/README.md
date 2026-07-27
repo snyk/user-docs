@@ -1,5 +1,6 @@
 ---
 description: How Snyk Container scans your Dockerfile
+nav_context: agnostic
 ---
 
 # Scan your Dockerfile

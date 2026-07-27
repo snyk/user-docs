@@ -1,5 +1,6 @@
 ---
 description: How to create and apply a custom Snyk PR template
+nav_context: agnostic
 ---
 
 # Apply a custom PR template

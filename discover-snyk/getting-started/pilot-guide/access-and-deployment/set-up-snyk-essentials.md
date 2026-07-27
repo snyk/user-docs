@@ -1,5 +1,6 @@
 ---
 description: How to set up Snyk Essentials to discover repository assets, including prerequisites and cloud-based SCM onboarding
+nav_context: classic
 ---
 
 # Set up Snyk Essentials

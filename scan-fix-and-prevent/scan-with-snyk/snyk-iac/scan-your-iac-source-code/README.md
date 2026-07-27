@@ -1,5 +1,6 @@
 ---
 description: How to scan your infrastructure as code source code with Snyk IaC
+nav_context: agnostic
 ---
 
 # Scan your IaC source code

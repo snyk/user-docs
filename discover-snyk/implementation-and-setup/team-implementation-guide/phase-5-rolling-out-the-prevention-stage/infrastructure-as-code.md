@@ -1,5 +1,6 @@
 ---
 description: How to roll out Snyk IaC, including Terraform Cloud runs and scanning Terraform and YAML in your repositories
+nav_context: agnostic
 ---
 
 # Infrastructure as code

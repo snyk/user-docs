@@ -1,5 +1,6 @@
 ---
 description: Example of setting up a Snyk custom mapping integration for an Okta OIDC application
+nav_context: classic
 ---
 
 # Example: setting up custom mapping for an Okta OIDC app

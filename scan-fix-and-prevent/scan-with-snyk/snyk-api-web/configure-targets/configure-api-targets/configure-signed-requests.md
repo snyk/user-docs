@@ -1,5 +1,6 @@
 ---
 description: How to configure signed requests for Snyk API and Web targets
+nav_context: classic
 ---
 
 # Configure signed requests

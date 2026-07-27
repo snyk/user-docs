@@ -1,5 +1,6 @@
 ---
 description: Open Source Projects that must be built before testing with the Snyk CLI
+nav_context: agnostic
 ---
 
 # Open Source Projects that must be built before testing with the Snyk CLI

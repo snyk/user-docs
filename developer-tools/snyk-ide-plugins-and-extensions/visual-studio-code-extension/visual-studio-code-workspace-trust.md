@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Visual Studio Code extension uses workspace trust before scanning
+nav_context: classic
 ---
 
 # Visual Studio Code workspace trust

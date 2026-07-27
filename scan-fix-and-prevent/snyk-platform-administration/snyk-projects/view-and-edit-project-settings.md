@@ -1,5 +1,6 @@
 ---
 description: How to view and edit Project settings
+nav_context: classic
 ---
 
 # View and edit Project settings

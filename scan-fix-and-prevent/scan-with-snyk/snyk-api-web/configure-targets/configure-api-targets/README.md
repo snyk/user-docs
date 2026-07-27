@@ -1,5 +1,6 @@
 ---
 description: How to configure API targets for Snyk API and Web scanning
+nav_context: agnostic
 ---
 
 # API targets

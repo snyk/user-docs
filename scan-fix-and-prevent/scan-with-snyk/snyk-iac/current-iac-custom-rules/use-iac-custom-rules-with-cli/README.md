@@ -1,5 +1,6 @@
 ---
 description: How to use Snyk IaC custom rules with the CLI
+nav_context: agnostic
 ---
 
 # Use IaC custom rules with CLI

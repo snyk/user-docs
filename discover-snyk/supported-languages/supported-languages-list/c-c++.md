@@ -1,5 +1,6 @@
 ---
 description: Snyk support for C and C++ with Snyk Code and Snyk Open Source, including CLI and IDE testing and supported frameworks and libraries
+nav_context: classic
 ---
 
 # C/C++

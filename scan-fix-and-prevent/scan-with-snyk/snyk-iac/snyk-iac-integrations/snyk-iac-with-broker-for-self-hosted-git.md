@@ -1,5 +1,6 @@
 ---
 description: How to use Snyk IaC with Broker for self-hosted Git
+nav_context: agnostic
 ---
 
 # Snyk IaC with Broker for self-hosted Git

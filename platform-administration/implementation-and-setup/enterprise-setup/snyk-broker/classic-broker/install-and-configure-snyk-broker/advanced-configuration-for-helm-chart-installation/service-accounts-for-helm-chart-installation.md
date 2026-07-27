@@ -1,5 +1,6 @@
 ---
 description: How to use an existing Kubernetes service account with the Snyk Broker Helm chart
+nav_context: agnostic
 ---
 
 # Service accounts for Helm Chart installation

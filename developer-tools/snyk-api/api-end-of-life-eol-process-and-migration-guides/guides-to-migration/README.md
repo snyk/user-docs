@@ -1,5 +1,6 @@
 ---
 description: Guides for migrating between Snyk API versions, from V1 to REST
+nav_context: agnostic
 ---
 
 # Guides to migration

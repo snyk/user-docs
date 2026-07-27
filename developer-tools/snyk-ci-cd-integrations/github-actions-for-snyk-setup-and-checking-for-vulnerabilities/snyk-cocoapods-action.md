@@ -1,5 +1,6 @@
 ---
 description: Examples of using the Snyk GitHub Action for CocoaPods
+nav_context: agnostic
 ---
 
 # Snyk CocoaPods action

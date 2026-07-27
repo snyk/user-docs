@@ -1,5 +1,6 @@
 ---
 description: How to enable and configure Snyk PR and MR Checks to block new vulnerabilities in code changes
+nav_context: agnostic
 ---
 
 # Enable and configure Snyk on PRs

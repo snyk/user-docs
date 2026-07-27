@@ -1,5 +1,6 @@
 ---
 description: Examples of using the Snyk GitHub Action for Ruby
+nav_context: agnostic
 ---
 
 # Snyk Ruby action

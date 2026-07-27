@@ -1,5 +1,6 @@
 ---
 description: How to troubleshoot access and data in Snyk reports
+nav_context: classic
 ---
 
 # Troubleshooting Snyk reports

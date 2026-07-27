@@ -1,5 +1,6 @@
 ---
 description: How to configure your integration to find security issues in Terraform files
+nav_context: classic
 ---
 
 # Configure your integration to find security issues in your Terraform files

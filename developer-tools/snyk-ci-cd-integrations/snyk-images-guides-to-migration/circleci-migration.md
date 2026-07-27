@@ -1,5 +1,6 @@
 ---
 description: How to migrate CircleCI jobs away from affected Snyk images and orbs
+nav_context: agnostic
 ---
 
 # CircleCI migration

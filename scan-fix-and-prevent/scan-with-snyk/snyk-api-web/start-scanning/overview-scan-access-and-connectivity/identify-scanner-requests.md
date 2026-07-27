@@ -1,5 +1,6 @@
 ---
 description: How to identify Snyk API and Web scanner requests
+nav_context: agnostic
 ---
 
 # Identify scanner requests

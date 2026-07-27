@@ -1,5 +1,6 @@
 ---
 description: How to ignore cloud issues in Snyk
+nav_context: classic
 ---
 
 # Ignoring cloud issues

@@ -1,5 +1,6 @@
 ---
 description: How to configure the Snyk integration for Azure Container Registry (ACR)
+nav_context: classic
 ---
 
 # Configure integration for ACR

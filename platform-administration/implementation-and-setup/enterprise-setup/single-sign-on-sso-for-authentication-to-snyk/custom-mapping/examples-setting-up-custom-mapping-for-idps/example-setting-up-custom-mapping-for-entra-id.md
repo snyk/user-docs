@@ -1,5 +1,6 @@
 ---
 description: Example of configuring Snyk custom mapping of roles for Entra ID (formerly Azure AD)
+nav_context: classic
 ---
 
 # Example: setting up custom mapping for Entra ID

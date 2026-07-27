@@ -1,5 +1,6 @@
 ---
 description: How to customize a Snyk API and Web scan profile
+nav_context: classic
 ---
 
 # Customize a scan profile

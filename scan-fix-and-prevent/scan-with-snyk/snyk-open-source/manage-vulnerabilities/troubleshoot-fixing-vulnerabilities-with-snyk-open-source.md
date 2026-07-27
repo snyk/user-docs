@@ -1,5 +1,6 @@
 ---
 description: How to troubleshoot fixing vulnerabilities with Snyk Open Source
+nav_context: agnostic
 ---
 
 # Troubleshoot fixing vulnerabilities with Snyk Open Source

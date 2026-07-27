@@ -1,5 +1,6 @@
 ---
 description: How to link your Dockerfile with container images automatically using labels
+nav_context: classic
 ---
 
 # Automatically link your Dockerfile with container images using labels

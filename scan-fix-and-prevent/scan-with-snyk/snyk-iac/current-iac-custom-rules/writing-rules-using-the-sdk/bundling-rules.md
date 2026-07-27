@@ -1,5 +1,6 @@
 ---
 description: How to bundle Snyk IaC custom rules
+nav_context: agnostic
 ---
 
 # Bundling rules

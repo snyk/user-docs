@@ -1,5 +1,6 @@
 ---
 description: The basic steps to install and configure the Universal Broker, from prerequisites through your first connection
+nav_context: classic
 ---
 
 # Basic steps to install and configure Universal Broker

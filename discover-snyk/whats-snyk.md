@@ -1,5 +1,6 @@
 ---
 description: Snyk is a developer security platform that finds and fixes vulnerabilities in code, open source, containers, infrastructure as code, and live apps.
+nav_context: agnostic
 ---
 
 # What's Snyk?

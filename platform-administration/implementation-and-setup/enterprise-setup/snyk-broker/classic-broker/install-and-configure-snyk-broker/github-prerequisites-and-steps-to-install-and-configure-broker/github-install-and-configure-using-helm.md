@@ -1,5 +1,6 @@
 ---
 description: How to install and configure Snyk Broker for GitHub using Helm
+nav_context: agnostic
 ---
 
 # GitHub - install and configure using Helm

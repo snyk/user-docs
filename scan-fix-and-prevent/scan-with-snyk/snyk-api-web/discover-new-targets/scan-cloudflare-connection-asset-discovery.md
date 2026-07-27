@@ -1,5 +1,6 @@
 ---
 description: How to scan a Cloudflare connection for asset discovery in Snyk API and Web
+nav_context: classic
 ---
 
 # Scan a Cloudflare connection for asset discovery

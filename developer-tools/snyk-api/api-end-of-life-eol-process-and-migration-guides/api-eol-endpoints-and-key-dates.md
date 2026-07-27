@@ -1,5 +1,6 @@
 ---
 description: Snyk API endpoints at end-of-life and their key dates
+nav_context: agnostic
 ---
 
 # API EOL endpoints and key dates

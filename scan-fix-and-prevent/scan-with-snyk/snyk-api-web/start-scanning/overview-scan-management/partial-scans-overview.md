@@ -1,5 +1,6 @@
 ---
 description: How to run partial Snyk API and Web scans
+nav_context: classic
 ---
 
 # Run partial scans

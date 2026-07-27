@@ -1,5 +1,6 @@
 ---
 description: Examples of using the Snyk GitHub Action for Docker container images
+nav_context: agnostic
 ---
 
 # Snyk Docker action

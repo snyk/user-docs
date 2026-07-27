@@ -1,5 +1,6 @@
 ---
 description: How Snyk Container detects application vulnerabilities in container images
+nav_context: classic
 ---
 
 # Detect application vulnerabilities in container images

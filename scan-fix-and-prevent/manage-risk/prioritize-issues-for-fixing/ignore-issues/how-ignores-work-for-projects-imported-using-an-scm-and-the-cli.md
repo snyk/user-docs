@@ -1,5 +1,6 @@
 ---
 description: How ignores work for Projects imported through an SCM and the CLI
+nav_context: agnostic
 ---
 
 # How ignores work for Projects imported using an SCM and the CLI

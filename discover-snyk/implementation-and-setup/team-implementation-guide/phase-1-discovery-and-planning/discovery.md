@@ -1,5 +1,6 @@
 ---
 description: How to identify business-critical applications, stakeholders, and success metrics before rolling out Snyk
+nav_context: agnostic
 ---
 
 # Discovery

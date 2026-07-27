@@ -1,5 +1,6 @@
 ---
 description: How Consistent Ignores for Snyk Code work in the IDE
+nav_context: agnostic
 ---
 
 # Consistent Ignores for Snyk Code IDE

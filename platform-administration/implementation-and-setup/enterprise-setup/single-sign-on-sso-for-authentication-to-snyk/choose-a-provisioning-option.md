@@ -1,5 +1,6 @@
 ---
 description: How to choose a Snyk SSO provisioning option that controls how new users in your company gain access
+nav_context: agnostic
 ---
 
 # Choose a provisioning option

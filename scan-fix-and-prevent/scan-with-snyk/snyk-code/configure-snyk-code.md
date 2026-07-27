@@ -1,5 +1,6 @@
 ---
 description: How to configure Snyk Code for your Organization
+nav_context: classic
 ---
 
 # Configure Snyk Code

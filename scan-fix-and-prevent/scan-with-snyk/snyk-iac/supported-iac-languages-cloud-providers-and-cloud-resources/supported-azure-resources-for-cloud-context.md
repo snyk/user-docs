@@ -1,5 +1,6 @@
 ---
 description: The Azure resources Snyk IaC supports for cloud context
+nav_context: agnostic
 ---
 
 # Supported Azure resources for cloud context

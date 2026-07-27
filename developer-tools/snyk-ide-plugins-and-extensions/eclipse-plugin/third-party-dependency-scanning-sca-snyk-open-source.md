@@ -1,5 +1,6 @@
 ---
 description: How to view Snyk Open Source SCA dependency scanning results in the Eclipse plugin
+nav_context: classic
 ---
 
 # Third-party dependency scanning (SCA, Snyk Open Source)

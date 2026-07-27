@@ -1,5 +1,6 @@
 ---
 description: How Group-level SCM integrations give broader visibility into all application assets for a customer
+nav_context: classic
 ---
 
 # Group-level integrations

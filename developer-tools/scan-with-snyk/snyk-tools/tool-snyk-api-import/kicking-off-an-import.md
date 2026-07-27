@@ -1,5 +1,6 @@
 ---
 description: How to run an import with snyk-api-import, covering the same Project sources as the Snyk API
+nav_context: agnostic
 ---
 
 # Kicking off an import

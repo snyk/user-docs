@@ -1,5 +1,6 @@
 ---
 description: How Consistent Ignores for Snyk Code work in the CLI
+nav_context: classic
 ---
 
 # Consistent Ignores for Snyk Code CLI

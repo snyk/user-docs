@@ -1,5 +1,6 @@
 ---
 description: How to configure the GitLab integration for Snyk Essentials at the Group level
+nav_context: classic
 ---
 
 # GitLab for Snyk Essentials

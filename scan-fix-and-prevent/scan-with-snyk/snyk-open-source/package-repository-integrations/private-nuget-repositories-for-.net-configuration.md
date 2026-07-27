@@ -1,5 +1,6 @@
 ---
 description: How to configure private NuGet repositories for .NET with Snyk
+nav_context: classic
 ---
 
 # Private NuGet repositories for .NET configuration

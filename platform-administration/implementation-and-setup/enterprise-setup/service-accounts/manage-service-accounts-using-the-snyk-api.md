@@ -1,5 +1,6 @@
 ---
 description: How to create and manage Snyk service accounts through the Snyk REST API, including the required permissions
+nav_context: agnostic
 ---
 
 # Manage service accounts using the Snyk API

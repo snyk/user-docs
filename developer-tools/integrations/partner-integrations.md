@@ -1,5 +1,6 @@
 ---
 description: Explore Snyk Partner integration solutions across 17 categories
+nav_context: classic
 ---
 
 # Partner integrations

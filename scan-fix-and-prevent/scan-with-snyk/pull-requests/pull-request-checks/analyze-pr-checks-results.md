@@ -1,5 +1,6 @@
 ---
 description: How to analyze Snyk Pull Request check results
+nav_context: classic
 ---
 
 # Analyze PR checks results

@@ -1,5 +1,6 @@
 ---
 description: The prevention reports in Snyk Analytics
+nav_context: classic
 ---
 
 # Prevention reports

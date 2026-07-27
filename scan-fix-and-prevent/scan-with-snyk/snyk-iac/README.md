@@ -1,5 +1,6 @@
 ---
 description: How Snyk IaC finds and fixes misconfigurations in infrastructure as code
+nav_context: agnostic
 ---
 
 # Snyk IaC

@@ -1,5 +1,6 @@
 ---
 description: How to use Snyk webhooks with Zapier
+nav_context: agnostic
 ---
 
 # How to use Snyk webhooks with Zapier

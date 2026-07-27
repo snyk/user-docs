@@ -1,5 +1,6 @@
 ---
 description: How Consistent Ignores work for Snyk Code
+nav_context: classic
 ---
 
 # Consistent Ignores for Snyk Code

@@ -1,5 +1,6 @@
 ---
 description: Where to find up-to-date usage examples for the Snyk Bitbucket Pipelines pipe
+nav_context: agnostic
 ---
 
 # Snyk pipe examples

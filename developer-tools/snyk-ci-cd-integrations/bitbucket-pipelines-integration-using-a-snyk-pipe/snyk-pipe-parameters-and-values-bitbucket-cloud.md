@@ -1,5 +1,6 @@
 ---
 description: The Snyk pipe parameters and values for Bitbucket Cloud pipelines
+nav_context: classic
 ---
 
 # Snyk pipe parameters and values (Bitbucket Cloud)

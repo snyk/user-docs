@@ -1,5 +1,6 @@
 ---
 description: How to get the SBOM document for a Project with the Snyk REST API
+nav_context: agnostic
 ---
 
 # Get a Project’s SBOM document

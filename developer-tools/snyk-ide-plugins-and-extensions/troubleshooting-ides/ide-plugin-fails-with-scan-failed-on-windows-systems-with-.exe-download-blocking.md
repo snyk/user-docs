@@ -1,5 +1,6 @@
 ---
 description: How to resolve Snyk IDE plugin scan failures from .exe download blocking on Windows
+nav_context: classic
 ---
 
 # IDE plugin scan fails on Windows systems with .exe download blocking

@@ -1,5 +1,6 @@
 ---
 description: How to set the Snyk Organization used for Snyk Code CLI tests
+nav_context: classic
 ---
 
 # Set the Snyk Organization for CLI tests

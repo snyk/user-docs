@@ -1,5 +1,6 @@
 ---
 description: How the .snyk file stores Snyk policy configuration for a Project
+nav_context: classic
 ---
 
 # The .snyk file

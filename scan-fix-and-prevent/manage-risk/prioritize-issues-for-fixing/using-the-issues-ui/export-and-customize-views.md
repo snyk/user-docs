@@ -1,5 +1,6 @@
 ---
 description: How to export and customize issue views in the Snyk Issues UI
+nav_context: agnostic
 ---
 
 # Export and customize views

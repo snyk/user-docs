@@ -1,5 +1,6 @@
 ---
 description: How to test Maven and Gradle Projects for Java and Kotlin with the Snyk CLI, including supported manifest files
+nav_context: agnostic
 ---
 
 # CLI support for Java and Kotlin

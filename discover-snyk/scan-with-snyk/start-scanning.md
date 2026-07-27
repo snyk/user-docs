@@ -1,5 +1,6 @@
 ---
 description: How to scan your code with Snyk manually and automatically using the Snyk CLI, web UI, API, and PR Checks
+nav_context: classic
 ---
 
 # Start scanning

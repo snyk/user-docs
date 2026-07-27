@@ -1,5 +1,6 @@
 ---
 description: 'Step 2: create the Snyk IAM role for the AWS integration'
+nav_context: classic
 ---
 
 # Step 2: Create the Snyk IAM role

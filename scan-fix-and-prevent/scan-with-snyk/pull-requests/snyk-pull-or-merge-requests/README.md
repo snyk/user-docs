@@ -1,5 +1,6 @@
 ---
 description: How Snyk pull and merge requests fix and upgrade dependencies
+nav_context: classic
 ---
 
 # Snyk Pull or Merge Requests

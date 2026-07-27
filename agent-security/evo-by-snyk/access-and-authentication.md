@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Access and authentication
 
 {% hint style="info" %}

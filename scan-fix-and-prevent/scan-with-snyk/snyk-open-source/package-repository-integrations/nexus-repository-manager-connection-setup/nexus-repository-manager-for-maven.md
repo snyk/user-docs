@@ -1,5 +1,6 @@
 ---
 description: How to connect Snyk to a Nexus Repository Manager for Maven
+nav_context: classic
 ---
 
 # Nexus repository manager for Maven

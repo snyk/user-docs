@@ -1,5 +1,6 @@
 ---
 description: The Snyk Export API specifications, columns, and filters
+nav_context: agnostic
 ---
 
 # Export API: Specifications, columns, and filters

@@ -1,5 +1,6 @@
 ---
 description: How to view cloud issues in the Snyk Web UI
+nav_context: classic
 ---
 
 # View cloud issues in the Snyk Web UI

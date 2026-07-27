@@ -1,5 +1,6 @@
 ---
 description: How to switch between Snyk Groups and Organizations in the web UI, and how the preferred Organization applies
+nav_context: new
 ---
 
 # Switch between Groups and Organizations

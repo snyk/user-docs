@@ -1,5 +1,6 @@
 ---
 description: How to view dependencies and licenses for your Snyk Projects
+nav_context: new
 ---
 
 # Dependencies and licenses

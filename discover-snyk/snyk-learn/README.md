@@ -1,5 +1,6 @@
 ---
 description: Snyk Learn provides interactive developer security education and Snyk product training through lessons and learning paths
+nav_context: agnostic
 ---
 
 # Developer security education and Snyk product training with Snyk Learn

@@ -1,5 +1,6 @@
 ---
 description: How to contribute to the snyk-api-import project, including the Snyk contributor agreement
+nav_context: classic
 ---
 
 # Contributing to snyk-api-import

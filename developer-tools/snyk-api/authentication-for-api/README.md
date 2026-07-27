@@ -1,5 +1,6 @@
 ---
 description: How to authenticate to the Snyk API using a token, for Enterprise plan customers
+nav_context: agnostic
 ---
 
 # Authentication for API

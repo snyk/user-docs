@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Usage analytics
 
 Snyk provides Snyk Studio usage analytics in the following report types:

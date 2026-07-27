@@ -1,5 +1,6 @@
 ---
 description: 'Step 1: download the IAM role IaC template for the Snyk AWS integration in the Web UI'
+nav_context: classic
 ---
 
 # Step 1: Download IAM role IaC template (Web UI)

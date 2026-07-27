@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk Bitbucket Data Center and Server SCM integration for continuous scanning
+nav_context: classic
 ---
 
 # Bitbucket Data Center/Server

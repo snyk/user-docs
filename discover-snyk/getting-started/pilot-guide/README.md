@@ -2,6 +2,7 @@
 hidden: true
 noIndex: true
 description: Guide to running a Snyk pilot, from account access and deployment through scanning, fixing, and reviewing results
+nav_context: agnostic
 ---
 
 # Pilot Guide

@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk Google Cloud integration using the API
+nav_context: agnostic
 ---
 
 # Google Cloud Integration: API

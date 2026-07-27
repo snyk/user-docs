@@ -1,5 +1,6 @@
 ---
 description: Environment variables to configure the Snyk Broker client for Nexus Repository
+nav_context: agnostic
 ---
 
 # Nexus Repository - environment variables for Snyk Broker

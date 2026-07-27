@@ -1,5 +1,6 @@
 ---
 description: How the Eclipse plugin automatically downloads the Snyk CLI it uses to scan
+nav_context: classic
 ---
 
 # Download the CLI with the Eclipse plugin

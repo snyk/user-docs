@@ -1,5 +1,6 @@
 ---
 description: Snyk Organizations, which represent teams, products, or environments and contain the Projects you scan
+nav_context: agnostic
 ---
 
 # Organizations

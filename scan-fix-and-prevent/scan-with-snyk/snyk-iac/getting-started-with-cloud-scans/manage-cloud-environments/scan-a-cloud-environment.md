@@ -1,5 +1,6 @@
 ---
 description: How to scan a cloud environment with Snyk
+nav_context: agnostic
 ---
 
 # Scan a cloud environment

@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Troubleshooting
 
 If you encounter issues with Snyk Studio or the integration using Snyk's MCP server, try the troubleshooting steps provided here.

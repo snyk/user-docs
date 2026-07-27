@@ -1,5 +1,6 @@
 ---
 description: Snyk support for Scala with Snyk Code and Snyk Open Source, including SCM import, CLI and IDE testing, and supported frameworks
+nav_context: agnostic
 ---
 
 # Scala

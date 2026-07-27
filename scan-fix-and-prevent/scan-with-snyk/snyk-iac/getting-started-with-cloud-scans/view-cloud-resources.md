@@ -1,5 +1,6 @@
 ---
 description: How to view cloud resources scanned by Snyk
+nav_context: agnostic
 ---
 
 # View cloud resources

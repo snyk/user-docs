@@ -1,5 +1,6 @@
 ---
 description: How the Snyk CLI secures its configuration data at rest
+nav_context: agnostic
 ---
 
 # Securing data at rest

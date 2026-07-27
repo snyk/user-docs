@@ -1,5 +1,6 @@
 ---
 description: How to render content for users in the Snyk App tutorial
+nav_context: agnostic
 ---
 
 # Render content for users

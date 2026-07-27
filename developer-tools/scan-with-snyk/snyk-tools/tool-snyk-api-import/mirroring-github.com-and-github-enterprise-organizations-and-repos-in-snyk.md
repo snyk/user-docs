@@ -1,5 +1,6 @@
 ---
 description: How to import all GitHub.com and GitHub Enterprise organizations and repositories into Snyk with snyk-api-import
+nav_context: agnostic
 ---
 
 # Mirroring GitHub.com and GitHub Enterprise organizations and repos in Snyk

@@ -1,5 +1,6 @@
 ---
 description: How to gain visibility by importing Projects so Snyk monitors your code, dependencies, containers, and infrastructure
+nav_context: classic
 ---
 
 # Gain visibility by importing repositories

@@ -1,5 +1,6 @@
 ---
 description: How to connect Snyk to a Nexus Repository Manager for npm
+nav_context: classic
 ---
 
 # Nexus repository manager for npm

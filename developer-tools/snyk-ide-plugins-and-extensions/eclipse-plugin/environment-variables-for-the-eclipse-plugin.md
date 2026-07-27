@@ -1,5 +1,6 @@
 ---
 description: Environment variables the Snyk Eclipse plugin passes to the Snyk CLI for open source and IaC scans
+nav_context: agnostic
 ---
 
 # Environment variables for the Eclipse plugin

@@ -1,5 +1,6 @@
 ---
 description: Examples of using the Snyk GitHub Action for .NET
+nav_context: agnostic
 ---
 
 # Snyk dotNET action

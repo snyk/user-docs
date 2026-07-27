@@ -1,5 +1,6 @@
 ---
 description: How Snyk uses pull requests to fix and prevent vulnerabilities
+nav_context: agnostic
 ---
 
 # Pull Requests

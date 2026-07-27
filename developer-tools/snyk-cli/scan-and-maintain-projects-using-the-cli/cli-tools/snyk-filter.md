@@ -1,5 +1,6 @@
 ---
 description: The snyk-filter tool for custom filtering of Snyk CLI results
+nav_context: agnostic
 ---
 
 # snyk-filter

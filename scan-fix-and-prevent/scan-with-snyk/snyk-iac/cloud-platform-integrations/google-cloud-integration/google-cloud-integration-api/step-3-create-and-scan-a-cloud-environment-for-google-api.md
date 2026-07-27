@@ -1,5 +1,6 @@
 ---
 description: 'Step 3: create and scan a cloud environment for Google Cloud using the API'
+nav_context: agnostic
 ---
 
 # Step 3: Create and scan a Cloud Environment for Google (API)

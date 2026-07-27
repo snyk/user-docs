@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Risk Score prioritizes issues, in Early Access
+nav_context: classic
 ---
 
 # Risk Score

@@ -1,5 +1,6 @@
 ---
 description: How to review and fix findings from Snyk API and Web scans
+nav_context: classic
 ---
 
 # Review and fix

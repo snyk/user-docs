@@ -1,5 +1,6 @@
 ---
 description: How to resolve Maven scan failures caused by private repository dependencies in IDE plugins
+nav_context: agnostic
 ---
 
 # Maven scans with private repositories

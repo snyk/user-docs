@@ -1,5 +1,6 @@
 ---
 description: Custom role template for a Team Lead, an Organization Admin who can also customize permissions for other users
+nav_context: classic
 ---
 
 # Team Lead role template

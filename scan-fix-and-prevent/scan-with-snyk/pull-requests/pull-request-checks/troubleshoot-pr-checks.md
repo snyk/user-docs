@@ -1,5 +1,6 @@
 ---
 description: How to troubleshoot Snyk Pull Request checks
+nav_context: agnostic
 ---
 
 # Troubleshoot PR checks

@@ -1,5 +1,6 @@
 ---
 description: How to find a Snyk cloud environment ID
+nav_context: classic
 ---
 
 # Find an environment ID

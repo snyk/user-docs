@@ -1,5 +1,6 @@
 ---
 description: Snyk support for Java and Kotlin with Snyk Code and Snyk Open Source, including SCM import, CLI and IDE testing, and Maven and Gradle
+nav_context: agnostic
 ---
 
 # Java and Kotlin

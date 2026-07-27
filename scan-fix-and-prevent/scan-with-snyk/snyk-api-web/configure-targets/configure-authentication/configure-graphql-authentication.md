@@ -1,5 +1,6 @@
 ---
 description: How to configure GraphQL authentication for Snyk API and Web targets
+nav_context: classic
 ---
 
 # GraphQL authentication

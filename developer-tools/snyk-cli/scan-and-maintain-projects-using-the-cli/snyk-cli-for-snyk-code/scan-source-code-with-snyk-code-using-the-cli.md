@@ -1,5 +1,6 @@
 ---
 description: How to scan source code with Snyk Code using the CLI
+nav_context: classic
 ---
 
 # Scan source code with Snyk Code using the CLI

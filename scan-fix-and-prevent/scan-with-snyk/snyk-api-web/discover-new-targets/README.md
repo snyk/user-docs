@@ -1,5 +1,6 @@
 ---
 description: How to discover new targets with Snyk API and Web
+nav_context: classic
 ---
 
 # Discover new targets

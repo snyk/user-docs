@@ -1,5 +1,6 @@
 ---
 description: How to add more Organizations to your AWS IAM role for Snyk authentication
+nav_context: classic
 ---
 
 # Add more Organizations to your AWS IAM role for Snyk authentication

@@ -1,5 +1,6 @@
 ---
 description: Custom role template for a Snyk Learn Learning Admin, which requires the Learning Management add-on
+nav_context: agnostic
 ---
 
 # Snyk Learn - Learning Admin

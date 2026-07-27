@@ -1,5 +1,6 @@
 ---
 description: How to use AWS API Gateway to trigger the Lambda function for Snyk webhooks
+nav_context: agnostic
 ---
 
 # With API Gateway

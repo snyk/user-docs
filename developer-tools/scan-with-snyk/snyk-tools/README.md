@@ -1,5 +1,6 @@
 ---
 description: Snyk Tools that address specific needs beyond core product functionality, across the Web UI, CLI, and API
+nav_context: agnostic
 ---
 
 # Snyk Tools

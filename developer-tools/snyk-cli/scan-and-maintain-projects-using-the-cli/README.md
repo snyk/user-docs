@@ -1,5 +1,6 @@
 ---
 description: How to scan and maintain Projects with the Snyk CLI
+nav_context: agnostic
 ---
 
 # Scan and maintain Projects using the CLI

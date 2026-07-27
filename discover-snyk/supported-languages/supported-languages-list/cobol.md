@@ -1,5 +1,6 @@
 ---
 description: Snyk support for COBOL with Snyk Code, available in Early Access on Enterprise plans, including CICS frameworks and supported dialects
+nav_context: agnostic
 ---
 
 # COBOL

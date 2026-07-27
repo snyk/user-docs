@@ -1,5 +1,6 @@
 ---
 description: How to create a Snyk webhook for the New Relic integration
+nav_context: agnostic
 ---
 
 # Create a Snyk Webhook

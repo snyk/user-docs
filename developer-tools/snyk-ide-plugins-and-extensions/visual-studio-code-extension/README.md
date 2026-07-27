@@ -1,5 +1,6 @@
 ---
 description: The Snyk Visual Studio Code extension for scanning and fixing vulnerabilities as you develop
+nav_context: agnostic
 ---
 
 # Visual Studio Code extension

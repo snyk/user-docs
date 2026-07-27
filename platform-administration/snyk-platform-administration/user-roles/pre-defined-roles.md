@@ -1,5 +1,6 @@
 ---
 description: Snyk standard pre-defined user roles, which cannot be customized, and how to assign them
+nav_context: classic
 ---
 
 # Pre-defined roles

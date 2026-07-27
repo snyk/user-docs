@@ -1,5 +1,6 @@
 ---
 description: How to use the Snyk Webhooks APIs
+nav_context: agnostic
 ---
 
 # Webhooks APIs

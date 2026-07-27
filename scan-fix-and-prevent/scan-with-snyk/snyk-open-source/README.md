@@ -1,5 +1,6 @@
 ---
 description: How Snyk Open Source scans your dependencies for vulnerabilities and license issues
+nav_context: agnostic
 ---
 
 # Snyk Open Source

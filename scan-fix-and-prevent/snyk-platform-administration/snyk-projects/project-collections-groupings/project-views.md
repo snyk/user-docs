@@ -1,5 +1,6 @@
 ---
 description: How to use Project views to filter and organize Projects
+nav_context: classic
 ---
 
 # Project views

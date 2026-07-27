@@ -1,5 +1,6 @@
 ---
 description: How to set up the New Relic curated UI and a Snyk custom dashboard
+nav_context: classic
 ---
 
 # New Relic Curated UI and Snyk Custom Dashboard

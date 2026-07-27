@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk Container with the Harbor Container Registry
+nav_context: classic
 ---
 
 # Integrate with Harbor Container Registry

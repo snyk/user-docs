@@ -1,5 +1,6 @@
 ---
 description: Snyk API endpoints that are candidates for upcoming end-of-life cadences
+nav_context: agnostic
 ---
 
 # Candidates for upcoming API end-of-life cadences

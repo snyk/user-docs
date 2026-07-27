@@ -1,5 +1,6 @@
 ---
 description: How to create a Snyk rollout plan paced to the security maturity and compliance needs of your team
+nav_context: agnostic
 ---
 
 # Create rollout plan

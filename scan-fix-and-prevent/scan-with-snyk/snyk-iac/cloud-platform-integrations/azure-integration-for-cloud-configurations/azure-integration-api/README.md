@@ -1,5 +1,6 @@
 ---
 description: How to set up the Snyk Azure integration using the API
+nav_context: agnostic
 ---
 
 # Azure Integration: API

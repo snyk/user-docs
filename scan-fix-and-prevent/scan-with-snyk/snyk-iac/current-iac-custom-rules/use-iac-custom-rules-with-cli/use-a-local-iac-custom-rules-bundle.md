@@ -1,5 +1,6 @@
 ---
 description: How to use a local Snyk IaC custom rules bundle with the CLI
+nav_context: agnostic
 ---
 
 # Use a local IaC custom rules bundle

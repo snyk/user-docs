@@ -1,5 +1,6 @@
 ---
 description: Custom role template for a CLI Tester, an Organization-level role that lets CI/CD service accounts run Snyk CLI tests
+nav_context: agnostic
 ---
 
 # CLI Tester role template

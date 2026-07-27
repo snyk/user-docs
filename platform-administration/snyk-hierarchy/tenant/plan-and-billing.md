@@ -1,5 +1,6 @@
 ---
 description: How to view your Snyk plan and billing details on the Your Plan page, available on Enterprise plans
+nav_context: classic
 ---
 
 # Plan and billing

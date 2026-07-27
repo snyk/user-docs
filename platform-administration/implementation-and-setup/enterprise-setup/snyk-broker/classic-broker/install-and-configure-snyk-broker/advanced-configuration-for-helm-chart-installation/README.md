@@ -1,5 +1,6 @@
 ---
 description: Advanced configuration options for a Snyk Broker Helm chart installation, including multi-tenant region settings
+nav_context: agnostic
 ---
 
 # Advanced configuration for Helm Chart installation

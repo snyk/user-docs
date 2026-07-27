@@ -1,5 +1,6 @@
 ---
 description: How to deploy multiple Snyk Brokers in the same Kubernetes namespace with the Helm chart
+nav_context: agnostic
 ---
 
 # Deploying multiple Brokers in the same namespace

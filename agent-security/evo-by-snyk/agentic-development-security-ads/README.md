@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Agentic Development Security (ADS)
 
 {% hint style="info" %}

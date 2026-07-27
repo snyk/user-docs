@@ -1,5 +1,6 @@
 ---
 description: How to verify domain ownership with a meta tag for Snyk API and Web
+nav_context: classic
 ---
 
 # Verify domain with meta tag

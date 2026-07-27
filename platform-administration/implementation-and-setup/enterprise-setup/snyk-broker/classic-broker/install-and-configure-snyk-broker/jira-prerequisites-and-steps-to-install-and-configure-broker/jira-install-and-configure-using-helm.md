@@ -1,5 +1,6 @@
 ---
 description: How to install and configure Snyk Broker for Jira using Helm
+nav_context: agnostic
 ---
 
 # Jira - install and configure using Helm

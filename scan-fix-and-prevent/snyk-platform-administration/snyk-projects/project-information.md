@@ -1,5 +1,6 @@
 ---
 description: How to view imported Project information on the Projects page
+nav_context: classic
 ---
 
 # Project information

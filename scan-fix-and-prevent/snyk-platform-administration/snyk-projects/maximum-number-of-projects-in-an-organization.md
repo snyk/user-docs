@@ -1,5 +1,6 @@
 ---
 description: The maximum number of Projects allowed in an Organization
+nav_context: classic
 ---
 
 # Maximum number of Projects in an Organization

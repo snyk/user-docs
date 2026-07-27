@@ -1,5 +1,6 @@
 ---
 description: How Snyk Code finds and fixes security vulnerabilities in your source code
+nav_context: classic
 ---
 
 # Snyk Code

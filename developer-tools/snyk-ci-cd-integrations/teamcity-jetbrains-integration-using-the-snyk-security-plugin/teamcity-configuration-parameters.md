@@ -1,5 +1,6 @@
 ---
 description: The Snyk settings and configuration parameters for the TeamCity integration
+nav_context: agnostic
 ---
 
 # TeamCity configuration parameters

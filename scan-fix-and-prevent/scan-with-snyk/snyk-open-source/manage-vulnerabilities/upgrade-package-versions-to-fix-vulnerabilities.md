@@ -1,5 +1,6 @@
 ---
 description: How to upgrade package versions to fix vulnerabilities with Snyk
+nav_context: agnostic
 ---
 
 # Upgrade package versions to fix vulnerabilities

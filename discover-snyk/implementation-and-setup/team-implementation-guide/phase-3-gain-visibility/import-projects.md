@@ -1,5 +1,6 @@
 ---
 description: How to import Projects into Snyk using an SCM integration or the Snyk CLI with CI/CD
+nav_context: classic
 ---
 
 # Import Projects

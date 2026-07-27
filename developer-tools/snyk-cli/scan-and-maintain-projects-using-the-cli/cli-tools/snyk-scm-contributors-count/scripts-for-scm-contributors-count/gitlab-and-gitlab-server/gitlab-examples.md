@@ -1,5 +1,6 @@
 ---
 description: The list of options and some examples for GitLab
+nav_context: agnostic
 ---
 
 # GitLab - Examples

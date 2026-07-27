@@ -1,5 +1,6 @@
 ---
 description: How Snyk Pull Request checks block new vulnerabilities in pull requests
+nav_context: classic
 ---
 
 # Pull Request checks

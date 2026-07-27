@@ -1,5 +1,6 @@
 ---
 description: How Snyk Container finds and fixes vulnerabilities in container images
+nav_context: agnostic
 ---
 
 # Snyk Container

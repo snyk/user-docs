@@ -1,5 +1,6 @@
 ---
 description: How to migrate to custom images after the removal of the Snyk Images library
+nav_context: agnostic
 ---
 
 # Snyk Images migration

@@ -1,5 +1,6 @@
 ---
 description: How to scan container images with Snyk Container
+nav_context: classic
 ---
 
 # Scan container images

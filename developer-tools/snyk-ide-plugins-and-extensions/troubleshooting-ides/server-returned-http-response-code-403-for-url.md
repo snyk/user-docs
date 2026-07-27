@@ -1,5 +1,6 @@
 ---
 description: How to resolve an HTTP 403 error by checking the Snyk endpoint URL and token
+nav_context: agnostic
 ---
 
 # Server returned HTTP response code 403 for URL

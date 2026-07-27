@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Visual Basic
+nav_context: agnostic
 ---
 
 # Visual Basic rules

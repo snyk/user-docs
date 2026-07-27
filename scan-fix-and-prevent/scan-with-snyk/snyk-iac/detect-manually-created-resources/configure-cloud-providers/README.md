@@ -1,5 +1,6 @@
 ---
 description: How to configure cloud providers for Snyk IaC drift detection
+nav_context: agnostic
 ---
 
 # Configure cloud providers

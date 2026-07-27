@@ -1,5 +1,6 @@
 ---
 description: How to view Snyk usage details for your Group or Organization, including tests and contributing developers
+nav_context: classic
 ---
 
 # Usage settings

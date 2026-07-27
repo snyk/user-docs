@@ -1,5 +1,6 @@
 ---
 description: How Snyk GitHub Actions set up Snyk and check for vulnerabilities in your pipeline
+nav_context: classic
 ---
 
 # GitHub actions for Snyk setup and checking for vulnerabilities

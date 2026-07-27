@@ -1,5 +1,6 @@
 ---
 description: How the Snyk Priority Score and Risk Score differ
+nav_context: agnostic
 ---
 
 # Priority Score vs Risk Score

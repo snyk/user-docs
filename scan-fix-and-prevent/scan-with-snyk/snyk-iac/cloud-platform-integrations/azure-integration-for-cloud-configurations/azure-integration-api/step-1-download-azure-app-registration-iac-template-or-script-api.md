@@ -1,5 +1,6 @@
 ---
 description: 'Step 1: download the Azure app registration IaC template or script using the API'
+nav_context: classic
 ---
 
 # Step 1: Download Azure app registration IaC template or script (API)

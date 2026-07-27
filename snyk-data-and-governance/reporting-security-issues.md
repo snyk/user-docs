@@ -1,5 +1,6 @@
 ---
 description: How to report a vulnerability in a Snyk service through the Snyk responsible disclosure process
+nav_context: agnostic
 ---
 
 # Reporting security issues

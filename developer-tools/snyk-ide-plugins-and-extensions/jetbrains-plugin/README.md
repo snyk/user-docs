@@ -1,5 +1,6 @@
 ---
 description: The Snyk JetBrains plugin for scanning and fixing vulnerabilities as you develop
+nav_context: agnostic
 ---
 
 # JetBrains plugin

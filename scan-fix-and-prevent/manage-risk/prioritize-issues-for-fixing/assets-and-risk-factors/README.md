@@ -1,5 +1,6 @@
 ---
 description: How Snyk uses assets and risk factors to prioritize issues
+nav_context: agnostic
 ---
 
 # Assets and risk factors

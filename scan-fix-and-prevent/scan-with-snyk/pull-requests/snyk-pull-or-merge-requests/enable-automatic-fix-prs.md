@@ -1,5 +1,6 @@
 ---
 description: How to enable automatic Snyk Fix PRs
+nav_context: classic
 ---
 
 # Enable automatic Fix PRs

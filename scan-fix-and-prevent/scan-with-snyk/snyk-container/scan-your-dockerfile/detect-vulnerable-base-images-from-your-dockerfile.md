@@ -1,5 +1,6 @@
 ---
 description: How to detect vulnerable base images from your Dockerfile
+nav_context: classic
 ---
 
 # Detect vulnerable base images from your Dockerfile

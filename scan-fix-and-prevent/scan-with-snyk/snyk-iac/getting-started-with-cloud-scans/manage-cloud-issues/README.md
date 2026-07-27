@@ -1,5 +1,6 @@
 ---
 description: How to manage cloud issues found by Snyk
+nav_context: classic
 ---
 
 # Manage cloud issues

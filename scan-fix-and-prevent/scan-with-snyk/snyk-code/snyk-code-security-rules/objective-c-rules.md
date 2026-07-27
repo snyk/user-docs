@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Objective-C
+nav_context: agnostic
 ---
 
 # Objective-C rules

@@ -1,3 +1,7 @@
+---
+nav_context: agnostic
+---
+
 # Inventory
 
 Inventory surfaces the AI assets discovered across your environment alongside the assessed risk so you can review it in context.

@@ -1,5 +1,6 @@
 ---
 description: How Snyk scans Python Projects through SCM integrations, including required manifest files and setting the Python version
+nav_context: classic
 ---
 
 # SCM integration support for Python

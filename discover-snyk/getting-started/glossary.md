@@ -1,5 +1,6 @@
 ---
 description: Definitions of Snyk platform terms and security concepts used throughout the Snyk documentation
+nav_context: agnostic
 ---
 
 # Glossary

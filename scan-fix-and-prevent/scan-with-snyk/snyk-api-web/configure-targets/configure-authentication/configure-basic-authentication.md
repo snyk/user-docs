@@ -1,5 +1,6 @@
 ---
 description: How to configure basic authentication for Snyk API and Web targets
+nav_context: classic
 ---
 
 # Configure basic authentication

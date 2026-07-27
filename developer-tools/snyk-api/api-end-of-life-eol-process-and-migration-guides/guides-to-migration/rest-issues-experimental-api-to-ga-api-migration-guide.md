@@ -1,5 +1,6 @@
 ---
 description: Migration guide from the experimental REST Issues API to the GA API
+nav_context: agnostic
 ---
 
 # REST Issues experimental API to GA API migration guide

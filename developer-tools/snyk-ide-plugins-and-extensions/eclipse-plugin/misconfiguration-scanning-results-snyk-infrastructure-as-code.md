@@ -1,5 +1,6 @@
 ---
 description: How to view Snyk IaC misconfiguration scanning results in the Eclipse plugin
+nav_context: classic
 ---
 
 # Misconfiguration scanning results (Snyk Infrastructure as Code)

@@ -1,5 +1,6 @@
 ---
 description: How to add users to Snyk API and Web
+nav_context: classic
 ---
 
 # Add users

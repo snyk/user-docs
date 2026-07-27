@@ -1,5 +1,6 @@
 ---
 description: How to configure the Snyk JFrog Artifactory Container Registry integration
+nav_context: classic
 ---
 
 # Configuring your JFrog Artifactory Container Registry integration

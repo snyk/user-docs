@@ -1,5 +1,6 @@
 ---
 description: How to resolve certificate path errors in Snyk IDE plugins
+nav_context: classic
 ---
 
 # Troubleshoot certificate errors

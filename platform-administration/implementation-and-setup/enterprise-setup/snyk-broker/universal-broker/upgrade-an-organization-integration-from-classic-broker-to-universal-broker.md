@@ -1,5 +1,6 @@
 ---
 description: How to upgrade an Organization integration from Classic Broker to the Universal Broker
+nav_context: classic
 ---
 
 # Upgrade an Organization integration from Classic Broker to Universal Broker

@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for PHP
+nav_context: agnostic
 ---
 
 # PHP rules

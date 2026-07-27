@@ -1,5 +1,6 @@
 ---
 description: How to view and modify Snyk Group general settings, including the Group name and related options
+nav_context: classic
 ---
 
 # Group general settings

@@ -1,5 +1,6 @@
 ---
 description: How to scan serverless files with Snyk IaC
+nav_context: agnostic
 ---
 
 # Scan Serverless files

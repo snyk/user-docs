@@ -1,5 +1,6 @@
 ---
 description: How to send Snyk findings to Google Security Command Center, in Early Access on Enterprise plans
+nav_context: classic
 ---
 
 # Google Security Command Center

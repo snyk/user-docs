@@ -1,5 +1,6 @@
 ---
 description: How to create custom rules for Snyk IaC
+nav_context: classic
 ---
 
 # IaC custom rules

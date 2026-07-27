@@ -1,5 +1,6 @@
 ---
 description: How to resolve Snyk OAuth 2.0 authentication problems in IDE plugins
+nav_context: agnostic
 ---
 
 # OAuth 2.0 authentication does not work

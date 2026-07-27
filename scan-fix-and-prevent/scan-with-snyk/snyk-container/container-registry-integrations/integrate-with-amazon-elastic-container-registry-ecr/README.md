@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk Container with Amazon Elastic Container Registry (ECR)
+nav_context: agnostic
 ---
 
 # Integrate with Amazon Elastic Container Registry (ECR)

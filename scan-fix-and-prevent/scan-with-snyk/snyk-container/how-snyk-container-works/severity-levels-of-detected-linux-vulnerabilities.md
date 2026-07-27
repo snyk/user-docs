@@ -1,5 +1,6 @@
 ---
 description: How Snyk assigns severity levels to detected Linux vulnerabilities
+nav_context: classic
 ---
 
 # Severity levels of detected Linux vulnerabilities

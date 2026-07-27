@@ -1,5 +1,6 @@
 ---
 description: Guides for migrating from Snyk images across CircleCI, Bitbucket Pipelines, and GitHub Actions
+nav_context: agnostic
 ---
 
 # Snyk images guides to migration

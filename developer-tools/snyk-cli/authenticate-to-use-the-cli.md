@@ -1,5 +1,6 @@
 ---
 description: How to authenticate the Snyk CLI after installation
+nav_context: agnostic
 ---
 
 # Authenticate to use the CLI

@@ -1,5 +1,6 @@
 ---
 description: How to build user-defined custom images for the Snyk CLI
+nav_context: agnostic
 ---
 
 # User-defined custom images for CLI

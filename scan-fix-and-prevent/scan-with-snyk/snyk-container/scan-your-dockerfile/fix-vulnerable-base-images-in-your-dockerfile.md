@@ -1,5 +1,6 @@
 ---
 description: How to fix vulnerable base images in your Dockerfile
+nav_context: classic
 ---
 
 # Fix vulnerable base images in your Dockerfile

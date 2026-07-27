@@ -1,5 +1,6 @@
 ---
 description: How to use external Kubernetes secrets with the Snyk Broker Helm chart, from version 2.8.0
+nav_context: agnostic
 ---
 
 # Kubernetes secrets and Helm Chart installation

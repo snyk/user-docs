@@ -1,5 +1,6 @@
 ---
 description: Prerequisites and steps to install and configure Snyk Broker for Azure Repos on Azure DevOps or TFS 2020 and above
+nav_context: agnostic
 ---
 
 # Azure Repos - prerequisites and steps to install and configure Broker

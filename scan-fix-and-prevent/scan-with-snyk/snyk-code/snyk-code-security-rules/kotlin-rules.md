@@ -1,5 +1,6 @@
 ---
 description: Snyk Code security rules for Kotlin
+nav_context: agnostic
 ---
 
 # Kotlin rules

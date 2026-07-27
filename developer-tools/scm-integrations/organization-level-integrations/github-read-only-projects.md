@@ -1,5 +1,6 @@
 ---
 description: How Snyk GitHub Read-only Projects monitor public GitHub repositories without write access
+nav_context: classic
 ---
 
 # GitHub Read-only Projects

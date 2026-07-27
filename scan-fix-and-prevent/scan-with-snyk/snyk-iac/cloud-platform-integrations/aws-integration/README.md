@@ -1,5 +1,6 @@
 ---
 description: How to integrate Snyk with AWS to scan cloud configurations
+nav_context: agnostic
 ---
 
 # AWS integration

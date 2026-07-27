@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # Cursor guide
 
 Access Snyk Studio in Cursor to ensure generated code is secure at inception (SAI). Snyk Studio supports a default hooks-based approach to SAI for Cursor.

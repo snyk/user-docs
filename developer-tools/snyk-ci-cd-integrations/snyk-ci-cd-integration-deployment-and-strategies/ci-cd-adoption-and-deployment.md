@@ -1,5 +1,6 @@
 ---
 description: How to compare SCM and CI/CD integrations when adopting Snyk in your pipeline
+nav_context: agnostic
 ---
 
 # CI/CD adoption and deployment

@@ -1,3 +1,7 @@
+---
+nav_context: classic
+---
+
 # GitHub Copilot guide
 
 You can access Snyk Studio, including Snyk's MCP server, in VSCode to secure code generated with agentic workflows through Copilot. This can be achieved in several ways. For most users, we recommend accessing Snyk Studio using the Snyk Security plugin.

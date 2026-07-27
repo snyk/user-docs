@@ -1,5 +1,6 @@
 ---
 description: Snyk webhook events and their payload formats
+nav_context: agnostic
 ---
 
 # Webhook events and payloads

@@ -1,5 +1,6 @@
 ---
 description: How Snyk scans Terraform plans on each run through the Terraform Cloud integration
+nav_context: classic
 ---
 
 # How to use the Terraform Cloud integration for IaC

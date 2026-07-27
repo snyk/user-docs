@@ -1,5 +1,6 @@
 ---
 description: How to authenticate to Snyk from third-party developer tools using an API token from a personal or service account
+nav_context: classic
 ---
 
 # Authentication for third-party tools

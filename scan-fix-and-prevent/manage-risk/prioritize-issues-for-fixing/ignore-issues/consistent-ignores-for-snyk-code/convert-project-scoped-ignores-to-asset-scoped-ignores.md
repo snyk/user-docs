@@ -1,5 +1,6 @@
 ---
 description: How to convert Project-scoped ignores to asset-scoped ignores for Snyk Code
+nav_context: classic
 ---
 
 # Convert Project-scoped ignores to asset-scoped ignores

@@ -1,5 +1,6 @@
 ---
 description: Prerequisites for creating a Snyk App
+nav_context: agnostic
 ---
 
 # Prerequisites for Snyk Apps

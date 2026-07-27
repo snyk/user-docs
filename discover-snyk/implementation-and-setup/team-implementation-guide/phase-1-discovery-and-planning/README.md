@@ -1,5 +1,6 @@
 ---
 description: 'Phase 1 of the Snyk team implementation: validate your plan, run discovery, and plan your rollout'
+nav_context: agnostic
 ---
 
 # Phase 1: Discovery and planning

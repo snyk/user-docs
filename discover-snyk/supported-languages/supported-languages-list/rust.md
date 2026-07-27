@@ -1,5 +1,6 @@
 ---
 description: Snyk support for Rust, with full Snyk Code coverage in Early Access on Enterprise plans and limited Snyk Open Source support
+nav_context: agnostic
 ---
 
 # Rust

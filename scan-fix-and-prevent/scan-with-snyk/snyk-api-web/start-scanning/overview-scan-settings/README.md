@@ -1,5 +1,6 @@
 ---
 description: How to configure scan settings for Snyk API and Web
+nav_context: agnostic
 ---
 
 # Scan settings

@@ -1,5 +1,6 @@
 ---
 description: How the public-facing risk factor affects Snyk issue prioritization
+nav_context: agnostic
 ---
 
 # Risk factor: public facing

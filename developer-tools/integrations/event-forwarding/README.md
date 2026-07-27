@@ -1,5 +1,6 @@
 ---
 description: How Snyk event forwarding pushes platform events to other products
+nav_context: agnostic
 ---
 
 # Event forwarding

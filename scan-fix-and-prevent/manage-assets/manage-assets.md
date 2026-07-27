@@ -1,5 +1,6 @@
 ---
 description: How Snyk manages application assets and their security risk
+nav_context: new
 ---
 
 # Overview

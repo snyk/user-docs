@@ -1,5 +1,6 @@
 ---
 description: How to set up the Kubernetes connector for Snyk Insights
+nav_context: classic
 ---
 
 # Set up Insights: Kubernetes connector

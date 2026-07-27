@@ -1,5 +1,6 @@
 ---
 description: How to use the Snyk Maven plugin, based on the Snyk CLI, to scan and monitor your Projects
+nav_context: agnostic
 ---
 
 # Maven plugin integration with Snyk

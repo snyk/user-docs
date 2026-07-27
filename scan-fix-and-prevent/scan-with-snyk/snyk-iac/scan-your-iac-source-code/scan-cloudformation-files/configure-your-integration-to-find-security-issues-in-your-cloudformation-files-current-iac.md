@@ -1,5 +1,6 @@
 ---
 description: How to configure your integration to find security issues in CloudFormation files
+nav_context: classic
 ---
 
 # Configure your integration to find security issues in your CloudFormation files

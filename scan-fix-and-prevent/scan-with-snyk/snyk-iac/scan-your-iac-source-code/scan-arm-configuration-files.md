@@ -1,5 +1,6 @@
 ---
 description: How to scan Azure ARM configuration files with Snyk IaC
+nav_context: agnostic
 ---
 
 # Scan ARM configuration files

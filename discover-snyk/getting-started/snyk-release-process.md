@@ -1,5 +1,6 @@
 ---
 description: How Snyk releases features through stages from alpha to general availability, and what each stage means for access and documentation.
+nav_context: agnostic
 ---
 
 # Snyk release process

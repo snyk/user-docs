@@ -1,5 +1,6 @@
 ---
 description: How to remove members from Snyk Groups and Organizations programmatically using the API
+nav_context: classic
 ---
 
 # Remove members from Groups and Orgs using the API

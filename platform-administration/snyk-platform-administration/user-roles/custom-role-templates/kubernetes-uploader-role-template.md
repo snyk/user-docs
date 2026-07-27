@@ -1,5 +1,6 @@
 ---
 description: Custom role template for a Kubernetes Uploader, an Organization-level role that publishes Kubernetes Monitor and Insights data to Snyk
+nav_context: agnostic
 ---
 
 # Kubernetes Uploader role template
