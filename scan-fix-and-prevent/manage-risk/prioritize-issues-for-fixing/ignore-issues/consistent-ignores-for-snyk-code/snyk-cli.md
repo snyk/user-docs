@@ -47,36 +47,7 @@ You can use this identifier to [create new ignores using API calls](api.md).
 
 ## Create ignores using the Snyk CLI
 
-You can create an ignore for a Snyk Code finding from the command line using the `snyk ignore create` command. Snyk stores the ignore on the finding and applies it consistently across the CLI, IDE, and other integrations on the next test.
-
-Creating ignores from the command line is an Early Access feature of the Ignore Approval Workflow. It applies to `snyk code test` runs from the CLI and IDE. It does not apply to SCM (stateful) tests run through the Import API, and it does not support CLI Upload projects.
-
-Before you create an ignore, complete the [Setup](#setup) and confirm that Snyk Code Consistent Ignores is enabled for your Group or Organization. Commit and push your code to the remote repository so that reviewers can locate the finding. To identify the finding to ignore, obtain its finding identifier as described in [Access the finding identifier in JSON and SARIF output](#access-the-finding-identifier-in-json-and-sarif-output).
-
-To create an ignore interactively and be prompted for each value, run `snyk ignore create` without options.
-
-To create an ignore non-interactively, provide all required options. Use this form in scripts and CI/CD pipelines:
-
-```
-$ snyk ignore create \
-  --finding-id=<FINDING_ID> \
-  --ignore-type=<not-vulnerable|wont-fix|temporary-ignore> \
-  --reason="<REASON>" \
-  --expiration=<YYYY-MM-DD|never> \
-  --org=<ORG_ID> \
-  --remote-repo-url=<REPOSITORY_URL>
-```
-
-The following table describes the options for `snyk ignore create`.
-
-| Option | Description |
-| --- | --- |
-| `--finding-id=<FINDING_ID>` | Finding to ignore. Required. |
-| `--ignore-type=<TYPE>` | Reason category for the ignore: `not-vulnerable`, `wont-fix`, or `temporary-ignore`. Required. |
-| `--reason=<REASON>` | Human-readable justification for the ignore. Required and must not be empty. |
-| `--expiration=<VALUE>` | Expiration date in `YYYY-MM-DD` format, or `never`. Required in non-interactive mode. |
-| `--org=<ORG_ID>` | Organization that holds the ignore. The value must be a valid Organization ID. |
-| `--remote-repo-url=<REPOSITORY_URL>` | Repository URL for the finding. Snyk detects this automatically when a .git directory is present. Specify it explicitly when the repository has a different Git URL. To verify the URL, run `git remote -v`. |
+You can create an ignore for a Snyk Code finding from the command line using the `snyk ignore create` command. This command is an Early Access feature of the Ignore Approval Workflow and applies to `snyk code test` runs from the CLI and IDE. For the command reference, options, and examples, see [Ignore create](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/ignore-create).
 
 ## Ignores in CI/CD pipelines
 
