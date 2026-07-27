@@ -1688,6 +1688,15 @@
           "type": "string"
         }
       },
+      "EnrichedParam": {
+        "description": "When true, runs additional slower enrichment steps on the AI-BOM.\n",
+        "in": "query",
+        "name": "enriched",
+        "schema": {
+          "default": false,
+          "type": "boolean"
+        }
+      },
       "EnvironmentId": {
         "description": "Unique identifier for an environment",
         "example": "052781a7-17f6-494d-0000-25c8b509abcd",
@@ -61864,6 +61873,9 @@
           },
           {
             "$ref": "#/components/parameters/OrgIdParam"
+          },
+          {
+            "$ref": "#/components/parameters/EnrichedParam"
           }
         ],
         "requestBody": {
@@ -62680,6 +62692,9 @@
           },
           {
             "$ref": "#/components/parameters/OrgIdParam"
+          },
+          {
+            "$ref": "#/components/parameters/EnrichedParam"
           }
         ],
         "requestBody": {
