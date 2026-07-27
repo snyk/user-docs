@@ -87,6 +87,10 @@ Generate exclude policy rules to be used by `snyk iac describe`.
 
 Modify the `.snyk` policy to ignore stated issues.
 
+### [`snyk ignore create`](commands/ignore-create.md)
+
+Create an ignore for a Snyk Code finding using Consistent Ignores. This command is an Early Access feature.
+
 ### [`snyk log4shell`](commands/log4shell.md)
 
 Find Log4Shell vulnerability.
@@ -124,6 +128,8 @@ The following is a list of the sub-commands for Snyk CLI commands. Each sub-comm
 `clear`: subcommand of [`config`](commands/config.md)
 
 `environment`: subcommand of [`config`](commands/config.md)
+
+`create`: subcommand of [`ignore`](commands/ignore-create.md)
 
 ## Configure the Snyk CLI
 
@@ -327,6 +333,15 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--reason=<REASON>`: [`ignore`](commands/ignore.md)
 
 `--path=<PATH_TO_RESOURCE>`: [`ignore`](commands/ignore.md)
+
+## `snyk ignore create` command options
+
+`--finding-id=<FINDING_ID>`\
+`--ignore-type=<not-vulnerable|wont-fix|temporary-ignore>`\
+`--reason=<REASON>`\
+`--expiration=<YYYY-MM-DD|never>`\
+`--org=<ORG_ID>`\
+`--remote-repo-url=<URL>`: [`ignore create`](commands/ignore-create.md)
 
 ## `snyk sbom` and `snyk container sbom` command options
 
