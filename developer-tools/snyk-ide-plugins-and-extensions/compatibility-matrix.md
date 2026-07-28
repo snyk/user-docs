@@ -1,17 +1,13 @@
----
-nav_context: agnostic
-description: The Snyk IDE plugin and Snyk CLI compatibility matrix for versions released in the past 12 months
----
-
 # IDE Plugin Compatibility Matrix
 
 This matrix shows the compatible CLI version range for each IDE plugin version released in the past 12 months.
 
 | Release Date | IDE Plugin | Compatible CLIs |
 |--------------|------------|-----------------|
-| 2026-07-14 | JetBrains 2.22.1 | v1.1306.0 - v1.1306.1 |
-| 2026-07-14 | JetBrains 2.22.0 | v1.1306.0 - v1.1306.1 |
-| 2026-07-13 | Eclipse v3.10.0 (v20260713.165825) | v1.1306.0 - v1.1306.1 |
+| 2026-07-27 | JetBrains 2.22.2 | v1.1306.0 - v1.1306.2 |
+| 2026-07-14 | JetBrains 2.22.1 | v1.1306.0 - v1.1306.2 |
+| 2026-07-14 | JetBrains 2.22.0 | v1.1306.0 - v1.1306.2 |
+| 2026-07-13 | Eclipse v3.10.0 (v20260713.165825) | v1.1306.0 - v1.1306.2 |
 | 2026-04-13 | JetBrains 2.21.0 | v1.1304.0 - v1.1305.2 |
 | 2026-04-13 | Visual Studio 2.9.0 | v1.1304.0 - v1.1305.2 |
 | 2026-04-13 | VSCode v2.31.0 | v1.1304.0 - v1.1305.2 |
