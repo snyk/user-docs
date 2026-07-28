@@ -45,6 +45,10 @@ The finding identifier is included in the JSON and SARIF output of Snyk CLI. To 
 
 You can use this identifier to [create new ignores using API calls](api.md).
 
+## Create ignores using the Snyk CLI
+
+You can create an ignore for a Snyk Code finding from the command line using the `snyk ignore create` command. This command is an Early Access feature of the Ignore Approval Workflow and applies to `snyk code test` runs from the CLI and IDE. For the command reference, options, and examples, visit [Ignore create](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/ignore-create).
+
 ## Ignores in CI/CD pipelines
 
 As ignores are taken into account in Snyk CLI, the same applies when Snyk CLI is integrated into CI/CD pipelines. For example, if a pipeline uses the command `snyk code test –severity-threshold=high` and there are no unignored high-severity results, Snyk CLI will exit with a `0` (success) status code and the build will succeed.
