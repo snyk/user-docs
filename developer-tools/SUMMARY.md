@@ -341,6 +341,7 @@
     * [IaC describe](snyk-cli/commands/iac-describe.md)
     * [IaC update-exclude-policy](snyk-cli/commands/iac-update-exclude-policy.md)
     * [Ignore](snyk-cli/commands/ignore.md)
+    * [Ignore create](snyk-cli/commands/ignore-create.md)
     * [Log4shell](snyk-cli/commands/log4shell.md)
     * [Monitor](snyk-cli/commands/monitor.md)
     * [Policy](snyk-cli/commands/policy.md)
