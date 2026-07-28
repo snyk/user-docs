@@ -10,7 +10,7 @@ description: The snyk ignore create command that creates a Snyk Code ignore
 
 The `snyk ignore create` command creates an ignore for a Snyk Code finding using Snyk Code Consistent Ignores. Snyk stores the ignore on the finding and applies it consistently across the CLI, IDE, and other integrations on the next test.
 
-**Note:** This command applies only to Snyk Code. To ignore Snyk Open Source or Snyk IaC issues, use the [`snyk ignore`](ignore.md) command.
+**Note:** This command applies only to Snyk Code. To ignore Snyk Open Source or Snyk IaC issues, use the [`snyk ignore`](ignore.md) command without the `create` subcommand.
 
 Creating ignores from the command line is an Early Access feature of the Ignore Approval Workflow. It applies to `snyk code test` runs from the CLI and IDE. It does not apply to SCM (stateful) tests run through the Import API, and it does not support CLI Upload projects.
 
