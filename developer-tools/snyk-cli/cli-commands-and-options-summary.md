@@ -89,7 +89,7 @@ Modify the `.snyk` policy to ignore stated issues.
 
 ### [`snyk ignore create`](commands/ignore-create.md)
 
-Create an ignore for a Snyk Code finding using Consistent Ignores. This command is an Early Access feature.
+Create an ignore for a Snyk Code finding using Consistent Ignores for Snyk Code. This command is an Early Access feature.
 
 ### [`snyk log4shell`](commands/log4shell.md)
 
@@ -129,7 +129,7 @@ The following is a list of the sub-commands for Snyk CLI commands. Each sub-comm
 
 `environment`: subcommand of [`config`](commands/config.md)
 
-`create`: subcommand of [`ignore`](commands/ignore-create.md)
+`create`: subcommand of [`ignore`](commands/ignore.md)
 
 ## Configure the Snyk CLI
 

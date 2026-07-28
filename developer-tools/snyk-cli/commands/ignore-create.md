@@ -8,7 +8,7 @@ description: The snyk ignore create command that creates a Snyk Code ignore
 
 `snyk ignore create --finding-id=<FINDING_ID> --ignore-type=<not-vulnerable|wont-fix|temporary-ignore> --reason=<REASON> --expiration=<YYYY-MM-DD|never> [--org=<ORG_ID>] [--remote-repo-url=<URL>] [OPTIONS]`
 
-The `snyk ignore create` command creates an ignore for a Snyk Code finding using Snyk Code Consistent Ignores. Snyk stores the ignore on the finding and applies it consistently across the CLI, IDE, and other integrations on the next test.
+The `snyk ignore create` command creates an ignore for a Snyk Code finding using Consistent Ignores for Snyk Code. Snyk stores the ignore on the finding and applies it consistently across the CLI, IDE, and other integrations on the next test.
 
 **Note:** This command applies only to Snyk Code. To ignore Snyk Open Source or Snyk IaC issues, use the [`snyk ignore`](ignore.md) command without the `create` subcommand.
 
@@ -18,12 +18,12 @@ Creating ignores from the command line is an Early Access feature of the Ignore 
 
 Complete the following before you create an ignore:
 
-* Install Snyk CLI v1.1297.1 or later. See [Install or update the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli).
-* Enable Snyk Code Consistent Ignores for your Group or Organization. See [Consistent Ignores for Snyk Code](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code).
-* Set the Organization that holds the ignores. See [How to select the Organization to use in the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli).
+* Install Snyk CLI v1.1297.1 or later. Visit [Install or update the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/install-the-snyk-cli).
+* Enable Consistent Ignores for Snyk Code for your Group or Organization. Visit [Consistent Ignores for Snyk Code](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code).
+* Set the Organization that holds the ignores. Visit [How to select the Organization to use in the CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli).
 * Commit and push your code to the remote repository so that reviewers can locate the finding.
 
-This command identifies a finding by its finding identifier. To obtain it, run `snyk code test --json` and locate `runs.results[n].fingerprints.snyk/assets/finding/v1` in the output. See [Consistent Ignores for Snyk Code CLI](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/snyk-cli#access-the-finding-identifier-in-json-and-sarif-output).
+This command identifies a finding by its finding identifier. To obtain it, run `snyk code test --json` and locate `runs.results[n].fingerprints.snyk/assets/finding/v1` in the output. Visit [Consistent Ignores for Snyk Code CLI](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/snyk-cli#access-the-finding-identifier-in-json-and-sarif-output).
 
 ## Interactive and non-interactive modes
 
