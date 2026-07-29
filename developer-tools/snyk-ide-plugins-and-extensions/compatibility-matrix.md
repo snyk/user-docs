@@ -4,6 +4,8 @@ This matrix shows the compatible CLI version range for each IDE plugin version r
 
 | Release Date | IDE Plugin | Compatible CLIs |
 |--------------|------------|-----------------|
+| 2026-07-28 | JetBrains 2.22.4 | v1.1306.0 - v1.1306.2 |
+| 2026-07-28 | JetBrains 2.22.3 | v1.1306.0 - v1.1306.2 |
 | 2026-07-27 | JetBrains 2.22.2 | v1.1306.0 - v1.1306.2 |
 | 2026-07-14 | JetBrains 2.22.1 | v1.1306.0 - v1.1306.2 |
 | 2026-07-14 | JetBrains 2.22.0 | v1.1306.0 - v1.1306.2 |
