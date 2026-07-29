@@ -1,3 +1,24 @@
+## 2026-03-25 - Updated 2026-07-29
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- added the new `secrets` enum value to the `data/items/attributes/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added the new `secrets` enum value to the `data/attributes/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added the new `secrets` enum value to the `data/items/attributes/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added the new `secrets` enum value to the `data/attributes/type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
 ---
 nav_context: agnostic
 ---

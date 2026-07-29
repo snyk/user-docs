@@ -1036,6 +1036,80 @@
           }
         }
       },
+      "SecretListIssuesResponse20240123": {
+        "summary": "An example of a list issue response for a Secret issue.",
+        "value": {
+          "data": [
+            {
+              "attributes": {
+                "coordinates": [
+                  {
+                    "representations": [
+                      {
+                        "sourceLocation": {
+                          "file": "src/config.js",
+                          "region": {
+                            "end": {
+                              "column": 50,
+                              "line": 3
+                            },
+                            "start": {
+                              "column": 10,
+                              "line": 3
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "sourceLocation": {
+                          "file": "src/config.js",
+                          "region": {
+                            "end": {
+                              "column": 45,
+                              "line": 12
+                            },
+                            "start": {
+                              "column": 5,
+                              "line": 12
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "created_at": "2022-09-27T20:09:05Z",
+                "effective_severity_level": "high",
+                "ignored": false,
+                "key": "7a3b8e12-4f5c-4d91-b6a2-9c8d0e1f2a3b:4d91b6a2.9c8d0e1f.2a3b7a3b.8e124f5c.f0ecbaa5.18c3080a.b570850e.89112ac5.1a6d2cd5.71413d6f.a924ef28.71cdd50e.d0e1bea5.52c3a80a.1a0c4319.a9127ac5:1",
+                "status": "open",
+                "title": "Hard-coded Generic API Key",
+                "type": "secrets",
+                "updated_at": "2022-09-27T20:09:05Z"
+              },
+              "id": "d5b640e5-d88c-4c17-9bf0-93597b7a1ce2",
+              "relationships": {
+                "organization": {
+                  "data": {
+                    "id": "a3952187-0d8e-45d8-9aa2-036642857b5b",
+                    "type": "organization"
+                  }
+                },
+                "scan_item": {
+                  "data": {
+                    "id": "a3952187-0d8e-45d8-9aa2-036642857b5c",
+                    "type": "project"
+                  }
+                }
+              },
+              "type": "issue"
+            }
+          ],
+          "jsonapi": {
+            "version": "1.0"
+          }
+        }
+      },
       "UpdateSastRuleExtensionRequestDraft": {
         "summary": "Update a draft SAST rule extension",
         "value": {
@@ -2886,7 +2960,7 @@
         "in": "query",
         "name": "type",
         "schema": {
-          "$ref": "#/components/schemas/IssueTypeFilter"
+          "$ref": "#/components/schemas/TypeDef"
         },
         "style": "form"
       },
@@ -4299,6 +4373,9 @@
               },
               "OpenSource": {
                 "$ref": "#/components/examples/OpenSourceListIssuesResponse20240123"
+              },
+              "Secrets": {
+                "$ref": "#/components/examples/SecretListIssuesResponse20240123"
               }
             },
             "schema": {
@@ -17919,20 +17996,6 @@
         "example": "issue",
         "type": "string"
       },
-      "IssueTypeFilter": {
-        "description": "An issue type to filter issues by.",
-        "enum": [
-          "package_vulnerability",
-          "license",
-          "cloud",
-          "code",
-          "custom",
-          "config",
-          "secrets"
-        ],
-        "example": "cloud",
-        "type": "string"
-      },
       "IssuesCountAttributes": {
         "example": {
           "critical": 5,
@@ -28117,7 +28180,8 @@
           "cloud",
           "code",
           "custom",
-          "config"
+          "config",
+          "secrets"
         ],
         "example": "cloud",
         "type": "string"
