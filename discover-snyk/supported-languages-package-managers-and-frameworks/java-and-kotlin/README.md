@@ -62,6 +62,7 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 * Java Standard Edition
 * javalin
 * Jax-RS
+* Jolokia
 * jooq
 {% endcolumn %}
 
@@ -84,10 +85,12 @@ For Java and Kotlin, the following frameworks and libraries are supported:
 * Spongycastle
 * Spring AI
 * Spring boot
+* Spring Cloud Config
 * Spring Web, MVC and JDBC
 * Spring WebFlux
 * Struts
 * Vaadin
+* Vert.x
 * XStream
 
 Kotlin only:
