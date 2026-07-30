@@ -4,6 +4,7 @@
 
 * [Overview](README.md)
 * [Snyk Projects](snyk-platform-administration/snyk-projects/README.md)
+  * [test](scan-with-snyk/snyk-projects/test.md)
   * [Project information](snyk-platform-administration/snyk-projects/project-information.md)
   * [Import log](snyk-platform-administration/snyk-projects/import-log.md)
   * [Project attributes](snyk-platform-administration/snyk-projects/project-attributes.md)
