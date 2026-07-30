@@ -6,7 +6,7 @@ nav_context: agnostic
 # COBOL rules
 
 {% hint style="info" %}
-Code analysis support for COBOL is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/snyk-hierarchy/snyk-preview).
+Code analysis support for COBOL is available with Enterprise plans.
 {% endhint %}
 
 Each rule includes the following information.
