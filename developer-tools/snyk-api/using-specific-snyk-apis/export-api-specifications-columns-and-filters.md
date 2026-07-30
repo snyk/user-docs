@@ -537,8 +537,8 @@ At least one date filter (`introduced` for the `issues` dataset or `updated` for
 | `FINDING_EVENT_ID`   | Unique identifier for the prevention event                                                                 |
 | `GROUP_PUBLIC_ID`    | UUID of the Snyk Group                                                                                     |
 | `ORG_PUBLIC_ID`      | UUID of the Snyk Organization                                                                              |
-| finding\_branch\_key | Uniquely identifies a finding on a specific repository branch                                              |
-| finding\_asset\_key  | Stable per-finding fingerprint that identifies the same finding across scans for the same asset/repository |
+| `FINDING_BRANCH_KEY` | Uniquely identifies a finding on a specific repository branch                                              |
+| `FINDING_ASSET_KEY`  | Stable per-finding fingerprint that identifies the same finding across scans for the same asset/repository |
 | `GIT_REPO`           | Name of the Git repository where the scan was run                                                          |
 | `GIT_BRANCH`         | Branch scanned                                                                                             |
 | `FINDING_TITLE`      | Display title of the finding                                                                               |
