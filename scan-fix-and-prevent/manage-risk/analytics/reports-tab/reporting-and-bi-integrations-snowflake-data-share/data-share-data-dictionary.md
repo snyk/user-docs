@@ -1,6 +1,6 @@
 ---
-description: A data dictionary for the Snyk Data Share Snowflake integration
 nav_context: classic
+description: A data dictionary for the Snyk Data Share Snowflake integration
 ---
 
 # Data Share data dictionary
@@ -356,25 +356,27 @@ Each row represents a single finding event, along with its severity, product, an
 
 Use this data to measure security outcomes, track suppression trends, and understand which teams or repositories are generating or preventing findings before they reach your repository.
 
-| `finding_event_id`   | varchar        | Primary key. Unique identifier for the prevention event.                                                                                         |
-| -------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `group_public_id`    | varchar        | UUID of the Snyk Group that owns this event.                                                                                                     |
-| `org_public_id`      | varchar        | UUID of the Snyk Organization under which the scan was run.                                                                                      |
-| `git_repo`           | varchar        | Name of the Git repository where the scan occurred.                                                                                              |
-| `git_branch`         | varchar        | Branch that was scanned.                                                                                                                         |
-| `finding_title`      | varchar        | Human-readable title of the finding.                                                                                                             |
-| `event_type`         | varchar        | Type of event: `new` (first occurrence), `persisting` (seen in a previous scan), or `fixed` (finding was caught before reaching the repository). |
-| `event_timestamp`    | timestamp\_ntz | UTC timestamp when the prevention event was recorded.                                                                                            |
-| `effective_severity` | varchar        | Computed severity of the finding: `CRITICAL`, `HIGH`, `MEDIUM`, or `LOW`.                                                                        |
-| `product_name`       | varchar        | Snyk product that detected the finding (for example, `Snyk Open Source` or `Snyk Code`).                                                         |
-| `sdlc_stage`         | varchar        | Stage of the developer workflow where the event was captured: `IDE`, `CLI`, `MCP`, or `OTHER`.                                                   |
-| `is_suppressed`      | boolean        | `true` if the finding was suppressed (ignored) at the time of the event.                                                                         |
-| `problem_id`         | varchar        | Snyk vulnerability or rule identifier (for example, `SNYK-JS-LODASH-567746`).                                                                    |
-| `problem_title`      | varchar        | Title of the underlying vulnerability or code rule.                                                                                              |
-| `cve`                | varchar        | CVE identifier associated with the vulnerability, if applicable.                                                                                 |
-| `cwe`                | varchar        | CWE identifier associated with the vulnerability, if applicable.                                                                                 |
-| `test_user_name`     | varchar        | Display name of the developer who triggered the scan.                                                                                            |
-| `test_user_email`    | varchar        | Email address of the developer who triggered the scan.                                                                                           |
-| `__updated_at`       | timestamp\_ntz | When the data share data transformation last updated this record.                                                                                |
+| `finding_event_id`   | varchar        | Primary key. Unique identifier for the prevention event.                                                                                                           |
+| -------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `group_public_id`    | varchar        | UUID of the Snyk Group that owns this event.                                                                                                                       |
+| `org_public_id`      | varchar        | UUID of the Snyk Organization under which the scan was run.                                                                                                        |
+| `finding_branch_key` | varchar        | Uniquely identifies a finding on a specific repository branch. This is the grain used to count distinct findings in prevention reporting (one finding per branch). |
+| `finding_asset_key`  | varchar        | Stable per-finding fingerprint that identifies the same finding across scans for the same asset/repository.                                                        |
+| `git_repo`           | varchar        | Name of the Git repository where the scan occurred.                                                                                                                |
+| `git_branch`         | varchar        | Branch that was scanned.                                                                                                                                           |
+| `finding_title`      | varchar        | Human-readable title of the finding.                                                                                                                               |
+| `event_type`         | varchar        | Type of event: `new` (first occurrence), `persisting` (seen in a previous scan), or `fixed` (finding was caught before reaching the repository).                   |
+| `event_timestamp`    | timestamp\_ntz | UTC timestamp when the prevention event was recorded.                                                                                                              |
+| `effective_severity` | varchar        | Computed severity of the finding: `CRITICAL`, `HIGH`, `MEDIUM`, or `LOW`.                                                                                          |
+| `product_name`       | varchar        | Snyk product that detected the finding (for example, `Snyk Open Source` or `Snyk Code`).                                                                           |
+| `sdlc_stage`         | varchar        | Stage of the developer workflow where the event was captured: `IDE`, `CLI`, `MCP`, or `OTHER`.                                                                     |
+| `is_suppressed`      | boolean        | `true` if the finding was suppressed (ignored) at the time of the event.                                                                                           |
+| `problem_id`         | varchar        | Snyk vulnerability or rule identifier (for example, `SNYK-JS-LODASH-567746`).                                                                                      |
+| `problem_title`      | varchar        | Title of the underlying vulnerability or code rule.                                                                                                                |
+| `cve`                | varchar        | CVE identifier associated with the vulnerability, if applicable.                                                                                                   |
+| `cwe`                | varchar        | CWE identifier associated with the vulnerability, if applicable.                                                                                                   |
+| `test_user_name`     | varchar        | Display name of the developer who triggered the scan.                                                                                                              |
+| `test_user_email`    | varchar        | Email address of the developer who triggered the scan.                                                                                                             |
+| `__updated_at`       | timestamp\_ntz | When the data share data transformation last updated this record.                                                                                                  |
 
 <br>
