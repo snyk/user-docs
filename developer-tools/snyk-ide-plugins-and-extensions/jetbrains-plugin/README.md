@@ -1,6 +1,8 @@
 ---
-description: The Snyk JetBrains plugin for scanning and fixing vulnerabilities as you develop
 nav_context: agnostic
+description: >-
+  The Snyk JetBrains plugin for scanning and fixing vulnerabilities as you
+  develop
 ---
 
 # JetBrains plugin
@@ -18,12 +20,13 @@ Key features:
   * [Open Source Security](https://snyk.io/product/open-source-security-management/): Detects vulnerabilities and license issues in both direct and transitive open-source dependencies. Automated fix suggestions simplify remediation. Explore more in the [Snyk Open Source documentation](https://docs.snyk.io/scan-using-snyk/snyk-open-source).
   * [Code Security](https://snyk.io/product/snyk-code/): Identifies security vulnerabilities in your custom code. Explore more in the [Snyk Code documentation](https://docs.snyk.io/scan-using-snyk/snyk-code).
   * [IaC Security](https://snyk.io/product/infrastructure-as-code-security/): Uncovers configuration issues in your Infrastructure as Code templates (Terraform, Kubernetes, CloudFormation, Azure Resource Manager). Explore more in the [IaC documentation](https://docs.snyk.io/scan-using-snyk/snyk-iac).
+  * Secrets Security: Detect and prevent secrets from being exposed in your code. Explore more in the [Snyk Secrets](https://docs.snyk.io/scan-with-snyk/snyk-secrets) documentation.
 * Broad language and framework support: Snyk Open Source and Snyk Code cover a wide array of package managers, programming languages, and frameworks, with ongoing updates to support the latest technologies. For the most up-to-date information on supported languages, package managers, and frameworks, see the [supported language technologies pages](https://docs.snyk.io/supported-languages-package-managers-and-frameworks).
 
 ## How to install and set up the extension
 
 {% hint style="info" %}
-Snyk recommends always using the latest version of the JetBrains plugin. For information about the versions of JetBrains supported by the JetBrains plugin, see [Snyk IDE plugins and extensions](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions).&#x20;
+Snyk recommends always using the latest version of the JetBrains plugin. For information about the versions of JetBrains supported by the JetBrains plugin, see [Snyk IDE plugins and extensions](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions).
 {% endhint %}
 
 You can use the Snyk JetBrains plugin in the following environments:
