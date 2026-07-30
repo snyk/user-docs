@@ -378,6 +378,12 @@
     * [Set up single sign-on (SSO)](scan-with-snyk/snyk-api-web/managing-account/set-up-single-sign-on-sso-in-snyk-api-web.md)
     * [Generate and use audit log reports](scan-with-snyk/snyk-api-web/managing-account/generate-and-use-audit-log-reports.md)
     * [Enhancing your security with AI](scan-with-snyk/snyk-api-web/managing-account/enhancing-your-security-with-ai.md)
+* [Snyk Secrets](scan-with-snyk/snyk-secrets/README.md)
+  * [Custom RegEx for Secrets](scan-with-snyk/snyk-secrets/custom-regex-for-secrets.md)
+  * [Secrets Pull Requests status checks](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks/secrets-pull-request-checks)
+  * [Secrets scanning in the IDE](scan-with-snyk/snyk-secrets/secrets-scanning-in-the-ide.md)
+  * [Secrets scanning in the SCM](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm)
+  * [Secrets scanning in the Snyk CLI](scan-with-snyk/snyk-secrets/secrets-scanning-in-the-snyk-cli.md)
 
 ## Fix
 
@@ -441,6 +447,7 @@
   * [Configure Pull Request checks](scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
   * [Pull Request experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md)
   * [Analyze PR checks results](scan-with-snyk/pull-requests/pull-request-checks/analyze-pr-checks-results.md)
+  * [Secrets Pull Request checks](prevent/pull-request-checks/secrets-pull-request-checks.md)
   * [Troubleshoot PR checks](scan-with-snyk/pull-requests/pull-request-checks/troubleshoot-pr-checks.md)
 * [Policies](manage-risk/policies/README.md)
   * [The .snyk file](manage-risk/policies/the-.snyk-file.md)

@@ -1,6 +1,8 @@
 ---
-description: How to use Snyk to scan and secure your code, dependencies, containers, and infrastructure as code
 nav_context: agnostic
+description: >-
+  How to use Snyk to scan and secure your code, dependencies, containers, and
+  infrastructure as code
 ---
 
 # Overview
@@ -11,13 +13,14 @@ You can use Snyk to scan and secure your codebase and cloud infrastructure confi
 
 Snyk supports scanning methods that correspond to Snyk products. Choose the right scanning method for the job you want to do, to find and fix issues not only early in the Software Development Life Cycle, but also after your web application or API is live.
 
-* [Snyk Open Source](scan-with-snyk/snyk-open-source/): scan your open-source libraries for vulnerabilities and license issues.\
+* Snyk Open Source: scan your open-source libraries for vulnerabilities and license issues.\
   For more information, see [Open Source Security Explained](https://snyk.io/series/open-source-security/).
-* [Snyk Code](scan-with-snyk/snyk-code/): scan your code for security vulnerabilities using source code analysis.\
+* Snyk Code: scan your code for security vulnerabilities using source code analysis.\
   For more information, see [Exploring the advanced technologies behind Snyk Code](https://snyk.io/blog/advanced-technologies-behind-snyk-code/).
-* [Snyk Container](scan-with-snyk/snyk-container/): scan for container image and workload vulnerabilities.
-* [Snyk Infrastructure as Code: ](scan-with-snyk/snyk-iac/)scan for issues in your cloud infrastructure configurations, before and after deployment.
-* [Snyk API & Web](https://snyk.io/product/dast-api-web/): discover and test the security of all your APIs and web apps, including those AI-generated. See [Snyk API & Web Docs](./scan-with-snyk/snyk-api-web/README.md) and [Snyk API & Web Developers documentation](https://developers.probely.com/).
+* Snyk Secrets: scan for hard-coded secrets, credentials, and API keys in your code across the IDE, CLI, SCM, and pull request checks.
+* Snyk Container: scan for container image and workload vulnerabilities.
+* Snyk Infrastructure as Code: scan for issues in your cloud infrastructure configurations, before and after deployment.
+* [Snyk API & Web](https://snyk.io/product/dast-api-web/): discover and test the security of all your APIs and web apps, including those AI-generated. See Snyk API & Web Docs and [Snyk API & Web Developers documentation](https://developers.probely.com/).
 
 ## Run pull request checks
 
@@ -54,7 +57,7 @@ The following resources are available for all users:
 * Using [Git integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations), you can improve security in your Git repositories for both your code and deployed applications.
 * Using [CI/CD integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations), you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
 
-### Monitor your code in production
+#### Monitor your code in production
 
 Before integrating your code into production, use the [`snyk monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) or [`snyk container monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-monitor) CLI command to identify issues introduced into open-source and container Projects, monitoring these Projects for vulnerabilities before pushing them into production.
 
