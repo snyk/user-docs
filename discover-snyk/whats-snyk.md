@@ -12,7 +12,7 @@ Snyk is a platform that allows you to scan, prioritize, and fix security vulnera
 To manage and govern the security program, Snyk gives security teams immediate visibility into coverage and business context across all application assets, smart policies to automate and scale in large environments, and analytics and reporting to measure the performance of your security program.
 
 * Snyk Open Source and Snyk Code: see Supported languages, package managers, and frameworks.
-* Snyk Secrets: see [Snyk Secrets](https://docs.snyk.io/scan-with-snyk/snyk-secrets).
+* Snyk Secrets: see [Snyk Secrets](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-secrets).
 * Snyk Container: see [Supported operating system distributions](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container).
 * Snyk Infrastructure as Code: see [Supported IaC and cloud providers](https://docs.snyk.io/scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources).
 * Snyk Essentials: see [Snyk Essentials](https://docs.snyk.io/scan-with-snyk/snyk-essentials).
