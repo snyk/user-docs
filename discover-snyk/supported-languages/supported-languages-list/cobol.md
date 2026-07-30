@@ -1,5 +1,5 @@
 ---
-description: Snyk support for COBOL with Snyk Code on Enterprise plans, including CICS frameworks and supported dialects
+description: Snyk support for COBOL with Snyk Code, including CICS frameworks and supported dialects
 nav_context: agnostic
 ---
 
@@ -10,10 +10,6 @@ COBOL is supported only for Snyk Code.
 {% endhint %}
 
 ## COBOL for Snyk Code
-
-{% hint style="info" %}
-Code analysis support for COBOL is available with Enterprise plans.
-{% endhint %}
 
 For an overview of the supported security rules, visit [COBOL rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/cobol-rules).
 

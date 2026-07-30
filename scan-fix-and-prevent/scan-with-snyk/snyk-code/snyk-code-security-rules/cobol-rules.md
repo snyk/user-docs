@@ -5,10 +5,6 @@ nav_context: agnostic
 
 # COBOL rules
 
-{% hint style="info" %}
-Code analysis support for COBOL is available with Enterprise plans.
-{% endhint %}
-
 Each rule includes the following information.
 
 * **Rule Name**: The Snyk name of the rule.
