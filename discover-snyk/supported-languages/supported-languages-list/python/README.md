@@ -54,6 +54,7 @@ For Python, the following frameworks and libraries are supported:
 * grpcio
 * huggingface\_hub
 * httpx
+* LangChain
 * ldap3
 * libxml
 * lxml
