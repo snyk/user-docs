@@ -86,6 +86,14 @@ For Python, the following frameworks and libraries are supported:
 {% endcolumn %}
 {% endcolumns %}
 
+### Serverless support
+
+Snyk Code analyzes Python functions running on AWS Lambda. Handlers are resolved from AWS SAM and Serverless Framework configuration files, so the function entry point is analyzed as application code rather than skipped.
+
+Event data reaching a handler from an Amazon SQS trigger is treated as a taint source, so injection, path-traversal, and related findings reflect data entering the function from the queue.
+
+Support is currently limited to SQS triggers. Other AWS event sources are not yet modeled as taint sources.
+
 ### Directory layout
 
 Snyk Code relies on Python projects to follow a standard directory layout for accurate analysis. Specifically, Snyk Code expects Projects to be compatible with [`setuptools` automatic discovery](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#auto-discovery), which identifies packages and modules automatically based on the directory structure. This includes support for `init.py` files to ensure that symbols defined in package initialization files are imported correctly, leading to a more accurate and deeper analysis.
