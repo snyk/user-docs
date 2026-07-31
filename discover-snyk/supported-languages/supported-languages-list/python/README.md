@@ -41,6 +41,7 @@ For Python, the following frameworks and libraries are supported:
 * aiofiles
 * argparse
 * anthropic
+* AWS Lambda
 * bottle
 * CherryPy
 * Django
