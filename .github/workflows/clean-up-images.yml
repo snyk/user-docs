@@ -1,0 +1,101 @@
+name: Clean up doc images
+
+# Renames generically-named images (1.png, "Screenshot ….png", …) to
+# descriptive, caption-derived names — and deletes images that nothing
+# references — then opens a PR for human review. Never pushes to main directly.
+#
+# Triggers:
+#   - workflow_dispatch: run on demand (use this for the first big cleanup)
+#   - schedule: once a month, to keep newly-added images tidy
+on:
+  workflow_dispatch:
+    inputs:
+      sections:
+        description: "Limit to these top-level dirs (comma-separated, e.g. developer-tools). Blank = all (minus excluded)."
+        type: string
+        default: ""
+      exclude_sections:
+        description: "Top-level dirs to skip (comma-separated). Defaults to 'docs', which is managed separately."
+        type: string
+        default: "docs"
+      delete_orphans:
+        description: "Delete unreferenced (orphan) images"
+        type: boolean
+        default: true
+  schedule:
+    - cron: "0 6 1 * *" # 06:00 UTC on the 1st of each month
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  clean-up-images:
+    name: clean-up-images
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scan + build mapping/report
+        env:
+          SECTIONS: ${{ github.event.inputs.sections }}
+          EXCLUDE: ${{ github.event.inputs.exclude_sections }}
+        run: |
+          # `docs` is excluded by default (managed separately). On scheduled runs
+          # github.event.inputs is empty, so fall back to the default here too.
+          EXCLUDE="${EXCLUDE:-docs}"
+          python3 scripts/rename_images.py \
+            ${SECTIONS:+--sections "$SECTIONS"} \
+            ${EXCLUDE:+--exclude-sections "$EXCLUDE"} | tee /tmp/scan.log
+
+      - name: Apply (rename + delete orphans)
+        id: apply
+        run: |
+          # scheduled runs always delete orphans; manual runs honor the toggle
+          DELETE_FLAG="--delete-orphans"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && \
+             [ "${{ github.event.inputs.delete_orphans }}" = "false" ]; then
+            DELETE_FLAG=""
+          fi
+          python3 scripts/rename_images.py --apply $DELETE_FLAG | tee /tmp/apply.log
+          echo 'SUMMARY<<EOF' >> "$GITHUB_OUTPUT"
+          tail -n 1 /tmp/apply.log >> "$GITHUB_OUTPUT"
+          echo 'EOF' >> "$GITHUB_OUTPUT"
+
+      - name: Upload review report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: image-rename-report
+          path: |
+            image-rename-report.md
+            image-rename-mapping.csv
+          if-no-files-found: ignore
+
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: rename generic doc images and remove orphans"
+          title: "chore: clean up doc image names and remove orphan images"
+          body: |
+            Automated image cleanup from `scripts/rename_images.py`.
+
+            **${{ steps.apply.outputs.SUMMARY }}**
+
+            What this PR does:
+            - Renames generically-named images (`1.png`, `Screenshot ….png`, `unnamed.png`, …) to descriptive, **caption-derived** names, and rewrites every `.gitbook/assets/` reference in the docs to match.
+            - Deletes images that nothing in the repo references (orphans).
+            - The `docs` section is **excluded by default** (managed separately). Override via the `exclude_sections` input on a manual run.
+
+            **Please review before merging:**
+            - Spot-check a few renames against the rendered pages — names come from each image's caption/alt text.
+            - Confirm the deleted images really are unused (they were unreferenced at scan time and re-verified at apply time, but a brand-new image added in the same window could look like an orphan).
+            - The full report (every rename, every deletion, caption sources, and any low-relevance names) is attached to this workflow run as the **image-rename-report** artifact.
+          branch: chore/image-cleanup
+          base: main
+          sign-commits: true
+          delete-branch: true

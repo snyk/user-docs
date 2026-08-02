@@ -23,6 +23,10 @@ Before working on larger contributions, [contact support](https://support.snyk.i
 
 If you want to add an integration to Snyk, [apply to become a Snyk partner](https://partners.snyk.io/English/register_email.aspx).
 
+### Maintenance scripts
+
+The [`scripts/`](scripts/) directory holds repository maintenance tooling. See [scripts/README.md](scripts/README.md) for the image cleanup tool, which gives `.gitbook/assets/` images descriptive, caption-derived names and removes unreferenced ones (run monthly, or on demand, as a reviewable PR).
+
 ## Security
 
 For any security issues or concerns, go to [SECURITY.md](SECURITY.md).
