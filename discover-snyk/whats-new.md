@@ -9,6 +9,36 @@ nav_context: new
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## July 2026
+
+### Evo by Snyk
+
+* Evo by Snyk is now public. Visit [Overview of Evo by Snyk](https://docs.snyk.io/agent-security/evo-by-snyk/overview) for more details.
+* Agentic Development Security (ADS) is now GA, including Agent Behavior Governance, AI-SPM, and platform surfaces such as Evo Chat and Inventory. Visit [Agent Behavior Governance](https://docs.snyk.io/agent-security/evo-by-snyk/agentic-development-security-ads/agent-behavior-governance) for more details.
+
+### Snyk Code
+
+* OWASP and CWE mappings expanded, and the Snyk Code security rule pages now map each rule to the OWASP Top 10 2025, OWASP API Top 10 (2023), and OWASP Mobile Top 10 (2024), and note CWE Top 25 (MITRE) inclusion. Visit [Snyk Code security rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules) for more details.
+* Rule Extensions is now GA, and impact testing is available in the Snyk Web UI, in addition to the API. Visit [Rule Extensions](https://docs.snyk.io/scan-with-snyk/snyk-code/rule-extensions) for more details.
+
+### Snyk Secrets
+
+* Snyk Secrets is now GA, with documentation across the Snyk CLI, SCM integrations, and the VS Code, Visual Studio, Eclipse, and JetBrains IDE plugins. Visit [Secrets scanning in the SCM](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm) for more details.
+* The `snyk secrets test` command is now available for scanning secrets from the command line. Visit [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/secrets-scanning-in-the-snyk-cli) for more details.
+
+### Snyk API & Web
+
+* Bruno collections are now GA. You can now create an API target from a Bruno collection and configure its authentication. Visit [Configure an API target with a Bruno collection](https://docs.snyk.io/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-an-api-target-with-a-bruno-collection) for more details.
+* Automated target authentication configuration is now documented on a dedicated page. Visit [Automate authentication configuration](https://docs.snyk.io/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/automate-authentication-configuration) for more details.
+
+### Other updates
+
+* Unified IDE configuration is now GA across the Snyk IDE plugins. Visit [Unified IDE configuration dialog](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/unified-ide-configuration-dialog) for more details.
+* Snyk Container now reports vulnerabilities in the Go standard library, identified from the Go version recorded in the binary. Visit [Application vulnerabilities in Snyk Container and Snyk Open Source](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works/application-vulnerabilities-in-snyk-container-and-snyk-open-source) for more details.
+* Notification emails for new vulnerabilities are now off by default, and a new section documents notification precedence rules. Visit [Manage notifications](https://docs.snyk.io/platform-administration/snyk-platform-administration/manage-notifications) for more details.
+* Snowflake Data Share added two fields to the prevention events dataset, `finding_branch_key` and `finding_asset_key`. Visit [Data share data dictionary](https://docs.snyk.io/manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary) for more details.
+
+
 ## June 2026
 
 ### Snyk CLI
