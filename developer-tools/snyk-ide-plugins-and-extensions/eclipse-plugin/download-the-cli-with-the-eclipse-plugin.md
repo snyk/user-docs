@@ -3,6 +3,8 @@ description: How the Eclipse plugin automatically downloads the Snyk CLI it uses
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Download the CLI with the Eclipse plugin
 
 When you install the Eclipse plugin and open a file that Snyk supports, the [Snyk CLI](../../snyk-cli/) is downloaded automatically unless you have opted out. The [Language Server](../snyk-language-server/) is also downloaded. The Language Server works with the CLI to give you an optimal Eclipse experience.

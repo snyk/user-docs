@@ -3,6 +3,8 @@ description: How to run a Snyk scan in the JetBrains plugin once it is configure
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Run an analysis with the JetBrains plugin
 
 {% hint style="info" %}

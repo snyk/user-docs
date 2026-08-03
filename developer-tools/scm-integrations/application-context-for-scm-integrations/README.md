@@ -3,6 +3,8 @@ description: How application context enriches Snyk SCM integrations with interco
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Application context for SCM integrations
 
 ## What is application context?

@@ -3,6 +3,8 @@ description: How to view Snyk security vulnerabilities and code quality results 
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # View analysis results from Visual Studio Code extension
 
 ## Overview of results

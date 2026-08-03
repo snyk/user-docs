@@ -3,6 +3,8 @@ description: How to authenticate to Snyk from third-party developer tools using 
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Authentication for third-party tools
 
 When you work with Snyk from within any third-party tool, Snyk requires authentication in order to initiate its processes.

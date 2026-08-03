@@ -3,6 +3,8 @@ description: How to send Snyk findings to Google Security Command Center, in Ear
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Google Security Command Center
 
 {% hint style="info" %}

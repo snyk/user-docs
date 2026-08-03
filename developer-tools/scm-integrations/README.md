@@ -3,6 +3,8 @@ description: 'How Snyk SCM integrations add security at each stage: importing a 
 nav_context: classic
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # SCMs
 
 Snyk supports SCM integrations that allow you to implement security at each point in your workflow: importing a Project, writing your code, and building and deployment. Snyk can also [automatically create pull requests (PRs)](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/snyk-pull-or-merge-requests/enable-automatic-upgrade-prs-for-new-dependency-upgrades) on your behalf to upgrade your dependencies based on scan results, compatible with a variety of SCM integrations.

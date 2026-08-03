@@ -3,6 +3,8 @@ description: How to resolve Snyk IDE plugin scan failures from .exe download blo
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # IDE plugin scan fails on Windows systems with .exe download blocking
 
 ## **Problem**

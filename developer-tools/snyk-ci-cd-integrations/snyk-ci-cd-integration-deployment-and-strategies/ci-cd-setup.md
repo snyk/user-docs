@@ -3,6 +3,8 @@ description: How to set up Snyk in a CI/CD pipeline, including the configuration
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # CI/CD setup
 
 ## Prerequisites for CI/CD

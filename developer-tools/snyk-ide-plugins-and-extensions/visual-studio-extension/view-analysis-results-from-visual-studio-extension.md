@@ -3,6 +3,8 @@ description: How to view and filter Snyk vulnerabilities in the Visual Studio ex
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # View analysis results from Visual Studio extension
 
 ## Issues display in the Visual Studio extension
