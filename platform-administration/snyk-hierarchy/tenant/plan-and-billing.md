@@ -3,6 +3,8 @@ description: How to view your Snyk plan and billing details on the Your Plan pag
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Plan and billing
 
 ## Your Plan

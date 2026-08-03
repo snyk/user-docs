@@ -3,6 +3,8 @@ description: Workflow diagrams showing the steps the snyk-broker-config tool aut
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Universal Broker workflow diagrams
 
 The following workflow diagrams illustrate the steps that are implemented in the `snyk broker config` tool when you use the commands to automate. The same workflows are implemented when you use the API.

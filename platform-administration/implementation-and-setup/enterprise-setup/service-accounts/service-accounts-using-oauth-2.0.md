@@ -3,6 +3,8 @@ description: How to create and use Snyk service accounts with OAuth 2.0, availab
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Service accounts using OAuth 2.0
 
 {% hint style="info" %}

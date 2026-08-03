@@ -3,6 +3,8 @@ description: Prerequisites and steps to install and configure Snyk Broker for Ar
 nav_context: classic
 ---
 
+{% include "../../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Artifactory Repository - prerequisites and steps to install and configure Broker
 
 {% hint style="info" %}

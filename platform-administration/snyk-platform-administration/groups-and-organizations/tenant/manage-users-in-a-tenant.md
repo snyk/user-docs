@@ -3,6 +3,8 @@ description: How to manage members of a Snyk Tenant, available on Enterprise pla
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Manage users in a Tenant
 
 {% hint style="info" %}
