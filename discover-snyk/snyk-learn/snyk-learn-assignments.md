@@ -3,6 +3,8 @@ description: How Snyk Learn assignments let admins assign, track, and manage dev
 nav_context: classic
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Learn assignments
 
 {% hint style="info" %}

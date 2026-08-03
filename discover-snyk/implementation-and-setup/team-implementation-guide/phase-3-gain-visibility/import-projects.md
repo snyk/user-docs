@@ -3,6 +3,8 @@ description: How to import Projects into Snyk using an SCM integration or the Sn
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Import Projects
 
 Depending on the integrations you have configured, and the language / package managers in your tech stack, you can import Projects into Snyk using:

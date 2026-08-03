@@ -3,6 +3,8 @@ description: How to confirm your Snyk license is applied correctly to your Organ
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Validate your Snyk plan
 
 Confirm your Snyk license has been applied correctly. Navigate to your Organization by clicking the Organization name on the left menu and click **Settings**. Confirm the license has been applied to this Organization by reviewing Usage, Plans, and Billing. Tests should be unlimited for the products purchased, and a Team plan should be indicated.
