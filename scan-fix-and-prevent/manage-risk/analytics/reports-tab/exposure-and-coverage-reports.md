@@ -3,6 +3,8 @@ nav_context: classic
 description: The Exposure and coverage reports in Snyk Analytics, including the Asset Dashboard, Issues Detail, and Risk Exposure reports
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Exposure and coverage reports
 
 The Exposure and coverage reports section includes the following reports:

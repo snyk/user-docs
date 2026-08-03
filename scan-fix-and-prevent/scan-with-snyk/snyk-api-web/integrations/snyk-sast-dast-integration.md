@@ -3,6 +3,8 @@ description: How to integrate Snyk SAST and Snyk API and Web DAST findings
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk SAST/DAST integration
 
 This guide explains how to set up and use the static application security testing (SAST) and dynamic application security testing (DAST) integration to correlate findings from Snyk API & Web (DAST) with your static analysis results in Snyk (SAST).

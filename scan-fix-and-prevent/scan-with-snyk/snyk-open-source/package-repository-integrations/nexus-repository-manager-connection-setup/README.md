@@ -3,6 +3,8 @@ description: How to connect Snyk to a Nexus Repository Manager
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Nexus repository manager connection setup
 
 {% hint style="info" %}

@@ -3,6 +3,8 @@ description: How the deployed risk factor affects Snyk issue prioritization
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Risk factor: deployed
 
 Any deployed code increases the risk of exploitation of your application and business.

@@ -3,6 +3,8 @@ description: How to add a target for Snyk API and Web scanning
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Add a target
 
 Add a target to define the scope and behavior of security scans for your web application, website, or API.

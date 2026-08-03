@@ -3,6 +3,8 @@ description: How to remove an imported repository from a Project
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Remove imported repository from a Project
 
 If you do not want Snyk to continue testing one or more of your imported repositories, you can do one of the following:

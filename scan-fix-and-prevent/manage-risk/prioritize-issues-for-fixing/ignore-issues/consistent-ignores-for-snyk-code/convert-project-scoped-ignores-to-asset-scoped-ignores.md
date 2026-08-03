@@ -3,6 +3,8 @@ description: How to convert Project-scoped ignores to asset-scoped ignores for S
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Convert Project-scoped ignores to asset-scoped ignores
 
 ## Conversion setup

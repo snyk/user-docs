@@ -3,6 +3,8 @@ description: How to pause Snyk API and Web scans
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Pause scans
 
 You can pause and resume scans on demand and automatically using blackout periods.

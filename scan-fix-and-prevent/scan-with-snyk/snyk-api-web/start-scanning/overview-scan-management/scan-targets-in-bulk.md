@@ -3,6 +3,8 @@ description: How to scan Snyk API and Web targets in bulk
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Scan targets in bulk
 
 When managing scans, you can run scan actions for multiple targets in bulk instead of individually.

@@ -3,6 +3,8 @@ description: How to integrate Snyk API and Web with GitLab CI/CD
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with GitLab CI/CD
 
 This guide provides step-by-step instructions for integrating Snyk API & Web into your GitLab CI/CD pipelines.

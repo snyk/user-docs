@@ -3,6 +3,8 @@ description: How to integrate Snyk with Sysdig to prioritize running container v
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with Sysdig
 
 To enhance its capabilities when detecting workload information, Snyk has partnered with Sysdig. The integration enriches the workload issues that Snyk detects with the runtime data provided by Sysdig.

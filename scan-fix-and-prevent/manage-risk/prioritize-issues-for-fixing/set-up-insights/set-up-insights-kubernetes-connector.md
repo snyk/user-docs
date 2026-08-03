@@ -3,6 +3,8 @@ description: How to set up the Kubernetes connector for Snyk Insights
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Set up Insights: Kubernetes connector
 
 ## What is Kubernetes connector?

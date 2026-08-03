@@ -3,6 +3,8 @@ description: How the Snyk Artifactory Gatekeeper Plugin blocks vulnerable packag
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Artifactory Gatekeeper Plugin
 
 {% hint style="info" %}

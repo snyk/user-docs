@@ -3,6 +3,8 @@ description: How to integrate Snyk API and Web with Jira Cloud
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with Jira Cloud
 
 You can connect Snyk API & Web with either Jira Cloud or your own Jira Server instance. This gives you two-way synchronization of your findings with Jira. Snyk sends a reported finding to Jira, and as soon as the finding is closed, Snyk triggers a retest. If the finding is fixed, the Jira issue remains closed. Otherwise, Snyk reopens it.

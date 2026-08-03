@@ -3,6 +3,8 @@ description: How the Snyk Risk Score prioritizes issues, in Early Access
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Risk Score
 
 {% hint style="info" %}

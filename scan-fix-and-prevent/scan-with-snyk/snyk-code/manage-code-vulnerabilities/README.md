@@ -3,6 +3,8 @@ description: How to manage code vulnerabilities found by Snyk Code
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Manage code vulnerabilities
 
 ## Prerequisites for managing code vulnerabilities in Snyk Web UI

@@ -3,6 +3,8 @@ description: How to integrate Snyk API and Web with Jenkins
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with Jenkins
 
 Configure a Jenkins CI/CD pipeline to scan your application for vulnerabilities.

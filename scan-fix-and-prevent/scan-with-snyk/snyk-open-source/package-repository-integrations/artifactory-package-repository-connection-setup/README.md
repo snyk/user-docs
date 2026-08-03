@@ -3,6 +3,8 @@ description: How to connect Snyk to an Artifactory package repository
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Artifactory package repository connection setup
 
 {% hint style="info" %}

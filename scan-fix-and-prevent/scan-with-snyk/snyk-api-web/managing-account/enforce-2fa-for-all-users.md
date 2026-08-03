@@ -3,6 +3,8 @@ description: How to enforce two-factor authentication for all Snyk API and Web u
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Enforce 2FA for all users
 
 Learn how to enforce two-factor authentication (2FA) for all users of your Snyk API & Web account.

@@ -3,6 +3,8 @@ description: How to troubleshoot domain verification with DNS in Snyk API and We
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Troubleshoot domain verification with DNS
 
 For Snyk API & Web to run full scans on your target, you must verify its domain. Visit [Verify domain ownership](../../configure-targets/verify-domain-ownership/) to learn why domain verification is required.

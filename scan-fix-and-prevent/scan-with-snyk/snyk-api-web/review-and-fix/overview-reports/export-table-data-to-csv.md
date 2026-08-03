@@ -3,6 +3,8 @@ description: How to export table data to CSV in Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Export table data to CSV
 
 Whether you are performing a deep-dive audit or preparing a presentation for stakeholders, getting your data into your own workflow should be seamless.

@@ -3,6 +3,8 @@ description: The prevention reports in Snyk Analytics
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Prevention reports
 
 The Prevention reports section includes the following reports:

@@ -3,6 +3,8 @@ description: How to troubleshoot domain verification with a meta tag in Snyk API
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Troubleshoot domain verification with meta tag
 
 For Snyk API & Web to run full scans, you must verify your domains. Visit [Verify domain ownership](../../configure-targets/verify-domain-ownership/) to learn why domain verification is required.

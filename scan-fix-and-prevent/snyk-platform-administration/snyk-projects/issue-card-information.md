@@ -3,6 +3,8 @@ description: The information shown on Snyk issue cards
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Issue card information
 
 Issue cards appear on the details page for a Project. You can use available options to do the following:

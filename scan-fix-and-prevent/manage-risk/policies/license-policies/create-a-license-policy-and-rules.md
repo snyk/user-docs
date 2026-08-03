@@ -3,6 +3,8 @@ description: How to create a Snyk license policy and its rules
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Create a license policy and rules
 
 {% hint style="info" %}

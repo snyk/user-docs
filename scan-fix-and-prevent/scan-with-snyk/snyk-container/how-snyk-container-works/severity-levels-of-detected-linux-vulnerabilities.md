@@ -3,6 +3,8 @@ description: How Snyk assigns severity levels to detected Linux vulnerabilities
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Severity levels of detected Linux vulnerabilities
 
 When determining the [severity level](../../../manage-risk/prioritize-issues-for-fixing/severity-levels.md) of a Linux vulnerability (Low, Medium, High, Critical), Snyk Container considers multiple factors:

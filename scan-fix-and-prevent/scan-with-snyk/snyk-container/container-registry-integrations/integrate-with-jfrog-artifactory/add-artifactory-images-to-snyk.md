@@ -3,6 +3,8 @@ description: How to add JFrog Artifactory images to Snyk
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Add Artifactory images to Snyk
 
 Snyk tests and monitors your Artifactory container images by evaluating the tags in your repositories.

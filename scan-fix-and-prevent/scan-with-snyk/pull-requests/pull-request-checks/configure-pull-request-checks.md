@@ -3,6 +3,8 @@ nav_context: classic
 description: How to configure Snyk Pull Request checks, including prerequisites, supported integrations, and the scans they run
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure Pull Request checks
 
 {% hint style="info" %}

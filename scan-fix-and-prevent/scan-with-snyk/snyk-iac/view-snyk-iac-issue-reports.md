@@ -3,6 +3,8 @@ description: How to view Snyk IaC issue reports
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # View Snyk IaC issue reports
 
 Set the **Issue Type** filter on [Snyk reports](../../manage-risk/analytics/reports-tab/#snyk-reporting-filters) to **Configuration** to view issues in your IaC configuration files.

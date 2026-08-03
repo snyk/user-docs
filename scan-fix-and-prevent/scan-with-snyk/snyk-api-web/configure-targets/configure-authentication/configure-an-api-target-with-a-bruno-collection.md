@@ -3,6 +3,8 @@ description: How to configure a Snyk API and Web target using a Bruno Collection
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure an API target with a Bruno Collection
 
 Use Bruno Collections to define API endpoints for scanning with Snyk API & Web.

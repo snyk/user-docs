@@ -3,6 +3,8 @@ description: How to connect Snyk to an Artifactory registry for npm
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Artifactory Registry for npm
 
 {% hint style="info" %}

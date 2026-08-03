@@ -3,6 +3,8 @@ description: How to configure authentication for a Snyk API and Web scan that us
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure Bruno Collection Authentication
 
 Configure authentication to scan an API using a Bruno collection.

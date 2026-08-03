@@ -3,6 +3,8 @@ description: How to view, create, and modify Snyk policies
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # View, create, and modify policies
 
 ## View policies

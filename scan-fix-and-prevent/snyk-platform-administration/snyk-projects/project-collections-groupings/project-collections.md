@@ -3,6 +3,8 @@ description: How to use Project collections to group related Projects
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Project collections
 
 On this page you will find information about how to create and use Project collections:

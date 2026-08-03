@@ -3,6 +3,8 @@ description: How Snyk policies automate triage, prioritization, and governance
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Policies
 
 {% hint style="info" %}

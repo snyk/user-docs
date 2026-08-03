@@ -3,6 +3,8 @@ description: How to configure the AWS provider for Snyk IaC drift detection
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure AWS provider
 
 ## Authentication for AWS provider

@@ -3,6 +3,8 @@ description: How to configure signed requests for Snyk API and Web targets
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure signed requests
 
 Configure signed requests to ensure data integrity and authenticity for your API targets in Snyk API & Web.
