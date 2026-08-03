@@ -13587,6 +13587,32 @@
                                                     "unknown"
                                                   ],
                                                   "type": "string"
+                                                },
+                                                "reviewed_at": {
+                                                  "format": "date-time",
+                                                  "type": "string"
+                                                },
+                                                "reviewed_by": {
+                                                  "properties": {
+                                                    "email": {
+                                                      "description": "Email of the reviewer",
+                                                      "type": "string"
+                                                    },
+                                                    "id": {
+                                                      "description": "User ID of the reviewer",
+                                                      "format": "uuid",
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "description": "Name of the reviewer",
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "name"
+                                                  ],
+                                                  "type": "object"
                                                 }
                                               },
                                               "required": [
@@ -13761,6 +13787,32 @@
                                                     "unknown"
                                                   ],
                                                   "type": "string"
+                                                },
+                                                "reviewed_at": {
+                                                  "format": "date-time",
+                                                  "type": "string"
+                                                },
+                                                "reviewed_by": {
+                                                  "properties": {
+                                                    "email": {
+                                                      "description": "Email of the reviewer",
+                                                      "type": "string"
+                                                    },
+                                                    "id": {
+                                                      "description": "User ID of the reviewer",
+                                                      "format": "uuid",
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "description": "Name of the reviewer",
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "name"
+                                                  ],
+                                                  "type": "object"
                                                 }
                                               },
                                               "required": [
