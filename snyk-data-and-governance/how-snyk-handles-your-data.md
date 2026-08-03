@@ -3,6 +3,8 @@ description: How Snyk accesses, transfers, and stores your data as a developer s
 nav_context: classic
 ---
 
+{% include ".gitbook/includes/new-navigation-banner.md" %}
+
 # How Snyk handles your data
 
 Snyk is a developer security platform designed to place the utmost importance on data security. This document aims to provide you with transparency as to how and what data is accessed, transferred, and stored by Snyk in connection with our services.
