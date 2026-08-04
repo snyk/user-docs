@@ -3,6 +3,8 @@ description: How to manage credentials for Snyk API and Web targets
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Manage credentials
 
 Manage and rotate authentication credentials securely across your Snyk API & Web targets.

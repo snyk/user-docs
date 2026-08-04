@@ -3,6 +3,8 @@ nav_context: classic
 description: A data dictionary for the Snyk Data Share Snowflake integration
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Data Share data dictionary
 
 Snyk Data Share is a comprehensive dataset encompassing various data pillars that support a wide range of use cases. You can use this dataset to present key security metrics such as issue backlog, aging, MTTR, SLA compliance, and test coverage, as well as to prioritize issues based on different factors, such as risk score, severity, CVSS, EPSS, and many more.

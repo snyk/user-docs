@@ -3,6 +3,8 @@ description: How to create custom rules for Snyk IaC
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # IaC custom rules
 
 {% hint style="info" %}

@@ -3,6 +3,8 @@ description: How to set up Snyk Insights to customize risk prioritization
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Set up Insights
 
 ## Prerequisites

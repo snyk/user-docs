@@ -3,6 +3,8 @@ description: How Snyk Repo Content Sync keeps repository content current
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk Repo Content Sync
 
 {% hint style="info" %}

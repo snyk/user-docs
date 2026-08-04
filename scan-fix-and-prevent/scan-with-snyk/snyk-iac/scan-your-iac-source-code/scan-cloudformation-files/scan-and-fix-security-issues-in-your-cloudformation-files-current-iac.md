@@ -3,6 +3,8 @@ description: How to scan and fix security issues in CloudFormation files with Sn
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Scan and fix security issues in your CloudFormation files
 
 Snyk scans CloudFormation code for misconfigurations and security issues. After configuration files are scanned, Snyk reports on any misconfigurations based on the settings that administrators implement and makes recommendations for fixes accordingly.

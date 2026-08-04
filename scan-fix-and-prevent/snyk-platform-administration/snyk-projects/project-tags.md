@@ -3,6 +3,8 @@ description: How to use Project tags to organize and filter Projects
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Project tags
 
 {% hint style="info" %}

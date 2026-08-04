@@ -3,6 +3,8 @@ description: How to generate and use audit log reports in Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Generate and use audit log reports
 
 Generate audit log reports and understand their content.

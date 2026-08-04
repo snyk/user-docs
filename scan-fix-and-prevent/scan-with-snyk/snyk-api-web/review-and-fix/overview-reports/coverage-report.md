@@ -3,6 +3,8 @@ description: The Snyk API and Web coverage report
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Coverage report
 
 Coverage is a fundamental aspect of a scan. It can be the difference between a useful, successful scan and an uninformative one.

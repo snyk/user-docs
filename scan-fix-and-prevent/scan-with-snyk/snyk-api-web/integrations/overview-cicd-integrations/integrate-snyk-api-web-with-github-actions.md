@@ -3,6 +3,8 @@ description: How to integrate Snyk API and Web with GitHub Actions
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with GitHub Actions
 
 This guide provides step-by-step instructions for integrating Snyk API & Web into your GitHub Actions pipelines.

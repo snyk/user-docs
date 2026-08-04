@@ -3,6 +3,8 @@ description: What the Overview tab shows in Snyk Analytics
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Overview tab
 
 The **Overview** tab in **Snyk Analytics** provides a centralized visualization of your organization's security posture across Snyk Code, Snyk Container, Snyk Infrastructure as Code (IaC), and Snyk Open Source. Use this dashboard to identify coverage gaps, monitor historical risk trends, and evaluate remediation efficiency without drilling down into individual projects.

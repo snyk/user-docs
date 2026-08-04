@@ -3,6 +3,8 @@ description: How the Snyk Priority Score applies to Kubernetes workloads
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Kubernetes and the Snyk Priority Score
 
 {% hint style="info" %}

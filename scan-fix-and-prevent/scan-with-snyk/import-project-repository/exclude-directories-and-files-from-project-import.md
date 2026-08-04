@@ -3,6 +3,8 @@ description: How to exclude directories and files when importing a Project
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Exclude directories and files from Project import
 
 If you import a Project through an SCM integration, add the folders to exclude in the **Exclude folders** field of the import window.

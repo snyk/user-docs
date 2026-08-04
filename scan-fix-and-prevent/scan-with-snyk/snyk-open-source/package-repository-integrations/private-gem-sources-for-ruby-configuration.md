@@ -3,6 +3,8 @@ description: How to configure private gem sources for Ruby with Snyk
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Private gem sources for Ruby configuration
 
 {% hint style="info" %}

@@ -3,6 +3,8 @@ description: How to configure a login sequence for Snyk API and Web targets
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Login sequence
 
 Configure login sequence authentication to scan web applications with complex or multi-step login flows.

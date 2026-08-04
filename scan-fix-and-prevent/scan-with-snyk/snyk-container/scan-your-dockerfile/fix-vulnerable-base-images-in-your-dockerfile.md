@@ -3,6 +3,8 @@ description: How to fix vulnerable base images in your Dockerfile
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Fix vulnerable base images in your Dockerfile
 
 ## Automatic Pull Requests (PRs)

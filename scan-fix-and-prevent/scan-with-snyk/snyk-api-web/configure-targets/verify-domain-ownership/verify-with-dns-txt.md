@@ -3,6 +3,8 @@ description: How to verify domain ownership with a DNS TXT record for Snyk API a
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Verify domain with DNS TXT record
 
 Verify domain ownership by adding a TXT record to your DNS configuration.

@@ -3,6 +3,8 @@ description: How to integrate Snyk API and Web with DefectDojo
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with DefectDojo
 
 By connecting Snyk API & Web to your DefectDojo server, you can synchronize target scan results with a DefectDojo product of your choice.

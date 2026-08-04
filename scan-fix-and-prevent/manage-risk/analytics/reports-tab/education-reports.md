@@ -3,6 +3,8 @@ description: The education reports in Snyk Analytics
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Education reports
 
 {% hint style="info" %}

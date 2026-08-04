@@ -3,6 +3,8 @@ description: The compliance reports in Snyk Analytics
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Compliance reports
 
 The Compliance reports section includes the following reports:

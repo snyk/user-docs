@@ -3,6 +3,8 @@ description: The Snyk Pull Request check experience for developers
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Pull Request experience
 
 {% hint style="info" %}

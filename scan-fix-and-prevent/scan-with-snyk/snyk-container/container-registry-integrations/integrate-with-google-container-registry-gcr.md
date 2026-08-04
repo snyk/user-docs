@@ -3,6 +3,8 @@ description: How to integrate Snyk Container with Google Container Registry (GCR
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with Google Container Registry (GCR)
 
 {% hint style="warning" %}

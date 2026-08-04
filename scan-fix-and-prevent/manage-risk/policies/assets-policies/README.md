@@ -3,6 +3,8 @@ description: How Snyk Essentials asset policies automate asset governance
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Assets policies
 
 ## Overview

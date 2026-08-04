@@ -3,6 +3,8 @@ description: How to configure the Snyk integration for Amazon ECR
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure integration for Amazon Elastic Container Registry (ECR)
 
 {% hint style="warning" %}

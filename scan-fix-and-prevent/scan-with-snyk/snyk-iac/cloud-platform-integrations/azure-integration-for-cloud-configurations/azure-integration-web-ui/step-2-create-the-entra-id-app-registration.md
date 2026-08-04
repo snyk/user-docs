@@ -3,6 +3,8 @@ description: 'Step 2: create the Entra ID app registration for the Snyk Azure in
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Step 2: Create the Entra ID app registration
 
 {% hint style="info" %}

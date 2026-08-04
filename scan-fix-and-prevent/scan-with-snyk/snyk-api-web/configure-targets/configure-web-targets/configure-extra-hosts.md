@@ -3,6 +3,8 @@ description: How to configure extra hosts for Snyk API and Web web targets
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Configure extra hosts
 
 Include additional domains in the scan scope when your web application uses multiple hostnames, such as separate domains for front-end and back-end APIs.

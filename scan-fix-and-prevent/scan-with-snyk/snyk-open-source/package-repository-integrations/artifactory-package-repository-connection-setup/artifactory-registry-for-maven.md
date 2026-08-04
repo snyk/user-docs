@@ -3,6 +3,8 @@ description: How to connect Snyk to an Artifactory registry for Maven
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Artifactory registry for Maven
 
 {% hint style="info" %}

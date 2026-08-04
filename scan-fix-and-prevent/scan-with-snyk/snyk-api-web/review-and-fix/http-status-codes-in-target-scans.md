@@ -3,6 +3,8 @@ description: How HTTP status codes appear in Snyk API and Web target scans
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # HTTP status codes in target scans
 
 When analyzing your [target scan results](interpret-target-scan-results.md), you can find details about the crawler and the scanner, including a list of HTTP response status codes.

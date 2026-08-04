@@ -3,6 +3,8 @@ description: How to open Snyk fix and upgrade pull requests from a fixed GitHub 
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Opening fix and upgrade pull requests from a fixed GitHub account
 
 You can set a specific GitHub account to open, fix, and upgrade PRs, rather than use a GitHub user account picked randomly by Snyk.

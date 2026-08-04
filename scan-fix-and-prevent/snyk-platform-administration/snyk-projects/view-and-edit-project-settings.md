@@ -3,6 +3,8 @@ description: How to view and edit Project settings
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # View and edit Project settings
 
 Select the **Settings** tab on the Project listing or details page to view and edit Project settings:

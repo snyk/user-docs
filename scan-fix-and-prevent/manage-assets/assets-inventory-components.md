@@ -3,6 +3,8 @@ description: The components of each Snyk assets inventory layout
 nav_context: classic
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Assets inventory components
 
 Each inventory layout is presented in a table format, detailing the available key attributes:

@@ -3,6 +3,8 @@ description: How to view Project issues, fixes, and dependencies
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # View Project issues, fixes, and dependencies
 
 The following Project information is available on the Snyk Web UI:

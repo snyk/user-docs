@@ -3,6 +3,8 @@ description: How to configure OpenAPI authentication for Snyk API and Web target
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # OpenAPI authentication
 
 Configure authentication to scan an API using an OpenAPI schema.

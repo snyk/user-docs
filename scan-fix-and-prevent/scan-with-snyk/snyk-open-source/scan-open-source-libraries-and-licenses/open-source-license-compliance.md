@@ -3,6 +3,8 @@ description: How Snyk manages open source license compliance
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Open-source license compliance
 
 ## Overview of licenses

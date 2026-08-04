@@ -3,6 +3,8 @@ description: How to connect Snyk to an Artifactory repository manager for Go
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Artifactory repository manager for Go
 
 {% hint style="info" %}

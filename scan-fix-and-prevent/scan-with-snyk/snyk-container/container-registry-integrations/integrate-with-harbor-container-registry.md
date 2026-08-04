@@ -3,6 +3,8 @@ description: How to integrate Snyk Container with the Harbor Container Registry
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with Harbor Container Registry
 
 {% hint style="info" %}

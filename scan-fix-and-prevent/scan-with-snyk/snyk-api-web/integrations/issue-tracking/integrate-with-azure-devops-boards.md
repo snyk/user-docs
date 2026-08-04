@@ -3,6 +3,8 @@ description: How to integrate Snyk API and Web with Azure DevOps Boards
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Integrate with Azure DevOps Boards
 
 By connecting Snyk API & Web to Microsoft Azure DevOps Boards, you can synchronize target scan results with an Azure Boards organization and project of your choice.

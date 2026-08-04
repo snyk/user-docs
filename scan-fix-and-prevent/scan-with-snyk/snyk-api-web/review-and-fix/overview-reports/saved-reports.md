@@ -3,6 +3,8 @@ description: How to use saved reports in Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Saved reports
 
 With Snyk API & Web, you can download reports of specific scans (scan reports), or reports based on search criteria you define, that can comprise multiple targets (saved reports).

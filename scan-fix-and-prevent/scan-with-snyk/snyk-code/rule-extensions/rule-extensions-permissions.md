@@ -3,6 +3,8 @@ description: The custom-role permissions required to manage and test Snyk Code R
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Rule Extensions permissions
 
 Rule Extensions are available to Enterprise customers. Access is granted through a [custom role](https://docs.snyk.io/snyk-platform-administration/user-roles/user-role-management). Rule Extensions are **managed at the Group level** and **tested at the Organization level**, so a role combines Group-level and Organization-level permissions.

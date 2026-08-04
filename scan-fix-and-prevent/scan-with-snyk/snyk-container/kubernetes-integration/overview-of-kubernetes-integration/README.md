@@ -3,6 +3,8 @@ description: Overview of the Snyk Kubernetes integration
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Overview of Kubernetes integration
 
 {% hint style="info" %}

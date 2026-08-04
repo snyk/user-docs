@@ -3,6 +3,8 @@ description: How to use a notification policy in Snyk Essentials
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Notification policy
 
 You can use the **Send Email** and **Send Slack Message** actions to notify you about changes that take place on your assets.

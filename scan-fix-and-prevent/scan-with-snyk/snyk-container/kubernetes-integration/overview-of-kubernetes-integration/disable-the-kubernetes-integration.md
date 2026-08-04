@@ -3,6 +3,8 @@ description: How to disable the Snyk Kubernetes integration
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Disable the Kubernetes integration
 
 To disable the Kubernetes integration:

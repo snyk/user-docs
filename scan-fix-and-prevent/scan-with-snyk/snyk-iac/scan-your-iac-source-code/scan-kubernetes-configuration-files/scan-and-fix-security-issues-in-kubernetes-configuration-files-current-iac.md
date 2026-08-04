@@ -3,6 +3,8 @@ description: How to scan and fix security issues in Kubernetes configuration fil
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Scan and fix security issues in Kubernetes configuration files
 
 Snyk Infrastructure as Code scans your manifest files for security vulnerabilities and scans your Kubernetes configuration files for misconfigurations and security issues as well. After configuration files are scanned, Snyk reports on any misconfigurations based on the settings your administrator has implemented and makes recommendations for fixing accordingly.

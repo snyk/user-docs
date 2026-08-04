@@ -3,6 +3,8 @@ description: How Snyk Container detects the base image of a container
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Detect the container base image
 
 Detecting vulnerable base images allows you to identify the source of your vulnerabilities and fix them by updating the base image according to recommendations.

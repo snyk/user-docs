@@ -3,6 +3,8 @@ description: How to enable automatic backlog PRs for previously known vulnerabil
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Enable automatic backlog PRs for previously known vulnerabilities
 
 {% hint style="info" %}

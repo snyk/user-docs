@@ -3,6 +3,8 @@ description: How to log in to Snyk API and Web
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Log in to Snyk API & Web
 
 Learn how you can access your Snyk API & Web account.

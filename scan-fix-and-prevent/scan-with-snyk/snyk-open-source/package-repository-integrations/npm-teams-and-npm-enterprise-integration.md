@@ -3,6 +3,8 @@ description: How to integrate Snyk with npm Teams and npm Enterprise
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # npm Teams and npm Enterprise integration
 
 {% hint style="info" %}

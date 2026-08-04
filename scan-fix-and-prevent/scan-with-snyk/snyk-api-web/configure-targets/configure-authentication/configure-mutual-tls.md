@@ -3,6 +3,8 @@ description: How to configure mutual TLS for Snyk API and Web targets
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Mutual TLS
 
 Configure mutual TLS (mTLS) authentication for targets that require client-side certificates.
