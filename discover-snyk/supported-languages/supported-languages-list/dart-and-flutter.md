@@ -3,8 +3,6 @@ description: Snyk support for Dart and Flutter with Snyk Code and Snyk Open Sour
 nav_context: classic
 ---
 
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Dart and Flutter
 
 {% hint style="info" %}

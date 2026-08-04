@@ -3,8 +3,6 @@ description: How to name your Snyk Organization and plan your account structure 
 nav_context: classic
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Name your Organization
 
 Organizations contain your scan, setup integrations, and view results.

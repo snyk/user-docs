@@ -3,8 +3,6 @@ description: How to gain insights into your security training program with Snyk 
 nav_context: classic
 ---
 
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Program reporting
 
 {% hint style="info" %}

@@ -3,8 +3,6 @@ description: How Snyk auto-provisions accounts for Pilot and Enterprise plans, i
 nav_context: classic
 ---
 
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Auto-provisioning guide
 
 {% hint style="info" %}

@@ -3,8 +3,6 @@ description: How Snyk policies automate identifying, prioritizing, and triaging 
 nav_context: classic
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Define policies
 
 Policies define how Snyk behaves when identifying issues. Policies give you a quick and automated way to identify, prioritize, and triage issues. This saves valuable development time and allows developers to take more responsibility and ownership for security, reducing the “noise” level.

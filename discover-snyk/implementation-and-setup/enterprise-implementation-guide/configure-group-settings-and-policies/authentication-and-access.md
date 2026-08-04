@@ -3,8 +3,6 @@ description: How to configure SSO and access at the Snyk Group level, including 
 nav_context: classic
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Authentication and access
 
 ## Set up SSO

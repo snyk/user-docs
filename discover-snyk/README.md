@@ -8,8 +8,6 @@ coverY: 0
 nav_context: classic
 ---
 
-{% include ".gitbook/includes/new-navigation-banner.md" %}
-
 # Homepage
 
 Check out the latest [updates in the Snyk user documentation](whats-new.md).

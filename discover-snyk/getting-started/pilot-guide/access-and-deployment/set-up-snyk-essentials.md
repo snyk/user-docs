@@ -3,8 +3,6 @@ description: How to set up Snyk Essentials to discover repository assets, includ
 nav_context: classic
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Set up Snyk Essentials
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

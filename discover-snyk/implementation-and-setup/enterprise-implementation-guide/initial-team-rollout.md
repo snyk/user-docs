@@ -3,8 +3,6 @@ description: How to run an initial Snyk team rollout, inviting stakeholders and 
 nav_context: classic
 ---
 
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Initial team rollout
 
 Invite your stakeholders to explore Snyk features and integrate security into their workflows. After this step, your teams can fix issues, monitor pipelines, and manage vulnerabilities using integrations like Jira.
