@@ -3,8 +3,6 @@ description: How to configure the Azure DevOps integration with Snyk, including 
 nav_context: classic
 ---
 
-{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Azure DevOps
 
 {% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}

@@ -4,8 +4,6 @@ description: >-
 nav_context: classic
 ---
 
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Claiming CPE Credits with Snyk Learn
 
 Snyk Learn offers a range of security education lessons and learning paths designed to enhance your application security skills. While these lessons provide valuable knowledge, they do not automatically grant Continuing Professional Education (CPE) credits. To claim CPE credits for your participation in Snyk Learn lessons and learning paths, follow these steps.&#x20;

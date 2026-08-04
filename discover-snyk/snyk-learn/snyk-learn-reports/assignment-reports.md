@@ -3,8 +3,6 @@ description: How to track training progress with Snyk Learn assignment reports, 
 nav_context: classic
 ---
 
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Assignment reports
 
 {% hint style="info" %}

@@ -3,8 +3,6 @@ description: How to clone your template Organization to build a Snyk structure t
 nav_context: classic
 ---
 
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Create your Snyk structure
 
 To create your ideal Snyk structure, reflecting the way your business is structured, you need to clone the template Organization created in the previous phase of this guide. This enables you to create multiple Organizations that cover your critical business units.

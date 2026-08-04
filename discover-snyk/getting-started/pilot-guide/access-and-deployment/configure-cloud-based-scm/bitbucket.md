@@ -3,8 +3,6 @@ description: How to configure the Bitbucket integration with Snyk, including gen
 nav_context: classic
 ---
 
-{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # BitBucket
 
 {% include "../../../../.gitbook/includes/pilot-guide-navigation.md" %}

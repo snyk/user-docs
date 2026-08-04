@@ -3,8 +3,6 @@ description: How to import repositories into Snyk from your SCM integration to s
 nav_context: classic
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Import repositories
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}

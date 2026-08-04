@@ -3,8 +3,6 @@ description: How to gain visibility by importing Projects so Snyk monitors your 
 nav_context: classic
 ---
 
-{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
-
 # Gain visibility by importing repositories
 
 Gaining visibility over your Organization security begins with importing Projects. This process allows Snyk to monitor your code, dependencies, containers, and infrastructure.

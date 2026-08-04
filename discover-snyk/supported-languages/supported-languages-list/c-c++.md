@@ -3,8 +3,6 @@ description: Snyk support for C and C++ with Snyk Code and Snyk Open Source, inc
 nav_context: classic
 ---
 
-{% include "../../.gitbook/includes/new-navigation-banner.md" %}
-
 # C/C++
 
 {% hint style="info" %}
