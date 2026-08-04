@@ -3,6 +3,8 @@ description: Snyk support for Go with Snyk Open Source and Snyk Code, including 
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Go
 
 ## Applicability and integration
