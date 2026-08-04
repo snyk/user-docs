@@ -1,6 +1,6 @@
 ---
-description: How the .snyk file stores Snyk policy configuration for a Project
 nav_context: classic
+description: How the .snyk file stores Snyk policy configuration for a Project
 ---
 
 # The .snyk file
@@ -120,7 +120,7 @@ For more information, see [Setting Python version in Git Projects](https://app.g
 {% hint style="warning" %}
 The `expires` field is optional. If you need a permanent ignore, omit the field.
 
-To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore#expiry-less-than-expiry-greater-than).
+To ensure that expiration dates are enforced for ignores that are created through the `.snyk` file, you must specify a valid expiration date. The date must be in the Date Time String Javascript format like YYYY-MM-DDThh:flag\_mm:ss.fffZ. If the specified expiration date does not adhere to this format, the ignore will be respected and persist indefinitely. For details, see the [--expiry option in the snyk ignore command help](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore#expiry-less-than-expiry-greater-than).
 {% endhint %}
 
 Ignore a specific vulnerability for a given path:
@@ -246,3 +246,7 @@ The `patch`: is in the form of:
   - path to library using > separator > to > another > path:
     patched: 'YYYY-MM-DDThh:mm:ss.fffZ'
 ```
+
+{% hint style="info" %}
+Ignore Approval Workflow does not affect exclusions in the `.snyk` file. For Snyk Code, exclusions omit specified files or directories. For unmanaged IaC scans, exclusions ignore specified resources. Organization-level settings do not affect either exclusion type. Ignore Approval Workflow does not apply to Snyk Open Source scans.
+{% endhint %}
