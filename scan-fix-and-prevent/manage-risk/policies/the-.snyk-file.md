@@ -7,7 +7,7 @@ nav_context: classic
 
 The `.snyk` file is a capability of Snyk that all users can employ locally or as part of their workflow to control Snyk ignores of issues, to exclude files from scanning, to set the Python version at the Project level, and to specify patches for the CLI and CI/CD plugins.
 
-How the `.snyk` file works varies among Snyk products. When you deploy the `.snyk` file, start by reviewing how the file is created, where it can be used, and what it is used for. For details, see [Use the `.snyk` file with Snyk Open Source](the-.snyk-file.md#use-the-.snyk-file-with-snyk-open-source), [Use the `.snyk` file with Snyk Code](the-.snyk-file.md#use-the-.snyk-file-with-snyk-code) and [Use the `.snyk` file with Snyk IaC](the-.snyk-file.md#use-the-.snyk-file-with-snyk-iac).
+How the `.snyk` file works varies among Snyk products. When you deploy the `.snyk` file, start by reviewing how the file is created, where it can be used, and what it is used for. For details, see [Use the `.snyk` file with Snyk Open Source](the-.snyk-file.md#use-the-.snyk-file-with-snyk-open-source), [Use the `.snyk` file with Snyk Code](the-.snyk-file.md#use-the-.snyk-file-with-snyk-code), [Use the `.snyk` file with Snyk IaC](the-.snyk-file.md#use-the-.snyk-file-with-snyk-iac), and [Use the `.snyk` file with Snyk Secrets](the-.snyk-file.md#use-the-.snyk-file-with-snyk-secrets).
 
 You can create the `.snyk` file by using the `snyk ignore` CLI command. This generates the file and an ignore rule. You can also create the file using a text or code editor. The format is YAML. For details, see [How to create the `.snyk` file](the-.snyk-file.md#how-to-create-the-.snyk-file).
 
@@ -66,6 +66,38 @@ You can use the `.snyk` file to specify files or directories in a repository tha
 For Projects imported using a code repository integration as opposed to using the `snyk monitor` command, the `--policy-path` option is not available. The `.snyk` file applies only to Projects found on the same path as the `.snyk` file.
 
 For details, see [Excluding directories and files from the import process](../../scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md).
+
+## Use the `.snyk` file with Snyk Secrets
+
+You can use the `.snyk` file to specify files and directories that are to be excluded from Snyk Secrets scanning. Excluded files are not uploaded to Snyk and do not appear in the results.
+
+Snyk Secrets applies the patterns in the following `exclude` sections:
+
+* `global`: Applies to Snyk Secrets and to other Snyk products that support the `global` section.
+* `secrets`: Applies only to Snyk Secrets.
+
+Snyk Secrets ignores the `code` and `iac-drift` sections.
+
+```yaml
+# Snyk (https://snyk.io) policy file
+exclude:
+  global:
+    - vendor/**
+  secrets:
+    - "fixtures/**/*.pem"
+    - examples/**
+```
+
+The `exclude` option for Snyk Secrets is supported for the Snyk CLI and for scans that run through an SCM integration. Note the following differences:
+
+* For the Snyk CLI, Snyk Secrets reads the `.snyk` file in the directory you scan. Snyk Secrets also skips the paths listed in your `.gitignore` file.
+* For SCM integrations, Snyk Secrets reads only the `.snyk` file at the root of the repository. Unlike Snyk Code, it does not apply `.snyk` files that are located in subdirectories.
+
+In both cases, if the `.snyk` file is missing, empty, or cannot be parsed, the scan continues without the `.snyk` exclusions.
+
+To add an exclusion to the `secrets` section using the CLI, run `snyk ignore --file-path=<PATTERN> --file-path-group='secrets'`.
+
+For details, see [Secrets scanning in the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/secrets-scanning-in-the-snyk-cli#exclude-files-and-directories-from-a-scan) and [Secrets scanning in the SCM](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/secrets-scanning-in-the-scm#exclude-files-and-directories-from-scm-secrets-scans).
 
 ## Use the `.snyk` file with Snyk IaC
 
@@ -210,6 +242,7 @@ The `.snyk` file has the following top-level keys:
 
 * `language-settings:`
 * `ignore:`
+* `exclude:`
 * `patch:`
 
 The `language-settings:` value is the Python version you are using. See the examples in the section [Set the language version for Python](the-.snyk-file.md#set-the-language-version-for-python) on this page.
@@ -236,6 +269,22 @@ ignore:
     - path to library using > separator :
         reason: 'text string'
 ```
+
+The `exclude:` key lists the files and directories to exclude from scanning, grouped by the product that applies them. Each group holds a list of shell matching patterns:
+
+```
+exclude:
+  global:
+    - <exclusion_rule>
+  code:
+    - <exclusion_rule>
+  secrets:
+    - <exclusion_rule>
+  iac-drift:
+    - <exclusion_rule>
+```
+
+The `global` group applies to every product that supports the `exclude` key. The `code`, `secrets`, and `iac-drift` groups apply only to Snyk Code, Snyk Secrets, and Snyk IaC unmanaged resource detection, respectively. For the pattern syntax, see [Exclusion syntax of the `.snyk` file](../../scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md#exclusion-syntax-of-the-.snyk-file).
 
 The `patch`: is in the form of:
 

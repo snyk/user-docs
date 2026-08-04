@@ -5,7 +5,8 @@ Use Snyk Secrets for the CLI to identify and manage sensitive information (API k
 1. [Scan your current directory for hard coded secrets.](secrets-scanning-in-the-snyk-cli.md#run-a-secrets-scan)
 2. [Ignore findings.](secrets-scanning-in-the-snyk-cli.md#ignore-findings)
 3. [Scan and review ignored secrets.](secrets-scanning-in-the-snyk-cli.md#review-ignored-secrets)
-4. [Scan with a pre-commit hook.](secrets-scanning-in-the-snyk-cli.md#scan-with-a-pre-commit-hook)
+4. [Exclude files and directories from a scan.](secrets-scanning-in-the-snyk-cli.md#exclude-files-and-directories-from-a-scan)
+5. [Scan with a pre-commit hook.](secrets-scanning-in-the-snyk-cli.md#scan-with-a-pre-commit-hook)
 
 ## Prerequisites
 
@@ -67,6 +68,67 @@ Use the `--include-ignores` option to run a scan and view suppressed items. This
 ```bash
 snyk secrets test --include-ignores
 ```
+
+## Exclude files and directories from a scan
+
+Exclude paths that you do not want Snyk Secrets to scan, such as test fixtures, vendored dependencies, or sample credentials. Excluded files are never uploaded and never appear in the results. Use exclusions when a repository contains a large number of known, non-production secrets that you do not want to review individually.
+
+{% hint style="info" %}
+Excluding a path is not the same as ignoring a finding. Snyk does not scan excluded paths at all, so they produce no findings and do not appear in the Snyk Web UI as ignored issues. To suppress a specific finding while continuing to scan the file, use ignores instead. See [Ignore findings](secrets-scanning-in-the-snyk-cli.md#ignore-findings).
+{% endhint %}
+
+You can exclude paths in the following ways:
+
+* Commit a `.snyk` file to your repository. This is the recommended approach, because the exclusions are shared with everyone who scans the repository and are also applied when the repository is scanned through an SCM integration. See [Exclude paths using the `.snyk` file](secrets-scanning-in-the-snyk-cli.md#exclude-paths-using-the-.snyk-file).
+* Use the `--exclude` option for a single scan. See [Exclude paths for a single scan](secrets-scanning-in-the-snyk-cli.md#exclude-paths-for-a-single-scan).
+
+Snyk Secrets also skips the paths listed in your `.gitignore` file, along with file types that cannot contain readable secrets, such as binaries, archives, media files, fonts, and dependency lockfiles.
+
+### Exclude paths using the `.snyk` file
+
+The `.snyk` file is a YAML policy file that you commit to your repository. Snyk Secrets reads the `.snyk` file in the directory you scan and applies the patterns in the following `exclude` sections:
+
+* `global`: Applies to Snyk Secrets and to other Snyk products that support the `global` section.
+* `secrets`: Applies only to Snyk Secrets.
+
+The following example excludes the `vendor` directory from all supported Snyk products, and excludes PEM test fixtures and the `examples` directory from Snyk Secrets only:
+
+```yaml
+# Snyk (https://snyk.io) policy file
+exclude:
+  global:
+    - vendor/**
+  secrets:
+    - "fixtures/**/*.pem"
+    - examples/**
+```
+
+{% hint style="info" %}
+* Snyk Secrets applies only the `global` and `secrets` sections. It ignores the `code` and `iac-drift` sections, which apply to Snyk Code and Snyk IaC.
+* Patterns are relative to the location of the `.snyk` file. Do not use paths starting with `./`.
+* Wrap any pattern that begins with a special character, such as an asterisk (`*`), in double quotation marks.
+* If the `.snyk` file is missing, empty, or cannot be parsed, the scan continues without the `.snyk` exclusions.
+
+For the full exclusion pattern syntax and formatting rules, see [Exclusion syntax of the `.snyk` file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import#exclusion-syntax-of-the-.snyk-file).
+{% endhint %}
+
+To add an exclusion to the `secrets` section without editing the file manually, use the `snyk ignore` command:
+
+```bash
+snyk ignore --file-path='fixtures/**/*.pem' --file-path-group='secrets'
+```
+
+If the `.snyk` file does not exist, this command creates it. For details, see the [Ignore](../../commands/ignore.md) command help.
+
+### Exclude paths for a single scan
+
+Use the `--exclude` option to exclude directory and file names for one scan, without committing anything to the repository. Provide a comma-separated list of names, without paths:
+
+```bash
+snyk secrets test --exclude=fixtures,secrets.example.yaml
+```
+
+This excludes every directory or file with a matching name, at any depth, for example `./fixtures` and `./src/fixtures`.
 
 ## Scan with a pre-commit hook
 

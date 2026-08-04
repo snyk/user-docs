@@ -18,7 +18,7 @@ The `snyk ignore` command modifies the `.snyk` policy file to ignore a specified
 
 `snyk ignore [--expiry=] [--reason=] [--policy-path=<PATH_TO_POLICY_FILE>] [--file-path=<PATH_TO_RESOURCE>] [OPTIONS]`
 
-You can exclude directories or files from scanning using the `--file-path` option. This option is available only for Snyk Code (SAST) tests or Open Source `--unmanaged` tests; it will not work for other test types.
+You can exclude directories or files from scanning using the `--file-path` option. This option is available only for Snyk Code (SAST) tests, Snyk Secrets tests, or Open Source `--unmanaged` tests; it will not work for other test types.
 
 ## Examples of updates to the `.snyk` file
 
@@ -59,7 +59,7 @@ exclude:
 
 **Note**: Ignoring issues or vulnerabilities using the `.snyk` file is not supported for Snyk Code.
 
-The `--file-path` option excludes directories or files from scanning and is available only for Snyk Code (SAST) tests or Open Source `--unmanaged` tests; it will not work for other test types.
+The `--file-path` option excludes directories or files from scanning and is available only for Snyk Code (SAST) tests, Snyk Secrets tests, or Open Source `--unmanaged` tests; it will not work for other test types.
 
 ## Debug
 
@@ -115,13 +115,15 @@ Default: all
 
 ### `--file-path=<PATH_TO_RESOURCE>`
 
-Filesystem for which to exclude directories or files from scanning. Used only by `snyk code` and `snyk test --unmanaged`
+Filesystem for which to exclude directories or files from scanning. Used only by `snyk code`, `snyk secrets test`, and `snyk test --unmanaged`
 
 Default: none
 
-### `--file-path-group=[global|code|iac-drift]`
+### `--file-path-group=[global|code|iac-drift|secrets]`
 
 Grouping used in combination with `--file-path`, otherwise omitted.
+
+Use `secrets` to exclude the path from `snyk secrets test` scans only. For details, see [Secrets scanning in the Snyk CLI](../snyk-cli/scan-and-maintain-projects-using-the-cli/secrets-scanning-in-the-snyk-cli.md#exclude-files-and-directories-from-a-scan).
 
 Default: global
 
@@ -197,6 +199,14 @@ This applies to Snyk Code; it does not apply to Snyk Open Source except `unmanag
 
 ```
 $ snyk ignore --file-path='**/vendor/**/*.cpp' --file-path-group='global'
+```
+
+### Exclude files or folders from Snyk Secrets scans only
+
+To exclude a path from `snyk secrets test` without affecting other Snyk products, add it to the `secrets` group.
+
+```
+$ snyk ignore --file-path='fixtures/**/*.pem' --file-path-group='secrets'
 ```
 
 ## More information about the `snyk ignore` command

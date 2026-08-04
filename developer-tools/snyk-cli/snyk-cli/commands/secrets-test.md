@@ -36,6 +36,8 @@ Specify a file or directory to scan. If you do not specify a path, the command s
 
 Exclude directory names and file names from the scan. Provide a comma-separated list of names. Do not include a path. Example: `snyk secrets test --exclude=dir1,file2` This excludes any directories and files named `dir1` and `file2` from the secrets scan, such as `./dir1`, `./src/dir1`, `./file2`, and `./src/file2`.
 
+To persist exclusions for everyone who scans the repository, and to apply them to SCM scans as well, use the `exclude` key of the `.snyk` file instead. See [Exclude files and directories from a scan](../scan-and-maintain-projects-using-the-cli/secrets-scanning-in-the-snyk-cli.md#exclude-files-and-directories-from-a-scan).
+
 ### `--org=<ORG_ID>`
 
 Specify the Snyk Organization to associate the test results with. Example: `snyk secrets test --org=<ORG_ID>`
