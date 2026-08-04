@@ -412,6 +412,7 @@
   * [Ignore issues](manage-risk/prioritize-issues-for-fixing/ignore-issues/README.md)
     * [How ignores work for Projects imported using an SCM and the CLI](manage-risk/prioritize-issues-for-fixing/ignore-issues/how-ignores-work-for-projects-imported-using-an-scm-and-the-cli.md)
     * [Exclude files and ignore issues FAQs](manage-risk/prioritize-issues-for-fixing/ignore-issues/exclude-files-and-ignore-issues-faqs.md)
+    * [Ignore Approval Workflow](fix/prioritize-issues-for-fixing/ignore-issues/ignore-approval-workflow.md)
     * [Consistent Ignores for Snyk Code](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/README.md)
       * [Convert Project-scoped ignores to asset-scoped ignores](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/convert-project-scoped-ignores-to-asset-scoped-ignores.md)
       * [Consistent Ignores for Snyk Code API](manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/api.md)
