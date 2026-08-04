@@ -1,6 +1,6 @@
 ---
-description: How to view and filter Snyk vulnerabilities in the Visual Studio extension
 nav_context: classic
+description: How to view and filter Snyk vulnerabilities in the Visual Studio extension
 ---
 
 # View analysis results from Visual Studio extension
@@ -29,13 +29,13 @@ This functionality reduces noise and allows you to focus only on current changes
 
 The logic uses your local Git repository or any folder to compare the current findings with those in a base branch or reference folder. Net new issues scanning (delta scanning) shows you the difference between the two branches or folders, highlighting only the new issues.
 
-In version 2.1.0 and later, you can choose **any folder** as your base for scanning.&#x20;
+In version 2.1.0 and later, you can choose **any folder** as your base for scanning.
 
 To apply the filter and only see the new issues, use the **total/new** toggle in the summary panel.
 
-<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/toggle-summary-panel-show-total-number-issues-number-issues.png" alt="" width="375"><figcaption><p>Toggle in summary panel to show the total number of issues <br> and the number of issues in the checked out branch or current folder</p></figcaption></figure></div>
+<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/toggle-summary-panel-show-total-number-issues-number-issues.png" alt="" width="375"><figcaption><p>Toggle in summary panel to show the total number of issues<br>and the number of issues in the checked out branch or current folder</p></figcaption></figure></div>
 
-You can also enable net new issues feature in the [scan settings](visual-studio-extension-configuration-environment-variables-and-proxy.md#scan-configuration) for the Visual Studio extension.&#x20;
+You can also enable net new issues feature in the [scan settings](visual-studio-extension-configuration-environment-variables-and-proxy.md#scan-configuration) for the Visual Studio extension.
 
 For newly created feature branches, there will be no reported issues. That is an intended state that developers would aim for, as shown in the screen image that follows:
 
@@ -43,7 +43,7 @@ For newly created feature branches, there will be no reported issues. That is an
 
 ## Changing the base branch
 
-The base branch is usually determined automatically for each Git repository.&#x20;
+The base branch is usually determined automatically for each Git repository.
 
 You can change the base branch or base folder by following these steps, as illustrated in the screen image that follows:
 
@@ -52,3 +52,7 @@ You can change the base branch or base folder by following these steps, as illus
 3. Use the dropdown selection to choose any branch or reference folder.
 
 <figure><img src="../../.gitbook/assets/change-reference-branch-reference-directory-calculation-new.png" alt=""><figcaption><p>Change the reference branch or reference directory for calculation of new new issues.</p></figcaption></figure>
+
+{% hint style="info" %}
+To use Ignore Approval Workflow with Visual Studio, follow the steps in [View analysis results from Visual Studio Code extension](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension).
+{% endhint %}

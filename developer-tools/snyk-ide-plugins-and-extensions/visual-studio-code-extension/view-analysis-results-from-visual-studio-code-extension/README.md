@@ -1,6 +1,8 @@
 ---
-description: How to view Snyk security vulnerabilities and code quality results in the Visual Studio Code extension
 nav_context: classic
+description: >-
+  How to view Snyk security vulnerabilities and code quality results in the
+  Visual Studio Code extension
 ---
 
 # View analysis results from Visual Studio Code extension
@@ -15,11 +17,11 @@ The **Snyk analysis panel** on the left shows the time the analysis took and a l
 
 Each issue contains a severity icon that has the following meaning:
 
-|  Critical severity                                             | May allow attackers access to sensitive data and to run code on your application.                                                            |
-| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/severity-filter.png>) High severity   | May allow attackers access to sensitive data on your application.                                                                            |
-| ![](<../../../.gitbook/assets/severity-filter-3.png>) Medium severity | May allow attackers under some conditions to have access to sensitive data on your application.                                              |
-| ![](<../../../.gitbook/assets/overview-results.png>) Low severity    | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+| Critical severity                                                   | May allow attackers access to sensitive data and to run code on your application.                                                            |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](../../../.gitbook/assets/severity-filter.png) High severity     | May allow attackers access to sensitive data on your application.                                                                            |
+| ![](../../../.gitbook/assets/severity-filter-3.png) Medium severity | May allow attackers under some conditions to have access to sensitive data on your application.                                              |
+| ![](../../../.gitbook/assets/overview-results.png) Low severity     | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 ## Scan configuration
 
@@ -77,3 +79,11 @@ You can change the base branch or base folder by following these steps:
 2. Toggle the `total/new` filter in the summary panel.
 3. Click on the top-level node in the issues tree to change the branch or directory.
 4. Use text input to specify any branch name or reference directory.
+
+### Creating an ignore request
+
+If your Organization uses Ignore Approval Workflow, you can create an ignore request directly from the Visual Studio Code extension.
+
+1. Select a Snyk Code finding and click **Create ignore**.
+2.  Fill in the **Ignore type** and **Reason**, then click **Submit ignore**. The ignore request is now pending approval.
+
