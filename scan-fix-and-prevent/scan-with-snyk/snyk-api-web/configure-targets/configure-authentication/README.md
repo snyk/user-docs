@@ -1,9 +1,9 @@
 ---
-description: How to configure authentication for Snyk API and Web targets
 nav_context: agnostic
+description: How to configure authentication for Snyk API and Web targets
 ---
 
-# Configure authentication
+# Authentication
 
 Configure authentication to scan protected areas of your web application or API.
 
@@ -39,21 +39,29 @@ The scanner generates or retrieves the authentication code and enters it during 
 
 Visit [Two-factor authentication](configure-two-factor-authentication.md) and [Automate OTP extraction](automate-otp-extraction.md) for configuration instructions.
 
+### NTLM
+
+NTLM (NT LAN Manager) authentication allows you to scan legacy enterprise applications that use Windows-based authentication.
+
+Visit [NTLM](ntlm.md) for configuration instructions.
+
 ## API target authentication
 
 API targets use authentication methods tailored for API security testing. Configuration options depend on your API target (OpenAPI, Postman Collection, or GraphQL).
 
 API target authentication methods include:
-- API keys
-- Bearer tokens
-- OAuth authentication flows
-- Login endpoints that return authentication tokens
-- Custom scripts
+
+* API keys
+* Bearer tokens
+* OAuth authentication flows
+* Login endpoints that return authentication tokens
+* Custom scripts
 
 Visit the following guides for detailed setup steps:
-- [OpenAPI authentication](configure-openapi-authentication.md)
-- [Postman authentication](configure-postman-authentication.md)
-- [GraphQL authentication](configure-graphql-authentication.md)
+
+* [OpenAPI authentication](configure-openapi-authentication.md)
+* [Postman authentication](configure-postman-authentication.md)
+* [GraphQL authentication](configure-graphql-authentication.md)
 
 ## Authentication for Web and API targets
 

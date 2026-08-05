@@ -270,6 +270,7 @@
       * [Postman authentication](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-postman-authentication.md)
       * [GraphQL authentication](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-graphql-authentication.md)
       * [Mutual TLS](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-mutual-tls.md)
+      * [NTLM](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/ntlm.md)
       * [Logout detection](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-logout-detection.md)
       * [Manage credentials](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/manage-credentials.md)
       * [Automate OTP extraction](scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/automate-otp-extraction.md)
