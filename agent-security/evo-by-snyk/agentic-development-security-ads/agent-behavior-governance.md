@@ -10,7 +10,7 @@ nav_context: agnostic
 Agent Behavior Governance is in open preview. It is not connected to the platform surfaces: Inventory, Policies and issues, Reports, and Evo chat. Refer to the full list of limitations in the [Open preview limits](agent-behavior-governance.md#open-preview-limits) section.
 {% endhint %}
 
-Agent Behavior Governance secures what agents do as they run. It works within the agent's execution loop, evaluating each action against the policy before it runs. Because it sees the full session — the sequence of actions, the tools in use, and the context behind them — it acts on patterns and intent, not on individual commands alone.
+Agent Behavior Governance secures what agents do as they run. It works within the agent's execution loop, evaluating each action against the policy before it runs. Because it sees the full session, including the sequence of actions, the tools in use, and the context behind them, it acts on patterns and intent, not on individual commands alone.
 
 ## Capabilities
 
@@ -27,21 +27,21 @@ Claude Code, Codex, and Cursor.
 
 ## How it works
 
-You view and manage Agent Behavior Governance in the **Observe** area. During open preview, Observe is separate from the platform surfaces.
+You view and manage under the Agent Behavior Governance page.&#x20;
 
-Agent Behavior Governance captures the runtime activity of your AI agents — prompts, tools, Model Context Protocol (MCP) calls, shell commands, and file access — and runs a set of scanners over that activity. Each scanner raises findings, and a policy decides what happens when a finding type is detected.
+Agent Behavior Governance captures the runtime activity of your AI agents, including prompts, tools, Model Context Protocol (MCP) calls, shell commands, and file access. It runs a set of scanners over that activity: each scanner raises findings, and a policy decides what happens when a finding type is detected.
 
-### Observe
+### Agent Behavior&#x20;
 
-The Observe view is organized into the following tabs:
+The view is organized into the following tabs:
 
 * **Overview**: a summary of security posture with three sub-tabs:
   * **Findings**: all detections raised by scanners.
-  * **Issues**: policy enforcement outcomes — the subset of findings where a policy decided to log, steer, ask, or block.
+  * **Issues**: policy enforcement outcomes, the subset of findings where a policy decided to log, steer, ask, or block.
   * **Active Scanners**: the list of active scanner policies with trend data.
 * **Machines**: machines running Agentic Development Security hooks, with per-machine agents, activity, findings, and last active time.
-* **Activity**: a timeline of every agent action across your fleet — prompts, tool calls, shell commands, and file operations — grouped by machine and session.
-* **Policies**: policy management — create, edit, reorder, and configure guard policies.
+* **Activity**: a timeline of every agent action across your fleet, including prompts, tool calls, shell commands, and file operations, grouped by machine and session.
+* **Policies**: create, edit, reorder, and configure guard policies.
 
 ### Scanners
 
@@ -49,12 +49,12 @@ Agent Behavior Governance includes eight scanners:
 
 * **Indirect Prompt Injection**: hidden instructions in tool outputs that attempt to hijack agent behavior.
 * **Secrets Detection**: exposed credentials, API keys, tokens, and private keys in agent messages and tool outputs.
-* **PII Detection**: personally identifiable information (PII) — names, emails, phone numbers, government IDs, financial identifiers, and other sensitive data types across multiple jurisdictions — in prompts and in arguments to shell commands.
+* **PII Detection**: personally identifiable information (PII), including names, emails, phone numbers, government IDs, financial identifiers, and other sensitive data types across multiple jurisdictions, in prompts and in arguments to shell commands.
 * **Sensitive Shell Commands**: destructive operations, requests to external endpoints, and reads of sensitive files.
 * **Workspace Boundary**: file operations outside the session workspace or in protected directories such as `node_modules` and `.venv`. Supports custom allow and deny path globs per Tenant.
 * **MCP Tool Observability**: MCP tool calls, logging tool invocations for observability and audit.
-* **Web Search & HTTP**: external HTTP activity from shell commands such as `curl` and `wget`, and from web-search MCP tools.
-* **Toxic Flows**: dangerous combinations across findings — for example, secrets sent to a public endpoint, or untrusted input followed by a destructive command — that individual scanners miss.
+* **Web Search & HTTP**: external HTTP activity from shell commands, such as `curl` and `wget`, and from web-search MCP tools.
+* **Toxic Flows**: dangerous combinations across findings; for example, secrets sent to a public endpoint, or untrusted input followed by a destructive command, that individual scanners miss.
 
 ### Findings
 
@@ -62,7 +62,7 @@ A **finding** is a detection raised by a scanner. Each finding records the scann
 
 ### Activity and sessions
 
-Activity tracking records every agent action across your fleet — prompts, tool calls, shell commands, and file operations — including which machine, session, and policy it involved. A session provides a full timeline of every action the agent took.
+Activity tracking records every agent action across your fleet: prompts, tool calls, shell commands, and file operations. Each record includes which machine, session, and policy it involved. A session provides a full timeline of every action the agent took.
 
 ### Machines
 
@@ -72,6 +72,6 @@ Machines appear automatically after you install Agentic Development Security hoo
 
 Agent Behavior Governance is available only as an open preview and is not generally available (GA). The product will be limited in the following ways:
 
-* Rate limit: Each entitlement in open preview will be limited to 10k behavioral guardrailing requests (hook calls) per calendar day, per single Tenant.
+* Rate limit: Each entitlement in open preview will be limited to 10k behavioral guardrail requests (hook calls) per calendar day per Tenant.
 * Data retention limi&#x74;_:_ Data is retained for seven days. During the preview, the data retention setting is fixed at seven days and cannot be changed.
 * Product support: This experimental preview is subject to change. It is a try-out experience and should not be used in production. On-call and service availability will be limited during this period. This means there is limited support for feedback and feature requests.
