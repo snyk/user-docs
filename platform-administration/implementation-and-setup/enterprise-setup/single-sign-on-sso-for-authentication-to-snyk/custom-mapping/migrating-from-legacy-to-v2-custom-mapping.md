@@ -33,9 +33,7 @@ The new format uses a highly extensible, colon-delimited string syntax:
 * Maintain fallback access during the transition by leaving legacy mapping assignments as is within the IdP.
 * Coordinate timing with internal stakeholders to minimize disruption—for example, work with security or compliance teams, as role changes during audits could temporarily affect access reporting or user permissions.
 
-{% hint style="info" %}
-These migration activities apply to the SSO connection directly and affect all Snyk Groups with which the connection is associated. All Groups using the same connection will transition to v2 custom mapping simultaneously. The process below is designed to make this as straightforward as possible.
-{% endhint %}
+**Note:** These migration activities apply to the SSO connection directly and affect all Snyk Groups with which the connection is associated. All Groups using the same connection will transition to v2 custom mapping simultaneously. The process below is designed to make this as straightforward as possible.
 
 ### Step 2: Extract identifiers
 
@@ -86,9 +84,7 @@ Once validation is complete, Snyk Support will enable v2 custom mapping in your 
 
 Roles are automatically assigned upon the next user login.
 
-{% hint style="warning" %}
-Users without a valid mapping configured in the IdP may lose access upon login.
-{% endhint %}
+**Warning:** Users without a valid mapping configured in the IdP may lose access upon login.
 
 ### Step 7: Production validation and clean up
 
@@ -109,9 +105,7 @@ Legacy format relied on strict strings or Group IDs. The new format targets the 
 | Org Collaborator (across all Orgs in a specific Group) | `snyk-{groupID}` | Use wildcards: `snyk:org:*:org_collaborator` |
 | Custom Group role | N/A (new in v2) | `snyk:group::custom:{custom_role}` |
 
-{% hint style="info" %}
-The v2 format replaces Group ID logic with explicit Organization-level wildcards.
-{% endhint %}
+**Note:** The v2 format replaces Group ID logic with explicit Organization-level wildcards.
 
 ### Organization-level roles
 
