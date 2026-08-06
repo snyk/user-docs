@@ -48,7 +48,7 @@ These commands find and report security issues in Infrastructure as Code files; 
 
 The `snyk code test` command finds security issues using Static Code Analysis.
 
-### [`snyk secrets`](https://docs.snyk.io/developer-tools/~/revisions/Si0DTMZypmDCYQIGTgL0/snyk-cli/snyk-cli/commands/secrets-test)&#x20;
+### [`snyk secrets`](secrets-test.md)
 
 The `snyk secrets test` command scans text files in a repository for hardcoded secrets.
 
