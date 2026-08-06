@@ -9,6 +9,12 @@ nav_context: new
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## August 2026
+
+### Snyk Secrets
+
+* You can now exclude files and directories from secrets scanning by using the `exclude` key of the `.snyk` file. Snyk Secrets applies the `global` and the new `secrets` sections for both Snyk CLI and SCM scans. Visit [Use the `.snyk` file with Snyk Secrets](https://docs.snyk.io/manage-risk/policies/the-.snyk-file#use-the-.snyk-file-with-snyk-secrets) for more details.
+
 ## July 2026
 
 ### Evo by Snyk
