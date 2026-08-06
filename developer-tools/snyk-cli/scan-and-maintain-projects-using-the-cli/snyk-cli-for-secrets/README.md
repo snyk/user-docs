@@ -5,7 +5,7 @@ nav_context: agnostic
 
 # Snyk CLI for Snyk Secrets
 
-The [Snyk Command Line Interface](../../) (CLI) enables you to bring the functionality of [Snyk Secrets](https://docs.snyk.io/scan-with-snyk/snyk-secrets) into your development workflow. Using the Snyk CLI, you can scan your source code locally, in a pre-commit hook, or in your CI/CD pipeline to find hardcoded secrets such as API keys, passwords, and tokens.
+The [Snyk Command Line Interface](../../) (CLI) enables you to bring the functionality of [Snyk Secrets](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-secrets) into your development workflow. Using the Snyk CLI, you can scan your source code locally, in a pre-commit hook, or in your CI/CD pipeline to find hardcoded secrets such as API keys, passwords, and tokens.
 
 ## Prerequisites for using the Snyk CLI with Snyk Secrets
 

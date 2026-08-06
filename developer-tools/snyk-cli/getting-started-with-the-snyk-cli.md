@@ -13,7 +13,7 @@ Snyk is a developer-first, cloud-native security tool to scan and monitor your s
 * [Snyk Code](https://docs.snyk.io/scan-with-snyk/snyk-code): Find and fix vulnerabilities in your application code in real time
 * [Snyk Container](https://docs.snyk.io/scan-with-snyk/snyk-container): Find and fix vulnerabilities in container images and Kubernetes applications
 * [Snyk IaC](https://docs.snyk.io/scan-with-snyk/snyk-iac): Find and fix insecure configurations in Terraform and Kubernetes code
-* [Snyk Secrets](https://docs.snyk.io/scan-with-snyk/snyk-secrets): Find hardcoded secrets, credentials, and API keys in your source code
+* [Snyk Secrets](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-secrets): Find hardcoded secrets, credentials, and API keys in your source code
 
 The Snyk CLI brings the functionality of Snyk into your development workflow. You can run the CLI locally from the command line or in an IDE. You can also run the CLI in your CI/CD pipeline. The following shows an example of Snyk CLI test command output.
 
@@ -68,7 +68,7 @@ For details about using the Snyk CLI to scan each content type, see the followin
 * [Snyk CLI for Snyk Code](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code) and the [Snyk Code CLI help](https://docs.snyk.io/snyk-cli/commands/code)
 * [Snyk CLI for Snyk Container](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container), including Docker scanning, and the [Snyk Container CLI help](https://docs.snyk.io/snyk-cli/commands/container)
 * [Snyk CLI for Snyk IaC](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac), including Terraform and Kubernetes (K8s) Projects, and the [Snyk IAC CLI help](https://docs.snyk.io/snyk-cli/commands/iac)
-* [Secrets scanning in the Snyk CLI](scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli.md), including pre-commit hooks and ignores, and the [Snyk Secrets CLI help](commands/secrets-test.md)
+* [Snyk CLI for Snyk Secrets](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets), including pre-commit hooks and ignores, and the [Snyk Secrets CLI help](https://docs.snyk.io/developer-tools/snyk-cli/commands/secrets-test)
 
 ## Monitor your Open Source or Container Project
 
