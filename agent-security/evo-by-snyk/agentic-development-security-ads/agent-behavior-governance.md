@@ -17,7 +17,6 @@ Agent Behavior Governance secures what agents do as they run. It works within th
 * Observe agent actions across systems, including tool use, command execution, and data access.
 * Enforce policies that control how agents interact with systems, tools, and data.
 * Block high-risk or unauthorized actions before they complete.
-* Modify actions in real time, such as steering an agent prompt before it leaves your environment.
 * Block or redirect agent actions targeting specific systems, environments, or services based on context and policy.
 * Detect and respond to threats such as prompt injection, agent hijacking, and data exfiltration.
 
@@ -27,21 +26,19 @@ Claude Code, Codex, and Cursor.
 
 ## How it works
 
-You view and manage under the Agent Behavior Governance page.&#x20;
-
 Agent Behavior Governance captures the runtime activity of your AI agents, including prompts, tools, Model Context Protocol (MCP) calls, shell commands, and file access. It runs a set of scanners over that activity: each scanner raises findings, and a policy decides what happens when a finding type is detected.
 
 ### Agent Behavior&#x20;
 
-The view is organized into the following tabs:
+You view and manage under the Agent Behavior Governance page. The view is organized into the following tabs:
 
 * **Overview**: a summary of security posture with three sub-tabs:
   * **Findings**: all detections raised by scanners.
-  * **Issues**: policy enforcement outcomes, the subset of findings where a policy decided to log, steer, ask, or block.
+  * **Issues**: policy enforcement outcomes.
   * **Active Scanners**: the list of active scanner policies with trend data.
 * **Machines**: machines running Agentic Development Security hooks, with per-machine agents, activity, findings, and last active time.
 * **Activity**: a timeline of every agent action across your fleet, including prompts, tool calls, shell commands, and file operations, grouped by machine and session.
-* **Policies**: create, edit, reorder, and configure guard policies.
+* **Policies**: create, edit, reorder, and configure policies.
 
 ### Scanners
 

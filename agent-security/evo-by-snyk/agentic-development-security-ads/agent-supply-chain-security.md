@@ -29,21 +29,21 @@ Agent Supply Chain Security discovers two types of assets that agents use: MCP s
 
 The following table shows agent support by operating system. A check mark (✓) means supported. A cross (✗) means the agent supports this but no paths are detected yet. A dash (—) means not applicable for that operating system.
 
-| Agent          | macOS MCP | macOS Skills | Linux MCP | Linux Skills | Windows MCP | Windows Skills |
-| -------------- | --------- | ------------ | --------- | ------------ | ----------- | -------------- |
-| Claude Code    | ✓         | ✓            | ✓         | ✓            | ✓           | ✓              |
-| Claude Desktop | ✓         | ✗            | —         | —            | ✓           | ✗              |
-| Cursor         | ✓         | ✓            | ✓         | ✓            | ✓           | ✓              |
-| VS Code        | ✓         | ✓            | ✓         | ✓            | ✓           | ✓              |
-| Windsurf       | ✓         | ✓            | ✓         | ✓            | ✓           | ✓              |
-| Kiro           | ✓         | ✓            | ✓         | ✓            | ✓           | ✓              |
-| Gemini CLI     | ✓         | ✓            | ✓         | ✓            | ✓           | ✓              |
-| Antigravity    | ✓         | ✓            | ✓         | ✓            | ✓           | ✓              |
-| Codex          | ✓         | ✓            | ✓         | ✓            | —           | —              |
-| Amp            | ✗         | ✓            | ✗         | ✓            | ✗           | ✓              |
-| Amazon Q       | ✓         | ✗            | ✓         | ✗            | ✓           | ✗              |
-| OpenClaw       | ✗         | ✓            | ✗         | ✓            | ✗           | ✓              |
-| OpenCode       | ✗         | ✗            | ✗         | ✗            | ✗           | ✗              |
+| Agent          | macOS MCP | macOS Skills | Linux/WSL MCP | Linux/WSL Skills | Windows MCP | Windows Skills |
+| -------------- | --------- | ------------ | ------------- | ---------------- | ----------- | -------------- |
+| Claude Code    | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
+| Claude Desktop | ✓         | ✗            | —             | —                | ✓           | ✗              |
+| Cursor         | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
+| VS Code        | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
+| Windsurf       | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
+| Kiro           | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
+| Gemini CLI     | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
+| Antigravity    | ✓         | ✓            | ✓             | ✓                | ✓           | ✓              |
+| Codex          | ✓         | ✓            | ✓             | ✓                | —           | —              |
+| Amp            | ✗         | ✓            | ✗             | ✓                | ✗           | ✓              |
+| Amazon Q       | ✓         | ✗            | ✓             | ✗                | ✓           | ✗              |
+| OpenClaw       | ✗         | ✓            | ✗             | ✓                | ✗           | ✓              |
+| OpenCode       | ✗         | ✗            | ✗             | ✗                | ✗           | ✗              |
 
 ## Risk indexes
 
