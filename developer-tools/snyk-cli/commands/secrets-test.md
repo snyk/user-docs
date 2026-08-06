@@ -4,8 +4,8 @@
 
 To use the `snyk secrets test` command:
 
-* Install the latest version of the [Snyk CLI](../../install-the-snyk-cli/)
-* [Authenticate](../../commands/auth.md) your machine with the Snyk CLI using `snyk auth`.
+* Install the latest version of the [Snyk CLI](../install-the-snyk-cli/)
+* [Authenticate](auth.md) your machine with the Snyk CLI using `snyk auth`.
 * Ensure the Secrets feature is enabled for your Organization. If you receive a `SNYK-CLI-0016` error, contact your Snyk account manager.
 
 ## Usage
@@ -27,10 +27,6 @@ Scan your source code to identify and manage sensitive information such as API k
 Use the `-d` option to output the debug logs.
 
 ## Options
-
-### `--file=<FILE_PATH>`
-
-Specify a file or directory to scan. If you do not specify a path, the command scans the current directory. The command always scans directories recursively. Example: `snyk secrets test --file=./my-project/src`
 
 ### `--exclude=<NAME>[,<NAME>]...`
 

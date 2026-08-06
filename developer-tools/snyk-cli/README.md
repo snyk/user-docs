@@ -20,3 +20,5 @@ For additional information, see the following pages:
 * [Snyk CLI for Snyk Code](scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
 * [Snyk CLI for Snyk Container](scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
 * [Snyk CLI for Infrastructure as Code](scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)
+* [Snyk CLI for Snyk Secrets](scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/)
+
