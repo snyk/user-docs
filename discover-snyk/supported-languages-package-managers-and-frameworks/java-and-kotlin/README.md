@@ -1,6 +1,8 @@
 ---
-description: Snyk support for Java and Kotlin with Snyk Code and Snyk Open Source, including SCM import, CLI and IDE testing, and Maven and Gradle
 nav_context: agnostic
+description: >-
+  Snyk support for Java and Kotlin with Snyk Code and Snyk Open Source,
+  including SCM import, CLI and IDE testing, and Maven and Gradle
 ---
 
 # Java and Kotlin
@@ -113,7 +115,6 @@ Kotlin only:
 
 For an overview of the supported security rules, visit [Java rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/java-rules) and [Kotlin rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/kotlin-rules).
 
-
 For Java and Kotlin with Snyk Code, the following file formats are supported:
 
 * For Java: `.java`, `.jsp`, `.jspx`
@@ -156,7 +157,7 @@ Snyk provides flexible capabilities, including:
   * There are [containerized](https://hub.docker.com/r/snyk/snyk) versions available
 * With Partner Platforms: Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk. For Java, Snyk suggests using the SCM integration with Bitbucket Cloud or using the CLI instead of the prepackaged Bitbucket Pipe.
 
-Snyk can monitor container images and their open source or Linux based packages being used in production using Kubernetes integration, to notify customers of known vulnerabilities for applications in production. This feature is available for Enterprise plans only.
+Snyk can monitor container images and their open source or Linux-based packages being used in production using Kubernetes integration, to notify customers of known vulnerabilities for applications in production. This feature is available for Enterprise plans only.
 
 Where a production integration does not exist, use the [snyk monitor](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) CLI command to take a snapshot and monitor what is being pushed to production (available for all plans).
 
@@ -169,7 +170,7 @@ A BOM file includes:
 * a `pom` packaging type: `<packaging>pom</packaging>`.
 * a `dependencyManagement` section.
 
-Third-party Projects can provide BOM files to make dependency management easier. Here are some common examples:
+Third-party Projects can provide BOM files to simplify dependency management. Here are some common examples:
 
 * [spring-data-bom](https://github.com/spring-projects/spring-data-bom) - The Spring team provides a BOM for their Spring Data Project.
 * [jackson-bom](https://github.com/FasterXML/jackson-bom) - The Jackson Project provides a BOM for Jackson dependencies.
@@ -206,7 +207,7 @@ Example of a BOM file:
 
 The `dependencyManagement` section contains dependency elements. Each dependency is a lookup reference for Maven to determine the version to select for transitive (and direct) dependencies.
 
-Defining a dependency in the `dependencyManagement` section ia used only for lookup reference, it does not add it to the dependency tree of the Project.
+Defining a dependency in the `dependencyManagement` section is used only for lookup reference, it does not add it to the dependency tree of the Project.
 
 You can run `mvn dependency:tree` on the previous BOM example to show that Maven does not treat the contents as dependencies of the file itself.
 
@@ -227,11 +228,12 @@ This BOM can be imported into a Project POM as a parent. You do not need to spec
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Snyk Project</name>
-    
-    <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-    </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
+     </dependencies>
 </project>
 ```
 {% endcode %}
@@ -243,13 +245,17 @@ When Snyk scans the BOM files, the `dependencyManagement` contents are not consi
 For the previous examples, Snyk analyzes and treats the files as follows:
 
 * BOM file - Snyk does not create a Snyk Project for this file because it has no dependencies.
-* Project POM - Snyk creates a Project with a single dependency of `log4j,` with `v1.2.12`. Snyk applies the rules from the parent BOM to identify the correct version for `log4j`. The dependency `commons-logging` is not included, as it is not directly declared in the Project POM.
+* Project POM - Snyk creates a Project with a single dependency, `log4j,` with `v1.2.12`. Snyk applies the rules from the parent BOM to identify the correct version for `log4j`. The dependency `commons-logging` is not included, as it is not directly declared in the Project POM.
+
+{% hint style="info" %}
+This example uses `log4j 1.x` to demonstrate BOM version inheritance. log4j 1.x is end-of-life and has known vulnerabilities, so Snyk does not recommend using it.
+{% endhint %}
 
 {% hint style="info" %}
 If a BOM has direct dependencies outside `dependencyManagement`, then Snyk creates a Project for that BOM.
 {% endhint %}
 
-Snyk also offers fix advice, including recommendations for upgrading vulnerable packages with the [Fix PR feature](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests#snyk-fix-prs).
+Snyk also offers fix advice, including recommendations to upgrade vulnerable packages through the [Fix PR feature](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/pull-requests#snyk-fix-prs).
 
 Fix PRs can only be created for dependencies whose versions are managed in the POM file where the issue is reported.
 
