@@ -1,6 +1,6 @@
 # Container image inventory
 
-Container image inventory is a unified view in the Snyk platform that consolidates all of your container images into a single, manageable list, regardless of where they were scanned.
+The Container image inventory is a unified view in the Snyk platform that consolidates all of your container images into a single, manageable list, regardless of where they were scanned.
 
 Instead of navigating a fragmented set of per-scan Projects, you get one authoritative inventory of unique container image assets, each identified by **Registry + Repository + Config Digest**. A single image scanned from a registry import, from the CLI, and a Kubernetes workload all appear as **one asset** with a single, deduplicated issue count.
 
@@ -138,7 +138,7 @@ The Overview tab is split into two sections.
 - **Discovered** — When Snyk first identified this asset
 - **Last seen** — When Snyk last confirmed the asset exists in your environment
 - **Last tested** — When Snyk last scanned the asset
-- **Source** — The origin of the asset
+- **Source** — The origin of the scan that created the asset (for example, docker.io or localhost for a CLI scan)
 - **Test surface** — The distinct set of test surfaces for this asset (for example, CLI, container registry, Kubernetes)
 
 **Container Image Details** (right side) displays image-specific metadata:
@@ -157,19 +157,17 @@ A **Security testing and coverage** section at the bottom shows which scan engin
 
 ![The Overview tab showing asset information, container image details, and security testing coverage.](../.gitbook/assets/container-inventory-overview-tab.png)
 
-#### Change an asset's class
+##### Change an asset's class
 
 Class is a label you assign to an asset, from A to D, using whatever criteria suits your organization (for example, business criticality). Because you can filter and sort the inventory by class, it gives you a way to slice your images along a dimension that you control.
 
-To edit asset class, select the **Class** value in the **Overview** tab to open a dropdown and choose **A**, **B**, **C**, or **D**. The change is saved immediately and is reflected anywhere the asset's class is shown. Images that have not been classified are class **D** by default.
-
-![The Class dropdown open in the Overview tab, showing the A through D options.](../.gitbook/assets/container-inventory-class-editor.png)
+To edit asset class, select the **Class** value in the **Overview** tab to open a dropdown and choose **A**, **B**, **C**, or **D**. The change is saved immediately and is reflected anywhere the asset's class is shown. Images that have not been classified are class **C** by default.
 
 #### Issues tab
 
 The Issues tab shows all deduplicated vulnerabilities for the asset. Summary cards at the top provide:
 
-- **Total Issues** — The total number of unique issues across all scan sources
+- **Open Issues** — The total number of unique issues across all scan sources, not including ones that were ignored
 - **Critical Issues** — The number of critical-severity issues and how many packages are affected
 - **Fixable Issues** — Issues that can be resolved through updates or patches
 - **Exploitable Issues** — Issues with known exploits
@@ -192,10 +190,9 @@ Below the summary, a table lists each issue with the following columns:
 
 The Fix Recommendations tab displays base image upgrade recommendations. Each recommendation shows:
 
-- **The upgrade path** — For example, "Upgrade from alpine:3.12.1 to alpine:3.23.3"
+- **The upgrade path** — For example, "Upgrade from alpine:3.12.1 to alpine:3.24.1"
 - **Impact summary** — The number of issues that would be resolved and the upgrade type (for example, "26 fewer issues - Minor upgrade")
 - **Side-by-side comparison** — The current base image and suggested base image with their respective issue counts and severity breakdowns
-- **Recommend button** — Which option is recommended by Snyk
 
 ![The Fix Recommendations tab showing an upgrade path with a side-by-side comparison of issue counts.](../.gitbook/assets/container-inventory-fix-recommendations-tab.png)
 
