@@ -44,8 +44,6 @@ Select **Inventory** in the left-hand navigation to access container image inven
 
 **At the Group level**, the existing Asset Inventory remains the default view. A banner at the top of the page invites you to try the new container image experience. Click **Try it now** to switch. You can switch back and forth between the existing Asset Inventory and the new container image inventory at any time — both views remain available. Over time, Snyk expects to add more asset types to the new view, and the older experience will eventually be deprecated.
 
-![The Group-level Asset Inventory with a banner linking to the new container image experience.](../.gitbook/assets/container-inventory-group-banner.png)
-
 ### Grouped view (default)
 
 By default, the inventory groups assets by **Image repository** (Registry + Repository). Each group row shows the repository name, the number of images within the group, and aggregated metadata from the most recent image in that group (by build date), including risk score and issue counts broken down by severity.
@@ -61,7 +59,7 @@ Groups are sorted by most recent build date by default. You can expand any group
 | Column | Description |
 | :--- | :--- |
 | **Asset name** | Registry, repository, and a short config digest identifier (for example, `alpine-base@a23a90a4`) |
-| **Class** | The asset classification (A through E). Class is configurable. |
+| **Class** | The asset classification (A through D). This is a configurable value that you can change from the Overview tab once you click into an asset. |
 | **Image tags** | The distinct set of tags seen across all discovery sources for this asset |
 | **Build date** | The date the image was built |
 | **Score** | The maximum risk score across all related Snyk Project discovery sources |
@@ -70,9 +68,27 @@ Groups are sorted by most recent build date by default. You can expand any group
 | **Test surface** | The distinct set of test surfaces (for example, CLI, container registry, Kubernetes) |
 | **Last scan** | The most recent scan timestamp across all related discovery sources |
 
-Within an expanded group, assets are sorted by build date so you can easily identify the most recent version. Pagination controls (Previous / Next) appear when a group contains more assets than fit on one page.
+Within an expanded group, assets are sorted by build date (newest first) by default so you can easily identify the most recent version.
 
-![An expanded repository group for "alpine-base" showing 4 image versions with pagination controls.](../.gitbook/assets/container-inventory-expanded-group.png)
+![An expanded repository group for "alpine-base" showing 4 image versions.](../.gitbook/assets/container-inventory-expanded-group.png)
+
+#### Sort the grouped view
+
+The grouped view uses a dual sort selector which lets you order the repository groups and the assets inside those groups independently. Click the sort control in the top-right corner to open it. The panel has two columns:
+
+- **Sort Image Repositories** — controls the order of the group rows.
+- **Sort Assets** — controls the order of the image assets within each expanded group.
+
+The following options are available for repository groups:
+
+| Option | Description |
+| :--- | :--- |
+| **Follow asset sorting** (default) | Orders repositories using the currently selected asset sort, applied to each repository's latest-built image |
+| **Name** | Orders repositories alphabetically (A-Z or Z-A) |
+| **Count** | Orders repositories by the number of assets they contain |
+| **Last seen** | Orders repositories by when they were last seen |
+
+Assets within a group can be sorted by build date, risk score (if enabled), discovered, last updated, or total issues.
 
 ### Flat (ungrouped) view
 
@@ -80,7 +96,7 @@ To see all assets in a single flat list instead of grouped by repository, click 
 
 ![The ungrouped flat view showing individual assets with all columns.](../.gitbook/assets/container-inventory-flat-view.png)
 
-You can sort the flat view by build date, score, issue count, last scan, class, discovered, or updated — in ascending or descending order — using the sort control in the top-right corner. Sorting currently applies to the flat view; support for sorting the grouped view is planned for a future release.
+You can sort the flat view by build date, score, issue count, last scan, class, discovered, or updated — in ascending or descending order — using the sort control in the top-right corner.
 
 ### Filter and search
 
@@ -89,7 +105,7 @@ Click **Add filter** to open the filter panel. Filters are additive (combined wi
 | Filter | Description |
 | :--- | :--- |
 | **Asset name** | Filter by the full asset name (`registry/repository@digest`) |
-| **Class** | Filter by asset classification (A, B, C, D, E) |
+| **Class** | Filter by asset classification (A, B, C, D) |
 | **Config digest** | Filter by config digest |
 | **Image labels** | Filter by image label key/value pairs |
 | **Image tag** | Filter by image tags |
@@ -118,7 +134,7 @@ The Overview tab is split into two sections.
 
 - **Asset ID** — The unique identifier for this asset
 - **Type** — The asset type (Container Image)
-- **Class** — The risk classification (A through E)
+- **Class** — The risk classification (A through D). This field is editable; see [Change an asset's class](container-image-inventory.md#change-an-assets-class).
 - **Discovered** — When Snyk first identified this asset
 - **Last seen** — When Snyk last confirmed the asset exists in your environment
 - **Last tested** — When Snyk last scanned the asset
@@ -140,6 +156,14 @@ The Overview tab is split into two sections.
 A **Security testing and coverage** section at the bottom shows which scan engines have tested this asset and when.
 
 ![The Overview tab showing asset information, container image details, and security testing coverage.](../.gitbook/assets/container-inventory-overview-tab.png)
+
+#### Change an asset's class
+
+Class is a label you assign to an asset, from A to D, using whatever criteria suits your organization (for example, business criticality). Because you can filter and sort the inventory by class, it gives you a way to slice your images along a dimension that you control.
+
+To edit asset class, select the **Class** value in the **Overview** tab to open a dropdown and choose **A**, **B**, **C**, or **D**. The change is saved immediately and is reflected anywhere the asset's class is shown. Images that have not been classified are class **D** by default.
+
+![The Class dropdown open in the Overview tab, showing the A through D options.](../.gitbook/assets/container-inventory-class-editor.png)
 
 #### Issues tab
 
@@ -229,7 +253,6 @@ The existing Projects view for containers remains unchanged.
 | :--- | :--- |
 | **Search scope** | The search bar matches from the beginning of the asset name field. Searching for a partial image name or tag within a longer string may not return expected results. Use the **Repository** or **Image tag** filters for more precise lookups. |
 | **CLI scans without a registry hostname** | Images scanned directly from a tar file (`snyk container test image.tar`) may not associate with their registry counterpart because the registry field is null. |
-| **Mutable asset fields** | Fields such as class and owner cannot be edited directly in the UI in this milestone. Editing is planned for a future release. |
 | **Tag staleness** | Because tags are scoped per discovery source, two assets in the same repository could temporarily show the same tag if a discovery source has not yet been refreshed. This can cause the inventory to show images that no longer carry the `latest` tag in your Projects view. |
 | **Backfilling existing Projects** | Not all existing Projects have the metadata required to compute the new asset identity. CLI and Kubernetes users must upgrade to the latest Snyk CLI or `snyk-monitor` and re-scan to populate the inventory for existing images. |
 | **Base image inference** | Base image detection is heuristic-based (parsing the Dockerfile if present, or matching layer hashes against a known image index). Results may vary across Projects that scanned the same image differently (for example, with or without the Dockerfile). |
