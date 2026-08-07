@@ -9,12 +9,6 @@ nav_context: new
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
-## August 2026
-
-### Snyk CLI
-
-* AI-BOM enrichment from the CLI: the `snyk aibom` and `snyk aibom test` commands document the new `--enriched` option. When enabled, it runs additional slower enrichment steps on the AI-BOM. Visit [snyk aibom](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom) and [snyk aibom test](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom-test) for more details.
-
 ## July 2026
 
 ### Evo by Snyk
@@ -30,7 +24,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Snyk Secrets
 
 * Snyk Secrets is now GA, with documentation across the Snyk CLI, SCM integrations, and the VS Code, Visual Studio, Eclipse, and JetBrains IDE plugins. Visit [Secrets scanning in the SCM](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm) for more details.
-* The `snyk secrets test` command is now available for scanning secrets from the command line. Visit [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/secrets-scanning-in-the-snyk-cli) for more details.
+* The `snyk secrets test` command is now available for scanning secrets from the command line. Visit [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/secrets-scanning-in-the-snyk-cli) for more details.
 
 ### Snyk API & Web
 
@@ -44,13 +38,14 @@ The most recent updates include significant changes to the user docs, such as fe
 * Notification emails for new vulnerabilities are now off by default, and a new section documents notification precedence rules. Visit [Manage notifications](https://docs.snyk.io/platform-administration/snyk-platform-administration/manage-notifications) for more details.
 * Snowflake Data Share added two fields to the prevention events dataset, `finding_branch_key` and `finding_asset_key`. Visit [Data share data dictionary](https://docs.snyk.io/manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary) for more details.
 
+
 ## June 2026
 
 ### Snyk CLI
 
 * Project tags can now be set from the command line: the `snyk code test` command documents the new `--project-tags=<TAG>[,<TAG>...]` option, used with `--report` to apply comma-separated `key=value` tags (set `--project-tags=` to clear them). Visit [snyk code test](https://docs.snyk.io/developer-tools/snyk-cli/commands/code-test) for more details.
 * AI-BOM language support has expanded: the `snyk aibom` command now generates a CycloneDX v1.6 AI-BOM for Projects written in Python, Java, JavaScript, or Go, up from Python only. Visit [snyk aibom](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom) for more details.
-* Upgrading is now documented on a dedicated page: the Snyk CLI docs add an "Upgrade the Snyk CLI" page covering how to update existing installations. Visit [Upgrade the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/upgrade-the-snyk-cli) for more details.
+* Upgrading is now documented on a dedicated page: the Snyk CLI docs add an "Upgrade the Snyk CLI" page covering how to update existing installations. Visit [Upgrade the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/upgrade-the-snyk-cli) for more details.
 * Standalone installation instructions were improved to clarify how to download and install the CLI binary directly. Visit [Install or update the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli) for more details.
 
 ### Snyk Container
