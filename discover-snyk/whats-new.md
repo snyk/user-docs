@@ -9,6 +9,38 @@ nav_context: new
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## August 2026
+
+### Snyk Agent Scan
+
+* Snyk Agent Scan now trusts custom CA certificates supplied via SSL_CERT_FILE, REQUESTS_CA_BUNDLE, or NODE_EXTRA_CA_CERTS, so scans run through the Snyk CLI succeed behind a proxy without needing an insecure flag.
+* Snyk Agent Scan guard installation now checks whether each agent is actually installed and skips hook installation for those that aren't, without ending the run prematurely.
+* Snyk Agent Scan MCP server findings now identify the specific affected tools for destructive behavior, untrusted content, and private data rules, and also report issues that come from a server's prompts even when no individual tool is affected.
+* Snyk Agent Scan findings for unverifiable runtime dependencies now include the specific external URLs that triggered the issue.
+* Snyk Agent Scan results now include per-component risk indexes for scanned skills and MCP servers.
+* Snyk Agent Scan analysis endpoints now support explicit API versioning through a version query parameter, with a new 2026-07-10 version available alongside the existing default.
+* Snyk Agent Scan detection of third-party content exposure in skills has been reworked to use a clearer no/low/medium verdict and reports the source of the exposure.
+* Snyk Agent Scan is more reliable under load: analysis retries are now bounded so requests return a clear error instead of timing out, and cached analysis responses are validated before reuse so malformed results no longer cause repeated scan failures.
+* Snyk Agent Scan documentation now includes a full CLI reference covering commands, flags, environment variables and exit codes, refreshed JSON output details, a quick start for running via uvx or standalone release binaries, and guidance on verifying GPG-signed releases, SBOMs and checksums.
+
+### Snyk AI-BOM
+
+* Snyk AI-BOM now scans MCP configuration files, plugin definitions, and hooks configurations in production, including for GCP private cloud deployments.
+* Snyk AI-BOM now runs MCP server and agent risk analysis in production.
+* Snyk AI-BOM AI enrichment is now available for CLI scans, and you can trigger it explicitly with the new `--enriched` flag on the AI-BOM CLI commands.
+* Generated Snyk AI-BOM documents now record whether AI enrichment was enabled when the AI-BOM was produced.
+* Snyk AI-BOM inventories now record how each component and relationship was discovered, giving clearer provenance for scan results.
+* Snyk AI-BOM model entries now include additional details from the AI risk database, such as package URL, version, model timestamp, and provider.
+* Snyk AI-BOM CycloneDX output now includes file locations for skill risk findings, along with flagged malicious download URLs and unverifiable dependency URLs.
+* Snyk AI-BOM scans now either complete in full or report an error instead of silently returning partial results, making scan output more consistent from run to run.
+* Snyk AI-BOM model name detection is more accurate, filtering out invalid or junk model names from results.
+* Snyk AI-BOM no longer reports models that are not present in the AI risk database as known model references.
+* Snyk AI-BOM now redacts secrets from code snippets in production scans.
+* Snyk AI-BOM can now retrieve complete skill files when analysing skills, instead of being limited to a small snippet window.
+* Snyk AI-BOM repeat scans are now de-duplicated correctly when the enrichment setting or commit version differs, so requesting a different variant returns fresh results.
+* Snyk AI-BOM policy test results in the CLI now match the issues reported in the Snyk Web UI.
+* Fixed the Snyk AI-BOM HTML report so the dependency graph renders correctly again.
+
 ## July 2026
 
 ### Evo by Snyk
