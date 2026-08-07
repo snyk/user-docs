@@ -5,6 +5,8 @@ description: >-
   you develop
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Visual Studio extension
 
 {% hint style="info" %}

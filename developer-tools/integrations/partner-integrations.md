@@ -3,6 +3,8 @@ description: Explore Snyk Partner integration solutions across 17 categories
 nav_context: classic
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Partner integrations
 
 Explore our 17 integration categories for Snyk Partner solutions below. Click on a category to view specific partner offerings.

@@ -5,6 +5,8 @@ description: >-
   Visual Studio Code extension
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # View analysis results from Visual Studio Code extension
 
 ## Overview of results

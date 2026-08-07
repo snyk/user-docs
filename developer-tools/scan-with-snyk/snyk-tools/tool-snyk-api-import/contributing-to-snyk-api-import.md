@@ -3,6 +3,8 @@ description: How to contribute to the snyk-api-import project, including the Sny
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Contributing to snyk-api-import
 
 ## Contributor Agreement

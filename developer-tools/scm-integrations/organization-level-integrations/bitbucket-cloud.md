@@ -3,6 +3,8 @@ description: How to set up the Snyk Bitbucket Cloud SCM integration, with the Bi
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Bitbucket Cloud
 
 {% hint style="info" %}

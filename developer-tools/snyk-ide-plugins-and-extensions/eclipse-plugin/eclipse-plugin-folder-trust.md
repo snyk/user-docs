@@ -3,6 +3,8 @@ description: How the Snyk Eclipse plugin uses folder trust before scanning new f
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Eclipse plugin folder trust
 
 The Snyk plugin asks for folder trust before allowing scans to be run against new folders.

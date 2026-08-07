@@ -3,6 +3,8 @@ description: How to set up the Snyk GitHub Cloud App integration, including use 
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # GitHub Cloud App
 
 {% hint style="info" %}

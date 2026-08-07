@@ -3,6 +3,8 @@ description: How Snyk GitHub Actions set up Snyk and check for vulnerabilities i
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # GitHub actions for Snyk setup and checking for vulnerabilities
 
 ## Overview of GitHub Actions Integration

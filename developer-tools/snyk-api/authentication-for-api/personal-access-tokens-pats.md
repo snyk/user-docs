@@ -3,6 +3,8 @@ description: What Personal Access Tokens (PATs) are and how they authenticate Sn
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Personal Access Tokens (PATs)
 
 ## What are PATs?

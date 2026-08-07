@@ -3,6 +3,8 @@ description: How to set up Slack to connect Snyk with AWS Lambda
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Slack setup to connect Snyk with AWS Lambda
 
 To enable Snyk to communicate with Slack, start by setting up incoming webhooks through Slack Apps. These are provided by Slack to enable developers to communicate with Slack.

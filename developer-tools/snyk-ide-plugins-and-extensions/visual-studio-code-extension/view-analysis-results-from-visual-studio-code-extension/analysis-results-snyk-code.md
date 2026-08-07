@@ -3,6 +3,8 @@ description: How to view Snyk Code security and quality results in the Visual St
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Analysis results: Snyk Code
 
 Snyk Code analysis shows security vulnerabilities and quality issues in your code with every scan.

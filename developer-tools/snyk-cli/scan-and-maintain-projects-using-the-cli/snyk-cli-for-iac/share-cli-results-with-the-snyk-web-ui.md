@@ -3,6 +3,8 @@ description: How to share Snyk IaC CLI results with the Snyk Web UI
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Share CLI results with the Snyk Web UI
 
 You can use the [CLI](../../) `snyk iac test` command to address known configuration issues.
