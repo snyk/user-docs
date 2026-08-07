@@ -22,7 +22,7 @@ Before you use Snyk Secrets, ensure you meet the following prerequisites:
 
 * You must enable the Secrets setting on the organization level.
 * Enable [Code Consistent Ignores](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code) to use Secrets Consistent Ignores and the Ignore Approval Workflow.
-* Update your [IDE](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/release-and-support-policy-for-snyk-ide-plugins) and [CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/releases-and-channels-for-the-snyk-cli) to the latest versions to scan for secrets.
+* Update your [IDE](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/release-and-support-policy-for-snyk-ide-plugins) and [CLI](https://docs.snyk.io/developer-tools/snyk-cli/releases-and-channels-for-the-snyk-cli) to the latest versions to scan for secrets.
 * Workspaces must be enabled to leverage Secret scanning. You can [read more](https://docs.snyk.io/developer-tools/integrations/scm-integrations/workspaces) on Workspaces and how to enable them.&#x20;
 
 {% hint style="info" %}
