@@ -146,4 +146,4 @@ Unlike Docker-based actions, the Snyk Setup action allows you to pin a specific 
 
 Update the Snyk CLI manually when using standalone executables. To update, download the latest binary and replace the existing executable. For example, on Linux or MacOS, run the curl download command again.
 
-For more information including the download commands, visit [Install the Snyk CLI](../install-the-snyk-cli/#direct-binary-download).
+For more information including the download commands, visit [Install the Snyk CLI](install-the-snyk-cli/#direct-binary-download).
