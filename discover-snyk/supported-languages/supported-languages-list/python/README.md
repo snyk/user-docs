@@ -41,6 +41,7 @@ For Python, the following frameworks and libraries are supported:
 * aiofiles
 * argparse
 * anthropic
+* AWS Lambda
 * bottle
 * CherryPy
 * Django
@@ -54,6 +55,7 @@ For Python, the following frameworks and libraries are supported:
 * grpcio
 * huggingface\_hub
 * httpx
+* LangChain
 * ldap3
 * libxml
 * lxml
@@ -84,6 +86,14 @@ For Python, the following frameworks and libraries are supported:
 * werkzeug
 {% endcolumn %}
 {% endcolumns %}
+
+### Serverless support
+
+Snyk Code analyzes Python functions running on AWS Lambda. Handlers are resolved from AWS SAM and Serverless Framework configuration files, so the function entry point is analyzed as application code rather than skipped.
+
+Event data reaching a handler from an Amazon SQS trigger is treated as a taint source, so injection, path-traversal, and related findings reflect data entering the function from the queue.
+
+Support is currently limited to SQS triggers. Other AWS event sources are not yet modeled as taint sources.
 
 ### Directory layout
 
