@@ -23,11 +23,11 @@ Snyk Container reports vulnerabilities from the Go standard library in addition 
 
 ### How it works
 
-The Go version is derived from the toolchain version compiled into the binary. Snyk reports all standard library package vulnerabilities that affect that Go version (for example, from `fmt` or `net/http`), regardless of which libraries the code imports or calls. Snyk does not currently perform any reachability analysis for Go standard library vulnerabilities.
+Snyk derives the Go version from the toolchain version compiled into the binary. Scans report all standard library package vulnerabilities that affect that Go version (for example, from `fmt` or `net/http`), regardless of which libraries your application's code imports or calls. Snyk does not perform any reachability analysis for Go standard library vulnerabilities.
 
 ### What this means for your results
 
-Expect to see vulnerabilities from Go standard library packages on your container Projects. These are valid, although not all of them may be reachable by your application's code. Snyk Container has not always reported these vulnerabilities, so you may see an increase in issues on your existing Projects. You can either:
+Expect to see vulnerabilities from Go standard library packages on your container Projects. These are valid, although not all of them may be reachable by your application's code. Snyk Container has not always reported these vulnerabilities, so expect to see an increase in vulnerabilities on your existing Projects. To address this, you can:
 
 * **Remediate:** Rebuild the binary with a Go toolchain version that fixes the reported vulnerabilities.
 * **Reduce noise:** [Ignore a reported standard library vulnerability](../../../manage-risk/prioritize-issues-for-fixing/ignore-issues/README.md) if you determine it is not relevant to your application.
