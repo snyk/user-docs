@@ -26,4 +26,5 @@ That page also explains how to do the following:
 
 * [Ignore findings](secrets-scanning-in-the-snyk-cli.md#ignore-findings) that are placeholders, revoked keys, or won't fix scenarios.
 * [Review ignored secrets](secrets-scanning-in-the-snyk-cli.md#review-ignored-secrets) to audit your codebase.
+* [Exclude files and directories from a scan](secrets-scanning-in-the-snyk-cli.md#exclude-files-and-directories-from-a-scan) using the `.snyk` file or the `--exclude` option.
 * [Scan with a pre-commit hook](secrets-scanning-in-the-snyk-cli.md#scan-with-a-pre-commit-hook) to catch secrets before they reach a commit.
