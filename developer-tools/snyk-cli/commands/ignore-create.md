@@ -20,9 +20,9 @@ Creating ignores from the command line is an Early Access feature of the Ignore 
 
 Complete the following before you create an ignore:
 
-* Install Snyk CLI v1.1297.1 or later. Visit [Install or update the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/install-the-snyk-cli).
+* Install Snyk CLI v1.1297.1 or later. Visit [Install or update the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli).
 * Enable Consistent Ignores for Snyk Code for your Group or Organization. Visit [Consistent Ignores for Snyk Code](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code).
-* Set the Organization that holds the ignores. Visit [How to select the Organization to use in the CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli).
+* Set the Organization that holds the ignores. Visit [How to select the Organization to use in the CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/how-to-select-the-organization-to-use-in-the-cli).
 * Commit and push your code to the remote repository so that reviewers can locate the finding.
 
 This command identifies a finding by its finding identifier. To obtain it, run `snyk code test --json` and locate `runs.results[n].fingerprints.snyk/assets/finding/v1` in the output. Visit [Consistent Ignores for Snyk Code CLI](https://docs.snyk.io/scan-fix-and-prevent/fix/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code/snyk-cli#access-the-finding-identifier-in-json-and-sarif-output).

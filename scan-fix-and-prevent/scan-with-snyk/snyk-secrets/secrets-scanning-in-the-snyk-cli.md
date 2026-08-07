@@ -21,7 +21,7 @@ Scan your codebase for hard-coded secrets, including API keys and passwords. Use
 
 Review the command syntax, options, and exit codes.
 
-[snyk secrets test command reference](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands/secrets-test)
+[snyk secrets test command reference](https://docs.snyk.io/developer-tools/snyk-cli/commands/secrets-test)
 {% endcolumn %}
 
 {% column %}
@@ -29,7 +29,7 @@ Review the command syntax, options, and exit codes.
 
 Learn how to scan for secrets using the Snyk CLI.
 
-[Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/secrets-scanning-in-the-snyk-cli)
+[Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli)
 {% endcolumn %}
 {% endcolumns %}
 
