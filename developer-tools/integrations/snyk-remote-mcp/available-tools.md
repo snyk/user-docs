@@ -4,7 +4,7 @@ description: Reference for the read-only tools and limits available through Snyk
 
 # Snyk Remote MCP tools
 
-Snyk Remote MCP advertises 28 read-only tools. Raw list and get tools help you discover and inspect Snyk resources. Reporting and workflow tools resolve readable scopes, combine related data, prioritize evidence, and return both Markdown and structured content.
+Snyk Remote MCP advertises 29 read-only tools. Raw list and get tools help you discover and inspect Snyk resources. Reporting and workflow tools resolve readable scopes, combine related data, prioritize evidence, and return both Markdown and structured content.
 
 ## Identity and scope discovery
 
@@ -75,10 +75,13 @@ Verification reports only remote Snyk state. It does not prove that a local scan
 | `snyk_review_project_sbom`       | Reviews an existing Project SBOM and dependency snapshot, correlates open package-vulnerability issue instances, and returns component and ecosystem counts, direct-dependency evidence, package risk, data-quality warnings, and coverage without running a scan. |
 | `snyk_get_project_sbom`          | Retrieves an existing Project SBOM as CycloneDX 1.4, 1.5, or 1.6 JSON, or SPDX 2.3 JSON.                                                                                                                                                 |
 | `snyk_list_project_dependencies` | Retrieves the dependency graph captured by the latest monitored Project snapshot. This tool reads the Snyk v1 API because there is no equivalent REST endpoint.                                                                          |
+| `snyk_search_dependencies`       | Finds which Projects in an Organization depend on one or more packages at exact versions, without crawling every Project's SBOM or dependency graph. Each match includes the Projects that depend on it. Organization-scoped; loop over `snyk_list_orgs` to cover a Group. This tool reads the Snyk v1 API because there is no equivalent REST endpoint. |
 | `snyk_test_package`              | Looks up direct vulnerabilities for one Package URL without onboarding a Project.                                                                                                                                                        |
 | `snyk_test_packages`             | Looks up direct vulnerabilities for a batch of up to 100 Package URLs. This capability is not enabled for every Snyk customer.                                                                                                           |
 
 If batch package testing is unavailable, `snyk_test_packages` returns `snyk_test_package` as the fallback tool. Empty SBOM and dependency results include data-quality warnings.
+
+`snyk_search_dependencies` accepts an Organization ID and a `dependencies` array of `{name, version}` pairs, plus optional `page` and `per_page` (default 100, maximum 1000) for large result sets. Both `name` and `version` are required per entry — the upstream v1 API matches exact `name@version` strings and has no "any version" wildcard; omitting the version returns zero matches rather than every version. The response echoes `total`, `page`, `per_page`, and `has_more` alongside the raw `results`.
 
 The `snyk_review_project_sbom` tool accepts an Organization and Project by name or UUID. Use `project_type`, `project_origin`, and `target_file` to disambiguate duplicate Project names. The `format` argument supports CycloneDX 1.4, 1.5, or 1.6 JSON and SPDX 2.3 JSON; the default is `cyclonedx1.4+json`. Its evidence controls are:
 
@@ -136,7 +139,7 @@ Tool rate limits use a fixed one-minute window for each authenticated access tok
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 60                  | `snyk_test_package`                                                                                                                                                                                                                                                                                                                   |
 | 30                  | `snyk_list_orgs`, `snyk_get_org`, `snyk_list_projects`, `snyk_get_project`, `snyk_list_targets`, `snyk_get_target`, `snyk_list_collections`, `snyk_get_issue`, `snyk_get_current_user`                                                                                                                                                |
-| 20                  | `snyk_list_issues`, `snyk_get_project_sbom`, `snyk_list_project_dependencies`, `snyk_test_packages`, `snyk_list_groups`, `snyk_get_group`, `snyk_list_container_images`, `snyk_verify_issue_remediation`                                                                                                                               |
+| 20                  | `snyk_list_issues`, `snyk_get_project_sbom`, `snyk_list_project_dependencies`, `snyk_search_dependencies`, `snyk_test_packages`, `snyk_list_groups`, `snyk_get_group`, `snyk_list_container_images`, `snyk_verify_issue_remediation`                                                                                                                               |
 | 10                  | `snyk_get_issue_counts`, `snyk_get_group_issues`, `snyk_search_audit_logs`, `snyk_get_issues_report`, `snyk_get_project_risk_report`, `snyk_get_security_posture_report`, `snyk_get_remediation_backlog`, `snyk_get_group_risk_rollup`, `snyk_get_remediation_handoff`, `snyk_review_project_sbom`                                         |
 
 When a tool reaches its limit, it returns a `rate_limit` error with `retry_after_seconds`.

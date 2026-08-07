@@ -32,6 +32,7 @@ Use Snyk Remote MCP to ask questions such as:
 * Which Projects, targets, collections, or container images are available?
 * Which components in an existing Project SBOM have open package vulnerabilities or fixes?
 * Is a specific package version affected by known vulnerabilities?
+* Which Projects in an Organization depend on a specific package at an exact version?
 * What evidence is available to hand an issue off to Snyk Studio for local remediation?
 * Has Snyk observed an issue as resolved after updated scan results reached Snyk?
 
@@ -101,7 +102,7 @@ The service requests the following read scopes:
 | --------------------------- | ------------------------------------------------------- |
 | `org.read`                  | Identity and Organization discovery                     |
 | `org.project.read`          | Projects and targets                                    |
-| `org.project.snapshot.read` | Issues, SBOMs, dependency graphs, and issue aggregation |
+| `org.project.snapshot.read` | Issues, SBOMs, dependency graphs, dependency search, and issue aggregation |
 | `org.package.test`          | Package vulnerability lookup and remediation enrichment |
 | `org.report.read`           | Reporting data and Group issue views where available    |
 | `org.collection.read`       | Project collections                                     |
@@ -113,7 +114,7 @@ To review or revoke access, navigate to your personal **Account Settings** and s
 
 ## Available tools
 
-Snyk Remote MCP advertises 28 tools. These include discovery and raw-data tools, as well as reporting and workflow tools that combine Snyk API data into prioritized Markdown and structured results.
+Snyk Remote MCP advertises 29 tools. These include discovery and raw-data tools, as well as reporting and workflow tools that combine Snyk API data into prioritized Markdown and structured results.
 
 Visit [Snyk Remote MCP tools](available-tools.md) for the complete catalog and current limits.
 
