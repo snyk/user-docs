@@ -167,8 +167,8 @@ A directive is a rule (also known as a command, instruction, and more) that guid
 
 When your application uses another package, this other package becomes a dependency in your own software.
 
-* A direct dependency is a package you include in your own Project.
-* An indirect dependency (also known as a deep, chained, or transitive dependency), is a package that is used by one of your direct dependencies.
+- A direct dependency is a package you include in your own Project.
+- An indirect dependency (also known as a deep, chained, or transitive dependency), is a package that is used by one of your direct dependencies.
 
 ### Dependency tree
 
@@ -563,6 +563,10 @@ A library used by the Snyk CLI to scan a certain language or build system.
 ### Snyk Secrets
 
 A Snyk product. Enables developers to find hardcoded credentials in repositories by providing accurate scanning across plain text files. See [Snyk Secrets](https://docs.snyk.io/scan-with-snyk/snyk-secrets).
+
+### Snyk Remote MCP
+
+A hosted, read-only MCP server that allows compatible AI assistants to query existing Snyk data, including Organizations, Projects, issues, dependencies, and security reports. It does not require the Snyk CLI or access to local source code. Visit [Snyk Remote MCP](https://docs.snyk.io/developer-tools/integrations/snyk-remote-mcp) for more information.
 
 ### Snyk Studio
 
