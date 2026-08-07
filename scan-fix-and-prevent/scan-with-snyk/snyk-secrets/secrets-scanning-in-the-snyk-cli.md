@@ -15,21 +15,4 @@ To use Snyk Secrets in the CLI, consider these system parameters:
 
 Scan your codebase for hard-coded secrets, including API keys and passwords. Use the `snyk secrets test` command to run a secrets scan from the command line.
 
-{% columns %}
-{% column %}
-### Command reference
-
-Review the command syntax, options, and exit codes.
-
-[snyk secrets test command reference](https://docs.snyk.io/developer-tools/snyk-cli/commands/secrets-test)
-{% endcolumn %}
-
-{% column %}
-### Scan guidance
-
-Learn how to scan for secrets using the Snyk CLI.
-
-[Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli)
-{% endcolumn %}
-{% endcolumns %}
-
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h3>Command reference</h3></td><td>Review the comamnd syntax, options, and exit codes.</td><td><a href="https://docs.snyk.io/developer-tools/snyk-cli/commands/secrets-test">Snyk secrets test command reference</a></td></tr><tr><td><h3>Scan guidance</h3></td><td>Learn how to scan for secrets using the Snyk CLI.</td><td><a href="https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli">Secrets scanning in the Snyk CLI</a></td></tr></tbody></table>
