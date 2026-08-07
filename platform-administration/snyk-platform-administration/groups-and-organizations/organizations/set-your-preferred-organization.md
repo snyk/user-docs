@@ -3,6 +3,8 @@ description: How to set your preferred Snyk Organization, which Snyk uses by def
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Set your preferred Organization
 
 ## Set your preferred Organization

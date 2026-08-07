@@ -3,6 +3,8 @@ description: How to reuse a brokered SCM integration across multiple Snyk Organi
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Clone an integration across your Snyk Organizations
 
 You can choose to use the same brokered Git integration across multiple Organizations in Snyk by copying and duplicating the Organization you have already configured.

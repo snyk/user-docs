@@ -3,6 +3,8 @@ description: Example of configuring Snyk user roles after setting up OneLogin SS
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Example: setting up custom mapping for OneLogin
 
 This example shows how to configure user roles after you have [configured OneLogin SSO for Snyk](../../set-up-snyk-single-sign-on-sso.md).
