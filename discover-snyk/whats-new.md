@@ -24,7 +24,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Snyk Secrets
 
 * Snyk Secrets is now GA, with documentation across the Snyk CLI, SCM integrations, and the VS Code, Visual Studio, Eclipse, and JetBrains IDE plugins. Visit [Secrets scanning in the SCM](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm) for more details.
-* The `snyk secrets test` command is now available for scanning secrets from the command line. Visit [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/secrets-scanning-in-the-snyk-cli) for more details.
+* The `snyk secrets test` command is now available for scanning secrets from the command line. Visit [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/secrets-scanning-in-the-snyk-cli) for more details.
 
 ### Snyk API & Web
 
@@ -45,7 +45,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 * Project tags can now be set from the command line: the `snyk code test` command documents the new `--project-tags=<TAG>[,<TAG>...]` option, used with `--report` to apply comma-separated `key=value` tags (set `--project-tags=` to clear them). Visit [snyk code test](https://docs.snyk.io/developer-tools/snyk-cli/commands/code-test) for more details.
 * AI-BOM language support has expanded: the `snyk aibom` command now generates a CycloneDX v1.6 AI-BOM for Projects written in Python, Java, JavaScript, or Go, up from Python only. Visit [snyk aibom](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom) for more details.
-* Upgrading is now documented on a dedicated page: the Snyk CLI docs add an "Upgrade the Snyk CLI" page covering how to update existing installations. Visit [Upgrade the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/upgrade-the-snyk-cli) for more details.
+* Upgrading is now documented on a dedicated page: the Snyk CLI docs add an "Upgrade the Snyk CLI" page covering how to update existing installations. Visit [Upgrade the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/upgrade-the-snyk-cli) for more details.
 * Standalone installation instructions were improved to clarify how to download and install the CLI binary directly. Visit [Install or update the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli) for more details.
 
 ### Snyk Container
