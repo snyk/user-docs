@@ -15,7 +15,7 @@ Examples follow for an issue on a Project page that has been ignored by a securi
 
 ## **Custom and original severity in the CLI**
 
-<div align="left"><figure><img src="../../../.gitbook/assets/unnamed.png" alt="Custom and original severity in the CLI"><figcaption><p>Custom and original severity in the CLI</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/custom-original-severity-cli.png" alt="Custom and original severity in the CLI"><figcaption><p>Custom and original severity in the CLI</p></figcaption></figure></div>
 
 ## **Custom and original severity in Project page UI**
 
