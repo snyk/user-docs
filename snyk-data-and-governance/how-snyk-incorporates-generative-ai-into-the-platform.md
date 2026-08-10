@@ -1,6 +1,8 @@
 ---
-description: How Snyk uses generative AI across its platform, including the third-party models that power its AI features
 nav_context: agnostic
+description: >-
+  How Snyk uses generative AI across its platform, including the third-party
+  models that power its AI features
 ---
 
 # How Snyk incorporates generative AI into the platform
@@ -41,6 +43,10 @@ Snyk uses LLMs from established AI providers, including OpenAI and Anthropic, th
 ### Snyk API & Web - Broken Object Level Authorization for APIs
 
 <table><thead><tr><th width="229.3359375">Attribute</th><th>Details</th></tr></thead><tbody><tr><td><strong>Purpose</strong></td><td>Designed to help identify authorization vulnerabilities in APIs, including Broken Object Level Authorization.</td></tr><tr><td><strong>AI models / deployment</strong></td><td>Anthropic’s Claude models through AWS Bedrock.</td></tr><tr><td><strong>Data processed</strong></td><td>Parts of HTTP requests and responses (i.e. components of web communications that are analyzed to detect vulnerabilities and classify content).</td></tr><tr><td><strong>Data retention</strong></td><td>HTTP requests and responses are not retained by the provider of these AI models.</td></tr><tr><td><strong>Additional information</strong></td><td>More information about Snyk API &#x26; Web is available <a href="https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-api-web">here</a>.</td></tr></tbody></table>
+
+### Snyk API & Web - Automated Target Authentication Configuration
+
+<table><thead><tr><th width="229.3359375">Attribute</th><th>Details</th></tr></thead><tbody><tr><td><strong>Purpose</strong></td><td>Designed to help automate a target’s login flow by generating a login sequence for authenticated DAST scans, including multi-step flows and two-factor authentication, without manual browser recording.</td></tr><tr><td><strong>AI models / deployment</strong></td><td>Anthropic’s Claude models through AWS Bedrock.</td></tr><tr><td><strong>Data processed</strong></td><td>Login page data comprising raw page source code and screenshots, and optional natural-language instructions for non-standard login flows.</td></tr><tr><td><strong>Data retention</strong></td><td>Login page data is not retained by the provider of these AI models.</td></tr><tr><td><strong>Additional information</strong></td><td>More information about Snyk API &#x26; Web is available <a href="https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-api-web">here</a>.</td></tr></tbody></table>
 
 ### Snyk SAST / DAST Correlation
 
