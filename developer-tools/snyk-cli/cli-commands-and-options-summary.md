@@ -236,6 +236,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 ## `snyk aibom` command options
 
+`--enriched`: [snyk aibom](commands/aibom.md), [snyk aibom test](commands/aibom-test.md)\
 `--html`\
 `--json-file-output`: [snyk aibom](commands/aibom.md)
 
