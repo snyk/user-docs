@@ -27,15 +27,6 @@ If you add Projects through GitHub integration, these Projects are added to the 
 
 To navigate to a different Organization, click the Organization switcher and select an Organization.
 
-{% hint style="info" %}
-**Snyk 2.0 (Early Access)**
-
-In the Snyk 2.0 UI, you can navigate between different levels of your account (Tenant, Group, and Organization) using the scope selector at the top of the page. When you select a scope, the side menu automatically displays the relevant tools and data for that area.
-
-Snyk 2.0 introduces UI enhancements to the platform navigation and is available in Early Access. This is being rolled out gradually, so not all users see the new navigation at the same time.
-
-If you are an existing user, you can switch between the new and classic navigation at any time using the toggle in your user profile menu. For more information, visit [Snyk 2.0 platform improvements](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/snyk-2.0-platform-improvements).
-{% endhint %}
 
 ## **Switch Organization in the CLI**
 
