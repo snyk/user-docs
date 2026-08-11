@@ -48,9 +48,9 @@ exclude:
 </strong></code></pre>
 
 {% hint style="info" %}
-You can use `global` or `code`. Either will exclude the specified directories and files from Snyk code tests. `code` applies only to Snyk Code analysis. `global` applies to analysis using Snyk Code and Snyk Secrets, and may apply to other products in the future.
+You can use `global` or `code`. Either excludes the specified directories and files from Snyk Code tests. `code` applies only to Snyk Code analysis. `global` applies to Snyk Code and Snyk Secrets, and to other products that support it.
 
-Snyk Secrets also supports a `secrets` section, which applies only to Snyk Secrets scans. For details, see [Use the `.snyk` file with Snyk Secrets](../../manage-risk/policies/the-.snyk-file.md#use-the-.snyk-file-with-snyk-secrets).
+Snyk Secrets also supports a `secrets` section, which applies only to Snyk Secrets scans. For details, visit [Use the `.snyk` file with Snyk Secrets](../../manage-risk/policies/the-.snyk-file.md#use-the-.snyk-file-with-snyk-secrets).
 {% endhint %}
 
 ### Considerations in creating the `.snyk` file

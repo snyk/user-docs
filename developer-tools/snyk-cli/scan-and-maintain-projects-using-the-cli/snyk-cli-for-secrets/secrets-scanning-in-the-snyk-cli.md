@@ -12,7 +12,7 @@ Use Snyk Secrets for the CLI to identify and manage sensitive information (API k
 
 To use this feature, you must:
 
-1. Install the latest version of the Snyk CLI. For installation instructions, see [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli).
+1. Install the latest version of the Snyk CLI. For installation instructions, visit [Install the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli).
 2. Authenticate your machine with the following command:
 
 ```bash
@@ -25,13 +25,13 @@ If you receive a `SNYK-CLI-0016` error, contact your Snyk account manager to ena
 
 ## Run a secrets scan
 
-To scan your current directory for hard-coded secrets, run the command:
+To scan your current directory for hard-coded secrets, run:
 
 ```bash
 snyk secrets test
 ```
 
-To map results of the test to your Organization, include the `--org` option.
+To map results to your Organization, include the `--org` option.
 
 ```bash
 snyk secrets test --org=<your-org-id-or-name>
@@ -74,13 +74,13 @@ snyk secrets test --include-ignores
 Exclude the paths that you do not want Snyk Secrets to scan, such as test fixtures, vendored dependencies, or sample credentials. Snyk applies the exclusions before the scan, so excluded files are not uploaded to Snyk and produce no findings.
 
 {% hint style="info" %}
-Excluding a path is not the same as ignoring a finding. Snyk does not scan excluded paths at all, so they produce no findings and do not appear in the Snyk Web UI as ignored issues. To suppress a specific finding but continue to scan the file, use ignores instead. See [Ignore findings](secrets-scanning-in-the-snyk-cli.md#ignore-findings).
+Excluding a path is not the same as ignoring a finding. Snyk does not scan excluded paths at all, so they produce no findings and do not appear in the Snyk Web UI as ignored issues. To suppress a specific finding but continue to scan the file, use ignores instead. Visit [Ignore findings](secrets-scanning-in-the-snyk-cli.md#ignore-findings).
 {% endhint %}
 
 You can exclude paths in the following ways:
 
-* Commit a `.snyk` file to your repository. Snyk recommends this approach, because everyone who scans the repository shares the exclusions, and Snyk also applies them when the repository is scanned through an SCM integration. See [Exclude paths using the `.snyk` file](secrets-scanning-in-the-snyk-cli.md#exclude-paths-using-the-.snyk-file).
-* Use the `--exclude` option for a single scan. See [Exclude paths for a single scan](secrets-scanning-in-the-snyk-cli.md#exclude-paths-for-a-single-scan).
+* Commit a `.snyk` file to your repository. Snyk recommends this approach, because everyone who scans the repository shares the exclusions, and Snyk also applies them when the repository is scanned through an SCM integration. Visit [Exclude paths using the `.snyk` file](secrets-scanning-in-the-snyk-cli.md#exclude-paths-using-the-.snyk-file).
+* Use the `--exclude` option for a single scan. Visit [Exclude paths for a single scan](secrets-scanning-in-the-snyk-cli.md#exclude-paths-for-a-single-scan).
 
 Snyk Secrets also skips the paths listed in your `.gitignore` files, as well as file types that cannot contain readable secrets, such as binaries, archives, media files, fonts, and dependency lockfiles.
 

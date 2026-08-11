@@ -5,7 +5,7 @@ description: How the .snyk file stores Snyk policy configuration for a Project
 
 # The .snyk file
 
-The `.snyk` file is a capability of Snyk that all users can employ locally or as part of their workflow to control Snyk ignores of issues, to exclude files from scanning, to set the Python version at the Project level, and to specify patches for the CLI and CI/CD plugins.
+The `.snyk` file is a capability of Snyk that all users can use locally or as part of their workflow to control Snyk ignores of issues, to exclude files from scanning, to set the Python version at the Project level, and to specify patches for the CLI and CI/CD plugins.
 
 How the `.snyk` file works varies among Snyk products. When you deploy the `.snyk` file, start by reviewing how the file is created, where it can be used, and what it is used for. For details, see [Use the `.snyk` file with Snyk Open Source](the-.snyk-file.md#use-the-.snyk-file-with-snyk-open-source), [Use the `.snyk` file with Snyk Code](the-.snyk-file.md#use-the-.snyk-file-with-snyk-code), [Use the `.snyk` file with Snyk IaC](the-.snyk-file.md#use-the-.snyk-file-with-snyk-iac), and [Use the `.snyk` file with Snyk Secrets](the-.snyk-file.md#use-the-.snyk-file-with-snyk-secrets).
 
@@ -17,11 +17,11 @@ Key considerations regarding how the `.snyk` file is used are as follows:
 * The CLI used as part of a build system and the CI/CD plugins use the `.snyk` file during scanning if the file is present.
 * If you merge the `.snyk` file with the rest of your code, when you import an SCM to Snyk, the rules in the `.snyk` file are applied on top of the database rules created in the Snyk Web UI.
 * If you use the `.snyk` file to specify ignores, you avoid having to specify them in the Snyk Web UI, which you can do only after an issue is detected and monitored. You can use the `.snyk` file to override the ignore rules in the Snyk database. For details, see [How to override the ignore rules in the database](the-.snyk-file.md#how-to-override-the-ignore-rules-in-the-database).
-* For more information, see [Exclude files and ignore issues FAQs](../prioritize-issues-for-fixing/ignore-issues/exclude-files-and-ignore-issues-faqs.md).
+* For more information, visit [Exclude files and ignore issues FAQs](../prioritize-issues-for-fixing/ignore-issues/exclude-files-and-ignore-issues-faqs.md).
 
 ## How to create the `.snyk` file
 
-You can create the `.snyk` file by using the `snyk ignore` command. For details, see the [Ignore](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore) command CLI help.
+You can create the `.snyk` file by using the `snyk ignore` command. For details, visit the [Ignore](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/ignore) command CLI help.
 
 If you do not have an existing `.snyk` file, you can create one and populate it with the following code:\
 `# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities`\
@@ -69,7 +69,7 @@ For details, see [Excluding directories and files from the import process](../..
 
 ## Use the `.snyk` file with Snyk Secrets
 
-You can use the `.snyk` file to specify the files and directories that are to be excluded from Snyk Secrets scanning. Snyk does not upload the excluded files and they produce no findings.
+You can use the `.snyk` file to specify files and directories to exclude from Snyk Secrets scanning. Snyk does not upload excluded files, so they produce no findings.
 
 Snyk Secrets applies the patterns from the following `exclude` sections:
 
@@ -88,14 +88,14 @@ exclude:
     - examples/**
 ```
 
-Snyk Secrets supports the `exclude` option for the Snyk CLI and for the scans that run through an SCM integration. Note the following differences:
+Snyk Secrets supports the `exclude` option in both the Snyk CLI and SCM integrations. The behavior differs between the two:
 
 * For the Snyk CLI, Snyk Secrets applies every `.snyk` file that it finds in the directory tree you scan, with the patterns relative to the directory that contains each file. Snyk Secrets also skips the paths listed in your `.gitignore` files.
 * For SCM integrations, Snyk Secrets applies the `.snyk` file at the root of the repository only, with the patterns relative to the root of the repository. Unlike Snyk Code, it does not apply the `.snyk` files that are located in subdirectories. Snyk Secrets does not support the `expires` and `reason` fields on an exclusion pattern for SCM scans.
 
 In both cases, if the `.snyk` file is missing, empty, or cannot be parsed, the scan continues without the exclusions.
 
-For details, see [Exclude files and directories from a scan](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli#exclude-files-and-directories-from-a-scan) for the Snyk CLI and [Exclude files and directories from SCM secrets scans](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/secrets-scanning-in-the-scm#exclude-files-and-directories-from-scm-secrets-scans) for SCM integrations.
+For details, visit [Exclude files and directories from a scan](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli#exclude-files-and-directories-from-a-scan) for the Snyk CLI and [Exclude files and directories from SCM secrets scans](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/secrets-scanning-in-the-scm#exclude-files-and-directories-from-scm-secrets-scans) for SCM integrations.
 
 ## Use the `.snyk` file with Snyk IaC
 
@@ -119,7 +119,7 @@ When you include the `.snyk` file in your code repository and the `language-sett
 * By including a `.snyk` file in your code repository with the `language settings:` value set to one of the available UI language settings options, you can override the Organization level settings for SCM scans of that repository to use any Python version that is available in the UI options.
 
 {% hint style="info" %}
-if the `.snyk` file was not present at the initial import of the Project into Snyk., you must re-import the Project.
+If the `.snyk` file was not present when you first imported the Project, you must re-import it.
 {% endhint %}
 
 For more information about Python version support, see [Python version support](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/python#technical-specifications).
