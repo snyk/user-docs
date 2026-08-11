@@ -5664,6 +5664,15 @@
             "format": "date-time",
             "type": "string"
           },
+          "org_ids": {
+            "description": "Every org the asset belongs to across the tenant, sourced from the asset\nscope summary. Tenant-wide regardless of the request scope. Only populated\nfor scan-backed asset types (container images and SBOMs); omitted for\nrepository assets.\n",
+            "items": {
+              "format": "uuid",
+              "type": "string"
+            },
+            "maxItems": 10000,
+            "type": "array"
+          },
           "risk_score": {
             "description": "Risk score for the asset",
             "format": "int32",
@@ -22743,7 +22752,7 @@
             "type": "string"
           },
           "type": {
-            "description": "The JSON:API resource type",
+            "description": "The JSON:API resource type.",
             "enum": [
               "project"
             ],
@@ -32792,7 +32801,7 @@
     },
     "/groups/{group_id}/inventory/assets/groups": {
       "get": {
-        "description": "Returns a list of valid group field names that can be used for grouping assets within a group context.\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "description": "Returns a list of valid group field names that can be used for grouping assets within a group context.\nCommon fields such as `class` and `org_id` (the Snyk organization that discovered the asset) apply to\nevery asset type; grouping by `org_id` returns one bucket per organization in the group.\n\n#### Required permissions\n\n- `View Groups (group.read)`",
         "operationId": "getGroupFieldsGroup",
         "parameters": [
           {
@@ -32911,7 +32920,7 @@
     },
     "/groups/{group_id}/inventory/assets/groups/{group_field_id}/values": {
       "get": {
-        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\n#### Required permissions\n\n- `View Groups (group.read)`",
+        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\nGrouping by `org_id` buckets assets by the Snyk organization that discovered them:\none bucket per organization at group or tenant scope, and a single bucket at org scope.\n\n#### Required permissions\n\n- `View Groups (group.read)`",
         "operationId": "getGroupValuesGroup",
         "parameters": [
           {
@@ -71960,7 +71969,7 @@
     },
     "/orgs/{org_id}/inventory/assets/groups": {
       "get": {
-        "description": "Returns a list of valid group field names that can be used for grouping assets within an org context.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "description": "Returns a list of valid group field names that can be used for grouping assets within an org context.\nCommon fields such as `class` and `org_id` (the Snyk organization that discovered the asset) apply to\nevery asset type; within a single org, grouping by `org_id` returns a single bucket.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "getGroupFieldsOrg",
         "parameters": [
           {
@@ -72079,7 +72088,7 @@
     },
     "/orgs/{org_id}/inventory/assets/groups/{group_field_id}/values": {
       "get": {
-        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
+        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\nGrouping by `org_id` buckets assets by the Snyk organization that discovered them:\none bucket per organization at group or tenant scope, and a single bucket at org scope.\n\n#### Required permissions\n\n- `View Organization (org.read)`",
         "operationId": "getGroupValuesOrg",
         "parameters": [
           {
@@ -114883,7 +114892,7 @@
             "$ref": "#/components/parameters/RsqlFilter"
           },
           {
-            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n",
+            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n- `sbom_name` - SBOM name (SBOMs only)\n- `format` - SBOM format/standard (SBOMs only)\n- `document_version` - SBOM document version (SBOMs only)\n- `sbom_created_at` - SBOM creation timestamp (SBOMs only)\n",
             "example": "-created_at",
             "in": "query",
             "name": "sort",
@@ -115346,7 +115355,7 @@
     },
     "/tenants/{tenant_id}/inventory/assets/groups": {
       "get": {
-        "description": "Returns a list of valid group field names that can be used for grouping assets.\nEach field includes its name, data type, and which asset types it applies to.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
+        "description": "Returns a list of valid group field names that can be used for grouping assets.\nEach field includes its name, data type, and which asset types it applies to.\nCommon fields such as `class` and `org_id` (the Snyk organization that discovered\nthe asset) apply to every asset type.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
         "operationId": "getGroupFieldsTenant",
         "parameters": [
           {
@@ -115466,7 +115475,7 @@
     },
     "/tenants/{tenant_id}/inventory/assets/groups/{group_field_id}/values": {
       "get": {
-        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
+        "description": "Returns aggregated values for a specific group field id, showing the count of assets\nfor each distinct value.\n\nUse the UUID from the group fields list endpoint to identify which field to query.\n\nGrouping by `org_id` buckets assets by the Snyk organization that discovered them:\none bucket per organization at group or tenant scope, and a single bucket at org scope.\n\n#### Required permissions\n\n- `View Tenant Details (tenant.read)`",
         "operationId": "getGroupValuesTenant",
         "parameters": [
           {
@@ -115745,7 +115754,7 @@
             }
           },
           {
-            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n",
+            "description": "Comma-separated sort fields. Prefix with `-` for descending order.\n\n**Supported fields:**\n- `created_at` - Asset creation timestamp\n- `updated_at` - Asset last update timestamp\n- `type` - Asset type (container_images)\n- `class` - Asset class\n- `risk_score` - Asset risk score (max across project sources)\n- `issues` - Issue counts by severity (critical, high, medium, low)\n- `built_at` - Image build timestamp (container images only)\n- `last_scan` - Last scan timestamp\n- `sbom_name` - SBOM name (SBOMs only)\n- `format` - SBOM format/standard (SBOMs only)\n- `document_version` - SBOM document version (SBOMs only)\n- `sbom_created_at` - SBOM creation timestamp (SBOMs only)\n",
             "in": "query",
             "name": "sort",
             "schema": {
