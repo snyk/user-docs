@@ -6,14 +6,22 @@ This repository is home to the [Snyk user documentation](https://docs.snyk.io) s
 
 ### Internal contributor guidelines
 
-If you are an internal Snyk contributor with write access to this repository, you can open a PR to fix issues or make small updates. 
-- Use a branch rather than a fork, to allow GitBook previews. This makes it easier for the docs team to review your PR.
-- Use the workflow in the #request-ux-content Slack channel to request a review of your PR.
-- Your commits must be signed.
+If you are an internal Snyk contributor with write access to this repository, draft your content here in GitHub and then submit it to the Docs team with the `/ship-it` Slack workflow. `/ship-it` is the single intake point for all documentation and release-notification requests: it creates the Jira ticket for you and sends you a confirmation DM with tracking links.
 
-For larger updates, we prefer that you make the changes in GitBook. Go to our internal [writing user documentation](https://snyksec.atlassian.net/wiki/spaces/DRC/pages/1819541615/Writing+user+documentation) page for details. 
+Before you run `/ship-it`, complete these steps so the submission does not fail partway through:
 
-To ask questions or to report issues to the user docs team, use the workflow in the #request-ux-content Slack channel to contact us.
+- Confirm you have write access to this repository.
+- Connect Atlassian to Slack, which is required for Jira ticket creation.
+- Draft your content in GitHub and open a pull request. Use a branch rather than a fork, to allow GitBook previews.
+- Follow the `snyk-docs-writing-rules` skill while drafting.
+- Sign your commits.
+- Update `SUMMARY.md` if you are adding new pages.
+
+Then run `/ship-it` from anywhere in Slack, or from the Ship It app in your sidebar. Have your pull request URL ready and complete all the fields in one sitting, because the multi-step form does not save partial progress.
+
+For details on the process, go to the internal [writing user documentation](https://snyksec.atlassian.net/wiki/spaces/DRC/pages/1819541615/Writing+user+documentation) page.
+
+To ask questions or to report issues to the user docs team, use `/ship-it`. The legacy submission forms remain available only as a fallback under Workflows → "Contact the Docs team."
 
 ### External contributor guidelines
 
