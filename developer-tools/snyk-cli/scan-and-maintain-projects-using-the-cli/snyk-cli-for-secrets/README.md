@@ -14,7 +14,7 @@ Before using the Snyk CLI to scan for secrets, verify you have the following pre
 * A Snyk account.
 * The Secrets feature enabled for your Snyk Organization. If you receive a `SNYK-CLI-0016` error, contact your Snyk account manager.
 * The Snyk CLI installed and authenticated.
-  * For instructions, see [Install or update the Snyk CLI](../../install-the-snyk-cli/) and [Authenticate the Snyk CLI](../../authenticate-to-use-the-cli.md).
+  * For instructions, visit [Install or update the Snyk CLI](../../install-the-snyk-cli/) and [Authenticate the Snyk CLI](../../authenticate-to-use-the-cli.md).
   * Snyk recommends using the latest version of the CLI.
 
 ## Using the Snyk CLI for secrets scans
@@ -26,4 +26,5 @@ That page also explains how to do the following:
 
 * [Ignore findings](secrets-scanning-in-the-snyk-cli.md#ignore-findings) that are placeholders, revoked keys, or won't fix scenarios.
 * [Review ignored secrets](secrets-scanning-in-the-snyk-cli.md#review-ignored-secrets) to audit your codebase.
+* [Exclude files and directories from a scan](secrets-scanning-in-the-snyk-cli.md#exclude-files-and-directories-from-a-scan) using the `.snyk` file or the `--exclude` option.
 * [Scan with a pre-commit hook](secrets-scanning-in-the-snyk-cli.md#scan-with-a-pre-commit-hook) to catch secrets before they reach a commit.
