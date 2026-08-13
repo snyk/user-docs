@@ -217,7 +217,7 @@ The test success rate indicates how well your engineering department or specific
 A low success rate can indicate the following:
 
 * Snyk tests fail due to security issues you can prevent in local development or pull request checks. Snyk recommends you test with the Snyk IDE plugin, use Snyk PR Checks, and enroll in a Snyk Learn program.
-* The test success criteria are too strict. Review the test definitions for organizations with the lowest success rates in the **Adoption by Organizations** widget. For more information about defining test success criteria, see [Failing of builds in Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli).
+* The test success criteria are too strict. Review the test definitions for organizations with the lowest success rates in the **Adoption by Organizations** widget. For more information about defining test success criteria, see [Failing of builds in Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli).
 
 #### Adoption by Organizations <a href="#adoption-by-organizations" id="adoption-by-organizations"></a>
 

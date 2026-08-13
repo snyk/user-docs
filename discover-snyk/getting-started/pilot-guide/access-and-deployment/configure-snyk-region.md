@@ -15,7 +15,7 @@ Passwordless usernames with email authentication have been created for you. Use 
 
 ## Snyk CLI (and any CI/CD tools that use the Snyk CLI)
 
-Ensure you set the environment variable `SNYK_API` to point to `api.us.snyk.io` before trying to authenticate the CLI as described on the [Configure Snyk CLI to connect to Snyk API ](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api)page.
+Ensure you set the environment variable `SNYK_API` to point to `api.us.snyk.io` before trying to authenticate the CLI as described on the [Configure Snyk CLI to connect to Snyk API ](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api)page.
 
 When running the CLI in a CI/CD pipeline, ensure that the `SNYK_API` variable is set before running `snyk auth` . For example:
 
@@ -26,7 +26,7 @@ snyk auth $SNYK_TOKEN
 snyk test
 ```
 
-See [authenticating the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) for more details.
+See [authenticating the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/authenticate-to-use-the-cli) for more details.
 
 ## Snyk API
 

@@ -9,7 +9,7 @@ You can access Snyk Studio, including Snyk's MCP server, in JetBrains AI Assista
 ## Prerequisites
 
 * [Install the code assistant extension](jetbrains-ai-assistant.md#install-jetbrains-ai-assistant)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](jetbrains-ai-assistant.md#install-the-snyk-mcp-server-in-jetbrains-ai-assistant)
 
 ### Install JetBrains AI Assistant
@@ -35,7 +35,7 @@ If you have the Snyk CLI installed and accessible on your system path add the fo
 
 <figure><img src="../../.gitbook/assets/image2.png" alt=""><figcaption></figcaption></figure>
 
-If the snyk command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli) page.
+If the snyk command is not available, add it by following the instructions on the [Installing or updating the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) page.
 
 Reload the IDE window for the changes to apply.
 

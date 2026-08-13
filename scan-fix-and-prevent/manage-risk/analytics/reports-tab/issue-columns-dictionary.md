@@ -89,7 +89,7 @@ The context columns help you understand the impact and risk for an issue based o
 * **PROJECT OWNER** - A user who is defined as the owner of the Project.
 * **PROJECT TAGS** - Tags that are associated with the Project. For details, see [Project tags](../../../snyk-platform-administration/snyk-projects/project-tags.md).
 * **PROJECT TARGET** - The Target name.
-* **PROJECT TARGET REFERENCE** - Specify a reference that differentiates this Project, for example, a branch name or version. For details, see [Group Projects by branch or version for monitoring](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring).
+* **PROJECT TARGET REFERENCE** - Specify a reference that differentiates this Project, for example, a branch name or version. For details, see [Group Projects by branch or version for monitoring](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/group-projects-by-branch-or-version-for-monitoring).
 * **PROJECT TYPE** - The package manager of the Project.
 
 ### Asset context
