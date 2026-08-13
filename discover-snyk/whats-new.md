@@ -13,7 +13,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk supported languages
 
-* COBOL is now in General Availability. Code analysis support for COBOL with Snyk Code is available on all plans, across SCM integrations and Snyk CLI, IDE, and CI/CD. Visit [COBOL](https://docs.snyk.io/supported-languages/supported-languages-list/cobol) and [COBOL rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules/cobol-rules) for more details.
+* Snyk Code support for COBOL is now generally available, on all plans, across SCM integrations and the Snyk CLI, IDE, and CI/CD. Visit [COBOL](https://docs.snyk.io/supported-languages/supported-languages-list/cobol) and [COBOL rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules/cobol-rules) for more details.
 
 ## July 2026
 

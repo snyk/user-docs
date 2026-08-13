@@ -8,15 +8,15 @@ nav_context: agnostic
 Each rule includes the following information.
 
 * **Rule Name**: The Snyk name of the rule.
-* **CWE(s):** The [CWE numbers](https://cwe.mitre.org/) that are covered by this rule.
-* **Security Categories**: The [OWASP Top 10 ](https://owasp.org/Top10/)(2021 edition) category to which the rule belongs to, if any, and if it is included in [SANS 25](https://www.sans.org/top25-software-errors/).
-* **Autofixable**: Security rules that are autofixable by Snyk Agent Fix. This information is included only for the supported programming languages.
+* **CWEs**: The [CWE numbers](https://cwe.mitre.org/) the rule covers.
+* **Security Categories**: The [OWASP Top 10](https://owasp.org/Top10/) (2021 edition) category the rule belongs to, if any, and whether [SANS Top 25](https://www.sans.org/top25-software-errors/) includes it.
+* **Autofixable**: Whether Snyk Agent Fix can fix the rule automatically. Snyk includes this column only for languages Snyk Agent Fix supports.
 
-| Rule Name                                           | CWE(s)           | Security Categories         | Autofixable |
+| Rule Name                                           | CWEs             | Security Categories         | Autofixable |
 | --------------------------------------------------- | ---------------- | --------------------------- | ----------- |
 | Use of Hardcoded Cryptographic Key                  | CWE-321          | OWASP:A02:2021              | Yes         |
 | Use of Hardcoded Cryptographic Initialization Value | CWE-321          | OWASP:A02:2021              | Yes         |
-| No Dynamic SQL Clauses                              | CWE-89           | Sans Top 25, OWASP:A03:2021 | Yes         |
+| No Dynamic SQL Clauses                              | CWE-89           | SANS Top 25, OWASP:A03:2021 | Yes         |
 | Inadequate Encryption Strength - Small Key Size     | CWE-326          | OWASP:A02:2021              | Yes         |
 | Weak Cryptographic Primitive                        | CWE-327          | OWASP:A02:2021              | Yes         |
 | Clear Text Logging                                  | CWE-321          | OWASP:A02:2021              | Yes         |
