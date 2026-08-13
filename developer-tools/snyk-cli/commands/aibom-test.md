@@ -38,7 +38,7 @@ A **Test summary** at the end shows the total count of open and ignored issues b
 Possible exit codes and their meaning:
 
 **0**: success (scan completed), no open policy issues.\
-**1**: action_needed (scan completed), one or more open policy issues found.\
+**1**: action_needed (scan completed), one or more open policy issues found at or above the severity threshold (default: `low`).\
 **2**: failure, try to re-run the command. Use `-d` to output the debug logs.\
 **3**: failure, unable to find any supported files for the scan.
 
@@ -70,7 +70,7 @@ This generates an AI-BOM for the current directory, runs the policy test for the
 
 ### `--json-file-output=<OUTPUT_FILE_PATH>`
 
-**Optional**. Write the policy test results to a JSON file at the given path instead of printing the report. The JSON includes full issue details and closed issues, which are not shown in the on-screen report.
+**Optional**. Write the policy test results to a JSON file at the given path instead of printing the report. The JSON includes full issue details and closed issues, which are not shown in the on-screen report. When used with [`--severity-threshold`](aibom-test.md#severity-threshold-less-than-low-or-medium-or-high-or-critical-greater-than), the JSON file includes only issues at or above the specified severity.
 
 Example: `$ snyk aibom test --json-file-output=results.json`
 
@@ -82,4 +82,4 @@ Example: `$ snyk aibom test --enriched`
 
 ### `--severity-threshold=<low|medium|high|critical>`
 
-**Optional**. Minimum severity that triggers `action_needed` (exit code 1). Only issues at or above this level cause the command to exit with 1. Default: `low`.
+**Optional**. Report only issues at the specified level or higher. This applies to the on-screen report, the test summary, and JSON file output. Only open issues at or above this level cause the command to exit with `1` (`action_needed`). Default: `low`.
