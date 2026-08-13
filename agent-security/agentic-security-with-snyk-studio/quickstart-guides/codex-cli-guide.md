@@ -15,7 +15,7 @@ For installation instructions, visit [Getting started with Snyk Studio](../getti
 ### Prerequisites
 
 * [Install the Codex CLI](codex-cli-guide.md#install-codex-cli)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](codex-cli-guide.md#install-the-snyk-mcp-server-in-codex-cli-using-npx)
 
 ### Install Codex CLI

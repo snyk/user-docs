@@ -9,7 +9,7 @@ You can access Snyk Studio, including Snyk's MCP server, in JetBrains Junie to s
 ## Prerequisites
 
 * [Install the code assistant extension](jetbrains-junie.md#install-jetbrains-junie)
-* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli)
+* [Install the Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli)
 * [Install the Snyk MCP](jetbrains-junie.md#install-the-snyk-mcp-server-in-jetbrains-junie)
 
 ### Install JetBrains Junie

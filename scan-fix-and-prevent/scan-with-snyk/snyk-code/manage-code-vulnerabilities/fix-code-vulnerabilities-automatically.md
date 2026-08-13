@@ -51,7 +51,7 @@ Snyk automatically generates fixes for eligible vulnerabilities in your codebase
 To see the latest fix suggestions:
 
 1. Enable automated fixes in Snyk Preview in your [IDE plugin or extension](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions).
-2. Save your files and [trigger a scan](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli).
+2. Save your files and [trigger a scan](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli).
 
 To generate a fix:
 

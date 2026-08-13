@@ -52,16 +52,16 @@ The following resources are available for all users:
 
 ### Write and deploy your code
 
-* Using the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli), you can scan locally on your machine. This is useful in scanning open-source and static code as well as containers and infrastructure as code configurations, including complex files that are templated with variables, such as Terraform plan files.
+* Using the [Snyk CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli), you can scan locally on your machine. This is useful in scanning open-source and static code as well as containers and infrastructure as code configurations, including complex files that are templated with variables, such as Terraform plan files.
 * Using [Snyk IDE Plugins](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ide-plugins-and-extensions), you can test your open-source packages, first-party code, and infrastructure as code (IaC) Kubernetes deployment files in your development environment as you create your Project.
 * Using [Git integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations), you can improve security in your Git repositories for both your code and deployed applications.
 * Using [CI/CD integrations](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/snyk-ci-cd-integrations), you can fail the build in your integration and deployment pipeline to keep vulnerabilities out of your code.
 
 #### Monitor your code in production
 
-Before integrating your code into production, use the [`snyk monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) or [`snyk container monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-monitor) CLI command to identify issues introduced into open-source and container Projects, monitoring these Projects for vulnerabilities before pushing them into production.
+Before integrating your code into production, use the [`snyk monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/monitor) or [`snyk container monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/container-monitor) CLI command to identify issues introduced into open-source and container Projects, monitoring these Projects for vulnerabilities before pushing them into production.
 
-For more information, see [Monitor your projects at regular intervals](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals).
+For more information, see [Monitor your projects at regular intervals](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/monitor-your-projects-at-regular-intervals).
 
 ### Manage and fix issues using Snyk
 

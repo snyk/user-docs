@@ -73,8 +73,8 @@ The following file formats are supported: `.dart`
 
 ### Available features
 
-* Test your app's SBOM and packages using `pkg:pub` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command
-* Test & monitor your Flutter apps native platform dependencies using [`snyk test`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/test) and [`snyk monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) commands
+* Test your app's SBOM and packages using `pkg:pub` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/sbom-test) CLI command
+* Test & monitor your Flutter apps native platform dependencies using [`snyk test`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/test) and [`snyk monitor`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/monitor) commands
 
 ### Testing a Dart applications pub dependency tree
 
@@ -89,7 +89,7 @@ spdx:
 EOF
 ```
 
-Use the dart `sbom` command to create a SBOM file & test it using the [`sbom test`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) command:
+Use the dart `sbom` command to create a SBOM file & test it using the [`sbom test`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/sbom-test) command:
 
 ```
 dart pub global run sbom

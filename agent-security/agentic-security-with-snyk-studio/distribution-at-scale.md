@@ -46,7 +46,7 @@ Snyk updates the Snyk CLI and MCP server regularly with features and fixes. You 
 
 <summary><strong>Yes</strong>, enable auto-updates for Snyk CLI/MCP versions.</summary>
 
-You need to keep the Snyk CLI on the latest version using MDM, which depends on your [chosen installation method](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli).
+You need to keep the Snyk CLI on the latest version using MDM, which depends on your [chosen installation method](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli).
 
 </details>
 
@@ -54,7 +54,7 @@ You need to keep the Snyk CLI on the latest version using MDM, which depends on 
 
 <summary><strong>No</strong>, manually update Snyk CLI/MCP versions after internal testing.</summary>
 
-* If you are deploying alongside Cursor, Windsurf, Antigravity, VS Code, Gemini CLI, or Claude CLI, [install a specific CLI version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli) and run `snyk mcp config --tool=[ade_name]` where `[ade_name]` is one of the following:
+* If you are deploying alongside Cursor, Windsurf, Antigravity, VS Code, Gemini CLI, or Claude CLI, [install a specific CLI version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli) and run `snyk mcp config --tool=[ade_name]` where `[ade_name]` is one of the following:
   * `cursor`
   * `windsurf`
   * `antigravity`
@@ -65,7 +65,7 @@ You need to keep the Snyk CLI on the latest version using MDM, which depends on 
 
     To deploy, complete the following steps:
 
-    1. [Install a specific CLI version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/install-the-snyk-cli).
+    1. [Install a specific CLI version](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/install-the-snyk-cli).
     2. Configure the MCP server for your ADE.
     3. Write the rule files. This step is optional and varies by ADE.
 
