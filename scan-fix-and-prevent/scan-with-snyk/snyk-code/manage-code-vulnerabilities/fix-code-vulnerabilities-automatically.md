@@ -11,7 +11,7 @@ DeepCode AI Fix is now Snyk Agent Fix.
 As of May 2026, Snyk Agent Fix has been upgraded to a new agentic architecture for significantly higher fix accuracy and broader language support.
 {% endhint %}
 
-Snyk Agent Fix provides production-ready code fixes to address security vulnerabilities and code quality flaws detected by Snyk Code. It offers full rule coverage for all supported languages.
+Snyk Agent Fix provides production-ready code fixes to address security vulnerabilities detected by Snyk Code. It offers full rule coverage for all supported languages.
 
 Snyk Agent Fix uses an agentic architecture that combines Snyk proprietary security intelligence with advanced large language models (LLMs). Key advantages include:
 
