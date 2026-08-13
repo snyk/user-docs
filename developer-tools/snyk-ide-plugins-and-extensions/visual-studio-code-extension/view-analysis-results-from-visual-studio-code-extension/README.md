@@ -1,8 +1,7 @@
 ---
 nav_context: classic
 description: >-
-  How to view Snyk security vulnerabilities and code quality results in the
-  Visual Studio Code extension
+  How to view Snyk security vulnerabilities in the Visual Studio Code extension
 ---
 
 # View analysis results from Visual Studio Code extension
