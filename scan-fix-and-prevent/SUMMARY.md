@@ -388,10 +388,11 @@
 
 ## Fix
 
-* [Overview](manage-assets/manage-assets.md)
-* [Assets inventory tabs](manage-assets/assets-inventory-layouts.md)
-* [Assets inventory components](manage-assets/assets-inventory-components.md)
-* [Assets inventory filters](manage-assets/assets-inventory-filters.md)
+* [AppRisk asset inventory](manage-assets/manage-assets.md)
+  * [Assets inventory tabs](manage-assets/assets-inventory-layouts.md)
+  * [Assets inventory components](manage-assets/assets-inventory-components.md)
+  * [Assets inventory filters](manage-assets/assets-inventory-filters.md)
+* [Container image inventory](manage-assets/container-image-inventory.md)
 * [Configure repository monitoring](manage-assets/configure-repository-monitoring.md)
 * [Pull Requests](scan-with-snyk/pull-requests/README.md)
 * [Snyk Pull or Merge Requests](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/README.md)

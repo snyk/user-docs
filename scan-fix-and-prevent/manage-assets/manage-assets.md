@@ -3,7 +3,7 @@ description: How Snyk manages application assets and their security risk
 nav_context: new
 ---
 
-# Overview
+# AppRisk asset inventory
 
 Snyk defines an asset as an identifiable entity that is part of an application and relevant to security and developers. Snyk is generally focused on the development stages of application software, secures repository assets containing software package assets, and builds artifacts like container image assets.
 
