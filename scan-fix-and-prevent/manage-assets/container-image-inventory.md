@@ -2,12 +2,12 @@
 
 The Container image inventory is a unified view in the Snyk platform that consolidates all of your container images into a single, manageable list, regardless of where they were scanned.
 
-Instead of navigating a fragmented set of per-scan Projects, you get one authoritative inventory of unique container image assets, each identified by **Registry + Repository + Config Digest**. A single image scanned from a registry import, from the CLI, and a Kubernetes workload all appear as **one asset** with a single, deduplicated issue count.
+Instead of navigating a fragmented set of per-scan Projects, you get one authoritative inventory of unique container image assets, each identified by `Registry + Repository + Config Digest`. A single image scanned from a registry import, from the CLI, and a Kubernetes workload all appear as **one asset** with a single, deduplicated issue count.
 
 | Capability | Description |
 | :--- | :--- |
 | **Unified asset list** | View all unique container images across your Organization or Group in one place |
-| **Deduplicated issue counts** | Issues from multiple scan sources are merged — no more inflated counts |
+| **Deduplicated issue counts** | Snyk merges issues from multiple scan sources — no more inflated counts |
 | **Version grouping** | Group images by repository to explore the full version history of an image |
 | **Filter** | Filter by registry, image repository, tag, image labels, digest, class, and more |
 | **Search** | Quickly find an image by matching against the beginning of the asset name |
@@ -16,13 +16,13 @@ Instead of navigating a fragmented set of per-scan Projects, you get one authori
 
 ## How it works
 
-Container image inventory identifies each unique image by its **Registry + Repository + Config Digest**. Because this identity is based on the immutable config digest rather than a mutable tag, one image scanned from the CLI, a container registry, and a Kubernetes workload appears as a single asset — not three separate Projects.
+Container image inventory identifies each unique image by its `Registry + Repository + Config Digest`. Because this identity is based on the immutable config digest rather than a mutable tag, one image scanned from the CLI, a container registry, and a Kubernetes workload appears as a single asset — not three separate Projects.
 
-Issues from all scan sources are merged and deduplicated, so you see one count per unique vulnerability rather than inflated totals from overlapping scans. Images are grouped by image repository (registry and repository), giving you a version history view where you can compare build dates, risk scores, and issue counts across digests and spot regressions over time. Each asset also surfaces key metadata — tags, inferred base image, test surface, and last scan date — in one place.
+Issues from all scan sources are merged and deduplicated, so you see one count per unique vulnerability rather than inflated totals from overlapping scans. Snyk groups images by image repository (registry and repository), giving you a version history view where you can compare build dates, risk scores, and issue counts across digests and spot regressions over time. Each asset also surfaces key metadata — tags, inferred base image, test surface, and last scan date — in one place.
 
 ## What you need to do
 
-Depending on how you scan containers, you may need to take the following steps to ensure your images appear in the inventory:
+Depending on how you scan containers, take the following steps to ensure your images appear in the inventory:
 
 - **CLI users** — Upgrade to Snyk CLI version 1.1303.0 or later (which bundles an updated snyk-docker-plugin) and re-run `snyk container monitor` for your images.
 - **Container Registry integrations** — Newly imported images automatically populate the inventory. Existing Projects appear in the inventory when they are retested, either manually from the UI or on a recurring test schedule.
@@ -54,7 +54,7 @@ By default, the inventory groups assets by **Image repository** (Registry + Repo
 Risk score is shown in both the asset table and the issues table only if your Group or Organization has enabled **Risk score** under **Snyk Preview** settings and your Projects have been re-scanned since it was enabled. If risk score is not enabled, the score columns will not be populated.
 {% endhint %}
 
-Groups are sorted by most recent build date by default. You can expand any group to reveal the individual image assets within it. Each asset row within the group displays:
+By default, Snyk sorts groups by most recent build date. You can expand any group to reveal the individual image assets within it. Each asset row within the group displays:
 
 | Column | Description |
 | :--- | :--- |
@@ -68,9 +68,9 @@ Groups are sorted by most recent build date by default. You can expand any group
 | **Test surface** | The distinct set of test surfaces (for example, CLI, container registry, Kubernetes) |
 | **Last scan** | The most recent scan timestamp across all related discovery sources |
 
-Within an expanded group, assets are sorted by build date (newest first) by default so you can easily identify the most recent version.
+In an expanded group, Snyk sorts assets by build date (newest first) by default so you can easily identify the most recent version.
 
-![An expanded repository group for "alpine-base" showing 4 image versions.](../.gitbook/assets/container-inventory-expanded-group.png)
+![An expanded repository group for "alpine-base" showing four image versions.](../.gitbook/assets/container-inventory-expanded-group.png)
 
 #### Sort the grouped view
 
@@ -88,7 +88,7 @@ The following options are available for repository groups:
 | **Count** | Orders repositories by the number of assets they contain |
 | **Last seen** | Orders repositories by when they were last seen |
 
-Assets within a group can be sorted by build date, risk score (if enabled), discovered, last updated, or total issues.
+You can sort assets within a group by build date, risk score (if enabled), discovered, last updated, or total issues.
 
 ### Flat (ungrouped) view
 
@@ -100,7 +100,7 @@ You can sort the flat view by build date, score, issue count, last scan, class, 
 
 ### Filter and search
 
-Click **Add filter** to open the filter panel. Filters are additive (combined with AND logic). The following filter dimensions are available:
+Click **Add filter** to open the filter panel. Filters combine using AND logic. The following filter dimensions are available:
 
 | Filter | Description |
 | :--- | :--- |
@@ -161,7 +161,7 @@ A **Security testing and coverage** section at the bottom shows which scan engin
 
 Class is a label you assign to an asset, from A to D, using whatever criteria suits your organization (for example, business criticality). Because you can filter and sort the inventory by class, it gives you a way to slice your images along a dimension that you control.
 
-To edit asset class, select the **Class** value in the **Overview** tab to open a dropdown and choose **A**, **B**, **C**, or **D**. The change is saved immediately and is reflected anywhere the asset's class is shown. Images that have not been classified are class **C** by default.
+To edit asset class, select the **Class** value in the **Overview** tab to open a dropdown, then select **A**, **B**, **C**, or **D**. The change is saved immediately and is reflected anywhere the asset's class is shown. Images that have not been classified are class **C** by default.
 
 #### Issues tab
 
@@ -249,8 +249,8 @@ The existing Projects view for containers remains unchanged.
 | Limitation | Details |
 | :--- | :--- |
 | **Search scope** | The search bar matches from the beginning of the asset name field. Searching for a partial image name or tag within a longer string may not return expected results. Use the **Repository** or **Image tag** filters for more precise lookups. |
-| **CLI scans without a registry hostname** | Images scanned directly from a tar file (`snyk container test image.tar`) may not associate with their registry counterpart because the registry field is null. |
-| **Tag staleness** | Because tags are scoped per discovery source, two assets in the same repository could temporarily show the same tag if a discovery source has not yet been refreshed. This can cause the inventory to show images that no longer carry the `latest` tag in your Projects view. |
+| **CLI scans without a registry hostname** | Images scanned directly from a tar file (`snyk container test image.tar`) do not associate with their registry counterpart because the registry field is null. |
+| **Tag staleness** | Because tags are scoped per discovery source, two assets in the same repository can temporarily show the same tag if a discovery source has not yet been refreshed. This can cause the inventory to show images that no longer carry the `latest` tag in your Projects view. |
 | **Backfilling existing Projects** | Not all existing Projects have the metadata required to compute the new asset identity. CLI and Kubernetes users must upgrade to the latest Snyk CLI or `snyk-monitor` and re-scan to populate the inventory for existing images. |
 | **Base image inference** | Base image detection is heuristic-based (parsing the Dockerfile if present, or matching layer hashes against a known image index). Results may vary across Projects that scanned the same image differently (for example, with or without the Dockerfile). |
 | **Asset class sync** | Changing an asset's class in the new container image inventory does not propagate to the old inventory. The two inventories can therefore show different class values for the same asset. |
@@ -263,11 +263,11 @@ No. Container image inventory is a new, complementary view. The Projects page re
 
 **Will all my existing container Projects automatically appear in the inventory?**
 
-Not immediately. Assets are created when a scan runs using the updated snyk-docker-plugin. Existing Projects will populate the inventory as images are rescanned — either via a scheduled recurring test or when a new image digest is pushed to a monitored tag. CLI and Kubernetes users may need to take additional steps (see [What you need to do](container-image-inventory.md#what-you-need-to-do)).
+Not immediately. Snyk creates assets when a scan runs using the updated snyk-docker-plugin. Existing Projects populate the inventory as images are rescanned — either via a scheduled recurring test or when a new image digest is pushed to a monitored tag. CLI and Kubernetes users may need to take additional steps (see [What you need to do](container-image-inventory.md#what-you-need-to-do)).
 
 **What is the asset identity for a container image?**
 
-An asset is uniquely identified by **Registry + Repository + Config Digest**. Image tags are intentionally excluded from the identity because tags are mutable — a single image can have many tags, but it is still one asset.
+An asset is uniquely identified by `Registry + Repository + Config Digest`. Image tags are intentionally excluded from the identity because tags are mutable — a single image can have many tags, but it is still one asset.
 
 **Is this available at the Group level?**
 
@@ -275,8 +275,8 @@ Yes. Container image inventory is available at both Organization and Group scope
 
 **How are issue counts calculated?**
 
-Issue counts are summed across the latest scan snapshot of each unique Project target file associated with the asset, then broken down by severity. This deduplication ensures that the same vulnerability found by multiple scan sources is not double-counted.
+Snyk sums issue counts across the latest scan snapshot of each unique Project target file associated with the asset, then breaks them down by severity. This deduplication ensures that the same vulnerability found by multiple scan sources is not double-counted.
 
 **How is the risk score calculated?**
 
-The score is the maximum score across the latest scan snapshots of all related Snyk Project discovery sources. Risk score is available only when it has been enabled under **Snyk Preview** settings for your Group or Organization and your Projects have been re-scanned.
+The score is the maximum score across the latest scan snapshots of all related Snyk Project discovery sources. Risk score is available only after you enable it under **Snyk Preview** settings for your Group or Organization and re-scan your Projects.
