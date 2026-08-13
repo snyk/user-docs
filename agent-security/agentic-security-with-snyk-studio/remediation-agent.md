@@ -96,87 +96,24 @@ Restart your coding assistant for the updated MCP configuration to take effect. 
 
 ## Use `snyk fix --agentic`
 
-If you used the Snyk Studio installer, the CLI is already installed. Otherwise, install it with npm or Homebrew:
+The Snyk Studio installer installs the CLI automatically. If you skipped the installer, see [Install the Snyk CLI](../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/) for installation options.
 
-```bash
-npm install -g snyk@latest
-```
+The agentic CLI flow requires an LLM provider API key. Set one of the following environment variables before running the command:
 
-```bash
-brew install snyk-cli
-```
+* **Anthropic (default):** `export ANTHROPIC_API_KEY=sk-ant-...`
+* **OpenAI:** `export OPENAI_API_KEY=sk-...`
+* **Vertex AI:** authenticate with `gcloud auth application-default login` and set `GOOGLE_CLOUD_PROJECT` and `GOOGLE_CLOUD_LOCATION`
+* **LiteLLM:** set `LITELLM_BASE_URL` and `LITELLM_API_KEY`
+* **Ollama:** start Ollama with your model, then pass `--provider=ollama --model=<model>` to the command
 
-For additional installation methods, see [Install the Snyk CLI](../../developer-tools/snyk-cli/install-or-update-the-snyk-cli/).
-
-### Set up an LLM provider
-
-The agentic CLI flow requires one of the following LLM providers:
-
-**Anthropic (default)**
-
-```bash
-export ANTHROPIC_API_KEY=sk-ant-...
-```
-
-**OpenAI**
-
-```bash
-export OPENAI_API_KEY=sk-...
-```
-
-**Vertex AI**
-
-```bash
-export GOOGLE_CLOUD_PROJECT=your_project
-export GOOGLE_CLOUD_LOCATION=your_location
-gcloud auth application-default login
-```
-
-**LiteLLM**
-
-```bash
-export LITELLM_BASE_URL=https://your-proxy
-export LITELLM_API_KEY=your-virtual-key
-```
-
-**Ollama (local)**
-
-Start Ollama with your model first, then pass `--provider` and `--model` to the `snyk fix` command.
-
-### Run the command
-
-**Snyk Open Source (dependency vulnerabilities)**
+Run the command with `--sca` for dependency vulnerabilities or `--sast` for source-code issues:
 
 ```bash
 snyk fix --agentic --experimental --sca [path]
-```
-
-**Snyk Code (source-code issues)**
-
-```bash
 snyk fix --agentic --experimental --sast [path]
 ```
 
-`[path]` is the project directory to scan. It defaults to the current directory.
-
-You must pass exactly one of `--sca` or `--sast`. Running `--agentic` without one of these flags prints usage guidance and exits without scanning.
-
-### CLI flags
-
-| Flag | Description |
-| ---- | ----------- |
-| `--agentic` | Enable the LLM-driven fix flow. |
-| `--experimental` | Required alongside `--agentic` (early-access acknowledgement). |
-| `--sca` | Remediate Snyk Open Source (dependency) vulnerabilities. Mutually exclusive with `--sast`. |
-| `--sast` | Remediate Snyk Code (source-code) issues. Mutually exclusive with `--sca`. |
-| `--provider` | LLM provider: `anthropic` (default), `openai`, `vertex`, `litellm`, or `ollama`. |
-| `--model` | Model ID — required for Ollama (for example, `llama3.1`), optional override for Anthropic and OpenAI. |
-| `--dry-run` | Show the fix plan without applying changes. |
-| `--auto-approve` | Automatically approve fixes for all discovered issues. Combine with `--issue-ids` or `--severity-threshold` to restrict scope. |
-| `--issue-ids` | Comma-separated list of Snyk issue IDs to fix. |
-| `--severity-threshold` | Fix issues at or above this severity: `CRITICAL`, `HIGH`, or `MEDIUM`. |
-| `--no-breakability` | Skip the Snyk breakability assessment and use local heuristics only. |
-| `-d` / `--debug` | Print debug information to stderr. |
+For the full command reference including all flags, see [Fix](../../developer-tools/snyk-cli/commands/fix.md).
 
 ## Next steps
 
