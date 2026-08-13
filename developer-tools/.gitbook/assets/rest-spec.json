@@ -5673,6 +5673,12 @@
             "maxItems": 10000,
             "type": "array"
           },
+          "origin_timestamp": {
+            "description": "The asset's source-defined timestamp — when the underlying artifact was created at its origin (e.g. a container image's build time or an SBOM's generation time). Distinct from created_at, which is when the asset record was created in Snyk. Null when unknown.",
+            "format": "date-time",
+            "nullable": true,
+            "type": "string"
+          },
           "risk_score": {
             "description": "Risk score for the asset",
             "format": "int32",
