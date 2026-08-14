@@ -32,17 +32,17 @@ Depending on how you scan containers, take the following steps to ensure your im
 Not all existing Projects have the metadata required to compute the new asset identity. To fully populate the inventory for existing Projects, CLI and Kubernetes users must upgrade and re-scan.
 {% endhint %}
 
-## Use container image inventory
+## Use Container image inventory
 
 Container image inventory is accessible from the **Inventory** navigation item at both the Organization and Group levels.
 
 ### Navigate to the inventory
 
-Select **Inventory** in the left-hand navigation to access container image inventory.
+Select **Inventory** in the left-hand navigation to access Container image inventory.
 
-**At the Organization level**, selecting Inventory opens the new container image inventory directly. There is no previous inventory experience at the Organization level, so the new view is the only one available. The **Container Images** tab is selected by default, showing all unique container image assets within that Organization.
+**At the Organization level**, selecting Inventory opens the new Container image inventory directly. There is no previous inventory experience at the Organization level, so the new view is the only one available. The **Container Images** tab is selected by default, showing all unique container image assets within that Organization.
 
-**At the Group level**, the existing Asset Inventory remains the default view. A banner at the top of the page invites you to try the new container image experience. Click **Try it now** to switch. You can switch back and forth between the existing Asset Inventory and the new container image inventory at any time — both views remain available. Over time, Snyk expects to add more asset types to the new view, and the older experience will eventually be deprecated.
+**At the Group level**, the existing Asset Inventory remains the default view. A banner at the top of the page invites you to try the new container image experience. Click **Try it now** to switch. You can switch back and forth between the existing Asset Inventory and the new Container image inventory at any time — both views remain available. Over time, Snyk expects to add more asset types to the new view, and the older experience will eventually be deprecated.
 
 ### Grouped view (default)
 
@@ -194,6 +194,8 @@ The Fix Recommendations tab displays base image upgrade recommendations. Each re
 - **Impact summary** — The number of issues that would be resolved and the upgrade type (for example, "26 fewer issues - Minor upgrade")
 - **Side-by-side comparison** — The current base image and suggested base image with their respective issue counts and severity breakdowns
 
+Opening a fix PR directly from a base image recommendation is not available in this release. To open a fix PR for a specific package upgrade, use the associated Snyk Project.
+
 ![The Fix Recommendations tab showing an upgrade path with a side-by-side comparison of issue counts.](../.gitbook/assets/container-inventory-fix-recommendations-tab.png)
 
 #### Related Projects tab
@@ -209,7 +211,7 @@ The Related Projects tab lists all Snyk Projects that are linked to this asset a
 | **Target Reference** | The target reference associated with the Project |
 | **Actions** | Links to the Project details page |
 
-You can sort the list by date last tested or issue count, and use **Modify columns** to customize which columns are displayed.
+You can sort the list by date last tested or issue count, and select **Modify columns** to customize which columns are displayed.
 
 ![The Related Projects tab showing linked Snyk Projects with metadata and actions.](../.gitbook/assets/container-inventory-related-projects-tab.png)
 
@@ -230,16 +232,16 @@ You can sort the list by date last tested or issue count, and use **Modify colum
 ### Administrators
 
 - The inventory is available at both **Organization** and **Group** scopes, giving the right visibility level to the right team.
-- At the Organization level, the new container image inventory replaces the Inventory page (there was no prior inventory experience at this scope). At the Group level, the existing Asset Inventory remains available alongside the new experience — users can switch between them.
-- Access requires an Enterprise entitlement.
+- At the Organization level, the new Container image inventory replaces the Inventory page (there was no prior inventory experience at this scope). At the Group level, the existing Asset Inventory remains available alongside the new experience — users can switch between them.
+- Access requires **Snyk Essentials** enabled at the Group level, currently available only on an Enterprise plan.
 
 ## Prerequisites
 
-Container image inventory is available to customers with an **Enterprise** license.
+Container image inventory requires **Snyk Essentials** at the Group level. This is available to customers on an Enterprise plan; it is not included in the self-serve Enterprise trial.
 
 - **Scope:** Organization and Group level
 - **Interface:** Accessible from the **Inventory** navigation item, under the **Container Images** tab
-- **Organization level:** The new container image inventory is the only inventory experience at this scope.
+- **Organization level:** The new Container image inventory is the only inventory experience at this scope.
 - **Group level:** The existing Asset Inventory remains the default. A banner allows users to switch to the new container image experience and back at any time.
 
 The existing Projects view for containers remains unchanged.
@@ -253,7 +255,7 @@ The existing Projects view for containers remains unchanged.
 | **Tag staleness** | Because tags are scoped per discovery source, two assets in the same repository can temporarily show the same tag if a discovery source has not yet been refreshed. This can cause the inventory to show images that no longer carry the `latest` tag in your Projects view. |
 | **Backfilling existing Projects** | Not all existing Projects have the metadata required to compute the new asset identity. CLI and Kubernetes users must upgrade to the latest Snyk CLI or `snyk-monitor` and re-scan to populate the inventory for existing images. |
 | **Base image inference** | Base image detection is heuristic-based (parsing the Dockerfile if present, or matching layer hashes against a known image index). Results may vary across Projects that scanned the same image differently (for example, with or without the Dockerfile). |
-| **Asset class sync** | Changing an asset's class in the new container image inventory does not propagate to the old inventory. The two inventories can therefore show different class values for the same asset. |
+| **Asset class sync** | Changing an asset's class in the new Container image inventory does not propagate to the old inventory. The two inventories can therefore show different class values for the same asset. |
 
 ## FAQs
 
@@ -263,7 +265,7 @@ No. Container image inventory is a new, complementary view. The Projects page re
 
 **Will all my existing container Projects automatically appear in the inventory?**
 
-Not immediately. Snyk creates assets when a scan runs using the updated snyk-docker-plugin. Existing Projects populate the inventory as images are rescanned — either via a scheduled recurring test or when a new image digest is pushed to a monitored tag. CLI and Kubernetes users may need to take additional steps (see [What you need to do](container-image-inventory.md#what-you-need-to-do)).
+Not immediately. Snyk creates assets when a scan runs using the updated snyk-docker-plugin. Existing Projects populate the inventory as images are rescanned — either through a scheduled recurring test or when a new image digest is pushed to a monitored tag. CLI and Kubernetes users may need to take additional steps (see [What you need to do](container-image-inventory.md#what-you-need-to-do)).
 
 **What is the asset identity for a container image?**
 
