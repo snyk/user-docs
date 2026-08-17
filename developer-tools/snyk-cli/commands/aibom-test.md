@@ -82,4 +82,4 @@ Example: `$ snyk aibom test --enriched`
 
 ### `--severity-threshold=<low|medium|high|critical>`
 
-**Optional**. Report only issues at the specified level or higher. This applies to the on-screen report, the test summary, and JSON file output. Only issues at or above this level cause the command to exit with `1` (`action_needed`). Default: `low`.
+**Optional**. Report only issues at the specified level or higher. This applies to the on-screen report, the test summary, and JSON file output. Any issues reported will cause the command to exit with `1` (`action_needed`). Default: `low`.
