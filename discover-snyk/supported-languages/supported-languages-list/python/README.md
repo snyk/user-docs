@@ -91,9 +91,17 @@ For Python, the following frameworks and libraries are supported:
 
 Snyk Code analyzes Python functions that run on AWS Lambda. Snyk resolves handlers from AWS SAM and Serverless Framework configuration files, so it analyzes the function entry point as application code instead of skipping it.
 
-Snyk treats event data that reaches a handler from an Amazon SQS trigger as a taint source. Injection, path-traversal, and related findings then reflect data entering the function from the queue.
+Snyk treats the event data that reaches a handler as a taint source. Injection, path-traversal, and related findings then reflect data entering the function from the service that triggered it. Snyk supports the following triggers:
 
-Snyk supports only SQS triggers. Snyk does not treat other AWS event sources as taint sources.
+* Amazon API Gateway
+* Amazon DynamoDB
+* Amazon EventBridge
+* Amazon Kinesis
+* Amazon S3
+* Amazon SNS
+* Amazon SQS
+
+Snyk treats the handler event as untrusted as a whole, rather than tracking individual fields within it.
 
 ### Directory layout
 
