@@ -1,3 +1,40 @@
+## 2026-03-25 - Updated 2026-08-17
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- added the new optional `query` request parameter `include_code_flows`
+
+- added the optional property `data/items/attributes/coordinates/items/code_flows` to the response with the `200` status
+
+- added the optional property `data/items/attributes/coordinates/items/code_flows_omitted` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added the new optional `query` request parameter `include_code_flows`
+
+- added the optional property `data/attributes/coordinates/items/code_flows` to the response with the `200` status
+
+- added the optional property `data/attributes/coordinates/items/code_flows_omitted` to the response with the `200` status
+
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added the new optional `query` request parameter `include_code_flows`
+
+- added the optional property `data/items/attributes/coordinates/items/code_flows` to the response with the `200` status
+
+- added the optional property `data/items/attributes/coordinates/items/code_flows_omitted` to the response with the `200` status
+
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added the new optional `query` request parameter `include_code_flows`
+
+- added the optional property `data/attributes/coordinates/items/code_flows` to the response with the `200` status
+
+- added the optional property `data/attributes/coordinates/items/code_flows_omitted` to the response with the `200` status
+
+
 ## 2026-03-25 - Updated 2026-07-29
 
 ### GET - `/orgs/{org_id}/issues` - Updated

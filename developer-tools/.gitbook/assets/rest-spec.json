@@ -1965,6 +1965,16 @@
         },
         "style": "form"
       },
+      "IncludeCodeFlows": {
+        "description": "A filter to include data flows for Code issues.",
+        "in": "query",
+        "name": "include_code_flows",
+        "schema": {
+          "default": false,
+          "type": "boolean"
+        },
+        "style": "form"
+      },
       "IncludeGroupMembershipCount": {
         "description": "indicates whether the count of group memberships is included",
         "in": "query",
@@ -17338,6 +17348,101 @@
             "description": "Where the issue originated, specific to issue type. Details on what\ncode, package, etc introduced the issue. An issue may be caused by\nmore than one coordinate.\n",
             "items": {
               "properties": {
+                "code_flows": {
+                  "description": "The data flows in an application which may trigger a vulnerability.\nOnly populated on Code issues when include_code_flows=true and data flows\nin the issues API are enabled for the tenant.\n",
+                  "items": {
+                    "description": "The flow of data from source to sink which can trigger a SAST vulnerability.\n",
+                    "properties": {
+                      "thread_flows": {
+                        "items": {
+                          "description": "A thread of execution data flows through.\n",
+                          "properties": {
+                            "locations": {
+                              "items": {
+                                "description": "One step of the data flow.\n",
+                                "properties": {
+                                  "file": {
+                                    "description": "A path to the file containing this issue, relative to the root of the project target,\nformatted using POSIX separators.\n",
+                                    "maximum": 2048,
+                                    "minimum": 1,
+                                    "type": "string"
+                                  },
+                                  "region": {
+                                    "properties": {
+                                      "end": {
+                                        "properties": {
+                                          "column": {
+                                            "minimum": 0,
+                                            "type": "integer"
+                                          },
+                                          "line": {
+                                            "minimum": 0,
+                                            "type": "integer"
+                                          }
+                                        },
+                                        "required": [
+                                          "line",
+                                          "column"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      "start": {
+                                        "properties": {
+                                          "column": {
+                                            "minimum": 0,
+                                            "type": "integer"
+                                          },
+                                          "line": {
+                                            "minimum": 0,
+                                            "type": "integer"
+                                          }
+                                        },
+                                        "required": [
+                                          "line",
+                                          "column"
+                                        ],
+                                        "type": "object"
+                                      }
+                                    },
+                                    "required": [
+                                      "start",
+                                      "end"
+                                    ],
+                                    "type": "object"
+                                  }
+                                },
+                                "required": [
+                                  "file",
+                                  "region"
+                                ],
+                                "type": "object"
+                              },
+                              "minItems": 1,
+                              "type": "array"
+                            }
+                          },
+                          "required": [
+                            "locations"
+                          ],
+                          "type": "object"
+                        },
+                        "minItems": 1,
+                        "type": "array"
+                      }
+                    },
+                    "required": [
+                      "thread_flows"
+                    ],
+                    "type": "object"
+                  },
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "code_flows_omitted": {
+                  "default": false,
+                  "description": "Indicates if a Code issue contains a code flow that exceeded the 20 KB\n(20,480 byte) serialization limit and was omitted from the response.\nWhen true, code_flows is omitted from the response.\n",
+                  "type": "boolean"
+                },
                 "created_at": {
                   "description": "The time when this coordinate was created.",
                   "format": "date-time",
@@ -33898,6 +34003,9 @@
           },
           {
             "$ref": "#/components/parameters/Ignored"
+          },
+          {
+            "$ref": "#/components/parameters/IncludeCodeFlows"
           }
         ],
         "responses": {
@@ -34670,6 +34778,9 @@
           },
           {
             "$ref": "#/components/parameters/PathIssueId20240123"
+          },
+          {
+            "$ref": "#/components/parameters/IncludeCodeFlows"
           }
         ],
         "responses": {
@@ -73357,6 +73468,9 @@
           },
           {
             "$ref": "#/components/parameters/Ignored"
+          },
+          {
+            "$ref": "#/components/parameters/IncludeCodeFlows"
           }
         ],
         "responses": {
@@ -74129,6 +74243,9 @@
           },
           {
             "$ref": "#/components/parameters/PathIssueId20240123"
+          },
+          {
+            "$ref": "#/components/parameters/IncludeCodeFlows"
           }
         ],
         "responses": {
