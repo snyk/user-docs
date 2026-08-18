@@ -1,12 +1,15 @@
 # Table of contents
 
+## Remediation Agent
+
+* [Remediation Agent](remediation-agent.md)
+
 ## Agentic security with Snyk studio
 
 * [Overview](README.md)
 * [Getting started with Snyk Studio](agentic-security-with-snyk-studio/getting-started-with-snyk-studio.md)
 * [Directives](agentic-security-with-snyk-studio/directives.md)
 * [Distribution at scale](agentic-security-with-snyk-studio/distribution-at-scale.md)
-* [Remediation Agent](agentic-security-with-snyk-studio/remediation-agent.md)
 * [Quickstart guides](agentic-security-with-snyk-studio/quickstart-guides/README.md)
   * [Amazon Q guide](agentic-security-with-snyk-studio/quickstart-guides/amazon-q-guide.md)
   * [Antigravity guide](agentic-security-with-snyk-studio/quickstart-guides/antigravity-guide.md)
