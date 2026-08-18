@@ -124,7 +124,7 @@ Because the search bar matches from the beginning of the asset name field (inclu
 
 ### Asset details
 
-Click any asset row to open a side drawer with detailed information. The drawer contains four tabs: **Overview**, **Issues**, **Fix Recommendations**, and **Related Projects**.
+Click any asset row to open a side drawer with detailed information. The drawer contains five tabs: **Overview**, **Image content**, **Issues**, **Fix Recommendations**, and **Related Projects**.
 
 #### Overview tab
 
@@ -162,6 +162,22 @@ A **Security testing and coverage** section at the bottom shows which scan engin
 Class is a label you assign to an asset, from A to D, using whatever criteria suits your organization (for example, business criticality). Because you can filter and sort the inventory by class, it gives you a way to slice your images along a dimension that you control.
 
 To edit asset class, select the **Class** value in the **Overview** tab to open a dropdown, then select **A**, **B**, **C**, or **D**. The change is saved immediately and is reflected anywhere the asset's class is shown. Images that have not been classified are class **C** by default.
+
+#### Image content tab
+
+The Image content tab shows the provenance attestations Snyk found for the image. A provenance attestation is a signed record, produced by your build system, of where an image came from — the source repository, the commit, and how it was built. Snyk reads these attestations during a scan and displays them alongside the image.
+
+An image can have more than one attestation; the most recent is marked **Latest**. Each card shows:
+
+- **Source repository** — The repository the image was built from, linked to the provider where available. Images built outside a repository show `localhost`.
+- **Source commit** — The commit the build used, linked where available, with a copy button
+- **Built** — The build date
+- **Builder** — The identity of the build system that produced the attestation
+- **Build type** — The build definition the builder ran, for example `BuildKit`
+- **Attests manifest** — The manifest digest this attestation covers, which ties the attestation to a specific image
+- **Dockerfile** — The Dockerfile the build used, if the attestation records it, with a copy button
+
+![The Image content tab showing a provenance attestation, including source repository, build details, and Dockerfile.](../.gitbook/assets/container-inventory-image-content-tab.png)
 
 #### Issues tab
 
@@ -243,6 +259,7 @@ Container image inventory requires **Snyk Essentials** at the Group level. This 
 - **Interface:** Accessible from the **Inventory** navigation item, under the **Container Images** tab
 - **Organization level:** The new Container image inventory is the only inventory experience at this scope.
 - **Group level:** The existing Asset Inventory remains the default. A banner allows users to switch to the new container image experience and back at any time.
+- **Provenance attestations:** Requires Snyk CLI v1.1307.0 or later, or `snyk-monitor` v2.23.24 or later. Images scanned by earlier versions show no attestations until they are scanned again.
 
 The existing Projects view for containers remains unchanged.
 
@@ -256,6 +273,7 @@ The existing Projects view for containers remains unchanged.
 | **Backfilling existing Projects** | Not all existing Projects have the metadata required to compute the new asset identity. CLI and Kubernetes users must upgrade to the latest Snyk CLI or `snyk-monitor` and re-scan to populate the inventory for existing images. |
 | **Base image inference** | Base image detection is heuristic-based (parsing the Dockerfile if present, or matching layer hashes against a known image index). Results may vary across Projects that scanned the same image differently (for example, with or without the Dockerfile). |
 | **Asset class sync** | Changing an asset's class in the new Container image inventory does not propagate to the old inventory. The two inventories can therefore show different class values for the same asset. |
+| **Provenance attestations require a re-scan** | Attestations are read during a scan. Images scanned before provenance support was released show no attestations until they are scanned again, and only images whose build system produces attestations will populate this tab. |
 
 ## FAQs
 
