@@ -9,6 +9,12 @@ nav_context: new
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## August 2026
+
+### Snyk supported languages
+
+* Snyk Code support for COBOL is now generally available, on all plans, across SCM integrations and the Snyk CLI, IDE, and CI/CD. Visit [COBOL](https://docs.snyk.io/supported-languages/supported-languages-list/cobol) and [COBOL rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules/cobol-rules) for more details.
+
 ## July 2026
 
 ### Evo by Snyk

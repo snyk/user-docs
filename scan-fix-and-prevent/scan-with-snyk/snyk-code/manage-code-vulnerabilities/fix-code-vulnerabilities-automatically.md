@@ -18,7 +18,7 @@ Snyk Agent Fix uses an agentic architecture that combines Snyk proprietary secur
 * Dynamic few-shot prompting: Instead of relying on fine-tuning, the architecture uses the Snyk database of more than 35,000 expert-written fixes to provide real-world context to the LLM during inference. Every sample includes vulnerable code from real open-source projects and fixes written by Snyk security experts.
 * Agentic retries: If a generated fix fails a Snyk Code scan, the system analyzes the error, feeds it back into the model, and generates a corrected version.
 
-Snyk Agent Fix remediates vulnerabilities across your entire stack without language-specific fine-tuning. By using a prompt-based agentic reasoning model, Snyk Agent Fix supports all languages supported by Snyk Code: Apex, C, C++, C#, Go, Java, JavaScript, PHP, Python, Ruby, Swift, and TypeScript.
+Snyk Agent Fix remediates vulnerabilities across your stack without language-specific fine-tuning. By using a prompt-based agentic reasoning model, Snyk Agent Fix supports every language that Snyk Code supports. For the current list, see [Supported languages, package managers, and frameworks](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-package-managers-and-frameworks).
 
 ## How Snyk Agent Fix works
 
