@@ -1,5 +1,9 @@
 # Table of contents
 
+## Remediation Agent
+
+* [Remediation Agent](remediation-agent.md)
+
 ## Agentic security with Snyk studio
 
 * [Overview](README.md)

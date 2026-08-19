@@ -337,6 +337,7 @@
     * [Container monitor](snyk-cli/commands/container-monitor.md)
     * [Container SBOM](snyk-cli/commands/container-sbom.md)
     * [Container test](snyk-cli/commands/container-test.md)
+    * [Fix](snyk-cli/commands/fix.md)
     * [IaC](snyk-cli/commands/iac.md)
     * [IaC test](snyk-cli/commands/iac-test.md)
     * [IaC describe](snyk-cli/commands/iac-describe.md)
