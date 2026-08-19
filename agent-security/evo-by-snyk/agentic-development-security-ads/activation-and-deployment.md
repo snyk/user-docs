@@ -37,3 +37,56 @@ When the installer runs, it sets up each selected product on the machine:
 * **Agent Supply Chain Security** discovers the skills and MCP servers in the known directories, performs a risk assessment, and sends the results to the Evo Tenant associated with the push key.
 * **Agent Behavior Governance** checks whether the supported agents have the required hooks configured. If they do not, it writes them with the push key, so subsequent agent activity is pushed to Evo and evaluated against your Tenant's policies.
 * **Trusted Output Assurance** checks whether the required configuration is in place: the Snyk CLI and its MCP server, the Secure at inception hooks, and the package health check, fix commands, and skills. It adds anything missing, so subsequent agent activity runs through the Secure-at-inception loop. Each developer still authenticates the Snyk CLI and MCP server individually.
+
+## Uninstall
+
+There are two ways to uninstall an ADS product.
+
+| What you want to do                              | Use this                                |
+| ------------------------------------------------ | --------------------------------------- |
+| Stop a product from being used across your fleet | Unselect it in ADS settings             |
+| Fully remove a product from a machine            | Run the installer's `uninstall` command |
+
+### Disabling a product across your fleet
+
+Recommended for MDM-managed deployments.
+
+The ADS installer reconciles each machine with the products you select in ADS settings. Unselect a product, and the installer removes it on the next run, whether you trigger it manually or your MDM does.
+
+1. In ADS settings, unselect the product.
+2. Run the installer again. There is no separate apply step: re-running the install is what applies the change.
+   * On a single machine: run the install command shown in **Settings** page in Evo
+   * Across a fleet: re-push the installer through your MDM tool, using the same command or package you deploy with today.
+   * If you have a scheduled installer run, you can wait for the next scheduled run.
+
+This is the recommended path for MDM deployments; it requires no change to your MDM scripts or policies.
+
+{% hint style="warning" %}
+The installer removes any unselected products on the next run, including a run you start for an unrelated reason.
+
+Disabling a product stops it from running but leaves its files on the machine. Use `uninstall` to remove the files.
+{% endhint %}
+
+### Removing an ADS product from a machine
+
+Use the `uninstall` command when you are working on a single machine rather than a fleet.
+
+Pass a component flag to specify what to remove:
+
+```
+./ads-installer uninstall --tenant-id <TENANT_ID> --push-key <PUSH_KEY> ----<FLAG>
+```
+
+Replace `<FLAG>` with `--scan`, `--guard`, or `--studio` as shown in the table below.
+
+| ADS product                                | Flag       |
+| ------------------------------------------ | ---------- |
+| **Machines** (Agent Supply Chain Security) | `--scan`   |
+| **Agent Behavior Governance**              | `--guard`  |
+| **Snyk Studio** (Trusted Output Assurance) | `--studio` |
+
+Omitting the component flags removes all three ADS products.
+
+`uninstall` with no `--scan`, `--guard`, or `--studio` flag removes Machines, Agent Behavior Governance, and Snyk Studio.
+
+`sudo` is not required.
