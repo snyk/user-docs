@@ -15,22 +15,19 @@ The agent follows the same core flow regardless of the entry point:
 1. **Scan**: Snyk scans the project for vulnerabilities using Snyk Open Source (SCA) or Snyk Code (SAST).
 2. **Plan**: The agent generates a fix plan enriched with Snyk's security intelligence, including breakability signals for SCA fixes.
 3. **Fix**: The agent applies the fix. For SCA, this means bumping dependency versions or adding overrides. For SAST, this means applying Snyk Agent Fix suggestions to the source code.
-4. **Verify**: The agent rescans to confirm the vulnerability is resolved. If a fix introduces a problem, the agent reports the outcome.
+4. **Verify**: The agent rescans to confirm the vulnerability is resolved and runs any tests that exist in the application, such as unit tests. If a fix introduces a problem, the agent reports the outcome.
 
-Snyk's breakability signals are central to SCA remediation. Before upgrading a dependency, Snyk assesses whether the version bump is likely to break the build. When the upgrade is low risk, the agent proceeds without additional input. When the risk is higher, the agent surfaces specific guidance on what to watch for.
+Snyk's breakability signals are central to SCA remediation. Before upgrading a dependency, Snyk assesses whether the version bump is likely to break the build. If introducing a breaking change is likely, the agent flags it and provides recommendations on next steps that either it or a developer can complete to reduce that risk.
 
-SAST remediation uses Snyk's Agent Fix engine instead of breakability scoring. The agent applies code-level suggestions and then rescans to verify resolution.
-
+SAST remediation leverages Snyk's Agent Fix engine, which provides code-level suggestions to the LLM for replacement. If appropriate, the agent applies the code-level suggestion and then rescans to verify a clean resolution.
 ## Entry points
 
 * **Agentic IDE (ADE)**: Run `/snyk-fix` in your coding assistant to scan the project and apply a fix for the top vulnerability. Use `/snyk-batch-fix` to address multiple issues at once. The `/snyk-fix` skill must be installed in the ADE before use; this happens automatically with the Snyk Studio one-line installer, or manually by following the [studio-recipes](https://github.com/snyk/studio-recipes/tree/main) setup instructions.
-* **Snyk CLI**: Run `snyk fix --agentic` from your terminal to trigger the same remediation flow without an IDE.
+* **Snyk CLI**: Run `snyk fix --agentic` from your terminal to trigger a human-in-the-loop interactive remediation experience without an IDE.
 
 ## Snyk intelligence injected by the Remediation Agent
 
-Before the agent modifies a dependency, Snyk performs a breaking change assessment. The agent receives guidance on whether the version upgrade is likely to break the build and what to watch for if it does. When there is no breakability risk, the agent proceeds without additional friction.
-
-Breaking change assessments apply to SCA (dependency) fixes only. For SAST fixes, the agent uses Snyk's Agent Fix engine, which does not use breakability scoring.
+Before the agent modifies an open source dependency, Snyk performs a breaking change assessment. The agent receives guidance on whether the version upgrade is likely to break the build and what to watch for if it does. In the ADE, the agent proceeds automatically when there is no breakability risk. In the CLI, the agent still prompts you to choose what to fix, unless you run it with `--auto-approve`.
 
 {% hint style="info" %}
 The breaking change assessment is currently in preview. When it is unavailable, the agent falls back to a local heuristic assessment.
