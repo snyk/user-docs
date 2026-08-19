@@ -18,7 +18,7 @@ To use the `snyk fix --agentic` command:
 
 ## Description
 
-The `snyk fix --agentic` command is an LLM-driven vulnerability remediation command. It scans your project for vulnerabilities, generates a fix plan enriched with Snyk's security intelligence, applies fixes, and verifies the result.
+The `snyk fix --agentic` command is an LLM-driven vulnerability remediation command. It scans your project for vulnerabilities, generates a fix plan enriched with Snyk's security intelligence, and walks you through applying and verifying each fix interactively. Use `--auto-approve` to apply fixes without prompting.
 
 Choose what to remediate with a product flag:
 
