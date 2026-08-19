@@ -1,28 +1,28 @@
 ---
-description: What happens during a Snyk API and Web scan
 nav_context: agnostic
+description: What happens during a Snyk API and Web scan
 ---
 
 # What happens during a scan
 
-During a target scan, Snyk API & Web goes through the target's URLs and interacts with every element found, filling out forms and clicking buttons, among other actions, to perform extensive tests on your target and identify as many vulnerabilities as possible.
+During a scan, Snyk API & Web goes through the target's URLs and interacts with every element found, filling out forms and clicking buttons, among other actions, to perform extensive tests on your target and identify as many vulnerabilities as possible.
 
 Because of these thorough interactions, expect many requests and an influx of information into the target.
 
 ## Scan components
 
-A target scan involves three major components, each with a specific job:
+A scan involves three major components, each with a specific job:
 
 * The **fingerprinter** identifies the technologies used on the target.
 * The **crawler** goes through the target's URLs and interacts with every element found, clicking buttons and filling in forms, among other things.
-* The **scanner** finds vulnerabilities within the target's URLs.
+* The **scanner** finds vulnerabilities within the target's URLs. The process involves two stages. First, it tests the target and identifies candidate vulnerabilities. Then, it validates these candidates to confirm which ones are genuinely exploitable. Validation processes one candidate at a time and continues after the testing stage completes.
 
 ## Scan states
 
-A target scan has several possible states:
+A scan has several possible states:
 
 * As soon as you request a scan, it gets the **Queued** state.
-* After a queued scan begins, its state changes to **Started**.
+* After a queued scan begins, its state changes to **Started**. During a scan, the scan results page displays a progress bar for each of the three components. You can see which component is active and its progress.
 * After the fingerprinter, the crawler, and the scanner complete their jobs, the scan ends with the **Completed** state.
 
 ### Additional scan states
