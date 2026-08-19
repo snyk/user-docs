@@ -73,13 +73,13 @@ You need to keep the Snyk CLI on the latest version using MDM, which depends on 
 
 ### Do you want to enable Secure at inception directives?
 
-[Secure at inception directives](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/directives#secure-at-inception-directives) guide the coding assistant on how and when to scan generated code and automatically fix security issues. You can configure whether you use these directives, the content, and how strictly you want them enforced.
+[Secure at inception directives](directives.md#secure-at-inception-directives) guide the coding assistant on how and when to scan generated code and automatically fix security issues. You can configure whether you use these directives, the content, and how strictly you want them enforced.
 
 <details>
 
 <summary><strong>Yes</strong>, enable Secure at inception directives.</summary>
 
-* If you use Claude Code, Codex CLI, Cursor, or Gemini CLI, use the [Snyk Studio installer](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/getting-started-with-snyk-studio#install-snyk-studio-for-ades-with-hooks-support) to automatically configure the directives.
+* If you use Claude Code, Codex CLI, Cursor, or Gemini CLI, use the [Snyk Studio installer](getting-started-with-snyk-studio.md#install-snyk-studio-for-ades-with-hooks-support) to automatically configure the directives.
 * If you deploy Snyk Studio into any other coding assistant or want to customize the Secure at inception directives, write the directives to the appropriate directory for your assistant. You can apply directives at the user level or the repository level.
   * User-level directives: These apply to all repositories. For Windsurf, add rules to the `global_rules.md` file. For macOS or Linux, this file is located in the `~/.codeium/windsurf/directory`. For Windows, this file is located in the `%USERPROFILE%\.codeium\windsurf\` directory. Cursor does not support programmatic user-level rules.
   * If you use administrative consoles to manage directives, they must remain in sync across your development environments.
@@ -131,7 +131,7 @@ The following example details deployment steps for "Example Company":
 * Yes, enable Secure at inception directives.
 * No, do not allow developers to modify directive settings.
 
-This results in a straightforward deployment where the [Snyk Studio installer](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/getting-started-with-snyk-studio#install-snyk-studio-for-ades-with-hooks-support) can configure the hooks (guardrail directives), skills, MCP server, and commands. The configuration is enforced as frequently as the MDM script runs.
+This results in a straightforward deployment where the [Snyk Studio installer](getting-started-with-snyk-studio.md#install-snyk-studio-for-ades-with-hooks-support) can configure the hooks (guardrail directives), skills, MCP server, and commands. The configuration is enforced as frequently as the MDM script runs.
 
 ### Development and rollout steps
 

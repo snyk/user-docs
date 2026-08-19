@@ -10,15 +10,34 @@ Policies govern how AI is used across your environment. When an asset violates a
 
 A policy has a name, a severity (Critical, High, Medium, or Low), one or more conditions matched against asset attributes, and optional remediation steps. A policy supports up to 12 conditions, one per attribute.
 
+Severity is fixed per policy. A policy does not change severity based on the score it matches, so to raise different severities at different scores, create a policy for each.
+
 Create and edit policies from the Policies & issues page or with Evo chat. You can delete custom policies. Default policies are read-only.
 
 ### Default policies
 
 Evo provides default policies that raise high or critical severity risks as issues with no setup. AI-SPM and Agent Supply Chain Security each include default policies.
 
+Snyk default policies for model risk target attacker goals, the most specific level of the model risk taxonomy. They raise:
+
+* a **High** issue from a score of 500
+* a **Critical** issue from a score of 750
+
+{% hint style="info" %}
+A score in a severity range does not always raise an issue. If no default policy exists for that attacker goal at that severity, the score appears on the model's **Risk profile** tab with no issue attached. You can create your own policy against any attacker goal or sub-category at any threshold.
+{% endhint %}
+
+To learn how model risk scores are calculated, visit [Risk intelligence](../ai-spm/risk-intelligence/).
+
 ### User-defined policies
 
 You can also create custom policies. With custom policies, you target assets by their attributes — for example, disallow a specific model in your code, or disallow a specific MCP server in your code, on end users' machines, or both.
+
+For model risk, you can target an attacker goal or a sub-category. Impact categories cannot be targeted.
+
+Target a sub-category when its attacker goals are interchangeable for you: the same fix, the same owner, and the specific goal does not change what you do about it. Bias is the common example, where you care that a model shows bias rather than whether it is gender, race, or religion bias.
+
+Avoid pairing an attacker goal with the sub-category that contains it. Both fire, and you get two issues for one problem.
 
 #### Create a policy
 
@@ -71,6 +90,16 @@ To delete a policy:
 1. Select the policy you want to delete.
 2. Click the ellipsis next to **Edit policy**.
 3. Click **Delete**.
+
+#### Policies created against the Risk index
+
+The Model Risk Score replaces the Risk index. Policies you created against a Risk index category stop raising issues and need to be recreated.
+
+{% hint style="warning" %}
+The five Risk index categories do not map onto the new taxonomy, and the two scores are not equivalent. You cannot carry a Risk index threshold across. Set the threshold again against the attacker goal or sub-category you want to govern.
+{% endhint %}
+
+For what the new taxonomy contains and how to read a score, visit [Risk intelligence](../ai-spm/risk-intelligence/).
 
 ## Issues
 

@@ -45,9 +45,15 @@ The following table shows agent support by operating system. A check mark (✓) 
 | OpenClaw       | ✗         | ✓            | ✗             | ✓                | ✗           | ✓              |
 | OpenCode       | ✗         | ✗            | ✗             | ✗                | ✗           | ✗              |
 
-## Risk indexes
+## MCP server and skill risk indexes
 
-Agent Supply Chain Security scores each MCP server and skill it discovers across a set of risk indexes. Each index scores one category of risk from 0 to 1,000. The higher the score, the more severe the finding. A component's Risk profile shows only the indexes that scored non-zero. Default policies raise an issue for any index at High or Critical severity (a score of 600 or above). Lower-severity findings appear in the Risk profile but do not raise an issue by default.
+{% hint style="info" %}
+MCP server and skill risk indexes use their own severity ranges. They are not the same scale as the Model Risk Score used for AI models, and the two are not comparable. For model risk, visit [Risk intelligence](../ai-spm/risk-intelligence/).
+{% endhint %}
+
+Agent Supply Chain Security scores each MCP server and skill it discovers across a set of risk indexes. Each index scores one category of risk from 0 to 1,000. The higher the score, the more severe the finding.
+
+A component's Risk profile shows only the indexes that scored non-zero. Default policies raise an issue for any index at High or Critical severity (a score of 600 or above). Lower-severity findings appear in the Risk profile but do not raise an issue by default.
 
 ### MCP server risk indexes
 
