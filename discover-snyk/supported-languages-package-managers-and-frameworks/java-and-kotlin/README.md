@@ -26,7 +26,7 @@ Improved Gradle SCM scanning is in Early Access. For more information, see [SCM 
 
 ## Technical specifications
 
-Snyk supports Java analysis for Java versions up to SE 21 and is designed to process code from newer Java versions where feasible.
+Snyk supports Java analysis for Java versions up to SE 25 and is designed to process code from newer Java versions where feasible.
 
 ### Supported frameworks and libraries
 
