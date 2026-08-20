@@ -214,7 +214,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`iac test`](commands/iac-test.md), [`secrets test`](commands/secrets-test.md)
 
-`--severity-threshold=<low|medium|high|critical>`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`iac test`](commands/iac-test.md), [`sbom test`](commands/sbom-test.md), [`secrets test`](commands/secrets-test.md)
+`--severity-threshold=<low|medium|high|critical>`: [`test`](commands/test.md), [`code test`](commands/code-test.md), [`container test`](commands/container-test.md), [`iac test`](commands/iac-test.md), [`sbom test`](commands/sbom-test.md), [`secrets test`](commands/secrets-test.md), [`aibom test`](commands/aibom-test.md)
 
 `--fail-on=<all|upgradable|patchable>`: [`container test`](commands/container-test.md), [`test`](commands/test.md)
 
@@ -238,7 +238,8 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--enriched`: [snyk aibom](commands/aibom.md), [snyk aibom test](commands/aibom-test.md)\
 `--html`\
-`--json-file-output`: [snyk aibom](commands/aibom.md)
+`--json-file-output`: [snyk aibom](commands/aibom.md), [snyk aibom test](commands/aibom-test.md)\
+`--severity-threshold=<low|medium|high|critical>`: [snyk aibom test](commands/aibom-test.md)
 
 ## `snyk auth` command options
 
