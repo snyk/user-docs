@@ -5675,7 +5675,7 @@
             "type": "string"
           },
           "org_ids": {
-            "description": "Every org the asset belongs to across the tenant, sourced from the asset\nscope summary. Tenant-wide regardless of the request scope. Only populated\nfor scan-backed asset types (container images and SBOMs); omitted for\nrepository assets.\n",
+            "description": "Every org the asset belongs to within the requested scope, sourced from the\nasset scope summary: a tenant-scoped read lists all orgs in the tenant, a\ngroup-scoped read only those under the group, and an org-scoped read only\nthe requested org. Only populated for scan-backed asset types (container\nimages and SBOMs); omitted for repository assets.\n",
             "items": {
               "format": "uuid",
               "type": "string"
