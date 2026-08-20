@@ -16,7 +16,7 @@ With Snyk Studio, you can:
 
 ## What to do next
 
-Start with [Agentic security with Snyk Studio](<../../README (1).md>) for the full product overview.
+Start with [Agentic security with Snyk Studio](../../) for the full product overview.
 
 Then use these guides based on what you need:
 
@@ -28,4 +28,4 @@ Then use these guides based on what you need:
 
 Snyk Studio supports a default hooks-based experience for supported agentic development environments. It also supports other coding assistants that can integrate with a local MCP server.
 
-To explore supported assistants and setup options, start from [Agentic security with Snyk Studio](<../../README (1).md>).
+To explore supported assistants and setup options, start from [Agentic security with Snyk Studio](../../).
