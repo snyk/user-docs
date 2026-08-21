@@ -110,13 +110,14 @@ The v2 format replaces Group ID logic with explicit Organization-level wildcards
 
 ### Organization-level roles
 
-Legacy format used dashes, which made parsing custom roles difficult if the role or Organization name contained dashes. The new format uses a strict `snyk:org:{slug}:{role}` structure.
+The legacy format used dashes, which made custom roles hard to parse when the role or Organization name itself contained a dash. The v2 format uses a strict `snyk:org:{slug}:{role}` structure.
 
-| Goal | Legacy format | New custom mapping format |
-| ---- | ------------- | ------------------------- |
-| Org Admin | `snyk-{orgslug}-admin` | `snyk:org:{orgslug}:org_admin` |
-| Org Collaborator | `snyk-{orgslug}-collaborator` | `snyk:org:{orgslug}:org_collaborator` |
-| Custom role | `snyk-{orgslug}-{custom_role}` | `snyk:org:{orgslug}:custom:{custom_role}` |
+| Goal | Legacy format | v2 format |
+| ---- | ------------- | --------- |
+| Org Admin | `snyk-{slug}-admin` | `snyk:org:{slug}:org_admin` |
+| Org Collaborator | `snyk-{slug}-collaborator` | `snyk:org:{slug}:org_collaborator` |
+| Org Collaborator across all Orgs in a Group | `snyk-{groupID}` | `snyk:org:*:org_collaborator` |
+| Custom role | `snyk-{slug}-{custom_role}` | `snyk:org:{slug}:custom:{custom_role}` |
 
 ### Tenant-level roles
 
