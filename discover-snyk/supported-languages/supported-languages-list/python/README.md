@@ -56,6 +56,7 @@ For Python, the following frameworks and libraries are supported:
 * huggingface\_hub
 * iopg
 * LangChain
+* LangChain LiteLLM
 * ldap3
 * libxml
 * lxml
@@ -86,6 +87,8 @@ For Python, the following frameworks and libraries are supported:
 * werkzeug
 {% endcolumn %}
 {% endcolumns %}
+
+Snyk Code treats data returned through LangChain LiteLLM as untrusted, so model output that reaches a sink is reported in the same way as any other untrusted input.
 
 ### Serverless support
 
