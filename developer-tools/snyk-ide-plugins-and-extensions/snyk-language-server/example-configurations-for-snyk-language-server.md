@@ -3,6 +3,8 @@ description: Example Snyk Language Server configurations for editors such as Sub
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Example configurations for Snyk Language Server
 
 ## Example configuration for Sublime Text

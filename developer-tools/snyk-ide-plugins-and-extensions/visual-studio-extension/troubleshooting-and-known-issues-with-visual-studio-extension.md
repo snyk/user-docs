@@ -3,6 +3,8 @@ description: How to troubleshoot the Snyk Visual Studio extension, including kno
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Troubleshooting and known issues with Visual Studio extension
 
 {% hint style="warning" %}

@@ -3,6 +3,8 @@ description: Overview of Snyk integrations across agentic workflows, SCMs, IDEs,
 nav_context: classic
 ---
 
+{% include "../.gitbook/includes/new-navigation-banner.md" %}
+
 # Overview
 
 ## Snyk Studio - Agentic integrations

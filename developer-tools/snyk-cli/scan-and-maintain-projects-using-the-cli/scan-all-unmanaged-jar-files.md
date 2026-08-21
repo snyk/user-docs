@@ -3,6 +3,8 @@ description: How to scan all unmanaged JAR files with the Snyk CLI
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Scan all unmanaged JAR files
 
 The Snyk CLI can scan unmanaged JAR files in [Java applications](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/supported-languages/supported-languages-list/java-and-kotlin) to identify which open-source package they contain.

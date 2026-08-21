@@ -3,6 +3,8 @@ description: How to revoke and regenerate a Snyk API token, and the effect on in
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Revoke and regenerate a Snyk API token
 
 {% hint style="warning" %}
