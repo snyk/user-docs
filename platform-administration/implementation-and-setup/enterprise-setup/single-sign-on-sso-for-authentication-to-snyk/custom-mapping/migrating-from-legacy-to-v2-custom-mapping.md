@@ -121,11 +121,11 @@ The legacy format used dashes, which made custom roles hard to parse when the ro
 
 ### Tenant-level roles
 
-The new format introduces the tenant scope and uses an empty string `::` for the target, as an SSO connection is linked to a single Tenant.
+The v2 format introduces the tenant scope and uses an empty string `::` for the target, because an SSO connection is linked to a single Tenant.
 
-| Goal | Legacy format | New custom mapping format |
-| ---- | ------------- | ------------------------- |
+| Goal | Legacy format | v2 format |
+| ---- | ------------- | --------- |
 | Tenant Admin | `snyk-tenantadmin` | `snyk:tenant::tenant_admin` |
 | Tenant Viewer | `snyk-tenantviewer` | `snyk:tenant::tenant_viewer` |
 | Tenant Member | `snyk-tenantmember` | `snyk:tenant::tenant_member` |
-| Custom Tenant role | N/A (new in v2) | `snyk:tenant::custom:{custom_role}` |
+| Custom Tenant role | Not available | `snyk:tenant::custom:{custom_role}` |
