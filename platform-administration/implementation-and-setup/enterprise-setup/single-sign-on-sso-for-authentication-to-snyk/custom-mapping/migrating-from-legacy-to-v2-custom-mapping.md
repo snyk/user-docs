@@ -5,9 +5,9 @@ nav_context: classic
 
 # Migrating from legacy to v2 custom mapping
 
-Snyk's Single Sign-On (SSO) custom mapping empowers administrators to dynamically provision users into Snyk Groups and Organizations based on attributes passed from their Identity Provider (IdP).
+Single Sign-On (SSO) custom mapping dynamically provisions users into Snyk Groups and Organizations based on attributes passed from your Identity Provider (IdP).
 
-If your organization is still using the legacy format, migrating to the updated custom mapping provides a standardized syntax, wildcard support, and streamlined assignments for custom roles.
+If your company still uses the legacy format, the updated custom mapping gives you a standardized syntax, wildcard support, and streamlined assignments for custom roles.
 
 For details on the legacy and v2 formats, see [Legacy custom mapping](legacy-custom-mapping.md) and [Custom mapping](README.md).
 
