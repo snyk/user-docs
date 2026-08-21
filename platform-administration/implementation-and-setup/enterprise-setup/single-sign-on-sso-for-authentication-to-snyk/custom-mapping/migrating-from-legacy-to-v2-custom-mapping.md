@@ -96,16 +96,17 @@ It is recommended to clean up legacy mapping configuration in the IdP post-valid
 
 ### Group-level roles
 
-Legacy format relied on strict strings or Group IDs. The new format targets the group scope and uses wildcards or Group slugs.
+The legacy format relied on strict strings or Group IDs. The v2 format targets the group scope and uses wildcards or Group slugs.
 
-| Goal | Legacy format | New custom mapping format |
-| ---- | ------------- | ------------------------- |
+| Goal | Legacy format | v2 format |
+| ---- | ------------- | --------- |
 | Group Admin (all Groups in SSO) | `snyk-groupadmin` | `snyk:group:*:group_admin` |
 | Group Viewer (all Groups in SSO) | `snyk-groupviewer` | `snyk:group:*:group_viewer` |
-| Org Collaborator (across all Orgs in a specific Group) | `snyk-{groupID}` | Use wildcards: `snyk:org:*:org_collaborator` |
-| Custom Group role | N/A (new in v2) | `snyk:group::custom:{custom_role}` |
+| Custom Group role | Not available | `snyk:group::custom:{custom_role}` |
 
-**Note:** The v2 format replaces Group ID logic with explicit Organization-level wildcards.
+{% hint style="info" %}
+The v2 format replaces Group ID logic with explicit Organization-level wildcards.
+{% endhint %}
 
 ### Organization-level roles
 
