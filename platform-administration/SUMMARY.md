@@ -65,6 +65,7 @@
       * [Example: setting up custom mapping for Google Workspace](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-google-workspace.md)
       * [Example: setting up custom mapping for an Okta OIDC app](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-an-okta-oidc-app.md)
       * [Example: setting up custom mapping for OneLogin](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/examples-setting-up-custom-mapping-for-idps/example-setting-up-custom-mapping-for-onelogin.md)
+    * [Migrating from legacy to v2 custom mapping](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping/migrating-from-legacy-to-v2-custom-mapping.md)
   * [Identity Provider (IdP) migration](implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/identity-provider-idp-migration.md)
 
 ## Service accounts
