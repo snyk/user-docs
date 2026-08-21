@@ -22,7 +22,7 @@ To understand more about roles and permissions within Snyk, see [Pre-defined rol
 
 Snyk offers an updated custom mapping option explained on this page, with increased flexibility, including the ability to grant users Group-level and Tenant-level custom roles, in addition to pre-defined roles.
 
-If you are currently using the legacy format, see [Migrating from Legacy to v2 Custom Mapping](migrating-from-legacy-to-v2-custom-mapping.md).
+If you use the legacy format, visit [Migrating from legacy to v2 custom mapping](migrating-from-legacy-to-v2-custom-mapping.md).
 
 The Snyk [Legacy custom mapping](legacy-custom-mapping.md) option is still supported.
 
