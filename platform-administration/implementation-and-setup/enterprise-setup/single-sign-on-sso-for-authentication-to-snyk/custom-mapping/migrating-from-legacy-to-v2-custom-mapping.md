@@ -9,7 +9,7 @@ Single Sign-On (SSO) custom mapping dynamically provisions users into Snyk Group
 
 If your company still uses the legacy format, the updated custom mapping gives you a standardized syntax, wildcard support, and streamlined assignments for custom roles.
 
-For details on the legacy and v2 formats, see [Legacy custom mapping](legacy-custom-mapping.md) and [Custom mapping](README.md).
+For details on the legacy and v2 formats, visit [Legacy custom mapping](legacy-custom-mapping.md) and [Custom mapping](README.md).
 
 ## Why migrate?
 
