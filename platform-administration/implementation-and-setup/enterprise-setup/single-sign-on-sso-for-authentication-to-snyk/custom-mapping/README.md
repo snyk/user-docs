@@ -3,6 +3,8 @@ description: How Snyk custom mapping dynamically assigns users to Groups and Org
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Custom mapping
 
 Custom mapping allows you to dynamically assign users to your Snyk Groups and Organizations based on data provided by your Identity Provider (IdP), in order to implement a scaled user provisioning and access model.

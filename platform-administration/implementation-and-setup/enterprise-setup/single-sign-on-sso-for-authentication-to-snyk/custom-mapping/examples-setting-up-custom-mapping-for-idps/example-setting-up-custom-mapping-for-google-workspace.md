@@ -3,6 +3,8 @@ description: Example of mapping Snyk roles for a Google Workspace custom SAML co
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Example: setting up custom mapping for Google Workspace
 
 The following shows how to use [custom mapping](../) to map roles for a Google Workspace custom SAML connection.

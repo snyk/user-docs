@@ -3,6 +3,8 @@ description: How to create and delete Snyk Organizations and set your preferred 
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Create and delete Organizations
 
 You can use Organization-level options to [create](create-and-delete-organizations.md#create-an-organization) and [delete](create-and-delete-organizations.md#delete-an-organization) Organizations and [Set your preferred Organization](set-your-preferred-organization.md)
