@@ -1,21 +1,21 @@
 # Framework mappings
 
-Every attacker goal Snyk scores is cross-referenced to four industry frameworks, so you can locate a model risk finding inside a control framework you already use instead of treating it as a separate vocabulary.
-
-Use this page to map a finding to the control, control family, or risk category your governance process already tracks.
+Map Snyk findings to your existing governance frameworks. Snyk cross-references each identified attacker goal with four industry frameworks. This allows you to align security findings with the controls, control families, or risk categories your governance process already tracks.
 
 ## The frameworks
 
-* MITRE ATLAS, version 5.6.0. Adversarial tactics and techniques against AI systems. Identifiers take the form `AML.Txxxx`.
+* MITRE ATLAS, version 5.6.0. Adversarial tactics and techniques against AI systems. Identifiers take the form `AML.Txxxx`, with sub-techniques as `AML.Txxxx.yyy`.
 * OWASP Top 10 for Large Language Model Applications, 2025. Identifiers take the form `LLMxx`.
-* OWASP Top 10 for Agentic Security Initiative (ASI), 2026. Identifiers take the form `ASIxx`.
-* NIST AI Risk Management Framework, covering AI 100-2 E2025 for adversarial machine learning and AI 600-1 for generative AI risks.
+* OWASP Top 10 for Agentic Applications, 2026, from the Agentic Security Initiative. Identifiers take the form `ASIxx`.
+* The NIST AI Risk Management Framework, does not include risk identifiers. Mapping therefore use two NIST risk taxonomies: `AI600-1:2.N` refers to a subsection of section 2 of NIST AI 600-1, covering content, safety, and privacy risks. `NISTAML.NNN` refers to an attack class in NIST AI 100-2 E2025.
 
 ## How the mappings relate
 
-Two properties of the mapping explain most of the gaps you see in the tables.
+Three properties of the mapping explain most of the gaps you see in the tables.
 
 Every indirect attacker goal shares indirect prompt injection as its delivery vector, so every indirect row also maps to `AML.T0051.001`, `LLM01`, and `NISTAML.015`. The indirect table lists only the additional identifiers specific to each goal.
+
+There is no direct equivalent shared vector. `AML.T0051.000`, direct prompt injection, describes an attacker overriding model safety behavior to achieve their goals. This vector does not apply to every direct goal, so Snyk lists it per row instead of factoring it out.
 
 The OWASP Top 10 for LLM Applications has no harmful-content category, because it is a security taxonomy rather than a content-safety one. Where a harmful-content goal lists `LLM01`, that identifier describes the jailbreak or injection used to bypass the model's guardrails, not the goal itself. Those rows are marked with an asterisk. The goal itself maps to NIST AI 600-1 and to the MITRE ATLAS external-harms and jailbreak techniques.
 
@@ -23,22 +23,53 @@ The OWASP Top 10 for LLM Applications has no harmful-content category, because i
 Insecure code generation is intentionally unmapped to MITRE ATLAS. No adversary operates against the model, so no ATLAS technique applies.
 {% endhint %}
 
-## Direct attack surface
+### Direct attack surface
 
 On the direct surface, the user is the adversary and controls the prompt.
 
-<table><thead><tr><th width="151.6171875">Attacker goal</th><th width="147.46484375">MITRE ATLAS</th><th width="119.890625">OWASP LLM</th><th width="100.0859375">OWASP ASI</th><th>NIST AI 100-2 / 600-1</th></tr></thead><tbody><tr><td>Chemical &#x26; biological</td><td>AML.T0054, AML.T0048</td><td>LLM01*</td><td>None</td><td>NISTAML.04, AI 600-1 #1</td></tr><tr><td>Cybercrime &#x26; intrusion</td><td>AML.T0054, AML.T0048</td><td>LLM01*</td><td>None</td><td>NISTAML.04, AI 600-1 #9</td></tr><tr><td>Harassment &#x26; bullying</td><td>AML.T0054, AML.T0048.003</td><td>LLM01*</td><td>None</td><td>NISTAML.04, AI 600-1 #3</td></tr><tr><td>Harmful (general)</td><td>AML.T0054, AML.T0048</td><td>LLM01*</td><td>None</td><td>NISTAML.04, AI 600-1 #3</td></tr><tr><td>Illegal activities</td><td>AML.T0054, AML.T0048</td><td>LLM01*</td><td>None</td><td>NISTAML.04, AI 600-1 #3</td></tr><tr><td>Misinformation &#x26; disinformation</td><td>AML.T0048.002</td><td>LLM01*, LLM09</td><td>None</td><td>NISTAML.04, AI 600-1 #8</td></tr><tr><td>Copyright reproduction</td><td>AML.T0048.004</td><td>LLM02</td><td>None</td><td>AI 600-1 #10</td></tr><tr><td>Gender bias</td><td>AML.T0048.002</td><td>None</td><td>None</td><td>AI 600-1 #6</td></tr><tr><td>Race bias</td><td>AML.T0048.002</td><td>None</td><td>None</td><td>AI 600-1 #6</td></tr><tr><td>Religion bias</td><td>AML.T0048.002</td><td>None</td><td>None</td><td>AI 600-1 #6</td></tr><tr><td>Insecure code generation</td><td>None</td><td>LLM05</td><td>ASI05</td><td>NISTAML.027</td></tr><tr><td>System prompt extraction</td><td>AML.T0056, AML.T0069.002</td><td>LLM07</td><td>None</td><td>NISTAML.035</td></tr><tr><td>Tool extraction</td><td>AML.T0084, AML.T0069</td><td>LLM07</td><td>None</td><td>NISTAML.035</td></tr><tr><td>Model identification</td><td>AML.T0014, AML.T0069</td><td>LLM07</td><td>None</td><td>NISTAML.035</td></tr><tr><td>PII extraction</td><td>AML.T0057</td><td>LLM02</td><td>None</td><td>NISTAML.038</td></tr><tr><td>Role / purpose deviation</td><td>AML.T0054, AML.T0051</td><td>LLM01</td><td>ASI01</td><td>NISTAML.018</td></tr><tr><td>Unauthorized tool use</td><td>AML.T0053</td><td>LLM06</td><td>ASI02, ASI03</td><td>None</td></tr></tbody></table>
+| Attacker goal                                                                                | MITRE ATLAS                                        | OWASP LLM      | OWASP ASI    | NIST AI 100-2 / 600-1                 |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------- | -------------- | ------------ | ------------------------------------- |
+| Chemical & biological                                                                        | AML.T0054, AML.T0051.000, AML.T0048.002            | LLM01\*        | None         | NISTAML.04, AI600-1:2.1               |
+| Cybercrime & intrusion                                                                       | AML.T0054, AML.T0051.000, AML.T0016.002, AML.T0102 | LLM01\*        | None         | NISTAML.04, AI600-1:2.9               |
+| Harassment & bullying                                                                        | AML.T0054, AML.T0051.000, AML.T0048.003            | LLM01\*        | None         | NISTAML.04, AI600-1:2.3, AI600-1:2.11 |
+| Harmful                                                                                      | AML.T0054, AML.T0051.000, AML.T0048                | LLM01\*        | None         | NISTAML.04, AI600-1:2.3               |
+| Illegal activities                                                                           | AML.T0054, AML.T0051.000, AML.T0048.002            | LLM01\*        | None         | NISTAML.04, AI600-1:2.3               |
+| Misinformation & disinformation                                                              | AML.T0054, AML.T0048.002                           | LLM01\*, LLM09 | None         | NISTAML.04, AI600-1:2.8               |
+| Copyright reproduction                                                                       | AML.T0054, AML.T0057                               | LLM02          | None         | AI600-1:2.10                          |
+| Gender bias                                                                                  | AML.T0048.002                                      | None           | None         | AI600-1:2.6                           |
+| Race bias                                                                                    | AML.T0048.002                                      | None           | None         | AI600-1:2.6                           |
+| Religion bias                                                                                | AML.T0048.002                                      | None           | None         | AI600-1:2.6                           |
+| Insecure code generation                                                                     | None                                               | LLM05          | ASI05        | NISTAML.027, AI600-1:2.9              |
+| System prompt extraction                                                                     | AML.T0051.000, AML.T0056, AML.T0069.002            | LLM07          | None         | NISTAML.035, AI600-1:2.9              |
+| Tool extraction                                                                              | AML.T0051.000, AML.T0084.001                       | LLM07          | None         | AI600-1:2.9                           |
+| Model identification                                                                         | AML.T0014, AML.T0069                               | LLM07          | None         | AI600-1:2.9                           |
+| PII extraction                                                                               | AML.T0051.000, AML.T0057                           | LLM02          | None         | NISTAML.038, AI600-1:2.4              |
+| Role / purpose deviation                                                                     | AML.T0054, AML.T0051.000                           | LLM01          | ASI01        | NISTAML.018, AI600-1:2.7              |
+| Unauthorized tool use                                                                        | AML.T0051.000, AML.T0053                           | LLM06          | ASI02, ASI03 | AI600-1:2.9                           |
+| \* `LLM01` describes the elicitation vector rather than the goal. See the preceding section. |                                                    |                |              |                                       |
 
-\* `LLM01` describes the elicitation vector rather than the goal. See the preceding section.
-
-## Indirect attack surface
+### Indirect attack surface
 
 On the indirect surface, the attacker hides instructions in content the model reads while doing its job, and the user is the victim. Every goal in the following table also maps to `AML.T0051.001`, `LLM01`, and `NISTAML.015`.
 
-<table><thead><tr><th width="151.65234375">Attacker goal</th><th width="146.9609375">MITRE ATLAS</th><th width="120.36328125">OWASP LLM</th><th width="99.98828125">OWASP ASI</th><th>NIST AI 100-2 / 600-1</th></tr></thead><tbody><tr><td>Credential / secret theft</td><td>AML.T0098, AML.T0086</td><td>LLM02</td><td>ASI03</td><td>NISTAML.039</td></tr><tr><td>System prompt extraction</td><td>AML.T0056</td><td>LLM07</td><td>None</td><td>NISTAML.035</td></tr><tr><td>Source code exfiltration</td><td>AML.T0086</td><td>LLM02</td><td>None</td><td>NISTAML.039</td></tr><tr><td>Private data leakage</td><td>AML.T0057, AML.T0086</td><td>LLM02</td><td>None</td><td>NISTAML.036</td></tr><tr><td>Command execution</td><td>AML.T0050, AML.T0053, AML.T0102</td><td>LLM05</td><td>ASI05</td><td>None</td></tr><tr><td>Data / file destruction</td><td>AML.T0101</td><td>LLM06</td><td>ASI02</td><td>None</td></tr><tr><td>Other unauthorized actions</td><td>AML.T0053</td><td>LLM06</td><td>ASI02</td><td>None</td></tr><tr><td>Code backdoors</td><td>AML.T0102</td><td>LLM05</td><td>ASI05, ASI09</td><td>NISTAML.027</td></tr><tr><td>Supply chain poisoning</td><td>AML.T0010, AML.T0011.001</td><td>LLM03</td><td>ASI04</td><td>None</td></tr><tr><td>Security control degradation</td><td>AML.T0031, AML.T0053</td><td>None</td><td>ASI02, ASI09</td><td>None</td></tr><tr><td>Decision override</td><td>AML.T0031, AML.T0067</td><td>None</td><td>ASI09</td><td>NISTAML.027</td></tr><tr><td>Phishing / credential harvesting</td><td>AML.T0052.000, AML.T0067</td><td>None</td><td>ASI09</td><td>None</td></tr><tr><td>Trust exploitation</td><td>AML.T0031</td><td>LLM09</td><td>None</td><td>NISTAML.027</td></tr></tbody></table>
+| Attacker goal                            | MITRE ATLAS                         | OWASP LLM | OWASP ASI    | NIST AI 100-2 / 600-1                 |
+| ---------------------------------------- | ----------------------------------- | --------- | ------------ | ------------------------------------- |
+| Credential / secret theft                | AML.T0098, AML.T0055, AML.T0086     | LLM02     | ASI01, ASI03 | NISTAML.039, AI600-1:2.9              |
+| System prompt extraction (via injection) | AML.T0056, AML.T0069.002            | LLM07     | ASI01        | NISTAML.035, AI600-1:2.9              |
+| Source code exfiltration                 | AML.T0086, AML.T0048.004            | LLM02     | ASI01        | NISTAML.039, AI600-1:2.10             |
+| Private data leakage                     | AML.T0057, AML.T0086, AML.T0077     | LLM02     | ASI01        | NISTAML.036, AI600-1:2.4              |
+| Command execution                        | AML.T0050, AML.T0053, AML.T0102     | LLM05     | ASI01, ASI05 | AI600-1:2.9                           |
+| Data / file destruction                  | AML.T0053, AML.T0101                | LLM06     | ASI01, ASI02 | AI600-1:2.9                           |
+| Other unauthorized actions               | AML.T0053, AML.T0048.000            | LLM06     | ASI01, ASI02 | AI600-1:2.9                           |
+| Code backdoors                           | AML.T0102                           | LLM05     | ASI05, ASI09 | NISTAML.027, AI600-1:2.9              |
+| Supply chain poisoning                   | AML.T0010, AML.T0011.001, AML.T0060 | None      | ASI04        | AI600-1:2.12                          |
+| Security control degradation             | AML.T0053, AML.T0081                | LLM06     | ASI01, ASI02 | AI600-1:2.9                           |
+| Decision override                        | AML.T0067, AML.T0031                | LLM09     | ASI01, ASI09 | NISTAML.027, AI600-1:2.8              |
+| Phishing / credential harvesting         | AML.T0052.000, AML.T0067            | None      | ASI09        | AI600-1:2.9                           |
+| Trust exploitation                       | AML.T0067, AML.T0073                | LLM09     | ASI09        | NISTAML.027, AI600-1:2.7, AI600-1:2.8 |
 
-## Related
+{% hint style="info" %}
+Learn how Snyk scores attacker goals and rolls up scores in [Risk intelligence](./).
 
-To learn how Snyk scores each attacker goal and how the scores roll up, visit [Risk intelligence](./).
-
-To learn how to raise an issue when a model crosses a score you choose, visit [Policies & issues](../../platform-surfaces/policies-and-issues.md).
+Raise an issue when a model exceeds a selected score in [Policies & issues](../../platform-surfaces/policies-and-issues.md).
+{% endhint %}
