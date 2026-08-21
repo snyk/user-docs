@@ -53,6 +53,10 @@ The process of teaching an AI model how to perform tasks. It involves feeding th
 
 AI Security Posture Management (AISPM) is a category of security tooling focused on discovering, monitoring, and governing artificial intelligence systems, including their models, data sources, and infrastructure.
 
+### Allowlist
+
+In Continuous Offensive Security, the hosts and paths you add to the scope, in addition to the main URL. Typically your API, your identity provider, your CDN, and any external JavaScript source.
+
 ### Asset (Snyk Essentials)
 
 A Snyk Essentials asset is an identifiable entity that is part of an application, and relevant for security and developers. Snyk is generally focused on the development stages of application software, secures repository assets containing software package assets, and builds artifacts like container image assets.
@@ -70,6 +74,10 @@ Represents the mapping of security issues, application assets, relationships bet
 ### Base image
 
 The parent image used to construct a container image, usually defined in the `FROM` directive in a Dockerfile. Base images themselves can be constructed from other base images.
+
+### Blackbox
+
+In Continuous Offensive Security, when the target has no source repository linked, this is called blackbox testing. Agents test the application entirely from the outside, with no knowledge of its internals. Remediation guidance is generic to the vulnerability class.
 
 ### Broker
 
@@ -149,6 +157,10 @@ Common Vulnerabilities and Exposures. A widely-used identifier for a well-known 
 
 Common Vulnerability Scoring System. An industry standard to assess the severity of vulnerabilities, using a score of 0 (lowest) to 10 (highest). Snyk uses CVSS.
 
+### CVSS vector
+
+In Continuous Offensive Security, the string that shows how the CVSS score was derived, so you can re-evaluate severity against your own environment.
+
 ### CWE
 
 Common Weakness Enumeration. An online glossary that categorizes software and hardware weaknesses into different types, for example, CWE-20: Input Validation.
@@ -214,6 +226,18 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 
 ## F
 
+### Finding (Continuous Offensive Security)
+
+A vulnerability the agents confirmed by exploiting it. A finding carries a location, a severity, a CVSS score and vector, the steps taken to reach it, proof of work, and remediation guidance.
+
+### Finding State (Continuous Offensive Security)
+
+Either open or fixed. A finding becomes fixed when a later scan can no longer reproduce it.
+
+### First find / last find
+
+In Continuous Offensive Security, when the finding was first confirmed by any scan, and when it was most recently confirmed. A finding whose last found date stops advancing across scans is no longer reproducible.
+
 ### Fixable / Partially fixable
 
 A measure of whether a vulnerability can be fixed by Sny by applying a patch, upgrade, or pin. See [Vulnerability fix types](https://docs.snyk.io/manage-risk/prioritize-issues/fix-vulnerabilities/vulnerability-fix-types).
@@ -222,11 +246,19 @@ A measure of whether a vulnerability can be fixed by Sny by applying a patch, up
 
 A pull request with an automatic fix for discovered vulnerabilities that Snyk can offer the user. See [Automated fix PRs](https://docs.snyk.io/manage-risk/prioritize-issues/fix-vulnerabilities/automated-fix-prs).
 
+### Fix Rate
+
+The proportion of open findings that have been resolved.
+
 ## G
 
 ### Git
 
 A distributed version control system for tracking changes in source code during software development.
+
+### Greybox
+
+In Continuous Offensive Security, when the tested target has a source repository linked, this is called greybox testing. Agents use source code context to understand application structure and to point remediation at a specific file, line, and code change. Selected automatically when a repository is linked; there is no separate setting.
 
 ### Group
 
@@ -346,6 +378,10 @@ An open-standard authorization protocol that allows a third-party application to
 
 Open Container Initiative. An independent body set up to facilitate collaboration on standards for containers, to ensure they are interoperable between vendor solutions.
 
+### Open findings by severity
+
+Open findings aggregated across all of your managed targets, in severity bands.
+
 ### Organization
 
 An Organization in Snyk is a way to collect and organize your Projects. Members of Organizations have access to these Projects. See [Manage Groups and Organizations](https://docs.snyk.io/enterprise-setup/organizations-and-groups).
@@ -408,11 +444,23 @@ An external item scanned by Snyk with configuration to define how to run that sc
 
 The input or set of instructions provided to an AI model that defines what task to perform, what context to use, and how it should respond.
 
+### Proof of work
+
+The result of running the exploit against your application. This is the evidence that the finding is real rather than theoretical.
+
+### Proxy
+
+In Continuous Offensive Security, every request an agent makes passes through a proxy that enforces scope. Requests outside the allow list, or matching the reject list, are rejected before they leave. Scope enforcement is a property of the proxy, not an instruction to the agents.
+
 ## R
 
 ### Reachability
 
 Whether an application contains code that will hit a vulnerable code path during execution. See [Reachable vulnerabilities](https://docs.snyk.io/manage-risk/prioritize-issues/reachability-analysis).
+
+### Reject list
+
+In Continuous Offensive Security, hosts and paths that must never be touched, even if they fall inside the allow list. The reject list always takes precedence over the allow list.
 
 ### Registry
 
@@ -421,6 +469,14 @@ See [Container registry](glossary.md#container-registry) or [Package registry](g
 ### Remediation directive
 
 A Remediation directive is a type of [Command directive](glossary.md#command-directive) that triggers a full, end-to-end security remediation playbook that results in a secure pull request. For more information, visit [Remediation directives](https://docs.snyk.io/agent-security/snyk-studio/directives#remediation-directives).
+
+### Remedial guidance
+
+Instructions for fixing the underlying issue.
+
+### Report
+
+The downloadable artifact generated at the end of a Continuous Offensive Security scan. Contains more detail than the UI list view. See Reports.
 
 ### Repository
 
@@ -442,6 +498,10 @@ A value assigned to an issue, ranging from 0 to 1,000, representing the risk imp
 
 A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems, or a security rule used by Snyk Code when scanning your source code for vulnerabilities. For more information, see [Snyk Code security rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules) and [IaC custom rules](https://docs.snyk.io/scan-with-snyk/snyk-iac/custom-rules).
 
+### Running Scans
+
+The number of scans currently executing across your targets.
+
 ## S
 
 ### SARIF
@@ -459,6 +519,14 @@ Software Bill Of Materials. A list of components in a piece of software.
 ### SCA
 
 Software Composition Analysis. A security analysis technique that is used to identify open-source and third-party components in use in an application, their known security vulnerabilities, and typically also adversarial license restrictions. Not to be confused with [Static Code Analysis](glossary.md#static-code-analysis). See also [Snyk Open Source](glossary.md#snyk-open-source).
+
+### Scan (Continuous Offensive Security)
+
+One complete run of the AI pentesting engine against a target. A scan moves through recon, attack and validation, then reporting, and produces findings plus a downloadable report. Also referred to as an assessment.
+
+### Scan Status
+
+One of queued, running, completed, canceled, or failed. See Actions on scans.
 
 ### Scanned artifacts (Snyk **Essentials**)
 
@@ -597,11 +665,23 @@ An authentication method that allows users to access multiple, independent softw
 
 A technique for examining source code to identify issues related to code quality, structure, or performance, such as determining code reachability or spotting potential inefficiencies. While this technique may address security concerns, its primary focus is often broader, covering various aspects of code health. In contrast, Static Application Security Testing ([SAST](glossary.md#sast)) specifically targets the identification of security vulnerabilities within the code, such as coding flaws that could lead to security risks.
 
+### Steps
+
+In Continuous Offensive Security, the sequence of actions the agents took to discover the vulnerability, in order. Shows what was attempted and what was concluded at each stage.
+
 ## T
 
 ### Target
 
 Representation of an external resource Snyk has scanned. All [Snyk Projects](glossary.md#project) are associated with a parent Target. One Target may relate to many Projects. The structure of the Target depends on the [origin](glossary.md#origin-or-source).
+
+### Target (Continuous Offensive Security)
+
+The persistent record of one application you want to test: its name, main URL, scope, credentials, and any linked source repository. Created once, scanned many times.
+
+### Targets at Risk
+
+In Continuous Offensive Security, the number of targets with at least one critical or high severity finding open.
 
 ### **Tags (Snyk Essentials)**
 
