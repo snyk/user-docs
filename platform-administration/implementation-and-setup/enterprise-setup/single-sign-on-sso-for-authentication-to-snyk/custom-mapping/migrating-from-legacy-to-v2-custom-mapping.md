@@ -11,16 +11,16 @@ If your company still uses the legacy format, the updated custom mapping gives y
 
 For details on the legacy and v2 formats, visit [Legacy custom mapping](legacy-custom-mapping.md) and [Custom mapping](README.md).
 
-## Why migrate?
+## Benefits of v2 custom mapping
 
-The new format uses a highly extensible, colon-delimited string syntax:
+The v2 format uses an extensible, colon-delimited string syntax:
 
 `snyk:{scope}:{target}:{role}`
 
-### Key benefits
+This gives you:
 
 * Support for multiple Groups
-* Claims-based provisioning and deprovisioning access
+* Claims-based provisioning and deprovisioning of access
 * Support for Tenant-level roles
 
 ## Migration IdP configuration process
