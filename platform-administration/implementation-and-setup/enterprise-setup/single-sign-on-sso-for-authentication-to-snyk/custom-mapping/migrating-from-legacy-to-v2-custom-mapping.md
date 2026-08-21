@@ -3,7 +3,7 @@ description: How to migrate Snyk SSO custom role mapping from the legacy format 
 nav_context: classic
 ---
 
-# Migrating from Legacy to v2 Custom Mapping
+# Migrating from legacy to v2 custom mapping
 
 Snyk's Single Sign-On (SSO) custom mapping empowers administrators to dynamically provision users into Snyk Groups and Organizations based on attributes passed from their Identity Provider (IdP).
 
