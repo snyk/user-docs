@@ -1,3 +1,9 @@
+## 2026-03-25 - Updated 2026-08-25
+
+### GET - `/orgs/{org_id}/policies` - Updated
+- added the non-success response with the status `500`
+
+
 ## 2026-03-25 - Updated 2026-08-17
 
 ### GET - `/orgs/{org_id}/issues` - Updated
