@@ -36693,6 +36693,9 @@
           },
           "404": {
             "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
           }
         },
         "summary": "Get group level policies (Early Access)",
@@ -76945,6 +76948,9 @@
           },
           "404": {
             "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
           }
         },
         "summary": "Get org-level policies",
