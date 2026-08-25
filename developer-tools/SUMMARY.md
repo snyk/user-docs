@@ -328,6 +328,8 @@
   * [CLI help](snyk-cli/commands/README.md)
     * [AI-BOM](snyk-cli/commands/aibom.md)
     * [AI-BOM test](snyk-cli/commands/aibom-test.md)
+    * [Agent](snyk-cli/commands/agent.md)
+    * [Agent test](snyk-cli/commands/agent-test.md)
     * [Auth](snyk-cli/commands/auth.md)
     * [Code](snyk-cli/commands/code.md)
     * [Code test](snyk-cli/commands/code-test.md)
