@@ -64,6 +64,14 @@ Generates an AIBOM for a local software project written in Python, Java, JavaScr
 
 Generates an AI-BOM and tests it against your tenant's policies, returning all resulting issues.
 
+### [`snyk agent`](agent.md)
+
+Experimental command space that provides a token-optimized scanning surface for AI coding agents.
+
+### [`snyk agent test`](agent-test.md)
+
+Runs Snyk Open Source, Snyk Code, and Snyk Secrets scans together, with output optimized for AI coding agents.
+
 ### [`snyk log4shell`](log4shell.md)
 
 Find Log4Shell vulnerability.
