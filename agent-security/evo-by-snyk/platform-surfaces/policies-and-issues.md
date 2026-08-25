@@ -14,6 +14,10 @@ Severity is fixed per policy. A policy does not change severity based on the sco
 
 Create and edit policies from the Policies & issues page or with Evo chat. You can delete custom policies. Default policies are read-only.
 
+{% hint style="info" %}
+Users with a Tenant role and full Evo access can create, edit, and delete policies. Users restricted to specific Organizations can read policies and issues, but they cannot change them. Visit [Access and authentication](../access-and-authentication.md) for more information.
+{% endhint %}
+
 ### Default policies
 
 Evo provides default policies that raise high or critical severity risks as issues with no setup. AI-SPM and Agent Supply Chain Security each include default policies.
@@ -33,11 +37,11 @@ To learn how model risk scores are calculated, visit [Risk intelligence](../ai-s
 
 You can also create custom policies. With custom policies, you target assets by their attributes — for example, disallow a specific model in your code, or disallow a specific MCP server in your code, on end users' machines, or both.
 
-For model risk, you can target an attacker goal or a sub-category. Impact categories cannot be targeted.
+For model risk, you can target an attacker's goal or a sub-category. Impact categories cannot be targeted.
 
-Target a sub-category when its attacker goals are interchangeable for you: the same fix, the same owner, and the specific goal does not change what you do about it. Bias is the common example, where you care that a model shows bias rather than whether it is gender, race, or religion bias.
+Target a sub-category when its attacker goals are interchangeable for you: the same fix, the same owner, and the specific goal does not change what you do about it. Bias is the common example, where you care that a model shows bias rather than whether it is gender, race, or religious bias.
 
-Avoid pairing an attacker goal with the sub-category that contains it. Both fire, and you get two issues for one problem.
+Avoid pairing an attacker's goal with the sub-category that contains it. Both fire, and you get two issues for one problem.
 
 #### Create a policy
 
@@ -75,7 +79,7 @@ A newly created policy produces issues immediately after creation.
 
 From the **Policies** page, select the policy you want to edit and click **Edit policy**. The following fields are available:
 
-<table><thead><tr><th width="374">Field</th><th>Description</th></tr></thead><tbody><tr><td><strong>Policy name</strong></td><td>The name of the policy.</td></tr><tr><td><strong>Severity</strong></td><td>The severity level assigned to issues created by this policy: <strong>Critical</strong>, <strong>High</strong>, <strong>Medium</strong>, or <strong>Low</strong>.</td></tr><tr><td><strong>Conditions (match all)</strong><br></td><td><p>Add a condition for assets under the policy.</p><p>Use the dropdown menus to select an attribute, a condition, and a value.</p><p>Click <strong>+Add condition</strong> to add another condition to the same policy. You can create up to 12 conditions, one per attribute.</p></td></tr><tr><td><strong>Remediation steps</strong> <strong>(optional)</strong></td><td>Add remediation advice.</td></tr></tbody></table>
+<table><thead><tr><th width="259.921875">Field</th><th>Description</th></tr></thead><tbody><tr><td><strong>Policy name</strong></td><td>The name of the policy.</td></tr><tr><td><strong>Severity</strong></td><td>The severity level assigned to issues created by this policy: <strong>Critical</strong>, <strong>High</strong>, <strong>Medium</strong>, or <strong>Low</strong>.</td></tr><tr><td><strong>Conditions (match all)</strong><br></td><td><p>Add a condition for assets under the policy.</p><p>Use the dropdown menus to select an attribute, a condition, and a value.</p><p>Click <strong>+Add condition</strong> to add another condition to the same policy. You can create up to 12 conditions, one per attribute.</p></td></tr><tr><td><strong>Remediation steps</strong> <strong>(optional)</strong></td><td>Add remediation advice.</td></tr></tbody></table>
 
 #### Delete a policy
 
@@ -83,7 +87,7 @@ From the **Policies** page, select the policy you want to edit and click **Edit 
 You cannot delete default policies.
 {% endhint %}
 
-You can delete user-defined policies. To quickly identify critical enforcement, you can group policies by severity.
+You can delete user-defined policies. To quickly identify critical enforcement policies, you can group them by severity.
 
 To delete a policy:
 
@@ -96,7 +100,7 @@ To delete a policy:
 The Model Risk Score replaces the Risk index. Policies you created against a Risk index category stop raising issues and need to be recreated.
 
 {% hint style="warning" %}
-The five Risk index categories do not map onto the new taxonomy, and the two scores are not equivalent. You cannot carry a Risk index threshold across. Set the threshold again against the attacker goal or sub-category you want to govern.
+The five Risk index categories do not map onto the new taxonomy, and the two scores are not equivalent. You cannot carry a Risk index threshold across. Set the threshold again against the attacker's goal or sub-category you want to govern.
 {% endhint %}
 
 For what the new taxonomy contains and how to read a score, visit [Risk intelligence](../ai-spm/risk-intelligence/).
@@ -105,4 +109,4 @@ For what the new taxonomy contains and how to read a score, visit [Risk intellig
 
 An issue is a policy violation. View issues on the Policies & issues page under Issues, or on an asset in Inventory to see them in context.
 
-Each issue shows its severity, the asset that triggered it, remediation advice, and the number of occurrences. The remaining details vary by issue type.
+Each issue shows its severity, the triggering asset, remediation advice, and the number of occurrences. The remaining details vary by issue type.

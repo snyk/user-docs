@@ -1,6 +1,10 @@
 # Manage Targets
 
-The targets page is where you manage every target you have configured. It lists all your managed targets and lets you act on them directly.
+Manage your configured targets on the targets page. It lists your managed targets and allows direct actions.
+
+{% hint style="info" %}
+Snyk does not associate Continuous Offensive Security targets, scans, and findings with a Snyk Organization. Users whose access is restricted to specific Organizations do not see Continuous Offensive Security data. Creating, editing, and deleting a target requires a Tenant role with full Evo access. To learn more, visit [Access and authentication](../../access-and-authentication.md).
+{% endhint %}
 
 ## What the targets list shows
 
@@ -14,7 +18,7 @@ Each row in the list carries the current state of one target:
 | **Last completed scan**       | When the most recent scan finished. A date far in the past means the target's findings reflect an older version of the application                               |
 | **Scan status and actions**   | Whether a scan is currently running, and the actions available                                                                                                   |
 
-Above the list sits an aggregate view of your whole portfolio: fix rate, targets at risk, running scans, and open findings by severity.
+Above the list is an aggregate view of your entire portfolio: fixed rate, targets at risk, running scans, and open findings by severity.
 
 ## Actions on a target
 
@@ -48,7 +52,7 @@ Stops the scan. Findings already confirmed are preserved, so a canceled scan sti
 Removes the target and its scan history.
 
 {% hint style="warning" %}
-Deleting a target removes its assessment history along with it, including past findings and the ability to regenerate historical reports. If you need those results for an audit trail, download the reports before deleting. See Reports.
+Deleting a target removes its assessment history, including past findings and the ability to regenerate historical reports. If you need those results for an audit trail, download the reports before deleting. See Reports.
 {% endhint %}
 
 If a scan is running when you delete a target, you are asked to confirm.
@@ -57,7 +61,7 @@ If a scan is running when you delete a target, you are asked to confirm.
 
 Two patterns are worth watching for as your portfolio grows:
 
-Stale targets. A target with a last completed scan several months old is reporting on an application that no longer exists in that form. Its open finding counts, and its contribution to your fix rate, are both misleading. Rescan it or delete it.
+Stale targets. A target with a last completed scan several months old is reporting on an application that no longer exists in that form. Its open-finding counts and its contribution to your fix rate are both misleading. Rescan it or delete it.
 
 Targets that were never scanned successfully. A target that has been configured but has no completed scan usually has a configuration problem rather than a clean bill of health. Check whether authentication is succeeding and whether the application is in scope. See Configure authentication and Define the target scope.
 

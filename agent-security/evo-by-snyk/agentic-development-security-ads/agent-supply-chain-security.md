@@ -21,13 +21,17 @@ It assesses skills from their files.
 
 To activate and deploy Agent Supply Chain Security, visit [Activation and deployment](activation-and-deployment.md).
 
+{% hint style="info" %}
+To view Agent Supply Chain Security data, you must have a Tenant role with full Evo access. Snyk discovers these assets on end users' machines. Because these assets do not belong to a Snyk Organization, users restricted to specific Organizations cannot see this data. Visit [Access and authentication](../access-and-authentication.md) for more information.
+{% endhint %}
+
 ## What gets scanned
 
 Agent Supply Chain Security discovers two types of assets that agents use: MCP servers and skills. It scans the standard configuration locations for each supported agent.
 
 ## Supported agents
 
-The following table shows agent support by operating system. A check mark (✓) means supported. A cross (✗) means the agent supports this but no paths are detected yet. A dash (—) means not applicable for that operating system.
+The following table shows agent support by operating system. A check mark (✓) means supported. A cross (✗) means the agent supports this, but no paths are detected yet. A dash (—) means not applicable for that operating system.
 
 | Agent          | macOS MCP | macOS Skills | Linux/WSL MCP | Linux/WSL Skills | Windows MCP | Windows Skills |
 | -------------- | --------- | ------------ | ------------- | ---------------- | ----------- | -------------- |
@@ -48,7 +52,7 @@ The following table shows agent support by operating system. A check mark (✓) 
 ## MCP server and skill risk indexes
 
 {% hint style="info" %}
-MCP server and skill risk indexes use their own severity ranges. They are not the same scale as the Model Risk Score used for AI models, and the two are not comparable. For model risk, visit [Risk intelligence](../ai-spm/risk-intelligence/).
+MCP server and skill risk indexes use their own severity ranges. They are not on the same scale as the Model Risk Score used for AI models, and the two are not comparable. For model risk, visit [Risk intelligence](../ai-spm/risk-intelligence/).
 {% endhint %}
 
 Agent Supply Chain Security scores each MCP server and skill it discovers across a set of risk indexes. Each index scores one category of risk from 0 to 1,000. The higher the score, the more severe the finding.
@@ -58,7 +62,7 @@ A component's Risk profile shows only the indexes that scored non-zero. Default 
 ### MCP server risk indexes
 
 * **Dangerous words**: manipulative language in a tool description that tries to influence the agent's decisions.
-* **Prompt injection in tool**: an agent processes hidden instructions within a tool description as commands
+* **Prompt injection in a tool**: an agent processes hidden instructions within a tool description as commands
 * **Untrusted content**: tools that pull in attacker-controllable content, such as inbound emails or issue trackers.
 * **Private data**: tools that retrieve sensitive, non-public data, such as personal communications, financial records, or credentials.
 * **Destructive capabilities**: tools that can modify shared infrastructure, run system commands, or move money.
@@ -88,7 +92,7 @@ Agent Supply Chain Security reports its findings to Evo, where you review them a
 
 Your fleet shows every machine that has reported a scan, including how many MCP servers and skills Evo discovered and how many it successfully scanned.
 
-For each component — MCP server or skill — Evo surfaces its risk profile, the issues raised against it, and where it appears across the fleet. For MCP servers, Evo also shows the tools the server exposes and the instructions it provides to the agent.
+For each component — MCP server or skill — Evo surfaces its risk profile, the issues raised against it, and its distribution across the fleet. For MCP servers, Evo also shows the tools the server exposes and the instructions it provides to the agent.
 
 A component's scan status is **Complete** or **Discovery only**. Discovery only means Evo found the component but could not complete its scan, so it carries no risk assessment. A scan ends in Discovery only when, for example, the component's configuration cannot be parsed, a remote server requires credentials the scanner does not have, the server cannot start, or the analysis times out. For stdio MCP servers, a scan also ends in Discovery only when the server is not yet in Snyk's catalog of regularly assessed servers.
 

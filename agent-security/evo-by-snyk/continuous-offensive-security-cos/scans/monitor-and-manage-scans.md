@@ -2,6 +2,10 @@
 
 The scans and jobs view gives you access to every scan performed across Evo, in one place. Where a target shows you the scan history for that one application, this view shows all activity regardless of which target it belongs to.
 
+{% hint style="info" %}
+Starting and canceling a scan requires a Tenant role with full Evo access. To learn more, visit [Access and authentication](../../access-and-authentication.md).
+{% endhint %}
+
 ### What the view shows
 
 | Column        | What it tells you                               |

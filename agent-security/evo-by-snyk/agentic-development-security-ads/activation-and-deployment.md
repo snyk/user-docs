@@ -6,6 +6,10 @@ nav_context: classic
 
 You configure and deploy Agentic Development Security (ADS) from **Settings** in Evo. Choose which products to roll out, then install on a single machine or across your company through your mobile device management (MDM) tool.
 
+{% hint style="info" %}
+The **Settings** page requires a Tenant role with full Evo access. A user restricted to specific Organizations cannot open it. To learn more, visit [Access and authentication](../access-and-authentication.md).
+{% endhint %}
+
 ## Authenticate
 
 ADS uses a push key to bind installed agents to your Snyk Tenant, so each machine's data lands in your Tenant. You can rotate the key at any time.
