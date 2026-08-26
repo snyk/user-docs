@@ -1,8 +1,8 @@
 ---
-description: The snyk agent command space, a scanning surface built for AI coding agents
+description: The snyk agent command space that provides a scanning surface for AI coding agents
 ---
 
-# Snyk agent
+# Agent
 
 {% hint style="warning" %}
 `snyk agent` is experimental. Commands, flags, and output format may change in future releases.
@@ -10,18 +10,14 @@ description: The snyk agent command space, a scanning surface built for AI codin
 
 ## Prerequisites
 
-- Snyk CLI v1.1307.0 (or later).
-
-## Usage
-
-`$ snyk agent <COMMAND> [<OPTION>]`
-
-**See also:** [`snyk agent test`](agent-test.md) — run Snyk Open Source, Code, and Secrets scans together.
+**Note:** Requires Snyk CLI v1.1307.0 or later.
 
 ## Description
 
-The `snyk agent` command space is a scanning surface designed for AI coding agents rather than human readers. It provides token-optimized output and ergonomics so agentic tools can request a scan and parse the result efficiently.
+The `snyk agent` command space is a scanning surface built for AI coding agents, with token-optimized output and ergonomics designed for programmatic consumption rather than direct human review
 
-## Debug
+## `snyk agent` commands and the help docs
 
-Use the `-d` or `--debug` option to output the debug logs.
+The `snyk agent` commands are listed here with the help options:
+
+* [`agent test`](agent-test.md), `agent test --help`: runs Snyk Open Source, Snyk Code, and Snyk Secrets scans together in a single pass
