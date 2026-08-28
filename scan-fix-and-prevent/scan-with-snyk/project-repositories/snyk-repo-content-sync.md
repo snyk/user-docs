@@ -33,10 +33,11 @@ Push events trigger synchronization using webhooks. Snyk creates a webhook when 
 * Exclusions: Snyk respects folder and file exclusions as follows:
   * Snyk Open Source, Container, and IaC: Use the Exclude Folders field in the Organization level repository import window, or configure exclusions using Repo Monitor Configuration in the Inventory. Repo Content Sync respects these settings on each subsequent sync.
   * Snyk Code: Use a `.snyk` file in the root of your repository to exclude specific directories or files from import. For details, visit [Exclude directories and files from Project import](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/import-project-repository/exclude-directories-and-files-from-project-import).
+  * Snyk Secrets: Use a `.snyk` file in the root of your repository, with the global or secrets exclude sections. Snyk Secrets reads only the root file and does not apply `.snyk` files in subdirectories. For details, visit [Secrets scanning in the SCM integration](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm).
 
 ## Delete projects and exclude from future scans
 
-When you delete one or more Projects, Snyk displays a confirmation dialog with an **Exclude these projects from future scans** check box.
+When you delete one or more Projects, Snyk displays a confirmation dialog with an **Exclude these projects from future scans** check box. The check box is cleared by default.
 
 * **Select the check box**: Snyk adds the Projects to the test exclusions for the repository and branch, and does not recreate them during future scans. Re-importing the repository resets these exclusions and recreates the Projects.
 * **Clear the check box**: Snyk deletes the Projects but recreates them on the next scan if the underlying files still exist.
@@ -47,6 +48,10 @@ To reverse an exclusion, re-import the repository from the Organization or Group
 
 * File renames and history: For file renames, path changes, or .NET Framework upgrades, Snyk treats the change as a delete and create action. Snyk does not carry over the Project history and previous ignores to the new Project.
 * Manual deactivations: Snyk does not reactivate manually deactivated Projects during sync. To reactivate a Project, navigate to the relevant Snyk Project and click **Activate**.
+* Organization-wide deletion: Deleting a Project removes it for the entire Organization, along with its history and findings.
 * PR checks: Snyk detects new Projects only when you merge them into the monitored branch. Snyk does not detect them during pull request checks.
-* Exclusion limit: A repository supports up to 100 exclusions. Snyk silently drops any exclusion beyond this limit without showing an error.
+* Test batching: Snyk batches repeated changes to the same repository and branch into 10-minute windows instead of testing on every commit, so a change can take up to 10 minutes to appear.
+* Exclusion limit: A repository supports up to 100 exclusions. When you select **Exclude these projects from future scans** and the exclusion list is already at the limit, Snyk deletes the Projects but does not add the exclusion, so the Projects reappear at the next repo sync.
+  * Bulk deletion through the API: the response includes a `meta.failed` entry with the reason `exclusion_limit_reached`.
+  * Deletion through the UI: Snyk does not surface an error, so the Projects reappear silently.
 * Exclusion visibility: There is no in-product view of a repository's exclusions or deletion history.
