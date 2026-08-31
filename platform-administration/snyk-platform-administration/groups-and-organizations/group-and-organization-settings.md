@@ -34,12 +34,3 @@ At the Organization level, select **Settings** to manage Organization settings a
 * **Notifications**: See the [Manage notifications](../manage-notifications.md) page for details.
 * **Snyk Preview**: See the [Snyk Preview page](../snyk-preview.md) for details.
 
-{% hint style="info" %}
-**Snyk 2.0 (Early Access)**
-
-In the Snyk 2.0 UI, **Settings** is the unified area for all Group and Organization settings, depending on the area you choose using the scope selector at the top of the page.
-
-Snyk 2.0 introduces UI enhancements to the platform navigation and is available in Early Access. This is being rolled out gradually, so not all users see the new navigation at the same time.
-
-If you're an existing user, you can switch between the new and classic navigation at any time using the toggle in your user profile menu. For more information, visit [Snyk 2.0 platform improvements](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/snyk-2.0-platform-improvements).
-{% endhint %}
