@@ -27,6 +27,8 @@ For a list of related commands see the [snyk cos](cos.md) help, `snyk cos --help
 * [`snyk cos target show`](cos-target-show.md), `snyk cos target show --help`: show the details of a target
 * [`snyk cos target dump`](cos-target-dump.md), `snyk cos target dump --help`: export a target as YAML
 
+For a sample configuration file to use with `snyk cos target add`, see [COS target template](cos-target-template.md)
+
 ## Configure the Snyk CLI
 
 You can use environment variables to configure the Snyk CLI and set variables for connecting with the Snyk API. For more information see [Configure the Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli)

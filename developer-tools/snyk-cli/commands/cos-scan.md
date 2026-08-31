@@ -28,6 +28,8 @@ For a list of related commands see the [snyk cos](cos.md) help, `snyk cos --help
 * [`snyk cos scan list`](cos-scan-list.md), `snyk cos scan list --help`: list scans and their statuses
 * [`snyk cos scan cancel`](cos-scan-cancel.md), `snyk cos scan cancel --help`: cancel a running scan
 
+Before you can run a scan, you must create a target. For more information, see [COS target](cos-target.md)
+
 ## Configure the Snyk CLI
 
 You can use environment variables to configure the Snyk CLI and set variables for connecting with the Snyk API. For more information see [Configure the Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli)
