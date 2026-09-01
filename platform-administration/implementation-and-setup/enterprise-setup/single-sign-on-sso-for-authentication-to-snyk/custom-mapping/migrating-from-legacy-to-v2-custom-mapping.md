@@ -80,13 +80,17 @@ Your Snyk account team performs final validation.
 
 ### Step 6: Production activation
 
-Once validation is complete, Snyk Support will enable v2 custom mapping in your production environment.
+After validation is complete, Snyk Support enables v2 custom mapping in your production environment.
 
+{% hint style="info" %}
 **Best practice:** The existing SSO connection will be updated to use v2 custom role mapping.
+{% endhint %}
 
 Roles are automatically assigned upon the next user login.
 
-**Warning:** Users without a valid mapping configured in the IdP may lose access upon login.
+{% hint style="warning" %}
+Users without a valid mapping configured in the IdP lose access upon login.
+{% endhint %}
 
 ### Step 7: Production validation and cleanup
 
