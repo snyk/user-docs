@@ -7,7 +7,7 @@ nav_context: agnostic
 
 For information about using GitHub Actions with Snyk, see [GitHub Actions for Snyk setup and checking for vulnerabilities](./).
 
-By default, Snyk GitHub Actions use the `https://api.snyk.io` endpoint. To configure Snyk to use a different endpoint, set a `SNYK_API` environment variable in your workflow, for example `https://api.eu.snyk.io`.
+By default, Snyk GitHub Actions use the `https://api.snyk.io` endpoint. To configure Snyk to use a different endpoint, set a `SNYK_API` environment variable in your workflow, for example, `https://api.eu.snyk.io`.
 
 For more information about environment configuration, see [Configure the Snyk CLI](../../snyk-cli/configure-the-snyk-cli/). For the list of available regions, see [Regional hosting and data residency](../../../snyk-data-and-governance/regional-hosting-and-data-residency.md#available-snyk-regions).
 
@@ -28,7 +28,7 @@ jobs:
           SNYK_API: https://api.us.snyk.io
 ```
 
-## Troubleshoot regional endpoint errors
+## Troubleshooting
 
 If a workflow fails to authenticate, the token and the API endpoint likely belong to different regions.
 
