@@ -6,6 +6,8 @@ nav_context: classic
 # Snyk Repo Content Sync
 
 {% hint style="info" %}
+**Release status**
+
 Snyk Repo Content Sync is generally available (GA) and enabled by default for Enterprise plans.
 {% endhint %}
 
