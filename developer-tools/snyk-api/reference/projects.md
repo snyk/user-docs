@@ -21,3 +21,7 @@ This document uses the REST API. For more details, see the [Authentication for A
 {% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/projects/{project_id}" method="delete" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}/projects/bulk-delete" method="post" %}
+[rest-spec.json](../../.gitbook/assets/rest-spec.json)
+{% endopenapi %}
