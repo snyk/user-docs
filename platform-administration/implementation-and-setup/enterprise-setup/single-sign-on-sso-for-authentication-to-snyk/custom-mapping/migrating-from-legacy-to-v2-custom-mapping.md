@@ -33,7 +33,9 @@ This gives you:
 * Maintain fallback access during the transition by leaving legacy mapping assignments as is within the IdP.
 * Coordinate timing with internal stakeholders to minimize disruption—for example, work with security or compliance teams, as role changes during audits could temporarily affect access reporting or user permissions.
 
-**Note:** These migration activities apply to the SSO connection directly and affect all Snyk Groups with which the connection is associated. All Groups using the same connection will transition to v2 custom mapping simultaneously. The process below is designed to make this as straightforward as possible.
+{% hint style="info" %}
+These migration activities apply to the SSO connection directly and affect all Snyk Groups associated with the connection. All Groups using the same connection transition to v2 custom mapping simultaneously.
+{% endhint %}
 
 ### Step 2: Extract identifiers
 
