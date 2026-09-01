@@ -53,16 +53,10 @@ A repository supports up to 100 test exclusions. If you select **Exclude these p
 * Deletion through the Web UI: Snyk recreates the Projects with no error message.
 
 Snyk does not provide a view of the test exclusions or the deletion history for a repository.
-{% endhint %}
-
 ## Considerations
 
 * File renames and history: For file renames, path changes, or .NET Framework upgrades, Snyk treats the change as a delete and create action. Snyk does not carry over the Project history and previous ignores to the new Project.
 * Manual deactivations: Snyk does not reactivate manually deactivated Projects during sync. To reactivate a Project, navigate to the relevant Snyk Project and click **Activate**.
 * Organization-wide deletion: Deleting a Project removes it for the entire Organization, along with its history and findings.
 * PR checks: Snyk detects new Projects only when you merge them into the monitored branch. Snyk does not detect them during pull request checks.
-* Test batching: Snyk batches repeated changes to the same repository and branch into 10-minute windows instead of testing on every commit, so a change can take up to 10 minutes to appear.
-* Exclusion limit: A repository supports up to 100 exclusions. When you select **Exclude these projects from future scans** and the exclusion list is already at the limit, Snyk deletes the Projects but does not add the exclusion, so the Projects reappear at the next repo sync.
-  * Bulk deletion through the API: the response includes a `meta.failed` entry with the reason `exclusion_limit_reached`.
-  * Deletion through the UI: Snyk does not surface an error, so the Projects reappear silently.
-* Exclusion visibility: There is no in-product view of a repository's exclusions or deletion history.
+* Test batching: Snyk batches repeated changes to the same repository and branch into 10-minute windows instead of testing on every commit, so results can take up to 10 minutes to appear.
