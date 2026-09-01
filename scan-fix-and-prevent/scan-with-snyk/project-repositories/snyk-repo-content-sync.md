@@ -15,7 +15,7 @@ Repo Content Sync provides native, automatic synchronization between the Org-lev
 
 ## Supported environments
 
-* Products: the import process supports Snyk Code, Open Source, Secrets, IaC, and Containers (Dockerfiles only).
+* Products: the import process supports Snyk Code, Open Source, Secrets, IaC, and Container (Dockerfiles only).
 * SCMs: Snyk supports GitHub (all versions), GitLab, Azure Repos, and Bitbucket (all versions).
 * Infrastructure: Snyk supports environments using Snyk Broker.
 
