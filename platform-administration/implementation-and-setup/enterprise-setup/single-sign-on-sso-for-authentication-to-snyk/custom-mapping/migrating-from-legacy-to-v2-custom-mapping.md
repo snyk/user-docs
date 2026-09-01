@@ -72,11 +72,11 @@ Update your IdP to pass a multi-value attribute containing the new strings.
 
 ### Step 5: Test pre-production activation
 
-After you have set up a few new role mappings in your IdP, open a support case with the [Snyk Support team](https://support.snyk.io) for custom mapping activation. As part of this case, Support will validate the claims for compliance with the specification.
+After you set up a few new role mappings in your IdP, open a support case with the [Snyk Support team](https://support.snyk.io) for custom mapping activation. As part of this case, Support validates the claims for compliance with the specification.
 
-Once claims have been validated, you should complete role mapping setup in your IdP.
+After claims are validated, complete role mapping setup in your IdP.
 
-Your Snyk account team will perform final validation.
+Your Snyk account team performs final validation.
 
 ### Step 6: Production activation
 
