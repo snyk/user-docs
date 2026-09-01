@@ -37,14 +37,23 @@ Push events trigger synchronization using webhooks. Snyk creates a webhook when 
   * Snyk Code: Use a `.snyk` file in the root of your repository to exclude specific directories or files from import. For details, visit [Exclude directories and files from Project import](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/import-project-repository/exclude-directories-and-files-from-project-import).
   * Snyk Secrets: Use a `.snyk` file in the root of your repository, with the global or secrets exclude sections. Snyk Secrets reads only the root file and does not apply `.snyk` files in subdirectories. For details, visit [Secrets scanning in the SCM integration](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm).
 
-## Delete projects and exclude from future scans
+## Delete Projects and exclude them from future scans
 
-When you delete one or more Projects, Snyk displays a confirmation dialog with an **Exclude these projects from future scans** check box. The check box is cleared by default.
+When you delete one or more Projects, Snyk displays a confirmation dialog with an **Exclude these projects from future scans** check box, which is cleared by default. These test exclusions are separate from the import exclusions you configure in a `.snyk` file or the **Exclude folders** field.
 
-* **Select the check box**: Snyk adds the Projects to the test exclusions for the repository and branch, and does not recreate them during future scans. Re-importing the repository resets these exclusions and recreates the Projects.
-* **Clear the check box**: Snyk deletes the Projects but recreates them on the next scan if the underlying files still exist.
+* Select the check box: Snyk adds the Projects to the test exclusions for the repository and branch, and does not recreate them during future scans.
+* Clear the check box: Snyk deletes the Projects but recreates them on the next scan if the underlying files still exist.
 
-To reverse an exclusion, re-import the repository from the Organization or Group level. The re-imported Project is a new Project without the original Project's issue history.
+To reverse an exclusion, re-import the repository from the Organization or Group level. Re-importing clears the test exclusions and recreates the Projects, but each one is a new Project that does not carry over the issue history of the original.
+
+{% hint style="warning" %}
+A repository supports up to 100 test exclusions. If you select **Exclude these projects from future scans** when the list is already at the limit, Snyk deletes the Projects but does not add the exclusion, so the Projects reappear at the next sync.
+
+* Bulk deletion through the API: the response includes a `meta.failed` entry with the reason `exclusion_limit_reached`.
+* Deletion through the Web UI: Snyk recreates the Projects with no error message.
+
+Snyk does not provide a view of the test exclusions or the deletion history for a repository.
+{% endhint %}
 
 ## Considerations
 
