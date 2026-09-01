@@ -5614,6 +5614,7 @@
             "type": "string"
           },
           "risk_factors": {
+            "deprecated": true,
             "description": "Runtime context that indicates increased asset risk",
             "items": {
               "type": "string"
@@ -7467,6 +7468,82 @@
         },
         "required": [
           "integrations"
+        ],
+        "type": "object"
+      },
+      "BulkDeleteProjectRef": {
+        "additionalProperties": false,
+        "description": "A JSON:API resource identifier naming an existing project to delete.\n",
+        "properties": {
+          "id": {
+            "description": "Project ID.",
+            "example": "331ba0db-5d40-486e-ac6b-8865c98a3e15",
+            "format": "uuid",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "project"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "id"
+        ],
+        "type": "object"
+      },
+      "BulkDeletedProject": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "description": "Project ID.",
+            "example": "331ba0db-5d40-486e-ac6b-8865c98a3e15",
+            "format": "uuid",
+            "type": "string"
+          },
+          "name": {
+            "description": "Project name.",
+            "example": "snyk/goof",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ],
+        "type": "object"
+      },
+      "BulkFailedProject": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "description": "Project ID.",
+            "example": "331ba0db-5d40-486e-ac6b-8865c98a3e15",
+            "format": "uuid",
+            "type": "string"
+          },
+          "name": {
+            "description": "Project name.",
+            "example": "snyk/goof",
+            "type": "string"
+          },
+          "reason": {
+            "description": "Why the project was not deleted.\n\n- `exclusion_limit_reached`: the target already holds the maximum\n  number of exclusions, so no more can be added.\n- `exclusion_failed`: the exclusion could not be recorded, for\n  example because the project has no single path to exclude.\n- `delete_failed`: the project itself could not be deleted. Any\n  exclusion asked for was already recorded.\n",
+            "enum": [
+              "exclusion_limit_reached",
+              "exclusion_failed",
+              "delete_failed"
+            ],
+            "example": "delete_failed",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "reason"
         ],
         "type": "object"
       },
@@ -12804,6 +12881,21 @@
                       },
                       "type": "array"
                     },
+                    "insights": {
+                      "allOf": [
+                        {
+                          "description": "Insights to be used when triaging a vulnerability.",
+                          "properties": {
+                            "triage_advice": {
+                              "description": "Advice for triaging this vulnerability.",
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ],
+                      "description": "Insights to be used when triaging the vulnerability."
+                    },
                     "is_disputed": {
                       "default": false,
                       "description": "Indicates if the vulnerability is formally disputed.\nA vulnerability's claim (e.g., that it's a security flaw, or the scope/impact) is\n**disputed** when one party, often the vendor or a security professional, formally\nchallenges the assertion.\nMost cybersecurity public listings, such as CVE, have a defined process\nallowing vendors or researchers to officially challenge the validity\nof a reported issue, leading to this 'DISPUTED' status being formally annotated.",
@@ -12832,6 +12924,11 @@
                     "modified_at": {
                       "description": "Timestamp indicating when the vulnerability was last modified (anything\nfrom typo to version change). When the vulnerability is first added, this\nfield and published will be (almost) identical.",
                       "format": "date-time",
+                      "type": "string"
+                    },
+                    "module_name": {
+                      "description": "The module within the dependency.",
+                      "example": "ansi-regex",
                       "type": "string"
                     },
                     "package_full_name": {
@@ -31556,10 +31653,10 @@
                                 ]
                               },
                               {
-                                "attribute": "risk_factors",
+                                "attribute": "sources",
                                 "operator": "in",
                                 "values": [
-                                  "Deployed"
+                                  "github"
                                 ]
                               }
                             ]
@@ -61078,6 +61175,7 @@
             "name": "name",
             "schema": {
               "maxLength": 100,
+              "minLength": 1,
               "type": "string"
             }
           },
@@ -77870,6 +77968,157 @@
         "x-snyk-api-resource": "projects",
         "x-snyk-api-stability": "ga",
         "x-snyk-api-version": "2024-05-31",
+        "x-stability-level": "stable"
+      }
+    },
+    "/orgs/{org_id}/projects/bulk-delete": {
+      "post": {
+        "description": "Delete up to 100 projects in one request. Each project is reported in\n`meta.deleted` or `meta.failed`, so a partially successful request is\nstill a 200. A project that does not exist in the org is ignored, and\nappears in neither list.\n\n#### Required permissions\n\n- `View Projects (org.project.read)`\n\n- `Remove Projects (org.project.delete)`",
+        "operationId": "deleteOrgProjects",
+        "parameters": [
+          {
+            "description": "The ID of the org that the projects belong to.",
+            "in": "path",
+            "name": "org_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/Version"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/vnd.api+json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "data": {
+                    "description": "The projects to delete, at most 100 per request.",
+                    "items": {
+                      "$ref": "#/components/schemas/BulkDeleteProjectRef"
+                    },
+                    "maxItems": 100,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "meta": {
+                    "additionalProperties": false,
+                    "description": "Options that apply to this request.",
+                    "properties": {
+                      "exclude_from_future_scans": {
+                        "default": false,
+                        "description": "Before deleting each project, exclude its target file\n(the manifest or lockfile path in the repository) from\nfuture scans of the same target reference, so it is not\nre-imported or retested.\n\nOnly projects backed by a single file in an SCM\nrepository are excluded. The rest are deleted as normal.\nA project whose exclusion cannot be recorded is not\ndeleted and is reported in `meta.failed`.\n",
+                        "type": "boolean"
+                      }
+                    },
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "data"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.api+json": {
+                "schema": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "meta": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "deleted": {
+                          "description": "The projects that were deleted.",
+                          "items": {
+                            "$ref": "#/components/schemas/BulkDeletedProject"
+                          },
+                          "type": "array"
+                        },
+                        "failed": {
+                          "description": "The projects that were not deleted, and why.",
+                          "items": {
+                            "$ref": "#/components/schemas/BulkFailedProject"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "required": [
+                        "deleted",
+                        "failed"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "meta"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "A summary of the results of the operation",
+            "headers": {
+              "deprecation": {
+                "$ref": "#/components/headers/DeprecationHeader"
+              },
+              "snyk-request-id": {
+                "$ref": "#/components/headers/RequestIdResponseHeader"
+              },
+              "snyk-version-lifecycle-stage": {
+                "$ref": "#/components/headers/VersionStageResponseHeader"
+              },
+              "snyk-version-requested": {
+                "$ref": "#/components/headers/VersionRequestedResponseHeader"
+              },
+              "snyk-version-served": {
+                "$ref": "#/components/headers/VersionServedResponseHeader"
+              },
+              "sunset": {
+                "$ref": "#/components/headers/SunsetHeader"
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        },
+        "summary": "Delete several projects in one request.",
+        "tags": [
+          "Projects"
+        ],
+        "x-snyk-api-lifecycle": "released",
+        "x-snyk-api-releases": [
+          "2024-10-15"
+        ],
+        "x-snyk-api-resource": "project_bulk_delete",
+        "x-snyk-api-stability": "ga",
+        "x-snyk-api-version": "2024-10-15",
         "x-stability-level": "stable"
       }
     },

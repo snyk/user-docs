@@ -1,3 +1,22 @@
+## 2026-03-25 - Updated 2026-09-01
+
+### GET - `/orgs` - Updated
+- for the `query` request parameter `name`, the minLength was increased from `0` to `1`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### POST - `/orgs/{org_id}/projects/bulk-delete` - Added
+- Delete up to 100 projects in one request. Each project is reported in
+`meta.deleted` or `meta.failed`, so a partially successful request is
+still a 200. A project that does not exist in the org is ignored, and
+appears in neither list.
+
+#### Required permissions
+
+- `View Projects (org.project.read)`
+
+- `Remove Projects (org.project.delete)`
+
 ## 2026-03-25 - Updated 2026-08-25
 
 ### GET - `/orgs/{org_id}/policies` - Updated
