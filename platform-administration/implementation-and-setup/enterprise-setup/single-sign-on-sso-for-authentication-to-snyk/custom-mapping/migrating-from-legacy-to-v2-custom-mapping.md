@@ -88,11 +88,11 @@ Roles are automatically assigned upon the next user login.
 
 **Warning:** Users without a valid mapping configured in the IdP may lose access upon login.
 
-### Step 7: Production validation and clean up
+### Step 7: Production validation and cleanup
 
-Your team should confirm expected access levels and Organization assignment in Snyk.
+Confirm expected access levels and Organization assignment in Snyk.
 
-It is recommended to clean up legacy mapping configuration in the IdP post-validation, since this is no longer needed.
+It is recommended to clean up legacy mapping configuration in the IdP post-validation, since it's no longer needed.
 
 ## Syntax translation reference
 
