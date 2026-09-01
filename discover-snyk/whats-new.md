@@ -1,8 +1,10 @@
 ---
+nav_context: new
+description: >-
+  Recent updates to Snyk products and documentation, including new features,
+  changes, and knowledge base improvements
 cover: .gitbook/assets/docs-banner-nov25.webp
 coverY: 0
-description: Recent updates to Snyk products and documentation, including new features, changes, and knowledge base improvements
-nav_context: new
 ---
 
 # What's new?
@@ -11,9 +13,35 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ## August 2026
 
-### Snyk supported languages
+### Snyk Agent Fix
 
-* Snyk Code support for COBOL is now generally available, on all plans, across SCM integrations and the Snyk CLI, IDE, and CI/CD. Visit [COBOL](https://docs.snyk.io/supported-languages/supported-languages-list/cobol) and [COBOL rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules/cobol-rules) for more details.
+* Remediation Agent is now generally available. The agent opens autonomous pull requests that fix SCA and SAST vulnerabilities, adding a breaking-change assessment for SCA fixes and using the Agent Fix engine for SAST fixes. See [Remediation Agent](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/remediation-agent).
+* `snyk fix` documentation now describes interactive fix application and an auto-approve option for `snyk fix --agentic`. See [Remediation Agent](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/remediation-agent).
+* Agent Fix in the Pull Request experience is now generally available. Snyk removed the Early Access notices from the documentation. See [Pull Request experience](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks/pull-request-experience).
+
+### Snyk CLI
+
+* Secrets scanning in the Snyk CLI and on SCM imports now honors the `global` and `secrets` sections of the `.snyk` file, adding permanent path exclusions alongside the one-off `--exclude` flag. Snyk never scans excluded paths, so they do not appear as ignored issues. See [Secrets scanning in the Snyk CLI](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-secrets/secrets-scanning-in-the-snyk-cli).
+* `snyk secrets test` is now in the CLI command reference, with its exit codes and the `--include-ignores`, `--report`, and `--target-name` options. See [snyk secrets test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/cli-commands-and-options-summary#snyk-secrets-test).
+* `snyk aibom` documentation now covers the `--enrich` flag. See [snyk aibom](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands#snyk-aibom).
+
+### Snyk Code
+
+* Snyk Code Quality is retired. Snyk removed references to it from the IDE plugin and extension documentation. See the [Snyk release process](https://docs.snyk.io/snyk-release-process).
+* Snyk Code Local Engine documentation now consists of a deprecation notice. See [Snyk Code Local Engine](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-local-engine).
+* COBOL support in Snyk Code is now generally available on all plans and integrations. The documentation confirms support for SCM integrations, the Snyk CLI, IDEs, and CI/CD, and no longer carries Early Access or Snyk Preview notices. See [COBOL](https://docs.snyk.io/supported-languages/supported-languages-list/cobol).
+* Framework and language coverage in Snyk Code now includes Vert.x, Jolokia, and Spring Cloud Config for Java and LangChain for Python. The Python page also lists all seven supported AWS Lambda serverless triggers. See [Python](https://docs.snyk.io/supported-languages/supported-languages-list/python).
+
+### Snyk Container
+
+* Container image inventory is a new page in Snyk Container, covering issues, fix recommendations, related projects, and image content views for scanned images. See [Container image inventory](https://docs.snyk.io/scan-fix-and-prevent/fix/container-image-inventory).
+* Provenance attestations now appear on the **Image content** tab of the container image inventory. Attestations require minimum Snyk CLI and snyk-monitor versions and a re-scan. See [Container image inventory](https://docs.snyk.io/scan-fix-and-prevent/fix/container-image-inventory).
+
+### Evo by Snyk
+
+* Continuous Offensive Security (COS) is now generally available in Evo by Snyk, covering scan targets, authentication configuration, scope definition, findings, reports, and severity scoring. See [Continuous Offensive Security](https://docs.snyk.io/agent-security/evo-by-snyk/continuous-offensive-security-cos).
+* Role-based access control in Evo by Snyk now includes an Organization-scoped user permission, which affects access and authentication, agent supply-chain security, COS scans and targets, Evo Chat, inventory, policies and issues, and reporting. See [Access and authentication](https://docs.snyk.io/agent-security/evo-by-snyk/access-and-authentication).
+* Evo by Snyk now documents the Model Risk Score taxonomy, and updates the AI risk framework mappings and guidance under AI-SPM risk intelligence. See [Risk intelligence](https://docs.snyk.io/agent-security/evo-by-snyk/ai-spm/risk-intelligence).
 
 ## July 2026
 
@@ -43,7 +71,6 @@ The most recent updates include significant changes to the user docs, such as fe
 * Snyk Container now reports vulnerabilities in the Go standard library, identified from the Go version recorded in the binary. Visit [Application vulnerabilities in Snyk Container and Snyk Open Source](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works/application-vulnerabilities-in-snyk-container-and-snyk-open-source) for more details.
 * Notification emails for new vulnerabilities are now off by default, and a new section documents notification precedence rules. Visit [Manage notifications](https://docs.snyk.io/platform-administration/snyk-platform-administration/manage-notifications) for more details.
 * Snowflake Data Share added two fields to the prevention events dataset, `finding_branch_key` and `finding_asset_key`. Visit [Data share data dictionary](https://docs.snyk.io/manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary) for more details.
-
 
 ## June 2026
 
@@ -212,9 +239,9 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk Studio
 
-* The [Agentic security with Snyk Studio](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio) documentation has been restructured to accurately reflect the workflow you would go through when using Snyk Studio for the first time, and using the available [Quickstart guides](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides).
+* The [Agentic security with Snyk Studio](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/readme) documentation has been restructured to accurately reflect the workflow you would go through when using Snyk Studio for the first time, and using the available [Quickstart guides](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides).
 * The [Snyk Studio Adoption](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/usage-analytics) report is now available under [Redesigned analytics](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/analytics/overview-tab#snyk-studio-adoption).
-* The [supported tools list](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio#mcp-server-supported-tools) was updated to clarify that Snyk supports `snyk_send_feedback`.
+* The [supported tools list](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/readme#mcp-server-supported-tools) was updated to clarify that Snyk supports `snyk_send_feedback`.
 
 ### Snyk supported languages
 
@@ -250,7 +277,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Snyk Studio
 
-* The [Snyk Studio - Agentic integrations](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio) documentation has been updated to provide a clearer explanation of MCP usage and the available Snyk Studio tools.
+* The [Snyk Studio - Agentic integrations](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/readme) documentation has been updated to provide a clearer explanation of MCP usage and the available Snyk Studio tools.
 * The [Quickstart guides for Snyk Studio](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides) were updated with new and refreshed setup guidance, including [Cursor](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide) and [Windsurf](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/windsurf-guide).
 
 #### Other updates
@@ -306,7 +333,7 @@ The most recent updates include significant changes to the user docs, such as fe
 #### Snyk integrations
 
 * The list of Snyk MCP quick guides now includes [Devin guide](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/devin-guide), [Factory guide](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/factory-guide), [Factory terminal guide](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/factory-terminal-ide-guide).
-* The Snyk MCP Server has been rebranded as [Snyk Studio](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio).
+* The Snyk MCP Server has been rebranded as [Snyk Studio](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/readme).
 * [SCM integration support for Python](supported-languages/supported-languages-list/python/scm-integrations-and-python.md) has been updated with support for Python 3.14.
 
 #### Other updates
@@ -376,7 +403,7 @@ The most recent updates include significant changes to the user docs, such as fe
 #### Snyk CLI
 
 * MCP updates:
-  * [Updated the list of supported Snyk security tools into an AI system](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio#mcp-server-supported-tools).
+  * [Updated the list of supported Snyk security tools into an AI system](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/readme#mcp-server-supported-tools).
   * Updated release status from experimental to [Early access](getting-started/snyk-release-process.md#early-access-features) and removed the experimental flag.
   * Added [Cursor](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/quickstart-guides/cursor-guide) as a new supported agentic IDE for MCP.
 * PAT updates:
@@ -435,7 +462,7 @@ The most recent updates include significant changes to the user docs, such as fe
 #### Snyk CLI
 
 * The `--platform` option was added to the [`container sbom`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-sbom) command.
-* The MCP information was expanded to [Developer guardrails for agentic workflows](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/agentic-security-with-snyk-studio).
+* The MCP information was expanded to [Developer guardrails for agentic workflows](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/agentic-security-with-snyk-studio/readme).
 
 #### IDE plugins and extensions
 
@@ -473,8 +500,8 @@ The [Bitbucket Cloud App](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integra
 
 #### Snyk Essentials
 
-* [The Inventory Overview tab](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/assets-inventory-layouts) is now available to provide insights and prescriptive guidance to improve your application security.
-* [The Visibility column](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/assets-inventory-components#visibility) has been added to show the visibility status of your repositories.
+* [The Inventory Overview tab](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets/assets-inventory-layouts) is now available to provide insights and prescriptive guidance to improve your application security.
+* [The Visibility column](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets/assets-inventory-components#visibility) has been added to show the visibility status of your repositories.
 
 #### Snyk Broker
 
@@ -533,7 +560,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 #### Snyk Essentials
 
 * A new feature is now available in Snyk Essentials, introducing a new type of [asset tag](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/prevent/policies/assets-policies#asset-tagging) known as GitHub custom properties.
-* [Asset tags](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/assets-inventory-components#tags) have been redefined and are now clearly separated into system tags and user-defined tags.
+* [Asset tags](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets/assets-inventory-components#tags) have been redefined and are now clearly separated into system tags and user-defined tags.
 
 #### Snyk Integrations
 
@@ -605,7 +632,7 @@ Information has been added about Snyk support for the Model Context Protocol (MC
 
 **Snyk API**
 
-* [Asset inventory components](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/assets-inventory-components#clusters) has been updated to include details on clusters.
+* [Asset inventory components](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets/assets-inventory-components#clusters) has been updated to include details on clusters.
 
 **Snyk CLI and IDEs**
 
@@ -685,8 +712,8 @@ The Snowflake Data Share section has been updated to include a [Data Share Dicti
 
 * The API documentation now provides the API Reference and explanatory documentation in the [API section](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/snyk-api).
 * The [API End of Life (EOL) process and migration guides](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-api/api-end-of-life-eol-process-and-migration-guides) are now published and updated to support the process, which began in July.
-* [Asset inventory filtering](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/assets-inventory-components#asset-tabs) describes the new, simplified view that provides an improved experience of filtering the assets.
-* The [Asset inventory layouts](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/assets-inventory-layouts) have been renamed to better reflect their functionality.
+* [Asset inventory filtering](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets/assets-inventory-components#asset-tabs) describes the new, simplified view that provides an improved experience of filtering the assets.
+* The [Asset inventory layouts](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/manage-assets/assets-inventory-layouts) have been renamed to better reflect their functionality.
 * Four new SCM integrations are now available for Snyk:
   * [Atlassian Compass](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/application-context-for-scm-integrations#atlassian-compass)
   * [Harness](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/integrations/scm-integrations/application-context-for-scm-integrations#harness)
