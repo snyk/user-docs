@@ -11,7 +11,7 @@ Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using
 
 There is also a [Snyk Setup Action](snyk-setup-action.md).
 
-If your organization uses a Snyk region other than the default, see [Regional API endpoints](regional-api-endpoints.md).
+If your organization uses a Snyk region other than the default, visit [Regional API endpoints](regional-api-endpoints.md).
 
 For more information, see the [GitHub Actions feature](https://github.com/features/actions) page and the [GitHub custom actions](https://docs.github.com/en/actions/creating-actions/about-actions) documentation.
 
