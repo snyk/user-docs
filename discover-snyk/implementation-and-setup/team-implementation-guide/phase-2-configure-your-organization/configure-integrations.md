@@ -1,6 +1,8 @@
 ---
-description: How to configure Snyk SCM and CI/CD integrations for your Organization, including recommended settings
 nav_context: agnostic
+description: >-
+  How to configure Snyk SCM and CI/CD integrations for your Organization,
+  including recommended settings
 ---
 
 # Configure integrations
@@ -41,7 +43,7 @@ For `snyk iac test --report`, finding issues will result in the build possibly s
 If you want to test passively, the inclusion of the `--report` argument requires either setting the build step to always continue or an alternative like concatenating logic equating to "or true" (for example `snyk iac test --report || true`). The exact syntax depends on the ecosystem the CLI is run in.
 {% endhint %}
 
-When configuring pipelines, you can use popular plugins like [`snyk-filter`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter) for advanced filtering.
+When configuring pipelines, you can use popular plugins like [`snyk-filter`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter) for advanced filtering.
 
 {% hint style="info" %}
 Some plugins that require API access may not be usable on the Team plan, as API access is available on the Snyk Enterprise plan.

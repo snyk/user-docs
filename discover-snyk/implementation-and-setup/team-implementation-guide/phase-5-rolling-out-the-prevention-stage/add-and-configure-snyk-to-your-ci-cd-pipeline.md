@@ -1,6 +1,8 @@
 ---
-description: How to add Snyk to your CI/CD pipeline as a gatekeeper that fails builds on new vulnerabilities
 nav_context: agnostic
+description: >-
+  How to add Snyk to your CI/CD pipeline as a gatekeeper that fails builds on
+  new vulnerabilities
 ---
 
 # Add and configure Snyk to your CI/CD pipeline
@@ -28,7 +30,7 @@ When running a test in your pipeline, there are filters available to determine w
 
 ## CLI supporting tools
 
-If you use the Snyk CLI in your pipeline, a range of supporting [Snyk Tools](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/snyk-tools) provide additional functionality, including [`snyk-filter`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter), which can be used for more complex "fail" criteria, such as “fail if more than three High severity vulnerabilities are found”.
+If you use the Snyk CLI in your pipeline, a range of supporting [Snyk Tools](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-apps/snyk-tools) provide additional functionality, including [`snyk-filter`](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter), which can be used for more complex "fail" criteria, such as “fail if more than three High severity vulnerabilities are found”.
 
 ## Also see
 

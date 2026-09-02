@@ -1,6 +1,8 @@
 ---
-description: How to confirm your Snyk region and sign in, using SNYK-US-02 as the example setup
 nav_context: agnostic
+description: >-
+  How to confirm your Snyk region and sign in, using SNYK-US-02 as the example
+  setup
 ---
 
 # Configure Snyk region
@@ -26,7 +28,7 @@ snyk auth $SNYK_TOKEN
 snyk test
 ```
 
-See [authenticating the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/authenticate-to-use-the-cli) for more details.
+See [authenticating the CLI](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/authenticate-to-use-the-cli) for more details.
 
 ## Snyk API
 

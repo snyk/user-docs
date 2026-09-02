@@ -1,15 +1,17 @@
 ---
-description: How to test JavaScript Projects with the Snyk CLI, including report generation, output formats, and dependency filtering
 nav_context: agnostic
+description: >-
+  How to test JavaScript Projects with the Snyk CLI, including report
+  generation, output formats, and dependency filtering
 ---
 
 # CLI support for JavaScript
 
-To help generate reports locally or at build time, see the [snyk-to-html plugin](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html).
+To help generate reports locally or at build time, see the [snyk-to-html plugin](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html).
 
 See `--json` and `--sarif` options for generating output that can be programmatically accessed.
 
-For advanced filtering options, see[ snyk-filter](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
+For advanced filtering options, see[ snyk-filter](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter).
 
 ## Open Source libraries
 
@@ -39,4 +41,4 @@ See [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-
 
 ## Resources
 
-See the [CLI commands and options summary](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/cli-commands-and-options-summary) and the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/). Use the `--help` option in the CLI for details of Snyk CLI commands.
+See the [CLI commands and options summary](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/cli-commands-and-options-summary) and the [CLI cheat sheet](https://snyk.io/blog/snyk-cli-cheat-sheet/). Use the `--help` option in the CLI for details of Snyk CLI commands.

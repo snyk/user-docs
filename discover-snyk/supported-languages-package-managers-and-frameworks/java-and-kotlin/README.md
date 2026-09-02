@@ -141,7 +141,7 @@ Available features:
 * Reports
 * License scanning
 * Fix PRs (for Gradle only Fix advice is available)
-* Test your app's SBOM and packages using `pkg:maven` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/sbom-test) CLI command
+* Test your app's SBOM and packages using `pkg:maven` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 ## Validating, monitoring, alerting, and gating for Java and Kotlin
 
@@ -156,13 +156,13 @@ Snyk provides flexible capabilities, including:
 * Dedicated plugins for Jenkins, Circle CI, and others (see relevant marketplaces)
 * Using [Github Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/)
 * The Snyk CLI can be used in most CI/CD systems (see [examples](https://github.com/snyk-labs/snyk-cicd-integration-examples))
-  * Fail the build based on criteria using options or the [snyk-filter](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter) tool
+  * Fail the build based on criteria using options or the [snyk-filter](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter) tool
   * There are [containerized](https://hub.docker.com/r/snyk/snyk) versions available
 * With Partner Platforms: Azure, Bitbucket, and AWS have built-in pipes/components for use with Snyk. For Java, Snyk suggests using the SCM integration with Bitbucket Cloud or using the CLI instead of the prepackaged Bitbucket Pipe.
 
 Snyk can monitor container images and their open source or Linux-based packages being used in production using Kubernetes integration, to notify customers of known vulnerabilities for applications in production. This feature is available for Enterprise plans only.
 
-Where a production integration does not exist, use the [snyk monitor](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/monitor) CLI command to take a snapshot and monitor what is being pushed to production (available for all plans).
+Where a production integration does not exist, use the [snyk monitor](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/monitor) CLI command to take a snapshot and monitor what is being pushed to production (available for all plans).
 
 ## Java support for BOM
 

@@ -1,6 +1,8 @@
 ---
-description: Snyk support for PHP with Snyk Code and Snyk Open Source, including supported versions, frameworks, and interfile analysis
 nav_context: agnostic
+description: >-
+  Snyk support for PHP with Snyk Code and Snyk Open Source, including supported
+  versions, frameworks, and interfile analysis
 ---
 
 # PHP
@@ -57,7 +59,7 @@ For PHP with Snyk Open Source, the following file formats are supported: `compos
 
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:composer` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/sbom-test) CLI command.
+* Test your app's SBOM and packages using `pkg:composer` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
 
 {% hint style="info" %}
 The **Snyk Fix PR** feature is not available for PHP. This means that you will not be notified if the PR checks fail when the following conditions are met:
@@ -68,7 +70,7 @@ The **Snyk Fix PR** feature is not available for PHP. This means that you will n
 
 ## CLI support for PHP
 
-A [build is required](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli) to scan with the CLI if there is no `composer.lock` file present. There are no unique options for use when running Snyk for PHP.
+A [build is required](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli) to scan with the CLI if there is no `composer.lock` file present. There are no unique options for use when running Snyk for PHP.
 
 ## SCM integrations for PHP
 

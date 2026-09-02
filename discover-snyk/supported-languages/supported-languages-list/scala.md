@@ -1,6 +1,8 @@
 ---
-description: Snyk support for Scala with Snyk Code and Snyk Open Source, including SCM import, CLI and IDE testing, and supported frameworks
 nav_context: agnostic
+description: >-
+  Snyk support for Scala with Snyk Code and Snyk Open Source, including SCM
+  import, CLI and IDE testing, and supported frameworks
 ---
 
 # Scala
@@ -42,7 +44,6 @@ For Scala, the following frameworks and libraries are supported:
 
 For an overview of the supported security rules, visit [Scala rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/scala-rules).
 
-
 For Scala with Snyk Code, the following file format is supported: `.scala`
 
 Available features:
@@ -65,7 +66,7 @@ Available features:
 
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:maven` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/sbom-test) CLI command
+* Test your app's SBOM and packages using `pkg:maven` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 For sbt, Snyk provides: CLI support, SCM support, and license scanning.
 

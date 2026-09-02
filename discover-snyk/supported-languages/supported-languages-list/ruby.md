@@ -1,6 +1,8 @@
 ---
-description: Snyk support for Ruby with Snyk Code and Snyk Open Source, including SCM import, CLI and IDE testing, and supported versions
 nav_context: agnostic
+description: >-
+  Snyk support for Ruby with Snyk Code and Snyk Open Source, including SCM
+  import, CLI and IDE testing, and supported versions
 ---
 
 # Ruby
@@ -62,7 +64,6 @@ As a package registry, [rubygems.org](https://rubygems.org/) is supported.
 
 For an overview of the supported security rules, visit [Ruby rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/ruby-rules).
 
-
 For Ruby with Snyk Code, the following file formats are supported: `.erb`, `.haml`, `.rb`, `.rhtml`, `.slm`
 
 Available features:
@@ -84,7 +85,7 @@ Available features:
 
 * Fix PRs
 * License scanning
-* Test your app's SBOM and packages using `pkg:gem` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/sbom-test) CLI command.
+* Test your app's SBOM and packages using `pkg:gem` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command.
 
 ### Bundler support
 

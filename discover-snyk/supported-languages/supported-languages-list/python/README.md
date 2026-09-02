@@ -1,6 +1,8 @@
 ---
-description: Snyk support for Python with Snyk Code and Snyk Open Source, including SCM import, CLI and IDE testing, and supported versions
 nav_context: agnostic
+description: >-
+  Snyk support for Python with Snyk Code and Snyk Open Source, including SCM
+  import, CLI and IDE testing, and supported versions
 ---
 
 # Python
@@ -19,7 +21,6 @@ Available integrations:
 ## Python for Snyk Code
 
 For an overview of the supported security rules, visit [Python rules](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-code/snyk-code-security-rules/python-rules).
-
 
 For Python with Snyk Code, Python versions up to `3.12` are supported. Language features introduced in newer versions are not supported.
 
@@ -151,7 +152,7 @@ For Poetry Projects, you do not need to specify the Python version. Poetry files
 * Automatic and manual Fix PRs (supported only for pip)
 * License scanning
 * Reports
-* Test your app's SBOM and packages using `pkg:pypi` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/commands/sbom-test) CLI command
+* Test your app's SBOM and packages using `pkg:pypi` PURLs through the [SBOM test](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/sbom-test) CLI command
 
 {% hint style="info" %}
 Depending on your plan, some features may not be available. For more information, see [plans and pricing](https://snyk.io/plans/).
