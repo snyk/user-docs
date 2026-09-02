@@ -3,6 +3,8 @@ description: How to set up the New Relic curated UI and a Snyk custom dashboard
 nav_context: classic
 ---
 
+{% include "../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # New Relic Curated UI and Snyk Custom Dashboard
 
 Once the Azure Function and the Snyk Webhook are created, you see data coming in for Snyk projects with the configured retest frequency, or projects that you scan manually and where Snyk identifies new issues.

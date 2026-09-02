@@ -3,6 +3,8 @@ description: How to group Projects by branch or version when monitoring with the
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Group Projects by branch or version for monitoring
 
 {% hint style="info" %}

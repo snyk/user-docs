@@ -3,6 +3,8 @@ description: How to set up the Snyk GitLab SCM integration, available on Enterpr
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # GitLab
 
 {% hint style="info" %}

@@ -3,6 +3,8 @@ description: The Snyk pipe parameters and values for Bitbucket Cloud pipelines
 nav_context: classic
 ---
 
+{% include "../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Snyk pipe parameters and values (Bitbucket Cloud)
 
 ## Configure the Snyk pipe
