@@ -13,17 +13,17 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ## August 2026
 
-### Snyk Agent Fix
+### Snyk Agent Security
 
-* Remediation Agent is now generally available. The agent opens autonomous pull requests that fix SCA and SAST vulnerabilities, adding a breaking-change assessment for SCA fixes and using the Agent Fix engine for SAST fixes. See [Remediation Agent](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/remediation-agent).
-* `snyk fix` documentation now describes interactive fix application and an auto-approve option for `snyk fix --agentic`. See [Remediation Agent](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/remediation-agent).
-* Agent Fix in the Pull Request experience is now generally available. Snyk removed the Early Access notices from the documentation. See [Pull Request experience](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks/pull-request-experience).
+* Remediation Agent is now available in Early access. The agent opens autonomous pull requests that fix SCA and SAST vulnerabilities, adding a breaking-change assessment for SCA fixes and using the Agent Fix engine for SAST fixes. Visit [Remediation Agent](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/remediation-agent).
+* Agent Fix in the Pull Request experience is now generally available. Snyk removed the Early Access notices from the documentation. Visit [Pull Request experience](https://docs.snyk.io/scan-fix-and-prevent/prevent/pull-request-checks/pull-request-experience).
 
 ### Snyk CLI
 
 * Secrets scanning in the Snyk CLI and on SCM imports now honors the `global` and `secrets` sections of the `.snyk` file, adding permanent path exclusions alongside the one-off `--exclude` flag. Snyk never scans excluded paths, so they do not appear as ignored issues. See [Secrets scanning in the Snyk CLI](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-secrets/secrets-scanning-in-the-snyk-cli).
 * `snyk secrets test` is now in the CLI command reference, with its exit codes and the `--include-ignores`, `--report`, and `--target-name` options. See [snyk secrets test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/cli-commands-and-options-summary#snyk-secrets-test).
 * `snyk aibom` documentation now covers the `--enrich` flag. See [snyk aibom](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands#snyk-aibom).
+* `snyk fix` documentation now describes interactive fix application and an auto-approve option for `snyk fix --agentic`. Visit [Remediation Agent](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/remediation-agent).
 
 ### Snyk Code
 
