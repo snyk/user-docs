@@ -3,6 +3,8 @@ description: How to set up an Okta SAML application and connect it to Snyk for S
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Okta SAML application setup
 
 This example shows setting up an Okta SAML application and connecting this to Snyk to facilitate SSO. To configure your Okta to use SSO with Snyk, you need an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.

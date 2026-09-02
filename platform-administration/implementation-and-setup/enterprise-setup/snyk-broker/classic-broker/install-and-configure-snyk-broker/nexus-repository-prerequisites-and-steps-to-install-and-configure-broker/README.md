@@ -5,6 +5,8 @@ description: >-
   Repository Manager, on Enterprise plans
 ---
 
+{% include "../../../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Nexus Repository - prerequisites and steps to install and configure Broker
 
 {% hint style="info" %}

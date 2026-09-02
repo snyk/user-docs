@@ -3,6 +3,8 @@ description: How to upgrade an Organization integration from Classic Broker to t
 nav_context: classic
 ---
 
+{% include "../../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Upgrade an Organization integration from Classic Broker to Universal Broker
 
 {% hint style="info" %}
