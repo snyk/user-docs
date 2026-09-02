@@ -148,6 +148,7 @@
     * [Snyk Docker action](snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-docker-action.md)
     * [Snyk Infrastructure as Code action](snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-infrastructure-as-code-action.md)
     * [Snyk Setup action](snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/snyk-setup-action.md)
+    * [Regional API endpoints](snyk-ci-cd-integrations/github-actions-for-snyk-setup-and-checking-for-vulnerabilities/regional-api-endpoints.md)
   * [Jenkins plugin integration with Snyk](snyk-ci-cd-integrations/jenkins-plugin-integration-with-snyk.md)
   * [Maven plugin integration with Snyk](snyk-ci-cd-integrations/maven-plugin-integration-with-snyk.md)
   * [TeamCity (JetBrains) integration using the Snyk security plugin](snyk-ci-cd-integrations/teamcity-jetbrains-integration-using-the-snyk-security-plugin/README.md)
