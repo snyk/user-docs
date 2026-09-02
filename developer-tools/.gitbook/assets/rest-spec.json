@@ -13033,6 +13033,10 @@
                                     "description": "Class containing the function.",
                                     "type": "string"
                                   },
+                                  "file_path": {
+                                    "description": "Vulnerable File Path",
+                                    "type": "string"
+                                  },
                                   "function_name": {
                                     "description": "Vulnerable function name.",
                                     "type": "string"
@@ -13062,6 +13066,53 @@
                       },
                       "description": "Known vulnerable functions in software packages.",
                       "type": "object"
+                    },
+                    "vulnerable_functions_list": {
+                      "description": "Known vulnerable functions in software packages.\nNew version of the vulnerable_functions field to match\nusing an array in upstream services.",
+                      "items": {
+                        "description": "Information about a function known to be vulnerable in a software package.",
+                        "properties": {
+                          "function_id": {
+                            "allOf": [
+                              {
+                                "description": "Identify a vulnerable function in a software package.",
+                                "properties": {
+                                  "class_name": {
+                                    "description": "Class containing the function.",
+                                    "type": "string"
+                                  },
+                                  "file_path": {
+                                    "description": "Vulnerable File Path",
+                                    "type": "string"
+                                  },
+                                  "function_name": {
+                                    "description": "Vulnerable function name.",
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "function_name"
+                                ],
+                                "type": "object"
+                              }
+                            ],
+                            "description": "Vulnerable function."
+                          },
+                          "versions": {
+                            "description": "Package versions in which the function is vulnerable.",
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "required": [
+                          "function_id",
+                          "versions"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
                     }
                   },
                   "required": [
