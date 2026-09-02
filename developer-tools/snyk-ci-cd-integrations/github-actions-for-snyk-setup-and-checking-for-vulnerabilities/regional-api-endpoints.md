@@ -34,11 +34,11 @@ If a workflow fails to authenticate, the token and the API endpoint likely belon
 
 ### Why this happens
 
-Each Snyk region issues tokens that only work against that region's API endpoint. If `SNYK_API` points to the default endpoint, `https://api.snyk.io`, but your organization is provisioned on a different region, Snyk rejects the request with an authentication error, even though the token itself is valid.
+Each Snyk region issues tokens that only work against that region's API endpoint. If `SNYK_API` points to the default endpoint, `https://api.snyk.io`, but your Snyk Organization is provisioned in a different region, Snyk rejects the request with an authentication error, even though the token itself is valid.
 
 ### Identify your region
 
-Check your organization's URL in the Snyk web UI, or contact your account team to confirm your region. New Enterprise and Pilot accounts provisioned in the United States through Automated Provisioning use SNYK-US-02 (`https://app.us.snyk.io`), not the default SNYK-US-01.
+Check your Snyk Organization's URL in the Snyk web UI, or contact your account team to confirm your region. New Enterprise and Pilot accounts provisioned in the United States through Automated Provisioning use SNYK-US-02 (`https://app.us.snyk.io`), not the default SNYK-US-01.
 
 ### Common mistakes
 
