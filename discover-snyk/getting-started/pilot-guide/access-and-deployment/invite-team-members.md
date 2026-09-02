@@ -3,6 +3,8 @@ description: How to invite members to your Snyk Organization and assign their ro
 nav_context: classic
 ---
 
+{% include "../../../.gitbook/includes/new-navigation-banner.md" %}
+
 # Invite team members
 
 {% include "../../../.gitbook/includes/pilot-guide-navigation.md" %}
