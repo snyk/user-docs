@@ -1,6 +1,6 @@
 ---
-description: How to filter the Snyk assets inventory
 nav_context: classic
+description: How to filter the Snyk assets inventory
 ---
 
 # Assets inventory filters
@@ -20,7 +20,7 @@ You can change or add additional filters by clicking **Advanced Filters**.
 
 ## Advanced filters
 
-Using advanced filters, you can define and apply filters to assets based on specific criteria. For details on how to define filters, see [Define filters](../manage-risk/policies/assets-policies/create-policies.md#define-filters).
+Using advanced filters, you can define and apply filters to assets based on specific criteria. For details on how to define filters, see [Define filters](../../manage-risk/policies/assets-policies/create-policies.md#define-filters).
 
 When you select advanced filters, you can specify one or more sets of criteria:
 
@@ -87,7 +87,7 @@ The unenriched repositories banner highlights repositories not discovered by you
 
 You can filter unenriched repositories directly from the banner by selecting the repository count.
 
-<figure><img src="../.gitbook/assets/inventory_all_assets_no_of_repos.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inventory_all_assets_no_of_repos.png" alt=""><figcaption></figcaption></figure>
 
 #### Unenriched assets with Group SCM integration
 
@@ -109,7 +109,7 @@ To resolve this issue, select the unenriched repositories that are not being dis
 
 Example:
 
-<figure><img src="../.gitbook/assets/assets-discovered-group-organization-level-integrations.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/assets-discovered-group-organization-level-integrations.png" alt=""><figcaption></figcaption></figure>
 
 Check if the repository still exists in the SCM. If it was deleted, remove the asset by deleting its Snyk target.
 

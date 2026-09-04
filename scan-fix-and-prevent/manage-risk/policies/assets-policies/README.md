@@ -1,6 +1,6 @@
 ---
-description: How Snyk Essentials asset policies automate asset governance
 nav_context: classic
+description: How Snyk Essentials asset policies automate asset governance
 ---
 
 # Assets policies
@@ -18,7 +18,7 @@ If your policy is set to run daily, then the policy is run 3 hours after the 24-
 Access the Snyk Essentials policies by positioning yourself at the Group level, selecting **Policies**, then **Assets**.
 
 {% hint style="info" %}
-[Manage assets](../../../manage-assets/manage-assets.md) and [assets policies](./) are interconnected. Before setting up any new policy, ensure you have reviewed and filtered your assets from the Inventory menu.
+[Manage assets](../../../fix/manage-asset-inventory/) and [assets policies](./) are interconnected. Before setting up any new policy, ensure you have reviewed and filtered your assets from the Inventory menu.
 {% endhint %}
 
 ## Use Cases
@@ -43,7 +43,7 @@ Classify repository assets according to their business criticality from A (most 
 
 ### Asset tagging
 
-Categorize and label repository assets with [asset tags](../../../manage-assets/assets-inventory-components.md#tags) to filter the asset inventory.
+Categorize and label repository assets with [asset tags](../../../fix/manage-asset-inventory/assets-inventory-components.md#tags) to filter the asset inventory.
 
 * **GitHub custom properties** - lists the GitHub custom properties associated with your GitHub repository as a tag
 * **User-defined tags** are customizable, as you can define their logic through [Assets Policies](./). For example, you can set tags to label a repository that comes from a specific source, such as GitHub. Tags associated with assets are identified in the UI with the **Asset policy tags** name.

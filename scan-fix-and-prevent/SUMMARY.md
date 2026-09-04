@@ -388,10 +388,10 @@
 
 ## Fix
 
-* [AppRisk asset inventory](manage-assets/manage-assets.md)
-  * [Assets inventory tabs](manage-assets/assets-inventory-layouts.md)
-  * [Assets inventory components](manage-assets/assets-inventory-components.md)
-  * [Assets inventory filters](manage-assets/assets-inventory-filters.md)
+* [Manage asset inventory](fix/manage-asset-inventory/README.md)
+  * [Assets inventory tabs](fix/manage-asset-inventory/assets-inventory-layouts.md)
+  * [Assets inventory components](fix/manage-asset-inventory/assets-inventory-components.md)
+  * [Assets inventory filters](fix/manage-asset-inventory/assets-inventory-filters.md)
 * [Container image inventory](manage-assets/container-image-inventory.md)
 * [Configure repository monitoring](manage-assets/configure-repository-monitoring.md)
 * [Prioritize issues for fixing](manage-risk/prioritize-issues-for-fixing/README.md)

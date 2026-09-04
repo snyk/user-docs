@@ -1,6 +1,8 @@
 ---
 nav_context: classic
-description: The Exposure and coverage reports in Snyk Analytics, including the Asset Dashboard, Issues Detail, and Risk Exposure reports
+description: >-
+  The Exposure and coverage reports in Snyk Analytics, including the Asset
+  Dashboard, Issues Detail, and Risk Exposure reports
 ---
 
 # Exposure and coverage reports
@@ -60,7 +62,7 @@ Hover over any column to see how the coverage percentage is calculated.
 
 ### Asset class breakdown
 
-The asset class breakdown widget surfaces the distribution of repositories and container images by [asset class](../../../manage-assets/assets-inventory-components.md#class). Reviewing this widget allows you to determine the percentage of business-critical assets in your inventory and drill down to see the actual assets.
+The asset class breakdown widget surfaces the distribution of repositories and container images by [asset class](../../../fix/manage-asset-inventory/assets-inventory-components.md#class). Reviewing this widget allows you to determine the percentage of business-critical assets in your inventory and drill down to see the actual assets.
 
 {% hint style="info" %}
 **Tips**
@@ -78,13 +80,13 @@ The top 10 technologies widget identifies the leading programming languages and 
 {% hint style="info" %}
 **Tips**
 
-* The technology data is available in the [asset tags](../../../manage-assets/assets-inventory-components.md#tags).
+* The technology data is available in the [asset tags](../../../fix/manage-asset-inventory/assets-inventory-components.md#tags).
 * Click a presented technology to open the inventory page in a new browser tab. This will allow you to review the related repositories in detail.
 {% endhint %}
 
 ### Top 10 package managers breakdown
 
-The top 10 package managers widget allows you to identify the leading package managers in your inventory. The quantities represent assets of package type. A [package asset](../../../manage-assets/assets-inventory-layouts.md#packages) is defined as software or library that is managed by package management systems.
+The top 10 package managers widget allows you to identify the leading package managers in your inventory. The quantities represent assets of package type. A [package asset](../../../fix/manage-asset-inventory/assets-inventory-layouts.md#packages) is defined as software or library that is managed by package management systems.
 
 ### Repository freshness
 

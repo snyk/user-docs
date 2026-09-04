@@ -1,6 +1,6 @@
 ---
-description: How to view dependencies and licenses for your Snyk Projects
 nav_context: new
+description: How to view dependencies and licenses for your Snyk Projects
 ---
 
 # Dependencies and licenses
@@ -27,5 +27,5 @@ In the Snyk 2.0 UI, information about dependencies and licenses is available und
 
 Snyk 2.0 introduces UI enhancements to the platform navigation and is available in Early Access. This is being rolled out gradually, so not all users see the new navigation at the same time.
 
-If you are an existing user, you can switch between the new and classic navigation at any time using the toggle in your user profile menu. For more information, visit [Snyk 2.0 platform improvements](https://app.gitbook.com/s/L7HyJj9FsK1W4pNt8Gzl/snyk-2.0-platform-improvements).
+If you are an existing user, you can switch between the new and classic navigation at any time using the toggle in your user profile menu. For more information, visit [Snyk 2.0 platform improvements](/broken/spaces/L7HyJj9FsK1W4pNt8Gzl/pages/SrUlxzQBndMqThxlcua5).
 {% endhint %}

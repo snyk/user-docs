@@ -1,6 +1,6 @@
 ---
-description: The components of each Snyk assets inventory layout
 nav_context: classic
+description: The components of each Snyk assets inventory layout
 ---
 
 # Assets inventory components
@@ -40,13 +40,13 @@ You can copy the name of an asset or browse the repository. Each asset has a men
 
 Repository assets represent SCM repositories. A repository asset is created by discovering the repositories directly in the SCM, when such integration is configured. Alternatively, a repository asset can be created by scanning a repository, (by Snyk or third-party tools) as long as the scanned code is identified with a specific repository (in Snyk, this means filling in the `gitRemoteURL` parameter).
 
-If you scan the code locally using CLI, with no association to a repository, then a repository asset will not be created. For more details about CLI commands, see [Scanning methods](../scan-with-snyk/snyk-essentials.md#scanning-methods).
+If you scan the code locally using CLI, with no association to a repository, then a repository asset will not be created. For more details about CLI commands, see [Scanning methods](../../scan-with-snyk/snyk-essentials.md#scanning-methods).
 
 ### Container Image assets
 
 You can identify a container image based on the Image ID. If multiple container images have the same Image ID, then only one image asset is generated for that Image ID, enriched with information from all the identified container images for that ID.
 
-Snyk Essentials retrieves all image assets from Snyk Container. Reimport the images to ensure you scan the latest image. If you run a new scan on a Project that contains image assets, it rescans the same image for new vulnerabilities. To identify new image assets, you need to first reimport, and then scan the Project. Check the [Detect application vulnerabilities in container images](../scan-with-snyk/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md) page for more details.
+Snyk Essentials retrieves all image assets from Snyk Container. Reimport the images to ensure you scan the latest image. If you run a new scan on a Project that contains image assets, it rescans the same image for new vulnerabilities. To identify new image assets, you need to first reimport, and then scan the Project. Check the [Detect application vulnerabilities in container images](../../scan-with-snyk/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md) page for more details.
 
 ### Packages
 
@@ -137,14 +137,14 @@ The Controls column displays all of the Snyk products that were executed on a sp
 
 The Controls logos can have one of the following states:
 
-| Logo                                                                       | Description                                                                      |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| <img src="../.gitbook/assets/coverage-controls.png" alt="" data-size="original"> | The Snyk product was executed.                                                   |
-| <img src="../.gitbook/assets/coverage-controls-2.png" alt="" data-size="original"> | The Snyk product was executed but with issues.                                   |
-| <img src="../.gitbook/assets/coverage-controls-3.png" alt="" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
-| <img src="../.gitbook/assets/coverage-controls-4.png" alt="" data-size="original"> | The Snyk product was executed and failed.                                        |
-| <img src="../.gitbook/assets/coverage-controls-5.png" alt="" data-size="original"> | The Snyk product was executed and failed with issues.                            |
-| <img src="../.gitbook/assets/coverage-controls-6.png" alt="" data-size="original"> | The Snyk product was executed and failed due to not being covered by the policy. |
+| Logo                                                                                  | Description                                                                      |
+| ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| <img src="../../.gitbook/assets/coverage-controls.png" alt="" data-size="original">   | The Snyk product was executed.                                                   |
+| <img src="../../.gitbook/assets/coverage-controls-2.png" alt="" data-size="original"> | The Snyk product was executed but with issues.                                   |
+| <img src="../../.gitbook/assets/coverage-controls-3.png" alt="" data-size="original"> | The Snyk product should have been executed but was not executed.                 |
+| <img src="../../.gitbook/assets/coverage-controls-4.png" alt="" data-size="original"> | The Snyk product was executed and failed.                                        |
+| <img src="../../.gitbook/assets/coverage-controls-5.png" alt="" data-size="original"> | The Snyk product was executed and failed with issues.                            |
+| <img src="../../.gitbook/assets/coverage-controls-6.png" alt="" data-size="original"> | The Snyk product was executed and failed due to not being covered by the policy. |
 
 Click a Controls logo to see **Last test** details and the **Issues** count, split by severity. This reflects the most recent time that the asset was scanned by a specific product.
 
@@ -207,7 +207,7 @@ System labels are automatically generated from the SCM repositories. System labe
 
 ### Labeling policy
 
-You can use pre-defined system labels and asset labels to mark the repositories that meet your filter criteria. Check the following [Labeling policy](../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy.md) use case.
+You can use pre-defined system labels and asset labels to mark the repositories that meet your filter criteria. Check the following [Labeling policy](../../manage-risk/policies/assets-policies/use-cases-for-policies/tagging-policy.md) use case.
 
 ### Labeling rules related to metadata
 
@@ -250,9 +250,9 @@ The Risk Factors column lists the potential vulnerabilities and security threats
 
 Here is a list of the available risk factors:
 
-* [Deployed](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-deployed.md)
-* [OS Condition](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-os-condition.md)
-* [Public facing](../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-public-facing.md)
+* [Deployed](../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-deployed.md)
+* [OS Condition](../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-os-condition.md)
+* [Public facing](../../manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors/risk-factor-public-facing.md)
 
 ## Source
 
@@ -299,7 +299,7 @@ The Visibility column lists the visibility status of the repositories as follows
 * **Internal**: Internal repositories specific to GitHub and GitLab.
 * **N/A**
 
-Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../manage-risk/analytics/reports-tab/#snyk-reporting-filters).
+Use this metadata to prioritize risk and apply visibility-based coverage controls. The column is unavailable for image assets and is excluded from [report filters](../../manage-risk/analytics/reports-tab/#snyk-reporting-filters).
 
 ## Actions
 

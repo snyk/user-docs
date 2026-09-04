@@ -1,6 +1,6 @@
 ---
-description: How to use a coverage control policy in Snyk Essentials
 nav_context: classic
+description: How to use a coverage control policy in Snyk Essentials
 ---
 
 # Coverage control policy
@@ -27,4 +27,4 @@ Next, you need to define two actions, one for Snyk Open Source, and one for Snyk
 
     For Snyk Code, scans happen by default once a week, or when changes have been pushed to the monitored branch. The Coverage Control Policy needs to check that a Snyk Code scan occurred for that repository in the last week.
 
-In the Inventory view, any coverage gap is indicated with strikes through the control coverage icon. See more details about each icon on the [Inventory capabilities](../../../../manage-assets/assets-inventory-components.md) page.
+In the Inventory view, any coverage gap is indicated with strikes through the control coverage icon. See more details about each icon on the [Inventory capabilities](../../../../fix/manage-asset-inventory/assets-inventory-components.md) page.
