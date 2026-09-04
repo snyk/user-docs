@@ -28,7 +28,7 @@ Customize the Send Email action to notify you with a link to the assets impacted
 
 This is how your policy should look after all filters and actions are set.
 
-<figure><img src="../../../../.gitbook/assets/assets-policy-setting-notification-policy.png" alt="Assets Policy - Setting up a Notification policy"><figcaption><p>Assets Policy - Setting up a notification policy</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/assets-policy-setting-notification-policy.png" alt="Completed notification policy showing the configured filters and actions"><figcaption><p>Assets Policy - Setting up a notification policy</p></figcaption></figure>
 
 You will receive an email notification after including the **Link to Assets** option in the Body field. You can access the assets from the notification individually, or view them in an aggregated form by clicking the **Click Here** link. The list of assets displayed in the email notification is automatically generated.
 
