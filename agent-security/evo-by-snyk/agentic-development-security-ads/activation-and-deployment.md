@@ -75,11 +75,17 @@ Disabling a product stops it from running but leaves its files on the machine. U
 
 Use the `uninstall` command when you are working on a single machine rather than a fleet.
 
-Pass a component flag to specify what to remove:
+{% hint style="info" %}
+The `uninstall` command lives in the ADS installer, which is not left on the machine if you used the install command on the **Settings** page. The install command on the **Settings** page downloads the installer to a temporary location and removes it once the install finishes, and the installer is not copied into the ADS install directory. The ADS installer is needed to use the `uninstall` command
+{% endhint %}
+
+Run the installer with `uninstall` and pass a component flag to specify what to remove:
 
 ```
-./ads-installer uninstall --tenant-id <TENANT_ID> --push-key <PUSH_KEY> ----<FLAG>
+<PATH_TO_INSTALLER> uninstall --tenant-id <TENANT_ID> --push-key <PUSH_KEY> --<FLAG>
 ```
+
+Replace \<PATH\_TO\_INSTALLER> with the install command from the **Settings** page. It contains the correct installer binary for your operating system and architecture. **Remove** the step at the end of the command that deletes the installer. For Mac OS/ Linux remove `&& rm -f /tmp/snyk-ads-installer-macos-arm64` (this command removal applies to Mac OS/ Linux only)
 
 Replace `<FLAG>` with `--scan`, `--guard`, or `--studio` as shown in the table below.
 
