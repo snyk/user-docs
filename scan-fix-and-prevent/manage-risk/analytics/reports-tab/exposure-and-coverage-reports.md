@@ -164,7 +164,7 @@ The Risk Exposure Report helps AppSec teams make quicker, more informed decision
 
 ### Severity source
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdufjGtE0kED7zHIl_L4jGrLbWkgeFfzbNwzEISsiINoEyWo2mQSnJxEBrzRca5bD1QCz-u60m-CQvDHVC-lx4gYd4LvsDrtTUkMcl6ff8V2q4uc5lUi1S8zAieM5s36JNVFbLU-Q?key=Dqdjzf6y3TJS6QA9IfBneg)
+![](../../../.gitbook/assets/exposure-coverage-report-2.png)
 
 Choose your preferred severity source and automatically update selected severity throughout the report:
 
@@ -176,7 +176,7 @@ The report includes two main sections to provide a comprehensive view of your ri
 
 ### **Risk exposure trends**
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd5HXXMoOzL2GsdBqF8tdO17PhaHx-1GdOdjVLAKpg46xqSMl1ooJB_KoaOkZb61O6Pu44KVI5hYkrn08aLiYfvKbIu0vZIraPlI1t44JcZP49KGbyYczwgn-jbXObBOmx-b_XF?key=Dqdjzf6y3TJS6QA9IfBneg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/exposure-coverage-report-1.png" alt=""><figcaption></figcaption></figure>
 
 This section provides a visual overview of your issues over time. You can view these trends by:
 
