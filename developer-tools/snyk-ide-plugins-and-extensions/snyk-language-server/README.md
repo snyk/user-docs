@@ -1,6 +1,6 @@
 ---
-description: The Snyk Language Server that powers Snyk functionality across supported IDEs
 nav_context: agnostic
+description: The Snyk Language Server that powers Snyk functionality across supported IDEs
 ---
 
 # Snyk Language Server
@@ -38,7 +38,7 @@ You can use the Language Server in the following environments:
 
 Snyk Language Server is nowadays included in the Snyk CLI. The CLI is automatically downloaded only when you use the Snyk IDE plugins.
 
-Please refer to [snyk-cli](../../snyk-cli/ "mention") for installation and manual download instructions.
+Please refer to [overview.md](../../snyk-cli/overview.md "mention") for installation and manual download instructions.
 
 ## Usage of Snyk Language Server
 

@@ -1,11 +1,11 @@
 ---
-description: Open Source Projects that must be built before testing with the Snyk CLI
 nav_context: agnostic
+description: Open Source Projects that must be built before testing with the Snyk CLI
 ---
 
 # Open Source Projects that must be built before testing with the Snyk CLI
 
-For some types of Open Source Projects, you must build the Project before testing it with the [Snyk CLI.](../../)
+For some types of Open Source Projects, you must build the Project before testing it with the [Snyk CLI.](../../overview.md)
 
 Manifests provide some dependency information. However, other dependencies are resolved only after the Project is built. In addition, lockfiles giving dependency information may not be available before the Project is built.
 

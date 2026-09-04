@@ -1,6 +1,6 @@
 ---
-description: A summary of Snyk CLI commands and options
 nav_context: agnostic
+description: A summary of Snyk CLI commands and options
 ---
 
 # CLI commands and options summary
@@ -15,7 +15,7 @@ This page only summarizes the CLI commands and the options for each command. For
 
 ## Description
 
-The Snyk CLI is a build-time tool to find and fix known vulnerabilities in your projects. For a more detailed description of Snyk CLI and Snyk, see [Snyk CLI](./). For an introduction on how to use the Snyk CLI, see [Getting started with the CLI](getting-started-with-the-snyk-cli.md).
+The Snyk CLI is a build-time tool to find and fix known vulnerabilities in your projects. For a more detailed description of Snyk CLI and Snyk, see [Snyk CLI](overview.md). For an introduction on how to use the Snyk CLI, see [Getting started with the CLI](getting-started-with-the-snyk-cli.md).
 
 ## Available CLI commands
 

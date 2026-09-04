@@ -65,7 +65,7 @@ exclude:
 * Snyk Secrets also skips file types that cannot contain readable secrets, such as binaries, archives, media files, fonts, and dependency lockfiles. Snyk skips these regardless of your `.snyk` file.
 {% endhint %}
 
-For the full exclusion pattern syntax and formatting rules, visit [Exclusion syntax of the `.snyk` file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import#exclusion-syntax-of-the-.snyk-file).
+For the full exclusion pattern syntax and formatting rules, visit [Exclusion syntax of the `.snyk` file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/import-project-repository/exclude-directories-and-files-from-project-import#exclusion-syntax-of-the-.snyk-file).
 
 After you add or change the `.snyk` file, Snyk applies the new exclusions on the next scan of the repository. To apply them immediately, push the change to your repository or re-import the Project.
 

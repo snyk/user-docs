@@ -109,7 +109,7 @@ exclude:
 * Wrap any pattern that begins with a special character, such as an asterisk (`*`), in double quotation marks.
 * If Snyk cannot parse a section of the `.snyk` file, it skips that section and applies the remaining sections. If it cannot parse the file at all, the scan continues without the exclusions from that file.
 
-For the full exclusion pattern syntax and formatting rules, see [Exclusion syntax of the `.snyk` file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import#exclusion-syntax-of-the-.snyk-file).
+For the full exclusion pattern syntax and formatting rules, see [Exclusion syntax of the `.snyk` file](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-projects/import-project-repository/exclude-directories-and-files-from-project-import#exclusion-syntax-of-the-.snyk-file).
 {% endhint %}
 
 ### Exclude paths for a single scan

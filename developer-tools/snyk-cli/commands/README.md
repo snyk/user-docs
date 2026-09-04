@@ -64,7 +64,7 @@ Generates an AIBOM for a local software project written in Python, Java, JavaScr
 
 Generates an AI-BOM and tests it against your tenant's policies, returning all resulting issues.
 
-### [`snyk cos`](../snyk-cli/commands/cos.md)
+### [`snyk cos`](cos.md)
 
 These commands manage targets, run scans, and review findings for Snyk AI Pentesting, to find security vulnerabilities in your deployed applications.
 

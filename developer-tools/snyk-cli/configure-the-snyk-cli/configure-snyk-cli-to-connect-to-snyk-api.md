@@ -1,6 +1,8 @@
 ---
-description: How to configure how the Snyk CLI connects to the Snyk API, including the platform URL and region
 nav_context: agnostic
+description: >-
+  How to configure how the Snyk CLI connects to the Snyk API, including the
+  platform URL and region
 ---
 
 # Configure Snyk CLI to connect to Snyk API
@@ -19,7 +21,7 @@ If you set this variable to the value of `0`, API and CLI requests aimed at `htt
 
 ## Configure CLI Analytics
 
-Learn more in the [Snyk CLI analytics](../../../snyk-cli/snyk-cli-analytics.md) documentation.
+Learn more in the [Snyk CLI analytics](../snyk-cli-analytics.md) documentation.
 
 `SNYK_DISABLE_ANALYTICS=1`
 
@@ -29,9 +31,9 @@ Specifying this variable disables all Snyk CLI analytics.
 
 `SNYK_TOKEN`
 
-Specifying this variable allows you to override the token that may be available in your Snyk configuration settings (`~/.config/configstore/snyk.json`). Use `SNYK_TOKEN` in a CI/CD environment. After setting `SNYK_TOKEN` you can [get started](../../../snyk-cli/getting-started-with-the-snyk-cli.md) using the CLI.
+Specifying this variable allows you to override the token that may be available in your Snyk configuration settings (`~/.config/configstore/snyk.json`). Use `SNYK_TOKEN` in a CI/CD environment. After setting `SNYK_TOKEN` you can [get started](../getting-started-with-the-snyk-cli.md) using the CLI.
 
-For information on how to get your account token see [Authenticate the CLI with your account](../../../snyk-cli/authenticate-to-use-the-cli.md). You can also use a service account to authenticate; for more information see [Service accounts](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts). For additional information, see [Authentication for third-party tools](../../../implementation-and-setup/enterprise-setup/authentication-for-third-party-tools.md).
+For information on how to get your account token see [Authenticate the CLI with your account](../authenticate-to-use-the-cli.md). You can also use a service account to authenticate; for more information see [Service accounts](https://app.gitbook.com/s/IgtgtomLQ2TUgSKOMSAm/service-accounts/service-accounts). For additional information, see [Authentication for third-party tools](../../implementation-and-setup/enterprise-setup/authentication-for-third-party-tools.md).
 
 `SNYK_OAUTH_TOKEN=<OAuth token>`
 

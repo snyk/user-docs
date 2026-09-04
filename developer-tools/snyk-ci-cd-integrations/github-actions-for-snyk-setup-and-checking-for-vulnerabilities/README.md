@@ -1,13 +1,15 @@
 ---
-description: How Snyk GitHub Actions set up Snyk and check for vulnerabilities in your pipeline
 nav_context: classic
+description: >-
+  How Snyk GitHub Actions set up Snyk and check for vulnerabilities in your
+  pipeline
 ---
 
 # GitHub actions for Snyk setup and checking for vulnerabilities
 
 ## Overview of GitHub Actions Integration
 
-Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using Snyk to check for vulnerabilities in your GitHub projects. These actions are based on the [Snyk CLI](../../snyk-cli/), and you can use [all of its options and capabilities](../../snyk-cli/cli-commands-and-options-summary.md) with the `args` in the [properties](./#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
+Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using Snyk to check for vulnerabilities in your GitHub projects. These actions are based on the [Snyk CLI](../../snyk-cli/overview.md), and you can use [all of its options and capabilities](../../snyk-cli/cli-commands-and-options-summary.md) with the `args` in the [properties](./#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
 
 There is also a [Snyk Setup Action](snyk-setup-action.md).
 

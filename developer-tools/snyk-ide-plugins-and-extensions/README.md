@@ -1,6 +1,8 @@
 ---
-description: Snyk IDE plugins and extensions for scanning as you develop, including custom endpoint configuration
 nav_context: agnostic
+description: >-
+  Snyk IDE plugins and extensions for scanning as you develop, including custom
+  endpoint configuration
 ---
 
 # Snyk IDE plugins and extensions
@@ -14,7 +16,7 @@ Snyk Security plugins and extensions find and fix security vulnerabilities and i
 
 The results of a vulnerability scan show issues with context, impact, and fix guidance in your IDE, where the fix for the vulnerability can be done right in the IDE itself.
 
-The Snyk IDE plugins and extensions rely on the [Snyk CLI](../snyk-cli/) to perform many functions. For details, refer to the documentation for each IDE. When you are troubleshooting, it is always helpful to run the CLI for the same action with the debug option, `-d`.
+The Snyk IDE plugins and extensions rely on the [Snyk CLI](../snyk-cli/overview.md) to perform many functions. For details, refer to the documentation for each IDE. When you are troubleshooting, it is always helpful to run the CLI for the same action with the debug option, `-d`.
 
 The Snyk IDE plugins and extensions also rely on the [Snyk Vulnerability Database](https://security.snyk.io/). For more information, see the [Snyk Vulnerability Database](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database).
 
@@ -34,13 +36,13 @@ Snyk also offers a [Language Server](snyk-language-server/).
 
 The following summarizes the versions of each IDE supported by the Snyk plugin or extension. Snyk recommends always using the latest version of the IDE plugin or extension.
 
-| Snyk plugin or extension     | IDE version supported                                                                                                                                                                                                                                                             |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Visual Studio Code extension | The latest version of the Snyk Visual Studio Code extension supports use with Visual Studio Code version 1.76.0 and later.                                                                                                                                                        |
-| JetBrains plugin             | <p>The latest Snyk JetBrains plugin supports use with all JetBrains IDEs 2024.2 or newer.</p><p>Older plugin versions may support use with JetBrains IDEs 2020.3 or newer.</p>                                                                                                    |
+| Snyk plugin or extension     | IDE version supported                                                                                                                                                                                                                                |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Visual Studio Code extension | The latest version of the Snyk Visual Studio Code extension supports use with Visual Studio Code version 1.76.0 and later.                                                                                                                           |
+| JetBrains plugin             | <p>The latest Snyk JetBrains plugin supports use with all JetBrains IDEs 2024.2 or newer.</p><p>Older plugin versions may support use with JetBrains IDEs 2020.3 or newer.</p>                                                                       |
 | Visual Studio extension      | <p>The latest version of the Snyk Visual Studio extension supports use with Visual Studio 2022 (version 17.5 or later) and newer Visual Studio releases.</p><p>Older extension versions may support use with Visual Studio 2015, 2017, and 2019.</p> |
-| Eclipse plugin               | <p>The latest Snyk Eclipse plugin supports use with Eclipse 2024-03 or newer.</p><p>Older plugin versions may support use with Eclipse 2023-03 or newer.</p>                                                                                                                      |
-| Cursor extension             | See the [Visual Studio Code extension](visual-studio-code-extension/) page for more details.                                                                                                                                                                                      |
-| Windsurf extension           | See the [Visual Studio Code extension](visual-studio-code-extension/) page for more details.                                                                                                                                                                                      |
+| Eclipse plugin               | <p>The latest Snyk Eclipse plugin supports use with Eclipse 2024-03 or newer.</p><p>Older plugin versions may support use with Eclipse 2023-03 or newer.</p>                                                                                         |
+| Cursor extension             | See the [Visual Studio Code extension](visual-studio-code-extension/) page for more details.                                                                                                                                                         |
+| Windsurf extension           | See the [Visual Studio Code extension](visual-studio-code-extension/) page for more details.                                                                                                                                                         |
 
 To learn more, see the Snyk Learn lessons about [Using Snyk in an IDE](https://learn.snyk.io/lesson/snyk-in-an-ide/?ecosystem=general).
