@@ -74,6 +74,14 @@ Partial support includes:
 
 Snyk continuously expands its framework coverage and improves analysis accuracy.
 
+### Template file analysis
+
+Snyk Code analyzes template files together with the application code that renders them. Data that reaches a template from your application code is followed into the template, so a cross-site scripting issue that becomes exploitable only where the template writes its output is reported. The reported data flow spans both the application code and the template.
+
+Snyk Code takes the escaping behavior of the template engine into account. Output written through the default escaping of the engine is not reported. Output written through a construct that bypasses escaping, such as a raw or unescaped directive, is treated as a sink.
+
+Template file analysis applies to the template engines that Snyk Code supports, and Snyk is expanding that coverage. If a template engine you use is not yet covered, [contact Snyk Support](https://support.snyk.io).
+
 ### How Snyk Code analysis works
 
 Snyk scans your codebase following this sequence:

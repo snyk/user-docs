@@ -11,6 +11,21 @@ coverY: 0
 
 The most recent updates include significant changes to the user docs, such as features added or removed, structural changes that affect how you find relevant information, and other improvements to enhance your interaction with the Snyk knowledge base.
 
+## September 2026
+
+### Snyk Code
+
+* Template files are analyzed together with the application code that renders them, so cross-site scripting that becomes exploitable where the template writes its output is reported. Visit [Template file analysis](https://docs.snyk.io/supported-languages/technical-specifications-and-guidance#template-file-analysis) for more details.
+* Java analysis now covers Java SE 25. Visit [Java and Kotlin](https://docs.snyk.io/supported-languages/supported-languages-list/java-and-kotlin) for more details.
+* Java framework and library coverage was added or improved for Apache CXF including its HTTP transport, OkHttp, Spring Security OAuth2 Client, Google OAuth Client, Google API Client, MSAL4J, Apache Commons Collections, Flyway, and JAXB. SAP Commerce (Hybris) FlexibleSearch queries are analyzed for SQL injection, with parameter binding recognized as safe. Visit [Java and Kotlin](https://docs.snyk.io/supported-languages/supported-languages-list/java-and-kotlin) for more details.
+* LangChain LiteLLM is recognized as a source of untrusted data in Python. Visit [Python](https://docs.snyk.io/supported-languages/supported-languages-list/python) for more details.
+* Rule coverage was extended for Java, Kotlin, C#, Go, JavaScript, and PHP, with additional sources, sinks, and unsafe API patterns, in particular for cryptography. Nothing needs to be enabled and no configuration changes. Expect additional findings in code that was already being scanned. Visit [Snyk Code security rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules) for more details.
+* From September 14, 2026, `.gitignore` rules exclude only untracked files, matching the behavior of Git itself. Files committed to the repository are analyzed even when a `.gitignore` rule matches them, which increases the number of files in scope and therefore the number of findings. To get this behavior in CLI scans, upgrade to Snyk CLI 1.1307.0 or later. Visit [Snyk Code](https://docs.snyk.io/scan-with-snyk/snyk-code) for more details.
+
+### Snyk Secrets
+
+* From September 14, 2026, secrets are detected in files committed to the repository even when a `.gitignore` rule matches them. Visit [Snyk Code](https://docs.snyk.io/scan-with-snyk/snyk-code) for more details.
+
 ## August 2026
 
 ### Snyk Agent Security
