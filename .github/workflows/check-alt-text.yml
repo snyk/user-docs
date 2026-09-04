@@ -1,0 +1,68 @@
+name: Check alt text
+
+on:
+  pull_request:
+    paths:
+      - '**.md'
+
+permissions:
+  contents: read
+
+jobs:
+  check-alt-text:
+    name: alt-text
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check images changed in this pull request
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          # Only Markdown files added or modified by this pull request.
+          mapfile -t changed < <(
+            git diff --name-only --diff-filter=AM "$BASE_SHA" "$HEAD_SHA" -- '*.md'
+          )
+
+          if [ "${#changed[@]}" -eq 0 ]; then
+            echo "No Markdown files changed."
+            exit 0
+          fi
+
+          if bash tools/alt-text-check/check-alt-text.sh "${changed[@]}" > result.txt 2>&1; then
+            cat result.txt
+            echo "### Alt text: all images have alt text" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          cat result.txt
+
+          # Report each finding as a warning annotation on the changed line.
+          while IFS= read -r finding; do
+            case "$finding" in
+              *:*:\ image\ is\ missing\ alt\ text:*) ;;
+              *) continue ;;
+            esac
+            file=${finding%%:*}
+            rest=${finding#*:}
+            line=${rest%%:*}
+            echo "::warning file=${file},line=${line}::Image is missing alt text. Add a short description of what the image shows."
+          done < result.txt
+
+          {
+            echo "### Alt text"
+            echo
+            echo "Images in this pull request are missing alt text:"
+            echo
+            echo '```'
+            cat result.txt
+            echo '```'
+            echo
+            echo "Alt text is required for accessibility. Add a short description of what each image shows."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          # Warn only: a missing description does not block the merge.
+          exit 0
