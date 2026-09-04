@@ -10,6 +10,8 @@
 #   check-alt-text.sh [file ...]   Check the named files
 #   check-alt-text.sh              Check every tracked Markdown file
 #
+# Generated pages are skipped; see is_excluded below.
+#
 # Exits 0 when no violations are found, 1 otherwise. The GitHub workflow that
 # calls this script does not fail the build on exit 1; it reports the findings
 # as warnings. See .github/workflows/check-alt-text.yml.
@@ -24,14 +26,34 @@ fi
 
 [ "${#files[@]}" -gt 0 ] || { printf 'No Markdown files to check.\n'; exit 0; }
 
+# Paths this check skips. These pages are not hand-authored prose:
+# the API reference is generated from the OpenAPI spec by
+# tools/api-docs-generator (see its config.yml apiReferencePath), and the CLI
+# help pages mirror the output of snyk --help. A writer cannot act on an alt
+# text finding in either, so reporting one is noise.
+is_excluded() {
+  case "$1" in
+    node_modules/*|*/node_modules/*) return 0 ;;
+    developer-tools/snyk-api/reference/*) return 0 ;;
+    developer-tools/snyk-cli/commands/*) return 0 ;;
+  esac
+  return 1
+}
+
 existing=()
+skipped=0
 for file in "${files[@]}"; do
   [ -f "$file" ] || continue
-  case "$file" in
-    node_modules/*|*/node_modules/*) continue ;;
-  esac
+  if is_excluded "$file"; then
+    skipped=$((skipped + 1))
+    continue
+  fi
   existing+=("$file")
 done
+
+if [ "$skipped" -gt 0 ]; then
+  printf 'Skipped %s generated file(s): API reference and CLI help.\n' "$skipped"
+fi
 
 [ "${#existing[@]}" -gt 0 ] || { printf 'No Markdown files to check.\n'; exit 0; }
 
