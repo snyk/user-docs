@@ -1,9 +1,9 @@
 ---
-description: How to use the Issues UI with Snyk AppRisk
+description: How to use the Issues UI with Snyk Essentials
 nav_context: agnostic
 ---
 
-# Using the Issues UI with Snyk AppRisk
+# Using the Issues UI with Snyk Essentials
 
 The following pages provide information and instructions on how to use the Issues UI.
 
