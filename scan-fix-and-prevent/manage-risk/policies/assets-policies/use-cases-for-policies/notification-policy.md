@@ -24,7 +24,7 @@ If you want to set a **Send Slack Message** action, then you can generate the Sl
 
 Customize the Send Email action to notify you with a link to the assets impacted by the set policy. You can do this by typing "/" inside the **Body** field of the **Send Email** action and selecting **Link to Assets**. After you save the policy, every notification received will list all the assets impacted by the policy.
 
-<figure><img src="../../../../.gitbook/assets/assets-policy-set-links-assets-option-send-email-action.png" alt="Assets Policy - Set up the Links to Assets option from the Send Email action"><figcaption><p>Assets Policy - Set up the Links to Assets option from the Send Email action</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/assets-policy-set-links-assets-option-send-email-action.png" alt="Send Email action with the Link to Assets option inserted into the Body field"><figcaption><p>Assets Policy - Set up the Links to Assets option from the Send Email action</p></figcaption></figure>
 
 This is how your policy should look after all filters and actions are set.
 
