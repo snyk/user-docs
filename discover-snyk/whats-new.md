@@ -21,8 +21,8 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Snyk CLI
 
 * Secrets scanning in the Snyk CLI and on SCM imports now honors the `global` and `secrets` sections of the `.snyk` file, adding permanent path exclusions alongside the one-off `--exclude` flag. Snyk never scans excluded paths, so they do not appear as ignored issues. See [Secrets scanning in the Snyk CLI](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-secrets/secrets-scanning-in-the-snyk-cli).
-* `snyk secrets test` is now in the CLI command reference, with its exit codes and the `--include-ignores`, `--report`, and `--target-name` options. See [snyk secrets test](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/cli-commands-and-options-summary#snyk-secrets-test).
-* `snyk aibom` documentation now covers the `--enrich` flag. See [snyk aibom](https://docs.snyk.io/developer-tools/snyk-cli/snyk-cli/commands#snyk-aibom).
+* `snyk secrets test` is now in the CLI command reference, with its exit codes and the `--include-ignores`, `--report`, and `--target-name` options. See [snyk secrets test](https://docs.snyk.io/developer-tools/snyk-cli/cli-commands-and-options-summary#snyk-secrets-test).
+* `snyk aibom` documentation now covers the `--enrich` flag. See [snyk aibom](https://docs.snyk.io/developer-tools/snyk-cli/commands#snyk-aibom).
 * `snyk fix` documentation now describes interactive fix application and an auto-approve option for `snyk fix --agentic`. Visit [Remediation Agent](https://app.gitbook.com/s/BJO0IZx7zB6bOkotxQP2/fix/remediation-agent).
 
 ### Snyk Code
@@ -52,25 +52,25 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk Code
 
-* OWASP and CWE mappings expanded, and the Snyk Code security rule pages now map each rule to the OWASP Top 10 2025, OWASP API Top 10 (2023), and OWASP Mobile Top 10 (2024), and note CWE Top 25 (MITRE) inclusion. Visit [Snyk Code security rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules) for more details.
-* Rule Extensions is now GA, and impact testing is available in the Snyk Web UI, in addition to the API. Visit [Rule Extensions](https://docs.snyk.io/scan-with-snyk/snyk-code/rule-extensions) for more details.
+* OWASP and CWE mappings expanded, and the Snyk Code security rule pages now map each rule to the OWASP Top 10 2025, OWASP API Top 10 (2023), and OWASP Mobile Top 10 (2024), and note CWE Top 25 (MITRE) inclusion. Visit [Snyk Code security rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules) for more details.
+* Rule Extensions is now GA, and impact testing is available in the Snyk Web UI, in addition to the API. Visit [Rule Extensions](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/rule-extensions) for more details.
 
 ### Snyk Secrets
 
 * Snyk Secrets is now GA, with documentation across the Snyk CLI, SCM integrations, and the VS Code, Visual Studio, Eclipse, and JetBrains IDE plugins. Visit [Secrets scanning in the SCM](https://docs.snyk.io/developer-tools/integrations/scm-integrations/secrets-scanning-in-the-scm) for more details.
-* The `snyk secrets test` command is now available for scanning secrets from the command line. Visit [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/secrets-scanning-in-the-snyk-cli) for more details.
+* The `snyk secrets test` command is now available for scanning secrets from the command line. Visit [Secrets scanning in the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-secrets/secrets-scanning-in-the-snyk-cli) for more details.
 
 ### Snyk API & Web
 
-* Bruno collections are now GA. You can now create an API target from a Bruno collection and configure its authentication. Visit [Configure an API target with a Bruno collection](https://docs.snyk.io/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/configure-an-api-target-with-a-bruno-collection) for more details.
-* Automated target authentication configuration is now documented on a dedicated page. Visit [Automate authentication configuration](https://docs.snyk.io/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/automate-authentication-configuration) for more details.
+* Bruno collections are now GA. You can now create an API target from a Bruno collection and configure its authentication. Visit [Configure an API target with a Bruno collection](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-api-targets/configure-an-api-target-with-a-bruno-collection) for more details.
+* Automated target authentication configuration is now documented on a dedicated page. Visit [Automate authentication configuration](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web/configure-targets/configure-authentication/automate-authentication-configuration) for more details.
 
 ### Other updates
 
 * Unified IDE configuration is now GA across the Snyk IDE plugins. Visit [Unified IDE configuration dialog](https://docs.snyk.io/developer-tools/integrations/snyk-ide-plugins-and-extensions/unified-ide-configuration-dialog) for more details.
-* Snyk Container now reports vulnerabilities in the Go standard library, identified from the Go version recorded in the binary. Visit [Application vulnerabilities in Snyk Container and Snyk Open Source](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works/application-vulnerabilities-in-snyk-container-and-snyk-open-source) for more details.
-* Notification emails for new vulnerabilities are now off by default, and a new section documents notification precedence rules. Visit [Manage notifications](https://docs.snyk.io/platform-administration/snyk-platform-administration/manage-notifications) for more details.
-* Snowflake Data Share added two fields to the prevention events dataset, `finding_branch_key` and `finding_asset_key`. Visit [Data share data dictionary](https://docs.snyk.io/manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary) for more details.
+* Snyk Container now reports vulnerabilities in the Go standard library, identified from the Go version recorded in the binary. Visit [Application vulnerabilities in Snyk Container and Snyk Open Source](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/how-snyk-container-works/application-vulnerabilities-in-snyk-container-and-snyk-open-source) for more details.
+* Notification emails for new vulnerabilities are now off by default, and a new section documents notification precedence rules. Visit [Manage notifications](https://docs.snyk.io/platform-administration/snyk-hierarchy/manage-notifications) for more details.
+* Snowflake Data Share added two fields to the prevention events dataset, `finding_branch_key` and `finding_asset_key`. Visit [Data share data dictionary](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary) for more details.
 
 ## June 2026
 
@@ -79,47 +79,47 @@ The most recent updates include significant changes to the user docs, such as fe
 * Project tags can now be set from the command line: the `snyk code test` command documents the new `--project-tags=<TAG>[,<TAG>...]` option, used with `--report` to apply comma-separated `key=value` tags (set `--project-tags=` to clear them). Visit [snyk code test](https://docs.snyk.io/developer-tools/snyk-cli/commands/code-test) for more details.
 * AI-BOM language support has expanded: the `snyk aibom` command now generates a CycloneDX v1.6 AI-BOM for Projects written in Python, Java, JavaScript, or Go, up from Python only. Visit [snyk aibom](https://docs.snyk.io/developer-tools/snyk-cli/commands/aibom) for more details.
 * Upgrading is now documented on a dedicated page: the Snyk CLI docs add an "Upgrade the Snyk CLI" page covering how to update existing installations. Visit [Upgrade the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/upgrade-the-snyk-cli) for more details.
-* Standalone installation instructions were improved to clarify how to download and install the CLI binary directly. Visit [Install or update the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-or-update-the-snyk-cli) for more details.
+* Standalone installation instructions were improved to clarify how to download and install the CLI binary directly. Visit [Install or update the Snyk CLI](https://docs.snyk.io/developer-tools/snyk-cli/install-the-snyk-cli) for more details.
 
 ### Snyk Container
 
-* Alpine 3.24 is now listed among the operating system distributions supported by Snyk Container. Visit [Operating system distributions supported by Snyk Container](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container) for more details.
-* OpenJDK coverage improved: the "How Snyk Container works" documentation removes the previous openjdk8 limitation. Visit [How Snyk Container works](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works) for more details.
+* Alpine 3.24 is now listed among the operating system distributions supported by Snyk Container. Visit [Operating system distributions supported by Snyk Container](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container) for more details.
+* OpenJDK coverage improved: the "How Snyk Container works" documentation removes the previous openjdk8 limitation. Visit [How Snyk Container works](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container/how-snyk-container-works) for more details.
 
 ### Snyk Open Source
 
 * uv support was added: Snyk documents source-control-management (SCM) support for the Python uv package manager, available in Early Access. Visit [Snyk for Python](https://docs.snyk.io/supported-languages/supported-languages-list/python).
 * Go private dependencies are now documented: the Go language page adds setup guidance for scanning Projects that use private modules. Visit [Snyk for Go](https://docs.snyk.io/supported-languages/supported-languages-list/go) for more details.
-* Package repository integrations expanded for Go: Snyk adds new setup pages for the Nexus and Artifactory repository managers with Go. Visit [Package repository integrations](https://docs.snyk.io/scan-with-snyk/snyk-open-source/package-repository-integrations) for more details.
+* Package repository integrations expanded for Go: Snyk adds new setup pages for the Nexus and Artifactory repository managers with Go. Visit [Package repository integrations](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-open-source/package-repository-integrations) for more details.
 
 ### Snyk API & Web
 
-* Snyk API & Web (DAST) documentation is now live at docs.snyk.io, featuring a new overview that describes the product for dynamic application and API security testing. Visit [Overview of Snyk API & Web](https://docs.snyk.io/scan-with-snyk/snyk-api-web/overview-snyk-api-web).
-* Getting-started content was published for the product, including setup pages for adding users and enabling two-factor authentication. Visit [Snyk API & Web](https://docs.snyk.io/scan-with-snyk/snyk-api-web/overview-snyk-api-web) for more details.
+* Snyk API & Web (DAST) documentation is now live at docs.snyk.io, featuring a new overview that describes the product for dynamic application and API security testing. Visit [Overview of Snyk API & Web](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web).
+* Getting-started content was published for the product, including setup pages for adding users and enabling two-factor authentication. Visit [Snyk API & Web](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-api-web) for more details.
 
 ### Other updates
 
 * Plan and billing information is now documented in a new tenant administration page that describes plan details and billing. Visit [Plan and billing](https://docs.snyk.io/platform-administration/snyk-hierarchy/tenant/plan-and-billing) for more details.
-* SSO custom mapping assertions documentation was updated for single sign-on configuration. Visit [Custom mapping](https://docs.snyk.io/platform-administration/implementation-and-setup/enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/custom-mapping) for more details.
+* SSO custom mapping assertions documentation was updated for single sign-on configuration. Visit [Custom mapping](https://docs.snyk.io/platform-administration/user-management/single-sign-on-sso-for-authentication-to-snyk/custom-mapping) for more details.
 * Export API added a prevention events dataset, with new columns and filters documented for exporting prevention data. Visit [Export API specifications, columns, and filters](https://docs.snyk.io/developer-tools/snyk-api/using-specific-snyk-apis/export-api-specifications-columns-and-filters) for more details.
-* Snowflake data share added prevention events to the data-share data dictionary. Visit [Data share data dictionary](https://docs.snyk.io/manage-risk/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary) for more details.
-* Prevention reports documentation was published in Early Access under the Analytics Reports tab. Visit [Prevention reports](https://docs.snyk.io/manage-risk/analytics/reports-tab/prevention-reports) for more details.
-* Agent Fix guidance was updated on the page for fixing code vulnerabilities automatically. Visit [Fix code vulnerabilities automatically](https://docs.snyk.io/scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically) for more details.
-* Repo Content Sync documentation was updated for Project repositories. Visit [Snyk Repo Content Sync](https://docs.snyk.io/scan-with-snyk/project-repositories/snyk-repo-content-sync) for more details.
-* Bitbucket for Snyk Essentials group-level integration documentation was updated. Visit [Bitbucket for Snyk Essentials](https://docs.snyk.io/developer-tools/scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials) for more details.
+* Snowflake data share added prevention events to the data-share data dictionary. Visit [Data share data dictionary](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/reporting-and-bi-integrations-snowflake-data-share/data-share-data-dictionary) for more details.
+* Prevention reports documentation was published in Early Access under the Analytics Reports tab. Visit [Prevention reports](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/prevention-reports) for more details.
+* Agent Fix guidance was updated on the page for fixing code vulnerabilities automatically. Visit [Fix code vulnerabilities automatically](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically) for more details.
+* Repo Content Sync documentation was updated for Project repositories. Visit [Snyk Repo Content Sync](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-projects/import-project-repository/snyk-repo-content-sync) for more details.
+* Bitbucket for Snyk Essentials group-level integration documentation was updated. Visit [Bitbucket for Snyk Essentials](https://docs.snyk.io/developer-tools/integrations/scm-integrations/group-level-integrations/bitbucket-for-snyk-essentials) for more details.
 * Snyk Agent Red Teaming references were removed across the docs as the feature was retired.
 
 ## May 2026
 
 ### Snyk Analytics
 
-* The [Pull request checks usage and performance report](https://docs.snyk.io/manage-risk/analytics/reports-tab/prevention-reports#pull-request-checks-usage-and-performance-report) is now in GA for all plans, and PR check data is now available through the [Export API](https://docs.snyk.io/snyk-api/reference/export).
-* The [Zero-Day report](https://docs.snyk.io/manage-risk/analytics/reports-tab/remediation-reports#zero-day-report) now documents the Active security incident assessment banner, which surfaces assets needing triage, assets cleared, and the affected open source packages during a high-severity zero-day event.
+* The [Pull request checks usage and performance report](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/prevention-reports#pull-request-checks-usage-and-performance-report) is now in GA for all plans, and PR check data is now available through the [Export API](https://docs.snyk.io/developer-tools/snyk-api/reference/export).
+* The [Zero-Day report](https://docs.snyk.io/scan-fix-and-prevent/prevent/analytics/reports-tab/remediation-reports#zero-day-report) now documents the Active security incident assessment banner, which surfaces assets needing triage, assets cleared, and the affected open source packages during a high-severity zero-day event.
 
 ### Snyk CLI
 
 * The latest Snyk CLI version is [v1.1304.0](https://github.com/snyk/cli/releases/tag/v1.1304.0).
-* Added a new page for [CLI support for uv](https://docs.snyk.io/supported-languages/supported-languages-list/python/cli-support-for-uv), documenting Early Access support for the uv Python package manager across snyk test, snyk monitor, and snyk sbom, and extending coverage to Snyk IDE extensions, the Snyk MCP server, and Snyk GitHub Actions.
+* Added a new page for [CLI support for uv](https://docs.snyk.io/supported-languages/supported-languages-list/python/support-for-uv), documenting Early Access support for the uv Python package manager across snyk test, snyk monitor, and snyk sbom, and extending coverage to Snyk IDE extensions, the Snyk MCP server, and Snyk GitHub Actions.
 * The [snyk sbom](https://docs.snyk.io/developer-tools/snyk-cli/commands/sbom) command page now documents the --allow-incomplete-sbom flag, which generates an SBOM even when individual Projects fail to resolve.
 * The [environment variables page](https://docs.snyk.io/developer-tools/snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli) has been updated to include SNYK\_REQUEST\_CONCURRENCY, which controls parallel dependency requests in [container monitor](https://docs.snyk.io/developer-tools/snyk-cli/commands/container-monitor).
 
@@ -130,10 +130,10 @@ The most recent updates include significant changes to the user docs, such as fe
 
 #### Other updates
 
-* The [Snyk Code security rules](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules) section has been updated with new coverage for .NET: TLS protocol misconfiguration ([CWE-326](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules)) across common .NET HTTP and network stacks, and broader insecure cipher detection ([CWE-327](https://docs.snyk.io/scan-with-snyk/snyk-code/snyk-code-security-rules)) for C# and VB, including third-party support through BouncyCastle.
-* [Snyk Container](https://docs.snyk.io/scan-with-snyk/snyk-container) now supports extended Java runtime binary scanning in container test and container monitor.
-* Added documentation for automatic closure of obsolete Fix PRs, now in Early Access through Snyk Preview. Snyk closes Fix PRs when the targeted vulnerabilities are no longer present in your Project, whether resolved by a manual fix, a removed dependency, or a transitive update. Snyk closes up to five PRs per Project each day. See [Snyk pull or merge requests](https://docs.snyk.io/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests).
-* The [snyk\_package\_health\_check](https://docs.snyk.io/integrations/snyk-studio-agentic-integrations/getting-started-with-snyk-studio#configure-the-snyk-mcp-profile) directive is now in General Availability and is enabled by default in the Full MCP profile. The docs now reflect supported ecosystems: npm, PyPI, Maven, NuGet, and Go.
+* The [Snyk Code security rules](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules) section has been updated with new coverage for .NET: TLS protocol misconfiguration ([CWE-326](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules)) across common .NET HTTP and network stacks, and broader insecure cipher detection ([CWE-327](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-code/snyk-code-security-rules)) for C# and VB, including third-party support through BouncyCastle.
+* [Snyk Container](https://docs.snyk.io/scan-fix-and-prevent/scan-with-snyk/snyk-container) now supports extended Java runtime binary scanning in container test and container monitor.
+* Added documentation for automatic closure of obsolete Fix PRs, now in Early Access through Snyk Preview. Snyk closes Fix PRs when the targeted vulnerabilities are no longer present in your Project, whether resolved by a manual fix, a removed dependency, or a transitive update. Snyk closes up to five PRs per Project each day. See [Snyk pull or merge requests](https://docs.snyk.io/scan-fix-and-prevent/fix/snyk-pull-or-merge-requests).
+* The [snyk\_package\_health\_check](https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/getting-started-with-snyk-studio#configure-the-snyk-mcp-profile) directive is now in General Availability and is enabled by default in the Full MCP profile. The docs now reflect supported ecosystems: npm, PyPI, Maven, NuGet, and Go.
 * Snyk API & Web documentation now covers native GraphQL scanning, including schema ingestion through a URL, file upload, or introspection endpoint, and new GraphQL-specific authentication options.
 * Snyk API & Web compliance reporting now supports the OWASP Top 10:2025 standard, in addition to OWASP Top 10:2021.
 
@@ -196,7 +196,7 @@ The most recent updates include significant changes to the user docs, such as fe
 ### Snyk CLI
 
 * [Container SBOM](https://app.gitbook.com/s/IEEjSXQQu36y0vmFV8zf/snyk-cli/snyk-cli/commands/container-sbom) has been updated with additional options.
-* The Snyk CLI latest release version is [v1.1303.0](https://github.com/snyk/cli/releases/tag/v1.1303.1).
+* The Snyk CLI latest release version is [v1.1303.0](https://github.com/snyk/cli/releases/tag/v1.1303.0).
 
 ### Snyk Open Source
 
