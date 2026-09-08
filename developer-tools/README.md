@@ -69,4 +69,3 @@ For Snyk Essentials-specific integration availability, sync times, and connectio
 ## AI-assisted development
 
 To secure AI coding assistants and agentic workflows, see the [Agent security](https://app.gitbook.com/s/N5N885PkllOWeBmgm3Bp/) section — it covers Snyk Studio and the Snyk MCP Server.
-</content>
