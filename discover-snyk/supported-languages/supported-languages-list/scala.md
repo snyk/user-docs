@@ -57,6 +57,21 @@ The **Snyk Fix PR** feature is not available for Swift and Objective-C. This mea
 * "**Fixed in" available** is set to **Yes.**
 {% endhint %}
 
+### Template file analysis
+
+Snyk Code parses template files and follows data from your application code into the template, so a cross-site scripting vulnerability that becomes exploitable only where the template renders its output is reported. The reported data flow runs from the application code through to the template. Analysis previously stopped at the template boundary.
+
+For Scala, Snyk Code supports the following template engines:
+
+* FreeMarker
+* Handlebars
+* Mustache
+* Pug
+* Thymeleaf
+* Velocity
+
+For file extensions and the full set of supported language and template engine combinations, visit [Template file analysis](../technical-specifications-and-guidance.md#template-file-analysis).
+
 ## Scala for Snyk Open Source
 
 For Scala with Snyk Open Source, the following file format is supported: `build.sbt`

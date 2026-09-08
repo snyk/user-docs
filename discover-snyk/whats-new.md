@@ -13,7 +13,7 @@ The most recent updates include significant changes to the user docs, such as fe
 
 ### Snyk Code
 
-* Template files are analyzed together with the application code that renders them, so cross-site scripting that becomes exploitable where the template writes its output is reported. Every template engine Snyk Code supports is analyzed in every language Snyk Code supports. Visit [Template file analysis](https://docs.snyk.io/supported-languages/technical-specifications-and-guidance#template-file-analysis) for more details.
+* Template files are analyzed together with the application code that renders them, so cross-site scripting that becomes exploitable where the template writes its output is reported. Each supported template engine is analyzed in the languages it is supported with. Visit [Template file analysis](https://docs.snyk.io/supported-languages/technical-specifications-and-guidance#template-file-analysis) for more details.
 * Java analysis now covers Java SE 25. Visit [Java and Kotlin](https://docs.snyk.io/supported-languages/supported-languages-list/java-and-kotlin) for more details.
 * Java framework and library coverage was added or improved for Apache CXF including its HTTP transport, OkHttp, Spring Security OAuth2 Client, Google OAuth Client, Google API Client, MSAL4J, Apache Commons Collections, Flyway, and JAXB. SAP Commerce (Hybris) FlexibleSearch queries are analyzed for SQL injection, with parameter binding recognized as safe. Visit [Java and Kotlin](https://docs.snyk.io/supported-languages/supported-languages-list/java-and-kotlin) for more details.
 * LangChain LiteLLM is recognized as a source of untrusted data in Python. Visit [Python](https://docs.snyk.io/supported-languages/supported-languages-list/python) for more details.

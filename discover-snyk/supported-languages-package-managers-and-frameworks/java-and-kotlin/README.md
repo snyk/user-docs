@@ -140,6 +140,21 @@ Available features:
 * Interfile analysis - Kotlin is fully supported
 * Interfile analysis - Android is partially supported
 
+### Template file analysis
+
+Snyk Code parses template files and follows data from your application code into the template, so a cross-site scripting vulnerability that becomes exploitable only where the template renders its output is reported. The reported data flow runs from the application code through to the template. Analysis previously stopped at the template boundary.
+
+For Java and Kotlin, Snyk Code supports the following template engines:
+
+* FreeMarker
+* Handlebars
+* Mustache
+* Pug
+* Thymeleaf
+* Velocity
+
+For file extensions and the full set of supported language and template engine combinations, visit [Template file analysis](../../supported-languages/technical-specifications-and-guidance.md#template-file-analysis).
+
 ## Java and Kotlin for Snyk Open Source
 
 For Java and Kotlin with Snyk Open Source, the following file formats are supported:

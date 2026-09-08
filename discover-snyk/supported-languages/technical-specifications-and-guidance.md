@@ -78,9 +78,22 @@ Snyk Code analyzes template files together with the application code that render
 
 Snyk Code takes the escaping behavior of the template engine into account. Output written through the default escaping of the engine is not reported. Output written through a construct that bypasses escaping, such as a raw or unescaped directive, is treated as a sink.
 
-A template is analyzed independently of the language that renders it. Every template engine that Snyk Code supports is analyzed in every language that Snyk Code supports, so no combination of language and template engine is excluded. Template files are analyzed in addition to the source file formats listed for each language in [Supported languages, package managers, and frameworks](supported-languages-package-managers-and-frameworks.md).
+Support is defined by the pairing of a template engine with the language that renders the template. The following pairs are supported. Template files are analyzed in addition to the source file formats listed for each language.
 
-Snyk is expanding template engine coverage. If a template engine you use is not yet covered, [contact Snyk Support](https://support.snyk.io).
+| Template engine | File extensions | Languages |
+| :--- | :--- | :--- |
+| EJS | `.ejs` | JavaScript, TypeScript |
+| FreeMarker | `.ftl`, `.ftlh` | Java, Kotlin, Scala, Groovy |
+| Handlebars | `.hbs`, `.handlebars` | JavaScript, TypeScript, Java, Kotlin, Scala |
+| Jinja2 | `.j2`, `.jinja`, `.jinja2` | Python |
+| Mustache | `.mustache` | JavaScript, TypeScript, Java, Kotlin, Scala, Python, Ruby, PHP, C#, VB.NET, Go, C/C++, Swift, Objective-C |
+| Pug | `.pug`, `.jade` | JavaScript, TypeScript, Java, Kotlin, Scala, PHP |
+| Razor | `.cshtml`, `.razor`, `.vbhtml` | C#, VB.NET |
+| Thymeleaf | `.html`, `.xml` | Java, Kotlin, Scala, Groovy |
+| Twig | `.twig`, `.html.twig` | PHP |
+| Velocity | `.vm`, `.vtl` | Java, Kotlin, Scala, Groovy |
+
+Snyk is expanding this coverage. If a template engine or a pair you use is not listed, [contact Snyk Support](https://support.snyk.io).
 
 ### How Snyk Code analysis works
 
