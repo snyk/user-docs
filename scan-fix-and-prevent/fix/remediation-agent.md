@@ -1,5 +1,9 @@
 # Remediation Agent
 
+{% hint style="info" %}
+The Remediation Agent is in Early Access and is available only with Enterprise plans. To enable the feature, see [Snyk Preview](https://docs.snyk.io/platform-administration/snyk-hierarchy/snyk-preview).
+{% endhint %}
+
 The Remediation Agent is an LLM-driven tool that automates vulnerability remediation in your projects. It scans your Project with Snyk, generates a fix plan enriched with Snyk security intelligence, applies the fixes, and verifies the result, all in your coding assistant or the Snyk CLI.
 
 ## How it works
@@ -65,8 +69,6 @@ Accepted values: `cursor`, `claude`, `gemini`, `kiro`, `codex`, `windsurf`, `cop
 
 {% step %}
 ### Enable the experimental MCP profile
-
-
 
 The breaking change assessment requires the Snyk MCP server to run in experimental mode. After running the installer, add `SNYK_MCP_PROFILE: experimental` to your MCP server configuration.
 
