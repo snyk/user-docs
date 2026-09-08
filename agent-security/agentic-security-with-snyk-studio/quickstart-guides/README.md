@@ -1,4 +1,7 @@
 ---
+description: >-
+  Quickstart guides for setting up Snyk Studio with common AI coding
+  assistants
 nav_context: agnostic
 ---
 

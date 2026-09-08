@@ -1,4 +1,7 @@
 ---
+description: >-
+  How Trusted Output Assurance secures AI-assisted development before insecure
+  code reaches production
 nav_context: agnostic
 ---
 

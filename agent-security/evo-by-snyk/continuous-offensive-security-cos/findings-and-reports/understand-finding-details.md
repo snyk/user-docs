@@ -1,3 +1,9 @@
+---
+description: >-
+  How to triage, reproduce, and hand off a Continuous Offensive Security
+  finding
+---
+
 # Understand finding details
 
 Opening a finding gives you everything needed to triage it, reproduce it, and hand it to a developer, without switching tools.

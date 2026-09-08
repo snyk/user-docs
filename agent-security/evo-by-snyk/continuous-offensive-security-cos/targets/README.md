@@ -1,3 +1,9 @@
+---
+description: >-
+  How to configure the applications that Snyk Continuous Offensive Security
+  tests
+---
+
 # Targets
 
 Configure the applications you want Snyk Continuous Offensive Security to test. A target is the persistent record of one application—its URL, scope, and credentials. You create a target once and scan it as often as you like.

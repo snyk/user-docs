@@ -1,4 +1,7 @@
 ---
+description: >-
+  How directives govern the way AI coding assistants follow your security
+  policy and standards
 nav_context: classic
 ---
 

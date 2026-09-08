@@ -1,4 +1,7 @@
 ---
+description: >-
+  How the Evo platform presents discovered AI assets, manages policy, and
+  reports on your security posture
 nav_context: agnostic
 ---
 

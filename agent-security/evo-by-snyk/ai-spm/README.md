@@ -1,4 +1,7 @@
 ---
+description: >-
+  How AI Security Posture Management gives you visibility and governance over
+  the AI assets in your code
 nav_context: agnostic
 ---
 

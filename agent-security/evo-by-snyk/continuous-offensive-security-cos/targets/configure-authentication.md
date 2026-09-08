@@ -1,3 +1,9 @@
+---
+description: >-
+  How to give Continuous Offensive Security agents the credentials they need
+  to test behind a login
+---
+
 # Configure authentication
 
 Authentication tells agents who to log in as. Most of an application's interesting attack surface sits behind a login, and the most damaging vulnerabilities only become visible when agents can compare what one user can reach against what another user should be able to reach.

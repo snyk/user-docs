@@ -1,4 +1,7 @@
 ---
+description: >-
+  How Snyk Studio embeds security directives into AI-assisted development
+  workflows
 nav_context: agnostic
 ---
 

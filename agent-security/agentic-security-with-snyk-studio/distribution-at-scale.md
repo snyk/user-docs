@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to distribute Snyk Studio as a managed utility across your development
+  teams
 nav_context: classic
 ---
 

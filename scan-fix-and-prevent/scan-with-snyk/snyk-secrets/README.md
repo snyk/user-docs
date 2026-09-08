@@ -1,3 +1,9 @@
+---
+description: >-
+  How Snyk Secrets scans repositories for hard-coded secrets and helps prevent
+  leaks
+---
+
 # Snyk Secrets
 
 The Snyk Secrets scanning tool provides accurate scanning across all repositories and includes governance features to prevent secret leaks.

@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to install Snyk Studio in Claude Code using the hooks-based or
+  rules-based approach
 nav_context: classic
 ---
 

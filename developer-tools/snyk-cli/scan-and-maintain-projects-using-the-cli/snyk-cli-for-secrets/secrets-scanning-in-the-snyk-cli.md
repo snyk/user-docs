@@ -1,3 +1,9 @@
+---
+description: >-
+  How to scan for hard-coded secrets with the Snyk CLI, including pre-commit
+  hooks
+---
+
 # Secrets scanning in the Snyk CLI
 
 Use Snyk Secrets for the CLI to identify and manage sensitive information (API keys, passwords, tokens) in your source code. You can:

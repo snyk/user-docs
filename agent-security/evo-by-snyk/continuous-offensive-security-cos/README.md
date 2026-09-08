@@ -1,3 +1,9 @@
+---
+description: >-
+  How Snyk Continuous Offensive Security continuously tests web applications
+  and validates real vulnerabilities
+---
+
 # Continuous Offensive Security (COS)
 
 Snyk Continuous Offensive Security is an AI-driven pentesting engine that continuously tests your web applications, validates real vulnerabilities, and tracks findings over time.

@@ -1,4 +1,7 @@
 ---
+description: >-
+  How to access Snyk Studio in GitHub Copilot with the Snyk Security plugin or
+  a direct install
 nav_context: classic
 ---
 

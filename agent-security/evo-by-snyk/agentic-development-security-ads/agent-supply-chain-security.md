@@ -1,4 +1,7 @@
 ---
+description: >-
+  How Agent Supply Chain Security assesses the MCP servers, skills, and tools
+  your agents use
 nav_context: agnostic
 ---
 
