@@ -67,7 +67,7 @@ make run     # regenerate into the repo — writes real files under developer-to
 - **Work on a branch in this repository, not a fork.** GitBook previews do not build for forks, so a fork cannot be reviewed properly.
 - Sign your commits.
 - One space and one concern per pull request. Content and generator changes do not belong together.
-- CI runs a gitleaks secrets scan (CircleCI `prodsec/secrets-scan`); changes under `tools/` also run the generator tests. `pre-commit install` catches secrets locally.
+- Checks that must pass: `ci/circleci: Scan repository for secrets` (gitleaks), plus `security/snyk`, `code/snyk`, and `license/snyk`. Changes under `tools/` also run the generator tests. Run `pre-commit install` to catch secrets before you push.
 - `CODEOWNERS` routes all content to `@snyk/design-content_docs`. Review is where writing style is enforced.
 - The `/ship-it` Slack workflow is the intake path for **internal Snyk contributors only**, and a human runs it — it is not a step you perform. If you are working for an internal contributor, opening the pull request is not the last step and they still need to submit it. External contributions end at the pull request. See [README.md](README.md).
 
