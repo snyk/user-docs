@@ -20,11 +20,11 @@ The severity levels are defined in the following table.
 | ![M](<../../.gitbook/assets/severity-levels-2.png>)                                                               | **M**edium   | Under some conditions, may allow attackers to access sensitive data on your application                                                    |
 | ![L](<../../.gitbook/assets/image (60).png>)                                                               | **L**ow      | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
 
-## Severity levels and Priority Score
+## Severity levels, Priority Score, and Risk Score
 
-Severity levels are one factor used in determining the Snyk Priority Score for each vulnerability. Other factors include [Snyk Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/) and [Reachable Vulnerabilities](https://snyk.io/blog/optimizing-prioritization-with-deep-application-level-context/) information.
+Severity is one of the factors Snyk uses to calculate the [Priority Score](priority-score.md) and the [Risk Score](risk-score.md). Other factors include [Snyk Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/) and [Reachable Vulnerabilities](https://snyk.io/blog/optimizing-prioritization-with-deep-application-level-context/) information.
 
-See [Snyk Priority Score](priority-score.md) for details.
+A severity level is a band, and each level maps to a defined score range. For the ranges, visit [Severity levels and CVSS](#severity-levels-and-cvss). The Priority Score and the Risk Score are ranks from 0 to 1,000 with no defined bands, so a score does not correspond to a severity level. To compare the two scores, visit [Priority Score vs Risk Score](priority-score-vs-risk-score.md).
 
 ## How to view severity levels
 
