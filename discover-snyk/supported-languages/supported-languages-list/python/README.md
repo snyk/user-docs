@@ -112,6 +112,17 @@ Snyk Code relies on Python projects to follow a standard directory layout for ac
 
 Both `src-layout` and `flat-layout` are supported. Proper adherence to these conventions allows the scanner to trace code effectively and provide accurate results.
 
+### Template file analysis
+
+Snyk Code parses template files and follows data from your application code into the template, so a cross-site scripting vulnerability that becomes exploitable only where the template renders its output is reported. The reported data flow runs from the application code through to the template. Analysis previously stopped at the template boundary.
+
+For Python, Snyk Code supports the following template engines:
+
+* Jinja2
+* Mustache
+
+For file extensions and the full set of supported language and template engine combinations, visit [Template file analysis](../../technical-specifications-and-guidance.md#template-file-analysis).
+
 ## Python for Snyk Open Source
 
 {% hint style="info" %}

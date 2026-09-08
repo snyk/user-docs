@@ -79,6 +79,16 @@ For C/C++ Projects:
 
 When using the IDE, you do not need additional options. The Snyk plugin displays results in the IDE views.
 
+### Template file analysis
+
+Snyk Code parses template files and follows data from your application code into the template, so a cross-site scripting vulnerability that becomes exploitable only where the template renders its output is reported. The reported data flow runs from the application code through to the template. Analysis previously stopped at the template boundary.
+
+For C/C++, Snyk Code supports the following template engines:
+
+* Mustache
+
+For file extensions and the full set of supported language and template engine combinations, visit [Template file analysis](../technical-specifications-and-guidance.md#template-file-analysis).
+
 ## C/C++ for Snyk Open Source
 
 ### Available features

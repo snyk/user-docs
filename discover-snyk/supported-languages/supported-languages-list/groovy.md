@@ -40,3 +40,15 @@ For Groovy, Snyk supports the following file extensions:
 
 * Support for Interfile analysis
 * Reports
+
+### Template file analysis
+
+Snyk Code parses template files and follows data from your application code into the template, so a cross-site scripting vulnerability that becomes exploitable only where the template renders its output is reported. The reported data flow runs from the application code through to the template. Analysis previously stopped at the template boundary.
+
+For Groovy, Snyk Code supports the following template engines:
+
+* FreeMarker
+* Thymeleaf
+* Velocity
+
+For file extensions and the full set of supported language and template engine combinations, visit [Template file analysis](../technical-specifications-and-guidance.md#template-file-analysis).
